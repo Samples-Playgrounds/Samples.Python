@@ -23,8 +23,8 @@ import numpy as np
 # Read data from file 'filename.csv' 
 data = pd.read_csv("../../externals/Core.Math.Data/data/Pejcic_318.csv")
 
-#show data
-#data
+# show data
+# data
 print('DataFrame\n----------\n', data)
 
 # ‘shape’ returns a tuple with the number of rows, and the number of columns for the data in the DataFrame
