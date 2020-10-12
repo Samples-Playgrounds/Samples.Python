@@ -4,9 +4,20 @@
 # https://www.shanelynn.ie/using-pandas-dataframe-creating-editing-viewing-data-in-python/
 # Load the Pandas libraries with alias 'pd' 
 
+# pip install wheel
 # pip install pandas
+# pip3 install wheel
+# pip3 install pandas
+# python -m pip install wheel
+# python -m pip2 install pandas
+# python2 -m pip2 install wheel
+# python2 -m pip2 install pandas
+# python3 -m pip3 install wheel
+# python3 -m pip3 install pandas
+# python3 -m pip install wheel
+# python3 -m pip install pandas
 import pandas as pd
-# import numpy as np
+import numpy as np
 
 
 # Read data from file 'filename.csv' 
