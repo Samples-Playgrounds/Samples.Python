@@ -15,7 +15,11 @@ data
 data.shape
 
 # Preview the first 5 lines of the loaded data 
-data.head
+data.head(10)
+
+data.tail(3)
+
+data.dtypes
 
 # variable names
 data.columns
@@ -23,4 +27,5 @@ data.columns
 # variable data
 print(data['ATV'])
 
-data.describe()
+data['MJESTO'].describe()
+data['ATV'].describe()
