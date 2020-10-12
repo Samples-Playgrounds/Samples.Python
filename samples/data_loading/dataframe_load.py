@@ -21,7 +21,7 @@ import numpy as np
 
 
 # Read data from file 'filename.csv' 
-data = pd.read_csv("/Users/katodix/Projects/HolisticWare.Core.Math.Statistics.Descriptive.Sequential/externals/Core.Math.Samples/data/Pejcic_318.csv")
+data = pd.read_csv("../../externals/Core.Math.Data/data/Pejcic_318.csv")
 
 #show data
 #data
