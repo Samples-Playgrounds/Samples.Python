@@ -31,21 +31,21 @@ print('DataFrame\n----------\n', data_frame)
 print("data_frame.shape = ", data_frame.shape)
 
 # Preview the first 5 lines of the loaded data 
-print("data_frame.head(10)", data_frame.head(10))
+print("data_frame.head(10) = ", data_frame.head(10))
 
-print("data_frame.tail(3)", data_frame.tail(3))
+print("data_frame.tail(3) = ", data_frame.tail(3))
 
-data_frame.dtypes
+print("data_frame.dtypes = ", data_frame.dtypes)
 
 # variable names
-data_frame.columns
+print("data_frame.columns = ", data_frame.columns)
 
 # variable data
-print(data_frame['ATV'])
+print("data_frame['ATV'] = ", data_frame['ATV'])
 
-data_frame['MJESTO'].describe()
-data_frame['ATV'].describe()
-data_frame.describe()
+print("data_frame['MJESTO'].describe() = ", data_frame['MJESTO'].describe())
+print("data_frame['ATV'].describe() = ", data_frame['ATV'].describe())
+print("data_frame.describe()) = ", data_frame.describe())
 
 #convert dataframe to numpy array (matrix)
 arr = data_frame.to_numpy()
