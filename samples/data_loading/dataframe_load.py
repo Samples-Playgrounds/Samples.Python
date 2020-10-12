@@ -21,33 +21,33 @@ import numpy as np
 
 
 # Read data from file 'filename.csv' 
-data = pd.read_csv("../../externals/Core.Math.Data/data/Pejcic_318.csv")
+data_frame = pd.read_csv("../../externals/Core.Math.Data/data/Pejcic_318.csv")
 
 # show data
 # data
-print('DataFrame\n----------\n', data)
+print('DataFrame\n----------\n', data_frame)
 
 # ‘shape’ returns a tuple with the number of rows, and the number of columns for the data in the DataFrame
-data.shape
+data_frame.shape
 
 # Preview the first 5 lines of the loaded data 
-data.head(10)
+data_frame.head(10)
 
-data.tail(3)
+data_frame.tail(3)
 
-data.dtypes
+data_frame.dtypes
 
 # variable names
-data.columns
+data_frame.columns
 
 # variable data
-print(data['ATV'])
+print(data_frame['ATV'])
 
-data['MJESTO'].describe()
-data['ATV'].describe()
-data.describe()
+data_frame['MJESTO'].describe()
+data_frame['ATV'].describe()
+data_frame.describe()
 
 #convert dataframe to numpy array (matrix)
-arr = data.to_numpy()
+arr = data_frame.to_numpy()
 
 print('\nNumpy Array\n----------\n', arr)
