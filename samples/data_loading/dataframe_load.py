@@ -28,12 +28,12 @@ data_frame = pd.read_csv("../../externals/Core.Math.Data/data/Pejcic_318.csv")
 print('DataFrame\n----------\n', data_frame)
 
 # ‘shape’ returns a tuple with the number of rows, and the number of columns for the data in the DataFrame
-data_frame.shape
+print("data_frame.shape = ", data_frame.shape)
 
 # Preview the first 5 lines of the loaded data 
-data_frame.head(10)
+print("data_frame.head(10)", data_frame.head(10))
 
-data_frame.tail(3)
+print("data_frame.tail(3)", data_frame.tail(3))
 
 data_frame.dtypes
 
