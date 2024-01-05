@@ -20,3 +20,17 @@ Samples.Python
 
 *   https://www.datacamp.com/community/tutorials/pandas-read-csv
 
+## Python Object Oriented
+
+*   https://realpython.com/python3-object-oriented-programming/
+
+*   https://www.geeksforgeeks.org/python-oops-concepts/
+
+*   https://www.programiz.com/python-programming/object-oriented-programming
+
+*   https://dotnetfiddle.net/
+
+
+## C#
+
+*    https://dotnetfiddle.net/
