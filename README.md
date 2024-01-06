@@ -2,7 +2,13 @@
 
 Samples.Python
 
-## Basics for Hrvoje93
+## Devs
+
+### Tompotola
+
+*    https://github.com/tompotola/pythonplayground
+
+### Hrvoje93
 
 *   tutorials
 
