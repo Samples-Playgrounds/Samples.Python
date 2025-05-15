@@ -5,7 +5,9 @@ readme.md
 ```bash
 python3.13 -m venv .venv
 source .venv/bin/activate
+
 pip3.13 install docling
+
 pip3.13 freeze > requirements.txt
 ```
 
