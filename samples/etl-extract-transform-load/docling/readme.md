@@ -35,3 +35,11 @@ https://huggingface.co/ds4sd
 
 https://pypi.org/project/docling/1.20.0/
 
+https://explosion.ai/blog/pdfs-nlp-structured-data
+
+https://github.com/nunombispo/IBMDocling-LLMWhisperer
+
+https://news.ycombinator.com/item?id=42410803
+
+https://dev.to/aairom/using-doclings-ocr-features-with-rapidocr-29hd
+
