@@ -43,3 +43,4 @@ https://python.useinstructor.com/blog/2024/07/11/youtube-transcripts/#extracting
 https://www.reddit.com/r/Python/comments/17t9lem/bulk_creation_of_transcripts_from_youtube/
 
 https://github.com/Dicklesworthstone/bulk_transcribe_youtube_videos_from_playlist
+
