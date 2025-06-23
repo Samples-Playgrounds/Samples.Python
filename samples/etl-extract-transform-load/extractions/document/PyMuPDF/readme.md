@@ -1,4 +1,4 @@
-# Unstructured
+# PyMuPDF
 
 readme.md
 
@@ -20,24 +20,15 @@ brew \
         tesseract
 ```
 
-*   https://unstructured.io/
-
-*   https://pypi.org/project/unstructured/
 
 ### PDF to Markdown
 
-*   https://www.restack.io/p/unstructured-answer-pdf-to-markdown-cat-ai
+https://pymupdf.readthedocs.io/en/latest/tutorial.html
 
-*   https://github.com/iamarunbrahma/pdf-to-markdown
+https://medium.com/@pymupdf/explore-text-searching-with-pymupdf-b78d70b75ccf
 
-https://www.reddit.com/r/MachineLearning/comments/1hg5d3p/p_vision_parse_parse_pdf_documents_into_markdown/
+https://pymupdf.readthedocs.io/en/latest/rag.html
 
-https://medium.com/data-science/improved-rag-document-processing-with-markdown-426a2e0dd82b
-
-https://ai.gopubby.com/benchmarking-pdf-to-markdown-document-converters-fc65a2c73bf2
-
-https://www.reddit.com/r/LocalLLaMA/comments/1azqo6p/need_help_rag_on_large_unstructured_pdfs/
-
-https://www.restack.io/p/unstructured-knowledge-python-pdf-markdown-cat-ai
+https://artifex.com/blog/rag-llm-and-pdf-conversion-to-markdown-text-with-pymupdf
 
 
