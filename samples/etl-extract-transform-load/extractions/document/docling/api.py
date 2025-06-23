@@ -2,16 +2,16 @@ from docling.document_converter import DocumentConverter
 
 def covert_pdf_file_to_text (source: str) -> str:
     converter = DocumentConverter()
-    result = converter.convert(source)
-    result_md = result.document.export_to_text()
+    result_doc = converter.convert(source)
+    result_txt = result_doc.document.export_to_text()
 
-    return result_md
+    return result_txt
 
 
 def covert_pdf_file_to_markdown (source: str) -> str:
     converter = DocumentConverter()
-    result = converter.convert(source)
-    result_txt = result.document.export_to_markdown()
+    result_doc = converter.convert(source)
+    result_txt = result_doc.document.export_to_markdown()
 
     return result_md
 
