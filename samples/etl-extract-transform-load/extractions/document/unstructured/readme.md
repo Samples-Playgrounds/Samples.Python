@@ -11,7 +11,7 @@ pip3.13 freeze > requirements.txt
 
 ```bash
 pip3.13 install -r requirements.txt
-python3.13 convert.py
+python3.13 main.py
 ```
 
 ```shell
