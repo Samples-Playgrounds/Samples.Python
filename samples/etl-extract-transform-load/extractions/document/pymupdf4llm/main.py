@@ -18,13 +18,13 @@ print(result_md)
 
 # save to file
 print(f"python: docling.document_converter save {source}.pymupdf4llm.1.md")
-with open(f"{source}.pymupdf4llm.md", "w") as f:
+with open(f"{source}.pymupdf4llm.1.md", "w") as f:
    f.write(result_md) 
 
 
 # now work with the markdown text, e.g. store as a UTF8-encoded file
 import pathlib
 print(f"python: docling.document_converter save {source}.pymupdf4llm.2.md")
-pathlib.Path(f"{source}.pymupdf4llm.md").write_bytes(result_md.encode())
+pathlib.Path(f"{source}.pymupdf4llm.2.md").write_bytes(result_md.encode())
 
 
