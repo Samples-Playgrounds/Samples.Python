@@ -19,6 +19,9 @@ def translate_text (source: str, lang_destination: str, translator: str) -> str:
             lines.append(line)
 
     translation_lines = []
+
+    i = 1
+
     for line in lines:
         # Skip empty lines - do not translate them
         if not line.strip():
@@ -48,13 +51,14 @@ def translate_text (source: str, lang_destination: str, translator: str) -> str:
                 translation_line = QcriTranslator(source='auto', target=lang_destination).translate(line)
             case _: # default:
                 translation_line = GoogleTranslator(source='auto', target=lang_destination).translate(line)
-        
-        
-        translation_lines.append(translation_line)
 
+        translation_lines.append(translation_line)
+        i += 1
+
+        print(f"i                   : {i}")
         print(f"Translating line    : {line}")
         print(f"Translated line     : {translation_line}")
-
+        print(f"  ")
 
     translation = ''.join(translation_lines)
 
