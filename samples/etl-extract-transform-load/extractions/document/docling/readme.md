@@ -43,3 +43,11 @@ https://news.ycombinator.com/item?id=42410803
 
 https://dev.to/aairom/using-doclings-ocr-features-with-rapidocr-29hd
 
+https://blog.gopenai.com/using-doclings-ocr-features-with-rapidocr-a757fbc1e7c8
+
+https://alain-airom.medium.com/my-first-hands-on-experience-with-docling-ed96eb7f864b
+
+https://python.langchain.com/docs/integrations/document_loaders/microsoft_word/
+
+https://github.com/mkumar-improva/docAi/blob/3dfdc173bf5c173f835240267d866278ab60245a/docling_sample.py#L6
+    
