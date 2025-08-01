@@ -18,14 +18,14 @@ result_txt = api.translate_text(source, "en", "google")
 print(result_txt)
 
 # save to file
-print(f"python: unstructured save {source}.translators-google.en.1.md")
+print(f"python: save {source}.translators-google.en.1.md")
 with open(f"{source}.translators-google.en.1.md", "w") as f:
    f.write(result_txt) 
 
 
 # now work with the markdown text, e.g. store as a UTF8-encoded file
 import pathlib
-print(f"python: unstructured save {source}..translators-google.en.2.md")
+print(f"python: save {source}..translators-google.en.2.md")
 pathlib.Path(f"{source}.translators-google.en.2.md").write_bytes(result_txt.encode())
 
 
@@ -34,13 +34,13 @@ result_txt = api.translate_text(source, "en", "microsoft")
 print(result_txt)
 
 # save to file
-print(f"python: unstructured save {source}.translators-microsoft.en.1.md")
+print(f"python: save {source}.translators-microsoft.en.1.md")
 with open(f"{source}.translators-microsoft.en.1.md", "w") as f:
    f.write(result_txt) 
 
 
 # now work with the markdown text, e.g. store as a UTF8-encoded file
 import pathlib
-print(f"python: unstructured save {source}..translators-microsoft.en.2.md")
+print(f"python: save {source}..translators-microsoft.en.2.md")
 pathlib.Path(f"{source}.translators-microsoft.en.2.md").write_bytes(result_txt.encode())
 
