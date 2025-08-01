@@ -18,14 +18,14 @@ result_txt = api.translate_text(source, "en")
 # print(result_txt)
 
 # save to file
-# print(f"python: unstructured save {source}.unstructured.1.md")
-# with open(f"{source}.unstructured.1.md", "w") as f:
-#    f.write(result_txt) 
+print(f"python: save {source}.translate.en.1.md")
+with open(f"{source}.translate.en.1.md", "w") as f:
+   f.write(result_txt) 
 
 
 # now work with the markdown text, e.g. store as a UTF8-encoded file
-# import pathlib
-# print(f"python: unstructured save {source}.unstructured.2.md")
-# pathlib.Path(f"{source}.unstructured.2.md").write_bytes(result_txt.encode())
+import pathlib
+print(f"python: save {source}.translate.en.2.md")
+pathlib.Path(f"{source}.translate.en.2.md").write_bytes(result_txt.encode())
 
 
