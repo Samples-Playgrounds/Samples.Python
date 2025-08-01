@@ -31,7 +31,7 @@ for source in sources:
    if source.endswith(".pdf"):
       result_md = api.covert_file_to_markdown(source)
       print(result_md)
-      print(f"python: markitdown.document_converter save {source}.markitdown.md")
+      print(f"python: markitdown save {source}.markitdown.md")
       with open(f"{source}.markitdown.md", "w") as f:
          f.write(result_md) 
 
