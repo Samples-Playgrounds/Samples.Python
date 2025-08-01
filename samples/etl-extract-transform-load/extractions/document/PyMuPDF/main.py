@@ -25,6 +25,6 @@ for source in sources:
       print(result_txt)
 
       # save to file
-      print(f"python: docling.document_converter save {source}.PyMuPDF-fitz.txt")
+      print(f"python: PyMuPDF-fitz save {source}.PyMuPDF-fitz.txt")
       with open(f"{source}.PyMuPDF-fitz.txt", "w") as f:
          f.write(result_txt) 
