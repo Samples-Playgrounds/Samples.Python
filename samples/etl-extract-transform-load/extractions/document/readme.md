@@ -6,19 +6,71 @@
 
 *   Unstructured
 
-*   PyMuPDF
-
 *   PDFplumber
 
 *   PyPDF2
 
-*   markitDown
+    *   https://pypi.org/project/PyPDF2/
+
+*   MarkItDown
+
+    *   https://github.com/microsoft/markitdown
+
+*   PyMuPDF
+
+    *   https://github.com/pymupdf/PyMuPDF
 
 *   pymupdf4llm
 
+*   pdfplumber
+
+    *   https://github.com/jsvine/pdfplumber
+
+*   pdfminer.six
+
+    *   https://pypi.org/project/pdfminer.six/
 
 
+## TODO
 
+*   pdfplumber
 
-https://www.mindee.com/blog/create-ocrized-pdfs-in-2-steps
+*   beautifulsoup
+
+*   markdownify
+
+## Diverse
+
+*   https://www.reddit.com/r/learnpython/comments/1ej02wh/what_is_the_best_way_to_convert_a_wellformatted/
+
+*   https://www.reddit.com/r/LangChain/comments/1ilnftx/best_nonpaid_way_to_turn_complex_pdfs_into/
+
+*   https://ploomber.io/blog/pdf-ocr/
+
+*   https://medium.com/@pymupdf/rag-llm-and-pdf-conversion-to-markdown-text-with-pymupdf-03af00259b5d
+
+*   https://www.mindee.com/blog/create-ocrized-pdfs-in-2-steps
+
+*   https://medium.com/data-science-collective/convert-pdfs-to-markdown-using-local-llms-c5232f3b50fc
+
+*   References
+
+    *   5 Levels of Text Splitting
+
+        *   https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb
+
+    
+## Related Blogs
+
+*   Building a RAG Chatbot GUI with the ChatGPT API and PyMuPDF
+
+    *   https://medium.com/@pymupdf/building-a-rag-chatbot-gui-with-the-chatgpt-api-and-pymupdf-9ea8c7fc4ab5
+
+*   Creating a RAG Chatbot with ChatGPT and PyMUPDF
+
+    *   https://medium.com/@pymupdf/creating-a-rag-chatbot-with-chatgpt-and-pymupdf-f6c30907ae27
+
+*   RAG/LLM and PDF: Enhanced Text Extraction
+
+    *   https://medium.com/@pymupdf/rag-llm-and-pdf-enhanced-text-extraction-5c5194c3885c
 
