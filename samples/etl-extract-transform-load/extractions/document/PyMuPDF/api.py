@@ -48,3 +48,16 @@ def covert_pdf_file_to_text (source: str) -> str:
 
     return result_txt
 
+# NOT   available in PyMuPDF
+#       available in pymupdfllm
+
+# import pymupdf
+# from pymupdf_rag import to_markdown  # import Markdown converter
+# 
+# def covert_pdf_file_to_markdown (source: str) -> str:
+#     doc = fitz.open(source)
+#     result_md = ""
+#     for page in doc:
+#         result_md = result_md +  to_markdown(doc, page_number=page.number)
+# 
+#     return result_md
