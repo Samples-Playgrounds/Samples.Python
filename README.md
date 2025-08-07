@@ -2,6 +2,40 @@
 
 Samples.Python
 
+Python samples and playgorunds
+
+    *   basics
+
+    *   AI
+
+        using various libraries and creating APIs to be wrapped with C#
+
+        *   RAG
+
+            * ETL
+
+                *   documents
+
+                    *   splitting-chunking
+
+                        *   basic
+
+                        *   advenced Agentic embeddings
+
+                    *   extractions
+
+                        *   text (markdown)
+
+                        *   images
+
+                        *   tables
+
+                    *   embeddings
+
+        *   tanslations
+
+            *   language
+
 ## Devs
 
 ### Tompotola
