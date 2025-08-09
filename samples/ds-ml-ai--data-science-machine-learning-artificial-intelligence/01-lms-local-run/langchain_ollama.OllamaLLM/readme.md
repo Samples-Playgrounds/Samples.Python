@@ -20,4 +20,4 @@ llm = OllamaLLM(model="llama3.1:8b")
 llm.invoke("The first man on the moon was ...")
 ```
 
-langchain_ollama.OllamaLLM
+*   https://python.langchain.com/docs/how_to/local_llms/
