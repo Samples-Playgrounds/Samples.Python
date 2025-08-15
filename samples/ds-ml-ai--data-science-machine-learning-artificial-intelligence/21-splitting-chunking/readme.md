@@ -20,3 +20,9 @@
 
     *   https://www.youtube.com/watch?app=desktop&v=Lk6D1huUK0s&t=986s&ab_channel=VenelinValkov
 
+
+
+```shell
+pip install langchain
+pip install tiktoken
+```
