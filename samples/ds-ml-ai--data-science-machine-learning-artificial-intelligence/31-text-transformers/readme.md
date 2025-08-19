@@ -6,28 +6,32 @@
 
     *   Sentence Transformers
 
+*   transformer results in 
+
     *   Embeddings
     
         *   Vector Embeddings
 
-Sentence Transformers SBERT
+## Sentence Transformers SBERT
 
-https://sbert.net/
+*   https://sbert.net/
 
 
-Sentence Transformers (a.k.a. SBERT) is the go-to Python module for 
+*   Sentence Transformers (a.k.a. SBERT) is 
 
-    accessing, 
+    *   Python module for 
+
+        *   accessing, 
     
-    using, and 
-    
-    training 
-    
-state-of-the-art models
+        *   using 
 
-    embedding and 
+        *   training 
     
-    reranker . 
+        models used for:
+
+        *   embedding and 
+    
+        *   reranker
     
 used 
 
