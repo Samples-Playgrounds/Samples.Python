@@ -9,7 +9,8 @@ for img_path in paths:
     
     # Use the correct approach as per Gemma 3 documentation - images at top level
     response = ollama.generate(
-        model='gemma3:12b',
+        # model='gemma3:12b',
+        model='llama3.2-vision:latest',
         prompt="What's this? Provide a description without leading or trailing text.",
         images=[img_base64],  # Pass base64 encoded image data at top level
         options={"temperature": 0.1}  # Lower temperature for more consistent output
