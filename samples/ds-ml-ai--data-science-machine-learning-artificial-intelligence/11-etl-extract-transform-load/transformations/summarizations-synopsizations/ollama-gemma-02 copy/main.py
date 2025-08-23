@@ -1,7 +1,7 @@
 import ollama
 
 response = ollama.chat(
-    model="moondream",
+    model="llama3.2-vision:latest",
     messages=[
         {"role": "user", "content": "Describe the image", "images": ["./cat.jpeg"]}
     ],
