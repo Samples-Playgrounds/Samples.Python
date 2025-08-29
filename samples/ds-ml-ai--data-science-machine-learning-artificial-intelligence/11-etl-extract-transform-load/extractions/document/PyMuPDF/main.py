@@ -1,3 +1,9 @@
+"""
+python3.13 -m venv .venv
+source .venv/bin/activate
+pip3.13 install PyMuPDF
+pip3.13 freeze > requirements.txt
+"""
 import api
 
 # document per local path or URL
