@@ -14,7 +14,7 @@ def write_all_tensors(
     metadata: Optional[Dict[str, str]] = None,
 ) -> str:
 
-    save_file(tensors, filename, metadata=metadata)
+    save_file(tensors, filename)
 
     # Optionally, you can return the filename or any other relevant information
     return filename
