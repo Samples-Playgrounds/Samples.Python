@@ -8,18 +8,18 @@ pip freeze > requirements.txt
 python main.py
 """
 
+from typing import Any, Dict, List, Optional, Set, Tuple, Union
 import torch
-from safetensors import safe_open
-from safetensors.torch import save_file
+import api
 
-tensors = {
+tensors_data: Dict[str, torch.Tensor] = {
    "weight1": torch.zeros((1024, 1024)),
    "weight2": torch.zeros((1024, 1024))
 }
-save_file(tensors, "model.safetensors")
 
-tensors = {}
-with safe_open("model.safetensors", framework="pt", device="cpu") as f:
-   for key in f.keys():
-        tensors[key] = f.get_tensor(key)
-        print(tensors)
+api.write_all_tensors(tensors_data, "model.safetensors")
+
+tensors_data = api.read_all_tensors("model.safetensors")
+
+for key in tensors_data.keys():
+   print(tensors_data[key])
