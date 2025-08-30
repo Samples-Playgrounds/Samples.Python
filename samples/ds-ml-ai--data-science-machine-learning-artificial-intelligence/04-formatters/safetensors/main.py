@@ -17,7 +17,7 @@ tensors_data: Dict[str, torch.Tensor] = {
    "weight2": torch.zeros((1024, 1024))
 }
 
-api.write_all_tensors(tensors_data, "model.safetensors")
+api.write_all_tensors("model.safetensors",tensors_data)
 
 tensors_data = api.read_all_tensors("model.safetensors")
 
