@@ -1,13 +1,25 @@
 
 
+## Image to Text
+
+https://pypi.org/project/pytesseract/
+
+https://github.com/sirfz/tesserocr
+
 https://github.com/charlesw/tesseract
 
-https://github.com/tesseract-ocr/tesseract?tab=readme-ov-file
+https://github.com/tesseract-ocr/tesseract
+
+https://tesseract-ocr.github.io/
 
 https://github.com/huridocs/pdf-document-layout-analysis
 
+https://www.nutrient.io/blog/tesseract-python-guide/
+
+https://www.nutrient.io/blog/how-to-use-tesseract-ocr-in-python/
 
 
+## Diverse
 
 https://www.reddit.com/r/Rag/comments/1mlp30w/how_to_index_40k_documents/
 
