@@ -10,22 +10,23 @@ from typing import Any, Dict, List, Optional, Set, Tuple, Union
 
 def write_all_tensors(
     filename: str,
-    tensors: Dict[str, torch.Tensor],
+    tensors_dict: Dict[str, torch.Tensor],
     metadata: Optional[Dict[str, str]] = None,
 ) -> str:
 
-    save_file(tensors, filename)
+    save_file(tensors_dict, filename, metadata=metadata)
 
     # Optionally, you can return the filename or any other relevant information
     return filename
+
 
 def read_all_tensors(
     filename: str,
     metadata: Optional[Dict[str, str]] = None,
 ) -> Dict[str, torch.Tensor]:
 
-    tensors = {}
-    with safe_open("model.safetensors", framework="pt", device="cpu") as f:
+    tensors: Dict[str, torch.Tensor] = {}
+    with safe_open(filename, framework="pt", device="cpu") as f:
         for key in f.keys():
             tensors[key] = f.get_tensor(key)
     return tensors
