@@ -1,4 +1,13 @@
-import api
+"""
+python3.13 -m venv .venv
+source .venv/bin/activate
+pip3.13 install PyPDF2
+pip3.13 install pytesseract
+pip3.13 install Pillow
+pip3.13 freeze > requirements.txt
+
+python3.13 main.py
+"""
 
 import api
 
