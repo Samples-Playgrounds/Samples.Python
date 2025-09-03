@@ -2,6 +2,8 @@
 
 readme.md
 
+*   https://python.langchain.com/docs/integrations/llms/ollama/
+
 
 ```shell
 python3.13 -m venv .venv
