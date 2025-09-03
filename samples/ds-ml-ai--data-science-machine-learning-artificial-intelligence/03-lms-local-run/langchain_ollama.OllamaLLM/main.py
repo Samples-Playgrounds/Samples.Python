@@ -1,7 +1,13 @@
-# python3.13 -m venv .venv
-# source .venv/bin/activate
-# pip3.13 install "llama_index"
-# pip3.13 freeze > requirements.txt
+"""
+# ollama run gpt-oss:20b
+ollama run llama3.3:latest
+
+rm -fr .venv
+python3.13 -m venv .venv
+source .venv/bin/activate
+pip3.13 install "langchain-ollama"
+pip3.13 freeze > requirements.txt
+"""
 
 # import api
 
