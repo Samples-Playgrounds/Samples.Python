@@ -1,5 +1,22 @@
 # Text Transformers
 
+https://github.com/openai/tiktoken
+
+tokenizer
+
+    converts raw text into tokens
+    
+token
+    building blocks for how language models process input
+    
+    can represent 
+    
+        words
+        subwords
+        individual characters
+        
+    depending on the tokenizer’s design
+
 *   synonyms
 
     *   Text Transformers
