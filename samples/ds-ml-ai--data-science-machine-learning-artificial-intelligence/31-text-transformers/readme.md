@@ -17,6 +17,8 @@ token
         
     depending on the tokenizer’s design
 
+brew install code2prompt
+
 *   synonyms
 
     *   Text Transformers
