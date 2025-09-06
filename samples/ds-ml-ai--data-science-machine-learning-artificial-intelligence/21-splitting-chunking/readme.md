@@ -21,8 +21,13 @@
     *   https://www.youtube.com/watch?app=desktop&v=Lk6D1huUK0s&t=986s&ab_channel=VenelinValkov
 
 
+https://www.reddit.com/r/Rag/comments/1mtcvs7/the_beauty_of_parentchild_chunking_graph_rag_was/
 
 ```shell
 pip install langchain
 pip install tiktoken
 ```
+
+code chunking
+
+https://code2prompt.dev/docs/tutorials/getting_started/
