@@ -36,4 +36,5 @@ print(downloaded_model_path)'
 
 *   https://www.baeldung.com/cs/hugging-face-model-download
 
+*   https://huggingface.co/docs/huggingface_hub/en/package_reference/file_download
 
