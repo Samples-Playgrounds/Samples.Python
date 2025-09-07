@@ -9,7 +9,7 @@ pip3.13 install "langchain-ollama"
 pip3.13 freeze > requirements.txt
 """
 
-# import api
+import api_langchain_ollama
 
 # document per local path or URL
 #file="mit.txt"
