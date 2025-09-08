@@ -7,7 +7,7 @@ pip3.13 install -r requirements.txt
 python3.13 main.py
 """
 
-import api
+import api_markitdown as api
 
 # document per local path or URL
 sources = [
