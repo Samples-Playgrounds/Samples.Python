@@ -7,7 +7,7 @@ pip3.13 install -r requirements.txt
 python3.13 convert.py
 """
 
-import api
+import api_docling_document_converter as api
 
 # document per local path or URL
 sources = [
