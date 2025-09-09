@@ -4,7 +4,7 @@ source .venv/bin/activate
 pip3.13 install PyMuPDF
 pip3.13 freeze > requirements.txt
 """
-import api
+import api_fitz_PyMuPDF as api
 
 # document per local path or URL
 sources = [
