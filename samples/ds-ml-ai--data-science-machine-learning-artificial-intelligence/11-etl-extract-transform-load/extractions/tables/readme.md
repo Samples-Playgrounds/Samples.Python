@@ -30,3 +30,4 @@ readme.md
     *   https://github.com/ashima/pdf-table-extract
 
     
+*   https://github.com/jsvine/pdfplumber?tab=readme-ov-file#specific-comparisons
