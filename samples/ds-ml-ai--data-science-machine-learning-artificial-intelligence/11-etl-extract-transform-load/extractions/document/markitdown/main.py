@@ -1,10 +1,10 @@
 """
-python3.13 -m venv .venv
+python -m venv .venv
 source .venv/bin/activate
-pip3.13 install 'markitdown[pdf, docx, pptx, xslx, xsl, outlook, audio-transcription, youtube-transcription]'
-pip3.13 freeze > requirements.txt
-pip3.13 install -r requirements.txt
-python3.13 main.py
+pip install 'markitdown[pdf, docx, pptx, xslx, xsl, outlook, audio-transcription, youtube-transcription]'
+pip freeze > requirements.txt
+pip install -r requirements.txt
+python main.py
 """
 
 import api_markitdown as api
