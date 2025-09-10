@@ -1,10 +1,11 @@
 """
-python3.13 -m venv .venv
+python -m venv .venv
 source .venv/bin/activate
-pip3.13 install docling
-pip3.13 freeze > requirements.txt
-pip3.13 install -r requirements.txt
-python3.13 convert.py
+pip install docling
+pip freeze > requirements.txt
+
+pip install -r requirements.txt
+python main.py
 """
 
 import api_docling_document_converter as api
