@@ -1,5 +1,7 @@
 # llamafile
 
+*   https://github.com/Mozilla-Ocho/llamafile?tab=readme-ov-file
+
 *   binaries
 
 ```
