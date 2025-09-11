@@ -8,6 +8,8 @@
 
     *   https://www.youtube.com/watch?v=8OJC21T2SL4&ab_channel=GregKamradt
 
+*   https://chunkviz.up.railway.app/
+
 *   But, How is Chunking Done ? Splitting Basics Using LangChain
 
     *   https://youtu.be/tMwdl9hFPns
