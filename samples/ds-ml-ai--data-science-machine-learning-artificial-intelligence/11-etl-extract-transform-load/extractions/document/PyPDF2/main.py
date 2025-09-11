@@ -1,12 +1,12 @@
 """
-python3.13 -m venv .venv
+python -m venv .venv
 source .venv/bin/activate
-pip3.13 install PyPDF2
-pip3.13 install pytesseract
-pip3.13 install Pillow
-pip3.13 freeze > requirements.txt
+pip install PyPDF2
+pip install pytesseract
+pip install Pillow
+pip freeze > requirements.txt
 
-python3.13 main.py
+python main.py
 """
 
 import api_PyPDF2 as api
