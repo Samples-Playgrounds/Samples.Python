@@ -1,10 +1,10 @@
 """
-python3.13 -m venv .venv
+python -m venv .venv
 source .venv/bin/activate
-pip3.13 install pymupdf4llm
-pip3.13 freeze > requirements.txt
-pip3.13 install -r requirements.txt
-python3.13 main.py
+pip install pymupdf4llm
+pip freeze > requirements.txt
+pip install -r requirements.txt
+python main.py
 """
 
 import api_pymupdf4llm as api
