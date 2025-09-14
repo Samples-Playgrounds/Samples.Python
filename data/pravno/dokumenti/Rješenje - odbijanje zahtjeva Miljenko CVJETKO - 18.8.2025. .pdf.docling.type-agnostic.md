@@ -22,30 +22,42 @@ Korisnik prava na pristup informacijama je dana 17. veljače 2025.g. podnio goto
 
 Tekst e -maila od 11.08.2025.g. koji prati sada 25. podnesena zahtjeva nejasan je i konfuzan u smislu razloga traženja pristupa informacijama, pa se tijelo javne vlasti neće u ovom Rješenju posebno referirati na taj tekst. Obzirom je u odnosu na podnositelja zahtjeva pravno situacija nepromijenjena, odnosno sve okolnosti su identične onima u ožujku 2025.godine (trajanje sudskog postupka), to je tijelo javne vlasti odlučilo kako se u dispozitivu navodi.
 
-Odredbom članka 23. stavkom 6., točka 1. Zakona o pravu na pristup informacijama propisano je da će tijelo javne vlasti rješenjem odbiti zahtjev ako se ispune uvjeti propisani u članku 15. stavku 1. citiranog Zakona.
+Odredbom članka 23. stavkom 6., točka 1. Zakona o pravu na pristup informacijama propisano je da će tijelo javne vlasti rješenjem odbiti zahtjev ako se ispune uvjeti propisani u članku 15. stavku 1. citiranog
+
+Zakona.
 
 Obzirom je situacija nepromijenjena, odnosno i dalje se pred Općinskim kaznenim sudom u Zagrebu vodi kazneni postupak, poslovni broj: K-240/2022, privatni tužitelj HJS, optuženik Miljenko Cvjetko, datum pokretanja postupka 18.02.2022.g., radi kaznenog djela iz čl.147 st.2. Kaznenog zakona – Uvreda – kaznena djela protiv časti i ugleda, to za vrijeme trajanja postupka tijelo javne vlasti ima zakonsku obvezu ograničavanja pristupa informacijama. Zatražene informacije referiraju se i na citirani kazneni postupak.
 
 Nadalje, odredbom članka 23. stavkom 6. točkom 5. Zakona o pravu na pristup informacijama, propisano je da će tijelo javne vlasti rješenjem odbiti zahtjev ako jedan ili više međusobno povezanih podnositelja putem jednog ili više funkcionalno povezanih zahtjeva očito zloupotrebljava pravo na pristup informacijama, a osobito kada zbog učestalih zahtjeva za dostavu istih ili istovrsnih informacija ili zahtjeva kojima se traži velik broj informacija dolazi do opterećivanja rada i redovitog funkcioniranja tijela javne vlasti.
 
-Podnositelj je podnio istog dana 11.08.2025.g. ukupno 25 zahtjeva, koji zahtjevi su sadržajno identični u smislu dokumenta koji se traži - realizacija, te u odnosu na veći broj osoba i za dugi vremenski period ( 2020 — 2024.g.), gdje bi sve i da nema sudskog kaznenog postupka kao zapreke udovoljavanja tolikom broju zahtjeva, bilo evidentno opterećivanje rada i redovnog funkcioniranja tijela javne vlasti.
+Podnositelj je podnio istog dana 11.08.2025.g. ukupno 25 zahtjeva, koji zahtjevi su sadržajno identični u smislu dokumenta koji se traži - realizacija, te u odnosu na veći broj osoba i za dugi vremenski period (
 
-Ponašanje podnositelja u smislu podnošenja tolikog broja zahtjeva potvrđuje da isti koristi pravo na pristup informacijama suprotno njegovoj svrsi, odnosno zbog razloga koji se ne mogu povezati s javnim interesom, te da isti ne postupa s ciljem pribavljanja informacija od javnog značaja. S obzirom na prethodno navedeno, odlučeno je kao u izreci ovoga rješenja.
+2020
+
+—
+
+2024.g.), gdje bi sve i da nema sudskog kaznenog postupka kao zapreke udovoljavanja tolikom broju zahtjeva, bilo evidentno opterećivanje rada i redovnog funkcioniranja tijela javne vlasti.
+
+Ponašanje podnositelja u smislu podnošenja tolikog broja zahtjeva potvrđuje da isti koristi pravo na pristup informacijama suprotno njegovoj svrsi, odnosno zbog razloga koji se ne mogu povezati s javnim
+
+interesom, te da isti ne postupa s ciljem pribavljanja informacija od javnog značaja.
+
+S obzirom na prethodno navedeno, odlučeno je kao u izreci ovoga rješenja.
 
 UPUTA O PRAVNOM LIJEKU: Protiv ovog rješenja može se izjaviti Žalba Povjereniku za informiranje u Zagrebu, Trg Žrtava fašizma 3, u roku od 15 dana od dana dostave Rješenja. Žalba se izjavljuje putem tijela javne vlasti.
 
-Službenik za informiranje HRVATSKOG JUDO SAVEZA
-
-DEAN BOGIĆ
+Službenik za informiranje HRVATSKOG JUDO SAVEZA DEAN BOGIĆ
 
 \_\_\_
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
+<!-- image -->
+
 Dostaviti:
 
-Poštom na adresu MILJENKO CVJETKO, Ulica Sv. Mateja 38, 10 000 Zagreb e-mailom : miljenko.cvjetko@gmail.com
+Poštom na adresu MILJENKO CVJETKO, Ulica Sv. Mateja 38, 10 000 Zagreb
 
-<!-- image -->
+e-mailom : miljenko.cvjetko@gmail.com
 
 <!-- image -->
