@@ -2,9 +2,7 @@
 
 Na temelju članka 13. Zakona o udrugama (Narodne novine, br. 74/14, 70/17, 98/19 i 151/22) i članka 30. Zakona o sportu (Narodne novine, br. 141/22) na sjednici Skupštine Građanskog nogometnog kluba Dinamo održanoj … donesen je:
 
-## STATUT
-
-## GRAĐANSKOG NOGOMETNOG KLUBA 'DINAMO'
+## STATUT GRAĐANSKOG NOGOMETNOG KLUBA 'DINAMO'
 
 ## I. UVODNE ODREDBE
 
@@ -23,11 +21,17 @@ Ovim Statutom uređuju se: naziv i sjedište udruge; područje i ciljevi djelova
 
 - (1) Građanski  nogometni  klub  Dinamo  (u  daljnjem  tekstu:  Klub)  je  udruga  registrirana  u Registru udruga Republike Hrvatske i u Evidenciji pravnih osoba u sportu
 - (2) Klub je neprofitna pravna osoba.
+- (1) Klub ima pečat.
+- (2) Pečat je okruglog oblika, promjera 35 mm, sa ispisanim nazivom i mjestom sjedišta Kluba po obodu pečata i znakom u sredini.
 
 ## Članak 4.
 
-- (1) Klub ima pečat.
-- (2) Pečat je okruglog oblika, promjera 35 mm, sa ispisanim nazivom i mjestom sjedišta Kluba po obodu pečata i znakom u sredini.
+## (1) Klub:
+
+- a. postupa sukladno Pravilima nogometne igre koje je donio Međunarodni nogometni savez BORD (IFAB);
+- b. poštuje načela privrženosti, integriteta i sportskog ponašanja kao izraza fairplaya;
+- c. poštuje  statut,  pravilnike  i  odluke  FIFA -e  i  UEFA-e  i  Hrvatskog  nogometnog saveza (HNS) u svako vrijeme;
+- d. priznaje nadležnost Arbitražnog suda za sport (CAS) u Lausanni (Švicarska), kao što je utvrđeno relevantnim odredbama Statuta FIFA -e, UEFA-e;
 
 ## - NACRT PRIJEDLOGA -
 
@@ -52,12 +56,18 @@ Klub  zastupaju  Predsjednik  Kluba,  Predsjednik  Nadzornog  odbora  Kluba  i  
 
 ## Članak 8.
 
-## (1) Klub:
+Vizija, misija i svrha Kluba:
 
-- a. postupa sukladno Pravilima nogometne igre koje je donio Međunarodni nogometni savez BORD (IFAB);
-- b. poštuje načela privrženosti, integriteta i sportskog ponašanja kao izraza fairplaya;
-- c. poštuje  statut,  pravilnike  i  odluke  FIFA -e  i  UEFA-e  i  Hrvatskog  nogometnog saveza (HNS) u svako vrijeme;
-- d. priznaje nadležnost Arbitražnog suda za sport (CAS) u Lausanni (Švicarska), kao što je utvrđeno relevantnim odredbama Statuta FIFA -e, UEFA-e;
+- (1) Vizija  Kluba  je  p redstavljati  Grad  Zagreb  i  Republiku  Hrvatsku  kao  međunarodno prepoznat klub koji postiže sportske i poslovne uspjehe, okuplja svoje članove i navijače te konstantno stvara svojim primjerom pozitivne društvene promjene. Klub teži biti najboljim primjerom k ako klub svojih članova može biti uspješan, otvoren i vjerodostojan u svemu što radi na terenu i izvan njega.
+- (2) Misija Kluba je Klub svojih članova, s dubokom građanskom i hrvatskom tradicijom, koji svakodnevno spaja sport, zajednicu i navijačku strast. Klub djeluje odgovorno, transparentno i uključivo kroz odgoj  mladih  sportaša,  izgradnju  povjerenja  među navijačima, jačanja zagrebačkog i hrvatskog identiteta te aktivno djelovanje kao pozitivan čimbenik u društvu. Cilj Kluba je uvijek pošteno pobijediti na terenu, ali i vjerodostojno predstavljati Klub i pripadnost plavoj boji.
+- (3) Svrha Kluba je s lužiti svojim članovima i navijačima kroz vrhunski nogomet i prezentaciju sporta, razvoj mladih, promicanje pozitivnih vrednota u društvu te jačanje zajedništva na lokalnoj i nacionalnoj razini.
+
+## Članak 11.
+
+Ciljevi Kluba su:
+
+- (1) Identitet i vrednote:
+- a. Njegovati identitet Kluba kao otvorenog, građanskog i hrvatskog kluba, temeljenog na načelima demokratičnosti, transparentnosti i zajedništva.
 
 ## - NACRT PRIJEDLOGA -
 
@@ -74,18 +84,14 @@ Klub  zastupaju  Predsjednik  Kluba,  Predsjednik  Nadzornog  odbora  Kluba  i  
 
 ## Članak 10.
 
-Vizija, misija i svrha Kluba:
+## Načela upravljanja Klubom su:
 
-- (1) Vizija  Kluba  je  p redstavljati  Grad  Zagreb  i  Republiku  Hrvatsku  kao  međunarodno prepoznat klub koji postiže sportske i poslovne uspjehe, okuplja svoje članove i navijače te konstantno stvara svojim primjerom pozitivne društvene promjene. Klub teži biti najboljim primjerom k ako klub svojih članova može biti uspješan, otvoren i vjerodostojan u svemu što radi na terenu i izvan njega.
-- (2) Misija Kluba je Klub svojih članova, s dubokom građanskom i hrvatskom tradicijom, koji svakodnevno spaja sport, zajednicu i navijačku strast. Klub djeluje odgovorno, transparentno i uključivo kroz odgoj  mladih  sportaša,  izgradnju  povjerenja  među navijačima, jačanja zagrebačkog i hrvatskog identiteta te aktivno djelovanje kao pozitivan čimbenik u društvu. Cilj Kluba je uvijek pošteno pobijediti na terenu, ali i vjerodostojno predstavljati Klub i pripadnost plavoj boji.
-- (3) Svrha Kluba je s lužiti svojim članovima i navijačima kroz vrhunski nogomet i prezentaciju sporta, razvoj mladih, promicanje pozitivnih vrednota u društvu te jačanje zajedništva na lokalnoj i nacionalnoj razini.
-
-## Članak 11.
-
-Ciljevi Kluba su:
-
-- (1) Identitet i vrednote:
-- a. Njegovati identitet Kluba kao otvorenog, građanskog i hrvatskog kluba, temeljenog na načelima demokratičnosti, transparentnosti i zajedništva.
+- a. Zakonitost, etičnost i odgovornost: Klub djeluje u skladu sa zakonima, najvišim etičkim standardima i odgovorno prema svojim članovima, navijačima i zajednici.
+- b. Transparentnost i otvorenost: Komunikacija s članovima i javnošću temelji se na iskrenosti, dostupnosti informacija i jasnom obrazlaganju odluka.
+- c. Participacija i uključivost: Klub potiče aktivno sudjelovanje članova i navijača u donošenju odluka te njeguje dijalog i uvažavanje različitih mišljenja.
+- d. Izvrsnost  i  razvoj:  Klub  teži  izvrsnosti  u  sportu,  poslovanju  i  društvenom djelovanju, promiče učenje, inovacije i stalno unapređenje.
+- e. Integritet i sukob interesa: Svi koji djeluju u ime Kluba dužni su razdvajati privatne i klupske interese te postupati u najboljem interesu Kluba.
+- f. Građanski identitet i društvena odgovornost: Klub čuva svoju zagrebačku i hrvatsku tradiciju,  promiče  zajedništvo,  poštovanje  različitosti  i  koristi  sport  kao  alat pozitivnih društvenih promjena.
 
 ## - NACRT PRIJEDLOGA -
 
@@ -109,19 +115,6 @@ Ciljevi Kluba su:
 
 ## Članak 12.
 
-## Načela upravljanja Klubom su:
-
-- a. Zakonitost, etičnost i odgovornost: Klub djeluje u skladu sa zakonima, najvišim etičkim standardima i odgovorno prema svojim članovima, navijačima i zajednici.
-- b. Transparentnost i otvorenost: Komunikacija s članovima i javnošću temelji se na iskrenosti, dostupnosti informacija i jasnom obrazlaganju odluka.
-- c. Participacija i uključivost: Klub potiče aktivno sudjelovanje članova i navijača u donošenju odluka te njeguje dijalog i uvažavanje različitih mišljenja.
-- d. Izvrsnost  i  razvoj:  Klub  teži  izvrsnosti  u  sportu,  poslovanju  i  društvenom djelovanju, promiče učenje, inovacije i stalno unapređenje.
-- e. Integritet i sukob interesa: Svi koji djeluju u ime Kluba dužni su razdvajati privatne i klupske interese te postupati u najboljem interesu Kluba.
-- f. Građanski identitet i društvena odgovornost: Klub čuva svoju zagrebačku i hrvatsku tradiciju,  promiče  zajedništvo,  poštovanje  različitosti  i  koristi  sport  kao  alat pozitivnih društvenih promjena.
-
-## - NACRT PRIJEDLOGA -
-
-## Članak 13.
-
 ## Djelatnosti Kluba su:
 
 - a. Natjecateljska aktivnost: Sudjelovanje u profesionalnim i amaterskim natjecanjima u nogometu na lokalnoj, državnoj i međunarodnoj razini, za sve uzraste i kategorije.
@@ -144,6 +137,8 @@ Ciljevi Kluba su:
 - (2) Djelatnosti  iz  stavka  1.  ovog  članka  Klub  obavlja  u  skladu  s  posebnim  propisima  koji uređuju gospodarsko poslovanje udruga kao pravnih osoba.
 - (3) Djelatnosti iz stavka 1. ovog članka ne mogu se obavljati radi stjecanja dobiti za svoje članove ili treće osobe.
 - (4) Ako  u  obavljanju  gospodarskih  djelatnosti  Klub  ostvari  dobit  ona  se  mora  koristiti isključivo za obavljanje i unapređenje djelatnosti Kluba kojima se ostvaruju ciljevi Kluba, utvrđeni ovim Statutom, sukladno zakonu.
+
+## - NACRT PRIJEDLOGA Članak 13.
 
 ## - NACRT PRIJEDLOGA -
 
@@ -245,7 +240,9 @@ Igrači, članovi Uprave Kluba i zaposlenici Kluba koji su članovi Kluba te pov
 
 - d. prisila,  prijetnja  te  svaki  drugi  oblik  nezakonitog  utjecaja  ili  pokušaj  takvog nezakonitog utjecaja na članove tijela Kluba, ostale organe Kluba, zaposlenike Kluba i slično, koji sprječavaju ili otežavaju obavljanje poslova iz njihove nadležnosti;
 - e. nasilničko, diskriminatorno i rasističko ponašanje.
-- (3) Stegovne mjere su:
+
+## (3) Stegovne mjere su:
+
 - a. Opomena;
 - b. Suspenzija članstva na rok od 3 (tri) mjeseca do 3 (tri) godine;
 - c. Trajno isključenje iz članstva.
@@ -293,8 +290,6 @@ Igrači, članovi Uprave Kluba i zaposlenici Kluba koji su članovi Kluba te pov
 
 ## Članak 28.
 
-## - NACRT PRIJEDLOGA -
-
 ## Tijela Kluba su:
 
 - a. Skupština Kluba (u daljnjem tekstu i: Skupština)
@@ -322,6 +317,14 @@ Igrači, članovi Uprave Kluba i zaposlenici Kluba koji su članovi Kluba te pov
 
 ## - NACRT PRIJEDLOGA -
 
+## (1) Skupština:
+
+- a. utvrđuje opću politiku, strateške ciljeve i smjernice rada Kluba na temelju Izbornog programa pobjedničke izborne liste;
+- b. usvaja Statut Kluba te predlaže njegove izmjene i dopune u slučajevima propisanim odredbama ovog Statuta;
+- c. usvaja plan rada i financijski plan za sljedeću kalendarsku godinu;
+
+## - NACRT PRIJEDLOGA -
+
 za njegov zaposlenički odnos i profesionalne dužnosti ne prestaje mandat i članstvo u tijelima koji proizlaze iz funkcije Predsjednika prema ovom Statutu.
 
 - (4) Svaki član Kluba koji ulazi u bilo koja tijela Kluba mora potpisati izjavu kojom izjavljuje da za njega ne vrijede gore navedeni uvjeti te da će u slučaju nastupa gore navedenih uvjete odmah obavijestiti Upravu Kluba.
@@ -341,19 +344,13 @@ za njegov zaposlenički odnos i profesionalne dužnosti ne prestaje mandat i čl
 
 ## 1. SKUPŠTINA
 
-## Članak 31.
-
 - (1) Skupština je najviše tijelo Kluba.
 - (2) Skupština se sastoji od 50 (pedeset) predstavnika članova Kluba izabranih na način propisan odredbama ovog Statuta.
 - (3) Mandat članova Skupštine, osim u slučajevima propisanim člankom 30. točkama a., b., d., e., f. i g. ovog Statuta, je 5 (pet) godina te isti članovi mogu biti izabrani na novo mandatno razdoblje.
 
 ## Članak 32.
 
-## (1) Skupština:
-
-- a. utvrđuje opću politiku, strateške ciljeve i smjernice rada Kluba na temelju Izbornog programa pobjedničke izborne liste;
-- b. usvaja Statut Kluba te predlaže njegove izmjene i dopune u slučajevima propisanim odredbama ovog Statuta;
-- c. usvaja plan rada i financijski plan za sljedeću kalendarsku godinu;
+## Članak 31.
 
 ## - NACRT PRIJEDLOGA -
 
@@ -445,6 +442,14 @@ te  se  prema  tom  broju  odgovarajuće  mijenjaju  potrebne  većine  za  dono
 - c. 7 (sedam) članova Nadzornog odbora.
 - (3) Skupština,  sukladno  odredbama  ovog  Statuta,  bira  Predsjednika  Nadzornog  odbora, Zamjenika Predsjednika Nadzornog odbora i ostale članove Nadzornog odbora.
 
+## Nadzorni odbor Kluba:
+
+- a. s krbi o provedbi općih načela djelovanja Kluba te štiti i promiče njegov identitet, povijest, vrijednosti i članska prava ;
+- b. skrbi o financijskom, pravnom i gospodarskom poslovanju Kluba te o raspolaganju njegovom imovinom;
+- c. n adzire  provedbu  odluka  Skupštine,  strateških  smjernica,  godišnjeg  plana  rada, financijskog plana i Izbornog programa Kluba;
+- d. d aje prethodnu suglasnost Predsjedniku Kluba za imenovanje i razrješenje članova Uprave;
+- e. u suradnji  s  Predsjednikom,  određuje  operativne  i  strateške  ciljeve  i  zaduženja članovima Uprave te nadzire njihovu provedbu ;
+
 ## - NACRT PRIJEDLOGA -
 
 - (4) Članovi Nadzornog odbora ne mogu biti članovi drugih tijela Kluba, osim Skupštine.
@@ -459,14 +464,6 @@ te  se  prema  tom  broju  odgovarajuće  mijenjaju  potrebne  većine  za  dono
 - (6) U slučajevima iz ovog članka Statuta, novoizabranim članovima Nadzornog odbora mandat traje do isteka mandata Nadzornog odbora.
 
 ## Članak 39.
-
-## Nadzorni odbor Kluba:
-
-- a. s krbi o provedbi općih načela djelovanja Kluba te štiti i promiče njegov identitet, povijest, vrijednosti i članska prava ;
-- b. skrbi o financijskom, pravnom i gospodarskom poslovanju Kluba te o raspolaganju njegovom imovinom;
-- c. n adzire  provedbu  odluka  Skupštine,  strateških  smjernica,  godišnjeg  plana  rada, financijskog plana i Izbornog programa Kluba;
-- d. d aje prethodnu suglasnost Predsjedniku Kluba za imenovanje i razrješenje članova Uprave;
-- e. u suradnji  s  Predsjednikom,  određuje  operativne  i  strateške  ciljeve  i  zaduženja članovima Uprave te nadzire njihovu provedbu ;
 
 ## - NACRT PRIJEDLOGA -
 
@@ -494,6 +491,16 @@ te  se  prema  tom  broju  odgovarajuće  mijenjaju  potrebne  većine  za  dono
 - a. kada to pisanim zahtjevom zatraži većina članova Nadzornog odbora;
 - b. kada to pisanim zahtjevom zatraži Predsjednik Kluba i to za ishođenje prethodne suglasnosti za pravne poslove iznad iznosa od 3.000.000 EUR (tri milijuna eura), ishođenje prethodne suglasnosti za provizije i podjele kod transfera koje prelaze 10% (deset po sto) vrijednosti ugovora te za izbor ili razrješenje članova Uprave Kluba;
 
+## Predsjednik Nadzornog odbora:
+
+- a. saziva te predlaže dnevni red sjednica Skupštine, sukladno članku 33. ovog Statuta ;
+- b. saziva  te  predlaže  dnevni  red  sjednica  Nadzornog  odbora,  osim  u  slučajevima propisanim odredbama ovog Statuta;
+- c. upoznaje javnost s radom i odlukama Skupštine Kluba;
+- d. na temelju odluke Nadzornog odbora, podnosi prijedlog Statuta te drugih općih akata koje usvaja Skupština, osim u slučajevima određenim ovim Statutom;
+- e. predsjeda  sjednicama  Skupštine  i  imenuje  druge  članove  Skupštine  u  Radno predsjedništvo Skupštine;
+- f. na temelju odluke Nadzornog odbora, saziva izbore u Klubu, sukladno članku 50. stavku 7. ovog Statuta;
+- g. zastupa Klub prema Predsjedniku Kluba, sklapa i raskida ugovor o radu s izabranim Predsjednikom Kluba.
+
 ## - NACRT PRIJEDLOGA -
 
 - c. kada privremena spriječenost Predsjednika Kluba traje dulje od 7 (sedam) dana;
@@ -511,18 +518,6 @@ te  se  prema  tom  broju  odgovarajuće  mijenjaju  potrebne  većine  za  dono
 - (2) Skupština može zatražiti od Nadzornog odbora podnošenje izvanrednog izvješća.
 
 ## Članak 4 2.
-
-## Predsjednik Nadzornog odbora:
-
-- a. saziva te predlaže dnevni red sjednica Skupštine, sukladno članku 33. ovog Statuta ;
-- b. saziva  te  predlaže  dnevni  red  sjednica  Nadzornog  odbora,  osim  u  slučajevima propisanim odredbama ovog Statuta;
-- c. upoznaje javnost s radom i odlukama Skupštine Kluba;
-- d. na temelju odluke Nadzornog odbora, podnosi prijedlog Statuta te drugih općih akata koje usvaja Skupština, osim u slučajevima određenim ovim Statutom;
-- e. predsjeda  sjednicama  Skupštine  i  imenuje  druge  članove  Skupštine  u  Radno predsjedništvo Skupštine;
-- f. na temelju odluke Nadzornog odbora, saziva izbore u Klubu, sukladno članku 50. stavku 7. ovog Statuta;
-- g. zastupa Klub prema Predsjedniku Kluba, sklapa i raskida ugovor o radu s izabranim Predsjednikom Kluba.
-
-## - NACRT PRIJEDLOGA -
 
 ## 3. PREDSJEDNIK KLUBA
 
@@ -543,14 +538,6 @@ te  se  prema  tom  broju  odgovarajuće  mijenjaju  potrebne  većine  za  dono
 - (6) Nakon isteka roka iz stavka 5. ovog članka Statuta, Nadzorni odbor dužan je održati sjednicu u  rokovima  iz  članka  40.  stavka  4.  ovog  Statuta,  na  kojoj  će,  između  zaprimljenih kandidatura,  diskrecijskom  ocjenom  izabrati  najviše  2  (dva)  kandidata  te  odmah  sa zvati izvanrednu sjednicu Skupštine.
 - (7) Nadzorni odbor prilikom donošenja odluke o izboru kandidata, sukladno stavku 6. ovog članka Statuta, primjenjuje kriterije prethodnog profesionalnog i radnog iskustva kandidata, obrazovanja, poznavanja organizacijske i upravljačke strukture Kluba, prethodn og radnog iskustva  na  izvršnim,  nadzornim  ili  upravljačkim  funkcijama  u  nogometnim  ili  drugim sportskim klubovima, slijeđenja i provođenja izbornog programa izborne liste koja je na izborima ostvarila veći broj glasova članova Kluba, a može primjenjivati i druge kriterije.
 
-## - NACRT PRIJEDLOGA -
-
-- (8) Izvanredna  sjednica  Skupštine,  a  koja  će  izabrati  novog  Predsjednika  Kluba  između kandidata iz stavka 6. ovog članka Statuta, mora se održati najkasnije 5 (pet) dana od dana sazivanja.
-- (9) Izvanredna  sjednica  Skupštine,  sukladno  članku  34.  stavku  2.  ovog  Statuta,  odlučuje pravovaljano ako je na sjednici nazočna natpolovična većina članova Skupštine, a odluku o izboru novog Predsjednika Kluba donosi većinom glasova nazočnih članova Skupštine.
-- (10) Novoizabranom  Predsjedniku  Kluba  mandat  traje  do  isteka  mandata  tijelima  Kluba tijekom kojeg je dužan slijediti i provoditi izborni program izborne liste koja je na izborima ostvarila veći broj glasova članova Kluba.
-
-## Članak 45.
-
 ## Predsjednik Kluba:
 
 - a. predstavlja  i  zastupa  Klub  samostalno  i  pojedinačno  u  pravnom  prometu,  osim  u poslovima za koje mu je potreban supotpis člana Uprave i/ili prethodna suglasnost Nadzornog odbora;
@@ -566,6 +553,14 @@ te  se  prema  tom  broju  odgovarajuće  mijenjaju  potrebne  većine  za  dono
 - k. u suradnji sa Upravom priprema i podnosi Skupštini godišnje financijsko izvješće i izvješće o radu Kluba;
 - l. u suradnji sa Upravom, podnosi Nadzornom odboru kvartalna i godišnja izvješća te dodatna izvješća na zahtjev Nadzornog odbora;
 - m. djeluje samostalno u okviru ovlasti definiranih ovim Statutom, pri čemu je dužan sazvati sjednicu Uprave radi savjetovanja i odlučivanja u slučajevima koji uključuju promjene  strateškog  smjera  Kluba,  reorganizaciju  poslovanja,  donošenje  planova zapošljavanja i svih odluka koje nadilaze njegove pojedinačne ovlasti ili za koje ovim Statutom nije izričito propisana njegova samostalna nadležnost;
+
+## - NACRT PRIJEDLOGA -
+
+- (8) Izvanredna  sjednica  Skupštine,  a  koja  će  izabrati  novog  Predsjednika  Kluba  između kandidata iz stavka 6. ovog članka Statuta, mora se održati najkasnije 5 (pet) dana od dana sazivanja.
+- (9) Izvanredna  sjednica  Skupštine,  sukladno  članku  34.  stavku  2.  ovog  Statuta,  odlučuje pravovaljano ako je na sjednici nazočna natpolovična većina članova Skupštine, a odluku o izboru novog Predsjednika Kluba donosi većinom glasova nazočnih članova Skupštine.
+- (10) Novoizabranom  Predsjedniku  Kluba  mandat  traje  do  isteka  mandata  tijelima  Kluba tijekom kojeg je dužan slijediti i provoditi izborni program izborne liste koja je na izborima ostvarila veći broj glasova članova Kluba.
+
+## Članak 45.
 
 ## - NACRT PRIJEDLOGA -
 
@@ -595,15 +590,6 @@ te  se  prema  tom  broju  odgovarajuće  mijenjaju  potrebne  većine  za  dono
 - e. odluka  o  izvješćima  koja  Predsjednik  i  Uprava  podnose  Nadzornom  odboru  i/ili Skupštini.
 - (4) Uprava je dužna održati minimalno 10 sjednica godišnje.
 
-## - NACRT PRIJEDLOGA -
-
-- (5) Uprava na sjednici odlučuje pravovaljano ako je na sjednici nazočna natpolovična većina ukupnog broja članova Uprave.
-- (6) Predsjednik Kluba ima pravo biti obaviješten o sjednicama Uprave te sudjelovati u radu sjednice Uprave s pravom glasa i, ukoliko je prisutan na sjednici Uprave, smatra se dijelom kvoruma za odlučivanje.
-- (7) Na  sjednicama  Uprave  odluke  se  donose  većinom  glasova  nazočnih  članova  Uprave.  U slučaju izjednačenog broja glasova članova Uprave odlučujući je glas Predsjednika Kluba ili osobe iz članka 44. Stavka 1. Ovog Statuta.
-- (8) Načine i uvjete svog rada Uprava Kluba uređuje Poslovnikom o radu Uprave, uz suglasnost Predsjednika Kluba.
-
-## Članak 48.
-
 ## Uprava Kluba:
 
 - a. operativno upravlja radom Kluba i za svoj rad odgovorna je Predsjedniku Kluba;
@@ -622,7 +608,16 @@ te  se  prema  tom  broju  odgovarajuće  mijenjaju  potrebne  većine  za  dono
 
 ## V. POČASNI PREDSJEDNIK KLUBA
 
-## Članak 49.
+Članak 49.
+
+## - NACRT PRIJEDLOGA -
+
+- (5) Uprava na sjednici odlučuje pravovaljano ako je na sjednici nazočna natpolovična većina ukupnog broja članova Uprave.
+- (6) Predsjednik Kluba ima pravo biti obaviješten o sjednicama Uprave te sudjelovati u radu sjednice Uprave s pravom glasa i, ukoliko je prisutan na sjednici Uprave, smatra se dijelom kvoruma za odlučivanje.
+- (7) Na  sjednicama  Uprave  odluke  se  donose  većinom  glasova  nazočnih  članova  Uprave.  U slučaju izjednačenog broja glasova članova Uprave odlučujući je glas Predsjednika Kluba ili osobe iz članka 44. Stavka 1. Ovog Statuta.
+- (8) Načine i uvjete svog rada Uprava Kluba uređuje Poslovnikom o radu Uprave, uz suglasnost Predsjednika Kluba.
+
+## Članak 48.
 
 ## - NACRT PRIJEDLOGA -
 
@@ -744,6 +739,11 @@ te  se  prema  tom  broju  odgovarajuće  mijenjaju  potrebne  većine  za  dono
 - (3) Na pisani zahtjev 20% (dvadeset posto) svih članova Kluba s pravom glasa mora se raspisati i referendum radi donošenja odluke o raspisivanju izvanrednih izbora u Klubu.
 - (4) Na referendumu iz stavaka 1. i  3 .  ovog  članka  Statuta  mora  sudjelovati  najmanje 50  % (pedeset posto) svih članova Kluba s pravom glasa , a odlučuje se dvotrećinskom većinom danih glasova.
 
+## (1) Imovinu Kluba čine:
+
+- a. novčana sredstva koja je Klub stekao uplatom članarina, naknada Prijatelja Kluba, dobrovoljnim prilozima i darovima;
+- b. novčana  sredstva  koja  Klub  stekne  obavljanjem  djelatnosti  kojima  se  ostvaruju ciljevi, obavljanjem djelatnosti i gospodarskih djelatnosti, financiranjem programa i
+
 ## - NACRT PRIJEDLOGA -
 
 - (5) Potrebnim se postotkom od 20 % (dvadeset posto) svih članova Kluba s pravom glasa, u smislu odredaba stavka 2. točke b. te stavaka 3. i 4. ovog članka Statuta, smatra se broj članova  Kluba  u  kalendarskoj  godini  u  kojoj  se  referendum  raspisuje  ili  u  kalenda rskoj godini koja prethodi kalendarskoj godini u kojoj se referendum raspisuje, ovisno o tome u kojoj je kalendarskoj godini broj članova Kluba s pravom glasa veći.
@@ -766,10 +766,6 @@ te  se  prema  tom  broju  odgovarajuće  mijenjaju  potrebne  većine  za  dono
 ## VIII. IMOVINA, NAČIN STJECANJA I RASPOLAGANJE IMOVINOM
 
 ## Članak 57.
-
-- (1) Imovinu Kluba čine:
-- a. novčana sredstva koja je Klub stekao uplatom članarina, naknada Prijatelja Kluba, dobrovoljnim prilozima i darovima;
-- b. novčana  sredstva  koja  Klub  stekne  obavljanjem  djelatnosti  kojima  se  ostvaruju ciljevi, obavljanjem djelatnosti i gospodarskih djelatnosti, financiranjem programa i
 
 ## - NACRT PRIJEDLOGA -
 
