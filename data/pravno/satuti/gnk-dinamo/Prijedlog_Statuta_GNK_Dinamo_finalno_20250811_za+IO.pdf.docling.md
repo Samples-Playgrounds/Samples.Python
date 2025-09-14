@@ -21,11 +21,18 @@ Ovim  Statutom  uređuju  se:  naziv  i  sjedište  udruge;  grb  (znak)  udruge
 
 - (1) Građanski nogometni klub ' Dinamo ' (u daljnjem tekstu: Klub) je udruga registrirana u Registru udruga Republike Hrvatske i u Evidenciji pravnih osoba u sportu
 - (2) Klub je neprofitna pravna osoba.
+- (1) Klub ima pečat.
+- (2) Pečat je okruglog oblika, promjera 35 mm, s ispisanim nazivom i mjestom sjedišta Kluba po obodu pečata i znakom u sredini.
 
 ## Članak 4.
 
-- (1) Klub ima pečat.
-- (2) Pečat je okruglog oblika, promjera 35 mm, s ispisanim nazivom i mjestom sjedišta Kluba po obodu pečata i znakom u sredini.
+## (1) Klub:
+
+- a. postupa sukladno Pravilima nogometne igre koje je donio Međunarodni nogometni savez BORD (IFAB);
+- b. poštuje načela privrženosti, integriteta i sportskog ponašanja kao izraza fairplaya;
+- c. poštuje  statut,  pravilnike  i  odluke  FIFA -e  i  UEFA -e  i  Hrvatskog  nogometnog saveza (HNS) u svako vrijeme;
+- d. priznaje nadležnost Arbitražnog suda za sport (CAS) u Lausanni (Švicarska), kao što je utvrđeno relevantnim odredbama Statuta FIFA -e, UEFA -e;
+- e. priznaje  nadležnost  Arbitražnog  suda  HNS -a  i  sukladno  tome  podnosit  će  sve sporove nacionalnih razmjera, koji su nastali iz ili u vezi s primjenom Statuta ili pravilnika HNS -a, u posljednjoj instanci samo tim arbitražama, koje rješavaju svoje sporove,  isključujući  svaki  redovni  sud,  osim  ukoliko  je  to  izričito  zabranjeno važećim zakonodavstvom u Republici Hrvatskoj.
 
 ## Članak 5.
 
@@ -48,13 +55,6 @@ Klub  zastupaju  Predsjednik  Kluba,  Predsjednik  Nadzornog  odbora  Kluba  i  
 
 ## Članak 8.
 
-## (1) Klub:
-
-- a. postupa sukladno Pravilima nogometne igre koje je donio Međunarodni nogometni savez BORD (IFAB);
-- b. poštuje načela privrženosti, integriteta i sportskog ponašanja kao izraza fairplaya;
-- c. poštuje  statut,  pravilnike  i  odluke  FIFA -e  i  UEFA -e  i  Hrvatskog  nogometnog saveza (HNS) u svako vrijeme;
-- d. priznaje nadležnost Arbitražnog suda za sport (CAS) u Lausanni (Švicarska), kao što je utvrđeno relevantnim odredbama Statuta FIFA -e, UEFA -e;
-- e. priznaje  nadležnost  Arbitražnog  suda  HNS -a  i  sukladno  tome  podnosit  će  sve sporove nacionalnih razmjera, koji su nastali iz ili u vezi s primjenom Statuta ili pravilnika HNS -a, u posljednjoj instanci samo tim arbitražama, koje rješavaju svoje sporove,  isključujući  svaki  redovni  sud,  osim  ukoliko  je  to  izričito  zabranjeno važećim zakonodavstvom u Republici Hrvatskoj.
 - (2) U  slučaju  sporova  za  koje  su  nadležna  pravosudna  tijela  FIFA -e,  UEFA -e,  CAS -a, Arbitražnog suda Saveza ili pravnih tijela Saveza, Klub se obvezuje da spor neće iznositi pred redovne sudove.
 - (3) Klub poštuje sve odluke nadležnih tijela HNS -a, FIFA -e i UEFA -e i CAS -a.
 
@@ -75,7 +75,7 @@ Vizija, misija i svrha Kluba:
 
 ## Članak 11.
 
-## Ciljevi Kluba su:
+Ciljevi Kluba su:
 
 - (1) Identitet i vrednote:
 - a. Njegovati  identitet  Kluba  kao  otvorenog,  građanskog,  zagrebačkog i  hrvatskog kluba, temeljenog na načelima demokratičnosti, transparentnosti i zajedništva.
@@ -109,8 +109,6 @@ Vizija, misija i svrha Kluba:
 - e. Integritet  i  izbjegavanje  sukob a interesa:  Svi  koji  djeluju  u  ime  Kluba  dužni  su razdvajati privatne i klupske interese te postupati u najboljem interesu Kluba.
 - f. Građanski identitet i društvena odgovornost: Klub čuva svoju zagrebačku i hrvatsku tradiciju,  promiče  zajedništvo,  poštovanje  različitosti  i  koristi  sport  kao  alat pozitivnih društvenih promjena.
 
-## Članak 13.
-
 ## Djelatnosti Kluba su:
 
 - a. Natjecateljska aktivnost: Sudjelovanje u profesionalnim i amaterskim natjecanjima u nogometu na lokalnoj, državnoj i međunarodnoj razini, za sve uzraste i kategorije.
@@ -133,6 +131,9 @@ Vizija, misija i svrha Kluba:
 - d. davanje u zakup i podzakup vlastitih poslovnih prostora i mjesta za oglašavanje.
 - (2) Djelatnosti  iz  stavka  1.  ovog  članka  Klub  obavlja  u  skladu  s  posebnim  propisima  koji uređuju gospodarsko poslovanje udruga kao pravnih osoba.
 - (3) Djelatnosti iz stavka 1. ovog članka ne mogu se obavljati radi stjecanja dobiti za svoje članove ili treće osobe.
+
+## Članak 13.
+
 - (4) Ako  u  obavljanju  gospodarskih  djelatnosti  Klub  ostvari  dobit  ona  se  mora  koristiti isključivo za obavljanje i unapređenje djelatnosti Kluba kojima se ostvaruju ciljevi Kluba, utvrđeni ovim Statutom, sukladno zakonu.
 
 ## Članak 15.
@@ -187,7 +188,9 @@ Klub može osnivati trgovačka društva sukladno odredbama Zakona o trgovačkim 
 - b. zatražiti raspisivanje referenduma;
 - c. glasovati na referendumu;
 - d. sudjelovati u radu i upravljanju Klubom putem izabranih predstavnika u Skupštini i u drugim tijelima Kluba te sudjelovati u savjetodavnim odborima i povjerenstvima koje osniva Nadzorni odbor Kluba.
-- (2) Svi članovi Kluba, sukladno odredbama ovog Statuta, imaju pravo:
+
+(2) Svi članovi Kluba, sukladno odredbama ovog Statuta, imaju pravo:
+
 - a. biti imenovani u Upravu Kluba;
 - b. biti pravodobno obavještavani o radu Kluba te aktima i odlukama tijela Kluba na način propisan Statutom, posebnim aktima i odlukama Uprave Kluba;
 - c. biti  nagrađeni  počasnim  odlikovanjima  za  doprinos  Klubu  ili  za  dugotrajno članstvo, sukladno odluci Nadzornog odbora Kluba;
@@ -227,7 +230,9 @@ Igrači, članovi Uprave Kluba i zaposlenici Kluba koji su članovi Kluba te pov
 - c. grubo vrijeđanje, klevetanje ili nanošenje materijalne ili nematerijalne štete drugim članovima Kluba ili Prijateljima Kluba, povjerenicima Kluba, kao i članovima tijela Kluba tijekom ili zbog obavljanja njihovih funkcija;
 - d. prisila,  prijetnja  te  svaki  drugi  oblik  nezakonitog  utjecaja  ili  pokušaj  takvog nezakonitog utjecaja na članove tijela Kluba, ostale organe Kluba, zaposlenike Kluba i slično, koji sprječavaju ili otežavaju obavljanje poslova iz njihove nadležnosti;
 - e. nasilničko, diskriminatorno i rasističko ponašanje.
-- (3) Stegovne mjere su:
+
+## (3) Stegovne mjere su:
+
 - a. Opomena;
 - b. Suspenzija članstva na rok od 3 (tri) mjeseca do 3 (tri) godine;
 - c. Trajno isključenje iz članstva.
@@ -270,8 +275,6 @@ Igrači, članovi Uprave Kluba i zaposlenici Kluba koji su članovi Kluba te pov
 
 ## IV. TIJELA KLUBA
 
-## Članak 28.
-
 ## Tijela Kluba su:
 
 - a. Skupština Kluba (u tekstu Statuta i: Skupština)
@@ -295,6 +298,9 @@ Igrači, članovi Uprave Kluba i zaposlenici Kluba koji su članovi Kluba te pov
 - i. koje su u posljednje tri godine pravomoćno kažnjene za kaznena djela ili prekršaje u sportu i u vezi sa sportom i sportskim natjecanjima;
 - j. koje su pravomoćno osuđene na kaznu zatvora u trajanju od najmanje 6 (šest) mjeseci za neko od kaznenih djela počinjena s namjerom, a nije primijenjena uvjetna osuda godinu dana od odsluženja kazne;
 - k. koje ne ispunjavaju druge uvjete propisane Zakonom o sportu i drugim zakonima;
+
+## Članak 28.
+
 - l. koje su aktivni igrač, trener ili zaposlenik Kluba, a ako to postanu tijekom mandata u  tijelima  Kluba,  prestaje  im  mandat  i  članstvo  u  tijelu  Kluba,  osim  članovima Uprave Kluba za članstvo i zaposlenički odnos u Upravi, kao što niti Predsjedniku za njegov zaposlenički odnos i profesionalne dužnosti ne prestaje mandat i članstvo u tijelima koji proizlaze iz funkcije Predsjednika prema ovom Statutu.
 - (4) Svaki član Kluba koji ulazi u bilo koj e tijelo Kluba mora potpisati izjavu kojom izjavljuje da nema zapreka iz stav a ka 2. i 3. ovog članka Statuta te da će u slučaju nastupa istih odmah obavijestiti Upravu Kluba.
 - (5) Ukoliko se na izborima za Skupštinu Kluba kandidiraju zaposlenici Kluba, izbor u Skupštinu Kluba  predstavlja  razlog  za  prestanak  ugovora  o  radu  i/ili  sličnih  ugovora  koje  imaju zaključene s Klubom. Iznimno, ako se na izborima kao nositelj liste za svoj drugi mandat kandidira Predsjednik, ne prestaje mu ugovor tijekom izbornog postupka.
@@ -314,17 +320,17 @@ Mandat članovima tijela Kluba prestaje istekom mandata ili:
 
 ## 1. SKUPŠTINA
 
-## Članak 31.
-
 - (1) Skupština je najviše tijelo Kluba.
 - (2) Skupština se sastoji od 50 (pedeset) predstavnika članova Kluba izabranih na način propisan odredbama ovog Statuta.
 - (3) Mandat članova Skupštine, osim u slučajevima propisanim člankom 30. točkama a., b., d., e., f. i g. ovog Statuta, je 5 (pet) godina te isti članovi mogu biti izabrani na novo mandatno razdoblje.
 
 ## Članak 32.
 
-## (1) Skupština:
-
+- (1) Skupština:
 - a. utvrđuje opću politiku, strateške ciljeve i smjernice rada Kluba na temelju Izbornog programa pobjedničke izborne liste;
+
+## Članak 31.
+
 - b. usvaja Statut Kluba te predlaže njegove izmjene i dopune u slučajevima propisanim odredbama ovog Statuta;
 - c. usvaja plan rada i financijski plan za sljedeću kalendarsku godinu;
 - d. usvaja  godišnje  financijsko  izvješće  i  izvješća  Predsjednika  Kluba  o  radu  za prethodnu kalendarsku godinu;
@@ -405,17 +411,6 @@ Mandat članovima tijela Kluba prestaje istekom mandata ili:
 - (3) Skupština,  sukladno  odredbama  ovog  Statuta,  bira  Predsjednika  Nadzornog  odbora, Zamjenika Predsjednika Nadzornog odbora i ostale članove Nadzornog odbora.
 - (4) Članovi Nadzornog odbora ne mogu biti članovi drugih tijela Kluba, osim Skupštine.
 
-## Članak 38.
-
-- (1) Mandat  Predsjednika  Nadzornog  odbora,  Zamjenika  Predsjednika  Nadzornog  odbora  te članova Nadzornog odbora, osim u slučajevima propisanim člankom 30. točkama a. -g. ovog Statuta, je 5 (pet) godina te isti članovi mogu biti izabrani na nova mandatna razdoblja.
-- (2) U slučaju prestanka mandata pojedinih članova Nadzornog odbora iz razloga propisanih člankom 30. točkama a. -g. ovog Statuta, Nadzorni odbor do izbora novih članova nastavlja s radom s tim smanjenim brojem članova, pod uvjetom da broj članova Nadzornog odbora nije manji od 5 (pet).
-- (3) U slučaju iz stavka 2. ovog članka Statuta, Skupština na prvoj sljedećoj sjednici Skupštine, na prijedlog Predsjednika Nadzornog odbora, bira preostale članove Nadzornog odbora iz redova članova Skupštine.
-- (4) Ukoliko, iz razloga propisanih člankom 30. točkama a. -g.  ovog Statuta, prestane mandat Predsjedniku  Nadzornog  odbora,  novim  Predsjednikom  Nadzornog  odbora  automatski postaje Zamjenik Predsjednika Nadzornog odbora, a član Nadzornog odbora na izbornoj listi naveden  pod  rednim  brojem  4  (četiri)  automatski  postaje  novi  Zamjenik  Predsjednika Nadzornog  odbora.  Navedeni  se  način  izbora  novog  Predsjednika  Nadzornog  odbora  ili Zamjenika Predsjednika Nadzornog odbora primjenjuje do člana Nadzornog odbora koji je na izbornoj listi naveden pod rednim brojem 10 (deset), a ukoliko prestane mandat i članu Nadzornog  odbora  koji  je  na  izbornoj  listi  naveden  pod  rednim  brojem  10  (deset), Predsjednikom Nadzornog odbora ili Zamjenikom  Predsjednika Nadzornog odbora automatski postaju novoizabrani članovi Nadzornog odbora redoslijedom njihovog izbora za članove Nadzornog odbora.
-- (5) U slučaju da, iz razloga propisanih člankom 30. točkama a. -g. ovog Statuta, prestane mandat svim članovima Nadzornog odbora ili broj članova Nadzornog odbora padne ispod broja 5 (pet), Predsjednik Kluba, u roku koji ne može biti dulji od 5 (pet) dana, saziva izvanrednu sjednicu Skupštine te predlaže nove članove Nadzornog odbora iz redova članova Skupštine, a najmanje 15 (petnaest) članova Skupštine pisanim prijedlogom može na sjednici predložiti druge kandidate.
-- (6) U slučajevima iz ovog članka Statuta, novoizabranim članovima Nadzornog odbora mandat traje do isteka mandata Nadzornog odbora.
-
-## Članak 39.
-
 ## Nadzorni odbor Kluba:
 
 - a. nadzire provedb u općih načela djelovanja Kluba te štiti i promiče njegov identitet, povijest, vrijednosti i članska prava;
@@ -424,6 +419,18 @@ Mandat članovima tijela Kluba prestaje istekom mandata ili:
 - d. nadzire  provedbu  odluka  Skupštine,  strateških  smjernica,  godišnjeg  plana  rada, financijskog plana i Izbornog programa Kluba;
 - e. daje prethodnu suglasnost Predsjedniku Kluba za imenovanje i razrješenje članova Uprave;
 - f. pomaže  Predsjedniku u određivanju operativnih i  strateških ciljev a  te zaduženja članovima Uprave i nadzire njihovu provedbu;
+
+## Članak 38.
+
+- (1) Mandat  Predsjednika  Nadzornog  odbora,  Zamjenika  Predsjednika  Nadzornog  odbora  te članova Nadzornog odbora, osim u slučajevima propisanim člankom 30. točkama a. -g. ovog Statuta, je 5 (pet) godina te isti članovi mogu biti izabrani na nova mandatna razdoblja.
+- (2) U slučaju prestanka mandata pojedinih članova Nadzornog odbora iz razloga propisanih člankom 30. točkama a. -g. ovog Statuta, Nadzorni odbor do izbora novih članova nastavlja s radom s tim smanjenim brojem članova, pod uvjetom da broj članova Nadzornog odbora nije manji od 5 (pet).
+- (3) U slučaju iz stavka 2. ovog članka Statuta, Skupština na prvoj sljedećoj sjednici Skupštine, na prijedlog Predsjednika Nadzornog odbora, bira preostale članove Nadzornog odbora iz redova članova Skupštine.
+- (4) Ukoliko, iz razloga propisanih člankom 30. točkama a. -g. ovog Statuta, prestane mandat Predsjedniku  Nadzornog  odbora,  novim  Predsjednikom  Nadzornog  odbora  automatski postaje Zamjenik Predsjednika Nadzornog odbora, a član Nadzornog odbora na izbornoj listi naveden  pod  rednim  brojem  4  (četiri)  automatski  postaje  novi  Zamjenik  Predsjednika Nadzornog  odbora.  Navedeni  se  način  izbora  novog  Predsjednika  Nadzornog  odbora  ili Zamjenika Predsjednika Nadzornog odbora primjenjuje do člana Nadzornog odbora koji je na izbornoj listi naveden pod rednim brojem 10 (deset), a ukoliko prestane mandat i članu Nadzornog  odbora  koji  je  na  izbornoj  listi  naveden  pod  rednim  brojem  10  (deset), Predsjednikom Nadzornog odbora ili Zamjenikom  Predsjednika Nadzornog odbora automatski postaju novoizabrani članovi Nadzornog odbora redoslijedom njihovog izbora za članove Nadzornog odbora.
+- (5) U slučaju da, iz razloga propisanih člankom 30. točkama a. -g. ovog Statuta, prestane mandat svim članovima Nadzornog odbora ili broj članova Nadzornog odbora padne ispod broja 5 (pet), Predsjednik Kluba, u roku koji ne može biti dulji od 5 (pet) dana, saziva izvanrednu sjednicu Skupštine te predlaže nove članove Nadzornog odbora iz redova članova Skupštine, a najmanje 15 (petnaest) članova Skupštine pisanim prijedlogom može na sjednici predložiti druge kandidate.
+- (6) U slučajevima iz ovog članka Statuta, novoizabranim članovima Nadzornog odbora mandat traje do isteka mandata Nadzornog odbora.
+
+## Članak 39.
+
 - g. odobrava prijedlog Predsjednika i Uprave u vezi godišnjeg plana rada i financijskog plana Kluba te godišnjeg financijskog izvješća i izvješća o radu Kluba;
 - h. u suradnji s Predsjednikom, redovno provodi formalnu evaluaciju rada svakog člana Uprave, uzimajući u obzir ostvarenje ciljeva i poštivanje vrednota Kluba;
 - i. nadzire rad Predsjednika i Uprave te u vezi toga može izdavati naputke, i zahtijevati izvješća i dokumentaciju te sazivati dodatne koordinacijske sastanke;
@@ -694,7 +701,8 @@ predsjedništvo  i  zapisničara.  Svakih  100  (sto) članova  Kluba  s  pravom
 
 ## Članak 57.
 
-- (1) Imovinu Kluba čine:
+## (1) Imovinu Kluba čine:
+
 - a. novčana sredstva koja je Klub stekao uplatom članarina, naknada Prijatelja Kluba, dobrovoljnim prilozima i darovima;
 - b. novčana  sredstva  koja  Klub  stekne  obavljanjem  djelatnosti  kojima  se  ostvaruju ciljevi, obavljanjem djelatnosti i gospodarskih djelatnosti, financiranjem programa i projekata  Kluba  iz  državnog  proračuna  i  proračuna  jedinica  lokalne  i  područne (regionalne) samouprave te fondova i/ili iz inozemnih izvora;
 - c. nekretnine i pokretne stvari Kluba;
@@ -731,7 +739,6 @@ predsjedništvo  i  zapisničara.  Svakih  100  (sto) članova  Kluba  s  pravom
 - (1) Ovaj Statut stupa na snagu danom upisa u Registar udruga Republike Hrvatske.
 - (2) Postojećim  tijelima  Kluba , uključujući  i  provedbu  prvih  izbora  prema  ovom  Statutu  i Pravilniku o izborima u GNK ' Dinamo ' od strane postojećeg Izbornog povjerenstva koje će ga  provoditi, a  u  vezi  izbora  ovlasti  Nadzornog  odbora  imati  postojeći  Izvršni  odbor, nadležnosti i ovlasti traju do izbora tijela Kluba sukladno odredbama ovog Statuta.
 - (3) Sva  tijela  Kluba  mogu  se,  putem  Nadzornog  odbora,  obratiti  Skupštini  za  autentično tumačenje odredaba Statuta i akata koje ona donosi.
-
 - (4) Opći akti Kluba moraju se usuglasiti s odredbama ovog Statuta u roku od 90 (devedeset) dana od dana donošenja Statuta.
 
 U Zagrebu…..
