@@ -12,7 +12,7 @@ Savez je osnovan 12. ožujka 1961. godine u Zagrebu nazivom Judo savez Hrvatske 
 
 Izraze koji se koriste u ovom statutu, a imaju rodno znaženje, odnose se jednako na ženski muški rod.
 
-## Clanak 2.
+Clanak 2.
 
 Naziv Saveza je: HRVATSKI JUDO SAVEZ.
 
@@ -22,7 +22,7 @@ Pored naziva na hrvatskom jeziku, Savez ée u medunarodnim odnosima koristiti na
 
 Pored skraéenog naziva na hrvatskom jeziku, Savez ée u medunarodnim odnosima koristiti skraéeni naziv na engleskom jeziku: CRO JUDO\_
 
-## Clanak 3
+Clanak 3
 
 Savez djeluje na teritoriju Republike Hrvatske.
 
@@ -46,7 +46,7 @@ Iznimno, Upravni odbor Saveza na prijedlog predsjednika Saveza može i druge oso
 
 Uporaba, izgled i žuvanje pecata ureduju se odlukom koju donosi Upravni odbor Saveza.
 
-## Clanak 8.
+Clanak 8.
 
 Savez ima znak zastavu.
 
@@ -70,7 +70,7 @@ Svojim djelovanjem Savez ima za cilj brigu ostvarenje programa javnih potreba u 
 
 ## 1. CILEVI SAVEZA
 
-## Ciljevi Saveza su:
+Ciljevi Saveza su:
 
 ## Clanak 11.
 
@@ -190,18 +190,19 @@ Srarus punopravnih šlanica Saveza stjecu se po donošenju odluke Skupštine 0 p
 
 ## Clanak 19.
 
+- odluku skupštine 0 udruživanju u Savez,
+
 Zahtjevu za užlanjenje potrebno je priložiti:
 
 - presliku statuta kluba/saveza/udruge uskladenim s ovim Statutom,
-- odluku skupštine 0 udruživanju u Savez,
+- izvadak iz Evidencije pravnih osoba u sportu,
 - presliku rješenja 0 upisu u Registar udruga Republike Hrvatske,
 - presliku   rješenja 0 upisu u registar   neprofitnih   organizacija pri Ministarstvu   financija Republike Hrvatske,
-- izvadak iz Evidencije pravnih osoba u sportu,
+- broj bankovnog ražuna na obrascu banke,
 - presliku 0 obavijesti Državnog zavoda za statistiku 0 razvrstavanju prema NKD-u,
 - popis (ime, prezime, OIB, datum i godina rodenja) 0 klupskoj registraciji najmanje dvadeset (20) aktivnih clanova,
-- broj bankovnog ražuna na obrascu banke,
-- codatke 0 osobama ovlaštenim za zastupanje (kontakt e-mail, mobitel) ,
 - potvrdu ili ugovor 0 pravu korištenja sportskog objekta, te udovoljava uvjetima za sigurnost zdravlje sportaša i drugih osoba za bavljenje judo sportom,
+- codatke 0 osobama ovlaštenim za zastupanje (kontakt e-mail, mobitel) ,
 - presliku ugovorenih odnosa $ osobom koja ima propisanu strucnu spremu odnosno koja je osposobljena za obavljanje strucnih poslova u judo sportu u skladu sa Zakonom 0 sportu,
 - potvrdu 0 uplati godišnje žlanarine Savezu.
 - Izjava 0 drugih opcih akata Saveza, pravila   pripadajucih medunarodnih sportskih udruženja, nacela pravila Olimpijske povelje, Etickog Medicinskog kodeksa, te Svjetskog kodeksa protiv dopinga (WADA),
@@ -230,7 +231,7 @@ Popis clanica Saveza dostupan je svim žlanicama nadležnim tijelima, na njihov 
 - biti informirane 0 svim relevantnim zbivanjima u podrucju judo sporta dostupnim Savezu.
 - sudjelovati na stružnim seminarima, tecajevima ostalim dogadanjima sukladno opéim aktima Saveza,
 
-## Ooveze clanica su:
+Ooveze clanica su:
 
 - aktivo sudjelovati sa žlanstvom na najmanje tri (3) natjecanja u tekucoj godini sukladno kalendaru Saveza (obaveza se odnosi na žlanice iz žlanka 18., stavak 1.),
 - aktivno sudjelovati u realizaciji pojedinih dijelova godišnjeg plana rada Saveza prihvacajuci dužnosti  organizatora  pojedinih   natjecanja ostalih aktivnosti   predvidenih programom Saveza kao i aktima, opéim
@@ -264,8 +265,6 @@ Prestankom žlanstva ne prestaju financijske obveze koje je dotadašnji žlan im
 
 ## IV. USTROJ UPRAVLJANJE U SAVEZU
 
-Clanak 24.
-
 U Savezu djeluju sljedeca tijela:
 
 - Skupština Saveza,
@@ -282,27 +281,29 @@ Kod izbora žlanova tijela Saveza, potrebno je voditi brigu 0:
 - stružnoj   osposobljenosti, znanjima drugim   kvalitetama osoba u odnosu na ciljeve nadležnosti Skupštine, Upravnog odbora, Nadzornog odbora, Stegovne komisije odnosno drugih tijela saveza,
 - poštivanju službene preporuke Medunarodnog olimpijskog odbora 0 potrebi zastupljenosti odredenog broja žena u sastavu tijela Saveza, odnosno osigurati zastupljenost do 40% osoba podzastupljenog spola.
 
-## Skupština Saveza
+## Clanak 24.
 
-## Clanak 25.
+## Skupština Saveza
 
 Skupština Saveza je najviše tijelo upravljanja Savezom.
 
-## Skupštinu sacinjavaju:
+Skupštinu sacinjavaju:
 
 - sedam (7) clanova Upravnog odbora Saveza.
+
+## Clanak 25.
+
 - po jedan predstavnik žlanice Saveza, sukladno šlanku 17. ovog Statuta; a prema popisu žlanica Saveza, te ukoliko žlanice na dan održavanja izborne sjednice Skupštine imaju urednu registraciju važecim mandatima tijela upravljanja i zastupanja podmire materijalne i/ili financijske, te druge obveze prema Savezu,
 
 ## 4.1.1. Predstavnici u Skupštini Saveza
 
+Predstavnik u Skupštini Saveza može biti osoba:
+
 ## Clanak 26.
 
 - koja je državljanin Republike Hrvatske,
-
-Predstavnik u Skupštini Saveza može biti osoba:
-
-- koja je navršila 18 godina potpuno je poslovno sposobna; koja se nije ogriješila 0 eticke norme nažela olimpijskog pokreta,
 - koja Statut Saveza, Statut   Hrvatskog olimpijskog odbora, Statut pravila pripadajuéeg medunarodnog sportskog udruženja, nažela pravila Olimpijske povelje, te Svjetskog kodeksa protiv dopinga (WADA),
+- koja je navršila 18 godina potpuno je poslovno sposobna; koja se nije ogriješila 0 eticke norme nažela olimpijskog pokreta,
 
 Predstavnici u Skupštini Saveza za svoj rad odgovorni su Skupštini žlanici žiji su predstavnici.
 
@@ -331,9 +332,9 @@ Na Izbornoj sjednici Skupštine Clanovi Upravnog odbora ne mogu biti predstavnic
 
 ## 4.1.3. Sjednice Skupštine
 
-## Clanak 28.
-
 Skupština Saveza odlucuje 0 pitanjima iz svoje nadležnosti na sjednicama.
+
+## Clanak 28.
 
 Sjednice Skupštine saziva predsjedava im predsjednik, a u služaju   njegove odsutnosti ili sorijecenosti, dopredsjednik.
 
@@ -363,7 +364,7 @@ Izborne sjednice Skupštine održavaju se svake žetiri (4) godine.
 
 Izbornim sjednicama Skupštine predsjedava trožlano radno predsjedništvo koje se bira izmedu clanova Skupštine.
 
-- U služaju isteka mandata tijelima Saveza, Skupštinu Saveza saziva zadnja osoba za zastupanje upisana u Registar udruga ili najmanje 1/3 žlanica Saveza koje su upisane u popis žlanica Saveza prije isteka mandata tijelima Saveza.
+U služaju isteka mandata tijelima Saveza, Skupštinu Saveza saziva zadnja osoba za zastupanje upisana u Registar udruga ili najmanje 1/3 žlanica Saveza koje su upisane u popis žlanica Saveza prije isteka mandata tijelima Saveza.
 
 Izvanredna sjednica Skupštine Saveza je skupština koja se saziva sukladno odredbama ovog žlanka, a odnosi se na sjednicu iz prethodnog stavka ovog žlanka.
 
@@ -379,7 +380,7 @@ na samoj sjednici Skupštine saveza.
 
 Skupština može pravovaljano odlucivati ako je na sjednici nazožna natpolovicna veéina žlanova Skupštine
 
-- 0 služaju da u zakazano vrijeme požetka rada Skupštine ne bude prisutna natpolovicna vecina nakon toga sjednici Skupštine ne prisustvuje natpolovicna vecina žlanova Skupštine, ista se neée održati.
+0 služaju da u zakazano vrijeme požetka rada Skupštine ne bude prisutna natpolovicna vecina nakon toga sjednici Skupštine ne prisustvuje natpolovicna vecina žlanova Skupštine, ista se neée održati.
 
 Oracu sjednice Skupštine vodi se zapisnik, kojeg potpisuje izabrani zapisnicar na sjednici Skupštine 55,273, te zapisnik ovjeravaju dva ovjerovitelja zapisnika, takoder izabranih na sjednici Skupštine
 
@@ -417,7 +418,7 @@ Caovi Skupštine sudjeluju u radu odlucivanju temeljeci se na:
 - zajednickim interesima svih udruženih žlanica obvezi   izvršenja ciljeva zadaca Saveza utvrdenih Zakonom i ovim Statutom.
 - težnjama k ostvarivanju sportskih vrijednosti koje pridonose razvoju, afirmaciji ugledu hrvatskog juda Republike Hrvatske
 
-## žlan Skupštine Saveza ima prava i obveze:
+žlan Skupštine Saveza ima prava i obveze:
 
 - odlucivati 0 pitanjima 0 kojima odlucuje Skupština,
 - sudjelovati u radu Skupštine drugih tijela u koje je izabran,
@@ -429,9 +430,9 @@ Caovi Skupštine sudjeluju u radu odlucivanju temeljeci se na:
 
 ## Predsjednik Saveza
 
-## Clanak 35.
-
 Varcat predsjednika traje žetiri (4) godine i iste osobe mogu biti ponovno birane za novo mandatno
+
+## Clanak 35.
 
 - predstavlja i zastupa Savez u zemlji inozemstvu,
 - ccgovoran je za zakonitost rada Saveza ispunjavanje zakonom, drugim  propisima ili ugovorima utvrdenih obveza Saveza,
@@ -446,6 +447,8 @@ Varcat predsjednika traje žetiri (4) godine i iste osobe mogu biti ponovno bira
 - icvim Statutom, ili koje su u svezi s funkcijom predsjednika.
 
 ## Clanak 36.
+
+5 razriješeni sa svojih funkcija.
 
 Upravnom odboru.
 
@@ -472,19 +475,17 @@ predsjednika istaknuto više kandidata, od kojih u prvom krugu glasovanja niti j
 
 ## Clanak 39.
 
-5 razriješeni sa svojih funkcija.
-
-- 0arjerenju predsjednika odlucuje Skupština na izvanrednoj sjednici koju saziva ovlašteno tijelo
-- trajne sprijecenosti ili podnošenja neopozive ostavke predsjednika zamjenjuje
+0arjerenju predsjednika odlucuje Skupština na izvanrednoj sjednici koju saziva ovlašteno tijelo trajne sprijecenosti ili podnošenja neopozive ostavke predsjednika zamjenjuje
 
 ## 23 Upravni odbor
 
 ## Clanak 40
 
-zadace.
-
 - crijedlog strategije razvoja judo sporta u RH,
 - crijedlog godišnjeg i višegodišnjeg plana judo sporta na državnoj razini, odnosno program rada Saveza, koje donosi skupština Saveza,
+
+zadace.
+
 - prijedlog Statuta, odnosno njegovih izmjena i dopuna, koje donosi skupština Saveza,
 - 'nancijski plan, uvjete nacin korištenja financijskog plana, koje donosi skupština Saveza,
 - Sinancijsko izvješée, koje donosi skupština saveza.
@@ -529,14 +530,6 @@ Uzravni odbor za svoj rad odgovara Skupštini.
 
 2
 
-na osobni e mandat novoizabranog žlana Upravnog odbora traje do kraja mandata tog
-
-## Clanak 43.
-
-na sjednicama, a može   djelovati izjašnjavanjem   telefonski   ili  putem cravovaljanih odluka potrebna je nazožnost, odnosno telefonsko izjašnjavanje ili
-
-ili  veéinom glasova telefonskog izjašnjavanja ili izjašnjavanja putem
-
 ## Clanak 41.
 
 ## Clanak 42
@@ -545,9 +538,17 @@ naloži zakonom.
 
 štititi interese Saveza i judo sporta.
 
-ista osoba može biti ponovno izabrana za
+ista osoba može biti ponovno izabrana za na osobni
 
-Upravnog odbora predsjedava   predsjednik, a u slucaju njegove odsurnosti
+e mandat novoizabranog žlana Upravnog odbora traje do kraja mandata tog
+
+## Clanak 43.
+
+na sjednicama, a može   djelovati izjašnjavanjem   telefonski   ili  putem cravovaljanih odluka potrebna je nazožnost, odnosno telefonsko izjašnjavanje ili
+
+ili  veéinom glasova telefonskog izjašnjavanja ili izjašnjavanja putem
+
+Upravnog odbora predsjedava   predsjednik, a u slucaju njegove odsurnosti ili
 
 Saznice Upravnog odbora saziva predsjednik.
 
@@ -603,13 +604,13 @@ Glavni tajnik za svoj rad odgovara Upravnom odboru.
 
 Glavni tajnik može biti razriješen dužnosti ako svojim radom neopravdano ne izvršava odnosno odbije izvršavati odluke Upravnog odbora.
 
-Odluku 0 razrješenju donosi Upravni odbor Saveza. Inicijativu za razrješenje dužnosti Glavnog tajnika mogu dati predsjednik Saveza, Upravni odbor i Nadzorni odbor Saveza.
+Odluku 0 razrješenju donosi Upravni odbor Saveza.
+
+Inicijativu za razrješenje dužnosti Glavnog tajnika mogu dati predsjednik Saveza, Upravni odbor i Nadzorni odbor Saveza.
 
 Do razrješenja može doci i na vlastiti zahtjev Glavnog tajnika Saveza.
 
 ## 4.5. Nadzorni odbor
-
-## Clanak 48.
 
 Nadzorni odbor se sastoji od tri (3) žlana, predsjednik i dva (2) žlana.
 
@@ -626,11 +627,15 @@ Nadzorni odbor je ovlašten za:
 - nadzor materijalno-financijskog poslovanja Saveza,
 - poduzimanje drugih mjera u svezi sa svojim poslovima, zadaéama i djelokrugom rada.
 
-Ured Saveza, kao i druga tijela Saveza, dužni su Nadzornom odboru pružiti sve tražene potrebne podatke, omoguciti uvid u dokumentaciju i osigurati uvjete za rad.
+Ured Saveza, kao i druga tijela Saveza, dužni su Nadzornom odboru pružiti sve tražene potrebne
+
+## Clanak 48.
+
+podatke, omoguciti uvid u dokumentaciju i osigurati uvjete za rad.
 
 Nadzorni odbor je za svoj rad odgovoran Skupštini Saveza kojoj podnosi izvješée 0 svom radu.
 
-- 0 uocenim nepravilnostima Nadzorni odbor obavještava Ured Saveza, Upravni odbor, odnosno Skupštinu Saveza kao i tijelo u cijem je radu nastala nepravilnost.
+0 uocenim nepravilnostima Nadzorni odbor obavještava Ured Saveza, Upravni odbor, odnosno Skupštinu Saveza kao i tijelo u cijem je radu nastala nepravilnost.
 
 Ako se utvrdena nepravilnost ne otkloni u roku od 30 dana od zaprimljenog zahtjeva, Nadzorni odbor je dužan 0 tome obavijestiti ovlaštena državna tijela.
 
@@ -638,9 +643,9 @@ Nadzorni odbor djeluje na sjednicama, a preporuke donosi natpolovicnom vecinom �
 
 ## 4.6. Stegovna komisija
 
-## Clanak 50.
-
 Stegovna komisija Saveza je tijelo koje odlužuje 0 stegovnoj odgovornosti žlanova i osoba koje sudjeluju u programima Saveza, provodi stegovne postupke u prvom stupnju, a temeljem Pravilnika 0 stegovnoj odgovornosti koji donosi Skupština Saveza.
+
+## Clanak 50.
 
 ## Clanak 51.
 
@@ -655,9 +660,7 @@ Stegovna komisija odlucuje 0 stegovnoj odgovornosti žlanica Saveza, kao fizicki
 - predlaže izmjene i dopune Pravilnika 0 stegovnoj odgovornosti Saveza, prati
 - obavlja i druge zadace, temeljem odluka Skupštine, koje su u djelokrugu njenog rada.
 
-žalba na odluku Stegovne komisije se u roku od 15 dana od primitka odluke podnosi Upravnom odboru Saveza koji stegovni postupak rješava u II. stupnju.
-
-Odluka Upravnog odbora saveza povodom žalbe je konažna.
+žalba na odluku Stegovne komisije se u roku od 15 dana od primitka odluke podnosi Upravnom odboru Saveza koji stegovni postupak rješava u II. stupnju. Odluka Upravnog odbora saveza povodom žalbe je konažna.
 
 ## Clanak 52.
 
@@ -667,11 +670,11 @@ Stegovna komisija za svoj rad djelovanje odgovara Skupštini.
 
 ## Clanak 53
 
+## Clanak 54.
+
 Sukladno odredbama Zakona 0 sportu, Zakonu 0 udrugama; te drugim pripadajuéim propisima, kao u odnosu na nadležnosti tijela Saveza i zaštitu opéeg interesa u odnosu na pojedinacne interese obavljanjem sportske djelatnosti sporta. judo
 
 ## VI. UNUTARNJI NADZOR
-
-## Clanak 54.
 
 Clanovi Saveza sami nadziru rad Saveza.
 
@@ -697,9 +700,7 @@ Raspodjela ukupnih financijskih sredstava vrši se financijskim planom u skladu 
 
 su namjenska mogu se koristiti   iskljucivo poslove crihvaéene godišnjim programom financijskim planom rashodima proracunskih sredstava.
 
-Moguéom razlikom prihoda i rashoda ostvarenom obavljanjem gospodarskih djelatnosti, sukladno cdredbama ovog Statuta i pripadajucih propisa, raspolagati ée Upravni odbor, sukladno programu i Znancijskom planu Saveza, a ona može biti korištena iskljucivo u svrhu ostvarivanja ciljeva Saveza. Eventualno ostvareni  višak   prihoda nad rashodima u poslovanju   rasporeduje se financijskim clanom na slijedecu godinu u svrhu unapredenja judo sporta.
-
-- Financijski plan Saveza donosi, mijenja i dopunjuje Skupština Saveza.
+Moguéom razlikom prihoda i rashoda ostvarenom obavljanjem gospodarskih djelatnosti, sukladno cdredbama ovog Statuta i pripadajucih propisa, raspolagati ée Upravni odbor, sukladno programu i Znancijskom planu Saveza, a ona može biti korištena iskljucivo u svrhu ostvarivanja ciljeva Saveza. Eventualno ostvareni  višak   prihoda nad rashodima u poslovanju   rasporeduje se financijskim clanom na slijedecu godinu u svrhu unapredenja judo sporta. Financijski plan Saveza donosi, mijenja i dopunjuje Skupština Saveza.
 
 Maredbodavac za izvršenje financijskog plana je glavni tajnik Saveza, a Upravni odbor može svojom odlukom utvrditi druge osobe $ ovlaštenjima u materijalno-financijskom poslovanju.
 
@@ -749,19 +750,16 @@ Na Ured Saveza se ne mogu prenositi poslovi zadaée 0 kojima odlucuju tijela Sav
 
 ## X. JAVNOST RADA
 
-## Clanak 60.
-
 Javnost rada ostvaruje se upoznavanjem svojih žlanica i drugih zainteresiranih tijela organizacija odnosno javnosti 0 projektima, odlukama, smjernicama i zakljuccima tijela Saveza.
+
+## Clanak 60.
 
 Obavještavanje javnosti žlanstva vrši se objavljivanjem opéih drugih akata Saveza, na mrežnim društvenim stranicama Saveza, a može biti i u žasopisu, biltenu ili drugom tiskanom mediju Saveza, kao i objavom informacija u sredstvima javnog priopéavanja.
 
-~ ednice skupštine Saveza su otvorene za javnost žlanice Saveza. Javnost se samo iznimno može
-
+- ~ ednice skupštine Saveza su otvorene za javnost žlanice Saveza. Javnost se samo iznimno može
 - kada se raspravlja 0 pitanjima koja predstavljaju poslovnu tajnu,
 - kada se to osobito važnih razloga odluži na sjednici Skupštine Saveza. zbog
-
-Sednice Upravnog odbora Saveza su zatvorene za javnost žlanice Saveza. Javnost clanice Saveza 5e samo iznimno mogu ukljuciti u rad sjednica Upravnog odbora Saveza u slijedecim služajevima:
-
+- Sednice Upravnog odbora Saveza su zatvorene za javnost žlanice Saveza. Javnost clanice Saveza 5e samo iznimno mogu ukljuciti u rad sjednica Upravnog odbora Saveza u slijedecim služajevima:
 - po unaprijed predloženoj temi za raspravu, odobrenoj od strane predsjednika Saveza,
 - po pozivu predsjednika Saveza,
 - kada se za to osobito važnih razloga odluži Upravni odbor Saveza. zbog
@@ -796,24 +794,23 @@ Nastavno na odredbu prethodnog stavka Savez je dužan javno objaviti opée akte 
 - pitanja iz nadležnosti Saveza sukladno Zakonu 0 sportu te pravilima medunarodnog europskog saveza judo sporta. druga
 - prava i obveze sudaca,
 
-## XI.
-
-## UTVREIVANJE DODJELJIVANJE PRIZNANJA NAGRADA
+## XI. UTVREIVANJE DODJELJIVANJE PRIZNANJA NAGRADA
 
 ## Clanak 61.
 
-- Za sportska i stružna postignuca u judo sporta Savez može dodjeljivati priznanja i nagrade.
-- Kriterije; vrste priznanja i nagrada, te nacin predlaganja i dodjeljivanja donosi Upravni odbor Saveza.
+Za sportska i stružna postignuca u judo sporta Savez može dodjeljivati priznanja i nagrade.
+
+Kriterije; vrste priznanja i nagrada, te nacin predlaganja i dodjeljivanja donosi Upravni odbor Saveza.
 
 ## XII. PRESTANAK RADA SAVEZA
 
-## Clanak 62.
-
 Savez prestaje s radom kada se ispune Zakonom propisane pretpostavke ili odlukom Skupštine Saveza.
+
+## Clanak 62.
 
 Odluka 0 prestanku rada Saveza donosi se vecinom glasova ukupnog broja žlanova Skupštine Saveza.
 
-- U služaju prestanka rada Saveza nekretnine, pokretna imovina prava Saveza prelaze u vlasništvo sportske udruge koja ée nastaviti djelatnosti radi promicanja razvitka judo sporta na podružju Republike Hrvatske\_
+U služaju prestanka rada Saveza nekretnine, pokretna imovina prava Saveza prelaze u vlasništvo sportske udruge koja ée nastaviti djelatnosti radi promicanja razvitka judo sporta na podružju Republike Hrvatske\_
 
 Novžana sredstva ée se upotrijebiti za podmirenje dospjelih obveza Saveza, a preostali iznos ée se raspodijeliti na jednake dijelove žlanicama Saveza
 
@@ -821,9 +818,9 @@ Ako je Savez primio financijska sredstva iz proracuna ili iz drugih javnih izvor
 
 ## XIII. LIKVIDATOR SAVEZA
 
-## Clanak 63.
-
 Likvidator je fizicka ili pravna osoba koju imenuje i opoziva Upravni odbor Saveza.
+
+## Clanak 63.
 
 Pokretanjem postupka likvidacije Saveza prestaju ovlaštenja tijela i osoba ovlaštenih za zastupanje Saveza.
 
@@ -832,6 +829,8 @@ Likvidator zastupa Savez u postupku likvidacije te se otvaranjem likvidacijskog 
 Postupak likvidacije saveza provodi likvidator sukladno odredbama Zakona 0 udrugama.
 
 Likvidator ne može biti osoba za koju postoji zapreka iz Zakona 0 udrugama za obavljanje dužnosti likvidatora udruge.
+
+## PRIJELAZNE ZAVRSNE ODREDBE
 
 ## Clanak 64.
 
@@ -847,10 +846,10 @@ Likvidator ne može biti osoba za koju postoji zapreka iz Zakona 0 udrugama za o
 
 ## Clanak 67.
 
+* *
+
 - satut stupa na snagu danom usvajanja, kada prestaje važnost Statuta Saveza usvojenog na sjednici edržanoj 29. ožujka 2015. godine.
 - brine Ured Saveza
-
-* *
 
 <!-- image -->
 
@@ -859,5 +858,7 @@ Likvidator ne može biti osoba za koju postoji zapreka iz Zakona 0 udrugama za o
 REPUBLIKA HRVATSKA GRAD ZAGREB GRADSKI URED ZA OPÓU UPRAVU IMOVINSKO-PRAVNE POSLOVE
 
 Ovjerava se da je tekst Statuta u skladu sa Zakonom 0 udrugama temeljem rješenja ovog Gradskog ureda KLASA:UPII-230-01/23-04/2486, URBROJ: 251-04-12-24-2, od 22. sijecnja 2024.
+
+REGISTRACIJU UDRUGA Nataša Bramberger, dipl. iur
 
 <!-- image -->
