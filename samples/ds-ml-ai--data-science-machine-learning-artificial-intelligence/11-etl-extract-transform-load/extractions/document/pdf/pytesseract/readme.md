@@ -1,5 +1,19 @@
 
 
+https://pypi.org/project/pytesseract/
+
+https://github.com/h/pytesseract
+
+https://www.reddit.com/r/learnpython/comments/12rcfr5/how_to_installuse_pytesseract/
+
+https://www.geeksforgeeks.org/python/introduction-to-python-pytesseract-package/
+
+https://www.nutrient.io/blog/how-to-use-tesseract-ocr-in-python/
+
+pip install pytesseract pillow
+
+https://pypi.org/project/unstructured.pytesseract/
+
 ## Image to Text
 
 https://pypi.org/project/pytesseract/

@@ -3,15 +3,16 @@
 readme.md
 
 ```shell
-python3.13 -m venv .venv
+rm -fr .venv
+python -m venv .venv
 source .venv/bin/activate
-pip3.13 install "unstructured[all-docs]"
-pip3.13 freeze > requirements.txt
+pip install "unstructured[all-docs]"
+pip freeze > requirements.txt
 ```
 
 ```bash
-pip3.13 install -r requirements.txt
-python3.13 main.py
+pip install -r requirements.txt
+python main.py
 ```
 
 ```shell
@@ -26,3 +27,4 @@ brew \
 
 *   https://pypi.org/project/unstructured/
 
+*   https://pypi.org/project/unstructured.pytesseract/

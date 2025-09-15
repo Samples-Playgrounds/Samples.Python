@@ -2,38 +2,49 @@
 
 *   https://www.reddit.com/r/LangChain/comments/1e7cntq/whats_the_best_python_library_for_extracting_text/
 
-*   docling
+*   `docling`
 
-*   Unstructured
+*   `langextract`
 
-*   PDFplumber
+*   `markitdown`
 
-*   PyPDF2
+    *   MarkItDown
 
-    *   https://pypi.org/project/PyPDF2/
+        *   https://github.com/microsoft/markitdown
 
-*   MarkItDown
+*   `ocrmypdf`
 
-    *   https://github.com/microsoft/markitdown
-
-*   PyMuPDF
-
-    *   https://github.com/pymupdf/PyMuPDF
-
-*   pymupdf4llm
-
-*   pdfplumber
-
-    *   https://github.com/jsvine/pdfplumber
-
-*   pdfminer.six
+*   `pdfminer.six`
 
     *   https://pypi.org/project/pdfminer.six/
 
 
-## TODO
+*   `pdfplumber`
 
-*   pdfplumber
+    *   PDFplumber
+
+    *   https://github.com/jsvine/pdfplumber
+
+*   `PyMuPDF`
+
+    *   PyMuPDF
+
+    *   https://github.com/pymupdf/PyMuPDF
+
+*   `pymupdf4llm`
+
+*   `unstructured`
+
+    *   Unstructured
+
+*   `PyPDF2`
+
+    *   PyPDF2
+
+    *   https://pypi.org/project/PyPDF2/
+
+
+## TODO
 
 *   beautifulsoup
 
