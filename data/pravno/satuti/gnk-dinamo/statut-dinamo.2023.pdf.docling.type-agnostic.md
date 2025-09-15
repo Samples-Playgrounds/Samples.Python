@@ -18,10 +18,10 @@ Ovim Statutom   ureduju se: naziv sjedište  udruge; podrucje ciljevi   djelovan
 ## Clanak 3.
 
 - (1) Gradanski nogometni klub Dinamo" (u daljnjem tekstu: Klub) je udruga registrirana Registru udruga Republike Hrvatske Evidenciji pravnih osoba u sportu
-- (2) Klub je neprofitna pravna osoba.
 
 ## Clanak 4.
 
+- (2) Klub je neprofitna pravna osoba.
 - (1) Klub ima pecat.
 - (2) Pecat je okruglog oblika, promjera 35 mm, sa ispisanim nazivom mjestom sjedišta Kluba po obodu pecata znakom u sredini.
 
@@ -44,39 +44,43 @@ Klub   zastupaju   Predsjednik;   Dopredsjednik Uprava, sukladno odredbama ovog 
 
 ## Clanak 8.
 
+- a postupa sukladno Pravilima nogometne igre koje je donio Medunarodni nogometni savez BOARD (IFAB);
+
 ## (1) Klub:
 
 - b. poštuje nažela privrženosti, integriteta i sportskog ponašanja kao izraza fair playa;
-2. a postupa sukladno Pravilima nogometne igre koje je donio Medunarodni nogometni savez BOARD (IFAB);
-3. C poštuje statut, pravilnike i odluke FIFA-e i UEFA-e Hrvatskog nogometnog saveza (HNS) u svako vrijeme;
 - d. priznaje nadležnost Arbitražnog suda za sport (CAS) u Lausanni (Svicarska) , kao što je utvrdeno relevantnim odredbama Statuta FIFA-e, UEFA-e;
-5. priznaje nadležnost Arbitražnog suda HNS-a sukladno tome podnosit ée sve sporove nacionalnih razmjera; koji su nastali iz ili u vezi s primjenom Statuta ili pravilnika HNS-a, u posljednjoj instanci samo tim arbitražama; koje rješavaju svoje sporove; iskljucujuci svaki redovni sud, osim ukoliko je to izricito zabranjeno važecim zakonodavstvom u Republici Hrvatskoj.
-6. Arbitražnog suda Saveza ili pravnih tijela Saveza; Klub se obvezuje da spor nece iznositi pred redovne sudove.
+3. C poštuje statut, pravilnike i odluke FIFA-e i UEFA-e Hrvatskog nogometnog saveza (HNS) u svako vrijeme;
+4. priznaje nadležnost Arbitražnog suda HNS-a sukladno tome podnosit ée sve sporove nacionalnih razmjera; koji su nastali iz ili u vezi s primjenom Statuta ili pravilnika HNS-a, u posljednjoj instanci samo tim arbitražama; koje rješavaju svoje sporove; iskljucujuci svaki redovni sud, osim ukoliko je to izricito zabranjeno važecim zakonodavstvom u Republici Hrvatskoj.
+5. Arbitražnog suda Saveza ili pravnih tijela Saveza; Klub se obvezuje da spor nece iznositi pred redovne sudove.
 - (3) Klub poštuje sve odluke nadležnih tijela HNS-a, FIFA-e UEFA-e CAS-a.
 
 ## CILJEVI, PODRUCJE DJELOVANJA SUKLADNO CILJEVIMA, DJELATNOST GOSPODARSKE DJELATNOSTI
 
 ## Clanak 9.
 
-- (1) Ciljevi Kluba su:
-2. b razvoj i unapredenje nogometa te postizanje vrhunskih sportskih rezultata;
-3. a okupljanje gradana; djece mladeži kroz škole nogometa;
-4. C sudjelovanje u nogometnim natjecanjima u zemlji inozemstvu;
-5. e stvaranje potrebnih uvjeta za bavljenje nogometom; trening; organizaciju strucnog rada natjecanje svih ekipa Kluba.
+- a okupljanje gradana; djece mladeži kroz škole nogometa;
+
+## (1) Ciljevi Kluba su:
+
+- b razvoj i unapredenje nogometa te postizanje vrhunskih sportskih rezultata;
 - d. strucno profesionalno osposobljavanje usavršavanje sportskih djelatnika;
+- C sudjelovanje u nogometnim natjecanjima u zemlji inozemstvu;
+- e stvaranje potrebnih uvjeta za bavljenje nogometom; trening; organizaciju strucnog rada natjecanje svih ekipa Kluba.
 - (2) Klub može podržavati mušku, žensku veteransku nogometnu ekipu; futsal ekipu te ostale varijacije s ciljem razvoja i popularizacije nogometnog sporta.
 
 ## Clanak 10.
 
+- a sudjelovanje u profesionalnim ili amaterskim natjecanjima na lokalnoj; državnoj mequnarodnoj razini u nogometnom sportu za sve uzraste;
+
 ## Djelatnosti Kluba su:
 
 - b strucno-pedagoški rad sa svim uzrastima sportaša; osobito kroz nogometne škole; organizirano voqenje treninga sportskih priprema;
-- a sudjelovanje u profesionalnim ili amaterskim natjecanjima na lokalnoj; državnoj mequnarodnoj razini u nogometnom sportu za sve uzraste;
+- d. stvaranje materijalnih; tehnickih infrastrukturnih drugih uvjeta za bavljenje nogometnim  sportom; upravljanje; održavanje skrb 0 daljnjoj  izgradnji sportskih objekata kojima Klub raspolaže;
 - C osposobljavanje usavršavanje vlastitog strucnog pedagoškog kadra;
 - e osiguravanje svih   potrebnih   uvjeta za sudjelovanje u natjecanju   prema uvjetima za licenciranje HNS-a i UEFE (strucno-pedagoški trenerski kadrovi; administrativni   kriteriji,   sportski  kriteriji, infrastrukturni   kriteriji financijski kriteriji) ;
-- d. stvaranje materijalnih; tehnickih infrastrukturnih drugih uvjeta za bavljenje nogometnim  sportom; upravljanje; održavanje skrb 0 daljnjoj  izgradnji sportskih objekata kojima Klub raspolaže;
-- f. suradnja sa trenerskim drugim strucnim sportskim organizacijama na lokalnoj; državnoj mequnarodnoj razini;
 - 9 suradnja s drugim nogometnim i sportskim klubovima;
+- f. suradnja sa trenerskim drugim strucnim sportskim organizacijama na lokalnoj; državnoj mequnarodnoj razini;
 - h. suradnja s tijelima državne te lokalne regionalne vlasti, pravnim fizickim osobama u ispunjavanju sportskih interesa i ciljeva;
 - J izdavanje biltena; glasila; monografija; priružnika drugih tiskovina vezano uz nogometni sport Klub;
 - organizirano okupljanje žlanstva Kluba svih uzrasta;
@@ -156,11 +160,12 @@ Klub može osnivati   trgovacka odredbama Zakona trgovackim društvima; kao i dr
 9. biti nagraden pocasnim odlikovanjima za doprinos ili za dugotrajno žlanstvo;
 - h. prednost u kupnji ulaznica na našin koji odredi Uprava.
 
-## Clanak 19.
-
 Dužnosti odgovornosti clanova su:
 
 - b podupiranje Kluba i aktivno sudjelovanje u ostvarenju ciljeva Kluba;
+
+## Clanak 19.
+
 - a placanje clanarine te poštivanje Statuta drugih akata Kluba;
 - C. suzdržavanje od ponašanja i radnji koje štete Klubu njegovu ugledu.
 
@@ -204,12 +209,12 @@ Nogometaši koji su žlanovi Kluba pored prava 19. ovog Statuta imaju druga prav
 
 ## Clanak 24.
 
-- Skupština;
 - (1) Klupska tijela su:
 - b. Izvršni odbor;
+3. Skupština;
+4. C Predsjednik Dopredsjednik Kluba;
+5. e Uprava Kluba.
 - d. Nadzorni odbor,
-- C Predsjednik Dopredsjednik Kluba;
-- e Uprava Kluba.
 - (2) U klupska tijela mogu biti izabrani samo punoljetni poslovno sposobni clanovi Kluba.
 
 ## Clanak 25.
@@ -236,9 +241,8 @@ Nogometaši koji su žlanovi Kluba pored prava 19. ovog Statuta imaju druga prav
 2. C potpunog ili djelomicnog gubitka poslovne sposobnosti;
 3. b izbora novog saziva klupskog tijela;
 - d. nastupa okolnosti iz žlanka 21.i 25. ovog Statuta;
-- (2) Na mjesto žlana Skupštine koji je prestao biti žlan Skupštine prije isteka mandata na koji je izabran imenuje se novi žlan $ popisa zamjenskih clanova Skupštine u obje izborne jedinice: U slušaju da se iscrpi broj zamjena; Skupština nastavlja funkcionirati s brojem preostalih žlanova Skupštine.
-6. e nastupa druge okolnosti zbog koje više ne može biti žlanom klupskog tijela.
 - (3) Novoimenovanom clanu Skupštine prema st. 2 ovog žlanka; mandat traje do isteka mandata Skupštine.
+6. e nastupa druge okolnosti zbog koje više ne može biti žlanom klupskog tijela. (2) Na mjesto žlana Skupštine koji je prestao biti žlan Skupštine prije isteka mandata na koji je izabran imenuje se novi žlan $ popisa zamjenskih clanova Skupštine u obje izborne jedinice: U slušaju da se iscrpi broj zamjena; Skupština nastavlja funkcionirati s brojem preostalih žlanova Skupštine.
 - 4) Novoizabranom clanu Izvršnog odbora mandat traje do isteka mandata Izvršnog odbora
 - (5) Novoizabranom clanu Nadzornog odbora mandat traje do isteka mandata Nadzornog odbora.
 
@@ -270,8 +274,6 @@ Nogometaši koji su žlanovi Kluba pored prava 19. ovog Statuta imaju druga prav
 
 ## Clanak 30.
 
-na novo mandatno razdoblje.
-
 ## Clanak 31.
 
 - (1) Skupština može biti redovita izvanredna:
@@ -288,6 +290,12 @@ na novo mandatno razdoblje.
 - (3) Nakon primitka odluke 0 utvraivanju dnevnog reda najmanje 25 žlanova Skupštine može dopuniti dnevni red pisanim prijedlogom Izvršnom odboru bilo koje tocke koja je u nadležnosti Skupštine; najkasnije 7 dana prije Skupštine.
 - (2) U odluci 0 sazivanju Skupštine koja se mora poslati žlanovima Skupštine najkasnije 8 dana prije održavanja Skupštine, Predsjednik Kluba utvrduje dnevni red te dan mjesto   održavanja   sjednice. Izvršni odbor može   dopuniti dnevni prijedlogom.
 - (4) Najkasnije 3 dana red sve materijale potrebne za donošenje odluka prema dnevnom redu. prije
+
+na novo mandatno razdoblje.
+
+## Skupština Kluba:
+
+- b usvaja Statut Kluba te predlaže i utvrauje njegove izmjene i dopune na nacin propisan u žl. 31 st.4. žl. 32 st.3. ovog Statuta;
 
 ## Clanak 33.
 
@@ -310,18 +318,15 @@ na novo mandatno razdoblje.
 
 ## Clanak 36.
 
-## Skupština Kluba:
-
-- b usvaja Statut Kluba te predlaže i utvrauje njegove izmjene i dopune na nacin propisan u žl. 31 st.4. žl. 32 st.3. ovog Statuta;
 - a. utvrquje  politiku smjernice rada Kluba  predložene od strane Izvršnog odbora;
 - C. usvaja plan rada i financijski plan za sljedecu kalendarsku godinu;
-- e donosi Poslovnik 0 radu Skupštine Kluba; Pravilnik 0 dodjeli nagrade 'Ponos Dinama' , Pravilnik 0 izborima u Klubu; te druge akte odluke važne za rad Kluba prema ovom Statutu;
+3. e donosi Poslovnik 0 radu Skupštine Kluba; Pravilnik 0 dodjeli nagrade 'Ponos Dinama' , Pravilnik 0 izborima u Klubu; te druge akte odluke važne za rad Kluba prema ovom Statutu;
 - d. usvaja godišnje financijsko izvješée izvješée 0 radu za prethodnu kalendarsku godinu;
 - f. odlucuje 0 promjeni ciljeva 1 djelatnosti te obavljanju   gospodarskih djelatnosti;
-- odlucuje 0 udruživanju u saveze, zajednice; mreže druge oblike povezivanja udruga;
-- h bira razrješava Predsjednika Kluba; verificira razrješava Izvršni odbor Nadzorni odbor; razrješava Izborno povjerenstvo; kao i pojedine clanove tih tijela;
-- donosi odluku 0 prestanku rada Kluba;, raspodjeli preostale imovine Kluba 0 statusnim promjenama (pripajanju; spajanju podjeli Kluba) u skladu s rezultatima provedenog referenduma;
-- L imenuje opoziva likvidatora Kluba;
+6. odlucuje 0 udruživanju u saveze, zajednice; mreže druge oblike povezivanja udruga;
+7. h bira razrješava Predsjednika Kluba; verificira razrješava Izvršni odbor Nadzorni odbor; razrješava Izborno povjerenstvo; kao i pojedine clanove tih tijela;
+8. donosi odluku 0 prestanku rada Kluba;, raspodjeli preostale imovine Kluba 0 statusnim promjenama (pripajanju; spajanju podjeli Kluba) u skladu s rezultatima provedenog referenduma;
+9. L imenuje opoziva likvidatora Kluba;
 - k. tumaci Statut opée akte koje donosi; odlucuje 0 drugim pitanjima za koje ovim Statutom nije utvraena nadležnost drugih klupskih tijela.
 
 ## IZVRSNI ODBOR
@@ -367,10 +372,11 @@ Nacin uvjete svog rada Izvršni odbor urequje Poslovnikom.
 
 ## Clanak 41.
 
+- a saziva sjednice Skupštine Kluba Izvršnog odbora te predlaže dnevni red, osim u slucajevima odredenih ovim Statutom;
+
 ## (1) Predsjednik Kluba:
 
 - brine se 0 upoznavanju javnosti s radom Skupštine Kluba;
-- a saziva sjednice Skupštine Kluba Izvršnog odbora te predlaže dnevni red, osim u slucajevima odredenih ovim Statutom;
 - C u suradnji s Izvršnim odborom; utvrauje prijedlog Statuta i drugih opcih akata
 - d. imenuje clanove Izvršnog odbora sukladno 37 . st. 4 . ovog Statuta predlaže Skupštini Kluba njihovo razrješavanje;
 - obavlja i druge poslove u skladu sa zakonima; ovim Statutom aktima Kluba.
@@ -394,15 +400,14 @@ Nacin uvjete svog rada Izvršni odbor urequje Poslovnikom.
 
 ## Clanak 44.
 
-## (1) Nadzorni odbor:
-
-- b skrbi 0 provodenju odredbi Statuta; opéih akata Kluba pravnom poslovanju Kluba 0 žemu može tražiti izvješca tijela Kluba;
 - a. skrbi 0 financijskom poslovanju Kluba te raspolaganju njegovom imovinom;
-- C stegovno je tijelo u drugom stupnju vezano uz clanska prava 1 obveze te donosi konacnu odluku 0 stegovnoj mjeri;
-- rješava sukobe interesa i sporove unutar Kluba;
+- (1) Nadzorni odbor:
+3. b skrbi 0 provodenju odredbi Statuta; opéih akata Kluba pravnom poslovanju Kluba 0 žemu može tražiti izvješca tijela Kluba;
 - d. obavlja druge poslove u skladu sa zakonima; ovim Statutom Pravilnikom 0 izborima;
-- obavještava klupska tijela 0 neusuglašenosti rada ili akata sa Statutom 1 drugim aktima Kluba; 0 cemu; ako se ne isprave; obavještava Skupštinu koja donosi obvezujucu odluku 0 uskladivanju rada akata.
+5. C stegovno je tijelo u drugom stupnju vezano uz clanska prava 1 obveze te donosi konacnu odluku 0 stegovnoj mjeri;
+6. rješava sukobe interesa i sporove unutar Kluba;
 - (2) Clanovi klupskih tijela koja odlucuju stegovnom postupku ne sudjeluju u njemu kada su predmet stegovnih postupaka.
+8. obavještava klupska tijela 0 neusuglašenosti rada ili akata sa Statutom 1 drugim aktima Kluba; 0 cemu; ako se ne isprave; obavještava Skupštinu koja donosi obvezujucu odluku 0 uskladivanju rada akata.
 - (1) Nadzorni odbor se sastoji se od 3 žlana; koji izmedu sebe biraju predsjednika.
 - (3) Nadzorni odbor donosi odluke vecinom glasova svih žlanova.
 - 2) Predsjednik Nadzornog odbora saziva sjednice i predlaže dnevni red.
@@ -437,11 +442,12 @@ Nacine uvjete svog rada Nadzorni odbor ureduje Poslovnikom:
 - (3) Mandat žlanova Uprave Kluba je 4 (žetiri) godine:
 - (2) Clanovi Uprave Kluba zastupaju Klub u pravnom prometu na nacin da najmanje 2 žlana uprave potpisuju zastupaju prema treéim osobama 0 svakom pitanju iz djelokruga Uprave; a prema Poslovniku 0 radu Uprave.
 
-## Clanak 51.
-
 ## Uprava Kluba:
 
 - organizira obavljanje stružnih; tehnickih pomoénih poslova Kluba vodi poslovnu;  sportsku za koje odgovara Izvršnom odboru;
+
+## Clanak 51.
+
 - predlaže Izvršnom odboru Pravilnik 0 djelokrugu unutarnjem ustrojstvu Kluba;
 - C samostalno sklapa pravne poslove do ukupnog iznosa 3 milijuna eura, a za vece ukupne iznose mora ishoditi prethodnu suglasnost Izvršnog odbora; te poduzima druge pravne radnje u ime za racun Kluba;
 - e brine se 0 provodenju odluka Skupštine i Izvršnog odbora;
@@ -459,7 +465,6 @@ Nacine uvjete svog rada Nadzorni odbor ureduje Poslovnikom:
 
 ## Clanak 52.
 
-- (1) Za svoj rad odboru.
 - (2) Clanovi Uprave Kluba ne mogu biti šlanovi drugih klupskih tijela.
 
 ## Clanak 53.
@@ -471,8 +476,9 @@ Nacine uvjete svog rada Uprava Kluba ureduje Poslovnikom uz suglasnost Izvršnog
 ## Clanak 54.
 
 - (1) Postupak pred Nadzornim odborom za rješavanje statutarnih ostalih sporova te sukoba interesa može zahtjevom pokrenuti svako klupsko tijelo; odnosno svaki žlan Kluba ako smatra da postoji spor ili sukob interesa u Klubu:
+- (1) Za svoj rad odboru.
 - (2) Nadzorni odbor 0 zahtjevu   odlucuje u roku od 60 dana od dana podnošenja zahtjeva.
-3. Odluka Nadzornog odbora 0 sukobu interesa je konacna. (4)
+4. Odluka Nadzornog odbora 0 sukobu interesa je konacna. (4)
 - (3) Nadzorni odbor u svom radu na odgovarajuci našin primjenjuje odredbe Zakona 0 mirenju.
 - 5) Ako pronade da postoji sukob interesa; Nadzorni odbor   odreduje nacin razrješavanja utvrdenog sukoba interesa.
 - (6) Sva klupska tijela mogu se obratiti Skupštini za tumacenje odredbi Statuta akata koje ona donosi.
@@ -481,10 +487,11 @@ Nacine uvjete svog rada Uprava Kluba ureduje Poslovnikom uz suglasnost Izvršnog
 
 ## Clanak 55.
 
-- (1) Imovinu Kluba žine:
-2. a novcana sredstva  koja je Klub stekao  uplatom clanarina;  dobrovoljnim prilozima 1 darovima;
+## (1) Imovinu Kluba žine:
+
+- a novcana sredstva  koja je Klub stekao  uplatom clanarina;  dobrovoljnim prilozima 1 darovima;
 - C. nekretnine pokretne stvari Kluba;
-4. b sredstva   koja Klub stekne   obavljanjem djelatnosti   kojima se ostvaruju ciljevi, obavljanjem djelatnosti gospodarske djelatnosti, financiranjem programa i projekata Kluba iz državnog proracuna i proraquna jedinica lokalne podrucne   (regionalne) samouprave te fondova ilili iz inozemnih izvora;
+- b sredstva   koja Klub stekne   obavljanjem djelatnosti   kojima se ostvaruju ciljevi, obavljanjem djelatnosti gospodarske djelatnosti, financiranjem programa i projekata Kluba iz državnog proracuna i proraquna jedinica lokalne podrucne   (regionalne) samouprave te fondova ilili iz inozemnih izvora;
 - d.  druga prava ustanovljena u korist Kluba.
 - (3) Višak prihoda nad rashodima koje Klub ostvari koristi se za ostvarivanje ciljeva utvrdenih ovim Statutom.
 - (2) Klub može raspolagati svojom imovinom samo za ostvarivanje ciljeva i obavljanjem djelatnosti odredenih Statutom Kluba; u skladu sa zakonom.
@@ -517,6 +524,7 @@ Nacine uvjete svog rada Uprava Kluba ureduje Poslovnikom uz suglasnost Izvršnog
 
 - (1) Statut stupa na snagu danom donošenja.
 - (2) Opéi akti ostali potrebni akti Kluba vezani za izbore u Klubu moraju se usuglasiti odredbama ovog Statuta, kao ustrojiti Izborno povjerenstvo od strane Izvršnog odbora sacinjene prema prethodnom Statutu; prije datuma prvih izbora koji ce ustrojiti tijela Kluba prema ovom Statutu:   Tijela Kluba ustrojena po prethodnom Statutu djeluju do ustroja novih tijela Kluba prema ovom Statutu nakon prvih izbora u Klubu.
-3. U Zagrebu; 21.12.2023.
+
+U Zagrebu; 21.12.2023.
 
 <!-- image -->
