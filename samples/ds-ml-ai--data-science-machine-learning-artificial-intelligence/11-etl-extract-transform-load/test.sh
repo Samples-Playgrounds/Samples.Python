@@ -81,15 +81,15 @@ pip install -r requirements.txt
 python main.py
 cd -
 
-cd ./extractions/document/pdf/marker/
-rm -fr .venv __pycache__ *.pyc 
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-pip install --upgrade pip
-pip install -r requirements.txt
-python main.py
-cd -
+# cd ./extractions/document/pdf/marker/
+# rm -fr .venv __pycache__ *.pyc 
+# python -m venv .venv
+# source .venv/bin/activate
+# pip install -r requirements.txt
+# pip install --upgrade pip
+# pip install -r requirements.txt
+# python main.py
+# cd -
 
 
 
