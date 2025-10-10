@@ -22,6 +22,8 @@ readme.md
     
 *   Docling
 
+    *   https://docling-project.github.io/docling/examples/export_tables/
+
 *   Tabula
 
     *   https://pypi.org/project/tabula-py/
