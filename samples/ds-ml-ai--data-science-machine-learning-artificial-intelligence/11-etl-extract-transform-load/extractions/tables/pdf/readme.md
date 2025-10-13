@@ -24,6 +24,20 @@ readme.md
 
     *   https://docling-project.github.io/docling/examples/export_tables/
 
+*   Pdftables
+
+    *   https://pypi.org/project/pdftables/
+
+    *   https://github.com/drj11/pdftables
+
+    *   https://scraperwiki.com/2013/07/pdftables-a-python-library-for-getting-tables-out-of-pdf-files/
+
+    *   https://scraperwiki.com/2013/07/pdftables-a-python-library-for-getting-tables-out-of-pdf-files/
+
+    *   https://scraperwiki.com/
+
+        *   https://pdftables.com/
+
 *   Tabula
 
     *   https://pypi.org/project/tabula-py/
@@ -36,12 +50,6 @@ readme.md
 
     *   https://levelup.gitconnected.com/how-to-extract-table-data-from-pdf-files-in-python-bfe9c035a8f5
 
-*   Pdftables
-
-    *   https://pypi.org/project/pdftables/
-
-    *   https://scraperwiki.com/2013/07/pdftables-a-python-library-for-getting-tables-out-of-pdf-files/
-    
 *   Pdf-table-extract
 
     *   https://github.com/ashima/pdf-table-extract

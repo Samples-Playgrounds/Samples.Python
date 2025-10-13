@@ -1,6 +1,8 @@
 """
 deactivate
 rm -fr .venv/ __pycache__/
+"""
+"""
 python -m venv .venv
 source .venv/bin/activate
 pip install pdfplumber pandas
