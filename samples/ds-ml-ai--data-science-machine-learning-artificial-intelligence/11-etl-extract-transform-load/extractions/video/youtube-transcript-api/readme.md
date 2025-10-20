@@ -44,3 +44,14 @@ https://www.reddit.com/r/Python/comments/17t9lem/bulk_creation_of_transcripts_fr
 
 https://github.com/Dicklesworthstone/bulk_transcribe_youtube_videos_from_playlist
 
+
+https://www.youtube.com/watch?v=12345 
+
+https[]__www.youtube.com__watch__v__12345
+
+https://stackoverflow.com/questions/76856230/how-to-extract-youtube-video-transcripts-using-youtube-api-on-python
+
+
+https://www.elithecomputerguy.com/2023/10/scraping-youtube-with-openai-python-chatgpt-youtube-transcript-api/
+
+    
