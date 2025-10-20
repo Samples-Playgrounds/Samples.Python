@@ -3,7 +3,10 @@ import ollama
 response = ollama.chat(
     model="llama3.2-vision:latest",
     messages=[
-        {"role": "user", "content": "Describe the image", "images": ["./cat.jpeg"]}
+        {
+            "role": "user",
+            "content": "Describe the image",
+            "images": ["./cat.jpeg"]}
     ],
 )
 
