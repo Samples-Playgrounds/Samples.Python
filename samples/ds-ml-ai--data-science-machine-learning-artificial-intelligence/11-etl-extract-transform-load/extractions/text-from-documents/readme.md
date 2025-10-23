@@ -52,6 +52,28 @@
 
 ## Diverse
 
+*   https://www.reddit.com/r/Python/comments/1awc0hh/extracting_information_text_tables_layouts_from/
+
+*   https://www.reddit.com/r/Rag/comments/1mlp30w/how_to_index_40k_documents/
+
+*   https://www.reddit.com/r/Rag/comments/1mlp30w/comment/n7u51yr/
+
+*   https://python.langchain.com/docs/how_to/code_splitter/
+
+*   https://python.langchain.com/docs/how_to/code_splitter/#c
+
+*   https://python.langchain.com/docs/how_to/code_splitter/#markdown
+
+*   https://python.langchain.com/docs/how_to/code_splitter/#python
+
+*   https://docs.llamaindex.ai/en/stable/module_guides/loading/node_parsers/modules/#htmlnodeparser
+
+*   https://docs.llamaindex.ai/en/stable/module_guides/loading/node_parsers/modules/#jsonnodeparser
+
+*   https://docs.llamaindex.ai/en/stable/module_guides/loading/node_parsers/modules/#markdownnodeparser
+
+*   https://docs.llamaindex.ai/en/stable/module_guides/loading/node_parsers/modules/#langchainnodeparser
+
 *   https://www.reddit.com/r/learnpython/comments/1ej02wh/what_is_the_best_way_to_convert_a_wellformatted/
 
 *   https://www.reddit.com/r/LangChain/comments/1ilnftx/best_nonpaid_way_to_turn_complex_pdfs_into/
