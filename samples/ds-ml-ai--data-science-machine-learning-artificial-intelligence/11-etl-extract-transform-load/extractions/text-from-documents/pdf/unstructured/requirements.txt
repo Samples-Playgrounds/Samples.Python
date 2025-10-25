@@ -1,3 +1,4 @@
+annotated-doc==0.0.3
 annotated-types==0.7.0
 antlr4-python3-runtime==4.9.3
 anyio==4.11.0
@@ -13,13 +14,13 @@ EbookLib==0.19
 effdet==0.4.1
 emoji==2.15.0
 et_xmlfile==2.0.0
-fastapi==0.119.1
+fastapi==0.120.0
 filelock==3.20.0
 filetype==1.2.0
 fsspec==2025.9.0
 h11==0.16.0
-hf-xet==1.1.10
-huggingface-hub==0.35.3
+hf-xet==1.2.0
+huggingface-hub==0.36.0
 idna==3.11
 iopath==0.1.10
 Jinja2==3.1.6
