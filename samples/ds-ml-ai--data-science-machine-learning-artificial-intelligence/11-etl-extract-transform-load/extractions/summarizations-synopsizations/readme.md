@@ -1,5 +1,41 @@
 # Summarizer Synopsiszer Refiner
 
+*   https://heartbeat.comet.ml/text-summarization-using-python-and-nltk-d1022ac347eb
+s
+*   https://www.turing.com/kb/5-powerful-text-summarization-techniques-in-python
+
+*   https://www.geeksforgeeks.org/nlp/mastering-text-summarization-with-sumy-a-python-library-overview/
+
+*   https://medium.com/@ryver.dev/building-a-simple-ai-powered-text-summarizer-with-transformers-in-python-0a31c848e1d2
+
+*   https://medium.com/p/b3b260c60e72
+
+*   https://medium.com/data-science/summarize-a-text-with-python-continued-bbbbb5d37adb
+
+*   https://stackabuse.com/text-summarization-with-nltk-in-python/
+
+*   https://stackabuse.com/python-for-nlp-tokenization-stemming-and-lemmatization-with-spacy-library/
+
+https://medium.com/@tebugging/summarize-any-text-based-document-with-8-lines-of-python-and-llamaindex-17335986877b
+
+    https://github.com/tjaensch/llamaindex_summarize_custom_docs
+
+https://www.geeksforgeeks.org/nlp/text-summarization-in-nlp/
+
+
+*   https://github.com/colombomf/text-summarizer
+
+Summarize Any Text in Minutes with Python Natural Language Processing NLP!
+    https://www.youtube.com/watch?v=DEok-uVND2w
+
+Summarize Text in Python Using ChatGPT (and other NLP tasks)
+
+    https://www.youtube.com/watch?v=Aqpi6abDAiM
+
+How to Summarize Text Using Python and Machine Learning
+
+    https://www.youtube.com/watch?v=SNimr_nOC7w
+
 *   Build a local Document Summarizer AI Agent with Ollama and Llama 3.1 in 10 Minutes
 
     *   https://www.youtube.com/watch?v=VDVwsiOQj_E
