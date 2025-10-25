@@ -57741,26 +57741,26 @@
         "text": "U sustav sporta uvr\u0161tena su visoka u\u010dili\u0161ta za \u0161kolovanje kadrova u sportu (\u010dl. 7.); - Zbog mogu\u0107eg sukoba interesa unesene su odredbe o vlasnicima kladionica i menad\u017eerima sporta\u0161a kojima se ograni\u010dava sudjelovanje u tijelima upravljanja i zastupanju u sportskim klubovima i savezima (\u010dl. 9.);"
     },
     {
-        "type": "NarrativeText",
-        "element_id": "d3b2500de709bbacc53e96d98b8f58e7",
+        "type": "ListItem",
+        "element_id": "21eeb6c71f87864cb33971014e7c8d11",
         "metadata": {
             "coordinates": {
                 "points": [
                     [
-                        59.52180514999853,
-                        600.3929872028435
+                        88.68273146536343,
+                        588.9929917628435
                     ],
                     [
-                        59.52180514999853,
-                        621.7126586749715
+                        88.68273146536343,
+                        610.3126632349715
                     ],
                     [
-                        355.87974729001894,
-                        621.7126586749715
+                        448.8803952658216,
+                        610.3126632349715
                     ],
                     [
-                        355.87974729001894,
-                        600.3929872028435
+                        448.8803952658216,
+                        588.9929917628435
                     ]
                 ],
                 "system": "PixelSpace",
@@ -57774,7 +57774,7 @@
             "parent_id": "f11bfb46d516b3a4716b24364caca348",
             "page_number": 70
         },
-        "text": "natjecanja sudjelovanja u skup\u0161tinama i izvr\u0161nim tijelima sportskih saveza (\u010dl. 18.);"
+        "text": "Iz istog razloga osobama koje neposredno mogu utjecati na uvjete, sustav i regularnost je ograni\u010denje tj. sportskim sucima, delegatima"
     },
     {
         "type": "ListItem",

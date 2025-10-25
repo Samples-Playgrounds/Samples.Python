@@ -1,10 +1,10 @@
 Na temelju članka 27. Statuta Hrvatskog olimpijskog odbora, a u skladu s člancima 45. i 46. Zakona o sportu (Narodne novine br.141/2022) i članka 13. Zakona o udrugama (Narodne novine br. 74/2014., 70/2017.,98/2019. i 151/2022.), Skupština Hrvatskog olimpijskog odbora, na svojoj 41. sjednici održanoj 6. studenog 2015. godine, donijela je Statut Hrvatskog olimpijskog odbora (broj: 928/15, od 6. studenog 2015.), a odluke o izmjenama i dopunama Statuta Hrvatskog olimpijskog odbora usvojene su na 43. sjednici Skupštine Hrvatskog olimpijskog odbora održanoj 29. veljače 2016. godine, (broj: 216/16 od 01. ožujka 2016.), na 50. sjednici Skupštine Hrvatskog olimpijskog odbora održanoj 28. veljače 2018. godine (broj: 358/2018 od 19.04.2018.), na 55. sjednici Skupštine Hrvatskog olimpijskog odbora održanoj 8. srpnja 2020. (broj: 438/20 od 10. 07.2020.), na 58. elektroničkoj sjednici Skupštine Hrvatskog olimpijskog odbora dana 5. studenog 2020. godine (broj: 761/20 od 19.11.2020.), na 65. sjednici Skupštine Hrvatskog olimpijskog odbora održanoj 13. rujna 2022. godine (broj: 1029/2022 od 13.09.2022.), na 67. sjednici Skupštine Hrvatskog olimpijskog odbora održanoj 27. veljače 2023. godine (broj: 267/2023 od 03.03.2023), na 69. elektroničkoj sjednici Skupštine Hrvatskog olimpijskog odbora održanoj elektroničkim glasovanjem članova Skupštine HOO-a u razdoblju od 09.-14.kolovoza 2023. (broj: 1082/2023 od 30.08.2023.) kao i na 73. sjednici Skupštine Hrvatskog olimpijskog odbora održanoj 09. srpnja 2024. godine (Klasa; 030-08/24-01/3, urbroj: 442-01-05-24-1) slijedom kojih se utvrđuje
 
-# S T A T U T HRVATSKOG OLIMPIJSKOG ODBORA
+## S T A T U T HRVATSKOG OLIMPIJSKOG ODBORA
 
 - pročišćeni tekst -
 
-# I. IZVORIŠNE OSNOVE
+## I. IZVORIŠNE OSNOVE
 
 Olimpijski pokret u Hrvatskoj je još 1894. počeo promicati Franjo Bučar, no ideja o prijemu u međunarodnu olimpijsku obitelj mogla se ostvariti tek uspostavom samostalne Republike Hrvatske.
 
@@ -18,7 +18,7 @@ Odluka o privremenom priznanju Hrvatskog olimpijskog odbora donesena je 17. sije
 
 Statutom Hrvatskog olimpijskog odbora (dalje u tekstu: Statut) uređuje se naziv, sjedište, zastupanje, izgled pečata, ciljevi i djelatnosti kojima se ostvaruju ciljevi, ustrojstvo i način rada, članstvo i način ostvarivanja prava i obveza članova, način uporabe i zaštite simbola i obilježja Međunarodnog olimpijskog odbora i Hrvatskog olimpijskog odbora, način osiguranja javnosti rada, način stjecanja i raspolaganja imovinom, prestanak postojanja, postupak s imovinom u slučaju prestanka postojanja, te druga pitanja u vezi s djelokrugom i zadaćama Hrvatskog olimpijskog odbora.
 
-# Članak 2.
+## Članak 2.
 
 - (1) Hrvatski olimpijski odbor (dalje u tekstu: HOO) je krovno sportsko udruženje u Republici Hrvatskoj, u koje se udružuju nacionalni sportski savezi, sportske zajednice u županijama i Gradu Zagrebu te druge pravne osobe čija je djelatnost od značaja za promicanje sporta i olimpijskog pokreta u Republici Hrvatskoj, sukladno ovom Statutu, a prema načelima olimpijskog pokreta i Olimpijske povelje
 - (2) HOO je obvezan poštovati odredbe Olimpijske povelje i odluke Međunarodnog olimpijskog odbora (dalje u tekstu: MOO) kao vrhovnog tijela olimpijskog pokreta.
@@ -73,7 +73,7 @@ Za svoje obveze HOO odgovara cijelom svojom imovinom, u skladu sa zakonom.
 - (2) Pečat je okruglog oblika, promjera 30 mm, s ispisanim tekstom uz rub: "Hrvatski olimpijski odbor Croatian Olympic Committee", a u sredini se nalazi znak HOO-a.
 - (3) Štambilj je pravokutnog oblika, dug 50 i širok 20 mm, s ispisanim tekstom: "Hrvatski olimpijski odbor Croatian Olympic Committee, Trg Krešimira Ćosića 11, HR-10000 Zagreb".
 
-# Članak 10.
+## Članak 10.
 
 - (1) HOO predstavlja predsjednik HOO-a, a u njegovoj odsutnosti ili spriječenosti dopredsjednik ili drugi član Vijeća kojeg odredi predsjednik, odnosno kojeg odredi Vijeće HOO-a (dalje u tekstu: Vijeće) u slučaju nemogućnosti da predsjednik o tome odluči.
 - (2) U svim poslovima HOO zastupaju predsjednik HOO-a (dalje u tekstu: predsjednik) i glavni tajnik HOO-a (dalje u tekstu: glavni tajnik).
@@ -86,7 +86,7 @@ Za svoje obveze HOO odgovara cijelom svojom imovinom, u skladu sa zakonom.
 
 # III. CILIEVI, PODRUČJE DJELOVANJA SUKLADNO CILJEVIMA I DJELATNOST
 
-# Članak 12.
+## Članak 12.
 
 - (1) Ciljevi HOO-a su:
   - promicanje olimpijskih načela, etičkih i moralnih normi u sportu
@@ -160,7 +160,7 @@ Za svoje obveze HOO odgovara cijelom svojom imovinom, u skladu sa zakonom.
 - (1) HOO-u je Zakonom o sportu, povjerena javna ovlast za utvrđivanje kategorija sportaša i donošenje rješenja o kategorizaciji sportaša.
 - (2) HOO ustrojava i vodi registar kategoriziranih sportaša.
 
-## IV. ČLANSTVO
+#### IV. ČLANSTVO
 
 #### Članak 15.
 
@@ -171,10 +171,10 @@ Za svoje obveze HOO odgovara cijelom svojom imovinom, u skladu sa zakonom.
 - (2) Odluku o učlanjenju u HOO donosi Skupština HOO-a (dalje u tekstu: Skupština).
 - (3) Popis članova HOO-a vodi se elektronički, a za svaku članicu Saveza obvezno sadrži:
   - podatak o nazivu člana
-  - OIB člana
-  - datum pristupanja HOO-u
-  - kategoriji članstva
-  - datum prestanka članstva (za one članove koji nisu više članovi HOO-a)
+    - OIB člana
+    - datum pristupanja HOO-u
+    - kategoriji članstva
+    - datum prestanka članstva (za one članove koji nisu više članovi HOO-a)
 - (4) Popis članova HOO-a je dostupan na uvid svim članovima i nadležnim tijelima, na njihov zahtjev.
 
 #### Članak 16.
@@ -185,7 +185,7 @@ Za svoje obveze HOO odgovara cijelom svojom imovinom, u skladu sa zakonom.
   - pravom odlučivanja iz svog djelokruga.
 - (2) Članovi HOO-a mogu biti punopravni, pridruženi i privremeni te počasni članovi.
 
-# Punopravni članovi
+## Punopravni članovi
 
 # Članak 17.
 
@@ -212,7 +212,7 @@ Za svoje obveze HOO odgovara cijelom svojom imovinom, u skladu sa zakonom.
 - da ima tijela Kluba izabrana i registrirana sukladno statutu, Zakonu o sportu i Zakonu udrugama
 - da prihvaća Statut HOO-a.
 
-## Pridruženi članovi
+#### Pridruženi članovi
 
 #### Članak 18.
 
@@ -264,7 +264,7 @@ Pridruženi članovi HOO-a mogu biti:
 
 ## Počasni članovi
 
-# Članak 22.
+## Članak 22.
 
 - (1) Za počasne članove HOO-a Skupština imenuje fizičke osobe naročito zaslužne za dugogodišnji doprinos uspješnom djelovanju HOO-a, razvoju sporta i olimpizma, na temelju posebnog akta na prijedlog Vijeća.
 - (2) Počasni članovi mogu sudjelovati u radu Skupštine bez prava glasa.
@@ -283,7 +283,7 @@ Pridruženi članovi HOO-a mogu biti:
 - isključenjem iz HOO-a.
 - (2) U slučaju pokretanja stečajnog postupka nad nacionalnim sportskim savezom, HOO odlukom Vijeća HOO-a preuzima skrb o nacionalnoj sportskoj ekipi te poduzima potrebne aktivnosti za zaštitu interesa sportaša i stečenih prava na međunarodnoj razini.
 
-# Članak 24.
+## Članak 24.
 
 Kada član HOO-a svojim djelovanjem:
 
@@ -296,7 +296,7 @@ Kada član HOO-a svojim djelovanjem:
 
 podliježe mjerama i sankcijama utvrđenim ovim Statutom.
 
-# Članak 25.
+## Članak 25.
 
 - (1) Radi djelovanja iz članka 24. ovog Statuta, članovima HOO-a mogu se izreći:
 - a) mjere:
@@ -338,7 +338,7 @@ Komisija za rješavanje disciplinskih pitanja i prijepora između HOO-a i člani
 - (4) Članovi tijela HOO-a temeljem članstva u njima, osim tijela iz stavka 3. ovog članka, ne ostvaruju pravo na novčanu naknadu.
 - (5) U tijelima HOO-a potrebno je osigurati sudjelovanje 40% osoba podzastupljenog spola.
 
-# 1. Skupština
+## 1. Skupština
 
 # a) Nadležnosti Skupštine
 
@@ -363,11 +363,11 @@ Skupština je najviše upravljačko tijelo HOO-a koje obavlja sljedeće zadaće:
 - donosi odluku o promjeni ciljeva i djelatnosti, prestanku rada i raspodjeli preostale imovine
 - obavlja i druge poslove i zadaće određene zakonom, te je nadležna i za sva pitanja za koja nije utvrđena nadležnost drugih tijela HOO-a, kada se radi o pitanjima koja po svom značaju upućuju na nadležnost najvišeg tijela upravljanja HOO-a.
 
-# b) Sastav Skupštine
+## b) Sastav Skupštine
 
 #### Članak 28.
 
-# (1) Skupštinu čine:
+## (1) Skupštinu čine:
 
 - po jedan predstavnik nacionalnih sportskih saveza, županijskih sportskih zajednica i Grada Zagreba, te udruga i ustanova
 - tri predstavnika Komisije sportaša
@@ -398,7 +398,7 @@ Skupština je najviše upravljačko tijelo HOO-a koje obavlja sljedeće zadaće:
 - (3) Odbijanje potpisa izjave iz prethodnog stavka ovog članka ima značaj ostavke, te je član HOO-a, kojeg predstavlja, dužan predložiti novog predstavnika.
 - (4) Jedan član Skupštine može biti predstavnik, što uključuje i zamjenu predstavnika, samo jednog člana HOO-a.
 
-# c) Mandat Skupštine
+## c) Mandat Skupštine
 
 #### Članak 31.
 
@@ -422,7 +422,7 @@ Skupština je najviše upravljačko tijelo HOO-a koje obavlja sljedeće zadaće:
 - (2) Obveza je članova Skupštine u svakoj prigodi zastupati i štititi interese HOO-a, hrvatskog sporta i olimpizma te interese udruge koju predstavljaju.
 - (3) Članovi Skupštine dužni su prije svake sjednice Skupštine ili Odbora provesti konzultacije s udrugom koju predstavljaju oko materijala za točke dnevnog reda na sjednicama.
 
-# Članak 34.
+## Članak 34.
 
 Članu Skupštine mandat može prestati:
 
@@ -448,7 +448,7 @@ Skupština je najviše upravljačko tijelo HOO-a koje obavlja sljedeće zadaće:
 - (4) Razrješenje člana Skupštine zbog razloga iz članka 34. alineja 7. ovog Statuta Skupštini predlaže Vijeće HOO-a.
 - (5) U slučaju kad razrješenje člana Skupštine traži član Skupštine, takav zahtjev se stavlja na razmatranje ako ga je podržalo najmanje petnaest članova Skupštine s pravom glasa.
 
-# Članak 36.
+## Članak 36.
 
 - (1) Odluku o prestanku članstva u Skupštini zbog jednog ili više utvrđenih razloga iz članka 35. stavka 2. ovog Statuta, donosi Skupština na temelju pisanog zahtjeva ovlaštenog tijela ili osobe iz članka 35. stavka 3. ovog Statuta, dvotrećinskom većinom glasova nazočnih članova s pravom glasa na sjednici Skupštine.
 - (2) Član Skupštine o čijem se prestanku članstva u Skupštini raspravlja, ima pravo prije glasovanja pred Skupštinom izložiti svoj stav, a u slučaju da osporava podneseni zahtjev za njegovo razrješenje može zatražiti mišljenje Etičkog odbora, koje će biti razmatrano na Skupštini zajedno s podnesenim zahtjevom za razrješenje.
@@ -483,7 +483,7 @@ Skupština je najviše upravljačko tijelo HOO-a koje obavlja sljedeće zadaće:
 - (7) Izborne sjednice Skupštine održavaju se svake četiri godine, nakon održanih olimpijskih igara.
 - (8) U slučaju isteka mandata tijelima HOO-a, Skupštinu HOO-a saziva zadnja osoba za zastupanje upisana u Registar udruga ili najmanje 1/3 punopravnih članova HOO-a, koje su upisane u popis članova HOO-a prije isteka mandata tijelima HOO-a.
 
-# Članak 38.A
+## Članak 38.A
 
 - (1) Iznimno, u slučaju izvanrednih okolnosti i u hitnim slučajevima, odnosno u situacijama kad je odluka Skupštine hitna, a nema dovoljno vremena ili drugih uvjeta da se održi redovna sjednica Skupštine, Skupština može donijeti odluku glasovanjem članova Skupštine bez neposrednog dolaska članova Skupštine na sjednicu, izjašnjavanjem o prijedlogu odluke putem e-maila (elektronička sjednica).
 - (2) Za organizaciju navedene elektroničke sjednice dostavlja se prijedlog ili pitanje članu Skupštine s prijedlogom da se izjasni "Za", "Protiv" ili "Suzdržan" u odnosu na prijedlog odluke koju je potrebno usvojiti na hitan način bez sazivanja sjednice.
@@ -506,7 +506,7 @@ Glasovanje u Skupštini je javno osim:
 - ako Skupština dvotrećinskom većinom glasova nazočnih članova s pravom glasa, odluči da je glasovanje o pojedinim pitanjima tajno i
 - kad se glasuje o izboru tijela HOO-a, a broj predloženih kandidatata je veći od broja osoba koje se bira za pojedino tijelo.
 
-# Članak 41.
+## Članak 41.
 
 #### Kada se radi o:
 
@@ -517,13 +517,13 @@ Glasovanje u Skupštini je javno osim:
 
 kod odlučivanja se uzimaju u obzir samo glasovi članova Skupštine predstavnika nacionalnih sportskih saveza učlanjenih u međunarodne federacije olimpijskih sportova, članova Vijeća, predstavnika Komisije sportaša i Hrvatskog kluba olimpijaca.
 
-# Članak 42.
+## Članak 42.
 
 Poslovnikom o radu Skupštine podrobnije se uređuju sazivanje, sadržaj rada i tijek sjednica, prava, obveze i odgovornosti članova Skupštine u vezi sa sjednicom, kao i druga pitanja od značenja za održavanje sjednica.
 
 ## e) Stalna radna tijela Skupštine
 
-### Članak 43.
+#### Članak 43.
 
 Stalna radna tijela Skupštine jesu:
 
@@ -550,7 +550,7 @@ olimpijskih sportova ne sudjeluju predstavnici nacionalnih sportskih saveza čij
 - (1) Sjednice stalnih radnih tijela Skupštine saziva i predsjedava im jedan od članova Vijeća HOO-a iz redova predstavnika u Skupštini HOO-a koji sukladno odredbi članka 44. Statuta HOO-a čine pripadajući odbor, a kojeg Skupština imenuje za predsjednika tog stalnog radnog tijela.
 - (2) Stalno radno tijelo Skupštine donosi poslovnik o svom radu.
 
-# Članak 46.
+## Članak 46.
 
 - (1) Odbor ljetnih olimpijskih sportova bavi se pitanjima u odnosu na sudjelovanje na igrama olimpijade, europskim i mediteranskim igrama, te drugim višesportskim priredbama pod pokroviteljstvom MOO-a za sve sportove koji su uključeni u program igara olimpijade, program europskih i mediteranskih igara, kao i drugim pitanjima aktivnosti tih nacionalnih sportskih saveza vezanih uz program javnih potreba u sportu na državnoj razini, a naročito:
   - razmatra prijedlog kriterija za nastup na igrama olimpijade, olimpijskim igrama mladih, europskim i mediteranskim igrama za sve sportove
@@ -606,7 +606,7 @@ Odbor lokalnih sportskih zajednica bavi se pitanjima sporta na razini županija,
 
 Mandat stalnih radnih tijela Skupštine traje paralelno s mandatom Skupštine.
 
-# 2. Predsjednik
+## 2. Predsjednik
 
 #### Članak 52.
 
@@ -648,7 +648,7 @@ Za predsjednika može biti izabrana osoba koja udovoljava sljedećim uvjetima i 
 
 #### Počasni predsjednik
 
-# Članak 55.
+## Članak 55.
 
 Skupština može, na prijedlog Vijeća izabrati za počasnog predsjednika Hrvatskog olimpijskog odbora, osobu koja je kao predsjednik Hrvatskog olimpijskog odbora svojim izuzetnim radom doprinijela ugledu i razvoju Hrvatskog olimpijskog odbora i olimpijskog pokreta u Hrvatskoj i svijetu.
 
@@ -725,7 +725,7 @@ Slijedom odredaba Olimpijske povelje:
 - (3) Mandat članu Vijeća prestaje i u slučaju kad je osobi koja je član Vijeća prestao mandat člana Skupštine.
 - (4) Mandat članovima Vijeća prestaje i u slučaju da predsjednik HOO-a podnese ostavku ili bude razriješen s te funkcije.
 
-# Članak 61.
+## Članak 61.
 
 - (1) Vijeće djeluje na sjednicama.
 - (2) Za donošenje pravovaljanih odluka potrebna je nazočnost većine od ukupnog broja članova Vijeća.
@@ -733,7 +733,7 @@ Slijedom odredaba Olimpijske povelje:
 - (4) Iznimno, od odredbe stavka 3. ovog članka dvotrećinskom većinom glasova članova Vijeća donose se odluke o suspenziji člana Skupštine kao i o Poslovniku o radu Vijeća.
 - (5) U slučaju jednakog broja glasova za i protiv, odlučuje glas predsjedavajućeg.
 
-# Članak 62.
+#### Članak 62.
 
 - (1) Sjednicama Vijeća predsjedava predsjednik, a u slučaju njegove odsutnosti ili spriječenosti jedan od dopredsjednika kojeg on ovlasti.
 - (2) Poslovnikom o radu Vijeća podrobnije se određuju pitanja u vezi s održavanjem sjednica.
@@ -773,7 +773,7 @@ Slijedom odredaba Olimpijske povelje:
 
 Članovi Vijeća izvršavaju zadaće koje im naloži Skupština, Vijeće ili predsjednik.
 
-# Članak 67.
+## Članak 67.
 
 Obveza je članova Vijeća u svakoj prigodi zastupati i štititi interese HOO-a, cjelokupnog hrvatskog sporta i olimpijskog pokreta.
 
@@ -848,19 +848,19 @@ aktivno sudjelovanje u tijelima HOO-a, koje treba osigurati da se pri donošenju
 
 Djelovanje Komisije sportaša obuhvaća:
 
-- razmatranje pitanja koja se odnose na sportaše i davanje prijedloga i mišljenja tijelima
-   HOO-a
+- razmatranje pitanja koja se odnose na sportaše i davanje prijedloga i mišljenja tijelima HOO-a
 - zastupanje prava i interesa sportaša i davanje preporuka
 - poduzimanje aktivnosti za obrazovanje sportaša i rješavanje drugih pitanja značajnih za sportaše
 - održavanje kontakata s Komisijom MOO-a i EOO-a za sportaše te Hrvatski klubom olimpijaca
 - promovira i potiče aktivnosti za primjenu i poštovanje Etičkog kodeksa MOO-a
 - suradnju sa sportskim komisijama nacionalnih sportskih saveza i Hrvatskim klubom olimpijaca
 - biranje predsjednika Komisije sportaša, tri predstavnika u Skupštinu HOO-a i među njima jednog člana Vijeća HOO-a
-- sudjelovanje u predlaganju sportaša-kandidata Republike Hrvatske za sportske komisije MOO-a i EOO-a, sukladno kriterijima koje utvrđuje MOO i EOO
+- sudjelovanje u predlaganju sportaša-kandidata Republike Hrvatske za sportske komisije
+   MOO-a i EOO-a, sukladno kriterijima koje utvrđuje MOO i EOO
 - suradnju u aktivnostima za primjenu i poštovanje pravila Olimpijske povelje MOO-a, koja se odnose na sportaše, borbu protiv svakog oblika diskriminacije i nasilja u sportu, kao i protiv uporabe supstanci i te postupaka koje zabranjuje MOO ili međunarodni savezi
 - djelovanje na razvijanju prijateljstva, međusobnog razumijevanja i ravnopravnosti te izgradnji fair play odnosa u sportu i životu.
 
-# Članak 77.
+## Članak 77.
 
 - (1) Članove Komisije sportaša biraju sportaši između predloženih kandidata koje su predložile sportske komisije nacionalnih sportskih saveza olimpijskih i neolimpijskih sportova punopravnih članova HOO-a.
 - (2) Jedan nacionalni sportski savez, odnosno jedan sport može imati u Komisiji sportaša samo jednog člana.
@@ -877,7 +877,7 @@ Djelovanje Komisije sportaša obuhvaća:
   - da je državljanin Republike Hrvatske
   - da u vrijeme izbora ima navršenih 18 godina života
   - da nije kažnjavana zbog dopinških prekršaja
-  - da nema prepreke iz članka 111. stavci 1. I 2. Zakona o sportu
+  - da nema prepreke iz članka 111. stavci 1. l 2. Zakona o sportu
   - da se osoba ukoliko je kandidat olimpijskih sportova, u vrijeme isticanja kandidature za izbor člana Komisije sportaša aktivno natječe u reprezentativnoj vrsti nacionalnog sportskog saveza punopravnog člana HOO-a, u sportu na programu igara olimpijade odnosno zimskih olimpijskih igara, te da je nastupila na igrama olimpijade odnosno zimskim olimpijskim igrama koje prethode izboru za člana Komisije sportaša ili na igrama olimpijade odnosno zimskim olimpijskim igrama četiri godine prije provedbe izbora
   - da se osoba ukoliko je kandidat neolimpijskih sportova, u vrijeme isticanja kandidature za izbor člana Komisije sportaša aktivno natječe u reprezentativnoj vrsti nacionalnog sportskog saveza neolimpijskog sporta čiji nacionalni sportski savez je punopravni član HOO-a, te da je u razdoblju od prethodne četiri godine prije provedbe izbora, nastupila kao natjecatelj na služenom prvenstvu svijeta organiziranom pod ingerencijom pripadajuće međunarodne sportske federacije.
 
@@ -918,7 +918,7 @@ Komisija za rješavanje disciplinskih pitanja i prijepora između HOO-a i člani
 
 # Nezavisno tijelo za antidoping Žalbeno vijeće za antidoping
 
-#### Članak 83.A.
+## Članak 83.A.
 
 Žalbeno vijeće za antidoping samostalno je te operativno i institucionalno nezavisno tijelo koje djeluje pri Hrvatskom olimpijskom odboru nadležno za postupanje i odlučivanje o žalbama u odnosu na sporove i pitanja koja proizlaze iz ili su u vezi s hrvatskim nacionalnim pravilima za antidoping i pripadajućim propisima. Postupak pred Žalbenim Vijećem za antidoping uređuje se pripadajućim Pravilnikom
 
@@ -943,7 +943,7 @@ Za glavnog tajnika može biti imenovana osoba koja ispunjava sljedeće uvjete i 
 - da ima najmanje pet godina radnog iskustva na rukovodećim poslovima
 - da vlada jednim od službenih jezika MOO-a, engleskim ili francuskim
 - da se nije ogriješio o etičke norme i moralna načela sporta i olimpizma
-- da nema zapreke iz članka 114. odnosno 111. stavci 1. i 2. Zakona o sportu i članka 19. stavci 2. i 3. Zakona o udrugama
+- da nema zapreke iz članka 114. odnosno 111. stavci 1. i 2. Zakona o sportu i članka 19, stavci 2. i 3. Zakona o udrugama
 
 prednost pri izboru ima osoba koja poznaje sustav i djelovanje sporta, koja je ugledni sportski djelatnik i koja ima iskustva na rukovodećim poslovima u sportu.
 
@@ -976,7 +976,7 @@ Glavni tajnik, provodi i osigurava provođenje općih akata i programa HOO-a, te
 - (1) O svim ugovorima i isplatama u vrijednostima većim od 6.636 EUR-a kao i o svim isplatama izvršenim mimo usvojenog proračuna, glavni tajnik dužan je izvijestiti Vijeće na prvoj slijedećoj sjednici.
 - (2) Za svoj rad i poslovanje glavni tajnik je odgovoran Vijeću i predsjedniku.
 
-# VII. STRUČNA SLUŽBA
+## VII. STRUČNA SLUŽBA
 
 #### Članak 89.
 
@@ -1005,9 +1005,9 @@ Radi sustavnog poticanja i promicanja olimpizma, promidžbe olimpijskih načela,
 - (1) Hrvatski fair play odbor je nezavisno tijelo koje djeluje pri Hrvatskom olimpijskom odboru, čiji članovi su predstavnici osnivača HOO-a i Hrvatskog zbora sportskih novinara.
 - (2) Hrvatski fair play odbor promovira i razvija fair play u sportu i svakodnevnom životu, potiče afirmaciju općih etičkih vrijednosti te poduzima aktivnosti za postupanje i ponašanje svih sudionika u sportu na principima tolerancije i međusobnog poštovanja, u skladu s pravilima i načelima Olimpijske povelje, odredbama Statuta HOO-a, pravilima Međunarodnog fair play odbora i Europskog fair play pokreta.
 
-# X. ZAKLADA HRVATSKIH SPORTAŠA
+## X. ZAKLADA HRVATSKIH SPORTAŠA
 
-# Članak 94.
+## Članak 94.
 
 - (1) Zakladu hrvatskih sportaša, sa statusom samostalne pravne osobe, osnovao je HOO, u suradnji s Hrvatskim klubom olimpijaca i Sportskim novostima.
 - (2) Zaklada hrvatskih sportaša je osnovana i djeluje radi ostvarivanja općekorisne i dobrotvorne svrhe davanjem novčane i druge potpore sportašima, a iznimno i trenerima kao i članovima obitelji sportaša, koji su tijekom ili nakon svoje sportske karijere ostali bez mogućnosti da vlastitim sredstvima ostvare osnovne uvjete za egzistenciju, uvjete stanovanja, liječenja, stvaranja mogućnosti za zapošljavanje, pomoć u stvaranju uvjeta za školovanje ili osposobljavanje i sl.
@@ -1059,7 +1059,7 @@ za koje sredstva nisu osigurana, odnosno smanjenja prihoda, a Vijeće HOO-a je n
 
 Nad godišnjim financijskim izvješćem i poslovanjem HOO-a obavezno se provodi (vanjska) revizija.
 
-# Članak 100.
+## Članak 100.
 
 - (1) U Stručnoj služni osniva se i djeluje posebna služba unutarnje revizije, koja djeluje prema uputama Nadzornog odbora.
 - (2) Unutarnja revizija HOO-a obavljat će unutarnje revizije u skladu s međunarodnim revizijskim standardima za unutarnju reviziju kao i propisima i smernicama koje uređuju unutarnju reviziju za javni sektor u Republici Hrvatskoj. Unutarnja revizija obavlja se u HOO-u, te kod pravnih i fizičkih osoba kojima je HOO namjenski doznačio sredstva, u dijelu tih namjenski doznačenih sredstava.
@@ -1070,7 +1070,7 @@ Nad godišnjim financijskim izvješćem i poslovanjem HOO-a obavezno se provodi 
 
 Kada postoji spor između HOO-a i njegovih članova, kao i spor na nacionalnoj razini koji nastane iz ili u vezi s primjenom ovog Statuta i općih akata HOO-a, koji nije moguće riješiti sporazumno, odnosno koji nije moguće riješiti na način utvrđen odredbama ovog Statuta, rješavanje spora se povjerava Komisiji za rješavanje disciplinskih pitanja i prijepora između HOO-a i članica.
 
-# Članak 102.
+## Članak 102.
 
 Sukladno odredbama Zakona o sportu, Zakona o javnoj nabavi te drugim pripadajućim propisima, a u odnosu na nadležnosti tijela HOO-a utvrđuje se zaštita općeg interesa hrvatskog sporta, sportaša i HOO-a u odnosu na pojedinačne interese pojedinaca, članova HOO-a i članova tijela HOO-a, te se sukladno odredbama ovog Statuta utvrđuje da su članovi tijela HOO-a kao i Stručne službe HOO-a dužne i odgovorne voditi brigu o postojanju eventualnog sukoba interesa u radu tijela HOO-a ili obnašanja određene dužnosti u HOO-u, kao i poduzeti odgovarajuće radnje i postupke za njihovo sprječavanje i otklanjenje. O postojanju sukoba interesa u HOO-u odluku donosi Vijeće HOO-a.
 
@@ -1087,7 +1087,7 @@ Sukladno odredbama Zakona o sportu, Zakona o javnoj nabavi te drugim pripadajuć
   - na druge prigodne načine.
 - (3) Iznimno, kada to zahtijeva sadržaj dnevnog reda, sjednice Vijeća mogu biti zatvorene za javnost.
 
-# Članak 104. briše se
+#### Članak 104. briše se
 
 #### XV. NAGRADE I PRIZNANJA
 
@@ -1097,7 +1097,7 @@ Sukladno odredbama Zakona o sportu, Zakona o javnoj nabavi te drugim pripadajuć
 
 (2) Poslovnikom o dodjeli Nagrade HOO-a Matija Ljubek uređuje se postupak raspisivanja natječaja za dodjelu Nagrade HOO, uvjeti i način predlaganja kandidata te rad žirija.
 
-# Članak 106.
+## Članak 106.
 
 - (1) HOO za svaku godinu proglašava najuspješnije sportaše, odnosno izabire i proglašava najuspješnije pojedince i ekipe, žene i muškarce, a za izuzetan doprinos promicanju Hrvatske u svijetu pojedinca-muškarca ili ženu, ili ekipu, sportaša i sportašicu navjeća nada hrvatskog sporta, te najuspješnijeg trenera.
 - (2) Pravilnikom o izboru i proglašenju najuspješnijih hrvatskih sportaša i trenera uređuju se način i postupak službenog izbora i proglašenja najuspješnijih hrvatskih sportaša za postignute najveće sportske dosege i izuzetan doprinos promicanju Hrvatske u svijetu u tijeku jedne godine.
@@ -1113,7 +1113,7 @@ HOO može ustanoviti i druge nagrade i priznanja što se uređuje posebnim aktom
 
 #### XVI. PRESTANAK
 
-# Članak 109.
+## Članak 109.
 
 - (1) HOO prestaje s radom kada se ispune zakonom propisane pretpostavke ili ako to odluči Skupština dvotrećinskom većinom glasova svih članova Skupštine s pravom glasa.
 - (2) U slučaju prestanka s radom o imovini HOO-a odlučuje Skupština sukladno zakonu.
@@ -1157,10 +1157,12 @@ Hrvatskog olimpijskog odbora
 
 mr.sc. Siniša Krajač
 
-MENATERA 1
+ADDOT CTORING TO STATE OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE PARTY OF THE P
 
 Predsjednik Hrvatskog olimpijskog odbora
 
 dr.sc. Zlatko Mateša
 
-Mock Klasa; 030-08/24-01/3 Ur. Broj; 442-01-05-24-2
+Mord
+
+Klasa; 030-08/24-01/3 Ur. Broj; 442-01-05-24-2
