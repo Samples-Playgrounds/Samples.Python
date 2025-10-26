@@ -1,7 +1,7 @@
 # Summarizer Synopsiszer Refiner
 
 *   https://heartbeat.comet.ml/text-summarization-using-python-and-nltk-d1022ac347eb
-s
+
 *   https://www.turing.com/kb/5-powerful-text-summarization-techniques-in-python
 
 *   https://www.geeksforgeeks.org/nlp/mastering-text-summarization-with-sumy-a-python-library-overview/
@@ -16,26 +16,38 @@ s
 
 *   https://stackabuse.com/python-for-nlp-tokenization-stemming-and-lemmatization-with-spacy-library/
 
-https://medium.com/@tebugging/summarize-any-text-based-document-with-8-lines-of-python-and-llamaindex-17335986877b
+*   https://medium.com/@tebugging/summarize-any-text-based-document-with-8-lines-of-python-and-llamaindex-17335986877b
 
-    https://github.com/tjaensch/llamaindex_summarize_custom_docs
+    *   https://github.com/tjaensch/llamaindex_summarize_custom_docs
 
-https://www.geeksforgeeks.org/nlp/text-summarization-in-nlp/
+*   https://www.geeksforgeeks.org/nlp/text-summarization-in-nlp/
 
+*   https://stackoverflow.com/questions/5479333/what-are-the-available-tools-to-summarize-or-simplify-text
 
 *   https://github.com/colombomf/text-summarizer
 
-Summarize Any Text in Minutes with Python Natural Language Processing NLP!
-    https://www.youtube.com/watch?v=DEok-uVND2w
+*   https://www.kaggle.com/code/imkrkannan/text-summarization-with-nltk-in-python
 
-Summarize Text in Python Using ChatGPT (and other NLP tasks)
+*   https://www.linkedin.com/pulse/create-your-own-custom-text-summarization-tool-python-russell-phd-ywxec/
 
-    https://www.youtube.com/watch?v=Aqpi6abDAiM
+*   https://pypi.org/project/summa/
 
-How to Summarize Text Using Python and Machine Learning
+*   Summarize Any Text in Minutes with Python Natural Language Processing NLP!
+    
+    *   https://www.youtube.com/watch?v=DEok-uVND2w
 
-    https://www.youtube.com/watch?v=SNimr_nOC7w
+*   Summarize Text in Python Using ChatGPT (and other NLP tasks)
 
+    *   https://www.youtube.com/watch?v=Aqpi6abDAiM
+
+*   How to Summarize Text Using Python and Machine Learning
+
+    *   https://www.youtube.com/watch?v=SNimr_nOC7w
+
+*   Create Your First AI Text Summarization Tool with Langchain: Ultimate Beginner Tutorial!
+
+    *   https://www.youtube.com/watch?v=GRtZjIUW-Z0
+    
 *   Build a local Document Summarizer AI Agent with Ollama and Llama 3.1 in 10 Minutes
 
     *   https://www.youtube.com/watch?v=VDVwsiOQj_E
