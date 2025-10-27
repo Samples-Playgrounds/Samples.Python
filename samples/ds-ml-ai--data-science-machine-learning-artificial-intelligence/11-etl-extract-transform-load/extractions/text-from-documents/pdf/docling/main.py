@@ -68,8 +68,6 @@ sources = [
 #   "https://arxiv.org/pdf/2408.09869"
 
 
-
-
 def main():
    for source in sources:
       print(f"docling <- source = {source}")
