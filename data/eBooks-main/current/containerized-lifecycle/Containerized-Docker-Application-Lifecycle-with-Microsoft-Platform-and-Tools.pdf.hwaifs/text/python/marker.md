@@ -292,7 +292,7 @@ docker build
 
 **Orchestrator**: A tool that simplifies the management of clusters and Docker hosts. Orchestrators enable you to manage their images, containers, and hosts through a command-line interface (CLI) or a graphical UI. You can manage container networking, configurations, load balancing, service discovery, high availability, Docker host configuration, and more. An orchestrator is responsible for running, distributing, scaling, and healing workloads across a collection of nodes. Typically, orchestrator products are the same products that provide cluster infrastructure, like Kubernetes and Azure Service Fabric, among other offerings in the market.
 
-## <span id="page-11-0"></span>Learn docker containers, images, and registries
+# <span id="page-11-0"></span>Learn docker containers, images, and registries
 
 When using Docker, you create an app or service and package it and its dependencies into a container image. An image is a static representation of the app or service and its configuration and dependencies.
 
@@ -399,7 +399,7 @@ Rich data obtained through effective instrumentation (monitoring and diagnostics
 
 DevOps should be considered a journey, not a destination. It should be implemented incrementally through appropriately scoped projects from which you can demonstrate success, learn, and evolve.
 
-#### <span id="page-17-0"></span>**Benefits of DevOps for containerized applications**
+### <span id="page-17-0"></span>**Benefits of DevOps for containerized applications**
 
 Here are some of the most important benefits provided by a solid DevOps workflow:
 

@@ -14,44 +14,44 @@ Solon - atenski političar, zakonodavac, pjesnik, jedan od sedam grčkih mudraca
 
 #### KAZALO
 
-| I.   | OPĆE ODREDBE                                                       | 1  |
-|------|--------------------------------------------------------------------|----|
-| Π.   | SUSTAV SPORTA                                                      | 2  |
-| 1    | Amaterski sportski klub                                            | 2  |
-|      | Sportski savezi                                                    |    |
-|      | Sportske zajednice                                                 |    |
-|      | Studentski sport                                                   |    |
-|      | Sportska rekreacija                                                |    |
-| J.   | Sport osoba s invaliditetom                                        | 7  |
-|      | Hrvatski olimpijski odbor                                          |    |
-| III. | SPORT U ŠKOLI                                                      | 9  |
-| 1.   | Školski sportski klubovi                                           | 9  |
-|      | Školski sportski savezi                                            |    |
-| 3.   | Hrvatski školski sportski savez                                    | 10 |
-| 4.   | Sportska poduka djece i mladeži                                    | 10 |
-| IV.  | SPORTAŠI I DRUGE OSOBE U SPORTU                                    | 11 |
-| V.   | STRUČNI POSLOVI U SPORTU                                           | 13 |
-| VI.  | OBAVLJANJE SPORTSKIH DJELATNOSTI                                   | 14 |
-| 1. ( | Uvjeti za obavljanje sportskih djelatnosti                         | 14 |
-|      | Obavljanje sportskih djelatnosti samostalnim radom                 |    |
-| 3. 1 | Ustanove za obavljanje sportskih djelatnosti                       | 16 |
-|      | Trgovačka društva za javne sportske objekte                        |    |
-| 5 3  | Sportski obrti                                                     | 17 |
-| 6. Z | Trgovačka društva                                                  | 18 |
-| VI   | I. PROFESIONALNI SPORTSKI KLUB                                     | 18 |
-| 1. 1 | Pojam profesionalnog sportskog kluba i djelatnost                  | 18 |
-|      | 1.1. Temelj za osnivanje                                           | 18 |
-|      | 1.2. Osnivači                                                      |    |
-|      | 1.3. Temeljni kapital                                              |    |
-|      | 1.4. Dionice                                                       |    |
-|      | 1.5. Zabrana stjecanja dionica                                     |    |
-|      | 1.6. Povezane osobe                                                |    |
-|      | 1.7. Ograničenja za stjecanje dionica                              |    |
-|      |                                                                    |    |
-|      | 1.8. Posljedice stjecanja dionica suprotno zabrani i ograničenjima |    |
-|      | 1.9. Upis u sudski registar                                        |    |
-|      | 1.10. Dobit                                                        |    |
-|      | 1.11.Ograničenja za članstvo u upravnom ili nadzornom odboru       | 21 |
+| I.       | OPĆE ODREDBE                                                       | 1  |
+|----------|--------------------------------------------------------------------|----|
+| Π.       | SUSTAV SPORTA                                                      | 2  |
+| 1        | Amaterski sportski klub                                            | 2  |
+|          | Sportski savezi                                                    |    |
+|          | Sportske zajednice                                                 |    |
+|          | Studentski sport                                                   |    |
+|          | Sportska rekreacija                                                |    |
+| J.       | Sport osoba s invaliditetom                                        | 7  |
+| 0.<br>7. | Hrvatski olimpijski odbor                                          | 7  |
+| III.     | SPORT U ŠKOLI                                                      | 9  |
+| 1.       | Školski sportski klubovi                                           | 9  |
+|          | Školski sportski savezi                                            |    |
+| 3.       | Hrvatski školski sportski savez                                    | 10 |
+| 4.       | Sportska poduka djece i mladeži                                    | 10 |
+| IV.      | SPORTAŠI I DRUGE OSOBE U SPORTU                                    | 11 |
+| V.       | STRUČNI POSLOVI U SPORTU                                           | 13 |
+| VI.      | OBAVLJANJE SPORTSKIH DJELATNOSTI                                   | 14 |
+| 1. (     | Uvjeti za obavljanje sportskih djelatnosti                         | 14 |
+|          | Obavljanje sportskih djelatnosti samostalnim radom                 |    |
+| 3. 1     | Ustanove za obavljanje sportskih djelatnosti                       | 16 |
+|          | Trgovačka društva za javne sportske objekte                        |    |
+| 5        | Sportski obrti                                                     | 17 |
+| 6. Z     | Trgovačka društva                                                  | 18 |
+| VI       | I. PROFESIONALNI SPORTSKI KLUB                                     | 18 |
+| 1. 1     | Pojam profesionalnog sportskog kluba i djelatnost                  | 18 |
+|          | 1.1. Temelj za osnivanje                                           | 18 |
+|          | 1.2. Osnivači                                                      |    |
+|          | 1.3. Temeljni kapital                                              |    |
+|          | 1.4. Dionice                                                       |    |
+|          | 1.5. Zabrana stjecanja dionica                                     |    |
+|          | 1.6. Povezane osobe                                                |    |
+|          | 1.7. Ograničenja za stjecanje dionica                              |    |
+|          |                                                                    |    |
+|          | 1.8. Posljedice stjecanja dionica suprotno zabrani i ograničenjima |    |
+|          | 1.9. Upis u sudski registar                                        |    |
+|          | 1.10. Dobit                                                        |    |
+|          | 1.11.Ograničenja za članstvo u upravnom ili nadzornom odboru       | 21 |
 
 | 2. Amaterski sportski klub – osnivač profesionalnog kluba                                                               | 22               |
 |-------------------------------------------------------------------------------------------------------------------------|------------------|
@@ -1091,7 +1091,7 @@ Promjena namjene javnih sportskih objekata i drugih nekretnina stečenih na teme
   - 3. organiziranje i provođenje nacionalnih prvenstava i međunarodnih sportskih natjecanja reprezentativne razine;
   - 4. posebna skrb o vrhunskim i darovitim sportašima te zapošljavanje visokoobrazovanih stručnjaka iz područja sporta u nacionalnim sportskim savezima;
   - 5. poticanje sportsko-rekreativnih aktivnosti osoba s invaliditetom;
-  - organiziranje posebne zdravstvene zaštite sportaša, posebno u svezi sa sprečavanjem uzimanja nedopuštenih sredstava (antidoping) u skladu s prihvaćenim međunarodnim konvencijama;
+  - 6. organiziranje posebne zdravstvene zaštite sportaša, posebno u svezi sa sprečavanjem uzimanja nedopuštenih sredstava (antidoping) u skladu s prihvaćenim međunarodnim konvencijama;
   - 7. poticanje planiranja i izgradnje kapitalnih sportskih objekata nacionalnog značaja;
   - 8. obavljanje stručnog nadzora u sportu;
   - 9. dodjeljivanje državne nagrade sporta "Franjo Bučar";
@@ -1440,7 +1440,8 @@ KLASA: URBROJ: Zagreb,
 #### L RAZLOZI ZBOG KOJIH SE ZAKON DONOSI
 
 Djelatnost sporta u Republici Hrvatskoj uređena je Zakonom o športu ("\_
-Narodne novine">, br. 111/97., 13/98. i 24/01.). Na djelatnost sporta odgovarajuće se primjenjuju i drugi zakoni, osobito oni koji uređuju pitanja udruživanja građana, djelatnosti školstva i gospodarstva, te propisi iz sustava državne uprave, graditeljstva, financija i zdravstva. Na sport i u sportu se također primjenjuje autonomno pravo međunarodnih sportskih udruženja.
+Narodne novine">
+, br. 111/97., 13/98. i 24/01.). Na djelatnost sporta odgovarajuće se primjenjuju i drugi zakoni, osobito oni koji uređuju pitanja udruživanja građana, djelatnosti školstva i gospodarstva, te propisi iz sustava državne uprave, graditeljstva, financija i zdravstva. Na sport i u sportu se također primjenjuje autonomno pravo međunarodnih sportskih udruženja.
 
 Važećim propisima nije prikladno uređen niz značajnih pitanja sporta. Na primjer: stručni poslovi u sportu, sportski objekti, sportska rekreacija, pravni status profesionalnih klubova, sport djece i mladeži, statusna pitanja sportaša, sport osoba s invaliditetom te pravo na sport za svakoga i dr., tako da ti propisi –najvećim dijelom ne odgovaraju potrebama suvremenog sporta. Donošenje niza novih zakona, osobito onih koji uređuju organizaciju lokalne samouprave i njezino financiranje, promjene u sustavu državne uprave i proračuna, nameću—imperativnu potrebu za traženjem novih i boljih rješenja za sport i sportske djelatnosti.
 
@@ -1450,7 +1451,7 @@ Financijsko sudjelovanje države u području sporta proračunima na svim razinam
 
 Treba uzeti u obzir i činjenicu da su se u posljednjih nekoliko godina <u>dogod</u>zbile i druge društvene promjene koje su utjecale na sport, za potreba donošenja novog Zakona o sportu nameće se posebno i zbog:
 
-- 1. Neriješena su i krajnje nedefinirana ostala—također mnoga pitanj<u>ae nužnog</u> razgraničenja amaterskog i profesionalnog sporta, odnosno amaterskih i profesionalnih klubova, što u krajnjoj mjeri dovodi do mnogih nesporazuma, koji pak pogoduju širenju raznih negativnosti u sportu. Zbog svega toga još uvijek nije do kraja iskorišten golemogroman potencijal u više od 7.000 registriranih sportskih klubova s više od 280 000 sportaša, niti u sportskom smislu, a niti kao mogućnost prihvaćanja većeg broja aktivnih sportaša nego što je to sada.
+- 1. Neriješena su i krajnje nedefinirana ostala—također mnoga pitanjae—nužnog razgraničenja amaterskog i profesionalnog sporta, odnosno amaterskih i profesionalnih klubova, što u krajnjoj mjeri dovodi do mnogih nesporazuma, koji pak pogoduju širenju raznih negativnosti u sportu. Zbog svega toga još uvijek nije do kraja iskorišten golemogroman potencijal u više od 7.000 registriranih sportskih klubova s više od 280 000 sportaša, niti u sportskom smislu, a niti kao mogućnost prihvaćanja većeg broja aktivnih sportaša nego što je to sada.
 - 3-2. Uloga sportskih saveza i sportskih zajednica; te Hrvatskog olimpijskog odbora u cjelokupnom procesu planiranja, programiranja i izvođenja programa javnih potreba, također nije u dovoljnoj mjeri precizirana, tako da često-puta dolazi do nepotrebnih problema u koordinaciji toga važnog posla s upravnim (državnim) i samoupravnim (lokalnim) tijelima za sport.
 - 6-3. Ne pridaje se dovoljno <u>važnostiznačaja</u> stručnim poslovima, odnosno ne propisuje se precizno tko može i pod kojim uvjetima obavljati stručne poslove u sportu, a nije ni definirano koje su to institucije koje mogu provoditi programe osposobljavanja stručnih kadrova. U stručne poslove su navedeni i poslovi koji po sadržaju i prirodi stvari tu ne spadaju.
 
@@ -1506,10 +1507,10 @@ a u srednjim školama:
 - 8-7. S obzirom na potrebe stanovništva za redovitim bavljenjem nekom od sportskih-aktivnosti, te u odnosu na uobičajene standarde u zemljama serednje i zZapadne Europe, izgrađenost sportskih objekata u Republici Hrvatskoj je tek na <u>razininivou</u> od oko 30% realnih potreba. U <u>određenomizvjesnom</u> smislu, -ne u<u>zimvažavajući u obzirznačaj važnost problematike planiranja, izgradnje, upravljanja i održavanja sportskih objekata, postojeća polovična zakonska rješenja -su -također izazvala mnoge probleme kao na primjer:</u>
 - Od 1987. godine, znači od održane Univerzijade u Zagreb<u>u</u>, u Hrvatskoj je<del> praktički</del> prestala planska izgradnja sportskih objekata. Međutim, i <u>kod</u> ono malo objekata što se gradi najčešće se gradi skupo i neracionalno, jer -se pri projektiranju i građenju sportskih objekata najčešće nisu poštovali<del>uvažavali</del> nužni postupci, a ni posebni normativi i standardi;
 - U županijama i gradovima nisu izrađeni adekvatni -planovi mreža sportskih objekata,
-  pa je i zbog toga-nažalost, u Hrvatskoj jednostavno "nestalo" nekoliko stotina sportskih objekata
+  pa je i zbog toga nažalost, u Hrvatskoj jednostavno "nestalo" nekoliko stotina sportskih objekata
   a-da istovremeno drugi zamjenski nisu sagrađeni. Zbog toga je više tisuća djece i mladih ostalo bez mogućnosti aktivnog bavljenja sportom;
 - U većini slučajeva ni pretvorba odnosno preuzimanje po zakonu sportskih objekata koji su bili u društvenom vlasništvu nije do kraja prav<u>edi</u>čno izvršena, posebno ne u onom dijelu gdje se govori o upravljanju javnim <del>sportskim</del>-sportskim objektima, jer su u tom procesu predstavnici sporta (osnovni nosioci realizacije programa) <del>praktički</del> potpuno isključeni itd..
-- 8. Uloga države u mnogim segmentima sporta je nedefinirana i ona se p<u>onajprijervenstveno</u> izražava kroz samo deklarativn<u>omu potporomdršku</u> razvoju sporta, a u <u>bitsuštini</u> se svodi na izdvajanje tek minimalnih proračunskih sredstava (<u>0</u>0,0e57% od državnog proračuna za 2002. godinu) za financiranje javnih potreba sporta na državnoj razini. Istovremeno, već godinama <u>nese ne</u> izdvaja-se planski niti jedna-jedina kuna za-nužno potrebnu izgradnju sportskih objekata, što je svakako presedan i u svjetskim razmjerima.
+- 8. Uloga države u mnogim segmentima sporta je nedefinirana i ona se ponajprijervenstveno izražava kroz samo deklarativnomu potporomdršku razvoju sporta, a u bitsuštini se svodi na izdvajanje tek minimalnih proračunskih sredstava (00,0057% od državnog proračuna za 2002. godinu) za financiranje javnih potreba sporta na državnoj razini. Istovremeno, već godinama nese ne izdvaja se planski niti jedna jedina kuna za nužno potrebnu izgradnju sportskih objekata, što je svakako presedan i u svjetskim razmjerima.
 
 Ukupna sredstva koja se za javne potrebe u sportu izdvajaju na državnoj razini već godinama se smanjuju i u nominalnom i u postotnom iznosu te u d⊕ržavnom proračunu participiraju u promilima (tablica 1. i 1.a.).
 
@@ -1560,7 +1561,7 @@ Dakle, iz pregleda izdvajanja iz državnog proračuna za javne potrebe u sportu 
 | 1999. godina | 43.980.000 | <b>0,090</b> % od proračuna |
 |--------------|------------|-----------------------------|
 | 2000. godina | 40.327.180 | 0,103 % od proračuna        |
-| 2001. godina | 46.000.000 | 0,093 % od proračuna        |
+| 2001. godina | 46.000.000 | <b>0,093</b> % od proračuna |
 | 2002. godina | 40.327.180 | 0,057 % od proračuna        |
 | 2003. godina | 41.320.945 | 0,055 % od proračuna        |
 
@@ -1579,6 +1580,7 @@ Slijedi grafički prikaz navedenih pokazatelja:
 | 0,070 |       |       |       |       |      |
 | 0,065 |       |       |       |       |      |
 | 0,060 |       |       |       | 0,057 |      |
+|       |       |       |       |       |      |
 
 | 0,055 |  |  | 0,055 |
 |-------|--|--|-------|
@@ -1615,23 +1617,23 @@ Tablica 3.
 
 u EUR-ima
 
-| 1 abii | ca 3.           | u EUK-1Ma               |                  |               |
-|--------|-----------------|-------------------------|------------------|---------------|
-|        | Zemlja          | br. stanovnika ( 2001.) | državni proračun | po stanovniku |
-| 1.     | Francuska       | 59.551.227              | 266 000.000      | 4.47          |
-| 2.     | Poljska         | 38.633.912              | 150 000.000      | 3.88          |
-| 3.     | Republika Češka | 10.264.212              | 66.000.000       | 6.43          |
-| 4.     | Švicarska       | 7.283.274               | 55.100.000       | 7.57          |
-| 5.     | Finska          | 5.175.783               | 54.000.000       | 10.43         |
-| 6.     | Austrija        | 8.150.835               | 52.200.000       | 6.40          |
-| 7.     | Mađarska        | 10.106.017              | 25.600.000       | 2.53          |
-| 8.     | Cipar           | 762.887                 | 9.900.000        | 12.98         |
-| 9.     | Hrvatska        | 4.334.142               | 7.900.000        | 1.82          |
+| 1 abii | ca 3.           | u EUK-1Ma                                      |             |               |
+|--------|-----------------|------------------------------------------------|-------------|---------------|
+|        | Zemlja          | Zemlja br. stanovnika (2001.) državni proračun |             | po stanovniku |
+| 1.     | Francuska       | 59.551.227                                     | 266 000.000 | 4.47          |
+| 2.     | Poljska         | 38.633.912                                     | 150 000.000 | 3.88          |
+| 3.     | Republika Češka | 10.264.212                                     | 66.000.000  | 6.43          |
+| 4.     | Švicarska       | 7.283.274                                      | 55.100.000  | 7.57          |
+| 5.     | Finska          | 5.175.783                                      | 54.000.000  | 10.43         |
+| 6.     | Austrija        | 8.150.835                                      | 52.200.000  | 6.40          |
+| 7.     | Mađarska        | 10.106.017                                     | 25.600.000  | 2.53          |
+| 8.     | Cipar           | 762.887                                        | 9.900.000   | 12.98         |
+| 9.     | Hrvatska        | 4.334.142                                      | 7.900.000   | 1.82          |
 
 Iz proračuna županija i gradova, za javne potrebe u sportu, također se izdvajaju minimalna sredstava. Uvidom u podatke Ministarstva financija izdaci za sport i rekreacijske djelatnosti u proračunima na lokalnim razinama bili su:
 
 - **u 2000. godini** 453.731.074 kn što je **5,31%** sredstava proračuna lokalne i područne (regionalne) samouprave, a koja su iznosila ukupno 8.550.875.810 kn,
-- **u 2001. godini** 439.657.089 kn. što je **4,34%** sredstava proračuna lokalne i područne (regionalne) samouprave, a koja su iznosila ukupno 10.128.887.513 kn.
+- **u 2001. godini** 439.657.089 kn. što je **4,34%** sredstava proračuna lokalne i područne (regionalne) samouprave, a koja su iznosila ukupno 10.128,887.513 kn.
 
 Navedeno samo za sebe govori i nedvojbeno pokazuje pad sredstava za sport u Hrvatskoj i na lokalnim razinama (i u nominalnim iznosima i u postocima).
 
@@ -1677,10 +1679,10 @@ Posljedice koje će proisteći iz predloženih zakonskih rješenja
 Ovim zakonskim prijedlogom uređuje se cjelokupan sustav sporta - od amaterskog<u>a</u> sportskog kluba<del>, pa</del> do -Hrvatskoga olimpijskog odbora, a osobito sljedeća pitanja:
 
 - Sustav sporta u Republici Hrvatskoj, —njegovi organizacijski oblici (amaterski i profesionalni sportski klubovi, sportski savezi, sportske zajednice, Hrvatski olimpijski odbor i drugi) te njihova uloga u procesu organiziranja, programiranja i u realizaciji—\_cjelokupnog programa sporta, kao i njihov -pravni status. Osim toga uređuju se i osnovne pretpostavke bitne za organizaciju sporta na sveučilištu, sportske rekreacije, te sporta za osobe s invaliditetom;
-- Sport djece i mladeži, odnosno školski sport i njegovi oblici organiziranja i djelovanja kao dio ustroja sporta i obrazovnog sustava, posebno u dijelu koji se odnosi na osnivanje školskih sportskih klubova i njihovo udruživanje u školske sportske saveze, te<u>kroz</u>-sportskau podukau kao novi organizacijski oblik sudjelovanja sporta u provođenju sportskih aktivnosti u školi:
+- Sport djece i mladeži, odnosno školski sport i njegovi oblici organiziranja i djelovanja kao dio ustroja sporta i obrazovnog sustava, posebno u dijelu koji se odnosi na osnivanje školskih sportskih klubova i njihovo udruživanje u školske sportske saveze, te\_kroz\_sportskau podukau kao novi organizacijski oblik sudjelovanja sporta u provođenju sportskih aktivnosti u školi:
 - — Status, prava i obveze sportaša sa posebnim naglaskom na rješavanje pitanja statusa sportaša u odgojno-obrazovnom procesu kao i za vrijeme služenja vojnog roka ili civilne službe. Zatim pravo vrhunskih sportaša amatera na određene novčane naknade, —te\_—na mirovinsko i zdravstveno osiguranje prema posebnim propisima;
 - Stručni poslovi u sportu, uvjeti za njihovo obavljanje, tko može obavljati stručne poslove, nadležnosti za propisivanje uvjeta i programa osposobljavanja:
-- Uvjeti za obavljanje sportskih djelatnosti, koje su to fizičke i pravne osobe koje ih mogu obavljati i na koji se način<u>kroz</u>-trgovačk<u>ima</u> društv<u>ima</u> i-putem obrtatoma mogu u sportu pružati usluge na tzržištu;
+- Uvjeti za obavljanje sportskih djelatnosti, koje su to fizičke i pravne osobe koje ih mogu obavljati i na koji se način<u>kroz</u>-trgovačk<u>ima</u> društv<u>ima</u> i<del>-putem</del> obr<del>ta</del>t<u>oma</u> mogu u sportu pružati usluge na tzržištu;
 - Načela i elementi sustava sportskih natjecanja u Republici Hrvatskoj, —osnovna pravila za sudjelovanje u sportskim natjecanjima; te nositelji programiranja sustava, uvjeta i organiziranja sportskih natjecanja, njihove obveze, prava i nadležnosti;
 - Samostalni rad fizičkih osoba kao sportaša natjecatelja; te stručnjaka koji na taj način mogu obavljati poslove sportske poduke, treninga sportaša; te organiziranja i vođenja sportske rekreacije građana;
 
@@ -1703,7 +1705,7 @@ Za financiranje kapitalne izgradnje, a-a-u <u>sklopokvir</u>u Nacionalnog progra
 
 - —Utvrđivanje propisanih uvjeta za obavljanje pojedinih sportskih djelatnosti daje se tijelima nadležnim za pitanja sporta u županijama i Gradu Zagrebu kao pervostupanjskim upravnim tijelima za razliku od dosadašnjeg ZZakona po kojem je to bilo u nadležnosti Ministarstva prosvjete i športa;
 
-Također se uređuju: informacijski sustav i evidencije u sportu, upravni, inspekcijski i stručni nadzor, Državna nagrada za sport "<a href="#">«Franjo Bučar">», kazne za prekršaje u sportu i donošenje provedbenih propisa i usklađivanje ustroja sporta s ovim zakonom.
+Također se uređuju: informacijski sustav i evidencije u sportu, upravni, inspekcijski i stručni nadzor, Državna nagrada za sport "<a href="#">«Franjo Bučar"»</a>, kazne za prekršaje u sportu i donošenje provedbenih propisa i usklađivanje ustroja sporta s ovim zakonom.
 
 #### III. OBRAZLOŽENJE POJEDINIH ODREDBI ZAKONA
 
@@ -1767,7 +1769,7 @@ Sportska rekreacija uređena je člankom 22. kao aktivnost bitna za očuvanje, o
 
 Sport osoba s invaliditetom uređen je člankom 23.
 
-Osobe s invaliditetom mogu osnivati sportske udruge radi rekreacije i sportske klubove radi sportskih natjecanja osoba s invaliditetom. Udružuju se u sportske zajednice ili sportske saveze osoba s invaliditetom na svom području. Mogu se udruživati po sportovima i po vrstama invaliditeta
+Osobe s invaliditetom mogu osnivati sportske udruge radi rekreacije i sportske klubove radi sportskih natjecanja osoba s invaliditetom. Udružuju se u sportske zajednice ili sportske saveze osoba s invaliditetom na svom području. Mogu se udruživati po sportovima i po vrstama invaliditeta.
 
 Sportski savezi iz županija i Grada Zagreba i nacionalni sportski savezi osoba s invaliditetom udružuju se u Hrvatski paraolimpijski odbor koji ima status nacionalnoga sportskog saveza i na njegov djelokrug i zadaće na odgovarajući način se primjenjuju odredbe o nacionalnim sportskim savezima.
 
@@ -1941,7 +1943,7 @@ Navedene su aktivnosti, poslovi, djelatnosti i programi za koje se sredstva osig
 
 Člankom 132. određeno je za koje se javne potrebe u sportu osiguravaju sredstva iz proračuna jedinica lokalne i područne (regionalne) samouprave odnosno općina, gradova, županija i Grada Zagreba te način podnošenja zahtjeva, raspolaganje sredstvima i izvještavanje.
 
-*Sportske zaklade i sportske fundacije* uređene su glavom XI. (članak 133.) kao pravni oblici koji daju mogućnost unapređenja sporta ili neke općekorisne sportske svrhe. Naveden je pravni temeli za nijhovo osnivanje.
+*Sportske zaklade i sportske fundacije* uređene su glavom XI. (članak 133.) kao pravni oblici koji daju mogućnost unapređenja sporta ili neke općekorisne sportske svrhe. Naveden je pravni temelj za njihovo osnivanje.
 
 Nacionalni program sporta uređen je glavom XII. (članak 134.). Cilj mu je ostvarenje dugoročnih interesa Republike Hrvatske u području sporta s bitnom razvojnom funkcijom u desetogodišnjem razdoblju. Propisano je što sve obuhvaća, koje su mu zadaće, tko ga donosi, koji će biti nositelji provedbe programa i zadaća, izvori financiranja i drugo. Uz funkciju razvoja sporta ima i pokretačke funkcije razvoja i za ostale djelatnosti i za čitavo područje države.
 
@@ -1981,7 +1983,7 @@ Prijelazne i završne odredbe su u glavi XVII. (članci 159. do 169.)
 
 Člankom 162. određeni su rokovi školama i osnivačima školskih sportskih saveza za provedbu odredbi iz ovoga Zakona.
 
-Člankom 163. dani su rokovi amaterskim sportskim klubovima i svim udrugama iz sustava sporta iz ovoga Zakona za usklađivanje svojih statuta i odre]enih opcih s ovim Zakonom.
+Člankom 163. dani su rokovi amaterskim sportskim klubovima i svim udrugama iz sustava sporta iz ovoga Zakona za usklađivanje svojih statuta i odrejenih opcih s ovim Zakonom.
 
 Člankom 164. dan je rok amaterskim sportskim klubovima koji imaju uvjete za promjenu statusa u profesionalne klubove za promjenu statusa.
 
@@ -2007,7 +2009,7 @@ Odbor za turizam navodi da bi <u>trebalo poticati izgradnju sportskih objekata</
 
 Klub zastupnika Hrvatskog bloka (Krunoslav Gašparić) ukazuje da <u>porezni sustav</u> praktički ne priznaje šport u neki poseban sustav, dapače da ima pokušaja da se šport svrsta u kategoriju društvenih djelatnosti i aktivnosti na koje se gleda s podozrenjem, odnosno čak na sivu zonu pogodnu za pranje novca. <u>U osiromašenom gospodarstvu teško se može očekivati da bi se šport mogao financirati samo iz vlastitih izvora</u> zasnovanih na donacijama, članarinama i marketingu. U ovakvoj situaciji <u>spas za šport je stimulirati ulaganje kroz porezne olakšice, a o čemu ovaj prijedlog zakona nažalost ne govori ništa konkretno. Država bi morala financirati svakako obrazovanje, osposobljavanje i onu usku specijalizaciju, ona bi dakle morala <u>ići ka obrazovanju stručno-sportskih radnika</u>, ona mora <u>preuzeti gradnju sportskih objekata, financiranje globalnih natjecanja vrhunskih sportaša</u> itd. Postavljena su pitanja glede financiranja sporta i dat je odgovor. <u>Nudi li predlagatelj Zakona poboljšanje? Nude li se poreske olakšice koje bi motivirale potencijalne sponzore?</u> Nudi li se status športu sličan ili istovjetan onom kakav ima kultura? <u>Ne.</u></u>
 
-Klub zastupnika SDP (Branislav Tušek) navodi da je neizbježno <u>pitanje povećanje sredstava za financiranje sporta. Nismo sigurni da zakon definira i rješava to pitanje.</u>
+Klub zastupnika SDP (Branislav Tušek) navodi da je neizbježno <u>pitanje povećanje</u> sredstava za financiranje sporta. Nismo sigurni da zakon definira i rješava to pitanje.
 
 Klub zastupnika HSLS-a (Mario Kovač) ukazuje da treba postaviti pitanje koliko Hrvatska država izdvaja za šport. <u>Hrvatska</u> od 2000. godine u proračunu <u>za šport izdvaja sve manje sredstava. Godinama se planski ne izdvaja niti jedna kuna za potrebnu izgradnju športskih objekata. Po izdvajanjima iz bruto društvenog proizvoda na samom smo dnu europske ljestvice</u>
 
@@ -2017,7 +2019,7 @@ Klub zastupnika HSS (Dr. Miroslav Furdek) navodi da je najbitnije iznalaženje k
 
 Klub zastupnika LIBRA-e (Dr. sc. Zrinjka Glovacki-Bernardi) smatra da prva saborska zadaća, koja proizlazi iz sustavnog bavljenja ovom problematikom, jest <u>da sport u narednom proračunu dobije drukčiji status i drukčije mjesto nego što ga je imao do sada u proračunima.</u> Isto tako <u>očekujemo prijedloge na koji način se financiranje sporta može poduprijeti iz drugih izvora, dakle donacijama,</u> iz sredstava Lutrije Hrvatske i slično. Navode da Hrvatska ima pojedinačne i ekipne velike sportske uspjehe, ali i da je činjenica da <u>Hrvatska u proračunu za</u> sport izdvaja nedopustivo malo.
 
-Klub zastupnika HDZ-a (Mr. Zlatko Mateša) ukazuje da <u>hrvatski sport</u> nema krize rezultata, ali <u>ima krizu financiranja organizacije.</u> Zabrinjavajuće je da u okviru vlastitog ministarstva šport sudjeluje sa svega 1% proračuna tog ministarstva. <u>Financiranje ovisi o Hrvatskom saboru i da zastupnici ne trebaju nikome slati poruke, već da se to moramo riješiti u <u>Hrvatskom saboru.</u> Sredstvima prikupljenim od uplata igara na sreću sve će udruge iz ovog izvora dobiti na neki način u postotku puno više nego šport. Zbroj svih udruga u Hrvatskoj, zbroj svih njihovih aktivnosti i zbroj svih njihovih članova nije ni približan broju ljudi koji se u Hrvatskoj bave športom. Šport je po broju sudionika glavna djelatnost uz svakodnevni rad kojim se neko u ovoj zemlji bavi. U pogledu donacija sport treba ima isti status kao kultura.</u>
+Klub zastupnika HDZ-a (Mr. Zlatko Mateša) ukazuje da <u>hrvatski sport</u> nema krize rezultata, ali <u>ima krizu financiranja organizacije.</u> Zabrinjavajuće je da u okviru vlastitog ministarstva šport sudjeluje sa svega 1% proračuna tog ministarstva. <u>Financiranje ovisi o Hrvatskom saboru i da zastupnici ne trebaju nikome slati poruke, već da se to moramo riješiti u Hrvatskom saboru.</u> Sredstvima prikupljenim od uplata igara na sreću sve će udruge iz ovog izvora dobiti na neki način u postotku puno više nego šport. Zbroj svih udruga u Hrvatskoj, zbroj svih njihovih aktivnosti i zbroj svih njihovih članova nije ni približan broju ljudi koji se u Hrvatskoj bave športom. Šport je po broju sudionika glavna djelatnost uz svakodnevni rad kojim se neko u ovoj zemlji bavi. U pogledu donacija sport treba ima isti status kao kultura.
 
 Klub zastupnika HSP HKDU (Mr. sc. Miroslav Rožić) navodi da je <u>financiranje športa</u> zapravo najveći problem ovoga Zakona i ono što je najvažnije za riješiti, jer ako se riješi financiranje sve drugo riješit će se puno lakše. Postići ćemo puno lakše konsenzus oko ostalih stvari. Šport bi trebao imati isti status kao i kultura.
 
@@ -2037,7 +2039,7 @@ Navodimo nove i izmijenjene odredbe koje su posljedica stavova saborskih odbora,
 - Hrvatskom olimpijskom odboru dano je ovlaštenje izdavanja javnih isprava rješenja o kategorizaciji vrhunskih sportaša na temelju općeg akta o kategorizaciji vrhunskih sportaša te je propisano za koje kategorije se obveze i prava odnose (čl. 42.);
 - Vrhunskim sportašima i osobama koje imaju odgovarajuću stručnu spremu ili su stručno osposobljene za stručne poslove u sportu otvorena je mogućnost služenja vojnog roka ili civilne službe po posebnim uvjetima, koje pravilnicima uređuju ministar obrane, ministar rada i socijalne skrbi i ministar nadležan za poslove sporta (čl. 46.);
 - Propisano je da se status sportskih sudaca, delegata, povjerenika i drugih osoba u funkciji sporta stječe na temelju općih akata nacionalnih sportskih saveza (čl. 48.);
-- Definiran je status dragovoljaca u sportu te određeno koja prava imaju za vrijeme dragovoljnog rada (čl. 49.);
+- Definiran je status dragovoljaca u sportu te određeno koja prava imaju za vrijeme dragovoljnog rada (čl. 49.):
 - Definiran je status menadžera sportaša i njihovih ugovora sa sportašima u sustavu sporta Hrvatske, te prava i ovlasti nacionalnih sportskih saveza, obveze menadžera sportaša i sportaša (čl. 50.);
 - Zbog izričitog zahtjeva Hrvatskog nogometnog saveza utemeljenog na pravilima UEF-e u Konačnom prijedlogu zakona nije predviđena mogućnost podjele dobiti dioničarima profesionalnog kluba, već se ona u cijelosti mora upotrijebiti za razvoj djelatnosti kluba (članak 84.);
 - U cilju sprečavanja nereda za vrijeme natjecanja u članku 107. preciznije su definirane nedopuštene radnje na sportskim objektima;

@@ -268,9 +268,7 @@ Odjeljak 2.
 
 FIZIČKE OSOBE KOJE OBAVLJAJU STRUČNE POSLOVE U SUSTAVU SPORTA
 
-Podjela fizičkih osoba koje obavljaju stručne
-
-poslove u sportu
+Podjela fizičkih osoba koje obavljaju stručne poslove u sportu
 
 Članak 17.
 
@@ -894,7 +892,7 @@ Nacionalni informacijski sustav u sportu obuhvaća sljedeće registre i evidenci
 
 ### Obveznici unosa i ažuriranja podataka
 
-#### Članak 66.
+### Članak 66.
 
 - (1) Obveznici unosa i ažuriranja podataka u Evidenciju sportaša su nacionalni sportski savezi, Hrvatski paraolimpijski odbor, Hrvatski sportski savez gluhih, Hrvatski akademski sportski savez, Hrvatski školski sportski savez i sportski klubovi.
 - (2) Obveznici unosa i ažuriranja podataka u Registar kategoriziranih sportaša su Hrvatski olimpijski odbor, Hrvatski paraolimpijski odbor i Hrvatski sportski savez gluhih.
@@ -1082,7 +1080,7 @@ izvršavanja programa javnih potreba, način i rokove izvještavanja o provedbi 
 
 # DIO DEVETI PRAVA SPORTAŠA, TRENERA I IZBORNIKA
 
-### Prava sportaša, trenera i izbornika
+# Prava sportaša, trenera i izbornika
 
 #### Članak 76.
 
@@ -1096,7 +1094,7 @@ izvršavanja programa javnih potreba, način i rokove izvještavanja o provedbi 
 
 # Obvezni doprinosi
 
-### Članak 77.
+# Članak 77.
 
 - (1) Vrhunski sportaš I. kategorije ima pravo na uplatu obveznih doprinosa iz sredstava državnog proračuna Republike Hrvatske.
 - (2) Pravo na uplatu obveznih doprinosa odobrava se sportašu iz stavka 1. ovoga članka na vlastiti zahtjev ako ispunjava sljedeće uvjete:
@@ -1133,7 +1131,7 @@ izvršavanja programa javnih potreba, način i rokove izvještavanja o provedbi 
 - (3) Vrhunski sportaš I. kategorije koji nakon što mu je rješenjem priznato pravo na uplatu obveznih doprinosa, obvezan je tijelu državne uprave nadležnom za sport vratiti sredstva s pripadajućim zateznim kamatama uplaćena za doprinose prema ovome Zakonu, ako su doprinosi uplaćivani nakon što su nastupile okolnosti koje utječu na prestanak prava na uplatu obveznih doprinosa, a sportaš je znao ili je morao znati za te okolnosti, ali nije o njima obavijestio tijelo državne uprave nadležno za sport u roku od 15 dana od nastanka okolnosti.
   - (4) Protiv rješenja iz stavka 1. ovoga članka žalba nije dopuštena, već se može pokrenuti upravni spor.
 
-# Trajna novčana naknada
+## Trajna novčana naknada
 
 #### Članak 79
 
@@ -1204,7 +1202,7 @@ individualnim sportovima koji je obavljao stručne poslove vođenja sportaša il
 
 #### Troškovi školovanja
 
-#### Članak 83.
+### Članak 83.
 
 - (1) Aktivnom i bivšem vrhunskom sportašu može se odobriti sufinanciranje školarine i troškova školovanja za studij na visokom učilištu u svim znanstvenim i umjetničkim područjima ili pohađanje programa obrazovanja odraslih u Republici Hrvatskoj za stjecanje stručnih kvalifikacija za rad u sportu ako ima hrvatsko državljanstvo i nije pravomoćno osuđen za počinjeno kazneno djelo iz članka 111. stavaka 1. i 2. ovoga Zakona.
 - (2) Odluku o sufinanciranju školarine i troškova školovanja iz stavka 1. ovoga članka donosi čelnik tijela državne uprave nadležnog za sport na temelju javnog natječaja, sukladno osiguranim sredstvima u državnom proračunu Republike Hrvatske.
@@ -1250,7 +1248,7 @@ Sportaš i trener mogu ostvariti pravo na pokrivanje osnovnih troškova za bavlj
 - (5) Visinu novčanog dijela godišnje nagrade i nagrade za životno djelo odlukom utvrđuje čelnik tijela državne uprave nadležnog za sport.
 - (6) Izgled medalja i diploma, dodjelu Državne nagrade, kao i druga pitanja značajna za dodjelu Državne nagrade pravilnikom propisuje čelnik tijela državne uprave nadležnog za sport.
 
-### Državna nagrada za vrhunska sportska postignuća
+# Državna nagrada za vrhunska sportska postignuća
 
 #### Članak 89.
 
@@ -1276,7 +1274,7 @@ Sportaš i trener mogu ostvariti pravo na pokrivanje osnovnih troškova za bavlj
 - (1) Sredstva za nagrade iz članka 89. ovoga Zakona osiguravaju se u državnom proračunu Republike Hrvatske.
 - (2) Novčani iznosi državnih nagrada za vrhunska sportska postignuća, način raspodjele novčane nagrade, postupak predlaganja, potrebna dokumentacija te način dodjele propisuju se pravilnikom iz članka 88. stavka 6. ovoga Zakona.
 
-# Sportski dopust
+### Sportski dopust
 
 #### Članak 91.
 
@@ -1364,7 +1362,7 @@ Nastanak sportskog dioničkog društva
 
 # DIO DVANAESTI NACIONALNO VIJEĆE ZA SPORT
 
-# Nacionalno vijeće za sport i njegove zadaće
+### Nacionalno vijeće za sport i njegove zadaće
 
 #### Članak 100.
 
@@ -1432,7 +1430,7 @@ Nastanak sportskog dioničkog društva
 - (1) Krovna sportska udruženja i nacionalni sportski savezi dužni su donijeti godišnji program rada za sljedeću godinu i financijski plan za njegovu provedbu, u skladu s propisom kojim se uređuje financijsko poslovanje i računovodstvo neprofitnih organizacija.
 - (2) Godišnji program rada mora sadržavati planirane aktivnosti i sredstva za njihovu provedbu, kao i naznaku financira li se aktivnost iz vlastitih sredstava ili iz javnih izvora.
 
-# Financijski nadzor i izvještavanje
+#### Financijski nadzor i izvještavanje
 
 #### Članak 106.
 
@@ -1545,7 +1543,7 @@ Zapreke za obavljanje poslova organiziranja i vođenja sportskog natjecanja
 - zaključi ugovor sa sportašem suprotno odredbi članka 11. stavaka 1., 2., 3., 5., 6. i 9. ovoga Zakona (članak 11. stavak 1., 2., 3., 5., 6. i 9.)
   - dopusti da u sportskom natjecanju sudjeluje osoba kojoj nije utvrđena zdravstvena sposobnost (članak 15.)
 - ne poštuje pravila tijela nadležnog za borbu protiv dopinga iz članka 16. stavka 1. ovoga Zakona (članak
-   16.)
+  16.)
 - povjeri obavljanje stručnih poslova u sportu osobi koja za to ne ispunjava uvjete navedene u člancima 18. do 21., a kako je propisano člankom 42. ovoga Zakona
 - obavlja sportsku djelatnost prije nego što bude upisana u Registar pravnih osoba u sportu koji je sastavni dio Nacionalnog informacijskog sustava u sportu u skladu s člankom 42. ovoga Zakona
   - ne osigura sigurnost i pružanje medicinske pomoći u skladu s člankom 57. ovoga Zakona
@@ -1571,7 +1569,7 @@ Novčanom kaznom u iznosu od 650,00 do 2000,00 eura kaznit će se fizička osoba
 
 # Obavljanje poslova
 
-#### Članak 118.
+# Članak 118.
 
 (1) Osoba koja je ostvarila pravo na obavljanje regulirane profesije iz područja sporta na temelju odredbe članka 9. stavka 2. Zakona o sportu (»Narodne novine«, br. 71/06., 150/08., 124/10., 124/11., 86/12., 94/13.,
 

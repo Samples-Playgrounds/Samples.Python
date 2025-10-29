@@ -126,7 +126,7 @@ Feel free to forward this guide to your team to help ensure a common understandi
 | Error handling                                                  | 33 |
 | Raise errors in ASP.NET Core gRPC                               | 34 |
 | Catch errors in gRPC clients                                    |    |
-| gRPC richer error model                                         |    |
+| gRPC richer error model                                         | 35 |
 | WS-* protocols                                                  |    |
 | Metadata exchange: WS-Policy, WS-Discovery, and so on           |    |
 | Security: WS-Security, WS-Federation, XML Encryption, and so on |    |

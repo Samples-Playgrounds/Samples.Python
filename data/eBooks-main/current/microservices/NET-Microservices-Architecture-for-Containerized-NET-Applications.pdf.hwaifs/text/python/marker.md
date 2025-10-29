@@ -3128,62 +3128,72 @@ services:
 ```
 
 ```
- - EventBusConnection=${ESHOP_AZURE_SERVICE_BUS:-rabbitmq}
- - EventBusUserName=${ESHOP_SERVICE_BUS_USERNAME}
- - EventBusPassword=${ESHOP_SERVICE_BUS_PASSWORD}
- - AzureServiceBusEnabled=False
- - ApplicationInsights__InstrumentationKey=${INSTRUMENTATION_KEY}
- - OrchestratorType=${ORCHESTRATOR_TYPE}
- - UseLoadTest=${USE_LOADTEST:-False}
- ports:
- - "5103:80"
+EventBusConnection=${ESHOP_AZURE_SERVICE_BUS:-rabbitmq}
+      EventBusUserName=${ESHOP SERVICE BUS USERNAME}
+      EventBusPassword=${ESHOP_SERVICE_BUS_PASSWORD}
+      - AzureServiceBusEnabled=False
+
+    ApplicationInsights InstrumentationKey=${INSTRUMENTATION KEY}
+
+      OrchestratorType=${ORCHESTRATOR TYPE}
+      - UseLoadTest=${USE LOADTEST:-False}
+   ports:
+      - "5103:80"
  catalog-api:
- environment:
- - ASPNETCORE_ENVIRONMENT=Development
- - ASPNETCORE_URLS=http://0.0.0.0:80
- - ConnectionString=${ESHOP_AZURE_CATALOG_DB:-
-Server=sqldata;Database=Microsoft.eShopOnContainers.Services.CatalogDb;User 
+   environment:
+      - ASPNETCORE ENVIRONMENT=Development
+      ASPNETCORE_URLS=http://0.0.0.0:80
+      - ConnectionString=${ESHOP_AZURE_CATALOG_DB:-
+Server=sqldata;Database=Microsoft.eShopOnContainers.Services.CatalogDb;User
 Id=sa;Password=[PLACEHOLDER]}
- - PicBaseUrl=${ESHOP_AZURE_STORAGE_CATALOG_URL:-
+      - PicBaseUrl=${ESHOP AZURE STORAGE CATALOG URL:-
 http://host.docker.internal:5202/api/v1/catalog/items/[0]/pic/}
- - EventBusConnection=${ESHOP_AZURE_SERVICE_BUS:-rabbitmq}
- - EventBusUserName=${ESHOP_SERVICE_BUS_USERNAME}
- - EventBusPassword=${ESHOP_SERVICE_BUS_PASSWORD}
- - AzureStorageAccountName=${ESHOP_AZURE_STORAGE_CATALOG_NAME}
- - AzureStorageAccountKey=${ESHOP_AZURE_STORAGE_CATALOG_KEY}
- - UseCustomizationData=True
- - AzureServiceBusEnabled=False
- - AzureStorageEnabled=False
- - ApplicationInsights__InstrumentationKey=${INSTRUMENTATION_KEY}
- - OrchestratorType=${ORCHESTRATOR_TYPE}
- ports:
- - "5101:80"
+      - EventBusConnection=${ESHOP AZURE SERVICE BUS:-rabbitmg}
+      EventBusUserName=${ESHOP SERVICE BUS USERNAME}
+      EventBusPassword=${ESHOP SERVICE BUS PASSWORD}
+      AzureStorageAccountName=${ESHOP AZURE STORAGE CATALOG NAME}
+
+    AzureStorageAccountKey=${ESHOP AZURE STORAGE CATALOG KEY}
+
+      - UseCustomizationData=True
+      - AzureServiceBusEnabled=False
+      - AzureStorageEnabled=False
+      ApplicationInsights__InstrumentationKey=${INSTRUMENTATION_KEY}
+      OrchestratorType=${ORCHESTRATOR_TYPE}
+   ports:
+      - "5101:80"
  marketing-api:
- environment:
- - ASPNETCORE_ENVIRONMENT=Development
- - ASPNETCORE_URLS=http://0.0.0.0:80
- - ConnectionString=${ESHOP_AZURE_MARKETING_DB:-
-Server=sqldata;Database=Microsoft.eShopOnContainers.Services.MarketingDb;User 
+   environment:
+      - ASPNETCORE ENVIRONMENT=Development
+      - ASPNETCORE URLS=http://0.0.0.0:80
+      - ConnectionString=${ESHOP AZURE MARKETING DB:-
+Server=sqldata;Database=Microsoft.eShopOnContainers.Services.MarketingDb;User
 Id=sa;Password=[PLACEHOLDER]}
- - MongoConnectionString=${ESHOP_AZURE_COSMOSDB:-mongodb://nosqldata}
- - MongoDatabase=MarketingDb
- - EventBusConnection=${ESHOP_AZURE_SERVICE_BUS:-rabbitmq}
- - EventBusUserName=${ESHOP_SERVICE_BUS_USERNAME}
- - EventBusPassword=${ESHOP_SERVICE_BUS_PASSWORD}
- - identityUrl=http://identity-api
- - IdentityUrlExternal=http://${ESHOP_EXTERNAL_DNS_NAME_OR_IP}:5105
- - CampaignDetailFunctionUri=${ESHOP_AZUREFUNC_CAMPAIGN_DETAILS_URI}
- - PicBaseUrl=${ESHOP_AZURE_STORAGE_MARKETING_URL:-
+      - MongoConnectionString=${ESHOP AZURE COSMOSDB:-mongodb://nosqldata}
+
+    MongoDatabase=MarketingDb
+
+      EventBusConnection=${ESHOP AZURE SERVICE BUS:-rabbitmg}
+      EventBusUserName=${ESHOP SERVICE BUS USERNAME}
+      EventBusPassword=${ESHOP SERVICE BUS PASSWORD}
+      identityUrl=http://identity-api
+      IdentityUrlExternal=http://${ESHOP EXTERNAL DNS NAME OR IP}:5105
+      - CampaignDetailFunctionUri=${ESHOP AZUREFUNC CAMPAIGN DETAILS URI}
+      - PicBaseUrl=${ESHOP AZURE STORAGE MARKETING URL:-
 http://host.docker.internal:5110/api/v1/campaigns/[0]/pic/}
- - AzureStorageAccountName=${ESHOP_AZURE_STORAGE_MARKETING_NAME}
- - AzureStorageAccountKey=${ESHOP_AZURE_STORAGE_MARKETING_KEY}
- - AzureServiceBusEnabled=False
- - AzureStorageEnabled=False
- - ApplicationInsights__InstrumentationKey=${INSTRUMENTATION_KEY}
- - OrchestratorType=${ORCHESTRATOR_TYPE}
- - UseLoadTest=${USE_LOADTEST:-False}
- ports:
- - "5110:80"
+      AzureStorageAccountName=${ESHOP AZURE STORAGE MARKETING NAME}
+
+    AzureStorageAccountKey=${ESHOP AZURE STORAGE MARKETING KEY}
+
+      - AzureServiceBusEnabled=False
+      - AzureStorageEnabled=False
+
+    ApplicationInsights InstrumentationKey=${INSTRUMENTATION KEY}
+
+      OrchestratorType=${ORCHESTRATOR TYPE}
+      - UseLoadTest=${USE LOADTEST:-False}
+   ports:
+      - "5110:80"
  webmvc:
 ```
 
@@ -3299,7 +3309,7 @@ The .NET team provides four basic variants in [dotnet/](https://hub.docker.com/_
 
 For faster startup, runtime images also automatically set aspnetcore\_urls to port 80 and use Ngen to create a native image cache of assemblies.
 
-# **Additional resources**
+### **Additional resources**
 
 - **Building Optimized Docker Images with ASP.NET Core** [https://learn.microsoft.com/archive/blogs/stevelasker/building-optimized-docker-images](https://docs.microsoft.com/archive/blogs/stevelasker/building-optimized-docker-images-with-asp-net-core)[with-asp-net-core](https://docs.microsoft.com/archive/blogs/stevelasker/building-optimized-docker-images-with-asp-net-core)
 - **Building Docker Images for .NET Applications** [https://learn.microsoft.com/dotnet/core/docker/building-net-docker-images](https://docs.microsoft.com/aspnet/core/host-and-deploy/docker/building-net-docker-images)
