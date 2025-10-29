@@ -7,7 +7,7 @@ rm *.pyc
 """
 python -m venv .venv
 source .venv/bin/activate
-pip install "camelot-py[base]"
+pip install pikepdf
 pip freeze > requirements.txt
 """
 
@@ -16,7 +16,7 @@ pip install -r requirements.txt
 python main.py
 """
 
-import api_camelot as api
+import api_extract_images_pikepdf as api
 
 root="../../../../../../../data"
 
@@ -70,7 +70,7 @@ def main():
    for source in sources:
       if source.endswith(".pdf"):
          print(f"camelot <- source = {source}")
-         api.extract_tables_to_files(source)
+         api.extract_images_from_pdf(source)
 
 
 if __name__ == '__main__':
