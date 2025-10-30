@@ -7,7 +7,7 @@ rm *.pyc
 """
 python -m venv .venv
 source .venv/bin/activate
-pip install "camelot-py[base]"
+pip install minecart
 pip freeze > requirements.txt
 """
 
@@ -16,7 +16,7 @@ pip install -r requirements.txt
 python main.py
 """
 
-import api_camelot as api
+import api_extract_images_minecart as api
 
 root="../../../../../../../data"
 
