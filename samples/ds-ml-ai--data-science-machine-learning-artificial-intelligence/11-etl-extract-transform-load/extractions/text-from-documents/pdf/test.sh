@@ -85,7 +85,7 @@ source .venv/bin/activate
 pip install PyMuPDF
 pip install --upgrade pip
 pip install -r requirements.txt
-python main.pyw
+python main.py
 cd -
 
 figlet pymupdf4llm
