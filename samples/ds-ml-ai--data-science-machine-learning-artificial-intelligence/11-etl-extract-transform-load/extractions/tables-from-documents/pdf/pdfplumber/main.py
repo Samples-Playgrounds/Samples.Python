@@ -21,6 +21,7 @@ root="../../../../../../../data"
 
 # document per local path or URL
 sources = [
+   "/Users/Shared/Projects/e/learning/books/topics/sports/Moljac_Knjiga/RUKOPIS_ver_Final.pdf",
    "/Users/moljac/Downloads/20250913/Zapisnik OS NZG K-226-2022-48 od 12.02.2024. - Nastavak glavne rasprave dana 12.02.2024. u 10_00 sati.pdf",
    f"{root}/pravno/zakoni/zakon_o_sportskoj_inspekciji_nn_86_12.pdf",
    f"{root}/pravno/zakoni/kazneni-zakon.docx",
