@@ -9,6 +9,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install docling
 pip install docling[vlm]
+pip install opencv-python
 pip install --upgrade pip
 python main.py
 cd -
