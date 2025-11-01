@@ -1,6 +1,18 @@
 #!/bin/bash
 
 
+figlet pdf2image
+cd ./pdf2image/
+rm -fr .venv __pycache__ 
+rm *.pyc
+python -m venv .venv
+source .venv/bin/activate
+pip install minecart
+pip install --upgrade pip
+pip install -r requirements.txt
+python main.py
+cd -
+
 figlet PyMuPDF-fitz
 cd ./PyMuPDF-fitz/
 rm -fr .venv __pycache__ 
@@ -9,6 +21,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install PyMuPDF
 pip install --upgrade pip
+pip install -r requirements.txt
 python main.py
 cd -
 
@@ -36,4 +49,3 @@ pip install -r requirements.txt
 python main.py
 cd -
 
-cd ..
