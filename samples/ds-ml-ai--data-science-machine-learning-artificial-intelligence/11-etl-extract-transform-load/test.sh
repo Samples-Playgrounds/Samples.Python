@@ -3,6 +3,10 @@
 figlet extractins
 cd ./extractions/
 source ./test.sh
-cd -
+cd ..
 
-cd ..s
+
+figlet transformations
+cd ./transformations/
+source ./test.sh
+cd ..
