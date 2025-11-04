@@ -5,7 +5,7 @@
 # pip3.13 install -r requirements.txt
 # python3.13 main.py
 
-import api
+import api_translate_translate as api
 
 # document per local path or URL
 source = "/Volumes/xFAT-1TB-2/learning/books/topics/sports/Moljac_Knjiga/RUKOPIS_ver_Final.pdf.docling.cleaned.md"

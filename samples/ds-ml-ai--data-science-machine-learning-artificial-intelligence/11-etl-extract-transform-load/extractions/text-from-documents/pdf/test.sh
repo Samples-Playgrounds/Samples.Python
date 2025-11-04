@@ -14,18 +14,6 @@ pip install --upgrade pip
 python main.py
 cd -
 
-figlet marker
-cd ./marker/
-rm -fr .venv __pycache__ 
-rm *.pyc
-python -m venv .venv
-source .venv/bin/activate
-pip install 'marker-pdf[full]'
-pip install --upgrade pip
-pip install -r requirements.txt
-python main.py
-cd -
-
 figlet markitdown
 cd ./markitdown/
 rm -fr .venv __pycache__ 
@@ -115,18 +103,6 @@ pip install -r requirements.txt
 python main.py
 cd -
 
-figlet pytesseract
-cd ./pytesseract/
-rm -fr .venv __pycache__ 
-rm *.pyc
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-pip install --upgrade pip
-pip install -r requirements.txt
-python main.py
-cd -
-
 figlet unstructured
 cd ./unstructured/
 rm -fr .venv __pycache__ 
@@ -134,6 +110,30 @@ rm *.pyc
 python -m venv .venv
 source .venv/bin/activate
 pip install "unstructured[all-docs]"
+pip install --upgrade pip
+pip install -r requirements.txt
+python main.py
+cd -
+
+figlet marker
+cd ./marker/
+rm -fr .venv __pycache__ 
+rm *.pyc
+python -m venv .venv
+source .venv/bin/activate
+pip install 'marker-pdf[full]'
+pip install --upgrade pip
+pip install -r requirements.txt
+python main.py
+cd -
+
+figlet pytesseract
+cd ./pytesseract/
+rm -fr .venv __pycache__ 
+rm *.pyc
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 pip install --upgrade pip
 pip install -r requirements.txt
 python main.py

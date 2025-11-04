@@ -1,8 +1,7 @@
 #!/bin/bash
 
-
-figlet pdf2image
-cd ./pdf2image/
+figlet minecart
+cd ./minecart/
 rm -fr .venv __pycache__ 
 rm *.pyc
 python -m venv .venv
