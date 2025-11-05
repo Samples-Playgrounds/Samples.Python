@@ -1,0 +1,1 @@
+This diagram illustrates the architecture of .NET MAUI, a cross-platform framework for building native mobile and desktop apps. It shows how a single .NET codebase can be used to create applications for Android, iOS, macOS, and Windows, utilizing shared code and a common abstraction layer.
