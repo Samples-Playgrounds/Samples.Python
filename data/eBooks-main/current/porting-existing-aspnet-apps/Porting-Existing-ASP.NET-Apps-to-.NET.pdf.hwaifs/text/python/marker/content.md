@@ -1060,9 +1060,9 @@ You can reference the Microsoft.Extensions.Logging package from .NET Framework a
 #### <span id="page-33-1"></span>**References**
 
 - [Logging in .NET Core and ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/logging/)
-- [Microsoft.Extensions.Logging NuGet Package](https://www.nuget.org/packages/microsoft.extensions.logging/)
+- <span id="page-33-2"></span>• [Microsoft.Extensions.Logging NuGet Package](https://www.nuget.org/packages/microsoft.extensions.logging/)
 
-# <span id="page-33-2"></span>Compare Razor Pages to ASP.NET MVC
+# Compare Razor Pages to ASP.NET MVC
 
 Razor Pages is the preferred way to create page- or form-based apps in ASP.NET Core. From the [docs,](https://docs.microsoft.com/aspnet/core/razor-pages/)  "Razor Pages can make coding page-focused scenarios easier and more productive than using controllers and views." If your ASP.NET MVC app makes heavy use of views, you may want to consider migrating from actions and views to Razor Pages.
 
@@ -1090,9 +1090,9 @@ See [Incremental ASP.NET to ASP.NET Core migration](https://docs.microsoft.com/a
 #### <span id="page-34-2"></span>**References**
 
 - [Migrate from ASP.NET Web API to ASP.NET Core](https://docs.microsoft.com/aspnet/core/migration/webapi)
-- [Ardalis.ApiEndpoints NuGet package](https://www.nuget.org/packages/Ardalis.ApiEndpoints/)
+- <span id="page-34-3"></span>• [Ardalis.ApiEndpoints NuGet package](https://www.nuget.org/packages/Ardalis.ApiEndpoints/)
 
-# <span id="page-34-3"></span>Compare authentication and authorization between ASP.NET MVC and ASP.NET Core
+# Compare authentication and authorization between ASP.NET MVC and ASP.NET Core
 
 In ASP.NET MVC 5, authentication is configured in *Startup.Auth.cs* in the *App\_Start* folder. In ASP.NET Core MVC, this configuration occurs in *Startup.cs* or *Program.cs*, as part of configuring the app's services and middleware.
 
@@ -1155,9 +1155,9 @@ The following resources offer some guidance for migrating from OWIN / Katana:
 - [Migrate Authentication and Identity to ASP.NET Core](https://docs.microsoft.com/aspnet/core/migration/identity)
 - [Introduction to Identity on ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/authorization/introduction)
 - [Configure ASP.NET Core Identity](https://docs.microsoft.com/aspnet/core/security/authentication/identity-configuration)
-- [Scaffold Identity in ASP.NET Core projects](https://docs.microsoft.com/aspnet/core/security/authentication/scaffold-identity)
+- <span id="page-36-2"></span>• [Scaffold Identity in ASP.NET Core projects](https://docs.microsoft.com/aspnet/core/security/authentication/scaffold-identity)
 
-# <span id="page-36-2"></span>Compare controllers in ASP.NET MVC and Web API with controllers in ASP.NET Core
+# Compare controllers in ASP.NET MVC and Web API with controllers in ASP.NET Core
 
 In ASP.NET MVC 5 and Web API 2, there were two different Controller base types. MVC controllers inherited from Controller; Web API controllers inherited from ApiController. In ASP.NET Core, this object hierarchy has been merged. It's recommended that API controllers in ASP.NET Core inherit from ControllerBase and add the [ApiController] attribute. Standard view-based MVC controllers should inherit from Controller.
 
@@ -1242,9 +1242,9 @@ In this chapter, you'll learn how create a migration plan for a large solution, 
 # <span id="page-40-1"></span>References
 
 - [What topics are important to migrating large MVC and Web API apps to .NET Core?](https://twitter.com/ardalis/status/1313669040859217921)
-- [Porting from .NET Framework to .NET Core](https://docs.microsoft.com/en-us/dotnet/core/porting/)
+- <span id="page-40-2"></span>• [Porting from .NET Framework to .NET Core](https://docs.microsoft.com/en-us/dotnet/core/porting/)
 
-# <span id="page-40-2"></span>Identify sequence of projects to migrate
+# Identify sequence of projects to migrate
 
 For solutions that involve multiple front-end apps, it's best to migrate the apps one by one. For example, create a solution that only includes one front-end app and its dependencies so you can easily identify the scope of work involved. Solutions are lightweight, and you can include projects in multiple solutions if needed. Take advantage of solutions as an organizational tool when migrating.
 
@@ -1331,9 +1331,9 @@ You can use the .NET Portability Analyzer to determine how compatible existing l
 
 - [Porting from .NET Framework to .NET Core](https://docs.microsoft.com/en-us/dotnet/core/porting/)
 - [The .NET Portability Analyzer](https://docs.microsoft.com/en-us/dotnet/standard/analyzers/portability-analyzer)
-- <span id="page-45-2"></span>• [2 Years, 200 Apps: A .NET Core Migration at Scale \(Video\)](https://www.youtube.com/watch?v=C-2haqb60No)
+- [2 Years, 200 Apps: A .NET Core Migration at Scale \(Video\)](https://www.youtube.com/watch?v=C-2haqb60No)
 
-# Understand and update dependencies
+# <span id="page-45-2"></span>Understand and update dependencies
 
 After identifying the sequence in which the app's individual projects must be migrated, the next step is to understand each project's dependencies and update them if necessary. For platform dependencies, the best way to start is to run the [.NET Portability Analyzer](https://docs.microsoft.com/en-us/dotnet/standard/analyzers/portability-analyzer) on the assembly in question, and then look at the detailed results that are generated. You configure the tool to specify one or more target platforms, such as .NET 7 or .NET Standard 2.0. Results are provided with details for each platform targeted. Figure 3-4 shows an example of the tool's output.
 
@@ -1478,35 +1478,34 @@ Once the report is generated, open the file and review the results. The summary 
 
 For this app, about 80 percent of the .NET Framework calls are compatible. 20 percent of the calls need to be addressed during the porting process. Viewing the details reveals that all of the incompatible calls are part of System.Web, which is an expected incompatibility. The dependencies on System.Web calls will be addressed when the app's controllers and related classes are migrated in a later step. Figure 4-5 lists some of the specific types found by the tool:
 
-| Target type                               | Target member                                      | Assembly Name   |
-|-------------------------------------------|----------------------------------------------------|-----------------|
-| Target type T:System.Web.Mvc.UrlParameter | Target member T:System.Web.Mvc.UrlParameter        | eShopLegacyMVC  |
-| •                                         |                                                    | , ,             |
-| T:System.Web.Mvc.UrlParameter             | F:System.Web.Mvc.UrlParameter.Optional             | eShopLegacyMVC  |
-| T:System.Web.HttpApplication              | T:System.Web.HttpApplication                       | eShopLegacyMVC  |
-| T:System.Web.HttpApplication              | M:System.Web.HttpApplication.#ctor                 | eShopLegacyMVC  |
-| T:System.Web.Mvc.HttpNotFoundResult       | T:System.Web.Mvc.HttpNotFoundResult                | eShopLegacyMVC  |
-| T:System.Web.Mvc.Controller               | T:System.Web.Mvc.Controller                        | eShopLegacyMVC  |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.#ctor                  | eShopLegacyMVC  |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.Dispose(System.Bo      | eShopLegacyMVC  |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.File(System.Byte[],    | :eShopLegacyMVC |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.get_ModelState         | eShopLegacyMVC  |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.get_Request            | eShopLegacyMVC  |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.get_Server             | eShopLegacyMVC  |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.get_Url                | eShopLegacyMVC  |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.HttpNotFound           | eShopLegacyMVC  |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.RedirectToAction(S     | SeShopLegacyMVC |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.View(System.Objection) | ceShopLegacyMVC |
-| T:System.Web.Mvc.ActionNameAttribute      | T:System.Web.Mvc.ActionNameAttribute               | eShopLegacyMVC  |
-| T:System.Web.Mvc.ActionNameAttribute      | M:System.Web.Mvc.ActionNameAttribute.#ctor(S       | eShopLegacyMVC  |
-| T:System.Web.HttpContext                  | T:System.Web.HttpContext                           | eShopLegacyMVC  |
-| T:System.Web.HttpContext                  | M:System.Web.HttpContext.get_Current               | eShopLegacyMVC  |
-| T:System.Web.HttpContext                  | M:System.Web.HttpContext.get_Request               | eShopLegacyMVC  |
-| T:System.Web.HttpContext                  | M:System.Web.HttpContext.get_Session               | eShopLegacyMVC  |
-| T:System.Web.Mvc.HandleErrorAttribute     | T:System.Web.Mvc.HandleErrorAttribute              | eShopLegacyMVC  |
-| T:System.Web.Mvc.HandleErrorAttribute     | M:System.Web.Mvc.HandleErrorAttribute.#ctor        | eShopLegacyMVC  |
-| T:System.Web.Mvc.HttpGetAttribute         | T:System.Web.Mvc.HttpGetAttribute                  | eShopLegacyMVC  |
-| T:System.Web.Mvc.HttpGetAttribute         | M:System.Web.Mvc.HttpGetAttribute.#ctor            | eShopLegacyMVC  |
+| Target type                           | ▼ Target member                               | Assembly Name     | - |
+|---------------------------------------|-----------------------------------------------|-------------------|---|
+| T:System.Web.Mvc.UrlParameter         | T:System.Web.Mvc.UrlParameter                 | eShopLegacyMVC    |   |
+| T:System.Web.Mvc.UrlParameter         | F:System.Web.Mvc.UrlParameter.Optional        | eShopLegacyMVC    |   |
+| T:System.Web.HttpApplication          | T:System.Web.HttpApplication                  | eShopLegacyMVC    |   |
+| T:System.Web.HttpApplication          | M:System.Web.HttpApplication.#ctor            | eShopLegacyMVC    |   |
+| T:System.Web.Mvc.HttpNotFoundResult   | T:System.Web.Mvc.HttpNotFoundResult           | eShopLegacyMVC    |   |
+| T:System.Web.Mvc.Controller           | T:System.Web.Mvc.Controller                   | eShopLegacyMVC    |   |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.#ctor             | eShopLegacyMVC    |   |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.Dispose(System.E  | Bo eShopLegacyMVC |   |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.File(System.Byte) | ],:eShopLegacyMVC |   |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.get_ModelState    | eShopLegacyMVC    |   |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.get_Request       | eShopLegacyMVC    |   |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.get_Server        | eShopLegacyMVC    |   |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.get_Url           | eShopLegacyMVC    |   |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.HttpNotFound      | eShopLegacyMVC    |   |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.RedirectToAction  | (SeShopLegacyMVC  |   |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.View(System.Obj   | eceShopLegacyMVC  |   |
+| T:System.Web.Mvc.ActionNameAttribute  | T:System.Web.Mvc.ActionNameAttribute          | eShopLegacyMVC    |   |
+| T:System.Web.Mvc.ActionNameAttribute  | M:System.Web.Mvc.ActionNameAttribute.#ctor    | (SyeShopLegacyMVC |   |
+| T:System.Web.HttpContext              | T:System.Web.HttpContext                      | eShopLegacyMVC    |   |
+| T:System.Web.HttpContext              | M:System.Web.HttpContext.get_Current          | eShopLegacyMVC    |   |
+| T:System.Web.HttpContext              | M:System.Web.HttpContext.get_Request          | eShopLegacyMVC    |   |
+| T:System.Web.HttpContext              | M:System.Web.HttpContext.get_Session          | eShopLegacyMVC    |   |
+| T:System.Web.Mvc.HandleErrorAttribute | T:System.Web.Mvc.HandleErrorAttribute         | eShopLegacyMVC    |   |
+| T:System.Web.Mvc.HandleErrorAttribute | M:System.Web.Mvc.HandleErrorAttribute.#ctor   | eShopLegacyMVC    |   |
+| T:System.Web.Mvc.HttpGetAttribute     | T:System.Web.Mvc.HttpGetAttribute             | eShopLegacyMVC    |   |
+| T:System.Web.Mvc.HttpGetAttribute     | M:System.Web.Mvc.HttpGetAttribute.#ctor       | eShopLegacyMVC    |   |
 
 *Figure 4-5. ApiPort incompatible type details.*
 
@@ -1998,9 +1997,9 @@ At this point, the setting is pulled from configuration. The other setting, UseC
 
 All access to configuration within the web app should be modified in this manner to use the new IConfiguration type. Dependencies that require access to .NET Framework configuration can include such settings in an *app.config* file added to the web project. The dependent projects can work with ConfigurationManager to access settings, and shouldn't require any changes if they already use this approach. However, since ASP.NET Core apps run as their own executable, they don't reference *web.config* but rather *app.config*. By migrating settings from the legacy app's *web.config* file to a new *app.config* file in the ASP.NET Core app, components that use ConfigurationManager to access their settings will continue to function properly.
 
-<span id="page-70-0"></span>The app's migration is nearly complete. The only remaining task is data access configuration.
+The app's migration is nearly complete. The only remaining task is data access configuration.
 
-# Data access considerations
+# <span id="page-70-0"></span>Data access considerations
 
 ASP.NET Core apps running on .NET Framework can continue to use Entity Framework (EF). If performing an incremental migration, getting the app working with EF 6 before trying to port its data access to use EF Core may be worthwhile. In this way, any problems with the app's migration can be identified and addressed before another block of migration effort is begun.
 
