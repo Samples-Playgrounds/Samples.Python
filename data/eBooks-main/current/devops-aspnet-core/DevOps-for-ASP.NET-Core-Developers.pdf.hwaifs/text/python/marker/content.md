@@ -68,27 +68,27 @@ This guide is focused on an end-to-end continuous deployment experience for .NET
 
 # What's in this guide
 
-#### **[Tools and downloads](xref:azure/devops/tools-and-downloads)**
+# **[Tools and downloads](xref:azure/devops/tools-and-downloads)**
 
 Learn where to acquire the tools used in this guide.
 
-#### **[Deploy to App Service](xref:azure/devops/deploy-to-app-service)**
+# **[Deploy to App Service](xref:azure/devops/deploy-to-app-service)**
 
 Learn the various methods for deploying an ASP.NET Core app to Azure App Service.
 
-#### **[Continuous integration and deployment with Azure DevOps](xref:azure/devops/cicd)**
+# **[Continuous integration and deployment with Azure DevOps](xref:azure/devops/cicd)**
 
 Build an end-to-end continuous integration and deployment solution for your ASP.NET Core app with GitHub, Azure DevOps Services, and Azure.
 
-#### **[Continuous integration and deployment with GitHub Actions](xref:azure/devops/github-actions)**
+# **[Continuous integration and deployment with GitHub Actions](xref:azure/devops/github-actions)**
 
 Build an end-to-end continuous integration and deployment solution for your ASP.NET Core app with GitHub, GitHub Actions, and Azure, including code scanning for security and quality using CodeQL.
 
-#### **[Monitor and debug](xref:azure/devops/monitor)**
+# **[Monitor and debug](xref:azure/devops/monitor)**
 
 Use Azure's tools to monitor, troubleshoot, and tune your application.
 
-#### **[Next steps](xref:azure/devops/next-steps)**
+# **[Next steps](xref:azure/devops/next-steps)**
 
 Other learning paths for the ASP.NET Core developer learning Azure.
 
@@ -483,7 +483,7 @@ You can create that by following details mentioned in [Self-hosted agents.](http
 
 There are three distinct steps to complete. Completing the steps in the following three sections results in an operational DevOps pipeline.
 
-#### <span id="page-20-1"></span>**Grant Azure DevOps access to the GitHub repository**
+# <span id="page-20-1"></span>**Grant Azure DevOps access to the GitHub repository**
 
 1. In your project, navigate to the **Pipelines** page. Then choose the action to create a new pipeline:
 
@@ -507,7 +507,7 @@ There are three distinct steps to complete. Completing the steps in the followin
 - 3. Click the ellipsis button next to the **Repository** button. Select the */simple-feed-reader* repository from the list. Click the **Select** button.
 - 4. Select the default branch (*main*) from the **Default branch for manual and scheduled builds** drop-down. Click the **Continue** button. The template selection page appears.
 
-#### <span id="page-22-0"></span>**Create the build definition**
+# <span id="page-22-0"></span>**Create the build definition**
 
 1. From the template selection page, enter *ASP.NET Core* in the search box:
 
@@ -538,7 +538,7 @@ These settings cause a build to trigger when any change is pushed to the default
 
 Use the default folder of \*\\\*, and click the \*\*Save\*\* button.
 
-#### <span id="page-24-0"></span>**Create the release pipeline**
+# <span id="page-24-0"></span>**Create the release pipeline**
 
 1. Click the **Releases** tab of your team project. Click the **New pipeline** button.
 
@@ -634,7 +634,7 @@ The build is triggered, since continuous integration is enabled in the build def
 
 # <span id="page-29-0"></span>Examine the Azure Pipelines pipeline
 
-#### <span id="page-29-1"></span>**Build definition**
+# <span id="page-29-1"></span>**Build definition**
 
 A build definition was created with the name *MyFirstProject-ASP.NET Core-CI*. Upon completion, the build produces a *.zip* file including the assets to be published. The release pipeline deploys those assets to Azure.
 
@@ -665,7 +665,7 @@ A summary of this specific build is displayed. Click the **published** link, and
 
 Use the ellipsis and click on **Downloads artifacts** links to inspect the published artifacts.
 
-#### <span id="page-32-0"></span>**Release pipeline**
+# <span id="page-32-0"></span>**Release pipeline**
 
 A release pipeline was created with the name *MyFirstProject-ASP.NET Core-CD*:
 
@@ -719,7 +719,7 @@ In this section, you'll complete the following tasks:
 - Commit changes to GitHub and automatically deploy to Azure
 - Examine the Azure Pipelines pipeline
 
-#### <span id="page-36-1"></span>**Publish the app's code to GitHub**
+# <span id="page-36-1"></span>**Publish the app's code to GitHub**
 
 - 1. Open a browser window, and navigate to https://github.com.
 - 2. Click the **+** drop-down in the header, and select **New repository**:
@@ -737,7 +737,7 @@ In this section, you'll complete the following tasks:
   - :::{custom-style=CodeBox} console git push -u origin main :::
 - 7. Open a browser window, and navigate to https://github.com/<GitHub\_username>/simplefeed-reader/. Validate that your code appears in the GitHub repository.
 
-#### <span id="page-37-0"></span>**Disconnect local Git deployment**
+# <span id="page-37-0"></span>**Disconnect local Git deployment**
 
 Remove the local Git deployment with the following steps. Azure Pipelines (an Azure DevOps service) both replaces and augments that functionality.
 
@@ -749,7 +749,7 @@ Remove the local Git deployment with the following steps. Azure Pipelines (an Az
 - 2. Navigate to the *mywebapp* App Service. As a reminder, the portal's search box can be used to quickly locate the App Service.
 - 3. Click **Deployment Center**. A new panel appears. Click **Disconnect** to remove the local Git source control configuration that was added in the previous chapter. Confirm the removal operation by clicking the **Yes** button.
 
-#### <span id="page-37-1"></span>**Create an Azure DevOps organization**
+# <span id="page-37-1"></span>**Create an Azure DevOps organization**
 
 - 1. Open a browser, and navigate to the [Azure DevOps organization creation page.](https://go.microsoft.com/fwlink/?LinkId=307137)
 - 2. Select **New organization**
@@ -757,7 +757,7 @@ Remove the local Git deployment with the following steps. Azure Pipelines (an Az
 
 4. Sign in to your organization at any time, https://dev.azure.com/{yourorganization}
 
-#### <span id="page-38-0"></span>**Create a team project in Azure DevOps organization**
+# <span id="page-38-0"></span>**Create a team project in Azure DevOps organization**
 
 - 1. Choose the organization, and then select **New project**.
 - 2. Enter the project name as *MyFirstProject* and select the **Visibility** as *Private*
@@ -765,7 +765,7 @@ Remove the local Git deployment with the following steps. Azure Pipelines (an Az
 
 For more information, see [Create a project](https://docs.microsoft.com/azure/devops/organizations/projects/create-project?view=azure-devops&tabs=preview-page&preserve-view=true#create-a-project)
 
-#### <span id="page-38-1"></span>**Configure a self-hosted agent if necessary**
+# <span id="page-38-1"></span>**Configure a self-hosted agent if necessary**
 
 To build your code or deploy your software using Azure Pipelines, you need at least one agent. In Azure Pipelines, you can run parallel jobs on either **Microsoft-hosted** or **self-hosted** agent. But with the recent change in Azure Pipelines free grant of parallel jobs is temporarily disable for the public projects.For more details, refer [Configure and pay for parallel jobs.](https://docs.microsoft.com/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted&preserve-view=true)
 
@@ -777,7 +777,7 @@ You can create that by following details mentioned in [Self-hosted agents.](http
 
 ![](_page_38_Picture_11.jpeg)
 
-#### <span id="page-38-2"></span>**Configure the Azure Pipelines pipeline**
+# <span id="page-38-2"></span>**Configure the Azure Pipelines pipeline**
 
 There are three distinct steps to complete. Completing the steps in the following three sections results in an operational DevOps pipeline.
 
@@ -903,7 +903,7 @@ The \*\*Tasks\*\* tab of the environment appears.
 
 1. Click the **Save** button.
 
-#### <span id="page-46-0"></span>**Commit changes to GitHub and automatically deploy to Azure**
+# <span id="page-46-0"></span>**Commit changes to GitHub and automatically deploy to Azure**
 
 - 1. Open *SimpleFeedReader.sln* in Visual Studio.
 - 2. In Solution Explorer, open *Pages.cshtml*. Change <h2>Simple Feed Reader V3</h2> to <h2>Simple Feed Reader - V4</h2>.
@@ -931,7 +931,7 @@ The build is triggered, since continuous integration is enabled in the build def
 
 ![](_page_47_Picture_5.jpeg)
 
-#### <span id="page-47-0"></span>**Examine the Azure Pipelines pipeline**
+# <span id="page-47-0"></span>**Examine the Azure Pipelines pipeline**
 
 #### **Build definition**
 
@@ -990,7 +990,7 @@ Clicking the slot swap task reveals the following task configuration:
 
 The subscription, resource group, service type, web app name, and deployment slot details are provided. The **Swap with Production** check box is checked. Consequently, the bits deployed to the *staging* slot are swapped into the production environment.
 
-#### <span id="page-53-0"></span>**Additional reading**
+# <span id="page-53-0"></span>**Additional reading**
 
 - [Create your first pipeline with Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/create-first-pipeline)
 - [Build and .NET Core project](https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core)
@@ -1000,7 +1000,7 @@ The subscription, resource group, service type, web app name, and deployment slo
 
 GitHub has long been the home for millions of open-source developers around the globe. Most developers associate source control with GitHub. However, GitHub is an evolving platform that can be used for more than just synchronizing Git repositories.
 
-#### <span id="page-54-1"></span>**GitHub Actions**
+# <span id="page-54-1"></span>**GitHub Actions**
 
 GitHub Actions is a workflow engine that can automate workflows for nearly all events that occur on GitHub. Actions is a great solution for Continuous Integration/Continuous Deployment (CI/CD) pipelines.
 
@@ -1028,7 +1028,7 @@ In the Deploy article, you'll:
 - Extend the workflow YAML file to add deployment steps.
 - Add a manual dispatch trigger.
 
-#### <span id="page-54-2"></span>**Secure code with CodeQL**
+# <span id="page-54-2"></span>**Secure code with CodeQL**
 
 In addition to building and deploying code, [GitHub Advanced Security](https://docs.github.com/github/getting-started-with-github/about-github-advanced-security) offers tools for "shifting left" with security. That is, integrating security early on in the software delivery lifecycle. [CodeQL](https://codeql.github.com/docs/codeql-overview/about-codeql/) is a code scanning language that runs queries to find potential vulnerabilities or quality issues in your code. CodeQL is run using an Actions workflow.
 
@@ -1040,7 +1040,7 @@ In the CodeQL article, you'll:
 - Edit the workflow file to include custom scan settings.
 - See scanning results.
 
-#### <span id="page-55-0"></span>**Compare and contrast GitHub Actions and Azure Pipelines**
+# <span id="page-55-0"></span>**Compare and contrast GitHub Actions and Azure Pipelines**
 
 GitHub Actions and Azure Pipelines have a common lineage and are similar in many respects. However, you should understand the differences before selecting a platform for building, testing, and deploying apps. In the Comparison article, you'll deep dive into these platforms and compare and contrast them. You'll also learn how to select the correct platform for your CI/CD needs.
 
@@ -1048,7 +1048,7 @@ GitHub Actions and Azure Pipelines have a common lineage and are similar in many
 
 GitHub has long been the home for millions of open-source developers around the globe. Most developers associate source control with GitHub. However, GitHub is an evolving platform that can be used for more than just synchronizing Git repositories.
 
-#### <span id="page-55-2"></span>**GitHub Actions**
+# <span id="page-55-2"></span>**GitHub Actions**
 
 GitHub Actions is a workflow engine that can automate workflows for nearly all events that occur on GitHub. Actions is a great solution for Continuous Integration/Continuous Deployment (CI/CD) pipelines.
 
@@ -1077,7 +1077,7 @@ In the Deploy article, you'll:
 - Extend the workflow YAML file to add deployment steps.
 - Add a manual dispatch trigger.
 
-#### <span id="page-56-0"></span>**Secure code with CodeQL**
+# <span id="page-56-0"></span>**Secure code with CodeQL**
 
 In addition to building and deploying code, [GitHub Advanced Security](https://docs.github.com/github/getting-started-with-github/about-github-advanced-security) offers tools for "shifting left" with security. That is, integrating security early on in the software delivery lifecycle. [CodeQL](https://codeql.github.com/docs/codeql-overview/about-codeql/) is a code scanning language that runs queries to find potential vulnerabilities or quality issues in your code. CodeQL is run using an Actions workflow.
 
@@ -1089,7 +1089,7 @@ In the CodeQL article, you'll:
 - Edit the workflow file to include custom scan settings.
 - See scanning results.
 
-#### <span id="page-56-1"></span>**Compare and contrast GitHub Actions and Azure Pipelines**
+# <span id="page-56-1"></span>**Compare and contrast GitHub Actions and Azure Pipelines**
 
 GitHub Actions and Azure Pipelines have a common lineage and are similar in many respects. However, you should understand the differences before selecting a platform for building, testing, and deploying apps. In the Comparison article, you'll deep dive into these platforms and compare and contrast them. You'll also learn how to select the correct platform for your CI/CD needs.
 
@@ -1097,7 +1097,7 @@ GitHub Actions and Azure Pipelines have a common lineage and are similar in many
 
 [GitHub Actions](https://docs.github.com/actions) and [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/what-is-azure-pipelines) have a common history. In fact, the Actions agent is a fork of the Pipelines agent. There are many similarities between GitHub Actions and Azure Pipelines and it's worth comparing and contrasting them.
 
-#### <span id="page-56-3"></span>**Pipelines as code**
+# <span id="page-56-3"></span>**Pipelines as code**
 
 Before you compare GitHub Actions and Azure Pipelines, you should consider the benefits of *pipelines as code*. Pipelines as code:
 
@@ -1114,7 +1114,7 @@ Before you compare GitHub Actions and Azure Pipelines, you should consider the b
 
 The term "pipelines" can also be referred to by several different interchangeable words: *pipeline*, *workflow*, and *build* are common terms. In this article, references to *Azure Pipelines* are referring to [YAML Pipelines,](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops&preserve-view=true#define-pipelines-using-yaml-syntax) and not the older UI-based [Classic Pipelines.](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops&preserve-view=true#define-pipelines-using-the-classic-interface)
 
-#### <span id="page-57-0"></span>**Agents and runners**
+# <span id="page-57-0"></span>**Agents and runners**
 
 Before you examine pipelines themselves, you should consider how these pipelines *execute*. Both GitHub Actions and Azure Pipelines are really *orchestration engines*. When a pipeline is triggered, the system finds an "agent" and tells the agent to execute the jobs defined in the pipeline file.
 
@@ -1158,7 +1158,7 @@ Every Azure DevOps account has a hosted pool with a single agent that can run on
 | Cross-platform                                 | Yes                                                                                                                                                                              | Yes                                                                                                                                                                                                                                                                                                              |                                                 |
 | Scale set agents                               | No                                                                                                                                                                               | Yes                                                                                                                                                                                                                                                                                                              | Azure virtual<br>machine<br>scale set<br>agents |
 
-#### <span id="page-58-0"></span>**Comparison of GitHub Actions and Azure Pipelines**
+# <span id="page-58-0"></span>**Comparison of GitHub Actions and Azure Pipelines**
 
 Azure Pipelines (YAML pipelines) provide a mature set of features. Some of the features include:
 
@@ -1223,7 +1223,7 @@ To explore moving code to the cloud, you'll build a GitHub Actions workflow file
 
 In this article, you will: > [!div class="checklist"] > > \* Learn the basic structure of a GitHub Action workflow YAML file. > \* Use a template to create a basic build workflow that builds the .NET app and executes unit tests. > \* Publish the compiled app so that it's ready for deployment.
 
-#### <span id="page-61-1"></span>**Workflow structure**
+# <span id="page-61-1"></span>**Workflow structure**
 
 Workflows are defined in YAML files, and contain several common nodes:
 
@@ -1254,7 +1254,7 @@ From a workflow file, you're able to run any of the available [.NET CLI commands
 
 All .NET workflows require the .NET SDK, and this can be set up by the [actions/setup-dotnet](https://github.com/actions/setup-dotnet) GitHub [Action.](https://github.com/actions/setup-dotnet) This action sets up a [.NET CLI](https://docs.microsoft.com/en-us/dotnet/core/tools/) environment for use in actions. Some [GitHub hosted runners](https://docs.github.com/actions/using-github-hosted-runners/about-github-hosted-runners#supported-software) have the .NET SDK preinstalled, but that's subject to change. As a best practice, use the actions/setupdotnet action to ensure the proper version is available.
 
-#### <span id="page-62-0"></span>**Create a basic build workflow**
+# <span id="page-62-0"></span>**Create a basic build workflow**
 
 A primary principle of effective DevOps is to "build once, and deploy many times". You'll start by creating a workflow to build a basic .NET app. In the next step, you'll publish the output to prepare for deployment.
 
@@ -1273,7 +1273,7 @@ A primary principle of effective DevOps is to "build once, and deploy many times
 
 1. Select the **Actions** tab again. You should see a running workflow. Once the workflow has completed, you should see a successful run.
 
-![](_page_63_Picture_4.jpeg)
+![](_page_63_Figure_4.jpeg)
 
 \*\*Figure 3\*\*: Successful build view.
 
@@ -1287,7 +1287,7 @@ A primary principle of effective DevOps is to "build once, and deploy many times
 
 If any of the tests fail, the workflow will fail.
 
-#### <span id="page-64-0"></span>**Dissect the workflow file**
+# <span id="page-64-0"></span>**Dissect the workflow file**
 
 Let's examine the workflow YAML file you have so far:
 
@@ -1325,7 +1325,7 @@ jobs:
   - 2. actions/setup-dotnet@v3 is an action that sets up the .NET CLI. This step also specifies a name attribute for the logs and the dotnet-version parameter within the with object.
   - 3. Three run steps that execute dotnet restore, dotnet build, and dotnet test. name attributes are also specified for these run steps to make the logs look pretty.
 
-#### <span id="page-65-0"></span>**Publish the output**
+# <span id="page-65-0"></span>**Publish the output**
 
 Now that you've successfully built and tested the code, add steps that publish the output so you can deploy the web app.
 
@@ -1412,7 +1412,7 @@ Please complete the Build tutorial before starting this lab.
 
 In this article, you'll: > [!div class="checklist"] > > \* Learn about Environments in GitHub Actions. > \* Create two environments and specify environment protection rules. > \* Create environment secrets for managing environment-specific configuration. > \* Extend the workflow YAML file to add deployment steps. > \* Add a manual dispatch trigger.
 
-#### <span id="page-67-1"></span>**Environments**
+# <span id="page-67-1"></span>**Environments**
 
 Now that you've published an artifact that's *potentially deployable*, you'll add *deployment* jobs to the workflow. There's nothing special about a deployment job, other than the fact that it references an
 
@@ -1428,7 +1428,7 @@ Once you have these steps in place, you'll update the workflow to handle environ
 
 For more information, see [GitHub Actions -](https://docs.github.com/actions/reference/environments) Environments.
 
-#### <span id="page-68-0"></span>**Azure authentication**
+# <span id="page-68-0"></span>**Azure authentication**
 
 To perform actions such as deploying code to an Azure resource, you need the correct permissions. For deployment to Azure Web Apps, you can use a publishing profile. If you want to deploy to a staging slot, then you'll need the publishing profile for the slot too. Instead, you can use a service principal (SPN) and assign permission to this service principal. You can then authenticate using credentials for the SPN before using any commands that the SPN has permissions to perform.
 
@@ -1464,7 +1464,7 @@ Once you have an SPN, you'll create a [repository secret](https://docs.github.co
 
 1. You'll consume this secret in a workflow in later steps. To access it, use the variable notation \${{}}. In this case, \${{ AZURE\_CREDENTIAL }} will be populated with the JSON you saved.
 
-#### <span id="page-69-0"></span>**Add environments**
+# <span id="page-69-0"></span>**Add environments**
 
 [Environments](https://docs.github.com/actions/reference/environments) are used as a *logical boundary*. You can add approvals to environments to ensure quality. You can also track deployments to environments and specify environment-specific values (secrets) for configuration.
 
@@ -1497,7 +1497,7 @@ Precedence works from Environment to repository. If a targeted environment has a
 
 \*\*Figure 5\*\*: Add protection rules.
 
-#### <span id="page-71-0"></span>**Deploy to staging**
+# <span id="page-71-0"></span>**Deploy to staging**
 
 You can now add additional jobs to the workflow to deploy to the environments! You'll start by adding a deployment to the PRE-PROD environment, which in this case is the web app staging slot.
 
@@ -1575,7 +1575,7 @@ The preceding workflow defines several steps:
 
 \*\*Figure 8\*\*: View deployments.
 
-#### <span id="page-74-0"></span>**Deploy to production**
+# <span id="page-74-0"></span>**Deploy to production**
 
 Now that you've deployed successfully to PRE-PROD, you'll want to deploy to PROD. Deployment to PROD will be slightly different since you don't need to copy the website again - you just need to swap the staging slot with the production slot. You'll do this using an Azure CLI (az) command.
 
@@ -1642,7 +1642,7 @@ The deployment to the PROD environment workflow specifies several steps:
 
 \*\*Figure 12\*\*: The PROD site.
 
-#### <span id="page-76-0"></span>**Add a manual queue option**
+# <span id="page-76-0"></span>**Add a manual queue option**
 
 You now have an end-to-end build and deploy workflow, including approvals. One more change you can make is to add a manual trigger to the workflow so that the workflow can be triggered from within the **Actions** tab of the repository.
 
@@ -1658,7 +1658,7 @@ You now have an end-to-end build and deploy workflow, including approvals. One m
 
 \*\*Figure 13\*\*: Manual dispatch.
 
-#### <span id="page-77-0"></span>**Handle environment configuration**
+# <span id="page-77-0"></span>**Handle environment configuration**
 
 Your workflow is deploying the same binary to each environment. This concept is important to ensure that the binaries you test in one environment are the same that you deploy to the next. However, environments typically have different settings like database connection strings. You want to ensure that the DEV app is using DEV settings and the PROD app is using PROD settings.
 
@@ -1713,9 +1713,9 @@ with: app-name: ${{ env.app-name }} app-settings-json: | [ { "name": "UI:Index:H
  - name: az cli logout # <-- this exists already
 ```
 
-``` :::
-
 4. Commit the file.
+
+``` :::
 
 - 5. Let the workflow run and approve the deployment to PROD once the approval is reached.
 - 6. You should see the following headers on the index page for both sites:
@@ -1724,7 +1724,7 @@ with: app-name: ${{ env.app-name }} app-settings-json: | [ { "name": "UI:Index:H
 
 \*\*Figure 16\*\*: Settings changed in the environments.
 
-#### <span id="page-79-0"></span>**Final workflow file**
+# <span id="page-79-0"></span>**Final workflow file**
 
 The final workflow file should look like this:
 
@@ -1884,7 +1884,7 @@ In this article, you'll set up a GitHub workflow that will scan code in your rep
 
 To see security alerts for your repository, you must be a repository owner.
 
-#### <span id="page-82-0"></span>**Create the code scanning workflow**
+# <span id="page-82-0"></span>**Create the code scanning workflow**
 
 You can use a starter workflow for code scanning by navigating to the **Security** tab of your repository.
 
@@ -1959,7 +1959,7 @@ jobs:
 
 \*\*Figure 4:\*\* No results to the initial scan.
 
-#### <span id="page-85-0"></span>**Customize CodeQL settings**
+# <span id="page-85-0"></span>**Customize CodeQL settings**
 
 The CodeQL scan isn't reporting any security issues. That's expected with this basic sample. CodeQL can also scan for *quality* issues. The current workflow is using the default security-extended suite. You can add quality scanning in by adding a configuration file to customize the scanning suites. In this step, you'll configure CodeQL to use the security-and-quality suites.
 
@@ -1991,7 +1991,7 @@ queries:
 
 1. Select **Start Commit** and commit to the main branch.
 
-#### <span id="page-86-0"></span>**Review the security alerts**
+# <span id="page-86-0"></span>**Review the security alerts**
 
 #### **Important**
 
@@ -2145,9 +2145,9 @@ In this section, you completed the following tasks:
 - Turn on logging and learn where to download logs
 - Stream logs in real time
 - Learn where to set up alerts
-- <span id="page-95-1"></span>• Learn about remote debugging Azure App Service web apps.
+- Learn about remote debugging Azure App Service web apps.
 
-# Additional reading
+# <span id="page-95-1"></span>Additional reading
 
 - [Troubleshooting ASP.NET Core on Azure App Service and IIS](https://docs.microsoft.com/aspnet/core/test/troubleshoot-azure-iis)
 - [Common errors reference for Azure App Service and IIS with ASP.NET Core](https://docs.microsoft.com/aspnet/core/host-and-deploy/azure-iis-errors-reference)
