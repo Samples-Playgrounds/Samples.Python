@@ -30,6 +30,15 @@ sources = [
    f"{root}/Sadržaj.docx"
 ]
 
+def main():
+   for source in sources:
+      if source.endswith(".pdf"):
+         print(f"minecart <- source = {source}")
+         api.extract_tables_to_files(source)
+
+
+if __name__ == '__main__':
+    main()
 
 
 
