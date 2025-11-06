@@ -12,7 +12,7 @@ Cesar de la Torre Microsoft Corp.
 
 ![](_page_1_Picture_0.jpeg)
 
-### **EDITION v7.0**
+#### **EDITION v7.0**
 
 Refer [changelog](https://aka.ms/modernize-ebook-changelog) for the book updates and community contributions.
 
@@ -471,7 +471,7 @@ One of your migration options is to move your original relational database manag
 
 Currently, Microsoft Azure supports up to [331 different database servers](https://azuremarketplace.microsoft.com/marketplace/apps/category/databases?page=1&subcategories=databases-all) deployed as IaaS VMs. These include popular RDBMS like SQL Server, Oracle, MySQL, PostgreSQL, and IBM DB2, and many other NoSQL databases like MongoDB, Cassandra, DataStax, MariaDB, and Cloudera.
 
-### **Note**
+#### **Note**
 
 Although moving your RDBMS to an Azure VM might be the fastest way to migrate your data to the cloud (because it is IaaS), this approach requires a significant investment in your IT teams (database administrators and IT pros). Enterprise teams need to be able to set up and manage high availability, disaster recovery, and patching for SQL Server. This context also needs a customized environment, with full administrative rights.
 
@@ -739,7 +739,7 @@ For .NET (cross-platform for Linux and Windows), the tags would look like the fo
 | mcr.microsoft.com/dotnet/runtime:7.0                         | .NET runtime-only on Linux               |
 | mcr.microsoft.com/dotnet/runtime:7.0-<br>nanoserver-ltsc2022 | .NET runtime-only on Windows Nano Server |
 
-### **Multi-arch images**
+#### **Multi-arch images**
 
 Since 2017, Docker has had a feature called [multi-arch](https://github.com/moby/moby/issues/15866) images. .NET Docker images can use multi-arch tags. Your Dockerfile files no longer need to define the operating system that you are targeting. The multi-arch feature allows a single tag to be used across multiple machine configurations. For instance, with multi-arch, you can use one common tag: **mcr.microsoft.com/dotnet/runtime:7.0**. If you pull that tag from a Linux container environment, you get the Debian-based image. If you pull that tag from a Windows container environment, you get the Nano Server-based image.
 
@@ -755,7 +755,7 @@ Like Linux containers, Windows Server containers are managed by using Docker Eng
 
 Running a container on Windows with or without Hyper-V isolation is a run-time decision. You might choose to create the container with Hyper-V isolation initially, and at run time, choose to run it as a Windows Server container instead.
 
-### **Additional resources**
+#### **Additional resources**
 
 - **Windows Containers documentation** [https://learn.microsoft.com/virtualization/windowscontainers/](https://docs.microsoft.com/virtualization/windowscontainers/)
 - **Windows Containers fundamentals** [https://learn.microsoft.com/virtualization/windowscontainers/about/](https://docs.microsoft.com/virtualization/windowscontainers/about/)
@@ -797,7 +797,7 @@ Some Windows technologies are not supported by Windows Containers. In those case
 
 For more information, see the list of [Applications not supported by Windows containers.](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/lift-shift-to-containers#applications-not-supported-by-containers)
 
-### **Additional resources**
+#### **Additional resources**
 
 • **Virtual machines and containers in Azure**
 
@@ -874,7 +874,7 @@ However, this recommendation should be taken with a pinch of salt, as the produc
 
 After a deeper analysis of the application's needs, the product selected could be different. But, as a starting point, it is good to have initial guidance from where you can start evaluating and testing based on certain priority.
 
-### **Additional resources**
+#### **Additional resources**
 
 • **Choose an Azure compute service for your application**
 
@@ -910,7 +910,7 @@ When implementing HTTP retries and circuit breakers, the recommendation for .NET
 
 To learn how to implement strategies for handling partial failures in the cloud, see the following references.
 
-### **Additional resources**
+#### **Additional resources**
 
 • **Implementing resilient communication to handle partial failure**
 
@@ -966,7 +966,7 @@ You can use the Log Analytics Container Monitoring solution to:
 
 • View centralized CPU, memory, storage, and network usage, and performance information, for containers.
 
-### **Additional resources**
+#### **Additional resources**
 
 • **Overview of monitoring in Microsoft Azure**
 
@@ -1031,7 +1031,7 @@ scenarios, like edge and unconnected environments, or meeting specific security 
 
 Figure 4-13 shows an overview of the true hybrid cloud platform that Microsoft offers.
 
-![](_page_52_Figure_2.jpeg)
+![](_page_52_Picture_2.jpeg)
 
 *Figure 4-13. Microsoft hybrid cloud platform with Azure Stack and Azure*
 
@@ -1040,17 +1040,17 @@ Azure Stack is offered in two deployment options, to meet your needs:
 - Azure Stack integrated systems
 - Azure Stack Development Kit
 
-### **Azure Stack integrated systems**
+#### **Azure Stack integrated systems**
 
 Azure Stack integrated systems are offered through a partnership of Microsoft and hardware partners. The partnership creates a solution that offers cloud-paced innovation that is balanced with simplicity in management. Because Azure Stack is offered as an integrated system of hardware and software, you get the right amount of flexibility and control, while still adopting innovation from the cloud. Azure Stack integrated systems range in size from 4 to 12 nodes, and are jointly supported by the hardware partner and Microsoft. Use Azure Stack integrated systems to implement new scenarios for your production workloads.
 
-### **Azure Stack Development Kit**
+#### **Azure Stack Development Kit**
 
 Microsoft Azure Stack Development Kit is a single-node deployment of Azure Stack, which you can use to evaluate and learn about Azure Stack. You can also use Azure Stack Development Kit as a
 
 developer environment, where you can develop using APIs and tooling that are consistent with Azure. Azure Stack Development Kit is not intended to be used as a production environment.
 
-### **Additional resources**
+#### **Additional resources**
 
 • **Azure hybrid cloud**
 
@@ -1072,9 +1072,7 @@ developer environment, where you can develop using APIs and tooling that are con
 
 <https://azure.microsoft.com/pricing/hybrid-benefit/>
 
-# <span id="page-54-0"></span>Walkthroughs and technical get started overview
-
-To limit the size of this e-book, additional technical documentation and the full walkthroughs were made available in a GitHub repository. The online series of walkthroughs that is described in this chapter covers the step-by-step setup of the multiple environments that are based on Windows Containers, and deployment to Azure.
+<span id="page-54-0"></span>To limit the size of this e-book, additional technical documentation and the full walkthroughs were made available in a GitHub repository. The online series of walkthroughs that is described in this chapter covers the step-by-step setup of the multiple environments that are based on Windows Containers, and deployment to Azure.
 
 The following sections explain what each walkthrough is about, its objectives and high-level vision, and provides a diagram of the tasks that are involved. You can get the walkthroughs themselves in the *eShopModernizing* apps GitHub repo wiki at [https://github.com/dotnet](https://github.com/dotnet-architecture/eShopModernizing/wiki)[architecture/eShopModernizing/wiki.](https://github.com/dotnet-architecture/eShopModernizing/wiki)
 
@@ -1210,13 +1208,13 @@ Several scenarios are covered in this walkthrough.
 
 *Figure 5-4. Deploy to an Azure VM from a dev PC through a Docker Engine connection*
 
-### **Scenario B: Deploy to an Azure VM through a Docker Registry**
+#### **Scenario B: Deploy to an Azure VM through a Docker Registry**
 
 ![](_page_61_Figure_7.jpeg)
 
 *Figure 5-5. Deploy to an Azure VM through a Docker Registry*
 
-### **Scenario C: Deploy to an Azure VM from CI/CD pipelines in Azure DevOps Services**
+#### **Scenario C: Deploy to an Azure VM from CI/CD pipelines in Azure DevOps Services**
 
 ![](_page_62_Figure_2.jpeg)
 
@@ -1297,7 +1295,7 @@ The goal of this walkthrough is to learn how to deploy a Windows Container–bas
 
 # <span id="page-65-1"></span>**Scenarios**
 
-### **Scenario A: Deploy directly to a Kubernetes cluster from a dev environment**
+#### **Scenario A: Deploy directly to a Kubernetes cluster from a dev environment**
 
 ![](_page_65_Figure_7.jpeg)
 
