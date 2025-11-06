@@ -11,17 +11,12 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
     rendered = converter(source)
     result_md, _, images = text_from_rendered(rendered)
 
-    directory = f"{source}.hwaifs/text/python/"
+    directory = f"{source}.hwaifs/text/python/marker/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file
-    with open(f"{directory}/marker.md", "w") as f:
+    with open(f"{directory}/content.md", "w") as f:
         f.write(result_md)
-
-    directory = f"{source}.hwaifs/images/python/marker/"
-    Path(directory).mkdir(parents=True, exist_ok=True)
-
-    # print(images)
 
     return result_md
 
