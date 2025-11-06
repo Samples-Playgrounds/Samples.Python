@@ -11,11 +11,11 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
         for page in pdf.pages:
             result_txt = result_txt + page.extract_text()
 
-    directory = f"{source}.hwaifs/text/python/"
+    directory = f"{source}.hwaifs/text/python/pdfplumber/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file
-    with open(f"{directory}/pdfplumber.txt", "w") as f:
+    with open(f"{directory}/content.txt", "w") as f:
         f.write(result_txt)
 
     return result_txt
@@ -45,11 +45,11 @@ def extract_markdown_to_file_from_pdf_document (source: str) -> str:
             all_text.append(page_text)
         pdf.close()
 
-    directory = f"{source}.hwaifs/text/python/"
+    directory = f"{source}.hwaifs/text/python/pdfplumber/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file
-    with open(f"{directory}/pdfplumber.md", "w") as f:
+    with open(f"{directory}/content.md", "w") as f:
         f.write(result_txt)
 
     return "\n".join(all_text)
