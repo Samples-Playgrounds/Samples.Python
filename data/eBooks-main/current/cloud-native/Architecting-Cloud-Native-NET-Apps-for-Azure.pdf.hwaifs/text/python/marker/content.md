@@ -122,7 +122,7 @@ This guide is available both in [PDF](https://dotnet.microsoft.com/download/e-bo
 
 | Azure App Configuration                                                  | 33 |
 |--------------------------------------------------------------------------|----|
-| Azure Key Vault                                                          | 32 |
+| Azure Key Vault                                                          | 34 |
 | Configuration in eShop                                                   | 34 |
 | References                                                               | 34 |
 | Scaling cloud-native applications                                        | 36 |
@@ -151,8 +151,8 @@ This guide is available both in [PDF](https://dotnet.microsoft.com/download/e-bo
 | Azure Bridge to Kubernetes                                               | 53 |
 | Scaling containers and serverless applications                           | 53 |
 | The simple solution: scaling up                                          | 53 |
-| Scaling out cloud-native apps                                            | 52 |
-| Other container deployment options                                       | 51 |
+| Scaling out cloud-native apps                                            | 54 |
+| Other container deployment options                                       | 55 |
 
 | When does it make sense to deploy to App Service for Containers? | 55 |
 |------------------------------------------------------------------|----|
@@ -1572,7 +1572,7 @@ What are the options?
 
 To keep things simple, a front-end client could *directly communicate* with the back-end microservices, shown in Figure 4-2.
 
-![](_page_69_Picture_5.jpeg)
+![](_page_69_Figure_5.jpeg)
 
 *Figure 4-2. Direct client to service communication*
 
@@ -1980,7 +1980,7 @@ Figure 4-21 shows the skeleton gRPC service generated from the built-in scaffold
 
 In the previous figure, note the proto description file and service code. As you'll see shortly, Visual Studio generates additional configuration in both the Startup class and underlying project file.
 
-#### <span id="page-91-0"></span>**gRPC usage**
+### <span id="page-91-0"></span>**gRPC usage**
 
 Favor gRPC for the following scenarios:
 
@@ -2399,13 +2399,13 @@ Internally, Cosmos stores the data in a simple struct format made up of primitiv
 
 In the previous table, note the [Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction) option. This API is an evolution of Azure Table Storage. Both share the same underlying table model, but the Cosmos DB Table API adds premium enhancements not available in the Azure Storage API. The following table contrasts the features.
 
-| Feature                                                            | Azure Table Storage                                                                                                                  | Azure Cosmos DB                                                                |
-|--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| Latency                                                            | Fast                                                                                                                                 | Single-digit millisecond latency for reads and<br>writes anywhere in the world |
-| Throughp<br>ut                                                     | Limit of 20,000 operations per table<br>Unlimited operations per table                                                               |                                                                                |
-| Global<br>Distributio<br>n                                         | Single region with optional single<br>Turnkey distributions to all regions with<br>secondary read region<br>automatic failover       |                                                                                |
-| Indexing<br>Available for partition and row key<br>properties only |                                                                                                                                      | Automatic indexing of all properties                                           |
-| Pricing                                                            | Optimized for cold workloads (low<br>Optimized for hot workloads (high<br>throughput : storage ratio)<br>throughput : storage ratio) |                                                                                |
+| Feature                    | Azure Table Storage                                                                                                                  | Azure Cosmos DB                                                                |
+|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| Latency                    | Fast                                                                                                                                 | Single-digit millisecond latency for reads and<br>writes anywhere in the world |
+| Throughp<br>ut             | Limit of 20,000 operations per table<br>Unlimited operations per table                                                               |                                                                                |
+| Global<br>Distributio<br>n | Single region with optional single<br>Turnkey distributions to all regions with<br>secondary read region<br>automatic failover       |                                                                                |
+| Indexing                   | Available for partition and row key<br>Automatic indexing of all properties<br>properties only                                       |                                                                                |
+| Pricing                    | Optimized for cold workloads (low<br>Optimized for hot workloads (high<br>throughput : storage ratio)<br>throughput : storage ratio) |                                                                                |
 
 Microservices that consume Azure Table storage can easily migrate to the Cosmos DB Table API. No code changes are required.
 
@@ -3297,7 +3297,7 @@ IdentityServerConstants.ExternalCookieAuthenticationScheme;
 
 *Figure 8-2. Configuring IdentityServer.*
 
-### <span id="page-155-0"></span>**JavaScript clients**
+## <span id="page-155-0"></span>**JavaScript clients**
 
 Many cloud-native applications use server-side APIs and rich client single page applications (SPAs) on the front end. IdentityServer ships a [JavaScript client](https://docs.duendesoftware.com/identityserver/v6/quickstarts/js_clients/) (oidc-client.js) via NPM that can be added to SPAs to enable them to use IdentityServer for sign in, sign out, and token-based authentication of web APIs.
 
