@@ -11,16 +11,16 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
 
     result_txt = "\n\n".join([str(el) for el in elements])
 
-    directory = f"{source}.hwaifs/text/python/"
+    directory = f"{source}.hwaifs/text/python/unstructured/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file
-    with open(f"{directory}unstructured.txt", "w") as f:
+    with open(f"{directory}content.txt", "w") as f:
         f.write(result_txt) 
 
     elements_to_json(
                         elements=elements, 
-                        filename=f"{directory}unstructured.json",
+                        filename=f"{directory}contents.json",
                     )
 
     return result_txt
