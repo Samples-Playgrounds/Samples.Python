@@ -22,6 +22,10 @@ def extract_tables_to_files_from_pdf_document (source: str) -> str:
         #                 output_format="csv",
         #                 pages='all'
         #                 )
+        
+        # ValueError: could not convert string to float: 'False'
+        # df = df.replace('', '0').astype(float)
+        df = df.fillna('')
 
         element_md_filename = f"{directory}/p-t{i + 1}.md"
         df.to_markdown(element_md_filename)
