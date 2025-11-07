@@ -22,6 +22,12 @@ python -m venv .venv
 source .venv/bin/activate
 pip install tabula-py
 pip install tabula-py[jpype]
+pip install tabula-py
+pip install tabula-py[jpype]
+pip install jpype1
+pip install pandas
+pip install tabulate
+pip install openpyxl
 pip install --upgrade pip
 python main.py
 cd -
