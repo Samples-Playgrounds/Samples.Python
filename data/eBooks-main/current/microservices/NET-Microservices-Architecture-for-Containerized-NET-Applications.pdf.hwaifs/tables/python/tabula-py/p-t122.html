@@ -1,0 +1,78 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>public async Task&lt;IActionResult&gt; UpdateProduct(</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>[FromBody]CatalogItem productToUpdate)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>// Other code ...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>var oldPrice = catalogItem.Price;</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>var raiseProductPriceChangedEvent = oldPrice != productToUpdate.Price;</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>// Update current product</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>catalogItem = productToUpdate;</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>// Save product's data and publish integration event through the Event Bus</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>// if price has changed</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>if (raiseProductPriceChangedEvent)</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>//Create Integration Event to be published through the Event Bus</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>var priceChangedEvent = new ProductPriceChangedIntegrationEvent(</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>catalogItem.Id, productToUpdate.Price, oldPrice);</td>
+    </tr>
+  </tbody>
+</table>

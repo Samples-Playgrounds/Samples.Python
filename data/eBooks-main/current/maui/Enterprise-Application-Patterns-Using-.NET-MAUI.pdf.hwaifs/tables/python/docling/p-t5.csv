@@ -1,0 +1,3 @@
+,Folder,Description
+0,Animations,Contains classes that enable animations to be consumed in XAML.
+1,Behaviors,Contains behaviors that are exposed to view classes.

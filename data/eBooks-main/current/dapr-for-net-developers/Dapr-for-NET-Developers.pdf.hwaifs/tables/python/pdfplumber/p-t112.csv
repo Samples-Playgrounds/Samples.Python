@@ -1,0 +1,46 @@
+,0
+0,kind: Deployment
+1,apiVersion: apps/v1
+2,metadata:
+3,name: zipkin
+4,namespace: dapr-trafficcontrol
+5,labels:
+6,service: zipkin
+7,spec:
+8,replicas: 1
+9,selector:
+10,matchLabels:
+11,service: zipkin
+12,template:
+13,metadata:
+14,labels:
+15,service: zipkin
+16,spec:
+17,containers:
+18,- name: zipkin
+19,image: openzipkin/zipkin-slim
+20,imagePullPolicy: IfNotPresent
+21,ports:
+22,- name: http
+23,containerPort: 9411
+24,protocol: TCP
+25,
+26,---
+27,
+28,kind: Service
+29,apiVersion: v1
+30,metadata:
+31,name: zipkin
+32,namespace: dapr-trafficcontrol
+33,labels:
+34,service: zipkin
+35,spec:
+36,type: NodePort
+37,ports:
+38,- port: 9411
+39,targetPort: 9411
+40,nodePort: 32411
+41,protocol: TCP
+42,name: zipkin
+43,selector:
+44,service: zipkin

@@ -1,0 +1,8 @@
+,0
+0,sqldata:
+1,image: mcr.microsoft.com/mssql/server:2017-latest
+2,environment:
+3,- SA_PASSWORD=Pass@word
+4,- ACCEPT_EULA=Y
+5,ports:
+6,"- ""5434:1433"""

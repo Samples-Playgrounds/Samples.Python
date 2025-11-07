@@ -1,0 +1,18 @@
+,0
+0,apiVersion: dapr.io/v1alpha1
+1,kind: Component
+2,metadata:
+3,name: eshop-basket-statestore
+4,namespace: eshop
+5,spec:
+6,type: state.redis
+7,version: v1
+8,metadata:
+9,- name: redisHost
+10,value: localhost:6379
+11,- name: redisPassword
+12,secretKeyRef:
+13,name: eShopRedisPassword
+14,key: eShopRedisPassword
+15,auth:
+16,secretStore: eshop-local-secret-store

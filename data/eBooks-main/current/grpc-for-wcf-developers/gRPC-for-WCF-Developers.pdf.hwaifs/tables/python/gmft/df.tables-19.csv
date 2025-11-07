@@ -1,0 +1,5 @@
+,Metric type,Description
+0,Counter,"Tracks how often something happens, such as requests and errors."
+1,Gauge,"Records a single value that changes over time, such as active connections."
+2,Histogram,"Measures a distribution of values across arbitrary limits. For example, a histogram can track dataset size, counting how many contained <10 records, how many contained 11-100 records, how many contained 101-1000 records, and how many contained >1000 records."
+3,Meter,Measures the rate at which an event occurs in various time spans.

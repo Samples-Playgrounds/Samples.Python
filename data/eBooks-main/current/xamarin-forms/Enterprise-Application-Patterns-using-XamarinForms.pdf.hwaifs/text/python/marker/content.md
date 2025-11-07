@@ -145,13 +145,13 @@ The guide provides architectural guidance for developing adaptable, maintainable
 
 The guide comes with source code for the [eShopOnContainers mobile app,](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Mobile) and source code for the [eShopOnContainers reference app.](https://github.com/dotnet-architecture/eShopOnContainers) The eShopOnContainers mobile app is a cross-platform enterprise app developed using Xamarin.Forms, which connects to a series of containerized microservices known as the eShopOnContainers reference app. However, the eShopOnContainers mobile app can be configured to consume data from mock services for those who wish to avoid deploying the containerized microservices.
 
-### **What's left out of this guide's scope**
+#### **What's left out of this guide's scope**
 
 This guide is aimed at readers who are already familiar with Xamarin.Forms. For a detailed introduction to Xamarin.Forms, see th[e Xamarin.Forms documentation](https://developer.xamarin.com/guides/xamarin-forms/) on the Xamarin Developer Center, and [Creating Mobile Apps with Xamarin.Forms.](https://aka.ms/xamebook)
 
 The guide is complementary to [.NET Microservices: Architecture for Containerized .NET Applications,](https://aka.ms/microservicesebook) which focuses on developing and deploying containerized microservices. Other guides worth reading include [Architecting and Developing Modern Web Applications with ASP.NET Core and Microsoft](http://aka.ms/WebAppEbook)  [Azure,](http://aka.ms/WebAppEbook) [Containerized Docker Application Lifecycle with Microsoft Platform and Tools,](http://aka.ms/dockerlifecycleebook) and [Microsoft](http://aka.ms/MobAppDev/StndPDF)  [Platform and Tools for Mobile App Development.](http://aka.ms/MobAppDev/StndPDF)
 
-### **Who should use this guide**
+#### **Who should use this guide**
 
 The audience for this guide is mainly developers and architects who would like to learn how to architect and implement cross-platform enterprise apps using Xamarin.Forms.
 
@@ -212,7 +212,7 @@ This guide includes a sample application, eShopOnContainers, that's an online st
 - Viewing the user's order history.
 - Configuration of settings.
 
-### **Sample application architecture**
+#### **Sample application architecture**
 
 Figure 1-1 provides a high-level overview of the architecture of the sample application.
 
@@ -296,7 +296,7 @@ The eShopOnContainers mobile app solution organizes the source code and other re
 
 The classes from the eShopOnContainers mobile app can be re-used in any Xamarin.Forms app with little or no modification.
 
-## **eShopOnContainers.Core project**
+#### **eShopOnContainers.Core project**
 
 The eShopOnContainers.Core PCL project contains the following folders:
 
@@ -318,7 +318,7 @@ The eShopOnContainers.Core PCL project contains the following folders:
 | ViewModels  | Contains the application logic that's exposed to pages.                                                                |  |
 | Views       | Contains the pages for the app.                                                                                        |  |
 
-## **Platform projects**
+#### **Platform projects**
 
 The platform projects contain effect implementations, custom renderer implementations, and other platform-specific resources.
 
@@ -406,7 +406,7 @@ The binding of views to a property in a data source should be the view's princip
 
 The following sections discuss the main approaches to connecting view models to views.
 
-### **Creating a view model declaratively**
+#### **Creating a view model declaratively**
 
 The simplest approach is for the view to declaratively instantiate its corresponding view model in XAML. When the view is constructed, the corresponding view model object will also be constructed. This approach is demonstrated in the following code example:
 
@@ -423,7 +423,7 @@ When the ContentPage is created, an instance of the LoginViewModel is automatica
 
 This declarative construction and assignment of the view model by the view has the advantage that it's simple, but has the disadvantage that it requires a default (parameter-less) constructor in the view model.
 
-## **Creating a view model programmatically**
+#### **Creating a view model programmatically**
 
 A view can have code in the code-behind file that results in the view model being assigned to its BindingContext property. This is often accomplished in the view's constructor, as shown in the following code example:
 
@@ -437,11 +437,11 @@ public LoginView()
 
 The programmatic construction and assignment of the view model within the view's code-behind has the advantage that it's simple. However, the main disadvantage of this approach is that the view needs to provide the view model with any required dependencies. Using a dependency injection container can help to maintain loose coupling between the view and view model. For more information, se[e Dependency injection.](#page-24-0)
 
-### **Creating a view defined as a data template**
+#### **Creating a view defined as a data template**
 
 A view can be defined as a data template and associated with a view model type. Data templates can be defined as resources, or they can be defined inline within the control that will display the view model. The content of the control is the view model instance, and the data template is used to visually represent it. This technique is an example of a situation in which the view model is instantiated first, followed by the creation of the view.
 
-### <span id="page-17-0"></span>**Automatically creating a view model with a view model locator**
+#### <span id="page-17-0"></span>**Automatically creating a view model with a view model locator**
 
 A view model locator is a custom class that manages the instantiation of view models and their association to views. In the eShopOnContainers mobile app, the ViewModelLocator class has an attached property, AutoWireViewModel, that's used to associate view models with views. In the view's XAML, this attached property is set to true to indicate that the view model should be automatically connected to the view, as shown in the following code example:
 
@@ -1012,7 +1012,7 @@ In addition, the INavigationService interface specifies that an implementing cla
 
 **Note:** An INavigationService interface would usually also specify a GoBackAsync method, which is used to programmatically return to the previous page in the navigation stack. However, this method is missing from the eShopOnContainers mobile app because it's not required.
 
-## **Creating the NavigationService instance**
+### **Creating the NavigationService instance**
 
 The NavigationService class, which implements the INavigationService interface, is registered as a singleton with the Autofac dependency injection container, as demonstrated in the following code example:
 
@@ -1030,7 +1030,7 @@ This returns a reference to the NavigationService object that's stored in the Au
 
 The ViewModelBase class stores the NavigationService instance in a NavigationService property, of type INavigationService. Therefore, all view model classes, which derive from the ViewModelBase class, can use the NavigationService property to access the methods specified by the INavigationService interface. This avoids the overhead of injecting the NavigationService object from the Autofac dependency injection container into each view model class.
 
-### **Handling navigation requests**
+#### **Handling navigation requests**
 
 Xamarin.Forms provides the NavigationPage class, which implements a hierarchical navigation experience in which the user is able to navigate through pages, forwards and backwards, as desired. For more information about hierarchical navigation, see [Hierarchical Navigation](https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/navigation/hierarchical/) on the Xamarin Developer Center.
 
@@ -1138,7 +1138,7 @@ Page caching results in memory consumption for views that are not currently disp
 
 After the view is created and navigated to, the InitializeAsync method of the view's associated view model is executed. For more information, see [Passing parameters during navigation.](#page-39-0)
 
-## <span id="page-38-0"></span>**Navigating when the app is launched**
+#### <span id="page-38-0"></span>**Navigating when the app is launched**
 
 When the app is launched, the InitNavigation method in the App class is invoked. The following code example shows this method:
 
@@ -1170,7 +1170,7 @@ The MainView is navigated to if the app has a cached access token, which is used
 
 For more information about the Autofac dependency injection container, see [Introduction to](#page-24-1)  [dependency injection.](#page-24-1)
 
-### <span id="page-39-0"></span>**Passing parameters during navigation**
+#### <span id="page-39-0"></span>**Passing parameters during navigation**
 
 One of the NavigateToAsync methods, specified by the INavigationService interface, enables navigation data to be specified as an argument that's passed to the view model being navigated to, where it's typically used to perform initialization.
 
@@ -1205,7 +1205,7 @@ public override async Task InitializeAsync(object navigationData)
 
 This method retrieves the Order instance that was passed into the view model during the navigation operation, and uses it to retrieve the full order details from the OrderService instance.
 
-## <span id="page-40-0"></span>**Invoking navigation using behaviors**
+#### <span id="page-40-0"></span>**Invoking navigation using behaviors**
 
 Navigation is usually triggered from a view by a user interaction. For example, the LoginView performs navigation following successful authentication. The following code example shows how the navigation is invoked by a behavior:
 
@@ -1236,7 +1236,7 @@ private async Task NavigateAsync(string url)
 
 This method invokes navigation to the MainViewModel, and following navigation, removes the LoginView page from the navigation stack.
 
-## **Confirming or cancelling navigation**
+### **Confirming or cancelling navigation**
 
 An app might need to interact with the user during a navigation operation, so that the user can confirm or cancel navigation. This might be necessary, for example, when the user attempts to navigate before having fully completed a data entry page. In this situation, an app should provide a notification that allows the user to navigate away from the page, or to cancel the navigation operation before it occurs. This can be achieved in a view model class by using the response from a notification to control whether or not navigation is invoked.
 
@@ -1376,7 +1376,7 @@ This method adds the IsNotNullOrEmptyRule<T> validation rule to the Validations 
 
 The validation approach used in the eShopOnContainers mobile app can manually trigger validation of a property, and automatically trigger validation when a property changes.
 
-### **Triggering validation manually**
+#### **Triggering validation manually**
 
 Validation can be triggered manually for a view model property. For example, this occurs in the eShopOnContainers mobile app when the user taps the **Login** button on the LoginView, when using mock services. The command delegate calls the MockSignInAsync method in the LoginViewModel, which invokes validation by executing the Validate method, which is shown in the following code example:
 
@@ -1417,7 +1417,7 @@ public bool Validate()
 
 This method clears the Errors collection, and then retrieves any validation rules that were added to the object's Validations collection. The Check method for each retrieved validation rule is executed, and the ValidationMessage property value for any validation rule that fails to validate the data is added to the Errors collection of the ValidatableObject<T> instance. Finally, the IsValid property is set, and its value is returned to the calling method, indicating whether validation succeeded or failed.
 
-### **Triggering validation when properties change**
+#### **Triggering validation when properties change**
 
 Validation is also automatically triggered whenever a bound property changes. For example, when a two-way binding in the LoginView sets the UserName or Password property, validation is triggered. The following code example demonstrates how this occurs:
 
@@ -1444,7 +1444,7 @@ The eShopOnContainers mobile app notifies the user of any validation errors by h
 
 **Figure 6-2:** Displaying validation errors during login
 
-### **Highlighting a control that contains invalid data**
+#### **Highlighting a control that contains invalid data**
 
 The LineColorBehavior attached behavior is used to highlight Entry controls where validation errors have occurred. The following code example shows how the LineColorBehavior attached behavior is attached to an Entry control:
 
@@ -1627,7 +1627,7 @@ The line in the Entry control will remain red while the entered data is invalid,
 
 For more information about Triggers, se[e Triggers](https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/triggers/) on the Xamarin Developer Center.
 
-## **Displaying error messages**
+#### **Displaying error messages**
 
 The UI displays validation error messages in Label controls below each control whose data failed validation. The following code example shows the Label that displays a validation error message if the user has not entered a valid username:
 
@@ -1812,7 +1812,7 @@ Developing client-server applications has resulted in a focus on building tiered
 
 Particularly concerning in the age of the cloud, is that individual components can't be easily scaled. A monolithic application contains domain-specific functionality, and is typically divided by functional layers such as front end, business logic, and data storage. A monolithic application is scaled by cloning the entire application onto multiple machines, as illustrated in Figure 8-1.
 
-![](_page_57_Picture_5.jpeg)
+![](_page_57_Picture_4.jpeg)
 
 **Figure 8-1**: Monolithic application scaling approach
 
@@ -1822,7 +1822,7 @@ Microservices offer a different approach to application development and deployme
 
 Microservices can scale-out independently, as compared to giant monolithic applications that scale together. This means that a specific functional area, that requires more processing power or network bandwidth to support demand, can be scaled rather than unnecessarily scaling-out other areas of the application. Figure 8-2 illustrates this approach, where microservices are deployed and scaled independently, creating instances of services across machines.
 
-![](_page_58_Picture_3.jpeg)
+![](_page_58_Figure_3.jpeg)
 
 **Figure 8-2**: Microservices application scaling approach
 
@@ -1914,8 +1914,6 @@ An event bus allows publish-subscribe communication between microservices, witho
 
 ![](_page_63_Figure_0.jpeg)
 
-**Figure 8-6:** Publish-subscribe with an event bus
-
 From an application perspective, the event bus is simply a publish-subscribe channel exposed via an interface. However, the way the event bus is implemented can vary. For example, an event bus implementation could use RabbitMQ, Azure Service Bus, or other service buses such as NServiceBus and MassTransit. Figure 8-7 shows how an event bus is used in the eShopOnContainers reference application.
 
 ![](_page_63_Figure_3.jpeg)
@@ -1925,8 +1923,6 @@ From an application perspective, the event bus is simply a publish-subscribe cha
 The eShopOnContainers event bus, implemented using RabbitMQ, provides one-to-many asynchronous publish-subscribe functionality. This means that after publishing an event, there can be multiple subscribers listening for the same event. Figure 8-9 illustrates this relationship.
 
 ![](_page_64_Figure_0.jpeg)
-
-**Figure 8-9**: One-to-many communication
 
 This one-to-many communication approach uses events to implement business transactions that span multiple services, ensuring eventual consistency between the services. An eventual-consistent transaction consists of a series of distributed steps. Therefore, when the user-profile microservice receives the UpdateUser command, it updates the user's details in its database and publishes the UserUpdated event to the event bus. Both the basket microservice and the ordering microservice have subscribed to receive this event, and in response update their buyer information in their respective databases.
 
@@ -1954,7 +1950,7 @@ Authentication is required when an application needs to know the identity of the
 
 For authentication scenarios that make use of a local user data store, and that persist identity information between requests via cookies (as is typical in ASP.NET MVC web applications), ASP.NET Core Identity is a suitable solution. However, cookies are not always a natural means of persisting and transmitting data. For example, an ASP.NET Core web application that exposes RESTful endpoints that are accessed from a mobile app will typically need to use bearer token authentication, since cookies can't be used in this scenario. However, bearer tokens can easily be retrieved and included in the authorization header of web requests made from the mobile app.
 
-### **Issuing bearer tokens using IdentityServer 4**
+# **Issuing bearer tokens using IdentityServer 4**
 
 [IdentityServer 4](https://github.com/IdentityServer/IdentityServer4) is an open source OpenID Connect and OAuth 2.0 framework for ASP.NET Core, which can be used for many authentication and authorization scenarios including issuing security tokens for local ASP.NET Core Identity users.
 
@@ -1977,7 +1973,7 @@ The eShopOnContainers mobile app communicates with the identity microservice, wh
 
 **Note**: A client must be registered with IdentityServer before it can request tokens.
 
-## **Adding IdentityServer to a web application**
+#### **Adding IdentityServer to a web application**
 
 In order for an ASP.NET Core web application to use IdentityServer 4, it must be added to the web application's Visual Studio solution. For more information, see [Setup and Overview](https://identityserver4.readthedocs.io/en/release/quickstarts/0_overview.html) in the IdentityServer documentation.
 
@@ -2029,7 +2025,7 @@ IdentityServer 4's APIs allow for configuring IdentityServer from an in-memory l
 
 For information about configuring IdentityServer to use ASP.NET Core Identity, see [Using ASP.NET](https://identityserver4.readthedocs.io/en/release/quickstarts/6_aspnet_identity.html)  [Core Identity](https://identityserver4.readthedocs.io/en/release/quickstarts/6_aspnet_identity.html) in the IdentityServer documentation.
 
-#### <span id="page-68-0"></span>**Configuring API resources**
+### <span id="page-68-0"></span>**Configuring API resources**
 
 When configuring API resources, the AddInMemoryApiResources method expects an IEnumerable<ApiResource> collection. The following code example shows the GetApis method that provides this collection in the eShopOnContainers reference application:
 
@@ -2130,7 +2126,7 @@ This configuration specifies data for the following properties:
 - AllowedScopes: Specifies the resources the client has access to. By default, a client has no access to any resources.
 - AllowOfflineAccess: Specifies whether the client can request refresh tokens.
 
-#### <span id="page-70-0"></span>**Configuring the authentication flow**
+### <span id="page-70-0"></span>**Configuring the authentication flow**
 
 The authentication flow between a client and IdentityServer can be configured by specifying the grant types in the Client.AllowedGrantTypes property. The OpenID Connect and OAuth 2.0 specifications define a number of authentication flows, including:
 
@@ -2144,7 +2140,7 @@ The hybrid authentication flow mitigates a number of attacks that apply to the b
 
 For more information about authentication flows, see [Grant Types](https://identityserver4.readthedocs.io/en/release/topics/grant_types.html) in the IdentityServer 4 documentation.
 
-## **Performing authentication**
+#### **Performing authentication**
 
 For IdentityServer to issue tokens on behalf of a user, the user must sign-in to IdentityServer. However, IdentityServer doesn't provide a user interface or database for authentication. Therefore, in the eShopOnContainers reference application, ASP.NET Core Identity is used for this purpose.
 
@@ -2332,7 +2328,7 @@ IdentityServer can be integrated into the authorization workflow so that the acc
 
 The eShopOnContainers mobile app communicates with the identity microservice and requests an access token as part of the authentication process. The access token is then forwarded to the APIs exposed by the ordering and basket microservices as part of the access requests. Access tokens contain information about the client, and the user. APIs then use that information to authorize access to their data. For information about how to configure IdentityServer to protect APIs, see [Configuring](#page-68-0)  [API resources.](#page-68-0)
 
-## **Configuring IdentityServer to perform authorization**
+### **Configuring IdentityServer to perform authorization**
 
 To perform authorization with IdentityServer, its authorization middleware must be added to the web application's HTTP request pipeline. The middleware is added in the ConfigureAuth method in the web application's Startup class, which is invoked from the Configure method, and is demonstrated in the following code example from the eShopOnContainers reference application:
 
@@ -2353,7 +2349,7 @@ This method ensures that the API can only be accessed with a valid access token.
 
 **Note:** IdentityServer's authorization middleware must be added to the web application's HTTP request pipeline before adding MVC with app.UseMvc() or app.UseMvcWithDefaultRoute().
 
-#### **Making access requests to APIs**
+# **Making access requests to APIs**
 
 When making requests to the ordering and basket microservices, the access token, obtained from IdentityServer during the authentication process, must be included in the request, as shown in the following code example:
 
@@ -2676,7 +2672,7 @@ The eShopOnContainers mobile app uses a private cache, where data is held locall
 
 Ensure that data is maintained in the original data store as well as the cache. The chances of losing data are then minimized if the cache becomes unavailable.
 
-#### **Managing data expiration**
+# **Managing data expiration**
 
 It's impractical to expect that cached data will always be consistent with the original data. Data in the original data store might change after it's been cached, causing the cached data to become stale. Therefore, apps should implement a strategy that helps to ensure that the data in the cache is as upto-date as possible, but can also detect and handle situations that arise when the data in the cache has become stale. Most caching mechanisms enable the cache to be configured to expire data, and hence reduce the period for which data might be out of date.
 
@@ -2688,7 +2684,7 @@ When cached data expires, it should be removed from the cache, and the app must 
 
 It's also possible that a cache might fill up if data is allowed to remain for too long a period. Therefore, requests to add new items to the cache might be required to remove some items in a process known as *eviction*. Caching services typically evict data on a least-recently-used basis. However, there are other eviction policies, including most-recently-used, and first-in-first-out. For more information, see [Caching Guidance](https://docs.microsoft.com/en-us/azure/architecture/best-practices/caching) on Microsoft Docs.
 
-## <span id="page-88-0"></span>**Caching images**
+### <span id="page-88-0"></span>**Caching images**
 
 The eShopOnContainers mobile app consumes remote product images that benefit from being cached. These images are displayed by the Image control, and the CachedImage control provided by th[e FFImageLoading](https://www.nuget.org/packages/Xamarin.FFImageLoading.Forms/) library.
 
@@ -2737,7 +2733,7 @@ Transient faults can have a huge impact on the perceived quality of an app, even
 
 This transient fault handling can be achieved by wrapping all attempts to access a remote service in code that implements the retry pattern.
 
-## **Retry pattern**
+#### **Retry pattern**
 
 If an app detects a failure when it tries to send a request to a remote service, it can handle the failure in any of the following ways:
 
@@ -2761,7 +2757,7 @@ The eShopOnContainers reference application does implement the retry pattern. Fo
 
 For more information about the retry pattern, see the [Retry](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry) pattern on Microsoft Docs.
 
-## <span id="page-90-0"></span>**Circuit breaker pattern**
+### <span id="page-90-0"></span>**Circuit breaker pattern**
 
 In some situations, faults can occur due to anticipated events that take longer to fix. These faults can range from a partial loss of connectivity to the complete failure of a service. In these situations, it's pointless for an app to retry an operation that's unlikely to succeed, and instead should accept that the operation has failed and handle this failure accordingly.
 
@@ -2849,7 +2845,7 @@ The unit tests included with the eShopOnContainers mobile app are fact tests, an
 
 **Note:** xUnit tests are executed by a test runner. To execute the test runner, run the eShopOnContainers.TestRunner project for the required platform.
 
-#### **Testing asynchronous functionality**
+# **Testing asynchronous functionality**
 
 When implementing the MVVM pattern, view models usually invoke operations on services, often asynchronously. Tests for code that invokes these operations typically use mocks as replacements for the actual services. The following code example demonstrates testing asynchronous functionality by passing a mock service into a view model:
 
@@ -2869,7 +2865,7 @@ This unit test checks that the Order property of the OrderDetailViewModel instan
 
 When the OrderDetailViewModel instance is created, it expects an OrderService instance to be specified as an argument. However, the OrderService retrieves data from a web service. Therefore, an OrderMockService instance, which is a mock version of the OrderService class, is specified as the argument to the OrderDetailViewModel constructor. Then, when the view model's InitializeAsync method is invoked, which invokes IOrderService operations, mock data is retrieved rather than communicating with a web service.
 
-### **Testing INotifyPropertyChanged implementations**
+#### **Testing INotifyPropertyChanged implementations**
 
 Implementing the INotifyPropertyChanged interface allows views to react to changes that originate from view models and models. These changes are not limited to data shown in controls – they are also used to control the view, such as view model states that cause animations to be started or controls to be disabled.
 
@@ -2898,7 +2894,7 @@ public async Task SettingOrderPropertyShouldRaisePropertyChanged()
 
 This unit test invokes the InitializeAsync method of the OrderViewModel class, which causes its Order property to be updated. The unit test will pass, provided that the PropertyChanged event is raised for the Order property.
 
-### **Testing message-based communication**
+# **Testing message-based communication**
 
 View models that use the MessagingCenter class to communicate between loosely-coupled classes can be unit tested by subscribing to the message being sent by the code under test, as demonstrated in the following code example:
 
@@ -2921,7 +2917,7 @@ public void AddCatalogItemCommandSendsAddProductMessageTest()
 
 This unit test checks that the CatalogViewModel publishes the AddProduct message in response to its AddCatalogItemCommand being executed. Because the MessagingCenter class supports multicast message subscriptions, the unit test can subscribe to the AddProduct message and execute a callback delegate in response to receiving it. This callback delegate, specified as a lambda expression, sets a boolean field that's used by the Assert statement to verify the behavior of the test.
 
-## **Testing exception handling**
+#### **Testing exception handling**
 
 Unit tests can also be written that check that specific exceptions are thrown for invalid actions or inputs, as demonstrated in the following code example:
 
@@ -2944,7 +2940,7 @@ This unit test will throw an exception, because the ListView control does not ha
 
 Exception message strings might change over time, and so unit tests that rely on their presence are regarded as brittle.
 
-#### **Testing validation**
+# **Testing validation**
 
 There are two aspects to testing the validation implementation: testing that any validation rules are correctly implemented, and testing that the ValidatableObject<T> class performs as expected.
 

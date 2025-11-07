@@ -1,0 +1,7 @@
+,"<section class=""col-sm-6"">"
+0,"<img class=""esh-app-footer-text hidden-xs"" src=""~/images/main_footer_text.png"""
+1,"width=""335"" height=""26"" alt=""footer text image"" />"
+2,<br />
+3,<small>@Environment.MachineName -
+4,@System.Diagnostics.Process.GetCurrentProcess().StartTime.ToString() UTC</small>
+5,</section>

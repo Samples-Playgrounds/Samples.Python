@@ -1,0 +1,50 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>private byte[] _data = Enumerable.Repeat((byte)123, 999).Append((byte)42).ToArray();</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>[Benchmark(Baseline = true)]</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>[Arguments((byte)42)]</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>public bool Find(byte value) =&gt; Contains(_data, value); // just the fallback path in its</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>own method</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>[Benchmark]</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>[Arguments((byte)42)]</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>public bool FindVectorized(byte value) =&gt; Contains_Vectorized(_data, value); // the</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>implementation we just wrote</td>
+    </tr>
+  </tbody>
+</table>

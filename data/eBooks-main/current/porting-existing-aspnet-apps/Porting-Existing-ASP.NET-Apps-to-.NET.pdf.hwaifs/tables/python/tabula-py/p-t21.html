@@ -1,0 +1,62 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>protected IContainer RegisterContainer()</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>var builder = new ContainerBuilder();</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>builder.RegisterControllers(typeof(MvcApplication).Assembly);</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>var mockData = bool.Parse(ConfigurationManager.AppSettings["UseMockData"]);</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>builder.RegisterModule(new ApplicationModule(mockData));</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>var container = builder.Build();</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>DependencyResolver.SetResolver(new AutofacDependencyResolver(container));</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>return container;</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,66 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>public void SetAddress(Address address)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>_shippingAddress = address?? throw new ArgumentNullException(nameof(address));</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>A better example would demonstrate the need to ensure that either the internal state did</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>not change, or that all the mutations for a method occurred. For example, the following</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>implementation would leave the object in an invalid state:</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>public void SetAddress(string line1, string line2,</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>string city, string state, int zip)</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>_shippingAddress.line1 = line1 ?? throw new ...</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>_shippingAddress.line2 = line2;</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>_shippingAddress.city = city ?? throw new ...</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>_shippingAddress.state = (IsValid(state) ? state : throw new ...);</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

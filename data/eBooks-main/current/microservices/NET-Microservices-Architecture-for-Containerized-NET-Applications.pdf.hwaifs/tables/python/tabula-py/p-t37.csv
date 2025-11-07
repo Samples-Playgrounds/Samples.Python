@@ -1,0 +1,4 @@
+,ProductPriceChangedIntegrationEventHandler>();
+0,
+1,"eventBus.Subscribe<OrderStartedIntegrationEvent,"
+2,OrderStartedIntegrationEventHandler>();

@@ -1,0 +1,27 @@
+,// C# EXAMPLE OF AN ORDER AGGREGATE BEING PERSISTED WITH AZURE COSMOS DB API
+0,// *** Domain Model Code ***
+1,// Aggregate: Create an Order object with its child entities and/or value objects.
+2,"// Then, use AggregateRoot's methods to add the nested objects so invariants and"
+3,// logic is consistent across the nested properties (value objects and entities).
+4,
+5,Order orderAggregate = new Order
+6,{
+7,"Id = ""2024001"","
+8,"OrderDate = new DateTime(2005, 7, 1),"
+9,"BuyerId = ""1234567"","
+10,"PurchaseOrderNumber = ""PO18009186470"""
+11,}
+12,
+13,Address address = new Address
+14,{
+15,"Street = ""100 One Microsoft Way"","
+16,"City = ""Redmond"","
+17,"State = ""WA"","
+18,"Zip = ""98052"","
+19,"Country = ""U.S."""
+20,}
+21,
+22,orderAggregate.UpdateAddress(address);
+23,
+24,OrderItem orderItem1 = new OrderItem
+25,{

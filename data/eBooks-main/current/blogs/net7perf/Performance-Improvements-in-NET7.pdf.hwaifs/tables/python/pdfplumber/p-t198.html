@@ -1,0 +1,82 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>private readonly XmlReaderSettings _settings = new XmlReaderSettings { Async = true };</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>private MemoryStream _stream;</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>[Params(10, 1_000_000)]</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>public int ItemCount;</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>[GlobalSetup]</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>public void Setup()</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>_stream = new MemoryStream();</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>using XmlWriter writer = XmlWriter.Create(_stream);</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>writer.WriteStartElement("Items");</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>for (var i = 0; i &lt; ItemCount; i++)</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>writer.WriteStartElement($"Item{i}");</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>writer.WriteEndElement();</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>writer.WriteEndElement();</td>
+    </tr>
+  </tbody>
+</table>

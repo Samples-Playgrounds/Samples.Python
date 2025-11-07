@@ -1,0 +1,26 @@
+,0
+0,public class Program
+1,{
+2,private static Connection _connection;
+3,public static void Main(string[] args)
+4,{
+5,StartConnectionAsync();
+6,"_connection.On(""receiveMessage"", (arguments) =>"
+7,{
+8,"Console.WriteLine($""{arguments[0]} said: {arguments[1]}"");"
+9,});
+10,Console.ReadLine();
+11,StopConnectionAsync();
+12,}
+13,
+14,public static async Task StartConnectionAsync()
+15,{
+16,_connection = new Connection();
+17,"await _connection.StartConnectionAsync(""ws://localhost:65110/chat"");"
+18,}
+19,
+20,public static async Task StopConnectionAsync()
+21,{
+22,await _connection.StopConnectionAsync();
+23,}
+24,}

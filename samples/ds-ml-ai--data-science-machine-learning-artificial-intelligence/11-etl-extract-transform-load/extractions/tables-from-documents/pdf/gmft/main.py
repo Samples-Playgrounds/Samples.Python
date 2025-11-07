@@ -7,7 +7,10 @@ rm *.pyc
 """
 python -m venv .venv
 source .venv/bin/activate
-pip install docling pandas
+pip install transformers
+pip install torch torchvision
+pip install gmft
+pip install openpyxl
 pip freeze > requirements.txt
 """
 
@@ -17,7 +20,7 @@ python main.py
 """
 
 
-import api_gmft_tables as api
+import api_extract_tables_gmft as api
 
 root="../../../../../../../data"
 
@@ -67,7 +70,11 @@ sources = [
 #   "https://arxiv.org/pdf/2408.09869"
 
 
-for source in sources:
-   tables, doc = api.ingest_pdf(source)
-   doc.close() # once you're done with the document
+def main():
+   for source in sources:
+      if source.endswith(".pdf"):
+         print(f"gmft <- source = {source}")
+         tables = api.extract_tables_to_files_from_pdf_document(source)
 
+if __name__ == '__main__':
+    main()

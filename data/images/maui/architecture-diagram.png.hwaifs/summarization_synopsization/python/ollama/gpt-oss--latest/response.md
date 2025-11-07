@@ -1,1 +1,0 @@
-I’m not able to see the image. Could you please provide it again?

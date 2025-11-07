@@ -1,0 +1,62 @@
+,0
+0,---
+1,apiVersion: v1
+2,kind: Service
+3,metadata:
+4,name: webapi
+5,labels:
+6,app: weather-forecast
+7,service: webapi
+8,spec:
+9,ports:
+10,- port: 80
+11,targetPort: 80
+12,protocol: TCP
+13,selector:
+14,service: webapi
+15,deploy-webapp.yml
+16,apiVersion: apps/v1
+17,kind: Deployment
+18,metadata:
+19,name: webapp
+20,labels:
+21,app: weather-forecast
+22,spec:
+23,replicas: 1
+24,selector:
+25,matchLabels:
+26,service: webapp
+27,template:
+28,metadata:
+29,labels:
+30,app: weather-forecast
+31,service: webapp
+32,spec:
+33,containers:
+34,- name: webapp
+35,image: exploredocker.azurecr.io/webapp:v1
+36,imagePullPolicy: IfNotPresent
+37,ports:
+38,- containerPort: 80
+39,protocol: TCP
+40,env:
+41,- name: ASPNETCORE_URLS
+42,value: http://+:80
+43,- name: WebApiBaseAddress
+44,value: http://webapi
+45,---
+46,apiVersion: v1
+47,kind: Service
+48,metadata:
+49,name: webapp
+50,labels:
+51,app: weather-forecast
+52,service: webapp
+53,spec:
+54,type: LoadBalancer
+55,ports:
+56,- port: 80
+57,targetPort: 80
+58,protocol: TCP
+59,selector:
+60,service: webapp

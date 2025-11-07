@@ -1,0 +1,114 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>// COMPATIBLE WITH ENTITY FRAMEWORK CORE 5.0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>// Entity is a custom base class with the ID</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>public class Order : Entity, IAggregateRoot</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>private DateTime _orderDate;</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>public Address Address { get; private set; }</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>private int? _buyerId;</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>public OrderStatus OrderStatus { get; private set; }</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>private int _orderStatusId;</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>private string _description;</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>private int? _paymentMethodId;</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>private readonly List&lt;OrderItem&gt; _orderItems;</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>public IReadOnlyCollection&lt;OrderItem&gt; OrderItems =&gt; _orderItems;</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>public Order(string userId, Address address, int cardTypeId, string cardNumber, string</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>cardSecurityNumber,</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>string cardHolderName, DateTime cardExpiration, int? buyerId = null, int?</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>paymentMethodId = null)</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>_orderItems = new List&lt;OrderItem&gt;();</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>_buyerId = buyerId;</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>_paymentMethodId = paymentMethodId;</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>_orderStatusId = OrderStatus.Submitted.Id;</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>_orderDate = DateTime.UtcNow;</td>
+    </tr>
+  </tbody>
+</table>

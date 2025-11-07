@@ -1,0 +1,54 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>if (item != null)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>var webRoot = Server.MapPath("~/Pics"); // compiler error on this line</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>var path = Path.Combine(webRoot, item.PictureFileName);</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>string imageFileExtension = Path.GetExtension(item.PictureFileName);</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>string mimetype = GetImageMimeTypeFromImageFileExtension(imageFileExtension);</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>var buffer = System.IO.File.ReadAllBytes(path);</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>return File(buffer, mimetype);</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,11 @@
+,0
+0,"public class Order : Entity, IAggregateRoot"
+1,{
+2,private DateTime _orderDate;
+3,public Address Address { get; private set; }
+4,private int? _buyerId; // FK pointing to a different aggregate root
+5,public OrderStatus OrderStatus { get; private set; }
+6,private readonly List<OrderItem> _orderItems;
+7,public IReadOnlyCollection<OrderItem> OrderItems => _orderItems;
+8,// ... Additional code
+9,}

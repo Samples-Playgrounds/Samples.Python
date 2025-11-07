@@ -1,0 +1,13 @@
+,0
+0,[DataContract]
+1,public class Stock
+2,{
+3,[DataMember]
+4,public int Id { get; set; }
+5,[DataMember]
+6,public string Symbol { get; set; }
+7,[DataMember]
+8,public string DisplayName { get; set; }
+9,[DataMember]
+10,public int MarketId { get; set; }
+11,}

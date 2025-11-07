@@ -1,0 +1,22 @@
+,0
+0,public class CatalogItem
+1,{
+2,public int Id { get; set; }
+3,public string Name { get; set; }
+4,public string Description { get; set; }
+5,public decimal Price { get; set; }
+6,public string PictureFileName { get; set; }
+7,public string PictureUri { get; set; }
+8,public int CatalogTypeId { get; set; }
+9,public CatalogType CatalogType { get; set; }
+10,public int CatalogBrandId { get; set; }
+11,public CatalogBrand CatalogBrand { get; set; }
+12,public int AvailableStock { get; set; }
+13,public int RestockThreshold { get; set; }
+14,public int MaxStockThreshold { get; set; }
+15,
+16,public bool OnReorder { get; set; }
+17,public CatalogItem() { }
+18,
+19,// Additional code ...
+20,}

@@ -7,6 +7,7 @@ rm *.pyc
 """
 python -m venv .venv
 source .venv/bin/activate
+pip install opencv-python
 pip install docling pandas
 pip freeze > requirements.txt
 """
@@ -17,7 +18,7 @@ python main.py
 """
 
 
-import api_docling as api
+import api_extract_tables_docling as api
 
 root="../../../../../../../data"
 
@@ -72,7 +73,7 @@ def main():
    for source in sources:
       if source.endswith(".pdf"):
          print(f"docling <- source = {source}")
-         api.extract_tables_to_files(source)
+         api.extract_tables_to_files_from_pdf_document(source)
 
 
 if __name__ == '__main__':

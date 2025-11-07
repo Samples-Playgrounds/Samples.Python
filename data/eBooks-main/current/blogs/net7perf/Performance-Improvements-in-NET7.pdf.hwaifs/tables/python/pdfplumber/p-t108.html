@@ -1,0 +1,82 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>private byte[] _zeros = new byte[1024];</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>[Benchmark(Baseline = true)]</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>public bool OpenCoded()</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>foreach (byte b in _zeros)</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>if (b != 0)</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>return false;</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>return true;</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>[Benchmark]</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>public bool IndexOfAnyExcept() =&gt; _zeros.AsSpan().IndexOfAnyExcept((byte)0) &lt; 0;</td>
+    </tr>
+  </tbody>
+</table>

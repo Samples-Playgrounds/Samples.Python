@@ -1,0 +1,70 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1 FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2 WORKDIR /app</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3 EXPOSE 80</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS publish</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>6 WORKDIR /src</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>7 COPY . .</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>8 RUN dotnet restore /ignoreprojectextensions:.dcproj</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>9 WORKDIR /src/src/Services/Catalog/Catalog.API</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>10 RUN dotnet publish Catalog.API.csproj -c Release -o /app</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>12 FROM base AS final</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>13 WORKDIR /app</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>14 COPY --from=publish /app .</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>15 ENTRYPOINT ["dotnet", "Catalog.API.dll"]</td>
+    </tr>
+  </tbody>
+</table>

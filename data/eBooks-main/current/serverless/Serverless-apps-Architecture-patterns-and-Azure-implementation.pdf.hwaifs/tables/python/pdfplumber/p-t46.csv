@@ -1,0 +1,16 @@
+,0
+0,"[FunctionName(""PlaceOrder"")]"
+1,public static async Task<string> PlaceOrder([OrchestrationTrigger]
+2,DurableOrchestrationContext context)
+3,{
+4,OrderRequestData orderData = context.GetInput<OrderRequestData>();
+5,
+6,"await context.CallActivityAsync<bool>(""CheckAndReserveInventory"", orderData);"
+7,"await context.CallActivityAsync<string>(""ProcessPayment"", orderData);"
+8,
+9,"string trackingNumber = await context.CallActivityAsync<string>(""ScheduleShipping"","
+10,orderData);
+11,"await context.CallActivityAsync<string>(""EmailCustomer"", trackingNumber);"
+12,
+13,return trackingNumber;
+14,}

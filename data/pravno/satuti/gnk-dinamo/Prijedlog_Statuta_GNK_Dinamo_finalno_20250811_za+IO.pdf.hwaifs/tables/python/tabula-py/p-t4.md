@@ -1,0 +1,10 @@
+|    | f.   | donosi Poslovnik o radu Skupštine Kluba, Pravilnik o izborima u GNK „Dinamo“ te       |
+|---:|:-----|:--------------------------------------------------------------------------------------|
+|  0 | nan  | druge akte i odluke važne za rad Kluba prema ovom Statutu, poput pravila o etičkim    |
+|  1 | nan  | pitanjima i pitanjima sukoba interesa;                                                |
+|  2 | g.   | odlučuje o promjeni ciljeva, djelatnosti i obavljanju gospodarskih djelatnosti Kluba; |
+|  3 | h.   | odlučuje o udruživanju u saveze, zajednice, mreže i druge oblike povezivanja udruga;  |
+|  4 | i.   | bira i razrješava Predsjednika Kluba;                                                 |
+|  5 | j.   | bira i razrješava Predsjednika Nadzornog odbora, Zamjenika Predsjednika               |
+|  6 | nan  | Nadzornog odbora te ostale članove Nadzornog odbora;                                  |
+|  7 | k.   | može, uz Nadzorni odbor, razriješiti Izborno povjerenstvo i pojedine njegove članove  |

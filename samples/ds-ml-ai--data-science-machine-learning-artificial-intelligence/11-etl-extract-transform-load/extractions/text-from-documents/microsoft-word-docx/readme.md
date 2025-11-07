@@ -14,9 +14,16 @@ python-docx
 
     https://stackoverflow.com/questions/25228106/how-to-extract-text-from-an-existing-docx-file-using-python-docx
 
+    https://stackoverflow.com/questions/58613880/python-grab-all-text-in-docx-and-dump-into-txt
+
+    https://stackoverflow.com/questions/59385678/extraction-of-text-page-by-page-from-ms-word-docx-file-using-python
+
     https://etienned.github.io/posts/extract-text-from-word-docx-simply/
 
     https://stackoverflow.com/questions/29309085/read-docx-files-via-python
+
+https://medium.com/@alice.yang_10652/extract-text-from-word-documents-with-python-a-comprehensive-guide-95a67e23c35c
+
 
 docx2txt
 

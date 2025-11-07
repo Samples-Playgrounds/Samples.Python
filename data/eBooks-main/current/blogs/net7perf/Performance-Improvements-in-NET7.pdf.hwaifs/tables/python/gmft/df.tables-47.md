@@ -1,0 +1,4 @@
+|    | Method     | Runtime   | Mean     |   Ratio |
+|---:|:-----------|:----------|:---------|--------:|
+|  0 | IndexOfAny | .NET 6.0  | 52.29 ns |    1    |
+|  1 | IndexOfAny | .NET 7.0  | 40.17 ns |    0.77 |

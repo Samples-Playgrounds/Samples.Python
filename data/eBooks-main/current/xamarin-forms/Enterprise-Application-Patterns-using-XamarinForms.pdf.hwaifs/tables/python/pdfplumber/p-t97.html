@@ -1,0 +1,74 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>[Fact]</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>public void CheckValidationFailsWhenOnlyForenameHasDataTest()</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>var mockViewModel = new MockViewModel();</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>mockViewModel.Forename.Value = "John";</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>bool isValid = mockViewModel.Validate();</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Assert.False(isValid);</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Assert.NotNull(mockViewModel.Forename.Value);</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Assert.Null(mockViewModel.Surname.Value);</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Assert.True(mockViewModel.Forename.IsValid);</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Assert.False(mockViewModel.Surname.IsValid);</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Assert.Empty(mockViewModel.Forename.Errors);</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Assert.NotEmpty(mockViewModel.Surname.Errors);</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

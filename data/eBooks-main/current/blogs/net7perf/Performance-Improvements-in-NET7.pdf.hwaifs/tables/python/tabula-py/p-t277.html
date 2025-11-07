@@ -1,0 +1,130 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>// Match 'a' atomically any number of times.</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>int iteration = slice.IndexOfAnyExcept('a');</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>if (iteration &lt; 0)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>iteration = slice.Length;</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>slice = slice.Slice(iteration);</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>pos += iteration;</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>// Advance the next matching position.</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>if (base.runtextpos &lt; pos)</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>base.runtextpos = pos;</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>// Match 'b'.</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>if (slice.IsEmpty || slice[0] != 'b')</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>return false; // The input didn't match.</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>// The input matched.</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>pos++;</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>base.runtextpos = pos;</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>base.Capture(0, matchStart, pos);</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>return true;</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

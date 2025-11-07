@@ -1,0 +1,16 @@
+,,
+0,The,owned entity type feature was added to EF Core since version 2.0.
+1,An the owned The owned,"owned entity type allows you to map types that do not have their own identity explicitly defined in domain model and are used as properties, such as a value object, within any of your entities. An entity type shares the same CLR type with another entity type (that is, it’s just a regular class). entity containing the defining navigation is the owner entity. When querying the owner, the included default."
+2,Just,"types are by by looking at the domain model, an owned type looks like it doesn’t have any identity. However,"
+3,under identity.,"the covers, owned types do have the identity, but the owner navigation property is part of this"
+4,The,identity of instances of owned types is not completely their own. It consists of three components:
+5,•,The identity of the owner
+6,•,The navigation property pointing to them
+7,•,"In the case of collections of owned types, an independent component (supported in EF Core"
+8,,2.2 and later).
+9,For,"example, in the Ordering domain model at eShopOnContainers, as part of the Order entity, the"
+10,Address,"value object is implemented as an owned entity type within the owner entity, which is the"
+11,Order,entity. Address is a type with no identity property defined in the domain model. It is used as a property of the Order type to specify the shipping address for a particular order.
+12,By table types,"convention, a shadow primary key is created for the owned type and it will be mapped to the same as the owner by using table splitting. This allows to use owned types similarly to how complex are used in EF6 in the traditional .NET Framework."
+13,It is to,"important to note that owned types are never discovered by convention in EF Core, so you have declare them explicitly."
+14,In,"eShopOnContainers, in the OrderingContext.cs file, within the OnModelCreating() method, multiple infrastructure configurations are applied. One of them is related to the Order entity."

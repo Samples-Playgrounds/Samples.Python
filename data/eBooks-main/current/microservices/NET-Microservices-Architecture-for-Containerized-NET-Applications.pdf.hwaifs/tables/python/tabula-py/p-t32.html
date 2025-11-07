@@ -1,0 +1,78 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>public class Startup</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>// Other Startup code ...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>public void ConfigureServices(IServiceCollection services)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>services.AddSingleton&lt;IConfiguration&gt;(Configuration);</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>// DbContext using an InMemory database provider</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>services.AddDbContext&lt;CatalogContext&gt;(opt =&gt; opt.UseInMemoryDatabase());</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>//(Alternative: DbContext using a SQL Server provider</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>//services.AddDbContext&lt;CatalogContext&gt;(c =&gt;</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>//{</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>// c.UseSqlServer(Configuration["ConnectionString"]);</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>//</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>//});</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>// Other Startup code ...</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

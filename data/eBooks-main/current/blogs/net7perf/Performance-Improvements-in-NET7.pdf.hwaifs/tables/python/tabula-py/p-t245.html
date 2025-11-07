@@ -1,0 +1,90 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>[Benchmark(Baseline = true)]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>[Arguments("SomeProperty", ListSortDirection.Descending)]</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>public string WithStringBuilder(string name, ListSortDirection direction)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>var resultString = new StringBuilder();</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>resultString.Append('[');</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>resultString.Append(name);</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>resultString.Append(']');</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>if (ListSortDirection.Descending == direction)</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>resultString.Append(" DESC");</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>return resultString.ToString();</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>[Benchmark]</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>[Arguments("SomeProperty", ListSortDirection.Descending)]</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>public string WithConcat(string name, ListSortDirection direction) =&gt;</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>direction == ListSortDirection.Descending?</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>$"[{name}] DESC" :</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>$"[{name}]";</td>
+    </tr>
+  </tbody>
+</table>

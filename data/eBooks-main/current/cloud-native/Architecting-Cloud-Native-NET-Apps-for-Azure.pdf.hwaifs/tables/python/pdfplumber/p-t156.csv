@@ -1,0 +1,35 @@
+,0
+0,// some details omitted
+1,services.AddIdentityServer();
+2,
+3,services.AddAuthentication()
+4,".AddGoogle(""Google"", options =>"
+5,{
+6,options.SignInScheme =
+7,IdentityServerConstants.ExternalCookieAuthenticationScheme;
+8,
+9,"options.ClientId = ""<insert here>"";"
+10,"options.ClientSecret = ""<insert here>"";"
+11,})
+12,".AddOpenIdConnect(""demoidsrv"", ""IdentityServer"", options =>"
+13,{
+14,options.SignInScheme =
+15,IdentityServerConstants.ExternalCookieAuthenticationScheme;
+16,options.SignOutScheme = IdentityServerConstants.SignoutScheme;
+17,
+18,"options.Authority = ""https://demo.identityserver.io/"";"
+19,"options.ClientId = ""implicit"";"
+20,"options.ResponseType = ""id_token"";"
+21,options.SaveTokens = true;
+22,"options.CallbackPath = new PathString(""/signin-idsrv"");"
+23,"options.SignedOutCallbackPath = new PathString(""/signout-callback-idsrv"");"
+24,"options.RemoteSignOutPath = new PathString(""/signout-idsrv"");"
+25,
+26,options.TokenValidationParameters = new TokenValidationParameters
+27,{
+28,"NameClaimType = ""name"","
+29,"RoleClaimType = ""role"""
+30,};
+31,});
+32,}
+33,}

@@ -1,0 +1,3 @@
+,Method,Runtime,Mean,Ratio
+0,SortedSetCopy,.NET 6.0,2.397 us,1.0
+1,SortedSetCopy,.NET 7.0,2.090 us,0.87

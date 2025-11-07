@@ -1,0 +1,11 @@
+,0
+0,apiVersion: v1
+1,kind: Service
+2,metadata:
+3,name: stockdata
+4,namespace: stocks
+5,spec:
+6,ports:
+7,- port: 80
+8,selector:
+9,run: stockdata

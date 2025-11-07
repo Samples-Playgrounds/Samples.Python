@@ -71,7 +71,7 @@ def main():
    for source in sources:
       if source.endswith(".pdf"):
          print(f"camelot <- source = {source}")
-         api.extract_tables_to_files(source)
+         api.extract_tables_to_files_from_pdf_document(source)
 
 
 if __name__ == '__main__':

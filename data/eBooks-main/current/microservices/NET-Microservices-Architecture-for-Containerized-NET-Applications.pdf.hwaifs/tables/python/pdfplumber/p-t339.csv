@@ -1,0 +1,45 @@
+,0
+0,// Program.cs
+1,
+2,"var identityUrl = builder.Configuration.GetValue<string>(""IdentityUrl"");"
+3,"var callBackUrl = builder.Configuration.GetValue<string>(""CallBackUrl"");"
+4,"var sessionCookieLifetime = builder.Configuration.GetValue(""SessionCookieLifetimeMinutes"","
+5,60);
+6,
+7,// Add Authentication services
+8,
+9,services.AddAuthentication(options =>
+10,{
+11,options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+12,options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+13,})
+14,.AddCookie(setup => setup.ExpireTimeSpan = TimeSpan.FromMinutes(sessionCookieLifetime))
+15,.AddOpenIdConnect(options =>
+16,{
+17,options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+18,options.Authority = identityUrl.ToString();
+19,options.SignedOutRedirectUri = callBackUrl.ToString();
+20,"options.ClientId = useLoadTest ? ""mvctest"" : ""mvc"";"
+21,"options.ClientSecret = ""secret"";"
+22,"options.ResponseType = useLoadTest ? ""code id_token token"" : ""code id_token"";"
+23,options.SaveTokens = true;
+24,options.GetClaimsFromUserInfoEndpoint = true;
+25,options.RequireHttpsMetadata = false;
+26,"options.Scope.Add(""openid"");"
+27,"options.Scope.Add(""profile"");"
+28,"options.Scope.Add(""orders"");"
+29,"options.Scope.Add(""basket"");"
+30,"options.Scope.Add(""marketing"");"
+31,"options.Scope.Add(""locations"");"
+32,"options.Scope.Add(""webshoppingagg"");"
+33,"options.Scope.Add(""orders.signalrhub"");"
+34,});
+35,
+36,// Build the app
+37,//…
+38,app.UseAuthentication();
+39,//…
+40,app.UseEndpoints(endpoints =>
+41,{
+42,//...
+43,});

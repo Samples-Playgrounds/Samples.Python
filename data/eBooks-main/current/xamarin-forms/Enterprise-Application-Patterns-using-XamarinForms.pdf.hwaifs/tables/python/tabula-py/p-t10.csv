@@ -1,0 +1,64 @@
+,{
+0,UITextField control;
+1,
+2,protected override void OnAttached()
+3,{
+4,try
+5,{
+6,control = Control as UITextField;
+7,UpdateLineColor();
+8,}
+9,catch (Exception ex)
+10,{
+11,"Console.WriteLine(""Can't set property on attached control. Error: "", ex.Message);"
+12,}
+13,}
+14,
+15,protected override void OnDetached()
+16,{
+17,control = null;
+18,}
+19,
+20,protected override void OnElementPropertyChanged(PropertyChangedEventArgs args)
+21,{
+22,base.OnElementPropertyChanged(args);
+23,
+24,if (args.PropertyName == LineColorBehavior.LineColorProperty.PropertyName ||
+25,"args.PropertyName == ""Height"")"
+26,{
+27,Initialize();
+28,UpdateLineColor();
+29,}
+30,}
+31,
+32,private void Initialize()
+33,{
+34,var entry = Element as Entry;
+35,if (entry != null)
+36,{
+37,"Control.Bounds = new CGRect(0, 0, entry.Width, entry.Height);"
+38,}
+39,}
+40,
+41,private void UpdateLineColor()
+42,{
+43,BorderLineLayer lineLayer = control.Layer.Sublayers.OfType<BorderLineLayer>()
+44,.FirstOrDefault();
+45,
+46,if (lineLayer == null)
+47,{
+48,lineLayer = new BorderLineLayer();
+49,lineLayer.MasksToBounds = true;
+50,lineLayer.BorderWidth = 1.0f;
+51,control.Layer.AddSublayer(lineLayer);
+52,control.BorderStyle = UITextBorderStyle.None;
+53,}
+54,
+55,"lineLayer.Frame = new CGRect(0f, Control.Frame.Height-1f, Control.Bounds.Width, 1f);"
+56,lineLayer.BorderColor = LineColorBehavior.GetLineColor(Element).ToCGColor();
+57,control.TintColor = control.TextColor;
+58,}
+59,
+60,private class BorderLineLayer : CALayer
+61,{
+62,}

@@ -699,8 +699,6 @@ Azure DevOps is a powerful tool that every .NET developer should have in their a
 
 ![](_page_37_Figure_4.jpeg)
 
-![](_page_37_Figure_5.jpeg)
-
 ![](_page_38_Picture_0.jpeg)
 
 # Summary and how to get started for free

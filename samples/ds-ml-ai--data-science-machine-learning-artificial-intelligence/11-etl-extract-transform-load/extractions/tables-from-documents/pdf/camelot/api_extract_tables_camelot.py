@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 
-def extract_tables_to_files (source: str) -> str:
+def extract_tables_to_files_from_pdf_document (source: str) -> str:
     """
     """
     directory = f"{source}.hwaifs/tables/python/camelot/"
@@ -16,15 +16,15 @@ def extract_tables_to_files (source: str) -> str:
 
     # Iterate through each table found in the PDF
     for i, table in enumerate(tables):
-        # Extract table data as a Pandas DataFrame, including headers
-        df = table.df                   # get a pandas DataFrame!
-        df.to_csv(f"{directory}/dataframe.tables-{i}.camelot.csv")      # to_json, to_excel, to_html
-        df.to_json(f"{directory}/dataframe.tables-{i}.camelot.json")    # to_json, to_excel, to_html
-        df.to_excel(f"{directory}/dataframe.tables-{i}.camelot.xlsx")   # to_json, to_excel, to_html
-        df.to_html(f"{directory}/dataframe.tables-{i}.camelot.html")    # to_json, to_excel, to_html
+        # Extract table data as a Pandas df, including headers
+        df = table.df                   # get a pandas df!
+        df.to_csv(f"{directory}/df.tables-{i}.csv")      # to_json, to_excel, to_html
+        df.to_json(f"{directory}/df.tables-{i}.json")    # to_json, to_excel, to_html
+        df.to_excel(f"{directory}/df.tables-{i}.xlsx")   # to_json, to_excel, to_html
+        df.to_html(f"{directory}/df.tables-{i}.html")    # to_json, to_excel, to_html
 
         pr = table.parsing_report
-        with open(f"{directory}/dataframe.tables-{i}.parsing_report.json", "w") as f:
+        with open(f"{directory}/df.tables-{i}.parsing_report.json", "w") as f:
             f.write(json.dumps(pr))
 
     return

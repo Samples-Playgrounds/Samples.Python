@@ -2,6 +2,7 @@
 rm -fr .venv __pycache__ *.pyc
 python -m venv .venv
 source .venv/bin/activate
+pip install legacy-cgi
 pip install 'marker-pdf[full]'
 pip freeze > requirements.txt
 """
@@ -11,7 +12,7 @@ pip install -r requirements.txt
 python main.py
 """
 
-import api_marker_PdfConverter as api
+import api_extract_tables_marker_TableConverter as api
 
 root="../../../../../../../data"
 
@@ -62,4 +63,12 @@ sources = [
 #   "https://arxiv.org/pdf/2408.09869"
 
 
-w
+def main():
+   for source in sources:
+      print(f"marker <- source = {source}")
+      api.extract_tables_to_files_from_pdf_document(source)
+
+if __name__ == '__main__':
+    main()
+
+

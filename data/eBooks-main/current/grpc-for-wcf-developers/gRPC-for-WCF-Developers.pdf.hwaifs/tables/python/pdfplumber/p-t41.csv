@@ -1,0 +1,10 @@
+,0,1
+0,Status code,Problem
+1,GRPC_STATUS_UNIMPLEMENTED,Method hasn’t been written.
+2,GRPC_STATUS_UNAVAILABLE,Problem with the whole service.
+3,GRPC_STATUS_UNKNOWN,Invalid response.
+4,GRPC_STATUS_INTERNAL,Problem with encoding/decoding.
+5,GRPC_STATUS_UNAUTHENTICATED,Authentication failed.
+6,GRPC_STATUS_PERMISSION_DENIED,Authorization failed.
+7,GRPC_STATUS_CANCELLED,"Call was canceled, usually by the
+caller."

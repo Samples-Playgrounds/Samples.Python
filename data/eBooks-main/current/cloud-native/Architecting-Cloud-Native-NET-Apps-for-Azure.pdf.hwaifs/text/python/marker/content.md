@@ -64,17 +64,17 @@ Editors:
 
 **David Pine**, Senior Content Developer, .NET docs, Microsoft
 
-# Version
+## Version
 
 This guide has been written to cover **.NET 7** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 7 release.
 
-# Who should use this guide
+## Who should use this guide
 
 The audience for this guide is mainly developers, development leads, and architects who are interested in learning how to build applications designed for the cloud.
 
 A secondary audience is technical decision-makers who plan to choose whether to build their applications using a cloud-native approach.
 
-# How you can use this guide
+## How you can use this guide
 
 This guide begins by defining cloud native and introducing a reference application built using cloudnative principles and technologies. Beyond these first two chapters, the rest of the book is broken up into specific chapters focused on topics common to most cloud-native applications. You can jump to any of these chapters to learn about cloud-native approaches to:
 
@@ -88,7 +88,7 @@ This guide begins by defining cloud native and introducing a reference applicati
 
 This guide is available both in [PDF](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf) form and online. Feel free to forward this document or links to its online version to your team to help ensure common understanding of these topics. Most of these topics benefit from a consistent understanding of the underlying principles and patterns, as well as the trade-offs involved in decisions related to these topics. Our goal with this document is to equip teams and their leaders with the information they need to make well-informed decisions for their applications' architecture, development, and hosting.
 
-# Contents
+## Contents
 
 | Introduction to cloud-native applications        | 1  |
 |--------------------------------------------------|----|
@@ -122,7 +122,7 @@ This guide is available both in [PDF](https://dotnet.microsoft.com/download/e-bo
 
 | Azure App Configuration                                                  | 33 |
 |--------------------------------------------------------------------------|----|
-| Azure Key Vault                                                          | 34 |
+| Azure Key Vault                                                          | 32 |
 | Configuration in eShop                                                   | 34 |
 | References                                                               | 34 |
 | Scaling cloud-native applications                                        | 36 |
@@ -151,8 +151,8 @@ This guide is available both in [PDF](https://dotnet.microsoft.com/download/e-bo
 | Azure Bridge to Kubernetes                                               | 53 |
 | Scaling containers and serverless applications                           | 53 |
 | The simple solution: scaling up                                          | 53 |
-| Scaling out cloud-native apps                                            | 54 |
-| Other container deployment options                                       | 55 |
+| Scaling out cloud-native apps                                            | 52 |
+| Other container deployment options                                       | 51 |
 
 | When does it make sense to deploy to App Service for Containers? | 55 |
 |------------------------------------------------------------------|----|
@@ -378,7 +378,7 @@ The CNCF fosters an ecosystem of open-source and vendor-neutrality. Following th
 
 <span id="page-13-0"></span>So, what exactly is Cloud Native? Sit back, relax, and let us help you explore this new world.
 
-# What is Cloud Native?
+## What is Cloud Native?
 
 Stop what you're doing and ask your colleagues to define the term "Cloud Native". There's a good chance you'll get several different answers.
 
@@ -739,7 +739,7 @@ Applying these practices, organizations have radically evolved how they ship sof
 
 Infrastructure as code and deployment automation, along with GitHub and Azure DevOps are discussed in detail in [DevOps.](#page-170-0)
 
-# <span id="page-28-0"></span>Candidate apps for cloud native
+## <span id="page-28-0"></span>Candidate apps for cloud native
 
 Think about the apps your organization needs to build. Then, look at the existing apps in your portfolio. How many of them warrant a cloud-native architecture? All of them? Perhaps some?
 
@@ -816,7 +816,7 @@ Microsoft, in partnership with leading community experts, has produced a full-fe
 
 Before starting this chapter, we recommend that you download the [eShopOnContainers reference](https://github.com/dotnet-architecture/eShopOnContainers)  [application.](https://github.com/dotnet-architecture/eShopOnContainers) If you do so, it should be easier for you to follow along with the information presented.
 
-# <span id="page-32-0"></span>Features and requirements
+## <span id="page-32-0"></span>Features and requirements
 
 Let's start with a review of the application's features and requirements. The eShopOnContainers application represents an online store that sells various physical products like t-shirts and coffee mugs. If you've bought anything online before, the experience of using the store should be relatively familiar. Here are some of the basic features the store implements:
 
@@ -853,7 +853,7 @@ Each of the different microservices is designed differently, based on their indi
 
 *Figure 2-3. Different kinds of microservices.*
 
-# <span id="page-34-0"></span>Overview of the code
+## <span id="page-34-0"></span>Overview of the code
 
 Because it uses microservices, the eShopOnContainers app includes quite a few separate projects and solutions in its GitHub repository. In addition to separate solutions and executable files, the various services are designed to run inside their own containers, both during local development and at run time in production. Figure 2-4 shows the full Visual Studio solution, in which the various different projects are organized.
 
@@ -863,11 +863,11 @@ Because it uses microservices, the eShopOnContainers app includes quite a few se
 
 The code is organized to support the different microservices, and within each microservice, the code is broken up into domain logic, infrastructure concerns, and user interface or service endpoint. In many cases, each service's dependencies can be fulfilled by Azure services in production, and alternative options for local development. Let's examine how the application's requirements map to Azure services.
 
-# <span id="page-36-0"></span>Understanding microservices
+## <span id="page-36-0"></span>Understanding microservices
 
 This book focuses on cloud-native applications built using Azure technology. To learn more about microservices best practices and how to architect microservice-based applications, read the companion book, [.NET Microservices: Architecture for Containerized .NET Applications.](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
 
-# <span id="page-36-1"></span>Mapping eShopOnContainers to Azure Services
+## <span id="page-36-1"></span>Mapping eShopOnContainers to Azure Services
 
 Although not required, Azure is well-suited to supporting the eShopOnContainers because the project was built to be a cloud-native application. The application is built with .NET, so it can run on Linux or Windows containers depending on the Docker host. The application is made up of multiple autonomous microservices, each with its own data. The different microservices showcase different approaches, ranging from simple CRUD operations to more complex DDD and CQRS patterns. Microservices communicate with clients over HTTP and with one another via message-based communication. The application supports multiple platforms for clients as well, since it adopts HTTP as a standard communication protocol and includes ASP.NET Core and Xamarin mobile apps that run on Android, iOS, and Windows platforms.
 
@@ -921,7 +921,7 @@ The application uses events to communicate changes between different services. T
 
 Once deployed to production, the eShopOnContainers application would be able to take advantage of several Azure services available to improve its resiliency. The application publishes health checks, which can be integrated with Application Insights to provide reporting and alerts based on the app's availability. Azure resources also provide diagnostic logs that can be used to identify and correct bugs and performance issues. Resource logs provide detailed information on when and how different Azure resources are used by the application. You'll learn more about cloud-native resiliency features in [chapter 6.](#page-122-0)
 
-# <span id="page-39-2"></span>Deploying eShopOnContainers to Azure
+## <span id="page-39-2"></span>Deploying eShopOnContainers to Azure
 
 The eShopOnContainers application can be deployed to various Azure platforms. The recommended approach is to deploy the application to Azure Kubernetes Services (AKS). Helm, a Kubernetes deployment tool, is available to reduce deployment complexity. Optionally, developers may implement Azure Dev Spaces for Kubernetes to streamline their development process.
 
@@ -981,7 +981,7 @@ Note that version 3 of Helm officially removes the need for the Tiller server co
 
 The eShopOnContainers sample includes support for tracking online marketing campaigns. An Azure Function is used to track marketing campaign details for a given campaign ID. Rather than creating a full microservice, a single Azure Function is simpler and sufficient. Azure Functions have a simple build and deployment model, especially when configured to run in Kubernetes. Deploying the function is scripted using Azure Resource Manager (ARM) templates and the Azure CLI. This campaign service isn't customer-facing and invokes a single operation, making it a great candidate for Azure Functions. The function requires minimal configuration, including a database connection string data and image base URI settings. You configure Azure Functions in the Azure portal.
 
-# <span id="page-42-0"></span>Centralized configuration
+## <span id="page-42-0"></span>Centralized configuration
 
 Unlike a monolithic app in which everything runs within a single instance, a cloud-native application consists of independent services distributed across virtual machines, containers, and geographic regions. Managing configuration settings for dozens of interdependent services can be challenging. Duplicate copies of configuration settings across different locations are error prone and difficult to manage. Centralized configuration is a critical requirement for distributed cloud-native applications.
 
@@ -1050,7 +1050,7 @@ In this chapter, we discuss technologies that enable cloud-native applications t
 - Orchestrators
 - <span id="page-45-1"></span>• Serverless computing
 
-# Leveraging containers and orchestrators
+## Leveraging containers and orchestrators
 
 Containers and orchestrators are designed to solve problems common to monolithic deployment approaches.
 
@@ -1268,7 +1268,7 @@ There are many extensions available for Visual Studio Code that support Docker d
 
 Microsoft provides the [Docker for Visual Studio Code extension.](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) This extension simplifies the process of adding container support to applications. It scaffolds required files, builds Docker images, and enables you to debug your app inside a container. The extension features a visual explorer that makes it easy to take actions on containers and images such as start, stop, inspect, remove, and more. The extension also supports Docker Compose enabling you to manage multiple running containers as a single unit.
 
-# <span id="page-55-0"></span>Leveraging serverless functions
+## <span id="page-55-0"></span>Leveraging serverless functions
 
 In the spectrum from managing physical machines to leveraging cloud capabilities, serverless lives at the extreme end. Your only responsibility is your code, and you only pay when your code runs. Azure Functions provides a way to build serverless capabilities into your cloud-native applications.
 
@@ -1320,7 +1320,7 @@ Cloud providers bill for serverless based on compute execution time and consumed
 
 Finally, leveraging Azure Functions for application tasks adds complexity. It's wise to first architect your application with a modular, loosely coupled design. Then, identify if there are benefits serverless would offer that justify the additional complexity.
 
-# <span id="page-58-0"></span>Combining containers and serverless approaches
+## <span id="page-58-0"></span>Combining containers and serverless approaches
 
 Cloud-native applications typically implement services leveraging containers and orchestration. There are often opportunities to expose some of the application's services as Azure Functions. However, with a cloud-native app deployed to Kubernetes, it would be nice to leverage Azure Functions within this same toolset. Fortunately, you can wrap Azure Functions inside Docker containers and deploy them using the same processes and tools as the rest of your Kubernetes-based app.
 
@@ -1348,7 +1348,7 @@ KEDA provides event-driven scaling functionality to the Functions' runtime in a 
 
 It's worth noting that the KEDA project is now managed by the Cloud Native Computing Foundation (CNCF).
 
-# <span id="page-59-1"></span>Deploying containers in Azure
+## <span id="page-59-1"></span>Deploying containers in Azure
 
 We've discussed containers in this chapter and in chapter 1. We've seen that containers provide many benefits to cloud-native applications, including portability. In the Azure cloud, you can deploy the same containerized services across staging and production environments. Azure provides several options for hosting these containerized workloads:
 
@@ -1444,7 +1444,7 @@ Gabe Monroy, former VP of Product Management at Microsoft, describes it well:
 
 Imagine you're a new employee trying to fix a bug in a complex microservices application consisting of dozens of components, each with their own configuration and backing services. To get started, you must configure your local development environment so that it can mimic production including setting up your IDE, building tool chain, containerized service dependencies, a local Kubernetes environment, mocks for backing services, and more. With all the time involved setting up your development environment, fixing that first bug could take days! Or you could just use Bridge to Kubernetes and AKS.
 
-# <span id="page-62-1"></span>Scaling containers and serverless applications
+## <span id="page-62-1"></span>Scaling containers and serverless applications
 
 There are two ways to scale an application: up or out. The former refers to adding capacity to a single resource, while the latter refers to adding more resources to increase capacity.
 
@@ -1478,7 +1478,7 @@ Azure Functions automatically scale out upon demand. Server resources are dynami
 
 While the default consumption plan provides an economical and scalable solution for most apps, the premium option allows developers flexibility for custom Azure Functions requirements. Upgrading to the premium plan provides control over instance sizes, pre-warmed instances (to avoid cold start delays), and dedicated VMs.
 
-# <span id="page-64-0"></span>Other container deployment options
+## <span id="page-64-0"></span>Other container deployment options
 
 Aside from Azure Kubernetes Service (AKS), you can also deploy containers to Azure App Service for Containers and Azure Container Instances.
 
@@ -1494,7 +1494,7 @@ To deploy to [Azure App Service for Containers](https://azure.microsoft.com/serv
 
 [Azure Container Instances \(ACI\)](https://azure.microsoft.com/services/container-instances/) enables you to run Docker containers in a managed, serverless cloud environment, without having to set up virtual machines or clusters. It's a great solution for shortrunning workloads that can run in an isolated container. Consider ACI for simple services, testing scenarios, task automation, and build jobs. ACI spins-up a container instance, performs the task, and then spins it down.
 
-#### <span id="page-64-4"></span>**How to deploy an app to Azure Container Instances**
+## <span id="page-64-4"></span>**How to deploy an app to Azure Container Instances**
 
 To deploy to [Azure Container Instances \(ACI\),](https://docs.microsoft.com/azure/container-instances/) you need an Azure Container Registry (ACR) and credentials for accessing it. Once you push your container image to the repository, it's available to pull into ACI. You can work with ACI using the Azure portal or command-line interface. ACR provides tight integration with ACI. Figure 3-12 shows how to push an individual container image to ACR.
 
@@ -1537,7 +1537,7 @@ Azure Container Instances offers the fastest way to run simple container workloa
 
 When constructing a cloud-native system, communication becomes a significant design decision. How does a front-end client application communicate with a back-end microservice? How do back-end microservices communicate with each other? What are the principles, patterns, and best practices to consider when implementing communication in cloud-native applications?
 
-# <span id="page-67-1"></span>Communication considerations
+## <span id="page-67-1"></span>Communication considerations
 
 In a monolithic application, communication is straightforward. The code modules execute together in the same executable space (process) on a server. This approach can have performance advantages as everything runs together in shared memory, but results in tightly coupled code that becomes difficult to maintain, evolve, and scale.
 
@@ -1564,7 +1564,7 @@ The book [.NET Microservices: Architecture for Containerized .NET Applications,]
 
 In this chapter, we'll first address communication between front-end applications and back-end microservices. We'll then look at back-end microservices communicate with each other. We'll explore the up and gRPC communication technology. Finally, we'll look new innovative communication patterns using service mesh technology. We'll also see how the Azure cloud provides different kinds of *backing services* to support cloud-native communication.
 
-# <span id="page-69-0"></span>Front-end client communication
+## <span id="page-69-0"></span>Front-end client communication
 
 In a cloud-native system, front-end clients (mobile, web, and desktop applications) require a communication channel to interact with independent back-end microservices.
 
@@ -1572,7 +1572,7 @@ What are the options?
 
 To keep things simple, a front-end client could *directly communicate* with the back-end microservices, shown in Figure 4-2.
 
-![](_page_69_Figure_5.jpeg)
+![](_page_69_Picture_5.jpeg)
 
 *Figure 4-2. Direct client to service communication*
 
@@ -1701,7 +1701,7 @@ Another advantage of Azure SignalR Service comes with implementing Serverless cl
 
 Azure SignalR Service closely integrates with other Azure services, such as Azure SQL Database, Service Bus, or Redis Cache, opening up many possibilities for your cloud-native applications.
 
-# <span id="page-76-0"></span>Service-to-service communication
+## <span id="page-76-0"></span>Service-to-service communication
 
 Moving from the front-end client, we now address back-end microservices communicate with each other.
 
@@ -1918,7 +1918,7 @@ Instead of reading from the same resource, each consumer group reads across a su
 
 For cloud-native applications that must stream large numbers of events, Azure Event Hub can be a robust and affordable solution.
 
-# <span id="page-89-0"></span>gRPC
+## <span id="page-89-0"></span>gRPC
 
 So far in this book, we've focused on [REST-based](https://docs.microsoft.com/azure/architecture/best-practices/api-design) communication. We've seen that REST is a flexible architectural style that defines CRUD-based operations against entity resources. Clients interact with resources across HTTP with a request/response communication model. While REST is widely implemented, a newer communication technology, gRPC, has gained tremendous momentum across the cloud-native community.
 
@@ -1980,7 +1980,7 @@ Figure 4-21 shows the skeleton gRPC service generated from the built-in scaffold
 
 In the previous figure, note the proto description file and service code. As you'll see shortly, Visual Studio generates additional configuration in both the Startup class and underlying project file.
 
-### <span id="page-91-0"></span>**gRPC usage**
+#### <span id="page-91-0"></span>**gRPC usage**
 
 Favor gRPC for the following scenarios:
 
@@ -2021,7 +2021,7 @@ While we strive to decouple microservices with asynchronous communication patter
 
 Looking ahead, gRPC will continue to gain traction for cloud-native systems. The performance benefits and ease of development are compelling. However, REST will likely be around for a long time. It excels for publicly exposed APIs and for backward compatibility reasons.
 
-# <span id="page-94-1"></span>Service Mesh communication infrastructure
+## <span id="page-94-1"></span>Service Mesh communication infrastructure
 
 Throughout this chapter, we've explored the challenges of microservice communication. We said that development teams need to be sensitive to how back-end services communicate with each other. Ideally, the less inter-service communication, the better. However, avoidance isn't always possible as back-end services often rely on one another to complete operations.
 
@@ -2091,7 +2091,7 @@ Designing for cloud-native, we take a different approach. On the right-side of F
 
 into a distributed data model with many smaller databases, each aligning with a microservice. When the smoke clears, we emerge with a design that exposes a *database per microservice*.
 
-# <span id="page-98-0"></span>Database-per-microservice, why?
+## <span id="page-98-0"></span>Database-per-microservice, why?
 
 This database per microservice provides many benefits, especially for systems that must evolve rapidly and support massive scale. With this model…
 
@@ -2118,7 +2118,7 @@ While relational databases remain relevant for microservices with complex data, 
 
 While encapsulating data into separate microservices can increase agility, performance, and scalability, it also presents many challenges. In the next section, we discuss these challenges along with patterns and practices to help overcome them.
 
-# <span id="page-99-0"></span>Cross-service queries
+## <span id="page-99-0"></span>Cross-service queries
 
 While microservices are independent and focus on specific functional capabilities, like inventory, shipping, or ordering, they frequently require integration with other microservices. Often the integration involves one microservice *querying* another for data. Figure 5-3 shows the scenario.
 
@@ -2142,7 +2142,7 @@ With this pattern, you place a local data table (known as a *read model*) in the
 
 The catch with this approach is that you now have duplicate data in your system. However, *strategically* duplicating data in cloud-native systems is an established practice and not considered an anti-pattern, or bad practice. Keep in mind that *one and only one service* can own a data set and have authority over it. You'll need to synchronize the read models when the system of record is updated. Synchronization is typically implemented via asynchronous messaging with a [publish/subscribe](#page-83-0)  [pattern,](#page-83-0) as shown in Figure 5.4.
 
-# <span id="page-100-0"></span>Distributed transactions
+## <span id="page-100-0"></span>Distributed transactions
 
 While querying data across microservices is difficult, implementing a transaction across several microservices is even more complex. The inherent challenge of maintaining data consistency across independent data sources in different microservices can't be understated. The lack of distributed transactions in cloud-native applications means that you must manage distributed transactions programmatically. You move from a world of *immediate consistency* to that of *eventual consistency*.
 
@@ -2166,7 +2166,7 @@ In the previous figure, the *Update Inventory* operation has failed in the Inven
 
 Saga patterns are typically choreographed as a series of related events, or orchestrated as a set of related commands. In Chapter 4, we discussed the service aggregator pattern that would be the foundation for an orchestrated saga implementation. We also discussed eventing along with Azure Service Bus and Azure Event Grid topics that would be a foundation for a choreographed saga implementation.
 
-# <span id="page-102-0"></span>High volume data
+## <span id="page-102-0"></span>High volume data
 
 Large cloud-native applications often support high-volume data requirements. In these scenarios, traditional data storage techniques can cause bottlenecks. For complex systems that deploy on a large scale, both Command and Query Responsibility Segregation (CQRS) and Event Sourcing may improve application performance.
 
@@ -2212,7 +2212,7 @@ For this pattern, consider a data store that directly supports event sourcing. A
 
 As with all patterns and technologies, implement strategically and when needed. While event sourcing can provide increased performance and scalability, it comes at the expense of complexity and a learning curve.
 
-# <span id="page-105-0"></span>Relational vs. NoSQL data
+## <span id="page-105-0"></span>Relational vs. NoSQL data
 
 Relational and NoSQL are two types of database systems commonly implemented in cloud-native apps. They're built differently, store data differently, and accessed differently. In this section, we'll look at both. Later in this chapter, we'll look at an emerging database technology called *NewSQL*.
 
@@ -2399,13 +2399,13 @@ Internally, Cosmos stores the data in a simple struct format made up of primitiv
 
 In the previous table, note the [Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction) option. This API is an evolution of Azure Table Storage. Both share the same underlying table model, but the Cosmos DB Table API adds premium enhancements not available in the Azure Storage API. The following table contrasts the features.
 
-| Feature                    | Azure Table Storage                                                                                                                  | Azure Cosmos DB                                                                |
-|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| Latency                    | Fast                                                                                                                                 | Single-digit millisecond latency for reads and<br>writes anywhere in the world |
-| Throughp<br>ut             | Limit of 20,000 operations per table<br>Unlimited operations per table                                                               |                                                                                |
-| Global<br>Distributio<br>n | Single region with optional single<br>Turnkey distributions to all regions with<br>secondary read region<br>automatic failover       |                                                                                |
-| Indexing                   | Available for partition and row key<br>Automatic indexing of all properties<br>properties only                                       |                                                                                |
-| Pricing                    | Optimized for cold workloads (low<br>Optimized for hot workloads (high<br>throughput : storage ratio)<br>throughput : storage ratio) |                                                                                |
+| Feature                                                            | Azure Table Storage                                                                                                                  | Azure Cosmos DB                                                                |
+|--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| Latency                                                            | Fast                                                                                                                                 | Single-digit millisecond latency for reads and<br>writes anywhere in the world |
+| Throughp<br>ut                                                     | Limit of 20,000 operations per table<br>Unlimited operations per table                                                               |                                                                                |
+| Global<br>Distributio<br>n                                         | Single region with optional single<br>Turnkey distributions to all regions with<br>secondary read region<br>automatic failover       |                                                                                |
+| Indexing<br>Available for partition and row key<br>properties only |                                                                                                                                      | Automatic indexing of all properties                                           |
+| Pricing                                                            | Optimized for cold workloads (low<br>Optimized for hot workloads (high<br>throughput : storage ratio)<br>throughput : storage ratio) |                                                                                |
 
 Microservices that consume Azure Table storage can easily migrate to the Cosmos DB Table API. No code changes are required.
 
@@ -2488,7 +2488,7 @@ One of the more time-consuming tasks is migrating data from one data platform to
 
 The service provides recommendations to guide you through the changes required to execute a migration, both small or large.
 
-# <span id="page-117-1"></span>Caching in a cloud-native app
+## <span id="page-117-1"></span>Caching in a cloud-native app
 
 The benefits of caching are well understood. The technique works by temporarily copying frequently accessed data from a backend data store to *fast storage* that's located closer to the application. Caching is often implemented where…
 
@@ -2537,7 +2537,7 @@ For advanced scenarios, a copy of the cached data can be [persisted to disk.](ht
 
 Azure Redis Cache is available across a number of predefined configurations and pricing tiers. The [Premium tier](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview#service-tiers) features many enterprise-level features such as clustering, data persistence, georeplication, and virtual-network isolation.
 
-# <span id="page-119-1"></span>Elasticsearch in a cloud-native app
+## <span id="page-119-1"></span>Elasticsearch in a cloud-native app
 
 Elasticsearch is a distributed search and analytics system that enables complex search capabilities across diverse types of data. It's open source and widely popular. Consider how the following companies integrate Elasticsearch into their application:
 
@@ -2613,7 +2613,7 @@ Cloud platforms can detect and mitigate many of these infrastructure issues. It 
 
 In the following sections, we'll explore defensive techniques that your service and managed cloud resources can leverage to minimize downtime and disruption.
 
-# <span id="page-123-0"></span>Application resiliency patterns
+## <span id="page-123-0"></span>Application resiliency patterns
 
 The first line of defense is application resiliency.
 
@@ -2693,7 +2693,7 @@ Testing for resiliency cannot always be done the same way that you test applicat
 
 Application resiliency is a must for handling problematic requested operations. But, it's only half of the story. Next, we cover resiliency features available in the Azure cloud.
 
-# <span id="page-126-1"></span>Azure platform resiliency
+## <span id="page-126-1"></span>Azure platform resiliency
 
 Building a reliable application in the cloud is different from traditional on-premises application development. While historically you purchased higher-end hardware to scale up, in a cloud environment you scale out. Instead of trying to prevent failures, the goal is to minimize their effects and keep the system stable.
 
@@ -2769,7 +2769,7 @@ mechanisms. The following list summarizes retry features in the many of the Azur
 - *Azure Storage.* The storage client library support retry operations. The strategies vary across Azure storage tables, blobs, and queues. As well, alternate retries switch between primary and secondary storage services locations when the geo-redundancy feature is enabled.
 - *Azure Event Hubs.* The Event Hub client library features a RetryPolicy property, which includes a configurable exponential backoff feature.
 
-# <span id="page-131-0"></span>Resilient communications
+## <span id="page-131-0"></span>Resilient communications
 
 Throughout this book, we've embraced a microservice-based architectural approach. While such an architecture provides important benefits, it presents many challenges:
 
@@ -2854,7 +2854,7 @@ Microservices and cloud-native applications go hand in hand with good DevOps pra
 
 Unfortunately, with terse definitions, there's always room to say more things. One of the key components of DevOps is ensuring that the applications running in production are functioning properly and efficiently. To gauge the health of the application in production, it's necessary to monitor the various logs and metrics being produced from the servers, hosts, and the application proper. The number of different services running in support of a cloud-native application makes monitoring the health of individual components and the application as a whole a critical challenge.
 
-# <span id="page-135-1"></span>Observability patterns
+## <span id="page-135-1"></span>Observability patterns
 
 Just as patterns have been developed to aid in the layout of code in applications, there are patterns for operating applications in a reliable way. Three useful patterns in maintaining applications have emerged: **logging**, **monitoring**, and **alerts**.
 
@@ -2911,7 +2911,7 @@ It's also helpful to follow some standard practices when building logging that s
 
 *Figure 7-4. Logs from various sources are ingested into a centralized log store.*
 
-#### <span id="page-139-0"></span>**Challenges with detecting and responding to potential app health issues**
+## <span id="page-139-0"></span>**Challenges with detecting and responding to potential app health issues**
 
 Some applications aren't mission critical. Maybe they're only used internally, and when a problem occurs, the user can contact the team responsible and the application can be restarted. However, customers often have higher expectations for the applications they consume. You should know when problems occur with your application *before* users do, or before users notify you. Otherwise, the first you know about a problem may be when you notice an angry deluge of social media posts deriding your application or even your organization.
 
@@ -2953,7 +2953,7 @@ Typically, though, a single 500 error isn't enough to determine that a problem h
 
 One of the most damaging patterns in alerting is to fire too many alerts for humans to investigate. Service owners will rapidly become desensitized to errors that they've previously investigated and found to be benign. Then, when true errors occur, they'll be lost in the noise of hundreds of false positives. The parable of the [Boy Who Cried Wolf](https://en.wikipedia.org/wiki/The_Boy_Who_Cried_Wolf) is frequently told to children to warn them of this very danger. It's important to ensure that the alerts that do fire are indicative of a real problem.
 
-# <span id="page-140-0"></span>Logging with Elastic Stack
+## <span id="page-140-0"></span>Logging with Elastic Stack
 
 There are many good centralized logging tools and they vary in cost from being free, open-source tools, to more expensive options. In many cases, the free tools are as good as or better than the paid offerings. One such tool is a combination of three open-source components: Elasticsearch, Logstash, and Kibana.
 
@@ -3058,7 +3058,7 @@ Another option is a [recently announced ELK-as-a-service offering.](https://devo
 
 • [Install Elastic Stack on Azure](https://docs.microsoft.com/azure/virtual-machines/linux/tutorial-elasticsearch)
 
-# <span id="page-143-2"></span>Monitoring in Azure Kubernetes Services
+## <span id="page-143-2"></span>Monitoring in Azure Kubernetes Services
 
 The built-in logging in Kubernetes is primitive. However, there are some great options for getting the logs out of Kubernetes and into a place where they can be properly analyzed. If you need to monitor your AKS clusters, configuring Elastic Stack for Kubernetes is a great solution.
 
@@ -3086,7 +3086,7 @@ No matter which orchestrator or operating system is running the Azure Monitor da
 
 Logging is one of the most overlooked and yet most important parts of deploying any application at scale. As the size and complexity of applications increase, then so does the difficulty of debugging them. Having top quality logs available makes debugging much easier and moves it from the realm of "nearly impossible" to "a pleasant experience".
 
-# <span id="page-145-1"></span>Azure Monitor
+## <span id="page-145-1"></span>Azure Monitor
 
 No other cloud provider has as mature of a cloud application monitoring solution than that found in Azure. Azure Monitor is an umbrella name for a collection of tools designed to provide visibility into the state of your system. It helps you understand how your cloud-native services are performing and proactively identifies issues affecting them. Figure 7-12 presents a high level of view of Azure Monitor.
 
@@ -3174,11 +3174,11 @@ Modern cloud-native identity solutions typically use access tokens that are issu
 
 Typically, the STS is only responsible for authenticating the principal. Determining their level of access to resources is left to other parts of the application.
 
-# <span id="page-151-1"></span>References
+## <span id="page-151-1"></span>References
 
 • [Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/)
 
-# <span id="page-151-2"></span>Authentication and authorization in cloud-native apps
+## <span id="page-151-2"></span>Authentication and authorization in cloud-native apps
 
 *Authentication* is the process of determining the identity of a security principal. *Authorization* is the act of granting an authenticated principal permission to perform an action or access a resource. Sometimes authentication is shortened to AuthN and authorization is shortened to AuthZ. Cloudnative applications need to rely on open HTTP-based protocols to authenticate security principals since both clients and applications could be running anywhere in the world on any platform or device. The only common factor is HTTP.
 
@@ -3194,7 +3194,7 @@ Many organizations still rely on local authentication services like Active Direc
 - [Access tokens and claims](https://docs.microsoft.com/azure/active-directory/develop/access-tokens)
 - <span id="page-152-1"></span>• [It may be time to ditch your on premises authentication services](https://oxfordcomputergroup.com/resources/o365-security-native-cloud-authentication/)
 
-# Azure Active Directory
+## Azure Active Directory
 
 Microsoft Azure Active Directory (Azure AD) offers identity and access management as a service. Customers use it to configure and maintain who users are, what information to store about them, who can access that information, who can manage it, and what apps can access it. AAD can authenticate users for applications configured to use it, providing a single sign-on (SSO) experience. It can be used on its own or be integrated with Windows AD running on premises.
 
@@ -3206,7 +3206,7 @@ Azure AD supports company branded sign-in screens, multi-factory authentication,
 
 • [Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/)
 
-# <span id="page-153-0"></span>IdentityServer for cloud-native applications
+## <span id="page-153-0"></span>IdentityServer for cloud-native applications
 
 IdentityServer is an authentication server that implements OpenID Connect (OIDC) and OAuth 2.0 standards for ASP.NET Core. It's designed to provide a common way to authenticate requests to all of your applications, whether they're web, native, mobile, or API endpoints. IdentityServer can be used to implement Single Sign-On (SSO) for multiple applications and application types. It can be used to authenticate actual users via sign-in forms and similar user interfaces as well as service-based authentication that typically involves token issuance, verification, and renewal without any user interface. IdentityServer is designed to be a customizable solution. Each instance is typically customized to suit an individual organization and/or set of applications' needs.
 
@@ -3319,7 +3319,7 @@ There has also been an increase in legislation that mandates certain data protec
 
 <span id="page-156-1"></span>In short, security is serious business.
 
-# Azure security for cloud-native apps
+## Azure security for cloud-native apps
 
 Cloud-native applications can be both easier and more difficult to secure than traditional applications. On the downside, you need to secure more smaller applications and dedicate more energy to build out the security infrastructure. The heterogeneous nature of programming languages and styles in most service deployments also means you need to pay more attention to security bulletins from many different providers.
 
@@ -3612,13 +3612,13 @@ Through good DevOps practices, it's possible to realize the advantages of cloud-
 
 There's no golden hammer when it comes to DevOps. Nobody can sell a complete and allencompassing solution for releasing and operating high-quality applications. This is because each application is wildly different from all others. However, there are tools that can make DevOps a far less daunting proposition. One of these tools is known as Azure DevOps.
 
-# <span id="page-171-0"></span>Azure DevOps
+## <span id="page-171-0"></span>Azure DevOps
 
 Azure DevOps has a long pedigree. It can trace its roots back to when Team Foundation Server first moved online and through the various name changes: Visual Studio Online and Visual Studio Team Services. Through the years, however, it has become far more than its predecessors.
 
 Azure DevOps is divided into five major components:
 
-![](_page_171_Picture_7.jpeg)
+![](_page_171_Figure_7.jpeg)
 
 *Figure 10-2 - Azure DevOps.*
 
@@ -3636,7 +3636,7 @@ The top-level organizational unit in Azure DevOps is known as a Project. Within 
 
 Fortunately, development teams have many options when selecting a repository. One of them is GitHub.
 
-# <span id="page-172-0"></span>GitHub Actions
+## <span id="page-172-0"></span>GitHub Actions
 
 Founded in 2009, GitHub is a widely popular web-based repository for hosting projects, documentation, and code. Many large tech companies, such as Apple, Amazon, Google, and mainstream corporations use GitHub. GitHub uses the open-source, distributed version control system named Git as its foundation. On top, it then adds its own set of features, including defect tracking, feature and pull requests, tasks management, and wikis for each code base.
 
@@ -3644,7 +3644,7 @@ As GitHub evolves, it too is adding DevOps features. For example, GitHub has its
 
 GitHub has over 40 million users, making it the largest host of source code in the world. In October of 2018, Microsoft purchased GitHub. Microsoft has pledged that GitHub will remain an [open platform](https://techcrunch.com/2018/06/04/microsoft-promises-to-keep-github-independent-and-open/) that any developer can plug into and extend. It continues to operate as an independent company. GitHub offers plans for enterprise, team, professional, and free accounts.
 
-# <span id="page-172-1"></span>Source control
+## <span id="page-172-1"></span>Source control
 
 Organizing the code for a cloud-native application can be challenging. Instead of a single giant application, the cloud-native applications tend to be made up of a web of smaller applications that talk with one another. As with all things in computing, the best arrangement of code remains an open question. There are examples of successful applications using different kinds of layouts, but two variants seem to have the most popularity.
 
@@ -3684,7 +3684,7 @@ To do a cross-repository change requires a commit to each repository be made in 
 
 An alternative to using many repositories is to put all the source code together in a giant, all knowing, single repository.
 
-#### <span id="page-175-0"></span>**Single repository**
+## <span id="page-175-0"></span>**Single repository**
 
 In this approach, sometimes referred to as a [monorepository,](https://danluu.com/monorepo/) all the source code for every service is put into the same repository. At first, this approach seems like a terrible idea likely to make dealing with source code unwieldy. There are, however, some marked advantages to working this way.
 
@@ -3704,7 +3704,7 @@ Frequently the argument for using a single repository boils down to an argument 
 
 In the end, either solution can be used to host the source code for microservices. However, in most cases, the management, and engineering overhead of operating in a single repository isn't worth the meager advantages. Splitting code up over multiple repositories encourages better separation of concerns and encourages autonomy among development teams.
 
-#### <span id="page-176-0"></span>**Standard directory structure**
+## <span id="page-176-0"></span>**Standard directory structure**
 
 Regardless of the single versus multiple repositories debate each service will have its own directory. One of the best optimizations to allow developers to cross between projects quickly is to maintain a standard directory structure.
 
@@ -3716,7 +3716,7 @@ Whenever a new project is created, a template that puts in place the correct str
 
 There are many tools that can provide templating for an entire directory, containing several source code directories. [Yeoman](https://yeoman.io/) is popular in the JavaScript world and GitHub have recently released [Repository Templates,](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/) which provide much of the same functionality.
 
-# <span id="page-176-1"></span>Task management
+## <span id="page-176-1"></span>Task management
 
 Managing tasks in any project can be difficult. Up front there are countless questions to be answered about the sort of workflows to set up to ensure optimal developer productivity.
 
@@ -3748,7 +3748,7 @@ There are different kinds of views into the issues in Azure Boards. Items that a
 
 By now, it should be apparent that there's a great deal of power in the Boards in Azure DevOps. For developers, there are easy views of what is being worked on. For project managers views into upcoming work as well as an overview of existing work. For managers, there are plenty of reports about resourcing and capacity. Unfortunately, there's nothing magical about cloud-native applications that eliminate the need to track work. But if you must track work, there are a few places where the experience is better than in Azure DevOps.
 
-# <span id="page-178-0"></span>CI/CD pipelines
+## <span id="page-178-0"></span>CI/CD pipelines
 
 Almost no change in the software development life cycle has been so revolutionary as the advent of continuous integration (CI) and continuous delivery (CD). Building and running automated tests against the source code of a project as soon as a change is checked in catches mistakes early. Prior to the advent of continuous integration builds, it wouldn't be uncommon to pull code from the
 
@@ -3847,15 +3847,15 @@ Builds take care of compiling the software into a shippable package, but the art
 
 Each stage in the build can be automatically triggered by the completion of the previous phase. In many cases, however, this isn't desirable. Moving code into production might require approval from somebody. The Releases tool supports this by allowing approvers at each step of the release pipeline. Rules can be set up such that a specific person or group of people must sign off on a release before it makes into production. These gates allow for manual quality checks and also for compliance with any regulatory requirements related to control what goes into production.
 
-#### <span id="page-182-0"></span>**Everybody gets a build pipeline**
+## <span id="page-182-0"></span>**Everybody gets a build pipeline**
 
 There's no cost to configuring many build pipelines, so it's advantageous to have at least one build pipeline per microservice. Ideally, microservices are independently deployable to any environment so having each one able to be released via its own pipeline without releasing a mass of unrelated code is perfect. Each pipeline can have its own set of approvals allowing for variations in build process for each service.
 
-#### <span id="page-182-1"></span>**Versioning releases**
+## <span id="page-182-1"></span>**Versioning releases**
 
 One drawback to using the Releases functionality is that it can't be defined in a checked-in azurepipelines.yml file. There are many reasons you might want to do that from having per-branch release definitions to including a release skeleton in your project template. Fortunately, work is ongoing to shift some of the stages support into the Build component. This will be known as multi-stage build and the [first version is available now!](https://devblogs.microsoft.com/devops/whats-new-with-azure-pipelines/)
 
-# <span id="page-182-2"></span>Feature flags
+## <span id="page-182-2"></span>Feature flags
 
 In chapter 1, we affirmed that cloud native is much about speed and agility. Users expect rapid responsiveness, innovative features, and zero downtime. Feature flags are a modern deployment technique that helps increase agility for cloud-native applications. They enable you to deploy new features into a production environment, but restrict their availability. With the flick of a switch, you can activate a new feature for specific users without restarting the app or deploying new code. They separate the release of new features from their code deployment.
 
@@ -3870,7 +3870,7 @@ Other use cases for feature flags include:
 
 Feature flags also promote trunk-based development. It's a source-control branching model where developers collaborate on features in a single branch. The approach minimizes the risk and complexity of merging large numbers of long-running feature branches. Features are unavailable until activated.
 
-#### <span id="page-183-0"></span>**Implementing feature flags**
+## <span id="page-183-0"></span>**Implementing feature flags**
 
 At its core, a feature flag is a reference to a simple decision object. It returns a Boolean state of on or off. The flag typically wraps a block of code that encapsulates a feature capability. The state of the flag determines whether that code block executes for a given user. Figure 10-11 shows the implementation.
 
@@ -3926,7 +3926,7 @@ public class ProductController : Controller
 
 The Feature Management libraries manage the feature flag lifecycle behind the scenes. For example, to minimize high numbers of calls to the configuration store, the libraries cache flag states for a specified duration. They can guarantee the immutability of flag states during a request call. They also offer a Point-in-time snapshot. You can reconstruct the history of any key-value and provide its past value at any moment within the previous seven days.
 
-# <span id="page-184-0"></span>Infrastructure as code
+## <span id="page-184-0"></span>Infrastructure as code
 
 Cloud-native systems embrace microservices, containers, and modern system design to achieve speed and agility. They provide automated build and release stages to ensure consistent and quality code. But, that's only part of the story. How do you provision the cloud environments upon which these systems run?
 
@@ -3934,7 +3934,7 @@ Modern cloud-native applications embrace the widely accepted practice of [Infras
 
 Tools like Azure Resource Manager (ARM), Terraform, and the Azure Command Line Interface (CLI) enable you to declaratively script the cloud infrastructure you require.
 
-## <span id="page-184-1"></span>**Azure Resource Manager templates**
+#### <span id="page-184-1"></span>**Azure Resource Manager templates**
 
 ARM stands for [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview). It's an API provisioning engine that is built into Azure and exposed as an API service. ARM enables you to deploy, update, delete, and manage the resources contained in Azure resource group in a single, coordinated operation. You provide the engine with a JSON-based template that specifies the resources you require and their configuration. ARM automatically orchestrates the deployment in the correct order respecting dependencies. The engine ensures idempotency. If a desired resource already exists with the same configuration, provisioning will be ignored.
 
@@ -4044,7 +4044,7 @@ Figure 10-17 shows a YAML snippet that lists the version of Azure CLI and the de
 
 In the article, [What is Infrastructure as Code](https://docs.microsoft.com/devops/deliver/what-is-infrastructure-as-code), Author Sam Guckenheimer describes how, "Teams who implement IaC can deliver stable environments rapidly and at scale. Teams avoid manual configuration of environments and enforce consistency by representing the desired state of their environments via code. Infrastructure deployments with IaC are repeatable and prevent runtime issues caused by configuration drift or missing dependencies. DevOps teams can work together with a unified set of practices and tools to deliver applications and their supporting infrastructure rapidly, reliably, and at scale."
 
-# <span id="page-187-0"></span>Cloud Native Application Bundles
+## <span id="page-187-0"></span>Cloud Native Application Bundles
 
 A key property of cloud-native applications is that they leverage the capabilities of the cloud to speed up development. This design often means that a full application uses different kinds of technologies. Applications may be shipped in Docker containers, some services may use Azure Functions, while other parts may run directly on virtual machines allocated on large metal servers with hardware GPU acceleration. No two cloud-native applications are the same, so it's been difficult to provide a single mechanism for shipping them.
 
@@ -4109,11 +4109,11 @@ The bundle.json also defines a set of parameters that are passed down into the T
 
 The CNAB format is also flexible, allowing it to be used against any cloud. It can even be used against on-premises solutions such as [OpenStack.](https://www.openstack.org/)
 
-#### <span id="page-189-0"></span>**DevOps Decisions**
+## <span id="page-189-0"></span>**DevOps Decisions**
 
 There are so many great tools in the DevOps space these days and even more fantastic books and papers on how to succeed. A favorite book to get started on the DevOps journey is [The Phoenix](https://www.oreilly.com/library/view/the-phoenix-project/9781457191350/)  [Project,](https://www.oreilly.com/library/view/the-phoenix-project/9781457191350/) which follows the transformation of a fictional company from NoOps to DevOps. One thing is for certain: DevOps is no longer a "nice to have" when deploying complex, Cloud Native Applications. It's a requirement and should be planned for and resourced at the start of any project.
 
-#### <span id="page-189-1"></span>**References**
+## <span id="page-189-1"></span>**References**
 
 - [Azure DevOps](https://azure.microsoft.com/services/devops/)
 - [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)

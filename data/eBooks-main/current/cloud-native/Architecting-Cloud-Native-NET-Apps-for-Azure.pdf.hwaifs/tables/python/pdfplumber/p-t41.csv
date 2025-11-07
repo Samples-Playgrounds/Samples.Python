@@ -1,0 +1,20 @@
+,0
+0,apiVersion: v1
+1,kind: Service
+2,metadata:
+3,name: {{ .Values.app.svc.marketing }}
+4,labels:
+5,"app: {{ template ""marketing-api.name"" . }}"
+6,"chart: {{ template ""marketing-api.chart"" . }}"
+7,release: {{ .Release.Name }}
+8,heritage: {{ .Release.Service }}
+9,spec:
+10,type: {{ .Values.service.type }}
+11,ports:
+12,- port: {{ .Values.service.port }}
+13,targetPort: http
+14,protocol: TCP
+15,name: http
+16,selector:
+17,"app: {{ template ""marketing-api.name"" . }}"
+18,release: {{ .Release.Name }}

@@ -1,0 +1,4 @@
+|    | public ICommand SignInCommand { get; }                                  |
+|---:|:------------------------------------------------------------------------|
+|  0 | ...                                                                     |
+|  1 | SignInCommand = new AsyncRelayCommand(async () => await SignInAsync()); |

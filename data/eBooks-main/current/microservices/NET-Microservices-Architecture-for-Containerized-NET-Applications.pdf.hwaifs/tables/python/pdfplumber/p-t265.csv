@@ -1,0 +1,23 @@
+,0
+0,// At OrderingContext.cs from eShopOnContainers
+1,protected override void OnModelCreating(ModelBuilder modelBuilder)
+2,{
+3,// ...
+4,modelBuilder.ApplyConfiguration(new OrderEntityTypeConfiguration());
+5,// Other entities' configuration ...
+6,}
+7,
+8,// At OrderEntityTypeConfiguration.cs from eShopOnContainers
+9,class OrderEntityTypeConfiguration : IEntityTypeConfiguration<Order>
+10,{
+11,public void Configure(EntityTypeBuilder<Order> orderConfiguration)
+12,{
+13,"orderConfiguration.ToTable(""orders"", OrderingContext.DEFAULT_SCHEMA);"
+14,
+15,orderConfiguration.HasKey(o => o.Id);
+16,
+17,orderConfiguration.Ignore(b => b.DomainEvents);
+18,
+19,orderConfiguration.Property(o => o.Id)
+20,".UseHiLo(""orderseq"", OrderingContext.DEFAULT_SCHEMA);"
+21,
