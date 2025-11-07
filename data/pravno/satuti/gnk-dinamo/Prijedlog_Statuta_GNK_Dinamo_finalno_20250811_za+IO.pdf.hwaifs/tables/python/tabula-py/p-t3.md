@@ -1,6 +1,6 @@
-|    | d.   | koje svojim                                                                             |   djelovanjem |   mogu |   neposredno |   utjecati |   na |   sustav |   natjecanja |   u |
-|---:|:-----|:----------------------------------------------------------------------------------------|--------------:|-------:|-------------:|-----------:|-----:|---------:|-------------:|----:|
-|  0 | nan  | nogometnom sportu, a osobito sportaši koji su profesionalci prema Zakonu o sportu,      |           nan |    nan |          nan |        nan |  nan |      nan |          nan | nan |
-|  1 | nan  | menadžeri i posrednici u sportu, kao i osobe koje su to bile u razdoblju od posljednjih |           nan |    nan |          nan |        nan |  nan |      nan |          nan | nan |
-|  2 | nan  | godinu dana;                                                                            |           nan |    nan |          nan |        nan |  nan |      nan |          nan | nan |
-|  3 | e.   | koje su posljednjih godinu dana bile članovi ili članovi tijela pravne osobe koja       |           nan |    nan |          nan |        nan |  nan |      nan |          nan | nan |
+|    | d.   | koje svojim                                                                             | djelovanjem   | mogu   | neposredno   | utjecati   | na   | sustav   | natjecanja   | u   |
+|---:|:-----|:----------------------------------------------------------------------------------------|:--------------|:-------|:-------------|:-----------|:-----|:---------|:-------------|:----|
+|  0 |      | nogometnom sportu, a osobito sportaši koji su profesionalci prema Zakonu o sportu,      |               |        |              |            |      |          |              |     |
+|  1 |      | menadžeri i posrednici u sportu, kao i osobe koje su to bile u razdoblju od posljednjih |               |        |              |            |      |          |              |     |
+|  2 |      | godinu dana;                                                                            |               |        |              |            |      |          |              |     |
+|  3 | e.   | koje su posljednjih godinu dana bile članovi ili članovi tijela pravne osobe koja       |               |        |              |            |      |          |              |     |

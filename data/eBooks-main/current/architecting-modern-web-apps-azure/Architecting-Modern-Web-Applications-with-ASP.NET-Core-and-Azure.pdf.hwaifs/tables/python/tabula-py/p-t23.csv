@@ -1,0 +1,22 @@
+,{
+0,app.UseMigrationsEndPoint();
+1,}
+2,else
+3,{
+4,"app.UseExceptionHandler(""/Error"");"
+5,// The default HSTS value is 30 days. You may want to change this for production
+6,"scenarios, see https://aka.ms/aspnetcore-hsts."
+7,app.UseHsts();
+8,}
+9,
+10,app.UseHttpsRedirection();
+11,app.UseStaticFiles();
+12,
+13,app.UseRouting();
+14,
+15,app.UseAuthentication();
+16,app.UseAuthorization();
+17,
+18,app.MapRazorPages();
+19,
+20,app.Run();

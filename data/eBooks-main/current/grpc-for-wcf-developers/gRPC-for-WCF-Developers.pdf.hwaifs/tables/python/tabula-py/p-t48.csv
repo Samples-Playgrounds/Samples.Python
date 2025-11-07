@@ -1,0 +1,3 @@
+,<ItemGroup>
+0,"<Protobuf Include=""Protos\portfolios.proto"" GrpcServices=""Server"" />"
+1,</ItemGroup>

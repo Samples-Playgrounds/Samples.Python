@@ -5,7 +5,7 @@
 |  2 | ; MinOpts code                                         |
 |  3 | ; rbp based frame                                      |
 |  4 | ; partially interruptible                              |
-|  5 | nan                                                    |
+|  5 |                                                        |
 |  6 | G_M000_IG01:                ;; offset=0000H            |
 |  7 | 55                   push     rbp                      |
 |  8 | 4883EC20             sub      rsp, 32                  |

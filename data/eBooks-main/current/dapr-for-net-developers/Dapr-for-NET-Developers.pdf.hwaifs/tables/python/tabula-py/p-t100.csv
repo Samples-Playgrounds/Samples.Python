@@ -1,0 +1,7 @@
+,Property,Value,Description
+0,defaultAccess,allow or,Allows or denies access to all secrets in the specified secret store.
+1,,deny,This property is optional with a default value of allow.
+2,allowedSecrets,List of,Secrets specified in the array will be accessible. This property is
+3,,secret keys,optional.
+4,deniedSecrets,List of,Secrets specified in the array will NOT be accessible. This property is
+5,,secret keys,optional.

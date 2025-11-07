@@ -1,0 +1,2 @@
+,az aks update --name explore-docker-aks --resource-group explore-docker-aks-rg --attach-acr
+0,exploredocker

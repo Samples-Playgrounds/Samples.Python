@@ -1,0 +1,26 @@
+,public class CachedCatalogService : ICatalogService
+0,{
+1,private readonly IMemoryCache _cache;
+2,private readonly CatalogService _catalogService;
+3,"private static readonly string _brandsKey = ""brands"";"
+4,"private static readonly string _typesKey = ""types"";"
+5,private static readonly TimeSpan _defaultCacheDuration = TimeSpan.FromSeconds(30);
+6,
+7,public CachedCatalogService(
+8,"IMemoryCache cache,"
+9,CatalogService catalogService)
+10,{
+11,_cache = cache;
+12,_catalogService = catalogService;
+13,}
+14,
+15,public async Task<IEnumerable<SelectListItem>> GetBrands()
+16,{
+17,"return await _cache.GetOrCreateAsync(_brandsKey, async entry =>"
+18,{
+19,entry.SlidingExpiration = _defaultCacheDuration;
+20,return await _catalogService.GetBrands();
+21,});
+22,}
+23,
+24,"public async Task<Catalog> GetCatalogItems(int pageIndex, int itemsPage, int? brandID,"

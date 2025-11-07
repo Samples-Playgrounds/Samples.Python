@@ -1,8 +1,8 @@
 |    | version: '3.4'                                                     |
 |---:|:-------------------------------------------------------------------|
-|  0 | nan                                                                |
+|  0 |                                                                    |
 |  1 | services:                                                          |
-|  2 | nan                                                                |
+|  2 |                                                                    |
 |  3 | webmvc:                                                            |
 |  4 | image: eshop/web                                                   |
 |  5 | environment:                                                       |
@@ -13,7 +13,7 @@
 | 10 | depends_on:                                                        |
 | 11 | - catalog-api                                                      |
 | 12 | - ordering-api                                                     |
-| 13 | nan                                                                |
+| 13 |                                                                    |
 | 14 | catalog-api:                                                       |
 | 15 | image: eshop/catalog-api                                           |
 | 16 | environment:                                                       |
@@ -22,6 +22,6 @@
 | 19 | - "81:80"                                                          |
 | 20 | depends_on:                                                        |
 | 21 | - sqldata                                                          |
-| 22 | nan                                                                |
+| 22 |                                                                    |
 | 23 | ordering-api:                                                      |
 | 24 | image: eshop/ordering-api                                          |

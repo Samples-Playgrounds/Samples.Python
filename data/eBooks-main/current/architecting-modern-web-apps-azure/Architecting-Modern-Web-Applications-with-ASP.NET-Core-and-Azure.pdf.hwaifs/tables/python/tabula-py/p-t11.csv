@@ -1,0 +1,17 @@
+,public class OrderController : Controller
+0,{
+1,private readonly IMediator _mediator;
+2,
+3,public OrderController(IMediator mediator)
+4,{
+5,_mediator = mediator;
+6,}
+7,
+8,[HttpGet]
+9,public async Task<IActionResult> MyOrders()
+10,{
+11,var viewModel = await _mediator.Send(new GetMyOrders(User.Identity.Name));
+12,return View(viewModel);
+13,}
+14,// other actions implemented similarly
+15,}

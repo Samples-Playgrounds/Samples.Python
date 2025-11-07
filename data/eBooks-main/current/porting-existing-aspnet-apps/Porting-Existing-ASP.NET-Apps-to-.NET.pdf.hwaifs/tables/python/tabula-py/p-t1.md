@@ -1,11 +1,11 @@
 |    | var builder = WebApplication.CreateBuilder(args);                                |
 |---:|:---------------------------------------------------------------------------------|
-|  0 | nan                                                                              |
+|  0 |                                                                                  |
 |  1 | // Add services to the container.                                                |
 |  2 | builder.Services.AddRazorPages();                                                |
-|  3 | nan                                                                              |
+|  3 |                                                                                  |
 |  4 | var app = builder.Build();                                                       |
-|  5 | nan                                                                              |
+|  5 |                                                                                  |
 |  6 | // Configure the HTTP request pipeline.                                          |
 |  7 | if (!app.Environment.IsDevelopment())                                            |
 |  8 | {                                                                                |
@@ -14,14 +14,14 @@
 | 11 | scenarios, see https://aka.ms/aspnetcore-hsts.                                   |
 | 12 | app.UseHsts();                                                                   |
 | 13 | }                                                                                |
-| 14 | nan                                                                              |
+| 14 |                                                                                  |
 | 15 | app.UseHttpsRedirection();                                                       |
 | 16 | app.UseStaticFiles();                                                            |
-| 17 | nan                                                                              |
+| 17 |                                                                                  |
 | 18 | app.UseRouting();                                                                |
-| 19 | nan                                                                              |
+| 19 |                                                                                  |
 | 20 | app.UseAuthorization();                                                          |
-| 21 | nan                                                                              |
+| 21 |                                                                                  |
 | 22 | app.MapRazorPages();                                                             |
-| 23 | nan                                                                              |
+| 23 |                                                                                  |
 | 24 | app.Run();                                                                       |

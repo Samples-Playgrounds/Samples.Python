@@ -5,8 +5,8 @@
 |  2 | {                                                                         |
 |  3 | app.UseDeveloperExceptionPage();                                          |
 |  4 | }                                                                         |
-|  5 | nan                                                                       |
+|  5 |                                                                           |
 |  6 | app.UseStaticFiles();                                                     |
-|  7 | nan                                                                       |
+|  7 |                                                                           |
 |  8 | // ...                                                                    |
 |  9 | }                                                                         |

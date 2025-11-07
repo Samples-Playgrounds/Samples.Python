@@ -1,0 +1,31 @@
+,Unnamed: 0,Project,Characteristics
+0,Cockroach DB,,"An ACID-compliant, relational database that"
+1,,,scales globally. Add a new node to a cluster and
+2,,,CockroachDB takes care of balancing the data
+3,,,"across instances and geographies. It creates,"
+4,,,"manages, and distributes replicas to ensure"
+5,,,reliability. It’s open source and freely available.
+6,TiDB,,An open-source database that supports Hybrid
+7,,,Transactional and Analytical Processing (HTAP)
+8,,,workloads. It is MySQL-compatible and features
+9,,,"horizontal scalability, strong consistency, and"
+10,,,high availability. TiDB acts like a MySQL server.
+11,,,You can continue to use existing MySQL client
+12,,,"libraries, without requiring extensive code"
+13,,,changes to your application.
+14,YugabyteDB,,"An open source, high-performance, distributed"
+15,,,"SQL database. It supports low query latency,"
+16,,,"resilience against failures, and global data"
+17,,,distribution. YugabyteDB is PostgreSQL-
+18,,,compatible and handles scale-out RDBMS and
+19,,,internet-scale OLTP workloads. The product also
+20,,,supports NoSQL and is compatible with
+21,,,Cassandra.
+22,Vitess,,"Vitess is a database solution for deploying,"
+23,,,"scaling, and managing large clusters of MySQL"
+24,,,instances. It can run in a public or private cloud
+25,,,architecture. Vitess combines and extends many
+26,,,important MySQL features and features both
+27,,,vertical and horizontal sharding support.
+28,,,"Originated by YouTube, Vitess has been serving"
+29,,,all YouTube database traffic since 2011.

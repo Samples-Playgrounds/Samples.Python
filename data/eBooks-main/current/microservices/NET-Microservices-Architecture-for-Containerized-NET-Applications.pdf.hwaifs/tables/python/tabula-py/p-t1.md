@@ -1,3 +1,3 @@
-|    |   Virtual Machines |   Docker Containers |
-|---:|-------------------:|--------------------:|
-|  0 |                nan |                 nan |
+|    | Virtual Machines   | Docker Containers   |
+|---:|:-------------------|:--------------------|
+|  0 |                    |                     |

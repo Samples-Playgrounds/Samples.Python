@@ -1,0 +1,2 @@
+,enum Region {
+0,REGION_NONE = 0;

@@ -1,0 +1,6 @@
+|    | app.UseEndpoints(endpoints =>                          |
+|---:|:-------------------------------------------------------|
+|  0 | {                                                      |
+|  1 | endpoints.MapControllerRoute(name: "default", pattern: |
+|  2 | "{controller=Home}/{action=Index}/{id?}");             |
+|  3 | });                                                    |

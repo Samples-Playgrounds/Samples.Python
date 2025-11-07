@@ -1,9 +1,9 @@
 |    | .NET Framework   |
 |---:|:-----------------|
 |  0 | apps             |
-|  1 | nan              |
+|  1 |                  |
 |  2 | .NET Core apps   |
-|  3 | nan              |
+|  3 |                  |
 |  4 | Linux Containers |
-|  5 | nan              |
+|  5 |                  |
 |  6 | Windows Server   |

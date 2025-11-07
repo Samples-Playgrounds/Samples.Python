@@ -18,7 +18,7 @@
 | 15 | c. Sustavno izgrađivati povjerenje među članovima i navijačima Kluba kroz otvoren        |
 | 16 | dijalog i uključivanje u odlučivanje, temeljem participativnog modela upravljanja.       |
 | 17 | b sukladno ciljevima djeluje na području sporta.                                         |
-| 18 | nan                                                                                      |
+| 18 |                                                                                          |
 | 19 | Članak 12.                                                                               |
 | 20 | upravljanja Klubom su:                                                                   |
 | 21 | a. Zakonitost, etičnost i odgovornost: Klub djeluje u skladu sa zakonima, najvišim       |

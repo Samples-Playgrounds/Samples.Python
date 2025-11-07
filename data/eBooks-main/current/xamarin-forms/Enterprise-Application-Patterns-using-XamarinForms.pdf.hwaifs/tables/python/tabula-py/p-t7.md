@@ -10,7 +10,7 @@
 |  7 | {                                                            |
 |  8 | return;                                                      |
 |  9 | }                                                            |
-| 10 | nan                                                          |
+| 10 |                                                              |
 | 11 | bool hasLine = (bool)newValue;                               |
 | 12 | if (hasLine)                                                 |
 | 13 | {                                                            |

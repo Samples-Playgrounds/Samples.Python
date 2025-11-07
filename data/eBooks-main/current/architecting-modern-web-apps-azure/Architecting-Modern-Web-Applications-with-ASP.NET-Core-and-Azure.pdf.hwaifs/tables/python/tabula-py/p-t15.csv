@@ -1,0 +1,10 @@
+,public class Startup
+0,{
+1,public Startup(IHostingEnvironment env)
+2,{
+3,var builder = new ConfigurationBuilder()
+4,.SetBasePath(env.ContentRootPath)
+5,".AddJsonFile(""appsettings.json"", optional: false, reloadOnChange: true)"
+6,".AddJsonFile($""appsettings.{env.EnvironmentName}.json"", optional: true);"
+7,}
+8,}

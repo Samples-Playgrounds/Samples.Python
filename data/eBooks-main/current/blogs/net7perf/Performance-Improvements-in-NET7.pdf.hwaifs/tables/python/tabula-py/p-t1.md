@@ -12,7 +12,7 @@
 |  9 | using System.Threading;                                             |
 | 10 | using System.Threading.Tasks;                                       |
 | 11 | using System.Xml;                                                   |
-| 12 | nan                                                                 |
+| 12 |                                                                     |
 | 13 | [MemoryDiagnoser(displayGenColumns: false)]                         |
 | 14 | [DisassemblyDiagnoser]                                              |
 | 15 | [HideColumns("Error", "StdDev", "Median", "RatioSD")]               |
@@ -20,6 +20,6 @@
 | 17 | {                                                                   |
 | 18 | static void Main(string[] args) =>                                  |
 | 19 | BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args); |
-| 20 | nan                                                                 |
+| 20 |                                                                     |
 | 21 | // ... copy [Benchmark]s here                                       |
 | 22 | }                                                                   |

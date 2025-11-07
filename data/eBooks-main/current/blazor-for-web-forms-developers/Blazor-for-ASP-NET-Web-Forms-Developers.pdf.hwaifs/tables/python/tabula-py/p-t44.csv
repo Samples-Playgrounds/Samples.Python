@@ -1,0 +1,14 @@
+,<h1>Component with child content</h1>
+0,
+1,<div>@ChildContent</div>
+2,
+3,@code {
+4,[Parameter]
+5,public RenderFragment ChildContent { get; set; }
+6,}
+7,A parent component can then supply child content using normal Razor syntax.
+8,<ChildContentComponent>
+9,<ChildContent>
+10,<p>The time is @DateTime.Now</p>
+11,</ChildContent>
+12,</ChildContentComponent>

@@ -1,0 +1,9 @@
+,public class MyConfig
+0,{
+1,public MyConfigSection section0 { get; set;}
+2,
+3,public MyConfigSection section1 { get; set;}
+4,}
+5,
+6,public class MyConfigSection
+7,{

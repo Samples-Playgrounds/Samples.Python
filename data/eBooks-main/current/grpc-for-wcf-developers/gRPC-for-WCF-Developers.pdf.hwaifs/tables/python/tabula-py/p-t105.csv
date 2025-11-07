@@ -1,0 +1,13 @@
+,var builder = WebApplication.CreateBuilder(args);
+0,var serverCert = ObtainServerCertificate();
+1,builder.WebHost.UseKestrel(kestrelServerOptions => {
+2,kestrelServerOptions.ConfigureHttpsDefaults(opt =>
+3,{
+4,opt.ClientCertificateMode = ClientCertificateMode.RequireCertificate;
+5,
+6,// Verify that client certificate was issued by same CA as server certificate
+7,"opt.ClientCertificateValidation = (certificate, chain, errors) =>"
+8,certificate.Issuer == serverCert.Issuer;
+9,});
+10,
+11,});

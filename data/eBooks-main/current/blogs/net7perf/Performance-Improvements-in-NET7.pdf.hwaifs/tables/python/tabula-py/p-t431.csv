@@ -1,0 +1,4 @@
+,if (value is SqlDouble i)
+0,{
+1,return CompareTo(i);
+2,}
