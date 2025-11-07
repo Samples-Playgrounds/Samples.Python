@@ -7,7 +7,7 @@ rm *.pyc
 """
 python -m venv .venv
 source .venv/bin/activate
-pip install pdftables
+pip3 install pdftables
 pip freeze > requirements.txt
 """
 
@@ -16,7 +16,7 @@ pip install -r requirements.txt
 python main.py
 """
 
-import api_camelot as api
+import api_extract_tables_pdftables as api
 
 root="../../../../../../../data"
 
@@ -71,7 +71,7 @@ def main():
    for source in sources:
       if source.endswith(".pdf"):
          print(f"pdftables <- source = {source}")
-         api.extract_tables_to_files(source)
+         api.extract_tables_to_files_from_pdf_document(source)
 
 
 if __name__ == '__main__':
