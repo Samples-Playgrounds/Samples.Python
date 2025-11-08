@@ -15,7 +15,7 @@ def extract_tables_to_files_from_pdf_document (source: str) -> str:
     directory = f"{source}.hwaifs/tables/python/marker/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
-    rendered = converter(source=source, output_dir=directory)
+    rendered = converter(source)
     text, _, images = text_from_rendered(rendered)
 
     return
