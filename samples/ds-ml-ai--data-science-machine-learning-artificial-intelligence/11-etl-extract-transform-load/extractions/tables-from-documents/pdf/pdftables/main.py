@@ -7,7 +7,7 @@ rm *.pyc
 """
 python -m venv .venv
 source .venv/bin/activate
-pip3 install pdftables
+pip3 install pdftables --no-cache-dir
 pip freeze > requirements.txt
 """
 
