@@ -1,15 +1,20 @@
 from docling.document_converter import DocumentConverter
 
+import json
+import datetime
 import time
 from time import perf_counter
-from timer import function_timer
+from time import perf_counter_ns
+# from timer import timer
 
-@function_timer()
+#@timer()
 def extract_text_to_file_from_any_document (source: str) -> str:
 
-    time_start_1 = time()
+    #---------------------------------------------------------------------------
+    time_start_1 = time.time()
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
+    #---------------------------------------------------------------------------
 
     converter = DocumentConverter()
     result_doc = converter.convert(source)
@@ -22,14 +27,16 @@ def extract_text_to_file_from_any_document (source: str) -> str:
     with open(f"{directory}/content.txt", "w") as f:
         f.write(result_txt) 
 
-    time_stop_1 = time()
+    #---------------------------------------------------------------------------
+    time_stop_1 = time.time()
     time_total_1 = time_stop_1 - time_start_1
     time_stop_2 = perf_counter()
-    time_end_2 = (time_stop_2 - time_start_2)
-    time_stop_3 = perf_counter()
-    time_end_3 = (time_stop_3 - time_start_3) / 1_000_000_000  # convert to seconds
+    time_total_2 = time_stop_2 - time_start_2
+    time_stop_3 = perf_counter_ns()
+    time_total_3 = (time_stop_3 - time_start_3) / 1_000_000_000
 
     times = {
+        "function_method_name" : "extract_text_to_file_from_any_document",
         "time_start_1": time_start_1,
         "time_end_1": time_stop_1,
         "time_total_1": time_total_1,
@@ -42,18 +49,21 @@ def extract_text_to_file_from_any_document (source: str) -> str:
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
-    with open(f"{directory}/time-{timestamp}.json", "w") as f:
+    with open(f"{directory}/time-{timestamp}.python.json", "w") as f:
         f.write(json.dumps(times, indent=4))
+    #---------------------------------------------------------------------------
 
     return result_txt
 
 
-@function_timer()
+#@timer()
 def extract_markdown_to_file_from_any_document (source: str) -> str:
 
-    time_start_1 = time()
+    #---------------------------------------------------------------------------
+    time_start_1 = time.time()
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
+    #---------------------------------------------------------------------------
 
     converter = DocumentConverter()
     result_doc = converter.convert(source)
@@ -66,14 +76,16 @@ def extract_markdown_to_file_from_any_document (source: str) -> str:
     with open(f"{directory}/content.md", "w") as f:
         f.write(result_md)
 
-    time_stop_1 = time()
+    #---------------------------------------------------------------------------
+    time_stop_1 = time.time()
     time_total_1 = time_stop_1 - time_start_1
     time_stop_2 = perf_counter()
-    time_end_2 = (time_stop_2 - time_start_2)
-    time_stop_3 = perf_counter()
-    time_end_3 = (time_stop_3 - time_start_3) / 1_000_000_000  # convert to seconds
+    time_total_2 = time_stop_2 - time_start_2
+    time_stop_3 = perf_counter_ns()
+    time_total_3 = (time_stop_3 - time_start_3) / 1_000_000_000
 
     times = {
+        "function_method_name" : "extract_markdown_to_file_from_any_document",
         "time_start_1": time_start_1,
         "time_end_1": time_stop_1,
         "time_total_1": time_total_1,
@@ -84,6 +96,11 @@ def extract_markdown_to_file_from_any_document (source: str) -> str:
         "time_end_3": time_stop_3,
         "time_total_3": time_total_3,
     }
+
+    timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+    with open(f"{directory}/time-{timestamp}.python.json", "w") as f:
+        f.write(json.dumps(times, indent=4))
+    #---------------------------------------------------------------------------
 
     return result_md
 
@@ -106,7 +123,15 @@ from docling.pipeline.standard_pdf_pipeline import StandardPdfPipeline
 from docling.datamodel.pipeline_options import PipelineOptions, EasyOcrOptions, TesseractOcrOptions
 from docling.datamodel.base_models import ConversionStatus, InputFormat
 
+#@timer()
 def extract_markdown_to_file_from_any_document_complex (source: str) -> str:
+
+    #---------------------------------------------------------------------------
+    time_start_1 = time.time()
+    time_start_2 = perf_counter()
+    time_start_3 = perf_counter_ns()
+    #---------------------------------------------------------------------------
+
     doc_converter = (
                 DocumentConverter(  # all of the below is optional, has internal defaults.
                 allowed_formats=[
@@ -160,5 +185,31 @@ def extract_markdown_to_file_from_any_document_complex (source: str) -> str:
     # save to file
     with open(f"{directory}content.filetype-agnostic.md", "w") as f:
         f.write(result_md)
+
+    #---------------------------------------------------------------------------
+    time_stop_1 = time.time()
+    time_total_1 = time_stop_1 - time_start_1
+    time_stop_2 = perf_counter()
+    time_total_2 = time_stop_2 - time_start_2
+    time_stop_3 = perf_counter_ns()
+    time_total_3 = (time_stop_3 - time_start_3) / 1_000_000_000
+
+    times = {
+        "function_method_name" : "extract_markdown_to_file_from_any_document_complex",
+        "time_start_1": time_start_1,
+        "time_end_1": time_stop_1,
+        "time_total_1": time_total_1,
+        "time_start_2": time_start_2,
+        "time_end_2": time_stop_2,
+        "time_total_2": time_total_2,
+        "time_start_3": time_start_3,
+        "time_end_3": time_stop_3,
+        "time_total_3": time_total_3,
+    }
+
+    timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+    with open(f"{directory}/time-{timestamp}.python.json", "w") as f:
+        f.write(json.dumps(times, indent=4))
+    #---------------------------------------------------------------------------
 
     return result_md
