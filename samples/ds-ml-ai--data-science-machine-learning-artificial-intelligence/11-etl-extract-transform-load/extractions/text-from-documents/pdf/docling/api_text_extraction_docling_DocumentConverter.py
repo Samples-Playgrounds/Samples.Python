@@ -49,7 +49,7 @@ def extract_text_to_file_from_any_document (source: str) -> str:
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
-    with open(f"{directory}/time-{timestamp}.python.json", "w") as f:
+    with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
         f.write(json.dumps(times, indent=4))
     #---------------------------------------------------------------------------
 
@@ -68,6 +68,7 @@ def extract_markdown_to_file_from_any_document (source: str) -> str:
     converter = DocumentConverter()
     result_doc = converter.convert(source)
     result_md = result_doc.document.export_to_markdown()
+    num_pages = len(result_doc.document.pages)
 
     directory = f"{source}.hwaifs/text/python/docling/"
     Path(directory).mkdir(parents=True, exist_ok=True)
@@ -86,19 +87,23 @@ def extract_markdown_to_file_from_any_document (source: str) -> str:
 
     times = {
         "function_method_name" : "extract_markdown_to_file_from_any_document",
+        "num_pages" : num_pages,
         "time_start_1": time_start_1,
         "time_end_1": time_stop_1,
         "time_total_1": time_total_1,
+        "pages_per_second_1" : num_pages / time_total_1,
         "time_start_2": time_start_2,
         "time_end_2": time_stop_2,
         "time_total_2": time_total_2,
+        "pages_per_second_2" : num_pages / time_total_2,
         "time_start_3": time_start_3,
         "time_end_3": time_stop_3,
         "time_total_3": time_total_3,
+        "pages_per_second_3" : num_pages / time_total_3
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
-    with open(f"{directory}/time-{timestamp}.python.json", "w") as f:
+    with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
         f.write(json.dumps(times, indent=4))
     #---------------------------------------------------------------------------
 
@@ -163,12 +168,14 @@ def extract_markdown_to_file_from_any_document_complex (source: str) -> str:
 
     result_md = ""
 
+    num_pages = 0
+
     for res in conv_results:
         if res.document is None:
             print(f"Document {res.input.file.name} could not be converted.")
             continue
         result_md += res.document.export_to_markdown()
-        
+        num_pages += len(res.document.pages)
         # out_path = Path("allouts")
         # print(
         #     f"Document {res.input.file.name} converted."
@@ -196,19 +203,23 @@ def extract_markdown_to_file_from_any_document_complex (source: str) -> str:
 
     times = {
         "function_method_name" : "extract_markdown_to_file_from_any_document_complex",
+        "num_pages" : num_pages,
         "time_start_1": time_start_1,
         "time_end_1": time_stop_1,
         "time_total_1": time_total_1,
+        "pages_per_second_1" : num_pages / time_total_1,
         "time_start_2": time_start_2,
         "time_end_2": time_stop_2,
         "time_total_2": time_total_2,
+        "pages_per_second_2" : num_pages / time_total_2,
         "time_start_3": time_start_3,
         "time_end_3": time_stop_3,
         "time_total_3": time_total_3,
+        "pages_per_second_3" : num_pages / time_total_3
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
-    with open(f"{directory}/time-{timestamp}.python.json", "w") as f:
+    with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
         f.write(json.dumps(times, indent=4))
     #---------------------------------------------------------------------------
 

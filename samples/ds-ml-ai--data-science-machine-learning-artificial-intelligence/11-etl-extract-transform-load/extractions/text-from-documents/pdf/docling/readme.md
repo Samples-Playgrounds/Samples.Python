@@ -28,6 +28,8 @@ python convert.py
 
 *   https://research.ibm.com/publications/docling-an-efficient-open-source-toolkit-for-ai-driven-document-conversion
 
+*   https://www.datacamp.com/tutorial/docling
+
 *   Docling: Efficient document processing for AI workflows
 
     *   https://www.youtube.com/watch?v=zSCxbqgqeJ8
