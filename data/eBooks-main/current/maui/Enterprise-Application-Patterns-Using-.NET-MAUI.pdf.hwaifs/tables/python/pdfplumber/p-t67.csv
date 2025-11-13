@@ -1,4 +1,0 @@
-,0
-0,Note
-1,"REST defines a stateless request model. Therefore, HTTP requests must be independent and might"
-2,occur in any order.

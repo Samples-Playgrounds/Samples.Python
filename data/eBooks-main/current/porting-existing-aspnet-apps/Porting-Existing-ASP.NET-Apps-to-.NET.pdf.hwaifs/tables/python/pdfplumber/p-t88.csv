@@ -1,4 +1,0 @@
-,0
-0,var wcfClient = new OrderServiceClient(
-1,"new BasicHttpBinding(BasicHttpSecurityMode.None),"
-2,"new EndpointAddress(""http://localhost:5050/OrderService.svc""));"

@@ -1,5 +1,0 @@
-,0
-0,ports:
-1,"- ""5101:80"" # Important: In a production environment you should remove the external"
-2,port (5101) kept here for microservice debugging purposes.
-3,# The API Gateway redirects and access through the internal port (80).

@@ -1,9 +1,0 @@
-,[ServiceContract]
-0,public interface IPortfolioService
-1,{
-2,[OperationContract]
-3,"Task<Portfolio> Get(Guid traderId, int portfolioId);"
-4,
-5,[OperationContract]
-6,Task<List<Portfolio>> GetAll(Guid traderId);
-7,}

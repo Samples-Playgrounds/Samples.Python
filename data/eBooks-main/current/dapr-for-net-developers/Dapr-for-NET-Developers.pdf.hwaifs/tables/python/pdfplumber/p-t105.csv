@@ -1,7 +1,0 @@
-,0
-0,var vehicleState = new VehicleState
-1,{
-2,"LicenseNumber = msg.LicenseNumber,"
-3,EntryTimestamp = msg.Timestamp
-4,};
-5,"await StateManager.SetStateAsync(""VehicleState"", vehicleState);"

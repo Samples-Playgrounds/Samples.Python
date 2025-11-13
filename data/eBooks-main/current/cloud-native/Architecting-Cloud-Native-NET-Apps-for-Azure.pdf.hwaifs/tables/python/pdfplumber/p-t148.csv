@@ -1,6 +1,0 @@
-,0
-0,StormEvents
-1,| where StartTime >= datetime(2007-11-01) and StartTime < datetime(2007-12-01)
-2,| summarize count() by State
-3,| top 10 by count_
-4,| render piechart

@@ -12,7 +12,7 @@ Cesar de la Torre Microsoft Corp.
 
 ![](_page_1_Picture_0.jpeg)
 
-#### **EDITION v7.0**
+### **EDITION v7.0**
 
 Refer [changelog](https://aka.ms/modernize-ebook-changelog) for the book updates and community contributions.
 
@@ -97,7 +97,7 @@ Table 1-1 describes the main benefits of and reasons for choosing each migration
 
 **Table 1-1.** Benefits and challenges of modernization paths for existing .NET applications and services
 
-#### **Key technologies and architectures by maturity level**
+# **Key technologies and architectures by maturity level**
 
 .NET Framework applications initially started with .NET Framework version 1.0, which was released in late 2001. Then, companies moved towards newer versions (such as 2.0, 3.5 and .NET Framework 4.x). Most of those applications ran on Windows Server and Internet Information Server (IIS), and used a relational database, like SQL Server, Oracle, MySQL, or any other RDBMS.
 
@@ -180,7 +180,7 @@ The focus of this guide is specific. It shows you the path you can take to achie
 
 This guide doesn't show you how to create Cloud-Native applications, such as how to evolve to a microservices architecture. To rearchitect your applications or to create brand-new applications that are based on microservices, see the e-book [.NET Microservices: Architecture for containerized .NET](https://aka.ms/microservicesebook)  [applications.](https://aka.ms/microservicesebook)
 
-#### **Additional resources**
+# **Additional resources**
 
 - **Containerized Docker application lifecycle with Microsoft platform and tools** (downloadable e-book) <https://aka.ms/dockerlifecycleebook>
 - **.NET Microservices: Architecture for containerized .NET applications** (downloadable ebook)
@@ -258,7 +258,7 @@ These sample apps have a second version, with modernized code, and which are fai
 | Azure Stack                                                                                                                                                                                                     | 35                         |
 | Valkthroughs and technical get started overview                                                                                                                                                                 | 38                         |
 | Technical walkthrough list                                                                                                                                                                                      | 20                         |
-| Technical Walktinough list                                                                                                                                                                                      | 3د                         |
+| Technical Walktinough list                                                                                                                                                                                      | ٤٠ عد                      |
 | Walkthrough 1: Tour of eShop legacy apps                                                                                                                                                                        |                            |
 |                                                                                                                                                                                                                 | 39                         |
 | Walkthrough 1: Tour of eShop legacy apps                                                                                                                                                                        | 39                         |
@@ -384,7 +384,7 @@ Figure 2-3 shows the execution of multiple VM migrations by using Azure Site Rec
 
 *Figure 2-3. Positioning Cloud Infrastructure-Ready applications*
 
-#### <span id="page-20-0"></span>**Additional resources**
+# <span id="page-20-0"></span>**Additional resources**
 
 • **Azure Migrate Datasheet**
 
@@ -471,7 +471,7 @@ One of your migration options is to move your original relational database manag
 
 Currently, Microsoft Azure supports up to [331 different database servers](https://azuremarketplace.microsoft.com/marketplace/apps/category/databases?page=1&subcategories=databases-all) deployed as IaaS VMs. These include popular RDBMS like SQL Server, Oracle, MySQL, PostgreSQL, and IBM DB2, and many other NoSQL databases like MongoDB, Cassandra, DataStax, MariaDB, and Cloudera.
 
-#### **Note**
+### **Note**
 
 Although moving your RDBMS to an Azure VM might be the fastest way to migrate your data to the cloud (because it is IaaS), this approach requires a significant investment in your IT teams (database administrators and IT pros). Enterprise teams need to be able to set up and manage high availability, disaster recovery, and patching for SQL Server. This context also needs a customized environment, with full administrative rights.
 
@@ -529,7 +529,7 @@ The need for continuous business innovation pushes development and operations te
 
 The bottom line is that when an organization builds and manages applications that are Cloud-Optimized, it can put solutions in the hands of customers sooner and bring new ideas to market when they are relevant.
 
-#### <span id="page-28-1"></span>**Cloud-Optimized application principles and tenets**
+# <span id="page-28-1"></span>**Cloud-Optimized application principles and tenets**
 
 Improvements in the cloud are mostly focused on meeting two goals: Reduce costs and improve business growth by improving agility. These goals are achieved by simplifying processes and reducing friction when you release and ship applications.
 
@@ -555,7 +555,7 @@ To summarize, a Cloud-Optimized application is an approach to building and manag
 
 Your organization can adopt these technologies and approaches gradually. You don't have to embrace all of them, all at once. You can adopt them incrementally, depending on enterprise priorities and user needs.
 
-#### <span id="page-30-0"></span>**Benefits of a Cloud-Optimized application**
+# <span id="page-30-0"></span>**Benefits of a Cloud-Optimized application**
 
 You can get the following benefits by converting an existing application to a Cloud-Optimized application (without rearchitecting or coding):
 
@@ -585,7 +585,7 @@ Windows Containers is the best choice for existing .NET Framework applications t
 
 The next sections of this chapter, and the related walkthroughs, focus specifically on details about the runtime layer (Windows Containers). The guidance describes the ways you can deploy Windows Containers on Windows Server 2016 (and later versions) VMs and Azure Container Instances. It also covers more advanced PaaS platforms like Azure App Service and orchestrator like Azure Kubernetes Service.
 
-#### <span id="page-31-0"></span>**Monolithic applications** *can* **be Cloud-Optimized**
+# <span id="page-31-0"></span>**Monolithic applications** *can* **be Cloud-Optimized**
 
 It's important to highlight that monolithic applications (applications that are not based on microservices) *can* be Cloud-Optimized applications. You can build and operate monolithic applications that take advantage of the cloud computing model by using a combination of containers, continuous delivery, and DevOps. If an existing monolithic application is right for your business goals, you can modernize it and make it Cloud-Optimized.
 
@@ -615,7 +615,7 @@ In addition, you can extend basic modern web apps and cloud-native apps by addin
 
 The fundamental difference in applications at the Cloud-Native level is in the application architecture. Cloud-native applications are, by definition, apps that are based on microservices. Cloud-native apps require special architectures, technologies, and platforms, compared to a monolithic web application or traditional N-Tier application.
 
-#### <span id="page-33-0"></span>**Cloud-native applications details**
+# <span id="page-33-0"></span>**Cloud-native applications details**
 
 Cloud-Native is a more advanced or mature state for large and mission-critical applications. Cloud-Native applications usually require architecture and design that are created from scratch instead of by modernizing existing applications. The key difference between a Cloud-Native application and a simpler Cloud-Optimized web app is the recommendation to use microservices architectures in a cloud-native approach. Cloud-Optimized apps can also be monolithic web apps or N-Tier apps.
 
@@ -630,7 +630,7 @@ For detailed guidance on how to design and develop cloud-native applications, re
 
 The most important factor to consider if you migrate a full application to the cloud-native model is that you must rearchitect to a microservices-based architecture. This approach clearly requires a significant investment in development because of the large refactoring process involved. This option usually is chosen for mission-critical applications that need new levels of scalability and long-term agility. But, you could start moving toward cloud-native by adding microservices for just a few new scenarios, and eventually refactor the application fully as microservices. This step is an incremental approach that is the best option for some scenarios.
 
-#### <span id="page-34-0"></span>**What about microservices?**
+# <span id="page-34-0"></span>**What about microservices?**
 
 Understanding microservices and how they work is important when you are considering cloud-native applications for your organization.
 
@@ -656,7 +656,7 @@ Deployments that are based on Windows Containers are applicable to Cloud-Optimiz
 
 However, in this guide and especially in the following sections, it mostly focuses on using Windows Containers for *Cloud-Optimized* applications where you don't need to rearchitect your application.
 
-#### <span id="page-35-1"></span>**What are containers? (Linux or Windows)**
+# <span id="page-35-1"></span>**What are containers? (Linux or Windows)**
 
 Containers are a way to wrap up an application into its own isolated package. In its container, the application is not affected by applications or processes that exist outside of the container. Everything the application depends on to run successfully as a process is inside the container. Wherever the container might move, the requirements of the application will always be met, in terms of direct dependencies, because it is bundled with everything that it needs to run (library dependencies, runtimes, and so on).
 
@@ -666,7 +666,7 @@ A container is an instance of a container image. A container image is a way to p
 
 As containers daily become more common, they are becoming an industry-wide "unit of deployment."
 
-#### <span id="page-35-2"></span>**Benefits of containers (Docker Engine on Linux or Windows)**
+# <span id="page-35-2"></span>**Benefits of containers (Docker Engine on Linux or Windows)**
 
 Building applications by using containers-which also might be defined as lightweight building blocksoffers a significant increase in agility for building, shipping, and running any application, across any infrastructure.
 
@@ -685,7 +685,7 @@ Many organizations are containerizing existing monolithic applications for the f
 
 Significant improvements in agility, portability, and control ultimately lead to significant cost reductions when you use containers to develop and maintain applications.
 
-#### <span id="page-36-0"></span>**What is Docker?**
+# <span id="page-36-0"></span>**What is Docker?**
 
 [Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) that automates the deployment of applications as portable, selfsufficient containers that can run in the cloud or on-premises. Docker is also a [company](https://www.docker.com/) that promotes and evolves this technology. The company works in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
 
@@ -699,7 +699,7 @@ Docker containers (for simplicity, *containers*) can run natively on Linux and W
 
 In the near future, mixed environments that have both Linux and Windows containers will be possible and even common.
 
-#### <span id="page-37-0"></span>**Benefits of Windows Containers for your existing .NET applications**
+# <span id="page-37-0"></span>**Benefits of Windows Containers for your existing .NET applications**
 
 The benefits of using Windows Containers are fundamentally the same benefits you get from containers in general. Using Windows Containers is about greatly improving agility, portability, and control.
 
@@ -711,7 +711,7 @@ A .NET Framework application must run on Windows, period. If you want to contain
 
 So, one of the main benefits of Windows Containers is that they offer you a way to modernize your existing .NET Framework applications that are running on Windows-through containerization. Ultimately, Windows Containers gets you the benefits that you are looking for by using containersagility, portability, and better control.
 
-#### <span id="page-38-0"></span>**Choose an OS to target with .NET-based containers**
+# <span id="page-38-0"></span>**Choose an OS to target with .NET-based containers**
 
 Given the diversity of operating systems that are supported by Docker, as well as the differences between .NET Framework and .NET Core, you should target a specific OS and specific versions based on the framework you are using.
 
@@ -739,13 +739,13 @@ For .NET (cross-platform for Linux and Windows), the tags would look like the fo
 | mcr.microsoft.com/dotnet/runtime:7.0                         | .NET runtime-only on Linux               |
 | mcr.microsoft.com/dotnet/runtime:7.0-<br>nanoserver-ltsc2022 | .NET runtime-only on Windows Nano Server |
 
-#### **Multi-arch images**
+### **Multi-arch images**
 
 Since 2017, Docker has had a feature called [multi-arch](https://github.com/moby/moby/issues/15866) images. .NET Docker images can use multi-arch tags. Your Dockerfile files no longer need to define the operating system that you are targeting. The multi-arch feature allows a single tag to be used across multiple machine configurations. For instance, with multi-arch, you can use one common tag: **mcr.microsoft.com/dotnet/runtime:7.0**. If you pull that tag from a Linux container environment, you get the Debian-based image. If you pull that tag from a Windows container environment, you get the Nano Server-based image.
 
 For .NET Framework images, because the traditional .NET Framework supports only Windows, you cannot use the multi-arch feature.
 
-#### <span id="page-39-0"></span>**Windows container types**
+# <span id="page-39-0"></span>**Windows container types**
 
 Like Linux containers, Windows Server containers are managed by using Docker Engine. Unlike Linux containers, Windows containers include two different container types, or run times-Windows Server containers and Hyper-V isolation.
 
@@ -755,13 +755,13 @@ Like Linux containers, Windows Server containers are managed by using Docker Eng
 
 Running a container on Windows with or without Hyper-V isolation is a run-time decision. You might choose to create the container with Hyper-V isolation initially, and at run time, choose to run it as a Windows Server container instead.
 
-#### **Additional resources**
+### **Additional resources**
 
 - **Windows Containers documentation** [https://learn.microsoft.com/virtualization/windowscontainers/](https://docs.microsoft.com/virtualization/windowscontainers/)
 - **Windows Containers fundamentals** [https://learn.microsoft.com/virtualization/windowscontainers/about/](https://docs.microsoft.com/virtualization/windowscontainers/about/)
 - **Infographic: Microsoft and containers** <https://info.microsoft.com/rs/157-GQE-382/images/Container%20infographic%201.4.17.pdf>
 
-#### <span id="page-40-0"></span>**The container ecosystem in Azure**
+# <span id="page-40-0"></span>**The container ecosystem in Azure**
 
 In previous sections, it's been explained what the benefits of Docker containers are as well as details on the specific container images for .NET applications. All that generic information is fundamental in order to develop or containerize an application. However, when thinking about the production deployment environment or even QA and Dev/Test environments, Microsoft Azure provides an open and broad variety of choices, a full container ecosystem in the cloud (shown in the diagram below). Depending on your specific application's needs, you should choose one or another Azure product.
 
@@ -797,7 +797,7 @@ Some Windows technologies are not supported by Windows Containers. In those case
 
 For more information, see the list of [Applications not supported by Windows containers.](https://docs.microsoft.com/virtualization/windowscontainers/quick-start/lift-shift-to-containers#applications-not-supported-by-containers)
 
-#### **Additional resources**
+### **Additional resources**
 
 • **Virtual machines and containers in Azure**
 
@@ -874,7 +874,7 @@ However, this recommendation should be taken with a pinch of salt, as the produc
 
 After a deeper analysis of the application's needs, the product selected could be different. But, as a starting point, it is good to have initial guidance from where you can start evaluating and testing based on certain priority.
 
-#### **Additional resources**
+### **Additional resources**
 
 • **Choose an Azure compute service for your application**
 
@@ -886,7 +886,7 @@ Resiliency is the ability to recover from failures and continue to function. Res
 
 Your application is ready for the cloud when, at a minimum, it implements a software-based model of resiliency, rather than a hardware-based model. Your cloud application must embrace the partial failures that will certainly occur. Design or partially refactor your application to achieve resiliency with expected partial failures. It should be designed to cope with partial failures, like transient network outages and nodes, or VMs crashing in the cloud. Even containers being moved to a different node within an orchestrator cluster can cause intermittent short failures within the application.
 
-#### <span id="page-45-1"></span>**Handling partial failure**
+# <span id="page-45-1"></span>**Handling partial failure**
 
 In a cloud-based application, there's an ever-present risk of partial failure. For instance, a single website instance or a container might fail, or it might be unavailable or unresponsive for a short time. Or, a single VM or server might crash.
 
@@ -910,7 +910,7 @@ When implementing HTTP retries and circuit breakers, the recommendation for .NET
 
 To learn how to implement strategies for handling partial failures in the cloud, see the following references.
 
-#### **Additional resources**
+### **Additional resources**
 
 • **Implementing resilient communication to handle partial failure**
 
@@ -925,7 +925,7 @@ To learn how to implement strategies for handling partial failures in the cloud,
 
 When you run an application in production, it's critical that you have insights about how your application is performing. Is it performing at a high level? Are users getting errors, or is the application stable and reliable? You need rich performance monitoring, powerful alerting, and dashboards to help ensure that your application is available and performing as expected. You also need to be able to see quickly if there's a problem, determine how many customers are affected, and perform a root-cause analysis to find and fix the issue.
 
-#### <span id="page-47-1"></span>**Monitor your application with Application Insights**
+# <span id="page-47-1"></span>**Monitor your application with Application Insights**
 
 Application Insights is an extensible Application Performance Management (APM) service for web developers who work on multiple platforms. Use it to monitor your live web application. Application Insights automatically detects performance anomalies. It includes powerful analytics tools to help you diagnose issues, and to help you understand what users actually do with your app. Application Insights is designed to help you continuously improve performance and usability. It works for apps on a wide variety of platforms, including .NET, Node.js, and J2EE, whether hosted on-premises or in the cloud. Application Insights integrates with your DevOps processes, and has connection points to various development tools.
 
@@ -935,7 +935,7 @@ Figure 4-10 shows an example of how Application Insights monitors your applicati
 
 *Figure 4-10. Application Insights monitoring dashboard*
 
-#### <span id="page-48-0"></span>**Monitor your Docker infrastructure with Log Analytics and its Container Monitoring solution**
+# <span id="page-48-0"></span>**Monitor your Docker infrastructure with Log Analytics and its Container Monitoring solution**
 
 [Azure Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-overview) is part of the [Microsoft Azure overall monitoring solution](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview). It's also a service in [Operations Management Suite \(OMS\).](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview) Log Analytics monitors cloud and on-premises environments (OMS for on-premises) to help maintain availability and performance. It collects data generated by resources in your cloud and on-premises environments and from other monitoring tools to provide analysis across multiple sources.
 
@@ -966,7 +966,7 @@ You can use the Log Analytics Container Monitoring solution to:
 
 • View centralized CPU, memory, storage, and network usage, and performance information, for containers.
 
-#### **Additional resources**
+### **Additional resources**
 
 • **Overview of monitoring in Microsoft Azure**
 
@@ -1023,7 +1023,7 @@ When it comes to security, you can centralize management and security across you
 
 Finally, you can distribute and analyze data seamlessly, use the same query languages for cloud and on-premises assets, and apply analytics and deep learning in Azure to enrich your data, regardless of its source.
 
-#### <span id="page-51-1"></span>**Azure Stack**
+# <span id="page-51-1"></span>**Azure Stack**
 
 Azure Stack is a hybrid cloud platform that lets you deliver Azure services from your organization's datacenter. Azure Stack is designed to support new options for your modern applications in key
 
@@ -1040,17 +1040,17 @@ Azure Stack is offered in two deployment options, to meet your needs:
 - Azure Stack integrated systems
 - Azure Stack Development Kit
 
-#### **Azure Stack integrated systems**
+### **Azure Stack integrated systems**
 
 Azure Stack integrated systems are offered through a partnership of Microsoft and hardware partners. The partnership creates a solution that offers cloud-paced innovation that is balanced with simplicity in management. Because Azure Stack is offered as an integrated system of hardware and software, you get the right amount of flexibility and control, while still adopting innovation from the cloud. Azure Stack integrated systems range in size from 4 to 12 nodes, and are jointly supported by the hardware partner and Microsoft. Use Azure Stack integrated systems to implement new scenarios for your production workloads.
 
-#### **Azure Stack Development Kit**
+### **Azure Stack Development Kit**
 
 Microsoft Azure Stack Development Kit is a single-node deployment of Azure Stack, which you can use to evaluate and learn about Azure Stack. You can also use Azure Stack Development Kit as a
 
 developer environment, where you can develop using APIs and tooling that are consistent with Azure. Azure Stack Development Kit is not intended to be used as a production environment.
 
-#### **Additional resources**
+### **Additional resources**
 
 • **Azure hybrid cloud**
 
@@ -1092,23 +1092,23 @@ Each of the following walkthroughs uses the new sample eShopLegacy and eShopMode
 
 # <span id="page-55-0"></span>Walkthrough 1: Tour of eShop legacy apps
 
-#### <span id="page-55-1"></span>**Technical walkthrough availability**
+# <span id="page-55-1"></span>**Technical walkthrough availability**
 
 The full technical walkthrough is available in the eShopModernizing GitHub repo wiki:
 
 [eShopModernizing wiki walkthroughs](https://github.com/dotnet-architecture/eShopModernizing/wiki)
 
-#### <span id="page-55-2"></span>**Overview**
+# <span id="page-55-2"></span>**Overview**
 
 In this walkthrough, you can explore the initial implementation of three sample legacy applications. The first two sample web apps have a monolithic architecture, and were created by using classic ASP.NET. One application is based on ASP.NET 4.x MVC; the second application is based on ASP.NET 4.x Web Forms. The third app is a 3-Tier app composed by a client WinForms app and a server-side [Windows Communication Foundation \(WCF\)](https://docs.microsoft.com/en-us/dotnet/framework/wcf/whats-wcf) service.
 
 All these applications are available at the [eShopModernizing GitHub repo.](https://github.com/dotnet-architecture/eShopModernizing)
 
-#### <span id="page-55-3"></span>**Goals**
+# <span id="page-55-3"></span>**Goals**
 
 The main goal of this walkthrough is simply to get familiar with these apps, and with their code and configuration. You can configure the apps so that they generate and use mock data, without using the SQL database, for testing purposes. This optional config is based on dependency injection, in a decoupled way.
 
-#### <span id="page-55-4"></span>**Scenario 1: ASP.NET Web apps**
+# <span id="page-55-4"></span>**Scenario 1: ASP.NET Web apps**
 
 The figure below shows the simple scenario of the original legacy ASP.NET web applications.
 
@@ -1124,17 +1124,17 @@ The next figure shows the initial app screenshots.
 
 Dependencies in ASP.NET 4.x or earlier versions (either for MVC or for Web Forms) means that these applications won't run on .NET Core unless the code is fully rewritten by using ASP.NET Core MVC.
 
-#### <span id="page-56-0"></span>**Scenario 2: WCF service and WinForms client app (3-Tier app)**
+# <span id="page-56-0"></span>**Scenario 2: WCF service and WinForms client app (3-Tier app)**
 
 The figure below shows the simple scenario of the original 3-Tier legacy application.
 
 ![](_page_57_Figure_2.jpeg)
 
-#### <span id="page-57-0"></span>**Benefits**
+# <span id="page-57-0"></span>**Benefits**
 
 The benefits of this walkthrough are simple: Just get familiar with the code and initial apps.
 
-#### <span id="page-57-1"></span>**Next steps**
+# <span id="page-57-1"></span>**Next steps**
 
 Explore this content more in-depth on the GitHub wiki:
 
@@ -1143,11 +1143,11 @@ Explore this content more in-depth on the GitHub wiki:
 
 # <span id="page-57-2"></span>Walkthrough 2: Containerize your existing .NET applications with Windows Containers
 
-#### <span id="page-57-3"></span>**Overview**
+# <span id="page-57-3"></span>**Overview**
 
 Use Windows Containers to improve deployment of existing .NET applications, like those based on MVC, Web Forms, or WCF, to production, development, and test environments.
 
-#### <span id="page-57-4"></span>**Goals**
+# <span id="page-57-4"></span>**Goals**
 
 The goal of this walkthrough is to show you several options for containerizing an existing .NET Framework application. You can:
 
@@ -1157,19 +1157,19 @@ The goal of this walkthrough is to show you several options for containerizing a
 
 This walkthrough focuses on the Visual Studio 2022 Tools for Docker approach, but the other two approaches are fairly similar in regard to using Dockerfiles.
 
-#### <span id="page-58-0"></span>**Scenario 1: Containerized ASP.NET web apps**
+# <span id="page-58-0"></span>**Scenario 1: Containerized ASP.NET web apps**
 
 Figure below shows the scenario for containerized eShop legacy web apps applications.
 
 ![](_page_58_Figure_3.jpeg)
 
-#### <span id="page-58-1"></span>**Scenario 2: Containerized WCF service**
+# <span id="page-58-1"></span>**Scenario 2: Containerized WCF service**
 
 Figure below shows the scenario for a 3-Tier app with a containerized WCF service.
 
 ![](_page_59_Figure_0.jpeg)
 
-#### <span id="page-59-0"></span>**Benefits**
+# <span id="page-59-0"></span>**Benefits**
 
 There are advantages to running your monolithic application in a container. First, you create an image for the application. From that point on, every deployment runs in the same environment. Every container uses the same OS version, has the same version of dependencies installed, uses the same .NET framework version, and is built by using the same process. Basically, you control the dependencies of your application by using a Docker image. The dependencies travel with the application when you deploy the containers.
 
@@ -1179,7 +1179,7 @@ Containerized applications also have a flatter scale-out curve. Containerized ap
 
 Containerization, in ideal situations, does not require making any changes to the application code (C#). In most scenarios, you just need the Docker deployment metadata files (Dockerfiles and Docker Compose files).
 
-#### <span id="page-59-1"></span>**Next steps**
+# <span id="page-59-1"></span>**Next steps**
 
 Explore this content more in-depth on the GitHub wiki:
 
@@ -1188,51 +1188,51 @@ Explore this content more in-depth on the GitHub wiki:
 
 # <span id="page-60-0"></span>Walkthrough 3: Deploy your Windows Containersbased app to Azure VMs
 
-#### <span id="page-60-1"></span>**Technical walkthrough availability**
+# <span id="page-60-1"></span>**Technical walkthrough availability**
 
 The full technical walkthrough is available in the eShopModernizing GitHub repo wiki: [https://github.com/dotnet-architecture/eShopModernizing/wiki/06.-Deploying-your-Windows-](https://github.com/dotnet-architecture/eShopModernizing/wiki/06.-Deploying-your-Windows-Containers-based-app-into-Azure-VMs-(Including-CI-CD))[Containers-based-app-into-Azure-VMs-\(Including-CI-CD\)](https://github.com/dotnet-architecture/eShopModernizing/wiki/06.-Deploying-your-Windows-Containers-based-app-into-Azure-VMs-(Including-CI-CD))
 
-#### <span id="page-60-2"></span>**Overview**
+# <span id="page-60-2"></span>**Overview**
 
 Deploying to a Docker host on a Windows Server 2016 Virtual Machine (VM) in Azure lets you quickly set up development/test/staging environments. It also gives you a common place for testers or business users to validate the app. VMs also can be valid Infrastructure as a Service (IaaS) production environments.
 
-#### <span id="page-60-3"></span>**Goals**
+# <span id="page-60-3"></span>**Goals**
 
 The goal of this walkthrough is to show you the multiple alternatives you have when you deploy Windows Containers to Azure VMs that are based on Windows Server 2016 or later versions.
 
-#### <span id="page-60-4"></span>**Scenarios**
+# <span id="page-60-4"></span>**Scenarios**
 
 Several scenarios are covered in this walkthrough.
 
-#### **Scenario A: Deploy to an Azure VM from a dev PC through Docker Engine connection**
+# **Scenario A: Deploy to an Azure VM from a dev PC through Docker Engine connection**
 
 ![](_page_61_Figure_2.jpeg)
 
 *Figure 5-4. Deploy to an Azure VM from a dev PC through a Docker Engine connection*
 
-#### **Scenario B: Deploy to an Azure VM through a Docker Registry**
+### **Scenario B: Deploy to an Azure VM through a Docker Registry**
 
 ![](_page_61_Figure_7.jpeg)
 
 *Figure 5-5. Deploy to an Azure VM through a Docker Registry*
 
-#### **Scenario C: Deploy to an Azure VM from CI/CD pipelines in Azure DevOps Services**
+### **Scenario C: Deploy to an Azure VM from CI/CD pipelines in Azure DevOps Services**
 
 ![](_page_62_Figure_2.jpeg)
 
 *Figure 5-6. Deploy to an Azure VM from CI/CD pipelines in Azure DevOps Services*
 
-#### <span id="page-62-0"></span>**Azure VMs for Windows Containers**
+# <span id="page-62-0"></span>**Azure VMs for Windows Containers**
 
 Azure VMs for Windows Containers are VMs based on Windows Server 2016, Windows 10, or later versions, both with Docker Engine set up. In most cases, Windows Server 2016 is used in the Azure VMs.
 
 Azure currently provides a VM named **Windows Server 2016 with Containers**. You can use this VM to try the new Windows Server Container feature, with either Windows Server Core or Windows Nano Server. Container OS images are installed, and then the VM is ready to use with Docker.
 
-#### <span id="page-62-1"></span>**Benefits**
+# <span id="page-62-1"></span>**Benefits**
 
 Although Windows Containers can be deployed to on-premises Windows Server 2016 VMs, when you deploy to Azure, you get an easier way to get started, with ready-to-use Windows Server Container VMs. You also get a common online location that's accessible to testers, and automatic scalability through Azure virtual machine scale sets.
 
-#### <span id="page-62-2"></span>**Next steps**
+# <span id="page-62-2"></span>**Next steps**
 
 Explore this content more in-depth on the GitHub wiki:
 
@@ -1240,37 +1240,37 @@ Explore this content more in-depth on the GitHub wiki:
 
 # <span id="page-63-0"></span>Walkthrough 4: Deploy your Windows Containersbased apps to Azure Container Instances (ACI)
 
-#### <span id="page-63-1"></span>**Technical walkthrough availability**
+# <span id="page-63-1"></span>**Technical walkthrough availability**
 
 The full technical walkthrough is available in the eShopModernizing GitHub repo wiki:
 
 [Deploying the Apps to ACI \(Azure Container Instances\)](https://github.com/dotnet-architecture/eShopModernizing/wiki/05.-Deploying-the-Apps-to-ACI-(Azure-Container-Instances))
 
-#### <span id="page-63-2"></span>**Overview**
+# <span id="page-63-2"></span>**Overview**
 
 [Azure Container Instances \(ACI\)](https://docs.microsoft.com/azure/container-instances/) is the quickest way to have a Containers dev/test/staging environment where you can deploy single instances of containers.
 
-#### <span id="page-63-3"></span>**Goals**
+# <span id="page-63-3"></span>**Goals**
 
 This walkthrough shows you the main scenarios when deploying Windows Containers to Azure Container Instances (ACI) and how you can deploy eShopModernizing Apps into ACI.
 
-#### <span id="page-63-4"></span>**Scenarios**
+# <span id="page-63-4"></span>**Scenarios**
 
 There can be variations about deploying the eShopModernizing apps into ACI such as deploying just one or all of the apps (MVC app, WebForms app or WCF service). In the following scenario shown below, you can see the ASP.NET MVC app plus the SQL Server container both of them deployed as containers into ACI (Azure Container Instances).
 
 ![](_page_63_Figure_10.jpeg)
 
-#### <span id="page-63-5"></span>**Benefits**
+# <span id="page-63-5"></span>**Benefits**
 
 Azure Container Instances makes it easy to create and manage Docker containers in Azure, without having to provision virtual machines or adopt a higher-level service. With ACI, you can directly deploy a Windows container in Azure and expose it to the internet with a fully qualified domain name (FQDN) in a matter of seconds (Provided that you have the Windows Container image ready in a Docker registry like Docker Hub or Azure Container Registry).
 
-#### <span id="page-64-0"></span>**Considerations**
+# <span id="page-64-0"></span>**Considerations**
 
 Deploying Windows Containers with either full .NET Framework / ASP.NET or SQL Server into Azure Container Instances (ACI) is not quite as fast as deploying to a regular Docker Host (like a Windows Server 2016 with Windows Containers) because the Docker image has to be downloaded (pulled from the Docker registry) every time and the sizes of the SQL container image (15.1 GB) and the ASP.NET container image (13.9 GB) are significantly large, however it is much cheaper than maintaining your own docker host (permanently on-line Windows Server 2016 with Windows Containers VM in Azure) not to mention a whole orchestrator like Kubernetes in Azure (AKS) which is, on the other hand, a great choice for production deployments.
 
 As the main conclusion, using Azure Container Instances is a very compelling option for Dev/Test scenarios and for CI/CD pipelines.
 
-#### <span id="page-64-1"></span>**Next steps**
+# <span id="page-64-1"></span>**Next steps**
 
 Explore this content more in-depth on the GitHub wiki:
 
@@ -1278,38 +1278,38 @@ Explore this content more in-depth on the GitHub wiki:
 
 # <span id="page-64-2"></span>Walkthrough 5: Deploy your Windows Containersbased apps to Kubernetes in Azure Container Service
 
-#### <span id="page-64-3"></span>**Technical walkthrough availability**
+# <span id="page-64-3"></span>**Technical walkthrough availability**
 
 The full technical walkthrough is available in the eShopModernizing GitHub repo wiki:
 
 [https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-](https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-CI-CD))[Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-\(Including-CI-CD\)](https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-CI-CD))
 
-#### <span id="page-64-4"></span>**Overview**
+# <span id="page-64-4"></span>**Overview**
 
 An application that's based on Windows Containers will quickly need to use platforms, moving even further away from IaaS VMs. This approach is needed to easily achieve high scalability and better automated scalability, and for a significant improvement in automated deployments and versioning. You can achieve these goals by using the orchestrator [Kubernetes,](https://kubernetes.io/) available in [Azure Container](https://azure.microsoft.com/services/container-service/)  [Services.](https://azure.microsoft.com/services/container-service/)
 
-#### <span id="page-65-0"></span>**Goals**
+# <span id="page-65-0"></span>**Goals**
 
 The goal of this walkthrough is to learn how to deploy a Windows Container–based application to Kubernetes (also called *K8s*) in Azure Container Service. Deploying to Kubernetes from scratch is a two-step process:
 
 - 1. Deploy a Kubernetes cluster to Azure Container Service.
 - 2. Deploy the application and related resources to the Kubernetes cluster.
 
-#### <span id="page-65-1"></span>**Scenarios**
+# <span id="page-65-1"></span>**Scenarios**
 
-#### **Scenario A: Deploy directly to a Kubernetes cluster from a dev environment**
+### **Scenario A: Deploy directly to a Kubernetes cluster from a dev environment**
 
 ![](_page_65_Figure_7.jpeg)
 
 *Figure 5-7. Deploy directly to a Kubernetes cluster from a development environment*
 
-#### **Scenario B: Deploy to a Kubernetes cluster from CI/CD pipelines in Azure DevOps Services**
+# **Scenario B: Deploy to a Kubernetes cluster from CI/CD pipelines in Azure DevOps Services**
 
 ![](_page_66_Figure_2.jpeg)
 
 *Figure 5-8. Deploy to a Kubernetes cluster from CI/CD pipelines in Azure DevOps Services*
 
-#### <span id="page-66-0"></span>**Benefits**
+# <span id="page-66-0"></span>**Benefits**
 
 There are many benefits to deploying to a cluster in Kubernetes. The biggest benefit is that you get a production-ready environment in which you can scale out the application based on the number of container instances you want to use (inner-scalability in the existing nodes), and based on the number of nodes or VMs in the cluster (global scalability of the cluster).
 
@@ -1326,35 +1326,35 @@ With Kubernetes, developers can progress from thinking about physical and virtua
 - Distributing secrets
 - Application health checks
 
-#### <span id="page-67-0"></span>**Next steps**
+# <span id="page-67-0"></span>**Next steps**
 
 Explore this content more in-depth on the GitHub wiki: [https://github.com/dotnet](https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-CI-CD))[architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-](https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-CI-CD))[Kubernetes-in-Azure-Container-Service-\(Including-CI-CD\)](https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-CI-CD))
 
 # <span id="page-67-1"></span>Walkthrough 6: Deploy your Windows Containersbased apps to Azure App Service for Containers
 
-#### <span id="page-67-2"></span>**Technical walkthrough availability**
+# <span id="page-67-2"></span>**Technical walkthrough availability**
 
 The full technical walkthrough is available in the eShopModernizing GitHub repo wiki:
 
 [https://github.com/dotnet-architecture/eShopModernizing/wiki/Deploy-Windows-Container-to-](https://github.com/dotnet-architecture/eShopModernizing/wiki/Deploy-Windows-Container-to-Azure-App-Service)[Azure-App-Service](https://github.com/dotnet-architecture/eShopModernizing/wiki/Deploy-Windows-Container-to-Azure-App-Service)
 
-#### <span id="page-67-3"></span>**Overview**
+# <span id="page-67-3"></span>**Overview**
 
 A simple containerized application using Windows Containers can easily be deployed to Azure App Service for Containers. This approach is the recommended approach for most Windows Containerbased applications.
 
-#### <span id="page-67-4"></span>**Goals**
+# <span id="page-67-4"></span>**Goals**
 
 The goal of this walkthrough is to learn how to deploy a Windows Container–based application to Azure App Service for Containers from a registry (Docker Hub or Azure Container Registry).
 
-#### <span id="page-68-0"></span>**Scenario**
+# <span id="page-68-0"></span>**Scenario**
 
 ![](_page_68_Figure_1.jpeg)
 
-#### <span id="page-68-1"></span>**Benefits**
+# <span id="page-68-1"></span>**Benefits**
 
 Deploying to Azure App Service for Containers offers the benefits of containers paired with the PaaS benefits of Azure App Service. The app service can easily be scaled both vertically and horizontally, and can be configured to autoscale to meet changing demands. Updates can be performed with zero downtime and the configuration of continuous deployment from a registry is easily configured as well.
 
-#### <span id="page-68-2"></span>**Next steps**
+# <span id="page-68-2"></span>**Next steps**
 
 Explore this content more in-depth on the GitHub wiki: [https://github.com/dotnet](https://github.com/dotnet-architecture/eShopModernizing/wiki/Deploy-Windows-Container-to-Azure-App-Service)[architecture/eShopModernizing/wiki/Deploy-Windows-Container-to-Azure-App-Service](https://github.com/dotnet-architecture/eShopModernizing/wiki/Deploy-Windows-Container-to-Azure-App-Service)
 

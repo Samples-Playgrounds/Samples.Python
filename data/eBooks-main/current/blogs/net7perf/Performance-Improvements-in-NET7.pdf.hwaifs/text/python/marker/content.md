@@ -1,6 +1,6 @@
 ![](_page_0_Picture_0.jpeg)
 
-### Performance Improvements in .NET 7
+## Performance Improvements in .NET 7
 
 Stephen Toub
 
@@ -8,7 +8,7 @@ Partner Software Engineer, .NET
 
 Microsoft
 
-#### Introduction
+### Introduction
 
 A year ago, I published [Performance Improvements in .NET 6,](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-6) following on the heels of similar posts for [.NET 5,](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5) [.NET Core 3.0,](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-core-3-0) [.NET Core 2.1,](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-core-2-1) and [.NET Core 2.0.](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-core) I enjoy writing these posts and love reading developers' responses to them. One comment in particular last year resonated with me. The commenter cited the Die Hard movie quote, "'When Alexander saw the breadth of his domain, he wept for there were no more worlds to conquer'," and questioned whether .NET performance improvements were similar. Has the well run dry? Are there no more "[performance] worlds to conquer"? I'm a bit giddy to say that, even with how fast .NET 6 is, .NET 7 definitively highlights how much more can be and has been done.
 
@@ -22,7 +22,7 @@ Or, if you prefer a slightly longer adventure, one filled with interesting nugge
 
 Both noted paths achieve one of my primary goals for spending the time to write these posts, to highlight the greatness of the next release and to encourage everyone to give it a try. But, I have other goals for these posts, too. I want everyone interested to walk away from this post with an upleveled understanding of how .NET is implemented, why various decisions were made, tradeoffs that were evaluated, techniques that were employed, algorithms that were considered, and valuable tools and approaches that were utilized to make .NET even faster than it was previously. I want developers to learn from our own learnings and find ways to apply this new-found knowledge to their own codebases, thereby further increasing the overall performance of code in the ecosystem. I want developers to take an extra beat, think about reaching for a profiler the next time they're working on a gnarly problem, think about looking at the source for the component they're using in order to better understand how to work with it, and think about revisiting previous assumptions and decisions to determine whether they're still accurate and appropriate. And I want developers to be excited at the prospect of submitting PRs to improve .NET not only for themselves but for every developer around the globe using .NET. If any of that sounds interesting, then I encourage you to choose the last adventure: prepare a carafe of your favorite hot beverage, get comfortable, and please enjoy.
 
-#### Contents
+### Contents
 
 | Setup                                  |     |
 |----------------------------------------|-----|
@@ -70,7 +70,7 @@ Both noted paths achieve one of my primary goals for spending the time to write 
 
 **CHAPTER** 1
 
-### <span id="page-5-0"></span>Setup
+## <span id="page-5-0"></span>Setup
 
 The microbenchmarks throughout this post utilize [benchmarkdotnet.](https://github.com/dotnet/benchmarkdotnet) To make it easy for you to follow along with your own validation, I have a very simple setup for the benchmarks I use. Create a new C# project:
 
@@ -2626,7 +2626,7 @@ Other changes also improved loop cloning. [dotnet/runtime#59886](https://github.
 
 all the conditions, & them together, and then branch (if (!(cond1 & cond2)) goto slowPath), or whether to emit each condition on its own (if (!cond1) goto slowPath; if (!cond2) goto slowPath). [dotnet/runtime#66257](https://github.com/dotnet/runtime/pull/66257) enables loop cloning to kick in when the loop variable is initialized to more kinds of expressions (e.g. for (int fromindex = lastIndex - lengthToClear; ...)). And [dotnet/runtime#70232](https://github.com/dotnet/runtime/pull/70232) increases the JIT's willingness to clone loops with bodies that do a broader set of operations.
 
-#### <span id="page-54-0"></span>**Folding, propagation, and substitution**
+### <span id="page-54-0"></span>**Folding, propagation, and substitution**
 
 Constant folding is an optimization where a compiler computes the value of an expression involving only constants at compile-time rather than generating the code to compute the value at run-time. There are multiple levels of constant folding in .NET, with some constant folding performed by the C# compiler and some constant folding performed by the JIT compiler. For example, given the C# code:
 
@@ -3015,10 +3015,11 @@ public bool FindVectorized(byte value) => Contains_Vectorized(_data, value); // 
 implementation we just wrote
 ```
 
-| Method         | Mean      |      |
-|----------------|-----------|------|
-| Find           | 484.05 ns | 1.00 |
-| FindVectorized | 20.21 ns  | 0.04 |
+| Method         | Mean      | Ratio |
+|----------------|-----------|-------|
+| Find           | 484.05 ns | 1.00  |
+| FindVectorized | 20.21 ns  | 0.04  |
+|                |           |       |
 
 A 24x speedup! Woo hoo, victory, all your performance are belong to us!
 
@@ -3082,15 +3083,16 @@ public bool FindVectorized(byte value) => Contains_Vectorized(_data, value);
 |----------------|-----------|-------|
 | Find           | 15.388 ns | 1.00  |
 | FindVectorized | 1.747 ns  | 0.11  |
+|                |           |       |
 
 Woo hoo, victory, all your performance are belong to us… again!
 
 What about on the larger data set again? Previously with Vector<T> we had a 24x speedup, but now:
 
-| Method         | Mean      |      |
-|----------------|-----------|------|
-| Find           | 484.25 ns | 1.00 |
-| FindVectorized | 32.92 ns  | 0.07 |
+| Method         | Mean      | Ratio |
+|----------------|-----------|-------|
+| Find           | 484.25 ns | 1.00  |
+| FindVectorized | 32.92 ns  | 0.07  |
 
 … closer to 15x. Nothing to sneeze at, but it's not the 24x we previously saw. What if we want to have our cake and eat it, too? Let's also add a Vector256<T> path. To do that, we literally copy/paste our Vector128<T> code, search/replace all references to Vector128 in the copied code with Vector256, and just put it into an additional condition that uses the Vector256<T> path if it's supported and there are enough elements to utilize it.
 
@@ -3169,7 +3171,7 @@ There are many factors that impact which path you go down, and I expect we'll ha
 
 I already mentioned several PRs that exposed the new cross-platform vector support, but that only scratches the surface of the work done to actually enable these operations and to enable them to produce high-quality code. As just one example of a category of such work, a set of changes went in to help ensure that zero vector constants are handled well, such as [dotnet/runtime#63821](https://github.com/dotnet/runtime/pull/63821) that "morphed" (changed) Vector128/256<T>.Create(default) into Vector128/256<T>.Zero, which then enables subsequent optimizations to focus only on Zero; [dotnet/runtime#65028](https://github.com/dotnet/runtime/pull/65028) that enabled constant propagation of Vector128/256<T>.Zero; [dotnet/runtime#68874](https://github.com/dotnet/runtime/pull/68874) and [dotnet/runtime#70171](https://github.com/dotnet/runtime/pull/70171) that add first-class knowledge of vector constants to the JIT's intermediate representation; and [dotnet/runtime#62933,](https://github.com/dotnet/runtime/pull/62933) [dotnet/runtime#65632,](https://github.com/dotnet/runtime/pull/65632) [dotnet/runtime#55875,](https://github.com/dotnet/runtime/pull/55875) [dotnet/runtime#67502,](https://github.com/dotnet/runtime/pull/67502) and [dotnet/runtime#64783](https://github.com/dotnet/runtime/pull/64783) that all improve the code quality of instructions generated for zero vector comparisons.
 
-#### <span id="page-66-0"></span>**Inlining**
+### <span id="page-66-0"></span>**Inlining**
 
 Inlining is one of the most important optimizations the JIT can do. The concept is simple: instead of making a call to some method, take the code from that method and bake it into the call site. This has the obvious advantage of avoiding the overhead of a method call, but except for really small methods on really hot paths, that's often on the smaller side of the wins inlining brings. The bigger wins are due to the callee's code being exposed to the caller's code, and vice versa. So, for example, if the caller is passing a constant as an argument to the callee, if the method isn't inlined, the compilation of the callee has no knowledge of that constant, but if the callee is inlined, all of the code in the callee is then aware of its argument being a constant value, and can do all of the optimizations possible with such a constant, like dead code elimination, branch elimination, constant folding and propagation, and so on. Of course, if it were all rainbows and unicorns, everything possible to be inlined would be inlined, and that's obviously not happening. Inlining brings with it the cost of potentially increased binary size. If the code being inlined would result in the same amount or less assembly code in the caller than it takes to call the callee (and if the JIT can quickly determine that), then inlining is a nobrainer. But if the code being inlined would increase the size of the callee non-trivially, now the JIT needs to weigh that increase in code size against the throughput benefits that could come from it. That code size increase can itself result in throughput regressions, due to increasing the number of distinct instructions to be executed and thereby putting more pressure on the instruction cache. As with any cache, the more times you need to read from memory to populate it, the less effective the cache will be. If you have a function that gets inlined into 100 different call sites, every one of those call sites' copies of the callee's instructions are unique, and calling each of those 100 functions could end up thrashing the instruction cache; in contrast, if all of those 100 functions "shared" the same instructions by simply calling the single instance of the callee, it's likely the instruction cache would be much more effective and lead to fewer trips to memory.
 
@@ -3329,6 +3331,7 @@ results in:
 |                   | ns     |       |
 | GenericVirtual    | 6.4552 | 13.28 |
 |                   | ns     |       |
+|                   |        |       |
 
 [dotnet/runtime#65926](https://github.com/dotnet/runtime/pull/65926) eases the pain a tad. Some of the cost comes from looking up some cached information in a hash table in the runtime, and as is the case with many map implementations, this one involves computing a hash code and using a mod operation to map to the right bucket. Other hash table implementations around [dotnet/runtime,](https://github.com/dotnet/runtime) including Dictionary<,>, HashSet<,>, and ConcurrentDictionary<,> previously switched to a ["fastmod"](https://lemire.me/blog/2019/02/08/faster-remainders-when-the-divisor-is-a-constant-beating-compilers-and-libdivide) implementation; this PR does the same for this EEHashtable, which is used as part of the CORINFO\_GENERIC\_HANDLE JIT helper function employed:
 
@@ -3336,6 +3339,7 @@ results in:
 |----------------|----------|----------|-------|
 | GenericVirtual | .NET 6.0 | 6.475 ns | 1.00  |
 | GenericVirtual | .NET 7.0 | 6.119 ns | 0.95  |
+|                |          |          |       |
 
 Not enough of an improvement for us to start recommending people use them, but a 5% improvement takes a bit of the edge off the sting.
 
@@ -3579,7 +3583,7 @@ So, yes, there are some constraints associated with Native AOT, but there are al
 
 This is a really exciting space, one we expect to see flourish in coming releases.
 
-### <span id="page-79-0"></span>Mono
+## <span id="page-79-0"></span>Mono
 
 Up until now I've referred to "the JIT," "the GC," and "the runtime," but in reality there are actually multiple runtimes in .NET. I've been talking about "coreclr," which is the runtime that's recommended for use on Linux, macOS, and Windows. However, there's also "mono," which powers Blazor wasm applications, Android apps, and iOS apps. It's also seen significant improvements in .NET 7.
 
@@ -3601,7 +3605,7 @@ One of the biggest categories of improvements, however, is in vectorization. Thi
 
 77 CHAPTER 5 | Mono
 
-### <span id="page-82-0"></span>Reflection
+## <span id="page-82-0"></span>Reflection
 
 Reflection is one of those areas you either love or hate (I find it a bit humorous to be writing this section immediately after writing the Native AOT section). It's immensely powerful, providing the ability to query all of the metadata for code in your process and for arbitrary assemblies you might encounter, to invoke arbitrary functionality dynamically, and even to emit dynamically-generated IL at run-time. It's also difficult to handle well in the face of tooling like a linker or a solution like Native AOT that needs to be able to determine at build time exactly what code will be executed, and it's generally quite expensive at run-time; thus it's both something we strive to avoid when possible but also invest in reducing the costs of, as it's so popular in so many different kinds of applications because it is incredibly useful. As with most releases, it's seen some nice improvements in .NET 7.
 
@@ -3621,6 +3625,7 @@ private static void MyMethod() { }
 |------------------|----------|-----------|-------|
 | MethodInfoInvoke | .NET 6.0 | 43.846 ns | 1.00  |
 | MethodInfoInvoke | .NET 7.0 | 8.078 ns  | 0.18  |
+|                  |          |           |       |
 
 Reflection also involves lots of manipulation of objects that represent types, methods, properties, and so on, and tweaks here and there can add up to a measurable difference when using these APIs. For example, I've talked in past performance posts about how, potentially counterintuitively, one of the ways we've achieved performance boosts is by porting native code from the runtime back into managed C#. There are a variety of ways in which doing so can help performance, but one is that there is some overhead associated with calling from managed code into the runtime, and eliminating such hops avoids that overhead. This can be seen in full effect in [dotnet/runtime#71873,](https://github.com/dotnet/runtime/pull/71873) which moves several of these "FCalls" related to Type, RuntimeType (the Type-derived class used by the runtime to represent its types), and Enum out of native into managed.
 
@@ -3668,6 +3673,7 @@ internal class MyClass
 |----------------|----------|----------|-------|-----------|-------------|
 | CreateInstance | .NET 6.0 | 167.8 ns | 1.00  | 320 B     | 1.00        |
 | CreateInstance | .NET 7.0 | 143.4 ns | 0.85  | 200 B     | 0.62        |
+|                |          |          |       |           |             |
 
 And since we were talking about AssemblyName, other PRs improved it in other ways as well. [dotnet/runtime#66750,](https://github.com/dotnet/runtime/pull/66750) for example, updated the computation of AssemblyName.FullName to use stack-allocated memory and ArrayPool<char> instead of using a StringBuilder:
 
@@ -3725,7 +3731,7 @@ There are also improvements that are hard to see but that remove overheads as pa
 
 **CHAPTER** 7
 
-### <span id="page-86-0"></span>Interop
+# <span id="page-86-0"></span>Interop
 
 .NET has long had great support for interop, enabling .NET applications to consume huge amounts of functionality written in other languages and/or exposed by the underlying operating system. The bedrock of this support has been "Platform Invoke," or "P/Invoke," represented in code by [DllImport(...)] applied to methods. The DllImportAttribute enables declaring a method that can be called like any other .NET method but that actually represents some external method that the runtime should call when this managed method is invoked. The DllImport specifies details about in what library the function lives, what its actual name is in the exports from that library, high-level details about marshalling of input arguments and return values, and so on, and the runtime ensures all the right things happen. This mechanism works on all operating systems. For example, Windows has a method CreatePipe for creating an anonymous pipe:
 
@@ -3910,7 +3916,7 @@ public void PinUnpin()
 
 **CHAPTER** 8
 
-### <span id="page-93-0"></span>Threading
+## <span id="page-93-0"></span>Threading
 
 Threading is one of those cross-cutting concerns that impacts every application, such that changes in the threading space can have a wide-spread impact. This release sees two very substantial changes to the ThreadPool itself; [dotnet/runtime#64834](https://github.com/dotnet/runtime/pull/64834) switches the "IO pool" over to using an entirely managed implementation (whereas previously the IO pool was still in native code even though the worker pool had been moved entirely to managed in previous releases), and [dotnet/runtime#71864](https://github.com/dotnet/runtime/pull/71864) similarly switches the timer implementation from one based in native to one entirely in managed code. Those two changes can impact performance, and the former was demonstrated to on larger hardware, but for the most part that wasn't their primary goal. Instead, other PRs have been focused on improving throughput.
 
@@ -4011,7 +4017,7 @@ This is simply spinning up 100 tasks, each of which enters and exits a read-writ
 
 One final threading-related change to call out: [dotnet/runtime#68639.](https://github.com/dotnet/runtime/pull/68639) This one is Windows specific. Windows has the concept of processor groups, each of which can have up to 64 cores in it, and by default when a process runs, it's assigned a specific processor group and can only use the cores in that group. With .NET 7, the runtime flips its default so that by default it will try to use all processor groups if possible.
 
-# <span id="page-97-0"></span>Primitive Types and Numerics
+## <span id="page-97-0"></span>Primitive Types and Numerics
 
 We've looked at code generation and GC, at threading and vectorization, at interop… let's turn our attention to some of the fundamental types in the system. Primitives like int and bool and double, core types like Guid and DateTime, they form the backbone on which everything is built, and every release it's exciting to see the improvements that find their way into these types.
 
@@ -4046,14 +4052,17 @@ public double ParseAll()
  total += double.Parse(s);
 ```
 
-| }<br>return total; |  |
-|--------------------|--|
-| }                  |  |
+| }             |
+|---------------|
+| return total; |
+| }             |
+|               |
 
 | Method   | Runtime  | Mean     | Ratio |
 |----------|----------|----------|-------|
 | ParseAll | .NET 6.0 | 26.84 ms | 1.00  |
 | ParseAll | .NET 7.0 | 12.63 ms | 0.47  |
+|          |          |          |       |
 
 bool.TryParse and bool.TryFormat were also improved. [dotnet/runtime#64782](https://github.com/dotnet/runtime/pull/64782) streamlined these implementations by using BinaryPrimitives to perform fewer writes and reads. For example, instead of TryFormat writing out "True" by doing:
 
@@ -4080,13 +4089,13 @@ private char[] _chars = new char[] { 'T', 'r', 'u', 'e' };
 [Benchmark] public bool FormatTrue() => _value.TryFormat(_chars, out _);
 ```
 
-| Method                 | Runtime              | Mean     | Ratio |
-|------------------------|----------------------|----------|-------|
-| ParseTrue              | .NET 6.0             | 7.347 ns | 1.00  |
-| ParseTrue              | .NET 7.0<br>2.327 ns |          | 0.32  |
-|                        |                      |          |       |
-| FormatTrue             | .NET 6.0             | 3.030 ns | 1.00  |
-| FormatTrue<br>.NET 7.0 |                      | 1.997 ns | 0.66  |
+| Method     | Runtime  | Mean     | Ratio |
+|------------|----------|----------|-------|
+| ParseTrue  | .NET 6.0 | 7.347 ns | 1.00  |
+| ParseTrue  | .NET 7.0 | 2.327 ns | 0.32  |
+|            |          |          |       |
+| FormatTrue | .NET 6.0 | 3.030 ns | 1.00  |
+| FormatTrue | .NET 7.0 | 1.997 ns | 0.66  |
 
 Enum gets several performance boosts, as well. For example, when performing an operation like Enum.IsDefined, Enum.GetName, or Enum.ToString, the implementation consults a cache of all of the values defined on the enum. This cache includes the string name and the value for every defined enumeration in the Enum. It's also sorted by value in an array, so when one of these operations is performed, the code uses Array.BinarySearch to find the index of the relevant entry. The issue with that is one of overheads. When it comes to algorithmic complexity, a binary search is faster than a linear search; after all, a binary search is O(log N) whereas a linear search is O(N). However, there's also less overhead for every step of the algorithm in a linear search, and so for smaller values of N, it can be much faster to simply do the simple thing. That's what [dotnet/runtime#57973](https://github.com/dotnet/runtime/pull/57973) does for enums. For enums with less than or equal to 32 defined values, the implementation now just does a linear search via the internal SpanHelpers.IndexOf (the worker routine behind IndexOf on spans, strings,
 
@@ -4108,7 +4117,7 @@ public bool AllDefined()
 }
 ```
 
-| Method     | Runtime  |           | Ratio |
+| Method     | Runtime  | Mean      | Ratio |
 |------------|----------|-----------|-------|
 | AllDefined | .NET 6.0 | 159.28 ns | 1.00  |
 | AllDefined | .NET 7.0 | 94.86 ns  | 0.60  |
@@ -4138,6 +4147,7 @@ private static int IndexOf<T>(T[] values, T value)
 |----------|----------|------------|-------|
 | FindEnum | .NET 6.0 | 421.608 ns | 1.00  |
 | FindEnum | .NET 7.0 | 5.466 ns   | 0.01  |
+|          |          |            |       |
 
 Not to be left out, Guid's equality operations also get faster, thanks to [dotnet/runtime#66889](https://github.com/dotnet/runtime/pull/66889) from [@madelson](https://github.com/madelson). The previous implementation of Guid split the data into four 32-bit values and performed 4 int comparisons. With this change, if the current hardware has 128-bit SIMD support, the implementation loads the data from the two guids as two vectors and simply does a single comparison.
 
@@ -4199,19 +4209,19 @@ private char[] _dest = new char[100];
 [Benchmark] public bool TryFormat() => _dt.TryFormat(_dest, out _, "r");
 ```
 
-| Method    | Runtime<br>Mean       |            | Ratio |
-|-----------|-----------------------|------------|-------|
-| Day       | .NET 6.0<br>5.2080 ns |            | 1.00  |
-| Day       | .NET 7.0              | 2.0549 ns  | 0.39  |
-|           |                       |            |       |
-| Month     | .NET 6.0<br>4.1186 ns |            | 1.00  |
-| Month     | .NET 7.0<br>2.0945 ns |            | 0.51  |
-|           |                       |            |       |
-| Year      | .NET 6.0              | 3.1422 ns  | 1.00  |
-| Year      | .NET 7.0              | 0.8200 ns  | 0.26  |
-|           |                       |            |       |
-| TryFormat | .NET 6.0              |            | 1.00  |
-| TryFormat | .NET 7.0              | 25.9848 ns | 0.94  |
+| Method<br>Runtime |          | Mean      | Ratio |
+|-------------------|----------|-----------|-------|
+| Day               | .NET 6.0 | 5.2080 ns | 1.00  |
+| Day               | .NET 7.0 | 2.0549 ns | 0.39  |
+|                   |          |           |       |
+| Month             | .NET 6.0 | 4.1186 ns | 1.00  |
+| Month             | .NET 7.0 | 2.0945 ns | 0.51  |
+|                   |          |           |       |
+| Year              | .NET 6.0 | 3.1422 ns | 1.00  |
+| Year              | .NET 7.0 |           | 0.26  |
+|                   |          |           |       |
+| TryFormat         | .NET 6.0 |           | 1.00  |
+| TryFormat         | .NET 7.0 |           | 0.94  |
 
 So, we've touched on improvements to a few types, but the pièce de résistance around primitive types in this release is "generic math," which impacts almost every primitive type in .NET. There are significant improvements here, some which have been in the making for literally over a decade.
 
@@ -4221,11 +4231,7 @@ code applied to any types that implement the interfaces… which all of the nume
 
 While this support is all primarily intended for external consumers, the core libraries do consume some of it internally. You can see how these APIs clean up consuming code even while maintaining performance in PRs like [dotnet/runtime#68226](https://github.com/dotnet/runtime/pull/68226) and [dotnet/runtime#68183,](https://github.com/dotnet/runtime/pull/68183) which use the interfaces to deduplicate a bunch of LINQ code in Enumerable.Sum/Average/Min/Max. There are multiple overloads of these methods for int, long, float, double, and decimal. The GitHub summary of the diffs tells the story on how much code was able to be deleted:
 
-interface contains these methods:
-
-Another simple example comes from the new System.Formats.Tar library in .NET 7, which as the name suggests is used for reading and writing archives in any of multiple [tar file formats.](https://en.wikipedia.org/wiki/Tar_(computing)#File_format) The tar file formats include integer values in octal representation, so the TarReader class needs to parse octal values. Some of these values are 32-bit integers, and some are 64-bit integers. Rather than have two separate ParseOctalAsUInt32 and ParseOctalAsUInt64 methods, [dotnet/runtime#74281\]](https://github.com/dotnet/runtime/pull/74281) consolidated the methods into a single ParseOctal<T> with the constraint where T : struct, INumber<T>. The implementation is then entirely in terms of T and can be used for either of these types (plus any other types meeting the constraints, should that ever be needed). What's particularly interesting about this example is the ParseOctal<T> method includes use of checked, e.g. value = checked((value \* octalFactor) + T.CreateTruncating(digit));. This is only possible because C# 11 includes the aforementioned support for [user-defined checked operators,](https://github.com/dotnet/csharplang/blob/main/proposals/checked-user-defined-operators.md) enabling the generic
-
-math interfaces to support both the normal and checked varieties, e.g. the IMultiplyOperators<,,>
+Another simple example comes from the new System.Formats.Tar library in .NET 7, which as the name suggests is used for reading and writing archives in any of multiple [tar file formats.](https://en.wikipedia.org/wiki/Tar_(computing)#File_format) The tar file formats include integer values in octal representation, so the TarReader class needs to parse octal values. Some of these values are 32-bit integers, and some are 64-bit integers. Rather than have two separate ParseOctalAsUInt32 and ParseOctalAsUInt64 methods, [dotnet/runtime#74281\]](https://github.com/dotnet/runtime/pull/74281) consolidated the methods into a single ParseOctal<T> with the constraint where T : struct, INumber<T>. The implementation is then entirely in terms of T and can be used for either of these types (plus any other types meeting the constraints, should that ever be needed). What's particularly interesting about this example is the ParseOctal<T> method includes use of checked, e.g. value = checked((value \* octalFactor) + T.CreateTruncating(digit));. This is only possible because C# 11 includes the aforementioned support for [user-defined checked operators,](https://github.com/dotnet/csharplang/blob/main/proposals/checked-user-defined-operators.md) enabling the generic math interfaces to support both the normal and checked varieties, e.g. the IMultiplyOperators<,,> interface contains these methods:
 
 ```
 static abstract TResult operator *(TSelf left, TOther right);
@@ -4266,6 +4272,7 @@ public BigInteger Parse() => BigInteger.Parse(_input);
 |--------|----------|---------|-------|
 | Parse  | .NET 6.0 | 3.474 s | 1.00  |
 | Parse  | .NET 7.0 | 1.672 s | 0.48  |
+|        |          |         |       |
 
 Also related to BigInteger (and not just for really big ones), [dotnet/runtime#35565](https://github.com/dotnet/runtime/pull/35565) from [@sakno](https://github.com/sakno) overhauled much of the internals of BigInteger to be based on spans rather than arrays. That in turn enabled a fair amount of use of stack allocation and slicing to avoid allocation overheads, while also improving reliability and safety by moving some code away from unsafe pointers to safe spans. The primary performance impact is visible in allocation numbers, and in particular for operations related to division.
 
@@ -4284,7 +4291,7 @@ public BigInteger ModPow() => BigInteger.ModPow(_bi1, _bi2, _bi3);
 | ModPow | .NET 6.0 | 1.527 ms | 1.00  | 706 B     | 1.00        |
 | ModPow | .NET 7.0 | 1.589 ms | 1.04  | 50 B      | 0.07        |
 
-### <span id="page-105-0"></span>Arrays, Strings, and Spans
+# <span id="page-105-0"></span>Arrays, Strings, and Spans
 
 While there are many forms of computation that can consume resources in applications, some of the most common include processing of data stored in arrays, strings, and now spans. Thus you see a focus in every .NET release on removing as much overhead as possible from such scenarios, while also finding ways to further optimize the concrete operations developers are commonly performing.
 
@@ -4457,6 +4464,7 @@ public bool Contains() => _data.AsSpan().Contains((byte)1);
 |----------|----------|-----------|-------|
 | Contains | .NET 6.0 | 15.115 ns | 1.00  |
 | Contains | .NET 7.0 | 2.557 ns  | 0.17  |
+|          |          |           |       |
 
 [dotnet/runtime#60974](https://github.com/dotnet/runtime/pull/60974) from [@alexcovington](https://github.com/alexcovington) broadens the impact of IndexOf. Prior to this PR, IndexOf was vectorized for one and two-byte sized primitive types, but this PR extends it as well to four and eight-byte sized primitives. As with most of the other vectorized implementations, it checks whether the T is bitwise-equatable, which is important for the vectorization as it's only looking at the bits in memory and not paying attention to any Equals implementation that might be defined on the type. In practice today, that means this is limited to just a handful of types of which the runtime has intimate knowledge (Boolean, Byte, SByte, UInt16, Int16, Char, UInt32, Int32, UInt64, Int64, UIntPtr, IntPtr, Rune, and enums), but in theory it could be extended in the future.
 
@@ -4533,6 +4541,7 @@ public void Replace()
 |---------|----------|-------------|-------|
 | Replace | .NET 6.0 | 1,563.69 ns | 1.00  |
 | Replace | .NET 7.0 | 70.84 ns    | 0.04  |
+|         |          |             |       |
 
 [dotnet/runtime#60463](https://github.com/dotnet/runtime/pull/60463) from [@nietras](https://github.com/nietras) used IndexOfAny in StringReader.ReadLine to search for '\r' and '\n' line ending characters, which results in some substantial throughput gains even with the allocation and copy that is inherent to the method's design:
 
@@ -4545,10 +4554,10 @@ public void ReadAllLines()
 }
 ```
 
-| Method<br>Runtime |          | Mean     | Ratio |  |
-|-------------------|----------|----------|-------|--|
-| ReadAllLines      | .NET 6.0 | 947.8 ns | 1.00  |  |
-| ReadAllLines      | .NET 7.0 | 385.7 ns | 0.41  |  |
+| Method       | Runtime<br>Mean |          | Ratio |
+|--------------|-----------------|----------|-------|
+| ReadAllLines | .NET 6.0        | 947.8 ns | 1.00  |
+| ReadAllLines | .NET 7.0        | 385.7 ns | 0.41  |
 
 And [dotnet/runtime#70176](https://github.com/dotnet/runtime/pull/70176) cleaned up a plethora of additional uses.
 
@@ -4563,6 +4572,7 @@ public int IndexOfAny() => Sonnet.AsSpan().IndexOfAny("!.<>");
 |------------|----------|----------|-------|
 | IndexOfAny | .NET 6.0 | 52.29 ns | 1.00  |
 | IndexOfAny | .NET 7.0 | 40.17 ns | 0.77  |
+|            |          |          |       |
 
 The IndexOf family is just one of many on string/MemoryExtensions that has seen dramatic improvements. Another are the SequenceEquals family, including Equals, StartsWith, and EndsWith. One of my favorite changes in the whole release is [dotnet/runtime#65288](https://github.com/dotnet/runtime/pull/65288) and is squarely in this area. It's very common to see calls to methods like StartsWith with a constant string argument, e.g. value.StartsWith("https://"), value.SequenceEquals("Key"), etc. These methods are now recognized by the JIT, which can now automatically unroll the comparison and compare more than one char at a time, e.g. doing a single read of four chars as a long and a single comparison of that long against the expected combination of those four chars. The result is beautiful. Making it even better is [dotnet/runtime#66095,](https://github.com/dotnet/runtime/pull/66095) which adds to this support for OrdinalIgnoreCase. Remember those ASCII bit twiddling tricks discussed a bit earlier with char.IsAsciiLetter and friends? The JIT now employs the same trick as part of this unrolling, so if you do that same value.StartsWith("https://") but instead as value.StartsWith("https://", StringComparison.OrdinalIgnoreCase), it will recognize that the whole comparison string is ASCII and will OR in the appropriate mask on both the comparison constant and on the read data from the input in order to perform the comparison in a case-insensitive manner.
 
@@ -4669,6 +4679,7 @@ public void Reverse() => Array.Reverse(text);
 |---------|----------|-----------|-------|
 | Reverse | .NET 6.0 | 21.352 ns | 1.00  |
 | Reverse | .NET 7.0 | 9.536 ns  | 0.45  |
+|         |          |           |       |
 
 String.Split also saw vectorization improvements in [dotnet/runtime#64899](https://github.com/dotnet/runtime/pull/64899) from [@yesmey](https://github.com/yesmey). As with some of the previously discussed PRs, it switched the existing usage of SSE2 and SSSE3 hardware intrinsics over to the new Vector128<T> helpers, which improved upon the existing implementation while also implicitly adding vectorization support for Arm64.
 
@@ -4718,6 +4729,7 @@ public int GetMaxByteCount() => Encoding.UTF8.GetMaxByteCount(Sonnet.Length);
 |-----------------|----------|-----------|-------|
 | GetMaxByteCount | .NET 6.0 | 1.7442 ns | 1.00  |
 | GetMaxByteCount | .NET 7.0 | 0.4746 ns | 0.27  |
+|                 |          |           |       |
 
 Arguably the biggest improvement around UTF8 in .NET 7 is the new C# 11 support for UTF8 literals. Initially implemented in the C# compiler in [dotnet/roslyn#58991,](https://github.com/dotnet/roslyn/pull/58991) with follow-on work in [dotnet/roslyn#59390,](https://github.com/dotnet/roslyn/pull/59390) [dotnet/roslyn#61532,](https://github.com/dotnet/roslyn/pull/61532) and [dotnet/roslyn#62044,](https://github.com/dotnet/roslyn/pull/62044) UTF8 literals enables the compiler to perform the UTF8 encoding into bytes at compile-time. Rather than writing a normal string, e.g. "hello", a developer simply appends the new u8 suffix onto the string literal, e.g. "hello"u8. At that point, this is no longer a string. Rather, the natural type of this expression is a ReadOnlySpan<byte>. If you write:
 
@@ -4804,6 +4816,7 @@ one " +
 |--------------|----------|-----------|-------|
 | AppendFormat | .NET 6.0 | 338.23 ns | 1.00  |
 | AppendFormat | .NET 7.0 | 49.15 ns  | 0.15  |
+|              |          |           |       |
 
 Speaking of StringBuilder, it's seen additional improvements beyond the aforementioned changes to AppendFormat. One interesting change is [dotnet/runtime#64405,](https://github.com/dotnet/runtime/pull/64405) which achieved two related things. The first was to remove pinning as part of formatting operations. As an example, StringBuilder has an Append(char\* value, int valueCount) overload which copies the specified number of characters from the specified pointer into the StringBuilder, and other APIs were implemented in terms of this method; for example, the Append(string? value, int startIndex, int count) method was essentially implemented as:
 
@@ -4874,6 +4887,7 @@ public void Insert()
 |--------|----------|----------|-------|-----------|-------------|
 | Insert | .NET 6.0 | 30.02 ns | 1.00  | 32 B      | 1.00        |
 | Insert | .NET 7.0 | 25.53 ns | 0.85  | -         | 0.00        |
+|        |          |          |       |           |             |
 
 Other minor improvements to StringBuilder have also been made, like [dotnet/runtime#60406](https://github.com/dotnet/runtime/pull/60406) which removed a small int[] allocation from the Replace method. Even with all these improvements, though, the fastest use of StringBuilder is no use; [dotnet/runtime#68768](https://github.com/dotnet/runtime/pull/68768) removed a bunch of uses of StringBuilder that would have been better served with other string-creation mechanisms. For example, the legacy DataView type had some code that created a sorting specification as a string:
 
@@ -5243,6 +5257,7 @@ public int WithString() => s_value.AsSpan().IndexOfAny(@":\/?#");
 |------------|----------|-------|
 | WithArray  | 8.601 ns | 1.00  |
 | WithString | 6.949 ns | 0.81  |
+|            |          |       |
 
 Another example from that PR took code along the lines of:
 
@@ -5297,7 +5312,7 @@ Finally, [dotnet/runtime#59670](https://github.com/dotnet/runtime/pull/59670) fr
 
 **CHAPTER** 11
 
-## <span id="page-132-0"></span>Regex
+# <span id="page-132-0"></span>Regex
 
 Back in May, I shared a fairly detailed post about the improvements coming to [Regular Expressions in](https://devblogs.microsoft.com/dotnet/regular-expression-improvements-in-dotnet-7)  [.NET 7.](https://devblogs.microsoft.com/dotnet/regular-expression-improvements-in-dotnet-7) As a recap, prior to .NET 5, Regex's implementation had largely been untouched for quite some time. In .NET 5, we brought it back up to be on par with or better than multiple other industry implementations from a performance perspective. .NET 7 takes some significant leaps forward from that. If you haven't read the post yet, please go ahead and do so now; I'll wait…
 
@@ -5649,6 +5664,7 @@ public int Count() => _regex.Matches(s_haystack).Count;
 |--------|----------|----------|-------|
 | Count  | .NET 6.0 | 499.3 us | 1.00  |
 | Count  | .NET 7.0 | 177.7 us | 0.35  |
+|        |          |          |       |
 
 The previous PR started turning IgnoreCase pattern text into sets, in particular for ASCII, e.g. (?i)a would become [Aa]. That PR hacked in the support for ASCII knowing that something more complete would be coming along, as it did in [dotnet/runtime#67184.](https://github.com/dotnet/runtime/pull/67184) Rather than hardcoding the caseinsensitive sets that just the ASCII characters map to, this PR essentially hardcodes the sets for every possible char. Once that's done, we no longer need to know about case-insensitivity at match time and can instead just double-down on efficiently matching sets, which we already need to be able to do well. Now, I said it encodes the sets for every possible char; that's not entirely true. If it were true, that would take up a large amount of memory, and in fact, most of that memory would be wasted because the vast majority of characters don't participate in case conversion… there are only ~2,000 characters that we need to handle. As such, the implementation employs a three-tier table scheme. The first table has 64 elements, dividing the full range of chars into 64 groupings; of those 64 groups, 54 of them have no characters that participate in case conversion, so if we hit one of those entries, we can immediately stop the search. For the remaining 10 that do have at least one character in their range participating, the character and the value from the first table are used to compute an index into the second table; there, too, the majority of entries say that nothing participates in case conversion. It's only if we get a legitimate hit in the second table does that give us an index into the third table, at which location we can find all of the characters considered case-equivalent with the first.
 
@@ -5672,10 +5688,9 @@ unlikely."
 |---------|----------|-------------|-------|
 | IsMatch | .NET 6.0 | 4,291.77 us | 1.000 |
 | IsMatch | .NET 7.0 | 42.40 us    | 0.010 |
+|         |          |             |       |
 
-Of course, as has been talked about elsewhere, the best optimizations aren't ones that make something faster but rather ones that make something entirely unnecessary. That's what [dotnet/runtime#64177](https://github.com/dotnet/runtime/pull/64177) does, in particular in relation to anchors. The .NET regex implementation has long had optimizations for patterns with a starting anchor: if the pattern begins with ^, for example (and RegexOptions.Multiline wasn't specified), the pattern is rooted to the beginning, meaning it can't possibly match at any position other than 0; as such, with such an anchor, TryFindNextPossibleStartingPosition won't do any searching at all. The key here, though, is being able to detect whether the pattern begins with such an anchor. In some cases, like ^abc\$, that's trivial.
-
-In other cases, like ^abc|^def, the existing analysis had trouble seeing through that alternation to find the guaranteed starting ^ anchor. This PR fixes that. It also adds a new strategy based on discovering that a pattern has an ending anchor like \$. If the analysis engine can determine a maximum number of characters for any possible match, and it has such an anchor, then it can simply jump to that distance from the end of the string, and bypass even looking at anything before then.
+Of course, as has been talked about elsewhere, the best optimizations aren't ones that make something faster but rather ones that make something entirely unnecessary. That's what [dotnet/runtime#64177](https://github.com/dotnet/runtime/pull/64177) does, in particular in relation to anchors. The .NET regex implementation has long had optimizations for patterns with a starting anchor: if the pattern begins with ^, for example (and RegexOptions.Multiline wasn't specified), the pattern is rooted to the beginning, meaning it can't possibly match at any position other than 0; as such, with such an anchor, TryFindNextPossibleStartingPosition won't do any searching at all. The key here, though, is being able to detect whether the pattern begins with such an anchor. In some cases, like ^abc\$, that's trivial. In other cases, like ^abc|^def, the existing analysis had trouble seeing through that alternation to find the guaranteed starting ^ anchor. This PR fixes that. It also adds a new strategy based on discovering that a pattern has an ending anchor like \$. If the analysis engine can determine a maximum number of
 
 ```
 private static readonly string s_haystack = new
@@ -5684,6 +5699,10 @@ private Regex _regex = new Regex(@"^abc|^def", RegexOptions.Compiled);
 [Benchmark]
 public bool IsMatch() => _regex.IsMatch(s_haystack); // Why search _all_ the text?!
 ```
+
+characters for any possible match, and it has such an anchor, then it can simply jump to that distance
+
+from the end of the string, and bypass even looking at anything before then.
 
 | Method  | Runtime  | Mean          | Ratio |
 |---------|----------|---------------|-------|
@@ -5702,10 +5721,9 @@ private Regex _regex = new Regex(@"looking|feeling", RegexOptions.Compiled);
 public int Count() => _regex.Matches(s_haystack).Count; // will search for "ing"
 ```
 
-| Method | Runtime  | Mean     | Ratio |
-|--------|----------|----------|-------|
-| Count  | .NET 6.0 | 444.2 us | 1.00  |
-| Count  | .NET 7.0 | 122.6 us | 0.28  |
+| Count<br>.NET 6.0<br>444.2 us | 1.00 |
+|-------------------------------|------|
+| Count<br>.NET 7.0<br>122.6 us | 0.28 |
 
 #### <span id="page-147-0"></span>**Loops and Backtracking**
 
@@ -5726,6 +5744,7 @@ public int Count() => _regex.Matches(s_haystack).Count;
 |--------|----------|------------|-------|
 | Count  | .NET 6.0 | 3,369.5 us | 1.00  |
 | Count  | .NET 7.0 | 430.2 us   | 0.13  |
+|        |          |            |       |
 
 Sometimes optimizations are well-intended but slightly miss the mark. [dotnet/runtime#63398](https://github.com/dotnet/runtime/pull/63398) fixes such an issue with an optimization introduced in .NET 5; the optimization was valuable but only for a subset of the scenarios it was intended to cover. While TryFindNextPossibleStartingPosition's primary raison d'être is to update the bumpalong position, it's also possible for TryMatchAtCurrentPosition to do so. One of the occasions in which it'll do so is when the pattern begins with an upper-unbounded single-character greedy loop. Since processing starts with the loop having fully consumed everything it could possibly match, subsequent trips through the scan loop don't need to reconsider any starting position within that loop; doing so would just be duplicating work done in a previous iteration of the scan loop. And as such, TryMatchAtCurrentPosition can update the bumpalong position to the end of the loop. The optimization added in .NET 5 was dutifully doing this, and it did so in a way that fully handled atomic loops. But with greedy loops, the updated position was getting updated every time we backtracked, meaning it started going backwards, when it should have remained at the end of the loop. This PR fixes that, yielding significant savings in the additional covered cases.
 
@@ -5737,7 +5756,7 @@ private Regex _regex = new Regex(@".*stephen", RegexOptions.Compiled);
 public int Count() => _regex.Matches(s_haystack).Count;
 ```
 
-| Method | Runtime  | Mean         | Ratio |
+| Method | Runtime  | Mean         |       |
 |--------|----------|--------------|-------|
 | Count  | .NET 6.0 | 103,962.8 us | 1.000 |
 | Count  | .NET 7.0 | 336.9 us     | 0.003 |
@@ -5962,10 +5981,11 @@ public SortedSet<string> SortedSetCopy()
 |---------------|----------|----------|-------|
 | SortedSetCopy | .NET 6.0 | 2.397 us | 1.00  |
 | SortedSetCopy | .NET 7.0 | 2.090 us | 0.87  |
+|               |          |          |       |
 
 One last PR to look at in collections: [dotnet/runtime#67923.](https://github.com/dotnet/runtime/pull/67923) ConditionalWeakTable<TKey, TValue> is a collection most developers haven't used, but when you need it, you need it. It's used primarily for two purposes: to associate additional state with some object, and to maintain a weak collection of objects. Essentially, it's a thread-safe dictionary that doesn't maintain strong references to anything it stores but ensures that the value associated with a key will remain rooted as long as the associated key is rooted. It exposes many of the same APIs as ConcurrentDictionary<,>, but for adding items to the collection, it's historically only had an Add method. That means if the design of the consuming code entailed trying to use the collection as a set, where duplicates were common, it would also be common to experience exceptions when trying to Add an item that already existed in the collection. Now in .NET 7, it has a TryAdd method, which enables such usage without potentially incurring the costs of such exceptions (and without needing to add try/catch blocks to defend against them).
 
-### <span id="page-157-0"></span>LINQ
+## <span id="page-157-0"></span>LINQ
 
 Let's move on to Language-Integrated Query (LINQ). LINQ is a productivity feature that practically every .NET developer uses. It enables otherwise complicated operations to be trivially expressed, whether via language-integrated query comprehension syntax or via direct use of methods on System.Linq.Enumerable. That productivity and expressivity, however, comes at a bit of an overhead cost. In the vast majority of situations, those costs (such as delegate and closure allocations, delegate invocations, use of interface methods on arbitrary enumerables vs direct access to indexers and Length/Count properties, etc.) don't have a significant impact, but for really hot paths, they can and do show up in a meaningful way. This leads some folks to declare LINQ as being broadly off-limits in their codebases. From my perspective, that's misguided; LINQ is extremely useful and has its place. In .NET itself, we use LINQ, we're just practical and thoughtful about where, avoiding it in code paths we've optimized to be lightweight and fast due to expectations that such code paths could matter to consumers. And as such, while LINQ itself may not perform as fast as a hand-rolled solution, we still care a lot about the performance of LINQ's implementation, so that it can be used in more and more places, and so that where it's used there's as little overhead as possible. There are also differences between operations in LINQ; with over 200 overloads providing various kinds of functionality, some of these overloads benefit from more performance tuning than do others, based on their expected usage.
 
@@ -5996,6 +6016,7 @@ public int Max() => _source.Max();
 |        |          |        |              |       |           |             |
 | Max    | .NET 6.0 | 1024   | 3,798.069 ns | 1.00  | 32 B      | 1.00        |
 | Max    | .NET 7.0 | 1024   | 100.279 ns   | 0.03  | -         | 0.00        |
+|        |          |        |              |       |           |             |
 
 One of the more interesting aspects of the PR, however, is one line that's meant to help with the nonarray cases. In performance optimization, and in particular when adding "fast paths" to better handle certain cases, there's almost always a winner and a loser: the winner is the case the optimization is intended to help, and the loser is every other case that's penalized by whatever checks are necessary to determine whether to take the improved path. An optimization that special-cases arrays might normally look like:
 
@@ -6124,6 +6145,7 @@ public float Max() => _floats.Max();
 |         |          |           |       |           |             |
 | Max     | .NET 6.0 | 41.178 us | 1.00  | 32 B      | 1.00        |
 | Max     | .NET 7.0 | 9.210 us  | 0.22  | -         | 0.00        |
+|         |          |           |       |           |             |
 
 The previous LINQ PRs were examples from making existing operations faster. But sometimes performance improvements come about from new APIs that can be used in place of previous ones in certain situations to further improve performance. One such example of that comes from new APIs introduced in [dotnet/runtime#70525](https://github.com/dotnet/runtime/pull/70525) from [@deeprobin](https://github.com/deeprobin) which were then improved in [dotnet/runtime#71564.](https://github.com/dotnet/runtime/pull/71564) One of the most popular methods in LINQ is Enumerable.OrderBy (and its inverse OrderByDescending), which enables creating a sorted copy of the input enumerable. To do so, the caller passes a Func<TSource,TKey> predicate to OrderBy which OrderBy uses to extract the comparison key for each item. However, it's relatively common to want to sort items with themselves as the keys; this is, after all, the default for methods like Array.Sort, and in such cases callers of OrderBy end up passing in an identity function, e.g. OrderBy(x => x). To eliminate that cruft, .NET 7 introduces the new Order and OrderDescending methods, which, in the spirit of pairs like Distinct and DistinctBy, perform that same sorting operation, just with an implicit x => x done on behalf of the caller. But beyond performance, a nice benefit of this is the implementation then knows that the keys will all be the same as the inputs, and it no longer needs to invoke the callback for each item to retrieve its key nor allocate a new array to store those keys. Thus if you find yourself using LINQ and reaching for OrderBy(x => x), consider instead using Order() and reaping the (primarily allocation) benefits:
 
@@ -6149,8 +6171,9 @@ public void Order()
 |---------|--------|----------|-------|-----------|-------------|
 | OrderBy | 1024   | 68.74 us | 1.00  | 12.3 KB   | 1.00        |
 | Order   | 1024   | 66.24 us | 0.96  | 8.28 KB   | 0.67        |
+|         |        |          |       |           |             |
 
-### <span id="page-163-0"></span>File I/O
+## <span id="page-163-0"></span>File I/O
 
 .NET 6 saw some huge file I/O improvements, in particular a complete rewrite of FileStream. While .NET 7 doesn't have any single changes on that scale, it does have a significant number of improvements that measurably "move the needle," and in variety of ways.
 
@@ -6241,6 +6264,7 @@ public async Task ReadWriteAsync()
 |                |          |            |       |          |       |           |             |
 | ReadWriteAsync | .NET 6.0 | True       | True  | 38.57 us | 1.00  | 400 B     | 1.00        |
 | ReadWriteAsync | .NET 7.0 | True       | True  | 33.07 us | 0.86  | 214 B     | 0.54        |
+|                |          |            |       |          |       |           |             |
 
 The rest of the performance-focused changes around I/O in .NET 7 were primarily focused on one of two things: reducing syscalls, and reducing allocation.
 
@@ -6281,6 +6305,7 @@ public void Move()
 |--------|----------|----------|-------|-----------|-------------|
 | Move   | .NET 6.0 | 31.70 us | 1.00  | 256 B     | 1.00        |
 | Move   | .NET 7.0 | 26.31 us | 0.83  | -         | 0.00        |
+|        |          |          |       |           |             |
 
 And then also on Unix, [dotnet/runtime#59520](https://github.com/dotnet/runtime/pull/59520) from [@tmds](https://github.com/tmds) improves directory deletion, and in particular recursive deletion (deleting a directory and everything it contains and everything they contain and so on), by utilizing the information already provided by the file system enumeration to avoid a secondary existence check.
 
@@ -6357,7 +6382,7 @@ In fairness, these are more about usability than they are about performance, but
 
 that negatively impact performance, such as by using a Stream.ReadAsync overload that needs to allocate a returned Task<int> or reading fewer bytes than is allowed as part of a read call. These implementations are correct and efficient.
 
-### <span id="page-172-0"></span>Compression
+# <span id="page-172-0"></span>Compression
 
 .NET Core 2.1 added support for the [Brotli](https://en.wikipedia.org/wiki/Brotli) compression algorithm, surfacing it in two ways: BrotliStream and the pair of BrotliEncoder/BrotliDecoder structs that BrotliStream is itself built on top of. For the most part, these types just provide wrappers around a native C implementation from [google/brotli,](https://github.com/google/brotli) and so while the .NET layer has the opportunity to improve how data is moved around, managed allocation, and so on, the speed and quality of the compression itself are largely at the mercy of the C implementation and the intricacies of the Brotli algorithm.
 
@@ -6438,25 +6463,27 @@ The code is measuring how long it takes to compress the input data at each of th
 | 9     | 1,846,685.00 |
 | 10    | 1,741,561.00 |
 | 11    | 1,702,214.00 |
+|       |              |
 
 ![](_page_174_Figure_3.jpeg)
 
 That's a fairly liner progression from least to most compression. That's not the problem. This is the problem:
 
-| Level | Time<br>(ms) |  |
-|-------|--------------|--|
-| 0     | 24.11        |  |
-| 1     | 36.67        |  |
-| 2     | 64.13        |  |
-| 3     | 73.72        |  |
-| 4     | 146.41       |  |
-| 5     | 257.12       |  |
-| 6     | 328.54       |  |
-| 7     | 492.81       |  |
-| 8     | 702.38       |  |
-| 9     | 892.08       |  |
-| 10    | 4,830.32     |  |
-| 11    | 10,634.88    |  |
+| Level | Time<br>(ms) |
+|-------|--------------|
+| 0     | 24.11        |
+| 1     | 36.67        |
+| 2     | 64.13        |
+| 3     | 73.72        |
+| 4     | 146.41       |
+| 5     | 257.12       |
+| 6     | 328.54       |
+| 7     | 492.81       |
+| 8     | 702.38       |
+| 9     | 892.08       |
+| 10    | 4,830.32     |
+| 11    | 10,634.88    |
+|       |              |
 
 ![](_page_175_Figure_1.jpeg)
 
@@ -6482,10 +6509,11 @@ true);
 |----------|----------|------------|-------|
 | Compress | .NET 6.0 | 9,807.0 ms | 1.00  |
 | Compress | .NET 7.0 | 133.1 ms   | 0.01  |
+|          |          |            |       |
 
 Other improvements have gone into compression, such as [dotnet/runtime#69439](https://github.com/dotnet/runtime/pull/69439) which updates the internal ZipHelper.AdvanceToPosition function used by ZipArchive to reuse a buffer on every iteration of a loop rather than allocating a new buffer for each iteration, [dotnet/runtime#66764](https://github.com/dotnet/runtime/pull/66764) which uses spans judiciously to avoid a bunch of superfluous string and string[] allocations from System.IO.Packaging, and [dotnet/runtime#73082](https://github.com/dotnet/runtime/pull/73082) updating the zlib implementations shipped as part of .NET from v1.2.11 (which was released in January 2017) to v1.2.12 (which was released in March 2022).
 
-### <span id="page-177-0"></span>Networking
+# <span id="page-177-0"></span>Networking
 
 Networking is the life-blood of almost every service, with performance being critical to success. In previous releases, a lot of effort was focused on the lower layers of the networking stack, e.g. .NET 5 saw a significant investment in improving the performance of sockets on Linux. In .NET 7, much of the effort is above sockets.
 
@@ -6570,9 +6598,7 @@ private static X509Certificate2 GetCertificate() =>
 
 Convert.FromBase64String("MIIUmgIBAzCCFFYGCSqGSIb3DQEHAaCCFEcEghRDMIIUPzCCCiAGCSqGSIb3DQEHA aCCChEEggoNMIIKCTCCCgUGCyqGSIb3DQEMCgECoIIJfjCCCXowHAYKKoZIhvcNAQwBAzAOBAhCAauvUWggWwICB9AE gglYefzzX/jx0b+BLU/TkAVj1KBpojf0o6qdTXV42drqIGhX/k1WwF1ypVYdHeeuDfhH2eXHImwPTw+0bACY0dSiIHK ptm0sb/MskoGI8nl0tHWLi+QBirJ9LSUZcBNOLwoMeYLSFEWWBT69k/sWrc6/SpDoVumkfG4pZ02D9bQgs1+k8fpZjZ GoZp1jput8CQXPE3JpCsrkdSdiAbWdbNNnYAy4C9Ej/vdyXJVdBTEsKzPYajAzo6Phj/oS/J3hMxxbReMtj2Z0QkoBB VMc70d+DpAK50Y3et872D5bZivxhjAYh5JoVTCLTLjbtPRn1g7qh2dOsIpf05KrdgqdImshHvxgL92ooC1e0VqOffMn Z0/LchWNb2rMDa89K9CtAefEIF4ve2b0UZUNFqQ6dvd90SgKq6jNfwQf/1u70WKE86+vChXMMcHFeKso6hTE9+/zuUP NVmbRefYAtDd7ng996S15FNVdxqyVLlmfcihX1jGhTLi//WuMEaOfXJ9KiwYUyxdUnMp50Jq08X/tiwnsuhlFe3NKMX Y77jUe8F7I+dv5cjb9iKXAT+q8oYx1LcWu2mj1ER9/b2omnotp2FIaJDwI40Tts6t40VH3bUNE9gFIfTMK+WMgKBz/J AGvC1vbPSdFsWIqwh17mEYWx83HJp/+Uqp5f+d8m4phSan2rkHEeDjkUaoifLWHWDmL94SZBrgU6yGVK9dU82kr7jCS UTrnga8qDYsHwpQ22QZtu0aOJGepSwZU7NZNMiyX6QR2hI0CNMjvTK2VusHFB+qnvw+19DzaDT6P0KNPxwBwp07KMQm 3HWTRNt9u6gKUmo5FHngoGte+TZdY66dAwCl0Pt+p1v18Xl0B2KOQZKLXnhgikjOwYQxFr3oTb2MjsP6YqnSF9EpYpm iny SXiYmrYxVinHmK+5JBqoQCN2C3N24s1ZkYq+AYUTnNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8G1Kbaq/1avAVLNST7Ib2We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZnIv8We3bBICOFdVUgtFITRW40T+0XZNIv8We3bBICOFdVUgtFITRW40T+0XZNIv8We3bBICOFdVUgtFITRW40T+0XZNIv8We3bBICOFdVUgtFITRW40T+0XZNIv8We3bBICOFdVUgtFITRW40T+0XZNIv8We3bBICOFdVUgtFITRW40T+0XZNIv8We3bBICOFGVUgtFITRW40T+0XZNIv8We3bBICOFGVUgtFITRW40T+0XZNIVAFFITRW40T+0XZNIVAFFITRW40T+0XZNIVAFFITRW40T+0XZNIVAFFITRW40T+0XZNIVAFFITRW40T+0XZNIVAFFITRW40T+0XZNIVAFFITRW40T+0XZNIVAFFITRW40T+0XZNIVAFFITRWfWI/ieKKxyiYp/ZNXaxc+ycgpsSsAJEuhb83bUkSBpGg9PvFEF0DXm4ah67Ja1SSTmvrCnr0sWZXIpciexMWRGoKrdv d7Yzj9E8hiu+CGTC4T6+7FxVXJrjCg9zU9G2U6g7uxzoyjGj1wqkhxgvl9pPbz6/KqDRLOHCEwRF4qlWXhsJy4levxG tifFt6n7DWaNSsOUf8Nwpi+d4fd7LQ7B5tW/y+/vVZziORueruCWO4LnfPhpJ70g18uyN7KyzrWy29rpE46rfjZGGt0 WDZYahObPbw6HjcqSOuzwRoJMxamQb2qsuQnaBS6Bhb5PAnY4SEA045odf/u9uC7mLom2KGNHHz6HrgEPas2UHoJLux YvY1pza/29akuVQZQUvMA5yMFHHGYZLtTKtCGdVGwX0+QS6ovpV93xux4I/5TrD5U8z9RmTdAx03R3MUhkHF7Zbv5eg DNsVar+41YWG4VkV1ZXtsZRKJf0hvKNvrpH0e7fVKBdXljm5PXOSg2Vdtkhh0pnKKSMcv6MbGWVi/svWLnc7Qim4A4M Daz+bFVZmh3oGJ7WHvRQhWIcHUL+YJx+064+4IKXZJ/2a/+b2o7C8mJ3GGSBx831ADogg6MRWZx3UY190Z8YMvpzmZE BRZZnm4KgNpj+SQnf6pGzD2cmnRhzG60LSNPb17iKbdoUAEMkgt2tlMKXpnt1r7qwsIoTt407cAdCEsUH70U/AjfFmS kKJZ7vC5HweqZPnhgJgZ6LYHlfiRzUR1xeDg8JG0nb0vb7LUE4nGPy39/TxIGos7WNwGpG1QVL/8pKjFdjwREaR8e5C STlQ7gxHV+G3FFvFGpA1p8cRFzlgE6khDLrSJIUkhkHMA3oFwwAzBNIKVXjToyxCogDqxWya0E1Hw5rVCS/z0CS1De2 XQbXs//g46TW0wTJwvgNbs0xLShf3XB+23meeEsMTCR0+igtMMMsh5K/vBUGcJA27ru/KM9qEBcseb/tqCkhhsdj1dn H0HDmpgFf5DfVrjm+P6ickcF2b+Ojr9t7XHgFszap3C0pEPGmeJqNOUTuU53tu/O774IBgqINMWvvG65yQwsE006jRr FPRUGb0eH6UM4vC7wbKajnfDuI/EXSgvuOSZ9wE8DeoeK/5We4pN7MSWoDl39gI/LBoNDKFYEYuAw/bhGp8nOwDKki4 a16aYcBGRClpN3ymrdurWsi7TjyFHXfgW8fZe4jXLuKRIk19lmL1gWyD+3bT3mkI2cU2OaY2C0fVHhtiBVaYbxBV8+k iK8q0070zf0r+xMHnewk9APFqUjguPguTdpCoH0VAOST9Mmriv/J12+Y+fL6H+jrtDY2zHPxTF85pA4bBBnLA70t9TK Ce6uuWu5yBqx0V3w2Oa4Pockv1gJzFbVnwlEUWnIjbWVIyo9vo4LBd03uJHPPIQbUp9kCP/Zw+Zblo42/ifyY+a+scw l1q1dZ7Y0L92yJCKm9Qf6Q+1PBK+uU9pcuVTg/Imqcg5T7jF05QCi88uwcorgQp+qoeFi0F9tnUecfD16d0PSgAPnX9 XAOny3bPwSiWOA8+uW73gesxnGTsNrtc1j85tai18N6m6S2tHXwOmM65J4XRZ1zzeM4D/Rzzh13xpRA9kzm9T2cSHsX EYmSW1X7WovrmYhdOh9K3DPwSyG4tD58cvC7X79UbOB+d17ieo7ZCj+NSLVQO1BqTK0QfErdoVHGKfQG8Lc/ERQRqj1 32Mhi2/r5Ca7AWdqD7/3wgRdQTJSFXt/akpM44xu5DMTCISEFOLWiseSOBtzT6ssaq2Q35dCkXp5wVbWxkXAD7Gm34F FXXyZrJWAx45Y40wj/0KDJoEzXCuS4Cyiskx1EtYNNOtfDC5wngywmINFUnnW0NkdKSxmDJvrT6HkRKN8ftik7tP4Zv TaTS28Z0fDmWJ+RjvZW+vtF6mrIzYgG0gdpZwG0Z0SKrXKrY3xpM016fXyawFfBosLzCty7uA57niPS76UXdbplgPan IGFyceTg1MsNDsd8vszXd4KezN2VMaxvw+93s0Uk/3Mc+5MAj+UhXPi5UguXMhNo/CU7erzyxYre01AI7ZzGhPk+oT9 g/MqWa5RpA2IBUaK/wgaNaHChfCcDj/J1qEl6YQQboixxp1IjQxiV9bRQzgwf31Cu2m/FuHTTkPCdxDK156pyFdhcgT pTNy7RPLDF0MBMGCSqGSIb3DQEJFTEGBAQBAAAAMF0GCSsGAQQBgjcRATFQHk4ATQBpAGMAcgBvAHMAbwBmAHQAIABT AHQAcgBvAG4AZwAgAEMAcgB5AHAAdABvAGcAcgBhAHAAaABpAGMAIABQAHIAbwB2AGkAZABlAHIwggoXBgkqhkiG9w0 BBwagggoIMIIKBAIBADCCCf0GCSqGSIb3DQEHATAcBgoqhkiG9w0BDAEGMA4ECH63Q8xWHKhqAgIH0ICCCdDAo9x82r wRM6s16wMo01glVedahn1COCP1FKmP6lQ3kjcHruIWlcKW+eCUpt41qs0LM3iFcPQj5x7675DeLL0AC2Ebu7Jhg0FGM JZwHLbmJLyG0VSb1WhX2UfxNSdLrdZv8pmejB7DYdV3xAj8DBCRGfwwnbTQjFH9wUPga5U79Dvpqq+YVvUEEci1N6tT Pu32LOOEvjoEtpskrHoKyqLGV7sSgM6xMIDcfVWbLb8fDcVS1JQRHbeOdGC1FMDjwzr+eGWd+OyOZ6BydUGjIKAZpRp
 
-0YTk5jjYUMNRbvBP1VPq9ASIh8pJnt/Kq1nqfj7EPatXJJUZAH35E6bSbLBnP0+5+xim114HsB8066c4B3aTUXnLepP RyMIn6Xh5ev0pF3aUc4ZlWgar57TzKUFBTkcH5OCbqZloQ7ZCDNc4C3WKVLSUOKLj3Q0xJPrb6/nyXZHjki1tGKisb9 RLv4dkeMdRjsSwNRn6Cfdlk2qHWUCiWLlsLXFyMSM12qrSSfIIBRo0wbn1SEJagHqUmlF9UR5A6b5OODIbDq3cXH/q6 U09zVX/BxqxyZqEfeSAcvXjqImLWnZzbIgm0QH7jOtti/vEfvdzypdWH9V64PzQj/5B8P4ZpbQyWUgzKEIdx24WhTOc dwNivkaEkGFTra3qw2dKO0RTVtx3bSgesHCumQDuDf8yafLfchWuqihYV7zvqW9BWrsa0W7yKNXLNqdlSz8KvuTnFff OOHrJQwBs+JKdMcKX5IR222RH3fp8Dp17y8hFEaPp4AqpuhHGALXOCwmuPt1UjuHRCUluh3BjaPPLNwLmSGfe0piOVh 4rTyJCfN4rlz0lWBAAfIHi47J9sTnSgEJgkTuemPJXssQ3Z/trcYdfhlYjel0BtS/5DW3wFmjNDilwVBQT66li5xUvc WvZPx/scXgbgpsMThqguJWtiPLR1SzusKCN4q7bV08D8ErHh5uMb5NmNRIZ/xNeqs1qTU9A4bi0TE0FjEu28F0Wg4Cx iwqNM58xik9eni85t+S0Uo9wPV1V2Vdhe9LkO3PeoSTCau4D189DoViL44WPDO+TCSv1PP7SFEwaBvUlGBWjxJWVb81 lkgRsol1bllUvIzN13V0LSiA0Nks9w9H8cQ17ZRe2r7SpDDR6Rn5oLb9G98AyvlcgJfyUe1iZCUAUZGEU247KwePtXY AlO47HbAJe0bOtM9zp7KyWxbImKCfxsPWv6CR6PH+ooHDBO9kXVpKaJCYWeYybSMuPufy/u/rMcIVO4oXVsdnjh4jAx pQOXowCAcN2+Q+XnqtiCr9Mzd0q5ee7jsYuJF6LQRdNP04wIpwjpdggKyB7zURPeTX1V8vIjUs25+CoCxp+fCXfXKqe 2xxdbQ2zFbpKSbJdpbWad3F6MsFBGOKTdyK8EZODGApBtlo71kY6uOxKiBwJKd76zTMsPEQWOZphi2khpTxIVYONrmP  ${\tt KjS08zc4dTC8SW+d1kmCt4UYb1woeDCAYp2RiDHpgC+5yuBDCooT/6fG6GQpa1X0PiH2oUCpltZz2M4+1bH2HdTeBfc}$ 1Mtj/hniLL8VdH0qcpS0KYPUxJFEg6IxxrWw10BreY//6pJLm76nKiflzhz+Mt0RbQZqkPP/K9BxzQw//bW9Kh4iRQ3 7D9HNQG/GtrCEcbH4V4uUjbj34sEo0FC7gVvDob0Bik81/c901zQZEydqe0DgHtGbY2xIZ2qqsQy4LDVfHNHqSLiNss L8BJtxUyvnhiwHD7jmyCB6cWyFGtibRBehQzleioS16xvLph88CMGV3IH9By5QtXpDIB4vjhibE6coPkTmpDCB9xlTE 3TV4GBt5JLttkjf0kXAAx0xD523Adcy6FVe5QYuY10817006188YptozyWi5jVfDh+aDg9pjsw/aZ1hCURe9KDaB4gI lW4ZEGKsf5e/xU+vuVxw374te/Y2aCChSj93XyC+Fjxe06s4yifVAYA0+HtLMGNHe/X0kPXvRnoa5kIu0yHrzViQrBb /4Sbms617Gg1BFONks1J02G0zIt8CouTqVmdtuH7tV0JZV/Nmg7NQ1X59XDC/JH2i4jOu8OhnmIZFlTysS6e1qnqsGt /0XcUyzPia8+UIAynXmyi8sWlUjy37w6YqapAfcs7B3TezqIwn7RgRasJpNBi7eQQqg5YLe6EYTxctKNkGpzeTBUiXN XM4Gv3tIaMbzwlhUNbYWuNBsi/7XJPM5jMycINRbdPwYy19gRBs3pm0FoP2Lhl5mVAJ2R8a40Lo5g73wvt9Th+uB9/y c196RryQe280yfgKiwUoFFcDnL6SoQTRCT195mF8zw1f3Hc7QImhubgcLntXEndzSNN7ZIDSAB8HiDSR6CGYPNiCNAC 4hj+jUswoWIE257h+deWFTUvjTZmXH+XMoN6trqjdeCH0hePdmrIWVdr1uTIo016TR6mFNm6Utzc0t5vVrcpnEh3w6a mVHw5xmweW4S75ncN6vSPxGjtfuQ6c2RTG5NXZuWpnhXwOxgoBN4q/h99zVRvwwsF32Eyzx6GOYLmORgCkzke9eXjjX WY83oysXx/aE9WCqt3en8zzRzzA1aO9Yi88uv1O0qTvWEoGrf4e7SgjXO6hNjYE6EEvK+mMz6a9F3xSWsUlMsZPIIBe 8CEgNEhXKsa6xw7ljSx8Nz7zYG+u5rgXKFmSNvWvwasZyIfRXkccqODl17BaevbWp/ir3rJ/b9m0iV0UW8qIJ3zC6b1 1XU5pNuOODjqhKkjIHPGXiq1+uBPVlfUy8Zbi4AntZAeNIB7HtUavVKX6CF7k9AFtRHIWK70+cFEw4yMZiQjaWeB3dt 16Fz6LZ8+c17kuB2wFuZQqYQkf3quWQVPwKj41gFYoFSwFfJ8L6TBcNHI2u3avtVp9ZbP9zArT8An9Ryri/PwTSbPLT caz549b60/0k4c/qV4XRMuFsi29CXcMnLSCPpPKs71LTvsRXK6QUJd4fX/KnTiWargbS6tT61R/bBqY/gFU1xWyKQ8x ij97v1Qjff5Kdcbj5JsnjSr8xAh9idfJ2FWZZUJReR9EU1twK7slyUivNLVY7bqroE6CzYaEDecRqfwIrFrzmH+gJoM 88waGRC0JTvm8GpBX0eTb5bnMxJKPtH1GIffgyQLER01jwjApr6SJEB4yV7x48CZPod9wE510xUY2hEdAA517DBTJys g5gn/nhY6ZzL01lb39yVyDEcZdmrji0ncEMdBDioGBV3mNz1DL398ZLdjG+xkneI3sgyzgm3cZZ1+/A2kloIEmOKJSe 0k/B1cyMB5QRnXp0bF1vWXjauMVIKm0w1LY3YQ9I1vfr6y1o2DN+Vy0sumbIQrjDKqMDswHzAHBgUrDgMCGgQUHEWyD 7i5PbatVl3k0+S9WV3ZJRAEFFd7xcvfj1HpkOawyGnJdtcQ0KWPAgIH0A=="),
-
-"testcertificate",
+OYTk5jjYUMNRbvBP1VPq9ASIh8pJnt/Kq1nqfj7EPatXJJUZAH35E6bSbLBnP0+5+xim1l4HsB8066c4B3aTUXnLepP RyMIn6Xh5ev0pF3aUc4ZlWgar57TzKUFBTkcH5OCbqZloQ7ZCDNc4C3WKVLSUOKLj3Q0xJPrb6/nyXZHjki1tGKisb9 RLv4dkeMdRjsSwNRn6Cfdlk2qHWUCiWLlsLXFyMSM12qrSSfIIBRo0wbn1SEJagHqUmlF9UR5A6b5OODIbDq3cXH/q6 U09zVX/BxqxyZqEfeSAcvXjqImLWnZzbIgm0QH7jOtti/vEfvdzypdWH9V64PzQj/5B8P4ZpbQyWUgzKEIdx24WhTOc dwNivkaEkGFTra3qw2dKO0RTVtx3bSgesHCumQDuDf8yafLfchWuqihYV7zvqW9BWrsa0W7yKNXLNqdlSz8KvuTnFff OOHrJQwBs+JKdMcKX5IR222RH3fp8Dp17y8hFEaPp4AqpuhHGALXOCwmuPt1UjuHRCUluh3BjaPPLNwLmSGfe0piOVh 4rTyJCfN4rlz0lWBAAfIHi47J9sTnSgEJgkTuemPJXssQ3Z/trcYdfhlYjel0BtS/5DW3wFmjNDilwVBOT66li5xUvc WvZPx/scXgbgpsMThqguJWtiPLR1SzusKCN4q7bV08D8ErHh5uMb5NmNRIZ/xNeqs1qTU9A4bi0TE0FjEu28F0Wg4Cx iwqNM58xik9eni85t+S0Uo9wPV1V2Vdhe9LkO3PeoSTCau4D189DoViL44WPD0+TCSv1PP7SFEwaBvUlGBWjxJWVb81 lkgRsol1bllUvIzN13V0LSiA0Nks9w9H8cQ17ZRe2r7SpDDR6Rn5oLb9G98AyvlcgJfyUe1iZCUAUZGEU247KwePtXY AlO47HbAJe0bOtM9zp7KyWxbImKCfxsPWv6CR6PH+ooHDBO9kXVpKaJCYWeYybSMuPufy/u/rMcIVO4oXVsdnjh4jAx pQOXowCAcN2+Q+XnqtiCr9Mzd0q5ee7jsYuJF6LQRdNP04wIpwjpdggKyB7zURPeTX1V8vIjUs25+CoCxp+fCXfXKqe 2xxdbQ2zFbpKSbJdpbWad3F6MsFBGOKTdyK8EZODGApBtlo71kY6uOxKiBwJKd76zTMsPEQWOZphi2khpTxIVYONrmP  ${\tt KjS08zc4dTC8SW+d1kmCt4UYb1woeDCAYp2RiDHpgC+5yuBDCooT/6fG6GQpa1X0PiH2oUCpltZz2M4+1bH2HdTeBfc}$ 1Mtj/hniLL8VdH0qcpS0KYPUxJFEg6IxxrWw10BreY//6pJLm76nKiflzhz+Mt0RbQZqkPP/K9BxzQw//bW9Kh4iRQ3 7D9HNQG/GtrCEcbH4V4uUjbj34sEo0FC7gVvDob0Bik81/c901zQZEydqe0DgHtGbY2xIZ2qqsQy4LDVfHNHqSLiNss L8BJtxUyvnhiwHD7jmyCB6cWyFGtibRBehQzleioS16xvLph88CMGV3IH9By5QtXpDIB4vjhibE6coPkTmpDCB9xlTE 3TV4GBt5JLttkjf0kXAAx0xD523Adcy6FVe5QYuY10817006188YptozyWi5jVfDh+aDg9pjsw/aZ1hCURe9KDaB4gI lW4ZEGKsf5e/xU+vuVxw374te/Y2aCChSj93XyC+Fjxe06s4yifVAYA0+HtLMGNHe/X0kPXvRnoa5kIu0yHrzViQrBb /4Sbms617Gg1BFONks1J02G0zIt8CouTqVmdtuH7tV0JZV/Nmg7NQ1X59XDC/JH2i4jOu8OhnmIZFlTysS6e1qnqsGt /0XcUyzPia8+UIAynXmyi8sWlUjy37w6YqapAfcs7B3TezqIwn7RgRasJpNBi7eQQqg5YLe6EYTxctKNkGpzeTBUiXN XM4Gv3tIaMbzwlhUNbYWuNBsi/7XJPM5jMycINRbdPwYy19gRBs3pm0FoP2Lhl5mVAJ2R8a40Lo5g73wvt9Th+uB9/y c196RryQe280yfgKiwUoFFcDnL6SoQTRCT195mF8zw1f3Hc7QImhubgcLntXEndzSNN7ZIDSAB8HiDSR6CGYPNiCNAC 4hj+jUswoWIE257h+deWFTUvjTZmXH+XMoN6trqjdeCH0hePdmrIWVdr1uTIo016TR6mFNm6Utzc0t5vVrcpnEh3w6a mVHw5xmweW4S75ncN6vSPxGjtfuQ6c2RTG5NXZuWpnhXwOxgoBN4q/h99zVRvwwsF32Eyzx6GOYLmORgCkzke9eXjjX WY83oysXx/aE9WCqt3en8zzRzzA1aO9Yi88uv1O0qTvWEoGrf4e7SgjXO6hNjYE6EEvK+mMz6a9F3xSWsUlMsZPIIBe 8CEgNEhXKsa6xw7ljSx8Nz7zYG+u5rgXKFmSNvWvwasZyIfRXkccqODl17BaevbWp/ir3rJ/b9m0iV0UW8qIJ3zC6b1 1XU5pNuOODjqhKkjIHPGXiq1+uBPVlfUy8Zbi4AntZAeNIB7HtUavVKX6CF7k9AFtRHIWK70+cFEw4yMZiQjaWeB3dt 16Fz6LZ8+c17kuB2wFuZQqYQkf3quWQVPwKj41gFYoFSwFfJ8L6TBcNHI2u3avtVp9ZbP9zArT8An9Ryri/PwTSbPLT caz549b60/0k4c/qV4XRMuFsi29CXcMnLSCPpPKs71LTvsRXK6QUJd4fX/KnTiWargbS6tT61R/bBqY/gFU1xWyKQ8x ij97vlQjffSKdcbj5JsnjSr8xAh9idfJ2FWZZUJReR9EU1twK7slyUivNLVY7bqroE6CzYaEDecRqfwIrFrzmH+gJoM 88waGRC0JTvm8GpBX0eTb5bnMxJKPtH1GIffgyQLER01jwjApr6SJEB4yV7x48CZPod9wE510xUY2hEdAA517DBTJys g5gn/nhY6ZzL01lb39yVyDEcZdmrji0ncEMdBDioGBV3mNz1DL398ZLdjG+xkneI3sgyzgm3cZZ1+/A2kloIEmOKJSe 0k/B1cyMB5QRnXp0bF1vWXjauMVIKm0w1LY3YQ9I1vfr6y1o2DN+Vy0sumbIQrjDKqMDswHzAHBgUrDgMCGgQUHEWyD 7i5PbatVl3k0+S9WV3ZJRAEFFd7xcvfj1HpkOawyGnJdtcQ0KWPAgIH0A=="), "testcertificate",
 
 X509KeyStorageFlags.DefaultKeySet);
 
@@ -6695,6 +6721,7 @@ public async Task ReadWriteAsync()
 |----------------|----------|----------|-------|-----------|-----------|-------------|
 | ReadWriteAsync | .NET 6.0 | 68.34 ms | 1.00  | 510 B     | 336404 B  | 1.000       |
 | ReadWriteAsync | .NET 7.0 | 69.60 ms | 1.02  | 514 B     | 995 B     | 0.003       |
+|                |          |          |       |           |           |             |
 
 One final change related to reading and writing performance on an SslStream. I find this one particularly interesting, as it highlights a new and powerful C# 11 and .NET 7 feature: static abstract members in interfaces. SslStream, as with every Stream, exposes both synchronous and asynchronous methods for reading and writing. And as you may be aware, the code within SslStream for implementing reads and writes is not particularly small. Thus, we really want to avoid having to duplicate all of the code paths, once for synchronous work and once for asynchronous work, when in reality the only place that bifurcation is needed is at the leaves where calls into the underlying Stream are made to perform the actual I/O. Historically, we've had two different mechanisms we've employed in [dotnet/runtime](https://github.com/dotnet/runtime) for handling such unification. One is to make all methods async, but with an additional bool useAsync parameter that gets fed through the call chain, then branching based on it at the leaves, e.g.
 
@@ -6828,6 +6855,7 @@ public int LastIndexOfAny() => s_haystack.AsSpan().LastIndexOfAny(';', '_');
 |----------------|----------|----------|-------|
 | LastIndexOfAny | .NET 6.0 | 9.977 us | 1.00  |
 | LastIndexOfAny | .NET 7.0 | 1.172 us | 0.12  |
+|                |          |          |       |
 
 Let's move up the stack to HTTP. Most of the folks focusing on networking in .NET 7 were focused on taking the preview support for HTTP/3 that shipped in .NET 6 and making it a first-class supported feature in .NET 7. That included functional improvements, reliability and correctness fixes, and performance improvements, such that HTTP/3 can now be used via HttpClient on both Windows and Linux (it depends on an underlying QUIC implementation in the msquic component, which isn't currently available for macOS). However, there were significant improvements throughout the HTTP stack, beyond HTTP/3.
 
@@ -6904,8 +6932,11 @@ public string HtmlDecode() => WebUtility.HtmlDecode(_encoded);
 |------------|----------|-----------|-------|
 | HtmlDecode | .NET 6.0 | 245.54 ns | 1.00  |
 | HtmlDecode | .NET 7.0 | 19.66 ns  | 0.08  |
+|            |          |           |       |
 
-There have been a myriad of other performance-related improvements in networking as well, such as [dotnet/runtime#67881](https://github.com/dotnet/runtime/pull/67881) which removed the use of TcpClient from FtpWebRequest; [dotnet/runtime#68745](https://github.com/dotnet/runtime/pull/68745) in WebSocket which removed a parameter from one of the core async methods (and since parameters end up on the state machine, if the async method yields this results in fewer allocated bytes); and [dotnet/runtime#70866](https://github.com/dotnet/runtime/pull/70866) and [dotnet/runtime#70900,](https://github.com/dotnet/runtime/pull/70900) which replaced all remaining use of Marshal.PtrToStructure in the core networking code with more efficient marshaling (e.g. just performing casts). While Marshal.PtrToStructure is valuable when custom marshaling directives are used and the runtime needs to be involved in the conversion, it's also much more heavyweight than just casting, which can be done when the native and managed layouts are bit-for-bit compatible. As with the u8 example earlier, this comparison is hardly fair, but that's exactly the point:
+There have been a myriad of other performance-related improvements in networking as well, such as [dotnet/runtime#67881](https://github.com/dotnet/runtime/pull/67881) which removed the use of TcpClient from FtpWebRequest; [dotnet/runtime#68745](https://github.com/dotnet/runtime/pull/68745) in WebSocket which removed a parameter from one of the core async methods (and since parameters end up on the state machine, if the async method yields this results in fewer allocated bytes); and [dotnet/runtime#70866](https://github.com/dotnet/runtime/pull/70866) and [dotnet/runtime#70900,](https://github.com/dotnet/runtime/pull/70900) which replaced all remaining use of Marshal.PtrToStructure in the core networking code with more efficient marshaling (e.g. just performing casts). While Marshal.PtrToStructure is valuable when custom marshaling directives are used and the runtime needs to be involved in the conversion, it's also much more heavyweight than just casting, which can be done when the native and managed layouts are bit-for-bit compatible. As
+
+with the u8 example earlier, this comparison is hardly fair, but that's exactly the point:
 
 ```
 private IntPtr _mem;
@@ -6932,6 +6963,7 @@ public unsafe SimpleType Cast() => *(SimpleType*)_mem;
 |----------------|------------|-------|
 | PtrToStructure | 26.6593 ns | 1.000 |
 | Cast           | 0.0736 ns  | 0.003 |
+|                |            |       |
 
 For folks using NegotiateStream, [dotnet/runtime#71280](https://github.com/dotnet/runtime/pull/71280) from
 
@@ -6970,7 +7002,7 @@ server.AuthenticateAsServerAsync());
 | Handshake | .NET 6.0 | 1.905 ms | 1.00  | 240.5 KB  | 1.00        |
 | Handshake | .NET 7.0 | 1.913 ms | 1.00  | 99.28 KB  | 0.41        |
 
-### <span id="page-194-0"></span>JSON
+## <span id="page-194-0"></span>JSON
 
 System.Text.Json was introduced in .NET Core 3.0, and has seen a significant amount of investment in each release since. .NET 7 is no exception. New features in .NET 7 include support for [customizing](https://github.com/dotnet/runtime/issues/63686)  [contracts,](https://github.com/dotnet/runtime/issues/63686) [polymorphic serialization,](https://github.com/dotnet/runtime/pull/67961) [support for required members,](https://github.com/dotnet/runtime/pull/72937) [support for DateOnly / TimeOnly,](https://github.com/dotnet/runtime/pull/69160)  [support for IAsyncEnumerable<T>](https://github.com/dotnet/runtime/pull/68985) and [JsonDocument](https://github.com/dotnet/runtime/pull/60236) in source generation, and [support for](https://github.com/dotnet/runtime/issues/44947)  [configuring MaxDepth in JsonWriterOptions.](https://github.com/dotnet/runtime/issues/44947) However, there have also been new features specifically focused on performance, and other changes about improving performance of JSON handling in a variety of scenarios.
 
@@ -6999,6 +7031,7 @@ public class MyAmazingClass
 | ImplicitOptions | .NET 6.0 | 170.3 ns     | 1.00   | 200 B     | 1.00        |
 | WithCached      | .NET 6.0 | 163.8 ns     | 0.96   | 200 B     | 1.00        |
 | WithoutCached   | .NET 6.0 | 100,440.6 ns | 592.48 | 7393 B    | 36.97       |
+|                 |          |              |        |           |             |
 
 In .NET 7, this was fixed in [dotnet/runtime#64646](https://github.com/dotnet/runtime/pull/64646) (and subsequently tweaked in [dotnet/runtime#66248\)](https://github.com/dotnet/runtime/pull/66248) by adding a global cache of the type information separate from the options instances. A JsonSerializerOptions still has a cache, but when new handlers are generated via reflection emit, those are also cached at the global level (with appropriate removal when no longer used in order to avoid unbounded leaks).
 
@@ -7010,6 +7043,7 @@ In .NET 7, this was fixed in [dotnet/runtime#64646](https://github.com/dotnet/ru
 | WithCached      | .NET 7.0 | 168.3 ns     | 0.99   | 48 B      | 0.24        |
 | WithoutCached   | .NET 6.0 | 100,440.6 ns | 592.48 | 7393 B    | 36.97       |
 | WithoutCached   | .NET 7.0 | 590.1 ns     | 3.47   | 337 B     | 1.69        |
+|                 |          |              |        |           |             |
 
 As can be seen here, it's still more expensive to create a new JsonSerializerOptions instance on each call, and the recommended approach is "don't do that." But if someone does do it, in this example they're only paying 3.6x the cost rather than 621x the cost, a huge improvement. [dotnet/runtime#61434](https://github.com/dotnet/runtime/pull/61434) also now exposes the JsonSerializerOptions.Default instance that's used by default if no options are explicitly provided.
 
@@ -7036,7 +7070,7 @@ Utf8JsonWriter and Utf8JsonReader also saw several improvements directly. [dotne
 
 192 CHAPTER 17 | JSON
 
-### <span id="page-197-0"></span>XML
+## <span id="page-197-0"></span>XML
 
 System.Xml is used by a huge number of applications and services, but ever since JSON hit the scene and has been all the rage, XML has taken a back seat and thus hasn't seen a lot of investment from either a functionality or performance perspective. Thankfully, System.Xml gets a bit of performance love in .NET 7, in particular around reducing allocation on some commonly used code paths.
 
@@ -7139,24 +7173,28 @@ Here's what I see when I run this under .NET 6:
 | Туре                         | Allocations ▼ |
 |------------------------------|---------------|
 | ♣ System.Xml.NameTable.Entry | 33,000        |
-| ♣ţ System.String             | 29,123        |
+| ♣ System.String              | 29,123        |
 | ▶ 🛅 System.Boolean[]         | 10,013        |
 | ♣ Release                    | 10,000        |
+|                              |               |
 
 We're running a thousand deserializations, each of which will deserialize 10 Release instances, and so we expect to see 10,000 Release objects being allocated, which we do… but we also see 10,000 bool[] being allocated. Now with .NET 7 (note the distinct lack of the per-object bool[]):
 
-| Allocations | Call Tree | Functions      | Collections |               |
-|-------------|-----------|----------------|-------------|---------------|
-|             |           |                |             |               |
-| _           |           |                |             |               |
-| Туре        |           |                |             | Allocations ▼ |
-| 🔩 Syste     | m.Xml.Nan | ne Table. Entr | у           | 33,000        |
-| 🔩 Syste     | m.String  |                |             | 28,964        |
-| 🔩 Relea     | ise       |                |             | 10,000        |
+| Allocations | Call Tree | Functions      | Collections |          |       |
+|-------------|-----------|----------------|-------------|----------|-------|
+|             |           |                |             |          |       |
+| Type        |           |                |             | Allocati | ons - |
+|             | N. INI    | T.I. F .       |             |          |       |
+| ₹ Syste     | m.Xml.Nan | ne Table. Entr | У           | 33       | 3,000 |
+| 🔩 Syste     | m.String  |                |             | 28       | 8,964 |
+| 🔩 Relea     | ise       |                |             | 10       | 0,000 |
+|             |           |                |             |          |       |
 
 Other allocation reduction went into the creation of the serializer/deserializer itself, such as with [dotnet/runtime#68738](https://github.com/dotnet/runtime/pull/68738) avoiding allocating strings to escape text that didn't actually need escaping, [dotnet/runtime#66915](https://github.com/dotnet/runtime/pull/66915) using stack allocation for building up small text instead of using a StringBuilder, [dotnet/runtime#66797](https://github.com/dotnet/runtime/pull/66797) avoiding delegate and closure allocations in accessing the cache of serializers previously created, [dotnet/runtime#67001](https://github.com/dotnet/runtime/pull/67001) from [@TrayanZapryanov](https://github.com/TrayanZapryanov) caching an array used with string.Split, and [dotnet/runtime#67002](https://github.com/dotnet/runtime/pull/67002) from [@TrayanZapryanov](https://github.com/TrayanZapryanov) that changed some parsing code to avoid a string.ToCharArray invocation.
 
-For folks using XML schema, [dotnet/runtime#66908](https://github.com/dotnet/runtime/pull/66908) replaces some Hashtables in the implementation where those collections were storing ints as the value. Given that Hashtable is a non-generic collection, every one of those ints was getting boxed, resulting in unnecessary allocation overhead; these were fixed by replacing these Hashtables with Dictionary<..., int> instances. (As an aside, this is a fairly common performance-focused replacement to do, but you need to be careful as Hashtable has a few behavioral differences from Dictionary<,>; beyond the obvious difference of Hashtable returning null from its indexer when a key isn't found and Dictionary<,> throwing in that same condition, Hashtable is thread-safe for use with not only multiple readers but multiple readers concurrent with a single writer, and Dictionary<,> is not.) [dotnet/runtime#67045](https://github.com/dotnet/runtime/pull/67045) reduces allocation of XmlQualifiedName instances in the implementation of XsdBuilder.ProcessElement and XsdBuilder.ProcessAttribute. And [dotnet/runtime#64868](https://github.com/dotnet/runtime/pull/64868) from [@TrayanZapryanov](https://github.com/TrayanZapryanov) uses stack-based memory and pooling to
+For folks using XML schema, [dotnet/runtime#66908](https://github.com/dotnet/runtime/pull/66908) replaces some Hashtables in the implementation where those collections were storing ints as the value. Given that Hashtable is a non-generic collection, every one of those ints was getting boxed, resulting in unnecessary allocation overhead; these were fixed by replacing these Hashtables with Dictionary<..., int> instances. (As an aside, this is a fairly common performance-focused replacement to do, but you need to be careful as Hashtable has a few behavioral differences from Dictionary<,>; beyond the obvious difference of Hashtable returning null from its indexer when a key isn't found and Dictionary<,> throwing in that same condition, Hashtable is thread-safe for use with not only multiple readers but multiple readers concurrent with a single writer, and Dictionary<,> is not.) [dotnet/runtime#67045](https://github.com/dotnet/runtime/pull/67045) reduces allocation of XmlQualifiedName instances in the implementation of XsdBuilder.ProcessElement and XsdBuilder.ProcessAttribute. And [dotnet/runtime#64868](https://github.com/dotnet/runtime/pull/64868) from
+
+[@TrayanZapryanov](https://github.com/TrayanZapryanov) uses stack-based memory and pooling to
 
 avoid temporary string allocation in the implementation of the internal XsdDateTime and XsdDuration types, which are used by the public XmlConvert.
 
@@ -7170,6 +7208,7 @@ public string XmlConvertToString() => XmlConvert.ToString(_ts);
 |--------------------|----------|----------|-------|-----------|-------------|
 | XmlConvertToString | .NET 6.0 | 90.70 ns | 1.00  | 184 B     | 1.00        |
 | XmlConvertToString | .NET 7.0 | 59.21 ns | 0.65  | 40 B      | 0.22        |
+|                    |          |          |       |           |             |
 
 XML pops up in other areas as well, as in the XmlWriterTraceListener type. While the System.Diagnostics.Trace type isn't the recommended tracing mechanism for new code, it's widely used in existing applications, and XmlWriterTraceListener let's you plug in to that mechanism to write out XML logs for traced information. [dotnet/runtime#66762](https://github.com/dotnet/runtime/pull/66762) avoids a bunch of string allocation occurring as part of this tracing, by formatting much of the header information into a span and then writing that out rather than ToString()'ing each individual piece of data.
 
@@ -7192,7 +7231,7 @@ public void TraceWrite()
 | TraceWrite | .NET 6.0 | 961.9 ns | 1.00  | 288 B     | 1.00        |
 | TraceWrite | .NET 7.0 | 772.2 ns | 0.80  | 64 B      | 0.22        |
 
-### <span id="page-202-0"></span>Cryptography
+# <span id="page-202-0"></span>Cryptography
 
 Some fairly significant new features came to System.Security.Cryptography in .NET 7, including the support necessary to enable the previously discussed OCSP stapling and support for [building](https://github.com/dotnet/runtime/pull/72708)  [certificate revocation lists,](https://github.com/dotnet/runtime/pull/72708) but there was also a fair amount of effort put into making existing support faster and more lightweight.
 
@@ -7206,7 +7245,7 @@ System.Security.Cryptography.Algorithms.dll, System.Security.Cryptography.Cng.dl
 |---------------------------------------------------|--------|
 | System.Security.Cryptography.Cng.dll              | 475 KB |
 | System.Security.Cryptography.Csp.dll              | 186 KB |
-| System.Security.Cryptography.Encoding.dll         | 92 KB  |
+| System. Security. Cryptography. Encoding.dll      | 92 KB  |
 | System.Security.Cryptography.OpenSsl.dll          | 32 KB  |
 | System.Security.Cryptography.Primitives.dll       | 132 KB |
 | System.Security.Cryptography.X509Certificates.dll | 476 KB |
@@ -7215,15 +7254,15 @@ These PRs move all of that code into a single System.Security.Cryptography.dll a
 
 requiring multiple (or even most) of these assemblies. Every assembly that's loaded adds overhead. Second, a variety of helper files had to be compiled into each assembly, leading to overall larger amount of compiled code to be distributed. And third, we weren't able to implement everything as optimal as we'd have otherwise liked due to functionality in one assembly not exposed to another (and we avoid using InternalsVisibleTo as it hampers maintainability and impedes other analysis and optimizations). Now in .NET 7, the shared framework looks more like this:
 
-| System.Security.Cryptography.Algorithms.dll       | 7 KB     |
-|---------------------------------------------------|----------|
-| System.Security.Cryptography.Cng.dll              | 6 KB     |
-| System.Security.Cryptography.Csp.dll              | 6 KB     |
-| System.Security.Cryptography.dll                  | 1,912 KB |
-| System.Security.Cryptography.Encoding.dll         | 6 KB     |
-| System.Security.Cryptography.OpenSsl.dll          | 6 KB     |
-| System.Security.Cryptography.Primitives.dll       | 6 KB     |
-| System.Security.Cryptography.X509Certificates.dll | 7 KB     |
+| System.Security.Cryptography.Algorithms.dll       | 7 KB |
+|---------------------------------------------------|------|
+| System.Security.Cryptography.Cng.dll              | 6 KB |
+| System.Security.Cryptography.Csp.dll              | 6 KB |
+| System.Security.Cryptography.dll 1,912            | 2 KB |
+| System.Security.Cryptography.Encoding.dll         | 6 KB |
+| System.Security.Cryptography.OpenSsl.dll          | 6 KB |
+| System.Security.Cryptography.Primitives.dll       | 6 KB |
+| System.Security.Cryptography.X509Certificates.dll | 7 KB |
 
 Interesting, you still see a bunch of assemblies there, but all except for System.Security.Cryptography.dll are tiny; that's because these are simple facades. Because we need to support binaries built for .NET 6 and earlier running on .NET 7, we need to be able to handle binaries that refer to types in these assemblies, but in .NET 7, those types actually live in System.Security.Cryptography.dll. .NET provides a solution for this in the form of the [TypeForwardedTo(...)] attribute, which enables one assembly to say "hey, if you're looking for type X, it now lives over there." And if you crack open one of these assemblies in a tool like [ILSpy,](https://github.com/icsharpcode/ILSpy) you can see they're essentially empty except for a bunch of these attributes:
 
@@ -7245,6 +7284,7 @@ public bool OneShot() => _aes.TryEncryptCfb(_plaintext, _iv, _output, out _);
 |---------|----------|----------|-------|-----------|-------------|
 | OneShot | .NET 6.0 | 1.828 us | 1.00  | 336 B     | 1.00        |
 | OneShot | .NET 7.0 | 1.770 us | 0.97  | 184 B     | 0.55        |
+|         |          |          |       |           |             |
 
 In addition to making one-shots lighterweight, other PRs have then used these one-shot operations in more places in order to simplify their code and benefit from the increased performance, e.g. [dotnet/runtime#70639](https://github.com/dotnet/runtime/pull/70639) from [@vcsjones](https://github.com/vcsjones), [dotnet/runtime#70857](https://github.com/dotnet/runtime/pull/70857) from [@vcsjones](https://github.com/vcsjones), [dotnet/runtime#64005](https://github.com/dotnet/runtime/pull/64005) from [@vcsjones](https://github.com/vcsjones), and [dotnet/runtime#64174](https://github.com/dotnet/runtime/pull/64174) from [@vcsjones](https://github.com/vcsjones).
 
@@ -7259,7 +7299,7 @@ Rfc2898DeriveBytes to supports spans such that its constructors that accept span
 - **Simply avoiding unnecessary work**. The best optimizations are ones where you simply stop doing work you don't have to do. [dotnet/runtime#68553](https://github.com/dotnet/runtime/pull/68553) from [@vcsjones](https://github.com/vcsjones) is a good example of this. This code was performing a hash of some data in order to determine the length of resulting hashes for that particular configuration, but we actually know ahead of time exactly how long a hash for a given algorithm is going to be, and we already have in this code a cascading if/elseif/else that's checking for each known algorithm, so we can instead just hardcode the length for each. [dotnet/runtime#70589](https://github.com/dotnet/runtime/pull/70589) from [@vcsjones](https://github.com/vcsjones) is another good example, in the same spirit of the ownership transfer example mentioned earlier (but this one didn't previously span assembly boundaries). Rather than in several places taking an X509Extension, serializing it to a byte[], and passing that temporary byte[] to something else that in turn makes a defensive copy, we can instead provide an internal pathway for ownership transfer, bypassing all of the middle stages. Another good one is [dotnet/runtime#70618](https://github.com/dotnet/runtime/pull/70618) from [@vcsjones](https://github.com/vcsjones), as it's an example of how it pays to really understand your dependencies. The implementation of symmetric encryption on macOS uses the CommonCrypto library. One of the functions it exposes is CCCryptorFinal, which is used at the end of the encryption/decryption process. However, there are several cases called out in the docs where it's unnecessary ("superfluous," according to the docs), and so our dutifully calling it even in those situations is wasteful. The fix? Stop doing unnecessary work.
 - **New APIs**. A bunch of new APIs were introduced for cryptography in .NET 7. Most are focused on easing scenarios that were difficult to do correctly before, like [dotnet/runtime#66509](https://github.com/dotnet/runtime/pull/66509) from [@vcsjones](https://github.com/vcsjones) that provides an X500DistinguishedNameBuilder. But some are focused squarely on performance. [dotnet/runtime#57835](https://github.com/dotnet/runtime/pull/57835) from [@vcsjones](https://github.com/vcsjones), for example, exposes a new RawDataMemory property on X509Certificate2. Whereas the existing RawData property returns a new byte[] on every call (again a defensive copy to avoid having to deal with the possiblity that the consumer mucked with the raw data), this new RawDataMemory returns a ReadOnlyMemory<byte> around the internal byte[]. Since the only way to access and mutate that underlying byte[] via a ReadOnlyMemory<byte> is via unsafe interop code (namely via the System.Runtime.InteropServices.MemoryMarshal type), it doesn't create a defensive copy and enables accessing this data freely without additional allocation.
 
-### <span id="page-207-0"></span>Diagnostics
+# <span id="page-207-0"></span>Diagnostics
 
 Let's turn our attention to System.Diagnostics, which encompasses types ranging from process management to tracing.
 
@@ -7305,14 +7345,13 @@ public string GetCurrentProcessNameAndWorkingSet()
 |                                    |          |             |       |           |             |
 | GetCurrentProcessNameAndWorkingSet | .NET 6.0 | 3,055.70 us | 1.00  | 4010 B    | 1.00        |
 | GetCurrentProcessNameAndWorkingSet | .NET 7.0 | 3,149.92 us | 1.03  | 4186 B    | 1.04        |
+|                                    |          |             |       |           |             |
 
-Interestingly, this PR had a small deficiency we didn't initially catch, which is that the QueryFullProcessImageName API we switched to didn't work in the case of elevated/privileged processes. To accomodate those, [dotnet/runtime#70073](https://github.com/dotnet/runtime/pull/70073) from [@schuettecarsten](https://github.com/schuettecarsten) updated the code to keep both the new and old implementations, starting with the new one and then only falling back to the old if operating on
+Interestingly, this PR had a small deficiency we didn't initially catch, which is that the QueryFullProcessImageName API we switched to didn't work in the case of elevated/privileged processes. To accomodate those, [dotnet/runtime#70073](https://github.com/dotnet/runtime/pull/70073) from [@schuettecarsten](https://github.com/schuettecarsten) updated the code to keep both the new and old implementations, starting with the new one and then only falling back to the old if operating on an incompatible process.
 
 Several additional PRs helped out the Process class. When launching processes with Process.Start on Unix, the implementation was using Encoding.UTF8.GetBytes as part of argument handling, resulting in a temporary array being allocated per argument; [dotnet/runtime#71279](https://github.com/dotnet/runtime/pull/71279) removes that per-argument allocation, instead using Encoding.UTF8.GetByteCount to determine how large a space is needed and then using the Encoding.UTF8.GetBytes overload that accepts a span to encode directly into the native memory already being allocated. [dotnet/runtime#71136](https://github.com/dotnet/runtime/pull/71136) simplifies and streamlines the code involved in getting the "short name" of a process on Windows for use in comparing process names. And [dotnet/runtime#45690](https://github.com/dotnet/runtime/pull/45690) replaces a custom cache with use of ArrayPool in the Windows implementation of getting all process information, enabling effective reuse of the array that ends up being used rather than having it sequestered off in the Process implementation forever.
 
 Another area of performance investment has been in DiagnosticSource, and in particular around enumerating through data from Activity instances. This work translates into faster integration and interoperability via [OpenTelemetry,](https://devblogs.microsoft.com/dotnet/opentelemetry-net-reaches-v1-0) in order to be able to export data from .NET Activity information faster. [dotnet/runtime#67012](https://github.com/dotnet/runtime/pull/67012) from [@CodeBlanch](https://github.com/CodeBlanch), for example, improved the performance of the internal DiagLinkedList<T>.DiagEnumerator type that's the
-
-an incompatible process.
 
 enumerator returned when enumerating Activity.Links and Activity.Events by avoiding a copy of each T value:
 
@@ -7432,8 +7471,9 @@ public TimeSpan New()
 |--------|----------|-------|-----------|-------------|
 | Old    | 32.90 ns | 1.00  | 40 B      | 1.00        |
 | New    | 26.30 ns | 0.80  | -         | 0.00        |
+|        |          |       |           |             |
 
-### <span id="page-212-0"></span>Exceptions
+# <span id="page-212-0"></span>Exceptions
 
 It might be odd to see the subject of "exceptions" in a post on performance improvements. After all, exceptions are by their very nature meant to be "exceptional" (in the "rare" sense), and thus wouldn't typically contribute to fast-path performance. Which is a good thing, because fast-paths that throw exceptions in the common case are no longer fast: throwing exceptions is quite expensive.
 
@@ -7512,7 +7552,7 @@ APIs internally. Interestingly, while we expected a peanut-buttery effect of sli
 
 With the success of ArgumentNullException.ThrowIfNull and along with its significant roll-out in .NET 7, .NET 7 also sees the introduction of several more such throw helpers. [dotnet/runtime#61633,](https://github.com/dotnet/runtime/pull/61633)  for example, adds an overload of ArgumentNullException.ThrowIfNull that works with pointers. [dotnet/runtime#64357](https://github.com/dotnet/runtime/pull/64357) adds the new ArgumentException.ThrowIfNullOrEmpty helper as well as using it in several hundred places. And [dotnet/runtime#58684](https://github.com/dotnet/runtime/pull/58684) from [@Bibletoon](https://github.com/Bibletoon) adds the new ObjectDisposedException.ThrowIf helper (tweaked by [dotnet/runtime#71544](https://github.com/dotnet/runtime/pull/71544) to help ensure it's inlineable), which is then used at over a hundred additional call sites by [dotnet/runtime#71546.](https://github.com/dotnet/runtime/pull/71546)
 
-### <span id="page-215-0"></span>Registry
+# <span id="page-215-0"></span>Registry
 
 On Windows, the Registry is a database provided by the OS for applications and the system itself to load and store configuration settings. Practically every application accesses the registry. I just tried a simple console app:
 
@@ -7530,12 +7570,12 @@ Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\.NETFramework");
 [Benchmark] public string RegSz() => (string)s_netFramework.GetValue("InstallRoot");
 ```
 
-| Method | Runtime  | Mean     | Ratio | Allocated | Alloc Ratio |
-|--------|----------|----------|-------|-----------|-------------|
-| RegSz  | .NET 6.0 | 6.266 us | 1.00  | 200 B     | 1.00        |
-| RegSz  | .NET 7.0 | 3.182 us | 0.51  | 96 B      | 0.48        |
+| RegSz<br>.NET 6.0<br>6.266 us<br>1.00<br>200 B | Method | Runtime | Mean | Ratio | Allocated | Alloc Ratio |
+|------------------------------------------------|--------|---------|------|-------|-----------|-------------|
+|                                                |        |         |      |       |           | 1.00        |
+| RegSz<br>.NET 7.0<br>3.182 us<br>0.51<br>96 B  |        |         |      |       |           | 0.48        |
 
-### <span id="page-217-0"></span>Analyzers
+# <span id="page-217-0"></span>Analyzers
 
 The ability to easily plug custom code, whether for analyzers or source generators, into the Roslyn compiler is one of my favorite features in all of C#. It means the developers working on C# don't need to be solely responsible for highlighting every possible thing you might want to diagnose in your code. Instead, library authors can write their own analyzers, ship them either in dedicated nuget packages or as side-by-side in nuget packages with APIs, and those analyzers augment the compiler's own analysis to help developers write better code. We ship a large number of analyzer rules in the .NET SDK, many of which are focused on performance, and we augment that set with more and more analyzers every release. We also work to apply more and more of those rules against our own codebases in every release. .NET 7 is no exception.
 
@@ -7729,7 +7769,7 @@ The .NET 7 SDK also includes new analyzers around [GeneratedRegex(...)] [\(dotne
 
 ![](_page_224_Figure_0.jpeg)
 
-This release also saw [dotnet/runtime](https://github.com/dotnet/runtime) turn on a bunch of additional IDEXXXX code style rules and make a huge number of code changes in response. Most of the resulting changes are purely about simplifying the code, but in almost every case some portion of the changes also have a functional and performance impact.
+make a huge number of code changes in response. Most of the resulting changes are purely about simplifying the code, but in almost every case some portion of the changes also have a functional and performance impact.
 
 Let's start with IDE0200, which is about removing unnecessary lambdas. Consider a setup like this:
 
@@ -8012,7 +8052,7 @@ entry.GetKey(\_thisCollection) ?? "key"
 
 and avoiding an unnecessary table lookup.
 
-### <span id="page-231-0"></span>What's Next?
+## <span id="page-231-0"></span>What's Next?
 
 Whew! That was a lot. Congrats on getting through it all.
 

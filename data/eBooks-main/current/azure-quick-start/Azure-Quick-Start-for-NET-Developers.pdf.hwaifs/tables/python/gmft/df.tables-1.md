@@ -1,6 +1,0 @@
-|    |                                              | App Service Web Apps   | App Service Mobile Apps   | Azure Functions   | Logic Apps   | Virtual Machines   | Azure Kubernetes Service (AKS)   | Container Instances   |
-|---:|:---------------------------------------------|:-----------------------|:--------------------------|:------------------|:-------------|:-------------------|:---------------------------------|:----------------------|
-|  0 | Monolithic and N-Tier applications           |                        |                           |                   |              | *                  |                                  |                       |
-|  1 | Mobile app back end                          |                        |                           |                   |              | *                  |                                  |                       |
-|  2 | Microservice architecture￾based applications |                        |                           |                   |              |                    |                                  |                       |
-|  3 | Business process orchestrations              |                        |                           |                   |              |                    |                                  |                       |

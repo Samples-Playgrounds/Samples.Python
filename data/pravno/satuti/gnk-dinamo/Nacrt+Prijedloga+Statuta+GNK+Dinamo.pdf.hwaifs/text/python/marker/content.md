@@ -108,7 +108,7 @@ Vizija, misija i svrha Kluba:
 - e. Integritet i sukob interesa: Svi koji djeluju u ime Kluba dužni su razdvajati privatne i klupske interese te postupati u najboljem interesu Kluba.
 - f. Građanski identitet i društvena odgovornost: Klub čuva svoju zagrebačku i hrvatsku tradiciju, promiče zajedništvo, poštovanje različitosti i koristi sport kao alat pozitivnih društvenih promjena.
 
-#### **Članak 13.**
+## **Članak 13.**
 
 #### Djelatnosti Kluba su:
 
@@ -152,7 +152,7 @@ Klub može osnivati trgovačka društva sukladno odredbama Zakona o trgovačkim 
 - (1) Klub se može udružiti u saveze udruga, zajednice, mreže i u međunarodne udruge.
 - (2) Odluku o udruživanju donosi Skupština Kluba.
 
-## **III. ČLANOVI KLUBA, PRIJATELJI KLUBA I POVJERENICI KLUBA**
+# **III. ČLANOVI KLUBA, PRIJATELJI KLUBA I POVJERENICI KLUBA**
 
 # **1. ČLANOVI KLUBA**
 
@@ -196,7 +196,7 @@ Klub može osnivati trgovačka društva sukladno odredbama Zakona o trgovačkim 
 Dužnosti i odgovornosti članova Kluba su:
 
 - a. poštovati načela djelovanja, Statut te druge akte i odluke Kluba;
-  - b. podupirati Klub i aktivno sudjelovati u ostvarenju ciljeva Kluba;
+- b. podupirati Klub i aktivno sudjelovati u ostvarenju ciljeva Kluba;
 
 - c. obavijestiti Klub o promjeni osobnog imena te adresi prebivališta ili boravišta;
 - d. štititi ugled i dostojanstvo Kluba suzdržavajući se od ponašanja i radnji koje štete Klubu te njegovu ugledu, časti i dostojanstvu.
@@ -256,7 +256,7 @@ Igrači, članovi Uprave Kluba i zaposlenici Kluba koji su članovi Kluba te pov
 
 ## **3. POVJERENICI KLUBA**
 
-#### **Članak 27.**
+## **Članak 27.**
 
 - (1) Povjerenik može biti svaki član Kluba koji je podnio zamolbu i koji ispunjava sljedeće uvjete:
   - a. da je punoljetna i poslovno sposobna osoba;
@@ -276,7 +276,7 @@ Igrači, članovi Uprave Kluba i zaposlenici Kluba koji su članovi Kluba te pov
 - c. Nadzorni odbor Kluba (u daljnjem tekstu i: Nadzorni odbor)
 - d. Uprava Kluba (u daljnjem tekstu i: Uprava)
 
-### **Članak 29.**
+#### **Članak 29.**
 
 - (1) Članovi tijela Kluba mogu biti samo punoljetni i poslovno sposobni članovi Kluba pod uvjetom da su isti bili članovi Kluba i u kalendarskoj godini koja prethodi godini u kojoj se održavaju izbori, osim u slučaju imenovanja članova Uprave Kluba.
 - (2) Članovi klupskih tijela ne mogu biti osobe za koje postoji zapreka Zakona o sportu i iz Zakona o udrugama.
@@ -647,7 +647,7 @@ n. obavlja i druge poslove u skladu sa zakonima, ovim Statutom i općim aktima K
 - (7) U slučaju da su pojedini kandidati na izbornim listama iz članka 51. ovog članka Statuta ujedno i povjerenici Kluba, isti ne mogu sudjelovati na izborima na listi povjerenika Kluba niti biti izabrani kao članovi Skupštine sukladno stavku 5. i 6. ovog članka Statuta.
 - (8) Detalje izbornih postupaka i referenduma, kao i rad Izbornog povjerenstva uređuje Pravilnik o izborima u Klubu.
 
-## **Članak 53.**
+#### **Članak 53.**
 
 - (1) Izborna sjednica Skupštine održava se najkasnije u roku od 15 (petnaest) dana od dana održavanja izbora i u drugim slučajevima propisanim ovim Statutom te na istoj, a sukladno rezultatima izbora te odredbama ovog Statuta, izabire Predsjednika Kluba, Predsjednika Nadzornog odbora, Zamjenika Predsjednika Nadzornog odbora te ostale članove Nadzornog odbora.
 - (2) Kandidati za Predsjednika Kluba, Predsjednika Nadzornog odbora, Zamjenika Predsjednika Nadzornog odbora te ostalih članova Nadzornog odbora su kandidati s izborne liste koja je, sukladno članku 52. stavku 2. i 3. ovog Statuta, ostvarila veći broj članova u Skupštini.
@@ -702,7 +702,7 @@ n. obavlja i druge poslove u skladu sa zakonima, ovim Statutom i općim aktima K
 
 ## **VIII. IMOVINA, NAČIN STJECANJA I RASPOLAGANJE IMOVINOM**
 
-## **Članak 57.**
+#### **Članak 57.**
 
 - (1) Imovinu Kluba čine:
   - a. novčana sredstva koja je Klub stekao uplatom članarina, naknada Prijatelja Kluba, dobrovoljnim prilozima i darovima;
@@ -724,7 +724,7 @@ projekata Kluba iz državnog proračuna i proračuna jedinica lokalne i područn
 
 ## **IX. PRESTANAK POSTOJANJA KLUBA**
 
-#### **Članak 59.**
+## **Članak 59.**
 
 - (1) Klub prestaje postojati odlukom Skupštine u skladu s rezultatima provedenog referenduma ili u drugim slučajevima predviđenim zakonom.
 - (2) U slučaju prestanka postojanja Kluba preostala imovina pripada udruzi, ustanovi, zakladi ili drugoj pravnoj osobi koja ima iste ili slične statutarne ciljeve, a prema odluci Skupštine.

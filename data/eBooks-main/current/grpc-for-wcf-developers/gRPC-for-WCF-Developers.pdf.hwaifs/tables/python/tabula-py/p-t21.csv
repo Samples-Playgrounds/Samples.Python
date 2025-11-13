@@ -1,9 +1,0 @@
-,REGION_NORTH_AMERICA = 1;
-0,REGION_SOUTH_AMERICA = 2;
-1,REGION_EMEA = 4;
-2,REGION_APAC = 8;
-3,}
-4,
-5,message Product {
-6,Region available_in = 1;
-7,}

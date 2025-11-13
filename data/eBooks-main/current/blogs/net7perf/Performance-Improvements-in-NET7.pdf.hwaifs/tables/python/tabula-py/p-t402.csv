@@ -1,3 +1,0 @@
-,Method,Mean,Ratio,Allocated,Alloc Ratio
-0,EnumerateActivityLinks_Old,13.655 us,1.0,32 B,1.0
-1,EnumerateActivityLinks_New,2.380 us,0.17,-,0.0

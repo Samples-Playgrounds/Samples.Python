@@ -258,7 +258,7 @@ Modern web applications have higher user expectations and greater demands than e
 
 ASP.NET Core is optimized for modern web applications and cloud-based hosting scenarios. Its modular design enables applications to depend on only those features they actually use, improving application security and performance while reducing hosting resource requirements.
 
-### <span id="page-9-1"></span>Reference application: eShopOnWeb
+## <span id="page-9-1"></span>Reference application: eShopOnWeb
 
 This guidance includes a reference application, *eShopOnWeb*, that demonstrates some of the principles and recommendations. The application is a simple online store, which supports browsing through a catalog of shirts, coffee mugs, and other marketing items. The reference application is deliberately simple in order to make it easy to understand.
 
@@ -286,11 +286,11 @@ NuGet packages are first-class citizens in .NET Core, and ASP.NET Core apps are 
 
 ASP.NET Core also fully supports [dependency injection,](https://deviq.com/dependency-injection/) both internally and at the application level. Interfaces can have multiple implementations that can be swapped out as needed. Dependency injection allows apps to loosely couple to those interfaces, rather than specific implementations, making them easier to extend, maintain, and test.
 
-#### <span id="page-11-1"></span>Easily tested with automated tests
+### <span id="page-11-1"></span>Easily tested with automated tests
 
 ASP.NET Core applications support unit testing, and their loose coupling and support for dependency injection makes it easy to swap infrastructure concerns with fake implementations for test purposes. ASP.NET Core also ships with a TestServer that can be used to host apps in memory. Functional tests can then make requests to this in-memory server, exercising the full application stack (including middleware, routing, model binding, filters, etc.) and receiving a response, all in a fraction of the time it would take to host the app on a real server and make requests through the network layer. These tests are especially easy to write, and valuable, for APIs, which are increasingly important in modern web applications.
 
-#### <span id="page-11-2"></span>Traditional and SPA behaviors supported
+### <span id="page-11-2"></span>Traditional and SPA behaviors supported
 
 Traditional web applications have involved little client-side behavior, but instead have relied on the server for all navigation, queries, and updates the app might need to make. Each new operation made by the user would be translated into a new web request, with the result being a full page reload in the end user's browser. Classic Model-View-Controller (MVC) frameworks typically follow this approach, with each new request corresponding to a different controller action, which in turn would work with a model and return a view. Some individual operations on a given page might be enhanced with AJAX (Asynchronous JavaScript and XML) functionality, but the overall architecture of the app used many different MVC views and URL endpoints. In addition, ASP.NET Core MVC also supports Razor Pages, a simpler way to organize MVC-style pages.
 
@@ -869,7 +869,7 @@ CSS stylesheets lack support for conditional logic, variables, and other program
 
 The most popular CSS preprocessors are Sass and LESS. Both extend CSS and are backward compatible with it, meaning that a plain CSS file is a valid Sass or LESS file. Sass is Ruby-based and LESS is JavaScript based, and both typically run as part of your local development process. Both have command-line tools available, as well as built-in support in Visual Studio for running them using Gulp or Grunt tasks.
 
-#### <span id="page-46-0"></span>JavaScript
+### <span id="page-46-0"></span>JavaScript
 
 JavaScript is a dynamic, interpreted programming language that has been standardized in the ECMAScript language specification. It is the programming language of the web. Like CSS, JavaScript can be defined as attributes within HTML elements, as blocks of script within a page, or in separate files. Just like CSS, it's recommended to organize JavaScript into separate files, keeping it separated as much as possible from the HTML found on individual web pages or application views.
 
@@ -1733,7 +1733,7 @@ Consider ways in which your applications communicate directly with client applic
 - **ASP.NET Core SignalR** <https://github.com/dotnet/aspnetcore/tree/main/src/SignalR>
 - **WebSocket Manager** <https://github.com/radu-matei/websocket-manager>
 
-## <span id="page-73-1"></span>Domain-driven design – Should you apply it?
+#### <span id="page-73-1"></span>Domain-driven design – Should you apply it?
 
 Domain-Driven Design (DDD) is an agile approach to building software that emphasizes focusing on the *business domain*. It places a heavy emphasis on communication and interaction with business domain expert(s) who can relate to the developers how the real-world system works. For example, if you're building a system that handles stock trades, your domain expert might be an experienced stock broker. DDD is designed to address large, complex business problems, and is often not appropriate for smaller, simpler applications, as the investment in understanding and modeling the domain is not worth it.
 
@@ -1823,7 +1823,7 @@ Tim Berners-Lee
 
 Data access is an important part of almost any software application. ASP.NET Core supports various data access options, including Entity Framework Core (and Entity Framework 6 as well), and can work with any .NET data access framework. The choice of which data access framework to use depends on the application's needs. Abstracting these choices from the ApplicationCore and UI projects, and encapsulating implementation details in Infrastructure, helps to produce loosely coupled, testable software.
 
-#### <span id="page-77-1"></span>Entity Framework Core (for relational databases)
+## <span id="page-77-1"></span>Entity Framework Core (for relational databases)
 
 If you're writing a new ASP.NET Core application that needs to work with relational data, then Entity Framework Core (EF Core) is the recommended way for your application to access its data. EF Core is an object-relational mapper (O/RM) that enables .NET developers to persist objects to and from a data source. It eliminates the need for most of the data access code developers would typically need to write. Like ASP.NET Core, EF Core has been rewritten from the ground up to support modular cross-platform applications. You add it to your application as a NuGet package, configure it during app startup, and request it through dependency injection wherever you need it.
 
@@ -2157,7 +2157,7 @@ In addition to relational and NoSQL storage options, ASP.NET Core applications c
 
 • Azure Storage Introduction [https://learn.microsoft.com/azure/storage/common/storage](https://docs.microsoft.com/azure/storage/common/storage-introduction)[introduction](https://docs.microsoft.com/azure/storage/common/storage-introduction)
 
-## <span id="page-88-0"></span>Caching
+#### <span id="page-88-0"></span>Caching
 
 In web applications, each web request should be completed in the shortest time possible. One way to achieve this functionality is to limit the number of external calls the server must make to complete the request. Caching involves storing a copy of data on the server (or another data store that is more easily queried than the source of the data). Web applications, and especially non-SPA traditional web applications, need to build the entire user interface with every request. This approach frequently involves making many of the same database queries repeatedly from one user request to the next. In most cases, this data changes rarely, so there is little reason to constantly request it from the database. ASP.NET Core supports response caching, for caching entire pages, and data caching, which supports more granular caching behavior.
 
@@ -2382,7 +2382,7 @@ The different layers of the pyramid, and their relative sizes, represent differe
 
 A common problem for developers who are inexperienced with writing automated tests is coming up with what to test. A good starting point is to test conditional logic. Anywhere you have a method with behavior that changes based on a conditional statement (if-else, switch, and so on), you should be able to come up with at least a couple of tests that confirm the correct behavior for certain conditions. If your code has error conditions, it's good to write at least one test for the "happy path" through the code (with no errors), and at least one test for the "sad path" (with errors or atypical results) to confirm your application behaves as expected in the face of errors. Finally, try to focus on testing things that can fail, rather than focusing on metrics like code coverage. More code coverage is better than less, generally. However, writing a few more tests of a complex and business-critical method is usually a better use of time than writing tests for auto-properties just to improve test code coverage metrics.
 
-#### <span id="page-96-0"></span>Organizing test projects
+### <span id="page-96-0"></span>Organizing test projects
 
 Test projects can be organized however works best for you. It's a good idea to separate tests by type (unit test, integration test) and by what they are testing (by project, by namespace). Whether this separation consists of folders within a single test project, or multiple test projects, is a design decision. One project is simplest, but for large projects with many tests, or in order to more easily run different sets of tests, you might want to have several different test projects. Many teams organize test projects based on the project they are testing, which for applications with more than a few projects can result in a large number of test projects, especially if you still break these down according to what kind of tests are in each project. A compromise approach is to have one project per kind of test, per application, with folders inside the test projects to indicate the project (and class) being tested.
 
@@ -2470,7 +2470,7 @@ public IActionResult GetImage(int id)
 
 In most cases, you'll want to use global exception handlers in your controllers, so the amount of logic in them should be minimal and probably not worth unit testing. Do most of your testing of controller actions using functional tests and the TestServer class described below.
 
-#### <span id="page-100-0"></span>Integration testing ASP.NET Core apps
+### <span id="page-100-0"></span>Integration testing ASP.NET Core apps
 
 Most of the integration tests in your ASP.NET Core apps should be testing services and other implementation types defined in your Infrastructure project. For example, you could [test that EF Core](https://docs.microsoft.com/ef/core/miscellaneous/testing/)  [was successfully updating and retrieving the data that you expect](https://docs.microsoft.com/ef/core/miscellaneous/testing/) from your data access classes residing in the Infrastructure project. The best way to test that your ASP.NET Core MVC project is behaving correctly is with functional tests that run against your app running in a test host.
 
@@ -2728,7 +2728,7 @@ While the Web App is running, you can monitor the health of the application and 
 
 Whatever your application's needs and architecture, Microsoft Azure can support it. Your hosting needs can be as simple as a static website or a sophisticated application made up of dozens of services. For ASP.NET Core monolithic web applications and supporting services, there are several well-known configurations that are recommended. The recommendations on this article are grouped based on the kind of resource to be hosted, whether full applications, individual processes, or data.
 
-### <span id="page-109-1"></span>Web applications
+## <span id="page-109-1"></span>Web applications
 
 Web applications can be hosted with:
 
@@ -2770,7 +2770,7 @@ There are a few scenarios where Web Apps for Containers makes the most sense. If
 
 This approach also works well if your development team is able to move to a container-based development process. The "inner loop" of developing apps with containers includes building the app with containers. Changes made to the code as well as to container configuration are pushed to source control, and an automated build is responsible for publishing new container images to a registry like Docker Hub or Azure Container Registry. These images are then used as the basis for additional development, as well as for deployments to production, as shown in the following diagram:
 
-![](_page_113_Figure_1.jpeg)
+![](_page_113_Picture_1.jpeg)
 
 Developing with containers offers many advantages, especially when containers are used in production. The same container configuration is used to host the app in each environment in which it runs, from the local development machine to build and test systems to production. This approach greatly reduces the likelihood of defects resulting from differences in machine configuration or software versions. Developers can also use whatever tools they're most productive with, including the operating system, since containers can run on any OS. In some cases, distributed applications involving many containers may be very resource-intensive to run on a single development machine. In this scenario, it may make sense to upgrade to using Kubernetes and Azure Dev Spaces, covered in the next section.
 
@@ -2814,7 +2814,7 @@ If you have an existing application that would require substantial modifications
 
 Individual logical processes that can be decoupled from the rest of the application may be deployed independently to Azure Functions in a "serverless" manner. Azure Functions lets you just write the code you need for a given problem, without worrying about the application or infrastructure to run it. You can choose from a variety of programming languages, including C#, F#, Node.js, Python, and PHP, allowing you to pick the most productive language for the task at hand. Like most cloud-based solutions, you pay only for the amount of time your use, and you can trust Azure Functions to scale up as needed.
 
-#### <span id="page-115-2"></span>Data
+## <span id="page-115-2"></span>Data
 
 Azure offers a wide variety of data storage options, so that your application can use the appropriate data provider for the data in question.
 

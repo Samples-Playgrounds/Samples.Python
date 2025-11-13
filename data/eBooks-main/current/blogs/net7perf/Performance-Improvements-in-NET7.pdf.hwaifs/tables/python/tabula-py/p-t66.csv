@@ -1,2 +1,0 @@
-,[MethodImpl(MethodImplOptions.NoInlining)]
-0,static int Read0thElement(int[] array) => array[0];

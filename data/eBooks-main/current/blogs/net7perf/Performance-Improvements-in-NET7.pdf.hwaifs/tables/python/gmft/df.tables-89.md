@@ -1,4 +1,0 @@
-|    | Method             | Runtime   | Mean     |   Ratio | Allocated   |   Alloc Ratio |
-|---:|:-------------------|:----------|:---------|--------:|:------------|--------------:|
-|  0 | GetProcessesByName | .NET 6.0  | 2.287 ms |     1   | 447.86 KB   |         1     |
-|  1 | GetProcessesByName | .NET 7.0  | 2.086 ms |     0.9 | 2.14 KB     |         0.005 |

@@ -1,8 +1,0 @@
-,
-0,Note that you do need Visual Studio Enterprise to use the Snapshot Debugger. Here’s how it works:
-1,1. Attach the snapshot debugger to your application process in Azure.
-2,2. Add a snappoint (different from a breakpoint).
-3,"3. When the snappoint is hit, a snapshot is taken."
-4,• The debugger quickly gathers all the information it needs about the call stack and
-5,variables and lets the app continue to run.
-6,4. You can now view the snapshot and inspect everything that you normally would

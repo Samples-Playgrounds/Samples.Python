@@ -1,6 +1,0 @@
-,0
-0,Tip: Avoid enabling and disabling UI elements in the code-behind
-1,Ensure that view models are responsible for defining logical state changes that affect some aspects
-2,"of the view's display, such as whether a command is available, or an indication that an operation is"
-3,"pending. Therefore, enable and disable UI elements by binding to view model properties, rather"
-4,than enabling and disabling them in code-behind.

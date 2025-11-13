@@ -1,9 +1,0 @@
-,; Program.Compute2()
-0,"subrsp,28"
-1,callProgram.SomethingElse()
-2,"addeax,10"
-3,"addeax,10"
-4,"addeax,10"
-5,"addeax,10"
-6,"addeax,10"
-7,"addrsp,28"

@@ -1,0 +1,16 @@
+{
+    "function_method_name": "extract_markdown_to_file_from_any_document",
+    "num_pages": 74,
+    "time_start_1": 1762962838.993442,
+    "time_end_1": 1762962854.008322,
+    "time_total_1": 15.014879941940308,
+    "pages_per_second_1": 4.928444335628654,
+    "time_start_2": 2163793.013965833,
+    "time_end_2": 2163808.0290425,
+    "time_total_2": 15.015076667070389,
+    "pages_per_second_2": 4.928379763940176,
+    "time_start_3": 2163793013966000,
+    "time_end_3": 2163808029042666,
+    "time_total_3": 15.015076666,
+    "pages_per_second_3": 4.928379764291508
+}
