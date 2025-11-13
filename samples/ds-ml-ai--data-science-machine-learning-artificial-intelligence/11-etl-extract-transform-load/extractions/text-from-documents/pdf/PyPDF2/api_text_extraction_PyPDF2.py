@@ -1,17 +1,31 @@
+import PyPDF2
+from PyPDF2 import PdfReader
+import pytesseract
+
+import os
+from pathlib import Path
+
+import json
+import datetime
+import time
+from time import perf_counter
+from time import perf_counter_ns
+# from timer import timer
+
 try:
     import Image
 except ImportError:
     from PIL import Image
 
-import pytesseract
-import PyPDF2
-import os
-from pathlib import Path
-
-
-from PyPDF2 import PdfReader
-
+#@timer()
 def extract_text_to_file_from_pdf_document (source: str) -> str:
+
+    #---------------------------------------------------------------------------
+    time_start_1 = time.time()
+    time_start_2 = perf_counter()
+    time_start_3 = perf_counter_ns()
+    #---------------------------------------------------------------------------
+
     reader = PdfReader(source)
     result_txt = ""
     for page in reader.pages:
@@ -23,5 +37,31 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
     # save to file
     with open(f"{directory}/content.txt", "w") as f:
         f.write(result_txt) 
+
+    #---------------------------------------------------------------------------
+    time_stop_1 = time.time()
+    time_total_1 = time_stop_1 - time_start_1
+    time_stop_2 = perf_counter()
+    time_total_2 = time_stop_2 - time_start_2
+    time_stop_3 = perf_counter_ns()
+    time_total_3 = (time_stop_3 - time_start_3) / 1_000_000_000
+
+    times = {
+        "function_method_name" : "extract_text_to_file_from_any_document",
+        "time_start_1": time_start_1,
+        "time_end_1": time_stop_1,
+        "time_total_1": time_total_1,
+        "time_start_2": time_start_2,
+        "time_end_2": time_stop_2,
+        "time_total_2": time_total_2,
+        "time_start_3": time_start_3,
+        "time_end_3": time_stop_3,
+        "time_total_3": time_total_3,
+    }
+
+    timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+    with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
+        f.write(json.dumps(times, indent=4))
+    #---------------------------------------------------------------------------
 
     return result_txt
