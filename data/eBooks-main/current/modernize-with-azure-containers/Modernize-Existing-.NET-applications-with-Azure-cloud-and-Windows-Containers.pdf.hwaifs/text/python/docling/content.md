@@ -735,9 +735,13 @@ SQL
 
 Oracle
 
-VM
+Instance migration
 
-Microsoft Azure
+ADMS
+
+Service
+
+• Microsoft Azure
 
 Azure SQL Database Services
 
@@ -749,7 +753,7 @@ SQL
 
 SQL
 
-Database migration
+Database migration"
 
 ADMS
 
@@ -776,12 +780,6 @@ In Azure, you can migrate your database servers directly to IaaS VMs (pure lift 
 Figure 3-1. Database migration paths in Azure
 
 <!-- image -->
-
-Instance migration
-
-ADMS
-
-Service
 
 SQL
 
@@ -1045,7 +1043,7 @@ Docker containers
 
 Orchestrators (AKS/Kubernetes, Service Fabric)
 
-Serverless (Azure Functions) Cloud-resilient NET Core (cross-platform, Linux/Windows) Other languages
+Serverless (Azure Functions) Cloud-resilient .NET Core (cross-platform, Linux/Windows) Other languages
 
 Figure 4-4. Cloud-Native characteristics
 
@@ -1760,19 +1758,9 @@ NET Foundallen T-shirt NET Foundation T-shit NET T-Sh $1209 4png
 
 Roslyn Red Sheet
 
-Roslyn Red Shast
-
 B.
 
-100
-
-4.x MVC)
-
-DetaileDelete
-
-HTTP
-
-Catalin et AND
+Roslyn Red Shast
 
 Mock data
 
@@ -1818,15 +1806,23 @@ The figure below shows the simple scenario of the original 3-Tier legacy applica
 
 Product
 
-Wil Shop WinForms e ONCONTAINERS
+100
+
+4.x MVC)
+
+DetaileDelete
+
+HTTP
+
+Wil eShop WinForms e ONCONTAINERS
 
 Main Catalog inventory
 
 Type e-ShopOnContainers. By Microsoft Corp.
 
-Brand Aa
+trand Aa
 
-Name
+Name escrotion.
 
 NET Bot Black Hoode
 
@@ -1913,9 +1909,17 @@ Web Forms app
 
 Figure below shows the scenario for a 3-Tier app with a containerized WCF service.
 
+ele niemi
+
+Le:..
+
 WinForms
 
 Desktop app
+
+MET Ba Baik Hoede MET Bo Bad Hoade |81950
+
+MT Bad a wAu Mp MET Fad S He Mg 1830
 
 Docker host (PC dev environment)
 
@@ -1923,7 +1927,7 @@ Windows 10 or later
 
 Docker for Windows
 
-WCF service (NET Framework) on
+WCF service (.NET Framework) on
 
 <!-- image -->
 

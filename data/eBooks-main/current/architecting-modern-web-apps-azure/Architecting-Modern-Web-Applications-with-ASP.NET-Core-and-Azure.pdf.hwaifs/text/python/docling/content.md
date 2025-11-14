@@ -972,7 +972,7 @@ Since the UI layer doesn't have any direct dependency on types defined in the In
 
 For monolithic applications, the Application Core, Infrastructure, and UI projects are all run as a single application. The runtime application architecture might look something like Figure 5-12.
 
-ASP.NET Core Architecture
+ASPNET Core Architecture
 
 ASP.NET Core Web App
 
@@ -2485,8 +2485,6 @@ Manage Product Catalog
 
 -
 
-\_ • " ×
-
 Guest
 
 About eShopOnWeb
@@ -2679,37 +2677,37 @@ FunctionalTests
 
 • do
 
-• ®
-
 Dependencies
 
 PublicApi
 
 Some teams find the second naming approach clearer, though slightly more verbose. In any case, try to use a naming convention that provides insight into test behavior, so that when one or more tests fail, it's obvious from their names what cases have faile d. Avoid naming your tests vaguely, such as ControllerTests.Test1, as these names offer no value when you see them in test results.
 
-• &amp; C# OrderControllerIndex.cs
+• B C# OrderControllerlndex.cs
 
 If you follow a naming convention like the one above that produces many small test classes, it's a good idea to further organize your tests using folders and namespaces. Figure 9-4 shows one approach to organizing tests by folder within several test projects.
 
-• &amp;d Dependencies
+• Sd Dependencies
 
 • 8E Repositories
 
 • 8C
 
-• &amp;o Dependencies
+I Unitlests
+
+• So Dependencies
 
 1 8E Entities
 
 • 8
 
-• 8C
+• AC
 
 • BC Services
 
-• 8T
+• BT
 
-• BE Builders
+• B Builders
 
 Figure 9-4. Organizing test classes by folder based on class being tested.
 

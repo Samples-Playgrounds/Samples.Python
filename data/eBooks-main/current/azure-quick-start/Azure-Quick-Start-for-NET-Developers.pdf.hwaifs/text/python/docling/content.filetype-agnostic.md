@@ -657,6 +657,8 @@ Figure 3: Cloud Explorer in Visual Studio
 
 Collapse All
 
+• Bo
+
 Publish to Azure
 
 <!-- image -->

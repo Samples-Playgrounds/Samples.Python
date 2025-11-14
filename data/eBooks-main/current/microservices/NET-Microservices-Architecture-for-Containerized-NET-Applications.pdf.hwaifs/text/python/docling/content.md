@@ -1,6 +1,6 @@
 <!-- image -->
 
-## Architecture for Containerized .NET Applications
+## Architecture for Containerized NET Applications
 
 <!-- image -->
 
@@ -3169,13 +3169,13 @@ StatusCode
 
 Content
 
-StatusDescription: oK
+StatusDescription : oK
 
 : 200
 
 : ["Howdy!", "Cheers mate!"]
 
-RawContent
+RaContent
 
 : HTTP/1.1 200 OK
 
@@ -4495,7 +4495,7 @@ B
 
 Event bus
 
-Lepublish/subscribe channel)
+Lupublish/subscribe channel
 
 In Figure 6-19 you can see how, from an application point of view, the event bus is nothing more than a Pub/Sub channel. The way you implement this asynchronous communication can vary. It can have multiple implementations so that you can swap between them, depending on the environment requirements (for example, production versus development environments).
 
@@ -5398,7 +5398,7 @@ ApiGw-Base
 
 • -e OcelotApiGw
 
-• Connected Services
+•- Connected Services
 
 * Dependencies
 
@@ -5414,7 +5414,7 @@ adJ appsettings.json aL Dockerfile
 
 D a C* Program.cs
 
-D a C# Startup.cs
+D G C# Startup.cs
 
 Figure 6-32. The OcelotApiGw base project in eShopOnContainers
 
@@ -5510,11 +5510,11 @@ ApiGw-Base
 
 • localhost:5202/api/v1/c/catalog/items/2/
 
-("id": 2, "name": ".NET Black &amp; White Mug", "description": " NET Black &amp; White
+("id": 2, "name": ".NET Black &amp; White Mug", "description": ".NET Black &amp; White
 
 D a@] OcelotApiGw
 
-Id": 2, "catalogBrand": null, "availableStock": 99, "restockThreshold": 0, "maxStockThreshold": 0, "onReorder": false)
+Id": 2, "catalogBrand": nul1, "availableStock":99, "restockThreshold": 0, "maxStockThreshold": 0, "onReorder": false)
 
 - • ×
 
@@ -5530,7 +5530,7 @@ Because of that previous code, and as shown in the Visual Studio Explorer below,
 
 • Web.Bff.Shopping
 
-• a©] Web.Shopping.HttpAggregator foJ configuration.json
+D a©] Web.Shopping.HttpAggregator foJ configuration.json
 
 Figure 6-34. The only file needed to define each API Gateway / BFF with Ocelot is a configuration file
 
@@ -5550,13 +5550,13 @@ Figure 6-35. Accessing a microservice through a URL provided by the API Gateway
 
 Because of testing or debugging reasons, if you wanted to directly access to the Catalog Docker container (only at the development environment) without passing through the API Gateway, since 'catalog -api' is a DNS resolution internal to the Docker host (se rvice discovery handled by dockercompose service names), the only way to directly access the container is through the external port published in the docker-compose.override.yml, which is provided only for development tests, such as http://host.docker.internal:5101/api/v1/Catalog/items/1 in the following browser.
 
+|
+
 localhost
 
 &lt; &gt; 0
 
-x + Y
-
-eShopOnContainers
+x + v eShopOnContainers
 
 • localhost:5101/api/v1/Catalog/items/2|
 
@@ -5580,9 +5580,13 @@ Windows eShop SPA Web app
 
 TypeScript/Angular
 
-Id": 2, "catalogBrand": null, "availableStock": 99, "restockThreshold": 0, "maxStockThreshold": 0, "onReorder": false)
+Id": 2, "catalogBrand": nul1, "availableStock": 99, "restockThreshold": 0, "maxStockThreshold": 0, "onReorder": false)
 
-Mug", "price": 8.50, "pictureFileName": "2.png","pictureUri":"http://localhost:5202/api/v1/c/catalog/items/2/pic/","catalogTypeId":1,"catalogType":null, "catalogBrand
+- • X
+
+# R E
+
+Mug", "price":8.50, "pictureFileName": "2.png","pictureUri":"http://localhost:5202/api/v1/c/catalog/items/2/pic/","catalogTypeId":1,"catalogType":nu1l, "catalogBrand
 
 Identity microservice (STS+users)
 
@@ -5591,8 +5595,6 @@ SQL Server database
 Figure 6-36. Direct access to a microservice for testing purposes
 
 <!-- image -->
-
-- • X
 
 Event Bus
 
@@ -6101,7 +6103,7 @@ However, the ProducesResponseType attribute cannot use dynamic as a type but req
 public class OrderSummary { public int ordernumber { get ; set ; } public DateTime date { get ; set ; } public string status { get ; set ; } public double total { get ; set ; } } // or using C# 8 record types: public record OrderSummary(int ordernumber, DateTime date, string status, double total);
 ```
 
-1 swagger
+1- swagger
 
 Ordering HTTP API®
 
@@ -7848,7 +7850,7 @@ Locations.API
 
 Connected Services
 
-# Dependencies
+#• Dependencies
 
 F Analyzers
 
@@ -9093,7 +9095,7 @@ Catalog.API
 
 • Connected Services
 
-* Dependencies
+** Dependencies
 
 i
 
@@ -9175,17 +9177,19 @@ Fortunately, AspNetCore.Diagnostics.HealthChecks also provides AspNetCore.Health
 
 |- Health Checks UI
 
++
+
+&lt; lcalhost:5107/hc-ui#/healthchecks
+
 E
 
 &amp; Health Checks
 
 • Webhooks
 
-+
-
 Health Checks status
 
-(a)
+(=)
 
 Refresh every
 
@@ -9247,17 +9251,17 @@ Finally, if you're storing all the event streams, you can use Microsoft Power BI
 
 Client Mobile App
 
-1 Backend
+| Backend
 
-1 HTTP Request
+J HTTP Request
 
 Sign-in
 
 API Gateway
 
-ASPNET Corel
+ASPNET Core
 
-Web APl
+Web API
 
 Request with user information
 

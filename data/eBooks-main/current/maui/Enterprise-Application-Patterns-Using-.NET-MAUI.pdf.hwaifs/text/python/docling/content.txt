@@ -2038,7 +2038,7 @@ For IdentityServer to issue tokens on behalf of a user, the user must sign in to
 
 The eShop multi-platform app authenticates with IdentityServer with the hybrid authentication flow, which is illustrated in the diagram below.
 
-http://&lt;baseendpoint&gt;:5105/connect/authorize htt://base endpoints:5105/connect/endsession Identity Microservice (STs-Users)
+http://&lt;baseendpoint&gt;:5105/connect/authorize http://sbaseendpoint:5105/connect/endsession endpoint:5105/connect/endsession w Identity Microservice (STs-Users)
 
 authentication response
 

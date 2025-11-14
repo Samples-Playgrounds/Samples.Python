@@ -1,0 +1,12 @@
+{
+    "function_method_name": "extract_text_to_file_from_any_document",
+    "time_start_1": 1763102095.145237,
+    "time_end_1": 1763102100.7544692,
+    "time_total_1": 5.609232187271118,
+    "time_start_2": 68305.681848791,
+    "time_end_2": 68311.291081666,
+    "time_total_2": 5.609232874994632,
+    "time_start_3": 68305681848875,
+    "time_end_3": 68311291081750,
+    "time_total_3": 5.609232875
+}

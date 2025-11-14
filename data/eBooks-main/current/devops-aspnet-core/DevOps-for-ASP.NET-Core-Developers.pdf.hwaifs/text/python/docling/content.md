@@ -547,9 +547,9 @@ Wait while Azure builds and deploys the app.
 
 - :::{custom-style=CodeBox} console  echo Staging web app URL: http://$webappnamestaging.azurewebsites.net :::
 
-&lt;&gt; O
+&lt; &gt; O
 
-Omywebapp14483-staging.azurewebsites.net/
+O mywebapp14483-staging.azurewebsites.net/
 
 SimpleFeedReader
 
@@ -567,7 +567,7 @@ Retrieve Feed
 
 -
 
-0 ×
+• ×
 
 <!-- image -->
 
@@ -603,6 +603,8 @@ Enter a feed URL:
 Retrieve Feed
 
 -
+
+• ×
 
 2 ...
 
@@ -1093,7 +1095,7 @@ Production
 
 Agent job O
 
-Display name*
+Display name *
 
 Run on agent
 
@@ -1214,7 +1216,7 @@ Release-3
 
 Last run sia 20210420.... ¿ main
 
-#20210420.5 • Update Index cshtml
+#20210420.5 • Update Index shtml
 
 New pipeline
 
@@ -1224,9 +1226,7 @@ Edit
 
 T Filter pipelines
 
-# All releases v
-
-(Just now
+# All releases v ta Just now
 
 Simple Feed Reader - V4
 
@@ -1481,7 +1481,7 @@ The Source (Build definition) value represents the build definition to which thi
 
 The release pipeline consists of two tasks: Deploy Azure App Service to Slot and Manage Azure App Service - Slot Swap . Clicking the first task reveals the following task configuration:
 
-[I Delete
+[I] Delete
 
 X
 
@@ -1539,7 +1539,7 @@ Source Slot *
 
 staging
 
-Swap with Production 0
+Swap with Production f
 
 Preserve Vnet
 
@@ -1778,13 +1778,13 @@ Retention History
 
 Pipeline
 
-Culld poeine y Get sources
+Culd poeine y Get sources
 
 B Save &amp; queue Y Discard
 
 • Enable continuous integration
 
-• sughosnea/simple-feed-reader
+• sughosneo/simple-feed-reader
 
 = Summary
 
@@ -1804,13 +1804,13 @@ Use NuGet 4.4.1
 
 Branch filters
 
-Po NuGet too rosier
+Po NuGet too rasier
 
-NuGet restore
+Nuset restore
 
 Visual Studio build
 
-0) Paul sou tion
+0) Paul soution
 
 Type
 
@@ -1834,7 +1834,7 @@ Path filters
 
 +
 
-MyFirstProject-ASP.NET Core (NET Framework)-Cl
+MyFirstProject-ASP.NET Core (.NET Framework)-Cl
 
 Agent pool • © | Pool information | Manage E
 
@@ -2192,7 +2192,7 @@ Release-3
 
 Last run sia 20210420.... 8º main
 
-#20210420.5 • Update Index cshtml
+#20210420.5 • Update Index shtml
 
 New pipeline
 
@@ -2202,9 +2202,7 @@ Edit
 
 T Filter pipelines
 
-# All releases v
-
-(Just now
+# All releases v ta Just now
 
 1. Navigate to the Pipelines . You'll see the CI pipeline details and monitor each steps if you drill down Jobs details.
 
@@ -2461,7 +2459,7 @@ The Source (Build definition) value represents the build definition to which thi
 
 The release pipeline consists of two tasks: Deploy Azure App Service to Slot and Manage Azure App Service - Slot Swap . Clicking the first task reveals the following task configuration:
 
-[I Delete
+[I] Delete
 
 X
 
@@ -2519,7 +2517,7 @@ Source Slot *
 
 staging
 
-Swap with Production 0
+Swap with Production f
 
 Preserve Vnet
 
@@ -2771,35 +2769,35 @@ Jobs are run on runners . You can use hosted runners , which are spun up by GitH
 
 Each job will specify what runner GitHub should use to execute the steps. You can also specify dependencies between jobs using the needs attribute. Deployment jobs can also specify an environment to target.
 
-Search or jump to
+Search or jamp to
 
-[Pull requests Issues Codespaces Marketplace Explore
+[) Pull requeste Issues Codespaces Marketplace Explore
 
 Y colindembovsky / simple-feed-reader
 
 (&gt; Code
 
-I Ail requests
+I) Ail requests
 
-(• Action
+(O Action
 
 E Projects
 
-Ф wal O Securty
+M wal O Securty
 
-Le bights lit Setings
+Le hights lit Settings
 
 Get started with GitHub Actions
 
 Buld test and deploy you
 
-Waging work the wry you want Select a workflow template to get started skip is and set up a worknew yoursel
+Neging work the wy you want Select a workflow template to get started skip tis and set up a workew youse
 
 NET
 
-By Gerto Actem
+By Gerha Actiem
 
-Set up this work for dobrat restore
+Set up this work foe dotat restore
 
 ## Tip
 
@@ -2809,7 +2807,11 @@ App
 
 The steps node can be as easy as inline commands, or they can be actions. Most CI workflows will have a combination of run steps (for executing scripts) and actions. Individual actions are pulled into the workflow by referencing the GitHub Action repository (and optionally a tag or commit hash for specific versions) and specifying any parameters using the with keyword.
 
+rets tonerode ))*1
+
 CH O
+
+Q adansote-sorifom
 
 Deploy to Alibaba Cloud ACK
 
@@ -2842,7 +2844,7 @@ A primary principle of effective DevOps is to 'build once, and deploy many times
 
 © Watch -
 
-( Summary coocked 9 menuat ago in tane
+( Summary mccoockd 9 minuli ago in tan e
 
 Search or jump to....
 
@@ -2850,7 +2852,7 @@ Pull requests Issues Codespaces Marketplace Explore
 
 У colindembovsky / simple-feed-reader forked from Azure-Samples/simple-feed-reader
 
-Copyrter (C) Micronett Corpiration, alt-lehet patarves.
+Copyrteh (C) Micronett Corpiration, alt -lehes patarves.
 
 &lt;&gt; Code
 
@@ -2878,21 +2880,21 @@ W Projects
 
 Le Insights @ Settings
 
-Puste succeeces.
+Puste succeeced.
 
 Commit changes
 
-•barning(o)
+• barning(o)
 
-•trear(e)
+• trear(e)
 
 Update dotnet.yml
 
-Tine elipsed 03:00:00.19
+Tine eligsed 03:00:00.19
 
 Featured Acti
 
-1. Commit the file onto the main branch. Since you've defined a trigger condition for commits to main , this commit should trigger the workflow to run. Status total durstion Artifacts dotnet.yml Suild started 1/28/211136:45m
+1. Commit the file onto the main branch. Since you've defined a trigger condition for commits to main , this commit should trigger the workflow to run. Status total durstion Artifacts dotnet.yml Suild startad 1/28/21 1136:45 m
 
 on push
 
@@ -3233,11 +3235,9 @@ Pull roquests Issues Codespaces Marketplace
 
 Actions secrets / New secret y colindembovsky / simple-feed-reader
 
-torked from Azurs Sempestlerole 19nd reeds
+torked trom Azurs Semples/tierole 19nd reeds
 
-• Conle
-
-12 Pull imposts
+12 Pull imposte
 
 © Actiona
 
@@ -3261,7 +3261,7 @@ Webhooks
 
 "clientSecret": ""
 
-Deploy kaya
+Deplay kaya
 
 "tenantld":
 
@@ -3269,9 +3269,7 @@ Deploy kaya
 
 Actions
 
-Codernsies
-
-**fione
+Coderneres
 
 "**.
 
@@ -3279,11 +3277,9 @@ Add secret
 
 **.
 
-• Noject
-
 CD Wiki
 
-© Curry
+© Gurky
 
 - Inighis
 
@@ -3295,9 +3291,9 @@ Actions secrets
 
 New repository secret
 
-Socrets are environmant variables that are encrypted. Anyone with collaborator acces to this repository can use these secrets for Actions.
+Socrets are environmant variables that are encrypted. Anyone with collaborator acces to this ropository can use these secrets for Actions.
 
-Secrets are nat passed to woridows that are triggered by a pull request from a fork. Learn more.
+Secrets are nat passed to woridows that are triggered by a pull request from a fork. Lesen more.
 
 3. Make sure to record the clientId, clientSecret, subscription, and tenantId. You can also leave the terminal open for copy/paste later.
 
@@ -3307,7 +3303,7 @@ There are no secrets for this repository.
 
 1. Now you're going to create an encrypted secret to store the credentials. You'll create this secret at the repository level.
 
-Chaste a carnot
+Cheste a carnot
 
 2. Navigate to GitHub and select your repository Settings tab. Then select Secrets . Select New repository secret :
 1. Copy and paste the JSON from the az ad sp create-for-rbac command into the body of the secret. You can create this JSON by hand too if you have the relevant fields for your SPN. The secret should be named AZURE\_CREDENTIALS. Select Add secret to save the new secret:
@@ -3325,7 +3321,7 @@ Chaste a carnot
 
 Environments are used as a logical boundary . You can add approvals to environments to ensure quality. You can also track deployments to environments and specify environment-specific values (secrets) for configuration.
 
-Explore let Settings
+Explore et Settings
 
 l.
 
@@ -3751,11 +3747,11 @@ Pull requests
 
 Y colindembovsky / simple-feed-reader forked from Azure-Samples/simple-feed-reader
 
-• Code
+•&gt; Code
 
 I? Pull requests
 
-• Actions
+O Actions
 
 Workflows
 
@@ -3773,11 +3769,11 @@ Issues Codespaces Marketplace Explore
 
 Le Insights
 
-NET
+.NET
 
 5. To see the Run workflow button, select the Actions tab. Select the .NET workflow in the list of workflows. At the top of the list of runs, you'll see the Run workflow button. If you select it, you can choose the branch to run the workflow against and queue it:
 
-• Update dotnet.ymi master
+• Update dotnet.yml master
 
 **fioune 13**. Manual dicnatch..
 
@@ -3887,7 +3883,7 @@ with: app-name: ${{ env.app-name }}  slot-name: staging  app-settings-json: |  [
 
 A Not secure cd-simplefeedreader-staging.azureweb...
 
-AZ Exams i Learning
+AZ Exams il Learning
 
 • NET on Actions
 
@@ -3899,9 +3895,9 @@ Enter a feed URL:
 
 - →
 
-G A Not secure | cd-simplefeedreader. azurewebsites.net i AZ Exams
+GA Not secure | cd-simplefeedreader. azurewebsites.net il AZ Exams
 
-i Learning ) NET on Actions
+i Learning .NET on Actions
 
 SimpleFeedReader
 
@@ -3935,7 +3931,7 @@ The final workflow file should look like this:
 name : .NET on : workflow_dispatch : inputs : reason : description : 'The reason for running the workflow' required : true default : 'Manual build from GitHub UI' push : branches : [ main ] pull_request : branches : [ main ] env : app-name : "cd-simplefeedreader" rg-name : "cd-dotnetactions" jobs : build :
 ```
 
-•..
+••.
 
 10
 
@@ -4436,9 +4432,9 @@ mywebapp21816
 
 App Service
 
-2 Scarch (Chrl*/
+• Search (Chri*/
 
-werniew
+Wweryew
 
 Activity log
 
@@ -4446,37 +4442,37 @@ Access control (LAM)
 
 • Tags
 
-% Diagnose and solve problems de Quickstart
+% Diagnose and solve problems d Quickstart
 
-ment recentals homenisios
+ment recentals idoo ment slots
 
 i@ Deployment options
 
-66 Continuous Delivery (Preview)
+@6 Continuous Delivery (Preview)
 
 SETTING
 
--Applcation setling"
+-Applcation setting"
 
-Chuthenucabon Authonzabon
+Cauthenucabon l Authorzabon
 
 Application Insights
 
 Managed service identity (Pr...
 
-Custom domains
+Custom domain
 
 SSL settings
 
 + Networking
 
-2 Scale up (App Service plan)
+Scale up (App Service plan)
 
 Ka Scale out (App Service plan)
 
 Weblobs
 
-PuST
+PuSh
 
 MysQL In App
 
@@ -4484,25 +4480,25 @@ Properties
 
 LOCKE
 
-4 Browse
+4, Browse
 
-4 Stop
+Stop
 
 Resource group (change)
 
-REUrCIUCOT
+AUrE IUCOTI
 
 Status
 
 Running
 
-Loraton
+Locaton
 
-Centr
+Centra
 
 Subscription (change)
 
-VUch
+V Uck
 
 Subscription ID
 
@@ -4510,13 +4506,13 @@ df118062-9277-4081-a559-888e4c82c4db
 
 Diagnose and solve problems
 
-Dur sell-service diagnostic and troubleshooting experience sepsyou isentry ana teiche ile wid yowed aps
+Dur sell-service diagnostic and troubleshooting experience seps you isenbry and teiste illes wit yow wed aps
 
 Http Sxx
 
 8
 
-243.52 m
+243.52 ml
 
 Having deployed the app and built a DevOps pipeline, it's important to understand how to monitor and troubleshoot the app.
 
@@ -4541,15 +4537,17 @@ App Service web apps are easily monitored in real time. The Azure portal renders
 
 <!-- image -->
 
-4 Swap O Restart aDelate
+", Swap O Restart
 
-*Get publich profile () Reus publich profile
+#Delete
+
+* Get publich profie () Reves publich profile
 
 URL
 
 https://mywebapp21816.azurewebsites.net
 
-Ap Sempa ier Pingi 1 Smat camsoper
+Agp Sempe dien Pring rid 1 Smalt camsoper
 
 Git/Deployment username
 
@@ -4561,11 +4559,15 @@ ttp://waws-prod-dm1-089.ftp.azurewebsites.windows.net
 
 Data Out (
 
+2x8
+
 1к0
 
 ## Monitor and debug
 
-SOPM
+SO PM
+
+S45 M
 
 Application Insights
 
@@ -4579,11 +4581,11 @@ page.
 
 nywebapp2181
 
-O Search (Ctri-s
+O Search (Ctri-/)
 
-Overview ectvity log
+Overview ectvity o9
 
-Access control AM
+Access control (AMM
 
 Diagnose and solve problems
 
@@ -4591,17 +4593,15 @@ DEPLOTMETET
 
 Quickstart
 
-Deployment credentials
+Deployment credentiais
 
 Deployment slots
 
-• Deployment options.
+•• Deployment options.
 
 ( Continuous Delivery (Preview)
 
-SETTINO
-
-appucation setting
+apoucation serro
 
 Authentication / Authorization
 
@@ -4617,7 +4617,7 @@ Networking
 
 Scale up (App Service plan)
 
-scale out (App service plan, wehiche
+scale out (App service plan, wehlohe
 
 Push
 
@@ -4647,11 +4647,11 @@ Subscription (change)
 
 Subscription ID
 
-* Swap
+*, Swap
 
 C Restart
 
-• Delete &amp; Get publish profile C2 Reset publish profile https://mywebapp21816.azurewebsites.net
+• Delete &amp; Get publish profile () Reset publish profile https://mywebapp21816.azurewebsites.net
 
 App Service plan/pricing tier mywebapp21816 (Standard: 1 Small)
 

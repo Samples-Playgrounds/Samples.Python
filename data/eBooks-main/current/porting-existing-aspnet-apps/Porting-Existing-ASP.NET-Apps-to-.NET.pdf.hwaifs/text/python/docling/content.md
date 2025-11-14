@@ -1356,7 +1356,7 @@ eShopLegacyMVC
 
 eShopLegacyMVC
 
-•.NET Core + Platform Extensions, Version=
+.NET Core + Platform Extensions, Version=
 
 Not supported
 
@@ -1464,7 +1464,7 @@ Not supported
 2. Analyze what's required to port each project.
 3. Start from the bottom up.
 
-Missing assemblies
+Missina assemblies
 
 Details |
 
@@ -1687,6 +1687,8 @@ Figure 4-2. Analyze assembly portability in Visual Studio.
 
 Choose the web project's assembly from the project's bin folder, as shown in Figure 4-3.
 
+5 - =
+
 X Select Assembly Files
 
 File
@@ -1711,7 +1713,7 @@ Review
 
 View
 
-" src &gt; eShopLegacyMVC &gt; bin &gt;
+"src &gt; eShopLegacyMVC &gt; bin &gt;
 
 80.59
 
@@ -1723,7 +1725,7 @@ New folder
 
 7d9637ec-b1a8-4808-8e19-59fdc4ecb3ea
 
-* Dropbox
+** Dropbox
 
 Target Framework
 
@@ -1733,7 +1735,7 @@ Target Framework
 
 • This PC
 
-&gt; 3D Objects
+y 3D Objects
 
 • Desktop
 
@@ -1780,6 +1782,8 @@ Table Tools
 Design
 
 Tell me what you want to do
+
+Y U
 
 Search bin
 

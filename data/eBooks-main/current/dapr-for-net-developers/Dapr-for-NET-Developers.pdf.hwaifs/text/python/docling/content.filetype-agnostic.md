@@ -3060,6 +3060,8 @@ Search by trace ID
 
 Search by trace ID
 
+RUN GUERY
+
 *-
 
 S RUN QUERY
@@ -3080,7 +3082,7 @@ Clicking the SHOW button next to a specific trace, will show the details of that
 
 Q Find a trace
 
-*° Dependencies
+T° Dependencies
 
 Q Find a trace Dependencies
 
@@ -3314,6 +3316,8 @@ Total CPU usage (kernel and user)
 
 Heap Memory usage in bytes
 
+1h 4
+
 • Last 5 minutes
 
 Number of GO routines
@@ -3435,7 +3439,7 @@ Figure 10 -11. Dapr dashboard components.
 
 Q, Find a trace
 
-* Dependencies
+*' Dependencies
 
 TRAFFICCONTROLSERVICE: bindings/exitcam
 
@@ -3508,6 +3512,8 @@ sendmail db.statement
 /dapr.proto.runtime.v1.Dapr/InvokeBinding db.system
 
 bindings
+
+гpc.service
 
 Dapr
 
@@ -4039,7 +4045,7 @@ Microsoft
 
 Architecture for
 
-Containerized .NET
+Containerized NET
 
 Applications
 
@@ -4273,7 +4279,7 @@ The eShopOnDapr reference application benefits from the Dapr service invocation 
 
 Both the original and updated eShop application leverage the Envoy proxy as an API gateway. Envoy is an open-source proxy and communication bus that is popular across modern distributed applications. Originating from Lyft, Envoy is owned and maintained by the Cloud-Native Computing Foundation .
 
-http →
+http→
 
 Basket
 

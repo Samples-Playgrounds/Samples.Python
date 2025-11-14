@@ -224,7 +224,7 @@ xPlatform O5:
 
 IOS
 
-Andraid
+Android
 
 Windows eshop Traditional WebApp
 
@@ -238,7 +238,7 @@ Docker Host
 
 Identity Microservice (STS + Users]
 
-Web API
+Web APl
 
 SQL Server
 
@@ -1589,7 +1589,9 @@ Basket Microservice
 
 Web API
 
-Container matar rafaran aplication back and microcor
+Container
+
+PAtinare raforans anplication hark-and microcor
 
 Figure 8-4: eShopOnContainers reference application back-end microservices
 

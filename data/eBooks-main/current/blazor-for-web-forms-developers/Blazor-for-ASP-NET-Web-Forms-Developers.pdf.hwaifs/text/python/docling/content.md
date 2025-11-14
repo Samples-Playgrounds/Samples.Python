@@ -1755,7 +1755,7 @@ Graph Tables
 # dbo.aspnet\_Applications
 
 ```
-# dbo.aspnet_Membership # dbo.aspnet_Paths E dbo.aspnet_PersonalizationAllUsers # dbo.aspnet_PersonalizationPerUser # dbo.aspnet_Profile # dbo.aspnet_Roles # dbo.aspnet_SchemaVersions :: dbo.aspnet_Users # dbo.aspnet_UserslnRoles ## dbo.aspnet_WebEvent_Events
+#i dbo.aspnet_Membership # dbo.aspnet_Paths E dbo.aspnet_PersonalizationAllUsers #i dbo.aspnet_PersonalizationPerUser E dbo.aspnet_Profile E dbo.aspnet_Roles ## dbo.aspnet_SchemaVersions :: dbo.aspnet_Users # dbo.aspnet_UserslnRoles ## dbo.aspnet_WebEvent_Events
 ```
 
 <!-- image -->
@@ -1987,7 +1987,7 @@ X
 
 Solution Explorer
 
-Search Solution Explorer (Ctri+:)
+Search Solution Explorer (Ctrl+:)
 
 Solution 'WebApplication12' (1 of 1 project)
 
@@ -2039,7 +2039,7 @@ P
 
 P
 
-- 74 x
+- 7 4 x
 
 To migrate your users from membership to the new identity tables, you should follow the steps described in the documentation. After following these steps and the script provided, your users will need to change their password the next time they log in.
 

@@ -3100,8 +3100,6 @@ That's a fairly liner progression from least to most compression. That's not the
 
 Size (bytes)
 
-OOOZI
-
 000OI
 
 0008
@@ -3618,7 +3616,7 @@ System.Security.Cryptography.Algorithms.dll , System.Security.Cryptography.Cng.d
 
 These PRs move all of that code into a single System.Security.Cryptography.dll assembly. This has several benefits. First, crypto is used in a huge number of applications, and most apps would end up
 
-System.Security. Cryptography.Algorithms.dil la System.Security.Cryptography.Cng.dIl
+System.Security. Cryptography.Algorithms.dil tal System.Security.Cryptography.Cng.dIl
 
 7 KB
 
@@ -3626,9 +3624,7 @@ System.Security. Cryptography.Algorithms.dil la System.Security.Cryptography.Cng
 
 requiring multiple (or even most) of these assemblies. Every assembly that's loaded adds overhead. Second, a variety of helper files had to be compiled into each assembly, leading to overall larger amount of compiled code to be distributed. And third, we weren't able to implement everything as optimal as we'd have otherwise liked due to functionality in one assembly not exposed to another (and we avoid using InternalsVisibleTo as it hampers maintainability and impedes other analysis and optimizations). Now in .NET 7, the shared framework looks more like this:
 
-a System.Security.Cryptography.Encoding.dll
-
-Fa System.Security. Cryptography.Primitives.dll
+a System.Security.Cryptography.Encoding.dll a System.Security. Cryptography.Primitives.dIl
 
 <!-- image -->
 

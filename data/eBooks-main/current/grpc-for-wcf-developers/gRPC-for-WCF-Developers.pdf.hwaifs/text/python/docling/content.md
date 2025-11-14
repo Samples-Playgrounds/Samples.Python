@@ -2486,7 +2486,7 @@ Use kubectl to apply the stockweb.yml file and confirm that the Deployment and S
 
 The output of the get service command shows that the HTTP port has been published to port 32564 on the external network. For Docker Desktop, this IP address will be localhost. You can access the application by browsing to http://localhost:32564.
 
-Home Page - StockWeb x +
+Home Page - StockWeb x+
 
 &lt; &gt;
 
@@ -2540,6 +2540,8 @@ The following screenshot shows the StockWeb application running with the Linkerd
 
 E Home Page - StockWeb
 
+&lt; →
+
 StockWeb
 
 +
@@ -2570,7 +2572,7 @@ In this example, you'll learn how to use the Linkerd service mesh with the Stock
 
 Guest 8)
 
-oa ..
+o a ..
 
 Windows binaries from the section that lists GitHub releases. Be sure to use the most recent stable release and not one of the edge releases.
 

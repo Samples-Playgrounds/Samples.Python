@@ -568,7 +568,7 @@ Service
 
 Develop/Design
 
-Collaboration &lt;
+› Collaboration &lt;
 
 IT Operations
 
@@ -1263,9 +1263,9 @@ Personal - GMail
 
 + Add
 
-Manage view Y
+Manage view v aks
 
-aks aks
+aks
 
 Name T.
 
@@ -1273,7 +1273,7 @@ Name Tu
 
 [9) explore-docker-aks-rg
 
-[9) explore-docker-aks-rg
+[•) explore-docker-aks-rg
 
 (9) MC\_explore-docker-aks-rg\_explore-doc... •••
 
@@ -1299,7 +1299,7 @@ EE Edit columns
 
 EE Edit columns
 
-Ü Delete resource group O Refresh → Move
+Ü Delete resource group () Refresh → Move
 
 Subscription (change) : Demo subscription
 
@@ -1325,7 +1325,7 @@ Deployments : 1 Succeeded
 
 <!-- image -->
 
-Page 1 V of 1
+Page| 1 V| of1
 
 Figure 4 -17. AKS Resource Group view from Azure.
 
@@ -1353,13 +1353,13 @@ az aks get-credentials --resource-group explore-docker-aks-rg --name explore-doc
 
 8 X
 
-* ×
+* X
 
 miguel@LAPTOP-MV:/mnt/c/Users/Miguel$ az aks get-credentials --resource-group explore-docker-aks-rg --name explore-docker-aks
 
 Merged "explore-docker-aks" as current context in /home/miguel/.kube/config miguel@LAPTOP-MV:/mnt/c/Users/Miguel$ kubectl get nodes
 
-miguel@LAPTOP-MV:/mnt/c/Users/Miguel$
+migue1@LAPTOP-MV:/mnt/c/Users/Miguel$
 
 NAME
 
@@ -2385,6 +2385,8 @@ Figure 4 -39. Selecting Linux containers.
 
 <!-- image -->
 
+74 X
+
 Solution Explorer
 
 0 - 5
@@ -2952,7 +2954,7 @@ A browser window should open at http://127.0.0.1:8001 with a view similar to thi
 
 13.95.149.3/WeatherForecast
 
-LE Weather Forecast - WebApp ×
+LE Weather Forecast - WebApp x
 
 Overview - Kubernetes Dashboar X
 
@@ -3006,6 +3008,8 @@ Ingresses
 
 Q Search
 
+1. = .
+
 •••
 
 + CREATE
@@ -3022,7 +3026,7 @@ For more information on deployment with Kubernetes see:
 
 https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 
-(a)
+(#)
 
 ## Docker application DevOps workflow with Microsoft tools
 
@@ -3348,7 +3352,7 @@ Push services docker Docker Compose
 
 dy Write service image digests docker Docker Compose
 
-&amp; Cockrine configuration
+&amp; Cockbine configuration
 
 Docker Compose
 

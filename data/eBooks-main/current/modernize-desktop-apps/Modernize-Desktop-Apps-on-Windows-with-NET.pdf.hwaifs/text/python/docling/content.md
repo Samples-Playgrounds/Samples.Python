@@ -403,11 +403,11 @@ By the time Windows 8 was released, the concept of Portable Class Libraries (PCL
 
 Version f.1
 
-sual Studio 2003
+sval Studio 2003
 
 Version 1.D
 
-Visool Studio NET
+Vesool Studio NET
 
 Version 3.0
 
@@ -415,29 +415,31 @@ Release history of .Net Framework
 
 Version 4.0
 
-Vaual Studio 2010
+Voual Studio 2010
 
 Version 451
 
-Visual Studio 2013
+Vitual Studio 2013
+
+version af
 
 Nal Studo 2019
 
 Version 4.7
 
-(mut Studo 2017)
+(mun Studo 2017)
 
 NET Core 20
 
 Version 43
 
-Visual Studo 2019
+Visual Seudo 2019
 
 NET Core 3.0
 
 API surface area. Contracts are simply assemblies that you compile against and are designed with proper factoring in mind taking care of the dependencies between them. Version 472
 
-sus Studio 2005
+susi Studio 2005
 
 Visual Studio 2012
 
@@ -537,9 +539,9 @@ Since .NET Framework is installed on millions of machines, Microsoft will contin
 
 - Side-by-side versions of .NET supporting Windows Forms and WPF : This solves the problem of side effects when updating the machine's framework version. Multiple versions of .NET can be installed on the same machine and each application specifies which version of
 
-Update NET Framework Apps
+Update .NET Framework Apps
 
-Existine
+Existind
 
 Highly
 
@@ -902,7 +904,7 @@ Let's take an existing WPF sample app that reads files and shows its contents on
 
 Notification Class (Winc https://docs.microsoft.com/en-w//Uwp/apv/w
 
-DE File Loaded: C:\Users\martafuentes\Desktop\TestFile.txt
+•E File Loaded: C:\Users\martafuentes\Desktop\TestFile.txt
 
 Microsoft
 
@@ -950,7 +952,7 @@ Badge Template Type
 
 Dashboard
 
-1 ents.
+Ments.
 
 Cev (Feedback @ Share ** Theme Sign in
 
@@ -1064,7 +1066,7 @@ Select the minimum Windows version you want to support and the version you're ta
 
 Sort by: Default
 
-• #E
+• # E
 
 Blank App (Universal Windows)
 
@@ -1162,25 +1164,23 @@ Test Acalyse
 
 Help:
 
-O Debugge performance may be ingroved by kading fentrymbel Symbols options Lemmert Nevershows
+0 Debugge performance may be ingroved by kading fener symbel Symbols options Lemmert Nevershows
 
 5. -
 
 Application
 
-• Was Content
-
-A Vival Ass
+• Wao Contene
 
 Search Solution Explorer (Ctrl+*) |
 
-Small The
+Small Tie
 
-Medium The
+Medium Tie
 
 ] Solution 'ShowFileWPApplication' (2 projects)
 
-Wide Toe
+Wide Tee
 
 Large Tie
 
@@ -1208,11 +1208,13 @@ Short name
 
 "Shoef11mpf-exe"
 
+.(Hi432): Loaded Ci1Mindows15ysM0/41MSn/etaostaiMind
+
 • # ShowFileWPFApp.Package show Steief.exe
 
 Applications
 
-(4143211 Loaded C/145n00515y 540064145A
+(41432)1 Loades C/145n00515y5400641450
 
 mmedate Window
 
@@ -1222,11 +1224,13 @@ Escribe aqui para buscar
 
 Packa
 
-Dick Laund (00-2
+P - 5 ×
 
-La Poputy Laplom aEl-
+Maita Fuentes Lana - Mil
 
-E9 LangeT escale-150 pmg
+La Papeti Laplom
+
+9 LangeT escale-150 png
 
 <!-- image -->
 
@@ -1236,7 +1240,11 @@ Next step is to set the WPF Project as the startup Project in the solution confi
 
 Let's generate the package so you can install your app. Right click on Store &gt; Create App Packages .
 
-El LargeTiescale-200 pmg
+El LargeTaescale-200 pag roperties
+
+• 0 x
+
+1627
 
 •
 
@@ -1246,15 +1254,7 @@ P
 
 Diagnostic Tools Properties
 
-P - 5 x
-
-Mata Fuentes Lana - Mil roperties
-
-• 0 x
-
-* -
-
-1627
+Dick Land (00-2
 
 Build
 
@@ -2338,7 +2338,7 @@ Before MSIX, there were several packaging technologies available like setup wiza
 
 With MSIX, you get one installer technology with all these features.
 
-setup.ex
+›etup.ex
 
 Windows
 
@@ -2378,7 +2378,7 @@ HRApp.exe
 
 Employeen.dat
 
-Expenes.dl
+Expenses di
 
 <!-- image -->
 
@@ -2727,7 +2727,7 @@ Coupon.cs
 
 +
 
-E&lt;Package xmIns="http://schemas.microsoft.com/appx/manifest/foundation/windows10",
+E&lt;Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" )
 
 &lt;Identity Name="7c387b13-ce2b-436b-9b2e-49cb9e853df3" Publisher="CN=adambr" Vers-
 
@@ -3003,7 +3003,7 @@ HRappinstaller
 
 21
 
-‹?xml version="1.0"- encoding
+‹?xm1 version="1.0"- encoding
 
 E&lt;AppInstaller-
 
@@ -3013,7 +3013,7 @@ E&lt;AppInstaller-
 
 •Version="2.0.0.0"
 
-- Silent updates in the background. With this option, your users don't need to be aware of the updates. =. "x86"/&gt;
+- Silent updates in the background. With this option, your users don't need to be aware of the updates. =· "x86"/&gt;
 
 You can also configure when you want to perform updates: either when the application launches or on a regular basis. Thanks to the side-loading features, you can even get these updates while the application is running.
 
@@ -3035,6 +3035,6 @@ MSIX creates a user interface for installation automatically showing some proper
 
 133 %
 
-- "UTF-8"?›
+-"UTF-8"?›
 
 Once you've generated the new MSIX package and moved it to the deployment server, you just have to edit the .appinstaller file to reflect these changes: mainly the version and the path to the new MSIX file. The next time the user launches the application, the system will detect the change and download the files for the new version in the background. When the download is finished, installation will execute transparently for your user on new application launch.

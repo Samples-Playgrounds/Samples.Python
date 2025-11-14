@@ -2297,7 +2297,7 @@ container
 
 For simple gateway requirements, you may consider Azure Application Gateway. Available as an Azure PaaS service, it includes basic gateway features such as URL routing, SSL termination, and a Web Application Firewall. The service supports Layer-7 load balancing capabilities. With Layer 7, you can route requests based on the actual content of an HTTP message, not just low-level TCP network packets. Microservice 3
 
-Web APl
+Web AP!
 
 Throughout this book, we evangelize hosting cloud-native systems in Kubernetes. A container orchestrator, Kubernetes automates the deployment, scaling, and operational concerns of containerized workloads. Azure Application Gateway can be configured as an API gateway for Azure Kubernetes Service cluster.
 
@@ -2453,7 +2453,7 @@ Figure 4 -8. Direct HTTP communication
 
 While direct HTTP calls between microservices are relatively simple to implement, care should be taken to minimize this practice. To start, these calls are always synchronous and will block the operation until a result is returned or the request times outs. What were once self-contained, independent services, able to evolve independently and deploy frequently, now become coupled to each other. As coupling among microservices increase, their architectural benefits diminish.
 
-/Cloud
+/ Cloud
 
 ## Queries
 
@@ -3719,8 +3719,6 @@ As discussed in the Microsoft caching guidance, caching can increase performance
 
 Client Web app
 
-- - -
-
 Cloud
 
 ## Caching architecture
@@ -4692,15 +4690,15 @@ ALABAMA: 8.12%
 
 -o ALABAMA
 
-- COLORADO
+-- COLORADO
 
-- GEORGIA
+-- GEORGIA
 
-- HAWAII
+-- HAWAII
 
--o KENTUCKY
+-- KENTUCKY
 
-- MONTANA
+-- MONTANA
 
 No modern application would be complete without some artificial intelligence or machine learning. To this end, data can be passed to the various machine learning tools in Azure to allow you to extract trends and information that would otherwise be hidden.
 
@@ -5547,7 +5545,7 @@ Namel
 
 • Epic
 
-•Unparented
+• Unparented
 
 ¡ Issue
 
@@ -5565,7 +5563,7 @@ Projects
 
 To Do 8 h
 
-2 Add "remember me"
+• 2 Add "remember me"
 
 button to login screen
 
@@ -5599,7 +5597,7 @@ June 8 - June 29.
 
 T Filter by work item type nam
 
-0 Sprint 1 8 ernA v ă 0
+O Sprint 1 × 8 Person A v = |
 
 Done
 
