@@ -1,0 +1,66 @@
+import pdftables
+
+from pathlib import Path
+import traceback
+
+import json
+import datetime
+import time
+from time import perf_counter
+from time import perf_counter_ns
+# from timer import timer
+
+#@timer()
+def extract_tables_to_files_from_pdf_document (source: str) -> str:
+    """
+    """
+
+    #---------------------------------------------------------------------------
+    time_start_1 = time.time()
+    time_start_2 = perf_counter()
+    time_start_3 = perf_counter_ns()
+    #---------------------------------------------------------------------------
+
+    directory = f"{source}.hwaifs/tables/python/pdftables/"
+    Path(directory).mkdir(parents=True, exist_ok=True)
+
+    with open(source, 'rb') as fh:
+        tables = pdftables.get_tables(fh)
+
+
+    # Iterate through each table found in the PDF
+    for i, table in enumerate(tables):
+        # Extract table data as a Pandas DataFrame, including headers
+        df = table.df                   # get a pandas DataFrame!
+        df.to_csv(f"{source}.tables-{i}.pdftables.csv")      # to_json, to_excel, to_html
+        df.to_json(f"{source}.tables-{i}.pdftables.json")    # to_json, to_excel, to_html
+        df.to_excel(f"{source}.tables-{i}.pdftables.xlsx")   # to_json, to_excel, to_html
+        df.to_html(f"{source}.tables-{i}.pdftables.html")    # to_json, to_excel, to_html
+
+    #---------------------------------------------------------------------------
+    time_stop_1 = time.time()
+    time_total_1 = time_stop_1 - time_start_1
+    time_stop_2 = perf_counter()
+    time_total_2 = time_stop_2 - time_start_2
+    time_stop_3 = perf_counter_ns()
+    time_total_3 = (time_stop_3 - time_start_3) / 1_000_000_000
+
+    times = {
+        "function_method_name" : "extract_tables_to_files_from_pdf_document",
+        "time_start_1": time_start_1,
+        "time_end_1": time_stop_1,
+        "time_total_1": time_total_1,
+        "time_start_2": time_start_2,
+        "time_end_2": time_stop_2,
+        "time_total_2": time_total_2,
+        "time_start_3": time_start_3,
+        "time_end_3": time_stop_3,
+        "time_total_3": time_total_3,
+    }
+
+    timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+    with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
+        f.write(json.dumps(times, indent=4))
+    #---------------------------------------------------------------------------
+
+
