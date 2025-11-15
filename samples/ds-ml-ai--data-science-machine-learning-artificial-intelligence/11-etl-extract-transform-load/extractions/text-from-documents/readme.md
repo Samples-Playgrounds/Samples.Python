@@ -1,6 +1,15 @@
 # 
 
-*   https://www.reddit.com/r/LangChain/comments/1e7cntq/whats_the_best_python_library_for_extracting_text/
+text
+
+https://www.blog.pythonlibrary.org/2018/05/03/exporting-data-from-pdfs-with-python/
+
+    slate
+    pdf2text
+    pypdf
+    pdfium
+        
+    *   https://www.reddit.com/r/LangChain/comments/1e7cntq/whats_the_best_python_library_for_extracting_text/
 
 *   `docling`
 
