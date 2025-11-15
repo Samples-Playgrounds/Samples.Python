@@ -1,0 +1,50 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>&gt; kubectl apply -f .\stockdata.yml</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>deployment.apps/stockdata created</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>service/stockdata created</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>&gt; kubectl get deployment stockdata --namespace stocks</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>NAME        READY   UP-TO-DATE   AVAILABLE   AGE</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>stockdata   1/1     1            1           17s</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>&gt; kubectl get service stockdata --namespace stocks</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>NAME        TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>stockdata   ClusterIP   10.97.132.103   &lt;none&gt;        80/TCP    33s</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,40 @@
+,0
+0,"83F910 cmp ecx, 16"
+1,754C jne SHORT G_M000_IG05
+2,"48B9302F542FFC7F0000 mov rcx, 0x7FFC2F542F30"
+3,"BA08000000 mov edx, 8"
+4,E80C1EB05F call CORINFO_HELP_NEWARR_1_VC
+5,"33D2 xor edx, edx"
+6,align [0 bytes for IG03]
+7,
+8,G_M000_IG03: ;; offset=0026H
+9,"8D0C12 lea ecx, [rdx+rdx]"
+10,"448BC1 mov r8d, ecx"
+11,FFC1 inc ecx
+12,"458BC0 mov r8d, r8d"
+13,"460FB60406 movzx r8, byte ptr [rsi+r8]"
+14,"41C1E008 shl r8d, 8"
+15,"8BC9 mov ecx, ecx"
+16,"0FB60C0E movzx rcx, byte ptr [rsi+rcx]"
+17,"4103C8 add ecx, r8d"
+18,"0FB7C9 movzx rcx, cx"
+19,"448BC2 mov r8d, edx"
+20,"6642894C4010 mov word ptr [rax+2*r8+10H], cx"
+21,FFC2 inc edx
+22,"83FA08 cmp edx, 8"
+23,7CD0 jl SHORT G_M000_IG03
+24,
+25,G_M000_IG04: ;; offset=0056H
+26,"4883C420 add rsp, 32"
+27,5E pop rsi
+28,C3 ret
+29,
+30,G_M000_IG05: ;; offset=005CH
+31,"33C0 xor rax, rax"
+32,
+33,G_M000_IG06: ;; offset=005EH
+34,"4883C420 add rsp, 32"
+35,5E pop rsi
+36,C3 ret
+37,
+38,; Total bytes of code 100

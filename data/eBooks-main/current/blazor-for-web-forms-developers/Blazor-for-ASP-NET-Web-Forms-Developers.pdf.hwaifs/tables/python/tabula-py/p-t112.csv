@@ -1,0 +1,60 @@
+,using eShopOnBlazor.Models;
+0,using eShopOnBlazor.Models.Infrastructure;
+1,using eShopOnBlazor.Services;
+2,using log4net;
+3,using System.Data.Entity;
+4,using eShopOnBlazor;
+5,
+6,var builder = WebApplication.CreateBuilder(args);
+7,
+8,// add services
+9,
+10,builder.Services.AddRazorPages();
+11,builder.Services.AddServerSideBlazor();
+12,
+13,"if (builder.Configuration.GetValue<bool>(""UseMockData""))"
+14,{
+15,"builder.Services.AddSingleton<ICatalogService, CatalogServiceMock>();"
+16,}
+17,else
+18,{
+19,"builder.Services.AddScoped<ICatalogService, CatalogService>();"
+20,"builder.Services.AddScoped<IDatabaseInitializer<CatalogDBContext>,"
+21,CatalogDBInitializer>();
+22,builder.Services.AddSingleton<CatalogItemHiLoGenerator>();
+23,builder.Services.AddScoped(_ => new
+24,"CatalogDBContext(builder.Configuration.GetConnectionString(""CatalogDBContext"")));"
+25,}
+26,
+27,var app = builder.Build();
+28,
+29,"new LoggerFactory().AddLog4Net(""log4Net.xml"");"
+30,
+31,if (app.Environment.IsDevelopment())
+32,{
+33,app.UseDeveloperExceptionPage();
+34,}
+35,else
+36,{
+37,"app.UseExceptionHandler(""/Home/Error"");"
+38,}
+39,
+40,// Middleware for Application_BeginRequest
+41,"app.Use((ctx, next) =>"
+42,{
+43,"LogicalThreadContext.Properties[""activityid""] = new ActivityIdHelper(ctx);"
+44,"LogicalThreadContext.Properties[""requestinfo""] = new WebRequestInfo(ctx);"
+45,return next();
+46,});
+47,
+48,app.UseStaticFiles();
+49,
+50,app.UseRouting();
+51,
+52,app.UseEndpoints(endpoints =>
+53,{
+54,endpoints.MapBlazorHub();
+55,"endpoints.MapFallbackToPage(""/_Host"");"
+56,});
+57,
+58,ConfigDataBase(app);

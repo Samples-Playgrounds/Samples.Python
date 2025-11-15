@@ -1,0 +1,82 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>// Add framework services.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>builder.Services.AddMvc(options =&gt;</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>options.Filters.Add(typeof(HttpGlobalExceptionFilter));</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>}).AddControllersAsServices();</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>builder.Services.AddEntityFrameworkSqlServer()</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>.AddDbContext&lt;OrderingContext&gt;(options =&gt;</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>options.UseSqlServer(Configuration["ConnectionString"],</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>sqlOptions =&gt;</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>sqlOptions.MigrationsAssembly(typeof(Startup).GetTypeInfo().</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Assembly.GetName().Name));</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>},</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>ServiceLifetime.Scoped // Note that Scoped is the default choice</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>// in AddDbContext. It is shown here only for</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>// pedagogic purposes.</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>);</td>
+    </tr>
+  </tbody>
+</table>

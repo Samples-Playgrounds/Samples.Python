@@ -1,0 +1,118 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>private readonly Activity _activity;</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>public Program()</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>using ActivitySource activitySource = new ActivitySource("Perf7Source");</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>ActivitySource.AddActivityListener(new ActivityListener</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>ShouldListenTo = s =&gt; s == activitySource,</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Sample = (ref ActivityCreationOptions&lt;ActivityContext&gt; o) =&gt;</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>ActivitySamplingResult.AllDataAndRecorded</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>});</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>_activity = activitySource.StartActivity(</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>"TestActivity",</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>ActivityKind.Internal,</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>parentContext: default,</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>links: Enumerable.Range(0, 1024).Select(_ =&gt; new ActivityLink(default)).ToArray());</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>_activity.Stop();</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>[Benchmark(Baseline = true)]</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>public ActivityLink EnumerateActivityLinks()</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>ActivityLink last = default;</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>foreach (ActivityLink link in _activity.Links) last = link;</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>return last;</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,9 @@
+,0,1
+0,Language,Supported runtimes for 4.x
+1,C#,".NET 6.0, 7.0, .NET Framework 4.8"
+2,JavaScript,"Node 14, 16, 18"
+3,F#,".NET 6.0, 7.0"
+4,Java,"Java 8, 11, 17"
+5,Python,"Python 3.7, 3.8, 3.9, 3.10"
+6,TypeScript,"Node 14, 16, 18 (via JavaScript)"
+7,PowerShell,PowerShell Core 7.2

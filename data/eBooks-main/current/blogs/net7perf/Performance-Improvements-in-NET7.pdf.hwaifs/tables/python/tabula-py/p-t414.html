@@ -1,0 +1,134 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>private readonly Dictionary&lt;string, int&gt; _counts = Regex.Matches(</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>new</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>HttpClient().GetStringAsync("https://www.gutenberg.org/cache/epub/100/pg100.txt").Result,</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>@"\b\w+\b")</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>.Cast&lt;Match&gt;()</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>.GroupBy(word =&gt; word.Value, StringComparer.OrdinalIgnoreCase)</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>.ToDictionary(word =&gt; word.Key, word =&gt; word.Count(),</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>StringComparer.OrdinalIgnoreCase);</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>private string _word = "the";</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>[Benchmark(Baseline = true)]</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>public int Lookup1()</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>if (_counts.ContainsKey(_word))</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>return _counts[_word];</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>return -1;</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>[Benchmark]</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>public int Lookup2()</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>if (_counts.TryGetValue(_word, out int count))</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>return count;</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>return -1;</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

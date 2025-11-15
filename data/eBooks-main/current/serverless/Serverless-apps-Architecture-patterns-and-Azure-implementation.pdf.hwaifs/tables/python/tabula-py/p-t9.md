@@ -1,0 +1,6 @@
+|    | var startTime = DateTime.UtcNow;                                                         |
+|---:|:-----------------------------------------------------------------------------------------|
+|  0 | var timer = System.Diagnostics.Stopwatch.StartNew();                                     |
+|  1 | await tableClient.AddEntityAsync(entry);                                                 |
+|  2 | telemetry.TrackDependency("AzureTableStorageInsert", "Insert", startTime, timer.Elapsed, |
+|  3 | true);                                                                                   |

@@ -1,0 +1,19 @@
+,0
+0,var app = builder.Build();
+1,
+2,// Configure the HTTP request pipeline.
+3,if (!app.Environment.IsDevelopment())
+4,{
+5,"app.UseExceptionHandler(""/Error"");"
+6,// The default HSTS value is 30 days. You may want to change this for production
+7,"scenarios, see https://aka.ms/aspnetcore-hsts."
+8,app.UseHsts();
+9,}
+10,
+11,app.UseHttpsRedirection();
+12,app.UseStaticFiles();
+13,app.UseRouting();
+14,app.MapBlazorHub();
+15,"app.MapFallbackToPage(""/_Host"");"
+16,
+17,app.Run();

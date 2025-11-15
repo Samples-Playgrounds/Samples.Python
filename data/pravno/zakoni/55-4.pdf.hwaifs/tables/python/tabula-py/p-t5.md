@@ -1,0 +1,10 @@
+|    | Unnamed: 0                       | 2003. godina   | %      |
+|---:|:---------------------------------|:---------------|:-------|
+|  0 | Ukupan državni proračun          | 75.076.967.800 |        |
+|  1 | Hrvatski olimpijski odbor        | 30.000.000     | 0,0399 |
+|  2 | Hrvatski sportski savez invalida | 2.140.000      | 0,0028 |
+|  3 | Školski sport                    | 8.000.000      | 0,0106 |
+|  4 | Međunarodna sportska suradnja    | 840.945        | 0,0011 |
+|  5 | Državna nagrada «F.Bučar»        | 340.000        | 0,0004 |
+|  6 |                                  |                |        |
+|  7 | UKUPNO ZA SPORT                  | 41.320.945     | 0,0550 |

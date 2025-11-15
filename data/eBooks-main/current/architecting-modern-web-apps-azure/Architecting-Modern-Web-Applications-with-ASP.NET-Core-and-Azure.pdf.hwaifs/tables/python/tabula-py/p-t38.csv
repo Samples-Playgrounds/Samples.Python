@@ -1,0 +1,6 @@
+,private void ConfigureBasket(EntityTypeBuilder<Basket> builder)
+0,{
+1,var navigation = builder.Metadata.FindNavigation(nameof(Basket.Items));
+2,
+3,navigation.SetPropertyAccessMode(PropertyAccessMode.Field);
+4,}

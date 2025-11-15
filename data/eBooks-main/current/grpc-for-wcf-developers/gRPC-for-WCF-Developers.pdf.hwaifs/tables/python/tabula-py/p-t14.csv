@@ -1,0 +1,22 @@
+,namespace CustomTypes;
+0,public partial class DecimalValue
+1,{
+2,private const decimal NanoFactor = 1_000_000_000;
+3,"public DecimalValue(long units, int nanos)"
+4,{
+5,Units = units;
+6,Nanos = nanos;
+7,}
+8,
+9,public static implicit operator decimal(CustomTypes.DecimalValue grpcDecimal)
+10,{
+11,return grpcDecimal.Units + grpcDecimal.Nanos / NanoFactor;
+12,}
+13,
+14,public static implicit operator CustomTypes.DecimalValue(decimal value)
+15,{
+16,var units = decimal.ToInt64(value);
+17,var nanos = decimal.ToInt32((value - units) * NanoFactor);
+18,"return new CustomTypes.DecimalValue(units, nanos);"
+19,}
+20,}

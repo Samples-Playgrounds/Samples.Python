@@ -1,0 +1,5 @@
+,0
+0,Tip: Use the hybrid authentication flow
+1,"The hybrid authentication flow mitigates a number of attacks that apply to the browser channel,"
+2,and is the recommended flow for native applications that want to retrieve access tokens (and
+3,possibly refresh tokens).

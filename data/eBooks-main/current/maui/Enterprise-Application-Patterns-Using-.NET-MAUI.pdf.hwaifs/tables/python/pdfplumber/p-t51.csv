@@ -1,0 +1,22 @@
+,0
+0,"<Entry Text=""{Binding UserName.Value, Mode=TwoWay}"">"
+1,<Entry.Style>
+2,"<OnPlatform x:TypeArguments=""Style"">"
+3,"<On Platform=""iOS, Android"" Value=""{StaticResource EntryStyle}"" />"
+4,"<On Platform=""WinUI"" Value=""{StaticResource WinUIEntryStyle}"" />"
+5,</OnPlatform>
+6,</Entry.Style>
+7,<Entry.Behaviors>
+8,<mct:EventToCommandBehavior
+9,"EventName=""TextChanged"""
+10,"Command=""{Binding ValidateCommand}"" />"
+11,</Entry.Behaviors>
+12,<Entry.Triggers>
+13,<DataTrigger
+14,"TargetType=""Entry"""
+15,"Binding=""{Binding UserName.IsValid}"""
+16,"Value=""False"">"
+17,"<Setter Property=""BackgroundColor"" Value=""{StaticResource ErrorColor}"" />"
+18,</DataTrigger>
+19,</Entry.Triggers>
+20,</Entry>

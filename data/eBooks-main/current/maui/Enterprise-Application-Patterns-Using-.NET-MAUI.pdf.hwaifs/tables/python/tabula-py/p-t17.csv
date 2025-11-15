@@ -1,0 +1,4 @@
+,Caution
+0,"There is a possibility that the Handler property of your Element may be null, so be aware that you may"
+1,"need to handle those situations. For more information, please refer to Handler lifecycle on the"
+2,Microsoft Documentation Center.

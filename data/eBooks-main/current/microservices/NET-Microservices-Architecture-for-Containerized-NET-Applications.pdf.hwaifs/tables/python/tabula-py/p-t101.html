@@ -1,0 +1,38 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>// Register out-of-the-box framework services.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>builder.Services.AddDbContext&lt;CatalogContext&gt;(c =&gt;</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>c.UseSqlServer(Configuration["ConnectionString"]),</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ServiceLifetime.Scoped);</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>builder.Services.AddMvc();</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>// Register custom application dependencies.</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>builder.Services.AddScoped&lt;IMyCustomRepository, MyCustomSQLRepository&gt;();</td>
+    </tr>
+  </tbody>
+</table>

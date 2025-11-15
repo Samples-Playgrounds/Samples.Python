@@ -1,0 +1,3 @@
+,Tip: Validate return URIs
+0,"Although the eShopOnContainers mobile app doesn't validate the return URI, the best practice is to"
+1,validate that the return URI refers to a known location in order to prevent open-redirect attacks.

@@ -1,0 +1,14 @@
+,public class Portfolio
+0,{
+1,public int Id { get; set; }
+2,public Guid TraderId { get; set; }
+3,public List<PortfolioItem> Items { get; set; }
+4,}
+5,
+6,public class PortfolioItem
+7,{
+8,public int Id { get; set; }
+9,public int ShareId { get; set; }
+10,public int Holding { get; set; }
+11,public decimal Cost { get; set; }
+12,}

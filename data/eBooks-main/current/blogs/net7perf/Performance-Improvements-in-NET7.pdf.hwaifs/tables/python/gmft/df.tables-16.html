@@ -1,0 +1,42 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th>add M00_L04:</th>
+      <th>xor jg M00_L03:</th>
+      <th>inc</th>
+      <th>add add inc jg M00_L02:</th>
+      <th></th>
+      <th>M00_L00: add inc</th>
+      <th></th>
+      <th>xor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>call</td>
+      <td>mov pop pop pop pop ret</td>
+      <td>mov call cmp</td>
+      <td>None</td>
+      <td>mov sub cmp jae mov sub cmp jae mov imul mov mov mov call cmp</td>
+      <td>None</td>
+      <td>jle mov mov shr cmp jbe lea movsxd mov mov mov call cmp jle</td>
+      <td>cmp</td>
+      <td>cmp call mov mov call</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>CORINFO_HELP_RNGCHKFAIL</td>
+      <td>rsp,28 rbx rbp rsi rdi</td>
+      <td>rcx,rsi edx,edx System.Array.GetUpperBound(Int32) eax,ebx short M00_L00 eax,edi</td>
+      <td>ebx</td>
+      <td>ecx,ebx ecx,[rsi+18] ecx,[rsi+10] short M00_L04 edx,ebp edx,[rsi+1C] edx,[rsi+14] short M00_L04 eax,[rsi+14] rax,rcx rcx,rdx rcx,rax edi,[rsi+rcx*4+20] ebp rcx,rsi edx,1 eax,ebp short M00_L01</td>
+      <td>System.Array.GetUpperBound(Int32)</td>
+      <td>short M00_L03 rcx,[rsi] ecx,[rcx+4] ecx,0FFFFFFE8 ecx,3 ecx,1 short M00_L05 rdx,[rsi+10] ecx rcx,ecx ebp,[rdx+rcx*4] rcx,rsi edx,1 System.Array.GetUpperBound(Int32) eax,ebp short M00_L02</td>
+      <td>eax,ebx</td>
+      <td>[rcx],ecx System.Array.GetLowerBound(Int32) ebx,eax rcx,rsi edx,edx System.Array.GetUpperBound(Int32)</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,98 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>private string _path;</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>[GlobalSetup]</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>public void Setup()</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>_path = Path.GetTempFileName();</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>File.WriteAllBytes(_path, Enumerable.Range(0, 10_000_000).Select(i =&gt;</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>(byte)i).ToArray());</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>[GlobalCleanup]</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>public void Cleanup()</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>File.Delete(_path);</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>[Benchmark]</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>public void MMF()</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>using var mmf = MemoryMappedFile.CreateFromFile(_path, FileMode.Open, null);</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>using var s = mmf.CreateViewStream(0, 10_000_000, MemoryMappedFileAccess.Read);</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

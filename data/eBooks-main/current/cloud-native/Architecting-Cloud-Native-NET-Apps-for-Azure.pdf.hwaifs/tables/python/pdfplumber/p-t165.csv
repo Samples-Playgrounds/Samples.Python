@@ -1,0 +1,5 @@
+,0
+0,echo -n 'admin' | base64
+1,YWRtaW4=
+2,echo -n '1f2d1e2e67df' | base64
+3,MWYyZDFlMmU2N2Rm

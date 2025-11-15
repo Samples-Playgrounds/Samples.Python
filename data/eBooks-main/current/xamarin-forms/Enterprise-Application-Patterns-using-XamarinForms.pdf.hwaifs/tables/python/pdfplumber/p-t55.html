@@ -1,0 +1,122 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>public class GlobalSetting</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>public string BaseEndpoint</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>get { return _baseEndpoint; }</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>set</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>_baseEndpoint = value;</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>UpdateEndpoint(_baseEndpoint);</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>private void UpdateEndpoint(string baseEndpoint)</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>RegisterWebsite = string.Format("{0}:5105/Account/Register", baseEndpoint);</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>CatalogEndpoint = string.Format("{0}:5101", baseEndpoint);</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>OrdersEndpoint = string.Format("{0}:5102", baseEndpoint);</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>BasketEndpoint = string.Format("{0}:5103", baseEndpoint);</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>IdentityEndpoint = string.Format("{0}:5105/connect/authorize", baseEndpoint);</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>UserInfoEndpoint = string.Format("{0}:5105/connect/userinfo", baseEndpoint);</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>TokenEndpoint = string.Format("{0}:5105/connect/token", baseEndpoint);</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>LogoutEndpoint = string.Format("{0}:5105/connect/endsession", baseEndpoint);</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>IdentityCallback = string.Format("{0}:5105/xamarincallback", baseEndpoint);</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>LogoutCallback = string.Format("{0}:5105/Account/Redirecting", baseEndpoint);</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

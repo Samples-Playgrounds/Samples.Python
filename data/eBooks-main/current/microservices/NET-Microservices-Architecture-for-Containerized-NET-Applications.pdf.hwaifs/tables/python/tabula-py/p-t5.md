@@ -1,0 +1,6 @@
+|    | Image                               | Comments                                         |
+|---:|:------------------------------------|:-------------------------------------------------|
+|  0 | mcr.microsoft.com/dotnet/aspnet:7.0 | ASP.NET Core, with runtime only and ASP.NET Core |
+|    |                                     | optimizations, on Linux and Windows (multi-arch) |
+|  1 | mcr.microsoft.com/dotnet/sdk:7.0    | .NET 7, with SDKs included, on Linux and Windows |
+|    |                                     | (multi-arch)                                     |

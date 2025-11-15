@@ -1,0 +1,4 @@
+,0,1,2
+0,Method,Mean,Ratio
+1,WithArray,8.601 ns,1.00
+2,WithString,6.949 ns,0.81

@@ -1,0 +1,4 @@
+|    | Method       | Runtime   | Mean     |   Ratio | Allocated   |   Alloc Ratio |
+|---:|:-------------|:----------|:---------|--------:|:------------|--------------:|
+|  0 | WriteAllText | .NET 6.0  | 488.5 us |    1    | 9944 B      |          1    |
+|  1 | WriteAllText | .NET 7.0  | 482.9 us |    0.99 | 392 B       |          0.04 |

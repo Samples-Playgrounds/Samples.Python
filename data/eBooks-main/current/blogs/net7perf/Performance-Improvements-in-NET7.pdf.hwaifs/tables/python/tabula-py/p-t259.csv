@@ -1,0 +1,58 @@
+,"; Program.IsBoundary(Int32, Int32, Int32)"
+0,push      rdi
+1,push      rsi
+2,push      rbp
+3,push      rbx
+4,"sub       rsp,28"
+5,"mov       rdi,rcx"
+6,"mov       esi,edx"
+7,"mov       ebx,r9d"
+8,"cmp       esi,r8d"
+9,jle       short M00_L00
+10,"mov       rcx,rdi"
+11,"mov       rcx,[rcx+8]"
+12,"lea       edx,[rsi-1]"
+13,"cmp       edx,[rcx+8]"
+14,jae       short M00_L04
+15,"mov       edx,edx"
+16,"movzx     edx,word ptr [rcx+rdx*2+0C]"
+17,"mov       rcx,rdi"
+18,call      qword ptr [Program.IsBoundaryWordChar(Char)]
+19,jmp       short M00_L01
+20,M00_L00:
+21,"xor       eax,eax"
+22,M00_L01:
+23,"mov       ebp,eax"
+24,"cmp       esi,ebx"
+25,jge       short M00_L02
+26,"mov       rcx,rdi"
+27,"mov       rcx,[rcx+8]"
+28,"cmp       esi,[rcx+8]"
+29,jae       short M00_L04
+30,"mov       edx,esi"
+31,"movzx     edx,word ptr [rcx+rdx*2+0C]"
+32,"mov       rcx,rdi"
+33,call      qword ptr [Program.IsBoundaryWordChar(Char)]
+34,jmp       short M00_L03
+35,M00_L02:
+36,"xor       eax,eax"
+37,M00_L03:
+38,"cmp       ebp,eax"
+39,setne     al
+40,"movzx     eax,al"
+41,"add       rsp,28"
+42,pop       rbx
+43,pop       rbp
+44,pop       rsi
+45,pop       rdi
+46,ret
+47,M00_L04:
+48,call      CORINFO_HELP_RNGCHKFAIL
+49,int       3
+50,; Total bytes of code 117
+51,
+52,"; Program.IsBoundary(System.ReadOnlySpan`1<Char>, Int32)"
+53,push      r14
+54,push      rdi
+55,push      rsi
+56,push      rbp

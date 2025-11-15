@@ -1,0 +1,21 @@
+,0
+0,// GENERIC EF REPOSITORY WITH SPECIFICATION
+1,// https://github.com/dotnet-architecture/eShopOnWeb
+2,
+3,public IEnumerable<T> List(ISpecification<T> spec)
+4,{
+5,// fetch a Queryable that includes all expression-based includes
+6,var queryableResultWithIncludes = spec.Includes
+7,".Aggregate(_dbContext.Set<T>().AsQueryable(),"
+8,"(current, include) => current.Include(include));"
+9,
+10,// modify the IQueryable to include any string-based include statements
+11,var secondaryResult = spec.IncludeStrings
+12,".Aggregate(queryableResultWithIncludes,"
+13,"(current, include) => current.Include(include));"
+14,
+15,// return the result of the query using the specification's criteria expression
+16,return secondaryResult
+17,.Where(spec.Criteria)
+18,.AsEnumerable();
+19,}

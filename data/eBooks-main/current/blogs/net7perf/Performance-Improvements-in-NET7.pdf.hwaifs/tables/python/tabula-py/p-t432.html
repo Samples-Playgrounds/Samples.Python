@@ -1,0 +1,66 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>private object _value = new List&lt;string&gt;();</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>[Benchmark(Baseline = true)]</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>public List&lt;string&gt; WithCast()</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>object value = _value;</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>return value is List&lt;string&gt; ? (List&lt;string&gt;)value : null;</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>[Benchmark]</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>public List&lt;string&gt; WithPattern()</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>object value = _value;</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>return value is List&lt;string&gt; list ? list : null;</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

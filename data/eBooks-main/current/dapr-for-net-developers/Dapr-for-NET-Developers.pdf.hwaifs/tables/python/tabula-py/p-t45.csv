@@ -1,0 +1,25 @@
+,"public class TimerActor : Actor, ITimerActor"
+0,{
+1,public TimerActor(ActorHost host) : base(host)
+2,{
+3,}
+4,
+5,"public Task StartTimerAsync(string name, string text)"
+6,{
+7,return RegisterTimerAsync(
+8,"name,"
+9,"nameof(TimerCallback),"
+10,"Encoding.UTF8.GetBytes(text),"
+11,"TimeSpan.Zero,"
+12,TimeSpan.FromSeconds(3));
+13,}
+14,
+15,public Task TimerCallbackAsync(byte[] state)
+16,{
+17,var text = Encoding.UTF8.GetString(state);
+18,
+19,"Logger.LogInformation($""Timer fired: {text}"");"
+20,
+21,return Task.CompletedTask;
+22,}
+23,}

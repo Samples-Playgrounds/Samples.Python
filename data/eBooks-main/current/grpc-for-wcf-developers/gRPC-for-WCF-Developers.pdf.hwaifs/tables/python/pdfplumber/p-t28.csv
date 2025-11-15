@@ -1,0 +1,9 @@
+,0
+0,public enum AccountStatus
+1,{
+2,"Unknown = 0,"
+3,"Pending = 1,"
+4,"Active = 2,"
+5,"Suspended = 3,"
+6,Closed = 4
+7,}

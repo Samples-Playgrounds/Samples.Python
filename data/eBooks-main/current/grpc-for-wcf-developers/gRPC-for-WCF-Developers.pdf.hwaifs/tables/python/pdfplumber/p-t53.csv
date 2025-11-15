@@ -1,0 +1,6 @@
+,0
+0,namespace TraderSys.Portfolios.Services;
+1,
+2,public class PortfolioService : Protos.Portfolios.PortfoliosBase
+3,{
+4,}

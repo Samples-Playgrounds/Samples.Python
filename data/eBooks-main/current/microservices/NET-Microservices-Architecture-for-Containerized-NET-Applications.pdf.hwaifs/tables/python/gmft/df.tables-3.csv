@@ -1,0 +1,31 @@
+,,
+0,Designing and Developing Multi-Container and Microservice-Based .NET,Applications
+1,.................................................................................................................................................,93
+2,Design a microservice-oriented application ..............................................................................................................,93
+3,Application specifications .............................................................................................................................................,93
+4,Development team context .........................................................................................................................................,94
+5,Choosing an architecture..............................................................................................................................................,94
+6,Benefits of a microservice-based solution .............................................................................................................,97
+7,Downsides of a microservice-based solution .......................................................................................................,98
+8,External versus internal architecture and design patterns...............................................................................,99
+9,The new world: multiple architectural patterns and polyglot microservices..........................................100,
+10,Creating a simple data-driven CRUD microservice ...............................................................................................102,
+11,Designing a simple CRUD microservice ................................................................................................................102,
+12,Implementing a simple CRUD microservice with ASP.NET Core.................................................................103,
+13,The DB connection string and environment variables used by Docker containers,.............................109
+14,Generating Swagger description metadata from your ASP.NET Core Web API,...................................111
+15,Defining your multi-container application with docker-compose.yml .........................................................116,
+16,Use a database server running as a container ........................................................................................................127,
+17,SQL Server running as a container with a microservice-related database..............................................128,
+18,Seeding with test data on Web application startup.........................................................................................129,
+19,EF Core InMemory database versus SQL Server running as a container.................................................132,
+20,Using a Redis cache service running in a container.........................................................................................132,
+21,Implementing event-based communication between microservices (integration events),...................133
+22,Using message brokers and service buses for production systems ..........................................................134,
+23,Integration events..........................................................................................................................................................135,
+24,The event bus ..................................................................................................................................................................136,
+25,Additional resources .....................................................................................................................................................138,
+26,Implementing an event bus with RabbitMQ for the development or test environment.......................138,
+27,Implementing a simple publish method with RabbitMQ...............................................................................139,
+28,Implementing the subscription code with the RabbitMQ API.....................................................................140,
+29,Additional resources .....................................................................................................................................................141,

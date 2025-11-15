@@ -1,0 +1,21 @@
+,0
+0,[HttpGet]
+1,"[Route(""[action]"")]"
+2,public async Task<IActionResult> Items(
+3,"[FromQuery]int pageSize = 10, [FromQuery]int pageIndex = 0)"
+4,{
+5,var totalItems = await _catalogContext.CatalogItems
+6,.LongCountAsync();
+7,
+8,var itemsOnPage = await _catalogContext.CatalogItems
+9,.OrderBy(c => c.Name)
+10,.Skip(pageSize * pageIndex)
+11,.Take(pageSize)
+12,.ToListAsync();
+13,
+14,itemsOnPage = ComposePicUri(itemsOnPage);
+15,var model = new PaginatedItemsViewModel<CatalogItem>(
+16,"pageIndex, pageSize, totalItems, itemsOnPage);"
+17,
+18,return Ok(model);
+19,}

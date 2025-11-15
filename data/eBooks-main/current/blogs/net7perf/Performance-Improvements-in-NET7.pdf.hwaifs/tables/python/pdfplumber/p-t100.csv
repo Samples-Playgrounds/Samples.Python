@@ -1,0 +1,20 @@
+,0
+0,private DayOfWeek?[] _enums = Enum.GetValues<DayOfWeek>().Select(e =>
+1,(DayOfWeek?)e).ToArray();
+2,
+3,[Benchmark]
+4,[Arguments(DayOfWeek.Saturday)]
+5,"public int FindEnum(DayOfWeek value) => IndexOf(_enums, value);"
+6,
+7,"private static int IndexOf<T>(T[] values, T value)"
+8,{
+9,for (int i = 0; i < values.Length; i++)
+10,{
+11,"if (EqualityComparer<T>.Default.Equals(values[i], value))"
+12,{
+13,return i;
+14,}
+15,}
+16,
+17,return -1;
+18,}

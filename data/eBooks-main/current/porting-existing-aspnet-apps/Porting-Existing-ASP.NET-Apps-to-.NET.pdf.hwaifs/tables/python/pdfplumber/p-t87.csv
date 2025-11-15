@@ -1,0 +1,23 @@
+,0
+0,public class GetByIdEndpoint : IClassFixture<ApiTestFixture>
+1,{
+2,JsonSerializerOptions _jsonOptions = new JsonSerializerOptions {
+3,PropertyNameCaseInsensitive = true };
+4,
+5,public GetByIdEndpoint(ApiTestFixture factory)
+6,{
+7,Client = factory.CreateClient();
+8,}
+9,
+10,public HttpClient Client { get; }
+11,
+12,[Fact]
+13,public async Task ReturnsItemGivenValidId()
+14,{
+15,"var response = await Client.GetAsync(""api/catalog-items/5"");"
+16,response.EnsureSuccessStatusCode();
+17,var stringResponse = await response.Content.ReadAsStringAsync();
+18,var model = stringResponse.FromJson<GetByIdCatalogItemResponse>();
+19,
+20,"Assert.Equal(5, model.CatalogItem.Id);"
+21,"Assert.Equal(""Roslyn Red Sheet"", model.CatalogItem.Name);"

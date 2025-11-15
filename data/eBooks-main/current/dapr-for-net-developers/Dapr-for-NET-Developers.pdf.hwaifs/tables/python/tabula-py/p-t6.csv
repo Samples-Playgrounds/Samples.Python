@@ -1,0 +1,15 @@
+,@page
+0,@model IndexModel
+1,@{
+2,"ViewData[""Title""] = ""Home page"";"
+3,
+4,"<div class=""text-center"">"
+5,"<h1 class=""display-4"">Welcome</h1>"
+6,"<p>Learn about <a href=""https://learn.microsoft.com/aspnet/core"">building Web apps with"
+7,ASP.NECore</a>.</p>
+8,@foreach (var forecast in
+9,"(IEnumerable<WeatherForecast>)ViewData[""WeatherForecastData""]!)"
+10,{
+11,<p>The forecast for @forecast.Date is @forecast.Summary!</p>
+12,}
+13,</div>

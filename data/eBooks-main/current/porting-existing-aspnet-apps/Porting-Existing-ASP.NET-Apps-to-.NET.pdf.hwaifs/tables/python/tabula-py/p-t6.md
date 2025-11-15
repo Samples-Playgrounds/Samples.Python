@@ -1,0 +1,6 @@
+|    | [HttpGet("api/products/{id}")]                     |
+|---:|:---------------------------------------------------|
+|  0 | public async ActionResult<Product> Details(int id) |
+|  1 | {                                                  |
+|  2 | // ...                                             |
+|  3 | }                                                  |

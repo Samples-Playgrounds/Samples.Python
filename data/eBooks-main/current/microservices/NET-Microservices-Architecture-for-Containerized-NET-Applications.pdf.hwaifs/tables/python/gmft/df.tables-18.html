@@ -1,0 +1,51 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>In Kubernetes, if you don’t use any ingress approach, then your services and pods have IPs routable by the cluster network.</td>
+      <td>only</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>But if you use an ingress approach, you’ll have a middle tier between the Internet and your (including your API Gateways), acting as a reverse proxy.</td>
+      <td>services</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>As a definition, an Ingress is a collection of rules that allow inbound connections to reach the services. An ingress is configured to provide services externally reachable URLs, load balance SSL termination and more. Users request ingress by POSTing the Ingress resource to the API</td>
+      <td>cluster traffic, server.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>In eShopOnContainers, when developing locally and using just your development machine as Docker host, you are not using any ingress but only the multiple API Gateways.</td>
+      <td>the</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>However, when targeting a “production” environment based on Kubernetes, using an ingress in front of the API gateways. That way, the clients still call the same base URL requests are routed to multiple API Gateways or BFF.</td>
+      <td>eShopOnContainers is but the</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>API Gateways are front-ends or façades surfacing only the services but not the web are usually out of their scope. In addition, the API Gateways might hide certain internal</td>
+      <td>applications that microservices.</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>The ingress, however, is just redirecting HTTP requests but not trying to hide any microservice app.</td>
+      <td>or web</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Having an ingress Nginx tier in Kubernetes in front of the web applications plus the several</td>
+      <td>Ocelot API</td>
+    </tr>
+  </tbody>
+</table>

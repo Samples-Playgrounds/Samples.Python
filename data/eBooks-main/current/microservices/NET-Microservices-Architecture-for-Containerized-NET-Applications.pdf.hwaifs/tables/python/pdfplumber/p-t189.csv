@@ -1,0 +1,3 @@
+,0
+0,volumes:
+1,- ./src/ApiGateways/Web.Bff.Marketing/apigw:/app/configuration

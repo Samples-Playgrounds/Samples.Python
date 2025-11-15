@@ -1,0 +1,6 @@
+,0
+0,
+1,// Add framework services.
+2,
+3,builder.Services.AddSwaggerGen(options =>
+4,{

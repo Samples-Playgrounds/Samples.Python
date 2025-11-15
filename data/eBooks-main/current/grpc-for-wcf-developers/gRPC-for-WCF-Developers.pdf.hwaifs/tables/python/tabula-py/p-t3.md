@@ -1,0 +1,13 @@
+|    | [DataContract]                          |
+|---:|:----------------------------------------|
+|  0 | public class Stock                      |
+|  1 | {                                       |
+|  2 | [DataMember]                            |
+|  3 | public int Id { get; set; }             |
+|  4 | [DataMember]                            |
+|  5 | public string Symbol { get; set; }      |
+|  6 | [DataMember]                            |
+|  7 | public string DisplayName { get; set; } |
+|  8 | [DataMember]                            |
+|  9 | public int MarketId { get; set; }       |
+| 10 | }                                       |

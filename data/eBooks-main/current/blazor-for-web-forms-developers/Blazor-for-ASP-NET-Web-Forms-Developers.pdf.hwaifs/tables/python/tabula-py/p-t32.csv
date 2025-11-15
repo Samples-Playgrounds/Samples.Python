@@ -1,0 +1,5 @@
+,@foreach (var buttonLabel in buttonLabels)
+0,{
+1,"<button @onclick=""() => Console.WriteLine($""The {buttonLabel} button was"
+2,"clicked!"")"">@buttonLabel</button>"
+3,}

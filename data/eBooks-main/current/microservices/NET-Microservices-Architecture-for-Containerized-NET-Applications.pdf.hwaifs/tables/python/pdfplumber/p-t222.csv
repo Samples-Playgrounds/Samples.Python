@@ -1,0 +1,24 @@
+,0
+0,Address = address;
+1,
+2,// ...Additional code ...
+3,}
+4,
+5,"public void AddOrderItem(int productId, string productName,"
+6,"decimal unitPrice, decimal discount,"
+7,"string pictureUrl, int units = 1)"
+8,{
+9,//...
+10,// Domain rules/logic for adding the OrderItem to the order
+11,// ...
+12,
+13,"var orderItem = new OrderItem(productId, productName, unitPrice, discount,"
+14,"pictureUrl, units);"
+15,
+16,_orderItems.Add(orderItem);
+17,
+18,}
+19,// ...
+20,// Additional methods with domain rules/logic related to the Order aggregate
+21,// ...
+22,}

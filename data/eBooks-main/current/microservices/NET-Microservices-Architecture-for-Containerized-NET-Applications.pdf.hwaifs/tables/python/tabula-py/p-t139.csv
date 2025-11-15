@@ -1,0 +1,15 @@
+,// Configuration
+0,{
+1,"""HealthChecksUI"": {"
+2,"""HealthChecks"": ["
+3,{
+4,"""Name"": ""Ordering HTTP Check"","
+5,"""Uri"": ""http://host.docker.internal:5102/hc"""
+6,"},"
+7,{
+8,"""Name"": ""Ordering HTTP Background Check"","
+9,"""Uri"": ""http://host.docker.internal:5111/hc"""
+10,"},"
+11,//...
+12,]}
+13,}

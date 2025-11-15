@@ -1,0 +1,15 @@
+,{
+0,"""ConnectionStrings"": {"
+1,"""DefaultConnection"":"
+2,"""Server=(localdb)\\mssqllocaldb;Database=eShopPorted;Trusted_Connection=True;MultipleActive"
+3,"ResultSets=true"""
+4,"},"
+5,"""Logging"": {"
+6,"""LogLevel"": {"
+7,"""Default"": ""Warning"""
+8,}
+9,"},"
+10,"""AllowedHosts"": ""*"","
+11,"""UseMockData"": ""false"","
+12,"""UseCustomizationData"": ""true"""
+13,}

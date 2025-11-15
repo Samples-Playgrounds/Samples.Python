@@ -1,0 +1,30 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>var sql = @"select * from #Posts p</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>left join #Users u on u.Id = p.OwnerId</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Order by p.Id";</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>var data = connection.Query&lt;Post, User, Post&gt;(sql,</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>(post, user) =&gt; { post.Owner = user; return post;});</td>
+    </tr>
+  </tbody>
+</table>

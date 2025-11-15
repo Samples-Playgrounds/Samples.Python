@@ -1,0 +1,11 @@
+,0
+0,{
+1,"""Kestrel"": {"
+2,"""Certificates"": {"
+3,"""Default"": {"
+4,"""Path"": ""cert.pfx"","
+5,"""Password"": ""DO NOT STORE PLAINTEXT PASSWORDS IN APPSETTINGS FILES"""
+6,}
+7,}
+8,}
+9,}
