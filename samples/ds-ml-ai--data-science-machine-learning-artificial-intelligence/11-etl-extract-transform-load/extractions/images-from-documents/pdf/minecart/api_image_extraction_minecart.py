@@ -29,19 +29,22 @@ def extract_images_from_pdf_to_files (source: str) -> str:
     doc = minecart.Document(pdffile)
 
     page_no = 1
-    for page in doc.iter_pages():
-        img_no = 1
-        for i in range(len(page.images)):
-            try:
-                im1 = page.images[i]
-                im = im1.as_pil()  # requires pillow
-                im.save(f"{directory}/img-p{page_no}-{img_no}.jpg")
-            except Exception as e: 
-                print(e)
-                print('Error encountered at %s' % source)
-                traceback.print_exc()
+    try:
+        for page in doc.iter_pages():
+            img_no = 1
+            for i in range(len(page.images)):
+                try:
+                    im1 = page.images[i]
+                    im = im1.as_pil()  # requires pillow
+                    im.save(f"{directory}/img-p{page_no}-{img_no}.jpg")
+                except Exception as e:
+                    print(e)
+                    print(f"Error encountered at {source}, p {page_no}, img {img_no}")
+                    traceback.print_exc()
 
-            img_no += 1
+                img_no += 1
+    except Exception as e1:
+        print(f"Error encountered at {source}")
 
     page_no += 1
 
@@ -54,7 +57,7 @@ def extract_images_from_pdf_to_files (source: str) -> str:
     time_total_3 = (time_stop_3 - time_start_3) / 1_000_000_000
 
     times = {
-        "function_method_name" : "extract_text_to_file_from_any_document",
+        "function_method_name" : "extract_images_from_pdf_to_files",
         "time_start_1": time_start_1,
         "time_end_1": time_stop_1,
         "time_total_1": time_total_1,
