@@ -1,50 +1,22 @@
 #!/bin/bash
 
-figlet minecart
-cd ./minecart/
-rm -fr .venv __pycache__ 
-rm *.pyc
-python -m venv .venv
-source .venv/bin/activate
-pip install minecart
-pip install --upgrade pip
-pip install -r requirements.txt
-python main.py
-cd -
-
 figlet PyMuPDF-fitz
 cd ./PyMuPDF-fitz/
-rm -fr .venv __pycache__ 
-rm *.pyc
-python -m venv .venv
-source .venv/bin/activate
-pip install PyMuPDF
-pip install --upgrade pip
-pip install -r requirements.txt
-python main.py
-cd -
+source ./test.sh
+cd ..
 
 figlet pypdf-PyPDF2
 cd ./pypdf-PyPDF2/
-rm -fr .venv __pycache__ 
-rm *.pyc
-python -m venv .venv
-source .venv/bin/activate
-pip install PyPDF2
-pip install "PyPDF2[image]"
-pip install -r requirements.txt
-python main.py
-cd -
+source ./test.sh
+cd ..
 
 figlet pikepdf
 cd ./pikepdf/
-rm -fr .venv __pycache__ 
-rm *.pyc
-python -m venv .venv
-source .venv/bin/activate
-pip install pikepdf
-pip install --upgrade pip
-pip install -r requirements.txt
-python main.py
-cd -
+source ./test.sh
+cd ..
+
+figlet minecart
+cd ./minecart/
+source ./test.sh
+cd ..
 
