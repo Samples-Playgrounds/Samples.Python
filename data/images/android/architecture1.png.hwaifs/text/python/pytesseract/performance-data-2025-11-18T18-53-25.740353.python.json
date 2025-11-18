@@ -1,0 +1,12 @@
+{
+    "function_method_name": "extract_text_to_file_from_image",
+    "time_start_1": 1763488405.631239,
+    "time_end_1": 1763488405.740344,
+    "time_total_1": 0.10910511016845703,
+    "time_start_2": 454616.163199833,
+    "time_end_2": 454616.272306583,
+    "time_total_2": 0.10910674999468029,
+    "time_start_3": 454616163199916,
+    "time_end_3": 454616272306750,
+    "time_total_3": 0.109106834
+}
