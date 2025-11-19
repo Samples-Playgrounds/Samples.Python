@@ -20,10 +20,28 @@ python main.py
 import api_extract_images_PyPDF2_pypdf as api
 
 root="../../../../../../../data"
+root_sports_book="/Users/Shared/Projects/e/learning/books/topics/sports/Moljac_Knjiga"
 
 # document per local path or URL
 sources = [
-   "/Users/Shared/Projects/e/learning/books/topics/sports/Moljac_Knjiga/RUKOPIS_ver_Final.pdf",
+   f"{root_sports_book}/RUKOPIS_ver_Final.pdf",
+   f"{root_sports_book}/doc_files/2. Testovi jakosti.docx",
+   f"{root_sports_book}/doc_files/1. Uvod.docx",
+   f"{root_sports_book}/doc_files/14. Literatura.docx",
+   f"{root_sports_book}/doc_files/7. Testovi ravnoteze.docx",
+   f"{root_sports_book}/doc_files/3. Testovi brzine.docx",
+   f"{root_sports_book}/doc_files/0. Naslovnica.docx",
+   f"{root_sports_book}/doc_files/4. Testovi izdrzljivosti.docx",
+   f"{root_sports_book}/doc_files/9. Longitudinalna dimenzionalnost skeleta.docx",
+   f"{root_sports_book}/doc_files/11. Volumen i masa tijela.docx",
+   f"{root_sports_book}/doc_files/10. Transverzalna dimenzionalnost skeleta.docx",
+   f"{root_sports_book}/doc_files/13. Funkcionalna procjena pokreta.docx",
+   f"{root_sports_book}/doc_files/12. Potkožno masno tkivo.docx",
+   f"{root_sports_book}/doc_files/Sadržaj.docx",
+   f"{root_sports_book}/doc_files/6. Testovi agilnosti.docx",
+   f"{root_sports_book}/doc_files/5. Testovi koordinacije.docx",
+   f"{root_sports_book}/doc_files/8. Testovi fleksibilnosti.docx",
+
    "/Users/moljac/Downloads/20250913/Zapisnik OS NZG K-226-2022-48 od 12.02.2024. - Nastavak glavne rasprave dana 12.02.2024. u 10_00 sati.pdf",
    f"{root}/pravno/zakoni/zakon_o_sportskoj_inspekciji_nn_86_12.pdf",
    f"{root}/pravno/zakoni/kazneni-zakon.docx",
@@ -66,7 +84,6 @@ sources = [
 ]
 #  "/Volumes/FAT_VERB/learning/books/topics/microsoft/architecture/adevelopersguidetonetinazure.pdf"
 #   "https://arxiv.org/pdf/2408.09869"
-
 
 def main():
    for source in sources:
