@@ -1,3 +1,0 @@
-,Note
-0,"The view models do not inherit from an interface, so they only need their concrete type provided to"
-1,the AddSingleton<T> and AddTransient<T> methods.

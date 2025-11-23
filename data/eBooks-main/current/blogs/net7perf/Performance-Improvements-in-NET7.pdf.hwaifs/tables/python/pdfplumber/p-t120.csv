@@ -1,4 +1,0 @@
-,0,1,2,3,4
-0,Method,Mean,Ratio,Allocated,Alloc Ratio
-1,WithEncoding,17.3347 ns,1.000,32 B,1.00
-2,Withu8,0.0060 ns,0.000,-,0.00

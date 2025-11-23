@@ -1,8 +1,0 @@
-,0,1
-0,Property,Description
-1,TargetType,The control type that the trigger belongs to.
-2,Binding,"The data Binding markup which will provide
-change notifications and value for the trigger
-condition."
-3,Value,"The data value to specify when the trigger’s
-condition has been met."

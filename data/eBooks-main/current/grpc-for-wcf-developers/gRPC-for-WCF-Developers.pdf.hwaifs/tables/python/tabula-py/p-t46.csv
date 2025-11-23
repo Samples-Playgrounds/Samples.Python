@@ -1,9 +1,0 @@
-,"syntax = ""proto3"";"
-0,
-1,"option csharp_namespace = ""TraderSys.Portfolios.Protos"";"
-2,
-3,package PortfolioServer;
-4,
-5,service Portfolios {
-6,// RPCs will go here
-7,}

@@ -44,25 +44,25 @@ Reviewers:
 
 **[David Pine](https://github.com/IEvangelist)**, Developer Relations, Microsoft Corp.
 
-### Acknowledgments
+# Acknowledgments
 
 This book originated from the excellent Enterprise Application Patterns using Xamarin.Forms eBook by [David Britch](https://github.com/davidbritch) and [Javier Suarez Ruiz.](https://github.com/jsuarezruiz) Without their hard work, detailed information, and excellent examples, this book would not be possible.
 
-### Introduction
+# Introduction
 
 Enterprise applications face a number of difficult problems to solve including ever changing business requirements, the need for quick turn around time, support for multiple platforms, and integration with multiple systems. Due to the varying nature of these problems, it's important that our application's architecture allows it to be modular, modifiable and extensible over time.
 
 This book takes provides real world solutions for addressing these issues when building an enterprise application using .NET MAUI. This book uses a pre-built .NET MAUI application that serves as the front-end of an online eCommerce application as a reference and a guide for common enterprise design patterns. This book covers topics such as the MVVM pattern, dependency injection, navigation, configuration, the loose-coupling of components and additional enterprise concerns. The content of this book is helpful for anyone looking to build a new application for this business or looking to solve the problems of applications that evolve over time.
 
-### Who should use the book
+# Who should use the book
 
 This book is for .NET MAUI developers that are already familiar with the framework, but that are looking for guidance on architecture and implementation when building enterprise applications. This book can help developers solve common problems using tried and true patterns.
 
-### How to use the book
+# How to use the book
 
 This book focuses on building cross-platform enterprise apps using .NET MAUI. As such, it should be read in its entirety to provide a foundation of understanding such apps and their technical considerations. The book, along with its sample app, can also serve as a starting point or reference for creating a new enterprise app. Use the associated sample app as a template for the new app, or to see how to organize an app's component parts. Then, refer back to this guide for architectural guidance. You can find the sample app on [GitHub.](https://github.com/dotnet/eshop)
 
-### What this book doesn't cover
+# What this book doesn't cover
 
 This book is aimed at readers who are already familiar with .NET MAUI. It does cover some concepts of .NET MAUI to help better illustrate the topic, but it does not cover most controls and concepts in any detail. For general guidance on building a new .NET MAUI app, please refer to the [Building your](https://docs.microsoft.com/dotnet/maui/get-started/first-app)  [first app](https://docs.microsoft.com/dotnet/maui/get-started/first-app) guide in the .NET MAUI documentation.
 
@@ -204,7 +204,7 @@ The guide provides architectural guidance for developing adaptable, maintainable
 
 The guide comes with source code for the [eShop multi-platform app,](https://github.com/dotnet/eShop/tree/main/src/ClientApp) and source code for the [eShop](https://github.com/dotnet/eShop)  [reference app.](https://github.com/dotnet/eShop) The eShop multi-platform app is a cross-platform enterprise app developed using .NET MAUI, which connects to a series of containerized microservices known as the eShop reference app. However, the eShop multi-platform app can be configured to consume data from mock services for those who wish to avoid deploying the containerized microservices.
 
-### <span id="page-7-1"></span>What's left out of this guide's scope
+# <span id="page-7-1"></span>What's left out of this guide's scope
 
 This guide is aimed at readers who are already familiar with .NET MAUI. For a detailed introduction to .NET MAUI, see the [.NET MAUI documentation.](https://docs.microsoft.com/dotnet/maui/)
 
@@ -264,7 +264,7 @@ This guide includes a sample application, eShop, that's an online store that inc
 - Viewing the user's order history.
 - Configuration of settings.
 
-### <span id="page-11-0"></span>Sample application architecture
+# <span id="page-11-0"></span>Sample application architecture
 
 Below is a high-level overview of the architecture of the sample application.
 
@@ -355,7 +355,7 @@ The .NET MAUI developer experience typically involves creating a user interface 
 
 The MVVM pattern helps cleanly separate an application's business and presentation logic from its user interface (UI). Maintaining a clean separation between application logic and the UI helps address numerous development issues and makes an application easier to test, maintain, and evolve. It can also significantly improve code re-use opportunities and allows developers and UI designers to collaborate more easily when developing their respective parts of an app.
 
-### <span id="page-15-1"></span>The MVVM pattern
+# <span id="page-15-1"></span>The MVVM pattern
 
 There are three core components in the MVVM pattern: the model, the view, and the view model. Each serves a distinct purpose. The diagram below shows the relationships between the three components.
 
@@ -416,7 +416,7 @@ Model classes are non-visual classes that encapsulate the app's data. Therefore,
 
 Model classes are typically used in conjunction with services or repositories that encapsulate data access and caching.
 
-### <span id="page-18-0"></span>Connecting view models to views
+# <span id="page-18-0"></span>Connecting view models to views
 
 View models can be connected to views by using the data-binding capabilities of .NET MAUI. There are many approaches that can be used to construct views and view models and associate them at runtime. These approaches fall into two categories, known as view first composition, and view model first composition. Choosing between view first composition and view model first composition is an issue of preference and complexity. However, all approaches share the same aim, which is for the view to have a view model assigned to its BindingContext property.
 
@@ -514,7 +514,7 @@ public bool IsLogin
 
 Using a lambda expression in this way involves a small performance cost because the lambda expression has to be evaluated for each call. Although the performance cost is small and would not typically impact an app, the costs can accrue when there are many change notifications. However, the benefit of this approach is that it provides compile-time type safety and refactoring support when renaming properties.
 
-### <span id="page-21-0"></span>MVVM Frameworks
+# <span id="page-21-0"></span>MVVM Frameworks
 
 The MVVM pattern is well established in .NET, and the community has created many frameworks which help ease this development. Each framework provides a different set of features, but it is standard for them to provide a common view model with an implementation of the INotifyPropertyChanged interface. Additional features of MVVM frameworks include custom commands, navigation helpers, dependency injection/service locator components, and UI platform integration. While it is not necessary to use these frameworks, they can speed up and standardize your development. The eShop multi-platform app uses [the .NET Community MVVM Toolkit.](https://docs.microsoft.com/dotnet/communitytoolkit/mvvm/introduction) When choosing a framework, you should consider your application's needs and your team's strengths. The list below includes some of the more common MVVM frameworks for .NET MAUI.
 
@@ -708,7 +708,7 @@ At runtime, the EventToCommandBehavior will respond to interaction with the Entr
 
 For more information about behaviors, see [Behaviors](https://docs.microsoft.com/dotnet/maui/fundamentals/behaviors) on the .NET MAUI Developer Center.
 
-### <span id="page-26-1"></span>Summary
+# <span id="page-26-1"></span>Summary
 
 The Model-View-ViewModel (MVVM) pattern helps cleanly separate an application's business and presentation logic from its user interface (UI). Maintaining a clean separation between application logic and the UI helps address numerous development issues and makes an application easier to test, maintain, and evolve. It can also significantly improve code re-use opportunities and allows developers and UI designers to collaborate more easily when developing their respective parts of an app.
 
@@ -846,7 +846,7 @@ Once all services have been registered, the MauiAppBuilder.Build method should b
 
 Once the Build method has been called, the dependency injection container is immutable and can no longer be updated or modified. Ensure that all services that you need within your application have been registered before you call Build.
 
-### <span id="page-31-0"></span>Resolution
+# <span id="page-31-0"></span>Resolution
 
 After a type is registered, it can be resolved or injected as a dependency. When a type is being resolved, and the container needs to create a new instance, it injects any dependencies into the instance.
 
@@ -1176,7 +1176,7 @@ public Task InitializeAsync()
 
 The //Main/Catalog route is navigated to if the app has a cached access token, which is used for authentication. Otherwise, the //Login route is navigated to.
 
-### <span id="page-42-1"></span>Passing parameters during navigation
+# <span id="page-42-1"></span>Passing parameters during navigation
 
 The NavigateToAsync method, specified by the INavigationService interface, enables navigation data to be specified as an IDictionary<string, object> of data that's passed to the view-model being navigated to, where it's typically used to perform initialization.
 
@@ -1356,7 +1356,7 @@ The Check method returns a boolean indicating whether or not the value argument 
 
 Property validation can sometimes involve dependent properties. An example of dependent properties is when the set of valid values for property A depends on the particular value that has been set in property B. To check that the value of property A is one of the allowed values would involve retrieving the value of property B. In addition, when the value of property B changes, property A would need to be revalidated.
 
-### <span id="page-48-0"></span>Adding validation rules to a property
+# <span id="page-48-0"></span>Adding validation rules to a property
 
 In the eShop multi-platform app, view model properties that require validation are declared to be of type ValidatableObject<T>, where T is the type of the data to be validated. The following code example shows an example of two such properties:
 
@@ -1380,7 +1380,7 @@ private void AddValidations()
 
 This method adds the IsNotNullOrEmptyRule<T> validation rule to the Validations collection of each ValidatableObject<T> instance, specifying values for the validation rule's ValidationMessage property, which specifies the validation error message that will be displayed if validation fails.
 
-### <span id="page-48-1"></span>Triggering validation
+# <span id="page-48-1"></span>Triggering validation
 
 The validation approach used in the eShop multi-platform app can manually trigger validation of a property, and automatically trigger validation when a property changes.
 
@@ -1639,7 +1639,7 @@ Particularly concerning, in the age of the cloud, is that individual components 
 
 ![](_page_57_Picture_1.jpeg)
 
-### <span id="page-57-0"></span>Microservices
+# <span id="page-57-0"></span>Microservices
 
 Microservices offer a different approach to application development and deployment, an approach that's suited to the agility, scale, and reliability requirements of modern cloud applications. A microservices application is split into independent components that work together to deliver the application's overall functionality. The term microservice emphasizes that applications should be composed of services small enough to reflect particular concerns, so each microservice implements a single function. In addition, each microservice has well-defined contracts with which other microservices communicate and share data. Typical examples of microservices include shopping carts, inventory processing, purchase subsystems, and payment processing.
 
@@ -1672,7 +1672,7 @@ However, a microservice-based solution also has potential drawbacks:
 - In production, there is an operational complexity in deploying and managing a system compromised of many independent services.
 - Direct client-to-microservice communication can make it difficult to refactor the contracts of microservices. For example, over time how the system is partitioned into services might need to change. A single service might split into two or more services, and two services might merge. When clients communicate directly with microservices, this refactoring work can break compatibility with client apps.
 
-### <span id="page-59-0"></span>Containerization
+# <span id="page-59-0"></span>Containerization
 
 Containerization is an approach to software development in which an application and its versioned set of dependencies, plus its environment configuration abstracted as deployment manifest files, are packaged together as a container image, tested as a unit, and deployed to a host operating system.
 
@@ -1723,7 +1723,7 @@ Consider using API gateway communication.
 
 Direct client-to-microservice communication can have drawbacks when building a large and complex microservice-based application, but it's more than adequate for a small application. Consider using API gateway communication when designing a large microservice-based application with tens of microservices.
 
-### <span id="page-63-0"></span>Communication between microservices
+# <span id="page-63-0"></span>Communication between microservices
 
 A microservices-based application is a distributed system, potentially running on multiple machines. Each service instance is typically a process. Therefore, services must interact using an inter-process communication protocol, such as HTTP, TCP, Advanced Message Queuing Protocol (AMQP), or binary protocols, depending on the nature of each service.
 
@@ -1751,13 +1751,11 @@ Microservices offer an approach to application development and deployment that's
 
 A container is an isolated, resource-controlled, and portable operating environment where an application can run without touching the resources of other containers or the host. Enterprises are increasingly adopting containers when implementing microservice-based applications, and Docker has become the standard container implementation that most software platforms and cloud vendors have adopted.
 
-# <span id="page-66-0"></span>Accessing remote data
-
-Many modern web-based solutions make use of web services, hosted by web servers, to provide functionality for remote client applications. The operations that a web service exposes constitute a web API.
+<span id="page-66-0"></span>Many modern web-based solutions make use of web services, hosted by web servers, to provide functionality for remote client applications. The operations that a web service exposes constitute a web API.
 
 Client apps should be able to utilize the web API without knowing how the data or operations that the API exposes are implemented. This requires that the API abides by common standards that enable a client app and web service to agree on which data formats to use, and the structure of the data that is exchanged between client apps and the web service.
 
-### <span id="page-66-1"></span>Introduction to Representational State Transfer
+# <span id="page-66-1"></span>Introduction to Representational State Transfer
 
 Representational State Transfer (REST) is an architectural style for building distributed systems based on hypermedia. A primary advantage of the REST model is that it's based on open standards and doesn't bind the implementation of the model or the client apps that access it to any specific implementation. Therefore, a REST web service could be implemented using [Microsoft ASP.NET Core,](https://docs.microsoft.com/aspnet/core/introduction-to-aspnet-core)  and client apps could be developing using any language and toolset that can generate HTTP requests and parse HTTP responses.
 
@@ -2060,7 +2058,7 @@ It's also possible that a cache might fill up if data is allowed to remain for t
 
 The eShop multi-platform app consumes remote product images that benefit from being cached. These images are displayed by the Image control. The .NET MAUI Image control supports caching of downloaded images which has caching enabled by default, and will store the image locally for 24 hours. In addition, the expiration time can be configured with the CacheValidity property. For more information, see [Downloaded Image Caching](https://docs.microsoft.com/dotnet/maui/user-interface/controls/image#image-caching) on the Microsoft Developer Center.
 
-### <span id="page-76-0"></span>Increasing resilience
+# <span id="page-76-0"></span>Increasing resilience
 
 All apps that communicate with remote services and resources must be sensitive to transient faults. Transient faults include the momentary loss of network connectivity to services, the temporary unavailability of a service, or timeouts that arise when a service is busy. These faults are often selfcorrecting, and if the action is repeated after a suitable delay it's likely to succeed.
 
@@ -2072,7 +2070,7 @@ Transient faults can have a huge impact on the perceived quality of an app, even
 
 This transient fault handling can be achieved by wrapping all attempts to access a remote service in code that implements the retry pattern.
 
-### <span id="page-76-1"></span>Retry pattern
+# <span id="page-76-1"></span>Retry pattern
 
 If an app detects a failure when it tries to send a request to a remote service, it can handle the failure in any of the following ways:
 
@@ -2098,7 +2096,7 @@ The eShop reference application does implement the retry pattern.
 
 For more information about the retry pattern, see the [Retry](https://docs.microsoft.com/azure/architecture/patterns/retry) pattern on Microsoft Docs.
 
-### <span id="page-77-0"></span>Circuit breaker pattern
+# <span id="page-77-0"></span>Circuit breaker pattern
 
 In some situations, faults can occur due to anticipated events that take longer to fix. These faults can range from a partial loss of connectivity to the complete failure of a service. In these situations, it's pointless for an app to retry an operation that's unlikely to succeed, and instead should accept that the operation has failed and handle this failure accordingly.
 
@@ -2136,7 +2134,7 @@ Authentication is the process of obtaining identification credentials such as na
 
 There are many approaches to integrating authentication and authorization into a .NET MAUI app that communicates with an ASP.NET web application, including using ASP.NET Core Identity, external authentication providers such as Microsoft, Google, Facebook, or Twitter, and authentication middleware. The eShop multi-platform app performs authentication and authorization with a containerized identity microservice that uses IdentityServer. The app requests security tokens from IdentityServer to authenticate a user or access a resource. For IdentityServer to issue tokens on behalf of a user, the user must sign in to IdentityServer. However, IdentityServer doesn't provide a user interface or database for authentication. Therefore, in the eShop reference application, ASP.NET Core Identity is used for this purpose.
 
-### <span id="page-79-1"></span>Authentication
+# <span id="page-79-1"></span>Authentication
 
 Authentication is required when an application needs to know the current user's identity. ASP.NET Core's primary mechanism for identifying users is the ASP.NET Core Identity membership system, which stores user information in a data store configured by the developer. Typically, this data store will be an EntityFramework store, though custom stores or third-party packages can be used to store identity information in Azure storage, DocumentDB, or other locations.
 
@@ -2414,7 +2412,7 @@ The attack surface of the eShop multi-platform app is reduced by implementing th
 | Username                                                |
 | Password                                                |
 | Password                                                |
-| Rememberme                                              |
+| Remember me                                             |
 | The default users are alice/bob, password:<br>Pass123\$ |
 |                                                         |
 
@@ -2466,7 +2464,7 @@ For information about page navigation, see [Navigation.](#page-38-0) For informa
 
 The eShop also allows a mock sign-out when the app is configured to use mock services in the SettingsView. In this mode, the app doesn't communicate with IdentityServer, and instead clears any stored tokens from application settings.
 
-### <span id="page-90-0"></span>Authorization
+# <span id="page-90-0"></span>Authorization
 
 After authentication, ASP.NET Core web APIs often need to authorize access, which allows a service to make APIs available to some authenticated users but not to all.
 
@@ -2591,7 +2589,7 @@ The multi-platform app requests security tokens from IdentityServer to authentic
 
 # <span id="page-94-0"></span>MVVM Toolkit Features
 
-### <span id="page-94-1"></span>MVVM Toolkit
+# <span id="page-94-1"></span>MVVM Toolkit
 
 The Model-View-ViewModel (MVVM) pattern is a great structural basis for creating our applications. In this pattern, the ViewModel becomes the backbone of our application as it provides communication to our front-end user interface and backing components. To provide integration with the user interface, we will rely on the ViewModel's properties and commands. As detailed in Updating views in response to changes in the underlying view model or model, the INotifyPropertyChanged interface on our ViewModel to allows changes to our properties to notify when the value is changed. Implementing all of these features means that our ViewModel can end up becoming very verbose. For example, the following code shows a simple ViewModel with properties that raise changes:
 
@@ -2647,7 +2645,7 @@ The MVVM Toolkit is provided with the CommunityToolkit.Mvvm package. For informa
 
 In comparison to the original example, we were able to drastically reduce the overall complexity and simplify the maintainability of our ViewModel. The MVVM Toolkit comes with many pre-built common components and features, such as the ObservableObject shown above, that simplifies and standardizes the code that we have throughout the application.
 
-### <span id="page-95-0"></span>ObservableObject
+# <span id="page-95-0"></span>ObservableObject
 
 The MVVM Toolkit provides ObservableObject which is intended for use as the base of our ViewModel objects or any object that needs to raise change notifications. It implements INotifyPropertyChanged and INotifyPropertyChanging along with helper methods for setting properties and raising changes. Below is an example of a standard ViewModel using ObservableObject:
 
@@ -2673,7 +2671,7 @@ ObservableObject handles all of the logic needed for raising change notification
 
 For more detailed information on ObservableObject, see [ObservableObject](https://docs.microsoft.com/dotnet/communitytoolkit/mvvm/observableobject) in the MVVM Toolkit Developer Center.
 
-### <span id="page-96-0"></span>RelayCommand and AsyncRelayCommand
+# <span id="page-96-0"></span>RelayCommand and AsyncRelayCommand
 
 Interaction between .NET MAUI controls (for example, tapping a button or selecting an item from a collection) and the ViewModel is done with the ICommand interface. .NET MAUI comes with a default implementation of ICommand with the Command object. .NET MAUI's Command is fairly basic and lacks support for more advanced features, such as supporting asynchronous work and command execution status.
 
@@ -2689,7 +2687,7 @@ By default, AsyncRelayCommand doesn't allow concurrent execution. This is very h
 
 For more detailed information on implementing commands, see the section [Implementing commands](#page-22-0) in the MVVM chapter. Detailed information for the RelayCommand and AsyncRelayCommand is available in the [Commanding](https://docs.microsoft.com/dotnet/communitytoolkit/mvvm/relaycommand) of the MVVM Toolkit Developer Center.
 
-### <span id="page-97-0"></span>Source Generators
+# <span id="page-97-0"></span>Source Generators
 
 Using the MVVM Toolkit components out-of-the-box allows you to greatly simplify our ViewModel. The MVVM Toolkit allows you to simplify common code use cases even further by using [Source](https://docs.microsoft.com/dotnet/csharp/roslyn-sdk/source-generators-overview)  [Generators.](https://docs.microsoft.com/dotnet/csharp/roslyn-sdk/source-generators-overview) The MVVM Toolkit source generators look for specific attributes in our code and can generate wrappers for properties and commands.
 
@@ -2940,7 +2938,7 @@ This unit test will throw an exception because the ListView control does not hav
 
 Avoid writing unit tests that examine exception message strings. Exception message strings might change over time, and so unit tests that rely on their presence are regarded as brittle.
 
-### <span id="page-104-1"></span>Testing validation
+# <span id="page-104-1"></span>Testing validation
 
 There are two aspects to testing the validation implementation: testing that any validation rules are correctly implemented and testing that the ValidatableObject<T> class performs as expected.
 

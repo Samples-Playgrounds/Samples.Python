@@ -1,3 +1,0 @@
-,0
-0,"<Label Text=""{Binding UserName.Errors, Converter={StaticResource FirstValidationErrorConverter}"""
-1,"Style=""{StaticResource ValidationErrorLabelStyle}"" />"

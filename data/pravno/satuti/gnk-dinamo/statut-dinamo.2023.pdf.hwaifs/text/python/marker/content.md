@@ -81,7 +81,7 @@ Klub zastupaju Predsjednik, Dopredsjednik i Uprava, sukladno odredbama ovog Stat
 - f. suradnja sa sudačkim, trenerskim i drugim stručnim sportskim organizacijama na lokalnoj, državnoj i međunarodnoj razini;
 - g. suradnja s drugim nogometnim i sportskim klubovima:
 
-- h. suradnja s tijelima državne te lokalne i regionalne vlasti, pravnim i fizičkim osobama u ispunjavanju sportskih interesa i ciljeva;
+- h. suradnja s tijelima državne te lokalne i regionalne vlasti, pravnim i fizičkim osobama u ispunjavanju sportskih interesa i ciljeva:
 - i. organizirano okupljanje članstva Kluba svih uzrasta;
 - j. izdavanje biltena, glasila, monografija, priručnika i drugih tiskovina vezano uz nogometni sport i Klub;
 - k. poticanje i promicanje nogometa kao sporta u skladu s aktima strateškog planiranja razvoja sporta na nacionalnoj razini, odnosno nacionalnom strategijom razvoja sporta i nacionalnim planom razvoja sporta te strateškim dokumentima donesenim na područnoj (regionalnoj) razini, a osobito sporta djece i mladeži, te zdravstveno usmjerenog tjelesnog vježbanja i zdravstveno usmjerene tjelesne aktivnosti sportaša;
@@ -198,7 +198,7 @@ Nogometaši koji su članovi Kluba pored prava i obveza iz čl. 18. i 19. ovog S
 #### Članak 23.
 
 - (1) Povjerenik može biti svaki član Kluba koji je podnio zamolbu i koji ispunjava sljedeće uvjete:
-  - a. osoba je s potpunom poslovnom sposobnošću:
+  - a. osoba je s potpunom poslovnom sposobnošću;
 
 - b. da je prije podnošenja zamolbe, na njegovu preporuku u Klub učlanjeno najmanje 20 novih članova Kluba;
 - c. da je najmanje 5 (pet) godina neprekidno član kluba prije podnošenja zamolbe ili da je najmanje 2 (dvije) godine neprekidno član kluba i na čiji se prijedlog učlani najmanje 50 članova kluba;
@@ -209,9 +209,9 @@ d. da ne postoje zapreke iz ovog Statuta.
 - (3) Povjerenik je dužan animirati i poticati učlanjivanje novih članova Kluba te izvještavati svoje članove drugim važnim temama koje se odnose na ostvarivanje ciljeva Kluba i obavljanje njegove djelatnosti.
 - (4) Uprava Kluba može s imenovanim povjerenikom zaključiti ugovor o međusobnim pravima i obvezama.
 
-# TIJELA KLUBA
+## TIJELA KLUBA
 
-#### Članak 24.
+## Članak 24.
 
 - (1) Klupska tijela su:
   - a. Skupština,
@@ -237,7 +237,7 @@ d. da ne postoje zapreke iz ovog Statuta.
 - i. koje su u posljednje tri godine pravomoćno kažnjene za kaznena djela ili prekršaje u sportu i u vezi sa sportom i sportskim natjecanjima;
 - j. koje su pravomoćno osuđene na kaznu zatvora u trajanju od najmanje 6 (šest) mjeseci za neko od kaznenih djela počinjena s namjerom, a nije primijenjena uvjetna osuda godinu dana od odsluženja kazne;
 - k. koje ne ispunjavaju druge uvjete propisane Zakonom o sportu i drugim zakonima.
-- I. koje su aktivni igrač, trener ili zaposlenik Kluba, a ako to postanu tijekom mandata u tijelima Kluba, prestaje im mandat i članstvo u tijelu, osim članovima Uprave Kluba.
+- koje su aktivni igrač, trener ili zaposlenik Kluba, a ako to postanu tijekom mandata u tijelima Kluba, prestaje im mandat i članstvo u tijelu, osim članovima Uprave Kluba.
 - (3) Svaki član Kluba koji ulazi u bilo koja tijela Kluba mora potpisati izjavu kojom izjavljuje da za njega ne vrijede gore navedeni uvjeti te da će u slučaju nastupa gore navedenih uvjete odmah obavijestiti Upravu Kluba.
 
 # Članak 26.
@@ -253,7 +253,7 @@ d. da ne postoje zapreke iz ovog Statuta.
 - (4) Novoizabranom članu Izvršnog odbora mandat traje do isteka mandata Izvršnog odbora.
 - (5) Novoizabranom članu Nadzornog odbora mandat traje do isteka mandata Nadzornog odbora.
 
-# **SKUPŠTINA**
+# SKUPŠTINA
 
 # Članak 27.
 
@@ -281,11 +281,11 @@ d. da ne postoje zapreke iz ovog Statuta.
 
 (5) Skupština sve verifikacije u njezinoj nadležnosti obavlja javnim čitanjem u zapisnik, dok ostala tijela, posebno Izborno povjerenstvo, verifikacije obavljaju glasovanjem.
 
-#### Članak 30.
+## Članak 30.
 
 Članovi Skupštine biraju se na mandat od 4 (četiri) godine te isti članovi mogu biti birani na novo mandatno razdoblje.
 
-#### Članak 31.
+## Članak 31.
 
 - (1) Skupština može biti redovita i izvanredna.
 - (2) Skupština redovito zasjeda najmanje jednom godišnje, dok se izvanredne održavaju prema potrebi.
@@ -302,7 +302,7 @@ d. da ne postoje zapreke iz ovog Statuta.
 - (3) Nakon primitka odluke o utvrđivanju dnevnog reda najmanje 25 članova Skupštine može dopuniti dnevni red pisanim prijedlogom Izvršnom odboru bilo koje točke koja je u nadležnosti Skupštine, najkasnije 7 dana prije Skupštine.
 - (4) Najkasnije 3 dana prije Skupštine Predsjednik šalje konačni dnevni red i sve materijale potrebne za donošenje odluka prema dnevnom redu.
 
-### Članak 33.
+# Članak 33.
 
 - (1) U slučaju isteka mandata svim tijelima Kluba, svi punoljetni i poslovno sposobni članovi Kluba postaju opća Skupština koja će izabrati tijela Kluba.
 - (2) U slučaju iz st 1. ovog članka opću Skupštinu saziva jedna od zadnjih osoba ovlaštenih za zastupanje u registar udruga Republike Hrvatske.
@@ -315,7 +315,7 @@ d. da ne postoje zapreke iz ovog Statuta.
 - (4) O radu sjednice vodi se zapisnik koji se trajno čuva u arhivi Kluba, a kojeg potpisuju predsjedavajući tom sjednicom i zapisničar.
 - (5) Jedan od članova Uprave, ovlašten za zastupanje Kluba dostavlja zapisnik sa sjednica Skupštine nadležnom uredu koji vodi registar udruga.
 
-#### Članak 35.
+## Članak 35.
 
 - (1) Skupština odlučuje pravovaljano ako je nazočan najmanje 31 član Skupštine, a odluke donosi većinom glasova, osim ako Statutom nije propisano drukčije.
 - (2) Za donošenje, dopune i izmjene Statuta i za razrješenje Predsjednika ili članova Izvršnog odbora potrebna je odluka najmanje 40 članova Skupštine.
@@ -331,7 +331,7 @@ d. da ne postoje zapreke iz ovog Statuta.
 - d. usvaja godišnje financijsko izvješće i izvješće o radu za prethodnu kalendarsku godinu;
 - e. donosi Poslovnik o radu Skupštine Kluba, Pravilnik o dodjeli nagrade 'Ponos Dinama', Pravilnik o izborima u Klubu, te druge akte i odluke važne za rad Kluba prema ovom Statutu;
 - f. odlučuje o promjeni ciljeva i djelatnosti te obavljanju gospodarskih djelatnosti;
-- g. odlučuje o udruživanju u saveze, zajednice, mreže i druge oblike povezivanja udruga:
+- g. odlučuje o udruživanju u saveze, zajednice, mreže i druge oblike povezivanja udruga;
 
 - h. bira i razrješava Predsjednika Kluba, verificira i razrješava Izvršni odbor i Nadzorni odbor, razrješava Izborno povjerenstvo, kao i pojedine članove tih tijela;
 - i. imenuje i opoziva likvidatora Kluba:
@@ -347,8 +347,8 @@ d. da ne postoje zapreke iz ovog Statuta.
   - zakonitosti,
   - transparentnosti i javnosti poslovanja,
   - sprječavanje sukoba interesa,
-  - učinkovit unutarnji nadzor.
-  - jačanje osobne odgovornosti.
+  - učinkovit unutarnji nadzor,
+  - jačanje osobne odgovornosti,
   - društveno odgovorno poslovanie.
 - (3) Izvršni odbor se sastoji od 13 članova iz redova članova Skupštine.
 - (4) Iz redova članova Skupštine, Predsjednik Kluba imenuje 10 članova Izvršnog odbora po svom odabiru, a 2 člana imenuje nositelj druge liste koja sačinjava Skupštinu.
@@ -357,11 +357,11 @@ d. da ne postoje zapreke iz ovog Statuta.
 
 # Članak 38.
 
-### Izvršni odbor Kluba:
+#### Izvršni odbor Kluba:
 
 - a. provodi odluke, zaključke i preporuke Skupštine;
 - b. predlaže izmjene i dopune Statuta, osim u slučajevima iz čl. 36. ovog Statuta
-- c. predlaže i usvaja opće akte Kluba, ako ovim Statutom nije drugačije određeno:
+- c. predlaže i usvaja opće akte Kluba, ako ovim Statutom nije drugačije određeno;
 - d. predlaže Skupštini program razvoja, politiku i smjernice rada Kluba;
 - e. imenuje, sklapa ugovor, kao i razrješava predsjednika Uprave i članove Uprave Kluba;
 - f. nadzire rad Uprave i daje joj suglasnost za pravne poslove iznad ukupnog iznosa 3 milijuna eura;
@@ -369,7 +369,7 @@ d. da ne postoje zapreke iz ovog Statuta.
 - g. osniva po potrebi savjetodavne pododbore i povjerenstva sastavljene od članova Kluba, zaposlenika Kluba i stručnjaka koji nisu članovi Kluba, za potrebe kvalitetnije kontrole rada Kluba (Odbor za internu reviziju i kontrolu, Odbor za korporativna i strateška pitanja, Odbor za imenovanja zaslužnih igrača i trenera i sl.) te se obvezuje u odluci o osnivanju pododbora i/ili povjerenstva navesti njihov sastav, zadaću, vrijeme za koje se osnivaju i odgovornost za obavljanje poslova;
 - h. odlučuje i o drugim pitanjima koje mu odredi Skupština.
 
-#### Članak 39.
+## Članak 39.
 
 - (1) Izvršni odbor svoje poslove obavlja na sjednicama koje saziva Predsjednik ili član Izvršnog odbora kojeg odredi Predsjednik prema potrebi, a najmanje jednom mjesečno.
 - (2) Izvršni odbor odlučuje većinom glasova nazočnih članova pod uvjetom da je na sjednici prisutna natpolovična većina svih članova.
@@ -391,7 +391,7 @@ Način i uvjete svog rada Izvršni odbor uređuje Poslovnikom.
   - f. obavlja i druge poslove u skladu sa zakonima, ovim Statutom i aktima Kluba.
 - (2) U bilo kojim slučajevima istovremene spriječenosti Predsjednika i Dopredsjednika duljim od 6 mjeseci, Izvršni odbor mora sazvati Skupštinu koja će izabrati novog Predsjednika u roku od 3 mjeseca nakon proteka tog roka.
 
-# Članak 42.
+## Članak 42.
 
 - (1) Predsjednik Kluba po svojoj funkciji je član i predsjednik Izvršnog odbora.
 - (2) Mandat Predsjednika Kluba je 4 (četiri) godine i za svoj rad je odgovoran Skupštini Kluba.
@@ -400,13 +400,13 @@ Način i uvjete svog rada Izvršni odbor uređuje Poslovnikom.
 
 (4) Predsjednik Kluba iz redova Izvršnog odbora imenuje Dopredsjednika, koji rukovodi sjednicama Skupštine i koji ga zamjenjuje u svim ovlastima u slučaju njegove spriječenosti.
 
-#### Članak 43.
+## Članak 43.
 
 - (1) Skupština Kluba na redovnoj sjednici većinom prisutnih članova Skupštine može imenovati počasnog predsjednika Dinama na temelju poslovnih i sportskih zasluga i rezultata.
 - (2) Mandat počasnog predsjednika je neograničen. U izuzetnim slučajevima može ga razriješiti Skupština.
 - (3) Počasni predsjednik Kluba ima pravo sudjelovati na sjednicama Skupštine, ali nema pravo glasa.
 
-#### NADZORNI ODBOR
+## **NADZORNI ODBOR**
 
 #### Članak 44.
 
@@ -419,7 +419,7 @@ Način i uvjete svog rada Izvršni odbor uređuje Poslovnikom.
   - f. obavještava klupska tijela o neusuglašenosti rada ili akata sa Statutom i drugim aktima Kluba, o čemu, ako se ne isprave, obavještava Skupštinu koja donosi obvezujuću odluku o usklađivanju rada i akata.
 - (2) Članovi klupskih tijela koja odlučuju u stegovnom postupku ne sudjeluju u njemu kada su predmet stegovnih postupaka.
 
-# Članak 45.
+#### Članak 45.
 
 - (1) Nadzorni odbor se sastoji se od 3 člana, koji između sebe biraju predsjednika.
 - (2) Predsjednik Nadzornog odbora saziva sjednice i predlaže dnevni red.
@@ -434,7 +434,7 @@ Način i uvjete svog rada Izvršni odbor uređuje Poslovnikom.
 
 (3) Skupština Kluba može zahtijevati od Nadzornog odbora podnošenje izvanrednog izvješća.
 
-#### Članak 47.
+# Članak 47.
 
 Načine i uvjete svog rada Nadzorni odbor uređuje Poslovnikom.
 
@@ -446,12 +446,12 @@ Načine i uvjete svog rada Nadzorni odbor uređuje Poslovnikom.
 
 # **UPRAVA KLUBA**
 
-# Članak 49.
+## Članak 49.
 
 - (1) Uprava Kluba vodi poslovanje Kluba i upravlja radom stručnih službi Kluba u skladu s ovim Statutom, općim aktima Kluba te odlukama Skupštine i Izvršnog odbora.
 - (2) Upravu Kluba čine predsjednik Uprave Kluba i 2 do 4 člana koje bira Izvršni odbor Kluba.
 
-# Članak 50.
+## Članak 50.
 
 (1) Članovi Uprave Kluba zastupaju Klub u pravnom prometu bez ograničenja.
 
@@ -461,7 +461,7 @@ Načine i uvjete svog rada Nadzorni odbor uređuje Poslovnikom.
 
 #### Članak 51.
 
-## Uprava Kluba:
+# Uprava Kluba:
 
 - a. predlaže Izvršnom odboru Pravilnik o djelokrugu i unutarnjem ustrojstvu Kluba;
 - b. organizira obavljanje stručnih, tehničkih i pomoćnih poslova Kluba i vodi poslovnu, sportsku i stručnu politiku Kluba, za koje odgovara Izvršnom odboru;
@@ -484,13 +484,13 @@ Načine i uvjete svog rada Nadzorni odbor uređuje Poslovnikom.
 - (1) Za svoj rad i rad stručnih službi članovi Uprave Kluba odgovorni su Izvršnom odboru.
 - (2) Članovi Uprave Kluba ne mogu biti članovi drugih klupskih tijela.
 
-# Članak 53.
+## Članak 53.
 
 Načine i uvjete svog rada Uprava Kluba uređuje Poslovnikom uz suglasnost Izvršnog odbora.
 
 # RJEŠAVANJE SPOROVA I SUKOBA INTERESA
 
-# Članak 54.
+#### Članak 54.
 
 (1) Postupak pred Nadzornim odborom za rješavanje statutarnih i ostalih sporova te sukoba interesa može zahtjevom pokrenuti svako klupsko tijelo, odnosno svaki član Kluba ako smatra da postoji spor ili sukob interesa u Klubu.
 
@@ -506,13 +506,13 @@ Načine i uvjete svog rada Uprava Kluba uređuje Poslovnikom uz suglasnost Izvr�
 
 - (1) Imovinu Kluba čine:
   - a. novčana sredstva koja je Klub stekao uplatom članarina, dobrovoljnim prilozima i darovima;
-  - b. novčana sredstva koja Klub stekne obavljanjem djelatnosti kojima se ostvaruju ciljevi, obavljanjem djelatnosti i gospodarske djelatnosti, financiranjem programa i projekata Kluba iz državnog proračuna i proračuna jedinica lokalne i područne (regionalne) samouprave te fondova i/ili iz inozemnih izvora;
+  - novčana sredstva koja Klub stekne obavljanjem djelatnosti kojima se ostvaruju ciljevi, obavljanjem djelatnosti i gospodarske djelatnosti, financiranjem programa i projekata Kluba iz državnog proračuna i proračuna jedinica lokalne i područne (regionalne) samouprave te fondova i/ili iz inozemnih izvora;
   - c. nekretnine i pokretne stvari Kluba;
   - d. druga prava ustanovljena u korist Kluba.
 - (2) Klub može raspolagati svojom imovinom samo za ostvarivanje ciljeva i obavljanjem djelatnosti određenih Statutom Kluba, u skladu sa zakonom.
 - (3) Višak prihoda nad rashodima koje Klub ostvari koristi se za ostvarivanje ciljeva utvrđenih ovim Statutom.
 
-# Članak 56.
+#### Članak 56.
 
 - (1) Odluke o stjecanju ili otuđivanju pokretnina i nekretnina donosi Uprava Kluba.
 - (2) Poslovne odluke u vezi korištenja financijskih sredstava tijekom kalendarske godine provodi Uprava Kluba koja o tome izvješćuje Izvršni odbor.
@@ -521,13 +521,13 @@ Načine i uvjete svog rada Uprava Kluba uređuje Poslovnikom uz suglasnost Izvr�
 
 # PRESTANAK POSTOJANJA KLUBA
 
-# Članak 57.
+## Članak 57.
 
 (1) Klub prestaje postojati odlukom Skupštine u skladu s rezultatima provedenog referenduma, ili u drugim slučajevima predviđenim zakonom.
 
 (2) U slučaju prestanka postojanja Kluba preostala imovina pripada udruzi, ustanovi, zakladi ili drugoj pravnoj osobi koja ima iste ili slične statutarne ciljeve, a prema odluci Skupštine u skladu s rezultatima referenduma.
 
-# Članak 58.
+## Članak 58.
 
 (1) Likvidatora Kluba imenuje i opoziva Skupština Kluba.
 
@@ -543,7 +543,7 @@ sportu i čl. 19. st. 2. i 3. Zakona o udrugama.
 
 # PRIJELAZNE I ZAVRŠNE ODREDBE
 
-# Članak 59.
+#### Članak 59.
 
 (1) Statut stupa na snagu danom donošenja.
 
@@ -551,4 +551,4 @@ sportu i čl. 19. st. 2. i 3. Zakona o udrugama.
 
 U Zagrebu, 21.12.2023.
 
-PREDSJEDNIK KLUBA dipl. ing. Mirko Barisić
+![](_page_18_Picture_16.jpeg)

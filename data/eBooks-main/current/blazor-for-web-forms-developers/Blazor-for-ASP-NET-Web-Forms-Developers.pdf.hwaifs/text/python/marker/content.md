@@ -562,7 +562,7 @@ The component routes aren't currently inferred by the component's file location 
 
 <span id="page-23-1"></span>You'll learn more about routing in Blazor in the Pages, routing, and layouts section.
 
-### Layout
+#### Layout
 
 In ASP.NET Web Forms apps, a common page layout is handled using master pages (*Site.Master*). In Blazor apps, the page layout is handled using layout components (*Shared/MainLayout.razor*). Layout components are discussed in more detail in the Page, routing, and layouts section.
 
@@ -1864,14 +1864,14 @@ Data access is the backbone of an ASP.NET Web Forms app. If you're building form
 
 Data Sources were controls that you could place on a Web Forms page and configure like other controls. Visual Studio provided a friendly set of dialogs to configure and bind the controls to your Web Forms pages. Developers who enjoy a "low code" or "no code" approach preferred this technique when Web Forms was first released.
 
-| SqlDataSource | e - CustomersData |           |           |                     |
-|---------------|-------------------|-----------|-----------|---------------------|
-| CustomerID    | CompanyName       | FirstName | LastName  |                     |
-| Databound     | Databound         | Databound | Databound | Click Me! Databound |
-| Databound     | Databound         | Databound | Databound | Click Me! Databound |
-| Databound     | Databound         | Databound | Databound | Click Me! Databound |
-| Databound     | Databound         | Databound | Databound | Click Me! Databound |
-| Databound     | Databound         | Databound | Databound | Click Me! Databound |
+| SqlDataSource | - CustomersData |           |           |                     |
+|---------------|-----------------|-----------|-----------|---------------------|
+| CustomerID    | CompanyName     | FirstName | LastName  |                     |
+| Databound     | Databound       | Databound | Databound | Click Me! Databound |
+| Databound     | Databound       | Databound | Databound | Click Me! Databound |
+| Databound     | Databound       | Databound | Databound | Click Me! Databound |
+| Databound     | Databound       | Databound | Databound | Click Me! Databound |
+| Databound     | Databound       | Databound | Databound | Click Me! Databound |
 
 ADO.NET is the low-level approach to interacting with a database. Your apps could create a connection to the database with Commands, Datatables, and Datasets for interacting. The results could then be bound to fields on screen without much code. The drawback of this approach was that each set of ADO.NET objects (Connection, Command, and DataTable) was bound to libraries provided by a database vendor. Use of these components made the code rigid and difficult to migrate to a different database.
 
@@ -2187,7 +2187,7 @@ App-specific configuration can be defined by nesting an environmentVariables ele
 </aspNetCore>
 ```
 
-# <span id="page-70-0"></span>Read configuration in the app
+### <span id="page-70-0"></span>Read configuration in the app
 
 ASP.NET Core provides app configuration through the [IConfiguration](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration) interface. This configuration interface should be requested by your Blazor components, Blazor pages, and any other ASP.NET Coremanaged class that needs access to configuration. The ASP.NET Core framework will automatically populate this interface with the resolved configuration configured earlier. On a Blazor page or a component's Razor markup, you can inject the IConfiguration object with an @inject directive at the top of the *.razor* file like this:
 
@@ -2346,7 +2346,7 @@ In the code above, role-based access control (RBAC) is used to determine whether
 
 Typically, ASP.NET Web Forms applications configure security within the web.config file and then add additional checks where needed in .aspx pages and their related .aspx.cs code-behind files. Most applications leverage the universal membership provider, frequently with the additional role provider.
 
-### <span id="page-75-0"></span>ASP.NET Core Identity
+# <span id="page-75-0"></span>ASP.NET Core Identity
 
 Although still tasked with authentication and authorization, ASP.NET Core Identity uses a different set of abstractions and assumptions when compared to the universal providers. For example, the new Identity model supports third party authentication, allowing users to authenticate using a social media account or other trusted authentication provider. ASP.NET Core Identity supports UI for commonly needed pages like login, logout, and register. It leverages EF Core for its data access, and uses EF Core migrations to generate the necessary schema required to support its data model. This [introduction to](https://docs.microsoft.com/aspnet/core/security/authentication/identity)  [Identity on ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/authentication/identity) provides a good overview of what is included with ASP.NET Core Identity and how to get started working with it. If you haven't already set up ASP.NET Core Identity in your application and its database, it will help you get started.
 
@@ -2691,7 +2691,7 @@ As described in the [hosting models](#page-15-0) chapter, a Blazor app can be ho
 
 At the time of writing, the server-side model more closely resembles Web Forms. Most of this chapter focuses on the server-side hosting model, as it's production-ready.
 
-### <span id="page-86-0"></span>Create a new project
+# <span id="page-86-0"></span>Create a new project
 
 This initial migration step is to create a new project. This project type is based on the SDK style projects of .NET and simplifies much of the boilerplate that was used in previous project formats. For more detail, please see the chapter on [Project Structure.](#page-19-0)
 

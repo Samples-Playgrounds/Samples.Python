@@ -1,4 +1,0 @@
-,// Registering a Repository in Autofac IoC container
-0,builder.RegisterType<OrderRepository>()
-1,.As<IOrderRepository>()
-2,.InstancePerLifetimeScope();

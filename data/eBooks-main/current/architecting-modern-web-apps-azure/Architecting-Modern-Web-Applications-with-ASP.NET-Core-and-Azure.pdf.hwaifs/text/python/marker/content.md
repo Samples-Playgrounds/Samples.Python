@@ -2814,7 +2814,7 @@ If you have an existing application that would require substantial modifications
 
 Individual logical processes that can be decoupled from the rest of the application may be deployed independently to Azure Functions in a "serverless" manner. Azure Functions lets you just write the code you need for a given problem, without worrying about the application or infrastructure to run it. You can choose from a variety of programming languages, including C#, F#, Node.js, Python, and PHP, allowing you to pick the most productive language for the task at hand. Like most cloud-based solutions, you pay only for the amount of time your use, and you can trust Azure Functions to scale up as needed.
 
-## <span id="page-115-2"></span>Data
+#### <span id="page-115-2"></span>Data
 
 Azure offers a wide variety of data storage options, so that your application can use the appropriate data provider for the data in question.
 

@@ -63,50 +63,50 @@ Microsoft and the trademarks listed at http://www.microsoft.com on the "Trademar
 | Managing the lifetime of resolved objects                                   | 22 |
 | Summary                                                                     |    |
 
-| Communicating between loosely coupled components  | 2 |
-|---------------------------------------------------|---|
-| Introduction to MessagingCenter                   | 2 |
-| Defining a message                                | 2 |
-| Publishing a message                              | 2 |
-| Subscribing to a message                          | 2 |
-| Unsubscribing from a message                      | 2 |
-| Summary                                           | 2 |
-| Navigation                                        | 2 |
-| Navigating between pages                          | 2 |
-| Creating the NavigationService instance           | 2 |
-| Handling navigation requests                      | 3 |
-| Navigating when the app is launched               | 3 |
-| Passing parameters during navigation              | 3 |
-| Invoking navigation using behaviors               | 3 |
-| Confirming or cancelling navigation               | 3 |
-| Summary                                           | 3 |
-| Validation                                        | 3 |
-| Specifying validation rules                       | 3 |
-| Adding validation rules to a property             | 3 |
-| Triggering validation                             | 3 |
-| Triggering validation manually                    | 3 |
-| Triggering validation when properties change      | 4 |
-| Displaying validation errors                      |   |
-| Highlighting a control that contains invalid data |   |
-| Displaying error messages                         |   |
-| Summary                                           |   |
-| Configuration management                          | 4 |
-| Creating a settings class                         |   |
-| Adding a setting                                  |   |
-| Data binding to user settings                     |   |
-| Summary                                           |   |
-| Containerized microservices                       | 5 |
-| Microservices                                     | 5 |
-| Containerization                                  |   |
-| Communication between client and microservices    |   |
-| Communication between microservices               |   |
-| Summary                                           |   |
-| Authentication and authorization                  | 5 |
-| Authentication                                    |   |
-| Issuing bearer tokens using IdentityServer 4      |   |
-| Adding IdentityServer to a web application        |   |
-| Configuring IdentityServer                        |   |
-|                                                   |   |
+| Communicating between loosely coupled components  | 24 |
+|---------------------------------------------------|----|
+| Introduction to MessagingCenter                   | 2  |
+| Defining a message                                | 2  |
+| Publishing a message                              | 2  |
+| Subscribing to a message                          | 2  |
+| Unsubscribing from a message                      | 2  |
+| Summary                                           | 2  |
+| Navigation                                        | 2  |
+| Navigating between pages                          | 2  |
+| Creating the NavigationService instance           | 2  |
+| Handling navigation requests                      | 3  |
+| Navigating when the app is launched               | 3  |
+| Passing parameters during navigation              | 3  |
+| Invoking navigation using behaviors               | 3  |
+| Confirming or cancelling navigation               | 3  |
+| Summary                                           | 3  |
+| Validation                                        | 3  |
+| Specifying validation rules                       | 3  |
+| Adding validation rules to a property             | 3  |
+| Triggering validation                             | 3  |
+| Triggering validation manually                    | 3  |
+| Triggering validation when properties change      | 4  |
+| Displaying validation errors                      |    |
+| Highlighting a control that contains invalid data |    |
+| Displaying error messages                         |    |
+| Summary                                           |    |
+| Configuration management                          | 4  |
+| Creating a settings class                         |    |
+| Adding a setting                                  |    |
+| Data binding to user settings                     |    |
+| Summary                                           |    |
+| Containerized microservices                       | 5  |
+| Microservices                                     | 5  |
+| Containerization                                  |    |
+| Communication between client and microservices    |    |
+| Communication between microservices               |    |
+| Summary                                           |    |
+| Authentication and authorization                  | 5  |
+| Authentication                                    |    |
+| Issuing bearer tokens using IdentityServer 4      |    |
+| Adding IdentityServer to a web application        |    |
+| Configuring IdentityServer                        |    |
+|                                                   |    |
 
 | Performing authentication                           | 64 |
 |-----------------------------------------------------|----|
@@ -1205,7 +1205,7 @@ public override async Task InitializeAsync(object navigationData)
 
 This method retrieves the Order instance that was passed into the view model during the navigation operation, and uses it to retrieve the full order details from the OrderService instance.
 
-### <span id="page-40-0"></span>**Invoking navigation using behaviors**
+## <span id="page-40-0"></span>**Invoking navigation using behaviors**
 
 Navigation is usually triggered from a view by a user interaction. For example, the LoginView performs navigation following successful authentication. The following code example shows how the navigation is invoked by a behavior:
 
@@ -1627,7 +1627,7 @@ The line in the Entry control will remain red while the entered data is invalid,
 
 For more information about Triggers, se[e Triggers](https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/triggers/) on the Xamarin Developer Center.
 
-### **Displaying error messages**
+## **Displaying error messages**
 
 The UI displays validation error messages in Label controls below each control whose data failed validation. The following code example shows the Label that displays a validation error message if the user has not entered a valid username:
 
@@ -1812,7 +1812,7 @@ Developing client-server applications has resulted in a focus on building tiered
 
 Particularly concerning in the age of the cloud, is that individual components can't be easily scaled. A monolithic application contains domain-specific functionality, and is typically divided by functional layers such as front end, business logic, and data storage. A monolithic application is scaled by cloning the entire application onto multiple machines, as illustrated in Figure 8-1.
 
-![](_page_57_Picture_4.jpeg)
+![](_page_57_Picture_5.jpeg)
 
 **Figure 8-1**: Monolithic application scaling approach
 
@@ -1858,9 +1858,9 @@ A container is an isolated, resource controlled, and portable operating environm
 
 There are many similarities between containers and virtual machines, as illustrated in Figure 8-3.
 
-![](_page_60_Picture_2.jpeg)
+![](_page_60_Picture_1.jpeg)
 
-![](_page_60_Figure_4.jpeg)
+![](_page_60_Figure_3.jpeg)
 
 **Figure 8-3**: Comparison of virtual machines and containers
 
@@ -2419,7 +2419,7 @@ For more information about REST, see [API design](https://docs.microsoft.com/en-
 
 The eShopOnContainers mobile app uses the Model-View-ViewModel (MVVM) pattern, and the model elements of the pattern represent the domain entities used in the app. The controller and repository classes in the eShopOnContainers reference application accept and return many of these model objects. Therefore, they are used as data transfer objects (DTOs) that hold all the data that is passed between the mobile app and the containerized microservices. The main benefit of using DTOs to pass data to and receive data from a web service is that by transmitting more data in a single remote call, the app can reduce the number of remote calls that need to be made.
 
-### **Making web requests**
+#### **Making web requests**
 
 The eShopOnContainers mobile app uses the HttpClient class to make requests over HTTP, with JSON being used as the media type. This class provides functionality for asynchronously sending HTTP requests and receiving HTTP responses from a URI identified resource. The HttpResponseMessage class represents an HTTP response message received from a REST API after an HTTP request has been made. It contains information about the response, including the status code, headers, and any body. The HttpContent class represents the HTTP body and content headers, such as Content-Type and Content-Encoding. The content can be read using any of the ReadAs methods, such as ReadAsStringAsync and ReadAsByteArrayAsync, depending on the format of the data.
 
@@ -2849,7 +2849,7 @@ The unit tests included with the eShopOnContainers mobile app are fact tests, an
 
 **Note:** xUnit tests are executed by a test runner. To execute the test runner, run the eShopOnContainers.TestRunner project for the required platform.
 
-### **Testing asynchronous functionality**
+#### **Testing asynchronous functionality**
 
 When implementing the MVVM pattern, view models usually invoke operations on services, often asynchronously. Tests for code that invokes these operations typically use mocks as replacements for the actual services. The following code example demonstrates testing asynchronous functionality by passing a mock service into a view model:
 
@@ -2898,7 +2898,7 @@ public async Task SettingOrderPropertyShouldRaisePropertyChanged()
 
 This unit test invokes the InitializeAsync method of the OrderViewModel class, which causes its Order property to be updated. The unit test will pass, provided that the PropertyChanged event is raised for the Order property.
 
-### **Testing message-based communication**
+#### **Testing message-based communication**
 
 View models that use the MessagingCenter class to communicate between loosely-coupled classes can be unit tested by subscribing to the message being sent by the code under test, as demonstrated in the following code example:
 

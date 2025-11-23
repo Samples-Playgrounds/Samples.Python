@@ -1,3 +1,0 @@
-,Tip
-0,You can use the ChannelCredentials.Create method for a client without certificate authentication. This
-1,is a useful way to pass token credentials with every call made on the channel.

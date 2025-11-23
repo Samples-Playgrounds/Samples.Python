@@ -1,9 +1,0 @@
-,"<button @onclick=""ShowMessage"">Get message</button>"
-0,
-1,@if (showMessage)
-2,{
-3,@if (message == null)
-4,{
-5,<p><em>Loading...</em></p>
-6,}
-7,else

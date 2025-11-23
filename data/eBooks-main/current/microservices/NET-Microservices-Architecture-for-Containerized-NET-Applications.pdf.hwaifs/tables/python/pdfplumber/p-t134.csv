@@ -1,9 +1,0 @@
-,0
-0,"- ""80"""
-1,ports:
-2,"- ""5101:80"""
-3,#extra hosts can be used for standalone SQL Server or services at the dev PC
-4,extra_hosts:
-5,"- ""CESARDLSURFBOOK:10.0.75.1"""
-6,depends_on:
-7,- sqldata

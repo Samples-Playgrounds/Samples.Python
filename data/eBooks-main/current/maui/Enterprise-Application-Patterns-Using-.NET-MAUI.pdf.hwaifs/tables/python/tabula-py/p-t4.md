@@ -1,5 +1,0 @@
-|    | public ICommand NavigateCommand { get; }                        |
-|---:|:----------------------------------------------------------------|
-|  0 |                                                                 |
-|  1 | ...                                                             |
-|  2 | NavigateCommand = new AsyncRelayCommand<string>(NavigateAsync); |

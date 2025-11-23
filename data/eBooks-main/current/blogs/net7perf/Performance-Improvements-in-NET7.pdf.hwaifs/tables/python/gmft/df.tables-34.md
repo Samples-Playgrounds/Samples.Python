@@ -1,4 +1,0 @@
-|    | Method     | Runtime   | Mean     |   Ratio |   Code Size |
-|---:|:-----------|:----------|:---------|--------:|------------:|
-|  0 | GuidEquals | .NET 6.0  | 2.119 ns |    1    |          90 |
-|  1 | GuidEquals | .NET 7.0  | 1.354 ns |    0.64 |          78 |

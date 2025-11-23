@@ -1,5 +1,0 @@
-,Unnamed: 0
-0,#Other environment variables for additional Azure infrastructure assets
-1,#ESHOP_AZURE_REDIS_BASKET_DB=<YourAzureRedisBasketInfo>
-2,#ESHOP_AZURE_STORAGE_CATALOG_URL=<YourAzureStorage_Catalog_BLOB_URL>
-3,#ESHOP_AZURE_SERVICE_BUS=<YourAzureServiceBusInfo>

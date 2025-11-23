@@ -1,6 +1,0 @@
-,public static void RegisterRoutes(RouteCollection routes)
-0,{
-1,"routes.IgnoreRoute(""{resource}.axd/{*pathInfo}"");"
-2,
-3,"routes.Add(new Route(""custom"", new CustomRouteHandler()));"
-4,}
