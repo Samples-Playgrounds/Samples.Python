@@ -1,57 +1,58 @@
 #!/bin/bash
 
+sys_term_clean_screen_and_buffer
 
-figlet docling
-cd ./docling/
-source ./test.sh
-cd ..
+EXTRACTORS=\
+"
+markitdown
+pdfminer.six
+docling
+pdfplumber
+PyMuPDF
+pymupdf4llm
+PyPDF2
+unstructured
+# OCR based => slower
+marker
+pytesseract
+# NOT working yet - ERRORS
+# pymupdf4llm-c
+# deepdoctection-pytorch
+# deepdoctection-tensorflow
+# NOT working yet - WIP 
+# extractous
+# multilingual-pdf2text
+# pdf2text
+# pdfium2
+# pypdf
+# simple-pdf2text
+# slate
+# tika
+"
 
-figlet markitdown
-cd ./markitdown/
-source ./test.sh
-cd ..
 
-figlet minecart
-cd ./minecart/
-source ./test.sh
-cd ..
+IFS=$'\n'
+# ZSH does not split words by default (like other shells):
+setopt sh_word_split
 
-figlet pdfminer.six
-cd ./pdfminer.six/
-source ./test.sh
-cd ..
+for EXTRACTOR in $EXTRACTORS
+do
+    if [[ $EXTRACTOR == "#"* ]]
+    then
+        echo "......................................................................"        
+        echo $EXTRACTOR skipped
+        continue
+    fi
 
-figlet pdfplumber
-cd ./pdfplumber/
-source ./test.sh
-cd ..
+    cd $EXTRACTOR
+    source ./test.sh
+    cd ..
+done
 
-figlet PyMuPDF
-cd ./PyMuPDF/
-source ./test.sh
-cd ..
 
-figlet pymupdf4llm
-cd ./pymupdf4llm/
-source ./test.sh
-cd ..
-
-figlet PyPDF2
-cd ./PyPDF2/
-source ./test.sh
-cd ..
-
-figlet unstructured
-cd ./unstructured/
-source ./test.sh
-cd ..
-
-figlet marker
-cd ./marker/
-source ./test.sh
-cd ..
-
-figlet pytesseract
-cd ./pytesseract/
-source ./test.sh
-cd ..
+figlet "==========="
+for i in $(seq 1 10);
+do
+    echo -en "\007"
+    say "I'm done"
+done

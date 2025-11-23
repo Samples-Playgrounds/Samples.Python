@@ -1,22 +1,36 @@
 #!/bin/bash
 
-figlet PyMuPDF-fitz
-cd ./PyMuPDF-fitz/
-source ./test.sh
-cd ..
+EXTRACTORS=\
+"
+PyMuPDF-fitz
+pypdf-PyPDF2
+pikepdf
+minecart
+"
 
-figlet pypdf-PyPDF2
-cd ./pypdf-PyPDF2/
-source ./test.sh
-cd ..
 
-figlet pikepdf
-cd ./pikepdf/
-source ./test.sh
-cd ..
+IFS=$'\n'
+# ZSH does not split words by default (like other shells):
+setopt sh_word_split
 
-figlet minecart
-cd ./minecart/
-source ./test.sh
-cd ..
+for EXTRACTOR in $EXTRACTORS
+do
+    if [[ $EXTRACTOR == "#"* ]]
+    then
+        echo "......................................................................"        
+        echo $EXTRACTOR skipped
+        continue
+    fi
 
+    cd $EXTRACTOR
+    source ./test.sh
+done
+
+
+
+figlet "==========="
+for i in $(seq 1 10);
+do
+    echo -en "\007"
+    say "I'm done"
+done
