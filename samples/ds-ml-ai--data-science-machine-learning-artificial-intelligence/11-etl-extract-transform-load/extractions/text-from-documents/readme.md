@@ -2,12 +2,14 @@
 
 text
 
-https://www.blog.pythonlibrary.org/2018/05/03/exporting-data-from-pdfs-with-python/
+*   https://www.blog.pythonlibrary.org/2018/05/03/exporting-data-from-pdfs-with-python/
 
-    slate
-    pdf2text
-    pypdf
-    pdfium
+    tika
+
+    
+    https://medium.com/@thibaultmonsel_4024/extract-text-from-pdf-with-python-python-pdf-processing-part-1-be875d76234b
+
+    https://www.reddit.com/r/LangChain/comments/1e7cntq/whats_the_best_python_library_for_extracting_text/
         
     *   https://www.reddit.com/r/LangChain/comments/1e7cntq/whats_the_best_python_library_for_extracting_text/
 
