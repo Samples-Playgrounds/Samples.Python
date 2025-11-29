@@ -2,6 +2,8 @@
 
 sys_term_clean_screen_and_buffer
 
+ls -1 >> list.md
+
 EXTRACTORS=\
 "
 markitdown
@@ -12,6 +14,7 @@ PyMuPDF
 pymupdf4llm
 PyPDF2
 unstructured
+pdfium2
 # OCR based => slower
 marker
 pytesseract
@@ -23,7 +26,6 @@ pytesseract
 # extractous
 # multilingual-pdf2text
 # pdf2text
-# pdfium2
 # pypdf
 # simple-pdf2text
 # slate
