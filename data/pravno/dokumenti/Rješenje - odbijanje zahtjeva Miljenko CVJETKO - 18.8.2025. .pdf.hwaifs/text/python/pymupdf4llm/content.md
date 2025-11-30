@@ -30,7 +30,7 @@ Cvjetko za 2024.godinu.
 
 Korisnik prava na pristup informacijama poslao je e-mail dana 11.08.2025.g. koji je uputio na sljedeće e
 
-- mail adrese: office@judo.hr, sluzbenik-informiranje@judo.hr,
+- mail adrese: - ffice@judo.hr, sluzbenik-informiranje@judo.hr,
 dean.bogic@judo.hr,ivan.segedi@kif.unizg.hr,ivan.segedi@kif.hr,tadija.orlovic@odata.com.hrr,d.vlasta
 @stucos.hr,ivan.jelencic1946@gmail.com,gkovacic23@gmail.com,fernando.kirigin@opatija.hr,kirigin@
 hotmail.com,ppi@pristupinfo.hr,pisarnica@pristupinfo.hr,marija.picek@pristupinfo.hr,
@@ -46,8 +46,10 @@ rješavalo od 21. zahtjevu podnio žalbu Povjereniku za informiranje.
 Tekst e-maila od 11.08.2025.g. koji prati sada 25. podnesena zahtjeva nejasan je i konfuzan u smislu
 razloga traženja pristupa informacijama, pa se tijelo javne vlasti neće u ovom Rješenju posebno referirati
 na taj tekst. Obzirom je u odnosu na podnositelja zahtjeva pravno situacija nepromijenjena, odnosno sve
-okolnosti su identične onima u ožujku 2025.godine (trajanje sudskog postupka), to je tijelo javne vlasti
-odlučilo kako se u dispozitivu navodi.
+
+- kolnosti su identične onima u ožujku 2025.godine (trajanje sudskog postupka), to je tijelo javne vlasti
+
+- dlučilo kako se u dispozitivu navodi.
 
 Odredbom članka 23. stavkom 6., točka 1. Zakona o pravu na pristup informacijama propisano je da će
 tijelo javne vlasti rješenjem odbiti zahtjev ako se ispune uvjeti propisani u članku 15. stavku 1. citiranog
@@ -58,7 +60,8 @@ Obzirom je situacija nepromijenjena, odnosno i dalje se pred Općinskim kaznenim
 kazneni postupak, poslovni broj: K-240/2022, privatni tužitelj HJS, optuženik Miljenko Cvjetko, datum
 pokretanja postupka 18.02.2022.g., radi kaznenog djela iz čl.147 st.2. Kaznenog zakona – Uvreda –
 kaznena djela protiv časti i ugleda, to za vrijeme trajanja postupka tijelo javne vlasti ima zakonsku obvezu
-ograničavanja pristupa informacijama. Zatražene informacije referiraju se i na citirani kazneni postupak.
+
+- graničavanja pristupa informacijama. Zatražene informacije referiraju se i na citirani kazneni postupak.
 
 Nadalje, odredbom članka 23. stavkom 6. točkom 5. Zakona o pravu na pristup informacijama, propisano
 je da će tijelo javne vlasti rješenjem odbiti zahtjev ako jedan ili više međusobno povezanih podnositelja

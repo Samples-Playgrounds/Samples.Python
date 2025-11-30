@@ -37,10 +37,10 @@ without notice.
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association
 
-or connection is intended or should be inferred.
+- r connection is intended or should be inferred.
 
 
-[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) on the “Trademarks” webpage are
+[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) - n the “Trademarks” webpage are
 trademarks of the Microsoft group of companies.
 
 
@@ -70,7 +70,8 @@ Scott Addie
 
 
 Welcome to the Azure Development Lifecycle guide for .NET! This guide introduces the basic concepts
-of building a development lifecycle around Azure using .NET tools and processes. After finishing this
+
+- f building a development lifecycle around Azure using .NET tools and processes. After finishing this
 guide, you’ll reap the benefits of a mature DevOps toolchain.
 
 ### Who this guide is for
@@ -424,11 +425,11 @@ Chapter 4.
 The following tools are required:
 
 
-  - [Git](https://git-scm.com/downloads) — A fundamental understanding of Git is recommended for this guide. Review the Git
+  - [Git](https://git-scm.com/downloads)  - A fundamental understanding of Git is recommended for this guide. Review the Git
 [documentation, specifically git remote](https://git-scm.com/doc) [and git push.](https://git-scm.com/docs/git-push)
 
 
-  - [.NET Core SDK](https://dotnet.microsoft.com/download/) — Version 2.1.300 or later is required to build and run the sample app. If
+  - [.NET Core SDK](https://dotnet.microsoft.com/download/)  - Version 2.1.300 or later is required to build and run the sample app. If
 Visual Studio is installed with the **.NET Core cross-platform development** workload, the
 .NET Core SDK is already installed.
 
@@ -453,19 +454,16 @@ with and without Visual Studio.
 [Confirm that Visual Studio has the following workloads](https://docs.microsoft.com/visualstudio/install/modify-visual-studio) installed:
 
 
-–
-ASP.NET and web development
+     ASP.NET and web development
 
 
-–
-Azure development
+     Azure development
 
 
 1 CHAPTER 1 | Tools and downloads
 
 
-–
-.NET Core cross-platform development
+     .NET Core cross-platform development
 
 
 2 CHAPTER 1 | Tools and downloads
@@ -617,7 +615,8 @@ d. Create the web app resource using the App Service plan in the same resource g
 e. Set the deployment branch to main in the appsettings configuration.
 
 
-:::{custom-style=CodeBox} azurecli az webapp config appsettings set --name $webappname -resource-group AzureTutorial --settings DEPLOYMENT_BRANCH=main :::
+:::{custom-style=CodeBox} azurecli az webapp config appsettings set --name $webappname 
+    - resource-group AzureTutorial --settings DEPLOYMENT_BRANCH=main :::
 
 
 f. Set the deployment credentials. These deployment credentials apply to all the web
@@ -637,7 +636,7 @@ _deployment URL_ . **Note this URL for reference later** .
 
 :::{custom-style=CodeBox} azurecli echo Git deployment URL: $(az webapp deployment
 source config-local-git --name $webappname --resource-group AzureTutorial --query url -
-output tsv) :::
+     - utput tsv) :::
 
 
 h. Display the _web app URL_ . Browse to this URL to see the blank web app. **Note this**
@@ -703,7 +702,8 @@ command line tooling, but within Visual Studio’s familiar UI.
 
 5. Visual Studio can create a new App Service resource, but this update will be published over
 the existing deployment. In the **Pick a publish target** dialog, select **App Service** from the list
-on the left, and then select **Select Existing** . Click **Publish** .
+
+     - n the left, and then select **Select Existing** . Click **Publish** .
 
 
 6. In the **App Service** dialog, confirm that the Microsoft or Organizational account used to
@@ -742,13 +742,15 @@ a. Create a deployment slot with the name _staging_ .
 
 
 :::{custom-style=CodeBox} azurecli az webapp deployment slot create --name $webappname
---resource-group AzureTutorial --slot staging :::
+
+    - -resource-group AzureTutorial --slot staging :::
 
 
 b. Set the deployment branch to main in the appsettings configuration.
 
 
-:::{custom-style=CodeBox} azurecli az webapp config appsettings set --name $webappname -resource-group AzureTutorial --slot staging --settings DEPLOYMENT_BRANCH=main :::
+:::{custom-style=CodeBox} azurecli az webapp config appsettings set --name $webappname 
+    - resource-group AzureTutorial --slot staging --settings DEPLOYMENT_BRANCH=main :::
 
 
 c. Configure the staging slot to use deployment from local Git and get the **staging**
@@ -814,7 +816,8 @@ app.
 9 CHAPTER 2 | Deploy an app to App Service
 
 
-:::{custom-style=CodeBox} azurecli az webapp deployment slot swap --name $webappname -resource-group AzureTutorial --slot staging :::
+:::{custom-style=CodeBox} azurecli az webapp deployment slot swap --name $webappname 
+    - resource-group AzureTutorial --slot staging :::
 
 
 8. Verify that the swap occurred by refreshing the two browser windows.
@@ -989,7 +992,8 @@ quickly locate the App Service.
 
 2. Click **Deployment Center** . A new panel appears. Click **Disconnect** to remove the local Git
 source control configuration that was added in the previous chapter. Confirm the removal
-operation by clicking the **Yes** button.
+
+    - peration by clicking the **Yes** button.
 
 ### Create an Azure DevOps organization
 
@@ -1023,7 +1027,7 @@ operation by clicking the **Yes** button.
 
 
 To build your code or deploy your software using Azure Pipelines, you need at least one agent. In
-Azure Pipelines, you can run parallel jobs on either **Microsoft-hosted** or **self-hosted** agent. But with
+Azure Pipelines, you can run parallel jobs on either **Microsoft-hosted** - r **self-hosted** agent. But with
 the recent change in Azure Pipelines free grant of parallel jobs is temporarily disable for the public
 [projects.For more details, refer Configure and pay for parallel jobs.](https://docs.microsoft.com/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted&preserve-view=true)
 
@@ -1058,7 +1062,7 @@ pipeline:
 1. Use Use the classic editor to create the pipeline.
 
 
-1. Select the **GitHub** option from the **Select a source** section::
+1. Select the **GitHub**  - ption from the **Select a source** section::
 
 
 1. Authorization is required before Azure DevOps can access your GitHub repository. Enter
@@ -1067,6 +1071,7 @@ _GitHub connection_ in the **Connection name** textbox. For example:
 
 1. If two-factor authentication is enabled on your GitHub account, a personal access token is
 required. In that case, click the **Authorize with a GitHub personal access token** link. See the
+
 [official GitHub personal access token creation instructions](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for help. Only the _repo_ scope of
 permissions is needed. Otherwise, click the **Authorize using OAuth** button.
 
@@ -1121,7 +1126,7 @@ branch (*main*) of the GitHub repository. Continuous integration is tested in th
 
 ```
 
-1. Click the **Save & queue** button, and select the **Save** option:
+1. Click the **Save & queue** button, and select the **Save**  - ption:
 
 
 1. The following modal dialog appears:
@@ -1192,7 +1197,7 @@ enable the feature. It isn’t necessary to enable the **Pull request trigger** 
 
 
 2. Click the **Add** drop-down in the **Build branch filters** section. Choose the **Build Definition’s**
-**default branch** option. This filter causes the release to trigger only for a build from the
+**default branch**    - ption. This filter causes the release to trigger only for a build from the
 GitHub repository’s default branch ( _main_ ).
 
 
@@ -1326,11 +1331,11 @@ The build definition’s **Tasks** tab lists the individual steps being used. Th
 23 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
 
 
-1. **Restore** — Executes the dotnet restore command to restore the app’s NuGet packages. The
+1. **Restore**  - Executes the dotnet restore command to restore the app’s NuGet packages. The
 default package feed used is nuget.org.
 
 
-2. **Build** — Executes the dotnet build --configuration release command to compile the app’s
+2. **Build**  - Executes the dotnet build --configuration release command to compile the app’s
 code. This --configuration option is used to produce an optimized version of the code, which
 is suitable for deployment to a production environment. Modify the _BuildConfiguration_
 variable on the build definition’s **Variables** tab if, for example, a debug configuration is
@@ -1338,7 +1343,7 @@ variable on the build definition’s **Variables** tab if, for example, a debug 
 needed.
 
 
-3. **Test** — Executes the dotnet test --configuration release --logger trx --results-directory
+3. **Test**  - Executes the dotnet test --configuration release --logger trx --results-directory
 <local_path_on_build_agent> command to run the app’s unit tests. Unit tests are executed
 within any C# project matching the ** _/_ Tests/ _.csproj_ glob pattern. Test results are saved in a _.trx_
 file at the location specified by the --results-directory option. If any tests fail, the build fails
@@ -1349,7 +1354,8 @@ and isn’t deployed.
 
 
 [!NOTE] To verify the unit tests work, modify _SimpleFeedReader.Tests.cs_ to purposefully break
-one of the tests. For example, change Assert.True(result.Count > 0); to
+
+    - ne of the tests. For example, change Assert.True(result.Count > 0); to
 
 Assert.False(result.Count > 0); in the Returns_News_Stories_Given_Valid_Uri method. Commit
 
@@ -1357,14 +1363,14 @@ and push the change to GitHub. The build is triggered and fails. The build pipel
 changes to **failed** . Revert the change, commit, and push again. The build succeeds.
 
 
-4. **Publish** — Executes the dotnet publish --configuration release --output
+4. **Publish**  - Executes the dotnet publish --configuration release --output
 <local_path_on_build_agent> command to produce a _.zip_ file with the artifacts to be
 deployed. The --output option specifies the publish location of the _.zip_ file. That location is
 [specified by passing a predefined variable](https://docs.microsoft.com/azure/devops/pipelines/build/variables) named $(build.artifactstagingdirectory). That
 variable expands to a local path, such as *c:_work\1, on the build agent.
 
 
-5. **Publish Artifact** — Publishes the _.zip_ file produced by the **Publish** task. The task accepts the
+5. **Publish Artifact**  - Publishes the _.zip_ file produced by the **Publish** task. The task accepts the
 _.zip_ file location as a parameter, which is the predefined variable
 $(build.artifactstagingdirectory). The _.zip_ file is published as a folder named _drop_ .
 
@@ -1546,7 +1552,8 @@ Web App. The Web App can be quickly located by entering _staging_ in the portal�
 
 1. Click **Deployment Center** . A new panel appears. Click **Disconnect** to remove the local Git
 source control configuration that was added in the previous chapter. Confirm the removal
-operation by clicking the **Yes** button.
+
+    - peration by clicking the **Yes** button.
 
 
 2. Navigate to the _mywebapp_ App Service. As a reminder, the portal’s search box can be used to
@@ -1555,7 +1562,8 @@ quickly locate the App Service.
 
 3. Click **Deployment Center** . A new panel appears. Click **Disconnect** to remove the local Git
 source control configuration that was added in the previous chapter. Confirm the removal
-operation by clicking the **Yes** button.
+
+    - peration by clicking the **Yes** button.
 
 #### **Create an Azure DevOps organization**
 
@@ -1592,7 +1600,7 @@ operation by clicking the **Yes** button.
 
 
 To build your code or deploy your software using Azure Pipelines, you need at least one agent. In
-Azure Pipelines, you can run parallel jobs on either **Microsoft-hosted** or **self-hosted** agent. But with
+Azure Pipelines, you can run parallel jobs on either **Microsoft-hosted** - r **self-hosted** agent. But with
 the recent change in Azure Pipelines free grant of parallel jobs is temporarily disable for the public
 [projects.For more details, refer Configure and pay for parallel jobs.](https://docs.microsoft.com/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted&preserve-view=true)
 
@@ -1625,7 +1633,7 @@ pipeline:
 1. Use Use the classic editor to create the pipeline.
 
 
-1. Select the **GitHub** option from the **Select a source** section::
+1. Select the **GitHub**  - ption from the **Select a source** section::
 
 
 1. Authorization is required before Azure DevOps can access your GitHub repository. Enter
@@ -1637,6 +1645,7 @@ _GitHub connection_ in the **Connection name** textbox. For example:
 
 1. If two-factor authentication is enabled on your GitHub account, a personal access token is
 required. In that case, click the **Authorize with a GitHub personal access token** link. See the
+
 [official GitHub personal access token creation instructions](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for help. Only the _repo_ scope of
 permissions is needed. Otherwise, click the **Authorize using OAuth** button.
 
@@ -1691,7 +1700,7 @@ branch (*main*) of the GitHub repository. Continuous integration is tested in th
 
 ```
 
-1. Click the **Save & queue** button, and select the **Save** option:
+1. Click the **Save & queue** button, and select the **Save**  - ption:
 
 
 35 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
@@ -1764,7 +1773,7 @@ enable the feature. It isn’t necessary to enable the **Pull request trigger** 
 
 
 2. Click the **Add** drop-down in the **Build branch filters** section. Choose the **Build Definition’s**
-**default branch** option. This filter causes the release to trigger only for a build from the
+**default branch**    - ption. This filter causes the release to trigger only for a build from the
 GitHub repository’s default branch ( _main_ ).
 
 
@@ -1899,11 +1908,11 @@ The build definition’s **Tasks** tab lists the individual steps being used. Th
 41 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
 
 
-1. **Restore** — Executes the dotnet restore command to restore the app’s NuGet packages. The
+1. **Restore**  - Executes the dotnet restore command to restore the app’s NuGet packages. The
 default package feed used is nuget.org.
 
 
-2. **Build** — Executes the dotnet build --configuration release command to compile the app’s
+2. **Build**  - Executes the dotnet build --configuration release command to compile the app’s
 code. This --configuration option is used to produce an optimized version of the code, which
 is suitable for deployment to a production environment. Modify the _BuildConfiguration_
 variable on the build definition’s **Variables** tab if, for example, a debug configuration is
@@ -1911,7 +1920,7 @@ variable on the build definition’s **Variables** tab if, for example, a debug 
 needed.
 
 
-3. **Test** — Executes the dotnet test --configuration release --logger trx --results-directory
+3. **Test**  - Executes the dotnet test --configuration release --logger trx --results-directory
 <local_path_on_build_agent> command to run the app’s unit tests. Unit tests are executed
 within any C# project matching the ** _/_ Tests/ _.csproj_ glob pattern. Test results are saved in a _.trx_
 file at the location specified by the --results-directory option. If any tests fail, the build fails
@@ -1922,7 +1931,8 @@ and isn’t deployed.
 
 
 [!NOTE] To verify the unit tests work, modify _SimpleFeedReader.Tests.cs_ to purposefully break
-one of the tests. For example, change Assert.True(result.Count > 0); to
+
+    - ne of the tests. For example, change Assert.True(result.Count > 0); to
 
 Assert.False(result.Count > 0); in the Returns_News_Stories_Given_Valid_Uri method. Commit
 
@@ -1930,14 +1940,14 @@ and push the change to GitHub. The build is triggered and fails. The build pipel
 changes to **failed** . Revert the change, commit, and push again. The build succeeds.
 
 
-4. **Publish** — Executes the dotnet publish --configuration release --output
+4. **Publish**  - Executes the dotnet publish --configuration release --output
 <local_path_on_build_agent> command to produce a _.zip_ file with the artifacts to be
 deployed. The --output option specifies the publish location of the _.zip_ file. That location is
 [specified by passing a predefined variable](https://docs.microsoft.com/azure/devops/pipelines/build/variables) named $(build.artifactstagingdirectory). That
 variable expands to a local path, such as *c:_work\1, on the build agent.
 
 
-5. **Publish Artifact** — Publishes the _.zip_ file produced by the **Publish** task. The task accepts the
+5. **Publish Artifact**  - Publishes the _.zip_ file produced by the **Publish** task. The task accepts the
 _.zip_ file location as a parameter, which is the predefined variable
 $(build.artifactstagingdirectory). The _.zip_ file is published as a folder named _drop_ .
 
@@ -2243,11 +2253,11 @@ system finds an “agent” and tells the agent to execute the jobs defined in t
 
 Azure Pipelines run on _agents_ . The agent is written in .NET, so it will run wherever .NET can run:
 [Windows, macOS, and Linux. Agents can even run in containers. Agents are registered to a pool](https://docs.microsoft.com/azure/devops/pipelines/agents/pools-queues) in
-Azure Pipelines or to a repository or organization in GitHub. Agents can be _hosted_ or _private_ .
+Azure Pipelines or to a repository or organization in GitHub. Agents can be _hosted_ - r _private_ .
 
 
 GitHub Workflows execute on _runners_ . The runner code is essentially a fork of the Azure Pipelines
-code, so it’s very similar. It’s also cross-platform and you can also use _hosted_ or _self-hosted_ runners.
+code, so it’s very similar. It’s also cross-platform and you can also use _hosted_ - r _self-hosted_ runners.
 
 
 **Hosted agents and runners**
@@ -2456,15 +2466,17 @@ Workflows are defined in YAML files, and contain several common nodes:
   a trigger, defined by an on section
 
 
-  one or more job sections composed of one or more steps
+  
+    - ne or more job sections composed of one or more steps
 
 
-  - optional attributes such as environment variables
+  -  - ptional attributes such as environment variables
 
 
 Jobs are run on _runners_ . You can use _hosted runners_, which are spun up by GitHub during the
 workflow and then thrown away. Hosted runners are great because you don’t have to maintain your
-own build infrastructure. For workflows that require a specific build environment, or for running
+
+- wn build infrastructure. For workflows that require a specific build environment, or for running
 workflows on a private network, you can also use _private_ runners. To create a private runner, install the
 runner on any machine that supports .NET.
 
@@ -2623,14 +2635,12 @@ command to publish the web app:
 :::{custom-style=CodeBox} ```yml
 
 
-–
-name: Test run: dotnet test –no-build –verbosity normal # <– this is the current
+     name: Test run: dotnet test –no-build –verbosity normal # <– this is the current
 
 bottom line
 
 
-–
-name: Publish run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c
+     name: Publish run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c
 
 Release -o website ``` :::
 
@@ -2665,8 +2675,7 @@ snippet and paste it into the workflow below the publish step.
 :::{custom-style=CodeBox} ```yml
 
 
-–
-name: Upload a Build Artifact uses: actions/upload-artifact@v3 with: name: website
+     name: Upload a Build Artifact uses: actions/upload-artifact@v3 with: name: website
 path: SimpleFeedReader/website/** if-no-files-found: error ``` :::
 
 
@@ -2823,7 +2832,8 @@ you’ll just perform a slot swap.
 In this case, the only difference between the environments is the slot that you’re deploying to. In real
 life, there would typically be different web apps (and separate web app plans), separate resource
 groups, and even separate subscriptions. Typically, there’s an SPN per environment. You may want to
-override the AZURE_CREDENTIAL value that you saved as a repository secret by creating it as an
+
+- verride the AZURE_CREDENTIAL value that you saved as a repository secret by creating it as an
 
 _environment secret_ .
 
@@ -2880,7 +2890,8 @@ adding a deployment to the PRE-PROD environment, which in this case is the web a
 
 
 2. You’re going to use the web app name a few times in this workflow, and will need the name
-of the resource group too. You’ll define the app and resource group names as variables. With
+
+    - f the resource group too. You’ll define the app and resource group names as variables. With
 the variables, you can maintain the values in one place in the workflow file.
 
 
@@ -3022,7 +3033,8 @@ perform a slot swap. You start by executing a login to the Azure context.
 
 
 4. The Swap staging slot into production step is a multi-line run command (note the use
-of the pipe symbol |). You also specify an id for this step so that you can refer to it
+
+         - f the pipe symbol |). You also specify an id for this step so that you can refer to it
 (you refer to it in the url property of the environment). The first line executes the slot
 swap using the variables you defined above in the workflow. The second line uses an
 az webapp show command to extract the URL of the target web app. This final line
@@ -3101,7 +3113,7 @@ defined in the workflow, you can select the branch for the run.
 
 5. To see the **Run workflow** button, select the **Actions** tab. Select the .NET workflow in the list
 
-of workflows. At the top of the list of runs, you’ll see the **Run workflow** button. If you select
+     - f workflows. At the top of the list of runs, you’ll see the **Run workflow** button. If you select
 it, you can choose the branch to run the workflow against and queue it:
 
 ```
@@ -3313,7 +3325,7 @@ recommended workflow should be CodeQL Analysis. Select **Set up this workflow** 
 1. A new workflow file is created in your _.github/workflows_ folder.
 
 
-2. Select **Start Commit** on the upper right to save the default workflow. You can commit to the
+2. Select **Start Commit**  - n the upper right to save the default workflow. You can commit to the
 main branch.
 
 ```
@@ -3355,7 +3367,8 @@ the English text for the cron expression.
 
 
 4. This workflow defines a strategy with a matrix on the array of language. In this case, there’s
-only csharp. If the repository contained other languages, you could add them to this array.
+
+    - nly csharp. If the repository contained other languages, you could add them to this array.
 This causes the job to “fan out” and create an instance per value of the matrix.
 
 
@@ -3417,8 +3430,7 @@ following code:
 queries:
 
 
-–
-uses: security-and-quality ``` :::
+     uses: security-and-quality ``` :::
 
 
 79 CHAPTER 3 | Continuous integration and deployment with Azure DevOps

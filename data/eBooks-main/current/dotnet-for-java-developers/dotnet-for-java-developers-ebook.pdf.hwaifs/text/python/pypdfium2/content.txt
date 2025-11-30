@@ -189,7 +189,8 @@ Hello, .NET
 Divorces are never a pretty sight, and recounting the history of one is always fraught with opinion, 
 revisionist history, and bad feeling. Suffice it to say that by 1997/1998, two facts were becoming clear: 
 one, Sun didn’t care for Microsoft’s work increasing interoperability between their JVM and native 
-COM components in Windows1, and two, Microsoft and Java were going to part ways, one way or 
+COM components in Windows1
+, and two, Microsoft and Java were going to part ways, one way or 
 another. (Who got custody of the dog is still hotly debated.)
 Either certain groups within Microsoft could see the writing on the wall or they had come to find 
 issues (real or perceived) with the Java Virtual Machine; either way, by 1998, a new effort came to 
@@ -220,8 +221,7 @@ managed coding to C++, a hybrid object/functional language called F#, and severa
 languages.)
 However, Microsoft also sought to make sure that .NET was not a proprietary effort by investing 
 thousands of man-hours into the creation of a series of international specifications—through the 
-European Computer Manufacturer’s Association (ECMA2
-)—to ensure that C# and the underlying 
+European Computer Manufacturer’s Association (ECMA2)—to ensure that C# and the underlying 
 platform were both open industry standards. C# was accepted and ratified as ECMA-334, and the 
 underlying runtime was given the name the “Common Language Infrastructure” (CLI), and accepted 
 and ratified as ECMA-335. Intel, HP, and several other industry participants joined Microsoft in 

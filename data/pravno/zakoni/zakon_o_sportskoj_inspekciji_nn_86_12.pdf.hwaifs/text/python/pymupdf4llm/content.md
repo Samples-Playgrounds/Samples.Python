@@ -132,7 +132,8 @@ način ne može osigurati izvršenje određenoga inspekcijskog posla.
 
 
 (3) Državni inspektori imaju sve ovlasti inspektora koje su propisane ovim Zakonom kada
-obavljaju inspekcijski nadzor sukladno stavku 2. ovoga članka.
+
+- bavljaju inspekcijski nadzor sukladno stavku 2. ovoga članka.
 
 
 Članak 7.
@@ -164,7 +165,8 @@ pravilnikom.
 
 U provedbi nadzora nad pravnim i fizičkim osobama u sustavu sporta koje podliježu nadzoru
 inspekcije, inspektor utvrđuje stanje u vezi s obavljanjem sportske djelatnosti sukladno
-odredbama Zakona o sportu, a osobito:
+
+- dredbama Zakona o sportu, a osobito:
 
 
 1. izvršavaju li se u sustavu sporta zadaće utvrđene Zakonom o sportu,
@@ -179,7 +181,8 @@ i drugim propisom,
 
 
 4. je li sastav predstavničkog i izvršnog tijela, odnosno tijela upravljanja i nadzora pravne
-osobe u sportu u skladu sa Zakonom o sportu i na temelju njega donesenih propisa,
+
+- sobe u sportu u skladu sa Zakonom o sportu i na temelju njega donesenih propisa,
 
 
 5. postoje li za osobe koje obavljaju poslove u sportu zapreke u smislu odredaba Zakona o
@@ -237,8 +240,10 @@ dužan obavijestiti podnositelja najkasnije u roku od 30 dana od dana podnošenj
 
 (3) Podnositelj predstavke ima pravo u roku od osam dana od dana primitka obavijesti izjaviti
 prigovor čelniku javnopravnog tijela u čijem se sastavu nalazi sportska inspekcija ako primi
-obavijest da prema navodima u predstavci ne postoje uvjeti za pokretanje postupka ili ako
-obavijest ne primi u roku iz stavka 2. ovoga članka.
+
+- bavijest da prema navodima u predstavci ne postoje uvjeti za pokretanje postupka ili ako
+
+- bavijest ne primi u roku iz stavka 2. ovoga članka.
 
 
 (4) Ako je postupak pokrenut, o provedenom nadzoru i poduzetim mjerama i radnjama
@@ -249,7 +254,8 @@ inspektor će izvijestiti podnositelja predstavke nakon završenoga inspekcijsko
 
 
 (1) O početku obavljanja nadzora inspektor će obavijestiti odgovornu osobu u pravnoj osobi
-odnosno fizičku osobu u sustavu sporta, osim ako smatra da bi obavještavanjem umanjio
+
+- dnosno fizičku osobu u sustavu sporta, osim ako smatra da bi obavještavanjem umanjio
 učinkovitost nadzora.
 
 
@@ -259,7 +265,8 @@ pravne osobe, odnosno fizičke osobe koje obavljaju sportsku djelatnost.
 
 (3) Inspektor ima pravo u inspekcijskom postupku pregledati dokumentaciju i evidencije,
 radne i poslovne prostorije i spise, isprave na temelju kojih može utvrditi identitet osoba koje
-obavljaju poslove za pravnu osobu te saslušati i uzeti izjave tih osoba.
+
+- bavljaju poslove za pravnu osobu te saslušati i uzeti izjave tih osoba.
 
 
 Članak 13.
@@ -271,7 +278,8 @@ drugim propisom utvrđena tajna.
 
 (2) Inspektor je dužan kao službenu tajnu čuvati dokumentaciju te činjenice i podatke koji su
 u vezi s inspekcijskim nadzorom, kao i identitet podnositelja predstavke odnosno druge
-obavijesti ako on to zatraži.
+
+- bavijesti ako on to zatraži.
 
 
 Članak 14.
@@ -290,7 +298,8 @@ radi te mu o tome pružiti podatke, dokumente i obavijesti.
 
 
 (2) Zapisnik iz stavka 1. ovoga članka sastavlja se, zaključuje i potpisuje u skladu s
-odredbama Zakona o općem upravnom postupku, a treba sadržavati sve činjenice relevantne
+
+- dredbama Zakona o općem upravnom postupku, a treba sadržavati sve činjenice relevantne
 za ocjenu stanja vezano uz predmet nadzora.
 
 
@@ -298,13 +307,15 @@ za ocjenu stanja vezano uz predmet nadzora.
 
 
 (1) Ako nađe da je povrijeđen zakon ili drugi propis, inspektor je dužan poduzeti mjere
-odnosno izvršiti radnje za koje je ovlašten zakonom ili drugim propisom. Mjere i radnje
+
+- dnosno izvršiti radnje za koje je ovlašten zakonom ili drugim propisom. Mjere i radnje
 poduzimaju se na temelju stanja utvrđenog u zapisniku.
 
 
 (2) Ako tijekom obavljanja nadzora utvrdi nezakonitosti, odnosno nepravilnosti u radu ili
 postupanju, a taj rad ili postupanje podliježe nadzoru sportske inspekcije, inspektor je dužan
-obaviti nadzor i nad tim radom ili postupanjem iako mu to nije bio predmet nadzora.
+
+- baviti nadzor i nad tim radom ili postupanjem iako mu to nije bio predmet nadzora.
 
 
 (3) Ako ne nađe povredu zakona ili drugog propisa, inspektor će tu činjenicu upisati u
@@ -346,7 +357,8 @@ na način i u postupku koje propisuje Zakon o prekršajima.
 
 
 (1) Inspektor će narediti otklanjanje propusta, nedostataka, odnosno nepravilnosti u
-određenom roku:
+
+- dređenom roku:
 
 
 1. ako pravne osobe u sustavu sporta ne izvršavaju zadaće utvrđene Zakonom o sportu,
@@ -440,7 +452,8 @@ nadležnom za poslove sporta.
 
 
 (2) Žalbu iz stavka 1. ovoga članka može izjaviti odgovorna osoba u pravnoj osobi i fizička
-osoba koja je bila predmet nadzora.
+
+- soba koja je bila predmet nadzora.
 
 
 (3) Žalbu iz stavka 1. ovoga članka može izjaviti i fizička osoba u pravnoj osobi kojoj je
@@ -452,7 +465,8 @@ to dokaže pravni interes.
 
 
 (5) Iznimno od odredbe stavka 4. ovoga članka, žalba ne odgađa izvršenje rješenja ako je riječ
-o poduzimanju hitnih mjera čije izvršenje se ne može odgađati.
+
+- poduzimanju hitnih mjera čije izvršenje se ne može odgađati.
 
 
 (6) Protiv prvostupanjskog rješenja državnog inspektora nije dopuštena žalba, ali se može
@@ -463,7 +477,8 @@ podnijeti tužba nadležnome upravnom sudu.
 
 
 (1) Hitnim mjerama u smislu članka 23. stavka 5. smatraju se naredbe i zabrane koje se
-odnose na:
+
+- dnose na:
 
 
 1. obavljanje sportske djelatnosti u skladu s propisanim zdravstvenim i tehničkim uvjetima,
@@ -480,7 +495,8 @@ sposobnost utvrđenu Zakonom o sportu.
 
 
 (2) Inspektor može poduzeti hitnu mjeru i u drugim slučajevima kada procijeni da bi
-odgađanje izvršenja mjere prouzročilo štetu ili poremećaj koji se više ne bi mogao otkloniti.
+
+- dgađanje izvršenja mjere prouzročilo štetu ili poremećaj koji se više ne bi mogao otkloniti.
 
 
 (3) Rješenje s naredbom ili zabranom iz stavka 1. i 2. ovoga članka može se donijeti i u tijeku
@@ -492,33 +508,40 @@ vjerojatnim, tada se izrečena mjera mora upisati u zapisnik.
 mira i sigurnosti ili radi otklanjanja neposredne opasnosti za život ili zdravlje ljudi, odnosno
 štete na imovini, ili kada bi odgađanje izvršenja zbog donošenja pisanog rješenja prouzročilo
 kakvu štetu ili poremećaj koji se više ne bi mogli otkloniti bez posljedica, rješenje iz stavka 3.
-ovoga članka može se donijeti i usmeno.
+
+- voga članka može se donijeti i usmeno.
 
 
 (5) U slučaju iz stavka 4. ovoga članka u zapisnik se upisuje cijelo rješenje, a odgovornu
-osobu u nadziranoj pravnoj osobi, odnosno nadziranu fizičku osobu, istodobno se upozorava
+
+- sobu u nadziranoj pravnoj osobi, odnosno nadziranu fizičku osobu, istodobno se upozorava
 da ima pravo tražiti pisani otpravak usmenog rješenja.
 
 
 (6) Na zahtjev odgovorne osobe u nadziranoj pravnoj osobi ili nadzirane fizičke osobe,
 usmeno rješenje izdat će se u pisanom obliku bez odgode, a najkasnije u roku od osam dana
-od dana donošenja usmenog rješenja.
+
+- d dana donošenja usmenog rješenja.
 
 
 Članak 25.
 
 
 Zapisnik i rješenje inspektor je dužan dostaviti osobama koje prema odredbama članka 23.
-ovoga Zakona mogu izjaviti žalbu ili pokrenuti upravni spor protiv rješenja inspektora,
-odnosno državnog inspektora.
+
+- voga Zakona mogu izjaviti žalbu ili pokrenuti upravni spor protiv rješenja inspektora,
+
+- dnosno državnog inspektora.
 
 
 Članak 26.
 
 
 (1) Za ispunjenje obveze iz rješenja odgovorna je osoba u pravnoj osobi, odnosno fizička
-osoba koja obavlja samostalnu djelatnost, a ako je rješenjem naređena kakva obveza fizičkoj
-osobi u pravnoj osobi za ispunjenje obveza odgovorna je i ta fizička osoba.
+
+- soba koja obavlja samostalnu djelatnost, a ako je rješenjem naređena kakva obveza fizičkoj
+
+- sobi u pravnoj osobi za ispunjenje obveza odgovorna je i ta fizička osoba.
 
 
 (2) O ispunjenju obveze iz rješenja odgovorna osoba u pravnoj osobi, odnosno fizička osoba
@@ -537,7 +560,8 @@ izvješća, obavit će kontrolni inspekcijski nadzor radi utvrđivanja pravog st
 
 Naloge, prijedloge, prijave, zahtjeve i izvješća proizišla iz ovoga Zakona te druge naloge,
 prijedloge, prijave, zahtjeve i izvješća za koje je ovlašten, inspektor podnosi u obliku
-obrazloženog pisanog odgovarajućeg podneska, ako zakonom ili drugim propisom nije
+
+- brazloženog pisanog odgovarajućeg podneska, ako zakonom ili drugim propisom nije
 drukčije propisano.
 
 
@@ -558,7 +582,8 @@ nadzora i poduzimanju mjera i radnji za koje je ovlašten.
 
 Inspektor je odgovoran ako ne poduzme mjere ili radnje koje je po zakonu ili drugom propisu
 bio dužan poduzeti ili ako prekorači ovlasti koje su mu dane zakonom ili drugim propisom,
-odnosno ako ne podnese prijavu ili ne obavijesti nadležna državna tijela o utvrđenim
+
+- dnosno ako ne podnese prijavu ili ne obavijesti nadležna državna tijela o utvrđenim
 nedostacima kad je to dužan učiniti.
 
 
@@ -567,7 +592,8 @@ nedostacima kad je to dužan učiniti.
 
 (1) Glavni inspektor ovlašten je davati naloge i naputke za rad, pratiti izvršenje poslova,
 nadzirati zakonitost rada i postupanja državnih inspektora te s tom svrhom tražiti izvješća i
-obrazloženja.
+
+- brazloženja.
 
 
 (2) Ako utvrdi nezakonitost rada i postupanja, odnosno propust ili prekoračenje ovlasti, glavni
@@ -592,7 +618,8 @@ inspektoru ne pruži potrebne podatke i obavijesti,
 
 
 2. ako na bilo koji način sprječava ili ometa inspektora, odnosno državnog inspektora u
-obavljanju nadzora ili poduzimanju mjera i radnji za koje je ovlašten,
+
+- bavljanju nadzora ili poduzimanju mjera i radnji za koje je ovlašten,
 
 
 3. ako ne postupi po rješenju inspektora, odnosno državnog inspektora,
@@ -609,7 +636,8 @@ novčanom kaznom u iznosu od 5.000,00 do 10.000,00 kuna.
 
 
 Novčanom kaznom u iznosu od 1.000,00 do 5.000,00 kuna kaznit će se fizička osoba koja
-obavlja poslove za pravnu osobu u sustavu sporta:
+
+- bavlja poslove za pravnu osobu u sustavu sporta:
 
 
 1. ako na svom području rada ne osigura uvjete za provedbu nadzora ili ako ne pruži potrebne
@@ -636,7 +664,8 @@ mjesto inspektora, državnog inspektora, odnosno glavnog sportskog inspektora.
 (2) Državni službenici iz stavka 1. ovoga članka koji ne polože državni stručni ispit u roku od
 godinu dana od dana rasporeda na radno mjesto inspektora, odnosno državnog inspektora,
 rasporedit će se na drugo radno mjesto za koje ispunjavaju propisane uvjete, a ako nema
-odgovarajućeg radnog mjesta, stavit će se na raspolaganje sukladno propisima o državnim
+
+- dgovarajućeg radnog mjesta, stavit će se na raspolaganje sukladno propisima o državnim
 službenicima.
 
 

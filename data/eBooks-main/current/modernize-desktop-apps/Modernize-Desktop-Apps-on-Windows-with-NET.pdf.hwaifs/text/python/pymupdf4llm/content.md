@@ -34,10 +34,10 @@ without notice.
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association
 
-or connection is intended or should be inferred.
+- r connection is intended or should be inferred.
 
 
-[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) on the “Trademarks” webpage are
+[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) - n the “Trademarks” webpage are
 trademarks of the Microsoft group of companies.
 
 
@@ -99,13 +99,15 @@ path of modernization and incorporate the latest runtime, language, and platform
 discover that there’s no unique recipe as each application is different, and so are your requirements
 and preferences. The good news is that there are common approaches you can apply to add new
 features and capabilities to your applications. Some of them won’t even require major modifications
-of your code. In this book, we’ll reveal how all those features work behind the scenes and explain the
+
+- f your code. In this book, we’ll reveal how all those features work behind the scenes and explain the
 mechanics of their implementations. Moreover, you’ll find some common scenarios for modernizing
 existing desktop applications shown in detail so you can find inspiration for evolving your projects.
 
 
 Microsoft’s approach to modernizing existing applications is to give you the flexibility to create your
-own customized path. All the modernization strategies described in this book are mostly independent.
+
+- wn customized path. All the modernization strategies described in this book are mostly independent.
 You can choose ones that are relevant for your application and skip others that aren’t important for
 you. In other words, you can mix and match the strategies to best address your application needs.
 
@@ -383,7 +385,8 @@ iii Contents
 
 Back in the early 2000s, one multinational company started developing a distributed desktop solution
 to exchange information between different branches of the company and execute optimized
-operations on centralized units. They have chosen a brand-new framework called Windows Forms
+
+- perations on centralized units. They have chosen a brand-new framework called Windows Forms
 (also known as WinForms) for their application development. Over the years, the project evolved into
 a mature, well-tested, and time-proven application with hundreds of thousands of lines of code. Time
 passed and .NET Framework 2.0 is no longer the hot new technology. The developers who are
@@ -401,8 +404,10 @@ Presentation Foundation (WPF) applications that have proved their reliability ov
 probably want to keep using these applications for many more years. At the same time, since those
 applications were written some time ago, they might be missing capabilities like modern look,
 performance, integration with new devices and platform features, and so on, which gives them a feel
-of “old tech”. There’s another problem that might concern you as a developer. While working on the
-older .NET Framework versions and maintaining applications that were written a while ago, you might
+
+- f “old tech”. There’s another problem that might concern you as a developer. While working on the
+
+- lder .NET Framework versions and maintaining applications that were written a while ago, you might
 feel like you aren’t learning new technologies and missing out on building modern technical skills. If
 that is your story – this book is for you!
 
@@ -422,7 +427,8 @@ applications.
 
 Then, Internet technologies started shocking the development world and winning over more
 engineers with advantages like easy deployment and simplified distribution processes. The fact that
-once a web application was deployed to production all users got automatic updates made a huge
+
+- nce a web application was deployed to production all users got automatic updates made a huge
 impact on software agility.
 
 
@@ -524,7 +530,8 @@ The following list summarizes the main characteristics of Windows Forms:
 #### **WPF**
 
 Based on the XAML language specification, WPF favors a clear separation between UI and code. XAML
-offers capabilities like templating, styling, and binding, which is suited for building large applications.
+
+- ffers capabilities like templating, styling, and binding, which is suited for building large applications.
 Like Windows Forms, it’s a managed framework, but the design is modular and reusable.
 
 
@@ -691,7 +698,8 @@ the innovation pace for developers forcing them to stay on outdated versions of 
 Since the launch of .NET Core 3.0, you can leverage a new approach of deploying multiple versions of
 .NET side by side and specifying which version of .NET each application should target. This way, you
 can use the newest features in one application while being confident you aren’t going to break any
-other applications.
+
+- ther applications.
 
 #### **Installation**
 
@@ -721,7 +729,8 @@ application.
 
 Desktop applications such as Windows Forms and WPF can be built using various .NET
 implementations, for example, .NET Framework or .NET 7. In this chapter, we’ll talk about the history
-of each implementation, explain the differences, and show what new features await desktop
+
+- f each implementation, explain the differences, and show what new features await desktop
 developers in newer implementations.
 
 
@@ -810,7 +819,7 @@ changes that can break applications. For example, adding an interface to an exis
 how this type is serialized and cause breaking problems depending on the existing code. Because the
 .NET Framework installed base is huge, fighting against these breaking scenarios slows down the pace
 
-of innovations inside .NET Framework.
+- f innovations inside .NET Framework.
 
 
 To solve all these issues, Microsoft developed .NET Core as the evolution of the .NET development
@@ -932,7 +941,8 @@ problem of side effects when updating the machine’s framework version. Multipl
 
 
 .NET it should use. Even more, now you can develop and run Windows Forms and WPF on top
-of .NET.
+
+     - f .NET.
 
 
   - **Embed .NET directly into an application** : You can deploy .NET as part of your application
@@ -1005,7 +1015,8 @@ for Windows only, so they aren’t cross-platform. You can think of WPF as a ric
 Windows Forms as a thinner layer over GDI+. WPF and Windows Forms do a great job of exposing
 and exercising much of the desktop application functionality in Windows. So Windows Forms and
 WPF are available for .NET Core and .NET Framework. Target your new desktop applications to .NET 6
-or later, and migrate your existing apps from .NET Framework to .NET 6 or later.
+
+- r later, and migrate your existing apps from .NET Framework to .NET 6 or later.
 
 
 A new version of .NET Standard, version 2.1, was released at the same time as .NET Core 3.0. To see
@@ -1364,7 +1375,8 @@ different on .NET, you’ll need to make some updates in your configuration file
 
 Second, you’ll need to regenerate the service client with the new tools present on Visual Studio 2019
 and Visual Studio 2022. In this step, you must consider activating the generation of the synchronous
-operations to make the client compatible with your existing code.
+
+- perations to make the client compatible with your existing code.
 
 
 After the migration, if you find that there are libraries you need that aren’t present on .NET, you can
@@ -1435,7 +1447,8 @@ For communication across processes, you should consider inter-process communicat
 
 Across machines, use a network-based solution as an alternative. Preferably, use a low-overhead
 plaintext protocol, such as HTTP. The Kestrel web server, the web server used by ASP.NET Core, is an
-option here.
+
+- ption here.
 
 #### **Code Access Security (CAS)**
 
@@ -1445,7 +1458,8 @@ application or library uses or runs, isn’t supported on .NET.
 
 
 Use security boundaries that are provided by the operating system, such as virtualization, containers,
-or user accounts, for running processes with the minimum set of privileges.
+
+- r user accounts, for running processes with the minimum set of privileges.
 
 #### **Security Transparency**
 
@@ -1455,7 +1469,8 @@ declarative fashion but is no longer supported as a security boundary.
 
 
 Use security boundaries that are provided by the operating system, such as virtualization, containers,
-or user accounts, for running processes with the least set of privileges.
+
+- r user accounts, for running processes with the least set of privileges.
 
 
 22 CHAPTER 3 | Migrating Modern Desktop applications
@@ -1467,7 +1482,8 @@ or user accounts, for running processes with the least set of privileges.
 
 Consider the following situation: You have a working desktop application that was developed in the
 Windows 7 days. It’s using WPF technology available at that time and working fine but it has an
-outdated UI and behaviors when you run it on Windows 10 or Windows 11. It is like when you watch a
+
+- utdated UI and behaviors when you run it on Windows 10 or Windows 11. It is like when you watch a
 futuristic movie like Matrix and you see Neo using the Nokia 8110 device. The film works great after
 20 years but it would rather benefit from a device modernization.
 
@@ -1489,7 +1505,8 @@ system ever. For example, you can:
 All these features are enabled for Windows developers through Windows Runtime (WinRT) libraries.
 You can take advantage of these features in your existing desktop apps because the libraries are
 exposed to both the .NET Framework and .NET as well. You can even modernize your UI with the use
-of XAML Islands and improve the visuals and behavior of your apps according to the times.
+
+- f XAML Islands and improve the visuals and behavior of your apps according to the times.
 
 
 One important thing to note here is that you don’t need to abandon .NET Framework technology to
@@ -1547,7 +1564,8 @@ code to call all WinRT APIs requiring Identity.
 You can check which APIs need a packaged application identity by inspecting if the type that contains
 [the API is marked with the DualApiPartition](https://docs.microsoft.com/uwp/api/windows.foundation.metadata.dualapipartitionattribute) attribute. If it is, you can call if from an unpackaged
 traditional desktop app. Otherwise, you must convert your classic desktop app to a UWP with the help
-of a packaging project.
+
+- f a packaging project.
 
 
 [https://learn.microsoft.com/windows/desktop/apiindex/uwp-apis-callable-from-a-classic-desktop-app](https://docs.microsoft.com/windows/desktop/apiindex/uwp-apis-callable-from-a-classic-desktop-app)
@@ -1588,7 +1606,8 @@ Windows 11 users.
 Before proceeding to package your desktop application, there are some points you have to address
 before starting the process. Your application must respect any of the Microsoft Store rules and
 policies and run in the UWP application model. For example, it has to run on the .NET Framework 4.6.2
-or later and writes to the HKEY_CURRENT_USER registry hive and the AppData folders will be
+
+- r later and writes to the HKEY_CURRENT_USER registry hive and the AppData folders will be
 virtualized to a user-specific app-local location.
 
 
@@ -2077,7 +2096,8 @@ issues and challenges you can face when migrating an existing application from .
 
 
 Updating your applications to target the latest version of .NET is easy if you already are on .NET Core
-or .NET 5. If this is the case, then in Visual Studio, simply right-click on your project in **Solution**
+
+- r .NET 5. If this is the case, then in Visual Studio, simply right-click on your project in **Solution**
 **Explorer** and choose **Properties** . Under **Application** - **General** - **Target framework**, choose .NET
 7.0. Save and rebuild your application. You’re done! Your app now runs on the latest version of .NET.
 In the future when new versions become available, you can upgrade in the same way.
@@ -2139,7 +2159,7 @@ _packages.config_ file. In .NET, there’s no longer the need to use the _packag
 So, you need to transition from one format to another. You can do the update manually, taking the
 dependencies contained in the _packages.config_ file and migrating them to the project file with the
 PackageReference format. Or, you can let Visual Studio do the work for you: right-click on the
-_packages.config_ file and select the **Migrate packages.config to PackageReference** option.
+_packages.config_ file and select the **Migrate packages.config to PackageReference** - ption.
 
 
 **Verify every dependency compatibility in .NET**
@@ -2169,7 +2189,8 @@ some breaking changes that would force you to update your code.
 
 What happens if you don’t find a compatible version? What if you just don’t want to update the
 version of a package because of these breaking changes? Don’t worry because it’s possible to depend
-on .NET Framework packages from a .NET application. Don’t forget to test it extensively because it can
+
+- n .NET Framework packages from a .NET application. Don’t forget to test it extensively because it can
 cause run-time errors if the external package calls an API that isn’t available on .NET. This is great for
 when you’re using an old package that isn’t going to be updated and you can just retarget to work on
 
@@ -2206,7 +2227,8 @@ In most cases, you’ll want to update your existing project to the new .NET for
 also create a new project while maintaining the old one. The main drawback from updating the old
 project is that you lose designer support, which may be important to you and your development
 team. If you want to keep using the designer, you must create a new .NET project in parallel with the
-old one and share assets. If you need to modify UI elements in the designer, you can switch to the old
+
+- ld one and share assets. If you need to modify UI elements in the designer, you can switch to the old
 project to do that. And since assets are linked, they’ll be updated in the .NET project as well.
 
 
@@ -2237,7 +2259,7 @@ resources to the new project file.
 **Package references**
 
 
-With the **Migrate packages.config to PackageReference** option, you can easily move your external
+With the **Migrate packages.config to PackageReference** - ption, you can easily move your external
 package references to the new format as previously mentioned.
 
 
@@ -2398,17 +2420,17 @@ Since this code is autogenerated, you must regenerate it to target .NET.
 Delete the _Reference.cs_ file and generate a new Service Client.
 
 
-Right-click on **Connected Services** and select the **Add Connected Service** option.
+Right-click on **Connected Services** and select the **Add Connected Service** - ption.
 
 
-The Connected Services window opens. Select the **Microsoft WCF Web Service** option.
+The Connected Services window opens. Select the **Microsoft WCF Web Service** - ption.
 
 
 48 CHAPTER 5 | Example of migrating to the latest .NET
 
 
 If you have the WCF Service in the same solution as we have in this example, you can select the
-**Discover** option instead of specifying a service URL.
+**Discover** - ption instead of specifying a service URL.
 
 
 Once the service is located, the tool reflects the API contract implemented by the service. Change the
@@ -2492,7 +2514,8 @@ If you reload the project and compile it, you’ll get the following error:
 
 
 Since you’ve deleted all the _.csproj_ contents, you’ve lost a project reference specification present in the
-old project. You just need to add this line to the _.csproj_ file to include the project reference back:
+
+- ld project. You just need to add this line to the _.csproj_ file to include the project reference back:
 
 
 You can also let Visual Studio help you by right-clicking on the **Dependencies** node and selecting
@@ -2699,7 +2722,8 @@ application. It also provides a way to sign your assets providing a solid securi
 
 The OS handles all the processes for installing, updating, and removing an application. Applications
 are installed per user but downloaded only once, minimizing the disk footprint. Microsoft is working
-on providing the MSIX experience also on Windows 7.
+
+- n providing the MSIX experience also on Windows 7.
 
 
 **Windows provides integrity for the app**
@@ -2783,7 +2807,7 @@ give it a name.
 You’ll see the structure of the packaging project and note a special folder called _Applications_ . Inside
 this folder, you can specify which applications you want to include in the package. It can be more than
 
-one.
+- ne.
 
 
 63 CHAPTER 6 | Deploying Modern Desktop Applications
@@ -2852,7 +2876,7 @@ The final stage is about how you deploy the MSIX package to another machine.
 
 
 Right-click on the packaging project, select the **Store** menu, and then select the **Create App**
-**Packages** option.
+**Packages** - ption.
 
 
 Then, you can choose between creating a package to upload to the store or creating packages for
@@ -2909,7 +2933,8 @@ updates.
 
 
 You can also configure when you want to perform updates: either when the application launches or
-on a regular basis. Thanks to the side-loading features, you can even get these updates while the
+
+- n a regular basis. Thanks to the side-loading features, you can even get these updates while the
 application is running.
 
 
@@ -2936,7 +2961,8 @@ app package </ a >
 ```
 
 This protocol works on all browsers and launches the installation process with a great user experience
-on Windows 10/Windows 11. Since the OS manages the installation process, it’s aware of the location
+
+- n Windows 10/Windows 11. Since the OS manages the installation process, it’s aware of the location
 this application was installed from and tracks all the files affected by the process.
 
 

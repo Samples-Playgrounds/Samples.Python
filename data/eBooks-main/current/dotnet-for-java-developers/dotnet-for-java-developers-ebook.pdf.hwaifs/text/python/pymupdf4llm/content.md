@@ -34,7 +34,8 @@ connection is intended or should be inferred.
 
 
 Microsoft and the trademarks listed at [http://www.microsoft.com on the “Trademarks” webpage are trademarks](http://www.microsoft.com)
-of the Microsoft group of companies. All other marks are property of their respective owners.
+
+- f the Microsoft group of companies. All other marks are property of their respective owners.
 
 
 .NET for Java Developers
@@ -151,7 +152,8 @@ you think you know, take my hand, and let’s take a trip to a foreign land. Doi
 history to understand how things came to be, then a quick set of instructions on how to get the
 tooling set up (and which tooling you want, depending on your preferences). Once the environment
 is set up, we can pick up the critical differences between C# and Java, and start diving into some
-of the central frameworks in this world—ASP.NET, Entity Framework, and a few others. When we
+
+- f the central frameworks in this world—ASP.NET, Entity Framework, and a few others. When we
 
 
 .NET for Java Developers 1
@@ -159,7 +161,8 @@ of the central frameworks in this world—ASP.NET, Entity Framework, and a few o
 
 finish up, if you’re following along, you’ll have everything you need to start your own exploration of
 the .NET community, and from there you’ll get to draw your own conclusions and make your own
-opinions.
+
+- pinions.
 
 
 Most importantly, you’ll know how to order off the menu and tell the bathrooms apart.
@@ -218,14 +221,16 @@ to make it easier to produce programs that knew how to execute on a single chip.
 directly with the hardware, making use of the facilities there to obtain memory, interact with the
 disk, and present data to the display for the user to understand. In time, we as an industry found that
 this direct-hardware interaction had its drawbacks, and we sought to create a series of abstractions
-on top of that hardware, to help coordinate the use of the hardware across multiple simultaneously
+
+- n top of that hardware, to help coordinate the use of the hardware across multiple simultaneously
 
 
 .NET for Java Developers 3
 
 
 executing programs. We called that first attempt at regulating and managing the hardware an
-operating system. And it was pretty good. So good, in fact, that numerous flavors of operating
+
+- perating system. And it was pretty good. So good, in fact, that numerous flavors of operating
 system were born, including Microsoft’s Windows operating system, and Solaris, and macOS (though
 it was called “System 7” back then), and Linux, and a few others whose names exist now only in the
 history books and dusty corners of Usenet forums. (Bonus points if you recognize these names:
@@ -314,7 +319,8 @@ Unfortunately, in the last part of that sentence lay the seeds of its own destru
 
 Divorces are never a pretty sight, and recounting the history of one is always fraught with opinion,
 revisionist history, and bad feeling. Suffice it to say that by 1997/1998, two facts were becoming clear:
-one, Sun didn’t care for Microsoft’s work increasing interoperability between their JVM and native
+
+- ne, Sun didn’t care for Microsoft’s work increasing interoperability between their JVM and native
 COM components in Windows [1], and two, Microsoft and Java were going to part ways, one way or
 another. (Who got custody of the dog is still hotly debated.)
 
@@ -418,7 +424,8 @@ embraced being commercialized (and therefore closed-source) in the first place. 
 working shortly thereafter on an open-source rewrite of its entire compiler toolchain, code-named
 “Roslyn.” By the time of Visual Studio 2015, many parts of the core ecosystem were starting to ship
 independently, with Visual Studio releases serving only as a vehicle for developers to gather the parts
-of the ecosystem they desired more easily. Open-source package management (called NuGet), which
+
+- f the ecosystem they desired more easily. Open-source package management (called NuGet), which
 began life well outside of the Visual Studio organization, was incorporated into Visual Studio so that
 NuGet came “out of the box,” much as support for Maven and Ant do in Java IDEs.
 
@@ -436,9 +443,11 @@ All of this, however, was the calm before the storm. In 2008, Microsoft announce
 for ASP.NET (the servlet/JSP equivalent) would be accessible to anyone who wanted to look at it. It
 wasn’t full open-source yet, though, in that they weren’t accepting pull requests. It was, however,
 an important step, and in 2014 Microsoft took that final step: It announced that it would completely
-open-source all of .NET, hosting it on GitHub, and thus making it available to any platform and accept
+
+- pen-source all of .NET, hosting it on GitHub, and thus making it available to any platform and accept
 pull requests from any developer so inclined. A new .NET implementation would be completely
-open-source and hosted on GitHub, called .NET Core. It also announced the creation of the .NET
+
+- pen-source and hosted on GitHub, called .NET Core. It also announced the creation of the .NET
 Foundation, an industry consortium of groups dedicated to the growth of the .NET platform, in
 
 
@@ -452,7 +461,8 @@ platform [4] .
 To be sure, Microsoft made some missteps along the way, and definitely learned a few hard lessons
 about its relationship with the open-source community, but by late 2017, Microsoft was statistically
 the biggest contributor on GitHub (measured in terms of total numbers of contributors [5] ), and all
-of its key components—language, runtime, libraries, and many of its tools—were available for
+
+- f its key components—language, runtime, libraries, and many of its tools—were available for
 
 download on GitHub.
 
@@ -622,7 +632,8 @@ For almost any operating system you might find yourself using, including most of
 distributions of Linux, Microsoft has a lightweight editor called Visual Studio Code. If you’ve been
 doing a lot of web front-end work, you may already have been using it. In many ways, it’s the latest
 attempt at building an “editor-plus-plug-ins” tool, and it is gaining some traction with the world
-outside the Microsoft ecosystem. (It’s actually the preferred tool for working with Google’s opensource Angular project, among other things.) It’s also available from [http://code.visualstudio.com,](http://code.visualstudio.com)
+
+- utside the Microsoft ecosystem. (It’s actually the preferred tool for working with Google’s opensource Angular project, among other things.) It’s also available from [http://code.visualstudio.com,](http://code.visualstudio.com)
 it’s available for Windows, macOS, and most of the major flavors of Linux, and it’s a pretty quick
 download and install. And, honestly, it’s not a bad editor for writing Java code, in case you were
 [wondering; check out the Java extensions at https://code.visualstudio.com/docs/java/extensions](https://code.visualstudio.com/docs/java/extensions) the
@@ -817,7 +828,8 @@ execute the entry point method and get out of the way.
 
 If Visual Studio (or Visual Studio for Mac) has finished installing, fire it up, and either select “File | New
 Project,” or use the Start Page displayed in the center of the IDE to begin a new project by clicking
-one of the “New Project” templates. Depending on which Visual Studio you’re running, you may be
+
+- ne of the “New Project” templates. Depending on which Visual Studio you’re running, you may be
 presented with two kinds of console applications: one that represents a native Console Application
 (for Windows, it will reference .NET Framework) and one that targets .NET Core (that’s the opensource implementation). Choose either one (I prefer .NET Core), then do the usual IDE thing of
 choosing which directory in which the project should live, and its name. Note that we can designate
@@ -856,7 +868,8 @@ Within the Visual Studio ecosystem, code is arranged into “projects,” which 
 into “solutions.” A project is language-specific, and sports an XML file whose extension reflects that
 language—C# projects are stored in “.csproj” files, for example. Each project produces one artifact—
 an assembly, which we’ll discuss in more detail later. Solutions, then, are made up of any number
-of projects listed in a solution file (.sln), making it quite common for a solution to have some toplevel “executable” (whether that is a website project, Web API project, or some form of GUI project)
+
+- f projects listed in a solution file (.sln), making it quite common for a solution to have some toplevel “executable” (whether that is a website project, Web API project, or some form of GUI project)
 with one or more “library” projects to support it. It’s extremely common, in fact, to see projects in
 separate subdirectories under the directory in which the solution file lives. This arrangement won’t
 seem strange to the working Java developer; in many respects, this is no different from what we
@@ -906,7 +919,8 @@ By the way, C# currently sits at version 7.2 at the time of this writing, and Mi
 designers have been just as aggressive in the latest revisions of the language as they were in the
 early ones. This is a language under constant evolution, for good or for ill. So there’s much to discuss,
 and we will not be able to cover the entire surface area of the language—the focus here will be only
-on those parts that will be unintuitive to the Java developer looking at “average” C# code.
+
+- n those parts that will be unintuitive to the Java developer looking at “average” C# code.
 
 ## C# Basics
 
@@ -1129,7 +1143,8 @@ access)? The get and set clauses can have different levels of access, the most c
 
 This will effectively make the fields immutable from the outside yet still something we can
 change from the interior of the class. The field itself is synthesized by the compiler (usually with
-a straightforward name such as “__$<Person>$<FirstName>@5417,” or something equally nonobvious), and won’t be directly accessible by code. (Granted, one can always use System.Reflection—
+a straightforward name such as “__$<Person>$<FirstName>@5417,” or something equally non
+- bvious), and won’t be directly accessible by code. (Granted, one can always use System.Reflection—
 the .NET direct equivalent to Java’s java.lang.reflect package—to access the field at runtime, but
 that’s an awful lot of work to work around something that can be discarded at any time.) For those
 rare situations where the auto-generated properties don’t do the right thing, C# developers can
@@ -1210,7 +1225,8 @@ and invocation. But, again, C# allows for some interesting variations on this th
 
 
 For starters, C# has had the concept of “method literals” since 1.0, though the syntax has changed
-over each successive revision of the language. The first step was “delegates,” essentially the ability
+
+- ver each successive revision of the language. The first step was “delegates,” essentially the ability
 to declare a method signature and then assign methods-on-object-instances to a given delegate
 instance, like so:
 
@@ -1390,7 +1406,8 @@ Extension classes don’t just magically apply everywhere, however—they must b
 via the use of the “using” statements, so that if we don’t care to use the MyStringExtensions, the
 WordCount() method won’t appear on String types. And the original class remains unaffected, which
 means that the WordCount() extension (like all extensions) cannot have any impact on the internals
-of the extended class—in fact, it can’t see any of the internal members, and so can only ever be able
+
+- f the extended class—in fact, it can’t see any of the internal members, and so can only ever be able
 to use the public interface of the extended class. It’s purely compiler syntactic sugar.
 
 
@@ -1534,10 +1551,12 @@ world as well, under the name “CompletableFuture” out of the java.util.concu
 There is much, much more we can discuss with respect to C#, but then we’d have no time to talk
 about anything else, and there is much, much more to go over on our tour. Fortunately, Microsoft has
 a great collection of web resources on the language, starting with a page that lists an overall history
+
 [of the language, available at https://aka.ms/csharpwhatsnew, and a general (if abbreviated) overview](https://aka.ms/csharpwhatsnew)
+
 [of the language available at https://aka.ms/csharptour. And, of course, there’re books. Lots and lots](https://aka.ms/csharptour)
 
-of books.
+- f books.
 
 
 But once you know how to write code in this language, what can you do with it?
@@ -1557,7 +1576,8 @@ written in C# is web applications.
 
 Like its twin, .NET offers a comprehensive framework of web functionality, ranging all the way
 from drag-and-drop-built user interface, to MVC-based server-side rendering, to the construction
-of HTTP-based APIs for invocation by single-page applications written in JavaScript or mobile
+
+- f HTTP-based APIs for invocation by single-page applications written in JavaScript or mobile
 applications. Somewhat confusingly, however, all three are referred to by the name “ASP.NET.”
 
 
@@ -1786,10 +1806,12 @@ an incoming GET request is made.
 The other half of that binding, of course, is knowing the partial URL pattern that should trigger the
 method. Notice that the controller class itself has an attribute, “Routing,” which contains the string
 “api/[controller].” The square-bracketed “controller” is to tell the ASP.NET runtime to use the name
-of the class, minus its “-Controller” suffix, so the URL pattern for all of these API endpoints is “api/
+
+- f the class, minus its “-Controller” suffix, so the URL pattern for all of these API endpoints is “api/
 todos.” From here, standard REST conventions kick in—a GET to “api/todos” should return all of the
 TODO items, so the Get() method taking no parameters and returning an IEnumerable<Todo> (think
-of it as a high-level iterator interface) is the right one to invoke here. If, on the other hand, a caller
+
+- f it as a high-level iterator interface) is the right one to invoke here. If, on the other hand, a caller
 wants a single TODO, they’ll issue a request with a URL pattern of “api/todos/” plus the ID of the
 TODO requested. The second Get() method indicates that the URL pattern includes “{id},” so “api/
 todos/3” will extract “3” and pass it for the value of “id” to the method. Ditto for the Put and Delete
@@ -1847,7 +1869,8 @@ need to require explicit symbols to set off between code and HTML output:
 
 
 Views, of course, can make use of objects and data provided by a controller, often by making use
-of a predefined key-value map called ViewData. If we want the message and the number of times
+
+- f a predefined key-value map called ViewData. If we want the message and the number of times
 it should be printed to be set up by a controller (perhaps the controller is obtaining it from HTML
 query parameters or a database), then the controller can set those by using the keys “Message” and
 “NumTimes” in the ViewData dictionary, respectively. The view can then display them like this:
@@ -1941,7 +1964,7 @@ explore.
 
 
 For those interested in a deeper dive into the code above, consider having a look into this tutorial:
-[https://aka.ms/frsti](https://aka.ms/first-web-api) -web-api.
+[https://aka.ms/frsti](https://aka.ms/first-web-api) - web-api.
 
 
 .NET for Java Developers 34
@@ -1950,7 +1973,8 @@ For those interested in a deeper dive into the code above, consider having a loo
 ## Entity Framework Core
 
 Of course, being able to access the server and pass JSON back and forth is only half the story; the
-other half is taking that data and storing it. Or rather, storing it, indexing it, searching it, collating
+
+- ther half is taking that data and storing it. Or rather, storing it, indexing it, searching it, collating
 it, sorting it, drawing pretty graphs with it, and more. When working with a relational database,
 the technology Microsoft offers its .NET constituents is called Entity Framework, or EF, and in many
 respects it works like any other object/relational mapping framework does. Thanks to some of the
@@ -1961,7 +1985,8 @@ JPA or Hibernate.
 
 Like much in the .NET universe, Entity Framework is undergoing a bit of a reshuffle; what used to
 be a closed, proprietary source base is now open, and as EF was opened to the world, the project
-owners thought a (slight) rebrand seemed appropriate. As a result, the open-source version of EF is
+
+- wners thought a (slight) rebrand seemed appropriate. As a result, the open-source version of EF is
 called “Entity Framework Core,” and to begin using it, we need to install it into the project via NuGet,
 either by using the Package Manager in Visual Studio, or by using the command-line for .NET Core by
 entering:
@@ -2019,7 +2044,8 @@ versioning).
 
 
 Like Hibernate or JPA, EF uses classes to represent entities in the database, and these classes are
-often referred to as “model” objects, since they typically serve that purpose in an MVC and/or Web
+
+- ften referred to as “model” objects, since they typically serve that purpose in an MVC and/or Web
 API application. These will usually look like “plain old C# objects,” with the odd custom attribute to
 help give EF some additional hints about how to map to the database table they represent.
 
@@ -2099,13 +2125,15 @@ modelBuilder.Ignore<BlogMetadata>();
 
 
 The “Id” fields, of course, are typically primary key integer columns in the database, and the List
-of Posts is a classic one-to-many relationship. All of this will be eminently familiar to any user of
+
+- f Posts is a classic one-to-many relationship. All of this will be eminently familiar to any user of
 Hibernate, JPA, or other object-relational modeling system. What will be different will be the way in
 which queries and modifiers are run; thanks to LINQ, Entity Framework uses an entirely new style of
 query starting from the DbSet fields modeled on the DbContext-inheriting class. To do a query to
 fetch all the blogs from the system, we simply create an instance of the context inside of a “using”
 block (which is the inspiration for the try-with-resources block in Java7), and use that instance to
-obtain the set of Blog instances and iterate through them:
+
+- btain the set of Blog instances and iterate through them:
 
 
 `using (var` context = `new BloggingContext())`
@@ -2124,8 +2152,10 @@ obtain the set of Blog instances and iterate through them:
 ```
 
 Contrary to what we experienced during the heyday of EJB Entity Beans, however, this isn’t a case
-of early loading or late loading; under the hood, Entity Framework is making use of “enumerator
-objects” (very similar to Java8 streams and the Java Iterable<T> interface) to fetch objects in batches,
+
+- f early loading or late loading; under the hood, Entity Framework is making use of “enumerator
+
+- bjects” (very similar to Java8 streams and the Java Iterable<T> interface) to fetch objects in batches,
 just as a typical database cursor would do.
 
 
@@ -2212,6 +2242,7 @@ provides that capacity.
 
 There is, of course, much more to discuss about Entity Framework—it’s every bit as rich and powerful
 as JPA, and as such, definitely larger than just what we can cover in a single paper. For more examples
+
 [of LINQ syntax, check out https://aka.ms/101LinqSamples. For 101 LINQ samples, and for more](https://aka.ms/101LinqSamples)
 [information on Entity Framework itself, head over to the EF documentation home at https://docs.](https://docs.microsoft.com/ef/core/)
 [microsoft.com/ef/core/.](https://docs.microsoft.com/ef/core/)
@@ -2227,7 +2258,8 @@ tapestry of open-source projects and commercial tools and frameworks, and that m
 developer could, if they wished, spend their entire career just discovering the boundaries there. We
 haven’t even begun to discuss the alternative languages for the .NET platform, either from Microsoft
 (F#, an object/functional hybrid that fills the same role as Scala, or good old Visual Basic, one of the
-original dynamic languages) or from the community (check out Boo, a Python-inspired dynamic
+
+- riginal dynamic languages) or from the community (check out Boo, a Python-inspired dynamic
 language). We haven’t begun to explore the different open-source frameworks that do dependency
 injection. We haven’t begun to explore the different frameworks for doing unit testing, or the online
 tooling from Microsoft to provide agile project support. We haven’t even mentioned Azure.
@@ -2236,7 +2268,8 @@ tooling from Microsoft to provide agile project support. We haven’t even menti
 This is a brave new land, intrepid adventurer, but rest easy: Much of what you know from your time
 in the world of Java will serve you well here. The concepts are similar, but different enough to be
 interesting. The platforms are powerful, and the communities open and inviting. The tools are easily
-obtained, and the tutorials plenty. You might even recognize a few familiar names, those who have
+
+- btained, and the tutorials plenty. You might even recognize a few familiar names, those who have
 come before you across the pond and gone on this adventure before you. Be the tourist, if you like,
 but know that there’s plenty of room to build your own home and settle down here, even if it’s only a
 summer home. Come in, and be welcome.

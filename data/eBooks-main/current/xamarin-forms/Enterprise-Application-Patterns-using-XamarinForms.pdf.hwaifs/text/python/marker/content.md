@@ -63,50 +63,50 @@ Microsoft and the trademarks listed at http://www.microsoft.com on the "Trademar
 | Managing the lifetime of resolved objects                                   | 22 |
 | Summary                                                                     |    |
 
-| Communicating between loosely coupled components  | 24 |
-|---------------------------------------------------|----|
-| Introduction to MessagingCenter                   | 2  |
-| Defining a message                                | 2  |
-| Publishing a message                              | 2  |
-| Subscribing to a message                          | 2  |
-| Unsubscribing from a message                      | 2  |
-| Summary                                           | 2  |
-| Navigation                                        | 2  |
-| Navigating between pages                          | 2  |
-| Creating the NavigationService instance           | 2  |
-| Handling navigation requests                      | 3  |
-| Navigating when the app is launched               | 3  |
-| Passing parameters during navigation              | 3  |
-| Invoking navigation using behaviors               | 3  |
-| Confirming or cancelling navigation               | 3  |
-| Summary                                           | 3  |
-| Validation                                        | 3  |
-| Specifying validation rules                       | 3  |
-| Adding validation rules to a property             | 3  |
-| Triggering validation                             | 3  |
-| Triggering validation manually                    | 3  |
-| Triggering validation when properties change      | 4  |
-| Displaying validation errors                      |    |
-| Highlighting a control that contains invalid data |    |
-| Displaying error messages                         |    |
-| Summary                                           |    |
-| Configuration management                          | 4  |
-| Creating a settings class                         |    |
-| Adding a setting                                  |    |
-| Data binding to user settings                     |    |
-| Summary                                           |    |
-| Containerized microservices                       | 5  |
-| Microservices                                     | 5  |
-| Containerization                                  |    |
-| Communication between client and microservices    |    |
-| Communication between microservices               |    |
-| Summary                                           |    |
-| Authentication and authorization                  | 5  |
-| Authentication                                    |    |
-| Issuing bearer tokens using IdentityServer 4      |    |
-| Adding IdentityServer to a web application        |    |
-| Configuring IdentityServer                        |    |
-|                                                   |    |
+| Communicating between loosely coupled components  | 2 |
+|---------------------------------------------------|---|
+| Introduction to MessagingCenter                   | 2 |
+| Defining a message                                | 2 |
+| Publishing a message                              | 2 |
+| Subscribing to a message                          | 2 |
+| Unsubscribing from a message                      | 2 |
+| Summary                                           | 2 |
+| Navigation                                        | 2 |
+| Navigating between pages                          | 2 |
+| Creating the NavigationService instance           | 2 |
+| Handling navigation requests                      | 3 |
+| Navigating when the app is launched               | 3 |
+| Passing parameters during navigation              | 3 |
+| Invoking navigation using behaviors               | 3 |
+| Confirming or cancelling navigation               | 3 |
+| Summary                                           | 3 |
+| Validation                                        | 3 |
+| Specifying validation rules                       | 3 |
+| Adding validation rules to a property             | 3 |
+| Triggering validation                             | 3 |
+| Triggering validation manually                    | 3 |
+| Triggering validation when properties change      | 4 |
+| Displaying validation errors                      |   |
+| Highlighting a control that contains invalid data |   |
+| Displaying error messages                         |   |
+| Summary                                           |   |
+| Configuration management                          | 4 |
+| Creating a settings class                         |   |
+| Adding a setting                                  |   |
+| Data binding to user settings                     |   |
+| Summary                                           |   |
+| Containerized microservices                       | 5 |
+| Microservices                                     | 5 |
+| Containerization                                  |   |
+| Communication between client and microservices    |   |
+| Communication between microservices               |   |
+| Summary                                           |   |
+| Authentication and authorization                  | 5 |
+| Authentication                                    |   |
+| Issuing bearer tokens using IdentityServer 4      |   |
+| Adding IdentityServer to a web application        |   |
+| Configuring IdentityServer                        |   |
+|                                                   |   |
 
 | Performing authentication                           | 64 |
 |-----------------------------------------------------|----|
@@ -1012,7 +1012,7 @@ In addition, the INavigationService interface specifies that an implementing cla
 
 **Note:** An INavigationService interface would usually also specify a GoBackAsync method, which is used to programmatically return to the previous page in the navigation stack. However, this method is missing from the eShopOnContainers mobile app because it's not required.
 
-# **Creating the NavigationService instance**
+## **Creating the NavigationService instance**
 
 The NavigationService class, which implements the INavigationService interface, is registered as a singleton with the Autofac dependency injection container, as demonstrated in the following code example:
 
@@ -2419,7 +2419,7 @@ For more information about REST, see [API design](https://docs.microsoft.com/en-
 
 The eShopOnContainers mobile app uses the Model-View-ViewModel (MVVM) pattern, and the model elements of the pattern represent the domain entities used in the app. The controller and repository classes in the eShopOnContainers reference application accept and return many of these model objects. Therefore, they are used as data transfer objects (DTOs) that hold all the data that is passed between the mobile app and the containerized microservices. The main benefit of using DTOs to pass data to and receive data from a web service is that by transmitting more data in a single remote call, the app can reduce the number of remote calls that need to be made.
 
-#### **Making web requests**
+### **Making web requests**
 
 The eShopOnContainers mobile app uses the HttpClient class to make requests over HTTP, with JSON being used as the media type. This class provides functionality for asynchronously sending HTTP requests and receiving HTTP responses from a URI identified resource. The HttpResponseMessage class represents an HTTP response message received from a REST API after an HTTP request has been made. It contains information about the response, including the status code, headers, and any body. The HttpContent class represents the HTTP body and content headers, such as Content-Type and Content-Encoding. The content can be read using any of the ReadAs methods, such as ReadAsStringAsync and ReadAsByteArrayAsync, depending on the format of the data.
 
@@ -2898,7 +2898,7 @@ public async Task SettingOrderPropertyShouldRaisePropertyChanged()
 
 This unit test invokes the InitializeAsync method of the OrderViewModel class, which causes its Order property to be updated. The unit test will pass, provided that the PropertyChanged event is raised for the Order property.
 
-#### **Testing message-based communication**
+### **Testing message-based communication**
 
 View models that use the MessagingCenter class to communicate between loosely-coupled classes can be unit tested by subscribing to the message being sent by the code under test, as demonstrated in the following code example:
 
@@ -2921,7 +2921,7 @@ public void AddCatalogItemCommandSendsAddProductMessageTest()
 
 This unit test checks that the CatalogViewModel publishes the AddProduct message in response to its AddCatalogItemCommand being executed. Because the MessagingCenter class supports multicast message subscriptions, the unit test can subscribe to the AddProduct message and execute a callback delegate in response to receiving it. This callback delegate, specified as a lambda expression, sets a boolean field that's used by the Assert statement to verify the behavior of the test.
 
-# **Testing exception handling**
+## **Testing exception handling**
 
 Unit tests can also be written that check that specific exceptions are thrown for invalid actions or inputs, as demonstrated in the following code example:
 

@@ -34,10 +34,10 @@ without notice.
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association
 
-or connection is intended or should be inferred.
+- r connection is intended or should be inferred.
 
 
-[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) on the “Trademarks” webpage are
+[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) - n the “Trademarks” webpage are
 trademarks of the Microsoft group of companies.
 
 
@@ -133,7 +133,8 @@ any of these chapters to learn about cloud-native approaches to:
 
 
 [This guide is available both in PDF](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf) form and online. Feel free to forward this document or links to its
-online version to your team to help ensure common understanding of these topics. Most of these
+
+- nline version to your team to help ensure common understanding of these topics. Most of these
 topics benefit from a consistent understanding of the underlying principles and patterns, as well as
 the trade-offs involved in decisions related to these topics. Our goal with this document is to equip
 teams and their leaders with the information they need to make well-informed decisions for their
@@ -771,7 +772,8 @@ Another day, at the office, working on “the next big thing.”
 
 
 Your cellphone rings. It’s your friendly recruiter - the one who calls daily with exciting new
-opportunities.
+
+- pportunities.
 
 
 But this time it’s different: Start-up, equity, and plenty of funding.
@@ -908,7 +910,8 @@ Unlike the continuous hype that drives our industry, cloud native is _for-real_ 
 
 
 cloud-native computing ubiquitous across technology and cloud stacks. As one of the most influential
-open-source groups, it hosts many of the fastest-growing open source-projects in GitHub. These
+
+- pen-source groups, it hosts many of the fastest-growing open source-projects in GitHub. These
 [projects include Kubernetes, Prometheus,](https://kubernetes.io/) [Helm, Envoy, and gRPC.](https://helm.sh/)
 
 
@@ -1235,7 +1238,8 @@ Windows, macOS, and most flavors of Linux.
 .NET is highly performant and has scored well in comparison to Node.js and other competing
 [platforms. Interestingly, TechEmpower conducted an extensive set of performance benchmarks across](https://www.techempower.com/)
 many web application platforms and frameworks. .NET scored in the top 10 - well above Node.js and
-other competing platforms.
+
+- ther competing platforms.
 
 
 [.NET](https://github.com/dotnet/core) is maintained by Microsoft and the .NET community on GitHub.
@@ -1270,7 +1274,8 @@ _**Resiliency**_
 A microservices architecture moves your system from in-process to out-of-process network
 communication. In a distributed architecture, what happens when Service B isn’t responding to a
 network call from Service A? Or, what happens when Service C becomes temporarily unavailable and
-other services calling it become blocked?
+
+- ther services calling it become blocked?
 
 
 Resiliency is covered in the Cloud-native resiliency chapter.
@@ -1463,6 +1468,7 @@ containers along with an orchestrator inherently satisfy this requirement.”
 
 
 _Factor #8 specifies that “Services scale out across a large number of small identical processes (copies) as_
+
 _opposed to scaling-up a single large instance on the most powerful machine available.”_
 
 
@@ -1506,7 +1512,8 @@ and managing those resources.
 Cloud providers offer a rich assortment of _managed backing services._ Instead of owning the service,
 you simply consume it. The cloud provider operates the resource at scale and bears the responsibility
 for performance, security, and maintenance. Monitoring, redundancy, and availability are built into the
-service. Providers guarantee service level performance and fully support their managed services open a ticket and they fix your issue.
+service. Providers guarantee service level performance and fully support their managed services 
+- pen a ticket and they fix your issue.
 
 
 Cloud-native systems favor managed backing services from cloud vendors. The savings in time and
@@ -1597,7 +1604,8 @@ resources are affected.
 [In the article, What is Infrastructure as Code, Author Sam Guckenheimer describes how, “Teams who](https://docs.microsoft.com/devops/deliver/what-is-infrastructure-as-code)
 
 implement IaC can deliver stable environments rapidly and at scale. They avoid manual configuration
-of environments and enforce consistency by representing the desired state of their environments via
+
+- f environments and enforce consistency by representing the desired state of their environments via
 code. Infrastructure deployments with IaC are repeatable and prevent runtime issues caused by
 configuration drift or missing dependencies. DevOps teams can work together with a unified set of
 
@@ -1974,7 +1982,8 @@ _Figure 2-4. Projects in Visual Studio solution._
 The code is organized to support the different microservices, and within each microservice, the code is
 broken up into domain logic, infrastructure concerns, and user interface or service endpoint. In many
 cases, each service’s dependencies can be fulfilled by Azure services in production, and alternative
-options for local development. Let’s examine how the application’s requirements map to Azure
+
+- ptions for local development. Let’s examine how the application’s requirements map to Azure
 
 services.
 
@@ -1998,7 +2007,8 @@ approaches, ranging from simple CRUD operations to more complex DDD and CQRS pat
 Microservices communicate with clients over HTTP and with one another via message-based
 communication. The application supports multiple platforms for clients as well, since it adopts HTTP
 as a standard communication protocol and includes ASP.NET Core and Xamarin mobile apps that run
-on Android, iOS, and Windows platforms.
+
+- n Android, iOS, and Windows platforms.
 
 
 The application’s architecture is shown in Figure 2-5. On the left are the client apps, broken up into
@@ -2093,7 +2103,7 @@ The various back-end services used by eShopOnContainers have different storage r
 Several microservices use SQL Server databases. The Basket microservice leverages a Redis cache for
 its persistence. The Locations microservice expects a MongoDB API for its data. Azure supports each
 
-of these data formats.
+- f these data formats.
 
 
 For SQL Server database support, Azure has products for everything from single databases up to
@@ -2140,7 +2150,8 @@ messages from one microservice to any other microservice that needed to react to
 
 
 Once deployed to production, the eShopOnContainers application would be able to take advantage
-of several Azure services available to improve its resiliency. The application publishes health checks,
+
+- f several Azure services available to improve its resiliency. The application publishes health checks,
 which can be integrated with Application Insights to provide reporting and alerts based on the app’s
 availability. Azure resources also provide diagnostic logs that can be used to identify and correct bugs
 and performance issues. Resource logs provide detailed information on when and how different Azure
@@ -2313,7 +2324,7 @@ reference secrets stored in a Key Vault.
 Key Vault is a managed service for securely storing and accessing secrets. A secret is anything that you
 want to tightly control access to, such as API keys, passwords, or certificates. A vault is a logical group
 
-of secrets.
+- f secrets.
 
 
 Key Vault greatly reduces the chances that secrets may be accidentally leaked. When using Key Vault,
@@ -2329,7 +2340,8 @@ any of the secret information stored in Key Vault.
 
 
 Access to Key Vault requires proper caller authentication and authorization. Typically, each cloudnative microservice uses a ClientId/ClientSecret combination. It’s important to keep these credentials
-outside source control. A best practice is to set them in the application’s environment. Direct access to
+
+- utside source control. A best practice is to set them in the application’s environment. Direct access to
 [Key Vault from AKS can be achieved using Key Vault FlexVolume.](https://github.com/Azure/kubernetes-keyvault-flexvol)
 
 #### **Configuration in eShop**
@@ -2555,7 +2567,8 @@ Container orchestrators address and automate these and other concerns.
 
 
 In the cloud-native eco-system, Kubernetes has become the de facto container orchestrator. It’s an
-open-source platform managed by the Cloud Native Computing Foundation (CNCF). Kubernetes
+
+- pen-source platform managed by the Cloud Native Computing Foundation (CNCF). Kubernetes
 automates the deployment, scaling, and operational concerns of containerized workloads across a
 machine cluster. However, installing and managing Kubernetes is notoriously complex.
 
@@ -2585,7 +2598,8 @@ Kubernetes. By design containers only know about themselves. Once you have multi
 that need to work together, you should organize them at a higher level. Organizing large numbers of
 containers and their shared dependencies, such as network configuration, is where orchestration tools
 come in to save the day! Kubernetes creates an abstraction layer over groups of containers and
-organizes them into _pods_ . Pods run on worker machines referred to as _nodes_ . This organized structure
+
+- rganizes them into _pods_ . Pods run on worker machines referred to as _nodes_ . This organized structure
 is referred to as a _cluster_ . Figure 3-3 shows the different components of a Kubernetes cluster.
 
 
@@ -2664,19 +2678,21 @@ automatically from node failures.
 
 
 Organizations that deploy and maintain large numbers of applications benefit from containers and
-orchestrators. The up front effort of setting up containerized environments and Kubernetes clusters is
+
+- rchestrators. The up front effort of setting up containerized environments and Kubernetes clusters is
 primarily a fixed cost. Deploying, maintaining, and updating individual applications has a cost that
 varies with the number of applications. Beyond a few applications, the complexity of maintaining
 custom applications manually exceeds the cost of implementing a solution using containers and
 
-orchestrators.
+- rchestrators.
 
 #### **When should you avoid using containers and orchestrators?**
 
 
 If you’re unable to build your application following the Twelve-Factor App principles, you should
 consider avoiding containers and orchestrators. In these cases, consider a VM-based hosting platform,
-or possibly some hybrid system. With it, you can always spin off certain pieces of functionality into
+
+- r possibly some hybrid system. With it, you can always spin off certain pieces of functionality into
 separate containers or even serverless functions.
 
 #### **Development resources**
@@ -2806,7 +2822,8 @@ There are many extensions available for Visual Studio Code that support Docker d
 
 
 [Microsoft provides the Docker for Visual Studio Code extension. This extension simplifies the process](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-of adding container support to applications. It scaffolds required files, builds Docker images, and
+
+- f adding container support to applications. It scaffolds required files, builds Docker images, and
 enables you to debug your app inside a container. The extension features a visual explorer that makes
 it easy to take actions on containers and images such as start, stop, inspect, remove, and more. The
 extension also supports Docker Compose enabling you to manage multiple running containers as a
@@ -2826,14 +2843,16 @@ Functions provides a way to build serverless capabilities into your cloud-native
 #### **What is serverless?**
 
 Serverless is a relatively new service model of cloud computing. It doesn’t mean that servers are
-optional - your code still runs on a server somewhere. The distinction is that the application team no
+
+- ptional - your code still runs on a server somewhere. The distinction is that the application team no
 longer concerns itself with managing server infrastructure. Instead, the cloud vendor own this
 responsibility. The development team increases its productivity by delivering business solutions to
 customers, not plumbing.
 
 
 Serverless computing uses event-triggered stateless containers to host your services. They can scale
-out and in to meet demand as-needed. Serverless platforms like Azure Functions have tight
+
+- ut and in to meet demand as-needed. Serverless platforms like Azure Functions have tight
 integration with other Azure services like queues, events, and storage.
 
 #### **What challenges are solved by serverless?**
@@ -2867,8 +2886,10 @@ cloud can help reduce these costs; shifting applications to serverless can help 
 Typically, a microservice encapsulates a business capability, such as a shopping cart for an online
 eCommerce site. It exposes multiple operations that enable a user to manage their shopping
 experience. A function, however, is a small, lightweight block of code that executes a single-purpose
-operation in response to an event. Microservices are typically constructed to respond to requests,
-often from an interface. Requests can be HTTP Rest- or gRPC-based. Serverless services respond to
+
+- peration in response to an event. Microservices are typically constructed to respond to requests,
+
+- ften from an interface. Requests can be HTTP Rest- or gRPC-based. Serverless services respond to
 events. Its event-driven architecture is ideal for processing short-running, background tasks.
 
 #### **What scenarios are appropriate for serverless?**
@@ -2900,7 +2921,8 @@ complexity out of the microservice operations.
 Many services have long-running processes as part of their workflows. Often these tasks are done as
 part of the user’s interaction with the application. These tasks can force the user to wait, negatively
 impacting their experience. Serverless computing provides a great way to move slower tasks outside
-of the user interaction loop. These tasks can scale with demand without requiring the entire
+
+- f the user interaction loop. These tasks can scale with demand without requiring the entire
 application to scale.
 
 #### **When should you avoid serverless?**
@@ -3018,7 +3040,8 @@ It’s worth noting that the KEDA project is now managed by the Cloud Native Com
 We’ve discussed containers in this chapter and in chapter 1. We’ve seen that containers provide many
 benefits to cloud-native applications, including portability. In the Azure cloud, you can deploy the
 same containerized services across staging and production environments. Azure provides several
-options for hosting these containerized workloads:
+
+- ptions for hosting these containerized workloads:
 
 
   - Azure Kubernetes Services (AKS)
@@ -3035,7 +3058,8 @@ options for hosting these containerized workloads:
 When containerizing a microservice, you first build a container “image.” The image is a binary
 representation of the service code, dependencies, and runtime. While you can manually create an
 image using the Docker Build command from the Docker API, a better approach is to create it as part
-of an automated build process.
+
+- f an automated build process.
 
 
 Once created, container images are stored in container registries. They enable you to build, store, and
@@ -3128,7 +3152,8 @@ Dockerfile .
 
 As you can see from the previous command block, there’s no need to install Docker Desktop on your
 development machine. Additionally, you can configure ACR Task triggers to rebuild containers images
-on both source code and base image updates.
+
+- n both source code and base image updates.
 
 #### **Azure Kubernetes Service**
 
@@ -3217,7 +3242,8 @@ Gabe Monroy, former VP of Product Management at Microsoft, describes it well:
 
 
 Imagine you’re a new employee trying to fix a bug in a complex microservices application consisting
-of dozens of components, each with their own configuration and backing services. To get started, you
+
+- f dozens of components, each with their own configuration and backing services. To get started, you
 must configure your local development environment so that it can mimic production including setting
 up your IDE, building tool chain, containerized service dependencies, a local Kubernetes environment,
 mocks for backing services, and more. With all the time involved setting up your development
@@ -3245,7 +3271,7 @@ resources from the cloud vendor. For example, you can create a new node pool wit
 your Kubernetes cluster. Then, migrate your containerized services to the new pool.
 
 
-[Serverless apps scale up by choosing the premium Functions plan](https://docs.microsoft.com/azure/azure-functions/functions-scale) or premium instance sizes from a
+[Serverless apps scale up by choosing the premium Functions plan](https://docs.microsoft.com/azure/azure-functions/functions-scale) - r premium instance sizes from a
 dedicated app service plan.
 
 #### **Scaling out cloud-native apps**
@@ -3263,7 +3289,8 @@ AKS clusters can autoscale in one of two ways:
 
 [First, the Horizontal Pod Autoscaler monitors resource demand and automatically scales your POD](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-scale#autoscale-pods)
 replicas to meet it. When traffic increases, additional replicas are automatically provisioned to scale
-out your services. Likewise, when demand decreases, they’re removed to scale-in your services. You
+
+- ut your services. Likewise, when demand decreases, they’re removed to scale-in your services. You
 define the metric on which to scale, for example, CPU usage. You can also specify the minimum and
 maximum number of replicas to run. AKS monitors that metric and scales accordingly.
 
@@ -3507,7 +3534,8 @@ microservices. We’ll then look at back-end microservices communicate with each
 
 the up and gRPC communication technology. Finally, we’ll look new innovative communication
 patterns using service mesh technology. We’ll also see how the Azure cloud provides different kinds
-of _backing services_ to support cloud-native communication.
+
+- f _backing services_ to support cloud-native communication.
 
 ### Front-end client communication
 
@@ -3533,7 +3561,8 @@ proportionately.
 
 While simple to implement, direct client communication would be acceptable only for simple
 microservice applications. This pattern tightly couples front-end clients to core back-end services,
-opening the door for many problems, including:
+
+- pening the door for many problems, including:
 
 
   Client susceptibility to back-end service refactoring.
@@ -3628,7 +3657,8 @@ packets.
 
 
 [Throughout this book, we evangelize hosting cloud-native systems in Kubernetes. A container](https://www.infoworld.com/article/3268073/what-is-kubernetes-your-next-application-platform.html)
-orchestrator, Kubernetes automates the deployment, scaling, and operational concerns of
+
+- rchestrator, Kubernetes automates the deployment, scaling, and operational concerns of
 [containerized workloads. Azure Application Gateway can be configured as an API gateway for Azure](https://azure.microsoft.com/services/kubernetes-service/)
 
 [Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/) cluster.
@@ -3664,7 +3694,8 @@ _Figure 4-6. Azure API Management_
 
 To start, API Management exposes a gateway server that allows controlled access to back-end
 services based upon configurable rules and policies. These services can be in the Azure cloud, your
-on-prem data center, or other public clouds. API keys and JWT tokens determine who can do what. All
+
+- n-prem data center, or other public clouds. API keys and JWT tokens determine who can do what. All
 traffic is logged for analytical purposes.
 
 
@@ -3678,7 +3709,8 @@ The publisher portal exposes a management dashboard where administrators expose 
 manage their behavior. Service access can be granted, service health monitored, and service telemetry
 gathered. Administrators apply _policies_ [to each endpoint to affect behavior. Policies](https://docs.microsoft.com/azure/api-management/api-management-howto-policies) are pre-built
 statements that execute sequentially for each service call. Policies are configured for an inbound call,
-outbound call, or invoked upon an error. Policies can be applied at different service scopes as to
+
+- utbound call, or invoked upon an error. Policies can be applied at different service scopes as to
 enable deterministic ordering when combining policies. The product ships with a large number of
 [prebuilt policies.](https://docs.microsoft.com/azure/api-management/api-management-policies)
 
@@ -3754,7 +3786,8 @@ It enables API Gateway features for the following use cases:
 
 
   - Azure backing service resources such as Service Bus queues and topics, Azure storage, and
-others.
+
+     - thers.
 
 
   Microservices where traffic has occasional large spikes but remains low most the time.
@@ -3794,7 +3827,7 @@ Real-time, or push, communication is another option for front-end applications t
 with back-end cloud-native systems over HTTP. Applications, such as financial-tickers, online
 education, gaming, and job-progress updates, require instantaneous, real-time responses from the
 back-end. With normal HTTP communication, there’s no way for the client to know when new data is
-available. The client must continually _poll_ or send requests to the server. With _real-time_
+available. The client must continually _poll_ - r send requests to the server. With _real-time_
 communication, the server can push new data to the client at any time.
 
 
@@ -3843,34 +3876,36 @@ Service Bus, or Redis Cache, opening up many possibilities for your cloud-native
 
 Moving from the front-end client, we now address back-end microservices communicate with each
 
-other.
+- ther.
 
 
 When constructing a cloud-native application, you’ll want to be sensitive to how back-end services
 communicate with each other. Ideally, the less inter-service communication, the better. However,
 avoidance isn’t always possible as back-end services often rely on one another to complete an
-operation.
+
+- peration.
 
 
 There are several widely accepted approaches to implementing cross-service communication. The _type_
+
 _of communication interaction_ will often determine the best approach.
 
 
 Consider the following interaction types:
 
 
-  - _Query_ – when a calling microservice requires a response from a called microservice, such as,
+  - _Query_  - when a calling microservice requires a response from a called microservice, such as,
 “Hey, give me the buyer information for a given customer Id.”
 
 
 67 CHAPTER 4 | Cloud-native communication patterns
 
 
-  - _Command_ – when the calling microservice needs another microservice to execute an action
+  - _Command_  - when the calling microservice needs another microservice to execute an action
 but doesn’t require a response, such as, “Hey, just ship this order.”
 
 
-  - _Event_ – when a microservice, called the publisher, raises an event that state has changed or an
+  - _Event_  - when a microservice, called the publisher, raises an event that state has changed or an
 
 action has occurred. Other microservices, called subscribers, who are interested, can react to
 
@@ -3878,7 +3913,8 @@ the event appropriately. The publisher and the subscribers aren’t aware of eac
 
 
 Microservice systems typically use a combination of these interaction types when executing
-operations that require cross-service interaction. Let’s take a close look at each and how you might
+
+- perations that require cross-service interaction. Let’s take a close look at each and how you might
 implement them.
 
 #### **Queries**
@@ -3901,7 +3937,8 @@ _Figure 4-8. Direct HTTP communication_
 
 While direct HTTP calls between microservices are relatively simple to implement, care should be
 taken to minimize this practice. To start, these calls are always _synchronous_ and will block the
-operation until a result is returned or the request times outs. What were once self-contained,
+
+- peration until a result is returned or the request times outs. What were once self-contained,
 independent services, able to evolve independently and deploy frequently, now become coupled to
 each other. As coupling among microservices increase, their architectural benefits diminish.
 
@@ -4068,7 +4105,8 @@ Go. Developers should never communicate directly with these libraries. Doing so 
 your microservice code to the Azure Storage Queue service. It’s a better practice to insulate the
 implementation details of the API. Introduce an intermediation layer, or intermediate API, that exposes
 generic operations and encapsulates the concrete library. This loose coupling enables you to swap out
-one queuing service for another without having to make changes to the mainline service code.
+
+- ne queuing service for another without having to make changes to the mainline service code.
 
 
 Azure Storage queues are an economical option to implement command messaging in your cloudnative applications. Especially when a queue size will exceed 80 GB, or a simple feature set is
@@ -4109,7 +4147,8 @@ Two more enterprise features are partitioning and sessions. A conventional Servi
 [handled by a single message broker and stored in a single message store. But, Service Bus Partitioning](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-partitioning)
 spreads the queue across multiple message brokers and message stores. The overall throughput is no
 longer limited by the performance of a single message broker or messaging store. A temporary
-outage of a messaging store doesn’t render a partitioned queue unavailable.
+
+- utage of a messaging store doesn’t render a partitioned queue unavailable.
 
 
 [Service Bus Sessions](https://codingcanvas.com/azure-service-bus-sessions/) provide a way to group-related messages. Imagine a workflow scenario where
@@ -4171,8 +4210,10 @@ _Figure 4-15. Event-Driven messaging_
 
 Note the _event bus_ component that sits in the middle of the communication channel. It’s a custom
 class that encapsulates the message broker and decouples it from the underlying application. The
-ordering and inventory microservices independently operate the event with no knowledge of each
-other, nor the shopping basket microservice. When the registered event is published to the event bus,
+
+- rdering and inventory microservices independently operate the event with no knowledge of each
+
+- ther, nor the shopping basket microservice. When the registered event is published to the event bus,
 they act upon it.
 
 
@@ -4279,7 +4320,8 @@ A major difference between EventGrid and Service Bus is the underlying _message 
 
 Service Bus implements an older style _pull model_ in which the downstream subscriber actively polls
 the topic subscription for new messages. On the upside, this approach gives the subscriber full control
-of the pace at which it processes messages. It controls when and how many messages to process at
+
+- f the pace at which it processes messages. It controls when and how many messages to process at
 any given time. Unread messages remain in the subscription until processed. A significant
 shortcoming is the latency between the time the event is generated and the polling operation that
 pulls that message to the subscriber for processing. Also, the overhead of constant polling for the
@@ -4301,7 +4343,8 @@ subscription delivery attempts, management calls, and filtering by subject. With
 EventGrid guarantees the delivery of an event within a 24-hour period, with built-in retry functionality
 for unsuccessful delivery. Undelivered messages can be moved to a “dead-letter” queue for resolution.
 Unlike Azure Service Bus, Event Grid is tuned for fast performance and doesn’t support features like
-ordered messaging, transactions, and sessions.
+
+- rdered messaging, transactions, and sessions.
 
 
 **Streaming messages in the Azure cloud**
@@ -4353,7 +4396,8 @@ _Figure 4-19. Event Hub partitioning_
 
 
 Instead of reading from the same resource, each consumer group reads across a subset, or partition,
-of the message stream.
+
+- f the message stream.
 
 
 79 CHAPTER 4 | Cloud-native communication patterns
@@ -4386,7 +4430,8 @@ number of contributors.
 
 
 A typical gRPC client app will expose a local, in-process function that implements a business
-operation. Under the covers, that local function invokes another function on a remote machine. What
+
+- peration. Under the covers, that local function invokes another function on a remote machine. What
 appears to be a local call essentially becomes a transparent out-of-process call to a remote service.
 The RPC plumbing abstracts the point-to-point networking communication, serialization, and
 execution between computers.
@@ -4592,7 +4637,8 @@ required for gRPC communication.
 
 
 While we strive to decouple microservices with asynchronous communication patterns, some
-operations require direct calls. gRPC should be the primary choice for direct synchronous
+
+- perations require direct calls. gRPC should be the primary choice for direct synchronous
 communication between microservices. Its high-performance communication protocol, based on
 HTTP/2 and protocol buffers, make it a perfect choice.
 
@@ -4792,7 +4838,8 @@ and support massive scale. With this model…
 
 
 Segregating data also enables each microservice to implement the data store type that is best
-optimized for its workload, storage needs, and read/write patterns. Choices include relational,
+
+- ptimized for its workload, storage needs, and read/write patterns. Choices include relational,
 document, key-value, and even graph-based data stores.
 
 
@@ -4814,7 +4861,8 @@ relational structure of its underlying data.
 
   The ordering microservice consumes both a NoSql document database for write operations
 along with a highly denormalized key/value store to accommodate high-volumes of read
-operations.
+
+    - perations.
 
 
 89 CHAPTER 5 | Cloud-native data patterns
@@ -4860,7 +4908,8 @@ We could also implement a request-reply pattern with separate inbound and outbou
 each service. However, this pattern is complicated and requires plumbing to correlate request and
 response messages. While it does decouple the backend microservice calls, the calling service must
 still synchronously wait for the call to complete. Network congestion, transient faults, or an
-overloaded microservice and can result in long-running and even failed operations.
+
+- verloaded microservice and can result in long-running and even failed operations.
 
 
 90 CHAPTER 5 | Cloud-native data patterns
@@ -4915,7 +4964,7 @@ creates an order. Each microservice maintains its own data store and implements 
 
 for its store. To create the order, the local transaction for _each_ individual microservice must succeed,
 
-or _all_ must abort and roll back the operation. While built-in transactional support is available inside
+- r _all_ must abort and roll back the operation. While built-in transactional support is available inside
 each of the microservices, there’s no support for a distributed transaction that would span across all
 five services to keep data consistent.
 
@@ -4925,6 +4974,7 @@ Instead, you must construct this distributed transaction _programmatically_ .
 
 A popular pattern for adding distributed transactional support is the Saga pattern. It’s implemented
 by grouping local transactions together programmatically and sequentially invoking each one. If any
+
 [of the local transactions fail, the Saga aborts the operation and invokes a set of compensating](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction)
 [transactions. The compensating transactions undo the changes made by the preceding local](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction)
 transactions and restore data consistency. Figure 5-6 shows a failed transaction with the Saga pattern.
@@ -4936,7 +4986,7 @@ _Figure 5-6. Rolling back a transaction_
 92 CHAPTER 5 | Cloud-native data patterns
 
 
-In the previous figure, the _Update Inventory_ operation has failed in the Inventory microservice. The
+In the previous figure, the _Update Inventory_ - peration has failed in the Inventory microservice. The
 Saga invokes a set of compensating transactions (in red) to adjust the inventory counts, cancel the
 payment and the order, and return the data for each microservice back to a consistent state.
 
@@ -4969,7 +5019,8 @@ write operations.
 However, a high volume data scenario can benefit from separate models and data tables for reads
 and writes. To improve performance, the read operation could query against a highly denormalized
 representation of the data to avoid expensive repetitive table joins and table locks. The _write_
-operation, known as a _command_, would update against a fully normalized representation of the data
+
+- peration, known as a _command_, would update against a fully normalized representation of the data
 that would guarantee consistency. You then need to implement a mechanism to keep both
 representations in sync. Typically, whenever the write table is modified, it publishes an event that
 replicates the modification to the read table.
@@ -4985,14 +5036,16 @@ _Figure 5-7. CQRS implementation_
 
 
 In the previous figure, separate command and query models are implemented. Each data write
-operation is saved to the write store and then propagated to the read store. Pay close attention to
+
+- peration is saved to the write store and then propagated to the read store. Pay close attention to
 [how the data propagation process operates on the principle of eventual consistency. The read model](https://www.cloudcomputingpatterns.org/eventual_consistency/)
 eventually synchronizes with the write model, but there may be some lag in the process. We discuss
 eventual consistency in the next section.
 
 
 This separation enables reads and writes to scale independently. Read operations use a schema
-optimized for queries, while the writes use a schema optimized for updates. Read queries go against
+
+- ptimized for queries, while the writes use a schema optimized for updates. Read queries go against
 denormalized data, while complex business logic can be applied to the write model. As well, you
 might impose tighter security on write operations than those exposing reads.
 
@@ -5111,7 +5164,7 @@ _Figure 5-10. The CAP theorem_
 
 
 The theorem states that distributed data systems will offer a trade-off between consistency,
-availability, and partition tolerance. And, that any database can only guarantee _two_ of the three
+availability, and partition tolerance. And, that any database can only guarantee _two_ - f the three
 properties:
 
 
@@ -5159,7 +5212,8 @@ deployments.
 
 
 Replication consistency and recovery point objectives can be tuned by configuring whether replication
-occurs synchronously or asynchronously. If data replicas were to lose network connectivity in a “highly
+
+- ccurs synchronously or asynchronously. If data replicas were to lose network connectivity in a “highly
 consistent” or synchronous relational database cluster, you wouldn’t be able to write to the database.
 The system would reject the write operation as it can’t replicate that change to the other data replica.
 Every data replica has to update before the transaction can complete.
@@ -5288,7 +5342,8 @@ latest stable version of the SQL Server Database Engine.
 
 
 For use with a cloud-native microservice, Azure SQL Database is available with three deployment
-options:
+
+- ptions:
 
 
   - [A Single Database represents a fully managed SQL Database running on an Azure SQL](https://docs.microsoft.com/azure/sql-database/sql-database-servers)
@@ -5359,7 +5414,7 @@ to learn new skills or manage virtual machines.
 **Azure Database for MariaDB**
 
 
-[MariaDB](https://mariadb.com/) Server is another popular open-source database server. It was created as a _fork_ of MySQL
+[MariaDB](https://mariadb.com/) Server is another popular open-source database server. It was created as a _fork_ - f MySQL
 when Oracle purchased Sun Microsystems, who owned MySQL. The intent was to ensure that MariaDB
 remained open-source. As MariaDB is a fork of MySQL, the data and table definitions are compatible,
 and the client protocols, structures, and APIs, are close-knit.
@@ -5499,7 +5554,7 @@ request, the database engine translates the primitive data into the model repres
 selected.
 
 
-[In the previous table, note the Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction) option. This API is an evolution of Azure Table Storage. Both
+[In the previous table, note the Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction) - ption. This API is an evolution of Azure Table Storage. Both
 share the same underlying table model, but the Cosmos DB Table API adds premium enhancements
 not available in the Azure Storage API. The following table contrasts the features.
 
@@ -5535,7 +5590,7 @@ code changes are required.
 
 
 Earlier in the _Relational vs. NoSQL_ section, we discussed the subject of _data consistency_ . Data
-consistency refers to the _integrity_ of your data. Cloud-native services with distributed data rely on
+consistency refers to the _integrity_ - f your data. Cloud-native services with distributed data rely on
 replication and must make a fundamental tradeoff between read consistency, availability, and latency.
 
 
@@ -5605,7 +5660,7 @@ and items with an airport code, to the container on the right. Combining the par
 the ID value creates an item’s index, which uniquely identifies the item.
 
 
-[Internally, Cosmos DB automatically manages the placement of logical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data) on physical
+[Internally, Cosmos DB automatically manages the placement of logical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data) - n physical
 partitions to satisfy the scalability and performance needs of the container. As application throughput
 and storage requirements increase, Azure Cosmos DB redistributes logical partitions across a greater
 number of servers. Redistribution operations are managed by Cosmos DB and invoked without
@@ -5659,7 +5714,7 @@ databases processes from a single DNS entry. By decoupling the database instance
 107 CHAPTER 5 | Cloud-native data patterns
 
 
-of the service with which it’s associated, we can scale without disrupting existing application instances.
+- f the service with which it’s associated, we can scale without disrupting existing application instances.
 Sending a request to any service at a given time will always yield the same result.
 
 
@@ -6053,7 +6108,8 @@ the HTTP status codes shown in the following table.
 
 Question: Would you retry an HTTP Status Code of 403 - Forbidden? No. Here, the system is
 functioning properly, but informing the caller that they aren’t authorized to perform the requested
-operation. Care must be taken to retry only those operations caused by failures.
+
+- peration. Care must be taken to retry only those operations caused by failures.
 
 
 As recommended in Chapter 1, Microsoft developers constructing cloud-native applications should
@@ -6155,7 +6211,8 @@ Keep in mind that the intent of the Circuit Breaker pattern is _different_ than 
 The Retry pattern enables an application to retry an operation in the expectation that it will succeed.
 The Circuit Breaker pattern prevents an application from doing an operation that is likely to fail.
 Typically, an application will _combine_ these two patterns by using the Retry pattern to invoke an
-operation through a circuit breaker.
+
+- peration through a circuit breaker.
 
 #### **Testing for resiliency**
 
@@ -6374,7 +6431,8 @@ autoscaling to the rules as appropriate, to cope with unexpected changes in dema
 quickly meet immediate spikes in traffic without losing business. And, then scale in (that is,
 remove unneeded instances) conservatively to keep the system stable. A simple way to
 implement this is to set the cool down period, which is the time to wait between scaling
-operations, to five minutes for adding resources and up to 15 minutes for removing instances.
+
+    - perations, to five minutes for adding resources and up to 15 minutes for removing instances.
 
 #### **Built-in retry in services**
 
@@ -6654,7 +6712,8 @@ duplicate problems in an environment that can be tested and experimented with.
 
 
 In traditional applications, log files are typically stored on the local machine. In fact, on Unix-like
-operating systems, there’s a folder structure defined to hold any logs, typically under /var/log.
+
+- perating systems, there’s a folder structure defined to hold any logs, typically under /var/log.
 
 
 126 CHAPTER 7 | Monitoring and health
@@ -6750,7 +6809,8 @@ It’s also helpful to follow some standard practices when building logging that
 each message that is related to that interaction, makes it easier to search for all related messages. One
 need only find a single message and extract the correlation ID to find all the related messages.
 Another example is ensuring that the log format is the same for every service, whatever the language
-or logging library it uses. This standardization makes reading logs much easier. Figure 7-4
+
+- r logging library it uses. This standardization makes reading logs much easier. Figure 7-4
 demonstrates how a microservices architecture can leverage centralized logging as part of its
 
 workflow.
@@ -6765,7 +6825,8 @@ _Figure 7-4. Logs from various sources are ingested into a centralized log store
 #### **Challenges with detecting and responding to potential app health** **issues**
 
 Some applications aren’t mission critical. Maybe they’re only used internally, and when a problem
-occurs, the user can contact the team responsible and the application can be restarted. However,
+
+- ccurs, the user can contact the team responsible and the application can be restarted. However,
 customers often have higher expectations for the applications they consume. You should know when
 problems occur with your application _before_ users do, or before users notify you. Otherwise, the first
 you know about a problem may be when you notice an angry deluge of social media posts deriding
@@ -6873,7 +6934,8 @@ very danger. It’s important to ensure that the alerts that do fire are indicat
 
 There are many good centralized logging tools and they vary in cost from being free, open-source
 tools, to more expensive options. In many cases, the free tools are as good as or better than the paid
-offerings. One such tool is a combination of three open-source components: Elasticsearch, Logstash,
+
+- fferings. One such tool is a combination of three open-source components: Elasticsearch, Logstash,
 
 and Kibana.
 
@@ -7019,7 +7081,8 @@ your AKS clusters, configuring Elastic Stack for Kubernetes is a great solution.
 
 
 [Azure Monitor for Containers supports consuming logs from not just Kubernetes but also from other](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
-orchestration engines such as DC/OS, Docker Swarm, and Red Hat OpenShift.
+
+- rchestration engines such as DC/OS, Docker Swarm, and Red Hat OpenShift.
 
 
 134 CHAPTER 7 | Monitoring and health
@@ -7030,6 +7093,7 @@ _Figure 7-10. Consuming logs from various containers_
 
 [Prometheus](https://prometheus.io/) is a popular open source metric monitoring solution. It is part of the Cloud Native
 Compute Foundation. Typically, using Prometheus requires managing a Prometheus server with its
+
 [own store. However, Azure Monitor for Containers provides direct integration with Prometheus](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-prometheus-integration)
 [metrics endpoints, so a separate server is not required.](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-prometheus-integration)
 
@@ -7102,6 +7166,7 @@ JavaScript, and the .NET languages.
 
 The ultimate goal of gathering information about the state of your application is to ensure that your
 end users have a good experience. What better way to tell if users are experiencing issues than doing
+
 [outside-in web tests? These tests can be as simple as pinging your website from locations around the](https://docs.microsoft.com/azure/azure-monitor/app/monitor-web-app-availability)
 world or as involved as having agents log into the site and simulate user actions.
 
@@ -7211,7 +7276,8 @@ itself to compensate or at least limp along until somebody arrives at work the n
 
 Azure Monitor automatically leverages machine learning to understand the normal operating
 parameters of deployed applications. This approach enables it to detect services that are operating
-outside of their normal parameters. For instance, the typical weekday traffic on the site might be
+
+- utside of their normal parameters. For instance, the typical weekday traffic on the site might be
 10,000 requests per minute. And then, on a given week, suddenly the number of requests hits a highly
 [unusual 20,000 requests per minute. Smart Detection](https://docs.microsoft.com/azure/azure-monitor/app/proactive-diagnostics) will notice this deviation from the norm and
 trigger an alert. At the same time, the trend analysis is smart enough to avoid firing false positives
@@ -7248,7 +7314,8 @@ deployed anywhere and may communicate with other apps anywhere. Clients may comm
 these apps from anywhere, and in fact, clients may consist of any combination of platforms and
 devices. Cloud-native identity solutions use open standards to achieve secure application access from
 clients. These clients range from human users on PCs or phones, to other apps hosted anywhere
-online, to set-top boxes and IOT devices running any software platform anywhere in the world.
+
+- nline, to set-top boxes and IOT devices running any software platform anywhere in the world.
 
 
 Modern cloud-native identity solutions typically use access tokens that are issued by a secure token
@@ -7270,7 +7337,8 @@ to resources is left to other parts of the application.
 
 
 _Authentication_ is the process of determining the identity of a security principal. _Authorization_ is the act
-of granting an authenticated principal permission to perform an action or access a resource.
+
+- f granting an authenticated principal permission to perform an action or access a resource.
 
 Sometimes authentication is shortened to AuthN and authorization is shortened to AuthZ. Cloud
 
@@ -7317,7 +7385,8 @@ Microsoft Azure Active Directory (Azure AD) offers identity and access managemen
 Customers use it to configure and maintain who users are, what information to store about them, who
 can access that information, who can manage it, and what apps can access it. AAD can authenticate
 users for applications configured to use it, providing a single sign-on (SSO) experience. It can be used
-on its own or be integrated with Windows AD running on premises.
+
+- n its own or be integrated with Windows AD running on premises.
 
 
 Azure AD is built for the cloud. It’s truly a cloud-native identity solution that uses a REST-based Graph
@@ -7442,7 +7511,8 @@ interface code and only supports in-memory configuration. To use it with a datab
 [a data provider like IdentityServer4.EntityFramework, which uses Entity Framework Core to store](https://www.nuget.org/packages/IdentityServer4.EntityFramework)
 configuration and operational data for IdentityServer. For user interface, you can copy files from the
 [Quickstart UI repository](https://github.com/IdentityServer/IdentityServer4.Quickstart.UI) into your ASP.NET Core MVC application to add support for sign in and sign
-out using IdentityServer middleware.
+
+- ut using IdentityServer middleware.
 
 #### **Configuration**
 
@@ -7522,7 +7592,8 @@ In short, security is serious business.
 
 Cloud-native applications can be both easier and more difficult to secure than traditional applications.
 On the downside, you need to secure more smaller applications and dedicate more energy to build
-out the security infrastructure. The heterogeneous nature of programming languages and styles in
+
+- ut the security infrastructure. The heterogeneous nature of programming languages and styles in
 most service deployments also means you need to pay more attention to security bulletins from many
 different providers.
 
@@ -7606,7 +7677,8 @@ introduce malicious triggers.
 
 
 Almost every part of building a cloud-native application can benefit from remembering the principle
-of least privilege. You can find it at play when setting up firewalls, network security groups, roles, and
+
+- f least privilege. You can find it at play when setting up firewalls, network security groups, roles, and
 scopes in Role-based access control (RBAC).
 
 #### **Penetration testing**
@@ -7704,8 +7776,10 @@ technologies work.
 
 [Within the Azure portal, the Azure Advisor](https://azure.microsoft.com/services/advisor/) is a system that is constantly scanning an environment and
 making recommendations. Some of these recommendations are designed to save users money, but
-others are designed to identify potentially insecure configurations, such as having a storage container
-open to the world and not protected by a Virtual Network.
+
+- thers are designed to identify potentially insecure configurations, such as having a storage container
+
+- pen to the world and not protected by a Virtual Network.
 
 #### **Azure network infrastructure**
 
@@ -7726,7 +7800,8 @@ For instance, anybody on the Internet can access an app service. New SQL Server 
 
 come restricted, so that external parties can’t access them, but the IP address ranges used by Azure
 itself are permitted through. So, while the SQL server is protected from external threats, an attacker
-only needs to set up an Azure bridgehead from where they can launch attacks against all SQL
+
+- nly needs to set up an Azure bridgehead from where they can launch attacks against all SQL
 
 instances on Azure.
 
@@ -7883,7 +7958,8 @@ Previously, only “allow” rules were permitted for RBAC. This behavior made s
 to build. For instance, allowing a security principal access to all storage accounts except one required
 granting explicit permission to a potentially endless list of storage accounts. Every time a new storage
 account was created, it would have to be added to this list of accounts. This added management
-overhead that certainly wasn’t desirable.
+
+- verhead that certainly wasn’t desirable.
 
 
 Deny rules take precedence over allow rules. Now representing the same “allow all but one” scope
@@ -8045,7 +8121,8 @@ So customers can remain confident their secret information remains secret.
 
 
 The underpinning of much of Azure is the Azure Storage engine. Virtual machine disks are mounted
-on top of Azure Storage. Azure Kubernetes Service runs on virtual machines that, themselves, are
+
+- n top of Azure Storage. Azure Kubernetes Service runs on virtual machines that, themselves, are
 hosted on Azure Storage. Even serverless technologies, such as Azure Functions Apps and Azure
 Container Instances, run out of disk that is part of Azure Storage.
 
@@ -8112,7 +8189,8 @@ allowances to read encrypted data. Connection strings need to be updated with Co
 Setting=Enabled and client credentials must be retrieved from the Key Vault. The SQL Server client
 must then be primed with the column encryption keys. Once that is done, the remaining actions use
 the standard interfaces to SQL Client. That is, tools like Dapper and Entity Framework, which are built
-on top of SQL Client, will continue to work without changes. Always Encrypted may not yet be
+
+- n top of SQL Client, will continue to work without changes. Always Encrypted may not yet be
 available for every SQL Server driver on every language.
 
 
@@ -8168,7 +8246,8 @@ between opposites.
 Take, for instance, the two major schools of developing web applications: Single Page Applications
 (SPAs) versus server-side applications. On the one hand, the user experience tends to be better with
 SPAs and the amount of traffic to the web server can be minimized making it possible to host them
-on something as simple as static hosting. On the other hand, SPAs tend to be slower to develop and
+
+- n something as simple as static hosting. On the other hand, SPAs tend to be slower to develop and
 more difficult to test. Which one is the right choice? Well, it depends on your situation.
 
 
@@ -8240,7 +8319,8 @@ fostering discussion of changes as they’re made.
 
 **Azure Boards** - Provides an issue and work item tracking tool that strives to allow users to pick the
 workflows that work best for them. It comes with a number of pre-configured templates including
-ones to support SCRUM and Kanban styles of development.
+
+- nes to support SCRUM and Kanban styles of development.
 
 
 **Azure Pipelines** - A build and release management system that supports tight integration with Azure.
@@ -8337,7 +8417,8 @@ instructions, reducing spin-up time for developers.
 
 
 3. Builds can easily be set up such that they’re only triggered when a change is made to the
-owning repository.
+
+    - wning repository.
 
 
 4. The number of changes coming into a repository is limited to the small number of developers
@@ -8356,7 +8437,8 @@ with others.
 
 
 One of the key ideas behind microservices is that services should be siloed and separated from each
-other. When using Domain Driven Design to decide on the boundaries for services the services act as
+
+- ther. When using Domain Driven Design to decide on the boundaries for services the services act as
 transactional boundaries. Database updates shouldn’t span multiple services. This collection of related
 data is referred to as a bounded context. This idea is reflected by the isolation of microservice data to
 a database separate and autonomous from the rest of the services. It makes a great deal of sense to
@@ -8382,7 +8464,8 @@ There are libraries that are depended upon by a wide variety of projects. By div
 up with one in each repository the internal dependencies can best be resolved by using the internal
 repository, Azure Artifacts. Builds for libraries will push their latest versions into Azure Artifacts for
 internal consumption. The downstream project must still be manually updated to take a dependency
-on the newly updated packages.
+
+- n the newly updated packages.
 
 
 Another disadvantage presents itself when moving code between services. Although it would be nice
@@ -8487,7 +8570,8 @@ _Figure 10-4 - Standard directory structure._
 
 Whenever a new project is created, a template that puts in place the correct structure should be used.
 This template can also include such useful items as a skeleton README file and an azurepipelines.yml. In any microservice architecture, a high degree of variance between projects makes bulk
-operations against the services more difficult.
+
+- perations against the services more difficult.
 
 
 There are many tools that can provide templating for an entire directory, containing several source
@@ -8542,7 +8626,8 @@ _Figure 10-5 - Task in Azure DevOps._
 
 The description field supports the normal styles you’d expect (bold, italic underscore and strike
 through) and the ability to insert images. This makes it a powerful tool for use when specifying work
-or bugs.
+
+- r bugs.
 
 
 [Tasks can be rolled up into features, which define a larger unit of work. Features, in turn, can be rolled](https://docs.microsoft.com/azure/devops/boards/backlogs/define-features-epics?view=azure-devops&preserve-view=true)
@@ -8750,7 +8835,8 @@ popularity.
 
 Feature flags also promote trunk-based development. It’s a source-control branching model where
 developers collaborate on features in a single branch. The approach minimizes the risk and complexity
-of merging large numbers of long-running feature branches. Features are unavailable until activated.
+
+- f merging large numbers of long-running feature branches. Features are unavailable until activated.
 
 
 173 CHAPTER 10 | DevOps
@@ -8759,7 +8845,8 @@ of merging large numbers of long-running feature branches. Features are unavaila
 #### **Implementing feature flags**
 
 At its core, a feature flag is a reference to a simple decision object. It returns a Boolean state of on or
-off. The flag typically wraps a block of code that encapsulates a feature capability. The state of the flag
+
+- ff. The flag typically wraps a block of code that encapsulates a feature capability. The state of the flag
 determines whether that code block executes for a given user. Figure 10-11 shows the
 implementation.
 
@@ -8790,7 +8877,8 @@ across your codebase.
 
 
 Once configured in your Startup class, you can add feature flag functionality at the controller, action,
-or middleware level. Figure 10-12 presents controller and action implementation:
+
+- r middleware level. Figure 10-12 presents controller and action implementation:
 
 
 _Figure 10-12 - Feature flag implementation in a controller and action._
@@ -8811,7 +8899,8 @@ _Figure 10-13 - Feature flag injection into a class._
 The Feature Management libraries manage the feature flag lifecycle behind the scenes. For example,
 to minimize high numbers of calls to the configuration store, the libraries cache flag states for a
 specified duration. They can guarantee the immutability of flag states during a request call. They also
-offer a Point-in-time snapshot. You can reconstruct the history of any key-value and provide its past
+
+- ffer a Point-in-time snapshot. You can reconstruct the history of any key-value and provide its past
 value at any moment within the previous seven days.
 
 ### Infrastructure as code
@@ -8963,7 +9052,8 @@ reliably, and at scale.”
 A key property of cloud-native applications is that they leverage the capabilities of the cloud to speed
 up development. This design often means that a full application uses different kinds of technologies.
 Applications may be shipped in Docker containers, some services may use Azure Functions, while
-other parts may run directly on virtual machines allocated on large metal servers with hardware GPU
+
+- ther parts may run directly on virtual machines allocated on large metal servers with hardware GPU
 acceleration. No two cloud-native applications are the same, so it’s been difficult to provide a single
 mechanism for shipping them.
 
@@ -9012,6 +9102,7 @@ Parameterization of the bundle allows for installation in various different envi
 
 
 The CNAB format is also flexible, allowing it to be used against any cloud. It can even be used against
+
 [on-premises solutions such as OpenStack.](https://www.openstack.org/)
 
 
@@ -9056,7 +9147,8 @@ and resilience, in modern, dynamic environments such as public, private, and hyb
 
 
   - The **[Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/)** is an influential open-source consortium
-of over 300 major corporations. It’s responsible for driving the adoption of cloud-native
+
+    - f over 300 major corporations. It’s responsible for driving the adoption of cloud-native
 computing across technology and cloud stacks.
 
 
@@ -9070,26 +9162,22 @@ shown in Figure 11-1:
   - These cloud-native pillars include:
 
 
-–
-The cloud and its underlying service model
+     The cloud and its underlying service model
 
 
-–
-Modern design principles
+     Modern design principles
 
 
-– Microservices
+     - Microservices
 
 
-– Containerization and container orchestration
+     - Containerization and container orchestration
 
 
-–
-Cloud-based backing services, such as databases and message brokers
+     Cloud-based backing services, such as databases and message brokers
 
 
-–
-Automation, including Infrastructure as Code and code deployment
+     Automation, including Infrastructure as Code and code deployment
 
 
 181 CHAPTER 11 | Summary: Architecting cloud-native apps

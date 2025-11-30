@@ -14,11 +14,13 @@ Ovim Statutom uređuju se: naziv i sjedište udruge; grb (znak) udruge; područj
 djelovanja; zastupanje; djelatnost; gospodarska djelatnost; način osiguranja javnosti djelovanja
 udruge; uvjeti i način učlanjivanja; prestanak članstva; prava, obveze i odgovornosti članova;
 popis članova; tijela udruge, njihov sastav i način sazivanja sjednica; izbor, opoziv, ovlasti,
-odgovornost, način odlučivanja i trajanje mandata; način rješavanja sporova i sukoba interesa
+
+- dgovornost, način odlučivanja i trajanje mandata; način rješavanja sporova i sukoba interesa
 unutar udruge; način sazivanja Skupštine u slučaju isteka mandata; izbor i opoziv likvidatora;
 prestanak postojanja udruge; imovina, način stjecanja i raspolaganja imovinom; postupak s
 imovinom u slučaju prestanka postojanja udruge, način provođenja referenduma te ostala pitanja
-od značaja za udrugu.
+
+- d značaja za udrugu.
 
 
 **Članak 2.**
@@ -73,7 +75,7 @@ Građanskog.
 
 (3) Grb (znak) Kluba je kružnog oblika i simbolizira oblik nogometne lopte, a što ukazuje na
 
-osnovnu djelatnost Kluba.
+  - snovnu djelatnost Kluba.
 
 
 (4) Osnova grba (znaka) sastavljena je od dva polukruga: povijesnog hrvatskog grba s
@@ -98,7 +100,7 @@ vrijeđa ugled i dostojanstvo Kluba.
 
 (1) Upravljanje Klubom temelji se na načelu demokratskog ustroja. Klubom, na način propisan
 
-odredbama ovog Statuta, upravljaju članovi Kluba, neposredno ili putem svojih izabranih
+  - dredbama ovog Statuta, upravljaju članovi Kluba, neposredno ili putem svojih izabranih
 predstavnika u tijelima Kluba..
 
 
@@ -228,7 +230,8 @@ simbol koji svojim primjerom potiče pozitivne promjene u sportu i društvu.
 d. Aktivno uključivati bivše igrače kao ambasadore klupskih vrijednosti te poticati
 
 njihovo javno djelovanje u promociji Kluba, sporta, zajedništva i društvene
-odgovornosti.
+
+      - dgovornosti.
 
 
 (2) Sportski razvoj i rezultati:
@@ -444,7 +447,7 @@ c. povjerenika Kluba;
 d. skupovima za članove koji se organiziraju najmanje jednom godišnje;
 
 
-e. ostalih načina informiranja sukladno odluci Uprave Kluba.
+e.     - stalih načina informiranja sukladno odluci Uprave Kluba.
 
 
 (2) Članove Kluba pravodobno se obavještava o radu Kluba te aktima i odlukama njegovih
@@ -483,7 +486,7 @@ Kluba na način da:
 
 a. Za osobu mlađu od 14 godina ili osobu lišenu poslovne sposobnosti pisanu izjavu
 
-o učlanjivanju daje zakonski zastupnik ili skrbnik;
+      - učlanjivanju daje zakonski zastupnik ili skrbnik;
 
 
 b. Za osobu stariju od 14 godina, a mlađu od 18 godina zakonski zastupnik ili skrbnik
@@ -579,7 +582,7 @@ c. biti nagrađeni počasnim odlikovanjima za doprinos Klubu ili za dugotrajno
 
 d. komunicirati pisanim putem s Klubom i dobiti pravodobne odgovore, sukladno
 
-odluci Uprave Kluba;
+      - dluci Uprave Kluba;
 
 
 e. sudjelovati na skupovima za članove.
@@ -600,7 +603,7 @@ a. poštovati načela djelovanja, Statut te druge akte i odluke Kluba;
 b. podupirati Klub i aktivno sudjelovati u ostvarenju ciljeva Kluba;
 
 
-c. obavijestiti Klub o promjeni osobnog imena te adresi prebivališta ili boravišta;
+c.     - bavijestiti Klub o promjeni osobnog imena te adresi prebivališta ili boravišta;
 
 
 d. štititi ugled i dostojanstvo Kluba suzdržavajući se od ponašanja i radnji koje štete
@@ -613,7 +616,8 @@ Klubu te njegovu ugledu, časti i dostojanstvu.
 
 Igrači, članovi Uprave Kluba i zaposlenici Kluba koji su članovi Kluba te povjerenici Kluba,
 pored prava, dužnosti i odgovornosti iz članaka 21. i 22. ovog Statuta, imaju i druga prava,
-obveze i odgovornosti utvrđene ugovorima te odlukama tijela Kluba.
+
+- bveze i odgovornosti utvrđene ugovorima te odlukama tijela Kluba.
 
 
 **Članak 24.**
@@ -642,7 +646,8 @@ gubitka statusa povjerenika.
 (3) Članovi Skupštine Kluba, članovi Nadzornog odbora Kluba, Predsjednik Kluba te
 
 povjerenici Kluba dužni su do 31. (trideset prvog) prosinca tekuće kalendarske godine
-obnoviti članstvo u Klubu za iduću kalendarsku godinu novom uplatom godišnje članarine.
+
+  - bnoviti članstvo u Klubu za iduću kalendarsku godinu novom uplatom godišnje članarine.
 Ukoliko isto propuste učiniti, stručna služba iz članka 20. stavka 1. ovog Statuta pisanim
 će ih putem upozoriti na tu dužnost i ostaviti im rok od 15 (petnaest) dana da obnove
 članstvo.
@@ -661,7 +666,8 @@ povjerenika.
 (1) Disciplinski prekršaj predstavlja svako djelovanje člana Kluba kojim se krše načela
 
 djelovanja i ciljevi Kluba, odredbe Statuta i drugih akata Kluba, odluke tijela Kluba ili
-odredbe relevantnih zakona i podzakonskih propisa.
+
+  - dredbe relevantnih zakona i podzakonskih propisa.
 
 
 (2) Djelovanje iz stavka 1. ovog članka Statuta smatra se teškim disciplinskim prekršajem
@@ -671,7 +677,7 @@ ukoliko se Klubu takvim djelovanjem nanosi materijalna ili nematerijalna šteta,
 
 a. iznošenje poslovne ili službene tajne ili ostalih povjerljivih informacija Kluba bez
 
-odobrenje nadležnih tijela Kluba;
+      - dobrenje nadležnih tijela Kluba;
 
 
 b. grubo vrijeđanje časti i ugleda Kluba;
@@ -721,12 +727,13 @@ Statuta radi kojih su članu Kluba prethodno bile izrečene stegovne mjere opome
 (7) Članu Kluba se odluka o stegovnoj mjeri dostavlja na adresu prebivališta ili boravišta koju
 
 je naznačio prilikom učlanjenja u Klub ili o kojoj je, sukladno članku 22. stavku 1. točci c.
-ovog Statuta, obavijestio Klub.
+
+  - vog Statuta, obavijestio Klub.
 
 
 (8) Protiv odluke o stegovnoj mjeri član Kluba ima pravo na žalbu. Žalba se podnosi Nadzornom
 
-odboru, kao drugostupanjskom tijelu, u roku od 15 (petnaest) dana od dana primitka odluke.
+  - dboru, kao drugostupanjskom tijelu, u roku od 15 (petnaest) dana od dana primitka odluke.
 
 
 (9) Nadzorni odbor dužan je o žalbi odlučiti u roku od 30 (trideset) dana, računajući od dana
@@ -738,7 +745,8 @@ primitka žalbe.
 
 
 (11) U stegovnom postupku u kojem je disciplinski okrivljenik član tijela Kluba koje odlučuje
-o stegovnim mjerama, taj član ne sudjeluje u raspravi i donošenju odluke o stegovnoj mjeri.
+
+  - stegovnim mjerama, taj član ne sudjeluje u raspravi i donošenju odluke o stegovnoj mjeri.
 
 ## **2. PRIJATELJI KLUBA**
 
@@ -754,13 +762,14 @@ skladu s propisima, uživati pogodnosti određene posebnim aktom Kluba.
 
 (2) Prijateljem Kluba postaje se upisom u Popis Prijatelja Kluba koji vodi stručna služba po
 
-odluci Uprave Kluba. Popis Prijatelja Kluba ne mora sadržavati OIB.
+  - dluci Uprave Kluba. Popis Prijatelja Kluba ne mora sadržavati OIB.
 
 
 (3) Prijatelji Kluba ne mogu birati ili biti birani u tijela Kluba, niti sudjelovati u izbornim
 
 postupcima ili referendumu, ali mogu biti izabrani u savjetodavne odbore i povjerenstva koje
-osniva Nadzorni odbor.
+
+  - sniva Nadzorni odbor.
 
 
 (4) Prijatelju Kluba izdaje se iskaznica čiji izgled definira Uprava Kluba.
@@ -837,7 +846,8 @@ Upravi Kluba podnijeti i ostavku na mjesto povjerenika.
 
 Kluba te ih izvještavati o drugim važnim temama koje se odnose na ostvarivanje ciljeva
 Kluba i obavljanje njegove djelatnosti te je dužan, u slučajevima propisanim člankom 52.
-ovog Statuta, sudjelovati na izborima kao kandidat za člana Skupštine Kluba.
+
+  - vog Statuta, sudjelovati na izborima kao kandidat za člana Skupštine Kluba.
 
 
 (4) Uprava Kluba svojim odlukama uređuje odnose s povjerenicima i s imenovanim
@@ -873,7 +883,8 @@ d. Uprava Kluba (u tekstu Statuta i: Uprava)
 (1) Članovi tijela Kluba mogu biti samo punoljetni i poslovno sposobni članovi Kluba pod
 
 uvjetom da su isti bili članovi Kluba i u kalendarskoj godini koja prethodi godini u kojoj se
-održavaju izbori, osim u slučaju imenovanja članova Uprave Kluba.
+
+  - državaju izbori, osim u slučaju imenovanja članova Uprave Kluba.
 
 
 (2) Članovi klupskih tijela ne mogu biti osobe za koje postoje zapreke iz Zakona o sportu i
@@ -907,7 +918,7 @@ godinu dana;
 
 e. koje su posljednjih godinu dana bile članovi ili članovi tijela pravne osobe koja
 
-obavlja djelatnost organiziranja sportske kladionice;
+      - bavlja djelatnost organiziranja sportske kladionice;
 
 
 f. koje s menadžerima i posrednicima u istome sportu i članovima pravnih osoba te
@@ -953,7 +964,8 @@ u tijelima koji proizlaze iz funkcije Predsjednika prema ovom Statutu.
 (4) Svaki član Kluba koji ulazi u bilo koje tijelo Kluba mora potpisati izjavu kojom izjavljuje
 
 da nema zapreka iz stavaka 2. i 3. ovog članka Statuta te da će u slučaju nastupa istih odmah
-obavijestiti Upravu Kluba.
+
+  - bavijestiti Upravu Kluba.
 
 
 (5) Ukoliko se na izborima za Skupštinu Kluba kandidiraju zaposlenici Kluba, izbor u Skupštinu
@@ -1008,7 +1020,7 @@ g. nastupom okolnosti iz članka 29. stavaka 2. i 3. ovog Statuta.
 
 (2) Skupština se sastoji od 50 (pedeset) predstavnika članova Kluba izabranih na način propisan
 
-odredbama ovog Statuta.
+  - dredbama ovog Statuta.
 
 
 (3) Mandat članova Skupštine, osim u slučajevima propisanim člankom 30. točkama a., b., d.,
@@ -1030,7 +1042,7 @@ programa pobjedničke izborne liste;
 
 b. usvaja Statut Kluba te predlaže njegove izmjene i dopune u slučajevima propisanim
 
-odredbama ovog Statuta;
+     - dredbama ovog Statuta;
 
 
 c. usvaja plan rada i financijski plan za sljedeću kalendarsku godinu;
@@ -1050,10 +1062,10 @@ druge akte i odluke važne za rad Kluba prema ovom Statutu, poput pravila o eti�
 pitanjima i pitanjima sukoba interesa;
 
 
-g. odlučuje o promjeni ciljeva, djelatnosti i obavljanju gospodarskih djelatnosti Kluba;
+g.     - dlučuje o promjeni ciljeva, djelatnosti i obavljanju gospodarskih djelatnosti Kluba;
 
 
-h. odlučuje o udruživanju u saveze, zajednice, mreže i druge oblike povezivanja udruga;
+h.     - dlučuje o udruživanju u saveze, zajednice, mreže i druge oblike povezivanja udruga;
 
 
 i. bira i razrješava Predsjednika Kluba;
@@ -1079,17 +1091,18 @@ m. imenuje i opoziva likvidatora Kluba;
 n. donosi odluku o prestanku rada Kluba, raspodjeli preostale imovine Kluba i o
 
 statusnim promjenama (pripajanju, spajanju i podjeli Kluba) i druge za nju formalno
-obvezujuće odluke u skladu s rezultatima provedenog referenduma;
+
+      - bvezujuće odluke u skladu s rezultatima provedenog referenduma;
 
 
-o. naknadno verificira prestanak u članstvu tijela Kluba iz razloga u članku 24., 29. i
+    - . naknadno verificira prestanak u članstvu tijela Kluba iz razloga u članku 24., 29. i
 
 30. ovog Statuta na prvoj sljedećoj sjednici;
 
 
 p. tumači Statut i opće akte koje donosi, odlučuje i o drugim pitanjima za koje joj je
 
-ovim Statutom utvrđena nadležnost, ili nije utvrđena za druga tijela Kluba;
+      - vim Statutom utvrđena nadležnost, ili nije utvrđena za druga tijela Kluba;
 
 
 **Članak 33.**
@@ -1114,7 +1127,8 @@ mogućem roku, a najkasnije 5 (pet) dana prije održavanja sjednice Skupštine.
 
 točkama a., b., d., e., f. i g. ovog Statuta zamjenjuje novi član s popisa preostalih kandidata
 za članove Skupštine s iste izborne liste na način da Nadzorni odbor, nakon što bude
-obaviješten ili sazna za prestanak mandata pojedinog člana Skupštine, uvrštava novog člana
+
+  - baviješten ili sazna za prestanak mandata pojedinog člana Skupštine, uvrštava novog člana
 Skupštine na konačan popis članova Skupštine. Iznimno, ukoliko članu Skupštine prestane
 mandat u Skupštini nakon isteka roka iz stavka 2. ovog članka Statuta, Nadzorni odbor,
 nakon što bude obaviješten ili sazna za prestanak mandata člana Skupštine, uvrštava novog
@@ -1142,19 +1156,20 @@ Skupštine.
 (petnaest) dana prije održavanja Skupštine, a u slučaju sazivanja izvanredne sjednice
 Skupštine najkasnije 5 (pet) dana prije održavanja sjednice, utvrđuje se dnevni red te mjesto,
 koje je u pravilu u sjedištu Kluba, i vrijeme održavanja sjednice Skupštine. Uz dnevni red
-obavezno se dostavljaju i svi materijali potrebni za donošenje odluka po dnevnom redu.
+
+  - bavezno se dostavljaju i svi materijali potrebni za donošenje odluka po dnevnom redu.
 
 
 (8) Predsjednik Kluba ili najmanje 15 (petnaest) članova Skupštine mogu, nakon primitka
 
-odluke o utvrđivanju dnevnog reda redovne sjednice Skupštine, a najkasnije 5 (pet) dana
+  - dluke o utvrđivanju dnevnog reda redovne sjednice Skupštine, a najkasnije 5 (pet) dana
 prije sjednice Skupštine, pisanim zahtjevom Nadzornom odboru dopuniti dnevni red bilo
 kojom točkom koja je u nadležnosti Skupštine.
 
 
 (9) Nadzorni odbor putem Predsjednika Nadzornog odbora ili osobe koja ga sukladno stavku 1.
 
-ovog članka Statuta zamjenjuje, dužan je dopune dnevnog reda Predsjednika Kluba ili
+  - vog članka Statuta zamjenjuje, dužan je dopune dnevnog reda Predsjednika Kluba ili
 najmanje 15 (petnaest) članova Skupštine uvrstiti na dnevni red Skupštine.
 
 
@@ -1165,7 +1180,8 @@ i svi dodatni materijali potrebni za donošenje odluka prema dnevnom redu.
 
 
 (11) Članovi Skupštine imaju pravo, radi donošenja informirane odluke na Skupštini, i šire
-od dokumenata koji se dostavljaju uz konačni dnevni red, bilo kada od tijela Kluba pisanim
+
+  - d dokumenata koji se dostavljaju uz konačni dnevni red, bilo kada od tijela Kluba pisanim
 zahtjevom tražiti podatke, pod uvjetom da isti ne predstavljaju poslovnu ili službenu tajnu i
 u skladu su s posebnim propisima o zaštiti osobnih podataka. Ukoliko do dana održavanja
 sjednice Skupštine član Skupštine ne dobije tražene podatke, tijelo Kluba kojem je zahtjev
@@ -1181,10 +1197,11 @@ donošenja odluke o točci dnevnog reda za koju je zahtjev upućen.
 
 (2) Izborna sjednica Skupštine održava se najkasnije u roku od 15 (petnaest) dana od dana
 
-održavanja izbora i u drugim slučajevima propisanim ovim Statutom te na istoj, a sukladno
+  - državanja izbora i u drugim slučajevima propisanim ovim Statutom te na istoj, a sukladno
 rezultatima izbora te odredbama ovog Statuta, izabire Predsjednika Kluba, Predsjednika
 Nadzornog odbora, Zamjenika Predsjednika Nadzornog odbora te ostale članove Nadzornog
-odbora.
+
+  - dbora.
 
 
 (3) Redovna sjednica Skupštine saziva se najmanje jednom godišnje.
@@ -1233,7 +1250,8 @@ izvanrednu sjednicu Skupštine u roku od 5 (pet) dana od saznanja za prestanak m
 Nadzornog odbora ili osobe koja ga sukladno članku 33. stavku 1. ovog Statuta zamjenjuje,
 dužan je sazvati izvanrednu sjednicu Skupštine u roku od 5 (pet) dana od zaprimanja
 zahtjeva za sazivanje izvanredne sjednice Skupštine te se ista mora održati najkasnije u roku
-od 15 (petnaest) dana od odluke o sazivanju.
+
+  - d 15 (petnaest) dana od odluke o sazivanju.
 
 
 (8) Ako Predsjednik Nadzornog odbora ili osoba koja ga sukladno članku 33. stavku 1. ovog
@@ -1293,7 +1311,8 @@ e. sazivanju izvanrednih izbora.
 (4) U slučaju izjednačenog broja glasova kod donošenja odluka na sjednicama Skupštine
 
 prijedlog se smatra odbijenim. Skupština, po odluci predsjedavajućeg, može ponovno
-odlučivati o istom prijedlogu nakon dodatne rasprave i izmjene sadržaja prijedloga dok traje
+
+  - dlučivati o istom prijedlogu nakon dodatne rasprave i izmjene sadržaja prijedloga dok traje
 ista točka dnevnog reda ili na idućoj sjednici Skupštine.
 
 
@@ -1327,11 +1346,13 @@ Skupštine.
 
 (5) Na izbornoj sjednici Skupštine, do izbora Predsjednika Kluba, Predsjednika Nadzornog
 
-odbora i Zamjenika Predsjednika Nadzornog odbora, sjednicom Skupštine predsjeda nositelj
+  - dbora i Zamjenika Predsjednika Nadzornog odbora, sjednicom Skupštine predsjeda nositelj
 izborne liste koja je na izborima ostvarila veći broj glasova članova Kluba. Nakon izbora
 Predsjednika Kluba, Predsjednika Nadzornog odbora, Zamjenika Predsjednika Nadzornog
-odbora te ostalih članova Nadzornog odbora, nositelja izborne liste koja je na izborima
-ostvarila veći broj glasova članova Kluba zamjenjuje Predsjednik Nadzornog odbora kao
+
+  - dbora te ostalih članova Nadzornog odbora, nositelja izborne liste koja je na izborima
+
+  - stvarila veći broj glasova članova Kluba zamjenjuje Predsjednik Nadzornog odbora kao
 predsjedavajućeg skupštine.
 
 
@@ -1463,7 +1484,7 @@ f. pomaže Predsjedniku u određivanju operativnih i strateških ciljeva te zadu
 članovima Uprave i nadzire njihovu provedbu;
 
 
-g. odobrava prijedlog Predsjednika i Uprave u vezi godišnjeg plana rada i financijskog
+g.     - dobrava prijedlog Predsjednika i Uprave u vezi godišnjeg plana rada i financijskog
 
 plana Kluba te godišnjeg financijskog izvješća i izvješća o radu Kluba;
 
@@ -1484,7 +1505,7 @@ j. daje prethodnu suglasnost za pravne poslove i zaduženja Kluba iznad iznosa o
 10% (deset posto) vrijednosti ugovora;
 
 
-k. obavještava nadležna tijela Kluba o neusklađenostima u radu ili aktima s odredbama
+k.     - bavještava nadležna tijela Kluba o neusklađenostima u radu ili aktima s odredbama
 
 Statuta i drugih akata te, ukoliko iste ne budu ispravljene, o tome izvješćuje
 Skupštinu;
@@ -1493,7 +1514,8 @@ Skupštinu;
 l. saziva izbore putem Predsjednika Nadzornog odbora te osniva, nadzire i razrješava
 
 Izborno povjerenstvo i pojedine njegove članove isključivo iz razloga propisanih
-ovim Statutom i Pravilnikom o izborima u GNK „Dinamo“ nakon čega provodi poziv
+
+     - vim Statutom i Pravilnikom o izborima u GNK „Dinamo“ nakon čega provodi poziv
 za nove članove
 
 
@@ -1505,7 +1527,7 @@ n. djeluje kao drugostupanjsko tijelo u stegovnim postupcima koji se odnose na �
 prava i obveze te donosi konačne odluke o stegovnim mjerama;
 
 
-o. predlaže izmjene i dopune Statuta, osim u slučajevima propisanim odredbama ovog
+    - . predlaže izmjene i dopune Statuta, osim u slučajevima propisanim odredbama ovog
 
 Statuta, predlaže Pravilnik o izborima u GNK „Dinamo“, kao i pravila o etičkim
 pitanjima i pitanjima sukoba interesa;
@@ -1532,10 +1554,10 @@ svog rada;
 
 t. podnosi Skupštini prijedloge za imenovanje Počasnog Predsjednika, počasna
 
-odlikovanja članova Kluba za doprinos Klubu ili za dugotrajno članstvo;
+      - dlikovanja članova Kluba za doprinos Klubu ili za dugotrajno članstvo;
 
 
-u. obavlja i druge poslove u skladu sa zakonima, ovim Statutom i općim aktima Kluba.
+u.     - bavlja i druge poslove u skladu sa zakonima, ovim Statutom i općim aktima Kluba.
 
 
 **Članak 40.**
@@ -1629,8 +1651,9 @@ Predsjednik Nadzornog odbora:
 
 a. saziva te predlaže dnevni red sjednica Skupštine, sukladno članku 33. ovog Statuta,
 
-odlukama na referendumu i drugim razlozima za održavanje sjednica Skupštine iz
-ovog Statuta;
+     - dlukama na referendumu i drugim razlozima za održavanje sjednica Skupštine iz
+
+      - vog Statuta;
 
 
 b. saziva te predlaže dnevni red sjednica Nadzornog odbora, osim u slučajevima
@@ -1689,7 +1712,8 @@ Skupštine i ostvarenje ciljeva Kluba utvrđenih Izbornim programom.
 
 u slučaju prestanka mandata Predsjednika Kluba iz razloga propisanih člankom 30. točkama
 a.-g. ovog Statuta, Nadzorni odbor dužan je, u rokovima iz članka 40. stavka 4. ovog Statuta,
-održati sjednicu te na istoj sjednici izabrati osobu koja će privremeno zamijeniti
+
+  - držati sjednicu te na istoj sjednici izabrati osobu koja će privremeno zamijeniti
 Predsjednika Kluba u svim pravima, dužnostima i ovlastima.
 
 
@@ -1702,7 +1726,8 @@ zapreke iz članka 29. ovog Statuta.
 (3) Osoba iz stavka 1. ovog članka Statuta zamjenjuje Predsjednika Kluba do prestanka razloga
 
 privremene spriječenosti Predsjednika Kluba, a u slučajevima propisanim stavkom 4. i 5.
-ovog članka Statuta do izbora novog Predsjednika Kluba.
+
+  - vog članka Statuta do izbora novog Predsjednika Kluba.
 
 
 (4) Privremena spriječenost Predsjednika Kluba iz stavka 1. ovog članka Statuta može trajati
@@ -1730,7 +1755,8 @@ izvanrednu sjednicu Skupštine.
 (7) Nadzorni odbor prilikom donošenja odluke o izboru kandidata, sukladno stavku 6. ovog
 
 članka Statuta, primjenjuje kriterije prethodnog profesionalnog i radnog iskustva kandidata,
-obrazovanja, poznavanja organizacijske i upravljačke strukture Kluba, prethodnog radnog
+
+  - brazovanja, poznavanja organizacijske i upravljačke strukture Kluba, prethodnog radnog
 iskustva na izvršnim, nadzornim ili upravljačkim funkcijama u nogometnim ili drugim
 sportskim klubovima, slijeđenja i provođenja izbornog programa izborne liste koja je na
 izborima ostvarila veći broj glasova članova Kluba, a može primjenjivati i druge kriterije.
@@ -1750,7 +1776,8 @@ većinom glasova nazočnih članova Skupštine.
 
 (10) Novoizabranom Predsjedniku Kluba mandat traje do isteka mandata tijelima Kluba
 tijekom kojeg je dužan slijediti i provoditi izborni program izborne liste koja je na izborima
-ostvarila veći broj glasova članova Kluba.
+
+  - stvarila veći broj glasova članova Kluba.
 
 
 **Članak 45.**
@@ -1829,7 +1856,7 @@ zapošljavanja i svih odluka koje nadilaze njegove pojedinačne ovlasti ili za k
 Statutom nije izričito propisana njegova samostalna nadležnost;
 
 
-n. obavlja i druge poslove u skladu sa zakonima, ovim Statutom i općim aktima Kluba.
+n.     - bavlja i druge poslove u skladu sa zakonima, ovim Statutom i općim aktima Kluba.
 
 
 ## **4. UPRAVA KLUBA**
@@ -1844,7 +1871,7 @@ smjernicama i odlukama Predsjednika Kluba i Nadzornog odbora.
 
 (2) Uprava Kluba upravlja radom stručnih službi i zaposlenika Kluba u skladu s odredbama
 
-ovog Statuta, općih akata Kluba te odlukama Predsjednika Kluba i Nadzornog odbora, kada
+  - vog Statuta, općih akata Kluba te odlukama Predsjednika Kluba i Nadzornog odbora, kada
 je on odredbama ovog Statuta ovlašten za takve odluke.
 
 
@@ -1892,23 +1919,23 @@ Uprave prije donošenja:
 a. strateških odluka;
 
 
-b. odluka o pravnim poslovima pojedinačne vrijednosti iznad 500.000 EUR (petsto
+b.     - dluka o pravnim poslovima pojedinačne vrijednosti iznad 500.000 EUR (petsto
 
 tisuća eura);
 
 
-c. odluka koje imaju za posljedicu promjenu organizacijske strukture ili sklapanje ili
+c.     - dluka koje imaju za posljedicu promjenu organizacijske strukture ili sklapanje ili
 
 raskid ugovora sa zaposlenicima ili osobama koje obavljaju određene poslove, a koje
 za svoj rad odgovaraju izravno Upravi;
 
 
-d. ostalih odluka za koje je odredbama ovog Statuta propisano da se donose na
+d.     - stalih odluka za koje je odredbama ovog Statuta propisano da se donose na
 
 sjednicama Uprave;
 
 
-e. odluka o izvješćima koja Predsjednik i Uprava podnose Nadzornom odboru i/ili
+e.     - dluka o izvješćima koja Predsjednik i Uprava podnose Nadzornom odboru i/ili
 
 Skupštini.
 
@@ -1944,7 +1971,7 @@ Predsjednika Kluba.
 Uprava Kluba:
 
 
-a. operativno upravlja radom Kluba i za svoj rad odgovorna je Predsjedniku Kluba;
+a.     - perativno upravlja radom Kluba i za svoj rad odgovorna je Predsjedniku Kluba;
 
 
 b. s Predsjednikom Kluba donosi Pravilnik o djelokrugu i unutarnjem ustrojstvu Kluba,
@@ -1985,14 +2012,14 @@ i članovima Uprave;
 i. donosi interne akte Kluba u skladu sa Statutom i odlukama nadležnih tijela Kluba;
 
 
-j. organizira i nadzire sportsku, poslovnu i stručnu politiku Kluba, osim u pitanjima
+j.      - rganizira i nadzire sportsku, poslovnu i stručnu politiku Kluba, osim u pitanjima
 
 koja su u isključivoj nadležnosti Predsjednika Kluba;
 
 
-k. osigurava redovito obavještavanje članova Kluba o radu i rezultatima Kluba te
+k.     - sigurava redovito obavještavanje članova Kluba o radu i rezultatima Kluba te
 
-odgovara na upite i inicijative članova;
+      - dgovara na upite i inicijative članova;
 
 
 l. imenuje članove upravnog odbora Zaklade GNK Dinamo „Nema predaje“ i nadzire
@@ -2000,7 +2027,7 @@ l. imenuje članove upravnog odbora Zaklade GNK Dinamo „Nema predaje“ i nadz
 njihov rad, u skladu s posebnim odlukama Skupštine;
 
 
-m. obavlja i druge poslove u skladu sa zakonima, ovim Statutom i općim aktima Kluba.
+m.    - bavlja i druge poslove u skladu sa zakonima, ovim Statutom i općim aktima Kluba.
 
 ## **V. POČASNI PREDSJEDNIK KLUBA**
 
@@ -2019,7 +2046,7 @@ Kluba.
 
 (3) Kandidata za Počasnog predsjednika Kluba, pisanim prijedlogom mogu predložiti Nadzorni
 
-odbor, najmanje 15 (petnaest) članova Skupštine ili Predsjednik Kluba.
+  - dbor, najmanje 15 (petnaest) članova Skupštine ili Predsjednik Kluba.
 
 
 (4) Počasnog predsjednika Kluba bira Skupština, većinom glasova nazočnih članova.
@@ -2033,7 +2060,7 @@ a. Promiče vrijednosti, identitet i tradiciju Kluba;
 
 b. Kao predstavnik Kluba sudjeluje na svečanim događanjima, proslavama, članskim
 
-okupljanjima i drugim javnim prigodama;
+     - kupljanjima i drugim javnim prigodama;
 
 
 c. Može biti gost na sastancima s predstavnicima drugih klubova, sponzorima,
@@ -2067,7 +2094,8 @@ način iskazivati podršku za pojedine izborne liste ili kandidate.
 (8) Mandat Počasnog predsjednika Kluba nije vremenski ograničen. Iznimno, Skupština ga u
 
 slučaju djelovanja protivno interesima, stabilnosti ili časti i ugleda Kluba ili nastupa
-okolnosti iz članka 29. ovog Statuta, na pisani prijedlog Nadzornog odbora, najmanje 15
+
+  - kolnosti iz članka 29. ovog Statuta, na pisani prijedlog Nadzornog odbora, najmanje 15
 (petnaest) članova Skupštine ili Predsjednika Kluba, može razriješiti odlukom donesenom
 dvotrećinskom većinom svih članova Skupštine.
 
@@ -2103,10 +2131,10 @@ izbora.
 
 (5) Izvanredni izbori sazivaju se najkasnije u roku od 7 (sedam) dana od dana nastupa sljedećih
 
-okolnosti:
+  - kolnosti:
 
 
-a. odluke Skupštine donesene dvotrećinskom većinom svih članova Skupštine;
+a.     - dluke Skupštine donesene dvotrećinskom većinom svih članova Skupštine;
 
 
 b. da i nakon što se iscrpi broj svih zamjenskih članova Skupštine, sukladno članku 35.
@@ -2114,7 +2142,7 @@ b. da i nakon što se iscrpi broj svih zamjenskih članova Skupštine, sukladno 
 stavku 5. ovog Statuta, broj članova Skupštine padne ispod 26 (dvadeset šest);
 
 
-c. od dana upisa novog Statuta ili izmjena i/ili dopuna Statuta u Registar udruga
+c.     - d dana upisa novog Statuta ili izmjena i/ili dopuna Statuta u Registar udruga
 
 Republike Hrvatske, kojima se mijenjaju tijela Kluba, njihov broj članova,
 nadležnosti i ovlasti ili trajanje mandata od strane nadležnog tijela Grada Zagreba.
@@ -2160,7 +2188,7 @@ sadrži:
 
 a. Kandidata za Predsjednika Kluba koji je ujedno i nositelj te izborne liste, na listi
 
-obvezno naveden pod rednim brojem 1 (jedan);
+     - bvezno naveden pod rednim brojem 1 (jedan);
 
 
 b. Kandidata za Predsjednika Nadzornog odbora, na listi obvezno naveden pod rednim
@@ -2223,7 +2251,8 @@ povjerenstvo neće smatrati važećima te iste ne mogu sudjelovati na izborima.
 (6) Ukoliko se do isteka roka iz stavka 4. ovog članka Statuta ne kandidira niti jedna izborna
 
 lista ili niti jedna kandirana izborna lista ne sadržava sve potrebne podatke iz stavaka 1.-3.
-ovog članka Statuta, svi rokovi iz članaka 50. i 51. ovog Statuta produljuju se za 30 (trideset)
+
+  - vog članka Statuta, svi rokovi iz članaka 50. i 51. ovog Statuta produljuju se za 30 (trideset)
 dana.
 
 
@@ -2257,7 +2286,7 @@ dobivenih glasova članova Kluba.
 
 (5) U slučaju da se na izborima, do isteka roka od najkasnije 20 (dvadeset) dana prije dana
 
-održavanja redovnih izbora, a najkasnije 7 (sedam) dana prije dana održavanja izvanrednih
+  - državanja redovnih izbora, a najkasnije 7 (sedam) dana prije dana održavanja izvanrednih
 izbora, kandidira samo jedna izborna lista, članovima Skupštine postaju:
 
 
@@ -2306,7 +2335,7 @@ niti biti izabrani kao članovi Skupštine sukladno stavku 5. i 6. ovog članka 
 
 (9) Detalje izbornih postupaka i referenduma, kao i rad Izbornog povjerenstva uređuje Pravilnik
 
-o izborima u GNK „Dinamo“.
+  - izborima u GNK „Dinamo“.
 
 
 **Članak 53.**
@@ -2314,10 +2343,11 @@ o izborima u GNK „Dinamo“.
 
 (1) Izborna sjednica Skupštine održava se najkasnije u roku od 15 (petnaest) dana od dana
 
-održavanja izbora i u drugim slučajevima propisanim ovim Statutom te na istoj, a sukladno
+  - državanja izbora i u drugim slučajevima propisanim ovim Statutom te na istoj, a sukladno
 rezultatima izbora te odredbama ovog Statuta, izabire Predsjednika Kluba, Predsjednika
 Nadzornog odbora, Zamjenika Predsjednika Nadzornog odbora te ostale članove Nadzornog
-odbora.
+
+  - dbora.
 
 
 (2) Kandidati za Predsjednika Kluba, Predsjednika Nadzornog odbora, Zamjenika Predsjednika
@@ -2337,8 +2367,10 @@ donosi većinom glasova svih članova Skupštine.
 članova Skupštine provodi se drugi krug glasovanja na kojemu članovi Skupštine glasuju
 između kandidata s obje izborne liste, a u slučaju izjednačenog broja glasova za Predsjednika
 Kluba, Predsjednika Nadzornog odbora, Zamjenika Predsjednika Nadzornog odbora te
-ostalih članova Nadzornog odbora smatraju se izabrani kandidati s izborne liste koja je
-ostvarila veći broj dobivenih glasova članova Kluba.
+
+  - stalih članova Nadzornog odbora smatraju se izabrani kandidati s izborne liste koja je
+
+  - stvarila veći broj dobivenih glasova članova Kluba.
 
 
 (5) Nakon što bude izabran, Predsjednik Kluba prestaje biti članom Skupštine i na mjestu člana
@@ -2355,7 +2387,8 @@ popisa kandidata za članove Skupštine iste liste, koji do tada sudjeluje kao p
 niti jedna važeća izborna lista, svi članovi Kluba s pravom glasa postaju Opća Skupština
 Kluba koja će izabrati Predsjednika Kluba, te Predsjednika Nadzornog odbora, Zamjenika
 Predsjednika Nadzornog odbora i članove Nadzornog odbora Kluba koji će dalje prema
-ovom Statutu izabrati ostala tijela i djelovati unutar svojih statutarnih nadležnosti.
+
+  - vom Statutu izabrati ostala tijela i djelovati unutar svojih statutarnih nadležnosti.
 
 
 (2) U slučaju iz stavka 1. ovog članka Statuta, Opću Skupštinu Kluba, u roku od 15 (petnaest)
@@ -2366,19 +2399,21 @@ Skupštinu Kluba dužna je sazvati bilo koja osoba od ostalih osoba ovlaštenih 
 upisana u Registar udruga Republike Hrvatske. Iznimno, ukoliko ni jedna od prethodno
 navedenih osoba, u roku od 15 (petnaest) dana od isteka mandata svim tijelima Kluba, ne
 sazove Opću Skupštinu Kluba, istu može sazvati bilo koji od zadnjih članova Nadzornog
-odbora ili bilo koji od članova zadnjeg saziva Skupštine ili Počasni predsjednik Kluba.
+
+  - dbora ili bilo koji od članova zadnjeg saziva Skupštine ili Počasni predsjednik Kluba.
 
 
 (3) Sazivatelj određuje mjesto (u pravilu u sjedištu Kluba ili na stadionu Kluba) i vrijeme
 
-održavanja Skupštine, predlaže dnevni red, te njome predsjeda i imenuje Radno
+  - državanja Skupštine, predlaže dnevni red, te njome predsjeda i imenuje Radno
 
 
 predsjedništvo i zapisničara. Svakih 100 (sto) članova Kluba s pravom glasa može do
 početka Opće Skupštine Kluba pisanim prijedlogom predložiti kandidata za Predsjednika
 Kluba, a ako to ne učine, kandidata za Predsjednika Kluba predlaže sazivatelj. Nakon što
 bude izabran, Predsjednik Kluba na Općoj Skupštini Kluba predlaže sve članove Nadzornog
-odbora iz redova članova Kluba s pravom glasa.
+
+  - dbora iz redova članova Kluba s pravom glasa.
 
 
 (4) Opća Skupština Kluba nema kvoruma za odlučivanje, a odluke donosi većinom danih
@@ -2458,7 +2493,7 @@ Statuta, a provodi ga Izborno povjerenstvo.
 
 (7) Nakon referenduma, Predsjednik Nadzornog odbora mora sazvati sjednicu Skupštine u roku
 
-od 15 (petnaest) dana radi provedbe referendumskih odluka.
+  - d 15 (petnaest) dana radi provedbe referendumskih odluka.
 
 
 ## **VII. RJEŠAVANJE SPOROVA I SUKOBA INTERESA**
@@ -2595,7 +2630,8 @@ drugoj pravnoj osobi koja ima iste ili slične statutarne ciljeve, a prema odluc
 (2) Likvidator zastupa Klub u postupku likvidacije te se otvaranjem likvidacijskog postupka
 
 upisuje u Registar udruga Republike Hrvatske kao osoba ovlaštena za zastupanje Kluba do
-okončanja postupka likvidacije i brisanja Kluba iz registra udruga.
+
+  - končanja postupka likvidacije i brisanja Kluba iz registra udruga.
 
 
 (3) Osoba koja se bira za likvidatora treba imati potrebnu stručnost i iskustvo, s obzirom na

@@ -34,10 +34,10 @@ without notice.
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association
 
-or connection is intended or should be inferred.
+- r connection is intended or should be inferred.
 
 
-[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) on the “Trademarks” webpage are
+[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) - n the “Trademarks” webpage are
 trademarks of the Microsoft group of companies.
 
 
@@ -530,7 +530,8 @@ Understanding existing approaches to architecting enterprise apps helps clarify 
 serverless. There are many approaches and patterns that evolved over decades of software
 development, and all have their own pros and cons. In many cases, the ultimate solution may not
 involve deciding on a single approach but may integrate several approaches. Migration scenarios
-often involve shifting from one architecture approach to another through a hybrid approach.
+
+- ften involve shifting from one architecture approach to another through a hybrid approach.
 
 
 This chapter provides an overview of both logical and physical architecture patterns for enterprise
@@ -540,7 +541,8 @@ applications.
 
 
 Modern business applications follow a variety of architecture patterns. This section represents a survey
-of common patterns. The patterns listed here aren’t necessarily all best practices, but illustrate
+
+- f common patterns. The patterns listed here aren’t necessarily all best practices, but illustrate
 different approaches.
 
 
@@ -665,7 +667,8 @@ N-Tier architecture may use microservices for the middle tier. It’s also possi
 
 
 microservices in a variety of ways, from virtual directories on IIS hosts to containers. The characteristics
-of microservices make them especially ideal for serverless implementations.
+
+- f microservices make them especially ideal for serverless implementations.
 
 
 The pros of microservices architectures include:
@@ -814,7 +817,8 @@ networks and access to storage.
 Although virtualization and Infrastructure as a Service (IaaS) address many concerns, it still leaves
 much responsibility in the hands of the infrastructure team. The team maintains operating system
 versions, applies security patches, and installs third-party dependencies on the target machines. Apps
-often behave differently on production machines compared to the test environment. Issues arise due
+
+- ften behave differently on production machines compared to the test environment. Issues arise due
 to different dependency versions and/or OS SKU levels. Although many organizations deploy N-Tier
 applications to these targets, many companies benefit from deploying to a more cloud native model
 
@@ -865,13 +869,15 @@ frameworks for hosting web apps.
 Software as a Service or SaaS is centrally hosted and available without local installation or
 provisioning. SaaS often is hosted on top of PaaS as a platform for deploying software. SaaS provides
 services to run and connect with existing software. SaaS is often industry and vertical specific. SaaS is
-often licensed and typically provides a client/server model. Most modern SaaS offerings use web
+
+- ften licensed and typically provides a client/server model. Most modern SaaS offerings use web
 
 7 CHAPTER 1 | Architecture approaches
 
 
 based apps for the client. Companies typically consider SaaS as a business solution to license
-offerings. It isn’t often implemented as architecture consideration for scalability and maintainability of
+
+- fferings. It isn’t often implemented as architecture consideration for scalability and maintainability of
 an application. Indeed, most SaaS solutions are built on IaaS, PaaS, and/or serverless back ends.
 
 
@@ -936,7 +942,8 @@ The _kubelet_ is the client that relays commands from Kubernetes to Docker.
 Functions as a Service (FaaS) is a specialized container service that is similar to serverless. A specific
 [implementation of FaaS, called OpenFaaS, sits on top of containers to provide serverless capabilities.](https://github.com/openfaas/faas)
 OpenFaaS provides templates that package all of the container dependencies necessary to run a piece
-of code. Using templates simplifies the process of deploying code as a functional unit. OpenFaaS
+
+- f code. Using templates simplifies the process of deploying code as a functional unit. OpenFaaS
 targets architectures that already include containers and orchestrators because it can use the existing
 infrastructure. Although it provides serverless functionality, it specifically requires you to use Docker
 
@@ -1107,7 +1114,8 @@ language and platform options later in this chapter.
 
 
 Some projects may benefit from taking an “all-in” approach to serverless. Applications that rely heavily
-on microservices may implement all microservices using serverless technology. The majority of apps
+
+- n microservices may implement all microservices using serverless technology. The majority of apps
 are hybrid, following an N-tier design and using serverless for the components that make sense
 
 
@@ -1272,7 +1280,8 @@ implementation isn’t the right solution for certain components.
 Serverless functions, as with microservices in general, are stateless by default. Avoiding state enables
 serverless to be ephemeral, to scale out, and to provide resiliency without a central point of failure. In
 some circumstances, business processes require state. If your process requires state, you have two
-options. You can adopt a model other than serverless, or interact with a separate service that provides
+
+- ptions. You can adopt a model other than serverless, or interact with a separate service that provides
 state. Adding state can complicate the solution and make it harder to scale, and potentially create a
 single point of failure. Carefully consider whether your function absolutely requires state. If the answer
 is “yes,” determine whether it still makes sense to implement it with serverless.
@@ -1339,7 +1348,8 @@ An advantage of serverless code is that you can release new functions without ha
 entire application. This advantage can become a disadvantage when there’s a relational database
 involved. Changes to database schemas are difficult to synchronize with serverless updates. Additional
 challenges are posed when things go wrong and the changes must be rolled back. Data integrity is
-one reason that a best practice for microservices and serverless functions is that they own their own
+
+- ne reason that a best practice for microservices and serverless functions is that they own their own
 data. It is possible to deploy changes as a single unit of compute and data. The reality is that many
 legacy systems feature a large back-end database that must be reconciled with the serverless
 
@@ -1389,7 +1399,8 @@ are hosted together based on scale requirements.
 
 
 Rules often specify how to scale-up (increase the host resources) and scale-out (increase the number
-of host instances) based on varying parameters. Triggers for scales may include schedule, request
+
+- f host instances) based on varying parameters. Triggers for scales may include schedule, request
 rates, CPU utilization, and memory usage. Higher performance often comes at a greater cost. The less
 expensive, consumption-based approaches may not scale as quickly when the request rate suddenly
 increases. There is a trade-off between paying up front “insurance cost” versus paying strictly “as you
@@ -1412,7 +1423,8 @@ and analytics.
 A serverless architecture may include functions that rely on other functions. In fact, it isn’t uncommon
 in a serverless architecture to have multiple services call each other as part of an interaction or
 distributed transaction. To avoid strong coupling, it’s recommended that services don’t reference each
-other directly. When the endpoint for a service needs to change, direct references could result in
+
+- ther directly. When the endpoint for a service needs to change, direct references could result in
 major refactoring. A suggested solution is to provide a service discovery mechanism, such as a
 registry, that provides the appropriate end point for a request type. Another solution is to leverage
 messaging services like queues or topics for communication between services.
@@ -1724,8 +1736,10 @@ Build functions locally using your favorite IDE and publish them to Azure.
 Functions are invoked by a _trigger_ and can have exactly one. In addition to invoking the function,
 certain triggers also serve as bindings. You may also define multiple bindings in addition to the
 trigger. _Bindings_ provide a declarative way to connect data to your code. They can be passed in (input)
-or receive data (output). Triggers and bindings make functions easy to work with. Bindings remove the
-overhead of manually creating database or file system connections. All of the information needed for
+
+- r receive data (output). Triggers and bindings make functions easy to work with. Bindings remove the
+
+- verhead of manually creating database or file system connections. All of the information needed for
 the bindings is contained in a special _functions.json_ file for scripts or declared with attributes in code.
 
 
@@ -2137,7 +2151,8 @@ external systems. It’s common to come across solutions that rely on centralize
 distributed key-value stores, or shared databases to manage that state. However, these are all
 additional resources that now need to be provisioned and managed. In a serverless environment, your
 code could become cumbersome trying to coordinate with these resources manually. Azure Functions
-offers an alternative for creating stateful functions called Durable Functions.
+
+- ffers an alternative for creating stateful functions called Durable Functions.
 
 
 Durable Functions is an extension to the Azure Functions runtime that enables the definition of
@@ -2153,7 +2168,8 @@ developers need to interact.
 
 
 Stateful workflows in Durable Functions can be broken down into two intrinsic components;
-orchestration and activity triggers. Triggers and bindings are core components used by Azure
+
+- rchestration and activity triggers. Triggers and bindings are core components used by Azure
 Functions to enable your serverless functions to be notified when to start, receive input, and return
 
 results.
@@ -2173,7 +2189,7 @@ preemptively terminate, or send notifications of external events.
 For such cases, the Durable Functions extension provides the `DurableOrchestrationClient` class that
 allows you to interact with orchestrated functions. You get access to the orchestration client by using
 the `OrchestrationClientAttribute` binding. Generally, you would include this attribute with another
-trigger type, such as an `HttpTrigger` or `ServiceBusTrigger` . Once the source function has been
+trigger type, such as an `HttpTrigger` - r `ServiceBusTrigger` . Once the source function has been
 triggered, the orchestration client can be used to start an orchestrator function.
 
 #### **The orchestrator function**
@@ -2204,7 +2220,7 @@ Multiple instances of an orchestration can be started and running at the same ti
 
 `StartNewAsync` method on the `DurableOrchestrationClient` launches a new instance of the
 
-orchestration. The method returns a `Task<string>` that completes when the orchestration has started.
+- rchestration. The method returns a `Task<string>` that completes when the orchestration has started.
 
 
 38 CHAPTER 4 | Durable Azure Functions
@@ -2217,7 +2233,8 @@ seconds.
 
 The completed `Task<string>` from `StartNewAsync` should contain the unique ID of the orchestration
 instance. This instance ID can be used to invoke operations on that specific orchestration. The
-orchestration can be queried for the status or sent event notifications.
+
+- rchestration can be queried for the status or sent event notifications.
 
 #### **The activity functions**
 
@@ -2239,7 +2256,8 @@ JSON serializable value.
 
 
 Any unhandled exceptions that get thrown within activity functions will get sent up to the calling
-orchestrator function and presented as a `TaskFailedException` . At this point, the error can be caught
+
+- rchestrator function and presented as a `TaskFailedException` . At this point, the error can be caught
 and logged in the orchestrator, and the activity can be retried.
 
 ### Recommended resources
@@ -2313,14 +2331,15 @@ inspect the status of the running workflow. The returned status response should 
 following code.
 
 
-As the process continues, the status response will change to either **Failed** or **Completed** . On
+As the process continues, the status response will change to either **Failed** - r **Completed** . On
 successful completion, the **output** property in the payload will contain any returned data.
 
 #### **Monitoring**
 
 
 For simple recurring tasks, Azure Functions provides the `TimerTrigger` that can be scheduled based
-on a CRON expression. The timer works well for simple, short-lived tasks, but there might be scenarios
+
+- n a CRON expression. The timer works well for simple, short-lived tasks, but there might be scenarios
 where more flexible scheduling is needed. This scenario is when the monitoring pattern and Durable
 Functions can help.
 
@@ -2334,7 +2353,8 @@ might be to create watchers for stock price changes that complete once a certain
 
 
 `DurableOrchestrationContext` ’s `CreateTimer` method sets up the schedule for the next invocation
-of the loop to check for stock price changes. `DurableOrchestrationContext` also has a
+
+- f the loop to check for stock price changes. `DurableOrchestrationContext` also has a
 
 `CurrentUtcDateTime` property to get the current DateTime value in UTC. It’s better to use this
 property instead of `DateTime.UtcNow` because it’s easily mocked for testing.

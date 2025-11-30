@@ -34,10 +34,10 @@ without notice.
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association
 
-or connection is intended or should be inferred.
+- r connection is intended or should be inferred.
 
 
-[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) on the “Trademarks” webpage are
+[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) - n the “Trademarks” webpage are
 trademarks of the Microsoft group of companies.
 
 
@@ -108,7 +108,8 @@ how to organize an app’s component parts. Then, refer back to this guide for a
 
 
 This book is aimed at readers who are already familiar with .NET MAUI. It does cover some concepts
-of .NET MAUI to help better illustrate the topic, but it does not cover most controls and concepts in
+
+- f .NET MAUI to help better illustrate the topic, but it does not cover most controls and concepts in
 [any detail. For general guidance on building a new .NET MAUI app, please refer to the Building your](https://docs.microsoft.com/dotnet/maui/get-started/first-app)
 [first app](https://docs.microsoft.com/dotnet/maui/get-started/first-app) guide in the .NET MAUI documentation.
 
@@ -565,7 +566,8 @@ the app.
 
 Many enterprise apps are sufficiently complex to require more than one developer. It can be a
 significant challenge to decide how to design an app so that multiple developers can work effectively
-on different pieces of the app independently, while ensuring that the pieces come together seamlessly
+
+- n different pieces of the app independently, while ensuring that the pieces come together seamlessly
 when integrated into the app.
 
 
@@ -787,7 +789,8 @@ In addition, unit tests are provided for some of the classes in the eShop multi-
 The eShop multi-platform app solution organizes the source code and other resources into a multiple
 projects. All of the core mobile components are contained in a singular project named
 eShopContainers. This is a feature introduced with .NET 6 that allows a project to target multiple
-outputs which helps eliminate the need for multiple platform projects that we would have used in
+
+- utputs which helps eliminate the need for multiple platform projects that we would have used in
 Xamarin.Forms and earlier .NET versions. An additional project is included for unit testing.
 
 
@@ -841,7 +844,8 @@ The eShop project contains the following folders:
 Microsoft’s cross-platform multi-platform app development tools and platforms provide a
 comprehensive solution for B2E, B2B, and B2C mobile client apps, providing the ability to share code
 across all target platforms (iOS, macOS, Android, and Windows) and helping to lower the total cost of
-ownership. Apps can share their user interface and app logic code, while retaining the native platform
+
+- wnership. Apps can share their user interface and app logic code, while retaining the native platform
 
 look and feel.
 
@@ -863,7 +867,8 @@ The .NET MAUI developer experience typically involves creating a user interface 
 adding code-behind that operates on the user interface. Complex maintenance issues can arise as
 apps are modified and grow in size and scope. These issues include the tight coupling between the UI
 controls and the business logic, which increases the cost of making UI modifications, and the difficulty
-of unit testing such code.
+
+- f unit testing such code.
 
 
 The MVVM pattern helps cleanly separate an application’s business and presentation logic from its
@@ -943,7 +948,8 @@ code-behind, and is designed to bind to a specific view model type.
 
 Ensure that the view models are responsible for defining logical state changes that affect some
 aspects of the view’s display, such as whether a command is available, or an indication that an
-operation is pending. Therefore, enable and disable UI elements by binding to view model properties,
+
+- peration is pending. Therefore, enable and disable UI elements by binding to view model properties,
 rather than enabling and disabling them in code-behind.
 
 
@@ -954,9 +960,10 @@ property can be data-bound to an ICommand property on the view model. When the c
 command is invoked, the code in the view model will be executed. In addition to commands,
 
 behaviors can be attached to an object in the view and can listen for either a command to be invoked
-or the event to be raised. In response, the behavior can then invoke an ICommand on the view model
 
-or a method on the view model.
+- r the event to be raised. In response, the behavior can then invoke an ICommand on the view model
+
+- r a method on the view model.
 
 
 10 CHAPTER 3 | Model-View-ViewModel (MVVM)
@@ -1134,8 +1141,9 @@ change, or when the object is known to be in a safe state. Raising the event int
 13 CHAPTER 3 | Model-View-ViewModel (MVVM)
 
 
-operation by invoking the event’s handlers synchronously. If this happens in the middle of an
-operation, it might expose the object to callback functions when it is in an unsafe, partially
+    - peration by invoking the event’s handlers synchronously. If this happens in the middle of an
+
+     - peration, it might expose the object to callback functions when it is in an unsafe, partially
 updated state. In addition, it’s possible for cascading changes to be triggered by
 PropertyChanged events. Cascading changes generally require updates to be complete before
 the cascading change is safe to execute.
@@ -1231,7 +1239,8 @@ Behaviors also allow controls to be declaratively connected to a command. Howeve
 used to invoke an action that’s associated with a range of events raised by a control. Therefore,
 behaviors address many of the same scenarios as command-enabled controls, while providing a
 greater degree of flexibility and control. In addition, behaviors can also be used to associate command
-objects or methods with controls that were not specifically designed to interact with commands.
+
+- bjects or methods with controls that were not specifically designed to interact with commands.
 
 
 15 CHAPTER 3 | Model-View-ViewModel (MVVM)
@@ -1371,7 +1380,8 @@ BindingContext.
 
 [The eShop multi-platform app includes an EventToCommandBehavior](https://docs.microsoft.com/dotnet/communitytoolkit/maui/behaviors/event-to-command-behavior) class which is provided by the
 MAUI Community toolkit. EventToCommandBehavior executes a command in response to an event
-occurring. This class derives from the BaseBehavior<View> class so that the behavior can bind to and
+
+- ccurring. This class derives from the BaseBehavior<View> class so that the behavior can bind to and
 execute an ICommand specified by a Command property when the behavior is consumed. The
 following code example shows the EventToCommandBehavior class:
 
@@ -1407,7 +1417,7 @@ needed, the EventArgsConverter property can be used to convert the EventArgs pro
 into a value that the command expects as input.
 
 
-[For more information about behaviors, see Behaviors](https://docs.microsoft.com/dotnet/maui/fundamentals/behaviors) on the .NET MAUI Developer Center.
+[For more information about behaviors, see Behaviors](https://docs.microsoft.com/dotnet/maui/fundamentals/behaviors) - n the .NET MAUI Developer Center.
 
 ### Summary
 
@@ -1512,7 +1522,8 @@ dependency injection container when the MauiAppBuilder.Build method is called.
 
 
 At runtime, the container must know which implementation of the services are being requested in
-order to instantiate them for the requested objects. In the eShop multi-platform app, the
+
+- rder to instantiate them for the requested objects. In the eShop multi-platform app, the
 IAppEnvironmentService, IDialogService, INavigationService, and ISettingsService interfaces need to
 be resolved before it can instantiate a ProfileViewModel object. This involves the container performing
 the following actions:
@@ -1523,7 +1534,8 @@ _registration_ .
 
 
   Instantiating the object that implements the required interface and the ProfileViewModel
-object. This is known as _resolution_ .
+
+    - bject. This is known as _resolution_ .
 
 
 Eventually, the app will finish using the ProfileViewModel object, and it will become available for
@@ -1572,7 +1584,8 @@ RegisterViewModels method:
 
 
 This method receives an instance of MauiAppBuilder, and we can use the Services property to register
-our view models. Depending on the needs of your application, you may need to add services with
+
+- ur view models. Depending on the needs of your application, you may need to add services with
 different lifetimes. The following table provides information on when you may want to choose these
 different registration lifetimes:
 
@@ -1602,7 +1615,8 @@ ISettingsService interface using the SettingsService implementation:
 
 
 Once all services have been registered, the MauiAppBuilder.Build method should be called to create
-our MauiApp and populate our dependency injection container with all the registered services.
+
+- ur MauiApp and populate our dependency injection container with all the registered services.
 
 
 24 CHAPTER 4 | Dependency injection
@@ -1697,7 +1711,7 @@ can create memory management issues, especially when there are short-lived objec
 to an event of a static or long-lived object. If the event handler isn’t removed, the subscriber will be
 kept alive by the reference to it in the publisher, and this will prevent or delay the garbage collection
 
-of the subscriber.
+- f the subscriber.
 
 ### Introduction to MVVM Toolkit Messenger
 
@@ -1749,10 +1763,11 @@ is executing on, with subscribers receiving the message on the same thread.
 
 
 If a message that’s sent from a background thread is required to update the UI, process the message
-on the UI thread in the subscriber by invoking the MainThread.BeginInvokeOnMainThread method.
+
+- n the UI thread in the subscriber by invoking the MainThread.BeginInvokeOnMainThread method.
 
 
-[For more information about Messenger, see Messenger](https://docs.microsoft.com/dotnet/communitytoolkit/mvvm/messenger) on the Microsoft Developer Center.
+[For more information about Messenger, see Messenger](https://docs.microsoft.com/dotnet/communitytoolkit/mvvm/messenger) - n the Microsoft Developer Center.
 
 ### Defining a message
 
@@ -1818,7 +1833,8 @@ payload data should be immutable to avoid concurrency errors.
 
 
 Subscribers can unsubscribe from messages they no longer want to receive. This is achieved with one
-of the IMessenger.Unregister overloads, as demonstrated in the following code example:
+
+- f the IMessenger.Unregister overloads, as demonstrated in the following code example:
 
 ```
 WeakReferenceMessenger.Default.Unregister<Messages.AddProductMessage>( this );
@@ -1972,7 +1988,8 @@ container.
 
 
 The ViewModelBase class stores the MauiNavigationService instance in a NavigationService property,
-of type INavigationService. Therefore, all view-model classes, which derive from the ViewModelBase
+
+- f type INavigationService. Therefore, all view-model classes, which derive from the ViewModelBase
 class, can use the NavigationService property to access the methods specified by the
 INavigationService interface.
 
@@ -1983,7 +2000,7 @@ INavigationService interface.
 with the NavigationPage class, which implements a hierarchical navigation experience in which the
 user can navigate through pages, forward and backward, as desired. The eShop app uses the Shell
 component as the root container for the application and as a navigation host. For more information
-[about Shell navigation, see Shell Navigation](https://docs.microsoft.com/dotnet/maui/fundamentals/shell/navigation) on the Microsoft Developer Center.
+[about Shell navigation, see Shell Navigation](https://docs.microsoft.com/dotnet/maui/fundamentals/shell/navigation) - n the Microsoft Developer Center.
 
 
 Navigation is performed inside view-model classes by invoking one of the NavigateToAsync methods,
@@ -2088,7 +2105,8 @@ from the navigation service as shown in the code example below.
 
 The QueryProperty attribute allows us to provide a parameter for a property to map values to and a
 key to find values from the query parameters dictionary. In this example, the key “OrderNumber” and
-order number value were provided during the NavigateToAsync call. The view-model found the
+
+- rder number value were provided during the NavigateToAsync call. The view-model found the
 “OrderNumber” key and mapped the value to the OrderNumber property. The OrderNumber property
 
 can then be used at a later time to retrieve the full order details from the OrderService instance.
@@ -2207,7 +2225,8 @@ mock services in the eShop multi-platform app:
 
 
 The Check method returns a boolean indicating whether the value argument is null, empty, or consists
-only of whitespace characters.
+
+- nly of whitespace characters.
 
 
 Although not used by the eShop multi-platform app, the following code example shows a validation
@@ -2422,7 +2441,8 @@ AuthTokenAccess and UseMocks properties:
 
 
 Each setting consists of a private key, a private default value, and a public property. The key is always
-a const string that defines a unique name, with the default value for the setting being a static readonly or constant value of the required type. Providing a default value ensures that a valid value is
+a const string that defines a unique name, with the default value for the setting being a static read
+- nly or constant value of the required type. Providing a default value ensures that a valid value is
 available if an unset setting is retrieved. This service implementation can be provided via dependency
 injection to our application for use in view-models or other services throughout the application.
 
@@ -2494,7 +2514,8 @@ specific technologies in each tier. Such applications are often referred to as _
 packaged onto hardware pre-scaled for peak loads. The main drawbacks of this development
 approach are the tight coupling between components within each tier, that individual components
 can’t be easily scaled, and the cost of testing. A simple update can have unforeseen effects on the rest
-of the tier, so a change to an application component requires its entire tier to be retested and
+
+- f the tier, so a change to an application component requires its entire tier to be retested and
 redeployed.
 
 
@@ -2571,7 +2592,7 @@ shopping basket service might need to be scaled-out more than an ordering servic
 
 Therefore, the resulting infrastructure will more efficiently consume resources when scaling
 
-out.
+     - ut.
 
 
   Each microservice isolates any issues. For example, if there is an issue in a service it only
@@ -2614,7 +2635,8 @@ compatibility with client apps.
 
 
 Containerization is an approach to software development in which an application and its versioned set
-of dependencies, plus its environment configuration abstracted as deployment manifest files, are
+
+- f dependencies, plus its environment configuration abstracted as deployment manifest files, are
 packaged together as a container image, tested as a unit, and deployed to a host operating system.
 
 
@@ -2774,7 +2796,8 @@ databases.
 
 Microservices offer an approach to application development and deployment that’s suited to the
 agility, scale, and reliability requirements of modern cloud applications. One of the main advantages
-of microservices is that they can be scaled-out independently, which means that a specific functional
+
+- f microservices is that they can be scaled-out independently, which means that a specific functional
 area can be scaled that requires more processing power or network bandwidth to support demand
 without unnecessarily scaling areas of the application that are not experiencing increased demand.
 
@@ -2808,7 +2831,8 @@ exchanged between client apps and the web service.
 
 
 Representational State Transfer (REST) is an architectural style for building distributed systems based
-on hypermedia. A primary advantage of the REST model is that it’s based on open standards and
+
+- n hypermedia. A primary advantage of the REST model is that it’s based on open standards and
 doesn’t bind the implementation of the model or the client apps that access it to any specific
 [implementation. Therefore, a REST web service could be implemented using Microsoft ASP.NET Core,](https://docs.microsoft.com/aspnet/core/introduction-to-aspnet-core)
 and client apps could be developing using any language and toolset that can generate HTTP requests
@@ -2821,7 +2845,7 @@ access these resources. In such systems, a client app submits a request in the f
 
 identifies a resource, and an HTTP method (such as GET, POST, PUT, or DELETE) that indicates the
 
-operation to be performed on that resource. The body of the HTTP request contains any data required
+- peration to be performed on that resource. The body of the HTTP request contains any data required
 to perform the operation.
 
 
@@ -2853,7 +2877,7 @@ body of the message. It’s then the responsibility of the client app to parse t
 interpret the results in the message body appropriately.
 
 
-[For more information about REST, see API design](https://docs.microsoft.com/azure/architecture/best-practices/api-design) [and API implementation](https://docs.microsoft.com/azure/architecture/best-practices/api-implementation) on Microsoft Docs.
+[For more information about REST, see API design](https://docs.microsoft.com/azure/architecture/best-practices/api-design) [and API implementation](https://docs.microsoft.com/azure/architecture/best-practices/api-implementation) - n Microsoft Docs.
 
 ### Consuming RESTful APIs
 
@@ -2914,7 +2938,8 @@ This method builds the URI that identifies the resource the request will be sent
 RequestProvider class to invoke the GET HTTP method on the resource, before returning the results to
 the CatalogViewModel. The RequestProvider class contains functionality that submits a request in the
 form of a URI that identifies a resource, an HTTP method that indicates the operation to be performed
-on that resource, and a body that contains any data required to perform the operation. For
+
+- n that resource, and a body that contains any data required to perform the operation. For
 information about how the RequestProvider class is injected into the CatalogService class, see
 Dependency Injection.
 
@@ -3049,7 +3074,8 @@ ClearBasketAsync method:
 
 This method builds the URI that identifies the resource that the request will be sent to, and uses the
 RequestProvider class to invoke the DELETE HTTP method on the resource. Note that an access token,
-obtained from IdentityServer during the authentication process, is required to authorize requests to
+
+- btained from IdentityServer during the authentication process, is required to authorize requests to
 
 the basket microservice. For more information about authorization, see Authorization.
 
@@ -3130,7 +3156,8 @@ data are then minimized if the cache becomes unavailable.
 
 
 It’s impractical to expect that cached data will always be consistent with the original data. Data in the
-original data store might change after it’s been cached, causing the cached data to become stale.
+
+- riginal data store might change after it’s been cached, causing the cached data to become stale.
 Therefore, apps should implement a strategy that helps to ensure that the data in the cache is as upto-date as possible, but can also detect and handle situations that arise when the data in the cache
 has become stale. Most caching mechanisms enable the cache to be configured to expire data, and
 hence reduce the period for which data might be out of date.
@@ -3145,7 +3172,8 @@ Many caches implement expiration, which invalidates data and removes it from the
 accessed for a specified period. However, care must be taken when choosing the expiration period. If
 it’s made too short, data will expire too quickly and the benefits of caching will be reduced. If it’s
 made too long, the data risks becoming stale. Therefore, the expiration time should match the pattern
-of access for apps that use the data.
+
+- f access for apps that use the data.
 
 
 When cached data expires, it should be removed from the cache, and the app must retrieve the data
@@ -3155,8 +3183,9 @@ from the original data store and place it back into the cache.
 It’s also possible that a cache might fill up if data is allowed to remain for too long a period. Therefore,
 requests to add new items to the cache might be required to remove some items in a process known
 as _eviction_ . Caching services typically evict data on a least-recently-used basis. However, there are
-other eviction policies, including most-recently-used, and first-in-first-out. For more information, see
-[Caching Guidance](https://docs.microsoft.com/azure/architecture/best-practices/caching) on Microsoft Docs.
+
+- ther eviction policies, including most-recently-used, and first-in-first-out. For more information, see
+[Caching Guidance](https://docs.microsoft.com/azure/architecture/best-practices/caching) - n Microsoft Docs.
 
 ### Caching images
 
@@ -3219,7 +3248,8 @@ exception.
 
 The retry strategy should be tuned to match the business requirements of the app. For example, it’s
 important to optimize the retry count and retry interval to the operation being attempted. If the
-operation is part of a user interaction, the retry interval should be short and only a few retries
+
+- peration is part of a user interaction, the retry interval should be short and only a few retries
 attempted to avoid making users wait for a response. If the operation is part of a long running
 workflow, where cancelling or restarting the workflow is expensive or time-consuming, it’s appropriate
 to wait longer between attempts and to retry more times.
@@ -3267,9 +3297,9 @@ likely to fail, while also enabling the app to detect whether the fault has been
 
 A circuit breaker acts as a proxy for operations that might fail. The proxy should monitor the number
 
-of recent failures that have occurred, and use this information to decide whether to allow the
+- f recent failures that have occurred, and use this information to decide whether to allow the
 
-operation to proceed, or to return an exception immediately.
+- peration to proceed, or to return an exception immediately.
 
 
 The eShop multi-platform app does not currently implement the circuit breaker pattern. However, the
@@ -3282,7 +3312,8 @@ eShop does.
 
 
 An app can combine the retry and circuit breaker patterns by using the retry pattern to invoke an
-operation through a circuit breaker. However, the retry logic should be sensitive to any exceptions
+
+- peration through a circuit breaker. However, the retry logic should be sensitive to any exceptions
 returned by the circuit breaker and abandon retry attempts if the circuit breaker indicates that a fault
 
 is not transient.
@@ -3301,7 +3332,8 @@ Docs.
 Many modern web-based solutions make use of web services, hosted by web servers, to provide
 functionality for remote client applications. The operations that a web service exposes constitute a
 web API, and client apps should be able to utilize the web API without knowing how the data or
-operations that the API exposes are implemented.
+
+- perations that the API exposes are implemented.
 
 
 The performance of an app can be improved by caching frequently accessed data to fast storage
@@ -3337,7 +3369,8 @@ authentication providers such as Microsoft, Google, Facebook, or Twitter, and au
 middleware. The eShop multi-platform app performs authentication and authorization with a
 containerized identity microservice that uses IdentityServer. The app requests security tokens from
 IdentityServer to authenticate a user or access a resource. For IdentityServer to issue tokens on behalf
-of a user, the user must sign in to IdentityServer. However, IdentityServer doesn’t provide a user
+
+- f a user, the user must sign in to IdentityServer. However, IdentityServer doesn’t provide a user
 interface or database for authentication. Therefore, in the eShop reference application, ASP.NET Core
 Identity is used for this purpose.
 
@@ -3774,7 +3807,8 @@ method in the BasketService class.
 
 The RequestProvider class in the eShop multi-platform app uses the HttpClient class to make requests
 to the RESTful APIs exposed by the eShop reference application. When making requests to the
-ordering and basket APIs, which require authorization, a valid access token must be included with the
+
+- rdering and basket APIs, which require authorization, a valid access token must be included with the
 request. This is achieved by adding the access token to the headers of the HttpClient instance, as
 demonstrated in the following code example:
 
@@ -3905,7 +3939,8 @@ cancellation of the execution task, if supported.
 
 By default, AsyncRelayCommand doesn’t allow concurrent execution. This is very helpful in situations
 where a user could unintentionally tap a control multiple times to execute a long-running or costly
-operation. During task execution, AsyncRelayCommand will automatically call the CanExecuteChanged
+
+- peration. During task execution, AsyncRelayCommand will automatically call the CanExecuteChanged
 event. In .NET MAUI, controls that support the Command and CommandParameter properties, such as
 Button, will listen to this event and automatically enable or disable it during execution. This
 functionality can be overridden by using a custom canExecute parameter or setting the
@@ -3972,10 +4007,12 @@ the MVVM Toolkit Developer Center.
 ### Summary
 
 The MVVM Toolkit is a great way to standardize and simplify our ViewModel code. The MVVM toolkit
-offers great implementations of standard MVVM components such as ObservableObject and
+
+- ffers great implementations of standard MVVM components such as ObservableObject and
 Async/RelayCommand. The source generators help simplify our ViewModel properties and commands
 by generating all of the boilerplate code needed for user interface interactions. The MVVM Toolkit
-offers even more features outside of what has been shown in this chapter. For more information on
+
+- ffers even more features outside of what has been shown in this chapter. For more information on
 [the MVVM Toolkit, see Introduction to the MVVM Toolkit](https://docs.microsoft.com/dotnet/communitytoolkit/mvvm/) in the MVVM Toolkit Developer Center.
 
 
@@ -4111,7 +4148,8 @@ specified as an argument. However, the OrderService retrieves data from a web se
 OrderMockService instance, a mock version of the OrderService class, is specified as the argument to
 the OrderDetailViewModel constructor. Then, mock data is retrieved rather than communicating with
 a web service when the view model’s InitializeAsync method is invoked, which uses IOrderService
-operations.
+
+- perations.
 
 
 96 CHAPTER 13 | Unit testing
@@ -4176,7 +4214,8 @@ correctly implemented and testing that the ValidatableObject<T> class performs a
 
 
 Validation logic is usually simple to test, because it is typically a self-contained process where the
-output depends on the input. There should be tests on the results of invoking the Validate method on
+
+- utput depends on the input. There should be tests on the results of invoking the Validate method on
 each property that has at least one associated validation rule, as demonstrated in the following code
 example:
 
@@ -4207,7 +4246,8 @@ expected, so errors don’t propagate throughout the app.
 
 
 The behavior of an object under test can be isolated by replacing dependent objects with mock
-objects that simulate the behavior of the dependent objects. This enables unit tests to be executed
+
+- bjects that simulate the behavior of the dependent objects. This enables unit tests to be executed
 without requiring unwieldy resources such as runtime platform features, web services, or databases
 
 

@@ -32,13 +32,13 @@ without notice.
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association
 
-or connection is intended or should be inferred.
+- r connection is intended or should be inferred.
 
 
-[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) on the “Trademarks” webpage are
+[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) - n the “Trademarks” webpage are
 trademarks of the Microsoft group of companies. All other marks are property of their respective
 
-owners.
+- wners.
 
 
 Author: > **Cesar de la Torre**, Sr. PM, .NET Product Team, Microsoft Corp.
@@ -239,7 +239,7 @@ a few important deployment optimizations to gain some significant benefits from 
 without changing the core architecture of the application. The fundamental step here is to
 [add Windows Containers support to your existing .NET Framework applications. This](https://docs.microsoft.com/virtualization/windowscontainers/about/)
 important step (containerization) doesn’t require touching the code, so the overall lift and
-[shift effort is light. You can use tools like Image2Docker](https://github.com/docker/communitytools-image2docker-win) or Visual Studio, with its tools for
+[shift effort is light. You can use tools like Image2Docker](https://github.com/docker/communitytools-image2docker-win)     - r Visual Studio, with its tools for
 [Docker. Visual Studio automatically chooses smart defaults for ASP.NET applications and](https://www.docker.com/)
 Windows Containers images. These tools offer both a rapid inner loop, and a fast path to get
 the containers to Azure. Your agility is improved when you deploy to multiple environments.
@@ -255,6 +255,7 @@ During this initial modernization, you can also add assets from the cloud, such 
 [tools like Azure Application Insights; CI/CD pipelines for your app lifecycles with Azure DevOps](https://docs.microsoft.com/azure/application-insights/app-insights-overview)
 [Services; and many more data resource services that are available in Azure. For instance, you can](https://azure.microsoft.com/services/devops/)
 [modify a monolithic web app that was originally developed by using traditional ASP.NET Web Forms](https://www.asp.net/web-forms)
+
 [or ASP.NET MVC, but now you deploy it by using Windows Containers. When you use Windows](https://www.asp.net/mvc)
 [Containers, you should also migrate your data to a database in Azure SQL Database Managed](https://docs.microsoft.com/azure/sql-database/)
 [Instance, all without changing the core architecture of your application.](https://docs.microsoft.com/azure/sql-database/)
@@ -293,7 +294,8 @@ _Figure 1-4. Example of a pure IaaS scenario in the cloud_
 
 
 For modernization scenarios, you might have a pure Cloud-Optimized application that uses elements
-only from that maturity level. Or, you might have an intermediate-state application with some
+
+- nly from that maturity level. Or, you might have an intermediate-state application with some
 elements from Cloud Infrastructure-Ready and other elements from Cloud-Optimized (a “pick and
 choose” or mixed model), like in Figure 1-5.
 
@@ -763,7 +765,8 @@ candidates for Cloud-Optimized.
 
 
 Then, for the apps that still cannot move to Windows Containers and PaaS such as App Service or
-orchestrators like Azure Kubernetes Service, migrate those apps to simple plain VMs (IaaS).
+
+- rchestrators like Azure Kubernetes Service, migrate those apps to simple plain VMs (IaaS).
 
 
 But, keep in mind that correctly configuring, securing, and maintaining VMs requires much more time
@@ -833,7 +836,8 @@ complexity of maintaining a secondary datacenter.
 
 
 Site Recovery is also made specifically for hybrid environments that are partly on-premises and partly
-on Azure. Site Recovery helps ensure business continuity by keeping your apps that are running on
+
+- n Azure. Site Recovery helps ensure business continuity by keeping your apps that are running on
 VMs and on-premises physical servers available if a site goes down. It replicates workloads that are
 running on VMs and physical servers so that they remain available in a secondary location if the
 primary site isn’t available. It recovers workloads to the primary site when it’s up and running again.
@@ -943,12 +947,10 @@ Managed Instance in Azure SQL Database has the following characteristics:
   Application surface compatibility, with these features:
 
 
-–
-SQL Server Agent and SQL Server Profiler
+     SQL Server Agent and SQL Server Profiler
 
 
-–
-Cross-database references and queries, SQL CLR, replication, change data capture
+     Cross-database references and queries, SQL CLR, replication, change data capture
 
 (CDC), and Service Broker
 
@@ -959,12 +961,10 @@ Cross-database references and queries, SQL CLR, replication, change data capture
   Minimum-downtime migration, with these features:
 
 
-–
-Azure Database Migration Service
+     Azure Database Migration Service
 
 
-–
-Native backup and restore, and log shipping
+     Native backup and restore, and log shipping
 
 
 With these capabilities, when you migrate existing application databases to Azure SQL Database, the
@@ -1330,7 +1330,8 @@ Windows.)
   - **Managed cloud** : When you choose a managed cloud option, you can avoid the expense and
 complexity of managing and supporting the underlying infrastructure, VMs, OS patches, and
 networking configuration. If you choose to migrate by using IaaS, you are responsible for all
-of these tasks, and for associated costs. In a managed cloud option, you manage only the
+
+    - f these tasks, and for associated costs. In a managed cloud option, you manage only the
 applications and services that you develop. The cloud service provider typically manages
 [everything else. Examples of managed cloud services in Azure include Azure SQL Database,](https://azure.microsoft.com/services/sql-database)
 [Azure Redis Cache, Azure Cosmos DB,](https://azure.microsoft.com/services/cache/) [Azure Storage,](https://azure.microsoft.com/services/storage/) [Azure Database for MySQL, Azure](https://azure.microsoft.com/services/mysql/)
@@ -1430,7 +1431,8 @@ extend any of the possible Cloud-Optimized approaches.
 The fundamental difference in applications at the Cloud-Native level is in the application architecture.
 Cloud-native applications are, by definition, apps that are based on microservices. Cloud-native apps
 require special architectures, technologies, and platforms, compared to a monolithic web application
-or traditional N-Tier application.
+
+- r traditional N-Tier application.
 
 #### **Cloud-native applications details**
 
@@ -1493,7 +1495,8 @@ microservices depends on the type of application that you need to build.
 
 The microservices architecture is becoming the preferred approach for distributed and large or
 complex mission-critical applications that are based on multiple, independent subsystems in the form
-of autonomous services. In a microservices-based architecture, an application is built as a collection of
+
+- f autonomous services. In a microservices-based architecture, an application is built as a collection of
 services that can be independently developed, tested, versioned, deployed, and scaled. This approach
 can include any related, autonomous database per microservice.
 
@@ -1575,7 +1578,8 @@ As containers daily become more common, they are becoming an industry-wide “un
 #### **Benefits of containers (Docker Engine on Linux or Windows)**
 
 
-Building applications by using containers-which also might be defined as lightweight building blocksoffers a significant increase in agility for building, shipping, and running any application, across any
+Building applications by using containers-which also might be defined as lightweight building blocks
+- ffers a significant increase in agility for building, shipping, and running any application, across any
 
 infrastructure.
 
@@ -1708,7 +1712,8 @@ Ultimately, Windows Containers gets you the benefits that you are looking for by
 
 Given the diversity of operating systems that are supported by Docker, as well as the differences
 between .NET Framework and .NET Core, you should target a specific OS and specific versions based
-on the framework you are using.
+
+- n the framework you are using.
 
 
 For Windows, you can use Windows Server Core or Windows Nano Server. These Windows versions
@@ -1832,8 +1837,10 @@ Windows Server container instead.
 
 
 In previous sections, it’s been explained what the benefits of Docker containers are as well as details
-on the specific container images for .NET applications. All that generic information is fundamental in
-order to develop or containerize an application. However, when thinking about the production
+
+- n the specific container images for .NET applications. All that generic information is fundamental in
+
+- rder to develop or containerize an application. However, when thinking about the production
 deployment environment or even QA and Dev/Test environments, Microsoft Azure provides an open
 and broad variety of choices, a full container ecosystem in the cloud (shown in the diagram below).
 Depending on your specific application’s needs, you should choose one or another Azure product.
@@ -1956,7 +1963,8 @@ can move to more advanced PaaS environments, like orchestrators.
 
 
   - **Production environment with existing deployment tools** : You might be moving from an
-on-premises environment in which you have invested in tools to make complex deployments
+
+    - n-premises environment in which you have invested in tools to make complex deployments
 to VMs or bare-metal servers (like Puppet or similar tools). To move to the cloud with minimal
 changes to production environment deployment procedures, you might continue to use
 those tools to deploy to Azure VMs. However, you’ll want to use Windows Containers as the
@@ -1993,7 +2001,8 @@ Instances are:
 
 
 The simple web apps scenario is a fair scenario for ACI but take into account that since in ACI you can
-only have a single container instance per container image, you won’t have high availability and only
+
+- nly have a single container instance per container image, you won’t have high availability and only
 have limited scalability.
 
 
@@ -2031,7 +2040,8 @@ new tools. It’s just your application, in a container, running in the cloud.
 
 
 Azure Kubernetes Service (AKS) simplifies deploying a managed Kubernetes cluster in Azure by
-offloading the operational overhead to Azure. You get an open solution that offers portability both for
+
+- ffloading the operational overhead to Azure. You get an open solution that offers portability both for
 your containers and for your application configuration. You select the size, the number of hosts, and
 the orchestrator tools. Azure Kubernetes Service handles the infrastructure for you. It also supports
 Windows Server containers alongside Linux containers. For more details on Windows OS support and
@@ -2126,7 +2136,8 @@ Your application is ready for the cloud when, at a minimum, it implements a soft
 resiliency, rather than a hardware-based model. Your cloud application must embrace the partial
 failures that will certainly occur. Design or partially refactor your application to achieve resiliency with
 expected partial failures. It should be designed to cope with partial failures, like transient network
-outages and nodes, or VMs crashing in the cloud. Even containers being moved to a different node
+
+- utages and nodes, or VMs crashing in the cloud. Even containers being moved to a different node
 within an orchestrator cluster can cause intermittent short failures within the application.
 
 #### **Handling partial failure**
@@ -2267,8 +2278,10 @@ analysis across multiple sources.
 
 In relation to Azure infrastructure logs, Log Analytics, as an Azure service, ingests log and metric data
 [from other Azure services (via Azure Monitor), Azure VMs, Docker containers, and on-premises or](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor)
-other cloud infrastructures. Log Analytics offers flexible log search and out-of-the box analytics on top
-of this data. It provides rich tools that you can use to analyze data across sources, it allows complex
+
+- ther cloud infrastructures. Log Analytics offers flexible log search and out-of-the box analytics on top
+
+- f this data. It provides rich tools that you can use to analyze data across sources, it allows complex
 queries across all logs, and it can proactively alert based on specified conditions. You can even collect
 custom data in the central Log Analytics repository, where you can query and visualize it. You can also
 take advantage of the Log Analytics built-in solutions to immediately gain insights into the security
@@ -2384,7 +2397,7 @@ containers.
 
 [https://learn.microsoft.com/azure/operations-management-suite/operations-management-suite-](https://docs.microsoft.com/azure/operations-management-suite/operations-management-suite-overview)
 
-overview
+- verview
 
 ### Modernize your app’s lifecycle with CI/CD pipelines and DevOps tools in the cloud
 
@@ -2410,7 +2423,7 @@ applications to various environments through the official Azure DevOps Services 
   - [Deploy to Azure Kubernetes Service](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-aks?tabs=dotnet-core)
 
 
-[But you can also deploy to Docker Swarm](https://blog.jcorioland.io/archives/2016/11/29/full-ci-cd-pipeline-to-deploy-multi-containers-application-on-azure-container-service-docker-swarm-using-visual-studio-team-services.html) or DC/OS by using Azure DevOps Services script-based
+[But you can also deploy to Docker Swarm](https://blog.jcorioland.io/archives/2016/11/29/full-ci-cd-pipeline-to-deploy-multi-containers-application-on-azure-container-service-docker-swarm-using-visual-studio-team-services.html) - r DC/OS by using Azure DevOps Services script-based
 
 tasks.
 
@@ -2435,16 +2448,19 @@ _Figure 4-12. Azure DevOps Services continuous deployment pipeline, deploying to
 Some organizations and enterprises can’t migrate some of their applications to public clouds like
 Microsoft Azure or any other public cloud due to regulations or their own policies. However, it’s likely
 that any organization might benefit from having some of their applications in the public cloud and
-other applications on-premises. But a mixed environment can lead to excessive complexity in
+
+- ther applications on-premises. But a mixed environment can lead to excessive complexity in
 environments due to different platforms and technologies used in public clouds versus on-premises
 
 environments.
 
 
 Microsoft provides the best hybrid cloud solution, one in which you can optimize your existing assets
-on-premises and in the public cloud, while you ensure consistency in an Azure hybrid cloud. You can
+
+- n-premises and in the public cloud, while you ensure consistency in an Azure hybrid cloud. You can
 maximize existing skills, and get a flexible, unified approach to building apps that can run in the cloud
-or on-premises, thanks to Azure Stack (on-premises) and Azure (public cloud).
+
+- r on-premises, thanks to Azure Stack (on-premises) and Azure (public cloud).
 
 
 When it comes to security, you can centralize management and security across your hybrid cloud. You
@@ -2453,7 +2469,8 @@ cloud, and by using identity management.
 
 
 Finally, you can distribute and analyze data seamlessly, use the same query languages for cloud and
-on-premises assets, and apply analytics and deep learning in Azure to enrich your data, regardless of
+
+- n-premises assets, and apply analytics and deep learning in Azure to enrich your data, regardless of
 
 its source.
 
@@ -2878,7 +2895,8 @@ Container Instances (ACI) and how you can deploy eShopModernizing Apps into ACI.
 
 
 There can be variations about deploying the eShopModernizing apps into ACI such as deploying just
-one or all of the apps (MVC app, WebForms app or WCF service). In the following scenario shown
+
+- ne or all of the apps (MVC app, WebForms app or WCF service). In the following scenario shown
 below, you can see the ASP.NET MVC app plus the SQL Server container both of them deployed as
 
 containers into ACI (Azure Container Instances).
@@ -2905,7 +2923,8 @@ Container Instances (ACI) is not quite as fast as deploying to a regular Docker 
 Server 2016 with Windows Containers) because the Docker image has to be downloaded (pulled from
 the Docker registry) every time and the sizes of the SQL container image (15.1 GB) and the ASP.NET
 container image (13.9 GB) are significantly large, however it is much cheaper than maintaining your
-own docker host (permanently on-line Windows Server 2016 with Windows Containers VM in Azure)
+
+- wn docker host (permanently on-line Windows Server 2016 with Windows Containers VM in Azure)
 
 not to mention a whole orchestrator like Kubernetes in Azure (AKS) which is, on the other hand, a
 
@@ -2987,7 +3006,8 @@ _Figure 5-8. Deploy to a Kubernetes cluster from CI/CD pipelines in Azure DevOps
 There are many benefits to deploying to a cluster in Kubernetes. The biggest benefit is that you get a
 production-ready environment in which you can scale out the application based on the number of
 container instances you want to use (inner-scalability in the existing nodes), and based on the number
-of nodes or VMs in the cluster (global scalability of the cluster).
+
+- f nodes or VMs in the cluster (global scalability of the cluster).
 
 
 Azure Container Service optimizes popular open-source tools and technologies specifically for Azure.

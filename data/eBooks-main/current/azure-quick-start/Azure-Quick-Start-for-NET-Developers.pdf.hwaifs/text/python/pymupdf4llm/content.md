@@ -355,7 +355,7 @@ application and abstracting away the complexities of the operating system and
 infrastructure. They are highly available by default and will stay up and running for at
 
 
-least [99.95%](https://azure.microsoft.com/en-us/support/legal/sla/app-service/v1_4/) of the time.
+least [99.95%](https://azure.microsoft.com/en-us/support/legal/sla/app-service/v1_4/) - f the time.
 
 
 Azure Quick Start Guide for .NET Developers 7
@@ -402,7 +402,7 @@ applications.
 [easy authentication, use](https://docs.microsoft.com/azure/app-service/app-service-authentication-overview) [deployment slots, enable](https://docs.microsoft.com/azure/app-service/web-sites-staged-publishing) [continuous deployment, and use any](https://docs.microsoft.com/azure/app-service/app-service-continuous-deployment)
 
 
-of the other App Service features. By default, your application is available on the
+- f the other App Service features. By default, your application is available on the
 
 
 internet, without you needing to set up a domain name or configure DNS settings,
@@ -490,7 +490,7 @@ to these unique features, Mobile Apps shares all the other features of Azure App
 languages in Visual Studio and other IDEs and editors. Each Functions app contains one
 
 
-or more Azure Functions and provides integration with authentication and deployment
+- r more Azure Functions and provides integration with authentication and deployment
 
 
 slots.
@@ -526,7 +526,7 @@ Here is an example: You write an Azure Functions app that executes every time a 
 image file is uploaded to Azure Storage. You then take that image, rename it, and
 
 
-output it to another Azure Storage account.
+- utput it to another Azure Storage account.
 
 
 This is very easy to do. You just write the code to rename the image. Azure Functions
@@ -590,7 +590,7 @@ with writing every step of the process inside a series of Functions. For those l
 a lower code solution Logic Applications may be better. With Azure Logic Apps, you can
 
 
-orchestrate a process just by weaving API calls together in a visual designer in Visual
+- rchestrate a process just by weaving API calls together in a visual designer in Visual
 
 
 Studio or the Azure portal. Visual Studio offers a specific Logic Apps project template to
@@ -608,7 +608,7 @@ A logic app has a trigger, just like an Azure function does. This can be an outs
 like when a new blob is added, or a certain text is tweeted. Or it can be a manual trigger
 
 
-or a trigger on a schedule such as every 15 minutes.
+- r a trigger on a schedule such as every 15 minutes.
 
 
 Once triggered, a logic app takes its input and calls APIs with it to complete a process.
@@ -667,7 +667,7 @@ Running your application in a VM doesn’t provide you the features like zero-do
 deployments and easy authentication. You are also responsible for patching the
 
 
-operating system and for making sure that antivirus software is up to date.
+- perating system and for making sure that antivirus software is up to date.
 
 
 On the other hand, it does provide you with the ability to easily scale your VM to a
@@ -980,7 +980,7 @@ programming model to which you’re accustomed.
 You can use Cosmos DB from .NET Framework and .NET Core. For example, you can use
 
 
-[its SQL API through the NuGet package Microsoft.Azure.DocumentDB](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB) or
+[its SQL API through the NuGet package Microsoft.Azure.DocumentDB](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB) - r
 
 
 [Microsoft.Azure.DocumentDB.Core](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core) (for .NET Core).
@@ -1064,7 +1064,7 @@ It is available in four different performance levels from Standard HDD to Ultra 
 high performance tiers are suitable for heavy I/O workloads such as running SAP HANA
 
 
-or complex analytical models.
+- r complex analytical models.
 
 
 **Table Storage**
@@ -1076,7 +1076,7 @@ or complex analytical models.
 you can use to store data in flexible tables. A table can contain one row describing an
 
 
-order and another row describing customer information. You don’t need to define a
+- rder and another row describing customer information. You don’t need to define a
 
 
 data schema. This makes Table Storage very flexible.
@@ -1173,19 +1173,19 @@ databases are universally available, scalable, highly secure, and fully managed.
 Each of these is suited for slightly different use cases, but in general, their functionality
 
 
-overlaps a lot. You would use Azure Databases for MySQL, PostgreSQL, and MariaDB
+- verlaps a lot. You would use Azure Databases for MySQL, PostgreSQL, and MariaDB
 
 
 when you are already using one of their on-premises versions and want the advantage
 
 
-of having that run fully managed in the cloud. Migrating apps that use these databases
+- f having that run fully managed in the cloud. Migrating apps that use these databases
 
 
 is much easier when the data can remain in its original platform. Azure also provides an
 
 
-out of the box backend for services like WordPress which rely on open source databases.
+- ut of the box backend for services like WordPress which rely on open source databases.
 
 
 Azure Quick Start Guide for .NET Developers 19
@@ -1647,7 +1647,7 @@ Azure Quick Start Guide for .NET Developers 25
 shop for all the security aspects of all your services in Azure. Your logs can be visualized
 
 
-[using Azure Dashboards](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-app-dashboards) or [Power BI and you can even trigger custom actions from log](https://docs.microsoft.com/en-us/azure/azure-monitor/visualizations)
+[using Azure Dashboards](https://docs.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-app-dashboards) - r [Power BI and you can even trigger custom actions from log](https://docs.microsoft.com/en-us/azure/azure-monitor/visualizations)
 
 
 [events using Logic Apps.](https://docs.microsoft.com/en-us/azure/azure-monitor/app/automate-with-logic-apps)
@@ -1940,7 +1940,7 @@ Azure Quick Start Guide for .NET Developers 34
 use them to run small pieces of code that get triggered by outside sources and bind to
 
 
-things like [Azure Blob storage](https://azure.microsoft.com/services/storage/blobs/) or Azure Cosmos DB.
+things like [Azure Blob storage](https://azure.microsoft.com/services/storage/blobs/) - r Azure Cosmos DB.
 
 
 The [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local) enable you to develop Azure Functions locally. You can
@@ -2001,7 +2001,7 @@ connection string.
 Once you are working on your application, it is vital to integrate your work with the work
 
 
-of other developers (continuous integration).
+- f other developers (continuous integration).
 
 
 [It is vital to deploy that work to a central location, like an Azure Web App, so that you](https://azure.microsoft.com/services/app-service/web/)
@@ -2123,7 +2123,7 @@ provides tools that have the same world-class quality and depth that you are use
 working with today. The days of having to write complicated “plumbing” yourself are
 
 
-over. Now you can take advantage of a wealth of prebuilt solutions. Free yourself up to
+- ver. Now you can take advantage of a wealth of prebuilt solutions. Free yourself up to
 
 
 work on the things that matter, and let Azure take care of the solved problems.
@@ -2157,7 +2157,8 @@ Azure Quick Start Guide for .NET Developers 39
 ### About the team
 
 Cesar, Michael, Beth and Barry are passionate about Microsoft Azure and would encourage you to reach
-out to them on Twitter for questions regarding this book.
+
+- ut to them on Twitter for questions regarding this book.
 
 
 Cesar de la Torre works for Microsoft Corp in Redmond, Seattle, in the .NET
@@ -2165,7 +2166,7 @@ product team, focusing on .NET, Azure, Containers & Microservice-based
 [architectures and creating .NET Application Architecture guidance.](https://www.microsoft.com/net/learn/architecture)
 
 
-You can reach him on Twitter @cesardelatorre or by following his blog at
+You can reach him on Twitter @cesardelatorre              - r by following his blog at
 https://blogs.msdn.microsoft.com/cesardelatorre/.
 
 
@@ -2176,7 +2177,7 @@ about helping developers understand the benefits of the cloud in a no-nonsense
 way.
 
 
-[You can reach him on Twitter @mbcrump](http://twitter.com/mbcrump) or by following his blog at
+[You can reach him on Twitter @mbcrump](http://twitter.com/mbcrump)             - r by following his blog at
 https://www.michaelcrump.net.
 
 
