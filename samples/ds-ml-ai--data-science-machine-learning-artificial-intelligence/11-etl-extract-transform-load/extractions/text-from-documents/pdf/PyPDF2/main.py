@@ -42,7 +42,7 @@ sources = [
    f"{root_sports_book}/doc_files/6. Testovi agilnosti.docx",
    f"{root_sports_book}/doc_files/5. Testovi koordinacije.docx",
    f"{root_sports_book}/doc_files/8. Testovi fleksibilnosti.docx",
-   "/Volumes/xFAT-1TB-2/e/personal-private/judo/HJS/01-pravno/DORH/02-kaznena-prijava-koraci/TODO/mails/20251124-02-czm-pravobraniteljica--odgovor-akcijski-plan/docs/MAIL_001119.pdf",
+   "/Volumes/xFAT-1TB-2/e/personal-private/judo/HJS/01-pravno/DORH/02-kaznena-prijava-koraci/TODO/mails/20251201-02-czm-pravobraniteljica--odgovor-akcijski-plan/docs/MAIL_001119.pdf",
    "/Users/moljac/Downloads/20250913/Zapisnik OS NZG K-226-2022-48 od 12.02.2024. - Nastavak glavne rasprave dana 12.02.2024. u 10_00 sati.pdf",
    f"{root}/pravno/zakoni/zakon_o_sportskoj_inspekciji_nn_86_12.pdf",
    f"{root}/pravno/zakoni/kazneni-zakon.docx",
