@@ -1,0 +1,11 @@
+certifi==2025.11.12
+charset-normalizer==3.4.4
+codetiming==1.4.0
+idna==3.11
+requests==2.32.5
+setuptools==80.9.0
+simple-pdf2text @ git+https://github.com/OnlyAR/pdf2text.git@9c4e6195fa86ab056992cbb3672af0f0b2a8fa4b
+tika==3.1.0
+timer==0.3.0
+urllib3==2.5.0
+wordninja==2.0.0
