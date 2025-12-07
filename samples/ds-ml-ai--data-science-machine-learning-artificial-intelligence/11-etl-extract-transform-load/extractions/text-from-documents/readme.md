@@ -2,6 +2,19 @@
 
 text
 
+*   types
+
+    *   document structure parsers
+
+    *   OCR
+
+        *   PDF 
+
+        
+*   Document to Markdown
+
+    *   "readme": "https://huggingface.co/mradermacher/NuMarkdown-8B-Thinking-GGUF/resolve/main/README.md",
+
 *   https://www.blog.pythonlibrary.org/2018/05/03/exporting-data-from-pdfs-with-python/
 
     tika
