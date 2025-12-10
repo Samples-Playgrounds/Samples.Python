@@ -1,36 +1,44 @@
 #!/bin/bash
 
-figlet gmft
-cd ./gmft/
-source ./test.sh
-cd ..
+sys_term_clean_screen_and_buffer
 
-figlet tabula-py
-cd ./tabula-py/
-source ./test.sh
-cd ..
+ls -1 > list.md
 
-figlet docling
-cd ./docling/
-source ./test.sh
-cd ..
+EXTRACTORS=\
+"
+gmft
+tabula-py
+docling
+camelot
+pdfplumber
+pdftables
+marker
+# TODO
+"
 
-figlet camelot
-cd ./camelot/
-source ./test.sh
-cd ..
 
-figlet pdfplumber
-cd ./pdfplumber/
-source ./test.sh
-cd ..
+IFS=$'\n'
+# ZSH does not split words by default (like other shells):
+setopt sh_word_split
 
-figlet marker
-source ./test.sh
-cd ..
+for EXTRACTOR in $EXTRACTORS
+do
+    if [[ $EXTRACTOR == "#"* ]]
+    then
+        echo "......................................................................"        
+        echo $EXTRACTOR skipped
+        continue
+    fi
 
-figlet pdftables
-cd ./pdftables/
-source ./test.sh
-cd ..
+    cd $EXTRACTOR
+    source ./test.sh
+    cd ..
+done
 
+
+figlet "==========="
+for i in $(seq 1 10);
+do
+    echo -en "\007"
+    say "I'm done"
+done
