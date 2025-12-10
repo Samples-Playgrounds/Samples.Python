@@ -1,0 +1,11 @@
+camelot
+docling
+gmft
+img2table
+list.md
+marker
+pdfplumber
+pdftables
+readme.md
+tabula-py
+test.sh
