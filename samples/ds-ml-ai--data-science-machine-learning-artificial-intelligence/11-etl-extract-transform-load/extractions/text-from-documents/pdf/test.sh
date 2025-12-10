@@ -2,7 +2,7 @@
 
 sys_term_clean_screen_and_buffer
 
-ls -1 >> list.md
+ls -1 > list.md
 
 EXTRACTORS=\
 "
@@ -19,17 +19,17 @@ pdfium2
 marker
 pytesseract
 # NOT working yet - ERRORS
-# pymupdf4llm-c
-# deepdoctection-pytorch
-# deepdoctection-tensorflow
+# z_pymupdf4llm-c
+# z_deepdoctection-pytorch
+# z_deepdoctection-tensorflow
 # NOT working yet - WIP 
-# extractous
-# multilingual-pdf2text
-# pdf2text
-# pypdf
-# simple-pdf2text
-# slate
-# tika
+# z_extractous
+# z_multilingual-pdf2text
+# z_pdf2text
+# z_pypdf
+# z_simple-pdf2text
+# z_slate
+# z_tika
 "
 
 

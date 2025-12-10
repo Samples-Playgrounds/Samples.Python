@@ -20,9 +20,14 @@ import api_text_extraction_unstructured_partition_pdf as api
 
 root="../../../../../../../data"
 root_sports_book="/Users/Shared/Projects/e/learning/books/topics/sports/Moljac_Knjiga"
+root_sports_reports_lab_kif="/Users/Shared/Projects/d/hw/apps/Ph4ct3x/gl/Ph4ct3x.Docs/users/lara/diagnostics/kif/"
 
 # document per local path or URL
 sources = [
+   f"{root_sports_reports_lab_kif}/201907/FINAL-REPORT-Lara-Cvjetko-2019-07.pdf",
+   f"{root_sports_reports_lab_kif}/201809/FINAL-REPORT-Cvjetko-Lara-Judo-2018-09.pdf",
+   f"{root_sports_reports_lab_kif}/201711/Lara Cvjetko-FINAL REPORT-Judo-2017-11.pdf",
+
    f"{root_sports_book}/RUKOPIS_ver_Final.pdf",
    f"{root_sports_book}/doc_files/2. Testovi jakosti.docx",
    f"{root_sports_book}/doc_files/1. Uvod.docx",

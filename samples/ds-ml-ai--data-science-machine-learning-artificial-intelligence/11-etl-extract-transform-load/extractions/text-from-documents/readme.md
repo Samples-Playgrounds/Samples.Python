@@ -8,23 +8,11 @@ text
 
     *   OCR
 
-        *   PDF 
+        *   slower
 
-        
-*   Document to Markdown
+        *   PDF LinePath vs TextPath !?!!?
 
-    *   "readme": "https://huggingface.co/mradermacher/NuMarkdown-8B-Thinking-GGUF/resolve/main/README.md",
-
-*   https://www.blog.pythonlibrary.org/2018/05/03/exporting-data-from-pdfs-with-python/
-
-    tika
-
-    
-    https://medium.com/@thibaultmonsel_4024/extract-text-from-pdf-with-python-python-pdf-processing-part-1-be875d76234b
-
-    https://www.reddit.com/r/LangChain/comments/1e7cntq/whats_the_best_python_library_for_extracting_text/
-        
-    *   https://www.reddit.com/r/LangChain/comments/1e7cntq/whats_the_best_python_library_for_extracting_text/
+    *   LM based
 
 *   `docling`
 
@@ -67,6 +55,14 @@ text
 
     *   https://pypi.org/project/PyPDF2/
 
+*   `tika`
+
+*   https://www.blog.pythonlibrary.org/2018/05/03/exporting-data-from-pdfs-with-python/
+
+
+*   Document to Markdown
+
+    *   "readme": "https://huggingface.co/mradermacher/NuMarkdown-8B-Thinking-GGUF/resolve/main/README.md",
 
 ## TODO
 
@@ -76,19 +72,17 @@ text
 
 ## Diverse
 
+*   https://medium.com/@thibaultmonsel_4024/extract-text-from-pdf-with-python-python-pdf-processing-part-1-be875d76234b
+
+*   https://www.reddit.com/r/LangChain/comments/1e7cntq/whats_the_best_python_library_for_extracting_text/
+        
+    *   https://www.reddit.com/r/LangChain/comments/1e7cntq/whats_the_best_python_library_for_extracting_text/
+
 *   https://www.reddit.com/r/Python/comments/1awc0hh/extracting_information_text_tables_layouts_from/
 
 *   https://www.reddit.com/r/Rag/comments/1mlp30w/how_to_index_40k_documents/
 
 *   https://www.reddit.com/r/Rag/comments/1mlp30w/comment/n7u51yr/
-
-*   https://python.langchain.com/docs/how_to/code_splitter/
-
-*   https://python.langchain.com/docs/how_to/code_splitter/#c
-
-*   https://python.langchain.com/docs/how_to/code_splitter/#markdown
-
-*   https://python.langchain.com/docs/how_to/code_splitter/#python
 
 *   https://docs.llamaindex.ai/en/stable/module_guides/loading/node_parsers/modules/#htmlnodeparser
 
@@ -111,11 +105,6 @@ text
 *   https://medium.com/data-science-collective/convert-pdfs-to-markdown-using-local-llms-c5232f3b50fc
 
 *   References
-
-    *   5 Levels of Text Splitting
-
-        *   https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/tutorials/LevelsOfTextSplitting/5_Levels_Of_Text_Splitting.ipynb
-
     
 ## Related Blogs
 
