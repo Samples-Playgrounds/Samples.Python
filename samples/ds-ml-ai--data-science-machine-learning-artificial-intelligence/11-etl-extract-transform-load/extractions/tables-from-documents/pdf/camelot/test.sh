@@ -9,8 +9,7 @@ rm *.pyc
 python -m venv .venv
 source .venv/bin/activate
 
-pip install minecart
-pip install Pillow
+pip install "camelot-py[base]"
 
 pip install timer
 pip install codetiming
