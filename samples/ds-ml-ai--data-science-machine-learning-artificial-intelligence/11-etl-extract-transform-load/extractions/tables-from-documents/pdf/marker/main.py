@@ -16,9 +16,14 @@ import api_table_extraction_marker_TableConverter as api
 
 root="../../../../../../../data"
 root_sports_book="/Users/Shared/Projects/e/learning/books/topics/sports/Moljac_Knjiga"
+root_sports_reports_lab_kif="/Users/Shared/Projects/d/hw/apps/Ph4ct3x/gl/Ph4ct3x.Docs/users/lara/diagnostics/kif/"
 
 # document per local path or URL
 sources = [
+   f"{root_sports_reports_lab_kif}/201907/FINAL-REPORT-Lara-Cvjetko-2019-07.pdf",
+   f"{root_sports_reports_lab_kif}/201809/FINAL-REPORT-Cvjetko-Lara-Judo-2018-09.pdf",
+   f"{root_sports_reports_lab_kif}/201711/Lara Cvjetko-FINAL REPORT-Judo-2017-11.pdf",
+
    f"{root_sports_book}/RUKOPIS_ver_Final.pdf",
    f"{root_sports_book}/doc_files/2. Testovi jakosti.docx",
    f"{root_sports_book}/doc_files/1. Uvod.docx",
@@ -36,7 +41,7 @@ sources = [
    f"{root_sports_book}/doc_files/6. Testovi agilnosti.docx",
    f"{root_sports_book}/doc_files/5. Testovi koordinacije.docx",
    f"{root_sports_book}/doc_files/8. Testovi fleksibilnosti.docx",
-
+   "/Volumes/xFAT-1TB-2/e/personal-private/judo/HJS/01-pravno/DORH/02-kaznena-prijava-koraci/TODO/mails/20251201-02-czm-pravobraniteljica--odgovor-akcijski-plan/docs/MAIL_001119.pdf",
    "/Users/moljac/Downloads/20250913/Zapisnik OS NZG K-226-2022-48 od 12.02.2024. - Nastavak glavne rasprave dana 12.02.2024. u 10_00 sati.pdf",
    f"{root}/pravno/zakoni/zakon_o_sportskoj_inspekciji_nn_86_12.pdf",
    f"{root}/pravno/zakoni/kazneni-zakon.docx",
@@ -82,6 +87,9 @@ sources = [
 
 def main():
    for source in sources:
+      if source == "/Users/Shared/Projects/e/learning/books/topics/sports/Moljac_Knjiga/doc_files/13. Funkcionalna procjena pokreta.docx":
+         continue
+         
       print(f"marker <- source = {source}")
       api.extract_tables_to_files_from_pdf_document(source)
 

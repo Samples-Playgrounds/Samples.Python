@@ -61,4 +61,4 @@ def extract_tables_to_files_from_pdf_document (source: str) -> str:
         f.write(json.dumps(times, indent=4))
     #---------------------------------------------------------------------------
 
-s    return
+    return
