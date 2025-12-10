@@ -1,0 +1,38 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>[Route("Home")]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>public class HomeController : Controller</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>[Route("")] // Combines to define the route template "Home"</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>[Route("Index")] // Combines to define route template "Home/Index"</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>[Route("/")] // Does not combine, defines the route template ""</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>public IActionResult Index() {}</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,10 @@
+,"<div class=""form-group"">"
+0,"<label class=""control-label col-md-2"">Name</label>"
+1,"<div class=""col-md-3"">"
+2,"<asp:TextBox ID=""Name"" runat=""server"" CssClass=""form-control""></asp:TextBox>"
+3,"<asp:RequiredFieldValidator runat=""server"" ControlToValidate=""Name"""
+4,"Display=""Dynamic"""
+5,"CssClass=""field-validation-valid text-danger"" ErrorMessage=""The Name field is"
+6,"required."" />"
+7,</div>
+8,</div>

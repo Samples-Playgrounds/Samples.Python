@@ -1,0 +1,26 @@
+|    | if (app.Environment.IsDevelopment())                                             |
+|---:|:---------------------------------------------------------------------------------|
+|  0 | {                                                                                |
+|  1 | app.UseMigrationsEndPoint();                                                     |
+|  2 | }                                                                                |
+|  3 | else                                                                             |
+|  4 | {                                                                                |
+|  5 | app.UseExceptionHandler("/Error");                                               |
+|  6 | // The default HSTS value is 30 days. You may want to change this for production |
+|  7 | scenarios, see https://aka.ms/aspnetcore-hsts.                                   |
+|  8 | app.UseHsts();                                                                   |
+|  9 | }                                                                                |
+| 10 |                                                                                  |
+| 11 | app.UseHttpsRedirection();                                                       |
+| 12 |                                                                                  |
+| 13 | app.UseStaticFiles();                                                            |
+| 14 |                                                                                  |
+| 15 | app.UseRouting();                                                                |
+| 16 |                                                                                  |
+| 17 | app.UseAuthorization();                                                          |
+| 18 |                                                                                  |
+| 19 | app.MapControllers();                                                            |
+| 20 | app.MapBlazorHub();                                                              |
+| 21 | app.MapFallbackToPage("/_Host");                                                 |
+| 22 |                                                                                  |
+| 23 | app.Run();                                                                       |

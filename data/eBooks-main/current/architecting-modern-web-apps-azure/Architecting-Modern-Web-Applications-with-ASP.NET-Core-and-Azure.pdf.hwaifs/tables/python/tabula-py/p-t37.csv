@@ -1,0 +1,21 @@
+,public class Basket : BaseEntity
+0,{
+1,public string BuyerId { get; set; }
+2,private readonly List<BasketItem> _items = new List<BasketItem>();
+3,public IReadOnlyCollection<BasketItem> Items => _items.AsReadOnly();
+4,
+5,"public void AddItem(int catalogItemId, decimal unitPrice, int quantity = 1)"
+6,{
+7,var existingItem = Items.FirstOrDefault(i => i.CatalogItemId == catalogItemId);
+8,if (existingItem == null)
+9,{
+10,_items.Add(new BasketItem()
+11,{
+12,"CatalogItemId = catalogItemId,"
+13,"Quantity = quantity,"
+14,UnitPrice = unitPrice
+15,});
+16,}
+17,else existingItem.Quantity += quantity;
+18,}
+19,}

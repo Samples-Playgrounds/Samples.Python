@@ -1,0 +1,36 @@
+,0
+0,public class GracePeriodManagerService : BackgroundService
+1,{
+2,private readonly ILogger<GracePeriodManagerService> _logger;
+3,private readonly OrderingBackgroundSettings _settings;
+4,
+5,private readonly IEventBus _eventBus;
+6,
+7,"public GracePeriodManagerService(IOptions<OrderingBackgroundSettings> settings,"
+8,"IEventBus eventBus,"
+9,ILogger<GracePeriodManagerService> logger)
+10,{
+11,// Constructor's parameters validations...
+12,}
+13,
+14,protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+15,{
+16,"_logger.LogDebug($""GracePeriodManagerService is starting."");"
+17,
+18,stoppingToken.Register(() =>
+19,"_logger.LogDebug($"" GracePeriod background task is stopping.""));"
+20,
+21,while (!stoppingToken.IsCancellationRequested)
+22,{
+23,"_logger.LogDebug($""GracePeriod task doing background work."");"
+24,
+25,// This eShopOnContainers method is querying a database table
+26,// and publishing events into the Event Bus (RabbitMQ / ServiceBus)
+27,CheckConfirmedGracePeriodOrders();
+28,
+29,try {
+30,"await Task.Delay(_settings.CheckUpdateTime, stoppingToken);"
+31,}
+32,catch (TaskCanceledException exception) {
+33,"_logger.LogCritical(exception, ""TaskCanceledException Error"","
+34,exception.Message);

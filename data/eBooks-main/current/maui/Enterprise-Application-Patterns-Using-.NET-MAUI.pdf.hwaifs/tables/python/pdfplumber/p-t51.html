@@ -1,0 +1,94 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>&lt;Entry Text="{Binding UserName.Value, Mode=TwoWay}"&gt;</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>&lt;Entry.Style&gt;</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>&lt;OnPlatform x:TypeArguments="Style"&gt;</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>&lt;On Platform="iOS, Android" Value="{StaticResource EntryStyle}" /&gt;</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>&lt;On Platform="WinUI" Value="{StaticResource WinUIEntryStyle}" /&gt;</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>&lt;/OnPlatform&gt;</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>&lt;/Entry.Style&gt;</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>&lt;Entry.Behaviors&gt;</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>&lt;mct:EventToCommandBehavior</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>EventName="TextChanged"</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Command="{Binding ValidateCommand}" /&gt;</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>&lt;/Entry.Behaviors&gt;</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>&lt;Entry.Triggers&gt;</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>&lt;DataTrigger</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>TargetType="Entry"</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Binding="{Binding UserName.IsValid}"</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Value="False"&gt;</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>&lt;Setter Property="BackgroundColor" Value="{StaticResource ErrorColor}" /&gt;</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>&lt;/DataTrigger&gt;</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>&lt;/Entry.Triggers&gt;</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>&lt;/Entry&gt;</td>
+    </tr>
+  </tbody>
+</table>

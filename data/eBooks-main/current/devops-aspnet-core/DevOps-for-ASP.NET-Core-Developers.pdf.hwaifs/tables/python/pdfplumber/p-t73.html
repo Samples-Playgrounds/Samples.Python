@@ -1,0 +1,114 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>environment:</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>name: PRE-PROD</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>url: ${{ steps.deploywebapp.outputs.webapp-url }}</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>steps:</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>- name: Download a Build Artifact</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>uses: actions/download-artifact@v3</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>with:</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>name: website</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>path: website</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>- name: Login via Azure CLI</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>uses: azure/login@v1</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>with:</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>creds: ${{ secrets.AZURE_CREDENTIALS }}</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>- name: Deploy web app</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>id: deploywebapp</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>uses: azure/webapps-deploy@v2</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>with:</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>app-name: ${{ env.app-name }}</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>slot-name: staging</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>package: website</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>- name: az cli logout</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>run: az logout</td>
+    </tr>
+  </tbody>
+</table>

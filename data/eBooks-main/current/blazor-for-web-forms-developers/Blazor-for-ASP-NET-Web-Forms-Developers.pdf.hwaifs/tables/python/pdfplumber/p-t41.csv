@@ -1,0 +1,23 @@
+,0
+0,Password: <input
+1,"value=""@Password"""
+2,"@oninput=""OnPasswordChanged"""
+3,"type=""@(showPassword ? ""text"" : ""password"")"" />"
+4,
+5,"<label><input type=""checkbox"" @bind=""showPassword"" />Show password</label>"
+6,
+7,@code {
+8,private bool showPassword;
+9,
+10,[Parameter]
+11,public string Password { get; set; }
+12,
+13,[Parameter]
+14,public EventCallback<string> PasswordChanged { get; set; }
+15,
+16,private Task OnPasswordChanged(ChangeEventArgs e)
+17,{
+18,Password = e.Value.ToString();
+19,return PasswordChanged.InvokeAsync(Password);
+20,}
+21,}

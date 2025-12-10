@@ -1,0 +1,26 @@
+,"<?xml version=""1.0"" encoding=""utf-8""?>"
+0,<packages>
+1,...
+2,"<package id=""Microsoft.ApplicationInsights.Agent.Intercept"" version=""2.4.0"""
+3,"targetFramework=""net472"" />"
+4,"<package id=""Microsoft.ApplicationInsights.DependencyCollector"" version=""2.9.1"""
+5,"targetFramework=""net472"" />"
+6,"<package id=""Microsoft.ApplicationInsights.PerfCounterCollector"" version=""2.9.1"""
+7,"targetFramework=""net472"" />"
+8,"<package id=""Microsoft.ApplicationInsights.Web"" version=""2.9.1"" targetFramework=""net472"""
+9,/>
+10,"<package id=""Microsoft.ApplicationInsights.WindowsServer"" version=""2.9.1"""
+11,"targetFramework=""net472"" />"
+12,"<package id=""Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel"""
+13,"version=""2.9.1"" targetFramework=""net472"" />"
+14,"<package id=""Microsoft.AspNet.FriendlyUrls"" version=""1.0.2"" targetFramework=""net472"" />"
+15,"<package id=""Microsoft.AspNet.FriendlyUrls.Core"" version=""1.0.2"" targetFramework=""net472"""
+16,/>
+17,"<package id=""Microsoft.AspNet.ScriptManager.MSAjax"" version=""5.0.0"""
+18,"targetFramework=""net472"" />"
+19,"<package id=""Microsoft.AspNet.ScriptManager.WebForms"" version=""5.0.0"""
+20,"targetFramework=""net472"" />"
+21,...
+22,"<package id=""System.Memory"" version=""4.5.1"" targetFramework=""net472"" />"
+23,"<package id=""System.Numerics.Vectors"" version=""4.4.0"" targetFramework=""net472"" />"
+24,"<package id=""System.Runtime.CompilerServices.Unsafe"" version=""4.5.0"""

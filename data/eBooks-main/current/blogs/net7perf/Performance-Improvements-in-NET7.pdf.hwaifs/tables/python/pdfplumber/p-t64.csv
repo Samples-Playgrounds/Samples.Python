@@ -1,0 +1,36 @@
+,0
+0,"static unsafe bool Contains(ReadOnlySpan<byte> haystack, byte needle)"
+1,{
+2,if (Vector128.IsHardwareAccelerated && haystack.Length >= Vector128<byte>.Count)
+3,{
+4,ref byte current = ref MemoryMarshal.GetReference(haystack);
+5,
+6,Vector128<byte> target = Vector128.Create(needle);
+7,"ref byte endMinusOneVector = ref Unsafe.Add(ref current, haystack.Length -"
+8,Vector128<byte>.Count);
+9,do
+10,{
+11,"if (Vector128.EqualsAny(target, Vector128.LoadUnsafe(ref current)))"
+12,{
+13,return true;
+14,}
+15,
+16,"current = ref Unsafe.Add(ref current, Vector128<byte>.Count);"
+17,}
+18,"while (Unsafe.IsAddressLessThan(ref current, ref endMinusOneVector));"
+19,
+20,"if (Vector128.EqualsAny(target, Vector128.LoadUnsafe(ref endMinusOneVector)))"
+21,{
+22,return true;
+23,}
+24,}
+25,else
+26,{
+27,for (int i = 0; i < haystack.Length; i++)
+28,{
+29,if (haystack[i] == needle)
+30,{
+31,return true;
+32,}
+33,}
+34,}

@@ -1,0 +1,5 @@
+,<authorization>
+0,"<allow users=""*"" />"
+1,</authorization>
+2,</system.web>
+3,</location>

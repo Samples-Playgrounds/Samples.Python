@@ -1,0 +1,66 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>None</td>
+      <td>http://localhost:&lt;dapr-port&gt;/v1.0/state/&lt;store-name&gt;/</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>•</td>
+      <td>&lt;dapr-port&gt;: the HTTP port that Dapr listens on.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>•</td>
+      <td>&lt;store-name&gt;: the name of the state store component to use.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>state</td>
+      <td>Figure 5-1 shows how a Dapr-enabled shopping basket service stores a key/value pair using the Dapr store component named statestore.</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>None</td>
+      <td>:::image type=“content” source=“./media/state-management/state-management-flow.png” alt￾text=“Diagram of storing a key/value pair in a Dapr state store.”:::</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>None</td>
+      <td>Figure 5-1. Storing a key/value pair in a Dapr state store.</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>None</td>
+      <td>Note the steps in the previous figure:</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>1.</td>
+      <td>The basket service calls the state management API on the Dapr sidecar. The body of the request encloses a JSON array that can contain multiple key/value pairs.</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>2.</td>
+      <td>The Dapr sidecar determines the state store based on the component configuration file. In this case, it’s a Redis cache state store.</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>3.</td>
+      <td>The sidecar persists the data to the Redis cache.</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>data</td>
+      <td>Retrieving the stored data is a similar API call. In the example below, a curl command retrieves the by calling the Dapr sidecar API:</td>
+    </tr>
+  </tbody>
+</table>

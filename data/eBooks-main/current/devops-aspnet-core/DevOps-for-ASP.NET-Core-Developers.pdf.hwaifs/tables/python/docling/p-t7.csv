@@ -1,0 +1,11 @@
+,Feature,Description,GitHub Actions,Azure Pipelines
+0,Environment s,A collection of resources to target or a logical environment,Yes,Yes
+1,Gates/Check s,Automatic collection and evaluation of signals to control continuation,Yes,Yes
+2,Jobs,Sequence of steps that are executed on an agent,Yes,Yes
+3,Service Containers,Manage the lifecycle of a containerized service instance available during a job,Yes,Yes
+4,Service Connections,Abstract credentials to external systems,No,Yes
+5,Passwordles s connections to cloud providers,Provide technologies and support use cases that reduce and potentially eliminate the use of passwords,Yes,No
+6,Stages,Group jobs in a pipeline,No,Yes
+7,Templates,"Define reusable, parameterized building blocks for steps, jobs, or variables",Yes,Yes
+8,Starter Templates,Defines a starter workflow based on the type of code detected in a repository,Yes,No
+9,Triggers,Set of events that cause the pipeline to trigger,Yes,Yes

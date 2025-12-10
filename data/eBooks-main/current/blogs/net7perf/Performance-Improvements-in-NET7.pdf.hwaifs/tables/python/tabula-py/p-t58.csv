@@ -1,0 +1,10 @@
+,; Assembly listing for method Program:Test(ref):bool
+0,; Emitting BLENDED_CODE for X64 CPU with AVX - Windows
+1,; Tier-1 compilation
+2,; optimized code
+3,; rsp based frame
+4,; fully interruptible
+5,; No PGO data
+6,
+7,G_M000_IG01:                ;; offset=0000H
+8,"4883EC28             sub      rsp, 40"

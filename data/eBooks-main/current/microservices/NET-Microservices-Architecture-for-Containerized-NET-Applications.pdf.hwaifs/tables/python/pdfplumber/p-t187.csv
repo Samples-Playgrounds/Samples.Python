@@ -1,0 +1,3 @@
+,0
+0,mobileshoppingapigw:
+1,image: eshop/ocelotapigw:${TAG:-latest}

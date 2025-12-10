@@ -1,0 +1,78 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>public abstract class Entity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>//...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>private List&lt;INotification&gt; _domainEvents;</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>public List&lt;INotification&gt; DomainEvents =&gt; _domainEvents;</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>public void AddDomainEvent(INotification eventItem)</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>_domainEvents = _domainEvents ?? new List&lt;INotification&gt;();</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>_domainEvents.Add(eventItem);</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>public void RemoveDomainEvent(INotification eventItem)</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>_domainEvents?.Remove(eventItem);</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>//... Additional code</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

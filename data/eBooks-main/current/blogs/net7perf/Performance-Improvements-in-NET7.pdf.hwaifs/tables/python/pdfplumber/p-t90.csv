@@ -1,0 +1,5 @@
+,0
+0,"""CreatePipe"", ExactSpelling = true)]"
+1,"static extern unsafe int __PInvoke(System.IntPtr* hReadPipe, System.IntPtr* hWritePipe,"
+2,"void* lpPipeAttributes, uint nSize);"
+3,}

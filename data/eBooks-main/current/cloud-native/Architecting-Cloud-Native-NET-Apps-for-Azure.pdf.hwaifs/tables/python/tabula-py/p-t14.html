@@ -1,0 +1,41 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Consider a NoSQL datastore when:</th>
+      <th>Consider a relational database when:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>You have high volume workloads that require\rpredictable latency at large scale (for example,\rlatency measured in milliseconds while\rperforming millions of transactions per second)</td>
+      <td>Your workload volume generally fits within\rthousands of transactions per second</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Your data is dynamic and frequently changes</td>
+      <td>Your data is highly structured and requires\rreferential integrity</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Relationships can be de-normalized data\rmodels</td>
+      <td>Relationships are expressed through table joins\ron normalized data models</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Data retrieval is simple and expressed without\rtable joins</td>
+      <td>You work with complex queries and reports</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Data is typically replicated across geographies\rand requires finer control over consistency,\ravailability, and performance</td>
+      <td>Data is typically centralized, or can be replicated\rregions asynchronously</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Your application will be deployed to commodity\rhardware, such as with public clouds</td>
+      <td>Your application will be deployed to large, high-\rend hardware</td>
+    </tr>
+  </tbody>
+</table>

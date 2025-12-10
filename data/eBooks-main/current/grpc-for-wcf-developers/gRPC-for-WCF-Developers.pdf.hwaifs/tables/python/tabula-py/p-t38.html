@@ -1,0 +1,46 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>public async Task&lt;GetPortfolioResponse&gt; GetPortfolio(GetPortfolioRequest request,</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ServerCallContext context)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>var requesterHeader = context.RequestHeaders.FirstOrDefault(e =&gt; e.Key == "Requester");</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>if (requesterHeader != null)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>_logger.LogInformation($"Request from {requesterHeader.Value}");</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>// ...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

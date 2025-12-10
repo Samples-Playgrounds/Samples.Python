@@ -1,0 +1,61 @@
+,runs-on: ubuntu-latest
+0,
+1,steps:
+2,- uses: actions/checkout@v3
+3,- name: 'Print manual run reason'
+4,if: ${{ github.event_name == 'workflow_dispatch' }}
+5,run: |
+6,echo 'Reason: ${{ github.event.inputs.reason }}'
+7,- name: Setup .NET
+8,uses: actions/setup-dotnet@v3
+9,with:
+10,dotnet-version: 6.0.x
+11,- name: Restore dependencies
+12,run: dotnet restore
+13,- name: Build
+14,run: dotnet build --no-restore
+15,- name: Test
+16,run: dotnet test --no-build --verbosity normal
+17,- name: Publish
+18,run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c Release -o website
+19,- name: Upload a Build Artifact
+20,uses: actions/upload-artifact@v3
+21,with:
+22,name: website
+23,path: SimpleFeedReader/website/**
+24,if-no-files-found: error
+25,
+26,deploy_staging:
+27,needs: build
+28,runs-on: ubuntu-latest
+29,
+30,environment:
+31,name: STAGING
+32,url: ${{ steps.deploywebapp.outputs.webapp-url }}
+33,
+34,steps:
+35,- name: Download a Build Artifact
+36,uses: actions/download-artifact@v3
+37,with:
+38,name: website
+39,path: website
+40,
+41,- name: Login via Azure CLI
+42,uses: azure/login@v1
+43,with:
+44,creds: ${{ secrets.AZURE_CREDENTIALS }}
+45,
+46,- name: Deploy web app
+47,id: deploywebapp
+48,uses: azure/webapps-deploy@v2
+49,with:
+50,app-name: ${{ env.app-name }}
+51,slot-name: staging
+52,package: website
+53,
+54,- name: Update config
+55,uses: Azure/appservice-settings@v1
+56,with:
+57,app-name: ${{ env.app-name }}
+58,slot-name: staging
+59,app-settings-json: |

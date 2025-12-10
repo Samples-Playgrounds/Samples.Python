@@ -1,0 +1,20 @@
+|    | Factor               | Explanation                                      |
+|---:|:---------------------|:-------------------------------------------------|
+|  0 | 1 - Code Base        | A single code base for each microservice, stored |
+|    |                      | in its own repository. Tracked with version      |
+|    |                      | control, it can deploy to multiple environments  |
+|    |                      | (QA, Staging, Production).                       |
+|  1 | 2 - Dependencies     | Each microservice isolates and packages its own  |
+|    |                      | dependencies, embracing changes without          |
+|    |                      | impacting the entire system.                     |
+|  2 | 3 - Configurations   | Configuration information is moved out of the    |
+|    |                      | microservice and externalized through a          |
+|    |                      | configuration management tool outside of the     |
+|    |                      | code. The same deployment can propagate          |
+|    |                      | across environments with the correct             |
+|    |                      | configuration applied.                           |
+|  3 | 4 - Backing Services | Ancillary resources (data stores, caches,        |
+|    |                      | message brokers) should be exposed via an        |
+|    |                      | addressable URL. Doing so decouples the          |
+|    |                      | resource from the application, enabling it to be |
+|    |                      | interchangeable.                                 |

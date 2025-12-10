@@ -1,0 +1,2 @@
+,"Routing.RegisterRoute(""Filter"", typeof(FiltersView));"
+0,"Routing.RegisterRoute(""Basket"", typeof(BasketView));"

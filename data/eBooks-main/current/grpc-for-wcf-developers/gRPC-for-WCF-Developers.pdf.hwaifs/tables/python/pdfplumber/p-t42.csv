@@ -1,0 +1,10 @@
+,0
+0,{
+1,"var userEntry = ex.Trailers.FirstOrDefault(e => e.Key == ""User"");"
+2,"Console.WriteLine($""User '{userEntry.Value}' does not have permission to view this"
+3,"portfolio."");"
+4,}
+5,catch (RpcException)
+6,{
+7,// Handle any other error type ...
+8,}

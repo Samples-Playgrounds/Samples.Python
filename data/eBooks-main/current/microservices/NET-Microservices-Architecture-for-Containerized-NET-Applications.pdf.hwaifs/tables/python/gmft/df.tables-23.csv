@@ -1,0 +1,5 @@
+,,
+0,•,"Authenticate users using the SignInManager type. You can use signInManager.SignInAsync to sign in directly, or signInManager.PasswordSignInAsync to confirm the user’s password is"
+1,,correct and then sign them in.
+2,•,Identify a user based on information stored in a cookie (which is read by ASP.NET Core Identity middleware) so that subsequent requests from a browser will include a signed-in user’s identity and claims.
+3,ASP.NET,Core Identity also supports two-factor authentication.

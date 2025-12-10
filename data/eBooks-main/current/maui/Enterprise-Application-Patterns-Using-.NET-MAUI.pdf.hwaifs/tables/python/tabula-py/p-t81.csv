@@ -1,0 +1,7 @@
+,Note
+0,The attack surface of the eShop multi-platform app is reduced by implementing the Proof Key for
+1,Code Exchange (PKCE) extension to OAuth. PKCE protects the authorization code from being used if
+2,"it’s intercepted. This is achieved by the client generating a secret verifier, a hash of which is passed in"
+3,"the authorization request, and which is presented unhashed when redeeming the authorization code."
+4,"For more information about PKCE, see Proof Key for Code Exchange by OAuth Public Clients on the"
+5,Internet Engineering Task Force web site.

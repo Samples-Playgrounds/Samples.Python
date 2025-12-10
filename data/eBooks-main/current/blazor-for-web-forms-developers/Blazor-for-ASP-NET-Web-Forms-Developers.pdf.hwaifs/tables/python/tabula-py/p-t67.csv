@@ -1,0 +1,14 @@
+,public class Product
+0,{
+1,public int Id { get; set; }
+2,
+3,[Required]
+4,public string Name { get; set; }
+5,
+6,[MaxLength(4000)]
+7,public string Description { get; set; }
+8,
+9,"[Range(0, 99999,99)]"
+10,[DataType(DataType.Currency)]
+11,public decimal Price { get; set; }
+12,}

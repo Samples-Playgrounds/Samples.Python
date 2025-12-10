@@ -1,0 +1,4 @@
+,Note
+0,"There are multiple other algorithms for encoding decimal values as byte strings, but this message is"
+1,easier to understand than any of them. The values are not affected by endianness on different
+2,platforms.

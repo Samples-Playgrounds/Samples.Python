@@ -1,0 +1,250 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>G_M000_IG03:                ;; offset=0043H</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>33C9                 xor      ecx, ecx</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>488B9C24A0000000     mov      rbx, gword ptr [rsp+A0H]</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>48894B08             mov      qword ptr [rbx+08H], rcx</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>488D4C2428           lea      rcx, [rsp+28H]</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>48B87066E68AFD7F0000 mov      rax, 0x7FFD8AE66670</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>G_M000_IG04:                ;; offset=0060H</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>FFD0                 call     rax ; Kernel32:QueryPerformanceCounter(long):int</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>488B442428           mov      rax, qword ptr [rsp+28H]</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>488B9C24A0000000     mov      rbx, gword ptr [rsp+A0H]</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>48894310             mov      qword ptr [rbx+10H], rax</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>C6431801             mov      byte  ptr [rbx+18H], 1</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>33FF                 xor      edi, edi</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>33F6                 xor      esi, esi</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>833D92A1E55F00       cmp      dword ptr [(reloc 0x7ffcafe1ae34)], 0</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>0F85CA000000         jne      G_M000_IG13</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>G_M000_IG05:                ;; offset=0088H</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>81FE00CA9A3B         cmp      esi, 0x3B9ACA00</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>7D17                 jge      SHORT G_M000_IG09</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>G_M000_IG06:                ;; offset=0090H</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>0FB7CE               movzx    rcx, si</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>83C1D0               add      ecx, -48</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>83F909               cmp      ecx, 9</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>7702                 ja       SHORT G_M000_IG08</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>G_M000_IG07:                ;; offset=009BH</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>FFC7                 inc      edi</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>G_M000_IG08:                ;; offset=009DH</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>FFC6                 inc      esi</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>81FE00CA9A3B         cmp      esi, 0x3B9ACA00</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>7CE9                 jl       SHORT G_M000_IG06</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>G_M000_IG09:                ;; offset=00A7H</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>488B6B08             mov      rbp, qword ptr [rbx+08H]</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>48899C24A0000000     mov      gword ptr [rsp+A0H], rbx</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>807B1800             cmp      byte  ptr [rbx+18H], 0</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>7436                 je       SHORT G_M000_IG12</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>G_M000_IG10:                ;; offset=00B9H</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>488D4C2420           lea      rcx, [rsp+20H]</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>48B87066E68AFD7F0000 mov      rax, 0x7FFD8AE66670</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>G_M000_IG11:                ;; offset=00C8H</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>FFD0                 call     rax ; Kernel32:QueryPerformanceCounter(long):int</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>488B4C2420           mov      rcx, qword ptr [rsp+20H]</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>488B9C24A0000000     mov      rbx, gword ptr [rsp+A0H]</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>482B4B10             sub      rcx, qword ptr [rbx+10H]</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>4803E9               add      rbp, rcx</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>833D2FA1E55F00       cmp      dword ptr [(reloc 0x7ffcafe1ae34)], 0</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>48899C24A0000000     mov      gword ptr [rsp+A0H], rbx</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>756D                 jne      SHORT G_M000_IG14</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>G_M000_IG12:                ;; offset=00EFH</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>C5F857C0             vxorps   xmm0, xmm0</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>C4E1FB2AC5           vcvtsi2sd  xmm0, rbp</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>C5FB11442430         vmovsd   qword ptr [rsp+30H], xmm0</td>
+    </tr>
+  </tbody>
+</table>

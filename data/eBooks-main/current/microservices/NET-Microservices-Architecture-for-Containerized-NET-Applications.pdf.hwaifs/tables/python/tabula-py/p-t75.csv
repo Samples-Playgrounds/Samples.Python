@@ -1,0 +1,46 @@
+,public abstract class Enumeration : IComparable
+0,{
+1,public string Name { get; private set; }
+2,
+3,public int Id { get; private set; }
+4,
+5,"protected Enumeration(int id, string name) => (Id, Name) = (id, name);"
+6,
+7,public override string ToString() => Name;
+8,
+9,public static IEnumerable<T> GetAll<T>() where T : Enumeration =>
+10,typeof(T).GetFields(BindingFlags.Public |
+11,BindingFlags.Static |
+12,BindingFlags.DeclaredOnly)
+13,.Select(f => f.GetValue(null))
+14,.Cast<T>();
+15,
+16,public override bool Equals(object obj)
+17,{
+18,if (obj is not Enumeration otherValue)
+19,{
+20,return false;
+21,}
+22,
+23,var typeMatches = GetType().Equals(obj.GetType());
+24,var valueMatches = Id.Equals(otherValue.Id);
+25,
+26,return typeMatches && valueMatches;
+27,}
+28,
+29,public int CompareTo(object other) => Id.CompareTo(((Enumeration)other).Id);
+30,
+31,// Other utility methods ...
+32,}
+33,"You can use this class as a type in any entity or value object, as for the following"
+34,CardType : Enumeration class:
+35,public class CardType
+36,: Enumeration
+37,{
+38,"public static CardType Amex = new(1, nameof(Amex));"
+39,"public static CardType Visa = new(2, nameof(Visa));"
+40,"public static CardType MasterCard = new(3, nameof(MasterCard));"
+41,
+42,"public CardType(int id, string name)"
+43,": base(id, name)"
+44,{

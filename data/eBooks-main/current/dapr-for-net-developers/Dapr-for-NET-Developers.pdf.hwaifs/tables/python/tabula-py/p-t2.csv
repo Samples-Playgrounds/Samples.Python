@@ -1,0 +1,5 @@
+,Building block,Description
+0,Bindings,"Trigger code from events raised by external resources with bi-directionalcommunication."
+1,Observability,Monitor and measure message calls across networked services.
+2,Secrets,Securely access external secret stores.
+3,Actors,Encapsulate logic and data in reusable actor objects.

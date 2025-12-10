@@ -1,0 +1,51 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1.</td>
+      <td>An exiting vehicle triggers the MQTT input binding that sends a message containing the vehicle license number, lane, and timestamp.</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2.</td>
+      <td>The MQTT input binding invokes the TrafficControl service with the message.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3.</td>
+      <td>The TrafficControl service retrieves the state for the vehicle, appends the entry, and saves the updated vehicle state back to the state store.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4.</td>
+      <td>The TrafficControl service publishes the speeding violation using pub/sub to the speedingviolations topic.</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5.</td>
+      <td>The FineCollection service receives the speeding violation using a pub/sub subscription on the speedingviolations topic.</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>6.</td>
+      <td>The FineCollection service invokes the vehicleinfo endpoint of the VehicleRegistration service using service invocation.</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>7.</td>
+      <td>The FineCollection service invokes an output binding for sending the email.</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Click</td>
+      <td>any trace line (span) to see more details. If you click on the last line, you’ll see the sendmail</td>
+    </tr>
+  </tbody>
+</table>

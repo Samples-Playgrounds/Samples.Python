@@ -1,0 +1,74 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>using TraderSys.Portfolios.Services;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>var builder = WebApplication.CreateBuilder(args);</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>// Add services to the container.</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>builder.Services.AddGrpc();</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>var app = builder.Build();</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>// Configure the HTTP request pipeline.</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>app.MapGrpcService&lt;PortfolioService&gt;();</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>app.MapGet("/", () =&gt; "Communication with gRPC endpoints must be made through a gRPC</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>client. To learn how to create a client, visit:</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>https://go.microsoft.com/fwlink/?linkid=2086909");</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>app.Run();</td>
+    </tr>
+  </tbody>
+</table>

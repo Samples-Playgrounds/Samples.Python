@@ -1,0 +1,126 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>/// &lt;summary&gt;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>/// The &lt;see cref="EventToCommandBehavior"/&gt; is a behavior that allows the user to invoke a</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>&lt;see cref="ICommand"/&gt; through an event. It is designed to associate Commands to events</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>exposed by controls that were not designed to support Commands. It allows you to map any</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>arbitrary event on a control to a Command.</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>/// &lt;/summary&gt;</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>public class EventToCommandBehavior : BaseBehavior&lt;VisualElement&gt;</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>// Omitted for brevity...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>/// &lt;inheritdoc/&gt;</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>protected override void OnAttachedTo(VisualElement bindable)</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>base.OnAttachedTo(bindable);</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>RegisterEvent();</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>/// &lt;inheritdoc/&gt;</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>protected override void OnDetachingFrom(VisualElement bindable)</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>UnregisterEvent();</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>base.OnDetachingFrom(bindable);</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>static void OnEventNamePropertyChanged(BindableObject bindable, object oldValue, object</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>newValue)</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>=&gt; ((EventToCommandBehavior)bindable).RegisterEvent();</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>void RegisterEvent()</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>{</td>
+    </tr>
+  </tbody>
+</table>

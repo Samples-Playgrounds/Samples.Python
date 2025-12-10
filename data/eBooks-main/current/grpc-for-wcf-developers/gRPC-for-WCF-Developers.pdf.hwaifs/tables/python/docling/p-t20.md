@@ -1,0 +1,6 @@
+|    | Step                    | Description                                                                                                        |
+|---:|:------------------------|:-------------------------------------------------------------------------------------------------------------------|
+|  0 | FROM ...                | Declares a new base image.                                                                                         |
+|  1 | WORKDIR /app            | Creates the /app directory and sets it as the current working directory.                                           |
+|  2 | COPY --from=builder ... | Copies the published application from the previous image, by using the builder alias from the first FROM line.     |
+|  3 | ENTRYPOINT [ ... ]      | Sets the command to run when the container starts. The dotnet command in the runtime image can only run DLL files. |

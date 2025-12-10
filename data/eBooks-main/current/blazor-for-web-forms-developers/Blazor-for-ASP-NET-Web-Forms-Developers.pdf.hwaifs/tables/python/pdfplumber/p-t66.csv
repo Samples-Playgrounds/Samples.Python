@@ -1,0 +1,25 @@
+,0,1,2
+0,Module,ASP.NET 4.x module,ASP.NET Core option
+1,Default document,DefaultDocumentModule,Default Files Middleware
+2,Directory browsing,DirectoryListingModule,"Directory Browsing
+Middleware"
+3,Dynamic compression,DynamicCompressionModule,"Response Compression
+Middleware"
+4,Failed requests tracing,FailedRequestsTracingModule,ASP.NET Core Logging
+5,File caching,FileCacheModule,"Response Caching
+Middleware"
+6,HTTP caching,HttpCacheModule,"Response Caching
+Middleware"
+7,HTTP logging,HttpLoggingModule,ASP.NET Core Logging
+8,HTTP redirection,HttpRedirectionModule,"URL Rewriting
+Middleware"
+9,ISAPI filters,IsapiFilterModule,Middleware
+10,ISAPI,IsapiModule,Middleware
+11,Request filtering,RequestFilteringModule,"URL Rewriting
+Middleware IRule"
+12,URL rewriting†,RewriteModule,"URL Rewriting
+Middleware"
+13,Static compression,StaticCompressionModule,"Response Compression
+Middleware"
+14,Static content,StaticFileModule,Static File Middleware
+15,URL authorization,UrlAuthorizationModule,ASP.NET Core Identity

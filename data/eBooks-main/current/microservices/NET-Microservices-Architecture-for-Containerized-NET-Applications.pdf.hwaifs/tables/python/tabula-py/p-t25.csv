@@ -1,0 +1,61 @@
+,- EventBusConnection=${ESHOP_AZURE_SERVICE_BUS:-rabbitmq}
+0,- EventBusUserName=${ESHOP_SERVICE_BUS_USERNAME}
+1,- EventBusPassword=${ESHOP_SERVICE_BUS_PASSWORD}
+2,- AzureServiceBusEnabled=False
+3,- ApplicationInsights__InstrumentationKey=${INSTRUMENTATION_KEY}
+4,- OrchestratorType=${ORCHESTRATOR_TYPE}
+5,- UseLoadTest=${USE_LOADTEST:-False}
+6,
+7,ports:
+8,"- ""5103:80"""
+9,
+10,catalog-api:
+11,environment:
+12,- ASPNETCORE_ENVIRONMENT=Development
+13,- ASPNETCORE_URLS=http://0.0.0.0:80
+14,- ConnectionString=${ESHOP_AZURE_CATALOG_DB:-
+15,Server=sqldata;Database=Microsoft.eShopOnContainers.Services.CatalogDb;User
+16,Id=sa;Password=[PLACEHOLDER]}
+17,- PicBaseUrl=${ESHOP_AZURE_STORAGE_CATALOG_URL:-
+18,http://host.docker.internal:5202/api/v1/catalog/items/[0]/pic/}
+19,- EventBusConnection=${ESHOP_AZURE_SERVICE_BUS:-rabbitmq}
+20,- EventBusUserName=${ESHOP_SERVICE_BUS_USERNAME}
+21,- EventBusPassword=${ESHOP_SERVICE_BUS_PASSWORD}
+22,- AzureStorageAccountName=${ESHOP_AZURE_STORAGE_CATALOG_NAME}
+23,- AzureStorageAccountKey=${ESHOP_AZURE_STORAGE_CATALOG_KEY}
+24,- UseCustomizationData=True
+25,- AzureServiceBusEnabled=False
+26,- AzureStorageEnabled=False
+27,- ApplicationInsights__InstrumentationKey=${INSTRUMENTATION_KEY}
+28,- OrchestratorType=${ORCHESTRATOR_TYPE}
+29,ports:
+30,"- ""5101:80"""
+31,
+32,marketing-api:
+33,environment:
+34,- ASPNETCORE_ENVIRONMENT=Development
+35,- ASPNETCORE_URLS=http://0.0.0.0:80
+36,- ConnectionString=${ESHOP_AZURE_MARKETING_DB:-
+37,Server=sqldata;Database=Microsoft.eShopOnContainers.Services.MarketingDb;User
+38,Id=sa;Password=[PLACEHOLDER]}
+39,- MongoConnectionString=${ESHOP_AZURE_COSMOSDB:-mongodb://nosqldata}
+40,- MongoDatabase=MarketingDb
+41,- EventBusConnection=${ESHOP_AZURE_SERVICE_BUS:-rabbitmq}
+42,- EventBusUserName=${ESHOP_SERVICE_BUS_USERNAME}
+43,- EventBusPassword=${ESHOP_SERVICE_BUS_PASSWORD}
+44,- identityUrl=http://identity-api
+45,- IdentityUrlExternal=http://${ESHOP_EXTERNAL_DNS_NAME_OR_IP}:5105
+46,- CampaignDetailFunctionUri=${ESHOP_AZUREFUNC_CAMPAIGN_DETAILS_URI}
+47,- PicBaseUrl=${ESHOP_AZURE_STORAGE_MARKETING_URL:-
+48,http://host.docker.internal:5110/api/v1/campaigns/[0]/pic/}
+49,- AzureStorageAccountName=${ESHOP_AZURE_STORAGE_MARKETING_NAME}
+50,- AzureStorageAccountKey=${ESHOP_AZURE_STORAGE_MARKETING_KEY}
+51,- AzureServiceBusEnabled=False
+52,- AzureStorageEnabled=False
+53,- ApplicationInsights__InstrumentationKey=${INSTRUMENTATION_KEY}
+54,- OrchestratorType=${ORCHESTRATOR_TYPE}
+55,- UseLoadTest=${USE_LOADTEST:-False}
+56,ports:
+57,"- ""5110:80"""
+58,
+59,webmvc:

@@ -1,0 +1,5 @@
+|    | Option                       | Description                                                              |
+|---:|:-----------------------------|:-------------------------------------------------------------------------|
+|  0 | RenderMode.Server            | Rendered interactively once a connection with the browser is established |
+|  1 | RenderMode.ServerPrerendered | First prerendered and then rendered interactively                        |
+|  2 | RenderMode.Static            | Rendered as static content                                               |

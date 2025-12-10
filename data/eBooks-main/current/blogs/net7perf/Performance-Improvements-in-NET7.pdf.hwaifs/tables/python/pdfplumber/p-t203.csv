@@ -1,0 +1,4 @@
+,0,1,2,3,4
+0,System.Security.Cryptography.Algorithms.dll,,,,
+1,System.Security.Cryptography.Csp.dll,",",System.Security.Cryptography.Encoding.dll,,
+2,System.Security.Cryptography.OpenSsl.dll,,,",",System.Security.Cryptography.Primitives.dll

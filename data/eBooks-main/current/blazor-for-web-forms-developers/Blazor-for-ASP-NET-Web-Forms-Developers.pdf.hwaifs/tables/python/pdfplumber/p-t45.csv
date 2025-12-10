@@ -1,0 +1,22 @@
+,0
+0,@typeparam TItem
+1,
+2,@Heading
+3,
+4,<ul>
+5,@foreach (var item in Items)
+6,{
+7,<li>@ItemTemplate(item)</li>
+8,}
+9,</ul>
+10,
+11,@code {
+12,[Parameter]
+13,public RenderFragment Heading { get; set; }
+14,
+15,[Parameter]
+16,public RenderFragment<TItem> ItemTemplate { get; set; }
+17,
+18,[Parameter]
+19,public IEnumerable<TItem> Items { get; set; }
+20,}

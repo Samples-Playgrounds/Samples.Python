@@ -1,0 +1,18 @@
+,public class Startup
+0,{
+1,// Other Startup code ...
+2,public void ConfigureServices(IServiceCollection services)
+3,{
+4,services.AddSingleton<IConfiguration>(Configuration);
+5,// DbContext using an InMemory database provider
+6,services.AddDbContext<CatalogContext>(opt => opt.UseInMemoryDatabase());
+7,//(Alternative: DbContext using a SQL Server provider
+8,//services.AddDbContext<CatalogContext>(c =>
+9,//{
+10,"// c.UseSqlServer(Configuration[""ConnectionString""]);"
+11,//
+12,//});
+13,}
+14,
+15,// Other Startup code ...
+16,}

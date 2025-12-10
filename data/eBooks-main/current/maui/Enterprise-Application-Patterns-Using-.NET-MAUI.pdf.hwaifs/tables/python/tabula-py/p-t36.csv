@@ -1,0 +1,4 @@
+,Important
+0,There are multiple ways to perform navigation in .NET MAUI. The MauiNavigationService is specifically
+1,build to work with Shell. If you are using a NavigationPage or TabbedPage or a different navigation
+2,"mechanism, this routing service would have to be updated to work using those components."

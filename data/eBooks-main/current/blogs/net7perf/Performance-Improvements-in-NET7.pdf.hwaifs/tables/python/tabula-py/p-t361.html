@@ -1,0 +1,58 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>private readonly string[] _strings = new[] { "Access-Control-Allow-Credentials", "Access-</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Control-Allow-Origin", "Cache-Control", "Connection", "Date", "Server" };</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>[Benchmark]</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>public HttpResponseHeaders GetHeaders()</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>var headers = new HttpResponseMessage().Headers;</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>foreach (string s in _strings)</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>headers.TryAddWithoutValidation(s, s);</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>return headers;</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,3 @@
+,Warning
+0,.NET MAUI contains a built-in MessagingCenter class that’s no longer recommended for use. Use the
+1,MVVM Toolkit Messenger instead.

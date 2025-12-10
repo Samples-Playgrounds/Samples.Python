@@ -1,0 +1,27 @@
+,0
+0,using System.Diagnostics;
+1,
+2,var rwl = new ReaderWriterLockSlim();
+3,var tasks = new Task[100];
+4,int count = 0;
+5,
+6,DateTime end = DateTime.UtcNow + TimeSpan.FromSeconds(10);
+7,while (DateTime.UtcNow < end)
+8,{
+9,for (int i = 0; i < 100; ++i)
+10,{
+11,tasks[i] = Task.Run(() =>
+12,{
+13,var sw = Stopwatch.StartNew();
+14,rwl.EnterReadLock();
+15,rwl.ExitReadLock();
+16,sw.Stop();
+17,if (sw.ElapsedMilliseconds >= 10)
+18,{
+19,Console.WriteLine(Interlocked.Increment(ref count));
+20,}
+21,});
+22,}
+23,
+24,Task.WaitAll(tasks);
+25,}

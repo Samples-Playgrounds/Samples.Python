@@ -1,0 +1,7 @@
+,Host,Microsoft technologies,Third-party (Azure pluggable)
+0,Platform for,• Microsoft Visual Studio and,"• Any code editor (for example, Sublime)"
+1,Docker apps,Visual Studio Code,"• Any language (Node.js, Java, Go, etc.)"
+2,,• .NET,• Any orchestrator and scheduler
+3,,• Microsoft Azure Kubernetes,• Any Docker registry\
+4,,Service (AKS),
+5,,• Azure Container Registry\,

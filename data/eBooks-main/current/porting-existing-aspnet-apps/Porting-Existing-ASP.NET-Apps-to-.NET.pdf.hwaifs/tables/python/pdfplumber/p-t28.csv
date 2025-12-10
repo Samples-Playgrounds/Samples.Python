@@ -1,0 +1,23 @@
+,0
+0,public class PositionOptions
+1,{
+2,public const string Position = nameof(Position);
+3,
+4,public string Title { get; set; }
+5,public string Name { get; set; }
+6,}
+7,
+8,public class Test2Model : PageModel
+9,{
+10,private readonly PositionOptions _options;
+11,
+12,public Test2Model(IOptions<PositionOptions> options)
+13,{
+14,_options = options.Value;
+15,}
+16,
+17,public ContentResult OnGet()
+18,{
+19,"return Content($""Title: {_options.Title}\nName: {_options.Name}"");"
+20,}
+21,}

@@ -1,0 +1,34 @@
+,0
+0,var writer = new SpanWriter(stackalloc char[128]);
+1,"Append(ref writer, 123);"
+2,"writer.Write(""."");"
+3,"Append(ref writer, 45);"
+4,Console.WriteLine(writer.AsSpan().ToString());
+5,
+6,"static void Append(ref SpanWriter builder, byte value)"
+7,{
+8,Span<char> tmp = stackalloc char[3];
+9,"value.TryFormat(tmp, out int charsWritten);"
+10,"builder.Write(tmp.Slice(0, charsWritten));"
+11,}
+12,
+13,ref struct SpanWriter
+14,{
+15,private readonly Span<char> _chars;
+16,private int _length;
+17,
+18,public SpanWriter(Span<char> destination) => _chars = destination;
+19,
+20,"public Span<char> AsSpan() => _chars.Slice(0, _length);"
+21,
+22,public void Write(ReadOnlySpan<char> value)
+23,{
+24,if (_length > _chars.Length - value.Length)
+25,{
+26,"throw new InvalidOperationException(""Not enough remaining space"");"
+27,}
+28,
+29,value.CopyTo(_chars.Slice(_length));
+30,_length += value.Length;
+31,}
+32,}

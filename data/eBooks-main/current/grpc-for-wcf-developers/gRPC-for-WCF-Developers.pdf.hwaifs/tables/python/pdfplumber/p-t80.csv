@@ -1,0 +1,25 @@
+,0
+0,//
+1,builder.Services.AddAuthentication(CertificateAuthenticationDefaults.AuthenticationScheme)
+2,.AddCertificate(options =>
+3,{
+4,options.AllowedCertificateTypes = CertificateTypes.Chained;
+5,options.RevocationMode = X509RevocationMode.NoCheck;
+6,
+7,options.Events = new CertificateAuthenticationEvents
+8,{
+9,OnCertificateValidated = DevelopmentModeCertificateHelper.Validate
+10,};
+11,});
+12,builder.Services.AddAuthorization();
+13,builder.Services.AddGrpc();
+14,
+15,var app = builder.Build();
+16,
+17,// Configure the HTTP request pipeline.
+18,
+19,app.UseRouting();
+20,
+21,app.UseAuthentication();
+22,app.UseEndpoints(endpoints => { endpoints.MapGrpcService<GreeterService>(); });
+23,//
