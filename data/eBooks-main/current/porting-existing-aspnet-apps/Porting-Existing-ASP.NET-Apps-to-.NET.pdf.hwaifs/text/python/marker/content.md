@@ -79,35 +79,35 @@ This guide is available both in [PDF form](https://aka.ms/aspnet-porting-ebook) 
 
 # Contents
 
-| ntroduction to porting apps to .NET 7                   |   |
+| Introduction to porting apps to .NET 7                  | 1 |
 |---------------------------------------------------------|---|
 | References                                              | 2 |
 | Migration considerations                                | 2 |
 | Is migration to .NET Core appropriate?                  | 2 |
 | When is .NET Framework appropriate?                     | 3 |
-| References                                              | 4 |
-| Migrate to ASP.NET Core 2.1                             | 4 |
-| Should apps run on .NET Framework with ASP.NET Core 2.1 | 4 |
+| References                                              |   |
+| Migrate to ASP.NET Core 2.1                             | ∠ |
+| Should apps run on .NET Framework with ASP.NET Core 2.1 |   |
 | References                                              | 5 |
 | Choose the right .NET Core version                      | 5 |
 | References                                              | 5 |
 | Strategies for migrating incrementally                  | 6 |
 | Migrating slice by slice                                | 6 |
 | Migrating layer by layer                                | 6 |
-| References                                              | 7 |
+| References                                              |   |
 | Strategies for migrating ASP.NET Web Forms apps         | 7 |
 | Separate business logic and other concerns              | 7 |
 | Implement client behavior and web APIs                  | 8 |
-| Consider Blazor                                         | 8 |
-| Summary                                                 | 8 |
-| References                                              | 8 |
-| Deployment strategies                                   | 8 |
+| Consider Blazor                                         |   |
+| Summary                                                 | 3 |
+| References                                              | 3 |
+| Deployment strategies                                   |   |
 | Cross-platform options                                  | 8 |
-| Cloud native development                                | 9 |
-| Leverage containers                                     | 9 |
-| Side-by-side deployment options                         | 9 |
-| IIS on Windows                                          | 9 |
-| Other options on Windows                                | 9 |
+| Cloud native development                                | C |
+| Leverage containers                                     |   |
+| Side-by-side deployment options                         |   |
+| IIS on Windows                                          |   |
+| Other options on Windows                                |   |
 
 | References                                                            | S  |
 |-----------------------------------------------------------------------|----|
@@ -180,9 +180,9 @@ This guide is available both in [PDF form](https://aka.ms/aspnet-porting-ebook) 
 | References                                              | 32 |
 |---------------------------------------------------------|----|
 | Migrate large solutions to ASP.NET Core                 | 33 |
-| References                                              | 33 |
-| Identify sequence of projects to migrate                | 33 |
-| Unit tests                                              | 37 |
+| References                                              |    |
+| Identify sequence of projects to migrate                |    |
+| Unit tests                                              |    |
 | Considerations for migrating many apps                  | 37 |
 | Summary                                                 | 38 |
 | References                                              | 38 |
@@ -191,7 +191,7 @@ This guide is available both in [PDF form](https://aka.ms/aspnet-porting-ebook) 
 | Update NuGet package dependencies                       | 39 |
 | Migrate ASP.NET MVC projects                            | 40 |
 | References                                              | 40 |
-| Strategies for migrating while running in production    | 40 |
+| Strategies for migrating while running in production    | 4( |
 | Refactor the .NET Framework solution                    | 40 |
 | Extract front-end assets to a CDN                       | 4  |
 | Extract and migrate individual microservices            | 4  |
@@ -201,14 +201,14 @@ This guide is available both in [PDF form](https://aka.ms/aspnet-porting-ebook) 
 | Summary                                                 | 42 |
 | References                                              | 42 |
 | Example migration of eShop to ASP.NET Core              | 43 |
-| Run <i>ApiPort</i> to identify problematic APIs         | 42 |
+| Run <i>ApiPort</i> to identify problematic APIs         | 44 |
 | Update project files and NuGet reference syntax         | 47 |
 | Create new ASP.NET Core project                         | 49 |
 | Migrating NuGet Packages                                | 5´ |
 | Migrate static files                                    | 53 |
 | Migrate C# files                                        | 54 |
 | Migrate views                                           | 56 |
-| Migrate app startup components                          |    |
+| Migrate app startup components                          | 58 |
 | Configure MVC                                           | 58 |
 
 | Data access considerations                                       | 63 |
@@ -598,9 +598,9 @@ Teams looking to migrate their apps from ASP.NET MVC to ASP.NET Core need to ide
 - [WebActivator](https://github.com/davidebbo/WebActivator)
 - [App Startup in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/startup)
 - [.NET Generic Host in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/host/generic-host)
-- [IHostedService](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications/background-tasks-with-ihostedservice)
+- <span id="page-21-2"></span>• [IHostedService](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications/background-tasks-with-ihostedservice)
 
-# <span id="page-21-2"></span>Hosting differences between ASP.NET MVC and ASP.NET Core
+# Hosting differences between ASP.NET MVC and ASP.NET Core
 
 ASP.NET MVC apps are hosted in IIS, and may rely on IIS configuration for their behavior. This often includes [IIS modules.](https://docs.microsoft.com/iis/get-started/introduction-to-iis/iis-modules-overview) As part of reviewing an app to prepare to port it from ASP.NET MVC to ASP.NET Core, teams should identify which modules, if any, they're using from the list of IIS Modules installed on their server.
 
@@ -637,9 +637,9 @@ Of course, CDNs remain a good choice for ASP.NET Core apps for all the same reas
 #### <span id="page-23-0"></span>**References**
 
 - [Static content hosting](https://docs.microsoft.com/azure/architecture/patterns/static-content-hosting)
-- <span id="page-23-1"></span>• [Static files in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/static-files)
+- [Static files in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/static-files)
 
-# Dependency injection differences between ASP.NET MVC and ASP.NET Core
+# <span id="page-23-1"></span>Dependency injection differences between ASP.NET MVC and ASP.NET Core
 
 Although dependency injection (DI) isn't built into ASP.NET MVC or Web API, many apps enable it by adding a NuGet package with an inversion of control (IOC) container. These are sometimes referred to as DI containers, for dependency injection (or inversion). Some of the most popular containers used in ASP.NET MVC apps include:
 
@@ -1077,9 +1077,9 @@ will most likely require slightly less overall effort, but won't allow the team 
 #### <span id="page-34-0"></span>**References**
 
 - [Introduction to Razor Pages in ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages/)
-- <span id="page-34-1"></span>• [Simpler ASP.NET Core Apps with Razor Pages](https://docs.microsoft.com/archive/msdn-magazine/2017/september/asp-net-core-simpler-asp-net-mvc-apps-with-razor-pages)
+- [Simpler ASP.NET Core Apps with Razor Pages](https://docs.microsoft.com/archive/msdn-magazine/2017/september/asp-net-core-simpler-asp-net-mvc-apps-with-razor-pages)
 
-# Compare ASP.NET Web API 2 and ASP.NET Core
+# <span id="page-34-1"></span>Compare ASP.NET Web API 2 and ASP.NET Core
 
 ASP.NET Core offers iterative improvements to ASP.NET Web API 2, but should feel familiar to developers who have used Web API 2. ASP.NET Web API 2 was developed and shipped alongside ASP.NET MVC. This meant the two approaches had similar-but-different approaches to things like attribute routing and dependency injection. In ASP.NET Core, there's no longer any distinction between MVC and Web APIs. There's only [ASP.NET Core,](https://docs.microsoft.com/aspnet/core/introduction-to-aspnet-core) which includes support for view-based scenarios, API endpoints, Razor Pages, health checks, SignalR, and more.
 
@@ -1155,9 +1155,9 @@ The following resources offer some guidance for migrating from OWIN / Katana:
 - [Migrate Authentication and Identity to ASP.NET Core](https://docs.microsoft.com/aspnet/core/migration/identity)
 - [Introduction to Identity on ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/authorization/introduction)
 - [Configure ASP.NET Core Identity](https://docs.microsoft.com/aspnet/core/security/authentication/identity-configuration)
-- [Scaffold Identity in ASP.NET Core projects](https://docs.microsoft.com/aspnet/core/security/authentication/scaffold-identity)
+- <span id="page-36-2"></span>• [Scaffold Identity in ASP.NET Core projects](https://docs.microsoft.com/aspnet/core/security/authentication/scaffold-identity)
 
-# <span id="page-36-2"></span>Compare controllers in ASP.NET MVC and Web API with controllers in ASP.NET Core
+# Compare controllers in ASP.NET MVC and Web API with controllers in ASP.NET Core
 
 In ASP.NET MVC 5 and Web API 2, there were two different Controller base types. MVC controllers inherited from Controller; Web API controllers inherited from ApiController. In ASP.NET Core, this object hierarchy has been merged. It's recommended that API controllers in ASP.NET Core inherit from ControllerBase and add the [ApiController] attribute. Standard view-based MVC controllers should inherit from Controller.
 
@@ -1242,9 +1242,9 @@ In this chapter, you'll learn how create a migration plan for a large solution, 
 # <span id="page-40-1"></span>References
 
 - [What topics are important to migrating large MVC and Web API apps to .NET Core?](https://twitter.com/ardalis/status/1313669040859217921)
-- [Porting from .NET Framework to .NET Core](https://docs.microsoft.com/en-us/dotnet/core/porting/)
+- <span id="page-40-2"></span>• [Porting from .NET Framework to .NET Core](https://docs.microsoft.com/en-us/dotnet/core/porting/)
 
-# <span id="page-40-2"></span>Identify sequence of projects to migrate
+# Identify sequence of projects to migrate
 
 For solutions that involve multiple front-end apps, it's best to migrate the apps one by one. For example, create a solution that only includes one front-end app and its dependencies so you can easily identify the scope of work involved. Solutions are lightweight, and you can include projects in multiple solutions if needed. Take advantage of solutions as an organizational tool when migrating.
 
@@ -1317,7 +1317,7 @@ In ASP.NET Core, either of the preceding lines of code can be replaced with:
  return Ok();
 ```
 
-#### <span id="page-45-0"></span>**Summary**
+# <span id="page-45-0"></span>**Summary**
 
 The best approach to porting a large .NET Framework app to .NET Core is to:
 
@@ -1478,35 +1478,34 @@ Once the report is generated, open the file and review the results. The summary 
 
 For this app, about 80 percent of the .NET Framework calls are compatible. 20 percent of the calls need to be addressed during the porting process. Viewing the details reveals that all of the incompatible calls are part of System.Web, which is an expected incompatibility. The dependencies on System.Web calls will be addressed when the app's controllers and related classes are migrated in a later step. Figure 4-5 lists some of the specific types found by the tool:
 
-| Target type                               | Target member                                      | Assembly Name   |
-|-------------------------------------------|----------------------------------------------------|-----------------|
-| Target type T:System.Web.Mvc.UrlParameter | Target member T:System.Web.Mvc.UrlParameter        | eShopLegacyMVC  |
-| •                                         |                                                    | , ,             |
-| T:System.Web.Mvc.UrlParameter             | F:System.Web.Mvc.UrlParameter.Optional             | eShopLegacyMVC  |
-| T:System.Web.HttpApplication              | T:System.Web.HttpApplication                       | eShopLegacyMVC  |
-| T:System.Web.HttpApplication              | M:System.Web.HttpApplication.#ctor                 | eShopLegacyMVC  |
-| T:System.Web.Mvc.HttpNotFoundResult       | T:System.Web.Mvc.HttpNotFoundResult                | eShopLegacyMVC  |
-| T:System.Web.Mvc.Controller               | T:System.Web.Mvc.Controller                        | eShopLegacyMVC  |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.#ctor                  | eShopLegacyMVC  |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.Dispose(System.Bo      | eShopLegacyMVC  |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.File(System.Byte[],    | :eShopLegacyMVC |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.get_ModelState         | eShopLegacyMVC  |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.get_Request            | eShopLegacyMVC  |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.get_Server             | eShopLegacyMVC  |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.get_Url                | eShopLegacyMVC  |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.HttpNotFound           | eShopLegacyMVC  |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.RedirectToAction(S     | SeShopLegacyMVC |
-| T:System.Web.Mvc.Controller               | M:System.Web.Mvc.Controller.View(System.Objection) | ceShopLegacyMVC |
-| T:System.Web.Mvc.ActionNameAttribute      | T:System.Web.Mvc.ActionNameAttribute               | eShopLegacyMVC  |
-| T:System.Web.Mvc.ActionNameAttribute      | M:System.Web.Mvc.ActionNameAttribute.#ctor(S       | eShopLegacyMVC  |
-| T:System.Web.HttpContext                  | T:System.Web.HttpContext                           | eShopLegacyMVC  |
-| T:System.Web.HttpContext                  | M:System.Web.HttpContext.get_Current               | eShopLegacyMVC  |
-| T:System.Web.HttpContext                  | M:System.Web.HttpContext.get_Request               | eShopLegacyMVC  |
-| T:System.Web.HttpContext                  | M:System.Web.HttpContext.get_Session               | eShopLegacyMVC  |
-| T:System.Web.Mvc.HandleErrorAttribute     | T:System.Web.Mvc.HandleErrorAttribute              | eShopLegacyMVC  |
-| T:System.Web.Mvc.HandleErrorAttribute     | M:System.Web.Mvc.HandleErrorAttribute.#ctor        | eShopLegacyMVC  |
-| T:System.Web.Mvc.HttpGetAttribute         | T:System.Web.Mvc.HttpGetAttribute                  | eShopLegacyMVC  |
-| T:System.Web.Mvc.HttpGetAttribute         | M:System.Web.Mvc.HttpGetAttribute.#ctor            | eShopLegacyMVC  |
+| Target type                           | ▼ Target member                               | Assembly Name  |
+|---------------------------------------|-----------------------------------------------|----------------|
+| T:System.Web.Mvc.UrlParameter         | T:System.Web.Mvc.UrlParameter                 | eShopLegacyMVC |
+| T:System.Web.Mvc.UrlParameter         | F:System.Web.Mvc.UrlParameter.Optional        | eShopLegacyMVC |
+| T:System.Web.HttpApplication          | T:System.Web.HttpApplication                  | eShopLegacyMVC |
+| T:System.Web.HttpApplication          | M:System.Web.HttpApplication.#ctor            | eShopLegacyMVC |
+| T:System.Web.Mvc.HttpNotFoundResult   | T:System.Web.Mvc.HttpNotFoundResult           | eShopLegacyMVC |
+| T:System.Web.Mvc.Controller           | T:System.Web.Mvc.Controller                   | eShopLegacyMVC |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.#ctor             | eShopLegacyMVC |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.Dispose(System.E  |                |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.File(System.Byte) | 1 0 /          |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.get ModelState    | eShopLegacyMVC |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.get Request       | eShopLegacyMVC |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.get Server        | eShopLegacyMVC |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.get Url           | eShopLegacyMVC |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.HttpNotFound      | eShopLegacyMVC |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.RedirectToAction  |                |
+| T:System.Web.Mvc.Controller           | M:System.Web.Mvc.Controller.View(System.Obj   |                |
+| T:System.Web.Mvc.ActionNameAttribute  | T:System.Web.Mvc.ActionNameAttribute          | eShopLegacyMVC |
+| T:System.Web.Mvc.ActionNameAttribute  | M:System.Web.Mvc.ActionNameAttribute.#ctor(   | 1 0 /          |
+| T:System.Web.HttpContext              | T:System.Web.HttpContext                      | eShopLegacyMVC |
+| T:System.Web.HttpContext              | M:System.Web.HttpContext.get Current          | eShopLegacyMVC |
+| T:System.Web.HttpContext              | M:System.Web.HttpContext.get Request          | eShopLegacyMVC |
+| T:System.Web.HttpContext              | M:System.Web.HttpContext.get Session          | eShopLegacyMVC |
+| T:System.Web.Mvc.HandleErrorAttribute | T:System.Web.Mvc.HandleErrorAttribute         | eShopLegacyMVC |
+| T:System.Web.Mvc.HandleErrorAttribute | M:System.Web.Mvc.HandleErrorAttribute.#ctor   | eShopLegacyMVC |
+| T:System.Web.Mvc.HttpGetAttribute     | T:System.Web.Mvc.HttpGetAttribute             | eShopLegacyMVC |
+| T:System.Web.Mvc.HttpGetAttribute     | M:System.Web.Myc.HttpGetAttribute.#ctor       | eShopLegacyMVC |
 
 *Figure 4-5. ApiPort incompatible type details.*
 

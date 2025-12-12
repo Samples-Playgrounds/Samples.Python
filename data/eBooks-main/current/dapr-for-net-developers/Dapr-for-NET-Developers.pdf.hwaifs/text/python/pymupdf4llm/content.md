@@ -25,16 +25,14 @@ form or by any means without the written permission of the publisher.
 
 This book is provided “as-is” and expresses the author’s views and opinions. The views, opinions, and
 information expressed in this book, including URL and other Internet website references, may change
-
 without notice.
 
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association
+or connection is intended or should be inferred.
 
-- r connection is intended or should be inferred.
 
-
-[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) - n the “Trademarks” webpage are
+[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) on the “Trademarks” webpage are
 trademarks of the Microsoft group of companies.
 
 
@@ -87,12 +85,10 @@ Editors:
 
 
 **Steve “ardalis” Smith**, Senior Architect and Trainer, NimblePros
-
 ### Version
 
 
 This guide has been written to cover the **Dapr 1.9** version. .NET samples are based on **.NET 7** .
-
 ### Who should use this guide
 
 
@@ -102,13 +98,11 @@ interested in learning how to build applications designed for the cloud.
 
 A secondary audience is technical decision-makers who plan to choose whether to build their
 applications using a cloud-native approach.
-
 ### How you can use this guide
 
 
 [This guide is available both in PDF](https://aka.ms/dapr-ebook) form and online. Feel free to forward this document or links to its
-
-- nline version to your team to help ensure common understanding of these topics. Most of these
+online version to your team to help ensure common understanding of these topics. Most of these
 topics benefit from a consistent understanding of the underlying principles and patterns, as well as
 the trade-offs involved in decisions related to these topics. Our goal with this document is to equip
 teams and their leaders with the information they need to make well-informed decisions for their
@@ -555,9 +549,11 @@ The road ahead .................................................................
 v Contents
 
 
-# CHAPTER 1
+**CHAPTER**
+# 1
 
 ## Foreword - Dapr for .NET Developers
+
 
 With the wave of cloud adoption underway, there is a major shift happening towards “cloud native”
 development, often built with microservice-architectures. These microservices are both stateless and
@@ -605,8 +601,7 @@ retries, or conditional code that targets specific deployment environments.
 
 This book shows how Dapr reduces your development time and overall code maintenance by
 incrementally “Daperizing” the canonical .NET reference application, eShop. For example, in the
-
-- riginal eShop implementation, significant amounts of code were written to abstract between Azure
+original eShop implementation, significant amounts of code were written to abstract between Azure
 Service Bus and RabbitMQ for publishing events between services. All this code can be discarded and
 simply replaced with Dapr’s pub/sub API and component model, which had an even wider range of
 pub/sub brokers, rather than just two. Dapr’s actor model, when used in the reworked eShop
@@ -629,8 +624,7 @@ ecosystem of components. Maintaining this openness is critical to Dapr’s futur
 
 Dapr is just getting started, though, and you should expect to see more Dapr capabilities and more
 support for Dapr in Azure services. I hope that you will take advantage of Dapr to enable you to focus
-
-- n your core business logic and accelerate your microservices development. I am excited to have you
+on your core business logic and accelerate your microservices development. I am excited to have you
 [join us in the Dapr community on this journey at https://github.com/dapr/](https://github.com/dapr/) and on Discord
 [https://aka.ms/dapr-discord.](https://aka.ms/dapr-discord)
 
@@ -647,9 +641,11 @@ _Mark Russinovich_ _Azure CTO and Technical Fellow_ _Microsoft_
 2 CHAPTER 1 | Foreword - Dapr for .NET Developers
 
 
-# CHAPTER 2
+**CHAPTER**
+# 2
 
 ## The world is distributed
+
 
 Just ask any ‘cool kid’: _Modern, distributed systems are in, and monolithic apps are out!_
 
@@ -665,14 +661,11 @@ But, this evolution raises many questions…
 
 - What exactly is a distributed application?
 
-
 - Why are they gaining popularity?
-
 
 - What are the costs?
 
-
-And, importantly, what are the tradeoffs?
+- And, importantly, what are the tradeoffs?
 
 
 To start, let’s rewind and look at the past 15 years. During this period, we typically constructed
@@ -684,7 +677,6 @@ _Figure 1-1. Monolithic architecture._
 
 Note how the modules for Ordering, Identity, and Marketing execute in a single-server process.
 Application data is stored in a shared database. Business functionality is exposed via HTML and
-
 RESTful interfaces.
 
 
@@ -699,15 +691,11 @@ In many ways, monolithic apps are `straightforward` . They’re straightforward 
 
 - Test
 
-
 - Deploy
-
 
 - Troubleshoot
 
-
 - Scale vertically (scale up)
-
 
 However, monolithic architectures can present significant challenges.
 
@@ -717,36 +705,26 @@ Over time, you may reach a point where you begin to lose control…
 
 - The monolith has become so overwhelmingly complicated that no single person understands it.
 
+- You fear making changes as each brings unintended and costly side effects.
 
-You fear making changes as each brings unintended and costly side effects.
+- New features/fixes become time-consuming and expensive to implement.
 
-
-New features/fixes become time-consuming and expensive to implement.
-
-
-Even the smallest change requires full deployment of the entire application - expensive and
+- Even the smallest change requires full deployment of the entire application - expensive and
 risky.
-
 
 - One unstable component can crash the entire system.
 
+- Adding new technologies and frameworks aren’t an option.
 
-Adding new technologies and frameworks aren’t an option.
-
-
-Implementing agile delivery methodologies are difficult.
-
+- Implementing agile delivery methodologies are difficult.
 
 - Architectural erosion sets in as the code base deteriorates with never-ending “special cases.”
 
-
 - Eventually the consultants come in and tell you to rewrite it.
-
 
 IT practitioners call this condition `the Fear Cycle` . If you’ve been in the technology business for any
 length of time, good chance you’ve experienced it. It’s stressful and exhausts your IT budget. Instead
-
-- f building new and innovative solutions, most of your budget is spent maintaining legacy apps.
+of building new and innovative solutions, most of your budget is spent maintaining legacy apps.
 
 
 Instead of fear, businesses require `speed and agility` . They seek an architectural style with which
@@ -810,15 +788,11 @@ Consider the following…
 
 - How can they implement asynchronous messaging?
 
+- How can they maintain contextual information across a transaction?
 
-How can they maintain contextual information across a transaction?
+- How can they become resilient to failure?
 
-
-How can they become resilient to failure?
-
-
-How can they scale to meet fluctuating demand?
-
+- How can they scale to meet fluctuating demand?
 
 - How are they monitored and observed?
 
@@ -845,13 +819,14 @@ Now, sit back, relax, and let us introduce you the new world of Dapr.
 7 CHAPTER 2 | The world is distributed
 
 
-# CHAPTER 3
+**CHAPTER**
+# 3
 
 ## Dapr at 20,000 feet
 
-In chapter 1, we discussed the appeal of distributed microservice applications. But, we also pointed
 
-- ut that they dramatically increase architectural and operational complexity. With that in mind, the
+In chapter 1, we discussed the appeal of distributed microservice applications. But, we also pointed
+out that they dramatically increase architectural and operational complexity. With that in mind, the
 question becomes, how can you “have your cake” and “eat it too?”. That is, how can you take
 advantage of the agility of distributed architecture, and minimize its complexity?
 
@@ -892,8 +867,7 @@ management capabilities out-of-the-box. Your service invokes the Dapr state mana
 file. Dapr ships with several pre-built state store components, including Redis. With this model, your
 service delegates state management to the Dapr runtime. Your service has no SDK, library, or direct
 reference to the underlying component. You can even change state stores, say, from Redis to MySQL
-
-- r Cassandra, with no code changes.
+or Cassandra, with no code changes.
 
 
 Figure 2-1 shows Dapr from 20,000 feet.
@@ -920,7 +894,6 @@ distributed application capability that your application can consume.
 
 
 The bottom row highlights the portability of Dapr and the diverse environments across which it can
-
 run.
 
 ### Dapr architecture
@@ -952,7 +925,7 @@ The following table describes the infrastructure services provided by each block
 
 
 
-|Buildingblock|Description|
+|Building block|Description|
 |---|---|
 |State management|Support contextual information for long running stateful services.|
 |Service invocation|Invoke direct, secure service-to-service calls using platform agnostic protocols<br>and well-known endpoints.|
@@ -963,7 +936,7 @@ The following table describes the infrastructure services provided by each block
 10 CHAPTER 3 | Dapr at 20,000 feet
 
 
-|Buildingblock|Description|
+|Building block|Description|
 |---|---|
 |Bindings|Trigger code from events raised by external resources with bi-directional<br>communication.|
 |Observability|Monitor and measure message calls across networked services.|
@@ -1000,71 +973,50 @@ provide the concrete implementation to make it happen.
 
 
 Consider, the Dapr **state store** component. It provides a uniform way to manage state for CRUD
-
-- perations. Without any change to your service code, you could switch between any of the following
-
+operations. Without any change to your service code, you could switch between any of the following
 Dapr state components:
 
 
 - AWS DynamoDB
 
-
 - Aerospike
-
 
 - Azure Blob Storage
 
-
 - Azure CosmosDB
-
 
 - Azure Table Storage
 
-
 - Cassandra
-
 
 - Cloud Firestore (Datastore mode)
 
-
 - CloudState
-
 
 - Couchbase
 
-
 - Etcd
-
 
 - HashiCorp Consul
 
-
 - Hazelcast
-
 
 - Memcached
 
-
 - MongoDB
-
 
 - PostgreSQL
 
-
 - Redis
-
 
 - RethinkDB
 
-
 - SQL Server
-
 
 - Zookeeper
 
 
 Each component provides the necessary implementation through a common state management
-
 interface:
 
 
@@ -1080,11 +1032,8 @@ configuration:
 
 :::{custom-style=CodeBox} yaml apiVersion: dapr.io/v1alpha1 kind: Component metadata:  name:
 statestore  namespace: default spec:  type: state.redis  version: v1  metadata:  - name: redisHost
-
 value: <HOST>  - name: redisPassword   value: <PASSWORD>  - name: enableTLS   value:
-
 <bool> # Optional. Allowed: true, false.  - name: failover   value: <bool> # Optional. Allowed: true,
-
 false. :::
 
 
@@ -1193,7 +1142,6 @@ Looking at the previous figure, one might question the latency and overhead incu
 The Dapr team has invested heavily in performance. A tremendous amount of engineering effort has
 gone into making Dapr efficient. Calls between Dapr sidecars are always made with gRPC, which
 delivers high performance and small binary payloads. In most cases, the additional overhead should
-
 be sub-millisecond.
 
 
@@ -1205,19 +1153,16 @@ protocol. gRPC uses HTTP/2 for its transport protocol, which provides significan
 enhancements over HTTP RESTFul service, including:
 
 
-Multiplexing support for sending multiple parallel requests over the same connection - HTTP 1.1
+- Multiplexing support for sending multiple parallel requests over the same connection - HTTP 1.1
 limits processing to one request/response message at a time.
 
-
-Bidirectional full-duplex communication for sending both client requests and server responses
+- Bidirectional full-duplex communication for sending both client requests and server responses
 simultaneously.
-
 
 - Built-in streaming enabling requests and responses to asynchronously stream large data sets.
 
 
 [To learn more, check out the gRPC overview](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/grpc#what-is-grpc) [from the Architecting Cloud-Native .NET Apps for Azure](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/)
-
 eBook.
 
 ### Dapr and service meshes
@@ -1228,7 +1173,6 @@ Service mesh is another rapidly evolving technology for distributed applications
 
 A service mesh is a configurable infrastructure layer with built-in capabilities to handle service-toservice communication, resiliency, load balancing, and telemetry capture. It moves the responsibility
 for these concerns out of the services and into the service mesh layer. Like Dapr, a service mesh also
-
 follows a sidecar architecture.
 
 
@@ -1284,7 +1228,6 @@ built upon a concept of building block APIs. Dapr building blocks expose common 
 application capabilities, such as state management, service-to-service invocation, and pub/sub
 messaging. Dapr components lie beneath the building blocks and provide the concrete
 implementation for each capability. Applications bind to various components through configuration
-
 files.
 
 
@@ -1296,22 +1239,21 @@ applications.
 
 - [Dapr documentation](https://dapr.io/)
 
-
 - [Learning Dapr](https://www.amazon.com/Learning-Dapr-Building-Distributed-Applications/dp/1492072427/ref=sr_1_1?dchild=1&keywords=dapr&qid=1604794794&sr=8-1)
 
+- [.NET Microservices: Architecture for Containerized .NET applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
 
-[.NET Microservices: Architecture for Containerized .NET applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
-
-
-- Architecting Cloud [Native .NET Apps for Azure](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf)
+- [Architecting Cloud-Native .NET Apps for Azure](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf)
 
 
 18 CHAPTER 3 | Dapr at 20,000 feet
 
 
-# CHAPTER 4
+**CHAPTER**
+# 4
 
 ## Get started with Dapr
+
 
 In the first two chapters, you learned basic concepts about Dapr. It’s time to take it for a _test drive_ . This
 chapter will guide you through preparing your local development environment and building two Dapr
@@ -1341,7 +1283,7 @@ experience. To run Dapr outside of Docker, you can skip this step and execute a 
 binaries and container images.
 
 
-4. Install the .NET 7 SDK.
+4. [Install the .NET 7 SDK.](https://dotnet.microsoft.com/download/dotnet/7.0)
 
 
 Now that Dapr is installed, it’s time to build your first Dapr application!
@@ -1387,14 +1329,12 @@ dotnet run
 ```
 
 [Next, you’ll use the Dapr state management building block](https://docs.dapr.io/developing-applications/building-blocks/state-management/state-management-overview/) to implement a stateful counter in the
-
 program.
 
 
 You can invoke Dapr APIs across any development platform using Dapr’s native support for HTTP and
 gRPC. However, .NET Developers will find the Dapr .NET SDK more natural and intuitive. It provides a
 strongly typed .NET client to call the Dapr APIs. The .NET SDK also tightly integrates with ASP.NET
-
 Core.
 
 
@@ -1415,9 +1355,7 @@ enables you to interact with the Dapr sidecar.
 - From the state store, [`DaprClient.GetStateAsync`]{custom-style=Code} fetches the
 value for the [`counter`]{custom-style=Code} key. If the key doesn't exist, the
 default value for [`int`]{custom-style=Code} (which is [`0`]{custom-style=Code}) is
-
 returned.
-
 - The code then iterates, writing the [`counter`]{custom-style=Code} value to the
 console and saving an incremented value to the state store.
 
@@ -1473,7 +1411,6 @@ Note the format of the previous component configuration file:
 - Each component has a name. In the sample above, the component is named `statestore` . We
 used that name in our first code example to tell the Dapr sidecar which component to use.
 
-
 - Each component configuration file has a `spec` section. It contains a `type` field that specifies the
 component type. The `version` field specifies the component version. The `metadata` field
 
@@ -1508,7 +1445,6 @@ If needed, you could further restrict a component to a particular application. W
 namespace, you may want to limit access of the Redis cache to only the `DaprCounter` application. You
 do so by specifying `scopes` in the component configuration. The following example shows how to
 restrict access to the Redis `statestore` component to the application `DaprCounter` in the `production`
-
 namespace:
 
 
@@ -1646,7 +1582,6 @@ displays the weather forecasts stored in the view data to the user:
 
 
 In the final part of this example, you’ll add container support and run the solution using Docker
-
 Compose.
 
 
@@ -1728,7 +1663,6 @@ image.
 
 1. In the `MyBackEnd` web API project, right-click on the project node, and choose **Add** - **Container**
 **Orchestrator Support…** . Choose **Docker Compose**, and then select **Linux** again as the target
-
 OS.
 
 
@@ -1797,7 +1731,6 @@ management building block.
 
 The second example involved a multi-container application running in Docker. By using Visual Studio
 with Docker Compose, you experienced the familiar _F5 debugging experience_ available across all .NET
-
 apps.
 
 
@@ -1813,16 +1746,17 @@ In the upcoming chapters, you’ll dive deep into the building blocks offered by
 
 - [Dapr documentation - Getting started](https://docs.dapr.io/getting-started)
 
-
 - [eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr)
 
 
 35 CHAPTER 4 | Get started with Dapr
 
 
-# CHAPTER 5
+**CHAPTER**
+# 5
 
 ## Traffic Control sample application
+
 
 In the first chapters, you’ve learned about basic Dapr concepts. You saw how Dapr can help you and
 your team construct distributed applications while reducing architectural and operational complexity.
@@ -1861,8 +1795,7 @@ the TrafficControl service. Every simulated car invokes both the entry and exit 
 
 
 - The **TrafficControl service** is an ASP.NET Core Web API application that exposes the `/entrycam`
-and `/exitcam` endpoints. Invoking an endpoint simulates a car passing under one of the entry
-   - r exit-cameras respectively. The request message payload simply contains the license plate of
+and `/exitcam` endpoints. Invoking an endpoint simulates a car passing under one of the entryor exit-cameras respectively. The request message payload simply contains the license plate of
 the car (no actual OCR is implemented).
 
 
@@ -1877,7 +1810,6 @@ vehicle. The payload of the request contains all the information about the speed
 `/vehicleinfo/{licensenumber}` . It’s used for obtaining vehicle- and owner-information for a
 speeding vehicle based on the license number sent in the URL (for example, `/vehicleinfo/RV-`
 
-
 `752-S` ).
 
 
@@ -1888,7 +1820,6 @@ _Figure 4-2. Sequence diagram of the simulation flow._
 
 
 The services communicate by directly invoking each other’s APIs. This design works fine, but it has
-
 some drawbacks.
 
 
@@ -1923,7 +1854,6 @@ acceptable here. The service invocation building block provides service discover
 FineCollection service no longer has to know where the VehicleRegistration service lives. It also
 implements automatic retries if the VehicleRegistration service is off-line.
 
-
 2. **Publish & subscribe** The publish and subscribe building block handles asynchronous messaging
 for sending speeding violations from the TrafficControl service to the FineCollectionService. This
 implementation decouples the TrafficControl and FineCollection service. If the
@@ -1938,17 +1868,14 @@ library. Switching to another message broker doesn’t require code changes, onl
 persist vehicle state outside of the service in a Redis cache. As with pub/sub, developers don’t
 need to learn Redis specific APIs. Switching to another data store requires no code changes.
 
-
 4. **Output binding** The FineCollection service sends fines to the owners of speeding vehicles by
 email. The Dapr output binding for SMTP abstracts the email transmission using the SMTP
 protocol.
-
 
 5. **Input binding** The CameraSimulation sends messages with simulated car info to the
 TrafficControl service using the MQTT protocol. It uses a .NET MQTT library for sending
 messages to Mosquitto - a lightweight MQTT broker. The TrafficControl service uses the Dapr
 input binding for MQTT to subscribe to the MQTT broker and receive messages.
-
 
 6. **Secrets management** The FineCollectionService needs credentials for connecting to the smtp
 server and a license-key for a fine calculator component it uses internally. It uses the secrets
@@ -2008,7 +1935,6 @@ will run in the `dapr-trafficcontrol` namespace.
 
 
 The Traffic Control sample application is a microservices application that simulates a highway speed
-
 trap.
 
 
@@ -2021,15 +1947,17 @@ The application will be used in the following chapters that focus on Dapr buildi
 #### **References**
 
 
-[Dapr Traffic Control Sample](https://github.com/EdwinVW/dapr-traffic-control)
+- [Dapr Traffic Control Sample](https://github.com/EdwinVW/dapr-traffic-control)
 
 
 41 CHAPTER 5 | Traffic Control sample application
 
 
-# CHAPTER 6
+**CHAPTER**
+# 6
 
 ## The Dapr state management building block
+
 
 Distributed applications are composed of independent services. While each service should be
 stateless, some services must track state to complete business operations. Consider a shopping basket
@@ -2037,7 +1965,6 @@ service for an e-Commerce site. If the service can’t track state, the customer
 basket content by leaving the website, resulting in a lost sale and an unhappy customer experience.
 For these scenarios, state needs to be persisted to a distributed state store. The Dapr state
 [management building block simplifies state tracking and offers advanced features across various data](https://docs.dapr.io/developing-applications/building-blocks/state-management/)
-
 stores.
 
 
@@ -2050,17 +1977,13 @@ chapter 3.
 Tracking state in a distributed application can be challenging. For example:
 
 
-The application may require different types of data stores.
+- The application may require different types of data stores.
 
+- Different consistency levels may be required for accessing and updating data.
 
-Different consistency levels may be required for accessing and updating data.
-
-
-Multiple users may update data at the same time, requiring conflict resolution.
-
+- Multiple users may update data at the same time, requiring conflict resolution.
 
 - [Services must retry any short-lived transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) that occur while interacting with the data
-
 store.
 
 
@@ -2079,7 +2002,6 @@ without dependencies or a learning curve on third-party storage SDKs.
 The application interacts with a Dapr sidecar to store and retrieve key/value data. Under the hood, the
 sidecar API consumes a configurable state store component to persist data. Developers can choose
 [from a growing collection of supported state stores](https://docs.dapr.io/operations/components/setup-state-store/supported-state-stores/) that include Azure Cosmos DB, SQL Server, and
-
 Cassandra.
 
 
@@ -2091,9 +2013,7 @@ http://localhost:<dapr-port>/v1.0/state/<store-name>/
 
 - `<dapr-port>` : the HTTP port that Dapr listens on.
 
-
 - `<store-name>` : the name of the state store component to use.
-
 
 Figure 5-1 shows how a Dapr-enabled shopping basket service stores a key/value pair using the Dapr
 state store component named `statestore` .
@@ -2111,10 +2031,8 @@ Note the steps in the previous figure:
 1. The basket service calls the state management API on the Dapr sidecar. The body of the request
 encloses a JSON array that can contain multiple key/value pairs.
 
-
 2. The Dapr sidecar determines the state store based on the component configuration file. In this
 case, it’s a Redis cache state store.
-
 
 3. The sidecar persists the data to the Redis cache.
 
@@ -2144,7 +2062,6 @@ shows the three properties of the CAP theorem.
 
 
 :::image type=“content” source=“./media/state-management/cap-theorem.png” alt-text=“The CAP
-
 theorem.”:::
 
 
@@ -2172,22 +2089,20 @@ node fails or loses connectivity with other replicated data nodes.
 
 Distributed applications must handle the **P** property. As services communicate among each other with
 network calls, network disruptions ( **P** ) will occur. With that in mind, distributed applications must
-
-either be **AP** - r **CP** .
+either be **AP** or **CP** .
 
 
 **AP** applications choose availability over consistency. Dapr supports this choice with its **eventual**
 **consistency** strategy. Consider an underlying data store, such as Azure CosmosDB, which stores
 redundant data on multiple replicas. With eventual consistency, the state store writes the update to
-
-- ne replica and completes the write request with the client. After this time, the store will
+one replica and completes the write request with the client. After this time, the store will
 asynchronously update its replicas. Read requests can return data from any of the replicas, including
 those replicas that haven’t yet received the latest update.
 
 
 **CP** applications choose consistency over availability. Dapr supports this choice with its **strong**
 **consistency** strategy. In this scenario, the state store will synchronously update _all_ (or, in some cases,
-a _quorum_ - f) required replicas _before_ completing the write request. Read operations will return the
+a _quorum_ of) required replicas _before_ completing the write request. Read operations will return the
 most up-to-date data consistently across replicas.
 
 
@@ -2206,7 +2121,6 @@ In a multi-user application, there’s a chance that multiple users will update 
 based on an assumption that update conflicts are uncommon because users work on different parts of
 the data. It’s more efficient to assume an update will succeed and retry if it doesn’t. The alternative,
 implementing pessimistic locking, can affect performance with long-running locking causing data
-
 contention.
 
 
@@ -2233,9 +2147,7 @@ writing, these stores include Redis, MongoDB, PostgreSQL, SQL Server, and Azure 
 
 
 In the example below, a multi-item operation is sent to the state store in a single transaction. All
-
-- perations must succeed for the transaction to commit. If one or more of the operations fail, the
-
+operations must succeed for the transaction to commit. If one or more of the operations fail, the
 entire transaction rolls back.
 
 
@@ -2247,7 +2159,6 @@ following example shows a **bulk** write operation:
 
 
 For bulk operations, Dapr will submit each key/value pair update as a separate request to the data
-
 store.
 
 ### Use the Dapr .NET SDK
@@ -2284,7 +2195,6 @@ data from the state store, make the change again, and resubmit the update.
 
 
 If you always want a write to succeed regardless of other changes to the data, use the **last-write-wins**
-
 strategy.
 
 
@@ -2300,18 +2210,16 @@ The SDK provides other methods to retrieve data in bulk, delete data, and execut
 Dapr also supports ASP.NET Core, a cross-platform framework for building modern cloud-based web
 [applications. The Dapr SDK integrates state management capabilities directly into the ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/models/model-binding)
 [model binding](https://docs.microsoft.com/aspnet/core/mvc/models/model-binding) capabilities. Configuration is simple. In the `Program.cs` file, call the following extension
-
 method on the `WebApplication` builder:
 
 
 Once configured, Dapr can inject a key/value pair directly into a controller action using the ASP.NET
-Core `FromState` attribute. Referencing the `DaprClient` - bject is no longer necessary. The next
+Core `FromState` attribute. Referencing the `DaprClient` object is no longer necessary. The next
 example shows a Web API that returns the weather forecast for a given city:
 
 
 In the example, the controller loads the weather forecast using the `FromState` attribute. The first
 attribute parameter is the state store, `statestore` . The second attribute parameter, `city`, is the name
-
 [of the route template variable to get the state key. If you omit the second parameter, the name of the](https://docs.microsoft.com/aspnet/core/mvc/controllers/routing#route-templates)
 bound method parameter ( `forecast` ) is used to look up the route template variable.
 
@@ -2332,33 +2240,23 @@ At the time of this writing, Dapr provides support for the following transaction
 
 - Azure CosmosDB
 
-
 - Azure SQL Server
-
 
 - CockroachDB
 
-
 - In Memory
-
 
 - MongoDB
 
-
 - MySQL
-
 
 - Oracle Database
 
-
 - PostgreSQL
-
 
 - Redis
 
-
 - RethinkDB
-
 
 Dapr also includes support for state stores that support CRUD operations, but not transactional
 capabilities:
@@ -2366,39 +2264,27 @@ capabilities:
 
 - Aerospike
 
-
 - Apache Cassandra
-
 
 - AWS DynamoDB
 
-
 - Azure Blob Storage
-
 
 - Azure Table Storage
 
-
 - Couchbase
-
 
 - GCP Firestore
 
-
 - Hashicorp Consul
-
 
 - Hazelcast
 
-
 - JetStream KV
-
 
 - Memcached
 
-
 - Oracle Object Storage
-
 
 - Zookeeper
 
@@ -2435,7 +2321,7 @@ Using the Redis Console tool, look inside the Redis cache to see how the Redis s
 persisted the data:
 
 The output shows the full Redis **key** for the data as `basketservice||basket1` . By default, Dapr uses
-the `application id` - f the Dapr instance ( `basketservice` ) as a prefix for the key. This naming
+the `application id` of the Dapr instance ( `basketservice` ) as a prefix for the key. This naming
 convention enables multiple Dapr instances to share the same data store without key name collisions.
 For the developer, it’s critical always to specify the same `application id` when running the
 application with Dapr. If omitted, Dapr will generate a unique application ID. If the `application id`
@@ -2450,7 +2336,7 @@ in the state store component file. Consider the following example:
 
 
 A constant key prefix enables the state store to be accessed across multiple Dapr applications. What’s
-more, setting the `keyPrefix` to `none` - mits the prefix completely.
+more, setting the `keyPrefix` to `none` omits the prefix completely.
 
 ### Sample application: Dapr Traffic Control
 
@@ -2470,14 +2356,13 @@ _Figure 5-3. Conceptual architecture of the Dapr Traffic Control sample applicat
 
 Entry and exit event logic is handled by the `TrafficController` class, an ordinary ASP.NET Controller.
 The `TrafficController.VehicleEntry` method accepts an incoming `VehicleRegistered` message
-
 and saves the enclosed vehicle state:
 
 In the preceding code snippet, the abstraction `_vehicleStateRepository` is responsible for saving
 state to the data store. Its concrete implementation, `DaprVehicleStateRepository`, is shown below:
 
 As the preceding code snippet shows, the implementation of the `DaprVehicleStateRepository` class
-is pretty straightforward. The `SaveVehicleStateAsync` method uses the injected `DaprClient` - bject
+is pretty straightforward. The `SaveVehicleStateAsync` method uses the injected `DaprClient` object
 
 
 50 CHAPTER 6 | The Dapr state management building block
@@ -2511,15 +2396,11 @@ data stores. The API provides support for:
 
 - Bulk operations
 
-
 - Strong and eventual consistency
-
 
 - Optimistic concurrency control
 
-
 - Multi-item transactions
-
 
 The .NET SDK provides language-specific support for .NET and ASP.NET Core. Model binding
 integration simplifies accessing and updating state from ASP.NET Core controller action methods.
@@ -2533,7 +2414,6 @@ In the Dapr Traffic Control sample application, the benefits of using Dapr state
 
 1. It abstracts away the complexity of using third-party SDKs, such as `StackExchange.Redis` .
 
-
 2. Replacing the underlying Redis cache with a different type of data store only requires changes to
 the component configuration file.
 
@@ -2546,13 +2426,14 @@ the component configuration file.
 52 CHAPTER 6 | The Dapr state management building block
 
 
-# CHAPTER 7
+**CHAPTER**
+# 7
 
 ## The Dapr service invocation building block
 
+
 Across a distributed system, one service often needs to communicate with another to complete a
 [business operation. The Dapr service invocation building block](https://docs.dapr.io/developing-applications/building-blocks/service-invocation/service-invocation-overview/) can help streamline the
-
 communication between services.
 
 ### What it solves
@@ -2564,11 +2445,9 @@ challenges involved. For example:
 
 - Where the other services are located.
 
-
 - How to call a service securely, given the service address.
 
-
-- [How to handle retries when short-lived transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) - ccur.
+- [How to handle retries when short-lived transient errors](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling) occur.
 
 
 Lastly, as distributed applications compose many different services, capturing insights across service
@@ -2597,13 +2476,11 @@ Note the steps from the previous figure:
 
 
 1. Service A makes a call to the `catalog/items` endpoint in Service B by invoking the service
-
 invocation API on the Service A sidecar.
 
 
 [!NOTE] The sidecar uses a pluggable name resolution component to resolve the address of
 [Service B. In self-hosted mode, Dapr uses mDNS](https://www.ionos.com/digitalguide/server/know-how/multicast-dns/) to find it. When running in Kubernetes mode,
-
 the Kubernetes DNS service determines the address.
 
 
@@ -2625,17 +2502,14 @@ the Kubernetes DNS service determines the address.
 Because the calls flow through sidecars, Dapr can inject some useful cross-cutting behaviors:
 
 
-Automatically retry calls upon failure.
-
+- Automatically retry calls upon failure.
 
 - Make calls between services secure with mutual (mTLS) authentication, including automatic
 certificate rollover.
 
-
 - Control what operations clients can do using access control policies.
 
-
-Capture traces and metrics for all calls between services to provide insights and diagnostics.
+- Capture traces and metrics for all calls between services to provide insights and diagnostics.
 
 
 54 CHAPTER 7 | The Dapr service invocation building block
@@ -2650,12 +2524,9 @@ http://localhost:<dapr-port>/v1.0/invoke/<application-id>/method/<method-name>
 
 - `<dapr-port>` the HTTP port that Dapr is listening on.
 
-
 - `<application-id>` application ID of the service to call.
 
-
 - `<method-name>` name of the method to invoke on the remote service.
-
 
 In the following example, a _curl_ call is made to the `catalog/items` ‘GET’ endpoint of `Service B` :
 
@@ -2678,9 +2549,7 @@ with Dapr. The SDK offers developers three ways of making remote service invocat
 
 1. Invoke HTTP services using HttpClient
 
-
 2. Invoke HTTP services using DaprClient
-
 
 3. Invoke gRPC services using DaprClient
 
@@ -2701,7 +2570,6 @@ http://127.0.0.1:3500/v1/invoke/orderservice/method/submit
 This example uses the default value for the Dapr HTTP endpoint, which is `http://127.0.0.1:<dapr-`
 
 `http-port>/` . The value of `dapr-http-port` is taken from the `DAPR_HTTP_PORT` environment variable.
-
 If it’s not set, the default port number `3500` is used.
 
 
@@ -2709,7 +2577,6 @@ If it’s not set, the default port number `3500` is used.
 
 
 Alternatively, you can configure a custom endpoint in the call to
-
 
 `DaprClient.CreateInvokeHttpClient` :
 
@@ -2721,7 +2588,7 @@ var httpClient = DaprClient.CreateInvokeHttpClient(daprEndpoint: "localhost:4000
 You can also directly set the base address by specifying the application ID. Doing so enables relative
 URIs when making a call:
 
-The `HttpClient` - bject is intended to be long-lived. A single `HttpClient` instance can be reused for
+The `HttpClient` object is intended to be long-lived. A single `HttpClient` instance can be reused for
 the lifetime of the application. The next scenario demonstrates how an `OrderServiceClient` class
 reuses a Dapr `HttpClient` instance:
 
@@ -2729,7 +2596,7 @@ reuses a Dapr `HttpClient` instance:
 In the snippet above, the `OrderServiceClient` is registered as a singleton with the ASP.NET Core
 dependency injection system. An implementation factory creates a new `HttpClient` instance by
 calling `DaprClient.CreateInvokeHttpClient` . It then uses the newly created `HttpClient` to
-instantiate the `OrderServiceClient` - bject. By registering the `OrderServiceClient` as a singleton, it
+instantiate the `OrderServiceClient` object. By registering the `OrderServiceClient` as a singleton, it
 will be reused for the lifetime of the application.
 
 
@@ -2743,13 +2610,10 @@ Using the HttpClient class with Dapr service invocation has many benefits:
 - HttpClient is a well-known class that many developers already use in their code. Using HttpClient
 for Dapr service invocation allows developers to reuse their existing skills.
 
-
-HttpClient supports advanced scenarios, such as custom headers, and full control over request
+- HttpClient supports advanced scenarios, such as custom headers, and full control over request
 and response messages.
 
-
 - In .NET 5, HttpClient supports automatic serialization and deserialization using System.Text.Json.
-
 
 - [HttpClient integrates with many existing frameworks and libraries, such as Refit, RestSharp, and](https://github.com/reactiveui/refit)
 [Polly.](https://github.com/App-vNext/Polly)
@@ -2765,15 +2629,13 @@ While HttpClient is the preferred way to invoke services using HTTP semantics, y
 `DaprClient.InvokeMethodAsync` family of methods. The following example submits an order by
 
 
-The third argument, an `order` - bject, is serialized internally (with `System.Text.JsonSerializer` ) and
+The third argument, an `order` object, is serialized internally (with `System.Text.JsonSerializer` ) and
 sent as the request payload. The .NET SDK takes care of the call to the sidecar. It also deserializes the
-response to an `OrderConfirmation` - bject. Because no HTTP method is specified, the request is
-
+response to an `OrderConfirmation` object. Because no HTTP method is specified, the request is
 executed as an HTTP POST.
 
 
 The next example demonstrates how you can make an HTTP GET request by specifying the
-
 
 `HttpMethod` :
 
@@ -2790,15 +2652,11 @@ The `HttpRequestMessage` now has the following properties set:
 
 - Url = `http://127.0.0.1:3500/v1.0/invoke/orderservice/method/submit`
 
-
 - HttpMethod = POST
 
-
-- Content = `JsonContent` - bject containing the JSON-serialized `order`
-
+- Content = `JsonContent` object containing the JSON-serialized `order`
 
 - Headers.Authorization = “bearer <token>”
-
 
 Once you’ve got the request set up the way you want, use `DaprClient.InvokeMethodAsync` to send it:
 
@@ -2815,16 +2673,13 @@ full access to the underlying `HttpResponseMessage` :
 #### **Invoke gRPC services using DaprClient**
 
 DaprClient provides a family of `InvokeMethodGrpcAsync` methods for calling gRPC endpoints. The
-
 main difference with the HTTP methods is the use of a Protobuf serializer instead of JSON. The
-
-following example invokes the `submitOrder` method of the `orderservice` - ver gRPC.
+following example invokes the `submitOrder` method of the `orderservice` over gRPC.
 
 
 In the example above, DaprClient serializes the given `order` [object using Protobuf](https://developers.google.com/protocol-buffers) and uses the result
 as the gRPC request body. Likewise, the response body is Protobuf deserialized and returned to the
 caller. Protobuf typically provides better performance than the JSON payloads used in HTTP service
-
 invocation.
 
 ### Name resolution components
@@ -2833,20 +2688,16 @@ invocation.
 At the time of writing, Dapr provides support for the following name resolution components:
 
 
-mDNS (default when running self-hosted)
+- mDNS (default when running self-hosted)
 
-
-Kubernetes Name Resolution (default when running in Kubernetes)
-
+- Kubernetes Name Resolution (default when running in Kubernetes)
 
 - HashiCorp Consul
 
 #### **Configuration**
 
-
 To use a non-default name resolution component, add a `nameResolution` spec to the application’s
 Dapr configuration file. Here’s an example of a Dapr configuration file that enables HashiCorp Consul
-
 name resolution:
 
 
@@ -2880,9 +2731,7 @@ DaprClient daprClient) { // …
 
 ```
 // get owner info (Dapr service invocation)
-
 var vehicleInfo =
-
 _vehicleRegistrationService.GetVehicleInfo(speedingViolation.VehicleId).Result;
 
 // ...
@@ -2931,12 +2780,10 @@ integration as described in the Invoke HTTP services using HttpClient section of
 
 
 The `DaprClient.CreateInvokeHttpClient` creates an `HttpClient` instance that calls the
-
 VehicleRegistration service using the service invocation building block under the covers. It expects
-both the Dapr `app-id` - f the target service and the URL of its Dapr sidecar. At start time, the
+both the Dapr `app-id` of the target service and the URL of its Dapr sidecar. At start time, the
 
 `daprHttpPort` argument contains the port number used for HTTP communication with the Dapr
-
 sidecar.
 
 
@@ -2945,9 +2792,7 @@ Using Dapr service invocation in the Traffic Control sample application provides
 
 1. Decouples the location of the target service.
 
-
 2. Adds resiliency with automatic retry features.
-
 
 3. Ability to reuse an existing `HttpClient` based proxy (offered by the ASP.NET Core integration).
 
@@ -2956,15 +2801,13 @@ Using Dapr service invocation in the Traffic Control sample application provides
 
 In this chapter, you learned about the service invocation building block. You saw how to invoke
 remote methods both by making direct HTTP calls to the Dapr sidecar, and by using the Dapr .NET
-
 SDK.
 
 
 The Dapr .NET SDK provides multiple ways to invoke remote methods. HttpClient support is great for
 developers wanting to reuse existing skills and is compatible with many existing frameworks and
 libraries. DaprClient offers support for directly using the Dapr service invocation API using either HTTP
-
-- r gRPC semantics.
+or gRPC semantics.
 
 #### **References**
 
@@ -2978,9 +2821,11 @@ libraries. DaprClient offers support for directly using the Dapr service invocat
 60 CHAPTER 7 | The Dapr service invocation building block
 
 
-# CHAPTER 8
+**CHAPTER**
+# 8
 
 ## The Dapr publish & subscribe building block
+
 
 [The Publish-Subscribe pattern (often referred to as “pub/sub”) is a well-known and widely used](https://docs.microsoft.com/azure/architecture/patterns/publisher-subscriber)
 messaging pattern. Architects commonly embrace it in distributed applications. However, the
@@ -3008,7 +2853,6 @@ From the previous figure, note the steps of the pattern:
 
 1. Publishers send messages to the message broker.
 
-
 2. Subscribers bind to a subscription on the message broker.
 
 
@@ -3016,7 +2860,6 @@ From the previous figure, note the steps of the pattern:
 
 
 3. The message broker forwards a copy of the message to interested subscriptions.
-
 
 4. Subscribers consume messages from their subscriptions.
 
@@ -3026,7 +2869,6 @@ With it, the message broker guarantees **durability** by storing the message. Su
 be immediately available or even online when a publisher sends a message. Once available, the
 subscriber receives and processes the message. Dapr guarantees **At-Least-Once** semantics for
 message delivery. Once a message is published, it will be delivered at least once to any interested
-
 subscriber.
 
 
@@ -3044,8 +2886,7 @@ custom code that can be complex, repetitive, and error-prone.
 
 
 The Dapr publish & subscribe building block provides the messaging abstraction and implementation
-
-- ut-of-the-box. The custom code you would have had to write is prebuilt and encapsulated inside the
+out-of-the-box. The custom code you would have had to write is prebuilt and encapsulated inside the
 Dapr building block. You bind to it and consume it. Instead of writing messaging plumbing code, you
 and your team focus on creating business functionality that adds value to your customers.
 
@@ -3054,7 +2895,6 @@ and your team focus on creating business functionality that adds value to your c
 
 The Dapr publish & subscribe building block provides a platform-agnostic API framework to send and
 [receive messages. Your services publish messages to a named topic. Your services subscribe to a topic](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions#topics-and-subscriptions)
-
 to consume messages.
 
 
@@ -3084,19 +2924,15 @@ There are several Dapr specific URL segments in the above call:
 
 - `<dapr-port>` provides the port number upon which the Dapr sidecar is listening.
 
-
 - `<pub-sub-name>` provides the name of the selected Dapr pub/sub component.
 
-
 - `<topic>` provides the name of the topic to which the message is published.
-
 
 Using the _curl_ command-line tool to publish a message, you can try it out:
 
 
 You receive messages by subscribing to a topic. At startup, the Dapr runtime will call the application
-
-- n a well-known endpoint to identify and create the required subscriptions:
+on a well-known endpoint to identify and create the required subscriptions:
 
 ```
 http://localhost:<appPort>/dapr/subscribe
@@ -3107,7 +2943,6 @@ http://localhost:<appPort>/dapr/subscribe
 
 
 - `<appPort>` informs the Dapr sidecar of the port upon which the application is listening.
-
 
 You can implement this endpoint yourself. But Dapr provides more intuitive ways of implementing it.
 We’ll address this functionality later in this chapter.
@@ -3137,31 +2972,24 @@ From the previous figure, note the flow:
 1. The Dapr sidecar for Service B calls the `/dapr/subscribe` endpoint from Service B (the
 consumer). The service responds with the subscriptions it wants to create.
 
-
 2. The Dapr sidecar for Service B creates the requested subscriptions on the message broker.
-
 
 3. Service A publishes a message at the `/v1.0/publish/<pub-sub-name>/<topic>` endpoint on
 the Dapr Service A sidecar.
 
-
 4. The Service A sidecar publishes the message to the message broker.
-
 
 5. The message broker sends a copy of the message to the Service B sidecar.
 
-
 6. The Service B sidecar calls the endpoint corresponding to the subscription (in this case `/orders` )
-
-   - n Service B. The service responds with an HTTP status-code `200 OK` so the sidecar will consider
+on Service B. The service responds with an HTTP status-code `200 OK` so the sidecar will consider
 the message as being handled successfully.
 
 
 In the example, the message is handled successfully. But if something goes wrong while Service B is
 handling the request, it can use the response to specify what needs to happen with the message.
 When it returns an HTTP status-code `404`, an error is logged and the message is dropped. With any
-
-- ther status-code than `200` - r `404`, a warning is logged and the message is retried. Alternatively,
+other status-code than `200` or `404`, a warning is logged and the message is retried. Alternatively,
 
 
 65 CHAPTER 8 | The Dapr publish & subscribe building block
@@ -3202,14 +3030,11 @@ To publish a message, the `DaprClient` exposes a `PublishEventAsync` method.
 - The first argument `pubsub` is the name of the Dapr component that provides the message broker
 implementation. We’ll address components later in this chapter.
 
-
 - The second argument `neworder` provides the name of the topic to send the message to.
 
+- The third argument is the payload of the message.
 
-The third argument is the payload of the message.
-
-
-You can specify the .NET type of the message using the generic type parameter of the method.
+- You can specify the .NET type of the message using the generic type parameter of the method.
 
 
 66 CHAPTER 8 | The Dapr publish & subscribe building block
@@ -3217,7 +3042,6 @@ You can specify the .NET type of the message using the generic type parameter of
 
 To receive messages, you bind an endpoint to a subscription for a registered topic. The AspNetCore
 library for Dapr makes this trivial. Assume, for example, that you have an existing ASP.NET WebAPI
-
 action method entitled `CreateOrder` :
 
 
@@ -3232,15 +3056,12 @@ You specify two key elements with this attribute:
 
 - The Dapr pub/sub component to target (in this case `pubsub` ).
 
-
 - The topic to subscribe to (in this case `newOrder` ).
-
 
 Dapr then invokes that action method as it receives messages for that topic.
 
 
 You’ll also need to enable ASP.NET Core to use Dapr. The Dapr .NET SDK provides several extension
-
 methods that can be used to do this.
 
 
@@ -3258,7 +3079,6 @@ enable Dapr:
 
 
 The call to `UseCloudEvents` adds **CloudEvents** middleware into to the ASP.NET Core middleware
-
 pipeline. This middleware will unwrap requests that use the CloudEvents structured format, so the
 receiving method can read the event payload directly.
 
@@ -3276,45 +3096,32 @@ attribute and instruct Dapr to create subscriptions for them.
 
 [Dapr pub/sub components handle the actual transport of the messages. Several are available. Each](https://github.com/dapr/components-contrib/tree/master/pubsub)
 encapsulates a specific message broker product to implement the pub/sub functionality. At the time
+of writing, the following pub/sub components were available:
 
-- f writing, the following pub/sub components were available:
 
-
-Apache Kafka
-
+- Apache Kafka
 
 - AWS SNS/SQS
 
-
 - Azure Event Hubs
-
 
 - Azure Service Bus
 
-
 - GCP Pub/Sub
-
 
 - Hazelcast
 
-
 - In Memory
-
 
 - JetStream
 
-
 - MQTT
-
 
 - NATS Streaming
 
-
 - Pulsar
 
-
 - RabbitMQ
-
 
 - Redis Streams
 
@@ -3339,7 +3146,6 @@ sending or receiving a message, you need to specify this name (as you saw earlie
 
 
 Below you see an example of a Dapr configuration file for configuring a RabbitMQ message broker
-
 component:
 
 
@@ -3348,7 +3154,6 @@ In this example, you can see that you can specify any message broker-specific co
 `metadata` block. In this case, RabbitMQ is configured to create durable queues. But the RabbitMQ
 component has more configuration options. Each of the components’ configuration will have its own
 [set of possible fields. You can read which fields are available in the documentation of each pub/sub](https://docs.dapr.io/operations/components/setup-pubsub/supported-pubsub/)
-
 [component.](https://docs.dapr.io/operations/components/setup-pubsub/supported-pubsub/)
 
 
@@ -3364,12 +3169,9 @@ You have to specify several elements with every subscription:
 
 - The name of the Dapr pub/sub component you want to use (in this case `pubsub` ).
 
-
 - The name of the topic to subscribe to (in this case `newOrder` ).
 
-
 - The API operation that needs to be called for this topic (in this case `/orders` ).
-
 
 - [The scope](https://docs.dapr.io/developing-applications/building-blocks/pubsub/pubsub-scopes/) can specify which services can publish and subscribe to a topic.
 
@@ -3383,7 +3185,7 @@ send speeding violations to the FineCollection service. Figure 7-4 shows the con
 69 CHAPTER 8 | The Dapr publish & subscribe building block
 
 
-- f the Dapr Traffic Control sample application. The Dapr pub/sub building block is used in flows
+of the Dapr Traffic Control sample application. The Dapr pub/sub building block is used in flows
 marked with number 2 in the diagram:
 
 
@@ -3401,10 +3203,10 @@ named `pubsub` should be used to subscribe to messages sent to the `speedingviol
 
 The TrafficControl service sends speeding violations. Near the end of the `VehicleExit` method in the
 
-`TrafficController` class, the `DaprClient` - bject is used to publish `SpeedingViolation` messages
+`TrafficController` class, the `DaprClient` object is used to publish `SpeedingViolation` messages
 using the pub/sub building block:
 
-Note how the `DaprClient` - bject reduces the call to a single line of code, again, binding to the
+Note how the `DaprClient` object reduces the call to a single line of code, again, binding to the
 
 `speedingviolations` topic and the Dapr `pubsub` component.
 
@@ -3431,12 +3233,9 @@ Using Dapr pub/sub in the Traffic Control sample application offers the followin
 
 1. No infrastructural abstraction of a message broker to maintain.
 
-
 2. Services are temporally decoupled, which increases robustness.
 
-
 3. Publisher and subscribers are unaware of each other. This means that additional services could
-
 be introduced that will react to speeding violations in the future, without the need to change the
 TrafficControl service.
 
@@ -3467,13 +3266,15 @@ swap message brokers without requiring code changes to your application.
 71 CHAPTER 8 | The Dapr publish & subscribe building block
 
 
-# CHAPTER 9
+**CHAPTER**
+# 9
 
 ## The Dapr bindings building block
 
-Cloud-based _serverless_ - fferings, such as Azure Functions and AWS Lambda, have gained wide
+
+Cloud-based _serverless_ offerings, such as Azure Functions and AWS Lambda, have gained wide
 adoption across the distributed architecture space. Among many benefits, they enable a microservice
-to _handle events from_ - r _invoke events in_ an external system - abstracting away the underlying
+to _handle events from_ or _invoke events in_ an external system - abstracting away the underlying
 complexity and plumbing concerns. External resources are many: They include datastores, message
 [systems, and web resources, across different platforms and vendors. The Dapr bindings building block](https://docs.dapr.io/developing-applications/building-blocks/bindings/bindings-overview/)
 brings these same resource binding capabilities to the doorstep of your Dapr applications.
@@ -3483,10 +3284,8 @@ brings these same resource binding capabilities to the doorstep of your Dapr app
 
 Dapr resource bindings enable your services to integrate business operations across external
 resources outside of the immediate application. An event from an external system could trigger an
-
-- peration in your service passing in contextual information. Your service could then expand the
-
-- peration by triggering an event in another external system, passing in contextual payload
+operation in your service passing in contextual information. Your service could then expand the
+operation by triggering an event in another external system, passing in contextual payload
 information. Your service communicates without coupling or awareness of the external resource. The
 plumbing is encapsulated inside pre-defined Dapr components. The Dapr component to use can be
 easily swapped at run time without code changes.
@@ -3528,7 +3327,6 @@ receive events from the resource or trigger events on it.
 
 Input bindings trigger your code with incoming events from external resources. To receive events and
 data, you register a public endpoint from your service that becomes the _event handler_ . Figure 8-2
-
 shows the flow:
 
 
@@ -3544,18 +3342,14 @@ Figure 8.2 describes the steps for receiving events from an external Twitter acc
 1. The Dapr sidecar reads the binding configuration file and subscribes to the event specified for
 the external resource. In the example, the event source is a Twitter account.
 
-
 2. When a matching Tweet is published on Twitter, the binding component running in the Dapr
 sidecar picks it up and triggers an event.
-
 
 3. The Dapr sidecar invokes the endpoint (that is, event handler) configured for the binding. In the
 example, the service listens for an HTTP POST on the `/tweet` endpoint on port 6000. Because it’s
 an HTTP POST operation, the JSON payload for the event is passed in the request body.
 
-
 4. After handling the event, the service returns an HTTP status code `200 OK` .
-
 
 The following ASP.NET Core controller provides an example of handling an event triggered by the
 Twitter binding:
@@ -3563,8 +3357,7 @@ Twitter binding:
 
 If the operation should error, you would return the appropriate 400 or 500 level HTTP status code. For
 bindings that feature _at-least-once_ delivery guarantees, the Dapr sidecar will retry the trigger. Check
-
-[out Dapr documentation for resource bindings to see whether they offer](https://docs.dapr.io/operations/components/setup-bindings/supported-bindings) _at-least-once_ - r _exactly-once_
+[out Dapr documentation for resource bindings to see whether they offer](https://docs.dapr.io/operations/components/setup-bindings/supported-bindings) _at-least-once_ or _exactly-once_
 delivery guarantees.
 
 #### **Output bindings**
@@ -3585,10 +3378,8 @@ _Figure 8-3. Dapr output binding flow._
 1. The Dapr sidecar reads the binding configuration file with the information on how to connect to
 the external resource. In the example, the external resource is a Twilio SMS account.
 
-
 2. Your application invokes the `/v1.0/bindings/sms` endpoint on the Dapr sidecar. In this case, it
 uses an HTTP POST to invoke the API. It’s also possible to use gRPC.
-
 
 3. The binding component running in the Dapr sidecar calls the external messaging system to send
 the message. The message will contain the payload passed in the POST request.
@@ -3598,7 +3389,6 @@ As an example, you can invoke an output binding by invoking the Dapr API using c
 
 
 Note that the HTTP port is the same as used by the Dapr sidecar (in this case, the default Dapr HTTP
-
 port `3500` ).
 
 
@@ -3610,18 +3400,15 @@ different, especially for the metadata that is sent. Each payload must also cont
 75 CHAPTER 9 | The Dapr bindings building block
 
 
-that defines the operation the binding will execute. The above example specifies a `create` - peration
+that defines the operation the binding will execute. The above example specifies a `create` operation
 that creates the SMS message. Common operations include:
 
 
 - create
 
-
 - get
 
-
 - delete
-
 
 - list
 
@@ -3647,8 +3434,7 @@ When used to invoke a binding, the `DaprClient` uses gRPC to call the Dapr API o
 
 Under the hood, resource bindings are implemented with Dapr binding components. They’re
 contributed by the community and written in Go. If you need to integrate with an external resource
-
-                                                     [for which no Dapr binding exists yet, you can create it yourself. Check out the Dapr components](https://github.com/dapr/components-contrib)
+[for which no Dapr binding exists yet, you can create it yourself. Check out the Dapr components-](https://github.com/dapr/components-contrib)
 [contrib repo](https://github.com/dapr/components-contrib) to see how you can contribute a binding.
 
 
@@ -3665,16 +3451,14 @@ Twitter binding:
 Each binding configuration contains a general `metadata` element with a `name` and `namespace` field.
 Dapr will determine the endpoint to invoke your service based upon the configured `name` field. In the
 above example, Dapr will invoke the method annotated with `/twitter-mention` in your service when
-
 an event occurs.
 
 
-In the `spec` element, you specify the `type` - f the binding along with binding specific `metadata` . The
+In the `spec` element, you specify the `type` of the binding along with binding specific `metadata` . The
 example specifies credentials for accessing a Twitter account using its API. The metadata can differ
 between input and output bindings. For example, to use Twitter as an input binding, you need to
 specify the text to search for in tweets using the `query` field. Every time a matching tweet is sent, the
 Dapr sidecar will invoke the `/twitter-mention` endpoint on the service. It will also deliver the
-
 contents of the tweet.
 
 
@@ -3693,8 +3477,7 @@ Pay close attention to Dapr’s Cron binding. It doesn’t subscribe to events f
 Instead, this binding uses a configurable interval schedule to trigger your application. The binding
 provides a simple way to implement a background worker to wake up and do some work at a regular
 interval, without the need to implement an endless loop with a configurable delay. Here’s an example
-
-- f a Cron binding configuration:
+of a Cron binding configuration:
 
 
 77 CHAPTER 9 | The Dapr bindings building block
@@ -3734,9 +3517,7 @@ an implementation of the `ITrafficControlService` interface using constructor in
 
 
 :::{custom-style=CodeBox} csharp public CameraSimulation(int camNumber, ITrafficControlService
-
 trafficControlService) {   _camNumber = camNumber;   _trafficControlService = trafficControlService;
-
 } :::
 
 
@@ -3744,8 +3525,7 @@ topics respectively:
 
 
 The constructor sets up the MQTT client to send messages to the MQTT broker (Mosquitto) running
-
-- n port 1883.
+on port 1883.
 
 
 On the other end, the TrafficControl service uses the MQTT input binding to receive
@@ -3757,7 +3537,6 @@ On the other end, the TrafficControl service uses the MQTT input binding to rece
 
 
 separate component configuration file in the `/dapr/components` folder. The first one is
-
 
 `entrycam.yaml` :
 
@@ -3797,7 +3576,6 @@ _Figure 8-5. Conceptual architecture of the Dapr Traffic Control sample applicat
 
 
 The `CollectFine` method on the CollectionController in the FineCollection service contains code that
-
 uses the Dapr client to invoke the output binding:
 
 
@@ -3813,15 +3591,11 @@ The following arguments are required to invoke the binding:
 
 - The name of the binding component. In this case `sendmail` .
 
-
 - The operation the binding needs to perform. In this case `create` .
 
+- The body of the message to send. In this case, the HTML email body.
 
-The body of the message to send. In this case, the HTML email body.
-
-
-The metadata for sending the email.
-
+- The metadata for sending the email.
 
 The Dapr output binding named `sendmail` is configured in the `email.yaml` component configuration
 file in the `/dapr/components` folder:
@@ -3852,9 +3626,7 @@ Using Dapr bindings in the Traffic Control sample application provides the follo
 
 
 1. Using MQTT messaging and SMTP without the need to learn this protocol or a specific MQTT
-
 API.
-
 
 2. Using SMTP to send an email without the need to learn this protocol or a specific SMTP API.
 
@@ -3864,7 +3636,6 @@ API.
 Dapr resource bindings enable you to integrate with different external resources and systems without
 taking dependencies on their libraries or SDKs. These external systems don’t necessarily have to be
 messaging systems like a service bus or message broker. Bindings also exist for datastores and web
-
 resources like Twitter or SendGrid.
 
 
@@ -3874,6 +3645,7 @@ configuration to determine the endpoint to call in your application.
 
 
 Output bindings will send messages to an external system. You trigger an output binding by doing an
+HTTP POST on the `/v1.0/bindings/<binding-name>` endpoint on the Dapr sidecar. You can also use
 
 bindings using gRPC.
 
@@ -3886,11 +3658,9 @@ binding component.
 #### **References**
 
 
-[Dapr documentation for resource bindings](https://docs.dapr.io/operations/components/setup-bindings/supported-bindings/)
-
+- [Dapr documentation for resource bindings](https://docs.dapr.io/operations/components/setup-bindings/supported-bindings/)
 
 - [Mosquitto MQTT broker](https://mosquitto.org/)
-
 
 - [MailDev development SMTP server](https://github.com/maildev/maildev)
 
@@ -3898,9 +3668,11 @@ binding component.
 83 CHAPTER 9 | The Dapr bindings building block
 
 
-# CHAPTER 10
+**CHAPTER**
+# 10
 
 ## The Dapr actors building block
+
 
 The actor model originated in 1973. It was proposed by Carl Hewitt as a conceptual model of
 concurrent computation, a form of computing in which several computations are executed at the
@@ -3917,7 +3689,6 @@ messages to other (possibly new) actors.
 The reason why the actor model makes writing concurrent systems easier is that it provides a turnbased (or single-threaded) access model. Multiple actors can run at the same time, but each actor will
 process received messages one at a time. This means that you can be sure that at most one thread is
 active inside an actor at any time. That makes writing correct concurrent and parallel systems much
-
 easier.
 
 ### What it solves
@@ -3927,20 +3698,17 @@ Actor model implementations are usually tied to a specific language or platform.
 building block however, you can leverage the actor model from any language or platform.
 
 
-“ ”
-[Dapr’s implementation is based on the virtual actor pattern introduced by Project](https://www.microsoft.com/research/project/orleans-virtual-actors/) Orleans . With the
+[Dapr’s implementation is based on the virtual actor pattern introduced by Project “Orleans”. With the](https://www.microsoft.com/research/project/orleans-virtual-actors/)
 virtual actor pattern, you don’t need to explicitly create actors. Actors are activated implicitly and
 placed on a node in the cluster the first time a message is sent to the actor. When not executing
-
-- perations, actors are silently unloaded from memory. If a node fails, Dapr automatically moves
+operations, actors are silently unloaded from memory. If a node fails, Dapr automatically moves
 activated actors to healthy nodes. Besides sending messages between actors, the Dapr actor model
 also support scheduling future work using timers and reminders.
 
 
 While the actor model can provide great benefits, it’s important to carefully consider the actor design.
 For example, having many clients call the same actor will result in poor performance because the actor
-
-- perations execute serially. Here are some criteria to check if a scenario is a good fit for Dapr actors:
+operations execute serially. Here are some criteria to check if a scenario is a good fit for Dapr actors:
 
 
 - Your problem space involves concurrency. Without actors, you’d have to introduce explicit
@@ -3950,22 +3718,19 @@ locking mechanisms in your code.
 84 CHAPTER 10 | The Dapr actors building block
 
 
-Your problem space can be partitioned into small, independent, and isolated units of state and
+- Your problem space can be partitioned into small, independent, and isolated units of state and
 logic.
 
-
-You don’t need low-latency reads of the actor state. Low-latency reads cannot be guaranteed
+- You don’t need low-latency reads of the actor state. Low-latency reads cannot be guaranteed
 because actor operations execute serially.
 
-
-You don’t need to query state across a set of actors. Querying across actors is inefficient because
+- You don’t need to query state across a set of actors. Querying across actors is inefficient because
 each actor’s state needs to be read individually and can introduce unpredictable latencies.
 
 
-[One design pattern that fits these criteria quite well is the orchestration-based saga](https://docs.microsoft.com/azure/architecture/reference-architectures/saga/saga) - r _process_
+[One design pattern that fits these criteria quite well is the orchestration-based saga](https://docs.microsoft.com/azure/architecture/reference-architectures/saga/saga) or _process_
 _manager_ design pattern. A saga manages a sequence of steps that must be taken to reach some
-
-- utcome. The saga (or process manager) maintains the current state of the sequence and triggers the
+outcome. The saga (or process manager) maintains the current state of the sequence and triggers the
 next step. If a step fails, the saga can execute compensating actions. Actors make it easy to deal with
 concurrency in the saga and to keep track of the current state. The eShopOnDapr reference
 application uses the saga pattern and Dapr actors to implement the Ordering process.
@@ -3981,20 +3746,15 @@ http://localhost:<daprPort>/v1.0/actors/<actorType>/<actorId>/
 
 - `<daprPort>` : the HTTP port that Dapr listens on.
 
-
 - `<actorType>` : the actor type.
 
-
 - `<actorId>` : the ID of the specific actor to call.
-
 
 The sidecar manages how, when and where each actor runs, and also routes messages between
 actors. When an actor hasn’t been used for a period of time, the runtime deactivates the actor and
 removes it from memory. Any state managed by the actor is persisted and will be available when the
 actor re-activates. Dapr uses an idle timer to determine when an actor can be deactivated. When an
-
-- peration is called on the actor (either by a method call or a reminder firing), the idle timer is reset
-
+operation is called on the actor (either by a method call or a reminder firing), the idle timer is reset
 and the actor instance will remain activated.
 
 
@@ -4027,9 +3787,7 @@ _Figure 11-2. Actor placement service._
 1. On startup, the sidecar makes a call to the actor service to get the registered actor types as well
 as actor configuration settings.
 
-
 2. The sidecar sends the list of registered actor types to the placement service.
-
 
 3. The placement service broadcasts the updated partitioning information to all actor service
 instances. Each instance will keep a cached copy of the partitioning information and use it to
@@ -4045,7 +3803,6 @@ invoke actors.
 The next figure shows an ordering service instance running in Pod 1 call the `ship` method of an
 
 `OrderActor` instance with ID `3` . Because the actor with ID `3` is placed in a different instance, this results
-
 in a call to a different node in the cluster:
 
 
@@ -4055,12 +3812,10 @@ _Figure 11-3. Calling an actor method._
 1. The service calls the actor API on the sidecar. The JSON payload in the request body contains the
 data to send to the actor.
 
-
 2. The sidecar uses the locally cached partitioning information from the placement service to
 determine which actor service instance (partition) is responsible for hosting the actor with ID `3` .
 In this example, it’s the service instance in pod 2. The call is forwarded to the appropriate
 sidecar.
-
 
 3. The sidecar instance in pod 2 calls the service instance to invoke the actor. The service instance
 activates the actor (if it hasn’t already) and executes the actor method.
@@ -4073,7 +3828,6 @@ activates the actor (if it hasn’t already) and executes the actor method.
 
 The turn-based access model ensures that at any time there’s at most one thread active inside an
 actor instance. To understand why this is useful, consider the following example of a method that
-
 increments a counter value:
 
 
@@ -4112,11 +3866,8 @@ configuration of a due time. The difference lies in the lifetime of the callback
 - Timers will only stay active as long as the actor is activated. Timers _will not_ reset the idle-timer,
 so they cannot keep an actor active on their own.
 
-
-Reminders outlive actor activations. If an actor is deactivated, a reminder will re-activate the
-
+- Reminders outlive actor activations. If an actor is deactivated, a reminder will re-activate the
 actor. Reminders _will_ reset the idle-timer.
-
 
 Timers are registered by making a call to the actor API. In the following example, a timer is registered
 with a due time of 0 and a period of 10 seconds.
@@ -4131,7 +3882,6 @@ due time of 5 minutes, and an empty period:
 
 
 This reminder will fire in 5 minutes. Because the given period is empty, this will be a one-time
-
 reminder.
 
 
@@ -4149,21 +3899,15 @@ transactions. At the time of writing, the following state stores support multi-i
 
 - Azure Cosmos DB
 
-
 - MongoDB
-
 
 - MySQL
 
-
 - PostgreSQL
-
 
 - Redis
 
-
 - RethinkDB
-
 
 - SQL Server
 
@@ -4200,7 +3944,6 @@ The constructor in the snippet above takes a `host` argument of type `ActorHost`
 represents the host for an actor type within the actor runtime. You need to pass this argument to the
 constructor of the `Actor` base class. Actors also support dependency injection. Any additional
 arguments that you add to the actor constructor are resolved using the .NET dependency injection
-
 container.
 
 
@@ -4212,16 +3955,12 @@ three arguments:
 
 1. The key of the state to update.
 
-
 2. The value to write if no score is stored in the state store yet.
-
 
 3. A `Func` to call if there already is a score stored in the state store. It takes the state key and
 current score, and returns the updated score to write back to the state store.
 
-
 The `GetScoreAsync` implementation reads the current score from the state store and returns it to the
-
 client:
 
 
@@ -4235,7 +3974,6 @@ package and make some changes in the `Program` file. In the following example, t
 
 
 The actors endpoints are necessary because the Dapr sidecar calls the application to host and interact
-
 with actor instances.
 
 
@@ -4248,8 +3986,7 @@ the `ScoreActor` using the `AddActors` extension method:
 
 At this point, the ASP.NET Core service is ready to host the `ScoreActor` and accept incoming requests.
 Client applications use actor proxies to invoke operations on actors. The following example shows
-how a console client application invokes the `IncrementScoreAsync` - peration on a `ScoreActor`
-
+how a console client application invokes the `IncrementScoreAsync` operation on a `ScoreActor`
 instance:
 
 
@@ -4281,7 +4018,6 @@ result. Remember that the Dapr placement service distributes the actor instances
 sidecars. Therefore, expect an actor call to be a network call to another node.
 
 #### **Call actors from ASP.NET Core clients**
-
 
 The console client example in the previous section uses the static `ActorProxy.Create` method directly
 to get an actor proxy instance. If the client application is an ASP.NET Core application, you should use
@@ -4331,25 +4067,19 @@ start a timer that repeatedly writes a given text to the log output.
 
 
 The `StartTimerAsync` method calls `RegisterTimerAsync` to schedule the timer. `RegisterTimerAsync`
-
 takes five arguments:
 
 
 1. The name of the timer.
 
-
 2. The name of the method to call when the timer fires.
-
 
 3. The state to pass to the callback method.
 
-
 4. The amount of time to wait before the callback method is first invoked.
-
 
 5. The time interval between callback method invocations. You can specify
 `TimeSpan.FromMilliseconds(-1)` to disable periodic signaling.
-
 
 The `TimerCallbackAsync` method receives the user state in binary form. In the example, the callback
 decodes the state back to a `string` before writing it to the log.
@@ -4362,9 +4092,7 @@ Timers can be stopped by calling `UnregisterTimerAsync` :
 
 
 Remember that timers do not reset the actor idle timer. When no other calls are made on the actor, it
-
 may be deactivated and the timer will be stopped automatically. To schedule work that does reset the
-
 idle timer, use reminders which we’ll look at next.
 
 
@@ -4376,15 +4104,11 @@ The `ReceiveReminderAsync` method is called when a reminder is fired. It takes 4
 
 1. The name of the reminder.
 
-
 2. The user state provided during registration.
-
 
 3. The invocation due time provided during registration.
 
-
 4. The invocation period provided during registration.
-
 
 To register a reminder, use the `RegisterReminderAsync` method of the actor base class. The following
 example sets a reminder to fire a single time with a due time of three minutes.
@@ -4402,7 +4126,6 @@ a callback method explicitly. As the above example shows, you implement
 Reminders both reset the idle timer and are persistent. Even if your actor is deactivated, it will be
 reactivated at the moment a reminder fires. To stop a reminder from firing, call
 
-
 `UnregisterReminderAsync` .
 
 ### Sample application: Dapr Traffic Control
@@ -4410,8 +4133,7 @@ reactivated at the moment a reminder fires. To stop a reminder from firing, call
 
 The default version of Dapr Traffic Control does not use the actor model. However, it does contain an
 alternative actor-based implementation of the TrafficControl service that you can enable. To make use
-
-- f actors in the TrafficControl service, open up the
+of actors in the TrafficControl service, open up the
 
 ```
 #define USE_ACTORMODEL
@@ -4419,13 +4141,11 @@ alternative actor-based implementation of the TrafficControl service that you ca
 ```
 
 When the actor model is enabled, the application uses actors to represent vehicles. The operations
-
 that can be invoked on the vehicle actors are defined in an `IVehicleActor` interface:
 
 
 The (simulated) entry cameras call the `RegisterEntryAsync` method when a new vehicle is first
 detected in the lane. The only responsibility of this method is storing the entry timestamp in the actor
-
 state:
 
 
@@ -4474,7 +4194,6 @@ Actors support timers and reminders to schedule future work. Timers do not reset
 will allow the actor to be deactivated when no other operations are performed. Reminders do reset
 the idle timer and are also persisted automatically. Both timers and reminders respect the turn-based
 access model, making sure that no other operations can execute while the timer/reminder events are
-
 handled.
 
 
@@ -4490,9 +4209,11 @@ supports multi-item transactions can be used to store actor state.
 99 CHAPTER 10 | The Dapr actors building block
 
 
-# CHAPTER 11
+**CHAPTER**
+# 11
 
 ## The Dapr observability building block
+
 
 Modern distributed systems are complex. You start with small, loosely coupled, independently
 deployable services. These services cross process and server boundaries. They then consume different
@@ -4504,8 +4225,7 @@ With so many separate, moving parts, how do you make sense of what is going on? 
 legacy monitoring approaches from the past aren’t enough. Instead, the system must be **observable**
 [from end-to-end. Modern observability](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/observability-patterns) practices provide visibility and insight into the health of the
 application at all times. They enable you to infer the internal state by observing the output. Not only is
-
-- bservability mandatory for monitoring and troubleshooting distributed applications, it needs to be
+observability mandatory for monitoring and troubleshooting distributed applications, it needs to be
 implemented at the start.
 
 
@@ -4516,12 +4236,9 @@ four broad categories:
 1. **Distributed tracing** provides insights into the traffic between services involved in distributed
 business transactions.
 
-
 2. **Metrics** provides insights into the performance of a service and its resource consumption.
 
-
 3. **Logging** provides insights into how code is executing and if errors have occurred.
-
 
 4. **Health** endpoints provide insight into the availability of a service.
 
@@ -4554,8 +4271,7 @@ The Dapr observability building block decouples observability from the applicati
 captures traffic generated by Dapr sidecars and Dapr system services that make up the Dapr control
 plane. The block correlates traffic from a single operation that spans multiple services. It also exposes
 performance metrics, resource utilization, and the health of the system. Telemetry is published in
-
-- pen-standard formats enabling information to be fed into your monitoring back end of choice.
+open-standard formats enabling information to be fed into your monitoring back end of choice.
 There, the information can be visualized, queried, and analyzed.
 
 
@@ -4575,7 +4291,6 @@ sidecars intercept the traffic and extract tracing, metrics, and logging informa
 
 [Dapr provides collectors that can publish telemetry to different back-end monitoring tools. These](https://docs.dapr.io/operations/monitoring/tracing/otel-collector/)
 tools present Dapr telemetry for analysis and querying. Figure 10-1 shows the Dapr observability
-
 architecture:
 
 
@@ -4585,10 +4300,8 @@ _Figure 10-1. Dapr observability architecture._
 1. Service A calls an operation on Service B. The call is routed from a Dapr sidecar for Service A to a
 sidecar for Service B.
 
-
 2. When Service B completes the operation, a response is sent back to Service A through the Dapr
 sidecars. They gather and publish all available telemetry for every request and response.
-
 
 3. The configured collector ingests the telemetry and sends it to the monitoring back end.
 
@@ -4612,13 +4325,11 @@ integrate with popular monitoring back ends.
 Distributed tracing provides insight into traffic that flows across services in a distributed application.
 The logs of exchanged request and response messages are a source of invaluable information for
 troubleshooting issues. The hard part is _correlating messages_ that belong to the same business
-
 transaction.
 
 
 [Dapr uses the W3C Trace Context to correlate related messages. It injects the same context](https://www.w3.org/TR/trace-context)
 information into requests and responses that form a unique operation. Figure 10-2 shows how
-
 correlation works:
 
 
@@ -4633,15 +4344,12 @@ _Figure 10-2. W3C Trace Context example._
 1. Service A invokes an operation on Service B. As Service A starts the call, Dapr creates a unique
 trace context and injects it into the request.
 
-
 2. Service B receives the request and invokes an operation on Service C. Dapr detects that the
 incoming request contains a trace context and propagates it by injecting it into the outgoing
 request to Service C.
 
-
 3. Service C receives the request and handles it. Dapr detects that the incoming request contains a
 trace context and propagates it by injecting it into the outgoing response back to Service B.
-
 
 4. Service B receives the response and handles it. It then creates a new response and propagates
 the trace context by injecting it into the outgoing response back to Service A.
@@ -4669,8 +4377,7 @@ The next sections discuss how to inspect tracing telemetry by publishing it to a
 
 
 [Zipkin](https://zipkin.io/) is an open-source distributed tracing system. It can ingest and visualize telemetry data. Dapr
-
-- ffers default support for Zipkin. The following example demonstrates how to configure Zipkin to
+offers default support for Zipkin. The following example demonstrates how to configure Zipkin to
 visualize Dapr telemetry.
 
 
@@ -4682,8 +4389,7 @@ example of a configuration file named `dapr-config.yaml` that enables tracing:
 
 The `samplingRate` attribute specifies the interval used for publishing traces. The value must be
 between `0` (tracing disabled) and `1` (every trace is published). With a value of `0.5`, for example, every
-
-- ther trace is published, significantly reducing published traffic. The `endpointAddress` points to an
+other trace is published, significantly reducing published traffic. The `endpointAddress` points to an
 endpoint on a Zipkin server running in a Kubernetes cluster. The default port for Zipkin is `9411` . The
 configuration must be applied to the Kubernetes cluster using the Kubernetes CLI:
 
@@ -4699,14 +4405,13 @@ kubectl apply -f dapr-config.yaml
 
 
 When installing Dapr in self-hosted mode, a Zipkin server is automatically installed and tracing is
-enabled in the default configuration file located in `$HOME/.dapr/config.yaml` - r
+enabled in the default configuration file located in `$HOME/.dapr/config.yaml` or
 
-`%USERPROFILE%\.dapr\config.yaml` - n Windows.
+`%USERPROFILE%\.dapr\config.yaml` on Windows.
 
 
 When installing Dapr on a Kubernetes cluster, Zipkin must be deployed manually. Use the following
 Kubernetes manifest file entitled `zipkin.yaml` to deploy a standard Zipkin server to a Kubernetes
-
 cluster:
 
 
@@ -4718,7 +4423,6 @@ exposes the Zipkin web front end, which you can use to view the telemetry on por
 
 
 Kubernetes CLI to apply the Zipkin manifest file to the Kubernetes cluster and deploy the Zipkin
-
 server:
 
 ```
@@ -4734,7 +4438,6 @@ part of the application must be instructed to emit telemetry when started. To do
 
 `dapr.io/config` annotation that references the `dapr-config` configuration to the deployment of
 each service. Here’s an example of the Traffic Control FineCollection service’s manifest file containing
-
 the annotation:
 
 
@@ -4795,7 +4498,7 @@ destination. Red dots indicate a failed request.
 Beyond Zipkin, other monitoring back-end software can also ingest telemetry with the Zipkin format.
 [Jaeger](https://www.jaegertracing.io/) is an open source tracing system created by Uber Technologies. It’s used to trace transactions
 [between distributed services and troubleshoot complex microservices environments. New Relic](https://newrelic.com/) is a
-_full-stack_ - bservability platform. It links relevant data from a distributed application to provide a
+_full-stack_ observability platform. It links relevant data from a distributed application to provide a
 complete picture of your system. To try them out, specify an `endpointAddress` pointing to either a
 Jaeger or New Relic server in the Dapr configuration file. Here’s an example of a configuration file that
 configures Dapr to send telemetry to a Jaeger server. The URL for Jaeger is identical to the URL for the
@@ -4808,7 +4511,6 @@ endpointAddress: "http://localhost:9415/api/v2/spans" :::
 
 
 To try out New Relic, specify the endpoint of the New Relic API. Here’s an example of a configuration
-
 file for New Relic:
 
 
@@ -4853,7 +4555,6 @@ resources running in the environment.
 
 
 Dapr generates a large set of metrics for Dapr system services and its runtime. Some examples
-
 include:
 
 
@@ -4876,7 +4577,6 @@ include:
 
 
 **Configure Dapr metrics**
-
 
 At run time, you can disable the metrics collection endpoint by including the `--enable-`
 
@@ -4942,7 +4642,6 @@ Dapr emits structured logging. Each log entry has the following format:
 When searching through logging entries in a troubleshooting scenario, the `time` and `level` fields are
 especially helpful. The time field orders log entries so that you can pinpoint specific time periods.
 When troubleshooting, log entries at the _debug level_ provide more information on the behavior of the
-
 code.
 
 
@@ -4959,7 +4658,7 @@ individual fields. Here’s the same log entries in JSON format:
 
 
 To enable JSON formatting, you need to configure each Dapr sidecar. In self-hosted mode, you can
-specify the flag `--log-as-json` - n the command line:
+specify the flag `--log-as-json` on the command line:
 
 ```
 dapr run --app-id finecollectionservice --log-level info --log-as-json dotnet run
@@ -4984,15 +4683,14 @@ The logs emitted by Dapr can be fed into a monitoring back end for analysis. A l
 component that collects logs from a system and sends them to a monitoring back end. A popular log
 [collector is Fluentd. Check out the How-To: Set up Fluentd, Elastic search and Kibana in Kubernetes](https://www.fluentd.org/) in
 the Dapr documentation. This article contains instructions for setting up Fluentd as log collector and
-the ELK Stack (Elastic Search and Kibana) as a monitoring back end.
+[the ELK Stack](https://www.elastic.co/elastic-stack) (Elastic Search and Kibana) as a monitoring back end.
 
 #### **Health status**
 
 
 The health status of a service provides insight into its availability. Each Dapr sidecar exposes a health
 API that can be used by the hosting environment to determine the health of the sidecar. The API has
-
-- ne operation:
+one operation:
 
 ```
 GET http://localhost:3500/v1.0/healthz
@@ -5003,7 +4701,6 @@ The operation returns two HTTP status codes:
 
 
 - 204: When the sidecar is healthy
-
 
 - 500: when the sidecar isn’t healthy
 
@@ -5029,7 +4726,6 @@ automatically removed from the load-balancer.
 
 Liveness and readiness probes have several configurable parameters. Both are configured in the
 container spec section of a pod’s manifest file. By default, Dapr uses the following configuration for
-
 each sidecar container:
 
 
@@ -5040,19 +4736,15 @@ The following parameters are available for the probes:
 
 - The `path` specifies the Dapr health API endpoint.
 
-
 - The `port` specifies the Dapr health API port.
-
 
 - The `initialDelaySeconds` specifies the number of seconds Kubernetes will wait before it starts
 probing a container for the first time.
 
 - The `periodSeconds` specifies the number of seconds Kubernetes will wait between each probe.
 
-
 - The `timeoutSeconds` specifies the number of seconds Kubernetes will wait on a response from
 the API before timing out. A timeout is interpreted as a failure.
-
 
 - The `failureThreshold` specifies the number of failed status code Kubernetes will accept before
 considering the container not alive or not ready.
@@ -5062,7 +4754,6 @@ considering the container not alive or not ready.
 
 Dapr offers a dashboard that presents status information on Dapr applications, components, and
 configurations. Use the Dapr CLI to start the dashboard as a web-application on the local machine on
-
 port 8080:
 
 ```
@@ -5079,12 +4770,10 @@ dapr dashboard -k
 
 The dashboard opens with an overview of all services in your application that have a Dapr sidecar. The
 following screenshot shows the Dapr dashboard for the Traffic Control sample application running in
-
 Kubernetes:
 
 
 :::image type=“content” source=“./media/observability/dapr-dashboard-overview.png” alt-text=“Dapr
-
 dashboard overview”:::
 
 
@@ -5119,8 +4808,7 @@ Dapr dashboard commands.
 
 
 The Dapr .NET SDK doesn’t contain any specific observability features. All observability features are
-
-- ffered at the Dapr level.
+offered at the Dapr level.
 
 
 If you want to emit telemetry from your .NET application code, you should consider the
@@ -5149,28 +4837,21 @@ This trace shows the communication that occurs when a speeding violation has bee
 1. An exiting vehicle triggers the MQTT input binding that sends a message containing the vehicle
 license number, lane, and timestamp.
 
-
 2. The MQTT input binding invokes the TrafficControl service with the message.
-
 
 3. The TrafficControl service retrieves the state for the vehicle, appends the entry, and saves the
 updated vehicle state back to the state store.
 
-
 4. The TrafficControl service publishes the speeding violation using pub/sub to the
 `speedingviolations` topic.
-
 
 5. The FineCollection service receives the speeding violation using a pub/sub subscription on the
 `speedingviolations` topic.
 
-
 6. The FineCollection service invokes the `vehicleinfo` endpoint of the VehicleRegistration service
 using service invocation.
 
-
 7. The FineCollection service invokes an output binding for sending the email.
-
 
 Click any trace line (span) to see more details. If you click on the last line, you’ll see the `sendmail`
 binding component invoked to send the driver a violation notice.
@@ -5188,7 +4869,6 @@ Detailed observability is critical to running a distributed system in production
 
 
 Dapr provides different types of telemetry, including distributed tracing, logging, metrics, and health
-
 status.
 
 
@@ -5221,39 +4901,27 @@ Dapr offers a dashboard that presents information about the Dapr services and co
 
 - [Azure Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview/)
 
-
 - [Open Telemetry](https://opentelemetry.io/)
-
 
 - [Zipkin](https://zipkin.io/)
 
-
 - [W3C Trace Context](https://www.w3.org/TR/trace-context/)
-
 
 - [Jaeger](https://www.jaegertracing.io/)
 
-
 - [New Relic](https://newrelic.com/)
-
 
 - [Prometheus](https://prometheus.io/)
 
-
 - [Grafana](https://grafana.com/grafana/)
 
-
-[Open Telemetry SDK for .NET](https://opentelemetry.io/docs/net/)
-
+- [Open Telemetry SDK for .NET](https://opentelemetry.io/docs/net/)
 
 - [Fluentd](https://www.fluentd.org/)
 
-
 - [ELK stack](https://www.elastic.co/elastic-stack)
 
-
 - [Seq](https://datalust.co/seq)
-
 
 - [Serilog](https://serilog.net/)
 
@@ -5261,20 +4929,20 @@ Dapr offers a dashboard that presents information about the Dapr services and co
 118 CHAPTER 11 | The Dapr observability building block
 
 
-# CHAPTER 12
+**CHAPTER**
+# 12
 
 ## The Dapr secrets management building block
+
 
 Enterprise applications require secrets. Common examples include:
 
 
 - A database connection string that contains a username and password.
 
+- An API key for calling an external web API.
 
-An API key for calling an external web API.
-
-
-A client certificate for authenticating to an external system.
+- A client certificate for authenticating to an external system.
 
 
 Secrets must be carefully managed so that they’re never disclosed outside of the application.
@@ -5293,11 +4961,11 @@ _configuration and secrets be externalized outside of the code base._
 
 [To address this concern, the .NET platform includes a Secret Manager](https://docs.microsoft.com/aspnet/core/security/app-secrets#secret-manager) feature that stores sensitive
 data in a physical folder outside of the project tree. While secrets are outside of source control, this
-feature doesn’t encrypt data. It’s designed for **development purposes** - nly.
+feature doesn’t encrypt data. It’s designed for **development purposes** only.
 
 
 A more modern and secure practice is to isolate secrets in a secrets management tool like **Hashicorp**
-**Vault** - r **Azure Key Vault** . These tools enable you to store secrets externally, vary credentials across
+**Vault** or **Azure Key Vault** . These tools enable you to store secrets externally, vary credentials across
 environments, and reference them from application code. However, each tool has its complexities and
 learning curve.
 
@@ -5314,17 +4982,14 @@ and secret management tools.
 119 CHAPTER 12 | The Dapr secrets management building block
 
 
-It hides the underlying plumbing through a unified interface.
-
+- It hides the underlying plumbing through a unified interface.
 
 - It supports various _pluggable_ secret store components, which can vary between development
 and production.
 
-
 - Applications don’t require direct dependencies on secret store libraries.
 
-
-Developers don’t require detailed knowledge of each secret store.
+- Developers don’t require detailed knowledge of each secret store.
 
 
 Dapr handles all of the above concerns.
@@ -5340,20 +5005,17 @@ management mechanism.
 Applications use the secrets management building block in two ways:
 
 
-Retrieve a secret directly from the building block.
+- Retrieve a secret directly from the building block.
 
-
-Reference a secret indirectly from a Dapr component configuration.
+- Reference a secret indirectly from a Dapr component configuration.
 
 
 Retrieving secrets directly is covered first. Referencing a secret from a Dapr component configuration
-
 file is addressed in a later section.
 
 
 The application interacts with a Dapr sidecar when using the secrets management building block. The
 sidecar exposes the secrets API. The API can be called with either HTTP or gRPC. Use the following
-
 URL to call the HTTP API:
 
 ```
@@ -5365,12 +5027,9 @@ The URL contains the following segments:
 
 - `<dapr-port>` specifies the port number upon which the Dapr sidecar is listening.
 
-
 - `<store-name>` specifies the name of the Dapr secret store.
 
-
 - `<name>` specifies the name of the secret to retrieve.
-
 
 - `<metadata>` provides additional information for the secret. This segment is optional and
 metadata properties differ per secret store. For more information on metadata properties, see
@@ -5396,9 +5055,7 @@ _Figure 11-1. Retrieving a secret with the Dapr secrets API._
 1. The service calls the Dapr secrets API, along with the name of the secret store, and secret to
 retrieve.
 
-
 2. The Dapr sidecar retrieves the specified secret from the secret store.
-
 
 3. The Dapr sidecar returns the secret information back to the service.
 
@@ -5425,7 +5082,6 @@ For .NET developers, the Dapr .NET SDK streamlines Dapr secret management. Consi
 
 `DaprClient.GetSecretAsync` method. It enables you to retrieve a secret directly from any Dapr secret
 store with minimal effort. Here’s an example of fetching a connection string secret for a SQL Server
-
 database:
 
 
@@ -5435,18 +5091,15 @@ database:
 Arguments for the `GetSecretAsync` method include:
 
 
-The name of the Dapr secret store component (‘secret-store’)
-
+- The name of the Dapr secret store component (‘secret-store’)
 
 - The secret to retrieve (‘eshopsecrets’)
-
 
 - Optional metadata key/value pairs (‘version_id=3’)
 
 
 The method responds with a dictionary object as a secret can contain multiple key/value pairs. In the
 example above, the secret named `customerdb` is referenced from the collection to return a connection
-
 string.
 
 
@@ -5456,14 +5109,13 @@ The Dapr .NET SDK also features a .NET configuration provider. It loads specifie
 `IConfiguration` dictionary that is registered in ASP.NET Core dependency injection.
 
 [The secrets configuration provider is available from the Dapr.Extensions.Configuration NuGet](https://www.nuget.org/packages/Dapr.Extensions.Configuration)
-package. The provider can be registered in the `Program.cs` - f an ASP.NET Web API application:
+package. The provider can be registered in the `Program.cs` of an ASP.NET Web API application:
 
 
 The above example loads the `eshopsecrets` secrets collection into the .NET configuration system at
 startup. Registering the provider requires an instance of `DaprClient` to invoke the secrets API on the
 Dapr sidecar. The other arguments include the name of the secret store and a `DaprSecretDescriptor`
-
-- bject with the name of the secret.
+object with the name of the secret.
 
 
 Once loaded, you can retrieve secrets directly from application code:
@@ -5477,9 +5129,7 @@ writing, the following secret stores are available:
 
 - AlibabaCloud OOS Parameter Store
 
-
 - AWS Secrets Manager
-
 
 - AWS SSM Parameter Store
 
@@ -5489,18 +5139,13 @@ writing, the following secret stores are available:
 
 - Azure Key Vault
 
-
 - GCP Secret Manager
-
 
 - HashiCorp Vault
 
-
 - Kubernetes secrets
 
-
 - Local environment variables
-
 
 - Local file
 
@@ -5516,7 +5161,6 @@ The following sections show how to configure a secret store.
 
 
 You configure a secret store using a Dapr component configuration file. The typical structure of the
-
 file is shown below:
 
 
@@ -5538,7 +5182,6 @@ storing state:
 The above configuration file contains a **clear-text** password for connecting to the Redis server.
 **Hardcoded** passwords are always a bad idea. Pushing this configuration file to a public repository
 would expose the password. Storing the password in a secret store would dramatically improve this
-
 scenario.
 
 
@@ -5582,7 +5225,6 @@ Consider the following snippet:
 
 Using a colon as a separator, you can retrieve the `customerdb` connection-string using the key
 
-
 `connectionStrings:customerdb` .
 
 
@@ -5597,9 +5239,7 @@ component to obtain the password for connecting to the Redis server:
 
 The `secretKeyRef` element references the secret containing the password. It replaces the earlier _clear-_
 _text_ value. The secret name and the key name, `eShopRedisPassword`, reference the secret. The name
-
-- f the secret management component `eshop-local-secret-store` is found in the `auth` metadata
-
+of the secret management component `eshop-local-secret-store` is found in the `auth` metadata
 element.
 
 
@@ -5615,7 +5255,6 @@ be different in the next example using Kubernetes secrets.
 
 This second example focuses on a Dapr application running in Kubernetes. It uses the standard secrets
 mechanism that Kubernetes offers. Use the Kubernetes CLI ( `kubectl` ) to create a secret named `eshop-`
-
 
 `redis-secret` that contains the password:
 
@@ -5642,7 +5281,6 @@ configuration files without knowing the actual value of the secrets.
 
 The next example is geared toward a real-world production scenario. It uses **Azure Key Vault** as the
 secret store. Azure Key Vault is a managed Azure service that enables secrets to be stored securely in
-
 the cloud.
 
 
@@ -5651,10 +5289,8 @@ For this example to work, the following prerequisites must be satisfied:
 
 - You’ve secured administrative access to an Azure subscription.
 
-
 - You’ve provisioned an Azure Key Vault named `eshopkv` that holds a secret named
 `redisPassword` that contains the password for connecting to the Redis server.
-
 
 - [You’ve created service principal in Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
 
@@ -5662,7 +5298,7 @@ For this example to work, the following prerequisites must be satisfied:
 126 CHAPTER 12 | The Dapr secrets management building block
 
 
-You’ve installed an X509 certificate for this service principal (containing both the public and
+- You’ve installed an X509 certificate for this service principal (containing both the public and
 private key) on the local filesystem.
 
 
@@ -5684,14 +5320,11 @@ Key Vault with the following properties:
 
 - The `vaultName` contains the name of the Azure Key Vault.
 
-
-- The `spnTenantId` contains the _tenant ID_ - f the service principal used to authenticate against the
+- The `spnTenantId` contains the _tenant ID_ of the service principal used to authenticate against the
 Key Vault.
 
-
-- The `spnClientId` contains the _app ID_ - f the service principal used to authenticate against the
+- The `spnClientId` contains the _app ID_ of the service principal used to authenticate against the
 Key Vault.
-
 
 - The `spnCertificateFile` contains the path to the certificate file for the service principal to
 authenticate against the Key Vault.
@@ -5720,11 +5353,11 @@ First, create a _Kubernetes secret_ that contains a certificate file using the k
 
 The command requires two command-line arguments:
 
+- `[k8s_spn_secret_name]` is the secret name in Kubernetes secret store.
+
 - `[pfx_certificate_file_local_path]` is the path of X509 certificate file.
 
-
 Once created, you can reference the Kubernetes secret in the secret store component configuration
-
 file:
 
 
@@ -5798,7 +5431,6 @@ management building block.
 
 The TrafficControl service stores vehicle information in a Redis state store (see the State management
 chapter). It uses the secrets management building block for retrieving credentials to connect to the
-
 Redis server.
 
 
@@ -5807,7 +5439,6 @@ two ways for specifying secrets:
 
 
 - A local JSON file
-
 
 - A Kubernetes secret
 
@@ -5844,7 +5475,6 @@ Examine the following `secrets.yaml` Kubernetes manifest file in the `k8s` folde
 
 
 The component is also named `trafficcontrol-secrets` . Secrets are stored as Base64 encoded
-
 strings.
 
 
@@ -5856,7 +5486,6 @@ strings.
 The following paragraphs describe how secrets are used in the Traffic Control sample application.
 
 #### **SMTP server credentials**
-
 
 Examine the `email.yaml` component configuration file located in the `dapr/components` folder:
 
@@ -5877,7 +5506,6 @@ component to use with the `auth` section. Instead, the default is the built-in K
 
 #### **Redis server credentials**
 
-
 Next, examine the `statestore.yaml` component configuration file in the `dapr/components` folder:
 
 Once again, the `auth` section references the secrets management component named
@@ -5893,7 +5521,6 @@ Once again, the `auth` section references the secrets management component named
 The FineCollection service uses a component that calculates the fine based on the information of a
 speeding violation. This component is implemented as a domain service and is abstracted by the
 
-
 `IFineCalculator` interface:
 
 
@@ -5901,13 +5528,12 @@ The `CalculateFine` method expects a string containing a `licenseKey` as its fir
 unlocks the third-party component used by the implementation. To keep the example simple, the
 implementation hard-codes a series of `if` statements. You can find the implementation in the
 
-
 `HardCodedFineCalculator` class in the `DomainsServices` folder:
 
 
 The implementation simulates a check on the `licenseKey` that is passed in. The
 
-`CollectionController` - f the FineCollection service must pass in the correct license key argument
+`CollectionController` of the FineCollection service must pass in the correct license key argument
 when calling the `CalculateFine` method. It retrieves the license key from the Dapr secrets
 management building block that is exposed by the Dapr client in the Dapr SDK for .NET. If you
 examine the constructor of the `CollectionController`, you can see the call:
@@ -5929,7 +5555,6 @@ Using Dapr secrets management offers several benefits:
 
 1. No sensitive information is stored in code or application configuration files.
 
-
 2. No need to learn any new API for interacting with a secrets store.
 
 ### Summary
@@ -5941,11 +5566,10 @@ them from being accidentally disclosed.
 
 
 The building block supports several different secret stores and hides their complexity with the Dapr
-
 secrets API.
 
 
-The Dapr .NET SDK provides a `DaprClient` - bject to retrieve secrets. It also includes a .NET
+The Dapr .NET SDK provides a `DaprClient` object to retrieve secrets. It also includes a .NET
 configuration provider that adds secrets to the .NET configuration system. Once loaded, you can
 consume these secrets in your .NET code.
 
@@ -5967,14 +5591,15 @@ You can use secret scopes to control access to specific secrets.
 136 CHAPTER 12 | The Dapr secrets management building block
 
 
-# CHAPTER 13
+**CHAPTER**
+# 13
 
 ## Dapr reference application
 
+
 Over the course of this book, you’ve learned about the foundational benefits of Dapr. You saw how
 Dapr can help you and your team construct distributed applications while reducing architectural and
-
-- perational complexity. Along the way, you’ve had the opportunity to build some small Dapr apps.
+operational complexity. Along the way, you’ve had the opportunity to build some small Dapr apps.
 Now, it’s time to explore how a more complex application can benefit from Dapr.
 
 
@@ -5985,7 +5610,6 @@ But, first a little history.
 
 Several years ago, Microsoft, in partnership with leading community experts, released a popular
 [guidance book, entitled .NET Microservices for Containerized .NET Applications. Figure 12-1 shows the](https://dotnet.microsoft.com/download/e-book/microservices-architecture/pdf)
-
 book:
 
 
@@ -5996,7 +5620,6 @@ The book dove deep into the principles, patterns, and best practices for buildin
 applications. It included a full-featured microservice reference application that showcased the
 [architectural concepts. Entitled, eShopOnContainers, the application hosts an e-Commerce storefront](https://github.com/dotnet-architecture/eShopOnContainers)
 that sells various items, including clothing and coffee mugs. Built in .NET, the application is crossplatform and can run in either Linux or Windows containers. Figure 12-2 shows the original eShop
-
 architecture.
 
 
@@ -6011,12 +5634,9 @@ As you can see, eShopOnContainers includes many moving parts:
 
 1. Three different frontend clients.
 
-
 2. An application gateway to abstract backend services from the frontend.
 
-
 3. Several backend core microservices.
-
 
 4. An event bus component that enables asynchronous pub/sub messaging.
 
@@ -6029,7 +5649,6 @@ and used to model many large commercial microservice applications.
 
 [An updated version of eShop accompanies this book. It’s called eShopOnDapr. The update evolves](https://github.com/dotnet-architecture/eShopOnDapr)
 the earlier eShopOnContainers application by integrating Dapr building blocks. Figure 12-3 shows the
-
 new solution architecture:
 
 
@@ -6043,7 +5662,6 @@ While eShopOnDapr focuses on Dapr, the architecture has also been streamlined an
 
 
 1. [A Single Page Application running on Blazor WebAssembly sends user requests to an API](https://docs.microsoft.com/archive/msdn-magazine/2013/november/asp-net-single-page-applications-build-modern-responsive-web-apps-with-asp-net)
-
 gateway.
 
 
@@ -6060,8 +5678,7 @@ the list of brands from the catalog) and handled by a direct call to a backend m
 
 3. Other requests are more logically complex and require multiple microservice calls to work
 [together. For these cases, eShopOnDapr implements an aggregator microservice that](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/service-to-service-communication#service-aggregator-pattern)
-
-   - rchestrates a workflow across those microservices needed to complete the operation.
+orchestrates a workflow across those microservices needed to complete the operation.
 
 
 4. The core backend microservices implement the required functionality for an e-Commerce store.
@@ -6069,19 +5686,15 @@ Each is self-contained and independent of the others. Following widely accepted 
 decomposition patterns, each microservice isolates a specific _business capability_ :
 
 
-    The basket service manages the customer’s shopping basket experience.
+    - The basket service manages the customer’s shopping basket experience.
 
+    - The catalog service manages product items available for sale.
 
-    The catalog service manages product items available for sale.
+    - The identity service manages authentication and identity.
 
+    - The ordering service handles all aspects of placing and managing orders.
 
-    The identity service manages authentication and identity.
-
-
-    The ordering service handles all aspects of placing and managing orders.
-
-
-    The payment service transacts the customer’s payment.
+    - The payment service transacts the customer’s payment.
 
 
 5. [Adhering to best practices, each microservice maintains its own persistent storage. The](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/distributed-data#database-per-microservice-why)
@@ -6096,7 +5709,6 @@ message broker component.
 
 
 In eShopOnDapr, Dapr building blocks replace a large amount of complex, error-prone plumbing
-
 code.
 
 
@@ -6116,23 +5728,18 @@ eShopOnDapr service consumes.
 1. The API gateway and web shopping aggregator services use the service invocation building
 block to invoke methods on the backend services.
 
-
 2. The backend services communicate asynchronously using the publish & subscribe building
 block.
 
-
 3. The basket service uses the state management building block to store the state of the
 customer’s shopping basket.
-
 
 4. The original eShopOnContainers demonstrates DDD concepts and patterns in the ordering
 service. eShopOnDapr uses the _actor building block_ [as an alternative implementation. The turn-](https://docs.dapr.io/developing-applications/building-blocks/actors/actors-overview/#turn-based-access)
 [based](https://docs.dapr.io/developing-applications/building-blocks/actors/actors-overview/#turn-based-access) access model of actors makes it easy to implement a stateful ordering process with
 support for cancellation.
 
-
 5. The ordering service sends order confirmation e-mails using the bindings building block.
-
 
 6. Secret management is done by the secrets building block.
 
@@ -6144,11 +5751,9 @@ eShopOnDapr.
 
 
 In eShopOnDapr, the Basket service uses the state management building block to persist the contents
-
-- f the customer’s shopping basket. The original eShopOnContainers architecture used an
+of the customer’s shopping basket. The original eShopOnContainers architecture used an
 
 `IBasketRepository` interface to read and write data for the basket service. The
-
 
 `RedisBasketRepository` class provided the implementation using Redis as the underlying data store.
 To compare and contrast, the original eShopOnContainers implementation is presented below:
@@ -6175,7 +5780,7 @@ key.
 3. Check if data is loaded from Redis; if not, return `null` .
 
 
-4. Deserialize the data from Redis to a `CustomerBasket` - bject and return the result.
+4. Deserialize the data from Redis to a `CustomerBasket` object and return the result.
 
 [In the updated eShopOnDapr reference application, a new](https://github.com/dotnet-architecture/eShopOnDapr) `DaprBasketRepository` class replaces the
 
@@ -6186,7 +5791,6 @@ building block. The new steps to load the basket for a customer are dramatically
 
 1. Inject a `DaprClient` into the constructor. The `DaprClient` is registered with the dependency
 injection framework in the _Program.cs_ `_ file.
-
 
 2. Use the `DaprClient.GetStateAsync` method to load the customer’s shopping basket items from
 the configured state store and return the result.
@@ -6202,7 +5806,6 @@ no longer requires a direct dependency on Redis. A Dapr configuration file is al
 
 The Dapr implementation also simplifies changing the underlying data store. Switching to Azure Table
 Storage, for example, requires only changing the contents of the configuration file. No code changes
-
 are necessary.
 
 #### **Service invocation**
@@ -6256,7 +5859,6 @@ Note the updated steps from the previous figure:
 
 
 4. The aggregator service uses the Dapr .NET SDK to call backend services through their sidecar
-
 architecture.
 
 
@@ -6274,8 +5876,7 @@ benefits also include service discovery, automatic mTLS, and built-in observabil
 [Both the original and updated eShop application leverage the Envoy proxy](https://www.envoyproxy.io/) as an API gateway. Envoy
 is an open-source proxy and communication bus that is popular across modern distributed
 [applications. Originating from Lyft, Envoy is owned and maintained by the Cloud-Native Computing](https://www.cncf.io/)
-
-Foundation.
+[Foundation.](https://www.cncf.io/)
 
 
 143 CHAPTER 13 | Dapr reference application
@@ -6341,7 +5942,6 @@ _Figure 12-7. Backend call requiring multiple services._
 
 The aggregator service first retrieves catalog items from the Catalog API. It then validates item
 availability and pricing. Finally, the aggregator service updates the shopping basket by calling the
-
 Basket API.
 
 
@@ -6354,14 +5954,12 @@ shopping basket:
 
 The `UpdateAllBasketAsync` method gets the _Authorization_ header of the incoming request using a
 
-
 `FromHeader` attribute. The _Authorization_ header contains the access token that is needed to call
-
 protected backend services.
 
 
 After receiving a request to update the basket, the aggregator service calls the Catalog API to get the
-item details. The Basket controller uses an injected `ICatalogService` - bject to make that call and
+item details. The Basket controller uses an injected `ICatalogService` object to make that call and
 communicate with the Catalog API. The original implementation of the interface used gRPC to make
 the call. The updated implementation uses Dapr service invocation with HttpClient support:
 
@@ -6388,16 +5986,14 @@ existing HttpClient code to use Dapr service invocation without making any chang
 
 
 [Both eShopOnContainers and eShopOnDapr use the pub/sub pattern for communicating integration](https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/#integration-events)
-events across microservices. Integration events include:
+[events](https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/#integration-events) across microservices. Integration events include:
 
 
 - When a user checks-out a shopping basket.
 
+- When a payment for an order has succeeded.
 
-When a payment for an order has succeeded.
-
-
-When the grace-period of a purchase has expired.
+- When the grace-period of a purchase has expired.
 
 
 
@@ -6422,7 +6018,6 @@ The newer eShopOnDapr significantly simplifies pub/sub behavior by using Dapr. T
 
 
 **Publish events**
-
 
 In eShopOnDapr, a single `DaprEventBus` implementation can support any Dapr-supported message
 broker. The following code block shows the simplified Publish method. Note how the `PublishAsync`
@@ -6455,7 +6050,6 @@ eShopOnDapr streamlines the plumbing for event subscriptions by using Dapr ASP.N
 integration. Each event is handled by an action method in a controller. A `Topic` attribute decorates the
 action method with the name of the corresponding topic. Here’s a code snippet taken from the
 
-
 `PaymentService` :
 
 
@@ -6465,8 +6059,7 @@ resolved using dependency injection and invoked. In the previous example, messag
 
 
 implements the underlying plumbing for subscriptions and message brokers, a large amount of
-
-- riginal code became obsolete and was removed from the code-base. Much of this code was complex
+original code became obsolete and was removed from the code-base. Much of this code was complex
 to understand and challenging to maintain.
 
 
@@ -6477,19 +6070,15 @@ to understand and challenging to maintain.
 
 Within the eShopOnDapr repository, a `deployment` folder contains files for deploying the application
 using different deployment modes: `Docker Compose` and `Kubernetes` . A `dapr` folder exists within each
-
-- f these folders that holds a `components` folder. This folder holds a file `eshop-pubsub.yaml` . It
-
+of these folders that holds a `components` folder. This folder holds a file `eshop-pubsub.yaml` . It
 specifies the Dapr pub/sub component that the application will use for pub/sub behavior. As you saw
 in the earlier code snippets, the name of the pub/sub component used is `pubsub` . Here’s the content
-
-- f the `eshop-pubsub.yaml` file in the `deployment/compose/dapr/components` folder:
+of the `eshop-pubsub.yaml` file in the `deployment/compose/dapr/components` folder:
 
 
 The configuration specifies RabbitMQ as the underlying infrastructure. To change message brokers,
 you need only to configure a different message broker, such as NATS or Azure Service Bus and update
 the yaml file. With Dapr, there are no changes to your mainline service code when switching message
-
 brokers.
 
 
@@ -6497,14 +6086,13 @@ You can also easily use multiple message brokers in a single application. Many t
 handle workloads with different characteristics. One event may occur 10 times a day, but another
 event occurs 5,000 times per second. You may benefit by partitioning messaging traffic to different
 message brokers. With Dapr, you can add multiple pub/sub component configurations, each with a
-
 different name.
 
 #### **Bindings**
 
 
 eShopOnDapr uses the bindings building block for sending e-mails. When a user places an order, the
-[application sends an order confirmation e-mail using the SMTP](https://docs.dapr.io/reference/components-reference/supported-bindings/smtp) - utput binding. You can find this
+[application sends an order confirmation e-mail using the SMTP](https://docs.dapr.io/reference/components-reference/supported-bindings/smtp) output binding. You can find this
 binding in the `eshop-email.yaml` file in the components folder:
 
 
@@ -6518,13 +6106,11 @@ secrets building block chapter.
 
 The binding configuration specifies a binding component that can be invoked using the `/sendmail`
 endpoint on the Dapr sidecar. Here’s a code snippet in which an email is sent whenever an order is
-
 started:
 
 As you can see in this example, `message` contains the message body. The `CreateEmailBody` method
 simply formats a string with the body text. The name of the binding to invoke is `sendmail` and the
-
-- peration is `create` . The `metadata` specifies the email sender, recipient, and subject for the email
+operation is `create` . The `metadata` specifies the email sender, recipient, and subject for the email
 message. If these values are static, they can also be included in the metadata fields in the
 configuration file.
 
@@ -6545,18 +6131,13 @@ The ordering process consists of the following steps:
 1. The customer submits the order. There’s a grace period before any further processing occurs.
 During the grace period, the customer can cancel the order.
 
-
 2. The system checks that there’s available stock.
-
 
 3. The system processes the payment.
 
-
 4. The system ships the order.
 
-
 The process is implemented using a single `OrderingProcessActor` actor type. Here’s the interface for
-
 the actor:
 
 
@@ -6571,6 +6152,8 @@ calls the `SubmitAsync` method of the actor:
 
 In the example above, the Ordering service first uses the original request ID from the
 
+`UserCheckoutAcceptedIntegrationEvent` message as the actor ID. The handler uses the `ActorId` to
+
 
 153 CHAPTER 13 | Dapr reference application
 
@@ -6578,21 +6161,16 @@ In the example above, the Ordering service first uses the original request ID fr
 There’s a lot going on in the `Submit` method:
 
 
-1. The method takes the given arguments to create an `OrderState` - bject and saves it in the actor
-
+1. The method takes the given arguments to create an `OrderState` object and saves it in the actor
 state.
 
-
 2. The method saves the current status of the process ( `OrderStatus.Submitted` ) in the actor state.
-
 
 3. The method registers a reminder to signal the end of the grace period. Order processing is
 delayed until the end of the grace period to deal with customers changing their mind.
 
-
 4. Lastly, the method publishes an `OrderStatusChangedToSubmittedIntegrationEvent` to notify
-
-   - ther services of the status change.
+other services of the status change.
 
 
 When the reminder for the grace period ending fires, the actor runtime calls the
@@ -6612,7 +6190,6 @@ handled by the `OnGracePeriodElapsedAsync` method:
 
 
 service of the status change. For example, the Category service subscribes to this event to check the
-
 available stock.
 
 
@@ -6621,14 +6198,12 @@ update the order status:
 
 
 First, the `TryUpdateOrderStatusAsync` method checks whether there even is a current order status. If
-
 there isn’t, the order doesn’t exist. This is a fail-safe that should not happen with normal application
 usage. Then, the method checks whether the current order status is the status that we expected.
 Remember that the ordering process is driven by events using the Dapr pub/sub building block. Event
 delivery uses at-least-once semantics, so a single message could be received multiple times. The order
 status check ensures that even when the same message is received multiple times, it is only processed
-
-- nce.
+once.
 
 
 The other steps in the ordering process are all implemented in a very similar way to the grace period
@@ -6653,17 +6228,13 @@ The `CancelAsync` method consists of the following steps:
 
 1. First, the method ensures that the order exists by retrieving the current order status.
 
-
 2. If the order exists, the method checks whether it’s eligible for cancellation. Any order not in the
-`Paid`   - r `Shipped` state can be cancelled.
-
+`Paid` or `Shipped` state can be cancelled.
 
 3. If the order can be cancelled, the order status is changed to `Cancelled` .
 
-
 4. Lastly, the order details are retrieved from state and used to publish an
 `OrderStatusChangedToCancelledIntegrationEvent` to inform the other services.
-
 
 The `CancelAsync` method is a great example of the usefulness of the turn-based access model of
 actors. Nowhere in the method do we need to worry about multiple threads running at the same time.
@@ -6678,12 +6249,10 @@ Therefore, the method does not require any explicit locking mechanisms to be cor
 
 Customers can check the status and details of their order in the eShopOnDapr UI. They can also view
 a complete history of past orders. Directly querying actor instances for this information is a bad idea
-
 because of two reasons:
 
 
 1. Low-latency reads cannot be guaranteed because actor operations execute serially.
-
 
 2. Querying across actors is inefficient because each actor’s state needs to be read individually and
 can introduce more unpredictable latencies.
@@ -6698,12 +6267,10 @@ to inform the customer of order status updates.
 
 The following snippet shows the code for handling the
 
-
 `OrderStatusChangedToSubmittedIntegrationEvent` message:
 
 
 The handler contains the code for all the actions that must occur after an order is submitted
-
 successfully. Because the events originate from the `OrderingProcessActor`, we can be sure that any
 validations performed by the actor have succeeded.
 
@@ -6717,14 +6284,11 @@ The handler performs the following steps:
 1. First, the method creates an actor proxy and uses it to retrieve the order details from the actor
 instance.
 
-
 2. The method maps the order details to the read model and stores it in the database. Due to the
 at-least-once semantics of the Dapr pub/sub building block, the order may already exist in the
 database. In that case, it will not be overwritten.
 
-
 3. The method publishes a push notification for the status update using SignalR.
-
 
 4. Lastly, if enabled, the method sends a confirmation e-mail to the customer.
 
@@ -6739,10 +6303,8 @@ handle the status update:
 
 1. The helper method first loads the current order from the database.
 
-
 2. If that succeeds, it updates the `OrderStatus` and `Description` fields and saves the updated
 model back to the database.
-
 
 3. Lastly, it sends a push notification to notify the client UI.
 
@@ -6760,9 +6322,7 @@ the Serilog sink used in eShopOnDapr.
 
 
 eShopOnDapr also includes a custom health dashboard that gives insight into the health of the eShop
-
-[services. This dashboard uses the built-in health checks mechanism](https://docs.microsoft.com/aspnet/core/host-and-deploy/health-checks) - f ASP.NET Core. The dashboard
-
+[services. This dashboard uses the built-in health checks mechanism](https://docs.microsoft.com/aspnet/core/host-and-deploy/health-checks) of ASP.NET Core. The dashboard
 not only provides the health status of the services, but also the health of the dependencies of the
 services, including the Dapr sidecars.
 
@@ -6772,14 +6332,11 @@ services, including the Dapr sidecars.
 The eShopOnDapr reference application uses the secrets building block for various secrets:
 
 
-The password for connecting to the Redis cache.
+- The password for connecting to the Redis cache.
 
+- The username and password for the SMTP server.
 
-The username and password for the SMTP server.
-
-
-The connection strings for the SQL databases.
-
+- The connection strings for the SQL databases.
 
 When running the application using Docker Compose, the **local file** secret store is used. The
 component configuration file `eshop-secretstore.yaml` is found in the `dapr/components` folder of
@@ -6787,7 +6344,6 @@ the eShopOnDapr repository:
 
 
 The configuration file references the local store file `eshop-secretstore.json` located in the same
-
 folder:
 
 
@@ -6816,7 +6372,6 @@ In general, the use of Dapr building blocks adds observability and flexibility t
 between services and to Dapr components without having to write any code. In
 eShopOnContainers, a large amount of custom logging is used to provide insight.
 
-
 2. Flexibility: You can now _swap out_ infrastructure simply by changing a component configuration
 file. No code changes are necessary.
 
@@ -6826,57 +6381,46 @@ Here are some more examples of benefits offered by specific building blocks:
 
 - **Service Invocation**
 
-
     - [With Dapr’s support for mTLS, services now communicate through encrypted channels.](https://blog.cloudflare.com/introducing-tls-client-auth/)
 
-
-    When transient errors occur, service calls are automatically retried.
+    - When transient errors occur, service calls are automatically retried.
 
 
 160 CHAPTER 13 | Dapr reference application
 
 
-    Automatic service discovery reduces the amount of configuration needed for services to
+    - Automatic service discovery reduces the amount of configuration needed for services to
 find each other.
-
 
 - **Publish/Subscribe**
 
-
-    eShopOnContainers included a large amount of custom code to support both Azure
+    - eShopOnContainers included a large amount of custom code to support both Azure
 Service Bus and RabbitMQ. Developers used Azure Service Bus for production and
 RabbitMQ for local development and testing. An `IEventBus` abstraction layer was
 created to enable swapping between these message brokers. This layer consisted of
 approximately _700 lines of error-prone code_ . The updated implementation with Dapr
-requires only _35 lines of code_ . That’s **5%**        - f the original lines of code! More importantly,
+requires only _35 lines of code_ . That’s **5%** of the original lines of code! More importantly,
 the implementation is straightforward and easy to understand.
 
-
-    eShopOnDapr uses Dapr’s rich ASP.NET Core integration to use pub/sub. You add `Topic`
+    - eShopOnDapr uses Dapr’s rich ASP.NET Core integration to use pub/sub. You add `Topic`
 attributes to ASP.NET Core controller methods to subscribe to messages. Therefore,
 there’s no need to write a separate message handler loop for each message broker.
 
-
-    Messages routed to the service as HTTP calls enable the use of ASP.NET Core
+    - Messages routed to the service as HTTP calls enable the use of ASP.NET Core
 middleware to add functionality, without introducing new concepts or SDKs to learn.
 
-
 - **Bindings**
-
 
     - The eShopOnContainers solution contained a _to-do_ item for e-mailing an order
 confirmation to the customer. With Dapr, implementing email notification was as easy as
 configuring a resource binding.
 
-
 - **Actors**
 
-
-    The actors building block makes it easy to create long running, stateful workflows.
+    - The actors building block makes it easy to create long running, stateful workflows.
 Thanks to the turn-based access model, there’s no need for explicit locking mechanisms.
 
-
-    The complexity of the grace period implementation is greatly reduced by using actor
+    - The complexity of the grace period implementation is greatly reduced by using actor
 reminders instead of polling on the database.
 
 ### Summary
@@ -6896,18 +6440,20 @@ the complexities required to build a microservices application.
 - [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers)
 
 
-[.NET Microservices for Containerized .NET Applications](https://dotnet.microsoft.com/download/e-book/microservices-architecture/pdf)
+- [.NET Microservices for Containerized .NET Applications](https://dotnet.microsoft.com/download/e-book/microservices-architecture/pdf)
 
 
-- Architecting Cloud [Native .NET Apps for Azure](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf)
+- [Architecting Cloud-Native .NET Apps for Azure](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf)
 
 
 161 CHAPTER 13 | Dapr reference application
 
 
-# CHAPTER 14
+**CHAPTER**
+# 14
 
 ## Summary and the road ahead
+
 
 We’re at the end of our Dapr flight. The jet plane flying at 20,000 feet from chapter 2 is on final
 approach and about to land.
@@ -6963,7 +6509,7 @@ _Figure 13-3. Sidecar architecture._
 164 CHAPTER 14 | Summary and the road ahead
 
 
-**Hosting environments** Dapr has cross-platform support and can run in multiple environments.
+- **Hosting environments** Dapr has cross-platform support and can run in multiple environments.
 At the time of this writing, the environments include a local self-hosted mode and Kubernetes.
 
 
@@ -6984,70 +6530,50 @@ At the time of writing, the list of proposed enhancements for Dapr include:
 
 - Feature enhancements to existing building blocks:
 
+    - Query capabilities in state management enabling you to retrieve multiple values.
 
-    Query capabilities in state management enabling you to retrieve multiple values.
+    - Topic filtering in pub/sub enabling you to filter topics based on their content.
 
-
-    Topic filtering in pub/sub enabling you to filter topics based on their content.
-
-
-    An application tracing API in observability that provides tracing in the application
+    - An application tracing API in observability that provides tracing in the application
 directly without having to bind to specific libraries.
 
-
-    Binding and pub/sub support for actors providing event driven capabilities to the actor
+    - Binding and pub/sub support for actors providing event driven capabilities to the actor
 programming model. Bound components will trigger events and messages invoke
 methods in the actor.
 
-
 - New building blocks:
 
-
-    Configuration API building block for reading and writing configuration data. The block
+    - Configuration API building block for reading and writing configuration data. The block
 will bind to providers that include Azure Configuration Manager or GCP Configuration
 Management.
 
+    - Http scale-to-zero autoscale.
 
-    Http scale-to-zero autoscale.
-
-
-    Leader election building block to provide singleton instances and locking semantic
+    - Leader election building block to provide singleton instances and locking semantic
 capabilities.
 
-
-    Transparent proxying building block for service invocation, enabling you to route
+    - Transparent proxying building block for service invocation, enabling you to route
 messages based on URLs or DNS addresses at the network level.
 
+    - Resiliency building block (circuit breakers, bulkheads & timeouts).
 
-    Resiliency building block (circuit breakers, bulkheads & timeouts).
+- Integration with frameworks and cloud native technologies. Some examples include:
 
+    - Django
 
-Integration with frameworks and cloud native technologies. Some examples include:
+    - Nodejs
 
+    - Express
 
-    Django
+    - Kyma
 
-
-    Nodejs
-
-
-    Express
-
-
-    Kyma
-
-
-    Midway
-
+    - Midway
 
 - New language SDKs:
 
-
-    JavaScript
-
+    - JavaScript
 
     - RUST
-
 
     - C++
 
@@ -7055,34 +6581,24 @@ Integration with frameworks and cloud native technologies. Some examples include
 165 CHAPTER 14 | Summary and the road ahead
 
 
-New hosting platforms:
-
+- New hosting platforms:
 
     - VMs
 
+    - Azure IoT Edge
 
-    Azure IoT Edge
-
-
-    Azure Stack Edge
-
+    - Azure Stack Edge
 
     - Azure Service Fabric
 
-
 - Developer and operator productivity tooling:
-
 
     - VS Code extension.
 
+    - Remote Dev Containers for local debugging a DevOps pipeline development.
 
-    Remote Dev Containers for local debugging a DevOps pipeline development.
-
-
-    Dapr operational dashboard enhancements that will provide deeper visibility into the
-
-       - perational concerns of managing Dapr applications.
-
+    - Dapr operational dashboard enhancements that will provide deeper visibility into the
+operational concerns of managing Dapr applications.
 
 Dapr version 1.0 provides developers with a compelling toolbox for building distributed applications.
 As the proposed enhancement list shows, Dapr is under active development with many new

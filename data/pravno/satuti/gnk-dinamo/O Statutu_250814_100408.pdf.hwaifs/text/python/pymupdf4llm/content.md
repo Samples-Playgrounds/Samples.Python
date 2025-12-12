@@ -9,7 +9,6 @@ _u povijesti GNK Dinama._
 **2.** **Neposredna volja članova**
 
 _Statut omogućuje članovima da izravno i neposredno izaberu osobu koja će voditi Klub i biti_
-
 _odgovorna za postignute rezultate prema izbornom programu koji je dobio povjerenje članova._
 _Za razliku od dosadašnjeg Statuta izborni legitimitet je spojen sa stvarnim utjecajem._
 _**3.**_ **Jasna moć i jasna odgovornost**
@@ -32,7 +31,6 @@ _**5.**_ **Jednostavnost - manje tijela i različitih funkcija**
 
 _Nadzorni odbor i Izvršni odbor spajaju se u jedinstveno tijelo, a funkcije Predsjednika Kluba i_
 _glavnog i odgovornog za rad Uprave preuzima ista osoba. Također, jedna osoba istodobno_
-
 _obnaša dužnost predsjednika Nadzornog odbora i predsjedavajućeg u Skupštini, ne predviđa_
 _se osnivanje npr. Etičkog povjerenstva. Ove odluke pojednostavljuju i ujedinjuju tijela i funkcije_
 _s ciljem jednostavnijeg, jasnijeg i učinkovitijeg upravljanja Klubom što smatramo primjerenim_
@@ -61,8 +59,7 @@ Kako bi se to osiguralo, kao i da se mogu izabrati druga nužna tijela i odluči
 Skupštinu ulaze samo dvije liste, pri čemu članovi jednoj daju većinu glasova. Na taj način izbjegava se
 borba za glasove unutar Skupštine i preglasavanja, dok se istovremeno poštuje volja članova. Jedan od
 ključnih amandmana koje smo usvojili predviđa da se, ako nijedna lista ne osvoji većinu u prvom krugu,
-
-- rganizira drugi krug izbora s dvije liste koje su dobile najveći broj glasova, čime se osigurava da jedna
+organizira drugi krug izbora s dvije liste koje su dobile najveći broj glasova, čime se osigurava da jedna
 lista dobije više od 50% glasova i formira vlast u Skupštini. Pri izradi ovog prijedloga analizirali smo i
 statut Boca Juniorsa, jednog od najvećih članskih klubova u svijetu. U skupštini Boce pobjednička lista
 automatski dobiva 70% mjesta, čak i ako na izborima osvoji manje od 50% glasova i to zato što izbori
@@ -74,8 +71,7 @@ i u Statutu GNK Dinama.
 
 Članovi na izborima demokratski biraju jedan program upravljanja na jedan mandat. Program stvaraju
 svi članovi liste, a Predsjednik se nakon izbora za Skupštinu izdvaja iz Skupštine i njoj, tj. Nadzornom
-
-- dboru kao njezinoj produženoj ruci, odgovara za provođenje tog programa. Time se osigurava da oni
+odboru kao njezinoj produženoj ruci, odgovara za provođenje tog programa. Time se osigurava da oni
 koji su dobili povjerenje članova i koji dijele istu izbornu ideju imaju ovlasti i odgovornost nadzirati
 njezino provođenje. Kada bi se članovi NO-a birali odvojeno od izbora članova Skupštine, moglo bi se
 dogoditi da NO sačinjavaju ljudi koji ne podržavaju izabranog predsjednika niti njegov program s kojim
@@ -83,10 +79,8 @@ je pobijedio na izborima, što je put u permanentnu nestabilnost upravljanja klu
 usmjeren je na učinkovitost i stabilnost zbog čega brojni članski klubovi članove NO-a biraju na temelju
 cjelovitih lista, a ne pojedinačnih kandidatura. Ako vlast ne ispunjava očekivanja, oporba je može
 prozvati u Skupštini, članovi je mogu smijeniti referendumom ili se odlučiti na davanje prilike drugoj
-
-- pciji na sljedećim izborima. U Skupštini se zadržava pluralizam kroz proporcionalno sudjelovanje
-
-- rganizirane oporbe, no ona ne bi trebala biti kao parlament koji se bavi bezbrojnim temama, nego
+opciji na sljedećim izborima. U Skupštini se zadržava pluralizam kroz proporcionalno sudjelovanje
+organizirane oporbe, no ona ne bi trebala biti kao parlament koji se bavi bezbrojnim temama, nego
 kao tijelo koje podržava stabilnu, demokratski izabranu vlast usmjerenu prema glavnom cilju – što
 uspješnijem sportskom rezultatu Kluba. Dodatno, javna revizija poslovanja obvezno se prezentira svim
 članovima. Takav sustav gdje s iste liste dolazi i Predsjednik te Nadzorni odbor, kakav primjerice koristi
@@ -97,8 +91,7 @@ nadzora.
 
 Nikada neće biti idealnog omjera kada se radi o kalendarskim godinama, ali volja nekog člana da, makar
 i unutar kratkog vremena dva puta obnovi članstvo i uredi tako svoj status znači prije svega i volju da
-
-- n participira u radu Kluba i to treba vrednovati. Prošla su vremena nepovjerenja prema članovima i
+on participira u radu Kluba i to treba vrednovati. Prošla su vremena nepovjerenja prema članovima i
 traženja loših namjera. Od 56.000 članova Kluba, manje od polovice čine punoljetni i poslovno
 sposobni članovi koji su to bili i prošle godine, odnosno članovi s pravom glasa. U počecima izgradnje
 demokratske kulture i članskog identiteta Kluba željeli smo uključiti što veći broj članova u demokratske
@@ -106,8 +99,7 @@ demokratske kulture i članskog identiteta Kluba željeli smo uključiti što ve
 
 procese. Zato smo odlučili da pravo glasa imaju svi koji su bili članovi i u prethodnoj godini, umjesto da
 se uvjetuje višegodišnje članstvo, što bi značajno smanjilo broj onih koji mogu sudjelovati. Ova će se
-
-- dredba u budućnosti sigurno razmatrati, s mogućnošću da se pravo glasa veže uz više uzastopnih
+odredba u budućnosti sigurno razmatrati, s mogućnošću da se pravo glasa veže uz više uzastopnih
 godina članstva. Također, vrijedi istaknuti da u mnogim europskim članskim klubovima pravo glasa
 stječu oni koji su članovi samo godinu dana.
 
@@ -117,8 +109,7 @@ U Statutu ne postoji funkcija Predsjednika Skupštine, a skupštinskom sjednicom
 Predsjednik NO kojemu je to tek jedna od dužnosti. Osoba koja predsjeda sjednicom Skupštine obavlja
 tek tehničku funkciju i ne mora uvijek biti predsjednik NO. Predsjednik NO svoje stvarne nadležnosti
 ispunjava u NO. Ne treba nam inflacija različitih Predsjednika u Klubu bez jasnih dužnosti. Nadzorni
-
-- dbor neodvojivi je dio Skupštine i s time se izbjegava nepotrebno udvostručavanje pozicija i jasno
+odbor neodvojivi je dio Skupštine i s time se izbjegava nepotrebno udvostručavanje pozicija i jasno
 razdvaja nadležnost: predsjednik NO-a utječe isključivo na rad tog tijela, dok na ostale procese u
 Skupštini ne djeluje izvan svoje nadzorne uloge. Logično je i proceduralno ispravno da osoba koja vodi
 Skupštinu vodi i tijelo koje je njezina produžena ruka. Osim toga, unutar Skupštine postoji dovoljan broj
@@ -131,8 +122,7 @@ Pojam verbalni delikt tiče se isključivo odnosa države i pojedinca i potpuno 
 njegovo korištenje u vezi pravila ponašanja jednog privatnog udruženja osoba s vlastitim pravilima ili
 mjerama, u kojima je udruživanje potpuno dobrovoljno. U privatnim organizacijama, poput sportskih
 klubova, uobičajeno je postojanje internih pravila ponašanja te stegovnih postupaka i sankcija. Svaka
-
-- rganizacija ima pravo odrediti svoja pravila i svatko ima pravo ne biti dio te organizacije. Bitno je
+organizacija ima pravo odrediti svoja pravila i svatko ima pravo ne biti dio te organizacije. Bitno je
 naglasiti da, u slučaju izricanja bilo koje stegovne mjere – posebno one najteže, poput isključenja –
 član ima pravo, nakon što iscrpi sve klupske instance, potražiti zaštitu i kod nadležnog suda. U zadnje
 dvije godine nije se desio niti jedan slučaj koji je zahtijevao pokretanje stegovnog postupka i zbog toga

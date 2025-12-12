@@ -28,16 +28,14 @@ form or by any means without the written permission of the publisher.
 
 This book is provided “as-is” and expresses the author’s views and opinions. The views, opinions and
 information expressed in this book, including URL and other Internet website references, may change
-
 without notice.
 
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association
+or connection is intended or should be inferred.
 
-- r connection is intended or should be inferred.
 
-
-[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) - n the “Trademarks” webpage are
+[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) on the “Trademarks” webpage are
 trademarks of the Microsoft group of companies.
 
 
@@ -65,14 +63,13 @@ Editors:
 **[Bill Wagner](https://twitter.com/billwagner)**, Senior Content Developer, Microsoft Corp.
 
 
-**Maira Wenzel**, Senior Content Developer, Microsoft Corp.
+**[Maira Wenzel](https://twitter.com/mairacw)**, Senior Content Developer, Microsoft Corp.
 
 
 Participants and reviewers:
 
 
-**Steve Smith**, Architect/Trainer, NimblePros.
-
+**[Steve Smith](https://twitter.com/ardalis)**, Architect/Trainer, NimblePros.
 ### Introduction
 
 
@@ -85,22 +82,17 @@ may be triggered by anything from a traditional HTTP web request to a timer or t
 uploading a file. The infrastructure behind serverless allows for instant scale to meet elastic demands
 and offers micro-billing to truly “pay for what you use.” Serverless requires a new way of thinking and
 approach to building applications and isn’t the right solution for every problem. As a developer, you
-
 must decide:
 
 
-What are the pros and cons of serverless?
+- What are the pros and cons of serverless?
 
-
-Why should you consider serverless for your own applications?
-
+- Why should you consider serverless for your own applications?
 
 - How can you build, test, deploy, and maintain your serverless code?
 
-
 - Where does it make sense to migrate code to serverless in existing applications, and what is the
 best way to accomplish this transformation?
-
 ### About this guide
 
 
@@ -115,13 +107,11 @@ This guide explains the components of the Azure serverless platform and focuses 
 how to implement serverless apps that rely on state using durable functions. Finally, business
 examples and case studies will help provide context and a frame of reference to determine whether
 serverless is the right approach for your projects.
-
 ### Evolution of cloud platforms
 
 
 Serverless is the culmination of several iterations of cloud platforms. The evolution began with
 physical metal in the data center and progressed through Infrastructure as a Service (IaaS) and
-
 Platform as a Service (PaaS).
 
 
@@ -131,15 +121,12 @@ application meant answering myriad questions like:
 
 - What hardware should be installed?
 
-
 - How is physical access to the machine secured?
 
 
 - Does the data center require an Uninterruptible Power Supply (UPS)?
 
-
 - Where are storage backups sent?
-
 
 - Should there be redundant power?
 
@@ -156,18 +143,14 @@ physical machines. Instead, they focused on the virtual environment.
 
 
 IaaS still requires heavy overhead because operations is still responsible for various tasks. These tasks
-
 include:
 
 
 - Patching and backing up servers.
 
-
 - Installing packages.
 
-
 - Keeping the operating system up-to-date.
-
 
 - Monitoring the application.
 
@@ -181,21 +164,17 @@ application” or “API endpoint” and deploy code directly. The infrastructur
 
 - What size services are needed?
 
-
 - How do the services scale out (add more servers or nodes)?
 
-
-How do the services scale up (increase the capacity of hosting servers or nodes)?
+- How do the services scale up (increase the capacity of hosting servers or nodes)?
 
 
 Serverless further abstracts servers by focusing on event-driven code. Instead of a platform,
 developers can focus on a microservice that does one thing. The two key questions for building the
-
 serverless code are:
 
 
 - What triggers the code?
-
 
 - What does the code do?
 
@@ -216,7 +195,6 @@ being accessed. Often you’ll find one API is called more than others, so the e
 based on supporting the popular endpoints. Serverless enables you to scale each endpoint
 independently and pay for usage, so no costs are incurred when the APIs aren’t being called.
 Migration may in many circumstances dramatically reduce the ongoing cost to support the endpoints.
-
 ### What this guide doesn’t cover
 
 
@@ -225,15 +203,12 @@ This guide specifically emphasizes architecture approaches and design patterns a
 guide doesn’t cover, for example, advanced workflows with Logic Apps or features of Azure Functions
 such as configuring Cross-Origin Resource Sharing (CORS), applying custom domains, or uploading
 [SSL certificates. These details are available through the online Azure Functions documentation.](https://docs.microsoft.com/azure/azure-functions/functions-reference)
-
 #### **Additional resources**
 
 
 - [Azure Architecture center](https://docs.microsoft.com/azure/architecture/)
 
-
-[Best practices for cloud applications](https://docs.microsoft.com/azure/architecture/best-practices/api-design)
-
+- [Best practices for cloud applications](https://docs.microsoft.com/azure/architecture/best-practices/api-design)
 ### Who should use the guide
 
 
@@ -242,14 +217,11 @@ applications with .NET that may use serverless components either on premises or 
 useful to developers, architects, and technical decision makers interested in:
 
 
-Understanding the pros and cons of serverless development
-
+- Understanding the pros and cons of serverless development
 
 - Learning how to approach serverless architecture
 
-
-Example implementations of serverless apps
-
+- Example implementations of serverless apps
 ### How to use the guide
 
 
@@ -259,7 +231,6 @@ aspects of software development are impacted by architecture decisions. The guid
 use cases and design patterns and includes reference implementations using Azure Functions. Each
 section contains additional resources to learn more about a particular area. The guide concludes with
 resources for walkthroughs and hands-on exploration of serverless implementation.
-
 ### Send your feedback
 
 
@@ -522,16 +493,17 @@ Conclusion .....................................................................
 iii Contents
 
 
-# **CHAPTER 1**
+**CHAPTER**
+# **1**
 
 ## Architecture approaches
+
 
 Understanding existing approaches to architecting enterprise apps helps clarify the role played by
 serverless. There are many approaches and patterns that evolved over decades of software
 development, and all have their own pros and cons. In many cases, the ultimate solution may not
 involve deciding on a single approach but may integrate several approaches. Migration scenarios
-
-- ften involve shifting from one architecture approach to another through a hybrid approach.
+often involve shifting from one architecture approach to another through a hybrid approach.
 
 
 This chapter provides an overview of both logical and physical architecture patterns for enterprise
@@ -541,8 +513,7 @@ applications.
 
 
 Modern business applications follow a variety of architecture patterns. This section represents a survey
-
-- f common patterns. The patterns listed here aren’t necessarily all best practices, but illustrate
+of common patterns. The patterns listed here aren’t necessarily all best practices, but illustrate
 different approaches.
 
 
@@ -569,25 +540,19 @@ Unfortunately, the monolith pattern tends to break down at scale. Major disadvan
 monolith approach include:
 
 
-Difficult to work in parallel in the same code base.
+- Difficult to work in parallel in the same code base.
 
+- Any change, no matter how trivial, requires deploying a new version of the entire application.
 
-Any change, no matter how trivial, requires deploying a new version of the entire application.
+- Refactoring potentially impacts the entire application.
 
+- Often the only solution to scale is to create multiple, resource-intensive copies of the monolith.
 
-Refactoring potentially impacts the entire application.
+- As systems expand or other systems are acquired, integration can be difficult.
 
+- It may be difficult to test due to the need to configure the entire monolith.
 
-Often the only solution to scale is to create multiple, resource-intensive copies of the monolith.
-
-
-As systems expand or other systems are acquired, integration can be difficult.
-
-
-It may be difficult to test due to the need to configure the entire monolith.
-
-
-Code reuse is challenging and often other apps end up having their own copies of code.
+- Code reuse is challenging and often other apps end up having their own copies of code.
 
 
 Many businesses look to the cloud as an opportunity to migrate monolith applications and at the
@@ -602,9 +567,7 @@ N-layer application partition application logic into specific layers. The most c
 
 - User interface
 
-
 - Business logic
-
 
 - Data access
 
@@ -619,13 +582,11 @@ logical. Although they’re developed in isolation, they may all be deployed to 
 There are several advantages to the N-Layer approach, including:
 
 
-Refactoring is isolated to a layer.
-
+- Refactoring is isolated to a layer.
 
 - Teams can independently build, test, deploy, and maintain separate layers.
 
-
-Layers can be swapped out, for example the data layer may access multiple databases without
+- Layers can be swapped out, for example the data layer may access multiple databases without
 requiring changes to the UI layer.
 
 
@@ -634,28 +595,22 @@ Serverless may be used to implement one or more layers.
 ### Microservices
 
 
-**Microservices** architectures contain common characteristics that include:
+**[Microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)** architectures contain common characteristics that include:
 
 
-Applications are composed of several small services.
-
+- Applications are composed of several small services.
 
 - Each service runs in its own process.
 
-
 - Services are aligned around business domains.
-
 
 - Services communicate over lightweight APIs, typically using HTTP as the transport.
 
-
 - Services can be deployed and upgraded independently.
-
 
 - Services aren’t dependent on a single data store.
 
-
-The system is designed with failure in mind, and the app may still run even when certain services
+- The system is designed with failure in mind, and the app may still run even when certain services
 fail.
 
 
@@ -667,26 +622,21 @@ N-Tier architecture may use microservices for the middle tier. It’s also possi
 
 
 microservices in a variety of ways, from virtual directories on IIS hosts to containers. The characteristics
-
-- f microservices make them especially ideal for serverless implementations.
+of microservices make them especially ideal for serverless implementations.
 
 
 The pros of microservices architectures include:
 
 
-Refactoring is often isolated to a single service.
+- Refactoring is often isolated to a single service.
 
+- Services can be upgraded independently of each other.
 
-Services can be upgraded independently of each other.
+- Resiliency and elasticity can be tuned to the demands of individual services.
 
+- Development can happen in parallel across disparate teams and platforms.
 
-Resiliency and elasticity can be tuned to the demands of individual services.
-
-
-Development can happen in parallel across disparate teams and platforms.
-
-
-It’s easier to write comprehensive tests for isolated services.
+- It’s easier to write comprehensive tests for isolated services.
 
 
 Microservices come with their own challenges, including:
@@ -694,18 +644,14 @@ Microservices come with their own challenges, including:
 
 - Determining what services are available and how to call them.
 
+- Managing the lifecycle of services.
 
-Managing the lifecycle of services.
+- Understanding how services fit together in the overall application.
 
-
-Understanding how services fit together in the overall application.
-
-
-Full system testing of calls made across disparate services.
+- Full system testing of calls made across disparate services.
 
 
 Ultimately there are solutions to address all of these challenges, including tapping into the benefits of
-
 serverless that are discussed later.
 
 ### Architecture deployment approaches
@@ -713,7 +659,6 @@ serverless that are discussed later.
 
 Regardless of the architecture approach used to design a business application, the implementation, or
 deployment of those applications may vary. Businesses host applications on everything from physical
-
 hardware to serverless functions.
 
 
@@ -727,11 +672,9 @@ various logical layers into separate physical tiers. N-Tier architecture is a ph
 N-Layer architecture. The most common implementation of this architecture includes:
 
 
-A presentation tier, for example a web app.
-
+- A presentation tier, for example a web app.
 
 - An API or data access tier, such as a REST API.
-
 
 - A data tier, such as a SQL database.
 
@@ -741,38 +684,32 @@ N-tier solutions have the following characteristics:
 
 - Projects are typically aligned with tiers.
 
+- Testing may be approached differently by tier.
 
-Testing may be approached differently by tier.
-
-
-Tiers provide layers of abstraction, for example the presentation tier is typically ignorant of the
+- Tiers provide layers of abstraction, for example the presentation tier is typically ignorant of the
 implementation details of the data tier.
-
 
 - Typically, layers only interact with adjacent layers.
 
-
-Releases are often managed at the project, and therefore tier, level. A simple API change may
+- Releases are often managed at the project, and therefore tier, level. A simple API change may
 require a new release of an entire middle tier.
 
 
 This approach provides several benefits, including:
 
 
-Isolation of the database (often the front end doesn’t have direct access to the database back
+- Isolation of the database (often the front end doesn’t have direct access to the database back
 end).
 
-
-Reuse of the API (for example, mobile, desktop, and web app clients can all reuse the same APIs).
+- Reuse of the API (for example, mobile, desktop, and web app clients can all reuse the same APIs).
 
 
 5 CHAPTER 1 | Architecture approaches
 
 
-Ability to scale out tiers independent of each other.
+- Ability to scale out tiers independent of each other.
 
-
-Refactoring isolation: one tier may be refactored without impacting other tiers.
+- Refactoring isolation: one tier may be refactored without impacting other tiers.
 
 #### **On-premises and Infrastructure as a Service (IaaS)**
 
@@ -783,29 +720,22 @@ and physical hardware. The challenges that come with operating physical hardware
 including:
 
 
-The need to buy excess for “just in case” or peak demand scenarios.
-
+- The need to buy excess for “just in case” or peak demand scenarios.
 
 - Securing physical access to the hardware.
 
-
-Responsibility for hardware failure (such as disk failure).
-
+- Responsibility for hardware failure (such as disk failure).
 
 - Cooling.
 
-
-Configuring routers and load balancers.
-
+- Configuring routers and load balancers.
 
 - Power redundancy.
 
-
-Securing software access.
+- Securing software access.
 
 
 Virtualization of hardware, via “virtual machines” enables Infrastructure as a Service (IaaS). Host
-
 machines are effectively partitioned to provide resources to instances with allocations for their own
 memory, CPU, and storage. The team provisions the necessary VMs and configures the associated
 networks and access to storage.
@@ -817,8 +747,7 @@ networks and access to storage.
 Although virtualization and Infrastructure as a Service (IaaS) address many concerns, it still leaves
 much responsibility in the hands of the infrastructure team. The team maintains operating system
 versions, applies security patches, and installs third-party dependencies on the target machines. Apps
-
-- ften behave differently on production machines compared to the test environment. Issues arise due
+often behave differently on production machines compared to the test environment. Issues arise due
 to different dependency versions and/or OS SKU levels. Although many organizations deploy N-Tier
 applications to these targets, many companies benefit from deploying to a more cloud native model
 
@@ -845,15 +774,12 @@ PaaS addresses the challenges common to IaaS. PaaS allows the developer to focus
 database schema rather than how it gets deployed. Benefits of PaaS include:
 
 
-Pay for use models that eliminate the overhead of investing in idle machines.
-
+- Pay for use models that eliminate the overhead of investing in idle machines.
 
 - Direct deployment and improved DevOps, continuous integration (CI), and continuous delivery
 (CD) pipelines.
 
-
 - Automatic upgrades, updates, and security patches.
-
 
 - Push-button scale out and scale up (elastic scale).
 
@@ -869,15 +795,13 @@ frameworks for hosting web apps.
 Software as a Service or SaaS is centrally hosted and available without local installation or
 provisioning. SaaS often is hosted on top of PaaS as a platform for deploying software. SaaS provides
 services to run and connect with existing software. SaaS is often industry and vertical specific. SaaS is
-
-- ften licensed and typically provides a client/server model. Most modern SaaS offerings use web
+often licensed and typically provides a client/server model. Most modern SaaS offerings use web
 
 7 CHAPTER 1 | Architecture approaches
 
 
 based apps for the client. Companies typically consider SaaS as a business solution to license
-
-- fferings. It isn’t often implemented as architecture consideration for scalability and maintainability of
+offerings. It isn’t often implemented as architecture consideration for scalability and maintainability of
 an application. Indeed, most SaaS solutions are built on IaaS, PaaS, and/or serverless back ends.
 
 
@@ -900,18 +824,14 @@ Benefits of containers include:
 
 - Lightweight and portable
 
+- Self-contained so no need to install dependencies
 
-Self-contained so no need to install dependencies
-
-
-Provide a consistent environment regardless of the host (runs exactly same on a laptop as on a
+- Provide a consistent environment regardless of the host (runs exactly same on a laptop as on a
 cloud server)
 
+- Can be provisioned quickly for scale-out
 
-Can be provisioned quickly for scale-out
-
-
-Can be restarted quickly to recover from failure
+- Can be restarted quickly to recover from failure
 
 
 A container runs on a container host (that in turn may run on a bare metal machine or a virtual
@@ -942,11 +862,9 @@ The _kubelet_ is the client that relays commands from Kubernetes to Docker.
 Functions as a Service (FaaS) is a specialized container service that is similar to serverless. A specific
 [implementation of FaaS, called OpenFaaS, sits on top of containers to provide serverless capabilities.](https://github.com/openfaas/faas)
 OpenFaaS provides templates that package all of the container dependencies necessary to run a piece
-
-- f code. Using templates simplifies the process of deploying code as a functional unit. OpenFaaS
+of code. Using templates simplifies the process of deploying code as a functional unit. OpenFaaS
 targets architectures that already include containers and orchestrators because it can use the existing
 infrastructure. Although it provides serverless functionality, it specifically requires you to use Docker
-
 and an orchestrator.
 
 #### **Serverless**
@@ -988,13 +906,10 @@ The advantages of serverless include:
 to containers or virtual machines. The instances scale across multiple hosts addressing scale out
 and resiliency.
 
-
 - **Micro-billing.** Most serverless providers bill based on serverless executions, enabling massive
 cost savings in certain scenarios.
 
-
 - **Instant scale.** Serverless can scale to match workloads automatically and quickly.
-
 
 - **Faster time to market.** Developers focus on code and deploy directly to the serverless platform.
 Components can be released independently of each other.
@@ -1037,15 +952,11 @@ serverless and other decision points in the next chapter.
 
 - **Scale** refers to the unit that is used to scale the application
 
-
 - **Abstracts** refers to the layer that is abstracted by the implementation
-
 
 - **Unit** refers to the scope of what is deployed
 
-
 - **Lifetime** refers to the typical runtime of a specific instance
-
 
 - **Responsibility** refers to the overhead to build, deploy, and maintain the application
 
@@ -1057,30 +968,21 @@ The next chapter will focus on serverless architecture, use cases, and design pa
 
 - [Azure application architecture guide](https://docs.microsoft.com/azure/architecture/guide/)
 
-
 - [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db)
-
 
 - [Azure SQL](https://docs.microsoft.com/azure/sql-database)
 
-
 - [N-Tier architecture pattern](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)
-
 
 - [Kubernetes on Azure](https://docs.microsoft.com/azure/aks/intro-kubernetes)
 
-
 - [Microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)
-
 
 - [Virtual machine N-tier reference architecture](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/n-tier)
 
-
 - [Virtual machines](https://docs.microsoft.com/azure/virtual-machines/)
 
-
 - [What is Docker?](https://docs.microsoft.com/dotnet/architecture/microservices/container-docker-introduction/docker-defined)
-
 
 - [Wingtip Tickets SaaS application](https://docs.microsoft.com/azure/sql-database/saas-tenancy-welcome-wingtip-tickets-app)
 
@@ -1088,9 +990,11 @@ The next chapter will focus on serverless architecture, use cases, and design pa
 11 CHAPTER 1 | Architecture approaches
 
 
-# **CHAPTER 2**
+**CHAPTER**
+# **2**
 
 ## Serverless architecture
+
 
 [There are many approaches to using serverless](https://azure.com/serverless) architectures. This chapter explores examples of
 common architectures that integrate serverless. It also covers concerns that may pose additional
@@ -1101,9 +1005,7 @@ examples are provided that illustrate various serverless use cases.
 Serverless hosts often use an existing container-based or PaaS layer to manage the serverless
 [instances. For example, Azure Functions is based on Azure App Service. The App Service is used to](https://docs.microsoft.com/azure/app-service/)
 scale out instances and manage the runtime that executes Azure Functions code. For Windows-based
-
 functions, the host runs as PaaS and scales out the .NET runtime. For Linux-based functions, the host
-
 leverages containers.
 
 
@@ -1114,8 +1016,7 @@ language and platform options later in this chapter.
 
 
 Some projects may benefit from taking an “all-in” approach to serverless. Applications that rely heavily
-
-- n microservices may implement all microservices using serverless technology. The majority of apps
+on microservices may implement all microservices using serverless technology. The majority of apps
 are hybrid, following an N-tier design and using serverless for the components that make sense
 
 
@@ -1135,22 +1036,17 @@ another example that could be implemented as a full serverless back end. The mic
 communicate over various protocols with each other. Specific scenarios include:
 
 
-API-based SaaS products (example: financial payments processor).
-
+- API-based SaaS products (example: financial payments processor).
 
 - Message-driven applications (example: device monitoring solution).
 
-
-Apps focused on integration between services (example: airline booking application).
-
+- Apps focused on integration between services (example: airline booking application).
 
 - Processes that run periodically (example: timer-based database clean-up).
 
+- Apps focused on data transformation (example: import triggered by file upload).
 
-Apps focused on data transformation (example: import triggered by file upload).
-
-
-Extract Transform and Load (ETL) processes.
+- Extract Transform and Load (ETL) processes.
 
 
 There are other, more specific use cases that are covered later in this document.
@@ -1174,7 +1070,6 @@ replaced. The combination of serverless and proxies can facilitate much of this 
 
 
 [To learn more about this approach, watch the video: Bring your app to the cloud with serverless Azure](https://docs.microsoft.com/Events/Connect/2017/E102)
-
 [Functions.](https://docs.microsoft.com/Events/Connect/2017/E102)
 
 ### Web apps
@@ -1235,24 +1130,19 @@ connected and send information ranging from inventory to sensor data such as tem
 humidity. In the enterprise, IoT provides business process improvements through monitoring and
 automation. IoT data may be used to regulate the climate in a large warehouse or track inventory
 through the supply chain. IoT can sense chemical spills and call the fire department when smoke is
-
 detected.
 
 
 The sheer volume of devices and information often dictates an event-driven architecture to route and
-
 process messages. Serverless is an ideal solution for several reasons:
 
 
 - Enables scale as the volume of devices and data increases.
 
-
 - Accommodates adding new endpoints to support new devices and sensors.
 
-
-Facilitates independent versioning so developers can update the business logic for a specific
+- Facilitates independent versioning so developers can update the business logic for a specific
 device without having to deploy the entire system.
-
 
 - Resiliency and less downtime.
 
@@ -1280,8 +1170,7 @@ implementation isn’t the right solution for certain components.
 Serverless functions, as with microservices in general, are stateless by default. Avoiding state enables
 serverless to be ephemeral, to scale out, and to provide resiliency without a central point of failure. In
 some circumstances, business processes require state. If your process requires state, you have two
-
-- ptions. You can adopt a model other than serverless, or interact with a separate service that provides
+options. You can adopt a model other than serverless, or interact with a separate service that provides
 state. Adding state can complicate the solution and make it harder to scale, and potentially create a
 single point of failure. Carefully consider whether your function absolutely requires state. If the answer
 is “yes,” determine whether it still makes sense to implement it with serverless.
@@ -1293,9 +1182,7 @@ the more popular solutions include:
 
 - Use a temporary data store or distributed cache, like Redis
 
-
 - Store state in a database, like SQL or CosmosDB
-
 
 - [Handle state through a workflow engine like durable functions](https://docs.microsoft.com/azure/azure-functions/durable/durable-functions-overview)
 
@@ -1332,13 +1219,11 @@ service levels. There are a few approaches to address startup time if it’s imp
 success of the app.
 
 
-Some providers allow users to pay for service levels that guarantee infrastructure is “always on”.
-
+- Some providers allow users to pay for service levels that guarantee infrastructure is “always on”.
 
 - Implement a keep-alive mechanism (ping the endpoint to keep it “awake”).
 
-
-Use orchestration like Kubernetes with a containerized function approach (the host is already
+- Use orchestration like Kubernetes with a containerized function approach (the host is already
 running so spinning up new instances is extremely fast).
 
 #### **Database updates and migrations**
@@ -1348,11 +1233,9 @@ An advantage of serverless code is that you can release new functions without ha
 entire application. This advantage can become a disadvantage when there’s a relational database
 involved. Changes to database schemas are difficult to synchronize with serverless updates. Additional
 challenges are posed when things go wrong and the changes must be rolled back. Data integrity is
-
-- ne reason that a best practice for microservices and serverless functions is that they own their own
+one reason that a best practice for microservices and serverless functions is that they own their own
 data. It is possible to deploy changes as a single unit of compute and data. The reality is that many
 legacy systems feature a large back-end database that must be reconciled with the serverless
-
 architecture.
 
 
@@ -1364,13 +1247,10 @@ change will:
 
 1. Add a new “completed date” field.
 
-
 2. Transform the “completed” Boolean field to a computed function that evaluates whether the
 completed date is after the current date.
 
-
 3. Add a trigger to set the completed date to the current date when the completed Boolean is set
-
 to true.
 
 
@@ -1399,8 +1279,7 @@ are hosted together based on scale requirements.
 
 
 Rules often specify how to scale-up (increase the host resources) and scale-out (increase the number
-
-- f host instances) based on varying parameters. Triggers for scales may include schedule, request
+of host instances) based on varying parameters. Triggers for scales may include schedule, request
 rates, CPU utilization, and memory usage. Higher performance often comes at a greater cost. The less
 expensive, consumption-based approaches may not scale as quickly when the request rate suddenly
 increases. There is a trade-off between paying up front “insurance cost” versus paying strictly “as you
@@ -1423,8 +1302,7 @@ and analytics.
 A serverless architecture may include functions that rely on other functions. In fact, it isn’t uncommon
 in a serverless architecture to have multiple services call each other as part of an interaction or
 distributed transaction. To avoid strong coupling, it’s recommended that services don’t reference each
-
-- ther directly. When the endpoint for a service needs to change, direct references could result in
+other directly. When the endpoint for a service needs to change, direct references could result in
 major refactoring. A suggested solution is to provide a service discovery mechanism, such as a
 registry, that provides the appropriate end point for a request type. Another solution is to leverage
 messaging services like queues or topics for communication between services.
@@ -1519,7 +1397,7 @@ acted upon. These events can trigger serverless functions to execute a piece of 
 example of event-based processing is event-sourced systems. An “event” is raised to mark a task as
 complete. A serverless function triggered by the event updates the appropriate database document. A
 [second serverless function may use the event to update the read model for the system. Azure Event](https://docs.microsoft.com/azure/event-grid/overview)
-Grid provides a way to integrate events with functions as subscribers.
+[Grid](https://docs.microsoft.com/azure/event-grid/overview) provides a way to integrate events with functions as subscribers.
 
 
 [Events are informational messages. For more information, see Event Sourcing pattern.](https://docs.microsoft.com/azure/architecture/patterns/event-sourcing)
@@ -1531,7 +1409,6 @@ Extract, Transform, and Load (ETL) is a common business function. Serverless is 
 because it allows code to be triggered as part of a pipeline. Individual code components can address
 various aspects. One serverless function may download the file, another applies the transformation,
 and another loads the data. The code can be tested and deployed independently, making it easier to
-
 maintain and scale where needed.
 
 
@@ -1547,7 +1424,6 @@ encountered in the data stream trigger an Azure Function to address the anomaly.
 Asynchronous messaging and background processing allow applications to kick off processes without
 having to wait. An example of asynchronous processing is an OCR app. An image is submitted and
 queued for processing. Scanning the image to extract text may take time, and once it’s finished a
-
 notification is sent. Serverless can handle both the invocation and the result in this scenario.
 
 #### **Web apps and APIs**
@@ -1557,7 +1433,6 @@ A popular scenario for serverless is N-tier applications, most commonly ones whe
 web app. The popularity of Single Page Applications (SPA) has surged recently. SPA apps render a
 single page, then rely on API calls and the returned data to dynamically render new UI without
 reloading a full page. Client-side rendering provides a much faster, more responsive application to the
-
 end user.
 
 
@@ -1601,40 +1476,33 @@ back-end scaling of individual microservices while presenting a single front end
 
 - [Azure Event Grid](https://docs.microsoft.com/azure/event-grid/overview)
 
-
 - [Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub)
 
+- [Challenges and solutions for distributed data management](https://docs.microsoft.com/dotnet/architecture/microservices/architect-microservice-container-applications/distributed-data-management)
 
-[Challenges and solutions for distributed data management](https://docs.microsoft.com/dotnet/architecture/microservices/architect-microservice-container-applications/distributed-data-management)
-
-
-[Designing microservices: identifying microservice boundaries](https://docs.microsoft.com/azure/architecture/microservices/microservice-boundaries)
-
+- [Designing microservices: identifying microservice boundaries](https://docs.microsoft.com/azure/architecture/microservices/microservice-boundaries)
 
 - [Event Hubs](https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs)
 
-
 - [Event Sourcing pattern](https://docs.microsoft.com/azure/architecture/patterns/event-sourcing)
-
 
 - [Implementing the Circuit Breaker pattern](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/implement-circuit-breaker-pattern)
 
-
 - [IoT Hub](https://docs.microsoft.com/azure/iot-hub)
-
 
 - [Service Bus](https://docs.microsoft.com/azure/service-bus)
 
-
-[Working with the change feed support in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/change-feed)
+- [Working with the change feed support in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/change-feed)
 
 
 23 CHAPTER 2 | Serverless architecture
 
 
-# CHAPTER 3 CHAPTER 3
+**CHAPTER** **CHAPTER**
+# 3 3
 
 ## Azure serverless platform
+
 
 The Azure serverless platform includes Azure Functions, Logic Apps, and Event Grid. These services
 work together and connect with myriad other resources. The serverless platform works with
@@ -1672,7 +1540,7 @@ support and capabilities.
 
 The following languages are all supported in general availability (GA).
 
-|Language|Supportedruntimesfor4x<br>.|
+|Language|Supported runtimes for 4.x|
 |---|---|
 |**C#**|.NET 6.0, 7.0, .NET Framework 4.8|
 |**JavaScript**|Node 14, 16, 18|
@@ -1697,7 +1565,6 @@ plan. The consumption plan will scale the back end automatically based on load.
 
 [Another hosting option for function apps is the Premium plan. This plan provides an “always on”](https://docs.microsoft.com/azure/azure-functions/functions-premium-plan)
 instance to avoid cold start, supports advanced features like VNet connectivity, and runs on premium
-
 hardware.
 
 
@@ -1709,13 +1576,11 @@ hardware.
 There are three common ways you can create function apps.
 
 
-Script functions in the portal.
-
+- Script functions in the portal.
 
 - Create the necessary resources using the Azure CLI.
 
-
-Build functions locally using your favorite IDE and publish them to Azure.
+- Build functions locally using your favorite IDE and publish them to Azure.
 
 
 25 CHAPTER 3 | Azure serverless platform
@@ -1736,39 +1601,31 @@ Build functions locally using your favorite IDE and publish them to Azure.
 Functions are invoked by a _trigger_ and can have exactly one. In addition to invoking the function,
 certain triggers also serve as bindings. You may also define multiple bindings in addition to the
 trigger. _Bindings_ provide a declarative way to connect data to your code. They can be passed in (input)
-
-- r receive data (output). Triggers and bindings make functions easy to work with. Bindings remove the
-
-- verhead of manually creating database or file system connections. All of the information needed for
+or receive data (output). Triggers and bindings make functions easy to work with. Bindings remove the
+overhead of manually creating database or file system connections. All of the information needed for
 the bindings is contained in a special _functions.json_ file for scripts or declared with attributes in code.
 
 
 Some common triggers include:
 
 
-Blob Storage: invoke your function when a file or folder is uploaded or changed in storage.
+- Blob Storage: invoke your function when a file or folder is uploaded or changed in storage.
 
+- HTTP: invoke your function like a REST API.
 
-HTTP: invoke your function like a REST API.
+- Queue: invoke your function when items exist in a queue.
 
-
-Queue: invoke your function when items exist in a queue.
-
-
-Timer: invoke your function on a regular cadence.
+- Timer: invoke your function on a regular cadence.
 
 
 Examples of bindings include:
 
 
-CosmosDB: easily connect to the database to load or save files.
+- CosmosDB: easily connect to the database to load or save files.
 
+- Table Storage: work with key/value storage from your function app.
 
-Table Storage: work with key/value storage from your function app.
-
-
-Queue Storage: easily retrieve items from a queue, or place new items on the queue.
-
+- Queue Storage: easily retrieve items from a queue, or place new items on the queue.
 
 The following example _functions.json_ file defines a trigger and a binding:
 
@@ -1805,22 +1662,17 @@ Adding Application Insights to existing apps is as easy as adding an instrumenta
 application’s settings. With Application Insights you can:
 
 
-Create custom charts and alerts based on metrics such as number of function invocations, the
+- Create custom charts and alerts based on metrics such as number of function invocations, the
 time it takes to run a function, and exceptions
 
+- Analyze failures and server exceptions
 
-Analyze failures and server exceptions
-
-
-Drill into performance by operation and measure the time it takes to call third-party
+- Drill into performance by operation and measure the time it takes to call third-party
 dependencies
 
+- Monitor CPU usage, memory, and rates across all servers that host your function apps
 
-Monitor CPU usage, memory, and rates across all servers that host your function apps
-
-
-View a live stream of metrics including request count and latency for your function apps
-
+- View a live stream of metrics including request count and latency for your function apps
 
 - [Use Analytics](https://docs.microsoft.com/azure/application-insights/app-insights-analytics) to search, query, and create custom charts over your function data
 
@@ -1833,7 +1685,6 @@ snippet creates a custom telemetry client using the instrumentation key set for 
 
 
 [The following code measures how long it takes to insert a new row into an Azure Table Storage](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview)
-
 instance:
 
 
@@ -1877,7 +1728,6 @@ gateway. For example, you can use the Logic App to trigger an on-premises SQL st
 
 Like Azure Functions, you kick off Logic App workflows with a trigger. There are many triggers for you
 to choose from. The following capture shows just a few of the more popular ones out of hundreds
-
 that are available.
 
 
@@ -1919,11 +1769,9 @@ The major features of event grid include:
 
 - Fully managed event routing.
 
-
 - Near real-time event delivery at scale.
 
-
-Broad coverage both inside and outside of Azure.
+- Broad coverage both inside and outside of Azure.
 
 #### **Scenarios**
 
@@ -1962,7 +1810,6 @@ for updates on a regular interval.
 
 [Azure provides several messaging services, including Event Hubs](https://docs.microsoft.com/azure/event-hubs) [and Service Bus. Each is designed to](https://docs.microsoft.com/azure/service-bus-messaging)
 address a specific set of use cases. The following diagram provides a high-level overview of the
-
 differences between the services.
 
 
@@ -1979,23 +1826,17 @@ Using Event Grid you can take advantage of the following performance guarantees:
 
 - Subsecond end-to-end latency in the 99th percentile.
 
-
 - 99.99% availability.
-
 
 - 10 million events per second per region.
 
-
 - 100 million subscriptions per region.
-
 
 - 50-ms publisher latency.
 
+- 24-hour retry with exponential back-off for guaranteed delivery in the 1-day window.
 
-24-hour retry with exponential back-off for guaranteed delivery in the 1-day window.
-
-
-Transparent regional failover.
+- Transparent regional failover.
 
 #### **Event Grid schema**
 
@@ -2028,7 +1869,7 @@ lists the resource types, message types, and events that are available automatic
 
 
 
-|Azure<br>resource|Eventtype|Description|
+|Azure<br>resource|Event type|Description|
 |---|---|---|
 |Azure<br>subscription|Microsoft.Resources.ResourceWriteSuccess|Raised when a resource create or<br>update operation succeeds.|
 ||Microsoft.Resources.ResourceWriteFailure|Raised when a resource create or<br>update operation fails.|
@@ -2052,7 +1893,7 @@ lists the resource types, message types, and events that are available automatic
 35 CHAPTER 3 | Azure serverless platform
 
 
-|Azure<br>resource|Eventtype|Description|
+|Azure<br>resource|Event type|Description|
 |---|---|---|
 ||Microsoft.Resources.ResourceDeleteCancel|Raised when a resource delete<br>operation is canceled. This event<br>happens when a template deployment<br>is canceled.|
 
@@ -2076,54 +1917,37 @@ managed cloud native applications.
 
 - [App service plans](https://docs.microsoft.com/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)
 
-
 - [Application Insights](https://docs.microsoft.com/azure/application-insights)
-
 
 - [Application Insights Analytics](https://docs.microsoft.com/azure/application-insights/app-insights-analytics)
 
-
 - [Azure: Bring your app to the cloud with serverless Azure Functions](https://docs.microsoft.com/events/Connect/2017/E102)
-
 
 - [Azure Event Grid](https://docs.microsoft.com/azure/event-grid/overview)
 
-
 - [Azure Event Grid event schema](https://docs.microsoft.com/azure/event-grid/event-schema)
-
 
 - [Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs)
 
-
 - [Azure Functions documentation](https://docs.microsoft.com/azure/azure-functions)
-
 
 - [Azure Functions triggers and bindings concepts](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings)
 
-
 - [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps)
-
 
 - [Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging)
 
-
 - [Azure Table Storage](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview)
-
 
 - [Connecting to on-premises data sources with Azure On-premises Data Gateway](https://docs.microsoft.com/azure/analysis-services/analysis-services-gateway)
 
+- [Create your first function in the Azure portal](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function)
 
-[Create your first function in the Azure portal](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function)
+- [Create your first function using the Azure CLI](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function-azure-cli)
 
-
-[Create your first function using the Azure CLI](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function-azure-cli)
-
-
-[Create your first function using Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio)
-
+- [Create your first function using Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio)
 
 - [Functions supported languages](https://docs.microsoft.com/azure/azure-functions/supported-languages)
-
 
 - [Monitor Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-monitoring)
 
@@ -2131,9 +1955,11 @@ managed cloud native applications.
 36 CHAPTER 3 | Azure serverless platform
 
 
-# CHAPTER 4 CHAPTER 4
+**CHAPTER** **CHAPTER**
+# 4 4
 
 ## Durable Azure Functions
+
 
 When creating serverless applications with Azure Functions, your operations will typically be designed
 to run in a stateless manner. The reason for this design choice is because as the platform scales, it
@@ -2151,12 +1977,10 @@ external systems. It’s common to come across solutions that rely on centralize
 distributed key-value stores, or shared databases to manage that state. However, these are all
 additional resources that now need to be provisioned and managed. In a serverless environment, your
 code could become cumbersome trying to coordinate with these resources manually. Azure Functions
-
-- ffers an alternative for creating stateful functions called Durable Functions.
+offers an alternative for creating stateful functions called Durable Functions.
 
 
 Durable Functions is an extension to the Azure Functions runtime that enables the definition of
-
 stateful workflows in code. By breaking down workflows into activities, the Durable Functions
 extension can manage state, create progress checkpoints, and handle the distribution of function calls
 across servers. In the background, it makes use of an Azure Storage account to persist execution
@@ -2168,10 +1992,8 @@ developers need to interact.
 
 
 Stateful workflows in Durable Functions can be broken down into two intrinsic components;
-
-- rchestration and activity triggers. Triggers and bindings are core components used by Azure
+orchestration and activity triggers. Triggers and bindings are core components used by Azure
 Functions to enable your serverless functions to be notified when to start, receive input, and return
-
 results.
 
 #### **Working with the Orchestration client**
@@ -2189,7 +2011,7 @@ preemptively terminate, or send notifications of external events.
 For such cases, the Durable Functions extension provides the `DurableOrchestrationClient` class that
 allows you to interact with orchestrated functions. You get access to the orchestration client by using
 the `OrchestrationClientAttribute` binding. Generally, you would include this attribute with another
-trigger type, such as an `HttpTrigger` - r `ServiceBusTrigger` . Once the source function has been
+trigger type, such as an `HttpTrigger` or `ServiceBusTrigger` . Once the source function has been
 triggered, the orchestration client can be used to start an orchestrator function.
 
 #### **The orchestrator function**
@@ -2197,7 +2019,6 @@ triggered, the orchestration client can be used to start an orchestrator functio
 
 Annotating a function with the OrchestrationTriggerAttribute in Azure Functions marks that function
 as an orchestrator function. It’s responsible for managing the various activities that make up your
-
 stateful workflow.
 
 
@@ -2209,7 +2030,6 @@ GetInput<T> method must be used.
 
 
 Also, the return types of orchestration functions must be either void, Task, or a JSON serializable
-
 value.
 
 
@@ -2219,22 +2039,19 @@ _Error handling code has been left out for brevity_
 Multiple instances of an orchestration can be started and running at the same time. Calling the
 
 `StartNewAsync` method on the `DurableOrchestrationClient` launches a new instance of the
-
-- rchestration. The method returns a `Task<string>` that completes when the orchestration has started.
+orchestration. The method returns a `Task<string>` that completes when the orchestration has started.
 
 
 38 CHAPTER 4 | Durable Azure Functions
 
 
 An exception of type `TimeoutException` gets thrown if the orchestration hasn’t started within 30
-
 seconds.
 
 
 The completed `Task<string>` from `StartNewAsync` should contain the unique ID of the orchestration
 instance. This instance ID can be used to invoke operations on that specific orchestration. The
-
-- rchestration can be queried for the status or sent event notifications.
+orchestration can be queried for the status or sent event notifications.
 
 #### **The activity functions**
 
@@ -2251,13 +2068,11 @@ method of the `DurableActivityContext` parameter.
 
 
 Similar to orchestration functions, the return types of activity functions must be either void, Task, or a
-
 JSON serializable value.
 
 
 Any unhandled exceptions that get thrown within activity functions will get sent up to the calling
-
-- rchestrator function and presented as a `TaskFailedException` . At this point, the error can be caught
+orchestrator function and presented as a `TaskFailedException` . At this point, the error can be caught
 and logged in the orchestrator, and the activity can be retried.
 
 ### Recommended resources
@@ -2265,9 +2080,7 @@ and logged in the orchestrator, and the activity can be retried.
 
 - [Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-overview)
 
-
-[Bindings for Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-bindings)
-
+- [Bindings for Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-bindings)
 
 - [Manage instances in Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-instance-management)
 
@@ -2293,7 +2106,6 @@ dependency on the ordering of activities creates a function chain of execution.
 The benefit of using Durable Functions to implement this workflow pattern comes from its ability to
 do checkpointing. If the server crashes, the network times out or some other issue occurs, Durable
 functions can resume from the last known state and continue running your workflow even if it’s on
-
 another server.
 
 
@@ -2331,15 +2143,14 @@ inspect the status of the running workflow. The returned status response should 
 following code.
 
 
-As the process continues, the status response will change to either **Failed** - r **Completed** . On
+As the process continues, the status response will change to either **Failed** or **Completed** . On
 successful completion, the **output** property in the payload will contain any returned data.
 
 #### **Monitoring**
 
 
 For simple recurring tasks, Azure Functions provides the `TimerTrigger` that can be scheduled based
-
-- n a CRON expression. The timer works well for simple, short-lived tasks, but there might be scenarios
+on a CRON expression. The timer works well for simple, short-lived tasks, but there might be scenarios
 where more flexible scheduling is needed. This scenario is when the monitoring pattern and Durable
 Functions can help.
 
@@ -2353,8 +2164,7 @@ might be to create watchers for stock price changes that complete once a certain
 
 
 `DurableOrchestrationContext` ’s `CreateTimer` method sets up the schedule for the next invocation
-
-- f the loop to check for stock price changes. `DurableOrchestrationContext` also has a
+of the loop to check for stock price changes. `DurableOrchestrationContext` also has a
 
 `CurrentUtcDateTime` property to get the current DateTime value in UTC. It’s better to use this
 property instead of `DateTime.UtcNow` because it’s easily mocked for testing.
@@ -2364,16 +2174,17 @@ property instead of `DateTime.UtcNow` because it’s easily mocked for testing.
 
 - [Azure Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-overview)
 
-
 - [Unit Testing in .NET Core and .NET Standard](https://docs.microsoft.com/dotnet/core/testing/)
 
 
 42 CHAPTER 4 | Durable Azure Functions
 
 
-# CHAPTER 5 CHAPTER 5
+**CHAPTER** **CHAPTER**
+# 5 5
 
 ## Serverless business scenarios and use cases
+
 
 There are many use cases and scenarios for serverless applications. This chapter includes samples that
 illustrate the different scenarios. The scenarios include links to related documentation and public
@@ -2395,26 +2206,19 @@ average speed of New York Yellow taxi trips per day in 2017.
 Learn how to use functions to execute server-side logic and build serverless architectures.
 
 
-Choosing the best Azure service for your business
-
+- Choosing the best Azure service for your business
 
 - Creating Azure Functions
 
-
 - Using triggers
 
+- Chaining functions
 
-Chaining functions
-
-
-Long-running workflows
-
+- Long-running workflows
 
 - Monitoring
 
-
 - Development, testing, and deployment
-
 
 [Create serverless applications](https://docs.microsoft.com/training/paths/create-serverless-applications/)
 
@@ -2492,7 +2296,6 @@ way to implement an API for a mobile application. Microsoft offers great cross-p
 Android, and Windows with Xamarin. As such, Xamarin and Azure Functions are working great
 together. This article shows how to implement an Azure Function in the Azure portal or in Visual
 Studio at first, and build a cross-platform client with Xamarin.Forms running on Android, iOS, and
-
 Windows.
 
 
@@ -2509,7 +2312,6 @@ services like Azure Data Explorer.
 
 
 [Produce and Consume messages through Service Bus, Event Hubs, and Storage Queues with Azure](https://docs.microsoft.com/samples/azure-samples/durable-functions-producer-consumer/product-consume-messages-az-functions/)
-
 [Functions](https://docs.microsoft.com/samples/azure-samples/durable-functions-producer-consumer/product-consume-messages-az-functions/)
 
 ### Recommended resources
@@ -2517,32 +2319,22 @@ services like Azure Data Explorer.
 
 - [Big Data Processing: Serverless MapReduce on Azure](https://docs.microsoft.com/samples/azure-samples/durablefunctions-mapreduce-dotnet/big-data-processing-serverless-mapreduce-on-azure/)
 
-
 - [Create serverless applications](https://docs.microsoft.com/training/paths/create-serverless-applications/)
-
 
 - [Customer Reviews App with Cognitive Services](https://docs.microsoft.com/samples/azure-samples/functions-customer-reviews/customer-reviews-cognitive-services/)
 
-
 - [File processing and validation using Azure Functions, Logic Apps, and Durable Functions](https://docs.microsoft.com/samples/azure-samples/serverless-file-validation/file-processing-and-validation-using-azure-functions-logic-apps-and-durable-functions/)
-
 
 - [Implementing a simple Azure Function with a Xamarin.Forms client](https://docs.microsoft.com/samples/azure-samples/functions-xamarin-getting-started/implementing-a-simple-azure-function-with-a-xamarinforms-client/)
 
-
 - [In-editor game telemetry visualization](https://docs.microsoft.com/samples/azure-samples/gaming-in-editor-telemetry/in-editor-telemetry-visualization/)
-
 
 - [IoT Reliable Edge Relay](https://docs.microsoft.com/samples/azure-samples/iot-reliable-edge-relay/iot-reliable-edge-relay/)
 
-
 - [Produce and Consume messages through Service Bus, Event Hubs, and Storage Queues with](https://docs.microsoft.com/samples/azure-samples/durable-functions-producer-consumer/product-consume-messages-az-functions/)
-
 [Azure Functions](https://docs.microsoft.com/samples/azure-samples/durable-functions-producer-consumer/product-consume-messages-az-functions/)
 
-
-[Serverless functions for GraphQL](https://github.com/softchris/graphql-workshop-dotnet/blob/master/docs/workshop/4.md)
-
+- [Serverless functions for GraphQL](https://github.com/softchris/graphql-workshop-dotnet/blob/master/docs/workshop/4.md)
 
 - [Serverless Microservices reference architecture](https://docs.microsoft.com/samples/azure-samples/serverless-microservices-reference-architecture/serverless-microservices-reference-architecture/)
 
@@ -2550,9 +2342,11 @@ services like Azure Data Explorer.
 45 CHAPTER 5 | Serverless business scenarios and use cases
 
 
-# CHAPTER 6 CHAPTER 6
+**CHAPTER** **CHAPTER**
+# 6 6
 
 ## Conclusion
+
 
 The following key takeaways are the most important conclusions from this guide.
 
@@ -2580,7 +2374,6 @@ Serverless is an architecture well-suited for building these services.
 
 **Serverless platforms.** Serverless isn’t just about the code. Platforms that support serverless
 architectures include serverless workflows and orchestration, serverless messaging and event services,
-
 and serverless databases.
 
 

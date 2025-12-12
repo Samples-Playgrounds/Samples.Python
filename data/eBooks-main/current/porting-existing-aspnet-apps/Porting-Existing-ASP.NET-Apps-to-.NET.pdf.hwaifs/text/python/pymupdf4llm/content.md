@@ -22,16 +22,14 @@ by any means without the written permission of the publisher.
 
 This book is provided “as-is” and expresses the author’s views and opinions. The views, opinions, and
 information expressed in this book, including URL and other Internet website references, may change
-
 without notice.
 
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association
+or connection is intended or should be inferred.
 
-- r connection is intended or should be inferred.
 
-
-[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) - n the “Trademarks” webpage are
+[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) on the “Trademarks” webpage are
 trademarks of the Microsoft group of companies.
 
 
@@ -63,14 +61,12 @@ Participants and Reviewers:
 
 
 **David Pine**, Senior Content Developer, .NET team, Microsoft
-
 ### Version
 
 
 This guide covers **.NET 7** and updates related to the same technology “wave” (that is, Azure and other
 third-party technologies) coinciding in time with the .NET 7 release. This book covers migration of
 apps that are currently running on .NET Framework 4.x.
-
 ### Who should use this guide
 
 
@@ -88,7 +84,6 @@ A secondary audience is technical decision-makers planning when to move their ap
 The target audience for this book is .NET developers with large, existing apps that run on ASP.NET
 MVC and Web API. Apps built on ASP.NET Web Forms are outside of the focus of this book, though
 much of the information comparing .NET Framework and .NET Core/latest may still be relevant.
-
 ### How you can use this guide
 
 
@@ -98,7 +93,6 @@ architectural differences between .NET Framework and .NET Core. From there, you�
 for migrating a large solution over time and how to port a real app. Next, the book includes
 deployment scenarios that address the need to run different apps while appearing as a single app to
 users. The book concludes with two case studies describing real apps that have migrated from
-
 ASP.NET MVC to ASP.NET Core.
 
 
@@ -108,19 +102,14 @@ learn about specific concepts:
 
   - Architectural differences
 
-
   - Migrate large solutions
-
 
   - Sample migration
 
-
   - Deployment scenarios
 
-
 [This guide is available both in PDF form](https://aka.ms/aspnet-porting-ebook) and online. Feel free to forward this document or links to its
-
-- nline version to your team to ensure a common understanding of these concepts.
+online version to your team to ensure a common understanding of these concepts.
 
 
 ## Contents
@@ -587,9 +576,11 @@ Summary: Port existing ASP.NET Apps to .NET 7 ..................................
 v Contents
 
 
-# CHAPTER 1
+**CHAPTER**
+# 1
 
 ## Introduction to porting apps to .NET 7
+
 
 .NET Core and its latest version, .NET 7, represent a revolutionary step forward from .NET Framework.
 It offers a host of advantages over .NET Framework across the board from productivity to
@@ -622,21 +613,15 @@ apps today and tomorrow.
 
   - Is migration to .NET 7 appropriate?
 
-
   - When does it make sense to remain on .NET Framework?
-
 
   - Should apps target ASP.NET Core 2.1 as a stepping stone?
 
-
   - How should teams choose the right .NET version to target?
 
-
-  What strategies are recommended for incremental migration of large apps?
-
+  - What strategies are recommended for incremental migration of large apps?
 
   - What deployment strategies should be considered when porting to .NET 7?
-
 
   - Where can we find additional resources?
 
@@ -651,8 +636,7 @@ specific and technical considerations in future chapters.
 ### References
 
 
-  [2021 Stack Overflow developer survey most loved web frameworks](https://insights.stackoverflow.com/survey/2021#technology-most-loved-dreaded-and-wanted)
-
+  - [2021 Stack Overflow developer survey most loved web frameworks](https://insights.stackoverflow.com/survey/2021#technology-most-loved-dreaded-and-wanted)
 
   - [.NET Core is the Future of .NET](https://devblogs.microsoft.com/dotnet/net-core-is-the-future-of-net/)
 
@@ -668,7 +652,6 @@ The chapter also considers scenarios and counterpoints for staying on .NET Frame
 
 
 Let’s start with some of the reasons why you might want to move to .NET Core/.NET 7. There are quite
-
 a few, so don’t consider this list exhaustive.
 
 
@@ -735,7 +718,6 @@ ASP.NET MVC 5, while there are plenty being written for .NET 7, for example.
 
 There are many compelling reasons to consider migrating to .NET Core, which presumably is why
 you’re reading this book! But let’s consider some disadvantages and reasons why it may make more
-
 sense to remain on the .NET Framework.
 
 #### **When is .NET Framework appropriate?**
@@ -746,7 +728,6 @@ wouldn’t benefit substantially from the advantages listed above. In that case,
 good business case to incur the cost of porting the app. If your app might benefit from the
 advantages .NET Core offers, you may still need to stay on .NET Framework if you need certain
 [technologies that are unavailable on .NET Core. There are some .NET technologies that are unavailable](https://docs.microsoft.com/en-us/dotnet/core/porting/net-framework-tech-unavailable)
-
 [on .NET Core, including AppDomains, Remoting, Code Access Security (CAS), Security Transparency,](https://docs.microsoft.com/en-us/dotnet/core/porting/net-framework-tech-unavailable)
 and System.EnterpriseServices. A brief summary of these technologies and their alternatives is
 included here. For more detailed guidance, see the documentation.
@@ -766,8 +747,7 @@ containers as an alternative. Some customers use AppDomains as a way of unloadin
 
 
 [.NET Core and .NET 5+ support WCF clients. Server-side WCF is possible through CoreWCF, which is](https://www.nuget.org/profiles/corewcf)
-
-- fficially supported by Microsoft as of April 2022. Apps that require server-side WCF functionality can
+officially supported by Microsoft as of April 2022. Apps that require server-side WCF functionality can
 also consider a different communication technology (such as gRPC or REST) as part of a migration.
 
 
@@ -809,8 +789,7 @@ accounts. Run processes with the minimal set of privileges necessary.
 ASP.NET Core 2.1 is an interesting release because it’s the most recently supported ASP.NET Core
 release that supported both .NET Core and .NET Framework runtimes. As such, it may offer an easier
 upgrade path for some apps when compared to upgrading all parts of the app to .NET Core/.NET 7 at
-
-- nce. Although support for .NET Core 2.1 ended in August 2021, it may make sense as an interim step
+once. Although support for .NET Core 2.1 ended in August 2021, it may make sense as an interim step
 for some apps. Also, support for ASP.NET Core 2.1 running on .NET Framework will continue for as
 [long as its underlying .NET Framework is supported. A complete list of currently supported ASP.NET](https://docs.microsoft.com/lifecycle/products/microsoft-net-framework)
 [Core 2.1 packages](https://dotnet.microsoft.com/platform/support/policy/aspnetcore-2.1) is available for reference.
@@ -852,10 +831,8 @@ strategies that can be used to achieve this. These are covered in Chapter 5: Dep
 
 Keep in mind that ASP.NET Core 2.1 was the last LTS release of .NET Core that supported running on
 .NET Framework and consuming .NET Framework libraries. Although the release is now unsupported
-
-- n .NET Core, it continues to be supported for use with .NET Framework. It will remain supported for
+on .NET Core, it continues to be supported for use with .NET Framework. It will remain supported for
 [as long as the specific .NET Framework version is supported. For more information, see ASP.NET Core](https://dotnet.microsoft.com/platform/support/policy/dotnet-core)
-
 [2.1 on .NET Framework.](https://dotnet.microsoft.com/platform/support/policy/dotnet-core)
 
 #### **References**
@@ -884,7 +861,6 @@ Customers looking to migrate a large .NET Framework app to .NET today may be loo
 destination, given that they haven’t already made the move to an earlier version of .NET Core. In this
 case, the best .NET version to target for the migration is .NET 6, which is the most recent LTS version.
 While support for .NET Core 3.1 ended in December 2022, support for .NET 6 will continue until
-
 November 2024.
 
 
@@ -934,7 +910,6 @@ until the entire app has been ported to the new structure.
 
 
 Some specific guidance on how to follow this strategy using IIS is covered in Chapter 5, Deployment
-
 Scenarios.
 
 #### **Migrating layer by layer**
@@ -944,7 +919,6 @@ Consider the challenge of migrating a large ASP.NET 4.5 app. One approach is to 
 app directly from .NET Framework 4.5 to .NET 7. However, this approach needs to account for every
 breaking change between the two frameworks and versions, which are substantial. Performing this
 work on one project at a time provides a set of stepping stones so that the entire solution doesn’t
-
 need to be moved at once.
 
 
@@ -994,18 +968,13 @@ target frameworks, updating NuGet dependencies, and more.
 
   - [What is .NET Standard?](https://dotnet.microsoft.com/platform/dotnet-standard)
 
-
-  [Migrate from ASP.NET Core 6.0 to 7.0](https://docs.microsoft.com/aspnet/core/migration/60-70)
-
+  - [Migrate from ASP.NET Core 6.0 to 7.0](https://docs.microsoft.com/aspnet/core/migration/60-70)
 
   - [Announcing .NET 6 - The Fastest .NET Yet](https://devblogs.microsoft.com/dotnet/announcing-net-6/)
 
-
   - [Introducing .NET 5](https://devblogs.microsoft.com/dotnet/introducing-net-5/)
 
-
-  [Migrate from ASP.NET Core 3.1 to 6.0 LTS](https://docs.microsoft.com/aspnet/core/migration/31-to-60)
-
+  - [Migrate from ASP.NET Core 3.1 to 6.0 LTS](https://docs.microsoft.com/aspnet/core/migration/31-to-60)
 
   - [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant)
 
@@ -1026,8 +995,7 @@ functionality in an ASP.NET 4.x app.
 
 
 The less code in your ASP.NET Web Forms pages, the better. When possible, keep business logic and
-
-- ther concerns like data access in separate classes, ideally in separate class libraries. These class
+other concerns like data access in separate classes, ideally in separate class libraries. These class
 libraries can be ported to .NET Standard and consumed by any ASP.NET Core app.
 
 
@@ -1059,19 +1027,16 @@ strategies to make moving to ASP.NET Core easier. You can migrate your Web Forms
 ASP.NET Core successfully by:
 
 
-  Keeping non-web functionality out of your projects.
-
+  - Keeping non-web functionality out of your projects.
 
   - Using web APIs wherever possible.
 
-
-  Considering Blazor as an option for a more modern UI.
+  - Considering Blazor as an option for a more modern UI.
 
 #### **References**
 
 
   - [Free e-book: Blazor for ASP.NET Web Forms Developers](https://devblogs.microsoft.com/aspnet/blazor-aspnet-webforms-ebook/)
-
 
   - [Blazor Web Forms Components (Community Project)](https://fritzandfriends.github.io/BlazorWebFormsComponents/)
 
@@ -1089,10 +1054,9 @@ Because .NET Core runs on Linux, you’ll find some hosting options available th
 consideration previously. Linux-based hosting may be preferable for the following reasons:
 
 
-  Your organization has infrastructure or expertise.
+  - Your organization has infrastructure or expertise.
 
-
-  Hosting providers offer attractive features or pricing for Linux-based hosting.
+  - Hosting providers offer attractive features or pricing for Linux-based hosting.
 
 
 .NET Core opens the door to these options.
@@ -1126,8 +1090,7 @@ either as a full monolith or broken up into multiple smaller containerized apps.
 
 
 Migrating large .NET Framework apps to .NET Core often requires a substantial effort. Most
-
-- rganizations will want to be able to break this effort up in some fashion, so that pieces of the app
+organizations will want to be able to break this effort up in some fashion, so that pieces of the app
 can be migrated and deployed in production before the entire migration is complete. Running both
 the original ASP.NET app and its newly-migrated ASP.NET Core sub-app(s) side by side is a frequently
 cited goal. This can be achieved through a number of mechanisms including leveraging IIS routing,
@@ -1142,7 +1105,6 @@ You can continue hosting your apps on IIS running on Windows. This is a fine opt
 who want to take advantage of ASP.NET Core features without changing their current deployment
 model. While moving to ASP.NET Core provides more options in terms of how and where to deploy
 your apps, it doesn’t require that you change from the status quo of using the proven combination of
-
 IIS on Windows.
 
 #### **Other options on Windows**
@@ -1164,7 +1126,6 @@ single server solution to hosting all parts of the app.
 
   - [Host ASP.NET Core on Windows with IIS](https://docs.microsoft.com/aspnet/core/host-and-deploy/iis/)
 
-
   - [Troubleshooting ASP.NET Core on Azure App Service and IIS](https://docs.microsoft.com/aspnet/core/test/troubleshoot-azure-iis)
 
 ### Additional migration resources
@@ -1182,7 +1143,6 @@ journey.
 available about versions, frameworks, breaking changes, and support options. You’ll find many links in
 this book to docs articles, but for any problem you’re facing it’s often worth at least doing a quick
 search of the docs to see if there is already information covering the issue and offering a solution or
-
 workaround.
 
 #### **GitHub**
@@ -1195,48 +1155,33 @@ be helpful. A partial list of these organizations and some of their public repos
 
   - [Microsoft](https://github.com/microsoft)
 
-
-     [ASP.NET API Versioning](https://github.com/microsoft/aspnet-api-versioning)
-
+     - [ASP.NET API Versioning](https://github.com/microsoft/aspnet-api-versioning)
 
   - [dotnet](https://github.com/dotnet)
 
-
      - [ASP.NET Core](https://github.com/dotnet/aspnetcore)
-
 
      - [.NET Runtime](https://github.com/dotnet/runtime)
 
+     - [Entity Framework Core](https://github.com/dotnet/efcore)
 
-     [Entity Framework Core](https://github.com/dotnet/efcore)
-
-
-     [C# Language](https://github.com/dotnet/csharplang)
-
+     - [C# Language](https://github.com/dotnet/csharplang)
 
      - [Docs](https://github.com/dotnet/docs)
 
+     - [Docs Samples](https://github.com/dotnet/samples)
 
-     [Docs Samples](https://github.com/dotnet/samples)
+     - [Try Convert](https://github.com/dotnet/try-convert)
 
+     - [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant)
 
-     [Try Convert](https://github.com/dotnet/try-convert)
+  - [.NET Architecture Reference Apps](https://github.com/dotnet-architecture)
 
+     - [eShopModernizing](https://github.com/dotnet-architecture/eShopModernizing)
 
-     [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant)
+     - [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb)
 
-
-  [.NET Architecture Reference Apps](https://github.com/dotnet-architecture)
-
-
-     [eShopModernizing](https://github.com/dotnet-architecture/eShopModernizing)
-
-
-     [eShopOnWeb](https://github.com/dotnet-architecture/eShopOnWeb)
-
-
-     [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers)
-
+     - [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers)
 
 If you run into problems with your migration, these GitHub repositories are a good place to report
 them. The product teams watch the issues and typically respond quickly to bug reports (though “how
@@ -1259,14 +1204,11 @@ maximize the chances of someone with the experience needed noticing your questio
 
 
 YouTube has a huge amount of .NET and .NET Core video content, which may include useful tutorials
-
-- r walkthroughs covering any scenario you may encounter. Consider searching it separately if your
-
-- ther efforts to find help online come up short. Here are a few good places to get started:
+or walkthroughs covering any scenario you may encounter. Consider searching it separately if your
+other efforts to find help online come up short. Here are a few good places to get started:
 
 
   - [dotnet](https://www.youtube.com/dotnet)
-
 
   - [Visual Studio](https://www.youtube.com/visualstudio)
 
@@ -1275,22 +1217,17 @@ YouTube has a huge amount of .NET and .NET Core video content, which may include
 
 [You’ll find many other ways to connect with .NET developers on the .NET Community page. You can](https://dotnet.microsoft.com/platform/community)
 [also join the DotNetEvolution Discord server. Additionally, many product teams and team members](https://aka.ms/dotnet-discord)
-
 are on Twitter as well as in various other communities. You can follow and communicate with the
-
-author of this book on Twitter as well.
+[author of this book on Twitter as well.](https://twitter.com/ardalis)
 
 #### **References**
 
 
-  [Overview of porting from .NET Framework to .NET Core](https://docs.microsoft.com/en-us/dotnet/core/porting/)
-
+  - [Overview of porting from .NET Framework to .NET Core](https://docs.microsoft.com/en-us/dotnet/core/porting/)
 
   - [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant)
 
-
-  [Migrate from ASP.NET to ASP.NET Core](https://docs.microsoft.com/en-us/dotnet/core/porting/)
-
+  - [Migrate from ASP.NET to ASP.NET Core](https://docs.microsoft.com/en-us/dotnet/core/porting/)
 
   - [.NET Community Resources](https://dotnet.microsoft.com/platform/community)
 
@@ -1298,9 +1235,11 @@ author of this book on Twitter as well.
 11 CHAPTER 1 | Introduction to porting apps to .NET 7
 
 
-# CHAPTER 2
+**CHAPTER**
+# 2
 
 ## Architectural differences between ASP.NET MVC and ASP.NET Core
+
 
 There are many architectural differences between ASP.NET MVC on .NET Framework and ASP.NET
 Core. It’s important to have a broad understanding of these differences as teams evaluate the work
@@ -1325,11 +1264,8 @@ ASP.NET MVC apps lived entirely within Internet Information Server (IIS), the pr
 available on Windows operating systems. Unlike ASP.NET MVC, ASP.NET Core apps are executable
 apps. You can run them from the command line, using dotnet run. They have an entry point method
 like all C# programs, typically public static void Main() or a similar variation (perhaps with arguments
-
-- r async support). This is perhaps the biggest architectural difference between ASP.NET Core and
-
+or async support). This is perhaps the biggest architectural difference between ASP.NET Core and
 ASP.NET MVC, and is one of several differences that allows ASP.NET Core to run on non-Windows
-
 systems.
 
 
@@ -1383,8 +1319,7 @@ is still supported in .NET 7, but is no longer the default approach.
 
 
 In addition to code related to configuring the app’s services and request pipeline, apps may have
-
-- ther code that must run when the app begins. Such code is typically placed in _Program.cs_ - r
+other code that must run when the app begins. Such code is typically placed in _Program.cs_ or
 [registered as an IHostedService, which will be started by the generic host when the app starts.](https://docs.microsoft.com/aspnet/core/fundamentals/host/generic-host)
 
 
@@ -1403,23 +1338,17 @@ recommended approach is typically to put such code into IHostedService implement
 #### **References**
 
 
-  [ASP.NET Application Life Cycle Overview for IIS 7](https://docs.microsoft.com/previous-versions/aspnet/bb470252(v=vs.100))
+  - [ASP.NET Application Life Cycle Overview for IIS 7](https://docs.microsoft.com/previous-versions/aspnet/bb470252(v=vs.100))
 
-
-  [ASP.NET Application Life Cycle Overview for IIS 5 and 6](https://docs.microsoft.com/previous-versions/aspnet/ms178473(v=vs.100))
-
+  - [ASP.NET Application Life Cycle Overview for IIS 5 and 6](https://docs.microsoft.com/previous-versions/aspnet/ms178473(v=vs.100))
 
   - [Getting Started with OWIN and Katana](https://docs.microsoft.com/aspnet/aspnet/overview/owin-and-katana/getting-started-with-owin-and-katana)
 
-
   - [WebActivator](https://github.com/davidebbo/WebActivator)
-
 
   - [App Startup in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/startup)
 
-
   - [.NET Generic Host in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/host/generic-host)
-
 
   - [IHostedService](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/multi-container-microservice-net-applications/background-tasks-with-ihostedservice)
 
@@ -1429,8 +1358,7 @@ recommended approach is typically to put such code into IHostedService implement
 ASP.NET MVC apps are hosted in IIS, and may rely on IIS configuration for their behavior. This often
 [includes IIS modules. As part of reviewing an app to prepare to port it from ASP.NET MVC to ASP.NET](https://docs.microsoft.com/iis/get-started/introduction-to-iis/iis-modules-overview)
 Core, teams should identify which modules, if any, they’re using from the list of IIS Modules installed
-
-- n their server.
+on their server.
 
 
 [ASP.NET Core apps can run on a number of different servers. The default cross platform server,](https://docs.microsoft.com/aspnet/core/fundamentals/servers/)
@@ -1444,7 +1372,6 @@ the Internet and required capabilities are supported by HTTP.sys but not Kestrel
 
 
 Kestrel does not have an equivalent to IIS modules (though apps hosted in IIS can still take advantage
-
 [of IIS modules). To achieve equivalent behavior, middleware](https://docs.microsoft.com/aspnet/core/fundamentals/middleware/) configured in the ASP.NET Core app itself
 is typically used.
 
@@ -1453,9 +1380,7 @@ is typically used.
 
   - [IIS Modules](https://docs.microsoft.com/iis/get-started/introduction-to-iis/iis-modules-overview)
 
-
   - [ASP.NET Core Middleware](https://docs.microsoft.com/aspnet/core/fundamentals/middleware/)
-
 
   - [ASP.NET Core Servers](https://docs.microsoft.com/aspnet/core/fundamentals/servers/)
 
@@ -1464,7 +1389,6 @@ is typically used.
 
 Most web apps involve a combination of server-side logic and static files that must be sent to the
 client as-is. How should your migration from ASP.NET MVC to ASP.NET Core handle serving static
-
 files?
 
 #### **Host static files in ASP.NET MVC**
@@ -1485,8 +1409,7 @@ allows better performance while reducing load and bandwidth from app servers.
 It may be surprising, but ASP.NET Core doesn’t have built-in support for static files. This feature that
 has always existed as just a part of ASP.NET, enabled by IIS, isn’t intrinsic to ASP.NET Core or its
 [Kestrel web server. To serve static files from an ASP.NET Core app, you must configure static files](https://docs.microsoft.com/aspnet/core/fundamentals/static-files)
-
-middleware.
+[middleware.](https://docs.microsoft.com/aspnet/core/fundamentals/static-files)
 
 
 With static files middleware configured, an ASP.NET Core app will serve all files located in a certain
@@ -1514,7 +1437,6 @@ Core. Doing so reduces the migration effort’s overall scope for static assets.
 
   - [Static content hosting](https://docs.microsoft.com/azure/architecture/patterns/static-content-hosting)
 
-
   - [Static files in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/static-files)
 
 ### Dependency injection differences between ASP.NET MVC and ASP.NET Core
@@ -1528,15 +1450,11 @@ ASP.NET MVC apps include:
 
   - [Autofac](https://www.autofac.org/)
 
-
   - [Unity](https://unitycontainer.github.io/)
-
 
   - [Ninject](http://www.ninject.org/)
 
-
   - [StructureMap](http://structuremap.github.io/) _(deprecated)_
-
 
   - [Castle Windsor](http://www.castleproject.org/projects/windsor/)
 
@@ -1563,7 +1481,6 @@ to configure services using the builder.Services property of the web host builde
 with the application’s DI container (service collection/service provider) and is used to create and inject
 service dependencies within the app. Built-in ASP.NET Core features like Entity Framework Core,
 Identity, and even MVC are brought into the app by configuring them as services during application
-
 startup.
 
 
@@ -1582,7 +1499,6 @@ to understand it before porting your app.
 
 
   - [Dependency Injection in .NET](https://docs.microsoft.com/en-us/dotnet/core/extensions/dependency-injection)
-
 
   - [Dependency Injection in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection)
 
@@ -1643,7 +1559,6 @@ like HttpContext.Current you should instead use constructor dependency injection
 
 
 This approach eliminates the static coupling of the method to the current context while providing
-
 access in a testable fashion.
 
 #### **References**
@@ -1651,14 +1566,12 @@ access in a testable fashion.
 
   - [ASP.NET HTTP modules and HTTP handlers](https://docs.microsoft.com/troubleshoot/aspnet/http-modules-handlers)
 
-
   - [ASP.NET Core middleware](https://docs.microsoft.com/aspnet/core/fundamentals/middleware/?preserve-view=true&view=aspnetcore-3.1)
 
 ### Configuration differences between ASP.NET MVC and ASP.NET Core
 
 
 How configuration values are stored and read changed dramatically between ASP.NET and ASP.NET
-
 Core.
 
 
@@ -1668,7 +1581,7 @@ Core.
 #### **ASP.NET MVC configuration**
 
 In ASP.NET apps, configuration uses the built-in .NET configuration files, _web.config_ in the app folder
-and _machine.config_ - n the server. Most ASP.NET MVC and Web API apps store their settings in the
+and _machine.config_ on the server. Most ASP.NET MVC and Web API apps store their settings in the
 configuration file’s appSettings or connectionStrings elements. Some also use custom configuration
 sections that can be mapped to a settings class.
 
@@ -1703,7 +1616,6 @@ is built into .NET Core, configuration values are generally accessed through an 
 
 
 Figure 2-2 shows how to pass IConfiguration into a Razor Page and access configuration settings from
-
 it:
 
 
@@ -1721,7 +1633,6 @@ _Figure 2-3. Using the options pattern in ASP.NET Core._
 
 
 For the options pattern to work, the options type must be configured in ConfigureServices when the
-
 app starts up:
 
 #### **Migrate configuration**
@@ -1748,22 +1659,18 @@ If you’re still maintaining the ASP.NET app, it may be helpful to avoid static
 ConfigurationManager and replace them with access through interfaces. This will ease the transition
 to ASP.NET Core’s configuration system. In general, static access to external resources makes code
 harder to test and maintain, so be on the lookout for anywhere else the app may be following this
-
 pattern.
 
 #### **References**
 
 
-  [Configuration in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/)
-
+  - [Configuration in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/)
 
   - [Options pattern in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/options)
 
+  - [Migrate configuration to ASP.NET Core](https://docs.microsoft.com/aspnet/core/migration/configuration)
 
-  [Migrate configuration to ASP.NET Core](https://docs.microsoft.com/aspnet/core/migration/configuration)
-
-
-  [Refactoring Static Config Access](https://ardalis.com/refactoring-static-config-access/)
+  - [Refactoring Static Config Access](https://ardalis.com/refactoring-static-config-access/)
 
 ### Routing differences between ASP.NET MVC and ASP.NET Core
 
@@ -1780,7 +1687,6 @@ ASP.NET MVC offers two approaches to routing:
 
 1. The route table, which is a collection of routes that can be used to match incoming requests
 to controller actions.
-
 
 2. Attribute routing, which performs the same function but is achieved by decorating the actions
 themselves, rather than editing a global route table.
@@ -1807,13 +1713,11 @@ convention configured using additional routes.
 
 Routes that are defined with their actions may be easier to discover and reason about than routes
 defined in an external location. Using attribute routing, an individual action method can have its route
-
 defined with a [Route] attribute:
 
 
 [Attribute routing in ASP.NET MVC 5 also supports defaults and prefixes, which can be added at the](https://devblogs.microsoft.com/aspnet/attribute-routing-in-asp-net-mvc-5/)
 controller level (and which are applied to all actions within that controller). Refer to the
-
 documentation for details.
 
 
@@ -1891,7 +1795,6 @@ All of these routable features are configured in a similar fashion using endpoin
 The preceding code is used (in addition to UseRouting) to configure various endpoints, including
 Health Checks, controllers, and Razor Pages. For controllers, the above configuration specifies a
 default routing convention, which is the fairly standard {controller}/{action}/{id?} pattern that’s been
-
 recommended since the first versions of ASP.NET MVC.
 
 
@@ -1905,13 +1808,11 @@ things, this attribute requires the use of attribute routing for actions in such
 
 Attribute routing in ASP.NET Core behaves similarly in ASP.NET MVC and Web API. In addition to
 supporting the [Route] attribute, however, route information can also be specified as part of the HTTP
-
 method attribute:
 
 
 As with previous versions, you can specify a default route with placeholders, and add this at the
 controller class level or even on a base class. You use the same [Route] attribute for all of these cases.
-
 For example, a base API controller class might look like this:
 
 
@@ -1923,18 +1824,13 @@ controller name, action name, and an optional integer id parameter.
 
   - [ASP.NET MVC Routing Overview](https://docs.microsoft.com/aspnet/mvc/overview/older-versions-1/controllers-and-routing/asp-net-mvc-routing-overview-cs)
 
-
   - [Attribute Routing in ASP.NET MVC 5](https://devblogs.microsoft.com/aspnet/attribute-routing-in-asp-net-mvc-5/)
-
 
   - [Attribute routing in ASP.NET Web API 2](https://docs.microsoft.com/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2)
 
-
   - [Routing and Action Selection in ASP.NET Web API](https://docs.microsoft.com/aspnet/web-api/overview/web-api-routing-and-actions/routing-and-action-selection)
 
-
   - [Routing in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/routing)
-
 
   - [Routing to controller actions in ASP.NET Core MVC](https://docs.microsoft.com/aspnet/core/mvc/controllers/routing)
 
@@ -1957,7 +1853,6 @@ logging solution. Logging frameworks typically support multiple “sinks” (or 
 log output, such as text files, databases, or even emails. They use configuration to determine which
 levels of log messages from which parts of the system are routed to different sinks. When considering
 how to migrate an app’s logging to .NET Core, review how logging is performed and configured in the
-
 app.
 
 #### **ASP.NET Core logging**
@@ -1981,8 +1876,7 @@ Warning or above from Microsoft-prefixed categories:
 
 
 [Support for logging in ASP.NET Core is extensive and flexible. For more detailed information, refer to](https://docs.microsoft.com/aspnet/core/fundamentals/logging/)
-
-the docs.
+[the docs.](https://docs.microsoft.com/aspnet/core/fundamentals/logging/)
 
 
 25 CHAPTER 2 | Architectural differences between ASP.NET MVC and ASP.NET Core
@@ -1998,9 +1892,7 @@ solution, take one of the following actions:
 
 1. Migrate the logging solution yourself
 
-
 2. Migrate to a third-party logging solution
-
 
 3. Use the built-in logging support in ASP.NET Core
 
@@ -2016,8 +1908,7 @@ can continue running on .NET Framework while logging using the newer extensions 
 
   - [Logging in .NET Core and ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/logging/)
 
-
-  [Microsoft.Extensions.Logging NuGet Package](https://www.nuget.org/packages/microsoft.extensions.logging/)
+  - [Microsoft.Extensions.Logging NuGet Package](https://www.nuget.org/packages/microsoft.extensions.logging/)
 
 ### Compare Razor Pages to ASP.NET MVC
 
@@ -2029,9 +1920,7 @@ migrating from actions and views to Razor Pages.
 
 
 A typical strongly typed view-based MVC app will use a controller to contain one or more actions. The
-
 controller will interact with the domain or data model, and create an instance of a viewmodel class.
-
 Then this viewmodel class is passed to the view associated with that action. Using this approach,
 coupled with the default folder structure of MVC apps, to add a new page to an app requires
 modifying a controller in one folder, a view in a nested subfolder in another folder, and a viewmodel
@@ -2039,8 +1928,7 @@ in yet another folder.
 
 
 Razor Pages group together the action (now a _handler_ ) and the viewmodel (called a _PageModel_ ) in
-
-- ne class, and link this class to the view (called a Razor Page). All Razor Pages go into a _Pages_ folder in
+one class, and link this class to the view (called a Razor Page). All Razor Pages go into a _Pages_ folder in
 the root of the ASP.NET Core project. Razor Pages use a routing convention based on their name and
 location within this folder. Handlers behave exactly like action methods but have the HTTP verb they
 handle in their name (for example, OnGet). They also don’t necessarily need to return, since by default
@@ -2064,7 +1952,6 @@ benefits of Razor Pages over traditional view-based file organization.
 
   - [Introduction to Razor Pages in ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages/)
 
-
   - [Simpler ASP.NET Core Apps with Razor Pages](https://docs.microsoft.com/archive/msdn-magazine/2017/september/asp-net-core-simpler-asp-net-mvc-apps-with-razor-pages)
 
 ### Compare ASP.NET Web API 2 and ASP.NET Core
@@ -2086,14 +1973,12 @@ testing.
 
 
 [See Incremental ASP.NET to ASP.NET Core migration for an incremental approach to migrating to](https://docs.microsoft.com/aspnet/core/migration/inc/overview)
-
 ASP.NET Core.
 
 #### **References**
 
 
-  [Migrate from ASP.NET Web API to ASP.NET Core](https://docs.microsoft.com/aspnet/core/migration/webapi)
-
+  - [Migrate from ASP.NET Web API to ASP.NET Core](https://docs.microsoft.com/aspnet/core/migration/webapi)
 
   - [Ardalis.ApiEndpoints NuGet package](https://www.nuget.org/packages/Ardalis.ApiEndpoints/)
 
@@ -2101,8 +1986,7 @@ ASP.NET Core.
 
 
 In ASP.NET MVC 5, authentication is configured in _Startup.Auth.cs_ in the _App_Start_ folder. In ASP.NET
-Core MVC, this configuration occurs in _Startup.cs_ - r _Program.cs_, as part of configuring the app’s
-
+Core MVC, this configuration occurs in _Startup.cs_ or _Program.cs_, as part of configuring the app’s
 services and middleware.
 
 
@@ -2115,7 +1999,6 @@ Authentication and authorization are performed using middleware added to the req
 It’s important to add the auth middleware in the appropriate order in the middleware pipeline. Only
 requests that make it to the middleware will be impacted by it. For instance, if a call to UseStaticFiles()
 were placed above the code shown here, it wouldn’t be protected by authentication and
-
 authorization.
 
 
@@ -2123,8 +2006,7 @@ In ASP.NET MVC and Web API, apps often refer to the current user using the Claim
 property. This property isn’t set in ASP.NET Core, and any behavior in your app that depends on it will
 [need to migrate from ClaimsPrincipal.Current by using the User property on ControllerBase or getting](https://docs.microsoft.com/aspnet/core/migration/claimsprincipal-current)
 access to the current HttpContext and referencing its User property. If neither of these solutions is an
-
-- ption, services can request the User as an argument, in which case it must be supplied from
+option, services can request the User as an argument, in which case it must be supplied from
 elsewhere in the app, or the IHttpContextAccessor can be requested and used to get the HttpContext.
 
 #### **Authorization**
@@ -2149,12 +2031,9 @@ authorization approach.
 
   - [Security, Authentication, and Authorization with ASP.NET MVC](https://docs.microsoft.com/aspnet/mvc/overview/security/)
 
-
   - [Migrate Authentication and Identity to ASP.NET Core](https://docs.microsoft.com/aspnet/mvc/overview/security/)
 
-
-  [Migrate from ClaimsPrincipal.Current](https://docs.microsoft.com/aspnet/core/migration/claimsprincipal-current)
-
+  - [Migrate from ClaimsPrincipal.Current](https://docs.microsoft.com/aspnet/core/migration/claimsprincipal-current)
 
   - [Introduction to Authorization in ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/authorization/introduction)
 
@@ -2177,16 +2056,13 @@ providers like Facebook, Google, Microsoft, and Twitter.
 [If your ASP.NET MVC app is using ASP.NET Membership, you’ll find a guide to migrate from ASP.NET](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/membership-to-core-identity)
 [Membership authentication to ASP.NET Core 2.0 Identity. This is mainly a data migration exercise, at](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/membership-to-core-identity)
 the completion of which you should be able to use ASP.NET Core Identity with your migrated user
-
 records.
 
 
 If you migrate your ASP.NET Identity users to ASP.NET Core Identity, you may need to update their
 password hashes, or track which passwords are hashed with the new ASP.NET Core Identity approach
-
 [or the older ASP.NET Identity approach. This approach described on Stack Overflow provides some](https://stackoverflow.com/a/57074910/13729)
-
-- ptions for migrating user password hashes over time, rather than all at once.
+options for migrating user password hashes over time, rather than all at once.
 
 
 One of the biggest differences when it comes to ASP.NET Core Identity compared to ASP.NET Identity
@@ -2203,7 +2079,6 @@ The following resources offer some guidance for migrating from OWIN / Katana:
 
   - [Migration](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/#globalasax-file-replacement)
 
-
   - [Katana to ASPNET 5](https://devblogs.microsoft.com/aspnet/katana-asp-net-5-and-bridging-the-gap/)
 
 #### **References**
@@ -2211,24 +2086,19 @@ The following resources offer some guidance for migrating from OWIN / Katana:
 
   - [Migrate Authentication and Identity to ASP.NET Core](https://docs.microsoft.com/aspnet/core/migration/identity)
 
-
   - [Introduction to Identity on ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/authorization/introduction)
 
+  - [Configure ASP.NET Core Identity](https://docs.microsoft.com/aspnet/core/security/authentication/identity-configuration)
 
-  [Configure ASP.NET Core Identity](https://docs.microsoft.com/aspnet/core/security/authentication/identity-configuration)
-
-
-  [Scaffold Identity in ASP.NET Core projects](https://docs.microsoft.com/aspnet/core/security/authentication/scaffold-identity)
+  - [Scaffold Identity in ASP.NET Core projects](https://docs.microsoft.com/aspnet/core/security/authentication/scaffold-identity)
 
 ### Compare controllers in ASP.NET MVC and Web API with controllers in ASP.NET Core
 
 
 In ASP.NET MVC 5 and Web API 2, there were two different Controller base types. MVC controllers
 inherited from Controller; Web API controllers inherited from ApiController. In ASP.NET Core, this
-
-- bject hierarchy has been merged. It’s recommended that API controllers in ASP.NET Core inherit
+object hierarchy has been merged. It’s recommended that API controllers in ASP.NET Core inherit
 from ControllerBase and add the [ApiController] attribute. Standard view-based MVC controllers
-
 should inherit from Controller.
 
 
@@ -2243,7 +2113,6 @@ further by using custom base Controller types with default behavior and attribut
 In ASP.NET MVC, content negotiation isn’t supported. ASP.NET Web API 2 does support content
 [negotiation, as does ASP.NET Core. Using content negotiation, the format of the content returned to a](https://docs.microsoft.com/aspnet/core/web-api/advanced/formatting)
 request can be determined by headers the client provides indicating its preferred manner of receiving
-
 the content.
 
 
@@ -2251,7 +2120,6 @@ When migrating ASP.NET Web API controllers to ASP.NET Core, a few components nee
 changed if they exist. These include references to the ApiController base class, the System.Web.Http
 [namespace, and the IHttpActionResult interface. Refer to the documentation for recommendations on](https://docs.microsoft.com/aspnet/core/migration/webapi)
 [how to migrate these specific differences. Note that the preferred return type for API actions in](https://docs.microsoft.com/aspnet/core/migration/webapi)
-
 ASP.NET Core is ActionResult<T>.
 
 
@@ -2260,7 +2128,6 @@ In addition, the [ChildActionOnly] attribute isn’t supported in ASP.NET Core. 
 
 
 [ASP.NET Core includes two new attributes: ConsumesAttribute](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.consumesattribute) [and ProducesAttribute. These are used](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.producesattribute)
-
 to specify the type an action consumes or produces, which can be helpful for routing and
 [documenting the API using tools like Swagger/OpenAPI.](https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger)
 
@@ -2269,8 +2136,7 @@ to specify the type an action consumes or produces, which can be helpful for rou
 
   - [Format response data in ASP.NET Core Web API](https://docs.microsoft.com/aspnet/core/web-api/advanced/formatting)
 
-
-  [Migrate from ASP.NET Web API to ASP.NET Core](https://docs.microsoft.com/aspnet/core/migration/webapi)
+  - [Migrate from ASP.NET Web API to ASP.NET Core](https://docs.microsoft.com/aspnet/core/migration/webapi)
 
 ### Compare Razor usage in ASP.NET MVC and ASP.NET Core
 
@@ -2304,16 +2170,13 @@ Razor Pages were compared to ASP.NET MVC earlier in this chapter.
 #### **References**
 
 
-  [Migrate from ASP.NET MVC to ASP.NET Core MVC: Controllers and Views](https://docs.microsoft.com/aspnet/core/migration/mvc#migrate-controllers-and-views)
-
+  - [Migrate from ASP.NET MVC to ASP.NET Core MVC: Controllers and Views](https://docs.microsoft.com/aspnet/core/migration/mvc#migrate-controllers-and-views)
 
   - [Tag Helpers in ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/views/tag-helpers/intro)
 
-
   - [Introduction to Razor Pages in ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages)
 
-
-  [Razor syntax reference for ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages)
+  - [Razor syntax reference for ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages)
 
 ### Compare ASP.NET SignalR and ASP.NET Core SignalR
 
@@ -2321,45 +2184,33 @@ Razor Pages were compared to ASP.NET MVC earlier in this chapter.
 ASP.NET Core SignalR is incompatible with clients or servers using ASP.NET SignalR. You’ll need to
 update both clients and server to use ASP.NET Core SignalR. Some differences are described in this
 [section, while the full list is available in the docs. ASP.NET Core SignalR requires .NET Core 2.1 or](https://docs.microsoft.com/aspnet/core/signalr/version-differences)
-
 greater.
 
 #### **Feature differences**
 
 
   - ASP.NET SignalR automatically attempts to reconnect dropped connections; this behavior is
+opt-in for ASP.NET Core SignalR clients.
 
-    - pt-in for ASP.NET Core SignalR clients.
-
-
-  Both frameworks support JSON; ASP.NET Core SignalR also supports a binary protocol based
-
-    - n MessagePack, and custom protocols can be created.
-
+  - Both frameworks support JSON; ASP.NET Core SignalR also supports a binary protocol based
+on MessagePack, and custom protocols can be created.
 
   - The Forever Frame transport, supported by ASP.NET SignalR, isn’t supported in ASP.NET Core
 SignalR.
 
-
-  ASP.NET Core SignalR must be configured by adding services.AddSignalR() and
+  - ASP.NET Core SignalR must be configured by adding services.AddSignalR() and
 app.UseEndpoints in _Program.cs_ .
-
 
   - ASP.NET Core SignalR requires sticky sessions; ASP.NET SignalR doesn’t.
 
+  - ASP.NET Core simplifies the connection model; connections are only made to a single hub.
 
-  ASP.NET Core simplifies the connection model; connections are only made to a single hub.
-
-
-  ASP.NET Core SignalR supports streaming data from the hub to the client.
-
+  - ASP.NET Core SignalR supports streaming data from the hub to the client.
 
   - ASP.NET Core SignalR doesn’t support passing state between clients and the hub (but method
 calls still allow passing information between hubs and clients).
 
-
   - The PersistentConnection class doesn’t exist in ASP.NET Core SignalR.
-
 
   - ASP.NET SignalR supports SQL Server and Redis. ASP.NET Core SignalR supports Azure
 SignalR and Redis.
@@ -2367,8 +2218,7 @@ SignalR and Redis.
 #### **References**
 
 
-  [Differences between ASP.NET SignalR and ASP.NET Core SignalR](https://docs.microsoft.com/aspnet/core/signalr/version-differences)
-
+  - [Differences between ASP.NET SignalR and ASP.NET Core SignalR](https://docs.microsoft.com/aspnet/core/signalr/version-differences)
 
   - [Azure SignalR Service](https://docs.microsoft.com/azure/azure-signalr/)
 
@@ -2398,17 +2248,14 @@ ASP.NET MVC and Web API did not support anything like the integration testing sc
 ASP.NET Core. In any migration effort, you should allocate time to write some integration tests for
 your newly migrated system to ensure it’s working as expected and continues to do so. Even if you
 weren’t writing tests of your web app logic before the migration, you should strongly consider doing
-
 so as you move to ASP.NET Core.
 
 #### **References**
 
 
-  [Creating Unit Tests for ASP.NET MVC Applications](https://docs.microsoft.com/aspnet/mvc/overview/older-versions-1/unit-testing/creating-unit-tests-for-asp-net-mvc-applications-cs)
-
+  - [Creating Unit Tests for ASP.NET MVC Applications](https://docs.microsoft.com/aspnet/mvc/overview/older-versions-1/unit-testing/creating-unit-tests-for-asp-net-mvc-applications-cs)
 
   - [Unit test controller logic in ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/controllers/testing)
-
 
   - [Integration tests in ASP.NET Core](https://docs.microsoft.com/aspnet/core/test/integration-tests)
 
@@ -2416,9 +2263,11 @@ so as you move to ASP.NET Core.
 32 CHAPTER 2 | Architectural differences between ASP.NET MVC and ASP.NET Core
 
 
-# CHAPTER 3
+**CHAPTER**
+# 3
 
 ## Migrate large solutions to ASP.NET Core
+
 
 Migrating large solutions from .NET Framework to .NET Core requires some planning. Dependencies
 must be migrated or updated before the projects that depend on them. There are tools that can
@@ -2436,8 +2285,7 @@ with the migration, and some strategies to consider for the migration itself.
 
   - [What topics are important to migrating large MVC and Web API apps to .NET Core?](https://twitter.com/ardalis/status/1313669040859217921)
 
-
-  [Porting from .NET Framework to .NET Core](https://docs.microsoft.com/en-us/dotnet/core/porting/)
+  - [Porting from .NET Framework to .NET Core](https://docs.microsoft.com/en-us/dotnet/core/porting/)
 
 ### Identify sequence of projects to migrate
 
@@ -2495,11 +2343,10 @@ _Figure 3-3. Configure the .NET Portability Analyzer._
 The analyzer produces a detailed report for each assembly. The report:
 
 
-  Describes how compatible each project is with a given target framework, such as .NET 7 or
+  - Describes how compatible each project is with a given target framework, such as .NET 7 or
 .NET Standard 2.0.
 
-
-  Helps teams assess the effort required to port a particular project to a particular target
+  - Helps teams assess the effort required to port a particular project to a particular target
 framework.
 
 
@@ -2515,8 +2362,7 @@ In the example shown in Figure 3-1, you would start with the _Contoso.Utils_ pro
 depend on any other projects. Next, _Contoso.Data_ since it only depends on “Utils”. Then migrate the
 “BusinessLogic” library, and finally the front-end ASP.NET “Web” project. Following this “bottom up”
 approach works well for relatively small and well-factored apps that can be migrated as a unit once all
-
-- f their projects have migrated. Larger apps with more complexity, or more code that will take longer
+of their projects have migrated. Larger apps with more complexity, or more code that will take longer
 to migrate, may need to consider more incremental strategies.
 
 
@@ -2531,7 +2377,6 @@ some of the existing behavior of the libraries being ported.
 
 If you have unit tests, it’s best to convert those projects first. You’ll want to continue testing changes
 in the project you’re working on. Remember that porting to .NET Core is a significant change to your
-
 codebase.
 
 
@@ -2548,8 +2393,7 @@ recommended. The steps followed in this chapter can be automated. Structural cha
 file differences and updates to common packages, can be applied by scripts. These scripts can be
 refined as they’re run iteratively on more projects. On each run, examine whatever manual steps are
 required for each project. Automate those manual steps, if possible. Using this approach, the
-
-- rganization should grow faster and better at porting their apps over time, with improved automation
+organization should grow faster and better at porting their apps over time, with improved automation
 support each step of the way.
 
 
@@ -2559,15 +2403,11 @@ support each step of the way.
 
   - Migrate third-party NuGet dependencies
 
-
   - Migrate apps to use new _.csproj_ file format
-
 
   - Update internal NuGet dependencies to .NET Standard
 
-
   - Migrate apps to ASP.NET Core (targeting .NET Framework)
-
 
   - Update all apps to target .NET 7
 
@@ -2576,13 +2416,11 @@ When automating a large suite of apps, it helps significantly if they follow con
 guidelines and project organization. Automation efforts rely on this consistency to be effective. In
 addition to parsing and migrating project files, common code patterns can be migrated automatically.
 Some code pattern examples include differences in how controller actions are declared or how they
-
 return results.
 
 
 For example, a migration script could search files matching _Controller.cs_ for lines of code matching
-
-- ne of these patterns:
+one of these patterns:
 
 
 In ASP.NET Core, either of the preceding lines of code can be replaced with:
@@ -2602,9 +2440,7 @@ The best approach to porting a large .NET Framework app to .NET Core is to:
 
 1. Identify project dependencies.
 
-
 2. Analyze what’s required to port each project.
-
 
 3. Start from the bottom up.
 
@@ -2616,11 +2452,9 @@ ported. These test projects should be among the first projects ported.
 #### **References**
 
 
-  [Porting from .NET Framework to .NET Core](https://docs.microsoft.com/en-us/dotnet/core/porting/)
-
+  - [Porting from .NET Framework to .NET Core](https://docs.microsoft.com/en-us/dotnet/core/porting/)
 
   - [The .NET Portability Analyzer](https://docs.microsoft.com/en-us/dotnet/standard/analyzers/portability-analyzer)
-
 
   - [2 Years, 200 Apps: A .NET Core Migration at Scale (Video)](https://www.youtube.com/watch?v=C-2haqb60No)
 
@@ -2629,10 +2463,9 @@ ported. These test projects should be among the first projects ported.
 
 After identifying the sequence in which the app’s individual projects must be migrated, the next step
 is to understand each project’s dependencies and update them if necessary. For platform
-[dependencies, the best way to start is to run the .NET Portability Analyzer](https://docs.microsoft.com/en-us/dotnet/standard/analyzers/portability-analyzer) - n the assembly in
+[dependencies, the best way to start is to run the .NET Portability Analyzer](https://docs.microsoft.com/en-us/dotnet/standard/analyzers/portability-analyzer) on the assembly in
 question, and then look at the detailed results that are generated. You configure the tool to specify
-
-- ne or more target platforms, such as .NET 7 or .NET Standard 2.0. Results are provided with details
+one or more target platforms, such as .NET 7 or .NET Standard 2.0. Results are provided with details
 for each platform targeted. Figure 3-4 shows an example of the tool’s output.
 
 
@@ -2649,7 +2482,6 @@ project are likely to be class libraries. Class libraries tend to be the easiest
 
 
 platforms, especially compared to ASP.NET projects, which are among the most difficult (and typically
-
 need to be re-created).
 
 
@@ -2680,7 +2512,6 @@ dotnet tool install -g upgrade-assistant
 ```
 
 Run the tool with the command upgrade-assistant upgrade <project> in the folder where the project
-
 file is located.
 
 #### **Update NuGet package dependencies**
@@ -2701,8 +2532,7 @@ between your currently used version and the one to which you’re upgrading.
 
 
 In some cases, no version of a given package works with .NET Core. In that case, teams have a couple
-
-- ptions. They can continue depending on the .NET Framework version, but this has limitations. The
+options. They can continue depending on the .NET Framework version, but this has limitations. The
 app may only run on Windows, and the team may want to run Portability Analyzer on the package’s
 binaries to see if there are any issues likely to be encountered. Certainly the team will want to test
 thoroughly, since if .NET Framework packages are used that reference APIs not available in .NET Core,
@@ -2717,8 +2547,7 @@ package is open source, upgrade it to .NET Standard or .NET Core themselves.
 
 The System.Web namespace and types don’t exist in .NET Core. When you’re analyzing dependencies
 and using tools like try-convert, you’ll find they don’t offer many suggestions for automatic migration
-
-- f ASP.NET MVC projects and any code in them that references System.Web. For these projects, you’ll
+of ASP.NET MVC projects and any code in them that references System.Web. For these projects, you’ll
 need to start with a new ASP.NET Core web project and manually migrate files to this project.
 
 
@@ -2740,9 +2569,7 @@ straightforward, especially if they’re mainly focused on web responsibilities.
 
   - [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant)
 
-
   - [try-convert tool](https://github.com/dotnet/try-convert)
-
 
   - [apiport tool](https://github.com/microsoft/dotnet-apiport)
 
@@ -2843,7 +2670,6 @@ Multi-targeting is recommended for large apps that will be migrated over time an
 applying the Strangler pattern approach. This approach can address BindingRedirect and package
 [restoration challenges that surface from mixing PackageReference](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files) [and packages.config restore styles.](https://docs.microsoft.com/nuget/reference/packages-config)
 There are two options available for code that must run in both .NET Framework and .NET Core
-
 environments.
 
 
@@ -2851,9 +2677,8 @@ environments.
 functionality or use different dependencies when run in .NET Framework versus .NET Core.
 
 
-  [Project files can use conditional globbing patterns, such as *.core.cs, to include different sets](https://docs.microsoft.com/en-us/dotnet/core/project-sdk/overview#default-includes-and-excludes)
-
-    - f files based on which framework is being targeted.
+  - [Project files can use conditional globbing patterns, such as *.core.cs, to include different sets](https://docs.microsoft.com/en-us/dotnet/core/project-sdk/overview#default-includes-and-excludes)
+of files based on which framework is being targeted.
 
 
 Typically you only follow these recommendations for class libraries. These techniques allow a single
@@ -2870,17 +2695,13 @@ incremental migration. Choose the one(s) that will work best for your organizati
 #### **References**
 
 
-  [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook)
+  - [.NET Microservices: Architecture for Containerized .NET Applications](https://aka.ms/microservicesebook)
 
-
-  [eShopOnContainers Reference Microservices Application](https://github.com/dotnet-architecture/eShopOnContainers)
-
+  - [eShopOnContainers Reference Microservices Application](https://github.com/dotnet-architecture/eShopOnContainers)
 
   - [Host ASP.NET Core on Windows with IIS](https://docs.microsoft.com/aspnet/core/host-and-deploy/iis/)
 
-
   - [Strangler pattern](https://docs.microsoft.com/azure/architecture/patterns/strangler)
-
 
   - [Incremental ASP.NET to ASP.NET Core Migration](https://devblogs.microsoft.com/dotnet/incremental-asp-net-to-asp-net-core-migration/)
 
@@ -2888,9 +2709,11 @@ incremental migration. Choose the one(s) that will work best for your organizati
 42 CHAPTER 3 | Migrate large solutions to ASP.NET Core
 
 
-# CHAPTER 4
+**CHAPTER**
+# 4
 
 ## Example migration of eShop to ASP.NET Core
+
 
 In this chapter, you’ll see how to migrate a .NET Framework app to .NET Core. The chapter examines a
 sample online store app written for ASP.NET MVC 5. The app will use many of the concepts and tools
@@ -2968,7 +2791,6 @@ _Figure 4-5. ApiPort incompatible type details._
 
 
 Most of the incompatible types refer to Controller and various related attributes that have equivalents
-
 in ASP.NET Core.
 
 ### Update project files and NuGet reference syntax
@@ -2983,7 +2805,6 @@ this format first, before upgrading to the new project file format.
 
 The original project’s _eShopLegacyMVC.csproj_ file is 418 lines long. A sample of the project file is
 shown in Figure 4-6. To offer a sense of its overall size and complexity, the right side of the image
-
 contains a miniature view of the entire file.
 
 
@@ -3043,7 +2864,6 @@ _Figure 4-9. Choose an Empty project template targeting .NET Framework with ASP.
 
 
 Since the built-in migration tool for migrating _packages.config_ to <PackageReference> doesn’t work
-
 [on ASP.NET projects, you can use a community tool instead, or migrate by hand. A community tool](https://gist.github.com/tomkuijsten/2d75074d9a3c19c04ee8ea19a6289ddf)
 [I’ve used](https://gist.github.com/tomkuijsten/2d75074d9a3c19c04ee8ea19a6289ddf) uses an XSL file to transform from one format to the other. To use it, first copy the
 _packages.config_ file to the newly created ASP.NET Core project folder. Make a backup of your files, as
@@ -3052,12 +2872,9 @@ these commands from the project folder (or for the entire solution if you prefer
 
 ```
 iwr
-
 https://gist.githubusercontent.com/aienabled/0bce5e4b17118122f2772e7c9218bf9c/raw/7789
 53f89882877a7124894b47dccfb1ba3e80a0/Convert-ToPackageReference.ps1 -OutFile ConvertToPackageReference.ps1
-
 iwr
-
 https://gist.githubusercontent.com/aienabled/0bce5e4b17118122f2772e7c9218bf9c/raw/7789
 53f89882877a7124894b47dccfb1ba3e80a0/Convert-ToPackageReference.xsl -OutFile ConvertToPackageReference.xsl
 ./Convert-ToPackageReference.ps1 | Out-Null
@@ -3067,7 +2884,6 @@ https://gist.githubusercontent.com/aienabled/0bce5e4b17118122f2772e7c9218bf9c/ra
 The first two commands download files so that they exist locally. The last line runs the script. After
 running it, try to build the new project. You’ll most likely get some errors. To resolve them, you’ll want
 to eliminate some references (like most of the Microsoft.AspNet and System packages), and you may
-
 need to remove some xmlns attributes.
 
 
@@ -3082,21 +2898,15 @@ elements added and remove and make note of any that are for client libraries, in
 
   - Bootstrap
 
-
   - jQuery
-
 
   - jQuery.Validation
 
-
   - Modernizr
-
 
   - popper.js
 
-
   - Respond
-
 
 The static client files installed by NuGet for these packages will be copied over to the new project’s
 _wwwroot_ folder and hosted from there. It’s worth considering whether these files are still needed by
@@ -3127,21 +2937,16 @@ are static files in the following folders:
 
   - _Content_
 
-
-  _fonts_
-
+  - _fonts_
 
   - _Images_
 
-
   - _Pics_
-
 
   - _Scripts_
 
 
 The **Empty** project template used in the previous step doesn’t include this folder by default, or the
-
 middleware needed for it to work. You’ll need to add them.
 
 
@@ -3192,7 +2997,6 @@ Next, the _ViewModel_ folder, with its one class, is copied over. It’s an easy
 
 The _Services_ folder is copied over. This folder’s classes depend on Entity Framework classes from the
 _Models_ folder, which is why it needed to be copied after that folder. Fortunately, it too builds without
-
 errors.
 
 
@@ -3220,16 +3024,13 @@ Specifically these types:
 
   - HttpServerUtilityBase
 
-
   - RouteValueDictionary
-
 
   - HttpRequestBase
 
 
 Let’s look at each error one by one. The first error occurs while trying to reference the Server property
-
-- f Controller, which no longer exists. The goal of the operation is to get the path to an image file in
+of Controller, which no longer exists. The goal of the operation is to get the path to an image file in
 the app:
 
 
@@ -3256,10 +3057,8 @@ commenting out this code and adding a TODO: comment to reference the pics anothe
 
 It’s worth noting that the base Controller class, used by the CatalogController class in which this code
 appears, is still referring to System.Web.Mvc.Controller. There will undoubtedly be more errors to fix
-
-- nce we update this to use ASP.NET Core. First, remove the using System.Web.Mvc; line from the list
-
-- f using statements in CatalogController. Next, add the NuGet package Microsoft.AspNetCore.Mvc.
+once we update this to use ASP.NET Core. First, remove the using System.Web.Mvc; line from the list
+of using statements in CatalogController. Next, add the NuGet package Microsoft.AspNetCore.Mvc.
 Finally, add a using Microsoft.AspNetCore.Mvc; statement, and build the app again.
 
 
@@ -3268,14 +3067,11 @@ This time, there are 16 errors:
 
   - Include is not a valid named attribute argument (2)
 
-
-  HttpStatusCodeResult not found (3)
-
+  - HttpStatusCodeResult not found (3)
 
   - HttpNotFound does not exist (3)
 
-
-  SelectList not found (8)
+  - SelectList not found (8)
 
 
 Once more, let’s review these errors one by one. First, SelectList can be fixed by adding using
@@ -3290,7 +3086,6 @@ with return BadRequest();.
 
 
 That just leaves the use of Include with a [Bind] attribute on a couple of action methods that look like
-
 this:
 
 
@@ -3317,15 +3112,11 @@ from the original project into the new one. After building, there are nine error
 
   - HttpContext does not exist (2)
 
-
   - Scripts does not exist (5)
-
 
   - Styles does not exist (1)
 
-
-  HtmlString could not be found(1)
-
+  - HtmlString could not be found(1)
 
 Investigating these errors finds that most of them are in the main *_Layout.cshtml _, with several related_
 _to rendering script and style tags, or displaying when the server hosting the app was last restarted. The_
@@ -3368,7 +3159,6 @@ At this point, the app once more builds successfully. However, trying to run it 
 because the **Empty** ASP.NET Core template is only configured to display that in response to any
 request. In the next section, I complete the migration by configuring the app to use ASP.NET Core
 MVC, including dependency injection and configuration. Once that’s in place, the app should run.
-
 Then it will be time to fix the TODO: tasks that were created earlier.
 
 ### Migrate app startup components
@@ -3392,18 +3182,15 @@ runs when the app starts up:
 Looking at these lines one by one, the RegisterContainer method sets up dependency injection, which
 will be ported below. The next three lines configure different parts of MVC: areas, filters, and routes.
 Bundles are replaced by static files in the ported app. The last line sets up data access for the app,
-
 which will be shown in a later section.
 
 
 Since this app isn’t actually using areas, there’s nothing that needs to be done to migrate the area
 [registration call. If your app does need to migrate areas, the docs specify how to configure areas in](https://docs.microsoft.com/aspnet/core/mvc/controllers/areas)
-
 [ASP.NET Core.](https://docs.microsoft.com/aspnet/core/mvc/controllers/areas)
 
 
 The call to register global filters invokes a helper on the FilterConfig class in the app’s _App_Start_
-
 folder:
 
 
@@ -3434,7 +3221,6 @@ with ASP.NET Core, so there’s no need to ignore such routes. The MapRoute meth
 default for MVC, which uses the typical {controller}/{action}/{id} route template. It also specifies the
 defaults for this template, such that the CatalogController is the default controller used and the Index
 method is the default action. Larger apps will frequently include more calls to MapRoute to set up
-
 additional routes.
 
 
@@ -3494,8 +3280,7 @@ use the AutofacServiceProviderFactory as shown:
 
 
 For now, the setting for useMockData is set to true. This setting will be read from configuration in a
-moment. At this point, the app compiles and should load successfully when run, as shown in Figure 4
-12.
+moment. At this point, the app compiles and should load successfully when run, as shown in Figure 412.
 
 
 61 CHAPTER 4 | Example migration of eShop to ASP.NET Core
@@ -3518,7 +3303,6 @@ all references of this term yields the set of settings the new app needs. There 
 
 
   - UseMockData
-
 
   - UseCustomizationData
 
@@ -3598,7 +3382,6 @@ ApplicationModule when it instantiates it:
 
 
 With this code in place, the app runs as it did before, connecting to a SQL Server database when
-
 UseMockData is false.
 
 
@@ -3644,7 +3427,6 @@ needs to have the old namespaces removed and replaced with Microsoft.EntityFrame
 constructors can be removed. DbModelBuilder should be replaced with ModelBuilder. The helper
 methods for configuring types are moved to separate classes implementing
 IEntityTypeConfiguration<T>. Then the CatalogDBContext class’s OnModelCreating method simply
-
 becomes:
 
 
@@ -3654,15 +3436,11 @@ Other changes involved include:
   - HasDatabaseGeneratedOption(DatabaseGeneratedOption.None) replaced with
 ValueGeneratedNever()
 
-
   - HasRequired<T> replaced with HasOne<T>
 
-
-  Installed Microsoft.EntityFrameworkCore.Relational package
-
+  - Installed Microsoft.EntityFrameworkCore.Relational package
 
   - Add a constructor to CatalogDBContext taking DbContextOptions and passing it to the base
-
 constructor
 
 
@@ -3683,7 +3461,6 @@ builder.HasData(). The original app loaded seed data from CSV files in the _Setu
 there are only a handful of items, these data records can instead be added as part of the entity
 configuration. This approach works well for lookup data in tables that change infrequently. Adding the
 following to CatalogTypeConfig’s Configure method ensures the associated rows are present when
-
 the database is created:
 
 
@@ -3704,7 +3481,6 @@ from CatalogItemConfig:
 
 With these modifications, the ASP.NET Core app builds, but it doesn’t yet work with EF Core, which
 must still be configured for dependency injection. With EF Core, the simplest way to configure it is in
-
 _Program.cs_ :
 
 
@@ -3719,8 +3495,7 @@ The ported app runs, but doesn’t display any data if configured to use non-moc
 added through HasData is only inserted when migrations are applied. The source app didn’t use
 migrations, and if it had, they wouldn’t migrate as-is. The best approach is to start with a new
 migration script. To do this, add a package reference for Microsoft.EntityFrameworkCore.Design and
-
-- pen a terminal window in the project root. Then run:
+open a terminal window in the project root. Then run:
 
 ```
 dotnet ef migrations add Initial
@@ -3772,8 +3547,7 @@ and route constraints, you generally provide this information in _Program.cs_, w
 
 [Other advanced scenarios, like adding custom model binders, formatters, and more are covered in the](https://docs.microsoft.com/aspnet/core/mvc/advanced/custom-model-binding?preserve-view=true&view=aspnetcore-2.2)
 detailed ASP.NET Core docs. Generally these can be applied on an individual controller or action basis,
-
-- r globally using the same options approach shown in the previous code listing.
+or globally using the same options approach shown in the previous code listing.
 
 
 68 CHAPTER 4 | Example migration of eShop to ASP.NET Core
@@ -3790,7 +3564,6 @@ basicHttpBinding could instead be configured programmatically with the following
 
 Rather than relying on config files for its settings, WCF clients and other .NET Framework types should
 have their settings specified in code. Configured in this manner, these types can continue to work in
-
 ASP.NET Core 2.2 apps.
 
 ### References
@@ -3798,15 +3571,11 @@ ASP.NET Core 2.2 apps.
 
   - [eShopModernizing GitHub repository](https://github.com/dotnet-architecture/eShopModernizing)
 
-
   - [.NET Upgrade Assistant tool](https://aka.ms/dotnet-upgrade-assistant)
-
 
   - [Your API and ViewModels Should Not Reference Domain Models](https://ardalis.com/your-api-and-view-models-should-not-reference-domain-models/)
 
-
   - [Developer Exception Page Middleware](https://docs.microsoft.com/aspnet/core/fundamentals/error-handling#developer-exception-page)
-
 
   - [Deep Dive into EF Core HasData](https://docs.microsoft.com/archive/msdn-magazine/2018/august/data-points-deep-dive-into-ef-core-hasdata-seeding)
 
@@ -3902,7 +3671,6 @@ defined in System.Web.Mvc and System.Web.Http namespaces, respectively. In both 
 
 
 binder exposes a Bind method that accepts a controller or action context and a model binding context
-
 as arguments.
 
 
@@ -3920,7 +3688,6 @@ be added to action method parameters or to the parameter’s type definition, as
 
 
 To register a model binder globally in ASP.NET Web API, its provider must be added during app
-
 startup:
 
 
@@ -3931,7 +3698,6 @@ and it only requires a single BindingModelContext parameter instead of two param
 API’s version required. In ASP.NET Core, you can use a [ModelBinder] attribute on individual action
 method parameters or their associated types. You can also create a ModelBinderProvider that will be
 used globally within the app where appropriate. To configure such a provider, you would add code to
-
 _Program.cs_ :
 
 
@@ -3943,8 +3709,7 @@ _Program.cs_ :
 ASP.NET Web API supports multiple media formats and can be extended by using custom media
 [formatters. The docs describe an example CSV Media Formatter](https://docs.microsoft.com/aspnet/web-api/overview/formats-and-model-binding/media-formatters#example-creating-a-csv-media-formatter) that can be used to send data in a
 comma-separated value format. If your Web API app uses custom media formatters, you’ll need to
-
-convert them to ASP.NET Core custom formatters.
+[convert them to ASP.NET Core custom formatters.](https://docs.microsoft.com/aspnet/core/web-api/advanced/custom-formatters)
 
 
 To create a custom formatter in Web API 2, you inherited from an appropriate base class and then
@@ -3965,12 +3730,9 @@ The steps to migrate from a Web API formatter to an ASP.NET Core MVC formatter a
 
 1. Identify an appropriate base class for the new formatter.
 
-
 2. Create a new instance of the base class and implement its required methods.
 
-
 3. Copy over the functionality from the Web API formatter to the new implementation.
-
 
 4. Configure MVC in the ASP.NET Core App’s ConfigureServices method to use the new
 formatter.
@@ -3981,20 +3743,16 @@ formatter.
 Filters are used in ASP.NET Core apps to execute code before and/or after certain stages in the
 request processing pipeline. ASP.NET MVC and Web API also use filters in much the same way, but the
 [details vary. For instance, ASP.NET MVC supports four kinds of filters. ASP.NET Web API 2 supports](https://docs.microsoft.com/aspnet/mvc/overview/older-versions-1/controllers-and-routing/understanding-action-filters-cs#the-different-types-of-filters)
-
 [similar filters, and both MVC and Web API included attributes to override filters.](https://docs.microsoft.com/dotnet/api/system.web.mvc.filters.ioverridefilter)
 
 
 The most common filter used in ASP.NET MVC and Web API apps is the action filter, which is defined
 [by an IActionFilter interface. This interface provides methods for before (OnActionExecuting) and after](https://docs.microsoft.com/dotnet/api/system.web.mvc.iactionfilter)
-
 (OnActionExecuted) which can be used to execute code before and/or after an action executes, as
-
 noted for each method.
 
 
 ASP.NET Core continues to support filters, and its unification of MVC and Web API means there is only
-
 [one approach to their implementation. The docs include detailed coverage of the five (5) kinds of](https://docs.microsoft.com/aspnet/core/mvc/controllers/filters#filter-types)
 [filters built into ASP.NET Core MVC. All of the filter variants supported in ASP.NET MVC and ASP.NET](https://docs.microsoft.com/aspnet/core/mvc/controllers/filters#filter-types)
 
@@ -4008,7 +3766,6 @@ identifying the appropriate interface and/or base class and migrating the code o
 
 In addition to the synchronous interfaces, ASP.NET Core also provides async interfaces like
 IAsyncActionFilter which provide a single async method that can be used to incorporate code to run
-
 both before and after the action, as shown:
 
 
@@ -4029,7 +3786,6 @@ ASP.NET Core uses route constraints to help ensure requests are routed properly 
 [ASP.NET Core supports a large number of different route constraints for this purpose. Route](https://docs.microsoft.com/aspnet/core/fundamentals/routing#route-constraint-reference)
 constraints can be applied in the route table, but most apps built with ASP.NET MVC 5 and/or
 [ASP.NET Web API 2](https://docs.microsoft.com/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2#route-constraints) use inline route constraints applied to attribute routes. Inline route constraints use
-
 a format like this one:
 
 ```
@@ -4039,9 +3795,8 @@ a format like this one:
 
 The :int after the id route parameter constrains the value to match the int type. One benefit of using
 route constraints is that they allow for two otherwise-identical routes to exist where the parameters
-[differ only by their type. This allows for the equivalent of method overloading](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/member-overloading) - f routes based solely
-
-- n parameter type.
+[differ only by their type. This allows for the equivalent of method overloading](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/member-overloading) of routes based solely
+on parameter type.
 
 
 The set of route constraints, their syntax, and usage is very similar between all three approaches.
@@ -4074,7 +3829,6 @@ Another fairly advanced feature of ASP.NET MVC 5 is route handlers. Custom route
 implement IRouteHandler, which includes a single method that returns an IHttpHandler for a give
 request. The IHttpHandler, in turn, exposes an IsReusable property and a single ProcessRequest
 method. In ASP.NET MVC 5, you can configure a particular route in the route table to use your custom
-
 handler:
 
 
@@ -4101,7 +3855,6 @@ handlers should be migrated using global filters, custom IRouter instances (see 
 middleware. ASP.NET Core MVC filters and IRouter types have the advantage of having built-in access
 to MVC constructs like controllers and actions, while middleware is a lower level approach that has no
 ties to MVC. This makes it more flexible but also requires more effort if you need to access MVC
-
 components.
 
 #### **CORS support**
@@ -4110,7 +3863,6 @@ components.
 CORS, or Cross-Origin Resource Sharing, is a W3C standard that allows servers to accept requests that
 don’t originate from responses they’ve served. ASP.NET MVC 5 and ASP.NET Web API 2 support CORS
 in different ways. The simplest way to enable CORS support in ASP.NET MVC 5 is with an action filter
-
 like this one:
 
 
@@ -4121,7 +3873,6 @@ like this one:
 
 
 Once this is added, you can configure allowed origins, headers, and methods using the EnableCors
-
 attribute, like so:
 
 
@@ -4133,11 +3884,9 @@ expected in your current system.
 In ASP.NET Core, there are three built-in ways to enable CORS:
 
 
-  [Configured via policy in ConfigureServices](https://docs.microsoft.com/aspnet/core/security/cors?#cors-with-named-policy-and-middleware)
-
+  - [Configured via policy in ConfigureServices](https://docs.microsoft.com/aspnet/core/security/cors?#cors-with-named-policy-and-middleware)
 
   - [Enabled with endpoint routing](https://docs.microsoft.com/aspnet/core/security/cors?#enable-cors-with-endpoint-routing)
-
 
   - [Enabled with the EnableCors attribute](https://docs.microsoft.com/aspnet/core/security/cors#enable-cors-with-attributes)
 
@@ -4148,7 +3897,6 @@ attributes, you can probably migrate to use the EnableCors attribute most easily
 filters, you could continue using that approach (though it’s not the typical approach used in ASP.NET
 Core), or migrate to use attributes or policies. Endpoint routing is a relatively new feature introduced
 with ASP.NET Core 3 and as such it doesn’t have a close analog in ASP.NET MVC 5 or ASP.NET Web
-
 API 2 apps.
 
 #### **Custom areas**
@@ -4164,7 +3912,6 @@ AreaRegistration.RegisterAllAreas();
 ```
 
 An alternative to registering all areas in startup is to use the RouteArea attribute on individual
-
 controllers:
 
 
@@ -4177,26 +3924,20 @@ folder in the project. Teams can use any folder structure they like to organize 
 
 [Areas](https://docs.microsoft.com/aspnet/core/mvc/controllers/areas) are supported in ASP.NET Core MVC. The approach used is nearly identical to the use of areas
 in ASP.NET MVC 5. Developers migrating code using areas should keep in mind the following
-
 differences:
 
 
   - AreaRegistration.RegisterAllAreas is not used in ASP.NET Core MVC
 
-
   - Areas are applied using the [Area("name")] attribute (not RouteArea as in ASP.NET MVC 5)
 
-
-  Areas can be added to the route table templates, if desired (or they can use attribute routing)
-
+  - Areas can be added to the route table templates, if desired (or they can use attribute routing)
 
 To add area support to the route table in ASP.NET Core MVC, you would add the following during app
-
 startup:
 
 
 Areas can also be used with attribute routing, using the {area} keyword in the route definition (it’s one
-
 [of several reserved routing names that can be used with route templates).](https://docs.microsoft.com/aspnet/core/mvc/controllers/routing#reserved-routing-names)
 
 
@@ -4271,8 +4012,7 @@ ASP.NET Core, the return on the investment spent setting up such tests is usuall
 
 If your app currently relies on WCF services as a client, this scenario is supported. However, you will
 [need to migrate your configuration from](https://docs.microsoft.com/aspnet/core/migration/configuration) _web.config_ to use the new _appsettings.json_ file. Another
-
-- ption is to add any necessary configuration to your clients programmatically when you create them.
+option is to add any necessary configuration to your clients programmatically when you create them.
 For example:
 
 
@@ -4285,48 +4025,34 @@ them to use gRPC instead. For more details on gRPC, why you may wish to migrate,
 
   - [ASP.NET Web API Content Negotiation](https://docs.microsoft.com/aspnet/web-api/overview/formats-and-model-binding/content-negotiation)
 
-
   - [Format response data in ASP.NET Core Web API](https://docs.microsoft.com/aspnet/core/web-api/advanced/formatting)
-
 
   - [Custom Model Binders in ASP.NET Web API](https://docs.microsoft.com/aspnet/web-api/overview/formats-and-model-binding/parameter-binding-in-aspnet-web-api#model-binders)
 
-
   - [Custom Model Binders in ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/advanced/custom-model-binding#custom-model-binder-sample)
-
 
   - [Media Formatters in ASP.NET Web API 2](https://docs.microsoft.com/aspnet/web-api/overview/formats-and-model-binding/media-formatters)
 
 
   - [Custom formatters in ASP.NET Core Web API](https://docs.microsoft.com/aspnet/core/web-api/advanced/custom-formatters)
 
-
   - [Filters in ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/controllers/filters)
-
 
   - [Route constraints in ASP.NET Web API 2](https://docs.microsoft.com/aspnet/web-api/overview/web-api-routing-and-actions/attribute-routing-in-web-api-2#route-constraints)
 
-
   - [Route constraints in ASP.NET MVC 5](https://devblogs.microsoft.com/aspnet/attribute-routing-in-asp-net-mvc-5/#route-constraints)
-
 
   - [ASP.NET Core Route Constraint Reference](https://docs.microsoft.com/aspnet/core/fundamentals/routing#route-constraint-reference)
 
-
   - [Custom message handlers in ASP.NET Web API 2](https://docs.microsoft.com/aspnet/web-api/overview/advanced/http-message-handlers#custom-message-handlers)
-
 
   - [Simple CORS control in MVC 5 and Web API 2](https://stackoverflow.com/questions/6290053/setting-access-control-allow-origin-in-asp-net-mvc-simplest-possible-method)
 
-
   - [Enabling Cross-Origin Requests in Web API](https://docs.microsoft.com/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api#enable-cors)
-
 
   - [Enable Cross-Origin Requests (CORS) in ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/cors)
 
-
   - [Areas in ASP.NET Core](https://docs.microsoft.com/aspnet/core/mvc/controllers/areas)
-
 
   - [Integration tests in ASP.NET Core](https://docs.microsoft.com/aspnet/core/test/integration-tests)
 
@@ -4334,18 +4060,17 @@ them to use gRPC instead. For more details on gRPC, why you may wish to migrate,
 80 CHAPTER 4 | Example migration of eShop to ASP.NET Core
 
 
-# CHAPTER 5
+**CHAPTER**
+# 5
 
 ## Deployment scenarios when migrating to ASP.NET Core
 
+
 Existing ASP.NET MVC and Web API apps run on IIS and Windows. Large apps may require a phased
-
-- r side-by-side approach when porting to ASP.NET Core. In previous chapters, you learned a number
-
-- f strategies for migrating large .NET Framework apps to ASP.NET Core in phases. In this chapter, you
+or side-by-side approach when porting to ASP.NET Core. In previous chapters, you learned a number
+of strategies for migrating large .NET Framework apps to ASP.NET Core in phases. In this chapter, you
 will see how different deployment scenarios can be achieved when there is a need to maintain the
-
-- riginal app in production while migrating portions of it.
+original app in production while migrating portions of it.
 
 ### Split a large web app
 
@@ -4371,8 +4096,7 @@ requests to the appropriate back-end web app. To configure IIS as a reverse prox
 
 
 As a reverse proxy, IIS can route traffic matching certain patterns to entirely separate apps, potentially
-
-- n different servers.
+on different servers.
 
 
 81 CHAPTER 5 | Deployment scenarios when migrating to ASP.NET Core
@@ -4393,7 +4117,6 @@ There are pros and cons to using the same or different subdomains (and domains) 
 more configuration to work properly in distributed apps. However, apps that use different
 subdomains can more easily use DNS to route requests to entirely different network destinations, and
 so can more easily be deployed to many different servers (virtual or otherwise) without the need for
-
 IIS to act as a reverse proxy.
 
 
@@ -4458,8 +4181,7 @@ _Figure 5-2. Rewrite rule to rewrite subfolder requests to another web site._
 
 If your app requires single sign-on between different sites or apps within IIS, refer to the
 [documentation on how to share authentication cookies among ASP.NET apps](https://docs.microsoft.com/aspnet/core/host-and-deploy/iis/) for detailed instructions
-
-- n supporting this scenario.
+on supporting this scenario.
 
 
 [Another alternative to IIS Rewrite rules is the use of a reverse proxy like YARP, which can facilitate](https://microsoft.github.io/reverse-proxy/)
@@ -4482,7 +4204,6 @@ reducing total surface area involved in testing. It also allows for more rapid r
 .NET Core, such as performance increases. Although ASP.NET Core apps are no longer required to be
 hosted on IIS, IIS remains a very flexible and powerful web server that can be configured to support a
 variety of hosting scenarios involving both .NET Framework and ASP.NET Core apps on the same IIS
-
 instance or even hosted on different servers.
 
 ### References
@@ -4490,21 +4211,15 @@ instance or even hosted on different servers.
 
   - [Host ASP.NET Core on Windows with IIS](https://docs.microsoft.com/aspnet/core/host-and-deploy/iis/)
 
-
   - [URL Rewrite module and Application Request Routing](https://docs.microsoft.com/iis/extensions/url-rewrite-module/reverse-proxy-with-url-rewrite-v2-and-application-request-routing)
-
 
   - [URL Rewrite](https://www.iis.net/downloads/microsoft/url-rewrite)
 
-
   - [ASP.NET Core Module](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module)
-
 
   - [Share authentication cookies among ASP.NET apps](https://docs.microsoft.com/aspnet/core/security/cookie-sharing)
 
-
   - [Samples used in this section](https://github.com/ardalis/MigrateDotNetWithIIS)
-
 
   - [Incremental ASP.NET to ASP.NET Core Migration](https://devblogs.microsoft.com/dotnet/incremental-asp-net-to-asp-net-core-migration/)
 
@@ -4513,14 +4228,15 @@ instance or even hosted on different servers.
 
 
 **CHAPTER**
-# CHAPTER 6
+
+
+**CHAPTER**
 
 ## Summary: Port existing ASP.NET Apps to .NET 7
 
 
 In this book, you’ve been given the resources needed to decide whether it makes sense to port your
-
-- rganization’s existing ASP.NET apps running on .NET Framework to ASP.NET Core. You’ve learned
+organization’s existing ASP.NET apps running on .NET Framework to ASP.NET Core. You’ve learned
 about important considerations for choosing when it makes sense to migrate to .NET Core, and when
 it may be appropriate to keep (parts of) your app on .NET Framework. There are differences between
 .NET Core versions and their capabilities and compatibilities with .NET Framework, and you learned
@@ -4540,9 +4256,7 @@ differences and new features enabling much better testing scenarios.
 
 Large apps are often comprised of many projects and packages, and dependencies can play a major
 role in determining how easy or difficult migration may be. Chapter 3 helped you identify the
-
-’
-sequence in which to migrate projects and how to understand and update your app s dependencies. It
+sequence in which to migrate projects and how to understand and update your app’s dependencies. It
 also detailed additional strategies for migrating apps while keeping them running in production.
 
 

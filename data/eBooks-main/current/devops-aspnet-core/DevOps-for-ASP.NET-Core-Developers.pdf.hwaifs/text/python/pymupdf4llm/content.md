@@ -31,16 +31,14 @@ form or by any means without the written permission of the publisher.
 
 This book is provided “as-is” and expresses the author’s views and opinions. The views, opinions, and
 information expressed in this book, including URL and other Internet website references, may change
-
 without notice.
 
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association
+or connection is intended or should be inferred.
 
-- r connection is intended or should be inferred.
 
-
-[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) - n the “Trademarks” webpage are
+[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) on the “Trademarks” webpage are
 trademarks of the Microsoft group of companies.
 
 
@@ -51,7 +49,6 @@ The Docker whale logo is a registered trademark of Docker, Inc. Used by permissi
 
 
 All other marks and logos are property of their respective owners.
-
 ### Credits
 
 
@@ -61,19 +58,16 @@ Authors:
 [Cam Soper](https://twitter.com/camsoper)
 
 
-Scott Addie
+[Scott Addie](https://twitter.com/scottaddie)
 
 
 [Colin Dembovsky](https://twitter.com/colindembovsky)
-
 ### Welcome
 
 
 Welcome to the Azure Development Lifecycle guide for .NET! This guide introduces the basic concepts
-
-- f building a development lifecycle around Azure using .NET tools and processes. After finishing this
+of building a development lifecycle around Azure using .NET tools and processes. After finishing this
 guide, you’ll reap the benefits of a mature DevOps toolchain.
-
 ### Who this guide is for
 
 
@@ -84,7 +78,6 @@ DevOps engineers who are more focused on operations than development.
 
 This guide targets Windows developers. However, Linux and macOS are fully supported by .NET Core.
 To adapt this guide for Linux/macOS, watch for callouts for Linux/macOS differences.
-
 ### What this guide doesn’t cover
 
 
@@ -93,41 +86,34 @@ not an exhaustive guide to all things Azure, and it doesn’t focus extensively 
 services. The emphasis is all around continuous integration, deployment, monitoring, and debugging.
 Near the end of the guide, recommendations for next steps are offered. Included in the suggestions
 are Azure platform services that are useful to ASP.NET Core developers.
-
 ### What’s in this guide
 
 #### **Tools and downloads**
 
 
 Learn where to acquire the tools used in this guide.
-
 #### **Deploy to App Service**
 
 
 Learn the various methods for deploying an ASP.NET Core app to Azure App Service.
-
 #### **Continuous integration and deployment with Azure DevOps**
 
 
 Build an end-to-end continuous integration and deployment solution for your ASP.NET Core app with
 GitHub, Azure DevOps Services, and Azure.
-
 #### **Continuous integration and deployment with GitHub Actions**
 
 
 Build an end-to-end continuous integration and deployment solution for your ASP.NET Core app with
 GitHub, GitHub Actions, and Azure, including code scanning for security and quality using CodeQL.
-
 #### **Monitor and debug**
 
 
 Use Azure’s tools to monitor, troubleshoot, and tune your application.
-
 #### **Next steps**
 
 
 Other learning paths for the ASP.NET Core developer learning Azure.
-
 ### Additional introductory reading
 
 
@@ -136,12 +122,10 @@ If this is your first exposure to cloud computing, these articles explain the ba
 
   - [What is Cloud Computing?](https://azure.microsoft.com/overview/what-is-cloud-computing/)
 
-
-  [Examples of Cloud Computing](https://azure.microsoft.com/overview/examples-of-cloud-computing/)
+  - [Examples of Cloud Computing](https://azure.microsoft.com/overview/examples-of-cloud-computing/)
 
 
 - [What is IaaS?](https://azure.microsoft.com/overview/what-is-iaas/)
-
 
 - [What is PaaS?](https://azure.microsoft.com/overview/what-is-paas/)
 
@@ -397,9 +381,11 @@ Web infrastructure .............................................................
 iii Contents
 
 
-# CHAPTER 1
+**CHAPTER**
+# 1
 
 ## Tools and downloads
+
 
 [Azure has several interfaces for provisioning and managing resources, such as the Azure portal, Azure](https://portal.azure.com/)
 [CLI,](https://docs.microsoft.com/cli/azure/) [Azure PowerShell,](https://docs.microsoft.com/powershell/azure/overview) [Azure Cloud Shell, and Visual Studio. This guide takes a minimalist approach](https://shell.azure.com/bash)
@@ -414,10 +400,8 @@ The following subscriptions are required:
 
   - [Azure — If you don’t have an account, get a free trial.](https://azure.microsoft.com/free/dotnet/)
 
-
   - Azure DevOps Services — your Azure DevOps subscription and organization is created in
 Chapter 4.
-
 
   - [GitHub — If you don’t have an account, sign up for free.](https://github.com/join)
 
@@ -435,7 +419,6 @@ Visual Studio is installed with the **.NET Core cross-platform development** wor
 
 
 Verify your .NET Core SDK installation. Open a command shell, and run the following
-
 command:
 
 
@@ -447,36 +430,35 @@ command:
   - [Visual Studio’s robust Azure tools provide a GUI for most of the functionality described in this](https://visualstudio.microsoft.com/)
 guide. Any edition of Visual Studio will work, including the free Visual Studio Community
 Edition. The tutorials are written to demonstrate development, deployment, and DevOps both
-
 with and without Visual Studio.
 
 
 [Confirm that Visual Studio has the following workloads](https://docs.microsoft.com/visualstudio/install/modify-visual-studio) installed:
 
 
-     ASP.NET and web development
+     - ASP.NET and web development
 
-
-     Azure development
+     - Azure development
 
 
 1 CHAPTER 1 | Tools and downloads
 
 
-     .NET Core cross-platform development
+     - .NET Core cross-platform development
 
 
 2 CHAPTER 1 | Tools and downloads
 
 
-# CHAPTER 2
+**CHAPTER**
+# 2
 
 ## Deploy an app to App Service
+
 
 [Azure App Service](https://docs.microsoft.com/azure/app-service/) is Azure’s web hosting platform. Deploying a web app to Azure App Service can be
 done manually or by an automated process. This section of the guide discusses deployment methods
 that can be triggered manually or by script using the command line, or triggered manually using
-
 Visual Studio.
 
 
@@ -488,21 +470,15 @@ In this section, you’ll accomplish the following tasks:
 
   - Download and build the sample app.
 
-
   - Create an Azure App Service Web App using the Azure Cloud Shell.
-
 
   - Deploy the sample app to Azure using Git.
 
-
   - Deploy a change to the app using Visual Studio.
-
 
   - Add a staging slot to the web app.
 
-
   - Deploy an update to the staging slot.
-
 
   - Swap the staging and production slots.
 
@@ -530,8 +506,7 @@ From a command shell, download the code, build the project, and run it as follow
 3 CHAPTER 2 | Deploy an app to App Service
 
 
-:::{custom-style=CodeBox} console git clone https://github.com/dotnet-architecture/simple
-feed-reader/ :::
+:::{custom-style=CodeBox} console git clone https://github.com/dotnet-architecture/simplefeed-reader/ :::
 
 
 2. Change your working folder to the _simple-feed-reader_ folder that was created.
@@ -590,7 +565,6 @@ resources to be managed as a group.
 
 
 :::{custom-style=CodeBox} azurecli az group create --location centralus --name AzureTutorial
-
 :::
 
 
@@ -615,8 +589,7 @@ d. Create the web app resource using the App Service plan in the same resource g
 e. Set the deployment branch to main in the appsettings configuration.
 
 
-:::{custom-style=CodeBox} azurecli az webapp config appsettings set --name $webappname 
-    - resource-group AzureTutorial --settings DEPLOYMENT_BRANCH=main :::
+:::{custom-style=CodeBox} azurecli az webapp config appsettings set --name $webappname -resource-group AzureTutorial --settings DEPLOYMENT_BRANCH=main :::
 
 
 f. Set the deployment credentials. These deployment credentials apply to all the web
@@ -635,8 +608,7 @@ _deployment URL_ . **Note this URL for reference later** .
 
 
 :::{custom-style=CodeBox} azurecli echo Git deployment URL: $(az webapp deployment
-source config-local-git --name $webappname --resource-group AzureTutorial --query url -
-     - utput tsv) :::
+source config-local-git --name $webappname --resource-group AzureTutorial --query url -output tsv) :::
 
 
 h. Display the _web app URL_ . Browse to this URL to see the blank web app. **Note this**
@@ -686,13 +658,10 @@ command line tooling, but within Visual Studio’s familiar UI.
 
 1. Open _SimpleFeedReader.sln_ in Visual Studio.
 
-
 2. In Solution Explorer, open _Pages.cshtml_ . Change <h2>Simple Feed Reader</h2> to
 <h2>Simple Feed Reader - V2</h2>.
 
-
 3. Press Ctrl+Shift+B to build the app.
-
 
 4. In Solution Explorer, right-click on the project and click **Publish** .
 
@@ -702,21 +671,17 @@ command line tooling, but within Visual Studio’s familiar UI.
 
 5. Visual Studio can create a new App Service resource, but this update will be published over
 the existing deployment. In the **Pick a publish target** dialog, select **App Service** from the list
-
-     - n the left, and then select **Select Existing** . Click **Publish** .
-
+on the left, and then select **Select Existing** . Click **Publish** .
 
 6. In the **App Service** dialog, confirm that the Microsoft or Organizational account used to
 create your Azure subscription is displayed in the upper right. If it’s not, click the drop-down
 and add it.
-
 
 7. Confirm that the correct Azure **Subscription** is selected. For **View**, select **Resource Group** .
 Expand the **AzureTutorial** resource group and then select the existing web app. Click **OK** .
 
 
 Visual Studio builds and deploys the app to Azure. Browse to the web app URL. Validate that the
-
 <h2> element modification is live.
 
 
@@ -742,15 +707,13 @@ a. Create a deployment slot with the name _staging_ .
 
 
 :::{custom-style=CodeBox} azurecli az webapp deployment slot create --name $webappname
-
-    - -resource-group AzureTutorial --slot staging :::
+--resource-group AzureTutorial --slot staging :::
 
 
 b. Set the deployment branch to main in the appsettings configuration.
 
 
-:::{custom-style=CodeBox} azurecli az webapp config appsettings set --name $webappname 
-    - resource-group AzureTutorial --slot staging --settings DEPLOYMENT_BRANCH=main :::
+:::{custom-style=CodeBox} azurecli az webapp config appsettings set --name $webappname -resource-group AzureTutorial --slot staging --settings DEPLOYMENT_BRANCH=main :::
 
 
 c. Configure the staging slot to use deployment from local Git and get the **staging**
@@ -806,7 +769,6 @@ Wait while Azure builds and deploys the app.
 6. To verify that V3 has been deployed to the staging slot, open two browser windows. In one
 window, navigate to the original web app URL. In the other window, navigate to the staging
 web app URL. The production URL serves V2 of the app. The staging URL serves V3 of the
-
 app.
 
 
@@ -816,8 +778,7 @@ app.
 9 CHAPTER 2 | Deploy an app to App Service
 
 
-:::{custom-style=CodeBox} azurecli az webapp deployment slot swap --name $webappname 
-    - resource-group AzureTutorial --slot staging :::
+:::{custom-style=CodeBox} azurecli az webapp deployment slot swap --name $webappname -resource-group AzureTutorial --slot staging :::
 
 
 8. Verify that the swap occurred by refreshing the two browser windows.
@@ -830,21 +791,15 @@ In this section, the following tasks were completed:
 
   - Downloaded and built the sample app.
 
-
   - Created an Azure App Service Web App using the Azure Cloud Shell.
-
 
   - Deployed the sample app to Azure using Git.
 
-
   - Deployed a change to the app using Visual Studio.
-
 
   - Added a staging slot to the web app.
 
-
   - Deployed an update to the staging slot.
-
 
   - Swapped the staging and production slots.
 
@@ -856,12 +811,9 @@ In the next section, you’ll learn how to build a DevOps pipeline with Azure Pi
 
   - [Web Apps overview](https://docs.microsoft.com/azure/app-service/app-service-web-overview)
 
-
   - [Build a .NET Core and SQL Database web app in Azure App Service](https://docs.microsoft.com/azure/app-service/tutorial-dotnetcore-sqldb-app)
 
-
-  [Configure deployment credentials for Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deployment-credentials)
-
+  - [Configure deployment credentials for Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deployment-credentials)
 
   - [Set up staging environments in Azure App Service](https://docs.microsoft.com/azure/app-service/web-sites-staged-publishing)
 
@@ -869,7 +821,8 @@ In the next section, you’ll learn how to build a DevOps pipeline with Azure Pi
 10 CHAPTER 2 | Deploy an app to App Service
 
 
-# CHAPTER 3
+**CHAPTER**
+# 3
 
 
 ## Continuous integration and deployment with Azure DevOps
@@ -893,27 +846,19 @@ In this section, you’ll complete the following tasks:
 
   - Publish the app’s code to GitHub
 
-
   - Disconnect local Git deployment
-
 
   - Create an Azure DevOps organization
 
-
   - Create a team project in Azure DevOps organization
 
-
-  Configure a self-hosted agent if necessary
-
+  - Configure a self-hosted agent if necessary
 
   - Create a build definition
 
-
   - Create a release pipeline
 
-
   - Commit changes to GitHub and automatically deploy to Azure
-
 
   - Examine the Azure Pipelines pipeline
 
@@ -925,12 +870,10 @@ In this section, you’ll complete the following tasks:
 
 1. Open a browser window, and navigate to https://github.com.
 
-
 2. Click the **+** drop-down in the header, and select **New repository** :
 
 
 1. Select your account in the **Owner** drop-down, and enter _simple-feed-reader_ in the **Repository**
-
 **name** textbox.
 
 
@@ -956,7 +899,6 @@ https://github.com/<GitHub_username>/simple-feed-reader/ :::
 
 
 6. Publish your local Git repository to the newly created GitHub repository. Execute the following
-
 command:
 
 
@@ -989,23 +931,18 @@ removal operation by clicking the Yes button.
 1. Navigate to the _mywebapp_ App Service. As a reminder, the portal’s search box can be used to
 quickly locate the App Service.
 
-
 2. Click **Deployment Center** . A new panel appears. Click **Disconnect** to remove the local Git
 source control configuration that was added in the previous chapter. Confirm the removal
-
-    - peration by clicking the **Yes** button.
+operation by clicking the **Yes** button.
 
 ### Create an Azure DevOps organization
 
 
 1. [Open a browser, and navigate to the Azure DevOps organization creation page.](https://go.microsoft.com/fwlink/?LinkId=307137)
 
-
 2. Select **New organization**
 
-
 3. Confirm the information, and then select **Continue** .
-
 
 4. Sign in to your organization at any time, https://dev.azure.com/{yourorganization}
 
@@ -1014,9 +951,7 @@ source control configuration that was added in the previous chapter. Confirm the
 
 1. Choose the organization, and then select **New project** .
 
-
 2. Enter the project name as _MyFirstProject_ and select the **Visibility** as _Private_
-
 
 3. Select **Create project** .
 
@@ -1027,7 +962,7 @@ source control configuration that was added in the previous chapter. Confirm the
 
 
 To build your code or deploy your software using Azure Pipelines, you need at least one agent. In
-Azure Pipelines, you can run parallel jobs on either **Microsoft-hosted** - r **self-hosted** agent. But with
+Azure Pipelines, you can run parallel jobs on either **Microsoft-hosted** or **self-hosted** agent. But with
 the recent change in Azure Pipelines free grant of parallel jobs is temporarily disable for the public
 [projects.For more details, refer Configure and pay for parallel jobs.](https://docs.microsoft.com/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted&preserve-view=true)
 
@@ -1040,8 +975,7 @@ Go to **Organization Settings** and then **Pipelines** - **Parallel jobs** . If 
 
 
 [You can create that by following details mentioned in Self-hosted agents. After successful](https://docs.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser&preserve-view=true#install)
-configuration, you’ll be able to see available agent under **Organization Settings** - **Agent pools** 
-**{youragentname}**
+configuration, you’ll be able to see available agent under **Organization Settings** - **Agent pools** **{youragentname}**
 
 ### Configure the Azure Pipelines pipeline
 
@@ -1062,7 +996,7 @@ pipeline:
 1. Use Use the classic editor to create the pipeline.
 
 
-1. Select the **GitHub**  - ption from the **Select a source** section::
+1. Select the **GitHub** option from the **Select a source** section::
 
 
 1. Authorization is required before Azure DevOps can access your GitHub repository. Enter
@@ -1071,7 +1005,6 @@ _GitHub connection_ in the **Connection name** textbox. For example:
 
 1. If two-factor authentication is enabled on your GitHub account, a personal access token is
 required. In that case, click the **Authorize with a GitHub personal access token** link. See the
-
 [official GitHub personal access token creation instructions](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for help. Only the _repo_ scope of
 permissions is needed. Otherwise, click the **Authorize using OAuth** button.
 
@@ -1082,10 +1015,8 @@ permissions is needed. Otherwise, click the **Authorize using OAuth** button.
 2. When prompted, sign in to your GitHub account. Then select Authorize to grant access to
 your Azure DevOps organization. If successful, a new service endpoint is created.
 
-
 3. Click the ellipsis button next to the **Repository** button. Select the _/simple-feed-reader_
 repository from the list. Click the **Select** button.
-
 
 4. Select the default branch ( _main_ ) from the **Default branch for manual and scheduled builds**
 drop-down. Click the **Continue** button. The template selection page appears.
@@ -1098,7 +1029,6 @@ drop-down. Click the **Continue** button. The template selection page appears.
 
 1. The template search results appear. Hover over the **ASP.NET Core** template, and click the
 **Apply** button.
-
 
 2. The **Tasks** tab of the build definition appears. Select the self-hosted **Agent pool** if you have
 created that in the earlier step.
@@ -1115,7 +1045,6 @@ drop down.
 
 1. Click the **Triggers** tab.
 
-
 2. Check the **Enable continuous integration** box. Under the **Branch filters** section, confirm
 that the **Type** drop-down is set to _Include_ . Set the **Branch specification** drop-down to _main_ .
 
@@ -1126,7 +1055,7 @@ branch (*main*) of the GitHub repository. Continuous integration is tested in th
 
 ```
 
-1. Click the **Save & queue** button, and select the **Save**  - ption:
+1. Click the **Save & queue** button, and select the **Save** option:
 
 
 1. The following modal dialog appears:
@@ -1164,13 +1093,10 @@ The template selection pane appears.
 1. Select the **Build** tile from the **Source type** section. This type allows for the linking of the
 release pipeline to the build definition.
 
-
 2. Select _MyFirstProject_ from the **Project** drop-down.
-
 
 3. Select the build definition name, _MyFirstProject-ASP.NET Core-CI_, from the **Source (Build**
 **definition)** drop-down.
-
 
 4. Select _Latest_ from the **Default version** drop-down. This option builds the artifacts produced
 by the latest run of the build definition.
@@ -1181,9 +1107,7 @@ by the latest run of the build definition.
 
 5. Replace the text in the **Source alias** textbox with _Drop_ .
 
-
 6. Click the **Add** button. The **Artifacts** section updates to display the changes.
-
 
 7. Click the lightning bolt icon to enable continuous deployments:
 
@@ -1195,14 +1119,11 @@ With this option enabled, a deployment occurs each time a new build is available
 1. A **Continuous deployment trigger** panel appears to the right. Click the toggle button to
 enable the feature. It isn’t necessary to enable the **Pull request trigger** .
 
-
 2. Click the **Add** drop-down in the **Build branch filters** section. Choose the **Build Definition’s**
-**default branch**    - ption. This filter causes the release to trigger only for a build from the
+**default branch** option. This filter causes the release to trigger only for a build from the
 GitHub repository’s default branch ( _main_ ).
 
-
 3. Click the **Save** button. Click the **OK** button in the resulting **Save** modal dialog.
-
 
 4. Click the **Stage 1** box. An **Stage** panel appears to the right. Change the _Stage 1_ text in the
 **Stage name** textbox to _Production_ .
@@ -1221,25 +1142,18 @@ The **Tasks** tab of the environment appears.
 
 1. Click the **Deploy Azure App Service to Slot** task. Its settings appear in a panel to the right.
 
-
 2. Select the Azure subscription associated with the App Service from the **Azure subscription**
 drop-down. Once selected, click the **Authorize** button.
 
-
 3. Select _Web App_ from the **App type** drop-down.
-
 
 4. Select _mywebapp/_ from the **App service name** drop-down.
 
-
 5. Select _AzureTutorial_ from the **Resource group** drop-down.
-
 
 6. Select _staging_ from the **Slot** drop-down.
 
-
 7. Select **Run on agent**  - under **Tasks** . On the right pane, you’ll see **Agent Job** .
-
 
 8. Select the self-hosted **Agent pool** if you have created that in the earlier step.
 
@@ -1251,7 +1165,6 @@ drop down.
 ```
 
 1. Click the **Save** button.
-
 
 2. Hover over the default release pipeline name. Click the pencil icon to edit it. Use
 _MyFirstProject-ASP.NET Core-CD_ as the name.
@@ -1284,7 +1197,6 @@ _Team Explorer_ tab, or execute the following using the local machine’s comman
 
 5. Push the change in the default branch ( _main_ ) to the _origin_ remote of your GitHub repository.
 In the following command, replace the placeholder {BRANCH} with the default branch (use
-
 main):
 
 
@@ -1292,8 +1204,7 @@ main):
 
 
 The commit appears in the GitHub repository’s default branch ( _main_ ). You’ll be able to see the
-commit history in https://github.com/<GitHub_username>/simple-feed
-reader/commits/main.
+commit history in https://github.com/<GitHub_username>/simple-feedreader/commits/main.
 
 
 The build is triggered, since continuous integration is enabled in the build definition’s
@@ -1321,7 +1232,6 @@ Notice that the “V4” text appears in the heading:
 
 A build definition was created with the name _MyFirstProject-ASP.NET Core-CI_ . Upon completion, the
 build produces a _.zip_ file including the assets to be published. The release pipeline deploys those
-
 assets to Azure.
 
 
@@ -1339,7 +1249,6 @@ default package feed used is nuget.org.
 code. This --configuration option is used to produce an optimized version of the code, which
 is suitable for deployment to a production environment. Modify the _BuildConfiguration_
 variable on the build definition’s **Variables** tab if, for example, a debug configuration is
-
 needed.
 
 
@@ -1354,11 +1263,8 @@ and isn’t deployed.
 
 
 [!NOTE] To verify the unit tests work, modify _SimpleFeedReader.Tests.cs_ to purposefully break
-
-    - ne of the tests. For example, change Assert.True(result.Count > 0); to
-
+one of the tests. For example, change Assert.True(result.Count > 0); to
 Assert.False(result.Count > 0); in the Returns_News_Stories_Given_Valid_Uri method. Commit
-
 and push the change to GitHub. The build is triggered and fails. The build pipeline status
 changes to **failed** . Revert the change, commit, and push again. The build succeeds.
 
@@ -1434,11 +1340,9 @@ _staging_ slot are swapped into the production environment.
 ### Additional reading
 
 
-  [Create your first pipeline with Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/create-first-pipeline)
-
+  - [Create your first pipeline with Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/create-first-pipeline)
 
   - [Build and .NET Core project](https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core)
-
 
   - [Deploy a web app with Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/targets/webapp)
 
@@ -1467,27 +1371,19 @@ In this section, you’ll complete the following tasks:
 
   - Publish the app’s code to GitHub
 
-
   - Disconnect local Git deployment
-
 
   - Create an Azure DevOps organization
 
-
   - Create a team project in Azure DevOps organization
 
-
-  Configure a self-hosted agent if necessary
-
+  - Configure a self-hosted agent if necessary
 
   - Create a build definition
 
-
   - Create a release pipeline
 
-
   - Commit changes to GitHub and automatically deploy to Azure
-
 
   - Examine the Azure Pipelines pipeline
 
@@ -1496,7 +1392,6 @@ In this section, you’ll complete the following tasks:
 
 1. Open a browser window, and navigate to https://github.com.
 
-
 2. Click the **+** drop-down in the header, and select **New repository** :
 
 
@@ -1504,7 +1399,6 @@ In this section, you’ll complete the following tasks:
 
 
 1. Select your account in the **Owner** drop-down, and enter _simple-feed-reader_ in the **Repository**
-
 **name** textbox.
 
 
@@ -1530,7 +1424,6 @@ https://github.com/<GitHub_username>/simple-feed-reader/ :::
 
 
 6. Publish your local Git repository to the newly created GitHub repository. Execute the following
-
 command:
 
 
@@ -1552,27 +1445,21 @@ Web App. The Web App can be quickly located by entering _staging_ in the portal�
 
 1. Click **Deployment Center** . A new panel appears. Click **Disconnect** to remove the local Git
 source control configuration that was added in the previous chapter. Confirm the removal
-
-    - peration by clicking the **Yes** button.
-
+operation by clicking the **Yes** button.
 
 2. Navigate to the _mywebapp_ App Service. As a reminder, the portal’s search box can be used to
 quickly locate the App Service.
 
-
 3. Click **Deployment Center** . A new panel appears. Click **Disconnect** to remove the local Git
 source control configuration that was added in the previous chapter. Confirm the removal
-
-    - peration by clicking the **Yes** button.
+operation by clicking the **Yes** button.
 
 #### **Create an Azure DevOps organization**
 
 
 1. [Open a browser, and navigate to the Azure DevOps organization creation page.](https://go.microsoft.com/fwlink/?LinkId=307137)
 
-
 2. Select **New organization**
-
 
 3. Confirm the information, and then select **Continue** .
 
@@ -1587,9 +1474,7 @@ source control configuration that was added in the previous chapter. Confirm the
 
 1. Choose the organization, and then select **New project** .
 
-
 2. Enter the project name as _MyFirstProject_ and select the **Visibility** as _Private_
-
 
 3. Select **Create project** .
 
@@ -1600,7 +1485,7 @@ source control configuration that was added in the previous chapter. Confirm the
 
 
 To build your code or deploy your software using Azure Pipelines, you need at least one agent. In
-Azure Pipelines, you can run parallel jobs on either **Microsoft-hosted** - r **self-hosted** agent. But with
+Azure Pipelines, you can run parallel jobs on either **Microsoft-hosted** or **self-hosted** agent. But with
 the recent change in Azure Pipelines free grant of parallel jobs is temporarily disable for the public
 [projects.For more details, refer Configure and pay for parallel jobs.](https://docs.microsoft.com/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted&preserve-view=true)
 
@@ -1610,8 +1495,7 @@ Go to **Organization Settings** and then **Pipelines** - **Parallel jobs** . If 
 
 
 [You can create that by following details mentioned in Self-hosted agents. After successful](https://docs.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&tabs=browser&preserve-view=true#install)
-configuration, you’ll be able to see available agent under **Organization Settings** - **Agent pools** 
-**{youragentname}**
+configuration, you’ll be able to see available agent under **Organization Settings** - **Agent pools** **{youragentname}**
 
 #### **Configure the Azure Pipelines pipeline**
 
@@ -1633,7 +1517,7 @@ pipeline:
 1. Use Use the classic editor to create the pipeline.
 
 
-1. Select the **GitHub**  - ption from the **Select a source** section::
+1. Select the **GitHub** option from the **Select a source** section::
 
 
 1. Authorization is required before Azure DevOps can access your GitHub repository. Enter
@@ -1645,18 +1529,14 @@ _GitHub connection_ in the **Connection name** textbox. For example:
 
 1. If two-factor authentication is enabled on your GitHub account, a personal access token is
 required. In that case, click the **Authorize with a GitHub personal access token** link. See the
-
 [official GitHub personal access token creation instructions](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for help. Only the _repo_ scope of
 permissions is needed. Otherwise, click the **Authorize using OAuth** button.
-
 
 2. When prompted, sign in to your GitHub account. Then select Authorize to grant access to
 your Azure DevOps organization. If successful, a new service endpoint is created.
 
-
 3. Click the ellipsis button next to the **Repository** button. Select the _/simple-feed-reader_
 repository from the list. Click the **Select** button.
-
 
 4. Select the default branch ( _main_ ) from the **Default branch for manual and scheduled builds**
 drop-down. Click the **Continue** button. The template selection page appears.
@@ -1689,7 +1569,6 @@ drop down.
 
 1. Click the **Triggers** tab.
 
-
 2. Check the **Enable continuous integration** box. Under the **Branch filters** section, confirm
 that the **Type** drop-down is set to _Include_ . Set the **Branch specification** drop-down to _main_ .
 
@@ -1700,7 +1579,7 @@ branch (*main*) of the GitHub repository. Continuous integration is tested in th
 
 ```
 
-1. Click the **Save & queue** button, and select the **Save**  - ption:
+1. Click the **Save & queue** button, and select the **Save** option:
 
 
 35 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
@@ -1743,23 +1622,17 @@ The template selection pane appears.
 1. Select the **Build** tile from the **Source type** section. This type allows for the linking of the
 release pipeline to the build definition.
 
-
 2. Select _MyFirstProject_ from the **Project** drop-down.
-
 
 3. Select the build definition name, _MyFirstProject-ASP.NET Core-CI_, from the **Source (Build**
 **definition)** drop-down.
 
-
 4. Select _Latest_ from the **Default version** drop-down. This option builds the artifacts produced
 by the latest run of the build definition.
 
-
 5. Replace the text in the **Source alias** textbox with _Drop_ .
 
-
 6. Click the **Add** button. The **Artifacts** section updates to display the changes.
-
 
 7. Click the lightning bolt icon to enable continuous deployments:
 
@@ -1771,14 +1644,11 @@ With this option enabled, a deployment occurs each time a new build is available
 1. A **Continuous deployment trigger** panel appears to the right. Click the toggle button to
 enable the feature. It isn’t necessary to enable the **Pull request trigger** .
 
-
 2. Click the **Add** drop-down in the **Build branch filters** section. Choose the **Build Definition’s**
-**default branch**    - ption. This filter causes the release to trigger only for a build from the
+**default branch** option. This filter causes the release to trigger only for a build from the
 GitHub repository’s default branch ( _main_ ).
 
-
 3. Click the **Save** button. Click the **OK** button in the resulting **Save** modal dialog.
-
 
 4. Click the **Stage 1** box. An **Stage** panel appears to the right. Change the _Stage 1_ text in the
 **Stage name** textbox to _Production_ .
@@ -1796,25 +1666,18 @@ The **Tasks** tab of the environment appears.
 
 1. Click the **Deploy Azure App Service to Slot** task. Its settings appear in a panel to the right.
 
-
 2. Select the Azure subscription associated with the App Service from the **Azure subscription**
 drop-down. Once selected, click the **Authorize** button.
 
-
 3. Select _Web App_ from the **App type** drop-down.
-
 
 4. Select _mywebapp/_ from the **App service name** drop-down.
 
-
 5. Select _AzureTutorial_ from the **Resource group** drop-down.
-
 
 6. Select _staging_ from the **Slot** drop-down.
 
-
 7. Select **Run on agent**  - under **Tasks** . On the right pane, you’ll see **Agent Job** .
-
 
 8. Select the self-hosted **Agent pool** if you have created that in the earlier step.
 
@@ -1830,7 +1693,6 @@ drop down.
 ```
 
 1. Click the **Save** button.
-
 
 2. Hover over the default release pipeline name. Click the pencil icon to edit it. Use
 _MyFirstProject-ASP.NET Core-CD_ as the name.
@@ -1860,7 +1722,6 @@ _Team Explorer_ tab, or execute the following using the local machine’s comman
 
 5. Push the change in the default branch ( _main_ ) to the _origin_ remote of your GitHub repository.
 In the following command, replace the placeholder {BRANCH} with the default branch (use
-
 main):
 
 
@@ -1868,8 +1729,7 @@ main):
 
 
 The commit appears in the GitHub repository’s default branch ( _main_ ). You’ll be able to see the
-commit history in https://github.com/<GitHub_username>/simple-feed
-reader/commits/main.
+commit history in https://github.com/<GitHub_username>/simple-feedreader/commits/main.
 
 
 The build is triggered, since continuous integration is enabled in the build definition’s
@@ -1898,7 +1758,6 @@ Notice that the “V4” text appears in the heading:
 
 A build definition was created with the name _MyFirstProject-ASP.NET Core-CI_ . Upon completion, the
 build produces a _.zip_ file including the assets to be published. The release pipeline deploys those
-
 assets to Azure.
 
 
@@ -1916,7 +1775,6 @@ default package feed used is nuget.org.
 code. This --configuration option is used to produce an optimized version of the code, which
 is suitable for deployment to a production environment. Modify the _BuildConfiguration_
 variable on the build definition’s **Variables** tab if, for example, a debug configuration is
-
 needed.
 
 
@@ -1931,11 +1789,8 @@ and isn’t deployed.
 
 
 [!NOTE] To verify the unit tests work, modify _SimpleFeedReader.Tests.cs_ to purposefully break
-
-    - ne of the tests. For example, change Assert.True(result.Count > 0); to
-
+one of the tests. For example, change Assert.True(result.Count > 0); to
 Assert.False(result.Count > 0); in the Returns_News_Stories_Given_Valid_Uri method. Commit
-
 and push the change to GitHub. The build is triggered and fails. The build pipeline status
 changes to **failed** . Revert the change, commit, and push again. The build succeeds.
 
@@ -2012,11 +1867,9 @@ _staging_ slot are swapped into the production environment.
 #### **Additional reading**
 
 
-  [Create your first pipeline with Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/create-first-pipeline)
-
+  - [Create your first pipeline with Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/create-first-pipeline)
 
   - [Build and .NET Core project](https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core)
-
 
   - [Deploy a web app with Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/targets/webapp)
 
@@ -2053,11 +1906,9 @@ In the Build article, you’ll create the initial workflow to build and test the
 
   - Learn the basic structure of a GitHub Action workflow YAML file.
 
+  - Use a template to create a basic build workflow that builds a .NET app and executes unit tests.
 
-  Use a template to create a basic build workflow that builds a .NET app and executes unit tests.
-
-
-  Publish the compiled app so that it’s ready for deployment.
+  - Publish the compiled app so that it’s ready for deployment.
 
 
 In the Deploy article, you’ll:
@@ -2068,15 +1919,11 @@ In the Deploy article, you’ll:
 
   - Learn about environments in GitHub Actions.
 
+  - Create two environments and specify environment protection rules.
 
-  Create two environments and specify environment protection rules.
+  - Create environment secrets for managing environment-specific configuration.
 
-
-  Create environment secrets for managing environment-specific configuration.
-
-
-  Extend the workflow YAML file to add deployment steps.
-
+  - Extend the workflow YAML file to add deployment steps.
 
   - Add a manual dispatch trigger.
 
@@ -2100,9 +1947,7 @@ In the CodeQL article, you’ll:
 
   - Create a Code Scanning Action.
 
-
-  Edit the workflow file to include custom scan settings.
-
+  - Edit the workflow file to include custom scan settings.
 
   - See scanning results.
 
@@ -2144,12 +1989,9 @@ In the Build article, you’ll create the initial workflow to build and test the
 
   - Learn the basic structure of a GitHub Action workflow YAML file.
 
+  - Use a template to create a basic build workflow that builds a .NET app and executes unit tests.
 
-  Use a template to create a basic build workflow that builds a .NET app and executes unit tests.
-
-
-  Publish the compiled app so that it’s ready for deployment.
-
+  - Publish the compiled app so that it’s ready for deployment.
 
 In the Deploy article, you’ll:
 
@@ -2163,14 +2005,11 @@ In the Deploy article, you’ll:
 49 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
 
 
-  Create two environments and specify environment protection rules.
+  - Create two environments and specify environment protection rules.
 
+  - Create environment secrets for managing environment-specific configuration.
 
-  Create environment secrets for managing environment-specific configuration.
-
-
-  Extend the workflow YAML file to add deployment steps.
-
+  - Extend the workflow YAML file to add deployment steps.
 
   - Add a manual dispatch trigger.
 
@@ -2191,9 +2030,7 @@ In the CodeQL article, you’ll:
 
   - Create a Code Scanning Action.
 
-
-  Edit the workflow file to include custom scan settings.
-
+  - Edit the workflow file to include custom scan settings.
 
   - See scanning results.
 
@@ -2222,17 +2059,14 @@ _as code_ . Pipelines as code:
 [!div class=“checklist”]
 
 
-  Benefit from standard source control practices (such as code reviews via pull request and
+  - Benefit from standard source control practices (such as code reviews via pull request and
 versioning).
 
-
-  Can be audited for changes just like any other files in the repository.
-
+  - Can be audited for changes just like any other files in the repository.
 
   - Don’t require accessing a separate system or UI to edit.
 
-
-  Can fully codify the build, test, and deploy process for code.
+  - Can fully codify the build, test, and deploy process for code.
 
 
 50 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
@@ -2253,11 +2087,11 @@ system finds an “agent” and tells the agent to execute the jobs defined in t
 
 Azure Pipelines run on _agents_ . The agent is written in .NET, so it will run wherever .NET can run:
 [Windows, macOS, and Linux. Agents can even run in containers. Agents are registered to a pool](https://docs.microsoft.com/azure/devops/pipelines/agents/pools-queues) in
-Azure Pipelines or to a repository or organization in GitHub. Agents can be _hosted_ - r _private_ .
+Azure Pipelines or to a repository or organization in GitHub. Agents can be _hosted_ or _private_ .
 
 
 GitHub Workflows execute on _runners_ . The runner code is essentially a fork of the Azure Pipelines
-code, so it’s very similar. It’s also cross-platform and you can also use _hosted_ - r _self-hosted_ runners.
+code, so it’s very similar. It’s also cross-platform and you can also use _hosted_ or _self-hosted_ runners.
 
 
 **Hosted agents and runners**
@@ -2279,23 +2113,18 @@ instance is destroyed. The same applies for hosted runners running GitHub workfl
 There are times when you can’t use hosted images. For example, when you:
 
 
-  Require SDKs or other software that isn’t installed on the images.
-
+  - Require SDKs or other software that isn’t installed on the images.
 
   - Need to access resources that aren’t public (such as an internal SonarQube server or an
 internal Artifactory instance).
 
-
   - Need to deploy to private networks.
 
-
-  Need to install licenses for third-party software required for building your code.
-
+  - Need to install licenses for third-party software required for building your code.
 
   - Need more storage or memory than is provided to the hosted agent images.
 
-
-  Need more time than the maximum build time limit for hosted agents.
+  - Need more time than the maximum build time limit for hosted agents.
 
 
 51 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
@@ -2325,9 +2154,9 @@ two jobs simultaneously, and so on.
 
 
 
-|Feature|GitHub|AzurePipelines|Links|
+|Feature|GitHub|Azure Pipelines|Links|
 |---|---|---|---|
-|Hosted agents for<br>public<br>repos/projects|Free|Up to 10 free Microsoft-hosted parallel jobs<br>that can run for up to 360 minutes (6 hours)<br>each time with no overall time limit per<br>month. You aren’t given this free grant by<br>default, you have tosubmit a request|Azure<br>Pipelines<br>GitHub|
+|Hosted agents for<br>public<br>repos/projects|Free|Up to 10 free Microsoft-hosted parallel jobs<br>that can run for up to 360 minutes (6 hours)<br>each time with no overall time limit per<br>month. You aren’t given this free grant by<br>default, you have tosubmit a request|Azure<br>Pipelines <br>GitHub|
 |Hosted agents for<br>private<br>repos/projects|2,000 minutes<br>free per month,<br>3,000 minutes<br>for Pro and<br>Team licenses,<br>50,000 minutes<br>for Enterprise<br>license.<br>Additional<br>minutes may be<br>purchased.|One free parallel job that can run for up to<br>60 minutes each time, until you’ve used<br>1,800 minutes (30 hours) per month. You<br>can pay for additional capacity per parallel<br>job. Paid parallel jobs remove the monthly<br>time limit and allow you to run each job for<br>up to 360 minutes (6 hours).||
 |Cross-platform|Yes|Yes||
 |Scale set agents|No|Yes|Azure virtual<br>machine<br>scale set<br>agents|
@@ -2339,8 +2168,7 @@ Azure Pipelines (YAML pipelines) provide a mature set of features. Some of the f
 
   - Approvals
 
-
-  Artifact storage
+  - Artifact storage
 
 
 52 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
@@ -2348,21 +2176,15 @@ Azure Pipelines (YAML pipelines) provide a mature set of features. Some of the f
 
   - Deployment jobs
 
-
   - Environments
-
 
   - Gates
 
-
   - Stages
-
 
   - Templates
 
-
   - Triggers
-
 
   - Variable groups
 
@@ -2372,7 +2194,6 @@ Azure Pipelines (YAML pipelines) provide a mature set of features. Some of the f
 
 GitHub Actions are evolving rapidly and provide features such as triggers for almost all GitHub events,
 artifact storage, environments and environment rules, starter templates, and matrices. Read more
-
 [about the entire feature set refer GitHub Actions.](https://docs.github.com/actions)
 
 
@@ -2396,7 +2217,7 @@ The following table is current as of January 2023 and is not an exhaustive list 
 
 
 
-|Feature|Description|GitHubActions|AzurePipelines|
+|Feature|Description|GitHub Actions|Azure Pipelines|
 |---|---|---|---|
 |Approvals|Define approval<br>conditions before<br>moving further in the<br>pipeline|Yes|Yes|
 |Artifacts|Upload, store, and<br>download artifacts<br>from jobs|Yes|Yes|
@@ -2413,7 +2234,7 @@ The following table is current as of January 2023 and is not an exhaustive list 
 53 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
 
 
-|Feature|Description|GitHubActions|AzurePipelines|
+|Feature|Description|GitHub Actions|Azure Pipelines|
 |---|---|---|---|
 |Environment<br>s|A collection of<br>resources to target<br>or a logical<br>environment|Yes|Yes|
 |Gates/Check<br>s|Automatic collection<br>and evaluation of<br>signals to control<br>continuation|Yes|Yes|
@@ -2431,7 +2252,7 @@ The following table is current as of January 2023 and is not an exhaustive list 
 54 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
 
 
-|Feature|Description|GitHubActions|AzurePipelines|
+|Feature|Description|GitHub Actions|Azure Pipelines|
 |---|---|---|---|
 |Variables|Variables that can be<br>passed in, statically<br>or dynamically<br>defined|Yes|Yes|
 |Variable<br>Groups|Store values for use<br>across multiple<br>pipelines|No|Yes|
@@ -2462,21 +2283,16 @@ Workflows are defined in YAML files, and contain several common nodes:
 
   - a name
 
+  - a trigger, defined by an on section
 
-  a trigger, defined by an on section
+  - one or more job sections composed of one or more steps
 
-
-  
-    - ne or more job sections composed of one or more steps
-
-
-  -  - ptional attributes such as environment variables
+  - optional attributes such as environment variables
 
 
 Jobs are run on _runners_ . You can use _hosted runners_, which are spun up by GitHub during the
 workflow and then thrown away. Hosted runners are great because you don’t have to maintain your
-
-- wn build infrastructure. For workflows that require a specific build environment, or for running
+own build infrastructure. For workflows that require a specific build environment, or for running
 workflows on a private network, you can also use _private_ runners. To create a private runner, install the
 runner on any machine that supports .NET.
 
@@ -2507,15 +2323,11 @@ required to build, test, and deploy an ASP.NET Core Blazor WebAssembly app with 
 
   - [dotnet workload install](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-workload-install)
 
-
   - [dotnet restore](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore)
-
 
   - [dotnet build](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build)
 
-
   - [dotnet test](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test)
-
 
   - [dotnet publish](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-publish)
 
@@ -2536,7 +2348,6 @@ deployment.
 
 
 1. Navigate to your GitHub repository and select the **Actions** tab.
-
 
 2. GitHub detects that there’s .NET code in the repository and suggests a .NET workflow
 template. Select **Set up this workflow** to create a new YAML workflow file:
@@ -2585,28 +2396,21 @@ Notice the following things:
 
 1. There’s a name that names the workflow.
 
-
 2. The on object specifies when this workflow should run. This workflow has two events that
 trigger it: push to main and pull_request to main. Each time someone commits to main or
 creates a pull request (PR) to main, this workflow will execute.
 
-
 3. There’s a single job called build. This build should run on a hosted agent. ubuntu_latest
 specifies the most recent Ubuntu hosted agent.
 
-
 4. There are five steps:
 
-
 1. actions/checkout@v3 is an action that checks out the code in the repository onto the
-
 runner.
-
 
 2. actions/setup-dotnet@v3 is an action that sets up the .NET CLI. This step also
 specifies a name attribute for the logs and the dotnet-version parameter within the
 with object.
-
 
 3. Three run steps that execute dotnet restore, dotnet build, and dotnet test. name
 attributes are also specified for these run steps to make the logs look pretty.
@@ -2635,13 +2439,11 @@ command to publish the web app:
 :::{custom-style=CodeBox} ```yml
 
 
-     name: Test run: dotnet test –no-build –verbosity normal # <– this is the current
-
+     - name: Test run: dotnet test –no-build –verbosity normal # <– this is the current
 bottom line
 
 
-     name: Publish run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c
-
+     - name: Publish run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c
 Release -o website ``` :::
 
 
@@ -2675,7 +2477,7 @@ snippet and paste it into the workflow below the publish step.
 :::{custom-style=CodeBox} ```yml
 
 
-     name: Upload a Build Artifact uses: actions/upload-artifact@v3 with: name: website
+     - name: Upload a Build Artifact uses: actions/upload-artifact@v3 with: name: website
 path: SimpleFeedReader/website/** if-no-files-found: error ``` :::
 
 
@@ -2791,7 +2593,6 @@ the terminal open for copy/paste later.
 1. Now you’re going to create an encrypted secret to store the credentials. You’ll create this
 secret at the repository level.
 
-
 2. Navigate to GitHub and select your repository **Settings** tab. Then select **Secrets** . Select **New**
 **repository secret** :
 
@@ -2832,9 +2633,7 @@ you’ll just perform a slot swap.
 In this case, the only difference between the environments is the slot that you’re deploying to. In real
 life, there would typically be different web apps (and separate web app plans), separate resource
 groups, and even separate subscriptions. Typically, there’s an SPN per environment. You may want to
-
-- verride the AZURE_CREDENTIAL value that you saved as a repository secret by creating it as an
-
+override the AZURE_CREDENTIAL value that you saved as a repository secret by creating it as an
 _environment secret_ .
 
 
@@ -2890,8 +2689,7 @@ adding a deployment to the PRE-PROD environment, which in this case is the web a
 
 
 2. You’re going to use the web app name a few times in this workflow, and will need the name
-
-    - f the resource group too. You’ll define the app and resource group names as variables. With
+of the resource group too. You’ll define the app and resource group names as variables. With
 the variables, you can maintain the values in one place in the workflow file.
 
 
@@ -2915,7 +2713,6 @@ web app, and <name of your resource group> with the actual name of your resource
 
 
 :::{custom-style=CodeBox} ```yml if-no-files-found: error # <– last line of build job: insert
-
 below this line
 
 
@@ -2936,21 +2733,17 @@ successfully before it starts.
 3. This job also runs on the latest Ubuntu hosted agent, as specified with the runs-on
 attribute.
 
-
 4. You specify that this job is targeting the PRE-PROD environment using the
 environment object. You also specify the url property. This URL will be displayed in
 the workflow diagram, giving users an easy way to navigate to the environment. The
 value of this property is set as the output of the step with id deploywebapp, which is
 defined below.
 
-
 5. You’re executing a download-artifact step to download the artifact (compiled web
 app) from the build job.
 
-
 6. You then login to Azure using the AZURE_CREDENTIALS secret you saved earlier.
 Note the ${{ }} notation for dereferencing variables.
-
 
 7. You then perform a webapp-deploy, specifying the app-name, slot-name, and path to
 the downloaded artifact (package). This action also defines an output parameter that
@@ -3007,7 +2800,6 @@ the staging slot with the production slot. You’ll do this using an Azure CLI (
 
 
 :::{custom-style=CodeBox} ```yml run: az logout # <– last line of previous job: insert below this
-
 line
 
 
@@ -3020,7 +2812,6 @@ The deployment to the PROD environment workflow specifies several steps:
 1. Once again, you specify a new job deploy_prod that needs deploy_staging to
 complete before starting.
 
-
 2. You’re targeting the PROD environment this time. Also, the url value is different from
 before.
 
@@ -3031,10 +2822,8 @@ before.
 3. For the steps, you don’t need to download the artifact since you’re just going to
 perform a slot swap. You start by executing a login to the Azure context.
 
-
 4. The Swap staging slot into production step is a multi-line run command (note the use
-
-         - f the pipe symbol |). You also specify an id for this step so that you can refer to it
+of the pipe symbol |). You also specify an id for this step so that you can refer to it
 (you refer to it in the url property of the environment). The first line executes the slot
 swap using the variables you defined above in the workflow. The second line uses an
 az webapp show command to extract the URL of the target web app. This final line
@@ -3112,8 +2901,7 @@ defined in the workflow, you can select the branch for the run.
 
 
 5. To see the **Run workflow** button, select the **Actions** tab. Select the .NET workflow in the list
-
-     - f workflows. At the top of the list of runs, you’ll see the **Run workflow** button. If you select
+of workflows. At the top of the list of runs, you’ll see the **Run workflow** button. If you select
 it, you can choose the branch to run the workflow against and queue it:
 
 ```
@@ -3144,9 +2932,7 @@ environment and then substitute that value into the settings as you deploy.
 
 1. On your repository, select **Settings**  - **Environments**  - **PRE-PROD** .
 
-
 2. Select **Add secret** and add a secret called index_header with the value PRE PROD News
-
 Reader. Select **Add secret** .
 
 
@@ -3160,7 +2946,6 @@ Reader. Select **Add secret** .
 
 1. Repeat these steps to add a secret called index_header with the value PROD News Reader for
 the PROD environment.
-
 
 2. If you select **Settings**  - **Secrets** in the repository, you’ll see the changes. They should look
 something like this:
@@ -3247,11 +3032,9 @@ you can perform _variant analysis_, which uses known vulnerabilities as seeds to
 75 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
 
 
-  Code scanning—find potential security vulnerabilities in your code.
-
+  - Code scanning—find potential security vulnerabilities in your code.
 
   - Secret scanning—detect secrets and tokens that are committed.
-
 
   - Dependency scanning—detect vulnerabilities in packages that you consume.
 
@@ -3261,21 +3044,15 @@ you can perform _variant analysis_, which uses known vulnerabilities as seeds to
 
   - C/C++
 
-
   - Java
-
 
   - C#
 
-
   - Python
-
 
   - Go
 
-
   - JavaScript
-
 
   - TypeScript
 
@@ -3286,7 +3063,6 @@ security community has created without having to write any custom CodeQL.
 
 
 In this article, you’ll set up a GitHub workflow that will scan code in your repository using CodeQL.
-
 You will:
 
 
@@ -3295,9 +3071,7 @@ You will:
 
   - Create a code scanning action.
 
-
-  Edit the workflow file to include custom scan settings.
-
+  - Edit the workflow file to include custom scan settings.
 
   - See scanning results.
 
@@ -3324,8 +3098,7 @@ recommended workflow should be CodeQL Analysis. Select **Set up this workflow** 
 
 1. A new workflow file is created in your _.github/workflows_ folder.
 
-
-2. Select **Start Commit**  - n the upper right to save the default workflow. You can commit to the
+2. Select **Start Commit** on the upper right to save the default workflow. You can commit to the
 main branch.
 
 ```
@@ -3367,8 +3140,7 @@ the English text for the cron expression.
 
 
 4. This workflow defines a strategy with a matrix on the array of language. In this case, there’s
-
-    - nly csharp. If the repository contained other languages, you could add them to this array.
+only csharp. If the repository contained other languages, you could add them to this array.
 This causes the job to “fan out” and create an instance per value of the matrix.
 
 
@@ -3385,7 +3157,6 @@ conventions. If this step fails, you can replace it with your own custom build s
 
 
 8. After building, the CodeQL analysis is performed, where suites of queries are run against the
-
 code database.
 
 
@@ -3409,7 +3180,6 @@ step, you’ll configure CodeQL to use the security-and-quality suites.
 
 
 [[!INFORMATION] For other CodeQL configuration options, see Configuring CodeQL code scanning in](https://docs.github.com/code-security/code-scanning/using-codeql-code-scanning-with-your-existing-ci-system/configuring-codeql-cli-in-your-ci-system)
-
 [your CI system.](https://docs.github.com/code-security/code-scanning/using-codeql-code-scanning-with-your-existing-ci-system/configuring-codeql-cli-in-your-ci-system)
 
 
@@ -3430,7 +3200,7 @@ following code:
 queries:
 
 
-     uses: security-and-quality ``` :::
+     - uses: security-and-quality ``` :::
 
 
 79 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
@@ -3443,15 +3213,12 @@ queries:
 
 1. Select **Commit to main** at bottom of the editor to commit the file.
 
-
 2. Edit the CodeQL workflow to use the new configuration file. Navigate to
 _.github/workflows/codeql-analysis.yml_ and select the pencil icon. Add a new property to the
 with section as shown below:
 
-
 :::{custom-style=CodeBox} yml  - name: Initialize CodeQL   uses: github/codeql-action/init@v1
-with:    languages: ${{ matrix.language }}    config-file: ./.github/codeql/codeql-config.yml # <-
-add this line :::
+with:    languages: ${{ matrix.language }}    config-file: ./.github/codeql/codeql-config.yml # <-add this line :::
 
 
 1. Select **Start Commit** and commit to the main branch.
@@ -3475,13 +3242,10 @@ _Figure 7: View security alerts._
 
 1. Select the first alert to open it.
 
-
 2. In this case, the alert is for a generated file that isn’t committed to the repository. For that
 reason, the preview is unavailable.
 
-
 3. Notice the tags that are applied. These tags can be used for filtering issues.
-
 
 4. Select **Show more** under the rule information to show help and recommendations.
 
@@ -3504,9 +3268,11 @@ reason, the preview is unavailable.
 82 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
 
 
-# CHAPTER 4
+**CHAPTER**
+# 4
 
 ## Monitor and debug
+
 
 Having deployed the app and built a DevOps pipeline, it’s important to understand how to monitor
 and troubleshoot the app.
@@ -3520,21 +3286,15 @@ In this section, you’ll complete the following tasks:
 
   - Find basic monitoring and troubleshooting data in the Azure portal
 
-
   - Learn how Azure Monitor provides a deeper look at metrics across all Azure services
 
-
-  Connect the web app with Application Insights for app profiling
-
+  - Connect the web app with Application Insights for app profiling
 
   - Turn on logging and learn where to download logs
 
-
   - Stream logs in real time
 
-
   - Learn where to set up alerts
-
 
   - Learn about remote debugging Azure App Service web apps.
 
@@ -3548,7 +3308,6 @@ App Service web apps are easily monitored in real time. The Azure portal renders
 
 
 2. The **Overview** tab displays useful “at-a-glance” information, including graphs displaying
-
 recent metrics.
 
 
@@ -3563,14 +3322,11 @@ recent metrics.
 * **Average Response Time**: Average time for the web app to respond to HTTP requests.
 
 Several self-service tools for troubleshooting and optimization are also found on this
-
 page.
 
 * **Diagnose and solve problems** is a self-service troubleshooter.
 * **Application Insights** is for profiling performance and app behavior, and is
-
 discussed later in this section.
-
 * **App Service Advisor** makes recommendations to tune your app experience.
 
 ### Advanced monitoring
@@ -3579,8 +3335,7 @@ discussed later in this section.
 
 [Azure Monitor](https://docs.microsoft.com/azure/monitoring-and-diagnostics/) is the centralized service for monitoring all metrics and setting alerts across Azure
 services. Within Azure Monitor, administrators can granularly track performance and identify trends.
-
-Each Azure service offers its own set of metrics to Azure Monitor.
+[Each Azure service offers its own set of metrics](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-supported-metrics#microsoftwebsites-excluding-functions) to Azure Monitor.
 
 ### Profile with Application Insights
 
@@ -3592,7 +3347,6 @@ apps. Application Insights can be added to an Azure App Service resource without
 
 
 1. [Open the Azure portal, and then navigate to the](https://portal.azure.com/) _mywebapp<unique_number>_ App Service.
-
 
 2. From the **Overview** tab, click the **Application Insights** tile.
 
@@ -3607,9 +3361,7 @@ web app.
 
 1. For **Runtime/Framework**, select **ASP.NET Core** . Accept the default settings.
 
-
 2. Select **OK** . If prompted to confirm, select **Continue** .
-
 
 3. After the resource has been created, click the name of Application Insights resource to
 navigate directly to the Application Insights page.
@@ -3630,7 +3382,6 @@ When properly configured, the service provides end-to-end monitoring across the 
 
 
 [browser, including client-side performance. For more information, see the Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview)
-
 [documentation.](https://docs.microsoft.com/azure/application-insights/app-insights-overview)
 
 ### Logging
@@ -3642,19 +3393,15 @@ following steps:
 
 1. [Open the Azure portal, and navigate to the](https://portal.azure.com/) _mywebapp<unique_number>_ App Service.
 
-
 2. In the menu to the left, scroll down to the **Monitoring** section. Select **Diagnostics logs** .
 
 
 1. Turn on **Application Logging (Filesystem)** . If prompted, click the box to install the
 extensions to enable app logging in the web app.
 
-
 2. Set **Web server logging** to **File System** .
 
-
 3. Enter the **Retention Period** in days. For example, 30.
-
 
 4. Click **Save** .
 
@@ -3672,7 +3419,6 @@ App and web server logs can be streamed in real time through the portal.
 
 1. [Open the Azure portal, and navigate to the](https://portal.azure.com/) _mywebapp<unique_number>_ App Service.
 
-
 2. In the menu to the left, scroll down to the **Monitoring** section and select **Log stream** .
 
 
@@ -3685,7 +3431,6 @@ App and web server logs can be streamed in real time through the portal.
 
 
 [Azure Monitor also provides real time alerts based on metrics, administrative events, and other](https://docs.microsoft.com/azure/monitoring-and-diagnostics/insights-alerts-portal)
-
 criteria.
 
 
@@ -3718,21 +3463,15 @@ In this section, you completed the following tasks:
 
   - Find basic monitoring and troubleshooting data in the Azure portal
 
-
   - Learn how Azure Monitor provides a deeper look at metrics across all Azure services
 
-
-  Connect the web app with Application Insights for app profiling
-
+  - Connect the web app with Application Insights for app profiling
 
   - Turn on logging and learn where to download logs
 
-
   - Stream logs in real time
 
-
   - Learn where to set up alerts
-
 
   - Learn about remote debugging Azure App Service web apps.
 
@@ -3741,18 +3480,13 @@ In this section, you completed the following tasks:
 
   - [Troubleshooting ASP.NET Core on Azure App Service and IIS](https://docs.microsoft.com/aspnet/core/test/troubleshoot-azure-iis)
 
+  - [Common errors reference for Azure App Service and IIS with ASP.NET Core](https://docs.microsoft.com/aspnet/core/host-and-deploy/azure-iis-errors-reference)
 
-  [Common errors reference for Azure App Service and IIS with ASP.NET Core](https://docs.microsoft.com/aspnet/core/host-and-deploy/azure-iis-errors-reference)
+  - [Monitor Azure web app performance with Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-azure-web-apps)
 
-
-  [Monitor Azure web app performance with Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-azure-web-apps)
-
-
-  [Enable diagnostics logging for web apps in Azure App Service](https://docs.microsoft.com/azure/app-service/web-sites-enable-diagnostic-log)
-
+  - [Enable diagnostics logging for web apps in Azure App Service](https://docs.microsoft.com/azure/app-service/web-sites-enable-diagnostic-log)
 
   - [Troubleshoot a web app in Azure App Service using Visual Studio](https://docs.microsoft.com/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio)
-
 
   - [Create classic metric alerts in Azure Monitor for Azure services - Azure portal](https://docs.microsoft.com/azure/monitoring-and-diagnostics/insights-alerts-portal)
 
@@ -3760,9 +3494,11 @@ In this section, you completed the following tasks:
 89 CHAPTER 4 | Monitor and debug
 
 
-# CHAPTER 5
+**CHAPTER**
+# 5
 
 ## Next steps
+
 
 In this guide, you created a DevOps pipeline for an ASP.NET Core sample app. Congratulations! We
 hope you enjoyed learning to publish ASP.NET Core web apps to Azure App Service and automate the
@@ -3771,7 +3507,6 @@ continuous integration of changes.
 
 Beyond web hosting and DevOps, Azure has a wide array of Platform-as-a-Service (PaaS) services
 useful to ASP.NET Core developers. This section gives a brief overview of some of the most commonly
-
 used services.
 
 ### Storage and databases
@@ -3822,7 +3557,6 @@ deploy and manage containerized apps without container orchestration expertise.
 
 
 [Service Fabric](https://docs.microsoft.com/azure/service-fabric/) is a distributed systems platform that makes it easy to package, deploy, and manage
-
 scalable and reliable microservices and containers.
 
 

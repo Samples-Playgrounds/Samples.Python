@@ -28,16 +28,14 @@ form or by any means without the written permission of the publisher.
 
 This book is provided “as-is” and expresses the author’s views and opinions. The views, opinions and
 information expressed in this book, including URL and other Internet website references, may change
-
 without notice.
 
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association
+or connection is intended or should be inferred.
 
-- r connection is intended or should be inferred.
 
-
-[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) - n the “Trademarks” webpage are
+[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) on the “Trademarks” webpage are
 trademarks of the Microsoft group of companies.
 
 
@@ -50,7 +48,7 @@ All other marks and logos are property of their respective owners.
 Authors:
 
 
-**Mark Rendle** - Chief Technical Officer - Visual Recode
+**Mark Rendle** [- Chief Technical Officer - Visual Recode](https://visualrecode.com/)
 
 
 **Miranda Steiner** - Technical Author
@@ -60,7 +58,6 @@ Editor:
 
 
 **Maira Wenzel** - Sr. Content Developer - Microsoft
-
 ### Introduction
 
 
@@ -80,7 +77,6 @@ This guide was written for developers working in .NET Framework or .NET who have
 WCF, and who are seeking to migrate their applications to a modern RPC environment for .NET Core
 3.0 and later versions. More generally, if you are upgrading, or considering upgrading, to .NET 7, and
 you want to use the built-in gRPC tools, this guide is also useful.
-
 ### How you can use this guide
 
 
@@ -95,14 +91,12 @@ and you are free to copy and reuse code from the book or its samples.
 Feel free to forward this guide to your team to help ensure a common understanding of these
 considerations and opportunities. Having everybody working from a common set of terms and
 underlying principles helps ensure consistent application of architectural patterns and practices.
-
 ### References
 
 
   - **gRPC website** [https://grpc.io](https://grpc.io/)
 
-
-  **Choosing between .NET 5 and .NET Framework for server apps**
+  - **Choosing between .NET 5 and .NET Framework for server apps**
 [https://learn.microsoft.com/dotnet/standard/choosing-core-framework-server](https://docs.microsoft.com/dotnet/standard/choosing-core-framework-server)
 
 
@@ -492,9 +486,11 @@ Distributed tracing ............................................................
 iv Contents
 
 
-# CHAPTER 1
+**CHAPTER**
+# 1
 
 ## Introduction to gRPC for WCF developers
+
 
 Helping machines communicate with each other has been one of the primary preoccupations of the
 digital age. In particular, there’s an ongoing effort to determine the optimal remote communication
@@ -504,9 +500,7 @@ imagine, that mechanism changes as either the demands or the infrastructure evol
 
 The release of .NET Core 3.0 marks a shift in the way that Microsoft delivers remote communication
 solutions to developers who want to deliver services across a range of platforms. .NET Core and later
-
 doesn’t offer Windows Communication Foundation (WCF) out of the box but, with the release of
-
 ASP.NET Core 3.0, it does provide built-in gRPC functionality.
 
 
@@ -534,7 +528,7 @@ promoting a language-agnostic approach. Service-oriented architecture (SOA) prov
 for loosely coupling a broad collection of services that could be provided to an application.
 
 
-The development of _web services_ - ccurred when all major platforms could access the internet, but
+The development of _web services_ occurred when all major platforms could access the internet, but
 they still couldn’t interact with each other. Web services have open standards and protocols,
 including:
 
@@ -545,21 +539,17 @@ including:
 1 CHAPTER 1 | Introduction to gRPC for WCF developers
 
 
-  Simple Object Access Protocol (SOAP) to transfer data.
+  - Simple Object Access Protocol (SOAP) to transfer data.
 
-
-  Web Services Definition Language (WSDL) to describe and connect web services to client
+  - Web Services Definition Language (WSDL) to describe and connect web services to client
 applications.
 
-
   - Universal Description, Discovery, and Integration (UDDI) to make web services discoverable by
-
-     - ther services.
+other services.
 
 
 SOAP defines the rules by which distributed elements of an application can communicate with each
-
-- ther, even if they’re on different platforms. SOAP is based on XML, so it’s human-readable. The
+other, even if they’re on different platforms. SOAP is based on XML, so it’s human-readable. The
 sacrifice for making SOAP easily understood is size; SOAP messages are larger than messages in
 comparable protocols. SOAP was designed to break monolithic applications into multicomponent
 form without losing security or control. So WCF was designed to work with that kind of system, unlike
@@ -587,15 +577,12 @@ Advantages to microservices include:
 
   - Changes and upgrades can be handled independently.
 
-
-  Error handling becomes more efficient because problems can be traced to specific services
+  - Error handling becomes more efficient because problems can be traced to specific services
 that are then isolated, rebuilt, tested, and redeployed independently of the other services.
 
+  - Scalability can be confined to specific instances or services rather than the whole application.
 
-  Scalability can be confined to specific instances or services rather than the whole application.
-
-
-  Development can happen across multiple teams, with less friction than occurs when many
+  - Development can happen across multiple teams, with less friction than occurs when many
 teams work on a single codebase.
 
 
@@ -603,15 +590,13 @@ The move towards increasing virtualization, cloud computing, containers, and the
 has contributed to the ongoing rise of microservices. But microservices aren’t without their challenges.
 The fragmented/decentralized infrastructure put more emphasis on the need for simplicity and speed
 when communicating between services. This in turn drew attention to the sometimes laborious and
-
 contorted nature of SOAP.
 
 
 It was into this environment that gRPC was launched, 10 years after Microsoft first released WCF.
 Evolved directly from Google’s internal infrastructure RPC (Stubby), gRPC was never based on the
 same standards and protocols that had informed the parameters of many earlier RPCs. And gRPC was
-
-- nly ever based on HTTP/2. That’s why it could draw on the new capabilities that advanced transport
+only ever based on HTTP/2. That’s why it could draw on the new capabilities that advanced transport
 protocol provided. In particular, bidirectional streaming, binary messaging, and multiplexing.
 
 
@@ -648,9 +633,11 @@ considering upgrading to .NET and who want to use the built-in gRPC tools.
 3 CHAPTER 1 | Introduction to gRPC for WCF developers
 
 
-# CHAPTER 2
+**CHAPTER**
+# 2
 
 ## gRPC overview
+
 
 After looking at the genesis of both Windows Communication Foundation (WCF) and gRPC in the last
 chapter, this chapter considers some of the key features of gRPC and how they compare to WCF.
@@ -678,26 +665,20 @@ primarily concerned with maximizing accessibility and usability:
   - **Free and open**  - All artifacts should be open source, with licensing that doesn’t constrain
 developers from adopting gRPC.
 
-
   - **Coverage and simplicity**  - gRPC should be available across every popular platform, and
 simple enough to build on any platform.
-
 
   - **Interoperability and reach**  - It should be possible to use gRPC on any network, regardless of
 bandwidth or latency, by using widely available network standards.
 
-
-  **General purpose and performant**    - The framework should be usable by as broad a range of
+  - **General purpose and performant**  - The framework should be usable by as broad a range of
 use-cases as possible, without compromising performance.
-
 
   - **Streaming**  - The protocol should provide streaming semantics for large datasets or
 asynchronous messaging.
 
-
   - **Metadata exchange**  - The protocol allows non-business data, such as authentication tokens,
 to be handled separately from actual business data.
-
 
   - **Standardized status codes**  - The variability of error codes should be reduced to make error
 handling decisions clearer. Where additional, richer error handling is required, a mechanism
@@ -751,8 +732,7 @@ more detailed explanations.
 With Windows Communication Foundation (WCF), services can expose description metadata by using
 the Web Service Definition Language (WSDL). WSDL is generated dynamically by using .NET reflection
 at run time. Developers can use this metadata to generate clients for those services, potentially in
-
-- ther languages if they’re using a platform-neutral binding such as SOAP over HTTP.
+other languages if they’re using a platform-neutral binding such as SOAP over HTTP.
 
 
 gRPC uses the Interface Definition Language (IDL) from Protocol Buffers. The Protocol Buffers IDL is a
@@ -772,8 +752,7 @@ machine-readable/writable format. Changing the WSDL of a WCF service typically r
 the service, running the service, and regenerating the WSDL file from the server. By contrast, with a
 .proto file, changes are simple to apply with a text editor, and automatically flow through the
 generated code. Visual Studio 2022 builds .proto files in the background when they are saved. With
-
-- ther editors, such as VS Code, the changes are applied when the project is built.
+other editors, such as VS Code, the changes are applied when the project is built.
 
 
 When compared with XML, and particularly SOAP, messages encoded by using Protobuf have many
@@ -798,7 +777,6 @@ ideal moment to explore HTTP/2 in more detail and identify additional benefits o
 
 HTTP/2, released by Internet Engineering Task Force in 2015, was derived from the experimental SPDY
 protocol, which was already being used by Google. It was specifically designed to be more efficient,
-
 faster, and more secure than HTTP/1.1.
 
 #### **Key features of HTTP/2**
@@ -813,7 +791,6 @@ This list shows some of the key features and advantages of HTTP/2:
 Request/response cycles no longer need text commands. This activity simplifies and speeds up the
 implementation of commands. Specifically, parsing data is faster and uses less memory, network
 latency is reduced with obvious related improvements to speed, and there’s an overall better use of
-
 network resources.
 
 
@@ -852,7 +829,6 @@ unlike Net.TCP, gRPC over HTTP/2 isn’t constrained to .NET applications.
 
 Before we dive deeply into the language and techniques of gRPC, it’s worth discussing why gRPC is
 the right solution for Windows Communication Foundation (WCF) developers who want to migrate to
-
 .NET.
 
 #### **Similarity to WCF**
@@ -882,7 +858,6 @@ instead uses the smaller, faster binary protocol. This is more efficient for com
 also supports multiplexing requests over a single connection. This support enables responses to be
 sent as soon as they’re ready without the need to wait in a queue. (In HTTP/1.1, this issue is known as
 “head-of-line (HOL) blocking.”) You need fewer resources when using gRPC, which makes it a good
-
 solution to use for mobile devices and over slower networks.
 
 
@@ -911,7 +886,6 @@ generated. So more developer time is freed up to focus on business logic.
 
 gRPC has full bidirectional streaming, which provides similar functionality to WCF’s full-duplex
 services. gRPC streaming can operate over regular internet connections, load balancers, and service
-
 meshes.
 
 
@@ -922,7 +896,6 @@ gRPC allows clients to specify a maximum time for an RPC to finish. If the speci
 exceeded, the server can cancel the operation independently of the client. Deadlines and cancellations
 can be propagated through further gRPC calls to help enforce resource usage limits. Clients can also
 stop operations when a deadline is exceeded, or earlier if necessary (for example, because of a user
-
 interaction).
 
 
@@ -931,7 +904,6 @@ interaction).
 
 gRPC is implicitly secure when it’s using HTTP/2 over a TLS end-to-end encrypted connection. Support
 for client certificate authentication (see chapter 6) further increases security and trust between client
-
 and server.
 
 #### **Comparison with CoreWCF**
@@ -939,7 +911,6 @@ and server.
 
 [A notable alternative to gRPC for replacing WCF services when migrating to .NET is CoreWCF. Both](https://github.com/corewcf/corewcf)
 gRPC and CoreWCF are Microsoft endorsed paths forward for WCF applications and each comes with
-
 its own benefits and drawbacks.
 
 
@@ -948,7 +919,6 @@ WCF server APIs for .NET. CoreWCF is an effort to allow existing WCF services to
 changes on .NET. Your Data Contracts for WCF are unchanged with CoreWCF, and it supports many of
 the bindings and APIs from WCF. The main differences are around the patterns for starting WCF
 services, and not all configuration options are available (some configuration must now be done in
-
 code).
 
 
@@ -977,15 +947,15 @@ this guide focuses on that modernization with gRPC.
 10 CHAPTER 2 | gRPC overview
 
 
-# CHAPTER 3
+**CHAPTER**
+# 3
 
 ## Protocol buffers
 
+
 gRPC services send and receive data as _Protocol Buffer (Protobuf) messages_, similar to data contracts in
 Windows Communication Foundation (WCF). Protobuf is an efficient way of serializing structured data
-
 for machines to read and write, without the overhead that human-readable formats like XML or JSON
-
 incur.
 
 
@@ -1003,7 +973,6 @@ then uses this file to generate code for any of the supported platforms. Support
 
 The Protobuf compiler, protoc, is maintained by Google, although alternative implementations are
 available. The generated code is efficient and optimized for fast serialization and deserialization of
-
 data.
 
 
@@ -1020,7 +989,6 @@ compiler generates.
 
 
 The rest of the chapter will look in more detail at how different types of data are represented in
-
 Protobuf.
 
 #### **Declaring a message**
@@ -1028,9 +996,6 @@ Protobuf.
 
 In Windows Communication Foundation (WCF), a Stock class for a stock market trading application
 might be defined like the following example:
-
-
-
 
 
 11 CHAPTER 3 | Protocol buffers
@@ -1064,7 +1029,6 @@ In the binary format, the field number is combined with a type identifier. Field
 can be encoded with their type as a single byte. Numbers from 16 to 2,047 take 2 bytes. You can go
 higher if you need more than 2,047 fields on a message for any reason. The single-byte identifiers for
 field numbers 1 to 15 offer better performance, so you should use them for the most basic, frequently
-
 used fields.
 
 
@@ -1096,7 +1060,6 @@ contains all the code necessary to serialize and deserialize itself to the binar
 Note that the Protobuf compiler applied PascalCase to the property names, although they were
 [snake_case in the .proto file. The Protobuf style guide](https://developers.google.com/protocol-buffers/docs/style) recommends using snake_case in your message
 definitions so that the code generation for other platforms produces the expected case for their
-
 conventions.
 
 ### Protobuf scalar data types
@@ -1105,7 +1068,7 @@ conventions.
 Protocol Buffer (Protobuf) supports a range of native scalar value types. The following table lists them
 all with their equivalent C# type:
 
-|Protobuftype|C#type|Notes|
+|Protobuf type|C# type|Notes|
 |---|---|---|
 |double|double||
 |Float|float||
@@ -1119,7 +1082,7 @@ all with their equivalent C# type:
 13 CHAPTER 3 | Protocol buffers
 
 
-|Protobuftype|C#type|Notes|
+|Protobuf type|C# type|Notes|
 |---|---|---|
 |sint32|int|1|
 |sint64|long|1|
@@ -1139,18 +1102,13 @@ Notes:
 values. If your field is likely to contain negative numbers, use sint32 or sint64 instead. These
 types map to the C# int and long types, respectively.
 
-
 2. The fixed fields always use the same number of bytes no matter what the value is. This
 behavior makes serialization and deserialization faster for larger values.
 
-
 3. Protobuf strings are UTF-8 (or 7-bit ASCII) encoded. The encoded length can’t be greater than
-
 232.
 
-
 4. The Protobuf runtime provides a ByteString type that maps easily to and from C# byte[]
-
 arrays.
 
 #### **Other .NET primitive types**
@@ -1167,7 +1125,7 @@ across the supported platforms.
 
 The following table shows the date and time types:
 
-|C#type|Protobufwell -knowntype|
+|C# type|Protobuf well-known type|
 |---|---|
 |DateTimeOffset|google.protobuf.Timestamp|
 |DateTime|google.protobuf.Timestamp|
@@ -1221,7 +1179,7 @@ Protobuf will use the simple T? (for example, int?) for the generated message pr
 
 The following table shows the complete list of wrapper types with their equivalent C# type:
 
-|C#type|WellKnownTypewrapper|
+|C# type|Well Known Type wrapper|
 |---|---|
 |double?|google.protobuf.DoubleValue|
 |float?|google.protobuf.FloatValue|
@@ -1277,7 +1235,6 @@ Conversion between this type and the BCL decimal type might be implemented in C#
 
 Just as C# allows you to declare classes inside other classes, Protocol Buffer (Protobuf) allows you to
 nest message definitions within other messages. The following example shows how to create nested
-
 message types:
 
 
@@ -1331,14 +1288,12 @@ You can express contiguous field numbers as a range by using the to keyword.
 
 Handling dynamic property types (that is, properties of type object) in Windows Communication
 [Foundation (WCF) is complicated. For example, you must specify serializers and provide KnownType](https://docs.microsoft.com/dotnet/api/system.runtime.serialization.knowntypeattribute)
-
 attributes.
 
 
 Protocol Buffer (Protobuf) provides two simpler options for dealing with values that might be of more
 than one type. The Any type can represent any known Protobuf message type. And you can use the
-
-- neof keyword to specify that only one of a range of fields can be set in any message.
+oneof keyword to specify that only one of a range of fields can be set in any message.
 
 #### **Any**
 
@@ -1357,7 +1312,6 @@ checking the type.
 
 Protobuf’s internal reflection code uses the Descriptor static field on each generated type to resolve
 Any field types. There’s also a TryUnpack<T> method, but that creates an uninitialized instance of T
-
 even when it fails. It’s better to use the Is method as shown earlier.
 
 #### **Oneof**
@@ -1371,15 +1325,12 @@ Fields within the oneof set must have unique field numbers in the overall messag
 
 
 When you use oneof, the generated C# code includes an enum that specifies which of the fields has
-
 been set. You can test the enum to find which field is set. Fields that aren’t set return null or the
-
 default value, rather than throwing an exception.
 
 
 Setting any field that’s part of a oneof set will automatically clear any other fields in the set. You can’t
 use repeated with oneof. Instead, you can create a nested message with either the repeated field or
-
 the oneof set to work around this limitation.
 
 
@@ -1396,7 +1347,6 @@ Protobuf will compile them to C# enum types.
 Because you can use Protobuf with various languages, the naming conventions for enumerations are
 different from the C# conventions. However, the code generator converts the names to the traditional
 C# case. If the Pascal-case equivalent of the field name starts with the enumeration name, then it’s
-
 removed.
 
 
@@ -1430,7 +1380,6 @@ definition for 3. The result will be Region.None.
 
 
 The best way to work with multiple enum values in Protobuf is to use a repeated field of the enum
-
 type.
 
 ### Protobuf maps for dictionaries
@@ -1469,9 +1418,11 @@ copy values from any .NET dictionary.
 23 CHAPTER 3 | Protocol buffers
 
 
-# CHAPTER 4
+**CHAPTER**
+# 4
 
 ## Comparing WCF to gRPC
+
 
 The previous chapter gave you a good look at Protobuf and how gRPC handles messages. Before you
 work through a detailed conversion from Windows Communication Foundation (WCF) to gRPC, it’s
@@ -1481,18 +1432,13 @@ can use when there’s no gRPC equivalent. In particular, this chapter will cove
 
   - Operations and methods
 
-
   - Bindings and transports
-
 
   - RPC types
 
-
   - Metadata
 
-
   - Error handling
-
 
   - WS-* protocols
 
@@ -1502,7 +1448,6 @@ can use when there’s no gRPC equivalent. In particular, this chapter will cove
 When you create a new ASP.NET Core 7.0 gRPC project from Visual Studio 2022 or the command line,
 the gRPC equivalent of “Hello World” is generated for you. It consists of a greeter.proto file that
 defines the service and its messages, and a GreeterService.cs file with an implementation of the
-
 service.
 
 
@@ -1515,13 +1460,11 @@ This chapter will refer to this example code when explaining different concepts 
 
 
 In Windows Communication Foundation (WCF), when you’re writing your application code, you use
-
-- ne of the following methods:
+one of the following methods:
 
 
   - [You write the application code in a class and decorate methods with the OperationContract](https://docs.microsoft.com/dotnet/api/system.servicemodel.operationcontractattribute)
 attribute.
-
 
   - [You declare an interface for the service and add OperationContract attributes to the interface.](https://docs.microsoft.com/dotnet/api/system.servicemodel.operationcontractattribute)
 
@@ -1538,15 +1481,14 @@ class with virtual methods that you must override.
 
 
 [The OperationContract](https://docs.microsoft.com/dotnet/api/system.servicemodel.operationcontractattribute) attribute has properties to control or refine how it works. gRPC methods don’t
-
-- ffer this type of control. The following table lists those OperationContract properties and describes
+offer this type of control. The following table lists those OperationContract properties and describes
 how the functionality that they specify is (or isn’t) dealt with in gRPC:
 
 
 25 CHAPTER 4 | Comparing WCF to gRPC
 
 
-|OperationContractproperty|gRPC|
+|OperationContract property|gRPC|
 |---|---|
 |Action|A URI identifies the operation. gRPC uses the name of<br>package, service, and rpc from the .proto file.|
 |AsyncPattern|All gRPC service methods return Task objects.|
@@ -1598,7 +1540,6 @@ framework. In gRPC, encryption is achieved at the connection level through HTTP/
 
 The WCF binding called BasicHttpBinding is usually text-based and uses SOAP as the wire format. It’s
 slow compared to the NetTCP binding. It’s used to provide cross-platform interoperability, or
-
 connection over internet infrastructure.
 
 
@@ -1612,8 +1553,7 @@ interoperability with all modern programming languages and frameworks.
 WCF provided a _named pipes_ binding for communication between processes on the same physical
 machine. ASP.NET Core gRPC doesn’t support named pipes. For inter-process communication (IPC)
 using gRPC instead supports Unix domain sockets. Unix domain sockets are supported on Linux and
-
-modern versions of Windows.
+[modern versions of Windows.](https://devblogs.microsoft.com/commandline/af_unix-comes-to-windows/)
 
 
 [For more information, see Inter-process communication with gRPC.](https://docs.microsoft.com/aspnet/core/grpc/interprocess)
@@ -1647,15 +1587,11 @@ following types of remote procedure call (RPC):
 
   - Request/reply
 
-
   - Duplex:
 
+     - One-way duplex with session
 
-     One-way duplex with session
-
-
-     Full duplex with session
-
+     - Full duplex with session
 
   - One-way
 
@@ -1686,8 +1622,7 @@ pattern, the unary RPC.
 
 
 As you can see, implementing a gRPC unary RPC service method is similar to implementing a WCF
-
-- peration. The difference is that with gRPC, you override a base class method instead of
+operation. The difference is that with gRPC, you override a base class method instead of
 [implementing an interface. On the server, gRPC base methods always return Task, although the client](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1)
 provides both async and blocking methods to call the service.
 
@@ -1734,13 +1669,11 @@ This server stream can be consumed from a client application, as shown in the fo
 
 A WCF duplex service uses a client callback interface that can have multiple methods. A gRPC serverstreaming service can only send messages over a single stream. If you need multiple methods, use a
 message type with either an Any field or a oneof field to send different messages, and write code in
-
 the client to handle them.
 
 
 [In WCF, the ServiceContract class with the session is kept alive until the connection is closed. Multiple](https://docs.microsoft.com/dotnet/api/system.servicemodel.servicecontractattribute)
 methods can be called within the session. In gRPC, the Task that the implementation method returns
-
 shouldn’t finish until the connection is closed.
 
 #### **WCF one-way operations and gRPC client streaming**
@@ -1774,7 +1707,6 @@ performance applies: for smaller datasets, use repeated fields in regular messag
 WCF duplex binding supports multiple one-way operations on both the service interface and the
 client callback interface. This support allows ongoing conversations between client and server. gRPC
 supports something similar with bidirectional streaming RPCs, where both parameters are marked
-
 with the stream modifier.
 
 
@@ -1790,7 +1722,6 @@ with the stream modifier.
 In the previous example, you can see that the implementation method receives both a request stream
 (IAsyncStreamReader<MessageRequest>) and a response stream
 (IServerStreamWriter<MessageResponse>). The method can read and write messages until the
-
 connection is closed.
 
 
@@ -1802,7 +1733,6 @@ connection is closed.
 _Metadata_ refers to additional data that might be useful during the processing of requests and
 responses but that’s not part of the actual application data. Metadata might include authentication
 tokens, request identifiers and tags for monitoring purposes, and information about the data, like the
-
 number of records in a dataset.
 
 
@@ -1846,7 +1776,7 @@ Unfortunately, the current version of gRPC lacks the sophistication found with W
 limited built-in error handling based on simple status codes and metadata. The following table is a
 quick guide to the most commonly used status codes:
 
-|Statuscode|Problem|
+|Status code|Problem|
 |---|---|
 |GRPC_STATUS_UNIMPLEMENTED|Method hasn’t been written.|
 |GRPC_STATUS_UNAVAILABLE|Problem with the whole service.|
@@ -1864,7 +1794,6 @@ An ASP.NET Core gRPC service can send an error response by throwing an RpcExcept
 caught by the client as if it were in the same process. The RpcException must include a status code
 and description, and can optionally include metadata and a longer exception message. The metadata
 can be used to send supporting data, similar to how FaultContract objects can carry additional data
-
 for WCF errors.
 
 #### **Catch errors in gRPC clients**
@@ -1937,9 +1866,11 @@ wider range of technologies in use. For a discussion of transactions, see Append
 36 CHAPTER 4 | Comparing WCF to gRPC
 
 
-# CHAPTER 5
+**CHAPTER**
+# 5
 
 ## Migrate a WCF solution to gRPC
+
 
 This chapter will describe how to work with ASP.NET Core 7.0 gRPC projects and demonstrate
 migrating different types of Windows Communication Foundation (WCF) services to the gRPC
@@ -1948,12 +1879,9 @@ equivalent:
 
   - Create an ASP.NET Core 7.0 gRPC project.
 
-
   - Simple request-reply operations to gRPC unary RPC.
 
-
   - One-way operations to gRPC client streaming RPC.
-
 
   - Full-duplex services to gRPC bidirectional streaming RPC.
 
@@ -1965,8 +1893,7 @@ and there’s a discussion of the use of client libraries at the end of the chap
 The sample WCF application is a minimal stub of a set of stock trading services. It uses the opensource Inversion of Control (IoC) container library called Autofac for dependency injection. It includes
 three services, one for each WCF service type. The services will be discussed in more detail in the
 [following sections. You can download the solutions from dotnet-architecture/grpc-for-wcf-developers](https://github.com/dotnet-architecture/grpc-for-wcf-developers)
-
-- n GitHub. The services use fake data to minimize external dependencies.
+on GitHub. The services use fake data to minimize external dependencies.
 
 
 The samples include the WCF and gRPC implementations of each service.
@@ -2026,8 +1953,7 @@ flag.
 ASP.NET Core 7.0 comes with a CLI template for gRPC services. Create the new project by using this
 template, putting it into an src subdirectory as is conventional for ASP.NET Core projects. The project
 is named after the directory (TraderSys.Portfolios.csproj), unless you specify a different name with the
-
-- n flag.
+-n flag.
 
 ```
 dotnet new grpc -o src/TraderSys.Portfolios
@@ -2079,7 +2005,6 @@ should be compiled, and which form of code generation is required (that is, “S
 
 
 The GreeterService class is in the Services folder and inherits from Greeter.GreeterBase. Rename it to
-
 PortfolioService, and change the base class to Portfolios.PortfoliosBase. Delete the override methods.
 
 
@@ -2107,7 +2032,6 @@ application.
 
 [The PortfoliosSample solution includes a simple request-reply Portfolio service to download either a](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/main/PortfoliosSample/wcf/TraderSys)
 single portfolio or all portfolios for a given trader. The service is defined in the interface
-
 IPortfolioService with a ServiceContract attribute:
 
 
@@ -2195,7 +2119,6 @@ GetAllResponse type to wrap the list.
 
 If you save your project with these changes, the gRPC build target will run in the background and
 generate all the Protobuf message types and a base class that you can inherit to implement the
-
 service.
 
 
@@ -2235,7 +2158,6 @@ commands from the directory that contains the TraderSys.sln file:
 
 After you’ve created the library and added it to the solution, delete the generated Class1.cs file and
 copy the files from the WCF solution’s library into the new class library’s folder, keeping the folder
-
 structure:
 
 
@@ -2256,7 +2178,6 @@ dependency injection baked in. You can register the repository in the _Program.c
 
 
 The IPortfolioRepository implementation can now be specified as a constructor parameter in the
-
 PortfolioService class, as follows:
 
 ```
@@ -2284,8 +2205,7 @@ _repository = repository;
 Now that you’ve declared your messages and your service in the portfolios.proto file, you have to
 implement the service methods in the PortfolioService class that inherits from the gRPC-generated
 Portfolios.PortfoliosBase class. The methods are declared as virtual in the base class. If you don’t
-
-- verride them, they’ll return a gRPC “Not Implemented” status code by default.
+override them, they’ll return a gRPC “Not Implemented” status code by default.
 
 
 Start by implementing the Get method. The default override looks like this example:
@@ -2298,7 +2218,6 @@ RpcException and use the standard InvalidArgument status code to express the pro
 
 
 After there’s a proper Guid value for traderId, you can use the repository to retrieve the Portfolio and
-
 return it to the client:
 
 
@@ -2334,8 +2253,7 @@ it from the .proto file.
 
 Create a .NET Standard class library in the same solution to contain the client. This is primarily an
 example of creating client code, but you could package such a library by using NuGet and distribute it
-
-- n an internal repository for other .NET teams to consume. Go ahead and add a new .NET Standard
+on an internal repository for other .NET teams to consume. Go ahead and add a new .NET Standard
 class library called TraderSys.Portfolios.Client to the solution and delete the Class1.cs file.
 
 
@@ -2363,7 +2281,6 @@ Browse to the portfolios.proto file in the TraderSys.Portfolios project, leave *
 When you use the Visual Studio **Add Connected Service** feature, the portfolios.proto file is added to
 the class library project as a _linked file_ rather than copied, so changes to the file in the service project
 will automatically be applied in the client project. The <Protobuf> element in the csproj file looks like
-
 this:
 
 
@@ -2382,7 +2299,6 @@ more detailed exploration of the gRPC client code is at the end of this chapter.
 
 You’ve now migrated a basic WCF application to an ASP.NET Core gRPC service and created a client to
 consume the service from a .NET application. The next section will cover the more involved duplex
-
 services.
 
 ### Migrate WCF duplex services to gRPC
@@ -2405,7 +2321,6 @@ streaming RPC.
 [In the sample SimpleStockTicker WCF solution, SimpleStockPriceTicker, there’s a duplex service for](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/main/SimpleStockTickerSample/wcf/SimpleStockTicker)
 which the client starts the connection with a list of stock symbols, and the server uses the _callback_
 _interface_ to send updates as they become available. The client implements that interface to respond
-
 to calls from the server.
 
 
@@ -2486,7 +2401,6 @@ IServerStreamWriter<StockTickerUpdate> response stream, ready to use.
 
 Unlike a WCF duplex service, where the instance of the service class is kept alive while the connection
 is open, the gRPC service uses the returned task to keep the service alive. The task shouldn’t complete
-
 until the connection is closed.
 
 
@@ -2506,7 +2420,6 @@ subscriber to prevent it from trying to write data to the closed stream.
 The WriteUpdateAsync method has a try/catch block to handle any errors that might happen when a
 message is written to the stream. This consideration is important in persistent connections over
 networks, which could be broken at any millisecond, whether intentionally or because of a failure
-
 somewhere.
 
 
@@ -2543,8 +2456,7 @@ they were returned from a local method returning an IEnumerable.
 
 The IAsyncStreamReader<T> type works much like an IEnumerator<T>. There’s a MoveNext method
 that returns true as long as there’s more data, and a Current property that returns the latest value. The
-
-- nly difference is that the MoveNext method returns a Task<bool> instead of just a bool. The
+only difference is that the MoveNext method returns a Task<bool> instead of just a bool. The
 ReadAllAsync extension method wraps the stream in a standard C# 8 IAsyncEnumerable that can be
 used with the new await foreach syntax.
 
@@ -2577,11 +2489,9 @@ The IFullStockTickerService interface provides three methods:
 
   - Subscribe starts the connection.
 
-
   - AddSymbol adds a stock symbol to watch.
 
-
-  RemoveSymbol removes a symbol from the watched list.
+  - RemoveSymbol removes a symbol from the watched list.
 
 
 The callback interface remains the same.
@@ -2619,7 +2529,6 @@ ActionMessage class, which looks like this:
 
 
 The property ActionCase on the ActionMessage object can be used with a switch statement to
-
 determine which field is set:
 
 
@@ -2653,7 +2562,6 @@ each operation, set the relevant field on an ActionMessage object:
 
 
 The stream of responses is handled in an async method. The Task it returns is held to be disposed
-
 when the window is closed:
 
 
@@ -2690,11 +2598,9 @@ Which you should use depends on factors such as:
 
   - The overall size of the dataset.
 
-
   - The time it took to create the dataset at either the client or server end.
 
-
-  Whether the consumer of the dataset can start acting on it as soon as the first item is
+  - Whether the consumer of the dataset can start acting on it as soon as the first item is
 available, or needs the complete dataset to do anything useful.
 
 #### **When to use repeated fields**
@@ -2735,7 +2641,6 @@ application.
 
 Another scenario where streams can be useful is where a message is being processed across multiple
 services. If each service in a chain returns a stream, then the terminal service (that is, the last one in
-
 the chain) can start returning messages. These messages can be processed and passed back along the
 chain to the original requestor. The requestor can either return a stream or aggregate the results into
 a single response message. This approach lends itself well to patterns like MapReduce.
@@ -2814,29 +2719,26 @@ All that is required now is a simple extension method to create the observable f
 
 
 [The IAsyncEnumerable](https://docs.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1) [and IObservable](https://docs.microsoft.com/dotnet/api/system.iobservable-1) models are both well-supported and well-documented ways
-
-- f dealing with asynchronous streams of data in .NET. gRPC streams map well to both paradigms,
-
-- ffering close integration with .NET, and reactive and asynchronous programming styles.
+of dealing with asynchronous streams of data in .NET. gRPC streams map well to both paradigms,
+offering close integration with .NET, and reactive and asynchronous programming styles.
 
 
 67 CHAPTER 5 | Migrate a WCF solution to gRPC
 
 
-# CHAPTER 6
+**CHAPTER**
+# 6
 
 ## Security in gRPC applications
 
-In any real-world scenario, securing applications and services are essential. Security covers three key
 
+In any real-world scenario, securing applications and services are essential. Security covers three key
 areas:
 
 
-  Encrypting network traffic to prevent malicious hackers from intercepting it.
-
+  - Encrypting network traffic to prevent malicious hackers from intercepting it.
 
   - Authenticating clients and servers to establish identity and trust.
-
 
   - Authorizing clients to control access to systems and apply permissions based on identity.
 
@@ -2851,7 +2753,6 @@ will also discuss network security through TLS encrypted connections.
 
 
 In Windows Communication Foundation (WCF), authentication and authorization were handled in
-
 different ways, depending on the transports and bindings being used. WCF supported various WS-*
 security standards. It also supported Windows authentication for HTTP services running in IIS or
 NetTCP services between Windows systems.
@@ -2865,11 +2766,9 @@ gRPC authentication and authorization works on two levels:
   - Call-level authentication/authorization is usually handled through tokens that are applied in
 metadata when the call is made.
 
-
-  Channel-level authentication uses a client certificate that’s applied at the connection level. It
+  - Channel-level authentication uses a client certificate that’s applied at the connection level. It
 can also include call-level authentication/authorization credentials to be applied to every call
-
-    - n the channel automatically.
+on the channel automatically.
 
 
 You can use either or both of these mechanisms to help secure your service.
@@ -2879,33 +2778,24 @@ You can use either or both of these mechanisms to help secure your service.
 
 
 The ASP.NET Core implementation of gRPC supports authentication and authorization through most
-
-- f the standard ASP.NET Core mechanisms:
+of the standard ASP.NET Core mechanisms:
 
 
   - Call authentication
 
+     - Azure Active Directory
 
-     Azure Active Directory
-
-
-     IdentityServer
-
+     - IdentityServer
 
      - JWT Bearer Token
 
-
      - OAuth 2.0
 
-
-     OpenID Connect
-
+     - OpenID Connect
 
      - WS-Federation
 
-
   - Channel authentication
-
 
      - Client certificate
 
@@ -2934,12 +2824,10 @@ Call credentials are all based on a token passed in metadata with each request.
 [ASP.NET Core supports WS-Federation using the WsFederation](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.WsFederation) NuGet package. WS-Federation is the
 closest available alternative to Windows Authentication, which isn’t supported over HTTP/2. Users are
 authenticated by using Active Directory Federation Services (AD FS), which provides a token that can
-
 be used to authenticate with ASP.NET Core.
 
 
 [For more information on how to get started with this authentication method, see Authenticate users](https://docs.microsoft.com/aspnet/core/security/authentication/ws-federation)
-
 [with WS-Federation in ASP.NET Core.](https://docs.microsoft.com/aspnet/core/security/authentication/ws-federation)
 
 #### **JWT Bearer tokens**
@@ -2949,7 +2837,6 @@ be used to authenticate with ASP.NET Core.
 claims in an encoded string. It also provides a way to sign that token, so that the consumer can verify
 the integrity of the token by using public key cryptography. You can use various services, such as
 IdentityServer4, to authenticate users and generate OpenID Connect (OIDC) tokens to use with gRPC
-
 and HTTP APIs.
 
 
@@ -2985,7 +2872,6 @@ Next, add the Authorization service, which controls access to the system:
 
 
 Now add the authentication and authorization middleware to the ASP.NET Core pipeline in the
-
 _Program.cs_ :
 
 
@@ -3056,7 +2942,6 @@ server certificate.)
 
 
 [The Microsoft.AspNetCore.Authentication.Certificate NuGet package provides certificate](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.Certificate)
-
 authentication.
 
 
@@ -3110,7 +2995,6 @@ package.
 
 
 [A version of the FullStockTicker sample gRPC application with certificate authentication added is on](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/main/FullStockTickerSample/grpc/FullStockTickerAuth/FullStockTicker)
-
 GitHub.
 
 ### Encryption and network security
@@ -3122,7 +3006,6 @@ using the WS-Security specification to encrypt individual messages.
 
 
 gRPC leaves secure networking to the underlying HTTP/2 protocol, which you can secure by using TLS
-
 certificates.
 
 
@@ -3150,14 +3033,15 @@ assign certificates to services at deployment time.
 76 CHAPTER 6 | Security in gRPC applications
 
 
-# CHAPTER 7
+**CHAPTER**
+# 7
 
 ## gRPC in production
 
+
 You can run ASP.NET Core 7.0 applications, including gRPC services, on Windows, on Linux, and in
 containers using modern platforms like Docker and Kubernetes. This chapter explores the various
-
-- ptions for running your gRPC services in production, and looks at monitoring and logging options to
+options for running your gRPC services in production, and looks at monitoring and logging options to
 ensure the optimal operation of systems.
 
 ### Self-hosted gRPC applications
@@ -3185,15 +3069,12 @@ UseWindowsService to the CreateHostBuilder method in Program.cs.
 Now publish your application by using one of these methods:
 
 
-  - From Visual Studio by right-clicking the project and selecting **Publish**  - n the shortcut menu.
-
+  - From Visual Studio by right-clicking the project and selecting **Publish** on the shortcut menu.
 
   - From the .NET CLI.
 
-
 When you publish a .NET application, you can choose to create a _framework-dependent_ deployment
-
-- r a _self-contained_ deployment. Framework-dependent deployments require the .NET Shared Runtime
+or a _self-contained_ deployment. Framework-dependent deployments require the .NET Shared Runtime
 to be installed on the host where they’re run. Self-contained deployments are published with a
 complete copy of the .NET runtime and framework and can be run on any host. For more information,
 
@@ -3202,7 +3083,6 @@ complete copy of the .NET runtime and framework and can be run on any host. For 
 
 
 [including the advantages and disadvantages of each approach, see the .NET application deployment](https://docs.microsoft.com/dotnet/core/deploying/)
-
 documentation.
 
 
@@ -3223,7 +3103,6 @@ dotnet publish -c Release -o ./publish
 ```
 
 [Copy the complete contents of the publish directory to an installation folder. Then, use the sc tool](https://docs.microsoft.com/windows/desktop/services/controlling-a-service-using-sc) to
-
 create a Windows service for the executable file.
 
 ```
@@ -3241,7 +3120,6 @@ the Logging section of appsettings.json or another configuration source.
 
 You can override the source name used in the event log by setting a SourceName property in these
 settings. If you don’t specify a name, the default application name (normally the executable assembly
-
 name) will be used.
 
 
@@ -3262,17 +3140,16 @@ to the CreateHostBuilder method in Program.cs.
 
 Now publish your application. The application can be either framework dependent or self-contained
 for the relevant Linux runtime (for example, linux-x64). You can publish by using one of these
-
 methods:
 
 
 78 CHAPTER 7 | gRPC in production
 
 
-  - From Visual Studio by right-clicking the project and selecting **Publish**  - n the shortcut menu.
+  - From Visual Studio by right-clicking the project and selecting **Publish** on the shortcut menu.
 
 
-  From the .NET CLI, by using the following command:
+  - From the .NET CLI, by using the following command:
 
 ```
     dotnet publish -c Release -r linux-x64 -o ./publish
@@ -3353,7 +3230,6 @@ sudo journalctl -u myapp
 
 
 [To learn more about querying the systemd journal from the command line by using journalctl, see the](https://manpages.debian.org/buster/systemd/journalctl.1)
-
 [manpages.](https://manpages.debian.org/buster/systemd/journalctl.1)
 
 #### **HTTPS certificates for self-hosted applications**
@@ -3370,10 +3246,9 @@ class. You can also use the X509Store class with the OpenSSL key store on some L
 [You can also create certificates by using one of the X509Certificate2 constructors, from either:](https://docs.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509certificate2.-ctor)
 
 
-  A file, such as a .pfx file protected by a strong password
+  - A file, such as a .pfx file protected by a strong password
 
-
-  [Binary data retrieved from a secure storage service such as Azure Key Vault](https://azure.microsoft.com/services/key-vault/)
+  - [Binary data retrieved from a secure storage service such as Azure Key Vault](https://azure.microsoft.com/services/key-vault/)
 
 
 You can configure Kestrel to use a certificate in two ways: from configuration or in code.
@@ -3390,7 +3265,6 @@ Kestrel configuration section. In appsettings.json, that looks like this:
 
 
 Provide the password by using a secure configuration source such as Azure Key Vault or Hashicorp
-
 Vault.
 
 
@@ -3407,7 +3281,6 @@ Program class.
 
 
 Again, be sure to store the password for the .pfx file in, and retrieve it from, a secure configuration
-
 source.
 
 ### Create Docker images
@@ -3427,8 +3300,7 @@ ASP.NET Core 7.0 image, you use two base images:
 
   - An SDK image to build and publish the application.
 
-
-  A runtime image for deployment.
+  - A runtime image for deployment.
 
 
 
@@ -3448,7 +3320,7 @@ For each image, there are four variants based on different Linux distributions, 
 81 CHAPTER 7 | gRPC in production
 
 
-|Imagetag(s)|Linux|Notes|
+|Image tag(s)|Linux|Notes|
 |---|---|---|
 |7.0-bullseye-slim, 7.0|Debian 11|The default image if no<br>OS variant is specified.|
 |7.0-alpine|Alpine 3.17|Alpine base images are<br>much smaller than<br>Debian or Ubuntu ones.|
@@ -3472,7 +3344,6 @@ application:
 The Dockerfile has two parts: the first uses the sdk base image to build and publish the application;
 the second creates a runtime image from the aspnet base. This is because the sdk image is around
 900 MB, compared to around 200 MB for the runtime image, and most of its contents are unnecessary
-
 at run time.
 
 
@@ -3517,14 +3388,11 @@ environment variable in the runtime image creation part of your Dockerfile.
 Much like .gitignore files that exclude certain files and directories from source control, the
 .dockerignore file can be used to exclude files and directories from being copied to the image during
 build. This file not only saves time copying, but can also avoid some errors that arise from having the
-
-- bj directory from your PC copied into the image. At a minimum, you should add entries for bin and
-
-- bj to your .dockerignore file.
+obj directory from your PC copied into the image. At a minimum, you should add entries for bin and
+obj to your .dockerignore file.
 
 ```
 bin/
-
 obj/
 
 ```
@@ -3569,7 +3437,6 @@ docker run -ti -p 5000:80 stockdata:1.0.0
 
 The -ti flag connects your current terminal to the container’s terminal, and runs in interactive mode.
 The -p 5000:80 publishes (links) port 80 on the container to port 5000 on the localhost network
-
 interface.
 
 #### **Push the image to a registry**
@@ -3579,20 +3446,18 @@ After you’ve verified that the image works, push it to a Docker registry to ma
 systems. Internal networks will need to provision a Docker registry. This activity can be as simple as
 [running Docker’s own registry image](https://docs.docker.com/registry/deploying/) (the Docker registry runs in a Docker container), but there are
 various more comprehensive solutions available. For external sharing and cloud use, there are various
-[managed registries available, such as Azure Container Registry](https://docs.microsoft.com/azure/container-registry/) - r Docker Hub.
+[managed registries available, such as Azure Container Registry](https://docs.microsoft.com/azure/container-registry/) [or Docker Hub.](https://docs.docker.com/docker-hub/repos/)
 
 
 To push to Docker Hub, prefix the image name with your user or organization name.
 
 
 To push to a private registry, prefix the image name with the registry host name and the organization
-
 name.
 
 
 After the image is in a registry, you can deploy it to individual Docker hosts, or to a container
-
-- rchestration engine like Kubernetes.
+orchestration engine like Kubernetes.
 
 
 84 CHAPTER 7 | gRPC in production
@@ -3614,16 +3479,12 @@ Kubernetes includes the following functionality:
 the available resource, keeping containers running if there are outages, and handling rolling
 updates to new versions of images or new configurations.
 
-
   - **Health checks** monitor containers to ensure continued service.
-
 
   - **DNS & service discovery** handles routing between services within a cluster.
 
-
   - **Ingress** exposes selected services externally and generally provides load-balancing across
 instances of those services.
-
 
   - **Resource management** attaches external resources like storage to containers.
 
@@ -3650,8 +3511,7 @@ Every Kubernetes YAML file will have at least three top-level properties:
 
 The apiVersion property is used to specify which version (and which API) the file is intended for. The
 kind property specifies the kind of object the YAML represents. The metadata property contains
-
-- bject properties like name, namespace, and labels.
+object properties like name, namespace, and labels.
 
 
 Most Kubernetes YAML files will also have a spec section that describes the resources and
@@ -3666,7 +3526,6 @@ configuration necessary to create the object.
 
 Pods are the basic units of execution in Kubernetes. They can run multiple containers, but they’re also
 used to run single containers. The pod also includes any storage resources required by the containers,
-
 and the network IP address.
 
 
@@ -3675,14 +3534,13 @@ and the network IP address.
 
 Services are meta-objects that describe Pods (or sets of Pods) and provide a way to access them
 within the cluster, such as mapping a service name to a set of pod IP addresses by using the cluster
-
 DNS service.
 
 
 **Deployments**
 
 
-Deployments are the _desired state_ - bjects for Pods. If you create a pod manually, it won’t be restarted
+Deployments are the _desired state_ objects for Pods. If you create a pod manually, it won’t be restarted
 when it terminates. Deployments are used to tell the cluster which Pods, and how many replicas of
 those Pods, should be running at the present time.
 
@@ -3691,8 +3549,7 @@ those Pods, should be running at the present time.
 
 
 Pods, Services, and Deployments are just three of the most basic object types. There are dozens of
-
-- ther object types that are managed by Kubernetes clusters. For more information, see the
+other object types that are managed by Kubernetes clusters. For more information, see the
 [Kubernetes Concepts](https://kubernetes.io/docs/concepts/) documentation.
 
 
@@ -3702,10 +3559,8 @@ Pods, Services, and Deployments are just three of the most basic object types. T
 Kubernetes clusters are designed to scale to hundreds or thousands of nodes and to run similar
 numbers of services. To avoid clashes between object names, namespaces are used to group objects
 together as part of larger applications. Kubernetes’s own services run in a default namespace. All user
-
-- bjects should be created in their own namespaces to avoid potential clashes with default objects or
-
-- ther tenants in the cluster.
+objects should be created in their own namespaces to avoid potential clashes with default objects or
+other tenants in the cluster.
 
 #### **Get started with Kubernetes**
 
@@ -3718,7 +3573,6 @@ available. Just enable it in the **Kubernetes** section of the **Settings** wind
 
 
 [To run a local Kubernetes cluster on Linux, consider minikube, or MicroK8s](https://github.com/kubernetes/minikube) if your Linux distribution
-
 [supports snaps.](https://snapcraft.io/)
 
 
@@ -3727,7 +3581,6 @@ To confirm that your cluster is running and accessible, run the kubectl version 
 
 In this example, both the kubectl CLI and the Kubernetes server are running version 1.14.6. Each
 version of kubectl is supposed to support the previous and next version of the server, so kubectl 1.14
-
 should work with server versions 1.13 and 1.15 as well.
 
 #### **Run services on Kubernetes**
@@ -3754,7 +3607,6 @@ API, but doesn’t wait until all the objects declared in the file have been cre
 
 
 take some time. Use the kubectl get command with the relevant object types to check on object
-
 creation in the cluster.
 
 
@@ -3779,7 +3631,6 @@ The stockdata.yml file declares two objects: a Deployment and a Service.
 The Deployment part of the YAML file provides the spec for the deployment itself, including the
 number of replicas required, and a template for the Pod objects to be created and managed by the
 deployment. Note that Deployment objects are managed by the apps API, as specified in apiVersion,
-
 rather than the main Kubernetes API.
 
 
@@ -3804,7 +3655,6 @@ image runs the service on the standard HTTP port, so port 80 is published.
 
 The resources section applies resource limits to the container running within the Pod. This is a good
 practice because it prevents an individual Pod from consuming all the available CPU or memory on a
-
 node.
 
 
@@ -3815,7 +3665,6 @@ node.
 
 
 The Service part of the YAML file declares the service that provides access to the Pods within the
-
 cluster.
 
 
@@ -3830,7 +3679,6 @@ http://stockdata as the address. Pods running in other namespaces can use the ht
 
 
 Use kubectl to apply the stockdata.yml file and confirm that the Deployment and Service were
-
 created:
 
 
@@ -3860,10 +3708,8 @@ Service, which is running in the same Kubernetes namespace.
 
 
 The **DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2UNENCRYPTEDSUPPORT**
-
 [environment variable sets an AppContext](https://docs.microsoft.com/dotnet/api/system.appcontext) switch that enables unencrypted HTTP/2 connections for
 [HttpClient. This environment variable does the same thing as setting the switch in code, as shown](https://docs.microsoft.com/dotnet/api/system.net.http.httpclient)
-
 here:
 
 ```
@@ -3881,12 +3727,10 @@ context in which the application is running.
 The type: NodePort property is used to make the web application accessible from outside the cluster.
 This property type causes Kubernetes to publish port 80 on the Service to an arbitrary port on the
 cluster’s external network sockets. You can find the assigned port by using the kubectl get service
-
 command.
 
 
 The stockdata Service shouldn’t be accessible from outside the cluster, so it uses the default type,
-
 ClusterIP.
 
 
@@ -3899,13 +3743,11 @@ external consumers. Services exposed in this way should use the LoadBalancer typ
 
 **Deploy the StockWeb application**
 
-
 Use kubectl to apply the stockweb.yml file and confirm that the Deployment and Service were created:
 
 
 The output of the get service command shows that the HTTP port has been published to port 32564
-
-- n the external network. For Docker Desktop, this IP address will be localhost. You can access the
+on the external network. For Docker Desktop, this IP address will be localhost. You can access the
 application by browsing to http://localhost:32564.
 
 
@@ -3916,7 +3758,6 @@ application by browsing to http://localhost:32564.
 
 
 The StockWeb application displays a list of NASDAQ stocks that are retrieved from a simple requestreply service. For this demonstration, each line also shows the unique ID of the Service instance that
-
 returned it.
 
 
@@ -3929,7 +3770,6 @@ There are two factors at play here.
 First, the Kubernetes Service discovery system uses round-robin load balancing by default. The first
 time the DNS server is queried, it will return the first matching IP address for the Service. The next
 time, it will return the next IP address in the list, and so on, until the end. At that point, it loops back to
-
 the start.
 
 
@@ -3955,32 +3795,24 @@ The next chapter, Service meshes, will address this problem.
 ### Service meshes
 
 A service mesh is an infrastructure component that takes control of routing service requests within a
-
 network. Service meshes can handle all kinds of network-level concerns within a Kubernetes cluster,
-
 including:
 
 
   - Service discovery
 
-
   - Load balancing
-
 
   - Fault tolerance
 
-
   - Encryption
 
-
   - Monitoring
-
 
 Kubernetes service meshes work by adding an extra container, called a _sidecar proxy_, to each pod
 included in the mesh. The proxy takes over handling all inbound and outbound network requests. You
 can then keep the configuration and management of networking matters separate from the
 application containers. In many cases, this separation doesn’t require any changes to the application
-
 code.
 
 
@@ -3989,29 +3821,24 @@ single instance of the gRPC service. This happens because the service’s host n
 address, and that IP address is cached for the lifetime of the HttpClientHandler instance. It might be
 possible to work around this behavior by handling DNS lookups manually or creating multiple clients.
 But this workaround would complicate the application code without adding any business or customer
-
 value.
 
 
 When you use a service mesh, the requests from the application container are sent to the sidecar
 proxy. The sidecar proxy can then distribute them intelligently across all instances of the other service.
-
 The mesh can also:
 
 
-  Respond seamlessly to failures of individual instances of a service.
+  - Respond seamlessly to failures of individual instances of a service.
 
+  - Handle retry semantics for failed calls or timeouts.
 
-  Handle retry semantics for failed calls or timeouts.
-
-
-  Reroute failed requests to an alternate instance without returning to the client application.
+  - Reroute failed requests to an alternate instance without returning to the client application.
 
 
 The following screenshot shows the StockWeb application running with the Linkerd service mesh.
 There are no changes to the application code, and the Docker image isn’t being used. The only
 change required was the addition of an annotation to the deployment in the YAML files for the
-
 stockdata and stockweb services.
 
 
@@ -4033,23 +3860,19 @@ Balancing.
 
 Three general-purpose service mesh implementations are currently available for use with Kubernetes:
 [Istio,](https://istio.io/) [Linkerd, and Consul Connect. All three provide request routing/proxying, traffic encryption,](https://linkerd.io/)
-
 resilience, host-to-host authentication, and traffic control.
 
 
 Choosing a service mesh depends on multiple factors:
 
 
-  The organization’s specific requirements around costs, compliance, paid support plans, and so
+  - The organization’s specific requirements around costs, compliance, paid support plans, and so
+on.
 
-     - n.
-
-
-  The nature of the cluster, its size, the number of services deployed, and the volume of traffic
+  - The nature of the cluster, its size, the number of services deployed, and the volume of traffic
 within the cluster network.
 
-
-  Ease of deploying and managing the mesh and using it with services.
+  - Ease of deploying and managing the mesh and using it with services.
 
 #### **Example: Add Linkerd to a deployment**
 
@@ -4062,7 +3885,6 @@ In this example, you’ll learn how to use the Linkerd service mesh with the _St
 
 
 Windows binaries from the section that lists GitHub releases. Be sure to use the most recent _stable_
-
 release and not one of the edge releases.
 
 
@@ -4085,7 +3907,6 @@ linkerd inject stockweb.yml > stockweb-with-mesh.yml
 
 You can inspect the new files to see what changes have been made. For deployment objects, a
 metadata annotation is added to tell Linkerd to inject a sidecar proxy container into the pod when it’s
-
 created.
 
 
@@ -4123,7 +3944,6 @@ A typical deployment of a gRPC application includes a number of identical instan
 providing resilience and horizontal scalability. Load balancing distributes incoming requests across
 these instances to provide full usage of all available resources. To make this load balancing invisible to
 the client, it’s common to use a proxy load balancer server to handle requests from clients and route
-
 them to back-end instances.
 
 
@@ -4135,10 +3955,8 @@ work at the _application_ level, specifically handling HTTP/2 requests for gRPC 
 
 
 An L4 load balancer accepts a TCP connection request from a client, opens another connection to one
-
-- f the back-end instances, and copies data between the two connections with no real processing. L4
-
-- ffers excellent performance and low latency, but with little control or intelligence. As long as the
+of the back-end instances, and copies data between the two connections with no real processing. L4
+offers excellent performance and low latency, but with little control or intelligence. As long as the
 client keeps the connection open, all requests will be directed to the same back-end instance.
 
 
@@ -4156,12 +3974,9 @@ Examples of L7 load balancers:
 
   - [NGINX](https://www.nginx.com/)
 
-
   - [HAProxy](https://www.haproxy.com/)
 
-
   - [Traefik](https://traefik.io/)
-
 
 As a rule of thumb, L7 load balancers are the best choice for gRPC and other HTTP/2 applications (and
 for HTTP applications generally, in fact). L4 load balancers will _work_ with gRPC applications, but
@@ -4187,7 +4002,6 @@ HTTP/2 requests with your back-end services.
 #### **Load balancing within Kubernetes**
 
 See the section on service meshes for a discussion of load balancing across internal services on
-
 Kubernetes.
 
 ### Application Performance Management
@@ -4204,7 +4018,6 @@ _tracing_ data.
 _Logging_ is concerned with text messages that record detailed information about things that have
 happened in the system. Log messages might include exception data, like stack traces, or structured
 data that provide context about the message. Logging output is commonly written to a searchable
-
 text store.
 
 
@@ -4216,11 +4029,9 @@ Here are some examples of metrics data:
 
   - Time taken to process requests.
 
+  - The number of requests per second being handled by an instance of a service.
 
-  The number of requests per second being handled by an instance of a service.
-
-
-  The number of failed requests on an instance.
+  - The number of failed requests on an instance.
 
 #### **Logging in ASP.NET Core gRPC**
 
@@ -4229,7 +4040,6 @@ Here are some examples of metrics data:
 NuGet package. The core parts of this library are included with the Web SDK, so there’s no need to
 install it manually. By default, log messages are written to the standard output (the “console”) and to
 any attached debugger. To write logs to persistent external data stores, you might need to import
-
 [optional logging sink packages.](https://docs.microsoft.com/aspnet/core/fundamentals/logging/#third-party-logging-providers)
 
 
@@ -4259,13 +4069,10 @@ For more information about writing log messages and available logging sinks and 
 
 
 The .NET Core runtime provides a set of components for emitting and observing metrics. These
-
 [include APIs such as the EventSource and EventCounter](https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource) classes. These APIs can emit basic numeric
-
 [data that can be consumed by external processes, like the dotnet-counters global tool, or Event](https://docs.microsoft.com/dotnet/core/diagnostics/dotnet-counters)
 Tracing for Windows. For more information about using EventCounter in your own code, see
-
-EventCounter introduction.
+[EventCounter introduction.](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md)
 
 
 For more advanced metrics and for writing metric data to a wider range of data stores, you might try
@@ -4282,7 +4089,7 @@ automatically generated via integration with the ASP.NET Core framework. The pro
 
 Most metrics platforms support the following types:
 
-|Metrictype|Description|
+|Metric type|Description|
 |---|---|
 |Counter|Tracks how often something happens, such as<br>requests and errors.|
 |Gauge|Records a single value that changes over time,<br>such as active connections.|
@@ -4294,7 +4101,7 @@ Most metrics platforms support the following types:
 99 CHAPTER 7 | gRPC in production
 
 
-|Metrictype|Description|
+|Metric type|Description|
 |---|---|
 |Timer|Tracks the duration of events and the rate at<br>which it occurs, stored as a histogram.|
 
@@ -4310,8 +4117,7 @@ number of Get requests made over time:
 The best way to store metrics data is in a _time-series database_, a specialized data store designed to
 record numerical data series marked with timestamps. The most popular of these databases are
 [Prometheus](https://prometheus.io/) [and InfluxDB. Microsoft Azure also provides dedicated metrics storage through the Azure](https://www.influxdata.com/products/influxdb-overview/)
-
-Monitor service.
+[Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) service.
 
 
 [The current go-to solution for visualizing metrics data is Grafana, which works with a wide range of](https://grafana.com/)
@@ -4406,12 +4212,11 @@ To add your own diagnostics or create explicit spans within your application cod
 
 At the time of writing, the OpenTelemetry project is still in the early stages, and only alpha-quality
 packages are available for .NET applications. The OpenTracing project currently offers more mature
-
 libraries.
 
 
 The OpenTracing API is described in the following section. If you want to use the OpenTelemetry API
-[in your application instead, refer to the OpenTelemetry .NET SDK repository](https://github.com/open-telemetry/opentelemetry-dotnet) - n GitHub.
+[in your application instead, refer to the OpenTelemetry .NET SDK repository](https://github.com/open-telemetry/opentelemetry-dotnet) on GitHub.
 
 
 **Use the OpenTracing package to store distributed trace data**
@@ -4431,7 +4236,6 @@ installing it from NuGet and adding it as a service in your Program class.
 
 The OpenTracing package is an abstraction layer, and as such it requires implementation specific to
 the back end. OpenTracing API implementations are available for the following open source back
-
 ends.
 
 |Name|Package|Website|
@@ -4448,14 +4252,15 @@ ends.
 103 CHAPTER 7 | gRPC in production
 
 
-# CHAPTER 8
+**CHAPTER**
+# 8
 
 ## Appendix A - Transactions
 
+
 Windows Communication Foundation (WCF) supports distributed transactions, allowing you to
 [perform atomic operations across multiple services. This functionality is based on the Microsoft](https://docs.microsoft.com/previous-versions/windows/desktop/ms684146(v=vs.85))
-
-Distributed Transaction Coordinator.
+[Distributed Transaction Coordinator.](https://docs.microsoft.com/previous-versions/windows/desktop/ms684146(v=vs.85))
 
 
 In the newer microservices landscape, this type of automated distributed transaction processing isn’t
@@ -4467,10 +4272,8 @@ languages, and frameworks in use in a single environment.
 [WCF distributed transaction is an implementation of what is known as a two-phase commit (2PC). You](https://en.wikipedia.org/wiki/Two-phase_commit_protocol)
 can implement 2PC transactions manually by coordinating messages across services, creating open
 transactions within each service, and sending commit or rollback messages, depending upon success
-
-- r failure. However, the complexity involved in managing 2PC can increase exponentially as systems
+or failure. However, the complexity involved in managing 2PC can increase exponentially as systems
 evolve. Open transactions hold database locks that can negatively affect performance, or, worse, cause
-
 cross-service deadlocks.
 
 
@@ -4483,13 +4286,11 @@ changes by using a single request or message to that service.
 sequentially; as each update succeeds, the next one is triggered. These triggers can be propagated
 from service to service, or managed by a saga coordinator or orchestrator. If an update fails at any
 point during the process, the services that have already completed their updates apply specific logic
-
 to reverse them.
 
 
 Another option is to use Domain Driven Design (DDD) and Command/Query Responsibility
 [Segregation (CQRS), as described in the .NET Microservices e-book. In particular, using domain events](https://docs.microsoft.com/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/)
-
 [or event sourcing](https://martinfowler.com/eaaDev/EventSourcing.html) can help to ensure that updates are consistently, if not immediately, applied.
 
 

@@ -28,16 +28,14 @@ form or by any means without the written permission of the publisher.
 
 This book is provided “as-is” and expresses the author’s views and opinions. The views, opinions, and
 information expressed in this book, including URL and other Internet website references, may change
-
 without notice.
 
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association
+or connection is intended or should be inferred.
 
-- r connection is intended or should be inferred.
 
-
-[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) - n the “Trademarks” webpage are
+[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) on the “Trademarks” webpage are
 trademarks of the Microsoft group of companies.
 
 
@@ -50,7 +48,7 @@ All other marks and logos are property of their respective owners.
 Authors:
 
 
-**Michael Stonis** [, Mobile Software Architect, Eight-Bot](https://eightbot.com/)
+**[Michael Stonis](https://github.com/michaelstonis)** [, Mobile Software Architect, Eight-Bot](https://eightbot.com/)
 
 
 Reviewers:
@@ -59,17 +57,13 @@ Reviewers:
 **[James Montemagno](https://github.com/jamesmontemagno)**, Principal Lead Program Manager, Microsoft Corp.
 
 
-**David Pine**, Developer Relations, Microsoft Corp.
-
+**[David Pine](https://github.com/IEvangelist)**, Developer Relations, Microsoft Corp.
 ### Acknowledgments
 
 
 This book originated from the excellent Enterprise Application Patterns using Xamarin.Forms eBook by
-
 [David Britch](https://github.com/davidbritch) [and Javier Suarez Ruiz. Without their hard work, detailed information, and excellent](https://github.com/jsuarezruiz)
-
 examples, this book would not be possible.
-
 ### Introduction
 
 
@@ -86,14 +80,12 @@ design patterns. This book covers topics such as the MVVM pattern, dependency in
 configuration, the loose-coupling of components and additional enterprise concerns. The content of
 this book is helpful for anyone looking to build a new application for this business or looking to solve
 the problems of applications that evolve over time.
-
 ### Who should use the book
 
 
 This book is for .NET MAUI developers that are already familiar with the framework, but that are
 looking for guidance on architecture and implementation when building enterprise applications. This
 book can help developers solve common problems using tried and true patterns.
-
 ### How to use the book
 
 
@@ -103,16 +95,13 @@ considerations. The book, along with its sample app, can also serve as a startin
 creating a new enterprise app. Use the associated sample app as a template for the new app, or to see
 how to organize an app’s component parts. Then, refer back to this guide for architectural guidance.
 [You can find the sample app on GitHub.](https://github.com/dotnet/eshop)
-
 ### What this book doesn’t cover
 
 
 This book is aimed at readers who are already familiar with .NET MAUI. It does cover some concepts
-
-- f .NET MAUI to help better illustrate the topic, but it does not cover most controls and concepts in
+of .NET MAUI to help better illustrate the topic, but it does not cover most controls and concepts in
 [any detail. For general guidance on building a new .NET MAUI app, please refer to the Building your](https://docs.microsoft.com/dotnet/maui/get-started/first-app)
 [first app](https://docs.microsoft.com/dotnet/maui/get-started/first-app) guide in the .NET MAUI documentation.
-
 #### **Additional resources**
 
 
@@ -477,9 +466,11 @@ Summary ........................................................................
 iv Contents
 
 
-# CHAPTER 1
+**CHAPTER**
+# 1
 
 ## Purpose
+
 
 This eBook provides guidance on building cross-platform enterprise apps using .NET MAUI. .NET
 MAUI is a cross-platform UI toolkit that allows developers to easily create native user interface layouts
@@ -506,7 +497,6 @@ those who wish to avoid deploying the containerized microservices.
 
 
 This guide is aimed at readers who are already familiar with .NET MAUI. For a detailed introduction to
-
 [.NET MAUI, see the .NET MAUI documentation.](https://docs.microsoft.com/dotnet/maui/)
 
 ### Who should use this guide
@@ -541,20 +531,20 @@ patterns and practices.
 2 CHAPTER 1 | Purpose
 
 
-# CHAPTER 2
+**CHAPTER**
+# 2
 
 ## Introduction to .NET MAUI
+
 
 Regardless of platform, developers of enterprise apps face several challenges:
 
 
   - App requirements that can change over time.
 
-
   - New business opportunities and challenges.
 
-
-  Ongoing feedback during development that can significantly affect the scope and
+  - Ongoing feedback during development that can significantly affect the scope and
 requirements of the app.
 
 
@@ -566,8 +556,7 @@ the app.
 
 Many enterprise apps are sufficiently complex to require more than one developer. It can be a
 significant challenge to decide how to design an app so that multiple developers can work effectively
-
-- n different pieces of the app independently, while ensuring that the pieces come together seamlessly
+on different pieces of the app independently, while ensuring that the pieces come together seamlessly
 when integrated into the app.
 
 
@@ -580,21 +569,18 @@ difficult to add new features or to replace existing features.
 
 An effective remedy for these challenges is to partition an app into discrete, loosely coupled
 components that can be easily integrated together into an app. Such an approach offers several
-
 benefits:
 
 
-  It allows individual functionality to be developed, tested, extended, and maintained by
+  - It allows individual functionality to be developed, tested, extended, and maintained by
 different individuals or teams.
 
-
-  It promotes reuse and a clean separation of concerns between the app’s horizontal
+  - It promotes reuse and a clean separation of concerns between the app’s horizontal
 capabilities, such as authentication and data access, and the vertical capabilities, such as app
 specific business functionality. This allows the dependencies and interactions between app
 components to be more easily managed.
 
-
-  It helps maintain a separation of roles by allowing different individuals, or teams, to focus on
+  - It helps maintain a separation of roles by allowing different individuals, or teams, to focus on
 a specific task or piece of functionality according to their expertise. In particular, it provides a
 cleaner separation between the user interface and the app’s business logic.
 
@@ -606,41 +592,34 @@ coupled components. These include:
 3 CHAPTER 2 | Introduction to .NET MAUI
 
 
-  Deciding how to provide a clean separation of concerns between the user interface controls
+  - Deciding how to provide a clean separation of concerns between the user interface controls
 and their logic. One of the most important decisions when creating a .NET MAUI enterprise
 app is whether to place business logic in code-behind files, or whether to create a clean
 separation of concerns between the user interface controls and their logic, in order to make
 the app more maintainable and testable. For more information, see Model-View-ViewModel.
-
 
   - Determining whether to use a dependency injection container. Dependency injection
 containers reduce the dependency coupling between objects by providing a facility to
 construct instances of classes with their dependencies injected, and manage their lifetime
 based on the configuration of the container. For more information, see Dependency injection.
 
-
-  Choosing between platform provided eventing and loosely coupled message-based
+  - Choosing between platform provided eventing and loosely coupled message-based
 communication between components that are inconvenient to link by object and type
 references. For more information, see Introduction to Communicating between loosely
 coupled components.
 
-
   - Deciding how to navigate between pages, including how to invoke navigation, and where
 navigation logic should reside. For more information, see Navigation.
 
-
-  Determining how to validate user input for correctness. The decision must include how to
+  - Determining how to validate user input for correctness. The decision must include how to
 validate user input, and how to notify the user about validation errors. For more information,
 see Validation.
 
-
-  Deciding how to perform authentication, and how to protect resources with authorization. For
+  - Deciding how to perform authentication, and how to protect resources with authorization. For
 more information, see Authentication and authorization.
 
-
-  Determining how to access remote data from web services, including how to reliably retrieve
+  - Determining how to access remote data from web services, including how to reliably retrieve
 data, and how to cache data. For more information, see Accessing remote data.
-
 
   - Deciding how to test the app. For more information, see Unit testing.
 
@@ -660,20 +639,15 @@ functionality:
 
   - Authenticating and authorizing against a backend service.
 
-
-  Browsing a catalog of items.
-
+  - Browsing a catalog of items.
 
   - Filtering the catalog.
 
-
-  Ordering items from the catalog.
-
+  - Ordering items from the catalog.
 
   - Viewing the user’s order history.
 
-
-  Configuration of settings.
+  - Configuration of settings.
 
 
 4 CHAPTER 2 | Introduction to .NET MAUI
@@ -689,11 +663,9 @@ The sample application ships with:
 
   - .NET Aspire App Hosting & Orchestration
 
-
   - An Blazor web application developed with ASP.NET Core.
 
-
-  A multi-platform app developed with .NET MAUI, which supports iOS, Android, macOS via
+  - A multi-platform app developed with .NET MAUI, which supports iOS, Android, macOS via
 Mac Catalyst, and Windows.
 
 
@@ -702,15 +674,11 @@ The sample application includes the following backend services:
 
   - An identity microservice, which uses ASP.NET Core Identity and IdentityServer.
 
-
   - A catalog microservice, which is a data-driven create, read, update, delete (CRUD) service that
 consumes an SQL Server database using EntityFramework Core.
 
-
   - An ordering microservice, which is a domain-driven service that uses domain-driven design
-
 patterns.
-
 
   - A basket microservice, which is a data-driven CRUD service that uses Redis Cache.
 
@@ -718,9 +686,7 @@ patterns.
 These backend services are implemented as microservices using ASP.NET Core, and are deployed as
 unique containers with .NET Aspire. Collectively, these backend services are referred to as the eShop
 reference application. Client apps communicate with the backend services through a Representational
-
 State Transfer (REST) web interface. For more information about microservices and conainers, see
-
 Containerized microservices.
 
 
@@ -747,33 +713,23 @@ The eShop multi-platform app exercises the following .NET MAUI functionality:
 
   - XAML
 
-
   - Controls
-
 
   - Bindings
 
-
   - Converters
-
 
   - Styles
 
-
   - Animations
-
 
   - Commands
 
-
   - Behaviors
-
 
   - Triggers
 
-
   - Effects
-
 
   - Custom Controls
 
@@ -789,8 +745,7 @@ In addition, unit tests are provided for some of the classes in the eShop multi-
 The eShop multi-platform app solution organizes the source code and other resources into a multiple
 projects. All of the core mobile components are contained in a singular project named
 eShopContainers. This is a feature introduced with .NET 6 that allows a project to target multiple
-
-- utputs which helps eliminate the need for multiple platform projects that we would have used in
+outputs which helps eliminate the need for multiple platform projects that we would have used in
 Xamarin.Forms and earlier .NET versions. An additional project is included for unit testing.
 
 
@@ -806,7 +761,6 @@ component in another project is a potential candidate for separation. These proj
 
 All of the projects use folders to organize the source code and other resources into categories. The
 classes from the eShop multi-platform app can be re-used in any .NET MAUI app with little or no
-
 modification.
 
 ### eShop project
@@ -844,9 +798,7 @@ The eShop project contains the following folders:
 Microsoft’s cross-platform multi-platform app development tools and platforms provide a
 comprehensive solution for B2E, B2B, and B2C mobile client apps, providing the ability to share code
 across all target platforms (iOS, macOS, Android, and Windows) and helping to lower the total cost of
-
-- wnership. Apps can share their user interface and app logic code, while retaining the native platform
-
+ownership. Apps can share their user interface and app logic code, while retaining the native platform
 look and feel.
 
 
@@ -859,16 +811,17 @@ discrete, loosely coupled components that can be easily integrated together into
 8 CHAPTER 2 | Introduction to .NET MAUI
 
 
-# CHAPTER 3
+**CHAPTER**
+# 3
 
 ## Model-View-ViewModel (MVVM)
+
 
 The .NET MAUI developer experience typically involves creating a user interface in XAML, and then
 adding code-behind that operates on the user interface. Complex maintenance issues can arise as
 apps are modified and grow in size and scope. These issues include the tight coupling between the UI
 controls and the business logic, which increases the cost of making UI modifications, and the difficulty
-
-- f unit testing such code.
+of unit testing such code.
 
 
 The MVVM pattern helps cleanly separate an application’s business and presentation logic from its
@@ -882,17 +835,13 @@ collaborate more easily when developing their respective parts of an app.
 
 There are three core components in the MVVM pattern: the model, the view, and the view model.
 Each serves a distinct purpose. The diagram below shows the relationships between the three
-
 components.
 
 
 In addition to understanding the responsibilities of each component, it’s also important to understand
 how they interact. At a high level, the view “knows about” the view model, and the view model “knows
-
 about” the model, but the model is unaware of the view model, and the view model is unaware of the
-
 view. Therefore, the view model isolates the view from the model, and allows the model to evolve
-
 independently of the view.
 
 
@@ -902,20 +851,17 @@ The benefits of using the MVVM pattern are as follows:
 9 CHAPTER 3 | Model-View-ViewModel (MVVM)
 
 
-  If an existing model implementation encapsulates existing business logic, it can be difficult or
+  - If an existing model implementation encapsulates existing business logic, it can be difficult or
 risky to change it. In this scenario, the view model acts as an adapter for the model classes
 and prevents you from making major changes to the model code.
 
-
-  Developers can create unit tests for the view model and the model, without using the view.
+  - Developers can create unit tests for the view model and the model, without using the view.
 The unit tests for the view model can exercise exactly the same functionality as used by the
 view.
-
 
   - The app UI can be redesigned without touching the view model and model code, provided
 that the view is implemented entirely in XAML or C#. Therefore, a new version of the view
 should work with the existing view model.
-
 
   - Designers and developers can work independently and concurrently on their components
 during development. Designers can focus on the view, while developers can work on the view
@@ -948,22 +894,17 @@ code-behind, and is designed to bind to a specific view model type.
 
 Ensure that the view models are responsible for defining logical state changes that affect some
 aspects of the view’s display, such as whether a command is available, or an indication that an
-
-- peration is pending. Therefore, enable and disable UI elements by binding to view model properties,
+operation is pending. Therefore, enable and disable UI elements by binding to view model properties,
 rather than enabling and disabling them in code-behind.
 
 
 There are several options for executing code on the view model in response to interactions on the
 view, such as a button click or item selection. If a control supports commands, the control’s Command
 property can be data-bound to an ICommand property on the view model. When the control’s
-
 command is invoked, the code in the view model will be executed. In addition to commands,
-
 behaviors can be attached to an object in the view and can listen for either a command to be invoked
-
-- r the event to be raised. In response, the behavior can then invoke an ICommand on the view model
-
-- r a method on the view model.
+or the event to be raised. In response, the behavior can then invoke an ICommand on the view model
+or a method on the view model.
 
 
 10 CHAPTER 3 | Model-View-ViewModel (MVVM)
@@ -1094,7 +1035,6 @@ and set as the view’s BindingContext.
 
 This declarative construction and assignment of the view model by the view has the advantage that
 it’s simple, but has the disadvantage that it requires a default (parameter-less) constructor in the view
-
 model.
 
 ### Creating a view model programmatically
@@ -1125,38 +1065,32 @@ App’s should be architected for the correct use of property change notificatio
 following requirements:
 
 
-  Always raising a PropertyChanged event if a public property’s value changes. Do not assume
+  - Always raising a PropertyChanged event if a public property’s value changes. Do not assume
 that raising the PropertyChanged event can be ignored because of knowledge of how XAML
 binding occurs.
 
-
-  Always raising a PropertyChanged event for any calculated properties whose values are used
+  - Always raising a PropertyChanged event for any calculated properties whose values are used
 by other properties in the view model or model.
 
-
-  Always raising the PropertyChanged event at the end of the method that makes a property
+  - Always raising the PropertyChanged event at the end of the method that makes a property
 change, or when the object is known to be in a safe state. Raising the event interrupts the
 
 
 13 CHAPTER 3 | Model-View-ViewModel (MVVM)
 
 
-    - peration by invoking the event’s handlers synchronously. If this happens in the middle of an
-
-     - peration, it might expose the object to callback functions when it is in an unsafe, partially
+operation by invoking the event’s handlers synchronously. If this happens in the middle of an
+operation, it might expose the object to callback functions when it is in an unsafe, partially
 updated state. In addition, it’s possible for cascading changes to be triggered by
 PropertyChanged events. Cascading changes generally require updates to be complete before
 the cascading change is safe to execute.
 
-
-  Never raising a PropertyChanged event if the property does not change. This means that you
+  - Never raising a PropertyChanged event if the property does not change. This means that you
 must compare the old and new values before raising the PropertyChanged event.
 
-
-  Never raising the PropertyChanged event during a view model’s constructor if you are
+  - Never raising the PropertyChanged event during a view model’s constructor if you are
 initializing a property. Data-bound controls in the view will not have subscribed to receive
 change notifications at this point.
-
 
   - Never raising more than one PropertyChanged event with the same property name argument
 within a single synchronous invocation of a public method of a class. For example, given a
@@ -1204,15 +1138,12 @@ commands, navigation helpers, dependency injection/service locator components, a
 integration. While it is not necessary to use these frameworks, they can speed up and standardize
 [your development. The eShop multi-platform app uses the .NET Community MVVM Toolkit. When](https://docs.microsoft.com/dotnet/communitytoolkit/mvvm/introduction)
 choosing a framework, you should consider your application’s needs and your team’s strengths. The
-
 list below includes some of the more common MVVM frameworks for .NET MAUI.
 
 
   - [.NET Community MVVM Toolkit](https://docs.microsoft.com/dotnet/communitytoolkit/mvvm/introduction/)
 
-
   - [ReactiveUI](https://www.reactiveui.net/)
-
 
   - [Prism Library](https://prismlibrary.com/)
 
@@ -1222,7 +1153,6 @@ list below includes some of the more common MVVM frameworks for .NET MAUI.
 In multi-platform apps, actions are typically invoked in response to a user action, such as a button
 click, that can be implemented by creating an event handler in the code-behind file. However, in the
 MVVM pattern, the responsibility for implementing the action lies with the view model, and placing
-
 code in the code-behind should be avoided.
 
 
@@ -1231,7 +1161,6 @@ They encapsulate the code that implements the action and help to keep it decoupl
 representation in the view. This way, your view models become more portable to new platforms, as
 they do not have a direct dependency on events provided by the platform’s UI framework. .NET MAUI
 includes controls that can be declaratively connected to a command, and these controls will invoke
-
 the command when the user interacts with the control.
 
 
@@ -1239,8 +1168,7 @@ Behaviors also allow controls to be declaratively connected to a command. Howeve
 used to invoke an action that’s associated with a range of events raised by a control. Therefore,
 behaviors address many of the same scenarios as command-enabled controls, while providing a
 greater degree of flexibility and control. In addition, behaviors can also be used to associate command
-
-- bjects or methods with controls that were not specifically designed to interact with commands.
+objects or methods with controls that were not specifically designed to interact with commands.
 
 
 15 CHAPTER 3 | Model-View-ViewModel (MVVM)
@@ -1252,7 +1180,6 @@ View models typically expose public properties, for binding from the view, which
 ICommand interface. Many .NET MAUI controls and gestures provide a Command property, which can
 be data bound to an ICommand object provided by the view model. The button control is one of the
 most commonly used controls, providing a command property that executes when the button is
-
 clicked.
 
 
@@ -1260,9 +1187,7 @@ clicked.
 
 
 The ICommand interface defines an Execute method, which encapsulates the operation itself, a
-
 CanExecute method, which indicates whether the command can be invoked, and a
-
 CanExecuteChanged event that occurs when changes occur that affect whether the command should
 execute. In most cases, we will only supply the Execute method for our commands. For a more
 [detailed overview of ICommand, refer to the Commanding](https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/commanding) documentation for .NET MAUI.
@@ -1271,7 +1196,6 @@ execute. In most cases, we will only supply the Execute method for our commands.
 Provided with .NET MAUI are the Command and Command<T> classes that implement the
 ICommand interface, where T is the type of the arguments to Execute and CanExecute. Command and
 Command<T> are basic implementations that provide the minimal set of functionality needed for the
-
 ICommand interface.
 
 
@@ -1282,7 +1206,6 @@ ICommand interface.
 
 The Command or Command<T> constructor requires an Action callback object that’s called when the
 ICommand.Execute method is invoked. The CanExecute method is an optional constructor parameter,
-
 and is a Func that returns a bool.
 
 
@@ -1356,15 +1279,12 @@ MVVM, behaviors are a useful approach for connecting controls to commands.
 
 A behavior that’s attached to a control through attached properties is known as an _attached behavior_ .
 The behavior can then use the exposed API of the element to which it is attached to add functionality
-
 to that control, or other controls, in the visual tree of the view.
 
 
 A .NET MAUI behavior is a class that derives from the Behavior or Behavior<T> class, where T is the
-
 type of the control to which the behavior should apply. These classes provide OnAttachedTo and
 OnDetachingFrom methods, which should be overridden to provide logic that will be executed when
-
 the behavior is attached to and detached from controls.
 
 
@@ -1380,8 +1300,7 @@ BindingContext.
 
 [The eShop multi-platform app includes an EventToCommandBehavior](https://docs.microsoft.com/dotnet/communitytoolkit/maui/behaviors/event-to-command-behavior) class which is provided by the
 MAUI Community toolkit. EventToCommandBehavior executes a command in response to an event
-
-- ccurring. This class derives from the BaseBehavior<View> class so that the behavior can bind to and
+occurring. This class derives from the BaseBehavior<View> class so that the behavior can bind to and
 execute an ICommand specified by a Command property when the behavior is consumed. The
 following code example shows the EventToCommandBehavior class:
 
@@ -1417,7 +1336,7 @@ needed, the EventArgsConverter property can be used to convert the EventArgs pro
 into a value that the command expects as input.
 
 
-[For more information about behaviors, see Behaviors](https://docs.microsoft.com/dotnet/maui/fundamentals/behaviors) - n the .NET MAUI Developer Center.
+[For more information about behaviors, see Behaviors](https://docs.microsoft.com/dotnet/maui/fundamentals/behaviors) on the .NET MAUI Developer Center.
 
 ### Summary
 
@@ -1427,7 +1346,6 @@ presentation logic from its user interface (UI). Maintaining a clean separation 
 logic and the UI helps address numerous development issues and makes an application easier to test,
 maintain, and evolve. It can also significantly improve code re-use opportunities and allows
 developers and UI designers to collaborate more easily when developing their respective parts of an
-
 app.
 
 
@@ -1440,9 +1358,11 @@ business logic and data.
 20 CHAPTER 3 | Model-View-ViewModel (MVVM)
 
 
-# CHAPTER 4
+**CHAPTER**
+# 4
 
 ## Dependency injection
+
 
 Typically, a class constructor is invoked when instantiating an object, and any values that the object
 needs are passed as arguments to the constructor. This is an example of dependency injection known
@@ -1488,17 +1408,13 @@ dependencies have not yet been created, the container creates and resolves their
 There are several advantages to using a dependency injection container:
 
 
-  A container removes the need for a class to locate its dependencies and manage its lifetimes.
+  - A container removes the need for a class to locate its dependencies and manage its lifetimes.
 
+  - A container allows the mapping of implemented dependencies without affecting the class.
 
-  A container allows the mapping of implemented dependencies without affecting the class.
-
-
-  A container facilitates testability by allowing dependencies to be mocked.
-
+  - A container facilitates testability by allowing dependencies to be mocked.
 
   - A container increases maintainability by allowing new classes to be easily added to the app.
-
 
 In the context of a .NET MAUI app that uses MVVM, a dependency injection container will typically be
 used for registering and resolving views, registering and resolving view models, and for registering
@@ -1522,20 +1438,17 @@ dependency injection container when the MauiAppBuilder.Build method is called.
 
 
 At runtime, the container must know which implementation of the services are being requested in
-
-- rder to instantiate them for the requested objects. In the eShop multi-platform app, the
+order to instantiate them for the requested objects. In the eShop multi-platform app, the
 IAppEnvironmentService, IDialogService, INavigationService, and ISettingsService interfaces need to
 be resolved before it can instantiate a ProfileViewModel object. This involves the container performing
 the following actions:
 
 
-  Deciding how to instantiate an object that implements the interface. This is known as
+  - Deciding how to instantiate an object that implements the interface. This is known as
 _registration_ .
 
-
-  Instantiating the object that implements the required interface and the ProfileViewModel
-
-    - bject. This is known as _resolution_ .
+  - Instantiating the object that implements the required interface and the ProfileViewModel
+object. This is known as _resolution_ .
 
 
 Eventually, the app will finish using the ProfileViewModel object, and it will become available for
@@ -1558,7 +1471,6 @@ There are two ways of registering types and objects in the container through cod
 
   - Register a type or mapping with the container. This is known as transient registration. When
 required, the container will build an instance of the specified type.
-
 
   - Register an existing object in the container as a singleton. When required, the container will
 return a reference to the existing object.
@@ -1584,8 +1496,7 @@ RegisterViewModels method:
 
 
 This method receives an instance of MauiAppBuilder, and we can use the Services property to register
-
-- ur view models. Depending on the needs of your application, you may need to add services with
+our view models. Depending on the needs of your application, you may need to add services with
 different lifetimes. The following table provides information on when you may want to choose these
 different registration lifetimes:
 
@@ -1615,8 +1526,7 @@ ISettingsService interface using the SettingsService implementation:
 
 
 Once all services have been registered, the MauiAppBuilder.Build method should be called to create
-
-- ur MauiApp and populate our dependency injection container with all the registered services.
+our MauiApp and populate our dependency injection container with all the registered services.
 
 
 24 CHAPTER 4 | Dependency injection
@@ -1626,7 +1536,6 @@ Once all services have been registered, the MauiAppBuilder.Build method should b
 
 After a type is registered, it can be resolved or injected as a dependency. When a type is being
 resolved, and the container needs to create a new instance, it injects any dependencies into the
-
 instance.
 
 
@@ -1635,11 +1544,9 @@ Generally, when a type is resolved, one of three things happens:
 
 1. If the type hasn’t been registered, the container throws an exception.
 
-
 2. If the type has been registered as a singleton, the container returns the singleton instance. If
 this is the first time the type is called for, the container creates it if required and maintains a
 reference to it.
-
 
 3. If the type has been registered as transient, the container returns a new instance and doesn’t
 maintain a reference to it.
@@ -1694,9 +1601,11 @@ into constructors of objects it resolves.
 26 CHAPTER 4 | Dependency injection
 
 
-# CHAPTER 5
+**CHAPTER**
+# 5
 
 ## Communicating between loosely coupled components
+
 
 The publish-subscribe pattern is a messaging pattern in which publishers send messages without
 knowing any receivers, known as subscribers. Similarly, subscribers listen for specific messages,
@@ -1710,8 +1619,7 @@ references to each other, and the subscriber type must have a reference to the p
 can create memory management issues, especially when there are short-lived objects that subscribe
 to an event of a static or long-lived object. If the event handler isn’t removed, the subscriber will be
 kept alive by the reference to it in the publisher, and this will prevent or delay the garbage collection
-
-- f the subscriber.
+of the subscriber.
 
 ### Introduction to MVVM Toolkit Messenger
 
@@ -1763,11 +1671,10 @@ is executing on, with subscribers receiving the message on the same thread.
 
 
 If a message that’s sent from a background thread is required to update the UI, process the message
+on the UI thread in the subscriber by invoking the MainThread.BeginInvokeOnMainThread method.
 
-- n the UI thread in the subscriber by invoking the MainThread.BeginInvokeOnMainThread method.
 
-
-[For more information about Messenger, see Messenger](https://docs.microsoft.com/dotnet/communitytoolkit/mvvm/messenger) - n the Microsoft Developer Center.
+[For more information about Messenger, see Messenger](https://docs.microsoft.com/dotnet/communitytoolkit/mvvm/messenger) on the Microsoft Developer Center.
 
 ### Defining a message
 
@@ -1798,7 +1705,6 @@ WeakReferenceMessenger.Default.Send( new Messages.AddProductMessage(BadgeCount))
 In this example, the Send method specifies provides a new instance of the AddProductMessage object
 for downstream subscribers to receive. An additional second token parameter can be added to use
 when multiple different subscribers need to receive messages of the same type without receiving the
-
 wrong message.
 
 
@@ -1833,8 +1739,7 @@ payload data should be immutable to avoid concurrency errors.
 
 
 Subscribers can unsubscribe from messages they no longer want to receive. This is achieved with one
-
-- f the IMessenger.Unregister overloads, as demonstrated in the following code example:
+of the IMessenger.Unregister overloads, as demonstrated in the following code example:
 
 ```
 WeakReferenceMessenger.Default.Unregister<Messages.AddProductMessage>( this );
@@ -1862,9 +1767,11 @@ components to be independently developed and tested.
 31 CHAPTER 5 | Communicating between loosely coupled components
 
 
-# CHAPTER 6
+**CHAPTER**
+# 6
 
 ## Navigation
+
 
 .NET MAUI includes support for page navigation, which typically results from the user’s interaction
 with the UI or from the app itself as a result of internal logic-driven state changes. However,
@@ -1872,9 +1779,8 @@ navigation can be complex to implement in apps that use the Model-View-ViewModel
 pattern, as the following challenges must be met:
 
 
-  Identifying the view to be navigated to using an approach that does not introduce tight
+  - Identifying the view to be navigated to using an approach that does not introduce tight
 coupling and dependencies between views.
-
 
   - Coordinating the process by which the view to be navigated to is instantiated and initialized.
 When using MVVM, the view and view-model need to be instantiated and associated with
@@ -1882,15 +1788,13 @@ each other via the view’s binding context. When an app is using a dependency i
 container, the instantiation of views and view-models might require a specific construction
 mechanism.
 
-
-  Whether to perform view-first navigation, or view-model-first navigation. With view-first
+  - Whether to perform view-first navigation, or view-model-first navigation. With view-first
 navigation, the page to navigate to refers to the name of the view type. During navigation,
 the specified view is instantiated, along with its corresponding view-model and other
 dependent services. An alternative approach is to use view-model-first navigation, where the
 page to navigate to refers to the name of the view-model type.
 
-
-  Determining how to cleanly separate the navigational behavior of the app across the views
+  - Determining how to cleanly separate the navigational behavior of the app across the views
 and view-models. The MVVM pattern separates the app’s UI and its presentation and business
 logic, but it doesn’t provide a direct mechanism for tying them together. However, the
 navigation behavior of an app will often span the UI and presentation parts of the app. The
@@ -1898,13 +1802,11 @@ user will often initiate navigation from a view, and the view will be replaced a
 navigation. However, navigation might often also need to be initiated or coordinated from
 within the view-model.
 
-
-  Determining how to pass parameters during navigation for initialization purposes. For
+  - Determining how to pass parameters during navigation for initialization purposes. For
 example, if the user navigates to a view to update order details, the order data will have to be
 passed to the view so that it can display the correct data.
 
-
-  Coordinating navigation to ensure that specific business rules are obeyed. For example, users
+  - Coordinating navigation to ensure that specific business rules are obeyed. For example, users
 might be prompted before navigating away from a view so that they can correct any invalid
 data or be prompted to submit or discard any data changes that were made within the view.
 
@@ -1983,13 +1885,11 @@ public AppShell(INavigationService navigationService)
 ```
 
 This returns a reference to the MauiNavigationService object that’s stored in the dependency injection
-
 container.
 
 
 The ViewModelBase class stores the MauiNavigationService instance in a NavigationService property,
-
-- f type INavigationService. Therefore, all view-model classes, which derive from the ViewModelBase
+of type INavigationService. Therefore, all view-model classes, which derive from the ViewModelBase
 class, can use the NavigationService property to access the methods specified by the
 INavigationService interface.
 
@@ -2000,7 +1900,7 @@ INavigationService interface.
 with the NavigationPage class, which implements a hierarchical navigation experience in which the
 user can navigate through pages, forward and backward, as desired. The eShop app uses the Shell
 component as the root container for the application and as a navigation host. For more information
-[about Shell navigation, see Shell Navigation](https://docs.microsoft.com/dotnet/maui/fundamentals/shell/navigation) - n the Microsoft Developer Center.
+[about Shell navigation, see Shell Navigation](https://docs.microsoft.com/dotnet/maui/fundamentals/shell/navigation) on the Microsoft Developer Center.
 
 
 Navigation is performed inside view-model classes by invoking one of the NavigateToAsync methods,
@@ -2036,7 +1936,6 @@ XAML or in the code-behind. The following example shows registration of routes v
 
 In this example, the ShellContent and TabBar user interface objects are setting their Route property.
 This is the preferred method of registering routes for user interface objects that are controlled by a
-
 Shell.
 
 
@@ -2064,7 +1963,6 @@ When the app is launched, a Shell object is set as the root view of the applicat
 will be used to control route registration and will be present at the root of our application going
 forward. Once the Shell has been created, we can wait for it to be attached to the application using
 the OnParentSet method to initialize our navigation route. The following code example shows this
-
 method:
 
 
@@ -2073,7 +1971,6 @@ dependency injection and invokes its InitializeAsync method.
 
 
 The following code example shows the implementation of the MauiNavigationService.InitializeAsync
-
 method:
 
 
@@ -2105,10 +2002,8 @@ from the navigation service as shown in the code example below.
 
 The QueryProperty attribute allows us to provide a parameter for a property to map values to and a
 key to find values from the query parameters dictionary. In this example, the key “OrderNumber” and
-
-- rder number value were provided during the NavigateToAsync call. The view-model found the
+order number value were provided during the NavigateToAsync call. The view-model found the
 “OrderNumber” key and mapped the value to the OrderNumber property. The OrderNumber property
-
 can then be used at a later time to retrieve the full order details from the OrderService instance.
 
 ### Invoking navigation using behaviors
@@ -2164,15 +2059,16 @@ control navigation to ensure that certain business rules are enforced.
 38 CHAPTER 6 | Navigation
 
 
-# CHAPTER 7
+**CHAPTER**
+# 7
 
 ## Validation
+
 
 Any app that accepts input from users should ensure that the input is valid. An app could, for
 example, check for input that contains only characters in a particular range, is of a certain length, or
 matches a particular format. Without validation, a user can supply data that causes the app to fail.
 Proper validation enforces business rules and could help to prevent an attacker from injecting
-
 malicious data.
 
 
@@ -2201,7 +2097,6 @@ ValidatableObject<T>:
 
 Property change notification is provided by the ObservableObject class, and so an Entry control can
 bind to the IsValid property of ValidatableObject<T> instance in the view model class to be notified of
-
 whether or not the entered data is valid.
 
 ### Specifying validation rules
@@ -2225,8 +2120,7 @@ mock services in the eShop multi-platform app:
 
 
 The Check method returns a boolean indicating whether the value argument is null, empty, or consists
-
-- nly of whitespace characters.
+only of whitespace characters.
 
 
 Although not used by the eShop multi-platform app, the following code example shows a validation
@@ -2294,9 +2188,7 @@ The following code example demonstrates how this occurs:
 
 
 The Entry control binds to the UserName.Value property of the ValidatableObject<T> instance, and
-
 the control’s Behaviors collection has an EventToCommandBehavior instance added to it. This
-
 behavior executes the ValidateUserNameCommand in response to the TextChanged event firing on
 the Entry, which is raised when the text in the Entry changes. In turn, the ValidateUserNameCommand
 delegate executes the ValidateUserName method, which executes the Validate method on the
@@ -2316,7 +2208,6 @@ that contains the invalid data with a red background, and by displaying an error
 the user why the data is invalid below the control containing the invalid data. When the invalid data is
 corrected, the background changes back to the default state and the error message is removed. The
 image below shows the LoginView in the eShop multi-platform app when validation errors are
-
 present.
 
 #### **Highlighting a control that contains invalid data**
@@ -2356,7 +2247,6 @@ Trigger condition is no longer met, the control will revert the properties set b
 
 The UI displays validation error messages in Label controls below each control whose data failed
 validation. The following code example shows the Label that displays a validation error message, if the
-
 user has not entered a valid username:
 
 
@@ -2379,16 +2269,17 @@ invoked from the view model by calling the Validate method of the ValidatableObj
 which retrieves the validation rules and executes them against the ValidatableObject<T> Value
 property. Any validation errors are placed into the Errors property of the ValidatableObject<T>
 instance, and the IsValid property of the ValidatableObject<T> instance is updated to indicate
-
 whether validation succeeded or failed.
 
 
 45 CHAPTER 7 | Validation
 
 
-# CHAPTER 8
+**CHAPTER**
+# 8
 
 ## Application settings management
+
 
 Settings allow the separation of data that configures the behavior of an app from the code, allowing
 the behavior to be changed without rebuilding the app. There are two types of settings: app settings
@@ -2441,8 +2332,7 @@ AuthTokenAccess and UseMocks properties:
 
 
 Each setting consists of a private key, a private default value, and a public property. The key is always
-a const string that defines a unique name, with the default value for the setting being a static read
-- nly or constant value of the required type. Providing a default value ensures that a valid value is
+a const string that defines a unique name, with the default value for the setting being a static readonly or constant value of the required type. Providing a default value ensures that a valid value is
 available if an unset setting is retrieved. This service implementation can be provided via dependency
 injection to our application for use in view-models or other services throughout the application.
 
@@ -2481,7 +2371,6 @@ This Entry control binds to the IdentityEndpoint property of the SettingsViewMod
 
 When the IdentityEndpoint property is set, the UpdateIdentityEndpoint method is called, provided
 that the supplied value is valid. The following code example shows the UpdateIdentityEndpoint
-
 method:
 
 
@@ -2505,17 +2394,18 @@ approach for persisting and retrieving app and user settings.
 49 CHAPTER 8 | Application settings management
 
 
-# CHAPTER 9
+**CHAPTER**
+# 9
 
 ## Containerized microservices
+
 
 Developing client-server applications has resulted in a focus on building tiered applications that use
 specific technologies in each tier. Such applications are often referred to as _monolithic_ and are
 packaged onto hardware pre-scaled for peak loads. The main drawbacks of this development
 approach are the tight coupling between components within each tier, that individual components
 can’t be easily scaled, and the cost of testing. A simple update can have unforeseen effects on the rest
-
-- f the tier, so a change to an application component requires its entire tier to be retested and
+of the tier, so a change to an application component requires its entire tier to be retested and
 redeployed.
 
 
@@ -2570,7 +2460,6 @@ where only a subset of instances of a single microservice will update at any giv
 problem is detected, a buggy update can be rolled back, before all instances update with the faulty
 code or configuration. Similarly, microservices typically use schema versioning, so that clients see a
 consistent version when updates are being applied, regardless of which microservice instance is being
-
 communicated with.
 
 
@@ -2579,9 +2468,7 @@ Therefore, microservice applications have many benefits over monolithic applicat
 
   - Each microservice is relatively small, easy to manage and evolve.
 
-
-  Each microservice can be developed and deployed independently of other services.
-
+  - Each microservice can be developed and deployed independently of other services.
 
   - Each microservice can be scaled-out independently. For example, a catalog service or
 shopping basket service might need to be scaled-out more than an ordering service.
@@ -2591,13 +2478,10 @@ shopping basket service might need to be scaled-out more than an ordering servic
 
 
 Therefore, the resulting infrastructure will more efficiently consume resources when scaling
+out.
 
-     - ut.
-
-
-  Each microservice isolates any issues. For example, if there is an issue in a service it only
+  - Each microservice isolates any issues. For example, if there is an issue in a service it only
 impacts that service. The other services can continue to handle requests.
-
 
   - Each microservice can use the latest technologies. Because microservices are autonomous and
 run side-by-side, the latest technologies and frameworks can be used, rather than being
@@ -2611,21 +2495,16 @@ However, a microservice-based solution also has potential drawbacks:
 microservice has to be completely autonomous, end-to-end, including responsibility for its
 data sources.
 
-
   - Developers must implement inter-service communication, which adds complexity and latency
 to the application.
 
-
-  Atomic transactions between multiple microservices usually aren’t possible. Therefore,
+  - Atomic transactions between multiple microservices usually aren’t possible. Therefore,
 business requirements must embrace eventual consistency between microservices.
-
 
   - In production, there is an operational complexity in deploying and managing a system
 compromised of many independent services.
 
-
   - Direct client-to-microservice communication can make it difficult to refactor the contracts of
-
 microservices. For example, over time how the system is partitioned into services might need
 to change. A single service might split into two or more services, and two services might
 merge. When clients communicate directly with microservices, this refactoring work can break
@@ -2635,8 +2514,7 @@ compatibility with client apps.
 
 
 Containerization is an approach to software development in which an application and its versioned set
-
-- f dependencies, plus its environment configuration abstracted as deployment manifest files, are
+of dependencies, plus its environment configuration abstracted as deployment manifest files, are
 packaged together as a container image, tested as a unit, and deployed to a host operating system.
 
 
@@ -2700,21 +2578,18 @@ illustrated in the diagram below.
 The architecture of the back-end services in the reference application is decomposed into multiple
 autonomous sub-systems in the form of collaborating microservices and containers. Each microservice
 provides a single area of functionality: an identity service, a catalog service, an ordering service, and a
-
 basket service.
 
 
 Each microservice has its own database, allowing it to be fully decoupled from the other
 microservices. Where necessary, consistency between databases from different microservices is
 achieved using application-level events. For more information, see Communication between
-
 microservices.
 
 ### Communication between client and microservices
 
 
 The eShop multi-platform app communicates with the containerized back-end microservices using
-
 _direct client-to-microservice_ communication, as shown below.
 
 
@@ -2735,7 +2610,6 @@ requests across the available instances.
 Direct client-to-microservice communication can have drawbacks when building a large and complex
 microservice-based application, but it’s more than adequate for a small application. Consider using
 API gateway communication when designing a large microservice-based application with tens of
-
 microservices.
 
 ### Communication between microservices
@@ -2757,7 +2631,6 @@ across multiple microservices. With this approach, a microservice publishes an e
 notable happens, for example, when it updates a business entity. Other microservices subscribe to
 these events. Then, when a microservice receives an event, it updates its own business entities, which
 might, in turn, lead to more events being published. This publish-subscribe functionality is usually
-
 achieved with an event bus.
 
 
@@ -2788,7 +2661,6 @@ transaction consists of a series of distributed steps. Therefore, when the user-
 receives the UpdateUser command, it updates the user’s details in its database and publishes the
 UserUpdated event to the event bus. Both the basket microservice and the ordering microservice have
 subscribed to receive this event, and in response, update their buyer information in their respective
-
 databases.
 
 ### Summary
@@ -2796,8 +2668,7 @@ databases.
 
 Microservices offer an approach to application development and deployment that’s suited to the
 agility, scale, and reliability requirements of modern cloud applications. One of the main advantages
-
-- f microservices is that they can be scaled-out independently, which means that a specific functional
+of microservices is that they can be scaled-out independently, which means that a specific functional
 area can be scaled that requires more processing power or network bandwidth to support demand
 without unnecessarily scaling areas of the application that are not experiencing increased demand.
 
@@ -2812,13 +2683,14 @@ have adopted.
 59 CHAPTER 9 | Containerized microservices
 
 
-# CHAPTER 10
+**CHAPTER**
+# 10
 
 ## Accessing remote data
 
+
 Many modern web-based solutions make use of web services, hosted by web servers, to provide
 functionality for remote client applications. The operations that a web service exposes constitute a
-
 web API.
 
 
@@ -2831,8 +2703,7 @@ exchanged between client apps and the web service.
 
 
 Representational State Transfer (REST) is an architectural style for building distributed systems based
-
-- n hypermedia. A primary advantage of the REST model is that it’s based on open standards and
+on hypermedia. A primary advantage of the REST model is that it’s based on open standards and
 doesn’t bind the implementation of the model or the client apps that access it to any specific
 [implementation. Therefore, a REST web service could be implemented using Microsoft ASP.NET Core,](https://docs.microsoft.com/aspnet/core/introduction-to-aspnet-core)
 and client apps could be developing using any language and toolset that can generate HTTP requests
@@ -2842,10 +2713,8 @@ and parse HTTP responses.
 The REST model uses a navigational scheme to represent objects and services over a network, referred
 to as resources. Systems that implement REST typically use the HTTP protocol to transmit requests to
 access these resources. In such systems, a client app submits a request in the form of a URI that
-
 identifies a resource, and an HTTP method (such as GET, POST, PUT, or DELETE) that indicates the
-
-- peration to be performed on that resource. The body of the HTTP request contains any data required
+operation to be performed on that resource. The body of the HTTP request contains any data required
 to perform the operation.
 
 
@@ -2855,7 +2724,6 @@ to perform the operation.
 The response from a REST request makes use of standard HTTP status codes. For example, a request
 that returns valid data should include the HTTP response code 200 (OK), while a request that fails to
 find or delete a specified resource should return a response that includes the HTTP status code 404
-
 (Not Found).
 
 
@@ -2877,7 +2745,7 @@ body of the message. It’s then the responsibility of the client app to parse t
 interpret the results in the message body appropriately.
 
 
-[For more information about REST, see API design](https://docs.microsoft.com/azure/architecture/best-practices/api-design) [and API implementation](https://docs.microsoft.com/azure/architecture/best-practices/api-implementation) - n Microsoft Docs.
+[For more information about REST, see API design](https://docs.microsoft.com/azure/architecture/best-practices/api-design) [and API implementation](https://docs.microsoft.com/azure/architecture/best-practices/api-implementation) on Microsoft Docs.
 
 ### Consuming RESTful APIs
 
@@ -2888,7 +2756,6 @@ classes in the eShop reference application accept and return many of these model
 they are used as data transfer objects (DTOs) that hold all the data that is passed between the app
 and the containerized microservices. The main benefit of using DTOs to pass data to and receive data
 from a web service is that by transmitting more data in a single remote call, the app can reduce the
-
 number of remote calls that need to be made.
 
 ### Making web requests
@@ -2938,8 +2805,7 @@ This method builds the URI that identifies the resource the request will be sent
 RequestProvider class to invoke the GET HTTP method on the resource, before returning the results to
 the CatalogViewModel. The RequestProvider class contains functionality that submits a request in the
 form of a URI that identifies a resource, an HTTP method that indicates the operation to be performed
-
-- n that resource, and a body that contains any data required to perform the operation. For
+on that resource, and a body that contains any data required to perform the operation. For
 information about how the RequestProvider class is injected into the CatalogService class, see
 Dependency Injection.
 
@@ -2966,7 +2832,6 @@ sets the Accept header of any requests made by the HttpClient instance to applic
 indicates that it expects the content of any response to be formatted using JSON. Then, if an access
 token was passed as an argument to the GetOrCreateHttpClient method, it’s added to the
 Authorization header of any requests made by the HttpClient instance, prefixed with the string Bearer.
-
 For more information about authorization, see Authorization.
 
 
@@ -2999,7 +2864,6 @@ BasketService class. For more information about dependency injection, see Depend
 
 
 The image below shows the interaction of classes that send the basket data displayed by the
-
 BasketView, to the basket microservice.
 
 
@@ -3020,7 +2884,6 @@ This method builds the URI that identifies the resource the request will be sent
 RequestProvider class to invoke the POST HTTP method on the resource, before returning the results
 to the BasketViewModel. Note that an access token, obtained from IdentityServer during the
 authentication process, is required to authorize requests to the basket microservice. For more
-
 information about authorization, see Authorization.
 
 
@@ -3034,7 +2897,6 @@ being stored in the HttpResponseMessage instance. The HandleResponse method is t
 which throws an exception if the response doesn’t include a success HTTP status code. Then, the
 response is read as a string, converted from JSON to a CustomerBasket object, and returned to the
 BasketService. For more information about the GetOrCreateHttpClient method, see Making a GET
-
 request.
 
 
@@ -3048,14 +2910,12 @@ example:
 
 This method uses an instance of the RedisBasketRepository class to persist the basket data to the
 Redis cache, and returns it as a response message that includes a success HTTP status code, and a
-
 JSON formatted CustomerBasket instance.
 
 ### Making a DELETE request
 
 
 The image below shows the interactions of classes that delete basket data from the basket
-
 microservice, for the CheckoutView.
 
 
@@ -3074,9 +2934,7 @@ ClearBasketAsync method:
 
 This method builds the URI that identifies the resource that the request will be sent to, and uses the
 RequestProvider class to invoke the DELETE HTTP method on the resource. Note that an access token,
-
-- btained from IdentityServer during the authentication process, is required to authorize requests to
-
+obtained from IdentityServer during the authentication process, is required to authorize requests to
 the basket microservice. For more information about authorization, see Authorization.
 
 
@@ -3086,7 +2944,6 @@ The following code example shows the DeleteAsync method in the RequestProvider c
 This method calls the GetOrCreateHttpClient method, which returns an instance of the HttpClient class
 with the appropriate headers set. It then submits an asynchronous DELETE request to the resource
 identified by the URI. For more information about the GetOrCreateHttpClient method, see Making a
-
 GET request.
 
 
@@ -3096,7 +2953,6 @@ following code example:
 
 
 This method uses an instance of the RedisBasketRepository class to delete the basket data from the
-
 Redis cache.
 
 ### Caching data
@@ -3112,7 +2968,6 @@ referencing the cache. If the data isn’t in the cache, it’s retrieved from t
 cache. Apps can implement read-through caching with the cache-aside pattern. This pattern
 determines whether the item is currently in the cache. If the item isn’t in the cache, it’s read from the
 [data store and added to the cache. For more information, see the Cache-Aside pattern on Microsoft](https://docs.microsoft.com/azure/architecture/patterns/cache-aside)
-
 Docs.
 
 
@@ -3135,7 +2990,6 @@ following caches:
 
   - A shared cache, which can be accessed by multiple processes or machines.
 
-
   - A private cache, where data is held locally on the device running the app.
 
 
@@ -3149,15 +3003,13 @@ running an instance of the app.
 
 
 Ensure that data is maintained in the original data store as well as the cache. The chances of losing
-
 data are then minimized if the cache becomes unavailable.
 
 ### Managing data expiration
 
 
 It’s impractical to expect that cached data will always be consistent with the original data. Data in the
-
-- riginal data store might change after it’s been cached, causing the cached data to become stale.
+original data store might change after it’s been cached, causing the cached data to become stale.
 Therefore, apps should implement a strategy that helps to ensure that the data in the cache is as upto-date as possible, but can also detect and handle situations that arise when the data in the cache
 has become stale. Most caching mechanisms enable the cache to be configured to expire data, and
 hence reduce the period for which data might be out of date.
@@ -3172,8 +3024,7 @@ Many caches implement expiration, which invalidates data and removes it from the
 accessed for a specified period. However, care must be taken when choosing the expiration period. If
 it’s made too short, data will expire too quickly and the benefits of caching will be reduced. If it’s
 made too long, the data risks becoming stale. Therefore, the expiration time should match the pattern
-
-- f access for apps that use the data.
+of access for apps that use the data.
 
 
 When cached data expires, it should be removed from the cache, and the app must retrieve the data
@@ -3183,9 +3034,8 @@ from the original data store and place it back into the cache.
 It’s also possible that a cache might fill up if data is allowed to remain for too long a period. Therefore,
 requests to add new items to the cache might be required to remove some items in a process known
 as _eviction_ . Caching services typically evict data on a least-recently-used basis. However, there are
-
-- ther eviction policies, including most-recently-used, and first-in-first-out. For more information, see
-[Caching Guidance](https://docs.microsoft.com/azure/architecture/best-practices/caching) - n Microsoft Docs.
+other eviction policies, including most-recently-used, and first-in-first-out. For more information, see
+[Caching Guidance](https://docs.microsoft.com/azure/architecture/best-practices/caching) on Microsoft Docs.
 
 ### Caching images
 
@@ -3214,14 +3064,12 @@ thoroughly tested under all foreseeable circumstances. To ensure that an app tha
 remote services operates reliably, it must be able to do all of the following:
 
 
-  Detect faults when they occur, and determine if the faults are likely to be transient.
+  - Detect faults when they occur, and determine if the faults are likely to be transient.
 
-
-  Retry the operation if it determines that the fault is likely to be transient and keep track of the
+  - Retry the operation if it determines that the fault is likely to be transient and keep track of the
 number of times the operation was retried.
 
-
-  Use an appropriate retry strategy, which specifies the number of retries, the delay between
+  - Use an appropriate retry strategy, which specifies the number of retries, the delay between
 each attempt, and the actions to take after a failed attempt.
 
 
@@ -3235,12 +3083,10 @@ If an app detects a failure when it tries to send a request to a remote service,
 in any of the following ways:
 
 
-  Retrying the operation. The app could retry the failing request immediately.
+  - Retrying the operation. The app could retry the failing request immediately.
 
-
-  Retrying the operation after a delay. The app should wait for a suitable amount of time before
+  - Retrying the operation after a delay. The app should wait for a suitable amount of time before
 retrying the request.
-
 
   - Cancelling the operation. The application should cancel the operation and report an
 exception.
@@ -3248,8 +3094,7 @@ exception.
 
 The retry strategy should be tuned to match the business requirements of the app. For example, it’s
 important to optimize the retry count and retry interval to the operation being attempted. If the
-
-- peration is part of a user interaction, the retry interval should be short and only a few retries
+operation is part of a user interaction, the retry interval should be short and only a few retries
 attempted to avoid making users wait for a response. If the operation is part of a long running
 workflow, where cancelling or restarting the workflow is expensive or time-consuming, it’s appropriate
 to wait longer between attempts and to retry more times.
@@ -3296,10 +3141,8 @@ likely to fail, while also enabling the app to detect whether the fault has been
 
 
 A circuit breaker acts as a proxy for operations that might fail. The proxy should monitor the number
-
-- f recent failures that have occurred, and use this information to decide whether to allow the
-
-- peration to proceed, or to return an exception immediately.
+of recent failures that have occurred, and use this information to decide whether to allow the
+operation to proceed, or to return an exception immediately.
 
 
 The eShop multi-platform app does not currently implement the circuit breaker pattern. However, the
@@ -3312,15 +3155,12 @@ eShop does.
 
 
 An app can combine the retry and circuit breaker patterns by using the retry pattern to invoke an
-
-- peration through a circuit breaker. However, the retry logic should be sensitive to any exceptions
+operation through a circuit breaker. However, the retry logic should be sensitive to any exceptions
 returned by the circuit breaker and abandon retry attempts if the circuit breaker indicates that a fault
-
 is not transient.
 
 
 [For more information about the circuit breaker pattern, see the Circuit Breaker pattern on Microsoft](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker)
-
 Docs.
 
 
@@ -3332,14 +3172,12 @@ Docs.
 Many modern web-based solutions make use of web services, hosted by web servers, to provide
 functionality for remote client applications. The operations that a web service exposes constitute a
 web API, and client apps should be able to utilize the web API without knowing how the data or
-
-- perations that the API exposes are implemented.
+operations that the API exposes are implemented.
 
 
 The performance of an app can be improved by caching frequently accessed data to fast storage
 that’s located close to the app. Apps can implement read-through caching with the cache-aside
 pattern. This pattern determines whether the item is currently in the cache. If the item isn’t in the
-
 cache, it’s read from the data store and added to the cache.
 
 
@@ -3353,9 +3191,11 @@ attempts to access a web API in code that implements a transient fault handling 
 72 CHAPTER 10 | Accessing remote data
 
 
-# CHAPTER 11
+**CHAPTER**
+# 11
 
 ## Authentication and authorization
+
 
 Authentication is the process of obtaining identification credentials such as name and password from
 a user and validating those credentials against an authority. The entity that submitted the credentials
@@ -3369,8 +3209,7 @@ authentication providers such as Microsoft, Google, Facebook, or Twitter, and au
 middleware. The eShop multi-platform app performs authentication and authorization with a
 containerized identity microservice that uses IdentityServer. The app requests security tokens from
 IdentityServer to authenticate a user or access a resource. For IdentityServer to issue tokens on behalf
-
-- f a user, the user must sign in to IdentityServer. However, IdentityServer doesn’t provide a user
+of a user, the user must sign in to IdentityServer. However, IdentityServer doesn’t provide a user
 interface or database for authentication. Therefore, in the eShop reference application, ASP.NET Core
 Identity is used for this purpose.
 
@@ -3411,7 +3250,6 @@ local ASP.NET Core Identity users.
 OpenID Connect is an authentication layer on top of the OAuth 2.0 protocol. OAuth 2 is a protocol
 that allows applications to request access tokens from a security token service and use them to
 communicate with APIs. This delegation reduces complexity in both client applications and APIs since
-
 authentication and authorization can be centralized.
 
 
@@ -3422,7 +3260,6 @@ and API access, and IdentityServer is an implementation of these protocols.
 In applications that use direct client-to-microservice communication, such as the eShop reference
 application, a dedicated authentication microservice acting as a Security Token Service (STS) can be
 used to authenticate users, as shown in the following diagram. For more information about direct
-
 client-to-microservice communication, see Microservices.
 
 
@@ -3431,14 +3268,12 @@ to perform authentication, and access control for APIs. Therefore, the multi-pla
 tokens from IdentityServer, either for authenticating a user or for accessing a resource:
 
 
-  Authenticating users with IdentityServer is achieved by the multi-platform app requesting an
+  - Authenticating users with IdentityServer is achieved by the multi-platform app requesting an
 _identity_ token, representing an authentication process’s outcome. At a minimum, it contains
 an identifier for the user and information about how and when the user is authenticated. It
-
 can also include additional identity data.
 
-
-  Accessing a resource with IdentityServer is achieved by the multi-platform app requesting an
+  - Accessing a resource with IdentityServer is achieved by the multi-platform app requesting an
 _access_ token, which allows access to an API resource. Clients request access tokens and
 forward them to the API. Access tokens contain information about the client and the user, if
 present. APIs then use that information to authorize access to their data.
@@ -3475,14 +3310,11 @@ After calling the services.AddIdentityServer method, additional fluent APIs are 
 following:
 
 
-  Credentials used for signing.
-
+  - Credentials used for signing.
 
   - API and identity resources that users might request access to.
 
-
   - Clients that will be connecting to request tokens.
-
 
   - ASP.NET Core Identity.
 
@@ -3537,21 +3369,16 @@ exposing the IdentityResources.OpenId identity resource.
 #### **Configuring clients**
 
 Clients are applications that can request tokens from IdentityServer. Typically, the following settings
-
 must be defined for each client as a minimum:
 
 
   - A unique client ID.
 
-
   - The allowed interactions with the token service (known as the grant type).
-
 
   - The location where identity and access tokens are sent to (known as a redirect URI).
 
-
-  A list of resources that the client is allowed access to (known as scopes).
-
+  - A list of resources that the client is allowed access to (known as scopes).
 
 When configuring clients, the AddInMemoryClients method expects an IEnumerable<Client>
 collection. The following code example shows the configuration for the eShop multi-platform app in
@@ -3596,7 +3423,7 @@ define several authentication flows, including:
 78 CHAPTER 11 | Authentication and authorization
 
 
-|AuthenticationFlow|Description|
+|Authentication Flow|Description|
 |---|---|
 |Implicit|This flow is optimized for browser-based<br>applications and should be used either for user<br>authentication-only, or authentication and<br>access token requests. All tokens are<br>transmitted via the browser, and therefore<br>advanced features like refresh tokens are not<br>permitted.|
 |Authorization code|This flow provides the ability to retrieve tokens<br>on a back channel, as opposed to the browser<br>front channel, while also supporting client<br>authentication.|
@@ -3607,7 +3434,6 @@ define several authentication flows, including:
 
 
 [For more information about authentication flows, see Grant Types](https://docs.duendesoftware.com/identityserver/v7/data/operational/grants/) in the IdentityServer
-
 documentation.
 
 #### **Performing authentication**
@@ -3647,7 +3473,6 @@ GetAuthTokenAsync methods.
 
 When the user taps the LOGIN button on the LoginView, the SignInCommand in the LoginViewModel
 class is executed, which in turn executes the SignInAsync method. The following code example shows
-
 this method:
 
 
@@ -3663,7 +3488,6 @@ package. This client displays the authentication web view to the user in the app
 [the authentication result. The client connects to the URI for IdentityServer’s authorization endpoint](https://docs.duendesoftware.com/identityserver/v7/reference/endpoints/authorize/)
 with the required parameters. The authorization endpoint is at /connect/authorize on port 5105 of the
 base endpoint exposed as a user setting. For more information about user settings, see Configuration
-
 Management.
 
 
@@ -3728,14 +3552,11 @@ information about application settings, see Configuration management.
 ### Authorization
 
 After authentication, ASP.NET Core web APIs often need to authorize access, which allows a service to
-
 make APIs available to some authenticated users but not to all.
 
 
 Restricting access to an ASP.NET Core route can be achieved by applying an Authorize attribute to a
-
 controller or action, which limits access to the controller or action to authenticated users, as shown in
-
 the following code example:
 
 
@@ -3756,11 +3577,8 @@ control authorization. This approach is shown in the diagram below.
 The eShop multi-platform app communicates with the identity microservice and requests an access
 token as part of the authentication process. The access token is then forwarded to the APIs exposed
 by the ordering and basket microservices as part of the access requests. Access tokens contain
-
 information about the client and the user. APIs then use that information to authorize access to their
-
 data. For information about how to configure IdentityServer to protect APIs, see Configuring API
-
 resources.
 
 ### Configuring IdentityServer to perform authorization
@@ -3801,14 +3619,12 @@ shown in the following code example:
 
 
 The access token is retrieved from the IIdentityService and included in the call to the ClearBasketAsync
-
 method in the BasketService class.
 
 
 The RequestProvider class in the eShop multi-platform app uses the HttpClient class to make requests
 to the RESTful APIs exposed by the eShop reference application. When making requests to the
-
-- rdering and basket APIs, which require authorization, a valid access token must be included with the
+ordering and basket APIs, which require authorization, a valid access token must be included with the
 request. This is achieved by adding the access token to the headers of the HttpClient instance, as
 demonstrated in the following code example:
 
@@ -3816,14 +3632,11 @@ demonstrated in the following code example:
 The DefaultRequestHeaders property of the HttpClient class exposes the headers that are sent with
 each request, and the access token is added to the Authorization header prefixed with the string
 Bearer. When the request is sent to a RESTful API, the value of the Authorization header is extracted
-
 and validated to ensure that it’s sent from a trusted issuer and used to determine whether the user
-
 has permission to invoke the API that receives it.
 
 
 For more information about how the eShop multi-platform app makes web requests, see Accessing
-
 remote data.
 
 ### Summary
@@ -3845,11 +3658,13 @@ they are sent from a trusted issuer and that they are valid to be used with the 
 87 CHAPTER 11 | Authentication and authorization
 
 
-# CHAPTER 12
+**CHAPTER**
+# 12
 
 ## MVVM Toolkit Features
 
 ### MVVM Toolkit
+
 
 The Model-View-ViewModel (MVVM) pattern is a great structural basis for creating our applications.
 In this pattern, the ViewModel becomes the backbone of our application as it provides
@@ -3909,12 +3724,9 @@ Developer Center.
 
 
 Interaction between .NET MAUI controls (for example, tapping a button or selecting an item from a
-
 collection) and the ViewModel is done with the ICommand interface. .NET MAUI comes with a default
-
 implementation of ICommand with the Command object. .NET MAUI’s Command is fairly basic and
 lacks support for more advanced features, such as supporting asynchronous work and command
-
 execution status.
 
 
@@ -3939,8 +3751,7 @@ cancellation of the execution task, if supported.
 
 By default, AsyncRelayCommand doesn’t allow concurrent execution. This is very helpful in situations
 where a user could unintentionally tap a control multiple times to execute a long-running or costly
-
-- peration. During task execution, AsyncRelayCommand will automatically call the CanExecuteChanged
+operation. During task execution, AsyncRelayCommand will automatically call the CanExecuteChanged
 event. In .NET MAUI, controls that support the Command and CommandParameter properties, such as
 Button, will listen to this event and automatically enable or disable it during execution. This
 functionality can be overridden by using a custom canExecute parameter or setting the
@@ -4007,21 +3818,21 @@ the MVVM Toolkit Developer Center.
 ### Summary
 
 The MVVM Toolkit is a great way to standardize and simplify our ViewModel code. The MVVM toolkit
-
-- ffers great implementations of standard MVVM components such as ObservableObject and
+offers great implementations of standard MVVM components such as ObservableObject and
 Async/RelayCommand. The source generators help simplify our ViewModel properties and commands
 by generating all of the boilerplate code needed for user interface interactions. The MVVM Toolkit
-
-- ffers even more features outside of what has been shown in this chapter. For more information on
+offers even more features outside of what has been shown in this chapter. For more information on
 [the MVVM Toolkit, see Introduction to the MVVM Toolkit](https://docs.microsoft.com/dotnet/communitytoolkit/mvvm/) in the MVVM Toolkit Developer Center.
 
 
 93 CHAPTER 12 | MVVM Toolkit Features
 
 
-# CHAPTER 13
+**CHAPTER**
+# 13
 
 ## Unit testing
+
 
 multi-platform apps experience problems similar to both desktop and web-based applications. Mobile
 users will differ by their devices, network connectivity, availability of services, and various other factors.
@@ -4043,8 +3854,7 @@ an application. As soon as a method has been written, unit tests should be writt
 method’s behavior in response to standard, boundary, and incorrect input data cases and check any
 explicit or implicit assumptions made by the code. Alternatively, with test-driven development, unit
 tests are written before the code. For more information on test-driven development and how to
-
-                    implement it, see Walkthrough: Test [driven development using Test Explorer.](https://docs.microsoft.com/visualstudio/test/quick-start-test-driven-development-with-test-explorer)
+[implement it, see Walkthrough: Test-driven development using Test Explorer.](https://docs.microsoft.com/visualstudio/test/quick-start-test-driven-development-with-test-explorer)
 
 
 
@@ -4087,7 +3897,6 @@ This approach allows the IAppEnvironmentService object to be passed into the Ord
 class at runtime, and in the interests of testability, it allows a mock class to be passed into the
 OrderDetailViewModel class at test time. The main advantage of this approach is that it enables unit
 tests to be executed without requiring unwieldy resources such as runtime platform features, web
-
 services, or databases.
 
 ### Testing MVVM applications
@@ -4110,14 +3919,13 @@ techniques.
 
 Don’t be tempted to make a unit test exercise more than one aspect of the unit’s behavior. Doing so
 leads to tests that are difficult to read and update. It can also lead to confusion when interpreting a
-
 failure.
 
 
 [The eShop multi-platform app uses MSTest](https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-mstest) to perform unit testing, which supports two different
 types of unit tests:
 
-|TestingType|Attribute|Description|
+|Testing Type|Attribute|Description|
 |---|---|---|
 |TestMethod|TestMethod|Defines the actual test method to run..|
 |DataSource|DataSource|Tests that are only true for a particular set of data.|
@@ -4148,8 +3956,7 @@ specified as an argument. However, the OrderService retrieves data from a web se
 OrderMockService instance, a mock version of the OrderService class, is specified as the argument to
 the OrderDetailViewModel constructor. Then, mock data is retrieved rather than communicating with
 a web service when the view model’s InitializeAsync method is invoked, which uses IOrderService
-
-- perations.
+operations.
 
 
 96 CHAPTER 13 | Unit testing
@@ -4159,9 +3966,7 @@ a web service when the view model’s InitializeAsync method is invoked, which u
 
 Implementing the INotifyPropertyChanged interface allows views to react to changes that originate
 from view models and models. These changes are not limited to data shown in controls – they are also
-
 used to control the view, such as view model states that cause animations to be started or controls to
-
 be disabled.
 
 
@@ -4214,8 +4019,7 @@ correctly implemented and testing that the ValidatableObject<T> class performs a
 
 
 Validation logic is usually simple to test, because it is typically a self-contained process where the
-
-- utput depends on the input. There should be tests on the results of invoking the Validate method on
+output depends on the input. There should be tests on the results of invoking the Validate method on
 each property that has at least one associated validation rule, as demonstrated in the following code
 example:
 
@@ -4224,7 +4028,6 @@ example:
 
 
 This unit test checks that validation succeeds when the two ValidatableObject<T> properties in the
-
 MockViewModel instance both have data.
 
 
@@ -4246,8 +4049,7 @@ expected, so errors don’t propagate throughout the app.
 
 
 The behavior of an object under test can be isolated by replacing dependent objects with mock
-
-- bjects that simulate the behavior of the dependent objects. This enables unit tests to be executed
+objects that simulate the behavior of the dependent objects. This enables unit tests to be executed
 without requiring unwieldy resources such as runtime platform features, web services, or databases
 
 

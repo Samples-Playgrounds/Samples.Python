@@ -28,16 +28,14 @@ form or by any means without the written permission of the publisher.
 
 This book is provided “as-is” and expresses the author’s views and opinions. The views, opinions, and
 information expressed in this book, including URL and other Internet website references, may change
-
 without notice.
 
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association
+or connection is intended or should be inferred.
 
-- r connection is intended or should be inferred.
 
-
-[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) - n the “Trademarks” webpage are
+[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) on the “Trademarks” webpage are
 trademarks of the Microsoft group of companies.
 
 
@@ -50,20 +48,19 @@ All other marks and logos are property of their respective owners.
 Authors:
 
 
-**Daniel Roth**, Principal Program Manager, Microsoft Corp.
+**[Daniel Roth](https://github.com/danroth27)**, Principal Program Manager, Microsoft Corp.
 
 
-**Jeff Fritz**, Senior Program Manager, Microsoft Corp.
+**[Jeff Fritz](https://github.com/csharpfritz)**, Senior Program Manager, Microsoft Corp.
 
 
 **[Taylor Southwick](https://github.com/twsouthwick)**, Senior Software Engineer, Microsoft Corp.
 
 
-**Scott Addie**, Senior Content Developer, Microsoft Corp.
+**[Scott Addie](https://github.com/scottaddie)**, Senior Content Developer, Microsoft Corp.
 
 
 **[Steve “@ardalis” Smith](https://github.com/ardalis)**, Software Architect and Trainer, NimblePros.com
-
 ### Introduction
 
 
@@ -78,8 +75,7 @@ audience and app building philosophy. ASP.NET Web Forms shipped with the origina
 
 
 developers, like reusable UI controls with simple event handling. However, none of the ASP.NET
-
-- fferings provide a way to run code that executed in the user’s browser. To do that requires writing
+offerings provide a way to run code that executed in the user’s browser. To do that requires writing
 JavaScript and using any of the many JavaScript frameworks and tools that have phased in and out of
 popularity over the years: jQuery, Knockout, Angular, React, and so on.
 
@@ -103,14 +99,12 @@ concerns including component authoring, routing, layout, configuration, and secu
 content of this book is primarily for enabling new development, it also covers guidelines and
 strategies for migrating existing ASP.NET Web Forms to Blazor for when you want to modernize an
 existing app.
-
 ### Who should use the book
 
 
 This book is for ASP.NET Web Forms developers looking for an introduction to Blazor that relates to
 their existing knowledge and skills. This book can help with quickly getting started on a new Blazorbased project or to help chart a roadmap for modernizing an existing ASP.NET Web Forms
 application.
-
 ### How to use the book
 
 
@@ -120,9 +114,7 @@ each Blazor concept to the corresponding concept in ASP.NET Web Forms, or explai
 completely new concepts. The book also refers regularly to a complete sample app implemented in
 both ASP.NET Web Forms and Blazor to demonstrate Blazor features and to provide a case study for
 migrating from ASP.NET Web Forms to Blazor. You can find both implementations of the sample app
-
 [(ASP.NET Web Forms and Blazor versions) on GitHub.](https://github.com/dotnet-architecture/eshoponblazor)
-
 ### What this book doesn’t cover
 
 
@@ -132,7 +124,6 @@ guidance on how to approach migrating a project from ASP.NET Web Forms to Blazor
 
 attempt to cover every nuance and detail. For more general guidance on migrating from ASP.NET to
 [ASP.NET Core, refer to the migration guidance](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/) in the ASP.NET Core documentation.
-
 #### **Additional resources**
 
 
@@ -480,9 +471,11 @@ Migration conclusion ...........................................................
 iv Contents
 
 
-# CHAPTER 1
+**CHAPTER**
+# 1
 
 ## An introduction to Blazor for ASP.NET Web Forms developers
+
 
 The ASP.NET Web Forms framework has been a staple of .NET web development since the .NET
 Framework first shipped in 2002. Back when the Web was still largely in its infancy, ASP.NET Web
@@ -516,7 +509,6 @@ abreast of new technologies and trends. Two trends in particular are worth consi
 
 1. The shift to open-source and cross-platform
 
-
 2. The shift of app logic to the client
 
 
@@ -545,8 +537,7 @@ and supporting foundations.
 
 
 The .NET community has embraced both cross-platform support and open-source. .NET Core is an
-
-- pen-source and cross-platform implementation of .NET that runs on a plethora of platforms,
+open-source and cross-platform implementation of .NET that runs on a plethora of platforms,
 including Windows, macOS, and various Linux distributions. Xamarin provides Mono, an open-source
 version of .NET. Mono runs on Android, iOS, and a variety of other form factors, including watches
 [and smart TVs. In 2020, Microsoft released .NET 5 that reconciled .NET Core and Mono into “a single](https://devblogs.microsoft.com/dotnet/announcing-net-5-0/)
@@ -590,13 +581,11 @@ in common: they’re _server-rendered_ . In server-rendered web apps, the browse
 server, which executes some code (.NET code in ASP.NET apps) to produce a response. That response
 is sent back to the browser to handle. In this model, the browser is used as a thin rendering engine.
 The hard work of producing the UI, running the business logic, and managing state occurs on the
-
 server.
 
 
 However, browsers have become versatile platforms. They implement an ever-increasing number of
-
-- pen web standards that grant access to the capabilities of the user’s machine. Why not take
+open web standards that grant access to the capabilities of the user’s machine. Why not take
 advantage of the compute power, storage, memory, and other resources of the client device? UI
 interactions in particular can benefit from a richer and more interactive feel when handled at least
 partially or completely client-side. Logic and data that should be handled on the server can still be
@@ -610,8 +599,7 @@ some out-of-the-box support with integrated JavaScript frameworks like ASP.NET A
 But bridging two different platforms and ecosystems (.NET and JavaScript) comes with a cost.
 Expertise is required in two parallel worlds with different languages, frameworks, and tools. Code and
 logic can’t be easily shared between client and server, resulting in duplication and engineering
-
-- verhead. It can also be difficult to keep up with the JavaScript ecosystem, which has a history of
+overhead. It can also be difficult to keep up with the JavaScript ecosystem, which has a history of
 evolving at breakneck speed. Front-end framework and build tool preferences change quickly. The
 industry has observed the progression from Grunt to Gulp to Webpack, and so on. The same restless
 churn has occurred with front-end frameworks such as jQuery, Knockout, Angular, React, and Vue. But
@@ -643,7 +631,6 @@ On its own, the ability to run .NET code in a browser doesn’t provide an end-t
 creating client-side web apps. That’s where Blazor comes in. Blazor is a client-side web UI framework
 based on C# instead of JavaScript. Blazor can run directly in the browser via WebAssembly. No
 browser plugins are required. Alternatively, Blazor apps can run server-side on .NET and handle all
-
 user interactions over a real-time connection with the browser.
 
 
@@ -653,18 +640,13 @@ a full UI component model and has built-in facilities for:
 
   - Forms and validation
 
-
   - Dependency injection
-
 
   - Client-side routing
 
-
   - Layouts
 
-
   - In-browser debugging
-
 
   - JavaScript interop
 
@@ -684,14 +666,11 @@ features and practices. By the end of this book, you’ll have an understanding 
 
   - How to build Blazor apps.
 
-
   - How Blazor works.
-
 
   - How Blazor relates to .NET.
 
-
-  Reasonable strategies for migrating existing ASP.NET Web Forms apps to Blazor where
+  - Reasonable strategies for migrating existing ASP.NET Web Forms apps to Blazor where
 appropriate.
 
 ### Get started with Blazor
@@ -705,9 +684,11 @@ Blazor tooling in Visual Studio or Visual Studio Code.
 4 CHAPTER 1 | An introduction to Blazor for ASP.NET Web Forms developers
 
 
-# CHAPTER 2
+**CHAPTER**
+# 2
 
 ## Architecture comparison of ASP.NET Web Forms and Blazor
+
 
 While ASP.NET Web Forms and Blazor have many similar concepts, there are differences in how they
 work. This chapter examines the inner workings and architectures of ASP.NET Web Forms and Blazor.
@@ -725,19 +706,16 @@ Pages consist of the following components:
 
   - HTML markup
 
-
   - C# or Visual Basic code
 
-
   - A code-behind class containing logic and event-handling capabilities
-
 
   - Controls
 
 
 Controls are reusable units of web UI that can be programmatically placed and interacted with on a
 page. Pages are composed of files that end with _.aspx_ containing markup, controls, and some code.
-The code-behind classes are in files with the same base name and an _.aspx.cs_ - r _.aspx.vb_ extension,
+The code-behind classes are in files with the same base name and an _.aspx.cs_ or _.aspx.vb_ extension,
 depending on the programming language used. Interestingly, the web server interprets contents of
 the _.aspx_ files and compiles them whenever they change. This recompilation occurs even if the web
 server is already running.
@@ -745,13 +723,12 @@ server is already running.
 
 Controls can be built with markup and delivered as user controls. A user control derives from the
 UserControl class and has a similar structure to the Page. Markup for user controls is stored in an _.ascx_
-file. An accompanying code-behind class resides in an _.ascx.cs_ - r _.ascx.vb_ file. Controls can also be
+file. An accompanying code-behind class resides in an _.ascx.cs_ or _.ascx.vb_ file. Controls can also be
 built completely with code, by inheriting from either the WebControl or CompositeControl base class.
 
 
 Pages also have an extensive event lifecycle. Each page raises events for the initialization, load,
 prerender, and unload events that occur as the ASP.NET runtime executes the page’s code for each
-
 request.
 
 
@@ -762,7 +739,6 @@ Controls on a Page typically post-back to the same page that presented the contr
 with them a payload from a hidden form field called ViewState. The ViewState field contains
 information about the state of the controls at the time they were rendered and presented on the
 page, allowing the ASP.NET runtime to compare and identify changes in the content submitted to the
-
 server.
 
 ### Blazor
@@ -805,15 +781,16 @@ executed on this SynchronizationContext.
 7 CHAPTER 2 | Architecture comparison of ASP.NET Web Forms and Blazor
 
 
-# CHAPTER 3
+**CHAPTER**
+# 3
 
 ## Blazor app hosting models
+
 
 Blazor apps can be hosted in one of the following ways:
 
 
   - Client-side in the browser on WebAssembly.
-
 
   - Server-side in an ASP.NET Core app.
 
@@ -846,7 +823,6 @@ Blazor WebAssembly apps run purely client-side. Such apps can be deployed to sta
 solutions like GitHub Pages or Azure Static Website Hosting. .NET isn’t required on the server at all.
 Deep linking to parts of the app typically requires a routing solution on the server. The routing
 solution redirects requests to the root of the app. For example, this redirection can be handled using
-
 URL rewrite rules in IIS.
 
 
@@ -869,9 +845,7 @@ they don’t even have to run on the same machine.
 
 
 In Blazor Server apps, the components run on the server instead of client-side in the browser. UI
-
 events that occur in the browser are sent to the server over a real-time connection. The events are
-
 dispatched to the correct component instances. The components render, and the calculated UI diff is
 serialized and sent to the browser where it’s applied to the DOM.
 
@@ -891,22 +865,18 @@ conceptually similar.
 
 
 [As described in the Blazor hosting model docs, the different Blazor hosting models have different](https://docs.microsoft.com/aspnet/core/blazor/hosting-models)
-
 tradeoffs.
 
 
 The Blazor WebAssembly hosting model has the following benefits:
 
 
-  There’s no .NET server-side dependency. The app is fully functioning after downloaded to the
+  - There’s no .NET server-side dependency. The app is fully functioning after downloaded to the
 client.
 
-
-  Client resources and capabilities are fully leveraged.
-
+  - Client resources and capabilities are fully leveraged.
 
   - Work is offloaded from the server to the client.
-
 
   - An ASP.NET Core web server isn’t required to host the app. Serverless deployment scenarios
 are possible (for example, serving the app from a CDN).
@@ -917,9 +887,7 @@ The downsides of the Blazor WebAssembly hosting model are:
 
   - Browser capabilities restrict the app.
 
-
-  Capable client hardware and software (for example, WebAssembly support) is required.
-
+  - Capable client hardware and software (for example, WebAssembly support) is required.
 
   - Download size is larger, and apps take longer to load.
 
@@ -934,19 +902,15 @@ The downsides of the Blazor WebAssembly hosting model are:
 Conversely, the Blazor Server hosting model offers the following benefits:
 
 
-  Download size is much smaller than a client-side app, and the app loads much faster.
+  - Download size is much smaller than a client-side app, and the app loads much faster.
 
-
-  The app takes full advantage of server capabilities, including use of any .NET compatible APIs.
-
+  - The app takes full advantage of server capabilities, including use of any .NET compatible APIs.
 
   - .NET on the server is used to run the app, so existing .NET tooling, such as debugging, works
 as expected.
 
-
   - Thin clients are supported. For example, server-side apps work with browsers that don’t
 support WebAssembly and on resource-constrained devices.
-
 
   - The app’s .NET/C# code base, including the app’s component code, isn’t served to clients.
 
@@ -956,13 +920,10 @@ The downsides to the Blazor Server hosting model are:
 
   - Higher UI latency. Every user interaction involves a network hop.
 
+  - There’s no offline support. If the client connection fails, the app stops working.
 
-  There’s no offline support. If the client connection fails, the app stops working.
-
-
-  Scalability is challenging for apps with many users. The server must manage multiple client
+  - Scalability is challenging for apps with many users. The server must manage multiple client
 connections and handle client state.
-
 
   - An ASP.NET Core server is required to serve the app. Serverless deployment scenarios aren’t
 possible. For example, you can’t serve the app from a CDN.
@@ -981,26 +942,26 @@ ASP.NET Web Forms apps are typically hosted on IIS on a Windows Server machine o
 apps can also:
 
 
-  Be hosted on IIS, either as static files or as an ASP.NET Core app.
+  - Be hosted on IIS, either as static files or as an ASP.NET Core app.
 
-
-  Leverage ASP.NET Core’s flexibility to be hosted on various platforms and server
+  - Leverage ASP.NET Core’s flexibility to be hosted on various platforms and server
 [infrastructures. For example, you can host a Blazor App using Nginx](https://docs.microsoft.com/aspnet/core/host-and-deploy/linux-nginx) [or Apache on Linux. For](https://docs.microsoft.com/aspnet/core/host-and-deploy/linux-apache)
 [more information about how to publish and deploy Blazor apps, see the Blazor Hosting and](https://docs.microsoft.com/aspnet/core/host-and-deploy/blazor/)
 [deployment](https://docs.microsoft.com/aspnet/core/host-and-deploy/blazor/) documentation.
 
 
 In the next section, we’ll look at how the projects for Blazor WebAssembly and Blazor Server apps are
-
 set up.
 
 
 11 CHAPTER 3 | Blazor app hosting models
 
 
-# CHAPTER 4
+**CHAPTER**
+# 4
 
 ## Project structure for Blazor apps
+
 
 Despite their significant project structure differences, ASP.NET Web Forms and Blazor share many
 similar concepts. Here, we’ll look at the structure of a Blazor project and compare it to an ASP.NET
@@ -1010,14 +971,12 @@ Web Forms project.
 [To create your first Blazor app, follow the instructions in the Blazor getting started steps. You can](https://docs.microsoft.com/aspnet/core/blazor/get-started)
 follow the instructions to create either a Blazor Server app or a Blazor WebAssembly app hosted in
 ASP.NET Core. Except for the hosting model-specific logic, most of the code in both projects is the
-
 same.
 
 ### Project file
 
 
 Blazor Server apps are .NET projects. The project file for the Blazor Server app is about as simple as it
-
 can get:
 
 
@@ -1033,7 +992,6 @@ Consequently, the project references the Blazor framework using individual packa
 By comparison, a default ASP.NET Web Forms project includes almost 300 lines of XML in its _.csproj_
 file, most of which is explicitly listing the various code and content files in the project. Since the
 release of .NET 5, both Blazor Server and Blazor WebAssembly apps can easily share one unified
-
 runtime.
 
 
@@ -1059,12 +1017,11 @@ code is mostly boilerplate and is often left unchanged.
 Blazor WebAssembly apps also define an entry point in _Program.cs_ . The code looks slightly different.
 The code is similar in that it’s setting up the app host to provide the same host-level services to the
 app. The WebAssembly app host doesn’t, however, set up an HTTP server because it executes directly
-
 in the browser.
 
 
 Blazor apps don’t use a _Global.asax_ file to define the startup logic for the app. Instead, this logic is
-contained in _Program.cs_ - r in a related Startup class that is referenced from _Program.cs_ . Either way,
+contained in _Program.cs_ or in a related Startup class that is referenced from _Program.cs_ . Either way,
 this code is used to configure the app and any app-specific services.
 
 
@@ -1103,15 +1060,13 @@ You’ll learn more about configuration in ASP.NET Core projects in the Configur
 
 Most files in Blazor projects are _.razor_ files. Razor is a templating language based on HTML and C#
 that is used to dynamically generate web UI. The _.razor_ files define components that make up the UI
-
-- f the app. For the most part, the components are identical for both the Blazor Server and Blazor
+of the app. For the most part, the components are identical for both the Blazor Server and Blazor
 WebAssembly apps. Components in Blazor are analogous to user controls in ASP.NET Web Forms.
 
 
 Each Razor component file is compiled into a .NET class when the project is built. The generated class
 captures the component’s state, rendering logic, lifecycle methods, event handlers, and other logic.
 You’ll learn more about authoring components in the Building reusable UI components with Blazor
-
 section.
 
 
@@ -1162,8 +1117,7 @@ To bootstrap Blazor, the app must:
 
   - Specify where on the page the root component ( _App.Razor_ ) should be rendered.
 
-
-  Add the corresponding Blazor framework script.
+  - Add the corresponding Blazor framework script.
 
 
 In the Blazor Server app, the root component’s host page is defined in the *_Host.cshtml* file. This file
@@ -1198,7 +1152,6 @@ server and then deals with all user interactions and UI updates.
 
 In the Blazor WebAssembly app, the host page is a simple static HTML file under _wwwroot/index.html_ .
 The <div> element with id named app is used to indicate where the root component should be
-
 rendered.
 
 
@@ -1263,14 +1216,15 @@ no need to have to re-enter form values or otherwise get the app back where you 
 20 CHAPTER 4 | Project structure for Blazor apps
 
 
-# CHAPTER 5
+**CHAPTER**
+# 5
 
 ## App startup
+
 
 Applications that are written for ASP.NET typically have a global.asax.cs file that defines the
 Application_Start event that controls which services are configured and made available for both HTML
 rendering and .NET processing. This chapter looks at how things are slightly different with ASP.NET
-
 Core and Blazor Server.
 
 ### Application_Start and Web Forms
@@ -1281,17 +1235,14 @@ configuration tasks. A fresh web forms project with the default template in Visu
 contains the following configuration logic:
 
 
-  RouteConfig - Application URL routing
+  - RouteConfig - Application URL routing
 
-
-  BundleConfig - CSS and JavaScript bundling and minification
-
+  - BundleConfig - CSS and JavaScript bundling and minification
 
 Each of these individual files resides in the App_Start folder and run only once at the start of our
 application. RouteConfig in the default project template adds the FriendlyUrlSettings for web forms to
 allow application URLs to omit the .ASPX file extension. The default template also contains a directive
 that provides permanent HTTP redirect status codes (HTTP 301) for the .ASPX pages to the friendly
-
 URL with the file name that omits the extension.
 
 
@@ -1316,14 +1267,12 @@ features such as authentication, razor pages, MVC controller routing, SignalR, a
 interactions among many others. This method was not needed in web forms, as the parsing and
 handling of the ASPX, ASCX, ASHX, and ASMX files were defined by referencing ASP.NET in the
 web.config configuration file. More information about dependency injection in ASP.NET Core is
-
-available in the online documentation.
+[available in the online documentation.](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection)
 
 
 After the app has been built by the builder, the rest of the calls on app configure its HTTP pipeline.
 With these calls, we declare from top to bottom the Middleware that will handle every request sent to
-
-- ur application. Most of these features in the default configuration were scattered across the web
+our application. Most of these features in the default configuration were scattered across the web
 forms configuration files and are now in one place for ease of reference.
 
 
@@ -1385,14 +1334,15 @@ similar to the following that would trigger a gulp script and the min target ins
 23 CHAPTER 5 | App startup
 
 
-# CHAPTER 6
+**CHAPTER**
+# 6
 
 ## Build reusable UI components with Blazor
+
 
 One of the beautiful things about ASP.NET Web Forms is how it enables encapsulation of reusable
 pieces of user interface (UI) code into reusable UI controls. Custom user controls can be defined in
 markup using _.ascx_ files. You can also build elaborate server controls in code with full designer
-
 support.
 
 
@@ -1401,12 +1351,9 @@ Blazor also supports UI encapsulation through _components_ . A component:
 
   - Is a self-contained chunk of UI.
 
-
   - Maintains its own state and rendering logic.
 
-
-  Can define UI event handlers, bind to input data, and manage its own lifecycle.
-
+  - Can define UI event handlers, bind to input data, and manage its own lifecycle.
 
   - Is typically defined in a _.razor_ file using Razor syntax.
 
@@ -1416,8 +1363,7 @@ Blazor also supports UI encapsulation through _components_ . A component:
 Razor is a light-weight markup templating language based on HTML and C#. With Razor, you can
 seamlessly transition between markup and C# code to define your component rendering logic. When
 the _.razor_ file is compiled, the rendering logic is captured in a structured way in a .NET class. The name
-
-- f the compiled class is taken from the _.razor_ file name. The namespace is taken from the default
+of the compiled class is taken from the _.razor_ file name. The namespace is taken from the default
 namespace for the project and the folder path, or you can explicitly specify the namespace using the
 @namespace directive (more on Razor directives below).
 
@@ -1425,7 +1371,6 @@ namespace for the project and the folder path, or you can explicitly specify the
 A component’s rendering logic is authored using normal HTML markup with dynamic logic added
 using C#. The @ character is used to transition to C#. Razor is typically smart about figuring out when
 you’ve switched back to HTML. For example, the following component renders a <p> tag with the
-
 current time:
 
 ```
@@ -1456,25 +1401,19 @@ component is compiled. Examples include the component’s:
 
   - Namespace
 
-
   - Base class
 
-
-  Implemented interfaces
-
+  - Implemented interfaces
 
   - Generic parameters
 
-
   - Imported namespaces
-
 
   - Routes
 
 
 Razor directives start with the @ character and are typically used at the start of a new line at the start
-
-- f the file. For example, the @namespace directive defines the component’s namespace:
+of the file. For example, the @namespace directive defines the component’s namespace:
 
 ```
 @namespace MyComponentNamespace
@@ -1497,7 +1436,7 @@ Forms equivalents, if they exist.
 
 
 
-|Directive|Description|Example|WebFormsequivalent|
+|Directive|Description|Example|Web Forms equivalent|
 |---|---|---|---|
 |@attribute|Adds a class-level<br>attribute to the<br>component|@attribute<br>[Authorize]|None|
 |@code|Adds class<br>members to the<br>component|@code { ... }|<script runat="server">...</script>|
@@ -1510,7 +1449,7 @@ Forms equivalents, if they exist.
 25 CHAPTER 6 | Build reusable UI components with Blazor
 
 
-|Directive|Description|Example|WebFormsequivalent|
+|Directive|Description|Example|Web Forms equivalent|
 |---|---|---|---|
 |@layout|Specifies a layout<br>component for the<br>component|@layout<br>MainLayout|<%@ Page<br>MasterPageFile="~/Site.Master" %>|
 |@namespace|Sets the namespace<br>for the component|@namespa<br>ce<br>MyNamesp<br>ace|None|
@@ -1520,7 +1459,7 @@ Forms equivalents, if they exist.
 
 
 
-Razor components also make extensive use of _directive attributes_ - n elements to control various
+Razor components also make extensive use of _directive attributes_ on elements to control various
 aspects of how components get compiled (event handling, data binding, component & element
 references, and so on). Directive attributes all follow a common generic syntax where the values in
 parenthesis are optional:
@@ -1575,7 +1514,7 @@ comparison of the syntaxes for ASP.NET Web Forms and Razor.
 
 
 
-|Feature|WebForms|Syntax|Razor|Synt<br>ax|
+|Feature|Web Forms|Syntax|Razor|Synt<br>ax|
 |---|---|---|---|---|
 |Directives|<%@ [directive] %>|<%@ Page %>|@[directive]|@pa<br>ge|
 |Code blocks|<% %>|<% int x = 123; %>|@{ }|@{<br>int x<br>= <br>123; }|
@@ -1615,8 +1554,7 @@ For example, you can add a Counter component like this:
 Unlike ASP.NET Web Forms, components in Blazor:
 
 
-  Don’t use an element prefix (for example, asp:).
-
+  - Don’t use an element prefix (for example, asp:).
 
   - Don’t require registration on the page or in the _web.config_ .
 
@@ -1643,7 +1581,6 @@ name, as you can in C#:
 When building SPA-style apps, it’s common for parts of a page to reload without reloading the entire
 page. Even so, it can be useful to have the title of the page change based on which component is
 currently loaded. This can be accomplished by including the <PageTitle> tag in the component’s
-
 Razor page:
 
 
@@ -1672,7 +1609,6 @@ attribute to be considered component parameters.
 
 The following Counter component defines a component parameter called IncrementAmount that can
 be used to specify the amount that the Counter should be incremented each time the button is
-
 clicked.
 
 
@@ -1688,7 +1624,6 @@ To specify a component parameter in Blazor, use an attribute as you would in ASP
 Razor components can also leverage values from the query string of the page they’re rendered on as
 a parameter source. To enable this, add the [SupplyParameterFromQuery] attribute to the parameter.
 For example, the following parameter definition would get its value from the request in the form
-
 ?IncBy=2:
 
 
@@ -1729,7 +1664,6 @@ _Counter.ascx_
 
 In Blazor, you can register handlers for DOM UI events directly using directive attributes of the form
 @on{event}. The {event} placeholder represents the name of the event. For example, you can listen for
-
 button clicks like this:
 
 
@@ -1772,7 +1706,6 @@ controls. We’ll cover handling data from different data sources in the Dealing
 
 To create a two-way data binding from a UI component to the component’s state, use the @bind
 directive attribute. In the following example, the value of the check box is bound to the isChecked
-
 field.
 
 
@@ -1793,7 +1726,6 @@ To change the event used for the bind, use the @bind:event attribute.
 
 Components can also support data binding to their parameters. To data bind, define an event callback
 parameter with the same name as the bindable parameter. The “Changed” suffix is added to the
-
 name.
 
 
@@ -1880,7 +1812,6 @@ The firstRender parameter is true the first time the component is rendered; othe
 
 Razor components can implement IDisposable to dispose of resources when the component is
 removed from the UI. A Razor component can implement IDispose by using the @implements
-
 directive:
 
 
@@ -1891,7 +1822,6 @@ directive:
 
 In ASP.NET Web Forms, it’s common to manipulate a control instance directly in code by referring to
 its ID. In Blazor, it’s also possible to capture and manipulate a reference to a component, although it’s
-
 much less common.
 
 
@@ -1951,7 +1881,6 @@ _ChildContentComponent.razor_
 A templated Razor component can also define multiple component parameters of type
 RenderFragment or RenderFragment<T>. The parameter for a RenderFragment<T> can be specified
 when it’s invoked. To specify a generic type parameter for a component, use the @typeparam Razor
-
 directive.
 
 
@@ -1978,7 +1907,6 @@ to define a base class for the component. You can name the base class anything y
 common to name the class the same as the component class, but with a Base extension added
 (CounterBase). The component-based class must also derive from ComponentBase. Then, in the Razor
 component file, add the @inherits directive to specify the base class for the component (@inherits
-
 CounterBase).
 
 
@@ -1995,20 +1923,20 @@ to the component class.
 
 
 The preceding isn’t an exhaustive treatment of all aspects of Razor components. For more information
-
 [on how to Create and use ASP.NET Core Razor components, see the Blazor documentation.](https://docs.microsoft.com/aspnet/core/blazor/components)
 
 
 39 CHAPTER 6 | Build reusable UI components with Blazor
 
 
-# CHAPTER 7
+**CHAPTER**
+# 7
 
 ## Pages, routing, and layouts
 
-ASP.NET Web Forms apps are composed of pages defined in _.aspx_ files. Each page’s address is based
 
-- n its physical file path in the project. When a browser makes a request to the page, the contents of
+ASP.NET Web Forms apps are composed of pages defined in _.aspx_ files. Each page’s address is based
+on its physical file path in the project. When a browser makes a request to the page, the contents of
 the page are dynamically rendered on the server. The rendering accounts for both the page’s HTML
 markup and its server controls.
 
@@ -2075,13 +2003,11 @@ product ID to be an int:
 
 
 Routing in Blazor is handled by the Router component. The Router component is typically used in the
-
 app’s root component ( _App.razor_ ).
 
 
 The Router component discovers the routable components in the specified AppAssembly and in the
-
-- ptionally specified AdditionalAssemblies. When the browser navigates, the Router intercepts the
+optionally specified AdditionalAssemblies. When the browser navigates, the Router intercepts the
 navigation and renders the contents of its Found parameter with the extracted RouteData if a route
 matches the address, otherwise the Router renders its NotFound parameter.
 
@@ -2113,14 +2039,11 @@ Blazor provides a NavigationManager service that can be used to:
 
   - Get the current browser address
 
-
   - Get the base address
-
 
   - Trigger navigations
 
-
-  Get notified when the address changes
+  - Get notified when the address changes
 
 
 To navigate to a different address, use the NavigateTo method:
@@ -2143,11 +2066,8 @@ page is static HTML, then you need to specify the base URL explicitly.
 ```
 
 Page layout in ASP.NET Web Forms is handled by Master Pages. Master Pages define a template with
-
-- ne or more content placeholders that can then be supplied by individual pages. Master Pages are
-
+one or more content placeholders that can then be supplied by individual pages. Master Pages are
 defined in _.master_ files and start with the <%@ Master %> directive. The content of the _.master_ files is
-
 coded as you would an _.aspx_ page, but with the addition of <asp:ContentPlaceHolder> controls to
 mark where pages can supply content.
 
@@ -2217,9 +2137,11 @@ to the app’s host page.
 45 CHAPTER 7 | Pages, routing, and layouts
 
 
-# CHAPTER 8
+**CHAPTER**
+# 8
 
 ## State management
+
 
 State management is a key concept of Web Forms applications, facilitated through ViewState, Session
 State, Application State, and Postback features. These stateful features of the framework helped to
@@ -2234,8 +2156,7 @@ deliver the same functionality with the new features in Blazor.
 When discussing state management in Web Forms application, many developers will immediately
 think of ViewState. In Web Forms, ViewState manages the state of the content between HTTP requests
 by sending a large encoded block of text back and forth to the browser. The ViewState field could be
-
-- verwhelmed with content from a page containing many elements, potentially expanding to several
+overwhelmed with content from a page containing many elements, potentially expanding to several
 megabytes in size.
 
 
@@ -2250,30 +2171,26 @@ There are several advantages of this feature:
 
   - Component state is readily available and not rebuilt between interactions.
 
-
   - State isn’t transmitted to the browser.
 
 
 However, there are some disadvantages to in-memory component state persistence to be aware of:
 
 
-  If the server restarts between request, state is lost.
-
+  - If the server restarts between request, state is lost.
 
   - Your application web server load-balancing solution must include sticky sessions to ensure
 that all requests from the same browser return to the same server. If a request goes to a
 different server, state will be lost.
 
-
-  Persistence of component state on the server can lead to memory pressure on the web server.
-
+  - Persistence of component state on the server can lead to memory pressure on the web server.
 
 For the preceding reasons, don’t rely on just the state of the component to reside in-memory on the
 server. Your application should also include some backing data store for data between requests. Some
 simple examples of this strategy:
 
 
-  In a shopping cart application, persist the content of new items added to the cart in a
+  - In a shopping cart application, persist the content of new items added to the cart in a
 database record. If the state on the server is lost, you can reconstitute it from the database
 records.
 
@@ -2281,11 +2198,10 @@ records.
 46 CHAPTER 8 | State management
 
 
-  In a multi-part web form, your users will expect your application to remember values between
+  - In a multi-part web form, your users will expect your application to remember values between
 each request. Write the data between each of your user’s posts to a data store so that they
 can be fetched and assembled into the final form response structure when the multi-part
 form is completed.
-
 
 [For additional details on managing state in Blazor apps, see ASP.NET Core Blazor state management.](https://docs.microsoft.com/aspnet/core/blazor/state-management)
 
@@ -2300,9 +2216,7 @@ made it easy to maintain state.
 
 
 The signature of the .NET Framework Session object isn’t the same as the ASP.NET Core Session
-
 [object. Consider the documentation for the new ASP.NET Core Session](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.http.isession) before deciding to migrate
-
 and use the new session state feature.
 
 
@@ -2312,7 +2226,6 @@ HTTP cookies in your application due to privacy concerns.
 
 
 [Configuration for ASP.NET Core and Session state is available in the Session and state management in](https://docs.microsoft.com/aspnet/core/fundamentals/app-state#session-state)
-
 [ASP.NET Core article.](https://docs.microsoft.com/aspnet/core/fundamentals/app-state#session-state)
 
 ### Application state
@@ -2321,8 +2234,7 @@ HTTP cookies in your application due to privacy concerns.
 The Application object in the Web Forms framework provides a massive, cross-request repository for
 interacting with application-scope configuration and state. Application state was an ideal place to
 store various application configuration properties that would be referenced by all requests, regardless
-
-- f the user making the request. The problem with the Application object was that data didn’t persist
+of the user making the request. The problem with the Application object was that data didn’t persist
 across multiple servers. The state of the application object was lost between restarts.
 
 
@@ -2350,12 +2262,11 @@ Application data can also be stored client-side on the user’s device so that i
 two browser features that allow for persistence of data in different scopes of the user’s browser:
 
 
-  localStorage - scoped to the user’s entire browser. If the page is reloaded, the browser is
+  - localStorage - scoped to the user’s entire browser. If the page is reloaded, the browser is
 closed and reopened, or another tab is opened with the same URL then the same
 localStorage is provided by the browser
 
-
-  sessionStorage - scoped to the user’s current browser tab. If the tab is reloaded, the state
+  - sessionStorage - scoped to the user’s current browser tab. If the tab is reloaded, the state
 persists. However, if the user opens another tab to your application or closes and reopens the
 browser the state is lost.
 
@@ -2372,9 +2283,11 @@ For instructions on utilizing this package to interact with localStorage and ses
 48 CHAPTER 8 | State management
 
 
-# CHAPTER 9
+**CHAPTER**
+# 9
 
 ## Forms and validation
+
 
 The ASP.NET Web Forms framework includes a set of validation server controls that handle validating
 user input entered into a form (RequiredFieldValidator, CompareValidator, RangeValidator, and so on).
@@ -2393,7 +2306,7 @@ model types, data annotations, and validation logic can be used on both the serv
 Blazor provides a set of input components. The input components handle binding field data to a
 model and validating the user input when the form is submitted.
 
-|Inputcomponent|RenderedHTMLelement|
+|Input component|Rendered HTML element|
 |---|---|
 |InputCheckbox|<input type="checkbox">|
 |InputDate|<input type="date">|
@@ -2438,27 +2351,26 @@ Handling data access in Blazor apps is the subject of the Dealing with data sect
 ### Additional resources
 
 
-For more information on forms and validation in Blazor apps, see the Blazor documentation.
+[For more information on forms and validation](https://docs.microsoft.com/aspnet/core/blazor/forms-validation) in Blazor apps, see the Blazor documentation.
 
 
 51 CHAPTER 9 | Forms and validation
 
 
-# CHAPTER 10
+**CHAPTER**
+# 10
 
 ## Work with data
 
+
 Data access is the backbone of an ASP.NET Web Forms app. If you’re building forms for the web, what
 happens to that data? With Web Forms, there were multiple data access techniques you could use to
-
 interact with a database:
 
 
   - Data Sources
 
-
   - ADO.NET
-
 
   - Entity Framework
 
@@ -2474,7 +2386,6 @@ connection to the database with Commands, Datatables, and Datasets for interacti
 could then be bound to fields on screen without much code. The drawback of this approach was that
 each set of ADO.NET objects (Connection, Command, and DataTable) was bound to libraries provided
 by a database vendor. Use of these components made the code rigid and difficult to migrate to a
-
 different database.
 
 ### Entity Framework
@@ -2492,7 +2403,6 @@ app’s business rules and allow the database to be managed by a trusted databas
 .NET, you can use an updated version of EF called EF Core. EF Core helps generate and maintain the
 interactions between your code and the database with a series of commands that are available for you
 using the dotnet ef command-line tool. Let’s take a look at a few samples to get you working with a
-
 database.
 
 #### **EF Code First**
@@ -2507,26 +2417,21 @@ storefront app that we want to store in a relational database like Microsoft SQL
 Product has a primary key and three additional fields that would be created in our database:
 
 
-  EF will identify the Id property as a primary key by convention.
+  - EF will identify the Id property as a primary key by convention.
 
-
-  Name will be stored in a column configured for text storage. The [Required] attribute
+  - Name will be stored in a column configured for text storage. The [Required] attribute
 decorating this property will add a not null constraint to help enforce this declared behavior
+of the property.
 
-     - f the property.
-
-
-  Description will be stored in a column configured for text storage, and have a maximum
+  - Description will be stored in a column configured for text storage, and have a maximum
 length configured of 4000 characters as dictated by the [MaxLength] attribute. The database
 schema will be configured with a column named MaxLength using data type varchar(4000).
-
 
   - The Price property will be stored as currency. The [Range] attribute will generate appropriate
 constraints to prevent data storage outside of the minimum and maximum values declared.
 
 
 We need to add this Product class to a database context class that defines the connection and
-
 translation operations with our database.
 
 
@@ -2571,9 +2476,7 @@ Microsoft.EntityFrameworkCore.SqlServer provider. Once connected, a database con
 MyDbContext is created. Additionally, supporting classes are created for the Product and Customer
 tables that were specified with the -t options. There are many configuration options for this command
 to generate the class hierarchy appropriate for your database. For a complete reference, see the
-
-’
-command s documentation.
+[command’s documentation.](https://docs.microsoft.com/ef/core/miscellaneous/cli/dotnet#dotnet-ef-dbcontext-scaffold)
 
 
 [More information about EF Core can be found on the Microsoft Docs site.](https://docs.microsoft.com/ef/core/)
@@ -2584,7 +2487,7 @@ command s documentation.
 When ASP.NET was first released, SOAP services were the preferred way for web servers and clients to
 exchange data. Much has changed since that time, and the preferred interactions with services have
 shifted to direct HTTP client interactions. With ASP.NET Core and Blazor, you can register the
-configuration of your HttpClient in _Program.cs_ - r in the Startup class’s ConfigureServices method. Use
+configuration of your HttpClient in _Program.cs_ or in the Startup class’s ConfigureServices method. Use
 that configuration when you need to interact with the HTTP endpoint. Consider the following
 configuration code:
 
@@ -2609,24 +2512,23 @@ services you work with. This approach will make your interactions with those ser
 55 CHAPTER 10 | Work with data
 
 
-# CHAPTER 11
+**CHAPTER**
+# 11
 
 ## Modules, handlers, and middleware
+
 
 An ASP.NET Core app is built upon a series of _middleware_ . Middleware is handlers that are arranged
 into a pipeline to handle requests and responses. In a Web Forms app, HTTP handlers and modules
 solve similar problems. In ASP.NET Core, modules, handlers, _Global.asax.cs_, and the app life cycle are
 replaced with middleware. In this chapter, you’ll learn about middleware in the context of a Blazor
-
 app.
 
 ### Overview
 
 
 The ASP.NET Core request pipeline consists of a sequence of request delegates, called one after the
-
-- ther. The following diagram demonstrates the concept. The thread of execution follows the black
-
+other. The following diagram demonstrates the concept. The thread of execution follows the black
 arrows.
 
 
@@ -2643,7 +2545,6 @@ usually in _Startup.cs_ .
 
 
 Readers familiar with Katana will feel comfortable in ASP.NET Core. In fact, Katana is a framework from
-
 which ASP.NET Core derives. It introduced similar middleware and pipeline patterns for ASP.NET 4.x.
 Middleware designed for Katana can be adapted to work with the ASP.NET Core pipeline.
 
@@ -2657,7 +2558,7 @@ cases, native ASP.NET Core middleware may be available.
 
 The following table lists replacement middleware and components in ASP.NET Core.
 
-|Module|ASPNET4xmodule<br>. .|ASPNETCoreoption<br>.|
+|Module|ASP.NET 4.x module|ASP.NET Core option|
 |---|---|---|
 |HTTP errors|CustomErrorModule|Status Code Pages<br>Middleware|
 
@@ -2666,7 +2567,7 @@ The following table lists replacement middleware and components in ASP.NET Core.
 57 CHAPTER 11 | Modules, handlers, and middleware
 
 
-|Module|ASPNET4xmodule<br>. .|ASPNETCoreoption<br>.|
+|Module|ASP.NET 4.x module|ASP.NET Core option|
 |---|---|---|
 |Default document|DefaultDocumentModule|Default Files Middleware|
 |Directory browsing|DirectoryListingModule|Directory Browsing<br>Middleware|
@@ -2686,7 +2587,6 @@ The following table lists replacement middleware and components in ASP.NET Core.
 
 
 This list isn’t exhaustive but should give an idea of what mapping exists between the two frameworks.
-
 [For a more detailed list, see IIS modules with ASP.NET Core.](https://docs.microsoft.com/aspnet/core/host-and-deploy/iis/modules)
 
 ### Custom middleware
@@ -2708,16 +2608,16 @@ Middleware can also be defined as class, either by implementing the IMiddleware 
 59 CHAPTER 11 | Modules, handlers, and middleware
 
 
-# CHAPTER 12
+**CHAPTER**
+# 12
 
 ## App configuration
 
+
 The primary way to load app configuration in Web Forms is with entries in the _web.config_ file—either
-
-- n the server or a related configuration file referenced by _web.config_ . You can use the static
+on the server or a related configuration file referenced by _web.config_ . You can use the static
 ConfigurationManager object to interact with app settings, data repository connection strings, and
-
-- ther extended configuration providers that are added into the app. It’s typical to see interactions
+other extended configuration providers that are added into the app. It’s typical to see interactions
 with app configuration as seen in the following code:
 
 
@@ -2725,7 +2625,6 @@ With ASP.NET Core and server-side Blazor, the _web.config_ file MAY be present i
 a Windows IIS server. However, there’s no ConfigurationManager interaction with this configuration,
 and you can receive more structured app configuration from other sources. Let’s take a look at how
 configuration is gathered and how you can still access configuration information from a _web.config_
-
 file.
 
 ### Configuration sources
@@ -2738,8 +2637,7 @@ configuration key take precedence over earlier values.
 
 
 ASP.NET Core was designed to be cloud-aware and to make the configuration of apps easier for both
-
-- perators and developers. ASP.NET Core is environment-aware and knows if it’s running in your
+operators and developers. ASP.NET Core is environment-aware and knows if it’s running in your
 Production or Development environment. The environment indicator is set in the
 ASPNETCORE_ENVIRONMENT system environment variable. If no value is configured, the app defaults
 to running in the Production environment.
@@ -2751,15 +2649,11 @@ By default, the configuration is loaded from the following resources in the orde
 
 1. _appsettings.json_ file, if present
 
-
 2. _appsettings.{ENVIRONMENT_NAME}.json_ file, if present
-
 
 3. User secrets file on disk, if present
 
-
 4. Environment variables
-
 
 5. Command-line arguments
 
@@ -2775,7 +2669,6 @@ The _appsettings.json_ file can be hierarchical with values structured like the 
 When presented with the preceding JSON, the configuration system flattens child values and
 references their fully qualified hierarchical paths. A colon (:) character separates each property in the
 hierarchy. For example, the configuration key section1:key0 accesses the section1 object literal’s key0
-
 value.
 
 ### User secrets
@@ -2784,18 +2677,14 @@ value.
 User secrets are:
 
 
-  Configuration values that are stored in a JSON file on the developer’s workstation, outside of
+  - Configuration values that are stored in a JSON file on the developer’s workstation, outside of
 the app development folder.
-
 
   - Only loaded when running in the Development environment.
 
-
-  Associated with a specific app.
-
+  - Associated with a specific app.
 
   - Managed with the .NET CLI’s user-secrets command.
-
 
 Configure your app for secrets storage by executing the user-secrets command:
 
@@ -2814,7 +2703,6 @@ dotnet user-secrets set "Parent:ApiKey" "12345"
 ```
 
 The preceding command makes the Parent:ApiKey configuration key available on a developer’s
-
 workstation with the value 12345.
 
 
@@ -2835,8 +2723,7 @@ Hierarchical values are flattened and separated by colon characters when read in
 However, some operating systems don’t allow the colon character environment variable names.
 ASP.NET Core addresses this limitation by converting values that have double-underscores (__) into a
 colon when they’re accessed. The Parent:ApiKey value from the user secrets section above can be
-
-- verridden with the environment variable Parent__ApiKey.
+overridden with the environment variable Parent__ApiKey.
 
 ### Command-line arguments
 
@@ -2857,7 +2744,6 @@ following XML markup:
 App-specific configuration can be defined by nesting an environmentVariables element in the
 aspNetCore element. The values defined in this section are presented to the ASP.NET Core app as
 environment variables. The environment variables load appropriately during that segment of app
-
 startup.
 
 
@@ -2902,14 +2788,12 @@ some business rules and processing for those configuration values.
 
 
 In ASP.NET Core, you can specify a class hierarchy that will receive the configuration values. These
-
 classes:
 
 
-  Don’t need to inherit from a parent class.
+  - Don’t need to inherit from a parent class.
 
-
-  Should include public properties that match the properties and type references for the
+  - Should include public properties that match the properties and type references for the
 configuration structure you wish to capture.
 
 
@@ -2934,16 +2818,17 @@ settings.
 
 
 [More information about the Options feature can be found in the Options pattern in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/options#options-interfaces)
-
 document.
 
 
 64 CHAPTER 12 | App configuration
 
 
-# CHAPTER 13
+**CHAPTER**
+# 13
 
 ## Security: Authentication and Authorization in ASP.NET Web Forms and Blazor
+
 
 Migrating from an ASP.NET Web Forms application to Blazor will almost certainly require updating
 how authentication and authorization are performed, assuming the application had authentication
@@ -2959,12 +2844,10 @@ Since ASP.NET 2.0, the ASP.NET Web Forms platform has supported a provider model
 features, including membership. The universal membership provider, along with the optional role
 provider, is commonly deployed with ASP.NET Web Forms applications. It offers a robust and secure
 way to manage authentication and authorization that continues to work well today. The most recent
-
 [offering of these universal providers is available as a NuGet package, Microsoft.AspNet.Providers.](https://www.nuget.org/packages/Microsoft.AspNet.Providers)
 
 
 The Universal Providers work with a SQL database schema that includes tables like
-
 aspnet_Applications, aspnet_Membership, aspnet_Roles, and aspnet_Users. When configured by
 [running the aspnet_regsql.exe command, the providers install tables and stored procedures that](https://docs.microsoft.com/previous-versions/ms229862(v=vs.140))
 provide all of the necessary queries and commands to work with the underlying data. The database
@@ -3001,7 +2884,6 @@ the web.config file:
 The authentication configuration section sets up the forms authentication for the application. The
 authorization section is used to disallow anonymous users for the entire application. However, you
 can provide more granular authorization rules on a per-location basis as well as apply role-based
-
 authorization checks.
 
 
@@ -3033,7 +2915,6 @@ example of this approach.
 
 
 In the code above, role-based access control (RBAC) is used to determine whether certain elements of
-
 the page, such as a SecretPanel, are visible based on the current user’s role.
 
 
@@ -3048,8 +2929,7 @@ applications leverage the universal membership provider, frequently with the add
 
 
 Although still tasked with authentication and authorization, ASP.NET Core Identity uses a different set
-
-- f abstractions and assumptions when compared to the universal providers. For example, the new
+of abstractions and assumptions when compared to the universal providers. For example, the new
 Identity model supports third party authentication, allowing users to authenticate using a social media
 account or other trusted authentication provider. ASP.NET Core Identity supports UI for commonly
 needed pages like login, logout, and register. It leverages EF Core for its data access, and uses EF Core
@@ -3088,7 +2968,6 @@ user has the Country claim with the value of “Canada”.
 
 Whether you’re using policies or roles, you can specify that a particular page in your Blazor
 application requires that role or policy with the [Authorize] attribute, applied with the @attribute
-
 directive.
 
 
@@ -3142,8 +3021,7 @@ for a user. First inject the type and assign it to a property:
 ```
 
 Then use it to work with the user’s claims. The following sample shows how to add and persist a claim
-
-- n a user:
+on a user:
 
 
 69 CHAPTER 13 | Security: Authentication and Authorization in ASP.NET Web Forms and Blazor
@@ -3154,8 +3032,7 @@ If you need to work with roles, follow the same approach. You may need to inject
 
 
 **Note:** In Blazor WebAssembly projects, you will need to provide server APIs to perform these
-
-- perations (instead of using UserManager<T> or RoleManager<T> directly). A Blazor WebAssembly
+operations (instead of using UserManager<T> or RoleManager<T> directly). A Blazor WebAssembly
 client application would manage claims and/or roles by securely calling API endpoints exposed for
 this purpose.
 
@@ -3163,24 +3040,18 @@ this purpose.
 
 
 Migrating from ASP.NET Web Forms and universal providers to ASP.NET Core Identity requires several
-
 steps:
 
 
 1. Create ASP.NET Core Identity database schema in the destination database
 
-
 2. Migrate data from universal provider schema to ASP.NET Core Identity schema
-
 
 3. Migrate configuration from the web.config to middleware and services, typically in _Program.cs_
 (or a Startup class)
 
-
 4. Update individual pages using controls and conditionals to use tag helpers and new identity
-
 APIs.
-
 
 Each of these steps is described in detail in the following sections.
 
@@ -3197,7 +3068,6 @@ Authentication type to use Individual Accounts.
 
 From the command line, you can do the same thing by running dotnet new webapp -au Individual.
 Once the app has been created, run it and register on the site. You should trigger a page like the one
-
 shown below:
 
 
@@ -3212,7 +3082,6 @@ In addition, the migration files should appear in your project, as shown:
 
 
 You can run the migration yourself, without running the web application, using this command-line
-
 tool:
 
 ```
@@ -3248,7 +3117,6 @@ migrations won’t need to take into account such customizations of the default 
 
 Once you have the destination table schema in place, the next step is to migrate your user and role
 records to the new schema. A complete list of the schema differences, including which columns map
-
 [to which new columns, can be found here.](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/membership-to-core-identity)
 
 
@@ -3283,7 +3151,6 @@ sure to specify its type here. If these extension methods aren’t working in yo
 you have the appropriate using statements and that you have the necessary NuGet package
 references. For example, your project should have some version of the
 Microsoft.AspNetCore.Identity.EntityFrameworkCore and Microsoft.AspNetCore.Identity.UI packages
-
 referenced.
 
 
@@ -3297,7 +3164,6 @@ UseAuthentication and UseAuthorization should be set up, and in the proper locat
 ASP.NET Identity does not configure anonymous or role-based access to locations from _Program.cs_ .
 You will need to migrate any location-specific authorization configuration data to filters in ASP.NET
 Core. Make note of which folders and pages will require such updates. You will make these changes in
-
 the next section.
 
 #### **Updating individual pages to use ASP.NET Core Identity abstractions**
@@ -3327,7 +3193,6 @@ The attribute does not work with child components, which should instead use Auth
 If you have logic within page markup for determining whether to display some code to a certain user,
 [you can replace this with the AuthorizeView component. The AuthorizeView component selectively](https://docs.microsoft.com/aspnet/core/blazor/security#authorizeview-component)
 displays UI depending on whether the user is authorized to see it. It also exposes a context variable
-
 that can be used to access user information.
 
 
@@ -3366,12 +3231,9 @@ programmatic support for most security requirements.
 
   - [Introduction to Identity on ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/authentication/identity)
 
-
-  [Migrate from ASP.NET Membership authentication to ASP.NET Core 2.0 Identity](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/membership-to-core-identity)
-
+  - [Migrate from ASP.NET Membership authentication to ASP.NET Core 2.0 Identity](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/membership-to-core-identity)
 
   - [Migrate Authentication and Identity to ASP.NET Core](https://docs.microsoft.com/aspnet/core/migration/identity)
-
 
   - [ASP.NET Core Blazor authentication and authorization](https://docs.microsoft.com/aspnet/core/blazor/security/)
 
@@ -3379,15 +3241,16 @@ programmatic support for most security requirements.
 77 CHAPTER 13 | Security: Authentication and Authorization in ASP.NET Web Forms and Blazor
 
 
-# CHAPTER 14
+**CHAPTER**
+# 14
 
 ## Migrate from ASP.NET Web Forms to Blazor
+
 
 Migrating a code base from ASP.NET Web Forms to Blazor is a time-consuming task that requires
 planning. This chapter outlines the process. Something that can ease the transition is to ensure the
 app adheres to an _N-tier_ architecture, wherein the app model (in this case, Web Forms) is separate
 from the business logic. This logical separation of layers makes it clear what needs to move to .NET
-
 Core and Blazor.
 
 
@@ -3397,20 +3260,16 @@ CRUD capabilities via form entry and validation.
 
 Why should a working app be migrated to Blazor? Many times, there’s no need. ASP.NET Web Forms
 will continue to be supported for many years. However, many of the features that Blazor provides are
+only supported on a migrated app. Such features include:
 
-- nly supported on a migrated app. Such features include:
 
-
-  Performance improvements in the framework such as Span<T>
-
+  - Performance improvements in the framework such as Span<T>
 
   - Ability to run as WebAssembly
 
+  - Cross-platform support for Linux and macOS
 
-  Cross-platform support for Linux and macOS
-
-
-  App-local deployment or shared framework deployment without impacting other apps
+  - App-local deployment or shared framework deployment without impacting other apps
 
 
 If these or other new features are compelling enough, there may be value in migrating the app. The
@@ -3427,8 +3286,7 @@ WebAssembly within a browser and requires no server connections. There are a num
 that may affect which is best for a specific app:
 
 
-  Running as WebAssembly doesn’t support all features (such as threading) at the current time
-
+  - Running as WebAssembly doesn’t support all features (such as threading) at the current time
 
   - Chatty communication between the client and server may cause latency issues in server-side
 mode
@@ -3479,7 +3337,6 @@ satisfy the needs of dependencies you require.
 
 
 The Blazor project lists the dependencies you require within an <ItemGroup> element in the project
-
 file:
 
 
@@ -3503,8 +3360,7 @@ backend processes. Either way, the startup is similar.
 
 The _Global.asax.cs_ file is the default startup page for Web Forms projects. In the eShop project, this file
 configures the Inversion of Control (IoC) container and handles the various lifecycle events of the app
-
-- r request. Some of these events are handled with middleware (such as Application_BeginRequest).
+or request. Some of these events are handled with middleware (such as Application_BeginRequest).
 Other events require the overriding of specific services via dependency injection (DI).
 
 
@@ -3556,7 +3412,6 @@ same logic and then transfers control to the next handler in the middleware pipe
 
 
 [For more information on migrating modules and handlers, see Migrate HTTP handlers and modules to](https://docs.microsoft.com/aspnet/core/migration/http-modules)
-
 [ASP.NET Core middleware.](https://docs.microsoft.com/aspnet/core/migration/http-modules)
 
 
@@ -3578,8 +3433,7 @@ The eShop project enables basic static file access. There are many customization
 
 
 Bundling and minification are performance optimization techniques for reducing the number and size
-
-- f server requests to retrieve certain file types. JavaScript and CSS often undergo some form of
+of server requests to retrieve certain file types. JavaScript and CSS often undergo some form of
 bundling or minification before being sent to the client. In ASP.NET Web Forms, these optimizations
 are handled at run time. The optimization conventions are defined an _App_Start/BundleConfig.cs_ file.
 In ASP.NET Core, a more declarative approach is adopted. A file lists the files to be minified, along
@@ -3587,7 +3441,6 @@ with specific minification settings.
 
 
 [For more information on bundling and minification, see Bundle and minify static assets in ASP.NET](https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification)
-
 [Core.](https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification)
 
 ### Migrate ASPX pages
@@ -3602,8 +3455,7 @@ For example, the details view comprises three files in the Web Forms project: _D
 _Details.aspx.cs_, and _Details.aspx.designer.cs_ . When converting to Blazor, the code-behind and markup
 are combined into _Details.razor_ . Razor compilation (equivalent to what’s in _.designer.cs_ files) is stored
 in the _obj_ directory and isn’t, by default, viewable in **Solution Explorer** . The Web Forms page consists
-
-- f the following markup:
+of the following markup:
 
 
 84 CHAPTER 14 | Migrate from ASP.NET Web Forms to Blazor
@@ -3644,7 +3496,6 @@ custom JavaScript. Data annotations enable easy model validation.
 
 
 For example, the _Create.aspx_ page has a data entry form with validation. An example snippet would
-
 look like this:
 
 
@@ -3654,16 +3505,14 @@ In Blazor, the equivalent markup is provided in a _Create.razor_ file:
 The EditForm context includes validation support and can be wrapped around an input. Data
 annotations are a common way to add validation. Such validation support can be added via the
 [DataAnnotationsValidator component. For more information on this mechanism, see ASP.NET Core](https://docs.microsoft.com/aspnet/core/blazor/forms-validation)
-
-Blazor forms and validation.
+[Blazor forms and validation.](https://docs.microsoft.com/aspnet/core/blazor/forms-validation)
 
 ### Migrate configuration
 
 
 In a Web Forms project, configuration data is most commonly stored in the _web.config_ file. The
 configuration data is accessed with ConfigurationManager. Services were often required to parse
-
-- bjects. With .NET Framework 4.7.2, composability was added to the configuration via
+objects. With .NET Framework 4.7.2, composability was added to the configuration via
 ConfigurationBuilders. These builders allowed developers to add various sources for the configuration
 that was then composed at run time to retrieve the necessary values.
 
@@ -3718,8 +3567,7 @@ The following EF-related changes were necessary to eShop:
 and uses the connection string from ConfigurationManager.AppSettings[ConnectionString] to
 connect. In .NET Core, this isn’t supported. The connection string must be supplied.
 
-
-  The database was accessed in a synchronous way. Though this works, scalability may suffer.
+  - The database was accessed in a synchronous way. Though this works, scalability may suffer.
 This logic should be moved to an asynchronous pattern.
 
 
@@ -3731,23 +3579,18 @@ For more information on data patterns in Blazor, see the Data access chapter.
 
 
 Finally, there are some important architectural differences to consider when migrating to Blazor. Many
-
-- f these changes are applicable to anything based on .NET Core or ASP.NET Core.
+of these changes are applicable to anything based on .NET Core or ASP.NET Core.
 
 
 Because Blazor is built on .NET Core, there are considerations in ensuring support on .NET Core. Some
-
-- f the major changes include the removal of the following features:
+of the major changes include the removal of the following features:
 
 
   - Multiple AppDomains
 
-
   - Remoting
 
-
   - Code Access Security (CAS)
-
 
   - Security Transparency
 
@@ -3757,19 +3600,15 @@ For more information on techniques to identify necessary changes to support runn
 
 
 ASP.NET Core is a reimagined version of ASP.NET and has some changes that may not initially seem
-
-- bvious. The main changes are:
+obvious. The main changes are:
 
 
   - No synchronization context, which means there’s no HttpContext.Current,
 Thread.CurrentPrincipal, or other static accessors
 
-
   - No shadow copying
 
-
   - No request queue
-
 
 Many operations in ASP.NET Core are asynchronous, which allows easier off-loading of I/O-bound
 tasks. It’s important to never block by using Task.Wait() or Task.GetResult(), which can quickly exhaust

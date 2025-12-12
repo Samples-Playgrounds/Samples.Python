@@ -172,7 +172,7 @@ Feel free to forward this guide to your team to help ensure a common understandi
 | Provide channel credentials in the client application | 73  |
 | Combine ChannelCredentials and CallCredentials        | 74  |
 | Encryption and network security                       | 75  |
-| RPC in production                                     | 77  |
+| gRPC in production                                    | 77  |
 | Self-hosted gRPC applications                         | 77  |
 | Run your app as a Windows service                     | 77  |
 | Run your app as a Linux service with systemd          | 78  |
@@ -199,7 +199,7 @@ Feel free to forward this guide to your team to help ensure a common understandi
 | Logging in ASP.NET Core gRPC                          | 98  |
 | Metrics in ASP.NET Core gRPC                          | 99  |
 | Distributed tracing                                   | 101 |
-| nnendiy A - Transactions                              | 104 |
+| Appendix A - Transactions                             | 104 |
 
 **CHAPTER** 1
 
@@ -340,7 +340,7 @@ Request/response cycles no longer need text commands. This activity simplifies a
 
 Streams allow you to create long-lived connections between sender and receiver, over which multiple messages or frames can be sent asynchronously. Multiple streams can operate independently over a single HTTP/2 connection.
 
-## **Request multiplexing over a single TCP connection**
+### **Request multiplexing over a single TCP connection**
 
 This feature is one of the most important innovations of HTTP/2. Because it allows multiple parallel requests for data, it's now possible to download web files concurrently from a single server. Websites load faster, and the need for optimization is reduced. Head-of-line (HOL) blocking, where responses
 
@@ -582,7 +582,7 @@ The best approach is to handle Guid values as a string field, by using the stand
 
 Don't use a bytes field for Guid values. Problems with *endianness* [\(Wikipedia definition\)](https://en.wikipedia.org/wiki/Endianness) can result in erratic behavior when Protobuf is interacting with other platforms, such as Java.
 
-#### **Nullable types**
+### **Nullable types**
 
 The Protobuf code generation for C# uses the native types, such as int for int32. So the values are always included and can't be null.
 
@@ -942,7 +942,9 @@ public Order CreateOrder(Dictionary<string, string> attributes)
 
 For more information about Protobuf, see the official [Protobuf documentation.](https://developers.google.com/protocol-buffers/docs/overview)
 
-<span id="page-30-0"></span>The previous chapter gave you a good look at Protobuf and how gRPC handles messages. Before you work through a detailed conversion from Windows Communication Foundation (WCF) to gRPC, it's important to know how the features available in WCF are handled in gRPC and what workarounds you can use when there's no gRPC equivalent. In particular, this chapter will cover the following subjects:
+# <span id="page-30-0"></span>Comparing WCF to gRPC
+
+The previous chapter gave you a good look at Protobuf and how gRPC handles messages. Before you work through a detailed conversion from Windows Communication Foundation (WCF) to gRPC, it's important to know how the features available in WCF are handled in gRPC and what workarounds you can use when there's no gRPC equivalent. In particular, this chapter will cover the following subjects:
 
 - Operations and methods
 - Bindings and transports
@@ -1033,9 +1035,9 @@ The [OperationContract](https://docs.microsoft.com/dotnet/api/system.servicemode
 
 The IsInitiating property lets you indicate that a method within [ServiceContract](https://docs.microsoft.com/dotnet/api/system.servicemodel.servicecontractattribute) can't be the first method called as part of a session. The IsTerminating property causes the server to close the session after an operation is called (or the client, if the property is used on a callback client). In gRPC, streams are created by single methods and closed explicitly. See [gRPC streaming.](#page-35-0)
 
-<span id="page-32-0"></span>For more information on gRPC security and encryption, see [chapter 6.](#page-74-0)
+For more information on gRPC security and encryption, see [chapter 6.](#page-74-0)
 
-# WCF bindings and transports
+# <span id="page-32-0"></span>WCF bindings and transports
 
 Windows Communication Foundation (WCF) has built-in *bindings* that specify different network protocols, wire formats, and other implementation details. gRPC effectively has just one network protocol and one wire format. (Technically you *can* customize the wire format, but that's beyond the scope of this book.) You're likely to discover that gRPC offers the best solution in most cases.
 
@@ -1211,7 +1213,7 @@ requestStream, ServerCallContext context)
 }
 ```
 
-### **ThingLog client example**
+# **ThingLog client example**
 
 ```
 public class ThingLogger : IAsyncDisposable
@@ -1248,7 +1250,7 @@ You can use client-streaming RPCs for fire-and-forget messaging, as shown in the
 
 WCF duplex binding supports multiple one-way operations on both the service interface and the client callback interface. This support allows ongoing conversations between client and server. gRPC supports something similar with bidirectional streaming RPCs, where both parameters are marked with the stream modifier.
 
-#### **chat.proto**
+### **chat.proto**
 
 ```
 service Chatter {
@@ -1408,7 +1410,7 @@ denied"), metadata);
 }
 ```
 
-## <span id="page-40-1"></span>**Catch errors in gRPC clients**
+# <span id="page-40-1"></span>**Catch errors in gRPC clients**
 
 Just like WCF clients can catch [FaultException](https://docs.microsoft.com/dotnet/api/system.servicemodel.faultexception-1) errors, a gRPC client can catch an RpcException to handle errors. Because RpcException isn't a generic type, you can't catch different error types in different blocks. But you can use C#'s *exception filters* feature to declare separate catch blocks for different status codes, as shown in the following example:
 
@@ -1456,7 +1458,7 @@ The WS-Discovery protocol is used to locate services on a local network. gRPC se
 
 Security, authentication, and authorization are covered in much more detail in [chapter 6](#page-74-0). But it's worth noting here that, unlike WCF, gRPC doesn't support WS-Security, WS-Federation, or XML Encryption. Even so, gRPC provides excellent security. All gRPC network traffic is automatically encrypted when it's using HTTP/2 over TLS. You can use X509 certificates for mutual client/server authentication.
 
-# <span id="page-42-0"></span>**WS-ReliableMessaging**
+## <span id="page-42-0"></span>**WS-ReliableMessaging**
 
 gRPC does not provide an equivalent to WS-ReliableMessaging. Retry semantics should be handled in code, possibly with a library like [Polly](https://github.com/App-vNext/Polly). When you're running in Kubernetes or similar orchestration environments, [service meshes](#page-99-0) can also help to provide reliable messaging between services.
 
@@ -1483,7 +1485,7 @@ The sample WCF application is a minimal stub of a set of stock trading services.
 
 The .NET SDK comes with a powerful CLI tool, dotnet, which enables you to create and manage projects and solutions from the command line. The SDK is closely integrated with Visual Studio, so everything is also available through the familiar graphical user interface. This chapter shows both ways to create a new ASP.NET Core gRPC project.
 
-# <span id="page-43-2"></span>**Create the project by using Visual Studio**
+## <span id="page-43-2"></span>**Create the project by using Visual Studio**
 
 #### **Important**
 
@@ -1658,7 +1660,7 @@ public class PortfolioService : Protos.Portfolios.PortfoliosBase
 }
 ```
 
-## <span id="page-50-0"></span>**The portfolios.proto file**
+# <span id="page-50-0"></span>**The portfolios.proto file**
 
 If you followed the instructions in the previous section, you should have a gRPC project with a portfolios.proto file that looks like this:
 
@@ -1987,7 +1989,7 @@ When you use the Visual Studio **Add Connected Service** feature, the portfolios
 
 If you're not using Visual Studio or prefer to work from the command line, you can use the dotnetgrpc global tool to manage Protobuf references in a .NET gRPC project. For more information, see the dotnet-grpc [documentation.](https://docs.microsoft.com/aspnet/core/grpc/dotnet-grpc)
 
-#### **Use the Portfolios service from a client application**
+### **Use the Portfolios service from a client application**
 
 The following code is a brief example of how to use the generated client in a console application. A more detailed exploration of the gRPC client code is at the end of this chapter.
 
@@ -2471,7 +2473,7 @@ update.PriceCents / 100m};
 }
 ```
 
-### **Client cleanup**
+#### **Client cleanup**
 
 When the window is closed and the MainWindowViewModel is disposed (from the Closed event of MainWindow), we recommend that you properly dispose the AsyncDuplexStreamingCall object. In particular, the CompleteAsync method on the RequestStream should be called to gracefully close the stream on the server. This example shows the DisposeAsync method from the sample view-model:
 
@@ -2948,7 +2950,7 @@ Due to an internal Windows bug as [documented here](https://github.com/dotnet/ru
 
 ]{custom-style=Code}`csharp X509Certificate2 cert = X509Certificate2.CreateFromPem(certificatePem, rsaPrivateKeyPem); if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows)) { var originalCert = cert; cert = new X509Certificate2(cert.Export(X509ContentType.Pkcs12)); originalCert.Dispose(); } [`
 
-## <span id="page-80-0"></span>**Combine ChannelCredentials and CallCredentials**
+# <span id="page-80-0"></span>**Combine ChannelCredentials and CallCredentials**
 
 You can configure your server to use both certificate and token authentication. To do this, apply the certificate changes to the Kestrel server, and use the JWT bearer middleware in ASP.NET Core.
 
@@ -3158,7 +3160,7 @@ You can also create certificates by using one of the [X509Certificate2 construct
 
 You can configure Kestrel to use a certificate in two ways: from configuration or in code.
 
-## **Set HTTPS certificates by using configuration**
+### **Set HTTPS certificates by using configuration**
 
 The configuration approach requires setting the password and path to the certificate .pfx file in the Kestrel configuration section. In appsettings.json, that looks like this:
 
@@ -3280,7 +3282,10 @@ The Dockerfile has two parts: the first uses the sdk base image to build and pub
 
 Microsoft base images for Docker set the ASPNETCORE\_URLS environment variable to http://+:80, meaning that Kestrel runs without HTTPS on that port. If you're using HTTPS with a custom certificate (as described in [Self-hosted gRPC applications\)](#page-83-1), you should override this configuration. Set the environment variable in the runtime image creation part of your Dockerfile.
 
-# Runtime image creation **FROM** mcr.microsoft.com/dotnet/aspnet:7.0
+```
+# Runtime image creation
+FROM mcr.microsoft.com/dotnet/aspnet:7.0
+```
 
 **ENV** ASPNETCORE\_URLS=https://+:443
 
@@ -3302,9 +3307,7 @@ The confusingly named --tag flag (which can be shortened to -t) specifies the wh
 
 If you have multiple applications within a single solution, you can keep the Dockerfile for each application in its own folder, beside the .csproj file. You should still run the docker build command from the base directory to ensure that the solution and all the projects are copied into the image. You can specify a Dockerfile below the current directory by using the --file (or -f) flag.
 
-```
 docker build -t stockdata:1.0.0 -f ./src/StockData/Dockerfile .
-```
 
 ## <span id="page-90-1"></span>**Run the image in a container on your machine**
 
@@ -3350,7 +3353,7 @@ Kubernetes includes the following functionality:
 
 This chapter will detail how to deploy an ASP.NET Core gRPC service and a website that consumes the service into a Kubernetes cluster. The sample application used is available in the [dotnet](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/main/KubernetesSample)[architecture/grpc-for-wcf-developers](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/main/KubernetesSample) repository on GitHub.
 
-# <span id="page-91-1"></span>**Kubernetes terminology**
+## <span id="page-91-1"></span>**Kubernetes terminology**
 
 Kubernetes uses *desired state configuration*: the API is used to describe objects like *Pods*, *Deployments*, and *Services*, and the *Control Plane* takes care of implementing the desired state across all the *nodes* in a *cluster*. A Kubernetes cluster has a *Master* node that runs the *Kubernetes API*, which you can communicate with programmatically or by using the kubectl command-line tool. kubectl can create and manage objects through command-line arguments, but it works best with YAML files that contain declaration data for Kubernetes objects.
 
@@ -3908,7 +3911,7 @@ The ASP.NET Core gRPC client and server libraries include explicit support for D
 
 All of this happens only if a listener is consuming the diagnostic information. If there's no listener, no diagnostics are written and no activities are created.
 
-## **Add your own DiagnosticSource and Activity**
+# **Add your own DiagnosticSource and Activity**
 
 To add your own diagnostics or create explicit spans within your application code, see the [DiagnosticSource User Guide](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md#instrumenting-with-diagnosticsourcediagnosticlistener) and [Activity User Guide.](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#activity-usage)
 

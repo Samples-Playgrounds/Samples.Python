@@ -1627,7 +1627,7 @@ The [Application Gateway Ingress Controller](https://azure.github.io/application
 
 Kubernetes includes a built-in feature that supports HTTP (Level 7) load balancing, called [Ingress.](https://kubernetes.io/docs/concepts/services-networking/ingress/)  Ingress defines a set of rules for how microservice instances inside AKS can be exposed to the outside world. In the previous image, the ingress controller interprets the ingress rules configured for the cluster and automatically configures the Azure Application Gateway. Based on those rules, the Application Gateway routes traffic to microservices running inside AKS. The ingress controller listens for changes to ingress rules and makes the appropriate changes to the Azure Application Gateway.
 
-## <span id="page-72-1"></span>**Azure API Management**
+### <span id="page-72-1"></span>**Azure API Management**
 
 For moderate to large-scale cloud-native systems, you may consider [Azure API Management](https://azure.microsoft.com/services/api-management/). It's a cloud-based service that not only solves your API Gateway needs, but provides a full-featured developer and administrative experience. API Management is shown in Figure 4-6.
 
@@ -3297,7 +3297,7 @@ IdentityServerConstants.ExternalCookieAuthenticationScheme;
 
 *Figure 8-2. Configuring IdentityServer.*
 
-### <span id="page-155-0"></span>**JavaScript clients**
+#### <span id="page-155-0"></span>**JavaScript clients**
 
 Many cloud-native applications use server-side APIs and rich client single page applications (SPAs) on the front end. IdentityServer ships a [JavaScript client](https://docs.duendesoftware.com/identityserver/v6/quickstarts/js_clients/) (oidc-client.js) via NPM that can be added to SPAs to enable them to use IdentityServer for sign in, sign out, and token-based authentication of web APIs.
 
@@ -3934,7 +3934,7 @@ Modern cloud-native applications embrace the widely accepted practice of [Infras
 
 Tools like Azure Resource Manager (ARM), Terraform, and the Azure Command Line Interface (CLI) enable you to declaratively script the cloud infrastructure you require.
 
-## <span id="page-184-1"></span>**Azure Resource Manager templates**
+#### <span id="page-184-1"></span>**Azure Resource Manager templates**
 
 ARM stands for [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview). It's an API provisioning engine that is built into Azure and exposed as an API service. ARM enables you to deploy, update, delete, and manage the resources contained in Azure resource group in a single, coordinated operation. You provide the engine with a JSON-based template that specifies the resources you require and their configuration. ARM automatically orchestrates the deployment in the correct order respecting dependencies. The engine ensures idempotency. If a desired resource already exists with the same configuration, provisioning will be ignored.
 

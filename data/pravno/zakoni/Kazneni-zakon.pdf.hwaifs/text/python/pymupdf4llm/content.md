@@ -8,7 +8,6 @@
 
 
 **GLAVA PRVA (I.)**
-
 **TEMELJNE ODREDBE**
 
 
@@ -51,8 +50,7 @@ izmijeni jednom ili više puta, primijenit će se zakon koji je najblaži za po�
 
 (3) Ako se u slučajevima iz stavka 2. ovoga članka izmijeni naziv ili opis kaznenog djela, sud
 će ispitati postoji li pravni kontinuitet tako da činjenično stanje podvede pod biće
-
-- dgovarajućeg kaznenog djela iz novog zakona pa ako utvrdi da postoji, primijenit će zakon
+odgovarajućeg kaznenog djela iz novog zakona pa ako utvrdi da postoji, primijenit će zakon
 koji je blaži za počinitelja. Nema kaznenog djela ako pravni kontinuitet ne postoji.
 
 
@@ -87,7 +85,6 @@ Nitko ne može zadržati imovinsku korist ostvarenu protupravnom radnjom.
 
 
 **GLAVA DRUGA (II.)**
-
 **PRIMJENA KAZNENOG ZAKONODAVSTVA REPUBLIKE HRVATSKE**
 
 
@@ -146,13 +143,11 @@ prema njegovoj zamisli trebala nastupiti.
 
 
 (2) U slučajevima sudioništva kazneno je djelo počinjeno u mjestu određenom u stavku 1.
-
-- voga članka i u mjestu gdje je bilo koji od sudionika radio ili bio dužan raditi ili gdje je
+ovoga članka i u mjestu gdje je bilo koji od sudionika radio ili bio dužan raditi ili gdje je
 prema njegovoj zamisli posljedica iz zakonskog opisa kaznenog djela trebala nastupiti.
 
 
 **Primjena kaznenog zakonodavstva za kaznena djela počinjena na području Republike**
-
 **Hrvatske**
 
 
@@ -185,13 +180,11 @@ vrijeme počinjenja kaznenog djela.
 (1) Kad je u slučaju primjene kaznenog zakonodavstva Republike Hrvatske prema odredbama
 članka 10. i članka 11. ovoga Zakona kazneni postupak pravomoćno dovršen u stranoj državi,
 kazneni postupak u Republici Hrvatskoj pokrenut će se po odobrenju glavnog državnog
-
-- dvjetnika.
+odvjetnika.
 
 
 (2) Kazneni postupak radi primjene kaznenog zakonodavstva Republike Hrvatske prema
-
-- dredbama članka 10. i članka 11. ovoga Zakona neće se pokrenuti protiv počinitelja
+odredbama članka 10. i članka 11. ovoga Zakona neće se pokrenuti protiv počinitelja
 kaznenog djela koje je, osim na području Republike Hrvatske, počinjeno i na području države
 ugovornice Konvencije o provedbi Sporazuma iz Schengena ako je u njoj za to djelo kazneni
 postupak pravomoćno dovršen.
@@ -244,8 +237,7 @@ pojasu ili na otvorenom moru.
 (1) Kazneno zakonodavstvo Republike Hrvatske primjenjuje se prema hrvatskom
 državljaninu i osobi koja ima prebivalište u Republici Hrvatskoj, koja izvan područja
 Republike Hrvatske počini bilo koje drugo kazneno djelo osim onih koja su obuhvaćena
-
-- dredbama iz članka 13. i članka 16. ovoga Zakona, ako je to kazneno djelo kažnjivo i prema
+odredbama iz članka 13. i članka 16. ovoga Zakona, ako je to kazneno djelo kažnjivo i prema
 zakonu države u kojoj je počinjeno.
 
 
@@ -255,7 +247,6 @@ državljanstvo nakon počinjenja kaznenog djela.
 
 (3) U slučajevima iz stavka 1. i 2. ovoga članka kod kaznenih djela iz članka 115. stavka 3. i
 4., članka 116., članka 152., članka 153., članka 154., članka 158., članka 159., članka 161.,
-
 članka 162., članka 163., članka 164., članka 166. i članka 169. ovoga Zakona te drugih
 kaznenih djela kod kojih je to predviđeno međunarodnim ugovorom kojeg je Republika
 Hrvatska stranka, kazneno zakonodavstvo Republike Hrvatske primijenit će se i kad kazneno
@@ -265,8 +256,7 @@ djelo nije kažnjivo prema zakonu države u kojoj je počinjeno.
 (4) Kad hrvatski državljani sudjeluju u mirovnim operacijama ili drugim međunarodnim
 aktivnostima izvan područja Republike Hrvatske i u takvim operacijama ili aktivnostima
 počine kazneno djelo, primjena zakonodavstva Republike Hrvatske ravnat će se prema
-
-- dredbama ovog Zakona, ako međunarodnim ugovorom kojeg je Republika Hrvatska stranka
+odredbama ovog Zakona, ako međunarodnim ugovorom kojeg je Republika Hrvatska stranka
 nije predviđeno drugačije.
 
 
@@ -382,7 +372,6 @@ zakonu države u kojoj je kazneno djelo počinio oproštena,
 
 3. ako se kazneno djelo po zakonu države u kojoj je počinjeno progoni po prijedlogu ili
 privatnoj tužbi, a takav prijedlog ili tužba nisu podneseni, ili je nastupila zastara kaznenog
-
 progona.
 
 
@@ -393,8 +382,7 @@ provođenje pravičnog postupka pred sudom države u kojoj je kazneno djelo poč
 države čiji je počinitelj državljanin ili drugim sudom koji je nadležan za suđenje. Ako je
 kazneni postupak proveden u drugoj državi suprotno međunarodno priznatim standardima
 pravičnog suđenja, kazneni postupak može se pokrenuti samo uz odobrenje glavnog državnog
-
-- dvjetnika.
+odvjetnika.
 
 
 (7) U slučaju iz članka 14., članka 15., članka 16. i članka 17. ovoga Zakona kazneni
@@ -414,7 +402,6 @@ Druge izvršene kaznenopravne sankcije uračunat će se prema pravičnoj ocjeni 
 
 
 **GLAVA TREĆA (III.)**
-
 **KAZNENO DJELO**
 
 
@@ -467,8 +454,7 @@ napadom.
 
 (1) Isključena je protupravnost djela počinjenog radi toga da se od sebe ili drugoga otkloni
 istodobna opasnost koja se na drugi način nije mogla otkloniti ako je učinjeno zlo manje od
-
-- noga koje je prijetilo.
+onoga koje je prijetilo.
 
 
 (2) Nije kriv tko počini protupravnu radnju da bi od sebe ili drugoga otklonio istodobnu
@@ -512,8 +498,7 @@ duševne smetnje.
 
 
 (3) Prema osobi koja je u stanju neubrojivosti ostvarila protupravno djelo postupit će se prema
-
-- dredbama Zakona o zaštiti osoba s duševnim smetnjama.
+odredbama Zakona o zaštiti osoba s duševnim smetnjama.
 
 
 (4) Neubrojivoj osobi može se izreći sigurnosna mjera zabrane obavljanja određene dužnosti
@@ -754,7 +739,6 @@ sudioniku kod kojega postoje.
 
 
 **GLAVA ČETVRTA (IV.)**
-
 **KAZNE**
 
 
@@ -807,8 +791,7 @@ pravednosti kažnjavanja te omogućiti počinitelju ponovno uključivanje u dru�
 
 
 (1) Novčana kazna se izriče u dnevnim iznosima. Ona ne može biti manja od trideset niti veća
-
-- d tristo šezdeset dnevnih iznosa, osim za kaznena djela počinjena iz koristoljublja, kad se
+od tristo šezdeset dnevnih iznosa, osim za kaznena djela počinjena iz koristoljublja, kad se
 može izreći do pet stotina dnevnih iznosa ili kad je novčana kazna od pet stotina dnevnih
 iznosa izričito propisana ovim Zakonom.
 
@@ -832,15 +815,13 @@ za izdavanje kaznenog naloga.
 
 
 (6) Počinitelj je dužan novčanu kaznu platiti u roku koji odredi sud, a koji ne može biti kraći
-
-- d trideset dana niti duži od šest mjeseci, a može mu se naložiti i obročna otplata u roku do
+od trideset dana niti duži od šest mjeseci, a može mu se naložiti i obročna otplata u roku do
 jedne godine. Sud može odrediti da će se obročna otplata ukinuti ako počinitelj ne plati
 pojedini obrok uredno.
 
 
 (7) Ne može li osuđenik u cijelosti ili djelomično isplatiti novčanu kaznu u roku koji je
-
-- dređen presudom zbog znatnog pogoršanja imovinskih prilika do kojih je došlo bez njegove
+određen presudom zbog znatnog pogoršanja imovinskih prilika do kojih je došlo bez njegove
 krivnje nakon donošenja presude, sud može na njegov zahtjev produljiti rok plaćanja do
 dvadeset i četiri mjeseca ili odrediti obročnu otplatu u tom roku.
 
@@ -894,8 +875,7 @@ novčanu kaznu u roku određenom presudom, sud će je zamijeniti kaznom zatvora.
 
 (2) Kazna zatvora u trajanju do šest mjeseci izriče se na pune mjesece i dane. Kazna zatvora u
 trajanju duljem od šest mjeseci izriče se na pune godine i mjesece, osim kod primjene
-
-- dredaba o stjecaju, kada se može izreći i na pune dane.
+odredaba o stjecaju, kada se može izreći i na pune dane.
 
 
 (3) Kod zamjene novčane kazne kaznom zatvora, kazna zatvora se izriče na pune dane, a
@@ -903,7 +883,6 @@ može biti i kraća od tri mjeseca.
 
 
 (4) Kazna zatvora do jedne godine može se izvršavati u domu sukladno odredbama posebnog
-
 zakona.
 
 
@@ -958,14 +937,11 @@ Zakonom nije drugačije propisano.
 
 
 (1) Pri izboru vrste i mjere kazne sud će, polazeći od stupnja krivnje i svrhe kažnjavanja,
-
-- cijeniti sve okolnosti koje utječu da kazna po vrsti i mjeri bude lakša ili teža (olakotne i
-
-- tegotne okolnosti), a osobito jačinu ugrožavanja ili povrede zaštićenog dobra, pobude iz
+ocijeniti sve okolnosti koje utječu da kazna po vrsti i mjeri bude lakša ili teža (olakotne i
+otegotne okolnosti), a osobito jačinu ugrožavanja ili povrede zaštićenog dobra, pobude iz
 kojih je kazneno djelo počinjeno, stupanj povrede počiniteljevih dužnosti, način počinjenja i
 skrivljene učinke kaznenog djela, prijašnji počiniteljev život, njegove osobne i imovinske
 prilike te njegovo ponašanje nakon počinjenog kaznenog djela, odnos prema žrtvi i trud da
-
 naknadi štetu.
 
 
@@ -989,8 +965,7 @@ trudio naknaditi tu štetu, a svrha kažnjavanja može se postići i takvom bla�
 
 
 (3) Blažu kaznu od propisane za određeno kazneno djelo sud može izreći i kada su se državni
-
-- dvjetnik i okrivljenik o tome sporazumjeli.
+odvjetnik i okrivljenik o tome sporazumjeli.
 
 
 **Granice ublažavanja kazne**
@@ -1068,7 +1043,6 @@ dužan držati se granica propisanih u članku 49. stavku 1. ovoga Zakona.
 (1) Ako počinitelj jednom ili više radnji počini više kaznenih djela za koja mu se istodobno
 sudi, sud će mu za svako kazneno djelo utvrditi kaznu, a zatim će ga, na temelju ocjene
 počiniteljeve ličnosti i počinjenih kaznenih djela u njihovoj ukupnosti, osuditi na jedinstvenu
-
 kaznu.
 
 
@@ -1077,8 +1051,7 @@ kaznu.
 
 (2) Jedinstvena kazna sastoji se u povišenju najviše pojedinačne utvrđene kazne, ali ne smije
 doseći zbir pojedinačnih kazni, niti premašiti najveću mjeru kazne dugotrajnog zatvora,
-
-- dnosno novčane kazne.
+odnosno novčane kazne.
 
 
 (3) Ako su za dva ili više kaznenih djela utvrđene pojedinačne kazne dugotrajnog zatvora čiji
@@ -1091,7 +1064,6 @@ jedinstvenu kaznu zatvora i jedinstvenu novčanu kaznu.
 
 
 (5) U primjeni stavka 2. i 4. ovoga članka kazna maloljetničkog zatvora izjednačuje se s
-
 kaznom zatvora.
 
 
@@ -1104,7 +1076,6 @@ kaznom zatvora.
 (1) Produljeno kazneno djelo je počinjeno kada počinitelj s namjerom izvrši više odvojenih
 radnji u prirodnom smislu kojima se ostvaruju bića istog ili istovrsnih kaznenih djela, ako one
 s obzirom na njihovu prostornu i vremensku povezanost čine jedinstvenu cjelinu u pravnom
-
 smislu.
 
 
@@ -1164,7 +1135,6 @@ Vrijeme provedeno u pritvoru i istražnom zatvoru, kao i svako oduzimanje slobod
 kaznenim djelom, uračunava se u izrečenu kaznu zatvora, kaznu dugotrajnog zatvora i
 novčanu kaznu. Prilikom uračunavanja izjednačuje se jedan dan pritvora, istražnog zatvora i
 svakog drugog oduzimanja slobode te jedan dnevni iznos novčane kazne s jednim danom
-
 zatvora.
 
 
@@ -1184,14 +1154,12 @@ duljem od šest mjeseci.
 
 (3) Kada sud novčanu kaznu zamjenjuje radom za opće dobro, zamijenit će jedan dnevni
 iznos s dva sata rada, a kad kaznu zatvora zamjenjuje radom za opće dobro, zamijenit će jedan
-
 dan zatvora s dva sata rada.
 
 
 (4) Sud može počinitelju uz rad za opće dobro odrediti zaštitni nadzor iz članka 64. ovoga
 Zakona, čije trajanje ne može biti duže od vremena u kojem počinitelj mora izvršiti rad za
-
-- pće dobro.
+opće dobro.
 
 
 (5) Rad za opće dobro izvršit će se samo uz pristanak osuđenika.
@@ -1200,8 +1168,7 @@ Zakona, čije trajanje ne može biti duže od vremena u kojem počinitelj mora i
 (6) Osuđenik će, nakon što nadležnom tijelu za probaciju dade pristanak, rad za opće dobro
 izvršiti u roku koji to tijelo odredi, vodeći računa o njegovim mogućnostima s obzirom na
 njegove osobne prilike i zaposlenje. Ovaj rok ne može biti kraći od jednog mjeseca niti dulji
-
-- d dvije godine računajući od početka izvršavanja rada za opće dobro. Sadržaj rada za opće
+od dvije godine računajući od početka izvršavanja rada za opće dobro. Sadržaj rada za opće
 dobro određuje nadležno tijelo za probaciju u dogovoru s osuđenikom vodeći računa o
 njegovim sposobnostima.
 
@@ -1219,10 +1186,8 @@ radom za opće dobro.
 
 
 (8) Ako osuđenik svojom krivnjom ne izvršava rad za opće dobro, sud će odmah donijeti
-
-- dluku kojom određuje izvršenje izrečene kazne u neizvršenom dijelu ili u cijelosti. Ako
-
-- suđenik ne izvrši rad za opće dobro bez svoje krivnje, nadležno tijelo za probaciju produžit
+odluku kojom određuje izvršenje izrečene kazne u neizvršenom dijelu ili u cijelosti. Ako
+osuđenik ne izvrši rad za opće dobro bez svoje krivnje, nadležno tijelo za probaciju produžit
 će rok iz stavka 5. ovoga članka.
 
 
@@ -1244,8 +1209,7 @@ zaštitnog nadzora, ili mu može produljiti rok za izvršenje zaštitnog nadzora
 
 (1) Uvjetnom osudom određuje se da se kazna na koju je počinitelj osuđen neće izvršiti ako
 počinitelj u vremenu provjeravanja ne počini novo kazneno djelo i ispuni određene mu
-
-- bveze.
+obveze.
 
 
 (2) Sud može počinitelju koji je osuđen na kaznu zatvora u trajanju do jedne godine ili na
@@ -1262,8 +1226,7 @@ na pune godine i počinje teći od dana pravomoćnosti presude.
 
 (4) Sud može počinitelju uz uvjetnu osudu odrediti jednu ili više posebnih obveza samostalno
 sukladno odredbama članka 62. i članka 63. ovoga Zakona ili uz zaštitni nadzor sukladno
-
-- dredbi članka 64. ovoga Zakona.
+odredbi članka 64. ovoga Zakona.
 
 
 (5) Trajanje posebnih obveza i zaštitnog nadzora ne smije biti dulje od vremena
@@ -1271,8 +1234,7 @@ provjeravanja.
 
 
 (6) Kad sud izrekne kaznu zatvora i novčanu kaznu, može odlučiti da se pod uvjetima iz
-
-- voga članka neće izvršiti samo kazna zatvora.
+ovoga članka neće izvršiti samo kazna zatvora.
 
 
 **Djelomična uvjetna osuda**
@@ -1285,8 +1247,7 @@ provjeravanja.
 
 
 (1) Sud može počinitelju koji je osuđen na novčanu kaznu ili kaznu zatvora u trajanju većem
-
-- d jedne, a manjem od tri godine, izreći uvjetnu osudu za samo dio kazne ako ocijeni da
+od jedne, a manjem od tri godine, izreći uvjetnu osudu za samo dio kazne ako ocijeni da
 postoji visok stupanj vjerojatnosti da i bez izvršenja cijele kazne neće ubuduće činiti kaznena
 djela.
 
@@ -1314,8 +1275,7 @@ polovine izrečene kazne.
 
 (1) Sud će opozvati uvjetnu osudu ako osuđeniku za jedno ili više kaznenih djela počinjenih
 za vrijeme provjeravanja izrekne kaznu zatvora u trajanju duljem od jedne godine. Sud će
-
-- pozvati uvjetnu osudu ako osuđenik bez opravdanog razloga, u roku koji je određen
+opozvati uvjetnu osudu ako osuđenik bez opravdanog razloga, u roku koji je određen
 presudom, ne vrati imovinsku korist ostvarenu kaznenim djelom.
 
 
@@ -1333,8 +1293,7 @@ utvrđene te izreći jedinstvenu kaznu prema odredbama članka 53. ovoga Zakona.
 
 
 1. za novo kazneno djelo izreći kaznu i odrediti njezino izvršenje ne mijenjajući raniju uvjetnu
-
-- sudu,
+osudu,
 
 
 2. za novo kazneno djelo izreći kaznu koju će kao i raniju uvjetnu kaznu uzeti kao utvrđene te
@@ -1343,8 +1302,7 @@ provjeravanja u kojem se ova kazna neće izvršiti.
 
 
 (5) Sud može opozvati uvjetnu osudu i odrediti izvršenje izrečene kazne osuđeniku koji bez
-
-- pravdanog razloga krši obvezu koja mu je određena sigurnosnom mjerom izrečenom uz
+opravdanog razloga krši obvezu koja mu je određena sigurnosnom mjerom izrečenom uz
 uvjetnu osudu ili u roku koji mu je određen ne izvrši u potpunosti ili većoj mjeri obveze
 navedene u članku 62. ovoga Zakona, ili ih teško ili uporno krši, ili ustrajno izbjegava
 provođenje zaštitnog nadzora iz članka 64. ovoga Zakona. Ako se utvrdi da počinitelj obveze
@@ -1374,7 +1332,6 @@ protekle dvije godine od isteka vremena provjeravanja.
 
 (8) U slučaju iz stavka 5. ovoga članka uvjetna osuda se ne može opozvati nakon što je
 proteklo godinu dana od isteka roka određenog za izvršavanje obveza iz članka 62. ovoga
-
 Zakona.
 
 
@@ -1390,13 +1347,11 @@ neće počiniti kazneno djelo te ako na to pristaje.
 
 
 (2) Prilikom odlučivanja o prijedlogu sud će cijeniti ličnost osuđenika, njegov prijašnji život i
-
-- suđivanost, je li protiv njega u tijeku drugi kazneni postupak, odnos prema počinjenom
+osuđivanost, je li protiv njega u tijeku drugi kazneni postupak, odnos prema počinjenom
 kaznenom djelu i žrtvi, ponašanje tijekom izdržavanja kazne zatvora, uspješnost primjene
 programa izvršavanja kazne zatvora, je li došlo do promjene njegova ponašanja nakon
 počinjenog kaznenog djela ili se očekuje da će do tih promjena doći primjenom mjera nadzora
 za vrijeme uvjetnog otpusta te životne okolnosti i njegovu spremnost za uključivanje u život
-
 na slobodi.
 
 
@@ -1428,8 +1383,7 @@ daljnjeg provođenja obveza ili zaštitnog nadzora nad osobom koja je osuđena z
 djela kojima se ugrožava ili povređuje tjelesni, psihički ili spolni integritet osobe i za koja je
 propisana kazna zatvora od pet ili više godina, postoji opasnost da će počiniti slično kazneno
 djelo, kada se obveze ili zaštitni nadzor iz stavka 2. mogu produljiti za jednu do pet godina ili
-
-- drediti nove obveze. Obveze ili zaštitni nadzor ne mogu trajati dulje od isteka neizdržanog
+odrediti nove obveze. Obveze ili zaštitni nadzor ne mogu trajati dulje od isteka neizdržanog
 dijela kazne zatvora na koju je počinitelj osuđen.
 
 
@@ -1442,12 +1396,10 @@ dijela kazne zatvora na koju je počinitelj osuđen.
 (1) Počini li osuđenik dok je na uvjetnom otpustu jedno ili više kaznenih djela za koja mu je
 izrečena kazna zatvora od jedne godine ili teža kazna, sud koji mu je izrekao tu kaznu opozvat
 će uvjetni otpust i osuditi ga na jedinstvenu kaznu primjenom članka 51. i članka 53. stavka 1.
-
-- voga Zakona.
+ovoga Zakona.
 
 
 (2) Kada osuđeniku izrekne kaznu u trajanju kraćem od jedne godine, sud iz stavka 1. ovoga
-
 članka može:
 
 
@@ -1463,14 +1415,12 @@ uvjetne osude počinje teći istekom vremena provjeravanja iz uvjetnog otpusta.
 
 
 (3) Sudac izvršenja će opozvati uvjetni otpust i odrediti izvršenje izrečene kazne ako osuđena
-
-- soba tijekom provjeravanja ne izvrši u potpunosti ili većoj mjeri obveze iz članka 62. ovoga
+osoba tijekom provjeravanja ne izvrši u potpunosti ili većoj mjeri obveze iz članka 62. ovoga
 Zakona koje su joj određene, ili ih teško ili uporno krši, ili ustrajno izbjegava provođenje
 zaštitnog nadzora iz članka 64. ovoga Zakona. Ako se utvrdi da počinitelj obveze nije izvršio
 iz opravdanih razloga ili da je iz opravdanih razloga izbjegavao zaštitni nadzor, sudac
 izvršenja može obveze zamijeniti drugima, izreći zaštitni nadzor ako ga do tada nije bilo,
-
-- suđenika osloboditi obveza, odnosno zaštitnog nadzora ili mu može produljiti rok za
+osuđenika osloboditi obveza, odnosno zaštitnog nadzora ili mu može produljiti rok za
 izvršenje izrečenih obveza ili zaštitnog nadzora.
 
 
@@ -1490,8 +1440,7 @@ proteklo šest mjeseci od isteka roka određenog za izvršavanje obveza iz član
 
 
 (1) Sud uz uvjetnu osudu i djelomičnu uvjetnu osudu može počinitelju naložiti da u
-
-- dređenom roku:
+određenom roku:
 
 
 21
@@ -1501,8 +1450,7 @@ proteklo šest mjeseci od isteka roka određenog za izvršavanje obveza iz član
 
 
 2. uplati određenu svotu novaca u korist javne ustanove, u humanitarne ili karitativne svrhe,
-
-- dnosno u fond za naknadu štete žrtvama kaznenih djela, ako je to primjereno s obzirom na
+odnosno u fond za naknadu štete žrtvama kaznenih djela, ako je to primjereno s obzirom na
 počinjeno djelo i ličnost počinitelja.
 
 
@@ -1589,8 +1537,7 @@ njegovo dostojanstvo.
 
 (4) Sud može naknadno, a prije isteka vremena trajanja obveze, na prijedlog tijela nadležnog
 za njezino provođenje, povisiti minimum, odnosno sniziti maksimum vremena trajanja
-
-- bveze, ukinuti je ili zamijeniti nekom drugom obvezom.
+obveze, ukinuti je ili zamijeniti nekom drugom obvezom.
 
 
 **Zaštitni nadzor**
@@ -1610,8 +1557,7 @@ provesti i čije provođenje nadgleda nadležno tijelo za probaciju.
 
 (3) Sud će u pravilu uz uvjetnu osudu, rad za opće dobro ili uvjetni otpust odrediti i zaštitni
 nadzor ako je izrekao kaznu zatvora veću od šest mjeseci i radi se o okrivljeniku koji je mlađi
-
-- d dvadeset i pet godina.
+od dvadeset i pet godina.
 
 
 (4) Zaštitni nadzor se odlukom suda može ukinuti i prije isteka roka na koji je određen ako su
@@ -1643,7 +1589,6 @@ dana od te promjene te o putovanju u trajanju duljem od osam dana i danu povratk
 
 
 **GLAVA PETA (V.)**
-
 **SIGURNOSNE MJERE**
 
 
@@ -1654,11 +1599,9 @@ dana od te promjene te o putovanju u trajanju duljem od osam dana i danu povratk
 
 
 Sigurnosne mjere jesu: obvezno psihijatrijsko liječenje, obvezno liječenje od ovisnosti,
-
-- bvezan psihosocijalni tretman, zabrana obavljanja određene dužnosti ili djelatnosti, zabrana
+obvezan psihosocijalni tretman, zabrana obavljanja određene dužnosti ili djelatnosti, zabrana
 upravljanja motornim vozilom, zabrana približavanja, uznemiravanja i uhođenja, udaljenje iz
 zajedničkog kućanstva, zabrana pristupa internetu i zaštitni nadzor po punom izvršenju kazne
-
 zatvora.
 
 
@@ -1718,8 +1661,7 @@ vremena kazne zatvora koja odgovara izrečenoj novčanoj kazni.
 
 
 (4) Sud mora po proteku prve godine od dolaska počinitelja na izvršenje mjere iz stavka 1.
-
-- voga članka i potom najmanje jednom godišnje preispitati postoje li uvjeti iz stavka 1. ovoga
+ovoga članka i potom najmanje jednom godišnje preispitati postoje li uvjeti iz stavka 1. ovoga
 članka za njezinim nastavkom i o tome donijeti rješenje. Na zahtjev ustanove u kojoj se mjera
 provodi, nadležnog probacijskog ureda ili na zahtjev počinitelja ovo preispitivanje može se
 učiniti i prije, ali ne prije proteka šest mjeseci od zadnjeg preispitivanja. Sud može obustaviti
@@ -1735,10 +1677,8 @@ da se osuđenik uputi na izdržavanje ostatka kazne ili da se pusti na uvjetni o
 upućuje na izdržavanje ostatka kazne, sud mu može odrediti ambulantno liječenje u
 zatvorskoj ustanovi. Odlučujući o puštanju na uvjetni otpust, sud će osobito uzeti u obzir
 uspjeh osuđenikova liječenja, njegovo zdravstveno stanje, vrijeme provedeno na liječenju i
-
-- statak kazne što ga osuđenik nije izdržao. Ako utvrdi da je počinitelj i dalje opasan za
-
-- kolinu, a da je za otklanjanje te opasnosti dovoljno njegovo liječenje na slobodi, sud može
+ostatak kazne što ga osuđenik nije izdržao. Ako utvrdi da je počinitelj i dalje opasan za
+okolinu, a da je za otklanjanje te opasnosti dovoljno njegovo liječenje na slobodi, sud može
 počinitelju kojeg pušta na uvjetni otpust odrediti nastavak liječenja na slobodi sukladno
 članku 60. stavku 2. u vezi s člankom 62. stavkom 2. točkom 4. ovoga Zakona.
 
@@ -1757,8 +1697,7 @@ propisima.
 
 (1) Sigurnosnu mjeru obveznog liječenja od ovisnosti sud će izreći počinitelju koji je kazneno
 djelo počinio pod odlučujućim djelovanjem ovisnosti o alkoholu, drogi ili druge vrste
-
-- visnosti ako postoji opasnost da će zbog te ovisnosti u budućnosti počiniti teže kazneno
+ovisnosti ako postoji opasnost da će zbog te ovisnosti u budućnosti počiniti teže kazneno
 djelo.
 
 
@@ -1767,8 +1706,7 @@ sustava ili u zdravstvenoj ili drugoj specijaliziranoj ustanovi za liječenje ov
 zatvorskog sustava pod uvjetima određenim posebnim propisom. Mjera izrečena uz novčanu
 kaznu, rad za opće dobro i uvjetnu osudu izvršava se u zdravstvenoj ili drugoj specijaliziranoj
 ustanovi za otklanjanje ovisnosti izvan zatvorskog sustava, a može se, pod uvjetima
-
-- dređenim posebnim propisom, kao i u slučaju iz članka 44. stavka 4. ovoga Zakona,
+određenim posebnim propisom, kao i u slučaju iz članka 44. stavka 4. ovoga Zakona,
 izvršavati i u terapijskoj zajednici ako je takvo odvikavanje dostatno za otklanjanje opasnosti.
 Mjera iz stavka 1. ovog članka izvršava se uz nadzor nadležnog tijela za probaciju kada je
 izrečena uz novčanu kaznu, rad za opće dobro i uvjetnu osudu.
@@ -1793,8 +1731,7 @@ mjere ili promijeniti način i vrijeme izvršenja mjere.
 
 
 (6) Na mjeru obveznog liječenja od ovisnosti primjenjuje se odredba članka 68. stavka 6.
-
-- voga Zakona.
+ovoga Zakona.
 
 
 (7) Sud će o presudi kojom je mjera iz stavka 1. ovoga članka izrečena uz novčanu kaznu, rad
@@ -1853,11 +1790,9 @@ je od jedne do deset godina dulje od izrečene kazne zatvora.
 
 (3) Počinitelju kaznenog djela iz članka 105. stavka 3., članka 106. stavka 2. i 3., članka 111.
 točke 2., članka 112. stavka 1., članka 114., članka 116., članka 118., članka 119., članka
-
 120., Glave XVI., počinjenog na štetu djeteta i Glave XVII. ovoga Zakona, sud može izreći
 zabranu obavljanja dužnosti ili djelatnosti u kojima dolazi u redoviti kontakt s djecom i kad
-
-- va djela nisu bila počinjena u obavljanju dužnosti i djelatnosti, a može je izreći i doživotno.
+ova djela nisu bila počinjena u obavljanju dužnosti i djelatnosti, a može je izreći i doživotno.
 
 
 (4) Za vrijeme zabrane iz stavka 1. ovoga članka osuđenik se ne smije baviti određenom
@@ -1869,14 +1804,12 @@ njegovim uputama.
 (5) Ako počinitelj ne postupi prema zabrani obavljanja određene dužnosti ili djelatnosti kad je
 izrečena uz rad za opće dobro, uvjetnu osudu, ili za vrijeme uvjetnog otpusta shodno će se
 primijeniti odredbe članka 55. stavka 8., članka 58. stavka 5. ili članka 61. stavka 3. ovoga
-
 Zakona.
 
 
 (6) Po proteku polovine trajanja sigurnosne mjere izrečene na temelju stavka 1. ovoga članka,
 sud može na prijedlog osuđenika obustaviti njeno izvršenje ako ustanovi da više ne postoji
-
-- pasnost iz stavka 1. ovoga članka. Osuđenik može ponoviti prijedlog, ali ne prije proteka
+opasnost iz stavka 1. ovoga članka. Osuđenik može ponoviti prijedlog, ali ne prije proteka
 jedne godine od zadnjeg preispitivanja.
 
 
@@ -1899,8 +1832,7 @@ nadležno za vođenje upisnika osoba koje obavljaju određene dužnosti ili djel
 (1) Sigurnosnu mjeru zabrane upravljanja motornim vozilom sud će izreći počinitelju
 kaznenog djela protiv sigurnosti prometa kad postoji opasnost da će upravljajući motornim
 vozilom ugroziti sigurnost prometa. Zabrana se odnosi na sve kategorije vozila, a iznimno se
-
-- dređena kategorija vozila može izuzeti kada posebne okolnosti upućuju na to da se svrha
+određena kategorija vozila može izuzeti kada posebne okolnosti upućuju na to da se svrha
 mjere neće time ugroziti.
 
 
@@ -1920,8 +1852,7 @@ je od jedne do pet godina dulje od izrečene kazne zatvora.
 
 (4) Po proteku polovine trajanja sigurnosne mjere izrečene na temelju stavka 1. ovoga članka
 sud može na prijedlog osuđenika obustaviti njezino izvršenje ako ustanovi da više ne postoji
-
-- pasnost iz stavka 1. ovoga članka. Osuđenik može ponoviti prijedlog, ali ne prije proteka
+opasnost iz stavka 1. ovoga članka. Osuđenik može ponoviti prijedlog, ali ne prije proteka
 jedne godine od zadnjeg preispitivanja.
 
 
@@ -1969,8 +1900,7 @@ je od jedne do pet godina dulje od izrečene kazne zatvora.
 
 (3) Po proteku polovine trajanja sigurnosne mjere izrečene na temelju stavka 1. ovoga članka
 sud može na prijedlog osuđenika obustaviti njezino izvršenje ako ustanovi da više ne postoji
-
-- pasnost iz stavka 1. ovoga članka. Osuđenik može ponoviti prijedlog, ali ne prije proteka
+opasnost iz stavka 1. ovoga članka. Osuđenik može ponoviti prijedlog, ali ne prije proteka
 jedne godine od zadnjeg preispitivanja.
 
 
@@ -1978,7 +1908,6 @@ jedne godine od zadnjeg preispitivanja.
 
 
 (4) Na zabranu približavanja shodno će se primijeniti odredba članka 71. stavka 5. ovoga
-
 Zakona.
 
 
@@ -2009,8 +1938,7 @@ prostor koji čini zajedničko kućanstvo.
 
 
 (4) Po proteku polovine trajanja izvršavanja sigurnosne mjere izrečene na temelju stavka 1.
-
-- voga članka, sud može na prijedlog osuđenika obustaviti njezino izvršenje ako ustanovi da
+ovoga članka, sud može na prijedlog osuđenika obustaviti njezino izvršenje ako ustanovi da
 više ne postoji opasnost iz stavka 1. ovoga članka. Osuđenik može ponoviti prijedlog, ali ne
 prije proteka šest mjeseci od zadnjeg preispitivanja.
 
@@ -2046,12 +1974,11 @@ sud može na prijedlog osuđenika obustaviti njezino izvršenje ako ustanovi da 
 29
 
 
-- pasnost iz stavka 1. ovoga članka. Osuđenik može ponoviti prijedlog, ali ne prije proteka
+opasnost iz stavka 1. ovoga članka. Osuđenik može ponoviti prijedlog, ali ne prije proteka
 jedne godine od zadnjeg preispitivanja.
 
 
 (4) Na zabranu pristupa internetu shodno će se primijeniti odredba članka 71. stavka 5. ovoga
-
 Zakona.
 
 
@@ -2085,9 +2012,7 @@ razloga vjerovati da osoba neće počiniti novo kazneno djelo i bez njegova prov
 
 
 **GLAVA ŠESTA (VI.)**
-
 **ODUZIMANJE IMOVINSKE KORISTI, ODUZIMANJE PREDMETA I JAVNO**
-
 **OBJAVLJIVANJE PRESUDE**
 
 
@@ -2108,8 +2033,7 @@ imovinskopravni zahtjev.
 
 
 (3) Sud će oduzeti imovinsku korist i ako oštećenika uputi da imovinskopravni zahtjev može
-
-- stvariti u parnici.
+ostvariti u parnici.
 
 
 30
@@ -2176,8 +2100,7 @@ posebnim zakonom.
 
 
 (2) Predmeti i sredstva koji su bili namijenjeni ili uporabljeni za počinjenje kaznenog djela
-
-- duzet će se ako postoji opasnost da će se ponovno uporabiti za počinjenje kaznenog djela ili
+oduzet će se ako postoji opasnost da će se ponovno uporabiti za počinjenje kaznenog djela ili
 
 
 31
@@ -2193,8 +2116,7 @@ i sredstva i kada počinitelj protupravne radnje nije kriv.
 
 (4) Oduzeti predmeti i sredstva postaju vlasništvo Republike Hrvatske. To ne utječe na pravo
 trećih osoba za naknadu štete prema počinitelju zbog oduzetog predmeta ili sredstva. Vlasnik
-
-- duzetog predmeta ili sredstva koji nije počinitelj djela ima pravo na povrat predmeta i
+oduzetog predmeta ili sredstva koji nije počinitelj djela ima pravo na povrat predmeta i
 sredstva ili naknadu njihove tržišne vrijednosti iz državnog proračuna, osim ako je najmanje
 krajnjom nepažnjom pridonio da predmet ili sredstvo bude namijenjeno ili uporabljeno za
 počinjenje kaznenog djela ili da nastane njegovim počinjenjem ili ako je pribavio predmet ili
@@ -2203,8 +2125,7 @@ sredstvo znajući za okolnosti koje omogućuju njegovo oduzimanje.
 
 (5) Kada je zakonom za određeno kazneno djelo propisano oduzimanje predmeta ili sredstva,
 vlasnik nema pravo na naknadu iz državnog proračuna, ako posebnim zakonom nije drukčije
-
-- dređeno.
+određeno.
 
 
 (6) Sud može naložiti uništenje oduzetog predmeta ili sredstva.
@@ -2217,11 +2138,9 @@ vlasnik nema pravo na naknadu iz državnog proračuna, ako posebnim zakonom nije
 
 
 (1) Presudom kojom se proglašava krivim počinitelj kaznenog djela počinjenog javnim
-
-- bjavljivanjem, sud može na zahtjev zainteresirane osobe ili državnog odvjetnika kad je to u
+objavljivanjem, sud može na zahtjev zainteresirane osobe ili državnog odvjetnika kad je to u
 interesu oštećene osobe ili u javnom interesu odrediti da se ona u cijelosti ili djelomično javno
-
-- bjavi o trošku počinitelja.
+objavi o trošku počinitelja.
 
 
 (2) Određujući sredstvo, vrijeme, način i ostale okolnosti javnog objavljivanja presude, sud
@@ -2232,12 +2151,10 @@ počinjeno kazneno djelo.
 (3) Oslobađajućom presudom sud može na zahtjev oslobođene osobe kad je to u njezinom ili
 javnom interesu odrediti da se ona u cijelosti ili djelomično javno objavi na teret državnog
 proračuna ili o trošku privatnog tužitelja. Sud će odrediti sredstvo, vrijeme i način
-
-- bjavljivanja presude.
+objavljivanja presude.
 
 
 **GLAVA SEDMA (VII.)**
-
 **ZASTARA**
 
 
@@ -2295,7 +2212,6 @@ zastara kaznenog progona produljuje se za dvije godine.
 
 (1) Zastara kaznenog progona počinje teći danom kad je kazneno djelo počinjeno. Ako
 posljedica koja je obilježje kaznenog djela nastupi kasnije, zastara počinje teći od tog
-
 trenutka.
 
 
@@ -2305,11 +2221,8 @@ može poduzeti ili se ne može nastaviti.
 
 (3) Za kaznena djela iz članka 105. stavka 3., članka 106. stavka 2. i 3., članka 110., članka
 111., članka 112. stavka 1., članka 114. stavka 2., članka 115., članka 116. stavka 3., članka
-
 118., članka 119., članka 154., članka 155. stavka 2., članka 156., članka 158., članka 159.,
-
 članka 160., članka 162., članka 163., članka 164., članka 166., članka 169., članka 170.,
-
 članka 171., članka 176. i članka 177. ovoga Zakona počinjenih na štetu djeteta, zastara
 kaznenog progona počinje teći od punoljetnosti žrtve.
 
@@ -2364,7 +2277,6 @@ danom pravomoćnosti presude o opozivu.
 
 
 (2) Zastara ne teče za vrijeme za koje se prema zakonu izvršenje kazne ne može započeti ili
-
 nastaviti.
 
 
@@ -2431,8 +2343,7 @@ razlog isključenja protupravnosti.
 lokalne i područne (regionalne) samouprave, nositelj pravosudne dužnosti, sudac porotnik,
 član Državnog sudbenog vijeća ili Državnoodvjetničkog vijeća, arbitar i javni bilježnik.
 Službenom osobom smatra se i osoba koja u Europskoj uniji, stranoj državi, međunarodnoj
-
-- rganizaciji koje je Republika Hrvatska član, međunarodnom sudu ili arbitraži čiju sudbenost
+organizaciji koje je Republika Hrvatska član, međunarodnom sudu ili arbitraži čiju sudbenost
 Republika Hrvatska prihvaća, obavlja dužnosti povjerene osobama iz prethodne rečenice.
 
 
@@ -2472,7 +2383,6 @@ koja traje kraće vrijeme ako je u njoj rođeno zajedničko dijete.
 
 
 (11) Neformalni životni partner je osoba koja živi u istospolnoj zajednici koja ima trajniji
-
 karakter.
 
 
@@ -2491,7 +2401,6 @@ zakona proglašen službenom tajnom.
 (14) Izbori su izbori za Hrvatski sabor, Predsjednika Republike, Europski parlament,
 predstavnička tijela u jedinicama lokalne i područne (regionalne) samouprave, općinske
 načelnike, gradonačelnike, župane, gradonačelnika Grada Zagreba te postupak odlučivanja na
-
 državnom referendumu.
 
 
@@ -2508,8 +2417,7 @@ zračnom prometu.
 
 
 (18) Računalni sustav je svaka naprava ili skupina međusobno spojenih ili povezanih naprava,
-
-- d kojih jedna ili više njih na osnovi programa automatski obrađuju podatke, kao i računalni
+od kojih jedna ili više njih na osnovi programa automatski obrađuju podatke, kao i računalni
 podaci koji su u njega spremljeni, obrađeni, učitani ili preneseni za svrhe njegovog rada,
 korištenja, zaštite i održavanja.
 
@@ -2524,10 +2432,8 @@ sustav izvrši određenu funkciju.
 
 (21) Zločin iz mržnje je kazneno djelo počinjeno zbog rasne pripadnosti, boje kože,
 vjeroispovijesti, nacionalnog ili etničkog podrijetla, jezika, invaliditeta, spola, spolnog
-
-- predjeljenja ili rodnog identiteta druge osobe. Takvo postupanje uzet će se kao otegotna
-
-- kolnost ako ovim Zakonom nije izričito propisano teže kažnjavanje.
+opredjeljenja ili rodnog identiteta druge osobe. Takvo postupanje uzet će se kao otegotna
+okolnost ako ovim Zakonom nije izričito propisano teže kažnjavanje.
 
 
 (22) Imovinskom korišću od kaznenog djela smatra se neposredna imovinska korist od
@@ -2550,8 +2456,7 @@ dokazuje pravo na ili interes za takvu imovinu.
 
 
 (24) Mito je svaka nepripadna nagrada, dar ili druga imovinska ili neimovinska korist bez
-
-- bzira na vrijednost.
+obzira na vrijednost.
 
 
 (25) Žrtva kaznenog djela je fizička osoba kojoj su protupravnom radnjom prouzročene
@@ -2561,7 +2466,6 @@ temeljnih sloboda.
 
 (26) Riječi i pojmovni sklopovi koji imaju rodno značenje bez obzira na to jesu li u ovom
 Zakonu korišteni u muškom ili ženskom rodu odnose se na jednak način na muški i ženski
-
 rod.
 
 
@@ -2578,7 +2482,6 @@ kuna. Vrijednost imovinske koristi i štete je znatna ako prelazi 60.000,00 kuna
 
 
 (30) Vrijednost stvari, imovinskog prava i imovinske koristi je mala ako ne prelazi 1000,00
-
 kuna.
 
 
@@ -2639,8 +2542,7 @@ kaznit će se kaznom zatvora od jedne do deset godina.
 (1) Tko imajući stvarnu moć nadzirati ili upravljati političkim ili vojnim djelovanjem države,
 upotrijebi oružane snage jedne države protiv suvereniteta, teritorijalne cjelovitosti ili političke
 neovisnosti druge države ili na bilo koji drugi način protivan Povelji Ujedinjenih naroda
-
-- stvari čin agresije koji po svojim karakteristikama, težini i razmjeru predstavlja očito kršenje
+ostvari čin agresije koji po svojim karakteristikama, težini i razmjeru predstavlja očito kršenje
 Povelje Ujedinjenih naroda,
 
 
@@ -2660,13 +2562,11 @@ kaznit će se kaznom zatvora od jedne do deset godina.
 
 
 (4) Činom agresije iz stavka 1. ovoga članka, bez obzira na to je li prethodno objavljen rat ili
-
 ne, smatra se:
 
 
 1. invazija ili napad oružanih snaga jedne države na područje druge države, ili vojna
-
-- kupacija, makar i privremena koja je posljedica takve invazije ili napada, ili pripajanje
+okupacija, makar i privremena koja je posljedica takve invazije ili napada, ili pripajanje
 cijelog ili dijela područja druge države uz primjenu sile,
 
 
@@ -2740,15 +2640,13 @@ reproduktivnu sposobnost ili nad njom izvrši neko drugo spolno nasilje usporedi
 8. progoni neku odredivu skupinu ili zajednicu na političkoj, rasnoj, nacionalnoj, etničkoj,
 kulturnoj, vjerskoj, spolnoj ili drugoj osnovi koja se općenito prema međunarodnom pravu
 smatra nedopustivom, i to počini u vezi s bilo kojom radnjom opisanom u članku 88. do 91.
-
-- voga Zakona tako da drugoj osobi zato što pripada određenoj skupini ili zajednici namjerno i
+ovoga Zakona tako da drugoj osobi zato što pripada određenoj skupini ili zajednici namjerno i
 u velikoj mjeri oduzme temeljna prava suprotno međunarodnom pravu,
 
 
 9. uhiti, drži u zatočeništvu ili otme osobe u ime ili uz dopuštenje, potporu ili pristanak države
 ili političke organizacije, a nakon toga odbije priznati takvo oduzimanje slobode ili uskrati
-
-- bavijesti o sudbini ili mjestu na kojem se osobe nalaze, s ciljem da im se uskrati pravna
+obavijesti o sudbini ili mjestu na kojem se osobe nalaze, s ciljem da im se uskrati pravna
 zaštita kroz dulje vremensko razdoblje,
 
 
@@ -2762,8 +2660,7 @@ počini neko nečovječno djelo opisano u ovom članku ili djelo slično nekom o
 
 
 11. počini druga nečovječna djela kojima se namjerno uzrokuje teška patnja, teška tjelesna
-
-- zljeda ili teško narušenje zdravlja,
+ozljeda ili teško narušenje zdravlja,
 
 
 kaznit će se kaznom zatvora najmanje pet godina ili kaznom dugotrajnog zatvora.
@@ -2780,10 +2677,8 @@ djela.
 
 
 (1) Tko kršeći pravila međunarodnog prava za vrijeme rata, okupacije ili međunarodnog
-
-- ružanog sukoba ili oružanog sukoba koji nema međunarodni značaj počini neko od sljedećih
+oružanog sukoba ili oružanog sukoba koji nema međunarodni značaj počini neko od sljedećih
 teških kršenja protiv osoba ili imovine zaštićenih Ženevskim konvencijama od 12. kolovoza
-
 1949.:
 
 
@@ -2818,8 +2713,7 @@ kaznit će se kaznom zatvora od najmanje pet godina ili kaznom dugotrajnog zatvo
 
 
 (2) Tko kršeći pravila međunarodnog prava za vrijeme rata, okupacije ili međunarodnog
-
-- ružanog sukoba ili oružanog sukoba koji nema međunarodni značaj počini druge teške
+oružanog sukoba ili oružanog sukoba koji nema međunarodni značaj počini druge teške
 povrede prava i običaja koji se primjenjuju u međunarodnom oružanom sukobu ili oružanom
 sukobu čiji značaj nije međunarodni, to jest bilo koje od sljedećih djela:
 
@@ -2862,8 +2756,7 @@ pogibije ili teških ozljeda,
 
 8. premještanje, izravno ili posredno, dijelova vlastitog civilnog stanovništva na okupirano
 područje od strane okupatorske sile, ili deportacija ili premještaj čitavog stanovništva
-
-- kupiranog područja ili jednog njegovog dijela, unutar toga područja ili izvan njega,
+okupiranog područja ili jednog njegovog dijela, unutar toga područja ili izvan njega,
 
 
 9. usmjeravanje napada protiv zgrada posvećenih vjeri, obrazovanju, umjetnosti, znanosti ili
@@ -2931,8 +2824,7 @@ područja ili vojne snage zaštite od vojnih operacija,
 
 
 24. usmjeravanje napada na zgrade, materijal, medicinske jedinice i prijevozna sredstva te
-
-- soblje koje koristi posebne znakove Ženevskih konvencija sukladno međunarodnom pravu,
+osoblje koje koristi posebne znakove Ženevskih konvencija sukladno međunarodnom pravu,
 
 
 25. pribjegavanje izgladnjivanju civila kao načinu vođenja rata uskraćivanjem sredstava
@@ -2986,8 +2878,7 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 Tko u području oružanih operacija zlouporabi ili neovlašteno nosi zastavu ili znak
 Ujedinjenih naroda, Crvenog križa ili znakove koji njima odgovaraju, ili druge priznate
 međunarodne znakove kojima se obilježavaju određeni objekti radi zaštite od oružanih
-
-- peracija,
+operacija,
 
 
 kaznit će se kaznom zatvora od šest mjeseci do pet godina.
@@ -3028,8 +2919,7 @@ kaznit će se kaznom zatvora od jedne do deset godina.
 
 
 (3) Tko radi stjecanja materijalne koristi kao punoljetni plaćenik izravno sudjeluje u
-
-- ružanom sukobu ili zajedničkom činu nasilja,
+oružanom sukobu ili zajedničkom činu nasilja,
 
 
 kaznit će se kaznom zatvora do tri godine.
@@ -3066,8 +2956,7 @@ nadređenosti i podređenosti osim onih iz stavka 2. ovoga članka, koja je prop
 nadzor nad podređenima koji se nalaze pod njezinom stvarnom vlašću i nadzorom ako je
 svjesno zanemarivala obavijesti da oni čine ili se spremaju počiniti kazneno djelo iz članka
 88. do članka 91. ovoga Zakona i ako su ta djela u okviru njezinih stvarnih ovlasti i nadzora, a
-
-- na nije poduzela sve nužne i razborite mjere u svojoj moći kako bi ih u tome spriječila.
+ona nije poduzela sve nužne i razborite mjere u svojoj moći kako bi ih u tome spriječila.
 
 
 (4) Ako je dužni nadzor iz stavka 2. i 3. ovoga članka propušten iz nehaja, počinitelj će se
@@ -3089,11 +2978,9 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 
 
 (1) Tko s ciljem ozbiljnog zastrašivanja stanovništva, ili prisiljavanja države ili međunarodne
-
-- rganizacije da što učini ili ne učini, ili ozbiljnog narušavanja ili uništavanja temeljnih
+organizacije da što učini ili ne učini, ili ozbiljnog narušavanja ili uništavanja temeljnih
 ustavnih, političkih, gospodarskih ili društvenih struktura države ili međunarodne
-
-- rganizacije, počini jedno od sljedećih djela koje može ozbiljno naštetiti državi ili
+organizacije, počini jedno od sljedećih djela koje može ozbiljno naštetiti državi ili
 međunarodnoj organizaciji:
 
 
@@ -3169,7 +3056,6 @@ kaznit će se kaznom zatvora najmanje deset godina ili kaznom dugotrajnog zatvor
 (1) Tko izravno ili neizravno daje ili prikuplja sredstva s ciljem da se ona koriste ili znajući da
 će se koristiti, u potpunosti ili djelomično, u svrhu činjenja jednog ili više kaznenih djela iz
 članka 97., članka 99. do članka 101., članka 137., članka 216. stavka 1. do 3., članka 219.,
-
 članka 223., članka 224., članka 352. do članka 355. ovoga Zakona ili drugog kaznenog djela
 kojem je cilj prouzročiti smrt ili tešku tjelesnu ozljedu civila ili druge osobe koja nije aktivno
 uključena u oružani sukob, ako je svrha tog djela zastrašiti stanovništvo ili prisiliti neku
@@ -3228,8 +3114,7 @@ Tko daje upute o izradi i korištenju eksplozivnih naprava, vatrenog ili drugog 
 ili opasnih tvari ili o drugim specifičnim metodama ili tehnikama znajući da se te vještine
 namjeravaju koristiti za počinjenje kaznenog djela iz članka 97., članka 98., članka 137.,
 članka 216. stavka 1. do 3., članka 219., članka 223., članka 224., članka 352. do članka 355.
-
-- voga Zakona,
+ovoga Zakona,
 
 
 kaznit će se kaznom zatvora od jedne do deset godina.
@@ -3243,11 +3128,9 @@ kaznit će se kaznom zatvora od jedne do deset godina.
 
 (1) Tko organizira ili vodi zločinačko udruženje kojemu je cilj počinjenje kaznenog djela iz
 članka 97. do članka 101., članka 137., članka 216. stavka 1. do 3., članka 219., članka 223.,
-
 članka 224., članka 352. do članka 355. ovoga Zakona ili drugog kaznenog djela kojem je cilj
 prouzročiti smrt ili tešku tjelesnu ozljedu civila ili druge osobe koja nije aktivno uključena u
-
-- ružani sukob, ako je svrha tog djela zastrašiti stanovništvo ili prisiliti neku državu ili
+oružani sukob, ako je svrha tog djela zastrašiti stanovništvo ili prisiliti neku državu ili
 međunarodnu organizaciju da što učini ili ne učini,
 
 
@@ -3292,8 +3175,7 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 
 
 Službena osoba ili osoba koja na poticaj ili s izričitim ili prešutnim pristankom službene
-
-- sobe ili druge osobe koja djeluje u svojstvu službene osobe prouzroči drugome tešku tjelesnu
+osobe ili druge osobe koja djeluje u svojstvu službene osobe prouzroči drugome tešku tjelesnu
 ili duševnu bol ili patnju da bi od njega ili druge osobe dobila obavijest ili priznanje, ili da bi
 ga kaznila za djelo što ga je počinio ili je osumnjičen da ga je počinio on ili neka druga osoba,
 ili da bi se on ili druga osoba zastrašila ili da bi se na njega ili drugu osobu izvršio pritisak, ili
@@ -3365,8 +3247,7 @@ radi uzimanja dijelova njegovog tijela, ili radi njegovog korištenja u oružani
 (3) Ako je kazneno djelo iz stavka 1. ovoga članka počinjeno prema djetetu, ili je kazneno
 djelo iz stavka 1. ili 2. ovoga članka počinila službena osoba u obavljanju svoje službe, ili je
 počinjeno u odnosu na veći broj osoba, ili je svjesno doveden u opasnost život jedne ili više
-
-- soba,
+osoba,
 
 
 počinitelj će se kazniti kaznom zatvora od tri do petnaest godina.
@@ -3378,8 +3259,7 @@ navedenog u stavku 1. i 2. ovoga članka.
 
 
 (5) Tko s ciljem omogućavanja počinjenja djela iz stavka 1., 2. i 3. ovoga članka zadrži,
-
-- duzme, sakrije, ošteti ili uništi putnu ispravu ili ispravu o dokazivanju identiteta druge osobe,
+oduzme, sakrije, ošteti ili uništi putnu ispravu ili ispravu o dokazivanju identiteta druge osobe,
 
 
 kaznit će se kaznom zatvora do tri godine.
@@ -3408,8 +3288,7 @@ kaznit će se kaznom zatvora od jedne do deset godina.
 
 (2) Tko uporabom sile ili prijetnje, obmanom, prijevarom, otmicom, zlouporabom ovlasti ili
 teškog položaja ili odnosa ovisnosti nabavi, posjeduje, prevozi, prenosi, čuva ili primi ljudski
-
-- rgan, tkivo, stanicu, zametak, fetus ili mrtvo tijelo radi uzimanja dijelova tijela,
+organ, tkivo, stanicu, zametak, fetus ili mrtvo tijelo radi uzimanja dijelova tijela,
 
 
 48
@@ -3427,7 +3306,6 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 
 (4) Kaznom iz stavka 3. ovoga članka kaznit će se tko radi zarade navede drugog ili mu
 pomogne dati vlastiti organ, tkivo, stanicu, zametak ili fetus za novčanu naknadu ili drugu
-
 korist.
 
 
@@ -3666,8 +3544,7 @@ kaznit će se kaznom zatvora do jedne godine.
 
 (2) Tko djelo iz stavka 1. počini iz mržnje, prema bliskoj osobi ili prema osobi posebno
 ranjivoj zbog njezine dobi, teže tjelesne ili duševne smetnje ili trudnoće, ili kao službena
-
-- soba u obavljanju službe ili odgovorna osoba u obavljanju javne ovlasti,
+osoba u obavljanju službe ili odgovorna osoba u obavljanju javne ovlasti,
 
 
 kaznit će se kaznom zatvora do tri godine.
@@ -3705,8 +3582,7 @@ kaznit će se kaznom zatvora od jedne do osam godina.
 (1) Ako je kaznenim djelom iz članka 116. stavka 1. i 2. i članka 118. stavka 1. ovoga Zakona
 doveden u opasnost život ozlijeđenog, ili je uništen ili trajno i u znatnoj mjeri oslabljen koji
 važan dio njegova tijela ili koji važan organ, ili je prouzročena trajna nesposobnost za rad
-
-- zlijeđenog, ili trajno i teško narušenje njegova zdravlja, trajna iznakaženost ili trajna
+ozlijeđenog, ili trajno i teško narušenje njegova zdravlja, trajna iznakaženost ili trajna
 nesposobnost za reprodukciju,
 
 
@@ -3792,8 +3668,7 @@ krivnje ili se samo branila ili je razdvajala druge sudionike u tučnjavi.
 
 
 (1) Tko ne pruži pomoć osobi u životnoj opasnosti, iako je to mogao učiniti bez veće
-
-- pasnosti za sebe ili drugoga,
+opasnosti za sebe ili drugoga,
 
 
 kaznit će se kaznom zatvora do jedne godine.
@@ -3823,7 +3698,6 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 **GLAVA JEDANAESTA (XI.)**
-
 **KAZNENA DJELA PROTIV LJUDSKIH PRAVA I TEMELJNIH SLOBODA**
 
 
@@ -3907,8 +3781,7 @@ kaznit će se kaznom zatvora do jedne godine.
 
 (2) Kaznom iz stavka 1. ovoga članka kaznit će se tko silom, ozbiljnom prijetnjom ili na drugi
 način spriječi, onemogući ili znatno ometa javno okupljanje ili mirni prosvjed koji je
-
-- rganiziran u skladu sa zakonom.
+organiziran u skladu sa zakonom.
 
 
 **Povreda prava na udruživanje**
@@ -3944,7 +3817,6 @@ ili dobrotvorne ustanove i upravljati njima.
 
 
 **GLAVA DVANAESTA (XII.)**
-
 **KAZNENA DJELA PROTIV RADNIH ODNOSA I SOCIJALNOG OSIGURANJA**
 
 
@@ -4000,8 +3872,7 @@ neisplati dospjelog iznosa plaće sukladno odredbama posebnog zakona.
 
 
 (5) Ako počinitelj iz stavka 1. ovoga članka naknadno uplati zaostale plaće, može se
-
-- sloboditi kazne.
+osloboditi kazne.
 
 
 (6) Pod plaćom se u smislu ovoga članka podrazumijeva osnovna plaća i sva druga davanja u
@@ -4035,10 +3906,8 @@ kaznit će se kaznom zatvora do dvije godine.
 
 
 Tko drugome uskrati ili ograniči pravo iz mirovinskog ili zdravstvenog osiguranja ili
-
-- siguranja od nezaposlenosti utvrđenog zakonom ili uskrati uplatu doprinosa za zapošljavanje
-
-- soba s invaliditetom, ako time nisu ispunjena obilježja nekog drugog kaznenog djela,
+osiguranja od nezaposlenosti utvrđenog zakonom ili uskrati uplatu doprinosa za zapošljavanje
+osoba s invaliditetom, ako time nisu ispunjena obilježja nekog drugog kaznenog djela,
 
 
 kaznit će se kaznom zatvora do jedne godine.
@@ -4061,7 +3930,6 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 
 
 **GLAVA TRINAESTA (XIII.)**
-
 **KAZNENA DJELA PROTIV OSOBNE SLOBODE**
 
 
@@ -4127,8 +3995,7 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 
 (2) Ako je kazneno djelo iz stavka 1. ovoga članka počinjeno uz prijetnju da će se oteta osoba
 usmrtiti, ili je počinjeno na okrutan način, ili je otetoj osobi prouzročena teška tjelesna
-
-- zljeda, ili je počinjeno prema djetetu, osobi s težim invaliditetom ili bliskoj osobi,
+ozljeda, ili je počinjeno prema djetetu, osobi s težim invaliditetom ili bliskoj osobi,
 
 
 počinitelj će se kazniti kaznom zatvora od jedne do deset godina.
@@ -4158,8 +4025,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 (2) Kazneno djelo iz stavka 1. ovoga članka progoni se po privatnoj tužbi, osim ako je
 počinjeno iz mržnje, prema djetetu, osobi s težim invaliditetom, bliskoj osobi, odvjetniku u
-
-- bavljanju njegove djelatnosti ili prema odgovornoj osobi u obavljanju javne ovlasti.
+obavljanju njegove djelatnosti ili prema odgovornoj osobi u obavljanju javne ovlasti.
 
 
 **Prijetnja**
@@ -4175,8 +4041,7 @@ kaznit će se kaznom zatvora do jedne godine.
 
 
 (2) Tko drugome ozbiljno prijeti da će njega ili njemu blisku osobu usmrtiti, teško tjelesno
-
-- zlijediti, oteti, ili mu oduzeti slobodu, ili nanijeti zlo podmetanjem požara, eksplozijom,
+ozlijediti, oteti, ili mu oduzeti slobodu, ili nanijeti zlo podmetanjem požara, eksplozijom,
 ionizirajućim zračenjem, oružjem, opasnim oruđem ili drugim opasnim sredstvom, ili uništiti
 društveni položaj ili materijalni opstanak,
 
@@ -4188,8 +4053,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (3) Ako je kazneno djelo iz stavka 1. i 2. ovoga članka počinjeno prema službenoj ili
-
-- dgovornoj osobi u obavljanju javne ovlasti ili u vezi s njezinim radom ili položajem, ili
+odgovornoj osobi u obavljanju javne ovlasti ili u vezi s njezinim radom ili položajem, ili
 prema novinaru u vezi s njegovim poslom, ili prema odvjetniku u obavljanju njegove
 djelatnosti, ili prema većem broju ljudi, ili ako je prouzročilo veću uznemirenost stanovništva,
 ili ako je osoba kojoj se prijeti dulje vrijeme stavljena u težak položaj,
@@ -4230,7 +4094,6 @@ počinjeno prema djetetu.
 
 
 **GLAVA ČETRNAESTA (XIV.)**
-
 **KAZNENA DJELA PROTIV PRIVATNOSTI**
 
 
@@ -4249,8 +4112,7 @@ kaznit će se kaznom zatvora do jedne godine.
 
 
 (2) Ako kazneno djelo iz stavka 1. ovoga članka počini službena osoba u obavljanju službe ili
-
-- dgovorna osoba u obavljanju javne ovlasti,
+odgovorna osoba u obavljanju javne ovlasti,
 
 
 kaznit će se kaznom zatvora do tri godine.
@@ -4334,8 +4196,7 @@ prisluškivane osobe.
 
 
 (6) Snimke i posebne naprave kojima je počinjeno kazneno djelo iz ovoga članka će se
-
-- duzeti.
+oduzeti.
 
 
 **Neovlašteno slikovno snimanje**
@@ -4353,8 +4214,7 @@ kaznit će se kaznom zatvora do jedne godine.
 
 
 (2) Ako kazneno djelo iz stavka 1. ovoga članka počini službena osoba u obavljanju službe ili
-
-- dgovorna osoba u obavljanju javne ovlasti,
+odgovorna osoba u obavljanju javne ovlasti,
 
 
 kaznit će se kaznom zatvora do tri godine.
@@ -4364,8 +4224,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (4) Snimke i posebne naprave kojima je počinjeno kazneno djelo iz ovoga članka će se
-
-- duzeti.
+oduzeti.
 
 
 **Neovlašteno otkrivanje profesionalne tajne**
@@ -4376,8 +4235,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 (1) Odvjetnik, javni bilježnik, zdravstveni radnik, psiholog, djelatnik ustanove socijalne skrbi,
 vjerski ispovjednik ili druga osoba koja neovlašteno otkrije podatak o osobnom ili
-
-- biteljskom životu koji joj je povjeren u obavljanju njezinog zvanja,
+obiteljskom životu koji joj je povjeren u obavljanju njezinog zvanja,
 
 
 kaznit će se kaznom zatvora do jedne godine.
@@ -4419,8 +4277,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 (3) Kaznom iz stavka 2. ovoga članka kaznit će se tko djelo iz stavka 1. ovoga članka počini
 prema djetetu ili tko protivno uvjetima određenima u zakonu prikuplja, obrađuje ili koristi
-
-- sobne podatke fizičkih osoba koji se odnose na rasno ili etničko podrijetlo, politička
+osobne podatke fizičkih osoba koji se odnose na rasno ili etničko podrijetlo, politička
 stajališta, vjerska ili druga uvjerenja, sindikalno članstvo, zdravlje ili spolni život te osobne
 podatke fizičkih osoba o kaznenom ili prekršajnom postupku.
 
@@ -4489,7 +4346,6 @@ kaznit će se novčanom kaznom do tristo šezdeset dnevnih iznosa.
 
 (3) Nema kaznenog djela teškog sramoćenja ako počinitelj dokaže istinitost činjenične tvrdnje
 koju je iznosio ili pronosio ili postojanje ozbiljnog razloga zbog kojeg je povjerovao u njezinu
-
 istinitost.
 
 
@@ -4507,13 +4363,10 @@ stavka 1. odnose na osobne ili obiteljske prilike.
 
 
 Nema kaznenog djela iz članka 147. i 148. ovoga Zakona ako je počinitelj njihova obilježja
-
-- stvario u znanstvenom, stručnom, književnom, umjetničkom djelu ili javnoj informaciji, u
-
-- bavljanju dužnosti propisane zakonom, političke ili druge javne ili društvene djelatnosti, u
+ostvario u znanstvenom, stručnom, književnom, umjetničkom djelu ili javnoj informaciji, u
+obavljanju dužnosti propisane zakonom, političke ili druge javne ili društvene djelatnosti, u
 novinarskom poslu ili obrani nekog prava, a to je učinio u javnom interesu ili zbog drugih
-
-- pravdanih razloga.
+opravdanih razloga.
 
 
 **Kleveta**
@@ -4549,7 +4402,6 @@ kaznit će se novčanom kaznom do petsto dnevnih iznosa.
 (2) Ako su kaznena djela protiv časti i ugleda počinjena prema umrloj osobi, kazneni
 postupak može se pokrenuti privatnom tužbom bračnog ili izvanbračnog druga, životnog
 partnera ili neformalnog životnog partnera, roditelja, djece, posvojitelja, posvojenika, braće ili
-
 sestara umrle osobe.
 
 
@@ -4574,7 +4426,6 @@ počinjeno.
 
 
 **GLAVA ŠESNAESTA (XVI.)**
-
 **KAZNENA DJELA PROTIV SPOLNE SLOBODE**
 
 
@@ -4586,8 +4437,7 @@ počinjeno.
 
 (1) Tko s drugom osobom bez njezinog pristanka izvrši spolni odnošaj ili s njim izjednačenu
 spolnu radnju ili navede drugu osobu da bez svog pristanka s trećom osobom izvrši spolni
-
-- dnošaj ili s njim izjednačenu spolnu radnju ili da bez svog pristanka nad samom sobom
+odnošaj ili s njim izjednačenu spolnu radnju ili da bez svog pristanka nad samom sobom
 izvrši sa spolnim odnošajem izjednačenu spolnu radnju,
 
 
@@ -4603,12 +4453,10 @@ kaznit će se kaznom zatvora do tri godine.
 
 (3) Pristanak iz stavka 1. ovoga članka postoji ako je osoba svojom voljom odlučila stupiti u
 spolni odnošaj ili s njime izjednačenu spolnu radnju i bila je sposobna donijeti i izraziti takvu
-
-- dluku. Smatra se da takvog pristanka nema osobito ako je spolni odnošaj ili s njime
+odluku. Smatra se da takvog pristanka nema osobito ako je spolni odnošaj ili s njime
 izjednačena spolna radnja izvršena uz uporabu prijetnje, prijevare, zlouporabom položaja
 prema osobi koja se prema počinitelju nalazi u odnosu zavisnosti, iskorištavanjem stanja
-
-- sobe zbog kojeg ona nije bila sposobna izraziti svoje odbijanje, ili nad osobom kojoj je
+osobe zbog kojeg ona nije bila sposobna izraziti svoje odbijanje, ili nad osobom kojoj je
 protupravno oduzeta sloboda.
 
 
@@ -4626,7 +4474,6 @@ kaznit će se kaznom zatvora od jedne do deset godina.
 
 
 (2) Počinitelj koji je bio u otklonjivoj zabludi glede postojanja pristanka iz stavka 1. ovoga
-
 članka
 
 
@@ -4643,8 +4490,7 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 
 
 (1) Kaznom zatvora od jedne do deset godina kaznit će se tko djelo iz članka 152. stavka 1.
-
-- voga Zakona počini:
+ovoga Zakona počini:
 
 
 1. prema bliskoj osobi,
@@ -4661,8 +4507,7 @@ teške tjelesne ili duševne smetnje,
 
 
 5. zajedno s jednim ili više počinitelja, pri čemu je prema istoj osobi izvršeno više spolnih
-
-- dnošaja ili s njim izjednačenih spolnih radnji,
+odnošaja ili s njim izjednačenih spolnih radnji,
 
 
 6. uz uporabu oružja ili opasnog oruđa,
@@ -4672,8 +4517,7 @@ teške tjelesne ili duševne smetnje,
 
 
 (2) Tko djelo iz članka 153. stavka 1. ovoga Zakona počini pod okolnostima iz stavka 1.
-
-- voga članka,
+ovoga članka,
 
 
 kaznit će se kaznom zatvora od tri do petnaest godina.
@@ -4716,8 +4560,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (1) Tko spolno uznemirava drugu osobu kojoj je nadređen ili koja se prema njemu nalazi u
-
-- dnosu zavisnosti ili koja je posebno ranjiva zbog dobi, bolesti, invaliditeta, ovisnosti,
+odnosu zavisnosti ili koja je posebno ranjiva zbog dobi, bolesti, invaliditeta, ovisnosti,
 trudnoće, teške tjelesne ili duševne smetnje,
 
 
@@ -4746,8 +4589,7 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 
 
 (2) Tko drugu osobu radi zarade silom ili prijetnjom, obmanom, prijevarom, zlouporabom
-
-- vlasti ili teškog položaja ili odnosa zavisnosti, prisili ili navede na pružanje spolnih usluga,
+ovlasti ili teškog položaja ili odnosa zavisnosti, prisili ili navede na pružanje spolnih usluga,
 ili tko koristi spolne usluge takve osobe uz naplatu, a znao je ili je morao i mogao znati za
 navedene okolnosti,
 
@@ -4802,8 +4644,7 @@ godine.
 
 (4) Počinitelj koji je bio u otklonjivoj zabludi da dijete iz stavka 1. ovoga članka ima najmanje
 petnaest godina kaznit će se kaznom zatvora od šest mjeseci do pet godina, a ako je bio u
-
-- tklonjivoj zabludi da dijete iz stavka 2. ovoga članka ima najmanje petnaest godina kaznit će
+otklonjivoj zabludi da dijete iz stavka 2. ovoga članka ima najmanje petnaest godina kaznit će
 se kaznom zatvora do tri godine.
 
 
@@ -4998,8 +4839,7 @@ kaznit će se kaznom zatvora od jedne do deset godina.
 
 
 (3) Tko silom ili prijetnjom, obmanom, prijevarom, zlouporabom ovlasti ili teškog položaja ili
-
-- dnosa zavisnosti, prisili ili navede dijete na sudjelovanje u pornografskoj predstavi,
+odnosa zavisnosti, prisili ili navede dijete na sudjelovanje u pornografskoj predstavi,
 
 
 69
@@ -5036,8 +4876,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 (2) Predmeti, posebne naprave, sredstva, računalni programi ili podaci namijenjeni,
 prilagođeni ili uporabljeni za počinjenje ili olakšavanje počinjenja kaznenog djela iz stavka 1.
-
-- voga članka će se oduzeti, a pornografski materijal će se i uništiti.
+ovoga članka će se oduzeti, a pornografski materijal će se i uništiti.
 
 
 (3) Pornografijom se u smislu ovoga članka smatra materijal koji vizualno ili na drugi način
@@ -5072,9 +4911,8 @@ počinitelja, ili je djelo počinjeno nad posebno ranjivim djetetom ili je poči
 70
 
 
-- sobe ili osobe s kojom dijete živi u zajedničkom kućanstvu, ili je počinjeno na osobito
-
-- krutan ili osobito ponižavajući način,
+osobe ili osobe s kojom dijete živi u zajedničkom kućanstvu, ili je počinjeno na osobito
+okrutan ili osobito ponižavajući način,
 
 
 počinitelj će se kazniti kaznom zatvora najmanje pet godina.
@@ -5156,8 +4994,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (2) Kaznom iz stavka 1. ovoga članka kaznit će se tko djetetu mlađem od šesnaest godina
-
-- mogući izvanbračni život s drugom osobom ili ga na to navede, a time ne čini neko drugo
+omogući izvanbračni život s drugom osobom ili ga na to navede, a time ne čini neko drugo
 kazneno djelo za koje je propisana teža kazna.
 
 
@@ -5245,8 +5082,7 @@ kaznenog postupka, može se osloboditi kazne.
 
 
 (1) Tko dijete oduzme od roditelja, posvojitelja, skrbnika, druge osobe ili ustanove kojoj je
-
-- no povjereno, protupravno ga zadrži ili mu onemogućava da živi s osobom ili u ustanovi
+ono povjereno, protupravno ga zadrži ili mu onemogućava da živi s osobom ili u ustanovi
 kojoj je povjereno,
 
 
@@ -5294,8 +5130,7 @@ počinitelj će se kazniti kaznom zatvora od tri do petnaest godina.
 
 
 (1) Tko podmetanjem, zamjenom, davanjem lažnih podataka ili na drugi način promijeni
-
-- biteljsko stanje djeteta,
+obiteljsko stanje djeteta,
 
 
 kaznit će se kaznom zatvora do tri godine.
@@ -5367,8 +5202,7 @@ počinitelj će se kazniti kaznom zatvora od tri do petnaest godina.
 
 
 (1) Tko iznese ili pronese nešto iz osobnog ili obiteljskog života djeteta, protivno propisima
-
-- bjavi djetetovu fotografiju ili otkrije identitet djeteta, što je kod djeteta izazvalo
+objavi djetetovu fotografiju ili otkrije identitet djeteta, što je kod djeteta izazvalo
 uznemirenost, porugu vršnjaka ili drugih osoba ili je na drugi način ugrozilo dobrobit djeteta,
 
 
@@ -5425,7 +5259,6 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 **GLAVA DEVETNAESTA (XIX.)**
-
 **KAZNENA DJELA PROTIV ZDRAVLJA LJUDI**
 
 
@@ -5472,8 +5305,7 @@ po prijedlogu oštećenika, osim ako je kazneno djelo počinjeno na štetu djete
 
 (1) Doktor medicine, doktor dentalne medicine ili drugi zdravstveni radnik koji obavljajući
 zdravstvenu djelatnost primijeni očito nepodobno sredstvo ili način liječenja ili na drugi način
-
-- čito ne postupi po pravilima zdravstvene struke ili očito nesavjesno postupa pa time
+očito ne postupi po pravilima zdravstvene struke ili očito nesavjesno postupa pa time
 prouzroči pogoršanje bolesti ili narušenje zdravlja druge osobe,
 
 
@@ -5481,8 +5313,7 @@ kaznit će se kaznom zatvora do jedne godine.
 
 
 (2) Ako je kaznenim djelom navedenim u stavku 1. ovoga članka prouzročena teška tjelesna
-
-- zljeda drugoj osobi ili je postojeća bolest znatno pogoršana,
+ozljeda drugoj osobi ili je postojeća bolest znatno pogoršana,
 
 
 počinitelj će se kazniti kaznom zatvora do tri godine.
@@ -5551,8 +5382,7 @@ počinitelj će se kazniti kaznom zatvora od tri do petnaest godina.
 
 (3) Doktor medicine, doktor dentalne medicine ili drugi zdravstveni radnik koji radi
 presađivanja uzme dio tijela umrle osobe iako zna da je ta osoba ili njezin zakonski zastupnik,
-
-- dnosno skrbnik, za života dao pisanu izjavu o nedarivanju, ili tko bez propisanog pristanka
+odnosno skrbnik, za života dao pisanu izjavu o nedarivanju, ili tko bez propisanog pristanka
 uzme radi presađivanja dio tijela umrlog djeteta ili umrle punoljetne osobe koja nije imala
 sposobnost rasuđivanja,
 
@@ -5595,8 +5425,7 @@ počinitelj će se kazniti kaznom zatvora od šest mjeseci do pet godina.
 
 
 (3) Ako je djelom iz stavka 1. ovoga članka kod druge osobe izazvana osobito teška tjelesna
-
-- zljeda ili prekid trudnoće,
+ozljeda ili prekid trudnoće,
 
 
 počinitelj će se kazniti kaznom zatvora od jedne do deset godina.
@@ -5644,8 +5473,7 @@ kaznit će se kaznom zatvora do tri godine.
 (4) Kaznom iz stavka 3. ovoga članka kaznit će se tko upotrijebi izvorno unutarnje ili vanjsko
 pakovanje lijeka ili medicinskog proizvoda, sažetak opisa svojstava lijeka, uputu o lijeku,
 uputu za uporabu medicinskog proizvoda, dokumentaciju o djelatnoj ili pomoćnoj tvari, izvan
-
-- noga za što su bili namijenjeni u legalnom snabdjevnom lancu lijekova i medicinskih
+onoga za što su bili namijenjeni u legalnom snabdjevnom lancu lijekova i medicinskih
 proizvoda.
 
 
@@ -5771,8 +5599,7 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 
 
 (2) Tko proizvede, preradi, prenese, izveze ili uveze, nabavi ili posjeduje tvari iz stavka 1.
-
-- voga članka koje su namijenjene neovlaštenoj prodaji ili stavljanju na drugi način u promet
+ovoga članka koje su namijenjene neovlaštenoj prodaji ili stavljanju na drugi način u promet
 ili ih neovlašteno ponudi na prodaju, proda ili posreduje u prodaji ili kupnji ili na drugi način
 neovlašteno stavi u promet,
 
@@ -5782,8 +5609,7 @@ kaznit će se kaznom zatvora od jedne do dvanaest godina.
 
 (3) Tko ponudi na prodaju, proda ili posreduje u prodaji tvari iz stavka 1. ovoga članka osobi
 s težim duševnim smetnjama, ili djetetu, ili to učini u školi ili na drugom mjestu koje služi
-
-- brazovanju, odgoju, sportskoj ili društvenoj aktivnosti djece ili u njegovoj neposrednoj
+obrazovanju, odgoju, sportskoj ili društvenoj aktivnosti djece ili u njegovoj neposrednoj
 blizini ili u kaznenoj ustanovi, ili tko za počinjenje djela iz stavka 2. ovoga članka iskoristi
 dijete, ili ako to učini službena osoba u obavljanju službe ili odgovorna osoba u obavljanju
 javne ovlasti,
@@ -5868,9 +5694,7 @@ kaznit će se kaznom zatvora od tri do petnaest godina.
 
 
 (5) Počinitelja kaznenog djela iz stavka 1. i 2. ovoga članka koji je dobrovoljno bitno pridonio
-
-- tkrivanju kaznenog djela iz članka 190. i članka 191. ovoga Zakona sud može osloboditi
-
+otkrivanju kaznenog djela iz članka 190. i članka 191. ovoga Zakona sud može osloboditi
 kazne.
 
 
@@ -5894,8 +5718,7 @@ ili osobi s težim duševnim smetnjama, ili ga navodi na njihovo trošenje, ili 
 troši, ili to učini u školi ili na drugom mjestu koje služi obrazovanju, odgoju, sportskoj ili
 društvenoj aktivnosti djece ili u njegovoj neposrednoj blizini ili u kaznenoj ustanovi, ili tko za
 počinjenje djela iz stavka 1. ovoga članka iskoristi dijete, ili ako to učini službena osoba u
-
-- bavljanju službe ili odgovorna osoba u obavljanju javne ovlasti,
+obavljanju službe ili odgovorna osoba u obavljanju javne ovlasti,
 
 
 kaznit će se kaznom zatvora od šest mjeseci do pet godina.
@@ -5957,8 +5780,7 @@ počinitelj će se kazniti kaznom zatvora od tri do dvanaest godina.
 
 (4) Ako je kaznenim djelom iz članka 180. stavka 3., članka 186. stavka 3., članka 187. stavka
 2., članka 188. stavka 2. i članka 189. stavka 2. ovoga Zakona prouzročena teška tjelesna
-
-- zljeda druge osobe ili je postojeća bolest znatno pogoršana,
+ozljeda druge osobe ili je postojeća bolest znatno pogoršana,
 
 
 počinitelj će se kazniti kaznom zatvora do tri godine.
@@ -6042,8 +5864,7 @@ kaznit će se kaznom zatvora do jedne godine.
 
 
 (1) Tko protivno propisima proizvodi, uvozi, izvozi, stavlja u promet ili koristi tvari koje
-
-- štećuju ozonski sloj,
+oštećuju ozonski sloj,
 
 
 kaznit će se kaznom zatvora do tri godine.
@@ -6144,8 +5965,7 @@ kaznit će se kaznom zatvora do dvije godine.
 
 
 Tko protivno propisima proizvede buku, vibracije ili neionizirajuće zračenje i time dovede u
-
-- pasnost život ili zdravlje ljudi,
+opasnost život ili zdravlje ljudi,
 
 
 kaznit će se kaznom zatvora do tri godine.
@@ -6287,7 +6107,6 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (3) Kaznom iz stavka 1. ovoga članka kaznit će se tko vrhunski trofej divljači trajno iznese u
-
 inozemstvo.
 
 
@@ -6419,8 +6238,7 @@ kaznit će se kaznom zatvora do dvije godine.
 
 
 (2) Tko kazneno djelo iz stavka 1. ovoga članka počini na području koje je propisom ili
-
-- dlukom nadležnog tijela proglašeno zaštićenom prirodnom vrijednosti,
+odlukom nadležnog tijela proglašeno zaštićenom prirodnom vrijednosti,
 
 
 kaznit će se kaznom zatvora do tri godine.
@@ -6449,8 +6267,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (2) Tko protivno propisima obavlja eksploataciju rudnog blaga u području koje je propisom ili
-
-- dlukom nadležnog tijela proglašeno zaštićenom prirodnom vrijednosti,
+odlukom nadležnog tijela proglašeno zaštićenom prirodnom vrijednosti,
 
 
 kaznit će se kaznom zatvora od šest mjeseci do pet godina.
@@ -6471,8 +6288,7 @@ kaznenog djela će se oduzeti.
 
 Tko protivno propisima gradi građevinu u području koje je propisom ili odlukom nadležnog
 tijela proglašeno zaštićenom prirodnom vrijednosti, kulturnim dobrom ili drugim područjem
-
-- d posebnog interesa za državu,
+od posebnog interesa za državu,
 
 
 kaznit će se kaznom zatvora od šest mjeseci do pet godina.
@@ -6498,8 +6314,7 @@ dobrovoljno otkloni opasnost ili stanje koje je prouzrokovao.
 (1) Ako je kaznenim djelom iz članka 193. stavka 1. i 2., članka 194. stavka 1. i 2., članka
 196. stavka 1. i 2., članka 197. stavka 1., članka 198. stavka 1. i članka 199. ovoga Zakona
 prouzročena teška tjelesna ozljeda jedne ili više osoba, ili se promjene prouzročene
-
-- nečišćenjem ne mogu dulje vrijeme otkloniti, ili nastupi velika nesreća,
+onečišćenjem ne mogu dulje vrijeme otkloniti, ili nastupi velika nesreća,
 
 
 počinitelj će se kazniti kaznom zatvora od jedne do deset godina.
@@ -6519,9 +6334,8 @@ počinitelj će se kazniti kaznom zatvora od tri do petnaest godina.
 89
 
 
-- zljeda jedne ili više osoba, ili se promjene prouzročene onečišćenjem ne mogu dulje vrijeme
-
-- tkloniti, ili nastupi velika nesreća,
+ozljeda jedne ili više osoba, ili se promjene prouzročene onečišćenjem ne mogu dulje vrijeme
+otkloniti, ili nastupi velika nesreća,
 
 
 počinitelj će se kazniti kaznom zatvora od šest mjeseci do pet godina.
@@ -6542,8 +6356,7 @@ počinitelj će se kazniti kaznom zatvora od jedne do osam godina.
 
 
 (6) Ako je kaznenim djelom iz članka 206. stavak 1., članka 207. stavka 1. i članka 208.
-
-- voga Zakona prouzročena znatna šteta,
+ovoga Zakona prouzročena znatna šteta,
 
 
 počinitelj će se kazniti kaznom zatvora od šest mjeseci do pet godina.
@@ -6576,8 +6389,7 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 
 
 (2) Kaznom iz stavka 1. ovoga članka kaznit će se tko ne postavi propisane naprave za zaštitu
-
-- d požara, eksplozije, poplave, otrova, otrovnih plinova, nuklearne energije, ionizirajućih
+od požara, eksplozije, poplave, otrova, otrovnih plinova, nuklearne energije, ionizirajućih
 zračenja ili za zaštitu na radu ili te naprave ne održava u ispravnom stanju, ili ih u slučaju
 potrebe ne stavi u djelovanje, ili uopće ne postupa po propisima ili tehničkim pravilima o
 zaštitnim mjerama i time izazove opasnost za život ili tijelo ljudi ili za imovinu većeg opsega.
@@ -6607,16 +6419,13 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 
 
 (2) Kaznom iz stavka 1. kaznit će se tko uništi, ošteti, prekine, preusmjeri ili na drugi način
-
-- nesposobi ispravnost podmorskog kabela ili cjevovoda koji ispod vodene površine
-
-- mogućuje elektroničku komunikacijsku uslugu ili protok vode, plina, nafte ili električne
+onesposobi ispravnost podmorskog kabela ili cjevovoda koji ispod vodene površine
+omogućuje elektroničku komunikacijsku uslugu ili protok vode, plina, nafte ili električne
 energije između dviju ili više država ili između neke države i Arktika ili Antarktika.
 
 
 (3) Kaznom iz stavka 1. ovoga članka kaznit će se tko uništi, ošteti ili na drugi način
-
-- nesposobi ispravnost pratećih objekata, plovila, naprava ili opreme koja se koristi za
+onesposobi ispravnost pratećih objekata, plovila, naprava ili opreme koja se koristi za
 postavljanje, popravak ili održavanje podmorskih kabela ili cjevovoda.
 
 
@@ -6653,7 +6462,6 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (1) Tko uništi, ošteti, ukloni ili na drugi način učini neuporabljivim ili neuočljivim znak kojim
-
 se upozorava na opasnost,
 
 
@@ -6688,7 +6496,6 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 teško tjelesno ozlijedi ili da prouzroči znatnu štetu na tuđoj imovini ili okolišu koristi
 radioaktivne tvari ili uređaj za aktiviranje, raspršivanje ili emitiranje radioaktivnih tvari ili
 koristi ili ošteti nuklearni objekt tako da dovede do opasnosti od oslobađanja radioaktivnih
-
 tvari.
 
 
@@ -6715,7 +6522,6 @@ kaznit će se kaznom zatvora do tri godine.
 (2) Kaznom iz stavka 1. ovoga članka kaznit će se tko protivno propisima o prometu
 eksploziva ili lako upaljivog materijala preda eksploziv ili lako upaljiv materijal na prijevoz
 javnim prijevoznim sredstvima ili takav materijal sam prenosi koristeći se javnim prijevoznim
-
 sredstvom.
 
 
@@ -6754,8 +6560,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 (1) Ako je kaznenim djelom iz članka 215. stavka 1. i 2., članka 216. stavka 1., 2. i 3., članka
 217. stavka 1., članka 219. i članka 221. stavka 1. ovoga Zakona prouzročena teška tjelesna
-
-- zljeda neke osobe ili imovinska šteta velikih razmjera,
+ozljeda neke osobe ili imovinska šteta velikih razmjera,
 
 
 počinitelj će se kazniti kaznom zatvora od jedne do deset godina.
@@ -6784,7 +6589,6 @@ počinitelj će se kazniti kaznom zatvora od jedne do osam godina.
 
 
 **GLAVA DVADESET DRUGA (XXII.)**
-
 **KAZNENA DJELA PROTIV SIGURNOSTI PROMETA**
 
 
@@ -6822,8 +6626,7 @@ kaznit će se kaznom zatvora od tri do petnaest godina.
 
 (4) Tko s ciljem prekidanja odvijanja rada u zračnoj luci ili dovođenja u opasnost sigurnosti
 zračnog prometa počini nasilje prema osobi zaposlenoj u međunarodnoj zračnoj luci, ili teže
-
-- šteti ili uništi naprave zračne luke, ili ošteti zrakoplov koji nije u prometu,
+ošteti ili uništi naprave zračne luke, ili ošteti zrakoplov koji nije u prometu,
 
 
 kaznit će se kaznom zatvora od jedne do deset godina.
@@ -6879,8 +6682,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (4) Ako je kaznenim djelom iz stavka 2. ovoga članka prouzročena teška tjelesna ozljeda neke
-
-- sobe ili imovinska šteta velikih razmjera,
+osobe ili imovinska šteta velikih razmjera,
 
 
 počinitelj će se kazniti kaznom zatvora od jedne do deset godina.
@@ -6896,8 +6698,7 @@ počinitelj će se kazniti kaznom zatvora od tri do petnaest godina.
 
 
 (6) Ako je kaznenim djelom iz stavka 3. ovoga članka prouzročena teška tjelesna ozljeda neke
-
-- sobe ili imovinska šteta velikih razmjera,
+osobe ili imovinska šteta velikih razmjera,
 
 
 počinitelj će se kazniti kaznom zatvora od jedne do osam godina.
@@ -6930,8 +6731,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (3) Ako je kaznenim djelom iz stavka 1. ovoga članka prouzročena teška tjelesna ozljeda neke
-
-- sobe ili imovinska šteta velikih razmjera,
+osobe ili imovinska šteta velikih razmjera,
 
 
 počinitelj će se kazniti kaznom zatvora od jedne do deset godina.
@@ -6944,8 +6744,7 @@ počinitelj će se kazniti kaznom zatvora od tri do petnaest godina.
 
 
 (5) Ako je kaznenim djelom iz stavka 2. ovoga članka prouzročena teška tjelesna ozljeda neke
-
-- sobe ili imovinska šteta velikih razmjera,
+osobe ili imovinska šteta velikih razmjera,
 
 
 počinitelj će se kazniti kaznom zatvora od jedne do osam godina.
@@ -6990,8 +6789,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (1) Sudionik u cestovnom prometu koji kršenjem propisa o sigurnosti prometa izazove
-
-- pasnost za život ili tijelo ljudi ili za imovinu velikih razmjera, pa zbog toga prouzroči tešku
+opasnost za život ili tijelo ljudi ili za imovinu velikih razmjera, pa zbog toga prouzroči tešku
 tjelesnu ozljedu druge osobe ili imovinsku štetu velikih razmjera,
 
 
@@ -7031,7 +6829,6 @@ počinitelj će se kazniti kaznom zatvora od jedne do osam godina.
 
 
 **GLAVA DVADESET TREĆA (XXIII.)**
-
 **KAZNENA DJELA PROTIV IMOVINE**
 
 
@@ -7064,7 +6861,6 @@ počinitelj će se kazniti kaznom zatvora od šest mjeseci do pet godina.
 
 
 (4) Vrati li počinitelj ukradenu stvar oštećeniku prije nego što je saznao da je otkriven, može
-
 se osloboditi kazne.
 
 
@@ -7358,8 +7154,7 @@ stavka 1., 2., 3. i 4. ovoga članka će se oduzeti.
 
 
 (1) Tko s ciljem da sebi ili drugome pribavi osigurninu uništi, ošteti ili sakrije stvar koja je
-
-- sigurana protiv uništenja, oštećenja, gubitka ili krađe,
+osigurana protiv uništenja, oštećenja, gubitka ili krađe,
 
 
 kaznit će se kaznom zatvora do tri godine.
@@ -7486,8 +7281,7 @@ kaznit će se kaznom zatvora od jedne do deset godina.
 
 
 (4) Ako je kaznenim djelom iz stavka 3. ovoga članka uporabljeno kakvo oružje ili opasno
-
-- ruđe, pribavljena znatna imovinska korist ili je prouzročena znatna šteta,
+oruđe, pribavljena znatna imovinska korist ili je prouzročena znatna šteta,
 
 
 počinitelj će se kazniti kaznom zatvora od tri do dvanaest godina.
@@ -7534,8 +7328,7 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 
 
 (3) Počinitelj kaznenog djela iz stavka 1. ovoga članka neće se kazniti kaznom strožom od
-
-- ne koja je propisana za kazneno djelo kojim je prikrivena stvar pribavljena.
+one koja je propisana za kazneno djelo kojim je prikrivena stvar pribavljena.
 
 
 **Kazneni progon za kaznena djela protiv imovine**
@@ -7546,8 +7339,7 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 
 (1) Kaznena djela iz članka 228. stavka 2., članka 232. stavka 1., 2. i 4., članka 233. stavka 3.,
 članka 236. stavka 3. i članka 240. stavka 1. ovoga Zakona progone se po privatnoj tužbi,
-
-- sim ako su počinjena na štetu državne imovine.
+osim ako su počinjena na štetu državne imovine.
 
 
 (2) Kaznena djela iz članka 234. stavka 1. i članka 238. stavka 1. ovoga Zakona progone se po
@@ -7566,7 +7358,6 @@ kućanstvu, progone se po privatnoj tužbi.
 
 
 **GLAVA DVADESET ČETVRTA (XXIV.)**
-
 **KAZNENA DJELA PROTIV GOSPODARSTVA**
 
 
@@ -7602,8 +7393,7 @@ počinitelj će se kazniti kaznom zatvora od jedne do deset godina.
 
 
 (1) Tko u gospodarskom poslovanju s ciljem da pravnoj osobi koju zastupa ili drugoj pravnoj
-
-- sobi pribavi protupravnu imovinsku korist dovede nekoga lažnim prikazivanjem ili
+osobi pribavi protupravnu imovinsku korist dovede nekoga lažnim prikazivanjem ili
 prikrivanjem činjenica u zabludu ili ga održava u zabludi i time ga navede da na štetu svoje ili
 tuđe imovine nešto učini ili ne učini,
 
@@ -7645,8 +7435,7 @@ ili je nastupila:
 
 1. prividno ili besplatno prenese imovinu na trgovačko društvo koje je osnovao sam ili s
 drugim, ili na drugi način cijelu ili dio imovine koja bi činila stečajnu masu prividno proda,
-
-- ptereti bez odgovarajuće protučinidbe, besplatno ustupi, sakrije, ošteti, uništi ili učini
+optereti bez odgovarajuće protučinidbe, besplatno ustupi, sakrije, ošteti, uništi ili učini
 neupotrebljivom,
 
 
@@ -7704,8 +7493,7 @@ ili je protiv njega ili osobe koju je zastupao otvoren stečajni postupak.
 
 
 (1) Tko znajući da je on ili osoba koju zastupa postala nesposobna za plaćanje, ispuni ili
-
-- sigura tražbinu vjerovnika koji nema pravo na ispunjenje ili osiguranje na takav način ili u to
+osigura tražbinu vjerovnika koji nema pravo na ispunjenje ili osiguranje na takav način ili u to
 vrijeme,
 
 
@@ -7713,7 +7501,6 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (2) Ako su ostali vjerovnici namireni prije donošenja presude, počinitelj se može osloboditi
-
 kazne.
 
 
@@ -7793,10 +7580,8 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (3) Počinitelj kaznenog djela iz stavka 1. i 2. ovoga članka koji je dao mito na zahtjev
-
-- dgovorne osobe i prijavio djelo prije njegova otkrivanja ili prije saznanja da je djelo
-
-- tkriveno, može se osloboditi kazne.
+odgovorne osobe i prijavio djelo prije njegova otkrivanja ili prije saznanja da je djelo
+otkriveno, može se osloboditi kazne.
 
 
 **Zlouporaba u postupku javne nabave**
@@ -7823,7 +7608,6 @@ počinitelj će se kazniti kaznom zatvora od jedne do deset godina.
 
 
 (3) Počinitelj koji dobrovoljno spriječi da naručitelj prihvati ponudu iz stavka 1. ovoga članka
-
 može se osloboditi kazne.
 
 
@@ -7869,8 +7653,7 @@ počinitelj će se kazniti kaznom zatvora od jedne do deset godina.
 
 
 (4) Odredbe iz stavka 1. do 3. ovoga članka primijenit će se i na počinitelja koji u njima
-
-- pisanim radnjama umanji sredstva Europske unije.
+opisanim radnjama umanji sredstva Europske unije.
 
 
 **Izbjegavanje carinskog nadzora**
@@ -7902,8 +7685,7 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 (1) Tko s ciljem da za sebe ili drugoga ostvari državnu potporu davatelju državne potpore
 dade netočne ili nepotpune podatke o činjenicama o kojima ovisi donošenje odluke o državnoj
 potpori ili propusti obavijestiti davatelja državne potpore o promjenama važnim za donošenje
-
-- dluke o državnoj potpori,
+odluke o državnoj potpori,
 
 
 kaznit će se kaznom zatvora od šest mjeseci do pet godina.
@@ -7926,8 +7708,7 @@ državnoj potpori, može se osloboditi kazne.
 
 
 (5) S državnim potporama u smislu ovoga članka izjednačuju se subvencije i pomoći
-
-- dobrene iz sredstava Europske unije.
+odobrene iz sredstava Europske unije.
 
 
 **Zlouporaba povlaštenih informacija**
@@ -7941,8 +7722,7 @@ temelju članstva u upravnim, upravljačkim ili nadzornim tijelima izdavatelja i
 tržištu emisijskih jedinica ili posjedovanja svog udjela u kapitalu izdavatelja ili sudionika na
 tržištu emisijskih jedinica ili na temelju pristupa informacijama tijekom obavljanja posla,
 profesije ili dužnosti ili tko je do povlaštenih informacija došao neovisno o navedenim
-
-- kolnostima:
+okolnostima:
 
 
 1. za vlastiti ili tuđi račun, neposredno ili posredno, stekne ili otuđi financijski instrument na
@@ -8055,7 +7835,6 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 
 
 (3) Nema kaznenog djela ako je djelo iz stavka 1. ovoga članka počinjeno u pretežito javnom
-
 interesu.
 
 
@@ -8069,16 +7848,14 @@ interesu.
 
 
 (1) Tko neovlašteno proizvodi ili prerađuje predmete ili robu čija je proizvodnja zabranjena ili
-
-- graničena ako time nije počinjeno neko drugo kazneno djelo za koje je propisana teža kazna,
+ograničena ako time nije počinjeno neko drugo kazneno djelo za koje je propisana teža kazna,
 
 
 kaznit će se kaznom zatvora do tri godine.
 
 
 (2) Kaznom iz stavka 1. kaznit će se tko napravi, nabavi, prenese, izveze ili uveze, posjeduje
-
-- premu, materijal ili tvari koje se mogu uporabiti za nedozvoljenu proizvodnju i za koje zna
+opremu, materijal ili tvari koje se mogu uporabiti za nedozvoljenu proizvodnju i za koje zna
 da su namijenjeni nedozvoljenoj proizvodnji.
 
 
@@ -8136,8 +7913,7 @@ kaznit će se kaznom zatvora od jedne do osam godina.
 
 
 (5) Tko poduzme radnju iz stavka 1., 2. ili 4. ovoga članka postupajući s nehajem u odnosu na
-
-- kolnosti da se radi o imovinskoj koristi ostvarenoj kaznenim djelom,
+okolnosti da se radi o imovinskoj koristi ostvarenoj kaznenim djelom,
 
 
 kaznit će se kaznom zatvora do tri godine.
@@ -8154,7 +7930,6 @@ djela kojim je ostvarena imovinska korist sud može osloboditi kazne.
 
 **GLAVA DVADESET PETA (XXV.)**
 **KAZNENA DJELA PROTIV RAČUNALNIH SUSTAVA, PROGRAMA I**
-
 **PODATAKA**
 
 
@@ -8172,8 +7947,7 @@ kaznit će se kaznom zatvora do dvije godine.
 
 (2) Tko kazneno djelo iz stavka 1. ovoga članka počini u odnosu na računalni sustav ili
 računalne podatke tijela državne vlasti, Ustavnog suda Republike Hrvatske i međunarodne
-
-- rganizacije koje je Republika Hrvatska član, tijela jedinica lokalne ili područne (regionalne)
+organizacije koje je Republika Hrvatska član, tijela jedinica lokalne ili područne (regionalne)
 samouprave, javne ustanove ili trgovačkog društva od posebnog javnog interesa,
 
 
@@ -8286,7 +8060,6 @@ počinitelj će se kazniti kaznom zatvora od jedne do osam godina.
 
 
 (3) Podaci koji su nastali počinjenjem kaznenog djela iz stavka 1. i 2. ovoga članka će se
-
 uništiti.
 
 
@@ -8315,8 +8088,7 @@ kaznit će se kaznom zatvora do dvije godine.
 
 
 (3) Počinitelj kaznenog djela iz stavka 1. ovoga članka neće se kazniti kaznom strožom od
-
-- ne koja je propisana za kazneno djelo koje je imao za cilj.
+one koja je propisana za kazneno djelo koje je imao za cilj.
 
 
 (4) Posebne naprave i programi iz stavka 1. ovoga članka će se oduzeti, a podaci iz stavka 1. i
@@ -8344,7 +8116,6 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 
 (2) Kaznom iz stavka 1. kaznit će se tko kazneno djelo iz članka 266. do članka 269. ovoga
 Zakona počini prikrivajući stvarni identitet i uzrokujući zabludu o ovlaštenom nositelju
-
 identiteta.
 
 
@@ -8357,7 +8128,6 @@ kaznit će se kaznom zatvora od jedne do osam godina.
 
 
 **GLAVA DVADESET ŠESTA (XXVI.)**
-
 **KAZNENA DJELA KRIVOTVORENJA**
 
 
@@ -8376,8 +8146,7 @@ kaznit će se kaznom zatvora od jedne do deset godina.
 
 
 (2) Tko lažni novac koji je primio u uvjerenju da je pravi, saznavši da je lažan, stavi u
-
-- ptjecaj,
+optjecaj,
 
 
 kaznit će se kaznom zatvora do tri godine.
@@ -8424,7 +8193,6 @@ kaznit će se kaznom zatvora do tri godine.
 
 (1) Tko izradi lažne biljege, poštanske marke ili druge znakove za vrijednost izdane na
 temelju propisa ili ih preinači, pribavi ili dade drugome na uporabu s ciljem da ih uporabi kao
-
 prave,
 
 
@@ -8506,8 +8274,7 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 (1) Službena ili odgovorna osoba koja u službenu ili poslovnu ispravu, knjigu ili spis unese
 neistinite podatke, ili ne unese kakav važan podatak, ili svojim potpisom, odnosno službenim
 pečatom ovjeri takvu ispravu, knjigu ili spis s neistinitim sadržajem ili koja svojim potpisom,
-
-- dnosno službenim pečatom omogući izradbu isprave, knjige ili spisa s neistinitim sadržajem,
+odnosno službenim pečatom omogući izradbu isprave, knjige ili spisa s neistinitim sadržajem,
 
 
 kaznit će se kaznom zatvora od šest mjeseci do pet godina.
@@ -8601,8 +8368,7 @@ lažnih znakova za obilježavanje robe, lažnih mjera i utega i krivotvorenih is
 
 (1) Tko protivno propisima kojima se uređuje autorsko i srodna prava pod krivim imenom,
 svojim imenom ili imenom drugoga označi tuđe autorsko djelo ili protivno autorovoj zabrani
-
-- znači djelo autorovim imenom te ga objavi ili se koristi njime ili dopusti da se to učini,
+označi djelo autorovim imenom te ga objavi ili se koristi njime ili dopusti da se to učini,
 
 
 kaznit će se kaznom zatvora do jedne godine.
@@ -8617,7 +8383,6 @@ umjetnika izvođača te je objavi ili se koristi njome ili dopusti da se to uči
 (3) Kaznom iz stavka 1. ovoga članka kaznit će se tko protivno propisima kojima se uređuje
 autorsko i srodna prava unese dijelove tuđeg autorskog djela ili tuđe izvedbe umjetnika
 izvođača u svoje autorsko djelo ili u svoju izvedbu s ciljem pribavljanja koristi ili nanošenja
-
 štete.
 
 
@@ -8752,7 +8517,6 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (5) Kazneno djelo iz stavka 1. ovoga članka progoni se po prijedlogu oštećenika ili druge
-
 zainteresirane osobe.
 
 
@@ -8785,10 +8549,8 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (3) Predmeti koji su bili namijenjeni ili uporabljeni za počinjenje kaznenog djela iz stavka 1.
-
-- voga članka će se oduzeti, a predmeti koji su nastali počinjenjem kaznenog djela iz stavka 1.
-
-- voga članka će se oduzeti i uništiti, osim ako sud odluči da će se uporabljeni znak učiniti
+ovoga članka će se oduzeti, a predmeti koji su nastali počinjenjem kaznenog djela iz stavka 1.
+ovoga članka će se oduzeti i uništiti, osim ako sud odluči da će se uporabljeni znak učiniti
 neraspoznatljivim, a predmete koji su nastali počinjenjem djela uporabiti u humanitarne svrhe.
 
 
@@ -8807,12 +8569,9 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (2) Predmeti koji su bili namijenjeni ili uporabljeni za počinjenje kaznenog djela iz stavka 1.
-
-- voga članka će se oduzeti, a predmeti koji su nastali počinjenjem kaznenog djela iz stavka 1.
-
-- voga članka će se oduzeti i uništiti, osim ako sud odluči da će se uporabljena oznaka učiniti
+ovoga članka će se oduzeti, a predmeti koji su nastali počinjenjem kaznenog djela iz stavka 1.
+ovoga članka će se oduzeti i uništiti, osim ako sud odluči da će se uporabljena oznaka učiniti
 neraspoznatljivom, a predmeti koji su nastali počinjenjem djela uporabiti u humanitarne
-
 svrhe.
 
 
@@ -8837,8 +8596,7 @@ glave će se javno objaviti o trošku počinitelja. Način objavljivanja odredit
 
 
 (1) Službena ili odgovorna osoba koja iskoristi svoj položaj ili ovlast, prekorači granice svoje
-
-- vlasti ili ne obavi dužnost pa time sebi ili drugoj osobi pribavi korist ili drugome prouzroči
+ovlasti ili ne obavi dužnost pa time sebi ili drugoj osobi pribavi korist ili drugome prouzroči
 štetu,
 
 
@@ -8881,8 +8639,7 @@ djelatnost ili djelatnost osoba s kojima je interesno povezana.
 
 
 (1) Službena ili odgovorna osoba koja zahtijeva ili primi mito, ili koja prihvati ponudu ili
-
-- bećanje mita za sebe ili drugoga da unutar ili izvan granica svoje ovlasti obavi službenu ili
+obećanje mita za sebe ili drugoga da unutar ili izvan granica svoje ovlasti obavi službenu ili
 drugu radnju koja se ne bi smjela obaviti, ili da ne obavi službenu ili drugu radnju koja bi se
 morala obaviti,
 
@@ -8891,8 +8648,7 @@ kaznit će se kaznom zatvora od jedne do deset godina.
 
 
 (2) Službena ili odgovorna osoba koja zahtijeva ili primi mito, ili koja prihvati ponudu ili
-
-- bećanje mita za sebe ili za drugoga da unutar ili izvan granica svoje ovlasti obavi službenu
+obećanje mita za sebe ili za drugoga da unutar ili izvan granica svoje ovlasti obavi službenu
 ili drugu radnju koja bi se morala obaviti, ili da ne obavi službenu ili drugu radnju koja se ne
 bi smjela obaviti,
 
@@ -8914,8 +8670,7 @@ kaznit će se kaznom zatvora do jedne godine.
 
 
 (1) Tko službenoj ili odgovornoj osobi ponudi, dade ili obeća mito namijenjeno toj ili drugoj
-
-- sobi da unutar ili izvan granica svoje ovlasti obavi službenu ili drugu radnju koju ne bi
+osobi da unutar ili izvan granica svoje ovlasti obavi službenu ili drugu radnju koju ne bi
 smjela obaviti ili da ne obavi službenu ili drugu radnju koju bi morala obaviti, ili tko
 posreduje pri takvom podmićivanju službene ili odgovorne osobe,
 
@@ -8927,10 +8682,8 @@ kaznit će se kaznom zatvora od jedne do osam godina.
 
 
 (2) Tko službenoj ili odgovornoj osobi ponudi, dade ili obeća mito namijenjeno toj ili drugoj
-
-- sobi da unutar ili izvan granica svoje ovlasti obavi službenu ili drugu radnju koju bi morala
-
-- baviti, ili da ne obavi službenu ili drugu radnju koju ne bi smjela obaviti, ili tko posreduje pri
+osobi da unutar ili izvan granica svoje ovlasti obavi službenu ili drugu radnju koju bi morala
+obaviti, ili da ne obavi službenu ili drugu radnju koju ne bi smjela obaviti, ili tko posreduje pri
 takvom podmićivanju službene ili odgovorne osobe,
 
 
@@ -8949,8 +8702,7 @@ djelo otkriveno, može se osloboditi kazne.
 
 
 (1) Tko iskorištavanjem svoga službenog ili društvenog položaja ili utjecaja posreduje da se
-
-- bavi službena ili druga radnja koja se ne bi smjela obaviti ili da se ne obavi službena ili
+obavi službena ili druga radnja koja se ne bi smjela obaviti ili da se ne obavi službena ili
 druga radnja koja bi se morala obaviti,
 
 
@@ -9073,12 +8825,10 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (2) Nema kaznenog djela ako je djelo iz stavka 1. ovoga članka počinjeno u pretežito javnom
-
 interesu.
 
 
 **GLAVA DVADESET DEVETA (XXIX.)**
-
 **KAZNENA DJELA PROTIV PRAVOSUĐA**
 
 
@@ -9105,16 +8855,13 @@ kaznit će se kaznom zatvora do tri godine.
 
 (3) Nema kaznenog djela iz stavka 1. ovoga članka kad njegova obilježja ostvari osoba koja je
 u braku ili koja živi u izvanbračnoj ili životnoj zajednici ili neformalnoj životnoj zajednici s
-
-- sobom koja priprema neprijavljeno kazneno djelo ili je toj osobi srodnik po krvi u ravnoj
+osobom koja priprema neprijavljeno kazneno djelo ili je toj osobi srodnik po krvi u ravnoj
 lozi, brat ili sestra, posvojitelj ili posvojenik, osim ako se priprema kazneno djelo na štetu
 djeteta.
 
 
 (4) Za kazneno djelo iz stavka 2. ovoga članka može se blaže kazniti počinitelj koji je s
-
-- sobom koja priprema počinjenje kaznenog djela u nekom od odnosa iz stavka 3. ovoga
-
+osobom koja priprema počinjenje kaznenog djela u nekom od odnosa iz stavka 3. ovoga
 članka.
 
 
@@ -9126,8 +8873,7 @@ djeteta.
 
 (1) Tko zna da je počinjeno kazneno djelo za koje je propisana kazna zatvora deset godina ili
 teža kazna pa to ne prijavi iako zna da bi takvom prijavom bilo omogućeno ili znatno
-
-- lakšano otkrivanje djela ili počinitelja,
+olakšano otkrivanje djela ili počinitelja,
 
 
 kaznit će se kaznom zatvora do tri godine.
@@ -9140,16 +8886,14 @@ progonu po prijedlogu.
 
 
 (3) Počinitelj kaznenog djela iz stavka 2. ovoga članka neće se kazniti kaznom strožom od
-
-- ne koja je propisana za kazneno djelo koje nije prijavio.
+one koja je propisana za kazneno djelo koje nije prijavio.
 
 
 124
 
 
 (4) Nema kaznenog djela iz stavka 1. ovoga članka kad njegova zakonska obilježja ostvari
-
-- soba koja je u braku ili koja živi u izvanbračnoj ili životnoj zajednici ili neformalnoj životnoj
+osoba koja je u braku ili koja živi u izvanbračnoj ili životnoj zajednici ili neformalnoj životnoj
 zajednici s osobom koja je počinila neprijavljeno kazneno djelo ili je toj osobi srodnik po krvi
 u ravnoj lozi, brat ili sestra, posvojitelj ili posvojenik, osim ako je djelo počinjeno prema
 djetetu.
@@ -9186,14 +8930,12 @@ kaznit će se kaznom zatvora od jedne do osam godina.
 
 
 (4) Počinitelj kaznenog djela iz stavka 2. ovoga članka neće se kazniti kaznom strožom od
-
-- ne koja je propisana za kazneno djelo koje je počinila osoba kojoj je počinitelj pružio
+one koja je propisana za kazneno djelo koje je počinila osoba kojoj je počinitelj pružio
 pomoć.
 
 
 (5) Nema kaznenog djela iz stavka 1., 2. i 3. ovoga članka kad njegova zakonska obilježja
-
-- stvari osoba koja je u braku ili koja živi u izvanbračnoj ili životnoj zajednici ili neformalnoj
+ostvari osoba koja je u braku ili koja živi u izvanbračnoj ili životnoj zajednici ili neformalnoj
 životnoj zajednici s osobom kojoj je pružila pomoć ili je toj osobi srodnik po krvi u ravnoj
 lozi, brat ili sestra, posvojitelj ili posvojenik.
 
@@ -9251,8 +8993,7 @@ dade lažni iskaz ako se na tom iskazu temelji konačna odluka u tom postupku.
 
 
 (3) Ako je kaznenim djelom iz stavka 1. i 2. ovoga članka prouzročena osuda nedužnog
-
-- krivljenika ili druge osobito teške posljedice za okrivljenika,
+okrivljenika ili druge osobito teške posljedice za okrivljenika,
 
 
 počinitelj će se kazniti kaznom zatvora od jedne do deset godina.
@@ -9332,8 +9073,7 @@ u tom postupku.
 
 
 Tko neovlašteno drugome priopći, preda ili objavi podatke o identitetu ugrožene osobe ili
-
-- sobe koja je ili će biti ispitana kao zaštićeni svjedok, ili za koju je na temelju posebnog
+osobe koja je ili će biti ispitana kao zaštićeni svjedok, ili za koju je na temelju posebnog
 zakona pokrenut postupak za uključenje u program zaštite ili je ta osoba uključena u program
 zaštite, ili tko poduzme drugu radnju s ciljem otkrivanja podataka o identitetu te osobe ili s
 ciljem njezinog pronalaska,
@@ -9369,8 +9109,7 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 
 
 (3) Počinitelj kaznenog djela iz stavka 1. ovoga članka koji na poziv službene osobe odustane
-
-- d okupljanja, može se osloboditi kazne.
+od okupljanja, može se osloboditi kazne.
 
 
 **Omogućavanje bijega osobi kojoj je oduzeta sloboda**
@@ -9399,8 +9138,7 @@ kaznit će se kaznom zatvora do dvije godine.
 
 
 (2) Kaznom iz stavka 1. ovoga članka kaznit će se tko krši sigurnosnu mjeru koja mu je
-
-- dređena pravomoćnom presudom.
+određena pravomoćnom presudom.
 
 
 (3) Nema kaznenog djela iz stavka 2. ovoga članka ako je kršenje obveze iz stavka 2. dovelo
@@ -9415,10 +9153,8 @@ do primjene članka 55. stavka 8. ili članka 58. stavka 5. ovoga Zakona.
 
 Tko suca, državnog odvjetnika, javnog bilježnika ili drugog pravosudnog dužnosnika ili
 službenika silom ili prijetnjom kakvim zlom spriječi poduzeti neku radnju ili donijeti neku
-
-- dluku u okviru njegovih ovlasti ili prisili na poduzimanje neke radnje ili donošenje neke
-
-- dluke u okviru ili izvan njegove ovlasti,
+odluku u okviru njegovih ovlasti ili prisili na poduzimanje neke radnje ili donošenje neke
+odluke u okviru ili izvan njegove ovlasti,
 
 
 kaznit će se kaznom zatvora od šest mjeseci do pet godina.
@@ -9440,7 +9176,6 @@ kaznit će se kaznom zatvora do šest mjeseci.
 
 
 **GLAVA TRIDESETA (XXX.)**
-
 **KAZNENA DJELA PROTIV JAVNOG REDA**
 
 
@@ -9452,8 +9187,7 @@ kaznit će se kaznom zatvora do šest mjeseci.
 
 (1) Tko silom ili prijetnjom da će izravno uporabiti silu spriječi službenu osobu u obavljanju
 službene radnje koja je u okviru njezinih ovlasti ili je prisili na obavljanje službene radnje u
-
-- kviru ili izvan njezinih ovlasti,
+okviru ili izvan njezinih ovlasti,
 
 
 kaznit će se kaznom zatvora od šest mjeseci do pet godina.
@@ -9475,8 +9209,7 @@ kaznit će se kao da je djelo počinio prema službenoj osobi.
 
 (4) Počinitelj kaznenog djela iz stavka 1., 2., i 3. ovoga članka koji je bio izazvan
 protuzakonitim, bezobzirnim ili osobito grubim postupanjem službene osobe ili osobe koja joj
-
-- vlašteno pomaže, može se osloboditi kazne.
+ovlašteno pomaže, može se osloboditi kazne.
 
 
 **Napad na službenu osobu**
@@ -9488,16 +9221,14 @@ protuzakonitim, bezobzirnim ili osobito grubim postupanjem službene osobe ili o
 (1) Tko silom ili prijetnjom uporabe sile izvan slučajeva iz članka 312. i članka 314. ovoga
 Zakona napadne vojnu osobu, policijskog službenika, ovlaštenu službenu osobu Vojne
 policije, službenu osobu kojoj je povjereno čuvanje osoba kojima je na temelju zakona
-
-- duzeta sloboda, kad obavljaju službenu dužnost,
+oduzeta sloboda, kad obavljaju službenu dužnost,
 
 
 kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 
 
 (2) Kaznom iz stavka 1. ovoga članka kaznit će se tko silom ili prijetnjom uporabe sile pruža
-
-- tpor službenoj osobi u obavljanju njezine službene radnje ili u provođenju zakonite odluke ili
+otpor službenoj osobi u obavljanju njezine službene radnje ili u provođenju zakonite odluke ili
 mjere državnog tijela.
 
 
@@ -9521,8 +9252,7 @@ počinitelj će se kazniti kaznom zatvora od jedne do osam godina.
 
 (5) Počinitelj kaznenog djela iz stavka 1., 2. i 3. ovoga članka koji je bio izazvan
 protuzakonitim, bezobzirnim ili osobito grubim postupanjem službene osobe ili osobe koja joj
-
-- vlašteno pomaže, može se osloboditi kazne.
+ovlašteno pomaže, može se osloboditi kazne.
 
 
 **Lažna uzbuna**
@@ -9545,8 +9275,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (1) Tko skine ili povrijedi službeni pečat ili znak koji je ovlaštena službena osoba stavila radi
-
-- siguranja predmeta, prostorije ili prostora, ili tko bez skidanja ili povrede pečata ili znaka
+osiguranja predmeta, prostorije ili prostora, ili tko bez skidanja ili povrede pečata ili znaka
 uđe u takav prostor ili prostoriju ili otvori osigurani predmet,
 
 
@@ -9685,8 +9414,7 @@ kaznit će se kaznom zatvora od jedne do osam godina.
 
 
 (3) Ako je pri počinjenju kaznenog djela iz stavka 2. ovoga članka uporabljeno oružje ili
-
-- pasno oruđe,
+opasno oruđe,
 
 
 počinitelj će se kazniti kaznom zatvora od jedne do deset godina.
@@ -9719,8 +9447,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (2) Ako je kazneno djelo iz stavka 1. ovoga članka počinjeno iz mržnje, prema većem broju
-
-- soba, uz uporabu oružja ili opasnog oruđa ili dovede u opasnost život ili tijelo druge osobe ili
+osoba, uz uporabu oružja ili opasnog oruđa ili dovede u opasnost život ili tijelo druge osobe ili
 je dovelo do znatne imovinske štete,
 
 
@@ -9741,8 +9468,7 @@ počinitelj će se kazniti kaznom zatvora od šest mjeseci do pet godina.
 drugi način javno potiče ili javnosti učini dostupnim letke, slike ili druge materijale kojima se
 poziva na nasilje ili mržnju usmjerenu prema skupini ljudi ili pripadniku skupine zbog njihove
 rasne, vjerske, nacionalne ili etničke pripadnosti, jezika, podrijetla, boje kože, spola, spolnog
-
-- predjeljenja, rodnog identiteta, invaliditeta ili kakvih drugih osobina,
+opredjeljenja, rodnog identiteta, invaliditeta ili kakvih drugih osobina,
 
 
 132
@@ -9880,8 +9606,7 @@ kaznom zatvora od tri do petnaest godina,
 
 
 5. za kazneno djelo za koje je propisana gornja granica kazne petnaest godina kaznom zatvora
-
-- d pet do dvadeset godina,
+od pet do dvadeset godina,
 
 
 6. za kazneno djelo za koje je propisana gornja granica kazne dvadeset godina kaznom
@@ -9970,8 +9695,7 @@ proda ili razmijeni sredstva potrebna za izradu vatrenog oružja, streljiva ili 
 
 
 (7) Vatreno oružje, streljivo, eksplozivne tvari te njihovi sastavni ili rezervni dijelovi će se
-
-- duzeti.
+oduzeti.
 
 
 **Povreda mira pokojnika**
@@ -10073,8 +9797,7 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 
 
 (2) Kaznom iz stavka 1. ovoga članka kaznit će se tko uvede u popis birača nepostojeću
-
-- sobu, umrlu osobu ili osobu koja nema biračko pravo.
+osobu, umrlu osobu ili osobu koja nema biračko pravo.
 
 
 **Izborna prijevara**
@@ -10099,8 +9822,7 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 (1) Tko kao zastupnik u Hrvatskom saboru, Europskom parlamentu ili kao vijećnik u
 predstavničkom tijelu jedinice lokalne i područne (regionalne) samouprave zahtijeva ili primi
 mito ili prihvati ponudu ili obećanje mita kako bi u predstavničkom tijelu glasovao na
-
-- dređen način,
+određen način,
 
 
 kaznit će se kaznom zatvora od jedne do osam godina.
@@ -10116,7 +9838,6 @@ glasovao na određen način.
 
 
 **GLAVA TRIDESET DRUGA (XXXII.)**
-
 **KAZNENA DJELA PROTIV REPUBLIKE HRVATSKE**
 
 
@@ -10227,8 +9948,7 @@ kaznit će se kaznom zatvora od tri do petnaest godina.
 uporabiti silu spriječi predsjednika Republike Hrvatske, predsjednika ili zastupnika Hrvatskog
 sabora, predsjednika ili člana Vlade Republike Hrvatske, predsjednika ili suca Ustavnog suda
 Republike Hrvatske, predsjednika Vrhovnog suda Republike Hrvatske i glavnog državnog
-
-- dvjetnika Republike Hrvatske u izvršavanju njihove dužnosti ili ih prisili izvršiti tu dužnost
+odvjetnika Republike Hrvatske u izvršavanju njihove dužnosti ili ih prisili izvršiti tu dužnost
 na određen način,
 
 
@@ -10236,10 +9956,8 @@ kaznit će se kaznom zatvora od jedne do osam godina.
 
 
 (2) Ako je kaznenim djelom iz stavka 1. ovoga članka doveden u opasnost život ili tijelo
-
-- sobe iz stavka 1. ovoga članka ili joj je nanesena tjelesna ozljeda ili je uporabljeno oružje ili
-
-- pasno oruđe,
+osobe iz stavka 1. ovoga članka ili joj je nanesena tjelesna ozljeda ili je uporabljeno oružje ili
+opasno oruđe,
 
 
 počinitelj će se kazniti kaznom zatvora od tri do dvanaest godina.
@@ -10378,7 +10096,6 @@ razaranja.
 
 **GLAVA TRIDESET TREĆA (XXXIII.)**
 **KAZNENA DJELA PROTIV STRANE DRŽAVE ILI MEĐUNARODNE**
-
 **ORGANIZACIJE**
 
 
@@ -10436,8 +10153,7 @@ kaznit će se kaznom zatvora od jedne do osam godina.
 
 
 (2) Ako je kaznenim djelom iz stavka 1. ovoga članka prouzročena smrt osobe iz stavka 1.
-
-- voga članka,
+ovoga članka,
 
 
 počinitelj će se kazniti kaznom zatvora od tri do petnaest godina.
@@ -10470,8 +10186,7 @@ kaznit će se kaznom zatvora do jedne godine.
 
 
 (2) Kaznom iz stavka 1. ovoga članka kaznit će se tko izvrgne ruglu, preziru ili grubom
-
-- malovažavanju Ujedinjene narode, Europsku uniju, Vijeće Europe, Međunarodni crveni križ
+omalovažavanju Ujedinjene narode, Europsku uniju, Vijeće Europe, Međunarodni crveni križ
 ili drugu priznatu međunarodnu organizaciju.
 
 
@@ -10541,10 +10256,8 @@ propisanom postupku uvažen prigovor savjesti.
 
 
 (1) Vojna osoba koja se protivi stražaru, straži ili drugoj vojnoj osobi u sličnoj službi, dok
-
-- bavljaju svoju službenu dužnost, te vojna osoba koja ne posluša njihov poziv ili ne izvrši ili
-
-- dbije izvršiti njihovu zapovijed, pa time teško ugrozi službu,
+obavljaju svoju službenu dužnost, te vojna osoba koja ne posluša njihov poziv ili ne izvrši ili
+odbije izvršiti njihovu zapovijed, pa time teško ugrozi službu,
 
 
 kaznit će se kaznom zatvora do tri godine.
@@ -10622,8 +10335,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 (2) Kaznom iz stavka 1. ovoga članka kaznit će se vojna osoba koja od podređenog zahtijeva
 ili ga natjera da zlostavlja drugu vojnu osobu ili s njom postupa na ponižavajući način ili mu
-
-- težava službu.
+otežava službu.
 
 
 (3) Ako je kaznenim djelom iz stavka 1. i 2. ovoga članka zlostavljanoj osobi narušeno
@@ -10715,8 +10427,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (2) Ako je kaznenim djelom iz stavka 1. ovoga članka prouzročena teška tjelesna ozljeda neke
-
-- sobe ili znatna imovinska šteta,
+osobe ili znatna imovinska šteta,
 
 
 145
@@ -10744,16 +10455,14 @@ nehaja kaznom zatvora od jedne do osam godina.
 
 
 (1) Tko na vojnoj vježbi, obuci ili u obavljanju pokusa ne poduzme propisane, zapovjeđene ili
-
-- čito potrebne mjere osiguranja ili opreza, pa time izazove opasnost za život ili tijelo ljudi,
+očito potrebne mjere osiguranja ili opreza, pa time izazove opasnost za život ili tijelo ljudi,
 
 
 kaznit će se kaznom zatvora do tri godine.
 
 
 (2) Ako je kaznenim djelom iz stavka 1. ovoga članka prouzročena teška tjelesna ozljeda neke
-
-- sobe, ili znatna imovinska šteta, ili je kazneno djelo iz stavka 1. ovoga članka počinjeno u
+osobe, ili znatna imovinska šteta, ili je kazneno djelo iz stavka 1. ovoga članka počinjeno u
 doba ratnog stanja ili neposredne ugroženosti neovisnosti i jedinstvenosti Republike Hrvatske,
 
 
@@ -10767,8 +10476,7 @@ počinitelj će se kazniti kaznom zatvora do jedne godine.
 
 
 (4) Ako je kaznenim djelom iz stavka 3. ovoga članka prouzročena teška tjelesna ozljeda neke
-
-- sobe, ili znatna imovinska šteta, ili je kazneno djelo iz stavka 3. ovoga članka počinjeno u
+osobe, ili znatna imovinska šteta, ili je kazneno djelo iz stavka 3. ovoga članka počinjeno u
 doba ratnog stanja ili neposredne ugroženosti neovisnosti i jedinstvenosti Republike Hrvatske,
 
 
@@ -10817,8 +10525,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 
 (2) Kaznom iz stavka 1. ovoga članka kaznit će se tko s ciljem da on ili drugi izbjegne vojnu
-
-- bvezu ili bude raspoređen na lakšu dužnost simulira bolest, za sebe ili drugoga uporabi lažnu
+obvezu ili bude raspoređen na lakšu dužnost simulira bolest, za sebe ili drugoga uporabi lažnu
 ispravu, ili postupi na drugi prijevaran način.
 
 
@@ -10851,8 +10558,7 @@ kaznit će se kaznom zatvora od jedne do osam godina.
 
 
 (1) Tko nepropisno ili nesavjesno drži, čuva ili rukuje povjerenim mu naoružanjem, vojnom
-
-- premom i drugim sredstvima za potrebe obrane, pa time prouzroči njihovo oštećenje u većoj
+opremom i drugim sredstvima za potrebe obrane, pa time prouzroči njihovo oštećenje u većoj
 mjeri, uništenje ili nestanak,
 
 
@@ -10883,15 +10589,13 @@ počinitelj će se kazniti kaznom zatvora do tri godine.
 
 
 (5) Ako je kaznenim djelom iz stavka 4. ovoga članka prouzročena posljedica iz stavka 3.
-
-- voga članka,
+ovoga članka,
 
 
 počinitelj će se kazniti kaznom zatvora od šest mjeseci do pet godina.
 
 
 **Neovlašteni ulazak u vojne objekte i izradba skica ili crteža vojnih objekata i borbenih**
-
 **sredstava**
 
 
@@ -10920,8 +10624,7 @@ kaznit će se kaznom zatvora od šest mjeseci do pet godina.
 
 
 (1) Vojna osoba koja za vrijeme rata ili oružanog sukoba prijeđe u redove neprijatelja,
-
-- dnosno protivničke strane,
+odnosno protivničke strane,
 
 
 kaznit će se kaznom zatvora od najmanje pet godina.
@@ -11043,8 +10746,7 @@ kaznit će se kaznom zatvora do tri godine.
 
 (2) Kaznom iz stavka 1. ovoga članka kaznit će se tko u doba ratnog stanja ili neposredne
 ugroženosti neovisnosti i jedinstvenosti Republike Hrvatske protivno zakonom utvrđenoj
-
-- bvezi, bez opravdanog razloga, ne stavi u određeno vrijeme i u propisanom stanju na
+obvezi, bez opravdanog razloga, ne stavi u određeno vrijeme i u propisanom stanju na
 raspolaganje tijelu nadležnom za poslove obrane materijalna sredstva koja su na popisu
 materijalnih sredstava za potrebe obrane.
 
@@ -11059,8 +10761,7 @@ materijalnih sredstava za potrebe obrane.
 neposredne ugroženosti neovisnosti i jedinstvenosti Republike Hrvatske protivno svojoj
 dužnosti, ne osigura prihvat, raspored i smještaj ili opskrbu mobiliziranog ljudstva, objekata,
 vozila, strojeva, opreme i drugih sredstava koja su na popisu materijalnih sredstava za potrebe
-
-- brane, pa time prouzroči teške štetne posljedice,
+obrane, pa time prouzroči teške štetne posljedice,
 
 
 kaznit će se kaznom zatvora od šest mjeseci do pet godina.
@@ -11126,7 +10827,6 @@ pitanja,
 
 8. odredba članka 129.a stavka 1. Zakona o obveznom zdravstvenom osiguranju (»Narodne
 novine«, br. 150/08., 94/09., 153/09., 71/10., 139/10. i 49/11.), a dosadašnji stavak 2. postaje
-
 stavak 1.
 
 
@@ -11139,8 +10839,7 @@ energiju bez ili mimo mjernih uređaja« brišu se.
 
 
 Vlada Republike Hrvatske pokrenut će postupak usklađivanja s odredbama ovoga Zakona
-
-- dgovarajućih odredbi Zakona o kaznenom postupku, Zakona o odgovornosti pravnih osoba
+odgovarajućih odredbi Zakona o kaznenom postupku, Zakona o odgovornosti pravnih osoba
 za kaznena djela, Zakona o sudovima za mladež, Zakona o zaštiti osoba s duševnim
 smetnjama, Zakona o izvršenju kazne zatvora, Zakona o probaciji te drugih zakona koji
 sadrže kaznene i druge odredbe relevantne za primjenu ovoga Zakona.
@@ -11212,8 +10911,7 @@ standardima kvalitete i sigurnosti ljudskih organa namijenjenih transplantaciji,
 
 
 4. Direktivom 2005/35/EZ Europskog parlamenta i Vijeća od 7. rujna 2005. godine o
-
-- nečišćenju s brodova i uvođenju kazni za prekršaje,
+onečišćenju s brodova i uvođenju kazni za prekršaje,
 
 
 5. Direktivom 2009/123/EZ Europskog parlamenta i Vijeća od 21. listopada 2009. godine o
@@ -11241,8 +10939,7 @@ nezakonitoj kupoprodaji dionica i manipulaciji tržištem,
 
 
 10. Okvirnom odlukom Vijeća 2008/913/PUP od 28. studenoga 2008. godine o suzbijanju
-
-- dređenih oblika i načina izražavanja rasizma i ksenofobije kazneno-pravnim sredstvima,
+određenih oblika i načina izražavanja rasizma i ksenofobije kazneno-pravnim sredstvima,
 
 
 11. Okvirnom odlukom Vijeća 2005/212/PUP od 24. veljače 2005. o oduzimanju imovinske
@@ -11255,8 +10952,7 @@ suzbijanju i borbi protiv trgovanja ljudima i zaštiti žrtava,
 
 13. Okvirnom odlukom Vijeća 2001/500/PUP od 26. lipnja 2001. godine o pranju novca,
 identifikaciji, praćenju, zamrzavanju, pljenidbi i oduzimanju imovine i imovinske koristi
-
-- stvarene kaznenim djelima,
+ostvarene kaznenim djelima,
 
 
 14. Okvirnom odlukom Vijeća 2002/946/PUP od 28. studenoga 2002. godine o jačanju
@@ -11311,8 +11007,7 @@ Okvirne odluke Vijeća 2004/68/PUP,
 
 25. Direktivom 2014/62/EU Europskog parlamenta i Vijeća od 15. svibnja 2014. o
 kaznenopravnoj zaštiti eura i drugih valuta od krivotvorenja, kojom se zamjenjuje Okvirna
-
-- dluka Vijeća 2000/383/PUP,
+odluka Vijeća 2000/383/PUP,
 
 
 26. Direktivom 2014/57/EU Europskog parlamenta i Vijeća od 16. travnja 2014. o
@@ -11326,35 +11021,28 @@ Ovaj Zakon objavit će se u »Narodnim novinama«, a stupa na snagu 1. siječnja
 
 
 **NAPOMENA IZ OBJAVE:**
-
 (1) Kazneni zakon (Narodne novine, br. NN 125-2498/2011), objava od 7.11.2011, na snazi
-
-- d 1.1.2013
+od 1.1.2013
 
 
 **NAPOMENA IZ OBJAVE:**
-
 (2) Zakon o izmjenama i dopunama Kaznenog zakona (Narodne novine, br. NN 1443076/2012), objava od 21.12.2012, na snazi od 1.1.2013
 
 
 **NAPOMENA IZ OBJAVE:**
-
 (3) Zakon o izmjenama i dopunama Kaznenog zakona (Narodne novine, br. NN 561095/2015), objava od 22.5.2015, na snazi od 30.5.2015.; propisuje i:
 
 "Članak 77.
 
 Pravilnik iz članka 15. ovoga Zakona ministar nadležan za unutarnje poslove donijet će u roku
-
-- d tri mjeseca od dana stupanja na snagu ovoga Zakona."
+od tri mjeseca od dana stupanja na snagu ovoga Zakona."
 
 
 **NAPOMENA IZ OBJAVE:**
-
 (4) Ispravak Zakona o izmjenama i dopunama Kaznenog zakona (Narodne novine, br. NN 611188/2015), objava od 3.6.2015, na snazi od 30.5.2015
 
 
 **NAPOMENA IZ OBJAVE:**
-
 (5) Zakon o izmjenama i dopunama Kaznenog zakona (Narodne novine, br. NN 1012322/2017), objava od 12.10.2017, na snazi od 20.10.2017., propisuje i:
 
 "Članak 12.
@@ -11369,8 +11057,7 @@ kazne koje se izvršavaju sukladno odredbama Kaznenog zakona iz članka 381. sta
 primijenit će se odredbe o uvjetnom otpustu iz zakona prema kojem se kazne izvršavaju.
 
 (2) O zahtjevima za uvjetni otpust iz stavka 1. ovoga članka odlučuje Povjerenstvo za uvjetni
-
-- tpust iz Zakona o izvršavanju kazne zatvora (»Narodne novine«, br. 128/99., 55/00., 59/00.,
+otpust iz Zakona o izvršavanju kazne zatvora (»Narodne novine«, br. 128/99., 55/00., 59/00.,
 129/00., 59/01., 67/01., 11/02., 190/03., 76/07., 27/08., 83/09., 18/11., 48/11., 125/11., 56/13.
 i 150/13.)."
 

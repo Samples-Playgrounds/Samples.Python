@@ -28,16 +28,14 @@ form or by any means without the written permission of the publisher.
 
 This book is provided “as-is” and expresses the author’s views and opinions. The views, opinions, and
 information expressed in this book, including URL and other Internet website references, may change
-
 without notice.
 
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association
+or connection is intended or should be inferred.
 
-- r connection is intended or should be inferred.
 
-
-[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) - n the “Trademarks” webpage are
+[Microsoft and the trademarks listed at https://www.microsoft.com](https://www.microsoft.com/) on the “Trademarks” webpage are
 trademarks of the Microsoft group of companies.
 
 
@@ -53,32 +51,29 @@ All other marks and logos are property of their respective owners.
 Author:
 
 
-**Steve “ardalis” Smith** - Software Architect and Trainer - Ardalis.com
+**Steve “ardalis” Smith** [- Software Architect and Trainer - Ardalis.com](https://ardalis.com/)
 
 
 Editors:
 
 
 **Maira Wenzel**
-
 ### Action links
 
 
   - [This e-book is also available in a PDF format (English version only) Download](https://aka.ms/webappebook)
 
 
-  [Clone/Fork the reference application eShopOnWeb on GitHub](https://github.com/dotnet-architecture/eShopOnWeb)
-
+  - [Clone/Fork the reference application eShopOnWeb on GitHub](https://github.com/dotnet-architecture/eShopOnWeb)
 ### Introduction
 
 
 .NET 8 and ASP.NET Core offer several advantages over traditional .NET development. You should use
 .NET 8 for your server applications if some or all of the following are important to your application’s
-
 success:
 
 
-  Cross-platform support.
+  - Cross-platform support.
 
 
   - Use of microservices.
@@ -87,10 +82,10 @@ success:
   - Use of Docker containers.
 
 
-  High performance and scalability requirements.
+  - High performance and scalability requirements.
 
 
-  Side-by-side versioning of .NET versions by application on the same server.
+  - Side-by-side versioning of .NET versions by application on the same server.
 
 
 Traditional .NET 4.x apps can and do support many of these requirements, but ASP.NET Core and .NET
@@ -102,12 +97,11 @@ like Microsoft Azure. You should consider hosting your application in the cloud 
 important to your application or organization:
 
 
-  Reduced investment in data center costs (hardware, software, space, utilities, server
-
+  - Reduced investment in data center costs (hardware, software, space, utilities, server
 management, etc.)
 
 
-  Flexible pricing (pay based on usage, not for idle capacity).
+  - Flexible pricing (pay based on usage, not for idle capacity).
 
 
   - Extreme reliability.
@@ -120,18 +114,15 @@ management, etc.)
 
 
 Building web applications with ASP.NET Core, hosted in Azure, offers many competitive advantages
-
-- ver traditional alternatives. ASP.NET Core is optimized for modern web application development
+over traditional alternatives. ASP.NET Core is optimized for modern web application development
 practices and cloud hosting scenarios. In this guide, you’ll learn how to architect your ASP.NET Core
 applications to best take advantage of these capabilities.
-
 ### Version
 
 
 This guide has been revised to cover **.NET 8.0** version along with many additional updates related to
 the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in
 time with the .NET 8.0 release. That’s why the book version has also been updated to version **8.0** .
-
 ### Purpose
 
 
@@ -143,8 +134,7 @@ much easier to build, deploy, and debug than an app composed of many different s
 achieving the business requirements.
 
 
-“ ”
-This guide is complementary to _[.NET Microservices. Architecture for Containerized .NET Applications](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/)_,
+This guide is complementary to “ _[.NET Microservices. Architecture for Containerized .NET Applications](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/)_ ”,
 which focuses more on Docker, microservices, and deployment of containers to host enterprise
 applications.
 
@@ -153,26 +143,21 @@ applications.
 
 
   - **e-book**
-
 [https://aka.ms/MicroservicesEbook](https://aka.ms/MicroservicesEbook)
-
 
   - **Sample Application**
 [https://aka.ms/microservicesarchitecture](https://aka.ms/microservicesarchitecture)
-
 ### Who should use this guide
 
 
 The audience for this guide is mainly developers, development leads, and architects who are
 interested in building modern web applications using Microsoft technologies and services in the
-
 cloud.
 
 
 A secondary audience is technical decision makers who are already familiar ASP.NET or Azure and are
 looking for information on whether it makes sense to upgrade to ASP.NET Core for new or existing
 projects.
-
 ### How you can use this guide
 
 
@@ -181,8 +166,7 @@ applications with modern .NET technologies and Azure. As such, it can be read in
 provide a foundation of understanding such applications and their technical considerations. The
 guide, along with its sample application, can also serve as a starting point or reference. Use the
 associated sample application as a template for your own applications, or to see how you might
-
-- rganize your application’s component parts. Refer back to the guide’s principles and coverage of
+organize your application’s component parts. Refer back to the guide’s principles and coverage of
 architecture and technology options and decision considerations when you’re weighing these choices
 for your own application.
 
@@ -190,11 +174,10 @@ for your own application.
 Feel free to forward this guide to your team to help ensure a common understanding of these
 considerations and opportunities. Having everybody working from a common set of terminology and
 underlying principles helps ensure consistent application of architectural patterns and practices.
-
 ### References
 
 
-  **Choosing between .NET and .NET Framework for server apps**
+  - **Choosing between .NET and .NET Framework for server apps**
 [https://learn.microsoft.com/dotnet/standard/choosing-core-framework-server](https://docs.microsoft.com/en-us/dotnet/standard/choosing-core-framework-server)
 
 
@@ -611,12 +594,13 @@ Architecture recommendations ...................................................
 v Contents
 
 
-# CHAPTER 1
+**CHAPTER**
+# 1
 
 ## Characteristics of Modern Web Applications
 
-“… with proper design, the features come cheaply. This approach is arduous, but continues to
 
+“… with proper design, the features come cheaply. This approach is arduous, but continues to
 succeed.”
 
 _- Dennis Ritchie_
@@ -659,7 +643,6 @@ _Figure 2-1. eShopOnWeb_
 ASP.NET Core is optimized for the cloud (public cloud, private cloud, any cloud) because it is lowmemory and high-throughput. The smaller footprint of ASP.NET Core applications means you can
 host more of them on the same hardware, and you pay for fewer resources when using pay-as-yougo cloud hosting services. The higher-throughput means you can serve more customers from an
 application given the same hardware, further reducing the need to invest in servers and hosting
-
 infrastructure.
 
 ### Cross platform
@@ -681,7 +664,6 @@ Docker containers - both Linux and Windows - can host ASP.NET Core applications,
 NuGet packages are first-class citizens in .NET Core, and ASP.NET Core apps are composed of many
 libraries through NuGet. This granularity of functionality helps ensure apps only depend on and
 deploy functionality they actually require, reducing their footprint and security vulnerability surface
-
 area.
 
 
@@ -756,7 +738,6 @@ and many developers are familiar with this platform.
 Blazor is included with ASP.NET Core 3.0 and later. It provides a new mechanism for building rich
 interactive web client applications using Razor, C#, and ASP.NET Core. It offers another solution to
 consider when developing modern web applications. There are two versions of Blazor to consider:
-
 server-side and client-side.
 
 
@@ -776,7 +757,6 @@ is already supported by all major browsers and is just a JavaScript library.
 
 
   - **Introduction to ASP.NET Core**
-
 [https://learn.microsoft.com/aspnet/core/](https://docs.microsoft.com/aspnet/core/)
 
 
@@ -786,18 +766,18 @@ is already supported by all major browsers and is just a JavaScript library.
   - **Testing in ASP.NET Core**
 [https://learn.microsoft.com/aspnet/core/testing/](https://docs.microsoft.com/aspnet/core/testing/)
 
-
   - **Blazor - Get Started**
-
 [https://blazor.net/docs/get-started.html](https://blazor.net/docs/get-started.html)
 
 
 5 CHAPTER 1 | Characteristics of Modern Web Applications
 
 
-# CHAPTER 2
+**CHAPTER**
+# 2
 
 ## Choose Between Traditional Web Apps and Single Page Apps (SPAs)
+
 
 “Atwood’s Law: Any application that can be written in JavaScript, will eventually be written in
 JavaScript.”
@@ -818,22 +798,22 @@ Use traditional web applications when:
   - Your application’s client-side requirements are simple or even read-only.
 
 
-  Your application needs to function in browsers without JavaScript support.
+  - Your application needs to function in browsers without JavaScript support.
 
 
-  Your application is public-facing and benefits from search engine discovery and referrals.
+  - Your application is public-facing and benefits from search engine discovery and referrals.
 
 
 Use a SPA when:
 
 
-  Your application must expose a rich user interface with many features.
+  - Your application must expose a rich user interface with many features.
 
 
-  Your team is familiar with JavaScript, TypeScript, or Blazor WebAssembly development.
+  - Your team is familiar with JavaScript, TypeScript, or Blazor WebAssembly development.
 
 
-  Your application must already expose an API for other (internal or public) clients.
+  - Your application must already expose an API for other (internal or public) clients.
 
 
 Additionally, SPA frameworks require greater architectural and security expertise. They experience
@@ -843,7 +823,6 @@ containers may be more difficult with SPA applications than traditional web apps
 
 
 Improvements in user experience made possible by the SPA approach must be weighed against these
-
 considerations.
 
 
@@ -869,10 +848,10 @@ advantage of JavaScript libraries and frameworks.
 Consider building your web application with Blazor when:
 
 
-  Your application must expose a rich user interface
+  - Your application must expose a rich user interface
 
 
-  Your team is more comfortable with .NET development than JavaScript or TypeScript
+  - Your team is more comfortable with .NET development than JavaScript or TypeScript
 development
 
 
@@ -902,7 +881,6 @@ management system’s public-facing application usually consists mainly of conte
 perform logic on the web server and render HTML to be displayed in the browser. The fact that each
 unique page of the site has its own URL that can be bookmarked and indexed by search engines (by
 default, without having to add this functionality as a separate feature of the application) is also a clear
-
 benefit in such scenarios.
 
 
@@ -924,7 +902,6 @@ If your team is unfamiliar with JavaScript or TypeScript, but is familiar with s
 development, then they will probably be able to deliver a traditional web app more quickly than a
 SPA. Unless learning to program SPAs is a goal, or the user experience afforded by a SPA is required,
 traditional web apps are a more productive choice for teams who are already familiar with building
-
 them.
 
 ### When to choose SPAs
@@ -966,9 +943,7 @@ framework like Angular.
 
   - **Angular** [: https://angular.io](https://angular.io/)
 
-
   - **React** [: https://reactjs.org/](https://reactjs.org/)
-
 
   - **Vue.js** [: https://vuejs.org/](https://vuejs.org/)
 
@@ -1027,7 +1002,7 @@ between a traditional web application, a SPA, or a Blazor app.
 
 
 
-|Factor|TraditionalWeb<br>App|SinglePage<br>Application|Blazor<br>App|
+|Factor|Traditional Web<br>App|Single Page<br>Application|Blazor<br>App|
 |---|---|---|---|
 |Required Team Familiarity with<br>JavaScript/TypeScript|**Minimal**|**Required**|**Minimal**|
 |Support Browsers without Scripting|**Supported**|**Not Supported**|**Supporte**<br>**d**|
@@ -1064,9 +1039,11 @@ spiders, SPAs are a great option in many cases.
 10 CHAPTER 2 | Choose Between Traditional Web Apps and Single Page Apps (SPAs)
 
 
-# CHAPTER 3
+**CHAPTER**
+# 3
 
 ## Architectural principles
+
 
 “If builders built buildings the way programmers wrote programs, then the first woodpecker that
 came along would destroy civilization.”
@@ -1075,11 +1052,9 @@ _- Gerald Weinberg_
 
 
 You should architect and design software solutions with maintainability in mind. The principles
-
-- utlined in this section can help guide you toward architectural decisions that will result in clean,
+outlined in this section can help guide you toward architectural decisions that will result in clean,
 maintainable applications. Generally, these principles will guide you toward building applications out
-
-- f discrete components that are not tightly coupled to other parts of your application, but rather
+of discrete components that are not tightly coupled to other parts of your application, but rather
 communicate through explicit interfaces or messaging systems.
 
 ### Common design principles
@@ -1111,7 +1086,6 @@ application. Application components and layers should be able to adjust their in
 without breaking their collaborators as long as external contracts are not violated. Proper use of
 encapsulation helps achieve loose coupling and modularity in application designs, since objects and
 packages can be replaced with alternative implementations so long as the same interface is
-
 maintained.
 
 
@@ -1119,8 +1093,7 @@ maintained.
 
 
 In classes, encapsulation is achieved by limiting outside access to the class’s internal state. If an
-
-- utside actor wants to manipulate the state of the object, it should do so through a well-defined
+outside actor wants to manipulate the state of the object, it should do so through a well-defined
 function (or property setter), rather than having direct access to the private state of the object.
 Likewise, application components and applications themselves should expose well-defined interfaces
 for their collaborators to use, rather than allowing their state to be modified directly. This approach
@@ -1134,8 +1107,7 @@ same function). Understanding concerns with mutable global state is one of the r
 languages like C# have support for different scoping rules, which are used everywhere from
 statements to methods to classes. It’s worth noting that data-driven architectures which rely on a
 central database for integration within and between applications are, themselves, choosing to depend
-
-- n the mutable global state represented by the database. A key consideration in domain-driven
+on the mutable global state represented by the database. A key consideration in domain-driven
 design and clean architecture is how to encapsulate access to data, and how to ensure application
 state is not made invalid by direct access to its persistence format.
 
@@ -1145,8 +1117,7 @@ state is not made invalid by direct access to its persistence format.
 The direction of dependency within the application should be in the direction of abstraction, not
 implementation details. Most applications are written such that compile-time dependency flows in the
 direction of runtime execution, producing a direct dependency graph. That is, if class A calls a method
-
-- f class B and class B calls a method of class C, then at compile time class A will depend on class B,
+of class B and class B calls a method of class C, then at compile time class A will depend on class B,
 and class B will depend on class C, as shown in Figure 4-1.
 
 
@@ -1179,14 +1150,12 @@ practice of _dependency injection_ is made possible by following the dependency 
 
 **Methods and classes should explicitly require any collaborating objects they need in order to**
 **function correctly.** [It is called the Explicit Dependencies Principle. Class constructors provide an](https://deviq.com/principles/explicit-dependencies-principle)
-
-- pportunity for classes to identify the things they need in order to be in a valid state and to function
+opportunity for classes to identify the things they need in order to be in a valid state and to function
 properly. If you define classes that can be constructed and called, but that will only function properly
 if certain global or infrastructure components are in place, these classes are being _dishonest_ with their
 clients. The constructor contract is telling the client that it only needs the things specified (possibly
 nothing if the class is just using a parameterless constructor), but then at runtime it turns out the
-
-- bject really did need something else.
+object really did need something else.
 
 
 By following the explicit dependencies principle, your classes and methods are being honest with their
@@ -1238,7 +1207,6 @@ the system will behave inconsistently.
 
 Rather than duplicating logic, encapsulate it in a programming construct. Make this construct the
 single authority over this behavior, and have any other part of the application that requires this
-
 behavior use the new construct.
 
 
@@ -1253,7 +1221,6 @@ particular interface. Persistence ignorance is valuable because it allows the sa
 persisted in multiple ways, offering additional flexibility to the application. Persistence choices might
 change over time, from one database technology to another, or additional forms of persistence might
 be required in addition to whatever the application started with (for example, using a Redis cache or
-
 Azure Cosmos DB in addition to a relational database).
 
 
@@ -1266,10 +1233,10 @@ Some examples of violations of this principle include:
   - A required base class.
 
 
-  A required interface implementation.
+  - A required interface implementation.
 
 
-  Classes responsible for saving themselves (such as the Active Record pattern).
+  - Classes responsible for saving themselves (such as the Active Record pattern).
 
 
   - Required parameterless constructor.
@@ -1278,7 +1245,7 @@ Some examples of violations of this principle include:
   - Properties requiring virtual keyword.
 
 
-  Persistence-specific required attributes.
+  - Persistence-specific required attributes.
 
 
 The requirement that classes have any of the above features or behaviors adds coupling between the
@@ -1292,13 +1259,11 @@ data access strategies in the future.
 complexity in large applications or organizations by breaking it up into separate conceptual modules.
 Each conceptual module then represents a context that is separated from other contexts (hence,
 bounded), and can evolve independently. Each bounded context should ideally be free to choose its
-
-- wn names for concepts within it, and should have exclusive access to its own persistence store.
+own names for concepts within it, and should have exclusive access to its own persistence store.
 
 
 At a minimum, individual web applications should strive to be their own bounded context, with their
-
-- wn persistence store for their business model, rather than sharing a database with other applications.
+own persistence store for their business model, rather than sharing a database with other applications.
 Communication between bounded contexts occurs through programmatic interfaces, rather than
 through a shared database, which allows for business logic and events to take place in response to
 changes that take place. Bounded contexts map closely to microservices, which also are ideally
@@ -1309,16 +1274,17 @@ implemented as their own individual bounded contexts.
 
   - [Principles](https://deviq.com/principles/principles-overview)
 
-
   - [Bounded Context](https://martinfowler.com/bliki/BoundedContext.html)
 
 
 16 CHAPTER 3 | Architectural principles
 
 
-# CHAPTER 4
+**CHAPTER**
+# 4
 
 ## Common web application architectures
+
 
 “If you think good architecture is expensive, try bad architecture.” _- Brian Foote and Joseph Yoder_
 
@@ -1349,7 +1315,6 @@ deployed as a single unit.
 A new ASP.NET Core project, whether created in Visual Studio or from the command line, starts out as
 a simple “all-in-one” monolith. It contains all of the behavior of the application, including
 presentation, business, and data access logic. Figure 5-1 shows the file structure of a single-project
-
 app.
 
 
@@ -1364,7 +1329,6 @@ template includes separate folders for MVC pattern responsibilities of Models, V
 as well as additional folders for Data and Services. In this arrangement, presentation details should be
 limited as much as possible to the Views folder, and data access implementation details should be
 limited to classes kept in the Data folder. Business logic should reside in services and classes within
-
 the Models folder.
 
 
@@ -1378,7 +1342,7 @@ Services folders, and there’s no clear indication of which classes in which fo
 
 
 To address these issues, applications often evolve into multi-project solutions, where each project is
-considered to reside in a particular _layer_ - f the application.
+considered to reside in a particular _layer_ of the application.
 
 ### What are layers?
 
@@ -1508,17 +1472,14 @@ _Figure 5-6. App Service Plan scaling in Azure._
 
 Applications that follow the Dependency Inversion Principle as well as the Domain-Driven Design
 (DDD) principles tend to arrive at a similar architecture. This architecture has gone by many names
-
-- ver the years. One of the first names was Hexagonal Architecture, followed by Ports-and-Adapters.
+over the years. One of the first names was Hexagonal Architecture, followed by Ports-and-Adapters.
 [More recently, it’s been cited as the Onion Architecture](https://jeffreypalermo.com/blog/the-onion-architecture-part-1/) [or Clean Architecture. The latter name, Clean](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
-
 Architecture, is used as the name for this architecture in this e-book.
 
 
 The eShopOnWeb reference application uses the Clean Architecture approach in organizing its code
 into projects. You can find a solution template you can use as a starting point for your own ASP.NET
 [Core solutions in the ardalis/cleanarchitecture GitHub repository or by installing the template from](https://github.com/ardalis/cleanarchitecture)
-
 [NuGet.](https://www.nuget.org/packages/Ardalis.CleanArchitecture.Template/)
 
 
@@ -1625,21 +1586,15 @@ defined as simple Data Transfer Objects (DTOs).
 
   - Entities (business model classes that are persisted)
 
-
-  Aggregates (groups of entities)
-
+  - Aggregates (groups of entities)
 
   - Interfaces
 
-
   - Domain Services
 
-
-  Specifications
-
+  - Specifications
 
   - Custom Exceptions and Guard Clauses
-
 
   - Domain Events and Handlers
 
@@ -1657,10 +1612,8 @@ Migration objects that have been defined, and data access implementation classes
 
 
 In addition to data access implementations, the Infrastructure project should contain implementations
-
-- f services that must interact with infrastructure concerns. These services should implement interfaces
+of services that must interact with infrastructure concerns. These services should implement interfaces
 defined in the Application Core, and so Infrastructure should have a reference to the Application Core
-
 project.
 
 
@@ -1669,11 +1622,9 @@ project.
 
   - EF Core types (DbContext, Migration)
 
-
   - Data access implementation types (Repositories)
 
-
-  Infrastructure-specific services (for example, FileLogger or SmtpNotifier)
+  - Infrastructure-specific services (for example, FileLogger or SmtpNotifier)
 
 
 **UI Layer**
@@ -1690,21 +1641,15 @@ Infrastructure layer types should be allowed in the UI layer.
 
   - Controllers
 
-
   - Custom Filters
-
 
   - Custom Middleware
 
-
   - Views
-
 
   - ViewModels
 
-
   - Startup
-
 
 The Startup class or _Program.cs_ file is responsible for configuring the application, and for wiring up
 implementation types to interfaces. The place where this logic is performed is known as the app’s
@@ -1722,8 +1667,7 @@ _composition root_, and is what allows dependency injection to work properly at 
 You can build a single and monolithic-deployment based Web Application or Service and deploy it as
 a container. Within the application, it might not be monolithic but organized into several libraries,
 components, or layers. Externally, it’s a single container with a single process, single web application,
-
-- r single service.
+or single service.
 
 
 To manage this model, you deploy a single container to represent the application. To scale, just add
@@ -1754,8 +1698,7 @@ retesting of the entire application, and a complete redeployment of all the inst
 
 The monolithic approach is common, and many organizations are developing with this architectural
 approach. Many are having good enough results, while others are hitting limits. Many designed their
-applications in this model, because the tools and infrastructure were too difficult to build service
-- riented architectures (SOA), and they didn’t see the need until the app grew. If you find you’re hitting
+applications in this model, because the tools and infrastructure were too difficult to build serviceoriented architectures (SOA), and they didn’t see the need until the app grew. If you find you’re hitting
 
 
 30 CHAPTER 4 | Common web application architectures
@@ -1864,7 +1807,6 @@ enables greater resource sharing than traditional VM environments.
 Finally, containerizing the application forces a separation between the business logic and the storage
 server. As the application scales out, the multiple containers will all rely on a single physical storage
 medium. This storage medium would typically be a high-availability server running a SQL Server
-
 database.
 
 ### Docker support
@@ -1888,7 +1830,6 @@ use it to configure dependencies, such as a separate database container.
 
 The docker-compose.yml file references the Dockerfile in the Web project. The Dockerfile is used to
 specify which base container will be used and how the application will be configured on it. The Web’
-
 Dockerfile:
 
 
@@ -1922,12 +1863,9 @@ configured.
   - [Web-Queue-Worker: The core components of this architecture are a web front end that](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/web-queue-worker)
 serves client requests, and a worker that performs resource-intensive tasks, long-running
 workflows, or batch jobs. The web front end communicates with the worker through a
-
 message queue.
 
-
   - [N-tier: An N-tier architecture divides an application into logical layers and physical tiers.](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)
-
 
   - [Microservice: A microservices architecture consists of a collection of small, autonomous](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)
 services. Each service is self-contained and should implement a single business capability
@@ -1937,19 +1875,13 @@ within a bounded context.
 
 
   - **The Clean Architecture**
-
 [https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 
-
   - **The Onion Architecture**
-
 [https://jeffreypalermo.com/blog/the-onion-architecture-part-1/](https://jeffreypalermo.com/blog/the-onion-architecture-part-1/)
 
-
   - **The Repository Pattern**
-
-                     [https://deviq.com/repository](https://deviq.com/repository-pattern/) pattern/
-
+[https://deviq.com/repository-pattern/](https://deviq.com/repository-pattern/)
 
   - **Clean Architecture Solution Template**
 [https://github.com/ardalis/cleanarchitecture](https://github.com/ardalis/cleanarchitecture)
@@ -1961,7 +1893,6 @@ within a bounded context.
   - **Architecting Microservices e-book**
 [https://aka.ms/MicroservicesEbook](https://aka.ms/MicroservicesEbook)
 
-
   - **DDD (Domain-Driven Design)**
 [https://learn.microsoft.com/dotnet/architecture/microservices/microservice-ddd-cqrs-](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/)
 [patterns/](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/)
@@ -1970,9 +1901,11 @@ within a bounded context.
 35 CHAPTER 4 | Common web application architectures
 
 
-# CHAPTER 5
+**CHAPTER**
+# 5
 
 ## Common client-side web technologies
+
 
 “Websites should look good from the inside and out.” _- Paul Cookson_
 
@@ -1987,8 +1920,7 @@ application can be made more easily when these concerns are not intertwined.
 While HTML and CSS are relatively stable, JavaScript, by means of the application frameworks and
 utilities developers work with to build web-based applications, is evolving at breakneck speed. This
 chapter looks at a few ways that JavaScript is used by web developers and provides a high-level
-
-- verview of the Angular and React client-side libraries.
+overview of the Angular and React client-side libraries.
 
 
 
@@ -2026,7 +1958,6 @@ It’s best to keep styles in their own separate stylesheet files, and to use se
 implement consistent and reusable styles within the application. Placing style rules within HTML
 should be avoided, and applying styles to specific individual elements (rather than whole classes of
 elements, or elements that have had a particular CSS class applied to them) should be the exception,
-
 not the rule.
 
 #### **CSS preprocessors**
@@ -2042,8 +1973,7 @@ The most popular CSS preprocessors are Sass and LESS. Both extend CSS and are ba
 compatible with it, meaning that a plain CSS file is a valid Sass or LESS file. Sass is Ruby-based and
 LESS is JavaScript based, and both typically run as part of your local development process. Both have
 command-line tools available, as well as built-in support in Visual Studio for running them using Gulp
-
-- r Grunt tasks.
+or Grunt tasks.
 
 
 37 CHAPTER 5 | Common client-side web technologies
@@ -2065,13 +1995,13 @@ need to perform:
   - Selecting an HTML element and retrieving and/or updating its value.
 
 
-  Querying a Web API for data.
+  - Querying a Web API for data.
 
 
   - Sending a command to a Web API (and responding to a callback with its result).
 
 
-  Performing validation.
+  - Performing validation.
 
 
 You can perform all of these tasks with JavaScript alone, but many libraries exist to make these tasks
@@ -2122,7 +2052,6 @@ However, a SPA framework like Angular provides these features in a more integrat
 been designed with all of them in mind from the start. Also, jQuery is an imperative library, meaning
 that you need to call jQuery functions in order to do anything with jQuery. Much of the work and
 functionality that SPA frameworks provide can be done declaratively, requiring no actual code to be
-
 written.
 
 
@@ -2132,8 +2061,7 @@ anytime you need to change the value of the element, and sometimes this will occ
 functions on a page. Another common example is element visibility. In jQuery, there might be many
 different places where you’d write code to control whether certain elements were visible. In each of
 these cases, when using data binding, no code would need to be written. You’d simply bind the value
-
-- r visibility of the elements in question to a _viewmodel_ - n the page, and changes to that viewmodel
+or visibility of the elements in question to a _viewmodel_ on the page, and changes to that viewmodel
 would automatically be reflected in the bound elements.
 
 #### **Angular SPAs**
@@ -2146,8 +2074,7 @@ framework for building Single Page Applications.
 
 
 Angular applications are built from components. Components combine HTML templates with special
-
-- bjects and control a portion of the page. A simple component from Angular’s docs is shown here:
+objects and control a portion of the page. A simple component from Angular’s docs is shown here:
 
 
 Components are defined using the @Component decorator function, which takes in metadata about
@@ -2192,7 +2119,6 @@ produce rich single page applications.
 One of React’s most important features is its use of a virtual DOM. The virtual DOM provides React
 with several advantages, including performance (the virtual DOM can optimize which parts of the
 actual DOM need to be updated) and testability (no need to have a browser to test React and its
-
 interactions with its virtual DOM).
 
 
@@ -2208,8 +2134,7 @@ curve or special syntax involved as with Angular or other popular libraries.
 
 Because React isn’t a full framework, you’ll typically want other libraries to handle things like routing,
 web API calls, and dependency management. The nice thing is, you can pick the best library for each
-
-- f these, but the disadvantage is that you need to make all of these decisions and verify all of your
+of these, but the disadvantage is that you need to make all of these decisions and verify all of your
 chosen libraries work well together when you’re done. If you want a good starting point, you can use
 a starter kit like React Slingshot, which prepackages a set of compatible libraries together with React.
 
@@ -2217,16 +2142,14 @@ a starter kit like React Slingshot, which prepackages a set of compatible librar
 
 
 From its getting started guide, “Vue is a progressive framework for building user interfaces. Unlike
-
-- ther monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The
+other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The
 
 
 40 CHAPTER 5 | Common client-side web technologies
 
 
 core library is focused on the view layer only, and is easy to pick up and integrate with other libraries
-
-- r existing projects. On the other hand, Vue is perfectly capable of powering sophisticated SinglePage Applications when used in combination with modern tooling and supporting libraries.”
+or existing projects. On the other hand, Vue is perfectly capable of powering sophisticated SinglePage Applications when used in combination with modern tooling and supporting libraries.”
 
 
 Getting started with Vue simply requires including its script within an HTML file:
@@ -2269,22 +2192,20 @@ sandbox provides against malicious actions on the client machine.
 
 
 When considering which option will work best to support your SPA, keep in mind the following
-
 considerations:
 
 
 41 CHAPTER 5 | Common client-side web technologies
 
 
-  Is your team familiar with the framework and its dependencies (including TypeScript in some
-
+  - Is your team familiar with the framework and its dependencies (including TypeScript in some
 cases)?
 
 
-  How opinionated is the framework, and do you agree with its default way of doing things?
+  - How opinionated is the framework, and do you agree with its default way of doing things?
 
 
-  Does it (or a companion library) include all of the features your app requires?
+  - Does it (or a companion library) include all of the features your app requires?
 
 
   - Is it well documented?
@@ -2305,47 +2226,33 @@ developed by a large enterprise.
 
 
   - **HTML and CSS**
-
 [https://www.w3.org/standards/webdesign/htmlcss](https://www.w3.org/standards/webdesign/htmlcss)
 
-
   - **Sass vs. LESS**
-
 [https://www.keycdn.com/blog/sass-vs-less/](https://www.keycdn.com/blog/sass-vs-less/)
-
 
   - **Styling ASP.NET Core Apps with LESS, Sass, and Font Awesome**
 [https://learn.microsoft.com/aspnet/core/client-side/less-sass-fa](https://docs.microsoft.com/aspnet/core/client-side/less-sass-fa)
 
-
   - **Client-Side Development in ASP.NET Core**
-
-                              [https://learn.microsoft.com/aspnet/core/client](https://docs.microsoft.com/aspnet/core/client-side/) side/
-
+[https://learn.microsoft.com/aspnet/core/client-side/](https://docs.microsoft.com/aspnet/core/client-side/)
 
   - **jQuery**
 [https://jquery.com/](https://jquery.com/)
 
-
   - **Angular**
 [https://angular.io/](https://angular.io/)
 
-
   - **React**
-
 [https://reactjs.org/](https://reactjs.org/)
 
-
   - **Vue**
-
 [https://vuejs.org/](https://vuejs.org/)
-
 
   - **Angular vs React vs Vue: Which Framework to Choose in 2020**
 [https://www.codeinwp.com/blog/angular-vs-vue-vs-react/](https://www.codeinwp.com/blog/angular-vs-vue-vs-react/)
 
-
-  **The Top JavaScript Frameworks for Front-End Development in 2020**
+  - **The Top JavaScript Frameworks for Front-End Development in 2020**
 [https://www.freecodecamp.org/news/complete-guide-for-front-end-developers-javascript-](https://www.freecodecamp.org/news/complete-guide-for-front-end-developers-javascript-frameworks-2019/)
 [frameworks-2019/](https://www.freecodecamp.org/news/complete-guide-for-front-end-developers-javascript-frameworks-2019/)
 
@@ -2353,12 +2260,13 @@ developed by a large enterprise.
 42 CHAPTER 5 | Common client-side web technologies
 
 
-# CHAPTER 6
+**CHAPTER**
+# 6
 
 ## Develop ASP.NET Core MVC apps
 
-“It’s not important to get it right the first time. It’s vitally important to get it right the last time.” _-_
 
+“It’s not important to get it right the first time. It’s vitally important to get it right the last time.” _-_
 _Andrew Hunt and David Thomas_
 
 
@@ -2441,7 +2349,6 @@ features or even as a wholesale migration. For more information about porting .N
 
 Whether you choose to build your web app using Razor Pages or MVC views, your app will have
 similar performance and will include support for dependency injection, filters, model binding,
-
 validation, and so on.
 
 ### Mapping requests to responses
@@ -2483,7 +2390,6 @@ routes between controllers and actions. For example:
 
 Routes can be specified on [HttpGet] and similar attributes, avoiding the need to add separate [Route]
 attributes. Attribute routes can also use tokens to reduce the need to repeat controller or action
-
 names, as shown below:
 
 
@@ -2500,8 +2406,7 @@ Razor Page as part of its @page directive:
 
 In the previous example, the page in question would match a route with an integer id parameter. For
 example, the _Products.cshtml_ page located in the root of /Pages would respond to requests like this
-
-- ne:
+one:
 
 ```
 /Products/123
@@ -2509,20 +2414,18 @@ example, the _Products.cshtml_ page located in the root of /Pages would respond 
 ```
 
 Once a given request has been matched to a route, but before the action method is called, ASP.NET
-[Core MVC will perform model binding and model validation](https://docs.microsoft.com/aspnet/core/mvc/models/model-binding) - n the request. Model binding is
+[Core MVC will perform model binding and model validation](https://docs.microsoft.com/aspnet/core/mvc/models/model-binding) on the request. Model binding is
 responsible for converting incoming HTTP data into the .NET types specified as parameters of the
 action method to be called. For example, if the action method expects an int id parameter, model
 binding will attempt to provide this parameter from a value provided as part of the request. To do so,
 model binding looks for values in a posted form, values in the route itself, and query string values.
 Assuming an id value is found, it will be converted to an integer before being passed into the action
-
 method.
 
 
 After binding the model but before calling the action method, model validation occurs. Model
 validation uses optional attributes on the model type, and can help ensure that the provided model
-
-- bject conforms to certain data requirements. Certain values may be specified as required, or limited
+object conforms to certain data requirements. Certain values may be specified as required, or limited
 to a certain length or numeric range, etc. If validation attributes are specified but the model does not
 conform to their requirements, the property ModelState.IsValid will be false, and the set of failing
 validation rules will be available to send to the client making the request.
@@ -2531,8 +2434,7 @@ validation rules will be available to send to the client making the request.
 If you’re using model validation, you should be sure to always check that the model is valid before
 performing any state-altering commands, to ensure your app is not corrupted by invalid data. You can
 [use a filter](https://docs.microsoft.com/aspnet/core/mvc/controllers/filters) to avoid the need to add code for this validation in every action. ASP.NET Core MVC filters
-
-- ffer a way of intercepting groups of requests, so that common policies and cross-cutting concerns
+offer a way of intercepting groups of requests, so that common policies and cross-cutting concerns
 can be applied on a targeted basis. Filters can be applied to individual actions, whole controllers, or
 globally for an application.
 
@@ -2548,7 +2450,6 @@ individual controllers, to a base controller class, or to the entire assembly. T
 automatic model validation checking and any action with an invalid model will return a BadRequest
 with the details of the validation errors. The attribute also requires all actions have an attribute route,
 rather than using a conventional route, and returns more detailed ProblemDetails information in
-
 response to errors.
 
 #### **Keeping controllers under control**
@@ -2590,7 +2491,6 @@ The end result of this approach is for controllers to be much smaller and focuse
 and model binding, while individual handlers are responsible for the specific tasks needed by a given
 [endpoint. This approach can also be achieved without MediatR by using the ApiEndpoints NuGet](https://www.nuget.org/packages/Ardalis.ApiEndpoints/)
 [package, which attempts to bring to API controllers the same benefits Razor Pages brings to view-](https://www.nuget.org/packages/Ardalis.ApiEndpoints/)
-
 based controllers.
 
 #### **References – Mapping Requests to Responses**
@@ -2599,25 +2499,17 @@ based controllers.
   - **Routing to Controller Actions**
 [https://learn.microsoft.com/aspnet/core/mvc/controllers/routing](https://docs.microsoft.com/aspnet/core/mvc/controllers/routing)
 
-
   - **Model Binding**
-
-                                      [https://learn.microsoft.com/aspnet/core/mvc/models/model](https://docs.microsoft.com/aspnet/core/mvc/models/model-binding) binding
-
+[https://learn.microsoft.com/aspnet/core/mvc/models/model-binding](https://docs.microsoft.com/aspnet/core/mvc/models/model-binding)
 
   - **Model Validation**
-
 [https://learn.microsoft.com/aspnet/core/mvc/models/validation](https://docs.microsoft.com/aspnet/core/mvc/models/validation)
 
-
   - **Filters**
-
 [https://learn.microsoft.com/aspnet/core/mvc/controllers/filters](https://docs.microsoft.com/aspnet/core/mvc/controllers/filters)
 
-
   - **ApiController Attribute**
-
-                              [https://learn.microsoft.com/aspnet/core/web](https://docs.microsoft.com/aspnet/core/web-api/) api/
+[https://learn.microsoft.com/aspnet/core/web-api/](https://docs.microsoft.com/aspnet/core/web-api/)
 
 ### Working with dependencies
 
@@ -2628,8 +2520,7 @@ an application. Looser coupling is desirable because it makes it easier to isola
 application, allowing for testing or replacement. It also makes it less likely that a change in one part of
 the application will have an unexpected impact somewhere else in the application. Dependency
 injection is based on the dependency inversion principle, and is often key to achieving the
-
-- pen/closed principle. When evaluating how your application works with its dependencies, beware of
+open/closed principle. When evaluating how your application works with its dependencies, beware of
 [the static cling](https://deviq.com/static-cling/) [code smell, and remember the aphorism “new is glue.”](https://ardalis.com/new-is-glue)
 
 
@@ -2638,11 +2529,9 @@ have side effects or dependencies on infrastructure. For example, if you have a 
 static method, which in turn writes to a database, your method is tightly coupled to the database.
 Anything that breaks that database call will break your method. Testing such methods is notoriously
 difficult, since such tests either require commercial mocking libraries to mock the static calls, or can
-
-- nly be tested with a test database in place. Static calls that don’t have any dependence on
+only be tested with a test database in place. Static calls that don’t have any dependence on
 infrastructure, especially those calls that are completely stateless, are fine to call and have no impact
-
-- n coupling or testability (beyond coupling code to the static call itself).
+on coupling or testability (beyond coupling code to the static call itself).
 
 
 48 CHAPTER 6 | Develop ASP.NET Core MVC apps
@@ -2650,8 +2539,7 @@ infrastructure, especially those calls that are completely stateless, are fine t
 
 Many developers understand the risks of static cling and global state, but will still tightly couple their
 code to specific implementations through direct instantiation. “New is glue” is meant to be a reminder
-
-- f this coupling, and not a general condemnation of the use of the new keyword. Just as with static
+of this coupling, and not a general condemnation of the use of the new keyword. Just as with static
 method calls, new instances of types that have no external dependencies typically do not tightly
 couple code to implementation details or make testing more difficult. But each time a class is
 instantiated, take just a brief moment to consider whether it makes sense to hard-code that specific
@@ -2662,7 +2550,7 @@ dependency.
 
 
 ASP.NET Core is built around having methods and classes declare their dependencies, requesting
-them as arguments. ASP.NET applications are typically set up in _Program.cs_ - r in a Startup class.
+them as arguments. ASP.NET applications are typically set up in _Program.cs_ or in a Startup class.
 
 
 
@@ -2673,7 +2561,6 @@ them as arguments. ASP.NET applications are typically set up in _Program.cs_ - r
 
 For very simple apps, you can wire up dependencies directly in _Program.cs_ file using a
 WebApplicationBuilder. Once all needed services have been added, the builder is used to create the
-
 app.
 
 
@@ -2721,8 +2608,7 @@ application, from Controllers to Middleware to Filters to your own Services. In 
 [follow the Explicit Dependencies Principle, requesting your dependencies rather than directly creating](https://deviq.com/explicit-dependencies-principle/)
 them, and leveraging dependency injection throughout your application. Be careful of where and how
 you directly instantiate implementations, especially services and objects that work with infrastructure
-
-- r have side effects. Prefer working with abstractions defined in your application core and passed in as
+or have side effects. Prefer working with abstractions defined in your application core and passed in as
 arguments to hardcoding references to specific implementation types.
 
 ### Structuring the application
@@ -2754,8 +2640,7 @@ defined in the ApplicationCore project, as are services that do not directly dep
 Implementation details, such as how persistence is performed or how notifications might be sent to a
 user, are kept in the Infrastructure project. This project will reference implementation-specific
 packages such as Entity Framework Core, but should not expose details about these implementations
-
-- utside of the project. Infrastructure services and repositories should implement interfaces that are
+outside of the project. Infrastructure services and repositories should implement interfaces that are
 defined in the ApplicationCore project, and its persistence implementations are responsible for
 retrieving and storing entities defined in ApplicationCore.
 
@@ -2778,8 +2663,7 @@ additional complexity.
 By default, ASP.NET Core applications organize their folder structure to include Controllers and Views,
 and frequently ViewModels. Client-side code to support these server-side structures is typically stored
 separately in the wwwroot folder. However, large applications may encounter problems with this
-
-- rganization, since working on any given feature often requires jumping between these folders. This
+organization, since working on any given feature often requires jumping between these folders. This
 gets more and more difficult as the number of files and subfolders in each folder grows, resulting in a
 great deal of scrolling through Solution Explorer. One solution to this problem is to organize
 application code by _feature_ instead of by file type. This organizational style is typically referred to as
@@ -2817,7 +2701,6 @@ to replace controllers, and each folder can contain all of the API Endpoints and
 ASP.NET Core uses built-in convention types to control its behavior. You can modify or replace these
 conventions. For example, you can create a convention that will automatically get the feature name
 for a given controller based on its namespace (which typically correlates to the folder in which the
-
 controller is located):
 
 
@@ -2826,7 +2709,6 @@ ConfigureServices (or in _Program.cs_ ):
 
 
 ASP.NET Core MVC also uses a convention to locate views. You can override it with a custom
-
 convention so that views will be located in your feature folders (using the feature name provided by
 the FeatureConvention, above). You can learn more about this approach and download a working
 [sample from the MSDN Magazine article, Feature Slices for ASP.NET Core MVC.](https://docs.microsoft.com/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc)
@@ -2879,9 +2761,7 @@ eliminate duplication and maintain consistency. Some examples of cross-cutting c
 Core applications are authentication, model validation rules, output caching, and error handling,
 [though there are many others. ASP.NET Core MVC filters](https://docs.microsoft.com/aspnet/core/mvc/controllers/filters) allow you to run code before or after certain
 steps in the request processing pipeline. For instance, a filter can run before and after model binding,
-
 before and after an action, or before and after an action’s result. You can also use an authorization
-
 filter to control access to the rest of the pipeline. Figures 7-2 shows how request execution flows
 through filters, if configured.
 
@@ -2917,7 +2797,6 @@ demonstrates these two policies in action:
 Don’t allow your action methods to become cluttered with conditional code like this. Instead, pull the
 policies into filters that can be applied on an as-needed basis. In this example, the model validation
 check, which should occur anytime a command is sent to the API, can be replaced by the following
-
 attribute:
 
 
@@ -2927,7 +2806,6 @@ behavior without the need for a separate ValidateModel filter.
 
 
 Likewise, a filter can be used to check if a record exists and return a 404 before the action is executed,
-
 eliminating the need to perform these checks in the action. Once you’ve pulled out common
 conventions and organized your solution to separate infrastructure code and business logic from your
 UI, your MVC action methods should be extremely thin:
@@ -2950,36 +2828,28 @@ and the controller action or endpoint would use a filter to translate these into
 
 
   - **Areas**
-
 [https://learn.microsoft.com/aspnet/core/mvc/controllers/areas](https://docs.microsoft.com/aspnet/core/mvc/controllers/areas)
 
-
-  **MSDN Magazine – Feature Slices for ASP.NET Core MVC**
+  - **MSDN Magazine – Feature Slices for ASP.NET Core MVC**
 [https://learn.microsoft.com/archive/msdn-magazine/2016/september/asp-net-core-feature-](https://docs.microsoft.com/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc)
 [slices-for-asp-net-core-mvc](https://docs.microsoft.com/archive/msdn-magazine/2016/september/asp-net-core-feature-slices-for-asp-net-core-mvc)
 
-
   - **Filters**
-
 [https://learn.microsoft.com/aspnet/core/mvc/controllers/filters](https://docs.microsoft.com/aspnet/core/mvc/controllers/filters)
-
 
   - **MSDN Magazine – Real World ASP.NET Core MVC Filters**
 [https://learn.microsoft.com/archive/msdn-magazine/2016/august/asp-net-core-real-world-](https://docs.microsoft.com/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters)
 [asp-net-core-mvc-filters](https://docs.microsoft.com/archive/msdn-magazine/2016/august/asp-net-core-real-world-asp-net-core-mvc-filters)
 
-
   - **Result in eShopOnWeb**
-
-                   https://github.com/dotnet [architecture/eShopOnWeb/wiki/Patterns#result](https://github.com/dotnet-architecture/eShopOnWeb/wiki/Patterns#result)
+[https://github.com/dotnet-architecture/eShopOnWeb/wiki/Patterns#result](https://github.com/dotnet-architecture/eShopOnWeb/wiki/Patterns#result)
 
 ### Security
 
 
 Securing web applications is a large topic, with many considerations. At its most basic level, security
 involves ensuring you know who a given request is coming from, and then ensuring that the request
-
-- nly has access to resources it should. Authentication is the process of comparing credentials
+only has access to resources it should. Authentication is the process of comparing credentials
 provided with a request to those in a trusted data store, to see if the request should be treated as
 coming from a known entity. Authorization is the process of restricting access to certain resources
 based on user identity. A third security concern is protecting requests from eavesdropping by third
@@ -3006,8 +2876,7 @@ and additional functionality.
 _Figure 7-3. Select Individual User Accounts to have Identity preconfigured._
 
 
-Identity support is configured in _Program.cs_ - r Startup, and includes configuring services as well as
-
+Identity support is configured in _Program.cs_ or Startup, and includes configuring services as well as
 middleware.
 
 
@@ -3017,7 +2886,6 @@ middleware.
 In _Program.cs_, you configure services from the WebHostBuilder instance, and then once the app is
 created, you configure its middleware. The key points to note are the call to AddDefaultIdentity for
 required services and the UseAuthentication and UseAuthorization calls which add required
-
 middleware.
 
 
@@ -3037,7 +2905,6 @@ create prompts that can be sent to users via SMS or email in order for them to c
 
 
 [You can learn more about configuring two-factor authentication](https://docs.microsoft.com/aspnet/core/security/authentication/2fa) [and enabling external login providers](https://docs.microsoft.com/aspnet/core/security/authentication/social/)
-
 from the official ASP.NET Core docs.
 
 #### **Authentication**
@@ -3047,7 +2914,6 @@ Authentication is the process of determining who is accessing the system. If you
 Core Identity and the configuration methods shown in the previous section, it will automatically
 configure some authentication defaults in the application. However, you can also configure these
 defaults manually, or override the ones set by AddIdentity. If you’re using Identity, it configures
-
 cookie-based authentication as the default _scheme_ .
 
 
@@ -3055,21 +2921,16 @@ In web-based authentication, there are typically up to five actions that may be 
 course of authenticating a client of a system. These are:
 
 
-  Authenticate. Use the information provided by the client to create an identity for them to use
+  - Authenticate. Use the information provided by the client to create an identity for them to use
 within the application.
 
+  - Challenge. This action is used to require the client to identify themselves.
 
-  Challenge. This action is used to require the client to identify themselves.
-
-
-  Forbid. Inform the client they are forbidden from performing an action.
-
+  - Forbid. Inform the client they are forbidden from performing an action.
 
   - Sign-in. Persist the existing client in some way.
 
-
-  Sign-out. Remove the client from persistence.
-
+  - Sign-out. Remove the client from persistence.
 
 There are a number of common techniques for performing authentication in web applications. These
 are referred to as schemes. A given scheme will define actions for some or all of the above options.
@@ -3082,14 +2943,12 @@ In your ASP.NET Core application, you can configure a DefaultAuthenticateScheme 
 specific schemes for each of the actions described above. For example, DefaultChallengeScheme,
 [DefaultForbidScheme, etc. Calling AddIdentity<TUser,TRole> configures a number of aspects of the](https://github.com/dotnet/aspnetcore/blob/release/3.1/src/Identity/Core/src/IdentityServiceCollectionExtensions.cs#L38-L102)
 application and adds many required services. It also includes this call to configure the authentication
-
 scheme:
 
 
 These schemes use cookies for persistence and redirection to login pages for authentication by
 default. These schemes are appropriate for web applications that interact with users via web browsers,
 but not recommended for APIs. Instead, APIs will typically use another form of authentication, such as
-
 JWT bearer tokens.
 
 
@@ -3128,19 +2987,13 @@ bypass the app and interact with the APIs directly.
 
 
   - **Authentication Actions and Defaults**
-
 [https://stackoverflow.com/a/52493428](https://stackoverflow.com/a/52493428)
 
-
   - **Authentication and Authorization for SPAs**
-
 [https://learn.microsoft.com/aspnet/core/security/authentication/identity-api-authorization](https://docs.microsoft.com/aspnet/core/security/authentication/identity-api-authorization)
 
-
   - **ASP.NET Core Blazor Authentication and Authorization**
-
 [https://learn.microsoft.com/aspnet/core/blazor/security/](https://docs.microsoft.com/aspnet/core/blazor/security/)
-
 
   - **Security: Authentication and Authorization in ASP.NET Web Forms and Blazor**
 [https://learn.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/security-](https://docs.microsoft.com/en-us/dotnet/architecture/blazor-for-web-forms-developers/security-authentication-authorization)
@@ -3157,7 +3010,6 @@ can be achieved by applying the [Authorize] attribute to certain controllers or 
 
 
 being used, the attribute can be further extended to restrict access to users who belong to certain
-
 roles, as shown:
 
 
@@ -3170,13 +3022,11 @@ Specifying certain sets of roles as strings in many different controllers and ac
 undesirable repetition. At a minimum, define constants for these string literals and use the constants
 anywhere you need to specify the string. You can also configure authorization policies, which
 encapsulate authorization rules, and then specify the policy instead of individual roles when applying
-
 the [Authorize] attribute:
 
 
 Using policies in this way, you can separate the kinds of actions being restricted from the specific roles
-
-- r rules that apply to it. Later, if you create a new role that needs to have access to certain resources,
+or rules that apply to it. Later, if you create a new role that needs to have access to certain resources,
 you can just update a policy, rather than updating every list of roles on every [Authorize] attribute.
 
 
@@ -3190,7 +3040,6 @@ policies. You could create a policy called “EmployeeOnly” that requires the 
 
 
 This policy could then be used with the [Authorize] attribute to protect any controller and/or action,
-
 as described above.
 
 
@@ -3219,7 +3068,6 @@ You can create your own authentication service, integrate with Azure AD and OAut
 
 
 JWT tokens can embed claims about the user, which can be read on the client or server. You can use a
-
 [tool like jwt.io](https://jwt.io/) to view the contents of a JWT token. Do not store sensitive data like passwords or keys
 in JTW tokens, since their contents are easily read.
 
@@ -3254,23 +3102,17 @@ will almost certainly have better security than a custom implementation.
   - **Security Docs Overview**
 [https://learn.microsoft.com/aspnet/core/security/](https://docs.microsoft.com/aspnet/core/security/)
 
-
-  **Enforcing SSL in an ASP.NET Core App**
+  - **Enforcing SSL in an ASP.NET Core App**
 [https://learn.microsoft.com/aspnet/core/security/enforcing-ssl](https://docs.microsoft.com/aspnet/core/security/enforcing-ssl)
-
 
   - **Introduction to Identity**
 [https://learn.microsoft.com/aspnet/core/security/authentication/identity](https://docs.microsoft.com/aspnet/core/security/authentication/identity)
 
-
   - **Introduction to Authorization**
-
 [https://learn.microsoft.com/aspnet/core/security/authorization/introduction](https://docs.microsoft.com/aspnet/core/security/authorization/introduction)
 
-
-  **Authentication and Authorization for API Apps in Azure App Service**
+  - **Authentication and Authorization for API Apps in Azure App Service**
 [https://learn.microsoft.com/azure/app-service-api/app-service-api-authentication](https://docs.microsoft.com/azure/app-service-api/app-service-api-authentication)
-
 
   - **Identity Server**
 [https://github.com/IdentityServer](https://github.com/IdentityServer)
@@ -3283,8 +3125,7 @@ communicate directly with connected clients. This outbound communication can use
 transport technologies, the most common being WebSockets. ASP.NET Core SignalR is a library that
 makes it simple to add real-time server-to-client communication functionality to your applications.
 SignalR supports a variety of transport technologies, including WebSockets, and abstracts away many
-
-- f the implementation details from the developer.
+of the implementation details from the developer.
 
 
 Real-time client communication, whether using WebSockets directly or other techniques, are useful in
@@ -3303,7 +3144,7 @@ a variety of application scenarios. Some examples include:
   - Notifications
 
 
-  Interactive forms applications
+  - Interactive forms applications
 
 
 When building client communication into your applications, there are typically two components:
@@ -3332,10 +3173,8 @@ whether real-time communication would improve your app’s user experience.
   - **ASP.NET Core SignalR**
 [https://github.com/dotnet/aspnetcore/tree/main/src/SignalR](https://github.com/dotnet/aspnetcore/tree/main/src/SignalR)
 
-
   - **WebSocket Manager**
-
-                  -                   https://github.com/radu [matei/websocket](https://github.com/radu-matei/websocket-manager) manager
+[https://github.com/radu-matei/websocket-manager](https://github.com/radu-matei/websocket-manager)
 
 ### Domain-driven design – Should you apply it?
 
@@ -3346,7 +3185,6 @@ domain expert(s) who can relate to the developers how the real-world system work
 you’re building a system that handles stock trades, your domain expert might be an experienced stock
 broker. DDD is designed to address large, complex business problems, and is often not appropriate
 for smaller, simpler applications, as the investment in understanding and modeling the domain is not
-
 worth it.
 
 
@@ -3368,16 +3206,15 @@ system. These objects may fall into the following categories:
 persistence with a key by which they can later be retrieved.
 
 
-  [Aggregates, which represent groups of objects that should be persisted as a unit.](https://deviq.com/aggregate-pattern/)
+  - [Aggregates, which represent groups of objects that should be persisted as a unit.](https://deviq.com/aggregate-pattern/)
 
 
-  [Value objects, which represent concepts that can be compared on the basis of the sum of](https://deviq.com/value-object/)
+  - [Value objects, which represent concepts that can be compared on the basis of the sum of](https://deviq.com/value-object/)
 their property values. For example, DateRange consisting of a start and end date.
 
 
   - [Domain events, which represent things happening within the system that are of interest to](https://martinfowler.com/eaaDev/DomainEvent.html)
-
-    - ther parts of the system.
+other parts of the system.
 
 
 A DDD domain model should encapsulate complex behavior within the model. Entities, in particular,
@@ -3388,10 +3225,10 @@ should not merely be collections of properties. When the domain model lacks beha
 In addition to these model types, DDD typically employs a variety of patterns:
 
 
-  [Repository, for abstracting persistence details.](https://deviq.com/repository-pattern/)
+  - [Repository, for abstracting persistence details.](https://deviq.com/repository-pattern/)
 
 
-  [Factory, for encapsulating complex object creation.](https://en.wikipedia.org/wiki/Factory_method_pattern)
+  - [Factory, for encapsulating complex object creation.](https://en.wikipedia.org/wiki/Factory_method_pattern)
 
 
   - [Services, for encapsulating complex behavior and/or infrastructure implementation details.](http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/)
@@ -3400,7 +3237,7 @@ In addition to these model types, DDD typically employs a variety of patterns:
   - [Command, for decoupling issuing commands and executing the command itself.](https://en.wikipedia.org/wiki/Command_pattern)
 
 
-  [Specification, for encapsulating query details.](https://deviq.com/specification-pattern/)
+  - [Specification, for encapsulating query details.](https://deviq.com/specification-pattern/)
 
 
 DDD also recommends the use of the Clean Architecture discussed previously, allowing for loose
@@ -3439,7 +3276,7 @@ requirements.
 #### **References – Domain-Driven Design**
 
 
-  **DDD in Plain English (StackOverflow Answer)**
+  - **DDD in Plain English (StackOverflow Answer)**
 [https://stackoverflow.com/questions/1222392/can-someone-explain-domain-driven-design-](https://stackoverflow.com/questions/1222392/can-someone-explain-domain-driven-design-ddd-in-plain-english-please/1222488#1222488)
 [ddd-in-plain-english-please/1222488#1222488](https://stackoverflow.com/questions/1222392/can-someone-explain-domain-driven-design-ddd-in-plain-english-please/1222488#1222488)
 
@@ -3447,8 +3284,7 @@ requirements.
 
 
 There are a few steps involved in the process of deploying your ASP.NET Core application, regardless
-
-- f where it will be hosted. The first step is to publish the application, which can be done using the
+of where it will be hosted. The first step is to publish the application, which can be done using the
 dotnet publish CLI command. This step will compile the application and place all of the files needed to
 run the application into a designated folder. When you deploy from Visual Studio, this step is
 performed for you automatically. The publish folder contains .exe and .dll files for the application and
@@ -3459,7 +3295,6 @@ Core applications will also include configuration files, static client assets, a
 ASP.NET Core applications are console applications that must be started when the server boots and
 restarted if the application (or server) crashes. A process manager can be used to automate this
 process. The most common process managers for ASP.NET Core are Nginx and Apache on Linux and
-
 IIS or Windows Service on Windows.
 
 
@@ -3468,7 +3303,6 @@ reverse proxy server receives HTTP requests from the Internet and forwards them 
 some preliminary handling. Reverse proxy servers provide a layer of security for the application.
 Kestrel also doesn’t support hosting multiple applications on the same port, so techniques like host
 headers cannot be used with it to enable hosting multiple applications on the same port and IP
-
 address.
 
 
@@ -3500,7 +3334,7 @@ individual applications, Application Gateway can also offer the following featur
   - HTTP load balancing
 
 
-  SSL offload (SSL only to Internet)
+  - SSL offload (SSL only to Internet)
 
 
   - End to End SSL
@@ -3509,7 +3343,7 @@ individual applications, Application Gateway can also offer the following featur
   - Multi-site routing (consolidate up to 20 sites on a single Application Gateway)
 
 
-  Web application firewall
+  - Web application firewall
 
 
   - Websocket support
@@ -3526,15 +3360,12 @@ _Learn more about Azure deployment options in Chapter 10._
   - **Hosting and Deployment Overview**
 [https://learn.microsoft.com/aspnet/core/publishing/](https://docs.microsoft.com/aspnet/core/publishing/)
 
-
   - **When to use Kestrel with a reverse proxy**
 [https://learn.microsoft.com/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy)
 [with-a-reverse-proxy](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel#when-to-use-kestrel-with-a-reverse-proxy)
 
-
   - **Host ASP.NET Core apps in Docker**
 [https://learn.microsoft.com/aspnet/core/publishing/docker](https://docs.microsoft.com/aspnet/core/publishing/docker)
-
 
   - **Introducing Azure Application Gateway**
 [https://learn.microsoft.com/azure/application-gateway/application-gateway-introduction](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)
@@ -3543,9 +3374,11 @@ _Learn more about Azure deployment options in Chapter 10._
 68 CHAPTER 6 | Develop ASP.NET Core MVC apps
 
 
-# CHAPTER 7
+**CHAPTER**
+# 7
 
 ## Working with Data in ASP.NET Core Apps
+
 
 “Data is a precious thing and will last longer than the systems themselves.”
 
@@ -3558,7 +3391,6 @@ data access options, including Entity Framework Core (and Entity Framework 6 as 
 with any .NET data access framework. The choice of which data access framework to use depends on
 the application’s needs. Abstracting these choices from the ApplicationCore and UI projects, and
 encapsulating implementation details in Infrastructure, helps to produce loosely coupled, testable
-
 software.
 
 ### Entity Framework Core (for relational databases)
@@ -3680,7 +3512,6 @@ you specify the property using the Include extension method on the query, as sho
 You can include multiple relationships, and you can also include subrelationships using ThenInclude.
 EF Core will execute a single query to retrieve the resulting set of entities. Alternately you can include
 navigation properties of navigation properties by passing a ‘.’-separated string to the .Include()
-
 extension method, like so:
 
 ```
@@ -3708,8 +3539,7 @@ Core has added support for lazy loading in version 2.1. Lazy loading is not enab
 requires installing the Microsoft.EntityFrameworkCore.Proxies. As with explicit loading, lazy loading
 should typically be disabled for web applications, since its use will result in additional database
 queries being made within each web request. Unfortunately, the overhead incurred by lazy loading
-
-- ften goes unnoticed at development time, when the latency is small and often the data sets used for
+often goes unnoticed at development time, when the latency is small and often the data sets used for
 testing are small. However, in production, with more users, more data, and more latency, the
 additional database requests can often result in poor performance for web applications that make
 heavy use of lazy loading.
@@ -3720,7 +3550,6 @@ heavy use of lazy loading.
 
 It’s a good idea to test your application while examining the actual database queries it makes. Under
 certain circumstances, EF Core may make many more queries or a more expensive query than is
-
 [optimal for the application. One such problem is known as a Cartesian Explosion. The EF Core team](https://docs.microsoft.com/ef/core/querying/single-split-queries#cartesian-explosion)
 [makes available the AsSplitQuery method as one of several ways to tune runtime behavior.](https://docs.microsoft.com/ef/core/querying/single-split-queries#split-queries)
 
@@ -3747,8 +3576,7 @@ Another way in which you can improve your domain model is by using value objects
 lack identity and are only distinguished by their properties. Using such types as properties of your
 entities can help keep logic specific to the value object where it belongs, and can avoid duplicate logic
 between multiple entities that use the same concept. In Entity Framework Core, you can persist value
-
-- bjects in the same table as their owning entity by configuring the type as an owned entity, like so:
+objects in the same table as their owning entity by configuring the type as an owned entity, like so:
 
 
 In this example, the ShipToAddress property is of type Address. Address is a value object with several
@@ -3777,7 +3605,6 @@ connection if you want to have resilient EF Core connections.
 
 
 For instance, the following code at the EF Core connection level enables resilient SQL connections that
-
 are retried if the connection fails.
 
 
@@ -3790,13 +3617,11 @@ are retried if the connection fails.
 
 When retries are enabled in EF Core connections, each operation you perform using EF Core becomes
 its own retryable operation. Each query and each call to SaveChangesAsync will be retried as a unit if a
-
 transient failure occurs.
 
 
 However, if your code initiates a transaction using BeginTransaction, you are defining your own group
-
-- f operations that need to be treated as a unit; everything inside the transaction has to be rolled back
+of operations that need to be treated as a unit; everything inside the transaction has to be rolled back
 if a failure occurs. You will see an exception like the following if you attempt to execute that
 transaction when using an EF execution strategy (retry policy) and you include several
 SaveChangesAsync from multiple DbContexts in it.
@@ -3826,9 +3651,7 @@ DbContexts and using an EF Execution Strategy.
 
   - **EF Core Docs** [https://learn.microsoft.com/ef/](https://docs.microsoft.com/ef/)
 
-
   - **EF Core: Related Data** [https://learn.microsoft.com/ef/core/querying/related-data](https://docs.microsoft.com/ef/core/querying/related-data)
-
 
   - **Avoid Lazy Loading Entities in ASPNET Applications** [https://ardalis.com/avoid-lazy-](https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications)
 [loading-entities-in-asp-net-applications](https://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications)
@@ -3872,7 +3695,6 @@ type User, the following SQL would return all of the necessary data:
 
 
 Each returned row includes both User and Post data. Since the User data should be attached to the
-
 Post data via its Owner property, the following function is used:
 
 ```
@@ -3881,25 +3703,21 @@ Post data via its Owner property, the following function is used:
 ```
 
 The full code listing to return a collection of posts with their Owner property populated with the
-
 associated user data would be:
 
 
 Because it offers less encapsulation, Dapper requires developers know more about how their data is
 stored, how to query it efficiently, and write more code to fetch it. When the model changes, instead
-
-- f simply creating a new migration (another EF Core feature), and/or updating mapping information
+of simply creating a new migration (another EF Core feature), and/or updating mapping information
 in one place in a DbContext, every query that is impacted must be updated. These queries have no
 compile-time guarantees, so they may break at run time in response to changes to the model or
 database, making errors more difficult to detect quickly. In exchange for these tradeoffs, Dapper
-
-- ffers extremely fast performance.
+offers extremely fast performance.
 
 
 For most applications, and most parts of almost all applications, EF Core offers acceptable
 performance. Thus, its developer productivity benefits are likely to outweigh its performance
-
-- verhead. For queries that can benefit from caching, the actual query may only be executed a tiny
+overhead. For queries that can benefit from caching, the actual query may only be executed a tiny
 percentage of the time, making relatively small query performance differences moot.
 
 ### SQL or NoSQL
@@ -3912,8 +3730,7 @@ serialize the entire object graph, and store the result. The benefits of this ap
 are simplicity and performance. It’s simpler to store a single serialized object with a key than to
 decompose the object into many tables with relationships and update rows that may have changed
 since the object was last retrieved from the database. Likewise, fetching and deserializing a single
-
-- bject from a key-based store is typically much faster and easier than complex joins or multiple
+object from a key-based store is typically much faster and easier than complex joins or multiple
 database queries required to fully compose the same object from a relational database. The lack of
 locks or transactions or a fixed schema also makes NoSQL databases amenable to scaling across many
 machines, supporting very large datasets.
@@ -3938,12 +3755,10 @@ NoSQL databases typically do not offer such constraints on their data.
 
 Another complexity NoSQL databases must deal with is versioning. When an object’s properties
 change, it may not be able to be deserialized from past versions that were stored. Thus, all existing
-
-- bjects that have a serialized (previous) version of the object must be updated to conform to its new
+objects that have a serialized (previous) version of the object must be updated to conform to its new
 schema. This approach is not conceptually different from a relational database, where schema
 changes sometimes require update scripts or mapping updates. However, the number of entries that
 must be modified is often much greater in the NoSQL approach, because there is more duplication of
-
 data.
 
 
@@ -3954,10 +3769,8 @@ account for the existence of previous versions of objects, adding additional com
 
 [NoSQL databases typically do not enforce ACID, which means they have both performance and](https://en.wikipedia.org/wiki/ACID)
 scalability benefits over relational databases. They’re well suited to extremely large datasets and
-
-- bjects that are not well suited to storage in normalized table structures. There is no reason why a
+objects that are not well suited to storage in normalized table structures. There is no reason why a
 single application cannot take advantage of both relational and NoSQL databases, using each where it
-
 is best suited.
 
 ### Azure Cosmos DB
@@ -3969,7 +3782,6 @@ scaling, and global distribution. Despite being a NoSQL database, developers can
 SQL query capabilities on JSON data. All resources in Azure Cosmos DB are stored as JSON
 documents. Resources are managed as _items_, which are documents containing metadata, and _feeds_,
 which are collections of items. Figure 8-2 shows the relationship between different Azure Cosmos DB
-
 resources.
 
 
@@ -3998,19 +3810,19 @@ massively scalable, so you can start out storing small amounts of data and scale
 hundreds or terabytes if your application requires it. Azure Storage supports four kinds of data:
 
 
-  Blob Storage for unstructured text or binary storage, also referred to as object storage.
+  - Blob Storage for unstructured text or binary storage, also referred to as object storage.
 
 
-  Table Storage for structured datasets, accessible via row keys.
+  - Table Storage for structured datasets, accessible via row keys.
 
 
-  Queue Storage for reliable queue-based messaging.
+  - Queue Storage for reliable queue-based messaging.
 
 
 79 CHAPTER 7 | Working with Data in ASP.NET Core Apps
 
 
-  File Storage for shared file access between Azure virtual machines and on-premises
+  - File Storage for shared file access between Azure virtual machines and on-premises
 applications.
 
 
@@ -4046,7 +3858,6 @@ use caching in your application as it grows.
 ASP.NET Core supports two levels of response caching. The first level does not cache anything on the
 server, but adds HTTP headers that instruct clients and proxy servers to cache responses. This
 functionality is implemented by adding the ResponseCache attribute to individual controllers or
-
 actions:
 
 
@@ -4097,7 +3908,6 @@ design pattern, by providing an alternative implementation of ICatalogService th
 
 To configure the application to use the cached version of the service, but still allow the service to get
 the instance of CatalogService it needs in its constructor, you would add the following lines in
-
 _Program.cs_ :
 
 
@@ -4113,9 +3923,7 @@ small cache durations, since for a busy application there is a limited additiona
 the length data is cached. For example, consider a page that makes a single database query, and is
 requested 10 times per second. If this page is cached for one minute, it will result in the number of
 database queries made per minute to drop from 600 to 1, a reduction of 99.8%. If instead the cache
-
 duration was made one hour, the overall reduction would be 99.997%, but now the likelihood and
-
 potential age of stale data are both increased dramatically.
 
 
@@ -4218,12 +4026,13 @@ web-api
 84 CHAPTER 7 | Working with Data in ASP.NET Core Apps
 
 
-# CHAPTER 8
+**CHAPTER**
+# 8
 
 ## Test ASP.NET Core MVC apps
 
-_“If you don’t like unit testing your product, most likely your customers won’t like to test it, either.”_ _
-Anonymous
+
+_“If you don’t like unit testing your product, most likely your customers won’t like to test it, either.”_ _Anonymous
 
 Software of any complexity can fail in unexpected ways in response to changes. Thus, testing after
 making changes is required for all but the most trivial (or least critical) applications. Manual testing is
@@ -4252,8 +4061,7 @@ network, or a database. Unit tests should only test your code.
 
 Unit tests, by virtue of the fact that they test only a single unit of your code, with no external
 dependencies, should execute extremely fast. Thus, you should be able to run test suites of hundreds
-
-- f unit tests in a few seconds. Run them frequently, ideally before every push to a shared source
+of unit tests in a few seconds. Run them frequently, ideally before every push to a shared source
 control repository, and certainly with every automated build on your build server.
 
 #### **Integration tests**
@@ -4298,9 +4106,7 @@ plumbing, and so on. He ensures (tests) that the parts of the house will work co
 is, meet the building code. Functional tests in this scenario are analogous to the homeowner visiting
 this same construction site. He assumes that the internal systems will behave appropriately, that the
 building inspector is performing his task. The homeowner is focused on what it will be like to live in
-
 this house. He is concerned with how the house looks, are the various rooms a comfortable size, does
-
 the house fit the family’s needs, are the windows in a good spot to catch the morning sun. The
 homeowner is performing functional tests on the house. He has the user’s perspective. The building
 inspector is performing unit tests on the house. He has the builder’s perspective.”
@@ -4351,7 +4157,6 @@ confirm your application behaves as expected in the face of errors. Finally, try
 things that can fail, rather than focusing on metrics like code coverage. More code coverage is better
 than less, generally. However, writing a few more tests of a complex and business-critical method is
 usually a better use of time than writing tests for auto-properties just to improve test code coverage
-
 metrics.
 
 
@@ -4398,7 +4203,6 @@ This approach results in many small test classes, but it makes it extremely clea
 responsible for. With the test class name set up, to identify the class and method to be tested, the test
 method name can be used to specify the behavior being tested. This name should include the
 expected behavior and any inputs or assumptions that should yield this behavior. Some example test
-
 names:
 
 
@@ -4448,9 +4252,8 @@ is no different than how you might organize files into folders elsewhere. If you
 90 CHAPTER 8 | Test ASP.NET Core MVC apps
 
 
-- r four related files in a folder containing many other files, it’s often helpful to move them into their
-
-- wn subfolder.
+or four related files in a folder containing many other files, it’s often helpful to move them into their
+own subfolder.
 
 ### Unit testing ASP.NET Core apps
 
@@ -4461,11 +4264,8 @@ controllers, filters, viewmodels, and views, should require few unit tests. Much
 given action lies outside the action method itself. Testing whether routing or global error handling
 work correctly cannot be done effectively with a unit test. Likewise, any filters, including model
 validation and authentication and authorization filters, cannot be unit tested with a test targeting a
-
 controller’s action method. Without these sources of behavior, most action methods should be
-
 trivially small, delegating the bulk of their work to services that can be tested independent of the
-
 controller that uses them.
 
 
@@ -4527,7 +4327,6 @@ TestServer’s ContentRoot, which is used by ASP.NET Core to locate static resou
 You can create simple functional tests by creating a test class that implements
 IClassFixture<WebApplicationFactory<TEntryPoint>>, where TEntryPoint is your web application’s
 Startup class. With this interface in place, your test fixture can create a client using the factory’s
-
 CreateClient method:
 
 
@@ -4572,14 +4371,11 @@ application, and a suite of functional tests will verify this is the case.
   - **Testing in ASP.NET Core**
 [https://learn.microsoft.com/aspnet/core/testing/](https://docs.microsoft.com/aspnet/core/testing/)
 
-
   - **Unit Test Naming Convention**
 [https://ardalis.com/unit-test-naming-convention](https://ardalis.com/unit-test-naming-convention)
 
-
   - **Testing EF Core**
 [https://learn.microsoft.com/ef/core/miscellaneous/testing/](https://docs.microsoft.com/ef/core/miscellaneous/testing/)
-
 
   - **Integration tests in ASP.NET Core**
 [https://learn.microsoft.com/aspnet/core/test/integration-tests](https://docs.microsoft.com/aspnet/core/test/integration-tests)
@@ -4588,12 +4384,13 @@ application, and a suite of functional tests will verify this is the case.
 95 CHAPTER 8 | Test ASP.NET Core MVC apps
 
 
-# CHAPTER 9
+**CHAPTER**
+# 9
 
 ## Development process for Azure
 
-_“With the cloud, individuals and small businesses can snap their fingers and instantly set up enterprise-_
 
+_“With the cloud, individuals and small businesses can snap their fingers and instantly set up enterprise-_
 _class services.”_
 
 _- Roy Stephan_
@@ -4619,8 +4416,7 @@ develop the application, then analyze its performance and other characteristics.
 debugger lets you pause code execution and step back and forth through code on the fly as it’s
 running. Its support for hot reloads allows you to continue working with your app where you left off,
 even after making code changes, without having to restart the app. The built-in test runner lets you
-
-- rganize your tests and their results and can even perform live unit testing while you’re coding. Using
+organize your tests and their results and can even perform live unit testing while you’re coding. Using
 Live Share, you can collaborate in real-time with other developers, sharing your code session
 seamlessly over the network. And when you’re ready, Visual Studio includes everything you need to
 publish your application to Azure or wherever you might host it.
@@ -4657,15 +4453,13 @@ using a build server or based on built-in Azure features.
 
 To get started with developing an ASP.NET Core application using CI/CD, you can use Azure DevOps
 Services or your organization’s own Team Foundation Server (TFS). GitHub Actions provide another
-
-- ption for easily building and deploying apps to Azure, for apps whose code is hosted on GitHub.
+option for easily building and deploying apps to Azure, for apps whose code is hosted on GitHub.
 
 #### **Initial setup**
 
 
 To create a release pipeline for your app, you need to have your application code in source control.
 Set up a local repository and connect it to a remote repository in a team project. Follow these
-
 instructions:
 
 
@@ -4697,13 +4491,11 @@ web deploy package artifact and publish it for consumption by your CD process.
 
 Be sure to enable continuous integration so the system will queue a build whenever someone on your
 team commits new code. Test the build and verify that it is producing a web deploy package as one of
-
 its artifacts.
 
 
 When a build succeeds, your CD process will deploy the results of your CI build to your Azure web
 app. To configure this step, you create and configure a _Release_, which will deploy to your Azure App
-
 Service.
 
 
@@ -4743,7 +4535,6 @@ control until you’re ready to push your changes to your shared source control 
 Whenever you’re ready to share your code with your team, you should push your changes from your
 local source repository to your team’s shared source repository. If you’ve been working in a custom
 [branch, this step usually involves merging your code into a shared branch (perhaps by means of a pull](https://docs.microsoft.com/azure/devops/git/pull-requests)
-
 [request).](https://docs.microsoft.com/azure/devops/git/pull-requests)
 
 
@@ -4795,14 +4586,15 @@ performance, and logs.
 100 CHAPTER 9 | Development process for Azure
 
 
-# CHAPTER 10
+**CHAPTER**
+# 10
 
 ## Azure hosting recommendations for ASP.NET Core web apps
+
 
 “Line-of-business leaders everywhere are bypassing IT departments to get applications from the cloud
 (also known as SaaS) and paying for them like they would a magazine subscription. And when the
 service is no longer required, they can cancel the subscription with no equipment left unused in the
-
 corner.”
 
 _- Daryl Plummer, Gartner analyst_
@@ -4838,8 +4630,7 @@ need more control over the machines running your application, consider Azure Vir
 
 App Service Web Apps offers a fully managed platform optimized for hosting web applications. It’s a
 platform as a service (PaaS) offering that lets you focus on your business logic, while Azure takes care
-
-- f the infrastructure needed to run and scale the app. Some key features of App Service Web Apps:
+of the infrastructure needed to run and scale the app. Some key features of App Service Web Apps:
 
 
 101 CHAPTER 10 | Azure hosting recommendations for ASP.NET Core web apps
@@ -4852,7 +4643,7 @@ testing, scripting support).
   - Global scale and high availability.
 
 
-  Connections to SaaS platforms and your on-premises data.
+  - Connections to SaaS platforms and your on-premises data.
 
 
   - Security and compliance.
@@ -4891,7 +4682,6 @@ Apps that are typically deployed as a single unit, rather than those apps that a
 simple, this approach still allows the hosted app to scale both up (more resources per node) and out
 (more hosted nodes) to meet any increase in demand. With autoscale, the app can be configured to
 automatically adjust the number of nodes hosting the app based on demand and average load across
-
 nodes.
 
 #### **App Service Web Apps for Containers**
@@ -4933,11 +4723,9 @@ production. The same container configuration is used to host the app in each env
 runs, from the local development machine to build and test systems to production. This approach
 greatly reduces the likelihood of defects resulting from differences in machine configuration or
 software versions. Developers can also use whatever tools they’re most productive with, including the
-
-- perating system, since containers can run on any OS. In some cases, distributed applications
+operating system, since containers can run on any OS. In some cases, distributed applications
 involving many containers may be very resource-intensive to run on a single development machine. In
 this scenario, it may make sense to upgrade to using Kubernetes and Azure Dev Spaces, covered in
-
 the next section.
 
 
@@ -4952,7 +4740,7 @@ include common client connectivity libraries using the _ambassador_ pattern.
 105 CHAPTER 10 | Azure hosting recommendations for ASP.NET Core web apps
 
 
-                                         [Learn more about design patterns to consider when building microservice](https://docs.microsoft.com/azure/architecture/microservices/design/patterns) based systems.
+[Learn more about design patterns to consider when building microservice-based systems.](https://docs.microsoft.com/azure/architecture/microservices/design/patterns)
 
 #### **Azure Kubernetes Service**
 
@@ -4964,23 +4752,18 @@ scaling resources on-demand, without taking your applications offline.
 
 
 AKS reduces the complexity and operational overhead of managing a Kubernetes cluster by
-
-- ffloading much of that responsibility to Azure. As a hosted Kubernetes service, Azure handles critical
+offloading much of that responsibility to Azure. As a hosted Kubernetes service, Azure handles critical
 tasks like health monitoring and maintenance for you. Also, you pay only for the agent nodes within
 your clusters, not for the masters. As a managed Kubernetes service, AKS provides:
 
 
   - Automated Kubernetes version upgrades and patching.
 
-
   - Easy cluster scaling.
 
+  - Self-healing hosted control plane (masters).
 
-  Self-healing hosted control plane (masters).
-
-
-  Cost savings - pay only for running agent pool nodes.
-
+  - Cost savings - pay only for running agent pool nodes.
 
 With Azure handling the management of the nodes in your AKS cluster, you no longer need to
 perform many tasks manually, like cluster upgrades. Because Azure handles these critical maintenance
@@ -5002,12 +4785,9 @@ Azure Dev Spaces:
 
   - Minimize local machine setup time and resource requirements
 
-
   - Allow teams to iterate more rapidly
 
-
-  Reduce the number of integration environments required by a team
-
+  - Reduce the number of integration environments required by a team
 
   - Remove the need to mock certain services in a distributed system when developing/testing
 
@@ -5021,8 +4801,7 @@ If you have an existing application that would require substantial modifications
 you could choose Virtual Machines in order to simplify migrating to the cloud. However, correctly
 configuring, securing, and maintaining VMs requires much more time and IT expertise compared to
 Azure App Service. If you’re considering Azure Virtual Machines, make sure you take into account the
-
-- ngoing maintenance effort required to patch, update, and manage your VM environment. Azure
+ongoing maintenance effort required to patch, update, and manage your VM environment. Azure
 Virtual Machines is infrastructure as a service (IaaS), while App Service is PaaS. You should also
 consider whether deploying your app as a Windows Container to Web App for Containers might be a
 viable option for your scenario.
@@ -5036,7 +4815,6 @@ code you need for a given problem, without worrying about the application or inf
 You can choose from a variety of programming languages, including C#, F#, Node.js, Python, and
 PHP, allowing you to pick the most productive language for the task at hand. Like most cloud-based
 solutions, you pay only for the amount of time your use, and you can trust Azure Functions to scale up
-
 as needed.
 
 ### Data
@@ -5070,8 +4848,7 @@ Your application’s requirements should dictate its architecture. There are man
 services available. Choosing the right one is an important decision. Microsoft offers a gallery of
 reference architectures to help identify typical architectures optimized for common scenarios. You
 may find a reference architecture that maps closely to your application’s requirements, or at least
-
-- ffers a starting point.
+offers a starting point.
 
 
 Figure 11-1 shows an example reference architecture. This diagram describes a recommended
@@ -5085,7 +4862,6 @@ _Figure 11-1. Sitecore marketing website reference architecture._
 
 
   - Azure Solution Architectures
-
 [https://azure.microsoft.com/solutions/architecture/](https://azure.microsoft.com/solutions/architecture/)
 
 
@@ -5097,26 +4873,23 @@ _Figure 11-1. Sitecore marketing website reference architecture._
 [app/basic-web-app](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app)
 
 
-  Design Patterns for Microservices
+  - Design Patterns for Microservices
 [https://learn.microsoft.com/azure/architecture/microservices/design/patterns](https://docs.microsoft.com/azure/architecture/microservices/design/patterns)
 
 
   - Azure Developer Guide
-
-                                [https://azure.microsoft.com/campaigns/developer](https://azure.microsoft.com/campaigns/developer-guide/) guide/
+[https://azure.microsoft.com/campaigns/developer-guide/](https://azure.microsoft.com/campaigns/developer-guide/)
 
 
   - Web Apps overview
 [https://learn.microsoft.com/azure/app-service/app-service-web-overview](https://docs.microsoft.com/azure/app-service/app-service-web-overview)
 
 
-  Web App for Containers
-
-                           [https://azure.microsoft.com/services/app](https://azure.microsoft.com/services/app-service/containers/) service/containers/
+  - Web App for Containers
+[https://azure.microsoft.com/services/app-service/containers/](https://azure.microsoft.com/services/app-service/containers/)
 
 
   - Introduction to Azure Kubernetes Service (AKS)
-
 [https://learn.microsoft.com/azure/aks/intro-kubernetes](https://docs.microsoft.com/azure/aks/intro-kubernetes)
 
 

@@ -18,14 +18,14 @@ This guide is an introduction to developing microservices-based applications and
 
 To make it easier to get started, the guide focuses on a reference containerized and microservicebased application that you can explore. The reference application is available at the [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) GitHub repo.
 
-# Action links
+## Action links
 
 - This e-book is also available in a PDF format (English version only) [Download](https://aka.ms/microservicesebook)
 - Clone/Fork the reference application [eShopOnContainers on GitHub](https://github.com/dotnet-architecture/eShopOnContainers)
 - Watch the [introductory video](https://aka.ms/microservices-video)
 - Get to know the [Microservices Architecture](https://aka.ms/MicroservicesArchitecture) right away
 
-# Introduction
+## Introduction
 
 Enterprises are increasingly realizing cost savings, solving deployment problems, and improving DevOps and production operations by using containers. Microsoft has been releasing container innovations for Windows and Linux by creating products like Azure Kubernetes Service and Azure Service Fabric, and by partnering with industry leaders like Docker, Mesosphere, and Kubernetes. These products deliver container solutions that help companies build and deploy applications at cloud speed and scale, whatever their choice of platform or tools.
 
@@ -33,7 +33,7 @@ Docker is becoming the de facto standard in the container industry, supported by
 
 In addition, the [microservices](https://martinfowler.com/articles/microservices.html) architecture is emerging as an important approach for distributed mission-critical applications. In a microservice-based architecture, the application is built on a collection of services that can be developed, tested, deployed, and versioned independently.
 
-# About this guide
+## About this guide
 
 This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET and Docker containers. To make it easier to get started with containers and microservices, the guide focuses on a reference containerized and microservice-based application that you can explore. The sample application is available at the [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) GitHub repo.
 
@@ -43,25 +43,25 @@ This guide provides foundational development and architectural guidance primaril
 
 After you have studied this guide, your next step would be to learn about production-ready microservices on Microsoft Azure.
 
-# Version
+## Version
 
 This guide has been revised to cover **.NET 7** version along with many additional updates related to the same "wave" of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET 7 release. That's why the book version has also been updated to version **7.0**.
 
-# What this guide does not cover
+## What this guide does not cover
 
 This guide does not focus on the application lifecycle, DevOps, CI/CD pipelines, or team work. The complementary guide [Containerized Docker Application Lifecycle with Microsoft Platform and Tools](https://aka.ms/dockerlifecycleebook) focuses on that subject. The current guide also does not provide implementation details on Azure infrastructure, such as information on specific orchestrators.
 
-# **Additional resources**
+### **Additional resources**
 
 • Containerized Docker Application Lifecycle with Microsoft Platform and Tools (downloadable e-book) <https://aka.ms/dockerlifecycleebook>
 
-# Who should use this guide
+## Who should use this guide
 
 We wrote this guide for developers and solution architects who are new to Docker-based application development and to microservices-based architecture. This guide is for you if you want to learn how to architect, design, and implement proof-of-concept applications with Microsoft development technologies (with special focus on .NET) and with Docker containers.
 
 You will also find this guide useful if you are a technical decision maker, such as an enterprise architect, who wants an architecture and technology overview before you decide on what approach to select for new and modern distributed applications.
 
-# **How to use this guide**
+### **How to use this guide**
 
 The first part of this guide introduces Docker containers, discusses how to choose between .NET 7 and the .NET Framework as a development framework, and provides an overview of microservices. This content is for architects and technical decision makers who want an overview but don't need to focus on code implementation details.
 
@@ -69,13 +69,13 @@ The first part of this guide introduces Docker containers, discusses how to choo
 
 The second part of the guide starts with the Development process for Docker based applications section. It focuses on the development and microservice patterns for implementing applications using .NET and Docker. This section will be of most interest to developers and architects who want to focus on code and on patterns and implementation details.
 
-# Related microservice and container-based reference application: eShopOnContainers
+## Related microservice and container-based reference application: eShopOnContainers
 
 The eShopOnContainers application is an open-source reference app for .NET and microservices that is designed to be deployed using Docker containers. The application consists of multiple subsystems, including several e-store UI front-ends (a Web MVC app, a Web SPA, and a native mobile app). It also includes the back-end microservices and containers for all required server-side operations.
 
 The purpose of the application is to showcase architectural patterns. **IT IS NOT A PRODUCTION-READY TEMPLATE** to start real-world applications. In fact, the application is in a permanent beta state, as it's also used to test new potentially interesting technologies as they show up.
 
-# Credits
+## Credits
 
 Co-Authors:
 
@@ -145,7 +145,7 @@ Participants and reviewers:
 
 **Sumit Ghosh**, Principal Consultant at Neudesic
 
-# Copyright
+## Copyright
 
 PUBLISHED BY
 
@@ -482,7 +482,7 @@ Another benefit of containerization is scalability. You can scale out quickly by
 
 In short, containers offer the benefits of isolation, portability, agility, scalability, and control across the whole application lifecycle workflow. The most important benefit is the environment's isolation provided between Dev and Ops.
 
-# <span id="page-16-0"></span>What is Docker?
+## <span id="page-16-0"></span>What is Docker?
 
 [Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) for automating the deployment of applications as portable, selfsufficient containers that can run on the cloud or on-premises. Docker is also a [company](https://www.docker.com/) that promotes and evolves this technology, working in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
 
@@ -505,7 +505,7 @@ To run [Windows Containers,](https://docs.microsoft.com/virtualization/windowsco
 
 The images for these containers are created the same way and function the same. The difference is in how the container is created from the image running a Hyper-V Container requires an extra parameter. For details, see [Hyper-V Containers.](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container)
 
-# <span id="page-17-0"></span>**Comparing Docker containers with virtual machines**
+### <span id="page-17-0"></span>**Comparing Docker containers with virtual machines**
 
 Figure 2-3 shows a comparison between VMs and Docker containers.
 
@@ -529,7 +529,7 @@ A container image is a way to package an app or service and deploy it in a relia
 
 When using Docker, you won't hear developers say, "It works on my machine, why not in production?" They can simply say, "It runs on Docker", because the packaged Docker application can be executed on any supported Docker environment, and it runs the way it was intended to on all deployment targets (such as Dev, QA, staging, and production).
 
-# <span id="page-18-0"></span>**A simple analogy**
+### <span id="page-18-0"></span>**A simple analogy**
 
 Perhaps a simple analogy can help getting the grasp of the core concept of Docker.
 
@@ -556,7 +556,7 @@ You can think of an image as an auxiliary read-only hard disk ready to be instal
 
 Similarly, you can think of a container as the "computer" with the image hard disk installed. The container, just like a computer, can be powered on or off.
 
-# <span id="page-19-0"></span>Docker terminology
+## <span id="page-19-0"></span>Docker terminology
 
 This section lists terms and definitions you should be familiar with before getting deeper into Docker. For further definitions, see the extensive [glossary](https://docs.docker.com/glossary/) provided by Docker.
 
@@ -598,7 +598,7 @@ layered filesystem, it's just the filesystem as usual. Volumes live in the host 
 
 **Orchestrator**: A tool that simplifies the management of clusters and Docker hosts. Orchestrators enable you to manage their images, containers, and hosts through a command-line interface (CLI) or a graphical UI. You can manage container networking, configurations, load balancing, service discovery, high availability, Docker host configuration, and more. An orchestrator is responsible for running, distributing, scaling, and healing workloads across a collection of nodes. Typically, orchestrator products are the same products that provide cluster infrastructure, like Kubernetes and Azure Service Fabric, among other offerings in the market.
 
-# <span id="page-21-0"></span>Docker containers, images, and registries
+## <span id="page-21-0"></span>Docker containers, images, and registries
 
 When using Docker, a developer creates an app or service and packages it and its dependencies into a container image. An image is a static representation of the app or service and its configuration and dependencies.
 
@@ -625,7 +625,7 @@ Private image registries, either hosted on-premises or in the cloud, are recomme
 
 There are two supported frameworks for building server-side containerized Docker applications with .NET: [.NET Framework and .NET 7.](https://dotnet.microsoft.com/download) They share many .NET platform components, and you can share code across the two. However, there are fundamental differences between them, and which framework you use will depend on what you want to accomplish. This section provides guidance on when to choose each framework.
 
-# <span id="page-23-1"></span>General guidance
+## <span id="page-23-1"></span>General guidance
 
 This section provides a summary of when to choose .NET 7 or .NET Framework. We provide more details about these choices in the sections that follow.
 
@@ -648,12 +648,12 @@ Use .NET Framework for your containerized Docker server application when:
 
 Using .NET Framework on Docker can improve your deployment experiences by minimizing deployment issues. This ["lift and shift" scenario](https://aka.ms/liftandshiftwithcontainersebook) is important for containerizing legacy applications that were originally developed with the traditional .NET Framework, like ASP.NET WebForms, MVC web apps, or WCF (Windows Communication Foundation) services.
 
-# <span id="page-24-2"></span>**Additional resources**
+### <span id="page-24-2"></span>**Additional resources**
 
 - **E-book: Modernize existing .NET Framework applications with Azure and Windows Containers** <https://aka.ms/liftandshiftwithcontainersebook>
 - **Sample apps: Modernization of legacy ASP.NET web apps by using Windows Containers** <https://aka.ms/eshopmodernizing>
 
-# <span id="page-24-0"></span>When to choose .NET for Docker containers
+## <span id="page-24-0"></span>When to choose .NET for Docker containers
 
 The modularity and lightweight nature of .NET 7 makes it perfect for containers. When you deploy and start a container, its image is far smaller with .NET 7 than with .NET Framework. In contrast, to use .NET Framework for a container, you must base your image on the Windows Server Core image, which is a lot heavier than the Windows Nano Server or Linux images that you use for .NET 7.
 
@@ -661,7 +661,7 @@ Additionally, .NET 7 is cross-platform, so you can deploy server apps with Linux
 
 The following is a more detailed explanation of why to choose .NET 7.
 
-# <span id="page-24-1"></span>**Developing and deploying cross platform**
+### <span id="page-24-1"></span>**Developing and deploying cross platform**
 
 Clearly, if your goal is to have an application (web app or service) that can run on multiple platforms supported by Docker (Linux and Windows), the right choice is .NET 7, because .NET Framework only supports Windows.
 
@@ -675,11 +675,11 @@ You can also use [Visual Studio Code](https://code.visualstudio.com/) on macOS, 
 
 In addition to the IDEs and editors, you can use the [.NET CLI](https://docs.microsoft.com/dotnet/core/tools/) for all supported platforms.
 
-# <span id="page-25-0"></span>**Using containers for new ("green-field") projects**
+### <span id="page-25-0"></span>**Using containers for new ("green-field") projects**
 
 Containers are commonly used in conjunction with a microservices architecture, although they can also be used to containerize web apps or services that follow any architectural pattern. You can use .NET Framework on Windows Containers, but the modularity and lightweight nature of .NET 7 makes it perfect for containers and microservices architectures. When you create and deploy a container, its image is far smaller with .NET 7 than with .NET Framework.
 
-# <span id="page-25-1"></span>**Create and deploy microservices on containers**
+### <span id="page-25-1"></span>**Create and deploy microservices on containers**
 
 You could use the traditional .NET Framework for building microservices-based applications (without containers) by using plain processes. That way, because the .NET Framework is already installed and shared across processes, processes are light and fast to start. However, if you are using containers, the image for the traditional .NET Framework is also based on Windows Server Core and that makes it too heavy for a microservices-on-containers approach. However, teams have been looking for opportunities to improve the experience for .NET Framework users as well. Recently, size of the [Windows Server Core container images have been reduced to >40% smaller.](https://devblogs.microsoft.com/dotnet/we-made-windows-server-core-container-images-40-smaller)
 
@@ -689,23 +689,23 @@ A microservice is meant to be as small as possible: to be light when spinning up
 
 A microservices architecture also allows you to mix technologies across a service boundary. This approach enables a gradual migration to .NET 7 for new microservices that work in conjunction with other microservices or with services developed with Node.js, Python, Java, GoLang, or other technologies.
 
-# <span id="page-25-2"></span>**Deploying high density in scalable systems**
+### <span id="page-25-2"></span>**Deploying high density in scalable systems**
 
 When your container-based system needs the best possible density, granularity, and performance, .NET and ASP.NET Core are your best options. ASP.NET Core is up to 10 times faster than ASP.NET in the traditional .NET Framework, and it leads to other popular industry technologies for microservices, such as Java servlets, Go, and Node.js.
 
 This approach is especially relevant for microservices architectures, where you could have hundreds of microservices (containers) running. With ASP.NET Core images (based on the .NET runtime) on Linux or Windows Nano, you can run your system with a much lower number of servers or VMs, ultimately saving costs in infrastructure and hosting.
 
-# <span id="page-26-0"></span>When to choose .NET Framework for Docker containers
+## <span id="page-26-0"></span>When to choose .NET Framework for Docker containers
 
 While .NET 7 offers significant benefits for new applications and application patterns, .NET Framework will continue to be a good choice for many existing scenarios.
 
-# <span id="page-26-1"></span>**Migrating existing applications directly to a Windows Server container**
+### <span id="page-26-1"></span>**Migrating existing applications directly to a Windows Server container**
 
 You might want to use Docker containers just to simplify deployment, even if you are not creating microservices. For example, perhaps you want to improve your DevOps workflow with Docker containers can give you better isolated test environments and can also eliminate deployment issues caused by missing dependencies when you move to a production environment. In cases like these, even if you are deploying a monolithic application, it makes sense to use Docker and Windows Containers for your current .NET Framework applications.
 
 In most cases for this scenario, you will not need to migrate your existing applications to .NET 7; you can use Docker containers that include the traditional .NET Framework. However, a recommended approach is to use .NET 7 as you extend an existing application, such as writing a new service in ASP.NET Core.
 
-# <span id="page-26-2"></span>**Using third-party .NET libraries or NuGet packages not available for .NET 7**
+## <span id="page-26-2"></span>**Using third-party .NET libraries or NuGet packages not available for .NET 7**
 
 Third-party libraries are quickly embracing [.NET Standard,](https://docs.microsoft.com/dotnet/standard/net-standard) which enables code sharing across all .NET flavors, including .NET 7. With .NET Standard 2.0 and later, the API surface compatibility across different frameworks has become significantly larger. Even more, .NET Core 2.x and newer applications can also directly reference existing .NET Framework libraries (see [.NET Framework 4.6.1 supporting](https://github.com/dotnet/standard/blob/v2.1.0/docs/planning/netstandard-2.0/README.md#net-framework-461-supporting-net-standard-20)  [.NET Standard 2.0\)](https://github.com/dotnet/standard/blob/v2.1.0/docs/planning/netstandard-2.0/README.md#net-framework-461-supporting-net-standard-20).
 
@@ -713,7 +713,7 @@ In addition, the [Windows Compatibility Pack](https://docs.microsoft.com/dotnet/
 
 However, even with that exceptional progression since .NET Standard 2.0 and .NET Core 2.1 or later, there might be cases where certain NuGet packages need Windows to run and might not support .NET Core or later. If those packages are critical for your application, then you will need to use .NET Framework on Windows Containers.
 
-# <span id="page-26-3"></span>**Using .NET technologies not available for .NET 7**
+### <span id="page-26-3"></span>**Using .NET technologies not available for .NET 7**
 
 Some .NET Framework technologies aren't available in .NET 7. Some of them might become available in later releases, but others don't fit the new application patterns targeted by .NET Core and might never be available.
 
@@ -724,23 +724,23 @@ The following list shows most of the technologies that aren't available in .NET 
 
 In addition to the technologies listed in the official [.NET roadmap,](https://github.com/dotnet/core/blob/main/roadmap.md) other features might be ported to the new [unified .NET platform.](https://devblogs.microsoft.com/dotnet/introducing-net-5/) You might consider participating in the discussions on GitHub so that your voice can be heard. And if you think something is missing, file a new issue in the [dotnet/runtime](https://github.com/dotnet/runtime/issues/new) GitHub repository.
 
-# <span id="page-27-0"></span>**Using a platform or API that doesn't support .NET 7**
+### <span id="page-27-0"></span>**Using a platform or API that doesn't support .NET 7**
 
 Some Microsoft and third-party platforms don't support .NET 7. For example, some Azure services provide an SDK that isn't yet available for consumption on .NET 7 yet. Most Azure SDK should eventually be ported to .NET 7/.NET Standard, but some might not for several reasons. You can see the available Azure SDKs in the [Azure SDK Latest Releases](https://azure.github.io/azure-sdk/releases/latest/index.html) page.
 
 In the meantime, if any platform or service in Azure still doesn't support .NET 7 with its client API, you can use the equivalent REST API from the Azure service or the client SDK on .NET Framework.
 
-# <span id="page-27-1"></span>**Porting existing ASP.NET application to .NET 7**
+### <span id="page-27-1"></span>**Porting existing ASP.NET application to .NET 7**
 
 .NET Core is a revolutionary step forward from .NET Framework. It offers a host of advantages over .NET Framework across the board from productivity to performance, and from cross-platform support to developer satisfaction. If you are using .NET Framework and planning to migrate your application to .NET Core or .NET 5+, see [Porting Existing ASP.NET Apps to .NET Core.](https://docs.microsoft.com/dotnet/architecture/porting-existing-aspnet-apps/)
 
-# **Additional resources**
+### **Additional resources**
 
 - **.NET fundamentals** [https://learn.microsoft.com/dotnet/fundamentals](https://docs.microsoft.com/dotnet/fundamentals/index.yml)
 - **Porting Projects to .NET 5** [https://learn.microsoft.com/events/dotnetconf-2020/porting-projects-to-net-5](https://docs.microsoft.com/Events/dotnetConf/2020/Porting-Projects-to-NET-5)
 - **.NET on Docker Guide** [https://learn.microsoft.com/dotnet/core/docker/introduction](https://docs.microsoft.com/dotnet/core/docker/introduction)
 
-# <span id="page-27-2"></span>Decision table: .NET implementations to use for Docker
+## <span id="page-27-2"></span>Decision table: .NET implementations to use for Docker
 
 The following decision table summarizes whether to use .NET Framework or .NET 7. Remember that for Linux containers, you need Linux-based Docker hosts (VMs or servers), and that for Windows Containers, you need Windows Server-based Docker hosts (VMs or servers).
 
@@ -761,7 +761,7 @@ Your development machines will run one Docker host, either Linux or Windows. Rel
 | WCF, WF, and other legacy<br>frameworks                              | WCF in .NET Core (client<br>library only) or CoreWCF                                 | .NET Framework<br>WCF in .NET 7 (client library<br>only) or CoreWCF                                    |
 | Consumption of Azure services                                        | .NET 7<br>(eventually most Azure<br>services will provide client<br>SDKs for .NET 7) | .NET Framework<br>.NET 7<br>(eventually most Azure<br>services will provide client<br>SDKs for .NET 7) |
 
-# <span id="page-28-0"></span>What OS to target with .NET containers
+## <span id="page-28-0"></span>What OS to target with .NET containers
 
 Given the diversity of operating systems supported by Docker and the differences between .NET Framework and .NET 7, you should target a specific OS and specific versions depending on the framework you are using.
 
@@ -786,13 +786,13 @@ When you add the image name to your Dockerfile file, you can select the operatin
 | mcr.microsoft.com/dotnet/aspnet:7.0-<br>bullseye-slim   | .NET 7 runtime-only on Linux Debian distro                                                                                                                                        |
 | mcr.microsoft.com/dotnet/aspnet:7.0-<br>nanoserver-1809 | .NET 7 runtime-only on Windows Nano Server (Windows<br>Server version 1809)                                                                                                       |
 
-# <span id="page-30-0"></span>Official .NET Docker images
+## <span id="page-30-0"></span>Official .NET Docker images
 
 The Official .NET Docker images are Docker images created and optimized by Microsoft. They're publicly available on [Microsoft Artifact Registry.](https://mcr.microsoft.com/) You can search over the catalog to find all .NET image repositories, for example [.NET SDK](https://mcr.microsoft.com/product/dotnet/sdk/about) repository.
 
 Each repository can contain multiple images, depending on .NET versions, and depending on the OS and versions (Linux Debian, Linux Alpine, Windows Nano Server, Windows Server Core, and so on). Image repositories provide extensive tagging to help you select not just a specific framework version, but also to choose an OS (Linux distribution or Windows version).
 
-# <span id="page-30-1"></span>**.NET and Docker image optimizations for development versus production**
+## <span id="page-30-1"></span>**.NET and Docker image optimizations for development versus production**
 
 When building Docker images for developers, Microsoft focused on the following main scenarios:
 
@@ -801,13 +801,13 @@ When building Docker images for developers, Microsoft focused on the following m
 
 Why multiple images? When developing, building, and running containerized applications, you usually have different priorities. By providing different images for these separate tasks, Microsoft helps optimize the separate processes of developing, building, and deploying apps.
 
-# **During development and build**
+### **During development and build**
 
 During development, what is important is how fast you can iterate changes, and the ability to debug the changes. The size of the image isn't as important as the ability to make changes to your code and see the changes quickly. Some tools and "build-agent containers", use the development .NET image (*mcr.microsoft.com/dotnet/sdk:7.0*) during development and build process. When building inside a Docker container, the important aspects are the elements that are needed to compile your app. This includes the compiler and any other .NET dependencies.
 
 Why is this type of build image important? You don't deploy this image to production. Instead, it's an image that you use to build the content you place into a production image. This image would be used in your continuous integration (CI) environment or build environment when using Docker multi-stage builds.
 
-# **In production**
+### **In production**
 
 What is important in production is how fast you can deploy and start your containers based on a production .NET image. Therefore, the runtime-only image based on *mcr.microsoft.com/dotnet/aspnet:7.0* is small so that it can travel quickly across the network from your Docker registry to your Docker hosts. The contents are ready to run, enabling the fastest time from starting the container to processing results. In the Docker model, there is no need for compilation from C# code, as there's when you run dotnet build or dotnet publish when using the build container.
 
@@ -834,7 +834,7 @@ Earlier in this guide, you learned basic concepts about containers and Docker. T
 
 Enterprise applications can be complex and are often composed of multiple services instead of a single service-based application. For those cases, you need to understand other architectural approaches, such as the microservices and certain Domain-Driven Design (DDD) patterns plus container orchestration concepts. Note that this chapter describes not just microservices on containers, but any containerized application, as well.
 
-# <span id="page-32-1"></span>Container design principles
+## <span id="page-32-1"></span>Container design principles
 
 In the container model, a container image instance represents a single process. By defining a container image as a process boundary, you can create primitives that can be used to scale or batch the process.
 
@@ -844,7 +844,7 @@ If the process fails, the container ends, and the orchestrator takes over. If th
 
 You might find a scenario where you want multiple processes running in a single container. For that scenario, since there can be only one entry point per container, you could run a script within the container that launches as many programs as needed. For example, you can use [Supervisor](http://supervisord.org/) or a similar tool to take care of launching multiple processes inside a single container. However, even though you can find architectures that hold multiple processes per container, that approach isn't very common.
 
-# <span id="page-33-0"></span>Containerizing monolithic applications
+## <span id="page-33-0"></span>Containerizing monolithic applications
 
 You might want to build a single, monolithically deployed web application or service and deploy it as a container. The application itself might not be internally monolithic, but structured as several libraries, components, or even layers (application layer, domain layer, data-access layer, etc.). Externally, however, it's a single container—a single process, a single web application, or a single service.
 
@@ -874,13 +874,13 @@ Monolithic applications in Microsoft Azure can be deployed using dedicated VMs f
 
 As a QA environment or a limited production environment, you can deploy multiple Docker host VMs and balance them using the Azure balancer, as shown in Figure 4-3. This lets you manage scaling with a coarse-grain approach, because the whole application lives within a single container.
 
-![](_page_35_Picture_1.jpeg)
+![](_page_35_Figure_1.jpeg)
 
 *Figure 4-3. Example of multiple hosts scaling up a single container application*
 
 Deployment to the various hosts can be managed with traditional deployment techniques. Docker hosts can be managed with commands like docker run or docker-compose performed manually, or through automation such as continuous delivery (CD) pipelines.
 
-# <span id="page-35-0"></span>**Deploying a monolithic application as a container**
+### <span id="page-35-0"></span>**Deploying a monolithic application as a container**
 
 There are benefits to using containers to manage monolithic application deployments. Scaling container instances is far faster and easier than deploying additional VMs. Even if you use virtual machine scale sets, VMs take time to start. When deployed as traditional application instances instead of containers, the configuration of the application is managed as part of the VM, which isn't ideal.
 
@@ -890,7 +890,7 @@ Because containers are immutable by design, you never need to worry about corrup
 
 While monolithic applications can benefit from Docker, we're touching only on the benefits. Additional benefits of managing containers come from deploying with container orchestrators, which manage the various instances and lifecycle of each container instance. Breaking up the monolithic application into subsystems that can be scaled, developed, and deployed individually is your entry point into the realm of microservices.
 
-# <span id="page-35-1"></span>**Publishing a single-container-based application to Azure App Service**
+### <span id="page-35-1"></span>**Publishing a single-container-based application to Azure App Service**
 
 Whether you want to get validation of a container deployed to Azure or when an application is simply a single-container application, Azure App Service provides a great way to provide scalable singlecontainer-based services. Using Azure App Service is simple. It provides great integration with Git to make it easy to take your code, build it in Visual Studio, and deploy it directly to Azure.
 
@@ -904,7 +904,7 @@ Container support in Visual Studio 2017 and later gives you the ability to inclu
 
 As also shown in Figure 4-4, the publish flow pushes an image through a container registry. This can be the Azure Container Registry (a registry close to your deployments in Azure and secured by Azure Active Directory groups and accounts), or any other Docker registry, like Docker Hub or an onpremises registry.
 
-# <span id="page-36-0"></span>Manage state and data in Docker applications
+## <span id="page-36-0"></span>Manage state and data in Docker applications
 
 In most cases, you can think of a container as an instance of a process. A process doesn't maintain persistent state. While a container can write to its local storage, assuming that an instance will be around indefinitely would be like assuming that a single location in memory will be durable. You
 
@@ -956,7 +956,7 @@ Volumes can be shared between containers, but only in the same host, unless you 
 
 **Relational databases and NoSQL databases.** There are many choices for external databases, from relational databases like SQL Server, PostgreSQL, Oracle, or NoSQL databases like Azure Cosmos DB, MongoDB, etc. These databases are not going to be explained as part of this guide since they are in a completely different subject.
 
-# <span id="page-39-0"></span>Service-oriented architecture
+## <span id="page-39-0"></span>Service-oriented architecture
 
 Service-oriented architecture (SOA) was an overused term and has meant different things to different people. But as a common denominator, SOA means that you structure your application by decomposing it into multiple services (most commonly as HTTP services) that can be classified as different types like subsystems or tiers.
 
@@ -968,7 +968,7 @@ Microservices derive from SOA, but SOA is different from microservices architect
 
 This guide focuses on microservices, because a SOA approach is less prescriptive than the requirements and techniques used in a microservice architecture. If you know how to build a microservice-based application, you also know how to build a simpler service-oriented application.
 
-# <span id="page-39-1"></span>Microservices architecture
+## <span id="page-39-1"></span>Microservices architecture
 
 As the name implies, a microservices architecture is an approach to building a server application as a set of small services. That means a microservices architecture is mainly oriented to the back-end, although the approach is also being used for the front end. Each service runs in its own process and communicates with other processes using protocols such as HTTP/HTTPS, WebSockets, or [AMQP.](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol) Each microservice implements a specific end-to-end domain or business capability within a certain context boundary, and each must be developed autonomously and be deployable independently. Finally, each microservice should own its related domain data model and domain logic (sovereignty
 
@@ -979,8 +979,6 @@ What size should a microservice be? When developing a microservice, size shouldn
 Why a microservices architecture? In short, it provides long-term agility. Microservices enable better maintainability in complex, large, and highly-scalable systems by letting you create applications based on many independently deployable services that each have granular and autonomous lifecycles.
 
 As an additional benefit, microservices can scale out independently. Instead of having a single monolithic application that you must scale out as a unit, you can instead scale out specific microservices. That way, you can scale just the functional area that needs more processing power or network bandwidth to support demand, rather than scaling out other areas of the application that don't need to be scaled. That means cost savings because you need less hardware.
-
-![](_page_40_Figure_4.jpeg)
 
 *Figure 4-6. Monolithic deployment versus the microservices approach*
 
@@ -998,7 +996,7 @@ The following are important aspects to enable success in going into production w
 
 Of these, only the first three are covered or introduced in this guide. The last two points, which are related to application lifecycle, are covered in the additional [Containerized Docker Application](https://aka.ms/dockerlifecycleebook)  [Lifecycle with Microsoft Platform and Tools](https://aka.ms/dockerlifecycleebook) e-book.
 
-# <span id="page-41-0"></span>**Additional resources**
+### <span id="page-41-0"></span>**Additional resources**
 
 - **Mark Russinovich. Microservices: An application revolution powered by the cloud** [https://azure.microsoft.com/blog/microservices-an-application-revolution-powered-by-the](https://azure.microsoft.com/blog/microservices-an-application-revolution-powered-by-the-cloud/)[cloud/](https://azure.microsoft.com/blog/microservices-an-application-revolution-powered-by-the-cloud/)
 - **Martin Fowler. Microservices** <https://www.martinfowler.com/articles/microservices.html>
@@ -1006,7 +1004,7 @@ Of these, only the first three are covered or introduced in this guide. The last
 - **Jimmy Nilsson. Chunk Cloud Computing** <https://www.infoq.com/articles/CCC-Jimmy-Nilsson>
 - **Cesar de la Torre. Containerized Docker Application Lifecycle with Microsoft Platform and Tools** (downloadable e-book) <https://aka.ms/dockerlifecycleebook>
 
-# <span id="page-41-1"></span>Data sovereignty per microservice
+## <span id="page-41-1"></span>Data sovereignty per microservice
 
 An important rule for microservices architecture is that each microservice must own its domain data and logic. Just as a full application owns its logic and data, so must each microservice own its logic and data under an autonomous lifecycle, with independent deployment per microservice.
 
@@ -1017,6 +1015,8 @@ transactional purchase subsystems, and customer support subsystems each call on 
 This principle is similar in [Domain-driven design \(DDD\),](https://en.wikipedia.org/wiki/Domain-driven_design) where each [Bounded Context](https://martinfowler.com/bliki/BoundedContext.html) or autonomous subsystem or service must own its domain model (data plus logic and behavior). Each DDD Bounded Context correlates to one business microservice (one or several services). This point about the Bounded Context pattern is expanded in the next section.
 
 On the other hand, the traditional (monolithic data) approach used in many applications is to have a single centralized database or just a few databases. This is often a normalized SQL database that's used for the whole application and all its internal subsystems, as shown in Figure 4-7.
+
+![](_page_42_Figure_4.jpeg)
 
 ![](_page_42_Figure_9.jpeg)
 
@@ -1036,7 +1036,7 @@ Going even further, different microservices often use different *kinds* of datab
 
 A partitioned, polyglot-persistent architecture for data storage has many benefits. These include loosely coupled services and better performance, scalability, costs, and manageability. However, it can introduce some distributed data management challenges, as explained in "Identifying domain-model boundaries" later in this chapter.
 
-# <span id="page-43-0"></span>**The relationship between microservices and the Bounded Context pattern**
+## <span id="page-43-0"></span>**The relationship between microservices and the Bounded Context pattern**
 
 The concept of microservice derives from the [Bounded Context \(BC\) pattern](https://martinfowler.com/bliki/BoundedContext.html) in [domain-driven design](https://en.wikipedia.org/wiki/Domain-driven_design)  [\(DDD\).](https://en.wikipedia.org/wiki/Domain-driven_design) DDD deals with large models by dividing them into multiple BCs and being explicit about their boundaries. Each BC must have its own model and database; likewise, each microservice owns its related data. In addition, each BC usually has its own [ubiquitous language](https://martinfowler.com/bliki/UbiquitousLanguage.html) to help communication between software developers and domain experts.
 
@@ -1048,14 +1048,14 @@ It's important to highlight that defining a service for each Bounded Context is 
 
 DDD benefits from microservices by getting real boundaries in the form of distributed microservices. But ideas like not sharing the model between microservices are what you also want in a Bounded Context.
 
-# **Additional resources**
+## **Additional resources**
 
 - **Chris Richardson. Pattern: Database per service** <https://microservices.io/patterns/data/database-per-service.html>
 - **Martin Fowler. BoundedContext** <https://martinfowler.com/bliki/BoundedContext.html>
 - **Martin Fowler. PolyglotPersistence** <https://martinfowler.com/bliki/PolyglotPersistence.html>
 - **Alberto Brandolini. Strategic Domain Driven Design with Context Mapping** <https://www.infoq.com/articles/ddd-contextmapping>
 
-# <span id="page-44-0"></span>Logical architecture versus physical architecture
+## <span id="page-44-0"></span>Logical architecture versus physical architecture
 
 It's useful at this point to stop and discuss the distinction between logical architecture and physical architecture, and how this applies to the design of microservice-based applications.
 
@@ -1079,9 +1079,9 @@ The services in the example share the same data model because the Web API servic
 
 In short, the logical architecture of microservices doesn't always have to coincide with the physical deployment architecture. In this guide, whenever we mention a microservice, we mean a business or logical microservice that could map to one or more (physical) services. In most cases, this will be a single service, but it might be more.
 
-# <span id="page-45-0"></span>Challenges and solutions for distributed data management
+## <span id="page-45-0"></span>Challenges and solutions for distributed data management
 
-# <span id="page-45-1"></span>**Challenge #1: How to define the boundaries of each microservice**
+## <span id="page-45-1"></span>**Challenge #1: How to define the boundaries of each microservice**
 
 Defining microservice boundaries is probably the first challenge anyone encounters. Each microservice has to be a piece of your application and each microservice should be autonomous with all the benefits and challenges that it conveys. But how do you identify those boundaries?
 
@@ -1091,7 +1091,7 @@ purpose in another context, and might even have a different name. For instance, 
 
 The way you identify boundaries between multiple application contexts with a different domain for each context is exactly how you can identify the boundaries for each business microservice and its related domain model and data. You always attempt to minimize the coupling between those microservices. This guide goes into more detail about this identification and domain model design in the section Identifying domain-model boundaries for each microservice later.
 
-# <span id="page-46-0"></span>**Challenge #2: How to create queries that retrieve data from several microservices**
+## <span id="page-46-0"></span>**Challenge #2: How to create queries that retrieve data from several microservices**
 
 A second challenge is how to implement queries that retrieve data from several microservices, while avoiding chatty communication to the microservices from remote client apps. An example could be a single screen from a mobile app that needs to show user information that's owned by the basket, catalog, and user identity microservices. Another example would be a complex report involving many tables located in multiple microservices. The right solution depends on the complexity of the queries. But in any case, you'll need a way to aggregate information if you want to improve the efficiency in the communications of your system. The most popular solutions are the following.
 
@@ -1113,7 +1113,7 @@ Keep in mind that this centralized database would be used only for queries and r
 
 However, if your application design involves constantly aggregating information from multiple microservices for complex queries, it might be a symptom of a bad design -a microservice should be as isolated as possible from other microservices. (This excludes reports/analytics that always should use cold-data central databases.) Having this problem often might be a reason to merge microservices. You need to balance the autonomy of evolution and deployment of each microservice with strong dependencies, cohesion, and data aggregation.
 
-# <span id="page-47-0"></span>**Challenge #3: How to achieve consistency across multiple microservices**
+## <span id="page-47-0"></span>**Challenge #3: How to achieve consistency across multiple microservices**
 
 As stated previously, the data owned by each microservice is private to that microservice and can only be accessed using its microservice API. Therefore, a challenge presented is how to implement end-toend business processes while keeping consistency across multiple microservices.
 
@@ -1135,7 +1135,7 @@ Moreover, ACID-style or two-phase commit transactions are not just against micro
 
 A good solution for this problem is to use eventual consistency between microservices articulated through event-driven communication and a publish-and-subscribe system. These topics are covered in the section [Asynchronous event-driven communication](#page-70-1) later in this guide.
 
-# <span id="page-49-0"></span>**Challenge #4: How to design communication across microservice boundaries**
+## <span id="page-49-0"></span>**Challenge #4: How to design communication across microservice boundaries**
 
 Communicating across microservice boundaries is a real challenge. In this context, communication doesn't refer to what protocol you should use (HTTP and REST, AMQP, messaging, and so on). Instead, it addresses what communication style you should use, and especially how coupled your microservices should be. Depending on the level of coupling, when failure occurs, the impact of that failure on your system will vary significantly.
 
@@ -1155,7 +1155,7 @@ Therefore, in order to enforce microservice autonomy and have better resiliency,
 
 The use of asynchronous communication is explained with additional details later in this guide in the sections Asynchronous microservice integration enforces microservice's autonomy and [Asynchronous](#page-68-0)  [message-based communication.](#page-68-0)
 
-# <span id="page-50-0"></span>**Additional resources**
+## <span id="page-50-0"></span>**Additional resources**
 
 - **CAP theorem** [https://en.wikipedia.org/wiki/CAP\\_theorem](https://en.wikipedia.org/wiki/CAP_theorem)
 - **Eventual consistency** [https://en.wikipedia.org/wiki/Eventual\\_consistency](https://en.wikipedia.org/wiki/Eventual_consistency)
@@ -1166,7 +1166,7 @@ The use of asynchronous communication is explained with additional details later
 - **Compensating Transaction** [https://learn.microsoft.com/azure/architecture/patterns/compensating-transaction](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction)
 - **Udi Dahan. Service Oriented Composition** <https://udidahan.com/2014/07/30/service-oriented-composition-with-video/>
 
-# <span id="page-50-1"></span>Identify domain-model boundaries for each microservice
+## <span id="page-50-1"></span>Identify domain-model boundaries for each microservice
 
 The goal when identifying model boundaries and size for each microservice isn't to get to the most granular separation possible, although you should tend toward small microservices if possible. Instead, your goal should be to get to the most meaningful separation guided by your domain knowledge. The emphasis isn't on the size, but instead on business capabilities. In addition, if there's clear cohesion needed for a certain area of the application based on a high number of dependencies, that indicates the need for a single microservice, too. Cohesion is a way to identify how to break apart or group together microservices. Ultimately, while you gain more knowledge about the domain, you should adapt the size of your microservice, iteratively. Finding the right size isn't a one-shot process.
 
@@ -1206,11 +1206,11 @@ Basically, there's a shared concept of a user that exists in multiple services (
 
 There are several benefits to not sharing the same user entity with the same number of attributes across domains. One benefit is to reduce duplication, so that microservice models do not have any data that they do not need. Another benefit is having a primary microservice that owns a certain type of data per entity so that updates and queries for that type of data are driven only by that microservice.
 
-# <span id="page-54-0"></span>The API gateway pattern versus the Direct client-tomicroservice communication
+## <span id="page-54-0"></span>The API gateway pattern versus the Direct client-tomicroservice communication
 
 In a microservices architecture, each microservice exposes a set of (typically) fine-grained endpoints. This fact can impact the client-to-microservice communication, as explained in this section.
 
-# <span id="page-54-1"></span>**Direct client-to-microservice communication**
+## <span id="page-54-1"></span>**Direct client-to-microservice communication**
 
 A possible approach is to use a direct client-to-microservice communication architecture. In this approach, a client app can make requests directly to some of the microservices, as shown in Figure 4- 12.
 
@@ -1244,7 +1244,7 @@ Protocols used on the server side (like AMQP or binary protocols) are not suppor
 
 The API of multiple microservices might not be well designed for the needs of different client applications. For instance, the needs of a mobile app might be different than the needs of a web app. For mobile apps, you might need to optimize even further so that data responses can be more efficient. You might do this functionality by aggregating data from multiple microservices and returning a single set of data, and sometimes eliminating any data in the response that isn't needed by the mobile app. And, of course, you might compress that data. Again, a facade or API in between the mobile app and the microservices can be convenient for this scenario.
 
-# <span id="page-55-0"></span>**Why consider API Gateways instead of direct client-to-microservice communication**
+## <span id="page-55-0"></span>**Why consider API Gateways instead of direct client-to-microservice communication**
 
 In a microservices architecture, the client apps usually need to consume functionality from more than one microservice. If that consumption is performed directly, the client needs to handle multiple calls to microservice endpoints. What happens when the application evolves and new microservices are introduced or existing microservices are updated? If your application has many microservices, handling so many endpoints from the client apps can be a nightmare. Since the client app would be coupled to those internal endpoints, evolving the microservices in the future can cause high impact for the client apps.
 
@@ -1255,7 +1255,7 @@ Therefore, having an intermediate level or tier of indirection (Gateway) can be 
 - **Security issues**: Without a gateway, all the microservices must be exposed to the "external world", making the attack surface larger than if you hide internal microservices that aren't directly used by the client apps. The smaller the attack surface is, the more secure your application can be.
 - **Cross-cutting concerns**: Each publicly published microservice must handle concerns such as authorization and SSL. In many situations, those concerns could be handled in a single tier so the internal microservices are simplified.
 
-# <span id="page-56-0"></span>**What is the API Gateway pattern?**
+## <span id="page-56-0"></span>**What is the API Gateway pattern?**
 
 When you design and build large or complex microservice-based applications with multiple client apps, a good approach to consider can be an [API Gateway.](https://microservices.io/patterns/apigateway.html) This pattern is a service that provides a single-entry point for certain groups of microservices. It's similar to the [Facade pattern](https://en.wikipedia.org/wiki/Facade_pattern) from objectoriented design, but in this case, it's part of a distributed system. The API Gateway pattern is also sometimes known as the "backend for frontend" ([BFF\)](https://samnewman.io/patterns/architectural/bff/) because you build it while thinking about the needs of the client app.
 
@@ -1283,7 +1283,7 @@ When splitting the API Gateway tier into multiple API Gateways, if your applicat
 
 Figure 4-13.1 shows API Gateways that are segregated by client type; one for mobile clients and one for web clients. A traditional web app connects to an MVC microservice that uses the web API Gateway. The example depicts a simplified architecture with multiple fine-grained API Gateways. In this case, the boundaries identified for each API Gateway are based purely on the "Backend for Frontend" ([BFF\)](https://samnewman.io/patterns/architectural/bff/) pattern, hence based just on the API needed per client app. But in larger applications you should also go further and create other API Gateways based on business boundaries as a second design pivot.
 
-# <span id="page-58-0"></span>**Main features in the API Gateway pattern**
+## <span id="page-58-0"></span>**Main features in the API Gateway pattern**
 
 An API Gateway can offer multiple features. Depending on the product it might offer richer or simpler features, however, the most important and foundational features for any API Gateway are the following design patterns:
 
@@ -1311,18 +1311,18 @@ For more information, see [Gateway aggregation pattern.](https://docs.microsoft.
 
 For more information, see [Gateway offloading pattern.](https://docs.microsoft.com/azure/architecture/patterns/gateway-offloading)
 
-# <span id="page-59-0"></span>**Using products with API Gateway features**
+### <span id="page-59-0"></span>**Using products with API Gateway features**
 
 There can be many more cross-cutting concerns offered by the API Gateways products depending on each implementation. We'll explore here:
 
 - [Azure API Management](https://azure.microsoft.com/services/api-management/)
 - [Ocelot](https://github.com/ThreeMammals/Ocelot)
 
-# **Azure API Management**
+## **Azure API Management**
 
 [Azure API Management](https://azure.microsoft.com/services/api-management/) (as shown in Figure 4-14) not only solves your API Gateway needs but provides features like gathering insights from your APIs. If you're using an API management solution, an API Gateway is only a component within that full API management solution.
 
-![](_page_60_Figure_4.jpeg)
+![](_page_60_Figure_3.jpeg)
 
 *Figure 4-14. Using Azure API Management for your API Gateway*
 
@@ -1338,7 +1338,7 @@ In this guide and the reference sample application (eShopOnContainers), the arch
 
 using PaaS products like Azure API Management. But for large microservice-based applications that are deployed into Microsoft Azure, we encourage you to evaluate Azure API Management as the base for your API Gateways in production.
 
-# **Ocelot**
+## **Ocelot**
 
 [Ocelot](https://github.com/ThreeMammals/Ocelot) is a lightweight API Gateway, recommended for simpler approaches. Ocelot is an Open Source .NET Core-based API Gateway especially made for microservices architectures that need unified points of entry into their systems. It's lightweight, fast, and scalable and provides routing and authentication among many other features.
 
@@ -1350,7 +1350,7 @@ In addition, there are many other products in the market offering API Gateways f
 
 After the initial architecture and patterns explanation sections, the next sections explain how to implement API Gateways with [Ocelot.](https://github.com/ThreeMammals/Ocelot)
 
-# <span id="page-61-0"></span>**Drawbacks of the API Gateway pattern**
+### <span id="page-61-0"></span>**Drawbacks of the API Gateway pattern**
 
 - The most important drawback is that when you implement an API Gateway, you're coupling that tier with the internal microservices. Coupling like this might introduce serious difficulties for your application. Clemens Vaster, architect at the Azure Service Bus team, refers to this potential difficulty as "the new ESB" in the "[Messaging and Microservices](https://www.youtube.com/watch?v=rXi5CLjIQ9k)" session at GOTO 2016.
 - Using a microservices API Gateway creates an additional possible single point of failure.
@@ -1360,7 +1360,7 @@ After the initial architecture and patterns explanation sections, the next secti
 
 • If the API Gateway is developed by a single team, there can be a development bottleneck. This aspect is another reason why a better approach is to have several fined-grained API Gateways that respond to different client needs. You could also segregate the API Gateway internally into multiple areas or layers that are owned by the different teams working on the internal microservices.
 
-# <span id="page-62-0"></span>**Additional resources**
+## <span id="page-62-0"></span>**Additional resources**
 
 - **Chris Richardson. Pattern: API Gateway / Backend for Front-End** <https://microservices.io/patterns/apigateway.html>
 - **API Gateway pattern** [https://learn.microsoft.com/azure/architecture/microservices/gateway](https://docs.microsoft.com/azure/architecture/microservices/gateway)
@@ -1370,7 +1370,7 @@ After the initial architecture and patterns explanation sections, the next secti
 - **Clemens Vasters. Messaging and Microservices at GOTO 2016 (video)** <https://www.youtube.com/watch?v=rXi5CLjIQ9k>
 - **API Gateway in a Nutshell** (ASP.NET Core API Gateway Tutorial Series) <https://www.pogsdotnet.com/2018/08/api-gateway-in-nutshell.html>
 
-# <span id="page-62-1"></span>Communication in a microservice architecture
+## <span id="page-62-1"></span>Communication in a microservice architecture
 
 In a monolithic application running on a single process, components invoke one another using language-level method or function calls. These can be strongly coupled if you're creating objects with code (for example, new ClassName()), or can be invoked in a decoupled way if you're using Dependency Injection by referencing abstractions rather than concrete object instances. Either way, the objects are running within the same process. The biggest challenge when changing from a monolithic application to a microservices-based application lies in changing the communication mechanism. A direct conversion from in-process method calls into RPC calls to services will cause a chatty and not efficient communication that won't perform well in distributed environments. The challenges of designing distributed system properly are well enough known that there's even a canon known as the [Fallacies of distributed computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing) that lists assumptions that developers often make when moving from monolithic to distributed designs.
 
@@ -1382,7 +1382,7 @@ The microservice community promotes the philosophy of "[smart endpoints and dumb
 
 The two commonly used protocols are HTTP request/response with resource APIs (when querying most of all), and lightweight asynchronous messaging when communicating updates across multiple microservices. These are explained in more detail in the following sections.
 
-# <span id="page-63-0"></span>**Communication types**
+## <span id="page-63-0"></span>**Communication types**
 
 Client and services can communicate through many different types of communication, each one targeting a different scenario and goals. Initially, those types of communications can be classified in two axes.
 
@@ -1400,7 +1400,7 @@ A microservice-based application will often use a combination of these communica
 
 These axes are good to know so you have clarity on the possible communication mechanisms, but they're not the important concerns when building microservices. Neither the asynchronous nature of client thread execution nor the asynchronous nature of the selected protocol are the important points when integrating microservices. What *is* important is being able to integrate your microservices asynchronously while maintaining the independence of microservices, as explained in the following section.
 
-# <span id="page-64-0"></span>**Asynchronous microservice integration enforces microservice's autonomy**
+## <span id="page-64-0"></span>**Asynchronous microservice integration enforces microservice's autonomy**
 
 As mentioned, the important point when building a microservices-based application is the way you integrate your microservices. Ideally, you should try to minimize the communication between the internal microservices. The fewer communications between microservices, the better. But in many cases, you'll have to somehow integrate the microservices. When you need to do that, the critical rule here is that the communication between the microservices should be asynchronous. That doesn't mean that you have to use a specific protocol (for example, asynchronous messaging versus synchronous HTTP). It just means that the communication between microservices should be done only by propagating data asynchronously, but try not to depend on other internal microservices as part of the initial service's HTTP request/response operation.
 
@@ -1426,13 +1426,13 @@ You might use any protocol to communicate and propagate data asynchronously acro
 
 The following sections explain the multiple communication styles you can consider using in a microservice-based application.
 
-# <span id="page-66-0"></span>**Communication styles**
+## <span id="page-66-0"></span>**Communication styles**
 
 There are many protocols and choices you can use for communication, depending on the communication type you want to use. If you're using a synchronous request/response-based communication mechanism, protocols such as HTTP and REST approaches are the most common, especially if you're publishing your services outside the Docker host or microservice cluster. If you're communicating between services internally (within your Docker host or microservices cluster), you might also want to use binary format communication mechanisms (like WCF using TCP and binary format). Alternatively, you can use asynchronous, message-based communication mechanisms such as AMQP.
 
 There are also multiple message formats like JSON or XML, or even binary formats, which can be more efficient. If your chosen binary format isn't a standard, it's probably not a good idea to publicly publish your services using that format. You could use a non-standard format for internal communication between your microservices. You might do this when communicating between microservices within your Docker host or microservice cluster (for example, Docker orchestrators), or for proprietary client applications that talk to the microservices.
 
-# **Request/response communication with HTTP and REST**
+### **Request/response communication with HTTP and REST**
 
 When a client uses request/response communication, it sends a request to a service, then the service processes the request and sends back a response. Request/response communication is especially well suited for querying data for a real-time UI (a live user interface) from client apps. Therefore, in a microservice architecture you'll probably use this communication mechanism for most queries, as shown in Figure 4-16.
 
@@ -1446,12 +1446,12 @@ A popular architectural style for request/response communication is [REST.](http
 
 There's additional value when using HTTP REST services as your interface definition language. For instance, if you use [Swagger metadata](https://swagger.io/) to describe your service API, you can use tools that generate client stubs that can directly discover and consume your services.
 
-# **Additional resources**
+### **Additional resources**
 
 - **Martin Fowler. Richardson Maturity Model** A description of the REST model. <https://martinfowler.com/articles/richardsonMaturityModel.html>
 - **Swagger** The official site. <https://swagger.io/>
 
-# **Push and real-time communication based on HTTP**
+### **Push and real-time communication based on HTTP**
 
 Another possibility (usually for different purposes than REST) is a real-time and one-to-many communication with higher-level frameworks such as [ASP.NET SignalR](https://www.asp.net/signalr) and protocols such as [WebSockets.](https://en.wikipedia.org/wiki/WebSocket)
 
@@ -1463,7 +1463,7 @@ As Figure 4-17 shows, real-time HTTP communication means that you can have serve
 
 SignalR is a good way to achieve real-time communication for pushing content to the clients from a back-end server. Since communication is in real time, client apps show the changes almost instantly. This is usually handled by a protocol such as WebSockets, using many WebSockets connections (one per client). A typical example is when a service communicates a change in the score of a sports game to many client web apps simultaneously.
 
-# <span id="page-68-0"></span>Asynchronous message-based communication
+## <span id="page-68-0"></span>Asynchronous message-based communication
 
 Asynchronous messaging and event-driven communication are critical when propagating changes across multiple microservices and their related domain models. As mentioned earlier in the discussion microservices and Bounded Contexts (BCs), models (User, Customer, Product, Account, etc.) can mean different things to different microservices or BCs. That means that when changes occur, you need some way to reconcile changes across the different models. A solution is eventual consistency and event-driven communication based on asynchronous messaging.
 
@@ -1479,7 +1479,7 @@ Another rule you should try to follow, as much as possible, is to use only async
 
 There are two kinds of asynchronous messaging communication: single receiver message-based communication, and multiple receivers message-based communication. The following sections provide details about them.
 
-# <span id="page-69-0"></span>**Single-receiver message-based communication**
+## <span id="page-69-0"></span>**Single-receiver message-based communication**
 
 Message-based asynchronous communication with a single receiver means there's point-to-point communication that delivers a message to exactly one of the consumers that's reading from the channel, and that the message is processed just once. However, there are special situations. For instance, in a cloud system that tries to automatically recover from failures, the same message could be sent multiple times. Due to network or other failures, the client has to be able to retry sending messages, and the server has to implement an operation to be idempotent in order to process a particular message just once.
 
@@ -1493,13 +1493,13 @@ Once you start sending message-based communication (either with commands or even
 
 When the commands come from client applications, they can be implemented as HTTP synchronous commands. Use message-based commands when you need higher scalability or when you're already in a message-based business process.
 
-# <span id="page-70-0"></span>**Multiple-receivers message-based communication**
+## <span id="page-70-0"></span>**Multiple-receivers message-based communication**
 
 As a more flexible approach, you might also want to use a publish/subscribe mechanism so that your communication from the sender will be available to additional subscriber microservices or to external applications. Thus, it helps you to follow the [open/closed principle](https://en.wikipedia.org/wiki/Open/closed_principle) in the sending service. That way, additional subscribers can be added in the future without the need to modify the sender service.
 
 When you use a publish/subscribe communication, you might be using an event bus interface to publish events to any subscriber.
 
-# <span id="page-70-1"></span>**Asynchronous event-driven communication**
+## <span id="page-70-1"></span>**Asynchronous event-driven communication**
 
 When using asynchronous event-driven communication, a microservice publishes an integration event when something happens within its domain and another microservice needs to be aware of it, like a price change in a product catalog microservice. Additional microservices subscribe to the events so they can receive them asynchronously. When that happens, the receivers might update their own domain entities, which can cause more integration events to be published. This publish/subscribe system is performed by using an implementation of an event bus. The event bus can be designed as an abstraction or interface, with the API that's needed to subscribe or unsubscribe to events and to publish events. The event bus can also have one or more implementations based on any inter-process and messaging broker, like a messaging queue or service bus that supports asynchronous communication and a publish/subscribe model.
 
@@ -1517,7 +1517,7 @@ In asynchronous event-driven communication, one microservice publishes events to
 
 When you use an event bus, you might want to use an abstraction level (like an event bus interface) based on a related implementation in classes with code using the API from a message broker like [RabbitMQ](https://www.rabbitmq.com/) or a service bus like [Azure Service Bus with Topics.](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions) Alternatively, you might want to use a higher-level service bus like [NServiceBus,](https://particular.net/nservicebus) [MassTransit,](https://masstransit.io/) or [Brighter](https://www.goparamore.io/) to articulate your event bus and publish/subscribe system.
 
-# <span id="page-71-0"></span>**A note about messaging technologies for production systems**
+## <span id="page-71-0"></span>**A note about messaging technologies for production systems**
 
 The messaging technologies available for implementing your abstract event bus are at different levels. For instance, products like RabbitMQ (a messaging broker transport) and Azure Service Bus sit at a lower level than other products like [NServiceBus,](https://particular.net/nservicebus) [MassTransit,](https://masstransit.io/) or [Brighter,](https://www.goparamore.io/) which can work on top of RabbitMQ and Azure Service Bus. Your choice depends on how many rich features at the application level and out-of-the-box scalability you need for your application. For implementing just a proof-ofconcept event bus for your development environment, as it was done in the eShopOnContainers sample, a simple implementation on top of RabbitMQ running on a Docker container might be enough.
 
@@ -1525,7 +1525,7 @@ However, for mission-critical and production systems that need hyper-scalability
 
 service-bus features on top of lower-level technologies like RabbitMQ and Docker. But that plumbing work might cost too much for a custom enterprise application.
 
-# <span id="page-72-0"></span>**Resiliently publishing to the event bus**
+## <span id="page-72-0"></span>**Resiliently publishing to the event bus**
 
 A challenge when implementing an event-driven architecture across multiple microservices is how to atomically update state in the original microservice while resiliently publishing its related integration event into the event bus, somehow based on transactions. The following are a few ways to accomplish this functionality, although there could be additional approaches as well.
 
@@ -1538,7 +1538,7 @@ For a more complete description of the challenges in this space, including how m
 
 Additional topics to consider when using asynchronous communication are message idempotence and message deduplication. These topics are covered in the section Implementing event-based communication between microservices (integration events) later in this guide.
 
-# <span id="page-72-1"></span>**Additional resources**
+### <span id="page-72-1"></span>**Additional resources**
 
 - **Event Driven Messaging** [https://patterns.arcitura.com/soa-patterns/design\\_patterns/event\\_driven\\_messaging](https://patterns.arcitura.com/soa-patterns/design_patterns/event_driven_messaging)
 - **Publish/Subscribe Channel** [https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.](https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html) [html](https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html)
@@ -1548,7 +1548,7 @@ Additional topics to consider when using asynchronous communication are message 
 - **Eventual consistency** [https://en.wikipedia.org/wiki/Eventual\\_consistency](https://en.wikipedia.org/wiki/Eventual_consistency)
 - **Jimmy Bogard. Refactoring Towards Resilience: Evaluating Coupling** <https://jimmybogard.com/refactoring-towards-resilience-evaluating-coupling/>
 
-# <span id="page-73-0"></span>Creating, evolving, and versioning microservice APIs and contracts
+## <span id="page-73-0"></span>Creating, evolving, and versioning microservice APIs and contracts
 
 A microservice API is a contract between the service and its clients. You'll be able to evolve a microservice independently only if you do not break its API contract, which is why the contract is so important. If you change the contract, it will impact your client applications or your API Gateway.
 
@@ -1562,13 +1562,13 @@ However, sometimes you need to make major and incompatible changes to a service 
 
 Finally, if you're using a REST architecture, [Hypermedia](https://www.infoq.com/articles/mark-baker-hypermedia) is the best solution for versioning your services and allowing evolvable APIs.
 
-# <span id="page-73-1"></span>**Additional resources**
+### <span id="page-73-1"></span>**Additional resources**
 
 - **Scott Hanselman. ASP.NET Core RESTful Web API versioning made easy** <https://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx>
 - **Versioning a RESTful web API** [https://learn.microsoft.com/azure/architecture/best-practices/api-design#versioning-a](https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)[restful-web-api](https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)
 - **Roy Fielding. Versioning, Hypermedia, and REST** <https://www.infoq.com/articles/roy-fielding-on-versioning>
 
-# <span id="page-74-0"></span>Microservices addressability and the service registry
+## <span id="page-74-0"></span>Microservices addressability and the service registry
 
 Each microservice has a unique name (URL) that's used to resolve its location. Your microservice needs to be addressable wherever it's running. If you have to think about which computer is running a particular microservice, things can go bad quickly. In the same way that DNS resolves a URL to a particular computer, your microservice needs to have a unique name so that its current location is discoverable. Microservices need addressable names that make them independent from the infrastructure that they're running on. This approach implies that there's an interaction between how your service is deployed and how it's discovered, because there needs to be a [service registry.](https://microservices.io/patterns/service-registry.html) In the same vein, when a computer fails, the registry service must be able to indicate where the service is now running.
 
@@ -1576,13 +1576,13 @@ The [service registry pattern](https://microservices.io/patterns/service-registr
 
 In some microservice deployment environments (called clusters, to be covered in a later section), service discovery is built in. For example, an Azure Kubernetes Service (AKS) environment can handle service instance registration and deregistration. It also runs a proxy on each cluster host that plays the role of server-side discovery router.
 
-# <span id="page-74-1"></span>**Additional resources**
+### <span id="page-74-1"></span>**Additional resources**
 
 - **Chris Richardson. Pattern: Service registry** <https://microservices.io/patterns/service-registry.html>
 - **Auth0. The Service Registry** <https://auth0.com/blog/an-introduction-to-microservices-part-3-the-service-registry/>
 - **Gabriel Schenker. Service discovery** <https://lostechies.com/gabrielschenker/2016/01/27/service-discovery/>
 
-# <span id="page-74-2"></span>Creating composite UI based on microservices
+## <span id="page-74-2"></span>Creating composite UI based on microservices
 
 Microservices architecture often starts with the server-side handling data and logic, but, in many cases, the UI is still handled as a monolith. However, a more advanced approach, called [micro](https://martinfowler.com/articles/micro-frontends.html)  [frontends,](https://martinfowler.com/articles/micro-frontends.html) is to design your application UI based on microservices as well. That means having a composite UI produced by the microservices, instead of having microservices on the server and just a monolithic client app consuming the microservices. With this approach, the microservices you build can be complete with both logic and visual representation.
 
@@ -1602,8 +1602,6 @@ Figure 4-21 shows a version of this composite UI approach. This approach is simp
 
 ![](_page_76_Figure_1.jpeg)
 
-*Figure 4-21. Example of a composite UI application shaped by back-end microservices*
-
 Each of those UI composition microservices would be similar to a small API Gateway. But in this case, each one is responsible for a small UI area.
 
 A composite UI approach that's driven by microservices can be more challenging or less so, depending on what UI technologies you're using. For instance, you won't use the same techniques for building a traditional web application that you use for building an SPA or for native mobile app (as when developing Xamarin apps, which can be more challenging for this approach).
@@ -1612,7 +1610,7 @@ The [eShopOnContainers](https://aka.ms/MicroservicesArchitecture) sample applica
 
 However, we encourage you to use the following references to learn more about composite UI based on microservices.
 
-# <span id="page-76-0"></span>**Additional resources**
+### <span id="page-76-0"></span>**Additional resources**
 
 - **Micro Frontends (Martin Fowler's blog)** <https://martinfowler.com/articles/micro-frontends.html>
 - **Micro Frontends (Michael Geers site)** <https://micro-frontends.org/>
@@ -1623,7 +1621,7 @@ However, we encourage you to use the following references to learn more about co
 - **Viktor Farcic. Including Front-End Web Components Into Microservices** [https://technologyconversations.com/2015/08/09/including-front-end-web-components](https://technologyconversations.com/2015/08/09/including-front-end-web-components-into-microservices/)[into-microservices/](https://technologyconversations.com/2015/08/09/including-front-end-web-components-into-microservices/)
 - **Managing Frontend in the Microservices Architecture** <https://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html>
 
-# <span id="page-77-0"></span>Resiliency and high availability in microservices
+## <span id="page-77-0"></span>Resiliency and high availability in microservices
 
 Dealing with unexpected failures is one of the hardest problems to solve, especially in a distributed system. Much of the code that developers write involves handling exceptions, and this is also where the most time is spent in testing. The problem is more involved than writing code to handle failures. What happens when the machine where the microservice is running fails? Not only do you need to detect this microservice failure (a hard problem on its own), but you also need something to restart your microservice.
 
@@ -1633,11 +1631,11 @@ The problems of resiliency are compounded during other scenarios, such as when f
 
 In addition, resiliency is related to how cloud-based systems must behave. As mentioned, a cloudbased system must embrace failures and must try to automatically recover from them. For instance, in case of network or container failures, client apps or client services must have a strategy to retry sending messages or to retry requests, since in many cases failures in the cloud are partial. The [Implementing Resilient Applications](#page-305-0) section in this guide addresses how to handle partial failure. It describes techniques like retries with exponential backoff or the Circuit Breaker pattern in .NET by using libraries like [Polly,](https://github.com/App-vNext/Polly) which offers a large variety of policies to handle this subject.
 
-# <span id="page-77-1"></span>**Health management and diagnostics in microservices**
+## <span id="page-77-1"></span>**Health management and diagnostics in microservices**
 
 It may seem obvious, and it's often overlooked, but a microservice must report its health and diagnostics. Otherwise, there's little insight from an operations perspective. Correlating diagnostic events across a set of independent services and dealing with machine clock skews to make sense of the event order is challenging. In the same way that you interact with a microservice over agreedupon protocols and data formats, there's a need for standardization in how to log health and diagnostic events that ultimately end up in an event store for querying and viewing. In a microservices approach, it's key that different teams agree on a single logging format. There needs to be a consistent approach to viewing diagnostic events in the application.
 
-# **Health checks**
+## **Health checks**
 
 Health is different from diagnostics. Health is about the microservice reporting its current state to take appropriate actions. A good example is working with upgrade and deployment mechanisms to maintain availability. Although a service might currently be unhealthy due to a process crash or machine reboot, the service might still be operational. The last thing you need is to make this worse by performing an upgrade. The best approach is to do an investigation first or allow time for the microservice to recover. Health events from a microservice help us make informed decisions and, in effect, help create self-healing services.
 
@@ -1648,7 +1646,7 @@ You also have the option of using an excellent open-source library called AspNet
 - **Liveness**: Checks if the microservice is alive, that is, if it's able to accept requests and respond.
 - **Readiness**: Checks if the microservice's dependencies (Database, queue services, etc.) are themselves ready, so the microservice can do what it's supposed to do.
 
-# **Using diagnostics and logs event streams**
+### **Using diagnostics and logs event streams**
 
 Logs provide information about how an application or service is running, including exceptions, warnings, and simple informational messages. Usually, each log is in a text format with one line per event, although exceptions also often show the stack trace across multiple lines.
 
@@ -1656,7 +1654,7 @@ In monolithic server-based applications, you can write logs to a file on disk (a
 
 A microservice-based application should not try to store the output stream of events or logfiles by itself, and not even try to manage the routing of the events to a central place. It should be transparent, meaning that each process should just write its event stream to a standard output that underneath will be collected by the execution environment infrastructure where it's running. An example of these event stream routers is [Microsoft.Diagnostic.EventFlow,](https://github.com/Azure/diagnostics-eventflow) which collects event streams from multiple sources and publishes it to output systems. These can include simple standard output for a development environment or cloud systems like [Azure Monitor](https://azure.microsoft.com/services/monitor/) and [Azure Diagnostics.](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostics-extension-overview) There are also good third-party log analysis platforms and tools that can search, alert, report, and monitor logs, even in real time, like [Splunk.](https://www.splunk.com/goto/Splunk_Log_Management?ac=ga_usa_log_analysis_phrase_Mar17&_kk=logs%20analysis&gclid=CNzkzIrex9MCFYGHfgodW5YOtA)
 
-# **Orchestrators managing health and diagnostics information**
+## **Orchestrators managing health and diagnostics information**
 
 When you create a microservice-based application, you need to deal with complexity. Of course, a single microservice is simple to deal with, but dozens or hundreds of types and thousands of instances of microservices is a complex problem. It isn't just about building your microservice architecture—you also need high availability, addressability, resiliency, health, and diagnostics if you intend to have a stable and cohesive system.
 
@@ -1668,7 +1666,7 @@ The complex problems shown in Figure 4-22 are hard to solve by yourself. Develop
 
 Different orchestrators might sound similar, but the diagnostics and health checks offered by each of them differ in features and state of maturity, sometimes depending on the OS platform, as explained in the next section.
 
-# <span id="page-79-0"></span>**Additional resources**
+### <span id="page-79-0"></span>**Additional resources**
 
 - **The Twelve-Factor App. XI. Logs: Treat logs as event streams** <https://12factor.net/logs>
 - **Microsoft Diagnostic EventFlow Library** GitHub repo. <https://github.com/Azure/diagnostics-eventflow>
@@ -1679,7 +1677,7 @@ Different orchestrators might sound similar, but the diagnostics and health chec
 - **Splunk** Official site. <https://www.splunk.com/>
 - **EventSource Class** API for events tracing for Windows (ETW) [https://learn.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource](https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource)
 
-# <span id="page-80-0"></span>Orchestrate microservices and multi-container applications for high scalability and availability
+## <span id="page-80-0"></span>Orchestrate microservices and multi-container applications for high scalability and availability
 
 Using orchestrators for production-ready applications is essential if your application is based on microservices or simply split across multiple containers. As introduced previously, in a microservicebased approach, each microservice owns its model and data so that it will be autonomous from a development and deployment point of view. But even if you have a more traditional application that's composed of multiple services (like SOA), you'll also have multiple containers or services comprising a single business application that need to be deployed as a distributed system. These kinds of systems are complex to scale out and manage; therefore, you absolutely need an orchestrator if you want to have a production-ready and scalable multi-container application.
 
@@ -1703,19 +1701,20 @@ From an architecture and development point of view, if you're building large ent
 
 The concepts of a cluster and a scheduler are closely related, so the products provided by different vendors often provide both sets of capabilities. The following list shows the most important platform and software choices you have for clusters and schedulers. These orchestrators are generally offered in public clouds like Azure.
 
-# <span id="page-82-0"></span>**Software platforms for container clustering, orchestration, and scheduling**
+## <span id="page-82-0"></span>**Software platforms for container clustering, orchestration, and scheduling**
 
-| Platform                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Kubernetes                     | Kubernetes<br>is an open-source<br>product that provides functionality<br>that ranges from cluster<br>infrastructure and container<br>scheduling to orchestrating<br>capabilities. It lets you automate<br>deployment, scaling, and<br>operations of application<br>containers across clusters of hosts.<br>Kubernetes<br>provides a container<br>centric infrastructure that groups<br>application containers into logical<br>units for easy management and<br>discovery.<br>Kubernetes<br>is mature in Linux, less |
-| Azure Kubernetes Service (AKS) | mature in Windows.<br>AKS<br>is a managed Kubernetes<br>container orchestration service in<br>Azure that simplifies Kubernetes<br>cluster's management, deployment,<br>and operations.                                                                                                                                                                                                                                                                                                                               |
-| Azure Container Apps           | Azure Container Apps<br>is a managed<br>serverless container service for<br>building and deploying modern<br>apps at scale.                                                                                                                                                                                                                                                                                                                                                                                          |
+| Platform                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Kubernetes                     | Kubernetes<br>is an open-source<br>product that provides functionality<br>that ranges from cluster<br>infrastructure and container<br>scheduling to orchestrating<br>capabilities. It lets you automate<br>deployment, scaling, and<br>operations of application<br>containers across clusters of hosts.<br>Kubernetes<br>provides a container<br>centric infrastructure that groups<br>application containers into logical<br>units for easy management and<br>discovery. |
+|                                | Kubernetes<br>is mature in Linux, less<br>mature in Windows.                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Azure Kubernetes Service (AKS) | AKS<br>is a managed Kubernetes<br>container orchestration service in<br>Azure that simplifies Kubernetes<br>cluster's management, deployment,<br>and operations.                                                                                                                                                                                                                                                                                                           |
+| Azure Container Apps           | Azure Container Apps<br>is a managed<br>serverless container service for<br>building and deploying modern<br>apps at scale.                                                                                                                                                                                                                                                                                                                                                |
 
-# <span id="page-82-1"></span>**Using container-based orchestrators in Microsoft Azure**
+## <span id="page-82-1"></span>**Using container-based orchestrators in Microsoft Azure**
 
 Several cloud vendors offer Docker containers support plus Docker clusters and orchestration support, including Microsoft Azure, Amazon EC2 Container Service, and Google Container Engine. Microsoft Azure provides Docker cluster and orchestrator support through Azure Kubernetes Service (AKS).
 
-# <span id="page-83-0"></span>**Using Azure Kubernetes Service**
+## <span id="page-83-0"></span>**Using Azure Kubernetes Service**
 
 A Kubernetes cluster pools multiple Docker hosts and exposes them as a single virtual Docker host, so you can deploy multiple containers into the cluster and scale-out with any number of container instances. The cluster will handle all the complex management plumbing, like scalability, health, and so forth.
 
@@ -1729,7 +1728,7 @@ Azure Kubernetes Service optimizes the configuration of popular Docker clusterin
 
 In figure 4-24, you can see the structure of a Kubernetes cluster where a master node (VM) controls most of the coordination of the cluster and you can deploy containers to the rest of the nodes, which are managed as a single pool from an application point of view and allows you to scale to thousands or even tens of thousands of containers.
 
-# <span id="page-84-0"></span>**Development environment for Kubernetes**
+## <span id="page-84-0"></span>**Development environment for Kubernetes**
 
 In the development environment, Docker announced in July 2018 that Kubernetes can also run in a single development machine (Windows 10 or macOS) by installing [Docker Desktop.](https://docs.docker.com/install/) You can later deploy to the cloud (AKS) for further integration tests, as shown in figure 4-25.
 
@@ -1737,7 +1736,7 @@ In the development environment, Docker announced in July 2018 that Kubernetes ca
 
 *Figure 4-25. Running Kubernetes in dev machine and the cloud*
 
-# <span id="page-84-1"></span>**Getting started with Azure Kubernetes Service (AKS)**
+### <span id="page-84-1"></span>**Getting started with Azure Kubernetes Service (AKS)**
 
 To begin using AKS, you deploy an AKS cluster from the Azure portal or by using the CLI. For more information on deploying a Kubernetes cluster in Azure, see [Deploy an Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal)  [\(AKS\) cluster.](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal)
 
@@ -1745,7 +1744,7 @@ There are no fees for any of the software installed by default as part of AKS. A
 
 The default production deployment option for Kubernetes is to use Helm charts, which are introduced in the next section.
 
-# <span id="page-85-0"></span>**Deploy with Helm charts into Kubernetes clusters**
+## <span id="page-85-0"></span>**Deploy with Helm charts into Kubernetes clusters**
 
 When deploying an application to a Kubernetes cluster, you can use the original kubectl.exe CLI tool using deployment files based on the native format (.yaml files), as already mentioned in the previous section. However, for more complex Kubernetes applications such as when deploying complex microservice-based applications, it's recommended to use [Helm.](https://helm.sh/)
 
@@ -1757,7 +1756,7 @@ Helm is maintained by the [Cloud Native Computing Foundation \(CNCF\)](https://w
 
 For more implementation information on Helm charts and Kubernetes, see the [Using Helm Charts to](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deploy-to-Azure-Kubernetes-Service-(AKS))  [deploy eShopOnContainers to AKS](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deploy-to-Azure-Kubernetes-Service-(AKS)) post.
 
-# <span id="page-85-1"></span>**Additional resources**
+### <span id="page-85-1"></span>**Additional resources**
 
 - **Getting started with Azure Kubernetes Service (AKS)** [https://learn.microsoft.com/azure/aks/kubernetes-walkthrough-portal](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal)
 - **Azure Dev Spaces** [https://learn.microsoft.com/azure/dev-spaces/azure-dev-spaces](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces)
@@ -1769,9 +1768,9 @@ For more implementation information on Helm charts and Kubernetes, see the [Usin
 
 *Develop containerized .NET applications the way you like, either Integrated Development Environment (IDE) focused with Visual Studio and Visual Studio tools for Docker or CLI/Editor focused with Docker CLI and Visual Studio Code.*
 
-# <span id="page-86-1"></span>Development environment for Docker apps
+## <span id="page-86-1"></span>Development environment for Docker apps
 
-# <span id="page-86-2"></span>**Development tool choices: IDE or editor**
+## <span id="page-86-2"></span>**Development tool choices: IDE or editor**
 
 Whether you prefer a full and powerful IDE or a lightweight and agile editor, Microsoft has tools that you can use for developing Docker applications.
 
@@ -1783,18 +1782,18 @@ Whether you prefer a full and powerful IDE or a lightweight and agile editor, Mi
 
 By installing [Docker Desktop,](https://hub.docker.com/search/?type=edition&offering=community) you can use a single Docker CLI to build apps for both Windows and Linux.
 
-# <span id="page-87-0"></span>**Additional resources**
+## <span id="page-87-0"></span>**Additional resources**
 
 - **Visual Studio**. Official site. [https://visualstudio.microsoft.com/vs/](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link)
 - **Visual Studio Code**. Official site. <https://code.visualstudio.com/download>
 - **Docker Desktop for Windows** <https://hub.docker.com/editions/community/docker-ce-desktop-windows>
 - **Docker Desktop for Mac** <https://hub.docker.com/editions/community/docker-ce-desktop-mac>
 
-# <span id="page-87-1"></span>.NET languages and frameworks for Docker containers
+## <span id="page-87-1"></span>.NET languages and frameworks for Docker containers
 
 As mentioned in earlier sections of this guide, you can use .NET Framework, .NET 7, or the opensource Mono project when developing Docker containerized .NET applications. You can develop in C#, F#, or Visual Basic when targeting Linux or Windows Containers, depending on which .NET framework is in use. For more details about.NET languages, see the blog post [The .NET Language](https://devblogs.microsoft.com/dotnet/the-net-language-strategy/)  [Strategy.](https://devblogs.microsoft.com/dotnet/the-net-language-strategy/)
 
-# <span id="page-87-2"></span>Development workflow for Docker apps
+## <span id="page-87-2"></span>Development workflow for Docker apps
 
 The application development life cycle starts at your computer, as a developer, where you code the application using your preferred language and test it locally. With this workflow, no matter which language, framework, and platform you choose, you're always developing and testing Docker containers, but doing so locally.
 
@@ -1804,7 +1803,7 @@ Each container (an instance of a Docker image) includes the following components
 - Files added during development, for example, source code and application binaries.
 - Configuration information, such as environment settings and dependencies.
 
-# <span id="page-87-3"></span>**Workflow for developing Docker container-based applications**
+## <span id="page-87-3"></span>**Workflow for developing Docker container-based applications**
 
 This section describes the *inner-loop* development workflow for Docker container-based applications. The inner-loop workflow means it's not considering the broader DevOps workflow, which can include up to production deployment, and just focuses on the development work done on the developer's computer. The initial steps to set up the environment aren't included, since those steps are done only once.
 
@@ -1824,11 +1823,11 @@ However, just because Visual Studio makes those steps automatic doesn't mean tha
 
 ![](_page_89_Picture_0.jpeg)
 
-# <span id="page-89-0"></span>**Step 1. Start coding and create your initial application or service baseline**
+## <span id="page-89-0"></span>**Step 1. Start coding and create your initial application or service baseline**
 
 Developing a Docker application is similar to the way you develop an application without Docker. The difference is that while developing for Docker, you're deploying and testing your application or services running within Docker containers in your local environment (either a Linux VM setup by Docker or directly Windows if using Windows Containers).
 
-# **Set up your local environment with Visual Studio**
+## **Set up your local environment with Visual Studio**
 
 To begin, make sure you have [Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/) for Windows installed, as explained in the following instructions:
 
@@ -1844,14 +1843,14 @@ You can start coding your application in plain .NET (usually in .NET Core or lat
 
 because Visual Studio makes it so easy to work with Docker that it almost feels transparent—the best example when debugging multi-container applications from Visual Studio.
 
-# **Additional resources**
+## **Additional resources**
 
 - **Get started with Docker Desktop for Windows** <https://docs.docker.com/docker-for-windows/>
 - **Visual Studio 2022** <https://visualstudio.microsoft.com/downloads/>
 
 ![](_page_90_Picture_4.jpeg)
 
-# <span id="page-90-0"></span>**Step 2. Create a Dockerfile related to an existing .NET base image**
+## <span id="page-90-0"></span>**Step 2. Create a Dockerfile related to an existing .NET base image**
 
 You need a Dockerfile for each custom image you want to build; you also need a Dockerfile for each container to be deployed, whether you deploy automatically from Visual Studio or manually using the Docker CLI (docker run and docker-compose commands). If your application contains a single custom service, you need a single Dockerfile. If your application contains multiple services (as in a microservices architecture), you need one Dockerfile for each service.
 
@@ -1873,7 +1872,7 @@ This action adds a *Dockerfile* to the project with the required configuration, 
 
 In a similar fashion, Visual Studio can also add a docker-compose.yml file for the whole solution with the option **Add > Container Orchestrator Support…**. In step 4, we'll explore this option in greater detail.
 
-# **Using an existing official .NET Docker image**
+## **Using an existing official .NET Docker image**
 
 You usually build a custom image for your container on top of a base image you get from an official repository like the [Docker Hub](https://hub.docker.com/) registry. That is precisely what happens under the covers when you enable Docker support in Visual Studio. Your Dockerfile will use an existing dotnet/core/aspnet image.
 
@@ -1898,7 +1897,7 @@ You can specify additional configuration settings in the Dockerfile, depending o
 
 "MySingleContainerWebApp.dll"] tells Docker to run a .NET application. If you're using the SDK and the .NET CLI (dotnet CLI) to build and run the .NET application, this setting would be different. The bottom line is that the ENTRYPOINT line and other settings will be different depending on the language and platform you choose for your application.
 
-# **Additional resources**
+### **Additional resources**
 
 • **Building Docker Images for ASP.NET Core Applications** [https://learn.microsoft.com/dotnet/core/docker/building-net-docker-images](https://docs.microsoft.com/aspnet/core/host-and-deploy/docker/building-net-docker-images)
 
@@ -1906,7 +1905,7 @@ You can specify additional configuration settings in the Dockerfile, depending o
 - **Staying up-to-date with .NET Container Images** <https://devblogs.microsoft.com/dotnet/staying-up-to-date-with-net-container-images/>
 - **Using .NET and Docker Together - DockerCon 2018 Update** [https://devblogs.microsoft.com/dotnet/using-net-and-docker-together-dockercon-2018](https://devblogs.microsoft.com/dotnet/using-net-and-docker-together-dockercon-2018-update/) [update/](https://devblogs.microsoft.com/dotnet/using-net-and-docker-together-dockercon-2018-update/)
 
-# **Using multi-arch image repositories**
+## **Using multi-arch image repositories**
 
 A single repo can contain platform variants, such as a Linux image and a Windows image. This feature allows vendors like Microsoft (base image creators) to create a single repo to cover multiple platforms (that is Linux and Windows). For example, the [.NET](https://hub.docker.com/_/microsoft-dotnet/) repository available in the Docker Hub registry provides support for Linux and Windows Nano Server by using the same repo name.
 
@@ -1921,7 +1920,7 @@ But, if you specify the same image name, even with the same tag, the multi-arch 
 
 This way, when you pull an image from a Windows host, it will pull the Windows variant, and pulling the same image name from a Linux host will pull the Linux variant.
 
-# **Multi-stage builds in Dockerfile**
+### **Multi-stage builds in Dockerfile**
 
 The Dockerfile is similar to a batch script. Similar to what you would do if you had to set up the machine from the command line.
 
@@ -2043,17 +2042,17 @@ The resulting file is then:
 15 ENTRYPOINT ["dotnet", "Catalog.API.dll"]
 ```
 
-# **Creating your base image from scratch**
+### **Creating your base image from scratch**
 
 You can create your own Docker base image from scratch. This scenario is not recommended for someone who is starting with Docker, but if you want to set the specific bits of your own base image, you can do so.
 
-# **Additional resources**
+### **Additional resources**
 
 • **Multi-arch .NET Core images**. <https://github.com/dotnet/announcements/issues/14> • **Create a base image**. Official Docker documentation. <https://docs.docker.com/develop/develop-images/baseimages/>
 
 ![](_page_97_Picture_1.jpeg)
 
-# <span id="page-97-0"></span>**Step 3. Create your custom Docker images and embed your application or service in them**
+## <span id="page-97-0"></span>**Step 3. Create your custom Docker images and embed your application or service in them**
 
 For each service in your application, you need to create a related image. If your application is made up of a single service or web application, you just need a single image.
 
@@ -2075,13 +2074,13 @@ You can find the existing images in your local repository by using the docker im
 
 *Figure 5-6. Viewing existing images using the docker images command*
 
-# **Creating Docker images with Visual Studio**
+## **Creating Docker images with Visual Studio**
 
 When you use Visual Studio to create a project with Docker support, you don't explicitly create an image. Instead, the image is created for you when you press F5 (or Ctrl+F5) to run the dockerized application or service. This step is automatic in Visual Studio and you won't see it happen, but it's important that you know what's going on underneath.
 
 ![](_page_98_Picture_4.jpeg)
 
-# <span id="page-98-0"></span>**Step 4. Define your services in docker-compose.yml when building a multi-container Docker application**
+## <span id="page-98-0"></span>**Step 4. Define your services in docker-compose.yml when building a multi-container Docker application**
 
 The [docker-compose.yml](https://docs.docker.com/compose/compose-file/) file lets you define a set of related services to be deployed as a composed application with deployment commands. It also configures its dependency relations and runtime configuration.
 
@@ -2143,7 +2142,7 @@ The docker-compose.yml file specifies not only what containers are being used, b
 
 We will revisit the docker-compose.yml file in a later section when we cover how to implement microservices and multi-container apps.
 
-# **Working with docker-compose.yml in Visual Studio 2022**
+### **Working with docker-compose.yml in Visual Studio 2022**
 
 Besides adding a Dockerfile to a project, as we mentioned before, Visual Studio 2017 (from version 15.8 on) can add orchestrator support for Docker Compose to a solution.
 
@@ -2169,13 +2168,13 @@ You could deploy a multi-container application with a single docker-compose.yml 
 
 ![](_page_101_Picture_0.jpeg)
 
-# <span id="page-101-0"></span>**Step 5. Build and run your Docker application**
+## <span id="page-101-0"></span>**Step 5. Build and run your Docker application**
 
 If your application only has a single container, you can run it by deploying it to your Docker host (VM or physical server). However, if your application contains multiple services, you can deploy it as a composed application, either using a single CLI command (docker-compose up), or with Visual Studio, which will use that command under the covers. Let's look at the different options.
 
-# **Option A: Running a single-container application**
+## **Option A: Running a single-container application**
 
-### **Using Docker CLI**
+## **Using Docker CLI**
 
 You can run a Docker container using the docker run command, as shown in Figure 5-9:
 
@@ -2193,7 +2192,7 @@ The hash shown is the container ID and it's also assigned a random readable name
 
 If you haven't added container orchestrator support, you can also run a single container app in Visual Studio by pressing Ctrl+F5 and you can also use F5 to debug the application within the container. The container runs locally using docker run.
 
-# **Option B: Running a multi-container application**
+### **Option B: Running a multi-container application**
 
 In most enterprise scenarios, a Docker application will be composed of multiple services, which means you need to run a multi-container application, as shown in Figure 5-10.
 
@@ -2201,7 +2200,7 @@ In most enterprise scenarios, a Docker application will be composed of multiple 
 
 *Figure 5-10. VM with Docker containers deployed*
 
-# **Using Docker CLI**
+### **Using Docker CLI**
 
 To run a multi-container application with the Docker CLI, you use the docker-compose up command. This command uses the **docker-compose.yml** file that you have at the solution level to deploy a multi-container application. Figure 5-11 shows the results when running the command from your main solution directory, which contains the docker-compose.yml file.
 
@@ -2225,17 +2224,17 @@ The important point here is that, as shown in Figure 5-12, in Visual Studio 2019
 
 *Figure 5-12. Running multi-container apps in Visual Studio 2022*
 
-# **Additional resources**
+### **Additional resources**
 
 • **Deploy an ASP.NET container to a remote Docker host** [https://learn.microsoft.com/visualstudio/containers/hosting-web-apps-in-docker](https://docs.microsoft.com/visualstudio/containers/hosting-web-apps-in-docker)
 
-# **A note about testing and deploying with orchestrators**
+## **A note about testing and deploying with orchestrators**
 
 The docker-compose up and docker run commands (or running and debugging the containers in Visual Studio) are adequate for testing containers in your development environment. But you should not use this approach for production deployments, where you should target orchestrators like [Kubernetes](https://kubernetes.io/) or [Service Fabric](https://azure.microsoft.com/services/service-fabric/). If you're using Kubernetes, you have to use [pods](https://kubernetes.io/docs/concepts/workloads/pods/pod/) to organize containers and [services](https://kubernetes.io/docs/concepts/services-networking/service/) to network them. You also use [deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) to organize pod creation and modification.
 
 ![](_page_103_Picture_7.jpeg)
 
-# <span id="page-103-0"></span>**Step 6. Test your Docker application using your local Docker host**
+### <span id="page-103-0"></span>**Step 6. Test your Docker application using your local Docker host**
 
 This step will vary depending on what your application is doing. In a simple .NET Web application that is deployed as a single container or service, you can access the service by opening a browser on the Docker host and navigating to that site, as shown in Figure 5-13. (If the configuration in the Dockerfile maps the container to a port on the host that is anything other than 80, include the host port in the URL.)
 
@@ -2251,20 +2250,20 @@ You can also test the application using curl from the terminal, as shown in Figu
 
 *Figure 5-14. Example of testing your Docker application locally using curl*
 
-# **Testing and debugging containers with Visual Studio 2022**
+### **Testing and debugging containers with Visual Studio 2022**
 
 When running and debugging the containers with Visual Studio 2022, you can debug the .NET application in much the same way as you would when running without containers.
 
-# **Testing and debugging without Visual Studio**
+### **Testing and debugging without Visual Studio**
 
 If you're developing using the editor/CLI approach, debugging containers is more difficult and you'll probably want to debug by generating traces.
 
-# **Additional resources**
+### **Additional resources**
 
 - **Quickstart: Docker in Visual Studio.** [https://learn.microsoft.com/visualstudio/containers/container-tools](https://docs.microsoft.com/visualstudio/containers/container-tools)
 - **Debugging apps in a local Docker container** [https://learn.microsoft.com/visualstudio/containers/edit-and-refresh](https://docs.microsoft.com/visualstudio/containers/edit-and-refresh)
 
-# <span id="page-104-0"></span>**Simplified workflow when developing containers with Visual Studio**
+### <span id="page-104-0"></span>**Simplified workflow when developing containers with Visual Studio**
 
 Effectively, the workflow when using Visual Studio is a lot simpler than if you use the editor/CLI approach. Most of the steps required by Docker related to the Dockerfile and docker-compose.yml files are hidden or simplified by Visual Studio, as shown in Figure 5-15.
 
@@ -2274,7 +2273,7 @@ Effectively, the workflow when using Visual Studio is a lot simpler than if you 
 
 In addition, you need to perform step 2 (adding Docker support to your projects) just once. Therefore, the workflow is similar to your usual development tasks when using .NET for any other development. You need to know what is going on under the covers (the image build process, what base images you're using, deployment of containers, etc.) and sometimes you will also need to edit the Dockerfile or docker-compose.yml file to customize behaviors. But most of the work is greatly simplified by using Visual Studio, making you a lot more productive.
 
-# <span id="page-105-0"></span>**Using PowerShell commands in a Dockerfile to set up Windows Containers**
+## <span id="page-105-0"></span>**Using PowerShell commands in a Dockerfile to set up Windows Containers**
 
 [Windows Containers](https://docs.microsoft.com/virtualization/windowscontainers/about/index) allow you to convert your existing Windows applications into Docker images and deploy them with the same tools as the rest of the Docker ecosystem. To use Windows Containers, you run PowerShell commands in the Dockerfile, as shown in the following example:
 
@@ -2287,11 +2286,9 @@ CMD [ "ping", "localhost", "-t" ]
 
 In this case, we are using a Windows Server Core base image (the FROM setting) and installing IIS with a PowerShell command (the RUN setting). In a similar way, you could also use PowerShell commands to set up additional components like ASP.NET 4.x, .NET Framework 4.6, or any other Windows software. For example, the following command in a Dockerfile sets up ASP.NET 4.5:
 
-```
-RUN powershell add-windowsfeature web-asp-net45
-```
+**RUN** powershell add-windowsfeature web-asp-net45
 
-# **Additional resources**
+### **Additional resources**
 
 • **aspnet-docker/Dockerfile.** Example PowerShell commands to run from dockerfiles to include Windows features.
 
@@ -2307,11 +2304,11 @@ Earlier we raised the question "Is Docker necessary when building a microservice
 
 However, if you know how to design and develop a microservices-based application that is also based on Docker containers, you will be able to design and develop any other, simpler application model. For example, you might design a three-tier application that also requires a multi-container approach. Because of that, and because microservice architectures are an important trend within the container world, this section focuses on a microservice architecture implementation using Docker containers.
 
-# <span id="page-107-1"></span>Design a microservice-oriented application
+## <span id="page-107-1"></span>Design a microservice-oriented application
 
 This section focuses on developing a hypothetical server-side enterprise application.
 
-# <span id="page-107-2"></span>**Application specifications**
+### <span id="page-107-2"></span>**Application specifications**
 
 The hypothetical application handles requests by executing business logic, accessing databases, and then returning HTML, JSON, or XML responses. We will say that the application must support various clients, including desktop browsers running Single Page Applications (SPAs), traditional web apps, mobile web apps, and native mobile apps. The application might also expose an API for third parties
 
@@ -2328,7 +2325,7 @@ The application will require high scalability, while allowing its vertical subsy
 
 The application must be able to be deployed in multiple infrastructure environments (multiple public clouds and on-premises) and ideally should be cross-platform, able to move from Linux to Windows (or vice versa) easily.
 
-# <span id="page-108-0"></span>**Development team context**
+### <span id="page-108-0"></span>**Development team context**
 
 We also assume the following about the development process for the application:
 
@@ -2339,7 +2336,7 @@ We also assume the following about the development process for the application:
 - You want to practice continuous integration and continuous deployment of the application.
 - You want to take advantage of emerging technologies (frameworks, programming languages, etc.) while evolving the application. You do not want to make full migrations of the application when moving to new technologies, because that would result in high costs and impact the predictability and stability of the application.
 
-# <span id="page-108-1"></span>**Choosing an architecture**
+### <span id="page-108-1"></span>**Choosing an architecture**
 
 What should the application deployment architecture be? The specifications for the application, along with the development context, strongly suggest that you should architect the application by decomposing it into autonomous subsystems in the form of collaborating microservices and containers, where a microservice is a container.
 
@@ -2351,7 +2348,7 @@ Microservices are developed and deployed as containers independently of one anot
 
 Each microservice has its own database, allowing it to be fully decoupled from other microservices. When necessary, consistency between databases from different microservices is achieved using application-level integration events (through a logical event bus), as handled in Command and Query Responsibility Segregation (CQRS). Because of that, the business constraints must embrace eventual consistency between the multiple microservices and related databases.
 
-# **eShopOnContainers: A reference application for .NET and microservices deployed using containers**
+## **eShopOnContainers: A reference application for .NET and microservices deployed using containers**
 
 So that you can focus on the architecture and technologies instead of thinking about a hypothetical business domain that you might not know, we have selected a well-known business domain—namely, a simplified e-commerce (e-shop) application that presents a catalog of products, takes orders from customers, verifies inventory, and performs other business functions. This container-based application source code is available in the [eShopOnContainers](https://aka.ms/MicroservicesArchitecture) GitHub repo.
 
@@ -2372,7 +2369,7 @@ The above diagram shows that Mobile and SPA clients communicate to single API ga
 
 The application is deployed as a set of microservices in the form of containers. Client apps can communicate with those microservices running as containers through the public URLs published by the API Gateways.
 
-# **Data sovereignty per microservice**
+## **Data sovereignty per microservice**
 
 In the sample application, each microservice owns its own database or data source, although all SQL Server databases are deployed as a single container. This design decision was made only to make it easy for a developer to get the code from GitHub, clone it, and open it in Visual Studio or Visual Studio Code. Or alternatively, it makes it easy to compile the custom Docker images using the .NET CLI and the Docker CLI, and then deploy and run them in a Docker development environment. Either way, using containers for data sources lets developers build and deploy in a matter of minutes without having to provision an external database or any other data source with hard dependencies on infrastructure (cloud or on-premises).
 
@@ -2380,11 +2377,11 @@ In a real production environment, for high availability and for scalability, the
 
 Therefore, the units of deployment for microservices (and even for databases in this application) are Docker containers, and the reference application is a multi-container application that embraces microservices principles.
 
-# **Additional resources**
+### **Additional resources**
 
 • **eShopOnContainers GitHub repo. Source code for the reference application** <https://aka.ms/eShopOnContainers/>
 
-# <span id="page-111-0"></span>**Benefits of a microservice-based solution**
+### <span id="page-111-0"></span>**Benefits of a microservice-based solution**
 
 A microservice-based solution like this has many benefits:
 
@@ -2403,7 +2400,7 @@ A microservice-based solution like this has many benefits:
 
 **You can use the latest technologies**. Because you can start developing services independently and run them side by side (thanks to containers and .NET), you can start using the latest technologies and frameworks expediently instead of being stuck on an older stack or framework for the whole application.
 
-# <span id="page-112-0"></span>**Downsides of a microservice-based solution**
+## <span id="page-112-0"></span>**Downsides of a microservice-based solution**
 
 A microservice-based solution like this also has some drawbacks:
 
@@ -2425,7 +2422,7 @@ As mentioned in the architecture section, when designing and building a complex 
 
 **Partitioning the microservices**. Finally, no matter, which approach you take for your microservice architecture, another challenge is deciding how to partition an end-to-end application into multiple microservices. As noted in the architecture section of the guide, there are several techniques and approaches you can take. Basically, you need to identify areas of the application that are decoupled from the other areas and that have a low number of hard dependencies. In many cases, this approach is aligned to partitioning services by use case. For example, in our e-shop application, we have an ordering service that is responsible for all the business logic related to the order process. We also have the catalog service and the basket service that implement other capabilities. Ideally, each service should have only a small set of responsibilities. This approach is similar to the single responsibility principle (SRP) applied to classes, which states that a class should only have one reason to change. But in this case, it is about microservices, so the scope will be larger than a single class. Most of all, a microservice has to be autonomous, end to end, including responsibility for its own data sources.
 
-# <span id="page-113-0"></span>**External versus internal architecture and design patterns**
+### <span id="page-113-0"></span>**External versus internal architecture and design patterns**
 
 The external architecture is the microservice architecture composed by multiple services, following the principles described in the architecture section of this guide. However, depending on the nature of each microservice, and independently of high-level microservice architecture you choose, it is common and sometimes advisable to have different internal architectures, each based on different patterns, for different microservices. The microservices can even use different technologies and programming languages. Figure 6-2 illustrates this diversity.
 
@@ -2439,7 +2436,7 @@ Another reason for a different technology per microservice might be the nature o
 
 The bottom line is that each microservice can have a different internal architecture based on different design patterns. Not all microservices should be implemented using advanced DDD patterns, because that would be over-engineering them. Similarly, complex microservices with ever-changing business logic should not be implemented as CRUD components, or you can end up with low-quality code.
 
-# <span id="page-114-0"></span>**The new world: multiple architectural patterns and polyglot microservices**
+## <span id="page-114-0"></span>**The new world: multiple architectural patterns and polyglot microservices**
 
 There are many architectural patterns used by software architects and developers. The following are a few (mixing architecture styles and architecture patterns):
 
@@ -2467,11 +2464,11 @@ Especially when you deal with large applications composed by multiple subsystems
 
 There is no silver bullet or a right architecture pattern for every given case. You cannot have "one architecture pattern to rule them all." Depending on the priorities of each microservice, you must choose a different approach for each, as explained in the following sections.
 
-# <span id="page-116-0"></span>Creating a simple data-driven CRUD microservice
+## <span id="page-116-0"></span>Creating a simple data-driven CRUD microservice
 
 This section outlines how to create a simple microservice that performs create, read, update, and delete (CRUD) operations on a data source.
 
-# <span id="page-116-1"></span>**Designing a simple CRUD microservice**
+## <span id="page-116-1"></span>**Designing a simple CRUD microservice**
 
 From a design point of view, this type of containerized microservice is very simple. Perhaps the problem to solve is simple, or perhaps the implementation is only a proof of concept.
 
@@ -2483,15 +2480,13 @@ An example of this kind of simple data-drive service is the catalog microservice
 
 ![](_page_117_Figure_1.jpeg)
 
-*Figure 6-5. Simple data-driven/CRUD microservice design*
-
 The previous diagram shows the logical Catalog microservice, that includes its Catalog database, which can be or not in the same Docker host. Having the database in the same Docker host might be good for development, but not for production. When you are developing this kind of service, you only need [ASP.NET Core](https://docs.microsoft.com/aspnet/core/) and a data-access API or ORM like [Entity Framework Core.](https://docs.microsoft.com/ef/core/index) You could also generate [Swagger](https://swagger.io/) metadata automatically through [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore) to provide a description of what your service offers, as explained in the next section.
 
 Note that running a database server like SQL Server within a Docker container is great for development environments, because you can have all your dependencies up and running without needing to provision a database in the cloud or on-premises. This approach is convenient when running integration tests. However, for production environments, running a database server in a container is not recommended, because you usually do not get high availability with that approach. For a production environment in Azure, it is recommended that you use Azure SQL DB or any other database technology that can provide high availability and high scalability. For example, for a NoSQL approach, you might choose CosmosDB.
 
 Finally, by editing the Dockerfile and docker-compose.yml metadata files, you can configure how the image of this container will be created—what base image it will use, plus design settings such as internal and external names and TCP ports.
 
-# <span id="page-117-0"></span>**Implementing a simple CRUD microservice with ASP.NET Core**
+### <span id="page-117-0"></span>**Implementing a simple CRUD microservice with ASP.NET Core**
 
 To implement a simple CRUD microservice using .NET and Visual Studio, you start by creating a simple ASP.NET Core Web API project (running on .NET so it can run on a Linux Docker host), as shown in Figure 6-6.
 
@@ -2507,7 +2502,7 @@ To create an ASP.NET Core Web API Project, first select an ASP.NET Core Web Appl
 
 The API project includes references to Microsoft.AspNetCore.App NuGet package, that includes references to all essential packages. It could include some other packages as well.
 
-# **Implementing CRUD Web API services with Entity Framework Core**
+## **Implementing CRUD Web API services with Entity Framework Core**
 
 Entity Framework (EF) Core is a lightweight, extensible, and cross-platform version of the popular Entity Framework data access technology. EF Core is an object-relational mapper (ORM) that enables .NET developers to work with a database using .NET objects.
 
@@ -2557,7 +2552,7 @@ You can have additional DbContext implementations. For example, in the sample Ca
 
 Within the DbContext, you use the OnModelCreating method to customize object/database entity mappings and other [EF extensibility points.](https://devblogs.microsoft.com/dotnet/implementing-seeding-custom-conventions-and-interceptors-in-ef-core-1-0/)
 
-### Querying data from Web API controllers
+## Querying data from Web API controllers
 
 Instances of your entity classes are typically retrieved from the database using Language-Integrated Query (LINQ), as shown in the following example:
 
@@ -2620,7 +2615,7 @@ numbers");
 }
 ```
 
-### Saving data
+## Saving data
 
 Data is created, deleted, and modified in the database using instances of your entity classes. You could add code like the following hard-coded example (mock data, in this case) to your Web API controllers.
 
@@ -2664,12 +2659,12 @@ builder.Services.AddDbContext<CatalogContext>(options =>
 });
 ```
 
-# **Additional resources**
+## **Additional resources**
 
 - **Querying Data** [https://learn.microsoft.com/ef/core/querying/index](https://docs.microsoft.com/ef/core/querying/index)
 - **Saving Data** [https://learn.microsoft.com/ef/core/saving/index](https://docs.microsoft.com/ef/core/saving/index)
 
-# <span id="page-123-0"></span>**The DB connection string and environment variables used by Docker containers**
+## <span id="page-123-0"></span>**The DB connection string and environment variables used by Docker containers**
 
 You can use the ASP.NET Core settings and add a ConnectionString property to your settings.json file as shown in the following example:
 
@@ -2720,7 +2715,7 @@ Applications have to be registered in the organization's Active Directory, so th
 
 You can check the *Key Vault Concepts documentation* for more details.
 
-# **Implementing versioning in ASP.NET Web APIs**
+### **Implementing versioning in ASP.NET Web APIs**
 
 As business requirements change, new collections of resources may be added, the relationships between resources might change, and the structure of the data in resources might be amended. Updating a Web API to handle new requirements is a relatively straightforward process, but you must consider the effects that such changes will have on client applications consuming the Web API. Although the developer designing and implementing a Web API has full control over that API, the developer does not have the same degree of control over client applications that might be built by third-party organizations operating remotely.
 
@@ -2745,14 +2740,14 @@ public class CatalogController : ControllerBase
 
 This versioning mechanism is simple and depends on the server routing the request to the appropriate endpoint. However, for a more sophisticated versioning and the best method when using REST, you should use hypermedia and implement [HATEOAS \(Hypertext as the Engine of Application](https://docs.microsoft.com/azure/architecture/best-practices/api-design#use-hateoas-to-enable-navigation-to-related-resources)  [State\).](https://docs.microsoft.com/azure/architecture/best-practices/api-design#use-hateoas-to-enable-navigation-to-related-resources)
 
-# **Additional resources**
+### **Additional resources**
 
 - **ASP.NET API Versioning** <https://github.com/dotnet/aspnet-api-versioning>
 - **Scott Hanselman. ASP.NET Core RESTful Web API versioning made easy** <https://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx>
 - **Versioning a RESTful web API** [https://learn.microsoft.com/azure/architecture/best-practices/api-design#versioning-a](https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)[restful-web-api](https://docs.microsoft.com/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)
 - **Roy Fielding. Versioning, Hypermedia, and REST** <https://www.infoq.com/articles/roy-fielding-on-versioning>
 
-# <span id="page-125-0"></span>**Generating Swagger description metadata from your ASP.NET Core Web API**
+## <span id="page-125-0"></span>**Generating Swagger description metadata from your ASP.NET Core Web API**
 
 [Swagger](https://swagger.io/) is a commonly used open source framework backed by a large ecosystem of tools that helps you design, build, document, and consume your RESTful APIs. It is becoming the standard for the APIs description metadata domain. You should include Swagger description metadata with any kind of microservice, either data-driven microservices or more advanced domain-driven microservices (as explained in the following section).
 
@@ -2760,7 +2755,7 @@ The heart of Swagger is the Swagger specification, which is API description meta
 
 The specification is the basis of the OpenAPI Specification (OAS) and is developed in an open, transparent, and collaborative community to standardize the way RESTful interfaces are defined. The specification defines the structure for how a service can be discovered and how its capabilities understood. For more information, including a web editor and examples of Swagger specifications from companies like Spotify, Uber, Slack, and Microsoft, see the Swagger site [\(https://swagger.io\)](https://swagger.io/).
 
-# **Why use Swagger?**
+## **Why use Swagger?**
 
 The main reasons to generate Swagger metadata for your APIs are the following.
 
@@ -2779,7 +2774,7 @@ There are several options to automate Swagger metadata generation for ASP.NET Co
 
 Probably the best know is [Swashbuckle,](https://github.com/domaindrivendev/Swashbuckle.AspNetCore) which is currently used in [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) and we'll cover in some detail in this guide but there's also the option to use [NSwag,](https://github.com/RSuter/NSwag) which can generate Typescript and C# API clients, as well as C# controllers, from a Swagger or OpenAPI specification and even by scanning the .dll that contains the controllers, using [NSwagStudio.](https://github.com/RSuter/NSwag/wiki/NSwagStudio)
 
-# **How to automate API Swagger metadata generation with the Swashbuckle NuGet package**
+### **How to automate API Swagger metadata generation with the Swashbuckle NuGet package**
 
 Generating Swagger metadata manually (in a JSON or YAML file) can be tedious work. However, you can automate API discovery of ASP.NET Web API services by using the [Swashbuckle NuGet package](https://aka.ms/swashbuckledotnetcore) to dynamically generate Swagger API metadata.
 
@@ -2845,13 +2840,13 @@ The Swagger UI API detail shows a sample of the response and can be used to exec
 
 It is that simple. And because it is automatically generated, the Swagger metadata will grow when you add more functionality to your API.
 
-# **Additional resources**
+### **Additional resources**
 
 - **ASP.NET Web API Help Pages using Swagger** [https://learn.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger](https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger)
 - **Get started with Swashbuckle and ASP.NET Core** [https://learn.microsoft.com/aspnet/core/tutorials/getting-started-with-swashbuckle](https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-swashbuckle)
 - **Get started with NSwag and ASP.NET Core** [https://learn.microsoft.com/aspnet/core/tutorials/getting-started-with-nswag](https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-nswag)
 
-# <span id="page-130-0"></span>Defining your multi-container application with docker-compose.yml
+## <span id="page-130-0"></span>Defining your multi-container application with docker-compose.yml
 
 In this guide, the [docker-compose.yml](https://docs.docker.com/compose/compose-file/) file was introduced in the section Step 4. Define your services in docker-compose.yml when building a multi-container Docker application. However, there are additional ways to use the docker-compose files that are worth exploring in further detail.
 
@@ -2934,7 +2929,7 @@ The root key in this file is services. Under that key, you define the services y
 | basket-api   | Container with the Basket ASP.NET Core Web<br>API microservice                                             |
 | basketdata   | Container running the REDIS cache service,<br>with the basket database as a REDIS cache                    |
 
-# **A simple Web Service API container**
+### **A simple Web Service API container**
 
 Focusing on a single container, the catalog-api container-microservice has a straightforward definition:
 
@@ -2975,13 +2970,13 @@ which is a development Docker host), such as a local SQL Server instance on your
 
 There are also other, more advanced docker-compose.yml settings that we'll discuss in the following sections.
 
-# **Using docker-compose files to target multiple environments**
+## **Using docker-compose files to target multiple environments**
 
 The docker-compose.\*.yml files are definition files and can be used by multiple infrastructures that understand that format. The most straightforward tool is the docker-compose command.
 
 Therefore, by using the docker-compose command you can target the following main scenarios.
 
-### **Development environments**
+## **Development environments**
 
 When you develop applications, it is important to be able to run an application in an isolated development environment. You can use the docker-compose CLI command to create that environment or Visual Studio, which uses docker-compose under the covers.
 
@@ -3009,11 +3004,11 @@ If you are using any other orchestrator (Azure Service Fabric, Kubernetes, etc.)
 
 In any case, docker-compose is a convenient tool and metadata format for development, testing and production workflows, although the production workflow might vary on the orchestrator you are using.
 
-# **Using multiple docker-compose files to handle several environments**
+## **Using multiple docker-compose files to handle several environments**
 
 When targeting different environments, you should use multiple compose files. This approach lets you create multiple configuration variants depending on the environment.
 
-### **Overriding the base docker-compose file**
+## **Overriding the base docker-compose file**
 
 You could use a single docker-compose.yml file as in the simplified examples shown in previous sections. However, that is not recommended for most applications.
 
@@ -3035,7 +3030,7 @@ By convention, the docker-compose.yml file contains your base configuration and 
 
 The docker-compose.override.yml file, as its name suggests, contains configuration settings that override the base configuration, such as configuration that depends on the deployment environment. You can have multiple override files with different names also. The override files usually contain additional information needed by the application but specific to an environment or to a deployment.
 
-# **Targeting multiple environments**
+### **Targeting multiple environments**
 
 A typical use case is when you define multiple compose files so you can target multiple environments, like production, staging, CI, or development. To support these differences, you can split your Compose configuration into multiple files, as shown in Figure 6-12.
 
@@ -3239,7 +3234,7 @@ To use multiple override files, or an override file with a different name, you c
 docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
 ```
 
-# **Using environment variables in docker-compose files**
+## **Using environment variables in docker-compose files**
 
 It is convenient, especially in production environments, to be able to get configuration information from environment variables, as we have shown in previous examples. You can reference an environment variable in your docker-compose files using the syntax \${MY\_VAR}. The following line from a docker-compose.prod.yml file shows how to reference the value of an environment variable.
 
@@ -3266,7 +3261,7 @@ The values set in the run-time environment always override the values defined in
 - **Overview of Docker Compose** <https://docs.docker.com/compose/overview/>
 - **Multiple Compose files** <https://docs.docker.com/compose/multiple-compose-files/>
 
-# **Building optimized ASP.NET Core Docker images**
+### **Building optimized ASP.NET Core Docker images**
 
 If you are exploring Docker and .NET on sources on the Internet, you will find Dockerfiles that demonstrate the simplicity of building a Docker image by copying your source into a container. These examples suggest that by using a simple configuration, you can have a Docker image with the environment packaged with your application. The following example shows a simple Dockerfile in this vein.
 
@@ -3299,16 +3294,16 @@ The .NET team provides four basic variants in [dotnet/](https://hub.docker.com/_
 
 For faster startup, runtime images also automatically set aspnetcore\_urls to port 80 and use Ngen to create a native image cache of assemblies.
 
-# **Additional resources**
+### **Additional resources**
 
 - **Building Optimized Docker Images with ASP.NET Core** [https://learn.microsoft.com/archive/blogs/stevelasker/building-optimized-docker-images](https://docs.microsoft.com/archive/blogs/stevelasker/building-optimized-docker-images-with-asp-net-core)[with-asp-net-core](https://docs.microsoft.com/archive/blogs/stevelasker/building-optimized-docker-images-with-asp-net-core)
 - **Building Docker Images for .NET Applications** [https://learn.microsoft.com/dotnet/core/docker/building-net-docker-images](https://docs.microsoft.com/aspnet/core/host-and-deploy/docker/building-net-docker-images)
 
-# <span id="page-141-0"></span>Use a database server running as a container
+## <span id="page-141-0"></span>Use a database server running as a container
 
 You can have your databases (SQL Server, PostgreSQL, MySQL, etc.) on regular standalone servers, in on-premises clusters, or in PaaS services in the cloud like Azure SQL DB. However, for development and test environments, having your databases running as containers is convenient, because you don't have any external dependency and simply running the docker-compose up command starts the whole application. Having those databases as containers is also great for integration tests, because the database is started in the container and is always populated with the same sample data, so tests can be more predictable.
 
-# <span id="page-142-0"></span>**SQL Server running as a container with a microservice-related database**
+## <span id="page-142-0"></span>**SQL Server running as a container with a microservice-related database**
 
 In eShopOnContainers, there's a container named sqldata, as defined in the [docker-compose.yml](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/docker-compose.yml) file, that runs a SQL Server for Linux instance with the SQL databases for all microservices that need one.
 
@@ -3343,12 +3338,12 @@ Having SQL Server running as a container is not just useful for a demo where you
 
 environments so that you can easily run integration tests starting from a clean SQL Server image and known data by seeding new sample data.
 
-# **Additional resources**
+## **Additional resources**
 
 - **Run the SQL Server Docker image on Linux, Mac, or Windows** [https://learn.microsoft.com/sql/linux/sql-server-linux-setup-docker](https://docs.microsoft.com/sql/linux/sql-server-linux-setup-docker)
 - **Connect and query SQL Server on Linux with sqlcmd** [https://learn.microsoft.com/sql/linux/sql-server-linux-connect-and-query-sqlcmd](https://docs.microsoft.com/sql/linux/sql-server-linux-connect-and-query-sqlcmd)
 
-# <span id="page-143-0"></span>**Seeding with test data on Web application startup**
+## <span id="page-143-0"></span>**Seeding with test data on Web application startup**
 
 To add data to the database when the application starts up, you can add code like the following to the Main method in the Program class of the Web API project:
 
@@ -3500,7 +3495,7 @@ public class CatalogContextSeed
 
 When you run integration tests, having a way to generate data consistent with your integration tests is useful. Being able to create everything from scratch, including an instance of SQL Server running on a container, is great for test environments.
 
-# <span id="page-146-0"></span>**EF Core InMemory database versus SQL Server running as a container**
+## <span id="page-146-0"></span>**EF Core InMemory database versus SQL Server running as a container**
 
 Another good choice when running tests is to use the Entity Framework InMemory database provider. You can specify that configuration in the ConfigureServices method of the Startup class in your Web API project:
 
@@ -3528,7 +3523,7 @@ There is an important catch, though. The in-memory database does not support man
 
 Even so, an in-memory database is still useful for testing and prototyping. But if you want to create accurate integration tests that take into account the behavior of a specific database implementation, you need to use a real database like SQL Server. For that purpose, running SQL Server in a container is a great choice and more accurate than the EF Core InMemory database provider.
 
-# <span id="page-146-1"></span>**Using a Redis cache service running in a container**
+### <span id="page-146-1"></span>**Using a Redis cache service running in a container**
 
 You can run Redis on a container, especially for development and testing and for proof-of-concept scenarios. This scenario is convenient, because you can have all your dependencies running on containers—not just for your local development machines, but for your testing environments in your CI/CD pipelines.
 
@@ -3569,7 +3564,7 @@ Finally, in the *docker-compose.override.yml* file, the basket-api microservice 
 
 As mentioned before, the name of the microservice basketdata is resolved by Docker's internal network DNS.
 
-# <span id="page-147-0"></span>Implementing event-based communication between microservices (integration events)
+## <span id="page-147-0"></span>Implementing event-based communication between microservices (integration events)
 
 As described earlier, when you use event-based communication, a microservice publishes an event when something notable happens, such as when it updates a business entity. Other microservices subscribe to those events. When a microservice receives an event, it can update its own business entities, which might lead to more events being published. This is the essence of the eventual consistency concept. This publish/subscribe system is usually performed by using an implementation of an event bus. The event bus can be designed as an interface with the API needed to subscribe and unsubscribe to events and to publish events. It can also have one or more implementations based on any inter-process or messaging communication, such as a messaging queue or a service bus that supports asynchronous communication and a publish/subscribe model.
 
@@ -3581,7 +3576,7 @@ You can use events to implement business transactions that span multiple service
 
 This section describes how you can implement this type of communication with .NET by using a generic event bus interface, as shown in Figure 6-18. There are multiple potential implementations, each using a different technology or infrastructure such as RabbitMQ, Azure Service Bus, or any other third-party open-source or commercial service bus.
 
-# <span id="page-148-0"></span>**Using message brokers and service buses for production systems**
+### <span id="page-148-0"></span>**Using message brokers and service buses for production systems**
 
 As noted in the architecture section, you can choose from multiple messaging technologies for implementing your abstract event bus. But these technologies are at different levels. For instance, RabbitMQ, a messaging broker transport, is at a lower level than commercial products like Azure Service Bus, NServiceBus, MassTransit, or Brighter. Most of these products can work on top of either RabbitMQ or Azure Service Bus. Your choice of product depends on how many features and how much out-of-the-box scalability you need for your application.
 
@@ -3595,7 +3590,7 @@ Of course, you could always build your own service bus features on top of lower-
 
 To reiterate: the sample event bus abstractions and implementation showcased in the eShopOnContainers sample are intended to be used only as a proof of concept. Once you have decided that you want to have asynchronous and event-driven communication, as explained in the current section, you should choose the service bus product that best fits your needs for production.
 
-# <span id="page-149-0"></span>**Integration events**
+## <span id="page-149-0"></span>**Integration events**
 
 Integration events are used for bringing domain state in sync across multiple microservices or external systems. This functionality is done by publishing integration events outside the microservice. When an event is published to multiple receiver microservices (to as many microservices as are subscribed to the integration event), the appropriate event handler in each receiver microservice handles the event.
 
@@ -3621,7 +3616,7 @@ The integration events can be defined at the application level of each microserv
 
 There are only a few kinds of libraries you should share across microservices. One is libraries that are final application blocks, like the [Event Bus client API,](https://github.com/dotnet-architecture/eShopOnContainers/tree/main/src/BuildingBlocks/EventBus) as in eShopOnContainers. Another is libraries that constitute tools that could also be shared as NuGet components, like JSON serializers.
 
-# <span id="page-150-0"></span>**The event bus**
+## <span id="page-150-0"></span>**The event bus**
 
 An event bus allows publish/subscribe-style communication between microservices without requiring the components to explicitly be aware of each other, as shown in Figure 6-19.
 
@@ -3631,15 +3626,15 @@ An event bus allows publish/subscribe-style communication between microservices 
 
 The above diagram shows that microservice A publishes to Event Bus, which distributes to subscribing microservices B and C, without the publisher needing to know the subscribers. The event bus is related to the Observer pattern and the publish-subscribe pattern.
 
-# **Observer pattern**
+### **Observer pattern**
 
 In the [Observer pattern,](https://en.wikipedia.org/wiki/Observer_pattern) your primary object (known as the Observable) notifies other interested objects (known as Observers) with relevant information (events).
 
-# **Publish/Subscribe (Pub/Sub) pattern**
+### **Publish/Subscribe (Pub/Sub) pattern**
 
 The purpose of the [Publish/Subscribe pattern](https://docs.microsoft.com/previous-versions/msp-n-p/ff649664(v=pandp.10)) is the same as the Observer pattern: you want to notify other services when certain events take place. But there is an important difference between the Observer and Pub/Sub patterns. In the observer pattern, the broadcast is performed directly from the observable to the observers, so they "know" each other. But when using a Pub/Sub pattern, there is a third component, called broker, or message broker or event bus, which is known by both the publisher and subscriber. Therefore, when using the Pub/Sub pattern the publisher and the subscribers are precisely decoupled thanks to the mentioned event bus or message broker.
 
-# **The middleman or event bus**
+### **The middleman or event bus**
 
 How do you achieve anonymity between publisher and subscriber? An easy way is let a middleman take care of all the communication. An event bus is one such middleman.
 
@@ -3658,7 +3653,7 @@ In Figure 6-20, you can see an abstraction of an event bus with multiple impleme
 
 It's good to have the event bus defined through an interface so it can be implemented with several technologies, like RabbitMQ, Azure Service bus or others. However, and as mentioned previously, using your own abstractions (the event bus interface) is good only if you need basic event bus features supported by your abstractions. If you need richer service bus features, you should probably use the API and abstractions provided by your preferred commercial service bus instead of your own abstractions.
 
-# **Defining an event bus interface**
+### **Defining an event bus interface**
 
 Let's start with some implementation code for the event bus interface and possible implementations for exploration purposes. The interface should be generic and straightforward, as in the following interface.
 
@@ -3686,7 +3681,7 @@ The Publish method is straightforward. The event bus will broadcast the integrat
 
 The Subscribe methods (you can have several implementations depending on the arguments) are used by the microservices that want to receive events. This method has two arguments. The first is the integration event to subscribe to (IntegrationEvent). The second argument is the integration event handler (or callback method), named IIntegrationEventHandler<T>, to be executed when the receiver microservice gets that integration event message.
 
-# <span id="page-152-0"></span>**Additional resources**
+### <span id="page-152-0"></span>**Additional resources**
 
 Some production-ready messaging solutions:
 
@@ -3694,7 +3689,7 @@ Some production-ready messaging solutions:
 - **NServiceBus** <https://particular.net/nservicebus>
 - **MassTransit** <https://masstransit-project.com/>
 
-# <span id="page-152-1"></span>Implementing an event bus with RabbitMQ for the development or test environment
+## <span id="page-152-1"></span>Implementing an event bus with RabbitMQ for the development or test environment
 
 We should start by saying that if you create your custom event bus based on [RabbitMQ](https://www.rabbitmq.com/) running in a container, as the eShopOnContainers application does, it should be used only for your development and test environments. Don't use it for your production environment, unless you are building it as a part of a production-ready service bus as described in the [Additional resources section below.](#page-24-2) A simple custom event bus might be missing many production-ready critical features that a commercial service bus has.
 
@@ -3703,8 +3698,6 @@ One of the event bus custom implementations in eShopOnContainers is basically a 
 The event bus implementation with RabbitMQ lets microservices subscribe to events, publish events, and receive events, as shown in Figure 6-21.
 
 ![](_page_153_Figure_0.jpeg)
-
-*Figure 6-21. RabbitMQ implementation of an event bus*
 
 RabbitMQ functions as an intermediary between message publisher and subscribers, to handle distribution. In the code, the EventBusRabbitMQ class implements the generic IEventBus interface. This implementation is based on Dependency Injection so that you can swap from this dev/test version to a production version.
 
@@ -3718,7 +3711,7 @@ public class EventBusRabbitMQ : IEventBus, IDisposable
 
 The RabbitMQ implementation of a sample dev/test event bus is boilerplate code. It has to handle the connection to the RabbitMQ server and provide code for publishing a message event to the queues. It also has to implement a dictionary of collections of integration event handlers for each event type; these event types can have a different instantiation and different subscriptions for each receiver microservice, as shown in Figure 6-21.
 
-# <span id="page-153-0"></span>**Implementing a simple publish method with RabbitMQ**
+### <span id="page-153-0"></span>**Implementing a simple publish method with RabbitMQ**
 
 The following code is a *simplified* version of an event bus implementation for RabbitMQ, to showcase the whole scenario. You don't really handle the connection this way. To see the full implementation, see the actual code in the [dotnet-architecture/eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) repository.
 
@@ -3754,7 +3747,7 @@ The [actual code](https://github.com/dotnet-architecture/eShopOnContainers/blob/
 
 As mentioned earlier, there are many possible configurations in RabbitMQ, so this code should be used only for dev/test environments.
 
-# <span id="page-154-0"></span>**Implementing the subscription code with the RabbitMQ API**
+## <span id="page-154-0"></span>**Implementing the subscription code with the RabbitMQ API**
 
 As with the publish code, the following code is a simplification of part of the event bus implementation for RabbitMQ. Again, you usually do not need to change it unless you are improving it.
 
@@ -3795,7 +3788,7 @@ As mentioned above, the event bus implemented in eShopOnContainers has only an e
 
 For production scenarios check the additional resources below, specific for RabbitMQ, and the [Implementing event-based communication between microservices](#page-24-2) section.
 
-# <span id="page-155-0"></span>**Additional resources**
+## <span id="page-155-0"></span>**Additional resources**
 
 A production-ready solution with support for RabbitMQ.
 
@@ -3804,7 +3797,7 @@ A production-ready solution with support for RabbitMQ.
 - **MassTransit** Free, open-source distributed application framework for .NET <https://masstransit-project.com/>
 - **Rebus** Open source .NET Service Bus <https://github.com/rebus-org/Rebus>
 
-# <span id="page-155-1"></span>Subscribing to events
+## <span id="page-155-1"></span>Subscribing to events
 
 The first step for using the event bus is to subscribe the microservices to the events they want to receive. That functionality should be done in the receiver microservices.
 
@@ -3825,7 +3818,7 @@ eventBus.Subscribe<OrderStartedIntegrationEvent,
 
 After this code runs, the subscriber microservice will be listening through RabbitMQ channels. When any message of type ProductPriceChangedIntegrationEvent arrives, the code invokes the event handler that is passed to it and processes the event.
 
-# <span id="page-156-0"></span>**Publishing events through the event bus**
+## <span id="page-156-0"></span>**Publishing events through the event bus**
 
 Finally, the message sender (origin microservice) publishes the integration events with code similar to the following example. (This approach is a simplified example that does not take atomicity into account.) You would implement similar code whenever an event must be propagated across multiple microservices, usually right after committing data or transactions from the origin microservice.
 
@@ -3886,7 +3879,7 @@ In this case, since the origin microservice is a simple CRUD microservice, that 
 
 In more advanced microservices, like when using CQRS approaches, it can be implemented in the CommandHandler class, within the Handle() method.
 
-# **Designing atomicity and resiliency when publishing to the event bus**
+## **Designing atomicity and resiliency when publishing to the event bus**
 
 When you publish integration events through a distributed messaging system like your event bus, you have the problem of atomically updating the original database and publishing an event (that is, either both operations complete or none of them). For instance, in the simplified example shown earlier, the code commits data to the database when the product price is changed and then publishes a ProductPriceChangedIntegrationEvent message. Initially, it might look essential that these two operations be performed atomically. However, if you are using a distributed transaction involving the database and the message broker, as you do in older systems like [Microsoft Message Queuing](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/ms711472(v=vs.85))  [\(MSMQ\),](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/ms711472(v=vs.85)) this approach is not recommended for the reasons described by the [CAP theorem.](https://www.quora.com/What-Is-CAP-Theorem-1)
 
@@ -3943,11 +3936,9 @@ About the second approach: you use the EventLog table as a queue and always use 
 
 ![](_page_160_Figure_0.jpeg)
 
-*Figure 6-23. Atomicity when publishing events to the event bus with a worker microservice*
-
 For simplicity, the eShopOnContainers sample uses the first approach (with no additional processes or checker microservices) plus the event bus. However, the eShopOnContainers sample is not handling all possible failure cases. In a real application deployed to the cloud, you must embrace the fact that issues will arise eventually, and you must implement that check and resend logic. Using the table as a queue can be more effective than the first approach if you have that table as a single source of events when publishing them (with the worker) through the event bus.
 
-# **Implementing atomicity when publishing integration events through the event bus**
+### **Implementing atomicity when publishing integration events through the event bus**
 
 The following code shows how you can create a single transaction involving multiple DbContext objects—one context related to the original data being updated, and the second context related to the IntegrationEventLog table.
 
@@ -4009,7 +4000,7 @@ After the ProductPriceChangedIntegrationEvent integration event is created, the 
 
 The event log table is updated atomically with the original database operation, using a local transaction against the same database. If any of the operations fail, an exception is thrown and the transaction rolls back any completed operation, thus maintaining consistency between the domain operations and the event messages saved to the table.
 
-# **Receiving messages from subscriptions: event handlers in receiver microservices**
+## **Receiving messages from subscriptions: event handlers in receiver microservices**
 
 In addition to the event subscription logic, you need to implement the internal code for the integration event handlers (like a callback method). The event handler is where you specify where the event messages of a certain type will be received and processed.
 
@@ -4065,7 +4056,7 @@ The event handler needs to verify whether the product exists in any of the baske
 
 *Figure 6-24. Displaying an item price change in a basket, as communicated by integration events*
 
-# <span id="page-163-0"></span>**Idempotency in update message events**
+### <span id="page-163-0"></span>**Idempotency in update message events**
 
 An important aspect of update message events is that a failure at any point in the communication should cause the message to be retried. Otherwise a background task might try to publish an event that has already been published, creating a race condition. Make sure that the updates are either idempotent or that they provide enough information to ensure that you can detect a duplicate, discard it, and send back only one response.
 
@@ -4083,21 +4074,21 @@ It is convenient to have some kind of identity per event so that you can create 
 
 Some message processing is inherently idempotent. For example, if a system generates image thumbnails, it might not matter how many times the message about the generated thumbnail is processed; the outcome is that the thumbnails are generated and they are the same every time. On the other hand, operations such as calling a payment gateway to charge a credit card may not be idempotent at all. In these cases, you need to ensure that processing a message multiple times has the effect that you expect.
 
-# **Additional resources**
+### **Additional resources**
 
 to the command handler).
 
 • **Honoring message idempotency** [https://learn.microsoft.com/previous-versions/msp-n-p/jj591565\(v=pandp.10\)#honoring](https://docs.microsoft.com/previous-versions/msp-n-p/jj591565(v=pandp.10)#honoring-message-idempotency)[message-idempotency](https://docs.microsoft.com/previous-versions/msp-n-p/jj591565(v=pandp.10)#honoring-message-idempotency)
 
-# <span id="page-164-0"></span>**Deduplicating integration event messages**
+### <span id="page-164-0"></span>**Deduplicating integration event messages**
 
 You can make sure that message events are sent and processed only once per subscriber at different levels. One way is to use a deduplication feature offered by the messaging infrastructure you are using. Another is to implement custom logic in your destination microservice. Having validations at both the transport level and the application level is your best bet.
 
-# **Deduplicating message events at the EventHandler level**
+### **Deduplicating message events at the EventHandler level**
 
 One way to make sure that an event is processed only once by any receiver is by implementing certain logic when processing the message events in event handlers. For example, that is the approach used in the eShopOnContainers application, as you can see in the [source code of the](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/Services/Ordering/Ordering.API/Application/IntegrationEvents/EventHandling/UserCheckoutAcceptedIntegrationEventHandler.cs)  [UserCheckoutAcceptedIntegrationEventHandler class](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/Services/Ordering/Ordering.API/Application/IntegrationEvents/EventHandling/UserCheckoutAcceptedIntegrationEventHandler.cs) when it receives a UserCheckoutAcceptedIntegrationEvent integration event. (In this case, the CreateOrderCommand is wrapped with an IdentifiedCommand, using the eventMsg.RequestId as an identifier, before sending it
 
-# **Deduplicating messages when using RabbitMQ**
+## **Deduplicating messages when using RabbitMQ**
 
 When intermittent network failures happen, messages can be duplicated, and the message receiver must be ready to handle these duplicated messages. If possible, receivers should handle messages in an idempotent way, which is better than explicitly handling them with deduplication.
 
@@ -4105,7 +4096,7 @@ According to the [RabbitMQ documentation](https://www.rabbitmq.com/reliability.h
 
 If the "redelivered" flag is set, the receiver must take that into account, because the message might already have been processed. But that is not guaranteed; the message might never have reached the receiver after it left the message broker, perhaps because of network issues. On the other hand, if the "redelivered" flag is not set, it is guaranteed that the message has not been sent more than once. Therefore, the receiver needs to deduplicate messages or process messages in an idempotent way only if the "redelivered" flag is set in the message.
 
-# **Additional resources**
+### **Additional resources**
 
 - **Forked eShopOnContainers using NServiceBus (Particular Software)** <https://go.particular.net/eShopOnContainers>
 - **Event Driven Messaging** [https://patterns.arcitura.com/soa-patterns/design\\_patterns/event\\_driven\\_messaging](https://patterns.arcitura.com/soa-patterns/design_patterns/event_driven_messaging)
@@ -4118,18 +4109,24 @@ If the "redelivered" flag is set, the receiver must take that into account, beca
 - **Chris Richardson. Event Sourcing pattern** <https://microservices.io/patterns/data/event-sourcing.html>
 - **Introducing Event Sourcing** [https://learn.microsoft.com/previous-versions/msp-n-p/jj591559\(v=pandp.10\)](https://docs.microsoft.com/previous-versions/msp-n-p/jj591559(v=pandp.10))
 
-- **Event Store database**. Official site. <https://geteventstore.com/>
+• **Event Store database**. Official site. <https://geteventstore.com/>
+
+• **The CAP Theorem**
+
 - **Patrick Nommensen. Event-Driven Data Management for Microservices** <https://dzone.com/articles/event-driven-data-management-for-microservices-1>
-- **The CAP Theorem** [https://en.wikipedia.org/wiki/CAP\\_theorem](https://en.wikipedia.org/wiki/CAP_theorem)
+- [https://en.wikipedia.org/wiki/CAP\\_theorem](https://en.wikipedia.org/wiki/CAP_theorem)
 - **What is CAP Theorem?** <https://www.quora.com/What-Is-CAP-Theorem-1>
 - **Data Consistency Primer** [https://learn.microsoft.com/previous-versions/msp-n-p/dn589800\(v=pandp.10\)](https://docs.microsoft.com/previous-versions/msp-n-p/dn589800(v=pandp.10))
-- **Rick Saling. The CAP Theorem: Why "Everything is Different" with the Cloud and Internet** [https://learn.microsoft.com/archive/blogs/rickatmicrosoft/the-cap-theorem-why-everything](https://docs.microsoft.com/archive/blogs/rickatmicrosoft/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/)[is-different-with-the-cloud-and-internet/](https://docs.microsoft.com/archive/blogs/rickatmicrosoft/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/)
+- **Internet** [https://learn.microsoft.com/archive/blogs/rickatmicrosoft/the-cap-theorem-why-everything](https://docs.microsoft.com/archive/blogs/rickatmicrosoft/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/)[is-different-with-the-cloud-and-internet/](https://docs.microsoft.com/archive/blogs/rickatmicrosoft/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/)
+
+• **Rick Saling. The CAP Theorem: Why "Everything is Different" with the Cloud and** 
+
 - **Eric Brewer. CAP Twelve Years Later: How the "Rules" Have Changed** <https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed>
 - **CAP, PACELC, and Microservices** <https://ardalis.com/cap-pacelc-and-microservices/>
 - **Azure Service Bus. Brokered Messaging: Duplicate Detection** [https://github.com/microsoftarchive/msdn-code-gallery](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Windows%20Azure%20Product%20Team/Brokered%20Messaging%20Duplicate%20Detection)[microsoft/tree/master/Windows%20Azure%20Product%20Team/Brokered%20Messaging%20](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Windows%20Azure%20Product%20Team/Brokered%20Messaging%20Duplicate%20Detection) [Duplicate%20Detection](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Windows%20Azure%20Product%20Team/Brokered%20Messaging%20Duplicate%20Detection)
 - **Reliability Guide** (RabbitMQ documentation) <https://www.rabbitmq.com/reliability.html#consumer>
 
-# <span id="page-166-0"></span>Testing ASP.NET Core services and web apps
+## <span id="page-166-0"></span>Testing ASP.NET Core services and web apps
 
 Controllers are a central part of any ASP.NET Core API service and ASP.NET MVC Web application. As such, you should have confidence they behave as intended for your application. Automated tests can provide you with this confidence and can detect errors before they reach production.
 
@@ -4141,7 +4138,7 @@ You need to test how the controller behaves based on valid or invalid inputs, an
 - Functional tests for each microservice. These tests ensure that the application works as expected from the user's perspective.
 - Service tests. These tests ensure that end-to-end service use cases, including testing multiple services at the same time, are tested. For this type of testing, you need to prepare the environment first. In this case, it means starting the services (for example, by using dockercompose up).
 
-# **Implementing unit tests for ASP.NET Core Web APIs**
+## **Implementing unit tests for ASP.NET Core Web APIs**
 
 Unit testing involves testing a part of an application in isolation from its infrastructure and dependencies. When you unit test controller logic, only the content of a single action or method is tested, not the behavior of its dependencies or of the framework itself. Unit tests do not detect issues in the interaction between components—that is the purpose of integration testing.
 
@@ -4172,7 +4169,7 @@ public async Task Get_order_detail_success()
 }
 ```
 
-# **Implementing integration and functional tests for each microservice**
+## **Implementing integration and functional tests for each microservice**
 
 As noted, integration tests and functional tests have different purposes and goals. However, the way you implement both when testing ASP.NET Core controllers is similar, so in this section we concentrate on integration tests.
 
@@ -4211,7 +4208,7 @@ public class PrimeWebDefaultRequestShould
 }
 ```
 
-### **Additional resources**
+## **Additional resources**
 
 - **Steve Smith. Testing controllers** (ASP.NET Core) [https://learn.microsoft.com/aspnet/core/mvc/controllers/testing](https://docs.microsoft.com/aspnet/core/mvc/controllers/testing)
 - **Steve Smith. Integration testing** (ASP.NET Core) [https://learn.microsoft.com/aspnet/core/test/integration-tests](https://docs.microsoft.com/aspnet/core/test/integration-tests)
@@ -4221,7 +4218,7 @@ public class PrimeWebDefaultRequestShould
 - **Moq**. GitHub repo. <https://github.com/moq/moq>
 - **NUnit**. Official site. <https://nunit.org/>
 
-# **Implementing service tests on a multi-container application**
+### **Implementing service tests on a multi-container application**
 
 As noted earlier, when you test multi-container applications, all the microservices need to be running within the Docker host or container cluster. End-to-end service tests that include multiple operations involving several microservices require you to deploy and start the whole application in the Docker host by running docker-compose up (or a comparable mechanism if you are using an orchestrator). Once the whole application and all its services is running, you can execute end-to-end integration and functional tests.
 
@@ -4229,7 +4226,7 @@ There are a few approaches you can use. In the docker-compose.yml file that you 
 
 Once the compose application is up and running, you can take advantage of breakpoints and exceptions if you are running Visual Studio. Or you can run the integration tests automatically in your CI pipeline in Azure DevOps Services or any other CI/CD system that supports Docker containers.
 
-# <span id="page-169-0"></span>**Testing in eShopOnContainers**
+### <span id="page-169-0"></span>**Testing in eShopOnContainers**
 
 The reference application (eShopOnContainers) tests were recently restructured and now there are four categories:
 
@@ -4240,7 +4237,7 @@ The reference application (eShopOnContainers) tests were recently restructured a
 
 While unit and integration tests are organized in a test folder within the microservice project, application and load tests are managed separately under the root folder, as shown in Figure 6-25.
 
-![](_page_170_Picture_3.jpeg)
+![](_page_170_Figure_3.jpeg)
 
 *Figure 6-25. Test folder structure in eShopOnContainers*
 
@@ -4264,7 +4261,7 @@ services:
  image: mongo
 ```
 
-### **docker-compose-test.override.yml**
+## **docker-compose-test.override.yml**
 
 ```
 version: '3.4'
@@ -4293,12 +4290,12 @@ docker-compose -f docker-compose-test.yml -f docker-compose-test.override.yml up
 
 As you can see, these docker-compose files only start the Redis, RabbitMQ, SQL Server, and MongoDB microservices.
 
-# **Additional resources**
+### **Additional resources**
 
 - **Unit & Integration testing** on the eShopOnContainers [https://github.com/dotnet-architecture/eShopOnContainers/wiki/Unit-and-integration](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Unit-and-integration-testing)[testing](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Unit-and-integration-testing)
 - **Load testing** on the eShopOnContainers <https://github.com/dotnet-architecture/eShopOnContainers/wiki/Load-testing>
 
-# <span id="page-171-0"></span>Implement background tasks in microservices with IHostedService and the BackgroundService class
+## <span id="page-171-0"></span>Implement background tasks in microservices with IHostedService and the BackgroundService class
 
 Background tasks and scheduled jobs are something you might need to use in any application, whether or not it follows the microservices architecture pattern. The difference when using a microservices architecture is that you can implement the background task in a separate process/container for hosting so you can scale it down/up based on your need.
 
@@ -4320,7 +4317,7 @@ Therefore, you can choose and either create a specialized host-process with IHos
 
 Each approach has pros and cons depending on your business and scalability needs. The bottom line is basically that if your background tasks have nothing to do with HTTP (IWebHost) you should use IHost.
 
-# <span id="page-173-0"></span>**Registering hosted services in your WebHost or Host**
+## <span id="page-173-0"></span>**Registering hosted services in your WebHost or Host**
 
 Let's drill down further on the IHostedService interface since its usage is pretty similar in a WebHost or in a Host.
 
@@ -4351,7 +4348,7 @@ The IHostedService background task execution is coordinated with the lifetime of
 
 Without using IHostedService, you could always start a background thread to run any task. The difference is precisely at the app's shutdown time when that thread would simply be killed without having the opportunity to run graceful clean-up actions.
 
-# <span id="page-173-1"></span>**The IHostedService interface**
+### <span id="page-173-1"></span>**The IHostedService interface**
 
 When you register an IHostedService, .NET calls the StartAsync() and StopAsync() methods of your IHostedService type during application start and stop respectively. For more details, see [IHostedService interface.](https://docs.microsoft.com/aspnet/core/fundamentals/host/hosted-services#ihostedservice-interface)
 
@@ -4359,7 +4356,7 @@ As you can imagine, you can create multiple implementations of IHostedService an
 
 As a developer, you are responsible for handling the stopping action of your services when StopAsync() method is triggered by the host.
 
-# <span id="page-174-0"></span>**Implementing IHostedService with a custom hosted service class deriving from the BackgroundService base class**
+## <span id="page-174-0"></span>**Implementing IHostedService with a custom hosted service class deriving from the BackgroundService base class**
 
 You could go ahead and create your custom hosted service class from scratch and implement the IHostedService, as you need to do when using .NET Core 2.0 and later.
 
@@ -4478,7 +4475,7 @@ WebHost.CreateDefaultBuilder(args)
  ...
 ```
 
-# **Summary class diagram**
+### **Summary class diagram**
 
 The following image shows a visual summary of the classes and interfaces involved when implementing IHostedServices.
 
@@ -4488,7 +4485,7 @@ The following image shows a visual summary of the classes and interfaces involve
 
 Class diagram: IWebHost and IHost can host many services, which inherit from BackgroundService, which implements IHostedService.
 
-# **Deployment considerations and takeaways**
+## **Deployment considerations and takeaways**
 
 It is important to note that the way you deploy your ASP.NET Core WebHost or .NET Host might impact the final solution. For instance, if you deploy your WebHost on IIS or a regular Azure App Service, your host can be shut down because of app pool recycles. But if you are deploying your host as a container into an orchestrator like Kubernetes, you can control the assured number of live instances of your host. In addition, you could consider other approaches in the cloud especially made for these scenarios, like Azure Functions. Finally, if you need the service to be running all the time and are deploying on a Windows Server you could use a Windows Service.
 
@@ -4496,19 +4493,19 @@ But even for a WebHost deployed into an app pool, there are scenarios like repop
 
 The IHostedService interface provides a convenient way to start background tasks in an ASP.NET Core web application (in .NET Core 2.0 and later versions) or in any process/host (starting in .NET Core 2.1 with IHost). Its main benefit is the opportunity you get with the graceful cancellation to clean-up the code of your background tasks when the host itself is shutting down.
 
-# <span id="page-177-0"></span>**Additional resources**
+### <span id="page-177-0"></span>**Additional resources**
 
 - **Building a scheduled task in ASP.NET Core/Standard 2.0** [https://blog.maartenballiauw.be/post/2017/08/01/building-a-scheduled-cache-updater-in](https://blog.maartenballiauw.be/post/2017/08/01/building-a-scheduled-cache-updater-in-aspnet-core-2.html)[aspnet-core-2.html](https://blog.maartenballiauw.be/post/2017/08/01/building-a-scheduled-cache-updater-in-aspnet-core-2.html)
 - **Implementing IHostedService in ASP.NET Core 2.0** <https://www.stevejgordon.co.uk/asp-net-core-2-ihostedservice>
 - **GenericHost Sample using ASP.NET Core 2.1** <https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample>
 
-# <span id="page-177-1"></span>Implement API Gateways with Ocelot
+## <span id="page-177-1"></span>Implement API Gateways with Ocelot
 
 ### **Important**
 
 The reference microservice application [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) is currently using features provided by [Envoy](https://www.envoyproxy.io/) to implement the API Gateway instead of the earlier referenced [Ocelot.](https://github.com/ThreeMammals/Ocelot) We made this design choice because of Envoy's built-in support for the WebSocket protocol, required by the new gRPC inter-service communications implemented in eShopOnContainers. However, we've retained this section in the guide so you can consider Ocelot as a simple, capable, and lightweight API Gateway suitable for production-grade scenarios. Also, latest Ocelot version contains a breaking change on its json schema. Consider using Ocelot < v16.0.0, or use the key Routes instead of ReRoutes.
 
-# <span id="page-177-2"></span>**Architect and design your API Gateways**
+### <span id="page-177-2"></span>**Architect and design your API Gateways**
 
 The following architecture diagram shows how API Gateways were implemented with Ocelot in eShopOnContainers.
 
@@ -4532,13 +4529,11 @@ We delve into more details in the previous section Creating composite UI based o
 
 As a key takeaway, for many medium- and large-size applications, using a custom-built API Gateway product is usually a good approach, but not as a single monolithic aggregator or unique central custom API Gateway unless that API Gateway allows multiple independent configuration areas for the several development teams creating autonomous microservices.
 
-# **Sample microservices/containers to reroute through the API Gateways**
+## **Sample microservices/containers to reroute through the API Gateways**
 
 As an example, eShopOnContainers has around six internal microservice-types that have to be published through the API Gateways, as shown in the following image.
 
 ![](_page_179_Picture_2.jpeg)
-
-*Figure 6-29. Microservice folders in eShopOnContainers solution in Visual Studio*
 
 About the Identity service, in the design it's left out of the API Gateway routing because it's the only cross-cutting concern in the system, although with Ocelot it's also possible to include it as part of the rerouting lists.
 
@@ -4631,7 +4626,7 @@ At this point, you could set a breakpoint in C# code in Visual Studio, test the 
 
 However, direct-access communication to the microservice, in this case through the external port 5101, is precisely what you want to avoid in your application. And you can avoid that by setting the additional level of indirection of the API Gateway (Ocelot, in this case). That way, the client app won't directly access the microservice.
 
-# <span id="page-182-0"></span>**Implementing your API Gateways with Ocelot**
+### <span id="page-182-0"></span>**Implementing your API Gateways with Ocelot**
 
 Ocelot is basically a set of middleware that you can apply in a specific order.
 
@@ -4639,7 +4634,9 @@ Ocelot is designed to work with ASP.NET Core only. The latest version of the pac
 
 You install Ocelot and its dependencies in your ASP.NET Core project with [Ocelot's NuGet package](https://www.nuget.org/packages/Ocelot/), from Visual Studio.
 
-### Install-Package Ocelot
+```
+Install-Package Ocelot
+```
 
 In eShopOnContainers, its API Gateway implementation is a simple ASP.NET Core WebHost project, and Ocelot's middleware handles all the API Gateway features, as shown in the following image:
 
@@ -4764,7 +4761,7 @@ At this point, you could have a single Ocelot API Gateway (ASP.NET Core WebHost)
 
 But as introduced in the architecture and design sections, if you really want to have autonomous microservices, it might be better to split that single monolithic API Gateway into multiple API Gateways and/or BFF (Backend for Frontend). For that purpose, let's see how to implement that approach with Docker containers.
 
-# **Using a single Docker container image to run multiple different API Gateway / BFF container types**
+## **Using a single Docker container image to run multiple different API Gateway / BFF container types**
 
 In eShopOnContainers, we're using a single Docker container image with the Ocelot API Gateway but then, at run time, we create different services/containers for each type of API-Gateway/BFF by providing a different configuration.json file, using a docker volume to access a different PC folder for each service.
 
@@ -4861,11 +4858,9 @@ Because of testing or debugging reasons, if you wanted to directly access to the
 
 ![](_page_189_Picture_0.jpeg)
 
-*Figure 6-36. Direct access to a microservice for testing purposes*
-
 But the application is configured so it accesses all the microservices through the API Gateways, not through the direct port "shortcuts".
 
-# **The Gateway aggregation pattern in eShopOnContainers**
+## **The Gateway aggregation pattern in eShopOnContainers**
 
 As introduced previously, a flexible way to implement requests aggregation is with custom services, by code. You could also implement request aggregation with the [Request Aggregation feature in Ocelot,](https://ocelot.readthedocs.io/en/latest/features/requestaggregation.html#request-aggregation)  but it might not be as flexible as you need. Therefore, the selected way to implement aggregation in eShopOnContainers is with an explicit ASP.NET Core Web API service for each aggregator.
 
@@ -4879,7 +4874,7 @@ In the following diagram, you can also see how the aggregator services work with
 
 Zooming in further, on the "Shopping" business area in the following image, you can see that chattiness between the client apps and the microservices is reduced when using the aggregator services in the API Gateways.
 
-![](_page_190_Picture_2.jpeg)
+![](_page_190_Figure_2.jpeg)
 
 *Figure 6-38. Zoom in vision of the Aggregator services*
 
@@ -4887,15 +4882,13 @@ You can notice how when the diagram shows the possible requests coming from the 
 
 In the case of the "Marketing" business area and microservices, it is a simple use case so there was no need to use aggregators, but it could also be possible, if needed.
 
-# **Authentication and authorization in Ocelot API Gateways**
+### **Authentication and authorization in Ocelot API Gateways**
 
 In an Ocelot API Gateway, you can sit the authentication service, such as an ASP.NET Core Web API service using [IdentityServer](https://docs.microsoft.com/dotnet/architecture/cloud-native/identity-server) providing the auth token, either out or inside the API Gateway.
 
 Since eShopOnContainers is using multiple API Gateways with boundaries based on BFF and business areas, the Identity/Auth service is left out of the API Gateways, as highlighted in yellow in the following diagram.
 
 ![](_page_191_Figure_0.jpeg)
-
-*Figure 6-39. Position of the Identity service in eShopOnContainers*
 
 However, Ocelot also supports sitting the Identity/Auth microservice within the API Gateway boundary, as in this other diagram.
 
@@ -5009,7 +5002,7 @@ If you try to access any secured microservice, like the Basket microservice with
 
 In that example, when the authorization middleware is called, Ocelot will find if the user has the claim type 'UserType' in the token and if the value of that claim is 'employee'. If it isn't, then the user will not be authorized and the response will be 403 forbidden.
 
-# <span id="page-194-0"></span>**Using Kubernetes Ingress plus Ocelot API Gateways**
+## <span id="page-194-0"></span>**Using Kubernetes Ingress plus Ocelot API Gateways**
 
 When using Kubernetes (like in an Azure Kubernetes Service cluster), you usually unify all the HTTP requests through the [Kubernetes Ingress tier](https://kubernetes.io/docs/concepts/services-networking/ingress/) based on *Nginx*.
 
@@ -5037,8 +5030,7 @@ A Kubernetes Ingress acts as a reverse proxy for all traffic to the app, includi
 
 exposes just a few services or endpoints via *ingress*, basically the following list of postfixes on the URLs:
 
-- / for the client SPA web application
-- /webmvc for the client MVC web application
+- / for the client SPA web application • /webmvc for the client MVC web application
 - /webstatus for the client web app showing the status/healthchecks
 - /webshoppingapigw for the web BFF and shopping business processes
 - /webmarketingapigw for the web BFF and marketing business processes
@@ -5049,7 +5041,7 @@ When deploying to Kubernetes, each Ocelot API Gateway is using a different "conf
 
 In the source code files of eShopOnContainers, the original "configuration.json" files can be found within the k8s/ocelot/ folder. There's one file for each BFF/APIGateway.
 
-# <span id="page-195-0"></span>**Additional cross-cutting features in an Ocelot API Gateway**
+## <span id="page-195-0"></span>**Additional cross-cutting features in an Ocelot API Gateway**
 
 There are other important features to research and use, when using an Ocelot API Gateway, described in the following links.
 
@@ -5076,7 +5068,7 @@ This section first provides details on the simplified CQRS patterns used in the 
 
 DDD is a large topic with a rich set of resources for learning. You can start with books like [Domain-](https://domainlanguage.com/ddd/)[Driven Design](https://domainlanguage.com/ddd/) by Eric Evans and additional materials from Vaughn Vernon, Jimmy Nilsson, Greg Young, Udi Dahan, Jimmy Bogard, and many other DDD/CQRS experts. But most of all you need to try to learn how to apply DDD techniques from the conversations, whiteboarding, and domain modeling sessions with the experts in your concrete business domain.
 
-# **Additional resources**
+### **Additional resources**
 
 ### **DDD (Domain-Driven Design)**
 
@@ -5084,7 +5076,7 @@ DDD is a large topic with a rich set of resources for learning. You can start wi
 - **Martin Fowler. Domain-Driven Design** <https://martinfowler.com/tags/domain%20driven%20design.html>
 - **Jimmy Bogard. Strengthening your domain: a primer** <https://lostechies.com/jimmybogard/2010/02/04/strengthening-your-domain-a-primer/>
 
-### **DDD books**
+## **DDD books**
 
 - **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software** [https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)[Software/dp/0321125215/](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
 - **Eric Evans. Domain-Driven Design Reference: Definitions and Pattern Summaries** [https://www.amazon.com/Domain-Driven-Design-Reference-Definitions-2014-09-](https://www.amazon.com/Domain-Driven-Design-Reference-Definitions-2014-09-22/dp/B01N8YB4ZO/) [22/dp/B01N8YB4ZO/](https://www.amazon.com/Domain-Driven-Design-Reference-Definitions-2014-09-22/dp/B01N8YB4ZO/)
@@ -5099,7 +5091,7 @@ DDD is a large topic with a rich set of resources for learning. You can start wi
 
 • **Julie Lerman and Steve Smith. Domain-Driven Design Fundamentals** <https://www.pluralsight.com/courses/fundamentals-domain-driven-design>
 
-# <span id="page-198-0"></span>Apply simplified CQRS and DDD patterns in a microservice
+## <span id="page-198-0"></span>Apply simplified CQRS and DDD patterns in a microservice
 
 CQRS is an architectural pattern that separates the models for reading and writing data. The related term [Command Query Separation \(CQS\)](https://martinfowler.com/bliki/CommandQuerySeparation.html) was originally defined by Bertrand Meyer in his book *Object-Oriented Software Construction*. The basic idea is that you can divide a system's operations into two sharply separated categories:
 
@@ -5124,11 +5116,11 @@ The Logical "Ordering" Microservice includes its Ordering database, which can be
 
 The application layer can be the Web API itself. The important design aspect here is that the microservice has split the queries and ViewModels (data models especially created for the client applications) from the commands, domain model, and transactions following the CQRS pattern. This approach keeps the queries independent from restrictions and constraints coming from DDD patterns that only make sense for transactions and updates, as explained in later sections.
 
-# <span id="page-200-0"></span>**Additional resources**
+### <span id="page-200-0"></span>**Additional resources**
 
 • **Greg Young. Versioning in an Event Sourced System** (Free to read online e-book) <https://leanpub.com/esversioning/read>
 
-# <span id="page-200-1"></span>Apply CQRS and CQS approaches in a DDD microservice in eShopOnContainers
+## <span id="page-200-1"></span>Apply CQRS and CQS approaches in a DDD microservice in eShopOnContainers
 
 The design of the ordering microservice at the eShopOnContainers reference application is based on CQRS principles. However, it uses the simplest approach, which is just separating the queries from the commands and using the same database for both actions.
 
@@ -5150,7 +5142,7 @@ In this guide and in eShopOnContainers (specifically the ordering microservice) 
 
 When you use this approach, any updates to your model that impact how entities are persisted to a SQL database also need separate updates to SQL queries used by Dapper or any other separate (non-EF) approaches to querying.
 
-# <span id="page-201-0"></span>**CQRS and DDD patterns are not top-level architectures**
+### <span id="page-201-0"></span>**CQRS and DDD patterns are not top-level architectures**
 
 It's important to understand that CQRS and most DDD patterns (like DDD layers or a domain model with aggregates) are not architectural styles, but only architecture patterns. Microservices, SOA, and event-driven architecture (EDA) are examples of architectural styles. They describe a system of many components, such as many microservices. CQRS and DDD patterns describe something inside a single system or component; in this case, something inside a microservice.
 
@@ -5158,13 +5150,13 @@ Different Bounded Contexts (BCs) will employ different patterns. They have diffe
 
 There is only one application architecture: the architecture of the system or end-to-end application you are designing (for example, the microservices architecture). However, the design of each Bounded Context or microservice within that application reflects its own tradeoffs and internal design decisions at an architecture patterns level. Do not try to apply the same architectural patterns as CQRS or DDD everywhere.
 
-# **Additional resources**
+## **Additional resources**
 
 - **Martin Fowler. CQRS** <https://martinfowler.com/bliki/CQRS.html>
 - **Greg Young. CQRS Documents** [https://cqrs.files.wordpress.com/2010/11/cqrs\\_documents.pdf](https://cqrs.files.wordpress.com/2010/11/cqrs_documents.pdf)
 - **Udi Dahan. Clarified CQRS** <https://udidahan.com/2009/12/09/clarified-cqrs/>
 
-# <span id="page-202-0"></span>Implement reads/queries in a CQRS microservice
+## <span id="page-202-0"></span>Implement reads/queries in a CQRS microservice
 
 For reads/queries, the ordering microservice from the eShopOnContainers reference application implements the queries independently from the DDD model and transactional area. This implementation was done primarily because the demands for queries and for transactions are drastically different. Writes execute transactions that must be compliant with the domain logic. Queries, on the other hand, are idempotent and can be segregated from the domain rules.
 
@@ -5184,7 +5176,7 @@ Since this approach is simple, the code required for the queries side (such as c
 
 *Figure 7-4. Queries in the Ordering microservice in eShopOnContainers*
 
-# <span id="page-203-0"></span>**Use ViewModels specifically made for client apps, independent from domain model constraints**
+## <span id="page-203-0"></span>**Use ViewModels specifically made for client apps, independent from domain model constraints**
 
 Since the queries are performed to obtain the data needed by the client applications, the returned type can be specifically made for the clients, based on the data returned by the queries. These models, or Data Transfer Objects (DTOs), are called ViewModels.
 
@@ -5192,7 +5184,7 @@ The returned data (ViewModel) can be the result of joining data from multiple en
 
 The ViewModels can be static types defined in classes (as is implemented in the ordering microservice). Or they can be created dynamically based on the queries performed, which is agile for developers.
 
-# <span id="page-203-1"></span>**Use Dapper as a micro ORM to perform queries**
+### <span id="page-203-1"></span>**Use Dapper as a micro ORM to perform queries**
 
 You can use any micro ORM, Entity Framework Core, or even plain ADO.NET for querying. In the sample application, Dapper was selected for the ordering microservice in eShopOnContainers as a good example of a popular micro ORM. It can run plain SQL queries with great performance, because it's a light framework. Using Dapper, you can write a SQL query that can access and join multiple tables.
 
@@ -5202,13 +5194,13 @@ You also need to add a using directive so your code has access to the Dapper ext
 
 When you use Dapper in your code, you directly use the [SqlConnection](https://learn.microsoft.com/dotnet/api/microsoft.data.sqlclient.sqlconnection) class available in the [Microsoft.Data.SqlClient](https://learn.microsoft.com/dotnet/api/microsoft.data.sqlclient) namespace. Through the QueryAsync method and other extension methods that extend the [SqlConnection](https://learn.microsoft.com/dotnet/api/microsoft.data.sqlclient.sqlconnection) class, you can run queries in a straightforward and performant way.
 
-# <span id="page-204-0"></span>**Dynamic versus static ViewModels**
+## <span id="page-204-0"></span>**Dynamic versus static ViewModels**
 
 When returning ViewModels from the server-side to client apps, you can think about those ViewModels as DTOs (Data Transfer Objects) that can be different to the internal domain entities of your entity model because the ViewModels hold the data the way the client app needs. Therefore, in many cases, you can aggregate data coming from multiple domain entities and compose the ViewModels precisely according to how the client app needs that data.
 
 Those ViewModels or DTOs can be defined explicitly (as data holder classes), like the OrderSummary class shown in a later code snippet. Or, you could just return dynamic ViewModels or dynamic DTOs based on the attributes returned by your queries as a dynamic type.
 
-# **ViewModel as dynamic type**
+### **ViewModel as dynamic type**
 
 As shown in the following code, a ViewModel can be directly returned by the queries by just returning a *dynamic* type that internally is based on the attributes returned by a query. That means that the subset of attributes to be returned is based on the query itself. Therefore, if you add a new column to the query or join, that data is dynamically added to the returned ViewModel.
 
@@ -5248,7 +5240,7 @@ The important point is that by using a dynamic type, the returned collection of 
 
 **Cons:** In the long term, dynamic types can negatively impact the clarity and the compatibility of a service with client apps. In addition, middleware software like Swashbuckle cannot provide the same level of documentation on returned types if using dynamic types.
 
-# **ViewModel as predefined DTO classes**
+## **ViewModel as predefined DTO classes**
 
 **Pros**: Having static, predefined ViewModel classes, like "contracts" based on explicit DTO classes, is definitely better for public APIs but also for long-term microservices, even if they are only used by the same application.
 
@@ -5291,7 +5283,7 @@ public class OrderQueries : IOrderQueries
 }
 ```
 
-### **Describe response types of Web APIs**
+## **Describe response types of Web APIs**
 
 Developers consuming web APIs and microservices are most concerned with what is returned specifically response types and error codes (if not standard). The response types are handled in the XML comments and data annotations.
 
@@ -5344,7 +5336,7 @@ In the following image, you can see how Swagger UI shows the ResponseType inform
 
 The image shows some example values based on the ViewModel types and the possible HTTP status codes that can be returned.
 
-# <span id="page-207-0"></span>**Additional resources**
+### <span id="page-207-0"></span>**Additional resources**
 
 - **Dapper** <https://github.com/StackExchange/dapper-dot-net>
 - **Julie Lerman. Data Points - Dapper, Entity Framework and Hybrid Apps (MSDN magazine article)**
@@ -5354,7 +5346,7 @@ The image shows some example values based on the ViewModel types and the possibl
 - **ASP.NET Core Web API Help Pages using Swagger** [https://learn.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using](https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio)[swagger?tabs=visual-studio](https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio)
 - **Create record types** [https://learn.microsoft.com/dotnet/csharp/whats-new/tutorials/records](https://docs.microsoft.com/dotnet/csharp/tutorials/records)
 
-# <span id="page-208-0"></span>Design a DDD-oriented microservice
+## <span id="page-208-0"></span>Design a DDD-oriented microservice
 
 Domain-driven design (DDD) advocates modeling based on the reality of business as relevant to your use cases. In the context of building applications, DDD talks about problems as domains. It describes independent problem areas as Bounded Contexts (each Bounded Context correlates to a microservice), and emphasizes a common language to talk about these problems. It also suggests many technical concepts and patterns, like domain entities with rich models (no [anemic-domain](https://martinfowler.com/bliki/AnemicDomainModel.html)  [model\)](https://martinfowler.com/bliki/AnemicDomainModel.html), value objects, aggregates, and aggregate root (or root entity) rules to support the internal implementation. This section introduces the design and implementation of those internal patterns.
 
@@ -5362,7 +5354,7 @@ Sometimes these DDD technical rules and patterns are perceived as obstacles that
 
 Where to draw the boundaries is the key task when designing and defining a microservice. DDD patterns help you understand the complexity in the domain. For the domain model for each Bounded Context, you identify and define the entities, value objects, and aggregates that model your domain. You build and refine a domain model that is contained within a boundary that defines your context. And that is explicit in the form of a microservice. The components within those boundaries end up being your microservices, although in some cases a BC or business microservices can be composed of several physical services. DDD is about boundaries and so are microservices.
 
-# <span id="page-208-1"></span>**Keep the microservice context boundaries relatively small**
+## <span id="page-208-1"></span>**Keep the microservice context boundaries relatively small**
 
 Determining where to place boundaries between Bounded Contexts balances two competing goals. First, you want to initially create the smallest possible microservices, although that should not be the main driver; you should create a boundary around things that need cohesion. Second, you want to avoid chatty communications between microservices. These goals can contradict one another. You should balance them by decomposing the system into as many small microservices as you can until you see communication boundaries growing quickly with each additional attempt to separate a new Bounded Context. Cohesion is key within a single bounded context.
 
@@ -5370,9 +5362,9 @@ It is similar to the [Inappropriate Intimacy code smell](https://sourcemaking.co
 
 Another way to look at this aspect is autonomy. If a microservice must rely on another service to directly service a request, it is not truly autonomous.
 
-# <span id="page-209-0"></span>**Layers in DDD microservices**
+## <span id="page-209-0"></span>**Layers in DDD microservices** Most enterprise applications with significant business and technical complexity are defined by
 
-Most enterprise applications with significant business and technical complexity are defined by multiple layers. The layers are a logical artifact, and are not related to the deployment of the service. They exist to help developers manage the complexity in the code. Different layers (like the domain model layer versus the presentation layer, etc.) might have different types, which mandate translations between those types.
+multiple layers. The layers are a logical artifact, and are not related to the deployment of the service. They exist to help developers manage the complexity in the code. Different layers (like the domain model layer versus the presentation layer, etc.) might have different types, which mandate translations between those types.
 
 For example, an entity could be loaded from the database. Then part of that information, or an aggregation of information including additional data from other entities, can be sent to the client UI through a REST Web API. The point here is that the domain entity is contained within the domain model layer and should not be propagated to other areas that it does not belong to, like to the presentation layer.
 
@@ -5388,11 +5380,11 @@ Figure 7-5 shows how a layered design is implemented in the eShopOnContainers ap
 
 The three layers in a DDD microservice like Ordering. Each layer is a VS project: Application layer is Ordering.API, Domain layer is Ordering.Domain and the Infrastructure layer is Ordering.Infrastructure. You want to design the system so that each layer communicates only with certain other layers. That approach may be easier to enforce if layers are implemented as different class libraries, because you can clearly identify what dependencies are set between libraries. For instance, the domain model layer should not take a dependency on any other layer (the domain model classes should be Plain Old Class Objects, or [POCO,](https://docs.microsoft.com/dotnet/standard/glossary#poco) classes). As shown in Figure 7-6, the **Ordering.Domain** layer library has dependencies only on the .NET libraries or NuGet packages, but not on any other custom library, such as data library or persistence library.
 
-![](_page_210_Picture_4.jpeg)
+![](_page_210_Figure_4.jpeg)
 
 *Figure 7-6. Layers implemented as libraries allow better control of dependencies between layers*
 
-# **The domain model layer**
+### **The domain model layer**
 
 Eric Evans's excellent book [Domain Driven Design](https://domainlanguage.com/ddd/) says the following about the domain model layer and the application layer.
 
@@ -5400,7 +5392,9 @@ Eric Evans's excellent book [Domain Driven Design](https://domainlanguage.com/dd
 
 The domain model layer is where the business is expressed. When you implement a microservice domain model layer in .NET, that layer is coded as a class library with the domain entities that capture data plus behavior (methods with logic).
 
-Following the [Persistence Ignorance](https://deviq.com/persistence-ignorance/) and the [Infrastructure Ignorance](https://ayende.com/blog/3137/infrastructure-ignorance) principles, this layer must completely ignore data persistence details. These persistence tasks should be performed by the infrastructure layer. Therefore, this layer should not take direct dependencies on the infrastructure, which means that an important rule is that your domain model entity classes should be POCOs.
+completely ignore data persistence details. These persistence tasks should be performed by the infrastructure layer. Therefore, this layer should not take direct dependencies on the infrastructure, which means that an important rule is that your domain model entity classes should be POCOs.
+
+Following the [Persistence Ignorance](https://deviq.com/persistence-ignorance/) and the [Infrastructure Ignorance](https://ayende.com/blog/3137/infrastructure-ignorance) principles, this layer must
 
 Domain entities should not have any direct dependency (like deriving from a base class) on any data access infrastructure framework like Entity Framework or NHibernate. Ideally, your domain entities should not derive from or implement any type defined in any infrastructure framework.
 
@@ -5410,7 +5404,7 @@ Even when it is important to follow the Persistence Ignorance principle for your
 
 Also, this aspect does not mean you can take a model designed for a relational database and directly move it to a NoSQL or document-oriented database. In some entity models, the model might fit, but usually it does not. There are still constraints that your entity model must adhere to, based both on the storage technology and ORM technology.
 
-# **The application layer**
+### **The application layer**
 
 Moving on to the application layer, we can again cite Eric Evans's book [Domain Driven Design:](https://domainlanguage.com/ddd/)
 
@@ -5422,7 +5416,7 @@ Basically, the application logic is where you implement all use cases that depen
 
 The goal is that the domain logic in the domain model layer, its invariants, the data model, and related business rules must be completely independent from the presentation and application layers. Most of all, the domain model layer must not directly depend on any infrastructure framework.
 
-# <span id="page-212-0"></span>**The infrastructure layer**
+## <span id="page-212-0"></span>**The infrastructure layer**
 
 The infrastructure layer is how the data that is initially held in domain entities (in memory) is persisted in databases or another persistent store. An example is using Entity Framework Core code to implement the Repository pattern classes that use a DBContext to persist data in a relational database.
 
@@ -5436,19 +5430,19 @@ Thus, your layers or class libraries and projects should ultimately depend on yo
 
 Dependencies in a DDD Service, the Application layer depends on Domain and Infrastructure, and Infrastructure depends on Domain, but Domain doesn't depend on any layer. This layer design should be independent for each microservice. As noted earlier, you can implement the most complex microservices following DDD patterns, while implementing simpler data-driven microservices (simple CRUD in a single layer) in a simpler way.
 
-### **Additional resources**
+## **Additional resources**
 
 - **DevIQ. Persistence Ignorance principle** <https://deviq.com/persistence-ignorance/>
 - **Oren Eini. Infrastructure Ignorance** <https://ayende.com/blog/3137/infrastructure-ignorance>
 - **Angel Lopez. Layered Architecture In Domain-Driven Design** <https://ajlopez.wordpress.com/2008/09/12/layered-architecture-in-domain-driven-design/>
 
-# <span id="page-213-0"></span>Design a microservice domain model
+## <span id="page-213-0"></span>Design a microservice domain model
 
 *Define one rich domain model for each business microservice or Bounded Context.*
 
 Your goal is to create a single cohesive domain model for each business microservice or Bounded Context (BC). Keep in mind, however, that a BC or business microservice could sometimes be composed of several physical services that share a single domain model. The domain model must capture the rules, behavior, business language, and constraints of the single Bounded Context or business microservice that it represents.
 
-# <span id="page-213-1"></span>**The Domain Entity pattern**
+### <span id="page-213-1"></span>**The Domain Entity pattern**
 
 Entities represent domain objects and are primarily defined by their identity, continuity, and persistence over time, and not only by the attributes that comprise them. As Eric Evans says, "an object primarily defined by its identity is called an Entity." Entities are very important in the domain model, since they are the base for a model. Therefore, you should identify and design them carefully.
 
@@ -5470,7 +5464,7 @@ Figure 7-8 shows a domain entity that implements not only data attributes but op
 
 A domain model entity implements behaviors through methods, that is, it's not an "anemic" model. Of course, sometimes you can have entities that do not implement any logic as part of the entity class. This can happen in child entities within an aggregate if the child entity does not have any special logic because most of the logic is defined in the aggregate root. If you have a complex microservice that has logic implemented in the service classes instead of in the domain entities, you could be falling into the anemic domain model, explained in the following section.
 
-# **Rich domain model versus anemic domain model**
+### **Rich domain model versus anemic domain model**
 
 In his post [AnemicDomainModel,](https://martinfowler.com/bliki/AnemicDomainModel.html) Martin Fowler describes an anemic domain model this way:
 
@@ -5486,13 +5480,13 @@ That is why microservices architectures are perfect for a multi-architectural ap
 
 Some people say that the anemic domain model is an anti-pattern. It really depends on what you are implementing. If the microservice you are creating is simple enough (for example, a CRUD service), following the anemic domain model it is not an anti-pattern. However, if you need to tackle the complexity of a microservice's domain that has a lot of ever-changing business rules, the anemic domain model might be an anti-pattern for that microservice or Bounded Context. In that case, designing it as a rich model with entities containing data plus behavior as well as implementing additional DDD patterns (aggregates, value objects, etc.) might have huge benefits for the long-term success of such a microservice.
 
-### **Additional resources**
+## **Additional resources**
 
 - **DevIQ. Domain Entity** <https://deviq.com/entity/>
 - **Martin Fowler. The Domain Model** <https://martinfowler.com/eaaCatalog/domainModel.html>
 - **Martin Fowler. The Anemic Domain Model** <https://martinfowler.com/bliki/AnemicDomainModel.html>
 
-# **The Value Object pattern**
+### **The Value Object pattern**
 
 As Eric Evans has noted, "Many objects do not have conceptual identity. These objects describe certain characteristics of a thing."
 
@@ -5506,14 +5500,16 @@ Value objects are hard to manage in relational databases and ORMs like Entity Fr
 
 EF Core 2.0 and later versions include the [Owned Entities](https://devblogs.microsoft.com/dotnet/announcing-entity-framework-core-2-0/#owned-entities-and-table-splitting) feature that makes it easier to handle value objects, as we'll see in detail later on.
 
-### **Additional resources**
+## **Additional resources**
+
+• **Value Object**
 
 - **Martin Fowler. Value Object pattern** <https://martinfowler.com/bliki/ValueObject.html>
-- **Value Object** <https://deviq.com/value-object/>
+- <https://deviq.com/value-object/>
 - **Value Objects in Test-Driven Development** <https://leanpub.com/tdd-ebook/read#leanpub-auto-value-objects>
 - **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of value objects) [https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)[Software/dp/0321125215/](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
 
-# **The Aggregate pattern**
+### **The Aggregate pattern**
 
 A domain model contains clusters of different data entities and processes that can control a significant area of functionality, such as order fulfillment or inventory. A more fine-grained DDD unit is the aggregate, which describes a cluster or group of entities and behaviors that can be treated as a cohesive unit.
 
@@ -5521,7 +5517,7 @@ You usually define an aggregate based on the transactions that you need. A class
 
 Identifying aggregates can be hard. An aggregate is a group of objects that must be consistent together, but you cannot just pick a group of objects and label them an aggregate. You must start with a domain concept and think about the entities that are used in the most common transactions related to that concept. Those entities that need to be transactionally consistent are what forms an aggregate. Thinking about transaction operations is probably the best way to identify aggregates.
 
-# **The Aggregate Root or Root Entity pattern**
+### **The Aggregate Root or Root Entity pattern**
 
 An aggregate is composed of at least one entity: the aggregate root, also called root entity or primary entity. Additionally, it can have multiple child entities and value objects, with all entities and objects working together to implement required behavior and transactions.
 
@@ -5554,20 +5550,23 @@ public class Order : Entity, IAggregateRoot
 
 Identifying and working with aggregates requires research and experience. For more information, see the following Additional resources list.
 
-### **Additional resources**
+## **Additional resources**
 
 - **Vaughn Vernon. Effective Aggregate Design - Part I: Modeling a Single Aggregate** (from [https://dddcommunity.org/\)](https://dddcommunity.org/) [https://dddcommunity.org/wp-content/uploads/files/pdf\\_articles/Vernon\\_2011\\_1.pdf](https://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_1.pdf)
-- **Vaughn Vernon. Effective Aggregate Design - Part II: Making Aggregates Work Together** (from [https://dddcommunity.org/\)](https://dddcommunity.org/) [https://dddcommunity.org/wp-content/uploads/files/pdf\\_articles/Vernon\\_2011\\_2.pdf](https://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_2.pdf)
+- **Together** (from [https://dddcommunity.org/\)](https://dddcommunity.org/) [https://dddcommunity.org/wp-content/uploads/files/pdf\\_articles/Vernon\\_2011\\_2.pdf](https://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_2.pdf)
+
+• **Vaughn Vernon. Effective Aggregate Design - Part II: Making Aggregates Work** 
+
 - **Vaughn Vernon. Effective Aggregate Design - Part III: Gaining Insight Through Discovery** (from [https://dddcommunity.org/\)](https://dddcommunity.org/) [https://dddcommunity.org/wp-content/uploads/files/pdf\\_articles/Vernon\\_2011\\_3.pdf](https://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_3.pdf)
 - **Sergey Grybniak. DDD Tactical Design Patterns** [https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-](https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part)[Patterns-Part](https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part)
 - **Chris Richardson. Developing Transactional Microservices Using Aggregates** <https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-1-richardson>
 - **DevIQ. The Aggregate pattern** <https://deviq.com/aggregate-pattern/>
 
-# <span id="page-218-0"></span>Implement a microservice domain model with .NET
+## <span id="page-218-0"></span>Implement a microservice domain model with .NET
 
 In the previous section, the fundamental design principles and patterns for designing a domain model were explained. Now it's time to explore possible ways to implement the domain model by using .NET (plain C# code) and EF Core. Your domain model will be composed simply of your code. It will have just the EF Core model requirements, but not real dependencies on EF. You shouldn't have hard dependencies or references to EF Core or any other ORM in your domain model.
 
-# <span id="page-218-1"></span>**Domain model structure in a custom .NET Standard Library**
+### <span id="page-218-1"></span>**Domain model structure in a custom .NET Standard Library**
 
 The folder organization used for the eShopOnContainers reference application demonstrates the DDD model for the application. You might find that a different folder organization more clearly communicates the design choices made for your application. As you can see in Figure 7-10, in the ordering domain model there are two aggregates, the order aggregate and the buyer aggregate. Each aggregate is a group of domain entities and value objects, although you could have an aggregate composed of a single domain entity (the aggregate root or root entity) as well.
 
@@ -5579,19 +5578,17 @@ Additionally, the domain model layer includes the repository contracts (interfac
 
 You can also see a [SeedWork](https://martinfowler.com/bliki/Seedwork.html) folder that contains custom base classes that you can use as a base for your domain entities and value objects, so you don't have redundant code in each domain's object class.
 
-# <span id="page-219-0"></span>**Structure aggregates in a custom .NET Standard library**
+### <span id="page-219-0"></span>**Structure aggregates in a custom .NET Standard library**
 
 An aggregate refers to a cluster of domain objects grouped together to match transactional consistency. Those objects could be instances of entities (one of which is the aggregate root or root entity) plus any additional value objects.
 
 Transactional consistency means that an aggregate is guaranteed to be consistent and up to date at the end of a business action. For example, the order aggregate from the eShopOnContainers ordering microservice domain model is composed as shown in Figure 7-11.
 
-![](_page_220_Picture_0.jpeg)
-
-*Figure 7-11. The order aggregate in Visual Studio solution*
+![](_page_220_Figure_0.jpeg)
 
 If you open any of the files in an aggregate folder, you can see how it's marked as either a custom base class or interface, like entity or value object, as implemented in the [SeedWork](https://github.com/dotnet-architecture/eShopOnContainers/tree/main/src/Services/Ordering/Ordering.Domain/SeedWork) folder.
 
-# <span id="page-220-0"></span>**Implement domain entities as POCO classes**
+## <span id="page-220-0"></span>**Implement domain entities as POCO classes**
 
 You implement a domain model in .NET by creating POCO classes that implement your domain entities. In the following example, the Order class is defined as an entity and also as an aggregate root. Because the Order class derives from the Entity base class, it can reuse common code related to entities. Bear in mind that these base classes and interfaces are defined by you in the domain model project, so it is your code, not infrastructure code from an ORM like EF.
 
@@ -5650,7 +5647,7 @@ A marker interface is sometimes considered as an anti-pattern; however, it's als
 
 Having an aggregate root means that most of the code related to consistency and business rules of the aggregate's entities should be implemented as methods in the Order aggregate root class (for example, AddOrderItem when adding an OrderItem object to the aggregate). You should not create or update OrderItems objects independently or directly; the AggregateRoot class must keep control and consistency of any update operation against its child entities.
 
-# <span id="page-221-0"></span>**Encapsulate data in the Domain Entities**
+### <span id="page-221-0"></span>**Encapsulate data in the Domain Entities**
 
 A common problem in entity models is that they expose collection navigation properties as publicly accessible list types. This allows any collaborator developer to manipulate the contents of these collection types, which may bypass important business rules related to the collection, possibly leaving the object in an invalid state. The solution to this is to expose read-only access to related collections and explicitly provide methods that define ways in which clients can manipulate them.
 
@@ -5669,9 +5666,10 @@ OrderItem myNewOrderItem = new OrderItem(orderId, productId, productName,
 command handlers
 myOrder.OrderItems.Add(myNewOrderItem);
 //...
+In this case, the Add method is purely an operation to add data, with direct access to the OrderItems
 ```
 
-In this case, the Add method is purely an operation to add data, with direct access to the OrderItems collection. Therefore, most of the domain logic, rules, or validations related to that operation with the child entities will be spread across the application layer (command handlers and Web API controllers).
+collection. Therefore, most of the domain logic, rules, or validations related to that operation with the child entities will be spread across the application layer (command handlers and Web API controllers).
 
 If you go around the aggregate root, the aggregate root cannot guarantee its invariants, its validity, or its consistency. Eventually you'll have spaghetti code or transactional script code.
 
@@ -5703,26 +5701,29 @@ When you use Entity Framework Core 1.1 or later, a DDD entity can be better expr
 
 In DDD, you want to update the entity only through methods in the entity (or the constructor) in order to control any invariant and the consistency of the data, so properties are defined only with a get accessor. The properties are backed by private fields. Private members can only be accessed from within the class. However, there is one exception: EF Core needs to set these fields as well (so it can return the object with the proper values).
 
-# **Map properties with only get accessors to the fields in the database table**
+### **Map properties with only get accessors to the fields in the database table**
 
 Mapping properties to database table columns is not a domain responsibility but part of the infrastructure and persistence layer. We mention this here just so you're aware of the new capabilities in EF Core 1.1 or later related to how you can model entities. Additional details on this topic are explained in the infrastructure and persistence section.
 
 When you use EF Core 1.0 or later, within the DbContext you need to map the properties that are defined only with getters to the actual fields in the database table. This is done with the HasField method of the PropertyBuilder class.
 
-# **Map fields without properties**
+### **Map fields without properties**
 
 With the feature in EF Core 1.1 or later to map columns to fields, it's also possible to not use properties. Instead, you can just map columns from a table to fields. A common use case for this is private fields for an internal state that doesn't need to be accessed from outside the entity.
 
 For example, in the preceding OrderAggregate code example, there are several private fields, like the \_paymentMethodId field, that have no related property for either a setter or getter. That field could also be calculated within the order's business logic and used from the order's methods, but it needs to be persisted in the database as well. So in EF Core (since v1.1), there's a way to map a field without a related property to a column in the database. This is also explained in the [Infrastructure layer](#page-212-0) section of this guide.
 
-# **Additional resources**
+## **Additional resources**
 
 - **Vaughn Vernon. Modeling Aggregates with DDD and Entity Framework.** Note that this is *not* Entity Framework Core. <https://kalele.io/blog-posts/modeling-aggregates-with-ddd-and-entity-framework/>
-- **Julie Lerman. Data Points - Coding for Domain-Driven Design: Tips for Data-Focused Devs** [https://learn.microsoft.com/archive/msdn-magazine/2013/august/data-points-coding-for](https://docs.microsoft.com/archive/msdn-magazine/2013/august/data-points-coding-for-domain-driven-design-tips-for-data-focused-devs)[domain-driven-design-tips-for-data-focused-devs](https://docs.microsoft.com/archive/msdn-magazine/2013/august/data-points-coding-for-domain-driven-design-tips-for-data-focused-devs)
+- **Devs** [https://learn.microsoft.com/archive/msdn-magazine/2013/august/data-points-coding-for](https://docs.microsoft.com/archive/msdn-magazine/2013/august/data-points-coding-for-domain-driven-design-tips-for-data-focused-devs)[domain-driven-design-tips-for-data-focused-devs](https://docs.microsoft.com/archive/msdn-magazine/2013/august/data-points-coding-for-domain-driven-design-tips-for-data-focused-devs)
+
+• **Julie Lerman. Data Points - Coding for Domain-Driven Design: Tips for Data-Focused** 
+
 - **Udi Dahan. How to create fully encapsulated Domain Models** <https://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/>
 - **Steve Smith. What is the difference between a DTO and a POCO?** [https://ardalis.com/dto](https://ardalis.com/dto-or-poco/)[or-poco/](https://ardalis.com/dto-or-poco/)
 
-# <span id="page-224-0"></span>Seedwork (reusable base classes and interfaces for your domain model)
+## <span id="page-224-0"></span>Seedwork (reusable base classes and interfaces for your domain model)
 
 The solution folder contains a *SeedWork* folder. This folder contains custom base classes that you can use as a base for your domain entities and value objects. Use these base classes so you don't have redundant code in each domain's object class. The folder for these types of classes is called *SeedWork* and not something like *Framework*. It's called *SeedWork* because the folder contains just a small subset of reusable classes that cannot really be considered a framework. *Seedwork* is a term introduced by [Michael Feathers](https://www.artima.com/forums/flat.jsp?forum=106&thread=8826) and popularized by [Martin Fowler](https://martinfowler.com/bliki/Seedwork.html) but you could also name that folder Common, SharedKernel, or similar.
 
@@ -5732,7 +5733,7 @@ Figure 7-12 shows the classes that form the seedwork of the domain model in the 
 
 This is the type of copy and paste reuse that many developers share between projects, not a formal framework. You can have seedworks in any layer or library. However, if the set of classes and interfaces gets large enough, you might want to create a single class library.
 
-# <span id="page-225-0"></span>**The custom Entity base class**
+## <span id="page-225-0"></span>**The custom Entity base class**
 
 The following code is an example of an Entity base class where you can place code that can be used the same way by any domain entity, such as the entity ID, [equality operators,](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/equality-operators) a domain event list per entity, etc.
 
@@ -5816,7 +5817,7 @@ for-gethashcode
 
 The previous code using a domain event list per entity will be explained in the next sections when focusing on domain events.
 
-# <span id="page-226-0"></span>**Repository contracts (interfaces) in the domain model layer**
+## <span id="page-226-0"></span>**Repository contracts (interfaces) in the domain model layer**
 
 Repository contracts are simply .NET interfaces that express the contract requirements of the repositories to be used for each aggregate.
 
@@ -5846,11 +5847,11 @@ public interface IRepository<T> where T : IAggregateRoot
 }
 ```
 
-# <span id="page-227-0"></span>**Additional resources**
+## <span id="page-227-0"></span>**Additional resources**
 
 • **Martin Fowler. Separated Interface.** <https://www.martinfowler.com/eaaCatalog/separatedInterface.html>
 
-# <span id="page-227-1"></span>Implement value objects
+## <span id="page-227-1"></span>Implement value objects
 
 As discussed in earlier sections about entities and aggregates, identity is fundamental for entities. However, there are many objects and data items in a system that do not require an identity and identity tracking, such as value objects.
 
@@ -5864,7 +5865,7 @@ Figure 7-13 shows the Address value object within the Order aggregate.
 
 As shown in Figure 7-13, an entity is usually composed of multiple attributes. For example, the Order entity can be modeled as an entity with an identity and composed internally of a set of attributes such as OrderId, OrderDate, OrderItems, etc. But the address, which is simply a complex-value composed of country/region, street, city, etc., and has no identity in this domain, must be modeled and treated as a value object.
 
-# <span id="page-228-0"></span>**Important characteristics of value objects**
+### <span id="page-228-0"></span>**Important characteristics of value objects**
 
 There are two main characteristics for value objects:
 
@@ -5877,7 +5878,7 @@ constructed, you must provide the required values, but you must not allow them t
 
 Value objects allow you to perform certain tricks for performance, thanks to their immutable nature. This is especially true in systems where there may be thousands of value object instances, many of which have the same values. Their immutable nature allows them to be reused; they can be interchangeable objects, since their values are the same and they have no identity. This type of optimization can sometimes make a difference between software that runs slowly and software with good performance. Of course, all these cases depend on the application environment and deployment context.
 
-# <span id="page-229-0"></span>**Value object implementation in C#**
+## <span id="page-229-0"></span>**Value object implementation in C#**
 
 In terms of implementation, you can have a value object base class that has basic utility methods like equality based on the comparison between all the attributes (since a value object must not be based on identity) and other fundamental characteristics. The following example shows a value object base class used in the ordering microservice from eShopOnContainers.
 
@@ -5964,9 +5965,7 @@ Having no ID field in a class to be used by Entity Framework (EF) was not possib
 
 It could be argued that value objects, being immutable, should be read-only (that is, have get-only properties), and that's indeed true. However, value objects are usually serialized and deserialized to go through message queues, and being read-only stops the deserializer from assigning values, so you just leave them as private set, which is read-only enough to be practical.
 
-# **Value object comparison semantics**
-
-Two instances of the Address type can be compared using all the following methods:
+### **Value object comparison semantics** Two instances of the Address type can be compared using all the following methods:
 
 ```
 var one = new Address("1 Microsoft Way", "Redmond", "WA", "US", "98052");
@@ -5979,11 +5978,11 @@ Console.WriteLine(one == two); // True
 
 When all the values are the same, the comparisons are correctly evaluated as true. If you didn't choose to overload the == and != operators, then the last comparison of one == two would evaluate as false. For more information, see Overload ValueObject equality operators.
 
-# <span id="page-231-0"></span>**How to persist value objects in the database with EF Core 2.0 and later**
+## <span id="page-231-0"></span>**How to persist value objects in the database with EF Core 2.0 and later**
 
 You just saw how to define a value object in your domain model. But how can you actually persist it into the database using Entity Framework Core since it usually targets entities with identity?
 
-# **Background and older approaches using EF Core 1.1**
+### **Background and older approaches using EF Core 1.1**
 
 As background, a limitation when using EF Core 1.0 and 1.1 was that you could not use [complex types](https://docs.microsoft.com/dotnet/api/system.componentmodel.dataannotations.schema.complextypeattribute) as defined in EF 6.x in the traditional .NET Framework. Therefore, if using EF Core 1.0 or 1.1, you needed to store your value object as an EF entity with an ID field. Then, so it looked more like a value object with no identity, you could hide its ID so you make clear that the identity of a value object is not important in the domain model. You could hide that ID by using the ID as a [shadow property.](https://docs.microsoft.com/ef/core/modeling/shadow-properties)  Since that configuration for hiding the ID in the model is set up in the EF infrastructure level, it would be kind of transparent for your domain model.
 
@@ -6005,9 +6004,9 @@ However, the persistence of that value object into the database was performed li
 
 With EF Core 2.0 and later, there are new and better ways to persist value objects.
 
-# <span id="page-232-0"></span>**Persist value objects as owned entity types in EF Core 2.0 and later**
+## <span id="page-232-0"></span>**Persist value objects as owned entity types in EF Core 2.0 and later** Even with some gaps between the canonical value object pattern in DDD and the owned entity type in
 
-Even with some gaps between the canonical value object pattern in DDD and the owned entity type in EF Core, it's currently the best way to persist value objects with EF Core 2.0 and later. You can see limitations at the end of this section.
+EF Core, it's currently the best way to persist value objects with EF Core 2.0 and later. You can see limitations at the end of this section.
 
 The owned entity type feature was added to EF Core since version 2.0.
 
@@ -6105,13 +6104,13 @@ public class Address
 }
 ```
 
-# **Additional details on owned entity types**
+## **Additional details on owned entity types**
 
 - Owned types are defined when you configure a navigation property to a particular type using the OwnsOne fluent API.
 - The definition of an owned type in our metadata model is a composite of: the owner type, the navigation property, and the CLR type of the owned type.
 - The identity (key) of an owned type instance in our stack is a composite of the identity of the owner type and the definition of the owned type.
 
-### **Owned entities capabilities**
+## **Owned entities capabilities**
 
 - Owned types can reference other entities, either owned (nested owned types) or non-owned (regular reference navigation properties to other entities).
 - You can map the same CLR type as different owned types in the same owner entity through separate navigation properties.
@@ -6120,21 +6119,24 @@ public class Address
 - Can be configured with attribute [Owned], using EF Core 2.1 and later.
 - Can handle collections of owned types (using version 2.2 and later).
 
-# **Owned entities limitations**
+### **Owned entities limitations**
 
 - You can't create a DbSet<T> of an owned type (by design).
 - You can't call ModelBuilder.Entity<T>() on owned types (currently by design).
 - No support for optional (that is, nullable) owned types that are mapped with the owner in the same table (that is, using table splitting). This is because mapping is done for each property, there is no separate sentinel for the null complex value as a whole.
 - No inheritance-mapping support for owned types, but you should be able to map two leaf types of the same inheritance hierarchies as different owned types. EF Core will not reason about the fact that they are part of the same hierarchy.
 
-# **Main differences with EF6's complex types**
+## **Main differences with EF6's complex types**
 
 • Table splitting is optional, that is, they can optionally be mapped to a separate table and still be owned types.
 
-# <span id="page-235-0"></span>**Additional resources**
+## <span id="page-235-0"></span>**Additional resources**
 
 - **Martin Fowler. ValueObject pattern** <https://martinfowler.com/bliki/ValueObject.html>
-- **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of value objects) [https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)[Software/dp/0321125215/](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
+- includes a discussion of value objects) [https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)[Software/dp/0321125215/](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
+
+• **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book;
+
 - **Vaughn Vernon. Implementing Domain-Driven Design.** (Book; includes a discussion of value objects) [https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/)[Vernon/dp/0321834577/](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/)
 - **Owned Entity Types** [https://learn.microsoft.com/ef/core/modeling/owned-entities](https://docs.microsoft.com/ef/core/modeling/owned-entities)
 - **Shadow Properties** [https://learn.microsoft.com/ef/core/modeling/shadow-properties](https://docs.microsoft.com/ef/core/modeling/shadow-properties)
@@ -6149,9 +6151,11 @@ public class Address
 
 Instead, you can create Enumeration classes that enable all the rich features of an object-oriented language.
 
-However, this isn't a critical topic and in many cases, for simplicity, you can still use regular [enum](https://docs.microsoft.com/dotnet/csharp/language-reference/builtin-types/enum)  [types](https://docs.microsoft.com/dotnet/csharp/language-reference/builtin-types/enum) if that's your preference. The use of enumeration classes is more related to business-related concepts.
+[types](https://docs.microsoft.com/dotnet/csharp/language-reference/builtin-types/enum) if that's your preference. The use of enumeration classes is more related to business-related concepts.
 
-# <span id="page-236-0"></span>**Implement an Enumeration base class**
+However, this isn't a critical topic and in many cases, for simplicity, you can still use regular [enum](https://docs.microsoft.com/dotnet/csharp/language-reference/builtin-types/enum) 
+
+## <span id="page-236-0"></span>**Implement an Enumeration base class**
 
 The ordering microservice in eShopOnContainers provides a sample Enumeration base class implementation, as shown in the following example:
 
@@ -6194,15 +6198,21 @@ public class CardType
  {
 ```
 
-# <span id="page-237-0"></span>**Additional resources**
+## <span id="page-237-0"></span>**Additional resources**
 
-- **Jimmy Bogard. Enumeration classes** <https://lostechies.com/jimmybogard/2008/08/12/enumeration-classes/>
-- **Steve Smith. Enum Alternatives in C#** <https://ardalis.com/enum-alternatives-in-c>
-- **Enumeration.cs.** Base Enumeration class in eShopOnContainers [https://github.com/dotnet](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWork/Enumeration.cs)[architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWor](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWork/Enumeration.cs) [k/Enumeration.cs](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWork/Enumeration.cs)
+• **Jimmy Bogard. Enumeration classes** <https://lostechies.com/jimmybogard/2008/08/12/enumeration-classes/>
+
+• **Enumeration.cs.** Base Enumeration class in eShopOnContainers
+
+<https://ardalis.com/enum-alternatives-in-c>
+
+• **Steve Smith. Enum Alternatives in C#**
+
+- [https://github.com/dotnet](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWork/Enumeration.cs)[architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWor](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWork/Enumeration.cs) [k/Enumeration.cs](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/SeedWork/Enumeration.cs)
 - **CardType.cs**. Sample Enumeration class in eShopOnContainers. [https://github.com/dotnet](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/BuyerAggregate/CardType.cs)[architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/Aggregat](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/BuyerAggregate/CardType.cs) [esModel/BuyerAggregate/CardType.cs](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/BuyerAggregate/CardType.cs)
 - **SmartEnum**. Ardalis Classes to help produce strongly typed smarter enums in .NET. <https://www.nuget.org/packages/Ardalis.SmartEnum/>
 
-# <span id="page-237-1"></span>Design validations in the domain model layer
+## <span id="page-237-1"></span>Design validations in the domain model layer
 
 In DDD, validation rules can be thought as invariants. The main responsibility of an aggregate is to enforce invariants across state changes for all the entities within that aggregate.
 
@@ -6212,11 +6222,11 @@ The reasoning behind this is that many bugs occur because objects are in a state
 
 Let's propose we now have a SendUserCreationEmailService that takes a UserProfile … how can we rationalize in that service that Name is not null? Do we check it again? Or more likely … you just don't bother to check and "hope for the best"—you hope that someone bothered to validate it before sending it to you. Of course, using TDD one of the first tests we should be writing is that if I send a customer with a null name that it should raise an error. But once we start writing these kinds of tests over and over again we realize … "what if we never allowed name to become null? we wouldn't have all of these tests!".
 
-# <span id="page-238-0"></span>**Implement validations in the domain model layer**
+## <span id="page-238-0"></span>**Implement validations in the domain model layer**
 
 Validations are usually implemented in domain entity constructors or in methods that can update the entity. There are multiple ways to implement validations, such as verifying data and raising exceptions if the validation fails. There are also more advanced patterns such as using the Specification pattern for validations, and the Notification pattern to return a collection of errors instead of returning an exception for each validation as it occurs.
 
-# **Validate conditions and throw exceptions**
+## **Validate conditions and throw exceptions**
 
 The following code example shows the simplest approach to validation in a domain entity by raising an exception. In the references table at the end of this section you can see links to more advanced implementations based on the patterns we have discussed previously.
 
@@ -6242,7 +6252,7 @@ If the value of the state is invalid, the first address line and the city have a
 
 A similar approach can be used in the entity's constructor, raising an exception to make sure that the entity is valid once it is created.
 
-# **Use validation attributes in the model based on data annotations**
+### **Use validation attributes in the model based on data annotations**
 
 Data annotations, like the Required or MaxLength attributes, can be used to configure EF Core database field properties, as explained in detail in the [Table mapping](#page-264-0) section, but [they no longer work](https://github.com/dotnet/efcore/issues/3680)  [for entity validation in EF Core](https://github.com/dotnet/efcore/issues/3680) (neither does the [IValidatableObject.Validate](https://docs.microsoft.com/dotnet/api/system.componentmodel.dataannotations.ivalidatableobject.validate) method), as they have done since EF 4.x in .NET Framework.
 
@@ -6252,29 +6262,31 @@ Having made the conceptual difference clear, you can still use data annotations 
 
 You can still implement custom validation in the entity class using data annotations and the IValidatableObject.Validate method, by overriding the DbContext's SaveChanges method.
 
-You can see a sample implementation for validating IValidatableObject entities in [this comment on](https://github.com/dotnet/efcore/issues/3680#issuecomment-155502539)  [GitHub](https://github.com/dotnet/efcore/issues/3680#issuecomment-155502539). That sample doesn't do attribute-based validations, but they should be easy to implement using reflection in the same override.
+[GitHub](https://github.com/dotnet/efcore/issues/3680#issuecomment-155502539). That sample doesn't do attribute-based validations, but they should be easy to implement using reflection in the same override.
+
+You can see a sample implementation for validating IValidatableObject entities in [this comment on](https://github.com/dotnet/efcore/issues/3680#issuecomment-155502539) 
 
 However, from a DDD point of view, the domain model is best kept lean with the use of exceptions in your entity's behavior methods, or by implementing the Specification and Notification patterns to enforce validation rules.
 
 It can make sense to use data annotations at the application layer in ViewModel classes (instead of domain entities) that will accept input, to allow for model validation within the UI layer. However, this should not be done at the exclusion of validation within the domain model.
 
-# **Validate entities by implementing the Specification pattern and the Notification pattern**
+## **Validate entities by implementing the Specification pattern and the Notification pattern**
 
 Finally, a more elaborate approach to implementing validations in the domain model is by implementing the Specification pattern in conjunction with the Notification pattern, as explained in some of the additional resources listed later.
 
 It is worth mentioning that you can also use just one of those patterns—for example, validating manually with control statements, but using the Notification pattern to stack and return a list of validation errors.
 
-# **Use deferred validation in the domain**
+### **Use deferred validation in the domain**
 
 There are various approaches to deal with deferred validations in the domain. In his book [Implementing Domain-Driven Design,](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577) Vaughn Vernon discusses these in the section on validation.
 
-# **Two-step validation**
+### **Two-step validation**
 
 Also consider two-step validation. Use field-level validation on your command Data Transfer Objects (DTOs) and domain-level validation inside your entities. You can do this by returning a result object instead of exceptions in order to make it easier to deal with the validation errors.
 
 Using field validation with data annotations, for example, you do not duplicate the validation definition. The execution, though, can be both server-side and client-side in the case of DTOs (commands and ViewModels, for instance).
 
-# <span id="page-239-0"></span>**Additional resources**
+### <span id="page-239-0"></span>**Additional resources**
 
 - **Rachel Appel. Introduction to model validation in ASP.NET Core MVC** [https://learn.microsoft.com/aspnet/core/mvc/models/validation](https://docs.microsoft.com/aspnet/core/mvc/models/validation)
 - **Rick Anderson. Adding validation** [https://learn.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation)
@@ -6285,7 +6297,7 @@ Using field validation with data annotations, for example, you do not duplicate 
 - **Colin Jack. Domain Model Validation** <https://colinjack.blogspot.com/2008/03/domain-model-validation.html>
 - **Jimmy Bogard. Validation in a DDD world** <https://lostechies.com/jimmybogard/2009/02/15/validation-in-a-ddd-world/>
 
-# <span id="page-240-0"></span>Client-side validation (validation in the presentation layers)
+## <span id="page-240-0"></span>Client-side validation (validation in the presentation layers)
 
 Even when the source of truth is the domain model and ultimately you must have validation at the domain model level, validation can still be handled at both the domain model level (server side) and the UI (client side).
 
@@ -6299,18 +6311,18 @@ Therefore, in client-side code you typically validate the ViewModels. You could 
 
 The implementation of client-side validation depends on what kind of client application you are building. It will be different if you are validating data in a web MVC web application with most of the code in .NET, a SPA web application with that validation being coded in JavaScript or TypeScript, or a mobile app coded with Xamarin and C#.
 
-# <span id="page-241-0"></span>**Additional resources**
+## <span id="page-241-0"></span>**Additional resources**
 
-# **Validation in Xamarin mobile apps**
+### **Validation in Xamarin mobile apps** • **Validate Text Input and Show Errors**
 
-- **Validate Text Input and Show Errors** [https://developer.xamarin.com/recipes/ios/standard\\_controls/text\\_field/validate\\_input/](https://developer.xamarin.com/recipes/ios/standard_controls/text_field/validate_input/)
+- [https://developer.xamarin.com/recipes/ios/standard\\_controls/text\\_field/validate\\_input/](https://developer.xamarin.com/recipes/ios/standard_controls/text_field/validate_input/)
 - **Validation Callback** <https://developer.xamarin.com/samples/xamarin-forms/XAML/ValidationCallback/>
 
-# **Validation in ASP.NET Core apps**
+## **Validation in ASP.NET Core apps**
 
 • **Rick Anderson. Adding validation** [https://learn.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/validation)
 
-# **Validation in SPA Web apps (Angular 2, TypeScript, JavaScript, Blazor WebAssembly)**
+## **Validation in SPA Web apps (Angular 2, TypeScript, JavaScript, Blazor WebAssembly)**
 
 - **Form Validation** <https://angular.io/guide/form-validation>
 - **Validation.** Breeze documentation. <https://breeze.github.io/doc-js/validation.html>
@@ -6323,11 +6335,11 @@ In summary, these are the most important concepts in regards to validation:
 - If you need to create several related objects, such as an aggregate, and they are only valid once all of them have been created, consider using the Factory pattern.
 - In most of the cases, having redundant validation in the client side is good, because the application can be proactive.
 
-# <span id="page-241-1"></span>Domain events: Design and implementation
+## <span id="page-241-1"></span>Domain events: Design and implementation
 
 Use domain events to explicitly implement side effects of changes within your domain. In other words, and using DDD terminology, use domain events to explicitly implement side effects across multiple aggregates. Optionally, for better scalability and less impact in database locks, use eventual consistency between aggregates within the same domain.
 
-# <span id="page-242-0"></span>**What is a domain event?**
+## <span id="page-242-0"></span>**What is a domain event?**
 
 An event is something that has happened in the past. A domain event is, something that happened in the domain that you want other parts of the same domain (in-process) to be aware of. The notified parts usually react somehow to the events.
 
@@ -6337,9 +6349,9 @@ For example, if you're just using Entity Framework and there has to be a reactio
 
 On the other hand, using domain events makes the concept explicit, because there's a DomainEvent and at least one DomainEventHandler involved.
 
-For example, in the eShopOnContainers application, when an order is created, the user becomes a buyer, so an OrderStartedDomainEvent is raised and handled in the
+For example, in the eShopOnContainers application, when an order is created, the user becomes a buyer, so an OrderStartedDomainEvent is raised and handled in the ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler, so the underlying concept is
 
-ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler, so the underlying concept is evident.
+evident.
 
 In short, domain events help you to express, explicitly, the domain rules, based in the ubiquitous language provided by the domain experts. Domain events also enable a better separation of concerns among classes within the same domain.
 
@@ -6349,17 +6361,17 @@ Domain events are similar to messaging-style events, with one important differen
 
 The domain events and their side effects (the actions triggered afterwards that are managed by event handlers) should occur almost immediately, usually in-process, and within the same domain. Thus, domain events could be synchronous or asynchronous. Integration events, however, should always be asynchronous.
 
-# <span id="page-242-1"></span>**Domain events versus integration events**
+### <span id="page-242-1"></span>**Domain events versus integration events**
 
 Semantically, domain and integration events are the same thing: notifications about something that just happened. However, their implementation must be different. Domain events are just messages pushed to a domain event dispatcher, which could be implemented as an in-memory mediator based on an IoC container or any other method.
 
 On the other hand, the purpose of integration events is to propagate committed transactions and updates to additional subsystems, whether they are other microservices, Bounded Contexts or even external applications. Hence, they should occur only if the entity is successfully persisted, otherwise it's as if the entire operation never happened.
 
-As mentioned before, integration events must be based on asynchronous communication between multiple microservices (other Bounded Contexts) or even external systems/applications.
+As mentioned before, integration events must be based on asynchronous communication between multiple microservices (other Bounded Contexts) or even external systems/applications. Thus, the event bus interface needs some infrastructure that allows inter-process and distributed
 
-Thus, the event bus interface needs some infrastructure that allows inter-process and distributed communication between potentially remote services. It can be based on a commercial service bus, queues, a shared database used as a mailbox, or any other distributed and ideally push based messaging system.
+communication between potentially remote services. It can be based on a commercial service bus, queues, a shared database used as a mailbox, or any other distributed and ideally push based messaging system.
 
-# <span id="page-243-0"></span>**Domain events as a preferred way to trigger side effects across multiple aggregates within the same domain**
+## <span id="page-243-0"></span>**Domain events as a preferred way to trigger side effects across multiple aggregates within the same domain**
 
 If executing a command related to one aggregate instance requires additional domain rules to be run on one or more additional aggregates, you should design and implement those side effects to be triggered by domain events. As shown in Figure 7-14, and as one of the most important use cases, a domain event should be used to propagate state changes across multiple aggregates within the same domain model.
 
@@ -6404,7 +6416,7 @@ Having an open number of handlers per domain event allows you to add as many dom
 
 When the total amount purchased by a customer in the store, across any number of orders, exceeds \$6,000, apply a 10% off discount to every new order and notify the customer with an email about that discount for future orders.
 
-# <span id="page-245-0"></span>**Implement domain events**
+### <span id="page-245-0"></span>**Implement domain events**
 
 In C#, a domain event is simply a data-holding structure or class, like a DTO, with all the information related to what just happened in the domain, as shown in the following example:
 
@@ -6447,7 +6459,7 @@ As noted earlier, an important characteristic of events is that since an event i
 
 It's important to highlight here that if domain events were to be handled asynchronously, using a queue that required serializing and deserializing the event objects, the properties would have to be "private set" instead of read-only, so the deserializer would be able to assign the values upon dequeuing. This is not an issue in the Ordering microservice, as the domain event pub/sub is implemented synchronously using MediatR.
 
-# **Raise domain events**
+### **Raise domain events**
 
 The next question is how to raise a domain event so it reaches its related event handlers. You can use multiple approaches.
 
@@ -6457,7 +6469,7 @@ However, when the domain events class is static, it also dispatches to handlers 
 
 redirected to other event handlers for side effects related to other aggregates or application logic. This is why other approaches have evolved, as explained in the next section.
 
-### **The deferred approach to raise and dispatch events**
+## **The deferred approach to raise and dispatch events**
 
 Instead of dispatching to a domain event handler immediately, a better approach is to add the domain events to a collection and then to dispatch those domain events *right before* or *right after* committing the transaction (as with SaveChanges in EF). (This approach was described by Jimmy Bogard in this post [A better domain events pattern.](https://lostechies.com/jimmybogard/2014/05/13/a-better-domain-events-pattern/))
 
@@ -6531,7 +6543,7 @@ The overall result is that you've decoupled the raising of a domain event (a sim
 
 Be aware that transactional boundaries come into significant play here. If your unit of work and transaction can span more than one aggregate (as when using EF Core and a relational database), this can work well. But if the transaction cannot span aggregates, you have to implement additional steps to achieve consistency. This is another reason why persistence ignorance is not universal; it depends on the storage system you use.
 
-# **Single transaction across aggregates versus eventual consistency across aggregates**
+### **Single transaction across aggregates versus eventual consistency across aggregates**
 
 The question of whether to perform a single transaction across aggregates versus relying on eventual consistency across those aggregates is a controversial one. Many DDD authors like Eric Evans and Vaughn Vernon advocate the rule that one transaction = one aggregate and therefore argue for eventual consistency across aggregates. For example, in his book *Domain-Driven Design*, Eric Evans says this:
 
@@ -6553,17 +6565,17 @@ Actually, both approaches (single atomic transaction and eventual consistency) c
 
 A way to allow compensatory actions would be to store the domain events in additional database tables so they can be part of the original transaction. Afterwards, you could have a batch process that detects inconsistencies and runs compensatory actions by comparing the list of events with the current state of the aggregates. The compensatory actions are part of a complex topic that will require deep analysis from your side, which includes discussing it with the business user and domain experts.
 
-In any case, you can choose the approach you need. But the initial deferred approach—raising the events before committing, so you use a single transaction—is the simplest approach when using EF Core and a relational database. It's easier to implement and valid in many business cases. It's also the approach used in the ordering microservice in eShopOnContainers.
+In any case, you can choose the approach you need. But the initial deferred approach—raising the events before committing, so you use a single transaction—is the simplest approach when using EF Core and a relational database. It's easier to implement and valid in many business cases. It's also the approach used in the ordering microservice in eShopOnContainers. But how do you actually dispatch those events to their respective event handlers? What's the
 
-But how do you actually dispatch those events to their respective event handlers? What's the \_mediator object you see in the previous example? It has to do with the techniques and artifacts you use to map between events and their event handlers.
+\_mediator object you see in the previous example? It has to do with the techniques and artifacts you use to map between events and their event handlers.
 
-# **The domain event dispatcher: mapping from events to event handlers**
+## **The domain event dispatcher: mapping from events to event handlers**
 
 Once you're able to dispatch or publish the events, you need some kind of artifact that will publish the event, so that every related handler can get it and process side effects based on that event.
 
 One approach is a real messaging system or even an event bus, possibly based on a service bus as opposed to in-memory events. However, for the first case, real messaging would be overkill for processing domain events, since you just need to process those events within the same process (that is, within the same domain and application layer).
 
-# **How to subscribe to domain events**
+### **How to subscribe to domain events**
 
 When you use MediatR, each event handler must use an event type that is provided on the generic parameter of the INotificationHandler interface, as you can see in the following code:
 
@@ -6574,7 +6586,7 @@ public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler
 
 Based on the relationship between event and event handler, which can be considered the subscription, the MediatR artifact can discover all the event handlers for each event and trigger each one of those event handlers.
 
-# **How to handle domain events**
+### **How to handle domain events**
 
 Finally, the event handler usually implements application layer code that uses infrastructure repositories to obtain the required additional aggregates and to execute side-effect domain logic. The following [domain event handler code at eShopOnContainers,](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/DomainEventHandlers/ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler.cs) shows an implementation example.
 
@@ -6633,20 +6645,25 @@ ArgumentNullException(nameof(orderingIntegrationEventService));
 
 The previous domain event handler code is considered application layer code because it uses infrastructure repositories, as explained in the next section on the infrastructure-persistence layer. Event handlers could also use other infrastructure components.
 
-# **Domain events can generate integration events to be published outside of the microservice boundaries**
+### **Domain events can generate integration events to be published outside of the microservice boundaries**
 
 Finally, it's important to mention that you might sometimes want to propagate events across multiple microservices. That propagation is an integration event, and it could be published through an event bus from any specific domain event handler.
 
-# <span id="page-251-0"></span>**Conclusions on domain events**
+### <span id="page-251-0"></span>**Conclusions on domain events**
 
 As stated, use domain events to explicitly implement side effects of changes within your domain. To use DDD terminology, use domain events to explicitly implement side effects across one or multiple aggregates. Additionally, and for better scalability and less impact on database locks, use eventual consistency between aggregates within the same domain.
 
 The reference app uses [MediatR](https://github.com/jbogard/MediatR) to propagate domain events synchronously across aggregates, within a single transaction. However, you could also use some AMQP implementation like [RabbitMQ](https://www.rabbitmq.com/) or [Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview) to propagate domain events asynchronously, using eventual consistency but, as mentioned above, you have to consider the need for compensatory actions in case of failures.
 
-# <span id="page-252-0"></span>**Additional resources**
+## <span id="page-252-0"></span>**Additional resources**
 
-- **Greg Young. What is a Domain Event?** [https://cqrs.files.wordpress.com/2010/11/cqrs\\_documents.pdf#page=25](https://cqrs.files.wordpress.com/2010/11/cqrs_documents.pdf#page=25)
-- **Jan Stenberg. Domain Events and Eventual Consistency** <https://www.infoq.com/news/2015/09/domain-events-consistency>
+• **Greg Young. What is a Domain Event?**
+
+- [https://cqrs.files.wordpress.com/2010/11/cqrs\\_documents.pdf#page=25](https://cqrs.files.wordpress.com/2010/11/cqrs_documents.pdf#page=25)
+- <https://www.infoq.com/news/2015/09/domain-events-consistency>
+
+• **Jan Stenberg. Domain Events and Eventual Consistency**
+
 - **Jimmy Bogard. A better domain events pattern** <https://lostechies.com/jimmybogard/2014/05/13/a-better-domain-events-pattern/>
 - **Vaughn Vernon. Effective Aggregate Design Part II: Making Aggregates Work Together** [https://dddcommunity.org/wp-content/uploads/files/pdf\\_articles/Vernon\\_2011\\_2.pdf](https://dddcommunity.org/wp-content/uploads/files/pdf_articles/Vernon_2011_2.pdf)
 - **Jimmy Bogard. Strengthening your domain: Domain Events** [https://lostechies.com/jimmybogard/2010/04/08/strengthening-your-domain-domain](https://lostechies.com/jimmybogard/2010/04/08/strengthening-your-domain-domain-events/)[events/](https://lostechies.com/jimmybogard/2010/04/08/strengthening-your-domain-domain-events/)
@@ -6654,13 +6671,14 @@ The reference app uses [MediatR](https://github.com/jbogard/MediatR) to propagat
 - **Udi Dahan. Domain Events – Take 2** <https://udidahan.com/2008/08/25/domain-events-take-2/>
 - **Udi Dahan. Domain Events – Salvation** <https://udidahan.com/2009/06/14/domain-events-salvation/>
 - **Cesar de la Torre. Domain Events vs. Integration Events in DDD and microservices architectures**
-  - [https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in](https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/)[domain-driven-design-and-microservices-architectures/](https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/)
 
-# <span id="page-252-1"></span>Design the infrastructure persistence layer
+[https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in](https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/)[domain-driven-design-and-microservices-architectures/](https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/)
+
+## <span id="page-252-1"></span>Design the infrastructure persistence layer
 
 Data persistence components provide access to the data hosted within the boundaries of a microservice (that is, a microservice's database). They contain the actual implementation of components such as repositories and [Unit of Work](https://martinfowler.com/eaaCatalog/unitOfWork.html) classes, like custom Entity Framework (EF) [DbContext](https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext) objects. EF DbContext implements both the Repository and the Unit of Work patterns.
 
-# <span id="page-252-2"></span>**The Repository pattern**
+### <span id="page-252-2"></span>**The Repository pattern**
 
 The Repository pattern is a Domain-Driven Design pattern intended to keep persistence concerns outside of the system's domain model. One or more persistence abstractions - interfaces - are defined in the domain model, and these abstractions have implementations in the form of persistence-specific adapters defined elsewhere in the application.
 
@@ -6670,7 +6688,7 @@ The Repository pattern is a well-documented way of working with a data source. I
 
 A repository performs the tasks of an intermediary between the domain model layers and data mapping, acting in a similar way to a set of domain objects in memory. Client objects declaratively build queries and send them to the repositories for answers. Conceptually, a repository encapsulates a set of objects stored in the database and operations that can be performed on them, providing a way that is closer to the persistence layer. Repositories, also, support the purpose of separating, clearly and in one direction, the dependency between the work domain and the data allocation or mapping.
 
-# **Define one repository per aggregate**
+### **Define one repository per aggregate**
 
 For each aggregate or aggregate root, you should create one repository class. You may be able to leverage C# Generics to reduce the total number concrete classes you need to maintain (as demonstrated later in this chapter). In a microservice based on Domain-Driven Design (DDD) patterns, the only channel you should use to update the database should be the repositories. This is because they have a one-to-one relationship with the aggregate root, which controls the aggregate's invariants and transactional consistency. It's okay to query the database through other channels (as you can do following a CQRS approach), because queries don't change the state of the database. However, the transactional area (that is, the updates) must always be controlled by the repositories and the aggregate roots.
 
@@ -6688,7 +6706,7 @@ It's important to emphasize again that you should only define one repository for
 
 The above diagram shows the relationships between Domain and Infrastructure layers: Buyer Aggregate depends on the IBuyerRepository and Order Aggregate depends on the IOrderRepository interfaces, these interfaces are implemented in the Infrastructure layer by the corresponding repositories that depend on UnitOfWork, also implemented there, that accesses the tables in the Data tier.
 
-# **Enforce one aggregate root per repository**
+### **Enforce one aggregate root per repository**
 
 It can be valuable to implement your repository design in such a way that it enforces the rule that only aggregate roots should have repositories. You can create a generic or base repository type that constrains the type of entities it works with to ensure they have the IAggregateRoot marker interface.
 
@@ -6726,7 +6744,7 @@ public interface IRepository<T> where T : IAggregateRoot
 }
 ```
 
-# **The Repository pattern makes it easier to test your application logic**
+## **The Repository pattern makes it easier to test your application logic**
 
 The Repository pattern allows you to easily test your application with unit tests. Remember that unit tests only test your code, not infrastructure, so the repository abstractions make it easier to achieve that goal.
 
@@ -6738,13 +6756,13 @@ In terms of separation of concerns for unit tests, your logic operates on domain
 
 The repositories implemented in eShopOnContainers rely on EF Core's DbContext implementation of the Repository and Unit of Work patterns using its change tracker, so they don't duplicate this functionality.
 
-# **The difference between the Repository pattern and the legacy Data Access class (DAL class) pattern**
+## **The difference between the Repository pattern and the legacy Data Access class (DAL class) pattern**
 
 A typical DAL object directly performs data access and persistence operations against storage, often at the level of a single table and row. Simple CRUD operations implemented with a set of DAL classes frequently do not support transactions (though this is not always the case). Most DAL class approaches make minimal use of abstractions, resulting in tight coupling between application or Business Logic Layer (BLL) classes that call the DAL objects.
 
 When using repository, the implementation details of persistence are encapsulated away from the domain model. The use of an abstraction provides ease of extending behavior through patterns like Decorators or Proxies. For instance, cross-cutting concerns like [caching,](https://ardalis.com/building-a-cachedrepository-in-aspnet-core/) logging, and error handling can all be applied using these patterns rather than hard-coded in the data access code itself. It's also trivial to support multiple repository adapters which may be used in different environments, from local development to shared staging environments to production.
 
-# **Implementing Unit of Work**
+## **Implementing Unit of Work**
 
 A [unit of work](https://martinfowler.com/eaaCatalog/unitOfWork.html) refers to a single transaction that involves multiple insert, update, or delete operations. In simple terms, it means that for a specific user action, such as a registration on a website, all the insert, update, and delete operations are handled in a single transaction. This is more efficient than handling multiple database operations in a chattier way.
 
@@ -6754,7 +6772,7 @@ In many cases, this pattern or way of applying operations against the storage ca
 
 The Unit of Work pattern can be implemented with or without using the Repository pattern.
 
-# **Repositories shouldn't be mandatory**
+### **Repositories shouldn't be mandatory**
 
 Custom repositories are useful for the reasons cited earlier, and that is the approach for the ordering microservice in eShopOnContainers. However, it isn't an essential pattern to implement in a DDD design or even in general .NET development.
 
@@ -6764,43 +6782,45 @@ This'll probably be my biggest feedback. I'm really not a fan of repositories, m
 
 integration test with the real thing. Going CQRS meant that we didn't really have a need for repositories any more.
 
-Repositories might be useful, but they are not critical for your DDD design in the way that the Aggregate pattern and a rich domain model are. Therefore, use the Repository pattern or not, as you see fit.
+Repositories might be useful, but they are not critical for your DDD design in the way that the
 
-# <span id="page-257-0"></span>**Additional resources**
+Aggregate pattern and a rich domain model are. Therefore, use the Repository pattern or not, as you see fit.
 
-# **Repository pattern**
+## <span id="page-257-0"></span>**Additional resources**
 
-- **Edward Hieatt and Rob Mee. Repository pattern.** <https://martinfowler.com/eaaCatalog/repository.html>
+### **Repository pattern** • **Edward Hieatt and Rob Mee. Repository pattern.**
+
+- <https://martinfowler.com/eaaCatalog/repository.html>
 - **The Repository pattern** [https://learn.microsoft.com/previous-versions/msp-n-p/ff649690\(v=pandp.10\)](https://docs.microsoft.com/previous-versions/msp-n-p/ff649690(v=pandp.10))
 - **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of the Repository pattern) [https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)[Software/dp/0321125215/](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
 
-# **Unit of Work pattern**
+### **Unit of Work pattern**
 
 - **Martin Fowler. Unit of Work pattern.** <https://martinfowler.com/eaaCatalog/unitOfWork.html>
 - **Implementing the Repository and Unit of Work Patterns in an ASP.NET MVC Application**
 
 [https://learn.microsoft.com/aspnet/mvc/overview/older-versions/getting-started-with-ef-5](https://docs.microsoft.com/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application) [using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc](https://docs.microsoft.com/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)[application](https://docs.microsoft.com/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
 
-# <span id="page-257-1"></span>Implement the infrastructure persistence layer with Entity Framework Core
+## <span id="page-257-1"></span>Implement the infrastructure persistence layer with Entity Framework Core
 
 When you use relational databases such as SQL Server, Oracle, or PostgreSQL, a recommended approach is to implement the persistence layer based on Entity Framework (EF). EF supports LINQ and provides strongly typed objects for your model, as well as simplified persistence into your database.
 
 Entity Framework has a long history as part of the .NET Framework. When you use .NET, you should also use Entity Framework Core, which runs on Windows or Linux in the same way as .NET. EF Core is a complete rewrite of Entity Framework that's implemented with a much smaller footprint and important improvements in performance.
 
-# <span id="page-258-0"></span>**Introduction to Entity Framework Core**
+## <span id="page-258-0"></span>**Introduction to Entity Framework Core**
 
 Entity Framework (EF) Core is a lightweight, extensible, and cross-platform version of the popular Entity Framework data access technology. It was introduced with .NET Core in mid-2016.
 
 Since an introduction to EF Core is already available in Microsoft documentation, here we simply provide links to that information.
 
-# **Additional resources**
+## **Additional resources**
 
 - **Entity Framework Core** [https://learn.microsoft.com/ef/core/](https://docs.microsoft.com/ef/core/)
 - **Getting started with ASP.NET Core and Entity Framework Core using Visual Studio** [https://learn.microsoft.com/aspnet/core/data/ef-mvc/](https://docs.microsoft.com/aspnet/core/data/ef-mvc/)
 - **DbContext Class** [https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext](https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext)
 - **Compare EF Core & EF6.x** [https://learn.microsoft.com/ef/efcore-and-ef6/index](https://docs.microsoft.com/ef/efcore-and-ef6/index)
 
-# <span id="page-258-1"></span>**Infrastructure in Entity Framework Core from a DDD perspective**
+## <span id="page-258-1"></span>**Infrastructure in Entity Framework Core from a DDD perspective**
 
 From a DDD point of view, an important capability of EF is the ability to use POCO domain entities, also known in EF terminology as POCO *code-first entities*. If you use POCO domain entities, your domain model classes are persistence-ignorant, following the [Persistence Ignorance](https://deviq.com/persistence-ignorance/) and the [Infrastructure Ignorance](https://ayende.com/blog/3137/infrastructure-ignorance) principles.
 
@@ -6814,8 +6834,9 @@ You can use a private collection while exposing a read-only IReadOnlyCollection<
 
 ```
 public class Order : Entity
-{
 ```
+
+{
 
 ```
  // Using private fields, allowed since EF Core 1.1
@@ -6874,9 +6895,9 @@ class OrderEntityTypeConfiguration : IEntityTypeConfiguration<Order>
 
 When you use fields instead of properties, the OrderItem entity is persisted as if it had a List<OrderItem> property. However, it exposes a single accessor, the AddOrderItem method, for adding new items to the order. As a result, behavior and data are tied together and will be consistent throughout any application code that uses the domain model.
 
-# <span id="page-260-0"></span>**Implement custom repositories with Entity Framework Core**
+## <span id="page-260-0"></span>**Implement custom repositories with Entity Framework Core** At the implementation level, a repository is simply a class with data persistence code coordinated by a
 
-At the implementation level, a repository is simply a class with data persistence code coordinated by a unit of work (DBContext in EF Core) when performing updates, as shown in the following class:
+unit of work (DBContext in EF Core) when performing updates, as shown in the following class:
 
 ```
 // using directives...
@@ -6916,7 +6937,7 @@ The IBuyerRepository interface comes from the domain model layer as a contract. 
 
 The EF DbContext comes through the constructor through Dependency Injection. It is shared between multiple repositories within the same HTTP request scope, thanks to its default lifetime (ServiceLifetime.Scoped) in the IoC container (which can also be explicitly set with services.AddDbContext<>).
 
-# **Methods to implement in a repository (updates or transactions versus queries)**
+## **Methods to implement in a repository (updates or transactions versus queries)**
 
 Within each repository class, you should put the persistence methods that update the state of entities contained by its related aggregate. Remember there is one-to-one relationship between an aggregate and its related repository. Consider that an aggregate root entity object might have embedded child entities within its EF graph. For example, a buyer might have multiple payment methods as related child entities.
 
@@ -6924,7 +6945,7 @@ Since the approach for the ordering microservice in eShopOnContainers is also ba
 
 However, the real query methods to get data to send to the presentation layer or client apps are implemented, as mentioned, in the CQRS queries based on flexible queries using Dapper.
 
-# **Using a custom repository versus using EF DbContext directly**
+### **Using a custom repository versus using EF DbContext directly**
 
 The Entity Framework DbContext class is based on the Unit of Work and Repository patterns and can be used directly from your code, such as from an ASP.NET Core MVC controller. The Unit of Work and Repository patterns result in the simplest code, as in the CRUD catalog microservice in eShopOnContainers. In cases where you want the simplest code possible, you might want to directly use the DbContext class, as many developers do.
 
@@ -6942,7 +6963,7 @@ In short, custom repositories allow you to test code more easily with unit tests
 
 If you were using DbContext directly, you would have to mock it or to run unit tests by using an inmemory SQL Server with predictable data for unit tests. But mocking the DbContext or controlling fake data requires more work than mocking at the repository level. Of course, you could always test the MVC controllers.
 
-# <span id="page-262-0"></span>**EF DbContext and IUnitOfWork instance lifetime in your IoC container**
+### <span id="page-262-0"></span>**EF DbContext and IUnitOfWork instance lifetime in your IoC container**
 
 The DbContext object (exposed as an IUnitOfWork object) should be shared among multiple repositories within the same HTTP request scope. For example, this is true when the operation being executed must deal with multiple aggregates, or simply because you are using multiple repository instances. It is also important to mention that the IUnitOfWork interface is part of your domain layer, not an EF Core type.
 
@@ -6970,7 +6991,7 @@ Assembly.GetName().Name));
 
 The DbContext instantiation mode should not be configured as ServiceLifetime.Transient or ServiceLifetime.Singleton.
 
-# <span id="page-263-0"></span>**The repository instance lifetime in your IoC container**
+## <span id="page-263-0"></span>**The repository instance lifetime in your IoC container**
 
 In a similar way, repository's lifetime should usually be set as scoped (InstancePerLifetimeScope in Autofac). It could also be transient (InstancePerDependency in Autofac), but your service will be more efficient in regards to memory when using the scoped lifetime.
 
@@ -6983,7 +7004,7 @@ builder.RegisterType<OrderRepository>()
 
 Using the singleton lifetime for the repository could cause you serious concurrency problems when your DbContext is set to scoped (InstancePerLifetimeScope) lifetime (the default lifetimes for a DBContext). As long as your service lifetimes for your repositories and your DbContext are both Scoped, you'll avoid these issues.
 
-# **Additional resources**
+### **Additional resources**
 
 - **Implementing the Repository and Unit of Work Patterns in an ASP.NET MVC Application**
   - [https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-](https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)[4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application](https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
@@ -6992,19 +7013,21 @@ Using the singleton lifetime for the repository could cause you serious concurre
 - **Cesar de la Torre. Comparing ASP.NET Core IoC container service lifetimes with Autofac IoC container instance scopes**
   - [https://devblogs.microsoft.com/cesardelatorre/comparing-asp-net-core-ioc-service-life](https://devblogs.microsoft.com/cesardelatorre/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/)[times-and-autofac-ioc-instance-scopes/](https://devblogs.microsoft.com/cesardelatorre/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/)
 
-# <span id="page-264-0"></span>**Table mapping**
+## <span id="page-264-0"></span>**Table mapping**
 
-Table mapping identifies the table data to be queried from and saved to the database. Previously you saw how domain entities (for example, a product or order domain) can be used to generate a related database schema. EF is strongly designed around the concept of *conventions*. Conventions address questions like "What will the name of a table be?" or "What property is the primary key?" Conventions are typically based on conventional names. For example, it is typical for the primary key to be a property that ends with Id.
+saw how domain entities (for example, a product or order domain) can be used to generate a related database schema. EF is strongly designed around the concept of *conventions*. Conventions address questions like "What will the name of a table be?" or "What property is the primary key?" Conventions are typically based on conventional names. For example, it is typical for the primary key to be a property that ends with Id.
+
+Table mapping identifies the table data to be queried from and saved to the database. Previously you
 
 By convention, each entity will be set up to map to a table with the same name as the DbSet<TEntity> property that exposes the entity on the derived context. If no DbSet<TEntity> value is provided for the given entity, the class name is used.
 
-# **Data Annotations versus Fluent API**
+## **Data Annotations versus Fluent API**
 
 There are many additional EF Core conventions, and most of them can be changed by using either data annotations or Fluent API, implemented within the OnModelCreating method.
 
 Data annotations must be used on the entity model classes themselves, which is a more intrusive way from a DDD point of view. This is because you are contaminating your model with data annotations related to the infrastructure database. On the other hand, Fluent API is a convenient way to change most conventions and mappings within your data persistence infrastructure layer, so the entity model will be clean and decoupled from the persistence infrastructure.
 
-# **Fluent API and the OnModelCreating method**
+### **Fluent API and the OnModelCreating method**
 
 As mentioned, in order to change conventions and mappings, you can use the OnModelCreating method in the DbContext class.
 
@@ -7084,7 +7107,7 @@ You could set all the Fluent API mappings within the same OnModelCreating method
 
 The code in the example shows a few explicit declarations and mapping. However, EF Core conventions do many of those mappings automatically, so the actual code you would need in your case might be smaller.
 
-# **The Hi/Lo algorithm in EF Core**
+## **The Hi/Lo algorithm in EF Core**
 
 An interesting aspect of code in the preceding example is that it uses the [Hi/Lo algorithm](https://vladmihalcea.com/the-hilo-algorithm/) as the key generation strategy.
 
@@ -7098,17 +7121,17 @@ The Hi/Lo algorithm describes a mechanism for getting a batch of unique IDs from
 
 EF Core supports [HiLo](https://stackoverflow.com/questions/282099/whats-the-hi-lo-algorithm) with the UseHiLo method, as shown in the preceding example.
 
-# **Map fields instead of properties**
+### **Map fields instead of properties**
 
 With this feature, available since EF Core 1.1, you can directly map columns to fields. It is possible to not use properties in the entity class, and just to map columns from a table to fields. A common use for that would be private fields for any internal state that do not need to be accessed from outside the entity.
 
 You can do this with single fields or also with collections, like a List<> field. This point was mentioned earlier when we discussed modeling the domain model classes, but here you can see how that mapping is performed with the PropertyAccessMode.Field configuration highlighted in the previous code.
 
-# **Use shadow properties in EF Core, hidden at the infrastructure level**
+### **Use shadow properties in EF Core, hidden at the infrastructure level**
 
 Shadow properties in EF Core are properties that do not exist in your entity class model. The values and states of these properties are maintained purely in the [ChangeTracker](https://docs.microsoft.com/ef/core/api/microsoft.entityframeworkcore.changetracking.changetracker) class at the infrastructure level.
 
-# <span id="page-267-0"></span>**Implement the Query Specification pattern**
+## <span id="page-267-0"></span>**Implement the Query Specification pattern**
 
 As introduced earlier in the design section, the Query Specification pattern is a Domain-Driven Design pattern designed as the place where you can put the definition of a query with optional sorting and paging logic.
 
@@ -7202,18 +7225,26 @@ Although we don't recommend returning IQueryable from a repository, it's perfect
 
 Learn [how the specification pattern is applied in the eShopOnWeb sample.](https://github.com/dotnet-architecture/eShopOnWeb/wiki/Patterns#specification)
 
-# **Additional resources**
+## **Additional resources**
+
+• **Backing Fields**
 
 - **Table Mapping** [https://learn.microsoft.com/ef/core/modeling/relational/tables](https://docs.microsoft.com/ef/core/modeling/relational/tables)
-- **Use HiLo to generate keys with Entity Framework Core** <https://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/>
-- **Backing Fields** [https://learn.microsoft.com/ef/core/modeling/backing-field](https://docs.microsoft.com/ef/core/modeling/backing-field)
-- **Steve Smith. Encapsulated Collections in Entity Framework Core** <https://ardalis.com/encapsulated-collections-in-entity-framework-core>
+- <https://www.talkingdotnet.com/use-hilo-to-generate-keys-with-entity-framework-core/>
+- [https://learn.microsoft.com/ef/core/modeling/backing-field](https://docs.microsoft.com/ef/core/modeling/backing-field)
+
+• **Use HiLo to generate keys with Entity Framework Core**
+
+<https://ardalis.com/encapsulated-collections-in-entity-framework-core>
+
+• **Steve Smith. Encapsulated Collections in Entity Framework Core**
+
 - **Shadow Properties** [https://learn.microsoft.com/ef/core/modeling/shadow-properties](https://docs.microsoft.com/ef/core/modeling/shadow-properties)
 - **The Specification pattern** <https://deviq.com/specification-pattern/>
 
 **Ardalis.Specification NuGet Package** Used by eShopOnWeb. <https://www.nuget.org/packages/Ardalis.Specification>
 
-# <span id="page-269-0"></span>Use NoSQL databases as a persistence infrastructure
+## <span id="page-269-0"></span>Use NoSQL databases as a persistence infrastructure
 
 When you use NoSQL databases for your infrastructure data tier, you typically do not use an ORM like Entity Framework Core. Instead you use the API provided by the NoSQL engine, such as Azure Cosmos DB, MongoDB, Cassandra, RavenDB, CouchDB, or Azure Storage Tables.
 
@@ -7225,9 +7256,9 @@ The difference is in how you persist that model. If you implemented your domain 
 
 For example, in a document-oriented database, it is okay for an aggregate root to have multiple child collection properties. In a relational database, querying multiple child collection properties is not
 
-easily optimized, because you get a UNION ALL SQL statement back from EF. Having the same domain model for relational databases or NoSQL databases is not simple, and you should not try to do it. You really have to design your model with an understanding of how the data is going to be used in each particular database.
+easily optimized, because you get a UNION ALL SQL statement back from EF. Having the same domain model for relational databases or NoSQL databases is not simple, and you should not try to do it. You really have to design your model with an understanding of how the data is going to be used in each particular database. A benefit when using NoSQL databases is that the entities are more denormalized, so you do not set a
 
-A benefit when using NoSQL databases is that the entities are more denormalized, so you do not set a table mapping. Your domain model can be more flexible than when using a relational database.
+table mapping. Your domain model can be more flexible than when using a relational database.
 
 When you design your domain model based on aggregates, moving to NoSQL and documentoriented databases might be even easier than using a relational database, because the aggregates you design are similar to serialized documents in a document-oriented database. Then you can include in those "bags" all the information you might need for that aggregate.
 
@@ -7256,7 +7287,7 @@ For instance, the following JSON code is a sample implementation of an order agg
 }
 ```
 
-# <span id="page-270-0"></span>**Introduction to Azure Cosmos DB and the native Cosmos DB API**
+### <span id="page-270-0"></span>**Introduction to Azure Cosmos DB and the native Cosmos DB API**
 
 [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) is Microsoft's globally distributed database service for mission-critical applications. Azure Cosmos DB provides [turn-key global distribution,](https://docs.microsoft.com/azure/cosmos-db/distribute-data-globally) [elastic scaling of throughput and storage](https://docs.microsoft.com/azure/cosmos-db/partition-data) worldwide, single-digit millisecond latencies at the 99th percentile, [five well-defined consistency](https://docs.microsoft.com/azure/cosmos-db/consistency-levels)  [levels,](https://docs.microsoft.com/azure/cosmos-db/consistency-levels) and guaranteed high availability, all backed by [industry-leading SLAs.](https://azure.microsoft.com/support/legal/sla/cosmos-db/) Azure Cosmos DB [automatically indexes data](https://www.vldb.org/pvldb/vol8/p1668-shukla.pdf) without requiring you to deal with schema and index management. It is multi-model and supports document, key-value, graph, and columnar data models.
 
@@ -7317,9 +7348,9 @@ You can see that the way you work with your domain model can be similar to the w
 
 However, when you persist your model into the NoSQL database, the code and API change dramatically compared to EF Core code or any other code related to relational databases.
 
-# <span id="page-272-0"></span>**Implement .NET code targeting MongoDB and Azure Cosmos DB**
+## <span id="page-272-0"></span>**Implement .NET code targeting MongoDB and Azure Cosmos DB**
 
-# **Use Azure Cosmos DB from .NET containers**
+### **Use Azure Cosmos DB from .NET containers**
 
 You can access Azure Cosmos DB databases from .NET code running in containers, like from any other .NET application. For instance, the Locations.API and Marketing.API microservices in eShopOnContainers are implemented so they can consume Azure Cosmos DB databases.
 
@@ -7329,7 +7360,7 @@ There's also the possibility to run this emulator on Docker, but just on Windows
 
 The ideal and more straightforward deployment for a dev/test solution is to be able to deploy your database systems as containers along with your custom containers so your dev/test environments are always consistent.
 
-# **Use MongoDB API for local dev/test Linux/Windows containers plus Azure Cosmos DB**
+## **Use MongoDB API for local dev/test Linux/Windows containers plus Azure Cosmos DB**
 
 Cosmos DB databases support MongoDB API for .NET as well as the native MongoDB wire protocol. This means that by using existing drivers, your application written for MongoDB can now communicate with Cosmos DB and use Cosmos DB databases instead of MongoDB databases, as shown in Figure 7-20.
 
@@ -7353,15 +7384,17 @@ A clear benefit of using the MongoDB API is that your solution could run in both
 
 For further comparison between simply using MongoDB versus Cosmos DB in the cloud, see the [Benefits of using Azure Cosmos DB in this page.](https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction)
 
-# **Analyze your approach for production applications: MongoDB API vs. Cosmos DB API**
+### **Analyze your approach for production applications: MongoDB API vs. Cosmos DB API**
 
 In eShopOnContainers, we're using MongoDB API because our priority was fundamentally to have a consistent dev/test environment using a NoSQL database that could also work with Azure Cosmos DB. However, if you are planning to use MongoDB API to access Azure Cosmos DB in Azure for production applications, you should analyze the differences in capabilities and performance when using MongoDB API to access Azure Cosmos DB databases compared to using the native Azure Cosmos DB API. If it is similar you can use MongoDB API and you get the benefit of supporting two NoSQL database engines at the same time.
 
 You could also use MongoDB clusters as the production database in Azure's cloud, too, with [MongoDB Azure Service.](https://www.mongodb.com/scale/mongodb-azure-service) But that is not a PaaS service provided by Microsoft. In this case, Azure is just hosting that solution coming from MongoDB.
 
-Basically, this is just a disclaimer stating that you shouldn't always use MongoDB API against Azure Cosmos DB, as we did in eShopOnContainers because it was a convenient choice for Linux containers. The decision should be based on the specific needs and tests you need to do for your production application.
+Cosmos DB, as we did in eShopOnContainers because it was a convenient choice for Linux containers. The decision should be based on the specific needs and tests you need to do for your production application.
 
-# **The code: Use MongoDB API in .NET applications**
+Basically, this is just a disclaimer stating that you shouldn't always use MongoDB API against Azure
+
+## **The code: Use MongoDB API in .NET applications**
 
 MongoDB API for .NET is based on NuGet packages that you need to add to your projects, like in the Locations.API project shown in the following figure.
 
@@ -7450,9 +7483,11 @@ public class LocationsContext
 }
 ```
 
-### **Retrieve the data**
+## **Retrieve the data**
 
-In C# code, like Web API controllers or custom Repositories implementation, you can write similar code to the following when querying through the MongoDB API. Note that the \_context object is an instance of the previous LocationsContext class.
+code to the following when querying through the MongoDB API. Note that the \_context object is an instance of the previous LocationsContext class.
+
+In C# code, like Web API controllers or custom Repositories implementation, you can write similar
 
 ```
 public async Task<Locations> GetAsync(int locationId)
@@ -7464,7 +7499,7 @@ public async Task<Locations> GetAsync(int locationId)
 }
 ```
 
-# **Use an env-var in the docker-compose.override.yml file for the MongoDB connection string**
+### **Use an env-var in the docker-compose.override.yml file for the MongoDB connection string**
 
 When creating a MongoClient object, it needs a fundamental parameter which is precisely the ConnectionString parameter pointing to the right database. In the case of eShopOnContainers, the connection string can point to a local MongoDB Docker container or to a "production" Azure Cosmos DB database. That connection string comes from the environment variables defined in the dockercompose.override.yml files used when deploying with docker-compose or Visual Studio, as in the following yml code.
 
@@ -7523,9 +7558,9 @@ services:
 - **The MongoDB Docker image (Linux and Windows Container)** [https://hub.docker.com/\\_/mongo/](https://hub.docker.com/_/mongo/)
 - **Use MongoChef (Studio 3T) with an Azure Cosmos DB: API for MongoDB account** [https://learn.microsoft.com/azure/cosmos-db/mongodb-mongochef](https://docs.microsoft.com/azure/cosmos-db/mongodb-mongochef)
 
-# <span id="page-280-0"></span>Design the microservice application layer and Web API
+## <span id="page-280-0"></span>Design the microservice application layer and Web API
 
-# <span id="page-280-1"></span>**Use SOLID principles and Dependency Injection**
+## <span id="page-280-1"></span>**Use SOLID principles and Dependency Injection**
 
 SOLID principles are critical techniques to be used in any modern and mission-critical application, such as developing a microservice with DDD patterns. SOLID is an acronym that groups five fundamental principles:
 
@@ -7550,9 +7585,9 @@ It would take another guide to cover SOLID in detail. Therefore, this guide requ
 - **Inversion of Control Containers and the Dependency Injection pattern** <https://martinfowler.com/articles/injection.html>
 - **Steve Smith. New is Glue** <https://ardalis.com/new-is-glue>
 
-# <span id="page-281-0"></span>Implement the microservice application layer using the Web API
+## <span id="page-281-0"></span>Implement the microservice application layer using the Web API
 
-# <span id="page-281-1"></span>**Use Dependency Injection to inject infrastructure objects into your application layer**
+## <span id="page-281-1"></span>**Use Dependency Injection to inject infrastructure objects into your application layer**
 
 As mentioned previously, the application layer can be implemented as part of the artifact (assembly) you are building, such as within a Web API project or an MVC web app project. In the case of a microservice built with ASP.NET Core, the application layer will usually be your Web API library. If you want to separate what is coming from ASP.NET Core (its infrastructure plus your controllers) from your custom application layer code, you could also place your application layer in a separate class library, but that is optional.
 
@@ -7631,11 +7666,11 @@ item.Discount, item.PictureUrl, item.Units);
 
 The class uses the injected repositories to execute the transaction and persist the state changes. It does not matter whether that class is a command handler, an ASP.NET Core Web API controller method, or a [DDD Application Service.](https://lostechies.com/jimmybogard/2008/08/21/services-in-domain-driven-design/) It is ultimately a simple class that uses repositories, domain entities, and other application coordination in a fashion similar to a command handler. Dependency Injection works the same way for all the mentioned classes, as in the example using DI based on the constructor.
 
-# **Register the dependency implementation types and interfaces or abstractions**
+## **Register the dependency implementation types and interfaces or abstractions**
 
 Before you use the objects injected through constructors, you need to know where to register the interfaces and classes that produce the objects injected into your application classes through DI. (Like DI based on the constructor, as shown previously.)
 
-# **Use the built-in IoC container provided by ASP.NET Core**
+### **Use the built-in IoC container provided by ASP.NET Core**
 
 When you use the built-in IoC container provided by ASP.NET Core, you register the types you want to inject in the *Program.cs* file, as in the following code:
 
@@ -7655,12 +7690,15 @@ The most common pattern when registering types in an IoC container is to registe
 
 When using DI in .NET, you might want to be able to scan an assembly and automatically register its types by convention. This feature is not currently available in ASP.NET Core. However, you can use the [Scrutor](https://github.com/khellang/Scrutor) library for that. This approach is convenient when you have dozens of types that need to be registered in your IoC container.
 
-### **Additional resources**
+## **Additional resources**
 
-- **Matthew King. Registering services with Scrutor** <https://www.mking.net/blog/registering-services-with-scrutor>
-- **Kristian Hellang. Scrutor.** GitHub repo. <https://github.com/khellang/Scrutor>
+<https://www.mking.net/blog/registering-services-with-scrutor>
 
-### **Use Autofac as an IoC container**
+• **Matthew King. Registering services with Scrutor**
+
+• **Kristian Hellang. Scrutor.** GitHub repo. <https://github.com/khellang/Scrutor>
+
+## **Use Autofac as an IoC container**
 
 You can also use additional IoC containers and plug them into the ASP.NET Core pipeline, as in the ordering microservice in eShopOnContainers, which uses [Autofac.](https://autofac.org/) When using Autofac you typically register the types via modules, which allow you to split the registration types between multiple files depending on where your types are, just as you could have the application types distributed across multiple class libraries.
 
@@ -7698,19 +7736,18 @@ The registration process and concepts are very similar to the way you can regist
 
 In the example code, the abstraction IOrderRepository is registered along with the implementation class OrderRepository. This means that whenever a constructor is declaring a dependency through the IOrderRepository abstraction or interface, the IoC container will inject an instance of the OrderRepository class.
 
-The instance scope type determines how an instance is shared between requests for the same service or dependency. When a request is made for a dependency, the IoC container can return the following:
+The instance scope type determines how an instance is shared between requests for the same service or dependency. When a request is made for a dependency, the IoC container can return the following: • A single instance per lifetime scope (referred to in the ASP.NET Core IoC container as *scoped*).
 
-- A single instance per lifetime scope (referred to in the ASP.NET Core IoC container as *scoped*).
 - A new instance per dependency (referred to in the ASP.NET Core IoC container as *transient*).
 - A single instance shared across all objects using the IoC container (referred to in the ASP.NET Core IoC container as *singleton*).
 
-### **Additional resources**
+## **Additional resources**
 
 - **Introduction to Dependency Injection in ASP.NET Core** [https://learn.microsoft.com/aspnet/core/fundamentals/dependency-injection](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection)
 - **Autofac.** Official documentation. <https://docs.autofac.org/en/latest/>
 - **Comparing ASP.NET Core IoC container service lifetimes with Autofac IoC container instance scopes - Cesar de la Torre.** [https://devblogs.microsoft.com/cesardelatorre/comparing-asp-net-core-ioc-service-life](https://devblogs.microsoft.com/cesardelatorre/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/)[times-and-autofac-ioc-instance-scopes/](https://devblogs.microsoft.com/cesardelatorre/comparing-asp-net-core-ioc-service-life-times-and-autofac-ioc-instance-scopes/)
 
-# <span id="page-285-0"></span>**Implement the Command and Command Handler patterns**
+## <span id="page-285-0"></span>**Implement the Command and Command Handler patterns**
 
 In the DI-through-constructor example shown in the previous section, the IoC container was injecting repositories through a constructor in a class. But exactly where were they injected? In a simple Web API (for example, the catalog microservice in eShopOnContainers), you inject them at the MVC controllers' level, in a controller constructor, as part of the request pipeline of ASP.NET Core. However, in the initial code of this section (the [CreateOrderCommandHandler](https://github.com/dotnet-architecture/eShopOnContainers/blob/main/src/Services/Ordering/Ordering.API/Application/Commands/CreateOrderCommandHandler.cs) class from the Ordering.API service in eShopOnContainers), the injection of dependencies is done through the constructor of a particular command handler. Let us explain what a command handler is and why you would want to use it.
 
@@ -7724,7 +7761,7 @@ As shown in Figure 7-24, the pattern is based on accepting commands from the cli
 
 Figure 7-24 shows that the UI app sends a command through the API that gets to a CommandHandler, that depends on the Domain model and the Infrastructure, to update the database.
 
-# **The command class**
+### **The command class**
 
 A command is a request for the system to perform an action that changes the state of the system. Commands are imperative, and should be processed just once.
 
@@ -7829,7 +7866,9 @@ string city, string street, string state, string country, string zipcode,
 
 Basically, the command class contains all the data you need for performing a business transaction by using the domain model objects. Thus, commands are simply data structures that contain read-only data, and no behavior. The command's name indicates its purpose. In many languages like C#, commands are represented as classes, but they are not true classes in the real object-oriented sense.
 
-As an additional characteristic, commands are immutable, because the expected usage is that they are processed directly by the domain model. They do not need to change during their projected lifetime. In a C# class, immutability can be achieved by not having any setters or other methods that change the internal state.
+processed directly by the domain model. They do not need to change during their projected lifetime. In a C# class, immutability can be achieved by not having any setters or other methods that change the internal state.
+
+As an additional characteristic, commands are immutable, because the expected usage is that they are
 
 Keep in mind that if you intend or expect commands to go through a serializing/deserializing process, the properties must have a private setter, and the [DataMember] (or [JsonProperty]) attribute. Otherwise, the deserializer won't be able to reconstruct the object at the destination with the required values. You can also use truly read-only properties if the class has a constructor with parameters for all properties, with the usual camelCase naming convention, and annotate the constructor as [JsonConstructor]. However, this option requires more code.
 
@@ -7853,13 +7892,15 @@ public class UpdateOrderStatusCommand
 
 Some developers make their UI request objects separate from their command DTOs, but that is just a matter of preference. It is a tedious separation with not much additional value, and the objects are almost exactly the same shape. For instance, in eShopOnContainers, some commands come directly from the client-side.
 
-# **The Command handler class**
+### **The Command handler class**
 
 You should implement a specific command handler class for each command. That is how the pattern works, and it's where you'll use the command object, the domain objects, and the infrastructure repository objects. The command handler is in fact the heart of the application layer in terms of CQRS and DDD. However, all the domain logic should be contained in the domain classes—within the aggregate roots (root entities), child entities, or [domain services,](https://lostechies.com/jimmybogard/2008/08/21/services-in-domain-driven-design/) but not within the command handler, which is a class from the application layer.
 
 The command handler class offers a strong stepping stone in the way to achieve the Single Responsibility Principle (SRP) mentioned in a previous section.
 
-A command handler receives a command and obtains a result from the aggregate that is used. The result should be either successful execution of the command, or an exception. In the case of an exception, the system state should be unchanged.
+result should be either successful execution of the command, or an exception. In the case of an exception, the system state should be unchanged.
+
+A command handler receives a command and obtains a result from the aggregate that is used. The
 
 The command handler usually takes the following steps:
 
@@ -7942,15 +7983,23 @@ These are additional steps a command handler should take:
 - Internally within the domain objects, raise domain events while the transaction is executed, but that is transparent from a command handler point of view.
 - If the aggregate's operation result is successful and after the transaction is finished, raise integration events. (These might also be raised by infrastructure classes like repositories.)
 
-### **Additional resources**
+## **Additional resources**
+
+• **Commands and events**
 
 - **Mark Seemann. At the Boundaries, Applications are Not Object-Oriented** <https://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/>
-- **Commands and events** <https://cqrs.nu/faq/Command%20and%20Events>
-- **What does a command handler do?** <https://cqrs.nu/faq/Command%20Handlers>
-- **Jimmy Bogard. Domain Command Patterns – Handlers** <https://jimmybogard.com/domain-command-patterns-handlers/>
-- **Jimmy Bogard. Domain Command Patterns – Validation** <https://jimmybogard.com/domain-command-patterns-validation/>
+- <https://cqrs.nu/faq/Command%20and%20Events>
+- <https://cqrs.nu/faq/Command%20Handlers>
 
-# <span id="page-292-0"></span>**The Command process pipeline: how to trigger a command handler**
+• **What does a command handler do?**
+
+<https://jimmybogard.com/domain-command-patterns-handlers/>
+
+• **Jimmy Bogard. Domain Command Patterns – Handlers**
+
+• **Jimmy Bogard. Domain Command Patterns – Validation** <https://jimmybogard.com/domain-command-patterns-validation/>
+
+## <span id="page-292-0"></span>**The Command process pipeline: how to trigger a command handler**
 
 The next question is how to invoke a command handler. You could manually call it from each related ASP.NET Core controller. However, that approach would be too coupled and is not ideal.
 
@@ -7959,7 +8008,7 @@ The other two main options, which are the recommended options, are:
 - Through an in-memory Mediator pattern artifact.
 - With an asynchronous message queue, in between controllers and handlers.
 
-# **Use the Mediator pattern (in-memory) in the command pipeline**
+### **Use the Mediator pattern (in-memory) in the command pipeline**
 
 As shown in Figure 7-25, in a CQRS approach you use an intelligent mediator, similar to an in-memory bus, which is smart enough to redirect to the right command handler based on the type of the command or DTO being received. The single black arrows between components represent the dependencies between objects (in many cases, injected through DI) with their related interactions.
 
@@ -7977,7 +8026,7 @@ Decorators and behaviors are similar to [Aspect Oriented Programming \(AOP\),](h
 
 For example, in the eShopOnContainers ordering microservice, has an implementation of two sample behaviors, a [LogBehavior](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Behaviors/LoggingBehavior.cs) class and a [ValidatorBehavior](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Behaviors/ValidatorBehavior.cs) class. The implementation of the behaviors is explained in the next section by showing how eShopOnContainers uses [MediatR](https://www.nuget.org/packages/MediatR) [behaviors.](https://github.com/jbogard/MediatR/wiki/Behaviors)
 
-# **Use message queues (out-of-proc) in the command's pipeline**
+## **Use message queues (out-of-proc) in the command's pipeline**
 
 Another choice is to use asynchronous messages based on brokers or message queues, as shown in Figure 7-26. That option could also be combined with the mediator component right before the command handler.
 
@@ -8003,7 +8052,7 @@ In the initial version of eShopOnContainers, it was decided to use synchronous c
 
 In any case, this should be a decision based on your application's or microservice's business requirements.
 
-# <span id="page-295-0"></span>**Implement the command process pipeline with a mediator pattern (MediatR)**
+## <span id="page-295-0"></span>**Implement the command process pipeline with a mediator pattern (MediatR)**
 
 As a sample implementation, this guide proposes using the in-process pipeline based on the Mediator pattern to drive command ingestion and route commands, in memory, to the right command handlers. The guide also proposes applying [behaviors](https://github.com/jbogard/MediatR/wiki/Behaviors) in order to separate cross-cutting concerns.
 
@@ -8041,7 +8090,7 @@ public async Task<IActionResult> ExecuteBusinessOperation([FromBody]RunOpCommand
 }
 ```
 
-# **Implement idempotent Commands**
+### **Implement idempotent Commands**
 
 In **eShopOnContainers**, a more advanced example than the above is submitting a CreateOrderCommand object from the Ordering microservice. But since the Ordering business process is a bit more complex and, in our case, it actually starts in the Basket microservice, this action of submitting the CreateOrderCommand object is performed from an integration-event handler named [UserCheckoutAcceptedIntegrationEventHandler](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/IntegrationEvents/EventHandling/UserCheckoutAcceptedIntegrationEventHandler.cs) instead of a simple WebAPI controller called from the client App as in the previous simpler example.
 
@@ -8063,11 +8112,14 @@ var createOrderCommand = new CreateOrderCommand(eventMsg.Basket.Items,
 var requestCreateOrder = new IdentifiedCommand<CreateOrderCommand,bool>(createOrderCommand,
 eventMsg.RequestId);
 result = await _mediator.Send(requestCreateOrder);
+However, this case is also slightly more advanced because we're also implementing idempotent
 ```
 
-However, this case is also slightly more advanced because we're also implementing idempotent commands. The CreateOrderCommand process should be idempotent, so if the same message comes duplicated through the network, because of any reason, like retries, the same business order will be processed just once.
+commands. The CreateOrderCommand process should be idempotent, so if the same message comes duplicated through the network, because of any reason, like retries, the same business order will be processed just once.
 
-This is implemented by wrapping the business command (in this case CreateOrderCommand) and embedding it into a generic IdentifiedCommand, which is tracked by an ID of every message coming through the network that has to be idempotent.
+embedding it into a generic IdentifiedCommand, which is tracked by an ID of every message coming through the network that has to be idempotent.
+
+This is implemented by wrapping the business command (in this case CreateOrderCommand) and
 
 In the code below, you can see that the IdentifiedCommand is nothing more than a DTO with and ID plus the wrapped business command object.
 
@@ -8256,7 +8308,7 @@ item.Discount, item.PictureUrl, item.Units);
 }
 ```
 
-# **Register the types used by MediatR**
+### **Register the types used by MediatR**
 
 In order for MediatR to be aware of your command handler classes, you need to register the mediator classes and the command handler classes in your IoC container. By default, MediatR uses Autofac as the IoC container, but you can also use the built-in ASP.NET Core IoC container or any other container supported by MediatR.
 
@@ -8294,7 +8346,7 @@ public class CreateOrderCommandHandler
 
 That is the code that correlates commands with command handlers. The handler is just a simple class, but it inherits from RequestHandler<T>, where T is the command type, and MediatR makes sure it is invoked with the correct payload (the command).
 
-# <span id="page-301-0"></span>**Apply cross-cutting concerns when processing commands with the Behaviors in MediatR**
+## <span id="page-301-0"></span>**Apply cross-cutting concerns when processing commands with the Behaviors in MediatR**
 
 There is one more thing: being able to apply cross-cutting concerns to the mediator pipeline. You can also see at the end of the Autofac registration module code how it registers a behavior type, specifically, a custom LoggingBehavior class and a ValidatorBehavior class. But you could add other custom behaviors, too.
 
@@ -8341,9 +8393,10 @@ public class LoggingBehavior<TRequest, TResponse>
  return response;
  }
 }
+Just by implementing this behavior class and by registering it in the pipeline (in the MediatorModule
 ```
 
-Just by implementing this behavior class and by registering it in the pipeline (in the MediatorModule above), all the commands processed through MediatR will be logging information about the execution.
+above), all the commands processed through MediatR will be logging information about the execution.
 
 The eShopOnContainers ordering microservice also applies a second behavior for basic validations, the [ValidatorBehavior](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Behaviors/ValidatorBehavior.cs) class that relies on the [FluentValidation](https://github.com/JeremySkinner/FluentValidation) library, as shown in the following code:
 
@@ -8433,14 +8486,16 @@ In a similar way, you could implement other behaviors for additional aspects or 
 - **Put your controllers on a diet: POSTs and commands.** [https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and](https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and-commands/)[commands/](https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-and-commands/)
 
 - **Tackling cross-cutting concerns with a mediator pipeline** [https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a](https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a-mediator-pipeline/)[mediator-pipeline/](https://lostechies.com/jimmybogard/2014/09/09/tackling-cross-cutting-concerns-with-a-mediator-pipeline/)
-- **CQRS and REST: the perfect match** <https://lostechies.com/jimmybogard/2016/06/01/cqrs-and-rest-the-perfect-match/>
-- **MediatR Pipeline Examples** <https://lostechies.com/jimmybogard/2016/10/13/mediatr-pipeline-examples/>
+- <https://lostechies.com/jimmybogard/2016/06/01/cqrs-and-rest-the-perfect-match/> • **MediatR Pipeline Examples**
+- <https://lostechies.com/jimmybogard/2016/10/13/mediatr-pipeline-examples/>
 - **Vertical Slice Test Fixtures for MediatR and ASP.NET Core** [https://lostechies.com/jimmybogard/2016/10/24/vertical-slice-test-fixtures-for-mediatr-and](https://lostechies.com/jimmybogard/2016/10/24/vertical-slice-test-fixtures-for-mediatr-and-asp-net-core/)[asp-net-core/](https://lostechies.com/jimmybogard/2016/10/24/vertical-slice-test-fixtures-for-mediatr-and-asp-net-core/)
 - **MediatR Extensions for Microsoft Dependency Injection Released** [https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft](https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft-dependency-injection-released/)[dependency-injection-released/](https://lostechies.com/jimmybogard/2016/07/19/mediatr-extensions-for-microsoft-dependency-injection-released/)
 
 ### Fluent validation
 
 • **Jeremy Skinner. FluentValidation.** GitHub repo. <https://github.com/JeremySkinner/FluentValidation>
+
+• **CQRS and REST: the perfect match**
 
 *CHAPTER* 7
 
@@ -8466,7 +8521,7 @@ The Polly library is still used to add resilience to database connections, speci
 
 All code samples and images in this section were valid before using Linkerd and are not updated to reflect the current actual code. So they make sense in the context of this section.
 
-# <span id="page-306-0"></span>Handle partial failure
+## <span id="page-306-0"></span>Handle partial failure
 
 In distributed systems like microservices-based applications, there's an ever-present risk of partial failure. For instance, a single microservice/container can fail or might not be available to respond for a short time, or a single VM or server can crash. Since clients and services are separate processes, a service might not be able to respond in a timely way to a client's request. The service might be overloaded and responding very slowly to requests or might simply not be accessible for a short time because of network issues.
 
@@ -8480,8 +8535,6 @@ In a large microservices-based application, any partial failure can be amplified
 
 ![](_page_307_Figure_1.jpeg)
 
-*Figure 8-2. The impact of having an incorrect design featuring long chains of HTTP requests*
-
 Intermittent failure is guaranteed in a distributed and cloud-based system, even if every dependency itself has excellent availability. It's a fact you need to consider.
 
 If you do not design and implement techniques to ensure fault tolerance, even small downtimes can be amplified. As an example, 50 dependencies each with 99.99% of availability would result in several hours of downtime each month because of this ripple effect. When a microservice dependency fails while handling a high volume of requests, that failure can quickly saturate all available request threads in each service and crash the whole application.
@@ -8494,7 +8547,7 @@ To minimize this problem, in the section Asynchronous microservice integration e
 
 In addition, it's essential that you design your microservices and client applications to handle partial failures—that is, to build resilient microservices and client applications.
 
-# <span id="page-308-0"></span>Strategies to handle partial failure
+## <span id="page-308-0"></span>Strategies to handle partial failure
 
 To deal with partial failures, use one of the strategies described here.
 
@@ -8512,21 +8565,26 @@ To deal with partial failures, use one of the strategies described here.
 
 certain failure scenarios faster than a circuit breaker would be, since the circuit breaker waits for the failures. The BulkheadPolicy object in [Polly](https://thepollyproject.azurewebsites.net/) exposes how full the bulkhead and queue are, and offers events on overflow so can also be used to drive automated horizontal scaling.
 
-# <span id="page-309-0"></span>**Additional resources**
+## <span id="page-309-0"></span>**Additional resources**
 
 - **Resiliency patterns** [https://learn.microsoft.com/azure/architecture/framework/resiliency/reliability-patterns](https://docs.microsoft.com/azure/architecture/framework/resiliency/reliability-patterns)
-- **Adding Resilience and Optimizing Performance** [https://learn.microsoft.com/previous-versions/msp-n-p/jj591574\(v=pandp.10\)](https://docs.microsoft.com/previous-versions/msp-n-p/jj591574(v=pandp.10))
-- **Bulkhead.** GitHub repo. Implementation with Polly policy. <https://github.com/App-vNext/Polly/wiki/Bulkhead>
+- [https://learn.microsoft.com/previous-versions/msp-n-p/jj591574\(v=pandp.10\)](https://docs.microsoft.com/previous-versions/msp-n-p/jj591574(v=pandp.10))
+- <https://github.com/App-vNext/Polly/wiki/Bulkhead>
+
+• **Bulkhead.** GitHub repo. Implementation with Polly policy.
+
+• **Adding Resilience and Optimizing Performance**
+
 - **Designing resilient applications for Azure** [https://learn.microsoft.com/azure/architecture/framework/resiliency/app-design](https://docs.microsoft.com/azure/architecture/framework/resiliency/app-design)
 - **Transient fault handling** [https://learn.microsoft.com/azure/architecture/best-practices/transient-faults](https://docs.microsoft.com/azure/architecture/best-practices/transient-faults)
 
-# <span id="page-309-1"></span>Implement retries with exponential backoff
+## <span id="page-309-1"></span>Implement retries with exponential backoff
 
 *[Retries with exponential backoff](https://docs.microsoft.com/azure/architecture/patterns/retry)* is a technique that retries an operation, with an exponentially increasing wait time, up to a maximum retry count has been reached (the [exponential backoff\)](https://en.wikipedia.org/wiki/Exponential_backoff). This technique embraces the fact that cloud resources might intermittently be unavailable for more than a few seconds for any reason. For example, an orchestrator might be moving a container to another node in a cluster for load balancing. During that time, some requests might fail. Another example could be a database like SQL Azure, where a database can be moved to another server for load balancing, causing the database to be unavailable for a few seconds.
 
 <span id="page-309-2"></span>There are many approaches to implement retries logic with exponential backoff.
 
-# Implement resilient Entity Framework Core SQL connections
+## Implement resilient Entity Framework Core SQL connections
 
 For Azure SQL DB, Entity Framework (EF) Core already provides internal database connection resiliency and retry logic. But you need to enable the Entity Framework execution strategy for each [DbContext](https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext) connection if you want to have [resilient EF Core connections.](https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency)
 
@@ -8551,7 +8609,7 @@ builder.Services.AddDbContext<CatalogContext>(options =>
  });
 ```
 
-# <span id="page-310-0"></span>**Execution strategies and explicit transactions using BeginTransaction and multiple DbContexts**
+## <span id="page-310-0"></span>**Execution strategies and explicit transactions using BeginTransaction and multiple DbContexts**
 
 When retries are enabled in EF Core connections, each operation you perform using EF Core becomes its own retryable operation. Each query and each call to SaveChanges will be retried as a unit if a transient failure occurs.
 
@@ -8655,21 +8713,21 @@ public class ResilientTransaction
 }
 ```
 
-# <span id="page-312-0"></span>**Additional resources**
+## <span id="page-312-0"></span>**Additional resources**
 
-• **Connection Resiliency and Command Interception with EF in an ASP.NET MVC Application**
+• **Connection Resiliency and Command Interception with EF in an ASP.NET MVC Application** [https://learn.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-](https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application)
 
-[https://learn.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef](https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application)[using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in](https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application)[an-asp-net-mvc-application](https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application)
+[using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in](https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application)[an-asp-net-mvc-application](https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/connection-resiliency-and-command-interception-with-the-entity-framework-in-an-asp-net-mvc-application)
 
 • **Cesar de la Torre. Using Resilient Entity Framework Core SQL Connections and Transactions**
 
 [https://devblogs.microsoft.com/cesardelatorre/using-resilient-entity-framework-core-sql](https://devblogs.microsoft.com/cesardelatorre/using-resilient-entity-framework-core-sql-connections-and-transactions-retries-with-exponential-backoff/)[connections-and-transactions-retries-with-exponential-backoff/](https://devblogs.microsoft.com/cesardelatorre/using-resilient-entity-framework-core-sql-connections-and-transactions-retries-with-exponential-backoff/)
 
-# <span id="page-312-1"></span>Use IHttpClientFactory to implement resilient HTTP requests
+## <span id="page-312-1"></span>Use IHttpClientFactory to implement resilient HTTP requests
 
 [IHttpClientFactory](https://docs.microsoft.com/dotnet/api/system.net.http.ihttpclientfactory) is a contract implemented by DefaultHttpClientFactory, an opinionated factory, available since .NET Core 2.1, for creating [HttpClient](https://docs.microsoft.com/dotnet/api/system.net.http.httpclient) instances to be used in your applications.
 
-# <span id="page-312-2"></span>**Issues with the original HttpClient class available in .NET**
+### <span id="page-312-2"></span>**Issues with the original HttpClient class available in .NET**
 
 The original and well-known [HttpClient](https://docs.microsoft.com/dotnet/api/system.net.http.httpclient) class can be easily used, but in some cases, it isn't being properly used by many developers.
 
@@ -8679,7 +8737,9 @@ Therefore, HttpClient is intended to be instantiated once and reused throughout 
 
 Another issue that developers run into is when using a shared instance of HttpClient in long-running processes. In a situation where the HttpClient is instantiated as a singleton or a static object, it fails to handle the DNS changes as described in this [issue](https://github.com/dotnet/runtime/issues/18348) of the dotnet/runtime GitHub repository.
 
-However, the issue isn't really with HttpClient per se, but with the [default constructor for HttpClient,](https://docs.microsoft.com/dotnet/api/system.net.http.httpclient.-ctor#system-net-http-httpclient-ctor)  because it creates a new concrete instance of [HttpMessageHandler,](https://docs.microsoft.com/dotnet/api/system.net.http.httpmessagehandler) which is the one that has *sockets exhaustion* and DNS changes issues mentioned above.
+because it creates a new concrete instance of [HttpMessageHandler,](https://docs.microsoft.com/dotnet/api/system.net.http.httpmessagehandler) which is the one that has *sockets exhaustion* and DNS changes issues mentioned above.
+
+However, the issue isn't really with HttpClient per se, but with the [default constructor for HttpClient,](https://docs.microsoft.com/dotnet/api/system.net.http.httpclient.-ctor#system-net-http-httpclient-ctor) 
 
 To address the issues mentioned above and to make HttpClient instances manageable, .NET Core 2.1 introduced two approaches, one of them being [IHttpClientFactory](https://docs.microsoft.com/dotnet/api/system.net.http.ihttpclientfactory). It's an interface that's used to configure and create HttpClient instances in an app through Dependency Injection (DI). It also provides extensions for Polly-based middleware to take advantage of delegating handlers in HttpClient.
 
@@ -8687,7 +8747,7 @@ The alternative is to use SocketsHttpHandler with configured PooledConnectionLif
 
 [Polly](https://thepollyproject.azurewebsites.net/) is a transient-fault-handling library that helps developers add resiliency to their applications, by using some pre-defined policies in a fluent and thread-safe manner.
 
-# <span id="page-313-0"></span>**Benefits of using IHttpClientFactory**
+## <span id="page-313-0"></span>**Benefits of using IHttpClientFactory**
 
 The current implementation of [IHttpClientFactory,](https://docs.microsoft.com/dotnet/api/system.net.http.ihttpclientfactory) that also implements [IHttpMessageHandlerFactory,](https://docs.microsoft.com/dotnet/api/system.net.http.ihttpmessagehandlerfactory)  offers the following benefits:
 
@@ -8704,12 +8764,11 @@ The HttpClient instances injected by DI can be disposed of safely, because the a
 
 The implementation of IHttpClientFactory (DefaultHttpClientFactory) is tightly tied to the DI implementation in the Microsoft.Extensions.DependencyInjection NuGet package. If you need to use HttpClient without DI or with other DI implementations, consider using a static or singleton HttpClient with PooledConnectionLifetime set up. For more information, see [HttpClient guidelines for .NET.](https://docs.microsoft.com/dotnet/fundamentals/networking/http/httpclient-guidelines)
 
-# <span id="page-314-0"></span>**Multiple ways to use IHttpClientFactory**
+## <span id="page-314-0"></span>**Multiple ways to use IHttpClientFactory**
 
 There are several ways that you can use IHttpClientFactory in your application:
 
-- Basic usage
-- Use Named Clients
+- Basic usage • Use Named Clients
 - Use Typed Clients
 - Use Generated Clients
 
@@ -8719,7 +8778,7 @@ For the sake of brevity, this guidance shows the most structured way to use IHtt
 
 If your app requires cookies, it might be better to avoid using [IHttpClientFactory](https://docs.microsoft.com/dotnet/api/system.net.http.ihttpclientfactory) in your app. For alternative ways of managing clients, see [Guidelines for using HTTP clients](https://docs.microsoft.com/dotnet/fundamentals/networking/http/httpclient-guidelines)
 
-# <span id="page-314-1"></span>**How to use Typed Clients with IHttpClientFactory**
+## <span id="page-314-1"></span>**How to use Typed Clients with IHttpClientFactory**
 
 So, what's a "Typed Client"? It's just an HttpClient that's pre-configured for some specific use. This configuration can include specific values such as the base server, HTTP headers or time outs.
 
@@ -8771,7 +8830,7 @@ retryAttempt)));
 
 You can find more details about using Polly in the Next article.
 
-# **HttpClient lifetimes**
+### **HttpClient lifetimes**
 
 Each time you get an HttpClient object from the IHttpClientFactory, a new instance is returned. But each HttpClient uses an HttpMessageHandler that's pooled and reused by the IHttpClientFactory to reduce resource consumption, as long as the HttpMessageHandler's lifetime hasn't expired.
 
@@ -8788,9 +8847,9 @@ builder.Services.AddHttpClient<ICatalogService, CatalogService>()
 
 Each Typed Client can have its own configured handler lifetime value. Set the lifetime to InfiniteTimeSpan to disable handler expiry.
 
-# **Implement your Typed Client classes that use the injected and configured HttpClient**
+### **Implement your Typed Client classes that use the injected and configured HttpClient** As a previous step, you need to have your Typed Client classes defined, such as the classes in the
 
-As a previous step, you need to have your Typed Client classes defined, such as the classes in the sample code, like 'BasketService', 'CatalogService', 'OrderingService', etc. – A Typed Client is a class that accepts an HttpClient object (injected through its constructor) and uses it to call some remote HTTP service. For example:
+sample code, like 'BasketService', 'CatalogService', 'OrderingService', etc. – A Typed Client is a class that accepts an HttpClient object (injected through its constructor) and uses it to call some remote HTTP service. For example:
 
 ```
 public class CatalogService : ICatalogService
@@ -8817,7 +8876,7 @@ The Typed Client (CatalogService in the example) is activated by DI (Dependency 
 
 A Typed Client is effectively a transient object, that means a new instance is created each time one is needed. It receives a new HttpClient instance each time it's constructed. However, the HttpMessageHandler objects in the pool are the objects that are reused by multiple HttpClient instances.
 
-# **Use your Typed Client classes**
+### **Use your Typed Client classes**
 
 Finally, once you have your typed classes implemented, you can have them registered and configured with AddHttpClient(). After that you can use them wherever services are injected by DI, such as in Razor page code or an MVC web app controller, shown in the below code from eShopOnContainers:
 
@@ -8850,7 +8909,7 @@ namespace Microsoft.eShopOnContainers.WebMVC.Controllers
 
 Up to this point, the above code snippet only shows the example of performing regular HTTP requests. But the 'magic' comes in the following sections where it shows how all the HTTP requests made by HttpClient can have resilient policies such as retries with exponential backoff, circuit breakers, security features using auth tokens, or even any other custom feature. And all of these can be done just by adding policies and delegating handlers to your registered Typed Clients.
 
-# <span id="page-318-0"></span>**Additional resources**
+### <span id="page-318-0"></span>**Additional resources**
 
 - **HttpClient guidelines for .NET** [https://learn.microsoft.com/en-us/dotnet/fundamentals/networking/http/httpclient](https://docs.microsoft.com/dotnet/fundamentals/networking/http/httpclient-guidelines)[guidelines](https://docs.microsoft.com/dotnet/fundamentals/networking/http/httpclient-guidelines)
 - **Using HttpClientFactory in .NET** [https://learn.microsoft.com/en-us/dotnet/core/extensions/httpclient-factory](https://docs.microsoft.com/dotnet/core/extensions/httpclient-factory)
@@ -8858,7 +8917,7 @@ Up to this point, the above code snippet only shows the example of performing re
 - **HttpClientFactory source code in the dotnet/runtime GitHub repository** <https://github.com/dotnet/runtime/tree/release/7.0/src/libraries/Microsoft.Extensions.Http/>
 - **Polly (.NET resilience and transient-fault-handling library)** <https://thepollyproject.azurewebsites.net/>
 
-# <span id="page-318-1"></span>Implement HTTP call retries with exponential backoff with IHttpClientFactory and Polly policies
+## <span id="page-318-1"></span>Implement HTTP call retries with exponential backoff with IHttpClientFactory and Polly policies
 
 The recommended approach for retries with exponential backoff is to take advantage of more advanced .NET libraries like the open-source [Polly library.](https://github.com/App-vNext/Polly)
 
@@ -8866,16 +8925,15 @@ Polly is a .NET library that provides resilience and transient-fault handling ca
 
 The following steps show how you can use Http retries with Polly integrated into IHttpClientFactory, which is explained in the previous section.
 
-### **Install .NET packages**
+## **Install .NET packages**
 
 First, you will need to install the Microsoft.Extensions.Http.Polly package.
 
-- [Install with Visual Studio](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio)
-- [Install with dotnet CLI](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-dotnet-cli)
+- [Install with Visual Studio](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio) • [Install with dotnet CLI](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-dotnet-cli)
 - [Install with nuget.exe CLI](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-nuget-cli)
 - [Install with Package Manager Console \(PowerShell\)](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-powershell)
 
-### **Reference the .NET 7 packages**
+## **Reference the .NET 7 packages**
 
 IHttpClientFactory is available since .NET Core 2.1, however, we recommend you use the latest .NET 7 packages from NuGet in your project. You typically also need to reference the extension package Microsoft.Extensions.Http.Polly.
 
@@ -8907,7 +8965,7 @@ builder.Services.AddHttpClient<IBasketService, BasketService>()
 
 With Polly, you can define a Retry policy with the number of retries, the exponential backoff configuration, and the actions to take when there's an HTTP exception, such as logging the error. In this case, the policy is configured to try six times with an exponential retry, starting at two seconds.
 
-# <span id="page-319-0"></span>**Add a jitter strategy to the retry policy**
+### <span id="page-319-0"></span>**Add a jitter strategy to the retry policy**
 
 A regular Retry policy can affect your system in cases of high concurrency and scalability and under high contention. To overcome peaks of similar retries coming from many clients in partial outages, a good workaround is to add a jitter strategy to the retry algorithm/policy. This strategy can improve the overall performance of the end-to-end system. As recommended in [Polly: Retry with Jitter,](https://github.com/App-vNext/Polly/wiki/Retry-with-jitter) a good jitter strategy can be implemented by smooth and evenly distributed retry intervals applied with a well-controlled median initial retry delay on an exponential backoff. This approach helps to spread out the spikes when the issue arises. The principle is illustrated by the following example:
 
@@ -8919,7 +8977,7 @@ var retryPolicy = Policy
  .WaitAndRetryAsync(delay);
 ```
 
-# <span id="page-320-0"></span>**Additional resources**
+## <span id="page-320-0"></span>**Additional resources**
 
 - **Retry pattern** [https://learn.microsoft.com/azure/architecture/patterns/retry](https://docs.microsoft.com/azure/architecture/patterns/retry)
 - **Polly and IHttpClientFactory** [https://github.com/App-vNext/Polly/wiki/Polly-and-](https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory)[HttpClientFactory](https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory)
@@ -8927,7 +8985,7 @@ var retryPolicy = Policy
 - **Polly: Retry with Jitter** <https://github.com/App-vNext/Polly/wiki/Retry-with-jitter>
 - **Marc Brooker. Jitter: Making Things Better With Randomness** <https://brooker.co.za/blog/2015/03/21/backoff.html>
 
-# <span id="page-320-1"></span>Implement the Circuit Breaker pattern
+## <span id="page-320-1"></span>Implement the Circuit Breaker pattern
 
 As noted earlier, you should handle faults that might take a variable amount of time to recover from, as might happen when you try to connect to a remote service or resource. Handling this type of fault can improve the stability and resiliency of an application.
 
@@ -8941,9 +8999,11 @@ Using Http retries carelessly could result in creating a Denial of Service [\(Do
 
 Therefore, you need some kind of defense barrier so that excessive requests stop when it isn't worth to keep trying. That defense barrier is precisely the circuit breaker.
 
-The Circuit Breaker pattern has a different purpose than the "Retry pattern". The "Retry pattern" enables an application to retry an operation in the expectation that the operation will eventually succeed. The Circuit Breaker pattern prevents an application from performing an operation that's likely to fail. An application can combine these two patterns. However, the retry logic should be sensitive to any exception returned by the circuit breaker, and it should abandon retry attempts if the circuit breaker indicates that a fault is not transient.
+The Circuit Breaker pattern has a different purpose than the "Retry pattern". The "Retry pattern"
 
-# <span id="page-321-0"></span>**Implement Circuit Breaker pattern with IHttpClientFactory and Polly**
+enables an application to retry an operation in the expectation that the operation will eventually succeed. The Circuit Breaker pattern prevents an application from performing an operation that's likely to fail. An application can combine these two patterns. However, the retry logic should be sensitive to any exception returned by the circuit breaker, and it should abandon retry attempts if the circuit breaker indicates that a fault is not transient.
+
+## <span id="page-321-0"></span>**Implement Circuit Breaker pattern with IHttpClientFactory and Polly**
 
 As when implementing retries, the recommended approach for circuit breakers is to take advantage of proven .NET libraries like Polly and its native integration with IHttpClientFactory.
 
@@ -8983,11 +9043,11 @@ Circuit breakers should also be used to redirect requests to a fallback infrastr
 
 service that's performing the HTTP call. That way, if there's an outage in the datacenter that impacts only your backend microservices but not your client applications, the client applications can redirect to the fallback services. Polly is planning a new policy to automate this [failover policy](https://github.com/App-vNext/Polly/wiki/Polly-Roadmap#failover-policy) scenario.
 
-All those features are for cases where you're managing the failover from within the .NET code, as opposed to having it managed automatically for you by Azure, with location transparency.
+All those features are for cases where you're managing the failover from within the .NET code, as opposed to having it managed automatically for you by Azure, with location transparency. From a usage point of view, when using HttpClient, there's no need to add anything new here
 
-From a usage point of view, when using HttpClient, there's no need to add anything new here because the code is the same than when using HttpClient with IHttpClientFactory, as shown in previous sections.
+because the code is the same than when using HttpClient with IHttpClientFactory, as shown in previous sections.
 
-# <span id="page-322-0"></span>**Test Http retries and circuit breakers in eShopOnContainers**
+## <span id="page-322-0"></span>**Test Http retries and circuit breakers in eShopOnContainers**
 
 Whenever you start the eShopOnContainers solution in a Docker host, it needs to start multiple containers. Some of the containers are slower to start and initialize, like the SQL Server container. This is especially true the first time you deploy the eShopOnContainers application into Docker because it needs to set up the images and the database. The fact that some containers start slower than others can cause the rest of the services to initially throw HTTP exceptions, even if you set dependencies between containers at the docker-compose level, as explained in previous sections. Those dockercompose dependencies between containers are just at the process level. The container's entry point process might be started, but SQL Server might not be ready for queries. The result can be a cascade of errors, and the application can get an exception when trying to consume that particular container.
 
@@ -8995,7 +9055,7 @@ You might also see this type of error on startup when the application is deployi
 
 The way 'eShopOnContainers' solves those issues when starting all the containers is by using the Retry pattern illustrated earlier.
 
-# **Test the circuit breaker in eShopOnContainers**
+### **Test the circuit breaker in eShopOnContainers**
 
 There are a few ways you can break/open the circuit and test it with eShopOnContainers.
 
@@ -9056,17 +9116,15 @@ Here's a summary. The Retry policy tries several times to make the HTTP request 
 
 ![](_page_324_Picture_0.jpeg)
 
-*Figure 8-6. Circuit breaker returning an error to the UI*
-
 You can implement different logic for when to open/break the circuit. Or you can try an HTTP request against a different back-end microservice if there's a fallback datacenter or redundant back-end system.
 
 Finally, another possibility for the CircuitBreakerPolicy is to use Isolate (which forces open and holds open the circuit) and Reset (which closes it again). These could be used to build a utility HTTP endpoint that invokes Isolate and Reset directly on the policy. Such an HTTP endpoint could also be used, suitably secured, in production for temporarily isolating a downstream system, such as when you want to upgrade it. Or it could trip the circuit manually to protect a downstream system you suspect to be faulting.
 
-# <span id="page-324-0"></span>**Additional resources**
+### <span id="page-324-0"></span>**Additional resources**
 
 • **Circuit Breaker pattern** [https://learn.microsoft.com/azure/architecture/patterns/circuit-breaker](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker)
 
-# <span id="page-324-1"></span>Health monitoring
+## <span id="page-324-1"></span>Health monitoring
 
 Health monitoring can allow near-real-time information about the state of your containers and microservices. Health monitoring is critical to multiple aspects of operating microservices and is especially important when orchestrators perform partial application upgrades in phases, as explained later.
 
@@ -9074,17 +9132,19 @@ Microservices-based applications often use heartbeats or health checks to enable
 
 In the typical model, services send reports about their status, and that information is aggregated to provide an overall view of the state of health of your application. If you're using an orchestrator, you can provide health information to your orchestrator's cluster, so that the cluster can act accordingly. If you invest in high-quality health reporting that's customized for your application, you can detect and fix issues for your running application much more easily.
 
-# <span id="page-325-0"></span>**Implement health checks in ASP.NET Core services**
+## <span id="page-325-0"></span>**Implement health checks in ASP.NET Core services**
 
-When developing an ASP.NET Core microservice or web application, you can use the built-in health checks feature that was released in ASP .NET Core 2.2
+When developing an ASP.NET Core microservice or web application, you can use the built-in health checks feature that was released in ASP .NET Core 2.2 [\(Microsoft.Extensions.Diagnostics.HealthChecks\)](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks). Like many ASP.NET Core features, health checks
 
-[\(Microsoft.Extensions.Diagnostics.HealthChecks\)](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks). Like many ASP.NET Core features, health checks come with a set of services and a middleware.
+come with a set of services and a middleware.
 
-Health check services and middleware are easy to use and provide capabilities that let you validate if any external resource needed for your application (like a SQL Server database or a remote API) is working properly. When you use this feature, you can also decide what it means that the resource is healthy, as we explain later.
+any external resource needed for your application (like a SQL Server database or a remote API) is working properly. When you use this feature, you can also decide what it means that the resource is healthy, as we explain later. To use this feature effectively, you need to first configure services in your microservices. Second, you
 
-To use this feature effectively, you need to first configure services in your microservices. Second, you need a front-end application that queries for the health reports. That front-end application could be a custom reporting application, or it could be an orchestrator itself that can react accordingly to the health states.
+Health check services and middleware are easy to use and provide capabilities that let you validate if
 
-# **Use the HealthChecks feature in your back-end ASP.NET microservices**
+need a front-end application that queries for the health reports. That front-end application could be a custom reporting application, or it could be an orchestrator itself that can react accordingly to the health states.
+
+## **Use the HealthChecks feature in your back-end ASP.NET microservices**
 
 In this section, you'll learn how to implement the HealthChecks feature in a sample ASP.NET Core 7.0 Web API application when using the [Microsoft.Extensions.Diagnostics.HealthChecks](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks) package. The Implementation of this feature in a large-scale microservices like the eShopOnContainers is explained in the next section.
 
@@ -9159,11 +9219,12 @@ Note that in the previous code, Select 1 is the query used to check the Health o
 ```
 // Program.cs from .NET 7 Web Api sample
 app.MapHealthChecks("/hc");
+When the endpoint <yourmicroservice>/hc is invoked, it runs all the health checks that are configured
 ```
 
-When the endpoint <yourmicroservice>/hc is invoked, it runs all the health checks that are configured in the AddHealthChecks() method in the Startup class and shows the result.
+in the AddHealthChecks() method in the Startup class and shows the result.
 
-# **HealthChecks implementation in eShopOnContainers**
+## **HealthChecks implementation in eShopOnContainers**
 
 Microservices in eShopOnContainers rely on multiple services to perform its task. For example, the Catalog.API microservice from eShopOnContainers depends on many services, such as Azure Blob Storage, SQL Server, and RabbitMQ. Therefore, it has several health checks added using the AddCheck() method. For every dependent service, a custom IHealthCheck implementation that defines its respective health status would need to be added.
 
@@ -9235,17 +9296,15 @@ app.UseHealthChecks("/hc", new HealthCheckOptions()
 });
 ```
 
-# **Query your microservices to report about their health status**
+### **Query your microservices to report about their health status**
 
 When you've configured health checks as described in this article and you have the microservice running in Docker, you can directly check from a browser if it's healthy. You have to publish the container port in the Docker host, so you can access the container through the external Docker host IP or through host.docker.internal, as shown in figure 8-8.
 
 ![](_page_329_Figure_0.jpeg)
 
-*Figure 8-8. Checking health status of a single service from a browser*
-
 In that test, you can see that the Catalog.API microservice (running on port 5101) is healthy, returning HTTP status 200 and status information in JSON. The service also checked the health of its SQL Server database dependency and RabbitMQ, so the health check reported itself as healthy.
 
-# <span id="page-329-0"></span>**Use watchdogs**
+## <span id="page-329-0"></span>**Use watchdogs**
 
 A watchdog is a separate service that can watch health and load across services, and report health about the microservices by querying with the HealthChecks library introduced earlier. This can help prevent errors that would not be detected based on the view of a single service. Watchdogs also are a good place to host code that can perform remediation actions for known conditions without user interaction.
 
@@ -9290,9 +9349,9 @@ builder.Services.AddHealthChecksUI();
 app.UseHealthChecksUI(config => config.UIPath = "/hc-ui");
 ```
 
-# <span id="page-331-0"></span>**Health checks when using orchestrators**
+## <span id="page-331-0"></span>**Health checks when using orchestrators** To monitor the availability of your microservices, orchestrators like Kubernetes and Service Fabric
 
-To monitor the availability of your microservices, orchestrators like Kubernetes and Service Fabric periodically perform health checks by sending requests to test the microservices. When an orchestrator determines that a service/container is unhealthy, it stops routing requests to that instance. It also usually creates a new instance of that container.
+periodically perform health checks by sending requests to test the microservices. When an orchestrator determines that a service/container is unhealthy, it stops routing requests to that instance. It also usually creates a new instance of that container.
 
 For instance, most orchestrators can use health checks to manage zero-downtime deployments. Only when the status of a service/container changes to healthy will the orchestrator start routing traffic to service/container instances.
 
@@ -9302,7 +9361,7 @@ Another aspect of service health is reporting metrics from the service. This is 
 
 Note that Azure Service Fabric provides its own [Health Monitoring model,](https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction) which is more advanced than simple health checks.
 
-# <span id="page-331-1"></span>**Advanced monitoring: visualization, analysis, and alerts**
+### <span id="page-331-1"></span>**Advanced monitoring: visualization, analysis, and alerts**
 
 The final part of monitoring is visualizing the event stream, reporting on service performance, and alerting when an issue is detected. You can use different solutions for this aspect of monitoring.
 
@@ -9310,17 +9369,24 @@ You can use simple custom applications showing the state of your services, like 
 
 Finally, if you're storing all the event streams, you can use Microsoft Power BI or other solutions like Kibana or Splunk to visualize the data.
 
-# <span id="page-332-0"></span>**Additional resources**
+## <span id="page-332-0"></span>**Additional resources**
 
-- **HealthChecks and HealthChecks UI for ASP.NET Core** <https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks>
-- **Introduction to Service Fabric health monitoring** [https://learn.microsoft.com/azure/service-fabric/service-fabric-health-introduction](https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction)
-- **Azure Monitor** <https://azure.microsoft.com/services/monitor/>
+• **Azure Monitor**
+
+<https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks>
+
+• **HealthChecks and HealthChecks UI for ASP.NET Core**
+
+• **Introduction to Service Fabric health monitoring**
+
+- [https://learn.microsoft.com/azure/service-fabric/service-fabric-health-introduction](https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction)
+- <https://azure.microsoft.com/services/monitor/>
 
 # <span id="page-333-0"></span>Make secure .NET Microservices and Web Applications
 
 There are so many aspects about security in microservices and web applications that the topic could easily take several books like this one. So, in this section, we'll focus on authentication, authorization, and application secrets.
 
-# <span id="page-333-1"></span>Implement authentication in .NET microservices and web applications
+## <span id="page-333-1"></span>Implement authentication in .NET microservices and web applications
 
 It's often necessary for resources and APIs published by a service to be limited to certain trusted users or clients. The first step to making these sorts of API-level trust decisions is authentication. Authentication is the process of reliably verifying a user's identity.
 
@@ -9340,7 +9406,7 @@ Directory or a dedicated authentication microservice acting as a security token 
 
 When microservices are accessed directly, trust, that includes authentication and authorization, is handled by a security token issued by a dedicated microservice, shared between microservices.
 
-# <span id="page-334-0"></span>**Authenticate with ASP.NET Core Identity**
+### <span id="page-334-0"></span>**Authenticate with ASP.NET Core Identity**
 
 The primary mechanism in ASP.NET Core for identifying an application's users is the [ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/authentication/identity)  [Identity](https://docs.microsoft.com/aspnet/core/security/authentication/identity) membership system. ASP.NET Core Identity stores user information (including sign-in information, roles, and claims) in a data store configured by the developer. Typically, the ASP.NET Core Identity data store is an Entity Framework store provided in the Microsoft.AspNetCore.Identity.EntityFrameworkCore package. However, custom stores or other thirdparty packages can be used to store identity information in Azure Table Storage, CosmosDB, or other locations.
 
@@ -9391,7 +9457,7 @@ ASP.NET Core Identity also supports [two-factor authentication.](https://docs.mi
 
 For authentication scenarios that make use of a local user data store and that persist identity between requests using cookies (as is typical for MVC web applications), ASP.NET Core Identity is a recommended solution.
 
-# <span id="page-335-0"></span>**Authenticate with external providers**
+## <span id="page-335-0"></span>**Authenticate with external providers**
 
 ASP.NET Core also supports using [external authentication providers](https://docs.microsoft.com/aspnet/core/security/authentication/social/) to let users sign in via [OAuth 2.0](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2) flows. This means that users can sign in using existing authentication processes from providers like Microsoft, Google, Facebook, or Twitter and associate those identities with an ASP.NET Core identity in your application.
 
@@ -9424,6 +9490,7 @@ Popular external authentication providers and their associated NuGet packages ar
 | Google    | Microsoft.AspNetCore.Authentication.Google           |
 | Facebook  | Microsoft.AspNetCore.Authentication.Facebook         |
 | Twitter   | Microsoft.AspNetCore.Authentication.Twitter          |
+|           |                                                      |
 
 In all cases, you must complete an application registration procedure that is vendor dependent and that usually involves:
 
@@ -9446,17 +9513,17 @@ In addition to the external authentication providers listed previously, third-pa
 
 You can also create your own external authentication middleware to solve some special need.
 
-# <span id="page-337-0"></span>**Authenticate with bearer tokens**
+### <span id="page-337-0"></span>**Authenticate with bearer tokens**
 
 Authenticating with ASP.NET Core Identity (or Identity plus external authentication providers) works well for many web application scenarios in which storing user information in a cookie is appropriate. In other scenarios, though, cookies are not a natural means of persisting and transmitting data.
 
 For example, in an ASP.NET Core Web API that exposes RESTful endpoints that might be accessed by Single Page Applications (SPAs), by native clients, or even by other Web APIs, you typically want to use bearer token authentication instead. These types of applications do not work with cookies, but can easily retrieve a bearer token and include it in the authorization header of subsequent requests. To enable token authentication, ASP.NET Core supports several options for using [OAuth 2.0](https://oauth.net/2/) and [OpenID Connect.](https://openid.net/connect/)
 
-# <span id="page-338-0"></span>**Authenticate with an OpenID Connect or OAuth 2.0 Identity provider**
+## <span id="page-338-0"></span>**Authenticate with an OpenID Connect or OAuth 2.0 Identity provider**
 
-If user information is stored in Azure Active Directory or another identity solution that supports OpenID Connect or OAuth 2.0, you can use the
+If user information is stored in Azure Active Directory or another identity solution that supports OpenID Connect or OAuth 2.0, you can use the **Microsoft.AspNetCore.Authentication.OpenIdConnect** package to authenticate using the OpenID
 
-**Microsoft.AspNetCore.Authentication.OpenIdConnect** package to authenticate using the OpenID Connect workflow. For example, to authenticate to the Identity.Api microservice in eShopOnContainers, an ASP.NET Core web application can use middleware from that package as shown in the following simplified example in *Program.cs*:
+Connect workflow. For example, to authenticate to the Identity.Api microservice in eShopOnContainers, an ASP.NET Core web application can use middleware from that package as shown in the following simplified example in *Program.cs*:
 
 ```
 // Program.cs
@@ -9503,7 +9570,7 @@ app.UseEndpoints(endpoints =>
 
 When you use this workflow, the ASP.NET Core Identity middleware is not needed, because all user information storage and authentication is handled by the Identity service.
 
-# <span id="page-339-0"></span>**Issue security tokens from an ASP.NET Core service**
+## <span id="page-339-0"></span>**Issue security tokens from an ASP.NET Core service**
 
 If you prefer to issue security tokens for local ASP.NET Core Identity users rather than using an external identity provider, you can take advantage of some good third-party libraries.
 
@@ -9533,11 +9600,13 @@ builder.Services.AddIdentityServer()
 //...
 ```
 
-# <span id="page-340-0"></span>**Consume security tokens**
+## <span id="page-340-0"></span>**Consume security tokens**
 
 Authenticating against an OpenID Connect endpoint or issuing your own security tokens covers some scenarios. But what about a service that simply needs to limit access to those users who have valid security tokens that were provided by a different service?
 
-For that scenario, authentication middleware that handles JWT tokens is available in the **Microsoft.AspNetCore.Authentication.JwtBearer** package. JWT stands for "[JSON Web Token](https://tools.ietf.org/html/rfc7519)" and is a common security token format (defined by RFC 7519) for communicating security claims. A simplified example of how to use middleware to consume such tokens might look like this code fragment, taken from the Ordering.Api microservice of eShopOnContainers.
+For that scenario, authentication middleware that handles JWT tokens is available in the
+
+**Microsoft.AspNetCore.Authentication.JwtBearer** package. JWT stands for "[JSON Web Token](https://tools.ietf.org/html/rfc7519)" and is a common security token format (defined by RFC 7519) for communicating security claims. A simplified example of how to use middleware to consume such tokens might look like this code fragment, taken from the Ordering.Api microservice of eShopOnContainers.
 
 ```
 // Program.cs
@@ -9575,7 +9644,7 @@ With this middleware in place, JWT tokens are automatically extracted from autho
 
 The JWT bearer authentication middleware can also support more advanced scenarios, such as using a local certificate to validate a token if the authority is not available. For this scenario, you can specify a TokenValidationParameters object in the JwtBearerOptions object.
 
-# <span id="page-341-0"></span>Additional resources
+## <span id="page-341-0"></span>Additional resources
 
 - **Sharing cookies between applications** [https://learn.microsoft.com/aspnet/core/security/cookie-sharing](https://docs.microsoft.com/aspnet/core/security/cookie-sharing)
 - **Introduction to Identity** [https://learn.microsoft.com/aspnet/core/security/authentication/identity](https://docs.microsoft.com/aspnet/core/security/authentication/identity)
@@ -9585,7 +9654,7 @@ The JWT bearer authentication middleware can also support more advanced scenario
 - **AspNet.Security.OAuth.Providers** (GitHub repo for ASP.NET OAuth providers) <https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src>
 - **IdentityServer4. Official documentation** <https://identityserver4.readthedocs.io/en/latest/>
 
-# <span id="page-341-1"></span>About authorization in .NET microservices and web applications
+## <span id="page-341-1"></span>About authorization in .NET microservices and web applications
 
 After authentication, ASP.NET Core Web APIs need to authorize access. This process allows a service to make APIs available to some authenticated users, but not to all. [Authorization](https://docs.microsoft.com/aspnet/core/security/authorization/introduction) can be done based on users' roles or based on custom policy, which might include inspecting claims or other heuristics.
 
@@ -9605,13 +9674,16 @@ public class AccountController : Controller
  {
  }
 }
+By default, adding an Authorize attribute without parameters will limit access to authenticated users
 ```
 
-By default, adding an Authorize attribute without parameters will limit access to authenticated users for that controller or action. To further restrict an API to be available for only specific users, the attribute can be expanded to specify required roles or policies that users must satisfy.
+for that controller or action. To further restrict an API to be available for only specific users, the attribute can be expanded to specify required roles or policies that users must satisfy.
 
-# <span id="page-342-0"></span>**Implement role-based authorization**
+## <span id="page-342-0"></span>**Implement role-based authorization**
 
-ASP.NET Core Identity has a built-in concept of roles. In addition to users, ASP.NET Core Identity stores information about different roles used by the application and keeps track of which users are assigned to which roles. These assignments can be changed programmatically with the RoleManager type that updates roles in persisted storage, and the UserManager type that can grant or revoke roles from users.
+stores information about different roles used by the application and keeps track of which users are assigned to which roles. These assignments can be changed programmatically with the RoleManager type that updates roles in persisted storage, and the UserManager type that can grant or revoke roles from users.
+
+ASP.NET Core Identity has a built-in concept of roles. In addition to users, ASP.NET Core Identity
 
 If you're authenticating with JWT bearer tokens, the ASP.NET Core JWT bearer authentication middleware will populate a user's roles based on role claims found in the token. To limit access to an MVC action or controller to users in specific roles, you can include a Roles parameter in the Authorize annotation (attribute), as shown in the following code fragment:
 
@@ -9649,7 +9721,7 @@ In this example, to call API1, a user must:
 
 • Satisfy a custom handler for CustomPolicy authorization.
 
-# <span id="page-343-0"></span>**Implement policy-based authorization**
+## <span id="page-343-0"></span>**Implement policy-based authorization**
 
 Custom authorization rules can also be written using [authorization policies.](https://docs.asp.net/en/latest/security/authorization/policies.html) This section provides an overview. For more information, see the [ASP.NET Authorization Workshop.](https://github.com/blowdart/AspNetAuthorizationWorkshop)
 
@@ -9684,7 +9756,7 @@ In addition to registering custom policy requirements with AddPolicy calls, you 
 
 An example of a custom authorization requirement and handler for checking a user's age (based on a DateOfBirth claim) is available in the ASP.NET Core [authorization documentation.](https://docs.asp.net/en/latest/security/authorization/policies.html)
 
-# <span id="page-344-0"></span>**Authorization and minimal apis**
+## <span id="page-344-0"></span>**Authorization and minimal apis**
 
 ASP.NET supports minimal APIs as an alternative to controller-based APIs. Authorization policies are the recommended way to configure authorization for minimal APIs, as this example demonstrates:
 
@@ -9700,7 +9772,7 @@ app.MapGet("/hello", () => "Hello world!")
  .RequireAuthorization("admin_greetings");
 ```
 
-# <span id="page-344-1"></span>**Additional resources**
+### <span id="page-344-1"></span>**Additional resources**
 
 - **ASP.NET Core Authentication** [https://learn.microsoft.com/aspnet/core/security/authentication/identity](https://docs.microsoft.com/aspnet/core/security/authentication/identity)
 - **ASP.NET Core Authorization** [https://learn.microsoft.com/aspnet/core/security/authorization/introduction](https://docs.microsoft.com/aspnet/core/security/authorization/introduction)
@@ -9708,7 +9780,7 @@ app.MapGet("/hello", () => "Hello world!")
 - **Custom Policy-Based Authorization** [https://learn.microsoft.com/aspnet/core/security/authorization/policies](https://docs.microsoft.com/aspnet/core/security/authorization/policies)
 - **Authentication and authorization in minimal APIs** [https://learn.microsoft.com/aspnet/core/fundamentals/minimal-apis/security](https://docs.microsoft.com/aspnet/core/fundamentals/minimal-apis/security)
 
-# <span id="page-344-2"></span>Store application secrets safely during development
+## <span id="page-344-2"></span>Store application secrets safely during development
 
 To connect with protected resources and other services, ASP.NET Core applications typically need to use connection strings, passwords, or other credentials that contain sensitive information. These sensitive pieces of information are called *secrets*. It's a best practice to not include secrets in source
 
@@ -9716,7 +9788,7 @@ code and making sure not to store secrets in source control. Instead, you should
 
 You must separate the secrets for accessing development and staging resources from the ones used for accessing production resources, because different individuals will need access to those different sets of secrets. To store secrets used during development, common approaches are to either store secrets in environment variables or by using the ASP.NET Core Secret Manager tool. For more secure storage in production environments, microservices can store secrets in an Azure Key Vault.
 
-# <span id="page-345-0"></span>**Store secrets in environment variables**
+## <span id="page-345-0"></span>**Store secrets in environment variables**
 
 One way to keep secrets out of source code is for developers to set string-based secrets as [environment variables](https://docs.microsoft.com/aspnet/core/security/app-secrets#environment-variables) on their development machines. When you use environment variables to store secrets with hierarchical names, such as the ones nested in configuration sections, you must name the variables to include the complete hierarchy of its sections, delimited with colons (:).
 
@@ -9738,7 +9810,7 @@ To access these values from environment variables, the application just needs to
 
 Environment variables are commonly stored as plain text, so if the machine or process with the environment variables is compromised, the environment variable values will be visible.
 
-# <span id="page-345-1"></span>**Store secrets with the ASP.NET Core Secret Manager**
+### <span id="page-345-1"></span>**Store secrets with the ASP.NET Core Secret Manager**
 
 The ASP.NET Core [Secret Manager](https://docs.microsoft.com/aspnet/core/security/app-secrets#secret-manager) tool provides another method of keeping secrets out of source code **during development**. To use the Secret Manager tool, install the package **Microsoft.Extensions.Configuration.SecretManager** in your project file. Once that dependency is present and has been restored, the dotnet user-secrets command can be used to set the value of secrets from the command line. These secrets will be stored in a JSON file in the user's profile directory (details vary by OS), away from source code.
 
@@ -9754,7 +9826,7 @@ Using secrets stored with Secret Manager in an application is accomplished by ca
 
 The AddUserSecrets<Startup>() is included in the default options for the Development environment when using the CreateDefaultBuilder method in *Program.cs*.
 
-# <span id="page-346-0"></span>Use Azure Key Vault to protect secrets at production time
+## <span id="page-346-0"></span>Use Azure Key Vault to protect secrets at production time
 
 Secrets stored as environment variables or stored by the Secret Manager tool are still stored locally and unencrypted on the machine. A more secure option for storing secrets is [Azure Key Vault,](https://azure.microsoft.com/services/key-vault/) which provides a secure, central location for storing keys and secrets.
 
@@ -9775,15 +9847,20 @@ Resource Group>"
 
 Note that calling AddAzureKeyVault requires the application ID that was registered and given access to the key vault in the previous steps. Or you can firstly running the Azure CLI command: az login, then using an overload of AddAzureKeyVault that takes a DefaultAzureCredential in place of the client.
 
-### **Important**
+## **Important**
 
 We recommend that you register Azure Key Vault as the last configuration provider, so it can override configuration values from previous providers.
 
-# <span id="page-347-0"></span>**Additional resources**
+## <span id="page-347-0"></span>**Additional resources**
 
-- **Using Azure Key Vault to protect application secrets** [https://learn.microsoft.com/azure/architecture/multitenant-identity](https://docs.microsoft.com/azure/architecture/multitenant-identity)
-- **Safe storage of app secrets during development** [https://learn.microsoft.com/aspnet/core/security/app-secrets](https://docs.microsoft.com/aspnet/core/security/app-secrets)
-- **Configuring data protection** [https://learn.microsoft.com/aspnet/core/security/data-protection/configuration/overview](https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/overview)
+[https://learn.microsoft.com/azure/architecture/multitenant-identity](https://docs.microsoft.com/azure/architecture/multitenant-identity)
+
+• **Using Azure Key Vault to protect application secrets**
+
+• **Safe storage of app secrets during development**
+
+- [https://learn.microsoft.com/aspnet/core/security/app-secrets](https://docs.microsoft.com/aspnet/core/security/app-secrets) • **Configuring data protection**
+- [https://learn.microsoft.com/aspnet/core/security/data-protection/configuration/overview](https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/overview)
 - **Data Protection key management and lifetime in ASP.NET Core** [https://learn.microsoft.com/aspnet/core/security/data-protection/configuration/default](https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings)[settings](https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/default-settings)
 
 **CHAPTER** 9
@@ -9804,9 +9881,9 @@ As a summary and key takeaways, the following are the most important conclusions
 
 **Microservices challenges.** Microservices offer many powerful capabilities, like independent deployment, strong subsystem boundaries, and technology diversity. However, they also raise many new challenges related to distributed application development, such as fragmented and independent data models, resilient communication between microservices, eventual consistency, and operational complexity that results from aggregating logging and monitoring information from multiple microservices. These aspects introduce a much higher complexity level than a traditional monolithic application. As a result, only specific scenarios are suitable for microservice-based applications. These include large and complex applications with multiple evolving subsystems. In these cases, it's worth investing in a more complex software architecture, because it will provide better long-term agility and application maintenance.
 
-**Containers for any application.** Containers are convenient for microservices, but can also be useful for monolithic applications based on the traditional .NET Framework, when using Windows Containers. The benefits of using Docker, such as solving many deployment-to-production issues and providing state-of-the-art Dev and Test environments, apply to many different types of applications.
+**Containers for any application.** Containers are convenient for microservices, but can also be useful for monolithic applications based on the traditional .NET Framework, when using Windows Containers. The benefits of using Docker, such as solving many deployment-to-production issues and providing state-of-the-art Dev and Test environments, apply to many different types of applications. **CLI versus IDE.** With Microsoft tools, you can develop containerized .NET applications using your
 
-**CLI versus IDE.** With Microsoft tools, you can develop containerized .NET applications using your preferred approach. You can develop with a CLI and an editor-based environment by using the Docker CLI and Visual Studio Code. Or you can use an IDE-focused approach with Visual Studio and its unique features for Docker, such as multi-container debugging.
+preferred approach. You can develop with a CLI and an editor-based environment by using the Docker CLI and Visual Studio Code. Or you can use an IDE-focused approach with Visual Studio and its unique features for Docker, such as multi-container debugging.
 
 **Resilient cloud applications.** In cloud-based systems and distributed systems in general, there is always the risk of partial failure. Since clients and services are separate processes (containers), a service might not be able to respond in a timely way to a client's request. For example, a service might be down because of a partial failure or for maintenance; the service might be overloaded and responding slowly to requests; or it might not be accessible for a short time because of network issues. Therefore, a cloud-based application must embrace those failures and have a strategy in place to respond to those failures. These strategies can include retry policies (resending messages or retrying requests) and implementing circuit-breaker patterns to avoid exponential load of repeated requests. Basically, cloud-based applications must have resilient mechanisms—either based on cloud infrastructure or custom, as the high-level ones provided by orchestrators or service buses.
 
