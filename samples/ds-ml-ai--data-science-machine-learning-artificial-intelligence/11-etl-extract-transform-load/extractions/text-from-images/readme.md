@@ -83,3 +83,4 @@ https://community.palantir.com/t/guide-parsing-pdf-files-using-python-with-tesse
 
 *   https://medium.com/@alice.yang_10652/extract-text-from-images-and-scanned-pdfs-with-python-2087cb1e0a7b
 
+*   https://medium.com/data-science/top-5-python-libraries-for-extracting-text-from-images-c29863b2f3d
