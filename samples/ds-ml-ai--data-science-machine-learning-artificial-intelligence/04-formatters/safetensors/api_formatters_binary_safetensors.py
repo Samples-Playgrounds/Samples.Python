@@ -13,10 +13,13 @@ def write_all_tensors(
     tensors_dict: Dict[str, torch.Tensor],
     metadata: Optional[Dict[str, str]] = None,
 ) -> str:
+    """
+    """
 
     save_file(tensors_dict, filename, metadata=metadata)
 
     # Optionally, you can return the filename or any other relevant information
+    
     return filename
 
 
