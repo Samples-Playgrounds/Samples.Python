@@ -1,13 +1,8 @@
 #!/bin/bash
 
-#!/bin/bash
-
-
-#!/bin/bash
-
 sys_term_clean_screen_and_buffer
 
-ls -1 >> list.md
+ls -1 > list.md
 
 EXTRACTORS=\
 "
