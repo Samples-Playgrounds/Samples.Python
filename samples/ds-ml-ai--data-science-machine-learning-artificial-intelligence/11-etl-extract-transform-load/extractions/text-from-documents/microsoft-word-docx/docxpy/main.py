@@ -7,7 +7,7 @@ rm *.pyc
 """
 python -m venv .venv
 source .venv/bin/activate
-pip install docx2python
+pip install docxpy
 pip install timer
 pip install codetiming
 pip freeze > requirements.txt
@@ -18,7 +18,7 @@ pip install -r requirements.txt
 python main.py
 """
 
-import api_text_extraction_docx2python as api
+import api_text_extraction_docxpy as api
 
 root="../../../../../../../data"
 root_sports_book="/Users/Shared/Projects/e/learning/books/topics/sports/Moljac_Knjiga"
