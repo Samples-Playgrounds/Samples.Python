@@ -31,16 +31,16 @@ def extract_tables_to_files_from_pdf_document (source: str) -> str:
     for i, page in enumerate(pdf.pages):
         df = pd.DataFrame(pdf.pages[i].extract_table())
 
-        element_md_filename = f"{directory}/p-t{i + 1}.md"
+        element_md_filename = f"{directory}/p-t{i + 1 :05}.md"
         df.to_markdown(element_md_filename)
 
-        element_csv_filename = f"{directory}/p-t{i + 1}.csv"
+        element_csv_filename = f"{directory}/p-t{i + 1 :05}.csv"
         df.to_csv(element_csv_filename)
 
-        element_excel_filename = f"{directory}/p-t{i + 1}.xlsx"
+        element_excel_filename = f"{directory}/p-t{i + 1 :05}.xlsx"
         df.to_excel(element_excel_filename)
 
-        element_html_filename = f"{directory}/p-t{i + 1}.html"
+        element_html_filename = f"{directory}/p-t{i + 1 :05}.html"
         df.to_html(element_html_filename)
 
     #---------------------------------------------------------------------------
