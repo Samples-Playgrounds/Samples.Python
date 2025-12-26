@@ -1,0 +1,1289 @@
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+| Na temelju | élanka | 13. Zakona | o udrugama | (Narodne | novine, | br. 74/14, | 70/17, 98/19 i |
+| ... | ... | ... | ... | ... | ... | ... | ... |
+| 151/22) | i Clanka | 30. Zakona | o sportu | (Narodne | novine, | br. 141/22) | na sjednici |
+| SkupStine | Gradanskog | nogometnog | kluba | ,Dinamo* | odrzanoj | 21.12.2023. | donesen je: |
+
+STATUT GRADANSKOG NOGOMETNOG KLUBA ,,DINAMO*
+
+# OSNOVNE ODREDBE
+
+Clanak 1.
+
+| Ovim Statutom ureduju | se: naziv i sjedite udruge; podruéje i ciljevi djelovanja; |
+| ... | ... |
+| zastupanje; djelatnost; | gospodarska djelatnost; nacin osiguranja javnosti djelovanja |
+| udruge; uvjeti i nacin | uélanjivanja; prestanak Clanstva; prava, obveze i odgovornosti |
+| Clanova; popis Clanova; | tijela udruge, njihov sastav i nacin sazivanja sjednica; izbor, |
+| opoziv, ovlasti, odgovornost, | naéin odlucivanja i trajanje mandata; nacin rjeSavanja |
+| sporova i sukoba interesa | unutar udruge; nacin sazivanja SkupStine u sluéaju isteka |
+| mandata; izbor i opoziv | likvidatora; prestanak postojanja udruge; imovina, naéin |
+| stjecanja i raspolaganja | imovinom; postupak s imovinom u sluéaju prestanka |
+| postojanja udruge te | ostala pitanja od znaéaja za udrugu. |
+
+| | | Clanak | 2. |
+| ... | ... | ... | ... |
+| (1) Naziv Udruge | je: Gradanski | nogometni | klub ,Dinamo*. |
+| (2) Skraéeni | naziv Udruge | je: GNK ,Dinamo*. | |
+
+| (3) Gradanski | nogometni klub | ,Dinamo* profesionalni | | sportski nogometni klub. |
+| ... | ... | ... | ... | ... |
+| (4) SjediSte | kluba je u Zagrebu, | Maksimirska | cesta | 128. |
+
+Clanak 3.
+
+| (1) Gradanski nogometni | klub ,Dinamo* | (u daljnjem | tekstu: Klub) | je udruga registrirana |
+| ... | ... | ... | ... | ... |
+| u Registru udruga | Republike Hrvatske | i Evidenciji | pravnih | osoba u sportu |
+| (2) Klub je neprofitna | pravna osoba. | | | |
+
+Clanak 4.
+
+(1) Klub ima peéat.
+
+![Image]
+
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+| (2) Peat | je okruglog | oblika, | promjera | 35 mm, sa ispisanim nazivom i mjestom sjedista |
+| ... | ... | ... | ... | ... |
+| Kluba | po obodu | peéata | i znakom | u sredini. |
+
+€lanak 5.
+
+| (1) Obiljezja | Kluba | su znak/amblem/grb | | i plava | boja, a koja | slijede | izgled | obiljezja i |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... |
+| sportsku | tradiciju | Prvog | hrvatskog | gradanskog | Sportskog | kluba | Zagreb, | odnosno |
+| 1. HSK | Gradanskog. | | | | | | | |
+
+| (2) Znak/amblem/grb | Kluba | je kruZnog oblika i simbolizira oblik nogometne lopte, a Sto |
+| ... | ... | ... |
+| ukazuje | na osnovnu | djelatnost Kluba. |
+
+| (3) Osnova | znaka/amblema/grba | | sastaviijena je od dva polukruga: | povijesnog |
+| ... | ... | ... | ... | ... |
+| hrvatskog | grba | s naizmjeniénim | crvenim i bijelim poljima i tradicionalnog | u plavoj |
+| boji Grada | Zagreba | s bijelim slovom | ‘d&#39; koje predstavlja pocetno | slovo naziva Kluba |
+| »Dinamo&quot;. | | | | |
+
+(4) Sve linije unutar znaka/amblema/grba i rub znaka/amblema/grba su u boji zlata.
+
+| (5) Klub ba&amp;tini | sportsku povijest | i rezultate nastale pod imenima 1. HSK Gradanski, |
+| ... | ... | ... |
+| NK ,Dinamo“, | NK HASK-Gradanski | i NK Croatia. |
+
+Clanak 6.
+
+| (1) O promjeni imena, grba, boje, lokacije | stadiona, preoblikovanja, pripajanja, |
+| ... | ... |
+| spajanja ili podjele Kluba i dobrovoljnog prestanka | rada Kluba saziva se obvezuju¢i |
+| referendum svih punoljetnih i poslovno sposobnih | élanova Kluba, tako da na njemu |
+| mora sudjelovati najmanje 70 % élanova | Kluba s pravom glasa, a odluéuje se |
+| obiénom vecinom. | |
+
+| (2) Referendum | svih élanova Kluba mora sazvati Predsjednik Kluba u sluéajevima iz |
+| ... | ... |
+| st. 1. ovog | élanka. |
+
+Clanak 7.
+
+Klub zastupaju Predsjednik, Dopredsjednik i Uprava, sukladno odredbama ovog Statuta.
+
+Elanak 8.
+
+(1) Klub:
+
+| a. postupa | sukladno | Pravilima | nogometne igre koje je donio Medunarodni |
+| ... | ... | ... | ... |
+| nogometni | savez | BOARD | (IFAB); |
+
+b. po&amp;tuje naéela privrzenosti, integriteta i sportskog ponaSanja kao izraza fair- playa;
+
+| c. pogtuje | statut, | pravilnike | i odluke FIFA-e i UEFA-e i Hrvatskog nogometnog |
+| ... | ... | ... | ... |
+| saveza | (HNS) | u svako | vrijeme; |
+
+| d. priznaje | nadleZnost | Arbitraznog | suda | za sport | (CAS) | u Lausanni |
+| ... | ... | ... | ... | ... | ... | ... |
+| (Svicarska), | kao Sto | je utvrdeno | relevantnim | odredbama | Statuta | FIFA-e, |
+| UEFA-e; | | | | | | |
+
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+e.
+
+| priznaje nadleZnost Arbitraznog | suda HNS-a i sukladno | tome podnosit | ée |
+| ... | ... | ... | ... |
+| sve sporove nacionainih razmjera, | koji su nastali iz ili | u vezi s primjenom | |
+| Statuta ili pravilnika HNS-a, | u posljednjoj instanci samo tim | arbitrazama, | koje |
+| tjeSavaju svoje sporove, iskljucujuci | svaki redovni sud, | osim ukoliko | je to |
+| izriéito Zabranjeno vazecim | zakonodavstvom u Republici | Hrvatskoj. | |
+
+| (2) U sluéaju | sporova za | koje su nadlezna | pravosudna | tijela FIFA-e, | UEFA-e, CAS-a, |
+| ... | ... | ... | ... | ... | ... |
+| Arbitraznog | suda Saveza | ili pravnih | tijela Saveza, | Klub se obvezuje | da spor nece |
+| iznositi | pred redovne | sudove. | | | |
+
+*(3) Klub poStuje sve odluke nadleznih tijela HNS-a, FIFA-e i UEFA-e i CAS-a.*
+
+*CILJEVI, PODRUCJE DJELOVANJA SUKLADNO CILJEVIMA,*
+
+# DJELATNOST I GOSPODARSKE DJELATNOSTI
+
+Clanak 9.
+
+*(1) Ciljevi Kluba su:* okupljanje gradana, djece i mladezi kroz Skole nogometa;
+
+| razvoj i unapredenje nogometa | | te postizanje | vrhunskih | sportskih rezultata; |
+| ... | ... | ... | ... | ... |
+| sudjelovanje | u nogometnim | natjecanjima | u zemlji | i inozemstvu; |
+
+| struéno | i profesionalno | osposobljavanje | i usavrSavanje | sportskih | djelatnika; |
+| ... | ... | ... | ... | ... | ... |
+| stvaranje | potrebnih | uvjeta za bavijenje | nogometom, | trening, | organizaciju |
+| struénog | rada i natjecanje | svih ekipa | Kluba. | | |
+
+| (2) Klub moze podrzavati muSku, Zensku | i veteransku nogometnu | ekipu, futsal ekipu |
+| ... | ... | ... |
+| te ostale varijacije s ciljem razvoja i popularizacije | nogometnog | sporta. |
+| (3) Klub sukladno ciljevima djeluje na podrugju | sporta. | |
+
+Clanak 10.
+
+*Djelatnosti Kluba su:*
+
+a.
+
+b.
+
+| c. | | | | | | |
+| ... | ... | ... | ... | ... | ... | ... |
+| stvaranje | materijalnih, | tehniékih | infrastrukturnih | i drugih | uvjeta | za bavijenje |
+
+| sudjelovanje | u profesionalnim ili amaterskim | natjecanjima na lokalngj, |
+| ... | ... | ... |
+| drzavnoj i medunarodnoj | razini u nogometnom | sportu za sve uzraste; |
+| struéno-pedagoski | rad sa svim uzrastima sportaSa, | osobito kroz nogometne |
+| Skole; organizirano | vodenje treninga i sportskih | priprema; |
+
+osposobljavanje i usavrSavanje vlastitog stru¢nog i pedagoSkog kadra;
+
+| nogometnim | sportom; | | upravljanje, odrzavanje i skrb o daljnjoj izgradnji | |
+| ... | ... | ... | ... | ... |
+| sportskih | objekata | kojima | Klub | raspolaze; |
+
+| osiguravanje | svih potrebnih | uvjeta za sudjelovanje | u natjecanju | prema |
+| ... | ... | ... | ... | ... |
+| uvjetima | za licenciranje HNS-a | i UEFE (struéno-pedagoski | trenerski | kadrovi, |
+| administrativni | kriteriji, sportski | kriteriji, infrastrukturni | kriteriji | i financijski |
+| kriteriji); | | | | |
+
+| suradnja | sa _ sudackim, | trenerskim | i drugim | struénim sportskim |
+| ... | ... | ... | ... | ... |
+| organizacijama | na lokalnoj, | drzavnoj | i medunarodnoj | razini; |
+
+suradnja s drugim nogometnim i sportskim klubovima;
+
+...
+
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+| h. suradnja | s tijelima | drzavne te | lokalne i regionalne viasti, pravnim i fiziékim |
+| ... | ... | ... | ... |
+| osobama | u ispunjavanju | sportskih | interesa i ciljeva; |
+
+i. organizirano okupljanje Glanstva Kluba svih uzrasta;
+
+| j. izdavanje | biltena, glasila, monografija, priruénika i drugih tiskovina vezano |
+| ... | ... |
+| uz nogometni | sport i Klub; |
+
+| k. poticanje | i promicanje nogometa | kao sporta u skladu s aktima | strateSkog |
+| ... | ... | ... | ... |
+| planiranja | razvoja sporta | na nacionalnoj razini, odnosno | nacionalnom |
+| strategijom | razvoja sporta i | nacionalnim planom razvoja sporta | te strateSkim |
+| dokumentima | donesenim na | podruénoj (regionalnoj) razini, | a osobito sporta |
+| djece | i mladezi, te zdravstveno | usmjerenog tjelesnog | vjeZbanja i |
+| zdravstveno | usmjerene tjelesne | aktivnosti sportaga; | |
+
+| \|. sudjelovanje | u ostvarivanju | uvjeta | za provodenje zdravstvene skrbi sportaSa |
+| ... | ... | ... | ... |
+| te sudjeluje | u edukaciji | sportaSa | o antidopingu; |
+
+| m. provodenje | edukaciju, | informiranje | i savjetovanje | sportaSa, | sportskih | |
+| ... | ... | ... | ... | ... | ... | ... |
+| djelatnika, | gradana | i ostalih | sudionika u sportu | o pitanjima | bitnim | za |
+| bavljenje | sportskim | aktivnostima | i djelatnostima; | | | |
+
+| n. poduzimanje | aktivnosti | za sprjeéavanje | | negativnih | pojava u sportu, posebno |
+| ... | ... | ... | ... | ... | ... |
+| Za sprjecavanje | nasilja | u sportu | i krSenja | prava | djece; |
+
+| 0. promicanje | | struénog rada | u sportu, | te sudjelovanje u unapredenju struénog |
+| ... | ... | ... | ... | ... |
+| rada | i skrbi | o osposobljavanju | struénih | djelatnika; |
+
+| p. unos | i azuriranje | podataka za koje je nadlezZan Klub u Nacionalni |
+| ... | ... | ... |
+| informacijski | sustav | u sportu; |
+
+q. obavija i druge poslove, djelatnosti i zadaée odredene zakonom i ovim Statutom.
+
+€lanak 11.
+
+(1) Gospodarske djelatnosti koje Klub obavlja su: a. izdavacka djelatnost; b. prodaja viastitin proizvoda na malo izvan prodavaonica, sukladno Zakonu o trgovini; c. promidzbene djelatnosti; d. davanje u zakup i podzakup viastitih poslovnih prostora i mjesta za oglaSavanje; (2) Djelatnosti iz st. 1. ovog élanka Klub obavlja u skladu s posebnim propisima koji ureduju gospodarsko poslovanje udruga kao pravnih osoba. (3) Djelatnosti iz st. 1. ovog Glanka ne mogu se obavijati radi stjecanja dobiti za svoje Clanove ili tte¢e osobe. (4) Ako u obavijanju gospodarskih djelatnosti Klub ostvari dobit ona se mora koristiti iskljucivo za obavijanje i unapredenje djelatnosti Kluba kojima se ostvaruju ciljevi Kluba, utvrdeni ovim Statutom, sukladno zakonu.
+
+| | | | | Clanak | 12. | | | |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... |
+| Klub | moze | osnivati | trgovacka | drugtva | prema | odredbama | Zakona | o trgovackim |
+
+| druStvima, | kao i druge oblike | pravnih | osoba u skladu s posebnim propisima, ako je to |
+| ... | ... | ... | ... |
+| u cilju osiguranja | materijalnih | uvjeta rada | i razvoja Kluba. |
+
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+Clanak 13.
+
+(1) Djelovanje Kluba je javno, a ostvaruje se putem:
+
+| a. internetskih stranica Kluba, aplikacija i druStvenih mrezZa, | |
+| ... | ... |
+| b. javnih | medija, |
+
+c. povjerenika Kluba,
+
+d. ostalih naéina informiranja sukladno odluci Uprave Kluba.
+
+| (2) Clanove | Kluba | pravodobno se | obavjeStava o radu Kluba, | aktima i odlukama |
+| ... | ... | ... | ... | ... |
+| njegovih | tijela | posebnim izvjeScima | te skupovima za élanove | koji se organiziraju |
+| najmanje | jednom | godi&amp;nje Sto | je definirano Pravilnikom o | élanstvu. |
+
+(3) O naginu javnosti rada Kluba i obavjeStavanja Glanova, Uprava Kluba donosi odluku.
+
+€lanak 14.
+
+| (1) Klub | se moze udruZiti | u saveze | udruga, zajednice, mreze i u medunarodne udruge. |
+| ... | ... | ... | ... |
+| (2) Odluku | 0 udruZivanju | donosi | Skup$stina. |
+
+CLANSTVO
+
+Clanak 15.
+
+| (1) Clanom | Kluba | moze | postati | svaka | fizicka osoba koja ispunjavanjem pristupnice |
+| ... | ... | ... | ... | ... | ... |
+| prihvaéa | naéela, | Statut | i druge | akte | Kluba. |
+
+| (2) Clanom | Kluba | se postaje | upisom u jedinstveni Popis élanova koji vodi struéna |
+| ... | ... | ... | ... |
+| sluzba | po odluci | Uprave | Kluba. |
+
+| (3) Primitak | u €lanstvo odobrava Uprava | Kluba i osobe koje Uprava zaduzi za élanstvo, |
+| ... | ... | ... |
+| ako | ne postoje prepreke iz | ovog Statuta ili zakona, a na temelju ispunjene |
+| pristupnice. | Odbijanje mora biti | obrazloZeno u roku od 30 dana i osoba koja je |
+| podnijela | zahtjev moze podnijeti | Zalbu Nadzornom odboru u roku od 15 dana od |
+| primitka | odbijanja. | |
+
+| (4) Osobe | mlade od 18 | godina, kao i osobe liSene | poslovne sposobnosti | mogu postati |
+| ... | ... | ... | ... | ... |
+| Clanom | Kluba. Za osobu | mladu od 14 godina pisanu | izjavu o uélanjivanju | u udrugu |
+| daje | zakonski zastupnik | ili skrbnik, a za maloljetnu | osobu s navrSenih | 14 godina |
+| zakonski | zastupnik ili | skrbnik daje pisanu suglasnost. | | |
+
+(5) Maloljetnici te osobe liene poslovne sposobnosti ne mogu biti élanovi klupskih tijela.
+
+(6) Svaki Elan moZe dobiti élansku iskaznicu Giji izgled definira Uprava Kluba.
+
+| (7) Jedinstveni | popis | Clanova | vodi | se elektroniéki | i obavezno | | sadrzi | podatke o |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... |
+| osobnom | imenu, | osobnom | identifikacijskom | | broju (OIB), | datumu | rodenja, | datumu |
+| pristupanja | Klubu | te datumu | prestanka | ¢lanstva | u Klubu. | | | |
+
+| (8) U arhivi se Cuvaju privole | o koritenju osobnih podataka | u skladu | s propisima | o |
+| ... | ... | ... | ... | ... |
+| Za&amp;titi podataka, adrese stanovanja, | brojeve telefona | i mobilnih telefona, | adrese | e- |
+| poste i ostali podaci iz pristupnice | koju ispunjavaju | élanovi pri uélanjenju. | | |
+
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+| (9) Jedinstveni | popis | Glanova uvijek | je dostupan na uvid | svim élanovima | i nadleznim |
+| ... | ... | ... | ... | ... | ... |
+| tijielima | na njihov | zahtjev u skladu | sa zakonima | i drugim propisima | o zaétiti |
+| podataka. | | | | | |
+
+Clanak 16.
+
+(1) Visinu élanarine odreduje odbor.
+
+(2) Clan je duzan uplatiti Glanarinu u roku od 15 dana od dana potpisivanja pristupnice u Glanstvo Kluba.
+
+(3) Clanstvo poCinje datumom upisa u jedinstveni Popis élanova i zavrgava istekom
+
+te kalendarske godine. Po isteku kalendarske godine, élanstvo se obnavija za iduéu
+
+kalendarsku godinu novom uplatom godi&amp;nje élanarine, a prava i obveze prema ovom
+
+Statutu teku od trenutka obnove.
+
+Clanak 17.
+
+(1) Klub je neutralan po pitanjima politike i vjere.
+
+| (2) Diskriminacija | bilo koje vrste | prema drzavama, | osobama | ili rodnim skupinama |
+| ... | ... | ... | ... | ... |
+| osoba temeljena | na njihovoj | rasi, nacionalnosti, | vjeri, spolu, | jeziku, politiékom |
+| opredjeljenju | ili bilo 6emu drugome | zabranjena | je i predstavlja | razlog za iskljuéenje |
+| iz Kluba u | stegovnom postupku. | | | |
+
+| (3) Clan ne moze | biti osoba koja | svojim ponaSanjem | i radnjama | nanosi | materijainu ili |
+| ... | ... | ... | ... | ... | ... |
+| nematerijalnu | Stetu Klubu te | koja nasilni¢kim, | diskriminatornim | | i rasistiékim |
+| ponaSanjem | -_radnjama onemoguéava | ostvarenie | ciljeva | i obavijanje | djelatnosti, |
+| te Steti ugledu | Kluba. | | | | |
+
+Clanak 18.
+
+Prava ¢lanova su:
+
+| a. birati i | biti biran u tijela | Kluba te | pravo glasa | na referendumu, | &amp;to vrijedi | za |
+| ... | ... | ... | ... | ... | ... | ... |
+| punoljetne | i poslovno | sposobne | élanove | Kluba koji | su bili Glanovi | u |
+| prethodnoj | kalendarskoj | godini, | osim u sluéaju | imenovanja | élanova Uprave; | |
+
+b. pridonositi afirmaciji i ugledu Kluba u zemiji i inozemstvu;
+
+| c. sudjelovati | u radu i | upravijanju Klubom putem izabranih predstavnika u |
+| ... | ... | ... |
+| | i drugim tijelima | Kluba; |
+
+| d. biti pravodobno | obavjestavani | | o radu Kluba | i aktima | i odlukama | njegovih |
+| ... | ... | ... | ... | ... | ... | ... |
+| tijela na naCin | propisan | Statutom, | posebnim | aktima | i odlukama | Uprave; |
+
+| €. komunicirati | pisano te putem | javne | tribine jednom | godi&amp;nje s tijelima Kluba |
+| ... | ... | ... | ... | ... |
+| u okviru | njihove nadleZnosti | i dobiti | pravodobne | odgovore; |
+
+f. prediagati to¢ke dnevnog reda Skup&amp;tine izabranim predstavnicima u Skup$tinu;
+
+g. biti nagraden poéasnim odlikovanjima za doprinos ili za dugotrajno élanstvo;
+
+h. prednost u kupnji ulaznica na naéin koji odredi Uprava.
+
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+Elanak 19.
+
+| Duznosti i odgovornosti | Glanova su: | | |
+| ... | ... | ... | ... |
+| a. placanje Clanarine | te postivanje | Statuta i drugih akata | Kluba; |
+| b. podupiranje | Kluba i aktivno sudjelovanje | u ostvarenju | ciljeva Kluba; |
+| c. suzdrzavanje | od pona&amp;anja i radnji | koje Stete Klubu | i njegovu ugledu. |
+
+Clanak 20.
+
+| Nogometa&amp;i | | koji su Clanovi | Kluba pored | prava | i obveza iz | él. 18. i 19. ovog | Statuta |
+| ... | ... | ... | ... | ... | ... | ... | ... |
+| imaju | i druga | prava, obveze | i odgovornosti | utvrdene | ugovorima | te odlukama | klupskih |
+| tijela. | | | | | | | |
+
+Elanak 21.
+
+| (1) Clanstvo u Klubu i njegovim tijelima | prestaje: | | | |
+| ... | ... | ... | ... | ... |
+| a. dragovoljnim istupom, | | | | |
+| b. neplacanjem Glanarine, | | | | |
+| c. iskljuéenjem u stegovnom postupku, | | | | |
+| d. smréu, | | | | |
+| €. postojanjem zapreka propisanih | u pravnim propisima. | | | |
+| (2) Clanstvo prestaje i élan se brige | iz Jedinstvenog popisa | élanova | bez | posebne |
+| odluke ako ne plati Clanarinu unutar | kalendarske godine. | | | |
+
+Clanak 22.
+
+| (1) Stegovne | mjere | prema élanovima | Kluba | su opomena, suspenzija i iskljuéenje, koje |
+| ... | ... | ... | ... | ... |
+| moze | biti trajno | ili na odredeni | vremenski | rok. |
+
+(2) Opomena i suspenzija izriée se Glanu koji svojim djelovanjem naruSava ugled Kluba.
+
+| (3) Clan moze | biti iskljuéen | | iz Kluba | ako | djeluje | protivno | ciljevima Kluba te zbog |
+| ... | ... | ... | ... | ... | ... | ... | ... |
+| nepo$tivanja | Statuta, | drugih | opcih | akata | i odluka | klupskih | tijela. |
+
+(4) Stegovni postupak pokrece se na zahtjev bilo kojeg Clana klupskih tijela.
+
+(5) Odluku o stegovnim mjerama donosi Uprava.
+
+| (6) Iskljuceni | Elan | ima pravo | u roku od 15 dana, raéunajuci od dana dostave odluke, |
+| ... | ... | ... | ... |
+| podnijeti | Zalbu | Nadzornom | odboru. |
+
+| (7) Nadzorni | odbor je duzan rijeSiti Zalbu u roku od 30 dana, raéunajuci od dana |
+| ... | ... |
+| dostave | Zalbe. |
+
+(8) Odluka Nadzornog odbora 0 iskljuéenju je konaéna.
+
+| | | | | Clanak | 23. | | |
+| ... | ... | ... | ... | ... | ... | ... | ... |
+| (1) Povjerenik | moze | biti svaki | élan | Kluba | koji je podnio | zamolbu | i koji ispunjava |
+
+| sljedece uvjete: | | |
+| ... | ... | ... |
+| a. osoba je s potpunom | poslovnom | sposobnoséu; |
+
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+![Image]
+
+| b. da je prije podnogenja | | zamolbe, na njegovu preporuku u Klub uélanjeno |
+| ... | ... | ... |
+| najmanje 20 | novih élanova | Kluba; |
+
+| c. da je najmanje 5 | (pet) godina | neprekidno | lan kluba | prije podnogenja |
+| ... | ... | ... | ... | ... |
+| zamolbe ili da je najmanje | 2 (dvije) | godine | neprekidno élan | kluba i na Giji se |
+| prijedlog uélani najmanje | 50 élanova | kluba; | | |
+
+d. dane postoje zapreke iz ovog Statuta.
+
+(2) Odluku 0 imenovanju povjerenika donosi Uprava Kluba.
+
+| (3) Povjerenik | | je duzan | animirati | i poticati | uélanjivanje | | novih | élanova Kluba te |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... |
+| izvjeStavati | | svoje Clanove | drugim | vaznim | temama | koje | se odnose | na ostvarivanje |
+| ciljeva | Kluba | i obavijanje | njegove | djelatnosti. | | | | |
+
+| (4) Uprava | Kluba moze s imenovanim povjerenikom zakljuciti ugovor o medusobnim |
+| ... | ... |
+| pravima | i obvezama. |
+
+# TIJELA KLUBA
+
+Clanak 24.
+
+(1) Klupska tijela su:
+
+# a. Skup§tina,
+
+b. IzvrSni odbor,
+
+c. Predsjednik i Dopredsjednik Kluba,
+
+d. Nadzorni odbor,
+
+| e. Uprava Kluba. | | | | | | |
+| ... | ... | ... | ... | ... | ... | ... |
+| (2) U klupska tijela | mogu biti izabrani | samo | punoljetni | i poslovno | sposobni | ¢lanovi |
+| Kluba. | | | | | | |
+
+Clanak 25.
+
+| (1) Clanovi | klupskih tijela | ne mogu biti osobe za koje postoji | zapreka iz él. 111. i 112. |
+| ... | ... | ... | ... |
+| Zakona | o sportu iiz él. | 19. st. 2. 13. Zakona o udrugama. | |
+| (2) Clanovi | klupskih tijela | uz razloge iz st. 1. ne mogu biti | osobe: |
+
+a. koje su aktivni nogometni sudac, ili osoba koja je to bila u posljednje 3 (tri) godine;
+
+| b. koje ne | mogu biti Clanovi | Uprave odnosno nadzornog | odbora | dioniékog | |
+| ... | ... | ... | ... | ... | ... |
+| druStva | prema odredbama | Zakona o trgovaékim | dru&amp;tvima | i Zakona | o |
+| sprjeCavanju | sukoba interesa | u javnih | duznosti; | | |
+
+c. koji su dioniéari ili Clanovi drugog nogometnog kluba;
+
+| d. koje svojim djelovanjem mogu | neposredno utjecati na sustav | natjecanja u |
+| ... | ... | ... |
+| odgovarajucem sportu, | a osobito koji su profesionaini | prema |
+| Zakona o sportu, menadzeri | i posrednici u sportu, kao i osobe | koje su to bile |
+| u razdoblju od posljednjih | godinu dana; | |
+
+| e@. koje | su posljednjih | godinu dana | bile élanovi | ili Glanovi tijela pravne osobe |
+| ... | ... | ... | ... | ... |
+| koja | obavlja djelatnost | organiziranja | sportske | kladionice; |
+
+| f. koje | s menadzZerima | i posrednicima | u istome | sportu | i élanovima | pravnih |
+| ... | ... | ... | ... | ... | ... | ... |
+| osoba | te Clanovima | tijela pravnih | osoba | koje | obavijaju | djelatnost |
+| organiziranja | sportskih | kladionica | djeluju zajedni&amp;ki; | | | |
+
+...
+
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+| g. koje imaju ili su posljednjih | godinu dana imale | sklopljen ugovor | sa |
+| ... | ... | ... | ... |
+| nogometasem ili nogometnim | trenerom na temelju | kojega ostvaruje | pravo |
+| na dio prihoda koji proizlaze | iz Oobavijanja djelatnosti | nogometaga | ili |
+| nogometnog trenera; | | | |
+
+| h. koje | su oviaStene | za zastupanje | u pravnoj | osobi | koja | sukladno Zakonu o |
+| ... | ... | ... | ... | ... | ... | ... |
+| sportu | ima sklopljene | ugovore | o ulaganiju | u fiziéke | osobe | u nogometu; |
+
+| i. koje | su u posljednje | tri godine | pravomoéno | kaZnjene za kaznena djela ili |
+| ... | ... | ... | ... | ... |
+| prekrSaje | u sportu | i u vezi sa sportom | i sportskim | natjecanjima; |
+
+| j. koje su pravomoéno | osudene na kaznu | zatvora u trajanju od | najmanje 6 |
+| ... | ... | ... | ... |
+| (Sest) mjeseci | za neko od kaznenih djela | podinjena s namjerom, | a nije |
+| primijenjena uvjetna | osuda godinu dana od | odsluzenja kazne; | |
+
+k. koje ne ispunjavaju druge uvjete propisane Zakonom o sportu i drugim zakonima.
+
+| \|. koje su | aktivni igraé, | trener ili zaposlenik | Kluba, a | ako to postanu tijekom |
+| ... | ... | ... | ... | ... |
+| mandata | u tijelima | Kluba, prestaje | im mandat i | élanstvo u tijelu, osim |
+| élanovima | Uprave Kluba. | | | |
+
+| (3) Svaki Glan | Kluba koji ulazi u bilo koja | tijela Kluba mora potpisati | izjavu kojom |
+| ... | ... | ... | ... |
+| izjavijuje da | za njega ne vrijede gore navedeni | uvjeti te da ce u sluéaju | nastupa |
+| gore navedenih | uvjete odmah obavijestiti | Upravu Kluba. | |
+
+...
+
+Clanak 26.
+
+| (1) Mandat élanovima | klupskih tijela prestaje | i prije | isteka roka | u sluéaju: | |
+| ... | ... | ... | ... | ... | ... |
+| a. pisane | ostavke ili zapisnikom | konstatirane | ostavke | -danom | zaprimanja |
+
+ostavke odnosno ovjerom zapisnika;
+
+izbora novog saziva klupskog tijela;
+
+potpunog ili djelomiénog gubitka poslovne sposobnosti;
+
+nastupa okolnosti iz €lanka 21. i 25. ovog Statuta;
+
+-_hastupa druge okolnosti zbog koje viSe ne moze biti élanom klupskog tijela.
+
+| (2) Na mjesto Clana Skup&amp;tine koji je prestao biti | Glan prije isteka | mandata | |
+| ... | ... | ... | ... |
+| na koji je izabran imenuje se novi Glan s popisa | zamjenskih Glanova | Skupétine | u |
+| obje izborne jedinice. U sluéaju da se iscrpi | broj zamjena, Skup$tina | nastavija | |
+| funkcionirati s brojem preostalih Glanova . | | | |
+
+| (3) Novoimenovanom élanu Skup8&amp;tine prema st. 2. ovog Clanka, mandat traje do isteka | |
+| ... | ... |
+| mandata | Skup$Stine. |
+
+(4) Novoizabranom Glanu IzvrSnog odbora mandat traje do isteka mandata IzvrSnog odbora.
+
+| (5) Novoizabranom Glanu Nadzornog odbora mandat traje do isteka mandata | |
+| ... | ... |
+| Nadzornog | odbora. |
+
+aoc
+
+oO
+
+SKUPSTINA
+
+€lanak 27.
+
+| (1) Skup&amp;tina | je najvige | tijelo upravijanja | Klubom. | | | |
+| ... | ... | ... | ... | ... | ... | ... |
+| (2) Skup&amp;tinu | sacinjava | 60 predstavnika | élanova | Kluba, | na naéin | da: |
+
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+| - 25 Glanova | Skup&amp;tine | biraju svi lanovi Kluba na izborima te lista s najvise |
+| ... | ... | ... |
+| glasova | ulazi u cijelosti | u Skup&amp;tinu |
+
+| - 35 Glanova | Skup&amp;tine bira odbor iz redova prijavijenih kandidata |
+| ... | ... |
+| tajnim | glasovanjem |
+
+Clanak 28.
+
+(1) Izbori za Skup&amp;tinu Kluba odrZavaju se u dvije izborne jedinice:
+
+| - izbori u prvoj izbornoj | jedinici na kojima sudjeluju | punoljetni i poslovno |
+| ... | ... | ... |
+| sposobni Clanovi | koji imaju vazZeée élanstvo u trenutku | izbora i u prethodnoj |
+| kalendarskoj godini, | koji glasuju za izborne liste koje | uz nositelja liste, sadrze |
+| i popis kandidata | za svih 25 mjesta u Skup&amp;tini | i najmanje pet zamjenskih |
+| kandidata za Clanove | Skupgtine. Lista koja dobije | najveci broj glasova |
+| popunjava sva mjesta | za prvu izbornu jedinicu; | |
+
+| - druga izborna jedinica | za koju punoljetni i poslovno sposobni | élanovi s |
+| ... | ... | ... |
+| vazecim élanstvom u | trenutku izbora i u prethodnoj kalendarskoj | godini, |
+| mogu poslati kandidature | Izbornom povjerenstvu, a iz koje | Ge 35 élanova |
+| Skup&amp;tine kao cjelovitu | listu izabrati odbor uz | pet zamjenskih |
+| kandidata. | | |
+
+(2) Liste iz obje izborne jedinice imaju nositelje koji su i kandidati za Predsjednika. Nositelj liste koja je pobijedila u prvoj izbornoj jedinici je jedan kandidat za Predsjednika, a izmedu 35 lanova iz druge izborne jedinice Predsjednik Kluba imenuje nositelja liste koji je kandidat za Predsjednika druge izborne jedinice. Izmedu dva kandidata za Predsjednika Skup&amp;tina glasa za Predsjednika Kluba. Nositelji lista kao kandidati za Predsjednika moraju imati plan upravijanja Kiubom u svom mandatu dostupan ¢lanovima Kluba prije izbora, koji dostavijaju Izbornom povjerenstvu. Liste u prvoj izbornoj jedinici moraju imati potpise podrske najmanje 100 punoljetnih i poslovno sposobnih élanova Kluba s vazecim élanstvom u trenutku potpisivanja i u kalendarskoj godini koja prethodi izbornim procesima.
+
+(3) Izborna Skup&amp;tina se mora odrZati najkasnije 30 dana od dana izbora.
+
+(4) Detalje izbornih postupaka i referenduma ureduje Pravilnik o izborima u Klubu.
+
+Clanak 29.
+
+| (1) Skup&amp;tina | zapoéinje | utvrdivanjem | élanova Skup&amp;tine | i prisutnog | broja élanova od |
+| ... | ... | ... | ... | ... | ... |
+| strane | Predsjednika | Kluba | na temelju dostavijenih | verificiranih | listi kod Izborne |
+| Skup$tine | te popisa | promjena | élanova Skup&amp;tine | od strane IzvrSnog | odbora. |
+
+| (2) Izvr&amp;ni | odbor Ge najkasnije | 2 mjeseca prije | izbora izabrati Izborno | povjerenstvo u |
+| ... | ... | ... | ... | ... |
+| sastavu | od 5 prijavijenih | Clanova Kluba. | U sluéaju da nema dovoljno | prijavijenih |
+| lanova | Kluba za Izborno | povjerenstvo Izvr&amp;ni | odbor ée obavijati funkciju | Izbornog |
+| povjerenstva. | | | | |
+
+| (3) Na Izbornoj Skup&amp;tini, nakon | izbora Predsjednika Kluba, | Predsjednik Kluba |
+| ... | ... | ... |
+| automatski postaje Predsjednik | IzvrSnog odbora i imenuje joS 10 | élanova IzvrSnog |
+| odbora po svom odabiru iz redova | Glanova Skup&amp;tine, a 2 élana | imenuje nositelj |
+| druge liste koja sacinjava Skupstinu, | Sto se verificira na | Citanjem imena |
+| €lanova IzvrSnog odbora. | | |
+
+| (4) Skup&amp;tina | donosi Pravilnik | 0 izborima u Klubu u kojem su detaljnije odredeni izborni |
+| ... | ... | ... |
+| postupci | i rad Izbornog | povjerenstva. |
+
+![Image]
+
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+| (5) Skup&amp;tina | sve verifikacije | u njezinoj | nadleZnosti | obavija | javnim Citanjem | u zapisnik, |
+| ... | ... | ... | ... | ... | ... | ... |
+| dok ostala | tijela, posebno | Izborno | povjerenstvo, | verifikacije | obavljaju | glasovanjem. |
+
+Clanak 30.
+
+| Clanovi | Skup&amp;tine | biraju se na mandat od 4 (Cetiri) godine te isti Clanovi mogu biti birani |
+| ... | ... | ... |
+| na novo | mandatno | razdoblje. |
+
+Clanak 31.
+
+(1) Skup&amp;tina moze biti redovita i izvanredna.
+
+| (2) Skup&amp;tina | redovito | zasjeda najmanje jednom godiSnje, dok se izvanredne |
+| ... | ... | ... |
+| odrzavaju | prema | potrebi. |
+
+(3) Sjednice SkupStine saziva Predsjednik Kluba.
+
+| (4) Predsjednik | Kluba mora | sazvati izvanrednu | sjednicu | ako to zatrazi | odbor ili |
+| ... | ... | ... | ... | ... | ... |
+| 31 | Clan Skup&amp;tine | koji su duZni | predloziti dnevni | red izvanredne | sjednice |
+| Skup$&amp;tine. | | | | | |
+
+| (5) U sluéaju iz st. | 4. ovog Glanka Predsjednik | Kluba je duzan sazvati izvanrednu |
+| ... | ... | ... |
+| sjednicu Skupstine | u roku od 15 dana od dana | zaprimanja zahtjeva predlagatelja |
+| Za sazivanje Skup&amp;tine | koja se mora odrzati najkasnije | u roku od 30 dana od dana |
+| zaprimanja zahtjeva | za njezinim sazivanjem. | |
+
+| (6) Ako | Predsjednik | Kluba ne sazove | izvanrednu sjednicu | Skup&amp;tine | Kluba | u roku 30 |
+| ... | ... | ... | ... | ... | ... | ... |
+| dana | od dana | zaprimanja zahtjeva | predlagatelja, | izvanrednu | sjednicu | Skup&amp;tine |
+| mogu | sazvati | sami predlagatelji. | | | | |
+
+| (7) Nakon | sazivanja izvanredne | | | sjednice | Skupstine | mora | proteci najmanje | 3 (tri) |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... |
+| mjeseca | prije | podnoSenja | novog | zahtjeva | za sazivanjem | nove | izvanredne | sjednice |
+| Skupé&amp;tine. | | | | | | | | |
+
+...
+
+...
+
+Clanak 32.
+
+| (1) 15 dana prije donoSenja | odluke o sazivanju | SkupStine | IzvrSni odbor | formira popis |
+| ... | ... | ... | ... | ... |
+| svih €lanova Skup$tine | te u sluGaju | nastupa uvjeta | navedenih | u él. 25. i él. 26., |
+| dodaje nove élanove | s liste zamjenskih | élanova. | | |
+
+| (2) U odluci | o sazivanju | SkupStine | koja | se mora poslati | élanovima | Skup&amp;tine | najkasnije | |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... |
+| 8 dana | prije odrzavanja | Skup&amp;tine, | | Predsjednik | Kluba utvrduje | dnevni | red te dan | i |
+| mjesto | odrzavanja | sjednice. | IzvrSni | odbor | moze dopuniti | dnevni | red pisanim | |
+| prijedlogom. | | | | | | | | |
+
+| (3) Nakon primitka | odluke | o utvrdivanju | dnevnog | reda | najmanje | 25 | Glanova Skup&amp;tine | |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... |
+| moze dopuniti | dnevni | red pisanim | prijedlogom | | | odboru | bilo koje toéke | koja |
+| je u nadleZnosti | Skupstine, | najkasnije | 7 dana | prije | Skup&amp;tine. | | | |
+
+| (4) Najkasnije | 3 dana | prije Skupstine | Predsjednik | Salje | konaéni dnevni red i sve |
+| ... | ... | ... | ... | ... | ... |
+| materijale | potrebne | za donoSenje | odluka prema | dnevnom | redu. |
+
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+Clanak 33.
+
+| (1) U sluéaju | isteka mandata | | svim | tijelima | Kluba, svi punoljetni | i poslovno sposobni |
+| ... | ... | ... | ... | ... | ... | ... |
+| Clanovi | Kluba postaju | opéa | Skup&amp;tina | koja | ée izabrati tijela | Kluba. |
+
+| (2) U sluéaju | iz st 1. ovog | lanka | opéu Skup&amp;tinu | saziva jedna od zadnjih osoba |
+| ... | ... | ... | ... | ... |
+| ovlaStenih | za zastupanje | u registar | udruga Republike | Hrvatske. |
+
+Clanak 34.
+
+(1) Predsjednik Kluba imenuje radno predsjedni&amp;tvo od 3 élana, koje rukovodi radom Skup§tine.
+
+(2) Dopredsjednik kojeg imenuje Predsjednik Kluba je predsjedavajuci Skup&amp;tine.
+
+| (3) Na Izbornoj | Skupétini, nakon | odabira | | odbora i Dopredsjednika, | |
+| ... | ... | ... | ... | ... | ... |
+| dosadaSnjeg | Dopredsjednika | na | mijestu | predsjedavajuceg, | zamjenjuje |
+| novoizabrani. | | | | | |
+
+| (4) O radu sjednice | vodi se zapisnik | koji se trajno Guva u arhivi Kluba, a kojeg potpisuju |
+| ... | ... | ... |
+| predsjedavajuci | tom sjednicom | i zapisniéar. |
+
+| (5) Jedan | od Glanova | Uprave, | ovlaSten | za zastupanje | Kluba dostavija zapisnik sa |
+| ... | ... | ... | ... | ... | ... |
+| sjednica | Skup&amp;tine | nadleZnom | uredu | koji vodi | registar udruga. |
+
+Clanak 35.
+
+| (1) Skup&amp;tina | odluéuje | pravovaljano | ako je nazoéan | najmanje | 31 clan Skup&amp;tine, a |
+| ... | ... | ... | ... | ... | ... |
+| odluke | donosi vecinom | glasova, | osim ako Statutom | nije propisano | drukéije. |
+
+| (2) Za dono&amp;enje, | | dopune | i izmjene | Statuta | i za razrjeSenje | Predsjednika ili Glanova |
+| ... | ... | ... | ... | ... | ... | ... |
+| Izvr$nog | odbora | potrebna | je odluka | najmanje | 40 élanova | Skup&amp;tine. |
+
+| (3) Za izbor novog | Predsjednika | potrebna je | odluka najmanje | 31 élana Skup&amp;tine. | Ako |
+| ... | ... | ... | ... | ... | ... |
+| se na sjednici | Skup&amp;tine | ne odabere | Predsjednik ili | vecina | odbora, |
+| Skup&amp;tina | saziva izbore | u roku od 60 dana. | | | |
+
+Clanak 36.
+
+Skup$&amp;tina Kluba:
+
+a. utvrduje politiku i smjernice rada Kluba predlozene od strane IzvrSnog odbora;
+
+| b. usvaja Statut | Kluba te predlaze i | utvrduje njegove izmjene i dopune na naéin |
+| ... | ... | ... |
+| propisan u | él. 31 st.4. i él. 32 st.3. | ovog Statuta; |
+
+c. usvaja plan rada i financijski plan za sljedeéu kalendarsku godinu;
+
+| d. usvaja godi&amp;nje financijsko izvjeSée i o radu za prethodnu | |
+| ... | ... |
+| kalendarsku | godinu; |
+
+| e. donosi Poslovnik | o radu Skupstine | Kluba, Pravilnik | o dodjeli | nagrade | ‘Ponos |
+| ... | ... | ... | ... | ... | ... |
+| Dinama’, | Pravilnik 0 izborima | u Klubu, te druge | akte i odluke | vazZne | za rad |
+| Kluba prema | ovom Statutu; | | | | |
+
+f. odluéuje o promjeni ciljeva i djelatnosti te obavijanju gospodarskih djelatnosti;
+
+| g. odlucuje | o udruzivanju u saveze, zajednice, mreze i druge oblike |
+| ... | ... |
+| povezivanja | udruga; |
+
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+![Image]
+
+| h. bira | i razrjeSava | Predsjednika | Kluba, verificira | i razrjeSava | IzvrSni odbor | i |
+| ... | ... | ... | ... | ... | ... | ... |
+| Nadzorni | odbor, | razrjeSava | Izborno povjerenstvo, | kao i pojedine | Clanove | tih |
+| tijela; | | | | | | |
+
+i. imenuje i opoziva likvidatora Kluba;
+
+| j. donosi | odluku o prestanku | rada Kluba, | raspodjeli | preostale | imovine Kluba | i |
+| ... | ... | ... | ... | ... | ... | ... |
+| 0 statusnim | promjenama | (pripajanju, | spajanju | i podjeli | Kluba) u skladu | s |
+| rezultatima | provedenog | referenduma; | | | | |
+
+| k. tumaéi | Statut | i opée akte | koje donosi, | odluéuje | i o drugim | pitanjima za koje |
+| ... | ... | ... | ... | ... | ... | ... |
+| ovim | Statutom | nije utvrdena | nadleznost | drugih | klupskih | tijela. |
+
+# IZVRSNI ODBOR
+
+€lanak 37.
+
+| (1) lzvrSni | odbor | Kluba | je izvrno tijelo Skup&amp;tine kojoj odgovara za svoj rad. |
+| ... | ... | ... | ... |
+| (2) IzvrSni | odbor | zalaze | se za naéela: |
+
+- zakonitosti,
+- _transparentnosti i javnosti poslovanja,
+- Sprjecavanje sukoba interesa,
+- u€inkovit unutarnji nadzor,
+- jacanje osobne odgovornosti,
+- dru&amp;tveno odgovorno poslovanje.
+
+(3) IzvrSni odbor se sastoji od 13 Glanova iz redova élanova Skup§tine.
+
+| (4) Iz redova | élanova | Skupgtine, | Predsjednik | Kluba | imenuje | 10 élanova | IzvrSnog |
+| ... | ... | ... | ... | ... | ... | ... | ... |
+| odbora | po svom | odabiru, | a 2 lana | imenuje | nositelj druge | liste koja | saéinjava |
+| Skup8&amp;tinu. | | | | | | | |
+
+(5) Mandat Clanova Izvr&amp;nog odbora i Predsjednika je 4 (éetiri) godine.
+
+| (6) U sluéaju | prestanka | lanstva u | odbotu iz bilo kojeg razloga prema ovom |
+| ... | ... | ... | ... |
+| Statutu, | Predsjednik | ili nositelj druge liste, | ovisno s Gije liste su élanovi IzvrSnog |
+| odbora | kojima je | prestalo Glanstvo, imenuje | druge élanove odbora iz |
+| Skup§&amp;tine. | | | |
+
+Clanak 38.
+
+IzvrSni odbor Kluba:
+
+a. provodi odluke, zakljucke i preporuke ;
+
+b. predlaze izmjene i dopune Statuta, osim u sluéajevima iz él. 36. ovog Statuta
+
+c. predlaze i usvaja opce akte Kluba, ako ovim Statutom nije drugaéije odredeno;
+
+d. predlaze Skupétini program razvoja, politiku i smjernice rada Kluba;
+
+| e. imenuje, | sklapa ugovor, kao i predsjednika Uprave i Glanove |
+| ... | ... |
+| Uprave | Kluba; |
+
+| f. nadzire | rad Uprave | i daje joj suglasnost za pravne poslove iznad ukupnog |
+| ... | ... | ... |
+| iznosa | 3 milijuna | eura; |
+
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+| g. osniva po potrebi | savjetodavne pododbore i povjerenstva | sastavijene od |
+| ... | ... | ... |
+| lanova Kluba, zaposlenika | Kluba i struénjaka koji nisu | élanovi Kluba, za |
+| potrebe kvalitetnije | kontrole rada Kluba (Odbor za internu | reviziju i kontrolu, |
+| Odbor za korporativna | i strateSka pitanja, Odbor za imenovanja | zasluzZnih |
+| igraca i trenera i | sl.) te se obvezuje u odluci o osnivanju | pododbora i/ili |
+| povjerenstva navesti | njihov sastav, Zadacu, vrijeme za | koje se osnivaju i |
+| odgovornost za obavijanje | poslova; | |
+
+h. odluéuje i o drugim pitanjima koje mu odredi Skup$tina.
+
+Clanak 39.
+
+| (1) IzvrSni | odbor svoje poslove | obavlja na | sjednicama | koje saziva | Predsjednik | ili Glan |
+| ... | ... | ... | ... | ... | ... | ... |
+| IzvrSnog | odbora kojeg | odredi Predsjednik | prema | potrebi, | a najmanje | jednom |
+| mjeseéno. | | | | | | |
+
+| (2) IzvrSni | odbor | odluéuje | vecinom | glasova nazoénih élanova pod uvjetom da je na |
+| ... | ... | ... | ... | ... |
+| sjednici | prisutna | natpoloviéna | vecina | svih élanova. |
+
+Clanak 40.
+
+NaGin i uvjete svog rada odbor ureduje Poslovnikom.
+
+# PREDSJEDNIK KLUBA
+
+Clanak 41.
+
+(1) Predsjednik Kluba: a. saziva sjednice Skup&amp;tine Kluba i odbora te predlaze dnevni red, osim u sluéajevima odredenih ovim Statutom; b. brine se 0 upoznavanju javnosti s radom Skup&amp;tine Kluba; c. usuradnjis IzvrSnim odborom, utvrduje prijediog Statuta i drugih opéih akata koje usvaja Skup&amp;tina Kluba, osim u sluéajevima iz él. 36. d. imenuje élanove Izvrsnog odbora sukladno él. 37. st. 4. ovog Statuta i predilaze SkupStini Kluba njihovo razrjeSavanje; e. saziva izbore u Klubu; f. obavlja i druge poslove u skladu sa zakonima, ovim Statutom i aktima Kluba. (2) U bilo kojim sluéajevima istovremene sprijecenosti Predsjednika i Dopredsjednika duljim od 6 mjeseci, IzvrSni odbor mora sazvati Skupstinu koja ce izabrati novog Predsjednika u roku od 3 mjeseca nakon proteka tog roka.
+
+Elanak 42.
+
+| (1) Predsjednik | Kluba | po svojoj funkciji | je élan i predsjednik | Izvr$nog odbora. | |
+| ... | ... | ... | ... | ... | ... |
+| (2) Mandat | Predsjednika | Kluba je 4 | (€etiri) godine i za | svoj rad je odgovoran | Skup&amp;tini |
+| Kluba. | | | | | |
+
+![Image]
+
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+*(3) Predsjednik Kluba predstavija i zastupa Klub u zemiji i inozemstvu.*
+
+| (4) Predsjednik | Kluba | iz redova | IzvrSnog odbora | imenuje Dopredsjednika, | koji |
+| ... | ... | ... | ... | ... | ... |
+| rukovodi | sjednicama | | i koji ga zamjenjuje | u svim ovlastima | u sluéaju |
+| njegove | sprijecenosti. | | | | |
+
+Clanak 43.
+
+| (1) Skup&amp;tina | Kluba | na redovnoj sjednici | vecinom prisutnih | élanova | Skupstine | moze |
+| ... | ... | ... | ... | ... | ... | ... |
+| imenovati | poéasnog | predsjednika | Dinama na temelju | poslovnih | i sportskih | zasluga |
+| i rezultata. | | | | | | |
+
+| (2) Mandat | poéasnog predsjednika je neograniéen. U izuzetnim sluéajevima moze ga |
+| ... | ... |
+| razrijesiti | SkupStina. |
+
+| (3) Poéasni | predsjednik Kluba ima pravo sudjelovati na sjednicama Skup$tine, ali |
+| ... | ... |
+| nema | pravo glasa. |
+
+# NADZORNI ODBOR
+
+Clanak 44.
+
+*(1) Nadzorni odbor:*
+
+a.
+
+b.
+
+c.
+
+oh
+
+| skrbi | 0 financijskom | poslovanju | Kluba | te raspolaganju | | njegovom | imovinom; |
+| ... | ... | ... | ... | ... | ... | ... | ... |
+| skrbi | 0 provodenju | odredbi | Statuta, | opéih akata | Kluba | i pravnom | poslovanju |
+| Kluba | 0 €emu | moze traziti | izvjeSéa | tijela Kluba; | | | |
+
+| stegovno | je tijelo u drugom | stupnju vezano uz élanska prava i obveze te |
+| ... | ... | ... |
+| donosi konaénu | odluku 0 stegovnoj | mieri; |
+
+obavija i druge poslove u skladu sa zakonima, ovim Statutom i Pravilnikom 0 izborima;
+
+rjeSava sukobe interesa i sporove unutar Kluba;
+
+| obavjeStava | | klupska | tijela o neusuglaSenosti | rada ili | akata sa Statutom | i |
+| ... | ... | ... | ... | ... | ... | ... |
+| drugim | aktima | Kluba, o | emu, ako se ne | isprave, obavjeStava | | koja |
+| donosi | obvezujuéu | odluku | o uskladivanju | rada i akata. | | |
+
+| (2) Clanovi | klupskih | tijela koja | odluéuju u stegovnom postupku ne sudjeluju u njemu |
+| ... | ... | ... | ... |
+| kada | su predmet | stegovnih | postupaka. |
+
+Clanak 45.
+
+| (1) Nadzorni | odbor se sastoji | se od 3 élana, | koji izmedu sebe | biraju | predsjednika. |
+| ... | ... | ... | ... | ... | ... |
+| (2) Predsjednik | Nadzornog | odbora saziva sjednice | i predlaze | dnevni | red. |
+
+*(3) Nadzorni odbor donosi odluke vecinom glasova svih élanova.*
+
+*(4) Mandat élanova Nadzornog odbora je 4 (éetiri) godine.*
+
+Clanak 46.
+
+*(1) Clanovi Nadzornog odbora ne mogu biti élanovi drugih klupskih tijela.*
+
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+| (2) Nadzorni | odbor | podnosi | | Kluba redovito | godiSnje | izvjesée. | |
+| ... | ... | ... | ... | ... | ... | ... | ... |
+| (3) Skup&amp;tina | Kluba | moze | zahtijevati | od Nadzornog | odbora | podnogenje | izvanrednog |
+| izvjeSéa. | | | | | | | |
+
+Clanak 47.
+
+NaGine i uvjete svog rada Nadzorni odbor ureduje Poslovnikom.
+
+Clanak 48.
+
+| (1) Clanove Nadzornog odbora | na temelju samostalnih kandidatura poslanih Izbornom |
+| ... | ... |
+| povjerenstvu bira IzvrSni | odbor na nagin propisan u Pravilniku o izborima. § liste |
+| prijavijenih kandidata | prvo jednog élana Nadzornog odbora bira 10 élanova |
+| Izvr$nog odbora koje | je izabrao Predsjednik, a zatim ostala dva élana Nadzornog |
+| odbora bira dva élana | odbora s druge liste koja saCinjava SkupStinu. U |
+| sluéaju da se ne prijavi | dovoljno kandidata, Predsjednik Kluba predlaze kandidate |
+| . | |
+
+| (2) Skup&amp;tina | razrjeSava Glanove Nadzornog odbora ako ne prihvati izvjeSée |
+| ... | ... |
+| Nadzornog | odbora. |
+
+| (3) Odluku | o neprihvaéanju | | izvjeSéa Nadzornog odbora, Skup&amp;tina donosi vecinom |
+| ... | ... | ... | ... |
+| glasova | prisutnih | Glanova | Skup&amp;tine. |
+
+# UPRAVA KLUBA
+
+Clanak 49.
+
+| (1) Uprava | Kluba | vodi poslovanje | | Kluba | i upravlja | radom struénih | sluzbi Kluba u skladu |
+| ... | ... | ... | ... | ... | ... | ... | ... |
+| S ovim | Statutom, | opéim | aktima | Kluba | te odlukama | Skuptine | i IzvrSnog odbora. |
+| (2) Upravu | Kluba | ine predsjednik | | Uprave | Kluba | i 2 do 4 élana | koje bira IzvrSni odbor |
+
+Kluba.
+
+Clanak 50.
+
+(1) Clanovi Uprave Kluba zastupaju Klub u pravnom prometu bez ogranigenja.
+
+| (2) Clanovi Uprave | Kluba Zastupaju Klub u pravnom | prometu na naéin da najmanje | 2 |
+| ... | ... | ... | ... |
+| €lana uprave | potpisuju i zastupaju prema trecim | osobama o svakom | pitanju iz |
+| djelokruga Uprave, | a prema Poslovniku 0 radu | Uprave. | |
+
+(3) Mandat élanova Uprave Kluba je 4 (éetiri) godine.
+
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+![Image]
+
+Clanak 51.
+
+*Uprava Kluba:*
+
+a.
+
+b.
+
+TAT sep e
+
+prediaze IzvrSnom odboru Pravilnik o djelokrugu i unutarnjem ustrojstvu Kluba;
+
+| organizira | obavijanje | struénih, | tehniékih | i pomoénih poslova | Kluba i vodi |
+| ... | ... | ... | ... | ... | ... |
+| Poslovnu, | sportsku | i struénu | politiku Kluba, | za koje odgovara | Izvrsnom |
+| odboru; | | | | | |
+
+| samostalno | sklapa | pravne poslove do ukupnog | iznosa 3 milijuna | eura, | a za |
+| ... | ... | ... | ... | ... | ... |
+| veée | ukupne iznose | mora ishoditi prethodnu suglasnost | IzvrSnog | odbora, | te |
+| poduzima | druge pravne | radnje u ime i za raéun | Kluba; | | |
+
+rukovodi i nadzire rad zaposlenika Kluba;
+
+brine se o provodenju odluka Skup&amp;tine i IzvrSnog odbora;
+
+podnosi financijska godi&amp;nja i druga izvjeSca Skup$tini Kluba;
+
+donosi akte sukladno Statutu i odlukama klupskih tijela;
+
+| osigurava | redovito | obavjeStavanje élanova Kluba o radu i rezultatima Kluba; |
+| ... | ... | ... |
+| upravlja | imovinom | Kluba; |
+
+sklapa ugovore i poduzima pravne radnje u ime i za raéun Kluba;
+
+utvrduje uvjete za sklapanje i raskid ugovora s igracima;
+
+| donosi | odluke | 0 organiziranju | turnira, | odigravanju prijateljskih utakmica te o |
+| ... | ... | ... | ... | ... |
+| mjestu | i vremenu | odrzavanja | priprema | igraéa; |
+ donosi odluke o izvanrednom nagradivanju igraéa i ostalih zaposlenika
+
+Kluba za postignute rezultate;
+
+| prediaze | | odboru | financijski i poslovni plan te podnosi |
+| ... | ... | ... | ... |
+| kvartalna | izvjeSéa | o provedbi | tog plana: |
+
+obavija i druge poslove sukladno ovom Statutu i odlukama klupskih tijela;
+
+Clanak 52.
+
+| (1) Za svoj rad | i rad struénih sluzbi | Glanovi Uprave | Kluba | odgovorni su Izvrsnom |
+| ... | ... | ... | ... | ... |
+| odboru. | | | | |
+| (2) Clanovi Uprave | Kluba ne mogu biti | Clanovi drugih | klupskih | tijela. |
+
+Clanak 53.
+
+*Na€ine i uvjete svog rada Uprava Kluba ureduje Poslovnikom uz suglasnost *
+
+odbora.
+
+# RJESAVANJE SPOROVA | SUKOBA INTERESA
+
+Clanak 54.
+
+| (1) Postupak | pred | Nadzornim | odborom | za rjeSavanje | statutarnih | i ostalih | sporova | te |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... |
+| sukoba | interesa | moZe zahtjevom | | pokrenuti svako | klupsko tijelo, | odnosno | svaki | élan |
+| Kluba | ako smatra | da postoji | spor | ili sukob interesa | u Klubu. | | | |
+
+![Image]
+
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+(2) Nadzorni odbor o zahtjevu odluéuje u roku od 60 dana od dana podnoSenja zahtjeva.
+
+(3) Nadzorni odbor u svom radu na odgovarajuci naéin primjenjuje odredbe Zakona o mirenju.
+
+(4) Odluka Nadzornog odbora o sukobu interesa je konaéna.
+
+| (5) Ako pronade | da postoji | sukob | interesa, Nadzorni odbor odreduje i naéin |
+| ... | ... | ... | ... |
+| razrjeSavanja | utvrdenog | sukoba | interesa. |
+
+| (6) Sva | klupska tijela mogu se obratiti Skup8&amp;tini za tumaéenje odredbi Statuta i akata |
+| ... | ... |
+| koje | ona donosi. |
+
+# IMOVINA, NACIN STJECANJA | RASPOLAGANJE IMOVINOM
+
+Clanak 55.
+
+(1) Imovinu Kluba éine:
+
+| a. novéana | sredstva koja je Klub stekao uplatom €lanarina, dobrovoljnim |
+| ... | ... |
+| prilozima | i darovima; |
+
+| b. novéana | sredstva koja Klub stekne | obavijanjem djelatnosti | kojima se |
+| ... | ... | ... | ... |
+| ostvaruju | ciljevi, obavijanjem djelatnosti | i gospodarske | djelatnosti, |
+| financiranjem | programa i projekata Kluba | iz drzavnog proraéuna | i proraéuna |
+| jedinica lokalne | i podruéne (regionalne) | samouprave te fondova | ij/ili iz |
+| inozemnih | izvora; | | |
+
+c. nekretnine i pokretne stvari Kluba;
+
+d. druga prava ustanovijena u korist Kluba.
+
+| (2) Klub moze | raspolagati | svojom | imovinom | samo | za ostvarivanje ciljeva i obavijanjem |
+| ... | ... | ... | ... | ... | ... |
+| djelatnosti | odredenih | Statutom | Kluba, | u skladu | sa zakonom. |
+
+| (3) ViSak | prihoda | nad rashodima koje Klub ostvari koristi se za ostvarivanje ciljeva |
+| ... | ... | ... |
+| utvrdenih | ovim | Statutom. |
+
+Clanak 56.
+
+(1) Odluke o stjecanju ili otudivanju pokretnina i nekretnina donosi Uprava Kluba.
+
+| (2) Poslovne | odluke | u vezi | financijskih | sredstava | tiiekom kalendarske |
+| ... | ... | ... | ... | ... | ... |
+| godine | provodi Uprava | Kluba koja | o tome izvjeSéuje | | odbor. |
+
+| (3) Uprava | Kluba odgovorna | je | za zakonitost i raspolaganja imovinom, a |
+| ... | ... | ... | ... |
+| posebice | financijskih | sredstava | Kluba. |
+
+| (4) Sva dokumentacija | | o materijalno-financijskom | | poslovanju Kluba éuva se u |
+| ... | ... | ... | ... | ... |
+| zakonskim | rokovima | sa posebnom | paznjom | u arhivi Kluba. |
+
+![Image]
+
+...
+ocr-capabilities: ocr_page, ocr_carea, ocr_par, ocr_line, ocrx_word, ocrp_dir, ocrp_lang, ocrp_wconf
+ocr-system: tesseract 5.5.1
+...
+
+# PRESTANAK POSTOJANJA KLUBA
+
+Clanak 57.
+
+| (1) Klub prestaje | postojati | odlukom | Skup&amp;tine | u skladu s rezultatima provedenog |
+| ... | ... | ... | ... | ... |
+| referenduma, | ili u drugim | sluéajevima | predvidenim | zakonom. |
+
+| (2) U sluéaju prestanka | postojanja | Kluba | preostala imovina | pripada | udruzi, | ustanovi, |
+| ... | ... | ... | ... | ... | ... | ... |
+| zakladi ili drugoj | pravnoj | osobi koja | ima iste ili sligne | statutarne | cilleve, | a prema |
+| odluci SkupStine | u skladu | s rezultatima | referenduma. | | | |
+
+Clanak 58.
+
+(1) Likvidatora Kluba imenuje i opoziva Skup&amp;tina Kluba.
+
+| (2) Likvidator | zastupa | Klub u | postupku likvidacije | te se otvaranjem | likvidacijskog | |
+| ... | ... | ... | ... | ... | ... | ... |
+| postupka | upisuje | u registar | udruga kao osoba | ovlagtena za zastupanje | Kluba | do |
+| okonéanja | postupka | likvidacije | i brisanja Kluba | iz registra udruga. | | |
+
+| (3) Osoba | koja se bira za likvidatora | treba imati potrebnu | struGnost i iskustvo, | s |
+| ... | ... | ... | ... | ... |
+| obzirom | na nadleznost likvidatora | te ne smije imati zapreke | iz él. 112. Zakona | o |
+| sportu i | ¢l. 19. st. 2.13. Zakona | o udrugama. | | |
+
+| (4) Pokretanjem | postupka likvidacije Kluba prestaju ovlaStenja tijela i osoba ovlastenih |
+| ... | ... |
+| Za zastupanje | Kluba. |
+
+(5) Postupak likvidacije Kluba provodi likvidator sukladno odredbama Zakona o udrugama.
+
+# PRIJELAZNE I ZAVRSNE ODREDBE
+
+Clanak 59.
+
+(1) Statut stupa na snagu danom donogenja.
+
+| (2) Opéi akti i ostali potrebni | akti Kluba vezani za izbore u Klubu | moraju se usuglasiti |
+| ... | ... | ... |
+| s odredbama ovog Statuta, | kao i ustrojiti zborno povjerenstvo | od strane Izvr$nog |
+| odbora sa¢injene prema | prethodnom Statutu, prije datuma | prvih izbora koji ée |
+| ustrojiti tijela Kluba prema | ovom Statutu. Tijela Kluba | ustrojena po prethodnom |
+| Statutu djeluju do ustroja | novih tijela Kluba prema ovom | Statutu nakon prvih izbora |
+| u Klubu. | | |
+
+U Zagrebu, 21.12.2023.
+
+![Image]
