@@ -9,6 +9,7 @@ EXTRACTORS=\
 markitdown
 pdfminer.six
 docling
+kreuzberg
 pdfplumber
 PyMuPDF
 pymupdf4llm
