@@ -22,7 +22,6 @@
 
     *   https://www.youtube.com/watch?app=desktop&v=Lk6D1huUK0s&t=986s&ab_channel=VenelinValkov
 
-
 *   https://www.reddit.com/r/Rag/comments/1mtcvs7/the_beauty_of_parentchild_chunking_graph_rag_was/
 
 ```shell
@@ -32,6 +31,55 @@ pip install tiktoken
 
 *   https://www.geeksforgeeks.org/data-analysis/how-to-chunk-text-data-a-comparative-analysis/
 
+https://medium.com/@jagadeesan.ganesh/understanding-chunking-algorithms-and-overlapping-techniques-in-natural-language-processing-df7b2c7183b2
+
 ## code chunking
 
-https://code2prompt.dev/docs/tutorials/getting_started/
+*   https://code2prompt.dev/docs/tutorials/getting_started/
+
+*   https://python.langchain.com/docs/how_to/code_splitter/
+
+*   https://python.langchain.com/docs/how_to/code_splitter/#c
+
+*   https://python.langchain.com/docs/how_to/code_splitter/#markdown
+
+*   https://python.langchain.com/docs/how_to/code_splitter/#python
+
+## Structure
+
+### PDF
+
+```shell
+find ./text -type f -iname "*.txt" -o -iname "*.md"
+```
+
+PDF:
+
+```shell
+./text/python/pymupdf4llm/content.md
+./text/python/pdfplumber/content.txt
+./text/python/markitdown/content.md
+./text/python/docling/content.txt
+./text/python/docling/content.md
+./text/python/docling/content.filetype-agnostic.md
+./text/python/PyMuPDF_fitz/content.txt
+./text/python/PyPDF2/content.txt
+./text/python/pdfminer_six/content.txt
+./text/python/unstructured/content.txt
+./text/python/marker/content.md
+./text/python/pypdfium2/content.txt
+./text/python/pytesseract/content.txt
+```
+
+Microsoft Word docx:
+
+```shell
+./text/python/pymupdf4llm/content.md
+./text/python/docx2txt/content.txt
+./text/python/markitdown/content.md
+./text/python/docling/content.txt
+./text/python/docling/content.md
+./text/python/docling/content.filetype-agnostic.md
+./text/python/docx/content.txt
+./text/python/docx2python/content.txt
+```
