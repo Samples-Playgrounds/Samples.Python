@@ -52,6 +52,13 @@ Levels of Text Splitting/Chunking:
 
 *   https://www.pinecone.io/learn/chunking-strategies/
 
+## Code Snipetts
+
+*   https://github.com/luay458/taia_tool/blob/master/app/services/ingestion.py#L59
+
+*   https://github.com/Nabeel-Ahsan7/Multilingual-RAG-System/blob/b5750fa6296f7a635da5494743fe5dc0671bdef8/FAQ.md?plain=1#L105
+
+*   https://github.com/UdeeshaRukshan/Assignment2/blob/4e0fb79c6845766e04d7b4e9abd1fb62ca5c9b89/docs.md?plain=1#L118
 
 ### RAG
 
@@ -60,17 +67,19 @@ https://github.com/llmware-ai/llmware
 https://github.com/snexus/llm-search
 
 
-xperience implementing for 2 separate RAG Projects ada-002 performs badly for German and Multilingual Embeddings for RAG workflows.
+*   ada-002
 
-I changed to Sentence-Transformer using SOTA models from the MTEB leaderboard.
+    *   performs badly for German and Multilingual Embeddings for RAG workflows.
 
-I found the following Embedding Models performing very well:
+*   Sentence-Transformer using SOTA models from the MTEB leaderboard.
 
-e5-large-v2
+*   Embedding Models performing very well:
 
-instructor-large
+    *   e5-large-v2
 
-multilingual-e5-large
+    *   instructor-large
+
+    *   multilingual-e5-large
 
 The implementations for business clients usually involve:
 
