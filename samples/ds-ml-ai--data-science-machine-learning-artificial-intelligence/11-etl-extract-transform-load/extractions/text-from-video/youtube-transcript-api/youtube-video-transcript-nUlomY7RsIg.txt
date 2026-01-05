@@ -1,0 +1,574 @@
+
+Here's how you can reach more recruiters
+with your resume. Well, I have a hack to
+help you get past the ATS system. Three
+ways to make sure your resume gets past
+the ATS, aka the applicant tracking.
+Picture this. You're scrolling LinkedIn
+and you find a role that feels like a
+perfect match. I'm a LinkedIn guy. So,
+you tailor your resume. You rewrite your
+bullet points and hit submit. 10 minutes
+later, automated rejection. No
+explanation, no feedback, just silence.
+And then it was like crickets. So, you
+start asking yourself the usual
+questions. Why am I not hearing back? Is
+the ATS rejecting me? What's so wrong
+with my resume? How do I get interviews
+at the companies I actually want to work
+for? And naturally, you blame the ATS,
+which is the applicant tracking system
+that supposedly filters out anyone
+without the right keywords in their
+resume. But here's the thing, that's not
+what's happening. And the longer that
+you believe this, the more time you're
+going to waste solving the wrong
+problem. So, in this video, I'm going to
+break down the five biggest ATS myths
+that are wasting your time, show you
+where these fake metrics, like 80% match
+score even come from, and give you the
+exact framework that actually gets
+résumés noticed. Because the problem
+isn't rejection, it's invisibility.
+We'll start by explaining how ATS
+parsing really works. the actual tech
+behind what gets read and what gets
+ignored. Then I'll reveal what
+recruiters see in ATS's and why most
+résumés never even get noticed. And then
+next, I'll debunk the five worst rés
+myths that are costing you opportunities
+and show you how to fix them. And
+finally, I'll share a recruiter approved
+framework to make sure your resume gets
+seen and read. And once you understand
+that, everything changes. You're not
+going to see guesses in this video.
+You're going to see how the system
+actually works. And just so you know
+where this is coming from, this isn't
+just recruiter advice. I've literally
+written the kind of software code that
+tells machines how to read resumes. Let
+me show you how I got there. My dad
+spent his career building the early
+technology that helped machines read
+text off of paper. It's called OCR, also
+known as optical character recognition
+technology. And it works like this. A
+computer scans a document and turns what
+it sees into searchable text, like
+pulling an address off of a letter or
+reading a name off of a resume. One of
+his biggest projects was with the US
+Postal Service, where his software
+actually helped scan and sort millions
+of envelopes, packages, newspapers, and
+magazines by reading the address and
+routing each piece of mail fast and
+automatically. And I started learning
+about this stuff when I was a kid. And
+during college when I majored in
+computer science, I actually interned
+with my dad at Seammens where I helped
+him write some of these algorithms for
+machine readable search strings, which
+is code that basically tells a system
+how to find exactly what it's looking
+for in a wall of scanned text. So when I
+moved into recruiting, screening over
+100,000 résumés at Google, Uber, and Tik
+Tok, I wasn't just using these systems.
+I understood how they were built and
+what they could and couldn't do. That's
+why when I see job seekers wasting time
+trying to beat the ATS, it's personal
+because I know exactly what happens
+after you hit submit. And this isn't
+theory. It's how the system pulls your
+resume apart and what actually makes it
+readable to the system and the people
+who matter. Now, let's do a gut check
+here. If ATS systems really were powered
+by AI that automatically rejects
+candidates, you'd be getting responses
+100% of the time. Do you want to know
+what it is? Yes or no. But you're not
+getting those responses. Instead, you're
+getting silence. That silence isn't
+judgment. It's proof that no human even
+opened your application. Because if you
+keep believing these myths, you'll waste
+months tweaking templates, chasing
+keywords, and buying the next resume
+hack that shows up in your feed.
+Meanwhile, your applications are just
+sitting there unopened. Not because a
+robot rejected you, but because no human
+ever saw them. Now, look, the T in ATS
+stands for tracking, not terminator.
+I'll be back. This isn't some AI
+scanning your resume with red glowing
+eyes. It's a database that stores files,
+lets recruiters post jobs to job boards,
+tracks candidates through the interview
+process, and helps search through
+applications. That's it. Saying you want
+to beat the ATS is like saying you want
+to beat Excel.
+So, you're still not sure what that
+actually looks like? Here's what an ATS
+system really is. No robots, no AI
+overlords, just a glorified spreadsheet
+with some filters. Watch this clip from
+Samstrom where he walks you through what
+recruiters actually see on the back end
+of an ATS called Lever. Now, I don't
+have access to any ATS systems right now
+because I'm not an active recruiter.
+However, Sam is and he can show you in
+this video. In this video, I'm going to
+show you the inside of an applicant
+tracking system and address a common lie
+that is told to job seekers. In front of
+me here is Lever ATS. It's one of the
+top ATS's in the tech worlds and my
+personal favorite. On the left hand side
+here, as you can see, I've selected the
+account executive under my open jobs. On
+the right hand side is the list of
+applicants. And this is typically how
+ATS will show applicants. Usually by
+date of application. Sometimes it'll be
+the most recent or it'll be the oldest
+candidate that applied up top. So it's
+not about when to apply. Just apply when
+you can. Now on the uh candidate side of
+things when you apply for a job
+externally and you hit apply and when
+you upload or attach your resume what
+happens is when it says analyzing resume
+the applicant tracking system is parsing
+for contact information so it can build
+and populate a profile in the ATS. What
+it is not doing is autorejecting or auto
+filtering by keywords. That's not how
+applicant tracking systems work. They do
+not withhold candidates um from
+recruiters despite what sites like job
+scan which are just designed to take
+your money um say this here. After
+scanning your resume, the ATS scores
+your resume on a one to 100% scale. A
+score of 80% or higher moves you onto a
+human recruiter who may contact you.
+This is a downright lie. This job site
+is trying to take your money. Do not
+listen to this advice. Again, applicant
+tracking systems don't auto filter and
+reject solely based on keywords. If
+anyone wants to show me a system via
+Loom, that would be great. How it
+typically works is when you apply, you
+just fall into a pool of applicants. And
+as you can see, Sam is now the in the
+system here. Yes, some rating systems
+exist in applicant tracking systems. But
+these are not the default view. And I've
+not met a single recruiter who actively
+uses these because most of the times
+this feature is just a gimmick that
+doesn't actually produce results.
+Recruiters are screening your resumes.
+And once you understand that the real
+problem isn't rejection, it's
+invisibility.
+everything you need to do becomes
+crystal clear. So, let's start with myth
+number one. The ATS automatically
+rejects your resume if you don't have
+the right keywords. So, here's the myth.
+You apply for a job, you don't hear
+back, and you assume that the system
+filtered you out because you didn't
+include the right keywords. Maybe you
+forgot to say crossf functional or
+stakeholder alignment. So, the ATS
+tosses out your resume into the trash.
+It sounds technical. It sounds
+plausible, but it's wrong. Here's why
+it's wrong. There is no hidden rejection
+algorithm scanning your resume for a
+checklist. The ATS doesn't ding you for
+a missing word, and it doesn't operate
+on a scoring system. In fact, it doesn't
+reject candidates at all. Applicant
+tracking systems store résumés. They
+help recruiters manage applications,
+post jobs, and if they want, search by
+keyword. But most recruiters don't use
+those filters. They're clunky. They're
+outdated and often surface the wrong
+candidates entirely. So, if you didn't
+get a call back, it's not because you
+missed a phrase. It's because your
+resume didn't make your value
+immediately clear, if anyone read it at
+all. By the way, I'm sure some of you
+go, "Well, Farah, see, it does have the
+capability to actually filter you out."
+Listen, all it is is CtrlF, like find on
+your keyboard. That's the functionality.
+It's pretty much it. Here's what it
+means for you. Chasing keywords is like
+writing for a robot that's not even in
+the room. Dear
+Mr.
+Royal
+Hampton, you dilute your message trying
+to impress a system that is not
+filtering you out and in the process you
+end up burying the parts of your
+experience that actually make you
+competitive. So here's what you should
+do instead. Don't optimize for density.
+Optimize for clarity. Use the job title
+and core skills from the posting and
+embed them naturally into your
+achievements and your bullet points.
+Don't just say project management.
+Instead, you can say led a cross
+functional team of eight plus delivering
+new product features 2 weeks ahead of
+schedule because you're not trying to
+game a system. You're trying to stop a
+human from scrolling. Myth number two,
+you need an ATS compliant resume. The
+myth. RSé scoring tools claim to tell
+you how ATS compliant your resume is.
+They assign a percentage like 67% 82%
+93% and make it feel like you're just
+one adjustment away from getting through
+the system. But here's the truth. Those
+scores aren't based on anything real.
+Here's why it's wrong. They're not
+coming from an ATS. Those numbers are
+not coming from an ATS at all. They're
+not used by recruiters. They're created
+by third-party companies like JobCan who
+are trying to sell resumeé audits. These
+tools invented a metric, attach it to
+your resume, and frame it as a barrier
+so they can sell you their solution.
+Once you believe that that score
+matters, you stop writing your resume
+for people and you start rewriting it
+for some fake algorithm, which ends up
+watering down your strengths. So, you
+start chasing match percentages instead
+of leading with what makes you hirable.
+And the worst part, no one on the hiring
+team will ever see that number. Here's
+what it means for you. Optimizing your
+resume for a fake score doesn't just
+waste your time, it makes your resume
+worse. You start removing the parts that
+make you credible. All in the name of
+chasing a number that never even
+mattered. You don't need a higher score.
+You need a clearer message. Here's what
+to do instead. Again, there is no such
+thing as an ATS compliant resume. What
+you need is a reader compliant resume.
+Something that a human can skim in 5
+seconds and immediately understand why
+you're qualified. And all you need is a
+clean layout. Stick to standard fonts.
+Avoid templates with graphics or
+gimmicks. and make sure that your
+strongest achievements show up where the
+eye lands first because clarity gets
+interviews. Scores don't. If you're
+finding this video helpful, feel free to
+subscribe. Myth number three, the white
+font trick works. Oh god. So, here's the
+myth. This is the zombie of ré advice.
+And no matter how many times it gets
+debunked, it keeps coming back. The idea
+is this. If you hide the job description
+or keywords in white font at the bottom
+of your resume, the ATS will scan and
+see them, but human recruiters won't.
+So, it gets pitched as this like clever
+workaround. But it's not clever and it
+doesn't work. Here's why it's wrong. As
+a recruiter, I've seen what happens when
+someone tries this. So you submit your
+resume, it goes into the ATS and
+everything, including the white font
+gets extracted into plain text. That
+invisible block of key words are now
+part of your application record. If a
+recruiter copies and pastes your resume
+to send it to a hiring manager, that
+hidden section shows up in full. And in
+that moment, you've gone from being a
+potential fit to someone who's trying to
+game the system. Also, don't write words
+like hire me in white font thinking that
+a recruiter is putting your resume into
+chat GBT asking if it should hire you.
+That is silly. That is ridiculous. But
+sadly, thanks to people on platforms
+like Tik Tok who are just chasing views,
+this has become a problem. Here's what
+it means for you. Now, you think you're
+improving your odds, but what you're
+really doing is signaling that you don't
+trust your own experience to speak for
+itself. The white font trick doesn't
+make you look techsavvy. It makes you
+look insecure and a risk. Here's what to
+do instead. If the job calls for a
+specific skill, don't hide it, highlight
+it. Instead of burying the phrase data
+analysis 10 times in invisible text,
+write a line that shows that you've done
+it. So, for example, you could say,
+"Perform data analysis on customer
+retention leading to a 15% increase in
+engagement." That's how you show
+alignment and that's how you get
+noticed. Not by tricking a system, but
+by making your fit undeniable. Myth
+number four. ATS systems use AI to
+screen candidates. Here's the myth.
+There is a super persistent belief that
+modern ATS platforms use AI to
+automatically evaluate and reject
+candidates. That the system somehow
+scans your resume, scores it, ranks you,
+and filters you out before a human ever
+gets involved. It sounds high-tech. It
+sounds efficient. But that is not how
+hiring works. Here's why it's wrong.
+Most ATS platforms aren't powered by
+advanced AI. They're old legacy systems
+that are like 20, 30 years old, and
+they're basically patched together with
+like duct tape. They were built to
+track, not to judge. You can't plug
+machine learning into a 20-year-old
+workflow and expect it to make hiring
+decisions. And legally, companies are
+not allowed to use AI in that way. Not
+without running into some serious
+compliance issues. Right now, there are
+lawsuits against platforms that are
+suspected of doing exactly that. No.
+God, please. No. No. The risk is too
+high. The systems aren't that smart. And
+recruiters aren't outsourcing judgment
+to an algorithm. Here's what it means
+for you. If you're spending hours trying
+to beat the AI, you're solving for a
+problem that doesn't exist. There's no
+machine making hiring decisions. But
+there is a recruiter that's skimming
+your resume in real time under pressure
+and deciding in seconds whether to keep
+reading or to reject you. So here's what
+you should do instead. Write for a
+person, not a platform. That means
+structuring your resume so a human can
+immediately grasp your relevance and
+results. Lead with impact. Use language
+that's easy to skim. Make it obvious
+where you've made a difference because
+no one's scanning for perfection, but
+they are scanning for clarity. Myth
+number five, getting rejected means the
+system filtered you out. Here's the
+myth. You apply, you hear nothing, and
+you assume the ATS rejected you. That
+some hidden algorithm scanned your
+resume, decided you weren't qualified,
+and filtered you out before a human even
+looked. This is chocolate. Chocolate was
+my dad's cat and when he gets mosquito
+bites on his nose and gets a little
+inflamed and we love him. He's the best
+kitty in the world. And now back to your
+regularly scheduled program. It feels
+like there's this invisible wall between
+you and a job and that's not what's
+happening. Here's why it's wrong. This
+belief that some system filtered you out
+automatically is one of the biggest
+distractions in the entire job search
+process. And here's the truth. Even if
+that kind of filtering existed, it
+wouldn't solve your actual problem.
+Because the real issue here is volume.
+Hundreds and thousands of people apply
+to jobs every day. Many are qualified
+and a lot more are unqualified. So even
+if you optimize your resume perfectly
+for some imaginary score, you're just
+landing in a bigger pile of other people
+who did the same thing. Now, let me try
+to frame this differently. People talk
+about hacking the YouTube algorithm in
+the same way. It's as if there's some
+secret formula that you can unlock to go
+viral, but anyone who's created content
+seriously knows the truth. The algorithm
+is the audience. Same with your resume.
+There's no secret algorithm scoring your
+application. The algorithm is the
+recruiter. The algorithm is the hiring
+manager, the actual humans viewing your
+resume. And if they don't immediately
+see something that makes them stop
+scrolling, you're gone. It's also worth
+stating that most people don't know, but
+federal rules like OFCCP and EEOC
+explicitly prohibit using automated
+tools to make hiring decisions. Every
+resume is supposed to be reviewed by
+human eyes. That's not optional and it's
+required by law. So, this idea of AI or
+bots rejecting you before anyone reads
+your resume, it's not just wrong, it's
+impossible. Here's what it means for
+you. You're not getting filtered out by
+a robot. You're just getting overlooked
+by a person who has too many resumes and
+too little time. If you want to get
+picked, stop worrying about systems and
+start thinking about story selling your
+skills and when you apply to jobs.
+Timing is much more important. Here's
+what to do instead. Optimize for
+attention, not for software. Make your
+value clear in the first few lines by
+leading with results. Use formatting
+that supports quick scanning, not
+keyword stuffing. Because your resume
+isn't being judged by a system, it's
+being skimmed by a human. And humans
+don't respond to scores. They respond to
+clarity. Now, let's talk about what
+actually works. So, let's set aside the
+algorithm myths. Okay, we talked enough
+about them. Because once your resume is
+submitted, the real question isn't did
+the system understand it. It's did a
+human care enough to keep reading.
+That's the game. Not automation, not
+trickery. Clarity. Here's what
+successful candidates actually do
+consistently. One, they write for the
+reader, not the system. Recruiters skim
+fast. They're juggling multiple roles,
+hundreds of résumés, and tight
+deadlines. If your resume opens with a
+dense block of text, or generic job
+duties, you've already made their job
+harder. The resume that gets noticed are
+scannable and are instantly clear. They
+don't bury the good stuff. Instead, they
+lead with it. Here's what to do. Make
+your most recent job title immediately
+obvious. That way, you frontload your
+best accomplishments. Use a layout that
+works on any screen. Number two, they
+show business impact, not job activity.
+If your bullet points sound like a job
+description, like managed weekly
+standups or oversaw internal comms,
+you're describing your job duties. What
+recruiters want to see is momentum,
+impact. What changed because you were
+there? Here's what to do. Highlight
+outcomes with specific numbers like
+reduce churn by 14%, cut onboarding time
+by 3 weeks, increase pipeline
+conversions by 22%. These are the
+results that tell a story that moves the
+reader forward. Number three, they
+bridge the title gap before someone
+disqualifies them. Here's what most
+people miss. If your current title
+doesn't match the role you're applying
+for, even if your experience is perfect,
+you may get skipped. Not because you're
+unqualified, but because your title
+doesn't translate. Here's what to do
+instead. Add context. Use parenthesis
+and add a clarifier. Lead with a oneline
+summary that connects the dots, like
+product manager open parenthesis.
+Functionally leading road map without
+formal title close parenthesis. If they
+can't see your fit within a few seconds,
+they're not going to keep reading. So,
+the bottom line here is instead of
+asking, "Did I get enough keywords?"
+Start by asking, "Does this make sense
+to a human if they're skimming it in 5
+seconds?" Because the recruiter isn't
+your enemy. The ATS isn't your
+gatekeeper. Your real challenge is
+simple. Get seen, get read, and get
+remembered. And that starts with
+clarity. One other bonus tip that I want
+to point out to you is this. Some people
+will say, "Well, Farah, within a few
+seconds, I'm getting rejected by the
+applicant tracking system." And that
+might be true, but it's not because the
+applicant tracking system is using any
+type of automation to reject you.
+Instead, what usually is happening is
+when you apply to a job, they may ask
+you a couple of questions to determine
+whether or not you're somebody that they
+want to hire. Some of those questions
+could be, are you over 18 years of age?
+Do you require sponsorship, like visa
+sponsorship? Some companies don't
+sponsor visas, and some companies have
+an age limit of who they're able to
+hire. We call those knockout questions.
+So, knockout questions are the ones that
+can automatically reject you. But those
+questions were set up by the recruiter
+in order to filter people out at the
+very beginning. But that's not the core
+of what those applications and what
+those systems are uh are designed to do.
+So if you've been wondering why your
+applications go silent, why you're not
+hearing back, or what's wrong with your
+resume, it's not because of some hidden
+algorithm. It's because you were solving
+the wrong problem. Now that you know how
+these systems actually work, you can
+stop optimizing for filters that don't
+exist and start focusing on what does.
+writing a resume that makes your value
+from a business perspective clear to the
+people who make the decisions. Because
+when you stop guessing and start
+targeting the right things, you're not
+just tweaking your resume, you're giving
+yourself a real shot at landing
+interviews for the jobs that you
+actually want. Watch this next because
+it builds on everything that we just
+covered.
+[Music]
