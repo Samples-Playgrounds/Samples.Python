@@ -4,6 +4,8 @@
 
 readme.md
 
+*   https://docs.langchain.com/oss/python/integrations/splitters
+
 Levels of Text Splitting/Chunking:
 
 1.  Splitting/Chunking by characters or words
@@ -22,6 +24,18 @@ Levels of Text Splitting/Chunking:
 
     *   Embedding based chunking
 
+    *   *   https://medium.com/@hasanaboulhassan_83441/semantic-chunking-definitive-guide-free-python-code-included-a06044ab0543
+
+    *   https://www.reddit.com/r/LangChain/comments/1erxo60/a_guide_to_understand_semantic_splitting_for/
+
+    *   There is a SMARTER way to split your documents for GenAI apps
+    
+        *   https://youtube.com/watch?v=qvDbOYz6U24&feature=youtu.be
+
+    https://www.reddit.com/r/LangChain/comments/1gmlocz/semantic_chunking_smarter_text_division_for/
+
+    https://www.reddit.com/r/Python/comments/1ij1fk7/semanticchunker_v020_typesafe_structurepreserving/
+    
 5.  Agentic
 
     *   Agent like decision when to split.
@@ -150,7 +164,8 @@ pip install tiktoken
 
 *   https://www.geeksforgeeks.org/data-analysis/how-to-chunk-text-data-a-comparative-analysis/
 
-https://medium.com/@jagadeesan.ganesh/understanding-chunking-algorithms-and-overlapping-techniques-in-natural-language-processing-df7b2c7183b2
+*   https://medium.com/@jagadeesan.ganesh/understanding-chunking-algorithms-and-overlapping-techniques-in-natural-language-processing-df7b2c7183b2
+
 
 ## code chunking
 
