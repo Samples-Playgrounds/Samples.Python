@@ -14,3 +14,16 @@
 *   https://github.com/aeleraqi/Vid2TXT
 
 
+*   OpenAI + Whisper
+
+    *   https://www.reddit.com/r/Python/comments/xnrry3/just_created_a_simple_python_app_it_converts/
+
+        *   https://github.com/arainchik/YouWhisper
+
+    *   https://github.com/fcakyon/pywhisper
+
+        *   https://github.com/arainchik/YouWhisper/blob/main/main.py
+
+    *   https://pypi.org/project/openai-whisper/
+
+*   https://github.com/absadiki/pywhispercpp
