@@ -14,7 +14,7 @@ from time import perf_counter_ns
 
 def download_model_to_folder(
                                 repo_id: str, 
-                                local_dir:"models",
+                                local_dir:".hwaifs/models/",
                                 local_dir_use_symlinks=False,
                                 revision="main"
                             ) -> []:
@@ -25,15 +25,15 @@ def download_model_to_folder(
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    snapshot_download(
+    directory = f".hwaifs/models/{repo_id}"
+    Path(directory).mkdir(parents=True, exist_ok=True)
+
+   snapshot_download(
                         repo_id=repo_id,
-                        local_dir=local_dir,
+                        local_dir=f"{local_dir}{repo_id}",
                         local_dir_use_symlinks=local_dir_use_symlinks,
                         revision=revision
                     )
-
-    directory = f".hwaifs/models/"
-    Path(directory).mkdir(parents=True, exist_ok=True)
 
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()
@@ -76,14 +76,15 @@ def download_hf_model_to_folder(
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
+    directory = f"{source}.hwaifs/models/{repo_id}"
+    Path(directory).mkdir(parents=True, exist_ok=True)
+
     downloaded_model_path = hf_hub_download(
                                                 repo_id=repo_id,
-                                                filename=file_name,
+                                                filename=f"{file_name}",
                                                 use_auth_token=use_auth_token
                                             );
 
-    directory = f"{source}.hwaifs/models/"
-    Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file
     with open(f"{directory}/content.txt", "w") as f:
