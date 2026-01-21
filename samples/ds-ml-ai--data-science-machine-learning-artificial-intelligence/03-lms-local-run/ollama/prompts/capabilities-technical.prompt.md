@@ -1,4 +1,4 @@
-For proper functioning list of technical capabilitiesis needed:
+Provide list of your technical capabilitiesis:
 
 1.  model name
 
@@ -28,22 +28,3 @@ For proper functioning list of technical capabilitiesis needed:
 
 provide data in structured JSON format:
 
-```json
-{
-    // or "gpt-4o" for the full‑size variant
-    "model": "gpt-4o-mini",
-    "model_family": ""          
-    "max_input_tokens": 128000,
-    "max_output_tokens": 4096,
-    "supported_image_formats": 
-    [
-        "jpeg","png","gif","bmp","webp","tiff"
-    ],
-    "max_image_size_mb": 5,
-    "max_image_pixels": 4096000,
-    "max_images_per_request": 10,
-    "video_support": "frame‑by‑frame (extract & send as images)",
-    "audio_support": "text‑only (transcribe first)",
-    "video_support_temporal": "scene detectio onlyn",
-}
-```
