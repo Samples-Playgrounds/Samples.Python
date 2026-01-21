@@ -73,32 +73,51 @@ models = [
         "llama3.2-vision:latest",
 ]
 
+prompt_files = [
+        "prompts/capabilities-technical.prompt.md",
+        ""
+]
+
 from ollama import chat
 from ollama import ChatResponse
 
 
 def main():
-    for model in models:
-        print("=" * 120)
-        print(f"model <- models = {model}")
 
-        response = chat(model=model, messages=[
-            {
-                'role': 'user',
-                'content': 
-                """
-                List your technical capabilities. Specifically, tell me:
-                Your maximum context window (in tokens).
-                Do you support native video input (e.g., MP4) or just keyframe analysis?
-                What is your training data cutoff?
-                Can you process audio files directly?
-                What image file formats do you support?
-                """,
-            },
-        ])
-        print(response['message']['content'])
-        # or access fields directly from the response object
-        print(response.message.content)
+    for prompt_file in prompt_files:
+        print("=" * 120)
+        print(f"prompt_file <- prompt_files = {prompt_file}")
+        with open(prompt_file, 'r') as f:
+            prompt = f.read()
+        
+        print(prompt)
+
+        for model in models:
+            print("." * 120)
+            print(f"model <- models = {model}")
+
+            response = chat(model=model, messages=[
+                {
+                    'role': 'user',
+                    'content': prompt
+                },
+            ])
+
+            txt_response = response['message']['content']
+
+            print(txt_response)
+            # or access fields directly from the response object
+            # print(response.message.content)
+
+        txt_model = model.replace("/", "-").replace(" ", "_").replace(":", "--")
+        txt_prompt = pathlib.Path(prompt_file).stem
+        txt_timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        directory = f"{prompt_file}.hwaifs/"
+        fn = f"r01--{txt_prompt}--{txt_model}--{txt_timestamp}.md"
+
+        with open(f"{directory}/{fn}", "w") as f:
+            f.write(txt_response) 
+
 
 if __name__ == "__main__":
-    main()
+        main()
