@@ -38,3 +38,4 @@ print(downloaded_model_path)'
 
 *   https://huggingface.co/docs/huggingface_hub/en/package_reference/file_download
 
+https://stackoverflow.com/questions/76319631/how-can-i-use-load-the-downloaded-hugging-face-models-from-snapshot-download
