@@ -1,3 +1,0 @@
-,Method,Runtime,Mean,Ratio
-0,DateTimeOffsetToString,.NET 6.0,340.4 ns,1.0
-1,DateTimeOffsetToString,.NET 7.0,289.4 ns,0.85

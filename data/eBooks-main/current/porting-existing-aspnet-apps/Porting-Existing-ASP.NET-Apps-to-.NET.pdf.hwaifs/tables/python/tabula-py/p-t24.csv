@@ -1,1 +1,0 @@
-,"bool useMockData = builder.Configuration.GetValue<bool>(""UseMockData"");"

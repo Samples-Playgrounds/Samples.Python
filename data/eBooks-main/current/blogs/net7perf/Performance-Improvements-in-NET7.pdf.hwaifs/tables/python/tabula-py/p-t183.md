@@ -1,4 +1,0 @@
-|    | Method           | Mean      |   Ratio |
-|---:|:-----------------|:----------|--------:|
-|  0 | OpenCoded        | 370.47 ns |    1    |
-|  1 | IndexOfAnyExcept | 23.84 ns  |    0.06 |

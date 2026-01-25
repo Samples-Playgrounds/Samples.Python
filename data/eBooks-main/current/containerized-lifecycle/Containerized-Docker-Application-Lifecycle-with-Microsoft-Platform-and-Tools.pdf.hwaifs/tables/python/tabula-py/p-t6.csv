@@ -1,6 +1,0 @@
-,Tip
-0,"For more information about building Docker images for .NET applications, see"
-1,https://learn.microsoft.com/dotnet/core/docker/build-container.
-2,"To learn more about building your own images, go to"
-3,https://docs.docker.com/engine/tutorials/dockerimages/.
-4,

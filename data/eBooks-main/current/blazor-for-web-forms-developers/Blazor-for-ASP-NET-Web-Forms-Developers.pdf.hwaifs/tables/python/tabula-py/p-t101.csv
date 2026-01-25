@@ -1,9 +1,0 @@
-,Unnamed: 0
-0,app.UseRouting();
-1,
-2,app.UseAuthentication();
-3,app.UseAuthorization();
-4,
-5,//app.MapControllers();
-6,app.MapBlazorHub();
-7,"app.MapFallbackToPage(""/_Host"");"

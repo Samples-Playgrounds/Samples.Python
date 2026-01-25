@@ -1,5 +1,0 @@
-,Attribute,Description,Example
-0,@attributes,Renders a dictionary of attributes,"<input@attributes=""ExtraAttributes"" />"
-1,@bind,Creates a two-way data binding,"<input@bind=""username""@bind:event=""oninput"" />"
-2,@on{event},"Adds an event handler for thespecified event","<button@onclick=""IncrementCount"">Clickme!</button>"
-3,@key,"Specifies a key to be used by thediffing algorithm for preservingelements in a collection","<DetailsEditor@key=""person""Details=""person.Details"" />"

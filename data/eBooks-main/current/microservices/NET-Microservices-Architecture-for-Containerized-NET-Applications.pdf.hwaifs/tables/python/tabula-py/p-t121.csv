@@ -1,9 +1,0 @@
-,"options.UseSqlServer(builder.Configuration[""ConnectionString""],"
-0,sqlServerOptionsAction: sqlOptions =>
-1,{
-2,sqlOptions.EnableRetryOnFailure(
-3,"maxRetryCount: 10,"
-4,"maxRetryDelay: TimeSpan.FromSeconds(30),"
-5,errorNumbersToAdd: null);
-6,});
-7,});
