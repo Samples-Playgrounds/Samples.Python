@@ -93,3 +93,45 @@ pip \
         bs4 \
         duckduckgo-search
 ```
+
+
+*   https://www.reddit.com/r/LocalLLaMA/comments/1891o5m/whats_the_best_llm_for_summarization_of_long/
+
+    BERT
+
+    RoBERTa
+
+    https://huggingface.co/jondurbin
+
+        Airoboros
+
+    
+
+    extension for text-generation-webui that automatically chunks and summaries a document you paste in.
+
+There's some projects that are working on similar stuff on the backend (LangChain, LlamaIndex,txtai) and you can use LocalAI or llama-cpp-python server or whatever as an OpenAI API replacement if you've got a tool that talks to that. But I'm not aware of any good front-end interfaces. (There's paperai and Neurite and stuff, but those are relatively narrowly focused, I think?)
+
+you can use any abstractive summarization model,
+
+i use BERT it does what i need, my workflow is:
+
+get html content from url (request + bs4)
+
+get main content (newspaper + readability)
+
+convert to text (lxml)
+
+clean the text (unicodedata)
+
+split to chunks
+
+summarize using any abstractive model in batches
+
+join summarized chunks
+
+YI-34B with 200k of context.
+
+https://huggingface.co/brucethemoose/CaPlatTessDolXaBoros-Yi-34B-200K-DARE-Ties-HighDensity
+https://huggingface.co/brucethemoose/CapyTessBorosYi-34B-200K-DARE-Ties
+https://huggingface.co/dphn/dolphin-2_2-yi-34b
+
