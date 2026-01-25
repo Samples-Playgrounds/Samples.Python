@@ -3,15 +3,15 @@
 readme.md
 
 ```shell
-python3.13 -m venv .venv
+python -m venv .venv
 source .venv/bin/activate
-pip3.13 install ollama
-pip3.13 freeze > requirements.txt
+pip install ollama
+pip freeze > requirements.txt
 ```
 
 ```bash
-pip3.13 install -r requirements.txt
-python3.13 main.py
+pip install -r requirements.txt
+python main.py
 ```
 
 *   https://pypi.org/project/googletrans/
