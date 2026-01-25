@@ -54,10 +54,10 @@ import api_huggingface_hub_model_snapshot_download as api
 def main():
    for model in models:
       print(f"huggingface_hub <- downloadin = {model}")
-      result_txt = api.download_model_to_folder(
-                                                    model,
-                                                    local_dir=".hwaifs/models/"
-                                                )
+      result_txt = api.download_model_repo_to_folder_with_snapshot_download(
+                                                                            model,
+                                                                            local_dir=".hwaifs/models/"
+                                                                        )
 
 if __name__ == '__main__':
     main()
