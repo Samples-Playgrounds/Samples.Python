@@ -6,7 +6,11 @@ response = ollama.chat(
         {
             "role": "user",
             "content": "Describe the image",
-            "images": ["./cat.jpeg"]}
+            "images": 
+                    [
+                        "./cat.jpeg"
+                    ]
+        }
     ],
 )
 
