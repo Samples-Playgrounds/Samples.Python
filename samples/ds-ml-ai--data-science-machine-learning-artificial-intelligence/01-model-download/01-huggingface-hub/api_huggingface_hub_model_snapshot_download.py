@@ -12,12 +12,21 @@ import time
 from time import perf_counter
 from time import perf_counter_ns
 
-def download_model_to_folder(
-                                repo_id: str, 
-                                local_dir:".hwaifs/models/",
-                                local_dir_use_symlinks=False,
-                                revision="main"
-                            ) -> []:
+def download_hf_model_repo_to_folder_with_snapshot_download(
+                                                                repo_id: str,
+                                                                local_dir:".hwaifs/models/",
+                                                                local_dir_use_symlinks=False,
+                                                                revision="main"
+                                                            ) -> []:
+    """
+    https://huggingface.co/docs/huggingface_hub/en/guides/download#download-an-entire-repository
+
+    https://huggingface.co/docs/huggingface_hub/main/en/package_reference/file_download#huggingface_hub.snapshot_download
+
+    '$HOME/.cache/huggingface/hub/models--{repo_owner}--{repo_name}/snapshots/'
+
+    """
+
 
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
@@ -64,12 +73,15 @@ def download_model_to_folder(
     return
 
 
-def download_hf_model_to_folder(
-                                    repo_id: str, 
+def download_hf_file_from_repo_to_folder(
+                                    repo_id: str,
                                     file_name: str,
                                     use_auth_token: bool
                                 ) -> []:
 
+    """
+    https://huggingface.co/docs/huggingface_hub/main/en/package_reference/file_download#download-a-single-file
+    """
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
     time_start_2 = perf_counter()
@@ -88,7 +100,7 @@ def download_hf_model_to_folder(
 
     # save to file
     with open(f"{directory}/content.txt", "w") as f:
-        f.write(result_txt) 
+        f.write(result_txt)
 
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()
