@@ -19,7 +19,7 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    directory = f"{source}.hwaifs/text/python/pymupdf4llm_c/"
+    directory = f"{source}.hwaifs/text/py/pymupdf4llm_c/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     result_txt = ""

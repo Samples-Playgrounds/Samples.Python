@@ -21,7 +21,7 @@ def extract_text_to_file_from_any_document (source: str) -> str:
     md = MarkItDown()
     result_md = md.convert(source).text_content
 
-    directory = f"{source}.hwaifs/text/python/markitdown/"
+    directory = f"{source}.hwaifs/text/py/markitdown/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file

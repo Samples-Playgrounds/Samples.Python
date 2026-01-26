@@ -63,7 +63,7 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
     for page in doc:
         result_txt = result_txt + page.get_text("text")
 
-    directory = f"{source}.hwaifs/text/python/PyMuPDF_fitz/"
+    directory = f"{source}.hwaifs/text/py/PyMuPDF_fitz/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file

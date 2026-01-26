@@ -26,7 +26,7 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
     for pageNum,imgBlob in enumerate(pages):
         result_txt = result_txt + pytesseract.image_to_string(imgBlob,lang='eng')
 
-    directory = f"{source}.hwaifs/text/python/pytesseract/"
+    directory = f"{source}.hwaifs/text/py/pytesseract/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file

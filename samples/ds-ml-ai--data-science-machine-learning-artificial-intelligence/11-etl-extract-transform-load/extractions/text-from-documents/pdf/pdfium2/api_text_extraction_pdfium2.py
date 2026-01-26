@@ -30,7 +30,7 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
         result_txt += text_all
 
 
-    directory = f"{source}.hwaifs/text/python/pypdfium2/"
+    directory = f"{source}.hwaifs/text/py/pypdfium2/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file

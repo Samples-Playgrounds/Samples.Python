@@ -28,7 +28,7 @@ def extract_text_to_file_from_any_document (source: str) -> str:
         text = page.text
         result_txt += text
             
-    directory = f"{source}.hwaifs/text/python/deepdoctection-pytorch/"
+    directory = f"{source}.hwaifs/text/py/deepdoctection-pytorch/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file

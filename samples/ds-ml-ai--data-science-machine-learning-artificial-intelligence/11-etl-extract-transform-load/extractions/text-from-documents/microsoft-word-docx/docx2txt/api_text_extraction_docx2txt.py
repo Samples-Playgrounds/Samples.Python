@@ -22,7 +22,7 @@ def extract_text_to_file_from_docx_document (source: str) -> str:
     result_txt = docx2txt.process(source)
 
     
-    directory = f"{source}.hwaifs/text/python/docx2txt/"
+    directory = f"{source}.hwaifs/text/py/docx2txt/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file

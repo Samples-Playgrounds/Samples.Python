@@ -25,7 +25,7 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
 
     result_txt = "\n\n".join([str(el) for el in elements])
 
-    directory = f"{source}.hwaifs/text/python/unstructured/"
+    directory = f"{source}.hwaifs/text/py/unstructured/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file

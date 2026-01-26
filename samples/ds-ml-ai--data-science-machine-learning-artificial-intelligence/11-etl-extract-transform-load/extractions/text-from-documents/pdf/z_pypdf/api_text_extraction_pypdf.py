@@ -16,7 +16,7 @@ def extract_text_to_file_from_any_document (source: str) -> str:
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    directory = f"{source}.hwaifs/text/python/docling/"
+    directory = f"{source}.hwaifs/text/py/docling/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file

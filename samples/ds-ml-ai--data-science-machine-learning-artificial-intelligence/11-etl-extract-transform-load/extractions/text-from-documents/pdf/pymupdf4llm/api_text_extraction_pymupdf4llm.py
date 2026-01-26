@@ -21,7 +21,7 @@ def extract_markdown_to_file_from_pdf_document (source: str) -> str:
 
     result_md = pymupdf4llm.to_markdown(source)
 
-    directory = f"{source}.hwaifs/text/python/pymupdf4llm/"
+    directory = f"{source}.hwaifs/text/py/pymupdf4llm/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file
@@ -66,7 +66,7 @@ def extract_markdown_to_file_from_office_doc_docx_document (source: str) -> str:
 
     result_md = pymupdf4llm.to_markdown(source)
 
-    directory = f"{source}.hwaifs/text/python/pymupdf4llm/"
+    directory = f"{source}.hwaifs/text/py/pymupdf4llm/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file

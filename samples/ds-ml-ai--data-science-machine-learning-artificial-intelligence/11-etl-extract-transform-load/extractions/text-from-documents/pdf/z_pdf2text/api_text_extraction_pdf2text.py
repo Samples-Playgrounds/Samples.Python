@@ -35,7 +35,7 @@ def extract_text_to_file_from_any_document (source: str) -> str:
 
     result_txt = "\n\n".join(pdf) 
 
-    directory = f"{source}.hwaifs/text/python/pdftotext/"
+    directory = f"{source}.hwaifs/text/py/pdftotext/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file

@@ -1,6 +1,7 @@
 PyMuPDF
 PyPDF2
 docling
+kreuzberg
 list.md
 marker
 markitdown

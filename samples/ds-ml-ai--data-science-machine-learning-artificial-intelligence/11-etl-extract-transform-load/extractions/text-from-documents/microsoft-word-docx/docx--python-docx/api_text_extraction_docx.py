@@ -26,7 +26,7 @@ def extract_text_to_file_from_docx_document (source: str) -> str:
     
     result_txt = '\n'.join(fullText)
 
-    directory = f"{source}.hwaifs/text/python/docx/"
+    directory = f"{source}.hwaifs/text/py/docx/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file

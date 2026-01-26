@@ -31,7 +31,7 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
     for page in reader.pages:
         result_txt = result_txt + page.extract_text()
 
-    directory = f"{source}.hwaifs/text/python/PyPDF2/"
+    directory = f"{source}.hwaifs/text/py/PyPDF2/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file

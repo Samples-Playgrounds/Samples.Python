@@ -24,7 +24,7 @@ def extract_markdown_to_file_from_pdf_document (source: str) -> str:
     result_md = result.extract_markdown()
     print(result_md)
 
-    directory = f"{source}.hwaifs/text/python/docstrange/"
+    directory = f"{source}.hwaifs/text/py/docstrange/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file

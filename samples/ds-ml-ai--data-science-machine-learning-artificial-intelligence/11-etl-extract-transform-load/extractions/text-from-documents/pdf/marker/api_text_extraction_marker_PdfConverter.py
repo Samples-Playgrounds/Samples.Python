@@ -27,7 +27,7 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
     rendered = converter(source)
     result_md, _, images = text_from_rendered(rendered)
 
-    directory = f"{source}.hwaifs/text/python/marker/"
+    directory = f"{source}.hwaifs/text/py/marker/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file

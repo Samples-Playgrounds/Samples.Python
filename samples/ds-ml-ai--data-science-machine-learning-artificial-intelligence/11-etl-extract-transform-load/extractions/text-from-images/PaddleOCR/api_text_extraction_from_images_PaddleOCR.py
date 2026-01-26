@@ -12,6 +12,12 @@ from time import perf_counter_ns
 
 #@timer()
 def extract_text_to_file_from_image (source: str) -> str:
+    """
+    https://www.paddleocr.ai/main/en/index.html
+    
+    Extract text from image using PaddleOCR and save results to file.
+    """
+
 
     # Initialize PaddleOCR instance
     ocr = PaddleOCR(

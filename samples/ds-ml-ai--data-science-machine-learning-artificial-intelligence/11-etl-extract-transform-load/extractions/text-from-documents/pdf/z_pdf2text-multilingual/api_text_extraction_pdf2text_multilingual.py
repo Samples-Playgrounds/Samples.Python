@@ -19,7 +19,7 @@ def extract_text_to_file_from_any_document (source: str) -> str:
     with open(source, 'rb') as file:
         result_txt = pdf2text(file, word_line_break=True, sentence_line_break=False)
 
-    directory = f"{source}.hwaifs/text/python/pdf2text-multilingual/"
+    directory = f"{source}.hwaifs/text/py/pdf2text-multilingual/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file

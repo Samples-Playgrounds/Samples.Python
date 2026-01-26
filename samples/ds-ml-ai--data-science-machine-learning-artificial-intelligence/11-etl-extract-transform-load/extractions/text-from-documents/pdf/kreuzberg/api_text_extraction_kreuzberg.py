@@ -22,7 +22,7 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
     result = extract_file_sync(source)
     result_txt = result.content
 
-    directory = f"{source}.hwaifs/text/python/kreuzberg/"
+    directory = f"{source}.hwaifs/text/py/kreuzberg/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file

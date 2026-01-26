@@ -31,7 +31,7 @@ def extract_text_to_file_from_any_document (source: str) -> str:
     print(result)
     print(metadata)
 
-    directory = f"{source}.hwaifs/text/python/extractous/"
+    directory = f"{source}.hwaifs/text/py/extractous/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     reader, metadata = extractor.extract_file(source)

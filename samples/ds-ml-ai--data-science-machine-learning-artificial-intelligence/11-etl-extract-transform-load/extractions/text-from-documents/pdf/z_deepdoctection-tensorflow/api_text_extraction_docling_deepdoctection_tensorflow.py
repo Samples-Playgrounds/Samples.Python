@@ -28,7 +28,7 @@ def extract_text_to_file_from_any_document (source: str) -> str:
         text = page.text
         result_txt += text
             
-    directory = f"{source}.hwaifs/text/python/deepdoctection-tensorflow/"
+    directory = f"{source}.hwaifs/text/py/deepdoctection-tensorflow/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file

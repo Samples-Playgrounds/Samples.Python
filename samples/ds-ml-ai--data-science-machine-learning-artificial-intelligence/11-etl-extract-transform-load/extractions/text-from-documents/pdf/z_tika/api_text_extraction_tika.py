@@ -17,7 +17,7 @@ def extract_text_to_file_from_any_document (source: str) -> str:
     #---------------------------------------------------------------------------
 
 
-    directory = f"{source}.hwaifs/text/python/tika/"
+    directory = f"{source}.hwaifs/text/py/tika/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file
