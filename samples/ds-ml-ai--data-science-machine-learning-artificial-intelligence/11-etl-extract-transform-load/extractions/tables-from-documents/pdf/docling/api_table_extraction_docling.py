@@ -22,7 +22,7 @@ def extract_tables_to_files_from_pdf_document (source: str) -> str:
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    directory = f"{source}.hwaifs/tables/python/docling/"
+    directory = f"{source}.hwaifs/tables/py/docling/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     doc_converter = DocumentConverter()

@@ -21,7 +21,7 @@ def extract_tables_to_files_from_pdf_document (source: str) -> str:
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    directory = f"{source}.hwaifs/tables/python/tabula-py/"
+    directory = f"{source}.hwaifs/tables/py/tabula-py/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     dfs = tabula.read_pdf(source, pages='all')

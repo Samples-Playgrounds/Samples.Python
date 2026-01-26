@@ -21,7 +21,7 @@ def extract_tables_to_files_from_pdf_document (source: str) -> str:
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    directory = f"{source}.hwaifs/tables/python/camelot/"
+    directory = f"{source}.hwaifs/tables/py/camelot/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     tables = camelot.read_pdf(source)
