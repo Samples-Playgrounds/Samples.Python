@@ -1,13 +1,8 @@
-|    |   1. | Zemlja \nŠvicarska   |    |    |    |   % | za sport u \n3,47   | BDP-u   |
-|---:|-----:|:---------------------|:---|:---|:---|----:|:--------------------|:--------|
-|  0 |    2 | Portugal             |    |    |    | nan | 1,77                | nan     |
-|  1 |    3 | Velika Britanija     |    |    |    | nan | 1,49                | nan     |
-|  2 |    4 | Grčka                |    |    |    | nan | 1,28                | nan     |
-|  3 |    5 | Finska               |    |    |    | nan | 1,13                | nan     |
-|  4 |    6 | Francuska            |    |    |    | nan | 1,10                | nan     |
-|  5 |    7 | Italija              |    |    |    | nan | 1,04                | nan     |
-|  6 |    8 | Švedska              |    |    |    | nan | 0,80                | nan     |
-|  7 |    9 | Mađarska             |    |    |    | nan | 0,60                | nan     |
-|  8 |   10 | Slovenija            |    |    |    | nan | 0,60                | nan     |
-|  9 |   11 | Danska               |    |    |    | nan | 0,56                | nan     |
-| 10 |   12 | Hrvatska             |    |    |    | nan | nan                 | 0,30    |
+|    | Ukupan državni proračun          | 49.679.912.000   |       | 70.217.921.000   |       |
+|---:|:---------------------------------|:-----------------|:------|:-----------------|:------|
+|  0 | Hrvatski olimpijski odbor        | 36.000.000       | 0,072 | 30.000.000       | 0,043 |
+|  1 | Hrvatski sportski savez invalida | 2.000.000        | 0,004 | 2.000.000        | 0,003 |
+|  2 | Školski sport                    | 7.000.000        | 0,014 | 7.000.000        | 0,010 |
+|  3 | Međunarodna sportska suradnja    | 700.000          | 0,001 | 1.027.181        | 0,001 |
+|  4 | Državna nagrada «F.Bučar»        | 300.000          | 0,001 | 300.000          | 0,000 |
+|  5 | UKUPNO ZA SPORT,                 | 46.000.000       | 0,093 | 40.327.180       | 0,057 |

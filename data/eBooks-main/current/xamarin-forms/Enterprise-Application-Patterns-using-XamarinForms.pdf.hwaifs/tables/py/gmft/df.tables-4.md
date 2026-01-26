@@ -2,8 +2,8 @@
 |---:|:----------------------|:---------------------------------------------------------------------------------------------------------------------------------|
 |  0 | Animations Behaviors  | Contains classes that enable animations to be consumed in XAML. Contains behaviors that view classes.                            |
 |  1 | Controls              | are exposed to Contains custom controls used the                                                                                 |
-|  2 | nan                   | by app. Contains value that                                                                                                      |
-|  3 | Converters Effects    | converters apply custom logic to a binding. Contains the EntryLineColorEffect class, which is used to change the border          |
+|  2 | nan                   | by app. value that                                                                                                               |
+|  3 | Converters Effects    | Contains converters apply custom logic to a binding. Contains the EntryLineColorEffect class, which is used to change the border |
 |  4 | nan                   | color of specific Entry controls.                                                                                                |
 |  5 | Exceptions Extensions | Contains the custom ServiceAuthenticationException. Contains extension methods for the VisualElement and IEnumerable<T> classes. |
 |  6 | Helpers               | Contains helper classes for the app.                                                                                             |

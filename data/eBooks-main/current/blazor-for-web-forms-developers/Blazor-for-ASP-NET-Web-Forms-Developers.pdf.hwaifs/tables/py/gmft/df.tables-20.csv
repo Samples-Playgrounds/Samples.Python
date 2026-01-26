@@ -1,3 +1,1 @@
-,dotnet ef database update
-0,"If you would rather run a script to apply the new schema to an existing database, you can script migrations from the command-line. Run this command to generate the script:"
-1,dotnet ef migrations script -o auth.sql
+,,,,,,,,,,,,,,

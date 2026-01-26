@@ -3,28 +3,28 @@
     <tr style="text-align: right;">
       <th></th>
       <th></th>
-      <th>add M00_L04:</th>
-      <th>xor jg M00_L03:</th>
-      <th>inc</th>
-      <th>add add inc jg M00_L02:</th>
+      <th>M00_L04:</th>
+      <th>jg M00_L03:</th>
       <th></th>
-      <th>M00_L00: add inc</th>
+      <th>jg M00_L02:</th>
       <th></th>
-      <th>xor</th>
+      <th>M00_L00:</th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
       <td>call</td>
-      <td>mov pop pop pop pop ret</td>
-      <td>mov call cmp</td>
+      <td>mov add pop pop pop pop ret</td>
+      <td>mov xor call cmp</td>
+      <td>inc</td>
+      <td>mov sub cmp jae mov sub cmp jae mov imul mov add add inc mov mov call cmp</td>
       <td>NaN</td>
-      <td>mov sub cmp jae mov sub cmp jae mov imul mov mov mov call cmp</td>
-      <td>NaN</td>
-      <td>jle mov mov shr cmp jbe lea movsxd mov mov mov call cmp jle</td>
+      <td>jle mov mov add shr cmp jbe lea inc movsxd mov mov mov call cmp jle</td>
       <td>cmp</td>
-      <td>cmp call mov mov call</td>
+      <td>cmp call mov mov xor call</td>
     </tr>
     <tr>
       <th>1</th>

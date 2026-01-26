@@ -14,8 +14,8 @@
     </tr>
     <tr>
       <th>1</th>
-      <td>resource "azurerm_resource_group"</td>
-      <td>"testrg" {</td>
+      <td>resource "azurerm_resource_group" "testrg"</td>
+      <td>{</td>
     </tr>
     <tr>
       <th>2</th>
@@ -24,13 +24,13 @@
     </tr>
     <tr>
       <th>3</th>
-      <td>resource "azurerm_storage_account"</td>
-      <td>"testsa" {</td>
+      <td>NaN</td>
+      <td>"testsa"</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>name = resource_group_name = location = account_tier = account_replication_type =</td>
-      <td>"${var.storageAccountName}" "${azurerm_resource_group.testrg.name}" "${var.region}" "${var.tier}" "${var.replicationType}"</td>
+      <td>resource "azurerm_storage_account" name = resource_group_name = location = account_tier = "${var.tier}" account_replication_type =</td>
+      <td>{ "${var.storageAccountName}" "${azurerm_resource_group.testrg.name}" "${var.region}" "${var.replicationType}"</td>
     </tr>
   </tbody>
 </table>

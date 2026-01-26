@@ -1,12 +1,4 @@
-|    |                                                                                                                                 |                    |
-|---:|:--------------------------------------------------------------------------------------------------------------------------------|:-------------------|
-|  0 | @inject IAuthorizationService AuthorizationService                                                                              | nan                |
-|  1 | <button @onclick="@DoSomething">Do something important</button>                                                                 | nan                |
-|  2 | @code {                                                                                                                         | nan                |
-|  3 | [CascadingParameter] private Task<AuthenticationState> authenticationStateTask { get; set; } private async Task DoSomething() { | nan                |
-|  4 | var user = (await authenticationStateTask).User;                                                                                | nan                |
-|  5 | if (user.Identity.IsAuthenticated)                                                                                              | nan                |
-|  6 | { // Perform an action only available to authenticated (signed-in) } if (user.IsInRole("admin"))                                | users.             |
-|  7 | { // Perform an action only available to users in the 'admin' }                                                                 | role.              |
-|  8 | if ((await AuthorizationService.AuthorizeAsync(user, .Succeeded)                                                                | "content-editor")) |
-|  9 | { // Perform an action only available to users satisfying the // 'content-editor' policy.                                       | nan                |
+|    | dotnet ef database update                                                                                                                                                   |
+|---:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | If you would rather run a script to apply the new schema to an existing database, you can script migrations from the command-line. Run this command to generate the script: |
+|  1 | dotnet ef migrations script -o auth.sql                                                                                                                                     |
