@@ -20,7 +20,7 @@ def extract_images_from_pdf_to_files (source: str) -> str:
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    directory = f"{source}.hwaifs/images/python/PyMuPDF-fitz/"
+    directory = f"{source}.hwaifs/images/py/PyMuPDF-fitz/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     with mu.open(source) as pdf:

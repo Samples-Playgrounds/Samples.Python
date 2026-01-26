@@ -22,7 +22,7 @@ def extract_images_from_pdf_to_files (source: str) -> str:
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    directory = f"{source}.hwaifs/images/python/minecart/"
+    directory = f"{source}.hwaifs/images/py/minecart/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     pdffile = open(source, 'rb')

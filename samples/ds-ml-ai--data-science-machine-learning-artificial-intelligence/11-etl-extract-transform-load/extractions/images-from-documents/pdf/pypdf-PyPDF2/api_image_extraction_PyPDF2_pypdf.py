@@ -20,7 +20,7 @@ def extract_images_from_pdf_to_files (source: str) -> str:
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    directory = f"{source}.hwaifs/images/python/PyPDF2-pypdf/"
+    directory = f"{source}.hwaifs/images/py/PyPDF2-pypdf/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     reader = PdfReader(source)
