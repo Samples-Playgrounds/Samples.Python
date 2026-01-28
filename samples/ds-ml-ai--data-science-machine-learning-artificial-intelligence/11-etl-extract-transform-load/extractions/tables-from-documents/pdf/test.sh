@@ -1,19 +1,19 @@
 #!/bin/bash
 
-sys_term_clean_screen_and_buffer
+#sys_term_clean_screen_and_buffer
 
-ls -d1 * > list.md
+ls -d1 */ > list.md
 
 EXTRACTORS=\
 "
-gmft
-tabula-py
-docling
 camelot
-pdfplumber
-pdftables
+docling
+gmft
 marker
+pdfplumber
+tabula-py
 # TODO
+# z_pdftables
 "
 
 
