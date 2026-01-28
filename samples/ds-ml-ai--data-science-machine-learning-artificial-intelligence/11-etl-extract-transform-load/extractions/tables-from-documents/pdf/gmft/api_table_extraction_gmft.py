@@ -74,7 +74,7 @@ def extract_tables_to_files_from_pdf_document(source: str): # produces list[Crop
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
-    with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
+    with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
         f.write(json.dumps(times, indent=4))
     #---------------------------------------------------------------------------
 

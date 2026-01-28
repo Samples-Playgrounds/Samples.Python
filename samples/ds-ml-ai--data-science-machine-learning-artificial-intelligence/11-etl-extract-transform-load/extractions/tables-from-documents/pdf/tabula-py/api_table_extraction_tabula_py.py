@@ -24,7 +24,19 @@ def extract_tables_to_files_from_pdf_document (source: str) -> str:
     directory = f"{source}.hwaifs/tables/py/tabula-py/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
-    dfs = tabula.read_pdf(source, pages='all')
+    try:
+        dfs = tabula.read_pdf(source, pages='all')
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables from PDF document source = {source} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
 
     # Iterate through each table found in the PDF
     for i, df in enumerate(dfs):
@@ -75,7 +87,7 @@ def extract_tables_to_files_from_pdf_document (source: str) -> str:
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
-    with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
+    with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
         f.write(json.dumps(times, indent=4))
     #---------------------------------------------------------------------------
 
