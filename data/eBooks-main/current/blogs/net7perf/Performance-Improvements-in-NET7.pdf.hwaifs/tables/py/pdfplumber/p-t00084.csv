@@ -1,0 +1,4 @@
+,0,1,2,3
+0,Method,Runtime,Mean,Ratio
+1,MethodInfoInvoke,.NET 6.0,43.846 ns,1.00
+2,MethodInfoInvoke,.NET 7.0,8.078 ns,0.18

@@ -1,0 +1,19 @@
+,"[Route(""items"")]"
+0,[HttpPost]
+1,public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem product)
+2,{
+3,var item = await _context.CatalogItems.SingleOrDefaultAsync(
+4,i => i.Id == product.Id);
+5,// ...
+6,if (item.Price != product.Price)
+7,{
+8,var oldPrice = item.Price;
+9,item.Price = product.Price;
+10,_context.CatalogItems.Update(item);
+11,"var @event = new ProductPriceChangedIntegrationEvent(item.Id,"
+12,"item.Price,"
+13,oldPrice);
+14,// Commit changes in original transaction
+15,await _context.SaveChangesAsync();
+16,// Publish integration event to the event bus
+17,// (RabbitMQ or a service bus underneath)

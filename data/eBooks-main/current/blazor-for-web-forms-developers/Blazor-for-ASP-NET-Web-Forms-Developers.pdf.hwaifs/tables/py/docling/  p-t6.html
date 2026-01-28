@@ -1,0 +1,48 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Directive</th>
+      <th>Description</th>
+      <th>Example</th>
+      <th>Web Forms equivalent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>@attribute</td>
+      <td>Adds a class-level attribute to the component</td>
+      <td>@attribute [Authorize]</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>@code</td>
+      <td>Adds class members to the component</td>
+      <td>@code { ... }</td>
+      <td>&lt;script runat="server"&gt;...&lt;/script&gt;</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>@implements</td>
+      <td>Implements the specified interface</td>
+      <td>@impleme nts IDisposable</td>
+      <td>Use code-behind</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>@inherits</td>
+      <td>Inherits from the specified base class</td>
+      <td>@inherits MyCompon entBase</td>
+      <td>&lt;%@ Control Inherits="MyUserControlBase" %&gt;</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>@inject</td>
+      <td>Injects a service into the component</td>
+      <td>@inject IJSRuntime JS</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,8 @@
+,public class MyMicroserviceController : Controller
+0,{
+1,"public MyMicroserviceController(IMediator mediator,"
+2,IMyMicroserviceQueries microserviceQueries)
+3,{
+4,// ...
+5,}
+6,}

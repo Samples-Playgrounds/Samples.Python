@@ -1,0 +1,13 @@
+,public static IHostBuilder CreateHostBuilder(string[] args) =>
+0,Host.CreateDefaultBuilder(args)
+1,.ConfigureWebHostDefaults(webBuilder =>
+2,{
+3,webBuilder.ConfigureKestrel(kestrel =>
+4,{
+5,kestrel.ConfigureHttpsDefaults(https =>
+6,{
+7,"https.ServerCertificate = new X509Certificate2(""mycert.pfx"","
+8,"""password"");"
+9,});
+10,});
+11,});

@@ -1,0 +1,2 @@
+,Note
+0,"To finish configuring CORS, you must also call app.UseCors() after building the application."

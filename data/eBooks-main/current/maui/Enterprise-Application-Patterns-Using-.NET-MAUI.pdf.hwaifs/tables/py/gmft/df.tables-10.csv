@@ -1,0 +1,3 @@
+,Concept,Description
+0,Container OS Image,"Containers are deployed from images. The container operating system image is the first layer in potentially many image layers that make up a container. A container operating system is immutable, and can’t be modified."
+1,Container Repository,"Each time a container image is created, the image and its dependencies are stored in a local repository. These images can be reused many times on the container host. The container images can also be stored in a public or private registry, such as Docker Hub, so that they can be used across different container hosts."

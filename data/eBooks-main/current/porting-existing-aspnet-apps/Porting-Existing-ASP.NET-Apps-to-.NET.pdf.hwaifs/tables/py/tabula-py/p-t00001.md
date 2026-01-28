@@ -1,0 +1,27 @@
+|    | var builder = WebApplication.CreateBuilder(args);                                |
+|---:|:---------------------------------------------------------------------------------|
+|  0 |                                                                                  |
+|  1 | // Add services to the container.                                                |
+|  2 | builder.Services.AddRazorPages();                                                |
+|  3 |                                                                                  |
+|  4 | var app = builder.Build();                                                       |
+|  5 |                                                                                  |
+|  6 | // Configure the HTTP request pipeline.                                          |
+|  7 | if (!app.Environment.IsDevelopment())                                            |
+|  8 | {                                                                                |
+|  9 | app.UseExceptionHandler("/Error");                                               |
+| 10 | // The default HSTS value is 30 days. You may want to change this for production |
+| 11 | scenarios, see https://aka.ms/aspnetcore-hsts.                                   |
+| 12 | app.UseHsts();                                                                   |
+| 13 | }                                                                                |
+| 14 |                                                                                  |
+| 15 | app.UseHttpsRedirection();                                                       |
+| 16 | app.UseStaticFiles();                                                            |
+| 17 |                                                                                  |
+| 18 | app.UseRouting();                                                                |
+| 19 |                                                                                  |
+| 20 | app.UseAuthorization();                                                          |
+| 21 |                                                                                  |
+| 22 | app.MapRazorPages();                                                             |
+| 23 |                                                                                  |
+| 24 | app.Run();                                                                       |

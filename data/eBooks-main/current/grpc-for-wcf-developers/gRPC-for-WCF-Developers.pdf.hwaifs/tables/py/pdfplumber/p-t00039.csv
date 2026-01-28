@@ -1,0 +1,36 @@
+,0
+0,public class Chat : IAsyncDisposable
+1,{
+2,private readonly Chatter.ChatterClient _client;
+3,"private readonly AsyncDuplexStreamingCall<MessageRequest, MessageResponse> _stream;"
+4,private readonly CancellationTokenSource _cancellationTokenSource;
+5,private readonly Task _readTask;
+6,
+7,public Chat(Chatter.ChatterClient client)
+8,{
+9,_client = client;
+10,_stream = _client.Connect();
+11,_cancellationTokenSource = new CancellationTokenSource();
+12,_readTask = ReadAsync(_cancellationTokenSource.Token);
+13,}
+14,
+15,public async Task SendAsync(string message)
+16,{
+17,await _stream.RequestStream.WriteAsync(new MessageRequest {Text = message});
+18,}
+19,
+20,private async Task ReadAsync(CancellationToken token)
+21,{
+22,while (await _stream.ResponseStream.MoveNext(token))
+23,{
+24,Console.WriteLine(_stream.ResponseStream.Current.Text);
+25,}
+26,}
+27,
+28,public async ValueTask DisposeAsync()
+29,{
+30,await _stream.RequestStream.CompleteAsync();
+31,await _readTask;
+32,_stream.Dispose();
+33,}
+34,}

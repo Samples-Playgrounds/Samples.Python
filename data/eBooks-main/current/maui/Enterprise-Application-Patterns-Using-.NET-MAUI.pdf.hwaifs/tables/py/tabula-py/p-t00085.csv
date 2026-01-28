@@ -1,0 +1,4 @@
+,Note
+0,The eShop also allows a mock sign-out when the app is configured to use mock services in the
+1,"SettingsView. In this mode, the app doesn’t communicate with IdentityServer, and instead clears any"
+2,stored tokens from application settings.

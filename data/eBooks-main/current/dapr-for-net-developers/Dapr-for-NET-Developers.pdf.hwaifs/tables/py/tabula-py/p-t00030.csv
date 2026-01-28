@@ -1,0 +1,3 @@
+,qttTrafficControlService,ITrafficControlService
+0,SendVehicleEntryAsync,SendVehicleExitAsync
+1,trafficcontrol/entrycam,trafficcontrol/exitcam

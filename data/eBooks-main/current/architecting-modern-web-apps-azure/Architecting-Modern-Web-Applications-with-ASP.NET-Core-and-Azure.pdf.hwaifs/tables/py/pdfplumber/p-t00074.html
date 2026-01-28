@@ -1,0 +1,110 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>public class Program</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>private static Connection _connection;</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>public static void Main(string[] args)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>StartConnectionAsync();</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>_connection.On("receiveMessage", (arguments) =&gt;</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Console.WriteLine($"{arguments[0]} said: {arguments[1]}");</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>});</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Console.ReadLine();</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>StopConnectionAsync();</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>public static async Task StartConnectionAsync()</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>_connection = new Connection();</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>await _connection.StartConnectionAsync("ws://localhost:65110/chat");</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>public static async Task StopConnectionAsync()</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>await _connection.StopConnectionAsync();</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

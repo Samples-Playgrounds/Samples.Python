@@ -1,0 +1,194 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>public class StockTickerService : Protos.SimpleStockTicker.SimpleStockTickerBase</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>private readonly IStockPriceSubscriberFactory _subscriberFactory;</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>public StockTickerService(IStockPriceSubscriberFactory subscriberFactory)</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>_subscriberFactory = subscriberFactory;</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>public override async Task Subscribe(SubscribeRequest request,</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>IServerStreamWriter&lt;StockTickerUpdate&gt; responseStream, ServerCallContext context)</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>var subscriber = _subscriberFactory.GetSubscriber(request.Symbols.ToArray());</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>subscriber.Update += async (sender, args) =&gt;</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>await WriteUpdateAsync(responseStream, args.Symbol, args.Price);</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>await AwaitCancellation(context.CancellationToken);</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>private async Task WriteUpdateAsync(IServerStreamWriter&lt;StockTickerUpdate&gt; stream,</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>string symbol, decimal price)</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>try</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>await stream.WriteAsync(new StockTickerUpdate</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Symbol = symbol,</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>PriceCents = (int)(price * 100),</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Time = Timestamp.FromDateTimeOffset(DateTimeOffset.UtcNow)</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>});</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>catch (Exception e)</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>// Handle any errors caused by broken connection, etc.</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>_logger.LogError($"Failed to write message: {e.Message}");</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>private static Task AwaitCancellation(CancellationToken token)</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>var completion = new TaskCompletionSource&lt;object&gt;();</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>token.Register(() =&gt; completion.SetResult(null));</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>return completion.Task;</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

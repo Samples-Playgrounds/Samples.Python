@@ -1,0 +1,12 @@
+{
+    "function_method_name": "extract_tables_to_files_from_pdf_document",
+    "time_start_1": 1769633204.656254,
+    "time_end_1": 1769633204.740693,
+    "time_total_1": 0.08443903923034668,
+    "time_start_2": 3232636.559959708,
+    "time_end_2": 3232636.644399208,
+    "time_total_2": 0.08443950023502111,
+    "time_start_3": 3232636559959750,
+    "time_end_3": 3232636644399500,
+    "time_total_3": 0.08443975
+}

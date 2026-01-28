@@ -1,0 +1,20 @@
+,builder.Services.AddDefaultIdentity<IdentityUser>(options =>
+0,options.SignIn.RequireConfirmedAccount = true)
+1,.AddEntityFrameworkStores<ApplicationDbContext>();
+2,
+3,builder.Services.AddRazorPages();
+4,//...
+5,"Once ASP.NET Core Identity is configured, you enable it by adding the"
+6,app.UseAuthentication() and endpoints.MapRazorPages() as shown in the following code in the
+7,service’s Program.cs file:
+8,//...
+9,app.UseRouting();
+10,
+11,app.UseAuthentication();
+12,app.UseAuthorization();
+13,
+14,app.UseEndpoints(endpoints =>
+15,{
+16,endpoints.MapRazorPages();
+17,});
+18,//...

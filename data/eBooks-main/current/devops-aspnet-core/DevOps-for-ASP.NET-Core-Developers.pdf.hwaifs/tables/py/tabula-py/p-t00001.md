@@ -1,0 +1,15 @@
+|    | 3.   | In a text editor or Visual Studio, modify Pages/Index.cshtml again so that the <h2> element   |
+|---:|:-----|:----------------------------------------------------------------------------------------------|
+|  0 |      | reads <h2>Simple Feed Reader - V3</h2> and save the file.                                     |
+|  1 | 4.0  | Commit the file to the local Git repository, using either the Changes page in Visual Studio’s |
+|  2 |      | Team Explorer tab, or by entering the following using the local machine’s command shell:      |
+|  3 |      | :::{custom-style=CodeBox} console  git commit -a -m "upgraded to V3" :::                      |
+|  4 | 5.0  | Using the local machine’s command shell, add the staging deployment URL as a Git remote       |
+|  5 |      | and push the committed changes:                                                               |
+|  6 |      | a. Add the remote URL for staging to the local Git repository.                                |
+|  7 |      | :::{custom-style=CodeBox} console  git remote add azure-staging                               |
+|  8 |      | <Git_staging_deployment_URL> :::                                                              |
+|  9 |      | b. Push the local default branch (main) to the azure-staging remote’s deployment              |
+| 10 |      | branch (main).                                                                                |
+| 11 |      | :::{custom-style=CodeBox} console  git push azure-staging main :::                            |
+| 12 |      | Wait while Azure builds and deploys the app.                                                  |

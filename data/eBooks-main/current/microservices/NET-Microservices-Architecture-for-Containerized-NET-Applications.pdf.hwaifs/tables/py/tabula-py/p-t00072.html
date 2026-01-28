@@ -1,0 +1,78 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>// Part of the OrderEntityTypeConfiguration.cs class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>//</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>public void Configure(EntityTypeBuilder&lt;Order&gt; orderConfiguration)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>orderConfiguration.ToTable("orders", OrderingContext.DEFAULT_SCHEMA);</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>orderConfiguration.HasKey(o =&gt; o.Id);</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>orderConfiguration.Ignore(b =&gt; b.DomainEvents);</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>orderConfiguration.Property(o =&gt; o.Id)</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>.ForSqlServerUseSequenceHiLo("orderseq", OrderingContext.DEFAULT_SCHEMA);</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>//Address value object persisted as owned entity in EF Core 2.0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>orderConfiguration.OwnsOne(o =&gt; o.Address);</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>orderConfiguration.Property&lt;DateTime&gt;("OrderDate").IsRequired();</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>//...Additional validations, constraints and code...</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>//...</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

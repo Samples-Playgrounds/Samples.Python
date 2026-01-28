@@ -1,0 +1,102 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>if (!_requestedHashCode.HasValue)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>_requestedHashCode = this.Id.GetHashCode() ^ 31;</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>// XOR for random distribution. See:</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>// https://learn.microsoft.com/archive/blogs/ericlippert/guidelines-and-rules-</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>for-gethashcode</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>return _requestedHashCode.Value;</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>else</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>return base.GetHashCode();</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>public static bool operator ==(Entity left, Entity right)</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>if (Object.Equals(left, null))</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>return (Object.Equals(right, null));</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>else</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>return left.Equals(right);</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>public static bool operator !=(Entity left, Entity right)</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>return !(left == right);</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

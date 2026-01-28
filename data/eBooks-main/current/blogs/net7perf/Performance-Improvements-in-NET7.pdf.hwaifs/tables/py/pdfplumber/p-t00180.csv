@@ -1,0 +1,36 @@
+,0
+0,"private NetworkStream _client, _server;"
+1,private readonly byte[] _buffer = new byte[1];
+2,private readonly SslServerAuthenticationOptions _options = new
+3,SslServerAuthenticationOptions
+4,{
+5,"ServerCertificateContext = SslStreamCertificateContext.Create(GetCertificate(), null),"
+6,};
+7,
+8,[GlobalSetup]
+9,public void Setup()
+10,{
+11,"using var listener = new Socket(AddressFamily.InterNetwork, SocketType.Stream,"
+12,ProtocolType.Tcp);
+13,"listener.Bind(new IPEndPoint(IPAddress.Loopback, 0));"
+14,listener.Listen(1);
+15,
+16,"var client = new Socket(AddressFamily.InterNetwork, SocketType.Stream,"
+17,ProtocolType.Tcp);
+18,client.Connect(listener.LocalEndPoint);
+19,
+20,"_server = new NetworkStream(listener.Accept(), ownsSocket: true);"
+21,"_client = new NetworkStream(client, ownsSocket: true);"
+22,}
+23,
+24,[GlobalCleanup]
+25,public void Cleanup()
+26,{
+27,_client.Dispose();
+28,_server.Dispose();
+29,}
+30,
+31,[Benchmark]
+32,public async Task Handshake()
+33,{
+34,"using var client = new SslStream(_client, leaveInnerStreamOpen: true, delegate { return"

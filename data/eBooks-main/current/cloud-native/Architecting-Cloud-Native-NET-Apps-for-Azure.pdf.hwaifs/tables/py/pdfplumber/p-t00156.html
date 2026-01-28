@@ -1,0 +1,146 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>// some details omitted</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>services.AddIdentityServer();</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>services.AddAuthentication()</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>.AddGoogle("Google", options =&gt;</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>options.SignInScheme =</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>IdentityServerConstants.ExternalCookieAuthenticationScheme;</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>options.ClientId = "&lt;insert here&gt;";</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>options.ClientSecret = "&lt;insert here&gt;";</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>})</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>.AddOpenIdConnect("demoidsrv", "IdentityServer", options =&gt;</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>options.SignInScheme =</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>IdentityServerConstants.ExternalCookieAuthenticationScheme;</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>options.SignOutScheme = IdentityServerConstants.SignoutScheme;</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>options.Authority = "https://demo.identityserver.io/";</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>options.ClientId = "implicit";</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>options.ResponseType = "id_token";</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>options.SaveTokens = true;</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>options.CallbackPath = new PathString("/signin-idsrv");</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>options.SignedOutCallbackPath = new PathString("/signout-callback-idsrv");</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>options.RemoteSignOutPath = new PathString("/signout-idsrv");</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>options.TokenValidationParameters = new TokenValidationParameters</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>NameClaimType = "name",</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>RoleClaimType = "role"</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>};</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>});</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

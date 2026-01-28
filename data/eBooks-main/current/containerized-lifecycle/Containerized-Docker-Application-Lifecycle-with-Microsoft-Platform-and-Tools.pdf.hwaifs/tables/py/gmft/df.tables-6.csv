@@ -1,0 +1,13 @@
+,Platform,Comments
+0,Service Fabric,Service Fabric is a Microsoft microservices
+1,,platform for building applications. It’s an orchestrator of services and creates
+2,,clusters of machines. Service Fabric can deploy services as containers or as plain
+3,,processes. It can even mix services in
+4,,processes with services in containers within the same application and cluster.
+5,,Service Fabric clusters can be deployed in
+6,,"Azure, on-premises or in any cloud."
+7,,"However, deployment in Azure is simplified with a managed approach."
+8,,Service Fabric provides additional and optional prescriptive Service Fabric programming models like stateful services
+9,,and Reliable Actors.
+10,,"Service Fabric is mature in Windows (years evolving in Windows), less mature in Linux."
+11,,Both Linux and Windows containers are supported in Service Fabric since 2017.

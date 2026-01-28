@@ -1,0 +1,8 @@
+,0,1,2
+0,Field,Description,Example
+1,time,ISO8601 formatted timestamp,2021-01-10T14:19:31.000Z
+2,level,"Level of the entry (debug, info, warn, or error)",info
+3,type,Log Type,log
+4,msg,Log Message,metrics server started on :62408/
+5,scope,Logging Scope,dapr.runtime
+6,instance,Hostname where Dapr runs,TSTSRV01

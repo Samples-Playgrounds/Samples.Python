@@ -1,0 +1,21 @@
+,0
+0,private void InitializeTypeCatalog(IEnumerable<Type> types)
+1,{
+2,Type[] arr = types.ToArray();
+3,foreach (Type type in arr)
+4,{
+5,if (type == null)
+6,{
+7,throw ExceptionBuilder.CreateContainsNullElement(nameof(types));
+8,}
+9,
+10,if (type.Assembly.ReflectionOnly)
+11,{
+12,"throw new ArgumentException(SR.Format(SR.Argument_ElementReflectionOnlyType,"
+13,"nameof(types)), nameof(types));"
+14,}
+15,}
+16,
+17,
+18,_types = arr;
+19,}

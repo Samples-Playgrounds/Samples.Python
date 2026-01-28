@@ -1,0 +1,81 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>The</td>
+      <td>owned entity type feature was added to EF Core since version 2.0.</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>An the owned The owned</td>
+      <td>owned entity type allows you to map types that do not have their own identity explicitly defined in domain model and are used as properties, such as a value object, within any of your entities. An entity type shares the same CLR type with another entity type (that is, it’s just a regular class). entity containing the defining navigation is the owner entity. When querying the owner, the types are included by default.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Just under identity.</td>
+      <td>by looking at the domain model, an owned type looks like it doesn’t have any identity. However, the covers, owned types do have the identity, but the owner navigation property is part of this</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>The</td>
+      <td>identity of instances of owned types is not completely their own. It consists of three components:</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>•</td>
+      <td>The identity of the owner</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>•</td>
+      <td>The navigation property pointing to them</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>•</td>
+      <td>In the case of collections of owned types, an independent component (supported in EF Core</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>NaN</td>
+      <td>2.2 and later).</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>For</td>
+      <td>example, in the Ordering domain model at eShopOnContainers, as part of the Order entity, the</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Address Order</td>
+      <td>value object is implemented as an owned entity type within the owner entity, which is the entity. Address is a type with no identity property defined in the domain model. It is used as a</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>property By</td>
+      <td>of the Order type to specify the shipping address for a particular order. convention, a shadow primary key is created for the owned type and it will be mapped to the same</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>table types</td>
+      <td>as the owner by using table splitting. This allows to use owned types similarly to how complex are used in EF6 in the traditional .NET Framework.</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>It is to In</td>
+      <td>important to note that owned types are never discovered by convention in EF Core, so you have declare them explicitly. eShopOnContainers, in the OrderingContext.cs file, within the OnModelCreating() method, multiple</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>NaN</td>
+      <td>infrastructure configurations are applied. One of them is related to the Order entity.</td>
+    </tr>
+  </tbody>
+</table>

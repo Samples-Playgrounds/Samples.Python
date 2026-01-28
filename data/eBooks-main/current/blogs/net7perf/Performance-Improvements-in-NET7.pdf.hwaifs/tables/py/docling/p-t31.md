@@ -1,0 +1,10 @@
+|    | Method    | Runtime   | Mean       |   Ratio |
+|---:|:----------|:----------|:-----------|--------:|
+|  0 | Day       | .NET 6.0  | 5.2080 ns  |    1    |
+|  1 | Day       | .NET 7.0  | 2.0549 ns  |    0.39 |
+|  2 | Month     | .NET 6.0  | 4.1186 ns  |    1    |
+|  3 | Month     | .NET 7.0  | 2.0945 ns  |    0.51 |
+|  4 | Year      | .NET 6.0  | 3.1422 ns  |    1    |
+|  5 | Year      | .NET 7.0  | 0.8200 ns  |    0.26 |
+|  6 | TryFormat | .NET 6.0  | 27.6259 ns |    1    |
+|  7 | TryFormat | .NET 7.0  | 25.9848 ns |    0.94 |

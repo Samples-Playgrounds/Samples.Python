@@ -1,0 +1,58 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>// DELETE api/&lt;controller&gt;/5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>[HttpDelete]</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>public IHttpActionResult Delete(int id)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>var brandToDelete = _service.GetCatalogBrands().FirstOrDefault(x =&gt; x.Id == id);</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>if (brandToDelete == null)</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>return ResponseMessage(new HttpResponseMessage(HttpStatusCode.NotFound));</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>// demo only - don't actually delete</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>return ResponseMessage(new HttpResponseMessage(HttpStatusCode.OK));</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,5 @@
+,0
+0,Note: Registering and resolving types with a container has a performance cost because of the
+1,"container's use of reflection for creating each type, especially if dependencies are being"
+2,"reconstructed for each page navigation in the app. If there are many or deep dependencies, the"
+3,cost of creation can increase significantly.

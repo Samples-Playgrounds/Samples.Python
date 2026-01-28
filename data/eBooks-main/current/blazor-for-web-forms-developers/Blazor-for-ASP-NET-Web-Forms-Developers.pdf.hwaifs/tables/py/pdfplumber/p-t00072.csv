@@ -1,0 +1,6 @@
+,0
+0,@inject IOptions<MyConfig> options
+1,@code {
+2,var MyConfiguration = options.Value;
+3,var theSetting = MyConfiguration.section1.key0;
+4,}

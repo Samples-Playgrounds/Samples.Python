@@ -1,0 +1,8 @@
+,,
+0,•,<daprPort>: the HTTP port that Dapr listens on.
+1,•,<actorType>: the actor type.
+2,•,<actorId>: the ID of the specific actor to call.
+3,The,"sidecar manages how, when and where each actor runs, and also routes messages between"
+4,,"actors. When an actor hasn’t been used for a period of time, the runtime deactivates the actor and removes it from memory. Any state managed by the actor is persisted and will be available when the"
+5,and,"actor re-activates. Dapr uses an idle timer to determine when an actor can be deactivated. When an operation is called on the actor (either by a method call or a reminder firing), the idle timer is reset the actor instance will remain activated."
+6,The,"sidecar API is only one part of the equation. The service itself also needs to implement an API specification, because the actual code that you write for the actor will run inside the service itself. Figure 11-1 shows the various API calls between the service and its sidecar:"

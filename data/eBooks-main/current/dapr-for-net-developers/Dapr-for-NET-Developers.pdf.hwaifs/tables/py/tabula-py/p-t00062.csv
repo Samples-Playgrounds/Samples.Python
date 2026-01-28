@@ -1,0 +1,27 @@
+,apiVersion: apps/v1
+0,kind: Deployment
+1,metadata:
+2,name: finecollectionservice
+3,namespace: dapr-trafficcontrol
+4,labels:
+5,app: finecollectionservice
+6,spec:
+7,replicas: 1
+8,selector:
+9,matchLabels:
+10,app: finecollectionservice
+11,template:
+12,metadata:
+13,labels:
+14,app: finecollectionservice
+15,annotations:
+16,"dapr.io/enabled: ""true"""
+17,"dapr.io/app-id: ""finecollectionservice"""
+18,"dapr.io/app-port: ""6001"""
+19,"dapr.io/config: ""dapr-config"""
+20,spec:
+21,containers:
+22,- name: finecollectionservice
+23,image: dapr-trafficcontrol/finecollectionservice:1.0
+24,ports:
+25,- containerPort: 6001

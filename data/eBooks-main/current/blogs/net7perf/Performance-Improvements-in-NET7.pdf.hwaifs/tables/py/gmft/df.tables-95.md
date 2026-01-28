@@ -1,0 +1,3 @@
+|    | being changed to:             |          |
+|---:|:------------------------------|:---------|
+|  0 | entry.GetKey(_thisCollection) | ?? "key" |

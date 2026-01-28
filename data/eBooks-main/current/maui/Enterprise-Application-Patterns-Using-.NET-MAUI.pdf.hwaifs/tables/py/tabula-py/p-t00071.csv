@@ -1,0 +1,9 @@
+,public static IEnumerable<ApiResource> GetApis()
+0,{
+1,return new List<ApiResource>
+2,{
+3,"new ApiScope(""orders"", ""Orders Service""),"
+4,"new ApiScope(""basket"", ""Basket Service""),"
+5,"new ApiScope(""webhooks"", ""Webhooks registration Service""),"
+6,};
+7,}

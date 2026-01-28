@@ -1,0 +1,6 @@
+,Method,Runtime,Mean,Ratio
+0,LastIndexOfAny,.NET 6.0,443.29 ns,1.0
+1,LastIndexOfAny,.NET 7.0,31.79 ns,0.07
+2,,,,
+3,CountLines,.NET 6.0,"1,689.66 ns",1.0
+4,CountLines,.NET 7.0,"1,461.64 ns",0.86

@@ -1,0 +1,106 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>FROM mcr.microsoft.com/dotnet/sdk:7.0 as build</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>WORKDIR /src</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>COPY ./StockKube.sln .</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>COPY ./src/StockData/StockData.csproj ./src/StockData/</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>COPY ./src/StockWeb/StockWeb.csproj ./src/StockWeb/</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>RUN dotnet restore</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>COPY . .</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>RUN dotnet publish --no-restore -c Release -o /published src/StockData/StockData.csproj</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>FROM mcr.microsoft.com/dotnet/aspnet:7.0 as runtime</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td># Uncomment the line below if running with HTTPS</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td># ENV ASPNETCORE_URLS=https://+:443</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>WORKDIR /app</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>COPY --from=build /published .</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>ENTRYPOINT [ "dotnet", "StockData.dll" ]</td>
+    </tr>
+  </tbody>
+</table>

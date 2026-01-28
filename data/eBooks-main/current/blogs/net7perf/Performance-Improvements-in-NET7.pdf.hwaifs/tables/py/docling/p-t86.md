@@ -1,0 +1,4 @@
+|    | Method     | Runtime   | Mean       |   Ratio | Allocated   |   Alloc Ratio |
+|---:|:-----------|:----------|:-----------|--------:|:------------|--------------:|
+|  0 | IsBypassed | .NET 6.0  | 5,343.2 ns |    1    | 7528 B      |             1 |
+|  1 | IsBypassed | .NET 7.0  | 205.5 ns   |    0.04 | -           |             0 |

@@ -1,0 +1,51 @@
+,"[Route(""api/v1/[controller]"")]"
+0,public class CatalogController : ControllerBase
+1,{
+2,private readonly CatalogContext _catalogContext;
+3,private readonly CatalogSettings _settings;
+4,private readonly ICatalogIntegrationEventService _catalogIntegrationEventService;
+5,
+6,public CatalogController(
+7,"CatalogContext context,"
+8,"IOptionsSnapshot<CatalogSettings> settings,"
+9,ICatalogIntegrationEventService catalogIntegrationEventService)
+10,{
+11,_catalogContext = context ?? throw new ArgumentNullException(nameof(context));
+12,_catalogIntegrationEventService = catalogIntegrationEventService
+13,?? throw new ArgumentNullException(nameof(catalogIntegrationEventService));
+14,
+15,_settings = settings.Value;
+16,context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+17,}
+18,
+19,// GET api/v1/[controller]/items[?pageSize=3&pageIndex=10]
+20,[HttpGet]
+21,"[Route(""items"")]"
+22,"[ProducesResponseType(typeof(PaginatedItemsViewModel<CatalogItem>),"
+23,(int)HttpStatusCode.OK)]
+24,"[ProducesResponseType(typeof(IEnumerable<CatalogItem>), (int)HttpStatusCode.OK)]"
+25,[ProducesResponseType((int)HttpStatusCode.BadRequest)]
+26,public async Task<IActionResult> ItemsAsync(
+27,"[FromQuery]int pageSize = 10,"
+28,"[FromQuery]int pageIndex = 0,"
+29,string ids = null)
+30,{
+31,if (!string.IsNullOrEmpty(ids))
+32,{
+33,var items = await GetItemsByIdsAsync(ids);
+34,
+35,if (!items.Any())
+36,{
+37,"return BadRequest(""ids value invalid. Must be comma-separated list of"
+38,"numbers"");"
+39,}
+40,
+41,return Ok(items);
+42,}
+43,
+44,var totalItems = await _catalogContext.CatalogItems
+45,.LongCountAsync();
+46,
+47,var itemsOnPage = await _catalogContext.CatalogItems
+48,.OrderBy(c => c.Name)
+49,.Skip(pageSize * pageIndex)

@@ -1,0 +1,6 @@
+,> kubectl apply -f namespace.yml
+0,namespace/stocks created
+1,
+2,> kubectl get namespaces
+3,NAME              STATUS   AGE
+4,stocks            Active   2m53s

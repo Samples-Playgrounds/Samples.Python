@@ -1,0 +1,20 @@
+,0
+0,public static void Work(Stream s) =>
+1,A<SyncReader>(stream).GetAwaiter().GetResult(); // to propagate any exceptions
+2,
+3,public static Task WorkAsync(Stream S) =>
+4,A<AsyncReader>(s);
+5,
+6,internal static async Task A<TReader>(Stream s) where TReader : IReader
+7,{
+8,...
+9,await B<TReader>(s);
+10,...
+11,}
+12,
+13,private static async Task B<TReader>(Stream s) where TReader : IReader
+14,{
+15,...
+16,"int bytesRead = await TReader.ReadAsync(s, buffer);"
+17,...
+18,}

@@ -1,0 +1,7 @@
+,0
+0,[HttpPost]
+1,[ValidateAntiForgeryToken]
+2,public ActionResult Create([Bind(Include =
+3,"""Id,Name,Description,Price,PictureFileName,CatalogTypeId,CatalogBrandId,AvailableStock,Rest"
+4,"ockThreshold,MaxStockThreshold,OnReorder"")] CatalogItem catalogItem)"
+5,{

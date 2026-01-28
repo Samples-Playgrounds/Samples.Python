@@ -1,0 +1,7 @@
+,,
+0,already processed.,
+1,You send a command to a single receiver; you do not publish a command. Publishing is for,events
+2,that state a fact—that something has happened and might be interesting for event receivers.,In the
+3,"case of events, the publisher has no concerns about which receivers get the event or what But domain or integration events are a different story already introduced in previous sections.",they do it.
+4,"A command is implemented with a class that contains data fields or collections with all the information that is needed in order to execute that command. A command is a special kind of Transfer Object (DTO), one that is specifically used to request changes or transactions. The itself is based on exactly the information that is needed for processing the command, and more.",Data command nothing
+5,The following example shows the simplified CreateOrderCommand class. This is an immutable command that is used in the ordering microservice in eShopOnContainers.,

@@ -1,0 +1,5 @@
+,@inherits LayoutComponentBase
+0,<h1>Main layout</h1>
+1,<div>
+2,@Body
+3,</div>

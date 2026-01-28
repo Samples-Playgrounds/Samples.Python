@@ -1,0 +1,13 @@
+,0
+0,public bool Validate()
+1,{
+2,Errors = _validations
+3,?.Where(v => !v.Check(Value))
+4,?.Select(v => v.ValidationMessage)
+5,?.ToArray()
+6,?? Enumerable.Empty<string>();
+7,
+8,IsValid = !Errors.Any();
+9,
+10,return IsValid;
+11,}

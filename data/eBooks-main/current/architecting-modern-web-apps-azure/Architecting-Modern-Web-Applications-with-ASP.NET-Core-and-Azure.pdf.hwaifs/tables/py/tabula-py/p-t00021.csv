@@ -1,0 +1,3 @@
+,"[HttpPut(""{id}"")]"
+0,"public async Task<IActionResult> Put(int id, [FromBody]Author author)"
+1,{

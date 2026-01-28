@@ -1,0 +1,8 @@
+,0,1,2
+0,Protobuf type,C# type,Notes
+1,double,double,
+2,Float,float,
+3,int32,int,1
+4,int64,long,1
+5,uint32,uint,
+6,uint64,ulong,

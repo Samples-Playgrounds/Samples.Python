@@ -1,0 +1,31 @@
+,0,1,2
+0,Management tools,Description,Related orchestrators
+1,Azure Monitor for Containers,"Azure dedicated
+Kubernetes
+management tool",Azure Kubernetes Services (AKS)
+2,"Kubernetes Web UI
+(dashboard)","Kubernetes
+management tool,
+can monitor and
+manage local
+Kubernetes cluster","Azure Kubernetes Service (AKS)
+Local Kubernetes"
+3,"Azure portal for Service Fabric
+Azure Service Fabric Explorer","Online and desktop
+version for managing
+Service Fabric
+clusters, on Azure, on
+premises, local
+development, and
+other clouds",Azure Service Fabric
+4,"Container Monitoring (Azure
+Monitor)","General container
+management y
+monitoring solution.
+Can manage
+Kubernetes clusters
+through Azure
+Monitor for
+Containers.","Azure Service Fabric
+Azure Kubernetes Service (AKS)
+Mesosphere DC/OS and others."

@@ -1,0 +1,82 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>apiVersion: v1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>kind: Service</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>metadata:</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>name: {{ .Values.app.svc.marketing }}</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>labels:</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>app: {{ template "marketing-api.name" . }}</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>chart: {{ template "marketing-api.chart" . }}</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>release: {{ .Release.Name }}</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>heritage: {{ .Release.Service }}</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>spec:</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>type: {{ .Values.service.type }}</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>ports:</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>- port: {{ .Values.service.port }}</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>targetPort: http</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>protocol: TCP</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>name: http</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>selector:</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>app: {{ template "marketing-api.name" . }}</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>release: {{ .Release.Name }}</td>
+    </tr>
+  </tbody>
+</table>

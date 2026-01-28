@@ -1,0 +1,6 @@
+,0
+0,Note
+1,While it’s possible to expose the actual implementation of the ICommand interface that your view
+2,"model uses (for example, Command<T> or RelayCommand), it is recommended to expose your"
+3,"commands publicly as ICommand. This way, if you ever need to change the implementation at a later"
+4,"date, it can easily be swapped out."

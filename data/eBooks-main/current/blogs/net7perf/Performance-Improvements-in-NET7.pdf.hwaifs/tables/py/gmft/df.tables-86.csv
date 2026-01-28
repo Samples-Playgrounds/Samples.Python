@@ -1,0 +1,5 @@
+,Method,Runtime,ItemCount,Mean,Ratio,Allocated,Alloc Ratio
+0,XmlReader_ReadAsync,.NET 6.0,10,42.344 us,1.00,195.94 KB,1.00
+1,XmlReader_ReadAsync,.NET 7.0,10,9.992 us,0.23,99.94 KB,0.51
+2,XmlReader_ReadAsync,.NET 6.0,1000000,"340,382.953 us",1.00,101790.34 KB,1.00
+3,XmlReader_ReadAsync,.NET 7.0,1000000,"333,417.347 us",0.98,101804.45 KB,1.00

@@ -1,0 +1,19 @@
+,0
+0,private readonly XmlReaderSettings _settings = new XmlReaderSettings { Async = true };
+1,private MemoryStream _stream;
+2,
+3,"[Params(10, 1_000_000)]"
+4,public int ItemCount;
+5,
+6,[GlobalSetup]
+7,public void Setup()
+8,{
+9,_stream = new MemoryStream();
+10,using XmlWriter writer = XmlWriter.Create(_stream);
+11,"writer.WriteStartElement(""Items"");"
+12,for (var i = 0; i < ItemCount; i++)
+13,{
+14,"writer.WriteStartElement($""Item{i}"");"
+15,writer.WriteEndElement();
+16,}
+17,writer.WriteEndElement();

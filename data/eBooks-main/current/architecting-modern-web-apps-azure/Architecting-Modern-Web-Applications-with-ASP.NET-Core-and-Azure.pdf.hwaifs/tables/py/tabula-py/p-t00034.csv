@@ -1,0 +1,4 @@
+,// .Include requires using Microsoft.EntityFrameworkCore
+0,var brandsWithItems = await _context.CatalogBrands
+1,.Include(b => b.Items)
+2,.ToListAsync();

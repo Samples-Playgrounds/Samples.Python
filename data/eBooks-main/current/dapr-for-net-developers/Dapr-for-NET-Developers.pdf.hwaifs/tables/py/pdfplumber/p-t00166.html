@@ -1,0 +1,110 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>[HttpPost("OrderStatusChangedToAwaitingStockValidation")]</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>[Topic(DaprPubSubName,</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>nameof(OrderStatusChangedToAwaitingStockValidationIntegrationEvent))]</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>public Task HandleAsync(</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>OrderStatusChangedToAwaitingStockValidationIntegrationEvent integrationEvent)</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>// Save the updated status in the read model and notify the client via SignalR.</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>return UpdateReadModelAndSendNotificationAsync(integrationEvent.OrderId,</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>integrationEvent.OrderStatus, integrationEvent.Description,</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>integrationEvent.BuyerId);</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>private async Task UpdateReadModelAndSendNotificationAsync(</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Guid orderId, string orderStatus, string description, string buyerId)</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>var order = await _orderRepository.GetOrderByIdAsync(orderId);</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>if (order is not null)</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>order.OrderStatus = orderStatus;</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>order.Description = description;</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>await _orderRepository.UpdateOrderAsync(order);</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>await SendNotificationAsync(order.OrderNumber, orderStatus, buyerId);</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>
