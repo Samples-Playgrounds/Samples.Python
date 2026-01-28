@@ -1,2 +1,0 @@
-| To add \ndotnet   | support \nadd   | for \npackage   | an InMemory data source, for testing: \nMicrosoft.EntityFrameworkCore.InMemory   |
-|-------------------|-----------------|-----------------|----------------------------------------------------------------------------------|

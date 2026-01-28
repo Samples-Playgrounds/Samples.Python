@@ -1,7 +1,0 @@
-,Provider,Description
-0,NoSQL API,API for NoSQL stores data in document format
-1,Mongo DB API,Supports Mongo DB APIs and JSON documents
-2,Gremlin API,Supports Gremlin API with graph-based nodes and edge data representations
-3,Cassandra API,Supports Casandra API for wide-column data representations
-4,Table API,Supports Azure Table Storage with premium enhancements
-5,PostgreSQL API,Managed service for running PostgreSQL at any scale

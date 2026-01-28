@@ -1,3 +1,0 @@
-,0
-0,docker tag stockdata:1.0.0 <myorg>/stockdata:1.0.0
-1,docker push <myorg>/stockdata:1.0.0

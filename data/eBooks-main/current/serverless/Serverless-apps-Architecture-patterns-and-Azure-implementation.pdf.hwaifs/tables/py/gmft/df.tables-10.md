@@ -1,3 +1,0 @@
-|    |   resource | Event type                               | Description                                                                                                     |
-|---:|-----------:|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------|
-|  0 |        nan | Microsoft.Resources.ResourceDeleteCancel | Raised when a resource delete operation is canceled. This event happens when a template deployment is canceled. |

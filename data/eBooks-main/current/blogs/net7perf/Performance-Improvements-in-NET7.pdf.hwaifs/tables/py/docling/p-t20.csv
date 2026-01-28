@@ -1,3 +1,0 @@
-,Method,Runtime,Mean,Ratio,Allocated,Alloc Ratio
-0,CreateInstance,.NET 6.0,167.8 ns,1.00,320 B,1.00
-1,CreateInstance,.NET 7.0,143.4 ns,0.85,200 B,0.62

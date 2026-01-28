@@ -1,6 +1,0 @@
-|    | Method   | Runtime   | needle     | Mean        |   Ratio |
-|---:|:---------|:----------|:-----------|:------------|--------:|
-|  0 | Count    | .NET 6.0  | Sherlock   | 43.68 us    |    1    |
-|  1 | Count    | .NET 7.0  | Sherlock   | 48.33 us    |    1.11 |
-|  2 | Count    | .NET 6.0  | elementary | 1,063.67 us |    1    |
-|  3 | Count    | .NET 7.0  | elementary | 56.04 us    |    0.05 |

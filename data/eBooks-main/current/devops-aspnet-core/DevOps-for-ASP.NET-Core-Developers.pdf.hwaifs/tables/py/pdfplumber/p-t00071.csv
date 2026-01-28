@@ -1,4 +1,0 @@
-,0
-0,Note
-1,Precedence works from Environment to repository. If a targeted environment has a secret called
-2,"MY_SECRET, then that value is used. If not, the repository value of MY_SECRET (if any) is used."
