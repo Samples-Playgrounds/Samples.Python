@@ -50,7 +50,7 @@ def extract_markdown_to_file_from_pdf_document (source: str) -> str:
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
-    with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
+    with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
         f.write(json.dumps(times, indent=4))
     #---------------------------------------------------------------------------
 
@@ -95,7 +95,7 @@ def extract_markdown_to_file_from_office_doc_docx_document (source: str) -> str:
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
-    with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
+    with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
         f.write(json.dumps(times, indent=4))
     #---------------------------------------------------------------------------
 

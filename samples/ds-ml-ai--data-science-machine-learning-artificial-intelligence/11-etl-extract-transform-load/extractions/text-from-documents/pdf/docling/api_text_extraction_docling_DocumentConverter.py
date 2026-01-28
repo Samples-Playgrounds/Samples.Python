@@ -52,7 +52,7 @@ def extract_text_to_file_from_any_document (source: str) -> str:
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
-    with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
+    with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
         f.write(json.dumps(times, indent=4))
     #---------------------------------------------------------------------------
 
@@ -106,7 +106,7 @@ def extract_markdown_to_file_from_any_document (source: str) -> str:
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
-    with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
+    with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
         f.write(json.dumps(times, indent=4))
     #---------------------------------------------------------------------------
 
@@ -222,7 +222,7 @@ def extract_markdown_to_file_from_any_document_complex (source: str) -> str:
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
-    with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
+    with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
         f.write(json.dumps(times, indent=4))
     #---------------------------------------------------------------------------
 
