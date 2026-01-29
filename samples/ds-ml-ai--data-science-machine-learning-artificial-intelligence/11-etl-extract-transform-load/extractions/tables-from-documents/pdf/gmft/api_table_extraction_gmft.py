@@ -29,12 +29,24 @@ def extract_tables_to_files_from_pdf_document(source: str): # produces list[Crop
     directory = f"{source}.hwaifs/tables/py/gmft/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
-    doc = PyPDFium2Document(source)
-    tables = []
-    for page in doc:
-        tables += detector.extract(page)
+    try:
+        doc = PyPDFium2Document(source)
+        tables = []
+        for page in doc:
+            tables += detector.extract(page)
 
-    formatted_tables = [formatter.extract(table) for table in tables]
+        formatted_tables = [formatter.extract(table) for table in tables]
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables from PDF document source = {source} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
 
     for i, table in enumerate(formatted_tables):
         try:
