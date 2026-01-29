@@ -56,4 +56,4 @@ typing_extensions==4.15.0
 urllib3==2.6.3
 xlrd==2.0.2
 xlsxwriter==3.2.9
-youtube-transcript-api==1.2.3
+youtube-transcript-api==1.2.4
