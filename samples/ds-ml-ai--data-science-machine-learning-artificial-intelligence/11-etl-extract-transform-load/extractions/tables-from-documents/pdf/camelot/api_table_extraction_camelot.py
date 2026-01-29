@@ -24,7 +24,19 @@ def extract_tables_to_files_from_pdf_document (source: str) -> str:
     directory = f"{source}.hwaifs/tables/py/camelot/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
-    tables = camelot.read_pdf(source)
+    try:
+        tables = camelot.read_pdf(source)
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables from PDF document source = {source} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
 
     tables.export(f'{directory}/tables.csv', f='csv', compress=False) # json, excel, html
     tables.export(f'{directory}/tables.json', f='json', compress=False) # json, excel, html
