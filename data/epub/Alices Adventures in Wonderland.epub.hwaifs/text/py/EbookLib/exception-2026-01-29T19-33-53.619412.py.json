@@ -1,0 +1,7 @@
+Exception reading tables from PDF document source = ../../../../../../../data/epub/Alices Adventures in Wonderland.epub : name 'blocklist' is not definedTraceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/epub/ebooklib/api_text_extraction_eboklib.py", line 37, in extract_text_to_file_from_epub_document
+    text = chapter_to_text(chapter)
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/epub/ebooklib/api_text_extraction_eboklib.py", line 90, in chapter_to_text
+    if t.parent.name not in blocklist:
+                            ^^^^^^^^^
+NameError: name 'blocklist' is not defined
