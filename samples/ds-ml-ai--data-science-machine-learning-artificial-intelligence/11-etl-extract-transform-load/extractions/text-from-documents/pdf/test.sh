@@ -2,20 +2,20 @@
 
 sys_term_clean_screen_and_buffer
 
-ls -d1 * > list.md
+ls -d1 */ > list.md
 
 EXTRACTORS=\
 "
-markitdown
-pdfminer.six
 docling
 kreuzberg
+markitdown
+pdfminer.six
 pdfplumber
 PyMuPDF
 pymupdf4llm
 PyPDF2
-unstructured
 pdfium2
+unstructured
 # OCR based => slower
 marker
 pytesseract
