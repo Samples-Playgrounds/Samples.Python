@@ -2,7 +2,7 @@
 
 sys_term_clean_screen_and_buffer
 
-ls -d1 * > list.md
+ls -d1 */ > list.md
 
 
 EXTRACTORS=\
