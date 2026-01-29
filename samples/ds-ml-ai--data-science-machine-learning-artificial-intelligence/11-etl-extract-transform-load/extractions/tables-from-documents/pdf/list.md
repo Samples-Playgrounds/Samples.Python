@@ -1,10 +1,7 @@
-camelot
-docling
-gmft
-list.md
-marker
-pdfplumber
-readme.md
-tabula-py
-test.sh
-z_pdftables
+camelot/
+docling/
+gmft/
+marker/
+pdfplumber/
+tabula-py/
+z_pdftables/
