@@ -1,0 +1,12 @@
+audio-from-video/
+code/
+images-from-documents/
+structured-information-from-text/
+summarizations-synopsizations/
+tables-from-documents/
+tables-from-images/
+text-from-audio/
+text-from-documents/
+text-from-images/
+text-from-video/
+video/
