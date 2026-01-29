@@ -25,8 +25,20 @@ def extract_tables_to_files_from_pdf_document (source: str) -> str:
     directory = f"{source}.hwaifs/tables/py/pdfplumber/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
-    pdf = pdfplumber.open(source)
- 
+    try:
+        pdf = pdfplumber.open(source)
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables from PDF document source = {source} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
+
     # Iterate through each table found in the PDF
     for i, page in enumerate(pdf.pages):
         df = pd.DataFrame(pdf.pages[i].extract_table())
