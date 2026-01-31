@@ -1,15 +1,21 @@
 #!/bin/bash
 
+LIBRARY=PaddleOCR
+figlet $LIBRARY
+figlet start
+
+pwd
+
 deactivate
 rm -fr .venv/ __pycache__/
 rm *.pyc
 
 
-
 python -m venv .venv
 source .venv/bin/activate
 
-pip install "unstructured[all-docs]"
+pip install paddleocr
+pip install paddlepaddle
 
 pip install timer
 pip install codetiming
@@ -18,3 +24,7 @@ pip freeze > requirements.txt
 
 
 python main.py
+
+pwd
+figlet stop
+figlet $LIBRARY
