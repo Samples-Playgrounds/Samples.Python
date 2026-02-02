@@ -22,12 +22,24 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
 
     result_txt = ""
 
-    with pdfplumber.open(source) as pdf:
-        for page in pdf.pages:
-            result_txt = result_txt + page.extract_text()
+    try:
+        with pdfplumber.open(source) as pdf:
+            for page in pdf.pages:
+                result_txt = result_txt + page.extract_text()
 
-    directory = f"{source}.hwaifs/text/py/pdfplumber/"
-    Path(directory).mkdir(parents=True, exist_ok=True)
+        directory = f"{source}.hwaifs/text/py/pdfplumber/"
+        Path(directory).mkdir(parents=True, exist_ok=True)
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables from PDF document source = {source} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
 
     # save to file
     with open(f"{directory}/content.txt", "w") as f:
