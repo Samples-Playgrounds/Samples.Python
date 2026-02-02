@@ -19,10 +19,22 @@ def extract_markdown_to_file_from_pdf_document (source: str) -> str:
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    result_md = pymupdf4llm.to_markdown(source)
-
     directory = f"{source}.hwaifs/text/py/pymupdf4llm/"
     Path(directory).mkdir(parents=True, exist_ok=True)
+
+    try:
+        result_md = pymupdf4llm.to_markdown(source)
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables from PDF document source = {source} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
 
     # save to file
     with open(f"{directory}/content.md", "w") as f:
