@@ -7,12 +7,14 @@ ls -d1 */ > list.md
 EXTRACTORS=\
 "
 docling
+docTR
 kreuzberg
 markitdown
 pdfminer.six
 pdfplumber
 PyMuPDF
 pymupdf4llm
+pymupdf4llm-c
 PyPDF2
 pdfium2
 unstructured
