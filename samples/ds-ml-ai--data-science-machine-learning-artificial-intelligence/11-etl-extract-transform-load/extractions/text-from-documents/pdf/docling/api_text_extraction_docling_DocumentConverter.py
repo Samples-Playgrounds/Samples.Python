@@ -19,12 +19,24 @@ def extract_text_to_file_from_any_document (source: str) -> str:
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    converter = DocumentConverter()
-    result_doc = converter.convert(source)
-    result_txt = result_doc.document.export_to_text()
-
     directory = f"{source}.hwaifs/text/py/docling/"
     Path(directory).mkdir(parents=True, exist_ok=True)
+
+    try:
+        converter = DocumentConverter()
+        result_doc = converter.convert(source)
+        result_txt = result_doc.document.export_to_text()
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables from PDF document source = {source} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
 
     # save to file
     with open(f"{directory}/content.txt", "w") as f:
@@ -68,13 +80,25 @@ def extract_markdown_to_file_from_any_document (source: str) -> str:
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    converter = DocumentConverter()
-    result_doc = converter.convert(source)
-    result_md = result_doc.document.export_to_markdown()
-    num_pages = len(result_doc.document.pages)
-
     directory = f"{source}.hwaifs/text/py/docling/"
     Path(directory).mkdir(parents=True, exist_ok=True)
+
+    try:
+        converter = DocumentConverter()
+        result_doc = converter.convert(source)
+        result_md = result_doc.document.export_to_markdown()
+        num_pages = len(result_doc.document.pages)
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables from PDF document source = {source} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
 
     # save to file
     with open(f"{directory}/content.md", "w") as f:
@@ -140,34 +164,46 @@ def extract_markdown_to_file_from_any_document_complex (source: str) -> str:
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    doc_converter = (
-                DocumentConverter(  # all of the below is optional, has internal defaults.
-                allowed_formats=[
-                    InputFormat.PDF,
-                    InputFormat.IMAGE,
-                    InputFormat.DOCX,
-                    InputFormat.HTML,
-                    InputFormat.PPTX,
-                    InputFormat.ASCIIDOC,
-                    InputFormat.CSV,
-                    InputFormat.MD,
-                    InputFormat.XLSX
-                ],  # whitelist formats, non-matching files are ignored.
-                format_options={
-                    InputFormat.PDF: PdfFormatOption(
-                        pipeline_cls=StandardPdfPipeline, backend=PyPdfiumDocumentBackend
-                    ),
-                    InputFormat.DOCX: WordFormatOption(
-                        pipeline_cls=SimplePipeline  , backend=MsWordDocumentBackend
-                    ),
-                    InputFormat.XLSX: ExcelFormatOption(
-                        pipeline_cls=SimplePipeline  , backend=MsExcelDocumentBackend
-                    ),
-                },
+    try:
+        doc_converter = (
+                    DocumentConverter(  # all of the below is optional, has internal defaults.
+                    allowed_formats=[
+                        InputFormat.PDF,
+                        InputFormat.IMAGE,
+                        InputFormat.DOCX,
+                        InputFormat.HTML,
+                        InputFormat.PPTX,
+                        InputFormat.ASCIIDOC,
+                        InputFormat.CSV,
+                        InputFormat.MD,
+                        InputFormat.XLSX
+                    ],  # whitelist formats, non-matching files are ignored.
+                    format_options={
+                        InputFormat.PDF: PdfFormatOption(
+                            pipeline_cls=StandardPdfPipeline, backend=PyPdfiumDocumentBackend
+                        ),
+                        InputFormat.DOCX: WordFormatOption(
+                            pipeline_cls=SimplePipeline  , backend=MsWordDocumentBackend
+                        ),
+                        InputFormat.XLSX: ExcelFormatOption(
+                            pipeline_cls=SimplePipeline  , backend=MsExcelDocumentBackend
+                        ),
+                    },
+                )
             )
-        )
 
-    conv_results = doc_converter.convert_all([source])
+        conv_results = doc_converter.convert_all([source])
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables from PDF document source = {source} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
 
     result_md = ""
 
