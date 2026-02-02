@@ -21,17 +21,29 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    pdf = pdfium.PdfDocument(source)
-
-    result_txt = ""
-    for page in pdf:    
-        textpage = page.get_textpage()
-        text_all = textpage.get_text_bounded()
-        result_txt += text_all
-
-
     directory = f"{source}.hwaifs/text/py/pypdfium2/"
     Path(directory).mkdir(parents=True, exist_ok=True)
+
+    try:
+        pdf = pdfium.PdfDocument(source)
+
+        result_txt = ""
+        for page in pdf:    
+            textpage = page.get_textpage()
+            text_all = textpage.get_text_bounded()
+            result_txt += text_all
+            
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables from PDF document source = {source} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
 
     # save to file
     with open(f"{directory}/content.txt", "w") as f:
