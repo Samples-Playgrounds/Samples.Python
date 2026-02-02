@@ -19,10 +19,22 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    result_txt = extract_text(source)
-
     directory = f"{source}.hwaifs/text/py/pdfminer_six/"
     Path(directory).mkdir(parents=True, exist_ok=True)
+
+    try:
+        result_txt = extract_text(source)        
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables from PDF document source = {source} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
 
     # save to file
     with open(f"{directory}/content.txt", "w") as f:
