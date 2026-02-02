@@ -30,10 +30,24 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
     
     try:
         json_files = to_json(source, output_dir=directory)
-        for path in json_files:
-            print(f"  - {path}")
-    except ExtractionError as exc:
-        print(f"Extraction failed: {exc}")
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables from PDF document source = {source} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
+
+    json_files = to_json(source, output_dir=directory)
+    for path in json_files:
+        with open(path, "r") as f:
+            data = json.load(f)
+            if "text" in data:
+                result_txt = result_txt + data["text"] + "\n"
 
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()
