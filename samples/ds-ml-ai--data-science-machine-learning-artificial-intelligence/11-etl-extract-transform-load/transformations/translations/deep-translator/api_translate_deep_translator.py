@@ -11,13 +11,12 @@ from deep_translator import (GoogleTranslator,
                              single_detection,
                              batch_detection)
 
-def translate_text (source: str, lang_destination: str, translator: str) -> str:
-
-    with open(source, 'r') as file:
-        lines = []
-        for line in file:   
-            lines.append(line)
-
+def translate_text (text: str, lang_destination: str, translator: str) -> str:
+    """
+    Translate the text using the specified translator and target language.    
+    """
+    
+    lines = text.splitlines(keepends=True)
     translation_lines = []
 
     i = 1
@@ -55,11 +54,19 @@ def translate_text (source: str, lang_destination: str, translator: str) -> str:
         translation_lines.append(translation_line)
         i += 1
 
-        print(f"i                   : {i}")
-        print(f"Translating line    : {line}")
-        print(f"Translated line     : {translation_line}")
-        print(f"  ")
-
     translation = ''.join(translation_lines)
 
     return translation
+
+def translate_file                      (
+                                         source: str,
+                                         lang_destination: str, 
+                                         translator: str, 
+                                         api_key: str = None
+                                         ) -> str:
+    """
+    Translate the content of a text file using the specified translator and target language.    
+    """
+    with open(source, 'r') as file:
+        content = file.read()
+    return translate_text(content, lang_destination, translator)
