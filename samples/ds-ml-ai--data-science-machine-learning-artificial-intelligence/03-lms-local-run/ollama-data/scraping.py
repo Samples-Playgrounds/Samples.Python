@@ -1,4 +1,9 @@
- def get_all_models():
+ def get_all_models                     (    
+                                        ):
+    """
+    Fetch all available models from the Ollama library.
+    """   
+    
     html = get_html(LIBRARY_URL) 
     soup = BeautifulSoup(html, "html.parser")
 
@@ -13,8 +18,16 @@
 
 
 
-def get_model_tags(model): 
-    url = urljoin(LIBRARY_URL, model) html = get_html(url) soup = BeautifulSoup(html, "html.parser")
+def get_model_tags                      (
+                                            model: str
+                                        ):
+    """
+    Fetch available tags for a given model.
+    """
+
+    url = urljoin(LIBRARY_URL, model) 
+    html = get_html(url) 
+    soup = BeautifulSoup(html, "html.parser")
 
     text = soup.get_text(" ", strip=True).lower()
     tags = set()

@@ -1,4 +1,6 @@
- def main(): print("Fetching Ollama model list...") 
+ def main(): 
+    
+    print("Fetching Ollama model list...") 
  
     models = get_all_models()
 

@@ -17,4 +17,5 @@ WEIGHT_MEDIA_TYPES = {
                         # vision models 
                     }
 
-session = requests.Session() session.headers.update(HEADERS) 
+session = requests.Session()
+session.headers.update(HEADERS) 
