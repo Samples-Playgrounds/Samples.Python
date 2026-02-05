@@ -8,11 +8,11 @@ from typing import Any, Dict, List, Optional, Set, Tuple, Union
 
 # https://huggingface.co/docs/safetensors/en/api/torch
 
-def write_all_tensors(
-    filename: str,
-    tensors_dict: Dict[str, torch.Tensor],
-    metadata: Optional[Dict[str, str]] = None,
-) -> str:
+def write_all_tensors                   (
+                                            filename: str,
+                                            tensors_dict: Dict[str, torch.Tensor],
+                                            metadata: Optional[Dict[str, str]] = None,
+                                        ) -> str:
     """
     """
 
@@ -23,10 +23,12 @@ def write_all_tensors(
     return filename
 
 
-def read_all_tensors(
-    filename: str,
-    metadata: Optional[Dict[str, str]] = None,
-) -> Dict[str, torch.Tensor]:
+def read_all_tensors                    (
+                                            filename: str,
+                                            metadata: Optional[Dict[str, str]] = None,
+                                        ) -> Dict[str, torch.Tensor]:
+    """
+    """
 
     tensors: Dict[str, torch.Tensor] = {}
     with safe_open(filename, framework="pt", device="cpu") as f:
