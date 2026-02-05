@@ -9,4 +9,3 @@ text-from-audio/
 text-from-documents/
 text-from-images/
 text-from-video/
-video/
