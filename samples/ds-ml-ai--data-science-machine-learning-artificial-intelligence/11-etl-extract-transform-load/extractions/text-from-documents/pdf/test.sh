@@ -7,7 +7,6 @@ ls -d1 */ > list.md
 EXTRACTORS=\
 "
 docling
-docTR
 kreuzberg
 markitdown
 pdfminer.six
@@ -21,6 +20,7 @@ unstructured
 # OCR based => slower
 marker
 pytesseract
+docTR
 # NOT working yet - ERRORS
 # z_pymupdf4llm-c
 # z_deepdoctection-pytorch
