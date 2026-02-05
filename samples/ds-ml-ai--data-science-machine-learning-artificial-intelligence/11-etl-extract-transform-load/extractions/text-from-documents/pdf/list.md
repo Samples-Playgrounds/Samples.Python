@@ -1,5 +1,6 @@
 PyMuPDF/
 PyPDF2/
+docTR/
 docling/
 kreuzberg/
 marker/
