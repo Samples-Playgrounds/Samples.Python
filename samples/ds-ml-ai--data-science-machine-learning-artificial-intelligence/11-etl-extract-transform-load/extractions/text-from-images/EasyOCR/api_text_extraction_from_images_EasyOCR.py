@@ -11,7 +11,10 @@ from time import perf_counter_ns
 # from timer import timer
 
 #@timer()
-def extract_text_to_file_from_image (source: str) -> str:
+def extract_text_to_file_from_image (
+                                        source: str,
+                                        languages: list = ['en', 'hr', 'de']
+                                    ) -> str:
 
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
@@ -19,28 +22,37 @@ def extract_text_to_file_from_image (source: str) -> str:
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    directory = f"{source}.hwaifs/text/py/easyocr/"
+    directory = f"{source}.hwaifs/text/py/EasyOCR/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
-    # https://www.jaided.ai/easyocr/modelhub/
 
-    reader = easyocr.Reader(
-                            [
-                                'en',
-                                'hr'
-                            ]
-        ) # this needs to run only once to load the model into memory
-    result = reader.readtext(source)
+    result_txt = ""
 
-    text_complete = ""
+    try:
+        # https://www.jaided.ai/easyocr/modelhub/
+
+        # this needs to run only once to load the model into memory
+        reader = easyocr.Reader(languages) 
+        result = reader.readtext(source)
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables from PDF document source = {source} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
 
     for (bbox, text, prob) in result:
-        text_complete += text + '\n'
+        result_txt += text + '\n'
 
     # save to file
     with open(f"{directory}/content.txt", "w") as f:
-        f.write(text_complete) 
-
+        f.write(result_txt) 
+        
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()
     time_total_1 = time_stop_1 - time_start_1
@@ -63,9 +75,9 @@ def extract_text_to_file_from_image (source: str) -> str:
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
-    with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
+    with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
         f.write(json.dumps(times, indent=4))
     #---------------------------------------------------------------------------
 
-    return text_complete
+    return result_txt
 
