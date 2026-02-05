@@ -1,5 +1,10 @@
 #!/bin/bash
 
+sys_term_clean_screen_and_buffer
+
+ls -d1 */ > list.md
+
+
 EXTRACTORS=\
 "
 PyMuPDF-fitz
@@ -7,7 +12,6 @@ pypdf-PyPDF2
 pikepdf
 minecart
 "
-
 
 IFS=$'\n'
 # ZSH does not split words by default (like other shells):
@@ -24,8 +28,8 @@ do
 
     cd $EXTRACTOR
     source ./test.sh
+    cd ..
 done
-
 
 
 figlet "==========="
