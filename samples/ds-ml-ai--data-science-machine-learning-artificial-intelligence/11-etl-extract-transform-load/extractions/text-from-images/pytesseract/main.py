@@ -7,8 +7,10 @@ rm *.pyc
 """
 python -m venv .venv
 source .venv/bin/activate
+
 pip install pytesseract
 pip install opencv-python
+
 pip install timer
 pip install codetiming
 pip freeze > requirements.txt
@@ -16,31 +18,32 @@ pip freeze > requirements.txt
 
 """
 pip install -r requirements.txt
+# export TESSDATA_PREFIX="/opt/homebrew/share/tessdata/"
 python main.py
 """
 
 import api_text_extraction_from_images_pytesseract as api
 
-root="../../../../../../data/images/"
 
-# document per local path or URL
-sources = [
-    f"{root}/maui/architecture-diagram.png",
-    f"{root}/maui/maui-overview.png",
-    f"{root}/android/architecture1.png",
-    f"{root}/crime-orgs/judo/Screenshot 2025-11-18 at 13.00.30.png",
-    f"{root}/crime-orgs/judo/Screenshot 2025-11-18 at 13.00.30.png",
-    f"{root}/dontetconf/2025/Screenshot 2025-11-17 at 11.35.46.edited.png",
-    f"{root}/dontetconf/2025/Screenshot 2025-11-17 at 11.35.46.png"
-]
+import sys
+import os
+scriptpath = "../../../../"
+
+# Add the directory containing your module to the Python path (wants absolute paths)
+sys.path.append(os.path.abspath(scriptpath))
+from data import *
 
 
 def main():
+
+   sources = files_images
+
    for source in sources:
-      print(f"easyocr <- source = {source}")
+      print(f"pytesseract <- source = {source}")
       text = api.extract_text_to_file_from_image(source)
       print(f"  text = {text}")
 
+   
 
 if __name__ == '__main__':
     main()
