@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LIBRARY=pytesseract
+LIBRARY=pymupdf4llm-c
 figlet $LIBRARY
 figlet start
 
@@ -15,8 +15,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
 
-pip install pytesseract
-pip install pdf2image
+pip install pymupdf4llm-c
 
 pip install timer
 pip install codetiming

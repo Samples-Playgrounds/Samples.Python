@@ -13,6 +13,7 @@ rm *.pyc
 
 python -m venv .venv
 source .venv/bin/activate
+pip install --upgrade pip
 
 pip install kreuzberg
 pip install "kreuzberg[easyocr]"

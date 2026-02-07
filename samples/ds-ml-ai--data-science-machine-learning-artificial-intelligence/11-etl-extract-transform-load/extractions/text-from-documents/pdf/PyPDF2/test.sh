@@ -13,6 +13,7 @@ rm *.pyc
 
 python -m venv .venv
 source .venv/bin/activate
+pip install --upgrade pip
 
 pip install PyPDF2
 pip install pytesseract

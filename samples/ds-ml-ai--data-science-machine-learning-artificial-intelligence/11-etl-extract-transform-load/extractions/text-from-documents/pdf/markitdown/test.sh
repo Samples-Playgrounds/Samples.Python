@@ -13,6 +13,7 @@ rm *.pyc
 
 python -m venv .venv
 source .venv/bin/activate
+pip install --upgrade pip
 
 pip install markitdown[all]
 pip install 'markitdown[pdf, docx, pptx]'

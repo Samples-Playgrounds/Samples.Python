@@ -13,8 +13,8 @@ rm *.pyc
 
 python -m venv .venv
 source .venv/bin/activate
-
 pip install --upgrade pip
+
 pip install python-doctr
 #pip install "python-doctr[viz,html,contrib]"
 
