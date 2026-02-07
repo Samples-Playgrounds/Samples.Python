@@ -4,6 +4,7 @@ import cv2
 import os
 from pathlib import Path
 
+import traceback
 import json
 import datetime
 import time
@@ -13,8 +14,8 @@ from time import perf_counter_ns
 
 #@timer()
 def extract_text_to_file_from_image (
-                                        source: str
-                                        lang = "en"
+                                        source: str,
+                                        lang = "eng"
                                         ) -> str:
 
     #---------------------------------------------------------------------------
@@ -26,8 +27,22 @@ def extract_text_to_file_from_image (
     directory = f"{source}.hwaifs/text/py/pytesseract/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
-    img = cv2.imread(source)
-    result = pytesseract.image_to_string(img, lang)
+    try:
+        # https://github.com/tesseract-ocr/tessdata_best/raw/refs/heads/main/eng.traineddata
+
+        img = cv2.imread(source)
+        result = pytesseract.image_to_string(img, lang)
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables from PDF document source = {source} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
 
     # save to file
     with open(f"{directory}/content.txt", "w") as f:
@@ -55,7 +70,7 @@ def extract_text_to_file_from_image (
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
-    with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
+    with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
         f.write(json.dumps(times, indent=4))
     #---------------------------------------------------------------------------
 
