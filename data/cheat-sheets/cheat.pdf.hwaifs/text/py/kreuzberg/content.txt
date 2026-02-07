@@ -1,0 +1,4014 @@
+Theoretical Computer Science Cheat Sheet
+Definitions Series
+f(n) = O(g(n)) iff ∃ positive c, n0 such that
+0 ≤ f(n) ≤ cg(n) ∀n ≥ n0.
+Xn
+i=1
+i =
+n(n + 1)
+2
+,
+Xn
+i=1
+i
+2 =
+n(n + 1)(2n + 1)
+6
+,
+Xn
+i=1
+i
+3 =
+n
+2
+(n + 1)2
+4
+.
+In general:
+Xn
+i=1
+i
+m =
+1
+m + 1
+(n + 1)m+1 − 1 −
+Xn
+i=1
+
+(i + 1)m+1 − i
+m+1 − (m + 1)im
+
+
+nX−1
+i=1
+i
+m =
+1
+m + 1
+Xm
+k=0
+
+m + 1
+k
+
+Bkn
+m+1−k
+.
+Geometric series:
+Xn
+i=0
+c
+i =
+c
+n+1 − 1
+c − 1
+, c 6= 1,
+X∞
+i=0
+c
+i =
+1
+1 − c
+,
+X∞
+i=1
+c
+i =
+c
+1 − c
+, |c| < 1,
+Xn
+i=0
+ici =
+ncn+2 − (n + 1)c
+n+1 + c
+(c − 1)2
+, c 6= 1,
+X∞
+i=0
+ici =
+c
+(1 − c)
+2
+, |c| < 1.
+Harmonic series:
+Hn =
+Xn
+i=1
+1
+i
+,
+Xn
+i=1
+iHi =
+n(n + 1)
+2
+Hn −
+n(n − 1)
+4
+.
+Xn
+i=1
+Hi = (n + 1)Hn − n, Xn
+i=1
+
+i
+m
+
+Hi =
+
+n + 1
+m + 1 Hn+1 −
+1
+m + 1
+.
+f(n) = Ω(g(n)) iff ∃ positive c, n0 such that
+f(n) ≥ cg(n) ≥ 0 ∀n ≥ n0.
+f(n) = Θ(g(n)) iff f(n) = O(g(n)) and
+f(n) = Ω(g(n)).
+f(n) = o(g(n)) iff limn→∞ f(n)/g(n) = 0.
+limn→∞an = a iff ∀ǫ > 0, ∃n0 such that
+|an − a| < ǫ, ∀n ≥ n0.
+sup S least b ∈ R such that b ≥ s,
+∀s ∈ S.
+inf S greatest b ∈ R such that b ≤
+s, ∀s ∈ S.
+lim inf
+n→∞
+an limn→∞inf{ai| i ≥ n, i ∈ N}.
+lim sup
+n→∞
+an limn→∞sup{ai| i ≥ n, i ∈ N}.
+
+n
+k
+
+Combinations: Size k subsets of a size n set.
+ n
+k
+
+Stirling numbers (1st kind):
+Arrangements of an n element set into k cycles.
+1. 
+n
+k
+
+=
+n!
+(n − k)!k!
+, 2. Xn
+k=0
+
+n
+k
+
+= 2n, 3. 
+n
+k
+
+=
+
+n
+n − k
+
+,
+4. 
+n
+k
+
+=
+n
+k
+
+n − 1
+k − 1
+
+, 5. 
+n
+k
+
+=
+
+n − 1
+k
+
++
+
+n − 1
+k − 1
+
+,
+6. 
+n
+m
+m
+k
+
+=
+
+n
+k
+n − k
+m − k
+
+, 7. Xn
+k=0
+
+r + k
+k
+
+=
+
+r + n + 1
+n
+
+,
+8. Xn
+k=0
+
+k
+m
+
+=
+
+n + 1
+m + 1
+, 9. Xn
+k=0
+
+r
+k
+ s
+n − k
+
+=
+
+r + s
+n
+
+,
+10. 
+n
+k
+
+= (−1)k
+
+k − n − 1
+k
+
+, 11. 
+n
+1
+
+=
+
+n
+n
+
+= 1,
+12. 
+n
+2
+
+= 2n−1 − 1, 13. 
+n
+k
+
+= k
+
+n − 1
+k
+
++
+
+n − 1
+k − 1
+
+,
+ n
+k
+	
+Stirling numbers (2nd kind):
+Partitions of an n element
+set into k non-empty sets.
+
+
+n
+k
+
+1st order Eulerian numbers:
+Permutations π1π2 . . . πn on
+{1, 2, . . . , n} with k ascents.
+
+
+ n
+k
+ 2nd order Eulerian numbers.
+Cn Catalan Numbers: Binary
+trees with n + 1 vertices.
+14. 
+n
+1
+
+= (n − 1)!, 15. 
+n
+2
+
+= (n − 1)!Hn−1, 16. 
+n
+n
+
+= 1, 17. 
+n
+k
+
+≥
+
+n
+k
+
+,
+18. 
+n
+k
+
+= (n − 1)
+n − 1
+k
+
++
+
+n − 1
+k − 1
+
+, 19. 
+n
+n − 1
+
+=
+
+n
+n − 1
+
+=
+
+n
+2
+
+, 20. Xn
+k=0
+
+n
+k
+
+= n!, 21. Cn =
+1
+n + 1
+2n
+n
+
+,
+22. 
+n
+0
+
+=
+
+n
+n − 1
+
+= 1, 23. 
+n
+k
+
+=
+
+n
+n − 1 − k
+
+, 24. 
+n
+k
+
+= (k + 1)
+n − 1
+k
+
++ (n − k)
+
+n − 1
+k − 1
+
+,
+25. 
+0
+k
+
+=
+n
+1 if k = 0,
+0 otherwise 26. 
+n
+1
+
+= 2n − n − 1, 27. 
+n
+2
+
+= 3n − (n + 1)2n +
+
+n + 1
+2
+
+,
+28. x
+n =
+Xn
+k=0
+
+n
+k
+x + k
+n
+
+, 29. 
+n
+m
+
+=
+Xm
+k=0
+
+n + 1
+k
+
+(m + 1 − k)
+n
+(−1)k, 30. m!
+
+n
+m
+
+=
+Xn
+k=0
+
+n
+k
+ k
+n − m
+
+,
+31. 
+n
+m
+
+=
+Xn
+k=0
+
+n
+k
+n − k
+m
+
+(−1)n−k−mk!, 32. n
+0
+ = 1, 33. n
+n
+ = 0 for n 6= 0,
+34. n
+k
+ = (k + 1)n − 1
+k
+ + (2n − 1 − k)
+n − 1
+k − 1
+, 35. Xn
+k=0
+n
+k
+ =
+(2n)
+n
+2
+n
+,
+36. 
+x
+x − n
+
+=
+Xn
+k=0
+n
+k
+x + n − 1 − k
+2n
+
+, 37. 
+n + 1
+m + 1
+=
+X
+k
+
+n
+k
+ k
+m
+
+=
+Xn
+k=0
+
+k
+m
+
+(m + 1)n−k,
+
+Theoretical Computer Science Cheat Sheet
+Identities Cont. Trees
+38. 
+n + 1
+m + 1
+=
+X
+k
+
+n
+k
+ k
+m
+
+=
+Xn
+k=0
+
+k
+m
+
+n
+n−k = n!
+Xn
+k=0
+1
+k!
+
+k
+m
+
+, 39. 
+x
+x − n
+
+=
+Xn
+k=0
+n
+k
+x + k
+2n
+
+,
+40. 
+n
+m
+
+=
+X
+k
+
+n
+k
+ k + 1
+m + 1
+(−1)n−k, 41. 
+n
+m
+
+=
+X
+k
+
+n + 1
+k + 1  km
+
+(−1)m−k,
+42. 
+m + n + 1
+m
+
+=
+Xm
+k=0
+k
+
+n + k
+k
+
+, 43. 
+m + n + 1
+m
+
+=
+Xm
+k=0
+k(n + k)
+
+n + k
+k
+
+,
+44. 
+n
+m
+
+=
+X
+k
+
+n + 1
+k + 1 k
+m
+
+(−1)m−k, 45. (n − m)!
+n
+m
+
+=
+X
+k
+
+n + 1
+k + 1  km
+
+(−1)m−k, for n ≥ m,
+46. 
+n
+n − m
+
+=
+X
+k
+
+m − n
+m + k
+m + n
+n + k
+m + k
+k
+
+, 47. 
+n
+n − m
+
+=
+X
+k
+
+m − n
+m + k
+m + n
+n + k
+m + k
+k
+
+,
+48. 
+n
+ℓ + m
+ℓ + m
+ℓ
+
+=
+X
+k
+
+k
+ℓ
+n − k
+m
+n
+k
+
+, 49. 
+n
+ℓ + m
+ℓ + m
+ℓ
+
+=
+X
+k
+
+k
+ℓ
+n − k
+m
+n
+k
+
+.
+Every tree with n
+vertices has n − 1
+edges.
+Kraft inequality: If the depths
+of the leaves of
+a binary tree are
+d1, . . . , dn: Xn
+i=1
+2
+−di ≤ 1,
+and equality holds
+only if every internal node has 2
+sons.
+Recurrences
+Master method:
+T (n) = aT (n/b) + f(n), a ≥ 1, b > 1
+If ∃ǫ > 0 such that f(n) = O(n
+logb a−ǫ
+)
+then
+T (n) = Θ(n
+logb a
+).
+If f(n) = Θ(n
+logb a
+) then
+T (n) = Θ(n
+logb a
+log2 n).
+If ∃ǫ > 0 such that f(n) = Ω(n
+logb a+ǫ
+),
+and ∃c < 1 such that af(n/b) ≤ cf(n)
+for large n, then
+T (n) = Θ(f(n)).
+Substitution (example): Consider the
+following recurrence
+Ti+1 = 22
+i
+· T
+2
+i
+, T1 = 2.
+Note that Tiis always a power of two.
+Let ti = log2 Ti. Then we have
+ti+1 = 2i + 2ti, t1 = 1.
+Let ui = ti/2
+i
+. Dividing both sides of
+the previous equation by 2i+1 we get
+ti+1
+2
+i+1 =
+2
+i
+2
+i+1 +
+ti
+2
+i
+.
+Substituting we find
+ui+1 =
+1
+2 + ui
+, u1 =
+1
+2
+,
+which is simply ui = i/2. So we find
+that Ti has the closed form Ti = 2i2
+i−1
+.
+Summing factors (example): Consider
+the following recurrence
+T (n) = 3T (n/2) + n, T (1) = 1.
+Rewrite so that all terms involving T
+are on the left side
+T (n) − 3T (n/2) = n.
+Now expand the recurrence, and choose
+a factor which makes the left side “telescope”
+1
+
+T (n) − 3T (n/2) = n
+
+3
+
+T (n/2) − 3T (n/4) = n/2
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+3
+log2 n−1
+
+T (2) − 3T (1) = 2
+Let m = log2 n. Summing the left side
+we get T (n) − 3
+mT (1) = T (n) − 3m =
+T (n) − n
+k where k = log2 3 ≈ 1.58496.
+Summing the right side we get
+mX−1
+i=0
+n
+2
+i
+3
+i = n
+mX−1
+i=0
+
+3
+2
+i
+.
+Let c =
+3
+2
+. Then we have
+n
+mX−1
+i=0
+c
+i = n
+
+c
+m − 1
+c − 1
+
+= 2n(c
+log2 n − 1)
+= 2n(c
+(k−1) logc n − 1)
+= 2n
+k − 2n,
+and so T (n) = 3n
+k − 2n. Full history recurrences can often be changed to limited
+history ones (example): Consider
+Ti = 1 +X
+i−1
+j=0
+Tj, T0 = 1.
+Note that
+Ti+1 = 1 +X
+i
+j=0
+Tj.
+Subtracting we find
+Ti+1 − Ti = 1 +X
+i
+j=0
+Tj − 1 −
+X
+i−1
+j=0
+Tj
+= Ti.
+And so Ti+1 = 2Ti = 2i+1.
+Generating functions:
+1. Multiply both sides of the equation by x
+i
+.
+2. Sum both sides over all i for
+which the equation is valid.
+3. Choose a generating function
+G(x). Usually G(x) = P∞
+i=0 x
+i
+gi.
+3. Rewrite the equation in terms of
+the generating function G(x).
+4. Solve for G(x).
+5. The coefficient of x
+i
+in G(x) is gi.
+Example:
+gi+1 = 2gi + 1, g0 = 0.
+Multiply and sum:
+X
+i≥0
+gi+1x
+i =
+X
+i≥0
+2gix
+i +
+X
+i≥0
+x
+i
+.
+We choose G(x) = P
+i≥0
+x
+i
+gi. Rewrite
+in terms of G(x):
+G(x) − g0
+x
+= 2G(x) +X
+i≥0
+x
+i
+.
+Simplify:
+G(x)
+x
+= 2G(x) + 1
+1 − x
+.
+Solve for G(x):
+G(x) = x
+(1 − x)(1 − 2x)
+.
+Expand this using partial fractions:
+G(x) = x
+
+2
+1 − 2x
+−
+1
+1 − x
+
+= x
+
+2
+X
+i≥0
+2
+ixi −
+X
+i≥0
+x
+i
+
+
+=
+X
+i≥0
+(2i+1 − 1)x
+i+1
+.
+So gi = 2i − 1.
+
+Theoretical Computer Science Cheat Sheet
+π ≈ 3.14159, e ≈ 2.71828, γ ≈ 0.57721, φ =
+1+√
+5
+2 ≈ 1.61803, φˆ =
+1−
+√
+5
+2 ≈ −.61803
+i 2
+i pi General Probability
+1 2 2 Bernoulli Numbers (Bi = 0, odd i 6= 1):
+B0 = 1, B1 = −1
+2
+, B2 = 1
+6
+, B4 = − 1
+30 ,
+B6 = 1
+42 , B8 = − 130 , B10 = 566 .
+Change of base, quadratic formula:
+logb x =
+loga x
+logab
+,
+−b ±
+√
+b
+2 − 4ac
+2a
+.
+Euler’s number e:
+e = 1 + 1
+2 +
+1
+6 +
+1
+24 +
+1
+120 + · · ·
+limn→∞ 1 +
+x
+n
+n
+= e
+x
+.
+
+1 + 1
+n
+n
+< e < 1 + 1
+n
+n+1
+.
+
+1 + 1
+n
+n
+= e −
+e
+2n
++
+11e
+24n2
+− O
+
+1
+n3
+
+.
+Harmonic numbers:
+1, 3
+2
+,
+11
+6
+,
+25
+12 ,
+137
+60 ,
+49
+20 ,
+363
+140 ,
+761
+280 ,
+7129
+2520 , . . .
+ln n < Hn < ln n + 1,
+Hn = ln n + γ + O
+
+1
+n
+
+.
+Factorial, Stirling’s approximation:
+1, 2, 6, 24, 120, 720, 5040, 40320, 362880, . . .
+n! = √
+2πn
+n
+e
+n
+1 + Θ
+1
+n
+.
+Ackermann’s function and inverse:
+a(i, j) =
+
+
+
+2
+j
+i = 1
+a(i − 1, 2) j = 1
+a(i − 1, a(i, j − 1)) i, j ≥ 2
+α(i) = min{j | a(j, j) ≥ i}.
+Continuous distributions: If
+Pr[a < X < b] = Z b
+a
+p(x) dx,
+then p is the probability density function of
+X. If
+Pr[X < a] = P(a),
+then P is the distribution function of X. If
+P and p both exist then
+P(a) = Z a
+−∞
+p(x) dx.
+Expectation: If X is discrete
+E[g(X)] = X
+x
+g(x) Pr[X = x].
+If X continuous then
+E[g(X)] = Z ∞
+−∞
+g(x)p(x) dx =
+Z ∞
+−∞
+g(x) dP(x).
+Variance, standard deviation:
+VAR[X] = E[X
+2
+] − E[X]
+2
+,
+σ =
+p
+VAR[X].
+For events A and B:
+Pr[A ∨ B] = Pr[A] + Pr[B] − Pr[A ∧ B]
+Pr[A ∧ B] = Pr[A] · Pr[B],
+iff A and B are independent.
+Pr[A|B] = Pr[A ∧ B]
+Pr[B]
+For random variables X and Y :
+E[X · Y ] = E[X] · E[Y ],
+if X and Y are independent.
+E[X + Y ] = E[X] + E[Y ],
+E[cX] = c E[X].
+Bayes’ theorem:
+Pr[Ai|B] = Pr[B|Ai
+] Pr[Ai]
+Pn
+j=1 Pr[Aj ] Pr[B|Aj ]
+.
+Inclusion-exclusion:
+Pr h _n
+i=1
+Xi
+i
+=
+Xn
+i=1
+Pr[Xi] +
+Xn
+k=2
+(−1)k+1 X
+ii<···<ik
+Pr h ^
+k
+j=1
+Xij
+i
+.
+Moment inequalities:
+Pr |X| ≥ λE[X]
+
+≤
+1
+λ
+,
+Pr h
+X − E[X]
+
+ ≥ λ · σ
+i
+≤
+1
+λ2
+.
+Geometric distribution:
+Pr[X = k] = pqk−1, q = 1 − p,
+E[X] = X∞
+k=1
+kpqk−1 =
+1
+p
+.
+2 4 3
+3 8 5
+4 16 7
+5 32 11
+6 64 13
+7 128 17
+8 256 19
+9 512 23
+10 1,024 29
+11 2,048 31
+12 4,096 37
+13 8,192 41
+14 16,384 43
+15 32,768 47
+16 65,536 53
+17 131,072 59
+18 262,144 61
+19 524,288 67
+20 1,048,576 71
+21 2,097,152 73
+22 4,194,304 79
+23 8,388,608 83
+24 16,777,216 89
+25 33,554,432 97
+26 67,108,864 101
+27 134,217,728 103
+28 268,435,456 107 Binomial distribution:
+Pr[X = k] = 
+n
+k
+
+p
+k
+q
+n−k
+, q = 1 − p,
+E[X] = Xn
+k=1
+k
+
+n
+k
+
+p
+k
+q
+n−k = np.
+Poisson distribution:
+Pr[X = k] = e
+−λλk
+k!
+, E[X] = λ.
+Normal (Gaussian) distribution:
+p(x) = 1
+√
+2πσ
+e
+−(x−µ)
+2/2σ2
+, E[X] = µ.
+The “coupon collector”: We are given a
+random coupon each day, and there are n
+different types of coupons. The distribution of coupons is uniform. The expected
+number of days to pass before we to collect all n types is
+nHn.
+29 536,870,912 109
+30 1,073,741,824 113
+31 2,147,483,648 127
+32 4,294,967,296 131
+Pascal’s Triangle
+1
+1 1
+1 2 1
+1 3 3 1
+1 4 6 4 1
+1 5 10 10 5 1
+1 6 15 20 15 6 1
+1 7 21 35 35 21 7 1
+1 8 28 56 70 56 28 8 1
+1 9 36 84 126 126 84 36 9 1
+1 10 45 120 210 252 210 120 45 10 1
+
+Theoretical Computer Science Cheat Sheet
+Trigonometry Matrices More Trig.
+θ A
+c
+B
+a
+b
+C
+(0,-1)
+(0,1)
+(-1,0) (1,0)
+(cos θ,sin θ)
+Pythagorean theorem:
+C
+2 = A2 + B2
+.
+Definitions:
+sin a = A/C, cos a = B/C,
+csc a = C/A, sec a = C/B,
+tan a =
+sin a
+cos a
+=
+A
+B
+, cot a =
+cos a
+sin a
+=
+B
+A
+.
+Area, radius of inscribed circle:
+1
+2AB, AB
+A + B + C
+.
+Identities:
+sin x =
+1
+csc x
+, cos x =
+1
+sec x
+,
+tan x =
+1
+cot x
+, sin2 x + cos2 x = 1,
+1 + tan2 x = sec2 x, 1 + cot2 x = csc2 x,
+sin x = cos 
+π
+2 − x
+
+, sin x = sin(π − x),
+cos x = − cos(π − x), tan x = cot 
+π
+2 − x
+
+,
+cot x = − cot(π − x), csc x = cot x
+2 − cot x,
+sin(x ± y) = sin x cos y ± cos x sin y,
+cos(x ± y) = cos x cos y ∓ sin x sin y,
+tan(x ± y) = tan x ± tan y
+1 ∓ tan x tan y
+,
+cot(x ± y) = cot x cot y ∓ 1
+cot x ± cot y
+,
+sin 2x = 2 sin x cos x, sin 2x =
+2 tan x
+1 + tan2 x
+,
+cos 2x = cos2 x − sin2 x, cos 2x = 2 cos2 x − 1,
+cos 2x = 1 − 2 sin2 x, cos 2x =
+1 − tan2 x
+1 + tan2 x
+,
+tan 2x =
+2 tan x
+1 − tan2 x
+, cot 2x =
+cot2 x − 1
+2 cotx
+,
+sin(x + y) sin(x − y) = sin2 x − sin2y,
+cos(x + y) cos(x − y) = cos2 x − sin2y.
+Euler’s equation:
+e
+ix = cos x + isin x, eiπ = −1.
+Multiplication:
+C = A · B, ci,j =
+Xn
+k=1
+ai,kbk,j .
+Determinants: det A 6= 0 iff A is non-singular.
+det A · B = det A · det B,
+det A =
+X
+π
+Yn
+i=1
+sign(π)ai,π(i).
+2 × 2 and 3 × 3 determinant:
+
+
+
+
+a b
+c d
+
+
+
+ = ad − bc,
+
+
+
+
+
+
+a b c
+d e f
+g h i
+
+
+
+
+
+
+= g
+
+
+
+
+b c
+e f
+
+
+
+ − h
+
+
+
+
+a c
+d f
+
+
+
+
++ i
+
+
+
+
+a b
+d e
+
+
+
+
+=
+aei + bfg + cdh
+− ceg − fha − ibd.
+Permanents:
+perm A =
+X
+π
+Yn
+i=1
+ai,π(i).
+h
+A
+a
+c
+b
+B
+C
+Law of cosines:
+c
+2 = a2+b2−2ab cos C.
+Area:
+A =
+1
+2
+hc,
+=
+1
+2
+ab sin C,
+=
+c
+2
+sin A sin B
+2 sin C
+.
+Heron’s formula:
+A =
+√
+s · sa · sb · sc,
+s = 1
+2
+(a + b + c),
+sa = s − a,
+sb = s − b,
+sc = s − c.
+More identities:
+sin x
+2 =
+r
+1 − cos x
+2
+,
+cos x
+2 =
+r
+1 + cos x
+2
+,
+tan x
+2 =
+r
+1 − cos x
+1 + cos x
+,
+=
+1 − cos x
+sin x
+,
+=
+sin x
+1 + cos x
+,
+cot x
+2 =
+r
+1 + cos x
+1 − cos x
+,
+=
+1 + cos x
+sin x
+,
+=
+sin x
+1 − cos x
+,
+sin x =
+e
+ix − e−ix
+2i
+,
+cos x =
+e
+ix + e−ix
+2
+,
+tan x = −i
+e
+ix − e−ix
+e
+ix + e−ix ,
+= −i
+e
+2ix − 1
+e
+2ix + 1
+,
+sin x =
+sinh ix
+i
+,
+cos x = cosh ix,
+tan x =
+tanh ix
+i
+.
+Hyperbolic Functions
+Definitions:
+sinh x =
+e
+x − e−x
+2
+, cosh x =
+e
+x + e−x
+2
+,
+tanh x =
+e
+x − e−x
+e
+x + e−x
+, csch x =
+1
+sinh x
+,
+sech x =
+1
+cosh x
+, coth x =
+1
+tanh x
+.
+Identities:
+cosh2x − sinh2x = 1, tanh2x + sech2x = 1,
+coth2x − csch2x = 1, sinh(−x) = − sinh x,
+cosh(−x) = cosh x, tanh(−x) = − tanh x,
+sinh(x + y) = sinh x cosh y + cosh x sinh y,
+cosh(x + y) = cosh x cosh y + sinh x sinh y,
+sinh 2x = 2 sinh x cosh x,
+cosh 2x = cosh2x + sinh2x,
+cosh x + sinh x = e
+x
+, cosh x − sinh x = e
+−x
+,
+(cosh x + sinh x)
+n = cosh nx + sinh nx, n ∈ Z,
+2 sinh2 x
+2 = cosh x − 1, 2 cosh2 x2 = cosh x + 1.
+θ sin θ cos θ tan θ
+0 0 1 0
+π
+6
+1
+2
+√
+3
+2
+√
+3
+3
+π
+4
+√
+2
+2
+√
+2
+2
+1
+π
+3
+√
+3
+2
+1
+2
+√
+3
+π
+2
+1 0 ∞
+. . . in mathematics
+you don’t understand things, you
+just get used to
+them.
+v2.02 c 1994 by Steve Seiden – J. von Neumann
+sseiden@acm.org
+http://www.csc.lsu.edu/~seiden
+
+Theoretical Computer Science Cheat Sheet
+Number Theory Graph Theory
+The Chinese remainder theorem: There exists a number C such that:
+C ≡ r1 mod m1
+.
+.
+.
+.
+.
+.
+.
+.
+.
+C ≡ rn mod mn
+if mi and mj are relatively prime for i 6= j.
+Euler’s function: φ(x) is the number of
+positive integers less than x relatively
+prime to x. If Qn
+i=1 p
+ei
+i
+is the prime factorization of x then
+φ(x) = Yn
+i=1
+p
+ei−1
+i
+(pi − 1).
+Euler’s theorem: If a and b are relatively
+prime then
+1 ≡ a
+φ(b) mod b.
+Fermat’s theorem:
+1 ≡ a
+p−1 mod p.
+The Euclidean algorithm: if a > b are integers then
+gcd(a, b) = gcd(a mod b, b).
+If Qn
+i=1 p
+ei
+i
+is the prime factorization of x
+then
+S(x) = X
+d|x
+d =
+Yn
+i=1
+p
+ei+1
+i − 1
+pi − 1
+.
+Perfect Numbers: x is an even perfect number iff x = 2n−1
+(2n−1) and 2n−1 is prime.
+Wilson’s theorem: n is a prime iff
+(n − 1)! ≡ −1 mod n.
+M¨obius inversion:
+µ(i) =
+
+
+
+1 if i = 1.
+0 if i is not square-free.
+(−1)rif i is the product of
+r distinct primes.
+If
+G(a) = X
+d|a
+F(d),
+then
+F(a) = X
+d|a
+µ(d)G
+a
+d
+
+.
+Prime numbers:
+pn = n ln n + n ln ln n − n + n
+ln ln n
+ln n
++ O
+
+n
+ln n
+
+,
+π(n) = n
+ln n
++
+n
+(ln n)
+2
++
+2!n
+(ln n)
+3
++ O
+
+n
+(ln n)
+4
+
+.
+Definitions:
+Loop An edge connecting a vertex to itself.
+Directed Each edge has a direction.
+Simple Graph with no loops or
+multi-edges.
+Walk A sequence v0e1v1 . . . eℓvℓ.
+Trail A walk with distinct edges.
+Path A trail with distinct
+vertices.
+Connected A graph where there exists
+a path between any two
+vertices.
+Component A maximal connected
+subgraph.
+Tree A connected acyclic graph.
+Free tree A tree with no root.
+DAG Directed acyclic graph.
+Eulerian Graph with a trail visiting
+each edge exactly once.
+Hamiltonian Graph with a cycle visiting
+each vertex exactly once.
+Cut A set of edges whose removal increases the number of components.
+Cut-set A minimal cut.
+Cut edge A size 1 cut.
+k-Connected A graph connected with
+the removal of any k − 1
+vertices.
+k-Tough ∀S ⊆ V, S 6= ∅ we have
+k · c(G − S) ≤ |S|.
+k-Regular A graph where all vertices
+have degree k.
+k-Factor A k-regular spanning
+subgraph.
+Matching A set of edges, no two of
+which are adjacent.
+Clique A set of vertices, all of
+which are adjacent.
+Ind. set A set of vertices, none of
+which are adjacent.
+Vertex cover A set of vertices which
+cover all edges.
+Planar graph A graph which can be embeded in the plane.
+Plane graph An embedding of a planar
+graph.
+X
+v∈V
+deg(v) = 2m.
+If G is planar then n − m + f = 2, so
+f ≤ 2n − 4, m ≤ 3n − 6.
+Any planar graph has a vertex with degree ≤ 5.
+Notation:
+E(G) Edge set
+V (G) Vertex set
+c(G) Number of components
+G[S] Induced subgraph
+deg(v) Degree of v
+∆(G) Maximum degree
+δ(G) Minimum degree
+χ(G) Chromatic number
+χE(G) Edge chromatic number
+Gc Complement graph
+Kn Complete graph
+Kn1,n2 Complete bipartite graph
+r(k, ℓ) Ramsey number
+Geometry
+Projective coordinates: triples
+(x, y, z), not all x, y and z zero.
+(x, y, z) = (cx, cy, cz) ∀c 6= 0.
+Cartesian Projective
+(x, y) (x, y, 1)
+y = mx + b (m, −1, b)
+x = c (1, 0, −c)
+Distance formula, Lp and L∞
+metric:
+p
+(x1 − x0)
+2 + (y1 − y0)2,
+
+|x1 − x0|
+p + |y1 − y0|p
+1/p
+,
+limp→∞
+
+|x1 − x0|
+p + |y1 − y0|p
+1/p
+.
+Area of triangle (x0, y0), (x1, y1)
+and (x2, y2):
+1
+2
+abs
+
+
+
+
+x1 − x0 y1 − y0
+x2 − x0 y2 − y0
+
+
+
+
+.
+Angle formed by three points:
+(0, 0)
+θ
+(x1, y1)
+(x2, y2)
+ℓ2
+ℓ1
+cos θ =
+(x1, y1) · (x2, y2)
+ℓ1ℓ2
+.
+Line through two points (x0, y0)
+and (x1, y1):
+
+
+
+
+
+
+x y 1
+x0 y0 1
+x1 y1 1
+
+
+
+
+
+
+= 0.
+Area of circle, volume of sphere:
+A = πr2, V = 4
+3
+πr3.
+If I have seen farther than others,
+it is because I have stood on the
+shoulders of giants.
+– Issac Newton
+
+Theoretical Computer Science Cheat Sheet
+π Calculus
+Wallis’ identity:
+π = 2 ·
+2 · 2 · 4 · 4 · 6 · 6 · · ·
+1 · 3 · 3 · 5 · 5 · 7 · · ·
+Brouncker’s continued fraction expansion:
+π
+4 = 1 +
+1
+2
+2 + 3
+2
+2+ 52
+2+ 72
+2+···
+Gregrory’s series:
+π
+4 = 1 −
+1
+3 +
+1
+5 −
+1
+7 +
+1
+9 − · · ·
+Newton’s series:
+π
+6 =
+1
+2
++
+1
+2 · 3 · 2
+3 +
+1 · 3
+2 · 4 · 5 · 2
+5 + · · ·
+Sharp’s series:
+π
+6 =
+1
+√
+3
+
+1−
+1
+3
+1 · 3
++
+1
+3
+2 · 5
+−
+1
+3
+3 · 7
++· · · 
+Euler’s series:
+π
+2
+6 =
+1
+12 +
+1
+22 +
+1
+32 +
+1
+42 +
+1
+52 + · · ·
+π
+2
+8 =
+1
+12 +
+1
+32 +
+1
+52 +
+1
+72 +
+1
+92 + · · ·
+π
+2
+12 = 11
+2 − 1
+2
+2 + 1
+3
+2 − 1
+4
+2 + 1
+5
+2 − · · ·
+Derivatives:
+1.
+d(cu)
+dx = c
+du
+dx, 2.
+d(u + v)
+dx =
+du
+dx +
+dv
+dx, 3.
+d(uv)
+dx = u
+dv
+dx + v
+du
+dx,
+4.
+d(u
+n)
+dx = nun−1
+du
+dx, 5.
+d(u/v)
+dx =
+v
+
+du
+dx 
+− u
+
+dv
+dx 
+v
+2
+, 6.
+d(e
+cu)
+dx = cecu dudx,
+7. d(c
+u
+)
+dx = (ln c)c
+u
+du
+dx, 8.
+d(ln u)
+dx =
+1
+u
+du
+dx,
+9.
+d(sin u)
+dx = cos u
+du
+dx, 10.
+d(cos u)
+dx = − sin u
+du
+dx,
+11.
+d(tan u)
+dx = sec2 u
+du
+dx, 12.
+d(cot u)
+dx = csc2 u
+du
+dx,
+13.
+d(sec u)
+dx = tan u sec u
+du
+dx, 14.
+d(csc u)
+dx = − cot u csc u
+du
+dx,
+15.
+d(arcsin u)
+dx =
+1
+√
+1 − u
+2
+du
+dx, 16.
+d(arccos u)
+dx =
+−1
+√
+1 − u
+2
+du
+dx,
+17. d(arctan u)
+dx =
+1
+1 + u
+2
+du
+dx, 18.
+d(arccotu)
+dx =
+−1
+1 + u
+2
+du
+dx,
+19.
+d(arcsec u)
+dx =
+1
+u
+√
+1 − u
+2
+du
+dx, 20.
+d(arccsc u)
+dx =
+−1
+u
+√
+1 − u
+2
+du
+dx,
+21.
+d(sinh u)
+dx = cosh u
+du
+dx, 22.
+d(cosh u)
+dx = sinh u
+du
+dx,
+23.
+d(tanh u)
+dx = sech2
+u
+du
+dx, 24.
+d(coth u)
+dx = − csch2
+u
+du
+dx,
+25.
+d(sech u)
+dx = − sech u tanh u
+du
+dx, 26.
+d(csch u)
+dx = − csch u coth u
+du
+dx,
+27. d(arcsinh u)
+dx =
+1
+√
+1 + u
+2
+du
+dx, 28.
+d(arccosh u)
+dx =
+1
+√
+u
+2 − 1
+du
+dx,
+29.
+d(arctanh u)
+dx =
+1
+1 − u
+2
+du
+dx, 30.
+d(arccoth u)
+dx =
+1
+u
+2 − 1
+du
+dx,
+31.
+d(arcsech u)
+dx =
+−1
+u
+√
+1 − u
+2
+du
+dx, 32.
+d(arccsch u)
+dx =
+−1
+|u|
+√
+1 + u
+2
+du
+dx.
+Integrals:
+1. Zcu dx = c
+Z
+u dx, 2. Z(u + v) dx =
+Z
+u dx +
+Z
+v dx,
+3. Zx
+n
+dx =
+1
+n + 1
+x
+n+1, n 6= −1, 4. Z
+1
+x
+dx = ln x, 5. Ze
+x
+dx = e
+x
+,
+6. Z
+dx
+1 + x
+2
+= arctan x, 7. Zu
+dv
+dxdx = uv −
+Z
+v
+du
+dxdx,
+8. Zsin x dx = − cos x, 9. Zcos x dx = sin x,
+10. Ztan x dx = − ln | cos x|, 11. Zcot x dx = ln | cos x|,
+12. Zsec x dx = ln |sec x + tan x|, 13. Zcsc x dx = ln | csc x + cot x|,
+14. Z
+arcsin x
+a
+dx = arcsin x
+a +
+p
+a
+2 − x2, a > 0,
+Partial Fractions
+Let N(x) and D(x) be polynomial functions of x. We can break down
+N(x)/D(x) using partial fraction expansion. First, if the degree of N is greater
+than or equal to the degree of D, divide
+N by D, obtaining
+N(x)
+D(x)
+= Q(x) + N′
+(x)
+D(x)
+,
+where the degree of N′is less than that of
+D. Second, factor D(x). Use the following rules: For a non-repeated factor:
+N(x)
+(x − a)D(x)
+=
+A
+x − a
++
+N′(x)
+D(x)
+,
+where
+A =
+
+N(x)
+D(x)
+
+x=a
+.
+For a repeated factor:
+N(x)
+(x − a)mD(x)
+=
+mX−1
+k=0
+Ak
+(x − a)m−k
++
+N′(x)
+D(x)
+,
+where
+Ak =
+1
+k!
+
+d
+k
+dxk
+
+N(x)
+D(x)
+
+x=a
+.
+The reasonable man adapts himself to the
+world; the unreasonable persists in trying
+to adapt the world to himself. Therefore
+all progress depends on the unreasonable.
+– George Bernard Shaw
+
+Theoretical Computer Science Cheat Sheet
+Calculus Cont.
+15. Zarccos x
+a
+dx = arccos x
+a −
+p
+a
+2 − x2, a > 0, 16. Z
+arctan x
+a
+dx = x arctan x
+a −
+a
+2
+ln(a
+2 + x2
+), a > 0,
+17. Zsin2(ax)dx = 1
+2a
+
+ax − sin(ax) cos(ax)
+
+, 18. Zcos2(ax)dx = 1
+2a
+
+ax + sin(ax) cos(ax)
+
+,
+19. Zsec2 x dx = tan x, 20. Zcsc2 x dx = − cot x,
+21. Zsinn x dx = −
+sinn−1 x cos x
+n
++
+n − 1
+n
+Z
+sinn−2 x dx, 22. Zcosn x dx =
+cosn−1 x sin x
+n
++
+n − 1
+n
+Z
+cosn−2 x dx,
+23. Ztann x dx =
+tann−1 x
+n − 1
+−
+Z
+tann−2 x dx, n 6= 1, 24. Zcotn x dx = −
+cotn−1 x
+n − 1
+−
+Z
+cotn−2 x dx, n 6= 1,
+25. Zsecn x dx =
+tan x secn−1 x
+n − 1
++
+n − 2
+n − 1
+Z
+secn−2 x dx, n 6= 1,
+26. Zcscn x dx = −
+cot x cscn−1 x
+n − 1
++
+n − 2
+n − 1
+Z
+cscn−2 x dx, n 6= 1, 27. Zsinh x dx = cosh x, 28. Zcosh x dx = sinh x,
+29. Ztanh x dx = ln | cosh x|, 30. Zcoth x dx = ln |sinh x|, 31. Zsech x dx = arctan sinh x, 32. Zcsch x dx = ln
+
+tanh x
+2
+
+
+,
+33. Zsinh2x dx =
+1
+4
+sinh(2x) −
+1
+2
+x, 34. Zcosh2x dx =
+1
+4
+sinh(2x) + 1
+2
+x, 35. Zsech2x dx = tanh x,
+36. Zarcsinh x
+a
+dx = x arcsinh x
+a −
+p
+x
+2 + a2, a > 0, 37. Z
+arctanh x
+a
+dx = x arctanh x
+a + a2
+ln |a
+2 − x2
+|,
+38. Zarccosh x
+a
+dx =
+
+
+
+x arccosh x
+a
+−
+p
+x
+2 + a2, if arccosh x
+a > 0 and a > 0,
+x arccosh x
+a
++
+p
+x
+2 + a2, if arccosh x
+a < 0 and a > 0,
+39. Z
+dx
+√
+a
+2 + x2
+= ln x +
+p
+a
+2 + x2
+
+, a > 0,
+40. Z
+dx
+a
+2 + x2
+=
+1
+a
+arctan x
+a
+, a > 0, 41. Z p
+a
+2 − x2 dx =
+x
+2
+p
+a
+2 − x2 +
+a
+2
+2
+arcsin x
+a
+, a > 0,
+42. Z(a
+2 − x2
+)
+3/2
+dx =
+x
+8
+(5a
+2 − 2x2
+)
+p
+a
+2 − x2 +
+3a
+4
+8
+arcsin x
+a
+, a > 0,
+43. Z
+dx
+√
+a
+2 − x2
+= arcsin x
+a
+, a > 0, 44. Z
+dx
+a
+2 − x2
+=
+1
+2a
+ln
+
+
+
+
+a + x
+a − x
+
+
+
+
+, 45. Z
+dx
+(a
+2 − x2)3/2
+=
+x
+a
+2
+√
+a
+2 − x2
+,
+46. Z p
+a
+2 ± x2 dx = x
+2
+p
+a
+2 ± x2 ± a
+2
+2
+ln
+
+
+
+x +
+p
+a
+2 ± x2
+
+
+, 47. Z
+dx
+√
+x
+2 − a2
+= ln
+
+
+
+x +
+p
+x
+2 − a2
+
+
+, a > 0,
+48. Z
+dx
+ax2 + bx =
+1
+a
+ln
+
+
+
+
+x
+a + bx
+
+
+
+
+, 49. Zx
+√
+a + bx dx =
+2(3bx − 2a)(a + bx)
+3/2
+15b
+2
+,
+50. Z √
+a + bx
+x
+dx = 2√
+a + bx + a
+Z
+1
+x
+√
+a + bx
+dx, 51. Z
+x
+√
+a + bx
+dx =
+1
+√
+2
+ln
+
+
+
+
+√
+a + bx −
+√
+a
+√
+a + bx +
+√
+a
+
+
+
+
+, a > 0,
+52. Z √
+a
+2 − x2
+x
+dx =
+p
+a
+2 − x2 − a ln
+
+
+
+
+
+a +
+√
+a
+2 − x2
+x
+
+
+
+
+
+, 53. Zx
+p
+a
+2 − x2 dx = −
+1
+3
+(a
+2 − x2
+)
+3/2
+,
+54. Zx
+2
+p
+a
+2 − x2 dx =
+x
+8
+(2x
+2 − a2
+)
+p
+a
+2 − x2 +
+a
+4
+8
+arcsin x
+a
+, a > 0, 55. Z
+dx
+√
+a
+2 − x2
+= −
+1
+a
+ln
+
+
+
+
+
+a +
+√
+a
+2 − x2
+x
+
+
+
+
+
+,
+56. Z
+x dx
+√
+a
+2 − x2
+= −
+p
+a
+2 − x2, 57. Z
+x
+2 dx
+√
+a
+2 − x2
+= −
+x
+2
+p
+a
+2 − x2 +
+a
+2
+2
+arcsin x
+a,
+a > 0,
+58. Z √
+a
+2 + x2
+x
+dx =
+p
+a
+2 + x2 − a ln
+
+
+
+
+
+a +
+√
+a
+2 + x2
+x
+
+
+
+
+
+, 59. Z √
+x
+2 − a2
+x
+dx =
+p
+x
+2 − a2 − a arccos a
+|x|
+, a > 0,
+60. Zx
+p
+x
+2 ± a2 dx = 1
+3
+(x
+2 ± a2
+)
+3/2
+, 61. Z
+dx
+x
+√
+x
+2 + a2
+= 1
+a
+ln
+
+
+
+
+x
+a +
+√
+a
+2 + x2
+
+
+
+
+,
+
+Theoretical Computer Science Cheat Sheet
+Calculus Cont. Finite Calculus
+62. Z
+dx
+x
+√
+x
+2 − a2
+= 1
+a
+arccos a
+|x|
+, a > 0, 63. Z
+dx
+x
+2
+√
+x
+2 ± a2
+= ∓
+√
+x
+2 ± a2
+a
+2x
+,
+64. Z
+x dx
+√
+x
+2 ± a2
+=
+p
+x
+2 ± a2, 65. Z √
+x
+2 ± a2
+x
+4
+dx = ∓
+(x
+2 + a2
+)
+3/2
+3a
+2x3
+,
+66. Z
+dx
+ax2 + bx + c
+=
+
+
+
+1
+√
+b
+2 − 4ac
+ln
+
+
+
+
+
+2ax + b −
+√
+b
+2 − 4ac
+2ax + b +
+√
+b
+2 − 4ac
+
+
+
+
+
+, if b
+2 > 4ac,
+2
+√
+4ac − b
+2
+arctan
+2ax + b
+√
+4ac − b
+2
+, if b
+2 < 4ac,
+67. Z
+dx
+√
+ax2 + bx + c
+=
+
+
+
+1
+√
+a
+ln
+
+
+
+2ax + b + 2√
+a
+p
+ax2 + bx + c
+
+
+ , if a > 0,
+1
+√
+−a
+arcsin
+−2ax − b
+√
+b
+2 − 4ac
+, if a < 0,
+68. Z p
+ax2 + bx + c dx =
+2ax + b
+4a
+p
+ax2 + bx + c +
+4ax − b
+2
+8a
+Z
+dx
+√
+ax2 + bx + c
+,
+69. Z
+x dx
+√
+ax2 + bx + c
+=
+√
+ax2 + bx + c
+a
+−
+b
+2a
+Z
+dx
+√
+ax2 + bx + c
+,
+70. Z
+dx
+x
+√
+ax2 + bx + c
+=
+
+
+
+−1
+√
+c
+ln
+
+
+
+
+
+2
+√
+c
+√
+ax2 + bx + c + bx + 2c
+x
+
+
+
+
+
+, if c > 0,
+1
+√
+−c
+arcsin
+bx + 2c
+|x|
+√
+b
+2 − 4ac
+, if c < 0,
+71. Zx
+3
+p
+x
+2 + a2 dx = ( 1
+3
+x
+2 − 2
+15 a
+2
+)(x
+2 + a2
+)
+3/2
+,
+72. Zx
+n
+sin(ax) dx = −
+1
+a
+x
+n
+cos(ax) + n
+a
+Z
+x
+n−1
+cos(ax) dx,
+73. Zx
+n
+cos(ax) dx =
+1
+a
+x
+n
+sin(ax) −
+n
+a
+Z
+x
+n−1
+sin(ax) dx,
+74. Zx
+n
+e
+ax dx =
+x
+neax
+a
+− n
+a
+Z
+x
+n−1
+e
+ax dx,
+75. Zx
+n
+ln(ax) dx = x
+n+1 
+ln(ax)
+n + 1
+−
+1
+(n + 1)2
+
+,
+76. Zx
+n
+(ln ax)
+m dx =
+x
+n+1
+n + 1
+(ln ax)
+m −
+m
+n + 1 Z
+x
+n
+(ln ax)
+m−1
+dx.
+Difference, shift operators:
+∆f(x) = f(x + 1) − f(x),
+Ef(x) = f(x + 1).
+Fundamental Theorem:
+f(x) = ∆F(x) ⇔
+Xf(x)δx = F(x) + C.
+X
+b
+a
+f(x)δx =
+X
+b−1
+i=a
+f(i).
+Differences:
+∆(cu) = c∆u, ∆(u + v) = ∆u + ∆v,
+∆(uv) = u∆v + E v∆u,
+∆(x
+n) = nxn−1
+,
+∆(Hx) = x
+−1
+, ∆(2x) = 2x,
+∆(c
+x
+) = (c − 1)c
+x
+, ∆
+
+x
+m
+
+=
+
+x
+m−1
+
+.
+Sums:
+Pcu δx = cPu δx,
+P(u + v) δx =Pu δx +Pv δx,
+Pu∆v δx = uv −P
+Ev∆u δx,
+Px
+n δx =
+x
+n+1
+m+1 ,
+Px
+−1
+δx = Hx,
+Pc
+x
+δx = c
+x
+c−1
+,
+P
+x
+m
+
+δx =
+
+x
+m+1
+.
+Falling Factorial Powers:
+x
+n = x(x − 1)· · ·(x − n + 1), n > 0,
+x
+0 = 1,
+x
+n =
+1
+(x + 1)· · ·(x + |n|)
+, n < 0,
+x
+n+m = x
+m(x − m)n
+.
+Rising Factorial Powers:
+x
+n = x(x + 1)· · ·(x + n − 1), n > 0,
+x
+0 = 1,
+x
+n =
+1
+(x − 1)· · ·(x − |n|)
+, n < 0,
+x
+n+m = xm(x + m)n
+.
+Conversion:
+x
+n = (−1)n
+(−x)
+n = (x − n + 1)n
+= 1/(x + 1)−n
+,
+x
+n = (−1)n
+(−x)
+n = (x + n − 1)n
+= 1/(x − 1)−n,
+x
+n =
+Xn
+k=1
+
+n
+k
+
+x
+k =
+Xn
+k=1
+
+n
+k
+
+(−1)n−kx
+k
+,
+x
+n =
+Xn
+k=1
+
+n
+k
+
+(−1)n−kx
+k
+,
+x
+n =
+Xn
+k=1
+
+n
+k
+
+x
+k
+.
+x
+1 = x1 = x
+1
+x
+2 = x2 + x
+1 = x2 − x1
+x
+3 = x3 + 3x2 + x1 = x3 − 3x2 + x1
+x
+4 = x4 + 6x
+3 + 7x2 + x1 = x4 − 6x3 + 7x2 − x1
+x
+5 = x5 + 15x4 + 25x3 + 10x2 + x1 = x5 − 15x4 + 25x3 − 10x2 + x1
+x
+1 = x1 x1 = x
+1
+x
+2 = x2 + x1 x2 = x2 − x1
+x
+3 = x3 + 3x2 + 2x1 x3 = x3 − 3x2 + 2x1
+x
+4 = x4 + 6x3 + 11x2 + 6x1 x4 = x
+4 − 6x3 + 11x2 − 6x1
+x
+5 = x5 + 10x4 + 35x3 + 50x2 + 24x1 x5 = x
+5 − 10x4 + 35x3 − 50x2 + 24x1
+
+Theoretical Computer Science Cheat Sheet
+Series
+Taylor’s series:
+f(x) = f(a) + (x − a)f
+′
+(a) + (x − a)
+2
+2
+f
+′′(a) + · · · =
+X∞
+i=0
+(x − a)
+i
+i!
+f
+(i)
+(a).
+Expansions:
+1
+1 − x
+= 1 + x + x
+2 + x3 + x4 + · · · =
+X∞
+i=0
+x
+i
+,
+1
+1 − cx
+= 1 + cx + c
+2x2 + c3x3 + · · · =
+X∞
+i=0
+c
+ixi
+,
+1
+1 − x
+n
+= 1 + x
+n + x2n + x3n + · · · =
+X∞
+i=0
+x
+ni
+,
+x
+(1 − x)
+2
+= x + 2x
+2 + 3x3 + 4x4 + · · · =
+X∞
+i=0
+ixi,
+Xn
+k=0
+
+n
+k
+
+k!z
+k
+(1 − z)
+k+1 = x + 2nx
+2 + 3nx3 + 4nx4 + · · · =
+X∞
+i=0
+i
+nxi
+,
+e
+x = 1 + x +
+1
+2
+x
+2 +
+1
+6
+x
+3 + · · · =
+X∞
+i=0
+x
+i
+i!
+,
+ln(1 + x) = x −
+1
+2
+x
+2 +
+1
+3
+x
+3 −
+1
+4
+x
+4 − · · · =
+X∞
+i=1
+(−1)i+1 x
+i
+i
+,
+ln 1
+1 − x
+= x +
+1
+2
+x
+2 +
+1
+3
+x
+3 +
+1
+4
+x
+4 + · · · =
+X∞
+i=1
+x
+i
+i
+,
+sin x = x − 1
+3!x
+3 + 1
+5!x
+5 − 1
+7!x
+7 + · · · =
+X∞
+i=0
+(−1)i x
+2i+1
+(2i + 1)!,
+cos x = 1 −
+1
+2!x
+2 +
+1
+4!x
+4 −
+1
+6!x
+6 + · · · =
+X∞
+i=0
+(−1)i x
+2i
+(2i)!,
+tan−1 x = x −
+1
+3
+x
+3 +
+1
+5
+x
+5 −
+1
+7
+x
+7 + · · · =
+X∞
+i=0
+(−1)i x
+2i+1
+(2i + 1),
+(1 + x)
+n = 1 + nx +
+n(n−1)
+2
+x
+2 + · · · =
+X∞
+i=0
+
+n
+i
+
+x
+i
+,
+1
+(1 − x)
+n+1 = 1 + (n + 1)x +
+n+2
+2
+
+x
+2 + · · · =
+X∞
+i=0
+
+i + n
+i
+
+x
+i
+,
+x
+e
+x − 1
+= 1 −
+1
+2
+x +
+1
+12x
+2 −
+1
+720x
+4 + · · · =
+X∞
+i=0
+Bix
+i
+i!
+,
+1
+2x
+(1 −
+√
+1 − 4x) = 1 + x + 2x
+2 + 5x3 + · · · =
+X∞
+i=0
+1
+i + 1
+2i
+i
+
+x
+i
+,
+1
+√
+1 − 4x
+= 1 + 2x + 6x
+2 + 20x3 + · · · =
+X∞
+i=0
+
+2i
+i
+
+x
+i
+,
+1
+√
+1 − 4x
+
+1 −
+√
+1 − 4x
+2x
+n
+= 1 + (2 + n)x +
+
+4+n
+2
+
+x
+2 + · · · =
+X∞
+i=0
+
+2i + n
+i
+
+x
+i
+,
+1
+1 − x
+ln 1
+1 − x
+= x + 3
+2
+x
+2 + 11
+6
+x
+3 + 25
+12x
+4 + · · · =
+X∞
+i=1
+Hix
+i
+,
+1
+2
+
+ln 1
+1 − x
+2
+=
+1
+2
+x
+2 +
+3
+4
+x
+3 +
+11
+24x
+4 + · · · =
+X∞
+i=2
+Hi−1x
+i
+i
+,
+x
+1 − x − x
+2
+= x + x
+2 + 2x3 + 3x4 + · · · =
+X∞
+i=0
+Fix
+i
+,
+Fnx
+1 − (Fn−1 + Fn+1)x − (−1)nx
+2
+= Fnx + F2nx
+2 + F3nx3 + · · · =
+X∞
+i=0
+Fnix
+i
+.
+Ordinary power series:
+A(x) = X∞
+i=0
+aix
+i
+.
+Exponential power series:
+A(x) = X∞
+i=0
+ai
+x
+i
+i!
+.
+Dirichlet power series:
+A(x) = X∞
+i=1
+ai
+i
+x
+.
+Binomial theorem:
+(x + y)
+n =
+Xn
+k=0
+
+n
+k
+
+x
+n−k
+y
+k
+.
+Difference of like powers:
+x
+n − yn = (x − y)
+nX−1
+k=0
+x
+n−1−k
+y
+k
+.
+For ordinary power series:
+αA(x) + βB(x) = X∞
+i=0
+(αai + βbi)x
+i
+,
+x
+kA(x) = X∞
+i=k
+ai−kx
+i
+,
+A(x) −
+Pk−1
+i=0 aix
+i
+x
+k
+=
+X∞
+i=0
+ai+kx
+i
+,
+A(cx) = X∞
+i=0
+c
+i
+aix
+i
+,
+A
+′
+(x) = X∞
+i=0
+(i + 1)ai+1x
+i
+,
+xA′(x) = X∞
+i=1
+iaix
+i
+,
+Z
+A(x) dx =
+X∞
+i=1
+ai−1
+i
+x
+i
+,
+A(x) + A(−x)
+2
+=
+X∞
+i=0
+a2ix
+2i
+,
+A(x) − A(−x)
+2
+=
+X∞
+i=0
+a2i+1x
+2i+1
+.
+Summation: If bi =
+Pi
+j=0 ai then
+B(x) = 1
+1 − x
+A(x).
+Convolution:
+A(x)B(x) = X∞
+i=0
+
+
+X
+i
+j=0
+aj bi−j
+
+ x
+i
+.
+God made the natural numbers;
+all the rest is the work of man.
+– Leopold Kronecker
+
+Theoretical Computer Science Cheat Sheet
+Series Escher’s Knot
+Expansions:
+1
+(1 − x)
+n+1 ln 1
+1 − x
+=
+X∞
+i=0
+(Hn+i − Hn)
+
+n + i
+i
+
+x
+i
+,
+
+1
+x
+−n
+=
+X∞
+i=0
+
+i
+n
+
+x
+i
+,
+x
+n =
+X∞
+i=0
+
+n
+i
+
+x
+i
+, (e
+x − 1)n =
+X∞
+i=0
+
+i
+n
+
+n!x
+i
+i!
+,
+
+ln 1
+1 − x
+n
+=
+X∞
+i=0
+
+i
+n
+
+n!x
+i
+i!
+, x cot x =
+X∞
+i=0
+(−4)iB2ix
+2i
+(2i)! ,
+tan x =
+X∞
+i=1
+(−1)i−1
+2
+2i
+(22i − 1)B2ix
+2i−1
+(2i)! , ζ(x) = X∞
+i=1
+1
+i
+x
+,
+1
+ζ(x)
+=
+X∞
+i=1
+µ(i)
+i
+x
+,
+ζ(x − 1)
+ζ(x)
+=
+X∞
+i=1
+φ(i)
+i
+x
+,
+ζ(x) = Stieltjes Integration Y
+p
+1
+1 − p−x
+,
+ζ
+2
+(x) = X∞
+i=1
+d(i)
+x
+i
+where d(n) = P
+d|n
+1,
+ζ(x)ζ(x − 1) = X∞
+i=1
+S(i)
+x
+i
+where S(n) = P
+d|n
+d,
+ζ(2n) = 2
+2n−1
+|B2n|
+(2n)! π
+2n
+, n ∈ N,
+x
+sin x
+=
+X∞
+i=0
+(−1)i−1
+(4i − 2)B2ix
+2i
+(2i)! ,
+
+1 −
+√
+1 − 4x
+2x
+n
+=
+X∞
+i=0
+n(2i + n − 1)!
+i!(n + i)! x
+i
+,
+e
+x
+sin x =
+X∞
+i=1
+2
+i/2
+sin iπ
+4
+i!
+x
+i
+,
+s
+1 −
+√
+1 − x
+x
+=
+X∞
+i=0
+(4i)!
+16i
+√
+2(2i)!(2i + 1)!
+x
+i
+,
+
+arcsin x
+x
+2
+=
+X∞
+i=0
+4
+i
+i!
+2
+(i + 1)(2i + 1)!x
+2i
+.
+If G is continuous in the interval [a, b] and F is nondecreasing then
+Z b
+a
+G(x) dF(x)
+exists. If a ≤ b ≤ c then
+Z c
+a
+G(x) dF(x) = Z b
+a
+G(x) dF(x) + Z c
+b
+G(x) dF(x).
+If the integrals involved exist
+Z b
+a
+
+G(x) + H(x)
+
+dF(x) = Z b
+a
+G(x) dF(x) + Z b
+a
+H(x) dF(x),
+Z b
+a
+G(x) d
+
+F(x) + H(x)
+
+=
+Z b
+a
+G(x) dF(x) + Z b
+a
+G(x) dH(x),
+Z b
+a
+c · G(x) dF(x) = Z b
+a
+G(x) d
+
+c · F(x)
+
+= c
+Z b
+a
+G(x) dF(x),
+Z b
+a
+G(x) dF(x) = G(b)F(b) − G(a)F(a) −
+Z b
+a
+F(x) dG(x).
+If the integrals involved exist, and F possesses a derivative F
+′ at every
+point in [a, b] then
+Z b
+a
+G(x) dF(x) = Z b
+a
+G(x)F
+′
+(x) dx.
+Cramer’s Rule
+00 47 18 76 29 93 85 34 61 52
+86 11 57 28 70 39 94 45 02 63
+95 80 22 67 38 71 49 56 13 04
+59 96 81 33 07 48 72 60 24 15
+73 69 90 82 44 17 58 01 35 26
+68 74 09 91 83 55 27 12 46 30
+37 08 75 19 92 84 66 23 50 41
+14 25 36 40 51 62 03 77 88 99
+21 32 43 54 65 06 10 89 97 78
+42 53 64 05 16 20 31 98 79 87
+Fibonacci Numbers
+If we have equations:
+a1,1x1 + a1,2x2 + · · · + a1,nxn = b1
+a2,1x1 + a2,2x2 + · · · + a2,nxn = b2
+.
+.
+.
+.
+.
+.
+.
+.
+.
+an,1x1 + an,2x2 + · · · + an,nxn = bn
+Let A = (ai,j ) and B be the column matrix (bi). Then
+there is a unique solution iff det A 6= 0. Let Ai be A
+with column i replaced by B. Then
+xi =
+det Ai
+det A
+.
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, . . .
+Definitions:
+Fi = Fi−1+Fi−2, F0 = F1 = 1,
+F−i = (−1)i−1Fi,
+Fi = √
+1
+5
+
+φ
+i − φˆi
+
+,
+Cassini’s identity: for i > 0:
+Fi+1Fi−1 − F
+2
+i = (−1)i
+.
+Additive rule:
+Fn+k = FkFn+1 + Fk−1Fn,
+F2n = FnFn+1 + Fn−1Fn.
+Calculation by matrices:
+
+Fn−2 Fn−1
+Fn−1 Fn
+
+=
+
+0 1
+1 1 n
+.
+The Fibonacci number system:
+Every integer n has a unique
+representation
+n = Fk1 + Fk2 + · · · + Fkm ,
+where ki ≥ ki+1 + 2 for all i,
+1 ≤ i < m and km ≥ 2.
+Improvement makes strait roads, but the crooked
+roads without Improvement, are roads of Genius.
+– William Blake (The Marriage of Heaven and Hell)

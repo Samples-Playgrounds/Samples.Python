@@ -3839,7 +3839,7 @@ Azure Monitor also provides real time alerts based on metrics, administrative ev
 criteria.
 Note
 Currently alerting on web app metrics is only available in the Alerts (classic) service.
-The Alerts (classic)service can be found in Azure Monitor or under the Monitoring section of the App
+The Alerts (classic) service can be found in Azure Monitor or under the Monitoring section of the App
 Service settings.
 MONITORING
 Alerts (Classic)

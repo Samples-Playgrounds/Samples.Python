@@ -1,0 +1,159 @@
+page 1 of 2
+Cascading Style Sheets Cheatsheet(cid:3)(cid:11)(cid:38)(cid:54)(cid:54)(cid:3)(cid:20)(cid:9)(cid:21)(cid:12)
+Font Properties Text Properties
+Font-Family Word-Spacing
+Changes the font family of certain words, sentences, Defines an additional amount of space between words.
+paragraphs, etc. P EM { word-spacing: 0.4em; }
+P { font-family: "New Century Schoolbook", Times, serif; } P.note { word-spacing: -0.2em; }
+Font-Style Letter-Spacing
+Changes text: normal, oblique, and italics. Defines an additional amount of space between characters.
+H1 { font-style: oblique; } H1 { letter-spacing: 0.1em; }
+P { font-style: normal; } P.note { letter-spacing: -0.1em; }
+Font-Variant Text-Decoration
+Used to display font in normal or small-caps. Allows text to be decorated through one of five properties:
+SPAN { font-variant: small-caps; } underline, overline, line-through, blink, none.
+A:link, A:visited, A:active { text-decoration: none; }
+Font-Weight
+Used to specify the weight of the font. Vertical-Align
+H1 { font-weight: 800; } or P { font-weight: normal; } Used to alter the vertical positioning of an inline element,
+relative to its parent element or to the element's line.
+Font-Size IMG.middle { vertical-align: middle; }
+Used to modify the size of the displayed font. IMG { vertical-align: 50%; }
+H1 { font-size: large; } or P { font-size: 12pt; } .exponent { vertical-align: super; }
+LI { font-size: 90%; }
+STRONG { font-size: larger; } Text-Transform
+Allows for capitalizing the first letter of each word (capitalize),
+Font capitalizing all letters of a word (uppercase), using all small
+Used to combine all properties of fonts. letters in each word(lowercase), and the inital value(none).
+P { font: italic bold 12pt/14pt Times, serif; } H1 { text-transform: uppercase; }
+H2 { text-transform: capitalize; }
+Color and Background Properties Text-Align
+Color Used to justify text left, center, right, and justify.
+Changes the color of text. H1 { text-align: center; }
+P.newspaper { text-align: justify; }
+H1 { color: blue; } or H2 { color: #000080; }
+Text-Indent
+Background-Color
+Used to specify the amount of indentation prior to the first line
+Sets the background color of an element.
+of text.
+BODY { background-color: white; }
+H1 { background-color: #000080; } P { text-indent: 5em; }
+Background-Image Line-Height
+Sets the background image of an element. Used to control the spacing between baselines of text.
+BODY { background-image: url(/images/foo.gif); } P { line-height: 200%; }
+P { background-image: url(http://www.htmlhelp.com/bg.png); }
+Classification Properties
+Background-Repeat
+List-Style-Type
+Determines how a specified background image is repeated.
+Specifies the type of list-item marker, and is used if list-style-
+The repeat-x value will repeat the image horizontally while the
+image is none or if image loading is turned off.
+repeat-y value will repeat the image vertically.
+LI.square { list-style-type: square; }
+BODY { background: white url(candybar.gif);
+UL.plain { list-style-type: none; }
+background-repeat: repeat-x; }
+OL { list-style-type: upper-alpha; } /* A B C D E etc. */
+OL OL { list-style-type: decimal; } /* 1 2 3 4 5 etc. */
+Background-Attachment
+OL OL OL { list-style-type: lower-roman; } /* i ii iii iv v etc. */
+Determines if a specified background image will scroll with the
+content or be fixed with regard to the canvas.
+List-Style-Image
+BODY { background: white url(candybar.gif);
+Specifies the image that will be used as list-item marker when
+background-attachment: fixed; }
+image loading is turned on, replacing the marker specified in
+the list-style-type property.
+Background
+UL.check { list-style-image: url(/LI-markers/checkmark.gif); }
+Used to combine all properties of background.
+UL LI.x { list-style-image: url(x.png); }
+BODY { background: white url(http://www.htmlhelp.com/foo.gif); }
+BLOCKQUOTE { background: #7fffd4; }
+List-Style-Position
+P { background: url(../backgrounds/pawn.png) #f0f8ff fixed; }
+Determines where the marker is placed in regard to the list
+TABLE { background: red url(leaves.jpg) no-repeat bottom right; }
+item. If the value inside is used, the lines will wrap under the
+marker instead of being indented. outside is default.
+UL { list-style-position: inside; }page 2 of 2
+Cascading Style Sheets Cheatsheet (CSS 1&2)
+Box Properties
+Margin-Top Border-Left-Width
+Sets the top margin of an element by specifying a length or a Used to specify the width of an element's left border.
+percentage. P { border-left: 20%; }
+BODY { margin-top: 5pt; }
+Border-Width
+Margin-Right Used to set the width of an element's border (either all
+Sets the right margin of an element by specifying a length or a borders, or specifying top border, right border, bottom border,
+percentage. left border).
+P.narrow { margin-right: 50%; } P { border-width: 20%; }
+P { border-width: 10px 5px 10px 5px; }
+Margin-Bottom
+sets the bottom margin of an element by specifying a length or Border-Color
+a percentage. Used to set the color of an element's border.
+DT { margin-bottom: 3em; } P { border-color: #00000; }
+Margin-Left Border-Style
+sets the left margin of an element by specifying a length or a Sets style of a border - none, dotted, dashed, solid, double.
+percentage. P { border-style: dotted; }
+ADDRESS { margin-left: 50%; }
+Border-Top
+Margin Sets the width, style, and color of an element's top border.
+Sets the margins of an element by specifying top, bottom, left P { border-top: 10px, red, double; }
+and right margins -- all either specifying length or percentage.
+Border-Right
+BODY { margin: 5em; } /* all margins 5em */
+P { margin: 2em 4em; } /* top & bottom 2em, left & right 4em */ Sets the width, style, and color of an element's right border.
+DIV { margin: 1em 2em 3em 4em; } P { border-right: 10px, red, double; }
+/* top margin 1em, right 2em, bottom 3em, left 4em */
+Border-Bottom
+Padding-Top Sets the width, style, and color of an element's bottom border.
+Describes the amount of space between the top border and P { border-bottom: 10px, red, double; }
+the content of the selector.
+P { padding-top: 20%; } Border-Left
+Sets the width, style, and color of an element's left border.
+Padding-Right P { border-left: 10px, red, double; }
+Describes the amount of space between the right border and
+the content of the selector. Border
+P { padding-right: 20 px; } Sets the width, style, and color of an element's border.
+P { border: 10px, red, double; }
+Padding-Bottom
+Describes the amount of space between the bottom border Width
+and the content of the selector. Each block-level or replaced element can be given a width,
+P { padding-bottom: 5 em; } specified as a length, a percentage, or as auto.
+P { width: 15px; }
+Padding-Left H1 { width: 35%; }
+Describes the amount of space between the left border and .foo { width: auto; }
+the content of the selector.
+Height
+P { padding-left: 15 pt; }
+Each block-level or replaced element can be given a height,
+Padding specified as a length or as auto.
+Shorthand for the padding-top, padding-right, padding-bottom, P { height: 15px; }
+H1 { height: 35%; }
+and padding-left properties.
+.foo { height: auto; }
+BLOCKQUOTE { padding: 2em 4em 5em 4em; }
+Float
+Border-Top-Width
+Allows text to wrap around an element (left, right, none).
+Used to specify the width of an element's top border.
+P { float: left; }
+P { border-top: 20%; }
+H1 { float: right; }
+.foo { float: none; }
+Border-Right-Width
+Used to specify the width of an element's right border.
+Clear
+P { border-right: 20%; }
+Specifies whether an element allows floating elements to its
+sides (left, right, none).
+Border-Bottom-Width
+P { clear: left; }
+Used to specify the width of an element's bottom border.
+H1 { clear: right; }
+P { border-bottom: 20%; }
+.foo { clear: none; }

@@ -1,0 +1,3150 @@
+[
+    {
+        "element_id": "3dc5024a9eb0df38bc19fa26ab2396dd",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        32.5,
+                        35.3
+                    ],
+                    [
+                        32.5,
+                        87.8
+                    ],
+                    [
+                        246.6,
+                        87.8
+                    ],
+                    [
+                        246.6,
+                        35.3
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1
+        },
+        "text": "ANALYZING MALICIOUS DOCUMENTS This cheat sheet outlines tips and tools for analyzing malicious documents, such as Microsoft Office, RTF, and PDF files.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "397ebcea8efffdb0a9ccf96f1e382dbf",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        32.5,
+                        96.0
+                    ],
+                    [
+                        32.5,
+                        149.8
+                    ],
+                    [
+                        239.2,
+                        149.8
+                    ],
+                    [
+                        239.2,
+                        96.0
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1
+        },
+        "text": "General Approach to Document Analysis 1. Examine the document for anomalies, such as risky tags, scripts, and embedded artifacts. 2. Locate embedded code, such as shellcode,",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "cc584d442c66374b466ce5247d2f84d7",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        292.4,
+                        37.6
+                    ],
+                    [
+                        292.4,
+                        57.1
+                    ],
+                    [
+                        351.8,
+                        57.1
+                    ],
+                    [
+                        351.8,
+                        37.6
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1
+        },
+        "text": "oledump.py file.xls -i",
+        "type": "Title"
+    },
+    {
+        "element_id": "3fc6c3a4ae3fc348bd0461afb676f10f",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        391.4,
+                        36.3
+                    ],
+                    [
+                        391.4,
+                        58.5
+                    ],
+                    [
+                        510.3,
+                        58.5
+                    ],
+                    [
+                        510.3,
+                        36.3
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "cc584d442c66374b466ce5247d2f84d7"
+        },
+        "text": "List all OLE2 streams present in file.xls.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "10695de32b2199f50aba1f7a6d05fc34",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        292.4,
+                        65.3
+                    ],
+                    [
+                        292.4,
+                        84.8
+                    ],
+                    [
+                        376.6,
+                        84.8
+                    ],
+                    [
+                        376.6,
+                        65.3
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1
+        },
+        "text": "oledump.py file.xls -s 3 -v",
+        "type": "Title"
+    },
+    {
+        "element_id": "ae17b2d57335d19f896bbe09875aa0fc",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        391.4,
+                        64.3
+                    ],
+                    [
+                        391.4,
+                        86.5
+                    ],
+                    [
+                        492.6,
+                        86.5
+                    ],
+                    [
+                        492.6,
+                        64.3
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1
+        },
+        "text": "Extract VBA source code from stream 3 in file.xls.",
+        "type": "Title"
+    },
+    {
+        "element_id": "7845253037d7b73be1617c3068932014",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        292.4,
+                        93.4
+                    ],
+                    [
+                        292.4,
+                        102.4
+                    ],
+                    [
+                        381.3,
+                        102.4
+                    ],
+                    [
+                        381.3,
+                        93.4
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1
+        },
+        "text": "xmldump.py pretty",
+        "type": "Title"
+    },
+    {
+        "element_id": "8c9900bf27c664897ba2119149f2b34e",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        391.4,
+                        92.3
+                    ],
+                    [
+                        391.4,
+                        114.6
+                    ],
+                    [
+                        508.6,
+                        114.6
+                    ],
+                    [
+                        508.6,
+                        92.3
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "7845253037d7b73be1617c3068932014"
+        },
+        "text": "Format XML file supplied via STDIN for easier analysis.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "332dcd40ac9650c63dd62f054eb21356",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        292.4,
+                        121.4
+                    ],
+                    [
+                        292.4,
+                        140.9
+                    ],
+                    [
+                        406.3,
+                        140.9
+                    ],
+                    [
+                        406.3,
+                        121.4
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1
+        },
+        "text": "oledump.py file.xls -p plugin_http_heuristics",
+        "type": "Title"
+    },
+    {
+        "element_id": "20fb94014d69a55d3bb888c9fa0512b3",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        413.9,
+                        120.1
+                    ],
+                    [
+                        413.9,
+                        142.3
+                    ],
+                    [
+                        503.3,
+                        142.3
+                    ],
+                    [
+                        503.3,
+                        120.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1
+        },
+        "text": "Find obfuscated URLs in file.xls macros.",
+        "type": "Title"
+    },
+    {
+        "element_id": "1af1d2c17433833b1ffcfb6b32c8e4db",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        541.4,
+                        36.0
+                    ],
+                    [
+                        541.4,
+                        46.0
+                    ],
+                    [
+                        719.2,
+                        46.0
+                    ],
+                    [
+                        719.2,
+                        36.0
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1
+        },
+        "text": "/XObject can embed an image for phishing.",
+        "type": "Header"
+    },
+    {
+        "element_id": "874b089c67eaa344065ddd722930c7de",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        541.4,
+                        52.0
+                    ],
+                    [
+                        541.4,
+                        74.3
+                    ],
+                    [
+                        745.9,
+                        74.3
+                    ],
+                    [
+                        745.9,
+                        52.0
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "Be mindful of obfuscation with hex codes, such as /JavaScript vs. /J#61vaScript. (See examples.)",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "0f8007759de45840bb63bd7ea61e0e65",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        541.4,
+                        79.8
+                    ],
+                    [
+                        541.4,
+                        115.1
+                    ],
+                    [
+                        722.0,
+                        115.1
+                    ],
+                    [
+                        722.0,
+                        79.8
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "links": [
+                {
+                    "start_index": 34,
+                    "text": "pdfid . py",
+                    "url": "https://blog.didierstevens.com/programs/pdf-tools/"
+                }
+            ],
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "Useful PDF File Analysis Commands pdfid.py file.pdf -n",
+        "type": "Title"
+    },
+    {
+        "element_id": "b3b6f64ab04f9c1e2f5c70acf9acf382",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        627.7,
+                        94.5
+                    ],
+                    [
+                        627.7,
+                        116.8
+                    ],
+                    [
+                        764.9,
+                        116.8
+                    ],
+                    [
+                        764.9,
+                        94.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "Display risky keywords present in file file.pdf.",
+        "type": "Title"
+    },
+    {
+        "element_id": "969fc7dc951bf4bfbf7a187023b60814",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        546.7,
+                        123.4
+                    ],
+                    [
+                        546.7,
+                        143.1
+                    ],
+                    [
+                        615.9,
+                        143.1
+                    ],
+                    [
+                        615.9,
+                        123.4
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "pdf-parser.py file.pdf -a",
+        "type": "Title"
+    },
+    {
+        "element_id": "35676cace554a92a9ce93a43e2fe31a7",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        627.7,
+                        122.3
+                    ],
+                    [
+                        627.7,
+                        144.6
+                    ],
+                    [
+                        762.2,
+                        144.6
+                    ],
+                    [
+                        762.2,
+                        122.3
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "969fc7dc951bf4bfbf7a187023b60814"
+        },
+        "text": "Show stats about keywords. Add \u201c-O\u201d to include object streams.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "4d852a3b71037c8191795dbe3e303296",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        50.5,
+                        152.1
+                    ],
+                    [
+                        50.5,
+                        162.1
+                    ],
+                    [
+                        243.8,
+                        162.1
+                    ],
+                    [
+                        243.8,
+                        152.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "macros, JavaScript, or other suspicious objects.",
+        "type": "Title"
+    },
+    {
+        "element_id": "07d805677de13a28d5acf7ac5f0dfe53",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        32.5,
+                        167.9
+                    ],
+                    [
+                        32.5,
+                        178.3
+                    ],
+                    [
+                        245.1,
+                        178.3
+                    ],
+                    [
+                        245.1,
+                        167.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "4d852a3b71037c8191795dbe3e303296"
+        },
+        "text": "3. Extract suspicious code or objects from the file.",
+        "type": "ListItem"
+    },
+    {
+        "element_id": "bea81324eacc4770a1665cdd213d01f7",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        32.5,
+                        183.9
+                    ],
+                    [
+                        32.5,
+                        194.3
+                    ],
+                    [
+                        42.8,
+                        194.3
+                    ],
+                    [
+                        42.8,
+                        183.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "4d852a3b71037c8191795dbe3e303296"
+        },
+        "text": "4.",
+        "type": "UncategorizedText"
+    },
+    {
+        "element_id": "163fc32562881b8d7f7c8c8d6330850f",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        50.5,
+                        184.3
+                    ],
+                    [
+                        50.5,
+                        206.6
+                    ],
+                    [
+                        238.1,
+                        206.6
+                    ],
+                    [
+                        238.1,
+                        184.3
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "If relevant, deobfuscate and examine macros, JavaScript, or other embedded code.",
+        "type": "Title"
+    },
+    {
+        "element_id": "44b1428cd77b30fcf3960bf64974b2e8",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        32.5,
+                        212.9
+                    ],
+                    [
+                        32.5,
+                        250.4
+                    ],
+                    [
+                        253.1,
+                        250.4
+                    ],
+                    [
+                        253.1,
+                        212.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "163fc32562881b8d7f7c8c8d6330850f"
+        },
+        "text": "If relevant, emulate, disassemble and/or debug shellcode that you extracted from the document. 6. Understand the next steps in the infection chain.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "e83761f9a325b136e2442e0c36e7ea6d",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        32.5,
+                        212.5
+                    ],
+                    [
+                        32.5,
+                        222.9
+                    ],
+                    [
+                        42.8,
+                        222.9
+                    ],
+                    [
+                        42.8,
+                        212.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "163fc32562881b8d7f7c8c8d6330850f"
+        },
+        "text": "5.",
+        "type": "UncategorizedText"
+    },
+    {
+        "element_id": "e8ae35c428386dd679b2394886ad09e9",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        32.5,
+                        258.9
+                    ],
+                    [
+                        32.5,
+                        296.6
+                    ],
+                    [
+                        249.8,
+                        296.6
+                    ],
+                    [
+                        249.8,
+                        258.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "163fc32562881b8d7f7c8c8d6330850f"
+        },
+        "text": "Microsoft Office Format Notes Binary Microsoft Office document files (.doc, .xls, etc.) use the OLE2 (a.k.a. Structured Storage) format.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "597f049c59df3acc134b0480e0d4b143",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        32.5,
+                        302.9
+                    ],
+                    [
+                        32.5,
+                        325.1
+                    ],
+                    [
+                        242.4,
+                        325.1
+                    ],
+                    [
+                        242.4,
+                        302.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "163fc32562881b8d7f7c8c8d6330850f"
+        },
+        "text": "SRP streams in OLE2 documents sometimes store a cached version of earlier VBA macro code.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "aa95844fda9ee2b3a7d67f836f540d5f",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        32.5,
+                        331.1
+                    ],
+                    [
+                        32.5,
+                        353.4
+                    ],
+                    [
+                        248.3,
+                        353.4
+                    ],
+                    [
+                        248.3,
+                        331.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "163fc32562881b8d7f7c8c8d6330850f"
+        },
+        "text": "OOXML document files (.docx, .xlsm, etc.) supported by Microsoft Office are compressed zip archives.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "70664f05a6afabd97645dd829a254fe7",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        32.5,
+                        359.6
+                    ],
+                    [
+                        32.5,
+                        381.9
+                    ],
+                    [
+                        245.0,
+                        381.9
+                    ],
+                    [
+                        245.0,
+                        359.6
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "163fc32562881b8d7f7c8c8d6330850f"
+        },
+        "text": "VBA macros in OOXML documents are stored inside an OLE2 binary file, which is within the zip archive.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "704643e2373ca0aebf94b9faba1eec80",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        32.5,
+                        388.1
+                    ],
+                    [
+                        32.5,
+                        478.5
+                    ],
+                    [
+                        252.6,
+                        478.5
+                    ],
+                    [
+                        252.6,
+                        388.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "links": [
+                {
+                    "start_index": 225,
+                    "text": "zipdump . py",
+                    "url": "https://videos.didierstevens.com/2014/08/14/zipdump-py/"
+                }
+            ],
+            "page_number": 1,
+            "parent_id": "163fc32562881b8d7f7c8c8d6330850f"
+        },
+        "text": "Excel supports XLM macros that are embedded as formulas in sheets without the OLE2 binary file. RTF documents don\u2019t support macros but can contain malicious embedded files and objects. Useful MS Office File Analysis Commands zipdump.py file.pptx",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "90ff5440a258a9d67d90627c5615bbe2",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        136.8,
+                        457.9
+                    ],
+                    [
+                        136.8,
+                        480.2
+                    ],
+                    [
+                        255.5,
+                        480.2
+                    ],
+                    [
+                        255.5,
+                        457.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "Examine contents of OOXML file file.pptx.",
+        "type": "Title"
+    },
+    {
+        "element_id": "5357726b5deec8b6ed6fe40a9d5bfc75",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        37.8,
+                        487.0
+                    ],
+                    [
+                        37.8,
+                        506.5
+                    ],
+                    [
+                        126.8,
+                        506.5
+                    ],
+                    [
+                        126.8,
+                        487.0
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "zipdump.py file.pptx -s 3 -d",
+        "type": "Title"
+    },
+    {
+        "element_id": "3e2272e7422b49f4c3b367ba0acb307e",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        136.8,
+                        485.7
+                    ],
+                    [
+                        136.8,
+                        507.9
+                    ],
+                    [
+                        256.3,
+                        507.9
+                    ],
+                    [
+                        256.3,
+                        485.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "Extract file with index 3 from file.pptx to STDOUT.",
+        "type": "Title"
+    },
+    {
+        "element_id": "04e005927b61671d74cb93f68e940d67",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        37.8,
+                        514.8
+                    ],
+                    [
+                        37.8,
+                        523.8
+                    ],
+                    [
+                        122.0,
+                        523.8
+                    ],
+                    [
+                        122.0,
+                        514.8
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "olevba file.xlsm",
+        "type": "Title"
+    },
+    {
+        "element_id": "0fd936dfe657db80c3cb7f7fa31903fd",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        136.8,
+                        513.7
+                    ],
+                    [
+                        136.8,
+                        536.0
+                    ],
+                    [
+                        246.0,
+                        536.0
+                    ],
+                    [
+                        246.0,
+                        513.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "Locate and extract macros from file.xlsm.",
+        "type": "Title"
+    },
+    {
+        "element_id": "357007883a3f07aaf2d4661140388f37",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        292.4,
+                        149.1
+                    ],
+                    [
+                        292.4,
+                        168.6
+                    ],
+                    [
+                        336.8,
+                        168.6
+                    ],
+                    [
+                        336.8,
+                        149.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "vmonkey file.doc",
+        "type": "Title"
+    },
+    {
+        "element_id": "4ae4f3505e3bd9855ce7acab73be1a78",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        373.4,
+                        148.1
+                    ],
+                    [
+                        373.4,
+                        170.3
+                    ],
+                    [
+                        509.6,
+                        170.3
+                    ],
+                    [
+                        509.6,
+                        148.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "357007883a3f07aaf2d4661140388f37"
+        },
+        "text": "Emulate the execution of macros in file.doc to analyze them.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "d157214abd9bce949f693a6753107597",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        292.4,
+                        177.1
+                    ],
+                    [
+                        292.4,
+                        196.6
+                    ],
+                    [
+                        366.8,
+                        196.6
+                    ],
+                    [
+                        366.8,
+                        177.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "evilclippy -uu file.ppt",
+        "type": "Title"
+    },
+    {
+        "element_id": "b0f823626188dd8530b16b379d0ba5f5",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        373.4,
+                        176.1
+                    ],
+                    [
+                        373.4,
+                        198.3
+                    ],
+                    [
+                        498.8,
+                        198.3
+                    ],
+                    [
+                        498.8,
+                        176.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "d157214abd9bce949f693a6753107597"
+        },
+        "text": "Remove the password prompt from macros in file.ppt.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "4d9222b1eaf62f3479fabb32889cc8c2",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        292.4,
+                        205.1
+                    ],
+                    [
+                        292.4,
+                        214.1
+                    ],
+                    [
+                        376.6,
+                        214.1
+                    ],
+                    [
+                        376.6,
+                        205.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "msoffcrypto-tool",
+        "type": "Title"
+    },
+    {
+        "element_id": "6891e1d18e5e56f7609d08540dcf3e54",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        292.4,
+                        218.7
+                    ],
+                    [
+                        292.4,
+                        238.2
+                    ],
+                    [
+                        371.6,
+                        238.2
+                    ],
+                    [
+                        371.6,
+                        218.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "infile.docm outfile.docm -p",
+        "type": "Title"
+    },
+    {
+        "element_id": "6402c085b918f1e1bf2fcac542edc2bf",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        391.4,
+                        203.8
+                    ],
+                    [
+                        391.4,
+                        238.4
+                    ],
+                    [
+                        510.1,
+                        238.4
+                    ],
+                    [
+                        510.1,
+                        203.8
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "6891e1d18e5e56f7609d08540dcf3e54"
+        },
+        "text": "Decrypt outfile.docm using specified password to create outfile.docm.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "b8b31621f33c0e3a1d004d7aef27240a",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        292.4,
+                        245.2
+                    ],
+                    [
+                        292.4,
+                        264.7
+                    ],
+                    [
+                        342.1,
+                        264.7
+                    ],
+                    [
+                        342.1,
+                        245.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "pcodedmp file.doc",
+        "type": "Title"
+    },
+    {
+        "element_id": "704c025835f378ed004cec035743284a",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        391.4,
+                        244.1
+                    ],
+                    [
+                        391.4,
+                        266.4
+                    ],
+                    [
+                        505.9,
+                        266.4
+                    ],
+                    [
+                        505.9,
+                        244.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "Disassemble VBA-stomped p-code macro from file.doc.",
+        "type": "Title"
+    },
+    {
+        "element_id": "4829985eb32c1854ee9a5e51999c9d0c",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        292.4,
+                        273.2
+                    ],
+                    [
+                        292.4,
+                        292.7
+                    ],
+                    [
+                        347.1,
+                        292.7
+                    ],
+                    [
+                        347.1,
+                        273.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "pcode2code file.doc",
+        "type": "Title"
+    },
+    {
+        "element_id": "3b32e3d760b1ecedc1ffa8cb091a4d6a",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        391.4,
+                        272.1
+                    ],
+                    [
+                        391.4,
+                        294.4
+                    ],
+                    [
+                        505.9,
+                        294.4
+                    ],
+                    [
+                        505.9,
+                        272.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "Decompile VBA-stomped p-code macro from file.doc.",
+        "type": "Title"
+    },
+    {
+        "element_id": "2b5a6ef4438c5ebd2054b8d6361899df",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        292.4,
+                        300.9
+                    ],
+                    [
+                        292.4,
+                        320.4
+                    ],
+                    [
+                        342.1,
+                        320.4
+                    ],
+                    [
+                        342.1,
+                        300.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "rtfobj.py file.rtf",
+        "type": "Title"
+    },
+    {
+        "element_id": "e0e292560d3b9962f47cccb482070d77",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        391.4,
+                        299.9
+                    ],
+                    [
+                        391.4,
+                        322.1
+                    ],
+                    [
+                        499.8,
+                        322.1
+                    ],
+                    [
+                        499.8,
+                        299.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "2b5a6ef4438c5ebd2054b8d6361899df"
+        },
+        "text": "Extract objects embedded into RTF file.rtf.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "bf4195e61dca6994a488ab63927511fc",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        292.4,
+                        328.9
+                    ],
+                    [
+                        292.4,
+                        348.5
+                    ],
+                    [
+                        347.1,
+                        348.5
+                    ],
+                    [
+                        347.1,
+                        328.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "rtfdump.py file.rtf",
+        "type": "Title"
+    },
+    {
+        "element_id": "8a35645c27bb08816077a236a29551d7",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        391.4,
+                        327.9
+                    ],
+                    [
+                        391.4,
+                        350.1
+                    ],
+                    [
+                        505.1,
+                        350.1
+                    ],
+                    [
+                        505.1,
+                        327.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "List groups and structure of RTF file file.rtf.",
+        "type": "Title"
+    },
+    {
+        "element_id": "84a2cee419be94f20a792b7a222bccdf",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        292.4,
+                        357.0
+                    ],
+                    [
+                        292.4,
+                        376.5
+                    ],
+                    [
+                        351.8,
+                        376.5
+                    ],
+                    [
+                        351.8,
+                        357.0
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "rtfdump.py file.rtf -O",
+        "type": "Title"
+    },
+    {
+        "element_id": "d93d7e60a83dbf727bb07eeab85b7837",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        391.4,
+                        355.6
+                    ],
+                    [
+                        391.4,
+                        377.9
+                    ],
+                    [
+                        501.7,
+                        377.9
+                    ],
+                    [
+                        501.7,
+                        355.6
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "Examine objects in RTF file file.rtf.",
+        "type": "Title"
+    },
+    {
+        "element_id": "e1601be396e3af8b3d0a11fa82e5aa44",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        292.4,
+                        384.7
+                    ],
+                    [
+                        292.4,
+                        404.2
+                    ],
+                    [
+                        391.6,
+                        404.2
+                    ],
+                    [
+                        391.6,
+                        384.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "rtfdump.py file.rtf -s 5 -H -d",
+        "type": "Title"
+    },
+    {
+        "element_id": "31cbcc1edba30f5d3102fcdc194983fe",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        400.4,
+                        383.6
+                    ],
+                    [
+                        400.4,
+                        405.9
+                    ],
+                    [
+                        507.6,
+                        405.9
+                    ],
+                    [
+                        507.6,
+                        383.6
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "Extract hex contents from group in RTF file file.rtf.",
+        "type": "Title"
+    },
+    {
+        "element_id": "66c9fff889b3aaa7bbdbd6f7e4c8a511",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        292.4,
+                        412.7
+                    ],
+                    [
+                        292.4,
+                        432.2
+                    ],
+                    [
+                        376.6,
+                        432.2
+                    ],
+                    [
+                        376.6,
+                        412.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "xlmdeobfuscator --file file.xlsm",
+        "type": "Title"
+    },
+    {
+        "element_id": "44d5f3b5563a6bfb0e5d403fe70e38ca",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        400.4,
+                        411.7
+                    ],
+                    [
+                        400.4,
+                        433.9
+                    ],
+                    [
+                        510.4,
+                        433.9
+                    ],
+                    [
+                        510.4,
+                        411.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "Deobfuscate XLM (Excel 4) macros in file.xlsm.",
+        "type": "Title"
+    },
+    {
+        "element_id": "cd40afdc80fd4a1b1d03074dd5ea7e84",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        286.9,
+                        440.9
+                    ],
+                    [
+                        286.9,
+                        478.7
+                    ],
+                    [
+                        496.9,
+                        478.7
+                    ],
+                    [
+                        496.9,
+                        440.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "44d5f3b5563a6bfb0e5d403fe70e38ca"
+        },
+        "text": "Risky PDF Keywords /OpenAction and /AA specify the script or action to run automatically.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "8ea696717572b99494966ae7685bdf79",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        286.9,
+                        483.9
+                    ],
+                    [
+                        286.9,
+                        506.2
+                    ],
+                    [
+                        487.2,
+                        506.2
+                    ],
+                    [
+                        487.2,
+                        483.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "44d5f3b5563a6bfb0e5d403fe70e38ca"
+        },
+        "text": "/JavaScript, /JS, /AcroForm, and /XFA can specify JavaScript to run.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "e9aa8e442baa0ef57c11ddff62e01715",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        286.9,
+                        512.5
+                    ],
+                    [
+                        286.9,
+                        522.5
+                    ],
+                    [
+                        460.7,
+                        522.5
+                    ],
+                    [
+                        460.7,
+                        512.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "44d5f3b5563a6bfb0e5d403fe70e38ca"
+        },
+        "text": "/URI accesses a URL, perhaps for phishing.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "ac807bab29347074f4b07c1865e30a7d",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        286.9,
+                        528.5
+                    ],
+                    [
+                        286.9,
+                        538.5
+                    ],
+                    [
+                        484.4,
+                        538.5
+                    ],
+                    [
+                        484.4,
+                        528.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "44d5f3b5563a6bfb0e5d403fe70e38ca"
+        },
+        "text": "/SubmitForm and /GoToR can send data to URL.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "1c49dc4e06411eb0fbe6e0d62976093d",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        286.9,
+                        544.7
+                    ],
+                    [
+                        286.9,
+                        554.7
+                    ],
+                    [
+                        490.9,
+                        554.7
+                    ],
+                    [
+                        490.9,
+                        544.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "44d5f3b5563a6bfb0e5d403fe70e38ca"
+        },
+        "text": "/ObjStm can hide objects inside an object stream.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "926ce147bc8881a5c5166779aa9f4cf9",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        546.7,
+                        151.4
+                    ],
+                    [
+                        546.7,
+                        170.9
+                    ],
+                    [
+                        620.9,
+                        170.9
+                    ],
+                    [
+                        620.9,
+                        151.4
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "pdf-parser.py file.pdf -o id",
+        "type": "Title"
+    },
+    {
+        "element_id": "4cf68fe6dd6d4c6a383e364094240fb0",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        627.7,
+                        150.3
+                    ],
+                    [
+                        627.7,
+                        172.6
+                    ],
+                    [
+                        766.0,
+                        172.6
+                    ],
+                    [
+                        766.0,
+                        150.3
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "926ce147bc8881a5c5166779aa9f4cf9"
+        },
+        "text": "Display contents of object id. Add \u201c-d\u201d to dump object\u2019s stream.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "191f5b8ed14171a78ec64d07b10fc5e4",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        546.7,
+                        180.1
+                    ],
+                    [
+                        546.7,
+                        199.6
+                    ],
+                    [
+                        620.9,
+                        199.6
+                    ],
+                    [
+                        620.9,
+                        180.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "pdf-parser.py file.pdf -r id",
+        "type": "Title"
+    },
+    {
+        "element_id": "6d4a82e565c66efd80be9ae58d9e01c6",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        660.2,
+                        179.1
+                    ],
+                    [
+                        660.2,
+                        201.3
+                    ],
+                    [
+                        742.2,
+                        201.3
+                    ],
+                    [
+                        742.2,
+                        179.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "191f5b8ed14171a78ec64d07b10fc5e4"
+        },
+        "text": "Display objects that reference object id.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "c393aa5bb1b3861cf4ea2603c0c29a31",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        546.7,
+                        208.2
+                    ],
+                    [
+                        546.7,
+                        238.2
+                    ],
+                    [
+                        650.8,
+                        238.2
+                    ],
+                    [
+                        650.8,
+                        208.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "qpdf --password=pass --decrypt infile.pdf outfile.pdf",
+        "type": "Title"
+    },
+    {
+        "element_id": "e1343abd554378eb50cffce45943b93d",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        660.2,
+                        207.1
+                    ],
+                    [
+                        660.2,
+                        241.6
+                    ],
+                    [
+                        760.7,
+                        241.6
+                    ],
+                    [
+                        760.7,
+                        207.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "c393aa5bb1b3861cf4ea2603c0c29a31"
+        },
+        "text": "Decrypt infile.pdf using password pass to create outfile.pdf.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "beabe9d2399dc4e92286332d453452fa",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        541.4,
+                        248.4
+                    ],
+                    [
+                        541.4,
+                        283.7
+                    ],
+                    [
+                        749.0,
+                        283.7
+                    ],
+                    [
+                        749.0,
+                        248.4
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "links": [
+                {
+                    "start_index": 38,
+                    "text": "xorsearch",
+                    "url": "https://blog.didierstevens.com/2014/09/29/update-xorsearch-with-shellcode-detector/"
+                }
+            ],
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "Shellcode and Other Analysis Commands xorsearch -W -d 3 file.bin",
+        "type": "Title"
+    },
+    {
+        "element_id": "7e40d4ecca0a26bfad8b062afe80516b",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        628.7,
+                        263.1
+                    ],
+                    [
+                        628.7,
+                        285.4
+                    ],
+                    [
+                        761.1,
+                        285.4
+                    ],
+                    [
+                        761.1,
+                        263.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "Locate shellcode patterns inside the binary file file.bin.",
+        "type": "Title"
+    },
+    {
+        "element_id": "6910e4532d79533e0200bc5f896fc44c",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        546.7,
+                        292.2
+                    ],
+                    [
+                        546.7,
+                        311.7
+                    ],
+                    [
+                        596.4,
+                        311.7
+                    ],
+                    [
+                        596.4,
+                        292.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "scdbgc /f file.bin",
+        "type": "Title"
+    },
+    {
+        "element_id": "cad6f4da420cc7fcb57cc1de78b12817",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        614.2,
+                        291.1
+                    ],
+                    [
+                        614.2,
+                        313.4
+                    ],
+                    [
+                        764.3,
+                        313.4
+                    ],
+                    [
+                        764.3,
+                        291.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "6910e4532d79533e0200bc5f896fc44c"
+        },
+        "text": "Emulate execution of shellcode in file.bin. Use \u201c/off\u201d to specify offset.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "bfef7fa8b1a2b0a46298ce055615052f",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        546.7,
+                        319.9
+                    ],
+                    [
+                        546.7,
+                        339.7
+                    ],
+                    [
+                        606.2,
+                        339.7
+                    ],
+                    [
+                        606.2,
+                        319.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "runsc32 -f file.bin -n",
+        "type": "Title"
+    },
+    {
+        "element_id": "84d5ca88991cfebf4f18c7e8132cde3a",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        618.7,
+                        318.9
+                    ],
+                    [
+                        618.7,
+                        341.1
+                    ],
+                    [
+                        765.3,
+                        341.1
+                    ],
+                    [
+                        765.3,
+                        318.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "bfef7fa8b1a2b0a46298ce055615052f"
+        },
+        "text": "Execute shellcode in file.bin to observe behavior in an isolated lab.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "4ff02d0e7c2ce5a7b23f51cbd388463d",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        546.7,
+                        348.0
+                    ],
+                    [
+                        546.7,
+                        367.5
+                    ],
+                    [
+                        616.2,
+                        367.5
+                    ],
+                    [
+                        616.2,
+                        348.0
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "base64dump.py file.txt",
+        "type": "Title"
+    },
+    {
+        "element_id": "86e7ffaf85ce668bac03e6e98e9ecf95",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        628.7,
+                        346.9
+                    ],
+                    [
+                        628.7,
+                        369.1
+                    ],
+                    [
+                        743.7,
+                        369.1
+                    ],
+                    [
+                        743.7,
+                        346.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "List Base64-encoded strings present in file file.txt.",
+        "type": "Title"
+    },
+    {
+        "element_id": "9296d6bb1e98ec35bfc5dece8db9d664",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        546.7,
+                        376.0
+                    ],
+                    [
+                        546.7,
+                        395.5
+                    ],
+                    [
+                        620.9,
+                        395.5
+                    ],
+                    [
+                        620.9,
+                        376.0
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
+        },
+        "text": "numbers-to- string.py file",
+        "type": "Title"
+    },
+    {
+        "element_id": "0bda4e6d28210f37fde9aaec3c615a77",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        627.7,
+                        374.9
+                    ],
+                    [
+                        627.7,
+                        397.1
+                    ],
+                    [
+                        761.2,
+                        397.1
+                    ],
+                    [
+                        761.2,
+                        374.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "9296d6bb1e98ec35bfc5dece8db9d664"
+        },
+        "text": "Convert numbers that represent characters in file to a string.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "9fa07ac2eca45c5ec2c2a2c4534d2f6f",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        541.4,
+                        403.9
+                    ],
+                    [
+                        541.4,
+                        441.9
+                    ],
+                    [
+                        753.2,
+                        441.9
+                    ],
+                    [
+                        753.2,
+                        403.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "links": [
+                {
+                    "start_index": 35,
+                    "text": "SpiderMonkey ,",
+                    "url": "https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey"
+                },
+                {
+                    "start_index": 49,
+                    "text": "cscript ,",
+                    "url": "https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cscript"
+                },
+                {
+                    "start_index": 62,
+                    "text": "box - js",
+                    "url": "https://github.com/CapacitorSet/box-js"
+                }
+            ],
+            "page_number": 1,
+            "parent_id": "9296d6bb1e98ec35bfc5dece8db9d664"
+        },
+        "text": "Additional Document Analysis Tools SpiderMonkey, cscript, and box-js help deobfuscate JavaScript that you extract from document files.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "3fb626234ac066a34c52395bb3032b75",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        541.4,
+                        448.2
+                    ],
+                    [
+                        541.4,
+                        470.4
+                    ],
+                    [
+                        733.6,
+                        470.4
+                    ],
+                    [
+                        733.6,
+                        448.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "9296d6bb1e98ec35bfc5dece8db9d664"
+        },
+        "text": "Use the debugger built into Microsoft Office to deobfuscate macros in an isolated lab.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "d77c60f694e726fcf54e796c814bfc31",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        541.4,
+                        476.4
+                    ],
+                    [
+                        541.4,
+                        498.7
+                    ],
+                    [
+                        749.5,
+                        498.7
+                    ],
+                    [
+                        749.5,
+                        476.4
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "9296d6bb1e98ec35bfc5dece8db9d664"
+        },
+        "text": "Use AMSIScriptContentRetrieval.ps1 to observe Microsoft Office execute macros in an isolated lab.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "be5c02fb865038bda2e085e2f209d3f4",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        541.4,
+                        504.9
+                    ],
+                    [
+                        541.4,
+                        527.2
+                    ],
+                    [
+                        742.2,
+                        527.2
+                    ],
+                    [
+                        742.2,
+                        504.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "9296d6bb1e98ec35bfc5dece8db9d664"
+        },
+        "text": "Some automated analysis sandboxes can analyze aspects of malicious document files.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "5599c3f02d73dc1c6a13e4cc449d780a",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        541.4,
+                        532.5
+                    ],
+                    [
+                        541.4,
+                        554.7
+                    ],
+                    [
+                        752.5,
+                        554.7
+                    ],
+                    [
+                        752.5,
+                        532.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1,
+            "parent_id": "9296d6bb1e98ec35bfc5dece8db9d664"
+        },
+        "text": "REMnux distro includes many of the free document analysis tools mentioned above.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "75805ed749bafa131b8b4d86e555a665",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 612.0,
+                "layout_width": 792.0,
+                "points": [
+                    [
+                        37.5,
+                        562.7
+                    ],
+                    [
+                        37.5,
+                        583.7
+                    ],
+                    [
+                        760.5,
+                        583.7
+                    ],
+                    [
+                        760.5,
+                        562.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "analyzing-malicious-document-files.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:37",
+            "page_number": 1
+        },
+        "text": "Authored by Lenny Zeltser with feedback from Pedro Bueno and Didier Stevens. Malicious document analysis and related topics are covered in the SANS Institute course FOR610: Reverse-Engineering Malware, which Lenny co-authored. Creative Commons v3 \u201cAttribution\u201d License for this cheat sheet version 4.1. More at zeltser.com/cheat-sheets.",
+        "type": "Footer"
+    }
+]

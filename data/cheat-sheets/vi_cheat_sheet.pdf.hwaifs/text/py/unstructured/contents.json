@@ -1,0 +1,2731 @@
+[
+    {
+        "element_id": "8dbc7ece0278b11d916f5895b7260f40",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        450.5,
+                        35.7
+                    ],
+                    [
+                        450.5,
+                        72.4
+                    ],
+                    [
+                        552.2,
+                        72.4
+                    ],
+                    [
+                        552.2,
+                        35.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1
+        },
+        "text": "VI \u201cCheat\u201d Sheet ACNS Bulletin ED\u201303 February 1995",
+        "type": "Header"
+    },
+    {
+        "element_id": "22bd83ea0704c5400a2513eaa0077c4a",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        195.0,
+                        85.8
+                    ],
+                    [
+                        195.0,
+                        109.8
+                    ],
+                    [
+                        380.8,
+                        109.8
+                    ],
+                    [
+                        380.8,
+                        85.8
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "vi Editor \u201cCheat Sheet\u201d",
+        "type": "Title"
+    },
+    {
+        "element_id": "e841eeeb63fc3befec4e7791d2d06ecd",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        60.0,
+                        127.6
+                    ],
+                    [
+                        60.0,
+                        156.6
+                    ],
+                    [
+                        178.3,
+                        156.6
+                    ],
+                    [
+                        178.3,
+                        127.6
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "22bd83ea0704c5400a2513eaa0077c4a"
+        },
+        "text": "Invoking vi: Format of vi commands:",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "e2f6024777c8ca35d7e51151520672e9",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        204.0,
+                        127.6
+                    ],
+                    [
+                        204.0,
+                        156.6
+                    ],
+                    [
+                        296.0,
+                        156.6
+                    ],
+                    [
+                        296.0,
+                        127.6
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "vi filename [count][command]",
+        "type": "Title"
+    },
+    {
+        "element_id": "ebe83fd815847a20b5260546796866c9",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        312.0,
+                        144.6
+                    ],
+                    [
+                        312.0,
+                        156.6
+                    ],
+                    [
+                        512.6,
+                        156.6
+                    ],
+                    [
+                        512.6,
+                        144.6
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "e2f6024777c8ca35d7e51151520672e9"
+        },
+        "text": "(count repeats the effect of the command)",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "e0b6c63117a71254bf8e79ec125394c2",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        61.0,
+                        179.1
+                    ],
+                    [
+                        61.0,
+                        191.1
+                    ],
+                    [
+                        265.1,
+                        191.1
+                    ],
+                    [
+                        265.1,
+                        179.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "Command mode versus input mode",
+        "type": "Title"
+    },
+    {
+        "element_id": "1600c6ebe3d946dbe83490f3510d4e4a",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        313.0,
+                        179.1
+                    ],
+                    [
+                        313.0,
+                        191.1
+                    ],
+                    [
+                        477.7,
+                        191.1
+                    ],
+                    [
+                        477.7,
+                        179.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "File management commands",
+        "type": "Title"
+    },
+    {
+        "element_id": "e7c61f4a966eb2d65d281dc8001538a1",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        61.0,
+                        203.7
+                    ],
+                    [
+                        61.0,
+                        282.7
+                    ],
+                    [
+                        299.3,
+                        282.7
+                    ],
+                    [
+                        299.3,
+                        203.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "1600c6ebe3d946dbe83490f3510d4e4a"
+        },
+        "text": "Vi starts in command mode. The positioning commands operate only while vi is in command mode. You switch vi to input mode by entering any one of several vi input com- mands. (See next section.) Once in input mode, any charac- ter you type is taken to be text and is added to the file. You cannot execute any commands until you exit input mode. To exit input mode, press the escape (Esc) key.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "4a0358a438d8a2af6480452d6f38e12e",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        319.0,
+                        199.7
+                    ],
+                    [
+                        319.0,
+                        263.7
+                    ],
+                    [
+                        353.2,
+                        263.7
+                    ],
+                    [
+                        353.2,
+                        199.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": ":w name :wq :q! ZZ :sh",
+        "type": "Title"
+    },
+    {
+        "element_id": "b39e5e1b53e135d8768ce57d4d8c6e54",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        400.0,
+                        199.7
+                    ],
+                    [
+                        400.0,
+                        263.7
+                    ],
+                    [
+                        538.2,
+                        263.7
+                    ],
+                    [
+                        538.2,
+                        199.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "4a0358a438d8a2af6480452d6f38e12e"
+        },
+        "text": "Write edit buffer to file name Write to file and quit Quit without saving changes Same as :wq Execute shell commands (<ctrl>d)",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "34a18e5b76b898aa53448794dd2d78e4",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        313.0,
+                        285.6
+                    ],
+                    [
+                        313.0,
+                        297.6
+                    ],
+                    [
+                        408.9,
+                        297.6
+                    ],
+                    [
+                        408.9,
+                        285.6
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "Window motions",
+        "type": "Title"
+    },
+    {
+        "element_id": "a194afaceaa0940ed028a98e884c5466",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        61.0,
+                        304.6
+                    ],
+                    [
+                        61.0,
+                        316.6
+                    ],
+                    [
+                        241.8,
+                        316.6
+                    ],
+                    [
+                        241.8,
+                        304.6
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "Input commands (end with Esc)",
+        "type": "Title"
+    },
+    {
+        "element_id": "166848a883fa414f0285ded885aadc55",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        67.0,
+                        325.2
+                    ],
+                    [
+                        67.0,
+                        389.2
+                    ],
+                    [
+                        88.3,
+                        389.2
+                    ],
+                    [
+                        88.3,
+                        325.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "a i o O :r file",
+        "type": "Title"
+    },
+    {
+        "element_id": "bc6885171449451612ef063f85b0a192",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        148.0,
+                        325.2
+                    ],
+                    [
+                        148.0,
+                        389.2
+                    ],
+                    [
+                        257.6,
+                        389.2
+                    ],
+                    [
+                        257.6,
+                        325.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "166848a883fa414f0285ded885aadc55"
+        },
+        "text": "Append after cursor Insert before cursor Open line below Open line above Insert file after current line",
+        "type": "UncategorizedText"
+    },
+    {
+        "element_id": "dc451826ad5bc8cb188f1520bb30e5f3",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        61.0,
+                        396.7
+                    ],
+                    [
+                        61.0,
+                        429.7
+                    ],
+                    [
+                        299.7,
+                        429.7
+                    ],
+                    [
+                        299.7,
+                        396.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "166848a883fa414f0285ded885aadc55"
+        },
+        "text": "Any of these commands leaves vi in input mode until you press Esc. Pressing the RETURN key will not take you out of input mode.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "29c65a4fbeab5bcfd4a10b708c6123e1",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        61.0,
+                        451.6
+                    ],
+                    [
+                        61.0,
+                        463.6
+                    ],
+                    [
+                        247.7,
+                        463.6
+                    ],
+                    [
+                        247.7,
+                        451.6
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "Change commands (Input mode)",
+        "type": "Title"
+    },
+    {
+        "element_id": "efea049f8b4117d992b95905f510e575",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        67.0,
+                        472.2
+                    ],
+                    [
+                        67.0,
+                        563.2
+                    ],
+                    [
+                        78.7,
+                        563.2
+                    ],
+                    [
+                        78.7,
+                        472.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "29c65a4fbeab5bcfd4a10b708c6123e1"
+        },
+        "text": "cw cc c$ rc R s S",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "5eb0c22668d92770541aea11fc67322e",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        67.0,
+                        574.7
+                    ],
+                    [
+                        67.0,
+                        588.7
+                    ],
+                    [
+                        75.4,
+                        588.7
+                    ],
+                    [
+                        75.4,
+                        574.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "29c65a4fbeab5bcfd4a10b708c6123e1"
+        },
+        "text": ".",
+        "type": "UncategorizedText"
+    },
+    {
+        "element_id": "3bb806d270847cc85d5922f7b08dc3bb",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        148.0,
+                        472.2
+                    ],
+                    [
+                        148.0,
+                        588.2
+                    ],
+                    [
+                        290.2,
+                        588.2
+                    ],
+                    [
+                        290.2,
+                        472.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "29c65a4fbeab5bcfd4a10b708c6123e1"
+        },
+        "text": "Change word (Esc) Change line (Esc) - blanks line Change to end of line Replace character with c Replace (Esc) - typeover Substitute (Esc) - 1 char with string Substitute (Esc) - Rest of line with text Repeat last change",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "031f6c0c731b63e9754c12c78b3aa1a2",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        61.0,
+                        610.1
+                    ],
+                    [
+                        61.0,
+                        622.1
+                    ],
+                    [
+                        223.5,
+                        622.1
+                    ],
+                    [
+                        223.5,
+                        610.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "Changes during insert mode",
+        "type": "Title"
+    },
+    {
+        "element_id": "2aec76668ac025148226cd6d477f3af7",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        67.0,
+                        630.7
+                    ],
+                    [
+                        67.0,
+                        667.7
+                    ],
+                    [
+                        98.8,
+                        667.7
+                    ],
+                    [
+                        98.8,
+                        630.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "<ctrl>h <ctrl>w <ctrl>u",
+        "type": "Title"
+    },
+    {
+        "element_id": "289cf3e7c6019db62ffe15fbc88d8f56",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        148.0,
+                        630.7
+                    ],
+                    [
+                        148.0,
+                        667.7
+                    ],
+                    [
+                        256.9,
+                        667.7
+                    ],
+                    [
+                        256.9,
+                        630.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "Back one character Back one word Back to beginning of insert",
+        "type": "Title"
+    },
+    {
+        "element_id": "33f008b4d011426976ec5e877fcce056",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        319.0,
+                        306.2
+                    ],
+                    [
+                        319.0,
+                        410.7
+                    ],
+                    [
+                        348.6,
+                        410.7
+                    ],
+                    [
+                        348.6,
+                        306.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "289cf3e7c6019db62ffe15fbc88d8f56"
+        },
+        "text": "<ctrl>d <ctrl>u <ctrl>f <ctrl>b /string ?string <ctrl>l <ctrl>g",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "ac5cf686ae8044c3e046ecef3727f69a",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        319.0,
+                        425.7
+                    ],
+                    [
+                        319.0,
+                        530.2
+                    ],
+                    [
+                        348.1,
+                        530.2
+                    ],
+                    [
+                        348.1,
+                        425.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "289cf3e7c6019db62ffe15fbc88d8f56"
+        },
+        "text": "n N G nG :n z<CR> z. z-",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "3d9429f49d38e53616731cf239efc30c",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        313.0,
+                        552.1
+                    ],
+                    [
+                        313.0,
+                        564.1
+                    ],
+                    [
+                        402.4,
+                        564.1
+                    ],
+                    [
+                        402.4,
+                        552.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "Cursor motions",
+        "type": "Title"
+    },
+    {
+        "element_id": "2bf545304c536b03d8c54a2e601011d1",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        319.0,
+                        572.7
+                    ],
+                    [
+                        319.0,
+                        744.7
+                    ],
+                    [
+                        327.9,
+                        744.7
+                    ],
+                    [
+                        327.9,
+                        572.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "3d9429f49d38e53616731cf239efc30c"
+        },
+        "text": "H M L h j k ^ $ l w b fc ;",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "0dded468fbb866737afedef8516a6969",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        400.0,
+                        306.2
+                    ],
+                    [
+                        400.0,
+                        530.2
+                    ],
+                    [
+                        548.9,
+                        530.2
+                    ],
+                    [
+                        548.9,
+                        306.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "3d9429f49d38e53616731cf239efc30c"
+        },
+        "text": "Scroll down (half a screen) Scroll up (half a screen) Page forward Page backward Search forward Search backward Redraw screen Display current line number and file information Repeat search Repeat search reverse Go to last line Go to line n Go to line n Reposition window: cursor at top Reposition window: cursor in middle Reposition window: cursor at bottom",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "139e2fe602b1d5795f7a57bc0be30431",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        400.0,
+                        572.7
+                    ],
+                    [
+                        400.0,
+                        744.7
+                    ],
+                    [
+                        500.3,
+                        744.7
+                    ],
+                    [
+                        500.3,
+                        572.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 1,
+            "parent_id": "3d9429f49d38e53616731cf239efc30c"
+        },
+        "text": "Upper left corner (home) Middle line Lower left corner Back a character Down a line Up a line Beginning of line End of line Forward a character One word forward Back one word Find c Repeat find (find next c)",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "fc6a3499c84f7eea63c313e14ca52f4d",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        60.0,
+                        59.1
+                    ],
+                    [
+                        60.0,
+                        71.1
+                    ],
+                    [
+                        174.0,
+                        71.1
+                    ],
+                    [
+                        174.0,
+                        59.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "Deletion commands",
+        "type": "Title"
+    },
+    {
+        "element_id": "f9b23625cac9de0a9b685b4a54dfffc4",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        66.0,
+                        79.7
+                    ],
+                    [
+                        66.0,
+                        170.7
+                    ],
+                    [
+                        107.0,
+                        170.7
+                    ],
+                    [
+                        107.0,
+                        79.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "dd or ndd dw dnw d) db D x",
+        "type": "Title"
+    },
+    {
+        "element_id": "dfa462ecebaa951e386ccbda45b25406",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        147.0,
+                        79.7
+                    ],
+                    [
+                        147.0,
+                        170.7
+                    ],
+                    [
+                        271.0,
+                        170.7
+                    ],
+                    [
+                        271.0,
+                        79.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "f9b23625cac9de0a9b685b4a54dfffc4"
+        },
+        "text": "Delete n lines to general buffer Delete word to general buffer Delete n words Delete to end of sentence Delete previous word Delete to end of line Delete character",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "deb0abec9e70d10d9378a8c57ea43102",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        60.0,
+                        192.6
+                    ],
+                    [
+                        60.0,
+                        204.6
+                    ],
+                    [
+                        181.3,
+                        204.6
+                    ],
+                    [
+                        181.3,
+                        192.6
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "f9b23625cac9de0a9b685b4a54dfffc4"
+        },
+        "text": "Recovering deletions",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "f32bd14a8dfd6ac12c5a9d06123597ff",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        66.0,
+                        213.2
+                    ],
+                    [
+                        66.0,
+                        236.7
+                    ],
+                    [
+                        71.6,
+                        236.7
+                    ],
+                    [
+                        71.6,
+                        213.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "p P",
+        "type": "Title"
+    },
+    {
+        "element_id": "6219dcd3679dab374fa35199f5217b89",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        147.0,
+                        213.2
+                    ],
+                    [
+                        147.0,
+                        236.7
+                    ],
+                    [
+                        274.7,
+                        236.7
+                    ],
+                    [
+                        274.7,
+                        213.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "f32bd14a8dfd6ac12c5a9d06123597ff"
+        },
+        "text": "Put general buffer after cursor Put general buffer before cursor",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "c7d291fb1aaafb2e8a57f47d4e0e3b46",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        60.0,
+                        258.6
+                    ],
+                    [
+                        60.0,
+                        270.6
+                    ],
+                    [
+                        157.3,
+                        270.6
+                    ],
+                    [
+                        157.3,
+                        258.6
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "Undo commands",
+        "type": "Title"
+    },
+    {
+        "element_id": "269fcd8a70a50faced595bf888e1a982",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        66.0,
+                        279.2
+                    ],
+                    [
+                        66.0,
+                        302.7
+                    ],
+                    [
+                        73.2,
+                        302.7
+                    ],
+                    [
+                        73.2,
+                        279.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "u U",
+        "type": "Title"
+    },
+    {
+        "element_id": "27d4100b6d9467f1d1361e318c32a52a",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        147.0,
+                        279.2
+                    ],
+                    [
+                        147.0,
+                        302.7
+                    ],
+                    [
+                        246.4,
+                        302.7
+                    ],
+                    [
+                        246.4,
+                        279.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "Undo last change Undo all changes on line",
+        "type": "Title"
+    },
+    {
+        "element_id": "c0415c829431b76788fe1bc3ac500252",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        60.0,
+                        324.6
+                    ],
+                    [
+                        60.0,
+                        336.6
+                    ],
+                    [
+                        214.5,
+                        336.6
+                    ],
+                    [
+                        214.5,
+                        324.6
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "Rearrangement commands",
+        "type": "Title"
+    },
+    {
+        "element_id": "b3af2fe28e2d41a4ebcf837794ae5f71",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        66.0,
+                        345.2
+                    ],
+                    [
+                        66.0,
+                        463.2
+                    ],
+                    [
+                        96.5,
+                        463.2
+                    ],
+                    [
+                        96.5,
+                        345.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "c0415c829431b76788fe1bc3ac500252"
+        },
+        "text": "yy or Y \u201cz6yy yw \u201ca9dd \u201cA9dd \u201cap p P J",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "d9cc66104e5838cd3428aae743b52185",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        147.0,
+                        345.2
+                    ],
+                    [
+                        147.0,
+                        463.2
+                    ],
+                    [
+                        284.8,
+                        463.2
+                    ],
+                    [
+                        284.8,
+                        345.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "c0415c829431b76788fe1bc3ac500252"
+        },
+        "text": "Yank (copy) line to general buffer Yank 6 lines to buffer z Yank word to general buffer Delete 9 lines to buffer a Delete 9 lines; Append to buffer a Put text from buffer a after cursor Put general buffer after cursor Put general buffer before cursor Join lines",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "ec138f9dd68207f3bae9b1df2257dd71",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        60.0,
+                        485.1
+                    ],
+                    [
+                        60.0,
+                        497.1
+                    ],
+                    [
+                        125.4,
+                        497.1
+                    ],
+                    [
+                        125.4,
+                        485.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "Parameters",
+        "type": "Title"
+    },
+    {
+        "element_id": "8d11c847600d2ebe49faaa2ecfeea5c5",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        66.0,
+                        505.7
+                    ],
+                    [
+                        66.0,
+                        527.2
+                    ],
+                    [
+                        104.6,
+                        527.2
+                    ],
+                    [
+                        104.6,
+                        505.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "ec138f9dd68207f3bae9b1df2257dd71"
+        },
+        "text": ":set list :set nolist",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "183bcf52715990b341bfd5379ba2b1a3",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        147.0,
+                        505.7
+                    ],
+                    [
+                        147.0,
+                        527.2
+                    ],
+                    [
+                        273.9,
+                        527.2
+                    ],
+                    [
+                        273.9,
+                        505.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "ec138f9dd68207f3bae9b1df2257dd71"
+        },
+        "text": "Show invisible characters Don\u2019t show invisible characters",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "d76dbd8fc5eadc1544254c1382eead57",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        66.0,
+                        534.7
+                    ],
+                    [
+                        66.0,
+                        556.2
+                    ],
+                    [
+                        122.9,
+                        556.2
+                    ],
+                    [
+                        122.9,
+                        534.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "ec138f9dd68207f3bae9b1df2257dd71"
+        },
+        "text": ":set number :set nonumber",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "94810bf9730ecc071516e35cc8aa4d4d",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        147.0,
+                        534.7
+                    ],
+                    [
+                        147.0,
+                        556.2
+                    ],
+                    [
+                        248.4,
+                        556.2
+                    ],
+                    [
+                        248.4,
+                        534.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "ec138f9dd68207f3bae9b1df2257dd71"
+        },
+        "text": "Show line numbers Don\u2019t show line numbers",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "a489228fd523b49a05c54a2486a54c3b",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        66.0,
+                        563.7
+                    ],
+                    [
+                        66.0,
+                        598.7
+                    ],
+                    [
+                        134.6,
+                        598.7
+                    ],
+                    [
+                        134.6,
+                        563.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "ec138f9dd68207f3bae9b1df2257dd71"
+        },
+        "text": ":set autoindent :set noautoindent :set showmatch",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "c986b4aa525de7279dbdc1ccb0b49445",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        147.0,
+                        563.7
+                    ],
+                    [
+                        147.0,
+                        610.2
+                    ],
+                    [
+                        263.6,
+                        610.2
+                    ],
+                    [
+                        263.6,
+                        563.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "ec138f9dd68207f3bae9b1df2257dd71"
+        },
+        "text": "Indent after carriage return Turn off autoindent Show matching sets of parentheses as they are typed",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "7d805002f117732debd0b22bd4728dfc",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        66.0,
+                        611.7
+                    ],
+                    [
+                        66.0,
+                        621.7
+                    ],
+                    [
+                        228.5,
+                        621.7
+                    ],
+                    [
+                        228.5,
+                        611.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": ":set noshowmatch Turn off showmatch",
+        "type": "Title"
+    },
+    {
+        "element_id": "45a1ea88d8bd74df8ac91874e9e7c400",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        66.0,
+                        629.2
+                    ],
+                    [
+                        66.0,
+                        650.7
+                    ],
+                    [
+                        226.5,
+                        650.7
+                    ],
+                    [
+                        226.5,
+                        629.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "7d805002f117732debd0b22bd4728dfc"
+        },
+        "text": ":set showmode :set noshowmode Turn off showmode",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "81e9c07708ff03c113010ae5b3a11f2f",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        147.0,
+                        629.2
+                    ],
+                    [
+                        147.0,
+                        639.2
+                    ],
+                    [
+                        288.1,
+                        639.2
+                    ],
+                    [
+                        288.1,
+                        629.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "Display mode on last line of screen",
+        "type": "Title"
+    },
+    {
+        "element_id": "82a2829c834904c58b388f3958f5fa3e",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        66.0,
+                        658.2
+                    ],
+                    [
+                        66.0,
+                        668.2
+                    ],
+                    [
+                        92.4,
+                        668.2
+                    ],
+                    [
+                        92.4,
+                        658.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": ":set all",
+        "type": "Title"
+    },
+    {
+        "element_id": "854bcc44b1fec5f20041ded9a6f22dea",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        147.0,
+                        658.2
+                    ],
+                    [
+                        147.0,
+                        679.7
+                    ],
+                    [
+                        256.4,
+                        679.7
+                    ],
+                    [
+                        256.4,
+                        658.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "Show values of all possible parameters",
+        "type": "Title"
+    },
+    {
+        "element_id": "cb53271c6fd51ab459b180036f27bea8",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        315.0,
+                        59.1
+                    ],
+                    [
+                        315.0,
+                        71.1
+                    ],
+                    [
+                        504.5,
+                        71.1
+                    ],
+                    [
+                        504.5,
+                        59.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "854bcc44b1fec5f20041ded9a6f22dea"
+        },
+        "text": "Move text from file old to file new",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "69a684d3a96d7c583e5eb5d8291d0bbd",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        321.0,
+                        79.7
+                    ],
+                    [
+                        321.0,
+                        157.2
+                    ],
+                    [
+                        372.1,
+                        157.2
+                    ],
+                    [
+                        372.1,
+                        79.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "vi old \u201ca10yy :w :e new \u201cap :30,60w new",
+        "type": "Title"
+    },
+    {
+        "element_id": "9848af44734e0388f7bce14300bdd9b6",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        402.0,
+                        93.2
+                    ],
+                    [
+                        402.0,
+                        157.2
+                    ],
+                    [
+                        526.1,
+                        157.2
+                    ],
+                    [
+                        526.1,
+                        93.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "69a684d3a96d7c583e5eb5d8291d0bbd"
+        },
+        "text": "yank 10 lines to buffer a write work buffer edit new file put text from a after cursor Write lines 30 to 60 in file new",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "5540434ea001891b669f8665cf033a0f",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        315.0,
+                        179.1
+                    ],
+                    [
+                        315.0,
+                        191.1
+                    ],
+                    [
+                        526.3,
+                        191.1
+                    ],
+                    [
+                        526.3,
+                        179.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "Regular expressions (search strings)",
+        "type": "Title"
+    },
+    {
+        "element_id": "37c7ebef38e9e5bbcc283ef7c1fe7386",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        321.0,
+                        198.1
+                    ],
+                    [
+                        321.0,
+                        264.1
+                    ],
+                    [
+                        330.0,
+                        264.1
+                    ],
+                    [
+                        330.0,
+                        198.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "5540434ea001891b669f8665cf033a0f"
+        },
+        "text": "^ $ . * .*",
+        "type": "UncategorizedText"
+    },
+    {
+        "element_id": "06326e95ad5e58c22a7a5ca092c7376b",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        402.0,
+                        199.7
+                    ],
+                    [
+                        402.0,
+                        263.7
+                    ],
+                    [
+                        528.9,
+                        263.7
+                    ],
+                    [
+                        528.9,
+                        199.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "5540434ea001891b669f8665cf033a0f"
+        },
+        "text": "Matches beginning of line Matches end of line Matches any single character Matches any previous character Matches any character",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "b39a655ec2551d5caf0ad9302a95726c",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        315.0,
+                        285.6
+                    ],
+                    [
+                        315.0,
+                        297.6
+                    ],
+                    [
+                        491.7,
+                        297.6
+                    ],
+                    [
+                        491.7,
+                        285.6
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "5540434ea001891b669f8665cf033a0f"
+        },
+        "text": "Search and replace commands",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "3e5ddff14a7b13b3683f2f372fcb3fb0",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        315.0,
+                        313.6
+                    ],
+                    [
+                        315.0,
+                        323.6
+                    ],
+                    [
+                        348.3,
+                        323.6
+                    ],
+                    [
+                        348.3,
+                        313.6
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "Syntax:",
+        "type": "Title"
+    },
+    {
+        "element_id": "362ab5fbd8e24813fa8ab4aed0582466",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        339.0,
+                        330.9
+                    ],
+                    [
+                        339.0,
+                        340.9
+                    ],
+                    [
+                        519.0,
+                        340.9
+                    ],
+                    [
+                        519.0,
+                        330.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": ":[address]s/old_text/new_text/",
+        "type": "Title"
+    },
+    {
+        "element_id": "2fffb33189c22f2a7f0ddf2718449097",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        315.0,
+                        355.1
+                    ],
+                    [
+                        315.0,
+                        459.7
+                    ],
+                    [
+                        411.7,
+                        459.7
+                    ],
+                    [
+                        411.7,
+                        355.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "362ab5fbd8e24813fa8ab4aed0582466"
+        },
+        "text": "Address components: . n .+m $ /string/ % [addr1],[addr2]",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "490f53e9a17c2eb3c3f90339790d66ee",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        402.0,
+                        368.7
+                    ],
+                    [
+                        402.0,
+                        459.7
+                    ],
+                    [
+                        513.5,
+                        459.7
+                    ],
+                    [
+                        513.5,
+                        368.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "362ab5fbd8e24813fa8ab4aed0582466"
+        },
+        "text": "Current line Line number n Current line plus m lines Last line A line that contains \"string\" Entire file Specifies a range",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "633c39c177341ab43f6bc1af686fbdf0",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        315.0,
+                        473.6
+                    ],
+                    [
+                        315.0,
+                        483.6
+                    ],
+                    [
+                        361.7,
+                        483.6
+                    ],
+                    [
+                        361.7,
+                        473.6
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": "Examples:",
+        "type": "Title"
+    },
+    {
+        "element_id": "e618eab5afc51a7943215a53f814888c",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        327.0,
+                        491.2
+                    ],
+                    [
+                        327.0,
+                        535.7
+                    ],
+                    [
+                        543.1,
+                        535.7
+                    ],
+                    [
+                        543.1,
+                        491.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "633c39c177341ab43f6bc1af686fbdf0"
+        },
+        "text": "The following example replaces only the first occur- rence of Banana with Kumquat in each of 11 lines starting with the current line (.) and continuing for the 10 that follow (.+10).",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "e0fa387ae8bb7a6adfca7ca777da3ece",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        339.0,
+                        542.9
+                    ],
+                    [
+                        339.0,
+                        552.9
+                    ],
+                    [
+                        477.0,
+                        552.9
+                    ],
+                    [
+                        477.0,
+                        542.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": ":.,.+10s/Banana/Kumquat",
+        "type": "Title"
+    },
+    {
+        "element_id": "91ae4501b653a348f92b7fae7b4c059e",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        327.0,
+                        566.7
+                    ],
+                    [
+                        327.0,
+                        599.7
+                    ],
+                    [
+                        527.9,
+                        599.7
+                    ],
+                    [
+                        527.9,
+                        566.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "e0fa387ae8bb7a6adfca7ca777da3ece"
+        },
+        "text": "The following example replaces every occurrence (caused by the g at the end of the command) of apple with pear.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "bf5165048e486c1e86916cbfbc6316a6",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        339.0,
+                        606.9
+                    ],
+                    [
+                        339.0,
+                        616.9
+                    ],
+                    [
+                        435.0,
+                        616.9
+                    ],
+                    [
+                        435.0,
+                        606.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "8dbc7ece0278b11d916f5895b7260f40"
+        },
+        "text": ":%s/apple/pear/g",
+        "type": "Title"
+    },
+    {
+        "element_id": "98ec50358182ee5cc46ffbbd7dc61d08",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        327.0,
+                        630.7
+                    ],
+                    [
+                        327.0,
+                        675.2
+                    ],
+                    [
+                        548.9,
+                        675.2
+                    ],
+                    [
+                        548.9,
+                        630.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "bf5165048e486c1e86916cbfbc6316a6"
+        },
+        "text": "The following example removes the last character from every line in the file. Use it if every line in the file ends with ^M as the result of a file transfer. Execute it when the cursor is on the first line of the file.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "ebdf726e304348af5409706f2ac7c789",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        339.0,
+                        682.4
+                    ],
+                    [
+                        339.0,
+                        692.4
+                    ],
+                    [
+                        387.0,
+                        692.4
+                    ],
+                    [
+                        387.0,
+                        682.4
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "vi_cheat_sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:21",
+            "page_number": 2,
+            "parent_id": "bf5165048e486c1e86916cbfbc6316a6"
+        },
+        "text": ":%s/.$//",
+        "type": "UncategorizedText"
+    }
+]

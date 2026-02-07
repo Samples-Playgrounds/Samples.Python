@@ -356,7 +356,7 @@ very unlikely that your VM will stop running, and Microsoft guarantees this upti
 a comprehensive SLA.
 And if you're not ready to run your production VMs in Azure you can still take
 advantage of streamlined DevOps and testing with Azure DevTest Labs.
-P
+A
 Get started by Creating a Windows virtual machine with the Azure portal
 A word about microservices and containers
 You can run your applications in containers, which are very lightweight and start and

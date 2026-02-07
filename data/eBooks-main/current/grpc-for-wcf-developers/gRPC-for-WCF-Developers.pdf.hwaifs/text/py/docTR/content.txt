@@ -60,7 +60,7 @@ Feel free to forward this guide to your team to help ensure a common understandi
 considerations and opportunities. Having everybody working from a common set of terms and
 underlying principles helps ensure consistent application of architectural patterns and practices.
 References
-gRPC website https://grpc.io
+gRPC website https://arpc.io
 Choosing between .NET 5 and .NET Framework for server apps
 https://learn.microsoft.com/dotnet/standard/choosing-core-framework-server
 
@@ -2271,13 +2271,13 @@ CHAPTER 51 Migrate a WCF: solution to gRPC
 
 
 
-TraderSys.Por.. .cteds Services a x
+TraderSys.Por... .cteds Services a X
 Connected Services Service Dependencies
 +08.
 Publish
-Therea arec currently no: service dependencieso configured.
-Adda serviced dependency
-Service References (OpenAPI, gRPC, WCFV WebService)
+There arec currently no: service dependencies configured.
+Addas serviced dependency
+Service References (OpenAPI, gRPC, WCF Webs Service)
 + U
 There arec currently no: servicer references configured.
 Adda servicer reference
@@ -4491,7 +4491,7 @@ Jaeger
 Jaeger
 jaegertracing.io
 Elastic APM
-Elastic-Apm.NetCoreAll
+Elastic. Apm.NetCoreAll
 elastic.co/products/apm
 For more information on the OpenTracing API for .NET, see the OpenTracing for C# and the
 OpenTracing Contrib C#/.NET Core repositories on GitHub.

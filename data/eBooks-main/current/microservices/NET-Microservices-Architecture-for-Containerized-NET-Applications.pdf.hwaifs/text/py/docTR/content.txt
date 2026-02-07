@@ -4027,7 +4027,7 @@ Get started with Docker Desktop for Windows
 In addition, you need Visual Studio 2022 version 17.0, with the .ASP.NET and web development
 workload installed, as shown in Figure 5-2.
 R
-Li Ch.. :
+L/i Ch.. :
 Installing- Visual Studio Enterprise2 2022-1 17.0.1
 Workloads Individual components Language packs Installationl locations
 Web& Cloud(4)
@@ -10239,13 +10239,13 @@ CHAPTER 61 Tackle Business Complexity in a Microservice with DDD and CQRS Patter
 Order aggregate
 a
 OrderAggregate
-D @ C# Address.cs
+D 6 C# Address.cs
 Value object
-D a C# OrderRepository.cs
+D @ C# OrderRepository.cs
 Repo contract/interface
-D a C# Order.cs
+D @ C# Order.cs
 Aggregate root
-D a C# Orderitem.cs
+D a C# Orderltem.cs
 Child entity
 D @ C# OrderStatus.cs
 Enumeration class
@@ -10925,10 +10925,11 @@ Complex types and/or value objects. Discussion in the EF Core GitHub repo (Issue
 httpsi//github.com/dotnet/efcore/issues/246
 ValueObject.cs. Base value object class in eShopOnContainers.
 https://github.com/dotnet-
-architecture/eShopOnContainers/blob/dev/Src/Services/Ordering/Ordering.Domain/SeedWor
+architecture/eShopOnContainers, b/dev/: rc/S rVIce
+ering/Ordering.Domain /Seedwor
 K/alueObject.cs
 ValueObject.cs. Base value object class in CSharpFunctionalExtensions.
-https://qithub.com/vkhorikov/CSharpFunctionalExtensions/blob/master/CSharpFunctionalExte
+https://github.com/vkhorikov/CSharpFunctionalExtensions/blob/master/CSharpFunctionalExte
 nsions/ValueObject/ValueObject.cs
 Address class. Sample value object class in eShopOnContainers.
 https./github.com/dotnet-
@@ -11002,10 +11003,10 @@ architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/Se
 K/Enumeration.cs
 CardType.cs. Sample Enumeration class in eShopOnContainers.
 https://github.com/dotnet-
-architecture/eShopOnContainers/blob/dev/Src/Services/Ordering/Ordering.Domain/Aggregat
+architecture/eShopOnContainers/blob/dev/src/Services) Ordering/Ordering.Domain/Aagregat
 esModel/BuyerAggregate/CardType.cs
 SmartEnum. Ardalis - Classes to help produce strongly typed smarter enums in .NET.
-https.//www.nuget.org/packages/Ardalis.SmartEnum/
+https.//www.nuget.org/pad ages/Ardalis SmartEnum/
 Design validations in the domain model layer
 In DDD, validation rules can be thought as invariants. The main responsibility of an aggregate is to
 enforce invariants across state changes for all the entities within that aggregate.

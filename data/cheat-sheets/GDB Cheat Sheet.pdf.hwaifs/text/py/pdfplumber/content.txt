@@ -1,0 +1,120 @@
+GDB cheatsheet - page 1
+Running <where> next
+Go to next instruction (source line) but
+# gdb <program> [core dump] function_name
+donʻt dive into functions.
+Start GDB (with optional core dump). Break/watch the named function.
+finish
+# gdb --args <program> <args…> line_number
+Continue until the current function re-
+Start GDB and pass arguments Break/watch the line number in the cur-
+turns.
+rent source file.
+# gdb --pid <pid>
+continue
+Start GDB and attach to process. file:line_number
+Continue normal execution.
+Break/watch the line number in the
+set args <args...>
+named source file.
+Set arguments to pass to program to Variables and memory
+be debugged. Conditions print/format <what>
+Print content of variable/memory locati-
+run break/watch <where> if <condition>
+on/register.
+Run the program to be debugged. Break/watch at the given location if the
+condition is met. display/format <what>
+kill
+Conditions may be almost any C ex- Like „print“, but print the information
+Kill the running program.
+pression that evaluate to true or false. after each stepping instruction.
+Breakpoints
+condition <breakpoint#> <condition> undisplay <display#>
+break <where> Set/change the condition of an existing Remove the „display“ with the given
+Set a new breakpoint. break- or watchpoint. number.
+delete <breakpoint#> Examining the stack enable display <display#>
+Remove a breakpoint.
+backtrace disable display <display#>
+clear where En- or disable the „display“ with the gi-
+Delete all breakpoints. Show call stack. ven number.
+enable <breakpoint#> backtrace full x/nfu <address>
+Enable a disabled breakpoint. where full Print memory.
+Show call stack, also print the local va- n: How many units to print (default 1).
+disable <breakpoint#>
+riables in each frame. f: Format character (like „print“).
+Disable a breakpoint.
+u: Unit.
+frame <frame#>
+Watchpoints Select the stack frame to operate on. Unit is one of:
+watch <where>
+b: Byte,
+Stepping
+Set a new watchpoint.
+h: Half-word (two bytes)
+step
+delete/enable/disable <watchpoint#> w: Word (four bytes)
+Go to next instruction (source line), di-
+Like breakpoints. g: Giant word (eight bytes)).
+ving into function.
+© 2007 Marc Haisenko <marc@darkdust.net>GDB cheatsheet - page 2
+Format Manipulating the program Informations
+a Pointer. set var <variable_name>=<value> disassemble
+c Read as integer, print as character. Change the content of a variable to the disassemble <where>
+d Integer, signed decimal. given value. Disassemble the current function or
+f Floating point number. given location.
+return <expression>
+o Integer, print as octal.
+Force the current function to return im- info args
+s Try to treat as C string.
+mediately, passing the given value. Print the arguments to the function of
+t Integer, print as binary (t = „two“).
+the current stack frame.
+u Integer, unsigned decimal. Sources
+x Integer, print as hexadecimal. directory <directory> info breakpoints
+Print informations about the break- and
+<what> Add directory to the list of directories
+watchpoints.
+that is searched for sources.
+expression
+Almost any C expression, including info display
+list
+function calls (must be prefixed with a Print informations about the „displays“.
+list <filename>:<function>
+cast to tell GDB the return value type).
+list <filename>:<line_number> info locals
+file_name::variable_name list <first>,<last> Print the local variables in the currently
+Content of the variable defined in the Shows the current or given source con- selected stack frame.
+named file (static variables). text. The filename may be omitted. If
+info sharedlibrary
+last is omitted the context starting at
+function::variable_name List loaded shared libraries.
+start is printed instead of centered a-
+Content of the variable defined in the
+round it. info signals
+named function (if on the stack).
+List all signals and how they are cur-
+set listsize <count>
+{type}address rently handled.
+Set how many lines to show in „list“.
+Content at address, interpreted as
+info threads
+being of the C type type. Signals
+List all threads.
+handle <signal> <options>
+$register
+Set how to handle signles. Options are: show directories
+Content of named register. Interesting
+Print all directories in which GDB sear-
+registers are $esp (stack pointer), $ebp (no)print: (Donʻt) print a message when
+ches for source files.
+(frame pointer) and $eip (instruction signals occurs.
+pointer). show listsize
+(no)stop: (Donʻt) stop the program
+Print how many are shown in the „list“
+Threads when signals occurs.
+command.
+thread <thread#> (no)pass: (Donʻt) pass the signal to the
+whatis variable_name
+Chose thread to operate on. program.
+Print type of named variable.
+© 2007 Marc Haisenko <marc@darkdust.net>

@@ -1420,7 +1420,7 @@ Docker Hub
 Windows 10 or macos
 Or ACR
 'Docker Desktop' with
-D D A D D
+a L D B
 local-dev Kubernetes cluster
 D
 AKS Kubernetes
@@ -1428,9 +1428,9 @@ docker build
 Images
 Local
 docker push
-O Docker Image
+) O Docker Image
 Repository
-Cubernet
+Kubernetes
 Local-dev
 Kubernetes CLI
 Kubernetes cluster
@@ -2643,11 +2643,11 @@ Tip
 For further details on the services implementation and use of Visual Studio Tools for Docker, read the
 following articles:
 Use the Containers tool window to view container details such as the filesystem, logs, environment,
-ports, and more: https:// learn.microsoft.com/ visualstudio/containers/view-and-diagnose-containers
-Debug apps in a local Docker container: https./learn.microsoft.com/visualstudio/containers/edit-and-
+ports, and more: https:// Aearn.microsoft.com/visualstudio/containers/view-and-diagnose-containers
+Debug apps in a local Docker container: https/learn.microsoft. .com/visualstudio/containers/edit-and-
 refresh
 Deploy an ASP.NET container to a container registry using Visual Studio:
-https://learn.microsoft.com/visualstudio/containers/hosting-web-apps-in-docker
+https://learn.microsoft.com/visualstudio/ ainers/hosting-web-apps-in-docker
 Using Windows PowerShell commands in a
 DockerFile to set up Windows Containers (Docker
 standard based)
@@ -2897,10 +2897,11 @@ CHAPTER 41 Designing and developing containerized apps using Docker and Microsof
 
 
 Solution Explorer
-A
-L
+€ e A 6 -
+- a
+-
 Search Solution Explorer (Ctrl+)
-15 Solution explore-docker (3 of 3 projects)
+de Solution explore-docker (3 of 3 projects)
 src
 D - WebApi
 D
@@ -4548,9 +4549,9 @@ Additional resources
 Overview of Azure Monitor
 https./learn.microsoft.com/azure/azure-monitor/overview
 What is Application Insights?
-https.//learn.microsoft.com/azure/azure-monitor/app/app-i insights-overview
+https.//learn.microsoft.com/azure/azure-monitor/app/app- nsights-overview
 What is Azure Monitor Metrics?
-https./learn.microsoft.com/azure/azure-monitor/platform/data-platform-metrics
+https.//learn.microsoft.com/azure/azure-mor itor/plat ttorm, data- trorm-metrics
 Container Monitoring solution in Azure Monitor
 https://learn.microsoft.com/azure/azure-monitor/insights/cont ainers
 Security and backup services

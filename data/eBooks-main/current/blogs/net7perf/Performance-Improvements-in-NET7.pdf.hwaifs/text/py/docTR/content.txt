@@ -2224,7 +2224,7 @@ r15d, edx, 42
 This is loading the target address from the delegate into r8 and is loading the address of the
 expected target into rax. If they're the same, it then simply performs the inlined operation (imul
 r15d, edx, 42), and otherwise it jumps to G_M0OO_IG07 which calls to the function in r8. The effect
-off this is obvious if we run this as a benchmark:
+of this is obvious if we run this as a benchmark:
 static int[] s_values = Enumerable.Range(0, 000).ToArrayO;
 [Benchmark]
 public int DelegatePG00) => Sum(s_values, i => i * 42);

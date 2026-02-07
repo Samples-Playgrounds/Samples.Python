@@ -1,0 +1,4976 @@
+[
+    {
+        "element_id": "ab1f86bff57f7bfccab89d0091df6940",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        125.2,
+                        60.2
+                    ],
+                    [
+                        125.2,
+                        74.2
+                    ],
+                    [
+                        182.0,
+                        74.2
+                    ],
+                    [
+                        182.0,
+                        60.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "Running",
+        "type": "Title"
+    },
+    {
+        "element_id": "3fb39d28071f29bd43644a5e4f74d8e9",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        75.7
+                    ],
+                    [
+                        28.3,
+                        86.7
+                    ],
+                    [
+                        206.6,
+                        86.7
+                    ],
+                    [
+                        206.6,
+                        75.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "# gdb <program> [core dump]",
+        "type": "Title"
+    },
+    {
+        "element_id": "2f8dd98d8fef0b8185f127e8b959146e",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        88.5
+                    ],
+                    [
+                        85.0,
+                        99.5
+                    ],
+                    [
+                        264.8,
+                        99.5
+                    ],
+                    [
+                        264.8,
+                        88.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "Start GDB (with optional core dump).",
+        "type": "Title"
+    },
+    {
+        "element_id": "6cea99cc680bbe8cc1ee4262e3430163",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        107.7
+                    ],
+                    [
+                        28.3,
+                        131.5
+                    ],
+                    [
+                        237.9,
+                        131.5
+                    ],
+                    [
+                        237.9,
+                        107.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "2f8dd98d8fef0b8185f127e8b959146e"
+        },
+        "text": "# gdb --args <program> <args\u2026> Start GDB and pass arguments",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "de1d6c8e5494ccd833becfc0c15f58bf",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        139.7
+                    ],
+                    [
+                        28.3,
+                        150.7
+                    ],
+                    [
+                        140.6,
+                        150.7
+                    ],
+                    [
+                        140.6,
+                        139.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "# gdb --pid <pid>",
+        "type": "Title"
+    },
+    {
+        "element_id": "0cb95b818993ccbf8753d1477930a7b1",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        152.5
+                    ],
+                    [
+                        85.0,
+                        163.5
+                    ],
+                    [
+                        246.5,
+                        163.5
+                    ],
+                    [
+                        246.5,
+                        152.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "de1d6c8e5494ccd833becfc0c15f58bf"
+        },
+        "text": "Start GDB and attach to process.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "aef4a0eb2775c37cdf3369b571cc1ee0",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        171.7
+                    ],
+                    [
+                        28.3,
+                        182.7
+                    ],
+                    [
+                        147.2,
+                        182.7
+                    ],
+                    [
+                        147.2,
+                        171.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "de1d6c8e5494ccd833becfc0c15f58bf"
+        },
+        "text": "set args <args...>",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "54e65293f67623f30867e6bcd5f8b450",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        184.5
+                    ],
+                    [
+                        85.0,
+                        208.5
+                    ],
+                    [
+                        266.6,
+                        208.5
+                    ],
+                    [
+                        266.6,
+                        184.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "de1d6c8e5494ccd833becfc0c15f58bf"
+        },
+        "text": "Set arguments to pass to program to be debugged.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "fec21854264673f207b5d49e3d7ddda0",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        216.7
+                    ],
+                    [
+                        28.3,
+                        227.7
+                    ],
+                    [
+                        48.1,
+                        227.7
+                    ],
+                    [
+                        48.1,
+                        216.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "de1d6c8e5494ccd833becfc0c15f58bf"
+        },
+        "text": "run",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "fb6c9d9808967385a768dcc784ce2f18",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        229.5
+                    ],
+                    [
+                        85.0,
+                        240.5
+                    ],
+                    [
+                        250.1,
+                        240.5
+                    ],
+                    [
+                        250.1,
+                        229.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "de1d6c8e5494ccd833becfc0c15f58bf"
+        },
+        "text": "Run the program to be debugged.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "84d209cba1619e7f095dd7f32e48106c",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        248.7
+                    ],
+                    [
+                        28.3,
+                        259.7
+                    ],
+                    [
+                        54.7,
+                        259.7
+                    ],
+                    [
+                        54.7,
+                        248.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "kill",
+        "type": "Title"
+    },
+    {
+        "element_id": "8fd9346001d4622f744e3c04d213037f",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        261.5
+                    ],
+                    [
+                        85.0,
+                        272.5
+                    ],
+                    [
+                        204.9,
+                        272.5
+                    ],
+                    [
+                        204.9,
+                        261.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "Kill the running program.",
+        "type": "Title"
+    },
+    {
+        "element_id": "3c2ccab2f0220a322484f4cfd47cf9bc",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        113.1,
+                        282.2
+                    ],
+                    [
+                        113.1,
+                        296.2
+                    ],
+                    [
+                        194.0,
+                        296.2
+                    ],
+                    [
+                        194.0,
+                        282.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "Breakpoints",
+        "type": "Title"
+    },
+    {
+        "element_id": "df7fd2ae14c09e084ee12274c859f2ad",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        297.7
+                    ],
+                    [
+                        28.3,
+                        308.7
+                    ],
+                    [
+                        114.2,
+                        308.7
+                    ],
+                    [
+                        114.2,
+                        297.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "break <where>",
+        "type": "Title"
+    },
+    {
+        "element_id": "4cab3733b4d56066306bd3925f81cddd",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        310.5
+                    ],
+                    [
+                        85.0,
+                        321.5
+                    ],
+                    [
+                        191.4,
+                        321.5
+                    ],
+                    [
+                        191.4,
+                        310.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "df7fd2ae14c09e084ee12274c859f2ad"
+        },
+        "text": "Set a new breakpoint.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "ae748c33a743bcd5d43072212f201f02",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        329.7
+                    ],
+                    [
+                        28.3,
+                        340.7
+                    ],
+                    [
+                        160.4,
+                        340.7
+                    ],
+                    [
+                        160.4,
+                        329.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "delete <breakpoint#>",
+        "type": "Title"
+    },
+    {
+        "element_id": "bcc1a29fd5c484877ee51e3e5821463e",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        342.5
+                    ],
+                    [
+                        85.0,
+                        353.5
+                    ],
+                    [
+                        192.6,
+                        353.5
+                    ],
+                    [
+                        192.6,
+                        342.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "ae748c33a743bcd5d43072212f201f02"
+        },
+        "text": "Remove a breakpoint.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "e8dac18e881a428a3fd0a90eeb615b10",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        361.7
+                    ],
+                    [
+                        28.3,
+                        372.7
+                    ],
+                    [
+                        61.3,
+                        372.7
+                    ],
+                    [
+                        61.3,
+                        361.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "clear",
+        "type": "Title"
+    },
+    {
+        "element_id": "39607cd855946f5d66ab6a58085f4278",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        374.5
+                    ],
+                    [
+                        85.0,
+                        385.5
+                    ],
+                    [
+                        193.9,
+                        385.5
+                    ],
+                    [
+                        193.9,
+                        374.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "Delete all breakpoints.",
+        "type": "Title"
+    },
+    {
+        "element_id": "f3e99c429ee967408fd12d3afe94e723",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        393.7
+                    ],
+                    [
+                        28.3,
+                        404.7
+                    ],
+                    [
+                        160.4,
+                        404.7
+                    ],
+                    [
+                        160.4,
+                        393.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "enable <breakpoint#>",
+        "type": "Title"
+    },
+    {
+        "element_id": "25cf8ac80a0e38505523da9d1b7114fc",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        406.5
+                    ],
+                    [
+                        85.0,
+                        417.5
+                    ],
+                    [
+                        230.0,
+                        417.5
+                    ],
+                    [
+                        230.0,
+                        406.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "f3e99c429ee967408fd12d3afe94e723"
+        },
+        "text": "Enable a disabled breakpoint.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "dd591caba940eed4dccd7340901e7123",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        425.7
+                    ],
+                    [
+                        28.3,
+                        436.7
+                    ],
+                    [
+                        167.0,
+                        436.7
+                    ],
+                    [
+                        167.0,
+                        425.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "disable <breakpoint#>",
+        "type": "Title"
+    },
+    {
+        "element_id": "ba33d515ef0077d2065137c1f4e64255",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        438.5
+                    ],
+                    [
+                        85.0,
+                        449.5
+                    ],
+                    [
+                        188.4,
+                        449.5
+                    ],
+                    [
+                        188.4,
+                        438.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "dd591caba940eed4dccd7340901e7123"
+        },
+        "text": "Disable a breakpoint.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "2371489d1acec00bb52256bbed6e969b",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        111.8,
+                        459.2
+                    ],
+                    [
+                        111.8,
+                        473.2
+                    ],
+                    [
+                        195.3,
+                        473.2
+                    ],
+                    [
+                        195.3,
+                        459.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "Watchpoints",
+        "type": "Title"
+    },
+    {
+        "element_id": "cbd8130800f0881c3e4519995302e2c5",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        474.7
+                    ],
+                    [
+                        28.3,
+                        485.7
+                    ],
+                    [
+                        114.2,
+                        485.7
+                    ],
+                    [
+                        114.2,
+                        474.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "watch <where>",
+        "type": "Title"
+    },
+    {
+        "element_id": "cf635d6bb16ed9e1383ef43597752336",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        487.5
+                    ],
+                    [
+                        85.0,
+                        498.5
+                    ],
+                    [
+                        192.7,
+                        498.5
+                    ],
+                    [
+                        192.7,
+                        487.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "cbd8130800f0881c3e4519995302e2c5"
+        },
+        "text": "Set a new watchpoint.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "9e211175ba03035e147b10b76f72dd1c",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        506.7
+                    ],
+                    [
+                        28.3,
+                        517.7
+                    ],
+                    [
+                        259.4,
+                        517.7
+                    ],
+                    [
+                        259.4,
+                        506.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "delete/enable/disable <watchpoint#>",
+        "type": "Title"
+    },
+    {
+        "element_id": "2cb4716fb200db5517ecc22c5bb1fd2f",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        519.5
+                    ],
+                    [
+                        85.0,
+                        530.5
+                    ],
+                    [
+                        168.2,
+                        530.5
+                    ],
+                    [
+                        168.2,
+                        519.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "Like breakpoints.",
+        "type": "Title"
+    },
+    {
+        "element_id": "ec88e43e867fd4f327fe9cf06d63d591",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        344.4,
+                        37.0
+                    ],
+                    [
+                        344.4,
+                        50.0
+                    ],
+                    [
+                        497.6,
+                        50.0
+                    ],
+                    [
+                        497.6,
+                        37.0
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "GDB cheatsheet - page 1",
+        "type": "Title"
+    },
+    {
+        "element_id": "a8011fbde86bcb6b9210c09080269ca0",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        392.6,
+                        60.2
+                    ],
+                    [
+                        392.6,
+                        74.2
+                    ],
+                    [
+                        449.4,
+                        74.2
+                    ],
+                    [
+                        449.4,
+                        60.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "<where>",
+        "type": "Title"
+    },
+    {
+        "element_id": "02e3b42e58043023419a3643b0603a90",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        295.8,
+                        75.7
+                    ],
+                    [
+                        295.8,
+                        86.7
+                    ],
+                    [
+                        381.6,
+                        86.7
+                    ],
+                    [
+                        381.6,
+                        75.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "function_name",
+        "type": "Title"
+    },
+    {
+        "element_id": "3e30935265cc3773c9c49ebec7a99a24",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        352.5,
+                        88.5
+                    ],
+                    [
+                        352.5,
+                        99.5
+                    ],
+                    [
+                        512.7,
+                        99.5
+                    ],
+                    [
+                        512.7,
+                        88.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "02e3b42e58043023419a3643b0603a90"
+        },
+        "text": "Break/watch the named function.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "963229fb07bf6617d1520551b10f3ba0",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        295.8,
+                        107.7
+                    ],
+                    [
+                        295.8,
+                        118.7
+                    ],
+                    [
+                        368.4,
+                        118.7
+                    ],
+                    [
+                        368.4,
+                        107.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "line_number",
+        "type": "Title"
+    },
+    {
+        "element_id": "e304e2d1c76b7b78c960bf338ce797fd",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        352.5,
+                        120.5
+                    ],
+                    [
+                        352.5,
+                        144.5
+                    ],
+                    [
+                        543.8,
+                        144.5
+                    ],
+                    [
+                        543.8,
+                        120.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "963229fb07bf6617d1520551b10f3ba0"
+        },
+        "text": "Break/watch the line number in the cur- rent source \ufb01le.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "569c030d13a6a3613d25d82dfe6a663e",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        295.8,
+                        152.7
+                    ],
+                    [
+                        295.8,
+                        163.7
+                    ],
+                    [
+                        401.4,
+                        163.7
+                    ],
+                    [
+                        401.4,
+                        152.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "file:line_number",
+        "type": "Title"
+    },
+    {
+        "element_id": "e74f835e20d694df085d7cc760a2ee90",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        352.5,
+                        165.5
+                    ],
+                    [
+                        352.5,
+                        189.5
+                    ],
+                    [
+                        524.9,
+                        189.5
+                    ],
+                    [
+                        524.9,
+                        165.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "569c030d13a6a3613d25d82dfe6a663e"
+        },
+        "text": "Break/watch the line number in the named source \ufb01le.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "dbe7ee50838ee7aa340cde6982245a48",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        384.5,
+                        199.2
+                    ],
+                    [
+                        384.5,
+                        213.2
+                    ],
+                    [
+                        457.6,
+                        213.2
+                    ],
+                    [
+                        457.6,
+                        199.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "Conditions",
+        "type": "Title"
+    },
+    {
+        "element_id": "5039b249dd32df459e60b797040b6373",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        295.8,
+                        214.7
+                    ],
+                    [
+                        295.8,
+                        225.7
+                    ],
+                    [
+                        520.2,
+                        225.7
+                    ],
+                    [
+                        520.2,
+                        214.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "break/watch <where> if <condition>",
+        "type": "Title"
+    },
+    {
+        "element_id": "06c30da65e103dee65692657500cf1b3",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        352.5,
+                        227.5
+                    ],
+                    [
+                        352.5,
+                        277.5
+                    ],
+                    [
+                        543.9,
+                        277.5
+                    ],
+                    [
+                        543.9,
+                        227.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "5039b249dd32df459e60b797040b6373"
+        },
+        "text": "Break/watch at the given location if the condition is met. Conditions may be almost any C ex- pression that evaluate to true or false.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "4a7a14f4c96e7c53abd11830015f9cb9",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        295.8,
+                        285.7
+                    ],
+                    [
+                        295.8,
+                        296.7
+                    ],
+                    [
+                        526.8,
+                        296.7
+                    ],
+                    [
+                        526.8,
+                        285.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "5039b249dd32df459e60b797040b6373"
+        },
+        "text": "condition <breakpoint#> <condition>",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "97fb51870b342b4a058936f8e287e3fa",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        352.5,
+                        298.5
+                    ],
+                    [
+                        352.5,
+                        322.5
+                    ],
+                    [
+                        544.5,
+                        322.5
+                    ],
+                    [
+                        544.5,
+                        298.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "5039b249dd32df459e60b797040b6373"
+        },
+        "text": "Set/change the condition of an existing break- or watchpoint.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "9f8786741d6884277e5b58abe3f5ed48",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        353.3,
+                        332.2
+                    ],
+                    [
+                        353.3,
+                        346.2
+                    ],
+                    [
+                        488.7,
+                        346.2
+                    ],
+                    [
+                        488.7,
+                        332.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "5039b249dd32df459e60b797040b6373"
+        },
+        "text": "Examining the stack",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "6abcb1a15d3b92fc2a17916e99eb3640",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        295.8,
+                        347.7
+                    ],
+                    [
+                        295.8,
+                        371.7
+                    ],
+                    [
+                        355.2,
+                        371.7
+                    ],
+                    [
+                        355.2,
+                        347.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "backtrace where",
+        "type": "Title"
+    },
+    {
+        "element_id": "946de1f2024e26c2315dfb7db47aefad",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        352.5,
+                        373.5
+                    ],
+                    [
+                        352.5,
+                        384.5
+                    ],
+                    [
+                        431.3,
+                        384.5
+                    ],
+                    [
+                        431.3,
+                        373.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "Show call stack.",
+        "type": "Title"
+    },
+    {
+        "element_id": "e0fb942a7291b89ba9be9701da9e32ca",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        295.8,
+                        392.7
+                    ],
+                    [
+                        295.8,
+                        416.7
+                    ],
+                    [
+                        388.2,
+                        416.7
+                    ],
+                    [
+                        388.2,
+                        392.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "backtrace full where full",
+        "type": "Title"
+    },
+    {
+        "element_id": "79d4f8b16c95716687db09a4243175ed",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        352.5,
+                        418.5
+                    ],
+                    [
+                        352.5,
+                        442.5
+                    ],
+                    [
+                        541.4,
+                        442.5
+                    ],
+                    [
+                        541.4,
+                        418.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "e0fb942a7291b89ba9be9701da9e32ca"
+        },
+        "text": "Show call stack, also print the local va- riables in each frame.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "bb58d1f3e82a6ade6c196cf3b9c0db61",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        295.8,
+                        450.7
+                    ],
+                    [
+                        295.8,
+                        461.7
+                    ],
+                    [
+                        388.2,
+                        461.7
+                    ],
+                    [
+                        388.2,
+                        450.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "frame <frame#>",
+        "type": "Title"
+    },
+    {
+        "element_id": "59efde4f0ebeb6f52794d96aaf4a8a51",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        352.5,
+                        463.5
+                    ],
+                    [
+                        352.5,
+                        474.5
+                    ],
+                    [
+                        532.2,
+                        474.5
+                    ],
+                    [
+                        532.2,
+                        463.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "bb58d1f3e82a6ade6c196cf3b9c0db61"
+        },
+        "text": "Select the stack frame to operate on.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "ddd00578dd738263b5913dc02e9f6139",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        391.1,
+                        484.2
+                    ],
+                    [
+                        391.1,
+                        498.2
+                    ],
+                    [
+                        451.0,
+                        498.2
+                    ],
+                    [
+                        451.0,
+                        484.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "Stepping",
+        "type": "Title"
+    },
+    {
+        "element_id": "4fec499c267dcb75f2b7385d122178d7",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        295.8,
+                        499.7
+                    ],
+                    [
+                        295.8,
+                        510.7
+                    ],
+                    [
+                        322.2,
+                        510.7
+                    ],
+                    [
+                        322.2,
+                        499.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "step",
+        "type": "Title"
+    },
+    {
+        "element_id": "2adfdeda94776410515480cd7dc3fda7",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        352.5,
+                        512.5
+                    ],
+                    [
+                        352.5,
+                        536.5
+                    ],
+                    [
+                        538.3,
+                        536.5
+                    ],
+                    [
+                        538.3,
+                        512.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "4fec499c267dcb75f2b7385d122178d7"
+        },
+        "text": "Go to next instruction (source line), di- ving into function.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "5fe5a66715a15bfb44ddaf9e5e304594",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        337.3,
+                        549.5
+                    ],
+                    [
+                        337.3,
+                        560.5
+                    ],
+                    [
+                        561.4,
+                        560.5
+                    ],
+                    [
+                        561.4,
+                        549.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "links": [
+                {
+                    "start_index": 22,
+                    "text": "marc @ darkdust . net",
+                    "url": "mailto:marc@darkdust.net"
+                }
+            ],
+            "page_number": 1
+        },
+        "text": "\u00a9 2007 Marc Haisenko <marc@darkdust.net>",
+        "type": "Footer"
+    },
+    {
+        "element_id": "4692fb0cc44c5bf907e8e660db3c6b31",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        58.7
+                    ],
+                    [
+                        563.2,
+                        69.7
+                    ],
+                    [
+                        589.6,
+                        69.7
+                    ],
+                    [
+                        589.6,
+                        58.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "next",
+        "type": "Title"
+    },
+    {
+        "element_id": "fc9a1aaf520309d4d3a57885d3a59fc2",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        71.5
+                    ],
+                    [
+                        619.9,
+                        95.5
+                    ],
+                    [
+                        808.8,
+                        95.5
+                    ],
+                    [
+                        808.8,
+                        71.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "4692fb0cc44c5bf907e8e660db3c6b31"
+        },
+        "text": "Go to next instruction (source line) but don\u02bbt dive into functions.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "1628bb381ed395f8578308e72d651ca9",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        103.7
+                    ],
+                    [
+                        563.2,
+                        114.7
+                    ],
+                    [
+                        602.8,
+                        114.7
+                    ],
+                    [
+                        602.8,
+                        103.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "finish",
+        "type": "Title"
+    },
+    {
+        "element_id": "ad3e58e954cf17ea36d08e6d673a2f84",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        116.5
+                    ],
+                    [
+                        619.9,
+                        140.5
+                    ],
+                    [
+                        800.9,
+                        140.5
+                    ],
+                    [
+                        800.9,
+                        116.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "Continue until the current function re- turns.",
+        "type": "Title"
+    },
+    {
+        "element_id": "4587e4fe9fa877392c207367769d4721",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        148.7
+                    ],
+                    [
+                        563.2,
+                        159.7
+                    ],
+                    [
+                        616.0,
+                        159.7
+                    ],
+                    [
+                        616.0,
+                        148.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "continue",
+        "type": "Title"
+    },
+    {
+        "element_id": "0590145fb836fc82479ce28c3c53036b",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        161.5
+                    ],
+                    [
+                        619.9,
+                        172.5
+                    ],
+                    [
+                        753.8,
+                        172.5
+                    ],
+                    [
+                        753.8,
+                        161.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "Continue normal execution.",
+        "type": "Title"
+    },
+    {
+        "element_id": "72992ebee582571fcb64ef16aaac441d",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        614.1,
+                        182.2
+                    ],
+                    [
+                        614.1,
+                        196.2
+                    ],
+                    [
+                        762.8,
+                        196.2
+                    ],
+                    [
+                        762.8,
+                        182.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "Variables and memory",
+        "type": "Title"
+    },
+    {
+        "element_id": "52c05c754f81922ae6e7da3da73f5e60",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        197.7
+                    ],
+                    [
+                        563.2,
+                        208.7
+                    ],
+                    [
+                        688.6,
+                        208.7
+                    ],
+                    [
+                        688.6,
+                        197.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "72992ebee582571fcb64ef16aaac441d"
+        },
+        "text": "print/format <what>",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "e9e264ae42c363a99ce19cf8a32953a0",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        210.5
+                    ],
+                    [
+                        619.9,
+                        234.5
+                    ],
+                    [
+                        810.7,
+                        234.5
+                    ],
+                    [
+                        810.7,
+                        210.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "Print content of variable/memory locati- on/register.",
+        "type": "Title"
+    },
+    {
+        "element_id": "f385ce1f383ff8c0554ef45daf078670",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        242.7
+                    ],
+                    [
+                        563.2,
+                        253.7
+                    ],
+                    [
+                        701.8,
+                        253.7
+                    ],
+                    [
+                        701.8,
+                        242.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "e9e264ae42c363a99ce19cf8a32953a0"
+        },
+        "text": "display/format <what>",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "a7cc29d8baa4a1c61751de06e1217a09",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        255.5
+                    ],
+                    [
+                        619.9,
+                        279.5
+                    ],
+                    [
+                        796.6,
+                        279.5
+                    ],
+                    [
+                        796.6,
+                        255.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "e9e264ae42c363a99ce19cf8a32953a0"
+        },
+        "text": "Like \u201eprint\u201c, but print the information after each stepping instruction.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "2fda82a50659969de1ce3c9b86db5898",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        287.7
+                    ],
+                    [
+                        563.2,
+                        298.7
+                    ],
+                    [
+                        695.2,
+                        298.7
+                    ],
+                    [
+                        695.2,
+                        287.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "undisplay <display#>",
+        "type": "Title"
+    },
+    {
+        "element_id": "dcd4b2347fe8bf1ddfd14509a74334dc",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        300.5
+                    ],
+                    [
+                        619.9,
+                        324.5
+                    ],
+                    [
+                        797.2,
+                        324.5
+                    ],
+                    [
+                        797.2,
+                        300.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "2fda82a50659969de1ce3c9b86db5898"
+        },
+        "text": "Remove the \u201edisplay\u201c with the given number.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "37df464b7b59a21f9a662be56adbdc89",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        332.7
+                    ],
+                    [
+                        563.2,
+                        356.7
+                    ],
+                    [
+                        734.8,
+                        356.7
+                    ],
+                    [
+                        734.8,
+                        332.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "enable display <display#> disable display <display#>",
+        "type": "Title"
+    },
+    {
+        "element_id": "293251b766db5dac92bf805fb0093f00",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        358.5
+                    ],
+                    [
+                        619.9,
+                        382.5
+                    ],
+                    [
+                        807.0,
+                        382.5
+                    ],
+                    [
+                        807.0,
+                        358.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "37df464b7b59a21f9a662be56adbdc89"
+        },
+        "text": "En- or disable the \u201edisplay\u201c with the gi- ven number.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "6b42a86e181ad9592308f45af306f27a",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        390.7
+                    ],
+                    [
+                        563.2,
+                        401.7
+                    ],
+                    [
+                        662.2,
+                        401.7
+                    ],
+                    [
+                        662.2,
+                        390.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1
+        },
+        "text": "x/nfu <address>",
+        "type": "Title"
+    },
+    {
+        "element_id": "28bdd322fe41e7eab89141d675936202",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        403.5
+                    ],
+                    [
+                        619.9,
+                        453.5
+                    ],
+                    [
+                        802.7,
+                        453.5
+                    ],
+                    [
+                        802.7,
+                        403.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "6b42a86e181ad9592308f45af306f27a"
+        },
+        "text": "Print memory. n: How many units to print (default 1). f: Format character (like \u201eprint\u201c). u: Unit.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "98211a032de5e3753fc6f81661f91785",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        461.5
+                    ],
+                    [
+                        619.9,
+                        472.5
+                    ],
+                    [
+                        687.2,
+                        472.5
+                    ],
+                    [
+                        687.2,
+                        461.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "6b42a86e181ad9592308f45af306f27a"
+        },
+        "text": "Unit is one of:",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "6532240f8c59bddfc67f339b8ec530b4",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        648.3,
+                        480.5
+                    ],
+                    [
+                        648.3,
+                        530.5
+                    ],
+                    [
+                        784.0,
+                        530.5
+                    ],
+                    [
+                        784.0,
+                        480.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 1,
+            "parent_id": "6b42a86e181ad9592308f45af306f27a"
+        },
+        "text": "b: Byte, h: Half-word (two bytes) w: Word (four bytes) g: Giant word (eight bytes)).",
+        "type": "UncategorizedText"
+    },
+    {
+        "element_id": "c7cd4cb1f9cd4394ab163fe4d536cee9",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        129.8,
+                        60.2
+                    ],
+                    [
+                        129.8,
+                        74.2
+                    ],
+                    [
+                        177.3,
+                        74.2
+                    ],
+                    [
+                        177.3,
+                        60.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "Format",
+        "type": "Title"
+    },
+    {
+        "element_id": "9ba6306e209db282c6bb6af4d4465a80",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        75.7
+                    ],
+                    [
+                        28.3,
+                        192.7
+                    ],
+                    [
+                        41.9,
+                        192.7
+                    ],
+                    [
+                        41.9,
+                        75.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "a\r c\r d\r f\r o\r s\r t\r u\r x",
+        "type": "Title"
+    },
+    {
+        "element_id": "6fc715fca6e8c5c853ec6c1fb093c981",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        75.5
+                    ],
+                    [
+                        85.0,
+                        209.2
+                    ],
+                    [
+                        255.6,
+                        209.2
+                    ],
+                    [
+                        255.6,
+                        75.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "9ba6306e209db282c6bb6af4d4465a80"
+        },
+        "text": "Pointer. Read as integer, print as character. Integer, signed decimal. Floating point number. Integer, print as octal. Try to treat as C string. Integer, print as binary (t = \u201etwo\u201c). Integer, unsigned decimal. Integer, print as hexadecimal. <what>",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "9e2cce79e53a5f19b541525a8fc6ce3d",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        211.7
+                    ],
+                    [
+                        28.3,
+                        222.7
+                    ],
+                    [
+                        94.3,
+                        222.7
+                    ],
+                    [
+                        94.3,
+                        211.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "expression",
+        "type": "Title"
+    },
+    {
+        "element_id": "a40a89114d51f7514371d58b18cf97b8",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        224.5
+                    ],
+                    [
+                        85.0,
+                        261.5
+                    ],
+                    [
+                        271.5,
+                        261.5
+                    ],
+                    [
+                        271.5,
+                        224.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "9e2cce79e53a5f19b541525a8fc6ce3d"
+        },
+        "text": "Almost any C expression, including function calls (must be pre\ufb01xed with a cast to tell GDB the return value type).",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "e7fff3544ed1f2765e73f0b395f8a00f",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        269.7
+                    ],
+                    [
+                        28.3,
+                        280.7
+                    ],
+                    [
+                        186.8,
+                        280.7
+                    ],
+                    [
+                        186.8,
+                        269.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "file_name::variable_name",
+        "type": "Title"
+    },
+    {
+        "element_id": "ee93ae8fde7d1f875f6caed824a89cb8",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        282.5
+                    ],
+                    [
+                        85.0,
+                        306.5
+                    ],
+                    [
+                        267.9,
+                        306.5
+                    ],
+                    [
+                        267.9,
+                        282.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "e7fff3544ed1f2765e73f0b395f8a00f"
+        },
+        "text": "Content of the variable de\ufb01ned in the named \ufb01le (static variables).",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "0c1059b730bfe21d74d1f74ef782c219",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        314.7
+                    ],
+                    [
+                        28.3,
+                        325.7
+                    ],
+                    [
+                        180.2,
+                        325.7
+                    ],
+                    [
+                        180.2,
+                        314.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "function::variable_name",
+        "type": "Title"
+    },
+    {
+        "element_id": "e8c3eec181f20d880708c702cae382f2",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        327.5
+                    ],
+                    [
+                        85.0,
+                        351.5
+                    ],
+                    [
+                        267.9,
+                        351.5
+                    ],
+                    [
+                        267.9,
+                        327.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "0c1059b730bfe21d74d1f74ef782c219"
+        },
+        "text": "Content of the variable de\ufb01ned in the named function (if on the stack).",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "d12da774bd55dd731acc78c3b52356fb",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        359.7
+                    ],
+                    [
+                        28.3,
+                        370.7
+                    ],
+                    [
+                        114.1,
+                        370.7
+                    ],
+                    [
+                        114.1,
+                        359.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "{type}address",
+        "type": "Title"
+    },
+    {
+        "element_id": "1c45867a8a314be90ed8c6487866643d",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        372.5
+                    ],
+                    [
+                        85.0,
+                        396.5
+                    ],
+                    [
+                        254.4,
+                        396.5
+                    ],
+                    [
+                        254.4,
+                        372.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "d12da774bd55dd731acc78c3b52356fb"
+        },
+        "text": "Content at address, interpreted as being of the C type type.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "946c0f788bb4232a80ce59b0f01d91a8",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        404.7
+                    ],
+                    [
+                        28.3,
+                        415.7
+                    ],
+                    [
+                        87.7,
+                        415.7
+                    ],
+                    [
+                        87.7,
+                        404.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "$register",
+        "type": "Title"
+    },
+    {
+        "element_id": "49dbbb59f361c8be3ac96fdc00694479",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        417.5
+                    ],
+                    [
+                        85.0,
+                        467.5
+                    ],
+                    [
+                        280.1,
+                        467.5
+                    ],
+                    [
+                        280.1,
+                        417.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "946c0f788bb4232a80ce59b0f01d91a8"
+        },
+        "text": "Content of named register. Interesting registers are $esp (stack pointer), $ebp (frame pointer) and $eip (instruction pointer).",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "7e792739f9cb2fd1819d77fae8263b1b",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        126.3,
+                        476.2
+                    ],
+                    [
+                        126.3,
+                        490.2
+                    ],
+                    [
+                        180.8,
+                        490.2
+                    ],
+                    [
+                        180.8,
+                        476.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "Threads",
+        "type": "Title"
+    },
+    {
+        "element_id": "20e24c4c1a40b84fe56c6e085193bde3",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        28.3,
+                        492.7
+                    ],
+                    [
+                        28.3,
+                        503.7
+                    ],
+                    [
+                        134.0,
+                        503.7
+                    ],
+                    [
+                        134.0,
+                        492.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "thread <thread#>",
+        "type": "Title"
+    },
+    {
+        "element_id": "ff7bf91ede56ee308849a48c88d1c8a4",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        85.0,
+                        505.5
+                    ],
+                    [
+                        85.0,
+                        516.5
+                    ],
+                    [
+                        222.0,
+                        516.5
+                    ],
+                    [
+                        222.0,
+                        505.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "20e24c4c1a40b84fe56c6e085193bde3"
+        },
+        "text": "Chose thread to operate on.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "e41d56b282495d5b49166bbc2c81a8fe",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        344.4,
+                        37.0
+                    ],
+                    [
+                        344.4,
+                        50.0
+                    ],
+                    [
+                        497.6,
+                        50.0
+                    ],
+                    [
+                        497.6,
+                        37.0
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "GDB cheatsheet - page 2",
+        "type": "Title"
+    },
+    {
+        "element_id": "6bb2b3ef70790de1354cc20b44ddf17b",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        295.8,
+                        60.2
+                    ],
+                    [
+                        295.8,
+                        86.7
+                    ],
+                    [
+                        507.0,
+                        86.7
+                    ],
+                    [
+                        507.0,
+                        60.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "e41d56b282495d5b49166bbc2c81a8fe"
+        },
+        "text": "Manipulating the program set var <variable_name>=<value>",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "15ea77b6d17cdd41477cdc9be9cd670e",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        352.5,
+                        88.5
+                    ],
+                    [
+                        352.5,
+                        112.5
+                    ],
+                    [
+                        545.1,
+                        112.5
+                    ],
+                    [
+                        545.1,
+                        88.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "e41d56b282495d5b49166bbc2c81a8fe"
+        },
+        "text": "Change the content of a variable to the given value.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "bc45bc2ab7fe00d5f64e2583d92f3728",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        295.8,
+                        120.7
+                    ],
+                    [
+                        295.8,
+                        131.7
+                    ],
+                    [
+                        421.2,
+                        131.7
+                    ],
+                    [
+                        421.2,
+                        120.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "return <expression>",
+        "type": "Title"
+    },
+    {
+        "element_id": "b10c0a975eb201ee95c5036bd32accb2",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        352.5,
+                        133.5
+                    ],
+                    [
+                        352.5,
+                        157.5
+                    ],
+                    [
+                        540.2,
+                        157.5
+                    ],
+                    [
+                        540.2,
+                        133.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "bc45bc2ab7fe00d5f64e2583d92f3728"
+        },
+        "text": "Force the current function to return im- mediately, passing the given value.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "92782ff716a3fdb46fc5ce68b9503843",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        393.4,
+                        167.2
+                    ],
+                    [
+                        393.4,
+                        181.2
+                    ],
+                    [
+                        448.6,
+                        181.2
+                    ],
+                    [
+                        448.6,
+                        167.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "Sources",
+        "type": "Title"
+    },
+    {
+        "element_id": "704854efd65928a4c4c0c117aad64989",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        295.8,
+                        182.7
+                    ],
+                    [
+                        295.8,
+                        193.7
+                    ],
+                    [
+                        434.4,
+                        193.7
+                    ],
+                    [
+                        434.4,
+                        182.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "directory <directory>",
+        "type": "Title"
+    },
+    {
+        "element_id": "1974d09d6a5c1beb70a4e0c0d6fb189f",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        352.5,
+                        195.5
+                    ],
+                    [
+                        352.5,
+                        219.5
+                    ],
+                    [
+                        533.4,
+                        219.5
+                    ],
+                    [
+                        533.4,
+                        195.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "704854efd65928a4c4c0c117aad64989"
+        },
+        "text": "Add directory to the list of directories that is searched for sources.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "cc178b27c26a5548353a532c6c041e5f",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        295.8,
+                        227.7
+                    ],
+                    [
+                        295.8,
+                        277.7
+                    ],
+                    [
+                        487.2,
+                        277.7
+                    ],
+                    [
+                        487.2,
+                        227.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "704854efd65928a4c4c0c117aad64989"
+        },
+        "text": "list list <filename>:<function> list <filename>:<line_number> list <first>,<last>",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "8028eb46b3008439e5dfe405345d2a95",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        352.5,
+                        279.5
+                    ],
+                    [
+                        352.5,
+                        342.5
+                    ],
+                    [
+                        543.8,
+                        342.5
+                    ],
+                    [
+                        543.8,
+                        279.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "704854efd65928a4c4c0c117aad64989"
+        },
+        "text": "Shows the current or given source con- text. The \ufb01lename may be omitted. If last is omitted the context starting at start is printed instead of centered a- round it.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "f9eba31f756790c9d5794ff3c375ea2d",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        295.8,
+                        350.7
+                    ],
+                    [
+                        295.8,
+                        361.7
+                    ],
+                    [
+                        427.8,
+                        361.7
+                    ],
+                    [
+                        427.8,
+                        350.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "704854efd65928a4c4c0c117aad64989"
+        },
+        "text": "set listsize <count>",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "1ad6b7fdce71787be4e33e30518e3747",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        352.5,
+                        363.5
+                    ],
+                    [
+                        352.5,
+                        374.5
+                    ],
+                    [
+                        527.3,
+                        374.5
+                    ],
+                    [
+                        527.3,
+                        363.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "704854efd65928a4c4c0c117aad64989"
+        },
+        "text": "Set how many lines to show in \u201elist\u201c.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "98b5fb58a2fd03b8266da8f5670196c7",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        396.1,
+                        384.2
+                    ],
+                    [
+                        396.1,
+                        398.2
+                    ],
+                    [
+                        445.9,
+                        398.2
+                    ],
+                    [
+                        445.9,
+                        384.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "Signals",
+        "type": "Title"
+    },
+    {
+        "element_id": "3429ce4d416c2742dc974d01c659eb41",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        295.8,
+                        399.7
+                    ],
+                    [
+                        295.8,
+                        410.7
+                    ],
+                    [
+                        460.8,
+                        410.7
+                    ],
+                    [
+                        460.8,
+                        399.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "98b5fb58a2fd03b8266da8f5670196c7"
+        },
+        "text": "handle <signal> <options>",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "7d813668455c5429801ad3397ca7469e",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        352.5,
+                        412.5
+                    ],
+                    [
+                        352.5,
+                        423.5
+                    ],
+                    [
+                        543.9,
+                        423.5
+                    ],
+                    [
+                        543.9,
+                        412.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "98b5fb58a2fd03b8266da8f5670196c7"
+        },
+        "text": "Set how to handle signles. Options are:",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "9ff0810491b873f7f8585974b18c4f6e",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        352.5,
+                        431.5
+                    ],
+                    [
+                        352.5,
+                        455.5
+                    ],
+                    [
+                        546.5,
+                        455.5
+                    ],
+                    [
+                        546.5,
+                        431.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "98b5fb58a2fd03b8266da8f5670196c7"
+        },
+        "text": "(no)print: (Don\u02bbt) print a message when signals occurs.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "7c1b6a89b1c3d104133704f4da74c47d",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        352.5,
+                        463.5
+                    ],
+                    [
+                        352.5,
+                        487.5
+                    ],
+                    [
+                        521.2,
+                        487.5
+                    ],
+                    [
+                        521.2,
+                        463.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "98b5fb58a2fd03b8266da8f5670196c7"
+        },
+        "text": "(no)stop: (Don\u02bbt) stop the program when signals occurs.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "95906dc2dd3c804cc9615ee8fa0b1f66",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        352.5,
+                        495.5
+                    ],
+                    [
+                        352.5,
+                        519.5
+                    ],
+                    [
+                        544.5,
+                        519.5
+                    ],
+                    [
+                        544.5,
+                        495.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "98b5fb58a2fd03b8266da8f5670196c7"
+        },
+        "text": "(no)pass: (Don\u02bbt) pass the signal to the program.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "b8a9c9083e4a997d25f3b0b42f5a1f1b",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        337.3,
+                        549.5
+                    ],
+                    [
+                        337.3,
+                        560.5
+                    ],
+                    [
+                        561.4,
+                        560.5
+                    ],
+                    [
+                        561.4,
+                        549.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "links": [
+                {
+                    "start_index": 22,
+                    "text": "marc @ darkdust . net",
+                    "url": "mailto:marc@darkdust.net"
+                }
+            ],
+            "page_number": 2
+        },
+        "text": "\u00a9 2007 Marc Haisenko <marc@darkdust.net>",
+        "type": "Footer"
+    },
+    {
+        "element_id": "692f8bab6afd0de529195b556fa9caf0",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        646.0,
+                        60.2
+                    ],
+                    [
+                        646.0,
+                        74.2
+                    ],
+                    [
+                        730.8,
+                        74.2
+                    ],
+                    [
+                        730.8,
+                        60.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "Informations",
+        "type": "Title"
+    },
+    {
+        "element_id": "75a9ef30ff115c99b4ecca8b5e51bb59",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        75.7
+                    ],
+                    [
+                        563.2,
+                        99.7
+                    ],
+                    [
+                        688.6,
+                        99.7
+                    ],
+                    [
+                        688.6,
+                        75.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "disassemble disassemble <where>",
+        "type": "Title"
+    },
+    {
+        "element_id": "d01bb76f95bef84f0b442cbe867839f4",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        101.5
+                    ],
+                    [
+                        619.9,
+                        125.5
+                    ],
+                    [
+                        796.0,
+                        125.5
+                    ],
+                    [
+                        796.0,
+                        101.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "75a9ef30ff115c99b4ecca8b5e51bb59"
+        },
+        "text": "Disassemble the current function or given location.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "1e86140d376b36f1bae1aca88db09cc3",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        133.7
+                    ],
+                    [
+                        563.2,
+                        144.7
+                    ],
+                    [
+                        622.6,
+                        144.7
+                    ],
+                    [
+                        622.6,
+                        133.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "info args",
+        "type": "Title"
+    },
+    {
+        "element_id": "45a05c9aa102ecce8dab7e69645191a9",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        146.5
+                    ],
+                    [
+                        619.9,
+                        170.5
+                    ],
+                    [
+                        803.4,
+                        170.5
+                    ],
+                    [
+                        803.4,
+                        146.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "1e86140d376b36f1bae1aca88db09cc3"
+        },
+        "text": "Print the arguments to the function of the current stack frame.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "dbdc07d36de23fd82d8d2ab57302940c",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        178.7
+                    ],
+                    [
+                        563.2,
+                        189.7
+                    ],
+                    [
+                        668.8,
+                        189.7
+                    ],
+                    [
+                        668.8,
+                        178.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "info breakpoints",
+        "type": "Title"
+    },
+    {
+        "element_id": "bd7e96119ff06f09121a5c061e4a4904",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        191.5
+                    ],
+                    [
+                        619.9,
+                        215.5
+                    ],
+                    [
+                        813.1,
+                        215.5
+                    ],
+                    [
+                        813.1,
+                        191.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "Print informations about the break- and watchpoints.",
+        "type": "Title"
+    },
+    {
+        "element_id": "fc3d2bcc41f8c235d1ae49e72045008b",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        223.7
+                    ],
+                    [
+                        563.2,
+                        234.7
+                    ],
+                    [
+                        642.4,
+                        234.7
+                    ],
+                    [
+                        642.4,
+                        223.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "info display",
+        "type": "Title"
+    },
+    {
+        "element_id": "4fa2861b9de0eb83f469925bd5f7990c",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        236.5
+                    ],
+                    [
+                        619.9,
+                        247.5
+                    ],
+                    [
+                        807.6,
+                        247.5
+                    ],
+                    [
+                        807.6,
+                        236.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "Print informations about the \u201edisplays\u201c.",
+        "type": "Title"
+    },
+    {
+        "element_id": "c4116490c0497ce77e365a4477cbef9e",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        255.7
+                    ],
+                    [
+                        563.2,
+                        266.7
+                    ],
+                    [
+                        635.8,
+                        266.7
+                    ],
+                    [
+                        635.8,
+                        255.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "info locals",
+        "type": "Title"
+    },
+    {
+        "element_id": "1274beabbb635f5bd772a446759ea2d5",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        268.5
+                    ],
+                    [
+                        619.9,
+                        292.5
+                    ],
+                    [
+                        811.9,
+                        292.5
+                    ],
+                    [
+                        811.9,
+                        268.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "c4116490c0497ce77e365a4477cbef9e"
+        },
+        "text": "Print the local variables in the currently selected stack frame.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "fa0f65abff703fd6110fc8ec1da9b512",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        300.7
+                    ],
+                    [
+                        563.2,
+                        311.7
+                    ],
+                    [
+                        682.0,
+                        311.7
+                    ],
+                    [
+                        682.0,
+                        300.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "info sharedlibrary",
+        "type": "Title"
+    },
+    {
+        "element_id": "a43d5cc70db2f04921d8de929b49bc67",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        313.5
+                    ],
+                    [
+                        619.9,
+                        324.5
+                    ],
+                    [
+                        754.4,
+                        324.5
+                    ],
+                    [
+                        754.4,
+                        313.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "fa0f65abff703fd6110fc8ec1da9b512"
+        },
+        "text": "List loaded shared libraries.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "761c3deb404693e946c542c239a5bff1",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        332.7
+                    ],
+                    [
+                        563.2,
+                        343.7
+                    ],
+                    [
+                        642.4,
+                        343.7
+                    ],
+                    [
+                        642.4,
+                        332.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "info signals",
+        "type": "Title"
+    },
+    {
+        "element_id": "8ff752276869659ff98bfdc8255fa1c5",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        345.5
+                    ],
+                    [
+                        619.9,
+                        369.5
+                    ],
+                    [
+                        797.8,
+                        369.5
+                    ],
+                    [
+                        797.8,
+                        345.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "761c3deb404693e946c542c239a5bff1"
+        },
+        "text": "List all signals and how they are cur- rently handled.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "a3581ca5a19c26d0262305cafe911e08",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        377.7
+                    ],
+                    [
+                        563.2,
+                        388.7
+                    ],
+                    [
+                        642.4,
+                        388.7
+                    ],
+                    [
+                        642.4,
+                        377.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "info threads",
+        "type": "Title"
+    },
+    {
+        "element_id": "799eecd32cb1cda45f85c4ad3e2bfe39",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        390.5
+                    ],
+                    [
+                        619.9,
+                        401.5
+                    ],
+                    [
+                        693.9,
+                        401.5
+                    ],
+                    [
+                        693.9,
+                        390.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "List all threads.",
+        "type": "Title"
+    },
+    {
+        "element_id": "58f146c4129fcbffb083e5028041c450",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        409.7
+                    ],
+                    [
+                        563.2,
+                        420.7
+                    ],
+                    [
+                        668.8,
+                        420.7
+                    ],
+                    [
+                        668.8,
+                        409.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "show directories",
+        "type": "Title"
+    },
+    {
+        "element_id": "3e199f2732bc9dcbc2e574fd42a05b4e",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        422.5
+                    ],
+                    [
+                        619.9,
+                        446.5
+                    ],
+                    [
+                        808.2,
+                        446.5
+                    ],
+                    [
+                        808.2,
+                        422.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "Print all directories in which GDB sear- ches for source \ufb01les.",
+        "type": "Title"
+    },
+    {
+        "element_id": "88a75960b0bf0b04d1270597c949cea1",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        454.7
+                    ],
+                    [
+                        563.2,
+                        465.7
+                    ],
+                    [
+                        649.0,
+                        465.7
+                    ],
+                    [
+                        649.0,
+                        454.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "3e199f2732bc9dcbc2e574fd42a05b4e"
+        },
+        "text": "show listsize",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "b5908d372f803bfbd1c6b3c75ca20f16",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        467.5
+                    ],
+                    [
+                        619.9,
+                        491.5
+                    ],
+                    [
+                        806.4,
+                        491.5
+                    ],
+                    [
+                        806.4,
+                        467.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "3e199f2732bc9dcbc2e574fd42a05b4e"
+        },
+        "text": "Print how many are shown in the \u201elist\u201c command.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "dccade89862a34764602ef1b80fa31ea",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        563.2,
+                        499.7
+                    ],
+                    [
+                        563.2,
+                        510.7
+                    ],
+                    [
+                        695.2,
+                        510.7
+                    ],
+                    [
+                        695.2,
+                        499.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2
+        },
+        "text": "whatis variable_name",
+        "type": "Title"
+    },
+    {
+        "element_id": "9b871e7f71f6069863cadf920092d0d3",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 595.0,
+                "layout_width": 842.0,
+                "points": [
+                    [
+                        619.9,
+                        512.5
+                    ],
+                    [
+                        619.9,
+                        523.5
+                    ],
+                    [
+                        759.9,
+                        523.5
+                    ],
+                    [
+                        759.9,
+                        512.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "GDB Cheat Sheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:18:02",
+            "page_number": 2,
+            "parent_id": "dccade89862a34764602ef1b80fa31ea"
+        },
+        "text": "Print type of named variable.",
+        "type": "NarrativeText"
+    }
+]

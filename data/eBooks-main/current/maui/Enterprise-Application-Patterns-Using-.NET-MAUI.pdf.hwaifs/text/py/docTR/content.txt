@@ -2959,7 +2959,7 @@ This method builds the URI that identifies the resource the request will be sent
 RequestProvider class to invoke the POST HTTP method on the resource, before returning the results
 to the BasketViewModel. Note that an access token, obtained from IdentityServer during the
 authentication process, is required to authorize requests to the basket microservice. For more
-information about authorization, see Authorization.
+information about authorization, see Authorization,
 The following code example shows one of the PostAsync methods in the RequestProvider class:
 public async Task<TResult> PostAsync<TResult>(
 string uri, TResult data, string token = string header =

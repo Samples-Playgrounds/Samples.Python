@@ -1,0 +1,600 @@
+www.hostinger.comBACKGROUND 1 PSUEDO-CLASS 9
+BORDER 1 PSUEDO-ELEMENTS 9
+TABLE 1 UI 9
+BOX MODEL 2
+TRANSITIONS 2 UNITS 10
+COLOR 3 ANGELS 10
+FONT 3 ABSOLUTE MEASUREMENT 10
+ANIMATIONS 4 COLORS 10
+COLUMN 4 FREQUENCY 10
+TEXT 4 RELATIVE MEASUREMENT 10
+SPEECH 5 TIME 10
+TEMPLATE LAYOUT 5
+3D / 2D TRANSFORM 6 SELECTOR TYPES 11
+GRID POSITIONING 6
+HYPERLINK 6
+LIST AND MARKERS 6
+OUTLINE 6
+GENERATED CONTENT 7
+POSITIONING 7
+RUBY 7
+LINE BOX 8
+PAGED MEDIA 8
+www.hostinger.combackground background-image border border-width
+background-position border-style
+background-size border-color
+background-repeat
+background-attachment border-break border-width
+background-origin border-style
+background-clip color
+background-color close
+background-attachment scroll | fixed border-bottom border-bottom-width
+border-style
+background-break bounding-box | each-box | border-color
+continuous
+border-bottom-color border-color
+background-clip length
+% border-bottom-style border-style
+border-box | padding-box |
+content-box | no-clip border-bottom-width thin | medium | thick
+length
+background-color color
+transparent border-collapse collapse | separate
+background-image url border-color color
+none
+border-image image
+background-origin border-box | padding-box | [ number / %
+content-box border-width
+stretch | repeat | round ]
+background-position top left | top center | top none
+right | center left | center
+center | center right | border-left border-left-width
+bottom left | bottom center border-style
+| bottom right border-color
+x-% y-%
+x-pos y-pos border-left-color border-color
+background-repeat repeat | repeat-x | repeaty border-left-style border-style
+| no-repeat
+border-left-width thin | medium | thick
+background-size length length
+%
+auto | cover | contain border-right border-right-width
+border-style
+border-color
+border-right-color border-color
+border-right-style border-style
+border-collapse collapse | separate
+border-right-width thin | medium | thick
+length
+border-spacing length length
+caption-side top | bottom | left | right
+empty-cells show | hide
+table-layout table-layout auto | fixed
+www.hostinger.comborder-top border-top-width clear left | right | both | none
+border-style
+border-color display none | inline | block | inlineblock
+| list-item | run-in |
+border-top-color border-color compact | table | inlinetable
+| table-row-group |
+border-top-style border-style table-header-group | tablefooter-
+group | table-row |
+border-top-width thin | medium | thick table-column-group | tablecolumn
+length | table-cell | tablecaption
+| ruby | ruby-base |
+border-width thin | medium | thick ruby-text | ruby-base-group
+length | ruby-text-group
+border-radius border-top-right-radius float left | right | none
+border-bottom-right-radius
+border-bottom-left-radius height auto
+border-top-left-radius length
+%
+border-top-right-radius length
+max-height none
+border-bottom-right-radius length length
+%
+border-bottom-left-radius length
+max-width none
+border-top-left-radius length length
+%
+box-shadow inset || [ length, length,
+length, length || <color> ] min-height none | inherit
+none length
+%
+border-style none | hidden | dotted |
+dashed | solid | double | min-width none | inherit
+groove | ridge | inset | length
+outset %
+width auto
+%
+length
+margin margin margin-top
+margin-right
+transition transition-property
+margin-bottom
+transition-duration
+margin-left
+transition-timing-function
+transition-delay
+margin-bottom auto
+length
+transition-delay time
+%
+transition-duration time
+margin-left auto
+length
+transition-property none | all
+%
+transition-timing-function ease | linear | ease-in |
+margin-right auto
+ease-out | ease-in-out |
+length
+cubic-Bezier (number,
+%
+number, number, number)
+www.hostinger.commargin-top auto font font-style
+length font-variant
+% font-weight
+font-size/line-height
+padding padding padding-top font-family
+padding-right caption | icon | menu |
+padding-bottom message-box | smallcaption
+padding-left | status-bar
+padding-bottom length font-family family-name
+% generic-family
+inherit
+padding-left length
+% font-size xx-small | x-small | small |
+medium | large | x-large |
+padding-right length xx-large | smaller | larger |
+% inherit
+length
+padding-top length %
+%
+font-size-adjust none| inherit
+marquee-direction forward | reverse number
+marquee-loop infinite font-stretch normal | wider | narrower |
+number ultra-condensed | extracondensed
+| condensed | semi-condensed
+marquee-play-count infinite | semiexpanded | expanded |
+integer extra-expanded | ultraexpanded
+| inherit
+marquee-speed slow | normal | fast
+font-style normal | italic | oblique |
+marquee-style scroll | slide | alternate inherit
+overflow visible | hidden | scroll | font-variant normal | small-caps | inherit
+auto | no-display | nocontent
+overflow-x font-weight normal | bold | bolder |
+overflow-y lighter | 100 | 200 | 300 |
+400 | 500 | 600 | 700 | 800
+overflow-style auto | marquee-line | marquee- | 900 | inherit
+block
+overflow-x visible | hidden | scroll |
+auto | no-display | nocontent
+overflow-y visible | hidden | scroll |
+auto | no-display | nocontent
+color inherit
+rotation angle
+color
+rotation-point position (paired value offset)
+opacity inherit
+number
+visibility visibility visible | hidden |
+collapse
+www.hostinger.comdirection ltr | rtl | inherit column-count auto
+number
+hanging-punctuation none | [ start | end | endedge ]
+column-fill auto | balance
+letter-spacing normal
+length column-gap normal
+% length
+punctuation-trim none | [start | end | adjacent] column-rule column-rule-width
+column-rule-style
+text-align start | end | left | right | column-rule-color
+center | justify
+column-rule-color color
+text-align-last start | end | left | right |
+center | justify column-rule-style border-style
+text-decoration none | underline | overline | column-rule-width thin | medium | thick
+line-through | blink length
+text-emphasis none | [ [ accent | dot | circle columns column-width
+| disc] [ before | after ]? ] column-count
+text-indent length column-span 1 | all
+%
+column-width auto
+text-justify auto | inter-word | interideograph length
+| inter-cluster | distribute |
+kashida | tibetan
+text-outline none
+color
+length
+text-shadow none animation animation-name
+color animation-duration
+length animation-timing-function
+animation-delay
+text-transform none | capitalize | uppercase animation-iteration-count
+| lowercase animation-direction
+text-wrap normal | unrestricted | none animation-delay time
+| suppress
+animation-direction normal | alternate
+unicode-bidi normal | embed | bidioverride
+animation-duration time
+white-space normal | pre | nowrap | prewrap
+| pre-line animation-iteration-count inherit
+number
+white-space-collapse preserve | collapse | preserve-
+breaks | discard animation-name none | IDENT
+word-break normal | keep-all | loose | animation-play-state running | paused
+break-strict | break-all
+animation-timing-function ease | linear | ease-in |
+word-spacing normal ease-out | ease-in-out |
+length cubic-Bezier (number,
+% number, number, number)
+word-wrap normal | break-word
+www.hostinger.comcue cue-before voice-family inherit | [ <specific-voice,
+cue-after age, generic-voice, number> ]
+cue-before uri [ silent | x-soft | soft | voice-rate x-slow | slow | medium |
+medium | loud | x-loud] | fast | x-fast | inherit
+none | inherit ] %
+number
+% voice-pitch x-low | low | medium | high
+| x-high | inherit
+cue-after uri [ silent | x-soft | soft | number
+medium | loud | x-loud] | %
+none | inherit ]
+number voice-pitch-range x-low | low | medium | high
+% | x-high | inherit
+number
+mark mark-before
+mark-after voice-stress strong | moderate | none |
+reduced | inherit
+mark-before string
+voice-volume silent | x-soft | soft | medium
+mark-after string | loud | x-loud | inherit
+number
+pause pause-before %
+pause-after
+pause-before none | x-weak | weak |
+medium | strong | x-strong
+| inherit
+time
+pause-after none | x-weak | weak | box-align start | end | center | base
+medium | strong | x-strong
+| inherit box-direction normal | reverse
+time
+box-flex number
+phonemes string string
+box-flex-group integer
+rest rest-before
+rest-after box-lines single | multiple
+rest-before none | x-weak | weak | box-orient horizontal | vertical | inlineaxis
+medium | strong | x-strong | block-axis
+| inherit
+time box-pack start | end | center | justify
+rest-after none | x-weak | weak | box-sizing content-box | padding-box |
+medium | strong | x-strong border-box | margin-box
+| inherit
+time tab-side top | bottom | left | right
+speak none | normal | spell-out |
+digits | literal-punctuation |
+no-punctuation | inherit
+voice-balance left | center | right | leftwards
+| rightwards | inherit
+number
+voice-duration time
+www.hostinger.comlist-style list-style-type backface-visibility visible | hidden
+list-style-position
+list-style-image perspective none
+number
+list-style-image none
+url perspective-origin [ [ [ percentage> | <length> |
+left | center | right ] [
+list-style-position Inside | outside <percentage> | <length> | top
+| center | bottom ]? ] <length> ]
+list-style-type none | asterisks | box | | [ [ [ left | center | right ] ||
+check | circle | diamond | [ top | center | bottom ] ]
+disc | hyphen | square | <length> ]
+decimal | decimal-leadingzero
+| lower-roman | upperroman transform none | matrix | matrix3d |
+| lower-alpha | upper- translate3d | translateX |
+alpha | lower-greek | translateY | translateZ |
+lower-latin | upper-latin | scale | scale3d | scaleX |
+hebrew | armenian | georgian scaleY | scaleZ | rotate |
+| cjk-ideographic | rotate3d | rotateX | rotateY
+hiragana | katakana | hiragana- | rotateZ | skewX | skewY |
+iroha | katakana-iroha skew | perspective
+| footnotes
+transform-origin [ [ [ <percentage> |
+marker-offset auto <length> | left | center |
+length right ] [ <percentage> |
+<length> | top | center |
+bottom ]? ] <length> ] |
+[ [ [ left | center | right ] ||
+[ top | center | bottom ] ]
+<length> ]
+grid-columns none | inherit transform-style flat | preserve-3d
+[ length percentage relative
+length ]
+grid-rows none | inherit
+[ length percentage relative
+length ]
+target target-name
+target-new
+target-position
+target-name current | root | parent | new
+outline outline-color
+| modal
+outline-style
+string
+outline-width
+target-new window | tab | none
+outline-color color
+invert
+target-position above | behind | front |
+back
+outline-offset inherit
+length
+outline-style None | dotted | dashed |
+solid | double | groove |
+ridge | inset | outset
+outline-width thin | medium | thick
+length
+www.hostinger.combookmark-label content string-set identifier
+attr content-list
+string
+text-replace none
+bookmark-level none [<string> <string>]+
+integer
+bookmark-target self
+uri
+attr
+border-length auto
+length bottom auto
+%
+content normal | none | inhibit length
+uri
+clip shape
+counter-increment none auto
+identifier number
+left auto
+counter-reset none %
+identifier number length
+crop auto position static | relative | absolute | fixed
+shape
+right auto
+display normal | none | list-item %
+length
+float-offset length length
+top auto
+hyphenate-after auto %
+integer length
+hyphenate-before auto z-index auto
+integer number
+hyphenate-character auto
+integer
+hyphenate-lines no-limit
+integer
+hyphenate-resource none ruby-align auto | start | left | center |
+uri end | right | distribute-letter
+| distribute-space | lineedge
+hyphens none | manual | auto
+ruby-overhang auto | start | end | none
+image-resolution normal | auto
+dpi ruby-position before | after | right | inline
+marks [ crop || cross ] | none ruby-span attr(x) | none
+move-to normal | here
+identifier
+page-policy start | first | last
+quotes none
+string string string string
+www.hostinger.comalignment-adjust auto | baseline | beforeedge line-stacking line-stacking-strategy
+| text-before-edge | line-stacking-ruby
+middle | central | after-edge line-stacking-shift
+| text-after-edge | ideographic
+| alphabetic | hanging line-stacking-strategy inline-line-height | blockline-
+| mathematical height | max-height |
+length grid-height
+%
+line-stacking-ruby exclude-ruby | include-ruby
+alignment-baseline baseline | use-script | before-
+edge | text-beforeedge line-stacking-shift consider-shifts | disregardshifts
+| after-edge | textafter-
+edge | central | middle text-height auto | font-size | text-size |
+| ideographic | alphabetic | max-size
+hanging | mathematical
+vertical-align Baseline | sub | super | top
+baseline-shift baseline | sub | super | text-top | middle | bottom
+length | text-bottom
+% length
+%
+dominant-baseline auto | use-script | nochange
+| reset-size | alphabetic
+| hanging | ideographic
+| mathematical |
+central | middle | text-after-
+edge | text-before-edge
+fit fill | hidden | meet | slice
+drop-initial-after-align alignment-baseline
+fit-position [top | center | bottom] ||
+drop-initial-after-adjust central | middle | after-edge
+[left | center | right]
+| text-after-edge | ideographic
+length
+| alphabetic |
+%
+mathematical
+length
+image-orientation auto
+%
+angle
+drop-initial-before-align caps-height
+orphans integer
+alignment-baseline
+page auto
+drop-initial-before-adjust before-edge | text-beforeedge
+identifier
+| central | middle |
+hanging | mathematical
+page-break-after auto | always | avoid | left |
+length
+right
+%
+page-break-before auto | always | avoid | left |
+drop-initial-value initial
+right
+integer
+page-break-inside auto | avoid
+drop-initial-size auto
+integer
+size auto | landscape | portrait
+%
+length
+line
+windows integer
+inline-box-align initial | last
+integer
+line-height normal
+number
+length
+%
+www.hostinger.comappearance normal | inherit | [icon | :active an activated element
+window | desktop | workspace
+| document | tooltip | dialog | :focus an element while the element
+has focus
+button | pushbutton | hyperlink
+| radiobutton | checkbox |
+:visited a visited link
+menuitem | tab | menu | menubar
+| pull-down-menu | pop-up-menu
+:hover an element when you mouse over it
+| list-menu | radio-group |
+checkboxgroup | outline-tree | :link an unvisited link
+range | field | combo-box |
+signature | password] :disabled an element while the element
+is disabled
+cursor auto | crosshair | default | pointer
+:enabled an element while the element
+| move | e-resize | ne-resize |
+is enabled
+nw-resize | nresize | se-resize |
+sw-resize | s-resize | w-resize |
+:checked an element (form element control)
+text | wait | help that is checked
+url
+:selection an element that is currently
+icon auto | inherit selected of highlighted by
+url the user
+:lang Allows the author to specify
+nav-index auto | inherit
+a language to use in a specified
+number
+element
+nav-up auto | inherit :nth-child(n) an element that is the n-th sibling
+<id> [ current | root |
+<target-name> ] :nth-last-child(n) an element that is the n-th sibling
+counting from the last sibling
+nav-right auto | inherit
+:first-child an element that is the first sibling
+<id> [ current | root |
+<target-name> ]
+:last-child an element that is the last sibling
+nav-down auto | inherit :only-child an element that is the only child
+<id> [ current | root |
+<target-name> ] :nth-of-type(n) an element that is the n-th sibling
+of its type.
+nav-left auto | inherit
+:nth-last-of-type(n) an element that is the n-th sibling
+<id> [ current | root |
+of its type counting from the last
+<target-name> ]
+sibling
+resize none | both | horizontal |
+:last-of-type an element that is the first sibling
+vertical | inherit of its type
+:first-of-type an element that is the last sibling
+of its type
+:only-of-type an element that is the only
+child of that type
+::first-letter Adds special style to the first
+letter of a text :empty an element that has no children
+:root root element within the document
+::first-line Adds special style to the first
+line of a text
+:not(x) an element not represented
+by the argument ‘x’
+::before Inserts some content before
+an element :target a target element as specified
+by a target in a URI
+::after Inserts some content after an
+element
+www.hostinger.comUNITS
+% percentage Hz hertz
+cm centimeter kHz kilo-hertz
+in inch
+mm millimeter
+pc pica (1p = 12 points)
+pt point (1pt = 1/72 inch) ms milli-seconds
+s seconds
+ch width of the "0" glyph found in
+the font for the font size used to color name red, blue, green, dark green
+render
+rgb(x,y,z) red = rgb(255,0,0)
+em 1em = current font size of
+current element rgb(x%,y%,z%) red = rgb(100%,0,0)
+ex x-height of the element's font rgba(x,y,z, alpha) red = rgba(255,0,0)
+gd the grid defined by 'layout-grid' #rrggbb red = #ff0000 (or shorthand =
+#f00)
+px pixel of the viewing device
+hsl(hue, saturation, red = hsl(0, 100%, 50%)
+rem the font size of the root element lightness)
+vh the viewport's height hsla(hue, saturation, red = hsl(0, 100%, 50%)
+lightness, alpha)
+vw the viewport's width
+flavor An accent color (typically chosen
+vm viewport's height or width, by the user) to customize the
+whichever is smaller of the two user interface of the user agent
+itself
+currentColor computed value of the
+'currentColor' keyword is the
+computed value of the 'color'
+property
+deg degrees
+grad grads
+rad radians
+turn turns
+www.hostinger.comSELECTOR TYPES
+Universal Any element *{ font: 10px Arial; }
+Type Any element of that type h1 { text-decoration:
+underline; }
+Grouping Multiple elements of different types h1, h2, h3 { font-family: Verdana; }
+Class Multiple elements of different types .sampleclass { textdecoration:
+when you don’t want to affect all underline; }
+instances of that type
+Id A single element type when you don’t #sampleid { textdecoration:
+want to affect all instances of that type underline; }
+Descendant An element that is below (in the #gallery h1 { textdecoration:
+document tree) another element—no underline; }
+matter how many levels below
+Child An element that is directly below #title > p { font-weight: bold; }
+(in the document tree) another element
+Adjacent All elements that share the same parent h1 + p { font-style: italic; }
+Sibling and elements are in the same immediate
+sequence
+General All elements that share the same parent h1 ~ p { font-style: italic; }
+Sibling and elements are in the same sequence
+(not necessarily immediate)
+Attribute An element with that matches E[selected] - att whatever the value
+the attribute listed E[att="val"] - att with a specific value
+E[rel~="next"] - att with a value is
+a whitespace separated list
+*[lang|="en"] - att value either
+being exactly "val" or beginning
+with "val" immediately followed
+by "-"
+E[att^="val"] - att value that
+begins with the prefix "val"
+E[att$="val"] - att value that end
+with the suffix "val"
+E[att*="val"] - att value
+contains at least one instance
+of the substring "val"
+www.hostinger.com

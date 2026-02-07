@@ -1,0 +1,762 @@
+Haskell Cheat Sheet Strings Enumerations
+• "abc" – Unicode string, sugar for
+This cheat sheet lays out the fundamental elements • [1..10] – List of numbers – 1, 2, ..., 10.
+[’a’,’b’,’c’].
+of the Haskell language: syntax, keywords and • [100..]–Infinitelistofnumbers–100, 101,
+• ’a’ – Single character.
+other elements. It is presented as both an ex- 102, ... .
+ecutable Haskell file and a printable document. • [110..100] – Empty list; ranges only go for-
+Multi-line Strings Normally, it is a syntax error
+Load the source into your favorite interpreter to wards.
+play with code samples shown. if a string has any actual newline characters. That • [0, -1 ..] – Negative integers.
+is, this is a syntax error: • [-100..-110] – Syntax error; need
+[-100.. -110] for negatives.
+string1 = "My long
+Basic Syntax • [1,3..100], [-1,3..100] – List from 1 to
+string."
+100 by 2, -1 to 100 by 4.
+Comments Backslashes (‘\’) can “escape” a newline:
+In fact, any value which is in the Enum class can be
+used:
+A single line comment starts with ‘--’ and extends string1 = "My long "
+to the end of the line. Multi-line comments start "string." • [’a’ .. ’z’] – List of characters – a, b,
+with ’{-’ and extend to ’-}’. Comments can be
+..., z.
+The area between the backslashes is ignored. New-
+• [1.0, 1.5 .. 2] – [1.0,1.5,2.0].
+nested.
+lines in the string must be represented explicitly:
+• [UppercaseLetter ..] – List of
+Comments above function definitions should
+GeneralCategory values (from Data.Char).
+start with ‘{- |’ and those next to parameter types string2 = "My long \n"
+with‘-- ^’forcompatibilitywithHaddock1,asys- "string."
+tem for documenting Haskell code.
+That is, string1 evaluates to:
+Lists & Tuples
+My long string(cid:0)
+Reserved Words
+• [] – Empty list.
+While string2 evaluates to:
+ThefollowingwordsarereservedinHaskell. Itisa • [1,2,3] – List of three numbers.
+syntax error to give a variable or a function one of My long • 1 : 2 : 3 : []–Alternatewaytowritelists
+these names. string(cid:0) using “cons” (:) and “nil” ([]).
+• "abc" – List of three characters (strings are
+• case • import • of Numbers lists).
+• class • in • module • ’a’ : ’b’ : ’c’ : [] – List of characters
+• data • infix • newtype • 1 – Integer or Floating point (same as "abc").
+• deriving • infixl • then • 1.0, 1e10 – Floating point • (1,"a") – 2-element tuple of a number and a
+• do • infixr • type • 1. – syntax error string.
+• else • instance • where • -1 – sugar for (negate 1) • (head, tail, 3, ’a’) – 4-element tuple of
+• if • let • 2-1 – sugar for ((-) 2 1) two functions, a number and a character.
+1http://haskell.org/haddock/
+(cid:13)c 2009 Justin Bailey. 1 jgbailey@codeslower.com“Layout” rule, braces and semi-colons. Let Indent the body of the let at least one space Nesting & Capture Nested matching and bind-
+from the first definition in the let. If let appears ing are also allowed.
+Haskell can be written using braces and semi-
+on its own line, the body of any definition must
+colons, just like C. However, no one does. Instead, appear in the column after the let: data Maybe a = Just a | Nothing
+the “layout” rule is used, where spaces represent
+scope. The general rule is: always indent. When square x =
+the compiler complains, indent more. let x2 = Figure 1: The definition of Maybe
+x * x
+in x2 UsingMaybewecandetermineifanychoicewas
+Braces and semi-colons Semi-colons termi-
+given using a nested match:
+nate an expression, and braces represent scope. As can be seen above, the in keyword must also be
+They can be used after several keywords: where, in the same column as let. Finally, when multiple anyChoice1 ch =
+let, do and of. They cannot be used when defin- definitions are given, all identifiers must appear in case ch of
+ing a function body. For example, the below will the same column. Nothing (cid:25) "No choice!"
+not compile. Just (First _) (cid:25) "First!"
+Just Second (cid:25) "Second!"
+Keywords
+square2 x = { x * x; } _ (cid:25) "Something else."
+Haskell keywords are listed below, in alphabetical
+However, this will work fine: Binding can be used to manipulate the value
+order.
+matched:
+square2 x = result
+Case anyChoice2 ch =
+where { result = x * x; }
+case ch of
+case is similar to a switch statement in C# or Java, Nothing (cid:25) "No choice!"
+Function Definition Indent the body at least but can match a pattern: the shape of the value be- Just score@(First "gold") (cid:25)
+one space from the function name: ing inspected. Consider a simple data type: "First with gold!"
+Just score@(First _) (cid:25)
+data Choices = First String | Second |
+square x =
+"First with something else: "
+Third | Fourth
+x * x
+++ show score
+case can be used to determine which choice was _ (cid:25) "Not (cid:28)rst."
+Unless a where clause is present. In that case, in- given:
+dent the where clause at least one space from the
+whichChoice ch = MatchingOrder Matching proceeds from top to
+functionnameandanyfunctionbodiesatleastone
+case ch of bottom. If anyChoice1 is reordered as follows, the
+space from the where keyword:
+First _ (cid:25) "1st!" first pattern will always succeed:
+Second (cid:25) "2nd!"
+square x =
+anyChoice3 ch =
+_ (cid:25) "Something else."
+x2
+case ch of
+where x2 =
+As with pattern-matching in function definitions, _ (cid:25) "Something else."
+x * x
+the ‘_’ token is a “wildcard” matching any value. Nothing (cid:25) "No choice!"
+(cid:13)c 2009 Justin Bailey. 2 jgbailey@codeslower.comJust (First _) (cid:25) "First!" class Flavor a where Data
+Just Second (cid:25) "Second!" (cid:29)avor :: a (cid:25) String
+So-called algebraic data types can be declared as fol-
+Notice that the declaration only gives the type lows:
+Guards Guards, or conditional matches, can be
+signature of the function—no implementation is
+usedincasesjustlikefunctiondefinitions. Theonly data MyType = MyValue1 | MyValue2
+given here (with some exceptions, see “Defaults”
+difference is the use of the -> instead of =. Here
+on page 3). Continuing, we can define several in- MyType is the type’s name. MyValue1 and
+is a simple function which does a case-insensitive
+stances: MyValue are values of the type and are called con-
+string match:
+structors. Multiple constructors are separated with
+instance Flavor Bool where
+strcmp s1 s2 = case (s1, s2) of the ‘|’ character. Note that type and constructor
+(cid:29)avor _ = "sweet"
+([], []) (cid:25) True names must start with a capital letter. It is a syntax
+(s1:ss1, s2:ss2) error otherwise.
+instance Flavor Char where
+| toUpper s1 (cid:30) toUpper s2 (cid:25)
+(cid:29)avor _ = "sour"
+strcmp ss1 ss2 Constructors with Arguments The type above
+| otherwise (cid:25) False Evaluating flavor True gives: is not very interesting except as an enumeration.
+_ (cid:25) False Constructors that take arguments can be declared,
+> (cid:29)avor True
+allowing more information to be stored:
+"sweet"
+Class
+data Point = TwoD Int Int
+While flavor ’x’ gives:
+A Haskell function is defined to work on a certain | ThreeD Int Int Int
+type or set of types and cannot be defined more > (cid:29)avor ’x’
+Notice that the arguments for each constructor are
+than once. Most languages support the idea of "sour"
+type names, not constructors. That means this kind
+“overloading”, where a function can have different
+of declaration is illegal:
+behavior depending on the type of its arguments. Defaults Default implementations can be given
+Haskell accomplishes overloading through class for functions in a class. These are useful when cer- data Poly = Triangle TwoD TwoD TwoD
+and instance declarations. A class defines one tain functions can be defined in terms of others in
+instead, the Point type must be used:
+or more functions that can be applied to any types the class. A default is defined by giving a body to
+which are members (i.e., instances) of that class. A one of the member functions. The canonical exam- data Poly = Triangle Point Point Point
+class is analogous to an interface in Java or C#, and ple is Eq, which defines /= (not equal) in terms of
+instancestoaconcreteimplementationoftheinter- ==. : Type and Constructor Names Type and con-
+face. structor names can be the same, because they will
+class Eq a where
+Aclassmustbedeclaredwithoneormoretype never be used in a place that would cause confu-
+((cid:30)) :: a (cid:25) a (cid:25) Bool
+variables. Technically, Haskell 98 only allows one sion. For example:
+((cid:26)) :: a (cid:25) a (cid:25) Bool
+typevariable,butmostimplementationsofHaskell
+((cid:26)) a b = (cid:5) (a (cid:30) b) data User = User String | Admin String
+supportso-calledmulti-parametertypeclasses,which
+allow more than one type variable. Recursive definitions can be created, but an which declares a type named User with two con-
+Wecandefineaclasswhichsuppliesaflavorfor instance declaration must always implement at structors, User and Admin. Using this type in a
+a given type: least one class member. function makes the difference clear:
+(cid:13)c 2009 Justin Bailey. 3 jgbailey@codeslower.comwhatUser (User _) = "normal user." sameaccessor functionforvaluesof thesametype, Because seven of these operations are so com-
+whatUser (Admin _) = "admin user." butthatcanbedangerousiftheaccessorisnotused mon, Haskell provides the deriving keyword
+by all constructors. Consider this rather contrived which will automatically implement the typeclass
+Some literature refers to this practice as type pun-
+example: on the associated type. The seven supported type-
+ning.
+classes are: Eq, Read, Show, Ord, Enum, Ix, and
+data Con = Con { conValue :: String }
+Bounded.
+Type Variables Declaring so-called polymorphic | Uncon { conValue :: String }
+Two forms of deriving are possible. The first is
+data types is as easy as adding type variables in | Noncon
+used when a type only derives one class:
+the declaration:
+whichCon con = "convalue is " ++
+data Slot1 a = Slot1 a | Empty1
+conValue con data Priority = Low | Medium | High
+This declares a type Slot1 with two constructors, deriving Show
+IfwhichConiscalledwithaNonconvalue,aruntime
+Slot1 and Empty1. The Slot1 constructor can take
+error will occur.
+an argument of any type, which is represented by The second is used when multiple classes are de-
+Finally, as explained elsewhere, these names
+the type variable a above. rived:
+can be used for pattern matching, argument cap-
+We can also mix type variables and specific
+ture and “updating.”
+types in constructors:
+data Alarm = Soft | Loud | Deafening
+data Slot2 a = Slot2 a Int | Empty2 Class Constraints Data types can be declared deriving (Read, Show)
+with class constraints on the type variables, but
+Above, the Slot2 constructor can take a value of
+this practice is generally discouraged. It is gener-
+any type and an Int value. Itisasyntaxerrortospecifyderivingforanyother
+ally better to hide the “raw” data constructors us-
+classes besides the six given above.
+ing the module system and instead export “smart”
+Record Syntax Constructor arguments can be
+constructors which apply appropriate constraints.
+declared either positionally, as above, or using
+In any case, the syntax used is:
+record syntax, which gives a name to each argu- Deriving
+ment. Forexample,herewedeclareaContacttype data (Num a) => SomeNumber a = Two a a
+with names for appropriate arguments: | Three a a a See the section on deriving under the data key-
+word on page 4.
+data Contact = Contact { ctName :: String
+This declares a type SomeNumber which has one
+, ctEmail :: String
+type variable argument. Valid types are those in
+, ctPhone :: String }
+the Num class.
+Do
+These names are referred to as selector or accessor
+functions and are just that, functions. They must Deriving Many types have common operations The do keyword indicates that the code to follow
+startwithalowercaseletterorunderscoreandcan- which are tedious to define yet necessary, such as will be in a monadic context. Statements are sepa-
+not have the same name as another function in the ability to convert to and from strings, compare rated by newlines, assignment is indicated by <-,
+scope. Thus the “ct” prefix on each above. Mul- for equality, or order in a sequence. These capabil- andaletformisintroducewhichdoesnotrequire
+tiple constructors (of the same type) can use the ities are defined as typeclasses in Haskell. the in keyword.
+(cid:13)c 2009 Justin Bailey. 4 jgbailey@codeslower.comIf and IO if can be tricky when used with let result = (cid:28)le (cid:25) do
+IO. Conceptually it is no different from an if in if (cid:21) f (cid:6) readFile (cid:28)le
+any other context, but intuitively it is hard to de- then 1 putStrLn ("The (cid:28)le is " ++
+velop. Consider the function doesFileExists from else 0 show (length f)
+System.Directory: return result ++ " bytes long.")
+doesFileExist :: FilePath (cid:25) IO Bool Again, notice where return is. We don’t put it in An alternative syntax uses semi-colons and braces.
+theletstatement. Insteadweuseitonceattheend A do is still required, but indention is unnecessary.
+The if statement has this “signature”:
+of the function. This code shows a case example, but the principle
+if-then-else :: Bool (cid:25) a (cid:25) a (cid:25) a applies to if as well:
+That is, it takes a Bool value and evaluates to some Multiple do’s When using do with if or case, countBytes3 =
+other value based on the condition. From the type another do is required if either branch has multiple do
+signatures it is clear that doesFileExist cannot be statements. An example with if: putStrLn "Enter a (cid:28)lename."
+used directly by if: args (cid:6) getLine
+countBytes1 f =
+case args of
+wrong (cid:28)leName = do
+[] (cid:25) putStrLn "No args given."
+if doesFileExist (cid:28)leName putStrLn "Enter a (cid:28)lename."
+(cid:28)le (cid:25) do { f (cid:6) readFile (cid:28)le;
+then ... args (cid:6) getLine
+putStrLn ("The (cid:28)le is " ++
+else ... if length args (cid:30) 0
+show (length f)
+-- no ’do’.
+++ " bytes long."); }
+Thatis,doesFileExistresultsinanIO Boolvalue,
+then putStrLn "No (cid:28)lename given."
+while if wants a Bool value. Instead, the correct
+else
+Export
+value must be “extracted” by running the IO ac-
+-- multiple statements require
+tion:
+-- a new ’do’. See the section on module on page 6.
+do
+right1 (cid:28)leName = do
+f (cid:6) readFile args
+(cid:21) (cid:6) doesFileExist (cid:28)leName If, Then, Else
+putStrLn ("The (cid:28)le is " ++
+if (cid:21)
+show (length f) Remember, if always “returns” a value. It is an
+then return 1
+++ " bytes long.") expression, not just a control flow statement. This
+else return 0
+function tests if the string given starts with a lower
+Notice the use of return. Because do puts us “in- And one with case: case letter and, if so, converts it to upper case:
+side” the IO monad, we can’t “get out” except
+countBytes2 = -- Use pattern-matching to
+through return. Note that we don’t have to use
+do -- get first character
+if inline here—we can also use let to evaluate the
+putStrLn "Enter a (cid:28)lename." sentenceCase (s:rest) =
+condition and get a value first:
+args (cid:6) getLine if isLower s
+right2 (cid:28)leName = do case args of then toUpper s : rest
+(cid:21) (cid:6) doesFileExist (cid:28)leName [] (cid:25) putStrLn "No args given." else s : rest
+(cid:13)c 2009 Justin Bailey. 5 jgbailey@codeslower.com-- Anything else is empty string silly example which gives the sum of a list of num- A module can only be defined in one file, though
+sentenceCase _ = [] bers, their average, and their median: its exports may come from multiple sources. To
+make a Haskell file a module, just add a module
+listStats m =
+Import declaration at the top:
+let numbers = [1,3 .. m]
+See the section on module on page 6. total = sum numbers module MyModule where
+mid = head (take (m ‘div‘ 2)
+Module names must start with a capital letter but
+numbers)
+In
+otherwise can include periods, numbers and un-
+in "total: " ++ show total ++
+derscores. Periods are used to give sense of struc-
+See let on page 6. ", mid: " ++ show mid
+ture, and Haskell compilers will use them as indi-
+cations of the directory a particular source file is,
+Infix, infixl and infixr Deconstruction Theleft-handsideofaletdef-
+but otherwise they have no meaning.
+inition can also destructure its argument, in case
+See the section on operators on page 11. The Haskell community has standardized a set
+sub-components are to be accessed. This definition
+of top-level module names such as Data, System,
+wouldextractthefirstthreecharactersfromastring
+Network, etc. Be sure to consult them for an appro-
+Instance
+(cid:28)rstThree str =
+priate place for your own module if you plan on
+See the section on class on page 3. let (a:b:c:_) = str releasing it to the public.
+in "Initial three characters are: " ++
+show a ++ ", " ++
+Let Imports The Haskell standard libraries are di-
+show b ++ ", and " ++
+vided into a number of modules. The functionality
+Localfunctionscanbedefinedwithinafunctionus- show c
+provided by those libraries is accessed by import-
+inglet. Theletkeywordmustalwaysbefollowed
+Notethatthisisdifferentthanthefollowing,which ing into your source file. To import all everything
+by in. The in must appear in the same column as
+only works if the string has three characters: exported by a library, just use the module name:
+the let keyword. Functions defined have access to
+all other functions and variables within the same onlyThree str = import Text.Read
+scope (including those defined by let). In this ex- let (a:b:c:[]) = str
+Everything means everything: functions, data types
+ample, mult multiplies its argument n by x, which in "The characters given are: " ++
+andconstructors,classdeclarations,andevenother
+was passed to the original multiples. mult is used show a ++ ", " ++ show b ++
+modules imported and then exported by the that
+by map to give the multiples of x up to 10: ", and " ++ show c
+module. Importing selectively is accomplished by
+multiples x = giving a list of names to import. For example, here
+Of
+let mult n = n * x we import some functions from Text.Read:
+in map mult [1..10] See the section on case on page 2.
+import Text.Read (readParen, lex)
+let “functions” with no arguments are actually
+Module Data types can imported in a number of ways. We
+constants and, once evaluated, will not evaluate
+can just import the type and no constructors:
+again. This is useful for capturing common por- Amoduleisacompilationunitwhichexportsfunc-
+tions of your function and re-using them. Here is a tions, types, classes, instances, and other modules. import Text.Read (Lexeme)
+(cid:13)c 2009 Justin Bailey. 6 jgbailey@codeslower.comOf course, this prevents our module from pattern- Instance Declarations It must be noted that Exports Ifanexportlistisnotprovided,thenall
+matching on the values of type Lexeme. We can instance declarations cannot be excluded from im- functions, types, constructors, etc. will be available
+import one or more constructors explicitly: port: all instance declarations in a module will be toanyoneimportingthemodule. Notethatanyim-
+imported when the module is imported. portedmodulesarenotexportedinthiscase. Limit-
+import Text.Read (Lexeme(Ident, Symbol)) ing the names exported is accomplished by adding
+a parenthesized list of names before the where key-
+All constructors for a given type can also be im- Qualified Imports The names exported by a
+word:
+ported: module (i.e., functions, types, operators, etc.) can
+have a prefix attached through qualified imports. module MyModule (MyType
+import Text.Read (Lexeme(..))
+This is particularly useful for modules which have , MyClass
+a large number of functions having the same name , myFunc1
+Wecanalsoimporttypesandclassesdefinedinthe
+as Prelude functions. Data.Set is a good example: ...)
+module:
+where
+import quali(cid:28)ed Data.Set as Set
+import Text.Read (Read, ReadS)
+Thesamesyntaxasusedforimportingcanbeused
+In the case of classes, we can import the functions This form requires any function, type, constructor here to specify which functions, types, construc-
+defined for a class using syntax similar to import- orothernameexportedbyData.Settonowbepre- tors, and classes are exported, with a few differ-
+ing constructors for data types: fixedwiththealias(i.e.,Set)given. Hereisoneway ences. If a module imports another module, it can
+to remove all duplicates from a list: also export that module:
+import Text.Read (Read(readsPrec
+module MyBigModule (module Data.Set
+, readList)) removeDups a =
+, module Data.Char)
+Set.toList (Set.fromList a)
+Note that, unlike data types, all class functions are where
+importedunlessexplicitlyexcluded. Toonlyimport
+A second form does not create an alias. Instead,
+the class, we use this syntax: import Data.Set
+theprefixbecomesthemodulename. Wecanwrite
+import Data.Char
+a simple function to check if a string is all upper
+import Text.Read (Read())
+case:
+A module can even re-export itself, which can be
+useful when all local definitions and a given im-
+Exclusions If most, but not all, names are to be import quali(cid:28)ed Char
+portedmodulearetobeexported. Belowweexport
+imported from a module, it would be tedious to
+ourselves and Data.Set, but not Data.Char:
+list them all. For that reason, imports can also be
+allUpper str =
+specified via the hiding keyword:
+all Char.isUpper str module AnotherBigModule (module Data.Set
+, module AnotherBigModule)
+import Data.Char hiding (isControl
+where
+, isMark) Except for the prefix specified, qualified imports
+support the same syntax as normal imports. The
+import Data.Set
+Exceptforinstancedeclarations,anytype,function, name imported can be limited in the same ways as
+import Data.Char
+constructor or class can be hidden. described above.
+(cid:13)c 2009 Justin Bailey. 7 jgbailey@codeslower.comNewtype Finally, it should be noted that any deriving lName (Person f l ) =
+clause which can be attached to a data declaration Person (lower f) (lower l)
+While data introduces new values and type just
+can also be used when declaring a newtype.
+creates synonyms, newtype falls somewhere be- Because type is just a synonym, it cannot declare
+tween. The syntax for newtype is quite restricted— multiple constructors the way data can. Type vari-
+Return
+only one constructor can be defined, and that con- ables can be used, but there cannot be more than
+structor can only take one argument. Continuing See do on page 4. the type variables declared with the original type.
+the above example, we can define a Phone type as That means a synonym like the following is possi-
+follows: ble:
+Type
+newtype Home = H String type NotSure a = Maybe a
+This keyword defines a type synonym (i.e., alias).
+newtype Work = W String
+Thiskeyworddoesnotdefineanewtype,likedata
+but this not:
+data Phone = Phone Home Work
+or newtype. It is useful for documenting code but
+otherwisehasnoeffectontheactualtypeofagiven type NotSure a b = Maybe a
+As opposed to type, the H and W “values” on
+function or value. For example, a Person data type
+Phone are not just String values. The typechecker
+Note that fewer type variables can be used, which
+could be defined as:
+treats them as entirely new types. That means our
+useful in certain instances.
+lowerNamefunctionfromabovewouldnotcompile.
+data Person = Person String String
+The following produces a type error:
+Where
+where the first constructor argument represents
+lPhone (Phone hm wk) = their first name and the second their last. How- Similar to let, where defines local functions and
+Phone (lower hm) (lower wk) ever, the order and meaning of the two arguments constants. The scope of a where definition is the
+is not very clear. A type declaration can help: current function. If a function is broken into multi-
+Instead,wemustusepattern-matchingtogettothe
+ple definitions through pattern-matching, then the
+“values” to which we apply lower: type FirstName = String
+scope of a particular where clause only applies to
+type LastName = String
+lPhone (Phone (H hm) (W wk)) = that definition. For example, the function result
+data Person = Person FirstName LastName
+Phone (H (lower hm)) (W (lower wk)) below has a different meaning depending on the
+Becausetypeintroducesasynonym, typechecking arguments given to the function strlen:
+The key observation is that this keyword does not
+is not affected in any way. The function lower, de-
+strlen [] = result
+introduce a new value; instead it introduces a new
+fined as:
+where result = "No string given!"
+type. This gives us two very useful properties:
+• No runtime cost is associated with the new lower s = map toLower s strlen f = result ++ " characters long!"
+where result = show (length f)
+type, since it does not actually produce new
+which has the type
+values. In other words, newtypes are abso-
+lutely free! Where vs. Let A where clause can only be de-
+lower :: String (cid:25) String
+• The type-checker is able to enforce that com- fined at the level of a function definition. Usually,
+mon types such as Int or String are used in can be used on values with the type FirstName or that is identical to the scope of let definition. The
+restrictedways,specifiedbytheprogrammer. LastName just as easily: onlydifferenceiswhenguardsarebeingused. The
+(cid:13)c 2009 Justin Bailey. 8 jgbailey@codeslower.comscope of the where clause extends over all guards. data Bar = Bil (Maybe Int) | Baz bind the value to. This facility is used below to
+In contrast, the scope of a let expression is only bind the head of the list in l for display, while also
+and recalling the definition of Maybe from page 2
+the current function clause and guard, if any. binding the entire list to ls in order to compute its
+we can match on nested Maybe values when Bil is
+length:
+present:
+Declarations, Etc.
+len ls@(l:_) = "List starts with " ++
+f (Bil (Just _)) = ...
+show l ++ " and is " ++
+Thefollowingsectiondetailsrulesonfunctiondec- f (Bil Nothing) = ... show (length ls) ++ " items long."
+larations, list comprehensions, and other areas of f Baz = ... len [] = "List is empty!"
+the language.
+Pattern-matching also allows values to be assigned
+to variables. For example, this function determines Guards Boolean functions can be used as
+Function Definition
+if the string given is empty or not. If not, the value “guards”infunctiondefinitionsalongwithpattern
+Functions are defined by declaring their name, any bound to str is converted to lower case: matching. An example without pattern matching:
+arguments, and an equals sign: which n
+toLowerStr [] = []
+| n (cid:30) 0 = "zero!"
+square x = x * x toLowerStr str = map toLower str
+| even n = "even!"
+Allfunctionsnamesmuststartwithalowercaselet- Note that str above is similer to _ in that it will | otherwise = "odd!"
+ter or “_”. It is a syntax error otherwise. match anything; the only difference is that the
+Notice otherwise – it always evaluates to true and
+value matched is also given a name.
+can be used to specify a “default” branch.
+Pattern Matching Multiple “clauses” of a func-
+Guards can be used with patterns. Here is a
+tion can be defined by “pattern-matching” on the n + k Patterns This (sometimes controversial)
+function that determines if the first character in a
+values of arguments. Here, the the agree function pattern-matching facility makes it easy to match
+string is upper or lower case:
+has four separate cases: certain kinds of numeric expressions. The idea
+is to define a base case (the “n” portion) with a what [] = "empty string!"
+-- Matches when the string "y" is given.
+constant number for matching, and then to define what (c:_)
+agree1 "y" = "Great!"
+other matches (the “k” portion) as additives to the | isUpper c = "upper case!"
+-- Matches when the string "n" is given.
+basecase. Hereisaratherinefficientwayoftesting | isLower c = "lower case"
+agree1 "n" = "Too bad."
+if a number is even or not: | otherwise = "not a letter!"
+-- Matches when string beginning
+-- with ’y’ given.
+isEven 0 = True
+agree1 (’y’:_) = "YAHOO!" Matching & Guard Order Pattern-matching
+isEven 1 = False
+-- Matches for any other value given. proceeds in top to bottom order. Similarly, guard
+isEven (n + 2) = isEven n
+agree1 _ = "SO SAD." expressions are tested from top to bottom. For ex-
+ample, neither of these functions would be very in-
+Note that the ‘_’ character is a wildcard and Argument Capture Argument capture is useful
+teresting:
+matches any value. for pattern-matching a value and using it, without
+Pattern matching can extend to nested values. declaring an extra variable. Use an ‘@’ symbol in allEmpty _ = False
+Assuming this data declaration: between the pattern to match and the variable to allEmpty [] = True
+(cid:13)c 2009 Justin Bailey. 9 jgbailey@codeslower.comthe type of a particular value, even if the value isn’t code when using a Nothing constructor. Nothing
+alwaysEven n present. has type Maybe a but, if not enough other informa-
+| otherwise = False For example, define a class for default values: tion is available, Haskell must be told what a is.
+| n ‘div‘ 2 (cid:30) 0 = True Some example default values:
+class Def a where
+defValue :: a (cid:25) a -- Return "Just False"
+Record Syntax Normally pattern matching oc-
+defMB = defValue (Nothing :: Maybe Bool)
+The idea is you give defValue a value of the right
+curs based on the position of arguments in the
+-- Return "Just ’ ’"
+type and it gives you back a default value for that
+value being matched. Types declared with record
+defMC = defValue (Nothing :: Maybe Char)
+type. Defining instances for basic types is easy:
+syntax, however, can match based on those record
+names. Given this data type:
+instance Def Bool where List Comprehensions
+defValue _ = False
+data Color = C { red
+A list comprehension consists of four types of ele-
+, green
+ments: generators, guards, local bindings, and targets.
+instance Def Char where
+, blue :: Int }
+A list comprehension creates a list of target values
+defValue _ = ’ ’
+based on the generators and guards given. This
+we can match on green only:
+Maybe is a littler trickier, because we want to get
+comprehension generates all squares:
+a default value for the type, but the constructor
+isGreenZero (C { green = 0 }) = True
+might be Nothing. The following definition would squares = [x * x | x (cid:6) [1..]]
+isGreenZero _ = False
+work, but it’s not optimal since we get Nothing
+x <- [1..] generates a list of all Integer values
+Argument capture is possible with this syntax, al- when Nothing is passed in.
+and puts them in x, one by one. x * x creates each
+though it gets clunky. Continuing the above, we
+instance Def a => Def (Maybe a) where element of the list by multiplying x by itself.
+now define a Pixel type and a function to replace
+defValue (Just x) = Just (defValue x) Guards allow certain elements to be excluded.
+values with non-zero green components with all
+defValue Nothing = Nothing Thefollowingshowshowdivisorsforagivennum-
+black:
+ber(excludingitself)canbecalculated. Noticehow
+We’drathergetaJust (defaultvalue)backinstead.
+d is used in both the guard and target expression.
+data Pixel = P Color
+Here is where a lazy pattern saves us – we can pre-
+tendthatwe’vematchedJust xandusethattoget divisors n =
+-- Color value untouched if green is 0 a default value, even if Nothing is given: [d | d (cid:6) [1..(n ‘div‘ 2)]
+setGreen (P col@(C { green = 0 })) = P col , n ‘mod‘ d (cid:30) 0]
+instance Def a => Def (Maybe a) where
+setGreen _ = P (C 0 0 0)
+defValue ~(Just x) = Just (defValue x) Local bindings provide new definitions for use in
+the generated expression or subsequent generators
+Lazy Patterns This syntax, also known as ir- As long as the value x is not actually evaluated,
+and guards. Below, z is used to represent the mini-
+refutable patterns, allows pattern matches which al- we’resafe. Noneofthebasetypesneedtolookatx
+mum of a and b:
+ways succeed. That means any clause using the (see the “_” matches they use), so things will work
+pattern will succeed, but if it tries to actually use just fine. strange = [(a,z) | a (cid:6)[1..3]
+the matched value an error may occur. This is gen- One wrinkle with the above is that we must , b (cid:6)[1..3]
+erally useful when an action should be taken on provide type annotations in the interpreter or the , c (cid:6) [1..3]
+(cid:13)c 2009 Justin Bailey. 10 jgbailey@codeslower.com, let z = min a b (reverse (dropWhile isSpace Precedence and associativity make many of the
+, z < c ] (reverse s))) rules of arithmetic work “as expected.” For ex-
+in trim last ++ ", " ++ trim (cid:28)rst ample, consider these minor updates to the prece-
+Comprehensions are not limited to numbers. Any
+dence of addition and multiplication:
+listwilldo. Alluppercaseletterscanbegenerated: > " Haskell " ## " Curry "
+Curry, Haskell in(cid:28)xl 8 ‘plus1‘
+ups =
+plus1 a b = a + b
+[c | c (cid:6) [minBound .. maxBound] Of course, full pattern matching, guards, etc. are in(cid:28)xl 7 ‘mult1‘
+, isUpper c] availableinthisform. Typesignaturesareabitdif- mult1 a b = a * b
+ferent, though. The operator “name” must appear
+Or, to find all occurrences of a particular break The results are surprising:
+in parentheses:
+value br in a list word (indexing from 0):
+> 2 + 3 * 5
+(##) :: String (cid:25) String (cid:25) String
+idxs word br = 17
+[i | (i, c) (cid:6) zip [0..] word Allowablesymbolswhichcanbeusedtodefineop- > 2 ‘plus1‘ 3 ‘mult1‘ 5
+, c (cid:30) br] erators are: 25
+# $ % & * + (cid:0) / < = > ? @ (cid:8) ^ | - ~
+Auniquefeatureoflistcomprehensionsisthatpat- Reversing associativity also has interesting effects.
+tern matching failures do not cause an error; they However, there are several “operators” which can- Redefining division as right associative:
+are just excluded from the resulting list. not be redefined. They are: <-, -> and =. The last,
+in(cid:28)xr 7 ‘div1‘
+=, cannot be redefined by itself, but can be used as
+div1 a b = a / b
+Operators part of multi-character operator. The “bind” func-
+tion, >>=, is one example. We get interesting results:
+There are very few predefined “operators” in
+> 20 / 2 / 2
+Haskell—most that appear predefined are actually
+Precedence & Associativity The precedence 5.0
+syntax (e.g., “=”). Instead, operators are simply
+and associativity, collectively called fixity, of any > 20 ‘div1‘ 2 ‘div1‘ 2
+functions that take two arguments and have spe-
+operator can be set through the infix, infixr and 20.0
+cial syntactic support. Any so-called operator can
+infixl keywords. These can be applied both to
+be applied as a prefix function using parentheses:
+top-level functions and to local definitions. The
+Currying
+3 + 4 (cid:30) (+) 3 4 syntax is:
+In Haskell, functions do not have to get all of
+To define a new operator, simply define it as a nor- infix | infixr | infixl precedence op their arguments at once. For example, consider the
+mal function, except the operator appears between convertOnly function, which only converts certain
+where precedence varies from 0 to 9. Op can actu-
+the two arguments. Here’s one which takes inserts elements of string depending on a test:
+ally be any function which takes two arguments
+acommabetweentwostringsandensuresnoextra
+(i.e., any binary operation). Whether the operator convertOnly test change str =
+spaces appear:
+is left or right associative is specified by infixl or map ((cid:8)c (cid:25) if test c
+(cid:28)rst ## last = infixr, respectively. Such infix declarations have then change c
+let trim s = dropWhile isSpace no associativity. else c) str
+(cid:13)c 2009 Justin Bailey. 11 jgbailey@codeslower.comUsingconvertOnly,wecanwritethel33tfunction Thatis,convertUppercantaketwoarguments. The changes. “Updating” is really a copy operation,
+which converts certain letters to numbers: firstistheconversionfunctionwhichconvertsindi- with new values in the fields that “changed.” For
+vidual characters and the second is the string to be example, using the Color type defined earlier, we
+l33t = convertOnly isL33t toL33t
+converted. canwriteafunctionthatsetsthegreenfieldtozero
+where
+A curried form of any function which takes easily:
+isL33t ’o’ = True
+multiple arguments can be created. One way to
+noGreen1 (C r _ b) = C r 0 b
+isL33t ’a’ = True
+think of this is that each “arrow” in the function’s
+-- etc. signature represents a new function which can be The above is a bit verbose and can be rewriten us-
+isL33t _ = False created by supplying one more argument. ing record syntax. This kind of “update” only sets
+toL33t ’o’ = ’0’ values for the field(s) specified and copies the rest:
+toL33t ’a’ = ’4’
+Sections Operators are functions, and they can noGreen2 c = c { green = 0 }
+-- etc.
+be curried like any other. For example, a curried
+toL33t c = c Here we capture the Color value in c and return a
+version of “+” can be written as:
+new Color value. That value happens to have the
+Notice that l33t has no arguments specified. Also,
+add10 = (+) 10 same value for red and blue as c and it’s green
+the final argument to convertOnly is not given.
+component is 0. We can combine this with pattern
+However,thetypesignatureofl33ttellsthewhole However, this can be unwieldy and hard to read.
+matching to set the green and blue fields to equal
+story: “Sections” are curried operators, using parenthe-
+the red field:
+ses. Here is add10 using sections:
+l33t :: String (cid:25) String makeGrey c@(C { red = r }) =
+add10 = (10 +) c { green = r, blue = r }
+That is, l33t takes a string and produces a string.
+The supplied argument can be on the right or left, Noticewemustuseargumentcapture(“c@”)toget
+It is a “constant”, in the sense that l33t always re-
+which indicates what position it should take. This the Color value and pattern matching with record
+turnsavaluethatisafunctionwhichtakesastring
+is important for operations such as concatenation: syntax (“C { red = r}”) to get the inner red field.
+and produces a string. l33t returns a “curried”
+form of convertOnly, where only two of its three
+onLeft str = (++ str)
+Anonymous Functions
+arguments have been supplied.
+onRight str = (str ++)
+This can be taken further. Say we want to write
+An anonymous function (i.e., a lambda expression
+a function which only changes upper case letters. Which produces quite different results:
+or lambda for short), is a function without a name.
+We know the test to apply, isUpper, but we don’t
+> onLeft "foo" "bar" They can be defined at any time like so:
+want to specify the conversion. That function can
+"barfoo"
+(cid:8)c (cid:25) (c, c)
+be written as:
+> onRight "foo" "bar"
+which defines a function which takes an argument
+"foobar"
+convertUpper = convertOnly isUpper
+and returns a tuple containing that argument in
+both positions. They are useful for simple func-
+which has the type signature: “Updating” values and record syntax
+tions which don’t need a name. The following de-
+convertUpper :: (Char (cid:25) Char) Haskell is a pure language and, as such, has no terminesifastringhasmixedcase(orisallwhites-
+(cid:25) String (cid:25) String mutable state. That is, once a value is set it never pace):
+(cid:13)c 2009 Justin Bailey. 12 jgbailey@codeslower.commixedCase str = However, for efficiency or other reasons you Haskell cannot compile that function because it
+all ((cid:8)c (cid:25) isSpace c (cid:31) mayonlywanttoallowInttypes. Youwould does not know the type of x. We must limit the
+isLower c (cid:31) accomplish that with a type signature: type through an annotation:
+isUpper c) str
+negateAll :: [Int] (cid:25) [Int] canParseInt x = show ((read x) :: Int)
+Of course, lambdas can be the returned from func-
+Annotations have the same syntax as type signa-
+tions too. This classic returns a function which will Type signatures can appear on top-level func-
+tures, but may adorn any expression.
+then multiply its argument by the one originally tions and nested let or where definitions. Gener-
+given: ally this is useful for documentation, although in
+Unit
+some cases they are needed to prevent polymor-
+multBy n = (cid:8)m (cid:25) n * m
+phism. A type signature is first the name of the
+() – “unit” type and “unit” value. The value and
+item which will be typed, followed by a ::, fol-
+For example: type that represents no useful information.
+lowedbythetypes. Anexampleofthishasalready
+> let mult10 = multBy 10 been seen above.
+Contributors
+> mult10 10 Type signatures do not need to appear directly
+100 above their implementation. They can be specified
+My thanks to those who contributed patches and
+anywhere in the containing module (yes, even be-
+useful suggestions: Dave Bayer, Cale Gibbard,
+low!). Multiple items with the same signature can
+Type Signatures
+Stephen Hicks, Kurt Hutchinson, Johan Kiviniemi,
+also be defined together:
+Adrian Neumann, Barak Pearlmutter, Lanny Rip-
+Haskell supports full type inference, meaning in
+pos, neg :: Int (cid:25) Int
+ple, Markus Roberts, Holger Siegel, Leif Warner,
+most cases no types have to be written down. Type
+and Jeff Zaroyko.
+signatures are still useful for at least two reasons.
+...
+Documentation—Even if the compiler can figure pos x | x < 0 = negate x Version
+out the types of your functions, other pro- | otherwise = x
+grammers or even yourself might not be able
+This is version 1.10. The source can be found
+to later. Writing the type signatures on all neg y | y > 0 = negate y at GitHub2. The latest released version of the
+top-level functions is considered very good | otherwise = y PDF can be downloaded from Hackage3. Visit
+form. CodeSlower.com4 for other projects and writings.
+Type Annotations Sometimes Haskell cannot
+Specialization—Typeclasses allow functions with
+determine what type is meant. The classic demon-
+overloading. For example, a function to
+strationofthisistheso-called“show . read”prob-
+negate any list of numbers has the signature:
+lem:
+negateAll :: Num a => [a] (cid:25) [a] canParseInt x = show (read x)
+2http://github.com/m4dc4p/cheatsheet
+3http://hackage.haskell.org/cgi-bin/hackage-scripts/package/CheatSheet
+4http://blog.codeslower.com/
+(cid:13)c 2009 Justin Bailey. 13 jgbailey@codeslower.com

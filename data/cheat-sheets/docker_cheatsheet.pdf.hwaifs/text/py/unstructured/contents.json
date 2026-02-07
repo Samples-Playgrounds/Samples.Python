@@ -1,0 +1,1239 @@
+[
+    {
+        "element_id": "d42b1e6c1056f2348ef1c3e87fc219c4",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        34.9,
+                        79.6
+                    ],
+                    [
+                        34.9,
+                        114.6
+                    ],
+                    [
+                        265.4,
+                        114.6
+                    ],
+                    [
+                        265.4,
+                        79.6
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1
+        },
+        "text": "CLI Cheat Sheet",
+        "type": "Title"
+    },
+    {
+        "element_id": "93ef148d0afbdfe5eb622c2f559b2948",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        36.0,
+                        163.4
+                    ],
+                    [
+                        36.0,
+                        231.4
+                    ],
+                    [
+                        573.7,
+                        231.4
+                    ],
+                    [
+                        573.7,
+                        163.4
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "d42b1e6c1056f2348ef1c3e87fc219c4"
+        },
+        "text": "Docker provides the ability to package and run an application in a loosely isolated environment called a container. The isolation and security allows you to run many containers simultaneously on a given host. Containers are lightweight and contain everything needed to run the application, so you do not need to rely on what is currently installed on the host. You can easily share containers while you work, and be sure that everyone you share with gets the same container that works in the same way.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "515c5b5fcf0b2e9113ee2ad45524508e",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        36.0,
+                        271.8
+                    ],
+                    [
+                        36.0,
+                        312.4
+                    ],
+                    [
+                        271.1,
+                        312.4
+                    ],
+                    [
+                        271.1,
+                        271.8
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1
+        },
+        "text": "INSTALLATION Docker Desktop is available for Mac, Linux and Windows https://docs.docker.com/desktop",
+        "type": "Title"
+    },
+    {
+        "element_id": "543dbc9208f47d837b1c74ebe0a18d68",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        315.0,
+                        271.1
+                    ],
+                    [
+                        315.0,
+                        285.1
+                    ],
+                    [
+                        447.0,
+                        285.1
+                    ],
+                    [
+                        447.0,
+                        271.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1
+        },
+        "text": "GENERAL COMMANDS",
+        "type": "Title"
+    },
+    {
+        "element_id": "11e401a7c6440b881282981727054a67",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        319.5,
+                        296.3
+                    ],
+                    [
+                        319.5,
+                        315.2
+                    ],
+                    [
+                        402.5,
+                        315.2
+                    ],
+                    [
+                        402.5,
+                        296.3
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "543dbc9208f47d837b1c74ebe0a18d68"
+        },
+        "text": "Start the docker daemon docker -d",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "1924d6815ecdf7e5bb67d56527c2a125",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        36.0,
+                        319.5
+                    ],
+                    [
+                        36.0,
+                        340.3
+                    ],
+                    [
+                        216.9,
+                        340.3
+                    ],
+                    [
+                        216.9,
+                        319.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "543dbc9208f47d837b1c74ebe0a18d68"
+        },
+        "text": "View example projects that use Docker https://github.com/docker/awesome-compose",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "726679d22d7fee021227c0479638d1aa",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        319.5,
+                        321.5
+                    ],
+                    [
+                        319.5,
+                        340.4
+                    ],
+                    [
+                        526.0,
+                        340.4
+                    ],
+                    [
+                        526.0,
+                        321.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "543dbc9208f47d837b1c74ebe0a18d68"
+        },
+        "text": "Get help with Docker. Can also use \u2013help on all subcommands docker --help",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "41d3bc45fee7f00f7c9d66f2ce2e529d",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        36.0,
+                        347.4
+                    ],
+                    [
+                        36.0,
+                        368.2
+                    ],
+                    [
+                        253.2,
+                        368.2
+                    ],
+                    [
+                        253.2,
+                        347.4
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "543dbc9208f47d837b1c74ebe0a18d68"
+        },
+        "text": "Check out our docs for information on using Docker https://docs.docker.com",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "486c7f72ddd3a257358ef2f19a9dcaa5",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        319.5,
+                        346.7
+                    ],
+                    [
+                        319.5,
+                        365.6
+                    ],
+                    [
+                        428.2,
+                        365.6
+                    ],
+                    [
+                        428.2,
+                        346.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1
+        },
+        "text": "Display system-wide information docker info",
+        "type": "Title"
+    },
+    {
+        "element_id": "6ca8f97ae760ebc4000b26676af10a5c",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        36.0,
+                        387.3
+                    ],
+                    [
+                        36.0,
+                        440.5
+                    ],
+                    [
+                        296.6,
+                        440.5
+                    ],
+                    [
+                        296.6,
+                        387.3
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "486c7f72ddd3a257358ef2f19a9dcaa5"
+        },
+        "text": "IMAGES Docker images are a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "e2969381be412b6cc2ec39f7c77444c9",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        40.5,
+                        453.7
+                    ],
+                    [
+                        40.5,
+                        471.9
+                    ],
+                    [
+                        167.0,
+                        471.9
+                    ],
+                    [
+                        167.0,
+                        453.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1
+        },
+        "text": "Build an Image from a Dockerfile docker build -t <image_name> .",
+        "type": "Title"
+    },
+    {
+        "element_id": "4c00cd4819c7f994212c50a60e58d1c1",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        315.0,
+                        387.5
+                    ],
+                    [
+                        315.0,
+                        464.8
+                    ],
+                    [
+                        566.3,
+                        464.8
+                    ],
+                    [
+                        566.3,
+                        387.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "e2969381be412b6cc2ec39f7c77444c9"
+        },
+        "text": "CONTAINERS A container is a runtime instance of a docker image. A container will always run the same, regardless of the infrastructure. Containers isolate software from its environment and ensure that it works uniformly despite differences for instance between development and staging.",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "634008432e8550b5d995fc437943c944",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        40.5,
+                        478.9
+                    ],
+                    [
+                        40.5,
+                        497.8
+                    ],
+                    [
+                        219.7,
+                        497.8
+                    ],
+                    [
+                        219.7,
+                        478.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "e2969381be412b6cc2ec39f7c77444c9"
+        },
+        "text": "Build an Image from a Dockerfile without the cache docker build -t <image_name> . \u2013no-cache",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "b7120a784df74660f222669bed1cd7d3",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        319.5,
+                        478.3
+                    ],
+                    [
+                        319.5,
+                        497.1
+                    ],
+                    [
+                        529.6,
+                        497.1
+                    ],
+                    [
+                        529.6,
+                        478.3
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "e2969381be412b6cc2ec39f7c77444c9"
+        },
+        "text": "Create and run a container from an image, with a custom name: docker run --name <container_name> <image_name>",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "ef624a1de85f64f63a5ea548d27fc658",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        40.5,
+                        504.1
+                    ],
+                    [
+                        40.5,
+                        523.0
+                    ],
+                    [
+                        101.6,
+                        523.0
+                    ],
+                    [
+                        101.6,
+                        504.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1
+        },
+        "text": "List local images docker images",
+        "type": "Title"
+    },
+    {
+        "element_id": "1d4c66a8b8b85a2a5b195d8c08ffd8ad",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        319.5,
+                        504.1
+                    ],
+                    [
+                        319.5,
+                        523.0
+                    ],
+                    [
+                        560.6,
+                        523.0
+                    ],
+                    [
+                        560.6,
+                        504.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "ef624a1de85f64f63a5ea548d27fc658"
+        },
+        "text": "Run a container with and publish a container\u2019s port(s) to the host. docker run -p <host_port>:<container_port> <image_name>",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "930e91ebccba92b51a9d552e23856323",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        40.5,
+                        529.3
+                    ],
+                    [
+                        40.5,
+                        548.2
+                    ],
+                    [
+                        146.3,
+                        548.2
+                    ],
+                    [
+                        146.3,
+                        529.3
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1
+        },
+        "text": "Delete an Image docker rmi <image_name>",
+        "type": "Title"
+    },
+    {
+        "element_id": "5e500143bb7f82b8c1e2e9ead43968b0",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        319.5,
+                        530.0
+                    ],
+                    [
+                        319.5,
+                        548.8
+                    ],
+                    [
+                        434.8,
+                        548.8
+                    ],
+                    [
+                        434.8,
+                        530.0
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "930e91ebccba92b51a9d552e23856323"
+        },
+        "text": "Run a container in the background docker run -d <image_name>",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "e98063750c1d912cac1794465e98cd3b",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        40.5,
+                        554.5
+                    ],
+                    [
+                        40.5,
+                        573.4
+                    ],
+                    [
+                        128.8,
+                        573.4
+                    ],
+                    [
+                        128.8,
+                        554.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "930e91ebccba92b51a9d552e23856323"
+        },
+        "text": "Remove all unused images docker image prune",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "dbe36a490afd07c50285e4ef05a7a56b",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        319.5,
+                        555.8
+                    ],
+                    [
+                        319.5,
+                        574.7
+                    ],
+                    [
+                        551.4,
+                        574.7
+                    ],
+                    [
+                        551.4,
+                        555.8
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "930e91ebccba92b51a9d552e23856323"
+        },
+        "text": "Start or stop an existing container: docker start|stop <container_name> (or <container-id>)",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "6acca3617f67b8c126d9ea3c07e8da6d",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        36.0,
+                        595.0
+                    ],
+                    [
+                        36.0,
+                        648.3
+                    ],
+                    [
+                        299.1,
+                        648.3
+                    ],
+                    [
+                        299.1,
+                        595.0
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "930e91ebccba92b51a9d552e23856323"
+        },
+        "text": "DOCKER HUB Docker Hub is a service provided by Docker for finding and sharing container images with your team. Learn more and find images at https://hub.docker.com",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "486b3803f326fc0a18656583f92aa910",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        319.5,
+                        581.7
+                    ],
+                    [
+                        319.5,
+                        600.5
+                    ],
+                    [
+                        433.4,
+                        600.5
+                    ],
+                    [
+                        433.4,
+                        581.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "930e91ebccba92b51a9d552e23856323"
+        },
+        "text": "Remove a stopped container: docker rm <container_name>",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "bc9b814c38b193164acf97533cfb1fd6",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        319.5,
+                        607.5
+                    ],
+                    [
+                        319.5,
+                        626.4
+                    ],
+                    [
+                        471.3,
+                        626.4
+                    ],
+                    [
+                        471.3,
+                        607.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "930e91ebccba92b51a9d552e23856323"
+        },
+        "text": "Open a shell inside a running container: docker exec -it <container_name> sh",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "819c0ea5784fdea75e9235157fb0e153",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        319.5,
+                        633.4
+                    ],
+                    [
+                        319.5,
+                        652.2
+                    ],
+                    [
+                        454.4,
+                        652.2
+                    ],
+                    [
+                        454.4,
+                        633.4
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "930e91ebccba92b51a9d552e23856323"
+        },
+        "text": "Fetch and follow the logs of a container: docker logs -f <container_name>",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "f6e8c5eb287c4238a1ebcd4d19e6e195",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        40.5,
+                        661.5
+                    ],
+                    [
+                        40.5,
+                        680.3
+                    ],
+                    [
+                        153.9,
+                        680.3
+                    ],
+                    [
+                        153.9,
+                        661.5
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1
+        },
+        "text": "Login into Docker docker login -u <username>",
+        "type": "Title"
+    },
+    {
+        "element_id": "b5459be2eeadbb1d2ad4fd70e5a74296",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        319.5,
+                        659.2
+                    ],
+                    [
+                        319.5,
+                        678.1
+                    ],
+                    [
+                        540.6,
+                        678.1
+                    ],
+                    [
+                        540.6,
+                        659.2
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "f6e8c5eb287c4238a1ebcd4d19e6e195"
+        },
+        "text": "To inspect a running container: docker inspect <container_name> (or <container_id>)",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "c9137ac7ab1914e7d1e098bde1613c80",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        40.5,
+                        686.7
+                    ],
+                    [
+                        40.5,
+                        705.5
+                    ],
+                    [
+                        193.2,
+                        705.5
+                    ],
+                    [
+                        193.2,
+                        686.7
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "f6e8c5eb287c4238a1ebcd4d19e6e195"
+        },
+        "text": "Publish an image to Docker Hub docker push <username>/<image_name>",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "d1726d49cd0259fa509c01a45751ef9a",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        319.5,
+                        685.1
+                    ],
+                    [
+                        319.5,
+                        703.9
+                    ],
+                    [
+                        438.2,
+                        703.9
+                    ],
+                    [
+                        438.2,
+                        685.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "f6e8c5eb287c4238a1ebcd4d19e6e195"
+        },
+        "text": "To list currently running containers: docker ps",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "5548dfe1a9acd321fa7342a442f04b2b",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        40.5,
+                        711.9
+                    ],
+                    [
+                        40.5,
+                        730.7
+                    ],
+                    [
+                        154.7,
+                        730.7
+                    ],
+                    [
+                        154.7,
+                        711.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1
+        },
+        "text": "Search Hub for an image docker search <image_name>",
+        "type": "Title"
+    },
+    {
+        "element_id": "0019a9478739fa6c6b89c01ed2c52a8a",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        319.5,
+                        710.9
+                    ],
+                    [
+                        319.5,
+                        729.8
+                    ],
+                    [
+                        481.0,
+                        729.8
+                    ],
+                    [
+                        481.0,
+                        710.9
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1,
+            "parent_id": "5548dfe1a9acd321fa7342a442f04b2b"
+        },
+        "text": "List all docker containers (running and stopped): docker ps --all",
+        "type": "NarrativeText"
+    },
+    {
+        "element_id": "fa5c7cfa4c7526b92de4248ef7c4186f",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        40.5,
+                        737.1
+                    ],
+                    [
+                        40.5,
+                        755.9
+                    ],
+                    [
+                        148.6,
+                        755.9
+                    ],
+                    [
+                        148.6,
+                        737.1
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1
+        },
+        "text": "Pull an image from a Docker Hub docker pull <image_name>",
+        "type": "Footer"
+    },
+    {
+        "element_id": "d86bfdde13f0ae272e887e6172056ef6",
+        "metadata": {
+            "coordinates": {
+                "layout_height": 792.0,
+                "layout_width": 612.0,
+                "points": [
+                    [
+                        319.5,
+                        736.8
+                    ],
+                    [
+                        319.5,
+                        755.6
+                    ],
+                    [
+                        415.0,
+                        755.6
+                    ],
+                    [
+                        415.0,
+                        736.8
+                    ]
+                ],
+                "system": "PixelSpace"
+            },
+            "file_directory": "../../../../../../../data/cheat-sheets",
+            "filename": "docker_cheatsheet.pdf",
+            "filetype": "application/pdf",
+            "languages": [
+                "eng"
+            ],
+            "last_modified": "2026-02-06T16:17:42",
+            "page_number": 1
+        },
+        "text": "View resource usage stats docker container stats",
+        "type": "Footer"
+    }
+]

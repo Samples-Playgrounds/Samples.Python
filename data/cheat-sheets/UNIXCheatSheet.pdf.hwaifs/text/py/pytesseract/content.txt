@@ -1,0 +1,163 @@
+UNIX Command Cheat Sheet
+
+Carnegie Observatories Summer Research Program
+Every command and filename is CaSe sEnSiTiVe!
+
+Command | Description
+
+Examples and Options
+
+<tab> Attempt to autocomplete
+
+Use this to speed up typing/avoid typos
+
+Navigating Directories
+1s List the contents of the directory. ls -larth /home/mcuser/science/code
+cd Change directory. cd /home/mcuser/science
+pwd present working directory. pwd
+* Wild card, any number of chars. ls *.txt
+? Wild card, 0 or 1 characters. ls foo?.txt
+Current directory. cd .
+Directory one level up. cd ..
+~ Home directory. cd ~
+- Previous directory. cd -
+
+Modifying Directories and Files
+
+mkdir Make new empty directory.
+
+rmdir Remove empty directory.
+
+mv Move files (overwrites destination).
+
+cp Copy files (overwrites destination).
+
+rm Remove files. CANNOT UNDO!
+Change file permissions.
+
+chmod rwx = read, write, execute.
+
+ugoa = user, group, other, all.
+Viewing Files in Terminal
+less View files in terminal window.
+cat Concatenate files.
+
+that match some specification.
+
+head Display first 10 lines.
+
+tail Display last 10 lines.
+
+Searching
+
+grep Search for word(s) in a file.
+
+find Search a path for files/directories
+
+mkdir MyNewDirectory
+rmdir MyNewDirectory
+mv -i foo.txt foo2.txt
+cp -i ../foo.txt
+
+rm -1 foo.txt
+
+chmod atrwx badger.txt
+chmod o-wx badger.txt
+chmod u+x myscript.sh
+
+less foo.txt
+
+cat fool.txt foo2.txt
+head -20 foo.txt
+
+tail -f logfile.txt
+
+grep myvarname *.txt
+
+grep rodent *.txt
+
+grep "Hello World" *.txt
+
+find playground -name "*.txt"
+
+find playground -type d
+
+find playground -not -name "*.txt"
+
+Environment Variables
+
+Common text editors: emacs, vim, vi, pico, nano
+
+$HOME Home directory. workpath=$HOME/playground
+
+$SHELL Shell name. echo $SHELL
+
+$SUSER User name. echo $USER
+
+$PATH Paths to look in for executables. PATH=${PATH}: /my/new/program/path/bin
+env List environment vars and values. env | less
+
+Command Examples and Options
+
+File Manipulation
+wc Word count. wc -l mycode.py
+sort Sort input alphanumerically.
+
+cat foo.txt | less
+
+| Pipe/filter output through another sort myfile.txt | grep mykeyword
+
+program.
+> Redirect standard output to. Over- | cat foo.txt > foo2.txt
+
+writes existing file.
+>> Redirect standard output and con- | cat foo.txt >> foo2.txt
+
+catenate to.
+ak
+sed Advanced operations by row.
+Job/process Manipulation
+& Run process in background. ./run_job.sh &
+jobs Show your current processes jobs
+ps Show processes (more flexible) ps -u username
+top
+Ka
+cerl-2
+cerl-<
+bg Resume process in background ./run_job.sh; Ctrl-z; bg 41
+
+fg Bring process to foreground fg 2
+Remote Connections
+
+ssh Secure shell login. ssh -Y user@host.edu
+
+scp Secure copy. scp user@host.edu:path/to/file.txt
+
+wget Download file from remote URL. wget www.google.com -0 google.html
+
+Ctrl-d Exit login. Sometimes disabled. Can also use exit, logout
+
+Miscellaneous
+
+sleep
+
+vhoami
+
+du
+
+af
+
+aif
+
+echo Write text to screen. echo "Hello? Can you hear me?"
+
+which Find path for command. which gcc
+
+tar Compress /‘uncompress files. tar -zcvf files.tar.gz a.txt b.fits
+tar -zxvf downloadedstuff.tar.gz
+
+history
+
+alias Create command shortcut. alias lrt='ls -lhrt'
+
+source Execute file in shell. source ~/.bash_profile

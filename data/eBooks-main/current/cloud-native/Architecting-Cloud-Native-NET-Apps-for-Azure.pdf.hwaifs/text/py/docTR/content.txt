@@ -3746,12 +3746,12 @@ Ordering Microservice
 Shipping Microservice
 API Gateway
 Web API
-3
+-
 Service
 Prepare
 ShipOrder
 Order
-Command
+Commandt
 Service
 Get Order Data
 Queue
@@ -3955,7 +3955,7 @@ Service Bus Topics. A topic can receive messages from multiple independent publi
 messages to up to 2,000 subscribers. Subscriptions can be dynamically added or removed at run time
 without stopping the system or recreating the topic.
 Many advanced features from Azure Service Bus queues are also available for topics, including
-Duplicate Detection and Transaction support. By default, Service Bus topics are handled by a single
+Duplicate Detection and Transaction: support. By default, Service Bus topics are handled by a single
 message broker and stored in a single message store. But, Service Bus Partitioning scales a topic by
 spreading it across many message brokers and message stores.
 Scheduled Message Delivery tags a message with a specific time for processing. The message won't
@@ -7698,12 +7698,12 @@ microservices
 :
 DevOps
 : + Add
-Search term
+Searcht term
 Search term
 comparison
 United States
-4/28/09-5 5/28/19 T Allo categories I Web Search T
-Interest overt time ?)
+4/28/09- 5/28/19 - Allo categories - Web Search
+Interest overt time 0
 + <>
 100
 75
@@ -7711,7 +7711,7 @@ Interest overt time ?)
 25
 Note
 Note
-Average May1 1,2009
+Average May 1,2009
 Oct1,2012
 Mar 1,2016
 Figure 10-1 - DevOps and microservices.

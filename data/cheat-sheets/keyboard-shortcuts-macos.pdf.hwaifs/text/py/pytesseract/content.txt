@@ -1,0 +1,323 @@
+J Visual Studio Code
+
+Keyboard shortcuts for macOS
+
+General
+
+t3d6P, F1
+d6P
+TEN
+d6W
+
+36,
+
+d6K d€S
+
+Basic editing
+
+dX
+
+d6C
+
+<l/~t
+
+fe] /t<t
+
+tek
+
+d6Enter / td6Enter
+t3d\
+
+36] /
+Home / End
+dot /
+“PgUp / *PgDn
+d£PgUp /36PgDn
+~<d#[ / <3]
+
+déK d[ / HK #]
+d6K 360 / 36K dU
+d6K 36C
+
+d6K d6U
+
+o6/
+
+<A
+
+<Z
+
+Show Command Palette
+Quick Open, Go to File...
+
+New window/instance
+Close window/instance
+User Settings
+Keyboard Shortcuts
+
+Cut line (empty selection)
+Copy line (empty selection)
+Move line down/up
+
+Copy line down/up
+
+Delete line
+
+Insert line below/above
+Jump to matching bracket
+Indent/outdent line
+
+Go to beginning/end of line
+Go to beginning/end of file
+Scroll line up/down
+
+Scroll page up/down
+Fold/unfold region
+Fold/unfold all subregions
+Fold/unfold all regions
+Add line comment
+
+Remove line comment
+Toggle line comment
+Toggle block comment
+Toggle word wrap
+
+Multi-cursor and selection
+
+~< + click
+<3
+
++d
+
+d6U
+
+fl
+
+d6L
+
+Te6L
+
+g6F2
+
+td 1
+ff-« + drag mouse
+ft<dtt/ |
+txd</—
+ft< 3 PgUp
+ft<d#PgDn
+
+Insert cursor
+
+Insert cursor above
+
+Insert cursor below
+
+Undo last cursor operation
+
+Insert cursor at end of each line selected
+Select current line
+
+Select all occurrences of current selection
+Select all occurrences of current word
+Expand / shrink selection
+
+Column (box) selection
+
+Column (box) selection up/down
+
+Column (box) selection left/right
+
+Column (box) selection page up
+
+)
+)
+)
+)
+
+Column (box) selection page down
+
+Search and replace
+
+a6 F Find
+
+<d6F Replace
+
+dG/ TG Find next/previous
+
+~<Enter Select all occurrences of Find match
+36D Add selection to next Find match
+
+d6K dD Move last selection to next Find match
+
+Rich languages editing
+
+‘Space, 31 Trigger suggestion
+t'd6Space Trigger parameter hints
+fF Format document
+
+d6K dF Format selection
+
+F12 Go to Definition
+
+<F12 Peek Definition
+
+dK F12 Open Definition to the side
+ab. Quick Fix
+
+?F12 Show References
+
+F2 Rename Symbol
+
+doK d6X Trim trailing whitespace
+d6K M Change file language
+Navigation
+
+db T Show all Symbols
+
+“G Go to Line...
+
+dP Go to File...
+
+td60 Go to Symbol...
+
+tdoM Show Problems panel
+
+F8/ TF8 Go to next/previous error or warning
+“?Tab Navigate editor group history
+*- | f- Go back/forward
+
+“M Toggle Tab moves focus
+
+Editor management
+
+dbW Close editor
+
+a6K F Close folder
+
+d6\ Split editor
+
+361/362/ 33 Focus into 1%, 2"4, 39 editor group
+
+d6K d6<—/ HK H- Focus into previous/next editor group
+doK d6<— / dK Td6— Move editor left/right
+
+d6K — / dK > Move active editor group
+
+File management
+
+dN New File
+d60 Open File...
+36S Save
+
+tdeS Save As...
+«dS Save All
+
+dé W Close
+
+a6K dw Close All
+
+teeT
+
+¢6K Enter
+‘Tab / “Tab
+36K P
+
+6K R
+
+36K O
+
+Display
+
+“O6F
+~«d£0
+
+$= /T38-
+d6B
+
+d6K V
+d6K Z
+
+Debug
+
+F9
+
+F5
+
+F11/ F141
+F10
+
+1F5
+
+d6K 361
+
+Reopen closed editor
+
+Keep preview mode editor open
+
+Open next / previous
+
+Copy path of active file
+
+Reveal active file in Finder
+
+Show active file in new window/instance
+
+Toggle full screen
+
+Toggle editor layout (horizontal/vertical)
+Zoom in/out
+
+Toggle Sidebar visibility
+
+Show Explorer / Toggle focus
+
+Show Search
+
+Show Source Control
+
+Show Debug
+
+Show Extensions
+
+Replace in files
+
+Toggle Search details
+
+Show Output panel
+
+Open Markdown preview
+
+Open Markdown preview to the side
+Zen Mode (Esc Esc to exit)
+
+Toggle breakpoint
+Start/Continue
+Step into/ out
+Step over
+
+Stop
+
+Show hover
+
+Integrated terminal
+
+ag
+
+d6C
+
+aot / |
+PgUp / PgDn
+d6Home / End
+
+Show integrated terminal
+Create new terminal
+Copy selection
+
+Scroll up/down
+
+Scroll page up/down
+Scroll to top/bottom
+
+Other operating systems’ keyboard shortcuts and additional
+
+unassigned shortcuts available at aka.ms/vscodekeybindings

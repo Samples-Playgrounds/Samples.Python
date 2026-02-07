@@ -919,7 +919,7 @@ static void Main(stringl] args)
 Console.WriteLine("Hello World!");
 }
 }
-5
+}
 It's pretty easy to spot a number of things right off the bat: C# is a C-family language, using curly-
 brackets to denote scope blocks and semicolons to terminate statements. Code is organized into
 NET for Java Developers
@@ -1378,7 +1378,7 @@ public IEnumerable<Todo> Get()
 return todos;
 }
 Il GET api/todos/5
-(HttpGet(f(id)")]
+HttpGet(f(id)")]
 public Todo Get(int id)
 {
 return todos.First((t) => t.ID == id);

@@ -1737,7 +1737,7 @@ So, you can bind, for instance, a Win32 Textbox with a UWP Textbox. One importan
 is that these bindings are one-way bindings, from UWP to Win32, SO if you update the Textbox inside
 the XAML Island the Win32 Textbox will be updated, but not the other way around.
 To see a walkthrough about how to use XAML Islands, see:
-https://learn.microsoft.com/windows/apps/desktop/modernize/host-standard-control-with-xaml-
+https.//learn.microsoft.com/windows/apps/desktop/modernize/host-standard-control-with-xaml-
 islands
 Adding UWP XAML custom controls
 A XAML custom control is a control (or user control) created by you or by third parties (including

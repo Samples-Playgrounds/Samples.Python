@@ -1,0 +1,226 @@
+## Running
+
+# gdb &lt;program&gt; [core dump] Start GDB (with optional core dump).
+
+# gdb --args &lt;program&gt; &lt;args…&gt; Start GDB and pass arguments
+
+# gdb --pid &lt;pid&gt; Start GDB and attach to process.
+
+set args &lt;args...&gt; Set arguments to pass to program to be debugged.
+
+run kill
+
+Run the program to be debugged.
+
+Kill the running program.
+
+## Breakpoints
+
+break &lt;where&gt; Set a new breakpoint.
+
+delete &lt;breakpoint#&gt; Remove a breakpoint.
+
+clear
+
+Delete all breakpoints.
+
+enable &lt;breakpoint#&gt; Enable a disabled breakpoint.
+
+disable &lt;breakpoint#&gt;
+
+Disable a breakpoint.
+
+## Watchpoints
+
+watch &lt;where&gt; Set a new watchpoint.
+
+delete/enable/disable &lt;watchpoint#&gt; Like breakpoints.
+
+step
+
+## GDB cheatsheet - page 1
+
+## &lt;where&gt;
+
+function_name Break/watch the named function.
+
+line_number
+
+Break/watch the line number in the current source file.
+
+file:line_number
+
+Break/watch the line number in the named source file.
+
+## Conditions
+
+break/watch &lt;where&gt; if &lt;condition&gt; Break/watch at the given location if the condition is met. Conditions may be almost any C ex- pression that evaluate to true or false.
+
+condition &lt;breakpoint#&gt; &lt;condition&gt; Set/change the condition of an existing break- or watchpoint.
+
+## Examining the stack
+
+backtrace where
+
+Show call stack.
+
+Show call stack, also print the local va- backtrace full where full riables in each frame.
+
+frame &lt;frame#&gt;
+
+Select the stack frame to operate on.
+
+## Stepping
+
+Go to next instruction (source line), diving into function.
+
+© 2007 Marc Haisenko &lt;marc@darkdust.net&gt;
+
+next
+
+Go to next instruction (source line) but don ʻ t dive into functions.
+
+finish
+
+Continue until the current function re- turns.
+
+continue
+
+Continue normal execution.
+
+## Variables and memory
+
+print /format &lt;what&gt;
+
+Print content of variable/memory location/register.
+
+display
+
+/format &lt;what&gt; Like 'print', but print the information after each stepping instruction.
+
+Remove the 'display' with the given undisplay &lt;display#&gt; number.
+
+En- or disable the 'display' with the gi- enable display &lt;display#&gt; disable display &lt;display#&gt; ven number.
+
+x /nfu &lt;address&gt; Print memory. n : How many units to print (default 1). f : Format character (like 'print'). u : Unit.
+
+Unit is one of:
+
+b : Byte, h : Half-word (two bytes) w : Word (four bytes) g : Giant word (eight bytes)).
+
+## Format
+
+| a   | Pointer.                               |
+|-----|----------------------------------------|
+| c   | Read as integer, print as character.   |
+| d   | Integer, signed decimal.               |
+| f   | Floating point number.                 |
+| o   | Integer, print as octal.               |
+| s   | Try to treat as C string.              |
+| t   | Integer, print as binary ( t = 'two'). |
+| u   | Integer, unsigned decimal.             |
+| x   | Integer, print as hexadecimal.         |
+
+## &lt;what&gt;
+
+## expression
+
+Almost any C expression, including function calls (must be prefixed with a cast to tell GDB the return value type).
+
+file_name :: variable_name Content of the variable defined in the named file (static variables).
+
+function :: variable_name Content of the variable defined in the named function (if on the stack).
+
+## {type}address
+
+Content at address , interpreted as being of the C type type .
+
+## $ register
+
+Content of named register. Interesting registers are $esp (stack pointer), $ebp (frame pointer) and $eip (instruction pointer).
+
+## Threads
+
+thread &lt;thread#&gt;
+
+Chose thread to operate on.
+
+## GDB cheatsheet - page 2
+
+## Manipulating the program
+
+set var &lt;variable_name&gt; = &lt;value&gt; Change the content of a variable to the given value.
+
+return
+
+&lt;expression&gt;
+
+Force the current function to return im- mediately, passing the given value.
+
+## Sources
+
+directory &lt;directory&gt;
+
+Add directory to the list of directories that is searched for sources.
+
+list list &lt;filename&gt; :&lt;function&gt;
+
+list &lt;filename&gt; : &lt;line_number&gt;
+
+list &lt;first&gt;,&lt;last&gt;
+
+Shows the current or given source context. The filename may be omitted. If last is omitted the context starting at start is printed instead of centered around it.
+
+set listsize &lt;count&gt;
+
+Set how many lines to show in 'list'.
+
+## Signals
+
+handle &lt;signal&gt; &lt;options&gt; Set how to handle signles. Options are: (no)print : (Don ʻ t) print a message when signals occurs. (no)stop : (Don ʻ t) stop the program when signals occurs. t) pass the signal to the
+
+(no)pass : (Don ʻ program.
+
+## Informations
+
+disassemble
+
+disassemble &lt;where&gt;
+
+Disassemble the current function or given location.
+
+info args
+
+Print the arguments to the function of the current stack frame.
+
+info breakpoints Print informations about the break- and
+
+watchpoints.
+
+info display
+
+Print informations about the 'displays'.
+
+info locals selected stack frame.
+
+Print the local variables in the currently
+
+info sharedlibrary List loaded shared libraries.
+
+info signals List all signals and how they are cur-
+
+rently handled.
+
+info threads List all threads.
+
+show directories
+
+Print all directories in which GDB sear- ches for source files.
+
+show listsize Print how many are shown in the 'list'
+
+command.
+
+whatis
+
+variable_name Print type of named variable.

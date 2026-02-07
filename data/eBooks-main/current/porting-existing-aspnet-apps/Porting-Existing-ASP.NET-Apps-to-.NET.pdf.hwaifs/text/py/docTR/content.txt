@@ -649,7 +649,7 @@ What is NET Standard?
 Migrate from ASP.NET Core 6.0 to 7.0
 Announcing NET 6 - The Fastest NET Yet
 Introducing NET 5
-Migrate from ASP.NET Core 3.1 to 6.0 LTS
+Migrate from ASP. NET Core 3.1 to 6.0LTS
 NET Upgrade Assistant tool
 Strategies for migrating ASP.NET Web Forms apps
 This book offers guidance for migrating large ASP.NET MVC and Web API apps to .NET Core. Some of
@@ -1991,7 +1991,7 @@ straightforward, especially if they're mainly focused on web responsibilities.
 References
 NET Upgrade Assistant tool
 try-convert tool
-apiport tool
+apiportt tool
 Strategies for migrating while running in production
 Many teams have NET Framework apps they plan to migrate to .NET Core/.NET 7, but the app is SO
 large that the migration requires a significant amount of time to complete. The original app needs to
