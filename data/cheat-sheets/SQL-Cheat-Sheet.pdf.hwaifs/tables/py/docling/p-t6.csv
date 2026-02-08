@@ -1,0 +1,4 @@
+,Command,Description,Syntax,Example
+0,IN,The IN command is used to determine whether a value matches any value in a subquery result. It is often used in the WHERE clause.,SELECT column(s) FROM table WHERE value IN (subquery);,SELECT * FROM customers WHERE city IN (SELECT city FROM suppliers);
+1,ANY,"The ANY command is used to compare a value to any value returned by a subquery. It can be used with comparison operators like =, >, <, etc.",SELECT column(s) FROM table WHERE value < ANY (subquery);,SELECT * FROM products WHERE price < ANY (SELECT unit_price FROM supplier_products);
+2,ALL,"The ALL command is used to compare a value to all values returned by a subquery. It can be used with comparison operators like =, >, <, etc.",SELECT column(s) FROM table WHERE value > ALL (subquery);,SELECT * FROM orders WHERE order_amount > ALL (SELECT total_amount FROM previous_orders);

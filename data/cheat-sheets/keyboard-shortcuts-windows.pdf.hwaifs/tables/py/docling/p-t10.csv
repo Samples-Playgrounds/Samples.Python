@@ -1,0 +1,7 @@
+,0,1
+0,F9,Toggle breakpoint
+1,F5,Start/Continue
+2,Shift+F5,Stop
+3,F11 / Shift+F11,Step into/out
+4,F10,Step over
+5,Ctrl+K Ctrl+I,Show hover

@@ -1,0 +1,5 @@
+|    | 0       | 1                    |
+|---:|:--------|:---------------------|
+|  0 | <ctrl>h | Back one character   |
+|  1 | <ctrl>w | Back one word        |
+|  2 | <ctrl>u | Back to beginning of |

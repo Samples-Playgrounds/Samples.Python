@@ -1,0 +1,7 @@
+,2D Data or Images,Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3
+0,">>> fig, ax = plt.subplots()",,Clear an axis>>> axes2[0].pcolor(data2)Pseudocolor plot of 2D array,>>> plt.cla(),
+1,">>> im = ax.imshow(img,",Colormapped or RGB arrays,,>>> plt.clf(),Clear the entire figure
+2,"cmap='gist_earth',",,>>> axes2[0].pcolormesh(data)Pseudocolor plot of 2D array,>>> plt.close(),Close a window
+3,"interpolation='nearest',",,">>> CS = plt.contour(Y,X,U)Plot contours",,
+4,"vmin=-2,",,>>> axes2[2].contourf(data1)Plot filled contours,,
+5,vmax=2),,>>> axes2[2]= ax.clabel(CS)Label a contour plot,,DataCamp

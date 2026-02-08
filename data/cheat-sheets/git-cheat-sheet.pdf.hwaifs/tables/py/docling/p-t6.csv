@@ -1,0 +1,7 @@
+,0,1
+0,git branch [-a],List all l/uni006Fcal branches in rep/uni006Fsit/uni006Fry. With -a : sh/uni006Fw all branches (with rem/uni006Fte).
+1,git branch [branch_name],"Create new branch, referencing the current HEAD ."
+2,git rebase [branch_name],Apply c/uni006Fmmits /uni006Ff the current w/uni006Frking branch and apply them t/uni006F the HEAD /uni006Ff [branch] t/uni006F make the hist/uni006Fry /uni006Ff y/uni006Fur branch m/uni006Fre linear.
+3,git checkout [-b] [branch_name],Switch w/uni006Frking direct/uni006Fry t/uni006F the specified branch. With -b : Git will create the specified branch if it d/uni006Fes n/uni006Ft exist.
+4,git merge [branch_name],J/uni006Fin specified [branch/uni005Fname] branch int/uni006F y/uni006Fur current branch (the /uni006Fne y/uni006Fu are /uni006Fn currently).
+5,git branch -d [branch_ name],"Rem/uni006Fve selected branch, if it is already merged int/uni006F any /uni006Fther. -D instead /uni006Ff -d f/uni006Frces deleti/uni006Fn."

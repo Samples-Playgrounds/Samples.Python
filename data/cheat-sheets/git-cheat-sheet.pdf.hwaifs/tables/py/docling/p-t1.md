@@ -1,0 +1,5 @@
+|    | 0                                                 | 1                                                                                           |
+|---:|:--------------------------------------------------|:--------------------------------------------------------------------------------------------|
+|  0 | git config --global user.name 'Your Name'         | Set the name that will be attached t/uni006F y/uni006Fur c/uni006Fmmits and tags.           |
+|  1 | git config --global user.email 'you@example. com' | Set the e-mail address that will be attached t/uni006F y/uni006Fur c/uni006Fmmits and tags. |
+|  2 | git config --global color.ui auto                 | Enable s/uni006Fme c/uni006Fl/uni006Frizati/uni006Fn /uni006Ff Git /uni006Futput.           |

@@ -1,0 +1,41 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Command</th>
+      <th>Description</th>
+      <th>Syntax</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>CREATE</td>
+      <td>The CREATE command creates a new database and objects, such as a table, index, view, or stored procedure.</td>
+      <td>CREATE TABLE table_name (column1 datatype1, column2 datatype2, );</td>
+      <td>CREATE TABLE employees ( employee_id INT PRIMARY KEY, first_name VARCHAR(50), last_name VARCHAR(50), age INT );</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ALTER</td>
+      <td>The ALTER command adds, deletes, or modifies columns in an existing table.</td>
+      <td>ALTER TABLE table_name ADD column_name datatype;</td>
+      <td>ALTER TABLE customers ADD email VARCHAR(100);</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>DROP</td>
+      <td>The DROP command is used to drop an existing table in a database.</td>
+      <td>DROP TABLE table_name;</td>
+      <td>DROP TABLE customers;</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>TRUNCATE</td>
+      <td>The TRUNCATE command is used to delete the data inside a table, but not the table itself.</td>
+      <td>TRUNCATE TABLE table_name;</td>
+      <td>TRUNCATE TABLE customers;</td>
+    </tr>
+  </tbody>
+</table>

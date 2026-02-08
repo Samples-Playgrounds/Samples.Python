@@ -1,0 +1,10 @@
+|    | git log                                            |         |
+|---:|:---------------------------------------------------|:--------|
+|  0 | show the commit history for the currently active   | branch  |
+|  1 | git log branchB..branchA                           | nan     |
+|  2 | show the commits on branchA that are not on        | branchB |
+|  3 | git log --follow [file]                            | nan     |
+|  4 | show the commits that changed file, even across    | renames |
+|  5 | git diff branchB...branchA                         | nan     |
+|  6 | show the diff of what is in branchA that is not in | branchB |
+|  7 | git show                                           | [SHA]   |

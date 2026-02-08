@@ -1,0 +1,5 @@
+,0,1
+0,::first-letter,Adds special style to the first letter of a text
+1,::first-line,Adds special style to the first line of a text
+2,::before,Inserts some content before an element
+3,::after,Inserts some content after an element

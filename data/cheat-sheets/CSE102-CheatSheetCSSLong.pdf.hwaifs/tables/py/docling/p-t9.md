@@ -1,0 +1,10 @@
+|    | 0                         | 1                                                                                                     |
+|---:|:--------------------------|:------------------------------------------------------------------------------------------------------|
+|  0 | animation                 | animation-name animation-duration animation-timing-function animation-delay animation-iteration-count |
+|  1 | animation-delay           | time                                                                                                  |
+|  2 | animation-direction       | normal | alternate                                                                                    |
+|  3 | animation-duration        | time                                                                                                  |
+|  4 | animation-iteration-count | inherit number                                                                                        |
+|  5 | animation-name            | none | IDENT                                                                                          |
+|  6 | animation-play-state      | running | paused                                                                                      |
+|  7 | animation-timing-function | ease | linear | ease-in | ease-out | ease-in-out | cubic-Bezier (number, number, number, number)      |

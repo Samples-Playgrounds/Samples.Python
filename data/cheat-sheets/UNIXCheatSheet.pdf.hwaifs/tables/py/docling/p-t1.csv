@@ -1,0 +1,33 @@
+,Command,Description,Examples and Options
+0,<tab>,Attempt to autocomplete,Use this to speed up typing/avoid typos
+1,Navigating Directories,Navigating Directories,Navigating Directories
+2,ls,List the contents of the directory.,ls -larth /home/mcuser/science/code
+3,cd,Change directory.,cd /home/mcuser/science
+4,pwd,p resent w orking d irectory.,pwd
+5,*,"Wild card, any number of chars.",ls *.txt
+6,?,"Wild card, 0 or 1 characters.",ls foo?.txt
+7,.,Current directory.,cd .
+8,..,Directory one level up.,cd ..
+9,/tildelow,Home directory.,cd /tildelow
+10,-,Previous directory.,cd -
+11,Modifying Directories and Files,Modifying Directories and Files,Modifying Directories and Files
+12,mkdir,Make new empty directory.,mkdir MyNewDirectory
+13,rmdir,Remove empty directory.,rmdir MyNewDirectory
+14,mv,Move files (overwrites destination).,mv -i foo.txt foo2.txt
+15,cp,Copy files (overwrites destination).,cp -i ../foo.txt .
+16,rm,Remove files. CANNOT UNDO!,rm -i foo.txt
+17,chmod,"Change file permissions. rwx = read, write, execute. ugoa = user, group, other, all.",chmod a+rwx badger.txt chmod o-wx badger.txt chmod u+x myscript.sh
+18,Viewing Files in Terminal,Viewing Files in Terminal,Viewing Files in Terminal
+19,less,View files in terminal window.,less foo.txt
+20,cat,Con cat enate files.,cat foo1.txt foo2.txt
+21,head,Display first 10 lines.,head -20 foo.txt
+22,tail,Display last 10 lines.,tail -f logfile.txt
+23,Searching,Searching,Searching
+24,grep,Search for word(s) in a file.,"grep myvarname *.txt grep rodent *.txt grep ""Hello World"" *.txt"
+25,find,Search a path for files/directories that match some specification.,"find playground -name ""*.txt"" find playground -type d find playground -not -name ""*.txt"""
+26,Environment Variables,Environment Variables,Environment Variables
+27,$HOME,Home directory.,workpath=$HOME/playground
+28,$SHELL,Shell name.,echo $SHELL
+29,$USER,User name.,echo $USER
+30,$PATH,Paths to look in for executables.,PATH=${PATH}:/my/new/program/path/bin
+31,env,List environment vars and values.,env | less

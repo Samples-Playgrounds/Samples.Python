@@ -1,0 +1,43 @@
+,Unnamed: 0,Categorical Plots Regression Plots,Unnamed: 1
+0,Make use of the following aliases to import the libraries:,"Plot data and a linear regression  Scatterplot>>> sns.regplot(x=""sepal_width"",",
+1,>>> import matplotlib.pyplot as plt,"model fit>>> sns.stripplot(x=""species"",Scatterplot with oney=""sepal_length"",",
+2,>>> import seaborn as sns,"y=""petal_length"",categorical variable data=iris,",
+3,,data=iris) ax=ax),
+4,The basic steps to creating plots with Seaborn are:,">>> sns.swarmplot(x=""species"",Categorical scatterplot with Distribution Plots",
+5,1. Prepare some data,"y=""petal_length"",non-overlapping points",
+6,,"data=iris) >>> plot = sns.distplot(data.y,",Plot univariate distribution
+7,2. Control figure aesthetics,"Bar Chart kde=False,",
+8,,"color=""b"")",
+9,3. Plot with Seaborn,">>> sns.barplot(x=""sex"",Show point estimates and",
+10,,"y=""survived"",confidence intervals with Matrix Plots",
+11,4. Further customize your plot,"hue=""class"",scatterplot glyphs",
+12,,">>> sns.heatmap(uniform_data,vmin=0,vmax=1)",Heatmap
+13,,data=titanic),
+14,>>> import matplotlib.pyplot as plt,Count Plot,
+15,>>> import seaborn as sns,">>> sns.countplot(x=""deck"",Show count of observations",
+16,">>> tips = sns.load_dataset(""tips"") Step 1",4Further Customizations,Also see Matplotlib
+17,,"data=titanic,",
+18,">>> sns.set_style(""whitegrid"") Step 2",,
+19,">>> g = sns.lmplot(x=""tip"", Step 3","palette=""Greens_d"")  Point Plot Axisgrid Objects",
+20,"y=""total_bill"",",,
+21,"data=tips,",">>> sns.pointplot(x=""class"",Show point estimates and >>> g.despine(left=True)",Remove left spine
+22,aspect=2),"y=""survived"",confidence intervals as >>> g.set_ylabels(""Survived"")",Set the labels of the y-axis
+23,">>> g = (g.set_axis_labels(""Tip"",""Total bill(USD)"").","hue=""sex"",rectangular bars >>> g.set_xticklabels(rotation=45) Set the tick labels for x",
+24,"set(xlim=(0,10),ylim=(0,100)))","data=titanic, >>> g.set_axis_labels(""Survived"",  Set the axis labels",
+25,Step 4,,
+26,">>> plt.title(""title"")","palette={""male"":""g"", ""Sex"")",
+27,>>> plt.show(g) Step 5,"""female"":""m""}, >>> h.set(xlim=(0,5),",Set the limit and ticks of the
+28,,"markers=[""^"",""o""], ylim=(0,5),",x-and y-axis
+29,,"linestyles=[""-"",""--""]) xticks=[0,2.5,5],",
+30,"1 Data Also see Lists, NumPy & Pandas","Boxplot >>> sns.boxplot(x=""alive"",Boxplotyticks=[0,2.5,5])",
+31,,"y=""age"", Plot",
+32,>>> import pandas as pd,"hue=""adult_male"",",
+33,>>> import numpy as np,">>> plt.title(""A Title"")data=titanic)",Add plot title
+34,">>> uniform_data = np.random.rand(10, 12)",">>> sns.boxplot(data=iris,orient=""h"")Boxplot with wide-form data >>> plt.ylabel(""Survived"")",Adjust the label of the y-axis
+35,">>> data = pd.DataFrame({'x':np.arange(1,101),",">>> plt.xlabel(""Sex"")",Adjust the label of the x-axis
+36,"'y':np.random.normal(0,4,100)})","Violinplot >>> plt.ylim(0,100)",Adjust the limits of the y-axis
+37,,">>> sns.violinplot(x=""age"",Violin plot >>> plt.xlim(0,10)",Adjust the limits of the x-axis
+38,Seaborn also offers built-in data sets:,"y=""sex"", >>> plt.setp(ax,yticks=[0,5])",Adjust a plot property
+39,">>> titanic = sns.load_dataset(""titanic"")","hue=""survived"", >>> plt.tight_layout()",Adjust subplot params
+40,">>> iris = sns.load_dataset(""iris"")",data=titanic),
+41,2 Figure Aesthetics,5Also see MatplotlibShow or Save Plot,Also see Matplotlib

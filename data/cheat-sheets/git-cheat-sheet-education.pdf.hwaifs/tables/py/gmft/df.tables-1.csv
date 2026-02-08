@@ -1,0 +1,10 @@
+,git remote add [alias] [url]
+0,add a git URL as an alias
+1,git fetch [alias]
+2,fetch down all the branches from that Git remote
+3,git merge [alias]/[branch]
+4,merge a remote branch into your current branch to bring it up to
+5,git push [alias] [branch]
+6,Transmit local branch commits to the remote repository branch
+7,git pull
+8,fetch and merge any commits from the tracking remote branch

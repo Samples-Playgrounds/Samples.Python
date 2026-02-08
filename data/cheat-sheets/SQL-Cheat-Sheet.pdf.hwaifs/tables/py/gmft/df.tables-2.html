@@ -1,0 +1,62 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>MAX()</th>
+      <th>MIN()</th>
+      <th>AVG()</th>
+      <th>SUM()</th>
+      <th>COUNT()</th>
+      <th></th>
+      <th>Aggregate Functions Command</th>
+      <th>ALL</th>
+      <th>ANY</th>
+      <th>IN</th>
+      <th>Command</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>The MAX command returns the maximum (highest) value in a specified column.</td>
+      <td>The MIN command returns the minimum (lowest) value in a specified column.</td>
+      <td>The AVG command is used to calculate the average (mean) of all values in a specified column.</td>
+      <td>The SUM command is used to calculate the sum of all values in a specified column.</td>
+      <td>The COUNT command counts the number of rows or non-null values in a specified column.</td>
+      <td>Description</td>
+      <td>Commands</td>
+      <td>The ALL command is used to compare a value to all values returned by a subquery. It can be used with comparison operators like =, &gt;, &lt;, etc.</td>
+      <td>The ANY command is used to compare a value to any value returned by a subquery. It can be used with comparison operators like =, &gt;, &lt;, etc.</td>
+      <td>The IN command is used to determine whether a value matches any value in a subquery result. It is often used in the WHERE clause.</td>
+      <td>Description</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>SELECT MAX(column_name) FROM table_name;</td>
+      <td>SELECT MIN(column_name) FROM table_name;</td>
+      <td>SELECT AVG(column_name) FROM table_name;</td>
+      <td>SELECT SUM(column_name) FROM table_name;</td>
+      <td>SELECT COUNT(column_name) FROM table_name;</td>
+      <td>Syntax</td>
+      <td>NaN</td>
+      <td>SELECT column(s) FROM table WHERE value &gt; ALL (subquery);</td>
+      <td>SELECT column(s) FROM table WHERE value &lt; ANY (subquery);</td>
+      <td>SELECT column(s) FROM table WHERE value IN (subquery);</td>
+      <td>Syntax</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>SELECT MAX(price) FROM products;</td>
+      <td>SELECT MIN(price) FROM products;</td>
+      <td>SELECT AVG(price) FROM products;</td>
+      <td>SELECT SUM(revenue) FROM sales;</td>
+      <td>SELECT COUNT(age) FROM employees;</td>
+      <td>Example</td>
+      <td>NaN</td>
+      <td>SELECT * FROM orders WHERE order_amount &gt; ALL (SELECT total_amount FROM previous_orders);</td>
+      <td>SELECT * FROM products WHERE price &lt; ANY (SELECT unit_price FROM supplier_products);</td>
+      <td>SELECT * FROM customers WHERE city IN (SELECT city FROM suppliers);</td>
+      <td>Example</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,45 @@
+,,Ctrl+N,New File
+0,,Ctrl+O,Open File...
+1,,Ctrl+S,Save
+2,,Ctrl+Shift+S,Save As...
+3,,Ctrl+K S,Save All
+4,,Ctrl+F4,Close
+5,,Ctrl+K Ctrl+W,Close All
+6,,Ctrl+Shift+T,Reopen closed editor
+7,word,Ctrl+K Enter,Keep preview mode editor open
+8,,Ctrl+Tab,Open next
+9,,Ctrl+Shift+Tab,Open previous
+10,,Ctrl+K P,Copy path of active file
+11,,Ctrl+K R,Reveal active file in Explorer
+12,,Ctrl+K O,Show active file in new window/instance
+13,selected,Display,
+14,selection,F11,Toggle full screen
+15,,Shift+Alt+0,Toggle editor layout (horizontal/vertical)
+16,,Ctrl+ = / -,Zoom in/out
+17,,Ctrl+B,Toggle Sidebar visibility
+18,,Ctrl+Shift+E,Show Explorer / Toggle focus
+19,,Ctrl+Shift+F,Show Search
+20,,Ctrl+Shift+G,Show Source Control
+21,,Ctrl+Shift+D,Show Debug
+22,,Ctrl+Shift+X,Show Extensions
+23,,Ctrl+Shift+H,Replace in files
+24,,Ctrl+Shift+J,Toggle Search details
+25,,Ctrl+Shift+U,Show Output panel
+26,,Ctrl+Shift+V,Open Markdown preview
+27,,Ctrl+K V,Open Markdown preview to the side
+28,,Ctrl+K Z,Zen Mode (Esc Esc to exit)
+29,,Debug,
+30,,F9,Toggle breakpoint
+31,,F5,Start/Continue
+32,,Shift+F5,Stop
+33,,F11 / Shift+F11,Step into/out
+34,,F10,Step over
+35,,Ctrl+K Ctrl+I,Show hover
+36,,Integrated terminal,
+37,,Ctrl+`,Show integrated terminal
+38,,Ctrl+Shift+`,Create new terminal
+39,,Ctrl+C,Copy selection
+40,,Ctrl+V,Paste into active terminal
+41,,Ctrl+↑ / ↓,Scroll up/down
+42,,Shift+PgUp / PgDn,Scroll page up/down
+43,,Ctrl+Home / End,Scroll to top/bottom

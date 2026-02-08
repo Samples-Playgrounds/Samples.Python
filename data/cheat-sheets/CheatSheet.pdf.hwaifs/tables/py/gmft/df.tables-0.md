@@ -1,0 +1,8 @@
+|    |                    |                                                          |
+|---:|:-------------------|:---------------------------------------------------------|
+|  0 | exported by a      | a parenthesized list of names before the where key￾word: |
+|  1 | etc.) can imports. | module                                                   |
+|  2 | which have         | MyModule (MyType MyClass                                 |
+|  3 | same name          | , myFunc1                                                |
+|  4 | example:           | ...)                                                     |
+|  5 | nan                | where                                                    |

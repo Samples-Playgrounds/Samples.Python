@@ -1,0 +1,5 @@
+,=> 0x80484da,0x080484da 1: x/i $pc,(gdb) ni,1: x/i $pc => 0x80484d5,[n]ext[i] Steps through a single (gdb),(gdb) n 36,(gdb) r Breakpoint 35 int,(gdb) break Breakpoint,[n]ext Steps through a single,=> 0x80484ec,1: x/i $pc,(gdb) 0x080484ec,1: x/i $pc => 0x80484d5 si,[s]tep[i] Steps through a single (gdb),foo (word=0xbffff8b3) 12 char,Breakpoint 35 int (gdb) s,(gdb) r,[s]tep Steps through a single (gdb) break Breakpoint
+0,<main,in main,,<main,x86 0x080484d5,bar(val);,"1, main val =",main 1 at,line,<main,,in,<main,x86 0x080484d5,bar,"1, main val =",,line main 1 at
+1,+ 113>:,(),,+ 113>:,instruction. Steps in main (),,"(argc=2, foo(argv[1]);",0x8049377: file,code. Steps,+ 113>:,,do_something(),+ 113>:,instruction. Steps in main(),at main.c:11 word[0];,"(argc=2, foo(argv[1]);",,code. Steps into 0x8049377: file
+2,mov,,,call,over calls.,,argv=0xbffff704),"main.c,",over function,push,,,call,into calls.,,argv=0xbffff704),,"function calls. main.c,"
+3,"$0x0,%eax",,,0x80484ec<do_something>,,,at main.c:34,line 34.,calls.,%ebp,,,0x80484ec<do_something>,,,at main.c:34,,line 34.

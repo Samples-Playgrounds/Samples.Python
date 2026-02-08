@@ -1,0 +1,22 @@
+Exception reading tables from PDF document source = ../../../../../../../data/cheat-sheets/multibagg-ai-cheat-sheet-v1.pdf : java.lang.StringIndexOutOfBoundsException: Index 0 out of bounds for length 0Traceback (most recent call last):
+  File "CommandLineApp.java", line 106, in technology.tabula.CommandLineApp.extractTables
+Exception: Java Exception
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/tables-from-documents/pdf/tabula-py/api_table_extraction_tabula_py.py", line 28, in extract_tables_to_files_from_pdf_document
+    dfs = tabula.read_pdf(source, pages='all')
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/tables-from-documents/pdf/tabula-py/.venv/lib/python3.14/site-packages/tabula/io.py", line 400, in read_pdf
+    output = _run(
+        tabula_options,
+    ...<3 lines>...
+        force_subprocess=force_subprocess,
+    )
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/tables-from-documents/pdf/tabula-py/.venv/lib/python3.14/site-packages/tabula/io.py", line 86, in _run
+    return _tabula_vm.call_tabula_java(options, path)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/tables-from-documents/pdf/tabula-py/.venv/lib/python3.14/site-packages/tabula/backend.py", line 73, in call_tabula_java
+    self.tabula.CommandLineApp(sb, cmd).extractTables(cmd)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+java.lang.java.lang.StringIndexOutOfBoundsException: java.lang.StringIndexOutOfBoundsException: Index 0 out of bounds for length 0

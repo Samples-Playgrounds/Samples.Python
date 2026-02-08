@@ -1,0 +1,18 @@
+|    | 0           | 1                                            |
+|---:|:------------|:---------------------------------------------|
+|  0 | <ctrl>d     | Scroll down (half a screen)                  |
+|  1 | <ctrl>u     | Scroll up (half a screen)                    |
+|  2 | <ctrl>f     | Page forward                                 |
+|  3 | <ctrl>b     | Page backward                                |
+|  4 | /string     | Search forward                               |
+|  5 | ?string     | Search backward                              |
+|  6 | <ctrl>l     | Redraw screen                                |
+|  7 | <ctrl>g you | Display current line number file information |
+|  8 | n           | Repeat search                                |
+|  9 | N           | Repeat search reverse                        |
+| 10 | G           | Go to last line                              |
+| 11 | n G         | Go to line n                                 |
+| 12 | : n         | Go to line n                                 |
+| 13 | z<CR>       | Reposition window: cursor at top             |
+| 14 | z.          | Reposition window: cursor in                 |
+| 15 | z-          | Reposition window: cursor at                 |

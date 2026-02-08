@@ -1,0 +1,2 @@
+,,,,,,,,,,,,
+0,,property,currentColor computed value of the 'currentColor' keyword is the computed value of the 'color',itself,flavor An accent color (typically chosen by the user) to customize the user interface of the user agent,"lightness, alpha)","hsla(hue, saturation, red = hsl(0, 100%, 50%)","hsl(hue, saturation, lightness) red = hsl(0, 100%, 50%)",#rrggbb red = #ff0000 (or shorthand = #f00),"rgba(x,y,z, alpha) red = rgba(255,0,0)","rgb(x%,y%,z%) red = rgb(100%,0,0)","rgb(x,y,z) red = rgb(255,0,0)"

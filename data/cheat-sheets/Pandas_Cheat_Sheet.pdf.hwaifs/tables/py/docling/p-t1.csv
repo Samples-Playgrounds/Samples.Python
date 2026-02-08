@@ -1,0 +1,7 @@
+,0,1
+0,regex (Regular Expressions) Examples,regex (Regular Expressions) Examples
+1,'\.',Matches strings containing a period '.'
+2,'Length$',Matches strings ending with word 'Length'
+3,'^Sepal',Matches strings beginning with the word 'Sepal'
+4,'^x[1-5]$',"Matches strings beginning with 'x' and ending with 1,2,3,4,5"
+5,'^(?!Species$).*',Matches strings except the string 'Species'

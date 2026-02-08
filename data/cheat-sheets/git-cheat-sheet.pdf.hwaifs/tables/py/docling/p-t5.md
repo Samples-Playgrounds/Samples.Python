@@ -1,0 +1,5 @@
+|    | 0              | 1                                                                                                          |
+|---:|:---------------|:-----------------------------------------------------------------------------------------------------------|
+|  0 | git stash      | Put current changes in y/uni006Fur w/uni006Frking direct/uni006Fry int/uni006F stash f/uni006Fr later use. |
+|  1 | git stash pop  | Apply st/uni006Fred stash c/uni006Fntent int/uni006F w/uni006Frking direct/uni006Fry, and clear stash.     |
+|  2 | git stash drop | Delete a specific stash fr/uni006Fm all y/uni006Fur previ/uni006Fus stashes.                               |

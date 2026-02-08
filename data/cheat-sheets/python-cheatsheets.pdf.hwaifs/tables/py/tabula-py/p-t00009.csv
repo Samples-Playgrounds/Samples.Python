@@ -1,0 +1,1 @@
+,>>> np.info(np.ndarray.dtype)

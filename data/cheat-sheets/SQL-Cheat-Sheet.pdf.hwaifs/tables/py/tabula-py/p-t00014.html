@@ -1,0 +1,34 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Set OperationsCommandDescriptionSyntaxExampleUNIONThe UNION operatorSELECT column1, column2 FROMSELECT first_name, last_namecombines the result sets oftable1FROM customerstwo or more SELECTUNIONUNIONstatements into a singleSELECT column1, column2 FROMSELECT first_name, last_nameresult set.table2;FROM employees;INTERSECTThe INTERSECT operatorSELECT column1, column2 FROMSELECT first_name, last_namereturns the common rowstable1FROM customersthat appear in both resultINTERSECTINTERSECTsets.SELECT column1, column2 FROMSELECT first_name, last_nametable2;FROM employees;EXCEPTThe EXCEPT operatorSELECT column1, column2 FROMSELECT first_name, last_namereturns the distinct rowstable1FROM customersfrom the left result set thatEXCEPTEXCEPTare not present in the rightSELECT column1, column2 FROMSELECT first_name, last_nameresult set.table2;FROM employees;Transaction Control CommandsCommandDescriptionSyntaxExampleCOMMITThe COMMIT command isCOMMIT;BEGIN TRANSACTION;used to save all the changesmade during the currentSQL statements and changes within the transactiontransaction and make thempermanent.INSERT INTO employees (name, age) VALUES ('Alice',30);UPDATE products SET price = 25.00 WHERE category ='Electronics';COMMIT;ROLLBACKThe ROLLBACK command isROLLBACK;BEGIN TRANSACTION;used to undo all thechanges made during theSQL statements and changes within the transactioncurrent transaction anddiscard them.INSERT INTO employees (name, age) VALUES ('Bob', 35);UPDATE products SET price = 30.00 WHERE category ='Electronics';ROLLBACK;The SQL tool with the highest user satisfaction.DBVIS.COM</th>
+      <th>Unnamed: 0</th>
+      <th>Unnamed: 1</th>
+      <th>Unnamed: 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Command</td>
+      <td>Description</td>
+      <td>Syntax</td>
+      <td>Example</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>COMMIT</td>
+      <td>The COMMIT command is\rused to save all the changes\rmade during the current\rtransaction and make them\rpermanent.</td>
+      <td>COMMIT;</td>
+      <td>BEGIN TRANSACTION;\rSQL statements and changes within the transaction\rINSERT INTO employees (name, age) VALUES ('Alice',\r30);\rUPDATE products SET price = 25.00 WHERE category =\r'Electronics';\rCOMMIT;</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ROLLBACK</td>
+      <td>The ROLLBACK command is\rused to undo all the\rchanges made during the\rcurrent transaction and\rdiscard them.</td>
+      <td>ROLLBACK;</td>
+      <td>BEGIN TRANSACTION;\rSQL statements and changes within the transaction\rINSERT INTO employees (name, age) VALUES ('Bob', 35);\rUPDATE products SET price = 30.00 WHERE category =\r'Electronics';\rROLLBACK;</td>
+    </tr>
+  </tbody>
+</table>

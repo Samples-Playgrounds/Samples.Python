@@ -1,0 +1,83 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Date and Time SQL CommandsCommandDescriptionSyntaxExampleCURRENT_DATE()The CURRENT_DATE commandSELECT CURRENT_DATE() ASreturns the current date.current_date;CURRENT_TIME()The CURRENT_TIME commandSELECT CURRENT_TIME() ASreturns the current time.current_time;CURRENT_TIMESTAMP()The CURRENT_TIMESTAMPSELECTcommand returns the currentCURRENT_TIMESTAMP() ASdate and time.current_timestamp;DATE_PART()The DATE_PART commandSELECT DATE_PART('part',SELECT DATE_PART('year',extracts a specific part (e.g.,date_expression) AS'2024-04-11') ASyear, month, day) from a date orextracted_part;extracted_part;time.DATE_ADD()/DATE_SUB()The DATE_ADD command addsSELECTDATE_ADD Exampleor subtracts a specified numberDATE_ADD(date_expression,SELECTof days, months, or yearsINTERVAL value unit) ASDATE_ADD('2024-04-11',to/from a date.new_date;INTERVAL 1 DAY) ASnew_date;DATE_SUB ExampleSELECTDATE_SUB('2024-04-11',INTERVAL 1 DAY) ASnew_date;EXTRACT()The EXTRACT commandSELECT EXTRACT(part FROMSELECT EXTRACT(YEAR FROMextracts a specific part (e.g.,date_expression) AS'2024-04-11') ASyear, month, day) from a date orextracted_part;extracted_part;time.TO_CHAR()The TO_CHAR commandSELECTSELECTconverts a date or time to aTO_CHAR(date_expression,TO_CHAR('2024-04-11',specified format.'format') AS'YYYY-MM-DD') ASformatted_date;formatted_date;TIMESTAMPDIFF()The TIMESTAMPDIFF commandSELECTSELECT TIMESTAMPDIFF(DAY,calculates the differenceTIMESTAMPDIFF(unit,'2024-04-10',between two timestamps in atimestamp1, timestamp2)'2024-04-11') ASspecified unit (e.g., days, hours,AS difference;difference;minutes).DATEDIFF()The DATEDIFF commandSELECT DATEDIFF(date1,SELECTcalculates the difference in daysdate2) ASDATEDIFF('2024-04-11',between two dates.difference_in_days;'2024-04-10') ASdifference_in_days;The SQL tool with the highest user satisfaction.DBVIS.COM</th>
+      <th>Unnamed: 0</th>
+      <th>Unnamed: 1</th>
+      <th>Unnamed: 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Command</td>
+      <td>Description</td>
+      <td>Syntax</td>
+      <td>Example</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>CURRENT_DATE()</td>
+      <td>The CURRENT_DATE command\rreturns the current date.</td>
+      <td>SELECT CURRENT_DATE() AS\rcurrent_date;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>CURRENT_TIME()</td>
+      <td>The CURRENT_TIME command\rreturns the current time.</td>
+      <td>SELECT CURRENT_TIME() AS\rcurrent_time;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>CURRENT_TIMESTAMP()</td>
+      <td>The CURRENT_TIMESTAMP\rcommand returns the current\rdate and time.</td>
+      <td>SELECT\rCURRENT_TIMESTAMP() AS\rcurrent_timestamp;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>DATE_PART()</td>
+      <td>The DATE_PART command\rextracts a specific part (e.g.,\ryear, month, day) from a date or\rtime.</td>
+      <td>SELECT DATE_PART('part',\rdate_expression) AS\rextracted_part;</td>
+      <td>SELECT DATE_PART('year',\r'2024-04-11') AS\rextracted_part;</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>DATE_ADD()/DATE_SUB()</td>
+      <td>The DATE_ADD command adds\ror subtracts a specified number\rof days, months, or years\rto/from a date.</td>
+      <td>SELECT\rDATE_ADD(date_expression,\rINTERVAL value unit) AS\rnew_date;</td>
+      <td>DATE_ADD Example\rSELECT\rDATE_ADD('2024-04-11',\rINTERVAL 1 DAY) AS\rnew_date;\rDATE_SUB Example\rSELECT\rDATE_SUB('2024-04-11',\rINTERVAL 1 DAY) AS\rnew_date;</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>EXTRACT()</td>
+      <td>The EXTRACT command\rextracts a specific part (e.g.,\ryear, month, day) from a date or\rtime.</td>
+      <td>SELECT EXTRACT(part FROM\rdate_expression) AS\rextracted_part;</td>
+      <td>SELECT EXTRACT(YEAR FROM\r'2024-04-11') AS\rextracted_part;</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>TO_CHAR()</td>
+      <td>The TO_CHAR command\rconverts a date or time to a\rspecified format.</td>
+      <td>SELECT\rTO_CHAR(date_expression,\r'format') AS\rformatted_date;</td>
+      <td>SELECT\rTO_CHAR('2024-04-11',\r'YYYY-MM-DD') AS\rformatted_date;</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>TIMESTAMPDIFF()</td>
+      <td>The TIMESTAMPDIFF command\rcalculates the difference\rbetween two timestamps in a\rspecified unit (e.g., days, hours,\rminutes).</td>
+      <td>SELECT\rTIMESTAMPDIFF(unit,\rtimestamp1, timestamp2)\rAS difference;</td>
+      <td>SELECT TIMESTAMPDIFF(DAY,\r'2024-04-10',\r'2024-04-11') AS\rdifference;</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>DATEDIFF()</td>
+      <td>The DATEDIFF command\rcalculates the difference in days\rbetween two dates.</td>
+      <td>SELECT DATEDIFF(date1,\rdate2) AS\rdifference_in_days;</td>
+      <td>SELECT\rDATEDIFF('2024-04-11',\r'2024-04-10') AS\rdifference_in_days;</td>
+    </tr>
+  </tbody>
+</table>

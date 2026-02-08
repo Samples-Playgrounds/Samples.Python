@@ -1,0 +1,8 @@
+|    | 0               | 1                    |
+|---:|:----------------|:---------------------|
+|  0 | n               | Line number n        |
+|  1 | .+ m            | Current line plus m  |
+|  2 | $               | Last line            |
+|  3 | /string/        | A line that contains |
+|  4 | %               | Entire file          |
+|  5 | [addr1],[addr2] | Specifies a range    |

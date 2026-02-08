@@ -1,0 +1,17 @@
+,,Theoretical,Computer Science Cheat Sheet,
+0,,Definitions,Series,
+1,f(n) = O(g(n)),"iff ∃ positive c, n0 such that 0 ≤ f(n) ≤ cg(n) ∀n ≥ n0.","Xn i = n(n + 1) 2 , Xn i 2 = n(n + 1)(2n + 1) 6 , Xn i 3",= n 2 (n + 1)2 4
+2,f(n) = Ω(g(n)),"iff ∃ positive c, n0 such that f(n) ≥ cg(n) ≥ 0 ∀n ≥ n0.",i=1 i=1 i=1 In general: 1,
+3,f(n) = Θ(g(n)),iff f(n) = O(g(n)) and f(n) = Ω(g(n)).,Xn i=1 i m = m + 1 (n + 1)m+1 − 1 − Xn i=1 (i + 1)m+1 − i,m+1 − (m + 1)i m
+4,f(n) = o(g(n)),iff limn→∞ f(n)/g(n) = 0.,nX−1 i m = 1 m + 1 Xm  m + 1 k  Bkn m+1−k .,
+5,limn→∞ an = a,"iff ∀ǫ > 0, ∃n0 such that |an − a| < ǫ, ∀n ≥ n0.",i=1 k=0 Geometric series: i c n+1 − 1 i 1 i,c
+6,sup S,"least b ∈ R such that b ≥ s, ∀s ∈ S.","Xn i=0 c = c − 1 , c 6= 1, X∞ i=0 c = 1 − c , X∞ i=1 c = ncn+2 − (n + 1)c n+1 + c","1 − c , |c| < c"
+7,inf S,"greatest b ∈ R such that b ≤ s, ∀s ∈ S.","Xn i=0 ici = (c − 1)2 , c 6= 1, X∞ i=0 ici =","(1 − c) 2 , |c| <"
+8,lim inf n→∞ an,"limn→∞ inf{ai | i ≥ n, i ∈ N}.",Harmonic series: Xn 1 Xn n(n + 1),n(n − 1)
+9,lim sup n→∞ an,"limn→∞ sup{ai | i ≥ n, i ∈ N}.","Hn = i=1 i , i=1 iHi = 2 Hn −",4 .
+10,n k ,Combinations: Size k sub￾sets of a size n set.,"Xn i=1 Hi = (n + 1)Hn − n, Xn i=1  i m  Hi =  n + 1 m + 1",Hn+1 − 1 m + 1
+11,n k,Stirling numbers (1st kind): Arrangements of an n ele￾ment set into k cycles.,"1.  n k  = n! (n − k)!k! , 2. Xn k=0  n k  = 2n , 3. n n n − 1 n n", n k  =  n n − k − 1 n − 1
+12, n k,Stirling numbers (2nd kind): Partitions of an n element set into k non-empty sets.,"4.  k  = k  k − 1  , 5.  k  =  6.  n m m k  =  n k n − k m − k  , 7. Xn  r + k k ",k  +  k − 1 =  r + n + 1 n
+13,n k,"1st order Eulerian numbers: Permutations π1π2 . . . πn on {1, 2, . . . , n} with k ascents.","k=0 8. Xn k=0  k m  =  n + 1 m + 1 , 9. Xn k=0  r k  n",s − k  =  r + s n
+14,n k,2nd order Eulerian numbers.,"10.  n k  = (−1)k  k − n − 1 k  , 11. ",n 1  =  n n  =
+15,Cn,Catalan Numbers: Binary trees with n + 1 vertices.,"12.  n 2  = 2n−1 − 1, 13.  n k  = k  n − k",1  +  n − 1 k 1

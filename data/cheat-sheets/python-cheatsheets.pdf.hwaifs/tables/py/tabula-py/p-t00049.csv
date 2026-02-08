@@ -1,0 +1,2 @@
+,"Supervised learning>>> lr.fit(X, y)Fit the model to the data>>> knn.fit(X_train, y_train)>>> svc.fit(X_train, y_train)Unsupervised Learning>>> k_means.fit(X_train)Fit the model to the data>>> pca_model = pca.fit_transform(X_train)Fit to data, then transform it",Unnamed: 0
+0,"Supervised learning>>> lr.fit(X, y)>>> knn.fit(X_train, y_train)>>> svc.fit(X_train, y_train)Unsupervised Learning>>> k_means.fit(X_train)>>> pca_model = pca.fit_transform(X_train)","Fit the model to the dataFit the model to the dataFit to data, then transform it"

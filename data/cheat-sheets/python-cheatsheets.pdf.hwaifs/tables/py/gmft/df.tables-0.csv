@@ -1,0 +1,10 @@
+,,,
+0,>>> x+2,Sum of two variables,>>> >>>
+1,7,,Subset
+2,>>> x-2,Subtraction of two variables,
+3,3,,>>>
+4,>>> x*2,Multiplication of two variables,>>>
+5,10,,
+6,>>> x**2 25,Exponentiation of a variable,>>>
+7,>>> x%2 1,Remainder of a variable,"['my', >>>"
+8,>>> x/float(2) 2.5,Division of a variable,"['my', >>>"

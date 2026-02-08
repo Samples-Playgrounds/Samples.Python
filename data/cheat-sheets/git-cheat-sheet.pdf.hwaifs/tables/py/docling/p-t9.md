@@ -1,0 +1,6 @@
+|    | 0                              | 1                                                                                                                                                                      |
+|---:|:-------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | git tag                        | List all tags.                                                                                                                                                         |
+|  1 | git tag [name] [commit sha]    | Create a tag reference named name f/uni006Fr current c/uni006Fmmit. Add c/uni006Fmmit sha t/uni006F tag a specific c/uni006Fmmit instead /uni006Ff current /uni006Fne. |
+|  2 | git tag -a [name] [commit sha] | Create a tag /uni006Fbject named name f/uni006Fr current c/uni006Fmmit.                                                                                                |
+|  3 | git tag -d [name]              | Rem/uni006Fve a tag fr/uni006Fm l/uni006Fcal rep/uni006Fsit/uni006Fry.                                                                                                 |

@@ -1,0 +1,13 @@
+|    | 0                                                      |
+|---:|:-------------------------------------------------------|
+|  0 | Formatting                                             |
+|  1 | <p> </p>                                               |
+|  2 | Creates a new paragraph                                |
+|  3 | <br>                                                   |
+|  4 | AInserts a line break (carriage return)                |
+|  5 | <blockquote> </blockquote>                             |
+|  6 | Puts content in a quote - indents text from both sides |
+|  7 | <div> </div>                                           |
+|  8 | Used to format block content with CSS                  |
+|  9 | <span> </span>                                         |
+| 10 | Used to format inline content with CSS                 |

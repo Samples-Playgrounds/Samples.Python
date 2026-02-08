@@ -1,0 +1,6 @@
+,0,1
+0,list-style,list-style-type list-style-position list-style-image
+1,list-style-image,none url
+2,list-style-position,Inside | outside
+3,list-style-type,none | asterisks | box | check | circle | diamond | disc | hyphen | square | decimal | decimal-leadingzero | lower-roman | upperroman | lower-alpha | upper- alpha | lower-greek | lower-latin | upper-latin | hebrew | armenian | georgian | cjk-ideographic | hiragana | katakana | hiragana- iroha | katakana-iroha
+4,marker-offset,auto length

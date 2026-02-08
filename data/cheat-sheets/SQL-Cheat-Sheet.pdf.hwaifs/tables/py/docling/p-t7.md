@@ -1,0 +1,7 @@
+|    | Command   | Description                                                                                  | Syntax                                     | Example                           |
+|---:|:----------|:---------------------------------------------------------------------------------------------|:-------------------------------------------|:----------------------------------|
+|  0 | COUNT()   | The COUNT command counts the number of rows or non-null values in a specified column.        | SELECT COUNT(column_name) FROM table_name; | SELECT COUNT(age) FROM employees; |
+|  1 | SUM()     | The SUM command is used to calculate the sum of all values in a specified column.            | SELECT SUM(column_name) FROM table_name;   | SELECT SUM(revenue) FROM sales;   |
+|  2 | AVG()     | The AVG command is used to calculate the average (mean) of all values in a specified column. | SELECT AVG(column_name) FROM table_name;   | SELECT AVG(price) FROM products;  |
+|  3 | MIN()     | The MIN command returns the minimum (lowest) value in a specified column.                    | SELECT MIN(column_name) FROM table_name;   | SELECT MIN(price) FROM products;  |
+|  4 | MAX()     | The MAX command returns the maximum (highest) value in a specified column.                   | SELECT MAX(column_name) FROM table_name;   | SELECT MAX(price) FROM products;  |
