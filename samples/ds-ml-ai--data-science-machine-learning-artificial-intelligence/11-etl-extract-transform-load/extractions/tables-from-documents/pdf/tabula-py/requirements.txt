@@ -2,7 +2,7 @@ codetiming==1.4.0
 distro==1.9.0
 et_xmlfile==2.0.0
 jpype1==1.6.0
-numpy==2.4.1
+numpy==2.4.2
 openpyxl==3.1.5
 packaging==26.0
 pandas==3.0.0

@@ -6,8 +6,8 @@ click==8.3.1
 codetiming==1.4.0
 cryptography==46.0.4
 et_xmlfile==2.0.0
-numpy==2.4.1
-opencv-python-headless==4.13.0.90
+numpy==2.4.2
+opencv-python-headless==4.13.0.92
 openpyxl==3.1.5
 pandas==3.0.0
 pdfminer.six==20260107
