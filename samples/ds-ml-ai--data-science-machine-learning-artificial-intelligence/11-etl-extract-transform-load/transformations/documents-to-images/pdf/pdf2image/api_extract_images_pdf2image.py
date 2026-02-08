@@ -5,7 +5,7 @@ from pathlib import Path
 def extract_tables_to_files (source: str) -> str:
     """
     """
-    directory = f"{source}.hwaifs/images/python/pdf2image/"
+    directory = f"{source}.hwaifs/images/py/pdf2image/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     pages = convert_from_path(source, 500)
