@@ -7,7 +7,9 @@ rm *.pyc
 """
 python -m venv .venv
 source .venv/bin/activate
-pip install 'marker-pdf[full]'
+pip install epub2txt
+pip install timer
+pip install codetiming
 pip freeze > requirements.txt
 """
 
@@ -16,7 +18,7 @@ pip install -r requirements.txt
 python main.py
 """
 
-import api_text_extraction_marker_PdfConverter as api
+import api_text_extraction_epub2txt as api
 
 import sys
 import os
@@ -30,11 +32,9 @@ sources = files_documents_epubs
 
 def main():
    for source in sources:
-      if source.endswith(".epub"):
-         print(f"marker <- source = {source}")
-         result_md = api.extract_text_to_file_from_epub_document(source)
+      print(f"EbookLib <- source = {source}")
+      result_txt = api.extract_text_to_file_from_epub_document(source)
 
 if __name__ == '__main__':
     main()
-    
 

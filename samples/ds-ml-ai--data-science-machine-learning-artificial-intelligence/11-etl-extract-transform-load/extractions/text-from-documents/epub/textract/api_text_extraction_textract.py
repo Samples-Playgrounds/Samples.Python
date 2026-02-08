@@ -1,7 +1,4 @@
-from marker.converters.pdf import PdfConverter
-from marker.models import create_model_dict
-from marker.output import text_from_rendered
-
+from markitdown import MarkItDown
 import os
 from pathlib import Path
 
@@ -13,22 +10,20 @@ from time import perf_counter_ns
 # from timer import timer
 
 #@timer()
-def extract_text_to_file_from_epub_document (source: str) -> str:
+def extract_text_to_file_from_any_document (source: str) -> str:
 
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
-    directory = f"{source}.hwaifs/text/py/marker/"
+
+    directory = f"{source}.hwaifs/text/py/markitdown/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     try:
-        converter = PdfConverter(
-            artifact_dict=create_model_dict(),
-        )
-        rendered = converter(source)
-        result_md, _, images = text_from_rendered(rendered)
+        md = MarkItDown()
+        result_md = md.convert(source).text_content
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
@@ -54,7 +49,7 @@ def extract_text_to_file_from_epub_document (source: str) -> str:
     time_total_3 = (time_stop_3 - time_start_3) / 1_000_000_000
 
     times = {
-        "function_method_name" : "extract_text_to_file_from_epub_document",
+        "function_method_name" : "extract_text_to_file_from_any_document",
         "time_start_1": time_start_1,
         "time_end_1": time_stop_1,
         "time_total_1": time_total_1,
@@ -67,9 +62,8 @@ def extract_text_to_file_from_epub_document (source: str) -> str:
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
-    with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
+    with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
         f.write(json.dumps(times, indent=4))
     #---------------------------------------------------------------------------
 
     return result_md
-

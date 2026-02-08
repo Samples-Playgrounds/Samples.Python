@@ -1,6 +1,4 @@
-from marker.converters.pdf import PdfConverter
-from marker.models import create_model_dict
-from marker.output import text_from_rendered
+from kreuzberg import extract_file_sync
 
 import os
 from pathlib import Path
@@ -20,15 +18,13 @@ def extract_text_to_file_from_epub_document (source: str) -> str:
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
-    directory = f"{source}.hwaifs/text/py/marker/"
+
+    directory = f"{source}.hwaifs/text/py/kreuzberg/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     try:
-        converter = PdfConverter(
-            artifact_dict=create_model_dict(),
-        )
-        rendered = converter(source)
-        result_md, _, images = text_from_rendered(rendered)
+        result = extract_file_sync(source)
+        result_txt = result.content
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
@@ -42,8 +38,8 @@ def extract_text_to_file_from_epub_document (source: str) -> str:
         return
 
     # save to file
-    with open(f"{directory}/content.md", "w") as f:
-        f.write(result_md)
+    with open(f"{directory}/content.txt", "w") as f:
+        f.write(result_txt) 
 
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()
@@ -54,7 +50,7 @@ def extract_text_to_file_from_epub_document (source: str) -> str:
     time_total_3 = (time_stop_3 - time_start_3) / 1_000_000_000
 
     times = {
-        "function_method_name" : "extract_text_to_file_from_epub_document",
+        "function_method_name" : "extract_text_to_file_from_epub_documentw",
         "time_start_1": time_start_1,
         "time_end_1": time_stop_1,
         "time_total_1": time_total_1,
@@ -67,9 +63,8 @@ def extract_text_to_file_from_epub_document (source: str) -> str:
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
-    with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
+    with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
         f.write(json.dumps(times, indent=4))
     #---------------------------------------------------------------------------
 
-    return result_md
-
+    return result_txt

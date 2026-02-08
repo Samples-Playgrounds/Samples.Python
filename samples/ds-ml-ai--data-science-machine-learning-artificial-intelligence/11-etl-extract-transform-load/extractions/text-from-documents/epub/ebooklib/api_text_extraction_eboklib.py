@@ -40,7 +40,7 @@ def extract_text_to_file_from_epub_document (source: str) -> str:
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from PDF document source = {source} : {e}" \
+            f"Exception reading tables from EPUB document source = {source} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")

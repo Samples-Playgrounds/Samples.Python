@@ -7,7 +7,11 @@ rm *.pyc
 """
 python -m venv .venv
 source .venv/bin/activate
-pip install 'marker-pdf[full]'
+pip install markitdown[all]
+pip install 'markitdown[pdf, docx, pptx]'
+pip install 'markitdown[pdf, docx, pptx, xslx, xsl, outlook, audio-transcription, youtube-transcription]'
+pip install timer
+pip install codetiming
 pip freeze > requirements.txt
 """
 
@@ -16,7 +20,7 @@ pip install -r requirements.txt
 python main.py
 """
 
-import api_text_extraction_marker_PdfConverter as api
+import api_text_extraction_MarkItDown as api
 
 import sys
 import os
@@ -26,13 +30,12 @@ scriptpath = "../../../../../"
 sys.path.append(os.path.abspath(scriptpath))
 from data import *
 
-sources = files_documents_epubs
+
 
 def main():
    for source in sources:
-      if source.endswith(".epub"):
-         print(f"marker <- source = {source}")
-         result_md = api.extract_text_to_file_from_epub_document(source)
+      print(f"markitdown <- source = {source}")
+      result_md = api.extract_text_to_file_from_any_document(source)
 
 if __name__ == '__main__':
     main()
