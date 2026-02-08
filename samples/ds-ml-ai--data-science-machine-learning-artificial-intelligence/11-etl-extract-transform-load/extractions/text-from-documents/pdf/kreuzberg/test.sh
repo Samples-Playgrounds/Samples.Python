@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LIBRARY=docling
+LIBRARY=kreuzberg
 figlet $LIBRARY
 figlet start
 
