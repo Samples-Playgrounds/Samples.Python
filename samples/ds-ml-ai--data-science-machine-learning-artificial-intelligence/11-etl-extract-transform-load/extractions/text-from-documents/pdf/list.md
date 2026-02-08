@@ -1,10 +1,10 @@
+MarkItDown/
 PyMuPDF/
 PyPDF2/
 docTR/
 docling/
 kreuzberg/
 marker/
-markitdown/
 pdfium2/
 pdfminer.six/
 pdfplumber/
