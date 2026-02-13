@@ -10,11 +10,23 @@ A single line comment starts with '--' and extends to the end of the line. Multi
 
 Comments above function definitions should start with '{- |' and those next to parameter types with '-- ^' for compatibility with Haddock[1](#page-0-0) , a system for documenting Haskell code.
 
-## **Reserved Words**
+#### **Reserved Words**
 
 The following words are reserved in Haskell. It is a syntax error to give a variable or a function one of these names.
 
-• case • class • data • deriving • do • else • import • in • infix • infixl • infixr • instance • of • module • newtype • then • type • where
+| •        | •        | •       |
+|----------|----------|---------|
+| case     | import   | of      |
+| •        | •        | •       |
+| class    | in       | module  |
+| •        | •        | •       |
+| data     | infix    | newtype |
+| •        | •        | •       |
+| deriving | infixl   | then    |
+| •        | •        | •       |
+| do       | infixr   | type    |
+| •        | •        | •       |
+| else     | instance | where   |
 
 • let
 
@@ -36,10 +48,7 @@ string1 = "My long "
 
 The area between the backslashes is ignored. Newlines *in* the string must be represented explicitly:
 
-```
-string2 = "My long \n"
-"string."
-```
+$$\begin{array}{l} string2 = "My \ long \ \backslash n" \\ "string." \end{array}$$
 
 That is, string1 evaluates to:
 
@@ -57,7 +66,7 @@ My long string
 - -1 sugar for (negate 1)
 - 2-1 sugar for ((-) 2 1)
 
-## **Enumerations**
+#### **Enumerations**
 
 - [1..10] List of numbers 1, 2, . . ., 10.
 - [100..] Infinite list of numbers 100, 101, 102, . . . .
@@ -376,7 +385,7 @@ It is a syntax error to specify deriving for any other classes besides the six g
 
 See the section on [deriving](#page-3-0) under the data keyword on page [4.](#page-3-0)
 
-### **Do**
+## **Do**
 
 <span id="page-3-1"></span>The do keyword indicates that the code to follow will be in a *monadic* context. Statements are separated by newlines, assignment is indicated by <-, and a let form is introduce which does not require the in keyword.
 
@@ -567,7 +576,7 @@ onlyThree str =
 
 See the section on [case](#page-1-0) on page [2.](#page-1-0)
 
-### **Module**
+## **Module**
 
 <span id="page-5-0"></span>A module is a compilation unit which exports functions, types, classes, instances, and other modules. A module can only be defined in one file, though its exports may come from multiple sources. To make a Haskell file a module, just add a module declaration at the top:
 
@@ -828,7 +837,7 @@ agree1 "n" = "Too bad."
 -- with 'y' given.
 ```
 
-$$agree1 ('y':\_) = "YAHOO!"$$
+agree1 ('y':\_) = "YAHOO!"
 
 -- Matches for any other value given.
 
@@ -1187,9 +1196,7 @@ Which produces quite different results:
 
 Haskell is a pure language and, as such, has no mutable state. That is, once a value is set it never changes. "Updating" is really a copy operation, with new values in the fields that "changed." For example, using the Color type defined earlier, we can write a function that sets the green field to zero easily:
 
-```
-noGreen1 (C r _ b) = C r 0 b
-```
+$$noGreen1 (C r _ b) = C r 0 b$$
 
 The above is a bit verbose and can be rewriten using record syntax. This kind of "update" only sets values for the field(s) specified and copies the rest:
 

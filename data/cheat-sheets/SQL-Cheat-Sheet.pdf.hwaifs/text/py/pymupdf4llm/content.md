@@ -42,7 +42,7 @@
 
 
 
-The SQL tool with the highest user satisfaction. `[DBVIS.COM ->](https://www.dbvis.com/?utm_campaign=sql-cheat-sheet)`
+The SQL tool with the highest user satisfaction. `[DBVIS.COM](https://www.dbvis.com/?utm_campaign=sql-cheat-sheet)` `->`
 
 
 ### **Data Control Language (DCL) Commands**
@@ -79,26 +79,12 @@ The SQL tool with the highest user satisfaction. `[DBVIS.COM ->](https://www.dbv
 
 
 
-The SQL tool with the highest user satisfaction. `[DBVIS.COM ->](https://www.dbvis.com/?utm_campaign=sql-cheat-sheet)`
+The SQL tool with the highest user satisfaction. `[DBVIS.COM](https://www.dbvis.com/?utm_campaign=sql-cheat-sheet)` `->`
 
 
-### **Joining Commands**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-|Command|Description|Syntax|Example|
+|Joining Commands|Col2|Col3|Col4|
 |---|---|---|---|
+|**Command**|**Description**|**Syntax**|**Example**|
 |`INNER JOIN`|The INNER JOIN command<br>returns rows with matching<br>values in both tables.|`SELECT * FROM table1`<br>`INNER JOIN table2 ON`<br>`table1.column =`<br>`table2.column;`|`SELECT * FROM employees`<br>`INNER JOIN departments ON`<br>`employees.department_id =`<br>`departments.id;`|
 |`LEFT JOIN/LEFT OUTER JOIN`|The LEFT JOIN command<br>returns all rows from the left<br>table (first table) and the<br>matching rows from the right<br>table (second table).|`SELECT * FROM table1 LEFT`<br>`JOIN table2 ON`<br>`table1.column =`<br>`table2.column;`|`SELECT * FROM employees LEFT`<br>`JOIN departments ON`<br>`employees.department_id =`<br>`departments.id;`|
 |`RIGHT JOIN/RIGHT OUTER`<br>`JOIN`|The RIGHT JOIN command<br>returns all rows from the right<br>table (second table) and the<br>matching rows from the left<br>table (first table).|`SELECT * FROM table1`<br>`RIGHT JOIN table2 ON`<br>`table1.column =`<br>`table2.column;`|`SELECT *`<br>`FROM employees`<br>`RIGHT JOIN departments`<br>`ON employees.department_id =`<br>`departments.department_id;`|
@@ -109,20 +95,16 @@ The SQL tool with the highest user satisfaction. `[DBVIS.COM ->](https://www.dbv
 
 
 
-The SQL tool with the highest user satisfaction. `[DBVIS.COM ->](https://www.dbvis.com/?utm_campaign=sql-cheat-sheet)`
+The SQL tool with the highest user satisfaction. `[DBVIS.COM](https://www.dbvis.com/?utm_campaign=sql-cheat-sheet)` `->`
 
 
-### **Subqueries in SQL**
-
-
-
-|Command|Description|Syntax|Example|
+|Subqueries in SQL|Col2|Col3|Col4|
 |---|---|---|---|
+|**Command**|**Description**|**Syntax**|**Example**|
 |`IN`|The IN command is used to<br>determine whether a value<br>matches any value in a subquery<br>result. It is often used in the<br>WHERE clause.|`SELECT column(s) FROM`<br>`table WHERE value IN`<br>`(subquery);`|`SELECT * FROM customers`<br>`WHERE city IN (SELECT`<br>`city FROM suppliers);`|
 |`ANY`|The ANY command is used to<br>compare a value to any value<br>returned by a subquery. It can<br>be used with comparison<br>operators like =, >, <, etc.|`SELECT column(s) FROM`<br>`table WHERE value < ANY`<br>`(subquery);`|`SELECT * FROM products`<br>`WHERE price < ANY (SELECT`<br>`unit_price FROM`<br>`supplier_products);`|
 |`ALL`|The ALL command is used to<br>compare a value to all values<br>returned by a subquery. It can<br>be used with comparison<br>operators like =, >, <, etc.|`SELECT column(s) FROM`<br>`table WHERE value > ALL`<br>`(subquery);`|`SELECT * FROM orders`<br>`WHERE order_amount > ALL`<br>`(SELECT total_amount FROM`<br>`previous_orders);`|
 
-### **Aggregate Functions Commands**
 
 
 
@@ -132,13 +114,9 @@ The SQL tool with the highest user satisfaction. `[DBVIS.COM ->](https://www.dbv
 
 
 
-
-
-
-
-
-|Command|Description|Syntax|Example|
+|Aggregate Functions|Commands|Col3|Col4|
 |---|---|---|---|
+|**Command**|**Description**|**Syntax**|**Example**|
 |`COUNT()`|The COUNT command counts<br>the number of rows or non-null<br>values in a specified column.|`SELECT COUNT(column_name)`<br>`FROM table_name;`|`SELECT COUNT(age) FROM`<br>`employees;`|
 |`SUM()`|The SUM command is used to<br>calculate the sum of all values in<br>a specified column.|`SELECT SUM(column_name)`<br>`FROM table_name;`|`SELECT SUM(revenue) FROM`<br>`sales;`|
 |`AVG()`|The AVG command is used to<br>calculate the average (mean) of<br>all values in a specified column.|`SELECT AVG(column_name)`<br>`FROM table_name;`|`SELECT AVG(price) FROM`<br>`products;`|
@@ -147,7 +125,7 @@ The SQL tool with the highest user satisfaction. `[DBVIS.COM ->](https://www.dbv
 
 
 
-The SQL tool with the highest user satisfaction. `[DBVIS.COM ->](https://www.dbvis.com/?utm_campaign=sql-cheat-sheet)`
+The SQL tool with the highest user satisfaction. `[DBVIS.COM](https://www.dbvis.com/?utm_campaign=sql-cheat-sheet)` `->`
 
 
 ### **String Functions in SQL**
@@ -173,7 +151,7 @@ The SQL tool with the highest user satisfaction. `[DBVIS.COM ->](https://www.dbv
 
 
 
-The SQL tool with the highest user satisfaction. `[DBVIS.COM ->](https://www.dbvis.com/?utm_campaign=sql-cheat-sheet)`
+The SQL tool with the highest user satisfaction. `[DBVIS.COM](https://www.dbvis.com/?utm_campaign=sql-cheat-sheet)` `->`
 
 
 ### **Date and Time SQL Commands**
@@ -199,7 +177,7 @@ The SQL tool with the highest user satisfaction. `[DBVIS.COM ->](https://www.dbv
 
 
 
-The SQL tool with the highest user satisfaction. `[DBVIS.COM ->](https://www.dbvis.com/?utm_campaign=sql-cheat-sheet)`
+The SQL tool with the highest user satisfaction. `[DBVIS.COM](https://www.dbvis.com/?utm_campaign=sql-cheat-sheet)` `->`
 
 
 ### **Conditional Expressions**
@@ -220,7 +198,7 @@ The SQL tool with the highest user satisfaction. `[DBVIS.COM ->](https://www.dbv
 
 
 
-The SQL tool with the highest user satisfaction. `[DBVIS.COM ->](https://www.dbvis.com/?utm_campaign=sql-cheat-sheet)`
+The SQL tool with the highest user satisfaction. `[DBVIS.COM](https://www.dbvis.com/?utm_campaign=sql-cheat-sheet)` `->`
 
 
 ### **Set Operations**
@@ -253,7 +231,7 @@ The SQL tool with the highest user satisfaction. `[DBVIS.COM ->](https://www.dbv
 
 
 
-The SQL tool with the highest user satisfaction. `[DBVIS.COM ->](https://www.dbvis.com/?utm_campaign=sql-cheat-sheet)`
+The SQL tool with the highest user satisfaction. `[DBVIS.COM](https://www.dbvis.com/?utm_campaign=sql-cheat-sheet)` `->`
 
 
 |SAVEPOINT|The SAVEPOINT command<br>is used to set a point within<br>a transaction to which you<br>can later roll back.|SAVEPOINT<br>savepoint_n<br>ame;|BEGIN TRANSACTION;<br>INSERT INTO employees (name, age) VALUES ('Carol',<br>28);<br>SAVEPOINT before_update;<br>UPDATE products SET price = 40.00 WHERE category =<br>'Electronics';<br>SAVEPOINT after_update;<br>DELETE FROM customers WHERE age > 60;<br>ROLLBACK TO before_update;<br>-- At this point, the DELETE is rolled back, but the<br>UPDATE remains.<br>COMMIT;|
@@ -263,6 +241,6 @@ The SQL tool with the highest user satisfaction. `[DBVIS.COM ->](https://www.dbv
 
 
 
-The SQL tool with the highest user satisfaction. `[DBVIS.COM ->](https://www.dbvis.com/?utm_campaign=sql-cheat-sheet)`
+The SQL tool with the highest user satisfaction. `[DBVIS.COM](https://www.dbvis.com/?utm_campaign=sql-cheat-sheet)` `->`
 
 

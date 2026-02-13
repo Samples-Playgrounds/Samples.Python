@@ -22,7 +22,7 @@ Every command and filename is CaSe sEnSiTiVe!
 |_Navigating Directories_|_Navigating Directories_|_Navigating Directories_|
 |`ls`|List the contents of the directory.|`ls -larth /home/mcuser/science/code`|
 |`cd`|Change directory.|`cd /home/mcuser/science`|
-|`pwd`|_p_resent_ w_orking_ d_irectory.|`pwd`|
+|`pwd`|_p_resent _w_orking _d_irectory.|`pwd`|
 |`*`|Wild card, any number of chars.|`ls *.txt`|
 |`?`|Wild card, 0 or 1 characters.|`ls foo?.txt`|
 |`.`|Current directory.|`cd .`|
@@ -34,7 +34,7 @@ Every command and filename is CaSe sEnSiTiVe!
 |`rmdir`|Remove empty directory.|`rmdir MyNewDirectory`|
 |`mv`|Move ﬁles (overwrites destination).|`mv -i foo.txt foo2.txt`|
 |`cp`|Copy ﬁles (overwrites destination).|`cp -i ../foo.txt .`|
-|`rm`|Remove ﬁles.** CANNOT UNDO!**|`rm -i foo.txt`|
+|`rm`|Remove ﬁles. **CANNOT UNDO!**|`rm -i foo.txt`|
 |`chmod`|Change ﬁle permissions.<br>`rwx` = read, write, execute.<br>`ugoa` = user, group, other, all.|`chmod a+rwx badger.txt`<br>`chmod o-wx badger.txt`<br>`chmod u+x myscript.sh`|
 |_Viewing Files in Terminal_|_Viewing Files in Terminal_|_Viewing Files in Terminal_|
 |`less`|View ﬁles in terminal window.|`less foo.txt`|
@@ -77,7 +77,7 @@ Every command and filename is CaSe sEnSiTiVe!
 |`ssh`|Secure shell login.|`ssh -Y user@host.edu`|
 |`scp`|Secure copy.|`scp user@host.edu:path/to/file.txt .`|
 |`wget`|Download ﬁle from remote URL.|`wget www.google.com -O google.html`|
-|`Ctrl-d`|Exit login. Sometimes disabled.|Can also use` exit`,` logout`|
+|`Ctrl-d`|Exit login. Sometimes disabled.|Can also use `exit`, `logout`|
 |_Miscellaneous_|_Miscellaneous_|_Miscellaneous_|
 |`man`|_Man_ual for other commands.|`man cat`|
 |`sleep`|Do nothing|`sleep 30`|

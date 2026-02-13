@@ -2626,9 +2626,9 @@ Ackermann’s function and inverse:
 1
 n
 
-(cid:19)
-
 (cid:18)
+
+(cid:19)
 
 (cid:18)
 

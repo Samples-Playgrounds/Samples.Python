@@ -31,7 +31,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "SQL cheat sheet Comprehensive",
@@ -69,7 +69,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Data Manipulation Language \u0000DML\u0000 Commands",
@@ -107,7 +107,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Command",
@@ -145,7 +145,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Description",
@@ -183,7 +183,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Syntax",
@@ -221,7 +221,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "SELECT",
@@ -259,7 +259,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "9ecea81f58730932990891392283b771"
         },
@@ -298,7 +298,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "SELECT column1, column2 FROM table_name;",
@@ -336,7 +336,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "INSERT",
@@ -374,7 +374,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "e8967d5ea4c30afb231997ea15c4e8d6"
         },
@@ -413,7 +413,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "INSERT INTO table_name (column1, column2) VALUES (value1, value2);",
@@ -451,7 +451,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "UPDATE",
@@ -489,7 +489,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "3920aaaf43a8e9cf118ab6d56313ec09"
         },
@@ -528,7 +528,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;",
@@ -566,7 +566,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "DELETE",
@@ -604,7 +604,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "The DELETE command removes records from a table.",
@@ -642,7 +642,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "DELETE FROM table_name WHERE condition;",
@@ -680,7 +680,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Data Definition Language \u0000DDL\u0000 Commands",
@@ -718,7 +718,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Command",
@@ -756,7 +756,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Description",
@@ -794,7 +794,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Syntax",
@@ -832,7 +832,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "CREATE",
@@ -870,7 +870,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "34cfca86565c1859c1bfb87f71dad89b"
         },
@@ -909,7 +909,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "CREATE TABLE table_name (column1 datatype1, column2 datatype2, \u0000\u0000\u0000);",
@@ -947,7 +947,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "ALTER",
@@ -985,7 +985,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "4b92b92cb7c6403fe2d0c908e80ccd90"
         },
@@ -1024,7 +1024,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "ALTER TABLE table_name ADD column_name datatype;",
@@ -1062,7 +1062,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "DROP",
@@ -1100,7 +1100,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "06a470c395a3dce510988da13237ba0a"
         },
@@ -1139,7 +1139,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "DROP TABLE table_name;",
@@ -1177,7 +1177,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "TRUNCATE",
@@ -1215,7 +1215,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "3bfcb121fe27834dc8cd21a05e7badd6"
         },
@@ -1254,7 +1254,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "TRUNCATE TABLE table_name;",
@@ -1292,7 +1292,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "The SQL tool with the highest user satisfaction.",
@@ -1330,7 +1330,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Example",
@@ -1368,7 +1368,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "SELECT first_name, last_name FROM customers;",
@@ -1406,7 +1406,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "INSERT INTO customers (first_name, last_name) VALUES ('Mary', 'Doe');",
@@ -1444,7 +1444,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "UPDATE employees SET employee_name = \u2018John Doe\u2019, department = \u2018Marketing\u2019;",
@@ -1482,7 +1482,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "DELETE FROM employees WHERE employee_name = \u2018John Doe\u2019;",
@@ -1520,7 +1520,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Example",
@@ -1558,7 +1558,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "CREATE TABLE employees ( employee_id INT",
@@ -1596,7 +1596,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "e429ed83fc145445f330f4c01f998d64"
         },
@@ -1635,7 +1635,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "first_name",
@@ -1673,7 +1673,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "8e48611e5174643e491a7c6adcca3c6e"
         },
@@ -1712,7 +1712,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "last_name",
@@ -1750,7 +1750,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "e9e3a23a9b4241bb7863348030155b67"
         },
@@ -1789,7 +1789,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "age INT",
@@ -1827,7 +1827,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "f54938b07e869552204ed935f0ff43e8"
         },
@@ -1866,7 +1866,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "ALTER TABLE customers ADD email VARCHAR(100);",
@@ -1904,7 +1904,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "DROP TABLE customers;",
@@ -1942,7 +1942,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "TRUNCATE TABLE customers;",
@@ -1980,7 +1980,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "DBVIS.COM \u0000\u0000",
@@ -2018,7 +2018,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Data Control Language \u0000DCL\u0000 Commands",
@@ -2056,7 +2056,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Command",
@@ -2094,7 +2094,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Description",
@@ -2132,7 +2132,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Syntax",
@@ -2170,7 +2170,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "GRANT",
@@ -2208,7 +2208,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "de20358522637922142828030777e557"
         },
@@ -2247,7 +2247,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "GRANT SELECT, INSERT ON table_name TO user_name;",
@@ -2285,7 +2285,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "REVOKE",
@@ -2323,7 +2323,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "a2e705511c5a4b38de93498edffcab03"
         },
@@ -2362,7 +2362,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "REVOKE SELECT, INSERT ON table_name FROM user_name;",
@@ -2400,7 +2400,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Querying Data Commands",
@@ -2438,7 +2438,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Command",
@@ -2476,7 +2476,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Description",
@@ -2514,7 +2514,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Syntax",
@@ -2552,7 +2552,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "SELECT Statement",
@@ -2590,7 +2590,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "697b855dd35135d9a160b8adea8cb3c9"
         },
@@ -2629,7 +2629,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "SELECT column1, column2 FROM table_name;",
@@ -2667,7 +2667,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "WHERE Clause",
@@ -2705,7 +2705,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "09d51d817d0687d5949eaf3a24dbd113"
         },
@@ -2744,7 +2744,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "SELECT * FROM table_name WHERE condition;",
@@ -2782,7 +2782,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "ORDER BY Clause",
@@ -2820,7 +2820,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "c12e6d61c10c1dd60e52d6ff91988af5"
         },
@@ -2859,7 +2859,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "SELECT * FROM table_name ORDER BY column_name ASC|DESC;",
@@ -2897,7 +2897,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "GROUP BY Clause",
@@ -2935,7 +2935,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "4c2fdee531aee4d764b829792689751f"
         },
@@ -2974,7 +2974,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "SELECT column_name, COUNT(*) FROM table_name GROUP BY column_name;",
@@ -3012,7 +3012,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "HAVING Clause",
@@ -3050,7 +3050,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "ef76a04b0293269945beb4cb3de2587a"
         },
@@ -3089,7 +3089,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "SELECT column_name, COUNT(*) FROM table_name GROUP BY column_name HAVING condition;",
@@ -3127,7 +3127,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "The SQL tool with the highest user satisfaction.",
@@ -3165,7 +3165,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Example",
@@ -3203,7 +3203,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "GRANT SELECT, INSERT ON employees TO \u2018John Doe\u2019;",
@@ -3241,7 +3241,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "REVOKE SELECT, INSERT ON employees FROM \u2018John Doe\u2019;",
@@ -3279,7 +3279,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Example",
@@ -3317,7 +3317,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "SELECT first_name, last_name FROM customers;",
@@ -3355,7 +3355,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "SELECT * FROM customers WHERE age > 30;",
@@ -3393,7 +3393,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "SELECT * FROM products ORDER BY price DESC;",
@@ -3431,7 +3431,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "SELECT category, COUNT(*) FROM products GROUP BY category;",
@@ -3469,7 +3469,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "SELECT category, COUNT(*) FROM products GROUP BY category HAVING COUNT(*) > 5;",
@@ -3507,7 +3507,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "DBVIS.COM \u0000\u0000",
@@ -3545,7 +3545,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "Joining Commands",
@@ -3583,7 +3583,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "Command",
@@ -3621,7 +3621,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "INNER JOIN",
@@ -3659,7 +3659,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "LEFT JOIN/LEFT OUTER JOIN",
@@ -3697,7 +3697,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "RIGHT JOIN/RIGHT OUTER JOIN",
@@ -3735,7 +3735,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "FULL JOIN/FULL OUTER JOIN",
@@ -3773,7 +3773,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "CROSS JOIN",
@@ -3811,7 +3811,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "SELF JOIN",
@@ -3849,7 +3849,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "NATURAL JOIN",
@@ -3887,7 +3887,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "Description",
@@ -3925,7 +3925,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "Syntax",
@@ -3963,7 +3963,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cd32372851cb5676c6d6b1e457f94e09"
         },
@@ -4002,7 +4002,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "SELECT * FROM table1 INNER JOIN table2 ON table1.column = table2.column;",
@@ -4040,7 +4040,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "c67481ffdfd0b079b85711bcda1b5962"
         },
@@ -4079,7 +4079,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column;",
@@ -4117,7 +4117,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "28816ffe1f74baaf16d794ae789fc225"
         },
@@ -4156,7 +4156,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "SELECT * FROM table1 RIGHT JOIN table2 ON table1.column = table2.column;",
@@ -4194,7 +4194,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "58ab4d3844b6d2b8d3850044e1b40d55"
         },
@@ -4233,7 +4233,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "SELECT * FROM table1 FULL JOIN table2 ON table1.column = table2.column;",
@@ -4271,7 +4271,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "0874bb5cfefbcbafd9021a7dfb68c2b9"
         },
@@ -4310,7 +4310,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "SELECT * FROM table1 CROSS JOIN table2;",
@@ -4348,7 +4348,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cb5ed96809d5fff9d6fa7fdfacf1bdb7"
         },
@@ -4387,7 +4387,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "SELECT * FROM table1 t1, table1 t2 WHERE t1.column = t2.column;",
@@ -4425,7 +4425,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "b3b729b57398f3e645901259f576739e"
         },
@@ -4464,7 +4464,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "SELECT * FROM table1 NATURAL JOIN table2;",
@@ -4502,7 +4502,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "The SQL tool with the highest user satisfaction.",
@@ -4540,7 +4540,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "Example",
@@ -4578,7 +4578,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "SELECT * FROM employees INNER JOIN departments ON employees.department_id = departments.id;",
@@ -4616,7 +4616,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "SELECT * FROM employees LEFT JOIN departments ON employees.department_id = departments.id;",
@@ -4654,7 +4654,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "SELECT * FROM employees RIGHT JOIN departments ON employees.department_id = departments.department_id;",
@@ -4692,7 +4692,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "33694da21d5875051331739dc8140c57"
         },
@@ -4731,7 +4731,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "SELECT * FROM employees CROSS JOIN departments;",
@@ -4769,7 +4769,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "SELECT * FROM employees t1, employees t2 WHERE t1.employee_id = t2.employee_id;",
@@ -4807,7 +4807,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "SELECT * FROM employees NATURAL JOIN departments;",
@@ -4845,7 +4845,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "DBVIS.COM \u0000\u0000",
@@ -4883,7 +4883,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "Subqueries in SQL",
@@ -4921,7 +4921,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "Command",
@@ -4959,7 +4959,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "Description",
@@ -4997,7 +4997,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "Syntax",
@@ -5035,7 +5035,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "IN",
@@ -5073,7 +5073,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4,
             "parent_id": "d25fc518ea45963bf153d63ec5f7e5d0"
         },
@@ -5112,7 +5112,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "SELECT column(s) FROM table WHERE value IN (subquery);",
@@ -5150,7 +5150,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "ANY",
@@ -5188,7 +5188,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4,
             "parent_id": "4bd82d4c2dc8a4dd41e9e9659f288a70"
         },
@@ -5227,7 +5227,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "SELECT column(s) FROM table WHERE value < ANY (subquery);",
@@ -5265,7 +5265,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "ALL",
@@ -5303,7 +5303,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4,
             "parent_id": "3698a19ea4b3aa17bc7c74a625b9e47c"
         },
@@ -5342,7 +5342,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "SELECT column(s) FROM table WHERE value > ALL (subquery);",
@@ -5380,7 +5380,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "Aggregate Functions Commands",
@@ -5418,7 +5418,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "Command",
@@ -5456,7 +5456,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "Description",
@@ -5494,7 +5494,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "Syntax",
@@ -5532,7 +5532,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4,
             "parent_id": "7c65a303277ed988ffb1da2007da2ff5"
         },
@@ -5571,7 +5571,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4,
             "parent_id": "7c65a303277ed988ffb1da2007da2ff5"
         },
@@ -5610,7 +5610,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "SELECT COUNT(column_name) FROM table_name;",
@@ -5648,7 +5648,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4,
             "parent_id": "04eb35dd2f7852a9ecf3fb1f3f499165"
         },
@@ -5687,7 +5687,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4,
             "parent_id": "04eb35dd2f7852a9ecf3fb1f3f499165"
         },
@@ -5726,7 +5726,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "SELECT SUM(column_name) FROM table_name;",
@@ -5764,7 +5764,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4,
             "parent_id": "86f947848dd5bf91a56d940a6870d7ce"
         },
@@ -5803,7 +5803,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4,
             "parent_id": "86f947848dd5bf91a56d940a6870d7ce"
         },
@@ -5842,7 +5842,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "SELECT AVG(column_name) FROM table_name;",
@@ -5880,7 +5880,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4,
             "parent_id": "fe1b752bbbb67854427a526f1325e76c"
         },
@@ -5919,7 +5919,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4,
             "parent_id": "fe1b752bbbb67854427a526f1325e76c"
         },
@@ -5958,7 +5958,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "SELECT MIN(column_name) FROM table_name;",
@@ -5996,7 +5996,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4,
             "parent_id": "66a8038904a5d56bf55e4db1fc0f96df"
         },
@@ -6035,7 +6035,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4,
             "parent_id": "66a8038904a5d56bf55e4db1fc0f96df"
         },
@@ -6074,7 +6074,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "SELECT MAX(column_name) FROM table_name;",
@@ -6112,7 +6112,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "The SQL tool with the highest user satisfaction.",
@@ -6150,7 +6150,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "Example",
@@ -6188,7 +6188,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "SELECT * FROM customers WHERE city IN (SELECT city FROM suppliers);",
@@ -6226,7 +6226,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "SELECT * FROM products WHERE price < ANY (SELECT unit_price FROM supplier_products);",
@@ -6264,7 +6264,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "SELECT * FROM orders WHERE order_amount > ALL (SELECT total_amount FROM previous_orders);",
@@ -6302,7 +6302,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "Example",
@@ -6340,7 +6340,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "SELECT COUNT(age) FROM employees;",
@@ -6378,7 +6378,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "SELECT SUM(revenue) FROM sales;",
@@ -6416,7 +6416,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "SELECT AVG(price) FROM products;",
@@ -6454,7 +6454,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "SELECT MIN(price) FROM products;",
@@ -6492,7 +6492,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "SELECT MAX(price) FROM products;",
@@ -6530,7 +6530,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 4
         },
         "text": "DBVIS.COM \u0000\u0000",
@@ -6568,7 +6568,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "String Functions in SQL",
@@ -6606,7 +6606,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "Command",
@@ -6644,7 +6644,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5,
             "parent_id": "330146d8359ea87b4cfce6cc71d91095"
         },
@@ -6683,7 +6683,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5,
             "parent_id": "330146d8359ea87b4cfce6cc71d91095"
         },
@@ -6722,7 +6722,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5,
             "parent_id": "330146d8359ea87b4cfce6cc71d91095"
         },
@@ -6761,7 +6761,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5,
             "parent_id": "330146d8359ea87b4cfce6cc71d91095"
         },
@@ -6800,7 +6800,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5,
             "parent_id": "330146d8359ea87b4cfce6cc71d91095"
         },
@@ -6839,7 +6839,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5,
             "parent_id": "330146d8359ea87b4cfce6cc71d91095"
         },
@@ -6878,7 +6878,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5,
             "parent_id": "330146d8359ea87b4cfce6cc71d91095"
         },
@@ -6917,7 +6917,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5,
             "parent_id": "330146d8359ea87b4cfce6cc71d91095"
         },
@@ -6956,7 +6956,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5,
             "parent_id": "330146d8359ea87b4cfce6cc71d91095"
         },
@@ -6995,7 +6995,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "Description",
@@ -7033,7 +7033,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "Syntax",
@@ -7071,7 +7071,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5,
             "parent_id": "ee05f2c1c5d3f7c9368cd6cdc01bcbe6"
         },
@@ -7110,7 +7110,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "SELECT CONCAT(string1, string2, \u0000\u0000\u0000) AS concatenated_string FROM table_name;",
@@ -7148,7 +7148,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5,
             "parent_id": "cf52110fd39dacd02b186c87ca145357"
         },
@@ -7187,7 +7187,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "SELECT SUBSTRING(string FROM start_position [FOR length]) AS substring FROM table_name;",
@@ -7225,7 +7225,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5,
             "parent_id": "92d82a2c893217cd1f5ae47b1bd302ad"
         },
@@ -7264,7 +7264,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "SELECT CHAR_LENGTH(string) AS length FROM table_name;",
@@ -7302,7 +7302,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5,
             "parent_id": "a19f5665470f0f5ab20cebeaba1eb798"
         },
@@ -7341,7 +7341,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "SELECT UPPER(string) AS uppercase_string FROM table_name;",
@@ -7379,7 +7379,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5,
             "parent_id": "9e6507110fe6b1e3b54daceaab97916c"
         },
@@ -7418,7 +7418,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "SELECT LOWER(string) AS lowercase_string FROM table_name;",
@@ -7456,7 +7456,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5,
             "parent_id": "683f81835f203a7ce1071079f32272a2"
         },
@@ -7495,7 +7495,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5,
             "parent_id": "683f81835f203a7ce1071079f32272a2"
         },
@@ -7534,7 +7534,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5,
             "parent_id": "683f81835f203a7ce1071079f32272a2"
         },
@@ -7573,7 +7573,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "SELECT LEFT(string, num_characters) AS left_string FROM table_name;",
@@ -7611,7 +7611,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5,
             "parent_id": "0deae69c22724ed49c775a01017fcea2"
         },
@@ -7650,7 +7650,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "SELECT RIGHT(string, num_characters) AS right_string FROM table_name;",
@@ -7688,7 +7688,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "The REPLACE command replaces occurrences of a substring within a string.",
@@ -7726,7 +7726,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "SELECT REPLACE(string, old_substring, new_substring) AS replaced_string FROM table_name;",
@@ -7764,7 +7764,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "The SQL tool with the highest user satisfaction.",
@@ -7802,7 +7802,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "Example",
@@ -7840,7 +7840,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "SELECT CONCAT(first_name, ' ', last_name) AS full_name FROM employees;",
@@ -7878,7 +7878,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "SELECT SUBSTRING(product_name FROM 1 FOR 5) AS substring FROM products;",
@@ -7916,7 +7916,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "SELECT CHAR_LENGTH(product_name) AS length FROM products;",
@@ -7954,7 +7954,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "SELECT UPPER(first_name) AS uppercase_first_name FROM employees;",
@@ -7992,7 +7992,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "SELECT LOWER(last_name) AS lowercase_last_name FROM employees;",
@@ -8030,7 +8030,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "SELECT TRIM(TRAILING ' ' FROM full_name) AS trimmed_full_name FROM customers;",
@@ -8068,7 +8068,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "SELECT LEFT(product_name, 5) AS left_product_name FROM products;",
@@ -8106,7 +8106,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "SELECT RIGHT(order_number, 4) AS right_order_number FROM orders;",
@@ -8144,7 +8144,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "SELECT REPLACE(description, 'old_string', 'new_string') AS replaced_description FROM product_descriptions;",
@@ -8182,7 +8182,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 5
         },
         "text": "DBVIS.COM \u0000\u0000",
@@ -8220,7 +8220,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "Date and Time SQL Commands",
@@ -8258,7 +8258,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "Command",
@@ -8296,7 +8296,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "Description",
@@ -8334,7 +8334,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "Syntax",
@@ -8372,7 +8372,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "2ea90c4dde6ee98a62534f4b49857cfb"
         },
@@ -8411,7 +8411,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "2ea90c4dde6ee98a62534f4b49857cfb"
         },
@@ -8450,7 +8450,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "SELECT CURRENT_DATE() AS current_date;",
@@ -8488,7 +8488,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "a0a80613702d51488d217d1afea52faa"
         },
@@ -8527,7 +8527,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "a0a80613702d51488d217d1afea52faa"
         },
@@ -8566,7 +8566,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "SELECT CURRENT_TIME() AS current_time;",
@@ -8604,7 +8604,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "2e9d2395bdc97348b221c443de9e4334"
         },
@@ -8643,7 +8643,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "2e9d2395bdc97348b221c443de9e4334"
         },
@@ -8682,7 +8682,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "SELECT CURRENT_TIMESTAMP() AS current_timestamp;",
@@ -8720,7 +8720,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "887085b033a76cb586ac94d8f387a994"
         },
@@ -8759,7 +8759,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "887085b033a76cb586ac94d8f387a994"
         },
@@ -8798,7 +8798,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "SELECT DATE_PART('part', date_expression) AS extracted_part;",
@@ -8836,7 +8836,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "ac57b9add16e9a5eb57f71fda6982102"
         },
@@ -8875,7 +8875,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "ac57b9add16e9a5eb57f71fda6982102"
         },
@@ -8914,7 +8914,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "SELECT DATE_ADD(date_expression, INTERVAL value unit) AS new_date;",
@@ -8952,7 +8952,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "6d780edc3fd304effb7612ca374e9c5c"
         },
@@ -8991,7 +8991,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "6d780edc3fd304effb7612ca374e9c5c"
         },
@@ -9030,7 +9030,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "SELECT EXTRACT(part FROM date_expression) AS extracted_part;",
@@ -9068,7 +9068,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "fcf8fe68259ece0024346af527427328"
         },
@@ -9107,7 +9107,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "fcf8fe68259ece0024346af527427328"
         },
@@ -9146,7 +9146,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "SELECT TO_CHAR(date_expression, 'format') AS formatted_date;",
@@ -9184,7 +9184,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "75687476c28c9fe8a4ade9ad08dfd838"
         },
@@ -9223,7 +9223,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "75687476c28c9fe8a4ade9ad08dfd838"
         },
@@ -9262,7 +9262,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "SELECT TIMESTAMPDIFF(unit, timestamp1, timestamp2) AS difference;",
@@ -9300,7 +9300,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "86d3d54568b4a4848183737f2af941e4"
         },
@@ -9339,7 +9339,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "86d3d54568b4a4848183737f2af941e4"
         },
@@ -9378,7 +9378,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "SELECT DATEDIFF(date1, date2) AS difference_in_days;",
@@ -9416,7 +9416,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "The SQL tool with the highest user satisfaction.",
@@ -9454,7 +9454,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "Example",
@@ -9492,7 +9492,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "228f009d24e5a7f4d301f6b86b9fe566"
         },
@@ -9531,7 +9531,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "228f009d24e5a7f4d301f6b86b9fe566"
         },
@@ -9570,7 +9570,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6,
             "parent_id": "228f009d24e5a7f4d301f6b86b9fe566"
         },
@@ -9609,7 +9609,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "SELECT DATE_PART('year', '2024-04-11') AS extracted_part;",
@@ -9647,7 +9647,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "\u0000\u0000 DATE_ADD Example SELECT DATE_ADD('2024-04-11', INTERVAL 1 DAY) AS new_date;",
@@ -9685,7 +9685,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "\u0000\u0000 DATE_SUB Example SELECT DATE_SUB('2024-04-11', INTERVAL 1 DAY) AS new_date;",
@@ -9723,7 +9723,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "SELECT EXTRACT(YEAR FROM '2024-04-11') AS extracted_part;",
@@ -9761,7 +9761,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "SELECT TO_CHAR('2024-04-11', 'YYYY-MM-DD') AS formatted_date;",
@@ -9799,7 +9799,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "SELECT TIMESTAMPDIFF(DAY, '2024-04-10', '2024-04-11') AS difference;",
@@ -9837,7 +9837,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "SELECT DATEDIFF('2024-04-11', '2024-04-10') AS difference_in_days;",
@@ -9875,7 +9875,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 6
         },
         "text": "DBVIS.COM \u0000\u0000",
@@ -9913,7 +9913,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "Conditional Expressions",
@@ -9951,7 +9951,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "Command",
@@ -9989,7 +9989,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "CASE Statement",
@@ -10027,7 +10027,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "IF() Function",
@@ -10065,7 +10065,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "COALESCE() Function",
@@ -10103,7 +10103,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "NULLIF() Function",
@@ -10141,7 +10141,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "Description",
@@ -10179,7 +10179,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "Syntax",
@@ -10217,7 +10217,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7,
             "parent_id": "9e01e25b22a027270582bb059c62f7a0"
         },
@@ -10256,7 +10256,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "SELECT",
@@ -10294,7 +10294,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "column1, column2, CASE",
@@ -10332,7 +10332,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "WHEN condition1",
@@ -10370,7 +10370,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "THEN result1",
@@ -10408,7 +10408,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "WHEN condition2",
@@ -10446,7 +10446,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "THEN result2 ELSE",
@@ -10484,7 +10484,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "default_result",
@@ -10522,7 +10522,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "END AS alias FROM table_name;",
@@ -10560,7 +10560,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7,
             "parent_id": "01ab6d4f05f4f1623f71b5f5eadf85bf"
         },
@@ -10599,7 +10599,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "SELECT IF(condition, true_value, false_value) AS alias FROM table_name;",
@@ -10637,7 +10637,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7,
             "parent_id": "9c49a380db199ca18021dd2a5c371be0"
         },
@@ -10676,7 +10676,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "SELECT COALESCE(value1, value2, \u0000\u0000\u0000) AS alias FROM table_name;",
@@ -10714,7 +10714,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7,
             "parent_id": "0e0648d3424eb2d0dd885ecd38234ef6"
         },
@@ -10753,7 +10753,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "SELECT NULLIF(expression1, expression2) AS alias FROM table_name;",
@@ -10791,7 +10791,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "The SQL tool with the highest user satisfaction.",
@@ -10829,7 +10829,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "Example",
@@ -10867,7 +10867,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "SELECT",
@@ -10905,7 +10905,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "order_id, total_amount, CASE",
@@ -10943,7 +10943,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "WHEN total_amount",
@@ -10981,7 +10981,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "> 1000 THEN 'High Value Order'",
@@ -11019,7 +11019,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "WHEN total_amount",
@@ -11057,7 +11057,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "> 500 THEN 'Medium Value Order'",
@@ -11095,7 +11095,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "ELSE 'Low Value",
@@ -11133,7 +11133,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "Order'",
@@ -11171,7 +11171,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "END AS order_status",
@@ -11209,7 +11209,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "FROM orders;",
@@ -11247,7 +11247,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "SELECT",
@@ -11285,7 +11285,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7,
             "parent_id": "33d874b0cf3a132e48c252fa3e4084dc"
         },
@@ -11324,7 +11324,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "'Senior', 'Junior') AS employee_category FROM employees;",
@@ -11362,7 +11362,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "SELECT",
@@ -11400,7 +11400,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7,
             "parent_id": "5d9b82c6a6d3dc0539871819a47e248d"
         },
@@ -11439,7 +11439,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "middle_name) AS preferred_name FROM employees;",
@@ -11477,7 +11477,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "SELECT NULLIF(total_amount, discounted_amount) AS diff_amount FROM orders;",
@@ -11515,7 +11515,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 7
         },
         "text": "DBVIS.COM \u0000\u0000",
@@ -11553,7 +11553,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "Set Operations",
@@ -11591,7 +11591,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "Command",
@@ -11629,7 +11629,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "Description",
@@ -11667,7 +11667,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "Syntax",
@@ -11705,7 +11705,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "Example",
@@ -11743,7 +11743,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "UNION",
@@ -11781,7 +11781,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8,
             "parent_id": "823c0a9be8a16b2f9ce50d943f8a8cf4"
         },
@@ -11820,7 +11820,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "SELECT column1, column2 FROM table1 UNION SELECT column1, column2 FROM table2;",
@@ -11858,7 +11858,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "SELECT first_name, last_name FROM customers UNION SELECT first_name, last_name FROM employees;",
@@ -11896,7 +11896,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "INTERSECT",
@@ -11934,7 +11934,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8,
             "parent_id": "ad5060bdd19dbb5d8373939b0633380f"
         },
@@ -11973,7 +11973,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "SELECT column1, column2 FROM table1 INTERSECT SELECT column1, column2 FROM table2;",
@@ -12011,7 +12011,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "SELECT first_name, last_name FROM customers INTERSECT SELECT first_name, last_name FROM employees;",
@@ -12049,7 +12049,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "EXCEPT",
@@ -12087,7 +12087,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8,
             "parent_id": "6a9048468ab82d4fa75a3fbdbd4c2311"
         },
@@ -12126,7 +12126,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "SELECT column1, column2 FROM table1 EXCEPT SELECT column1, column2 FROM table2;",
@@ -12164,7 +12164,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "SELECT first_name, last_name FROM customers EXCEPT SELECT first_name, last_name FROM employees;",
@@ -12202,7 +12202,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "Transaction Control Commands",
@@ -12240,7 +12240,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "Command",
@@ -12278,7 +12278,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "Description",
@@ -12316,7 +12316,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "Syntax",
@@ -12354,7 +12354,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "Example",
@@ -12392,7 +12392,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "COMMIT",
@@ -12430,7 +12430,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8,
             "parent_id": "7d2af77add4e7fda182a6792e61a3503"
         },
@@ -12469,7 +12469,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8,
             "parent_id": "7d2af77add4e7fda182a6792e61a3503"
         },
@@ -12508,7 +12508,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8,
             "parent_id": "7d2af77add4e7fda182a6792e61a3503"
         },
@@ -12547,7 +12547,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "\u0000\u0000 SQL statements and changes within the transaction",
@@ -12585,7 +12585,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8,
             "parent_id": "7033164cd30bb4ceebf6db3a2dfdfae2"
         },
@@ -12624,7 +12624,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8,
             "parent_id": "7033164cd30bb4ceebf6db3a2dfdfae2"
         },
@@ -12663,7 +12663,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "ROLLBACK",
@@ -12701,7 +12701,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8,
             "parent_id": "aeb6ac3e60298e09d9448f80dc7ab9f5"
         },
@@ -12740,7 +12740,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8,
             "parent_id": "aeb6ac3e60298e09d9448f80dc7ab9f5"
         },
@@ -12779,7 +12779,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8,
             "parent_id": "aeb6ac3e60298e09d9448f80dc7ab9f5"
         },
@@ -12818,7 +12818,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "\u0000\u0000 SQL statements and changes within the transaction",
@@ -12856,7 +12856,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8,
             "parent_id": "2a41a6c94520f1202474d917432c08e2"
         },
@@ -12895,7 +12895,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8,
             "parent_id": "2a41a6c94520f1202474d917432c08e2"
         },
@@ -12934,7 +12934,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "The SQL tool with the highest user satisfaction.",
@@ -12972,7 +12972,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 8
         },
         "text": "DBVIS.COM \u0000\u0000",
@@ -13010,7 +13010,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "SAVEPOINT",
@@ -13048,7 +13048,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "ROLLBACK TO SAVEPOINT",
@@ -13086,7 +13086,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "SET TRANSACTION",
@@ -13124,7 +13124,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9,
             "parent_id": "b2f4aab49ee4762bb3772b7b2f443fce"
         },
@@ -13163,7 +13163,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "SAVEPOINT savepoint_n ame;",
@@ -13201,7 +13201,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9,
             "parent_id": "5baf9ac056f433af9333f1fa74b26da3"
         },
@@ -13240,7 +13240,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "INSERT INTO employees (name, age) VALUES ('Carol', 28);",
@@ -13278,7 +13278,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "SAVEPOINT before_update;",
@@ -13316,7 +13316,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "UPDATE products SET price = 40.00 WHERE category = 'Electronics';",
@@ -13354,7 +13354,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "SAVEPOINT after_update;",
@@ -13392,7 +13392,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "DELETE FROM customers WHERE age > 60;",
@@ -13430,7 +13430,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "ROLLBACK TO before_update;",
@@ -13468,7 +13468,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9,
             "parent_id": "fd48b2a68fa4218671271895600756f6"
         },
@@ -13507,7 +13507,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9,
             "parent_id": "fd48b2a68fa4218671271895600756f6"
         },
@@ -13546,7 +13546,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9,
             "parent_id": "fd48b2a68fa4218671271895600756f6"
         },
@@ -13585,7 +13585,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "ROLLBACK TO SAVEPOINT savepoint_n ame;",
@@ -13623,7 +13623,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9,
             "parent_id": "34484a2d8f42a2aa2eaf02714551a256"
         },
@@ -13662,7 +13662,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "INSERT INTO employees (name, age) VALUES ('David', 42);",
@@ -13700,7 +13700,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "SAVEPOINT before_update;",
@@ -13738,7 +13738,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "UPDATE products SET price = 50.00 WHERE category = 'Electronics';",
@@ -13776,7 +13776,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "SAVEPOINT after_update;",
@@ -13814,7 +13814,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "DELETE FROM customers WHERE age > 60;",
@@ -13852,7 +13852,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "\u0000\u0000 Rollback to the savepoint before the update ROLLBACK TO SAVEPOINT before_update;",
@@ -13890,7 +13890,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9,
             "parent_id": "074ad1e92282079670fa2f98813f1458"
         },
@@ -13929,7 +13929,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9,
             "parent_id": "074ad1e92282079670fa2f98813f1458"
         },
@@ -13968,7 +13968,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9,
             "parent_id": "074ad1e92282079670fa2f98813f1458"
         },
@@ -14007,7 +14007,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9,
             "parent_id": "074ad1e92282079670fa2f98813f1458"
         },
@@ -14046,7 +14046,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9,
             "parent_id": "074ad1e92282079670fa2f98813f1458"
         },
@@ -14085,7 +14085,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9,
             "parent_id": "074ad1e92282079670fa2f98813f1458"
         },
@@ -14124,7 +14124,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "\u0000\u0000 SQL statements and changes within the transaction",
@@ -14162,7 +14162,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9,
             "parent_id": "b144a66109abda15eff65ae7c7a1e887"
         },
@@ -14201,7 +14201,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9,
             "parent_id": "b144a66109abda15eff65ae7c7a1e887"
         },
@@ -14240,7 +14240,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "The SQL tool with the highest user satisfaction.",
@@ -14278,7 +14278,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:08",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 9
         },
         "text": "DBVIS.COM \u0000\u0000",

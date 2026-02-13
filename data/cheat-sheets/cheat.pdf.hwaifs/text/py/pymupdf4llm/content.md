@@ -5,11 +5,13 @@ Definitions Series
 
 
 
-f (n) = O(g(n)) iff ∃ positive c, n0 such that
+f (n) = O(g(n)) iff positive c, n0 such that
+∃
 0 f (n) cg(n) n n0.
 ≤ ≤ ∀ ≥
 
-f (n) = Ω(g(n)) iff ∃ positive c, n0 such that
+f (n) = Ω(g(n)) iff positive c, n0 such that
+∃
 f (n) cg(n) 0 n n0.
 ≥ ≥ ∀ ≥
 
@@ -19,8 +21,8 @@ f (n) = Ω(g(n)).
 
 f (n) = o(g(n)) iff limn→∞ f (n)/g(n) = 0.
 
-lim iff ǫ > 0, n0 such that
-n→∞ [a][n][ =][ a] an ∀ a < ǫ, ∃n n0.
+lim [=][ a] iff ǫ  - 0, n0 such that
+n→∞ [a][n] an ∀ a < ǫ, ∃n n0.
 |                 - | ∀ ≥
 
 sup S least b ∈ R such that b ≥ s,
@@ -30,11 +32,8 @@ inf S greatest b ∈ R such that b ≤
 s, ∀s ∈ S.
 
 lim inf lim
-n→∞ [a][n] n→∞ [inf][{][a][i][ |][ i][ ≥] [n, i][ ∈] [N][}][.]
-
-
-
-Hn =
+n n
+→∞ [a][n] →∞ [inf][{][a][i] [|][ i][ ≥] [n, i][ ∈] [N][}][.]
 
 
 
@@ -281,7 +280,49 @@ i [,]
 
 
 lim sup lim
-n→∞ [a][n] n→∞ [sup][{][a][i][ |][ i][ ≥] [n, i][ ∈] [N][}][.]
+n→∞� - [a][n] n→∞ [sup][{][a][i] [|][ i][ ≥] [n, i][ ∈] [N][}][.]
+
+nk Combinations: Size k subsets of a size n set.
+
+  -  nk Stirling numbers (1st kind):
+Arrangements of an n element set into k cycles.
+
+ -  nk Stirling numbers (2nd kind):
+Partitions of an n element
+set into k non-empty sets.
+
+  -  nk 1st order Eulerian numbers:
+Permutations π1π2 . . . πn on
+{1, 2, . . ., n} with k ascents.
+�� ��
+nk 2nd order Eulerian numbers.
+
+Cn Catalan Numbers: Binary
+trees with n + 1 vertices.
+
+
+
+k=0�
+
+n
+10.
+k
+
+  n
+12.
+2
+
+
+
+
+- n
+= 2 [n][−][1] 1, 13.
+
+   - k
+
+
+
+Hn =
 
 
 
@@ -300,27 +341,14 @@ m + 1
 
 �n
 
-
-i=1
-
-
-
-
- - n
-k
-
-
-
-k Combinations: Size k sub
-sets of a size n set.
-
-- nk Stirling numbers (1st kind):
-
+Hi = (n + 1)Hn n,
+i=1 
 
 
 �n
 
-i=1 Hi = (n + 1)Hn − n,
+
+i=1
 
 
 
@@ -347,18 +375,6 @@ n!
 - - − 
 
 
-
-= [n]
-
-
-
-
-n − 1
-
-- k −�1
-
-
-
 �n
 
 
@@ -377,6 +393,13 @@ k
 
 
 
+n − 1
+
+- k −�1
+
+
+
+
 , 7.
 
 
@@ -390,32 +413,7 @@ k=0
 
 
 
-- n
-k
-
-
-
-Stirling numbers (1st kind):
-Arrangements of an n element set into k cycles.
-
-
-
-��
-m
-k
-
-
-
-k Stirling numbers (2nd kind):
-
-Partitions of an n element
-set into k non-empty sets.
-
-- nk 1st order Eulerian numbers:
-
-
-
-8.
+= [n]
 
 
 
@@ -433,6 +431,12 @@ k
 ��
 n − k
 m − k
+
+
+
+��
+m
+k
 
 
 
@@ -525,16 +529,11 @@ n
 
 
 
-k 1st order Eulerian numbers:
-
-Permutations π1π2 . . . πn on
-{1, 2, . . ., n} with k ascents.
-�� ��
-nk 2nd order Eulerian numbers.
-
-
-
 �n
+
+
+
+8.
 
 
 
@@ -584,40 +583,11 @@ n
 
 
 
-2nd order Eulerian numbers.
-
-
-
-k=0�
-
-n
-10.
-k
-
-  n
-12.
-2
-
-
-
 
 - n 1
 +  k 1
 
  -  - −�
-
-
-
-Cn Catalan Numbers: Binary
-trees with n + 1 vertices.
-
-
-
-
-- n
-= 2 [n][−][1] 1, 13.
-
-   - k
 
 
 
@@ -1575,10 +1545,14 @@ Note that Ti is always a power of two.
 Let ti = log2 Ti. Then we have
 ti+1 = 2 [i] + 2ti, t1 = 1.
 
+
 Let ui = ti/2 [i] . Dividing both sides of
 the previous equation by 2 [i][+1] we get
 ti+1 2 [i]
-2 [i][+1][ =] 2 [i][+1][ +][ t] 2 [i][i][ .]
+
+[t][i]
+
+2 [i][+1] [=] 2 [i][+1] [+] 2 [i][ .]
 
 
 
@@ -1607,8 +1581,8 @@ history ones (example): Consider
 
 
 Let m = log2 n. Summing the left side
-we get T (n) − 3 [m] T (1) = T (n) − 3 [m] =
-T (n) − n [k] where k = log2 3 ≈ 1.58496.
+we get T (n) - 3 [m] T (1) = T (n) - 3 [m] =
+T (n) - n [k] where k = log2 3 ≈ 1.58496.
 Summing the right side we get
 m�−1 n m�−1     -     
 
@@ -1632,8 +1606,12 @@ m�−1
 
 
 
-3 �i
+i=0
 
+
+
+
+- 3 �i
 2 .
 
 
@@ -1642,17 +1620,10 @@ i=0
 
 
 
-
-3
-
-
-
-i=0
-
-
-
 n
-2 [i][ 3][i][ =][ n]
+
+[=][ n]
+2 [i][ 3][i]
 
 
 
@@ -1660,7 +1631,7 @@ Let c = [3]
 
 
 
-2 [. Then we have]
+2 [.] [Then] [we] [have]
 
 
 
@@ -1698,17 +1669,11 @@ n
 
 m�−1 - cm 1
 
-c [i] = n   
-c 1
-
+c [i] = n   c 1
 i=0 
 
 
 m�−1
-
-
-
-c − 1
 
 
 
@@ -1720,7 +1685,7 @@ c − 1
 
 
 
-We choose G(x) = [�] i 0 [x][i][g][i][. Rewrite]
+We choose G(x) = [�] i 0 [x][i][g][i][.] [Rewrite]
 ≥
 in terms of G(x):
 
@@ -1755,9 +1720,9 @@ x 1 x [.]
         
 
 
-2 [i]
+2 [i] [t][i]
 
-2 [i][+1][ +][ t] 2 [i]
+2 [i][+1] [+] 2
 
 
 
@@ -1885,8 +1850,8 @@ i≥0
 
 
 
-Ti+1 − Ti = 1 +
-
+Ti+1 Ti = 1 +
+  
 
 = Ti.
 
@@ -1895,7 +1860,9 @@ Ti+1 − Ti = 1 +
 �i
 
 Tj 1
-j=0 - 
+
+  -   j=0
+
 
 
 �i−1
@@ -1919,8 +1886,9 @@ And so Ti+1 = 2Ti = 2 [i][+1] .
 
 
 
-So gi = 2 [i] - 1.
+So gi = 2 [i] 1.
 
+   
 
 Theoretical Computer Science Cheat Sheet
 
@@ -1946,9 +1914,10 @@ i 2 [i] pi General Probability
 
 
 
-1 2 2 Bernoulli Numbers (Bi = 0, odd i ̸= 1):
+1 2 2 Bernoulli Numbers (Bi = 0, odd i = 1):
+̸
 
-2 4 3 B0 = 1, B1 = − 2 [1] [,][ B][2][ =][ 1] 6 [,][ B][4][ =][ −] 30 [1] [,]
+2 4 3 B0 = 1, B1 = − 2 [1] [,] [B][2] [=] 6 [1] [,] [B][4] [=][ −] 30 [1] [,]
 
 
 
@@ -1969,17 +1938,17 @@ a
 
 
 
-2 [,][ B][2][ =][ 1] 6
+2 [,] [B][2] [=] 6 [1]
 
 [1]
 
 
 
-6 [,][ B][4][ =][ −] 30 [1]
+6 [1] [,] [B][4] [=][ −] 30 [1]
 
 
 
-= 1,B6 = B4211 = [,][ B] - [8][ =] 2 [,][ −][ B][2] 30 [1][ =][,][ B][ 1] 6 [10][,][ B][ =][4][ =] 665 [ −][.] 30 [,]
+B= 1,6 =B4211 [,] = [B] - [8] [=] 2 [,][ −][B][2] 30 [1][=][,] [B] 6 [10][,] [B][=][4] [=] 665 [ −][.] 30 [,]
 
 
 
@@ -1997,8 +1966,7 @@ Pr[a < X < b] =
 
 
 
-5
-30 [1] [,][ B][10][ =] 66 [.]
+30 [1] [,] [B][10] [=] 665 [.]
 
 
 
@@ -2085,19 +2053,23 @@ e = 1 + [1]
 
 
 
-[1]
+[1] [1]
 
-2 [+][ 1] 6
-
-
-
-
-[ 1] 6 [+][ 1]
+2 [+] 6
 
 
 
 
-[ 1] 24 [+] 1201 [+][ · · ·]
+[1] [1]
+
+6 [+]
+
+
+
+
+[1] 1
+
+24 [+] 120 [+][ · · ·]
 
  
 
@@ -2139,11 +2111,7 @@ n
 �1 + n [1] �n < e < �1 + n [1] �n+1� .
 
  - �n e
-1 + [1] = e
-
-[+ 11][e]
-
-[O]
+1 + [1] = e [+] [11][e] [O]
 
 
 
@@ -2170,31 +2138,13 @@ x
 
 
 
-�n e
-n [1] = e − 2n
-
-
-
-
-   
-[e] 1
-
-24n [2][ −] [O] n [3]
-
-
-
-e
-
-2n [+ 11] 24n [e]
-
-
-
-n [3]
-
-
-
 
 .
+
+
+
+�n e
+n [1] = e − 2n [+] 24 [11] n [e]
 
 
 
@@ -2207,38 +2157,65 @@ Harmonic numbers:
 
 
 
+
+   
+[11][e] 1
+
+24n [2] n [3]
+
+[−] [O]
+
+
+
 1, [3]
 
 
 
-6 [,][ 25] 12
+
+[25]
+6 [,] 12
 
 
 
 
-[3]
+[3] [11]
 
-2 [,][ 11] 6
-
-
-
-12 [,][ 137] 60
+2 [,] 6
 
 
 
-60 [,][ 49] 20
+
+[25] [137]
+
+12 [,] 60
 
 
 
-20 [,][ 363] 140
+
+[137] [49]
+
+60 [,] 20
 
 
 
-140 [,][ 761] 280
+
+[49] [363]
+
+20 [,] 140
 
 
 
-280 [,][ 7129] 2520
+
+[363] [761]
+
+140 [,] 280
+
+
+
+
+[761] [7129]
+
+280 [,] 2520
 
 
 
@@ -2271,16 +2248,8 @@ ln n < Hn < ln n + 1,
 
 
 
- σ =
-
-
-
-
       1
 Hn = ln n + γ + O
-
-
-
 n
 
 
@@ -2297,8 +2266,8 @@ Factorial, Stirling’s approximation:
 
 
 
-σ = VAR[X].
 
+     σ = VAR[X].
 For events A and B:
 Pr[A ∨ B] = Pr[A] + Pr[B] − Pr[A ∧ B]
 
@@ -2315,14 +2284,8 @@ Pr[A B] = [Pr[][A][ ∧] [B][]]
 
 
 
-  n
-2πn
-
-
-
-n! = √
-
-
+    
+n! = √2πn n
 
 e
 
@@ -2330,7 +2293,6 @@ e
 
 �n� - 1 ��
 1 + Θ .
-
 n
 
 
@@ -2351,7 +2313,7 @@ if X and Y are independent.
 
 Pr[B]
 For random variables X and Y :
-E[X · Y ] = E[X] · E[Y ],
+E[X  - Y ] = E[X] · E[Y ],
 
 
 
@@ -2536,7 +2498,8 @@ Moment inequalities:
 
 
 ��� ��   Pr X E[X] λ σ
-   - ≥   - ≤ λ [1][2]
+
+  - ≥   - ≤ λ [1][2]
 
 
 
@@ -2594,8 +2557,8 @@ C
 Multiplication:
 
 
-C = A · B, ci,j =
-
+C = A B, ci,j =
+              
 
 
 
@@ -2728,22 +2691,24 @@ tan a = [sin][ a]
 
 
 
-cot a = [cos][ a]
+
+[A] cot a = [cos][ a]
+
 B [,] sin a
 
 
 
 
-[sin][ a]
+[sin][ a] [A]
 
-cos a [=][ A] B
-
-
+cos a [=] B
 
 
-[cos][ a]
 
-sin a [=][ B] A
+
+[cos][ a] [B]
+
+sin a [=] A
 
 
 
@@ -2753,6 +2718,14 @@ A [.]
 
 .
 2 sin C
+
+
+
+aei + bfg + cdh
+=
+
+      - ceg − fha − ibd.
+Permanents:
 
 
 
@@ -2784,6 +2757,22 @@ A + B + C [.]
 
 Identities:
 
+
+
+sa = s a,
+   sb = s b,
+   
+sc = s c.
+   
+
+
+�n
+
+ai,π(i).
+i=1
+
+
+
 1 1
 sin x = cos x =
 csc x [,] sec x [,]
@@ -2794,20 +2783,11 @@ cot x [,]
 
 1 + tan [2] x = sec [2] x, 1 + cot [2] x = csc [2] x,
 
+     -      sin x = cos π2, sin x = sin(π x),
 
-
-aei + bfg + cdh
-=
-
-      - ceg − fha − ibd.
-Permanents:
-
-
-
-sa = s − a,
-sb = s − b,
-
-sc = s − c.
+[−] [x]             -             -             
+cos x = cos(π x), tan x = cot π2,
+   -    - [−] [x]
 
 
 
@@ -2816,13 +2796,6 @@ sc = s − c.
 
 
 π
-
-
-
-�n
-
-ai,π(i).
-i=1
 
 
 
@@ -2855,39 +2828,21 @@ More identities:
 
 
 
-
-
-
-
-
-
-
-
-
-1 cos x
- -,
+1 − cos x
 
 2
 
+1 + cos x
 
 
-1 − cos x
+
+,
+2
 
 
 
 sin [x] 2 [=]
 
-
-
-cos [x] 2 [=]
-
-
-
-
-   
-π2, sin x = sin(π x),
-
-[−] [x]  
 
 
 tanh x = [e][x][ −] [e][−][x]
@@ -2902,55 +2857,19 @@ e [x] + e [−][x][,] sinh x [,]
 
 
 
-
-     sin x = cos π
-
+cos [x] 2 [=]
 
 
-1 + cos x
 
 ,
 2
 
 
 
-1 + cos x
-
-
-
-
-                    cos x = cos(π x), tan x = cot π2
-   -    
-
-
 1 1
 sech x = coth x =
 cosh x [,] tanh x [.]
 
-
-
-Identities:
-
-cosh [2] x − sinh [2] x = 1, tanh [2] x + sech [2] x = 1,
-
-coth [2] x − csch [2] x = 1, sinh(−x) = − sinh x,
-
-cosh(−x) = cosh x, tanh(−x) = − tanh x,
-
-sinh(x + y) = sinh x cosh y + cosh x sinh y,
-
-
-cosh(x + y) = cosh x cosh y + sinh x sinh y,
-
-
-sinh 2x = 2 sinh x cosh x,
-
-
-cosh 2x = cosh [2] x + sinh [2] x,
-
-cosh x + sinh x = e [x], cosh x − sinh x = e [−][x],
-
-(cosh x + sinh x) [n] = cosh nx + sinh nx, n ∈ Z,
 
 
 
@@ -2965,14 +2884,6 @@ tan [x] 2 [=]
 
 cot x = cot(π x), csc x = cot [x] 2
    -    
-
-
-
-   
-π2,
-
-[−] [x]
-
 
 
 2
@@ -3003,10 +2914,6 @@ sin x
 
 
 
-
-
-
-
 tan(x y) = [tan][ x][ ±][ tan][ y]
 ± 1 tan x tan
 
@@ -3017,9 +2924,10 @@ cot(x y) = [cot][ x][ cot][ y][ ∓] [1]
 
 
 
+
 1 + cos x
 1 cos x [,]
- 
+  
 
 
 1 tan x tan y [,]
@@ -3092,12 +3000,37 @@ cos x = [e][ix][ +][ e][−][ix]
 
 
 
+Identities:
 
-[ x] 2 [= cosh][ x][ −] [1][,] 2 cosh [2][ x] 2
+cosh [2] x − sinh [2] x = 1, tanh [2] x + sech [2] x = 1,
+
+coth [2] x − csch [2] x = 1, sinh(−x) = − sinh x,
+
+cosh(−x) = cosh x, tanh(−x) = − tanh x,
+
+sinh(x + y) = sinh x cosh y + cosh x sinh y,
+
+
+cosh(x + y) = cosh x cosh y + sinh x sinh y,
+
+
+sinh 2x = 2 sinh x cosh x,
+
+
+cosh 2x = cosh [2] x + sinh [2] x,
+
+cosh x + sinh x = e [x], cosh x − sinh x = e [−][x],
+
+(cosh x + sinh x) [n] = cosh nx + sinh nx, n ∈ Z,
 
 
 
-2 sinh [2][ x]
+
+[x] 2 [= cosh][ x][ −] [1][,] 2 cosh [2] [x] 2
+
+
+
+2 sinh [2] [x]
 
 
 
@@ -3127,7 +3060,8 @@ sin(x + y) sin(x − y) = sin [2] x − sin [2] y,
 
 y) cos(x y) = cos [2] x sin [2] y. you don’t under    -     - 0 0 1 0
 
-π 1 √3 √3 stand things, you
+equation: π 1 √3 √3 stand things, you
+
 6 2 2 3 just get used to
 
 e [ix] = cos x + i sin x, e [iπ] = −1. π4 √22 √22 1 them.
@@ -3242,12 +3176,15 @@ Number Theory Graph Theory
 The Chinese remainder theorem: There exists a number C such that:
 
 
-C ≡ r1 mod m1
+C r1 mod m1
+≡
 ... ... ...
 
-C ≡ rn mod mn
+C rn mod mn
+≡
 
-if mi and mj are relatively prime for i ̸= j.
+if mi and mj are relatively prime for i = j.
+̸
 
 Euler’s function: φ(x) is the number of
 positive integers less than x relatively
@@ -3307,29 +3244,12 @@ prime then
 Fermat’s theorem:
 1 ≡ a [p][−][1] mod p.
 
-The Euclidean algorithm: if a > b are integers then
+The Euclidean algorithm: if a - b are integers then
 gcd(a, b) = gcd(a mod b, b).
 
 If [�][n] i=1 [p] i [e][i] is the prime factorization of x
 then
 
-
-
-(x1 x0) [2] + (y1 y0) [2],
-
-- - x1 x0 + y1 y0,
-|  -  - | [p] |  - | [p][�][1][/p][�]
-
-
-
-(x, y) (x, y, 1)
-y = mx + b (m, −1, b)
-x = c (1, 0, −c)
-Distance formula, Lp and L
-∞
-metric:
-
- 
 
 
 
@@ -3386,9 +3306,9 @@ Cut A set of edges whose removal increases the number of components.
 Cut-set A minimal cut.
 Cut edge A size 1 cut.
 k-Connected A graph connected with
-the removal of any k − 1
+the removal of any k       - 1
 vertices.
-k-Tough ∀S ⊆ V, S ̸= ∅ we have
+k-Tough ∀S ⊆ V, S = ∅ we have
 k · c(G − S) ≤|S|.
 k-Regular A graph where all vertices
 have degree k.
@@ -3409,8 +3329,18 @@ graph.
   
 
 
+(x, y) (x, y, 1)
+y = mx + b (m, −1, b)
+x = c (1, 0, −c)
+Distance formula, Lp and L∞
+metric:
 
-   lim x1 x0 + y1 y0 .
+ (x1 x0) [2] + (y1 y0) [2],
+
+  -  -  x1 x0 + y1 y0,
+|    -    - | [p] |    - | [p][�][1][/p]
+
+lim x1 x0 + y1 y0 .
 p→∞ | - | [p] | - | [p][�][1][/p]
 
 Area of triangle (x0, y0), (x1, y1)
@@ -3427,7 +3357,7 @@ and (x2, y2):
 
 
 
-M¨obius inversion:
+M¨obius inversion:
 
 
 
@@ -3476,33 +3406,24 @@ d|a
 
 
 
-then F (a) =
-
-
-
-d
-
-
-
-
-- 
+then - 
 a
-µ(d)G
+
+F (a) = µ(d)G
 
 d
-
 d|a
+
+
+
+
+.
 
 
 
 cos θ = [(][x][1][, y][1][)][ ·][ (][x][2][, y][2][)] .
 
 ℓ1ℓ2
-
-
-
-
-.
 
 
 
@@ -3540,9 +3461,6 @@ ln n
 
  n
 + O
-
-
-
 ln n
 
 
@@ -3553,8 +3471,7 @@ ln n
 
 
 n n 2!n
-π(n) =
-ln n [+] (ln n) [2][ +] (ln n) [3]
+π(n) = ln n [+] (ln n) [2] [+] (ln n) [3]
 
 
 
@@ -3620,24 +3537,16 @@ dx dx
 
 
 
-[du]
+[du] [dv]
 
-dx [+][ dv] dx
-
-
-
-
- -  
-dudx u dxdv
-
- 
+dx [+] dx
 
 
 
- 
-dv
 
-dx
+[dv] 3. [d][(][uv][)]
+
+dx [,] dx
 
 
 
@@ -3693,18 +3602,6 @@ dx dx
 
 
 
-3. [d][(][uv][)]
-dx [,] dx
-
-
-
-
-- u dxdv, 6. [d][(][e][cu][)]
-
-v [2] dx
-
-
-
 
 [uv][)]
 
@@ -3734,17 +3631,25 @@ dx [,]
 
 
 
-     
-[u/v][)] = [v] dudx
+     -     -     -     
+[u/v][)] dudx u dxdv
 
-dx
-
-
+= [v]  dx v [2]
 
 
-[ u][)] = [1]
 
+
+[ u][)]
+
+= [1]
 dx u
+
+
+
+
+- u dxdv, 6. [d][(][e][cu][)]
+
+v [2] dx
 
 
 
@@ -3790,6 +3695,9 @@ Gregrory’s series:
 
 
 
+
+[1]
+
 5 7
 
 [−] [1]
@@ -3815,11 +3723,15 @@ dx [,]
 
 
 
-3 [1] [+][ 1] 5
+
+[1]
+3 [1] [+] 5
 
 
 
-7 [1] [+][ 1] 9
+
+[1]
+7 [1] [+] 9
 
 
 
@@ -3864,9 +3776,11 @@ dx [,]
 
 
 
-1 1 · 3
-2 [+] 2 3 2 [3][ +] 2 4 5 2 [5][ +][ · · ·]
-     -      -      -      -      
+
+[1] 1 1 · 3
+
+2 [+] 2 · 3 · 2 [3] [+] 2 · 4 · 5 · 2 [5] [+][ · · ·]
+
 
 
 11. [d][(tan][ u][)]
@@ -3894,7 +3808,7 @@ dx dx
 
 
 π
-6 [= 1]
+6 [=] [1]
 
 
 
@@ -3998,27 +3912,29 @@ Euler’s series:
 
 
 
-π 1
-
-6 [=] 1 [2][ +][ 1] 2
+π6 [=] 11 [2] [+] 2 [1]
 
 
 
-4 [2][ +][ 1] 5
+4 [1][2] [+] 5 [1]
 
-7 [2][ +][ 1] 9
+7 [1][2] [+] 9 [1]
 
-4 [2][ +][ 1] 5
+4 [2] [+] 5 [1]
 
 [1]
 
 
 
-5 [2][ +][ · · ·]
+5 [2] [+][ · · ·]
 
-9 [2][ +][ · · ·]
+9 [1][2] [+][ · · ·]
 
-5 [2][ −· · ·]
+[1]
+
+5 [2]
+
+[−· · ·]
 
 
 
@@ -4048,30 +3964,32 @@ dx dx
 
 
 
-2 [2][ +][ 1] 3 [2]
+2 [1][2] [+] 3 [1][2]
 
-3 [2][ +][ 1] 5 [2]
+3 [1][2] [+] 5 [1][2]
 
-2 [2][ +][ 1] 3 [2]
+2 [2] [+] 3 [1][2]
 
 [1]
 
 
 
-π 1
-
-8 [=] 1 [2][ +][ 1] 3
+π8 [=] 11 [2] [+] 3 [1]
 
 π [2] 1
-12 [=] 1 [2][ −] 2 [1]
+12 [=] 1 [2] [−] 2 [1]
 
 
 
-3 [2][ +][ 1] 4
+3 [1][2] [+] 4 [1]
 
-5 [2][ +][ 1] 7
+5 [1][2] [+] 7 [1]
 
-3 [2][ −] 4 [1]
+[1]
+
+3 [2] 4
+
+[−] [1]
 
 
 
@@ -4122,14 +4040,23 @@ Let N (x) and D(x) be polynomial functions of x. We can break down
 N (x)/D(x) using partial fraction expansion. First, if the degree of N is greater
 than or equal to the degree of D, divide
 N by D, obtaining
-N (x)
-D(x) [=][ Q][(][x][) +][ N] D [ ′] ( [(] x [x] ) [)] [,]
+N (x) [N][ ′][(][x][)]
+D(x) [=][ Q][(][x][) +] D(x) [,]
 
 where the degree of N [′] is less than that of
 D. Second, factor D(x). Use the following rules: For a non-repeated factor:
-N (x) A
-(x a)D(x) [=] x a [+][ N] D [ ′] ( [(] x [x] ) [)] [,]
+N (x) A [N][ ′][(][x][)]
+(x a)D(x) [=] x a [+] D(x) [,]
     -    
+
+
+
+  -  -  -  -  1. cu dx = c u dx, 2. (u + v) dx = u dx + v dx,
+
+  -  -  1 1
+3. x [n] dx = n = 1, 4. 5. e [x] dx = e [x],
+n + 1 [x][n][+1][,] ̸        - x [dx][ = ln][ x,]
+
 
 
 23. [d][(tanh][ u][)]
@@ -4282,11 +4209,6 @@ Integrals:
 
 
 
-
-  -  -  -  -  1. cu dx = c u dx, 2. (u + v) dx = u dx + v dx,
-
-
-
 where
 
 
@@ -4294,16 +4216,7 @@ where
 
   N (x)
 A =
-
 D(x)
-
-
-
-
-      
-[dv] v [du]
-
-dx [dx][ =][ uv][ −] dx
 
 
 
@@ -4311,22 +4224,6 @@ dx [dx][ =][ uv][ −] dx
 
 .
 x=a
-
-
-
-
-  -  1 1
-3. x [n] dx = n = 1, 4.
-n + 1 [x][n][+1][,] ̸        - x
-
-
-
-
-        
-1
-
-5. e [x] dx = e [x],
-x [dx][ = ln][ x,]
 
 
 
@@ -4353,7 +4250,7 @@ Ak
 
   -  dx
 6. 7. u [dv]
-1 + x [2][ = arctan][ x,] dx
+1 + x [2] [= arctan][ x,] dx
 
 
 
@@ -4363,6 +4260,14 @@ Ak
   -   10. tan x dx = − ln | cos x|, 11. cot x dx = ln | cos x|,
 
   -   12. sec x dx = ln | sec x + tan x|, 13. csc x dx = ln | csc x + cot x|,
+
+
+
+
+      
+[dv] v [du]
+
+dx [dx][ =][ uv][ −] dx
 
 
 
@@ -4382,7 +4287,6 @@ k!
 
 
 N (x)
-
 D(x)
 
 
@@ -4416,18 +4320,15 @@ all progress depends on the unreasonable.
 
 
 
- a [+]
+ 
+[x] a [+] a [2] - x [2], a > 0,
 
 
 
 
-[x]
+[x] [x]
 
-a [dx][ = arcsin][ x] a
-
-
-
-a [2] - x [2], a > 0,
+a [dx][ = arcsin] a
 
 
 Theoretical Computer Science Cheat Sheet
@@ -4440,16 +4341,19 @@ Theoretical Computer Science Cheat Sheet
 
 
 
+                   
  
-[ x] a
+[x] a a [2] x [2], a > 0, 16. arctan [x] a
 
-[−]
-
+[−]   
 
 
 Calculus Cont.
 
 
+
+
+[x]
 
 a 2
 
@@ -4458,22 +4362,16 @@ a 2
 
 
 
-[x]
+[x] [x]
 
-a [dx][ = arccos][ x] a
-
-
-
-
-                a [2] x [2], a > 0, 16. arctan [x] a
-
- 
+a [dx][ = arccos] a
 
 
 
-[x]
 
-a [dx][ =][ x][ arctan][ x] a
+[x] [x]
+
+a [dx][ =][ x][ arctan] a
 
 
 
@@ -4598,13 +4496,8 @@ n − 1 - n − 1
 
 
 
-��
-2,
 
-
-
-
-  -   -   -   29. tanh x dx = ln cosh x, 30. coth x dx = ln sinh x, 31. sech x dx = arctan sinh x, 32. csch x dx = ln ��tanh x2
+  -   -   -   29. tanh x dx = ln cosh x, 30. coth x dx = ln sinh x, 31. sech x dx = arctan sinh x, 32. csch x dx = ln ��tanh x2 ��,
 | | | |
 
 
@@ -4622,23 +4515,15 @@ n − 1 - n − 1
 
 
 
-        2 [x,] 35. sech [2] x dx = tanh x,
+        
+[1] 2 [x,] 35. sech [2] x dx = tanh x,
 
 
 
 
-                 x [2] + a [2], a > 0, 37. arctanh [x]
+[1] [1]
 
-
-
-
-[1]
-
-4 [sinh(2][x][) +][ 1] 2
-
-
-
-a [+][ a] 2
+4 [sinh(2][x][) +] 2
 
 
 
@@ -4655,27 +4540,45 @@ a [+][ a] 2
 
 
 
-[x]
+[x] [x]
 
-a [dx][ =][ x][ arcsinh][ x] a
-
-
-
-
-[x]
-
-a [dx][ =][ x][ arctanh][ x] a
+a [dx][ =][ x][ arcsinh] a
 
 
 
 
-[ a] 2 [ln][ |][a][2][ −] [x][2][|][,]
+[x] [x]
+
+a [dx][ =][ x][ arctanh] a
 
 
 
 
- 
+[x] [a]
+
+a [+] 2
+
+
+
+
+[a]
+
+2 [ln][ |][a][2][ −] [x][2][|][,]
+
+
+
+x arccosh [x]
+
 a
+
+x arccosh [x]
+
+
+
+
+                   
+ 
+[x] a x [2] + a [2], a > 0, 37. arctanh [x] a
 
 [−]
 
@@ -4683,19 +4586,22 @@ a
 
 
  
+[x] a x [2] + a [2], if arccosh [x] a
+
+[−]  
 [x]
 
-a
-
-[−]   
-[x]
 
 
 
-x [2] + a [2], if arccosh [x] a
+ 
+[x] a [+] x [2] + a [2], if arccosh [x] a
 
 
-x [2] + a [2], if arccosh [x]
+
+a [>][ 0] [and] [a >][ 0,]
+
+[x] a [<][ 0] [and] [a >][ 0,]
 
 
 
@@ -4712,91 +4618,48 @@ x [2] + a [2], if arccosh [x]
 
 
 
-x arccosh [x]
-
-a
-
-x arccosh [x]
-
-
-
-a [>][ 0 and][ a >][ 0,]
-
-
-[x]
-
-a [<][ 0 and][ a >][ 0,]
-
-
-
 
   dx
 39. √a [2]
 
 
 
-��
 
-[ x] a [,] a > 0, 41.
-
-
-
-
-     -      
+     -      -      
 dx
 
-x +
-a [2] + x [2][ = ln]
-
-
-
-
- 
-[x]
-
-a [+]
-
-
-
-
-   a [2] + x [2], a > 0,
+a [2] + x [2] [= ln] x + a [2] + x [2], a > 0,
 
 
 
 
   dx
-40.
-a [2] + x [2][ =][ 1] a
+40. [1]
+a [2] + x [2] [=] a
 
 
 
-2 [arcsin][ x] a
+
+[1] [x]
+
+a [arctan] a
+
+
+
+
+ 
+[x] 2 a [2] x [2] + [a] 2 [2]
+
+  
+
+
+
+[x]
+2 [arcsin] a
 
 
 
 a [,] a > 0,
-
-
-
-a [2] x [2] + [a] 2 [2]
-
- 
-
-
-a [arctan][ x] a
-
-
-
-a [2] x [2] dx = [x] 2
-
- 
-
-
-
- 
-[x]
-
-2
 
 
 
@@ -4806,28 +4669,30 @@ a [2] x [2] dx = [x] 2
    
 
 
+��
+
+[x] a [,] a > 0, 41. a [2] - x [2] dx = [x] 2
+
+
+
 
           dx
-a [,] a > 0, 44.
-a [2]             - x [2][ = 1] 2
+
+[x] a [,] a > 0, 44. a [2] - x [2] [=] 2 [1]
 
 
 
-a [2] x [2] + [3][a] 8 [4]
 
- 
+[1] ���� a + x
 
-
-a + x
-����
 2a [ln] a − x
 
 
 
 
-[a]
+[a] [x]
 
-8 [arcsin][ x] a
+8 [arcsin] a
 
 
 
@@ -4839,10 +4704,8 @@ a [,] a > 0,
     
 dx
 
-���x +
-x [2] a [2][ = ln]
+x [2] - a [2] [= ln] ���x + x [2] - a [2] ���, a > 0,
 
- 
 
 
 
@@ -4853,47 +4716,25 @@ x [2] a [2][ = ln]
 
 
    
-[x]
-
-8 [(5][a][2][ −] [2][x][2][)]
+[x] 8 [(5][a][2][ −] [2][x][2][)] a [2] - x [2] + [3][a] 8 [4]
 
 
 
 
        dx x
-����, 45.
-
-  - (a [2]   - x [2] ) [3][/][2][ =] a [2][√] a [2]
+����, - 45. (a [2] - x [2] ) [3][/][2] [=] a [2][√] a [2]
 
 
 
-a [2] x [2][ = arcsin][ x] a
 
- 
-
-
-
-  
-[2]
-
-2 [ln] ���x +
+[x]
+a [2] - x [2] [= arcsin] a
 
 
 
 ��
-46.
-
-
-
-
- 
-[x]
-
-2
-
-
-
-x [2] - a [2] ���, a > 0,
+46. a [2] x [2] dx = [x] 2
+±
 
 
 
@@ -4902,24 +4743,17 @@ a [2] x [2][,]
  
 
 
-a [2] x [2] dx = [x] 2
-±
-
-
-
-a [2] x [2] [a] 2 [2]
-± ±
-
-
-
-
-             dx
-a [2] ± x [2] ���, 47. √x [2]
-
-
-
 
                      ����, 49. x√
+
+
+
+
+                  
+  
+[2] dx
+
+2 [ln] ���x + a [2] ± x [2] ���, 47. √x [2]
 
 
 
@@ -4933,8 +4767,16 @@ a + bx [dx,] 51. √a
 
 
   dx
-48.
-ax [2] + bx [= 1] a
+48. [1]
+ax [2] + bx [=] a
+
+
+
+
+ 
+[x] 2 a [2] x [2] [a] 2 [2]
+
+± ±
 
 
 
@@ -4950,40 +4792,20 @@ a + bx dx = [2(3][bx][ −] [2][a][)(][a][ +][ bx][)][3][/][2]
 
 
   - [√]
-
+a + bx
 50.
 
-  - [√]
-
-52.
 
 
 
-+ bx dx = 2√
+[1] ���� x
 
-x
-
-   
-x [2]
-
- - dx =
-
-x
-
-
-
-x
-����
 a [ln] a + bx
 
 
 
 ,
 15b [2]
-
-
-
-����, a > 0,
 
 
 
@@ -5002,11 +4824,9 @@ a + bx + a
 
 
 
++ bx dx = 2√
+
 x
-
-
-
-a + bx
 
 
 
@@ -5018,23 +4838,37 @@ a + bx
 
 
 
+����, a > 0,
+
+
+
 x 1
 
 a + bx [dx][ =] √
 
 
 
+
+  - [√]
+a [2] x [2]
+52. 
+
+
 a [2] - x [2]
 
 
 
-a [2] - x [2] - a ln
+x
+
+
+
 
    
-[x]
+x [2]
 
-8 [(2][x][2][ −] [a][2][)]
+ - dx = a [2] x [2] a ln
 
+x - 
 
 
 a + √
@@ -5044,18 +4878,8 @@ a + √
 
 
               
-         , 53. x
-�����
-
-
-
-a [2] x [2] dx = 3
-
- -  - [1]
-
-
-
-a [2] - x [2]
+         , 53. x a [2] x [2] dx = 3
+����� - - [1]
 
 
 
@@ -5064,7 +4888,9 @@ a [2] - x [2]
 
 
 
-8 [arcsin][ x] a
+
+[x]
+8 [arcsin] a
 
 
 
@@ -5073,23 +4899,19 @@ a [2] - x [2]
 
 
 
+
+            dx
+
+[x] a [,] a > 0, 55. √a [2]
+
+
+
 ,
 �����
 
 
 
-
-            dx
-a [,] a > 0, 55. √a [2]
-
-
-
 a [2] x [2] dx = [x] 8
-
- 
-
-
-a [2] x [2] + [a] 8 [4]
 
  
 
@@ -5111,9 +4933,18 @@ x
 
 
 
-a [2] x [2][ =][ −] a [1]
 
- 
+                          
+   
+x dx x [2] dx
+
+a [2] x [2] [=][ −] a [2] - x [2], 57. √a [2]
+
+ -  -  
+
+
+a [2] - x [2] [=][ −] a [1]
+
 
 
 
@@ -5123,24 +4954,22 @@ a [2] x [2][ =][ −] a [1]
 
 
 
-                    x [2] dx
-a [2] - x [2], 57. √a [2]
-
-
-
-
    
-x dx
+[x] 8 [(2][x][2][ −] [a][2][)] a [2] x [2] + [a] 8 [4]
 
-a [2] x [2][ =][ −]
-
- 
+     
 
 
 
-[a]
+ 2 a [2] x [2] + [a] 2 [2]
 
-2 [arcsin][ x] a,
+[x] 
+
+
+
+[a] [x]
+
+2 [arcsin] a,
 
 
 
@@ -5148,30 +4977,9 @@ a, a > 0,
 
 
 
-a [2] x [2] + [a] 2 [2]
-
- 
-
-
-
-[2] a [2] 
- - dx =
-
-x
-
-
-
-
- 
-2
-
-[x]
-
-
-
 
   - [√]
-
+a [2] + x [2]
 58.
 
 
@@ -5180,13 +4988,8 @@ x
    
 + x [2]
 
-dx =
-x
-
-
-x [2] a [2] dx = 3 [1]
-±
-
+dx = a [2] + x [2] a ln
+x 
 
 
 a + √
@@ -5194,47 +4997,30 @@ a + √
 
 
 
-x [2] + a [2][ =][ 1] a
-
-
-
-x [2] a [2] a arccos x [a]
-
- -  - |
-
-
-
 a [2] + x [2]
 
 
 
-a [2] + x [2] - a ln
+
+        - [√]         x [2] a [2]
+, 59.  ����� x
+
+
+
+a [2] - x [2] [=][ −] [x] 2
 
 
 
 
-        - [√]
-, 59.
-�����
-
-
-
-a [2] x [2][ =][ −] [x] 2
-
- 
-
-
-x [2] - a [2]
-
-
-
-a [2] + x [2]
+[2] a [2] 
+x− dx = x [2] - a [2] - a arccos |x [a]
 
 
 
 
   
-  60. x
+  60. x x [2] a [2] dx = 3 [1]
+±
 
 
 
@@ -5251,7 +5037,16 @@ x
 
 
 
+
+[1]
+x [2] + a [2] [=] a
+
+
+
 x
+
+[1]
+
 a [ln] ���� a + √a
 
 
@@ -5285,28 +5080,30 @@ a [2] x
 
 
 
-
-           - [√]
-x [2] ± a [2], 65.
-
-
-
 Calculus Cont. Finite Calculus
 
 
 
-x [2] a [2][ =][ 1] a
 
- 
+[1]
+x [2] - a [2] [=] a
+
 
 
 
          dx
-|x| [,] a > 0, 63. x [2][√] x [2]
+|x [a] | [,] a > 0, 63. x [2][√] x [2]
 
 
 
-a [arccos][ a] x
+
+[1] [a]
+
+a [arccos] x
+
+
+
+x [2] ± a [2] [=][ ∓]
 
 
 
@@ -5328,6 +5125,21 @@ Fundamental Theorem:
 
 
 
+
+                - [√]
+
+   
+x dx x [2] a [2]
+
+x [2] a [2], 65. ±
+x [2] a [2] [=] ± x [4]
+
+
+
+±
+
+
+
 a [2]
 ± dx =
 
@@ -5335,42 +5147,8 @@ x [4] ∓ [(][x][2][ +] 3a [ a][2] x [2][3][)][3][/][2]
 
 
 
-x [2] a [2][ =][ ∓]
-±
-
-
-
-
-   
-x dx
-
-x [2] a [2][ =]
-±
-
-
-
-
-
-
-
-
-
-
-1
-√b [2]
-
-
-2
-√4ac
-
-
-
 ,
 3a [2] x [3]
-
-
-
-x [2] ± a [2]
 
 
 
@@ -5396,6 +5174,22 @@ if b [2] < 4ac,
   dx
 66.
 ax [2] + bx + c [=]
+
+
+
+
+
+
+
+
+
+
+1
+√b [2]
+
+
+2
+√4ac
 
 
 
@@ -5429,7 +5223,7 @@ i=a
 
 2 2ax + b
 
-4ac − b [2][ arctan] √4ac −
+4ac − b [2] [arctan] √4ac −
 
 
 
@@ -5453,25 +5247,26 @@ a arcsin √ [−] b [2][2][ax][ −] 4 [b]
 
 
 
-     √1a ln ���2ax + b + 2√a
-
-
-
-ax [2] + bx + c���, if a > 0,
+     √1a ln ���2ax + b + 2√a ax [2] + bx + c���, if a > 0,
 
 
 
 ��
-68.
+68. ax [2] + bx + c dx = [2][ax][ +][ b]
 
 
 
-4a
+
+ax [2] + bx + c + [4][ax][ −] [b][2]
 
 
 
 , if a < 0,
 b [2] - 4ac
+
+
+
+8a
 
 
 
@@ -5482,22 +5277,6 @@ dx
 
 
 ax [2] + bx + c [,]
-
-
-
-ax [2] + bx + c dx = [2][ax][ +][ b]
-
-
-
-
-
-
-
-ax [2] + bx + c + [4][ax][ −] [b][2]
-
-
-
-8a
 
 
 
@@ -5523,6 +5302,10 @@ Sums:
 - u∆v δx = uv − E v∆u δx,
 
 - n+1 xn δx = x [,] x−1
+
+
+
+4a
 
 
 
@@ -5643,7 +5426,9 @@ Rising Factorial Powers:
 
 
 
-a [x][n][ cos(][ax][) +][ n] a
+
+[n]
+a [x][n][ cos(][ax][) +] a
 
 [1]
 
@@ -5712,15 +5497,11 @@ x [n] = n < 0,
 
 
 
-  -   ln(ax)
+  -   ln(ax) 1
 75. x [n] ln(ax) dx = x [n][+1]
+n + 1 (n + 1) [2]
 
-
-
-
-,
-
-x [n] (ln ax) [m][−][1] dx.
+  - [−]
 
 
 
@@ -5729,18 +5510,17 @@ x [n] (ln ax) [m][−][1] dx.
 
 
 
-ln(ax) 1
-
-n + 1 (n + 1) [2]
-
-[−]
-
-
-
 
 [x][n][+1] m
 
 n + 1 [(ln][ ax][)][m][ −] n + 1
+
+
+
+
+,
+
+x [n] (ln ax) [m][−][1] dx.
 
 
 
@@ -6094,9 +5874,9 @@ Difference of like powers:
 
 
 
-[1]
+[1] [1]
 
-2 [x][2][ +][ 1] 6
+2 [x][2][ +] 6
 
 
 
@@ -6108,7 +5888,8 @@ e [x] = 1 + x + [1]
 
 
 
-6 [x][3][ +][ · · ·] =
+
+[1] 6 [x][3][ +][ · · ·] =
 
 
 
@@ -6132,11 +5913,14 @@ i=0
 
 ( 1) [i][+1][ x][i]
 
- i=1
+ - i
+i=1
 
 
 
-2 [x][2][ +][ 1] 3
+
+[1]
+2 [x][2][ +] 3
 
 [1]
 
@@ -6154,6 +5938,9 @@ ln(1 + x) = x 2
 ln 1 − x = x + 2 [1]
 
 
+
+
+[1]
 
 3 [x][3][ −] 4 [1]
 
@@ -6180,17 +5967,20 @@ i=k
 
 
 
-[1]
+[1] [1]
 
-2 [x][2][ +][ 1] 3
-
-
-
-3 [x][3][ +][ 1] 4
+2 [x][2][ +] 3
 
 
 
-4 [x][4][ +][ · · ·] =
+
+[1] [1]
+
+3 [x][3][ +] 4
+
+
+
+4 [1] [x][4][ +][ · · ·] =
 
 
 
@@ -6220,7 +6010,9 @@ x [k]
 
 
 
-3! [x][3][ +][ 1] 5!
+
+[1]
+3! [x][3][ +] 5!
 
 [1]
 
@@ -6243,7 +6035,8 @@ i=0
 
 �∞
 
-( 1) [i][ x][2][i]
+[x][2][i]
+( 1) [i]
 
  - (2i
 i=0
@@ -6263,7 +6056,9 @@ A(x) − [�] i [k] =0 [−][1] [a][i][x][i]
 
 
 
-2! [x][2][ +][ 1] 4!
+
+[1]
+2! [x][2][ +] 4!
 
 [1]
 
@@ -6285,8 +6080,12 @@ cos x = 1 2!
 
 
 
-[ 1] 5! [x][5][ −] 7! [1]
+[1]
 
+5! [x][5][ −] 7! [1]
+
+
+[1]
 
 4! [x][4][ −] 6! [1]
 
@@ -6318,11 +6117,16 @@ tan [−][1] x = x 3
 
 
 
+
+[1]
+
 5 [x][5][ −] 7 [1]
 
 
 
-3 [x][3][ +][ 1] 5
+
+[1]
+3 [x][3][ +] 5
 
 [1]
 
@@ -6338,7 +6142,8 @@ tan [−][1] x = x 3
 
 �∞
 
-( 1) [i][ x][2][i][+1]
+[x][2][i][+1]
+( 1) [i]
 
  - (2i + 1)
 i=0
@@ -6441,7 +6246,7 @@ e [x] 1 = 1 − 2 [1]
  
 
 
-12 [x][2][ −] 7201 [x][4][ +][ · · ·] =
+12 [1] [x][2][ −] 7201 [x][4][ +][ · · ·] =
 
 
 
@@ -6457,7 +6262,9 @@ i=0
 
 
 
-2 [1] [x][ +][ 1]
+
+[1]
+2 [1] [x][ +]
 
 
 
@@ -6547,7 +6354,7 @@ i=0
 
 
 
-Summation: If bi = [�][i] j=0 [a][i][ then]
+Summation: If bi = [�][i] j=0 [a][i] [then]
 
 
 
@@ -6569,10 +6376,7 @@ B(x) =
 
 
 1 1 4x
-−√  
-
-
-2x
+−√  2x
 
 
 
@@ -6595,17 +6399,21 @@ i
 
 
 
-[3]
+[3] [11]
 
-2 [x][2][ +][ 11] 6
-
-
-
-6 [x][3][ +][ 25] 12
+2 [x][2][ +] 6
 
 
 
-12 [x][4][ +][ · · ·] =
+
+[11] [25]
+
+6 [x][3][ +] 12
+
+
+
+
+[25] 12 [x][4][ +][ · · ·] =
 
 
 
@@ -6633,7 +6441,10 @@ Convolution:
 
 
 
-4 [x][3][ +][ 11] 24
+
+[3] [11]
+
+4 [x][3][ +] 24
 
 
 
@@ -6650,13 +6461,13 @@ ln
 
 
 
-[1]
+[1] [3]
 
-2 [x][2][ +][ 3] 4
+2 [x][2][ +] 4
 
 
 
-24 [x][4][ +][ · · ·] =
+24 [11] [x][4][ +][ · · ·] =
 
 
 
@@ -6740,8 +6551,7 @@ Series Escher’s Knot
 
 Expansions:
 1 1
-=
-(1 − x) [n][+1][ ln] 1 − x
+(1 − x) [n][+1] [ln] 1 − x =
 
 x [n] =
 
@@ -6769,6 +6579,7 @@ i=0 - i
 
 - 1
 x [i],
+x
 
 
 
@@ -6816,10 +6627,6 @@ n
 
 x cot x =
 i! [,]
-
-
-
-x
 
 
 
@@ -6922,7 +6729,7 @@ i=1
 
 (i) ζ(x − 1)
 
-i [x][,] ζ(x)
+i [x] [,] ζ(x)
 
 
 
@@ -6939,7 +6746,7 @@ i [x][,]
 
 φ(i)
 
-i [x][,]
+i [x] [,]
 
 
 
@@ -7012,7 +6819,7 @@ a b
 
 
 
-exists. If a� ≤c b ≤ c then
+exists. If�a ≤c b ≤ c then
 
 
 
@@ -7096,7 +6903,6 @@ a
 
 
 1 −√1 − 4x
-
 2x
 
 
@@ -7161,6 +6967,16 @@ a
 
 
 
+e [x] sin x =
+
+
+1 1 x
+  - [√]  - =
+
+x
+
+
+
 2 [i/][2] sin [iπ] 4 x [i],
 
 i!
@@ -7188,20 +7004,6 @@ a
 
 
 
-
-
-
-
-e [x] sin x =
-
-
-1 1 x
- - [√] - =
-
-x
-
-
-
 If the integrals involved exist, and F possesses a derivative F [′] at every
 point in [a, b] then
 
@@ -7222,7 +7024,6 @@ a
 
 
 arcsin x
-
 x
 
 
@@ -7269,14 +7070,11 @@ Fibonacci Numbers
 
 
 Definitions:
-Fi = Fi 1+Fi 2, F0 = F1 = 1,
-
-   -   
+Fi = Fi−1+Fi−2, F0 = F1 = 1,
 
 
-F i = ( 1) [i][−][1] Fi,
 
- - −�
+F−i = (−� 1) [i][−][1] Fi,
 
 [�]
 
@@ -7290,7 +7088,7 @@ F i = ( 1) [i][−][1] Fi,
 
 
 Let A = (ai,j) and B be the column matrix (bi). Then
-there is a unique solution iff det A ̸= 0. Let Ai be A
+there is a unique solution iff det A = 0. Let Ai be A
 with column i replaced by B. Then
 
 
@@ -7362,8 +7160,10 @@ The Fibonacci number system:
 Every integer n has a unique
 representation
 
-n = Fk1 + Fk2 + · · · + Fkm,
-where ki ≥ ki+1 + 2 for all i,
+n = Fk1 + Fk2 + + Fkm,
+                 - · ·
+where ki ki+1 + 2 for all i,
+≥
 1 i < m and km 2.
 ≤ ≥
 

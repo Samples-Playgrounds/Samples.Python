@@ -7,7 +7,7 @@ page 1 of 2
 
 
 **Basic Tags**
-~~<html> </h~~ tml>
+<html> </html>
 Creates an HTML document
 <head> </head>
 
@@ -19,7 +19,7 @@ Sets off the title & other info that isn't displayed
 
 
 **Formatting**
-~~<p> </p>~~
+<p> </p>
 Creates a new paragraph
 <br>
 
@@ -133,7 +133,7 @@ Creates italicized text (should use <em> instead)
 
 
 
-~~<hr>~~
+<hr>
 Inserts a horizontal rule
 <hr size=?>
 
@@ -255,7 +255,7 @@ page 2 of 2
 
 
 **Forms**
-~~<form>~~ </form>
+<form> </form>
 Defines a form
 <select multiple name=? size=?> </select>
 
@@ -273,18 +273,18 @@ for details)
 
 <input type="email" name=?>
 Sets a single-line textbox for email addresses
-~~<input type="url" name=?>~~
+<input type="url" name=?>
 Sets a single-line textbox for URLs
-~~<input type="number" name=?>~~
+<input type="number" name=?>
 Sets a single-line textbox for a number
-~~<input type="range" name=?>~~
+<input type="range" name=?>
 Sets a single-line text box for a range of numbers
-~~<input type="date/month/week/time" name=?>~~
+<input type="date/month/week/time" name=?>
 Sets a single-line text box with a calendar
 showing the date/month/week/time
-~~<input type="search" name=?>~~
+<input type="search" name=?>
 Sets a single-line text box for searching
-~~<input type="color" name=?>~~
+<input type="color" name=?>
 Sets a single-line text box for picking a color
 
 
@@ -341,7 +341,7 @@ Creates a reset button
 
 
 **Tables** (use only for data layout - use CSS for page layout) **Table attributes** (only use for email newsletters)
-~~<table> </table>~~ ~~<table border=?>~~
+<table> </table> <table border=?>
 Creates a table Sets the width of the border around table cells
 <tr> </tr> <table cellspacing=?>
 
@@ -352,7 +352,7 @@ Sets off each row in a table
 
 
 
-~~<table border=?>~~
+<table border=?>
 Sets the width of the border around table cells
 <table cellspacing=?>
 

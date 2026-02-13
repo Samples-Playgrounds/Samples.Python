@@ -1,0 +1,12 @@
+{
+    "function_method_name": "extract_images_from_pdf_to_files",
+    "time_start_1": 1771004828.748506,
+    "time_end_1": 1771004828.925146,
+    "time_total_1": 0.17664003372192383,
+    "time_start_2": 31182.261602208,
+    "time_end_2": 31182.438241916,
+    "time_total_2": 0.17663970799912931,
+    "time_start_3": 31182261602333,
+    "time_end_3": 31182438242208,
+    "time_total_3": 0.176639875
+}

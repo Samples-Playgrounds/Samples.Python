@@ -31,7 +31,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "ANALYZING MALICIOUS DOCUMENTS This cheat sheet outlines tips and tools for analyzing malicious documents, such as Microsoft Office, RTF, and PDF files.",
@@ -69,7 +69,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "General Approach to Document Analysis 1. Examine the document for anomalies, such as risky tags, scripts, and embedded artifacts. 2. Locate embedded code, such as shellcode,",
@@ -107,7 +107,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "oledump.py file.xls -i",
@@ -145,7 +145,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "cc584d442c66374b466ce5247d2f84d7"
         },
@@ -184,7 +184,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "oledump.py file.xls -s 3 -v",
@@ -222,7 +222,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Extract VBA source code from stream 3 in file.xls.",
@@ -260,7 +260,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "xmldump.py pretty",
@@ -298,7 +298,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "7845253037d7b73be1617c3068932014"
         },
@@ -337,7 +337,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "oledump.py file.xls -p plugin_http_heuristics",
@@ -375,7 +375,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Find obfuscated URLs in file.xls macros.",
@@ -413,7 +413,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "/XObject can embed an image for phishing.",
@@ -451,7 +451,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -490,7 +490,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 34,
@@ -536,7 +536,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -575,7 +575,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -614,7 +614,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "969fc7dc951bf4bfbf7a187023b60814"
         },
@@ -653,7 +653,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -692,7 +692,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "4d852a3b71037c8191795dbe3e303296"
         },
@@ -731,7 +731,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "4d852a3b71037c8191795dbe3e303296"
         },
@@ -770,7 +770,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -809,7 +809,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "163fc32562881b8d7f7c8c8d6330850f"
         },
@@ -848,7 +848,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "163fc32562881b8d7f7c8c8d6330850f"
         },
@@ -887,7 +887,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "163fc32562881b8d7f7c8c8d6330850f"
         },
@@ -926,7 +926,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "163fc32562881b8d7f7c8c8d6330850f"
         },
@@ -965,7 +965,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "163fc32562881b8d7f7c8c8d6330850f"
         },
@@ -1004,7 +1004,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "163fc32562881b8d7f7c8c8d6330850f"
         },
@@ -1043,7 +1043,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 225,
@@ -1089,7 +1089,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1128,7 +1128,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1167,7 +1167,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1206,7 +1206,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1245,7 +1245,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1284,7 +1284,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1323,7 +1323,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "357007883a3f07aaf2d4661140388f37"
         },
@@ -1362,7 +1362,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1401,7 +1401,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "d157214abd9bce949f693a6753107597"
         },
@@ -1440,7 +1440,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1479,7 +1479,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1518,7 +1518,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "6891e1d18e5e56f7609d08540dcf3e54"
         },
@@ -1557,7 +1557,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1596,7 +1596,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1635,7 +1635,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1674,7 +1674,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1713,7 +1713,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1752,7 +1752,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "2b5a6ef4438c5ebd2054b8d6361899df"
         },
@@ -1791,7 +1791,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1830,7 +1830,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1869,7 +1869,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1908,7 +1908,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1947,7 +1947,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -1986,7 +1986,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -2025,7 +2025,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -2064,7 +2064,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -2103,7 +2103,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "44d5f3b5563a6bfb0e5d403fe70e38ca"
         },
@@ -2142,7 +2142,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "44d5f3b5563a6bfb0e5d403fe70e38ca"
         },
@@ -2181,7 +2181,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "44d5f3b5563a6bfb0e5d403fe70e38ca"
         },
@@ -2220,7 +2220,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "44d5f3b5563a6bfb0e5d403fe70e38ca"
         },
@@ -2259,7 +2259,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "44d5f3b5563a6bfb0e5d403fe70e38ca"
         },
@@ -2298,7 +2298,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -2337,7 +2337,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "926ce147bc8881a5c5166779aa9f4cf9"
         },
@@ -2376,7 +2376,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -2415,7 +2415,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "191f5b8ed14171a78ec64d07b10fc5e4"
         },
@@ -2454,7 +2454,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -2493,7 +2493,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "c393aa5bb1b3861cf4ea2603c0c29a31"
         },
@@ -2532,7 +2532,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 38,
@@ -2578,7 +2578,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -2617,7 +2617,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -2656,7 +2656,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "6910e4532d79533e0200bc5f896fc44c"
         },
@@ -2695,7 +2695,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -2734,7 +2734,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "bfef7fa8b1a2b0a46298ce055615052f"
         },
@@ -2773,7 +2773,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -2812,7 +2812,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -2851,7 +2851,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1af1d2c17433833b1ffcfb6b32c8e4db"
         },
@@ -2890,7 +2890,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "9296d6bb1e98ec35bfc5dece8db9d664"
         },
@@ -2929,7 +2929,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 35,
@@ -2985,7 +2985,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "9296d6bb1e98ec35bfc5dece8db9d664"
         },
@@ -3024,7 +3024,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "9296d6bb1e98ec35bfc5dece8db9d664"
         },
@@ -3063,7 +3063,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "9296d6bb1e98ec35bfc5dece8db9d664"
         },
@@ -3102,7 +3102,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "9296d6bb1e98ec35bfc5dece8db9d664"
         },
@@ -3141,7 +3141,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:37",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Authored by Lenny Zeltser with feedback from Pedro Bueno and Didier Stevens. Malicious document analysis and related topics are covered in the SANS Institute course FOR610: Reverse-Engineering Malware, which Lenny co-authored. Creative Commons v3 \u201cAttribution\u201d License for this cheat sheet version 4.1. More at zeltser.com/cheat-sheets.",

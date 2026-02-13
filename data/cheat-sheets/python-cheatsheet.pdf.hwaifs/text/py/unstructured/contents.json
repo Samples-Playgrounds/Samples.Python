@@ -31,7 +31,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Real Python Pocket Reference",
@@ -69,7 +69,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "454ac202a10e9270d812f10136e0cb21"
         },
@@ -108,7 +108,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Getting Started",
@@ -146,7 +146,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "1335833981643b94f050e5a8d0a7a01d"
         },
@@ -185,7 +185,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 41,
@@ -235,7 +235,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Start the Interactive Shell",
@@ -273,7 +273,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "$ python",
@@ -311,7 +311,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Quit the Interactive Shell",
@@ -349,7 +349,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "ab49f31dcb8d38e1d9be5e9df89942ef"
         },
@@ -388,7 +388,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Run a Script",
@@ -426,7 +426,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "$ python my_script.py",
@@ -464,7 +464,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Run a Script in Interactive Mode",
@@ -502,7 +502,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "$ python -i my_script.py",
@@ -540,7 +540,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 37,
@@ -596,7 +596,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Comments",
@@ -634,7 +634,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "e2e7d6faad184e73bf6c9876c0be8dab"
         },
@@ -673,7 +673,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Write Comments",
@@ -711,7 +711,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "71739d7a15b72d758b4ce2f90f7f37cd"
         },
@@ -750,7 +750,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 37,
@@ -800,7 +800,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Data Types",
@@ -838,7 +838,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Strings",
@@ -876,7 +876,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "a62c39303346a1e5d77a934291dd6621"
         },
@@ -915,7 +915,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "a62c39303346a1e5d77a934291dd6621"
         },
@@ -954,7 +954,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "a62c39303346a1e5d77a934291dd6621"
         },
@@ -993,7 +993,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "a62c39303346a1e5d77a934291dd6621"
         },
@@ -1032,7 +1032,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "4042ff88ec0b5ccf04dd4aabad4a4672"
         },
@@ -1071,7 +1071,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "4042ff88ec0b5ccf04dd4aabad4a4672"
         },
@@ -1110,7 +1110,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "a62c39303346a1e5d77a934291dd6621"
         },
@@ -1149,7 +1149,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "f96a155edfcb957d421b782634ff52b2"
         },
@@ -1188,7 +1188,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "f96a155edfcb957d421b782634ff52b2"
         },
@@ -1227,7 +1227,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "a62c39303346a1e5d77a934291dd6621"
         },
@@ -1266,7 +1266,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "a62c39303346a1e5d77a934291dd6621"
         },
@@ -1305,7 +1305,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "acf4d4c477688d2cbb00e5b68c7a2fef"
         },
@@ -1344,7 +1344,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "acf4d4c477688d2cbb00e5b68c7a2fef"
         },
@@ -1383,7 +1383,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 37,
@@ -1444,7 +1444,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "a62c39303346a1e5d77a934291dd6621"
         },
@@ -1483,7 +1483,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "a62c39303346a1e5d77a934291dd6621"
         },
@@ -1522,7 +1522,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "e5ecacb4bea80a693953a41a670e2644"
         },
@@ -1561,7 +1561,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "e5ecacb4bea80a693953a41a670e2644"
         },
@@ -1600,7 +1600,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "a62c39303346a1e5d77a934291dd6621"
         },
@@ -1639,7 +1639,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "bedc9f7bd2e7ee3de73c765eb0de01ac"
         },
@@ -1678,7 +1678,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "a62c39303346a1e5d77a934291dd6621"
         },
@@ -1717,7 +1717,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "90cbca2bcd547316234f221b7e03f22d"
         },
@@ -1756,7 +1756,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "a62c39303346a1e5d77a934291dd6621"
         },
@@ -1795,7 +1795,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "bbab4fe5bda3d092365df995aa8d3f8f"
         },
@@ -1834,7 +1834,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "bbab4fe5bda3d092365df995aa8d3f8f"
         },
@@ -1873,7 +1873,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "a62c39303346a1e5d77a934291dd6621"
         },
@@ -1912,7 +1912,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "a62c39303346a1e5d77a934291dd6621"
         },
@@ -1951,7 +1951,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "fd661a9f6504c494db639c8491eb2ce2"
         },
@@ -1990,7 +1990,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "fd661a9f6504c494db639c8491eb2ce2"
         },
@@ -2029,7 +2029,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "fd661a9f6504c494db639c8491eb2ce2"
         },
@@ -2068,7 +2068,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 37,
@@ -2124,7 +2124,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 37,
@@ -2185,7 +2185,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Continue your learning journey and become a Python expert at realpython.com/start-here",
@@ -2223,7 +2223,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Numbers & Math",
@@ -2261,7 +2261,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "65a32ed5a9705085b1c8c75f1a330754"
         },
@@ -2300,7 +2300,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "f56bcaea49da0b02fd8763713f6162a2"
         },
@@ -2339,7 +2339,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "65a32ed5a9705085b1c8c75f1a330754"
         },
@@ -2378,7 +2378,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "3cbe174a715bb9ba855ae76d2792b64f"
         },
@@ -2417,7 +2417,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 37,
@@ -2473,7 +2473,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "65a32ed5a9705085b1c8c75f1a330754"
         },
@@ -2512,7 +2512,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "eed1874c3ee22c9aef38d6c2ebb6cc08"
         },
@@ -2551,7 +2551,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "65a32ed5a9705085b1c8c75f1a330754"
         },
@@ -2590,7 +2590,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "68a5100dfd2e7581db741a0464da692f"
         },
@@ -2629,7 +2629,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "65a32ed5a9705085b1c8c75f1a330754"
         },
@@ -2668,7 +2668,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "24b7199afd6b3425e2451c500f6ab011"
         },
@@ -2707,7 +2707,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "65a32ed5a9705085b1c8c75f1a330754"
         },
@@ -2746,7 +2746,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "2f524c7180ede3f8a937435ae896aefc"
         },
@@ -2785,7 +2785,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "65a32ed5a9705085b1c8c75f1a330754"
         },
@@ -2824,7 +2824,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "16f22a36ee7a1c61888ccc6c71d038c7"
         },
@@ -2863,7 +2863,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 37,
@@ -2919,7 +2919,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Loops",
@@ -2957,7 +2957,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "33c5cf7556f2d9bc5f8bb046ae2ce734"
         },
@@ -2996,7 +2996,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "33c5cf7556f2d9bc5f8bb046ae2ce734"
         },
@@ -3035,7 +3035,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "73b40b880e0ffbb0110e0dad488cd7f6"
         },
@@ -3074,7 +3074,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "73b40b880e0ffbb0110e0dad488cd7f6"
         },
@@ -3113,7 +3113,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "33c5cf7556f2d9bc5f8bb046ae2ce734"
         },
@@ -3152,7 +3152,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "33c5cf7556f2d9bc5f8bb046ae2ce734"
         },
@@ -3191,7 +3191,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "d1a23723f7ca63635c85253ddc99c498"
         },
@@ -3230,7 +3230,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "33c5cf7556f2d9bc5f8bb046ae2ce734"
         },
@@ -3269,7 +3269,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "acee5efe76d0759a691228b2d62db6e6"
         },
@@ -3308,7 +3308,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 37,
@@ -3369,7 +3369,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "33c5cf7556f2d9bc5f8bb046ae2ce734"
         },
@@ -3408,7 +3408,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "3c260e94905b78e5d9dd9e97c2ce05bf"
         },
@@ -3447,7 +3447,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "33c5cf7556f2d9bc5f8bb046ae2ce734"
         },
@@ -3486,7 +3486,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "33c5cf7556f2d9bc5f8bb046ae2ce734"
         },
@@ -3525,7 +3525,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "33c5cf7556f2d9bc5f8bb046ae2ce734"
         },
@@ -3564,7 +3564,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "33c5cf7556f2d9bc5f8bb046ae2ce734"
         },
@@ -3603,7 +3603,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Calling Functions",
@@ -3641,7 +3641,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Class Attributes & Methods",
@@ -3679,7 +3679,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "362851ef550f347995d0ad4e36cf0473"
         },
@@ -3718,7 +3718,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "class Cat: species = \"Felis catus\" # Class attribute",
@@ -3756,7 +3756,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e89f25fdd126e10486e4ae962bbcab2e"
         },
@@ -3795,7 +3795,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e89f25fdd126e10486e4ae962bbcab2e"
         },
@@ -3834,7 +3834,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e89f25fdd126e10486e4ae962bbcab2e"
         },
@@ -3873,7 +3873,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "ef28cd5cda1d03f0668ec44db4ab5698"
         },
@@ -3912,7 +3912,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e89f25fdd126e10486e4ae962bbcab2e"
         },
@@ -3951,7 +3951,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e89f25fdd126e10486e4ae962bbcab2e"
         },
@@ -3990,7 +3990,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e89f25fdd126e10486e4ae962bbcab2e"
         },
@@ -4029,7 +4029,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e89f25fdd126e10486e4ae962bbcab2e"
         },
@@ -4068,7 +4068,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "71d44c1c278a584fef3f29a22338ea81"
         },
@@ -4107,7 +4107,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e89f25fdd126e10486e4ae962bbcab2e"
         },
@@ -4146,7 +4146,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e89f25fdd126e10486e4ae962bbcab2e"
         },
@@ -4185,7 +4185,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e89f25fdd126e10486e4ae962bbcab2e"
         },
@@ -4224,7 +4224,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e89f25fdd126e10486e4ae962bbcab2e"
         },
@@ -4263,7 +4263,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "f76a61545ee6f9829ee0647c975b5cff"
         },
@@ -4302,7 +4302,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "f76a61545ee6f9829ee0647c975b5cff"
         },
@@ -4341,7 +4341,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 37,
@@ -4392,7 +4392,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e89f25fdd126e10486e4ae962bbcab2e"
         },
@@ -4431,7 +4431,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 37,
@@ -4487,7 +4487,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e89f25fdd126e10486e4ae962bbcab2e"
         },
@@ -4526,7 +4526,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "86b85213b1b581f9d384e4252c564c6f"
         },
@@ -4565,7 +4565,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "86b85213b1b581f9d384e4252c564c6f"
         },
@@ -4604,7 +4604,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e89f25fdd126e10486e4ae962bbcab2e"
         },
@@ -4643,7 +4643,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e89f25fdd126e10486e4ae962bbcab2e"
         },
@@ -4682,7 +4682,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e89f25fdd126e10486e4ae962bbcab2e"
         },
@@ -4721,7 +4721,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "0c442a3b8287fa6a231606c11b65b0f2"
         },
@@ -4760,7 +4760,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "0c442a3b8287fa6a231606c11b65b0f2"
         },
@@ -4799,7 +4799,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e89f25fdd126e10486e4ae962bbcab2e"
         },
@@ -4838,7 +4838,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e89f25fdd126e10486e4ae962bbcab2e"
         },
@@ -4877,7 +4877,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "3f508fe880aeccdb332ca3e40d3567aa"
         },
@@ -4916,7 +4916,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Continue your learning journey and become a Python expert at realpython.com/start-here",
@@ -4954,7 +4954,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Raising Exceptions",
@@ -4992,7 +4992,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "6b392f9ec8989a74ce3a439b9ba9c854"
         },
@@ -5031,7 +5031,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 37,
@@ -5087,7 +5087,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "6b392f9ec8989a74ce3a439b9ba9c854"
         },
@@ -5126,7 +5126,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "f21799553454dabaa6dd7f29643bf29a"
         },
@@ -5165,7 +5165,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "6b392f9ec8989a74ce3a439b9ba9c854"
         },
@@ -5204,7 +5204,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "61bd441944eb2b518b0562a2103edf25"
         },
@@ -5243,7 +5243,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "61bd441944eb2b518b0562a2103edf25"
         },
@@ -5282,7 +5282,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "61bd441944eb2b518b0562a2103edf25"
         },
@@ -5321,7 +5321,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "6b392f9ec8989a74ce3a439b9ba9c854"
         },
@@ -5360,7 +5360,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "5e3322044583effd78b73ba74731fa67"
         },
@@ -5399,7 +5399,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "5e3322044583effd78b73ba74731fa67"
         },
@@ -5438,7 +5438,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "5e3322044583effd78b73ba74731fa67"
         },
@@ -5477,7 +5477,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "Sets",
@@ -5515,7 +5515,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "38cec188e1731baf04843239a14b5e2a"
         },
@@ -5554,7 +5554,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "38cec188e1731baf04843239a14b5e2a"
         },
@@ -5593,7 +5593,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "38cec188e1731baf04843239a14b5e2a"
         },
@@ -5632,7 +5632,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "a28d3551f4ec85794305c16a0244b7b7"
         },
@@ -5671,7 +5671,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "a28d3551f4ec85794305c16a0244b7b7"
         },
@@ -5710,7 +5710,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "a28d3551f4ec85794305c16a0244b7b7"
         },
@@ -5749,7 +5749,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 37,
@@ -5820,7 +5820,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "38cec188e1731baf04843239a14b5e2a"
         },
@@ -5859,7 +5859,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "80087891c08a29dd82e1ef70d3ae969f"
         },
@@ -5898,7 +5898,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "38cec188e1731baf04843239a14b5e2a"
         },
@@ -5937,7 +5937,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "874dc8f863b7550551b95ee7b43895c8"
         },
@@ -5976,7 +5976,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "874dc8f863b7550551b95ee7b43895c8"
         },
@@ -6015,7 +6015,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "874dc8f863b7550551b95ee7b43895c8"
         },
@@ -6054,7 +6054,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "38cec188e1731baf04843239a14b5e2a"
         },
@@ -6093,7 +6093,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "38cec188e1731baf04843239a14b5e2a"
         },
@@ -6132,7 +6132,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "38cec188e1731baf04843239a14b5e2a"
         },
@@ -6171,7 +6171,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "295ad8fbe093efcc33e9f9b19778fb94"
         },
@@ -6210,7 +6210,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 37,
@@ -6266,7 +6266,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "File I/O",
@@ -6304,7 +6304,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "Virtual Environments",
@@ -6342,7 +6342,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -6381,7 +6381,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "c53800b42f8fda9f1d01673db0ecffc4"
         },
@@ -6420,7 +6420,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "c53800b42f8fda9f1d01673db0ecffc4"
         },
@@ -6459,7 +6459,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -6498,7 +6498,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "32e4c613c203bb8a6ef281e257b4291e"
         },
@@ -6537,7 +6537,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -6576,7 +6576,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -6615,7 +6615,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -6654,7 +6654,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -6693,7 +6693,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -6732,7 +6732,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -6771,7 +6771,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "0da595fcb14381a320fcb89455038385"
         },
@@ -6810,7 +6810,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -6849,7 +6849,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -6888,7 +6888,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 37,
@@ -6944,7 +6944,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 37,
@@ -6995,7 +6995,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -7034,7 +7034,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -7073,7 +7073,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "6c637b233e12deef78ff3a933b588a6a"
         },
@@ -7112,7 +7112,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "6c637b233e12deef78ff3a933b588a6a"
         },
@@ -7151,7 +7151,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -7190,7 +7190,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -7229,7 +7229,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -7268,7 +7268,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -7307,7 +7307,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -7346,7 +7346,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -7385,7 +7385,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "e96c0d25cc5a0b2808c7bf9a2d26ffb0"
         },
@@ -7424,7 +7424,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -7463,7 +7463,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "0dcd3c5b8026429a99c969c1837e566f"
         },
@@ -7502,7 +7502,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 27,
@@ -7548,7 +7548,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "7a997db4eb0578a76b9266c6b247beb4"
         },
@@ -7587,7 +7587,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -7626,7 +7626,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -7665,7 +7665,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -7704,7 +7704,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -7743,7 +7743,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "b54965718932538ed4878bd0600952a0"
         },
@@ -7782,7 +7782,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "b54965718932538ed4878bd0600952a0"
         },
@@ -7821,7 +7821,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "b54965718932538ed4878bd0600952a0"
         },
@@ -7860,7 +7860,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -7899,7 +7899,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "ca67fdd5623240ba262205ad4d87bd84"
         },
@@ -7938,7 +7938,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "ca67fdd5623240ba262205ad4d87bd84"
         },
@@ -7977,7 +7977,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "ca67fdd5623240ba262205ad4d87bd84"
         },
@@ -8016,7 +8016,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "ca67fdd5623240ba262205ad4d87bd84"
         },
@@ -8055,7 +8055,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "ca67fdd5623240ba262205ad4d87bd84"
         },
@@ -8094,7 +8094,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -8133,7 +8133,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "1650cf8011919da32a41d53f39440353"
         },
@@ -8172,7 +8172,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "1650cf8011919da32a41d53f39440353"
         },
@@ -8211,7 +8211,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 37,
@@ -8267,7 +8267,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -8306,7 +8306,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "dba3d4172fc8e3876ad8ed182523f3ab"
         },
@@ -8345,7 +8345,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "cc56292f25de581de85c8f4a60ee9d4d"
         },
@@ -8384,7 +8384,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "Continue your learning journey and become a Python expert at realpython.com/start-here",
@@ -8422,7 +8422,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "Pythonic Constructs",
@@ -8460,7 +8460,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3
         },
         "text": "# Swap variables a, b = b, a",
@@ -8498,7 +8498,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "b6e78b339a8c74e0f7c9aa31984a0760"
         },
@@ -8537,7 +8537,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "b6e78b339a8c74e0f7c9aa31984a0760"
         },
@@ -8576,7 +8576,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "b6e78b339a8c74e0f7c9aa31984a0760"
         },
@@ -8615,7 +8615,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "8ef00a1e5d3c02e92fa33421ccb9337a"
         },
@@ -8654,7 +8654,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "8ef00a1e5d3c02e92fa33421ccb9337a"
         },
@@ -8693,7 +8693,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 37,
@@ -8744,7 +8744,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "4a5fae79492779261bfbaaa694905349"
         },
@@ -8783,7 +8783,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 3,
             "parent_id": "4a5fae79492779261bfbaaa694905349"
         },
@@ -8822,7 +8822,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 15,
@@ -8888,7 +8888,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:26",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 61,

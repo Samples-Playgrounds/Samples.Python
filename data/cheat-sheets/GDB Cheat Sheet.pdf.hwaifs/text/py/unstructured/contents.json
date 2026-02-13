@@ -31,7 +31,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Running",
@@ -69,7 +69,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "# gdb <program> [core dump]",
@@ -107,7 +107,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Start GDB (with optional core dump).",
@@ -145,7 +145,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "2f8dd98d8fef0b8185f127e8b959146e"
         },
@@ -184,7 +184,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "# gdb --pid <pid>",
@@ -222,7 +222,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "de1d6c8e5494ccd833becfc0c15f58bf"
         },
@@ -261,7 +261,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "de1d6c8e5494ccd833becfc0c15f58bf"
         },
@@ -300,7 +300,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "de1d6c8e5494ccd833becfc0c15f58bf"
         },
@@ -339,7 +339,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "de1d6c8e5494ccd833becfc0c15f58bf"
         },
@@ -378,7 +378,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "de1d6c8e5494ccd833becfc0c15f58bf"
         },
@@ -417,7 +417,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "kill",
@@ -455,7 +455,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Kill the running program.",
@@ -493,7 +493,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Breakpoints",
@@ -531,7 +531,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "break <where>",
@@ -569,7 +569,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "df7fd2ae14c09e084ee12274c859f2ad"
         },
@@ -608,7 +608,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "delete <breakpoint#>",
@@ -646,7 +646,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "ae748c33a743bcd5d43072212f201f02"
         },
@@ -685,7 +685,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "clear",
@@ -723,7 +723,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Delete all breakpoints.",
@@ -761,7 +761,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "enable <breakpoint#>",
@@ -799,7 +799,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "f3e99c429ee967408fd12d3afe94e723"
         },
@@ -838,7 +838,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "disable <breakpoint#>",
@@ -876,7 +876,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "dd591caba940eed4dccd7340901e7123"
         },
@@ -915,7 +915,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Watchpoints",
@@ -953,7 +953,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "watch <where>",
@@ -991,7 +991,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "cbd8130800f0881c3e4519995302e2c5"
         },
@@ -1030,7 +1030,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "delete/enable/disable <watchpoint#>",
@@ -1068,7 +1068,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Like breakpoints.",
@@ -1106,7 +1106,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "GDB cheatsheet - page 1",
@@ -1144,7 +1144,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "<where>",
@@ -1182,7 +1182,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "function_name",
@@ -1220,7 +1220,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "02e3b42e58043023419a3643b0603a90"
         },
@@ -1259,7 +1259,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "line_number",
@@ -1297,7 +1297,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "963229fb07bf6617d1520551b10f3ba0"
         },
@@ -1336,7 +1336,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "file:line_number",
@@ -1374,7 +1374,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "569c030d13a6a3613d25d82dfe6a663e"
         },
@@ -1413,7 +1413,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Conditions",
@@ -1451,7 +1451,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "break/watch <where> if <condition>",
@@ -1489,7 +1489,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "5039b249dd32df459e60b797040b6373"
         },
@@ -1528,7 +1528,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "5039b249dd32df459e60b797040b6373"
         },
@@ -1567,7 +1567,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "5039b249dd32df459e60b797040b6373"
         },
@@ -1606,7 +1606,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "5039b249dd32df459e60b797040b6373"
         },
@@ -1645,7 +1645,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "backtrace where",
@@ -1683,7 +1683,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Show call stack.",
@@ -1721,7 +1721,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "backtrace full where full",
@@ -1759,7 +1759,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "e0fb942a7291b89ba9be9701da9e32ca"
         },
@@ -1798,7 +1798,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "frame <frame#>",
@@ -1836,7 +1836,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "bb58d1f3e82a6ade6c196cf3b9c0db61"
         },
@@ -1875,7 +1875,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Stepping",
@@ -1913,7 +1913,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "step",
@@ -1951,7 +1951,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "4fec499c267dcb75f2b7385d122178d7"
         },
@@ -1990,7 +1990,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 22,
@@ -2035,7 +2035,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "next",
@@ -2073,7 +2073,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "4692fb0cc44c5bf907e8e660db3c6b31"
         },
@@ -2112,7 +2112,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "finish",
@@ -2150,7 +2150,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Continue until the current function re- turns.",
@@ -2188,7 +2188,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "continue",
@@ -2226,7 +2226,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Continue normal execution.",
@@ -2264,7 +2264,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Variables and memory",
@@ -2302,7 +2302,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "72992ebee582571fcb64ef16aaac441d"
         },
@@ -2341,7 +2341,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Print content of variable/memory locati- on/register.",
@@ -2379,7 +2379,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "e9e264ae42c363a99ce19cf8a32953a0"
         },
@@ -2418,7 +2418,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "e9e264ae42c363a99ce19cf8a32953a0"
         },
@@ -2457,7 +2457,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "undisplay <display#>",
@@ -2495,7 +2495,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "2fda82a50659969de1ce3c9b86db5898"
         },
@@ -2534,7 +2534,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "enable display <display#> disable display <display#>",
@@ -2572,7 +2572,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "37df464b7b59a21f9a662be56adbdc89"
         },
@@ -2611,7 +2611,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "x/nfu <address>",
@@ -2649,7 +2649,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "6b42a86e181ad9592308f45af306f27a"
         },
@@ -2688,7 +2688,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "6b42a86e181ad9592308f45af306f27a"
         },
@@ -2727,7 +2727,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "6b42a86e181ad9592308f45af306f27a"
         },
@@ -2766,7 +2766,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Format",
@@ -2804,7 +2804,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "a\r c\r d\r f\r o\r s\r t\r u\r x",
@@ -2842,7 +2842,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "9ba6306e209db282c6bb6af4d4465a80"
         },
@@ -2881,7 +2881,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "expression",
@@ -2919,7 +2919,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "9e2cce79e53a5f19b541525a8fc6ce3d"
         },
@@ -2958,7 +2958,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "file_name::variable_name",
@@ -2996,7 +2996,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e7fff3544ed1f2765e73f0b395f8a00f"
         },
@@ -3035,7 +3035,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "function::variable_name",
@@ -3073,7 +3073,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "0c1059b730bfe21d74d1f74ef782c219"
         },
@@ -3112,7 +3112,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "{type}address",
@@ -3150,7 +3150,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "d12da774bd55dd731acc78c3b52356fb"
         },
@@ -3189,7 +3189,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "$register",
@@ -3227,7 +3227,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "946c0f788bb4232a80ce59b0f01d91a8"
         },
@@ -3266,7 +3266,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Threads",
@@ -3304,7 +3304,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "thread <thread#>",
@@ -3342,7 +3342,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "20e24c4c1a40b84fe56c6e085193bde3"
         },
@@ -3381,7 +3381,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "GDB cheatsheet - page 2",
@@ -3419,7 +3419,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e41d56b282495d5b49166bbc2c81a8fe"
         },
@@ -3458,7 +3458,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "e41d56b282495d5b49166bbc2c81a8fe"
         },
@@ -3497,7 +3497,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "return <expression>",
@@ -3535,7 +3535,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "bc45bc2ab7fe00d5f64e2583d92f3728"
         },
@@ -3574,7 +3574,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Sources",
@@ -3612,7 +3612,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "directory <directory>",
@@ -3650,7 +3650,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "704854efd65928a4c4c0c117aad64989"
         },
@@ -3689,7 +3689,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "704854efd65928a4c4c0c117aad64989"
         },
@@ -3728,7 +3728,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "704854efd65928a4c4c0c117aad64989"
         },
@@ -3767,7 +3767,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "704854efd65928a4c4c0c117aad64989"
         },
@@ -3806,7 +3806,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "704854efd65928a4c4c0c117aad64989"
         },
@@ -3845,7 +3845,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Signals",
@@ -3883,7 +3883,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "98b5fb58a2fd03b8266da8f5670196c7"
         },
@@ -3922,7 +3922,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "98b5fb58a2fd03b8266da8f5670196c7"
         },
@@ -3961,7 +3961,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "98b5fb58a2fd03b8266da8f5670196c7"
         },
@@ -4000,7 +4000,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "98b5fb58a2fd03b8266da8f5670196c7"
         },
@@ -4039,7 +4039,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "98b5fb58a2fd03b8266da8f5670196c7"
         },
@@ -4078,7 +4078,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "links": [
                 {
                     "start_index": 22,
@@ -4123,7 +4123,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Informations",
@@ -4161,7 +4161,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "disassemble disassemble <where>",
@@ -4199,7 +4199,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "75a9ef30ff115c99b4ecca8b5e51bb59"
         },
@@ -4238,7 +4238,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "info args",
@@ -4276,7 +4276,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "1e86140d376b36f1bae1aca88db09cc3"
         },
@@ -4315,7 +4315,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "info breakpoints",
@@ -4353,7 +4353,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Print informations about the break- and watchpoints.",
@@ -4391,7 +4391,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "info display",
@@ -4429,7 +4429,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Print informations about the \u201edisplays\u201c.",
@@ -4467,7 +4467,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "info locals",
@@ -4505,7 +4505,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "c4116490c0497ce77e365a4477cbef9e"
         },
@@ -4544,7 +4544,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "info sharedlibrary",
@@ -4582,7 +4582,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "fa0f65abff703fd6110fc8ec1da9b512"
         },
@@ -4621,7 +4621,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "info signals",
@@ -4659,7 +4659,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "761c3deb404693e946c542c239a5bff1"
         },
@@ -4698,7 +4698,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "info threads",
@@ -4736,7 +4736,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "List all threads.",
@@ -4774,7 +4774,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "show directories",
@@ -4812,7 +4812,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "Print all directories in which GDB sear- ches for source \ufb01les.",
@@ -4850,7 +4850,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "3e199f2732bc9dcbc2e574fd42a05b4e"
         },
@@ -4889,7 +4889,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "3e199f2732bc9dcbc2e574fd42a05b4e"
         },
@@ -4928,7 +4928,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2
         },
         "text": "whatis variable_name",
@@ -4966,7 +4966,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:18:02",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 2,
             "parent_id": "dccade89862a34764602ef1b80fa31ea"
         },

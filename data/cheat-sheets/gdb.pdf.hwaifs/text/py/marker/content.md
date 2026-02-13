@@ -220,9 +220,7 @@ display/I $pc
 
 would display the next instruction after each step.
 
-```
 (gdb) x/4x argv
-```
 
 0xbffff6e4: 0xbffff86b 0xbffff8b3 0xbffff8b6 0x00000000
 

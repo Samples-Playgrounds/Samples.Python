@@ -355,6 +355,10 @@ Learn More Python for Data Science Interactively at www.datacamp.com
 
 
 
+
+
+
+
 **DataCamp**
 **Learn Python for Data Science** **Interactively**
 
@@ -512,6 +516,10 @@ Learn Python for data science **Interactively** at www.DataCamp.com
 |**   Adjusted Rand Index**<br>`>>> from sklearn.metrics import adjusted_rand_score`<br>`>>> adjusted_rand_score(y_true, y_pred)`<br>**  Homogeneity**<br>`>>> from sklearn.metrics import homogeneity_score`<br>`>>> homogeneity_score(y_true, y_pred)`<br> ** V-measure**<br>`>>> from sklearn.metrics import v_measure_score`<br>`>>> metrics.v_measure_score(y_true, y_pred)`|**   Adjusted Rand Index**<br>`>>> from sklearn.metrics import adjusted_rand_score`<br>`>>> adjusted_rand_score(y_true, y_pred)`<br>**  Homogeneity**<br>`>>> from sklearn.metrics import homogeneity_score`<br>`>>> homogeneity_score(y_true, y_pred)`<br> ** V-measure**<br>`>>> from sklearn.metrics import v_measure_score`<br>`>>> metrics.v_measure_score(y_true, y_pred)`|
 |**Cross-Validation**<br> <br>|**Cross-Validation**<br> <br>|
 |`>>> from sklearn.cross_validation import cross_val_score`<br>`>>> print(cross_val_score(knn, X_train, y_train, cv=4))`<br>`>>> print(cross_val_score(lr, X, y, cv=2))`|`>>> from sklearn.cross_validation import cross_val_score`<br>`>>> print(cross_val_score(knn, X_train, y_train, cv=4))`<br>`>>> print(cross_val_score(lr, X, y, cv=2))`|
+
+
+
+
 
 
 

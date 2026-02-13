@@ -13,7 +13,7 @@ Format of vi commands: _[count][command]_ (count repeats the effect of the comma
 
 
 
-~~Command mode versus input mode~~
+Command mode versus input mode
 
 
 Vi starts in command mode. The positioning commands
@@ -22,7 +22,7 @@ to input mode by entering any one of several vi input commands. (See next sectio
 cannot execute any commands until you exit input mode.
 To exit input mode, press the escape ( **`Esc`** ) key.
 
-~~Input commands~~ ~~(end with Esc)~~
+Input commands (end with Esc)
 
 a Append after cursor
 i Insert before cursor
@@ -35,7 +35,7 @@ Any of these commands leaves vi in input mode until you
 press **`Esc`** . Pressing the **`RETURN`** key will not take you out
 of input mode.
 
-~~Change commands (Input mode)~~
+Change commands (Input mode)
 
 cw Change word (Esc)
 cc Change line (Esc) - blanks line
@@ -47,7 +47,7 @@ S Substitute (Esc) - Rest of line with
 text
 ## . Repeat last change
 
-~~Changes during insert mode~~
+Changes during insert mode
 
 <ctrl>h Back one character
 <ctrl>w Back one word
@@ -55,7 +55,7 @@ text
 
 
 
-~~File management commands~~
+File management commands
 
 :w _name_ Write edit buffer to file _name_
 :wq Write to file and quit
@@ -63,7 +63,7 @@ text
 ZZ Same as :wq
 :sh Execute shell commands (<ctrl>d)
 
-~~Window motions~~
+Window motions
 
 <ctrl>d Scroll down (half a screen)
 <ctrl>u Scroll up (half a screen)
@@ -83,7 +83,7 @@ z<CR> Reposition window: cursor at top
 z. Reposition window: cursor in middle
 z- Reposition window: cursor at bottom
 
-~~Cursor motions~~
+Cursor motions
 
 H Upper left corner (home)
 M Middle line
@@ -100,7 +100,7 @@ f _c_ Find _c_
 ; Repeat find (find next _c_ )
 
 
-~~Deletion commands~~
+Deletion commands
 
 dd or _n_ dd Delete _n_ lines to general buffer
 dw Delete word to general buffer
@@ -110,17 +110,17 @@ db Delete previous word
 D Delete to end of line
 x Delete character
 
-~~Recovering deletions~~
+Recovering deletions
 
 p Put general buffer after cursor
 P Put general buffer before cursor
 
-~~Undo commands~~
+Undo commands
 
 u Undo last change
 U Undo all changes on line
 
-~~Rearrangement commands~~
+Rearrangement commands
 
 yy or Y Yank (copy) line to general buffer
 “ _z_ 6yy Yank 6 lines to buffer _z_
@@ -132,7 +132,7 @@ p Put general buffer after cursor
 P Put general buffer before cursor
 J Join lines
 
-~~Parameters~~
+Parameters
 
 :set list Show invisible characters
 :set nolist Don’t show invisible characters
@@ -154,7 +154,7 @@ parameters
 
 
 
-~~Move text from file~~ ~~_old_~~ ~~to file~~ ~~_new_~~
+Move text from file _old_ to file _new_
 
 vi _old_
 “ _a_ 10yy yank 10 lines to buffer _a_
@@ -163,7 +163,7 @@ vi _old_
 “ _a_ p put text from _a_ after cursor
 :30,60w _new_ Write lines 30 to 60 in file _new_
 
-~~Regular expressions (search strings)~~
+Regular expressions (search strings)
 
 ^ Matches beginning of line
 $ Matches end of line
@@ -172,7 +172,7 @@ $ Matches end of line
  - Matches any previous character
 .* Matches any character
 
-~~Search and replace commands~~
+Search and replace commands
 
 
 Syntax:

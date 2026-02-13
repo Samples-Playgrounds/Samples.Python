@@ -247,7 +247,7 @@ the specific columns .
 
 |x1|x2|
 |---|---|
-|<br>**A**|<br>**1**|
+|**A**|<br>**1**|
 |**B**|**2**|
 |**C**|**3**|
 
@@ -398,14 +398,6 @@ pd.qcut(df.col, n, labels=False)
 
 Bin column into n buckets.
 
-|Vector<br>function|Col2|Col3|
-|---|---|---|
-|**Vector**<br>**function**|||
-|**Vector**<br>**function**|||
-|**Vector**<br>**function**|||
-|**Vector**<br>**function**|||
-
-
 
 pandas provides a large set of **vector functions** that operate on all
 columns of a DataFrame or a single selected column (a pandas
@@ -442,7 +434,7 @@ columns, or a single Series for the individual Series. Examples:
 
 |x1|x2|
 |---|---|
-|<br>**C**|<br>**3**|
+|**C**|**3**|
 
 
 |x1|x2|
@@ -595,7 +587,7 @@ df.rolling(n)
 
 |x1|x2|
 |---|---|
-|**A**|**1**|
+|<br>**A**|<br>**1**|
 
 
 

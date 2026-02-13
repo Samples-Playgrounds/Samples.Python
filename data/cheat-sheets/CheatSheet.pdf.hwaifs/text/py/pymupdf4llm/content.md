@@ -40,7 +40,7 @@ _•_ "abc"  - Unicode string, sugar for
 _•_ 'a'  - Single character.
 
 
-**Multi-line Strings** Normally, it is a syntax error
+**Multi-line** **Strings** Normally, it is a syntax error
 if a string has any actual newline characters. That
 is, this is a syntax error:
 
@@ -115,7 +115,7 @@ In fact, any value which is in the Enum class can be
 used:
 
 
-_•_ ['a' .. 'z']  - List of characters – a, b,
+_•_ ['a' .. 'z']  - List of characters  - a, b,
 . . ., z .
 
 _•_ [1.0, 1.5 .. 2]  - [1.0,1.5,2.0] .
@@ -212,28 +212,28 @@ scope. The general rule is: always indent. When
 the compiler complains, indent more.
 
 
-**Braces and semi-colons** Semi-colons terminate an expression, and braces represent scope.
+**Braces** **and** **semi-colons** Semi-colons terminate an expression, and braces represent scope.
 They can be used after several keywords: where,
 let, do and of . They cannot be used when defining a function body. For example, the below will
 not compile.
 
 
-square2 x = { x * x; }
+square2 x = { x   - x; }
 
 
 However, this will work fine:
 
 
 square2 x = result
-where { result = x * x; }
+where { result = x   - x; }
 
 
-**Function Definition** Indent the body at least
+**Function** **Definition** Indent the body at least
 one space from the function name:
 
 
 square x =
-x * x
+x  - x
 
 
 Unless a where clause is present. In that case, indent the where clause at least one space from the
@@ -244,7 +244,7 @@ space from the where keyword:
 square x =
 x2
 where x2 =
-x * x
+x   - x
 
 
 
@@ -256,7 +256,7 @@ appear in the column after the let:
 
 square x =
 let x2 =
-x * x
+x    - x
 in x2
 
 
@@ -289,9 +289,9 @@ given:
 
 whichChoice ch =
 case ch of
-First _  "1st!"
-Second  "2nd!"
-_  "Something else."
+First _ "1st!"
+Second "2nd!"
+_ "Something else."
 
 
 As with pattern-matching in function definitions,
@@ -299,7 +299,7 @@ the ‘ _ ’ token is a “wildcard” matching any value.
 
 
 
-**Nesting & Capture** Nested matching and binding are also allowed.
+**Nesting** **&** **Capture** Nested matching and binding are also allowed.
 
 
 data Maybe a = Just a | Nothing
@@ -314,10 +314,10 @@ given using a nested match:
 
 anyChoice1 ch =
 case ch of
-Nothing  "No choice!"
-Just (First _)  "First!"
-Just Second  "Second!"
-_  "Something else."
+Nothing "No choice!"
+Just (First _) "First!"
+Just Second "Second!"
+_ "Something else."
 
 
 Binding can be used to manipulate the value
@@ -326,13 +326,13 @@ matched:
 
 anyChoice2 ch =
 case ch of
-Nothing  "No choice!"
-Just score@(First "gold") 
+Nothing "No choice!"
+Just score@(First "gold")
 "First with gold!"
-Just score@(First _) 
+Just score@(First _)
 "First with something else: "
 ++ show score
-_  "Not rst."
+_ "Not rst."
 
 
 **Matching Order** Matching proceeds from top to
@@ -342,8 +342,8 @@ first pattern will always succeed:
 
 anyChoice3 ch =
 case ch of
-_  "Something else."
-Nothing  "No choice!"
+_ "Something else."
+Nothing "No choice!"
 
 
 
@@ -367,7 +367,7 @@ names _must_ start with a capital letter. It is a syntax
 error otherwise.
 
 
-**Constructors with Arguments** The type above
+**Constructors** **with** **Arguments** The type above
 is not very interesting except as an enumeration.
 Constructors that take arguments can be declared,
 allowing more information to be stored:
@@ -391,7 +391,7 @@ instead, the Point type must be used:
 data Poly = Triangle Point Point Point
 
 
-**Type and Constructor Names** Type and constructor names can be the same, because they will
+**Type** **and** **Constructor** **Names** Type and constructor names can be the same, because they will
 never be used in a place that would cause confusion. For example:
 
 
@@ -403,8 +403,8 @@ function makes the difference clear:
 
 
 
-Just (First _)  "First!"
-Just Second  "Second!"
+Just (First _) "First!"
+Just Second "Second!"
 
 
 **Guards** Guards, or conditional matches, can be
@@ -415,12 +415,12 @@ string match:
 
 
 strcmp s1 s2 = case (s1, s2) of
-([], [])  True
+([], []) True
 (s1:ss1, s2:ss2)
-| toUpper s1  toUpper s2 
+| toUpper s1 toUpper s2
 strcmp ss1 ss2
-| otherwise  False
-_  False
+| otherwise False
+_ False
 
 
 **Class**
@@ -448,7 +448,7 @@ a given type:
 
 
 class Flavor a where
-avor :: a  String
+avor :: a String
 
 
 Notice that the declaration only gives the type
@@ -468,14 +468,14 @@ avor _ = "sour"
 Evaluating flavor True gives:
 
 
- - avor True
+ - avor True
 "sweet"
 
 
 While flavor 'x' gives:
 
 
- - avor 'x'
+ - avor 'x'
 "sour"
 
 
@@ -487,9 +487,9 @@ one of the member functions. The canonical example is Eq, which defines /= (not 
 
 
 class Eq a where
-() :: a  a  Bool
-() :: a  a  Bool
-() a b = �(a  b)
+() :: a a Bool
+() :: a a Bool
+() a b = �(a b)
 
 
 Recursive definitions can be created, but an
@@ -505,11 +505,11 @@ whatUser (User _) = "normal user."
 whatUser (Admin _) = "admin user."
 
 
-Some literature refers to this practice as _type pun-_
+Some literature refers to this practice as _type_ _pun-_
 _ning_ .
 
 
-**Type Variables** Declaring so-called _polymorphic_
+**Type** **Variables** Declaring so-called _polymorphic_
 data types is as easy as adding type variables in
 the declaration:
 
@@ -532,7 +532,7 @@ Above, the Slot2 constructor can take a value of
 any type and an Int value.
 
 
-**Record Syntax** Constructor arguments can be
+**Record** **Syntax** Constructor arguments can be
 declared either positionally, as above, or using
 record syntax, which gives a name to each argument. For example, here we declare a Contact type
 with names for appropriate arguments:
@@ -571,7 +571,7 @@ Finally, as explained elsewhere, these names
 can be used for pattern matching, argument capture and “updating.”
 
 
-**Class Constraints** Data types can be declared
+**Class** **Constraints** Data types can be declared
 with class constraints on the type variables, but
 this practice is generally discouraged. It is generally better to hide the “raw” data constructors using the module system and instead export “smart”
 constructors which apply appropriate constraints.
@@ -638,9 +638,9 @@ the in keyword.
 _⃝_ c 2009 Justin Bailey. 4 [jgbailey@codeslower.com](mailto:jgbailey@codeslower.com)
 
 
-le  do
-f �readFile le
-putStrLn ("The le is " ++
+le do
+f �readFile le
+putStrLn ("The le is " ++
 show (length f)
 ++ " bytes long.")
 
@@ -653,13 +653,13 @@ applies to if as well:
 
 countBytes3 =
 do
-putStrLn "Enter a lename."
+putStrLn "Enter a lename."
 args �getLine
 case args of
 
-[]  putStrLn "No args given."
-le  do { f �readFile le;
-putStrLn ("The le is " ++
+[] putStrLn "No args given."
+le do { f �readFile le;
+putStrLn ("The le is " ++
 show (length f)
 ++ " bytes long."); }
 
@@ -688,19 +688,19 @@ else s : rest
 
 
 
-**If and IO** if can be tricky when used with
+**If** **and** **IO** if can be tricky when used with
 IO. Conceptually it is no different from an if in
 any other context, but intuitively it is hard to develop. Consider the function doesFileExists from
 System.Directory :
 
 
-doesFileExist :: FilePath  IO Bool
+doesFileExist :: FilePath IO Bool
 
 
 The if statement has this “signature”:
 
 
-if-then-else :: Bool  a  a  a
+if-then-else :: Bool a a a
 
 
 That is, it takes a Bool value and evaluates to some
@@ -709,8 +709,8 @@ signatures it is clear that doesFileExist cannot be
 used directly by if :
 
 
-wrong leName =
-if doesFileExist leName
+wrong leName =
+if doesFileExist leName
 then ...
 else ...
 
@@ -720,9 +720,9 @@ while if wants a Bool value. Instead, the correct
 value must be “extracted” by running the IO action:
 
 
-right1 leName = do
- �doesFileExist leName
-if 
+right1 leName = do
+�doesFileExist leName
+if
 then return 1
 else return 0
 
@@ -733,13 +733,13 @@ if inline here—we can also use let to evaluate the
 condition and get a value first:
 
 
-right2 leName = do
- �doesFileExist leName
+right2 leName = do
+�doesFileExist leName
 
 
 
 let result =
-if 
+if
 then 1
 else 0
 return result
@@ -757,17 +757,17 @@ statements. An example with if :
 
 countBytes1 f =
 do
-putStrLn "Enter a lename."
+putStrLn "Enter a lename."
 args �getLine
-if length args  0
+if length args 0
 -- no ’do’.
-then putStrLn "No lename given."
+then putStrLn "No lename given."
 else
 -- multiple statements require
 -- a new ’do’.
 do
 f �readFile args
-putStrLn ("The le is " ++
+putStrLn ("The le is " ++
 show (length f)
 ++ " bytes long.")
 
@@ -777,11 +777,11 @@ And one with case :
 
 countBytes2 =
 do
-putStrLn "Enter a lename."
+putStrLn "Enter a lename."
 args �getLine
 case args of
 
-[]  putStrLn "No args given."
+[] putStrLn "No args given."
 
 
 
@@ -829,7 +829,7 @@ by map to give the multiples of x up to 10:
 
 
 multiples x =
-let mult n = n * x
+let mult n = n   - x
 in map mult [1..10]
 
 
@@ -1029,12 +1029,12 @@ constructor or class can be hidden.
 
 
 
-**Instance Declarations** It must be noted that
+**Instance** **Declarations** It must be noted that
 instance declarations _cannot_ be excluded from import: all instance declarations in a module will be
 imported when the module is imported.
 
 
-**Qualified Imports** The names exported by a
+**Qualified** **Imports** The names exported by a
 module (i.e., functions, types, operators, etc.) can
 have a prefix attached through qualified imports.
 This is particularly useful for modules which have
@@ -1138,7 +1138,7 @@ See do on page 4.
 **Type**
 
 
-This keyword defines a _type synonym_ (i.e., alias).
+This keyword defines a _type_ _synonym_ (i.e., alias).
 This keyword does not define a new type, like data
 or newtype . It is useful for documenting code but
 otherwise has no effect on the actual type of a given
@@ -1169,7 +1169,7 @@ lower s = map toLower s
 which has the type
 
 
-lower :: String  String
+lower :: String String
 
 
 can be used on values with the type FirstName or
@@ -1218,7 +1218,7 @@ strlen f = result ++ " characters long!"
 where result = show (length f)
 
 
-**Where vs. Let** A where clause can only be defined at the level of a function definition. Usually,
+**Where** **vs.** **Let** A where clause can only be defined at the level of a function definition. Usually,
 that is identical to the scope of let definition. The
 only difference is when guards are being used. The
 
@@ -1245,13 +1245,13 @@ Functions are defined by declaring their name, any
 arguments, and an equals sign:
 
 
-square x = x * x
+square x = x - x
 
 
 _All_ functions names must start with a lowercase letter or “ _ ”. It is a syntax error otherwise.
 
 
-**Pattern Matching** Multiple “clauses” of a function can be defined by “pattern-matching” on the
+**Pattern** **Matching** Multiple “clauses” of a function can be defined by “pattern-matching” on the
 values of arguments. Here, the the agree function
 has four separate cases:
 
@@ -1317,7 +1317,7 @@ isEven 1 = False
 isEven (n + 2) = isEven n
 
 
-**Argument Capture** Argument capture is useful
+**Argument** **Capture** Argument capture is useful
 for pattern-matching a value _and_ using it, without
 declaring an extra variable. Use an ‘ @ ’ symbol in
 between the pattern to match and the variable to
@@ -1342,7 +1342,7 @@ matching. An example without pattern matching:
 
 
 which n
-| n  0 = "zero!"
+| n 0 = "zero!"
 | even n = "even!"
 | otherwise = "odd!"
 
@@ -1376,10 +1376,10 @@ _⃝_ c 2009 Justin Bailey. 9 [jgbailey@codeslower.com](mailto:jgbailey@codeslow
 
 alwaysEven n
 | otherwise = False
-| n `div` 2  0 = True
+| n `div` 2 0 = True
 
 
-**Record Syntax** Normally pattern matching occurs based on the position of arguments in the
+**Record** **Syntax** Normally pattern matching occurs based on the position of arguments in the
 value being matched. Types declared with record
 syntax, however, can match based on those record
 names. Given this data type:
@@ -1411,7 +1411,7 @@ setGreen (P col@(C { green = 0 })) = P col
 setGreen _ = P (C 0 0 0)
 
 
-**Lazy Patterns** This syntax, also known as _ir-_
+**Lazy** **Patterns** This syntax, also known as _ir-_
 _refutable_ patterns, allows pattern matches which always succeed. That means any clause using the
 pattern will succeed, but if it tries to actually use
 the matched value an error may occur. This is generally useful when an action should be taken on
@@ -1424,7 +1424,7 @@ For example, define a class for default values:
 
 
 class Def a where
-defValue :: a  a
+defValue :: a a
 
 
 The idea is you give defValue a value of the right
@@ -1490,11 +1490,11 @@ based on the generators and guards given. This
 comprehension generates all squares:
 
 
-squares = [x * x | x �[1..]]
+squares = [x - x | x �[1..]]
 
 
 x <- [1..] generates a list of all Integer values
-and puts them in x, one by one. x * x creates each
+and puts them in x, one by one. x - x creates each
 element of the list by multiplying x by itself.
 Guards allow certain elements to be excluded.
 The following shows how divisors for a given number (excluding itself) can be calculated. Notice how
@@ -1504,7 +1504,7 @@ d is used in both the guard and target expression.
 divisors n =
 
 [d | d �[1..(n `div` 2)]
-, n `mod` d  0]
+, n `mod` d 0]
 
 
 Local bindings provide new definitions for use in
@@ -1542,7 +1542,7 @@ value br in a list word (indexing from 0):
 idxs word br =
 
 [i | (i, c) �zip [0..] word
-, c  br]
+, c br]
 
 
 A unique feature of list comprehensions is that pattern matching failures do not cause an error; they
@@ -1559,7 +1559,7 @@ functions that take two arguments and have special syntactic support. Any so-cal
 be applied as a prefix function using parentheses:
 
 
-3 + 4  (+) 3 4
+3 + 4 (+) 3 4
 
 
 To define a new operator, simply define it as a normal function, except the operator appears between
@@ -1575,7 +1575,7 @@ let trim s = dropWhile isSpace
 
 (reverse (dropWhile isSpace
 (reverse s)))
-in trim last ++ ", " ++ trim rst
+in trim last ++ ", " ++ trim rst
 
 
  - " Haskell " ## " Curry "
@@ -1587,13 +1587,13 @@ available in this form. Type signatures are a bit different, though. The operato
 in parentheses:
 
 
-(##) :: String  String  String
+(##) :: String String String
 
 
 Allowable symbols which can be used to define operators are:
 
 
-# $ % & * + �/ < = > ? @ �^ | - ~
+# $ % & - + �/ < = - ? @ �^ | - ~
 
 
 However, there are several “operators” which cannot be redefined. They are: <-, -> and = . The last,
@@ -1601,7 +1601,7 @@ However, there are several “operators” which cannot be redefined. They are: 
 part of multi-character operator. The “bind” function, >>=, is one example.
 
 
-**Precedence & Associativity** The precedence
+**Precedence** **&** **Associativity** The precedence
 and associativity, collectively called _fixity_, of any
 operator can be set through the infix, infixr and
 infixl keywords. These can be applied both to
@@ -1627,13 +1627,13 @@ rules of arithmetic work “as expected.” For example, consider these minor up
 inxl 8 `plus1`
 plus1 a b = a + b
 inxl 7 `mult1`
-mult1 a b = a * b
+mult1 a b = a - b
 
 
 The results are surprising:
 
 
- - 2 + 3 * 5
+ - 2 + 3 - 5
 17
 
  - 2 `plus1` 3 `mult1` 5
@@ -1668,7 +1668,7 @@ elements of string depending on a test:
 
 
 convertOnly test change str =
-map (�c  if test c
+map (�c if test c
 then change c
 else c) str
 
@@ -1699,7 +1699,7 @@ However, the type signature of l33t tells the whole
 story:
 
 
-l33t :: String  String
+l33t :: String String
 
 
 That is, l33t takes a string and produces a string.
@@ -1720,8 +1720,8 @@ convertUpper = convertOnly isUpper
 which has the type signature:
 
 
-convertUpper :: (Char  Char)
- String  String
+convertUpper :: (Char Char)
+String String
 
 
 
@@ -1814,12 +1814,12 @@ syntax (“ C { red = r} ”) to get the inner red field.
 **Anonymous Functions**
 
 
-An anonymous function (i.e., a _lambda expression_
+An anonymous function (i.e., a _lambda_ _expression_
 or _lambda_ for short), is a function without a name.
 They can be defined at any time like so:
 
 
-�c  (c, c)
+�c (c, c)
 
 
 which defines a function which takes an argument
@@ -1832,7 +1832,7 @@ _⃝_ c 2009 Justin Bailey. 12 [jgbailey@codeslower.com](mailto:jgbailey@codeslo
 
 
 mixedCase str =
-all (�c  isSpace c
+all (�c isSpace c
 isLower c
 isUpper c) str
 
@@ -1842,7 +1842,7 @@ then multiply its argument by the one originally
 given:
 
 
-multBy n = �m  n * m
+multBy n = �m n - m
 
 
 For example:
@@ -1874,7 +1874,7 @@ overloading. For example, a function to
 negate any list of numbers has the signature:
 
 
-negateAll :: Num a => [a]  [a]
+negateAll :: Num a => [a] [a]
 
 
 
@@ -1883,7 +1883,7 @@ may only want to allow Int types. You would
 accomplish that with a type signature:
 
 
-negateAll :: [Int]  [Int]
+negateAll :: [Int] [Int]
 
 
 Type signatures can appear on top-level functions and nested let or where definitions. Generally this is useful for documentation, although in
@@ -1896,7 +1896,7 @@ anywhere in the containing module (yes, even below!). Multiple items with the sa
 also be defined together:
 
 
-pos, neg :: Int  Int
+pos, neg :: Int Int
 
 
 ...
@@ -1906,11 +1906,11 @@ pos x | x < 0 = negate x
 | otherwise = x
 
 
-neg y | y > 0 = negate y
+neg y | y - 0 = negate y
 | otherwise = y
 
 
-**Type Annotations** Sometimes Haskell cannot
+**Type** **Annotations** Sometimes Haskell cannot
 determine what type is meant. The classic demonstration of this is the so-called “ show . read ” problem:
 
 

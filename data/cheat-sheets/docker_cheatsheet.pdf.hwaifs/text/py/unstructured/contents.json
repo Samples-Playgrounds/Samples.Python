@@ -31,7 +31,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "CLI Cheat Sheet",
@@ -69,7 +69,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "d42b1e6c1056f2348ef1c3e87fc219c4"
         },
@@ -108,7 +108,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "INSTALLATION Docker Desktop is available for Mac, Linux and Windows https://docs.docker.com/desktop",
@@ -146,7 +146,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "GENERAL COMMANDS",
@@ -184,7 +184,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "543dbc9208f47d837b1c74ebe0a18d68"
         },
@@ -223,7 +223,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "543dbc9208f47d837b1c74ebe0a18d68"
         },
@@ -262,7 +262,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "543dbc9208f47d837b1c74ebe0a18d68"
         },
@@ -301,7 +301,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "543dbc9208f47d837b1c74ebe0a18d68"
         },
@@ -340,7 +340,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Display system-wide information docker info",
@@ -378,7 +378,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "486c7f72ddd3a257358ef2f19a9dcaa5"
         },
@@ -417,7 +417,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Build an Image from a Dockerfile docker build -t <image_name> .",
@@ -455,7 +455,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "e2969381be412b6cc2ec39f7c77444c9"
         },
@@ -494,7 +494,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "e2969381be412b6cc2ec39f7c77444c9"
         },
@@ -533,7 +533,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "e2969381be412b6cc2ec39f7c77444c9"
         },
@@ -572,7 +572,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "List local images docker images",
@@ -610,7 +610,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "ef624a1de85f64f63a5ea548d27fc658"
         },
@@ -649,7 +649,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Delete an Image docker rmi <image_name>",
@@ -687,7 +687,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "930e91ebccba92b51a9d552e23856323"
         },
@@ -726,7 +726,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "930e91ebccba92b51a9d552e23856323"
         },
@@ -765,7 +765,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "930e91ebccba92b51a9d552e23856323"
         },
@@ -804,7 +804,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "930e91ebccba92b51a9d552e23856323"
         },
@@ -843,7 +843,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "930e91ebccba92b51a9d552e23856323"
         },
@@ -882,7 +882,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "930e91ebccba92b51a9d552e23856323"
         },
@@ -921,7 +921,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "930e91ebccba92b51a9d552e23856323"
         },
@@ -960,7 +960,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Login into Docker docker login -u <username>",
@@ -998,7 +998,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "f6e8c5eb287c4238a1ebcd4d19e6e195"
         },
@@ -1037,7 +1037,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "f6e8c5eb287c4238a1ebcd4d19e6e195"
         },
@@ -1076,7 +1076,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "f6e8c5eb287c4238a1ebcd4d19e6e195"
         },
@@ -1115,7 +1115,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Search Hub for an image docker search <image_name>",
@@ -1153,7 +1153,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1,
             "parent_id": "5548dfe1a9acd321fa7342a442f04b2b"
         },
@@ -1192,7 +1192,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "Pull an image from a Docker Hub docker pull <image_name>",
@@ -1230,7 +1230,7 @@
             "languages": [
                 "eng"
             ],
-            "last_modified": "2026-02-06T16:17:42",
+            "last_modified": "2026-02-12T13:51:31",
             "page_number": 1
         },
         "text": "View resource usage stats docker container stats",

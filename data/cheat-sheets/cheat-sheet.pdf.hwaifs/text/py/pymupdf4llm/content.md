@@ -92,37 +92,6 @@ git commit -am 'message'
 ```
 
 
-**Move Between Branches**
-
-Switch branches:
-```
-git switch <name>
-
-```
-
-**OR**
-```
-git checkout <name>
-
-```
-
-Create a branch:
-```
-git switch -c <name>
-
-```
-
-**OR**
-```
-git checkout -b <name>
-```
-
-List branches:
-```
-git branch
-
-```
-
 List branches by most recently committed to:
 ```
 git branch --sort=-committerdate
@@ -189,58 +158,61 @@ git show <commit> --stat
 ```
 
 
+**Move Between Branches**
+
+Switch branches:
+```
+git switch <name>
+
+```
+
+**OR**
+```
+git checkout <name>
+
+```
+
+Create a branch:
+```
+git switch -c <name>
+
+```
+
+**OR**
+```
+git checkout -b <name>
+```
+
+List branches:
+```
+git branch
+
+```
+
+
 Git Cheat Sheet
 
 
+**Ways to refer to a commit**
 
 
+Every time we say `<commit>`, you can use any of
+
+these:
 
 
+★ **a branch** `main`
 
-**Discard Your Changes**
 
-Delete unstaged changes to one file:
-```
-git restore <file>
+★ **a tag** `v0.1`
 
-```
+★ **a commit ID** `3e887ab`
 
-**OR**
-```
-git checkout <file>
 
-```
+★ **a remote branch** `origin/main`
 
-Delete all staged and unstaged changes to one
-file:
-```
-git restore --staged --worktree <file>
+★ **current commit** `HEAD`
 
-```
-
-**OR**
-```
-git checkout HEAD <file>
-
-```
-
-Delete all staged and unstaged changes:
-```
-git reset --hard
-
-```
-
-Delete untracked files:
-```
-git clean
-
-```
-
-'Stash' all staged and unstaged changes:
-```
-git stash
-
-```
 
 
 **Edit History**
@@ -315,6 +287,55 @@ git log -G banana
 Show who last changed each line of a file:
 ```
 git blame <file>
+
+```
+
+
+★ **3 commits ago** `HEAD^^^ or HEAD~3`
+
+
+**Discard Your Changes**
+
+Delete unstaged changes to one file:
+```
+git restore <file>
+
+```
+
+**OR**
+```
+git checkout <file>
+
+```
+
+Delete all staged and unstaged changes to one
+file:
+```
+git restore --staged --worktree <file>
+
+```
+
+**OR**
+```
+git checkout HEAD <file>
+
+```
+
+Delete all staged and unstaged changes:
+```
+git reset --hard
+
+```
+
+Delete untracked files:
+```
+git clean
+
+```
+
+'Stash' all staged and unstaged changes:
+```
+git stash
 
 ```
 

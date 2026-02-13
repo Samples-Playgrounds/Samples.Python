@@ -195,27 +195,27 @@ FONT
 
 <span id="page-5-0"></span>
 
-| direction            | ltr   rtl   inherit                                                                       |
-|----------------------|-------------------------------------------------------------------------------------------|
-| hanging-punctuation  | none   [ start   end   endedge ]                                                          |
-| letter-spacing       | normal<br>length<br>%                                                                     |
-| punctuation-trim     | none   [start   end   adjacent]                                                           |
-| text-align           | start   end   left   right  <br>center   justify                                          |
-| text-align-last      | start   end   left   right  <br>center   justify                                          |
-| text-decoration      | none   underline   overline  <br>line-through   blink                                     |
-| text-emphasis        | none   [ [ accent   dot   circle<br>  disc] [ before   after ]? ]                         |
-| text-indent          | length<br>%                                                                               |
-| text-justify         | auto   inter-word   interideograph<br>  inter-cluster   distribute  <br>kashida   tibetan |
-| text-outline         | none<br>color<br>length                                                                   |
-| text-shadow          | none<br>color<br>length                                                                   |
-| text-transform       | none   capitalize   uppercase<br>  lowercase                                              |
-| text-wrap            | normal   unrestricted   none<br>  suppress                                                |
-| unicode-bidi         | normal   embed   bidioverride                                                             |
-| white-space          | normal   pre   nowrap   prewrap<br>  pre-line                                             |
-| white-space-collapse | preserve   collapse   preserve<br>breaks   discard                                        |
-| word-break           | normal   keep-all   loose  <br>break-strict   break-all                                   |
-| word-spacing         | normal<br>length<br>%                                                                     |
-| word-wrap            | normal   break-word                                                                       |
+| direction            | ltr   rtl   inherit                                                                       |  |
+|----------------------|-------------------------------------------------------------------------------------------|--|
+| hanging-punctuation  | none   [ start   end   endedge ]                                                          |  |
+| letter-spacing       | normal<br>length<br>%                                                                     |  |
+| punctuation-trim     | none   [start   end   adjacent]                                                           |  |
+| text-align           | start   end   left   right  <br>center   justify                                          |  |
+| text-align-last      | start   end   left   right  <br>center   justify                                          |  |
+| text-decoration      | none   underline   overline  <br>line-through   blink                                     |  |
+| text-emphasis        | none   [ [ accent   dot   circle<br>  disc] [ before   after ]? ]                         |  |
+| text-indent          | length<br>%                                                                               |  |
+| text-justify         | auto   inter-word   interideograph<br>  inter-cluster   distribute  <br>kashida   tibetan |  |
+| text-outline         | none<br>color<br>length                                                                   |  |
+| text-shadow          | none<br>color<br>length                                                                   |  |
+| text-transform       | none   capitalize   uppercase<br>  lowercase                                              |  |
+| text-wrap            | normal   unrestricted   none<br>  suppress                                                |  |
+| unicode-bidi         | normal   embed   bidioverride                                                             |  |
+| white-space          | normal   pre   nowrap   prewrap<br>  pre-line                                             |  |
+| white-space-collapse | preserve   collapse   preserve<br>breaks   discard                                        |  |
+| word-break           | normal   keep-all   loose  <br>break-strict   break-all                                   |  |
+| word-spacing         | normal<br>length<br>%                                                                     |  |
+| word-wrap            | normal   break-word                                                                       |  |
 
 | column-count      | auto<br>number                                              |
 |-------------------|-------------------------------------------------------------|
