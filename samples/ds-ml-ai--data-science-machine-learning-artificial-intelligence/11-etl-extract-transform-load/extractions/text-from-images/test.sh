@@ -7,9 +7,9 @@ ls -d1 */ > list.md
 EXTRACTORS=\
 "
 EasyOCR
-PaddleOCR
 pytesseract
-keras-ocr
+#PaddleOCR
+#keras-ocr
 "
 
 IFS=$'\n'
