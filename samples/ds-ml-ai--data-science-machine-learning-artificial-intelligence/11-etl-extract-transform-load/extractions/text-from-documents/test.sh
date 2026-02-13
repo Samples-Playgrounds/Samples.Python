@@ -7,6 +7,7 @@ ls -d1 */ > list.md
 EXTRACTORS=\
 "
 pdf
+epub
 # TODO
 # microsoft-word-docx
 # microsoft-powerpoint-pptx
