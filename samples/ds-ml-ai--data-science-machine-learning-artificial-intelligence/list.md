@@ -1,0 +1,16 @@
+01-model-download/
+02-model-conversion/
+03-lms-local-run/
+04-formatters/
+11-etl-extract-transform-load/
+21-splitting-chunking/
+31-text-transformers/
+41-document-loaders/
+51-embeddings/
+61-vector-stores/
+71-retrieval/
+81-evals-evaluations/
+91-generate/
+911-cli-agents-assistants/
+921-deepfake-detection/
+__pycache__/
