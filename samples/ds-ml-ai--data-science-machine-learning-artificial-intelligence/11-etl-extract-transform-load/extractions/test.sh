@@ -9,12 +9,12 @@ EXTRACTORS=\
 text-from-documents
 tables-from-documents
 images-from-documents
+text-from-images
 # todo
-# microsoft-word-docx
-# microsoft-powerpoint-pptx
-# microsoft-excel-xlsx
-# html
-# md-markdown
+# structured-information-from-text
+# summarizations-synopsizations
+# text-from-audio
+# text-from-video
 "
 
 IFS=$'\n'
