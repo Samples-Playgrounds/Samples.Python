@@ -7,9 +7,7 @@ rm *.pyc
 """
 python -m venv .venv
 source .venv/bin/activate
-pip install markitdown[all]
-pip install 'markitdown[pdf, docx, pptx]'
-pip install 'markitdown[pdf, docx, pptx, xslx, xsl, outlook, audio-transcription, youtube-transcription]'
+pip install textract
 pip install timer
 pip install codetiming
 pip freeze > requirements.txt
@@ -30,7 +28,7 @@ scriptpath = "../../../../../"
 sys.path.append(os.path.abspath(scriptpath))
 from data import *
 
-
+sources = files_documents_epubs
 
 def main():
    for source in sources:

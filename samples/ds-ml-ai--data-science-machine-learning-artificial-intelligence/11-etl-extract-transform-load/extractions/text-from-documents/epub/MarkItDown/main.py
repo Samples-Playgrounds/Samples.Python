@@ -30,11 +30,11 @@ scriptpath = "../../../../../"
 sys.path.append(os.path.abspath(scriptpath))
 from data import *
 
-
+sources = files_documents_epubs
 
 def main():
    for source in sources:
-      print(f"markitdown <- source = {source}")
+      print(f"MarkItDown <- source = {source}")
       result_md = api.extract_text_to_file_from_any_document(source)
 
 if __name__ == '__main__':

@@ -3,5 +3,5 @@ ebooklib/
 epub2txt/
 kreuzberg/
 marker/
-textract/
-tika-python/
+z_textract/
+z_tika-python/
