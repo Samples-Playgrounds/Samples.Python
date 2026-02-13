@@ -8,7 +8,7 @@ EXTRACTORS=\
 "
 docling
 kreuzberg
-markitdown
+MarkItDown
 pdfminer.six
 pdfplumber
 PyMuPDF
