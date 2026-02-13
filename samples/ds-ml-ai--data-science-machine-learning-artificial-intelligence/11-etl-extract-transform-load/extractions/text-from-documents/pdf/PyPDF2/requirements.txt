@@ -1,6 +1,6 @@
 codetiming==1.4.0
 packaging==26.0
-pillow==12.1.0
+pillow==12.1.1
 PyPDF2==3.0.1
 pytesseract==0.3.13
 timer==0.3.0

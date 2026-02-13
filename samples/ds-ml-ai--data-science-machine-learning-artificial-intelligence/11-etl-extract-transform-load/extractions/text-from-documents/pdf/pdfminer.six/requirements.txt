@@ -1,8 +1,8 @@
 cffi==2.0.0
 charset-normalizer==3.4.4
 codetiming==1.4.0
-cryptography==46.0.4
+cryptography==46.0.5
 pdfminer.six==20260107
-pillow==12.1.0
+pillow==12.1.1
 pycparser==3.0
 timer==0.3.0

@@ -1,4 +1,5 @@
 accelerate==1.12.0
+annotated-doc==0.0.4
 annotated-types==0.7.0
 antlr4-python3-runtime==4.9.3
 attrs==25.4.0
@@ -8,14 +9,15 @@ charset-normalizer==3.4.4
 click==8.3.1
 codetiming==1.4.0
 colorlog==6.10.1
+defusedxml==0.7.1
 dill==0.4.1
-docling==2.72.0
-docling-core==2.63.0
+docling==2.73.0
+docling-core==2.65.1
 docling-ibm-models==3.11.0
 docling-parse==4.7.3
 et_xmlfile==2.0.0
 Faker==40.4.0
-filelock==3.20.3
+filelock==3.21.2
 filetype==1.2.0
 fsspec==2026.2.0
 hf-xet==1.2.0
@@ -58,7 +60,7 @@ pyobjc-framework-Cocoa==12.1
 pyobjc-framework-CoreML==12.1
 pyobjc-framework-Quartz==12.1
 pyobjc-framework-Vision==12.1
-pypdfium2==5.3.0
+pypdfium2==5.4.0
 python-dateutil==2.9.0.post0
 python-docx==1.2.0
 python-dotenv==1.2.1
@@ -75,7 +77,7 @@ rtree==1.4.1
 safetensors==0.7.0
 scipy==1.17.0
 semchunk==2.2.2
-setuptools==81.0.0
+setuptools==82.0.0
 shapely==2.1.2
 shellingham==1.5.4
 six==1.17.0
@@ -93,7 +95,7 @@ tree-sitter-c==0.24.1
 tree-sitter-javascript==0.25.0
 tree-sitter-python==0.25.0
 tree-sitter-typescript==0.23.2
-typer==0.21.1
+typer==0.21.2
 typing-inspection==0.4.2
 typing_extensions==4.15.0
 tzdata==2025.3

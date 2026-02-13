@@ -6,7 +6,7 @@ charset-normalizer==3.4.4
 click==8.3.1
 cobble==0.1.4
 codetiming==1.4.0
-cryptography==46.0.4
+cryptography==46.0.5
 defusedxml==0.7.1
 flatbuffers==25.12.19
 idna==3.11
@@ -21,7 +21,7 @@ olefile==0.47
 onnxruntime==1.24.1
 packaging==26.0
 pdfminer.six==20260107
-pillow==12.1.0
+pillow==12.1.1
 protobuf==6.33.5
 pycparser==3.0
 pydub==0.25.1
