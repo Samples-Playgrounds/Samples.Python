@@ -6,7 +6,7 @@ ls -d1 */ > list.md
 
 EXTRACTORS=\
 "
-extractins
+extractions
 transformations
 # todo
 "
