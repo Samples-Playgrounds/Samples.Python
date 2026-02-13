@@ -19,49 +19,25 @@ pip install -r requirements.txt
 python main.py
 """
 
-youtube_video_ids = [
-    "iybdUPYXPEw",
-    "845fNBa_R_4",
-    "JuXgIqZjRBQ",
-    "OOcv9Mj0Fsc",
-    "DlsTxZdgklw",
-    "OOcv9Mj0Fsc",
-    "ck5nw7R1uEs",
-    "x37O-PUBvw0",
-    "WqFt6YHHy50",
-    "nUlomY7RsIg",
-    "T__1QViXUxk",
-#    "",
-]
+import api_text_extraction_video_youtube_transcript as api
 
-import json
-import jsonpickle
+import sys
+import os
+scriptpath = "../../../../"
 
+# Add the directory containing your module to the Python path (wants absolute paths)
+sys.path.append(os.path.abspath(scriptpath))
+from data import *
 
-from youtube_transcript_api import YouTubeTranscriptApi
 
 def main():
     for youtube_video_id in youtube_video_ids:
         print(f"yt <- youtube_video_ids = {youtube_video_ids}")
 
-        ytt_api = YouTubeTranscriptApi()
-        fetched_transcript = ytt_api.fetch(youtube_video_id)
-
-        transcript = ""
-        for fetched_transcript_snippet in fetched_transcript :
-            transcript += "\n" + fetched_transcript_snippet.text
-
-        directory = "./"
-        with open(f"{directory}/youtube-video-transcript-{youtube_video_id}.txt", "w") as f:
-            f.write(transcript) 
-
-        # json_dump_fetched_transcript = json.dumps(fetched_transcript)
-        # txt_json = jsonpickle.encode(fetched_transcript)
-        #print("=" * 120)
-        #print(json_dump_fetched_transcript)
-
-        print("=" * 120)
-        print(fetched_transcript)
+        transcript = api.extract_text_transcript_from_video_youtube_to_file(
+                                                                                youtube_video_id,
+                                                                                directory="../../../../../../data/videos/"
+                                                                            )
         print("=" * 120)
         print(transcript)
 
