@@ -1,7 +1,0 @@
-,0,1
-0,line-stacking,line-stacking-strategy line-stacking-ruby line-stacking-shift
-1,line-stacking-strategy,inline-line-height | blockline- height | max-height | grid-height
-2,line-stacking-ruby,exclude-ruby | include-ruby
-3,line-stacking-shift,consider-shifts | disregardshifts
-4,text-height,auto | font-size | text-size | max-size
-5,vertical-align,Baseline | sub | super | top | text-top | middle | bottom | text-bottom length %

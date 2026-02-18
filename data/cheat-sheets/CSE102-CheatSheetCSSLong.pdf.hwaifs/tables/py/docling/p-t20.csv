@@ -1,5 +1,0 @@
-,0,1
-0,ruby-align,auto | start | left | center | end | right | distribute-letter | distribute-space | lineedge
-1,ruby-overhang,auto | start | end | none
-2,ruby-position,before | after | right | inline
-3,ruby-span,attr(x) | none

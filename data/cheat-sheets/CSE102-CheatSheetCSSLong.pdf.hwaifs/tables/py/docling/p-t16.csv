@@ -1,7 +1,0 @@
-,0,1
-0,backface-visibility,visible | hidden
-1,perspective,none number
-2,perspective-origin,[ [ [ percentage> | <length> | left | center | right ] [ <percentage> | <length> | top | center | bottom ]? ] <length> ] | [ [ [ left | center | right ] || [ top | center | bottom ] ] <length> ]
-3,transform,none | matrix | matrix3d | translate3d | translateX | translateY | translateZ | scale | scale3d | scaleX | scaleY | scaleZ | rotate | rotate3d | rotateX | rotateY | rotateZ | skewX | skewY |
-4,transform-origin,[ [ [ <percentage> | <length> | left | center | right ] [ <percentage> | <length> | top | center | bottom ]? ] <length> ] | [ [ [ left | center | right ] || [ top | center | bottom ] ] <length> ]
-5,transform-style,flat | preserve-3d
