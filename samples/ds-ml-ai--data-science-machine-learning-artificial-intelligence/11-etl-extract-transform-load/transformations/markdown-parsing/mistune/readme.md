@@ -7,7 +7,7 @@
 *   
 
 ```shell
-$ pip install mistune
+pip install mistune
 ```
 
 ```python
