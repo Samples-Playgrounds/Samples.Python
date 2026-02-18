@@ -29,7 +29,8 @@ sys.path.append(os.path.abspath(scriptpath))
 from data import *
 
 root="../../../../../../data/"
-sources = files_documents_pdfs
+# only smaller documents for testing
+sources = files_documents_pdfs_cheat_sheets
 
 translators = [
    "google",

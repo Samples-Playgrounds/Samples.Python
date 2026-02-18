@@ -1,7 +1,0 @@
-|    | File management   | commands                       |
-|---:|:------------------|:-------------------------------|
-|  0 | :w name           | Write edit buffer to file name |
-|  1 | :wq vi            | Write to file and quit         |
-|  2 | :q! com-          | Quit without saving changes    |
-|  3 | ZZ charac-        | Same as :wq                    |
-|  4 | :sh file.         | Execute shell commands         |

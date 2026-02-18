@@ -1,9 +1,0 @@
-,0
-0,"<Entry Text=""{Binding UserName.Value, Mode=TwoWay}"">"
-1,<Entry.Behaviors>
-2,<behaviors:EventToCommandBehavior
-3,"EventName=""TextChanged"""
-4,"Command=""{Binding ValidateUserNameCommand}"" />"
-5,</Entry.Behaviors>
-6,...
-7,</Entry>

@@ -1,9 +1,0 @@
-|    | Feature   | Description           | Unnamed: 0   | GitHub Actions   | Unnamed: 1   | Azure Pipelines   |
-|---:|:----------|:----------------------|:-------------|:-----------------|:-------------|:------------------|
-|  0 | Variables | Variables that can be | Yes          |                  | Yes          |                   |
-|  1 |           | passed in, statically |              |                  |              |                   |
-|  2 |           | or dynamically        |              |                  |              |                   |
-|  3 |           | defined               |              |                  |              |                   |
-|  4 | Variable  | Store values for use  | No           |                  | Yes          |                   |
-|  5 | Groups    | across multiple       |              |                  |              |                   |
-|  6 |           | pipelines             |              |                  |              |                   |

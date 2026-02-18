@@ -1,8 +1,0 @@
-NET
-NET Multi-platform App UI
-ioS
-Android
-macOS
-Windows
-macOS
-iOS

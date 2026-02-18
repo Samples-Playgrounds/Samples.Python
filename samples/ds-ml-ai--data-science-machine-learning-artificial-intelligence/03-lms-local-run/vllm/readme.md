@@ -29,3 +29,18 @@ open -a "" http://0.0.0.0:8000/
 *   https://medium.com/@rohitkhatana/installing-vllm-on-macos-a-step-by-step-guide-bbbf673461af
     
 *   https://towardsdev.com/vllm-a-quick-start-cf1c48aa5890
+
+*   https://medium.com/@himanshushukla.shukla3/stop-using-llama-cpp-for-multi-gpu-setups-use-vllm-or-exllamav2-instead-73992cf1a1ad
+
+*   https://medium.com/@rohitkhatana/installing-vllm-on-macos-a-step-by-step-guide-bbbf673461af
+
+*   https://medium.com/@rohitkhatana/installing-vllm-on-macos-a-step-by-step-guide-bbbf673461af
+
+*   https://aipmbriefs.substack.com/p/how-to-run-vllm-on-apple-m4-mac-mini
+
+https://www.raf.xyz/blog/02-running-vllm-on-a-macbook-air
+
+https://www.falldrive.dsausa.org/drop/fixing-vllm-install-errors-a
+
+https://github.com/waybarrios/vllm-mlx
+

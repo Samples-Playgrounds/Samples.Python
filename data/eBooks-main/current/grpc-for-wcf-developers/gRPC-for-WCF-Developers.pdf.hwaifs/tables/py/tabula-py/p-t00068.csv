@@ -1,4 +1,0 @@
-,Caution
-0,The Grpc.Net.Client NuGet package requires .NET Core 3.0 or later (or another .NET Standard 2.1-
-1,compliant runtime). Earlier versions of .NET Framework and .NET Core are supported by the Grpc.Core
-2,NuGet package.

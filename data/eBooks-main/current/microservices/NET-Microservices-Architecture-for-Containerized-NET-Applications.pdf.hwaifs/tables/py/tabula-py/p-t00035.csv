@@ -1,5 +1,0 @@
-,"public class EventBusRabbitMQ : IEventBus, IDisposable"
-0,{
-1,// Implementation using RabbitMQ API
-2,//...
-3,}

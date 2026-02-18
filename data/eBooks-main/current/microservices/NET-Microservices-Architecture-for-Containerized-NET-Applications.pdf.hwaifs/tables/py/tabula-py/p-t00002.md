@@ -1,9 +1,0 @@
-|    | Virtual Machines                                 | Docker Containers                               |
-|---:|:-------------------------------------------------|:------------------------------------------------|
-|  0 | Virtual machines include the application, the    | Containers include the application and all its  |
-|    | required libraries or binaries, and a full guest | dependencies. However, they share the OS kernel |
-|    | operating system. Full virtualization requires   | with other containers, running as isolated      |
-|    | more resources than containerization.            | processes in user space on the host operating   |
-|    |                                                  | system. (Except in Hyper-V containers, where    |
-|    |                                                  | each container runs inside of a special virtual |
-|    |                                                  | machine per container.)                         |

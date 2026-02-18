@@ -1,1 +1,0 @@
-,Interacting With NumPy,Also see NumPy,>>> linalg.inv(A),Inverse,">>> np.inner(A,D)",Inner product

@@ -2,17 +2,25 @@
 
 readme.md
 
+*   https://github.com/nidhaloff/deep-translator
+
+*   https://deep-translator.readthedocs.io/en/latest/
+
+
 ```shell
-python3.13 -m venv .venv
+python -m venv .venv
 source .venv/bin/activate
-pip3.13 install deep-translator
-pip3.13 freeze > requirements.txt
+pip install deep-translator
+pip install deep-translator[docx]  # add support for docx translation
+pip install deep-translator[pdf]  # add support for pdf translation
+pip install deep-translator[ai]   # add support for ChatGpt
+
+pip freeze > requirements.txt
 ```
 
 ```bash
-pip3.13 install -r requirements.txt
-python3.13 main.py
+pip install -r requirements.txt
+python main.py
 ```
 
-*   https://pypi.org/project/googletrans/
 

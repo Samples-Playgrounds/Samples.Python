@@ -1,8 +1,8 @@
+# `miseltoe`
 
+*   https://github.com/miyuchina/mistletoe
 
-https://github.com/miyuchina/mistletoe
-
-```
+```python
 from mistletoe import Document, HtmlRenderer
 
 with open('foo.md', 'r') as fin:

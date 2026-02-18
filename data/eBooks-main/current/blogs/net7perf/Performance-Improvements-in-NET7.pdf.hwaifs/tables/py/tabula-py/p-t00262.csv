@@ -1,9 +1,0 @@
-,protected override void Scan(ReadOnlySpan<char> inputSpan)
-0,{
-1,while (TryFindNextPossibleStartingPosition(inputSpan) &&
-2,!TryMatchAtCurrentPosition(inputSpan) &&
-3,base.runtextpos != inputSpan.Length)
-4,{
-5,base.runtextpos++;
-6,}
-7,}

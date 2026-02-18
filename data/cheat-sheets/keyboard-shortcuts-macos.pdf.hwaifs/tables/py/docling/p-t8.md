@@ -1,9 +1,0 @@
-|    | 0       | 1            |
-|---:|:--------|:-------------|
-|  0 | ⌘ N     | New File     |
-|  1 | ⌘ O     | Open File... |
-|  2 | ⌘ S     | Save         |
-|  3 | ⇧⌘ S    | Save As...   |
-|  4 | ⌥⌘ S    | Save All     |
-|  5 | ⌘ W     | Close        |
-|  6 | ⌘ K ⌘ W | Close All    |

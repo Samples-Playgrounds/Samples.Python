@@ -55,6 +55,12 @@ text
 
     *   https://pypi.org/project/PyPDF2/
 
+*   `textract`
+
+    *   https://github.com/deanmalmgren/textract
+
+    *   https://textract.readthedocs.io/en/stable/
+
 *   `tika`
 
 *   https://www.blog.pythonlibrary.org/2018/05/03/exporting-data-from-pdfs-with-python/
@@ -136,5 +142,12 @@ text
 *   https://www.reddit.com/r/LocalLLaMA/comments/1azqo6p/need_help_rag_on_large_unstructured_pdfs/
 
 *   https://www.restack.io/p/unstructured-knowledge-python-pdf-markdown-cat-ai
+
+
+
+*   https://www.reddit.com/r/LocalLLaMA/comments/1jz80f1/i_benchmarked_7_ocr_solutions_on_a_complex/
+
+
+
 
 

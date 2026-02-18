@@ -6,12 +6,14 @@ readme.md
 
 
 ```bash
+CMAKE_ARGS="-DLLAMA_METAL=on"
 pip install llama-cpp-python
 ```
 
-https://github.com/abetlen/llama-cpp-python
+*     https://github.com/abetlen/llama-cpp-python
 
-rom llama_cpp import Llama
+```python
+from llama_cpp import Llama
 
 llm = Llama(
       model_path="./models/7B/llama-model.gguf",
@@ -26,9 +28,9 @@ output = llm(
       echo=True # Echo the prompt back in the output
 ) # Generate a completion, can also call create_completion
 print(output)
+```
 
-
-
+```python
 from llama_cpp import Llama
 llm = Llama(
       model_path="path/to/llama-2/llama-model.gguf",
@@ -43,4 +45,8 @@ llm.create_chat_completion(
           }
       ]
 )
+```
 
+*     https://christophergs.com/blog/running-open-source-llms-in-python
+
+*     https://medium.com/@aleksej.gudkov/llama-cpp-python-examples-a-guide-to-using-llama-models-with-python-1df9ba7a5fcd

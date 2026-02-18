@@ -1,5 +1,0 @@
-,0
-0,"[Route(""api/v1/[controller]"")]"
-1,public class CatalogController : ControllerBase
-2,{
-3,// Implementation ...

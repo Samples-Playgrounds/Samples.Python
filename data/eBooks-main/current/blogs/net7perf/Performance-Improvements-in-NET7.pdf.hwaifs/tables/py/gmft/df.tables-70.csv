@@ -1,9 +1,0 @@
-,Method,Runtime,Cancelable,Named,Mean,Ratio,Allocated,Alloc Ratio
-0,ReadWriteAsync,.NET 6.0,False,False,22.08 us,1.00,400 B,1.00
-1,ReadWriteAsync,.NET 7.0,False,False,12.61 us,0.76,192 B,0.48
-2,ReadWriteAsync,.NET 6.0,False,True,38.45 us,1.00,400 B,1.00
-3,ReadWriteAsync,.NET 7.0,False,True,32.16 us,0.84,220 B,0.55
-4,ReadWriteAsync,.NET 6.0,True,False,27.11 us,1.00,400 B,1.00
-5,ReadWriteAsync,.NET 7.0,True,False,13.29 us,0.52,193 B,0.48
-6,ReadWriteAsync,.NET 6.0,True,True,38.57 us,1.00,400 B,1.00
-7,ReadWriteAsync,.NET 7.0,True,True,33.07 us,0.86,214 B,0.54

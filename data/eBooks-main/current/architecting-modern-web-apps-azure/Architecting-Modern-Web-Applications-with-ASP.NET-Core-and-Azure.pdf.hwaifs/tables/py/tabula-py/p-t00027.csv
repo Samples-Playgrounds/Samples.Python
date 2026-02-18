@@ -1,5 +1,0 @@
-,"[Authorize(Policy = ""CanViewPrivateReport"")]"
-0,public IActionResult ExecutiveSalaryReport()
-1,{
-2,return View();
-3,}

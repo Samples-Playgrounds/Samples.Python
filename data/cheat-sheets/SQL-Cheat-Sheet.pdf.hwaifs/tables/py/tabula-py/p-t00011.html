@@ -1,48 +1,0 @@
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Conditional ExpressionsCommandDescriptionSyntaxExampleCASE StatementThe CASE statement allows youSELECTSELECTto perform conditional logiccolumn1,order_id,within a query.column2,total_amount,CASECASEWHEN condition1WHEN total_amountTHEN result1&gt; 1000 THEN 'High ValueWHEN condition2Order'THEN result2WHEN total_amountELSE&gt; 500 THEN 'Medium Valuedefault_resultOrder'END AS aliasELSE 'Low ValueFROM table_name;Order'END AS order_statusFROM orders;IF() FunctionThe IFfunction evaluates aSELECT IF(condition,SELECTcondition and returns a valuetrue_value, false_value)name,based on the evaluation.AS alias FROM table_name;age,IF(age &gt; 50,'Senior', 'Junior') ASemployee_categoryFROM employees;COALESCE() FunctionThe COALESCEfunctionSELECT COALESCE(value1,SELECTreturns the first non-null valuevalue2,) AS aliasCOALESCE(first_name,from a list of values.FROM table_name;middle_name) ASpreferred_nameFROM employees;NULLIF() FunctionThe NULLIFfunction returnsSELECTSELECTnull if two specified expressionsNULLIF(expression1,NULLIF(total_amount,are equal.expression2) AS aliasdiscounted_amount) ASFROM table_name;diff_amount FROM orders;The SQL tool with the highest user satisfaction.DBVIS.COM</th>
-      <th>Unnamed: 0</th>
-      <th>Unnamed: 1</th>
-      <th>Unnamed: 2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Command</td>
-      <td>Description</td>
-      <td>Syntax</td>
-      <td>Example</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>CASE Statement</td>
-      <td>The CASE statement allows you\rto perform conditional logic\rwithin a query.</td>
-      <td>SELECT\rcolumn1,\rcolumn2,\rCASE\rWHEN condition1\rTHEN result1\rWHEN condition2\rTHEN result2\rELSE\rdefault_result\rEND AS alias\rFROM table_name;</td>
-      <td>SELECT\rorder_id,\rtotal_amount,\rCASE\rWHEN total_amount\r&gt; 1000 THEN 'High Value\rOrder'\rWHEN total_amount\r&gt; 500 THEN 'Medium Value\rOrder'\rELSE 'Low Value\rOrder'\rEND AS order_status\rFROM orders;</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>IF() Function</td>
-      <td>The IFfunction evaluates a\rcondition and returns a value\rbased on the evaluation.</td>
-      <td>SELECT IF(condition,\rtrue_value, false_value)\rAS alias FROM table_name;</td>
-      <td>SELECT\rname,\rage,\rIF(age &gt; 50,\r'Senior', 'Junior') AS\remployee_category\rFROM employees;</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>COALESCE() Function</td>
-      <td>The COALESCEfunction\rreturns the first non-null value\rfrom a list of values.</td>
-      <td>SELECT COALESCE(value1,\rvalue2,) AS alias\rFROM table_name;</td>
-      <td>SELECT\rCOALESCE(first_name,\rmiddle_name) AS\rpreferred_name\rFROM employees;</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>NULLIF() Function</td>
-      <td>The NULLIFfunction returns\rnull if two specified expressions\rare equal.</td>
-      <td>SELECT\rNULLIF(expression1,\rexpression2) AS alias\rFROM table_name;</td>
-      <td>SELECT\rNULLIF(total_amount,\rdiscounted_amount) AS\rdiff_amount FROM orders;</td>
-    </tr>
-  </tbody>
-</table>

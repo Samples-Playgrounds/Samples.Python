@@ -47,7 +47,7 @@ https://github.com/argosopentech/argos-translate
 *   https://lokalise.com/blog/how-to-translate-languages-in-python-with-google-translate-and-deepl-plus-more/
 
 
-translations
+## LLM translations
 
 https://www.reddit.com/r/LocalLLaMA/comments/1iln1lj/good_local_llm_for_text_translation/
 

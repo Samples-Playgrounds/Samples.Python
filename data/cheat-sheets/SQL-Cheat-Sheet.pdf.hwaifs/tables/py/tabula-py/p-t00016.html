@@ -1,34 +1,0 @@
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>SAVEPOINTThe SAVEPOINT commandSAVEPOINTBEGIN TRANSACTION;is used to set a point withinsavepoint_na transaction to which youame;INSERT INTO employees (name, age) VALUES ('Carol',can later roll back.28);SAVEPOINT before_update;UPDATE products SET price = 40.00 WHERE category ='Electronics';SAVEPOINT after_update;DELETE FROM customers WHERE age &gt; 60;ROLLBACK TO before_update;At this point, the DELETE is rolled back, but theUPDATE remains.COMMIT;ROLLBACK TOThe ROLLBACK TOROLLBACK TOBEGIN TRANSACTION;SAVEPOINTSAVEPOINT command isSAVEPOINTused to roll back to asavepoint_nINSERT INTO employees (name, age) VALUES ('David',specific savepoint within aame;42);transaction.SAVEPOINT before_update;UPDATE products SET price = 50.00 WHERE category ='Electronics';SAVEPOINT after_update;DELETE FROM customers WHERE age &gt; 60;Rollback to the savepoint before the updateROLLBACK TO SAVEPOINT before_update;At this point, the UPDATE is rolled back, but theINSERT remains.COMMIT;SET TRANSACTIONThe SET TRANSACTIONSETBEGIN TRANSACTION;command is used toTRANSACTIONconfigure properties for the[ISOLATIONSet the isolation level to READ COMMITTEDcurrent transaction, such asLEVEL {SET TRANSACTION ISOLATION LEVEL READ COMMITTED;isolation level andREADtransaction mode.COMMITTED |SQL statements and changes within the transactionSERIALIZABLE }]INSERT INTO employees (name, age) VALUES ('Emily',35);UPDATE products SET price = 60.00 WHERE category ='Electronics';COMMIT;The SQL tool with the highest user satisfaction.DBVIS.COM</th>
-      <th>Unnamed: 0</th>
-      <th>Unnamed: 1</th>
-      <th>Unnamed: 2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>SAVEPOINT</td>
-      <td>The SAVEPOINT command\ris used to set a point within\ra transaction to which you\rcan later roll back.</td>
-      <td>SAVEPOINT\rsavepoint_n\rame;</td>
-      <td>BEGIN TRANSACTION;\rINSERT INTO employees (name, age) VALUES ('Carol',\r28);\rSAVEPOINT before_update;\rUPDATE products SET price = 40.00 WHERE category =\r'Electronics';\rSAVEPOINT after_update;\rDELETE FROM customers WHERE age &gt; 60;\rROLLBACK TO before_update;\rAt this point, the DELETE is rolled back, but the\rUPDATE remains.\rCOMMIT;</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>ROLLBACK TO\rSAVEPOINT</td>
-      <td>The ROLLBACK TO\rSAVEPOINT command is\rused to roll back to a\rspecific savepoint within a\rtransaction.</td>
-      <td>ROLLBACK TO\rSAVEPOINT\rsavepoint_n\rame;</td>
-      <td>BEGIN TRANSACTION;\rINSERT INTO employees (name, age) VALUES ('David',\r42);\rSAVEPOINT before_update;\rUPDATE products SET price = 50.00 WHERE category =\r'Electronics';\rSAVEPOINT after_update;\rDELETE FROM customers WHERE age &gt; 60;\rRollback to the savepoint before the update\rROLLBACK TO SAVEPOINT before_update;\rAt this point, the UPDATE is rolled back, but the\rINSERT remains.\rCOMMIT;</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>SET TRANSACTION</td>
-      <td>The SET TRANSACTION\rcommand is used to\rconfigure properties for the\rcurrent transaction, such as\risolation level and\rtransaction mode.</td>
-      <td>SET\rTRANSACTION\r[ISOLATION\rLEVEL {\rREAD\rCOMMITTED |\rSERIALIZABL\rE }]</td>
-      <td>BEGIN TRANSACTION;\rSet the isolation level to READ COMMITTED\rSET TRANSACTION ISOLATION LEVEL READ COMMITTED;\rSQL statements and changes within the transaction\rINSERT INTO employees (name, age) VALUES ('Emily',\r35);\rUPDATE products SET price = 60.00 WHERE category =\r'Electronics';\rCOMMIT;</td>
-    </tr>
-  </tbody>
-</table>

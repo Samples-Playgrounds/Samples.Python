@@ -1,4 +1,0 @@
-,0,1,2,3,4
-0,Method,Runtime,arg,Mean,Ratio
-1,ILogB,.NET 6.0,12345.6789,4.056 ns,1.00
-2,ILogB,.NET 7.0,12345.6789,1.059 ns,0.26

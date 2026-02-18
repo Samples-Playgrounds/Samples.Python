@@ -1,70 +1,0 @@
-## U
-octe poeoutbagg 
-Ultimate Cheat Sheet
-
-- Use Discovery to explore AI-tagged companies. (Example: Capacity Expansion, Cloud &amp; Data Centers)
-- Use Screener to filter companies using fundamentals. (Example filters: ROCE &gt; 18%, Sales Growth &gt; 15%, Debt/Equity &lt; 0.5)
-- Use Deals to track smart-money activity. (Example: Promoter buying, Bulk deals, Block deals, Insider trades)
-- Ask Iris to discover stocks instantly. (Example: "Find hidden gems in chemicals under 5,000 Cr market cap")
-- Open the Company Page to see everything in one place(Example: Revenue trend, profit trend, margins, balance sheet, peer comparison)
-- Switch to AI Mode and ask deep questions(Example: "Explain the business model like Im 15" / "What are the top 5 risks?")
-- Read Concalls, Presentations, Annual Reports (AI-ready)(Example: "Summarize this concall" / "Give key management commentary")
-- Use Articles to understand quickly (without noise)
-- Connect your portfolio to Multibagg AI
-- V isit the Portfolio Dashboard for full breakdown(Example: 1Y Portfolio Forcast, Diversification, Metrics)
-- Ask Iris questions about your portfolio(Example: "What are my biggest concentration risks?" / "Which holdings are weak fundamentally?")
-- Connect portfolio so your updates are personalized(Example: You receive 1 highly personalized email daily)
-- Add companies to your Watchlist
-- Use Timeline and customize your filters
-- Also track Articles for crisp market updates
-
-## Use Iris for:
-
-- Stock-specific questions (Example: “How store count of DMART is growing YoY?”)
-- IPO / ETF / Index questions (Example: "Summarize the risks presented in Lenskart IPO." / "Best ETFs for India growth?")
-- Discovering companies (Example: "Find smallcaps with strong balance sheet &amp; improving margins")
-- Portfolio questions (Example: "Is my portfolio too risky?" / "How can I improve returns with same risk?")
-- Go to Sectoral Analysis for detailed sector research(Example: Give some 2 3 sector names for which we have docs)
-- Use Sector Screener to compare companies inside a sector
-- Use Industry Screener for sub-sectors
-- T rack sector trends using Sector ETFs &amp; Indexes (Example: Nifty Bank, Nifty IT, Pharma ETF)
-- Go to Dashboard for your personalized feed(Example: watchlist updates, important filings, earnings alerts, key market moves)
-- T he more you use Multibagg, the smarter it becomes(Example: it learns what you read, what you track, what you ignore and improves your feed)
-- V isit Market to see what moved today and why
-- T rack institutional flows in FII/DII Activity
-- Use Upcoming Earnings to track results season
-- Use Earnings Summary to scan performance quickly
-
-## I want to find hidden gems
-
-## I want to research a company
-
-## I want to understand my portfolio
-
-## I want to stay u pdated daily
-
-## I want to ask questions (about anything)
-
-## I want to understand a sector
-
-## I want my personalized dashboard
-
-## I want to understand the market better
-
-<!-- image -->
-
-<!-- image -->
-
-<!-- image -->
-
-<!-- image -->
-
-<!-- image -->
-
-<!-- image -->
-
-<!-- image -->
-
-<!-- image -->
-
-<!-- image -->

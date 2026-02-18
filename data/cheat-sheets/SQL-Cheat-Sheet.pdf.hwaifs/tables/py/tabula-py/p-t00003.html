@@ -1,48 +1,0 @@
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>SQL cheat sheetComprehensiveData Manipulation LanguageDML CommandsCommandDescriptionSyntaxExampleSELECTThe SELECT command retrievesSELECT column1, column2 FROMSELECT first_name, last_namedata from a database.table_name;FROM customers;INSERTThe INSERT command adds newINSERT INTO table_nameINSERT INTO customersrecords to a table.(column1, column2) VALUES(first_name, last_name)(value1, value2);VALUES ('Mary', 'Doe');UPDATEThe UPDATE command is usedUPDATE table_name SET column1UPDATE employees SETto modify existing records in a= value1, column2 = value2employee_name = ‘John Doe’,table.WHERE condition;department = ‘Marketing’;DELETEThe DELETE command removesDELETE FROM table_name WHEREDELETE FROM employees WHERErecords from a table.condition;employee_name = ‘John Doe’;Data Definition LanguageDDL CommandsCommandDescriptionSyntaxExampleCREATEThe CREATE command creates aCREATE TABLE table_nameCREATE TABLE employees (new database and objects, such(column1 datatype1,employee_id INTas a table, index, view, or storedcolumn2 datatype2,);PRIMARY KEY,procedure.first_nameVARCHAR(50),last_nameVARCHAR(50),age INT);ALTERThe ALTER command adds,ALTER TABLE table_nameALTER TABLE customers ADDdeletes, or modifies columns inADD column_name datatype;email VARCHAR(100);an existing table.DROPThe DROP command is used toDROP TABLE table_name;DROP TABLE customers;drop an existing table in adatabase.TRUNCATEThe TRUNCATE command isTRUNCATE TABLETRUNCATE TABLE customers;used to delete the data inside atable_name;table, but not the table itself.The SQL tool with the highest user satisfaction.DBVIS.COM</th>
-      <th>Unnamed: 0</th>
-      <th>Unnamed: 1</th>
-      <th>Unnamed: 2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Command</td>
-      <td>Description</td>
-      <td>Syntax</td>
-      <td>Example</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>CREATE</td>
-      <td>The CREATE command creates a\rnew database and objects, such\ras a table, index, view, or stored\rprocedure.</td>
-      <td>CREATE TABLE table_name\r(column1 datatype1,\rcolumn2 datatype2,);</td>
-      <td>CREATE TABLE employees (\remployee_id INT\rPRIMARY KEY,\rfirst_name\rVARCHAR(50),\rlast_name\rVARCHAR(50),\rage INT\r);</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>ALTER</td>
-      <td>The ALTER command adds,\rdeletes, or modifies columns in\ran existing table.</td>
-      <td>ALTER TABLE table_name\rADD column_name datatype;</td>
-      <td>ALTER TABLE customers ADD\remail VARCHAR(100);</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>DROP</td>
-      <td>The DROP command is used to\rdrop an existing table in a\rdatabase.</td>
-      <td>DROP TABLE table_name;</td>
-      <td>DROP TABLE customers;</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>TRUNCATE</td>
-      <td>The TRUNCATE command is\rused to delete the data inside a\rtable, but not the table itself.</td>
-      <td>TRUNCATE TABLE\rtable_name;</td>
-      <td>TRUNCATE TABLE customers;</td>
-    </tr>
-  </tbody>
-</table>

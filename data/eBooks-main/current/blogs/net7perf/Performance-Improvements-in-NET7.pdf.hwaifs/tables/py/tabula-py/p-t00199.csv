@@ -1,3 +1,0 @@
-,Method,Runtime,Mean,Ratio
-0,Replace,.NET 6.0,"1,563.69 ns",1.0
-1,Replace,.NET 7.0,70.84 ns,0.04

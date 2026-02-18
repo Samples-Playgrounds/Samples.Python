@@ -1,9 +1,0 @@
-,0
-0,private string _path1;
-1,private string _path2;
-2,
-3,[GlobalSetup]
-4,public void Setup()
-5,{
-6,_path1 = Path.GetTempFileName();
-7,_path2 = Path.GetTempFileName();

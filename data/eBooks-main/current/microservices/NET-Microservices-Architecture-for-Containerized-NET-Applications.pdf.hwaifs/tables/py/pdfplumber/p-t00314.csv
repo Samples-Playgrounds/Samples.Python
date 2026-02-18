@@ -1,7 +1,0 @@
-,0
-0,Tip
-1,"The HttpClient instances injected by DI can be disposed of safely, because the associated"
-2,HttpMessageHandler is managed by the factory. Injected HttpClient instances are Transient from a DI
-3,"perspective, while HttpMessageHandler instances can be regarded as Scoped. HttpMessageHandler"
-4,"instances have their own DI scopes, separate from the application scopes (for example, ASP.NET"
-5,"incoming request scopes). For more information, see Using HttpClientFactory in .NET."

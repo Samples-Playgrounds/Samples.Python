@@ -1,8 +1,0 @@
-,another pandas method can be applied to the result.,Unnamed: 0,Unnamed: 1,Logic in Python (and pandas),Unnamed: 2,regex (Regular Expressions) Examples
-0,This improves readability of code.,,,,,
-1,,<,Less than,!= Not equal to,'\.',Matches strings containing a period '.'
-2,df = (pd.melt(df),,,,,
-3,.rename(columns={,>,Greater than,df.column.isin(values) Group membership,'Length$',Matches strings ending with word 'Length'
-4,"'variable':'var',",==,Equals,pd.isnull(obj) Is NaN,'^Sepal',Matches strings beginning with the word 'Sepal'
-5,'value':'val'}),<=,Less than or equals,pd.notnull(obj) Is not NaN,'^x[1-5]$',"Matches strings beginning with 'x' and ending with 1,2,3,4,5"
-6,.query('val >= 200'),>=,Greater than or equals,"&,|,~,^,df.any(),df.all() Logical and, or, not, xor, any, all",'^(?!Species$).*',Matches strings except the string 'Species'

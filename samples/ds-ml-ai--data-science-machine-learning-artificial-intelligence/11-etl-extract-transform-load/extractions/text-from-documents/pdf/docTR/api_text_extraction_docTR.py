@@ -79,6 +79,9 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
         f.write(json.dumps(times, indent=4))
     #---------------------------------------------------------------------------
 
+    if result_txt is None and result_json is None:
+        return "", ""
+
     if result_json is None:
         return result_txt, ""
 

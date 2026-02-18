@@ -11,3 +11,8 @@
     ```
 
 *   https://www.geeksforgeeks.org/python/python-reading-contents-of-pdf-using-ocr-optical-character-recognition/
+
+*   https://formulae.brew.sh/formula/tesseract
+
+*   https://tesseract-ocr.github.io/
+

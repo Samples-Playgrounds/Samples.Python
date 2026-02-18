@@ -251,6 +251,6 @@ files += [
 ]
 
 
-# sources = files
+sources = files
 # only smaller documents for testing
-sources = files_documents_pdfs_cheat_sheets
+# sources = files_documents_pdfs_cheat_sheets

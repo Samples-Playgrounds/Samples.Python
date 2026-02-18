@@ -1,7 +1,0 @@
-,0,1
-0,cat,-<EOF > .gitignore
-1,/logs-*,/logs-*
-2,!logs/.gitkeep,!logs/.gitkeep
-3,/tmp,/tmp
-4,*.swp,*.swp
-5,EOF,EOF

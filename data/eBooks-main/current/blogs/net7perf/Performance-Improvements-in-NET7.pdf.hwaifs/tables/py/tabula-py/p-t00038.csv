@@ -1,8 +1,0 @@
-,4889BC24D8000000,"movqword ptr [rsp+D8H], rdi"
-0,4889B424D0000000,"movqword ptr [rsp+D0H], rsi"
-1,48899C24C8000000,"movqword ptr [rsp+C8H], rbx"
-2,C5F877,vzeroupper
-3,33C0,"xoreax, eax"
-4,4889442428,"movqword ptr [rsp+28H], rax"
-5,4889442420,"movqword ptr [rsp+20H], rax"
-6,488B9C24A0000000,"movrbx, gword ptr [rsp+A0H]"

@@ -1,5 +1,0 @@
-,0
-0,// Program.cs from any ASP.NET Core Web API
-1,// Other code ...
-2,builder.Services.AddDbContext<CatalogContext>(options =>
-3,{

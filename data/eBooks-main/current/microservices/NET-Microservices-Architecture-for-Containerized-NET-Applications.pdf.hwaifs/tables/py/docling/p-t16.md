@@ -1,6 +1,0 @@
-|    | Provider   | Package                                              |
-|---:|:-----------|:-----------------------------------------------------|
-|  0 | Microsoft  | Microsoft.AspNetCore.Authentication.MicrosoftAccount |
-|  1 | Google     | Microsoft.AspNetCore.Authentication.Google           |
-|  2 | Facebook   | Microsoft.AspNetCore.Authentication.Facebook         |
-|  3 | Twitter    | Microsoft.AspNetCore.Authentication.Twitter          |

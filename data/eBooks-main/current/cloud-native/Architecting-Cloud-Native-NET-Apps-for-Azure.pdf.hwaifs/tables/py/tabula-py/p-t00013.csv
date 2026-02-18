@@ -1,5 +1,0 @@
-,Model,Characteristics
-0,Document Store,"Data and metadata are stored hierarchically inJSON-based documents inside the database."
-1,Key Value Store,"The simplest of the NoSQL databases, data isrepresented as a collection of key-value pairs."
-2,Wide-Column Store,"Related data is stored as a set of nested-key/value pairs within a single column."
-3,Graph Store,"Data is stored in a graph structure as node,edge, and data properties."

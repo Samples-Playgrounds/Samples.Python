@@ -1,4 +1,0 @@
-,apiVersion: v1
-0,kind: Namespace
-1,metadata:
-2,name: stocks

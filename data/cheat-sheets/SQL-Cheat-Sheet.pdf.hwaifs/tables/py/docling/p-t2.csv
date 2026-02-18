@@ -1,5 +1,0 @@
-,Command,Description,Syntax,Example
-0,CREATE,"The CREATE command creates a new database and objects, such as a table, index, view, or stored procedure.","CREATE TABLE table_name (column1 datatype1, column2 datatype2, );","CREATE TABLE employees ( employee_id INT PRIMARY KEY, first_name VARCHAR(50), last_name VARCHAR(50), age INT );"
-1,ALTER,"The ALTER command adds, deletes, or modifies columns in an existing table.",ALTER TABLE table_name ADD column_name datatype;,ALTER TABLE customers ADD email VARCHAR(100);
-2,DROP,The DROP command is used to drop an existing table in a database.,DROP TABLE table_name;,DROP TABLE customers;
-3,TRUNCATE,"The TRUNCATE command is used to delete the data inside a table, but not the table itself.",TRUNCATE TABLE table_name;,TRUNCATE TABLE customers;

@@ -20,9 +20,6 @@ pip install -r requirements.txt
 python main.py
 """
 
-"""
-"""
-
 models = [
         "qwen3-coder:30b",
         "codegeex4:9b",

@@ -1,83 +1,0 @@
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Subqueries in SQLCommandDescriptionSyntaxExampleINThe IN command is used toSELECT column(s) FROMSELECT * FROM customersdetermine whether a valuetable WHERE value INWHERE city IN (SELECTmatches any value in a subquery(subquery);city FROM suppliers);result. It is often used in theWHERE clause.ANYThe ANY command is used toSELECT column(s) FROMSELECT * FROM productscompare a value to any valuetable WHERE value &lt; ANYWHERE price &lt; ANY (SELECTreturned by a subquery. It can(subquery);unit_price FROMbe used with comparisonsupplier_products);operators like =, &gt;, &lt;, etc.ALLThe ALL command is used toSELECT column(s) FROMSELECT * FROM orderscompare a value to all valuestable WHERE value &gt; ALLWHERE order_amount &gt; ALLreturned by a subquery. It can(subquery);(SELECT total_amount FROMbe used with comparisonprevious_orders);operators like =, &gt;, &lt;, etc.Aggregate Functions CommandsCommandDescriptionSyntaxExampleCOUNT()The COUNT command countsSELECT COUNT(column_name)SELECT COUNT(age) FROMthe number of rows or non-nullFROM table_name;employees;values in a specified column.SUM()The SUM command is used toSELECT SUM(column_name)SELECT SUM(revenue) FROMcalculate the sum of all values inFROM table_name;sales;a specified column.AVG()The AVG command is used toSELECT AVG(column_name)SELECT AVG(price) FROMcalculate the average (mean) ofFROM table_name;products;all values in a specified column.MIN()The MIN command returns theSELECT MIN(column_name)SELECT MIN(price) FROMminimum (lowest) value in aFROM table_name;products;specified column.MAX()The MAX command returns theSELECT MAX(column_name)SELECT MAX(price) FROMmaximum (highest) value in aFROM table_name;products;specified column.The SQL tool with the highest user satisfaction.DBVIS.COM</th>
-      <th>Unnamed: 0</th>
-      <th>Unnamed: 1</th>
-      <th>Unnamed: 2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Command</td>
-      <td>Description</td>
-      <td>Syntax</td>
-      <td>Example</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>IN</td>
-      <td>The IN command is used to\rdetermine whether a value\rmatches any value in a subquery\rresult. It is often used in the\rWHERE clause.</td>
-      <td>SELECT column(s) FROM\rtable WHERE value IN\r(subquery);</td>
-      <td>SELECT * FROM customers\rWHERE city IN (SELECT\rcity FROM suppliers);</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>ANY</td>
-      <td>The ANY command is used to\rcompare a value to any value\rreturned by a subquery. It can\rbe used with comparison\roperators like =, &gt;, &lt;, etc.</td>
-      <td>SELECT column(s) FROM\rtable WHERE value &lt; ANY\r(subquery);</td>
-      <td>SELECT * FROM products\rWHERE price &lt; ANY (SELECT\runit_price FROM\rsupplier_products);</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>ALL</td>
-      <td>The ALL command is used to\rcompare a value to all values\rreturned by a subquery. It can\rbe used with comparison\roperators like =, &gt;, &lt;, etc.</td>
-      <td>SELECT column(s) FROM\rtable WHERE value &gt; ALL\r(subquery);</td>
-      <td>SELECT * FROM orders\rWHERE order_amount &gt; ALL\r(SELECT total_amount FROM\rprevious_orders);</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Command</td>
-      <td>Description</td>
-      <td>Syntax</td>
-      <td>Example</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>COUNT()</td>
-      <td>The COUNT command counts\rthe number of rows or non-null\rvalues in a specified column.</td>
-      <td>SELECT COUNT(column_name)\rFROM table_name;</td>
-      <td>SELECT COUNT(age) FROM\remployees;</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>SUM()</td>
-      <td>The SUM command is used to\rcalculate the sum of all values in\ra specified column.</td>
-      <td>SELECT SUM(column_name)\rFROM table_name;</td>
-      <td>SELECT SUM(revenue) FROM\rsales;</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>AVG()</td>
-      <td>The AVG command is used to\rcalculate the average (mean) of\rall values in a specified column.</td>
-      <td>SELECT AVG(column_name)\rFROM table_name;</td>
-      <td>SELECT AVG(price) FROM\rproducts;</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>MIN()</td>
-      <td>The MIN command returns the\rminimum (lowest) value in a\rspecified column.</td>
-      <td>SELECT MIN(column_name)\rFROM table_name;</td>
-      <td>SELECT MIN(price) FROM\rproducts;</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>MAX()</td>
-      <td>The MAX command returns the\rmaximum (highest) value in a\rspecified column.</td>
-      <td>SELECT MAX(column_name)\rFROM table_name;</td>
-      <td>SELECT MAX(price) FROM\rproducts;</td>
-    </tr>
-  </tbody>
-</table>

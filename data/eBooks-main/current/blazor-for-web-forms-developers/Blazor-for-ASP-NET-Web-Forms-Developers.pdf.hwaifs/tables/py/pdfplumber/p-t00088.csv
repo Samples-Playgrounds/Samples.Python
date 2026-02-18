@@ -1,9 +1,0 @@
-,0
-0,"public class Global : HttpApplication, IContainerProviderAccessor"
-1,{
-2,private static readonly ILog _log =
-3,LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-4,
-5,static IContainerProvider _containerProvider;
-6,IContainer container;
-7,

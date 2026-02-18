@@ -25,26 +25,38 @@ def extract_tables_to_files_from_pdf_document (source: str) -> str:
     directory = f"{source}.hwaifs/tables/py/docling/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
-    doc_converter = DocumentConverter()
+    try:
+        doc_converter = DocumentConverter()
 
-    conv_res = doc_converter.convert(source)
+        conv_res = doc_converter.convert(source)
 
-    # Iterate through tables
-    # Export tables
-    for table_ix, table in enumerate(conv_res.document.tables):
-        df: pd.DataFrame = table.export_to_dataframe(doc_converter)
+        # Iterate through tables
+        # Export tables
+        for table_ix, table in enumerate(conv_res.document.tables):
+            df: pd.DataFrame = table.export_to_dataframe(doc_converter)
 
-        element_md_filename = f"{directory}/p-t{table_ix + 1}.md"
-        df.to_markdown(element_md_filename)
+            element_md_filename = f"{directory}/p-t{table_ix + 1}.md"
+            df.to_markdown(element_md_filename)
 
-        element_csv_filename = f"{directory}/p-t{table_ix + 1}.csv"
-        df.to_csv(element_csv_filename)
+            element_csv_filename = f"{directory}/p-t{table_ix + 1}.csv"
+            df.to_csv(element_csv_filename)
 
-        element_excel_filename = f"{directory}/p-t{table_ix + 1}.xlsx"
-        df.to_excel(element_excel_filename)
+            element_excel_filename = f"{directory}/p-t{table_ix + 1}.xlsx"
+            df.to_excel(element_excel_filename)
 
-        element_html_filename = f"{directory}/  p-t{table_ix + 1}.html"
-        df.to_html(element_html_filename)
+            element_html_filename = f"{directory}/  p-t{table_ix + 1}.html"
+            df.to_html(element_html_filename)
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables from PDF document source = {source} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
 
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()

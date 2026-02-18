@@ -1,4 +1,0 @@
-,0
-0,Note
-1,A client must be registered with IdentityServer before it can successfully request tokens. For more
-2,"information on adding clients, see Defining Clients."

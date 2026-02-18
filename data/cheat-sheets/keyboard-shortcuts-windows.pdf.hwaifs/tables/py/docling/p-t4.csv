@@ -1,7 +1,0 @@
-,Ctrl+F,Find
-0,Ctrl+H,Replace
-1,F3 / Shift+F3,Find next/previous
-2,Alt+Enter,Select all occurences of Find match
-3,Ctrl+D,Add selection to next Find match
-4,Ctrl+K Ctrl+D,Move last selection to next Find match
-5,Alt+C / R /W,Toggle case-sensitive / regex / whole word

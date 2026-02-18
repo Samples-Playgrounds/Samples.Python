@@ -1,7 +1,0 @@
-,0
-0,curl -X POST http://localhost:3500/v1.0/actors/<actorType>/<actorId>/timers/<name> \
-1,"-H ""Content-Type: application/json"" \"
-2,-d '{
-3,"""dueTime"": ""0h0m0s0ms"","
-4,"""period"": ""0h0m10s0ms"""
-5,}'

@@ -1,14 +1,0 @@
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>StandardizationEncoding Categorical Features&gt;&gt;&gt; from sklearn.preprocessing import StandardScaler&gt;&gt;&gt; from sklearn.preprocessing import LabelEncoder&gt;&gt;&gt; scaler = StandardScaler().fit(X_train)&gt;&gt;&gt; enc = LabelEncoder()&gt;&gt;&gt; standardized_X = scaler.transform(X_train)&gt;&gt;&gt; y = enc.fit_transform(y)&gt;&gt;&gt; standardized_X_test = scaler.transform(X_test)NormalizationImputing Missing Values&gt;&gt;&gt; from sklearn.preprocessing import Normalizer&gt;&gt;&gt; from sklearn.preprocessing import Imputer&gt;&gt;&gt; scaler = Normalizer().fit(X_train)&gt;&gt;&gt; imp = Imputer(missing_values=0, strategy='mean', axis=0)&gt;&gt;&gt; normalized_X = scaler.transform(X_train)&gt;&gt;&gt; imp.fit_transform(X_train)&gt;&gt;&gt; normalized_X_test = scaler.transform(X_test)BinarizationGenerating Polynomial Features&gt;&gt;&gt; from sklearn.preprocessing import Binarizer&gt;&gt;&gt; from sklearn.preprocessing import PolynomialFeatures&gt;&gt;&gt; binarizer = Binarizer(threshold=0.0).fit(X)&gt;&gt;&gt; poly = PolynomialFeatures(5)&gt;&gt;&gt; binary_X = binarizer.transform(X)&gt;&gt;&gt; poly.fit_transform(X)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>&gt;&gt;&gt; from sklearn.preprocessing import PolynomialFeatures\r&gt;&gt;&gt; poly = PolynomialFeatures(5)\r&gt;&gt;&gt; poly.fit_transform(X)</td>
-    </tr>
-  </tbody>
-</table>

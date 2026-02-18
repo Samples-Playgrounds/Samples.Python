@@ -1,6 +1,8 @@
 # Text from Images
 
-https://community.palantir.com/t/guide-parsing-pdf-files-using-python-with-tesseract-ocr/1347
+*   https://community.palantir.com/t/guide-parsing-pdf-files-using-python-with-tesseract-ocr/1347
+
+*   https://medevel.com/os-ocr-libraris-and-frameworks/
 
 ## Image to Text
 

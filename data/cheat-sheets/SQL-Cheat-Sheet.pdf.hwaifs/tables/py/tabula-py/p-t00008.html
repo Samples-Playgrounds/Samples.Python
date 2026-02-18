@@ -1,83 +1,0 @@
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>String Functions in SQLCommandDescriptionSyntaxExampleCONCAT()The CONCAT commandSELECT CONCAT(string1,SELECT CONCAT(first_name,concatenates two or morestring2,) AS' ', last_name) ASstrings into a single string.concatenated_string FROMfull_name FROM employees;table_name;SUBSTRING()/SUBSTR()The SUBSTRING commandSELECT SUBSTRING(stringSELECTextracts a substring from aFROM start_position [FORSUBSTRING(product_namestring.length]) AS substringFROM 1 FOR 5) ASFROM table_name;substring FROM products;CHAR_LENGTH()/LENGTH()The LENGTH command returnsSELECTSELECTthe length (number ofCHAR_LENGTH(string) ASCHAR_LENGTH(product_name)characters) of a string.length FROM table_name;AS length FROM products;UPPER()The UPPER command convertsSELECT UPPER(string) ASSELECT UPPER(first_name)all characters in a string touppercase_string FROMAS uppercase_first_nameuppercase.table_name;FROM employees;LOWER()The LOWER command convertsSELECT LOWER(string) ASSELECT LOWER(last_name)all characters in a string tolowercase_string FROMAS lowercase_last_namelowercase.table_name;FROM employees;TRIM()The TRIM command removesSELECT TRIM([LEADING |SELECT TRIM(TRAILING ' 'specified prefixes or suffixes (orTRAILING | BOTH]FROM full_name) ASwhitespace by default) from acharacters FROM string)trimmed_full_name FROMstring.AS trimmed_string FROMcustomers;table_name;LEFT()The LEFT command returns aSELECT LEFT(string,SELECTspecified number of charactersnum_characters) ASLEFT(product_name, 5)from the left of a string.left_string FROMAS left_product_nametable_name;FROM products;RIGHT()The RIGHT command returns aSELECT RIGHT(string,SELECTspecified number of charactersnum_characters) ASRIGHT(order_number, 4) ASfrom the right of a string.right_string FROMright_order_number FROMtable_name;orders;REPLACE()The REPLACE commandSELECT REPLACE(string,SELECTreplaces occurrences of aold_substring,REPLACE(description,substring within a string.new_substring) AS'old_string',replaced_string FROM'new_string') AStable_name;replaced_description FROMproduct_descriptions;The SQL tool with the highest user satisfaction.DBVIS.COM</th>
-      <th>Unnamed: 0</th>
-      <th>Unnamed: 1</th>
-      <th>Unnamed: 2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Command</td>
-      <td>Description</td>
-      <td>Syntax</td>
-      <td>Example</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>CONCAT()</td>
-      <td>The CONCAT command\rconcatenates two or more\rstrings into a single string.</td>
-      <td>SELECT CONCAT(string1,\rstring2,) AS\rconcatenated_string FROM\rtable_name;</td>
-      <td>SELECT CONCAT(first_name,\r' ', last_name) AS\rfull_name FROM employees;</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>SUBSTRING()/SUBSTR()</td>
-      <td>The SUBSTRING command\rextracts a substring from a\rstring.</td>
-      <td>SELECT SUBSTRING(string\rFROM start_position [FOR\rlength]) AS substring\rFROM table_name;</td>
-      <td>SELECT\rSUBSTRING(product_name\rFROM 1 FOR 5) AS\rsubstring FROM products;</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>CHAR_LENGTH()/LENGTH()</td>
-      <td>The LENGTH command returns\rthe length (number of\rcharacters) of a string.</td>
-      <td>SELECT\rCHAR_LENGTH(string) AS\rlength FROM table_name;</td>
-      <td>SELECT\rCHAR_LENGTH(product_name)\rAS length FROM products;</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>UPPER()</td>
-      <td>The UPPER command converts\rall characters in a string to\ruppercase.</td>
-      <td>SELECT UPPER(string) AS\ruppercase_string FROM\rtable_name;</td>
-      <td>SELECT UPPER(first_name)\rAS uppercase_first_name\rFROM employees;</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>LOWER()</td>
-      <td>The LOWER command converts\rall characters in a string to\rlowercase.</td>
-      <td>SELECT LOWER(string) AS\rlowercase_string FROM\rtable_name;</td>
-      <td>SELECT LOWER(last_name)\rAS lowercase_last_name\rFROM employees;</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>TRIM()</td>
-      <td>The TRIM command removes\rspecified prefixes or suffixes (or\rwhitespace by default) from a\rstring.</td>
-      <td>SELECT TRIM([LEADING |\rTRAILING | BOTH]\rcharacters FROM string)\rAS trimmed_string FROM\rtable_name;</td>
-      <td>SELECT TRIM(TRAILING ' '\rFROM full_name) AS\rtrimmed_full_name FROM\rcustomers;</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>LEFT()</td>
-      <td>The LEFT command returns a\rspecified number of characters\rfrom the left of a string.</td>
-      <td>SELECT LEFT(string,\rnum_characters) AS\rleft_string FROM\rtable_name;</td>
-      <td>SELECT\rLEFT(product_name, 5)\rAS left_product_name\rFROM products;</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>RIGHT()</td>
-      <td>The RIGHT command returns a\rspecified number of characters\rfrom the right of a string.</td>
-      <td>SELECT RIGHT(string,\rnum_characters) AS\rright_string FROM\rtable_name;</td>
-      <td>SELECT\rRIGHT(order_number, 4) AS\rright_order_number FROM\rorders;</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>REPLACE()</td>
-      <td>The REPLACE command\rreplaces occurrences of a\rsubstring within a string.</td>
-      <td>SELECT REPLACE(string,\rold_substring,\rnew_substring) AS\rreplaced_string FROM\rtable_name;</td>
-      <td>SELECT\rREPLACE(description,\r'old_string',\r'new_string') AS\rreplaced_description FROM\rproduct_descriptions;</td>
-    </tr>
-  </tbody>
-</table>

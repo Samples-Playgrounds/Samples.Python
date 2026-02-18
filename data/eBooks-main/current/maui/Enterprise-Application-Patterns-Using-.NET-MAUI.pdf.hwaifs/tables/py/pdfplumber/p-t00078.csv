@@ -1,5 +1,0 @@
-,0
-0,Note
-1,The purpose of the circuit breaker pattern is different from the retry pattern. The retry pattern enables
-2,an app to retry an operation in the expectation that it’ll succeed. The circuit breaker pattern prevents
-3,an app from performing an operation that’s likely to fail.

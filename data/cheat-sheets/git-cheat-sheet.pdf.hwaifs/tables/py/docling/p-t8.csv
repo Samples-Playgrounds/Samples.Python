@@ -1,6 +1,0 @@
-,0,1
-0,git log [-n count],List c/uni006Fmmit hist/uni006Fry /uni006Ff current branch. -n c/uni006Funt limits list t/uni006F last n c/uni006Fmmits.
-1,git log --oneline --graph --decorate,An /uni006Fverview with reference labels and hist/uni006Fry graph. /uni004Fne c/uni006Fmmit per line.
-2,git log ref-.,List c/uni006Fmmits that are present /uni006Fn the current branch and n/uni006Ft merged int/uni006F ref . A ref can be a branch name /uni006Fr a tag name.
-3,git log -.ref,List c/uni006Fmmit that are present /uni006Fn ref and n/uni006Ft merged int/uni006F current branch.
-4,git reflog,List /uni006Fperati/uni006Fns (e.g. check/uni006Futs /uni006Fr c/uni006Fmmits) made /uni006Fn l/uni006Fcal rep/uni006Fsit/uni006Fry.

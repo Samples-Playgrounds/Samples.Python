@@ -1,2 +1,4 @@
+codetiming==1.4.0
 pdf2image==1.17.0
-pillow==12.0.0
+pillow==12.1.1
+timer==0.3.0
