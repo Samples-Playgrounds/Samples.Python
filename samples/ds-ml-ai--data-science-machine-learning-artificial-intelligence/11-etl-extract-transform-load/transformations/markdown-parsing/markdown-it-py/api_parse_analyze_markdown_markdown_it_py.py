@@ -2,8 +2,16 @@ from markdown_it import MarkdownIt
 from mdit_py_plugins.front_matter import front_matter_plugin
 from mdit_py_plugins.footnote import footnote_plugin
 
-
+import traceback
+import os
 from pathlib import Path
+
+import json
+import datetime
+import time
+from time import perf_counter
+from time import perf_counter_ns
+# from timer import timer
 
 def api_parse_analyze_markdown_markdown_it_py (source: str) -> str:
     """
@@ -14,7 +22,7 @@ def api_parse_analyze_markdown_markdown_it_py (source: str) -> str:
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    directory = f"{source}.hwaifs/parse-analysis/py/mrkdwn_analysis/"
+    directory = f"{source}.hwaifs/parse-analysis/py/markdown-it-py/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     try:
@@ -29,10 +37,13 @@ def api_parse_analyze_markdown_markdown_it_py (source: str) -> str:
             text = f.read()
 
         tokens = md.parse(text)
+        stokens = str(tokens)
+        with open(f"{directory}/tokens.json", "w") as f:
+            f.write(stokens)
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from PDF document source = {source} : {e}" \
+            f"Exception parsing markdown with markdown-it-py = {source} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")
@@ -41,7 +52,7 @@ def api_parse_analyze_markdown_markdown_it_py (source: str) -> str:
         
         return
 
-      #---------------------------------------------------------------------------
+    #---------------------------------------------------------------------------
     time_stop_1 = time.time()
     time_total_1 = time_stop_1 - time_start_1
     time_stop_2 = perf_counter()
@@ -67,4 +78,4 @@ def api_parse_analyze_markdown_markdown_it_py (source: str) -> str:
         f.write(json.dumps(times, indent=4))
     #---------------------------------------------------------------------------
 
-  return tokens
+    return tokens
