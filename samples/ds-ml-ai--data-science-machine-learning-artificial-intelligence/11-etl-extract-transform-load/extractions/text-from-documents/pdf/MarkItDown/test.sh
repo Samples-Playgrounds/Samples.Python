@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LIBRARY=markitdown
+LIBRARY=MarkItDown
 figlet $LIBRARY
 figlet start
 
