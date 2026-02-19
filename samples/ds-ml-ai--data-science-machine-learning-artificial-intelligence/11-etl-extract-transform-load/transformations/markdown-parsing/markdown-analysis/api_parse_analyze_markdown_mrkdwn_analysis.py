@@ -1,7 +1,15 @@
 from mrkdwn_analysis import MarkdownAnalyzer
 
-
+import traceback
+import os
 from pathlib import Path
+
+import json
+import datetime
+import time
+from time import perf_counter
+from time import perf_counter_ns
+# from timer import timer
 
 def api_parse_analyze_markdown_mrkdwn_analysis (source: str) -> str:
     """
@@ -18,68 +26,68 @@ def api_parse_analyze_markdown_mrkdwn_analysis (source: str) -> str:
     analyzer = MarkdownAnalyzer(source)
 
     result = ""
-    json = ""
+    str_json = ""
 
     try:
         print(f"analyzer.identify_headers()")
         headers = analyzer.identify_headers()
         with open(f"{directory}/headers.json", "w") as f:
-            json = str(headers)
-            result += f"headers = {json}\n\n"
-            f.write(json)
+            str_json = str(headers)
+            result += f"headers = {str_json}\n\n"
+            f.write(str_json)
         
         print(f"analyzer.identify_paragraphs()")
         paragraphs = analyzer.identify_paragraphs()
         with open(f"{directory}/paragraphs.json", "w") as f:
-            json = str(paragraphs)
-            result += f"paragraphs = {json}\n\n"
-            f.write(json)
+            str_json = str(paragraphs)
+            result += f"paragraphs = {str_json}\n\n"
+            f.write(str_json)
 
         print(f"analyzer.identify_tables()")
         tables = analyzer.identify_tables()
         with open(f"{directory}/tables.json", "w") as f:
-            json = str(tables)
-            result += f"tables = {json}\n\n"
-            f.write(json)
+            str_json = str(tables)
+            result += f"tables = {str_json}\n\n"
+            f.write(str_json)
 
         print(f"analyzer.identify_links()")
         links = analyzer.identify_links()
         with open(f"{directory}/links.json", "w") as f:
-            json = str(links)
-            result += f"links = {json}\n\n"
-            f.write(json)
+            str_json = str(links)
+            result += f"links = {str_json}\n\n"
+            f.write(str_json)
 
         print(f"analyzer.identify_lists()")
         lists = analyzer.identify_lists()
         with open(f"{directory}/lists.json", "w") as f:
-            json = str(lists)
-            result += f"lists = {json}\n\n"
-            f.write(json)
+            str_json = str(lists)
+            result += f"lists = {str_json}\n\n"
+            f.write(str_json)
 
         print(f"analyzer.identify_code_blocks()")
         code_blocks = analyzer.identify_code_blocks()
         with open(f"{directory}/code_blocks.json", "w") as f:
-            json = str(code_blocks)
-            result += f"code_blocks = {json}\n\n"
-            f.write(json)
+            str_json = str(code_blocks)
+            result += f"code_blocks = {str_json}\n\n"
+            f.write(str_json)
 
         print(f"analyzer.identify_html_blocks()")
         html_blocks = analyzer.identify_html_blocks()
         with open(f"{directory}/html_blocks.json", "w") as f:
-            json = str(html_blocks)
-            result += f"html_blocks = {json}\n\n"
-            f.write(json)
+            str_json = str(html_blocks)
+            result += f"html_blocks = {str_json}\n\n"
+            f.write(str_json)
 
         print(f"analyzer.identify_html_inline()")
         html_inline = analyzer.identify_html_inline()
         with open(f"{directory}/html_inline.json", "w") as f:
-            json = str(html_inline)
-            result += f"html_inline = {json}\n\n"
-            f.write(json)
+            str_json = str(html_inline)
+            result += f"html_inline = {str_json}\n\n"
+            f.write(str_json)
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from PDF document source = {source} : {e}" \
+            f"Exception parsing markdown with mrkdwn_analysis = {source} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")
