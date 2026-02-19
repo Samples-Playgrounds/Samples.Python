@@ -7,6 +7,7 @@ ls -d1 */ > list.md
 EXTRACTORS=\
 "
 markdown-analysis
+markdown-it-py
 # todo
 "
 
