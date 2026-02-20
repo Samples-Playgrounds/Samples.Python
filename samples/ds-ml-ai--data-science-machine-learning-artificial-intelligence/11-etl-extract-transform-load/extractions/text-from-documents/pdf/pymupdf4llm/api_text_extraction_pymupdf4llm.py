@@ -3,6 +3,7 @@ import pymupdf4llm
 import os
 from pathlib import Path
 
+import traceback
 import json
 import datetime
 import time

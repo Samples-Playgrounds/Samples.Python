@@ -1,10 +1,10 @@
 import pypdfium2 as pdfium
 import pypdfium2.raw as pdfium_c
 
-
 import os
 from pathlib import Path
 
+import traceback
 import json
 import datetime
 import time

@@ -3,6 +3,7 @@ from pymupdf4llm_c import ConversionConfig, ExtractionError, to_json
 import os
 from pathlib import Path
 
+import traceback
 import json
 import datetime
 import time

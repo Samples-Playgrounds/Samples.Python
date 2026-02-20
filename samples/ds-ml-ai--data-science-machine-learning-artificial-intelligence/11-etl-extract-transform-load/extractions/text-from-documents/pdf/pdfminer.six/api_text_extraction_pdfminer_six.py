@@ -3,6 +3,7 @@ from pdfminer.high_level import extract_text
 import os
 from pathlib import Path
 
+import traceback
 import json
 import datetime
 import time

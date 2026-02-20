@@ -3,11 +3,13 @@ import fitz  # PyMuPDF
 import os
 from pathlib import Path
 
+import traceback
 import json
 import datetime
 import time
 from time import perf_counter
 from time import perf_counter_ns
+# from timer import timer
 # from timer import timer
 
 # https://pymupdf.readthedocs.io/en/latest/how-to-open-a-file.html#supported-file-types
