@@ -1,0 +1,3235 @@
+Tutorial: Create a Razor Pages web app with ASP.NET Core
+
+Source: https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages
+
+This series of tutorials explains the basics of building a Razor Pages web app. The series includes the following
+tutorials:
+
+Create a Razor Pages web app
+
+Add a model to a Razor Pages app
+
+Scaffold (generate) Razor pages
+
+Work with a database
+
+Update Razor pages
+
+Add search
+
+Add a new field
+
+Add validation
+
+At the end, you'll have an app that can display and manage a database of movies.
+
+
+Tutorial: Get started with Razor Pages in ASP.NET Core
+
+This is the first tutorial of a series. The series teaches the basics of building an ASP.NET Core Razor Pages web
+app. At the end of the series you'll have an app that manages a database of movies.
+
+View or download sample code (how to download).
+
+In this tutorial, you:
+
+Create a Razor Pages web app.
+
+Run the app.
+
+Examine the project files.
+
+At the end of this tutorial you'll have a working Razor Pages web app that you'll build on in later tutorials.
+
+Home or Index page
+
+## **Prerequisites**
+
+
+Visual Studio
+
+Visual Studio 2017 version 15.9 or later with the ASP.NET and web development workload
+
+.NET Core SDK 2.2 or later
+
+Visual Studio Code
+
+Visual Studio Code
+
+.NET Core SDK 2.2 or later
+
+C# for Visual Studio Code version 1.17.1 or later
+
+
+CONTINUE…
+
+## **Create a Razor Pages web app**
+
+
+Visual Studio
+
+From the Visual Studio File menu, select New > Project.
+
+
+Create a new ASP.NET Core Web Application. Name the project RazorPagesMovie. It's important to name the
+project RazorPagesMovie so the namespaces will match when you copy and paste code.
+
+
+Select ASP.NET Core 2.2 in the dropdown, and then select Web Application.
+
+
+The following starter project is created:
+
+
+Visual Studio Code
+
+Open the integrated terminal.
+
+Change directories (cd) to a folder which will contain the project.
+
+Run the following commands:
+
+consoleCopy
+
+dotnet new webapp -o RazorPagesMovie
+
+code -r RazorPagesMovie
+
+The dotnet new command creates a new Razor Pages project in the RazorPagesMovie folder.
+
+The code command opens the RazorPagesMovie folder in a new instance of Visual Studio Code.
+
+A dialog box appears with Required assets to build and debug are missing from 'RazorPagesMovie'. Add them?
+
+Select Yes
+
+CONTINUE…
+
+## **Run the web app**
+
+
+Visual Studio
+
+Press Ctrl+F5 to run without the debugger.
+
+Visual Studio starts IIS Express and runs the app. The address bar shows localhost:port# and not something
+like example.com. That's because localhost is the standard hostname for the local computer. Localhost only
+serves web requests from the local computer. When Visual Studio creates a web project, a random port is used
+for the web server. In the preceding image, the port number is 5001. When you run the app, you'll see a
+different port number.
+
+Visual Studio Code
+
+Press Ctrl-F5 to run without the debugger.
+
+Visual Studio Code starts starts Kestrel, launches a browser, and navigates to http://localhost:5001. The
+address bar shows localhost:port# and not something like example.com. That's because localhost is the
+standard hostname for local computer. Localhost only serves web requests from the local computer.
+
+
+CONTINUE…
+
+On the app's home page, select Accept to consent to tracking.
+
+This app doesn't track personal information, but the project template includes the consent feature in case you
+need it to comply with the European Union's General Data Protection Regulation (GDPR).
+
+
+The following image shows the app after you give consent to tracking:
+
+## **Examine the project files**
+
+
+Here's an overview of the main project folders and files that you'll work with in later tutorials.
+
+### **Pages folder**
+
+
+Contains Razor pages and supporting files. Each Razor page is a pair of files:
+
+A .cshtml file that contains HTML markup with C# code using Razor syntax.
+
+A .cshtml.cs file that contains C# code that handles page events.
+
+Supporting files have names that begin with an underscore. For example, the _Layout.cshtml file configures UI
+elements common to all pages. This file sets up the navigation menu at the top of the page and the copyright
+notice at the bottom of the page. For more information, see Layout in ASP.NET Core.
+
+### **wwwroot folder**
+
+
+Contains static files, such as HTML files, JavaScript files, and CSS files. For more information, see Static files in
+ASP.NET Core.
+
+### **appSettings.json**
+
+
+Contains configuration data, such as connection strings. For more information, see Configuration in ASP.NET
+Core.
+
+### **Program.cs**
+
+
+Contains the entry point for the program. For more information, see ASP.NET Core Web Host.
+
+### **Startup.cs**
+
+
+Contains code that configures app behavior, such as whether it requires consent for cookies. For more
+information, see App startup in ASP.NET Core.
+
+## **Next steps**
+
+
+In this tutorial, you:
+
+Created a Razor Pages web app.
+
+Ran the app.
+
+Examined the project files.
+
+Advance to the next tutorial in the series:
+
+Add a model
+
+# **Add a model to a Razor Pages app in ASP.NET Core**
+
+
+View or download sample code (how to download).
+
+In this section, classes are added for managing movies in a database. These classes are used with Entity
+Framework Core (EF Core) to work with a database. EF Core is an object-relational mapping (ORM) framework
+that simplifies data access code.
+
+The model classes are known as POCO classes (from "plain-old CLR objects") because they don't have any
+dependency on EF Core. They define the properties of the data that are stored in the database.
+
+View or download sample.
+
+## **Add a data model**
+
+
+Visual Studio
+
+Right-click the RazorPagesMovie project > Add > New Folder. Name the folder Models.
+
+Right click the Models folder. Select Add > Class. Name the class Movie.
+
+Add the following properties to the Movie class:
+
+C#Copy
+
+using System;
+
+using System.ComponentModel.DataAnnotations;
+
+
+namespace RazorPagesMovie.Models
+
+{
+
+public class Movie
+
+{
+
+public int ID { get; set; }
+
+public string Title { get; set; }
+
+
+[DataType(DataType.Date)]
+
+public DateTime ReleaseDate { get; set; }
+
+public string Genre { get; set; }
+
+public decimal Price { get; set; }
+
+}
+
+}
+
+The Movie class contains:
+
+The ID field is required by the database for the primary key.
+
+[DataType(DataType.Date)]: The DataType attribute specifies the type of the data (Date). With this attribute:
+
+The user is not required to enter time information in the date field.
+
+Only the date is displayed, not time information.
+
+DataAnnotations are covered in a later tutorial.
+
+Visual Studio Code
+
+Add a folder named Models.
+
+Add a class to the Models folder named Movie.cs.
+
+Add the following properties to the Movie class:
+
+C#Copy
+
+using System;
+
+using System.ComponentModel.DataAnnotations;
+
+
+namespace RazorPagesMovie.Models
+
+{
+
+public class Movie
+
+{
+
+public int ID { get; set; }
+
+public string Title { get; set; }
+
+
+[DataType(DataType.Date)]
+
+public DateTime ReleaseDate { get; set; }
+
+public string Genre { get; set; }
+
+public decimal Price { get; set; }
+
+}
+
+}
+
+The Movie class contains:
+
+The ID field is required by the database for the primary key.
+
+[DataType(DataType.Date)]: The DataType attribute specifies the type of the data (Date). With this attribute:
+
+The user is not required to enter time information in the date field.
+
+Only the date is displayed, not time information.
+
+DataAnnotations are covered in a later tutorial.
+
+Add the following RazorPagesMovieContext class to the Models folder:
+
+C#Copy
+
+using Microsoft.EntityFrameworkCore;
+
+
+namespace RazorPagesMovie.Models
+
+{
+
+public class RazorPagesMovieContext : DbContext
+
+{
+
+public RazorPagesMovieContext (DbContextOptions<RazorPagesMovieContext> options)
+
+: base(options)
+
+{
+
+}
+
+
+public DbSet<RazorPagesMovie.Models.Movie> Movie { get; set; }
+
+}
+
+}
+
+The preceding code creates a DbSet property for the entity set. In Entity Framework terminology, an entity set
+typically corresponds to a database table, and an entity corresponds to a row in the table.
+
+### **Add a database connection string**
+
+
+Add a connection string to the appsettings.json file:
+
+JSONCopy
+
+{
+
+"Logging": {
+
+"LogLevel": {
+
+"Default": "Warning"
+
+}
+
+},
+
+"AllowedHosts": "*",
+
+"ConnectionStrings": {
+
+"MovieContext": "Data Source=MvcMovie.db"
+
+}
+
+}
+
+### **Add required NuGet packages**
+
+
+Run the following .NET Core CLI command to add SQLite and CodeGeneration.Design to the project:
+
+consoleCopy
+
+dotnet add package Microsoft.EntityFrameworkCore.SQLite
+
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+
+The Microsoft.VisualStudio.Web.CodeGeneration.Design package is required for scaffolding.
+
+### **Register the database context**
+
+
+Add the following using statements at the top of Startup.cs:
+
+C#Copy
+
+using RazorPagesMovie.Models;
+
+using Microsoft.EntityFrameworkCore;
+
+Register the database context with the dependency injection container in Startup.ConfigureServices.
+
+C#Copy
+
+public void ConfigureServices(IServiceCollection services)
+
+{
+
+services.Configure<CookiePolicyOptions>(options =>
+
+{
+
+// This lambda determines whether user consent for
+
+// non-essential cookies is needed for a given request.
+
+options.CheckConsentNeeded = context => true;
+
+options.MinimumSameSitePolicy = SameSiteMode.None;
+
+});
+
+
+services.AddDbContext<RazorPagesMovieContext>(options =>
+
+options.UseSqlite(Configuration.GetConnectionString("MovieContext")));
+
+
+services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+}
+
+Build the project as a check for errors.
+
+
+CONTINUE…
+
+Build the project to verify there are no compilation errors.
+
+## **Scaffold the movie model**
+
+
+In this section, the movie model is scaffolded. That is, the scaffolding tool produces pages for Create, Read,
+Update, and Delete (CRUD) operations for the movie model.
+
+Visual Studio
+
+Create a Pages/Movies folder:
+
+Right click on the Pages folder > Add > New Folder.
+
+Name the folder Movies
+
+Right click on the Pages/Movies folder > Add > New Scaffolded Item.
+
+
+In the Add Scaffold dialog, select Razor Pages using Entity Framework (CRUD) > Add.
+
+
+Complete the Add Razor Pages using Entity Framework (CRUD) dialog:
+
+In the Model class drop down, select Movie (RazorPagesMovie.Models).
+
+In the Data context class row, select the + (plus) sign and accept the generated
+name RazorPagesMovie.Models.RazorPagesMovieContext.
+
+Select Add.
+
+
+The appsettings.json file is updated with the connection string used to connect to a local database.
+
+Visual Studio Code
+
+Open a command window in the project directory (The directory that contains the Program.cs, Startup.cs,
+and .csproj files).
+
+Install the scaffolding tool:
+
+consoleCopy
+
+dotnet tool install --global dotnet-aspnet-codegenerator
+
+For Windows: Run the following command:
+
+consoleCopy
+
+dotnet aspnet-codegenerator razorpage -m Movie -dc RazorPagesMovieContext -udl -outDir Pages\Movies -referenceScriptLibraries
+
+For macOS and Linux: Run the following command:
+
+consoleCopy
+
+dotnet aspnet-codegenerator razorpage -m Movie -dc RazorPagesMovieContext -udl -outDir Pages/Movies -referenceScriptLibraries
+
+The following table details the ASP.NET Core code generator parameters:
+
+Parameter
+
+Description
+
+-m
+
+The name of the model.
+
+-dc
+
+The DbContext class to use.
+
+-udl
+
+Use the default layout.
+
+-outDir
+
+The relative output folder path to create the views.
+
+--referenceScriptLibraries
+
+Adds _ValidationScriptsPartial to Edit and Create pages
+
+Use the h switch to get help on the aspnet-codegenerator razorpage command:
+
+consoleCopy
+
+dotnet aspnet-codegenerator razorpage -h
+
+
+CONTINUE…
+
+The scaffold process creates and updates the following files:
+
+### **Files created**
+
+
+Pages/Movies: Create, Delete, Details, Edit, and Index.
+
+Data/RazorPagesMovieContext.cs
+
+### **File updated**
+
+
+Startup.cs
+
+The created and updated files are explained in the next section.
+
+## **Initial migration**
+
+
+Visual Studio
+
+In this section, the Package Manager Console (PMC) is used to:
+
+Add an initial migration.
+
+Update the database with the initial migration.
+
+From the Tools menu, select NuGet Package Manager > Package Manager Console.
+
+
+In the PMC, enter the following commands:
+
+PMCCopy
+
+Add-Migration Initial
+
+Update-Database
+
+Visual Studio Code
+
+Run the following .NET Core CLI commands:
+
+consoleCopy
+
+dotnet ef migrations add InitialCreate
+
+dotnet ef database update
+
+
+CONTINUE…
+
+The ef migrations add InitialCreate command generates code to create the initial database schema. The schema
+is based on the model specified in the DbContext (In the RazorPagesMovieContext.cs file).
+The InitialCreate argument is used to name the migrations. Any name can be used, but by convention a name is
+selected that describes the migration.
+
+The ef database update command runs the Up method in the Migrations/<time-stamp>_InitialCreate.cs file.
+The Up method creates the database.
+
+Visual Studio
+
+## **Examine the context registered with dependency injection**
+
+
+ASP.NET Core is built with dependency injection. Services (such as the EF Core DB context) are registered with
+dependency injection during application startup. Components that require these services (such as Razor Pages)
+are provided these services via constructor parameters. The constructor code that gets a DB context instance is
+shown later in the tutorial.
+
+The scaffolding tool automatically created a DB context and registered it with the dependency injection
+container.
+
+Examine the Startup.ConfigureServices method. The highlighted line was added by the scaffolder:
+
+C#Copy
+
+// This method gets called by the runtime.
+
+// Use this method to add services to the container.
+
+public void ConfigureServices(IServiceCollection services)
+
+{
+
+services.Configure<CookiePolicyOptions>(options =>
+
+{
+
+// This lambda determines whether user consent for non-essential cookies is
+
+// needed for a given request.
+
+options.CheckConsentNeeded = context => true;
+
+options.MinimumSameSitePolicy = SameSiteMode.None;
+
+});
+
+
+services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+
+services.AddDbContext<RazorPagesMovieContext>(options =>
+
+options.UseSqlServer(
+
+Configuration.GetConnectionString("RazorPagesMovieContext")));
+
+}
+
+The RazorPagesMovieContext coordinates EF Core functionality (Create, Read, Update, Delete, etc.) for
+the Movie model. The data context (RazorPagesMovieContext) is derived
+from Microsoft.EntityFrameworkCore.DbContext. The data context specifies which entities are included in the
+data model.
+
+C#Copy
+
+using Microsoft.EntityFrameworkCore;
+
+
+namespace RazorPagesMovie.Models
+
+{
+
+public class RazorPagesMovieContext : DbContext
+
+{
+
+public RazorPagesMovieContext (DbContextOptions<RazorPagesMovieContext> options)
+
+: base(options)
+
+{
+
+}
+
+
+public DbSet<RazorPagesMovie.Models.Movie> Movie { get; set; }
+
+}
+
+}
+
+The preceding code creates a DbSet/<Movie> property for the entity set. In Entity Framework terminology,
+an entity set typically corresponds to a database table. An entity corresponds to a row in the table.
+
+The name of the connection string is passed in to the context by calling a method on
+a DbContextOptionsobject. For local development, the ASP.NET Core configuration system reads the
+connection string from the appsettings.json file.
+
+Visual Studio Code (N/A)
+
+
+CONTINUE…
+
+The Add-Migration command generates code to create the initial database schema. The schema is based on the
+model specified in the RazorPagesMovieContext (In the Data/RazorPagesMovieContext.cs file).
+The Initialargument is used to name the migrations. Any name can be used, but by convention a name that
+describes the migration is used. See Introduction to migrations for more information.
+
+The Update-Database command runs the Up method in the Migrations/{time-stamp}_InitialCreate.cs file, which
+creates the database.
+
+### **Test the app**
+
+
+Run the app and append /Movies to the URL in the browser (http://localhost:port/movies).
+
+If you get the error:
+
+consoleCopy
+
+SqlException: Cannot open database "RazorPagesMovieContext-GUID" requested by the login. The login failed.
+
+Login failed for user 'User-name'.
+
+You missed the migrations step.
+
+Test the Create link.
+
+
+Note
+
+You may not be able to enter decimal commas in the Price field. To support jQuery validation for non-English
+locales that use a comma (",") for a decimal point and for non US-English date formats, the app must be
+globalized. For globalization instructions, see this GitHub issue.
+
+Test the Edit, Details, and Delete links.
+
+The next tutorial explains the files created by scaffolding.
+
+# **Scaffolded Razor Pages in ASP.NET Core**
+
+
+This tutorial examines the Razor Pages created by scaffolding in the previous tutorial.
+
+View or download sample.
+
+## **The Create, Delete, Details, and Edit pages**
+
+
+Examine the Pages/Movies/Index.cshtml.cs Page Model:
+
+C#Copy
+
+using System;
+
+using System.Collections.Generic;
+
+using System.Linq;
+
+using System.Threading.Tasks;
+
+using Microsoft.AspNetCore.Mvc;
+
+using Microsoft.AspNetCore.Mvc.RazorPages;
+
+using Microsoft.EntityFrameworkCore;
+
+using RazorPagesMovie.Models;
+
+
+namespace RazorPagesMovie.Pages.Movies
+
+{
+
+public class IndexModel : PageModel
+
+{
+
+private readonly RazorPagesMovie.Models.RazorPagesMovieContext _context;
+
+
+public IndexModel(RazorPagesMovie.Models.RazorPagesMovieContext context)
+
+{
+
+_context = context;
+
+}
+
+
+public IList<Movie> Movie { get;set; }
+
+
+public async Task OnGetAsync()
+
+{
+
+Movie = await _context.Movie.ToListAsync();
+
+}
+
+}
+
+}
+
+Razor Pages are derived from PageModel. By convention, the PageModel-derived class is
+called <PageName>Model. The constructor uses dependency injection to add the RazorPagesMovieContext to
+the page. All the scaffolded pages follow this pattern. See Asynchronous code for more information on
+asynchronous programing with Entity Framework.
+
+When a request is made for the page, the OnGetAsync method returns a list of movies to the Razor
+Page. OnGetAsync or OnGet is called on a Razor Page to initialize the state for the page. In this
+case, OnGetAsyncgets a list of movies and displays them.
+
+When OnGet returns void or OnGetAsync returnsTask, no return method is used. When the return type
+is IActionResult or Task<IActionResult>, a return statement must be provided. For example, the Pages/
+Movies/Create.cshtml.cs OnPostAsync method:
+
+C#Copy
+
+public async Task<IActionResult> OnPostAsync()
+
+{
+
+if (!ModelState.IsValid)
+
+{
+
+return Page();
+
+}
+
+
+_context.Movie.Add(Movie);
+
+await _context.SaveChangesAsync();
+
+
+return RedirectToPage("./Index");
+
+}
+
+Examine the Pages/Movies/Index.cshtml Razor Page:
+
+CSHTMLCopy
+
+@page
+
+@model RazorPagesMovie.Pages.Movies.IndexModel
+
+
+@{
+
+ViewData["Title"] = "Index";
+
+}
+
+
+<h1>Index</h1>
+
+
+<p>
+
+<a asp-page="Create">Create New</a>
+
+</p>
+
+<table class="table">
+
+<thead>
+
+<tr>
+
+<th>
+
+@Html.DisplayNameFor(model => model.Movie[0].Title)
+
+</th>
+
+<th>
+
+@Html.DisplayNameFor(model => model.Movie[0].ReleaseDate)
+
+</th>
+
+<th>
+
+@Html.DisplayNameFor(model => model.Movie[0].Genre)
+
+</th>
+
+<th>
+
+@Html.DisplayNameFor(model => model.Movie[0].Price)
+
+</th>
+
+<th></th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+@foreach (var item in Model.Movie) {
+
+<tr>
+
+<td>
+
+@Html.DisplayFor(modelItem => item.Title)
+
+</td>
+
+<td>
+
+@Html.DisplayFor(modelItem => item.ReleaseDate)
+
+</td>
+
+<td>
+
+@Html.DisplayFor(modelItem => item.Genre)
+
+</td>
+
+<td>
+
+@Html.DisplayFor(modelItem => item.Price)
+
+</td>
+
+<td>
+
+<a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+
+<a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+
+<a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+
+</td>
+
+</tr>
+
+}
+
+</tbody>
+
+</table>
+
+Razor can transition from HTML into C# or into Razor-specific markup. When an @ symbol is followed by
+a Razor reserved keyword, it transitions into Razor-specific markup, otherwise it transitions into C#.
+
+The @page Razor directive makes the file into an MVC action, which means that it can handle
+requests. @page must be the first Razor directive on a page. @page is an example of transitioning into Razorspecific markup. See Razor syntax for more information.
+
+Examine the lambda expression used in the following HTML Helper:
+
+CSHTMLCopy
+
+@Html.DisplayNameFor(model => model.Movie[0].Title))
+
+The DisplayNameFor HTML Helper inspects the Title property referenced in the lambda expression to
+determine the display name. The lambda expression is inspected rather than evaluated. That means there is no
+access violation when model, model.Movie, or model.Movie[0] are null or empty. When the lambda expression
+is evaluated (for example, with @Html.DisplayFor(modelItem => item.Title)), the model's property values are
+evaluated.
+
+### **The @model directive**
+
+
+CSHTMLCopy
+
+@page
+
+@model RazorPagesMovie.Pages.Movies.IndexModel
+
+The @model directive specifies the type of the model passed to the Razor Page. In the preceding example,
+the @model line makes the PageModel-derived class available to the Razor Page. The model is used in
+the @Html.DisplayNameFor and @Html.DisplayFor HTML Helpers on the page.
+
+### **ViewData and layout**
+
+
+Consider the following code from the Pages/Movies/Index.cshtml file:
+
+CSHTMLCopy
+
+@page
+
+@model RazorPagesMovie.Pages.Movies.IndexModel
+
+
+@{
+
+ViewData["Title"] = "Index";
+
+}
+
+The preceding highlighted code is an example of Razor transitioning into C#. The { and } characters enclose a
+block of C# code.
+
+The PageModel base class has a ViewData dictionary property that can be used to add data that you want to
+pass to a View. You add objects into the ViewData dictionary using a key/value pattern. In the preceding
+sample, the "Title" property is added to the ViewData dictionary.
+
+The "Title" property is used in the Pages/Shared/_Layout.cshtml file. The following markup shows the first few
+lines of the _Layout.cshtml file.
+
+CSHTMLCopy
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>@ViewData["Title"] - RazorPagesMovie</title>
+
+
+@*Markup removed for brevity.*@
+
+The line @*Markup removed for brevity.*@ is a Razor comment which doesn't appear in your layout file.
+Unlike HTML comments (<!-- -->), Razor comments are not sent to the client.
+
+### **Update the layout**
+
+
+Change the <title> element in the Pages/Shared/_Layout.cshtml file display Movie rather
+than RazorPagesMovie.
+
+CSHTMLCopy
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>@ViewData["Title"] - Movie</title>
+
+Find the following anchor element in the Pages/Shared/_Layout.cshtml file.
+
+CSHTMLCopy
+
+<a class="navbar-brand" asp-area="" asp-page="/Index">RazorPagesMovie</a>
+
+Replace the preceding element with the following markup.
+
+CSHTMLCopy
+
+<a class="navbar-brand" asp-page="/Movies/Index">RpMovie</a>
+
+The preceding anchor element is a Tag Helper. In this case, it's the Anchor Tag Helper. The asp-page="/
+Movies/Index" Tag Helper attribute and value creates a link to the /Movies/Index Razor Page. The asparea attribute value is empty, so the area isn't used in the link. See Areas for more information.
+
+Save your changes, and test the app by clicking on the RpMovie link. See the _Layout.cshtml file in GitHub if
+you have any problems.
+
+Test the other links (Home, RpMovie, Create, Edit, and Delete). Each page sets the title, which you can see in
+the browser tab. When you bookmark a page, the title is used for the bookmark. Pages/
+Index.cshtml and Pages/Movies/Index.cshtml currently have the same title, but you can modify them to have
+different values.
+
+Note
+
+You may not be able to enter decimal commas in the Price field. To support jQuery validation for non-English
+locales that use a comma (",") for a decimal point, and non US-English date formats, you must take steps to
+globalize your app. This GitHub issue 4076 for instructions on adding decimal comma.
+
+The Layout property is set in the Pages/_ViewStart.cshtml file:
+
+CSHTMLCopy
+
+@{
+
+Layout = "_Layout";
+
+}
+
+The preceding markup sets the layout file to Pages/Shared/_Layout.cshtml for all Razor files under
+the Pagesfolder. See Layout for more information.
+
+### **The Create page model**
+
+
+Examine the Pages/Movies/Create.cshtml.cs page model:
+
+C#Copy
+
+// Unused usings removed.
+
+using Microsoft.AspNetCore.Mvc;
+
+using Microsoft.AspNetCore.Mvc.RazorPages;
+
+using RazorPagesMovie.Models;
+
+using System;
+
+using System.Threading.Tasks;
+
+
+namespace RazorPagesMovie.Pages.Movies
+
+{
+
+public class CreateModel : PageModel
+
+{
+
+private readonly RazorPagesMovie.Models.RazorPagesMovieContext _context;
+
+
+public CreateModel(RazorPagesMovie.Models.RazorPagesMovieContext context)
+
+{
+
+_context = context;
+
+}
+
+
+public IActionResult OnGet()
+
+{
+
+return Page();
+
+}
+
+
+[BindProperty]
+
+public Movie Movie { get; set; }
+
+
+public async Task<IActionResult> OnPostAsync()
+
+{
+
+if (!ModelState.IsValid)
+
+{
+
+return Page();
+
+}
+
+
+_context.Movie.Add(Movie);
+
+await _context.SaveChangesAsync();
+
+
+return RedirectToPage("./Index");
+
+}
+
+}
+
+}
+
+The OnGet method initializes any state needed for the page. The Create page doesn't have any state to
+initialize, so Page is returned. Later in the tutorial you see OnGet method initialize state. The Page method
+creates a PageResult object that renders the Create.cshtml page.
+
+The Movie property uses the [BindProperty] attribute to opt-in to model binding. When the Create form posts
+the form values, the ASP.NET Core runtime binds the posted values to the Movie model.
+
+The OnPostAsync method is run when the page posts form data:
+
+C#Copy
+
+public async Task<IActionResult> OnPostAsync()
+
+{
+
+if (!ModelState.IsValid)
+
+{
+
+return Page();
+
+}
+
+
+_context.Movie.Add(Movie);
+
+await _context.SaveChangesAsync();
+
+
+return RedirectToPage("./Index");
+
+}
+
+If there are any model errors, the form is redisplayed, along with any form data posted. Most model errors can
+be caught on the client-side before the form is posted. An example of a model error is posting a value for the
+date field that cannot be converted to a date. Client-side validation and model validation are discussed later in
+the tutorial.
+
+If there are no model errors, the data is saved, and the browser is redirected to the Index page.
+
+### **The Create Razor Page**
+
+
+Examine the Pages/Movies/Create.cshtml Razor Page file:
+
+CSHTMLCopy
+
+@page
+
+@model RazorPagesMovie.Pages.Movies.CreateModel
+
+
+@{
+
+ViewData["Title"] = "Create";
+
+}
+
+
+<h1>Create</h1>
+
+
+<h4>Movie</h4>
+
+<hr />
+
+<div class="row">
+
+<div class="col-md-4">
+
+<form method="post">
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<div class="form-group">
+
+<label asp-for="Movie.Title" class="control-label"></label>
+
+<input asp-for="Movie.Title" class="form-control" />
+
+<span asp-validation-for="Movie.Title" class="text-danger"></span>
+
+</div>
+
+<div class="form-group">
+
+<label asp-for="Movie.ReleaseDate" class="control-label"></label>
+
+<input asp-for="Movie.ReleaseDate" class="form-control" />
+
+<span asp-validation-for="Movie.ReleaseDate" class="text-danger"></span>
+
+</div>
+
+<div class="form-group">
+
+<label asp-for="Movie.Genre" class="control-label"></label>
+
+<input asp-for="Movie.Genre" class="form-control" />
+
+<span asp-validation-for="Movie.Genre" class="text-danger"></span>
+
+</div>
+
+<div class="form-group">
+
+<label asp-for="Movie.Price" class="control-label"></label>
+
+<input asp-for="Movie.Price" class="form-control" />
+
+<span asp-validation-for="Movie.Price" class="text-danger"></span>
+
+</div>
+
+<div class="form-group">
+
+<input type="submit" value="Create" class="btn btn-primary" />
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+
+<div>
+
+<a asp-page="Index">Back to List</a>
+
+</div>
+
+
+@section Scripts {
+
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+}
+
+Visual Studio
+
+Visual Studio displays the <form method="post"> tag in a distinctive bold font used for Tag Helpers:
+
+
+Visual Studio Code
+
+For more information on Tag Helpers such as <form method="post">, see Tag Helpers in ASP.NET Core.
+
+
+CONTINUE…
+
+The <form method="post"> element is a Form Tag Helper. The Form Tag Helper automatically includes
+an antiforgery token.
+
+The scaffolding engine creates Razor markup for each field in the model (except the ID) similar to the
+following:
+
+CSHTMLCopy
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<div class="form-group">
+
+<label asp-for="Movie.Title" class="control-label"></label>
+
+<input asp-for="Movie.Title" class="form-control" />
+
+<span asp-validation-for="Movie.Title" class="text-danger"></span>
+
+</div>
+
+The Validation Tag Helpers (<div asp-validation-summary and <span asp-validation-for) display validation
+errors. Validation is covered in more detail later in this series.
+
+The Label Tag Helper (<label asp-for="Movie.Title" class="control-label"></label>) generates the label
+caption and for attribute for the Title property.
+
+The Input Tag Helper (<input asp-for="Movie.Title" class="form-control" />) uses
+the DataAnnotationsattributes and produces HTML attributes needed for jQuery Validation on the client-side.
+
+# **Work with a database and ASP.NET Core**
+
+
+View or download sample code (how to download).
+
+The RazorPagesMovieContext object handles the task of connecting to the database and mapping Movieobjects
+to database records. The database context is registered with the Dependency Injection container in
+the ConfigureServices method in Startup.cs:
+
+Visual Studio
+
+C#Copy
+
+// This method gets called by the runtime.
+
+// Use this method to add services to the container.
+
+public void ConfigureServices(IServiceCollection services)
+
+{
+
+services.Configure<CookiePolicyOptions>(options =>
+
+{
+
+// This lambda determines whether user consent for non-essential cookies is
+
+// needed for a given request.
+
+options.CheckConsentNeeded = context => true;
+
+options.MinimumSameSitePolicy = SameSiteMode.None;
+
+});
+
+
+services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+
+services.AddDbContext<RazorPagesMovieContext>(options =>
+
+options.UseSqlServer(
+
+Configuration.GetConnectionString("RazorPagesMovieContext")));
+
+}
+
+Visual Studio Code
+
+
+public void ConfigureServices(IServiceCollection services)
+
+{
+
+services.Configure<CookiePolicyOptions>(options =>
+
+{
+
+// This lambda determines whether user consent for
+
+// non-essential cookies is needed for a given request.
+
+options.CheckConsentNeeded = context => true;
+
+options.MinimumSameSitePolicy = SameSiteMode.None;
+
+});
+
+
+services.AddDbContext<RazorPagesMovieContext>(options =>
+
+options.UseSqlite(Configuration.GetConnectionString("MovieContext")));
+
+
+services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+}
+
+CONTINUE…
+
+For more information on the methods used in ConfigureServices, see:
+
+EU General Data Protection Regulation (GDPR) support in ASP.NET Core for CookiePolicyOptions.
+
+SetCompatibilityVersion
+
+The ASP.NET Core Configuration system reads the ConnectionString. For local development, it gets the
+connection string from the appsettings.json file.
+
+Visual Studio
+
+The name value for the database (Database={Database name}) will be different for your generated code. The
+name value is arbitrary.
+
+JSONCopy
+
+{
+
+"Logging": {
+
+"LogLevel": {
+
+"Default": "Warning"
+
+}
+
+},
+
+"AllowedHosts": "*",
+
+"ConnectionStrings": {
+
+"RazorPagesMovieContext": "Server=(localdb)\
+\mssqllocaldb;Database=RazorPagesMovieContext-1234;Trusted_Connection=True;MultipleActiveResultSets=true"
+
+}
+
+}
+
+
+Visual Studio Code
+
+
+{
+
+"Logging": {
+
+"LogLevel": {
+
+"Default": "Warning"
+
+}
+
+},
+
+"AllowedHosts": "*",
+
+"ConnectionStrings": {
+
+"MovieContext": "Data Source=MvcMovie.db"
+
+}
+
+}
+
+CONTINUE…
+
+When the app is deployed to a test or production server, an environment variable can be used to set the
+connection string to a real database server. See Configuration for more information.
+
+Visual Studio
+
+## **SQL Server Express LocalDB**
+
+
+LocalDB is a lightweight version of the SQL Server Express database engine that's targeted for program
+development. LocalDB starts on demand and runs in user mode, so there's no complex configuration. By
+default, LocalDB database creates *.mdf files in the C:/Users/<user/> directory.
+
+From the View menu, open SQL Server Object Explorer (SSOX).
+
+
+Right click on the Movie table and select View Designer:
+
+
+Note the key icon next to ID. By default, EF creates a property named ID for the primary key.
+
+Right click on the Movie table and select View Data:
+
+
+Visual Studio Code
+
+## **SQLite**
+
+
+The SQLite website states:
+
+SQLite is a self-contained, high-reliability, embedded, full-featured, public-domain, SQL database engine.
+SQLite is the most used database engine in the world.
+
+There are many third party tools you can download to manage and view a SQLite database. The image below is
+from DB Browser for SQLite.
+
+
+CONTINUE…
+
+## **Seed the database**
+
+
+Create a new class named SeedData in the Models folder with the following code:
+
+C#Copy
+
+using Microsoft.EntityFrameworkCore;
+
+using Microsoft.Extensions.DependencyInjection;
+
+using System;
+
+using System.Linq;
+
+
+namespace RazorPagesMovie.Models
+
+{
+
+public static class SeedData
+
+{
+
+public static void Initialize(IServiceProvider serviceProvider)
+
+{
+
+using (var context = new RazorPagesMovieContext(
+
+serviceProvider.GetRequiredService<
+
+DbContextOptions<RazorPagesMovieContext>>()))
+
+{
+
+// Look for any movies.
+
+if (context.Movie.Any())
+
+{
+
+return; // DB has been seeded
+
+}
+
+
+context.Movie.AddRange(
+
+new Movie
+
+{
+
+Title = "When Harry Met Sally",
+
+ReleaseDate = DateTime.Parse("1989-2-12"),
+
+Genre = "Romantic Comedy",
+
+Price = 7.99M
+
+},
+
+
+new Movie
+
+{
+
+Title = "Ghostbusters ",
+
+ReleaseDate = DateTime.Parse("1984-3-13"),
+
+Genre = "Comedy",
+
+Price = 8.99M
+
+},
+
+
+new Movie
+
+{
+
+Title = "Ghostbusters 2",
+
+ReleaseDate = DateTime.Parse("1986-2-23"),
+
+Genre = "Comedy",
+
+Price = 9.99M
+
+},
+
+
+new Movie
+
+{
+
+Title = "Rio Bravo",
+
+ReleaseDate = DateTime.Parse("1959-4-15"),
+
+Genre = "Western",
+
+Price = 3.99M
+
+}
+
+);
+
+context.SaveChanges();
+
+}
+
+}
+
+}
+
+}
+
+If there are any movies in the DB, the seed initializer returns and no movies are added.
+
+C#Copy
+
+if (context.Movie.Any())
+
+{
+
+return; // DB has been seeded.
+
+}
+
+### **Add the seed initializer**
+
+
+In Program.cs, modify the Main method to do the following:
+
+Get a DB context instance from the dependency injection container.
+
+Call the seed method, passing to it the context.
+
+Dispose the context when the seed method completes.
+
+The following code shows the updated Program.cs file.
+
+C#Copy
+
+using Microsoft.AspNetCore;
+
+using Microsoft.AspNetCore.Hosting;
+
+using Microsoft.Extensions.DependencyInjection;
+
+using Microsoft.Extensions.Logging;
+
+using RazorPagesMovie.Models;
+
+using System;
+
+using Microsoft.EntityFrameworkCore;
+
+
+namespace RazorPagesMovie
+
+{
+
+public class Program
+
+{
+
+public static void Main(string[] args)
+
+{
+
+var host = CreateWebHostBuilder(args).Build();
+
+
+using (var scope = host.Services.CreateScope())
+
+{
+
+var services = scope.ServiceProvider;
+
+
+try
+
+{
+
+var context=services.
+
+GetRequiredService<RazorPagesMovieContext>();
+
+context.Database.Migrate();
+
+SeedData.Initialize(services);
+
+}
+
+catch (Exception ex)
+
+{
+
+var logger = services.GetRequiredService<ILogger<Program>>();
+
+logger.LogError(ex, "An error occurred seeding the DB.");
+
+}
+
+}
+
+
+host.Run();
+
+}
+
+
+public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+
+WebHost.CreateDefaultBuilder(args)
+
+.UseStartup<Startup>();
+
+}
+
+}
+
+A production app would not call Database.Migrate. It's added to the preceding code to prevent the following
+exception when Update-Database has not been run:
+
+SqlException: Cannot open database "RazorPagesMovieContext-21" requested by the login. The login failed.
+Login failed for user 'user name'.
+
+### **Test the app**
+
+
+Visual Studio
+
+Delete all the records in the DB. You can do this with the delete links in the browser or from SSOX
+
+Force the app to initialize (call the methods in the Startup class) so the seed method runs. To force
+initialization, IIS Express must be stopped and restarted. You can do this with any of the following approaches:
+
+Right click the IIS Express system tray icon in the notification area and tap Exit or Stop Site:
+
+
+If you were running VS in non-debug mode, press F5 to run in debug mode.
+
+If you were running VS in debug mode, stop the debugger and press F5.
+
+
+Visual Studio Code
+
+
+Delete all the records in the DB (So the seed method will run). Stop and start the app to seed the database.
+
+The app shows the seeded data.
+
+CONTINUE…
+
+The app shows the seeded data:
+
+
+The next tutorial will clean up the presentation of the data.
+
+# **Update the generated pages in an ASP.NET Core** **app**
+
+
+The scaffolded movie app has a good start, but the presentation isn't ideal. ReleaseDate should be Release
+Date (two words).
+
+## **Update the generated code**
+
+
+Open the Models/Movie.cs file and add the highlighted lines shown in the following code:
+
+C#Copy
+
+using System;
+
+using System.ComponentModel.DataAnnotations;
+
+using System.ComponentModel.DataAnnotations.Schema;
+
+
+namespace RazorPagesMovie.Models
+
+{
+
+public class Movie
+
+{
+
+public int ID { get; set; }
+
+public string Title { get; set; }
+
+
+[Display(Name = "Release Date")]
+
+[DataType(DataType.Date)]
+
+public DateTime ReleaseDate { get; set; }
+
+public string Genre { get; set; }
+
+
+[Column(TypeName = "decimal(18, 2)")]
+
+public decimal Price { get; set; }
+
+}
+
+}
+
+The [Column(TypeName = "decimal(18, 2)")] data annotation enables Entity Framework Core to correctly
+map Price to currency in the database. For more information, see Data Types.
+
+DataAnnotations is covered in the next tutorial. The Display attribute specifies what to display for the name of
+a field (in this case "Release Date" instead of "ReleaseDate"). The DataType attribute specifies the type of the
+data (Date), so the time information stored in the field isn't displayed.
+
+Browse to Pages/Movies and hover over an Edit link to see the target URL.
+
+
+The Edit, Details, and Delete links are generated by the Anchor Tag Helper in the Pages/Movies/
+Index.cshtmlfile.
+
+CSHTMLCopy
+
+@foreach (var item in Model.Movie) {
+
+<tr>
+
+<td>
+
+@Html.DisplayFor(modelItem => item.Title)
+
+</td>
+
+<td>
+
+@Html.DisplayFor(modelItem => item.ReleaseDate)
+
+</td>
+
+<td>
+
+@Html.DisplayFor(modelItem => item.Genre)
+
+</td>
+
+<td>
+
+@Html.DisplayFor(modelItem => item.Price)
+
+</td>
+
+<td>
+
+<a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+
+<a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+
+<a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+
+</td>
+
+</tr>
+
+}
+
+</tbody>
+
+</table>
+
+Tag Helpers enable server-side code to participate in creating and rendering HTML elements in Razor files. In
+the preceding code, the AnchorTagHelper dynamically generates the HTML href attribute value from the Razor
+Page (the route is relative), the asp-page, and the route id (asp-route-id). See URL generation for Pages for
+more information.
+
+Use View Source from your favorite browser to examine the generated markup. A portion of the generated
+HTML is shown below:
+
+HTMLCopy
+
+<td>
+
+<a href="/Movies/Edit?id=1">Edit</a> |
+
+<a href="/Movies/Details?id=1">Details</a> |
+
+<a href="/Movies/Delete?id=1">Delete</a>
+
+</td>
+
+The dynamically-generated links pass the movie ID with a query string (for example, the ?id=1 inhttps://
+localhost:5001/Movies/Details?id=1).
+
+Update the Edit, Details, and Delete Razor Pages to use the "{id:int}" route template. Change the page directive
+for each of these pages from @page to @page "{id:int}". Run the app and then view source. The generated
+HTML adds the ID to the path portion of the URL:
+
+HTMLCopy
+
+<td>
+
+<a href="/Movies/Edit/1">Edit</a> |
+
+<a href="/Movies/Details/1">Details</a> |
+
+<a href="/Movies/Delete/1">Delete</a>
+
+</td>
+
+A request to the page with the "{id:int}" route template that does not include the integer will return an HTTP
+404 (not found) error. For example, http://localhost:5000/Movies/Details will return a 404 error. To make the
+ID optional, append ? to the route constraint:
+
+CSHTMLCopy
+
+@page "{id:int?}"
+
+To test the behavior of @page "{id:int?}":
+
+Set the page directive in Pages/Movies/Details.cshtml to @page "{id:int?}".
+
+Set a break point in public async Task<IActionResult> OnGetAsync(int? id) (in Pages/Movies/
+Details.cshtml.cs).
+
+Navigate to https://localhost:5001/Movies/Details/.
+
+With the @page "{id:int}" directive, the break point is never hit. The routing engine return HTTP 404.
+Using @page "{id:int?}", the OnGetAsync method returns NotFound (HTTP 404).
+
+Although not recommended, you could write the OnGetAsync method (in Pages/Movies/Delete.cshtml.cs) as:
+
+C#Copy
+
+public async Task<IActionResult> OnGetAsync(int? id)
+
+{
+
+if (id == null)
+
+{
+
+Movie = await _context.Movie.FirstOrDefaultAsync();
+
+}
+
+else
+
+{
+
+Movie = await _context.Movie.FirstOrDefaultAsync(m => m.ID == id);
+
+}
+
+
+if (Movie == null)
+
+{
+
+return NotFound();
+
+}
+
+return Page();
+
+}
+
+Test the preceding code:
+
+Select a Delete link.
+
+Remove the ID from the URL. For example, change https://localhost:5001/Movies/Delete/8 to https://
+localhost:5001/Movies/Delete.
+
+Step through the code in the debugger.
+
+### **Review concurrency exception handling**
+
+
+Review the OnPostAsync method in the Pages/Movies/Edit.cshtml.cs file:
+
+C#Copy
+
+
+public async Task<IActionResult> OnPostAsync()
+
+{
+
+if (!ModelState.IsValid)
+
+{
+
+return Page();
+
+}
+
+
+_context.Attach(Movie).State = EntityState.Modified;
+
+
+try
+
+{
+
+await _context.SaveChangesAsync();
+
+}
+
+catch (DbUpdateConcurrencyException)
+
+{
+
+if (!MovieExists(Movie.ID))
+
+{
+
+return NotFound();
+
+}
+
+else
+
+{
+
+throw;
+
+}
+
+}
+
+
+return RedirectToPage("./Index");
+
+}
+
+
+private bool MovieExists(int id)
+
+{
+
+return _context.Movie.Any(e => e.ID == id);
+
+}
+
+The previous code detects concurrency exceptions when the one client deletes the movie and the other client
+posts changes to the movie.
+
+To test the catch block:
+
+Set a breakpoint on catch (DbUpdateConcurrencyException)
+
+Select Edit for a movie, make changes, but don't enter Save.
+
+In another browser window, select the Delete link for the same movie, and then delete the movie.
+
+In the previous browser window, post changes to the movie.
+
+Production code may want to detect concurrency conflicts. See Handle concurrency conflicts for more
+information.
+
+### **Posting and binding review**
+
+
+Examine the Pages/Movies/Edit.cshtml.cs file:
+
+C#Copy
+
+public class EditModel : PageModel
+
+{
+
+private readonly RazorPagesMovieContext _context;
+
+
+public EditModel(RazorPagesMovieContext context)
+
+{
+
+_context = context;
+
+}
+
+
+[BindProperty]
+
+public Movie Movie { get; set; }
+
+
+public async Task<IActionResult> OnGetAsync(int? id)
+
+{
+
+if (id == null)
+
+{
+
+return NotFound();
+
+}
+
+
+Movie = await _context.Movie.SingleOrDefaultAsync(m => m.ID == id);
+
+
+if (Movie == null)
+
+{
+
+return NotFound();
+
+}
+
+return Page();
+
+}
+
+
+public async Task<IActionResult> OnPostAsync()
+
+{
+
+if (!ModelState.IsValid)
+
+{
+
+return Page();
+
+}
+
+
+_context.Attach(Movie).State = EntityState.Modified;
+
+
+try
+
+{
+
+await _context.SaveChangesAsync();
+
+}
+
+catch (DbUpdateConcurrencyException)
+
+{
+
+if (!_context.Movie.Any(e => e.ID == Movie.ID))
+
+{
+
+return NotFound();
+
+}
+
+else
+
+{
+
+throw;
+
+}
+
+}
+
+
+return RedirectToPage("./Index");
+
+}
+
+}
+
+When an HTTP GET request is made to the Movies/Edit page (for example, http://localhost:5000/Movies/
+Edit/2):
+
+The OnGetAsync method fetches the movie from the database and returns the Page method.
+
+The Page method renders the Pages/Movies/Edit.cshtml Razor Page. The Pages/Movies/Edit.cshtml file
+contains the model directive (@model RazorPagesMovie.Pages.Movies.EditModel), which makes the movie
+model available on the page.
+
+The Edit form is displayed with the values from the movie.
+
+When the Movies/Edit page is posted:
+
+The form values on the page are bound to the Movie property. The [BindProperty] attribute enables Model
+binding.
+
+C#Copy
+
+[BindProperty]
+
+public Movie Movie { get; set; }
+
+If there are errors in the model state (for example, ReleaseDate cannot be converted to a date), the form is
+displayed with the submitted values.
+
+If there are no model errors, the movie is saved.
+
+The HTTP GET methods in the Index, Create, and Delete Razor pages follow a similar pattern. The HTTP
+POST OnPostAsync method in the Create Razor Page follows a similar pattern to the OnPostAsync method in
+the Edit Razor Page.
+
+Search is added in the next tutorial.
+
+# **Add search to ASP.NET Core Razor Pages**
+
+
+View or download sample code (how to download).
+
+In the following sections, searching movies by genre or name is added.
+
+Add the following highlighted properties to Pages/Movies/Index.cshtml.cs:
+
+C#Copy
+
+public class IndexModel : PageModel
+
+{
+
+private readonly RazorPagesMovie.Models.RazorPagesMovieContext _context;
+
+
+public IndexModel(RazorPagesMovie.Models.RazorPagesMovieContext context)
+
+{
+
+_context = context;
+
+}
+
+
+public IList<Movie> Movie { get; set; }
+
+[BindProperty(SupportsGet = true)]
+
+public string SearchString { get; set; }
+
+// Requires using Microsoft.AspNetCore.Mvc.Rendering;
+
+public SelectList Genres { get; set; }
+
+[BindProperty(SupportsGet = true)]
+
+public string MovieGenre { get; set; }
+
+SearchString: contains the text users enter in the search text box. SearchString is decorated with
+the [BindProperty] attribute. [BindProperty] binds form values and query strings with the same name as the
+property. (SupportsGet = true) is required for binding on GET requests.
+
+Genres: contains the list of genres. Genres allows the user to select a genre from the
+list. SelectList requires using Microsoft.AspNetCore.Mvc.Rendering;
+
+MovieGenre: contains the specific genre the user selects (for example, "Western").
+
+Genres and MovieGenre are used later in this tutorial.
+
+Warning
+
+For security reasons, you must opt in to binding GET request data to page model properties. Verify user input
+before mapping it to properties. Opting in to GET binding is useful when addressing scenarios which rely on
+query string or route values.
+
+To bind a property on GET requests, set the [BindProperty] attribute's SupportsGet property
+to true: [BindProperty(SupportsGet = true)]
+
+Update the Index page's OnGetAsync method with the following code:
+
+C#Copy
+
+public async Task OnGetAsync()
+
+{
+
+var movies = from m in _context.Movie
+
+select m;
+
+if (!string.IsNullOrEmpty(SearchString))
+
+{
+
+movies = movies.Where(s => s.Title.Contains(SearchString));
+
+}
+
+
+Movie = await movies.ToListAsync();
+
+}
+
+The first line of the OnGetAsync method creates a LINQ query to select the movies:
+
+C#Copy
+
+// using System.Linq;
+
+var movies = from m in _context.Movie
+
+select m;
+
+The query is only defined at this point, it has not been run against the database.
+
+If the SearchString property is not null or empty, the movies query is modified to filter on the search string:
+
+C#Copy
+
+if (!string.IsNullOrEmpty(SearchString))
+
+{
+
+movies = movies.Where(s => s.Title.Contains(SearchString));
+
+}
+
+The s => s.Title.Contains() code is a Lambda Expression. Lambdas are used in method-based LINQ queries as
+arguments to standard query operator methods such as the Where method or Contains (used in the preceding
+code). LINQ queries are not executed when they're defined or when they're modified by calling a method (such
+as Where, Contains or OrderBy). Rather, query execution is deferred. That means the evaluation of an
+expression is delayed until its realized value is iterated over or the ToListAsync method is called. See Query
+Execution for more information.
+
+Note: The Contains method is run on the database, not in the C# code. The case sensitivity on the query
+depends on the database and the collation. On SQL Server, Contains maps to SQL LIKE, which is case
+insensitive. In SQLite, with the default collation, it's case sensitive.
+
+Navigate to the Movies page and append a query string such as ?searchString=Ghost to the URL (for
+example, https://localhost:5001/Movies?searchString=Ghost). The filtered movies are displayed.
+
+
+If the following route template is added to the Index page, the search string can be passed as a URL segment
+(for example, https://localhost:5001/Movies/Ghost).
+
+CSHTMLCopy
+
+@page "{searchString?}"
+
+The preceding route constraint allows searching the title as route data (a URL segment) instead of as a query
+string value. The ? in "{searchString?}" means this is an optional route parameter.
+
+
+The ASP.NET Core runtime uses model binding to set the value of the SearchString property from the query
+string (?searchString=Ghost) or route data (https://localhost:5001/Movies/Ghost). Model binding is not case
+sensitive.
+
+However, you can't expect users to modify the URL to search for a movie. In this step, UI is added to filter
+movies. If you added the route constraint "{searchString?}", remove it.
+
+Open the Pages/Movies/Index.cshtml file, and add the <form> markup highlighted in the following code:
+
+CSHTMLCopy
+
+@page
+
+@model RazorPagesMovie.Pages.Movies.IndexModel
+
+
+@{
+
+ViewData["Title"] = "Index";
+
+}
+
+
+<h1>Index</h1>
+
+
+<p>
+
+<a asp-page="Create">Create New</a>
+
+</p>
+
+
+<form>
+
+<p>
+
+Title: <input type="text" asp-for="SearchString" />
+
+<input type="submit" value="Filter" />
+
+</p>
+
+</form>
+
+
+<table class="table">
+
+@*Markup removed for brevity.*@
+
+The HTML <form> tag uses the following Tag Helpers:
+
+Form Tag Helper. When the form is submitted, the filter string is sent to the Pages/Movies/Index page via
+query string.
+
+Input Tag Helper
+
+Save the changes and test the filter.
+
+## **Search by genre**
+
+
+Update the OnGetAsync method with the following code:
+
+C#Copy
+
+public async Task OnGetAsync()
+
+{
+
+// Use LINQ to get list of genres.
+
+IQueryable<string> genreQuery = from m in _context.Movie
+
+orderby m.Genre
+
+select m.Genre;
+
+
+var movies = from m in _context.Movie
+
+select m;
+
+
+if (!string.IsNullOrEmpty(SearchString))
+
+{
+
+movies = movies.Where(s => s.Title.Contains(SearchString));
+
+}
+
+
+if (!string.IsNullOrEmpty(MovieGenre))
+
+{
+
+movies = movies.Where(x => x.Genre == MovieGenre);
+
+}
+
+Genres = new SelectList(await genreQuery.Distinct().ToListAsync());
+
+Movie = await movies.ToListAsync();
+
+}
+
+The following code is a LINQ query that retrieves all the genres from the database.
+
+C#Copy
+
+// Use LINQ to get list of genres.
+
+IQueryable<string> genreQuery = from m in _context.Movie
+
+orderby m.Genre
+
+select m.Genre;
+
+The SelectList of genres is created by projecting the distinct genres.
+
+C#Copy
+
+Genres = new SelectList(await genreQuery.Distinct().ToListAsync());
+
+### **Add search by genre to the Razor Page**
+
+
+Update Index.cshtml as follows:
+
+CSHTMLCopy
+
+@page
+
+@model RazorPagesMovie.Pages.Movies.IndexModel
+
+
+@{
+
+ViewData["Title"] = "Index";
+
+}
+
+
+<h1>Index</h1>
+
+
+<p>
+
+<a asp-page="Create">Create New</a>
+
+</p>
+
+
+<form>
+
+<p>
+
+<select asp-for="MovieGenre" asp-items="Model.Genres">
+
+<option value="">All</option>
+
+</select>
+
+Title: <input type="text" asp-for="SearchString" />
+
+<input type="submit" value="Filter" />
+
+</p>
+
+</form>
+
+
+<table class="table">
+
+@*Markup removed for brevity.*@
+
+
+Test the app by searching by genre, by movie title, and by both.
+
+# **Add a new field to a Razor Page in ASP.NET Core**
+
+
+12/04/2018
+
+5 minutes to read
+
+Contributors
+
+
+all
+
+By Rick Anderson
+
+View or download sample code (how to download).
+
+In this section Entity Framework Code First Migrations is used to:
+
+Add a new field to the model.
+
+Migrate the new field schema change to the database.
+
+When using EF Code First to automatically create a database, Code First:
+
+Adds a table to the database to track whether the schema of the database is in sync with the model classes it
+was generated from.
+
+If the model classes aren't in sync with the DB, EF throws an exception.
+
+Automatic verification of schema/model in sync makes it easier to find inconsistent database/code issues.
+
+## **Adding a Rating Property to the Movie Model**
+
+
+Open the Models/Movie.cs file and add a Rating property:
+
+C#Copy
+
+public class Movie
+
+{
+
+public int ID { get; set; }
+
+public string Title { get; set; }
+
+
+[Display(Name = "Release Date")]
+
+[DataType(DataType.Date)]
+
+public DateTime ReleaseDate { get; set; }
+
+public string Genre { get; set; }
+
+
+[Column(TypeName = "decimal(18, 2)")]
+
+public decimal Price { get; set; }
+
+public string Rating { get; set; }
+
+}
+
+Build the app.
+
+Edit Pages/Movies/Index.cshtml, and add a Rating field:
+
+CSHTMLCopy
+
+@page
+
+@model RazorPagesMovie.Pages.Movies.IndexModel
+
+
+@{
+
+ViewData["Title"] = "Index";
+
+}
+
+
+<h1>Index</h1>
+
+
+<p>
+
+<a asp-page="Create">Create New</a>
+
+</p>
+
+
+<form>
+
+<p>
+
+<select asp-for="MovieGenre" asp-items="Model.Genres">
+
+<option value="">All</option>
+
+</select>
+
+Title: <input type="text" asp-for="SearchString" />
+
+<input type="submit" value="Filter" />
+
+</p>
+
+</form>
+
+
+<table class="table">
+
+
+<thead>
+
+<tr>
+
+<th>
+
+@Html.DisplayNameFor(model => model.Movie[0].Title)
+
+</th>
+
+<th>
+
+@Html.DisplayNameFor(model => model.Movie[0].ReleaseDate)
+
+</th>
+
+<th>
+
+@Html.DisplayNameFor(model => model.Movie[0].Genre)
+
+</th>
+
+<th>
+
+@Html.DisplayNameFor(model => model.Movie[0].Price)
+
+</th>
+
+<th>
+
+@Html.DisplayNameFor(model => model.Movie[0].Rating)
+
+</th>
+
+<th></th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+@foreach (var item in Model.Movie)
+
+{
+
+<tr><td>
+
+@Html.DisplayFor(modelItem => item.Title)
+
+</td>
+
+<td>
+
+@Html.DisplayFor(modelItem => item.ReleaseDate)
+
+</td>
+
+<td>
+
+@Html.DisplayFor(modelItem => item.Genre)
+
+</td>
+
+<td>
+
+@Html.DisplayFor(modelItem => item.Price)
+
+</td>
+
+<td>
+
+@Html.DisplayFor(modelItem => item.Rating)
+
+</td>
+
+<td>
+
+<a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+
+<a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+
+<a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+
+</td>
+
+</tr>
+
+}
+
+</tbody>
+
+</table>
+
+Update the following pages:
+
+Add the Rating field to the Delete and Details pages.
+
+Update Create.cshtml with a Rating field.
+
+Add the Rating field to the Edit Page.
+
+The app won't work until the DB is updated to include the new field. If run now, the app throws
+a SqlException:
+
+SqlException: Invalid column name 'Rating'.
+
+This error is caused by the updated Movie model class being different than the schema of the Movie table of
+the database. (There's no Rating column in the database table.)
+
+There are a few approaches to resolving the error:
+
+Have the Entity Framework automatically drop and re-create the database using the new model class schema.
+This approach is convenient early in the development cycle; it allows you to quickly evolve the model and
+database schema together. The downside is that you lose existing data in the database. Don't use this approach
+on a production database! Dropping the DB on schema changes and using an initializer to automatically seed
+the database with test data is often a productive way to develop an app.
+
+Explicitly modify the schema of the existing database so that it matches the model classes. The advantage of
+this approach is that you keep your data. You can make this change either manually or by creating a database
+change script.
+
+Use Code First Migrations to update the database schema.
+
+For this tutorial, use Code First Migrations.
+
+Update the SeedData class so that it provides a value for the new column. A sample change is shown below, but
+you'll want to make this change for each new Movie block.
+
+C#Copy
+
+context.Movie.AddRange(
+
+new Movie
+
+{
+
+Title = "When Harry Met Sally",
+
+ReleaseDate = DateTime.Parse("1989-2-12"),
+
+Genre = "Romantic Comedy",
+
+Price = 7.99M,
+
+Rating = "R"
+
+},
+
+See the completed SeedData.cs file.
+
+Build the solution.
+
+Visual Studio
+
+### **Add a migration for the rating field**
+
+
+From the Tools menu, select NuGet Package Manager > Package Manager Console. In the PMC, enter the
+following commands:
+
+PowerShellCopy
+
+Add-Migration Rating
+
+Update-Database
+
+The Add-Migration command tells the framework to:
+
+Compare the Movie model with the Movie DB schema.
+
+Create code to migrate the DB schema to the new model.
+
+The name "Rating" is arbitrary and is used to name the migration file. It's helpful to use a meaningful name for
+the migration file.
+
+The Update-Database command tells the framework to apply the schema changes to the database.
+
+If you delete all the records in the DB, the initializer will seed the DB and include the Rating field. You can do
+this with the delete links in the browser or from Sql Server Object Explorer (SSOX).
+
+Another option is to delete the database and use migrations to re-create the database. To delete the database in
+SSOX:
+
+Select the database in SSOX.
+
+Right click on the database, and select Delete.
+
+Check Close existing connections.
+
+Select OK.
+
+In the PMC, update the database:
+
+PowerShellCopy
+
+Update-Database
+
+Visual Studio Code / Visual Studio for Mac
+
+Run the following .NET Core CLI commands:
+
+consoleCopy
+
+dotnet ef migrations add Rating
+
+dotnet ef database update
+
+The ef migrations add command tells the framework to:
+
+Compare the Movie model with the Movie DB schema.
+
+Create code to migrate the DB schema to the new model.
+
+The name "Rating" is arbitrary and is used to name the migration file. It's helpful to use a meaningful name for
+the migration file.
+
+The ef database update command tells the framework to apply the schema changes to the database.
+
+If you delete all the records in the DB, the initializer will seed the DB and include the Rating field. You can do
+this with the delete links in the browser or by using a SQLite tool.
+
+Another option is to delete the database and use migrations to re-create the database. To delete the database,
+delete the database file (MvcMovie.db). Then run the ef database update command:
+
+consoleCopy
+
+dotnet ef database update
+
+Note
+
+Many schema change operations are not supported by the EF Core SQLite provider. For example, adding a
+column is supported, but removing a column is not supported. If you add a migration to remove a column,
+the ef migrations add command succeeds but the ef database update command fails. You can work around
+some of the limitations by manually writing migrations code to perform a table rebuild. A table rebuild
+involves renaming the existing table, creating a new table, copying data to the new table, and dropping the old
+table. For more information, see the following resources:
+
+SQLite EF Core Database Provider Limitations
+
+Customize migration code
+
+Data seeding
+
+
+CONTINUE…
+
+Run the app and verify you can create/edit/display movies with a Rating field. If the database isn't seeded, set
+a break point in the SeedData.Initialize method.
+
+# **Add validation to an ASP.NET Core Razor Page**
+
+
+In this section, validation logic is added to the Movie model. The validation rules are enforced any time a user
+creates or edits a movie.
+
+## **Validation**
+
+
+A key tenet of software development is called DRY ("Don't Repeat Yourself"). Razor Pages encourages
+development where functionality is specified once, and it's reflected throughout the app. DRY can help:
+
+Reduce the amount of code in an app.
+
+Make the code less error prone, and easier to test and maintain.
+
+The validation support provided by Razor Pages and Entity Framework is a good example of the DRY principle.
+Validation rules are declaratively specified in one place (in the model class), and the rules are enforced
+everywhere in the app.
+
+### **Adding validation rules to the movie model**
+
+
+Open the Models/Movie.cs file. DataAnnotations provides a built-in set of validation attributes that are applied
+declaratively to a class or property. DataAnnotations also contain formatting attributes like DataType that help
+with formatting and don't provide validation.
+
+Update the Movie class to take advantage of the Required, StringLength, RegularExpression,
+and Rangevalidation attributes.
+
+C#Copy
+
+public class Movie
+
+{
+
+public int ID { get; set; }
+
+
+[StringLength(60, MinimumLength = 3)]
+
+[Required]
+
+public string Title { get; set; }
+
+
+[Display(Name = "Release Date")]
+
+[DataType(DataType.Date)]
+
+public DateTime ReleaseDate { get; set; }
+
+
+[Range(1, 100)]
+
+[DataType(DataType.Currency)]
+
+[Column(TypeName = "decimal(18, 2)")]
+
+public decimal Price { get; set; }
+
+
+[RegularExpression(@"^[A-Z]+[a-zA-Z""'\s-]*$")]
+
+[Required]
+
+[StringLength(30)]
+
+public string Genre { get; set; }
+
+
+[RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$")]
+
+[StringLength(5)]
+
+[Required]
+
+public string Rating { get; set; }
+
+}
+
+Validation attributes specify behavior that's enforced on model properties:
+
+The Required and MinimumLength attributes indicate that a property must have a value. However, nothing
+prevents a user from entering whitespace to satisfy the validation constraint for a nullable type. Nonnullable value types (such as decimal, int, float, and DateTime) are inherently required and don't need
+the Required attribute.
+
+The RegularExpression attribute limits the characters that the user can enter. In the preceding
+code, Genre must start with one or more capital letters and follow with zero or more letters, single or double
+quotes, whitespace characters, or dashes. Rating must start with one or more capital letters and follow with
+zero or more letters, numbers, single or double quotes, whitespace characters, or dashes.
+
+The Range attribute constrains a value to a specified range.
+
+The StringLength attribute sets the maximum length of a string, and optionally the minimum length.
+
+Having validation rules automatically enforced by ASP.NET Core helps make an app more robust. Automatic
+validation on models helps protect the app because you don't have to remember to apply them when new code
+is added.
+
+### **Validation Error UI in Razor Pages**
+
+
+Run the app and navigate to Pages/Movies.
+
+Select the Create New link. Complete the form with some invalid values. When jQuery client-side validation
+detects the error, it displays an error message.
+
+
+Note
+
+You may not be able to enter decimal commas in decimal fields. To support jQuery validation for non-English
+locales that use a comma (",") for a decimal point, and non US-English date formats, you must take steps to
+globalize your app. This GitHub issue 4076 for instructions on adding decimal comma.
+
+Notice how the form has automatically rendered a validation error message in each field containing an invalid
+value. The errors are enforced both client-side (using JavaScript and jQuery) and server-side (when a user has
+JavaScript disabled).
+
+A significant benefit is that no code changes were necessary in the Create or Edit pages. Once DataAnnotations
+were applied to the model, the validation UI was enabled. The Razor Pages created in this tutorial
+automatically picked up the validation rules (using validation attributes on the properties of the Movie model
+class). Test validation using the Edit page, the same validation is applied.
+
+The form data isn't posted to the server until there are no client-side validation errors. Verify form data isn't
+posted by one or more of the following approaches:
+
+Put a break point in the OnPostAsync method. Submit the form (select Create or Save). The break point is
+never hit.
+
+Use the Fiddler tool.
+
+Use the browser developer tools to monitor network traffic.
+
+### **Server-side validation**
+
+
+When JavaScript is disabled in the browser, submitting the form with errors will post to the server.
+
+Optional, test server-side validation:
+
+Disable JavaScript in the browser. You can do this using your browser's developer tools. If you can't disable
+JavaScript in the browser, try another browser.
+
+Set a break point in the OnPostAsync method of the Create or Edit page.
+
+Submit a form with validation errors.
+
+Verify the model state is invalid:
+
+C#Copy
+
+if (!ModelState.IsValid)
+
+{
+
+return Page();
+
+}
+
+The following code shows a portion of the Create.cshtml page that you scaffolded earlier in the tutorial. It's
+used by the Create and Edit pages to display the initial form and to redisplay the form in the event of an error.
+
+CSHTMLCopy
+
+<form method="post">
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+<div class="form-group">
+
+<label asp-for="Movie.Title" class="control-label"></label>
+
+<input asp-for="Movie.Title" class="form-control" />
+
+<span asp-validation-for="Movie.Title" class="text-danger"></span>
+
+</div>
+
+The Input Tag Helper uses the DataAnnotations attributes and produces HTML attributes needed for jQuery
+Validation on the client-side. The Validation Tag Helper displays validation errors. See Validation for more
+information.
+
+The Create and Edit pages have no validation rules in them. The validation rules and the error strings are
+specified only in the Movie class. These validation rules are automatically applied to Razor Pages that edit
+the Movie model.
+
+When validation logic needs to change, it's done only in the model. Validation is applied consistently
+throughout the application (validation logic is defined in one place). Validation in one place helps keep the
+code clean, and makes it easier to maintain and update.
+
+## **Using DataType Attributes**
+
+
+Examine the Movie class. The System.ComponentModel.DataAnnotations namespace provides formatting
+attributes in addition to the built-in set of validation attributes. The DataType attribute is applied to
+the ReleaseDate and Price properties.
+
+C#Copy
+
+[Display(Name = "Release Date")]
+
+[DataType(DataType.Date)]
+
+public DateTime ReleaseDate { get; set; }
+
+
+[Range(1, 100)]
+
+[DataType(DataType.Currency)]
+
+public decimal Price { get; set; }
+
+The DataType attributes only provide hints for the view engine to format the data (and supplies attributes such
+as <a> for URL's and <a href="mailto:EmailAddress.com"> for email). Use the RegularExpressionattribute
+to validate the format of the data. The DataType attribute is used to specify a data type that's more specific
+than the database intrinsic type. DataType attributes are not validation attributes. In the sample application,
+only the date is displayed, without time.
+
+The DataType Enumeration provides for many data types, such as Date, Time, PhoneNumber, Currency,
+EmailAddress, and more. The DataType attribute can also enable the application to automatically provide typespecific features. For example, a mailto: link can be created for DataType.EmailAddress. A date selector can be
+provided for DataType.Date in browsers that support HTML5. The DataType attributes emits HTML 5 data(pronounced data dash) attributes that HTML 5 browsers consume. The DataType attributes do notprovide any
+validation.
+
+DataType.Date doesn't specify the format of the date that's displayed. By default, the data field is displayed
+according to the default formats based on the server's CultureInfo.
+
+The [Column(TypeName = "decimal(18, 2)")] data annotation is required so Entity Framework Core can
+correctly map Price to currency in the database. For more information, see Data Types.
+
+The DisplayFormat attribute is used to explicitly specify the date format:
+
+C#Copy
+
+[DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+
+public DateTime ReleaseDate { get; set; }
+
+The ApplyFormatInEditMode setting specifies that the formatting should be applied when the value is
+displayed for editing. You might not want that behavior for some fields. For example, in currency values, you
+probably don't want the currency symbol in the edit UI.
+
+The DisplayFormat attribute can be used by itself, but it's generally a good idea to use the DataTypeattribute.
+The DataType attribute conveys the semantics of the data as opposed to how to render it on a screen, and
+provides the following benefits that you don't get with DisplayFormat:
+
+The browser can enable HTML5 features (for example to show a calendar control, the locale-appropriate
+currency symbol, email links, etc.)
+
+By default, the browser will render data using the correct format based on your locale.
+
+The DataType attribute can enable the ASP.NET Core framework to choose the right field template to render
+the data. The DisplayFormat if used by itself uses the string template.
+
+Note: jQuery validation doesn't work with the Range attribute and DateTime. For example, the following code
+will always display a client-side validation error, even when the date is in the specified range:
+
+C#Copy
+
+[Range(typeof(DateTime), "1/1/1966", "1/1/2020")]
+
+It's generally not a good practice to compile hard dates in your models, so using the Range attribute
+and DateTime is discouraged.
+
+The following code shows combining attributes on one line:
+
+C#Copy
+
+public class Movie
+
+{
+
+public int ID { get; set; }
+
+
+[StringLength(60, MinimumLength = 3)]
+
+public string Title { get; set; }
+
+
+[Display(Name = "Release Date"), DataType(DataType.Date)]
+
+public DateTime ReleaseDate { get; set; }
+
+
+[RegularExpression(@"^[A-Z]+[a-zA-Z""'\s-]*$"), Required, StringLength(30)]
+
+public string Genre { get; set; }
+
+
+[Range(1, 100), DataType(DataType.Currency)]
+
+[Column(TypeName = "decimal(18, 2)")]
+
+public decimal Price { get; set; }
+
+
+[RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$"), StringLength(5)]
+
+public string Rating { get; set; }
+
+}
+
+Get started with Razor Pages and EF Core shows advanced EF Core operations with Razor Pages.
+
+### **Publish to Azure**
+
+
+For information on deploying to Azure, see Tutorial: Build an ASP.NET app in Azure with SQL Database. These
+instructions are for an ASP.NET app, not an ASP.NET Core app, but the steps are the same.
+
+Thanks for completing this introduction to Razor Pages. We appreciate feedback. Get started with Razor Pages
+and EF Core is an excellent follow up to this tutorial.
+
+## **Additional resources**
+
+
+Tag Helpers in forms in ASP.NET Core
+
+Globalization and localization in ASP.NET Core
+
+Tag Helpers in ASP.NET Core
+
+Author Tag Helpers in ASP.NET Core
+
+

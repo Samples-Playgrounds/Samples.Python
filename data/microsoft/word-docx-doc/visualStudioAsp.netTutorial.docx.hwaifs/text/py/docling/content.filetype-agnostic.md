@@ -1,0 +1,203 @@
+Visual Studio ASP.NET Tutorial
+
+updated 1/13/21
+
+In this tutorial, you’ll learn how to use Visual Studio to create a simple Hello World ASP.NET web page.
+
+This tutorial assumes that as part of your prerequisite CS240 class, you’ve already installed Visual Studio and learned how to use it to create a web page. Also, you should have already installed an FTP tool and learned how to use it to upload a web page to a web server. You can use any FTP tool, but this tutorial assumes you’re familiar with the WinSCP tool.
+
+If you haven’t already installed Visual Studio and an FTP tool, you should read the Visual Studio 2019 tutorial and the WinSCP tutorial, which were assigned in CS240. If you don’t want to install the tools, the tutorials tell you how to use them in Park’s Citrix virtual lab.
+
+Load Visual Studio.
+
+In the launch window, click on the link “Continue without code.”
+
+You should see a Visual Studio window that is pretty much empty, but you should see a Solution Explorer pane. If you don’t see it, select View &gt; Solution Explorer.
+
+Create a new website with File &gt; New &gt; Project…
+
+In the search box, enter Web Site.
+
+Look for the option that says ASP.NET Empty Web Site at the top and C# below it. Here’s what to look for:
+
+<!-- image -->
+
+If you see that option, select it and then click the Next button.
+
+If you don’t see the ASP.NET Empty Web Site option, that means when you installed Visual Studio, you didn’t install the option that provides for the Web Site selection. To add that option now, select Tools &gt; Get Tools and Features. That should generate a Visual Studio Installer window. Look for the ASP.NET and web development container and expand it. Here’s the result:
+
+expand
+
+<!-- image -->
+
+Scroll down to the bottom of that container and check the option that says Additional project templates (previous versions). Check that option and then click the Modify button. That should take you back to the Visual Studio Installer window, where you should see progress bars for the installation.
+
+After selecting the ASP.NET Empty Web Site with C# option and clicking the Next button, that should generate a “Configure your new project” window. In that window, enter cs240 in the project name box.
+
+Enter a location (path plus folder) where you want your new cs240 project folder to be positioned.
+
+Make sure that the box “Place solution and project in the same directory” is checked.
+
+<!-- image -->
+
+Click Create.
+
+In your Visual Studio window, you should see a Solution Explorer frame with your cs322 website project inside it.
+
+Right click on your cs322 project.
+
+Select Add &gt; New Folder.
+
+The new folder’s name (“New Folder”) should be selected. Overlay its name by entering “tutorial”.
+
+Right click on your tutorial folder.
+
+Select Add &gt; Add New Item.
+
+In the generated Add New Item window, expand Installed and select Visual C# and Web Form.
+
+In the Name box, enter hello.aspx.
+
+Later in the semester, you’ll be asked to implement C# code-behind files. To do that, you’ll need to check the "Place code in separate file" box. But for this simple hello world web page, the "Place code in separate file" box should be cleared.
+
+Here’s what you should see:
+
+<!-- image -->
+
+Click Add.
+
+That should generate and display source code for your new hello.aspx web page.
+
+Unfortunately, Visual Studio generates ugly code. Thus, rather than editing the generated code to make it comply with proper coding conventions, I suggest that you replace all of the newly generated web page’s code with this code:
+
+&lt;%--******************************
+
+* hello.aspx
+
+* *your-name*
+
+*
+
+* This page says hello and prints the time.
+
+******************************--%&gt;
+
+&lt;%@ Page Language="C#" %&gt;
+
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;title&gt;Hello Page&lt;/title&gt;
+
+&lt;script runat="server"&gt;
+
+public void Page\_Load()
+
+{
+
+time.Text = DateTime.Now.ToString();
+
+}
+
+&lt;/script&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;h2&gt;Hello, world!!&lt;/h2&gt;
+
+&lt;p&gt;
+
+The time is now: &lt;asp:Label id="time" runat="server" /&gt;
+
+&lt;/p&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+Save your hello.aspx file by clicking the file save icon that looks like an old diskette, or select File &gt; Save.
+
+To see the resulting web page, select File &gt; View in Browser.
+
+Go to File Explorer to verify the existence of your cs322 folder and its hello.aspx file. Be aware that double clicking on the hello.aspx file will not enable you to view the web page properly. To view it properly, you need a web server. Visual studio supplies a built-in web server, and that’s why viewing works when you select File &gt; View in Browser.
+
+As mentioned above, Visual Studio generates ugly code and that’s why I recommend that you enter your code from scratch or you copy and paste from an existing web page that uses proper coding conventions. However, you should be aware of Visual Studio’s drag and drop tools that allow you to quickly generate code, albeit ugly code. What follows is a teaser that shows you how to do that….
+
+Right click on your tutorial folder.
+
+Select Add &gt; Add New Item.
+
+In the generated Add New Item window, select Visual C# and Web Form.
+
+In the Name box, enter uglyForm.aspx.
+
+Select View &gt; Toolbox.
+
+Drag the toolbox tab so the toolbox frame turns into a window, and drop the window so it does not cover your web page code.
+
+Find the text box control in your toolbox and drag it to the uglyForm web page’s form container. Drop the control within the form’s div container.
+
+Find the button control in your toolbox and drag it to the uglyForm web page’s form container. Drop the control after the text box.
+
+Feel free to edit your code, play around with it, and view the result in a browser.
+
+When you’re done, I suggest that you delete uglyForm.aspx so you don’t accidentally copy from it in the future.
+
+Return to your hello.aspx web page. Introduce a bug into the ASP.NET code. Specifically, change this:
+
+The time is now: &lt;asp:Label id="time" runat="server" /&gt;
+
+To this:
+
+The time is now: &lt;ZZasp:Label id="time" runat="server" /&gt;
+
+View your updated hello.aspx web page in a browser, and you should see an error message that directs you to the line that contains the bug.
+
+Use WinSCP (or another tool) to upload your tutorial folder (which includes the errant hello.aspx file) to your web server and then view your uploaded web page with a browser. This time, you will not see an error message that directs you to the line that contains the bug. Instead, you’ll see a generic message that simply tells you there’s a problem. Not very helpful.
+
+For security reasons, if an ASP.NET page has errors and the page is viewed on a standard web server, error messages are suppressed by default. You can enable error messages for a website by creating a Web.config file that’s positioned in the website’s root directory.
+
+Ask ITS for the ASP.NET version used by teach.park.edu.
+
+<!-- image -->
+
+&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+
+<!-- image -->
+
+&lt;system.web&gt;
+
+&lt;compilation debug="true" targetFramework="4.5"/&gt;
+
+&lt;customErrors mode="Off"/&gt;
+
+&lt;/system.web&gt;
+
+&lt;/configuration&gt;
+
+The value for the compilation element’s targetFramework attribute must match the ASP.NET version used by the web server.
+
+You can use WinSCP to create a file by selecting the server frame (the right frame) and navigating up the directory tree if necessary to ensure that your account’s root directory is displayed. Here’s what that looks like:
+
+how to navigate up the tree
+
+root directory
+
+<!-- image -->
+
+Then from the Files menu, select New / Files and enter Web.config in the file name box. That should open Notepad. Enter the Web.config contents shown earlier and save the file.
+
+View your hello.aspx web page in a browser, and this time you should see an error message that directs you to the line that contains the bug.
+
+Double click on the hello.aspx file and fix the file’s bug.
+
+View your hello.aspx web page in a browser, and this time the web page should display a proper hello message.
+
+Go back to Visual Studio and fix the error in your local copy of hello.aspx.
+
+By the way, when you create a website in Visual Studio, Visual Studio automatically generates a Web.config file, but its code differs from what’s shown above. If you upload it to teach.park.edu, it won’t enable error messages to be displayed.

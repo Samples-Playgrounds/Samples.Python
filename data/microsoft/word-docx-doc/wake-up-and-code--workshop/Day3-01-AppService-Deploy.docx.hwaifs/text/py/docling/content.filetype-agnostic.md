@@ -1,0 +1,176 @@
+**Publish an ASP.NET Core app to Azure with Visual Studio**
+
+Source: [https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vs](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+
+**Important**
+
+**ASP.NET Core preview releases with Azure App Service**
+
+ASP.NET Core preview releases aren't deployed to Azure App Service by default. To host an app that uses an ASP.NET Core preview release, see [**Deploy ASP.NET Core preview release to Azure App Service**](https:/docs.microsoft.com/en-us/aspnet/core/host-and-deploy/azure-apps/index?view=aspnetcore-2.2) .
+
+See [Publish to Azure from Visual Studio for Mac](https:/blog.xamarin.com/publish-azure-visual-studio-mac) if you are working on macOS.
+
+To troubleshoot an App Service deployment issue, see [Troubleshoot ASP.NET Core startup errors on Azure App Service](https:/docs.microsoft.com/en-us/aspnet/core/host-and-deploy/azure-apps/troubleshoot?view=aspnetcore-2.2) .
+
+**Set up**
+
+- Open a [free Azure account](https:/azure.microsoft.com/free/dotnet) if you don't have one.
+
+**Create a web app**
+
+In the Visual Studio Start Page, select **File &gt; New &gt; Project...**
+
+<!-- image -->
+
+Complete the **New Project** dialog:
+
+- In the left pane, select **.NET Core** .
+- In the center pane, select **ASP.NET Core Web Application** .
+- Select **OK** .
+<!-- image -->
+
+In the **New ASP.NET Core Web Application** dialog:
+
+- Select **Web Application** .
+- Select **Change Authentication** .
+<!-- image -->
+
+The **Change Authentication** dialog appears.
+
+- Select **Individual User Accounts** .
+- Select **OK** to return to the **New ASP.NET Core Web Application** , then select **OK** again.
+<!-- image -->
+
+Visual Studio creates the solution.
+
+**Run the app**
+
+- Press CTRL+F5 to run the project.
+- Test the **About** and **Contact** links.
+<!-- image -->
+
+**Register a user**
+
+- Select **Register** and register a new user. You can use a fictitious email address. When you submit, the page displays the following error:
+
+*"Internal Server Error: A database operation failed while processing the request. SQL exception: Cannot open the database. Applying existing migrations for Application DB context may resolve this issue."*
+
+- Select **Apply Migrations** and, once the page updates, refresh the page.
+<!-- image -->
+
+The app displays the email used to register the new user and a **Log out** link.
+
+<!-- image -->
+
+**Deploy the app to Azure**
+
+Right-click on the project in Solution Explorer and select **Publish...** .
+
+<!-- image -->
+
+In the **Publish** dialog:
+
+- Select **Microsoft Azure App Service** .
+- Select the gear icon and then select **Create Profile** .
+- Select **Create Profile** .
+<!-- image -->
+
+**Create Azure resources**
+
+The **Create App Service** dialog appears:
+
+- Enter your subscription.
+- The **App Name** , **Resource Group** , and **App Service Plan** entry fields are populated. You can keep these names or change them.
+<!-- image -->
+- Select the **Services** tab to create a new database.
+- Select the green **+** icon to create a new SQL Database
+<!-- image -->
+- Select **New...** on the **Configure SQL Database** dialog to create a new database.
+<!-- image -->
+
+The **Configure SQL Server** dialog appears.
+
+- Enter an administrator user name and password, and then select **OK** . You can keep the default **Server Name** .
+
+**Note**
+
+"admin" isn't allowed as the administrator user name.
+
+<!-- image -->
+
+- Select **OK** .
+
+Visual Studio returns to the **Create App Service** dialog.
+
+- Select **Create** on the **Create App Service** dialog.
+<!-- image -->
+
+Visual Studio creates the Web app and SQL Server on Azure. This step can take a few minutes. For information on the resources created, see [Additional resources](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.2) .
+
+When deployment completes, select **Settings** :
+
+<!-- image -->
+
+On the **Settings** page of the **Publish** dialog:
+
+- Expand **Databases** and check **Use this connection string at runtime** .
+- Expand **Entity Framework Migrations** and check **Apply this migration on publish** .
+- Select **Save** . Visual Studio returns to the **Publish** dialog.
+<!-- image -->
+
+Click **Publish** . Visual Studio publishes your app to Azure. When the deployment completes, the app is opened in a browser.
+
+**Test your app in Azure**
+
+- Test the **About** and **Contact** links
+- Register a new user
+<!-- image -->
+
+**Update the app**
+
+- Edit the *Pages/About.cshtml* Razor page and change its contents. For example, you can modify the paragraph to say "Hello ASP.NET Core!":
+
+HTMLCopy
+
+@page
+
+@model AboutModel
+
+@{
+
+ViewData["Title"] = "About";
+
+}
+
+&lt;h2&gt;@ViewData["Title"]&lt;/h2&gt;
+
+&lt;h3&gt;@Model.Message&lt;/h3&gt;
+
+&lt;p&gt;Hello ASP.NET Core!&lt;/p&gt;
+
+- Right-click on the project and select **Publish...** again.
+<!-- image -->
+- After the app is published, verify the changes you made are available on Azure.
+<!-- image -->
+
+**Clean up**
+
+When you have finished testing the app, go to the [Azure portal](https:/portal.azure.com) and delete the app.
+
+- Select **Resource groups** , then select the resource group you created.
+<!-- image -->
+- In the **Resource groups** page, select **Delete** .
+<!-- image -->
+- Enter the name of the resource group and select **Delete** . Your app and all other resources created in this tutorial are now deleted from Azure.
+
+**Next steps**
+
+- [Continuous deployment to Azure with Visual Studio and Git with ASP.NET Core](https:/docs.microsoft.com/en-us/aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.2)
+
+**Additonal resources**
+
+- [Azure App Service](https:/docs.microsoft.com/en-us/azure/app-service/app-service-web-overview)
+- [Azure resource groups](https:/docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview)
+- [Azure SQL Database](https:/docs.microsoft.com/en-us/azure/sql-database)
+- [Visual Studio publish profiles for ASP.NET Core app deployment](https:/docs.microsoft.com/en-us/aspnet/core/host-and-deploy/visual-studio-publish-profiles?view=aspnetcore-2.2)
+- [Troubleshoot ASP.NET Core startup errors on Azure App Service](https:/docs.microsoft.com/en-us/aspnet/core/host-and-deploy/azure-apps/troubleshoot?view=aspnetcore-2.2)
