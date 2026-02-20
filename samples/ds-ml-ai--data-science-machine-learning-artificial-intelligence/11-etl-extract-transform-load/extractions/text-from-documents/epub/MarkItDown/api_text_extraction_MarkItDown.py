@@ -2,6 +2,10 @@ from markitdown import MarkItDown
 import os
 from pathlib import Path
 
+import os
+from pathlib import Path
+
+import traceback
 import json
 import datetime
 import time
