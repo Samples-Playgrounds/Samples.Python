@@ -11,13 +11,13 @@ codetiming==1.4.0
 colorlog==6.10.1
 defusedxml==0.7.1
 dill==0.4.1
-docling==2.73.1
+docling==2.74.0
 docling-core==2.65.1
 docling-ibm-models==3.11.0
-docling-parse==4.7.3
+docling-parse==5.3.3
 et_xmlfile==2.0.0
 Faker==40.4.0
-filelock==3.21.2
+filelock==3.24.3
 filetype==1.2.0
 fsspec==2026.2.0
 hf-xet==1.2.0
@@ -51,7 +51,7 @@ polyfactory==3.2.0
 psutil==7.2.2
 pyclipper==1.4.0
 pydantic==2.12.5
-pydantic-settings==2.12.0
+pydantic-settings==2.13.1
 pydantic_core==2.41.5
 Pygments==2.19.2
 pylatexenc==2.10
@@ -60,7 +60,7 @@ pyobjc-framework-Cocoa==12.1
 pyobjc-framework-CoreML==12.1
 pyobjc-framework-Quartz==12.1
 pyobjc-framework-Vision==12.1
-pypdfium2==5.4.0
+pypdfium2==5.5.0
 python-dateutil==2.9.0.post0
 python-docx==1.2.0
 python-dotenv==1.2.1
@@ -69,9 +69,9 @@ pytz==2025.2
 PyYAML==6.0.3
 rapidocr==3.6.0
 referencing==0.37.0
-regex==2026.1.15
+regex==2026.2.19
 requests==2.32.5
-rich==14.3.2
+rich==14.3.3
 rpds-py==0.30.0
 rtree==1.4.1
 safetensors==0.7.0
