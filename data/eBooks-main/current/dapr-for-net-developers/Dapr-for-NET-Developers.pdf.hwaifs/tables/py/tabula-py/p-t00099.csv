@@ -1,0 +1,8 @@
+,Important
+0,It’s critical to keep the X509 certificate file for the service principal in a safe place. It’s best to place it in
+1,a well-known folder outside the source-code repository. The configuration file can then reference the
+2,"certificate file from this well-known folder. On a local development machine, you’re responsible for"
+3,"copying the certificate to the folder. For automated deployments, the pipeline will copy the certificate"
+4,to the machine where the application is deployed. It’s a best practice to use a different service
+5,principal per environment. Doing so prevents the service principal from a DEVELOPMENT environment
+6,to access secrets in a PRODUCTION environment.

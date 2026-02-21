@@ -1,0 +1,130 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>[HttpPost("OrderStatusChangedToSubmitted")]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>[Topic(DaprPubSubName, nameof(OrderStatusChangedToSubmittedIntegrationEvent))]</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>public async Task HandleAsync(</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>OrderStatusChangedToSubmittedIntegrationEvent integrationEvent,</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>[FromServices] IOptions&lt;OrderingSettings&gt; settings,</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>[FromServices] IEmailService emailService)</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>// Gets the order details from Actor state.</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>var actorId = new ActorId(integrationEvent.OrderId.ToString());</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>var orderingProcess = _actorProxyFactory.CreateActorProxy&lt;IOrderingProcessActor&gt;(</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>actorId,</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>nameof(OrderingProcessActor));</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>//</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>var actorOrder = await orderingProcess.GetOrderDetailsAsync();</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>var readModelOrder = new Order(integrationEvent.OrderId, actorOrder);</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>// Add the order to the read model so it can be queried from the API.</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>// It may already exist if this event has been handled before (at-least-once</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>semantics).</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>readModelOrder = await _orderRepository.AddOrGetOrderAsync(readModelOrder);</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>// Send a SignalR notification to the client.</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>await SendNotificationAsync(readModelOrder.OrderNumber, integrationEvent.OrderStatus,</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>integrationEvent.BuyerId);</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>// Send a confirmation e-mail if enabled.</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>if (settings.Value.SendConfirmationEmail)</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>await emailService.SendOrderConfirmationAsync(readModelOrder);</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

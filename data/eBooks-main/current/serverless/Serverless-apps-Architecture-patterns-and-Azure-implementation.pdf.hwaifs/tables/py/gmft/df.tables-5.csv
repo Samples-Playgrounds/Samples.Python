@@ -1,0 +1,3 @@
+,,IaaS,PaaS,Container,Serverless
+0,Lifetime,Months,Days to Months,Minutes to Days,Milliseconds to Minutes
+1,Responsibility,"Applications, dependencies, runtime, and operating system",Applications and dependencies,"Applications, dependencies, and runtime",Function

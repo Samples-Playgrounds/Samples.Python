@@ -1,0 +1,5 @@
+,orderConfiguration.OwnsOne(p => p.Address)
+0,".Property(p=>p.Street).HasColumnName(""ShippingStreet"");"
+1,
+2,orderConfiguration.OwnsOne(p => p.Address)
+3,".Property(p=>p.City).HasColumnName(""ShippingCity"");"

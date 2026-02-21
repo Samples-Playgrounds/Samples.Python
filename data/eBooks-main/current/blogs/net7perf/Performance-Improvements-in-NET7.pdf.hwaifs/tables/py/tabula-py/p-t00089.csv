@@ -1,0 +1,6 @@
+,; Program.Compute()
+0,pushr14
+1,pushrdi
+2,pushrsi
+3,pushrbp
+4,pushrbx

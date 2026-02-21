@@ -1,0 +1,4 @@
+,0,1,2,3,4,5,6
+0,Important,,,,,,
+1,The return type of an actor method must be,Task,or,Task<T>,". Also, actor methods can have at most",,
+2,one argument. Both the return type and the arguments must be,,,,,System.Text.Json,serializable.

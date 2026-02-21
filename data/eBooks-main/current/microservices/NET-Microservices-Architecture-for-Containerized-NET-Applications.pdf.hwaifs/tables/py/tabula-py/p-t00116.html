@@ -1,0 +1,54 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>public class MediatorModule : Autofac.Module</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>protected override void Load(ContainerBuilder builder)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>builder.RegisterAssemblyTypes(typeof(IMediator).GetTypeInfo().Assembly)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>.AsImplementedInterfaces();</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>// Register all the Command classes (they implement IRequestHandler)</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>// in assembly holding the Commands</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>builder.RegisterAssemblyTypes(typeof(CreateOrderCommand).GetTypeInfo().Assembly)</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>.AsClosedTypesOf(typeof(IRequestHandler&lt;,&gt;));</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>// Other types registration</td>
+    </tr>
+  </tbody>
+</table>

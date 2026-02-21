@@ -1,0 +1,94 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>static unsafe bool Contains(ReadOnlySpan&lt;byte&gt; haystack, byte needle)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>if (Vector128.IsHardwareAccelerated &amp;&amp; haystack.Length &gt;= Vector128&lt;byte&gt;.Count)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ref byte current = ref MemoryMarshal.GetReference(haystack);</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>if (Vector256.IsHardwareAccelerated &amp;&amp; haystack.Length &gt;= Vector256&lt;byte&gt;.Count)</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Vector256&lt;byte&gt; target = Vector256.Create(needle);</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>ref byte endMinusOneVector = ref Unsafe.Add(ref current, haystack.Length -</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Vector256&lt;byte&gt;.Count);</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>do</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>if (Vector256.EqualsAny(target, Vector256.LoadUnsafe(ref current)))</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>return true;</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>current = ref Unsafe.Add(ref current, Vector256&lt;byte&gt;.Count);</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>while (Unsafe.IsAddressLessThan(ref current, ref endMinusOneVector));</td>
+    </tr>
+  </tbody>
+</table>

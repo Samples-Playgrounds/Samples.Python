@@ -1,0 +1,42 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>8B4DA8 FFC9 894DA8 837DA800 7F0E</th>
+      <th>G_M000_IG08:</th>
+      <th>8B4DB8 FFC1 894DB8</th>
+      <th>G_M000_IG07:</th>
+      <th>7408 8B4DBC FFC1 894DBC</th>
+      <th>8B4DB8 0FB7C9 FF152DD40B00 85C0</th>
+      <th>G_M000_IG06:</th>
+      <th>3909 FF1585C70D00 33C9 894DBC 33C9 894DB8 EB20</th>
+      <th>488B4DC0</th>
+      <th>G_M000_IG05:</th>
+      <th>G_M000_IG04: 488D4DA8 BA06000000 E8B985AB5F</th>
+      <th>837DA800 7F0E</th>
+      <th>G_M000_IG03: 8B4DA8 FFC9 894DA8</th>
+      <th>G_M000_IG02: 48B9002F0B50FC7F0000 E8721FB25F 488945B0 488B4DB0 FF1544C70D00 488B4DB0 48894DC0 C745A8E8030000</th>
+      <th>4881EC80000000 488DAC2480000000 C5D857E4 C5F97F65B0 33C0 488945C0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>mov ecx, dword ptr [rbp-58H] dec ecx mov dword ptr [rbp-58H], ecx cmp dword ptr [rbp-58H], 0 jg SHORT G_M000_IG10</td>
+      <td>;; offset=009FH</td>
+      <td>mov ecx, dword ptr [rbp-48H] inc ecx mov dword ptr [rbp-48H], ecx</td>
+      <td>;; offset=0097H</td>
+      <td>eax, eax je SHORT G_M000_IG07 mov ecx, dword ptr [rbp-44H] inc ecx mov dword ptr [rbp-44H], ecx</td>
+      <td>mov ecx, dword ptr [rbp-48H] movzx rcx, cx call test</td>
+      <td>;; offset=007FH [Program:&lt;Main&gt;g__IsAsciiDigit|0_0(ushort):bool]</td>
+      <td>cmp dword ptr [rcx], ecx call [Stopwatch:Restart():this] xor ecx, ecx mov dword ptr [rbp-44H], ecx xor ecx, ecx mov dword ptr [rbp-48H], ecx jmp SHORT G_M000_IG08</td>
+      <td>mov rcx, gword ptr [rbp-40H]</td>
+      <td>;; offset=0067H</td>
+      <td>;; offset=0059H lea rcx, [rbp-58H] mov edx, 6 call CORINFO_HELP_PATCHPOINT</td>
+      <td>cmp dword ptr [rbp-58H], 0 jg SHORT G_M000_IG05</td>
+      <td>;; offset=004BH mov ecx, dword ptr [rbp-58H] dec ecx mov dword ptr [rbp-58H], ecx</td>
+      <td>;; offset=001FH mov rcx, 0x7FFC500B2F00 call CORINFO_HELP_NEWSFAST mov gword ptr [rbp-50H], rax mov rcx, gword ptr [rbp-50H] call [Stopwatch:.ctor():this] mov rcx, gword ptr [rbp-50H] mov gword ptr [rbp-40H], rcx mov dword ptr [rbp-58H], 0x3E8</td>
+      <td>sub rsp, 128 lea rbp, [rsp+80H] vxorps xmm4, xmm4 vmovdqa xmmword ptr [rbp-50H], xmm4 xor eax, eax mov qword ptr [rbp-40H], rax</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,28 @@
+,0
+0,apiVersion: dapr.io/v1alpha1
+1,kind: Component
+2,metadata:
+3,name: sendmail
+4,namespace: dapr-trafficcontrol
+5,spec:
+6,type: bindings.smtp
+7,version: v1
+8,metadata:
+9,- name: host
+10,value: localhost
+11,- name: port
+12,value: 4025
+13,- name: user
+14,secretKeyRef:
+15,name: smtp.user
+16,key: smtp.user
+17,- name: password
+18,secretKeyRef:
+19,name: smtp.password
+20,key: smtp.password
+21,- name: skipTLSVerify
+22,value: true
+23,auth:
+24,secretStore: trafficcontrol-secrets
+25,scopes:
+26,- finecollectionservice

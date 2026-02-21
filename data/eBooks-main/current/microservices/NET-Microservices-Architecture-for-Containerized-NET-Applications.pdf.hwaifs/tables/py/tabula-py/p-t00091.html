@@ -1,0 +1,86 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>// GENERIC EF REPOSITORY WITH SPECIFICATION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>// https://github.com/dotnet-architecture/eShopOnWeb</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>public IEnumerable&lt;T&gt; List(ISpecification&lt;T&gt; spec)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>// fetch a Queryable that includes all expression-based includes</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>var queryableResultWithIncludes = spec.Includes</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>.Aggregate(_dbContext.Set&lt;T&gt;().AsQueryable(),</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>(current, include) =&gt; current.Include(include));</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>// modify the IQueryable to include any string-based include statements</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>var secondaryResult = spec.IncludeStrings</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>.Aggregate(queryableResultWithIncludes,</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>(current, include) =&gt; current.Include(include));</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>// return the result of the query using the specification's criteria expression</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>return secondaryResult</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>.Where(spec.Criteria)</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>.AsEnumerable();</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,5 @@
+,0
+0,Note
+1,"The term “pipelines” can also be referred to by several different interchangeable words: pipeline,"
+2,"workflow, and build are common terms. In this article, references to Azure Pipelines are referring to"
+3,"YAML Pipelines, and not the older UI-based Classic Pipelines."

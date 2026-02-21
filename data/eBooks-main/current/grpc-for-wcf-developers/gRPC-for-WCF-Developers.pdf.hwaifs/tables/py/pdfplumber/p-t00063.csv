@@ -1,0 +1,47 @@
+,0
+0,public class StockTickerService : Protos.SimpleStockTicker.SimpleStockTickerBase
+1,{
+2,private readonly IStockPriceSubscriberFactory _subscriberFactory;
+3,
+4,public StockTickerService(IStockPriceSubscriberFactory subscriberFactory)
+5,{
+6,_subscriberFactory = subscriberFactory;
+7,}
+8,
+9,"public override async Task Subscribe(SubscribeRequest request,"
+10,"IServerStreamWriter<StockTickerUpdate> responseStream, ServerCallContext context)"
+11,{
+12,var subscriber = _subscriberFactory.GetSubscriber(request.Symbols.ToArray());
+13,
+14,"subscriber.Update += async (sender, args) =>"
+15,"await WriteUpdateAsync(responseStream, args.Symbol, args.Price);"
+16,
+17,await AwaitCancellation(context.CancellationToken);
+18,}
+19,
+20,"private async Task WriteUpdateAsync(IServerStreamWriter<StockTickerUpdate> stream,"
+21,"string symbol, decimal price)"
+22,{
+23,try
+24,{
+25,await stream.WriteAsync(new StockTickerUpdate
+26,{
+27,"Symbol = symbol,"
+28,"PriceCents = (int)(price * 100),"
+29,Time = Timestamp.FromDateTimeOffset(DateTimeOffset.UtcNow)
+30,});
+31,}
+32,catch (Exception e)
+33,{
+34,"// Handle any errors caused by broken connection, etc."
+35,"_logger.LogError($""Failed to write message: {e.Message}"");"
+36,}
+37,}
+38,
+39,private static Task AwaitCancellation(CancellationToken token)
+40,{
+41,var completion = new TaskCompletionSource<object>();
+42,token.Register(() => completion.SetResult(null));
+43,return completion.Task;
+44,}
+45,}

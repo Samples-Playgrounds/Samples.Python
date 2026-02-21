@@ -1,0 +1,6 @@
+|    |                                                                                                                                                                                                                   |     |
+|---:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----|
+|  0 | <DataAnnotationsValidator />                                                                                                                                                                                      | nan |
+|  1 | <div class="form-group"> <label class="control-label col-md-2">Name</label> <div class="col-md-3"> <InputText class="form-control" @bind-Value="_item.Name" <ValidationMessage For="(() => _item.Name)" /> </div> | />  |
+|  2 | </div>                                                                                                                                                                                                            | nan |
+|  3 | ... </EditForm>                                                                                                                                                                                                   | nan |

@@ -1,0 +1,61 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>NaN</td>
+      <td>Figure 5-2. The CAP theorem.</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>The and</td>
+      <td>theorem states that distributed data systems offer a trade-off between consistency, availability, partition tolerance. And, that any datastore can only guarantee two of the three properties:</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>•</td>
+      <td>Consistency (C). Every node in the cluster responds with the most recent data, even if the system must block the request until all replicas update. If you query a “consistent system” for an item that is currently updating, you won’t get a response until all replicas successfully update. However, you’ll always receive the most current data.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>•</td>
+      <td>Availability (A). Every node returns an immediate response, even if that response isn’t the most recent data. If you query an “available system” for an item that is updating, you’ll get the best possible answer the service can provide at that moment.</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>•</td>
+      <td>Partition Tolerance (P). Guarantees the system continues to operate even if a replicated data node fails or loses connectivity with other replicated data nodes.</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>NaN</td>
+      <td>Distributed applications must handle the P property. As services communicate among each other with</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>NaN</td>
+      <td>network calls, network disruptions (P) will occur. With that in mind, distributed applications must either be AP or CP.</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>AP one</td>
+      <td>applications choose availability over consistency. Dapr supports this choice with its eventual consistency strategy. Consider an underlying data store, such as Azure CosmosDB, which stores redundant data on multiple replicas. With eventual consistency, the state store writes the update to replica and completes the write request with the client. After this time, the store will asynchronously update its replicas. Read requests can return data from any of the replicas, including those replicas that haven’t yet received the latest update.</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>CP a The</td>
+      <td>applications choose consistency over availability. Dapr supports this choice with its strong consistency strategy. In this scenario, the state store will synchronously update all (or, in some cases, quorum of) required replicas before completing the write request. Read operations will return the most up-to-date data consistently across replicas. level for state is hint to the</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>The</td>
+      <td>consistency a operation specified by attaching a consistency operation. following curl command writes a Hello=World key/value pair to a state store using a strong consistency hint:</td>
+    </tr>
+  </tbody>
+</table>

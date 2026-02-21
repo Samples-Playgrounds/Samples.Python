@@ -1,0 +1,36 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Step</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>FROM ...</td>
+      <td>Declares the base image and assigns the builder alias.</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>WORKDIR /src</td>
+      <td>Creates the /src directory and sets it as the current working directory.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>COPY . .</td>
+      <td>Copies everything below the current directory on the host into the\rcurrent directory on the image.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>RUN dotnet restore</td>
+      <td>Restores any external packages (ASP.NET Core 3.0 framework is\rpreinstalled with the SDK).</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>RUN dotnet publish ...</td>
+      <td>Builds and publishes a Release build. The --runtime flag isn’t required.</td>
+    </tr>
+  </tbody>
+</table>

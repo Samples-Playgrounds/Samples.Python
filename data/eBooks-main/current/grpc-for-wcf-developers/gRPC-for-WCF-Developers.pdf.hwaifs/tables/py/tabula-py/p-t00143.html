@@ -1,0 +1,50 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>&gt; kubectl apply -f .\stockweb.yml</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>deployment.apps/stockweb created</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>service/stockweb created</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>&gt; kubectl get deployment stockweb --namespace stocks</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; READY&nbsp;&nbsp; UP-TO-DATE&nbsp;&nbsp; AVAILABLE&nbsp;&nbsp; AGE</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>stockweb&nbsp;&nbsp; 1/1&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8s</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>&gt; kubectl get service stockweb --namespace stocks</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TYPE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CLUSTER-IP&nbsp;&nbsp;&nbsp;&nbsp; EXTERNAL-IP&nbsp;&nbsp; PORT(S)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AGE</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>stockweb&nbsp;&nbsp; NodePort&nbsp;&nbsp; 10.106.141.5&nbsp;&nbsp; &lt;none&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80:32564/TCP&nbsp;&nbsp; 13s</td>
+    </tr>
+  </tbody>
+</table>

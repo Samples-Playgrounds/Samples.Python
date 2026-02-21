@@ -1,0 +1,19 @@
+,Unnamed: 0
+0,<dd>
+1,"<asp:Label runat=""server"" Text='<%#product.MaxStockThreshold%>' />"
+2,</dd>
+3,
+4,</dl>
+5,</div>
+6,
+7,"<div class=""form-actions no-color esh-link-list"">"
+8,"<a runat=""server"" href='<%# GetRouteUrl(""EditProductRoute"", new {id"
+9,"=product.Id}) %>' class=""esh-link-item"">Edit"
+10,</a>
+11,|
+12,"<a runat=""server"" href=""~"" class=""esh-link-item"">Back to list"
+13,</a>
+14,</div>
+15,
+16,</div>
+17,</asp:Content>

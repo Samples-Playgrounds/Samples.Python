@@ -1,0 +1,17 @@
+,Metric,Source,Description
+0,dapr_operator_service_created_total,System,The total number of Dapr services created
+1,,,by the Dapr Operator service.
+2,dapr_injector_sidecar_injection/requests_total,System,The total number of sidecar injection
+3,,,requests received by the Dapr Sidecar-
+4,,,Injector service.
+5,dapr_placement_runtimes_total,System,The total number of hosts reported to the
+6,,,Dapr Placement service.
+7,dapr_sentry_cert_sign_request_received_total,System,The number of certificate signing requests
+8,,,(CRSs) received by the Dapr Sentry service.
+9,dapr_runtime_component_loaded,Runtime,The number of successfully loaded Dapr
+10,,,components.
+11,dapr_grpc_io_server_completed_rpcs,Runtime,Count of gRPC calls by method and status.
+12,dapr_http_server_request_count,Runtime,Number of HTTP requests started in an
+13,,,HTTP server.
+14,dapr_http/client/sent_bytes,Runtime,Total bytes sent in request body (not
+15,,,including headers) by an HTTP client.

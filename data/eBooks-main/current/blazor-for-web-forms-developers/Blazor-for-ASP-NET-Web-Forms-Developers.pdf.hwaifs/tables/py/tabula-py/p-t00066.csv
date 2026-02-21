@@ -1,0 +1,22 @@
+,<p>
+0,"<label for=""valid"">Engineering Approval: </label>"
+1,"<InputCheckbox id=""valid"" @bind-Value=""starship.IsValidatedDesign"" />"
+2,"<ValidationMessage For=""() => starship.IsValidatedDesign"" />"
+3,</p>
+4,<p>
+5,"<label for=""productionDate"">Production Date: </label>"
+6,"<InputDate id=""productionDate"" @bind-Value=""starship.ProductionDate"" />"
+7,"<ValidationMessage For=""() => starship.ProductionDate"" />"
+8,</p>
+9,
+10,"<button type=""submit"">Submit</button>"
+11,</EditForm>
+12,
+13,@code {
+14,private Starship starship = new Starship();
+15,
+16,private void HandleValidSubmit()
+17,{
+18,// Save the data
+19,}
+20,}

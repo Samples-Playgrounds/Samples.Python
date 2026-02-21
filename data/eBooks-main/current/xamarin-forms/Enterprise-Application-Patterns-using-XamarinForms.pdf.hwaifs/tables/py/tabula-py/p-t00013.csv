@@ -1,0 +1,20 @@
+,private async Task NavigateAsync(string url)
+0,{
+1,...
+2,var authResponse = new AuthorizeResponse(url);
+3,if (!string.IsNullOrWhiteSpace(authResponse.Code))
+4,{
+5,var userToken = await _identityService.GetTokenAsync(authResponse.Code);
+6,string accessToken = userToken.AccessToken;
+7,
+8,if (!string.IsNullOrWhiteSpace(accessToken))
+9,{
+10,Settings.AuthAccessToken = accessToken;
+11,Settings.AuthIdToken = authResponse.IdentityToken;
+12,
+13,await NavigationService.NavigateToAsync<MainViewModel>();
+14,await NavigationService.RemoveLastFromBackStackAsync();
+15,}
+16,}
+17,...
+18,}

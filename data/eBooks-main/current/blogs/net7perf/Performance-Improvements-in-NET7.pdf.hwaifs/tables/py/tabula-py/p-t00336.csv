@@ -1,0 +1,3 @@
+,Method,Runtime,Mean,Ratio,Code Size,Allocated,Alloc Ratio
+0,ReadWriteAsync,.NET 6.0,68.34 ms,1.0,510 B,336404 B,1.0
+1,ReadWriteAsync,.NET 7.0,69.60 ms,1.02,514 B,995 B,0.003

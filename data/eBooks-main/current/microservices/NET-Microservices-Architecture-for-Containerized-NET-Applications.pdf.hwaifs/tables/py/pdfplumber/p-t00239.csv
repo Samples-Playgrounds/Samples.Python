@@ -1,0 +1,16 @@
+,0
+0,public void SetAddress(Address address)
+1,{
+2,_shippingAddress = address?? throw new ArgumentNullException(nameof(address));
+3,}
+4,A better example would demonstrate the need to ensure that either the internal state did
+5,"not change, or that all the mutations for a method occurred. For example, the following"
+6,implementation would leave the object in an invalid state:
+7,"public void SetAddress(string line1, string line2,"
+8,"string city, string state, int zip)"
+9,{
+10,_shippingAddress.line1 = line1 ?? throw new ...
+11,_shippingAddress.line2 = line2;
+12,_shippingAddress.city = city ?? throw new ...
+13,_shippingAddress.state = (IsValid(state) ? state : throw new …);
+14,}

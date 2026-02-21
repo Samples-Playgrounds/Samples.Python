@@ -1,0 +1,48 @@
+,// Sample SQL Connection Health Check
+0,public class SqlConnectionHealthCheck : IHealthCheck
+1,{
+2,"private const string DefaultTestQuery = ""Select 1"";"
+3,
+4,public string ConnectionString { get; }
+5,
+6,public string TestQuery { get; }
+7,
+8,public SqlConnectionHealthCheck(string connectionString)
+9,": this(connectionString, testQuery: DefaultTestQuery)"
+10,{
+11,}
+12,
+13,"public SqlConnectionHealthCheck(string connectionString, string testQuery)"
+14,{
+15,ConnectionString = connectionString ?? throw new
+16,ArgumentNullException(nameof(connectionString));
+17,TestQuery = testQuery;
+18,}
+19,
+20,"public async Task<HealthCheckResult> CheckHealthAsync(HealthCheckContext context,"
+21,CancellationToken cancellationToken = default(CancellationToken))
+22,{
+23,using (var connection = new SqlConnection(ConnectionString))
+24,{
+25,try
+26,{
+27,await connection.OpenAsync(cancellationToken);
+28,
+29,if (TestQuery != null)
+30,{
+31,var command = connection.CreateCommand();
+32,command.CommandText = TestQuery;
+33,
+34,await command.ExecuteNonQueryAsync(cancellationToken);
+35,}
+36,}
+37,catch (DbException ex)
+38,{
+39,"return new HealthCheckResult(status: context.Registration.FailureStatus,"
+40,exception: ex);
+41,}
+42,}
+43,
+44,return HealthCheckResult.Healthy();
+45,}
+46,}

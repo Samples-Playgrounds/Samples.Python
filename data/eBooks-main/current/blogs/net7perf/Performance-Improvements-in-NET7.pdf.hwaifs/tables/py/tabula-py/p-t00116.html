@@ -1,0 +1,62 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>private Example _example = new Example();</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>[Benchmark(Baseline = true)] public void GenericNonVirtual() =&gt;</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>_example.GenericNonVirtual&lt;Example&gt;();</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>[Benchmark] public void GenericVirtual() =&gt; _example.GenericVirtual&lt;Example&gt;();</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>class Example</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>[MethodImpl(MethodImplOptions.NoInlining)]</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>public void GenericNonVirtual&lt;T&gt;() { }</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>[MethodImpl(MethodImplOptions.NoInlining)]</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>public virtual void GenericVirtual&lt;T&gt;() { }</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

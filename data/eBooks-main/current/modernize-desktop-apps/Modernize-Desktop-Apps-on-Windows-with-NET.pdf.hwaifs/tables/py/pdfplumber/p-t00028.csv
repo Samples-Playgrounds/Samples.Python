@@ -1,0 +1,11 @@
+,0
+0,<ItemGroup>
+1,"<COMReference Include=""MSHTML"">"
+2,<Guid>{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}\</Guid>
+3,<VersionMajor>4</VersionMajor>
+4,<VersionMinor>0</VersionMinor>
+5,<Lcid>0</Lcid>
+6,<WrapperTool>primary</WrapperTool>
+7,<Isolated>false</Isolated>
+8,</COMReference>
+9,</ItemGroup>

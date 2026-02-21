@@ -1,0 +1,230 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Interop.LibraryImportGenerator",</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>"7.0.6.42316")]</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>[System.Runtime.CompilerServices.SkipLocalsInitAttribute]</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>private static unsafe partial bool CreatePipe(out</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>global::Microsoft.Win32.SafeHandles.SafeFileHandle hReadPipe, out</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>global::Microsoft.Win32.SafeHandles.SafeFileHandle hWritePipe, void* lpPipeAttributes, uint</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>nSize)</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>int __lastError;</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>bool __invokeSucceeded = default;</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>System.Runtime.CompilerServices.Unsafe.SkipInit(out hReadPipe);</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>System.Runtime.CompilerServices.Unsafe.SkipInit(out hWritePipe);</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>System.IntPtr __hReadPipe_native = default;</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>System.IntPtr __hWritePipe_native = default;</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>bool __retVal;</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>int __retVal_native = default;</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>// Setup - Perform required setup.</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>global::Microsoft.Win32.SafeHandles.SafeFileHandle hReadPipe__newHandle = new</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>global::Microsoft.Win32.SafeHandles.SafeFileHandle();</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>global::Microsoft.Win32.SafeHandles.SafeFileHandle hWritePipe__newHandle = new</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>global::Microsoft.Win32.SafeHandles.SafeFileHandle();</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>try</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>System.Runtime.InteropServices.Marshal.SetLastSystemError(0);</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>__retVal_native = __PInvoke(&amp;__hReadPipe_native, &amp;__hWritePipe_native,</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>lpPipeAttributes, nSize);</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>__lastError = System.Runtime.InteropServices.Marshal.GetLastSystemError();</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>__invokeSucceeded = true;</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>// Unmarshal - Convert native data to managed data.</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>__retVal = __retVal_native != 0;</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>finally</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>if (__invokeSucceeded)</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>// GuaranteedUnmarshal - Convert native data to managed data even in the case</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>of an exception during the non-cleanup phases.</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>System.Runtime.InteropServices.Marshal.InitHandle(hWritePipe__newHandle,</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>__hWritePipe_native);</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>hWritePipe = hWritePipe__newHandle;</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>System.Runtime.InteropServices.Marshal.InitHandle(hReadPipe__newHandle,</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>__hReadPipe_native);</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>hReadPipe = hReadPipe__newHandle;</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>System.Runtime.InteropServices.Marshal.SetLastPInvokeError(__lastError);</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>return __retVal;</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>// Local P/Invoke</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>[System.Runtime.InteropServices.DllImportAttribute("kernel32", EntryPoint =</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,54 @@
+,0
+0,// COMPATIBLE WITH ENTITY FRAMEWORK CORE (1.1 and later)
+1,public abstract class Entity
+2,{
+3,int? _requestedHashCode;
+4,int _Id;
+5,private List<INotification> _domainEvents;
+6,public virtual int Id
+7,{
+8,get
+9,{
+10,return _Id;
+11,}
+12,protected set
+13,{
+14,_Id = value;
+15,}
+16,}
+17,
+18,public List<INotification> DomainEvents => _domainEvents;
+19,public void AddDomainEvent(INotification eventItem)
+20,{
+21,_domainEvents = _domainEvents ?? new List<INotification>();
+22,_domainEvents.Add(eventItem);
+23,}
+24,public void RemoveDomainEvent(INotification eventItem)
+25,{
+26,if (_domainEvents is null) return;
+27,_domainEvents.Remove(eventItem);
+28,}
+29,
+30,public bool IsTransient()
+31,{
+32,return this.Id == default(Int32);
+33,}
+34,
+35,public override bool Equals(object obj)
+36,{
+37,if (obj == null || !(obj is Entity))
+38,return false;
+39,"if (Object.ReferenceEquals(this, obj))"
+40,return true;
+41,if (this.GetType() != obj.GetType())
+42,return false;
+43,Entity item = (Entity)obj;
+44,if (item.IsTransient() || this.IsTransient())
+45,return false;
+46,else
+47,return item.Id == this.Id;
+48,}
+49,
+50,public override int GetHashCode()
+51,{
+52,if (!IsTransient())

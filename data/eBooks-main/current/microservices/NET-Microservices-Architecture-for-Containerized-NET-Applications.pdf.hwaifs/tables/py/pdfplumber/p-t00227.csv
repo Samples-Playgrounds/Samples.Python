@@ -1,0 +1,24 @@
+,0
+0,{
+1,if (!_requestedHashCode.HasValue)
+2,_requestedHashCode = this.Id.GetHashCode() ^ 31;
+3,// XOR for random distribution. See:
+4,// https://learn.microsoft.com/archive/blogs/ericlippert/guidelines-and-rules-
+5,for-gethashcode
+6,return _requestedHashCode.Value;
+7,}
+8,else
+9,return base.GetHashCode();
+10,}
+11,"public static bool operator ==(Entity left, Entity right)"
+12,{
+13,"if (Object.Equals(left, null))"
+14,"return (Object.Equals(right, null));"
+15,else
+16,return left.Equals(right);
+17,}
+18,"public static bool operator !=(Entity left, Entity right)"
+19,{
+20,return !(left == right);
+21,}
+22,}

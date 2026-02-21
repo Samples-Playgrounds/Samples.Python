@@ -1,0 +1,6 @@
+,0
+0,Tip: Consider an IContainer as being immutable
+1,"While Autofac provides an Update method to update registrations in an existing container, calling"
+2,this method should be avoided where possible. There are risks to modifying a container after it's
+3,"been built, particularly if the container has been used. For more information, see Consider a"
+4,Container as Immutable on readthedocs.io.

@@ -1,0 +1,114 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>; Program.IsInSet(Char)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>sub&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rsp,28</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>movzx&nbsp;&nbsp;&nbsp;&nbsp; eax,dx</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>cmp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eax,80</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>jge&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; short M00_L00</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>mov&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; edx,eax</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>sar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; edx,4</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>cmp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; edx,8</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>jae&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; short M00_L01</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>mov&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rcx,299835A1518</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>mov&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rcx,[rcx]</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>movsxd&nbsp;&nbsp;&nbsp;&nbsp;rdx,edx</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>movzx&nbsp;&nbsp;&nbsp;&nbsp; edx,word ptr [rcx+rdx*2+0C]</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>and&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eax,0F</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>bt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;edx,eax</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>setb&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;al</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>movzx&nbsp;&nbsp;&nbsp;&nbsp; eax,al</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>add&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rsp,28</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>ret</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>M00_L00:</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>xor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eax,eax</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>add&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rsp,28</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>ret</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>M00_L01:</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>call&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CORINFO_HELP_RNGCHKFAIL</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>int&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>; Total bytes of code 75</td>
+    </tr>
+  </tbody>
+</table>

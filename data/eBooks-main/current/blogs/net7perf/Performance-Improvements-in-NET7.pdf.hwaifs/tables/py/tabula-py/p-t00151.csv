@@ -1,0 +1,30 @@
+,private readonly byte[][] _nestedArrays = new byte[8][];
+0,private const int Iterations = 100_000;
+1,
+2,private static byte IterateAll(byte[] arr)
+3,{
+4,byte ret = default;
+5,foreach (byte item in arr) ret = item;
+6,return ret;
+7,}
+8,
+9,[Benchmark(OperationsPerInvoke = Iterations)]
+10,public async Task MultipleSerial()
+11,{
+12,for (int i = 0; i < Iterations; i++)
+13,{
+14,for (int j = 0; j < _nestedArrays.Length; j++)
+15,{
+16,_nestedArrays[j] = ArrayPool<byte>.Shared.Rent(4096);
+17,_nestedArrays[j].AsSpan().Clear();
+18,}
+19,
+20,await Task.Yield();
+21,
+22,for (int j = _nestedArrays.Length - 1; j >= 0; j--)
+23,{
+24,IterateAll(_nestedArrays[j]);
+25,ArrayPool<byte>.Shared.Return(_nestedArrays[j]);
+26,}
+27,}
+28,}

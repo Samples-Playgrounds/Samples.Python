@@ -1,0 +1,17 @@
+,0
+0,{
+1,"""DownstreamPathTemplate"": ""/api/{version}/{everything}"","
+2,"""DownstreamScheme"": ""http"","
+3,"""DownstreamHostAndPorts"": ["
+4,{
+5,"""Host"": ""basket-api"","
+6,"""Port"": 80"
+7,}
+8,"],"
+9,"""UpstreamPathTemplate"": ""/api/{version}/b/{everything}"","
+10,"""UpstreamHttpMethod"": [ ""POST"", ""PUT"", ""GET"" ],"
+11,"""AuthenticationOptions"": {"
+12,"""AuthenticationProviderKey"": ""IdentityApiKey"","
+13,"""AllowedScopes"": []"
+14,}
+15,}

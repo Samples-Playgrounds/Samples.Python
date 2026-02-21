@@ -1,0 +1,3 @@
+,builder.Services.AddDbContext<CatalogContext>(
+0,options => options.UseSqlServer(
+1,"builder.Configuration.GetConnectionString(""DefaultConnection"")));"

@@ -1,0 +1,15 @@
+,0
+0,[TestMethod]
+1,public async Task OrderPropertyIsNotNullAfterViewModelInitializationTest()
+2,{
+3,// Arrange
+4,var orderService = new OrderMockService();
+5,var orderViewModel = new OrderDetailViewModel(orderService);
+6,
+7,// Act
+8,"var order = await orderService.GetOrderAsync(1, GlobalSetting.Instance.AuthToken);"
+9,await orderViewModel.InitializeAsync(order);
+10,
+11,// Assert
+12,Assert.IsNotNull(orderViewModel.Order);
+13,}

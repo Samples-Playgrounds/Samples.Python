@@ -1,0 +1,17 @@
+,"[Route(""api/v1/[controller]"")]"
+0,[Authorize]
+1,[ApiController]
+2,public class BasketController : ControllerBase
+3,{
+4,private readonly ICatalogService _catalog;
+5,private readonly IBasketService _basket;
+6,
+7,[HttpPost]
+8,[HttpPut]
+9,[ProducesResponseType((int)HttpStatusCode.BadRequest)]
+10,"[ProducesResponseType(typeof(BasketData), (int)HttpStatusCode.OK)]"
+11,public async Task<ActionResult<BasketData>> UpdateAllBasketAsync(
+12,"[FromBody] UpdateBasketRequest data,"
+13,[FromHeader] string authorization)
+14,{
+15,BasketData basket;

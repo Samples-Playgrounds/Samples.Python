@@ -1,0 +1,10 @@
+,dotnet new,console -o,nativeaotexample,,
+0,We now have our world” Program.cs. this in the existing,nativeaotexample To enable,publishing,directory containing a the application <PropertyGroup>...</PropertyGroup>.,"nativeaotexample.csproj and a “hello, with Native AOT, edit the .csproj to include"
+1,,<PublishAot>true</PublishAot>,,,
+2,"And then… actually, left is to publish.",that’s it. Our As I’m currently,app is writing,now fully configured this on my,"to be able to target Native AOT. All that’s Windows x64 machine, I’ll target that:"
+3,dotnet publish,-r win-x64 -c,Release,,
+4,I now have my,generated executable,in,the output publish,directory:
+5,Directory:,,,,C:\nativeaotexample\bin\Release\net7.0\win-x64\publish
+6,Mode,LastWriteTime,,Length Name,
+7,-a---,8/27/2022,6:19 PM,2061824,nativeaotexample.exe
+8,-a---,8/27/2022,6:19 PM,14290944,nativeaotexample.pdb

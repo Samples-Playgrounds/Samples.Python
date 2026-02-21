@@ -1,0 +1,3 @@
+,// Program.cs from .NET 7 Web Api sample
+0,
+1,"app.MapHealthChecks(""/hc"");"

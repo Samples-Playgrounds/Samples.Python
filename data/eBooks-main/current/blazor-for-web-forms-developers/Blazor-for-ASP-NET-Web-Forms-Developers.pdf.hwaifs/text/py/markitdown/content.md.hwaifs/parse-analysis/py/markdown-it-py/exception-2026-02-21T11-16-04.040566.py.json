@@ -1,0 +1,5 @@
+Exception parsing markdown with markdown-it-py = ../../../../../../data/eBooks-main/current/blazor-for-web-forms-developers/Blazor-for-ASP-NET-Web-Forms-Developers.pdf.hwaifs/text/py/markitdown/content.md : [Errno 2] No such file or directory: '../../../../../../data/eBooks-main/current/blazor-for-web-forms-developers/Blazor-for-ASP-NET-Web-Forms-Developers.pdf.hwaifs/text/py/markitdown/content.md'Traceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/transformations/markdown-parsing/markdown-it-py/api_parse_analyze_markdown_markdown_it_py.py", line 36, in api_parse_analyze_markdown_markdown_it_py
+    with open(source, 'r') as f:
+         ~~~~^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../../../data/eBooks-main/current/blazor-for-web-forms-developers/Blazor-for-ASP-NET-Web-Forms-Developers.pdf.hwaifs/text/py/markitdown/content.md'

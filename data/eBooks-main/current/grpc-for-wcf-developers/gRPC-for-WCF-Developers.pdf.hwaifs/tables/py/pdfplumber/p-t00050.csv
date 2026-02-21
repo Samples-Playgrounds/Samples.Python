@@ -1,0 +1,29 @@
+,0
+0,[DataContract]
+1,public class Portfolio
+2,{
+3,[DataMember]
+4,public int Id { get; set; }
+5,
+6,[DataMember]
+7,public Guid TraderId { get; set; }
+8,
+9,[DataMember]
+10,public List<PortfolioItem> Items { get; set; }
+11,}
+12,
+13,[DataContract]
+14,public class PortfolioItem
+15,{
+16,[DataMember]
+17,public int Id { get; set; }
+18,
+19,[DataMember]
+20,public int ShareId { get; set; }
+21,
+22,[DataMember]
+23,public int Holding { get; set; }
+24,
+25,[DataMember]
+26,public decimal Cost { get; set; }
+27,}

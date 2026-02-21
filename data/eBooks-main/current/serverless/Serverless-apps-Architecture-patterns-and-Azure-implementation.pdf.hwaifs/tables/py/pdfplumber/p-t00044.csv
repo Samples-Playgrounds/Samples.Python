@@ -1,0 +1,7 @@
+,0,1,2
+0,"Azure
+resource",Event type,Description
+1,,Microsoft.Resources.ResourceDeleteCancel,"Raised when a resource delete
+operation is canceled. This event
+happens when a template deployment
+is canceled."

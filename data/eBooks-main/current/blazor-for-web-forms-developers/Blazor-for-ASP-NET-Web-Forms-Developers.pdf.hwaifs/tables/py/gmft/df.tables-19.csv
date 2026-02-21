@@ -1,0 +1,2 @@
+,,services.Configure<MyConfig>(Configuration);
+0,"In the rest of the app, you can add an input parameter to classes or an @inject directive in templates of type IOptions<MyConfig> to receive the strongly typed configuration IOptions<MyConfig>.Value property will yield the MyConfig value populated from the settings.",Razor settings. The configuration

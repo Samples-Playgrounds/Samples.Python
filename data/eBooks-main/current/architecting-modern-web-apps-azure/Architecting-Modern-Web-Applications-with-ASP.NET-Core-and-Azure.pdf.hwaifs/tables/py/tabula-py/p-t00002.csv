@@ -1,0 +1,17 @@
+,version: '3'
+0,
+1,services:
+2,eshopwebmvc:
+3,image: eshopwebmvc
+4,build:
+5,context: .
+6,dockerfile: src/Web/Dockerfile
+7,environment:
+8,- ASPNETCORE_ENVIRONMENT=Development
+9,ports:
+10,"- ""5106:5106"""
+11,
+12,networks:
+13,default:
+14,external:
+15,name: nat

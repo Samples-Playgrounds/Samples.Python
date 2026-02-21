@@ -1,0 +1,12 @@
+,message GetRequest {
+0,string trader_id = 1;
+1,int32 portfolio_id = 2;
+2,}
+3,
+4,message GetResponse {
+5,Portfolio portfolio = 1;
+6,}
+7,
+8,service Portfolios {
+9,rpc Get(GetRequest) returns (GetResponse);
+10,}

@@ -1,0 +1,36 @@
+,0
+0,using System.Text;
+1,using System.Xml.Serialization;
+2,
+3,var serializer = new XmlSerializer(typeof(Release[]));
+4,var stream = new MemoryStream(Encoding.UTF8.GetBytes(
+5,""""""""
+6,"<?xml version=""1.0"" encoding=""utf-8""?>"
+7,"<ArrayOfRelease xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"""
+8,"xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">"
+9,<Release><Major>1</Major><Minor>0</Minor></Release>
+10,<Release><Major>1</Major><Minor>1</Minor></Release>
+11,<Release><Major>2</Major><Minor>0</Minor></Release>
+12,<Release><Major>2</Major><Minor>1</Minor></Release>
+13,<Release><Major>2</Major><Minor>2</Minor></Release>
+14,<Release><Major>3</Major><Minor>0</Minor></Release>
+15,<Release><Major>3</Major><Minor>1</Minor></Release>
+16,<Release><Major>5</Major><Minor>0</Minor></Release>
+17,<Release><Major>6</Major><Minor>0</Minor></Release>
+18,<Release><Major>7</Major><Minor>0</Minor></Release>
+19,</ArrayOfRelease>
+20,"""""""));"
+21,
+22,for (int i = 0; i < 1000; i++)
+23,{
+24,stream.Position = 0;
+25,serializer.Deserialize(stream);
+26,}
+27,
+28,public class Release
+29,{
+30,public int Major;
+31,public int Minor;
+32,public int Build;
+33,public int Revision;
+34,}

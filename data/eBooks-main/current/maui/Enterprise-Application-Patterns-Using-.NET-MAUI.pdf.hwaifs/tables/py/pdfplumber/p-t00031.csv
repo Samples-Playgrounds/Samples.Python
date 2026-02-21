@@ -1,0 +1,9 @@
+,0
+0,mauiAppBuilder.Services.AddTransient<ViewModels.CheckoutViewModel>();
+1,mauiAppBuilder.Services.AddTransient<ViewModels.OrderDetailViewModel>();
+2,mauiAppBuilder.Services.AddTransient<ViewModels.SettingsViewModel>();
+3,mauiAppBuilder.Services.AddTransient<ViewModels.CampaignViewModel>();
+4,mauiAppBuilder.Services.AddTransient<ViewModels.CampaignDetailsViewModel>();
+5,
+6,return mauiAppBuilder;
+7,}

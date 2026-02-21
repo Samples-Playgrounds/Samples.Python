@@ -1,0 +1,8 @@
+,0
+0,"}).ToList(),"
+1,"OrderNumber = o.Id,"
+2,"ShippingAddress = o.ShipToAddress,"
+3,Total = o.Total()
+4,});
+5,}
+6,}

@@ -1,0 +1,10 @@
+,0
+0,curl -X POST http://localhost:3500/v1.0/bindings/sms \
+1,"-H ""Content-Type: application/json"" \"
+2,-d '{
+3,"""data"": ""Welcome to this awesome service"","
+4,"""metadata"": {"
+5,"""toNumber"": ""555-3277"""
+6,"},"
+7,"""operation"": ""create"""
+8,}'
