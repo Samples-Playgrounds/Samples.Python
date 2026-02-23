@@ -10,9 +10,9 @@ deactivate
 rm -fr .venv/ __pycache__/
 rm *.pyc
 
-
 python -m venv .venv
 source .venv/bin/activate
+pip install --upgrade pip
 
 pip install easyocr
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LIBRARY=pytesseract
+LIBRARY=markdown-it-py
 figlet $LIBRARY
 figlet start
 
@@ -15,8 +15,10 @@ python -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
 
-pip install pytesseract
-pip install opencv-python
+pip install markdown-it-py
+pip install "markdown-it-py[plugins]"
+pip install "markdown-it-py[linkify,plugins]"
+
 
 pip install timer
 pip install codetiming
