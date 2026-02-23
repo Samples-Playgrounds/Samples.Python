@@ -1,0 +1,5 @@
+Exception parsing markdown with commonmark = ../../../../../../data/eBooks-main/current/modernize-with-azure-containers/Modernize-Existing-.NET-applications-with-Azure-cloud-and-Windows-Containers.pdf.hwaifs/text/py/docling/content.md : name 'p' is not definedTraceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/transformations/markdown-parsing/commonmark-py/api_parse_analyze_markdown_commonmark.py", line 31, in api_parse_analyze_markdown_commonmark
+    ast = parser.parse(p.content)
+                       ^
+NameError: name 'p' is not defined
