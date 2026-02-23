@@ -34,7 +34,7 @@ sources = files_documents_pdfs
 def main():
    for source in sources:
       print(f"docTR <- source = {source}")
-      result_txt, result_json = api.extract_text_to_file_from_pdf_document(source)
+      api.extract_text_to_file_from_pdf_document(source)
 
 if __name__ == '__main__':
     main()
