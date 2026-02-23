@@ -82,7 +82,10 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
     if result_txt is None and result_json is None:
         return "", ""
 
-    if result_json is None:
+    if result_json is None and result_txt is not None:
         return result_txt, ""
+
+    if result_txt is None and result_json is not None:
+        return "", result_json
 
     return result_txt, result_json
