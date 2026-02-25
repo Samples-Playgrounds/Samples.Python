@@ -1,0 +1,5 @@
+Exception parsing markdown with commonmark = ../../../../../../data/eBooks-main/current/blogs/net7perf/Performance-Improvements-in-NET7.pdf.hwaifs/text/py/marker/content.md : [Errno 2] No such file or directory: '../../../../../../data/eBooks-main/current/blogs/net7perf/Performance-Improvements-in-NET7.pdf.hwaifs/text/py/marker/content.md'Traceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/transformations/markdown-parsing/commonmark-py/api_parse_analyze_markdown_commonmark.py", line 33, in api_parse_analyze_markdown_commonmark
+    with open(source, 'r') as f:
+         ~~~~^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../../../data/eBooks-main/current/blogs/net7perf/Performance-Improvements-in-NET7.pdf.hwaifs/text/py/marker/content.md'

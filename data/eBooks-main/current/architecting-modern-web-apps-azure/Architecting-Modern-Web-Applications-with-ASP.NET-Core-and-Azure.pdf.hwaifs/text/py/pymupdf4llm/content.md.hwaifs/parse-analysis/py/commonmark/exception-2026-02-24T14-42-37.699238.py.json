@@ -1,0 +1,10 @@
+Exception parsing markdown with commonmark = ../../../../../../data/eBooks-main/current/architecting-modern-web-apps-azure/Architecting-Modern-Web-Applications-with-ASP.NET-Core-and-Azure.pdf.hwaifs/text/py/pymupdf4llm/content.md : Couldn't find a tree builder with the features you requested: lxml. Do you need to install a parser library?Traceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/transformations/markdown-parsing/commonmark-py/api_parse_analyze_markdown_commonmark.py", line 44, in api_parse_analyze_markdown_commonmark
+    html_json = html_to_json(html)
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/transformations/markdown-parsing/commonmark-py/api_parse_analyze_markdown_commonmark.py", line 97, in html_to_json
+    soup = BeautifulSoup(html, 'lxml')
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/transformations/markdown-parsing/commonmark-py/.venv/lib/python3.14/site-packages/bs4/__init__.py", line 366, in __init__
+    raise FeatureNotFound(
+    ...<3 lines>...
+    )
+bs4.exceptions.FeatureNotFound: Couldn't find a tree builder with the features you requested: lxml. Do you need to install a parser library?

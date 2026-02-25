@@ -1,0 +1,2365 @@
+<p><strong>EDITION v6.0.0</strong> - Updated to ASP.NET Core 6.0</p>
+<p><a href="https://aka.ms/DockerLifecycleEbookChangelog">Refer changelog</a> for the book updates and community contributions.</p>
+<p>This guide is a general overview for developing and deploying containerized ASP.NET Core<br />
+applications with Docker, using the Microsoft platform and tools. The guide includes a high-level<br />
+introduction to Azure DevOps, for implementing CI/CD pipelines, as well as Azure Container Registry<br />
+(ACR) and Azure Kubernetes Services AKS for deployment.</p>
+<p><a href="https://docs.microsoft.com/en-us/dotnet/architecture/microservices/">For low-level, development-related details you can see the .NET Microservices: Architecture for</a><br />
+<a href="https://docs.microsoft.com/en-us/dotnet/architecture/microservices/">Containerized .NET Applications guide and it related reference application eShopOnContainers.</a></p>
+<h3>Credits</h3>
+<p>Author:</p>
+<p><strong>Cesar de la Torre</strong>, Sr. PM, .NET product team, Microsoft Corp.</p>
+<p>Acquisitions Editor:</p>
+<p><strong>Janine Patrick</strong></p>
+<p>Developmental Editor:</p>
+<p><strong>Bob Russell</strong>, Solutions Professional at Microsoft</p>
+<p><strong><a href="http://www.octalpub.com/">Octal Publishing, Inc.</a></strong></p>
+<p>Editorial Production:</p>
+<p><a href="http://www.octalpub.com/">Dianne Russell</a></p>
+<p><strong>Octal Publishing, Inc.</strong></p>
+<p>Copyeditor:</p>
+<p><strong>Bob Russell</strong>, Solutions Professional at Microsoft</p>
+<p>Participants and reviewers:</p>
+<p><strong>Nish Anil</strong>, Sr. Program Manager, .NET team, Microsoft</p>
+<p><strong>Miguel Veloso</strong>, Software Development Engineer at Plain Concepts</p>
+<p><strong>Sumit Ghosh</strong>, Principal Consultant at Neudesic</p>
+<p><strong>Colin Dembovsky</strong>, DevOps Practice Lead, Cognizant Microsoft Business Group</p>
+<h3>Copyright</h3>
+<p>PUBLISHED BY</p>
+<p>Microsoft Developer Division, .NET and Visual Studio product teams</p>
+<p>A division of Microsoft Corporation</p>
+<p>One Microsoft Way</p>
+<p>Redmond, Washington 98052-6399</p>
+<p>Copyright © 2022 by Microsoft Corporation</p>
+<p>All rights reserved. No part of the contents of this book may be reproduced or transmitted in any<br />
+form or by any means without the written permission of the publisher.</p>
+<p>This book is provided “as-is” and expresses the author’s views and opinions. The views, opinions, and<br />
+information expressed in this book, including URL and other Internet website references, may change<br />
+without notice.</p>
+<p>Some examples depicted herein are provided for illustration only and are fictitious. No real association<br />
+or connection is intended or should be inferred.</p>
+<p><a href="https://www.microsoft.com/">Microsoft and the trademarks listed at https://www.microsoft.com</a> on the “Trademarks” webpage are<br />
+trademarks of the Microsoft group of companies.</p>
+<p>Mac and macOS are trademarks of Apple Inc.</p>
+<p>The Docker whale logo is a registered trademark of Docker, Inc. Used by permission.</p>
+<p>All other marks and logos are property of their respective owners.</p>
+<h2>Contents</h2>
+<p><strong>Overview of Containers and Docker ...................................................................................... 1</strong></p>
+<p>Learn Docker .............................................................................................................................................................................. 2</p>
+<p>Comparing Docker containers with virtual machines ........................................................................................... 3</p>
+<p>A simple analogy ................................................................................................................................................................. 4</p>
+<p>Learn Docker specific terminologies ................................................................................................................................ 4</p>
+<p>Learn docker containers, images, and registries ......................................................................................................... 6</p>
+<p>Road to modern applications based on containers ................................................................................................... 8</p>
+<p><strong>Introduction to the Docker application life cycle ................................................................ 9</strong></p>
+<p>Containers as the foundation for DevOps collaboration ......................................................................................... 9</p>
+<p>Challenges in the application life cycle when using Docker. .......................................................................... 10</p>
+<p>Introduction to a generic end-to-end Docker application life cycle workflow ....................................... 11</p>
+<p>Benefits of DevOps for containerized applications ............................................................................................ 12</p>
+<p><strong>Introduction to the Microsoft platform and tools for containerized apps ..................... 13</strong></p>
+<p><strong>Designing and developing containerized apps using Docker and Microsoft Azure ...... 17</strong></p>
+<p>Design Docker applications .............................................................................................................................................. 17</p>
+<p>Common container design principles ........................................................................................................................... 18</p>
+<p>Container equals a process .......................................................................................................................................... 18</p>
+<p>Monolithic applications ...................................................................................................................................................... 18</p>
+<p>Monolithic application deployed as a container ................................................................................................. 21</p>
+<p>Publish a single Docker container app to Azure App Service ........................................................................ 21</p>
+<p>State and data in Docker applications.......................................................................................................................... 22</p>
+<p>Service-oriented applications .......................................................................................................................................... 25</p>
+<p>Orchestrating microservices and multi-container applications for high scalability and availability.... 25</p>
+<p>Software platforms for container clustering, orchestration, and scheduling ........................................... 27</p>
+<p>Using container-based orchestrators in Azure ..................................................................................................... 28</p>
+<p>Using Azure Kubernetes Service ................................................................................................................................ 29</p>
+<p>Development environment for Kubernetes ........................................................................................................... 30</p>
+<p>Get started with Azure Kubernetes Service (AKS) ............................................................................................... 31</p>
+<p>i Contents</p>
+<p>Deploy with Helm charts into Kubernetes clusters ............................................................................................. 31</p>
+<p>Additional resources ....................................................................................................................................................... 32</p>
+<p>Using Azure Service Fabric ........................................................................................................................................... 32</p>
+<p>Stateless versus stateful microservices .................................................................................................................... 35</p>
+<p>Using Azure Service Fabric Mesh ............................................................................................................................... 36</p>
+<p>Choosing orchestrators in Azure ............................................................................................................................... 37</p>
+<p>Deploy to Azure Kubernetes Service (AKS) ................................................................................................................ 38</p>
+<p>Create the AKS environment in Azure ..................................................................................................................... 38</p>
+<p>Create the AKS cluster .................................................................................................................................................... 38</p>
+<p>Development environment for Docker apps ............................................................................................................. 40</p>
+<p>Development tools choices: IDE or editor .............................................................................................................. 40</p>
+<p>Language and framework choices ............................................................................................................................ 41</p>
+<p>Inner-loop development workflow for Docker apps .............................................................................................. 41</p>
+<p>Building a single app within a Docker container using Visual Studio Code and Docker CLI............. 42</p>
+<p>Use Docker Tools in Visual Studio on Windows ....................................................................................................... 52</p>
+<p>Configure your local environment ............................................................................................................................ 52</p>
+<p>Docker support in Visual Studio ................................................................................................................................ 52</p>
+<p>Configure Docker tools .................................................................................................................................................. 55</p>
+<p>Using Windows PowerShell commands in a DockerFile to set up Windows Containers (Docker<br />
+standard based) ..................................................................................................................................................................... 56</p>
+<p>Build ASP.NET Core applications deployed as Linux containers into an AKS/Kubernetes orchestrator<br />
+...................................................................................................................................................................................................... 57</p>
+<p>Creating the ASP.NET Core Project using Visual Studio 2022........................................................................ 57</p>
+<p>Register the Solution in an Azure Container Registry (ACR) .......................................................................... 66</p>
+<p><strong>Docker application DevOps workflow with Microsoft tools ............................................. 74</strong></p>
+<p>Steps in the outer-loop DevOps workflow for a Docker application ............................................................... 75</p>
+<p>Step 1: Inner-loop development workflow ............................................................................................................ 76</p>
+<p>Step 2: Source-Code Control integration and management with Azure DevOps Services and Git 76</p>
+<p>Step 3: Build, CI, Integrate, and Test with Azure DevOps Services/GitHub and Docker ...................... 76</p>
+<p>Step 4: CD, Deploy ........................................................................................................................................................... 83</p>
+<p>Step 5: Run and manage ............................................................................................................................................... 89</p>
+<p>Step 6: Monitor and diagnose .................................................................................................................................... 89</p>
+<p>ii Contents</p>
+<p>Create CI/CD pipelines in Azure DevOps Services for a .NET application on Containers and<br />
+deploying to a Kubernetes cluster ................................................................................................................................. 89</p>
+<p><strong>Run, manage, and monitor Docker production environments ........................................ 93</strong></p>
+<p>Run composed and microservices-based applications in production environments ............................... 93</p>
+<p>Introduction to orchestrators, schedulers, and container clusters ............................................................... 93</p>
+<p>Manage production Docker environments ................................................................................................................ 94</p>
+<p>Container Service and management tools ............................................................................................................. 94</p>
+<p>Azure Service Fabric ........................................................................................................................................................ 95</p>
+<p>Monitor containerized application services ............................................................................................................... 96</p>
+<p>Azure Monitor ................................................................................................................................................................... 96</p>
+<p>Security and backup services....................................................................................................................................... 96</p>
+<p><strong>Containerized Docker Application Lifecycle key takeaways ............................................. 98</strong></p>
+<p>iii Contents</p>
+<p><strong>CHAPTER</strong></p>
+<h1>1</h1>
+<h2>Overview of Containers and Docker</h2>
+<p><em>Containerization is an approach to software development in which an application or service, its</em><br />
+<em>dependencies, and its configuration (abstracted as deployment manifest files) are packaged together as</em><br />
+<em>a container image. You then can test the containerized application as a unit and deploy it as a container</em><br />
+<em>image instance to the host operating system (OS).</em></p>
+<p>Just as shipping containers allow goods to be transported by ship, train, or truck regardless of the<br />
+cargo inside, software containers act as a standard unit of software deployment that can contain<br />
+different code and dependencies. Containerizing software this way enables developers and IT<br />
+professionals to deploy them across environments with little or no modification.</p>
+<p>Containers also isolate applications from each other on a shared OS. Containerized applications run<br />
+on top of a container host that in turn runs on the OS (Linux or Windows). Containers therefore have a<br />
+much smaller footprint than virtual machine (VM) images.</p>
+<p>Each container can run a whole web application or a service, as shown in Figure 1-1. In this example,<br />
+Docker host is a container host, and App1, App2, Svc1, and Svc2 are containerized applications or<br />
+services.</p>
+<p><em>Figure 1-1. Multiple containers running on a container host</em></p>
+<p>Another benefit you can derive from containerization is scalability. You can scale out quickly by<br />
+creating new containers for short-term tasks. From an application point of view, instantiating an<br />
+image (creating a container) is similar to instantiating a process like a service or web app. For<br />
+reliability, however, when you run multiple instances of the same image across multiple host servers,<br />
+you typically want each container (image instance) to run in a different host server or VM in different<br />
+fault domains.</p>
+<p>In short, containers offer the benefits of isolation, portability, agility, scalability, and control across the<br />
+entire application lifecycle workflow. The most important benefit is the environment isolation<br />
+provided between Dev and Ops.</p>
+<p>1 CHAPTER 1 | Overview of Containers and Docker</p>
+<h3>Learn Docker</h3>
+<p><a href="https://www.docker.com/">Docker</a> <a href="https://github.com/docker/docker">is an open-source project for automating the deployment of applications as portable, self-</a><br />
+<a href="https://www.docker.com/">sufficient containers that can run on the cloud or on-premises. Docker is also a company that</a><br />
+promotes and evolves this technology, working in collaboration with cloud, Linux, and Windows<br />
+vendors, including Microsoft.</p>
+<p><em>Figure 1-2. Docker deploys containers at all layers of the hybrid cloud</em></p>
+<p>As shown in the above diagram, Docker containers can run anywhere, on-premises in the customer<br />
+datacenter, in an external service provider or in the cloud, on Azure. Docker image containers can also<br />
+run natively on Linux and Windows. However, Windows images can run only on Windows hosts and<br />
+Linux images can run on Linux hosts and Windows hosts (using a Hyper-V Linux VM, so far), where<br />
+host means a server or a VM.</p>
+<p>Developers can use development environments on Windows, Linux, or macOS. On the development<br />
+computer, the developer runs a Docker host where Docker images are deployed, including the app<br />
+and its dependencies. Developers who work on Linux or on the Mac, use a Docker host that’s Linuxbased, and they can only create images for Linux containers. (Developers working on the Mac can edit<br />
+code or run the Docker command-line interface (CLI) from macOS, but as of this writing, containers<br />
+don’t run directly on macOS.) Developers who work on Windows can create images for either Linux or<br />
+Windows Containers.</p>
+<p>To host containers in development environments and provide additional developer tools, Docker<br />
+<a href="https://hub.docker.com/editions/community/docker-ce-desktop-windows">ships Docker Desktop for Windows</a> <a href="https://hub.docker.com/editions/community/docker-ce-desktop-mac">or for macOS. These products install the necessary VM (the Docker</a><br />
+host) to host the containers.</p>
+<p><a href="https://docs.microsoft.com/virtualization/windowscontainers/about/">To run Windows Containers, there are two types of runtimes:</a></p>
+<ul>
+<li>
+<p><strong>Windows Server Containers</strong> provide application isolation through process and namespace<br />
+isolation technology. A Windows Server Container shares a kernel with the container host and<br />
+with all containers running on the host.</p>
+</li>
+<li>
+<p><strong>Hyper-V Containers</strong> expand on the isolation provided by Windows Server Containers by<br />
+running each container in a highly optimized virtual machine. In this configuration, the kernel<br />
+of the container host isn’t shared with the Hyper-V Containers, providing better isolation.</p>
+</li>
+</ul>
+<p>2 CHAPTER 1 | Overview of Containers and Docker</p>
+<p>The images for these containers are created and work just the same way. The difference is in how the<br />
+container is created from the image—running a Hyper-V Container requires an extra parameter. For<br />
+<a href="https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container">details, see Hyper-V Containers.</a></p>
+<h4><strong>Comparing Docker containers with virtual machines</strong></h4>
+<p>Figure 1-3 shows a comparison between VMs and Docker containers.</p>
+<p><em>Figure 1-3. Comparison of traditional virtual machines to Docker containers</em></p>
+<p>As shown in the above diagram, for VMs, there are three base layers in the host server. From the<br />
+bottom-up: Infrastructure, Host Operating System, and a Hypervisor. On top of all that, each VM has<br />
+its own OS and all necessary libraries. On the other hand, for Docker, the host server only has the<br />
+Infrastructure and the OS. On top of that, the container engine keeps containers isolated, but lets<br />
+them share the single base OS’s services.</p>
+<p>Because containers require far fewer resources (for example, they don’t need a full OS), they’re easy to<br />
+deploy and they start fast. This allows you to have higher density, meaning that it allows you to run<br />
+more services on the same hardware unit, thereby reducing costs.</p>
+<p>As a side effect of running on the same kernel, you get less isolation than VMs.</p>
+<p>The main goal of an image is to ensure the same environment (dependencies) across different<br />
+deployments. This means that you can debug it on your machine and then deploy it to another<br />
+machine, the same environment guaranteed.</p>
+<p>A container image is a way to package an app or service and deploy it in a reliable and reproducible<br />
+way. You could say that Docker isn’t only a technology but also a philosophy and a process.</p>
+<p>3 CHAPTER 1 | Overview of Containers and Docker</p>
+<p>When using Docker, you won’t hear developers say, “It works on my machine, why not in production?”<br />
+They can just say, “It runs on Docker”, because the packaged Docker application can be executed on<br />
+any supported Docker environment, and it runs the way it was intended to on all deployment targets<br />
+(such as Dev, QA, staging, and production).</p>
+<h4><strong>A simple analogy</strong></h4>
+<p>Perhaps a simple analogy can help getting the grasp of the core concept of Docker.</p>
+<p>Let’s go back in time to the 1950s for a moment. There were no word processors, and the<br />
+photocopiers were used everywhere (well, kind of).</p>
+<p>Imagine you’re responsible for quickly issuing batches of letters as required, to mail them to<br />
+customers, using real paper and envelopes, to be delivered physically to each customer’s address<br />
+(there was no email back then).</p>
+<p>At some point, you realize the letters are just a composition of a large set of paragraphs, which are<br />
+picked and arranged as needed, according to the purpose of the letter, so you devise a system to<br />
+issue letters quickly, expecting to get a hefty raise.</p>
+<p>The system is simple:</p>
+<ol>
+<li>
+<p>You begin with a deck of transparent sheets containing one paragraph each.</p>
+</li>
+<li>
+<p>To issue a set of letters, you pick the sheets with the paragraphs you need, then you stack and<br />
+align them so they look and read fine.</p>
+</li>
+<li>
+<p>Finally, you place the set in the photocopier and press start to produce as many letters as<br />
+required.</p>
+</li>
+</ol>
+<p>So, simplifying, that’s the core idea of Docker.</p>
+<p>In Docker, each layer is the resulting set of changes that happen to the filesystem after executing a<br />
+command, such as, installing a program.</p>
+<p>So, when you “look” at the filesystem after the layer has been copied, you see all the files, included the<br />
+layer when the program was installed.</p>
+<p>You can think of an image as an auxiliary read-only hard disk ready to be installed in a “computer”<br />
+where the operating system is already installed.</p>
+<p>Similarly, you can think of a container as the “computer” with the image hard disk installed. The<br />
+container, just like a computer, can be powered on or off.</p>
+<h3>Learn Docker specific terminologies</h3>
+<p>This section lists terms and definitions you should be familiar with before getting deeper into Docker.<br />
+<a href="https://docs.docker.com/glossary/">For further definitions, see the extensive glossary</a> provided by Docker.</p>
+<p><strong>Container image</strong> : A package with all the dependencies and information needed to create a container.<br />
+An image includes all the dependencies (such as frameworks) plus deployment and execution</p>
+<p>4 CHAPTER 1 | Overview of Containers and Docker</p>
+<p>configuration to be used by a container runtime. Usually, an image derives from multiple base images<br />
+that are layers stacked on top of each other to form the container’s filesystem. An image is immutable<br />
+once it has been created.</p>
+<p><strong>Dockerfile</strong> : A text file that contains instructions for building a Docker image. It’s like a batch script,<br />
+the first line states the base image to begin with and then follow the instructions to install required<br />
+programs, copy files, and so on, until you get the working environment you need.</p>
+<p><strong>Build</strong> : The action of building a container image based on the information and context provided by its<br />
+Dockerfile, plus additional files in the folder where the image is built. You can build images with the<br />
+following Docker command:</p>
+<pre><code>docker build
+
+</code></pre>
+<p><strong>Container</strong> : An instance of a Docker image. A container represents the execution of a single<br />
+application, process, or service. It consists of the contents of a Docker image, an execution<br />
+environment, and a standard set of instructions. When scaling a service, you create multiple instances<br />
+of a container from the same image. Or a batch job can create multiple containers from the same<br />
+image, passing different parameters to each instance.</p>
+<p><strong>Volumes</strong> : Offer a writable filesystem that the container can use. Since images are read-only but most<br />
+programs need to write to the filesystem, volumes add a writable layer, on top of the container image,<br />
+so the programs have access to a writable filesystem. The program doesn’t know it’s accessing a<br />
+layered filesystem, it’s just the filesystem as usual. Volumes live in the host system and are managed<br />
+by Docker.</p>
+<p><strong>Tag</strong> : A mark or label you can apply to images so that different images or versions of the same image<br />
+(depending on the version number or the target environment) can be identified.</p>
+<p><strong>Multi-stage Build</strong> : Is a feature, since Docker 17.05 or higher, that helps to reduce the size of the final<br />
+images. For example, a large base image, containing the SDK can be used for compiling and<br />
+publishing and then a small runtime-only base image can be used to host the application.</p>
+<p><strong>Repository (repo)</strong> : A collection of related Docker images, labeled with a tag that indicates the image<br />
+version. Some repos contain multiple variants of a specific image, such as an image containing SDKs<br />
+(heavier), an image containing only runtimes (lighter), etc. Those variants can be marked with tags. A<br />
+single repo can contain platform variants, such as a Linux image and a Windows image.</p>
+<p><strong>Registry</strong> : A service that provides access to repositories. The default registry for most public images is<br />
+<a href="https://hub.docker.com/">Docker Hub</a> (owned by Docker as an organization). A registry usually contains repositories from<br />
+multiple teams. Companies often have private registries to store and manage images they’ve created.<br />
+Azure Container Registry is another example.</p>
+<p><strong>Multi-arch image</strong> : For multi-architecture, it’s a feature that simplifies the selection of the appropriate<br />
+image, according to the platform where Docker is running. For example, when a Dockerfile requests a<br />
+base image <strong>FROM mcr.microsoft.com/dotnet/sdk:6.0</strong> from the registry, it actually gets <strong>6.0-</strong><br />
+<strong>nanoserver-20H2</strong>, <strong>6.0-nanoserver-1809</strong> or <strong>6.0-bullseye-slim</strong>, depending on the operating system<br />
+and version where Docker is running.</p>
+<p>5 CHAPTER 1 | Overview of Containers and Docker</p>
+<p><strong>Docker Hub</strong> : A public registry to upload images and work with them. Docker Hub provides Docker<br />
+image hosting, public or private registries, build triggers and web hooks, and integration with GitHub<br />
+and Bitbucket.</p>
+<p><strong>Azure Container Registry</strong> : A public resource for working with Docker images and its components in<br />
+Azure. This provides a registry that’s close to your deployments in Azure and that gives you control<br />
+over access, making it possible to use your Azure Active Directory groups and permissions.</p>
+<p><strong>Docker Trusted Registry (DTR)</strong> : A Docker registry service (from Docker) that can be installed onpremises so it lives within the organization’s datacenter and network. It’s convenient for private<br />
+images that should be managed within the enterprise. Docker Trusted Registry is included as part of<br />
+the Docker Datacenter product.</p>
+<p><strong>Docker Desktop</strong> : Development tools for Windows and macOS for building, running, and testing<br />
+containers locally. Docker Desktop for Windows provides development environments for both Linux<br />
+<a href="https://www.microsoft.com/cloud-platform/server-virtualization">and Windows Containers. The Linux Docker host on Windows is based on a Hyper-V virtual machine.</a><br />
+The host for Windows Containers is directly based on Windows. Docker Desktop for Mac is based on<br />
+<a href="https://github.com/mist64/xhyve">the Apple Hypervisor framework and the xhyve hypervisor, which provides a Linux Docker host virtual</a><br />
+machine on macOS. Docker Desktop for Windows and for Mac replaces Docker Toolbox, which was<br />
+based on Oracle VirtualBox.</p>
+<p><strong>Compose</strong> : A command-line tool and YAML file format with metadata for defining and running multicontainer applications. You define a single application based on multiple images with one or more<br />
+<em>.yml</em> files that can override values depending on the environment. After you’ve created the definitions,<br />
+you can deploy the whole multi-container application with a single command (docker-compose up)<br />
+that creates a container per image on the Docker host.</p>
+<p><strong>Cluster</strong> : A collection of Docker hosts exposed as if it were a single virtual Docker host, so that the<br />
+application can scale to multiple instances of the services spread across multiple hosts within the<br />
+cluster. Docker clusters can be created with Kubernetes, Azure Service Fabric, Docker Swarm and<br />
+Mesosphere DC/OS.</p>
+<p><strong>Orchestrator</strong> : A tool that simplifies the management of clusters and Docker hosts. Orchestrators<br />
+enable you to manage their images, containers, and hosts through a command-line interface (CLI) or a<br />
+graphical UI. You can manage container networking, configurations, load balancing, service discovery,<br />
+high availability, Docker host configuration, and more. An orchestrator is responsible for running,<br />
+distributing, scaling, and healing workloads across a collection of nodes. Typically, orchestrator<br />
+products are the same products that provide cluster infrastructure, like Kubernetes and Azure Service<br />
+Fabric, among other offerings in the market.</p>
+<h3>Learn docker containers, images, and registries</h3>
+<p>When using Docker, you create an app or service and package it and its dependencies into a<br />
+container image. An image is a static representation of the app or service and its configuration and<br />
+dependencies.</p>
+<p>To run the app or service, the app’s image is instantiated to create a container, which will be running<br />
+on the Docker host. Containers are initially tested in a development environment or PC.</p>
+<p>6 CHAPTER 1 | Overview of Containers and Docker</p>
+<p>You store images in a registry that acts as a library of images. You need a registry when deploying to<br />
+<a href="https://hub.docker.com/">production orchestrators. Docker maintains a public registry via Docker Hub; other vendors provide</a><br />
+<a href="https://azure.microsoft.com/services/container-registry/">registries for different collections of images, including Azure Container Registry. Alternatively,</a><br />
+enterprises can have a private registry on-premises for their own Docker images.</p>
+<p>Figure 1-4 shows how images and registries in Docker relate to other components. It also shows the<br />
+multiple registry offerings from vendors.</p>
+<p><em>Figure 1-4. Taxonomy of Docker terms and concepts</em></p>
+<p>The registry is like a bookshelf where images are stored and available to be pulled for building<br />
+containers to run services or web apps. There are private Docker registries on-premises and on the<br />
+public cloud. Docker Hub is a public registry maintained by Docker, along the Docker Trusted Registry<br />
+an enterprise-grade solution, Azure offers the Azure Container Registry. AWS, Google and others also<br />
+have container registries.</p>
+<p>By putting images in a registry, you can store static and immutable application bits, including all<br />
+of their dependencies, at a framework level. You then can version and deploy images in multiple<br />
+environments and thus provide a consistent deployment unit.</p>
+<p>7 CHAPTER 1 | Overview of Containers and Docker</p>
+<p>Private image registries, either hosted on-premises or in the cloud, are recommended when:</p>
+<ul>
+<li>
+<p>Your images must not be shared publicly due to confidentiality.</p>
+</li>
+<li>
+<p>You want to have minimum network latency between your images and your chosen<br />
+deployment environment. For example, if your production environment is Azure, you probably<br />
+<a href="https://azure.microsoft.com/services/container-registry/">want to store your images in Azure Container Registry</a> so that network latency is minimal. In a<br />
+similar way, if your production environment is on-premises, you might want to have an onpremises Docker Trusted Registry available within the same local network.</p>
+</li>
+</ul>
+<h3>Road to modern applications based on containers</h3>
+<p>You’re probably reading this book because you’re planning the development of new applications or<br />
+you’re assessing the impact of using Docker, Containers, and new approaches like Microservices in<br />
+your company.</p>
+<p>The adoption of new development paradigms must be taken with caution before starting a project, to<br />
+assess the impact on your dev teams, your budget, or your infrastructure.</p>
+<p>Microsoft has been working on rich guidance, sample applications, and a suite of e-books that can<br />
+help you make an informed decision and guide your team through a successful development,<br />
+deployment, and operations of your new applications.</p>
+<p>This book belongs to a Microsoft suite of guides that cover many of the needs and challenges you’ll<br />
+face during the process of developing new modern applications based on containers.</p>
+<p>You can find additional Microsoft e-books related to Docker containers in the list below:</p>
+<ul>
+<li>
+<p><strong>.NET Microservices: Architecture for Containerized .NET Applications</strong><br />
+<a href="https://docs.microsoft.com/en-us/dotnet/architecture/microservices/">https://learn.microsoft.com/dotnet/architecture/microservices/</a></p>
+</li>
+<li>
+<p><strong>Modernize existing .NET applications with Azure cloud and Windows Containers</strong><br />
+<a href="https://docs.microsoft.com/en-us/dotnet/architecture/modernize-with-azure-containers/">https://learn.microsoft.com/dotnet/architecture/modernize-with-azure-containers/</a></p>
+</li>
+</ul>
+<p>8 CHAPTER 1 | Overview of Containers and Docker</p>
+<p><strong>CHAPTER</strong></p>
+<h1>2</h1>
+<h2>Introduction to the Docker application life cycle</h2>
+<p><em>The life cycle of containerized applications is a journey that begins with the developer. The developer</em><br />
+<em>chooses to implement containers and Docker because it eliminates frictions in deployments and IT</em><br />
+<em>operations, which ultimately helps everyone to be more agile, more productive end-to-end, and faster.</em></p>
+<h3>Containers as the foundation for DevOps collaboration</h3>
+<p>By the very nature of the containers and Docker technology, developers can share their software and<br />
+dependencies easily with IT operations and production environments while eliminating the typical “it<br />
+works on my machine” excuse. Containers solve application conflicts between different environments.<br />
+Indirectly, containers and Docker bring developers and IT operations closer together, making it easier<br />
+for them to collaborate effectively. Adopting the container workflow provides many customers<br />
+with the DevOps continuity they’ve sought but previously had to implement via more complex<br />
+configuration for release and build pipelines. Containers simplify the build/test/deploy pipelines<br />
+in DevOps.</p>
+<p><em>Figure 2-1. Main workloads per “personas” in the life cycle for containerized Docker applications</em></p>
+<p>With Docker containers, developers own what’s within the container (application and service, and<br />
+dependencies to frameworks and components) and how the containers and services behave together<br />
+as an application composed by a collection of services. The interdependencies of the multiple<br />
+containers are defined in a docker-compose.yml file, or what could be called a <em>deployment manifest</em> .<br />
+Meanwhile, IT operations teams (IT professionals and management) can focus on the management</p>
+<p>9 CHAPTER 2 | Introduction to the Docker application life cycle</p>
+<p>of production environments; infrastructure; scalability; monitoring; and, ultimately, ensuring that the<br />
+applications are delivering properly for the end users, without having to know the contents of the<br />
+various containers. Hence, the name “container,” recalling the analogy to real-world shipping<br />
+containers. Thus, the owners of a container’s content need not concern themselves with how the<br />
+container will be shipped, and the shipping company transports a container from its point of origin<br />
+to its destination without knowing or caring about the contents. In a similar manner, developers can<br />
+create and own the contents within a Docker container without the need to concern themselves with<br />
+the “transport” mechanisms.</p>
+<p>In the pillar on the left side of Figure 2-1, developers write and run code locally in Docker containers<br />
+by using Docker for Windows or Mac. They define the operating environment for the code by using a<br />
+Dockerfile that specifies the base operating system to run as well as the build steps for building their<br />
+code into a Docker image. The developers define how one or more images will interoperate using the<br />
+aforementioned docker-compose.yml file deployment manifest. As they complete their local<br />
+development, they push their application code plus the Docker configuration files to the code<br />
+repository of their choice (that is, Git repository).</p>
+<p>The DevOps pillar defines the build–Continuous Integration (CI) pipelines using the Dockerfile<br />
+provided in the code repository. The CI system pulls the base container images from the selected<br />
+Docker registry and builds the custom Docker images for the application. The images then are<br />
+validated and pushed to the Docker registry used for the deployments to multiple environments.</p>
+<p>In the pillar on the right, operations teams manage deployed applications and infrastructure in<br />
+production while monitoring the environment and applications so that they can provide feedback and<br />
+insights to the development team about how the application might be improved. Container apps are<br />
+<a href="https://kubernetes.io/">typically run in production using container orchestrators like Kubernetes, where usually Helm charts</a><br />
+are used to configure deployment units, instead of docker-compose files.</p>
+<p>The two teams are collaborating through a foundational platform (Docker containers) that provides<br />
+a separation of concerns as a contract, while greatly improving the two teams’ collaboration in the<br />
+application life cycle. The developers own the container contents, its operating environment, and the<br />
+container interdependencies, whereas the operations teams take the built images along with the<br />
+manifest and runs them in their orchestration system.</p>
+<h4><strong>Challenges in the application life cycle when using Docker.</strong></h4>
+<p>There are many reasons that will increase the number of containerized applications in the upcoming<br />
+years, and one of these reasons is the creation of applications based on microservices.</p>
+<p>During the last 15 years, the use of web services has been the base of thousands of applications, and<br />
+probably, after a few years, you’ll find the same situation with microservice-based applications<br />
+running on Docker containers.</p>
+<p>It is also worth to mention that you can also use Docker containers for monolithic applications and<br />
+you still get most of the benefits of Docker. Containers are not targeting only microservices.</p>
+<p>The use of Docker containerization and microservices causes new challenges in the development<br />
+process of your organizations and therefore, you need a solid strategy to maintain many containers</p>
+<p>10 CHAPTER 2 | Introduction to the Docker application life cycle</p>
+<p>and microservices running on production systems. Eventually, enterprise applications will have<br />
+hundreds or thousands of containers/instances running in production.</p>
+<p>These challenges create new demands when using DevOps tools, so you’ll have to define new<br />
+processes in your DevOps activities, and find answers for the following type of questions:</p>
+<ul>
+<li>
+<p>Which tools can I use for development, CI/CD, management and operations??</p>
+</li>
+<li>
+<p>How can my company manage errors in containers when running in production?</p>
+</li>
+<li>
+<p>How can we change pieces of our software in production with minimum downtime?</p>
+</li>
+<li>
+<p>How can we scale and monitor our production system?</p>
+</li>
+<li>
+<p>How can we include the testing and deployment of containers in our release pipeline?</p>
+</li>
+<li>
+<p>How can we use Open Source tools/platforms for containers in Microsoft Azure?</p>
+</li>
+</ul>
+<p>If you can answer all those questions, you’ll be better prepared to move your applications (existing or<br />
+new apps) to Docker containers.</p>
+<h4><strong>Introduction to a generic end-to-end Docker application life cycle</strong> <strong>workflow</strong></h4>
+<p>Figure 2-2 presents a more detailed workflow for a Docker application life cycle, focusing in this<br />
+instance on specific DevOps activities and assets.</p>
+<p><em>Figure 2-2. High-level workflow for the Docker containerized application life cycle</em></p>
+<p>Everything begins with the developer, who starts writing code in the inner-loop workflow. The innerloop stage is where developers define everything that happens before pushing code into the code<br />
+repository (for example, a source control system such as Git). After it’s committed, the repository<br />
+triggers Continuous Integration (CI) and the rest of the workflow.</p>
+<p>11 CHAPTER 2 | Introduction to the Docker application life cycle</p>
+<p>The inner loop consists of typical steps like “code,” “run,” “test,” and “debug,” plus the additional steps<br />
+needed right before running the app locally. This is the developer’s process to run and test the app as<br />
+a Docker container. The inner-loop workflow will be explained in the sections that follow.</p>
+<p>Taking a step back to look at the end-to-end workflow, the DevOps workflow is more than a<br />
+technology or a tool set, it’s a mindset that requires cultural evolution. It’s people, processes, and the<br />
+appropriate tools to make your application life cycle faster and more predictable. Enterprises that<br />
+adopt a containerized workflow typically restructure their organizations to represent people and<br />
+processes that match the containerized workflow.</p>
+<p>Practicing DevOps can help teams respond faster together to competitive pressures by replacing<br />
+error-prone manual processes with automation, which results in improved traceability and repeatable<br />
+workflows. Organizations also can manage environments more efficiently and realize cost savings with<br />
+a combination of on-premises and cloud resources as well as tightly integrated tooling.</p>
+<p>When implementing your DevOps workflow for Docker applications, you’ll see that Docker<br />
+technologies are present in almost every stage of the workflow, from your development box while<br />
+working in the inner loop (code, run, debug), the build-test-CI phase, and, finally, the deployment of<br />
+those containers to the staging and production environments.</p>
+<p>Improvement of quality practices helps to identify defects early in the development cycle, which<br />
+reduces the cost of fixing them. By including the environment and dependencies in the image and<br />
+adopting a philosophy of deploying the same image across multiple environments, you promote a<br />
+discipline of extracting the environment-specific configurations making deployments more reliable.</p>
+<p>Rich data obtained through effective instrumentation (monitoring and diagnostics) provides insight<br />
+into performance issues and user behavior to guide future priorities and investments.</p>
+<p>DevOps should be considered a journey, not a destination. It should be implemented incrementally<br />
+through appropriately scoped projects from which you can demonstrate success, learn, and evolve.</p>
+<h4><strong>Benefits of DevOps for containerized applications</strong></h4>
+<p>Here are some of the most important benefits provided by a solid DevOps workflow:</p>
+<ul>
+<li>
+<p>Deliver better-quality software, faster and with better compliance.</p>
+</li>
+<li>
+<p>Drive continuous improvement and adjustments earlier and more economically.</p>
+</li>
+<li>
+<p>Increase transparency and collaboration among stakeholders involved in delivering and<br />
+operating software.</p>
+</li>
+<li>
+<p>Control costs and utilize provisioned resources more effectively while minimizing security<br />
+risks.</p>
+</li>
+<li>
+<p>Plug and play well with many of your existing DevOps investments, including investments in<br />
+open-source.</p>
+</li>
+</ul>
+<p>12 CHAPTER 2 | Introduction to the Docker application life cycle</p>
+<p><strong>CHAPTER</strong></p>
+<h1>3</h1>
+<h2>Introduction to the Microsoft platform and tools for containerized apps</h2>
+<p><em>Vision: Create an adaptable, enterprise-grade, containerized application life cycle that spans your</em><br />
+<em>development, IT operations, and production management.</em></p>
+<p>Figure 3-1 shows the main pillars in the life cycle of Docker apps classified by the type of work<br />
+delivered by multiple teams (app-development, DevOps infrastructure processes, and IT management<br />
+and operations). Usually, in the enterprise, the profiles of “the persona” responsible for each area are<br />
+different. So are their skills.</p>
+<p>13 CHAPTER 3 | Introduction to the Microsoft platform and tools for containerized apps</p>
+<p><em>Figure 3-1. Main pillars in the life cycle for containerized Docker applications with Microsoft platform and tools</em></p>
+<p>A containerized Docker life-cycle workflow can be initially prescriptive based on “by-default product<br />
+choices,” making it easier for developers to get started faster, but it’s fundamental that under the<br />
+hood there must be an open framework so that it will be a flexible workflow capable of adjusting to<br />
+the different contexts from each organization or enterprise. The workflow infrastructure (components<br />
+and products) must be flexible enough to cover the environment that each company will have in the<br />
+future, even being capable of swapping development or DevOps products to others. This flexibility,<br />
+openness, and the broad choice of technologies in the platform and infrastructure are precisely the<br />
+Microsoft priorities for containerized Docker applications, as explained in the chapters that follow.</p>
+<p>Table 3-1 demonstrates that the intention of the Azure DevOps for containerized Docker applications<br />
+is to provide an open DevOps workflow so that you can choose what products to use for each phase<br />
+(Microsoft or third-party) while providing a simplified workflow that provides “by-default-products”<br />
+already connected; thus, you can quickly get started with your enterprise-level DevOps workflow for<br />
+Docker apps.</p>
+<p><strong>Table 3-1.</strong> DevOps workflows, open to any technology</p>
+<table>
+<thead>
+<tr>
+<th>Host</th>
+<th>Microsoft technologies</th>
+<th>Third-party (Azure pluggable)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Platform for<br>Docker apps</td>
+<td>• Microsoft Visual Studio and<br>Visual Studio Code<br>• .NET<br>• Microsoft Azure Kubernetes<br>Service (AKS)<br>• Azure Container Registry|• Any code editor (for example, Sublime)<br>• Any language (Node.js, Java, Go, etc.)<br>• Any orchestrator and scheduler<br>• Any Docker registry|</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>14 CHAPTER 3 | Introduction to the Microsoft platform and tools for containerized apps</p>
+<table>
+<thead>
+<tr>
+<th>Host</th>
+<th>Microsoft technologies</th>
+<th>Third-party (Azure pluggable)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DevOps for<br>Docker apps</td>
+<td>• Azure DevOps Services<br>• Microsoft Team Foundation<br>Server<br>• GitHub<br>• Azure Kubernetes Service<br>(AKS)|• GitHub, Git, Subversion, etc.<br>• Jenkins, Chef, Puppet, Velocity, CircleCI,<br>TravisCI, etc.<br>• On-premises Docker Datacenter, Kubernetes,<br>Mesos DC/OS, etc.|</td>
+<td></td>
+</tr>
+<tr>
+<td>Management<br>and<br>monitoring</td>
+<td>• Azure Monitor</td>
+<td>• Marathon, Chronos, etc.|</td>
+</tr>
+</tbody>
+</table>
+<p>The Microsoft platform and tools for containerized Docker apps, as defined in Table 3-1, comprise the<br />
+following components:</p>
+<ul>
+<li>
+<p><strong>Platform for Docker Apps development</strong> The development of a service, or collection of<br />
+services that make up an “app.” The development platform provides all the work developers<br />
+requires prior to pushing their code to a shared code repository. Developing services,<br />
+deployed as containers, are similar to the development of the same apps or services without<br />
+Docker. You continue to use your preferred language (.NET, Node.js, Go, etc.) and preferred<br />
+editor or IDE like Visual Studio or Visual Studio Code. However, rather than consider Docker a<br />
+deployment destination, you develop your services in the Docker environment. You build, run,<br />
+test, and debug your code in containers locally, providing the destination environment at<br />
+development time. By providing the destination environment locally, Docker containers set up<br />
+what will drastically help you improve your DevOps life cycle. Visual Studio and Visual Studio<br />
+Code have extensions to integrate Docker containers within your development process.</p>
+</li>
+<li>
+<p><strong>DevOps for Docker Apps</strong> <a href="https://azure.microsoft.com/services/devops/">Developers creating Docker applications can use Azure DevOps,</a><br />
+GitHub or any other third-party product, like Jenkins, to build out a comprehensive<br />
+automated application life-cycle management (ALM).</p>
+</li>
+</ul>
+<p>With Azure DevOps and/or GitHub, developers can create container-focused DevOps for a<br />
+fast, iterative process that covers source-code control from anywhere (Azure DevOps-Git,<br />
+GitHub, any remote Git repository, or Subversion), Continuous Integration (CI), internal unit<br />
+tests, inter-container/service integration tests, Continuous Delivery (CD), and release<br />
+management (RM). Developers also can automate their Docker application releases into Azure<br />
+Kubernetes Service (AKS), from development to staging and production environments.</p>
+<ul>
+<li>
+<p><strong>Management and Monitoring</strong> IT can manage and monitor production applications and<br />
+services in several ways, integrating both perspectives in a consolidated experience.</p>
+<ul>
+<li>
+<p><strong>Azure portal</strong> Azure Kubernetes Service (AKS) helps you to set up and maintain your<br />
+Docker environments. You can also use other orchestrators to visualize and configure<br />
+your cluster.</p>
+</li>
+<li>
+<p><strong>Docker tools</strong> You can manage your container applications using familiar tools.<br />
+There’s no need to change your existing Docker management practices to move<br />
+container workloads to the cloud. Use the application management tools you’re</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>15 CHAPTER 3 | Introduction to the Microsoft platform and tools for containerized apps</p>
+<p>already familiar with and connect via the standard API endpoints for the orchestrator<br />
+of your choice. You also can use other third-party tools to manage your Docker<br />
+applications or even CLI Docker tools.</p>
+<p>Even if you’re familiar with Linux commands, you can manage your container<br />
+applications using Microsoft Windows and PowerShell with a Linux Subsystem<br />
+command line and the products (Docker, Kubernetes…) clients running on this Linux<br />
+Subsystem capability. You’ll learn more about using these tools under Linux<br />
+Subsystem using your favorite Microsoft Windows OS later in this book.</p>
+<pre><code> - **Open-source tools** Because AKS exposes the standard API endpoints for the
+</code></pre>
+<p>orchestration engine, the most popular tools are compatible with AKS and, in most<br />
+cases, will work out of the box—including visualizers, monitoring, command-line<br />
+tools, and even future tools as they become available.</p>
+<pre><code> - **GitHub Advanced Security** [GitHub Advanced Security](https://docs.github.com/github/getting-started-with-github/about-github-advanced-security) offers a suite of tools for
+</code></pre>
+<p>securing the software supply chain that can seamlessly integrate security into the<br />
+daily workflow of teams developing containerized applications.</p>
+<pre><code> - **Azure Monitor** Is Azure’s solution to monitor every angle of your production
+</code></pre>
+<p>environment. You can monitor production Docker applications by just setting up its<br />
+SDK into your services so that you can get system-generated log data from the<br />
+applications.</p>
+<p>Thus, Microsoft offers a complete foundation for an end-to-end containerized Docker application life<br />
+cycle. However, it’s <em>a collection of products and technologies that allow you to optionally select and</em><br />
+<em>integrate with existing tools and processes</em> . The flexibility in a broad approach along with the strength<br />
+in the depth of capabilities place Microsoft in a strong position for containerized Docker application<br />
+development.</p>
+<p>16 CHAPTER 3 | Introduction to the Microsoft platform and tools for containerized apps</p>
+<p><strong>CHAPTER</strong></p>
+<h1>4</h1>
+<h2>Designing and developing containerized apps using Docker and Microsoft Azure</h2>
+<p><em>Vision: Design and develop scalable solutions with Docker in mind.</em></p>
+<p><em>There are many great-fit use cases for containers, not just for microservices-oriented architectures, but</em><br />
+<em>also when you simply have regular services or web applications to run and you want to reduce frictions</em><br />
+<em>between development and production environment deployments.</em></p>
+<h3>Design Docker applications</h3>
+<p>Chapter 1 introduced the fundamental concepts regarding containers and Docker. That information is<br />
+the basic level of information you need to get started. But, enterprise applications can be complex and<br />
+composed of multiple services instead of a single service or container. For those optional use cases,<br />
+you need to know additional approaches to design, such as Service-Oriented Architecture (SOA) and<br />
+the more advanced microservices concepts and container orchestration concepts. The scope of this<br />
+document is not limited to microservices but to any Docker application life cycle, therefore, it does<br />
+not explore microservices architecture in depth because you can also use containers and Docker with<br />
+regular SOA, background tasks or jobs, or even with monolithic application deployment approaches.</p>
+<p><strong>More info</strong> To learn more about enterprise applications and microservices architecture in depth, read<br />
+<a href="https://docs.microsoft.com/en-us/dotnet/architecture/microservices/">the guide NET Microservices: Architecture for Containerized .NET Applications</a> that you can also<br />
+<a href="https://aka.ms/MicroservicesEbook">download from https://aka.ms/MicroservicesEbook.</a></p>
+<p>However, before you get into the application life cycle and DevOps, it’s important to know how you’re<br />
+going to design and construct your application and what are your design choices.</p>
+<p>17 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<h3>Common container design principles</h3>
+<p>Ahead of getting into the development process there are a few basic concepts worth mentioning with<br />
+regard to how you use containers.</p>
+<h4><strong>Container equals a process</strong></h4>
+<p>In the container model, a container represents a single process. By defining a container as a process<br />
+boundary, you begin to create the primitives used to scale, or batch-off, processes. When you run a<br />
+<a href="https://docs.docker.com/engine/reference/builder/#entrypoint">Docker container, you’ll see an ENTRYPOINT</a> definition. This defines the process and the lifetime of<br />
+the container. When the process completes, the container life-cycle ends. There are long-running<br />
+processes, such as web servers, and short-lived processes, such as batch jobs, which might have<br />
+<a href="https://github.com/Azure/azure-webjobs-sdk/wiki">been implemented as Microsoft Azure WebJobs. If the process fails, the container ends, and the</a><br />
+orchestrator takes over. If the orchestrator was instructed to keep five instances running and one fails,<br />
+the orchestrator will create another container to replace the failed process. In a batch job, the process<br />
+is started with parameters. When the process completes, the work is complete.</p>
+<p>You might find a scenario in which you want multiple processes running in a single container. In any<br />
+architecture document, there’s never a “never,” nor is there always an “always.” For scenarios requiring<br />
+<a href="http://supervisord.org/">multiple processes, a common pattern is to use Supervisor.</a></p>
+<h3>Monolithic applications</h3>
+<p>In this scenario, you’re building a single and monolithic web application or service and deploying it as<br />
+a container. Within the application, the structure might not be monolithic; it might comprise several<br />
+libraries, components, or even layers (application layer, domain layer, data access layer, etc.).<br />
+Externally, it’s a single container, like a single process, single web application, or single service.</p>
+<p>To manage this model, you deploy a single container to represent the application. To scale it, just add<br />
+a few more copies with a load balancer in front. The simplicity comes from managing a single<br />
+deployment in a single container or virtual machine (VM).</p>
+<p>Following the principal that a container does one thing only, and does it in one process, the<br />
+monolithic pattern is in conflict. You can include multiple components/libraries or internal layers<br />
+within each container, as illustrated in Figure 4-1.</p>
+<p>18 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-1. An example of monolithic application architecture</em></p>
+<p>A monolithic app has all or most of its functionality within a single process or container and it’s<br />
+componentized in internal layers or libraries. The downside to this approach comes if or when the<br />
+application grows, requiring it to scale. If the entire application scaled, it’s not really a problem.<br />
+However, in most cases, a few parts of the application are the choke points that require scaling,<br />
+whereas other components are used less.</p>
+<p>Using the typical e-commerce example, what you likely need is to scale the product information<br />
+component. Many more customers browse products than purchase them. More customers use their<br />
+basket than use the payment pipeline. Fewer customers add comments or view their purchase history.<br />
+And you likely have only a handful of employees, in a single region, that need to manage the content<br />
+and marketing campaigns. By scaling the monolithic design, all of the code is deployed multiple times.</p>
+<p>In addition to the “scale-everything” problem, changes to a single component require complete<br />
+retesting of the entire application as well as a complete redeployment of all the instances.</p>
+<p>The monolithic approach is common, and many organizations are developing with this architectural<br />
+method. Many enjoy good enough results, whereas others encounter limits. Many designed their<br />
+applications in this model because the tools and infrastructure were too difficult to build SOAs, and<br />
+they didn’t see the need—until the app grew.</p>
+<p>From an infrastructure perspective, each server can run many applications within the same host and<br />
+have an acceptable ratio of efficiency in your resources usage, as shown in Figure 4-2.</p>
+<p>19 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-2. A host running multiple apps/containers</em></p>
+<p>Finally, from an availability perspective, monolithic applications must be deployed as a whole; that<br />
+means that in case you must <em>stop and start</em>, all functionality and all users will be affected during the<br />
+deployment window. In certain situations, the use of Azure and containers can minimize these<br />
+situations and reduce the probability of downtime of your application, as you can see in Figure 4-3.</p>
+<p>You can deploy monolithic applications in Azure by using dedicated VMs for each instance. Using<br />
+<a href="https://docs.microsoft.com/azure/virtual-machine-scale-sets/">Azure VM Scale Sets, you can scale the VMs easily.</a></p>
+<p><a href="https://azure.microsoft.com/services/app-service/">You can also use Azure App Services to run monolithic applications and easily scale instances without</a><br />
+having to manage the VMs. Azure App Services can run single instances of Docker containers, as well,<br />
+simplifying the deployment.</p>
+<p>You can deploy multiple VMs as Docker hosts and run any number of containers per VM. Then, by<br />
+using an Azure Load Balancer, as illustrated in the Figure 4-3, you can manage scaling.</p>
+<p><em>Figure 4-3. Multiple hosts scaling out a single Docker application</em></p>
+<p>You can manage the deployment of the hosts themselves via traditional deployment techniques.</p>
+<p>You can manage Docker containers from the command line by using commands like docker run and<br />
+docker-compose up, and you can also automate it in Continuous Delivery (CD) pipelines and deploy<br />
+to Docker hosts from Azure DevOps Services, for instance.</p>
+<p>20 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<h4><strong>Monolithic application deployed as a container</strong></h4>
+<p>There are benefits to using containers to manage monolithic deployments. Scaling the instances of<br />
+containers is far faster and easier than deploying additional VMs.</p>
+<p>Deploying updates as Docker images is far faster and network efficient. Docker containers typically<br />
+start in seconds, speeding rollouts. Tearing down a Docker container is as easy as invoking the docker<br />
+stop command, typically completing in less than a second.</p>
+<p>Because containers are inherently immutable, by design, you never need to worry about corrupted<br />
+VMs because an update script forgot to account for some specific configuration or file left on disk.</p>
+<p>Although monolithic apps can benefit from Docker, we’re touching on only the tips of the benefits.<br />
+The larger benefits of managing containers come from deploying with container orchestrators that<br />
+manage the various instances and life cycle of each container instance. Breaking up the monolithic<br />
+application into subsystems that can be scaled, developed, and deployed individually is your entry<br />
+point into the realm of microservices.</p>
+<p>To learn about how to “lift and shift” monolithic applications with containers and how you can<br />
+<a href="https://docs.microsoft.com/en-us/dotnet/architecture/modernize-with-azure-containers/">modernize your applications, you can read this additional Microsoft guide, Modernize existing .NET</a><br />
+<a href="https://docs.microsoft.com/en-us/dotnet/architecture/modernize-with-azure-containers/">applications with Azure cloud and Windows Containers, which you can also download as PDF from</a><br />
+<a href="https://aka.ms/LiftAndShiftWithContainersEbook">https://aka.ms/LiftAndShiftWithContainersEbook.</a></p>
+<h4><strong>Publish a single Docker container app to Azure App Service</strong></h4>
+<p>Either because you want to get a quick validation of a container deployed to Azure or because the<br />
+app is simply a single-container app, Azure App Services provides a great way to provide scalable<br />
+single-container services.</p>
+<p>Using Azure App Service is intuitive and you can get up and running quickly because it provides great<br />
+Git integration to take your code, build it in Microsoft Visual Studio, and directly deploy it to Azure.<br />
+But, traditionally (with no Docker), if you needed other capabilities, frameworks, or dependencies that<br />
+aren’t supported in App Services, you needed to wait for it until the Azure team updates those<br />
+dependencies in App Service or switched to other services like Service Fabric, Cloud Services, or even<br />
+plain VMs, for which you have further control and can install a required component or framework for<br />
+your application.</p>
+<p>Now, as shown in Figure 4-4, when using Visual Studio 2022, container support in Azure App Service<br />
+gives you the ability to include whatever you want in your app environment. If you added a<br />
+dependency to your app, because you’re running it in a container, you get the capability of including<br />
+those dependencies in your Dockerfile or Docker image.</p>
+<p>21 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-4. Publishing a container to Azure App Service from Visual Studio apps/containers</em></p>
+<p>Figure 4-4 also shows that the publish flow pushes an image through a Container Registry, which can<br />
+be the Azure Container Registry (a registry near to your deployments in Azure and secured by Azure<br />
+Active Directory groups and accounts) or any other Docker Registry like Docker Hub or on-premises<br />
+registries.</p>
+<h3>State and data in Docker applications</h3>
+<p>In most cases, you can think of a container as an instance of a process. A process does not maintain<br />
+persistent state. While a container can write to its local storage, assuming that an instance will be<br />
+around indefinitely is like assuming that a single location in memory will be durable. Container<br />
+images, like processes, should be assumed to have multiple instances and that they will eventually be<br />
+killed; if they’re managed with a container orchestrator, it should be assumed that they might get<br />
+moved from one node or VM to another.</p>
+<p>The following solutions are used to manage persistent data in Docker applications:</p>
+<p><a href="https://docs.docker.com/engine/admin/volumes/">From the Docker host, as Docker Volumes:</a></p>
+<ul>
+<li>
+<p><strong>Volumes</strong> are stored in an area of the host filesystem that’s managed by Docker.</p>
+</li>
+<li>
+<p><strong>Bind mounts</strong> can map to any folder in the host filesystem, so access can’t be controlled from<br />
+a Docker process and can pose a security risk as a container could access sensitive OS folders.</p>
+</li>
+</ul>
+<p>22 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<ul>
+<li><strong>tmpfs mounts</strong> are like virtual folders that only exist in the host’s memory and are never<br />
+written to the filesystem.</li>
+</ul>
+<p>From remote storage:</p>
+<ul>
+<li>
+<p><a href="https://azure.microsoft.com/documentation/services/storage/">Azure Storage</a> provides geo-distributable storage, providing a good long-term persistence<br />
+solution for containers.</p>
+</li>
+<li>
+<p><a href="https://azure.microsoft.com/services/sql-database/">Remote relational databases like Azure SQL Database, NoSQL databases like Azure Cosmos</a><br />
+<a href="https://redis.io/">DB, or cache services like Redis.</a></p>
+</li>
+</ul>
+<p>From the Docker container:</p>
+<ul>
+<li>
+<p>Docker provides a feature named the <em>overlay file system</em> . This feature implements a copy-onwrite task that stores updated information to the root file system of the container. That<br />
+information “lays on top of” the original image on which the container is based. If the<br />
+container is deleted from the system, those changes are lost. Therefore, while it’s possible to<br />
+save the state of a container within its local storage, designing a system based on this feature<br />
+would conflict with the premise of container design, which by default is stateless.</p>
+</li>
+<li>
+<p>However, Docker Volumes is now the preferred way to handle local data in Docker. If you<br />
+<a href="https://docs.docker.com/engine/userguide/storagedriver/">need more information about storage in containers, check on Docker storage drivers and</a><br />
+<a href="https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/">About images, containers, and storage drivers.</a></p>
+</li>
+</ul>
+<p>The following provides additional detail about these options.</p>
+<p><strong>Volumes</strong> are directories mapped from the host OS to directories in containers. When code in the<br />
+container has access to the directory, that access is actually to a directory on the host OS. This<br />
+directory is not tied to the lifetime of the container itself, and the directory is managed by Docker and<br />
+isolated from the core functionality of the host machine. Thus, data volumes are designed to persist<br />
+data independently of the life of the container. If you delete a container or an image from the Docker<br />
+host, the data persisted in the data volume is not deleted.</p>
+<p>Volumes can be named or anonymous (the default). Named volumes are the evolution of <strong>Data</strong><br />
+<strong>Volume Containers</strong> and make it easy to share data between containers. Volumes also support<br />
+volume drivers that allow you to store data on remote hosts, among other options.</p>
+<p><strong>Bind mounts</strong> have been available for a long time and allow the mapping of any folder to a mount<br />
+point in a container. Bind mounts have more limitations than volumes and some important security<br />
+issues, so volumes are the recommended option.</p>
+<p><strong>tmpfs mounts</strong> are virtual folders that live only in the host’s memory and are never written to the<br />
+filesystem. They are fast and secure but use memory and are only meant for non-persistent data.</p>
+<p>As shown in Figure 4-5, regular Docker volumes can be stored outside of the containers themselves<br />
+but within the physical boundaries of the host server or VM. However, Docker containers cannot<br />
+access a volume from one host server or VM to another. In other words, with these volumes, it isn’t<br />
+possible to manage data shared between containers that run on different Docker hosts, although it<br />
+could be achieved with a volume driver that supports remote hosts.</p>
+<p>23 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-5. Volumes and external data sources for container-based applications</em></p>
+<p>In addition, when Docker containers are managed by an orchestrator, containers might “move”<br />
+between hosts, depending on the optimizations performed by the cluster. Therefore, it isn’t<br />
+recommended that you use data volumes for business data. But they are a good mechanism to work<br />
+with trace files, temporal files, or similar, that will not impact business data consistency.</p>
+<p><strong>Remote data sources and cache</strong> tools like Azure SQL Database, Azure Cosmos DB, or a remote cache<br />
+like Redis can be used in containerized applications the same way they are used when developing<br />
+without containers. This is a proven way to store business application data.</p>
+<p><strong>Azure Storage.</strong> Business data usually needs to be placed in external resources or databases, like<br />
+Azure Storage. Azure Storage provides the following services in the cloud:</p>
+<ul>
+<li>
+<p>Blob storage stores unstructured object data. A blob can be any type of text or binary data,<br />
+such as document or media files (images, audio, and video files). Blob storage is also referred<br />
+to as Object storage.</p>
+</li>
+<li>
+<p>File storage offers shared storage for legacy applications using the standard SMB protocol.<br />
+Azure virtual machines and cloud services can share file data across application components<br />
+via mounted shares. On-premises applications can access file data in a share via the File<br />
+Service REST API.</p>
+</li>
+<li>
+<p>Table storage stores structured datasets. Table storage is a NoSQL key-attribute data store,<br />
+which allows rapid development and fast access to large quantities of data.</p>
+</li>
+</ul>
+<p><strong>Relational databases and NoSQL databases.</strong> There are many choices for external databases, from<br />
+relational databases like SQL Server, PostgreSQL, Oracle, or NoSQL databases like Azure Cosmos DB,<br />
+MongoDB, etc. These databases are not going to be explained as part of this guide since they are a<br />
+different topic altogether.</p>
+<p>24 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<h3>Service-oriented applications</h3>
+<p>Service-Oriented Architecture (SOA) was an overused term that meant many different things to<br />
+different people. But as a common denominator, SOA means that you structure the architecture of<br />
+your application by decomposing it into several services (most commonly as HTTP services) that can<br />
+be classified in different types like subsystems or, in other cases, as tiers.</p>
+<p>Today, you can deploy those services as Docker containers, which solve deployment-related issues<br />
+because all of the dependencies are included in the container image. However, when you need to<br />
+scale out SOAs, you might encounter challenges if you’re deploying based on single instances. This<br />
+challenge can be handled using Docker clustering software or an orchestrator. You’ll get to look at<br />
+orchestrators in greater detail in the next section, when you explore microservices approaches.</p>
+<p>Docker containers are useful (but not required) for both traditional service-oriented architectures and<br />
+the more advanced microservices architectures.</p>
+<p>At the end of the day, the container clustering solutions are useful for both a traditional SOA<br />
+architecture and for a more advanced microservices architecture in which each microservice owns its<br />
+data model. And thanks to multiple databases, you can also scale out the data tier instead of working<br />
+with monolithic databases shared by the SOA services. However, the discussion about splitting the<br />
+data is purely about architecture and design.</p>
+<h3>Orchestrating microservices and multi-container applications for high scalability and availability</h3>
+<p>Using orchestrators for production-ready applications is essential if your application is based on<br />
+microservices or split across multiple containers. As introduced previously, in a microservice-based<br />
+approach, each microservice owns its model and data so that it will be autonomous from a<br />
+development and deployment point of view. But even if you have a more traditional application that’s<br />
+composed of multiple services (like SOA), you’ll also have multiple containers or services comprising a<br />
+single business application that need to be deployed as a distributed system. These kinds of systems<br />
+are complex to scale out and manage; therefore, you absolutely need an orchestrator if you want to<br />
+have a production-ready and scalable multi-container application.</p>
+<p>Figure 4-6 illustrates deployment into a cluster of an application composed of multiple microservices<br />
+(containers).</p>
+<p>25 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-6. A cluster of containers</em></p>
+<p>It looks like a logical approach. But how are you handling load balancing, routing, and orchestrating<br />
+these composed applications?</p>
+<p>The Docker CLI meets the needs of managing one container on one host, but it falls short when it<br />
+comes to managing multiple containers deployed on multiple hosts for more complex distributed<br />
+applications. In most cases, you need a management platform that will automatically start containers,<br />
+scale out containers with multiple instances per image, suspend them, or shut them down when<br />
+needed, and ideally also control how they access resources like the network and data storage.</p>
+<p>To go beyond the management of individual containers or simple composed apps and move toward<br />
+larger enterprise applications with microservices, you must turn to orchestration and clustering<br />
+platforms.</p>
+<p>From an architecture and development point of view, if you’re building large, enterprise,<br />
+microservices-based, applications, it’s important to understand the following platforms and products<br />
+that support advanced scenarios:</p>
+<ul>
+<li><strong>Clusters and orchestrators.</strong> When you need to scale out applications across many Docker<br />
+hosts, such as with a large microservices-based application, it’s critical to be able to manage<br />
+all of those hosts as a single cluster by abstracting the complexity of the underlying platform.<br />
+That’s what the container clusters and orchestrators provide. Examples of orchestrators are<br />
+Azure Service Fabric and Kubernetes. Kubernetes is available in Azure through Azure<br />
+Kubernetes Service.</li>
+</ul>
+<p>26 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<ul>
+<li><strong>Schedulers.</strong> <em>Scheduling</em> means to have the capability for an administrator to launch containers<br />
+in a cluster, so schedulers also provide a user interface for doing so. A cluster scheduler has<br />
+several responsibilities: to use the cluster’s resources efficiently, to set the constraints<br />
+provided by the user, to efficiently load-balance containers across nodes or hosts, and to be<br />
+robust against errors while providing high availability.</li>
+</ul>
+<p>The concepts of a cluster and a scheduler are closely related, so the products provided by different<br />
+vendors often provide both sets of capabilities. The section below shows the most important platform<br />
+and software choices you have for clusters and schedulers. These orchestrators are widely offered in<br />
+public clouds like Azure.</p>
+<h4><strong>Software platforms for container clustering, orchestration, and</strong></h4>
+<table>
+<thead>
+<tr>
+<th>scheduling</th>
+<th>Col2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Platform</strong></td>
+<td><strong>Comments</strong></td>
+</tr>
+<tr>
+<td><strong>Kubernetes</strong> <br></td>
+<td><em>Kubernetes</em> is an open-source product that<br>provides functionality that ranges from<br>cluster infrastructure and container<br>scheduling to orchestrating capabilities. It<br>lets you automate deployment, scaling,<br>and operations of application containers<br>across clusters of hosts.<br> <br><em>Kubernetes</em> provides a container-centric<br>infrastructure that groups application<br>containers into logical units for easy<br>management and discovery.<br> <br><em>Kubernetes</em> is mature in Linux, less mature<br>in Windows.</td>
+</tr>
+<tr>
+<td><strong>Azure Kubernetes Service (AKS)</strong> <br></td>
+<td>Azure Kubernetes Service (AKS) is a<br>managed Kubernetes container<br>orchestration service in Azure that<br>simplifies Kubernetes cluster’s<br>management, deployment, and<br>operations.</td>
+</tr>
+</tbody>
+</table>
+<p>27 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Azure Service Fabric</strong> <br></td>
+<td>Service Fabric is a Microsoft microservices<br>platform for building applications. It’s an<br>orchestrator of services and creates<br>clusters of machines. Service Fabric can<br>deploy services as containers or as plain<br>processes. It can even mix services in<br>processes with services in containers<br>within the same application and cluster.<br> <br><em>Service Fabric</em> clusters can be deployed in<br>Azure, on-premises or in any cloud.<br>However, deployment in Azure is<br>simplified with a managed approach.<br> <br><em>Service Fabric</em> provides additional and<br>optional prescriptiveService Fabric<br>programming models likestateful services <br>andReliable Actors. <br> <br><em>Service Fabric</em> is mature in Windows (years<br>evolving in Windows), less mature in Linux.<br> <br>Both Linux and Windows containers are<br>supported in Service Fabric since 2017.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Azure Service Fabric Mesh</strong> | <em>Azure Service Fabric Mesh</em> offers the same reliability, missioncritical performance and scale as Service Fabric, but also offers a fully managed and serverless<br />
+platform. You don’t need to manage a cluster, VMs, storage or networking configuration. You just<br />
+focus on your application’s development. <em>Service Fabric Mesh</em> supports both Windows and Linux<br />
+containers, allowing you to develop with any programming language and framework of your choice.</p>
+<p>managed serverless container service for building and deploying modern apps at scale. |</p>
+<h4><strong>Using container-based orchestrators in Azure</strong></h4>
+<p>Several cloud vendors offer Docker containers support plus Docker clusters and orchestration support,<br />
+including Azure, Amazon EC2 Container Service, and Google Container Engine. Azure provides Docker</p>
+<p>28 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p>cluster and orchestrator support through Azure Kubernetes Service (AKS), Azure Service Fabric, and<br />
+Azure Service Fabric Mesh.</p>
+<h4><strong>Using Azure Kubernetes Service</strong></h4>
+<p>A Kubernetes cluster pools several Docker hosts and exposes them as a single virtual Docker host, so<br />
+you can deploy multiple containers into the cluster and scale-out with any number of container<br />
+instances. The cluster will handle all the complex management plumbing, like scalability, health, and<br />
+so forth.</p>
+<p>AKS provides a way to simplify the creation, configuration, and management of a cluster of virtual<br />
+machines in Azure that are preconfigured to run containerized applications. Using an optimized<br />
+configuration of popular open-source scheduling and orchestration tools, AKS enables you to use<br />
+your existing skills or draw on a large and growing body of community expertise to deploy and<br />
+manage container-based applications on Microsoft Azure.</p>
+<p>Azure Kubernetes Service optimizes the configuration of popular Docker clustering open-source tools<br />
+and technologies specifically for Azure. You get an open solution that offers portability for both your<br />
+containers and your application configuration. You select the size, the number of hosts, and the<br />
+orchestrator tools, and AKS handles everything else.</p>
+<p>29 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-7. Kubernetes cluster’s simplified structure and topology</em></p>
+<p>Figure 4-7 shows the structure of a Kubernetes cluster where a master node (VM) controls most of the<br />
+coordination of the cluster, and you can deploy containers to the rest of the nodes that are managed<br />
+as a single pool from an application point of view. This allows you to scale to thousands or even tens<br />
+of thousands of containers.</p>
+<h4><strong>Development environment for Kubernetes</strong></h4>
+<p>In the development environment that Docker announced in July 2018, Kubernetes can also run in a<br />
+<a href="https://www.docker.com/products/docker-desktop">single development machine (Windows 10 or macOS) by just installing Docker Desktop. You can later</a><br />
+deploy to the cloud (AKS) for further integration tests, as shown in figure 4-8.</p>
+<p>30 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-8. Running Kubernetes in dev machine and the cloud</em></p>
+<h4><strong>Get started with Azure Kubernetes Service (AKS)</strong></h4>
+<p>To begin using AKS, you deploy an AKS cluster from the Azure portal or by using the CLI. For more<br />
+<a href="https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal">information on deploying a Kubernetes cluster to Azure, see Deploy an Azure Kubernetes Service</a><br />
+<a href="https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal">(AKS) cluster.</a></p>
+<p>There are no fees for any of the software installed by default as part of AKS. All default options are<br />
+implemented with open-source software. AKS is available for multiple virtual machines in Azure.<br />
+You’re charged only for the compute instances you choose, as well as the other underlying<br />
+infrastructure resources consumed, such as storage and networking. There are no incremental charges<br />
+for AKS itself.</p>
+<p>For further implementation information on deployment to Kubernetes based on kubectl and original<br />
+<a href="https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deploy-to-Azure-Kubernetes-Service-(AKS)">.yaml files, see Deploy to Azure Kubernetes Service (AKS).</a></p>
+<h4><strong>Deploy with Helm charts into Kubernetes clusters</strong></h4>
+<p>When deploying an application to a Kubernetes cluster, you can use the original kubectl.exe CLI tool<br />
+using deployment files based on the native format (.yaml files), as already mentioned in the previous<br />
+section. However, for more complex Kubernetes applications such as when deploying complex<br />
+<a href="https://helm.sh/">microservice-based applications, it’s recommended to use Helm.</a></p>
+<p>Helm Charts helps you define, version, install, share, upgrade, or rollback even the most complex<br />
+<a href="https://www.cncf.io/">Kubernetes application. Helm is maintained by the Cloud Native Computing Foundation (CNCF) in</a><br />
+collaboration with Microsoft, Google, Bitnami, and the Helm contributor community.</p>
+<p><a href="https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deploy-to-Azure-Kubernetes-Service-(AKS)#install-eshoponcontainers-using-helm">For further implementation information on Helm charts and Kubernetes, see the section called Install</a><br />
+<a href="https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deploy-to-Azure-Kubernetes-Service-(AKS)#install-eshoponcontainers-using-helm">eShopOnContainers using Helm.</a></p>
+<p>31 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<h4><strong>Additional resources</strong></h4>
+<ul>
+<li>
+<p><strong>Getting started with Azure Kubernetes Service (AKS)</strong><br />
+<a href="https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal">https://learn.microsoft.com/azure/aks/kubernetes-walkthrough-portal</a></p>
+</li>
+<li>
+<p><strong>Kubernetes.</strong> The official site.<br />
+<a href="https://kubernetes.io/">https://kubernetes.io/</a></p>
+</li>
+</ul>
+<h4><strong>Using Azure Service Fabric</strong></h4>
+<p>Azure Service Fabric arose from Microsoft’s transition from delivering “box” products, which were<br />
+typically monolithic in style, to delivering services. The experience of building and operating large<br />
+services at scale, such as Azure SQL Database, Azure Cosmos DB, Azure Service Bus, or Cortana’s<br />
+Backend, shaped Service Fabric. The platform evolved over time as more and more services adopted<br />
+it. Importantly, Service Fabric had to run not only in Azure but also in standalone Windows Server<br />
+deployments.</p>
+<p>The aim of Service Fabric is to solve the hard problems of building and running a service and utilizing<br />
+infrastructure resources efficiently, so that teams can solve business problems using a microservices<br />
+approach.</p>
+<p>Service Fabric provides two broad areas to help you build applications that use a microservices<br />
+approach:</p>
+<ul>
+<li>
+<p>A platform that provides system services to deploy, scale, upgrade, detect, and restart failed<br />
+services, discover service location, manage state, and monitor health. These system services in<br />
+effect enable many of the characteristics of microservices described previously.</p>
+</li>
+<li>
+<p><a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-choose-framework">Programming APIs, or frameworks, to help you build applications as microservices: reliable</a><br />
+<a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-choose-framework">actors and reliable services. You can choose any code to build your microservice, but these</a><br />
+APIs make the job more straightforward, and they integrate with the platform at a deeper<br />
+level. This way you can get health and diagnostics information, or you can take advantage of<br />
+reliable state management.</p>
+</li>
+</ul>
+<p>Service Fabric is agnostic with respect to how you build your service, and you can use any technology.<br />
+However, it provides built-in programming APIs that make it easier to build microservices.</p>
+<p>As shown in Figure 4-10, you can create and run microservices in Service Fabric either as simple<br />
+processes or as Docker containers. It’s also possible to mix container-based microservices with<br />
+process-based microservices within the same Service Fabric cluster.</p>
+<p>32 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-10. Deploying microservices as processes or as containers in Azure Service Fabric</em></p>
+<p>In the first image, you see microservices as processes, where each node runs one process for each<br />
+microservice. In the second image, you see microservices as containers, where each node runs Docker<br />
+with several containers, one container per microservice. Service Fabric clusters based on Linux and<br />
+Windows hosts can run Docker Linux containers and Windows Containers, respectively.</p>
+<p><a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-containers-overview">For up-to-date information about containers support in Azure Service Fabric, see Service Fabric and</a><br />
+<a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-containers-overview">containers.</a></p>
+<p>Service Fabric is a good example of a platform where you can define a different logical architecture<br />
+(business microservices or Bounded Contexts) than the physical implementation. For example, if you<br />
+<a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction">implement Stateful Reliable Services in Azure Service Fabric, which are introduced in the next section,</a><br />
+“Stateless versus stateful microservices,” you have a business microservice concept with multiple<br />
+physical services.</p>
+<p>As shown in Figure 4-10, and thinking from a logical/business microservice perspective, when<br />
+implementing a Service Fabric Stateful Reliable Service, you usually will need to implement two tiers<br />
+of services. The first is the back-end stateful reliable service, which handles multiple partitions (each<br />
+partition is a stateful service). The second is the front-end service, or Gateway service, in charge of<br />
+routing and data aggregation across multiple partitions or stateful service instances. That Gateway<br />
+service also handles client-side communication with retry loops accessing the back-end service. It’s<br />
+called a Gateway service if you implement your custom service, or alternatively you can also use the<br />
+<a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-reverseproxy">out-of-the-box Service Fabric reverse proxy.</a></p>
+<p>33 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-11. Business microservice with several stateful service instances and a custom gateway front end</em></p>
+<p>In any case, when you use Service Fabric Stateful Reliable Services, you also have a logical or business<br />
+microservice (Bounded Context) that’s composed of multiple physical services. Each of them, the<br />
+Gateway service, and Partition service could be implemented as ASP.NET Web API services, as shown<br />
+in Figure 4-11. Service Fabric has prescription to support several stateful reliable services in containers.</p>
+<p><a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-application-model">In Service Fabric, you can group and deploy groups of services as a Service Fabric Application, which is</a><br />
+the unit of packaging and deployment for the orchestrator or cluster. Therefore, the Service Fabric<br />
+Application could be mapped to this autonomous business and logical microservice boundary or<br />
+Bounded Context, as well, so you could deploy these services autonomously.</p>
+<p><strong>Service Fabric and containers</strong></p>
+<p>With regard to containers in Service Fabric, you can also deploy services in container images within a<br />
+Service Fabric cluster. As Figure 4-12 shows, most of the time there will only be one container per<br />
+service.</p>
+<p><em>Figure 4-12. Business microservice with several services (containers) in Service Fabric</em></p>
+<p>34 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p>A Service Fabric application can run several containers accessing an external database and the whole<br />
+set would be the logical boundary of a Business Microservice. However, so-called “sidecar” containers<br />
+(two containers that must be deployed together as part of a logical service) are also possible in<br />
+Service Fabric. The important thing is that a business microservice is the logical boundary around<br />
+several cohesive elements. In many cases, it might be a single service with a single data model, but in<br />
+some other cases you might have several physical services as well.</p>
+<p>Note that you can mix services in processes, and services in containers, in the same Service Fabric<br />
+application, as shown in Figure 4-13.</p>
+<p><em>Figure 4-13. Business microservice mapped to a Service Fabric application with containers and stateful services</em></p>
+<p><a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-containers-overview">For more information about container support in Azure Service Fabric, see Service Fabric and</a><br />
+<a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-containers-overview">containers.</a></p>
+<h4><strong>Stateless versus stateful microservices</strong></h4>
+<p>As mentioned earlier, each microservice (logical Bounded Context) must own its domain model (data<br />
+and logic). In the case of stateless microservices, the databases will be external, employing relational<br />
+options like SQL Server, or NoSQL options like Azure Cosmos DB or MongoDB.</p>
+<p>But the services themselves can also be stateful in Service Fabric, which means that the data resides<br />
+within the microservice. This data might exist not just on the same server, but within the microservice<br />
+process, in memory and persisted on hard drives and replicated to other nodes. Figure 4-14 shows the<br />
+different approaches.</p>
+<p>35 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-14. Stateless versus stateful microservices</em></p>
+<p>In stateless services, the state (persistence, database) is kept out of the microservice. In stateful<br />
+services, state is kept inside the microservice. A stateless approach is perfectly valid and is easier to<br />
+implement than stateful microservices, since the approach is similar to traditional and well-known<br />
+patterns. But stateless microservices impose latency between the process and data sources. They also<br />
+involve more moving pieces when you’re trying to improve performance with additional cache and<br />
+queues. The result is that you can end up with complex architectures that have too many tiers.</p>
+<p><a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction#when-to-use-reliable-services-apis">In contrast, stateful microservices can excel in advanced scenarios, because there’s no latency between</a><br />
+the domain logic and data. Heavy data processing, gaming back ends, databases as a service, and<br />
+other low-latency scenarios all benefit from stateful services, which enable local state for faster access.</p>
+<p>Stateless and stateful services are complementary. For instance, as you can see in the right diagram in<br />
+Figure 4-14, a stateful service can be split into multiple partitions. To access those partitions, you<br />
+might need a stateless service acting as a gateway service that knows how to address each partition<br />
+based on partition keys.</p>
+<p>Stateful services do have drawbacks. They impose a high complexity level to be scaled out.<br />
+Functionality that would usually be implemented by external database systems must be addressed for<br />
+tasks such as data replication across stateful microservices and data partitioning. However, this is one<br />
+<a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-platform-architecture">of the areas where an orchestrator like Azure Service Fabric</a> <a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction#when-to-use-reliable-services-apis">with its stateful reliable services can help</a><br />
+<a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-work-with-reliable-collections">the most—by simplifying the development and lifecycle of stateful microservices using the Reliable</a><br />
+<a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-work-with-reliable-collections">Services API</a> <a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-actors-introduction">and Reliable Actors.</a></p>
+<p>Other microservice frameworks that allow stateful services, support the Actor pattern, and improve<br />
+<a href="https://github.com/dotnet/orleans">fault tolerance and latency between business logic and data are Microsoft Orleans, from Microsoft</a><br />
+<a href="https://getakka.net/">Research, and Akka.NET. Both frameworks are currently improving their support for Docker.</a></p>
+<p>Remember that Docker containers are themselves stateless. If you want to implement a stateful<br />
+service, you need one of the additional prescriptive and higher-level frameworks noted earlier.</p>
+<h4><strong>Using Azure Service Fabric Mesh</strong></h4>
+<p>Azure Service Fabric Mesh is a fully managed service that enables developers to build and deploy<br />
+mission critical applications without managing any infrastructure. Use Service Fabric Mesh to build<br />
+and run secure, distributed microservices applications that scale on demand.</p>
+<p>36 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p>As shown in figure 4-15, applications hosted on Service Fabric Mesh run and scale without you<br />
+worrying about the infrastructure powering it.</p>
+<p><em>Figure 4-15. Deploying a microservice/containers application to Service Fabric Mesh</em></p>
+<p>Under the covers, Service Fabric Mesh consists of clusters of thousands of machines. All cluster<br />
+operations are hidden from the developer. You simply need to upload your containers and specify<br />
+resources you need, availability requirements, and resource limits. Service Fabric Mesh automatically<br />
+allocates the infrastructure requested by your application deployment and also handles infrastructure<br />
+failures, making sure your applications are highly available. You only need to care about the health<br />
+and responsiveness of your application, not the infrastructure.</p>
+<p><a href="https://docs.microsoft.com/azure/service-fabric-mesh/">For further information, see the Service Fabric Mesh documentation.</a></p>
+<h4><strong>Choosing orchestrators in Azure</strong></h4>
+<p>The following table provides guidance on what orchestrator to use depending on workloads and OS<br />
+focus.</p>
+<p><em>Figure 4-16. Orchestrator selection in Azure guidance</em></p>
+<p>37 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<h3>Deploy to Azure Kubernetes Service (AKS)</h3>
+<p>You can interact with AKS using your preferred client operating system (Windows, macOS, or Linux)<br />
+with Azure command-line interface (Azure CLI) installed. For more details, refer Azure CLI<br />
+<a href="https://docs.microsoft.com/cli/azure/?view=azure-cli-latest&amp;preserve-view=false">documentation</a> <a href="https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&amp;preserve-view=false">and Installation guide for the available environments.</a></p>
+<h4><strong>Create the AKS environment in Azure</strong></h4>
+<p>There are several ways to create the AKS Environment. It can be done by using Azure CLI commands<br />
+or by using the Azure portal.</p>
+<p>Here you can explore some examples using the Azure CLI to create the cluster and the Azure portal to<br />
+review the results. You also need to have Kubectl and Docker in your development machine.</p>
+<h4><strong>Create the AKS cluster</strong></h4>
+<p>Create the AKS cluster using this command (the resource group must exist):</p>
+<pre><code>az aks create --resource-group explore-docker-aks-rg --name explore-docker-aks --nodevm-size Standard_B2s --node-count 1 --generate-ssh-keys --location westeurope
+
+</code></pre>
+<p>After the creation job finishes, you can see:</p>
+<ul>
+<li>
+<p>The AKS cluster created in the initial resource group</p>
+</li>
+<li>
+<p>A new, related resource group, containing the resources related to the AKS cluster, as show in<br />
+the following images.</p>
+</li>
+</ul>
+<p>The initial resource group, with the AKS cluster:</p>
+<p>38 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-17. AKS Resource Group view from Azure.</em></p>
+<p>The AKS cluster resource group:</p>
+<p><em>Figure 4-18. AKS view from Azure.</em></p>
+<p>You can also view the node created using Azure CLI and Kubectl.</p>
+<p>First, getting the credentials:</p>
+<pre><code>az aks get-credentials --resource-group explore-docker-aks-rg --name explore-dockeraks
+
+</code></pre>
+<p>39 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-19. aks get-credentials command result.</em></p>
+<p>And then, getting nodes from Kubectl:</p>
+<pre><code>kubectl get nodes
+
+</code></pre>
+<p><em>Figure 4-20. kubectl get nodes command result.</em></p>
+<h3>Development environment for Docker apps</h3>
+<h4><strong>Development tools choices: IDE or editor</strong></h4>
+<p>No matter if you prefer a full and powerful IDE or a lightweight and agile editor, Microsoft has you<br />
+covered when it comes to developing Docker applications.</p>
+<p><strong>Visual Studio Code and Docker CLI (cross-platform tools for Mac, Linux, and</strong><br />
+<strong>Windows)</strong></p>
+<p>If you prefer a lightweight, cross-platform editor supporting any development language, you can use<br />
+Visual Studio Code and Docker CLI. These products provide a simple yet robust experience, which is<br />
+critical for streamlining the developer workflow. By installing “Docker for Mac” or “Docker for<br />
+Windows” (development environment), Docker developers can use a single Docker CLI to build apps<br />
+for both Windows or Linux (runtime environment). Plus, Visual Studio Code supports extensions for<br />
+Docker with IntelliSense for Dockerfiles and shortcut-tasks to run Docker commands from the editor.</p>
+<p><strong>Visual Studio with Docker Tools (Windows development machine)</strong></p>
+<p>It’s recommended that you use Visual Studio 2022 or later with the built-in Docker Tools enabled.<br />
+With Visual Studio, you can develop, run, and validate your applications directly in the chosen Docker<br />
+environment. Press F5 to debug your application (single container or multiple containers) directly in a<br />
+Docker host, or press Ctrl+F5 to edit and refresh your app without having to rebuild the container. It’s<br />
+the simplest and most powerful choice for Windows developers to create Docker containers for Linux<br />
+or Windows.</p>
+<p>40 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><strong>Visual Studio for Mac (Mac development machine)</strong></p>
+<p><a href="https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&amp;utm_source=learn.microsoft.com&amp;utm_campaign=inline+link">You can use Visual Studio for Mac when developing Docker-based applications. Visual Studio for Mac</a><br />
+offers a richer IDE when compared to Visual Studio Code for Mac.</p>
+<h4><strong>Language and framework choices</strong></h4>
+<p>You can develop Docker applications using Microsoft tools with most modern languages. The<br />
+following is an initial list, but you’re not limited to it:</p>
+<ul>
+<li>
+<p>.NET and ASP.NET Core</p>
+</li>
+<li>
+<p>Node.js</p>
+</li>
+<li>
+<p>Go</p>
+</li>
+<li>
+<p>Java</p>
+</li>
+<li>
+<p>Ruby</p>
+</li>
+<li>
+<p>Python</p>
+</li>
+</ul>
+<p>Basically, you can use any modern language supported by Docker in Linux or Windows.</p>
+<h3>Inner-loop development workflow for Docker apps</h3>
+<p>Before triggering the outer-loop workflow spanning the entire DevOps cycle, it all begins on each<br />
+developer’s machine, coding the app itself, using their preferred languages or platforms, and testing it<br />
+locally (Figure 4-21). But in every case, you’ll have an important point in common, no matter what<br />
+language, framework, or platforms you choose. In this specific workflow, you’re always developing and<br />
+testing Docker containers in no other environments, but locally.</p>
+<p><em>Figure 4-21. Inner-loop development context</em></p>
+<p>The container or instance of a Docker image will contain these components:</p>
+<ul>
+<li>
+<p>An operating system selection (for example, a Linux distribution or Windows)</p>
+</li>
+<li>
+<p>Files added by the developer (for example, app binaries)</p>
+</li>
+<li>
+<p>Configuration (for example, environment settings and dependencies)</p>
+</li>
+<li>
+<p>Instructions for what processes to run by Docker</p>
+</li>
+</ul>
+<p>You can set up the inner-loop development workflow that utilizes Docker as the process (described in<br />
+the next section). Consider that the initial steps to set up the environment are not included, because<br />
+you only need to do it once.</p>
+<p>41 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<h4><strong>Building a single app within a Docker container using Visual Studio</strong> <strong>Code and Docker CLI</strong></h4>
+<p>Apps are made up from your own services plus additional libraries (dependencies).</p>
+<p>Figure 4-22 shows the basic steps that you usually need to carry out when building a Docker app,<br />
+followed by detailed descriptions of each step.</p>
+<p><em>Figure 4-22. High-level workflow for the life cycle for Docker containerized applications using Docker CLI</em></p>
+<p><strong>Step 1: Start coding in Visual Studio Code and create your initial app/service</strong><br />
+<strong>baseline</strong></p>
+<p>The way you develop your application is similar to the way you do it without Docker. The difference is<br />
+that while developing, you’re deploying and testing your application or services running within Docker<br />
+containers placed in your local environment (like a Linux VM or Windows).</p>
+<p><strong>Setting up your local environment</strong></p>
+<p>With the latest versions of Docker Desktop for Mac and Windows, it’s easier than ever to develop<br />
+Docker applications, and the setup is straightforward.</p>
+<p>In addition, you’ll need a code editor so that you can actually develop your application while using<br />
+Docker CLI.</p>
+<p>42 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p>Microsoft provides Visual Studio Code, which is a lightweight code editor that’s supported on<br />
+<a href="https://code.visualstudio.com/docs/languages/overview">Windows, Linux, and macOS, and provides IntelliSense with support for many languages (JavaScript,</a><br />
+<a href="https://code.visualstudio.com/Docs/editor/debugging">.NET, Go, Java, Ruby, Python, and most modern languages), debugging,</a> <a href="https://code.visualstudio.com/Docs/editor/versioncontrol">integration with Git and</a><br />
+<a href="https://code.visualstudio.com/docs/extensions/overview">extensions support. This editor is a great fit for macOS and Linux developers. In Windows, you also</a><br />
+can use Visual Studio.</p>
+<p>You can work with Docker CLI and write your code using any code editor, but using Visual Studio<br />
+Code with the Docker extension makes it easy to author Dockerfile and docker-compose.yml files in<br />
+your workspace. You can also run tasks and scripts from the Visual Studio Code IDE to execute Docker<br />
+commands using the Docker CLI underneath.</p>
+<p>The Docker extension for VS Code provides the following features:</p>
+<ul>
+<li>
+<p>Automatic Dockerfile and docker-compose.yml file generation</p>
+</li>
+<li>
+<p>Syntax highlighting and hover tips for docker-compose.yml and Dockerfile files</p>
+</li>
+<li>
+<p>IntelliSense (completions) for Dockerfile and docker-compose.yml files</p>
+</li>
+<li>
+<p>Linting (errors and warnings) for Dockerfile files</p>
+</li>
+<li>
+<p>Command Palette (F1) integration for the most common Docker commands</p>
+</li>
+<li>
+<p>Explorer integration for managing Images and Containers</p>
+</li>
+<li>
+<p>Deploy images from DockerHub and Azure Container Registries to Azure App Service</p>
+</li>
+</ul>
+<p>To install the Docker extension, press Ctrl+Shift+P, type ext install, and then run the Install Extension<br />
+command to bring up the Marketplace extension list. Next, type <strong>docker</strong> to filter the results, and then<br />
+select the Docker Support extension, as depicted in Figure 4-23.</p>
+<p><em>Figure 4-23. Installing the Docker Extension in Visual Studio Code</em></p>
+<p>43 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><strong>Step 2: Create a DockerFile related to an existing image (plain OS or dev</strong><br />
+<strong>environments like .NET, Node.js, and Ruby)</strong></p>
+<p>You’ll need a DockerFile per custom image to be built and per container to be deployed. If your app is<br />
+made up of single custom service, you’ll need a single DockerFile. But if your app is composed of<br />
+multiple services (as in a microservices architecture), you’ll need one Dockerfile per service.</p>
+<p>The DockerFile is commonly placed in the root folder of your app or service and contains the required<br />
+commands so that Docker knows how to set up and run that app or service. You can create your<br />
+DockerFile and add it to your project along with your code (node.js, .NET, etc.), or, if you’re new to the<br />
+environment, take a look at the following Tip.</p>
+<p>In Figure 4-24, you can see the steps to add the docker files to a project by using the Docker<br />
+Extension for VS Code:</p>
+<ol>
+<li>
+<p>Open the command palette, type “ <strong>docker</strong> ” and select “ <strong>Add Docker Files to Workspace</strong> ”.</p>
+</li>
+<li>
+<p>Select Application Platform (ASP.NET Core)</p>
+</li>
+<li>
+<p>Select Operating System (Linux)</p>
+</li>
+<li>
+<p>Include optional Docker Compose files</p>
+</li>
+<li>
+<p>Enter ports to publish (80, 443)</p>
+</li>
+<li>
+<p>Select the project</p>
+</li>
+</ol>
+<p>44 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-24. Docker files added using the Add Docker files to Workspace command</em></p>
+<p>When you add a DockerFile, you specify what base Docker image you’ll be using (like using FROM<br />
+mcr.microsoft.com/dotnet/aspnet). You’ll usually build your custom image on top of a base image<br />
+<a href="https://hub.docker.com/">that you get from any official repository at the Docker Hub registry</a> <a href="https://hub.docker.com/_/microsoft-dotnet/">(like an image for .NET or the one</a><br />
+<a href="https://hub.docker.com/_/node/">for Node.js).</a></p>
+<p><em><strong>Use an existing official Docker image</strong></em></p>
+<p>Using an official repository of a language stack with a version number ensures that the same language<br />
+features are available on all machines (including development, testing, and production).</p>
+<p>The following is a sample DockerFile for a .NET container:</p>
+<p>45 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p>In this case, the image is based on version 6.0 of the official ASP.NET Core Docker image (multi-arch<br />
+for Linux and Windows), as per the line FROM mcr.microsoft.com/dotnet/aspnet:6.0. (For more<br />
+<a href="https://hub.docker.com/_/microsoft-dotnet-aspnet/">information about this topic, see the ASP.NET Core Docker Image</a> <a href="https://hub.docker.com/_/microsoft-dotnet/">page and the .NET Docker Image</a><br />
+page).</p>
+<p>In the DockerFile, you can also instruct Docker to listen to the TCP port that you’ll use at run time<br />
+(such as port 80 or 443).</p>
+<p>You can specify additional configuration settings in the Dockerfile, depending on the language and<br />
+framework you’re using. For instance, the ENTRYPOINT line with [&quot;dotnet&quot;, &quot;WebMvcApplication.dll&quot;]<br />
+tells Docker to run a .NET application. If you’re using the SDK and the .NET CLI (dotnet CLI) to build<br />
+and run the .NET application, this setting would be different. The key point here is that the<br />
+ENTRYPOINT line and other settings depend on the language and platform you choose for your<br />
+application.</p>
+<p><strong>Use multi-arch image repositories</strong></p>
+<p>A single image name in a repo can contain platform variants, such as a Linux image and a Windows<br />
+image. This feature allows vendors like Microsoft (base image creators) to create a single repo to<br />
+<a href="https://hub.docker.com/_/microsoft-dotnet-aspnet/">cover multiple platforms (that is, Linux and Windows). For example, the dotnet/aspnet repository</a><br />
+available in the Docker Hub registry provides support for Linux and Windows Nano Server by using<br />
+the same image name.</p>
+<p><a href="https://hub.docker.com/_/microsoft-dotnet-aspnet/">Pulling the dotnet/aspnet image from a Windows host pulls the Windows variant, whereas pulling the</a><br />
+same image name from a Linux host pulls the Linux variant.</p>
+<p>46 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em><strong>Create your base image from scratch</strong></em></p>
+<p><a href="https://docs.docker.com/engine/userguide/eng-image/baseimages/">You can create your own Docker base image from scratch as explained in this article from Docker. This</a><br />
+scenario is probably not the best for you if you’re just starting with Docker, but if you want to set the<br />
+specific bits of your own base image, you can do it.</p>
+<p><strong>Step 3: Create your custom Docker images embedding your service in it</strong></p>
+<p>For each custom service that comprises your app, you’ll need to create a related image. If your app is<br />
+made up of a single service or web app, you’ll need just a single image.</p>
+<p>To create an image in your local environment and using the DockerFile, you can use the docker build<br />
+command, as shown in Figure 4-25, because it already tags the image for you and builds the images<br />
+for all services in the application with a simple command.</p>
+<p><em>Figure 4-25. Running docker build</em></p>
+<p>Optionally, instead of directly running docker build from the project folder, you first can generate a<br />
+deployable folder with the .NET libraries needed by using the run dotnet publish command, and then<br />
+run docker build.</p>
+<p>This example creates a Docker image with the name webapi:latest (:latest is a tag, like a specific<br />
+version). You can take this step for each custom image you need to create for your composed Docker</p>
+<p>47 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p>application with several containers. However, we’ll see in the next section that it’s easier to do this<br />
+using docker-compose.</p>
+<p>You can find the existing images in your local repository (your development machine) by using the<br />
+docker images command, as illustrated in Figure 4-26.</p>
+<p><em>Figure 4-26. Viewing existing images using docker images</em></p>
+<p><strong>Step 4: Define your services in docker-compose.yml when building a composed</strong><br />
+<strong>Docker app with multiple services</strong></p>
+<p>With the docker-compose.yml file, you can define a set of related services to be deployed as a<br />
+composed application with the deployment commands explained in the next step section.</p>
+<p>Create that file in your main or root solution folder; it should have content similar to that shown in this<br />
+docker-compose.yml file:</p>
+<p>In this particular case, this file defines three services: the web API service (your custom service), a web<br />
+application, and the Redis service (a popular cache service). Each service will be deployed as a<br />
+container, so you need to use a concrete Docker image for each. For this particular application:</p>
+<p>48 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<ul>
+<li>
+<p>The web API service is built from the DockerFile in the src/WebApi/Dockerfile directory.</p>
+</li>
+<li>
+<p>The host port 51080 is forwarded to the exposed port 80 on the webapi container.</p>
+</li>
+<li>
+<p>The web API service depends on the Redis service</p>
+</li>
+<li>
+<p>The web application accesses the web API service using the internal address: http://webapi.</p>
+</li>
+<li>
+<p><a href="https://hub.docker.com/_/redis/">The Redis service uses the latest public redis image pulled from the Docker Hub registry.</a><br />
+<a href="https://redis.io/">Redis</a> is a popular cache system for server-side applications.</p>
+</li>
+</ul>
+<p><strong>Step 5: Build and run your Docker app</strong></p>
+<p>If your app has only a single container, you just need to run it by deploying it to your Docker Host<br />
+(VM or physical server). However, if your app is made up of multiple services, you need to <em>compose it</em>,<br />
+too. Let’s see the different options.</p>
+<p><em><strong>Option A: Run a single container or service</strong></em></p>
+<p>You can run the Docker image by using the docker run command, as shown here:</p>
+<pre><code>docker run -t -d -p 50080:80 webapp:latest
+
+</code></pre>
+<p>For this particular deployment, we’ll be redirecting requests sent to port 50080 on the host to the<br />
+internal port 80.</p>
+<p><em><strong>Option B: Compose and run a multiple-container application</strong></em></p>
+<p>In most enterprise scenarios, a Docker application will be composed of multiple services. For these<br />
+cases, you can run the docker-compose up command (Figure 4-27), which will use the dockercompose.yml file that you created previously. Running this command builds all custom images and<br />
+deploys the composed application with all of its related containers.</p>
+<p>49 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-27. Results of running the “docker-compose up” command</em></p>
+<p>After you run docker-compose up, you deploy your application and its related container(s) into your<br />
+Docker Host, as illustrated in Figure 4-28, in the VM representation.</p>
+<p><em>Figure 4-28. VM with Docker containers deployed</em></p>
+<p><strong>Step 6: Test your Docker application (locally, in your local CD VM)</strong></p>
+<p>This step will vary depending on what your app is doing.</p>
+<p>In a simple .NET Web API “Hello World” deployed as a single container or service, you’d just need to<br />
+access the service by providing the TCP port specified in the DockerFile.</p>
+<p>On the Docker host, open a browser and navigate to that site; you should see your app/service<br />
+running, as demonstrated in Figure 4-29.</p>
+<p>50 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-29. Testing your Docker application locally by using the browser</em></p>
+<p>Note that it’s using port 50080, but internally it’s being redirected to port 80, because that’s how it<br />
+was deployed with docker compose, as explained earlier.</p>
+<p>You can test this by using the browser using CURL from the terminal, as depicted in Figure 4-30.</p>
+<p><em>Figure 4-30. Testing a Docker application locally by using CURL</em></p>
+<p><strong>Debugging a container running on Docker</strong></p>
+<p>Visual Studio Code supports debugging Docker if you’re using Node.js and other platforms like .NET<br />
+containers.</p>
+<p>51 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p>You also can debug .NET or .NET Framework containers in Docker when using Visual Studio for<br />
+Windows or Mac, as described in the next section.</p>
+<h3>Use Docker Tools in Visual Studio on Windows</h3>
+<p>The developer workflow when using the Docker Tools included in Visual Studio 2022 version 17.0 and<br />
+later, is similar to using Visual Studio Code and Docker CLI (in fact, it’s based on the same Docker CLI),<br />
+but it’s easier to get started, simplifies the process, and provides greater productivity for the build,<br />
+run, and compose tasks. It can also run and debug your containers via the usual F5 and Ctrl+F5keys<br />
+from Visual Studio. You can even debug a whole solution if its containers are defined in the same<br />
+docker-compose.yml file at the solution level.</p>
+<h4><strong>Configure your local environment</strong></h4>
+<p>With the latest versions of Docker for Windows, it’s easier than ever to develop Docker applications<br />
+because the setup is straightforward, as explained in the following references.</p>
+<h4><strong>Docker support in Visual Studio</strong></h4>
+<p>There are two levels of Docker support you can add to a project. In ASP.NET Core projects, you can<br />
+just add a Dockerfile file to the project by enabling Docker support. The next level is container<br />
+orchestration support, which adds a Dockerfile to the project (if it doesn’t already exist) and a dockercompose.yml file at the solution level. Container orchestration support, via Docker Compose, is<br />
+available in Visual Studio 2022 versions 17.0. Container orchestration support is an opt-in feature in<br />
+Visual Studio 2022 versions 17.0 or later. Visual Studio 2022 also supports <strong>Kubernetes/Helm</strong><br />
+deployment.</p>
+<p>The <strong>Add &gt; Docker Support</strong> and <strong>Add &gt; Container Orchestrator Support</strong> commands are located on<br />
+the right-click menu (or context menu) of the project node for an ASP.NET Core project in <strong>Solution</strong><br />
+<strong>Explorer</strong>, as shown in Figure 4-31:</p>
+<p>52 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-31. Adding Docker support to a Visual Studio project</em></p>
+<p><strong>Add Docker support</strong></p>
+<p>Besides the option to add Docker support to an existing application, as shown in the previous section,<br />
+you can also enable Docker support during project creation by selecting <strong>Enable Docker Support</strong> in<br />
+the <strong>New ASP.NET Core Web Application</strong> dialog box that opens after you click <strong>OK</strong> in the <strong>New</strong><br />
+<strong>Project</strong> dialog box, as shown in Figure 4-32.</p>
+<p>53 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-32. Enable Docker support during project creation in Visual Studio</em></p>
+<p>When you add or enable Docker support, Visual Studio adds a <em>Dockerfile</em> file to the project, that<br />
+includes references to all required project from the solution.</p>
+<p><strong>Add container orchestration support</strong></p>
+<p>When you want to compose a multi-container solution, add container orchestration support to your<br />
+projects. This lets you run and debug a group of containers (a whole solution) at the same time if<br />
+they’re defined in the same <em>docker-compose.yml</em> file.</p>
+<p>To add container orchestration support, right-click on the project node in <strong>Solution Explorer</strong>, and<br />
+choose <strong>Add &gt; Container Orchestration Support</strong> . Then choose <strong>Docker Compose</strong> to manage the<br />
+containers.</p>
+<p>After you add container orchestration support to your project, you see a Dockerfile added to the<br />
+project and a <strong>docker-compose</strong> folder added to the solution in <strong>Solution Explorer</strong>, as shown in Figure<br />
+4-33:</p>
+<p>54 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-33. Docker files in Solution Explorer in Visual Studio</em></p>
+<p>If <em>docker-compose.yml</em> already exists, Visual Studio just adds the required lines of configuration code<br />
+to it.</p>
+<h4><strong>Configure Docker tools</strong></h4>
+<p>From the main menu, choose <strong>Tools &gt; Options</strong>, and expand <strong>Container Tools &gt; Settings</strong> . The<br />
+container tools settings appear.</p>
+<p>55 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-34. Docker Tools Options</em></p>
+<p><a href="https://docs.microsoft.com/visualstudio/containers/container-tools-configure#container-tools-settings">For more detailed configurations refer to Container Tools settings</a></p>
+<h3>Using Windows PowerShell commands in a DockerFile to set up Windows Containers (Docker standard based)</h3>
+<p><a href="https://docs.microsoft.com/virtualization/windowscontainers/about/index">With Windows Containers, you can convert your existing Windows applications to Docker images and</a><br />
+deploy them with the same tools as the rest of the Docker ecosystem.</p>
+<p>56 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p>To use Windows Containers, you just need to write Windows PowerShell commands in the DockerFile,<br />
+as demonstrated in the following example:</p>
+<p>In this case, we’re using Windows PowerShell to install a Windows Server Core base image as well<br />
+as IIS.</p>
+<p>In a similar way, you also could use Windows PowerShell commands to set up additional components<br />
+like the traditional ASP.NET 4.x and .NET Framework 4.6 or any other Windows software, as shown<br />
+here:</p>
+<pre><code>RUN powershell add-windowsfeature web-asp-net45
+
+### Build ASP.NET Core applications deployed as Linux containers into an AKS/Kubernetes orchestrator
+
+</code></pre>
+<p>Azure Kubernetes Services (AKS) is Azure’s managed Kubernetes orchestrations services that simplify<br />
+container deployment and management.</p>
+<p>The main features of AKS are:</p>
+<ul>
+<li>
+<p>An Azure-hosted control plane.</p>
+</li>
+<li>
+<p>Automated upgrades.</p>
+</li>
+<li>
+<p>Self-healing.</p>
+</li>
+<li>
+<p>User-configurable scaling.</p>
+</li>
+<li>
+<p>Simpler user experience for both developers and cluster operators.</p>
+</li>
+</ul>
+<p>The following examples explore the creation of an ASP.NET Core 6.0 application that runs on Linux<br />
+and deploys to an AKS Cluster in Azure. Development is done using Visual Studio 2022 version 17.0.</p>
+<h4><strong>Creating the ASP.NET Core Project using Visual Studio 2022</strong></h4>
+<p>ASP.NET Core is a general-purpose development platform maintained by Microsoft and the .NET<br />
+community on GitHub. It’s cross-platform, supporting Windows, macOS and Linux, and can be used in<br />
+device, cloud, and embedded/IoT scenarios.</p>
+<p>This example uses a couple of simple projects based on Visual Studio templates, so you don’t need<br />
+much additional knowledge to create the sample. You only have to create the project using a<br />
+standard template that includes all the elements to run a small project with a REST API and a Web<br />
+App with Razor pages, using ASP.NET Core 6.0 technology.</p>
+<p><a href="https://github.com/dotnet-architecture/explore-docker">For reference, you can download the sample from .NET Application Architecture’s repo explore-</a><br />
+<a href="https://github.com/dotnet-architecture/explore-docker">docker.</a></p>
+<p>57 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-35. Creating an ASP.NET Core Web Application in Visual Studio 2022.</em></p>
+<p>To create the sample project in Visual Studio, select <strong>File</strong> - <strong>New</strong> - <strong>Project</strong>, select the <strong>Web</strong> project<br />
+type and then the <strong>ASP.NET Core Web Api</strong> template. You can also search for the template if you need<br />
+it.</p>
+<p>Then enter the application name and location as shown in the next image.</p>
+<p>58 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-36. Enter the project name and location in Visual Studio 2022.</em></p>
+<p>Verify that you’ve selected ASP.NET Core 6.0 as the framework. .NET 6 is included in the latest release<br />
+of Visual Studio 2022 and is automatically installed and configured for you when you install Visual<br />
+Studio.</p>
+<p>59 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-37. Selecting ASP.NET CORE 6.0 and Web API project type</em></p>
+<p>Notice Docker support is not enabled now. You’ll do that in the next step after the project creation.<br />
+You’ll also notice that by default controller option is checked. You can uncheck that if you want to<br />
+<a href="https://docs.microsoft.com/aspnet/core/tutorials/min-web-api?tabs=visual-studio">Create a minimal web API with ASP.NET Core.</a></p>
+<p>To show you can “Dockerize” your project at any time, you’ll add Docker support now. So right-click<br />
+on the project node in Solution Explorer and select <strong>Add</strong> - <strong>Docker support</strong> on the context menu.</p>
+<p>60 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-38. Adding Docker support to an existing project</em></p>
+<p>To complete adding Docker support, you can choose Windows or Linux. In this case, select <strong>Linux</strong> .</p>
+<p><em>Figure 4-39. Selecting Linux containers.</em></p>
+<p>61 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p>With these simple steps, you have your ASP.NET Core 6.0 application running on a Linux container.</p>
+<p>In a similar way, you can also add a very simple <strong>WebApp</strong> project (Figure 4-40) to consume the web<br />
+<a href="https://github.com/dotnet-architecture/explore-docker">API endpoint, although the details can be seen in the code repo.</a></p>
+<p>After that, you add orchestrator support for your <strong>WebApi</strong> project as shown next, in image 4-40.</p>
+<p><em>Figure 4-40. Adding orchestrator support to WebApi project.</em></p>
+<p>When you choose the Docker Compose option, which is fine for local development, Visual Studio<br />
+adds the docker-compose project, with the docker-compose files as shown in image 4-41.</p>
+<p>62 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-41. Adding orchestrator support to WebApi project.</em></p>
+<p>The initial files added are similar to these ones:</p>
+<p>docker-compose.yml</p>
+<p>docker-compose.override.yml</p>
+<p>63 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p>To run your app with Docker Compose, you just have to make a few tweaks to dockercompose.override.yml.</p>
+<p>Now you can run your application with the F5 key, or by using the <strong>Play</strong> button, or the Ctrl+F5 key,<br />
+selecting the docker-compose project, as shown in image 4-42.</p>
+<p><em>Figure 4-42. Adding orchestrator support to WebApi project.</em></p>
+<p>When running the docker-compose application as explained, you get:</p>
+<ol>
+<li>
+<p>The images built and containers created as per the docker-compose file.</p>
+</li>
+<li>
+<p>The browser open in the address configured in the “Properties” dialog for the dockercompose project.</p>
+</li>
+<li>
+<p>The <strong>Container</strong> window open (in Visual Studio 2022 version 17.0 and later).</p>
+</li>
+<li>
+<p>Debugger support for all projects in the solution, as shown in the following images.</p>
+</li>
+</ol>
+<p>Browser opened:</p>
+<p>64 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-43. Browser window with an application running on multiple containers.</em></p>
+<p>Containers window:</p>
+<p><em>Figure 4-44. Visual Studio “Containers” window</em></p>
+<p>The <strong>Containers</strong> window lets you view running containers, browse available images, view environment<br />
+variables, logs, and port mappings, inspect the filesystem, attach a debugger, or open a terminal<br />
+window inside the container environment.</p>
+<p>As you can see, the integration between Visual Studio 2022 and Docker is completely oriented to the<br />
+developer’s productivity.</p>
+<p>Of course, you can also list the images using the docker images command. You should see the webapi<br />
+and webapp images with the dev tags created by the automatic deployment of our project with Visual<br />
+Studio 2022.</p>
+<pre><code>docker images
+
+</code></pre>
+<p>65 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-45. View of Docker images</em></p>
+<h4><strong>Register the Solution in an Azure Container Registry (ACR)</strong></h4>
+<p><a href="https://azure.microsoft.com/services/container-registry/">You can upload the images to the Azure Container Registry (ACR), but you could also use Docker Hub</a><br />
+or any other registry, so the images can be deployed to the AKS cluster from that registry.</p>
+<p><strong>Create an ACR instance</strong></p>
+<p>Run the following command from the <strong>az cli</strong> :</p>
+<pre><code>az acr create --name exploredocker --resource-group explore-docker-aks-rg --sku basic
+--admin-enabled
+
+</code></pre>
+<p><strong>Create the image in Release mode</strong></p>
+<p>You’ll now create the image in <strong>Release</strong> mode (ready for production) by changing to <strong>Release</strong>, as<br />
+shown in Figure 4-46, and running the application as you did before.</p>
+<p><em>Figure 4-46. Selecting Release Mode</em></p>
+<p>If you execute the docker images command, you’ll see both images created, one for debug ( <strong>dev</strong> ) and<br />
+the other for release ( <strong>latest</strong> ) mode.</p>
+<p><strong>Create a new Tag for the Image</strong></p>
+<p>Each container image needs to be tagged with the loginServer name of the registry. This tag is used<br />
+for routing when pushing container images to an image registry.</p>
+<p>You can view the loginServer name from the Azure portal, taking the information from the Azure<br />
+Container Registry</p>
+<p>66 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-47. View of the name of the Registry</em></p>
+<p>Or by running the following command:</p>
+<p><em>Figure 4-48. Get the name of the registry using az cli</em></p>
+<p>In both cases, you’ll obtain the name. In our example, exploredocker.azurecr.io.</p>
+<p>Now you can tag the image, taking the latest image (the Release image), with the command:</p>
+<pre><code>docker tag &lt;image-name&gt;:latest &lt;login-server-name&gt;/&lt;image-name&gt;:v1
+
+</code></pre>
+<p>After running the docker tag command, list the images with the docker images command, and you<br />
+should see the image with the new tag.</p>
+<p><em>Figure 4-49. View of tagged images</em></p>
+<p><strong>Push the image into the Azure ACR</strong></p>
+<p>Log in to the Azure Container Registry</p>
+<pre><code>az acr login --name exploredocker
+
+</code></pre>
+<p>Push the image into the Azure ACR, using the following command:</p>
+<pre><code>docker push &lt;login-server-name&gt;/&lt;image-name&gt;:v1
+
+</code></pre>
+<p>67 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p>This command takes a while uploading the images but gives you feedback in the process. In the<br />
+following image, you can see the output from one image completed and another in progress.</p>
+<p><em>Figure 4-50. Console output from the push command.</em></p>
+<p>To deploy your multi-container app into your AKS cluster you need some manifest .yaml files that<br />
+have, most of the properties taken from the docker-compose.yml and docker-compose.override.yml<br />
+files.</p>
+<p><strong>deploy-webapi.yml</strong></p>
+<p>68 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p>69 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p>Now you’re almost ready to deploy using <strong>kubectl</strong>, but first you must get the credentials from the AKS<br />
+Cluster with this command:</p>
+<pre><code>az aks get-credentials --resource-group explore-docker-aks-rg --name explore-docker-aks
+
+</code></pre>
+<p><em>Figure 4-51. Getting credentials from AKS into the kubectl environment.</em></p>
+<p>You also have to allow the AKS cluster to pull images from the ACR, using this command:</p>
+<p>The previous command might take a couple of minutes to complete. Then, use the kubectl apply<br />
+command to launch the deployments, and then kubectl get all to list the cluster objects.</p>
+<p>70 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-52. Deployment to Kubernetes</em></p>
+<p>You’ll have to wait a while until the load balancer gets the external IP, checking with kubectl get<br />
+services, and then the application should be available at that address, as shown in the next image:</p>
+<p>71 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-53. Deployment to Kubernetes</em></p>
+<p><a href="https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/">When the deployment completes, you can access the Kubernetes Web UI</a> with a local proxy, using an<br />
+ssh tunnel.</p>
+<p>First you must create a ClusterRoleBinding with the following command:</p>
+<p>And then this command to start the proxy:</p>
+<pre><code>az aks browse --resource-group exploredocker-aks-rg --name explore-docker-aks
+
+</code></pre>
+<p>A browser window should open at http://127.0.0.1:8001 with a view similar to this one:</p>
+<p>72 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><em>Figure 4-54. View Kubernetes cluster information</em></p>
+<p>Now you have your ASP.NET Core application, running in Linux containers, and deployed to an AKS<br />
+cluster on Azure.</p>
+<p>73 CHAPTER 4 | Designing and developing containerized apps using Docker and Microsoft Azure</p>
+<p><strong>CHAPTER</strong></p>
+<h1>5</h1>
+<h2>Docker application DevOps workflow with Microsoft tools</h2>
+<p><em>Microsoft Visual Studio, Azure DevOps Services and/or GitHub, Team Foundation Server, and Azure</em><br />
+<em>Monitor provide a comprehensive ecosystem for development and IT operations that give your team the</em><br />
+<em>tools to manage projects and rapidly build, test, and deploy containerized applications.</em></p>
+<p>Teams can choose which tools and platforms they want to use for end to end DevOps. With Visual<br />
+Studio and Azure DevOps Services in the cloud, along with Team Foundation Server on-premises,<br />
+development teams can productively build, test, and release containerized applications that target<br />
+either Windows or Linux. Alternatively, teams can also use Visual Studio Code and GitHub. Teams can<br />
+even use combinations: for example, storing source code in GitHub and using Azure Boards for work<br />
+item tracking and Azure Pipelines for CI/CD.</p>
+<p>Microsoft tools can automate the pipeline for specific implementations of containerized<br />
+applications—Docker, .NET, or any combination with other platforms—from global builds and<br />
+Continuous Integration (CI) and tests with Azure DevOps Services, Team Foundation Server or GitHub,<br />
+to Continuous Deployment (CD) to Docker environments (Development, Staging, Production), and to<br />
+transmit analytics information about the services to the development team through Azure Monitor.<br />
+Every code commit can initiate a build (CI) and automatically deploy the services to specific<br />
+containerized environments (CD).</p>
+<p>Developers and testers can easily and quickly provision production-like development and test<br />
+environments based on Docker by using templates in Microsoft Azure.</p>
+<p>The complexity of containerized application development increases steadily depending on the<br />
+business complexity and scalability needs. A good example of this complexity are applications based<br />
+on microservices architectures. To succeed in such an environment, your project must automate the<br />
+entire life cycle—not only the build and deployment, but it also must manage versions along with<br />
+the collection of telemetry. Azure DevOps Services, GitHub and Azure offer the following capabilities:</p>
+<ul>
+<li>Azure DevOps Services/Team Foundation Server source code management (based on Git or<br />
+Team Foundation Version Control), Agile planning (Agile, Scrum, and CMMI are supported),<br />
+CI, release management, and other tools for Agile teams.</li>
+</ul>
+<p>74 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<ul>
+<li>
+<p>Azure DevOps Services and Team Foundation Server include a powerful and growing<br />
+ecosystem of first and third-party extensions with which you easily can construct a CI, build,<br />
+test, delivery, and release management pipeline for microservices.</p>
+</li>
+<li>
+<p>GitHub or GitHub Enterprise Server offer similar capabilities, with source control based on Git,<br />
+Projects and Issues for project tracking, GitHub Actions for automating workflows including<br />
+CI/CD, and GitHub Advanced Security for dependency, secret and vulnerability scanning.</p>
+</li>
+<li>
+<p>Run automated tests as part of your build pipeline in Azure DevOps Services or through<br />
+GitHub Actions</p>
+</li>
+<li>
+<p>Azure DevOps Services/GitHub can tighten the DevOps life cycle with delivery to multiple<br />
+environments, not just for production environments, but also for testing, including A/B<br />
+<a href="https://martinfowler.com/bliki/CanaryRelease.html">experimentation, canary releases, and so on.</a></p>
+</li>
+<li>
+<p>Organizations easily can provision Docker containers from private images stored in Azure<br />
+Container Registry along with any dependency on Azure components (Data, PaaS, etc.) using<br />
+Azure Resource Manager templates with tools they’re already comfortable with.</p>
+</li>
+</ul>
+<h3>Steps in the outer-loop DevOps workflow for a Docker application</h3>
+<p>Figure 5-1 presents an end-to-end depiction of the steps comprising the DevOps outer-loop<br />
+workflow. It shows the “outer loop” of DevOps. When code is pushed to the repo, a CI pipeline is<br />
+started, then begins the CD pipeline, where the application gets deployed. Metrics collected from<br />
+deployed applications are fed back into the development workload, where the “inner loop” occurs, so<br />
+development teams have actual data to respond to user and business needs.</p>
+<p><em>Figure 5-1. DevOps outer-loop workflow for Docker applications with Microsoft tools</em></p>
+<p>Now, let’s examine each of these steps in greater detail.</p>
+<p>75 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<h4><strong>Step 1: Inner-loop development workflow</strong></h4>
+<p>This step is explained in detail in Chapter 4, but, to recap, here is where the outer-loop begins, the<br />
+moment at which a developer pushes code to the source control management system (like Git)<br />
+initiating CI pipeline actions.</p>
+<h4><strong>Step 2: Source-Code Control integration and management with Azure</strong> <strong>DevOps Services and Git</strong></h4>
+<p>At this step, you need to have a version-control system to gather a consolidated version of all the<br />
+code coming from the different developers in the team.</p>
+<p>Even though source-code control (SCC) and source-code management might seem second-nature to<br />
+most developers, when creating Docker applications in a DevOps life cycle, it’s critical to emphasize<br />
+that you must not submit the Docker images with the application directly to the global Docker<br />
+Registry (like Azure Container Registry or Docker Hub) from the developer’s machine. On the contrary,<br />
+the Docker images to be released and deployed to production environments must be created solely<br />
+on the source code that’s being integrated in your global build or CI pipeline based on your sourcecode repository (like Git).</p>
+<p>The local images, generated by developers, should just be used by them when testing within their<br />
+own machines. That’s why it’s critical to have the DevOps pipeline activated from the SCC code.</p>
+<p>Azure DevOps Services and Team Foundation Server support Git and Team Foundation Version<br />
+Control. You can choose between them and use it for an end-to-end Microsoft experience. However,<br />
+you can also manage your code in external repositories (like GitHub, on-premises Git repositories, or<br />
+Subversion) and still be able to connect to it and get the code as the starting point for your DevOps CI<br />
+pipeline. You can also use GitHub Actions for CI/CD pipelines.</p>
+<h4><strong>Step 3: Build, CI, Integrate, and Test with Azure DevOps</strong> <strong>Services/GitHub and Docker</strong></h4>
+<p>CI has emerged as a standard for modern software testing and delivery. The Docker solution<br />
+maintains a clear separation of concerns between the development and operations teams. The<br />
+immutability of Docker images ensures a repeatable deployment between what’s developed, tested<br />
+through CI, and run in production. Docker Engine deployed across the developer laptops and test<br />
+infrastructure makes the containers portable across environments.</p>
+<p>At this point, after you have a version-control system with the correct code submitted, you need a<br />
+<em>build service</em> to pick up the code and run the global build and tests.</p>
+<p>The internal workflow for this step (CI, build, test) is about the construction of a CI pipeline consisting<br />
+of your code repository (Git, etc.), your build server (Azure DevOps Services/GitHub), Docker Engine,<br />
+and a Docker Registry.</p>
+<p>You can use Azure DevOps Services as the foundation for building your applications and setting your<br />
+CI pipeline, and for publishing the built “artifacts” to an “artifacts repository,” which is explained in the<br />
+next step. Alternatively, you can use GitHub to implement the same workflow.</p>
+<p>76 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<p>When using Docker for the deployment, the “final artifacts” to be deployed are Docker images with<br />
+your application or services embedded within them. Those images are pushed or published to a<br />
+<em>Docker Registry</em> (a private repository like the ones you can have in Azure Container Registry, or a<br />
+public one like Docker Hub Registry or GitHub Container Registry, which is commonly used for official<br />
+base images).</p>
+<p>Here is the basic concept: The CI pipeline will be kicked-off by a commit to an SCC repository like Git.<br />
+The commit will cause Azure DevOps Services/GitHub to run a build job within a Docker container<br />
+and, upon successful completion of that job, push a Docker image to the Docker Registry, as<br />
+illustrated in Figure 5-2. The first part of the outer loop involves steps 1 to 3, from code, run, debug<br />
+and validate, then the code repo up to the build and test CI step.</p>
+<p><em>Figure 5-2. The steps involved in CI</em></p>
+<p>Here are the basic CI workflow steps with Docker and Azure DevOps Services:</p>
+<p>77 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<ol>
+<li>
+<p>The developer pushes a commit to an SCC repository (Git/Azure DevOps Services, GitHub,<br />
+etc.).</p>
+</li>
+<li>
+<p>If you’re using Azure DevOps Services or Git, CI is built in, which means that it’s as simple as<br />
+selecting a check box in Azure DevOps Services. If you’re using an external SCC (like GitHub),<br />
+a webhook will notify Azure DevOps Services of the update or push to Git/GitHub.</p>
+</li>
+<li>
+<p>Azure DevOps Services pulls the SCC repository, including the Dockerfile describing the<br />
+image, as well as the application and test code.</p>
+</li>
+<li>
+<p>Azure DevOps Services builds a Docker image and labels it with a build number.</p>
+</li>
+<li>
+<p>Azure DevOps Services instantiates the Docker container within the provisioned Docker Host,<br />
+and runs the appropriate tests.</p>
+</li>
+<li>
+<p>If the tests are successful, the image is first relabeled to a meaningful name so that you know<br />
+it’s a “blessed build” (like “/1.0.0” or any other label), and then pushed up to your Docker<br />
+Registry (Docker Hub, Azure Container Registry, DTR, etc.)</p>
+</li>
+</ol>
+<p>Here are the basic CI workflow steps with Docker and GitHub:</p>
+<ol>
+<li>
+<p>The developer pushes a commit to a GitHub repo.</p>
+</li>
+<li>
+<p>CI is built in, so Actions will trigger base on the event filters.</p>
+</li>
+<li>
+<p>GitHub pulls the SCC repository, including the <em>Dockerfile</em> describing the image, as well as the<br />
+application and test code.</p>
+</li>
+<li>
+<p>GitHub builds a Docker image and labels it with a build number.</p>
+</li>
+<li>
+<p>GitHub instantiates the Docker container within the provisioned Docker Host, and runs the<br />
+appropriate tests.</p>
+</li>
+<li>
+<p>If the tests are successful, the image is first relabeled to a meaningful name so that you know<br />
+it’s a “blessed build” (like “/1.0.0” or any other label), and then pushed up to your Docker<br />
+Registry (Docker Hub, Azure Container Registry, DTR, etc.)</p>
+</li>
+</ol>
+<p><strong>Implement a CI pipeline with Azure DevOps Services and the Docker extension for</strong><br />
+<strong>Azure DevOps Services</strong></p>
+<p>Visual Studio Azure DevOps Services contains Build &amp; Release Templates that you can use in your<br />
+CI/CD pipeline with which you can build Docker images, push Docker images to an authenticated<br />
+Docker registry, run Docker images, or run other operations offered by the Docker CLI. It also adds a<br />
+Docker Compose task that you can use to build, push, and run multi-container Docker applications, or<br />
+run other operations offered by the Docker Compose CLI, as shown in Figure 5-3.</p>
+<p>78 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<p><em>Figure 5-3. The Docker CI pipeline in Azure DevOps Services including Build &amp; Release Templates and associated tasks.</em></p>
+<p>You can use these templates and tasks to construct your CI/CD artifacts to Build / Test and Deploy in<br />
+Azure Service Fabric, Azure Kubernetes Service, and similar offerings.</p>
+<p>With these Visual Studio Team Services tasks, a build Linux-Docker Host/VM provisioned in Azure and<br />
+your preferred Docker registry (Azure Container Registry, Docker Hub, private Docker DTR, or any<br />
+other Docker registry) you can assemble your Docker CI pipeline in a very consistent way.</p>
+<p><em><strong>Requirements:</strong></em></p>
+<ul>
+<li>
+<p>Azure DevOps Services, or for on-premises installations, Team Foundation Server 2015<br />
+Update 3 or later.</p>
+</li>
+<li>
+<p>An Azure DevOps Services agent that has the Docker binaries.</p>
+</li>
+</ul>
+<p>An easy way to create one of these agents is to use Docker to run a container based on the<br />
+Azure DevOps Services agent Docker image.</p>
+<p>79 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<p><strong>Implement a CI pipeline with GitHub Actions</strong></p>
+<p>GitHub Actions allow you to create automation scripts that can build Docker images, push Docker<br />
+images to an authenticated Docker registry, run Docker images, or run other operations offered by<br />
+the Docker CLI.</p>
+<p><a href="https://github.com/marketplace/actions/azure-login">You can use public Actions (such as Azure Login) and run (shell) commands to construct your CI/CD</a><br />
+artifacts to Build / Test and Deploy in Azure Service Fabric, Azure Kubernetes Service, and similar<br />
+offerings.</p>
+<p>With these Actions, a build Linux-Docker Host/VM provisioned in Azure and your preferred Docker<br />
+registry (Azure Container Registry, Docker Hub, private Docker DTR, or any other Docker registry) you<br />
+can assemble your Docker CI pipeline in a very consistent way.</p>
+<p><strong>Integrate, test, and validate multi-container Docker applications</strong></p>
+<p>Typically, most Docker applications are composed of multiple containers rather than a single<br />
+container. A good example is a microservices-oriented application for which you would have one<br />
+container per microservice. But, even without strictly following the microservices approach patterns,<br />
+it’s probable that your Docker application would be composed of multiple containers or services.</p>
+<p>Therefore, after building the application containers in the CI pipeline, you also need to deploy,<br />
+integrate, and test the application as a whole with all of its containers within an integration Docker<br />
+host or even into a test cluster to which your containers are distributed.</p>
+<p>If you’re using a single host, you can use Docker commands such as docker-compose to build and<br />
+deploy related containers to test and validate the Docker environment in a single VM. But, if you’re<br />
+working with an orchestrator cluster like DC/OS, Kubernetes, or Docker Swarm, you need to deploy<br />
+your containers through a different mechanism or orchestrator, depending on your selected<br />
+cluster/scheduler.</p>
+<p>The following are several types of tests that you can run against Docker containers:</p>
+<ul>
+<li>
+<p>Unit tests for Docker containers</p>
+</li>
+<li>
+<p>Testing groups of interrelated applications or microservices</p>
+</li>
+<li>
+<p>Test in production and “canary” releases</p>
+</li>
+</ul>
+<p>The important point is that when running integration and functional tests, you must run those tests<br />
+from outside of the containers. Tests are not contained or run in the containers you’re deploying,<br />
+because the containers are based on static images that should be exactly like the ones you’ll be<br />
+deploying to production.</p>
+<p>80 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<p>A practical option when testing more advanced scenarios, like including several clusters (test cluster,<br />
+staging cluster, and production cluster) is to publish the images to a registry, so it can be tested in<br />
+various clusters.</p>
+<p><strong>Push the custom application Docker image into your global Docker Registry</strong></p>
+<p>After the Docker images have been tested and validated, you’ll want to tag and publish them to your<br />
+Docker registry. The Docker registry is a critical piece in the Docker application life cycle because it’s<br />
+the central place where you store your custom test (also known as “blessed images”) to be deployed<br />
+into QA and production environments.</p>
+<p>Similar to how the application code stored in your SCC repository (Git, etc.) is your “source of truth,”<br />
+the Docker registry is your “source of truth” for your binary application or bits to be deployed to the<br />
+QA or production environments.</p>
+<p>Typically, you might want to have your private repositories for your custom images either in a private<br />
+repository in Azure Container Registry or in an on-premises registry like Docker Trusted Registry, or in<br />
+a public-cloud registry with restricted access (like Docker Hub), although in this last case if your code<br />
+is not open source, you must trust the vendor’s security. Either way, the method you use is similar and<br />
+is based on the docker push command, as shown in Figure 5-4.</p>
+<p>81 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<p><em>Figure 5-4. Publishing custom images to Docker Registry</em></p>
+<p>82 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<p>In step 3, for building integration and testing (CI) you might publish the resulting docker images to a<br />
+private or public registry. There are multiple offerings of Docker registries from cloud vendors like<br />
+Azure Container Registry, Amazon Web Services Container Registry, Google Container Registry,<br />
+GitHub Container Registry, Quay Registry, and so on.</p>
+<p>Using the Docker tasks, you can push a set of service images defined by a docker-compose.yml file,<br />
+with multiple tags, to an authenticated Docker registry (like Azure Container Registry), as shown in<br />
+Figure 5-5.</p>
+<p><em>Figure 5-5. Using Azure DevOps Services to publishing custom images to a Docker Registry</em></p>
+<h4><strong>Step 4: CD, Deploy</strong></h4>
+<p>The immutability of Docker images ensures a repeatable deployment with what’s developed, tested<br />
+through CI, and run in production. After you have the application Docker images published in your<br />
+Docker registry (either private or public), you can deploy them to the several environments that you<br />
+might have (production, QA, staging, etc.) from your CD pipeline by using Azure DevOps Services<br />
+pipeline tasks, Azure DevOps Services Release Management or GitHub Actions.</p>
+<p>83 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<p>However, at this point it depends on what kind of Docker application you’re deploying. Deploying a<br />
+simple application (from a composition and deployment point of view) like a monolithic application<br />
+comprising a few containers or services and deployed to a few servers or VMs is different from<br />
+deploying a more complex application like a microservices-oriented application with hyperscale<br />
+capabilities. These two scenarios are explained in the following sections.</p>
+<p><strong>Deploying composed Docker applications to multiple Docker environments</strong></p>
+<p>Let’s look first at the less-complex scenario: deploying to simple Docker hosts (VMs or servers) in a<br />
+single environment or multiple environments (QA, staging, and production). In this scenario, internally<br />
+your CD pipeline can use docker-compose (from your Azure DevOps Services deployment tasks) to<br />
+deploy the Docker applications with its related set of containers or services, as illustrated in Figure 5-6.</p>
+<p><em>Figure 5-6. Deploying application containers to simple Docker host environments registry</em></p>
+<p>Figure 5-7 highlights how you can connect your build CI to QA/test environments via Azure DevOps<br />
+Services by clicking Docker Compose in the Add Task dialog box. However, when deploying to staging<br />
+or production environments, you would usually use Release Management features handling multiple<br />
+environments (like QA, staging, and production). If you’re deploying to single Docker hosts, it is using<br />
+the Azure DevOps Services “Docker Compose” task (which is invoking the docker-compose up<br />
+command under the hood). If you’re deploying to Azure Kubernetes Service (AKS), it uses the Docker</p>
+<p>84 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<p>Deployment task, as explained in the section that follows. Similar steps can be built for deployment<br />
+using GitHub Actions.</p>
+<p><em>Figure 5-7. Adding a Docker Compose task in an Azure DevOps Services pipeline or GitHub workflow</em></p>
+<p>When you create a release in Azure DevOps Services, it takes a set of input artifacts. These artifacts are<br />
+intended to be immutable for the lifetime of the release, across all environments. When you introduce<br />
+containers, the input artifacts identify images in a registry to deploy. Depending on how these images<br />
+are identified, they are not guaranteed to remain the same throughout the duration of the release, the<br />
+most obvious case being when you reference myimage:latest from a docker-compose file.</p>
+<p>The Azure DevOps Services templates give you the ability to generate build artifacts that contain<br />
+specific registry image digests that are guaranteed to uniquely identify the same image binary. These<br />
+are what you really want to use as input to a release. You can invoke docker-compose in a run step<br />
+inside GitHub Actions to accomplish the same goal.</p>
+<p><strong>Managing releases to Docker environments by using Azure DevOps Services</strong><br />
+<strong>Release Management or GitHub Actions</strong></p>
+<p>Through the Azure DevOps Services templates, you can build a new image, publish it to a Docker<br />
+registry, run it on Linux or Windows hosts, and use commands such as docker-compose to deploy<br />
+multiple containers as an entire application, all through the Azure DevOps Services Release<br />
+Management capabilities intended for multiple environments, as shown in Figure 5-8.</p>
+<p>85 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<p><em>Figure 5-8. Configuring Azure DevOps Services Docker Compose tasks from Azure DevOps Services Release</em><br />
+<em>Management</em></p>
+<p>However, keep in mind that the scenario shown in Figure 5-6 and implemented in Figure 5-8 is a<br />
+simple one (it’s deploying to single Docker hosts and VMs, and there will be a single container or<br />
+instance per image) and probably should be used only for development or test scenarios. In most<br />
+enterprise production scenarios, you would want to have High Availability (HA) and easy-to-manage<br />
+scalability by load balancing across multiple nodes, servers, and VMs, plus “intelligent failovers” so if a<br />
+server or node fails, its services and containers will be moved to another host server or VM. In that<br />
+case, you need more advanced technologies such as container clusters, orchestrators, and schedulers.<br />
+Thus, the way to deploy to those clusters is by handling the advanced scenarios explained in the next<br />
+section.</p>
+<p><a href="https://docs.github.com/actions/reference/environments">GitHub Actions can be used in the same manner, including the use of environments for approvals.</a></p>
+<p><strong>Deploying Docker applications to Docker clusters</strong></p>
+<p>The nature of distributed applications requires compute resources that are also distributed. To have<br />
+production-scale capabilities, you need to have clustering capabilities that provide high scalability and<br />
+high availability based on pooled resources.</p>
+<p>You could deploy containers manually to those clusters from a CLI tool or a web UI, but you should<br />
+reserve that kind of manual work to spot deployment testing or management purposes like scalingout or monitoring.</p>
+<p>From a CD point of view, you can use Azure DevOps Services or GitHub Actions to run specially made<br />
+deployment tasks from your environments that will deploy your containerized applications to<br />
+distributed clusters in Container Service, as illustrated in Figure 5-9.</p>
+<p>86 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<p><em>Figure 5-9. Deploying distributed applications to Container Service</em></p>
+<p>Initially, when deploying to certain clusters or orchestrators, you would traditionally use specific<br />
+deployment scripts and mechanisms per each orchestrator (that is, Kubernetes and Service Fabric<br />
+have different deployment mechanisms) instead of the simpler and easy-to-use docker-compose tool<br />
+based on the docker-compose.yml definition file. However, thanks to the Azure DevOps Services<br />
+Docker Deploy task, shown in Figure 5-10, now you can also deploy to the supported orchestrators by<br />
+just using your familiar docker-compose.yml file because the tool performs that “translation” for you<br />
+(from your docker-compose.yml file to the format needed by the orchestrator).</p>
+<p>87 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<p><em>Figure 5-10. Adding the Deploy to Kubernetes task to your Environment</em></p>
+<p>Figure 5-11 demonstrates how you can edit the Deploy to Kubernetes task with the sections available<br />
+for configuration. This is the task that will retrieve your ready-to-use custom Docker images to be<br />
+deployed as containers in the cluster.</p>
+<p><em>Figure 5-11. Docker Deploy task definition deploying to ACS DC/OS</em></p>
+<p>88 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<h4><strong>Step 5: Run and manage</strong></h4>
+<p>Because running and managing applications at enterprise-production level is a major subject in and of<br />
+itself, and due to the type of operations and people working at that level (IT operations) as well as the<br />
+large scope of this area, the entire next chapter is devoted to explaining it.</p>
+<h4><strong>Step 6: Monitor and diagnose</strong></h4>
+<p>This topic also is covered in the next chapter as part of the tasks that IT performs in production<br />
+systems; however, is important to highlight that the insights obtained in this step must feed back to<br />
+the development team so that the application is constantly improved. From that point of view, it’s also<br />
+part of DevOps, although the tasks and operations are commonly performed by IT.</p>
+<p>Only when monitoring and diagnostics are 100% within the realm of DevOps are the monitoring<br />
+processes and analytics performed by the development team against testing or beta environments.<br />
+This is done either by performing load testing or by monitoring beta or QA environments, where beta<br />
+testers are trying the new versions.</p>
+<h3>Create CI/CD pipelines in Azure DevOps Services for a .NET application on Containers and deploying to a Kubernetes cluster</h3>
+<p>In Figure 5-12 you can see the end-to-end DevOps scenario covering the code management, code<br />
+compilation, Docker images build, Docker images push to a Docker registry and finally the<br />
+deployment to a Kubernetes cluster in Azure.</p>
+<p>89 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<p><em>Figure 5-12. CI/CD scenario creating Docker images and deploying to a Kubernetes cluster in Azure</em></p>
+<p>It is important to highlight that the two pipelines, build/CI, and release/CD, are connected through the<br />
+Docker Registry (such as Docker Hub or Azure Container Registry). The Docker registry is one of the<br />
+main differences compared to a traditional CI/CD process without Docker.</p>
+<p>As shown in Figure 5-13, the first phase is the build/CI pipeline. In Azure DevOps Services you can<br />
+create build/CI pipelines that will compile the code, create the Docker images, and push them to a<br />
+Docker Registry like Docker Hub or Azure Container Registry.</p>
+<p>90 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<p><em>Figure 5-13. Build/CI pipeline in Azure DevOps building Docker images and pushing images to a Docker registry</em></p>
+<p>The second phase is to create a deployment/release pipeline. In Azure DevOps Services, you can easily<br />
+create a deployment pipeline targeting a Kubernetes cluster by using the Kubernetes tasks for Azure<br />
+DevOps Services, as shown in Figure 5-14.</p>
+<p><em>Figure 5-14. Release/CD pipeline in Azure DevOps Services deploying to a Kubernetes cluster</em></p>
+<p>[!Walkthrough] Deploying eShopModernized to Kubernetes:</p>
+<p>91 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<p>For a detailed walkthrough of Azure DevOps CI/CD pipelines deploying to Kubernetes, see this post:<br />
+<a href="https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-CI-CD)">https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-</a><br />
+<a href="https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-CI-CD)">Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-CI-CD)</a></p>
+<p>92 CHAPTER 5 | Docker application DevOps workflow with Microsoft tools</p>
+<p><strong>CHAPTER</strong></p>
+<h1>6</h1>
+<h2>Run, manage, and monitor Docker production environments</h2>
+<p>Vision: Enterprise applications need to run with high availability and high scalability; IT operations<br />
+need to be able to manage and monitor the environments and the applications themselves.</p>
+<p>This last pillar in the containerized Docker applications life cycle is centered on how you can run,<br />
+manage, and monitor your applications in scalable, high availability (HA) production environments.</p>
+<p>The way you run your containerized applications in production (infrastructure architecture and<br />
+platform technologies) is very much related and based on the chosen architecture and development<br />
+platforms discussed in Chapter 1 of this e-book.</p>
+<p>This chapter examines specific products and technologies from Microsoft and other vendors that you<br />
+can use to effectively run scalable, HA distributed applications plus how you can manage and monitor<br />
+them from the IT perspective.</p>
+<h3>Run composed and microservices-based applications in production environments</h3>
+<p>Applications composed by multiple microservices do need to be deployed into orchestrator clusters in<br />
+order to simplify the complexity of deployment and make it viable from an IT point of view. Without<br />
+an orchestrator cluster, it would be difficult to deploy and scale out a complex microservices<br />
+application.</p>
+<h4><strong>Introduction to orchestrators, schedulers, and container clusters</strong></h4>
+<p>Earlier in this e-book, <em>clusters</em> and <em>schedulers</em> were introduced as part of the discussion on software<br />
+architecture and development. Kubernetes and Service Fabric are examples of Docker clusters. Both of<br />
+these orchestrators can run as a part of the infrastructure provided by Microsoft Azure Kubernetes<br />
+Service.</p>
+<p>93 CHAPTER 6 | Run, manage, and monitor Docker production environments</p>
+<p>When applications are scaled-out across multiple host systems, the ability to manage each host<br />
+system and abstract away the complexity of the underlying platform becomes attractive. That’s<br />
+precisely what orchestrators and schedulers provide. Let’s take a brief look at them here:</p>
+<ul>
+<li><strong>Schedulers</strong> . “Scheduling” refers to the ability for an administrator to load a service file onto<br />
+a host system that establishes how to run a specific container. Launching containers in a<br />
+Docker cluster tends to be known as scheduling. Although scheduling refers to the specific act<br />
+of loading the service definition, in a more general sense, schedulers are responsible for<br />
+hooking into a host’s init system to manage services in whatever capacity needed.</li>
+</ul>
+<p>A cluster scheduler has multiple goals: using the cluster’s resources efficiently, working with<br />
+user-supplied placement constraints, scheduling applications rapidly to not leave them in a<br />
+pending state, having a degree of “fairness,” being robust to errors, and always be available.</p>
+<ul>
+<li><strong>Orchestrators</strong> . Platforms extend life-cycle management capabilities to complex, multicontainer workloads deployed on a cluster of hosts. By abstracting the host infrastructure,<br />
+orchestration tools give users a way to treat the entire cluster as a single deployment target.</li>
+</ul>
+<p>The process of orchestration involves tooling and a platform that can automate all aspects of<br />
+application management from initial placement or deployment per container; moving<br />
+containers to different hosts depending on its host’s health or performance; versioning and<br />
+rolling updates and health monitoring functions that support scaling and failover; and many<br />
+more.</p>
+<p>Orchestration is a broad term that refers to container scheduling, cluster management, and<br />
+possibly the provisioning of additional hosts.</p>
+<p>The capabilities provided by orchestrators and schedulers are complex to develop and create from<br />
+scratch, therefore you usually would want to use orchestration solutions offered by vendors.</p>
+<h3>Manage production Docker environments</h3>
+<p>Cluster management and orchestration is the process of controlling a group of hosts. This can involve<br />
+adding and removing hosts from a cluster, getting information about the current state of hosts and<br />
+containers, and starting and stopping processes. Cluster management and orchestration are closely<br />
+tied to scheduling because the scheduler must have access to each host in the cluster in order to<br />
+schedule services. For this reason, the same tool is often used for both purposes.</p>
+<h4><strong>Container Service and management tools</strong></h4>
+<p>Container Service provides rapid deployment of popular open-source container clustering and<br />
+orchestration solutions. It uses Docker images to ensure that your application containers are fully<br />
+portable. By using Container Service, you can deploy DC/OS (powered by Mesosphere and Apache<br />
+Mesos) and Docker Swarm clusters with Azure Resource Manager templates or the Azure portal to<br />
+ensure that you can scale these applications to thousands—even tens of thousands—of containers.</p>
+<p>You deploy these clusters by using Azure Virtual Machine Scale Sets, and the clusters take advantage<br />
+of Azure networking and storage offerings. To access Container Service, you need an Azure</p>
+<p>94 CHAPTER 6 | Run, manage, and monitor Docker production environments</p>
+<p>subscription. With Container Service, you can take advantage of the enterprise-grade features of<br />
+Azure while still maintaining application portability, including at the orchestration layers.</p>
+<p>Table 6-1 lists common management tools related to their orchestrators, schedulers, and clustering<br />
+platform.</p>
+<p><strong>Table 6-1</strong> . Docker management tools</p>
+<table>
+<thead>
+<tr>
+<th>Management tools</th>
+<th>Description</th>
+<th>Related orchestrators</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Azure Monitor for Containers</td>
+<td>Azure dedicated<br>Kubernetes<br>management tool</td>
+<td>Azure Kubernetes Services (AKS)</td>
+</tr>
+<tr>
+<td>Kubernetes Web UI<br>(dashboard)</td>
+<td>Kubernetes<br>management tool,<br>can monitor and<br>manage local<br>Kubernetes cluster</td>
+<td>Azure Kubernetes Service (AKS)<br>Local Kubernetes</td>
+</tr>
+<tr>
+<td>Azure portal for Service Fabric <br>Azure Service Fabric Explorer</td>
+<td>Online and desktop<br>version for managing<br>Service Fabric<br>clusters, on Azure, on<br>premises, local<br>development, and<br>other clouds</td>
+<td>Azure Service Fabric</td>
+</tr>
+<tr>
+<td>Container Monitoring (Azure<br>Monitor)</td>
+<td>General container<br>management y<br>monitoring solution.<br>Can manage<br>Kubernetes clusters<br>throughAzure<br>Monitor for<br>Containers.</td>
+<td>Azure Service Fabric<br>Azure Kubernetes Service (AKS)<br>Mesosphere DC/OS and others.</td>
+</tr>
+</tbody>
+</table>
+<h4><strong>Azure Service Fabric</strong></h4>
+<p><a href="https://azure.microsoft.com/services/service-fabric/">Another choice for cluster-deployment and management is Azure Service Fabric. Service Fabric is a</a><br />
+Microsoft microservices platform that includes container orchestration as well as developer<br />
+programming models to build highly scalable microservices applications. Service Fabric supports<br />
+Docker in Linux and Windows Containers and can run in Windows and Linux servers.</p>
+<p>The following are Service Fabric management tools:</p>
+<ul>
+<li>
+<p><a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-creation-via-portal">Azure portal for Service Fabric cluster-related operations (create/update/delete) a cluster or</a><br />
+configure its infrastructure (VMs, load balancer, networking, etc.)</p>
+</li>
+<li>
+<p><a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-visualizing-your-cluster">Azure Service Fabric Explorer is a specialized web UI and desktop multi-platform tool that</a><br />
+provides insights and certain operations on the Service Fabric cluster, from the nodes/VMs<br />
+point of view and from the application and services point of view.</p>
+</li>
+</ul>
+<p>95 CHAPTER 6 | Run, manage, and monitor Docker production environments</p>
+<h3>Monitor containerized application services</h3>
+<p>It’s critical for applications split into multiple containers and microservices to have a way to monitor<br />
+and analyze the behavior of the whole application.</p>
+<h4><strong>Azure Monitor</strong></h4>
+<p><a href="https://azure.microsoft.com/services/monitor/">Azure Monitor</a> is an extensible analytics service that monitors your live application. It helps you to<br />
+detect and diagnose performance issues and to understand what users actually do with your app. It’s<br />
+designed for developers, with the intent of helping you to continuously improve the performance and<br />
+usability of your services or applications. Azure Monitor works with both web/services and standalone<br />
+apps on a wide variety of platforms like .NET, Java, Node.js and many other platforms, hosted onpremises or in the cloud.</p>
+<p><strong>Additional resources</strong></p>
+<ul>
+<li>
+<p><strong>Overview of Azure Monitor</strong><br />
+<a href="https://docs.microsoft.com/azure/azure-monitor/overview">https://learn.microsoft.com/azure/azure-monitor/overview</a></p>
+</li>
+<li>
+<p><strong>What is Application Insights?</strong><br />
+<a href="https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview">https://learn.microsoft.com/azure/azure-monitor/app/app-insights-overview</a></p>
+</li>
+<li>
+<p><strong>What is Azure Monitor Metrics?</strong><br />
+<a href="https://docs.microsoft.com/azure/azure-monitor/platform/data-platform-metrics">https://learn.microsoft.com/azure/azure-monitor/platform/data-platform-metrics</a></p>
+</li>
+<li>
+<p><strong>Container Monitoring solution in Azure Monitor</strong><br />
+<a href="https://docs.microsoft.com/azure/azure-monitor/insights/containers">https://learn.microsoft.com/azure/azure-monitor/insights/containers</a></p>
+</li>
+</ul>
+<h4><strong>Security and backup services</strong></h4>
+<p>There are many support chores with lots of details that you have to handle to ensure your applications<br />
+and infrastructure are in top notch condition to support business needs, and the situation becomes<br />
+more complicated in the microservices realm, so you need a way to have both high-level and detailed<br />
+views when you need to take action.</p>
+<p>Azure has the tools to manage and provide a unified view of four critical aspects of both your cloud<br />
+and on-premises resources:</p>
+<ul>
+<li>
+<p><strong>Security</strong> <a href="https://azure.microsoft.com/services/security-center/">. With Azure Security Center.</a></p>
+<ul>
+<li>
+<p>Get full visibility and control over the security of your virtual machines, apps, and<br />
+workloads.</p>
+</li>
+<li>
+<p>Centralize the management of your security policies and integrate existing processes<br />
+and tools.</p>
+</li>
+<li>
+<p>Detect real threats with advanced analytics.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Backup</strong> <a href="https://azure.microsoft.com/services/backup/">. With Azure Backup.</a></p>
+<ul>
+<li>
+<p>Avoid costly business disruptions, meet compliance goals, and protect your data<br />
+against ransomware and human errors.</p>
+</li>
+<li>
+<p>Keep your backup data encrypted in transit and at rest.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>96 CHAPTER 6 | Run, manage, and monitor Docker production environments</p>
+<pre><code> - Ensure access based on multifactor authentication to prevent unauthorized use.
+</code></pre>
+<ul>
+<li><strong>On-premises resources</strong> <a href="https://azure.microsoft.com/solutions/hybrid-cloud-app/">. With hybrid cloud solutions.</a></li>
+</ul>
+<p>97 CHAPTER 6 | Run, manage, and monitor Docker production environments</p>
+<p><strong>CHAPTER</strong></p>
+<h1>7</h1>
+<h2>Containerized Docker Application Lifecycle key takeaways</h2>
+<ul>
+<li>
+<p>Container-based solutions provide important cost-saving benefits because containers solve<br />
+deployment problems caused by dependency failures in production environments, thereby<br />
+improving DevOps and production operations significantly.</p>
+</li>
+<li>
+<p>Docker has become the de facto standard in the container industry and is supported by the<br />
+most significant vendors in the Linux and Windows ecosystems, including Microsoft. In the<br />
+future, Docker will be ubiquitous in any datacenter in the cloud or on-premises.</p>
+</li>
+<li>
+<p>A Docker container is becoming the standard unit of deployment for any server-based<br />
+application or service.</p>
+</li>
+<li>
+<p>Docker orchestrators like the ones provided in Azure Kubernetes Service (AKS) and Azure<br />
+Service Fabric are fundamental and indispensable for any microservices-based or multicontainer applications that have significant complexity and scalability needs.</p>
+</li>
+<li>
+<p>An end-to-end DevOps environment that supports Continuous Integration/Continuous<br />
+Deployment (CI/CD) and connects to the production Docker environments can provide agility<br />
+and ultimately improve the time to market of your applications.</p>
+</li>
+<li>
+<p>Azure DevOps Services greatly simplifies your DevOps environment by deploying to Docker<br />
+environments from your CI/CD pipelines. This statement applies to simple Docker<br />
+environments as well as to advanced microservice and container orchestrators based on<br />
+Azure.</p>
+</li>
+</ul>
+<p>98 CHAPTER 7 | Containerized Docker Application Lifecycle key takeaways</p>

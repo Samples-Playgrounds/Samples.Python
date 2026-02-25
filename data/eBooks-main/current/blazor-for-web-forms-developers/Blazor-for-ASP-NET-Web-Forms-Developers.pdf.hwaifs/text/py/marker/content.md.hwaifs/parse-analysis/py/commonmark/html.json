@@ -1,0 +1,1180 @@
+{
+    "html": [
+        {}
+    ],
+    "body": [
+        {}
+    ],
+    "p": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "img": [
+        {
+            "src": "_page_0_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_0_Picture_2.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_13_Figure_4.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_14_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_16_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_17_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_26_Figure_3.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_26_Picture_5.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_27_Figure_0.jpeg",
+            "alt": ""
+        }
+    ],
+    "h1": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "strong": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "a": [
+        {
+            "href": "https://aka.ms/blazor-ebook-changelog"
+        },
+        {
+            "href": "https://www.microsoft.com/"
+        },
+        {
+            "href": "https://github.com/danroth27"
+        },
+        {
+            "href": "https://github.com/csharpfritz"
+        },
+        {
+            "href": "https://github.com/twsouthwick"
+        },
+        {
+            "href": "https://github.com/scottaddie"
+        },
+        {
+            "href": "https://github.com/ardalis"
+        },
+        {
+            "href": "https://blazor.net/"
+        },
+        {
+            "href": "https://github.com/dotnet-architecture/eshoponblazor"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/"
+        },
+        {
+            "href": "https://blazor.net/"
+        },
+        {
+            "href": "https://devblogs.microsoft.com/dotnet/announcing-net-5-0/"
+        },
+        {
+            "href": "https://devblogs.microsoft.com/dotnet/net-core-is-the-future-of-net/"
+        },
+        {
+            "href": "https://github.com/microsoft/referencesource"
+        },
+        {
+            "href": "https://blazor.net/"
+        },
+        {
+            "href": "#page-15-0"
+        },
+        {
+            "href": "#page-31-0"
+        },
+        {
+            "href": "https://docs.microsoft.com/dotnet/api/system.platformnotsupportedexception"
+        },
+        {
+            "href": "#page-13-0"
+        },
+        {
+            "href": "https://docs.microsoft.com/dotnet/api/system.web.ui.updatepanel"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/blazor/hosting-models"
+        },
+        {
+            "href": "https://docs.microsoft.com/en-us/dotnet/standard/net-standard"
+        },
+        {
+            "href": "https://docs.microsoft.com/en-us/dotnet/standard/net-standard"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/host-and-deploy/linux-nginx"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/host-and-deploy/linux-apache"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/host-and-deploy/blazor/"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/host-and-deploy/blazor/"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/blazor/get-started"
+        },
+        {
+            "href": "#page-67-0"
+        },
+        {
+            "href": "#page-31-0"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/blazor/fundamentals/dependency-injection?pivots=webassembly"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/blazor/fundamentals/dependency-injection?pivots=webassembly"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/blazor/debug"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/blazor/debug"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/mvc/views/razor"
+        },
+        {
+            "href": "#page-59-0"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/blazor/javascript-interop"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/blazor/javascript-interop"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/blazor/components"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/blazor/routing#route-constraints"
+        },
+        {
+            "href": "https://docs.microsoft.com/aspnet/core/blazor/routing#uri-and-navigation-state-helpers"
+        },
+        {
+            "href": "asp:ContentPlaceHolder"
+        },
+        {
+            "href": "#page-49-0"
+        },
+        {
+            "href": "#page-23-2"
+        }
+    ],
+    "h4": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "em": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "h2": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "span": [
+        {
+            "id": "page-8-0"
+        },
+        {
+            "id": "page-9-0"
+        },
+        {
+            "id": "page-10-0"
+        },
+        {
+            "id": "page-10-1"
+        },
+        {
+            "id": "page-11-0"
+        },
+        {
+            "id": "page-11-1"
+        },
+        {
+            "id": "page-12-0"
+        },
+        {
+            "id": "page-12-1"
+        },
+        {
+            "id": "page-13-0"
+        },
+        {
+            "id": "page-15-0"
+        },
+        {
+            "id": "page-15-1"
+        },
+        {
+            "id": "page-16-0"
+        },
+        {
+            "id": "page-17-0"
+        },
+        {
+            "id": "page-18-0"
+        },
+        {
+            "id": "page-19-0"
+        },
+        {
+            "id": "page-19-1"
+        },
+        {
+            "id": "page-20-0"
+        },
+        {
+            "id": "page-22-0"
+        },
+        {
+            "id": "page-22-1"
+        },
+        {
+            "id": "page-22-2"
+        },
+        {
+            "id": "page-23-0"
+        },
+        {
+            "id": "page-23-1"
+        },
+        {
+            "id": "page-23-2"
+        },
+        {
+            "id": "page-25-0"
+        },
+        {
+            "id": "page-25-1"
+        },
+        {
+            "id": "page-28-0"
+        },
+        {
+            "id": "page-28-1"
+        },
+        {
+            "id": "page-28-2"
+        },
+        {
+            "id": "page-30-0"
+        },
+        {
+            "id": "page-31-0"
+        },
+        {
+            "id": "page-31-1"
+        },
+        {
+            "id": "page-35-0"
+        },
+        {
+            "id": "page-35-1"
+        },
+        {
+            "id": "page-36-0"
+        },
+        {
+            "id": "page-36-1"
+        },
+        {
+            "id": "page-37-0"
+        },
+        {
+            "id": "page-37-1"
+        },
+        {
+            "id": "page-39-0"
+        },
+        {
+            "id": "page-40-0"
+        },
+        {
+            "id": "page-41-0"
+        },
+        {
+            "id": "page-41-1"
+        },
+        {
+            "id": "page-42-0"
+        },
+        {
+            "id": "page-42-1"
+        },
+        {
+            "id": "page-42-2"
+        },
+        {
+            "id": "page-43-0"
+        },
+        {
+            "id": "page-43-1"
+        },
+        {
+            "id": "page-43-2"
+        },
+        {
+            "id": "page-44-0"
+        },
+        {
+            "id": "page-44-1"
+        },
+        {
+            "id": "page-45-0"
+        },
+        {
+            "id": "page-46-0"
+        },
+        {
+            "id": "page-47-0"
+        },
+        {
+            "id": "page-48-0"
+        },
+        {
+            "id": "page-49-0"
+        },
+        {
+            "id": "page-49-1"
+        },
+        {
+            "id": "page-50-0"
+        },
+        {
+            "id": "page-50-1"
+        }
+    ],
+    "ul": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "li": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "ol": [
+        {},
+        {
+            "start": "2"
+        }
+    ],
+    "h3": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "pre": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "code": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "packagereference": [
+        {}
+    ],
+    "br": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "div": [
+        {}
+    ],
+    "script": [
+        {
+            "runat": "server"
+        },
+        {
+            "runat": "server"
+        },
+        {}
+    ],
+    "pagetitle": [
+        {},
+        {}
+    ],
+    "errorboundary": [
+        {},
+        {}
+    ],
+    "tvalue": [
+        {}
+    ],
+    "t": [
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "base": [
+        {}
+    ]
+}

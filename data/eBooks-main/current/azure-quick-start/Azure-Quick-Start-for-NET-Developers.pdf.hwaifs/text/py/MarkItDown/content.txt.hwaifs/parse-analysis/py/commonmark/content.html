@@ -1,0 +1,956 @@
+<p>Azure</p>
+<p>Azure Quick Start Guide
+for .NET Developers</p>
+<p>Contents</p>
+<p>4</p>
+<p>4</p>
+<p>Azure for .NET developers</p>
+<p>What can Azure do for you?</p>
+<p>7</p>
+<p>Getting Started with Azure services</p>
+<p>7</p>
+<p>7</p>
+<p>8</p>
+<p>9</p>
+<p>Running your .NET applications in Azure</p>
+<p>Azure App Services</p>
+<p>There are several different types of App Service apps.</p>
+<p>Azure Functions</p>
+<p>10</p>
+<p>Azure Logic Apps</p>
+<p>11</p>
+<p>12</p>
+<p>Azure Virtual Machines</p>
+<p>A word about microservices and containers</p>
+<p>13   Which frameworks and technologies can you use in which Azure service?</p>
+<p>14   Storing your data in Azure</p>
+<p>15</p>
+<p>16</p>
+<p>17</p>
+<p>18</p>
+<p>19</p>
+<p>Azure SQL Database</p>
+<p>Azure Cosmos DB</p>
+<p>Azure Storage</p>
+<p>Let’s explore the different types of Azure Storage:</p>
+<p>Azure Databases for MySQL, PostgreSQL, and MariaDB</p>
+<p>20</p>
+<p>Azure SQL Data Warehouse and Azure Data Lake Store</p>
+<p>2</p>
+<p>21   Securing your .NET applications in Azure</p>
+<p>21</p>
+<p>22</p>
+<p>22</p>
+<p>23</p>
+<p>Azure Active Directory
+Azure Key Vault</p>
+<p>Managed Service Identity
+Azure Advisor</p>
+<p>23   Other Azure services</p>
+<p>23</p>
+<p>Enhance your application with performance</p>
+<p>23</p>
+<p>24</p>
+<p>24</p>
+<p>25</p>
+<p>25</p>
+<p>25</p>
+<p>Machine Learning</p>
+<p>Internet of Things (IoT)</p>
+<p>Data Analytics</p>
+<p>Messaging</p>
+<p>Media Services</p>
+<p>Monitoring</p>
+<p>27   Tools for developing, debugging and troubleshooting</p>
+<p>27</p>
+<p>28</p>
+<p>29</p>
+<p>31</p>
+<p>32</p>
+<p>33</p>
+<p>Visual Studio and Azure</p>
+<p>Cloud Explorer</p>
+<p>Publish to Azure</p>
+<p>Snapshot Debugger</p>
+<p>Azure Storage Explorer</p>
+<p>Azure Storage Emulator</p>
+<p>3</p>
+<p>33</p>
+<p>35</p>
+<p>35</p>
+<p>36</p>
+<p>Azure Command-Line Interface</p>
+<p>Azure Functions Core Tools</p>
+<p>Cosmos DB Emulator</p>
+<p>Azure DevOps for build and deployment</p>
+<p>39   Summary and how to get started for free</p>
+<p>39</p>
+<p>Keep learning with an Azure free account</p>
+<p>40   About the team</p>
+<p>4</p>
+<p>Azure for .NET developers
+If you are a .NET developer or architect who wants to get started with Microsoft Azure,</p>
+<p>this book is for you! Written by developers for developers in the .NET ecosystem, this</p>
+<p>guide will show you how to get started with Azure and which services you can use to run</p>
+<p>your .NET applications and store your data in a more efficient and secure way.</p>
+<p>Before we dive in, let’s take a moment to see what the cloud, and Microsoft Azure in</p>
+<p>particular, can do for you.</p>
+<p>What can Azure do for you?</p>
+<p>Azure provides services that can help you accomplish many things. These range from</p>
+<p>the mundane—such as adding search functionality to your application or spinning up</p>
+<p>a new SQL database to connect to your recent .NET app—to more exotic projects</p>
+<p>such as implementing continuous integration (CI) and continuous deployment (CD)</p>
+<p>workflows. You also can automatically tune your database or set up push notifications</p>
+<p>to mobile devices, easily and quickly. These are just a few examples of some common</p>
+<p>projects that developers have repeatedly had to create for themselves but that are</p>
+<p>now available as a service. And you can use these services with little effort—almost</p>
+<p>like flipping a light switch! You can then focus on the pieces of your application that</p>
+<p>make it unique—the features that provide real added value for your users.</p>
+<p>Besides services, Azure offers compute resources in the form of virtual machines (VMs),</p>
+<p>containers, databases, web app services, and mobile services. You can use these to host</p>
+<p>applications or to provide a complete infrastructure for your users, most of which you</p>
+<p>can do through Visual Studio.</p>
+<p>The power of the cloud is that services and resources are incredibly robust and resilient.</p>
+<p>It is very unlikely that they will fail to run, because the cloud is smart and self-healing.</p>
+<p>With  Azure,  there  are  datacenters  all  over  the  world,  filled  with  tens  of  thousands  of</p>
+<p>servers. If one server fails, another takes over. If an entire datacenter were to fail (a highly</p>
+<p>unlikely scenario), another would take over. All this is possible because of the massive</p>
+<p>scale of the cloud.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>5</p>
+<p>One of the most compelling arguments in favor of the cloud is that you can scale up</p>
+<p>your services and resources almost infinitely, with just a few clicks of a button. You can’t</p>
+<p>do that with on-premises resources unless you’re prepared to spend enormous sums of</p>
+<p>money on capital equipment which would remain largely idle and staff to administer it</p>
+<p>all. You can scale globally without having to build data centers around the world by</p>
+<p>putting your services anywhere in the world eliminating latency and providing a high-</p>
+<p>performance experience to your users, regardless of where they are. It also means that</p>
+<p>you can keep your data where you need it to be, observing data residency</p>
+<p>requirements.</p>
+<p>Equally important, when you use cloud resources, you can scale back your services and</p>
+<p>resources when there is no longer high demand. This allows you to scale up and down</p>
+<p>even during the course of a normal day keeping applications economical and</p>
+<p>performant.</p>
+<p>In addition to massive scalability, off-the-shelf intelligent services, and pay-per-use</p>
+<p>efficiency, the cloud offers increased security. The cloud is used by millions of people,</p>
+<p>24x7, worldwide. Of course, it is also attacked by many people. Reputable and</p>
+<p>experienced cloud providers like Microsoft recognize the usage patterns of normal users</p>
+<p>and those of malicious actors. This means we know how to protect against both the</p>
+<p>most common and most unique attacks out there. Intelligent monitoring tools, machine</p>
+<p>learning algorithms, and artificial intelligence give cloud providers the ability to detect</p>
+<p>attacks in real time and stop them in their tracks.</p>
+<p>Decades of experience in security and massive-scale traffic, combined with top industry</p>
+<p>security expertise, make the cloud a much more secure environment than any on-</p>
+<p>premises datacenter.</p>
+<p>More info</p>
+<p>To read more about how Azure secures your applications and data,  read the official Azure
+Security blog ,  Azure Security Overview ,  and
+We’ve briefly explored reasons to begin your migration to the cloud and Microsoft Azure.
+Now, let’s examine which Azure services are useful for you for running and securing your</p>
+<p>how to get started with Azure Security
+.</p>
+<p>applications and storing your data.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>6</p>
+<p>Getting Started with Azure services
+Let’s explore some of the services that you can use for running your applications in</p>
+<p>Azure, storing your data in Azure, and securing your application with Azure.</p>
+<p>Running your .NET applications in Azure</p>
+<p>One of the first decisions that you need to make when you start with Azure is which</p>
+<p>service(s) to use to run your applications in Azure. There are many options. Let’s start by</p>
+<p>laying out which Azure services are most suitable for which application types in Table 1.</p>
+<p>Table 1: Which Azure services are best suited for which types of applications?</p>
+<p>App Service
+Web Apps</p>
+<p>App Service
+Mobile
+Apps</p>
+<p>Azure
+Functions</p>
+<p>Logic Apps</p>
+<p>Virtual
+Machines</p>
+<p>Azure
+Kubernetes
+Service (AKS)</p>
+<p>Container
+Instances</p>
+<ul>
+<li></li>
+<li></li>
+</ul>
+<p>Monolithic
+and N-Tier
+applications</p>
+<p>Mobile app
+back end</p>
+<p>Microservice
+architecture-
+based
+applications</p>
+<p>Business process
+orchestrations
+and workflows</p>
+<ul>
+<li>For lifting and shifting existing applications to Azure.</li>
+</ul>
+<p>Azure App Services</p>
+<p>One of the easiest and most powerful ways to host your applications in Azure is in Azure</p>
+<p>App Service. Azure App Service is a group of services that takes care of hosting your</p>
+<p>application and abstracting away the complexities of the operating system and</p>
+<p>infrastructure. They are highly available by default and will stay up and running for at</p>
+<p>least 99.95% of the time.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>7</p>
+<p>They share powerful features like automatic scaling, zero-downtime deployments, and</p>
+<p>easy authentication and authorization. They also allow you to debug your application</p>
+<p>while it is running in production (with the Snapshot Debugger) and work very well with</p>
+<p>Application Insights, which you can use to monitor every aspect of your app, from</p>
+<p>performance to usage.</p>
+<p>There are several different types of App Service apps.</p>
+<p>Azure Web Apps</p>
+<p>Running a .NET web application in Azure is very easy in Azure Web Apps. Web Apps act</p>
+<p>as a web server as a service, like IIS. And you can simply deploy your ASP.NET or</p>
+<p>ASP.NET Core application with Visual Studio to Web Apps and run it. These can be</p>
+<p>websites, APIs, or any other HTTP-driven application including Node.js, Python and Java</p>
+<p>applications.</p>
+<p>Once your application runs in an App Service web app, you can scale it up or down, add</p>
+<p>easy authentication, use deployment slots, enable continuous deployment, and use any</p>
+<p>of the other App Service features. By default, your application is available on the</p>
+<p>internet, without you needing to set up a domain name or configure DNS settings,</p>
+<p>although you can do that.</p>
+<p>Try it now  -  Get started by creating an ASP.NET Core web app in Azure</p>
+<p>Containers on App Services</p>
+<p>Developers who want the power of App Services but need to maintain a higher level of</p>
+<p>control over their environments can also run containers.  Both Linux and Windows</p>
+<p>containers are supported. You can deploy your own containers from the Azure</p>
+<p>Container Registry, a private Docker registry or public containers from the Docker Hub.</p>
+<p>This allows you to run a wide range of pre-configured applications from WordPress to</p>
+<p>Redis which can be deployed either as single containers or as part of a multi-container</p>
+<p>application. Windows container support also helps you migrate existing ASP.NET apps</p>
+<p>and WCF services that need access to the Windows OS, install custom components, or</p>
+<p>use the Global Assembly Cache (GAC).</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>8</p>
+<p>Azure Mobile Apps</p>
+<p>If you are building mobile applications, you will need a back end that the mobile app</p>
+<p>connects to. Usually, this is some sort of API that your app can use to retrieve and store</p>
+<p>data. Azure Mobile Apps provides you with such a back end. You can write it in C# or</p>
+<p>use any of the Quickstart applications.</p>
+<p>A mobile back end that runs in Azure Mobile Apps provides unique capabilities. For</p>
+<p>instance, you can use offline sync, which enables the mobile app to continue working</p>
+<p>when there is no connection to the back end and sync changes once the connection is</p>
+<p>restored. And with push notifications you can send notifications to the mobile apps</p>
+<p>using C# code, regardless of the platform it runs on (iOS, Android, Windows). In addition</p>
+<p>to these unique features, Mobile Apps shares all the other features of Azure App Service.</p>
+<p>Get started by creating an Android app with an Azure mobile app back end .</p>
+<p>Azure Functions (also known as serverless compute)</p>
+<p>Azure Function apps enable you to create Azure Functions in C# and many other</p>
+<p>languages in Visual Studio and other IDEs and editors. Each Functions app contains one</p>
+<p>or more Azure Functions and provides integration with authentication and deployment</p>
+<p>slots.</p>
+<p>The Azure Functions that run in Azure Function apps are small pieces of code that you</p>
+<p>write, without you having to worry about the underlying infrastructure or about scaling.</p>
+<p>Many refer to this deployment model as Functions as a Service (FaaS).</p>
+<p>Function applications can be simply triggered by a wide variety of events originating</p>
+<p>both inside and outside of Azure. HTTP triggers allow web requests to be served by a</p>
+<p>function app. Event Grid events can trigger Azure Functions when changes are made to</p>
+<p>Azure resources such as the container registry and virtual machines.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>9</p>
+<p>Here is an example: You write an Azure Functions app that executes every time a new</p>
+<p>image file is uploaded to Azure Storage. You then take that image, rename it, and</p>
+<p>output it to another Azure Storage account.</p>
+<p>This is very easy to do. You just write the code to rename the image. Azure Functions</p>
+<p>takes care of getting the input image when the function is triggered. And it takes care of</p>
+<p>writing the image to the other storage account. It takes care of all the plumbing, and</p>
+<p>you just write the code.</p>
+<p>Azure  Functions  even  handles  scaling  for  you.  So  it  doesn’t  matter  if  there  are  1,000</p>
+<p>images that trigger the function at the same time. Azure Functions transparently spins up</p>
+<p>more  functions  to  deal  with  it  and  they  go  away  when  the  code  is  done  executing.</p>
+<p>Because of this, you only pay for the code that you execute, not for a service that runs all</p>
+<p>the time, waiting to be triggered.</p>
+<p>Azure Functions are great for executing small pieces of code that perform one or two</p>
+<p>steps on an input and an output. If you want to perform more steps of a larger process,</p>
+<p>you can use Durable Functions.</p>
+<p>Durable Functions provide a stateful experience on top of a series of Azure Functions.</p>
+<p>They enable complex patterns such as scatter/gather and function chaining. A Durable</p>
+<p>Function orchestration may be as simple as coupling together two functions, one after</p>
+<p>another, or as complex as coordinating tens of thousands of function calls over weeks.</p>
+<p>Get started by creating your first Azure Function with Visual Studio .</p>
+<p>Azure Logic Apps</p>
+<p>Durable Functions are a fantastic orchestration tool for developers who are comfortable</p>
+<p>with writing every step of the process inside a series of Functions. For those looking for</p>
+<p>a lower code solution Logic Applications may be better. With Azure Logic Apps, you can</p>
+<p>orchestrate a process just by weaving API calls together in a visual designer in Visual</p>
+<p>Studio or the Azure portal. Visual Studio offers a specific Logic Apps project template to</p>
+<p>get started.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>10</p>
+<p>A logic app has a trigger, just like an Azure function does. This can be an outside trigger,</p>
+<p>like when a new blob is added, or a certain text is tweeted. Or it can be a manual trigger</p>
+<p>or a trigger on a schedule such as every 15 minutes.</p>
+<p>Once triggered, a logic app takes its input and calls APIs with it to complete a process.</p>
+<p>You just click this together by choosing APIs from a large list of available ones and</p>
+<p>choosing the input and output for those APIs. Azure Functions can also be used for APIs</p>
+<p>in a logic app. And you can use your own ASP.NET Core APIs.</p>
+<p>Here’s an  example :</p>
+<p>A logic app gets triggered by a new blob that is written in  Azure Blob storage . It takes the</p>
+<p>Blob input, which is an image file, and resizes the image by calling an Azure function that</p>
+<p>does just that. Next, it takes the resized image and writes it to another storage account.</p>
+<p>And finally, it calls the   Office 365 API   to send an email to the administrator that there is a</p>
+<p>new, resized image available.</p>
+<p>Just like Azure functions, logic apps scale automatically, you just create the process. It will trigger as
+many times as it is needed and always executes the complete process and has reliability features, like
+retry policies, built in. And because it only runs when it is triggered, you only pay for when it runs—you
+don’t pay for owning it.</p>
+<p>Get started by building your first logic app workflow in the Azure porta l .</p>
+<p>Note: Azure Logic Apps and Azure Functions work very well with the Azure Event Grid service. Event Grid allows you to
+subscribe to events, like when something happens in your application, and to push that information as an event that can
+trigger a Logic App or an Azure Function.</p>
+<p>Azure Virtual Machines</p>
+<p>A very different way of running your application is by taking advantage of Azure Virtual</p>
+<p>Machines. This is an easy way to get started, because you can lift-and-shift existing</p>
+<p>applications from virtual machines that you run in your datacenter to VMs that run in</p>
+<p>Azure. There are many predefined VM images that you can use, like Windows Server</p>
+<p>2019 that runs IIS and has ASP.NET installed and preconfigured on it. You can even</p>
+<p>bring your own software licenses if you already have one (like for SQL Server).</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>11</p>
+<p>Running your application in a VM doesn’t provide you the features like zero-downtime</p>
+<p>deployments and easy authentication. You are also responsible for patching the</p>
+<p>operating system and for making sure that antivirus software is up to date.</p>
+<p>On the other hand, it does provide you with the ability to easily scale your VM to a</p>
+<p>bigger size or automatically scale it down when it isn’t used that much. Virtual Machine</p>
+<p>Scale Sets allow for scaling out VMs to a large number of nodes and load balancing</p>
+<p>work between them. And it offers you the reliability of running something in Azure. It is</p>
+<p>very unlikely that your VM will stop running, and Microsoft guarantees this uptime with</p>
+<p>a comprehensive SLA.</p>
+<p>And if you’re not ready to run your production VMs in Azure you can still take</p>
+<p>advantage of streamlined DevOps and testing with Azure DevTest Labs.</p>
+<p>Get started by Creating a Windows virtual machine with the Azure portal .</p>
+<p>A word about microservices and containers</p>
+<p>You can run your applications in containers, which are very lightweight and start and</p>
+<p>stop in seconds. Containers isolate your application and its dependencies in a way that</p>
+<p>guarantees that you’ll never run into library version conflicts. They can be based on</p>
+<p>numerous popular Linux distributions or Windows Server so no matter the platform your</p>
+<p>application uses it can run in a container.</p>
+<p>A popular approach for containers is to use them to run a microservices architecture.</p>
+<p>This means that you create many small, isolated, services that each have their own</p>
+<p>function and each have separate development and deployment lifecycles. Containers</p>
+<p>can also be used to lift and shift existing applications to run at scale in the cloud.</p>
+<p>Azure provides several services to support running a microservices architecture in</p>
+<p>containers. Running the increasingly popular orchestration engine Kubernetes, Azure</p>
+<p>Kubernetes Service (AKS) provides a powerful tool to run anything from a handful of</p>
+<p>containers to hundreds of thousands of them. AKS can all run and orchestrate</p>
+<p>containers. Orchestration of containers is quite different from orchestrating a process,</p>
+<p>like Logic Apps does. Orchestrating containers means that you manage their lifecycles.</p>
+<p>Provision new ones, scale up or down, manage failures, and so on.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>12</p>
+<p>You can learn more about microservices by reading:</p>
+<p>.NET Microservices Architecture Guidance</p>
+<p>Which frameworks and technologies can you use in which Azure service?</p>
+<p>Now that you know what the options are for running your application in Azure, it is</p>
+<p>extremely useful to know which version of .NET you can run in these services and what</p>
+<p>kind of containers they support. Table 2 explains this by showing which framework and</p>
+<p>container types you can use in which services in Azure.</p>
+<p>Table 2: Which framework and technology can you use in which Azure service</p>
+<p>Web Apps</p>
+<p>Mobile
+Apps</p>
+<p>Functions</p>
+<p>Azure VMs</p>
+<p>Azure
+Container
+Instance</p>
+<p>Azure
+Kubernetes
+Service
+(AKS)</p>
+<p>.NET Framework
+apps</p>
+<p>.NET Core apps</p>
+<p>Linux Containers</p>
+<p>Windows Server
+Containers</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>13</p>
+<p>Storing your data in Azure
+Data is a particularly important aspect of any modern .NET application, and it comes in</p>
+<p>all shapes and sizes. Azure provides many types of data stores that can help you</p>
+<p>maintain and retrieve data in any scenario.</p>
+<p>Table 3 shows which data service to use for which scenario.</p>
+<p>Database</p>
+<p>Cosmos DB</p>
+<p>Blob</p>
+<p>Table</p>
+<p>File</p>
+<p>PostgreSQL,
+MySQL</p>
+<p>SQL Data
+Warehouse</p>
+<p>Data Lake
+Store</p>
+<p>Relational data</p>
+<p>Unstructured
+data</p>
+<p>Semistructured
+data</p>
+<p>Files on disk</p>
+<p>Store large data</p>
+<p>Store small
+data</p>
+<p>Geographic
+data
+replication</p>
+<p>Tunable data
+consistency</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>14</p>
+<p>Azure SQL Database</p>
+<p>If you are familiar with .NET, you will likely be familiar with SQL Server. In Azure, you can</p>
+<p>run your SQL Server workload in Azure SQL Database. This is SQL Server in the cloud. It</p>
+<p>is the same thing that you run on-premises but it offers a lot of advantages.</p>
+<p>You can do (almost) everything with it that you can do with on-premises SQL Server.</p>
+<p>And, in fact, new SQL Server features are incorporated in Azure SQL Database first and</p>
+<p>later in the on-premises SQL Server.</p>
+<p>You can use Azure SQL Databases with your favorite tools, like Azure Data Studio, Server</p>
+<p>Explorer and SQL Server Data Tools in Visual Studio and SQL Server Management</p>
+<p>Studio.</p>
+<p>Because they run in the cloud, Azure SQL Databases are fully managed, scalable, and</p>
+<p>high performing. They are automatically backed up and have many advanced features,</p>
+<p>such as:</p>
+<p>•  Single-click Geo-replication, which replicates data to other geographical regions in</p>
+<p>real time, incredibly easily.  (Get started with geo-replication.)</p>
+<p>•  Dynamic data masking, which masks sensitive data for certain users at runtime.</p>
+<p>(Get started with dynamic data masking.)</p>
+<p>•  Auditing, which provides a complete audit trail of all the actions that happen to the</p>
+<p>data. (Get started with Azure SQL Database auditing.)</p>
+<p>•  Automatic database tuning, which monitors the performance of your database and</p>
+<p>tunes it automatically. (Get started with Azure SQL Database automatic tuning.)</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>15</p>
+<p>In addition to all these features, Azure SQL Databases are exceptionally reliable by</p>
+<p>default. Without configuring anything, transaction log backups are made every 5-10</p>
+<p>minutes and differential backups every 12 hours. These backups are stored three times</p>
+<p>in the local datacenter and three times in another datacenter. And you can restore</p>
+<p>backups from 35 days ago, depending on the pricing tier that you use.</p>
+<p>It is very easy to use Azure SQL Databases from a .NET application. You can, for instance,</p>
+<p>use the Entity Framework (or Entity Framework Core) to access the database and write</p>
+<p>and read data to and from it. For the most part accessing data programmatically is no</p>
+<p>different from accessing data in an on-premises SQL Server.</p>
+<p>Get started by creating an Azure SQL Database in the Azure Portal .</p>
+<p>Azure Cosmos DB</p>
+<p>Azure Cosmos DB is a new kind of database that is globally distributed and cloud native.</p>
+<p>Here are some of its key features:</p>
+<p>•  A 99.99% SLA (99.999% for read operations) that includes low latencies (less than 10</p>
+<p>ms on reads; less than 15 ms on writes).</p>
+<p>•  Geo-replication, which replicates data to other geographical regions in real time</p>
+<p>(How to distribute data globally with Azure Cosmos DB).</p>
+<p>•  Tunable data consistency levels, so you can choose data consistency, enabling a</p>
+<p>truly globally distributed data system. You can, for instance, choose strong</p>
+<p>consistency, eventual consistency, or session consistency.</p>
+<p>•  Traffic management, which sends users to the data replica to which they are closest.</p>
+<p>•  Limitless global scale. You pay only for the throughput and storage that you need.</p>
+<p>•  Automatic indexing of data. No need to maintain or tune the database anymore.</p>
+<p>In addition to all these features, Cosmos DB offers different APIs with which you can</p>
+<p>store and retrieve data, including SQL, Gremlin, MongoDB, Azure Table Storage, and</p>
+<p>Apache Cassandra. Different APIs handle data in different ways. You can use documents</p>
+<p>as data as well as unstructured tables, graphs, and blobs. You use the API that fits your</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>16</p>
+<p>needs, and Cosmos DB takes care of the rest. If your application already uses one of</p>
+<p>these protocols switching to Cosmos DB is as simple as changing a connection string.</p>
+<p>You benefit from cloud-grade performance, scalability, and reliability, and still use the</p>
+<p>programming model to which you’re accustomed.</p>
+<p>You can use Cosmos DB from .NET Framework and .NET Core. For example, you can use</p>
+<p>its SQL API through the NuGet package Microsoft.Azure.DocumentDB or</p>
+<p>Microsoft.Azure.DocumentDB.Core (for .NET Core).</p>
+<p>Get started with Azure Cosmos DB with the SQL API and .NET Core .</p>
+<p>Azure Storage</p>
+<p>With Azure Storage, one of the most fundamental services in Azure, you can store data</p>
+<p>in different forms. It is easy to use, fast, and inexpensive. Azure Storage offers several</p>
+<p>types of storage that you can use for different scenarios. All these storage types share</p>
+<p>common features like encryption for data at rest, security through shared access</p>
+<p>signatures, and firewalls and virtual networks.</p>
+<p>Azure Storage is also very reliable. By default, data is replicated three times within the</p>
+<p>datacenter. You can also choose geo-replicated storage, which, in addition to the three</p>
+<p>local replicas, replicates the data three times to another datacenter. You can create your</p>
+<p>application in such a manner that it reads from this geo-replicated data, which is close</p>
+<p>to your users, so that it is geographically high performing.</p>
+<p>You can use Azure Storage from your .NET Framework and .NET Core applications by</p>
+<p>using the WindowsAzure.Storage NuGet package and referencing the specific API that</p>
+<p>you need, like Microsoft.WindowsAzure.Storage.Blob (for Blob storage) in a using</p>
+<p>statement in your code.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>17</p>
+<p>Let’s explore the different types of Azure Storage:</p>
+<p>File Storage</p>
+<p>Azure File storage uses the SMB protocol, which makes it very suitable for  lifting and</p>
+<p>shifting your file server into the cloud. When you have files in Azure Files, you can mount</p>
+<p>an Azure file share to a VM or even to your own Windows machine, to use as external</p>
+<p>storage.</p>
+<p>Get started with Azure Files .</p>
+<p>Azure Disk Storage is a similar service to Azure File but is dedicated to a single machine.</p>
+<p>It is available in four different performance levels from Standard HDD to Ultra SSD. The</p>
+<p>high performance tiers are suitable for heavy I/O workloads such as running SAP HANA</p>
+<p>or complex analytical models.</p>
+<p>Table Storage</p>
+<p>Azure Table storage is an inexpensive and extremely fast NoSQL key-value store that</p>
+<p>you can use to store data in flexible tables. A table can contain one row describing an</p>
+<p>order and another row describing customer information. You don’t need to define a</p>
+<p>data schema. This makes Table Storage very flexible.</p>
+<p>Get started with Azure Table storage .</p>
+<p>Blob Storage</p>
+<p>You can use Azure Blob storage to store large unstructured data—literally, blobs of data.</p>
+<p>This can be video, image, audio, text, or even virtual hard drive (VHD) files for VMs.</p>
+<p>Additionally, you can use Blob tiers to reduce your storage costs. By default, blobs are</p>
+<p>written to the hot tier, which means that they are written and read very fast. You can</p>
+<p>also put blobs in the cool tier if you have data that is infrequently accessed and stored</p>
+<p>for at least 30 days. The cool tier is less expensive than the hot tier. And finally, you can</p>
+<p>store blobs in the archive tier, that is the least expensive. The archive tier is for data</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>18</p>
+<p>that is rarely accessed and stored for at least 180 days. Reading data from the archive</p>
+<p>tier can take hours. Blob tiering is a great way to save costs if you are storing large</p>
+<p>amounts of data.</p>
+<p>Get started with Azure Blob storage .</p>
+<p>Queue Storage</p>
+<p>Azure  Queue  storage  is  an  unusual  type  of  storage  in  that  it  is  used  to  store  small</p>
+<p>messages of data, but its main purpose is to serve as a queue. You put messages on the</p>
+<p>queue and other processes pick it up. This pattern decouples the message sender from</p>
+<p>the message processor and results in performance and reliability benefits. Azure Queue</p>
+<p>storage is similar to Microsoft Message Queuing that you can find in Windows.</p>
+<p>Get started with Azure Queue storage .</p>
+<p>|Note: Azure Service Bus Topics and Queues also provide queuing mechanisms, with slightly different properties than Azure Storage
+queues.</p>
+<p>Azure Databases for MySQL, PostgreSQL, and MariaDB</p>
+<p>As a .NET developer, you encounter many different open-source database types in your</p>
+<p>job. Some of them can now be used in a managed version in Azure.</p>
+<p>Azure provides MySQL, PostgreSQL, and MariaDB databases as managed databases,</p>
+<p>which means that you just spin them up and don’t have to worry about any of the</p>
+<p>underlying infrastructure. Just like Azure SQL Databases and Cosmos DB, these</p>
+<p>databases are universally available, scalable, highly secure, and fully managed.</p>
+<p>Each of these is suited for slightly different use cases, but in general, their functionality</p>
+<p>overlaps a lot. You would use Azure Databases for MySQL, PostgreSQL, and MariaDB</p>
+<p>when you are already using one of their on-premises versions and want the advantage</p>
+<p>of having that run fully managed in the cloud. Migrating apps that use these databases</p>
+<p>is much easier when the data can remain in its original platform. Azure also provides an</p>
+<p>out of the box backend for services like WordPress which rely on open source databases.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>19</p>
+<p>Get started with Azure Database for MySQL by creating a MySQL server</p>
+<p>by using the Azure porta l .</p>
+<p>Azure SQL Data Warehouse and Azure Data Lake Store</p>
+<p>Since we are talking about storing data in Azure, we can’t leave out the data stores for</p>
+<p>big data and data analytics. These are not typical stores that you use with your</p>
+<p>application, but rather stores that you use for data analytics and reporting.</p>
+<p>Azure provides two data stores that are very suitable for storing large amounts of data</p>
+<p>for data analytics purposes: the Azure SQL Data Warehouse and the Azure Data Lake</p>
+<p>Store.</p>
+<p>Each of these can hold petabytes of data. In fact, Azure Data Lake Store doesn’t even</p>
+<p>have limits on the amount of data and the file sizes that you can store.</p>
+<p>You use Azure SQL Data Warehouse when you know the questions that you want to</p>
+<p>answer with data analytics. You define a data schema that determines what your data</p>
+<p>will look like and how it can be used.</p>
+<p>You use Azure Data Lake Store when you don’t know the questions that you want to</p>
+<p>answer yet. You do not have to define a data schema for the Data Lake Store. You store</p>
+<p>data in its native format.</p>
+<p>You can work with each of these data stores with tools in Visual Studio. And you can use</p>
+<p>any SQL tool, like SQL Server Management Studio, to work with Azure SQL Data</p>
+<p>Warehouse. You can even create eye-popping business intelligence dashboards and</p>
+<p>reports as a non-developer in Power BI.</p>
+<p>Additionally, you can use the Azure Management SDK for .NET to perform management</p>
+<p>operations on these services. You can, for instance, create a new Data Lake Store</p>
+<p>account.</p>
+<p>Get started with Azure SQL Data Warehouse by creating and query</p>
+<p>a warehouse in the Azure portal .</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>20</p>
+<p>Get started with Azure Data Lake Store using the Azure portal .</p>
+<p>Securing your .NET applications in Azure
+Besides running your application and storing data, you need to secure it. Azure can help</p>
+<p>you  with  that  by  providing  authentication  and  authorization  through  Azure  Active</p>
+<p>Directory  and  by  helping  you  to  keep  secrets  safe  with  Azure  Key  Vault  and  inserting</p>
+<p>credentials  into  your  application  with  Managed  Service  Identity.  Let’s  examine  these</p>
+<p>services.</p>
+<p>Azure Active Directory</p>
+<p>An important part of your application’s security is authenticating users before they can</p>
+<p>use it. Authentication is not an easy thing to implement. You need to store user</p>
+<p>identities and credentials, implement password management, create a secure</p>
+<p>authentication handshake, and so on.</p>
+<p>Azure Active Directory provides all these things and more out of the box. You store your</p>
+<p>user identities in Azure Active Directory and have users authenticate against it,</p>
+<p>redirecting them to your application only after they are authenticated. Azure Active</p>
+<p>Directory takes care of password management, including common scenarios like “I</p>
+<p>forgot my password.” Azure Active Directory is used by millions of applications every</p>
+<p>day, including the Azure portal, Outlook.com, and Office 365. Because of this, it is able</p>
+<p>to more readily detect malicious behavior and act on it. For instance, if a user were to</p>
+<p>sign in to an application from a location in Europe and then one minute later sign in</p>
+<p>from Australia, Azure Active Directory would flag this as malicious behavior and ask the</p>
+<p>user for additional credentials through multifactor authentication.</p>
+<p>To programmatically talk to Azure Active Directory, you can use the Active Directory</p>
+<p>Authenticating Library (ADAL) for .NET Framework and .NET Core.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>21</p>
+<p>Get started by integrating Azure AD into an ASP.NET Core web app</p>
+<p>.</p>
+<p>Azure Key Vault</p>
+<p>It is important to keep secrets such as passwords and connection strings out of source</p>
+<p>code. So where do you put them? In Azure Key Vault.</p>
+<p>Azure Key Vault is a safe place to store passwords, connection strings, access codes,</p>
+<p>and certificate keys. It is fully managed by Azure, so you don’t have to worry about</p>
+<p>the underlying infrastructure. You just spin it up and use it.</p>
+<p>You can use it as a configuration store in your applications, just like you would use a</p>
+<p>web.config file. An administrator can populate the values in the Azure Key Vault, and</p>
+<p>your application just pulls it out at startup time or whenever it needs it. This way,</p>
+<p>passwords will never be in source code and are the responsibility of the Azure Key Vault</p>
+<p>administrator.</p>
+<p>You can use Azure Key Vault using the Microsoft.Azure.KeyVault NuGet package that</p>
+<p>you can use from the .NET Framework and .NET Core. There is even a special syntax</p>
+<p>which allows pulling secrets from KeyVault in App Services with zero code changes. For</p>
+<p>more complex scenarios where configuration changes based on location, release or</p>
+<p>some other custom dimension Microsoft is introducing Azure App Configuration a</p>
+<p>service dedicated to providing a centralized configuration location which can be used</p>
+<p>from everything form App Services to a DevOps pipeline.</p>
+<p>Get Started by using Azure Key Vault from an ASP.NET application</p>
+<p>.</p>
+<p>Managed Service Identity</p>
+<p>Even when you use Azure Key Vault, your application must have some credentials in its</p>
+<p>configuration. Something that you use to connect to Azure Active Directory or to Azure</p>
+<p>Key Vault. Well, it doesn’t have to anymore. You can now  use Azure Managed Service</p>
+<p>Identity.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>22</p>
+<p>You can use Managed Service Identity from a lot of services in Azure, including from</p>
+<p>Azure App Service. From there, you can enable it to inject credentials into your</p>
+<p>application at runtime and use those credentials to access other services, like Azure Key</p>
+<p>Vault.</p>
+<p>You can use the Managed Service Identity from the .NET Framework and .NET Core</p>
+<p>using the Microsoft.Azure.Services.AppAuthentication NuGet package.</p>
+<p>Get started by using Key Vault from App Service with</p>
+<p>Managed Service Identity .</p>
+<p>Azure Advisor</p>
+<p>There are a lot of moving parts in Azure so Microsoft provides a tool called Azure</p>
+<p>Advisor which examines your Azure resources and makes recommendations. The</p>
+<p>recommendations include how to save money by making more efficient use of Azure</p>
+<p>resources and suggestions on how to make your Azure resources more secure. The</p>
+<p>security advisor will catch and rank problems like world readable Blob Storage and give</p>
+<p>instructions on how to better secure your environment.</p>
+<p>Other Azure services
+Enhance your application performance</p>
+<p>Azure can also help you to boost your applications’ performance. One service that helps</p>
+<p>with this is Azure Redis Cache, which provides high-performance, in-memory, key-value</p>
+<p>storage. Another is Azure Content Delivery Network, or CDN, which can replicate your</p>
+<p>static content, like images and video files to points-of-presence all over the world,</p>
+<p>making sure that it is as close to your users as possible. And finally, Azure Traffic</p>
+<p>Manager can improve application responsiveness by routing users to locations with the</p>
+<p>lowest latency.</p>
+<p>Machine Learning</p>
+<p>Azure provides an industry leading suite of services that can make your application more</p>
+<p>intelligent. Azure Cognitive Services are a suite of APIs that can do things which would</p>
+<p>be nearly impossible using traditional programming approaches. You can  quickly build</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>23</p>
+<p>applications  which  can  recognize  faces,  convert  speech  to  text  and  understand  the</p>
+<p>meaning of text. Using the Language Understanding service you can create bots which</p>
+<p>can intelligently respond to requests in Slack, Microsoft Teams and other forums.</p>
+<p>You can also create your own machine learning algorithms with Azure Machine Learning.</p>
+<p>Training jobs created in popular tools such as Tensorflow can be submitted to run on a</p>
+<p>cluster of GPU-enabled Virtual Machines, vastly decreasing the time to train models.</p>
+<p>Internet of Things (IoT)</p>
+<p>When you are building a solution based on the Internet of Things, Azure can help you</p>
+<p>with services like Azure IoT Hub, which can ingest massive amounts of messages from</p>
+<p>IoT devices and manage the devices. Azure IoT Suite makes it possible for you to</p>
+<p>manage your IoT devices without doing everything yourself. And if you have limited IoT</p>
+<p>experience, you can use Azure IoT Central, which is a SaaS solution that enables you to</p>
+<p>use IoT with minimal customization. And finally, there is Azure IoT Edge, which allows</p>
+<p>IoT devices to do some of the calculations locally, instead of having to communicate</p>
+<p>with the cloud for every operation. Trained ML models can even be deployed to edge</p>
+<p>devices enabling capabilities such as image recognition in disconnected hardware.</p>
+<p>Data Analytics</p>
+<p>There are many services in Azure for doing data analytics, including Azure Data Factory</p>
+<p>for moving and transforming data; Azure Analysis Services, which provides an in-</p>
+<p>memory data analytics platform; and Azure Data Lake Analytics, which can perform U-</p>
+<p>SQL jobs on Azure Data Lake Store. You can also take advantage of Azure Stream</p>
+<p>Analytics to analyze data on the fly and Azure Time Series Insights, which provides a</p>
+<p>unique data analytics platform for time-based data that can store and analyze data and</p>
+<p>can show information using its own data visualization engine. In addition, there is Azure</p>
+<p>Databricks, which offers a managed cluster of enhanced Apache Spark–based analytics</p>
+<p>engines, and Azure HDInsight, which you can use to spin up managed clusters of open-</p>
+<p>source data analytics platforms and tools, like Apache Storm, Apache Kafka, and</p>
+<p>Apache HBase.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>24</p>
+<p>Messaging</p>
+<p>Azure also provides services that can help you build scalable architectures with events</p>
+<p>and messages. Azure Queue Storage and Azure Service Bus Topics and Queues can help</p>
+<p>with that by providing queuing mechanisms that decouple your services. Azure Event</p>
+<p>Grid can help by subscribing to events, like blobs being added and pushing an event to</p>
+<p>whoever is subscribed to it. And Azure Event Hubs can ingest massive amounts of data,</p>
+<p>which you can process, filter, and store in your own time. Using messaging to</p>
+<p>communicate between services in Azure allows you to handle load smoothly while also</p>
+<p>preventing data loss in the event a service is unavailable.</p>
+<p>Media Services</p>
+<p>Working with (streaming) media can be challenging. Azure Media Services can help you</p>
+<p>by providing services like encoding, which encodes your media files into the file formats</p>
+<p>and screen sizes they need to be. Azure Content Protection enables you to use DRM</p>
+<p>technologies like PlayReady to make sure that your content is only used by authorized</p>
+<p>users. With live streaming you can stream media worldwide at massive scale. And by</p>
+<p>using Media Analytics you can enhance media by doing intelligent things like creating</p>
+<p>subtitles for a movie based on speech.</p>
+<p>Monitoring</p>
+<p>And finally, you need to monitor your applications that run in Azure, to make sure that</p>
+<p>they run smoothly. The monitoring tools in Azure fall under the umbrella of Azure</p>
+<p>Monitor. There are services like Azure Application Insights that can help you to monitor</p>
+<p>every aspect of your application. There is also Azure Log Analytics, which plugs into</p>
+<p>every Azure Service to gather diagnostics information, and Azure Network Watcher,</p>
+<p>which can inspect network traffic from your VMs and over your Virtual Networks.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>25</p>
+<p>Figure 1 A sample monitoring dashboard</p>
+<p>Visual Studio App Center provides logging and monitoring as part of a fully featured</p>
+<p>suite of tools for mobile applications. Azure Security Center, which is your one-stop-</p>
+<p>shop for all the security aspects of all your services in Azure. Your logs can be visualized</p>
+<p>using Azure Dashboards or Power BI and you can even trigger custom actions from log</p>
+<p>events using Logic Apps.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>26</p>
+<p>Tools for developing, debugging
+and troubleshooting
+As .NET developers and architects, we are spoiled with the incredible tooling of Visual</p>
+<p>Studio. This extends into the world of Azure, which includes many tools that can make</p>
+<p>developing and troubleshooting in Azure easier and fun. Let’s explore these tools.</p>
+<p>Visual Studio and Azure</p>
+<p>We all love Visual Studio and Azure does too! If you run any version of Visual Studio</p>
+<p>2019 or 2017 and enable the Azure workload, you’ll be able to seamlessly work with</p>
+<p>Azure. And if you can’t upgrade, that’s OK, we have you covered there, too. If you are</p>
+<p>using Visual Studio 2015, you can download the Visual Studio 2015 Tools for Azure.</p>
+<p>Project templates</p>
+<p>Out of the box, you get lots of project templates to work with. You can create web</p>
+<p>applications for the cloud, Azure Cloud Services applications, Azure Functions, Azure</p>
+<p>WebJobs, and much more.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>27</p>
+<p>Figure 2: Azure project templates in Visual Studio 2019 with Azure workload installed</p>
+<p>Cloud Explorer</p>
+<p>As part of the Azure workload in Visual Studio, you get Cloud Explorer. You can use this</p>
+<p>to navigate through all your Azure subscriptions and resources and take action, as in</p>
+<p>Figure 3, where you can attach a debugger to an App Service Web App.</p>
+<p>From Cloud Explorer, you can also do things like open an Azure SQL Database in the</p>
+<p>Visual Studio Server Explorer and upload files to Azure Storage.</p>
+<p>You can even connect to services to see their streaming logs and change application</p>
+<p>settings and connection strings in App Service.</p>
+<p>G et started by managing your Azure resources with Cloud Explorer .</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>28</p>
+<p>Figure 3: Cloud Explorer in Visual Studio</p>
+<p>Publish to Azure</p>
+<p>Once you have the Azure workload enabled in Visual Studio, you can easily publish to</p>
+<p>Azure from various project types. The publish wizard has an option to publish to Azure</p>
+<p>App Service (for example, host a web site). Or you can directly publish to specific</p>
+<p>services like Azure Cloud Services. All with a few clicks.</p>
+<p>Get started by using the Visual Studio Publish Azure Application wizard .</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>29</p>
+<p>Figure 4: Publish to Azure</p>
+<p>For a more repeatable process you can set up an Azure DevOps pipeline from inside</p>
+<p>Visual Studio 2019 which will build, test, and deploy your application to Azure. The</p>
+<p>Pipeline will be kicked off every time there is a check-in to your source control ensuring</p>
+<p>your application is always up to date.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>30</p>
+<p>Figure 5: Configure a DevOps Pipeline</p>
+<p>Snapshot Debugger</p>
+<p>The Snapshot Debugger allows you to debug your application while it is running live in</p>
+<p>production, without affecting its performance. This is great, because now you can debug</p>
+<p>production without pausing the app when you hit a breakpoint. Debugging provides a</p>
+<p>lot more information than diagnostic logs typically do.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>31</p>
+<p>Note that you do need Visual Studio Enterprise to use the Snapshot Debugger. Here’s</p>
+<p>how it works:</p>
+<ol>
+<li>
+<p>Attach the snapshot debugger to your application process in Azure.</p>
+</li>
+<li>
+<p>Add a snappoint (different from a breakpoint).</p>
+</li>
+<li>
+<p>When the snappoint is hit, a snapshot is taken.</p>
+</li>
+</ol>
+<p>• The debugger quickly gathers all the information it needs about the call stack and</p>
+<p>variables and lets the app continue to run.</p>
+<ol start="4">
+<li>You can now view the snapshot and inspect everything that you normally would</li>
+</ol>
+<p>when debugging, without holding up the application.</p>
+<p>Get started by debugging snapshots on exceptions in .NET apps .</p>
+<p>Azure Storage Explorer</p>
+<p>The Azure Storage Explorer is a tool for managing your Azure Storage accounts. It’s a</p>
+<p>free, standalone application from Microsoft that you can download here. You can use it</p>
+<p>to create new blob containers, upload files, query through Table storage, and more.</p>
+<p>You can even use it to manage your Cosmos DB storage and create databases and</p>
+<p>collections.</p>
+<p>Get started with Storage Explorer .</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>32</p>
+<p>Figure 6: Storage Explorer</p>
+<p>Azure Storage Emulator</p>
+<p>In the Visual Studio Azure workload or in the Azure SDK, you’ll find the Azure storage</p>
+<p>emulator, which you can use to develop locally against Azure Storage. You can access it</p>
+<p>through Cloud Explorer just like you can access it in the Azure portal or through other</p>
+<p>tools such as Storage Explorer.</p>
+<p>The Azure storage emulator works the same as Azure Storage in the cloud, including</p>
+<p>how you authenticate to it. There are some obvious differences, like file size limitations</p>
+<p>and the lack of geo-redundant scaling. And the emulator doesn’t support Azure Files.</p>
+<p>Once you are done developing and testing locally, you can publish your application to</p>
+<p>the cloud and use Azure Storage there.</p>
+<p>Get started by configuring and using the storage emulator
+with Visual Studio .</p>
+<p>Azure Command-Line Interface</p>
+<p>You can do everything you need to do in Azure from Visual Studio and the Azure</p>
+<p>portal. But sometimes you want to run scripts to perform command-level operations,</p>
+<p>like when you are working with containers. You can do that using the Azure Command-</p>
+<p>Line Interface, or CLI. You can install the Azure CLI on your local development</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>33</p>
+<p>computer, use a pre-built Docker container, or use it from within the Azure portal,</p>
+<p>where it is a part of Azure Cloud Shell.</p>
+<p>Using the CLI in the Azure portal through Cloud Shell is very easy. You don’t have to</p>
+<p>install anything and you don’t have to log in to your Azure Subscription because you’ve</p>
+<p>already done that to get into the portal.</p>
+<p>Figure 7: Azure Cloud Shell in the Azure portal</p>
+<p>Azure Cloud Shell supports Bash and PowerShell as scripting languages. These might not</p>
+<p>be things that you use daily as a .NET developer, but they are worth diving into because</p>
+<p>they are powerful tools.</p>
+<p>Once you are in the CLI, you can do anything from listing all the Azure resources you</p>
+<p>have to provisioning new resources.</p>
+<p>You can also access Cloud Shell directly in the browser at https://shell.azure.com or via</p>
+<p>mobile devices such as iOS and Android.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>34</p>
+<p>Azure Functions Core Tools</p>
+<p>Azure Functions run inside Azure App Service Function Apps and are powerful. You can</p>
+<p>use them to run small pieces of code that get triggered by outside sources and bind to</p>
+<p>things like Azure Blob storage or Azure Cosmos DB.</p>
+<p>The Azure Functions Core Tools enable you to develop Azure Functions locally. You can</p>
+<p>run the local version of Azure Functions runtime on your development computer.</p>
+<p>With the Azure Functions Core Tools, you can develop and test your Azure Functions</p>
+<p>locally. And when you’re done, you can publish them to Azure or use continuous</p>
+<p>integration and continuous delivery to check your Azure Functions code and publish it</p>
+<p>automatically to Azure.</p>
+<p>Get started by creating your first function using Visual Studio and</p>
+<p>test it locally .</p>
+<p>Cosmos DB Emulator</p>
+<p>When you are using Azure Cosmos DB, you can use the Azure Cosmos DB Emulator to</p>
+<p>develop locally. The emulator acts just like Cosmos DB would and even provides the</p>
+<p>same interface as Cosmos DB does in the Azure portal.</p>
+<p>Figure 8: Cosmos DB Emulator local interface</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>35</p>
+<p>The Cosmos DB Emulator also shows up in the Cloud Explorer in Visual Studio, so that</p>
+<p>you can easily manage it from there.</p>
+<p>By developing locally against the Cosmos DB emulator, you can develop without</p>
+<p>incurring costs from a Cosmos DB in Azure. And when you are ready, you can deploy</p>
+<p>your application to Azure and run it against Cosmos DB there, just by changing your</p>
+<p>connection string.</p>
+<p>Get started by using the Azure Cosmos DB Emulator</p>
+<p>for local development and testing .</p>
+<p>Azure DevOps for build and deployment</p>
+<p>Once you are working on your application, it is vital to integrate your work with the work</p>
+<p>of other developers (continuous integration).</p>
+<p>It is vital to deploy that work to a central location, like an Azure Web App, so that you</p>
+<p>can see that it works, and so that it can be tested and promoted through the different</p>
+<p>environments and can be deployed to production (continuous delivery).</p>
+<p>To make this work, you need to automatically integrate everybody’s work and deploy it.</p>
+<p>Ideally, you would do these things continuously, whenever somebody commits new</p>
+<p>work.</p>
+<p>Azure DevOps, can help with that. It is an application lifecycle management system that</p>
+<p>manages your work items and sprints, stores and manages your source code, builds</p>
+<p>your code, and deploys it to wherever you want. The best part is, it is very easy to set up.</p>
+<p>You can put your source code in DevOps and manage it using the TFS or Git protocols.</p>
+<p>Once you start committing changes, you can have those built by a simple build</p>
+<p>pipeline that executes something like a Visual Studio build, just like you would on your</p>
+<p>local development computer. You can create such a pipeline by just adding tasks in</p>
+<p>the DevOps portal, like in Figure 9.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>36</p>
+<p>Figure 9: DevOps Build Pipeline</p>
+<p>You can set your build up to compile your code and run your unit tests every time</p>
+<p>somebody commits. This is continuous integration.</p>
+<p>And once the build is done, it can kick off a release pipeline that deploys your code to</p>
+<p>environments including development, test, staging, and production. You can deploy</p>
+<p>your code to anywhere: to on-premises resources or to the cloud. You can even have</p>
+<p>permissions gates that require somebody like a product owner to approve the</p>
+<p>deployment to production, putting them in control.</p>
+<p>You create a release pipeline in the same way as you create a build pipeline—by adding</p>
+<p>tasks in the Azure DevOps portal, like in Figure 10.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>37</p>
+<p>Figure 10: Azure DevOps Release Pipeline</p>
+<p>Azure DevOps is a powerful tool that every .NET developer should have in their arsenal.</p>
+<p>Now you no longer have an excuse to not do continuous integration and continuous</p>
+<p>deployment.</p>
+<p>Get started with Azure DevOps</p>
+<p>.</p>
+<p>Download and read the free e-book about DevOps for a</p>
+<p>microservices architecture .</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>38</p>
+<p>Summary and how to get started for free
+In this guide, we’ve introduced the power that Azure can bring to your applications.</p>
+<p>Using Azure, you can do incredible things with your applications—facial and speech</p>
+<p>recognition, manage your devices on the Internet of Things in the cloud, scale as much</p>
+<p>as you want, and pay for what you use.</p>
+<p>You’ve seen that Azure is a great place for .NET developers and architects and it</p>
+<p>provides tools that have the same world-class quality and depth that you are used to</p>
+<p>working with today. The days of having to write complicated “plumbing” yourself are</p>
+<p>over. Now you can take advantage of a wealth of prebuilt solutions. Free yourself up to</p>
+<p>work on the things that matter, and let Azure take care of the solved problems.</p>
+<p>Keep learning with an Azure free account</p>
+<p>Do you have a Visual Studio Subscription? Activate your monthly Azure credit.</p>
+<p>Sign up for an Azure free account and receive:</p>
+<p>•  A $200 credit to use on any Azure product for 30 days</p>
+<p>•  Free access to our most popular products for 12 months, including compute, storage,</p>
+<p>networking, and database</p>
+<p>•  More than 25 products that are always free, including Text Translator, Functions and Active</p>
+<p>Directory B2C</p>
+<p>Download and install language-specific SDKs and tools at:</p>
+<p>https://azure.microsoft.com/downloads/</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>39</p>
+<p>About the team</p>
+<p>Cesar, Michael, Beth and Barry are passionate about Microsoft Azure and would encourage you to reach
+out to them on Twitter for questions regarding this book.</p>
+<p>Cesar de la Torre works for Microsoft Corp in Redmond, Seattle, in the .NET
+product team, focusing on .NET, Azure, Containers &amp; Microservice-based
+architectures and creating .NET Application Architecture guidance.</p>
+<p>You can reach him on Twitter @cesardelatorre or by following his blog at
+https://blogs.msdn.microsoft.com/cesardelatorre/.</p>
+<p>Michael Crump works at Microsoft on the Azure platform and is a coder, blogger,
+and international speaker on various cloud development topics. He’s passionate
+about helping developers understand the benefits of the cloud in a no-nonsense
+way.</p>
+<p>You can reach him on Twitter @mbcrump or by following his blog at
+https://www.michaelcrump.net.</p>
+<p>Barry Luijbregts is an independent architect and software developer focused on
+preparing business applications and solutions for the cloud. A Microsoft Azure
+MVP, Barry is a skilled educator and active member of the community providing
+Pluralsight cloud and developer-focused courses and on-site private training
+sessions for corporate groups. He records podcasts, founded an active .NET User</p>
+<p>Group, and leads technology bootcamps. Barry has a lifelong passion for technology and for IT in
+particular. Technology drives his curiosity as he stays current and gains unique access to new
+technology through Microsoft early adoption programs. Understanding that software is an
+investment, Barry uses his knowledge of cloud direction to advise clients on forward-looking and
+sustainable long-term solutions. You can reach Barry on Twitter @AzureBarry and through his
+website at https://www.azurebarry.com.</p>
+<p>Beth Massi is the Product Marketing Manager for the .NET Platform and
+Languages at Microsoft. She’s a long-time community champion for .NET
+developers and on the Board of Directors for the .NET Foundation. You can reach
+her on Twitter @BethMassi.</p>
+<p>Azure Quick Start Guide for .NET Developers</p>
+<p>40</p>

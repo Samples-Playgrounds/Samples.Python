@@ -1,0 +1,623 @@
+<p><img src="_page_0_Picture_0.jpeg" alt="" /></p>
+<h1>.NET for Java Developers</h1>
+<p><img src="_page_0_Picture_2.jpeg" alt="" /></p>
+<p>Ted Neward, Principal Neward &amp; Associates, LLC</p>
+<p><img src="_page_1_Picture_0.jpeg" alt="" /></p>
+<h4>EDITION 1.0</h4>
+<p>DOWNLOAD available at: <a href="https://aka.ms/dotnet-forjavadevs">https://aka.ms/dotnet-forjavadevs</a></p>
+<p>PUBLISHED BY</p>
+<p>DevDiv, .NET and Visual Studio product teams</p>
+<p>A division of Microsoft Corporation</p>
+<p>One Microsoft Way Redmond, Washington 98052-6399</p>
+<p>Copyright © 2018 by Microsoft Corporation</p>
+<p>All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.</p>
+<p>This book is provided &quot;as-is&quot; and expresses the author's views and opinions. The views, opinions, and information expressed in this book, including URL and other Internet website references, may change without notice.</p>
+<p>Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.</p>
+<p>Microsoft and the trademarks listed at<a href="http://www.microsoft.com">http://www.microsoft.com</a>on the &quot;Trademarks&quot; webpage are trademarks of the Microsoft group of companies. All other marks are property of their respective owners.</p>
+<p>.NET for Java Developers</p>
+<p>Prepared for Microsoft by Ted Neward, Principal, Neward &amp; Associates, LLC</p>
+<h2>Contents</h2>
+<p>| Introduction                                           | 1  |
+|--------------------------------------------------------|----|
+| History                                                | 3  |
+| Of components, managed environments, and code          | 3  |
+| Hello, .NET                                            | 5  |
+| Hello, strange new world                               | 9  |
+| Getting Started: Tooling                               | 10 |
+| Hello, web?                                            | 10 |
+| Docker all the things!                                 | 10 |
+| Linux .NET?                                            | 10 |
+| Visual Studio Code                                     | 11 |
+| Mac .NET?                                              | 12 |
+| Windows: Visual Studio                                 | 14 |
+| Hello, dotnet: CLI style                               | 15 |
+| Hello, .NET: IDE style                                 | 16 |
+| Solutions and projects                                 | 18 |
+| Goodbye, HelloWorld                                    | 19 |
+| C#, Succinctly                                         | 20 |
+| C# Basics                                              | 20 |
+| Starting exploration: classes, properties, and methods | 21 |
+| Lambdas, type inference, and extension classes         | 25 |
+| Language-INtegrated Query (LINQ)                       | 27 |
+| Asynchronous programming with Async/Await              | 28 |
+| Frameworks, for the Win!                               | 29 |
+| ASP.NET Core Web API                                   | 30 |
+| ASP.NET Core MVC                                       | 33 |
+| Entity Framework Core                                  | 35 |
+| Wrapping Up                                            | 39 |</p>
+<p><img src="_page_3_Picture_0.jpeg" alt="" /></p>
+<h2><span id="page-3-0"></span>Introduction</h2>
+<p>When I was about eight years old, my parents took my sister and me to Paris, France. It was our first trip out of the country, and aside from the ridiculously long flight—eight hours on an airplane feels like forever to somebody who hasn't yet finished their first decade of life—I really had no idea of what to expect. In fact, in an amusing anecdote my father has yet to tire of telling, I remember having to sit down with my parents in front of a globe so that they could explain to me that &quot;the United States&quot; was not, in fact, synonymous with &quot;the world.&quot;</p>
+<p>It was entirely a trip of firsts: my first experience wandering around in a world where I couldn't understand any of the written signs, my first experience eating food I couldn't recognize, and my first experience feeling completely lost in the world around me. I found, to my eight-year-old horror, that I couldn't even figure out which bathroom to use—which, considering I had just the year before managed to convince my mother I didn't need to be escorted to the bathroom and back, was of particular concern. I didn't want her to start thinking I actually needed adult supervision. This was clearly not my home, and I was more than a little terrified of it.</p>
+<p>Visiting a foreign land, particularly to someone who has cocooned themselves entirely in the concepts and cultures of &quot;home,&quot; can be intimidating and overwhelming without a guide. On that trip to France I had my parents, and despite neither of them speaking anything close to fluent French, they managed to guide us through the tricky parts. (French-English guidebooks are a wonderful thing.)</p>
+<p>For the typical Java developer, finding a guide to exploring the .NET ecosystem can be tricky, since the average Java developer can still hearken back to a time when expressing an interest in looking at .NET was tantamount to declaring a desire to betray everything good and right in the world (or so it seemed, at least at the time).</p>
+<p>In this paper, I will serve as your guide to the .NET world. I've been a part of the .NET ecosystem almost as long as I've been a part of Java's. I started with Java in 1996; I started with what would become .NET in 2000, even before it was announced. I've built applications in both, written books for both, and explored the source for both. They're closer to one another than you might think, but each has been fundamentally influenced by the people using them. In fact, it's not a bad analogy to think of them as twin brothers, separated at birth, raised by different sets of parents. Same DNA, but shaped by their experiences and events to be different in a number of interesting places.</p>
+<p>If you're a Java developer, looking to get started exploring the .NET ecosystem, then suspend what you think you know, take my hand, and let's take a trip to a foreign land. Doing so will require a little history to understand how things came to be, then a quick set of instructions on how to get the tooling set up (and which tooling you want, depending on your preferences). Once the environment is set up, we can pick up the critical differences between C# and Java, and start diving into some of the central frameworks in this world—ASP.NET, Entity Framework, and a few others. When we</p>
+<p><img src="_page_4_Picture_0.jpeg" alt="" /></p>
+<p>finish up, if you're following along, you'll have everything you need to start your own exploration of the .NET community, and from there you'll get to draw your own conclusions and make your own opinions.</p>
+<p>Most importantly, you'll know how to order off the menu and tell the bathrooms apart.</p>
+<p>Ready?</p>
+<p><img src="_page_5_Picture_0.jpeg" alt="" /></p>
+<h2><span id="page-5-0"></span>History</h2>
+<p><em>If you'd like to skip the walk down memory lane, you can jump to the next section, <a href="#page-12-1">Getting Started</a>.</em></p>
+<p>Ostensibly, the history of .NET begins in October of 2000, at Microsoft's Professional Developer Conference (PDC), when Microsoft announced to the world that they were working on a new programming platform, on which would rest the fate of all Microsoft development to follow. It was called .NET, it would be the backbone for their upcoming operating system (Windows Vista), it would be a part of their data management system (nicknamed &quot;SQLServer.NET&quot;), and it would form the core development platform for building interconnected applications into the future by leveraging emerging standards such as XML, SOAP, WSDL, and a few others the world had not yet really come to understand. It would be the principal competitor platform to their principal development rival at the time, Sun Microsystems, and its Java platform. And the world could see that the shot was fired, the line in the sand drawn, and the armies drawn up; clearly, this was Microsoft copying the efforts of its competitors, seeking dominance, and….</p>
+<p>And most of the world completely misunderstood where .NET had come from, why it had come to exist, and what Microsoft really sought to obtain from it.</p>
+<p>In fact, it's fair to suggest that many within the Microsoft ecosystem misunderstood what .NET was really about; once announced, the marketing machine took over. Much effort was wasted due to the entanglement of &quot;.NET&quot; with &quot;web services,&quot; and it would take the better part of a decade before people could understand that the two really had nothing intrinsically to do with one another any more than &quot;Perl&quot; did with &quot;databases.&quot; Microsoft management compounded all this confusion by re‑branding the &quot;.NET&quot; suffix to a number of their products, which they later corrected but well after the damage had been done.</p>
+<p>But despite all that, solid engineering rests at the core of .NET; all that branding and marketing made it harder to see, but it's always been there. To really understand .NET, it is necessary to see it in its proper historical context: that, in truth, it was the simple &quot;next step&quot; along an evolutionary chain that stretched back much further than that October keynote almost two decades ago.</p>
+<h3>Of components, managed environments, and code</h3>
+<p>In the beginning, there was C.</p>
+<p>To be more accurate about it, in the beginning a number of programming languages were created to make it easier to produce programs that knew how to execute on a single chip. They integrated directly with the hardware, making use of the facilities there to obtain memory, interact with the disk, and present data to the display for the user to understand. In time, we as an industry found that this direct-hardware interaction had its drawbacks, and we sought to create a series of abstractions on top of that hardware, to help coordinate the use of the hardware across multiple simultaneously</p>
+<p><img src="_page_6_Picture_0.jpeg" alt="" /></p>
+<p>executing programs. We called that first attempt at regulating and managing the hardware an operating system. And it was pretty good. So good, in fact, that numerous flavors of operating system were born, including Microsoft's Windows operating system, and Solaris, and macOS (though it was called &quot;System 7&quot; back then), and Linux, and a few others whose names exist now only in the history books and dusty corners of Usenet forums. (Bonus points if you recognize these names: Minix, Mach, BSD, OS/2, Amiga, or BeOS. Even more bonus points if you ever ran one of them. If you ever ran DOS, though, it just means you're old.)</p>
+<p>The bigger, more important issue, however, lay with the underlying concept of the operating system itself—that programmers found it helpful and useful to have &quot;something else&quot; working with their programs. That &quot;something else&quot; would be responsible for certain aspects of how the programs executed and behaved, rather than assuming that every single nuance had to be the programmers' responsibility.</p>
+<p>This concept, in large, is essentially that of a &quot;managed environment.&quot; Although it has its roots in operating systems, it echoes all the way down through the ages, even into the modern era of containers and cloud: that there can be, within a program, a set of services and/or actors that are responsible for details that the programmer doesn't want to have to deal with. Operating systems are managed environments in that they take care of how to position data on the hard drive, how to schedule the execution of threads, and how to regulate access to various resources such as network ports or data files. Virtual machines such as the Java Virtual Machine are managed environments in that they regulate the access and reclamation of heap memory, transform an intermediate bytecode format into CPU-native instructions, and prevent the direct access of memory (except under very specific circumstances) in order to avoid process termination by careless programming. Containers such as Docker are managed environments in that they provide a context around an executable to mimic a precise environment—configuration files, environment variables, and shared network settings—so that developers can be assured that the environment outside their programs are consistent regardless of where they are deployed.</p>
+<p>By the early '90s, Microsoft had come to understand the need for a managed environment for Windows developers to be able to take &quot;the next step forward&quot; in development evolution. The &quot;GUI revolution&quot; of the mid-'80s was largely finished; programs weren't just about &quot;dialogs and data,&quot; but now needed to integrate more deeply with the GUI environment (right-click context menus, for example) and start taking advantage of networking in greater detail. (Old developers like me will remember that it was around 1995 that references to HTTP and &quot;the World Wide Web&quot; were just starting to appear in publications and technology journals.)</p>
+<p>As is common when developers master a new concept, new challenges emerged. C++ developers had been speaking of &quot;reusable code&quot; for several years, but it was Visual Basic (and Delphi, along with several other &quot;4GL&quot; variants) that demonstrated actual practical code reuse, in the form of &quot;controls&quot;: widgets that could be used across a variety of programs repeatedly without requiring in-depth knowledge about the controls' implementation. Simply obtain the library, put it into the right place within the development environment, drag-and-drop the control into the construction area, and lo, the developer was off and running. True, C++ had created the concept of &quot;application frameworks,&quot; like MFC and OWL, but &quot;GUI builders&quot; had demonstrated that the concept of &quot;controls&quot; could be leveraged to create a marketplace of reusable atomic blocks of state, behavior, and events; now</p>
+<p><img src="_page_7_Picture_0.jpeg" alt="" /></p>
+<p><span id="page-7-0"></span>Microsoft wanted to bring that concept, writ larger, into the bigger world beyond GUI development. More importantly, they also wanted to invert that relationship—make it possible for outside developers to build &quot;things&quot; that could be used by existing things (such as the operating system or, perhaps, the web browser) without detailed knowledge of their implementation.</p>
+<p>To do that, they needed to create a managed environment that would work across a variety of different languages, but all operating under the same rules. That effort, called the Component Object Model (COM), was the first of several &quot;managed platforms&quot; that emerged during the earlyand mid-'90s. (Ironically, several open-source efforts would go after this same space many years after Microsoft declared COM &quot;finished,&quot; including Mozilla's XPCOM.) COM itself was successful in that it became the backbone of Windows development for a significant percentage of the Windows platform. But it still failed in that it left programs vulnerable to many of the same things that had plagued them before: memory leaks, mishandled pointers, and unexpected process termination at the first mistake. It was clear that, despite the managed platform, writing code in a &quot;native&quot; language (such as C/C++ or Delphi) still wasn't a particularly great place to be.</p>
+<p>It was around this same timeframe, 1995, that Sun Microsystems demonstrated the HotJava browser to the world, the centerpiece of which was this language that could be used to write executable bits to run inside the browser. By 1996, Microsoft had come to the realization that this was what it was missing: a &quot;managed language&quot; to run on top of their managed platform. A managed language had exactly the right &quot;distance&quot; from the underlying operating system they were seeking—garbage collection would help prevent memory leaks and accidental crashes, and the virtual machine could help enforce stronger security controls that the world had just started to realize they needed. It was, in many ways, a perfect match. Microsoft invested resources into building their own JVM, extended their IDE to include writing Java code (Visual J++), and integrated COM into the runtime.</p>
+<p>Unfortunately, in the last part of that sentence lay the seeds of its own destruction.</p>
+<h4>Hello, .NET</h4>
+<p>Divorces are never a pretty sight, and recounting the history of one is always fraught with opinion, revisionist history, and bad feeling. Suffice it to say that by 1997/1998, two facts were becoming clear: one, Sun didn't care for Microsoft's work increasing interoperability between their JVM and native COM components in Windows1 , and two, Microsoft and Java were going to part ways, one way or another. (Who got custody of the dog is still hotly debated.)</p>
+<p>Either certain groups within Microsoft could see the writing on the wall or they had come to find issues (real or perceived) with the Java Virtual Machine; either way, by 1998, a new effort came to life inside of Microsoft, designed to bring a new managed platform and managed language into the world. Originally intended as the successor to COM, it went through a variety of names, including</p>
+<p><sup>1</sup> For the curious, Microsoft offered additional platform-specific APIs that permitted interoperation with native COM components. The irony of this is deep, considering that Sun had actually allowed for COM-specific native interfaces in their JNI specification—the first three methods in the interface table for a JNIEnv (&quot;JNI environment&quot;) object were specifically left &quot;reserved&quot; for the necessary three methods (AddRef, Release, and QueryInterface) of every COM interface object. Those three slots are still reserved to this day.</p>
+<p><img src="_page_8_Picture_0.jpeg" alt="" /></p>
+<p>&quot;COM+,&quot; the &quot;Component Object Runtime&quot; (COR), the &quot;Universal RunTime&quot; (URT), and &quot;Next-Generation Windows Services&quot; (NGWS) before finally being introduced to the world as &quot;.NET&quot; at that October 2000 PDC. Along with it would come a new language, code-named &quot;COOL&quot; (supposedly to stand for the &quot;Component-Oriented Object Language,&quot; although opinions vary now) and later renamed &quot;C#.&quot;</p>
+<p>While most observers considered C# and the CLR (the Common Language Runtime, the virtual machine executing the bytecode) to be direct competitors of Java, Microsoft took careful steps to ensure that it was &quot;open&quot; in ways that Java was not: where the JVM was designed from the beginning to be a virtual machine for a single language, the CLR embraced a more polyglot approach, with Microsoft even going so far as to recruit several universities and companies to create new languages for this platform and/or adapt existing ones. This project, nicknamed &quot;Project 7&quot; (for the 7 groups that participated), debuted several of these languages during .NET's introduction, and included CLR flavors of Eiffel, Perl, and even COBOL(!). Few of these languages gained any traction after the first few years of existence, and most no longer exist, but their presence had the effect on Microsoft of &quot;keeping them honest&quot; with respect to other languages beyond C# and Visual Basic as the platform grew and evolved. (Microsoft itself would later go on to introduce a number of new CLR-based languages, including a compiled-to-binary version of ECMAScript, two different efforts at bringing managed coding to C++, a hybrid object/functional language called F#, and several more research languages.)</p>
+<p>However, Microsoft also sought to make sure that .NET was not a proprietary effort by investing thousands of man-hours into the creation of a series of international specifications—through the European Computer Manufacturer's Association (ECMA2 )—to ensure that C# and the underlying platform were both open industry standards. C# was accepted and ratified as ECMA-334, and the underlying runtime was given the name the &quot;Common Language Infrastructure&quot; (CLI), and accepted and ratified as ECMA-335. Intel, HP, and several other industry participants joined Microsoft in keeping these specifications up to date with changes to the language and the platform, the most recent updates3 coming in 2012 for the CLI and 2017 for C#.</p>
+<p>With the introduction of these specifications in 2001 came an unexpected side-effect: members of the open-source community began to examine building a &quot;clean-room&quot; implementation of them. While the CLI Specification didn't include any of the Windows-specific features (such as a deep COM integration) Microsoft wanted for backwards-compatibility and forwards-evolution for their existing developer base, the CLI Specification itself provided enough integration points to make it interesting to implement on other platforms. Miguel de Icaza, of GNOME fame, began one such project, calling it Mono.</p>
+<p>The specification also gave Microsoft some room to do what some within the company had been looking to do for quite a while: provide a research and experimentation vehicle for the academic and research communities to explore. In 2002, Microsoft released a stripped-down version of the CLR source code, code-named &quot;Rotor,&quot; distributed under an open-source license they created, called the</p>
+<p><sup>2</sup> ECMA, it should be noted, also owns the specification for the language commonly known as &quot;JavaScript,&quot; but is more rightly called &quot;ECMAScript,&quot; governed as ECMA-262.</p>
+<p><sup>3</sup> CLI:<a href="https://www.iso.org/standard/58046.html">https://www.iso.org/standard/58046.html</a> and <a href="http://www.ecma-international.org/publications/standards/Ecma-335.htm">http://www.ecma-international.org/publications/standards/</a> <a href="http://www.ecma-international.org/publications/standards/Ecma-335.htm">Ecma-335.htm</a>; C#: <a href="http://www.ecma-international.org/publications/standards/Ecma-334.htm">http://www.ecma-international.org/publications/standards/Ecma-334.htm</a></p>
+<p><img src="_page_9_Picture_0.jpeg" alt="" /></p>
+<p>&quot;Shared Source&quot; license, giving it the formal name &quot;Shared Source CLI&quot; or &quot;SSCLI.&quot; While Mono would remain the subject of only fleeting interest to some for many years, and Rotor of even less interest to those outside the .NET universe, the seeds of an open-source mindset were sown. Over time, Mono would be purchased by Novell, then spun out into its own company, Xamarin, which would faithfully parallel the work described by the specifications and periodically try out new ideas for the opensource community to consider.</p>
+<p>Microsoft officially released the first version of C# and the CLR in 2002, and new versions came roughly three years apart after that: C# 2.0 in 2005, and C# 3.0 in 2008. Each was contained in a product release of Visual Studio, such that C# 2.0 and version 2.0 of the CLR runtime was released with Visual Studio 2005, and C# 3.0 and CLR 3.5 came with Visual Studio 2008. Microsoft then shifted to a two-year release cycle, with Visual Studio 2010, Visual Studio 2012, Visual Studio 2015, and most recently, Visual Studio 2017. However, the versions of C# and the CLR started falling out of lockstep with Visual Studio, deliberately, for a couple of reasons.</p>
+<p>The first was that Microsoft had again seen the writing on the wall, so to speak, and was starting to unbundle its various parts of the .NET ecosystem into constituent, and independent, parts. F#, which first shipped &quot;out of the box&quot; in Visual Studio 2010, was the first of these to start down the opensource path, largely because having started life as a Microsoft Research project, it had never really embraced being commercialized (and therefore closed-source) in the first place. Microsoft started working shortly thereafter on an open-source rewrite of its entire compiler toolchain, code-named &quot;Roslyn.&quot; By the time of Visual Studio 2015, many parts of the core ecosystem were starting to ship independently, with Visual Studio releases serving only as a vehicle for developers to gather the parts of the ecosystem they desired more easily. Open-source package management (called NuGet), which began life well outside of the Visual Studio organization, was incorporated into Visual Studio so that NuGet came &quot;out of the box,&quot; much as support for Maven and Ant do in Java IDEs.</p>
+<p>Mono, meanwhile, had started to gain some traction in an unusual place: gaming. In particular, the gaming toolkit Unity had expressed interest in Mono, and soon had the Mono framework running inside the Unity toolkit. Unity-based games could now be written in JavaScript (a distant fork of the JavaScript-on-.NET implementation that Microsoft had done back in 2001), C#, or even a Pythoninspired .NET language called Boo. Additionally, the open-source community produced another .NET implementation, the .NET Micro Framework, specifically aimed at embedded software systems and small-scale hardware such as the Arduino platform.</p>
+<p>All of this, however, was the calm before the storm. In 2008, Microsoft announced that the source for ASP.NET (the servlet/JSP equivalent) would be accessible to anyone who wanted to look at it. It wasn't full open-source yet, though, in that they weren't accepting pull requests. It was, however, an important step, and in 2014 Microsoft took that final step: It announced that it would completely open-source all of .NET, hosting it on GitHub, and thus making it available to any platform and accept pull requests from any developer so inclined. A new .NET implementation would be completely open-source and hosted on GitHub, called .NET Core. It also announced the creation of the .NET Foundation, an industry consortium of groups dedicated to the growth of the .NET platform, in</p>
+<p><img src="_page_10_Picture_0.jpeg" alt="" /></p>
+<p>much the same fashion that the Java Community Process governs the continued growth of the Java platform4 .</p>
+<p>To be sure, Microsoft made some missteps along the way, and definitely learned a few hard lessons about its relationship with the open-source community, but by late 2017, Microsoft was statistically the biggest contributor on GitHub (measured in terms of total numbers of contributors5 ), and all of its key components—language, runtime, libraries, and many of its tools—were available for download on GitHub.</p>
+<p>Microsoft also started to get more serious about the cross-platform/portability aspects of the .NET ecosystem. Xamarin, which by 2009 had started producing tools that could cross-compile .NET bytecode into native applications for iOS and Android platforms (the catchy-named &quot;MonoDroid&quot; and less-catchy &quot;Mono for iOS&quot; toolkits), was flourishing, and Microsoft realized that a practical story for being able to share non-UI portions of code across multiple platforms was necessary if they wanted to avoid developer confusion.</p>
+<p>While the ECMA Specifications had discussed different &quot;profiles&quot; for levels of .NET standardization, these profiles were in many ways similar to their &quot;Java Standard Edition,&quot; &quot;Java Micro Edition,&quot; and &quot;Java Enterprise Edition&quot; cousins—a little unwieldy in a number of ways, but most notably in that there wasn't really a good way to guarantee compatibility across platforms and implementation versions—if code is compiled by the Java6 compiler, it is safe to assume that it will continue to run on the Java6 virtual machine from whence it was compiled, but the Java APIs do change from release to release, and this has tripped up the unwary Java developer from time to time.</p>
+<p>Thus, in 2016, Microsoft announced the &quot;.NET Standard 1.0&quot; profile, a collection not of relatively vague implementation documents, but an actual API standard, such that a developer who sought to build a library that could be used by a variety of different platforms (across a certain number of versions of that platform, even) could know that anything that implemented .NET Standard 1.0 would be able to consume that library, regardless of where that code is running—on a web server, on a mobile device, or even on somebody's VR helmet (running a 3D interactive application written with Unity).</p>
+<p>Which brings us, now, to the current day.</p>
+<p><sup>4</sup> Ironically, Microsoft's move to the .NET Foundation comes at the same time Oracle is looking to move away from the JCP; both companies have experience with standards organizations, and neither wants to see innovation stifled in committee.</p>
+<p><sup>5</sup> <a href="http://www.businessinsider.com/microsoft-github-open-source-2016-9">http://www.businessinsider.com/microsoft-github-open-source-2016-9</a></p>
+<p><img src="_page_11_Picture_0.jpeg" alt="" /></p>
+<h4><span id="page-11-0"></span>Hello, strange new world</h4>
+<p>To the Java developer, this is a strange, strange world compared to the one they glimpsed into back in 2000.</p>
+<p>For starters, the Java world looks wildly different than it once did. Sun no longer exists, acquired by Oracle. Oracle and Google squabble in the courtroom over the legal implications of Java on Android devices. Spring was acquired, then spun out into its own company, Pivotal. JBoss absorbed into Red Hat. IBM no longer really even tries to push Java much anymore. Does anybody even remember EJB? Or that it was once &quot;a thing&quot;? Who would've guessed any of this back in 2001?</p>
+<p>But meanwhile, over in the Microsoft world, a new CEO runs the firm, and he has made it clear that Microsoft is an open-source player. A new player, to be sure, and still finding its feet in a variety of ways, but one committed to the open-source community. In addition to the strides it has made with .NET, Microsoft has opened Azure up to almost every mainstream language and platform—including Java. (Yes, you can run Tomcat and MySQL in an Azure cloud cluster.) SQL Server has been ported to Linux. Windows Server can be loaded into a Docker container, and Microsoft works with the Docker community to bring Docker-on-Windows up to the same level of sublime that it has on other platforms.</p>
+<p>Within the .NET ecosystem, the .NET Standard, now at a 2.0 release, provides an umbrella of guaranteed compatibility across three major platforms of this writing: the Windows-based .NET Framework (which contains the necessary libraries for building Windows client applications, for example), .NET Core (intended for the cross-platform server world, including Docker containers and cloud-native targets), and Xamarin (principally aimed at the iOS and Android world, but also providing bindings for building macOS applications). Unity has joined the .NET Foundation and expects to be aligned with the various versions of .NET Standard by mid-2018.</p>
+<p>All of which means that it's not a bad time to start exploring this world in more depth.</p>
+<p><img src="_page_12_Picture_0.jpeg" alt="" /></p>
+<h2><span id="page-12-1"></span><span id="page-12-0"></span>Getting Started: Tooling</h2>
+<p>Getting started with .NET depends pretty heavily on your choice of operating system and, to a lesser degree, the development experience you want. As mentioned earlier, Visual Studio supports both Windows and macOS, as well as a variety of Linux distributions, which pretty much covers everybody. In this section, the goal is to get tools installed, a basic introduction to the major project artifacts, and, of course, build the traditional &quot;HelloWorld.&quot; Once we've done that, we'll talk a little bit about what we're producing, and the package system for .NET (called NuGet).</p>
+<h4>Hello, web?</h4>
+<p>If you're just looking to flirt a little with the C# language but don't want to commit any disk space to the idea, one of the easiest ways to explore the language is the online interactive browser-based tutorial found at<a href="https://aka.ms/csharpquickstarts">https://aka.ms/csharpquickstarts</a>.</p>
+<p>However, doing so will run into a whole slew of limitations to your exploration, so sooner or later you're probably going to want to commit some disk space.</p>
+<h4>Docker all the things!</h4>
+<p>If you're a Docker enthusiast, and you want to get the quickest path possible to working with .NET, fire up a Microsoft-maintained .NET Core Docker container by running:</p>
+<p>docker run -it microsoft/dotnet bash</p>
+<p>This will pull the latest version of Microsoft's Docker Hub–stored Docker images, and drop you into a shell prompt from which you can run the &quot;dotnet&quot; CLI tool. When you are ready to edit some files, run the Docker image with a volume mount to a host's local directory, and use your favorite editor might we suggest Visual Studio Code?—to edit the .NET Core–generated files we're about to create.</p>
+<h4>Linux .NET?</h4>
+<p>As with most things Linux, installation instructions depend on which flavor of Linux you're running.</p>
+<p>Red Hat is the easiest install, since Microsoft and Red Hat have partnered on a few things in the past, so the .NET Core packages are in the Red Hat distribution channels; assuming you are using the Red Hat Subscription Manager, two commands get .NET Core on your machine:</p>
+<p>yum install rh-dotnet20 -y scl enable rh-dotnet20 bash</p>
+<p><img src="_page_13_Picture_0.jpeg" alt="" /></p>
+<p><span id="page-13-0"></span>At that point, the &quot;dotnet&quot; tool should be in your PATH and good to go.</p>
+<p>If you're on Ubuntu, there's a bit more work required. While Microsoft is working to get the .NET Core packages into the standard Ubuntu distribution channels, at the time of this writing that hasn't happened completely, so Ubuntu users will need to add Microsoft's key and Ubuntu-release-specific URL into the list of sources the Ubuntu apt-get utilities check for packages. Full details are on the .NET Core website at <a href="http://www.dot.net/core">www.dot.net/core;</a> once that's done, however, apt-get can install the &quot;dotnetsdk-2.1.101&quot; package onto the system, and this will get the &quot;dotnet&quot; tool in the PATH and good to go.</p>
+<p>This &quot;register the channel&quot; followed by &quot;use the standard package manager&quot; is actually the same story for Fedora, openSUSE, CentOS, and Debian; again, full step-by-step instructions are on the .NET Core &quot;Getting Started&quot; page <a href="https://aka.ms/dotnet-getstarted-linux">(https://aka.ms/dotnet-getstarted-linux)</a>, which has a drop-down to choose between the six flavors of Linux that .NET Core supports. Add the Microsoft feed to the package manager, use the package manager to do the install, and the &quot;dotnet&quot; tool should be available on the PATH.</p>
+<p>Once that's done, .NET Core is ready to go.</p>
+<h4>Visual Studio Code</h4>
+<p>For almost any operating system you might find yourself using, including most of the popular distributions of Linux, Microsoft has a lightweight editor called Visual Studio Code. If you've been doing a lot of web front-end work, you may already have been using it. In many ways, it's the latest attempt at building an &quot;editor-plus-plug-ins&quot; tool, and it is gaining some traction with the world outside the Microsoft ecosystem. (It's actually the preferred tool for working with Google's opensource Angular project, among other things.) It's also available from<a href="http://code.visualstudio.com">http://code.visualstudio.com</a>, it's available for Windows, macOS, and most of the major flavors of Linux, and it's a pretty quick download and install. And, honestly, it's not a bad editor for writing Java code, in case you were wondering; check out the Java extensions at <a href="https://code.visualstudio.com/docs/java/extensions">https://code.visualstudio.com/docs/java/extensions</a>the next time you're looking for a lightweight editor that understands Java projects.</p>
+<p>Firing up Visual Studio Code from the command-line is often just a simple &quot;code&quot; if you're in the root directory of your project.</p>
+<h4>Mac .NET?</h4>
+<p>If you're like a lot of Java developers (myself included), you own a macOS machine. It might surprise you to know that many of the developers at Microsoft do, too. (Some of them repaved it with Windows, but a lot of them run native macOS.) Doing .NET on macOS falls into one of two options.</p>
+<p>One is the command-line approach, which you can obtain via Homebrew. For the moment, using Homebrew requires tapping a cask, but after that, it's as simple as doing the classic &quot;brew install&quot; thing:</p>
+<pre><code>$ brew tap caskroom/cask #if you haven't already
+$ brew cask install dotnet-sdk
+</code></pre>
+<p>This will run a custom installer script that will put .NET Core onto your machine, so it's not completely Homebrew-friendly, but it &quot;does the job.&quot; Once finished, fire up a new Terminal window (to pick up the environment changes that the installer makes) and run:</p>
+<pre><code>$ dotnet --version
+2.1.1
+</code></pre>
+<p><img src="_page_15_Picture_0.jpeg" alt="" /></p>
+<p>Which should respond with &quot;2.<something>,&quot; depending on which version is published as of the time you read this.</p>
+<p>If you're a bit more of an IDE fan, however, you're still in luck. With its acquisition of Xamarin, Microsoft also acquired Xamarin's IDE for the Mac, which was just recently re-branded to be called &quot;Visual Studio for Mac.&quot; Based on the open-source &quot;MonoDevelop&quot; project, it's not quite as extensive an IDE experience as Visual Studio, owing to a smaller set of plug-ins developed for it, but that can actually make it more enjoyable to use sometimes, particularly if all you're looking for is a good editor, project management system, and debugger.</p>
+<p>Installing Visual Studio for Mac is a pretty straightforward experience—<a href="http://visualstudio.com">http://visualstudio.com</a>has a link for an installer that, when opened, will go through the usual Mac installation process. There are a number of options here that aren't absolutely necessary for our purposes, but since a complete install is measured only in single-digit gigabytes of disk space, unless you're constrained for space, why not just keep it simple and install it all?</p>
+<p><img src="_page_15_Figure_4.jpeg" alt="" /></p>
+<p><img src="_page_16_Picture_0.jpeg" alt="" /></p>
+<p><span id="page-16-0"></span>Once started, take a few minutes to grab some coffee; like its cousin on Windows, Visual Studio for Mac will download the components it needs and install them to disk. Don't walk away from the machine for too long, however—the installer will ask for the administrator password several times during the installation.</p>
+<h4>Windows: Visual Studio</h4>
+<p>Lastly, if you're running Windows, the most obvious option is installing Visual Studio—that combination has been the default for Windows-based development for close to two decades, and most Java developers know enough already to realize that. What many don't realize is that there is a free-to-download &quot;Community Edition&quot; that has all the core parts of the IDE and toolchain: compiler, debugger, editor, project management, and so on. You can find the Visual Studio Community Edition via your favorite search engine or wander on over to<a href="http://visualstudio.com">http://visualstudio.com</a>to grab an installer. Make sure you're on a good Internet connection, since 98% of the install is coming from the Microsoft servers.</p>
+<p>When the Visual Studio installer fires up, it immediately becomes obvious that this is every bit as large of an installation as Eclipse or IDEA—hundreds of options lie before you. While most of them are not necessary (many of them have to do with building unmanaged C++ code, for example, or for building game projects), selecting all of them will help ensure that anything you might look to explore will be available to you. The total install size is about the same as your favorite Java IDE with all the trimmings, when all is said and done. Alternatively, you can select just &quot;.NET Core Crossplatform development&quot; for a streamlined install of just .NET Core.</p>
+<p><img src="_page_16_Figure_5.jpeg" alt="" /></p>
+<p><img src="_page_17_Picture_0.jpeg" alt="" /></p>
+<p><span id="page-17-0"></span>If all of this seems a little hard to remember, honestly, you're not wrong. Remember, Microsoft is fairly new to this &quot;make it work on all platforms&quot; story, and they're constantly trying to improve the whole experience, which in the past has resulted in some churn and confusion. One of the things they've done in 2017 is to try to collect all their .NET-related resources together into a single URL for easy reference. That URL, <a href="http://www.dot.net">www.dot.net,</a> is the place to start, and will end up redirecting to the main Microsoft site dedicated to the .NET ecosystem. It's an overview of all the different things one can do with .NET, as well as the different platform installers. Probably the most useful things are the buttonlinks to &quot;Get Started&quot; and &quot;Download&quot;; the latter takes you to a collection of different download links, and the former takes you to a series of tutorial steps to getting started building a console &quot;HelloWorld&quot; application. (Sounds familiar, no?)</p>
+<h4>Hello, dotnet: CLI style</h4>
+<p>Regardless of how you've got the command-line tooling on your machine, it all boils down to one thing: The machine has a command-line tool called &quot;dotnet&quot; that's in the PATH and hooked up to an Internet connection. Away we go.</p>
+<p>The &quot;dotnet&quot; tool, in many ways, is a re-examination of the thought process that Maven brought into the world: a command-line tool that can generate out a project based on customizable/extensible templates stored in the cloud, as well as act as a single point-of-control for building, running, testing, and any other commands that need to happen to a given project. The &quot;dotnet&quot; tool hides a fair amount of .NET Core's machinery, in the same way that Maven hides a fair amount of the Java machinery (CLASSPATH references, for example), so keep in mind that we're only looking at the tip of the iceberg as we work with this. (Make no mistake—the tooling here goes just as deep and just as wide as anything we've ever used in the Java world, and it's just as easy to get lost in it if we dive too deeply into it too quickly.)</p>
+<p>To start a .NET Core application, we can use &quot;dotnet&quot; to generate a project based on the &quot;console&quot; application template, like so:</p>
+<h4>$ dotnet new console -o HelloWorld</h4>
+<p>This will generate a &quot;console&quot; project into the directory &quot;HelloWorld&quot;; for those who are curious, &quot;dotnet new&quot; by itself, or &quot;dotnet new --list,&quot; will list all of the project templates that the &quot;dotnet&quot; command knows about. Out of the box, it has about a dozen or so project templates, including console applications, class libraries, a half-dozen flavors of web projects, and so on. This list is expected to grow and evolve as time goes on, just as the list of Maven archetypes grew after its release. Note that the list also allows generation of projects across different languages, so those who really want to sneak a peek at what an F# Web API project would look like can run:</p>
+<h4>$ dotnet new webapi -o HelloFSAPI -lang F#</h4>
+<p>ASP.NET Web API will be discussed in a little more detail later in this paper; however interesting, though, F# is not something we're going to explore here. You can learn more at <a href="http://fsharp.org/">fsharp.org</a>.</p>
+<p><img src="_page_18_Picture_0.jpeg" alt="" /></p>
+<p><span id="page-18-0"></span>Implicit in the &quot;new&quot; command is a request to download all of the dependencies that a project requires, which in &quot;dotnet&quot; parlance is a command to &quot;restore.&quot; This requests all of the dependent assemblies—JAR file equivalents, essentially—from a Maven-like, cloud-based service called NuGet. NuGet was heavily inspired by Maven and Ruby gems, which means, for the most part, it works the same way Maven does—when doing a &quot;dotnet restore,&quot; the machine must be connected to the Internet, and depending on the size of the project, could take a while to download all the dependencies.</p>
+<p>Once the project has been &quot;restore&quot;d, all of the dependencies are downloaded, and the application can be run by using &quot;dotnet run&quot; from within the project directory. This will, not surprisingly, print &quot;Hello World!&quot; to the terminal. If outside of the project directory, tell &quot;dotnet&quot; which project to run by passing a reference to the project file (HelloWorld.csproj<sup>6</sup> ) in via the &quot;--project&quot; command-line argument:</p>
+<p>$ dotnet run --project HelloWorld/HelloWorld.csproj Hello World!</p>
+<p>If you're inside the project directory, this becomes a simple &quot;dotnet run&quot;; .NET assemblies know their entry point intrinsically.</p>
+<p>If you're feeling curious, poke into the &quot;bin/Debug&quot; directory underneath HelloWorld; in it resides the generated compiler artifacts, including the .NET assembly, &quot;HelloWorld.dll,&quot; and its debugger support file, &quot;HelloWorld.pdb.&quot; It may seem strange that one would &quot;execute&quot; a DLL, but an assembly, like a JAR file, is a repository of bytecode (but with much tighter cohesion than a JAR file provides), and the extension is (for the most part) almost entirely irrelevant. The dotnet launcher serves much the same purpose as the Java launcher does: to find the assembly specified on the command-line, load it, then execute the entry point method and get out of the way.</p>
+<h3>Hello, .NET: IDE style</h3>
+<p>If Visual Studio (or Visual Studio for Mac) has finished installing, fire it up, and either select &quot;File | New Project,&quot; or use the Start Page displayed in the center of the IDE to begin a new project by clicking one of the &quot;New Project&quot; templates. Depending on which Visual Studio you're running, you may be presented with two kinds of console applications: one that represents a native Console Application (for Windows, it will reference .NET Framework) and one that targets .NET Core (that's the opensource implementation). Choose either one (I prefer .NET Core), then do the usual IDE thing of choosing which directory in which the project should live, and its name. Note that we can designate this as a Git repository as well. Once finished, Visual Studio will think for a bit, then show the finished template, complete with C# code, ready for editing, building, and debugging.</p>
+<p><sup>6</sup> The .NET Core tooling took a bit of a detour recently through the world of JSON by working off of a &quot;project. json&quot; file, which is still mentioned in a number of .NET Core tutorials; that has been deprecated in favor of the MSBuild-based files, and is no longer supported. JSON is still used for a number of configuration files, but the .NET community reacted pretty strongly to the use of JSON for the project files, and Microsoft, looking to be a good open-source steward, responded to that feedback by backtracking and moving back to MSBuild.</p>
+<p><img src="_page_19_Picture_0.jpeg" alt="" /></p>
+<p><img src="_page_19_Figure_1.jpeg" alt="" /></p>
+<p>Building the code (Ctrl-Shift-B on Windows, Command-B on macOS) produces a console application (a native Windows .exe for Windows or a .NET Core project for macOS), which can either be built by navigating to the &quot;Debug/bin&quot; subdirectory of the project and running it directly or by launching it from within Visual Studio.</p>
+<p><img src="_page_20_Picture_0.jpeg" alt="" /></p>
+<p><span id="page-20-0"></span><img src="_page_20_Picture_1.jpeg" alt="" /></p>
+<p>The debugger works the same as it does within any IDE, and Visual Studio has its share of rich debugger tricks (which are really beyond the scope of this article, but easy to find <a href="https://aka.ms/vsdebugger">https://aka.ms/</a> <a href="https://aka.ms/vsdebugger">vsdebugger)</a>. HelloWorld, achievement unlocked.</p>
+<h4>Solutions and projects</h4>
+<p>Within the Visual Studio ecosystem, code is arranged into &quot;projects,&quot; which are in turn collected into &quot;solutions.&quot; A project is language-specific, and sports an XML file whose extension reflects that language—C# projects are stored in &quot;.csproj&quot; files, for example. Each project produces one artifact an assembly, which we'll discuss in more detail later. Solutions, then, are made up of any number of projects listed in a solution file (.sln), making it quite common for a solution to have some toplevel &quot;executable&quot; (whether that is a website project, Web API project, or some form of GUI project) with one or more &quot;library&quot; projects to support it. It's extremely common, in fact, to see projects in separate subdirectories under the directory in which the solution file lives. This arrangement won't seem strange to the working Java developer; in many respects, this is no different from what we would see in a Java codebase, where some collection of code (project) produces a JAR file, and a Maven or Gradle build (solution) brings it all together into a bundle of some form.</p>
+<p>Microsoft is working to keep all these file types in sync across all versions of Visual Studio, so that a project that builds on Visual Studio for Mac should also build on Windows, using an underlying build system called &quot;MSBuild.&quot; Heavily Ant-inspired, MSBuild has been the build system for .NET since</p>
+<p><img src="_page_21_Picture_0.jpeg" alt="" /></p>
+<p><span id="page-21-0"></span>Visual Studio 2005, and Xamarin was quick to adopt it for their project file system when they started building out their toolchain.</p>
+<h4>Goodbye, HelloWorld</h4>
+<p>Tooling is now installed. The Gods of Computer Science have been appeased by the creation of a successful HelloWorld application. It's time to take a pass across the C# language.</p>
+<p>.NET for Java Developers 19</p>
+<p><img src="_page_22_Picture_0.jpeg" alt="" /></p>
+<h2><span id="page-22-0"></span>C#, Succinctly</h2>
+<p>While we can't cover the entirety of the C# language in half a dozen pages, we can cover the key concepts of C# pretty quickly. In fact, we can do it in one sentence: C# is an object-oriented language that borrows heavily from its lexical ancestors, C++ and Java, and from other &quot;component&quot;-oriented languages such as Delphi. In recent years, C# (like most languages) has begun to incorporate more functional programming concepts into its syntax, and as a result presents a pretty multiparadigmatic set of capabilities.</p>
+<p>In other words, take Java, throw in a number of the features Java developers have debated for a decade or more, then add a bunch of functional programming concepts, stir well, bake for 15 years, and serve. Microsoft's language designers have been much more aggressive than Sun's when it comes to introducing new features into their respective languages, so for the most part a Java developer's experience with C# will probably be characterized by &quot;Oh, sure, that all looks pretty similar—wait, what is THAT?&quot;</p>
+<p>By the way, C# currently sits at version 7.2 at the time of this writing, and Microsoft's language designers have been just as aggressive in the latest revisions of the language as they were in the early ones. This is a language under constant evolution, for good or for ill. So there's much to discuss, and we will not be able to cover the entire surface area of the language—the focus here will be only on those parts that will be unintuitive to the Java developer looking at &quot;average&quot; C# code.</p>
+<h3>C# Basics</h3>
+<p>To begin, let's take a look at what was generated as part of those &quot;HelloWorld&quot; console applications, since that's probably the easiest way to get started.</p>
+<pre><code>using System;
+namespace HelloDotNet
+{
+ class Program
+ {
+ static void Main(string[] args)
+ {
+ Console.WriteLine(&quot;Hello World!&quot;);
+ }
+ }
+}
+</code></pre>
+<p>It's pretty easy to spot a number of things right off the bat: C# is a C-family language, using curlybrackets to denote scope blocks and semicolons to terminate statements. Code is organized into</p>
+<p><img src="_page_23_Picture_0.jpeg" alt="" /></p>
+<p><span id="page-23-0"></span>namespaces using the &quot;namespace&quot; keyword, and pretty clearly we have classes just as Java does. The Console class (part of the &quot;System&quot; namespace) represents the command-line input/output facilities, and WriteLine is obviously a synonym for &quot;println.&quot; Square brackets are used to denote an array in the same way they do in Java, and arrays in C# work almost exactly the same way as they do in Java, save that they have been slightly more &quot;formalized&quot; in that there is a full-blown class, System. Array, that defines a number of methods and properties that all arrays will share. Core &quot;primitive&quot; types are actually defined as full-blown classes, so that System.Array is the &quot;class&quot; representing each array instance, System.String is the &quot;string&quot; primitive type, System.Int32 is the &quot;int&quot; primitive type, and so on. All types, whether &quot;primitive&quot; (what .NET calls &quot;value types&quot;) or &quot;class,&quot; all inherit from the base System.Object type, with value types being &quot;boxed&quot; to objects when necessary. (This was the inspiration for autoboxing rules in Java5, in fact.) As a result, &quot;System.String s&quot; and &quot;string s&quot; are actually entirely equivalent declarations. New value types can be defined, but it's pretty rare.</p>
+<p>Let's start with some of the more straightforward parts of the language.</p>
+<h4>Starting exploration: classes, properties, and methods</h4>
+<p>C# 1.0 was, in large measure, a near-direct clone of Java, with some keyword changes and some new features that Java has debated for years: explicit properties and delegates (an early form of lambda expressions). Thus, we can write the traditional &quot;Person&quot; type in C# like so:</p>
+<pre><code>class Person
+{
+ public string FirstName
+ {
+ get { return this.firstName; }
+ set { this.firstName = value; }
+ }
+ private string firstName;
+ public string LastName
+ {
+ get { return this.lastName; }
+ set { this.lastName = value; }
+ }
+ private string lastName;
+ public int Age
+ {
+ get { return this.age; }
+ set { this.age = value; }
+</code></pre>
+<pre><code> }
+ private int age;
+ public Person(string fn, string ln, int a)
+ {
+ this.FirstName = fn;
+ this.LastName = ln;
+ this.Age = a;
+ }
+}
+</code></pre>
+<p>Properties can be read-only by eliminating the &quot;set&quot; clause, and write-only (if that makes sense, which it rarely does) by eliminating the &quot;get&quot; clause. The implicit parameter to a &quot;set&quot; clause is always called &quot;value,&quot; and there are no restrictions to what a property-get or property-set clause can do within its body, although 95% of the time they simply read and write a field within the class.</p>
+<p>So far, if anything, it seems more verbose than Java. However, that was the C# language as of 15 years ago—they've made a few changes along the way.</p>
+<p>One very common change is to the requirement to actually provide a body to the property-get and property-set clauses; as is the case in Java, 95% of the time these clauses simply wrap around a field and provide encapsulated access and nothing else. Which means, frankly, that the time spent writing the implementation for these is pretty much a waste of time (and something that IDEA or other IDEs can generate for us). The C# language designers agreed, and in C# 3.0 added the concept of &quot;autoimplemented properties,&quot; which asks the C# compiler to not only generate the property method implementations, but also synthesize the field used for the backing store. This simplifies the Person class down to:</p>
+<pre><code>class Person
+{
+ public string FirstName { get; set; }
+ public string LastName { get; set; }
+ public int Age { get; set; }
+ public Person(string fn, string ln, int a)
+ {
+ this.FirstName = fn;
+ this.LastName = ln;
+ this.Age = a;
+ }
+}
+</code></pre>
+<p><img src="_page_25_Picture_0.jpeg" alt="" /></p>
+<p>That's…awfully terse. But what about those scenarios where we want to have the property available to be read by anyone (public access), but only accessible for mutation from within the class (private access)? The get and set clauses can have different levels of access, the most common idiom being:</p>
+<pre><code>class Person
+{
+ public string FirstName { get; private set; }
+ public string LastName { get; private set; }
+ public int Age { get; private set; }
+ public Person(string fn, string ln, int a)
+ {
+ this.FirstName = fn;
+ this.LastName = ln;
+ this.Age = a;
+ }
+}
+</code></pre>
+<p>This will effectively make the fields immutable from the outside yet still something we can change from the interior of the class. The field itself is synthesized by the compiler (usually with a straightforward name such as &quot;__$<Person>$<FirstName>@5417,&quot; or something equally nonobvious), and won't be directly accessible by code. (Granted, one can always use System.Reflection the .NET direct equivalent to Java's java.lang.reflect package—to access the field at runtime, but that's an awful lot of work to work around something that can be discarded at any time.) For those rare situations where the auto-generated properties don't do the right thing, C# developers can always &quot;drop back&quot; to writing the property clauses out longhand and wrapping a declared field.</p>
+<p>Methods, meanwhile, work pretty much the same way they do in Java, in terms of their declaration and syntax. Methods can be instance methods or static (although static method invocations must always go through the class name, whereas Java will allow calling a static method through an instance variable—seriously, try it, it's weird), and parameters are declared in order with a type and a name:</p>
+<pre><code>public class Person
+{
+ public string FirstName { get; set; }
+ public string LastName { get; set; }
+ public int Age { get; set; }
+ public Person(string fn, string ln, int a)
+ {
+</code></pre>
+<pre><code> this.FirstName = fn;
+ this.LastName = ln;
+ this.Age = a;
+ }
+ public void SayHello(string recipient)
+ {
+ Console.WriteLine(&quot;Hello, {0}, I, {1}, say hello.&quot;,
+ recipient, FirstName);
+ }
+}
+class Program
+{
+ static void Main(string[] args)
+ {
+ Person p = new Person(&quot;Ted&quot;, &quot;Neward&quot;, 46);
+ p.SayHello(&quot;Fred&quot;);
+ }
+}
+</code></pre>
+<p>As you can see, C# follows pretty much exactly the same rules that Java does for method declaration and invocation. But, again, C# allows for some interesting variations on this theme.</p>
+<p>For starters, C# has had the concept of &quot;method literals&quot; since 1.0, though the syntax has changed over each successive revision of the language. The first step was &quot;delegates,&quot; essentially the ability to declare a method signature and then assign methods-on-object-instances to a given delegate instance, like so:</p>
+<pre><code>class Person
+{
+ // . . .
+ public delegate void HelloProc(string recipient);
+ public HelloProc IndirectSayHello;
+}
+class Program
+{
+ static void Main(string[] args)
+ {
+ Person p = new Person(&quot;Ted&quot;, &quot;Neward&quot;, 46);
+ p.SayHello(&quot;Fred&quot;);
+ p.IndirectSayHello = p.SayHello;
+ p.IndirectSayHello(&quot;Fred&quot;);
+ }
+}
+</code></pre>
+<p><img src="_page_27_Picture_0.jpeg" alt="" /></p>
+<p><span id="page-27-0"></span>This was a pretty verbose way of doing method-reference-capture, and with successive versions of C#, they simplified it, particularly once the .NET platform introduced generics. (Yes, C# has generics, yes they look syntactically almost identical to Java generics, but no, they don't work the same way when compiled—where Java uses &quot;type erasure,&quot; C# uses &quot;reified generics&quot; and persists the generic definition all the way into the compiled bytecode.) The &quot;delegate&quot; keyword here introduces a new type—a function pointer, if you will—and we can declare an instance of the delegate on the Person class, assign a method to it, and invoke the assigned method through that delegate.</p>
+<h3>Lambdas, type inference, and extension classes</h3>
+<p>By the time C# 3.0 came around, however, C# supported full-bore lambda syntax, complete with method parameter type inference, so that we could write method literals in-line:</p>
+<pre><code> p.IndirectSayHello = (recipient) =&gt; {
+ Console.WriteLine(&quot;Hey, {0}. Whatever.&quot;, recipient);
+ };
+ p.IndirectSayHello(&quot;Shaggy&quot;);
+</code></pre>
+<p>Lambdas turned out to be a major turning point within the C# language, along with several other features of the C# 3.0 release, including local variable type inference, which simply allows for the keyword &quot;var&quot; to appear in place of the type in a local variable declaration, like so:</p>
+<pre><code> var x = 12;
+ var y = &quot;Fred&quot;;
+ var z = p.IndirectSayHello;
+ z(&quot;Wilma&quot;);
+</code></pre>
+<p>The &quot;var&quot; keyword does not, as some in the Java world theorized at its introduction, create an untyped variable; the C# compiler simply infers the variable's type from the right-hand-side expression, and assigns that to the variable type. Thus, the &quot;x&quot; variable is strongly typed as an integer (since that is an integer literally on the right-hand side), &quot;y&quot; is a string, and &quot;z&quot; is a delegate that accepts a method reference that takes a single string parameter and returns void. All the &quot;var&quot; keyword does, simply, is allow the C# developer a brief respite from having to type out type signatures in places where the compiler could figure it out on its own.</p>
+<p>On top of this, Microsoft also introduced a fascinating feature called &quot;extension classes,&quot; which has found its way into other languages such as Swift. In short, a class can write &quot;extension methods&quot; that can effectively &quot;inject&quot; themselves as method declarations onto other classes, adding new functionality to classes already compiled. (It's vaguely reminiscent of aspects as described by AspectJ, but a strictly limited subset thereof.)</p>
+<p>For example, assume that it's becoming really common to want to count the number of words in a given String. In the earliest days of Java, it was assumed that we could extend the String class to add that kind of functionality, but Sun very quickly clamped down on that, made String final, and</p>
+<p><img src="_page_28_Picture_0.jpeg" alt="" /></p>
+<p>earned the (short-lived) wrath of Java developers everywhere. Java developers were forced to write &quot;StringUtils&quot; classes that had static methods on them to count the words in a string, similar to this C# equivalent:</p>
+<pre><code>public class StringUtils
+{
+ public static int WordCount(String str)
+ {
+ return str.Split(new char[] { ' ', '.', '?' },
+ StringSplitOptions.RemoveEmptyEntries).Length;
+ }
+}
+</code></pre>
+<p>Frankly, though, using this left a pretty bitter taste in everybody's mouth, since it smacked of doing procedural programming. Java developers just learned to live with it; C# language designers said, &quot;We can go one step better.&quot; If you agree that the class will never have any instance data and never be instantiated as an instance (declare the class &quot;static&quot;), then it can use the first parameter to declare a &quot;this&quot; parameter, and essentially declare a method that will appear on the targeted class, like so:</p>
+<pre><code>public static class MyStringExtensions
+{
+ public static int WordCount(this String str)
+ {
+ return str.Split(new char[] { ' ', '.', '?' },
+ StringSplitOptions.RemoveEmptyEntries).Length;
+ }
+}
+</code></pre>
+<p>(Note that &quot;String&quot; is shorthand for &quot;System.String,&quot; which is a synonym for the earlier type &quot;string.&quot; All of the &quot;primitive types&quot; in C# are aliases for the System-namespaced types, so &quot;int&quot; is the same as &quot;System.Int32,&quot; and so on. This has to do with how C# allows the declaration of &quot;value types,&quot; and while a fascinating discussion in its own right, it's a little out-of-scope from what we're doing here.)</p>
+<p>This extension class means that now we can write the following:</p>
+<pre><code> var words = &quot;One two three four&quot;;
+ var wordCount = words.WordCount(); // 4
+</code></pre>
+<p>Extension classes don't just magically apply everywhere, however—they must be brought into scope via the use of the &quot;using&quot; statements, so that if we don't care to use the MyStringExtensions, the WordCount() method won't appear on String types. And the original class remains unaffected, which means that the WordCount() extension (like all extensions) cannot have any impact on the internals of the extended class—in fact, it can't see any of the internal members, and so can only ever be able to use the public interface of the extended class. It's purely compiler syntactic sugar.</p>
+<p><img src="_page_29_Picture_0.jpeg" alt="" /></p>
+<h4><span id="page-29-0"></span>Language-INtegrated Query (LINQ)</h4>
+<p>All of this led up to one of the signature moments for the C# compiler with the 3.0 release: Language-INtegrated Query, or LINQ, for short. To many in the Java community, LINQ represented everything that was wrong with Microsoft, accusing them of &quot;embedding SQL into the C# language&quot; and turning C# into a 4GL that was proprietarily bound to SQL Server. As the Jedi Master put it, &quot;Amazing—every single part of that sentence is entirely incorrect.&quot; LINQ wasn't integrating SQL, it isn't about SQL Server, and it's actually built up around core language principles that had nothing to do with relational databases, much less integrated with SQL Server.</p>
+<p>Let's start by examining a simple collection of Person objects in a list:</p>
+<pre><code> var people = new List&lt;Person&gt;() {
+ new Person(&quot;Ted&quot;, &quot;Neward&quot;, 45),
+ new Person(&quot;Charlotte&quot;, &quot;Neward&quot;, 39),
+ new Person(&quot;Michael&quot;, &quot;Neward&quot;, 24),
+ new Person(&quot;Matthew&quot;, &quot;Neward&quot;, 18),
+ new Person(&quot;Beth&quot;, &quot;Massi&quot;, 39),
+ new Person(&quot;Dustin&quot;, &quot;Campbell&quot;, 43)
+ };
+</code></pre>
+<p>Suppose I want to give everybody within this list a beer. Sharp readers will notice, of course, that my youngest son is not yet eligible to receive a beer, and this is a family-friendly article, so we don't want to get into trouble with the local authorities.</p>
+<p>Were this a discussion of Java8 lambdas, we would talk about using lambdas and streams to filter the collection before applying a higher-order function across each to give each individual a beer. (If that's new to you, Venkat Subramaniam has some great conference lectures online that describe Java8 lambdas in more detail.) As far back as C# 3.0, Microsoft saw the need, and chose not only to layer functional principles into the language, but to put a syntax in place that would actually hide the fact that this was ever functional programming in the first place:</p>
+<pre><code> var drinkers =
+ from p in people
+ where p.Age &gt; 21
+ select p;
+</code></pre>
+<p>This is a LINQ query expression, and despite the fact that it looks similar to SQL, it's actually invoking several functional methods in sequence using a fluent interface; translated out of the SQL-like syntax, it looks more like:</p>
+<pre><code> drinkers = people.Where((p) =&gt; p.Age &gt; 21);
+</code></pre>
+<p>All of the traditional functional operations are present here—map, filter, and the rest—but they &quot;hide&quot; behind this query expression syntax. We'll talk more about the interesting features and implications of LINQ when we get to Entity Framework in the last section, but for now, just think of</p>
+<p><img src="_page_30_Picture_0.jpeg" alt="" /></p>
+<p><span id="page-30-0"></span>LINQ as a syntax that is designed to deliberately bring some of the set-oriented nature of SQL and the functional-oriented nature of languages such as Haskell into the C# language as a first-class citizen.</p>
+<p>(For anybody who really wants to see LINQ taken to an absolute extreme, it can be instructional to look at Luke Hoban's &quot;single-LINQ-expression-ray-tracer&quot; blog post from 10 years ago, available at <a href="https://aka.ms/linqraytracer">https://aka.ms/linqraytracer.</a> It will send chills down your back, one way or another.)</p>
+<h4>Asynchronous programming with Async/Await</h4>
+<p>C# 4.0 introduced a number of interesting features, but C# 5.0 truly bucked the status quo by introducing language support for a form of asynchronous programming via the &quot;async&quot; and &quot;await&quot; keywords. While not a general-purpose, all-around concurrency feature, async/await added the ability to easily add &quot;little concurrency&quot; into common programming tasks such as issuing a request for a database query or executing a Web API request without having to manually manage the threads necessary to do so without blocking. Leveraging some work done elsewhere on the .NET platform (the Task Parallel Library, or TPL), C# essentially now allows developers to start some work and return a Task<T> object, which represents that additional work. At the source code level, &quot;async&quot; can decorate either a method signature or an anonymous method literal to indicate it should run asynchronously, and &quot;await&quot; tells the compiler to generate the code necessary to hold things in place until the asynchronous code completes. (Essentially, these are language-level implementations of &quot;promises,&quot; which are permeating the JavaScript world and slowly starting to gather steam in the Java world as well, under the name &quot;CompletableFuture&quot; out of the java.util.concurrent package in Java8.)</p>
+<pre><code>async Task PlaySongsAsync(int[] ids)
+{
+ foreach (var id in ids)
+ {
+ try
+ {
+ var data = await service.GetEncodedDataAsync(id);
+ var song = await Task.Run(() =&gt; Decode(data));
+ await PlayAsync(song);
+ }
+ catch (Exception e) { /* just skip the song */ }
+ }
+}
+</code></pre>
+<p>There is much, much more we can discuss with respect to C#, but then we'd have no time to talk about anything else, and there is much, much more to go over on our tour. Fortunately, Microsoft has a great collection of web resources on the language, starting with a page that lists an overall history of the language, available at <a href="https://aka.ms/csharpwhatsnew">https://aka.ms/csharpwhatsnew,</a> and a general (if abbreviated) overview of the language available at <a href="https://aka.ms/csharptour">https://aka.ms/csharptour.</a> And, of course, there're books. Lots and lots of books.</p>
+<p>But once you know how to write code in this language, what can you do with it?</p>
+<p><img src="_page_31_Picture_0.jpeg" alt="" /></p>
+<h2><span id="page-31-0"></span>Frameworks, for the Win!</h2>
+<p>By far and away, the most popular thing to do with C# and the .NET runtime is to build a web application of some form, just as it is with the Java language and runtime. To be sure, the .NET ecosystem supports more than this—one can build desktop applications, mobile applications, and even games (using the aforementioned Unity framework, among others), but the lion's share of code written in C# is web applications.</p>
+<p>Like its twin, .NET offers a comprehensive framework of web functionality, ranging all the way from drag-and-drop-built user interface, to MVC-based server-side rendering, to the construction of HTTP-based APIs for invocation by single-page applications written in JavaScript or mobile applications. Somewhat confusingly, however, all three are referred to by the name &quot;ASP.NET.&quot;</p>
+<p>(Note to those who recognize the &quot;ASP&quot; moniker from the early days of the Sun/Microsoft rivalry: In the COM days, Microsoft's web technology was called &quot;Active Server Pages,&quot; ASP for short, named after ActiveX, one of the marketing names for COM. When Microsoft started working on the CLR internally, one of its most important consumers was the ASP team, who sought to create a system similar to JSP to replace ASP. Since the effort was to redo ASP in .NET, the name &quot;ASP.NET&quot; was coined. However, aside from the basic notion that &quot;this is for the web,&quot; there's little to no relationship between ASP.NET and its predecessor.)</p>
+<p>The ASP.NET &quot;family&quot; is fundamentally broken into three parts, two of which we'll examine here (in brief):</p>
+<ul>
+<li>ASP.NET WebForms, the first flavor of ASP.NET, released with .NET 1.0, featuring drag-and-drop user interface construction. It was designed to try to bring a VisualBasic-style design philosophy to the web, but by .NET 3.0, the Microsoft community had come to understand the design advantages of an MVC-style design approach, and all work on WebForms essentially ceased. Ironically, about the time that interest in WebForms was ending, the Java community was building up JSF, the equivalent to WebForms in Java.</li>
+<li>ASP.NET MVC: Based on the classic &quot;Model-View-Controller&quot; principles that the Sun &quot;Model 2&quot; design for servlets and JSP first laid out, Microsoft created ASP.NET MVC, released the source code for it shortly after its initial release, and has considered this to be its first-class server-side web framework ever since. ASP.NET MVC was rebranded (and refactored) to be &quot;ASP.NET Core MVC&quot; in 2015, in keeping with the &quot;.NET Core&quot; naming for the cross-platform runtime, and has made some conceptual shifts as new frameworks—such as Ruby-on-Rails—gained popularity and created some new patterns (such as routing tables).</li>
+</ul>
+<p><img src="_page_32_Picture_0.jpeg" alt="" /></p>
+<p><span id="page-32-0"></span>• ASP.NET MVC Web API: While the name certainly gets no points for brevity, it does accurately reflect the idea that this framework is built off of the same concepts that underlie the ASP.NET MVC library, but with the intent of producing JSON data instead of HTML. When ASP.NET MVC was tagged with the &quot;Core&quot; moniker, the &quot;MVC&quot; was formally dropped from Web API projects, so that now they are simply &quot;ASP.NET Core Web API,&quot; or more informally, &quot;Web API&quot; projects.</p>
+<p>Let's have a look at a quick ASP.NET Core Web API application—the ubiquitous TODO list—and then we'll have a quick look at an MVC application before we look at Microsoft's data-storage framework, Entity Framework.</p>
+<h4>ASP.NET Core Web API</h4>
+<p>To get started with Core Web API, we first need to scaffold out the Web API template; this can be done either via &quot;File|New&quot; in one of the Visual Studio IDEs, or from the command-line using the .NET Core CLI tools by executing &quot;dotnet new webapi -o todoapi.&quot; This will create a subdirectory called &quot;todoapi&quot; and install the .NET Core Web API project inside of it. Out of the box, it scaffolds out a simple API that has one controller to hand back arbitrary &quot;value&quot; objects, accessible at <a href="http://localhost:5000/api/values">http://localhost:5000/api/values.</a> Before we make any changes to the code, it's always good to make sure the scaffold is working, so execute a &quot;dotnet run&quot; from within the &quot;todoapi&quot; directory, and navigate to the given URL; the response should be a dirt-simple JSON array containing two strings.</p>
+<p>A Web API project, like its cousin the MVC application, is broken into models and controllers, with the &quot;view&quot; assumed to be an automated conversion from a model object into JSON. Thus, in a Web API project, the goal will be to accept incoming requests, perform the necessary business logic, and return the appropriate model type, usually corresponding to the resource type in the URL, to be converted to JSON.</p>
+<p>The Controllers directory contains the code for the ValuesController, which is the default-scaffolded code. It doesn't use any model objects, which means it's clearly inferior. Let's delete it, and replace it with something that's a little more &quot;MV&quot;-like. That means, first of all, that we need a model object to represent a TODO item, which is a pretty simple domain object:</p>
+<pre><code>public class Todo
+{
+ public long ID { get; set; }
+ public string Description { get; set; }
+ public bool Completed { get; set; }
+ public Todo()
+ {
+ Completed = false;
+ }
+}
+</code></pre>
+<p><img src="_page_33_Picture_0.jpeg" alt="" /></p>
+<p>(Note that it would be a bit irregular to call this a POJO, since it's not a Java object, but that's basically exactly what this is. These are sometimes referred to as Plain Old C# Objects, POCOs, or, less often, Plain Old DotNet Objects or PODNOs. Definitely doesn't roll off the tongue like POJOs, but we do what we can.)</p>
+<p>Having a domain object, it now remains to build a controller that will respond to the appropriate URL (which, by convention, will be prefixed by &quot;/api,&quot; but is of course configurable). The Web API expectation is that a controller will be a class that has a number of public methods that obey some conventions, in terms of both method names and parameter sets, like Java has done with later versions of the Servlet and EJB specifications.</p>
+<pre><code> [Route(&quot;api/[controller]&quot;)]
+ public class TodosController : Controller
+ {
+ private List&lt;Todo&gt; todos = new List&lt;Todo&gt;() {
+ new Todo() { ID=0, Description=&quot;Get milk&quot;, Completed=true },
+ new Todo() { ID=1, Description=&quot;Get pet food&quot; },
+ new Todo() { ID=2, Description=&quot;Learn .NET Core&quot; },
+ new Todo() { ID=3, Description=&quot;Write billion-dollar app&quot; }
+ };
+ // GET api/todos
+ [HttpGet]
+ public IEnumerable&lt;Todo&gt; Get()
+ {
+ return todos;
+ }
+ // GET api/todos/5
+ [HttpGet(&quot;{id}&quot;)]
+ public Todo Get(int id)
+ {
+ return todos.First((t) =&gt; t.ID == id);
+ }
+ // POST api/todos
+ [HttpPost]
+ public void Post([FromBody]Todo value)
+ {
+ todos.Add(value);
+ }
+</code></pre>
+<p><img src="_page_34_Picture_0.jpeg" alt="" /></p>
+<pre><code> // PUT api/todos/5
+ [HttpPut(&quot;{id}&quot;)]
+ public void Put(int id, [FromBody]Todo value)
+ {
+ var todo = todos.First((t) =&gt; t.ID == id);
+ todo.Description = value.Description;
+ todo.Completed = value.Completed;
+ }
+ // DELETE api/todos/5
+ [HttpDelete(&quot;{id}&quot;)]
+ public void Delete(int id)
+ {
+ }
+ }
+</code></pre>
+<p>To understand this class, it's important to understand a few things: First, the square-bracketed declarations outside each method are what .NET calls &quot;custom attributes,&quot; which, true story, figured prominently in the design for JSR-175 annotations. The attributes provide information (via reflection, same way annotations do) about how HTTP verbs should match against the methods—so, for example, the ASP.NET runtime can know that the two Get() methods should both be invoked when an incoming GET request is made.</p>
+<p>The other half of that binding, of course, is knowing the partial URL pattern that should trigger the method. Notice that the controller class itself has an attribute, &quot;Routing,&quot; which contains the string &quot;api/[controller].&quot; The square-bracketed &quot;controller&quot; is to tell the ASP.NET runtime to use the name of the class, minus its &quot;-Controller&quot; suffix, so the URL pattern for all of these API endpoints is &quot;api/ todos.&quot; From here, standard REST conventions kick in—a GET to &quot;api/todos&quot; should return all of the TODO items, so the Get() method taking no parameters and returning an IEnumerable<Todo> (think of it as a high-level iterator interface) is the right one to invoke here. If, on the other hand, a caller wants a single TODO, they'll issue a request with a URL pattern of &quot;api/todos/&quot; plus the ID of the TODO requested. The second Get() method indicates that the URL pattern includes &quot;{id},&quot; so &quot;api/ todos/3&quot; will extract &quot;3&quot; and pass it for the value of &quot;id&quot; to the method. Ditto for the Put and Delete methods.</p>
+<p>The full details of routing are in the ASP.NET documentation, but this should be sufficient to understand what's happening here. To see the new controller in action, just do a &quot;dotnet run&quot; from the &quot;todoapi&quot; directory, and point an HTTP client (curl or Postman) at <a href="http://localhost:5000/api/todos">http://localhost:5000/api/todos</a> to see the JSON representations handed back.</p>
+<p><img src="_page_35_Picture_0.jpeg" alt="" /></p>
+<h4><span id="page-35-0"></span>ASP.NET Core MVC</h4>
+<p>HTTP-based APIs are nice, but when we need a traditional server-side rendered application, ASP.NET provides a traditional MVC framework called (not surprisingly) ASP.NET Core MVC. It's the same MVC we find in most modern web frameworks; views are rendered using a particular template syntax, called &quot;Razor&quot; (or &quot;Razor pages&quot;) that is designed to be expressive yet terse. It's a syntax inspired from other similar frameworks, particularly JSP and Ruby-on-Rails, but also tried to be reasonably familiar to generations of ASP and ASP.NET WebForms developers. Controllers look almost the same as they do in the API scenario, and models, of course, are just C# classes representing the domain.</p>
+<p>Razor templates use a .cshtml extension, and like JSP, they use different syntax to indicate which parts of the page are to be interpreted in a code-aware manner, as opposed to being taken literally as output format. Razor syntax uses the &quot;@&quot; symbol to set off code blocks or other processing statements in several different ways; for example, to do a simple &quot;for&quot; loop within a page, Razor uses an &quot;@for&quot; to set off the loop. Unlike JSP, however, the Razor syntax is clear enough that there isn't a need to require explicit symbols to set off between code and HTML output:</p>
+<pre><code>&lt;h2&gt;Welcome&lt;/h2&gt;
+&lt;ul&gt;
+ @for (int i = 0; i &lt; 3; i++)
+ {
+ &lt;li&gt;Beetlejuice&lt;/li&gt;
+ }
+&lt;/ul&gt;
+</code></pre>
+<p>Views, of course, can make use of objects and data provided by a controller, often by making use of a predefined key-value map called ViewData. If we want the message and the number of times it should be printed to be set up by a controller (perhaps the controller is obtaining it from HTML query parameters or a database), then the controller can set those by using the keys &quot;Message&quot; and &quot;NumTimes&quot; in the ViewData dictionary, respectively. The view can then display them like this:</p>
+<pre><code>&lt;h2&gt;Welcome&lt;/h2&gt;
+&lt;ul&gt;
+ @for (int i = 0; i &lt; (int)ViewData[&quot;NumTimes&quot;]; i++)
+ {
+ &lt;li&gt;@ViewData[&quot;Message&quot;]&lt;/li&gt;
+ }
+&lt;/ul&gt;
+</code></pre>
+<p>In essence, ViewData is the ASP.NET equivalent to Servlet &quot;request&quot; scope.</p>
+<p><img src="_page_36_Picture_0.jpeg" alt="" /></p>
+<p>The controller perspective that drives this looks remarkably similar to what a servlet controller would do, with a few differences:</p>
+<pre><code>using Microsoft.AspNetCore.Mvc;
+using System.Text.Encodings.Web;
+namespace MvcMovie.Controllers
+{
+ public class HelloWorldController : Controller
+ {
+ public IActionResult Welcome(string name, int numTimes = 1)
+ {
+ ViewData[&quot;Message&quot;] = &quot;Hello &quot; + name;
+ ViewData[&quot;NumTimes&quot;] = numTimes;
+ return View();
+ }
+ }
+}
+</code></pre>
+<p>Notice that the Welcome method takes two parameters, which will be filled in from HTML query parameters, fills in the ViewData dictionary, and then calls &quot;View,&quot; which then looks for a Razor page file whose name matches that of the method—in this case, it will be looking for &quot;Welcome.cshtml.&quot; ASP.NET Core MVC has a number of ways to adjust and change these conventions, but out of the box, the convention-based approach makes it simpler and easier than the configuration descriptor approach of older Servlet versions.</p>
+<p>ASP.NET Core MVC obviously consists of a great deal more than just what we've discussed here, but the underlying message should be clear: ASP.NET Core (both the MVC and the Web API versions) learned a great deal from its contemporaries, including those in the Servlet world (JSP, the Play framework, and more), and as such, it will be very straightforward for a Java developer to pick up and explore.</p>
+<p>For those interested in a deeper dive into the code above, consider having a look into this tutorial: <a href="https://aka.ms/first-web-api">https://aka.ms/first-web-api</a>.</p>
+<p><img src="_page_37_Picture_0.jpeg" alt="" /></p>
+<h4><span id="page-37-0"></span>Entity Framework Core</h4>
+<p>Of course, being able to access the server and pass JSON back and forth is only half the story; the other half is taking that data and storing it. Or rather, storing it, indexing it, searching it, collating it, sorting it, drawing pretty graphs with it, and more. When working with a relational database, the technology Microsoft offers its .NET constituents is called Entity Framework, or EF, and in many respects it works like any other object/relational mapping framework does. Thanks to some of the language features in C#, however, in many cases working with EF is actually easier than working with JPA or Hibernate.</p>
+<p>Like much in the .NET universe, Entity Framework is undergoing a bit of a reshuffle; what used to be a closed, proprietary source base is now open, and as EF was opened to the world, the project owners thought a (slight) rebrand seemed appropriate. As a result, the open-source version of EF is called &quot;Entity Framework Core,&quot; and to begin using it, we need to install it into the project via NuGet, either by using the Package Manager in Visual Studio, or by using the command-line for .NET Core by entering:</p>
+<h4>dotnet add package Microsoft.EntityFrameworkCore.SqlServer</h4>
+<p>This is, of course, assuming we are using SQLServer—since not everybody uses SQL Server, however, a number of different EF database providers are available, including MySQL, Postgres, SQLite, Firebase, and a few more. (Third-party vendors are constantly introducing new ones, in a manner similar to the JDBC driver ecosystem, so bear in mind that Microsoft may not even know all the EF providers in the world.)</p>
+<p>There're a few &quot;management&quot; tasks that will be easier to do from the command-line, and EF has a command-line package that installs &quot;inside&quot; the standard .NET Core command-line tool, but as of this writing, making use of it requires adding a line by hand to the project's .csproj file:</p>
+<pre><code>&lt;ItemGroup&gt;
+ &lt;DotNetCliToolReference 
+ Include=&quot;Microsoft.EntityFrameworkCore.Tools.DotNet&quot;
+ Version=&quot;2.0.0&quot; /&gt;
+&lt;/ItemGroup&gt;
+</code></pre>
+<p>In addition, the EF Core command-ling tooling requires another dependent package:</p>
+<pre><code>dotnet add package Microsoft.EntityFrameworkCore.Design
+</code></pre>
+<p>At this point, EF should be installed and ready to go. More detailed instructions can be found on the Microsoft docs site at<a href="https://aka.ms/ef-install">https://aka.ms/ef-install</a>.</p>
+<p>Fundamentally, the most critical element to using EF from a project is the DbContext. This is a class from which a project will create a derived class that represents the &quot;context&quot; for this project against the database—it will be a repository, session, and gateway, all rolled into one. Like many object/ relational tools, it also provides some core behavior, including some migration capabilities (database versioning).</p>
+<p><img src="_page_38_Picture_0.jpeg" alt="" /></p>
+<p>Like Hibernate or JPA, EF uses classes to represent entities in the database, and these classes are often referred to as &quot;model&quot; objects, since they typically serve that purpose in an MVC and/or Web API application. These will usually look like &quot;plain old C# objects,&quot; with the odd custom attribute to help give EF some additional hints about how to map to the database table they represent.</p>
+<p>For example, if the application is a blog, then we will want classes representing a blog, and blog post, representing a single blog entry. But there's also some blog metadata we might want to track that wouldn't be appropriate to store in the database (such as whether the blog was stored in the database), which we will want Entity Framework to ignore entirely. One way to do this is to use a custom attribute, or the EF Fluent API can indicate that the blog metadata class should be ignored using the &quot;OnModelCreating&quot; method, invoked when the database schema is created.</p>
+<pre><code>public class BloggingContext : DbContext
+{
+ public DbSet&lt;Blog&gt; Blogs { get; set; }
+ protected override void OnModelCreating(ModelBuilder modelBuilder)
+ {
+ modelBuilder.Ignore&lt;BlogMetadata&gt;();
+ }
+}
+public class Blog
+{
+ public int BlogId { get; set; }
+ public string Url { get; set; }
+ public List&lt;Post&gt; Posts { get; set; }
+ public BlogMetadata Metadata { get; set; }
+}
+public class Post
+{
+ public int PostId { get; set; }
+ public string Title { get; set; }
+ public string Content { get; set; }
+ public Blog Blog { get; set; }
+}
+public class BlogMetadata
+{
+ public DateTime LoadedFromDatabase { get; set; }
+}
+</code></pre>
+<p><img src="_page_39_Picture_0.jpeg" alt="" /></p>
+<p>The &quot;Id&quot; fields, of course, are typically primary key integer columns in the database, and the List of Posts is a classic one-to-many relationship. All of this will be eminently familiar to any user of Hibernate, JPA, or other object-relational modeling system. What will be different will be the way in which queries and modifiers are run; thanks to LINQ, Entity Framework uses an entirely new style of query starting from the DbSet fields modeled on the DbContext-inheriting class. To do a query to fetch all the blogs from the system, we simply create an instance of the context inside of a &quot;using&quot; block (which is the inspiration for the try-with-resources block in Java7), and use that instance to obtain the set of Blog instances and iterate through them:</p>
+<pre><code>using (var context = new BloggingContext())
+{
+ foreach (var blog in context.Blogs) {
+ // do something with the blog
+ }
+}
+</code></pre>
+<p>Contrary to what we experienced during the heyday of EJB Entity Beans, however, this isn't a case of early loading or late loading; under the hood, Entity Framework is making use of &quot;enumerator objects&quot; (very similar to Java8 streams and the Java Iterable<T> interface) to fetch objects in batches, just as a typical database cursor would do.</p>
+<p>In the Java world, however, filtering that list of blogs to include only those that have &quot;dotnet&quot; in the URL presented problems—either the filtering happens on the database side, in which case the query has to be translated to SQL, or the filtering happens on the client side, which means the entire collection has to be brought over the network. With LINQ, however, this looks like this:</p>
+<pre><code>using (var context = new BloggingContext())
+{
+ foreach (var blog in context.Blogs
+ .Where(b =&gt; b.Url.Contains(&quot;dotnet&quot;))) {
+ // do something with the blog
+ }
+}
+</code></pre>
+<p>But this has the same drawbacks as before; instead, we can use an &quot;expression tree,&quot; a feature of LINQ that compiles into a runtime structure that reflects the compiled code:</p>
+<pre><code>using (var context = new BloggingContext())
+{
+ var allDotnetBlogUrls = from blog in context.Blogs
+ where blog.Url.Contains(&quot;dotnet&quot;)
+ select blog.Url;
+</code></pre>
+<p><img src="_page_40_Picture_0.jpeg" alt="" /></p>
+<pre><code> foreach (var url in allDotnetBlogUrls) {
+ // do something with the blog URL
+ // note we don't have the entire Blog, just the Url
+ }
+}
+</code></pre>
+<p>This &quot;from-where-select&quot; syntax that looks so much like SQL isn't; it's a syntax that's designed to look similar to SQL and offer many of the same kinds of operators and options. However, this isn't an SQL query—it will not be sent to the database. Instead, the expression tree is analyzed—and optimized by the EF plumbing to generate an efficient SQL statement, on a driver-by-driver basis. This means that the query filters and restrictions are analyzed on the client side, but sent to the database to be executed—for example, the above turns into a &quot;SELECT url FROM blog WHERE…&quot; using whatever primitives to do a string-containment check that the database and EF provider offers. This is really the best-of-both-worlds scenario. Couple that with the compile-time type checking that the C# compiler provides against the model objects, and you have a solution that is entirely new to the Java world. (Not impossible to provide, mind you, but still something the Java world currently lacks.)</p>
+<p>Updates and modifications entail making modifications on the model object, and those changes will be sent to the database when the context object goes out of the using block's scope. To add a new blog, construct the object and add it to the DbSet on the context object; to remove it, use the context's DbSet again. And should you really, really want to write raw SQL, the context object provides that capacity.</p>
+<p>There is, of course, much more to discuss about Entity Framework—it's every bit as rich and powerful as JPA, and as such, definitely larger than just what we can cover in a single paper. For more examples of LINQ syntax, check out <a href="https://aka.ms/101LinqSamples">https://aka.ms/101LinqSamples.</a> For 101 LINQ samples, and for more information on Entity Framework itself, head over to the EF documentation home at <a href="https://docs.microsoft.com/ef/core/">https://docs.</a> <a href="https://docs.microsoft.com/ef/core/">microsoft.com/ef/core/</a>.</p>
+<p><img src="_page_41_Picture_0.jpeg" alt="" /></p>
+<h2><span id="page-41-0"></span>Wrapping Up</h2>
+<p>To suggest that this is somehow the end of the story is ludicrous. The .NET ecosystem holds a rich tapestry of open-source projects and commercial tools and frameworks, and that means that a developer could, if they wished, spend their entire career just discovering the boundaries there. We haven't even begun to discuss the alternative languages for the .NET platform, either from Microsoft (F#, an object/functional hybrid that fills the same role as Scala, or good old Visual Basic, one of the original dynamic languages) or from the community (check out Boo, a Python-inspired dynamic language). We haven't begun to explore the different open-source frameworks that do dependency injection. We haven't begun to explore the different frameworks for doing unit testing, or the online tooling from Microsoft to provide agile project support. We haven't even mentioned Azure.</p>
+<p>This is a brave new land, intrepid adventurer, but rest easy: Much of what you know from your time in the world of Java will serve you well here. The concepts are similar, but different enough to be interesting. The platforms are powerful, and the communities open and inviting. The tools are easily obtained, and the tutorials plenty. You might even recognize a few familiar names, those who have come before you across the pond and gone on this adventure before you. Be the tourist, if you like, but know that there's plenty of room to build your own home and settle down here, even if it's only a summer home. Come in, and be welcome.</p>
+<p>And, unlike a certain young boy on his first trip to France, you won't have to worry about somebody's father trying to convince you that &quot;escargot&quot; is French for &quot;tater tots.&quot;</p>
+<p>.NET for Java Developers 39</p>

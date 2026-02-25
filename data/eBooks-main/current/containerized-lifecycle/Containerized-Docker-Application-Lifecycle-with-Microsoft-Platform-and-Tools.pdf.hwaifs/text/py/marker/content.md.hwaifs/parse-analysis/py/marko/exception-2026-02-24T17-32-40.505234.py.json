@@ -1,0 +1,5 @@
+Exception parsing markdown with marko = ../../../../../../data/eBooks-main/current/containerized-lifecycle/Containerized-Docker-Application-Lifecycle-with-Microsoft-Platform-and-Tools.pdf.hwaifs/text/py/marker/content.md : module 'marko' has no attribute 'parse_source'Traceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/transformations/markdown-parsing/marko/api_parse_analyze_markdown_marko.py", line 37, in api_parse_analyze_markdown_marko
+    elements = marko.parse_source(text)
+               ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'marko' has no attribute 'parse_source'

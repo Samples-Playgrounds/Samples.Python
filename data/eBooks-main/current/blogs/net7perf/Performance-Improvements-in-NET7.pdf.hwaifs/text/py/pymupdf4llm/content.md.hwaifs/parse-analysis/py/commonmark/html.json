@@ -1,0 +1,3958 @@
+{
+    "html": [
+        {}
+    ],
+    "body": [
+        {}
+    ],
+    "h3": [
+        {}
+    ],
+    "h5": [
+        {}
+    ],
+    "h6": [
+        {}
+    ],
+    "h4": [
+        {}
+    ],
+    "p": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "a": [
+        {
+            "href": "https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-6"
+        },
+        {
+            "href": "https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5"
+        },
+        {
+            "href": "https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-core-3-0"
+        },
+        {
+            "href": "https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-core-2-1"
+        },
+        {
+            "href": "https://github.com/dotnet/benchmarkdotnet"
+        },
+        {
+            "href": "https://github.com/dotnet/installer/blob/main/README.md#installers-and-binaries"
+        },
+        {
+            "href": "https://sharplab.io/#v2:EYLgxg9gTgpgtADwGwBYA0AXEBDAzgWwB8ABAJgEYBYAKGIGYACMhgYRoG8aHuGAHKAJYA3bBhgMBAOwwMA+tgYBeBilJo5wJQwAcKANxce9CdIYBZKQAoAlEoB850QAsAdBcmX562cGsHqAL5AA"
+        },
+        {
+            "href": "https://github.com/ashmind"
+        },
+        {
+            "href": "https://godbolt.org/z/4v33asW6z"
+        },
+        {
+            "href": "https://github.com/compiler-explorer/compiler-explorer/pull/3168"
+        },
+        {
+            "href": "https://github.com/hez2010"
+        },
+        {
+            "href": "https://github.com/dotnet/BenchmarkDotNet/pull/2072"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/73365"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/74090"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/62831"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63406"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/65609"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/65675"
+        },
+        {
+            "href": "https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-6"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61453"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68703"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70377"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70580"
+        },
+        {
+            "href": "https://github.com/anthonycanino"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61569"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/62864"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67141"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/57970"
+        },
+        {
+            "href": "https://github.com/pentp"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70271"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/60816"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/issues/68061"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/60148"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67930"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/59886"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/66257"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70232"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/57726"
+        },
+        {
+            "href": "https://github.com/SingleAccretion"
+        },
+        {
+            "href": "https://github.com/SingleAccretion"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/57605"
+        },
+        {
+            "href": "https://github.com/SingleAccretion"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61023"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63720"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70587"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71161"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/53450"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63414"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/62933"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/65632"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/64783"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/64521"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61408"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71778"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/60808"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70749"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67490"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61037"
+        },
+        {
+            "href": "https://github.com/SeanWoo"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/57926"
+        },
+        {
+            "href": "https://github.com/SingleAccretion"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/62630"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63422"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/64481"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/62895"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/64354"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70600"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71512"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70921"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/65738"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/65926"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime"
+        },
+        {
+            "href": "https://github.com/benjamin-hodgson"
+        },
+        {
+            "href": "https://github.com/SkiFoD"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/62394"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/60787"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/64688"
+        },
+        {
+            "href": "https://devblogs.microsoft.com/dotnet/put-a-dpad-on-that-gc"
+        },
+        {
+            "href": "https://github.com/dotnet/corert"
+        },
+        {
+            "href": "https://github.com/dotnet/runtimelab/tree/feature/NativeAOT"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime"
+        },
+        {
+            "href": "https://github.com/dotnet/runtimelab"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/62563"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/62611"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/64497"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68823"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70653"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/64867"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71325"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/64961"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/65128"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/66317"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/66391"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/66409"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/66589"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/66597"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70086"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71873"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/62866"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67852"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/66825"
+        },
+        {
+            "href": "https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-6/"
+        },
+        {
+            "href": "https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-6/"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime"
+        },
+        {
+            "href": "https://github.com/dotnet/runtimelab"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/59579"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/62295"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61640"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61742"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/62309"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61765"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61638"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61975"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/62353"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61990"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61805"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61184"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/62365"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61532"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/72819"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/73256"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71991"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71991"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71854"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70000"
+        },
+        {
+            "href": "https://github.com/huoyaoyuan"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68694"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/64834"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71864"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/69386"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/57885"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70165"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68639"
+        },
+        {
+            "href": "https://lemire.me/blog/2021/02/22/parsing-floating-point-numbers-really-fast-in-c"
+        },
+        {
+            "href": "https://github.com/lemire"
+        },
+        {
+            "href": "https://github.com/CarlVerret"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/57973"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/72712"
+        },
+        {
+            "href": "https://github.com/SergeiPavlov"
+        },
+        {
+            "href": "https://github.com/SergeiPavlov"
+        },
+        {
+            "href": "https://devblogs.microsoft.com/dotnet/dotnet-7-generic-math"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/65731"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/66748"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/69391"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/69582"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/69756"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67939"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/73274"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68251"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68217"
+        },
+        {
+            "href": "https://github.com/amd/aocl-libm-ose"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Tar_(computing)#File_format"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/69204"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63881"
+        },
+        {
+            "href": "https://github.com/am11"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/56236"
+        },
+        {
+            "href": "https://github.com/alexcovington"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/65014"
+        },
+        {
+            "href": "https://github.com/MichalPetryka"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71567"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/69318"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68210"
+        },
+        {
+            "href": "https://github.com/gfoidl"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67941"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71146"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71278"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/73488"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67811"
+        },
+        {
+            "href": "http://0x80.pl/articles/simd-strfind.html#algorithm-1-generic-simd"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Bloom_filter"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63817"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63913"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70176"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/73481"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/73556"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/73368"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/73469"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63734"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/64530"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/69038"
+        },
+        {
+            "href": "https://github.com/alexcovington"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/72780"
+        },
+        {
+            "href": "https://github.com/SwapnilGaikwad"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70650"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/64899"
+        },
+        {
+            "href": "https://github.com/yesmey"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Base64"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70654"
+        },
+        {
+            "href": "https://github.com/a74nh"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70080"
+        },
+        {
+            "href": "https://github.com/SwapnilGaikwad"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71637"
+        },
+        {
+            "href": "https://github.com/SwapnilGaikwad"
+        },
+        {
+            "href": "https://github.com/dotnet/roslyn/pull/58991"
+        },
+        {
+            "href": "https://github.com/dotnet/roslyn/pull/59390"
+        },
+        {
+            "href": "https://github.com/dotnet/roslyn/pull/61532"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70568"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70894"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71417"
+        },
+        {
+            "href": "https://github.com/am11"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70513"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68795"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68937"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/73882"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71498"
+        },
+        {
+            "href": "https://github.com/dotnet/roslyn/pull/62155"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67447"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71589"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/72727"
+        },
+        {
+            "href": "https://github.com/dotnet/roslyn/pull/44388"
+        },
+        {
+            "href": "https://github.com/YairHalberstadt"
+        },
+        {
+            "href": "https://github.com/NewellClark"
+        },
+        {
+            "href": "https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-6"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/60411"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/73115"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://devblogs.microsoft.com/dotnet/regular-expression-improvements-in-dotnet-7"
+        },
+        {
+            "href": "https://devblogs.microsoft.com/dotnet/regular-expression-improvements-in-dotnet-7"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime"
+        },
+        {
+            "href": "https://github.com/dotnet/runtimelab/pull/588"
+        },
+        {
+            "href": "https://github.com/veanes"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Binary_decision_diagram"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Binary_decision_diagram"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68199"
+        },
+        {
+            "href": "https://github.com/olsaarik"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/65129"
+        },
+        {
+            "href": "https://github.com/olsaarik"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70217"
+        },
+        {
+            "href": "https://github.com/olsaarik"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/65637"
+        },
+        {
+            "href": "https://github.com/veanes"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/60385"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/60822"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61490"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67184"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63477"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/66572"
+        },
+        {
+            "href": "https://nitely.github.io/2020/11/30/regex-literals-optimization.html"
+        },
+        {
+            "href": "https://github.com/mariomka/regex-benchmark"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/64177"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67732"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67907"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63428"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68400"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63398"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68989"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63695"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/59903"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/65734"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/59186"
+        },
+        {
+            "href": "https://github.com/icsharpcode/ILSpy"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/60385"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61698"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61784"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61906"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/62318"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/66127"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/66280"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68846"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/69198"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68490"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68560"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63277"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/62620"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/66747"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67365"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/72328"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/72317"
+        },
+        {
+            "href": "https://github.com/teo-tsirpanis"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67133"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61562"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/66179"
+        },
+        {
+            "href": "https://github.com/RaymondHuy"
+        },
+        {
+            "href": "https://en.wikipedia.org/wiki/Red%E2%80%93black_tree"
+        },
+        {
+            "href": "https://github.com/teo-tsirpanis"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67923"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/64624"
+        },
+        {
+            "href": "https://github.com/deeprobin"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/66492"
+        },
+        {
+            "href": "https://github.com/lateapexearlyspeed"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/72503"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/72612"
+        },
+        {
+            "href": "https://github.com/tmds"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/58799"
+        },
+        {
+            "href": "https://github.com/tmds"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61777"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63675"
+        },
+        {
+            "href": "https://github.com/tmds"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63790"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/69335"
+        },
+        {
+            "href": "https://github.com/pedrobsaila"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/69272"
+        },
+        {
+            "href": "https://github.com/google/brotli"
+        },
+        {
+            "href": "https://www.gutenberg.org/cache/epub/100/pg100.txt"
+        },
+        {
+            "href": "https://www.gutenberg.org/cache/epub/100/pg100.txt"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/73082"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/64770"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/57079"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63030"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/64369"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67011"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/69833"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71570"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/69527"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68188"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/69098"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/69103"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/69418"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/65239"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71234"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/64105"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/73803"
+        },
+        {
+            "href": "https://github.com/onehourlate"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/73807"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70700"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67881"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68745"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71280"
+        },
+        {
+            "href": "https://github.com/filipnavara"
+        },
+        {
+            "href": "https://github.com/filipnavara"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/issues/63686"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/issues/63686"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67961"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/69160"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68985"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/issues/44947"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/issues/44947"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/64646"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61434"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/issues/72510"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/69580"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63863"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71534"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63459"
+        },
+        {
+            "href": "https://github.com/chrisdcmoore"
+        },
+        {
+            "href": "https://docs.microsoft.com/dotnet/standard/serialization/xml-serializer-generator-tool-sgen-exe"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68738"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67001"
+        },
+        {
+            "href": "https://github.com/TrayanZapryanov"
+        },
+        {
+            "href": "https://github.com/TrayanZapryanov"
+        },
+        {
+            "href": "https://github.com/TrayanZapryanov"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/66762"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/72708"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/72708"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61025"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61137"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/64307"
+        },
+        {
+            "href": "https://github.com/icsharpcode/ILSpy"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/65725"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70639"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71888"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71341"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68553"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70589"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70618"
+        },
+        {
+            "href": "https://github.com/vcsjones"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/57835"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68705"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70073"
+        },
+        {
+            "href": "https://github.com/schuettecarsten"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71136"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/45690"
+        },
+        {
+            "href": "https://devblogs.microsoft.com/dotnet/opentelemetry-net-reaches-v1-0"
+        },
+        {
+            "href": "https://github.com/CodeBlanch"
+        },
+        {
+            "href": "https://github.com/CodeBlanch"
+        },
+        {
+            "href": "https://github.com/dotnet/perf-autofiling-issues/issues/3531"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/61633"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71544"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71546"
+        },
+        {
+            "href": "https://docs.microsoft.com/sysinternals/downloads/procmon"
+        },
+        {
+            "href": "https://github.com/dotnet/roslyn-analyzers/pull/5594"
+        },
+        {
+            "href": "https://github.com/NewellClark"
+        },
+        {
+            "href": "https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-6"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/59941"
+        },
+        {
+            "href": "https://github.com/NewellClark"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68268"
+        },
+        {
+            "href": "https://github.com/dotnet/aspnetcore/pull/41457"
+        },
+        {
+            "href": "https://github.com/dotnet/roslyn-analyzers/pull/4851"
+        },
+        {
+            "href": "https://github.com/dotnet/roslyn-analyzers/pull/5907"
+        },
+        {
+            "href": "https://github.com/dotnet/roslyn-analyzers/pull/5910"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/67292"
+        },
+        {
+            "href": "https://github.com/dotnet/roslyn-analyzers/pull/4797"
+        },
+        {
+            "href": "https://github.com/wzchua"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/68976"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime"
+        },
+        {
+            "href": "https://github.com/dotnet/roslyn/pull/58288"
+        },
+        {
+            "href": "https://github.com/pawchen"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/71011"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70523"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70965"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/63015"
+        },
+        {
+            "href": "https://github.com/dotnet/runtime/pull/70896"
+        }
+    ],
+    "h2": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "strong": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "h1": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "code": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "pre": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "em": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "ul": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "li": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "br": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "t": [
+        {}
+    ]
+}

@@ -1,0 +1,719 @@
+{
+    "html": [
+        {}
+    ],
+    "body": [
+        {}
+    ],
+    "p": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "img": [
+        {
+            "src": "_page_0_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_0_Picture_2.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_1_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_3_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_4_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_5_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_6_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_7_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_8_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_9_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_10_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_11_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_12_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_13_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_15_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_15_Figure_4.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_16_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_16_Figure_5.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_17_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_18_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_19_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_19_Figure_1.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_20_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_20_Picture_1.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_21_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_22_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_23_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_25_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_27_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_28_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_29_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_30_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_31_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_32_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_33_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_34_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_35_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_36_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_37_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_38_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_39_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_40_Picture_0.jpeg",
+            "alt": ""
+        },
+        {
+            "src": "_page_41_Picture_0.jpeg",
+            "alt": ""
+        }
+    ],
+    "h1": [
+        {}
+    ],
+    "h4": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "a": [
+        {
+            "href": "https://aka.ms/dotnet-forjavadevs"
+        },
+        {
+            "href": "http://www.microsoft.com"
+        },
+        {
+            "href": "#page-12-1"
+        },
+        {
+            "href": "https://www.iso.org/standard/58046.html"
+        },
+        {
+            "href": "http://www.ecma-international.org/publications/standards/Ecma-335.htm"
+        },
+        {
+            "href": "http://www.ecma-international.org/publications/standards/Ecma-335.htm"
+        },
+        {
+            "href": "http://www.ecma-international.org/publications/standards/Ecma-334.htm"
+        },
+        {
+            "href": "http://www.businessinsider.com/microsoft-github-open-source-2016-9"
+        },
+        {
+            "href": "https://aka.ms/csharpquickstarts"
+        },
+        {
+            "href": "http://www.dot.net/core"
+        },
+        {
+            "href": "https://aka.ms/dotnet-getstarted-linux"
+        },
+        {
+            "href": "http://code.visualstudio.com"
+        },
+        {
+            "href": "https://code.visualstudio.com/docs/java/extensions"
+        },
+        {
+            "href": "http://visualstudio.com"
+        },
+        {
+            "href": "http://visualstudio.com"
+        },
+        {
+            "href": "http://www.dot.net"
+        },
+        {
+            "href": "http://fsharp.org/"
+        },
+        {
+            "href": "https://aka.ms/vsdebugger"
+        },
+        {
+            "href": "https://aka.ms/vsdebugger"
+        },
+        {
+            "href": "https://aka.ms/linqraytracer"
+        },
+        {
+            "href": "https://aka.ms/csharpwhatsnew"
+        },
+        {
+            "href": "https://aka.ms/csharptour"
+        },
+        {
+            "href": "http://localhost:5000/api/values"
+        },
+        {
+            "href": "http://localhost:5000/api/todos"
+        },
+        {
+            "href": "https://aka.ms/first-web-api"
+        },
+        {
+            "href": "https://aka.ms/ef-install"
+        },
+        {
+            "href": "https://aka.ms/101LinqSamples"
+        },
+        {
+            "href": "https://docs.microsoft.com/ef/core/"
+        },
+        {
+            "href": "https://docs.microsoft.com/ef/core/"
+        }
+    ],
+    "h2": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "span": [
+        {
+            "id": "page-3-0"
+        },
+        {
+            "id": "page-5-0"
+        },
+        {
+            "id": "page-7-0"
+        },
+        {
+            "id": "page-11-0"
+        },
+        {
+            "id": "page-12-1"
+        },
+        {
+            "id": "page-12-0"
+        },
+        {
+            "id": "page-13-0"
+        },
+        {
+            "id": "page-16-0"
+        },
+        {
+            "id": "page-17-0"
+        },
+        {
+            "id": "page-18-0"
+        },
+        {
+            "id": "page-20-0"
+        },
+        {
+            "id": "page-21-0"
+        },
+        {
+            "id": "page-22-0"
+        },
+        {
+            "id": "page-23-0"
+        },
+        {
+            "id": "page-27-0"
+        },
+        {
+            "id": "page-29-0"
+        },
+        {
+            "id": "page-30-0"
+        },
+        {
+            "id": "page-31-0"
+        },
+        {
+            "id": "page-32-0"
+        },
+        {
+            "id": "page-35-0"
+        },
+        {
+            "id": "page-37-0"
+        },
+        {
+            "id": "page-41-0"
+        }
+    ],
+    "em": [
+        {}
+    ],
+    "h3": [
+        {},
+        {},
+        {},
+        {}
+    ],
+    "sup": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "pre": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "code": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "something": [
+        {}
+    ],
+    "person": [
+        {}
+    ],
+    "firstname": [
+        {}
+    ],
+    "t": [
+        {},
+        {}
+    ],
+    "ul": [
+        {}
+    ],
+    "li": [
+        {},
+        {}
+    ],
+    "todo": [
+        {}
+    ]
+}
