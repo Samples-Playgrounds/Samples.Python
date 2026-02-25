@@ -8,6 +8,8 @@ rm *.pyc
 python -m venv .venv
 source .venv/bin/activate
 pip install commonmark
+pip install lxml
+pip install html-to-json
 pip freeze > requirements.txt
 """
 
