@@ -16,6 +16,8 @@ source .venv/bin/activate
 pip install --upgrade pip
 
 pip install commonmark
+pip install lxml
+pip install html-to-json
 
 pip install timer
 pip install codetiming
