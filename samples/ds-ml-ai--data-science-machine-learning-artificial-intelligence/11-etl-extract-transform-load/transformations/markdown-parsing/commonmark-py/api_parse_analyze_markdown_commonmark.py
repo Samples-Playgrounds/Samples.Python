@@ -1,4 +1,5 @@
 import commonmark
+import html_to_json
 
 import os
 from pathlib import Path
@@ -37,7 +38,11 @@ def api_parse_analyze_markdown_commonmark (source: str) -> str:
         for node in ast.walker():
             if node[0].t == "paragraph":
                 paragraphs.append(node[0].first_child.literal)
-                
+
+        renderer = commonmark.HtmlRenderer()
+        html = renderer.render(ast)
+        html_json = html_to_json(html)
+        
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
@@ -50,8 +55,14 @@ def api_parse_analyze_markdown_commonmark (source: str) -> str:
         
         return paragraphs
 
+    with open(f"{directory}/content.html", "w") as f:
+        f.write(html)
+
     with open(f"{directory}/paragraphs.json", "w") as f:
         f.write(json.dumps(paragraphs, indent=4))
+
+    with open(f"{directory}/html.json", "w") as f:
+        f.write(json.dumps(html_json, indent=4))
 
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()
@@ -80,3 +91,20 @@ def api_parse_analyze_markdown_commonmark (source: str) -> str:
     #---------------------------------------------------------------------------
 
     return paragraphs
+
+
+import json
+from bs4 import BeautifulSoup
+
+def html_to_json(html: str) -> dict:
+    soup = BeautifulSoup(html, 'lxml')
+    
+    data = {}
+    for tag in soup.find_all():
+        if not tag.name in data:
+            data[tag.name] = []
+        
+        attrs = {k: v for k, v in tag.attrs.items()}
+        data[tag.name].append(attrs)
+    
+    return data
