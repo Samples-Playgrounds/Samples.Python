@@ -1,0 +1,1 @@
+private AssemblyName[] _names = AppDomain.CurrentDomain.GetAssemblies().Select(a => new AssemblyName(a.FullName)).ToArray(); [Benchmark] public int Names() { int sum = 0; foreach (AssemblyName name in _names) { sum += name.FullName.Length; } return sum; }

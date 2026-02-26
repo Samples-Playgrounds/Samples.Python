@@ -1,0 +1,1 @@
+[Benchmark] public void Compute() { for (int thousands = 0; thousands < 10; thousands++) { for (int hundreds = 0; hundreds < 10; hundreds++) { for (int tens = 0; tens < 10; tens++) { for (int ones = 0; ones < 10; ones++) { int n = ComputeNumber(thousands, hundreds, tens, ones); Process(n); } } } } }

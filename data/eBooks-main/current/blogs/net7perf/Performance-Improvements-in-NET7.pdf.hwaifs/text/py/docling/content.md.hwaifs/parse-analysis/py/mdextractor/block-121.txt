@@ -1,0 +1,1 @@
+[MethodImpl(MethodImplOptions.NoInlining)] private static int SomethingElse() => 42;

@@ -1,0 +1,1 @@
+}); var grpc = new Greeter.GreeterClient(channel); var response = await grpc.SayHelloAsync( new HelloRequest { Name = "Bob" }); System.Console.WriteLine(response.Message); } }

@@ -1,0 +1,1 @@
+IL_0000: ldsflda valuetype '<PrivateImplementationDetails>'/'__StaticArrayInitTypeSize=6' '<PrivateImplementationDetails>'::F3AEFE62965A91903610F0E23CC8A69D5B87CEA6D28E75489B0D2CA02 ED7993C IL_0005: ldc.i4.5 IL_0006: newobj instance void valuetype [System.Runtime]System.ReadOnlySpan`1<uint8>::.ctor(void*, int32) IL_000b: ret

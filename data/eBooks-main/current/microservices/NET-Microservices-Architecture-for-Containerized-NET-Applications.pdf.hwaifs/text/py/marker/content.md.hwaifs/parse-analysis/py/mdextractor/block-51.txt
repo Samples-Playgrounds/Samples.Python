@@ -1,0 +1,2 @@
+var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
+eventBus.Subscribe<ProductPriceChangedIntegrationEvent,

@@ -1,0 +1,1 @@
+using System.Runtime.CompilerServices; class Program { static void Main() { int[] array = new int[10_000_000]; for (int i = 0; i < 1_000_000; i++) { Test(array); } }

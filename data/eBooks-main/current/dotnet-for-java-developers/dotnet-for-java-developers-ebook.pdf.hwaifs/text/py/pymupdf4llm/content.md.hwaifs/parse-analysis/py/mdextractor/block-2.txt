@@ -1,0 +1,2 @@
+$ brew tap caskroom/cask #if you haven't already
+    $ brew cask install dotnet-sdk

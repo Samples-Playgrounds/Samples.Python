@@ -1,0 +1,1 @@
+REGION_NORTH_AMERICA = 1; REGION_SOUTH_AMERICA = 2; REGION_EMEA = 4; REGION_APAC = 8; } message Product { Region available_in = 1; }

@@ -1,0 +1,1 @@
+{ "redisPassword": "some password" , "connectionStrings": { "customerdb": "some connection string" , "productdb": "some connection string" } }

@@ -1,0 +1,1 @@
+G_M000_IG03: ;; offset=004BH 8B4DA8 mov ecx, dword ptr [rbp-58H] FFC9 dec ecx 894DA8 mov dword ptr [rbp-58H], ecx 837DA800 cmp dword ptr [rbp-58H], 0 7F0E jg SHORT G_M000_IG05 G_M000_IG04: ;; offset=0059H 488D4DA8 lea rcx, [rbp-58H] BA06000000 mov edx, 6 E8B985AB5F call CORINFO_HELP_PATCHPOINT G_M000_IG05: ;; offset=0067H

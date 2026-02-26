@@ -1,0 +1,1 @@
+private object _value = new List<string>(); [Benchmark(Baseline = true )] public List<string> WithCast() { object value = _value; return value is List<string> ? (List<string>)value : null ; } [Benchmark] public List<string> WithPattern() { object value = _value; return value is List<string> list ? list : null ; }

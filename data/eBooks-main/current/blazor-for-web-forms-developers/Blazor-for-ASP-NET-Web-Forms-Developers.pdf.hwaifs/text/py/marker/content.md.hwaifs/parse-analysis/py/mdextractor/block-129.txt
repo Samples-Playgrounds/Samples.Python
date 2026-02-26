@@ -1,0 +1,48 @@
+public IContainerProvider ContainerProvider
+ {
+ get { return _containerProvider; }
+ }
+ protected void Application_Start(object sender, EventArgs e)
+ {
+ // Code that runs on app startup
+ RouteConfig.RegisterRoutes(RouteTable.Routes);
+ BundleConfig.RegisterBundles(BundleTable.Bundles);
+ ConfigureContainer();
+ ConfigDataBase();
+ }
+ /// <summary>
+ /// Track the machine name and the start time for the session inside the current 
+session
+ /// </summary>
+ protected void Session_Start(Object sender, EventArgs e)
+ {
+ HttpContext.Current.Session["MachineName"] = Environment.MachineName;
+ HttpContext.Current.Session["SessionStartTime"] = DateTime.Now;
+ }
+ /// <summary>
+ /// https://autofaccn.readthedocs.io/en/latest/integration/webforms.html
+ /// </summary>
+ private void ConfigureContainer()
+ {
+ var builder = new ContainerBuilder();
+ var mockData = bool.Parse(ConfigurationManager.AppSettings["UseMockData"]);
+ builder.RegisterModule(new ApplicationModule(mockData));
+ container = builder.Build();
+ _containerProvider = new ContainerProvider(container);
+ }
+ private void ConfigDataBase()
+ {
+ var mockData = bool.Parse(ConfigurationManager.AppSettings["UseMockData"]);
+ if (!mockData)
+ {
+Database.SetInitializer<CatalogDBContext>(container.Resolve<CatalogDBInitializer>());
+ }
+ }
+ protected void Application_BeginRequest(object sender, EventArgs e)
+ {
+ //set the property to our new object
+ LogicalThreadContext.Properties["activityid"] = new ActivityIdHelper();
+ LogicalThreadContext.Properties["requestinfo"] = new WebRequestInfo();
+ _log.Debug("Application_BeginRequest");
+ }
+}

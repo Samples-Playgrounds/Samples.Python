@@ -1,0 +1,1 @@
+bool useMockData = Configuration . GetValue<bool>("UseMockData"); string connectionString = Configuration . GetConnectionString("DefaultConnection"); builder . RegisterModule(new ApplicationModule(useMockData , connectionString));

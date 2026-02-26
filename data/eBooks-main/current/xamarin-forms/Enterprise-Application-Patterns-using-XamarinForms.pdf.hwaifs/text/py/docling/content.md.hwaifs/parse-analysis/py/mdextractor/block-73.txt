@@ -1,0 +1,1 @@
+private void Logout() { var authIdToken = Settings.AuthIdToken; var logoutRequest = _identityService.CreateLogoutRequest(authIdToken); if (!string.IsNullOrEmpty(logoutRequest)) { // Logout LoginUrl = logoutRequest; } ... }

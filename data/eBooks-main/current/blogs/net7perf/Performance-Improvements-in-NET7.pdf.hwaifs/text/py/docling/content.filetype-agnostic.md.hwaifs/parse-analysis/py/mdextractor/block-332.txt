@@ -1,0 +1,1 @@
+[AsyncMethodBuilder(typeof(PoolingAsyncValueTaskMethodBuilder<>))] public async ValueTask<int> ReadAsync(Memory<byte> buffer) { ... }

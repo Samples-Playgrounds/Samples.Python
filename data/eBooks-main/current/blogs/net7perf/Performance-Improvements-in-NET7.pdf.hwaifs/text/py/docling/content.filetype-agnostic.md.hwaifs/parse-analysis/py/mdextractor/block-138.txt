@@ -1,0 +1,1 @@
+private bool _value = true; [Benchmark] public int BoolStringLength() => _value.ToString().Length;

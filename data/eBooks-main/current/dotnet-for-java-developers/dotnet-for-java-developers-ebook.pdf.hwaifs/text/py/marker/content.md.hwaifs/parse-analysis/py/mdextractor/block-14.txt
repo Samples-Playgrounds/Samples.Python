@@ -1,0 +1,2 @@
+var words = "One two three four";
+ var wordCount = words.WordCount(); // 4

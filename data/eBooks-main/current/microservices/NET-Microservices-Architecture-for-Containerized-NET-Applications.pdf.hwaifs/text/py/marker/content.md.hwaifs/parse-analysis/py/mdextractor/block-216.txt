@@ -1,0 +1,6 @@
+[Authorize(Roles = "Administrator, PowerUser")]
+[Authorize(Roles = "RemoteEmployee ")]
+[Authorize(Policy = "CustomPolicy")]
+public ActionResult API1 ()
+{
+}

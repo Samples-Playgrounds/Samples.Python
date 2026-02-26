@@ -1,0 +1,1 @@
+< Window ... xmlns:xamlhost="clrnamespace:Microsoft.Toolkit.Wpf.UI.XamlHost;assembly=Microsoft.Toolkit.Wpf.UI.XamlHost"> < xamlhost:WindowsXamlHost x:Name="myUwpButton" InitialTypeName="Windows.UI.Xaml.Controls.Button" />

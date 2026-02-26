@@ -1,0 +1,1 @@
+public ICommand SignInCommand => new Command(async () => await SignInAsync());

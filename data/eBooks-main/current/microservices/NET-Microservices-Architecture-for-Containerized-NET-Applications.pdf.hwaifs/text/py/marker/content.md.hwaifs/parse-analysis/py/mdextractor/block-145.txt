@@ -1,0 +1,6 @@
+get
+ {
+ return _database.GetCollection<Locations>("Locations");
+ }
+ }
+}

@@ -1,0 +1,50 @@
+Take a look at the workflow file while it runs. If you remove the comments from the file, you’ll see the
+following YAML:
+
+
+77 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
+
+
+Notice the following things:
+
+
+1. The workflow name is CodeQL.
+
+
+2. This workflow triggers on push and pull_request events to the main branch. There’s also a
+cron trigger. The cron trigger lets you define a schedule for triggering this workflow and is
+randomly generated for you. In this case, this workflow will run at 14:40 UTC every Saturday.
+
+
+[!TIP] If you edit the workflow file and hover over the cron expression, a tooltip will show you
+the English text for the cron expression.
+
+
+3. There’s a single job called analyze that runs on the ubuntu-latest hosted agent.
+
+
+4. This workflow defines a strategy with a matrix on the array of language. In this case, there’s
+only csharp. If the repository contained other languages, you could add them to this array.
+This causes the job to “fan out” and create an instance per value of the matrix.
+
+
+5. There are four steps, starting with checkout.
+
+
+6. The second step initializes the CodeQL scanner for the language this job is going to scan.
+CodeQL intercepts calls to the compiler to build a database of the code while the code is
+being built.
+
+
+7. The Autobuild step will attempt to automatically build the source code using common
+conventions. If this step fails, you can replace it with your own custom build steps.
+
+
+8. After building, the CodeQL analysis is performed, where suites of queries are run against the
+code database.
+
+
+9. The run should complete successfully. However, there appear to be no issues.
+
+
+78 CHAPTER 3 | Continuous integration and deployment with Azure DevOps

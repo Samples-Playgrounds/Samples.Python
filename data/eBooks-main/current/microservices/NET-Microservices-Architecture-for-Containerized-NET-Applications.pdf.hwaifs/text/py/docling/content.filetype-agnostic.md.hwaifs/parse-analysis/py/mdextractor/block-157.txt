@@ -1,0 +1,1 @@
+[Route("new")] [HttpPost] public async Task<IActionResult> ExecuteBusinessOperation([FromBody]RunOpCommand runOperationCommand) { var commandResult = await _mediator . SendAsync(runOperationCommand); return commandResult ? (IActionResult)Ok() : (IActionResult)BadRequest(); }

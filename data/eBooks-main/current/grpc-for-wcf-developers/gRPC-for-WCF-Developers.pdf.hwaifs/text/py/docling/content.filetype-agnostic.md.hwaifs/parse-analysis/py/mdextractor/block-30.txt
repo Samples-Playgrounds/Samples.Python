@@ -1,0 +1,1 @@
+public Order CreateOrder(Dictionary<string , string> attributes) { var order = new Order(); order . Attributes . Add(attributes);

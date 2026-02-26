@@ -1,0 +1,1 @@
+public async Task ShowPortfolioAsync(int portfolioId) { var headers = new Grpc . Core . Metadata { { "Authorization" , $"Bearer {_userToken}" } }; var request = new GetRequest { TraderId = _userId , PortfolioId = portfolioId }; var response = await _portfoliosClient . GetAsync(request , headers); // Display portfolio }

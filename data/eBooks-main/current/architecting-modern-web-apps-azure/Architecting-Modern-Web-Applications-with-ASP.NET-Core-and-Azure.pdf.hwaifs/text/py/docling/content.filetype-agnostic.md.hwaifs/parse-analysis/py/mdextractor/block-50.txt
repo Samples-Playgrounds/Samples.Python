@@ -1,0 +1,1 @@
+// EF Core private readonly CatalogContext _context; public async Task<IEnumerable<CatalogType>> GetCatalogTypes() { return await _context . CatalogTypes . ToListAsync(); } // Dapper private readonly SqlConnection _conn; public async Task<IEnumerable<CatalogType>> GetCatalogTypesWithDapper() { return await _conn . QueryAsync<CatalogType>("SELECT * FROM CatalogType"); }

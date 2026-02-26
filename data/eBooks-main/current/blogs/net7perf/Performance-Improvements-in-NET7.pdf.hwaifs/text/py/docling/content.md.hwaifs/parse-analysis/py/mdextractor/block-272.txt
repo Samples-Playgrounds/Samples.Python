@@ -1,0 +1,1 @@
+private static readonly char[] s_pathDelims = { ':', '\\', '/', '?', '#' }; private static readonly string s_value = "abcdefghijklmnopqrstuvwxyz"; [Benchmark] public int WithArray() => s_value.IndexOfAny(s_pathDelims); [Benchmark] public int WithString() => s_value.AsSpan().IndexOfAny(@":\/?#");

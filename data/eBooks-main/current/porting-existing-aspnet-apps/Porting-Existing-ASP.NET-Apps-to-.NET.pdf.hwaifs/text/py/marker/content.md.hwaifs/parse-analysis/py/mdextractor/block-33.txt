@@ -1,0 +1,6 @@
+[HttpPost]
+[ValidateAntiForgeryToken]
+public ActionResult 
+Create([Bind("Id,Name,Description,Price,PictureFileName,CatalogTypeId,CatalogBrandId,Availa
+bleStock,RestockThreshold,MaxStockThreshold,OnReorder")] CatalogItem catalogItem)
+{

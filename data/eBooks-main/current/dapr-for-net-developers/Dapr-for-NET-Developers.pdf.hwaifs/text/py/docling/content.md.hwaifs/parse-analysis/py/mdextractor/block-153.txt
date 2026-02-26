@@ -1,0 +1,1 @@
+dapr run --app-id basket-api --components-path ./components dotnet run

@@ -1,0 +1,1 @@
+curl -X POST http://localhost:3500/v1.0/state/<store-name>/transaction \ -H "Content -Type: application/json" \ -d '{ "operations": [ { "operation": "upsert", "request": { "key": "Key1", "value": "Value1" } }, { "operation": "delete", "request": { "key": "Key2" } }

@@ -1,0 +1,1 @@
+private byte[] _data = Enumerable.Range(0, 256).Select(i => (byte)i).ToArray(); [Benchmark] public int AddBytes() { HashCode hc = default ; hc.AddBytes(_data); return hc.ToHashCode(); }

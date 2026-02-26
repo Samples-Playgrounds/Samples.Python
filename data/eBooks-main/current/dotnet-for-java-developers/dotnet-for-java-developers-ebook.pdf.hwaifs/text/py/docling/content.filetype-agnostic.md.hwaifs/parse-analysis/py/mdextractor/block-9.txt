@@ -1,0 +1,1 @@
+class Person { // . . . public delegate void HelloProc(string recipient); public HelloProc IndirectSayHello; } class Program { static void Main(string[] args) { Person p = new Person("Ted" , "Neward", 46); p.SayHello("Fred"); p.IndirectSayHello = p.SayHello; p.IndirectSayHello("Fred"); } }

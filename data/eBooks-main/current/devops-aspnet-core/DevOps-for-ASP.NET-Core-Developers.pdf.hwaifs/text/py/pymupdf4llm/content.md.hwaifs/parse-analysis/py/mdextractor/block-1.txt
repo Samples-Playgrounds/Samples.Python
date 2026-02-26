@@ -1,0 +1,3 @@
+> [!NOTE]
+> If you are using MS-hosted agent then select the *Hosted > Azure Pipelines* from
+drop down.

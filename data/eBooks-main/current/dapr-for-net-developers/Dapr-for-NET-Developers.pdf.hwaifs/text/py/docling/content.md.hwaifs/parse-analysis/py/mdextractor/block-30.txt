@@ -1,0 +1,1 @@
+daprClient.SaveStateAsync("statestore", "AMS", weatherForecast);

@@ -1,0 +1,1 @@
+> kubectl apply -f .\stockdata.yml deployment.apps/stockdata created service/stockdata created > kubectl get deployment stockdata --namespace stocks NAME READY UP -TO -DATE AVAILABLE AGE stockdata 1/1 1 1 17s > kubectl get service stockdata --namespace stocks NAME TYPE CLUSTER -IP EXTERNAL -IP PORT(S) AGE stockdata ClusterIP 10.97.132.103 <none> 80/TCP 33s

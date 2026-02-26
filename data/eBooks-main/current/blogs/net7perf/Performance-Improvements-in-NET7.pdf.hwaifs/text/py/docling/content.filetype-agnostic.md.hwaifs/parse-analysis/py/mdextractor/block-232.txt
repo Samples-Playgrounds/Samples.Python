@@ -1,0 +1,1 @@
+private StringBuilder _sb = new StringBuilder(); [Benchmark] public void AppendFormat() { _sb.Clear(); _sb.AppendFormat("There is already one outstanding '{0}' call for this WebSocket instance." + "ReceiveAsync and SendAsync can be called simultaneously, but at most one " + "outstanding operation for each of them is allowed at the same time." , "ReceiveAsync"); }

@@ -1,0 +1,1 @@
+{ "Kestrel": { "Certificates": { "Default": { "Path": "cert.pfx", "Password": "DO NOT STORE PLAINTEXT PASSWORDS IN APPSETTINGS FILES" } } } }

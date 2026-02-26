@@ -1,0 +1,1 @@
+; Program.DarkOrange() mov       eax,1 mov       ecx,39 xor       r8d,r8d mov       [rdx],r8 mov       [rdx+8],r8 mov       [rdx+10],cx mov       [rdx+12],ax mov       rax,rdx ret ; Total bytes of code 32

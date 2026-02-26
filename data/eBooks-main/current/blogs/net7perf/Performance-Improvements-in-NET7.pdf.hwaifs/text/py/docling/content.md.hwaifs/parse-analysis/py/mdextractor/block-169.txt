@@ -1,0 +1,1 @@
+private readonly string _assemblyName = typeof (MyClass).Assembly.FullName; private readonly string _typeName = typeof (MyClass).FullName; public class MyClass { } [Benchmark] public object CreateInstance() => Activator.CreateInstance(_assemblyName, _typeName);

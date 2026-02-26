@@ -1,0 +1,16 @@
+[Route("api/v1/[controller]")]
+public class CatalogController : ControllerBase
+{
+ private readonly CatalogContext _context;
+ private readonly IOptionsSnapshot<Settings> _settings;
+ private readonly IEventBus _eventBus;
+ public CatalogController(CatalogContext context,
+ IOptionsSnapshot<Settings> settings,
+ IEventBus eventBus)
+ {
+ _context = context;
+ _settings = settings;
+ _eventBus = eventBus;
+ }
+ // ...
+}

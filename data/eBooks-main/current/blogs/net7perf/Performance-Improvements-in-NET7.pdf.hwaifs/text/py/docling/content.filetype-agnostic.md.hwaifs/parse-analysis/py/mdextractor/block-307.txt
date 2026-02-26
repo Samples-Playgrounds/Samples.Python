@@ -1,0 +1,1 @@
+public IEnumerable<object> Inputs { get; } = new[] { new object() }; [Benchmark] [ArgumentsSource(nameof(Inputs))] public bool M1(object o) => o is int[]; [Benchmark] [ArgumentsSource(nameof(Inputs))] public bool M2(object o) => o.GetType() == typeof(int[]);

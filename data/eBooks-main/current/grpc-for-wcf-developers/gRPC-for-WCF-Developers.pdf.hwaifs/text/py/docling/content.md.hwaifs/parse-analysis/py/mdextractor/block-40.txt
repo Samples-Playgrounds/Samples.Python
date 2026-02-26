@@ -1,0 +1,1 @@
+{ _client = client; _stream = client.OpenConnection(); } public async Task WriteAsync(string description) { await _stream.RequestStream.WriteAsync( new Thing { Description = description, Time = Timestamp.FromDateTimeOffset(DateTimeOffset.UtcNow) }); } public async ValueTask DisposeAsync() { await _stream.RequestStream.CompleteAsync(); _stream.Dispose(); } }

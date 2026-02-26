@@ -1,0 +1,1 @@
+version: '3.4' services: redis.data: image: redis:alpine rabbitmq: image: rabbitmq:3-management-alpine sqldata:

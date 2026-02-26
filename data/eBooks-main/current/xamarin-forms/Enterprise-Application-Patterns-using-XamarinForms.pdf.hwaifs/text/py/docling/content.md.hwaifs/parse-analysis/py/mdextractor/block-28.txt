@@ -1,0 +1,1 @@
+public Task NavigateToAsync<TViewModel>() where TViewModel : ViewModelBase { return InternalNavigateToAsync(typeof(TViewModel), null); } public Task NavigateToAsync<TViewModel>(object parameter) where TViewModel : ViewModelBase { return InternalNavigateToAsync(typeof(TViewModel), parameter); }

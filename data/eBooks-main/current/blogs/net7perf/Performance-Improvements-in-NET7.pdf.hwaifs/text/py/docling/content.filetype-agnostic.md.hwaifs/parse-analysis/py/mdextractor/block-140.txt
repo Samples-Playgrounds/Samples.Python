@@ -1,0 +1,1 @@
+; Program.BoolStringLength() cmp byte ptr [rcx+8],0 je short M00_L01 mov rax,1DB54800D20 mov rax,[rax] M00_L00: mov eax,[rax+8] ret M00_L01: mov rax,1DB54800D18 mov rax,[rax] jmp short M00_L00 ; Total bytes of code 38

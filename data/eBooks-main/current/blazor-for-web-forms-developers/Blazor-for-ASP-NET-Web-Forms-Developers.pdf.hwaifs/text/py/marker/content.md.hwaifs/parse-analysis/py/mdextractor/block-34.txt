@@ -1,0 +1,8 @@
+<button @onclick="ShowMessage">Get message</button>
+@if (showMessage)
+{
+ @if (message == null)
+ {
+ <p><em>Loading...</em></p>
+ }
+ else

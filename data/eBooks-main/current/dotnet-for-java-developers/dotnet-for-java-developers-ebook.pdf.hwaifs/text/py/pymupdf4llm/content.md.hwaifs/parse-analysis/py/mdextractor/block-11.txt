@@ -1,0 +1,6 @@
+}
+      private string lastName;
+
+      public int Age
+    {
+        get { return this.age; }

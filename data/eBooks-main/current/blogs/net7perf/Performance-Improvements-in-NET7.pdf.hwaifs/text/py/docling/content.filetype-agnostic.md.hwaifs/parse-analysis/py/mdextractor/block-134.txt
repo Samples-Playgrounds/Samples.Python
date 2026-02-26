@@ -1,0 +1,1 @@
+private byte[] _data = Enumerable.Repeat((byte)123 , 29).Append((byte)42).ToArray(); [Benchmark(Baseline = true)] [Arguments((byte)42)] public bool Find(byte value) => Contains(_data, value); [Benchmark] [Arguments((byte)42)] public bool FindVectorized(byte value) => Contains_Vectorized(_data, value);

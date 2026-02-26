@@ -1,0 +1,1 @@
+// Program.cs from .NET 7 Web API sample //... // Registers required services for health checks builder.Services.AddHealthChecks() // Add a health check for a SQL Server database .AddCheck( "OrderingDB-check", new SqlConnectionHealthCheck(builder.Configuration["ConnectionString"]), HealthStatus.Unhealthy, new string[] { "orderingdb" });

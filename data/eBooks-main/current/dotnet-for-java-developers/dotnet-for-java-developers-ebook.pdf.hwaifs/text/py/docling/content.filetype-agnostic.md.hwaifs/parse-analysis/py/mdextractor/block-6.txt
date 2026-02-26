@@ -1,0 +1,1 @@
+class Person { public string FirstName { get; private set; } public string LastName { get; private set; } public int Age { get; private set; } public Person(string fn, string ln, int a) { this.FirstName = fn; this.LastName = ln; this.Age = a; } }

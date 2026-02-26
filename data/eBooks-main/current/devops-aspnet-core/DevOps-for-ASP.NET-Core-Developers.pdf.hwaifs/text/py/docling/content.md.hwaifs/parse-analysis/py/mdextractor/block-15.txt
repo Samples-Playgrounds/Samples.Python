@@ -1,0 +1,5 @@
+- name: Update config uses: Azure/appservice-settings@v1 with: app-name: ${{ env.app-name }}  app-settings-json: |  [  {  "name": "UI:Index:Header", "value": "${{ secrets.INDEX\_HEADER }}','slotSetting': true } ]
+4. Commit the file.
+5. Let the workflow run and approve the deployment to PROD once the approval is reached.
+6. You should see the following headers on the index page for both sites:
+- **Figure 16**: Settings changed in the environments.

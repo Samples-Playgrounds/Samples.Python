@@ -1,0 +1,1 @@
+private async Task NavigateAsync(string url) { ... Settings.AuthAccessToken = string.Empty; Settings.AuthIdToken = string.Empty; IsLogin = false; LoginUrl = _identityService.CreateAuthorizationRequest(); ... }

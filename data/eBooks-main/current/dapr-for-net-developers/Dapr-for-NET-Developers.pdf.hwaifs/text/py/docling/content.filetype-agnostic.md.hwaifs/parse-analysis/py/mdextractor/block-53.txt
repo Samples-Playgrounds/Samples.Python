@@ -1,0 +1,1 @@
+var daprClient = new DaprClientBuilder().Build(); try { var confirmation = await daprClient.InvokeMethodGrpcAsync<Order, OrderConfirmation>("orderservice" , "submitOrder", order); } catch (InvocationException ex) { // Handle error }

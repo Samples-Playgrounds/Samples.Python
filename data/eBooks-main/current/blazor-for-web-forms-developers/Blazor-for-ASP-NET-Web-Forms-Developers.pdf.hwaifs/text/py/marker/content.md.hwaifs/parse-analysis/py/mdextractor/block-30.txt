@@ -1,0 +1,7 @@
+<button @onclick="OnClick">Click me!</button>
+@code {
+ void OnClick()
+ {
+ Console.WriteLine("The button was clicked!");
+ }
+}

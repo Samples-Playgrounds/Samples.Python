@@ -1,0 +1,1 @@
+{ "tier1-percentage": "2.5", "tier2-percentage": "3.8", "tier3-percentage": "5.1" }

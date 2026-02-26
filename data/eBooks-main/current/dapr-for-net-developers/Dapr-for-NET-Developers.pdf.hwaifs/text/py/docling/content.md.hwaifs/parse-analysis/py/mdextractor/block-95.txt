@@ -1,0 +1,1 @@
+public int Increment() { var currentValue = GetValue(); var newValue = currentValue + 1; SaveValue(newValue); return newValue; }

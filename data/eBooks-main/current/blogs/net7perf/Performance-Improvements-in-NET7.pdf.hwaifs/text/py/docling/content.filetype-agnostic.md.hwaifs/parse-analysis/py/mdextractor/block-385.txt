@@ -1,0 +1,1 @@
+private readonly byte[] _data = RandomNumberGenerator.GetBytes(128); [Benchmark(Baseline = true)] public byte[] Hash1() { using (SHA256 h = SHA256.Create()) { return h.ComputeHash(_data); } } [Benchmark] public byte[] Hash2() { return SHA256.HashData(_data); } } return SHA256. HashData(data); }

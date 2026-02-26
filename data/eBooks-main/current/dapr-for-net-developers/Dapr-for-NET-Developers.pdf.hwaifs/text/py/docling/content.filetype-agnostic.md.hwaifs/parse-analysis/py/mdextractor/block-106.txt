@@ -1,0 +1,1 @@
+var builder = WebApplication.CreateBuilder(args); builder.Services . AddActors(options => { options.Actors . RegisterActor<ScoreActor>(); });

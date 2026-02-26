@@ -1,0 +1,1 @@
+public override async Task InitializeAsync(object navigationData) { if (navigationData is Order) { ... Order = await _ordersService.GetOrderAsync( Convert.ToInt32(order.OrderNumber), authToken);

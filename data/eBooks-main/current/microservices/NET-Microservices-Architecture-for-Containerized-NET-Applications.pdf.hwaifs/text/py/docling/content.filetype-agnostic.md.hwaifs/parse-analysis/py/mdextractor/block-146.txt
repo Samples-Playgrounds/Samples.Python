@@ -1,0 +1,1 @@
+# docker -compose.yml version: '3.4' services: # ...Other services... nosqldata: image: mongo

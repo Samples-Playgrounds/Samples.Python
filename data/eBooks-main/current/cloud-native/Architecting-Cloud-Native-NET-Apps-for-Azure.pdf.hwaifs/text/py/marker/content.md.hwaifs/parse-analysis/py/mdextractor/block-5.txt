@@ -1,0 +1,1 @@
+docker rmi myregistry.azurecr.io/mycontainer:v1

@@ -1,0 +1,4 @@
+builder.Services.AddMvc();
+bool useMockData = builder.Configuration.GetValue<bool>("UseMockData");
+if (!useMockData)
+{

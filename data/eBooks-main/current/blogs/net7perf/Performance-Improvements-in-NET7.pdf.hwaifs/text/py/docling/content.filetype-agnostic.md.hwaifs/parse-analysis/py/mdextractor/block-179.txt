@@ -1,0 +1,1 @@
+"CreatePipe", ExactSpelling = true)] static extern unsafe int __PInvoke(System.IntPtr* hReadPipe, System.IntPtr* hWritePipe, void* lpPipeAttributes, uint nSize); }

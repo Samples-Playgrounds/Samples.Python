@@ -1,0 +1,10 @@
+// WRONG ACCORDING TO DDD PATTERNS – CODE AT THE APPLICATION LAYER OR
+// COMMAND HANDLERS
+// Code in command handler methods or Web API controllers
+//... (WRONG) Some code with business logic out of the domain classes ...
+OrderItem myNewOrderItem = new OrderItem(orderId, productId, productName,
+ pictureUrl, unitPrice, discount, units);
+//... (WRONG) Accessing the OrderItems collection directly from the application layer // or 
+command handlers
+myOrder.OrderItems.Add(myNewOrderItem);
+//...

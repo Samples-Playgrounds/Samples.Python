@@ -1,0 +1,14 @@
+// PUT api/todos/5
+ [HttpPut("{id}")]
+ public void Put(int id, [FromBody]Todo value)
+ {
+ var todo = todos.First((t) => t.ID == id);
+ todo.Description = value.Description;
+ todo.Completed = value.Completed;
+ }
+ // DELETE api/todos/5
+ [HttpDelete("{id}")]
+ public void Delete(int id)
+ {
+ }
+ }

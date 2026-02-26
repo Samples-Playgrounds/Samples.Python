@@ -1,0 +1,1 @@
+; Program.BoolStringLength() sub       rsp,28 cmp       [rcx],ecx add       rcx,8 call      System.Boolean.ToString() mov       eax,[rax+8] add       rsp,28 ret ; Total bytes of code 23

@@ -1,0 +1,3 @@
+app.AddSingleton<MyApplicationState>();
+@inject MyApplicationState AppState
+<label>Total Visitors: @AppState.VisitorCounter</label>

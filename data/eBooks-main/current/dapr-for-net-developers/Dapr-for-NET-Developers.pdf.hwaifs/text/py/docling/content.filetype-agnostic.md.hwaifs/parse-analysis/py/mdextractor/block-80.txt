@@ -1,0 +1,1 @@
+private async Task SendSMSAsync([FromServices] DaprClient daprClient) { var message = "Welcome to this awesome service"; var metadata = new Dictionary<string , string> { { "toNumber" , "555 -3277" } }; await daprClient.InvokeBindingAsync("sms" , "create", message, metadata); }

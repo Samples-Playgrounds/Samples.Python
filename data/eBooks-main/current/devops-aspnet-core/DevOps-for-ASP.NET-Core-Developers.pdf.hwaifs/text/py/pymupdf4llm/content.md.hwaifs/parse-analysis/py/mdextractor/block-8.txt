@@ -1,0 +1,2 @@
+The template search results appear. Hover over the ASP.NET Core template, and click
+the Apply button.

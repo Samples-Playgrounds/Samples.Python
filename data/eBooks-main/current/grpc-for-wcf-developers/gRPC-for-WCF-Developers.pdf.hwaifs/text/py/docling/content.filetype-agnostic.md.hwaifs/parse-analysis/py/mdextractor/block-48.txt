@@ -1,0 +1,1 @@
+public async Task<GetPortfolioResponse> GetPortfolio(GetPortfolioRequest request , ServerCallContext context) { var user = context . GetHttpContext().User; if (!ValidateUser(user)) { var metadata = new Metadata { { "User" , user . Identity . Name } }; throw new RpcException(new Status(StatusCode . PermissionDenied , "Permission denied"), metadata); } }

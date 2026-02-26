@@ -1,0 +1,1 @@
+; Program.Compute2() sub rsp,28 call Program.SomethingElse() add eax,10 add eax,10 add eax,10 add eax,10 add eax,10 add rsp,28 ret ; Total bytes of code 29

@@ -1,0 +1,1 @@
+M00_L05: mov rcx,offset MT_System.IndexOutOfRangeException call CORINFO_HELP_NEWSFAST mov rsi,rax call System.SR.get_IndexOutOfRange_ArrayRankIndex() mov rdx,rax mov rcx,rsi call System.IndexOutOfRangeException..ctor(System.String) mov rcx,rsi call CORINFO_HELP_THROW int 3 ; Total bytes of code 219

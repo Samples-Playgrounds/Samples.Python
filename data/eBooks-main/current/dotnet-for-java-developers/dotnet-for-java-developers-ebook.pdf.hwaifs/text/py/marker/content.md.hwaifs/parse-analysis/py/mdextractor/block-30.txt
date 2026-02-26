@@ -1,0 +1,5 @@
+using (var context = new BloggingContext())
+{
+ var allDotnetBlogUrls = from blog in context.Blogs
+ where blog.Url.Contains("dotnet")
+ select blog.Url;

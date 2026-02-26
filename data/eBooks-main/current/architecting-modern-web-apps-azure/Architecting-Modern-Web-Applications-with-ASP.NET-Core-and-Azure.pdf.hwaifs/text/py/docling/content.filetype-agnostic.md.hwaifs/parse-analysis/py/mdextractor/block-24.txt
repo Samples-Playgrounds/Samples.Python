@@ -1,0 +1,1 @@
+[HttpPut("{id}")] [ValidateAuthorExists] public async Task<IActionResult> Put(int id , [FromBody]Author author) { await _authorRepository . UpdateAsync(author); return Ok(); }

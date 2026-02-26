@@ -1,0 +1,1 @@
+; Program.A() mov       eax,17 ret ; Total bytes of code 6 ; Program.B() mov       eax,2E ret ; Total bytes of code 6

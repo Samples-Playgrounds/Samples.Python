@@ -1,0 +1,1 @@
+public ICommand NavigateCommand => new Command<string>(NavigateAsync);

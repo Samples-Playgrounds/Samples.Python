@@ -1,0 +1,1 @@
+var brandItems = await _context.CatalogBrands .Where(b => b.Enabled) .OrderBy(b => b.Name) .Select(b => new SelectListItem { Value = b.Id, Text = b.Name }) .ToListAsync();

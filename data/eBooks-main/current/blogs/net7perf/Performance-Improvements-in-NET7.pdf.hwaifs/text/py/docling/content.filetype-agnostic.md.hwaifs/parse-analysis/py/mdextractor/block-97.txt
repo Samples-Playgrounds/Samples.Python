@@ -1,0 +1,1 @@
+mov r9d,[rdx+1C] mov r10d,[rdx+14] lea r10d,[r9+r10+0FFFF]

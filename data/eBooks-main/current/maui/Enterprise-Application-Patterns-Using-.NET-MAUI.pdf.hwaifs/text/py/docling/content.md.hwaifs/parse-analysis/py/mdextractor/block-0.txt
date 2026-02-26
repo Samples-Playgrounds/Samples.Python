@@ -1,0 +1,1 @@
+<local:LoginViewModel /> </ContentPage.BindingContext> <!-- Omitted for brevity... --> </ContentPage>

@@ -1,0 +1,1 @@
+} [Benchmark] public async Task XmlReader_ReadAsync() { _stream.Position = 0; using XmlReader reader = XmlReader.Create(_stream, _settings); while (await reader.ReadAsync()); }

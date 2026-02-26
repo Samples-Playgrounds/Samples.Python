@@ -1,0 +1,22 @@
+// Program.cs
+var identityUrl = builder.Configuration.GetValue<string>("IdentityUrl");
+// Add Authentication services
+builder.Services.AddAuthentication(options =>
+{
+ options.DefaultAuthenticateScheme =
+AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme;
+ options.DefaultChallengeScheme =
+AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+ options.Authority = identityUrl;
+ options.RequireHttpsMetadata = false;
+ options.Audience = "orders";
+});
+// Build the app
+app.UseAuthentication();
+//…
+app.UseEndpoints(endpoints =>
+{
+ //...
+});

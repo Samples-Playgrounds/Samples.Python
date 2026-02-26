@@ -1,0 +1,1 @@
+public Span<int> RuhRoh() { unsafe { int i = 42; return new Span<int>(&i, 1); } }

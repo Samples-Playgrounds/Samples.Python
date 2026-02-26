@@ -1,0 +1,1 @@
+builder.RegisterType<NavigationService>().As<INavigationService>().SingleInstance();

@@ -1,0 +1,1 @@
+[Parameter] [SupplyParameterFromQuery(Name = "IncBy")] public int IncrementAmount { get ; set ; } = 1;

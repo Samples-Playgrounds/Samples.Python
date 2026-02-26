@@ -1,0 +1,1 @@
+{ channel.ExchangeDeclare(exchange: _brokerName, type: "direct"); string message = JsonConvert.SerializeObject(@event); var body = Encoding.UTF8.GetBytes(message); channel.BasicPublish(exchange: _brokerName, routingKey: eventName, basicProperties: null , body: body); } } }

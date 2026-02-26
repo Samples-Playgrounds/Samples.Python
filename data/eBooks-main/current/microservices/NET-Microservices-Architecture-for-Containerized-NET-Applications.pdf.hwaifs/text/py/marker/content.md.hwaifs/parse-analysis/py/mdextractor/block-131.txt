@@ -1,0 +1,17 @@
+// Add framework services.
+builder.Services.AddMvc(options =>
+{
+ options.Filters.Add(typeof(HttpGlobalExceptionFilter));
+}).AddControllersAsServices();
+builder.Services.AddEntityFrameworkSqlServer()
+ .AddDbContext<OrderingContext>(options =>
+ {
+ options.UseSqlServer(Configuration["ConnectionString"],
+ sqlOptions =>
+sqlOptions.MigrationsAssembly(typeof(Startup).GetTypeInfo().
+Assembly.GetName().Name));
+ },
+ ServiceLifetime.Scoped // Note that Scoped is the default choice
+ // in AddDbContext. It is shown here only for
+                         // pedagogic purposes.
+ );

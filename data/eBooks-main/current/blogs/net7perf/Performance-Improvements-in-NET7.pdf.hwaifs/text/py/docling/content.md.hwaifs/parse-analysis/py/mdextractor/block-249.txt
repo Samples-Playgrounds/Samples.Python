@@ -1,0 +1,1 @@
+class Data { public int Value; } ... void Add( ref int i) { i++; } ... var d = new Data { Value = 42 }; Add( ref d.Value); Debug.Assert(d.Value == 43);

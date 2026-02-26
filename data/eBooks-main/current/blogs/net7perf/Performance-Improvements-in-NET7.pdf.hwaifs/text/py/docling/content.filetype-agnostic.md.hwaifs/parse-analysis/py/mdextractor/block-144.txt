@@ -1,0 +1,1 @@
+; Program.IsValueType() sub rsp,28 mov rcx,offset MT_System.Int32 call CORINFO_HELP_TYPEHANDLE_TO_RUNTIMETYPE mov rcx,rax mov rax,[7FFCA47C9560] cmp [rcx],ecx add rsp,28 jmp rax ; Total bytes of code 38

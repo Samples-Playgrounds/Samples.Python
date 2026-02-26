@@ -1,0 +1,1 @@
+[ResponseCache(Duration = 60)] public IActionResult Contact() { ViewData["Message"] = "Your contact page."; return View(); }

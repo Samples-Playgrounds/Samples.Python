@@ -1,0 +1,12 @@
+In the updated file, we've added [`myfrontend-dapr`]{custom-style=Code} and
+[`mybackend-dapr`]{custom-style=Code} sidecars for the [`myfrontend`]{customstyle=Code} and [`mybackend`]{custom-style=Code} services respectively. In the updated
+file, pay close attention to the following changes:
+
+- The sidecars use the [`daprio/daprd:latest`]{custom-style=Code} container image. The
+use of the [`latest`]{custom-style=Code} tag isn't recommended for production
+scenarios. For production, it's better to use a specific version number.
+- Each service defined in the Compose file has its own network namespace for network
+isolation purposes. The sidecars use [`network_mode: "service:..."`]{customstyle=Code} to ensure they run in the same network namespace as the application. Doing
+so allows the sidecar and the application to communicate using [`localhost`]{customstyle=Code}.
+- The ports on which the Dapr sidecars are listening for gRPC communication (by
+default 50001) must be exposed to allow the sidecars to communicate with each other.

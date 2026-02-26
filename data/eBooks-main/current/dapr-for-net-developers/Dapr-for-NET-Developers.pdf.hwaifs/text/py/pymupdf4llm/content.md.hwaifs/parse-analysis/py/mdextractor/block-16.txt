@@ -1,0 +1,10 @@
+Running locally with Docker Compose and Visual Studio, you can set breakpoints and
+debug into the application. For production scenarios, it's recommended to host your
+application in Kubernetes. This book includes an accompanying reference application,
+[eShopOnDapr](https://github.com/dotnet-architecture/eShopOnDapr), that contains
+scripts to deploy to Kubernetes.
+
+To learn more about the Dapr service invocation building block used in this
+walkthrough, refer to [chapter 6](#the-dapr-service-invocation-building-blo).
+
+### Summary

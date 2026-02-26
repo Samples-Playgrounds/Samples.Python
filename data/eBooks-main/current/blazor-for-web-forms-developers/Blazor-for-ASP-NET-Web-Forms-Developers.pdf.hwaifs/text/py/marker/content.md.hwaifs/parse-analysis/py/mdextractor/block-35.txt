@@ -1,0 +1,14 @@
+{
+ <p>The message is: @message</p>
+ }
+}
+@code
+{
+ bool showMessage = false;
+ string message;
+ public async Task ShowMessage()
+ {
+ showMessage = true;
+ message = await MessageService.GetMessageAsync();
+ }
+}

@@ -1,0 +1,1 @@
+public static class Settings { private static ISettings AppSettings { get { return CrossSettings.Current; } } ... }

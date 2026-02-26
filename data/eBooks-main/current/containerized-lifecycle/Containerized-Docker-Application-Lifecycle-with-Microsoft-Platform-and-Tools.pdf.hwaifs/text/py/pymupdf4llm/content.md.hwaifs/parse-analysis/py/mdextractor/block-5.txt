@@ -1,0 +1,3 @@
+RUN powershell add-windowsfeature web-asp-net45
+
+### Build ASP.NET Core applications deployed as Linux containers into an AKS/Kubernetes orchestrator

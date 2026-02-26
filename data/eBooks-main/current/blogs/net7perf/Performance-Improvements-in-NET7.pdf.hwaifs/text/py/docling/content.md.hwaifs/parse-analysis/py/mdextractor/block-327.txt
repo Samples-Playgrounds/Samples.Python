@@ -1,0 +1,1 @@
+private byte[] _data = new HttpClient().GetByteArrayAsync("https://www.gutenberg.org/ebooks/100.txt.utf-8").Result; private Stream _output = new MemoryStream(); [Benchmark] public void Compress() { _output.Position = 0; using var brotli = new BrotliStream(_output, CompressionMode.Compress, leaveOpen: true ); brotli.Write(_data); }

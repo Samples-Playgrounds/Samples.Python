@@ -1,0 +1,1 @@
+-name: "c-short" match: prefix: "/c/" route: auto_host_rewrite: true prefix_rewrite: "/v1.0/invoke/catalog-api/method/" cluster: dapr

@@ -1,0 +1,1 @@
+var sql = @"select * from #Posts p left join #Users u on u . Id = p . OwnerId Order by p . Id"; var data = connection . Query<Post , User , Post>(sql , (post , user) => { post . Owner = user; return post;});

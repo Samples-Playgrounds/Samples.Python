@@ -1,0 +1,1 @@
+public class C { [CompilerGenerated] private static class <>O { public static Action<int> <0>__Work; } public void CallSite() => M(<>O.<0>__Work ??= new Action<int>(Work)); public void M(Action<int> action) { } private static void Work(int value) { } }

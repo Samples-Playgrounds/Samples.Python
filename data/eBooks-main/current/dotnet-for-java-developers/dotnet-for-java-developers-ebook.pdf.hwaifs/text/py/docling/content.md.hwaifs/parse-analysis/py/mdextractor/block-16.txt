@@ -1,0 +1,1 @@
+var drinkers = from p in people where p.Age > 21 select p;

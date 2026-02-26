@@ -1,0 +1,1 @@
+protected override void Scan(ReadOnlySpan<char> inputSpan) { // The pattern never matches anything. }

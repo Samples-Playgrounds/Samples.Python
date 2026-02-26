@@ -1,0 +1,1 @@
+[Fact] public async Task SettingOrderPropertyShouldRaisePropertyChanged() { bool invoked = false; var orderService = new OrderMockService(); var orderViewModel = new OrderDetailViewModel(orderService); orderViewModel.PropertyChanged += (sender, e) => {

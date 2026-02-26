@@ -1,0 +1,1 @@
+ref int Add( ref int i) { ref j = ref i; j++; return ref j; }

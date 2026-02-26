@@ -1,0 +1,4 @@
+[Route("api/v1/[controller]")]
+public class CatalogController : ControllerBase
+{
+ // Implementation ...

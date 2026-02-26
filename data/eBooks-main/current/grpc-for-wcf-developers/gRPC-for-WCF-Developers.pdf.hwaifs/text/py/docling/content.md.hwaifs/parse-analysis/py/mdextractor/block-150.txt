@@ -1,0 +1,1 @@
+public class StockData : Stocks.StocksBase { private readonly ILogger<StockData> _logger; public StockData(ILogger<StockData> logger)

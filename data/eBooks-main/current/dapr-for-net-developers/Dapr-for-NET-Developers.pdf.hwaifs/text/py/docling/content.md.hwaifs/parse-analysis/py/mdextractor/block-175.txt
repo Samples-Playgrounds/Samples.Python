@@ -1,0 +1,1 @@
+clusters: -name: dapr connect_timeout: 0.25s type: strict_dns hosts: -socket_address: address: 127.0.0.1 port_value: 3500

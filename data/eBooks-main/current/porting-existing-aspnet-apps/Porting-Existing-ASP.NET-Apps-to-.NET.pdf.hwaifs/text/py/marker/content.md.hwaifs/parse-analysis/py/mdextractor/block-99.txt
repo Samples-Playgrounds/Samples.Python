@@ -1,0 +1,5 @@
+[RouteArea("Admin")]
+public class SomeController : Controller
+When using Areas, additional arguments are passed into HTML helper methods to generate 
+links to actions in different areas:
+@Html.ActionLink("News", "Index", "News", new { area = "News" }, null)

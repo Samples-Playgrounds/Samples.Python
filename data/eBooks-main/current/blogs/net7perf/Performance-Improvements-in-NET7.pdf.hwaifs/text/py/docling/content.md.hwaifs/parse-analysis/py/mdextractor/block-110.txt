@@ -1,0 +1,1 @@
+public static TimeSpan FromSeconds(double value) => Interval(value, TicksPerSecond); // TicksPerSecond is a constant

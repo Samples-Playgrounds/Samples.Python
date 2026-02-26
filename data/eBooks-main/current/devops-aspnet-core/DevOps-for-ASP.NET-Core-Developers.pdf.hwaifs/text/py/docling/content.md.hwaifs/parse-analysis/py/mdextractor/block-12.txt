@@ -1,0 +1,1 @@
+"UI": { "Index": { "Header": "Simple News Reader" } } ,

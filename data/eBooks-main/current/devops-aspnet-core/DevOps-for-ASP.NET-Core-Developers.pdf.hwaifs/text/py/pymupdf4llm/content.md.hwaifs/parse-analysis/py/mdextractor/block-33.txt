@@ -1,0 +1,1 @@
+**Figure 6**: Deployment to PRE-PROD is successful.

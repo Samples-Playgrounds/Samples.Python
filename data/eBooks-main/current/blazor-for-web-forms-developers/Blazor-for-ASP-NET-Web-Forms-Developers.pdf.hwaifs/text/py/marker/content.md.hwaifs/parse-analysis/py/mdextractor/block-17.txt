@@ -1,0 +1,4 @@
+@if (value % 2 == 0)
+{
+ <p>The value was even.</p>
+}

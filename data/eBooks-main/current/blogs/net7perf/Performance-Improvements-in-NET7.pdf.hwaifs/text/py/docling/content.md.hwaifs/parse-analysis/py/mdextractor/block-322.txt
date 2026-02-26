@@ -1,0 +1,1 @@
+File.Delete(_path1); File.Delete(_path2); Directory.CreateDirectory(_path1); } [Benchmark] public void Move() { Directory.Move(_path1, _path2); Directory.Move(_path2, _path1); }

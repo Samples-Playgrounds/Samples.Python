@@ -1,0 +1,1 @@
+private StringBuilder _sb = new StringBuilder(); [Benchmark] public void Insert() { _sb.Clear(); _sb.Insert(0, 12345); }

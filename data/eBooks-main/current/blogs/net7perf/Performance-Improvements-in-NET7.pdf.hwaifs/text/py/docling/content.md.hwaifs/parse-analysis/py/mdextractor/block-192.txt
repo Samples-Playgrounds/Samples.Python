@@ -1,0 +1,1 @@
+private bool _value = true ; private char[] _chars = new char[] { 'T', 'r', 'u', 'e' }; [Benchmark] public bool ParseTrue() => bool.TryParse(_chars, out _); [Benchmark] public bool FormatTrue() => _value.TryFormat(_chars, out _);

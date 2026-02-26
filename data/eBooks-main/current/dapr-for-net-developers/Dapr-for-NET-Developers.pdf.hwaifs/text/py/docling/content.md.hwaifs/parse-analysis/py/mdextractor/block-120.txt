@@ -1,0 +1,1 @@
+public interface IRemindable { Task ReceiveReminderAsync( string reminderName, byte[] state, TimeSpan dueTime, TimeSpan period); }

@@ -1,0 +1,1 @@
+; *** .NET 6 *** ; Program.Neg(Int32) mov       eax,edx not       eax inc       eax ret ; Total bytes of code 7 ; *** .NET 7 *** ; Program.Neg(Int32) mov       eax,edx neg       eax ret ; Total bytes of code 5

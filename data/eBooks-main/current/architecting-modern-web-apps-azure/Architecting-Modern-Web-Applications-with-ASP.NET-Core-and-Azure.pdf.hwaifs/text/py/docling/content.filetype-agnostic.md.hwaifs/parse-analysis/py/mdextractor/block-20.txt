@@ -1,0 +1,1 @@
+[Authorize] public class AccountController : Controller { [AllowAnonymous] // overrides the Authorize attribute public async Task<IActionResult> Login() {} public async Task<IActionResult> ForgotPassword() {} }

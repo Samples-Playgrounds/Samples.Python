@@ -1,0 +1,15 @@
+public class VehicleRegistrationService { private HttpClient
+_httpClient; public VehicleRegistrationService(HttpClient httpClient) { _httpClient = httpClient; }
+
+ public async Task<VehicleInfo> GetVehicleInfo(string licenseNumber)
+ {
+     return await _httpClient.GetFromJsonAsync<VehicleInfo>(
+
+59
+
+CHAPTER 7 | The Dapr service invocation building block
+
+         $"vehicleinfo/{licenseNumber}");
+ }
+
+}

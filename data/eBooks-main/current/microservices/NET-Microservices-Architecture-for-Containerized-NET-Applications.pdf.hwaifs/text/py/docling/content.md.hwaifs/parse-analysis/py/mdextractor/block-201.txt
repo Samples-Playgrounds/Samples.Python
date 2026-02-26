@@ -1,0 +1,1 @@
+// HealthCheck middleware app.UseHealthChecks("/hc", new HealthCheckOptions() { Predicate = _ => true , ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse });

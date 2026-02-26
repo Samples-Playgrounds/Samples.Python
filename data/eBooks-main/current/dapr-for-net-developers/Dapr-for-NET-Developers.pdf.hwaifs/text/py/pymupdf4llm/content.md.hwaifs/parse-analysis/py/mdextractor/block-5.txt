@@ -1,0 +1,5 @@
+dapr run --app-id DaprCounter dotnet run
+
+Try stopping and restarting the application. You'll see that the counter doesn't
+reset. Instead it continues from the previously saved state. The Dapr building block
+makes the application stateful.

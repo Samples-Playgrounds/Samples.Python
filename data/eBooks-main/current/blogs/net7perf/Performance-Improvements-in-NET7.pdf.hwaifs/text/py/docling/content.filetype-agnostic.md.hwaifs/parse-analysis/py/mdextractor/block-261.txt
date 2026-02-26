@@ -1,0 +1,1 @@
+public struct SingleItemList { private int _value; public ref int this[int i] { get { if (i != 0) throw new IndexOutOfRangeException(); return ref _value; } } }

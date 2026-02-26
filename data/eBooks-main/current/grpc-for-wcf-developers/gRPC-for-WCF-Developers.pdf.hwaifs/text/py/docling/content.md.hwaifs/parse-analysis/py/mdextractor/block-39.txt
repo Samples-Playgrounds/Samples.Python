@@ -1,0 +1,1 @@
+public class ThingLogger : IAsyncDisposable { private readonly ThingLog.ThingLogClient _client; private readonly AsyncClientStreamingCall<ThingLogRequest, CompletedResponse> _stream; public ThingLogger(ThingLog.ThingLogClient client)

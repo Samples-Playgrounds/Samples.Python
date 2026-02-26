@@ -1,0 +1,1 @@
+[Fact] public void CheckValidationPassesWhenBothPropertiesHaveDataTest() { var mockViewModel = new MockViewModel(); mockViewModel.Forename.Value = "John"; mockViewModel.Surname.Value = "Smith"; bool isValid = mockViewModel.Validate(); Assert.True(isValid); }

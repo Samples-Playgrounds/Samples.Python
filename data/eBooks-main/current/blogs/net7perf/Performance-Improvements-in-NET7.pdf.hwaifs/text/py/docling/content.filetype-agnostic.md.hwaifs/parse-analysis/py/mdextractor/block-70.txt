@@ -1,0 +1,1 @@
+mov rax,offset MT_System.String cmp [rdx],rax jne short M00_L01 test r8,r8 je short M00_L01 cmp [r8],rax jne short M00_L01 test r9,r9 je short M00_L01 cmp [r9],rax jne short M00_L01 mov rdx,[rsp+28] test rdx,rdx je short M00_L00 cmp [rdx],rax je short M00_L00 xor edx,edx M00_L00: xor eax,eax test rdx,rdx setne al ret M00_L01: xor eax,eax ret ; Total bytes of code 69

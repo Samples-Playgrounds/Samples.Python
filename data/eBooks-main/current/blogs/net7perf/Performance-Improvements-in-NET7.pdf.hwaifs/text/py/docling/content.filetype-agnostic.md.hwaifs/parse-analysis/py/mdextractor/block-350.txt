@@ -1,0 +1,1 @@
+private byte[] _data = new byte[] { 1 , 2 , 3 , 4 , 5 }; [Benchmark] public string SerializeToString() => JsonSerializer.Serialize(_data);

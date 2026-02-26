@@ -1,0 +1,1 @@
+_activity.Stop(); } [Benchmark(Baseline = true)] public ActivityLink EnumerateActivityLinks_Old() { ActivityLink last = default; foreach (ActivityLink link in _activity.Links) last = link; return last; } [Benchmark] public ActivityLink EnumerateActivityLinks_New() { ActivityLink last = default; foreach (ActivityLink link in _activity.EnumerateLinks()) last = link; return last; }

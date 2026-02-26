@@ -1,0 +1,1 @@
+. Take(pageSize) . ToListAsync(); itemsOnPage = ChangeUriPlaceholder(itemsOnPage); var model = new PaginatedItemsViewModel<CatalogItem>( pageIndex , pageSize , totalItems , itemsOnPage); return Ok(model); } //... }

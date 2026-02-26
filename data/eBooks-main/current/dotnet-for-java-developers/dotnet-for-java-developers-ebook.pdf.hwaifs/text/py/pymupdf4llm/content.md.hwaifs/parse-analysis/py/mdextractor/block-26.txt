@@ -1,0 +1,8 @@
+public class StringUtils
+    {
+      public static int WordCount(String str)
+    {
+        return str.Split(new char[] { ' ', '.', '?' },
+    StringSplitOptions.RemoveEmptyEntries).Length;
+    }
+    }

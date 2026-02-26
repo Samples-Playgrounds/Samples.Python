@@ -1,0 +1,1 @@
+[Benchmark] [Arguments(42u)] public long DivideByVectorCount(uint i) => i / Vector<byte>.Count;

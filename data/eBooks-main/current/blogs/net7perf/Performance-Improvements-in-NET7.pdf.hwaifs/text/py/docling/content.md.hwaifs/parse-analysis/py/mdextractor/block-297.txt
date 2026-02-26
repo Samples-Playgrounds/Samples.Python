@@ -1,0 +1,1 @@
+private bool TryMatchAtCurrentPosition(ReadOnlySpan<char> inputSpan) { int pos = base .runtextpos; int matchStart = pos; ReadOnlySpan<char> slice = inputSpan.Slice(pos);

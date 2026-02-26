@@ -1,0 +1,1 @@
+; Program.DateTimeEquals() mov       rax,[rcx+8] mov       rdx,[rcx+10] xor       rax,rdx shl       rax,2

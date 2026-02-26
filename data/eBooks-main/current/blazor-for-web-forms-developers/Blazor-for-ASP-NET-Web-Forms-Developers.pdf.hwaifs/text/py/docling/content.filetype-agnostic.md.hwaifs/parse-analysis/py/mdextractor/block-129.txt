@@ -1,0 +1,1 @@
+@page "/Catalog/Details/{id:int}" @inject ICatalogService CatalogService @inject ILogger<Details> Logger <h2 class="esh -body-title">Details</h2> <div class="container"> <div class="row">

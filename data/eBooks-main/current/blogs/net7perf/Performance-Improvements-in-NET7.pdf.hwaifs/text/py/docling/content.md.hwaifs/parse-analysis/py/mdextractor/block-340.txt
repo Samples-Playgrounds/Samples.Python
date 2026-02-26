@@ -1,0 +1,1 @@
+async ValueTask<int> ReadAsync(Memory<byte> buffer) { ... }

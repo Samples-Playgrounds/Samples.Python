@@ -1,0 +1,1 @@
+[ApiController] [Route("[controller]")] public class ScoreController : ControllerBase { private readonly IActorProxyFactory _actorProxyFactory; public ScoreController(IActorProxyFactory actorProxyFactory) { _actorProxyFactory = actorProxyFactory; } [HttpPut("{scoreId}")] public Task<int> IncrementAsync(string scoreId) {

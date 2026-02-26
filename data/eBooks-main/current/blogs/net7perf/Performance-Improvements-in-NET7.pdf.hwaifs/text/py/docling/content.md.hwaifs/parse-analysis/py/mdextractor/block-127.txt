@@ -1,0 +1,1 @@
+G_M000_IG02:                ;; offset=0003H C5F91001             vmovupd  xmm0, xmmword ptr [rcx] C5F9D7C0             vpmovmskb eax, xmm0 G_M000_IG03:                ;; offset=000BH C3                   ret ; Total bytes of code 12

@@ -1,0 +1,1 @@
+; OSR variant for entry point 0x23 ; optimized code

@@ -1,0 +1,1 @@
+private MethodInfo _method; [GlobalSetup] public void Setup() => _method = typeof (Program).GetMethod("MyMethod", BindingFlags.NonPublic | BindingFlags.Static); [Benchmark] public void MethodInfoInvoke() => _method.Invoke( null , null ); private static void MyMethod() { }

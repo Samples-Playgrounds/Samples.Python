@@ -1,0 +1,1 @@
+cmp       r8d,10 jae       short G_M000_IG04 movsxd    r8,r8d

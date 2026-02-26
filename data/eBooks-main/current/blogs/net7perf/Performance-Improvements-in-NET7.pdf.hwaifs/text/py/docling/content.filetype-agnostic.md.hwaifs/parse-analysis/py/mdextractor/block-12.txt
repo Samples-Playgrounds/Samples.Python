@@ -1,0 +1,1 @@
+; Assembly listing for method Program:Main() ; Emitting BLENDED_CODE for X64 CPU with AVX -Windows ; Tier-0 compilation ; MinOpts code ; rbp based frame ; partially interruptible G_M000_IG01: ;; offset=0000H 55 push rbp 4883EC20 sub rsp, 32

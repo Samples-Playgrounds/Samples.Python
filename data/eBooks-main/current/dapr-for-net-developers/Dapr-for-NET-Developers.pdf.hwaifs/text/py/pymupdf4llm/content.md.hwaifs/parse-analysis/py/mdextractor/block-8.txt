@@ -1,0 +1,3 @@
+You add Dapr capabilities into the web app by injecting the [`DaprClient`]{customstyle=Code} class into [`IndexModel`]{custom-style=Code} constructor. In the
+[`OnGet`]{custom-style=Code} method, you call the backend API service with the Dapr
+service invocation building block. The [`OnGet`]{custom-style=Code} method is invoked

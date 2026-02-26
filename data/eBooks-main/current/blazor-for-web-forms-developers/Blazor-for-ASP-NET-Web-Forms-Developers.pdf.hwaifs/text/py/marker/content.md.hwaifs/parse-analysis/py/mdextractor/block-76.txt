@@ -1,0 +1,19 @@
+<p>
+ <label for="valid">Engineering Approval: </label>
+ <InputCheckbox id="valid" @bind-Value="starship.IsValidatedDesign" />
+ <ValidationMessage For="() => starship.IsValidatedDesign" />
+ </p>
+ <p>
+ <label for="productionDate">Production Date: </label>
+ <InputDate id="productionDate" @bind-Value="starship.ProductionDate" />
+ <ValidationMessage For="() => starship.ProductionDate" />
+ </p>
+ <button type="submit">Submit</button>
+</EditForm>
+@code {
+ private Starship starship = new Starship();
+ private void HandleValidSubmit()
+ {
+ // Save the data
+ }
+}

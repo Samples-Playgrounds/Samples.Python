@@ -1,0 +1,1 @@
+curl -X POST http://localhost:3500/v1.0/state/statestore \ -H "Content-Type: application/json" \ -d '[{ "key": "basket1", "value": { "customerId": 1, "items": [ { "itemId": "DaprHoodie", "quantity": 1 } ] } }]'

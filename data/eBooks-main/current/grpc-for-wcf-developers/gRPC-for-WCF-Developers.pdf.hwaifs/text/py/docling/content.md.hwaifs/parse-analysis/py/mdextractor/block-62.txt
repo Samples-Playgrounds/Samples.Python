@@ -1,0 +1,1 @@
+message Portfolio { int32 id = 1; string trader_id = 2; repeated PortfolioItem items = 3; }

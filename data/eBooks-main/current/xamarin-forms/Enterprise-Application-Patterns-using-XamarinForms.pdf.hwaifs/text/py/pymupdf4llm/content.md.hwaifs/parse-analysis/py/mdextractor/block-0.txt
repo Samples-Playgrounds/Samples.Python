@@ -1,0 +1,1 @@
+viewModelBase:ViewModelLocator.AutoWireViewModel="true"

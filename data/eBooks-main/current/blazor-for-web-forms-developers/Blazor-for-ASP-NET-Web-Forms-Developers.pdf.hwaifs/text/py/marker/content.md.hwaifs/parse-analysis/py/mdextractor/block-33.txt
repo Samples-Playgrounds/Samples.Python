@@ -1,0 +1,7 @@
+<button @onclick="OnClick">Click me!</button>
+@code {
+ async Task OnClick()
+ {
+ var result = await Http.GetAsync("api/values");
+ }
+}

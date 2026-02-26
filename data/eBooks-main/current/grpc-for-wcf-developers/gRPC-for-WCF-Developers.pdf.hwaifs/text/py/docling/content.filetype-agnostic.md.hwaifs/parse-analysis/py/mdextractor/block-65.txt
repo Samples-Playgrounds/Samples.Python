@@ -1,0 +1,1 @@
+rpc GetAll(GetAllRequest) returns (GetAllResponse); }

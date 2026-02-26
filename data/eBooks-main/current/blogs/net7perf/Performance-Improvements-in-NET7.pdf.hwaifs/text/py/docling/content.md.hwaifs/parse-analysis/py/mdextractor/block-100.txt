@@ -1,0 +1,1 @@
+static int ComputeNumber(int thousands, int hundreds, int tens, int ones) => (thousands * 1000) + (hundreds * 100) + (tens * 10) + ones; [MethodImpl(MethodImplOptions.NoInlining)] static void Process(int n) { }

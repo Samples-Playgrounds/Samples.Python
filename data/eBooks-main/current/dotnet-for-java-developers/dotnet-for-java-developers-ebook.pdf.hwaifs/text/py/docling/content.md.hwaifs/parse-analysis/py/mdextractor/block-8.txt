@@ -1,0 +1,1 @@
+this.FirstName = fn; this.LastName = ln; this.Age = a; } public void SayHello(string recipient) { Console.WriteLine("Hello, {0}, I, {1}, say hello.", recipient, FirstName); } } class Program { static void Main(string[] args) { Person p = new Person("Ted", "Neward", 46); p.SayHello("Fred"); } }

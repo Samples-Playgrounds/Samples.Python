@@ -1,0 +1,8 @@
+"LogLevel": {
+ "Default": "Warning"
+ }
+ },
+ "AllowedHosts": "*",
+ "UseMockData": "true",
+ "UseCustomizationData" : "true"
+}

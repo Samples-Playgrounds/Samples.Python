@@ -1,0 +1,1 @@
+[Benchmark] public void CreateInstance() => Activator.CreateInstance(typeof(MyClass), BindingFlags.NonPublic | BindingFlags.Instance , null, Array.Empty<object>(), null); internal class MyClass {

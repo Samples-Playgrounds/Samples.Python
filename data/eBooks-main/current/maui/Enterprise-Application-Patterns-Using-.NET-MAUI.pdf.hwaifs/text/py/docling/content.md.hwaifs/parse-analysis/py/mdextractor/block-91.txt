@@ -1,0 +1,1 @@
+partial class SampleViewModel { public string Name { get => _name; set { if (!EqualityComparer<string>.Default.Equals(_name, value)) { OnNameChanging(value); OnPropertyChanging("Name"); _name = value; OnNameChanged(value); OnPropertyChanged("Name"); } } } }

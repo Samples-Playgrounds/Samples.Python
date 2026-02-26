@@ -1,0 +1,1 @@
+private static TimeSpan Interval(double value, double scale) => IntervalFromDoubleTicks(value * scale); private static TimeSpan IntervalFromDoubleTicks(double ticks) => ticks == long.MaxValue ? TimeSpan.MaxValue : new TimeSpan((long)ticks);

@@ -1,0 +1,1 @@
+[Authorize] public sealed class BasketController : Controller { // Omitted for brevity }

@@ -1,0 +1,1 @@
+// store vehicle state var vehicleState = new VehicleState { LicenseNumber = msg.LicenseNumber, EntryTimestamp = msg.Timestamp }; await _vehicleStateRepository.SaveVehicleStateAsync(vehicleState);

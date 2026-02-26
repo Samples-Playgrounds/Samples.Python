@@ -1,0 +1,10 @@
+**Update the workflow to handle configuration**
+
+
+1. Navigate to the _.github/workflows/dotnet.yml_ file and select the pencil icon to edit the file.
+
+
+2. Add the following step before the az cli logout step in the deploy_staging job:
+
+
+:::{custom-style=CodeBox}

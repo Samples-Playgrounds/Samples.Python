@@ -1,0 +1,1 @@
+public async Task<bool> SignOutAsync() { var response = await GetClient().LogoutAsync( new LogoutRequest()).ConfigureAwait( false ); if (response.IsError) { return false ; } await _settingsService.SetUserTokenAsync( default ); return !response.IsError; }

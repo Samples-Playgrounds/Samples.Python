@@ -1,0 +1,1 @@
+[HttpGet("{city}")] public ActionResult<WeatherForecast> Get([FromState("statestore" , "city")] StateEntry<WeatherForecast> forecast) { if (forecast.Value == null) { return NotFound(); } return forecast.Value; }

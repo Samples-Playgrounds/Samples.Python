@@ -1,0 +1,1 @@
+[MethodImpl(MethodImplOptions.NoInlining)] private static int Get(int[] values, int i) => values[i];

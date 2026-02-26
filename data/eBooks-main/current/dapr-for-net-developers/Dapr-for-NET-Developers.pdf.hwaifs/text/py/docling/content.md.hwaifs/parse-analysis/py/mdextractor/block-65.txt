@@ -1,0 +1,1 @@
+curl -X POST http://localhost:3500/v1.0/publish/pubsub/newOrder \ -H "Content-Type: application/json" \ -d '{ "orderId": "1234", "productId": "5678", "amount": 2 }'

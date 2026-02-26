@@ -1,0 +1,1 @@
+Loaded: loaded (/etc/systemd/system/myapp.service; disabled; vendor preset: enabled) Active: inactive (dead)

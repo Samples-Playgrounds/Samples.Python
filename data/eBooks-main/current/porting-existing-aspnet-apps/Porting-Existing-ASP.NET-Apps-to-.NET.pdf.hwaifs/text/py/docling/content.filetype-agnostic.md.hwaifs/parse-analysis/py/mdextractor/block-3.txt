@@ -1,0 +1,1 @@
+public class MyActionFilterAttribute : ActionFilterAttribute { public override void OnResultExecuting(ResultExecutingContext context) { var headers = context . HttpContext . Request . Headers; // do something based on a header base . OnResultExecuting(context); } }

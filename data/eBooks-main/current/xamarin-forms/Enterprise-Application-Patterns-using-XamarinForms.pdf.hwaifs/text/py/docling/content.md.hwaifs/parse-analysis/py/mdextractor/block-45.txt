@@ -1,0 +1,1 @@
+public bool Validate() { Errors.Clear(); IEnumerable<string> errors = _validations .Where(v => !v.Check(Value)) .Select(v => v.ValidationMessage);

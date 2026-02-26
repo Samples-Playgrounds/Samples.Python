@@ -1,0 +1,1 @@
+<h1>Component with child content</h1> <div>@ChildContent</div> @code { [Parameter] public RenderFragment ChildContent { get; set; } } A parent component can then supply child content using normal Razor syntax. <ChildContentComponent> <ChildContent> <p>The time is @DateTime.Now</p> </ChildContent> </ChildContentComponent>

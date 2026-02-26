@@ -1,0 +1,1 @@
+http://localhost:<dapr-port>/v1.0/secrets/<store-name>/<name>?<metadata>

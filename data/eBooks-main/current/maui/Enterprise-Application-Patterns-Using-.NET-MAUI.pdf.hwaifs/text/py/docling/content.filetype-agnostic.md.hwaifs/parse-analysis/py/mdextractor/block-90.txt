@@ -1,0 +1,1 @@
+partial class SampleViewModel { private AsyncRelayCommand? settingsCommand; SettingsCommand => settingsCommand ??= new AsyncRelayCommand(SettingsAsync); } partial class SampleViewModel { private RelayCommand? validateCommand; public IRelayCommand ValidateCommand => validateCommand ??= new RelayCommand(Validate); }

@@ -1,0 +1,1 @@
+} private int age; public Person(string fn, string ln, int a) { this.FirstName = fn; this.LastName = ln; this.Age = a; } }

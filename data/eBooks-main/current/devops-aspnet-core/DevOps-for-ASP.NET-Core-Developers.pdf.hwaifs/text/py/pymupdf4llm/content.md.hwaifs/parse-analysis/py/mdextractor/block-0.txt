@@ -1,0 +1,3 @@
+Click Deployment Center . A new panel appears. Click Disconnect to remove the local Git
+source control configuration that was added in the previous chapter. Confirm the
+removal operation by clicking the Yes button.

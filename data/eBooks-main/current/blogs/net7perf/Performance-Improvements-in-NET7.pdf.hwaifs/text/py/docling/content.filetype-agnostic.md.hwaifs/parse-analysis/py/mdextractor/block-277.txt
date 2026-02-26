@@ -1,0 +1,1 @@
+[Benchmark] [Arguments(0 , 0 , 26)] public bool IsBoundary(int index, int startpos, int endpos) { return (index > startpos && IsBoundaryWordChar(runtext[index -1])) != (index < endpos && IsBoundaryWordChar(runtext[index])); } [MethodImpl(MethodImplOptions.NoInlining)] private bool IsBoundaryWordChar(char c) => false;

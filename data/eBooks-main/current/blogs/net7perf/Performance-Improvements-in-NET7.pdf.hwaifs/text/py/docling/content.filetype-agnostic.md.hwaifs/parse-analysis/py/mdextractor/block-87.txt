@@ -1,0 +1,1 @@
+; Program.Get(Int32[], Int32) sub rsp,28 cmp edx,[rcx+8] jae short M01_L00 mov eax,edx mov eax,[rcx+rax*4+10] add rsp,28 ret M01_L00: call CORINFO_HELP_RNGCHKFAIL

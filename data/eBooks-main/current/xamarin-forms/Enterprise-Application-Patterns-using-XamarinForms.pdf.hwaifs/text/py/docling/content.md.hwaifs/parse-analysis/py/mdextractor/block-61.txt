@@ -1,0 +1,1 @@
+public string Endpoint { get { return _endpoint; } set { _endpoint = value; if(!string.IsNullOrEmpty(_endpoint)) { UpdateEndpoint(_endpoint); } RaisePropertyChanged(() => Endpoint); } }

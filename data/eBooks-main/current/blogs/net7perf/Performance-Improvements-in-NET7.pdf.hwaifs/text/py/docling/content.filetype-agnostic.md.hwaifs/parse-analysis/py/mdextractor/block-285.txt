@@ -1,0 +1,1 @@
+private static readonly string s_haystack = new HttpClient().GetStringAsync("https://www.gutenberg.org/files/1661/1661-0.txt").Result; private Regex _regex = new Regex(@ " \belementary\b " , RegexOptions.Compiled); [Benchmark] public int Count() => _regex.Matches(s_haystack).Count;

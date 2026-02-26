@@ -1,0 +1,1 @@
+switch (attr.Value.AsSpan().Trim(" \t\n\r")) { case "preserve": return Preserve; case "default": return Default; }

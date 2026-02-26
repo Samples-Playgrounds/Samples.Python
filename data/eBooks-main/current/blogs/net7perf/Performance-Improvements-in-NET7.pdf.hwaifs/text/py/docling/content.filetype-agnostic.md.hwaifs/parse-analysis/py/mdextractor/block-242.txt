@@ -1,0 +1,1 @@
+private static string CreateSortString(PropertyDescriptor property, ListSortDirection direction) => string . Concat("[", property.Name, direction == ListSortDirection.Descending ? "] DESC" : "]");

@@ -1,0 +1,1 @@
+int? page , [FromQuery]string errorMsg) { var itemsPage = 10; var catalog = await _catalogSvc . GetCatalogItems(page ?? 0 , itemsPage , BrandFilterApplied , TypesFilterApplied); //… Additional code } } }

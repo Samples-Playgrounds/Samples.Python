@@ -1,0 +1,1 @@
+public static MauiAppBuilder RegisterAppServices(this MauiAppBuilder mauiAppBuilder) { mauiAppBuilder . Services . AddSingleton<ISettingsService , SettingsService>(); // Omitted for brevity... }

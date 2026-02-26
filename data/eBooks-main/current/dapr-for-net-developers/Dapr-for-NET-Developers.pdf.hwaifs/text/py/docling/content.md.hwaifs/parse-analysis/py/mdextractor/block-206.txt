@@ -1,0 +1,1 @@
+{ "ConnectionStrings": { "CatalogDB": "**********", "IdentityDB": "**********", "OrderingDB": "**********" }, "Smtp": { "User": "**********", "Password": "**********" }, "State": { "RedisPassword": "**********" } }

@@ -1,0 +1,7 @@
+public async Task<Locations> GetAsync(int locationId)
+{
+ var filter = Builders<Locations>.Filter.Eq("LocationId", locationId);
+ return await _context.Locations
+ .Find(filter)
+ .FirstOrDefaultAsync();
+}

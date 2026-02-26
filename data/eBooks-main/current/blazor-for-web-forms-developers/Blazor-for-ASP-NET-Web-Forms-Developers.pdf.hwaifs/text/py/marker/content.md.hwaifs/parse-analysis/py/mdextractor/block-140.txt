@@ -1,0 +1,10 @@
+<div class="form-group">
+ <label class="control-label col-md-2">Name</label>
+ <div class="col-md-3">
+ <asp:TextBox ID="Name" runat="server" CssClass="form-control"></asp:TextBox>
+ <asp:RequiredFieldValidator runat="server" ControlToValidate="Name"
+Display="Dynamic"
+ CssClass="field-validation-valid text-danger" ErrorMessage="The Name field is 
+required." />
+ </div>
+</div>

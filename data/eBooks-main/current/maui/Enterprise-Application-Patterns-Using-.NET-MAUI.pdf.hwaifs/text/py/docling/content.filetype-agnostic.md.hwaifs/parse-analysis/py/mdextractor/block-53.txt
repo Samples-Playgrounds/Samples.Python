@@ -1,0 +1,1 @@
+public override async Task InitializeAsync() { Products = await _productsService . GetCatalogAsync(); }

@@ -1,0 +1,34 @@
+[FunctionName("CheckStockPrice")]
+public static async Task CheckStockPrice([OrchestrationTrigger] DurableOrchestrationContext 
+context)
+{
+ StockWatcherInfo stockInfo = context.GetInput<StockWatcherInfo>();
+ const int checkIntervalSeconds = 120;
+ StockPrice initialStockPrice = null;
+ DateTime fireAt;
+ DateTime exitTime = context.CurrentUtcDateTime.Add(stockInfo.TimeLimit);
+ while (context.CurrentUtcDateTime < exitTime)
+ {
+ StockPrice currentStockPrice = await 
+context.CallActivityAsync<StockPrice>("GetStockPrice", stockInfo);
+ if (initialStockPrice == null)
+ {
+ initialStockPrice = currentStockPrice;
+ fireAt = context.CurrentUtcDateTime.AddSeconds(checkIntervalSeconds);
+ await context.CreateTimer(fireAt, CancellationToken.None);
+ continue;
+ }
+ decimal percentageChange = (initialStockPrice.Price - currentStockPrice.Price) /
+ ((initialStockPrice.Price + currentStockPrice.Price) / 2);
+ if (Math.Abs(percentageChange) >= stockInfo.PercentageChange)
+ {
+ // Change threshold detected
+ await context.CallActivityAsync("NotifyStockPercentageChange", 
+currentStockPrice);
+ break;
+ }
+ // Sleep til next polling interval
+ fireAt = context.CurrentUtcDateTime.AddSeconds(checkIntervalSeconds);
+ await context.CreateTimer(fireAt, CancellationToken.None);
+ }
+}

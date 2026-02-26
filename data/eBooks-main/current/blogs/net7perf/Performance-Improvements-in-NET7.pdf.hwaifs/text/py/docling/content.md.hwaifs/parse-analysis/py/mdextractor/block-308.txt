@@ -1,0 +1,1 @@
+} } [Benchmark] public SortedSet<string> SortedSetCopy() { return new SortedSet<string>(_set, StringComparer.OrdinalIgnoreCase); }

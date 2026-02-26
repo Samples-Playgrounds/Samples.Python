@@ -1,0 +1,1 @@
+{ "eShopRedisPassword": "e$h0p0nD@pr" }

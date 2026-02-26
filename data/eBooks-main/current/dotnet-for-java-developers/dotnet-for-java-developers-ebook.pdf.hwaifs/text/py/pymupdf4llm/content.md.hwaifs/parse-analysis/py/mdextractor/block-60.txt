@@ -1,0 +1,5 @@
+foreach (var url in allDotnetBlogUrls) {
+        // do something with the blog URL
+    // note we don't have the entire Blog, just the Url
+    }
+    }

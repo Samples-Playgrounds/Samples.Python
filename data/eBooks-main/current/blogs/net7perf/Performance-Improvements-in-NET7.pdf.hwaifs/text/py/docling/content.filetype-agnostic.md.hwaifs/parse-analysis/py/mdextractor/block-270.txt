@@ -1,0 +1,1 @@
+private static readonly char[] WhiteSpaceChecks = new char[] { ' ' , '\u00A0' }; ... int wsIndex = target.IndexOfAny(WhiteSpaceChecks, targetPosition); if (wsIndex < 0) { return false; }

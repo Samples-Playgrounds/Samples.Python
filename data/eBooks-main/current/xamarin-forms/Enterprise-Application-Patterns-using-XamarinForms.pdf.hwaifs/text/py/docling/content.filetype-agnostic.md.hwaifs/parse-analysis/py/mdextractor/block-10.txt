@@ -1,0 +1,1 @@
+<ListView> <ListView.Behaviors> <behaviors:EventToCommandBehavior EventName="ItemTapped" Command="{Binding OrderDetailCommand}" EventArgsConverter="{StaticResource ItemTappedEventArgsConverter}" />

@@ -1,0 +1,1 @@
+[HttpGet] public ActionResult Index() { return Json(new { Message = "Hello World!" }); }

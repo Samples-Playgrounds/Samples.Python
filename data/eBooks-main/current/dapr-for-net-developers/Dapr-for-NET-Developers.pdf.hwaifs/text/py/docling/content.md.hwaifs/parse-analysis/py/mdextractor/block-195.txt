@@ -1,0 +1,1 @@
+integrationEvent.Street, integrationEvent.City, integrationEvent.ZipCode, integrationEvent.State, integrationEvent.Country, integrationEvent.Basket); } else { _logger.LogWarning( "Invalid IntegrationEvent - RequestId is missing - {@IntegrationEvent}", integrationEvent); } }

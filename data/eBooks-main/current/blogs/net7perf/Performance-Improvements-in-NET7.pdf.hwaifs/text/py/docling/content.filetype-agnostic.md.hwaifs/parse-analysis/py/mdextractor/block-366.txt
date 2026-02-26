@@ -1,0 +1,1 @@
+long timestamp = Stopwatch.GetTimestamp(); ... TimeSpan elapsed = Stopwatch.GetElapsedTime(timestamp);

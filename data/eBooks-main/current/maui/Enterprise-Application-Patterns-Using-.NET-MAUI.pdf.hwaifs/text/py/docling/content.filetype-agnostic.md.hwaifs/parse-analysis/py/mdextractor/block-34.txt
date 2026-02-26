@@ -1,0 +1,1 @@
+private async Task NavigateAsync(string url) { // Omitted for brevity. if (!string . IsNullOrWhiteSpace(accessToken)) {

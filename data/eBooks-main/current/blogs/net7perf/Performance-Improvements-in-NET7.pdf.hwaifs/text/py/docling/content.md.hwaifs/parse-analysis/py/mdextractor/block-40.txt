@@ -1,0 +1,1 @@
+static class Utilities { internal static readonly TimeSpan s_defaultTimeout = AppContext.GetData("REGEX_DEFAULT_MATCH_TIMEOUT") is TimeSpan timeout ? timeout : Timeout.InfiniteTimeSpan; internal static readonly bool s_hasTimeout = s_defaultTimeout != Timeout.InfiniteTimeSpan; }

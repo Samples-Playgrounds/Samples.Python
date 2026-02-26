@@ -1,0 +1,9 @@
+01/deploymentTemplate.json#",
+ "contentVersion": "",
+ "apiProfile": "",
+ "parameters": { },
+ "variables": { },
+ "functions": [ ],
+ "resources": [ ],
+ "outputs": { }
+}

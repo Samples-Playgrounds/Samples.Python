@@ -1,0 +1,1 @@
+:::{custom-style=CodeBox} json { "clientId": "<GUID>", "clientSecret": "<GUID>", "subscriptionId": "<GUID>", "tenantId": "<GUID>", ... } :::

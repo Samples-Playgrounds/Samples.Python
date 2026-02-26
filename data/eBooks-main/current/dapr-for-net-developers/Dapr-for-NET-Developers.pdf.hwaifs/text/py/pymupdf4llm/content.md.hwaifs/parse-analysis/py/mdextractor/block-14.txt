@@ -1,0 +1,2 @@
+Open the *docker-compose.yml* file again and examine its contents. Visual Studio has
+updated the **Docker Compose** file. Now both services are included:

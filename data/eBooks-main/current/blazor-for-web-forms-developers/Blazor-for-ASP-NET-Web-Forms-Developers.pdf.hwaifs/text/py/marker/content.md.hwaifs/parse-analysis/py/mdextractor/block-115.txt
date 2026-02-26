@@ -1,0 +1,9 @@
+// stores the claim in the cookie
+ ClaimsIdentity id = new ClaimsIdentity();
+ id.AddClaim(new Claim(ClaimTypes.Country, "Canada"));
+ user.AddIdentity(id);
+ // save the claim in the database
+ await MyUserManager.AddClaimAsync(identityUser, new Claim(ClaimTypes.Country,
+"Canada"));
+ }
+}

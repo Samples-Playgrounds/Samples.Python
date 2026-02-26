@@ -1,0 +1,7 @@
+// RIGHT ACCORDING TO DDD--CODE AT THE APPLICATION LAYER OR COMMAND HANDLERS
+// The code in command handlers or WebAPI controllers, related only to application stuff
+// There is NO code here related to OrderItem object's business logic
+myOrder.AddOrderItem(productId, productName, pictureUrl, unitPrice, discount, units);
+// The code related to OrderItem params validations or domain rules should
+// be WITHIN the AddOrderItem method.
+//...

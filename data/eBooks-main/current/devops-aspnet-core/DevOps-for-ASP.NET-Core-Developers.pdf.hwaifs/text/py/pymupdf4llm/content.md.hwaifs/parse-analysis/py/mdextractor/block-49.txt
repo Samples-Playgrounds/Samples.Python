@@ -1,0 +1,7 @@
+76 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
+
+
+1. A new workflow file is created in your _.github/workflows_ folder.
+
+2. Select **Start Commit** on the upper right to save the default workflow. You can commit to the
+main branch.

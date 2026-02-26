@@ -1,0 +1,1 @@
+[Benchmark] [Arguments("abc")] public void Scan(ReadOnlySpan<char> input) { for (int i = 0; i < input.Length; i++) { Check(input[i]); } }

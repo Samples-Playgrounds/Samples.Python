@@ -1,0 +1,1 @@
+# docker-compose.override.yml version : '3.4' services : # Other services locations-api : environment : # Other settings -ConnectionString=${ESHOP_AZURE_COSMOSDB:-mongodb://nosqldata}

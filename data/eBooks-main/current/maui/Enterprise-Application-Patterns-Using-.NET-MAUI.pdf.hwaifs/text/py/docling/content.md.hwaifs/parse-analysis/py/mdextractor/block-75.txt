@@ -1,0 +1,1 @@
+[RelayCommand] private async Task SignInAsync() { await IsBusyFor( async () => { var loginSuccess = await _appEnvironmentService.IdentityService.SignInAsync(); if (loginSuccess) { await NavigationService.NavigateToAsync("//Main/Catalog"); }

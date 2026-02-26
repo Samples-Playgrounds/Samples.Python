@@ -1,0 +1,1 @@
+private StringBuilder _builder = new StringBuilder(Sonnet); [Benchmark] public void Replace() { _builder.Replace('?' , '!'); _builder.Replace('!' , '?'); }

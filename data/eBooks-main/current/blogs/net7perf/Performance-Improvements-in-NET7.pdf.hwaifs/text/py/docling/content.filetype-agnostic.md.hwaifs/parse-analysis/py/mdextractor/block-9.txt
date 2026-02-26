@@ -1,0 +1,1 @@
+jg short M00_L01 mov edx,eax M00_L00: mov eax,edx ret M00_L01: jmp short M00_L00 ; Total bytes of code 17

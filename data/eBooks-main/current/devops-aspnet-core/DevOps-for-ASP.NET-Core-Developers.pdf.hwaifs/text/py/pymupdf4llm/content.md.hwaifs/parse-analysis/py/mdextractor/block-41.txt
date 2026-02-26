@@ -1,0 +1,26 @@
+Your workflow is deploying the same binary to each environment. This concept is important to ensure
+that the binaries you test in one environment are the same that you deploy to the next. However,
+environments typically have different settings like database connection strings. You want to ensure
+that the DEV app is using DEV settings and the PROD app is using PROD settings.
+
+
+For this simple app, there’s no database connection string. However, there’s an example configuration
+setting that you can modify for each environment. If you open the _simple-feed-_
+_reader/SimpleFeedReader/appsettings.json_ file, you’ll see that the configuration includes a setting for
+the Header text on the Index page:
+
+
+To show how environment configuration can be handled, you’re going to add a secret to each
+environment and then substitute that value into the settings as you deploy.
+
+
+**Add environment secrets**
+
+
+1. On your repository, select **Settings**  - **Environments**  - **PRE-PROD** .
+
+2. Select **Add secret** and add a secret called index_header with the value PRE PROD News
+Reader. Select **Add secret** .
+
+
+71 CHAPTER 3 | Continuous integration and deployment with Azure DevOps

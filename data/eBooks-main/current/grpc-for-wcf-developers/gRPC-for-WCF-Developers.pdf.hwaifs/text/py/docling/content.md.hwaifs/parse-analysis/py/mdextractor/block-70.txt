@@ -1,0 +1,1 @@
+public class Portfolio { public int Id { get ; set ; } public Guid TraderId { get ; set ; } public List<PortfolioItem> Items { get ; set ; } } public class PortfolioItem { public int Id { get ; set ; } public int ShareId { get ; set ; } public int Holding { get ; set ; } public decimal Cost { get ; set ; } }

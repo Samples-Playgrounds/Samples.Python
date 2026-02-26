@@ -1,0 +1,1 @@
+private string _input = string . Concat(Enumerable.Repeat("1234567890" , 100 _ 000)); // "One miiilliiiion digits" [Benchmark] public BigInteger Parse() => BigInteger.Parse(_input);

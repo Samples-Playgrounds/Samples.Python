@@ -1,0 +1,1 @@
+; *** .NET 6 *** ; Program.BitSet(Int32) test dl,1 setne al

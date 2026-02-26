@@ -1,0 +1,5 @@
+Exception parsing markdown with mdextractor = ../../../../../../data/eBooks-main/current/architecting-modern-web-apps-azure/Architecting-Modern-Web-Applications-with-ASP.NET-Core-and-Azure.pdf.hwaifs/text/py/marker/content.md : [Errno 2] No such file or directory: '../../../../../../data/eBooks-main/current/architecting-modern-web-apps-azure/Architecting-Modern-Web-Applications-with-ASP.NET-Core-and-Azure.pdf.hwaifs/text/py/marker/content.md'Traceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/transformations/markdown-parsing/mdextractor/api_parse_analyze_markdown_mdextractor.py", line 27, in api_parse_analyze_markdown_mdextractor
+    with open(source, 'r') as f:
+         ~~~~^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../../../data/eBooks-main/current/architecting-modern-web-apps-azure/Architecting-Modern-Web-Applications-with-ASP.NET-Core-and-Azure.pdf.hwaifs/text/py/marker/content.md'

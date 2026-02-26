@@ -1,0 +1,1 @@
+// Program.cs builder . Services . AddHttpClient<IBasketService , BasketService>() . SetHandlerLifetime(TimeSpan . FromMinutes(5)) //Set lifetime to five minutes . AddPolicyHandler(GetRetryPolicy());

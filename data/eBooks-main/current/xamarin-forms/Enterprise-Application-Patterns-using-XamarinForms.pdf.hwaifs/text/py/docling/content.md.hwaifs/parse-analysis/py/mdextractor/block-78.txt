@@ -1,0 +1,1 @@
+var authToken = Settings.AuthAccessToken; Order = await _ordersService.GetOrderAsync(Convert.ToInt32(order.OrderNumber), authToken);

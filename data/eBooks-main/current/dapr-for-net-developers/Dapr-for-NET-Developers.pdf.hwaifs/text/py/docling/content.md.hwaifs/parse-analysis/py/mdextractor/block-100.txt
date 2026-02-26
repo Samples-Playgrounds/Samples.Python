@@ -1,0 +1,1 @@
+curl -X POST http://localhost:3500/v1.0/actors/<actorType>/<actorId>/reminders/<name> \ -H "Content-Type: application/json" \ -d '{ "dueTime": "0h5m0s0ms", "period": "" }'

@@ -1,0 +1,1 @@
+namespace TraderSys.Portfolios.Protos; public partial class PortfolioItem { public static PortfolioItem FromRepositoryModel(PortfolioData.Models.PortfolioItem

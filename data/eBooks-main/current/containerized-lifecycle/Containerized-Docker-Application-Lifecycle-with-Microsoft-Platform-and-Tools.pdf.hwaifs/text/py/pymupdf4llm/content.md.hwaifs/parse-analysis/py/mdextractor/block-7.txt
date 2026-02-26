@@ -1,0 +1,2 @@
+az acr create --name exploredocker --resource-group explore-docker-aks-rg --sku basic
+--admin-enabled

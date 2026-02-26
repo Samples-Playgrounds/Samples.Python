@@ -1,0 +1,11 @@
+public class LocationsContext
+{
+ private readonly IMongoDatabase _database = null;
+ public LocationsContext(IOptions<LocationSettings> settings)
+ {
+ var client = new MongoClient(settings.Value.ConnectionString);
+ if (client != null)
+ _database = client.GetDatabase(settings.Value.Database);
+ }
+ public IMongoCollection<Locations> Locations
+ {

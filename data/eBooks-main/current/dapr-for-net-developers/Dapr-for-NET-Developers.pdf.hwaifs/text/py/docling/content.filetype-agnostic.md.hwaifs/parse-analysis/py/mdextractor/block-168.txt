@@ -1,0 +1,1 @@
+services.AddSingleton<ConnectionMultiplexer>(sp => { var settings = spGetRequiredService<IOptions<BasketSettings>>().Value; var configuration = ConfigurationOptions.Parse(settingsConnectionString, true); configuration.ResolveDns = true; return ConnectionMultiplexer.Connect(configuration); });

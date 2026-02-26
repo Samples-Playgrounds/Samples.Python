@@ -1,0 +1,1 @@
+; Program.Sum() push      rdi push      rsi push      rbp push      rbx sub       rsp,28 mov       rsi,[rcx+8] xor       edi,edi mov       rcx,rsi xor       edx,edx

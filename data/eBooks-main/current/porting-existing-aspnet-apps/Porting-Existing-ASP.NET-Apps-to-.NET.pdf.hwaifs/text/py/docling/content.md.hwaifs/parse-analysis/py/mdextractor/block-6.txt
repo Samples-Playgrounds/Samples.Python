@@ -1,0 +1,1 @@
+using Microsoft.Extensions.Configuration; public class TestModel : PageModel { private readonly IConfiguration _configuration; public TestModel(IConfiguration configuration) { _configuration= configuration; } public ContentResult OnGet() {

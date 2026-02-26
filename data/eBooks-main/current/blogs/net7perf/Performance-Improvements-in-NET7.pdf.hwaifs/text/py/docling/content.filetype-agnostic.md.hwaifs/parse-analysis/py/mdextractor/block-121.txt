@@ -1,0 +1,1 @@
+; Program.Compute1() mov eax,50 ret ; Total bytes of code 6

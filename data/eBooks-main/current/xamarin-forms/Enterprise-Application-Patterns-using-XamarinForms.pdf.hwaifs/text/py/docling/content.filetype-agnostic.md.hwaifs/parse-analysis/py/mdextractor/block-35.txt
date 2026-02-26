@@ -1,0 +1,1 @@
+private async Task NavigateAsync(string url) { ... await NavigationService.NavigateToAsync<MainViewModel>(); await NavigationService.RemoveLastFromBackStackAsync(); ... }

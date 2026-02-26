@@ -1,0 +1,10 @@
+protected IContainer RegisterContainer()
+{
+ var builder = new ContainerBuilder();
+ builder.RegisterControllers(typeof(MvcApplication).Assembly);
+ var mockData = bool.Parse(ConfigurationManager.AppSettings["UseMockData"]);
+ builder.RegisterModule(new ApplicationModule(mockData));
+ var container = builder.Build();
+ DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
+ return container;
+}

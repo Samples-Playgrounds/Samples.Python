@@ -1,0 +1,6 @@
+async Task PlaySongsAsync(int[] ids)
+    {
+      foreach (var id in ids)
+    {
+        try
+    {

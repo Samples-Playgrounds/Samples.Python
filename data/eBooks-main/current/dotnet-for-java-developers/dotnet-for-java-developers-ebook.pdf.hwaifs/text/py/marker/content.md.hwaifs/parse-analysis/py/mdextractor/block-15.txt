@@ -1,0 +1,8 @@
+var people = new List<Person>() {
+ new Person("Ted", "Neward", 45),
+ new Person("Charlotte", "Neward", 39),
+ new Person("Michael", "Neward", 24),
+ new Person("Matthew", "Neward", 18),
+ new Person("Beth", "Massi", 39),
+ new Person("Dustin", "Campbell", 43)
+ };

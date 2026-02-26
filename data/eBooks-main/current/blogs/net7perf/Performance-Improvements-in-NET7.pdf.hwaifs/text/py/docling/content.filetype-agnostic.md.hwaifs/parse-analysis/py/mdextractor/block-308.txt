@@ -1,0 +1,1 @@
+; Program.M1(System.Object) sub rsp,28 mov rcx,offset MT_System.Int32[] call qword ptr [System.Runtime.CompilerServices.CastHelpers.IsInstanceOfAny(Void*, System.Object)] test rax,rax setne al movzx eax,al add rsp,28 ret ; Total bytes of code 34

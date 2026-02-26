@@ -1,0 +1,5 @@
+public static TelemetryClient telemetry = new TelemetryClient()
+{
+ InstrumentationKey = 
+Environment.GetEnvironmentVariable("APPINSIGHTS_INSTRUMENTATIONKEY")
+};

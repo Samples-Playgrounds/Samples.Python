@@ -1,0 +1,1 @@
+BinaryPrimitives.WriteUInt64LittleEndian(MemoryMarshal.AsBytes(destination), 0x65007500720054); // "True"

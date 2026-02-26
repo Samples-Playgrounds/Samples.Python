@@ -1,0 +1,13 @@
+if (builder.Configuration.GetValue<bool>("UseMockData"))
+{
+ builder.Services.AddSingleton<ICatalogService, CatalogServiceMock>();
+}
+else
+{
+ builder.Services.AddScoped<ICatalogService, CatalogService>();
+ builder.Services.AddScoped<IDatabaseInitializer<CatalogDBContext>,
+CatalogDBInitializer>();
+ builder.Services.AddSingleton<CatalogItemHiLoGenerator>();
+ builder.Services.AddScoped(_ => new
+CatalogDBContext(builder.Configuration.GetConnectionString("CatalogDBContext")));
+}

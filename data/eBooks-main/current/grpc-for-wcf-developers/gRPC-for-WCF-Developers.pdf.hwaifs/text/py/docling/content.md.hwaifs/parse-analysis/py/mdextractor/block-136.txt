@@ -1,0 +1,1 @@
+docker push <myorg>/stockdata:1.0.0

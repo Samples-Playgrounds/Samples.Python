@@ -1,0 +1,1 @@
+public async Task<ObservableCollection<CatalogItem>> GetCatalogAsync() { UriBuilder builder = new UriBuilder(GlobalSetting . Instance . CatalogEndpoint); builder . Path = "api/v1/catalog/items"; string uri = builder . ToString(); CatalogRoot? catalog = await _requestProvider . GetAsync<CatalogRoot>(uri); return catalog?.Data; }

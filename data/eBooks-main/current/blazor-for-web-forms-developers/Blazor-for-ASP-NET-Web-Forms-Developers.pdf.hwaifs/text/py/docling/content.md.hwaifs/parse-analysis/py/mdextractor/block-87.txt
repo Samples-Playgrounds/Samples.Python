@@ -1,0 +1,1 @@
+public class MyConfig { public MyConfigSection section0 { get; set;} public MyConfigSection section1 { get ; set ;} } public class MyConfigSection {

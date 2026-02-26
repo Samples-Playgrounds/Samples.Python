@@ -1,0 +1,1 @@
+@inject IHttpClientFactory factory ... @code { protected override async Task OnInitializedAsync() { var client = factory.CreateClient("github"); var response = await client.GetAsync("repos/dotnet/docs/issues"); response.EnsureStatusCode(); var content = await response.Content.ReadAsStringAsync(); } }

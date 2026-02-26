@@ -1,0 +1,1 @@
+[Benchmark] [Arguments(1)] public char GetChar(int i) { const string Text = "hello";

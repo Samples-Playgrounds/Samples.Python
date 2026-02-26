@@ -1,0 +1,1 @@
+public static class Settings { ... private const string IdUrlBase = "url_base"; private static readonly string UrlBaseDefault = GlobalSetting.Instance.BaseEndpoint; ... public static string UrlBase { get { return AppSettings.GetValueOrDefault<string>(IdUrlBase, UrlBaseDefault); } set { AppSettings.AddOrUpdateValue<string>(IdUrlBase, value); } } }

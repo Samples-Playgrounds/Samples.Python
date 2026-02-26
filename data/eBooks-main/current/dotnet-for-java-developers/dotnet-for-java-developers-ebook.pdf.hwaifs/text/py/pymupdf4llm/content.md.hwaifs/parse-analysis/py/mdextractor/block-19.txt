@@ -1,0 +1,12 @@
+}
+      public void SayHello(string recipient)
+    {
+    Console.WriteLine("Hello, {0}, I, {1}, say hello.",
+    recipient, FirstName);
+    }
+    }
+
+    class Program
+    {
+      static void Main(string[] args)
+    {

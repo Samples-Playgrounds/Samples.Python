@@ -1,0 +1,1 @@
+; *** .NET 6 *** ; Program.ResetLowestSetBit(Int32) lea eax,[rdx+0FFFF] and eax,edx ret ; Total bytes of code 6 ; *** .NET 7 *** ; Program.ResetLowestSetBit(Int32) blsr eax,edx ret ; Total bytes of code 6

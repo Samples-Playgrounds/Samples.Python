@@ -1,0 +1,1 @@
+Page page = Activator.CreateInstance(pageType) as Page; return page; }

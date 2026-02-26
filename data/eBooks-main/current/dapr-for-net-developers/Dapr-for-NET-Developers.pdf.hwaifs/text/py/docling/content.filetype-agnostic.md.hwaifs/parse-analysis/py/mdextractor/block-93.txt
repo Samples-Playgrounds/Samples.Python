@@ -1,0 +1,1 @@
+public int Increment() { int newValue; lock (_lockObject) { var currentValue = GetValue(); newValue = currentValue + 1; SaveValue(newValue); } return newValue; }

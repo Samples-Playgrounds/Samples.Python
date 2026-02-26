@@ -1,0 +1,1 @@
+Action disposeAction; IDisposable? disposable = null; ... if (disposable != null) { disposeAction = () => disposable.Dispose(); }

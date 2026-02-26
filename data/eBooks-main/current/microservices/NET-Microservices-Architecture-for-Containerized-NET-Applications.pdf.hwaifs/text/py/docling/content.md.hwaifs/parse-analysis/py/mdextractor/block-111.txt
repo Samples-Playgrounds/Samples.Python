@@ -1,0 +1,1 @@
+public class OrderStartedDomainEvent : INotification { public string UserId { get ; } public string UserName { get ; } public int CardTypeId { get ; } public string CardNumber { get ; } public string CardSecurityNumber { get ; }

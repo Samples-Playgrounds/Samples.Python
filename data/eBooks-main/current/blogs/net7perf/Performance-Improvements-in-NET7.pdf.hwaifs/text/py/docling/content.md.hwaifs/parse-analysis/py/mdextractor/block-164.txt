@@ -1,0 +1,1 @@
+Directory: C:\nativeaotexample\bin\Release\net7.0\win-x64\publish Mode                 LastWriteTime         Length Name -a---           8/27/2022  6:19 PM        2061824 nativeaotexample.exe -a---           8/27/2022  6:19 PM       14290944 nativeaotexample.pdb

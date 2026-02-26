@@ -1,0 +1,1 @@
+:::{custom-style=CodeBox} csharp public CollectionController( ILogger<CollectionController> logger, IFineCalculator fineCalculator, VehicleRegistrationService vehicleRegistrationService, DaprClient daprClient) { // ... } :::

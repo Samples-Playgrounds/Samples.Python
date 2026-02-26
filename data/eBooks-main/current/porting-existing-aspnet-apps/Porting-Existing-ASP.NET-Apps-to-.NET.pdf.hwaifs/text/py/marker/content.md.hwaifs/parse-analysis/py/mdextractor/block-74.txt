@@ -1,0 +1,12 @@
+builder.Services.AddCors(options =>
+{
+ options.AddPolicy(MyAllowSpecificOrigins,
+ builder =>
+ builder.WithOrigins("http://example.com", "http://www.contoso.com")
+ .AllowAnyHeader()
+ .AllowAnyMethod());
+});
+builder.Services.AddMvc(options =>
+{
+ options.Filters.Add(new SampleGlobalActionFilter());
+}).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

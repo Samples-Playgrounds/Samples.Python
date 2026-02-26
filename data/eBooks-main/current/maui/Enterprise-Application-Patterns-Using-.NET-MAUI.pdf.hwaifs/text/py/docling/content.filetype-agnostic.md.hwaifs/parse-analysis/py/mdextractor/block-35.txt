@@ -1,0 +1,1 @@
+_settingsService . AuthAccessToken = accessToken; _settingsService . AuthIdToken = authResponse . IdentityToken; await NavigationService . NavigateToAsync("//Main/Catalog"); } }

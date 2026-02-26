@@ -1,0 +1,13 @@
+async Task PlaySongsAsync(int[] ids)
+{
+ foreach (var id in ids)
+ {
+ try
+ {
+ var data = await service.GetEncodedDataAsync(id);
+ var song = await Task.Run(() => Decode(data));
+ await PlayAsync(song);
+ }
+ catch (Exception e) { /* just skip the song */ }
+ }
+}

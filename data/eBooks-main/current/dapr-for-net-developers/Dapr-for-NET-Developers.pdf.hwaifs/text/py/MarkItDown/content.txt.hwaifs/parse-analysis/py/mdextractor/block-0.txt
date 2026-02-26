@@ -1,0 +1,11 @@
+[Topic(“pubsub”, “speedingviolations”)] [Route(“collectfine”)]
+[HttpPost] public async Task CollectFine(SpeedingViolation speedingViolation, [FromServices]
+DaprClient daprClient) { // …
+
+// get owner info (Dapr service invocation)
+var vehicleInfo =
+_vehicleRegistrationService.GetVehicleInfo(speedingViolation.VehicleId).Result;
+
+// ...
+
+}

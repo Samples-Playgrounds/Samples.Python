@@ -1,0 +1,1 @@
+environment : -ConnectionString=Server=sqldata;Database=OrderingDb;… ports : -"82:80" extra_hosts : -"CESARDLBOOKVHD:10.0.75.1" depends_on : -sqldata sqldata : image : mcr.microsoft.com/mssql/server:latest environment : -SA_PASSWORD=Pass@word -ACCEPT_EULA=Y ports : -"5433:1433"

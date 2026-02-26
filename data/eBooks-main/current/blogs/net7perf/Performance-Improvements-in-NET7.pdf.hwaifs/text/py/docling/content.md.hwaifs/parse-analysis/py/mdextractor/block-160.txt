@@ -1,0 +1,1 @@
+; *** .NET 6 *** ; Program.DivideByVectorCount(UInt32) mov       eax,edx mov       rdx,rax sar       rdx,3F and       rdx,1F add       rax,rdx sar       rax,5 ret ; Total bytes of code 21 ; *** .NET 7 *** ; Program.DivideByVectorCount(UInt32) mov       eax,edx shr       rax,5 ret ; Total bytes of code 7

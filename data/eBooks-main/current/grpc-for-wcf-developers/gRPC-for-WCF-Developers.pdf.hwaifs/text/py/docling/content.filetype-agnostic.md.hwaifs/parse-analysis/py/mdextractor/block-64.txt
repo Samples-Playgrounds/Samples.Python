@@ -1,0 +1,1 @@
+message GetAllRequest { string trader_id = 1; } message GetAllResponse { repeated Portfolio portfolios = 1; } service Portfolios { rpc Get(GetRequest) returns (GetResponse);

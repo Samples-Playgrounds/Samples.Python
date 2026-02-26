@@ -1,0 +1,1 @@
+<ul> <li> <a asp-area="Products" asp-controller="Home" asp-action="About"> Products/Home/About </a> </li> <li> <a asp-area="Services" asp-controller="Home" asp-action="About"> Services About </a> </li> <li> <a asp-area="" asp-controller="Home" asp-action="About"> /Home/About </a> </li> </ul>

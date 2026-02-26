@@ -1,0 +1,1 @@
+public static IEnumerable<ApiResource> GetApis() { return new List<ApiResource> { new ApiScope("orders", "Orders Service"), new ApiScope("basket", "Basket Service"), new ApiScope("webhooks", "Webhooks registration Service"), }; }

@@ -1,0 +1,1 @@
+[Benchmark] public Color DarkOrange() => Color.DarkOrange;

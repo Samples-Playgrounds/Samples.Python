@@ -1,0 +1,1 @@
+// ConfigureServices services.AddMvc(o => o.Conventions.Add( new FeatureConvention())); // Program.cs builder.Services.AddMvc(o => o.Conventions.Add( new FeatureConvention()));

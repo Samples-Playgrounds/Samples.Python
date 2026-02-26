@@ -1,0 +1,1 @@
+; Program.Scan(System.String, Int32, Int32) sub rsp,28 cmp r8d,r9d jge short M00_L01 mov eax,[rdx+8] M00_L00: cmp r8d,eax jae short M00_L02 inc r8d cmp r8d,r9d jl short M00_L00 M00_L01: add rsp,28 ret M00_L02: call CORINFO_HELP_RNGCHKFAIL int 3 ; Total bytes of code 36

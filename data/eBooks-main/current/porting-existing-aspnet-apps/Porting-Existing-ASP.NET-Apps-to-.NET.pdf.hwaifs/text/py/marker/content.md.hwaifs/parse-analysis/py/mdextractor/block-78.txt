@@ -1,0 +1,6 @@
+[HttpDelete("{id}")]
+public IActionResult Delete(int id)
+{
+ var brandToDelete = _service.GetCatalogBrands().FirstOrDefault(x => x.Id == id);
+ if (brandToDelete == null)
+ {

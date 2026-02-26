@@ -1,0 +1,1 @@
+private WebProxy _proxy = new WebProxy("http://doesntexist", BypassOnLocal: false , new [] { @"\.microsoft.com", @"\.dot.net", @"\.bing.com" }); private Uri _destination = new Uri("https://docs.microsoft.com/dotnet/api/system.net.webproxy"); [Benchmark] public bool IsBypassed() => _proxy.IsBypassed(_destination);

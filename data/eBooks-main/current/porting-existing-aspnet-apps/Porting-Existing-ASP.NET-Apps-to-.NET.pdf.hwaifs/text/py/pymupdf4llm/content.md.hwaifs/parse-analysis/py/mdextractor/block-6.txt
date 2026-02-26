@@ -1,0 +1,7 @@
+iwr
+https://gist.githubusercontent.com/aienabled/0bce5e4b17118122f2772e7c9218bf9c/raw/7789
+53f89882877a7124894b47dccfb1ba3e80a0/Convert-ToPackageReference.ps1 -OutFile ConvertToPackageReference.ps1
+iwr
+https://gist.githubusercontent.com/aienabled/0bce5e4b17118122f2772e7c9218bf9c/raw/7789
+53f89882877a7124894b47dccfb1ba3e80a0/Convert-ToPackageReference.xsl -OutFile ConvertToPackageReference.xsl
+./Convert-ToPackageReference.ps1 | Out-Null

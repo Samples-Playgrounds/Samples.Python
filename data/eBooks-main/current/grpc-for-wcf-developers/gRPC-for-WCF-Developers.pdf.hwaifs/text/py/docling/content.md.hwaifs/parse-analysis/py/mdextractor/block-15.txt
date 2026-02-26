@@ -1,0 +1,1 @@
+syntax "proto3"; message Stock { reserved 3, 4; int32 id = 1; string symbol = 2; }

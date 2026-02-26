@@ -1,0 +1,1 @@
+private TimeSpan _ts = TimeSpan.FromMilliseconds(12345); [Benchmark] public string XmlConvertToString() => XmlConvert.ToString(_ts);

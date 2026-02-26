@@ -1,0 +1,7 @@
+// Program.cs
+builder.Services.AddSingleton<IClientStore, CustomClientStore>();
+builder.Services.AddIdentityServer()
+ .AddSigningCredential("CN=sts")
+ .AddInMemoryApiResources(MyApiResourceProvider.GetAllResources())
+ .AddAspNetIdentity<ApplicationUser>();
+//...

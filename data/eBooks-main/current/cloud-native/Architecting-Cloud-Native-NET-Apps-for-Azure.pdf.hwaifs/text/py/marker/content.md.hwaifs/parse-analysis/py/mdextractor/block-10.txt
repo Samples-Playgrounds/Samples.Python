@@ -1,0 +1,13 @@
+"query": {
+ "match": {
+ "user": "jill@example.com"
+ }
+ },
+ "aggregations": {
+ "top_10_pages": {
+ "terms": {
+ "field": "page",
+ "size": 10
+ }
+ }
+ }

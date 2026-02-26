@@ -1,0 +1,10 @@
+:::
+
+
+4. Commit the file.
+
+
+5. Let the workflow run and approve the deployment to PROD once the approval is reached.
+
+
+6. You should see the following headers on the index page for both sites:

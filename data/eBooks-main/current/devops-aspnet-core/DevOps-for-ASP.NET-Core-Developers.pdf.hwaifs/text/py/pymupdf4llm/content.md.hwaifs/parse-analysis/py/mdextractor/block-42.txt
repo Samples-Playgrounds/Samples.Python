@@ -1,0 +1,5 @@
+1. Repeat these steps to add a secret called index_header with the value PROD News Reader for
+the PROD environment.
+
+2. If you select **Settings**  - **Secrets** in the repository, you’ll see the changes. They should look
+something like this:

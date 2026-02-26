@@ -1,0 +1,1 @@
+private int[] _values = Enumerable.Range(0, 1000).ToArray(); [Benchmark] [Arguments(0, 0, 1000)] public int LastIndexOf(int arg, int offset, int count) { int[] values = _values; for (int i = offset + count - 1; i >= offset; i--) if (values[i] == arg) return i; return 0; }

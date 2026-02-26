@@ -1,0 +1,2 @@
+<location path="login.aspx">
+ <system.web>

@@ -1,0 +1,1 @@
+curl http://localhost:3500/v1.0/state/statestore/basket1

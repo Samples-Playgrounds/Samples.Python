@@ -1,0 +1,1 @@
+basket-api : image : eshop/basket-api environment : -ConnectionString=sqldata ports : -"5103:80" depends_on : -sqldata sqldata : environment : -SA_PASSWORD=[PLACEHOLDER] -ACCEPT_EULA=Y ports : -"5434:1433" basketdata : image : redis

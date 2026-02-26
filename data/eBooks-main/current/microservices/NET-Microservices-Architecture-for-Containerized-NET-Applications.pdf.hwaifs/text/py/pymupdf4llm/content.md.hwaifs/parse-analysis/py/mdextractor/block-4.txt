@@ -1,0 +1,1 @@
+RUN powershell add-windowsfeature web-asp-net45

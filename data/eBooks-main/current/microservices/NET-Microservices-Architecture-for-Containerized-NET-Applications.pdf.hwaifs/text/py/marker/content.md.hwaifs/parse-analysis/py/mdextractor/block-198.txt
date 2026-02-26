@@ -1,0 +1,25 @@
+public class CartController : Controller
+{
+ //…
+ public async Task<IActionResult> Index()
+ {
+ try
+ {
+ var user = _appUserParser.Parse(HttpContext.User);
+ //Http requests using the Typed Client (Service Agent)
+ var vm = await _basketSvc.GetBasket(user);
+ return View(vm);
+ }
+ catch (BrokenCircuitException)
+ {
+ // Catches error when Basket.api is in circuit-opened mode
+ HandleBrokenCircuitException();
+ }
+ return View();
+ }
+ private void HandleBrokenCircuitException()
+ {
+ TempData["BasketInoperativeMsg"] = "Basket Service is inoperative, please try later 
+on. (Business message due to Circuit-Breaker)";
+ }
+}

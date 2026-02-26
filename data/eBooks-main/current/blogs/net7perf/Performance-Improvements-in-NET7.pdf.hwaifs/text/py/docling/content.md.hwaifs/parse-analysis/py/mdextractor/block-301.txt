@@ -1,0 +1,1 @@
+private static readonly string s_haystack = new string('a', 1_000_000); private Regex _regex = new Regex(@"([\s\S]*)", RegexOptions.Compiled); [Benchmark] public Match Match() => _regex.Match(s_haystack);

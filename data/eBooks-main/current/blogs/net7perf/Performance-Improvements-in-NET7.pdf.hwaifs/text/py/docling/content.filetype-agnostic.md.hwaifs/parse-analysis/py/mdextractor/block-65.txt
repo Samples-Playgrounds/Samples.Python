@@ -1,0 +1,1 @@
+; Assembly listing for method Program:DoWork(IPrinter) ; Emitting BLENDED_CODE for X64 CPU with AVX -Windows ; Tier-1 compilation ; optimized code ; optimized using profile data

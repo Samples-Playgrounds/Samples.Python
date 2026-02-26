@@ -1,0 +1,1 @@
+private BigInteger _bi1 = BigInteger.Parse(string . Concat(Enumerable.Repeat("9876543210" , 100))); private BigInteger _bi2 = BigInteger.Parse(string . Concat(Enumerable.Repeat("1234567890" , 100))); private BigInteger _bi3 = BigInteger.Parse(string . Concat(Enumerable.Repeat("12345" , 10))); [Benchmark] public BigInteger ModPow() => BigInteger.ModPow(_bi1, _bi2, _bi3);

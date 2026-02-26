@@ -1,0 +1,1 @@
+private Action _instance = new C().InstanceMethod; private Action _static = C.StaticMethod; [Benchmark(Baseline = true)] public void InvokeInstance() => _instance(); [Benchmark] public void InvokeStatic() => _static(); private sealed class C { public static void StaticMethod() { } public void InstanceMethod() { } }

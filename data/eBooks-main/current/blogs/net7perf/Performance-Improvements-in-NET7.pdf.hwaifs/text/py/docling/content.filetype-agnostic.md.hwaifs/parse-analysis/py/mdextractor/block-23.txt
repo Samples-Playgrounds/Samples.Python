@@ -1,0 +1,1 @@
+class Program { static void Main() { var sw = new System.Diagnostics . Stopwatch(); while (true) { sw.Restart(); for (int trial = 0; trial < 10 _ 000; trial++) { int count = 0; for (int i = 0; i < char . MaxValue; i++) if (IsAsciiDigit((char)i)) count++; } sw.Stop(); Console.WriteLine(sw.Elapsed); } static bool IsAsciiDigit(char c) => (uint)(c -'0') <= 9; } }

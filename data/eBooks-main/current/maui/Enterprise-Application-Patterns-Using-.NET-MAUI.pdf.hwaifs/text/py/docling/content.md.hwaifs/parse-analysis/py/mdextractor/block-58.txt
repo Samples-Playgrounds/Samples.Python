@@ -1,0 +1,1 @@
+public async Task<TResult> GetAsync<TResult>(string uri, string token = "") { HttpClient httpClient = GetOrCreateHttpClient(token); HttpResponseMessage response = await httpClient.GetAsync(uri); await HandleResponse(response); TResult result = await response.Content.ReadFromJsonAsync<TResult>(); return result; }

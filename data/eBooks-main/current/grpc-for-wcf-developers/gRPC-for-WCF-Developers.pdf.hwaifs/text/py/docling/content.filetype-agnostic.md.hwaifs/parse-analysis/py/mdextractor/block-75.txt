@@ -1,0 +1,1 @@
+var response = new GetResponse { Portfolio = await _repository . GetAsync(request . TraderId , request . PortfolioId) };

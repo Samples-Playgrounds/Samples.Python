@@ -1,0 +1,5 @@
+<authorization>
+ <allow users="*" />
+ </authorization>
+ </system.web>
+</location>

@@ -1,0 +1,11 @@
+public class Product
+{
+ public int Id { get; set; }
+ [Required]
+ public string Name { get; set; }
+ [MaxLength(4000)]
+ public string Description { get; set; }
+ [Range(0, 99999,99)]
+ [DataType(DataType.Currency)]
+ public decimal Price { get; set; }
+}

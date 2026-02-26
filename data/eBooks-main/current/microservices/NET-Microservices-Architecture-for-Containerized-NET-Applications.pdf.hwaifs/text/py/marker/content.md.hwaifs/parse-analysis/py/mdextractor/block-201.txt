@@ -1,0 +1,2 @@
+// Program.cs from .NET 7 Web Api sample
+app.MapHealthChecks("/hc");

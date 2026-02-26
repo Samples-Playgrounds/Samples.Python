@@ -1,0 +1,1 @@
+[Benchmark] [Arguments('a')] public bool IsInSet(char c) => c < 128 && ("\0\0\0\u03FF\uFFFE\u87FF\uFFFE\u07FF"[c >> 4] & (1 << (c & 0xF))) != 0;

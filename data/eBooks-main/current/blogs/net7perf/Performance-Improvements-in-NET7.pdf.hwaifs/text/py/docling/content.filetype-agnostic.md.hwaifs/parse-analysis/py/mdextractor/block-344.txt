@@ -1,0 +1,1 @@
+private readonly string[] _strings = new[] { "Access-Control-Allow-Credentials" , "Access -Control -Allow -Origin" , "Cache -Control" , "Connection" , "Date" , "Server" }; [Benchmark] public HttpResponseHeaders GetHeaders() { var headers = new HttpResponseMessage().Headers; foreach (string s in _strings) { headers.TryAddWithoutValidation(s, s); } return headers; }

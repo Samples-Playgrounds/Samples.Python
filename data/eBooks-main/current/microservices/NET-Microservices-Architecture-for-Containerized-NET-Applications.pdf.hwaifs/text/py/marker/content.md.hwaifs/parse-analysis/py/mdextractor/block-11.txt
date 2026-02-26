@@ -1,0 +1,4 @@
+var catalogItem = new CatalogItem() {CatalogTypeId=2, CatalogBrandId=2,
+ Name="Roslyn T-Shirt", Price = 12};
+_context.Catalog.Add(catalogItem);
+_context.SaveChanges();

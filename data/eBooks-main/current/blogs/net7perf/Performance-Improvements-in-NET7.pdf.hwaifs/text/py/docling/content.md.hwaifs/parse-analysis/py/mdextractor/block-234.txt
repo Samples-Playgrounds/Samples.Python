@@ -1,0 +1,1 @@
+[Benchmark(Baseline = true )] public ReadOnlySpan<byte> WithEncoding() => Encoding.UTF8.GetBytes("test"); [Benchmark] public ReadOnlySpan<byte> Withu8() => "test"u8;

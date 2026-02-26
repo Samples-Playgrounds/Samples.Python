@@ -1,0 +1,1 @@
+var request = daprClient.CreateInvokeMethodRequest("orderservice", "submit", order); request.Headers.Authorization = new AuthenticationHeaderValue("bearer", token);

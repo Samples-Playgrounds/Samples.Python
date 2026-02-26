@@ -1,0 +1,1 @@
+[Benchmark] [Arguments( "" , "" , "" , "" )] public bool AllAreStrings(object o1, object o2, object o3, object o4) => o1 is string && o2 is string && o3 is string && o4 is string;

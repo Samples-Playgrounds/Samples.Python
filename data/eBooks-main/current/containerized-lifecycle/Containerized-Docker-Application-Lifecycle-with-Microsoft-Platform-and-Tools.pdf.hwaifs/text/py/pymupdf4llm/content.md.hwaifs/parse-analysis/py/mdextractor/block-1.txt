@@ -1,0 +1,1 @@
+az aks create --resource-group explore-docker-aks-rg --name explore-docker-aks --nodevm-size Standard_B2s --node-count 1 --generate-ssh-keys --location westeurope

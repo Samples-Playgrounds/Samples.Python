@@ -1,0 +1,28 @@
+You now have an end-to-end build and deploy workflow, including approvals. One more change you
+can make is to add a manual trigger to the workflow so that the workflow can be triggered from
+within the **Actions** tab of the repository.
+
+
+1. Navigate to the _.github/workflows/dotnet.yml_ file and select the pencil icon to edit the file.
+
+
+2. Add a new trigger between on and push on lines 3 and 4:
+
+
+:::{custom-style=CodeBox} yml on:  workflow_dispatch:  # <-- this is the new line  push: :::
+
+
+3. The workflow_dispatch trigger displays a Run workflow button in the **Actions** tab of the
+repository— _but only if the trigger is defined in the default branch_ . However, once this trigger is
+defined in the workflow, you can select the branch for the run.
+
+
+4. Commit the file.
+
+
+70 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
+
+
+5. To see the **Run workflow** button, select the **Actions** tab. Select the .NET workflow in the list
+of workflows. At the top of the list of runs, you’ll see the **Run workflow** button. If you select
+it, you can choose the branch to run the workflow against and queue it:

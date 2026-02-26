@@ -1,0 +1,1 @@
+message ActionMessage { oneof action { AddSymbolRequest add = 1; RemoveSymbolRequest remove = 2; } } message AddSymbolRequest { string symbol = 1; } message RemoveSymbolRequest { string symbol = 1; }

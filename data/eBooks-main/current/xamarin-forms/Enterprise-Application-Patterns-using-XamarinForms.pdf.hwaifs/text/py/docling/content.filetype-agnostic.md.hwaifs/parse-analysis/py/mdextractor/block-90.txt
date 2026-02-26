@@ -1,0 +1,1 @@
+private async Task CheckoutAsync() { ... await _basketService.ClearBasketAsync(_shippingAddress.Id.ToString(), authToken); ... }

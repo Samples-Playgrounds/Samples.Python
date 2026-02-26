@@ -1,0 +1,6 @@
+#docker-compose.yml file
+#...
+ basketdata:
+ image: redis
+ expose:
+ - "6379"

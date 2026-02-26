@@ -1,0 +1,5 @@
+1. Enter _codeql/codeql-config.yml_ as the name. This creates the file in a folder. Paste in the
+following code:
+
+
+:::{custom-style=CodeBox}

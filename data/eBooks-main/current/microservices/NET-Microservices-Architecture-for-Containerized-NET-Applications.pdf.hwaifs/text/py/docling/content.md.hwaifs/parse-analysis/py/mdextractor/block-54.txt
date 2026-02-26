@@ -1,0 +1,1 @@
+// Update Product from the Catalog microservice // public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem productToUpdate) { var catalogItem = await _catalogContext.CatalogItems.SingleOrDefaultAsync(i => i.Id == productToUpdate.Id);

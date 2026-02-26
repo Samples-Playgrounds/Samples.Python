@@ -1,0 +1,1 @@
+public class OrderDetailViewModel : ViewModelBase { private IOrderService _ordersService; public OrderDetailViewModel(IOrderService ordersService)

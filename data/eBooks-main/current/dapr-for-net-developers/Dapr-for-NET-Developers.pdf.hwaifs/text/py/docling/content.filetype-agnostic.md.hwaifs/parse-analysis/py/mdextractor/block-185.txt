@@ -1,0 +1,1 @@
+key: Smtp.User -name: password secretKeyRef: name: Smtp.Password key: Smtp.Password -name: skipTLSVerify value: true auth: secretStore: eshop-secretstore scopes: -ordering-api

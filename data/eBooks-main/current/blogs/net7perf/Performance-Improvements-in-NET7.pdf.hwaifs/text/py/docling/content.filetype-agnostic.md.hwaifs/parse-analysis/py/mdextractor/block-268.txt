@@ -1,0 +1,1 @@
+private static readonly char[] s_whitespaces = new char[] { ' ' , ' \t' , ' \n' , ' \r' }; ... switch (attr.Value . Trim(s_whitespaces)) { case "preserve": return Preserve; case "default": return Default; }

@@ -1,0 +1,1 @@
+public Nullable<int> Get1() { if (_value == null) return null; return _value.Prop; } public Nullable<int> Get2() { C value = _value; if (value == null) return null; return value.Prop; }

@@ -1,0 +1,1 @@
+static bool Contains(ReadOnlySpan<byte> haystack, byte needle) { for (int i = 0; i < haystack.Length; i++) { if (haystack[i] == needle) { return true ; } } return false ; }

@@ -1,0 +1,1 @@
+movzx     eax,al ret ; Total bytes of code 10 ; *** .NET 7 *** ; Program.BitSet(Int32) mov       eax,edx and       eax,1 ret ; Total bytes of code 6

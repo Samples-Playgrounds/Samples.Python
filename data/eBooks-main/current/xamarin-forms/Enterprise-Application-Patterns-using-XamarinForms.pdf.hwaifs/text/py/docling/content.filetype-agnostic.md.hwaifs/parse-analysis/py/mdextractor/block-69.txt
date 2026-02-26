@@ -1,0 +1,1 @@
+// Add CSRF token to protect against cross-site request forgery attacks. var currentCSRFToken = Guid.NewGuid().ToString("N"); dic.Add("state" , currentCSRFToken); var authorizeUri = authorizeRequest.Create(dic); return authorizeUri; } · Remember me?

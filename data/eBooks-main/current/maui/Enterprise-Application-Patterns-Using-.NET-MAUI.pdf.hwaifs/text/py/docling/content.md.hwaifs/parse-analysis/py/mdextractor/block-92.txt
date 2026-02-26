@@ -1,0 +1,1 @@
+public partial class SampleViewModel : ObservableObject { public INavigationService NavigationService { get ; set ; } [ObservableProperty] private string _name; [ObservableProperty] bool _isValid; [RelayCommand] private Task SettingsAsync() { return NavigationService.NavigateToAsync("Settings"); } [RelayCommand] private void Validate() { IsValid = !string.IsNullOrEmpty(Name); } }

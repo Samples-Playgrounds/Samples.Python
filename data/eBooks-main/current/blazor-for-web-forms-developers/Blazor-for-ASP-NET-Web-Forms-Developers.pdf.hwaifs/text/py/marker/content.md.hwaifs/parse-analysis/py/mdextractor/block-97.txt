@@ -1,0 +1,3 @@
+public string key0 { get; set; }
+ public string key1 { get; set; }
+}

@@ -1,0 +1,4 @@
+<PasswordBox @bind-Password="password" />
+@code {
+ string password;
+}

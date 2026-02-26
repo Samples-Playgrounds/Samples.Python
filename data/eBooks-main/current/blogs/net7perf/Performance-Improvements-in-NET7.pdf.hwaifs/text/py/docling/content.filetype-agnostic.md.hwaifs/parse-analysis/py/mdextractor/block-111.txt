@@ -1,0 +1,1 @@
+public static TimeSpan FromSeconds(double value) { double ticks = value * 10 _ 000 _ 000; return ticks == long . MaxValue ? TimeSpan.MaxValue : new TimeSpan((long)ticks); }

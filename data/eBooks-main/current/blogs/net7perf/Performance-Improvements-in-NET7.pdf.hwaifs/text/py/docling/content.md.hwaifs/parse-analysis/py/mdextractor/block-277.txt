@@ -1,0 +1,1 @@
+[Benchmark] [Arguments("abc", 0, 3)] public void Scan(string input, int beginning, int length) { for (int i = beginning; i < length; i++) { Check(input[i]); } } [MethodImpl(MethodImplOptions.AggressiveInlining)] private void Check(char c) { }

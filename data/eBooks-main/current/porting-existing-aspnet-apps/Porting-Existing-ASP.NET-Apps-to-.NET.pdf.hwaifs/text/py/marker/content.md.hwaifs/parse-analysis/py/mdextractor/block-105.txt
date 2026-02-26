@@ -1,0 +1,4 @@
+<rule name="NetCoreProxy">
+ <match url="(.*)>" />
+ <action type="Rewrite" url="http://servername/{R:1}" />
+</rule>

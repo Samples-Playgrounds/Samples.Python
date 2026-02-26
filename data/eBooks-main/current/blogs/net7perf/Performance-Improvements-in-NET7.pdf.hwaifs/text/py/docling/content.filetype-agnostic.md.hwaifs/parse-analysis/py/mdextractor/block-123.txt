@@ -1,0 +1,1 @@
+; Program.Compute2() sub rsp,28 call qword ptr [7FFCB8DAF9A8]

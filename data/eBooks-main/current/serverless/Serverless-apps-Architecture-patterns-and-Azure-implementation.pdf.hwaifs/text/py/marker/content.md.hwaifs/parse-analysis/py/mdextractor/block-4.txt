@@ -1,0 +1,12 @@
+[{
+ "id": "03e24f21-a955-43cc-8921-1f61a6081ce0",
+ "eventType": "myCustomEvent",
+ "subject": "foo/bar/12",
+ "eventTime": "2018-09-22T10:36:01+00:00",
+ "data": {
+ "favoriteColor": "blue",
+ "favoriteAnimal": "panther",
+ "favoritePlanet": "Jupiter"
+ },
+ "dataVersion": "1.0"
+}]

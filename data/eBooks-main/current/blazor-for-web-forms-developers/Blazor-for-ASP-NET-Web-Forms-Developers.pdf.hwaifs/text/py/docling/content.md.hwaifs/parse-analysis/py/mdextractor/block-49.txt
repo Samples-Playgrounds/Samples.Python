@@ -1,0 +1,1 @@
+<SimpleListView Items="messages" TItem="string"> <Heading> <h1>My list</h1> </Heading> <ItemTemplate Context="message"> <p>The message is: @message</p> </ItemTemplate> </SimpleListView> The output of this component looks like this: < h1 >My list</ h1 > < ul > < li >< p >The message is: message1</ p ></ li > < li >< p >The message is: message2</ p ></ li > < ul >

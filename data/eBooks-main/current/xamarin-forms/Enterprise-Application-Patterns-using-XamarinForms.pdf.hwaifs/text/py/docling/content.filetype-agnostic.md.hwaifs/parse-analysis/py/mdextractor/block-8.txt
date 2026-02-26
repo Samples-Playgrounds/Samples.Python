@@ -1,0 +1,1 @@
+<Grid Grid.Column="1" HorizontalOptions="Center"> <Label Text="REGISTER" TextColor="Gray"/> <Grid.GestureRecognizers> <TapGestureRecognizer Command="{Binding RegisterCommand}" NumberOfTapsRequired="1" /> </Grid.GestureRecognizers> </Grid>

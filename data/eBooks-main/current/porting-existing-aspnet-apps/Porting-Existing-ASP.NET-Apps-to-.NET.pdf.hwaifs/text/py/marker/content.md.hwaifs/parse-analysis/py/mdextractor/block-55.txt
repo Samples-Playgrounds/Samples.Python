@@ -1,0 +1,7 @@
+// add using Microsoft.Extensions.Configuration
+ public CatalogDBInitializer(CatalogItemHiLoGenerator indexGenerator,
+ IConfiguration configuration)
+ {
+ this.indexGenerator = indexGenerator;
+ useCustomizationData = configuration.GetValue<bool>("UseCustomizationData");
+ }

@@ -1,0 +1,1 @@
+public override Task<GetResponse> Get(GetRequest request, ServerCallContext context) { if (!Guid.TryParse(request.TraderId, out var traderId)) { throw new RpcException( new Status(StatusCode.InvalidArgument, "traderId must be a UUID")); } return base .Get(request, context); }

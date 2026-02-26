@@ -1,0 +1,16 @@
+{
+ "DownstreamPathTemplate": "/api/{version}/{everything}",
+ "DownstreamScheme": "http",
+ "DownstreamHostAndPorts": [
+ {
+ "Host": "basket-api",
+ "Port": 80
+ }
+ ],
+ "UpstreamPathTemplate": "/api/{version}/b/{everything}",
+ "UpstreamHttpMethod": [ "POST", "PUT", "GET" ],
+ "AuthenticationOptions": {
+ "AuthenticationProviderKey": "IdentityApiKey",
+ "AllowedScopes": []
+ }
+}

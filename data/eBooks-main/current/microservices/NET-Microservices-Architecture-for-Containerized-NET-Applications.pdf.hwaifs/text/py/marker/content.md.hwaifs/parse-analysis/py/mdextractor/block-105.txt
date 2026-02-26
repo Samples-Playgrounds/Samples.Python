@@ -1,0 +1,6 @@
+var one = new Address("1 Microsoft Way", "Redmond", "WA", "US", "98052");
+var two = new Address("1 Microsoft Way", "Redmond", "WA", "US", "98052");
+Console.WriteLine(EqualityComparer<Address>.Default.Equals(one, two)); // True
+Console.WriteLine(object.Equals(one, two)); // True
+Console.WriteLine(one.Equals(two)); // True
+Console.WriteLine(one == two); // True

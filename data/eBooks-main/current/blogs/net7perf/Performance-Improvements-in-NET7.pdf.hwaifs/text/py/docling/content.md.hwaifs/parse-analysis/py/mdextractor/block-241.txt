@@ -1,0 +1,1 @@
+private static string CreateSortString(PropertyDescriptor property, ListSortDirection direction) { var resultString = new StringBuilder(); resultString.Append('['); resultString.Append(property.Name); resultString.Append(']'); if (ListSortDirection.Descending == direction) { resultString.Append(" DESC"); } return resultString.ToString(); }

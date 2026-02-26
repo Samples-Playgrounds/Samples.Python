@@ -1,0 +1,1 @@
+; *** .NET 6 *** ; Program.Shift(UInt64, Int32) mov ecx,r8d mov rax,rdx shl rax,cl ret ; Total bytes of code 10 ; *** .NET 7 *** ; Program.Shift(UInt64, Int32) shlx rax,rdx,r8 ret ; Total bytes of code 6

@@ -1,0 +1,1 @@
+@page "/" @inject NavigationManager NavigationManager <button @onclick="Navigate">Navigate</button> @code { void Navigate() { NavigationManager.NavigateTo("counter"); } }

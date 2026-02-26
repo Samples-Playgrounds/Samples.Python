@@ -1,0 +1,1 @@
+var metadata = new Dictionary<string, string> { ["version_id"] = "3" }; Dictionary<string, string> secrets = await daprClient.GetSecretAsync("secret-store", "eshopsecrets", metadata); string connectionString = secrets["customerdb"];

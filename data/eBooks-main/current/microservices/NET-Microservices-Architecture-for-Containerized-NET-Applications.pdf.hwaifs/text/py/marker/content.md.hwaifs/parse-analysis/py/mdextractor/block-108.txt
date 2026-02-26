@@ -1,0 +1,15 @@
+// Part of the OrderEntityTypeConfiguration.cs class
+//
+public void Configure(EntityTypeBuilder<Order> orderConfiguration)
+{
+ orderConfiguration.ToTable("orders", OrderingContext.DEFAULT_SCHEMA);
+ orderConfiguration.HasKey(o => o.Id);
+ orderConfiguration.Ignore(b => b.DomainEvents);
+ orderConfiguration.Property(o => o.Id)
+ .ForSqlServerUseSequenceHiLo("orderseq", OrderingContext.DEFAULT_SCHEMA);
+ //Address value object persisted as owned entity in EF Core 2.0
+ orderConfiguration.OwnsOne(o => o.Address);
+ orderConfiguration.Property<DateTime>("OrderDate").IsRequired();
+ //...Additional validations, constraints and code...
+ //...
+}

@@ -1,0 +1,1 @@
+public class TimerActor : Actor, ITimerActor { // ... public Task StopTimerAsync(string name) { return UnregisterTimerAsync(name); } }

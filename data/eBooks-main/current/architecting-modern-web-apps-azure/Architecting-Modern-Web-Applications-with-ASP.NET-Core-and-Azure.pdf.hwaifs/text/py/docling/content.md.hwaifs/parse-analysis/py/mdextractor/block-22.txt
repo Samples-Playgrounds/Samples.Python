@@ -1,0 +1,1 @@
+if ((await _authorRepository.ListAsync()).All(a => a.Id != id)) { return NotFound(id); } if (!ModelState.IsValid) { return BadRequest(ModelState); } author.Id = id; await _authorRepository.UpdateAsync(author); return Ok(); }

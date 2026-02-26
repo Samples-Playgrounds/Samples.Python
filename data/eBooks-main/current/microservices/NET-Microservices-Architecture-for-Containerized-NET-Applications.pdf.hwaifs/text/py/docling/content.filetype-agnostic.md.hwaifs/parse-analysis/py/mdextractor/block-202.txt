@@ -1,0 +1,1 @@
+// Program.cs from WebStatus(Watch Dog) service // // Registers required services for health checks builder . Services . AddHealthChecksUI(); // build the app, register other middleware app.UseHealthChecksUI(config => config . UIPath = "/hc-ui");

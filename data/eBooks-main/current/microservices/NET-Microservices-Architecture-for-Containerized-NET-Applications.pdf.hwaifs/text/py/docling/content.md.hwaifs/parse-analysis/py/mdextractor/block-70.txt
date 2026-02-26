@@ -1,0 +1,1 @@
+catalog-api : environment : -ASPNETCORE_ENVIRONMENT=Development -ASPNETCORE_URLS=http://0.0.0.0:80 -ConnectionString=YOUR_VALUE -... Other Environment Variables

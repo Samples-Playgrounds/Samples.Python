@@ -1,0 +1,5 @@
+- name: Update config uses: Azure/appservice-settings@v1
+with: app-name: ${{ env.app-name }}  app-settings-json: |  [  {  "name": "UI:Index:Header",
+"value": "${{ secrets.INDEX_HEADER }}“,”slotSetting”: true } ]
+
+ - name: az cli logout # <-- this exists already

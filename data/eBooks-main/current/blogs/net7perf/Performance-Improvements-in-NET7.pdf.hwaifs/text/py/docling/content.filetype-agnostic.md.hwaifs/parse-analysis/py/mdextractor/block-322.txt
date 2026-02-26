@@ -1,0 +1,1 @@
+private SocketAddress _addr = new IPEndPoint(IPAddress.Parse("123.123.123.123"), 80).Serialize(); private SocketAddress _addr_same = new IPEndPoint(IPAddress.Parse("123.123.123.123"), 80).Serialize(); [Benchmark] public bool Equals_Same() => _addr.Equals(_addr_same);

@@ -1,0 +1,5 @@
+1. The deployment should only take a few seconds. Once it has completed, the URL for the
+PROD environment will update.
+
+
+69 CHAPTER 3 | Continuous integration and deployment with Azure DevOps

@@ -1,0 +1,1 @@
+apiVersion: dapr.io/v1alpha1 kind: Configuration metadata: name: dapr-config namespace: eshop spec: tracing: samplingRate: "1" secrets: scopes: -storeName: eshop-azurekv-secret-store defaultAccess: allow deniedSecrets: [ "redisPassword" , "apiKey" ]

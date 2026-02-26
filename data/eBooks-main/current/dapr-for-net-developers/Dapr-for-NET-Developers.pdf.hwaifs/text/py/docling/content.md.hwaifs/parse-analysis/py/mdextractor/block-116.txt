@@ -1,0 +1,1 @@
+public Task<int> IncrementAsync(string scoreId)

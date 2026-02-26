@@ -1,0 +1,1 @@
+<Entry IsPassword="True" Text="{Binding Password.Value, Mode=TwoWay}"> <!-- Omitted for brevity... --> <Entry.Behaviors> <mct:EventToCommandBehavior EventName="TextChanged" Command="{Binding ValidateCommand}" /> </Entry.Behaviors> <!-- Omitted for brevity... --> </Entry>

@@ -1,0 +1,1 @@
+<asp:Button ID="ClickMeButton" runat="server" Text="Click me!" OnClick="ClickMeButton_Click" /> Counter.ascx.cs public partial class Counter : System . Web . UI . UserControl { protected void ClickMeButton_Click(object sender , EventArgs e) { Console . WriteLine("The button was clicked!"); } }

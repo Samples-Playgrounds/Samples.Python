@@ -1,0 +1,1 @@
+public void FormatChangeNotification(ChangeNotification change) { if (change.Instrument.Is(Stock.Descriptor)) { FormatStock(change.Instrument.Unpack<Stock>()); } else if (change.Instrument.Is(Currency.Descriptor)) { FormatCurrency(change.Instrument.Unpack<Currency>()); } else { throw new ArgumentException("Unknown instrument type");

@@ -1,0 +1,1 @@
+public async Task<GetPortfolioResponse> GetPortfolio(GetPortfolioRequest request, ServerCallContext context) { var requesterHeader = context.RequestHeaders.FirstOrDefault(e => e.Key == "Requester"); if (requesterHeader != null ) { _logger.LogInformation($"Request from {requesterHeader.Value}"); } // ... }

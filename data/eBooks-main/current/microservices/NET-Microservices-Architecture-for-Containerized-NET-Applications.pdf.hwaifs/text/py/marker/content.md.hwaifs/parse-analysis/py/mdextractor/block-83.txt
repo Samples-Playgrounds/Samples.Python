@@ -1,0 +1,24 @@
+namespace OcelotApiGw
+{
+ public class Startup
+ {
+ private readonly IConfiguration _cfg;
+ public Startup(IConfiguration configuration) => _cfg = configuration;
+ public void ConfigureServices(IServiceCollection services)
+ {
+ var identityUrl = _cfg.GetValue<string>("IdentityUrl");
+ var authenticationProviderKey = "IdentityApiKey";
+ //…
+ services.AddAuthentication()
+ .AddJwtBearer(authenticationProviderKey, x =>
+ {
+ x.Authority = identityUrl;
+ x.RequireHttpsMetadata = false;
+ x.TokenValidationParameters = new
+Microsoft.IdentityModel.Tokens.TokenValidationParameters()
+ {
+ ValidAudiences = new[] { "orders", "basket", "locations",
+"marketing", "mobileshoppingagg", "webshoppingagg" }
+ };
+ });
+ //...

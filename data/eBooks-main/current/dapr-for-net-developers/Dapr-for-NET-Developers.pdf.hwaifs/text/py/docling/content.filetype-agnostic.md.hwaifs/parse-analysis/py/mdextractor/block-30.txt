@@ -1,0 +1,1 @@
+var (weatherForecast, etag) = await daprClient.GetStateAndETagAsync<WeatherForecast>("statestore", city); // ... make some changes to the retrieved weather forecast var result = await daprClient.TrySaveStateAsync("statestore", city, weatherForecast, etag);

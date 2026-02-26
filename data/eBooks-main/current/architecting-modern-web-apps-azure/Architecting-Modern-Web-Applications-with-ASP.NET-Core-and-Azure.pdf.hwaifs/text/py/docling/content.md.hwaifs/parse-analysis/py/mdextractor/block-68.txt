@@ -1,0 +1,1 @@
+public class BasicWebTests : IClassFixture<WebApplicationFactory<Program>> { protected readonly HttpClient _client; public BasicWebTests(WebApplicationFactory<Program> factory) { _client = factory.CreateClient(); }

@@ -1,0 +1,1 @@
+kubectl create secret generic [k8s_spn_secret_name] --fromfile=[pfx_certificate_file_local_path] -n eshop

@@ -1,0 +1,1 @@
+private Guid _guid1 = Guid.Parse("0aa2511d-251a-4764-b374-4b5e259b6d9a"); private Guid _guid2 = Guid.Parse("0aa2511d-251a-4764-b374-4b5e259b6d9a"); [Benchmark] public bool GuidEquals() => _guid1 == _guid2;

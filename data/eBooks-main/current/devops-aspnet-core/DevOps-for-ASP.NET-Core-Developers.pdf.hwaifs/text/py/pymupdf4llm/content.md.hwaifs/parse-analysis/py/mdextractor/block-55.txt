@@ -1,0 +1,37 @@
+1. Select **Commit to main** at bottom of the editor to commit the file.
+
+2. Edit the CodeQL workflow to use the new configuration file. Navigate to
+_.github/workflows/codeql-analysis.yml_ and select the pencil icon. Add a new property to the
+with section as shown below:
+
+:::{custom-style=CodeBox} yml  - name: Initialize CodeQL   uses: github/codeql-action/init@v1
+with:    languages: ${{ matrix.language }}    config-file: ./.github/codeql/codeql-config.yml # <-add this line :::
+
+
+1. Select **Start Commit** and commit to the main branch.
+
+#### **Review the security alerts**
+
+
+
+
+
+
+
+When the last CodeQL workflow run completes, you should see two issues in the **Security** tab:
+
+
+80 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
+
+
+_Figure 7: View security alerts._
+
+
+1. Select the first alert to open it.
+
+2. In this case, the alert is for a generated file that isn’t committed to the repository. For that
+reason, the preview is unavailable.
+
+3. Notice the tags that are applied. These tags can be used for filtering issues.
+
+4. Select **Show more** under the rule information to show help and recommendations.

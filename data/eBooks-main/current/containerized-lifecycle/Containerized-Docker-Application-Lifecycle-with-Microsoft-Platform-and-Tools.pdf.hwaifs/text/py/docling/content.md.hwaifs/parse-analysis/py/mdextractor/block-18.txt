@@ -1,0 +1,1 @@
+az aks browse --resource-group exploredocker-aks-rg --name explore-docker-aks

@@ -1,0 +1,1 @@
+[Params(100)] public int Count { get ; set ; } private static SortedSet<string> _ set ; [GlobalSetup] public void GlobalSetup() { _set = new SortedSet<string>(StringComparer.OrdinalIgnoreCase); for (int i = 0; i < Count; i++) { _set.Add(Guid.NewGuid().ToString());

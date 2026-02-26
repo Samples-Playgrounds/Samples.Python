@@ -1,0 +1,5 @@
+// Changing default behavior when client evaluation occurs to throw.
+ // Default in EFCore would be to log warning when client evaluation is done.
+ options.ConfigureWarnings(warnings => warnings.Throw(
+ RelationalEventId.QueryClientEvaluationWarning));
+});

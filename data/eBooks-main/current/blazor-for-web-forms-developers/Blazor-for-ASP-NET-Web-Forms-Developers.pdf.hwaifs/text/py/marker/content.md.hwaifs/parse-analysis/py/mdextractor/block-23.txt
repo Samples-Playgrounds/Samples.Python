@@ -1,0 +1,2 @@
+@page "/"
+<PageTitle>Home</PageTitle>

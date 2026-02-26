@@ -1,0 +1,1 @@
+"-app-id" , "catalog-api" , "-app-port" , "80" , "-components-path" , "/components" , "-config" , "/configuration/eshop-config.yaml" ] volumes: -"./dapr/components/:/components" -"./dapr/configuration/:/configuration"

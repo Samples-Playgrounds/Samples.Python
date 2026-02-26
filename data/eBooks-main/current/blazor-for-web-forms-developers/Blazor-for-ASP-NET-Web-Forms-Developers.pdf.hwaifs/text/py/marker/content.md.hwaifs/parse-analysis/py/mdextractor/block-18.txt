@@ -1,0 +1,6 @@
+<ul>
+@foreach (var item in items)
+{
+ <li>@item.Text</li>
+}
+</ul>

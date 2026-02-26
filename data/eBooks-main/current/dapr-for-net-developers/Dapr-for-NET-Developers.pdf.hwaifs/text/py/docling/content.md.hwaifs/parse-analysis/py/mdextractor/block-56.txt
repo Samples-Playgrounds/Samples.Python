@@ -1,0 +1,1 @@
+component: "consul" selfRegister: true

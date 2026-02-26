@@ -1,0 +1,4 @@
+builder.Services.AddMvc(options =>
+{
+ options.Filters.Add(typeof(CustomActionFilter));
+});

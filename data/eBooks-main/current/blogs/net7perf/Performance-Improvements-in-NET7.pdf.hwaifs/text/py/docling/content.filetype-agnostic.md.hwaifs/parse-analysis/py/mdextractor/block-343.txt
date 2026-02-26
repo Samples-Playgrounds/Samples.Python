@@ -1,0 +1,1 @@
+private static readonly string s_haystack = new HttpClient().GetStringAsync("https://www.gutenberg.org/files/1661/1661-0.txt").Result; [Benchmark] public int LastIndexOfAny() => s_haystack.AsSpan().LastIndexOfAny(';' , '_');

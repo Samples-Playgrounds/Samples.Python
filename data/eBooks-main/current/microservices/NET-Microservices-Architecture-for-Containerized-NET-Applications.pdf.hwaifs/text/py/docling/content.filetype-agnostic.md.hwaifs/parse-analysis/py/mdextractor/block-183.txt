@@ -1,0 +1,1 @@
+builder . Services . AddHttpClient<ICatalogService , CatalogService>(client => { client . BaseAddress = new Uri(builder . Configuration["BaseUrl"]); }) . AddPolicyHandler(GetRetryPolicy()) . AddPolicyHandler(GetCircuitBreakerPolicy());

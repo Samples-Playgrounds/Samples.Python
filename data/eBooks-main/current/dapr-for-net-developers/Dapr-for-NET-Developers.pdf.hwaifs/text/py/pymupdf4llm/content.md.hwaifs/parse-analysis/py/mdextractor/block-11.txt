@@ -1,0 +1,2 @@
+Visual Studio creates a *docker-compose.yml*file and a *.dockerignore* file in the
+**docker-compose** folder in the solution:

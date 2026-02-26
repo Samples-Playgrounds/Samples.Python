@@ -1,0 +1,1 @@
+public static IEnumerable<ApiResource> GetApis() { return new List<ApiResource> { new ApiResource("orders" , "Orders Service"), new ApiResource("basket" , "Basket Service") }; }

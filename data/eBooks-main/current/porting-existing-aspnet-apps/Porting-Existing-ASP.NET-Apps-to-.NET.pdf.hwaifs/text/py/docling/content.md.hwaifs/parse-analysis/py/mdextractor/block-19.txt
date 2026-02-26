@@ -1,0 +1,1 @@
+[HttpGet("api/products/{id}")] public async ActionResult<Product> Details(int id) { // ... }

@@ -1,0 +1,1 @@
+private void InitializeTypeCatalog(IEnumerable<Type> types) { Type[] arr = types.ToArray(); foreach (Type type in arr) { if (type == null) { throw ExceptionBuilder.CreateContainsNullElement(nameof(types)); } if (type.Assembly . ReflectionOnly) { throw new ArgumentException(SR.Format(SR.Argument_ElementReflectionOnlyType , nameof(types)), nameof(types)); } } _types = arr; }

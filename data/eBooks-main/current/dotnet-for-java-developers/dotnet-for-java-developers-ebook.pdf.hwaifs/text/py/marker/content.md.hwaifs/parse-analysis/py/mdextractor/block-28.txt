@@ -1,0 +1,6 @@
+using (var context = new BloggingContext())
+{
+ foreach (var blog in context.Blogs) {
+ // do something with the blog
+ }
+}

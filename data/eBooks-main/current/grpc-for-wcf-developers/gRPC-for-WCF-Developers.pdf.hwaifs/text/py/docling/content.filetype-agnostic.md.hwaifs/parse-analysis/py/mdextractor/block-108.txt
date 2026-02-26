@@ -1,0 +1,1 @@
+// app.UseRouting(); // Authenticate, then Authorize app.UseAuthentication(); app.UseAuthorization(); app.UseEndpoints(endpoints => { endpoints . MapGrpcService<PortfolioService>(); }); }

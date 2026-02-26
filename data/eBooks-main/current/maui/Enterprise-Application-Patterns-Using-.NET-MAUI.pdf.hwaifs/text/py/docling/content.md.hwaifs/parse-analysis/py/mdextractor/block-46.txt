@@ -1,0 +1,1 @@
+public bool Validate() { Errors = _validations ?.Where(v => !v.Check(Value)) ?.Select(v => v.ValidationMessage) ?.ToArray() ?? Enumerable.Empty<string>(); IsValid = !Errors.Any(); return IsValid; }

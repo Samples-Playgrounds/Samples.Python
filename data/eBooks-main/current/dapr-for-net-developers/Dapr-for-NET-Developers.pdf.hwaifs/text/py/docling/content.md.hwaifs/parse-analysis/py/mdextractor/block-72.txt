@@ -1,0 +1,1 @@
+[Topic("pubsub", "newOrder")] [HttpPost("/orders")] public async Task<ActionResult> CreateOrder(Order order)

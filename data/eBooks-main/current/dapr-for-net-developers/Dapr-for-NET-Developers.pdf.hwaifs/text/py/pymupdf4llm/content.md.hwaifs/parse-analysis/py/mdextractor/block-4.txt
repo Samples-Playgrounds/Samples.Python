@@ -1,0 +1,10 @@
+The updated code implements the following steps:
+
+- First a new [`DaprClient`]{custom-style=Code} instance is instantiated. This class
+enables you to interact with the Dapr sidecar.
+- From the state store, [`DaprClient.GetStateAsync`]{custom-style=Code} fetches the
+value for the [`counter`]{custom-style=Code} key. If the key doesn't exist, the
+default value for [`int`]{custom-style=Code} (which is [`0`]{custom-style=Code}) is
+returned.
+- The code then iterates, writing the [`counter`]{custom-style=Code} value to the
+console and saving an incremented value to the state store.

@@ -1,0 +1,2 @@
+1. Select **Review deployments**, select the **PROD** checkbox, optionally add a comment, and then
+select **Approve and deploy** to start the PROD job.

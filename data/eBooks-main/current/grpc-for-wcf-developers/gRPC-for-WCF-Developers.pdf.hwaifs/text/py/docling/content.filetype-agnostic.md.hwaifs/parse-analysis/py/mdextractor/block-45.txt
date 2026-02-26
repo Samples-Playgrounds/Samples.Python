@@ -1,0 +1,1 @@
+var metadata = new Metadata { { "Requester" , _clientName } }; var request = new GetPortfolioRequest { Id = portfolioId }; var response = await client . GetPortfolioAsync(request , metadata);

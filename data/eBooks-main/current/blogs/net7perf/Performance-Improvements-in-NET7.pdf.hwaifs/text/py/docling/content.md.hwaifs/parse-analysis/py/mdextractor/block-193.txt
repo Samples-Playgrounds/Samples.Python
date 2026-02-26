@@ -1,0 +1,1 @@
+private DayOfWeek[] _days = Enum.GetValues<DayOfWeek>(); [Benchmark] public bool AllDefined() { foreach (DayOfWeek day in _days) { if (!Enum.IsDefined(day)) { return false ; } } return true ; }

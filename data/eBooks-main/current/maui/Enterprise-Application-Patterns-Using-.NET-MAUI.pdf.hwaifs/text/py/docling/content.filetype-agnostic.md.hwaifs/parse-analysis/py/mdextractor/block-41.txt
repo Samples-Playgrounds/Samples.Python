@@ -1,0 +1,1 @@
+private bool Validate() { bool isValidUser = ValidateUserName(); bool isValidPassword = ValidatePassword(); return isValidUser && isValidPassword; } private bool ValidateUserName() { return _userName . Validate(); } private bool ValidatePassword() {

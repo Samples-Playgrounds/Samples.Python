@@ -1,0 +1,1 @@
+span = span.Slice(offset, str.Length -offset);

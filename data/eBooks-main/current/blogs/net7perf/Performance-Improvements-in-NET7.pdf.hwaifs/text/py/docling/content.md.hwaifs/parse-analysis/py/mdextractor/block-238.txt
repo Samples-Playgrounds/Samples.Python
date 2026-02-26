@@ -1,0 +1,1 @@
+private StringBuilder _sb = new StringBuilder(); [Benchmark] public void AppendSpan() { _sb.Clear(); _sb.Append("this".AsSpan()); _sb.Append("is".AsSpan()); _sb.Append("a".AsSpan()); _sb.Append("test".AsSpan()); _sb.Append(".".AsSpan()); }

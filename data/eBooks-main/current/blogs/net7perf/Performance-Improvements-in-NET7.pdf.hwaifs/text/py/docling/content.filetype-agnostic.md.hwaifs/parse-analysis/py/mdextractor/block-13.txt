@@ -1,0 +1,1 @@
+488D6C2420 lea rbp, [rsp+20H] G_M000_IG02: ;; offset=000AH 48B9D820400A8E010000 mov rcx, 0x18E0A4020D8 488B09 mov rcx, gword ptr [rcx] FF1583B31000 call [Console:WriteLine(String)] 90 nop G_M000_IG03: ;; offset=001EH 4883C420 add rsp, 32 5D pop rbp C3 ret ; Total bytes of code 36 Hello, world!

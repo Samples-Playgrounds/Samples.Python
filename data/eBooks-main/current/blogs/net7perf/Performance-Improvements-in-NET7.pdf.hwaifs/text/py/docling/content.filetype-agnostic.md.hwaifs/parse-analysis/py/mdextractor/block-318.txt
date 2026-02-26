@@ -1,0 +1,1 @@
+private string _path; [GlobalSetup] public void Setup() => _path = Path.GetRandomFileName(); [GlobalCleanup] public void Cleanup() => File.Delete(_path); [Benchmark] public void WriteAllText() => File.WriteAllText(_path, Sonnet);

@@ -1,0 +1,1 @@
+[Params(1024)] public int Length { get ; set ; } private int[] _arr; [GlobalSetup] public void Setup() => _arr = Enumerable.Range(1, Length).Reverse().ToArray(); [Benchmark(Baseline = true )] public void OrderBy() { foreach (int _ in _arr.OrderBy(x => x)) { } } [Benchmark] public void Order() { foreach (int _ in _arr.Order()) { } }

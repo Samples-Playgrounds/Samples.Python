@@ -1,0 +1,2 @@
+yum install rh-dotnet20 -y
+    scl enable rh-dotnet20 bash

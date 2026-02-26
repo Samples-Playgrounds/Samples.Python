@@ -1,0 +1,1 @@
+@page "/" @namespace BlazorApp3.Pages @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers @{ Layout = "_Layout"; }

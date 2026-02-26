@@ -1,0 +1,2 @@
+1. Select the **Actions** tab. In the left-hand tree, you’ll see a **CodeQL** node. Select this node to
+filter for CodeQL workflow runs.

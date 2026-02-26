@@ -1,0 +1,1 @@
+private byte[] _zeros = new byte[1024]; [Benchmark(Baseline = true )] public bool OpenCoded() { foreach (byte b in _zeros) { if (b != 0) { return false ; } } return true ; } [Benchmark] public bool IndexOfAnyExcept() => _zeros.AsSpan().IndexOfAnyExcept((byte)0) < 0;

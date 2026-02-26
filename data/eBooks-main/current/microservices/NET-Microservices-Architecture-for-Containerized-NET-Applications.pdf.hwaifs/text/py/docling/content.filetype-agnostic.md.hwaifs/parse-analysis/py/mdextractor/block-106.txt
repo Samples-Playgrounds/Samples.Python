@@ -1,0 +1,1 @@
+orderConfiguration . OwnsOne(p => p . OrderDetails , cb => { cb . OwnsOne(c => c . BillingAddress); cb . OwnsOne(c => c . ShippingAddress); }); //... //... public class Order { public int Id { get; set; } public OrderDetails OrderDetails { get; set; } } public class OrderDetails { public Address BillingAddress { get; set; }

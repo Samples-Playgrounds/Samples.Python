@@ -1,0 +1,5 @@
+The *docker-compose.yml* file has the following content:
+
+The *.dockerignore* file contains file types and extensions that you don't want Docker
+to include in the container. These files are associated with the development
+environment and source control and not the app or service you're deploying.

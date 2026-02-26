@@ -1,0 +1,9 @@
+var createOrderCommand = new CreateOrderCommand(eventMsg.Basket.Items,
+ eventMsg.UserId, eventMsg.City,
+ eventMsg.Street, eventMsg.State,
+ eventMsg.Country, eventMsg.ZipCode,
+ eventMsg.CardNumber,
+ eventMsg.CardHolderName,
+ eventMsg.CardExpiration,
+ eventMsg.CardSecurityNumber,
+ eventMsg.CardTypeId);

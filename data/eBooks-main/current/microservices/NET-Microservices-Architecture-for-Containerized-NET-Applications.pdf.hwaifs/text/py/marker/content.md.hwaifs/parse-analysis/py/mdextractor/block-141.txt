@@ -1,0 +1,18 @@
+Id = 20240011,
+ ProductId = "123456",
+ ProductName = ".NET T-Shirt",
+ UnitPrice = 25,
+ Units = 2,
+ Discount = 0;
+};
+//Using methods with domain logic within the entity. No anemic-domain model
+orderAggregate.AddOrderItem(orderItem1);
+// *** End of Domain Model Code ***
+// *** Infrastructure Code using Cosmos DB Client API ***
+Uri collectionUri = UriFactory.CreateDocumentCollectionUri(databaseName,
+ collectionName);
+await client.CreateDocumentAsync(collectionUri, orderAggregate);
+// As your app evolves, let's say your object has a new schema. You can insert
+// OrderV2 objects without any changes to the database tier.
+Order2 newOrder = GetOrderV2Sample("IdForSalesOrder2");
+await client.CreateDocumentAsync(collectionUri, newOrder);

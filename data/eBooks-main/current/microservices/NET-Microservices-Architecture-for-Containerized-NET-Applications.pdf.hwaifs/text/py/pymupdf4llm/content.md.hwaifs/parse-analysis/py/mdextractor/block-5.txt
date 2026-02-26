@@ -1,0 +1,3 @@
+docker-compose -f docker-compose.yml -f docker-compose-test.override.yml up -d
+./run_unit_tests
+docker-compose -f docker-compose.yml -f docker-compose-test.override.yml down

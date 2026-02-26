@@ -1,0 +1,1 @@
+private async Task OrderDetailAsync(Order order) { if (order is null) { return; } await NavigationService . NavigateToAsync( "OrderDetail" ,

@@ -1,0 +1,1 @@
+<Target Name="MyPreCompileTarget" BeforeTargets="Build"> <Exec Command="gulp min" /> </Target>

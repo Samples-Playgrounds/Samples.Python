@@ -1,0 +1,2 @@
+where blog.Url.Contains("dotnet")
+        select blog.Url;

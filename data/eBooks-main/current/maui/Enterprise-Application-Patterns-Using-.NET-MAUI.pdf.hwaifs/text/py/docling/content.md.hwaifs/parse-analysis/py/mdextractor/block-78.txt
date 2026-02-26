@@ -1,0 +1,1 @@
+private async Task PerformLogoutAsync() { await _appEnvironmentService.IdentityService.SignOutAsync(); _settingsService.UseFakeLocation = false ; UserName.Value = string.Empty; Password.Value = string.Empty; }

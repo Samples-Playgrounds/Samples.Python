@@ -1,0 +1,2 @@
+az acr list --resource-group <resource-group-name> --query 
+"[].{acrLoginServer:loginServer}" --output table

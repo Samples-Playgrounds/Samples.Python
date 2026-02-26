@@ -1,0 +1,1 @@
+try { var portfolio = await client . GetPortfolioAsync(new GetPortfolioRequest { Id = id }); } catch (RpcException ex) when (ex . StatusCode == StatusCode . PermissionDenied)

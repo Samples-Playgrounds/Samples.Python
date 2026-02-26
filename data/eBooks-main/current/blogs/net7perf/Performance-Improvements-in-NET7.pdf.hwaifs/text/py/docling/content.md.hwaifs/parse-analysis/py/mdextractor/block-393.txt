@@ -1,0 +1,1 @@
+public byte[] Hash(byte[] data) { using (SHA256 h = SHA256.Create()) { return h.ComputeHash(data); } }

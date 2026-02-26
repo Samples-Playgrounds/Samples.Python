@@ -1,0 +1,1 @@
+var builder = WebApplication.CreateBuilder(args); builder.WebHost . ConfigureAppConfiguration(config => { var daprClient = new DaprClientBuilder().Build(); var secretDescriptors = new List<DaprSecretDescriptor> { new DaprSecretDescriptor("eshopsecrets") }; config.AddDaprSecretStore("secret-store", secretDescriptors, daprClient); });

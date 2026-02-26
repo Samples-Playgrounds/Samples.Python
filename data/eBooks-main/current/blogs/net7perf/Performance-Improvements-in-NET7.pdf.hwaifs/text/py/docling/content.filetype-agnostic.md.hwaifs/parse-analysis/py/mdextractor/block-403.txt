@@ -1,0 +1,1 @@
+mov dword ptr [rsp+4],2A mov byte ptr [rsp],1 mov rax,[rsp] add rsp,8 ret ; Total bytes of code 38

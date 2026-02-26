@@ -1,0 +1,1 @@
+[Benchmark] public void GetProcessesByName() { foreach (Process p in Process.GetProcessesByName("dotnet.exe")) p.Dispose(); }

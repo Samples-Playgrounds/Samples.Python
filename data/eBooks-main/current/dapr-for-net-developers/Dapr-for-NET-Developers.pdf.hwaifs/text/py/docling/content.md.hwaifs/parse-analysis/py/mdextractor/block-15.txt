@@ -1,0 +1,1 @@
+In the root of the *MyFrontEnd* project directory, a new *Dockerfile* was created. A *Dockerfile* is a sequence of commands that are used to build an image. For more information, see [Dockerfile reference](https://docs.docker.com/engine/reference/builder).

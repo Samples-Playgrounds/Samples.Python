@@ -1,0 +1,1 @@
+public static ReadOnlySpan<byte> Text => new ReadOnlySpan<byte>(new byte[] { (byte)'h', (byte)'e', (byte)'l', (byte)'l' , (byte)'o', (byte)'\0' }, 0 , 5);

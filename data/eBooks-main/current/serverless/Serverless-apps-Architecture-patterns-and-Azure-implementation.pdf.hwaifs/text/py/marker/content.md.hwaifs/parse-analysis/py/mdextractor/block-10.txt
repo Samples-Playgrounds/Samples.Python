@@ -1,0 +1,9 @@
+[FunctionName("OrderWorkflow")]
+public static async Task<HttpResponseMessage> Run(
+ [HttpTrigger(AuthorizationLevel.Function, "POST")]HttpRequestMessage req,
+ [OrchestrationClient ] DurableOrchestrationClient orchestrationClient)
+{
+ OrderRequestData data = await req.Content.ReadAsAsync<OrderRequestData>();
+ string instanceId = await orchestrationClient.StartNewAsync("PlaceOrder", data);
+ return orchestrationClient.CreateCheckStatusResponse(req, instanceId);
+}

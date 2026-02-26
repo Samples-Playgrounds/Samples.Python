@@ -1,0 +1,11 @@
+:::
+
+
+72 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
+
+
+3. Add almost the same code to the deploy_prod job above its az cli logout step. The only
+difference is that you don’t specify a slot-name, since you’re targeting the production slot:
+
+
+:::{custom-style=CodeBox}

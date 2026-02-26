@@ -1,0 +1,1 @@
+[Benchmark] public bool IsValueType() => IsValueType<int>(); private static bool IsValueType<T>() => typeof (T).IsValueType;

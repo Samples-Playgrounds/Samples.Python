@@ -1,0 +1,1 @@
+// AuthService.cs in BlazorAdmin project of eShopOnWeb private async Task SetAuthorizationHeader() { var token = await GetToken(); _httpClient . DefaultRequestHeaders . Authorization = new AuthenticationHeaderValue("Bearer" , token); }

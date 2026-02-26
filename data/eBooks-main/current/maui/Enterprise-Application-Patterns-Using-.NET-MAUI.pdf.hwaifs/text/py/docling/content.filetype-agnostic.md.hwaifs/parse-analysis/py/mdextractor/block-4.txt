@@ -1,0 +1,1 @@
+public ICommand SignInCommand { get; } ... SignInCommand = new AsyncRelayCommand(async () => await SignInAsync());

@@ -1,0 +1,1 @@
+namespace eShop.Views; public partial class FiltersView : ContentPage {

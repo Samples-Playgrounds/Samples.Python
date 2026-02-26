@@ -1,0 +1,1 @@
+private byte[] _plaintext = Encoding.UTF8.GetBytes("This is a test. This is only a test. Nothing to see here."); private byte[] _iv = Enumerable.Range(0, 16).Select(i => (byte)i).ToArray(); private Aes _aes = Aes.Create(); private byte[] _output = new byte[1000]; [Benchmark] public bool OneShot() => _aes.TryEncryptCfb(_plaintext, _iv, _output, out _);

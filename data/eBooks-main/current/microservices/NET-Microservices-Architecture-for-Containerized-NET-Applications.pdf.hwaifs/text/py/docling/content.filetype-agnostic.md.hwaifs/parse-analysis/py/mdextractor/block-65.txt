@@ -1,0 +1,1 @@
+} } _logger . LogDebug($"GracePeriod background task is stopping."); } .../... } or "' MyHostedServiceA class Background task |HostedService interface · BackgroundService base class (*)

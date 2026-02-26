@@ -1,0 +1,1 @@
+<?xml version="1.0"?> < configuration > < system.web > < authentication mode="Forms"> < forms defaultUrl="~/home.aspx" loginUrl="~/login.aspx" slidingExpiration="true" timeout="2880"></ forms > </ authentication > < authorization > < deny users="?" /> </ authorization > </ system.web > </ configuration >

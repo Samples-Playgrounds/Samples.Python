@@ -1,0 +1,1 @@
+public partial class SampleViewModel : ObservableObject { [ObservableProperty] private string _name; [ObservableProperty] private int _value; }

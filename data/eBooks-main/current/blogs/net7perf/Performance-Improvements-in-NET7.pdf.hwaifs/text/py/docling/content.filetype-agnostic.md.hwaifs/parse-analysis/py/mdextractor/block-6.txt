@@ -1,0 +1,1 @@
+using BenchmarkDotNet.Attributes; using BenchmarkDotNet.Running; using System; [DisassemblyDiagnoser] public partial class Program { static void Main(string[] args) => BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args); private int _a = 42, _b = 84; [Benchmark] public int Min() => Math.Min(_a, _b); }

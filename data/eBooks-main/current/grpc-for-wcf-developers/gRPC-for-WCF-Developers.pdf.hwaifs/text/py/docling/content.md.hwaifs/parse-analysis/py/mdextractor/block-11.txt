@@ -1,0 +1,1 @@
+message Outer { message Inner { string text = 1; }

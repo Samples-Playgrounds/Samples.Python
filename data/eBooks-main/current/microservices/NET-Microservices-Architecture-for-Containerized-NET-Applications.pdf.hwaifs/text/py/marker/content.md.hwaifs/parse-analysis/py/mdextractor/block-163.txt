@@ -1,0 +1,3 @@
+var requestCreateOrder = new IdentifiedCommand<CreateOrderCommand,bool>(createOrderCommand,
+eventMsg.RequestId);
+result = await _mediator.Send(requestCreateOrder);

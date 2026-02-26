@@ -1,0 +1,3 @@
+run: az logout # <– last line of previous job: insert below this line
+
+deploy\_prod: needs: deploy\_staging runs-on: ubuntu-latest

@@ -1,0 +1,1 @@
+public Task<int> IncrementScoreAsync() { return StateManager.AddOrUpdateStateAsync( "score" , 1 , (key, currentScore) => currentScore + 1 ); }

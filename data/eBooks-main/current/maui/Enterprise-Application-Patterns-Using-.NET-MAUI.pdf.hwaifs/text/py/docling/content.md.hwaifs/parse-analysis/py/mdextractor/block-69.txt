@@ -1,0 +1,1 @@
+[HttpDelete("{id}")] public void Delete(string id) => _repository.DeleteBasketAsync(id);

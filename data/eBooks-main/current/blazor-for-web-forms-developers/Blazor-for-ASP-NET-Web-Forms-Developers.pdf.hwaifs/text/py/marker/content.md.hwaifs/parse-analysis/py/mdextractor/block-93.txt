@@ -1,0 +1,3 @@
+<environmentVariable name="Parent:ApiKey" value="67890" />
+ </environmentVariables>
+</aspNetCore>

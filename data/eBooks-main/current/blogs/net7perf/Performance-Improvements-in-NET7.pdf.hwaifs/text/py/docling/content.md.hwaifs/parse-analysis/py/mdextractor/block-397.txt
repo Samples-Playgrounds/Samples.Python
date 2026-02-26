@@ -1,0 +1,1 @@
+public class C { [CompilerGenerated] private sealed class <>c { public static readonly <>c <>9 = new <>c(); public static Action<int> <>9__0_0; internal void <CallSite>b__0_0(int i) => Work(i); } public void CallSite() => M(<>c.<>9__0_0 ??= new Action<int>(<>c.<>9.<CallSite>b__0_0)); public void M(Action<int> action) { } private static void Work(int value) { } }

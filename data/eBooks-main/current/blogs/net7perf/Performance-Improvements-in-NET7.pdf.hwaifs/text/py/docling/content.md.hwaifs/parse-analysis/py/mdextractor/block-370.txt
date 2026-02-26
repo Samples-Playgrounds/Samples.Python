@@ -1,0 +1,1 @@
+[Benchmark] public string GetCurrentProcessName() { using Process current = Process.GetCurrentProcess(); return current.ProcessName; } [Benchmark] public string GetCurrentProcessNameAndWorkingSet() { using Process current = Process.GetCurrentProcess(); return $"{current.ProcessName} {current.WorkingSet64}"; }

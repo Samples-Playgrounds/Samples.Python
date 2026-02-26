@@ -1,0 +1,20 @@
+@page "/Name"
+@layout MainLayout
+<div>
+ What is your name?<br />
+ <input @bind="text" />
+ <button @onclick="OnClick">Submit</button>
+</div>
+<div>
+ @if (name != null)
+ {
+ @:Hello @name
+ }
+</div>
+@code {
+ string text;
+ string name;
+ void OnClick() {
+ name = text;
+ }
+}

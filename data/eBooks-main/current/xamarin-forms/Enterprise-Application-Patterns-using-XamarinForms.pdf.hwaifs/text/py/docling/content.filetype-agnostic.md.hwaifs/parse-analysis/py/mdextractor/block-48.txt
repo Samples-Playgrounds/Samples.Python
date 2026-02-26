@@ -1,0 +1,1 @@
+<Style x:Key="EntryStyle" TargetType="{x:Type Entry}"> ... <Setter Property="behaviors:LineColorBehavior.ApplyLineColor" Value="True" /> <Setter Property="behaviors:LineColorBehavior.LineColor" Value="{StaticResource BlackColor}" /> ... </Style>

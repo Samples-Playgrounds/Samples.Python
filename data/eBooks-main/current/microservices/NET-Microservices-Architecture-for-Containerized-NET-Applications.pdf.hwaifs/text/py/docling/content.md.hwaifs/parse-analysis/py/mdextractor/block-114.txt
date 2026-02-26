@@ -1,0 +1,1 @@
+var orderStartedDomainEvent = new OrderStartedDomainEvent( this , //Order object cardTypeId, cardNumber, cardSecurityNumber, cardHolderName, cardExpiration); this .AddDomainEvent(orderStartedDomainEvent);

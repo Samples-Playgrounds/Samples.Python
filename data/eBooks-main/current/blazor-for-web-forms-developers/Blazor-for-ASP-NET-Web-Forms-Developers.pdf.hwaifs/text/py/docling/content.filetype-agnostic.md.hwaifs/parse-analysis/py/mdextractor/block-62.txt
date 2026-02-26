@@ -1,0 +1,1 @@
+@layout MainLayout <h2>Child layout</h2> <div> @Body </div>

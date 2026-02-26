@@ -1,0 +1,1 @@
+order.UserName, order.OrderItems .Select(orderItem => new OrderStockItem(orderItem.ProductId, orderItem.Units)))); } }

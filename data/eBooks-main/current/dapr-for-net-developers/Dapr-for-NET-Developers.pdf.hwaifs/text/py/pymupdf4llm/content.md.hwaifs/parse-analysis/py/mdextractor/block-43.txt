@@ -1,0 +1,3 @@
+http://localhost:<dapr-port>/v1.0/secrets/<store-name>/bulk
+
+### Use the Dapr .NET SDK

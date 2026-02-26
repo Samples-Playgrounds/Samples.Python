@@ -1,0 +1,15 @@
+options.DescribeAllEnumsAsStrings();
+ options.SwaggerDoc("v1", new OpenApiInfo
+ {
+ Title = "eShopOnContainers - Catalog HTTP API",
+ Version = "v1",
+ Description = "The Catalog Microservice HTTP API. This is a Data-Driven/CRUD 
+microservice sample"
+ });
+});
+// Other startup code...
+app.UseSwagger()
+ .UseSwaggerUI(c =>
+ {
+ c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+ });

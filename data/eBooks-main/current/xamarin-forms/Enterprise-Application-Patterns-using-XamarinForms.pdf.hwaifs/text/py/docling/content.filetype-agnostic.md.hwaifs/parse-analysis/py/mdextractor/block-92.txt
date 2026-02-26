@@ -1,0 +1,1 @@
+public async Task DeleteAsync(string uri, string token = "" ) { HttpClient httpClient = CreateHttpClient(token); await httpClient.DeleteAsync(uri); }

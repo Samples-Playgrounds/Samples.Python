@@ -1,0 +1,1 @@
+G_M000_IG03:                ;; offset=001FH 8BC5                 mov      eax, ebp 8B548310             mov      edx, dword ptr [rbx+4*rax+10H] 4C8B4618             mov      r8, qword ptr [rsi+18H] 48B8A0C2CF3CFC7F0000 mov      rax, 0x7FFC3CCFC2A0 4C3BC0               cmp      r8, rax

@@ -1,0 +1,6 @@
+{
+ "id": "instanceId",
+ "statusQueryGetUri": "http://host/statusUri",
+ "sendEventPostUri": "http://host/eventUri",
+ "terminatePostUri": "http://host/terminateUri"
+}

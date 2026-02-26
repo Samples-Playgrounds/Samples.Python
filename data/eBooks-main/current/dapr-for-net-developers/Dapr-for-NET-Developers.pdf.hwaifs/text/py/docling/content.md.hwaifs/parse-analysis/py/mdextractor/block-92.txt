@@ -1,0 +1,1 @@
+// ... // send fine by email (Dapr output binding) var body = EmailUtils.CreateEmailBody(speedingViolation, vehicleInfo, fineString); var metadata = new Dictionary<string, string> { ["emailFrom"] = "noreply@cfca.gov", ["emailTo"] = vehicleInfo.OwnerEmail,

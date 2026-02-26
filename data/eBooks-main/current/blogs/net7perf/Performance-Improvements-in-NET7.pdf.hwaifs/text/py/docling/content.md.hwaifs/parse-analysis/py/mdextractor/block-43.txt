@@ -1,0 +1,1 @@
+} class Printer : IPrinter { public void PrintIfTrue(bool condition) { if (condition) Console.WriteLine("Print!"); } } }

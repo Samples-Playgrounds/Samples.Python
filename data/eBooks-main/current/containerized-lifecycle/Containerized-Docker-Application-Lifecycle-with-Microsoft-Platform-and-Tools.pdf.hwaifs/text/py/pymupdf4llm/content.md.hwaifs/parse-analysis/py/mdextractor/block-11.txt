@@ -1,0 +1,1 @@
+az aks get-credentials --resource-group explore-docker-aks-rg --name explore-docker-aks

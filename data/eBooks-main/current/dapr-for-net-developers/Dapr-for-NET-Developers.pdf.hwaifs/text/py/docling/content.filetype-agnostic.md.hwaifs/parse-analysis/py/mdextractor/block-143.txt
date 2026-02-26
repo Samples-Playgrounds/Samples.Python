@@ -1,0 +1,1 @@
+apiVersion: dapr.io/v1alpha1 kind: Component metadata: name: [component name] namespace: [namespace] spec: type: secretstores.[secret store type] version: [secret store version] metadata: -name: [property name] value: [property value]

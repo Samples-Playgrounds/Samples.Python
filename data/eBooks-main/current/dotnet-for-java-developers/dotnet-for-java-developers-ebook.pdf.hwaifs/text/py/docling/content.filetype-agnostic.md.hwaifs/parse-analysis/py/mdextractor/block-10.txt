@@ -1,0 +1,1 @@
+p.IndirectSayHello = (recipient) => { Console.WriteLine("Hey, {0}. Whatever.", recipient); }; p.IndirectSayHello("Shaggy");

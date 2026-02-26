@@ -1,0 +1,1 @@
+; Program.GetChar(Int32) cmp edx,5 jb short M00_L00 xor eax,eax ret M00_L00: mov rax,2B0AF002530 mov rax,[rax] mov edx,edx movzx eax,word ptr [rax+rdx*2+0C] ret ; Total bytes of code 29

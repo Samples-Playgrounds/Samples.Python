@@ -1,0 +1,1 @@
+public async Task<int> IncrementAsync() { var counterValue = await StateManager.TryGetStateAsync<int>("counter"); var currentValue = counterValue.HasValue ? counterValue.Value : 0; var newValue = currentValue + 1;

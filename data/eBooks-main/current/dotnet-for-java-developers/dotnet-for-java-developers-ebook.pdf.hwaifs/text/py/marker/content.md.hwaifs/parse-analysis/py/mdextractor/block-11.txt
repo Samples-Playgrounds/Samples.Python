@@ -1,0 +1,4 @@
+var x = 12;
+ var y = "Fred";
+ var z = p.IndirectSayHello;
+ z("Wilma");

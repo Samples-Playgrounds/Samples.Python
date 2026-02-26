@@ -1,0 +1,1 @@
+[Benchmark] public bool IsByRefLike() => typeof(ReadOnlySpan<char>).IsByRefLike;

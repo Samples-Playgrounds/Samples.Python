@@ -1,0 +1,8 @@
+[FunctionName("CheckAndReserveInventory")]
+public static bool CheckAndReserveInventory([ActivityTrigger] DurableActivityContext 
+context)
+{
+ OrderRequestData orderData = context.GetInput<OrderRequestData>();
+ // Connect to inventory system and try to reserve items
+ return true;
+}

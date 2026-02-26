@@ -1,0 +1,1 @@
+public async Task ClearBasketAsync() { var authToken = await _identityService . GetAuthTokenAsync().ConfigureAwait(false); if (string . IsNullOrEmpty(authToken)) { return;

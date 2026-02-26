@@ -1,0 +1,5 @@
+[EnableCors(origins: "https://dot.net", headers: "*", methods: "*")]
+public class TestController : ApiController
+{
+ // Controller methods not shown...
+}

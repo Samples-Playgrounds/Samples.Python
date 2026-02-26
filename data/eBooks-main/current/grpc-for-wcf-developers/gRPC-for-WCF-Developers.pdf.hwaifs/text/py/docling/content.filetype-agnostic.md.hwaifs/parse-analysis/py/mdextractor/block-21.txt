@@ -1,0 +1,1 @@
+message Stock { // Stock-specific data } message Currency { // Currency-specific data } message ChangeNotification { int32 id = 1; oneof instrument { Stock stock = 2; Currency currency = 3; } }

@@ -1,0 +1,1 @@
+MessagingCenter.Subscribe<CatalogViewModel, CatalogItem>( this, MessageKeys.AddProduct, async (sender, arg) => { BadgeCount++; await AddCatalogItemAsync(arg); });

@@ -1,0 +1,1 @@
+bool allZero = array.AsSpan().IndexOfAnyExcept(0) < 0;

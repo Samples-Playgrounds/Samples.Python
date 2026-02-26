@@ -1,0 +1,1 @@
+[ServiceContract] public interface IPortfolioService { [OperationContract] Task<Portfolio> Get(Guid traderId, int portfolioId); [OperationContract] Task<List<Portfolio>> GetAll(Guid traderId); }

@@ -1,0 +1,1 @@
+G_M000_IG01:                ;; offset=0000H 56                   push     rsi 4883EC20             sub      rsp, 32 G_M000_IG02:                ;; offset=0005H 488B31               mov      rsi, bword ptr [rcx] 8B4908               mov      ecx, dword ptr [rcx+08H]

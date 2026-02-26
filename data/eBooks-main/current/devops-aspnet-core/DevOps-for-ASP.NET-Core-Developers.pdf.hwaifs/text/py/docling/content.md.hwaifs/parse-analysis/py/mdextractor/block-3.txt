@@ -1,0 +1,2 @@
+4. -name: Test run: dotnet test -no-build -verbosity normal # &lt; -this is the current bottom line
+5. -name: Publish run: dotnet publish SimpleFeedReader/SimpleFeedReader.csproj -c Release -o website

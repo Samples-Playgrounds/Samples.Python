@@ -1,0 +1,1 @@
+struct SyncReader : IReader { public ValueTask<int> ReadAsync(Stream s, Memory<byte> buffer) => new ValueTask<int>(s.Read(buffer.Span)); } struct AsyncReader : IReader { public ValueTask<int> ReadAsync(Stream s, Memory<byte> buffer) => s.ReadAsync(buffer); }

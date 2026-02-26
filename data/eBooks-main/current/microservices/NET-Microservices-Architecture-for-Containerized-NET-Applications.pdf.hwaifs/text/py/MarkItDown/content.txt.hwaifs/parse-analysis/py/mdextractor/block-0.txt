@@ -1,0 +1,6 @@
+:::
+
+Once this is done, you can start your application and browse the following Swagger JSON and
+UI endpoints using URLs like these:
+
+:::{custom-style=CodeBox}

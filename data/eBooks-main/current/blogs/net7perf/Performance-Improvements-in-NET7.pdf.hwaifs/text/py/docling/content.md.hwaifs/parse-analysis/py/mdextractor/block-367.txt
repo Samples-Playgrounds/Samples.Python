@@ -1,0 +1,1 @@
+[GlobalSetup] public void Setup() { Trace.Listeners.Clear(); Trace.Listeners.Add( new XmlWriterTraceListener(Stream.Null)); } [Benchmark] public void TraceWrite() { Trace.WriteLine("Something important"); }

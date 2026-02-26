@@ -1,0 +1,6 @@
+Install-Package Dapr.AspNetCore
+
+The [`AddDaprClient`]{custom-style=Code} call registers the [`DaprClient`]{customstyle=Code} class with the ASP.NET Core dependency injection system. With the client
+registered, you can now inject an instance of [`DaprClient`]{custom-style=Code} into
+your service code to communicate with the Dapr sidecar, building blocks, and
+components.

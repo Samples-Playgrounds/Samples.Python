@@ -1,0 +1,43 @@
+name: $(rev:r)
+variables:
+ version: 9.2.0.$(Build.BuildNumber)
+ solution: Portals.sln
+ artifactName: drop
+ buildPlatform: any cpu
+ buildConfiguration: release
+pool:
+ name: Hosted VisualStudio
+ demands:
+ - msbuild
+ - visualstudio
+ - vstest
+steps:
+- task: NuGetToolInstaller@0
+ displayName: 'Use NuGet 4.4.1'
+ inputs:
+ versionSpec: 4.4.1
+- task: NuGetCommand@2
+ displayName: 'NuGet restore'
+ inputs:
+ restoreSolution: '$(solution)'
+- task: VSBuild@1
+ displayName: 'Build solution'
+ inputs:
+ solution: '$(solution)'
+ msbuildArgs: '-p:DeployOnBuild=true -p:WebPublishMethod=Package -
+p:PackageAsSingleFile=true -p:SkipInvalidConfigurations=true -
+p:PackageLocation="$(build.artifactstagingdirectory)\\"'
+ platform: '$(buildPlatform)'
+ configuration: '$(buildConfiguration)'
+- task: VSTest@2
+ displayName: 'Test Assemblies'
+ inputs:
+ testAssemblyVer2: |
+ **\$(buildConfiguration)\**\*test*.dll
+ !**\obj\**
+ !**\*testadapter.dll
+ platform: '$(buildPlatform)'
+ configuration: '$(buildConfiguration)'
+- task: CopyFiles@2
+ displayName: 'Copy UI Test Files to: $(build.artifactstagingdirectory)'
+ inputs:

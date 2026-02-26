@@ -1,0 +1,1 @@
+(post , user) => { post . Owner = user; return post; }

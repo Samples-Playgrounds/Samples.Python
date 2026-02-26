@@ -1,0 +1,1 @@
+WeakReferenceMessenger.Default.Unregister<Messages.AddProductMessage>( this );

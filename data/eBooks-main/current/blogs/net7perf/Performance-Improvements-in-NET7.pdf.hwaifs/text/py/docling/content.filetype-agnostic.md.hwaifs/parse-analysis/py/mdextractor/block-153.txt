@@ -1,0 +1,1 @@
+[Benchmark] [Arguments(42)] public bool BitSet(int x) => (x & 1) == 1;

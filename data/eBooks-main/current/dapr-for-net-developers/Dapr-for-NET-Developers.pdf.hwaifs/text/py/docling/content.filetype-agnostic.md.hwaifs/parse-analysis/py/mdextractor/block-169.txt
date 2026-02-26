@@ -1,0 +1,1 @@
+public class DaprBasketRepository : IBasketRepository { private const string StoreName = "eshop-statestore"; private readonly DaprClient _daprClient; public DaprBasketRepository(DaprClient daprClient) { _daprClient = daprClient; } public Task<CustomerBasket> GetBasketAsync(string customerId) => _daprClient.GetStateAsync<CustomerBasket>(StoreName, customerId); // ... }

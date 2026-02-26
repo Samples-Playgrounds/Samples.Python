@@ -1,0 +1,1 @@
+public interface IStockPriceSubscriberFactory { IStockPriceSubscriber GetSubscriber(string[] symbols); } public class StockPriceSubscriberFactory : IStockPriceSubscriberFactory { public IStockPriceSubscriber GetSubscriber(string[] symbols) { return new StockPriceSubscriber(symbols); } }

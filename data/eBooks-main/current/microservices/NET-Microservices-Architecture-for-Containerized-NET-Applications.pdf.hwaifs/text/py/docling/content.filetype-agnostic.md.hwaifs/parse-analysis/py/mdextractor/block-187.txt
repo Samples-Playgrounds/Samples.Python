@@ -1,0 +1,1 @@
+namespace Microsoft . eShopOnContainers . WebMVC . Controllers { public class CatalogController : Controller { private ICatalogService _catalogSvc; public CatalogController(ICatalogService catalogSvc) => _catalogSvc = catalogSvc; public async Task<IActionResult> Index(int? BrandFilterApplied , int? TypesFilterApplied ,

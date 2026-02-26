@@ -1,0 +1,1 @@
+- name: Update config uses: Azure/appservice-settings@v1

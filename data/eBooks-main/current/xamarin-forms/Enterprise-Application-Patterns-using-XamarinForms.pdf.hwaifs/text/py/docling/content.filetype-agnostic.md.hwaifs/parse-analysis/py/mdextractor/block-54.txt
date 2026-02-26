@@ -1,0 +1,1 @@
+<Entry Text="{Binding UserName.Value, Mode=TwoWay}"> ... <Entry.Triggers> <DataTrigger TargetType="Entry" Binding="{Binding UserName.IsValid}" Value="False"> <Setter Property="behaviors:LineColorBehavior.LineColor" Value="{StaticResource ErrorColor}" /> </DataTrigger> </Entry.Triggers> </Entry>

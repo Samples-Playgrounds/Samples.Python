@@ -1,0 +1,13 @@
+public class ProductsController
+{
+ [Route("products")]
+ public ActionResult Index()
+ {
+ return View();
+ }
+ [Route("products/{id}")]
+ public ActionResult Details(int id)
+ {
+ return View();
+ }
+}

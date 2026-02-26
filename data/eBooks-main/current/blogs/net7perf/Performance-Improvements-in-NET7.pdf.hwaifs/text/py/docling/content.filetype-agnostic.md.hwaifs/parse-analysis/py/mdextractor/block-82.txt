@@ -1,0 +1,1 @@
+; Program.IsInSet(Char) sub rsp,28 movzx eax,dx cmp eax,80 jge short M00_L00 mov edx,eax sar edx,4 cmp edx,8 jae short M00_L01 mov rcx,299835A1518 mov rcx,[rcx] movsxd rdx,edx movzx edx,word ptr [rcx+rdx*2+0C] and eax,0F bt edx,eax setb al movzx eax,al add rsp,28 ret M00_L00: xor eax,eax add rsp,28 ret M00_L01: call CORINFO_HELP_RNGCHKFAIL int 3 ; Total bytes of code 75

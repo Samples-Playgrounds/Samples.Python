@@ -1,0 +1,1 @@
+var vehicleState = await StateManager.GetStateAsync<VehicleState>("VehicleState"); vehicleState.ExitTimestamp = msg.Timestamp;

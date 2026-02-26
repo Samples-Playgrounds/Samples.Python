@@ -1,0 +1,77 @@
+The final workflow file should look like this:
+
+
+73 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
+
+
+74 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
+
+
+### Secure .NET Code with CodeQL and GitHub Actions
+
+[CodeQL](https://codeql.github.com/docs/codeql-overview/about-codeql/) is a static code analysis engine that can automate security and quality checks. With CodeQL,
+you can perform _variant analysis_, which uses known vulnerabilities as seeds to find similar issues.
+[CodeQL is part of GitHub Advanced Security that includes:](https://docs.github.com/github/getting-started-with-github/about-github-advanced-security)
+
+
+[!div class=“checklist”]
+
+
+75 CHAPTER 3 | Continuous integration and deployment with Azure DevOps
+
+
+  - Code scanning—find potential security vulnerabilities in your code.
+
+  - Secret scanning—detect secrets and tokens that are committed.
+
+  - Dependency scanning—detect vulnerabilities in packages that you consume.
+
+
+[CodeQL supports some of the most popular programming languages and compilers:](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/)
+
+
+  - C/C++
+
+  - Java
+
+  - C#
+
+  - Python
+
+  - Go
+
+  - JavaScript
+
+  - TypeScript
+
+
+CodeQL is a powerful language and security professionals can create custom queries using CodeQL.
+However, teams can benefit immensely from the large open-source collection of queries that the
+security community has created without having to write any custom CodeQL.
+
+
+In this article, you’ll set up a GitHub workflow that will scan code in your repository using CodeQL.
+You will:
+
+
+[!div class=“checklist”]
+
+
+  - Create a code scanning action.
+
+  - Edit the workflow file to include custom scan settings.
+
+  - See scanning results.
+
+
+
+
+
+
+#### **Create the code scanning workflow**
+
+You can use a starter workflow for code scanning by navigating to the **Security** tab of your repository.
+
+
+1. Navigate to your GitHub repository and select the **Security**  - **Code Scanning Alerts** . The top
+recommended workflow should be CodeQL Analysis. Select **Set up this workflow** .

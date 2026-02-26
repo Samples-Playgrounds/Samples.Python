@@ -1,0 +1,1 @@
+private async Task AddCountryClaim() { var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync(); var user = authState.User; var identityUser = await MyUserManager.FindByNameAsync(user.Identity.Name); if (!user.HasClaim(c => c.Type == ClaimTypes.Country)) {

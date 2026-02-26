@@ -1,0 +1,1 @@
+; *** .NET 6 *** ; Program.Test(Int32, Int32) movzx     eax,dl movzx     edx,r8b or        eax,edx ret ; Total bytes of code 10 ; *** .NET 7 *** ; Program.Test(Int32, Int32) or        edx,r8d movzx     eax,dl ret ; Total bytes of code 7

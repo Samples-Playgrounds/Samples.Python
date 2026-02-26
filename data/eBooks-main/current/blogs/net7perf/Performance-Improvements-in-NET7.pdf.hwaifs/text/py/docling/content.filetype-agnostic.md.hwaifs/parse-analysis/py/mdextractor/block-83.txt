@@ -1,0 +1,1 @@
+; Program.IsInSet(Char) movzx eax,dx cmp eax,80 jge short M00_L00 mov edx,eax sar edx,4 mov rcx,197D4800608 mov rcx,[rcx] mov edx,edx movzx edx,word ptr [rcx+rdx*2+0C] and eax,0F bt edx,eax setb al movzx eax,al ret

@@ -1,0 +1,1 @@
+[DataContract] public class Stock { [DataMember] public int Id { get ; set ; } [DataMember] public string Symbol { get ; set ; } [DataMember] public string DisplayName { get ; set ; } [DataMember] public int MarketId { get ; set ; } }

@@ -1,0 +1,2 @@
+linkerd inject stockdata.yml > stockdata-with-mesh.yml
+linkerd inject stockweb.yml > stockweb-with-mesh.yml

@@ -1,0 +1,1 @@
+docker push <login-server-name>/<image-name>:v1

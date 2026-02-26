@@ -1,0 +1,1 @@
+[Benchmark] [Arguments(123 , 1)] public ulong Shift(ulong x, int y) => x << y;

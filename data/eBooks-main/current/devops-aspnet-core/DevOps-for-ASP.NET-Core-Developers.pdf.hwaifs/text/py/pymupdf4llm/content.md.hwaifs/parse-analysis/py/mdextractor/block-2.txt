@@ -1,0 +1,3 @@
+These settings cause a build to trigger when any change is pushed to the default
+branch (*main*) of the GitHub repository. Continuous integration is tested in the
+[Commit changes to GitHub and automatically deploy to Azure](#commit-changes-togithub-and-automatical) section.

@@ -1,0 +1,1 @@
+build: context: . dockerfile: src/Web/WebMVC/Dockerfile depends_on: -catalog-api -ordering-api -identity-api -basket -api -marketing-api sqldata: image: mcr.microsoft.com/mssql/server:2019-latest nosqldata: image: mongo basketdata: image: redis rabbitmq: image: rabbitmq:3-management

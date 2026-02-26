@@ -1,0 +1,7 @@
+AuthenticationState authState = await 
+AuthenticationStateProvider.GetAuthenticationStateAsync();
+ClaimsPrincipal user = authState.User;
+if (user.Identity.IsAuthenticated)
+{
+ // work with user.Claims and/or user.Roles
+}

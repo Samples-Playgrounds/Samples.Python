@@ -1,0 +1,2 @@
+http://<your-root-url>/swagger/v1/swagger.json
+ http://<your-root-url>/swagger/

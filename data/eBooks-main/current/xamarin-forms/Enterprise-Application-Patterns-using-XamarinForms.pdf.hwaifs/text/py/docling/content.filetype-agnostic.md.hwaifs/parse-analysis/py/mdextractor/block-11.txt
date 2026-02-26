@@ -1,0 +1,1 @@
+public class ProfileViewModel : ViewModelBase { private IOrderService _orderService; public ProfileViewModel(IOrderService orderService) { _orderService = orderService; } ... }

@@ -1,0 +1,1 @@
+private ImmutableArray<int>.Builder _builder = ImmutableArray.CreateBuilder<int>(); [GlobalSetup] public void Setup() { _builder.AddRange(Enumerable.Range(0 , 1 _ 000)); } [Benchmark] public void Sort() { _builder.Sort((left, right) => right.CompareTo(left)); _builder.Sort((left, right) => left.CompareTo(right)); }

@@ -1,0 +1,1 @@
+protected override void Scan(ReadOnlySpan<char> inputSpan) { if (TryFindNextPossibleStartingPosition(inputSpan)) { // The search in TryFindNextPossibleStartingPosition performed the entire match. int start = base .runtextpos; int end = base .runtextpos = start + 5; base .Capture(0, start, end); } }

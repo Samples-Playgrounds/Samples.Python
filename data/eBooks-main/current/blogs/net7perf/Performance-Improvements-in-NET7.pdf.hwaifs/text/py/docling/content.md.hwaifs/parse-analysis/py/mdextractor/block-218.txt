@@ -1,0 +1,1 @@
+private string _value = "https://dot.net"; [Benchmark] public bool IsHttps_Ordinal() => _value.StartsWith("https://", StringComparison.Ordinal); [Benchmark] public bool IsHttps_OrdinalIgnoreCase() => _value.StartsWith("https://", StringComparison.OrdinalIgnoreCase);

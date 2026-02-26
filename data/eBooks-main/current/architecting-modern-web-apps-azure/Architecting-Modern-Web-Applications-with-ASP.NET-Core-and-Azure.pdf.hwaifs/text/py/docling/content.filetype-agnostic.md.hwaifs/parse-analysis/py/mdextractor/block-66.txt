@@ -1,0 +1,1 @@
+[HttpGet("[controller]/pic/{id}")] public IActionResult GetImage(int id) { var contentRoot = _env . ContentRootPath + "//Pics"; var path = Path . Combine(contentRoot , id + ".png"); Byte[] b = System . IO . File . ReadAllBytes(path); return File(b , "image/png"); }

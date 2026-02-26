@@ -1,0 +1,1 @@
+public class OrderController : Controller { private readonly IMediator _mediator; public OrderController(IMediator mediator) { _mediator = mediator; } [HttpGet] public async Task<IActionResult> MyOrders() { var viewModel = await _mediator . Send(new GetMyOrders(User . Identity . Name)); return View(viewModel); } // other actions implemented similarly }

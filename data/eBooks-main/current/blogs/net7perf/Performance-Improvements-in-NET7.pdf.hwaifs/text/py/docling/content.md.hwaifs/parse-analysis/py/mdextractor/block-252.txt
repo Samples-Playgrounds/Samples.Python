@@ -1,0 +1,1 @@
+private T[] _items; ... public T this [int i] { get => _items[i]; set => _items[i] = value; }

@@ -1,0 +1,1 @@
+public class Middleware { private readonly RequestDelegate _next; public Middleware(RequestDelegate next) { _next = next;

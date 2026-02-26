@@ -1,0 +1,1 @@
+[Benchmark] public int Compute1() => Value + Value + Value + Value + Value; [Benchmark] public int Compute2() => SomethingElse() + Value + Value + Value + Value + Value; private static int Value => 16;

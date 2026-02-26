@@ -1,0 +1,10 @@
+[FeatureGate(MyFeatureFlags.FeatureA)]
+public class ProductController : Controller
+{
+ ...
+}
+[FeatureGate(MyFeatureFlags.FeatureA)]
+public IActionResult UpdateProductStatus()
+{
+ return ObjectResult(ProductDto);
+}

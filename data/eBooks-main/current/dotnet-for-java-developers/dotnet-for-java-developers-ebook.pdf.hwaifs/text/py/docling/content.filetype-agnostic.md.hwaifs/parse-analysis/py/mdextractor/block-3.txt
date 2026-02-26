@@ -1,0 +1,1 @@
+class Person { public string FirstName { get { return this.firstName; } set { this.firstName = value; } } private string firstName; public string LastName { get { return this.lastName; } set { this.lastName = value; } } private string lastName; public int Age { get { return this.age; } set { this.age = value; }

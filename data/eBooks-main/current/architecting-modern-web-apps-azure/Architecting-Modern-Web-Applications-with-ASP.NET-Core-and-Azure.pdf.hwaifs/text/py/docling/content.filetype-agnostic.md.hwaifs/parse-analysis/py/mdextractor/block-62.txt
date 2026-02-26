@@ -1,0 +1,1 @@
+// configure CancellationToken and add entry to cache var cts = new CancellationTokenSource(); _cache . Set("cts" , cts); _cache . Set(cacheKey , itemToCache , new CancellationChangeToken(cts . Token)); // elsewhere, expire the cache by cancelling the token\ _cache . Get<CancellationTokenSource>("cts").Cancel(); Id Name Description Price 12 Actions

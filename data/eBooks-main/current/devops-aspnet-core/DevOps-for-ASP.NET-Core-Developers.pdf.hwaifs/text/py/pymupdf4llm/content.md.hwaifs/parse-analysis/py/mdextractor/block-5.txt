@@ -1,0 +1,1 @@
+With this option enabled, a deployment occurs each time a new build is available.

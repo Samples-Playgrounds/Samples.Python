@@ -1,0 +1,1 @@
+; Program.DateTimeEquals() mov rax,[rcx+8] mov rdx,[rcx+10] mov rcx,0FFFFFFFFFFFF and rax,rcx and rdx,rcx cmp rax,rdx sete al movzx eax,al ret ; Total bytes of code 34

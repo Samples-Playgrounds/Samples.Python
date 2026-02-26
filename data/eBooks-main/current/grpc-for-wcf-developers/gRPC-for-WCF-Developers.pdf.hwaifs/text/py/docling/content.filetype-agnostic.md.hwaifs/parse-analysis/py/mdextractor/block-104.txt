@@ -1,0 +1,1 @@
+_observer . OnCompleted(); } public void Dispose() { if (!_completed && !_tokenSource . IsCancellationRequested) { _tokenSource . Cancel(); } _tokenSource . Dispose(); _task . Dispose(); } }

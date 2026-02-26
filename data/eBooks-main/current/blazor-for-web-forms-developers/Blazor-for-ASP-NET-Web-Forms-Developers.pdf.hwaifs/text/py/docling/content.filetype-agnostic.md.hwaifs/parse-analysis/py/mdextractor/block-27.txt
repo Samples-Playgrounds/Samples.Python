@@ -1,0 +1,1 @@
+@foreach (var buttonLabel in buttonLabels) { <button @onclick="() => Console.WriteLine($"The {buttonLabel} button was clicked!")">@buttonLabel</button> }

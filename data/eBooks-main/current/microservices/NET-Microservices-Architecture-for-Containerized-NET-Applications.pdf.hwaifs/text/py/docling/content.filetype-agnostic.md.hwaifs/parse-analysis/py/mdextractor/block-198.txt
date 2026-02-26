@@ -1,0 +1,1 @@
+// Extension method from Catalog.api microservice // public static IServiceCollection AddCustomHealthCheck(this IServiceCollection services , IConfiguration configuration) { var accountName = configuration . GetValue<string>("AzureStorageAccountName"); var accountKey = configuration . GetValue<string>("AzureStorageAccountKey"); var hcBuilder = services . AddHealthChecks();

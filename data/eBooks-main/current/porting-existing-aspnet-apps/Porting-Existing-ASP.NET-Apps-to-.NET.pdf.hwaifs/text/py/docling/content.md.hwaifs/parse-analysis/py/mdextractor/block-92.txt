@@ -1,0 +1,1 @@
+// ... app.UseMvc(routes => { routes.Routes.Add( new CustomRouter(routes.DefaultHandler)); });

@@ -1,0 +1,1 @@
+public bool IsLogin { get { return _isLogin; } set { _isLogin = value; RaisePropertyChanged(() => IsLogin); } }

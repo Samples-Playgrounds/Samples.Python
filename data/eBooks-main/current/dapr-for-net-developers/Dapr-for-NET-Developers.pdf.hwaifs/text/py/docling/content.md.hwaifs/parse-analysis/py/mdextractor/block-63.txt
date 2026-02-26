@@ -1,0 +1,1 @@
+var builder = WebApplication.CreateBuilder(args); builder.Services.AddSingleton<VehicleRegistrationService>(_ => new VehicleRegistrationService(DaprClient.CreateInvokeHttpClient( "vehicleregistrationservice", $"http://localhost:{daprHttpPort}" )));

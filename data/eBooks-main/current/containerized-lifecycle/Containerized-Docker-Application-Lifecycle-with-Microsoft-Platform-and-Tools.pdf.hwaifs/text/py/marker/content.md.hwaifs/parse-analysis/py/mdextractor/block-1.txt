@@ -1,0 +1,27 @@
+version: "3.4"
+services:
+ webapi:
+ image: webapi
+ build:
+ context: .
+ dockerfile: src/WebApi/Dockerfile
+ ports:
+ - 51080:80
+ depends_on:
+ - redis
+ environment:
+ - ASPNETCORE_ENVIRONMENT=Development
+ - ASPNETCORE_URLS=http://+:80
+ webapp:
+ image: webapp
+ build:
+ context: .
+ dockerfile: src/WebApp/Dockerfile
+ ports:
+ - 50080:80
+ environment:
+ - ASPNETCORE_ENVIRONMENT=Development
+ - ASPNETCORE_URLS=http://+:80
+ - WebApiBaseAddress=http://webapi
+ redis:
+ image: redis

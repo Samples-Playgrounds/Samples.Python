@@ -1,0 +1,1 @@
+public class EventBusRabbitMQ : IEventBus , IDisposable { // Implementation using RabbitMQ API //... }

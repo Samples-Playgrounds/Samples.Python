@@ -1,0 +1,1 @@
+while (i < str.Length) { if (str[i] >= '0' && str[i] <= '9') { i++; } }
