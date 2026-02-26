@@ -27,8 +27,13 @@ def api_parse_analyze_markdown_markdown_it_py (source: str) -> str:
 
     try:
         md = (
-            MarkdownIt('commonmark', 
-            {'breaks':True, 'html':True})
+            MarkdownIt(
+                            'commonmark', 
+                            {
+                                'breaks':True, 
+                                'html':True
+                            }
+                        )
             .use(front_matter_plugin)
             .use(footnote_plugin)
             .enable('table')
@@ -38,8 +43,9 @@ def api_parse_analyze_markdown_markdown_it_py (source: str) -> str:
 
         tokens = md.parse(text)
         stokens = str(tokens)
-        with open(f"{directory}/tokens.json", "w") as f:
-            f.write(stokens)
+
+        html = md.render(text)
+
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
@@ -52,6 +58,10 @@ def api_parse_analyze_markdown_markdown_it_py (source: str) -> str:
         
         return
 
+    with open(f"{directory}/tokens.json", "w") as f:
+        f.write(stokens)
+    with open(f"{directory}/content.html", "w") as f:
+        f.write(html)
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()
     time_total_1 = time_stop_1 - time_start_1
@@ -79,3 +89,20 @@ def api_parse_analyze_markdown_markdown_it_py (source: str) -> str:
     #---------------------------------------------------------------------------
 
     return tokens
+
+
+import json
+from bs4 import BeautifulSoup
+
+def html_to_json(html: str) -> dict:
+    soup = BeautifulSoup(html, 'lxml')
+    
+    data = {}
+    for tag in soup.find_all():
+        if not tag.name in data:
+            data[tag.name] = []
+        
+        attrs = {k: v for k, v in tag.attrs.items()}
+        data[tag.name].append(attrs)
+    
+    return data

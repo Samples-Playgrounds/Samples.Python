@@ -38,17 +38,20 @@ def main():
                                  "../../../../../../../data/", 
                                  "../../../../../../data/"
                               )
-      #print(f"mrkdwn_analysis <- source = {source}")
-      for p in [
-                  "text/py/pymupdf4llm/content.md",
-                  "text/py/markitdown/content.md",
-                  "text/py/docling/content.md",
-                  "text/py/docling/content.filetype-agnostic.md",
-                  "text/py/marker/content.md"
-               ]:
-         file = f"{source}.hwaifs/{p}"
-         print(f"mrkdwn_analysis <- source = {file}")
-         api.api_parse_analyze_markdown_markdown_it_py(file)
+      print(120 * "=")
+      print(f"commonmark <- source = {source}")
+      for file in [
+                     "text/py/pymupdf4llm/content.md",
+                     "text/py/docling/content.md",
+                     "text/py/docling/content.filetype-agnostic.md",
+                     "text/py/marker/content.md",
+                     "text/py/MarkItDown/content.txt",
+                  ]:
+         print(100 * ".")
+         file = f"{source}.hwaifs/{file}"
+         print(f"                = {file}")
+         paragraphs = api.api_parse_analyze_markdown_markdown_it_py(file)
+         print(f"markdown-it-py <- paragraphs = {paragraphs}")
 
 
 if __name__ == '__main__':

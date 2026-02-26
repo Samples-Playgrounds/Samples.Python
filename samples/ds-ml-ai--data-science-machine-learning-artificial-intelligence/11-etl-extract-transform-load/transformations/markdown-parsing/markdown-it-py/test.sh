@@ -18,7 +18,8 @@ pip install --upgrade pip
 pip install markdown-it-py
 pip install "markdown-it-py[plugins]"
 pip install "markdown-it-py[linkify,plugins]"
-
+pip install lxml
+pip install html-to-json
 
 pip install timer
 pip install codetiming
