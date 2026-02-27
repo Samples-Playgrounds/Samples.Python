@@ -1,0 +1,15 @@
+Exception reading tables from PDF document source = ../../../../../../../data/microsoft/word-docx-doc/file-sample_1MB.doc : Could not convert stream to Markdown. No converter attempted a conversion, suggesting that the filetype is simply not supported.Traceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/MarkItDown/api_text_extraction_MarkItDown.py", line 28, in extract_text_to_file_from_any_document
+    result_md = md.convert(source).text_content
+                ~~~~~~~~~~^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/MarkItDown/.venv/lib/python3.14/site-packages/markitdown/_markitdown.py", line 283, in convert
+    return self.convert_local(source, stream_info=stream_info, **kwargs)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/MarkItDown/.venv/lib/python3.14/site-packages/markitdown/_markitdown.py", line 337, in convert_local
+    return self._convert(file_stream=fh, stream_info_guesses=guesses, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/MarkItDown/.venv/lib/python3.14/site-packages/markitdown/_markitdown.py", line 629, in _convert
+    raise UnsupportedFormatException(
+        "Could not convert stream to Markdown. No converter attempted a conversion, suggesting that the filetype is simply not supported."
+    )
+markitdown._exceptions.UnsupportedFormatException: Could not convert stream to Markdown. No converter attempted a conversion, suggesting that the filetype is simply not supported.
