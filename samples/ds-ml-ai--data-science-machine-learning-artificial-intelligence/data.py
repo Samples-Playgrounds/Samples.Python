@@ -52,10 +52,21 @@ files_private_book_docx = [
    f"{root_sports_book}/doc_files/8. Testovi fleksibilnosti.docx",
 ]
 
+files_documents_pdfs_business_projects = [
+   "/Users/Shared/Projects/d/hw/apps/gl/samples-playgrounds/HolisticWare.AddressBook.Private/docs/SPECIFIKACIJA ZADATKA L2.pdf",
+   ]
+
 files_private_book = [
-    *files_private_book_pdf,
-    *files_private_book_docx,
-]
+                        *files_private_book_pdf,
+                        *files_private_book_docx,
+                     ]
+
+files_private = [
+                        *files_documents_pdfs_business_projects,
+                        *files_private_book,
+                        *files_private_kif_diagnostic
+                     ]
+
 
 files_documents_pdfs_legal = [
     "/Volumes/xFAT-1TB-2/e/personal-private/judo/HJS/01-pravno/DORH/02-kaznena-prijava-koraci/TODO/mails/20251201-03-czm-pravobraniteljica--odgovor-akcijski-plan/docs/MAIL_001119.pdf",
@@ -236,7 +247,7 @@ youtube_video_ids = [
 
 
 files = \
-         files_private_book \
+         files_private \
          + \
          files_private_kif_diagnostic \
          + \
