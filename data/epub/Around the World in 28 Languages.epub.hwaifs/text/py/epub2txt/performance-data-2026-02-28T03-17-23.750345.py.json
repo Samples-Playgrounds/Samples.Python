@@ -1,0 +1,12 @@
+{
+    "function_method_name": "extract_text_to_file_from_epub_document",
+    "time_start_1": 1772245043.729035,
+    "time_end_1": 1772245043.750342,
+    "time_total_1": 0.021306991577148438,
+    "time_start_2": 432774.268863083,
+    "time_end_2": 432774.290170583,
+    "time_total_2": 0.021307500021066517,
+    "time_start_3": 432774268863208,
+    "time_end_3": 432774290170666,
+    "time_total_3": 0.021307458
+}

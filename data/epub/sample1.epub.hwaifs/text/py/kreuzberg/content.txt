@@ -1,12 +1,4 @@
----
-title: Cover Image
----
-?xml version='1.0' encoding='utf-8'?>
-!SVG Image
----
-title: The Geography of Bliss
----
-?xml version='1.0' encoding='utf-8'?>
+Cover Image
 Copyright © 2008 by Eric Weiner
 All rights reserved. Except as permitted under the U.S. Copyright Act of 1976, no part of this publication may be reproduced, distributed, or transmitted in any form or by any means, or stored in a database or retrieval system, without the prior written permission of the publisher.
 Twelve
@@ -14,14 +6,10 @@ Hachette Book Group USA
 237 Park Avenue
 New York, NY 10017
 Visit our Web site at www.HachetteBookGroupUSA.com.
-Twelve is an imprint of Grand Central Publishing.
+Twelve is an imprint of Grand Central Publishing. 
 The Twelve name and logo is a trademark of Hachette Book Group USA, Inc.
 First eBook Edition: January 2008
 ISBN-13: 978-0-446-51107-0
----
-title: The Geography of Bliss
----
-?xml version='1.0' encoding='utf-8'?>
 Contents
 Introduction
 Chapter 1: THE NETHERLANDS: Happiness Is a Number
@@ -37,21 +25,9 @@ Chapter 10: AMERICA: Happiness Is Home
 EPILOGUE
 Acknowledgments
 About the Author
----
-title: The Geography of Bliss
----
-?xml version='1.0' encoding='utf-8'?>
 for Sharon
----
-title: The Geography of Bliss
----
-?xml version='1.0' encoding='utf-8'?>
 In these days of wars and rumors of wars, haven’t you ever dreamed of a place where there was peace and security, where living was not a struggle but a lasting delight?
 —Lost Horizon, directed by Frank Capra, 1937
----
-title: The Geography of Bliss
----
-?xml version='1.0' encoding='utf-8'?>
 Introduction
 My bags were packed and my provisions loaded. I was ready for adventure. And so, on a late summer afternoon, I dragged my reluctant friend Drew off to explore new worlds and, I hoped, to find some happiness along the way. I’ve always believed that happiness is just around the corner. The trick is finding the right corner.
 Not long into our journey, Drew grew nervous. He pleaded with me to turn back, but I insisted we press on, propelled by an irresistible curiosity about what lay ahead. Danger? Magic? I needed to know, and to this day I’m convinced I would have reached wherever it was I was trying to reach had the Baltimore County Police not concluded, impulsively I thought at the time, that the shoulder of a major thoroughfare was no place for a couple of five-year-olds.
@@ -71,10 +47,6 @@ With our words, we subconsciously conflate geography and happiness. We speak of 
 Lurking just behind the curtain is, of course, that tantalizing, slippery concept known as paradise. It has beguiled us humans for some time now. Plato imagined the Blessed Isles, a place where happiness flowed like the warm Mediterranean waters. Until the eighteenth century, people believed that biblical paradise, the Garden of Eden, was a real place. It appeared on maps—located, ironically, at the confluence of the Tigris and Euphrates rivers, in what is now modern-day Iraq.
 European explorers prepared for expeditions in search of paradise by learning Aramaic, the language Jesus spoke. I set out on my journey, my search for paradise, speaking not Aramaic but another obscure language, the modern liturgy of bliss spoken by the new apostles of the emerging science of happiness. I brush up on terms like “positive affect” and “hedonic adaptation.” I carry no Bible, just a few Lonely Planet guides and a conviction that, as Henry Miller said, “One’s destination is never a place, but a new way of seeing things.”
 And so, on a typically steamy day in Miami (itself some people’s concept of paradise), I pack my bags and depart my home on what I know full well is a fool’s errand, every bit as foolish as the one I tried to pull off as a peripatetic five-year-old. As the author Eric Hoffer put it, “The search for happiness is one of the chief sources of unhappiness.” That’s okay. I’m already unhappy. I have nothing to lose.
----
-title: The Geography of Bliss
----
-?xml version='1.0' encoding='utf-8'?>
 Chapter 1
 THE NETHERLANDS
 Happiness Is a Number
@@ -97,7 +69,7 @@ I walk down a nondescript corridor and knock on a nondescript office door. A man
 His office looks like that of any professor: books and papers everywhere—not especially messy, but not the neatest office I’ve ever seen, either. Conspicuously, there is not a smiley face in sight. Veenhoven pours me a cup of green tea. Then he grows silent and waits for me to talk.
 I don’t know what to say. As a journalist, I’ve conducted hundreds of interviews. I’ve interviewed kings and presidents and prime ministers, not to mention heads of terrorist organizations like Hezbollah. Yet sitting here, across from this kindly Dutch professor who looks like Robin Williams, I am stumped. Part of me, the part that desperately craves peace of mind, wants to shout, “Dr. Veenhoven, you’ve crunched the numbers, you’ve studied happiness your entire professional life; please give it to me. Give me the damn formula for happiness!”
 But I don’t say that. I can’t shake years of training, which tell me to maintain my distance from my subject and never, ever reveal too much about myself. I’m like the off-duty cop who is out to dinner with his family but can’t stop scanning the restaurant for potential shooters.
-So instead of unburdening my soul, I resort to an old trick employed by journalists and women who want to put a date at ease. “Dr. Veenhoven,” I finally say, “tell me about yourself. How did you get into the happiness business?”
+So instead of unburdening my soul, I resort to an old trick employed by journalists and women who want to put a date at ease. “Dr. Veenhoven,” I finally say, “tell me about yourself. How did you get into the happiness business?” 
 Veenhoven leans back in his chair, happy to oblige. He came of age in the 1960s. Everyone on his college campus was smoking dope, wearing Che Guevara T-shirts and talking about the good society. Veenhoven also smoked plenty of dope but didn’t wear a Che Guevara T-shirt; and as for those “good societies,” Eastern Bloc countries, Veenhoven found them wanting. Instead of judging a society by its system, he thought, why not judge it by its results? Were its citizens happy? Veenhoven’s hero wasn’t Che Guevara but a socially inept nineteenth-century British barrister named Jeremy Bentham. Bentham famously espoused the utilitarian principle, “the greatest happiness of the greatest number.” Veenhoven would have gladly worn a Jeremy Bentham T-shirt, had such a thing existed.
 Veenhoven was studying sociology—a field that, at the time, meant only the study of sick societies, dysfunctional ones. Its sister discipline, psychology, studied sick minds. But not young Ruut. He was interested in healthy minds and happy places. One day, a bit timid but determined nonetheless, Veenhoven knocked on his advisor’s door and asked if he could please study happiness. His advisor, a sober man with solid academic credentials, told him, in no uncertain terms, to shut up and never mention that word again. Happiness was not a serious subject.
 Veenhoven left, chastised but secretly pleased. He knew he was on to something. It so happened, though the young Dutch graduate student didn’t know at the time, couldn’t possibly have known, that around the world social scientists were waking up to a new discipline: happiness studies. Today, Veenhoven is at the forefront of a field that churns out hundreds of research papers each year. There are happiness conferences and a Journal of Happiness Studies (which Veenhoven edits). Students at Claremont Graduate University in California can now earn an MA or PhD in positive psychology—in happiness.
