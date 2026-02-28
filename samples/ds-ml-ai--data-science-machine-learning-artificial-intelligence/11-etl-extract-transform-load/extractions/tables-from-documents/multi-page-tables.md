@@ -20,6 +20,11 @@ multi-page-tables.md
 
 *   https://www.reddit.com/r/MachineLearning/comments/1hg5d3p/p_vision_parse_parse_pdf_documents_into_markdown/
 
+*   https://www.reddit.com/r/Rag/comments/1reezcu/best_way_to_handle_pdfs_containing_huge_tables_in/
+
+    ```
+    docling --from pdf --to md --image-export-mode embedded --table-mode accurate
+    ```
 
 
 Libraries:
@@ -34,6 +39,8 @@ Libraries:
 *   https://github.com/microsoft/markitdown/
 
 *   https://github.com/ocrmypdf/OCRmyPDF
+
+*   docling
 
 
 
