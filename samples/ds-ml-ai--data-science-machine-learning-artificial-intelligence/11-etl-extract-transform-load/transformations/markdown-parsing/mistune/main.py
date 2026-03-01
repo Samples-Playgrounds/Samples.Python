@@ -41,7 +41,6 @@ def main():
       #print(f"mrkdwn_analysis <- source = {source}")
       for p in [
                   "text/py/pymupdf4llm/content.md",
-                  "text/py/markitdown/content.md",
                   "text/py/docling/content.md",
                   "text/py/docling/content.filetype-agnostic.md",
                   "text/py/marker/content.md"
