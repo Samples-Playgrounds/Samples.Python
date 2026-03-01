@@ -1,12 +1,12 @@
 # 
 
 
-https://github.com/miyuchina/mistletoe
+*   https://github.com/miyuchina/mistletoe
 
-https://github.com/executablebooks/markdown-it-py
+*   https://github.com/executablebooks/markdown-it-py
 
 
-```
+```python
 from markdown_it import MarkdownIt
 from mdit_py_plugins.front_matter import front_matter_plugin
 from mdit_py_plugins.footnote import footnote_plugin
@@ -38,6 +38,6 @@ html_text = md.render(text)
 # Path("output.html").write_text(html_text)
 ```
 
+*   https://github.com/frostming/marko
 
-
-https://github.com/frostming/marko
+*   https://gist.github.com/jdwebprogrammer/0f644a56ab2342db8c42c556ad495867
