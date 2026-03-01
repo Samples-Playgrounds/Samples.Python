@@ -8,6 +8,9 @@ EXTRACTORS=\
 "
 markdown-analysis
 markdown-it-py
+markdown-to-json
+marko
+mdextractor
 # todo
 "
 
