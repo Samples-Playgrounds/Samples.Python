@@ -1,10 +1,16 @@
+ai/
 commonmark-py/
-markdown-analysis/
+html-to-json/
+langchain-markdownsplitter/
 markdown-it-py/
+markdown-to-json/
 marko/
 mdextractor/
+meltdown/
 mistletoe/
 mistune/
 panflute/
 pymarkdown/
+yamper/
+z_markdown-analysis/
 z_markdown-it-pyrs/
