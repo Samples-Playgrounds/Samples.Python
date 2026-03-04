@@ -15,8 +15,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
 
-pip install mistletoe
-
+pip install mistletoe  --upgrade --quiet --no-cache-dir
 
 pip install timer
 pip install codetiming

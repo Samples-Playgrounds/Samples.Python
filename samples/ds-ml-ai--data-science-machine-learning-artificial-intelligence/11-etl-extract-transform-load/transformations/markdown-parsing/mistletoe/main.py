@@ -7,8 +7,7 @@ rm *.pyc
 """
 python -m venv .venv
 source .venv/bin/activate
-pip install markdown-it-py[plugins]
-pip install markdown-it-py[linkify,plugins]
+pip install misteltoe
 pip freeze > requirements.txt
 """
 
@@ -17,7 +16,7 @@ pip install -r requirements.txt
 python main.py
 """
 
-import api_parse_analyze_markdown_mistune as api
+import api_parse_analyze_markdown_mistletoe as api
 
 
 import sys  
@@ -46,8 +45,8 @@ def main():
                   "text/py/marker/content.md"
                ]:
          file = f"{source}.hwaifs/{p}"
-         print(f"mrkdwn_analysis <- source = {file}")
-         api.api_parse_analyze_markdown_markdown_it_py(file)
+         print(f"mistletoe <- source = {file}")
+         api.api_parse_analyze_markdown_mistletoe(file)
 
 
 if __name__ == '__main__':
