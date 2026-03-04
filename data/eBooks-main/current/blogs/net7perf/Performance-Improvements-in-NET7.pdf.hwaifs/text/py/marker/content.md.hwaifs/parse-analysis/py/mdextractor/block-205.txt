@@ -1,0 +1,3 @@
+[Benchmark]
+[Arguments(12345.6789)]
+public int ILogB(double arg) => Math.ILogB(arg);

@@ -1,0 +1,8 @@
+if (source is int[] array)
+{
+ ProcessArray(array);
+}
+else
+{
+ ProcessEnumerable(source);
+}

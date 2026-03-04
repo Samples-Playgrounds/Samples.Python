@@ -1,0 +1,4 @@
+if (Utilities.s_hasTimeout)
+{
+ base.CheckTimeout();
+}

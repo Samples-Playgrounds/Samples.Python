@@ -1,0 +1,5 @@
+void Add(ref int i)
+{
+ ref j = ref i;
+ j++;
+}

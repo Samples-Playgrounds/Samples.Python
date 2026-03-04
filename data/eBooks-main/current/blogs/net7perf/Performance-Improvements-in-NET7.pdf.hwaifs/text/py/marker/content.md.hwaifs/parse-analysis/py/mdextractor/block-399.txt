@@ -1,0 +1,5 @@
+Action disposeAction;
+IDisposable? disposable = null;
+...
+if (disposable != null)
+{

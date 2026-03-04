@@ -1,0 +1,3 @@
+service ThingLog {
+ rpc OpenConnection(stream Thing) returns (ConnectionClosedResponse);
+}

@@ -1,0 +1,7 @@
+while (i < str.Length)
+{
+ if ((uint)((c | 0x20) - 'a') <= 'z' - 'a')
+ {
+ i++;
+ }
+}

@@ -1,0 +1,2 @@
+; Program.M()
+ mov eax,5

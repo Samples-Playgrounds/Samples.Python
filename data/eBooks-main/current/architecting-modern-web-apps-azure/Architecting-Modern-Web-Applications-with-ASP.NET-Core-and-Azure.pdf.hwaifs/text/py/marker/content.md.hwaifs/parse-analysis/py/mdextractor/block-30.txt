@@ -1,0 +1,4 @@
+[Authorize(Roles = "HRManager,Finance")]
+public class SalaryController : Controller
+{
+}

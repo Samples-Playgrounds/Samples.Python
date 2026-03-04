@@ -1,0 +1,4 @@
+[Benchmark]
+public int A() => 3 + (4 * 5);
+[Benchmark]
+public int B() => A() * 2;

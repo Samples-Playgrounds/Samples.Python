@@ -1,0 +1,3 @@
+[Benchmark]
+[Arguments(42)]
+public int ResetLowestSetBit(int x) => x & (x - 1);

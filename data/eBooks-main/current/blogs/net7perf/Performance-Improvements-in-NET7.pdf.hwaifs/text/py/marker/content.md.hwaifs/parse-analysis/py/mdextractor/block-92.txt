@@ -1,0 +1,2 @@
+int 3
+; Total bytes of code 26

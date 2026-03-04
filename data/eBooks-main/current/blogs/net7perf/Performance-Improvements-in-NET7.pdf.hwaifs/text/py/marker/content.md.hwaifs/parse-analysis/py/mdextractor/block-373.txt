@@ -1,0 +1,6 @@
+if (arg is null)
+ ThrowArgumentNullException(nameof(arg));
+...
+[DoesNotReturn]
+private static void ThrowArgumentNullException(string arg) =>
+ throw new ArgumentNullException(arg);

@@ -1,0 +1,2 @@
+[Benchmark]
+public TimeSpan FromSeconds() => TimeSpan.FromSeconds(5);

@@ -1,0 +1,3 @@
+direction == ListSortDirection.Descending ?
+ string.Concat("[", property.Name, "] DESC") :
+ string.Concat("[", property.Name, "]");

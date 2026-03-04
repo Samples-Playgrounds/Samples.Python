@@ -1,0 +1,4 @@
+public void Process(string name)
+{
+ ArgumentNullException.ThrowIfNull(name);
+}

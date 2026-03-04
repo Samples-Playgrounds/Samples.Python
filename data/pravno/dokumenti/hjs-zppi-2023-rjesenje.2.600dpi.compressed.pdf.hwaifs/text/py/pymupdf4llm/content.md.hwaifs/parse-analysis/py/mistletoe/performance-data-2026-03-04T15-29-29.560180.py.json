@@ -1,0 +1,12 @@
+{
+    "function_method_name": "api_parse_analyze_markdown_mistletoe",
+    "time_start_1": 1772634569.560064,
+    "time_end_1": 1772634569.560179,
+    "time_total_1": 0.00011491775512695312,
+    "time_start_2": 822299.983610166,
+    "time_end_2": 822299.983725583,
+    "time_total_2": 0.00011541694402694702,
+    "time_start_3": 822299983610208,
+    "time_end_3": 822299983725583,
+    "time_total_3": 0.000115375
+}

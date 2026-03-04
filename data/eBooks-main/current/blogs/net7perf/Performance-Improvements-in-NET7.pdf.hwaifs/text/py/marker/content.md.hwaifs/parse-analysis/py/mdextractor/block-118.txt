@@ -1,0 +1,2 @@
+; Program.FromSeconds()
+ mov eax,2FAF080

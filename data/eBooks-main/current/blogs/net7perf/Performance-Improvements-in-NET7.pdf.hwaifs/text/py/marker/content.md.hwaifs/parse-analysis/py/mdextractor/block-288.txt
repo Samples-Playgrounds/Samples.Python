@@ -1,0 +1,2 @@
+call CORINFO_HELP_RNGCHKFAIL
+int 3

@@ -1,0 +1,1 @@
+public static ReadOnlySpan<byte> Text => "hello"u8;

@@ -1,0 +1,9 @@
+[Benchmark(Baseline = true)]
+public TimeSpan Old()
+{
+ Stopwatch sw = Stopwatch.StartNew();
+ return sw.Elapsed;
+}
+[Benchmark]
+public TimeSpan New()
+{

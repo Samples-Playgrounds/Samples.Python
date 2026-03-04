@@ -1,0 +1,5 @@
+public class PortfolioService : Protos.Portfolios.PortfoliosBase
+{
+ private readonly IPortfolioRepository _repository;
+ public PortfolioService(IPortfolioRepository repository)
+ {

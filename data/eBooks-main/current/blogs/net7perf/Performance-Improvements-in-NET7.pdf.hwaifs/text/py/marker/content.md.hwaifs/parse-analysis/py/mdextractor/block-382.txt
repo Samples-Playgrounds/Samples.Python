@@ -1,0 +1,5 @@
+if (_dictionary.ContainsKey(key))
+{
+ var value = _dictionary[key];
+ Use(value);
+}

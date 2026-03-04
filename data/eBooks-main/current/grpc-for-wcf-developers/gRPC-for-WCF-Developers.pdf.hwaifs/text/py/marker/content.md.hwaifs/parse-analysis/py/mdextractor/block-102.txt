@@ -1,0 +1,12 @@
+public async ValueTask DisposeAsync()
+{
+ try
+ {
+ await _duplexStream.RequestStream.CompleteAsync().ConfigureAwait(false);
+ await _responseTask.ConfigureAwait(false);
+ }
+ finally
+ {
+ _duplexStream.Dispose();
+ }
+}

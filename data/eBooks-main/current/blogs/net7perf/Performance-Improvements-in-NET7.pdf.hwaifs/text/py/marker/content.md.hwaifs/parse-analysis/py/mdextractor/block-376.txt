@@ -1,0 +1,3 @@
+[DoesNotReturn]
+internal static void Throw(string? paramName) => throw new
+ArgumentNullException(paramName);

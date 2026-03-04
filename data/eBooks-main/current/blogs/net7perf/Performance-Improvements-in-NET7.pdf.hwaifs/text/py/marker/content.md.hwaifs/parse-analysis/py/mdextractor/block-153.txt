@@ -1,0 +1,3 @@
+private int _x, _y;
+[Benchmark]
+public int Test() => (byte)_x | (byte)_y;

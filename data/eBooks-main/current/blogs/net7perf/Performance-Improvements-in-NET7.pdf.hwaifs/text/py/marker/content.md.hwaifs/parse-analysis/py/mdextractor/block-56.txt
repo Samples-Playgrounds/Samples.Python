@@ -1,0 +1,2 @@
+751D jne SHORT G_M000_IG07
+ 446BFA2A imul r15d, edx, 42

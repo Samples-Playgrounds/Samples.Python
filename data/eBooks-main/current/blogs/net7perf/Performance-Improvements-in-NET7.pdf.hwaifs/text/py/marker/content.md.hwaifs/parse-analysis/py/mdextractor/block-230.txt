@@ -1,0 +1,2 @@
+[Benchmark]
+public int GetMaxByteCount() => Encoding.UTF8.GetMaxByteCount(Sonnet.Length);

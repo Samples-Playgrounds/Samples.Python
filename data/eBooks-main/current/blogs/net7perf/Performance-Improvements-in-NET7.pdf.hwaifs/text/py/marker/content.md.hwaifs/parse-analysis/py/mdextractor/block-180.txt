@@ -1,0 +1,4 @@
+; Program.IsByRefLike()
+ mov eax,1
+ ret
+; Total bytes of code 6

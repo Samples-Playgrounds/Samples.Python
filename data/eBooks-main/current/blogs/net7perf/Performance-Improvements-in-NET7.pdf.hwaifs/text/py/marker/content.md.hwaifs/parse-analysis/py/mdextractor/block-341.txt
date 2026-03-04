@@ -1,0 +1,4 @@
+interface IReader
+{
+ ValueTask<int> ReadAsync(Stream s, Memory<byte> buffer);
+}

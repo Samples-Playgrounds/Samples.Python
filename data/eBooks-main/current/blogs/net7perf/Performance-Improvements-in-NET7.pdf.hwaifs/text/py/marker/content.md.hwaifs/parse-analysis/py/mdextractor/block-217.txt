@@ -1,0 +1,3 @@
+private int[] _data = new int[1000];
+[Benchmark]
+public int IndexOf() => _data.AsSpan().IndexOf(42);

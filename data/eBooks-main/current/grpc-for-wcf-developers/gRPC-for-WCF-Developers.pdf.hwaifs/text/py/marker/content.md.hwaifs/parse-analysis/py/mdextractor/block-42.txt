@@ -1,0 +1,4 @@
+await _hub.SendAsync(requestStream.Current.Text);
+ }
+ }
+}

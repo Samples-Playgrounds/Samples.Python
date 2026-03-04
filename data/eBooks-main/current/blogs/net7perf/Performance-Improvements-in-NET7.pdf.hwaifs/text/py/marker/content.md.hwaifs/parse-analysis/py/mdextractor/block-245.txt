@@ -1,0 +1,5 @@
+private static string CreateSortString(PropertyDescriptor property, ListSortDirection 
+direction) =>
+ direction == ListSortDirection.Descending ?
+ $"[{property.Name}] DESC" :
+ $"[{property.Name}]";

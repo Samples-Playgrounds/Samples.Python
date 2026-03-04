@@ -1,0 +1,3 @@
+message StockPrices {
+ map<string, double> prices = 1;
+}

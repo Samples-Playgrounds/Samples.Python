@@ -1,0 +1,1 @@
+Append(ref Unsafe.Add(ref value.GetRawStringData(), startIndex), count);

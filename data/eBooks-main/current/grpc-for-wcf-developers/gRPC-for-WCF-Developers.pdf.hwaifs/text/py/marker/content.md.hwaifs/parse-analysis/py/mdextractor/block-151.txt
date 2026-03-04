@@ -1,0 +1,2 @@
+linkerd inject stockdata.yml | kubectl apply -f -
+linkerd inject stockweb.yml | kubectl apply -f -

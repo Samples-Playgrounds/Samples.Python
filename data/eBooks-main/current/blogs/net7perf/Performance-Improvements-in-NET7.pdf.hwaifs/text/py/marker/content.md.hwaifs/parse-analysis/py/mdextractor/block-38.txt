@@ -1,0 +1,3 @@
+; Tier-1 compilation
+; OSR variant for entry point 0x23
+; optimized code

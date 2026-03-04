@@ -1,0 +1,2 @@
+[MethodImpl(MethodImplOptions.AggressiveInlining)]
+private void Check(char c) { }

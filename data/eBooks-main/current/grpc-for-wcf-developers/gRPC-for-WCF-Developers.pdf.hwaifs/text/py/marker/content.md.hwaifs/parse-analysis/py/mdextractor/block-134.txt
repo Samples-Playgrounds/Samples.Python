@@ -1,0 +1,1 @@
+docker build -t stockdata:1.0.0 -f ./src/StockData/Dockerfile .
