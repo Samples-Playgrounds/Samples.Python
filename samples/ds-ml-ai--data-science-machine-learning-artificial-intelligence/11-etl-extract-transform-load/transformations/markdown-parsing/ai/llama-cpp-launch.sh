@@ -1,0 +1,6 @@
+#!/bin/bash
+
+llama-server \
+    --host 0.0.0.0 \
+    --port 11464  \
+    --model ~/.lmstudio/models/unsloth/Qwen3.5-122B-A10B-GGUF/Qwen3.5-122B-A10B-Q5_K_M-00001-of-00003.gguf
