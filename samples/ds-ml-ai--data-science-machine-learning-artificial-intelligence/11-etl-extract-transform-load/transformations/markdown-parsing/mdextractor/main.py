@@ -38,7 +38,7 @@ def main():
                                  "../../../../../../data/"
                               )
       print(120 * "=")
-      print(f"marko <- source = {source}")
+      print(f"mdextractor <- source = {source}")
       for file in [
                      "text/py/pymupdf4llm/content.md",
                      "text/py/docling/content.md",
@@ -50,7 +50,7 @@ def main():
          file = f"{source}.hwaifs/{file}"
          print(f"                = {file}")
          paragraphs = api.api_parse_analyze_markdown_mdextractor(file)
-         print(f"marko <- paragraphs = {paragraphs}")
+         print(f"mdextractor <- paragraphs = {paragraphs}")
 
 
 if __name__ == '__main__':
