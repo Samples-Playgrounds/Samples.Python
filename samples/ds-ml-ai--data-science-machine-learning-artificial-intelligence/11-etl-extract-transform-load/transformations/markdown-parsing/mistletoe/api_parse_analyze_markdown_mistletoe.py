@@ -1,4 +1,5 @@
 import mistletoe
+
 import json
 
 import os
@@ -80,5 +81,8 @@ def api_parse_analyze_markdown_mistletoe(source: str) -> str:
     
     with open(f"{directory}/content.html", "w") as f:
         f.write(html_output)
+
+    with open(f"{directory}/content.md.json", "w") as f:
+        f.write(txt_json_output)
 
     return txt_json_output
