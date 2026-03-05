@@ -73,7 +73,7 @@ def api_parse_analyze_markdown_commonmark (source: str) -> str:
     time_total_3 = (time_stop_3 - time_start_3) / 1_000_000_000
 
     times = {
-        "function_method_name" : "extract_text_to_file_from_any_document",
+        "function_method_name" : "api_parse_analyze_markdown_commonmark",
         "time_start_1": time_start_1,
         "time_end_1": time_stop_1,
         "time_total_1": time_total_1,
