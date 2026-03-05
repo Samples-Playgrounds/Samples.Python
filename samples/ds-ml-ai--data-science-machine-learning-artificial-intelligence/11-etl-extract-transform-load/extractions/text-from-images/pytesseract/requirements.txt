@@ -1,7 +1,7 @@
 codetiming==1.4.0
-numpy==2.4.1
-opencv-python==4.13.0.90
+numpy==2.4.2
+opencv-python==4.13.0.92
 packaging==26.0
-pillow==12.1.0
+pillow==12.1.1
 pytesseract==0.3.13
 timer==0.3.0
