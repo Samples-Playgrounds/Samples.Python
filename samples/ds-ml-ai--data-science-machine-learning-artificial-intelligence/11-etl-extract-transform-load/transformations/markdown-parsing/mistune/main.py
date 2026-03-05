@@ -7,8 +7,7 @@ rm *.pyc
 """
 python -m venv .venv
 source .venv/bin/activate
-pip install markdown-it-py[plugins]
-pip install markdown-it-py[linkify,plugins]
+pip install mistune
 pip freeze > requirements.txt
 """
 
@@ -47,7 +46,7 @@ def main():
                ]:
          file = f"{source}.hwaifs/{p}"
          print(f"mrkdwn_analysis <- source = {file}")
-         api.api_parse_analyze_markdown_markdown_it_py(file)
+         api.api_parse_analyze_markdown_mistune(file)
 
 
 if __name__ == '__main__':
