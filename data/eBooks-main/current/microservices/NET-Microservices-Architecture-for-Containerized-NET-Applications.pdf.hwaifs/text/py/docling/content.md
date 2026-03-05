@@ -809,7 +809,7 @@ For Linux, multiple distros are available and supported in official .NET Docker 
 
 Existing
 
-•NET
+·NET
 
 apps
 
@@ -960,7 +960,7 @@ Microsoft
 
 Azure
 
-• i
+· i
 
 ## Host 1 (VM) A or
 
@@ -1096,13 +1096,13 @@ As the name implies, a microservices architecture is an approach to building a s
 
 Monolithic deployment approach
 
-• A traditional application has most of its functionality within a
+· A traditional application has most of its functionality within a
 
 few processes that are libraries.
 
 Microservices application approach
 
-• A microservice application segregates functionality into
+· A microservice application segregates functionality into
 
 separate smaller services.
 
@@ -1170,7 +1170,7 @@ Data Tier
 
 Data in Microservices approach
 
-• Graph of interconnected microservices
+· Graph of interconnected microservices
 
 State typically scoped to the microservice transactional purchase subsystems, and customer support subsystems each call on unique customer entity attributes and data, and where each employs a different Bounded Context (BC).
 
@@ -1249,7 +1249,7 @@ Although you might have identified certain business microservices or Bounded Con
 
 Therefore, a business microservice or Bounded Context is a logical architecture that might coincide (or not) with physical architecture. The important point is that a business microservice or Bounded Context must be autonomous by allowing code and state to be independently versioned, deployed, and scaled.
 
-• -
+· -
 
 -
 
@@ -2243,13 +2243,13 @@ Figure 4-23 illustrates deployment into a cluster of an application composed of 
 
 Composed Docker Applications in a Cluster
 
-• For each service instance you use one container
+· For each service instance you use one container
 
-• Docker images/containers are "units of deployment"
+· Docker images/containers are "units of deployment"
 
 A container is an instance of a Docker Image
 
-## • A host (VM/server) handles many containers
+## · A host (VM/server) handles many containers
 
 Figure 4-23. A cluster of containers
 
@@ -2544,15 +2544,15 @@ Build scalable network applications using Node.js, an asynchronous event-driven 
 
 Installation details
 
-• Visual Studio core editor
+· Visual Studio core editor
 
-• ASP.NET and web development
+· ASP.NET and web development
 
-• Individual components
+· Individual components
 
 NET 6.0 Runtime
 
-- •
+- ·
 
 X
 
@@ -2589,7 +2589,7 @@ Framework
 
 Container Orchestrator Support...
 
-•NET 6.0 (Long-term support)
+·NET 6.0 (Long-term support)
 
 Docker Support...
 
@@ -2599,7 +2599,7 @@ None
 
 Application Insights Telemetry...
 
-• Configure for HTTPS O
+· Configure for HTTPS O
 
 Client-Side Library...
 
@@ -2949,7 +2949,7 @@ When you add container orchestrator support, as shown in Figure 5-7, for the fir
 
 1 E docker-compose
 
-• .dockerignore
+· .dockerignore
 
 New Item...
 
@@ -2963,7 +2963,7 @@ CtrI+Shift+A
 
 Shift+Alt+A
 
-• docker-compose.override.yml
+· docker-compose.override.yml
 
 New Folder
 
@@ -3105,7 +3105,7 @@ Toolbo
 
 FILE EDIT VIEW PROJECT BUILD DEBUG
 
-• -
+· -
 
 TEST
 
@@ -3163,7 +3163,7 @@ WINDOW HELP
 
 Search (CtrI+Q)
 
-- • Docker Compose
+- · Docker Compose
 
 StatusCode
 
@@ -3356,7 +3356,7 @@ TypeScript/Angular 2
 
 Identity microservice (STS+users)
 
-•
+·
 
 SQL Server database
 
@@ -3381,7 +3381,7 @@ eShopOnContainers reference application
 
 -
 
-• Docker Host
+· Docker Host
 
 API Gateways/BFF
 
@@ -3482,9 +3482,9 @@ Microservice 1
 
 Container
 
-• ASP.NET Core
+· ASP.NET Core
 
-• Simple CRUD Design
+· Simple CRUD Design
 
 Entity Framework Core
 
@@ -3516,7 +3516,7 @@ DDD &amp; CQRS patterns
 
 Container
 
-•
+·
 
 ASP.NET Core
 
@@ -3533,23 +3533,23 @@ ASP.NET Core
 
 - Event-Driven Architecture (EDA).
 
-• Simple CRUD Design
+· Simple CRUD Design
 
 You can also build microservices with many technologies and languages, such as ASP.NET Core Web APIs, NancyFx, ASP.NET Core SignalR (available with .NET Core 2 or later), F#, Node.js, Python, Java, C++, GoLang, and more. database Container
 
 Java
 
-• ASP.NET Core
+· ASP.NET Core
 
 The important point is that no particular architecture pattern or style, nor any particular technology, is right for all situations. Figure 6-3 shows some approaches and technologies (although not in any particular order) that could be used in different microservices. · GoLang
 
-• Hub for Real Time comm.
+· Hub for Real Time comm.
 
-• i.e. Calculus focused
+· i.e. Calculus focused
 
 ## Container Container
 
-• Stateless process
+· Stateless process
 
 Figure 6-3. Multi-architectural patterns and the polyglot microservices world
 
@@ -3557,21 +3557,21 @@ Figure 6-3. Multi-architectural patterns and the polyglot microservices world
 
 Multi-architectural pattern and polyglot microservices means you can mix and match languages and technologies to the needs of each microservice and still have them talking to each other. As shown in Figure 6-3, in applications composed of many microservices (Bounded Contexts in domain-driven design terminology, or simply 'subsystems' as autonomous microservices), you might implement each microservice in a different way. Each might have a different architecture pattern and use different languages and databas es depending on the application's nature, business requirements, and priorities. In some cases, the microservices might be similar. But that is not usually the case, because each subsystem's context boundary and requirements are usually different.
 
-• Node.js
+· Node.js
 
 Microservice 2
 
 SQL Server database
 
-• (}
+· (}
 
 DocDB /
 
 MongoDB
 
-• MySql
+· MySql
 
-• database
+· database
 
 Client apps
 
@@ -3643,7 +3643,7 @@ Recent project templates
 
 ASP.NET Core Web Application
 
-• Windows Forms App (.NET)
+· Windows Forms App (.NET)
 
 0 gRPC Service
 
@@ -3677,9 +3677,9 @@ All project types
 
 Catalog.API
 
-• Connected Services
+· Connected Services
 
-•** Dependencies
+·** Dependencies
 
 Analyzers
 
@@ -3755,9 +3755,9 @@ An important configuration to set up in the Web API project is the DbContext cla
 
 ## Additional resources
 
-- •
+- ·
 - Querying Data https://learn.microsoft.com/ef/core/querying/index
-- •
+- ·
 - Saving Data https://learn.microsoft.com/ef/core/saving/index
 
 ## The DB connection string and environment variables used by Docker containers
@@ -3854,7 +3854,7 @@ Generating Swagger metadata manually (in a JSON or YAML file) can be tedious wor
 
 Swashbuckle automatically generates Swagger metadata for your ASP.NET Web API projects. It supports ASP.NET Core Web API projects and the traditional ASP.NET Web API and any other flavor,
 
-• • Swagger UI
+· · Swagger UI
 
 +
 
@@ -4233,9 +4233,9 @@ The values set in the run-time environment always override the values defined in
 
 ## Additional resources
 
-- •
+- ·
 - Overview of Docker Compose https://docs.docker.com/compose/overview/
-- •
+- ·
 - Multiple Compose files https://docs.docker.com/compose/multiple-compose-files/
 
 ## Building optimized ASP.NET Core Docker images
@@ -4879,7 +4879,7 @@ If the 'redelivered' flag is set, the receiver must take that into account, beca
 - Publish-Subscribe channel https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel. html
 - Communicating Between Bounded Contexts https://learn.microsoft.com/previous-versions/msp-n-p/jj591572(v=pandp.10)
 
-•
+·
 
 Eventual Consistency https://en.wikipedia.org/wiki/Eventual\_consistency
 
@@ -4986,7 +4986,7 @@ Marketing
 
 5 Ordering
 
-• Web Apps tests
+· Web Apps tests
 
 ServiceTests docker-compose
 
@@ -5246,7 +5246,7 @@ API Gateways / BFF
 
 (Publish/Subscribe
 
-•
+·
 
 Services
 
@@ -5396,9 +5396,9 @@ Ocelot is designed to work with ASP.NET Core only. The latest version of the pac
 
 ApiGw-Base
 
-• -e OcelotApiGw
+· -e OcelotApiGw
 
-•- Connected Services
+·- Connected Services
 
 * Dependencies
 
@@ -5508,7 +5508,7 @@ ApiGateways x + v
 
 ApiGw-Base
 
-• localhost:5202/api/v1/c/catalog/items/2/
+· localhost:5202/api/v1/c/catalog/items/2/
 
 ("id": 2, "name": ".NET Black &amp; White Mug", "description": ".NET Black &amp; White
 
@@ -5516,7 +5516,7 @@ D a@] OcelotApiGw
 
 Id": 2, "catalogBrand": nul1, "availableStock":99, "restockThreshold": 0, "maxStockThreshold": 0, "onReorder": false)
 
-- • ×
+- · ×
 
 * 2 &lt; ...
 
@@ -5528,7 +5528,7 @@ Mobile. Bff.Marketing
 
 Because of that previous code, and as shown in the Visual Studio Explorer below, the only file needed to define each specific business/BFF API Gateway is just a configuration.json file, because the four API Gateways are based on the same Docker image.
 
-• Web.Bff.Shopping
+· Web.Bff.Shopping
 
 D a©] Web.Shopping.HttpAggregator foJ configuration.json
 
@@ -5558,7 +5558,7 @@ localhost
 
 x + v eShopOnContainers
 
-• localhost:5101/api/v1/Catalog/items/2|
+· localhost:5101/api/v1/Catalog/items/2|
 
 (API Gateways / BFF and Aggregator-services details)
 
@@ -5582,7 +5582,7 @@ TypeScript/Angular
 
 Id": 2, "catalogBrand": nul1, "availableStock": 99, "restockThreshold": 0, "maxStockThreshold": 0, "onReorder": false)
 
-- • X
+- · X
 
 # R E
 
@@ -5604,7 +5604,7 @@ Service Bus
 
 But the application is configured so it accesses all the microservices through the API Gateways, not through the direct port 'shortcuts'. Marketing microservice MongoDB
 
-• CosmosDB
+· CosmosDB
 
 ## The Gateway aggregation pattern in eShopOnContainers SQL Server
 
@@ -5688,7 +5688,7 @@ SQL Server database
 
 Catalog microservice
 
-• 0-
+· 0-
 
 SQL Server database
 
@@ -5706,7 +5706,7 @@ As the previous diagram shows, when the Identity microservice is beneath the API
 
 API Gateways / BFF
 
-• 0
+· 0
 
 Internal microservices
 
@@ -5776,7 +5776,7 @@ Mobile-Marketing
 
 In Kubernetes, if you don't use any ingress approach, then your services and pods have IPs only routable by the cluster network. Web-Shopping Aggregator Marketing microservice Azure
 
-• CosmosDB
+· CosmosDB
 
 But if you use an ingress approach, you'll have a middle tier between the Internet and your services (including your API Gateways), acting as a reverse proxy. Locations microservice MongoDB CosmosDB
 
@@ -6027,7 +6027,7 @@ The ViewModels can be static types defined in classes (as is implemented in the 
 
 You can use any micro ORM, Entity Framework Core, or even plain ADO.NET for querying. In the sample application, Dapper was selected for the ordering microservice in eShopOnContainers as a good example of a popular micro ORM. It can run plain SQL queries with great performance, because it's a light framework. Using Dapper, you can write a SQL query that can access and join multiple tables.
 
-•
+·
 
 Dapper by Sam Saffron, Marc Gravell, Nick Craver
 
@@ -6055,7 +6055,7 @@ As shown in the following code, a ViewModel can be directly returned by the quer
 using Dapper; using Microsoft.Extensions.Configuration; using System.Data.SqlClient; using System.Threading.Tasks; using System.Dynamic; using System.Collections.Generic; public class OrderQueries : IOrderQueries { public async Task<IEnumerable<dynamic>> GetOrdersAsync() { using (var connection = new SqlConnection(_connectionString)) { connection.Open(); return await connection.QueryAsync<dynamic>( @"SELECT o.[Id] as ordernumber, o.[OrderDate] as [date],os.[Name] as [status], SUM(oi.units*oi.unitprice) as total FROM [ordering].[Orders] o LEFT JOIN[ordering].[orderitems] oi ON o.Id = oi.orderid LEFT JOIN[ordering].[orderstatus] os on o.OrderStatusId = os.Id
 ```
 
-• v1.50.5
+· v1.50.5
 
 ```
 GROUP BY o.[Id], o.[OrderDate], os.[Name]"); } } }
@@ -6204,13 +6204,13 @@ Figure 7-5 shows how a layered design is implemented in the eShopOnContainers ap
 
 Ordering.Domain
 
-• i Dependencies
+· i Dependencies
 
 Layers in a Domain-Driven Design Microservice
 
-• '® NuGet
+· '® NuGet
 
-• SDK
+· SDK
 
 NETStandard.Library
 
@@ -6218,9 +6218,9 @@ Ordering microservice
 
 Ordering
 
-• aQ] Ordering.API
+· aQ] Ordering.API
 
-• a|c# Ordering.Domain +
+· a|c# Ordering.Domain +
 
 D all Ordering Infrastructure
 
@@ -6248,7 +6248,7 @@ Eric Evans's excellent book Domain Driven Design says the following about the do
 
 Domain Model Layer : Responsible for representing concepts of the business, information about the business situation, and business rules. State that reflects the business situation is controlled and used here, even though the technical details of storing it are delegated to the infrastructure. This layer is the heart of business software.
 
-•
+·
 
 The domain model layer is where the business is expressed. When you implement a microservice domain model layer in .NET, that layer is coded as a class library with the domain entities that capture data plus behavior (methods with logic).
 
@@ -6278,9 +6278,9 @@ Layer
 
 Depends on the Domain-Model Layer so it can:
 
-• Use entity objects
+· Use entity objects
 
-• Use Repository Interfaces/Contracts
+· Use Repository Interfaces/Contracts
 
 Basically, the application logic is where you implement all use cases that depend on a given front end. For example, the implementation related to a Web API service. Depends on the Infrastructure Layer (thru DI) so it can:
 
@@ -6306,9 +6306,9 @@ Figure 7-7. Dependencies between layers in DDD
 
 Dependencies in a DDD Service, the Application layer depends on Domain and Infrastructure, and Infrastructure depends on Domain, but Domain doesn't depend on any layer. This layer design should be independent for each microservice. As noted earlier, you can implement the most complex microservices following DDD patterns, while implementing simpler data-driven microservices (simple CRUD in a single layer) in a simpler way.
 
-• Depends on the Domain-Model Layer so it can:
+· Depends on the Domain-Model Layer so it can:
 
-•
+·
 
 ## Additional resources
 
@@ -6509,7 +6509,7 @@ Ordering Microservice/Container
 
 Ordering
 
-→ • 6Ф] Ordering.API
+→ · 6Ф] Ordering.API
 
 4 a C# Ordering. Domain
 
@@ -6537,13 +6537,13 @@ Order aggregate
 
 A a OrderAggregate
 
-• a C# Address.cs
+· a C# Address.cs
 
-• a C# Order.cs
+· a C# Order.cs
 
-• a C# Orderltem.cs
+· a C# Orderltem.cs
 
-• a C# OrderStatus.cs
+· a C# OrderStatus.cs
 
 Figure 7-11. The order aggregate in Visual Studio solution
 
@@ -6709,7 +6709,7 @@ OrderDate
 
 [Orderitems]
 
-•.•
+·.·
 
 Methods
 
@@ -7850,7 +7850,7 @@ Locations.API
 
 Connected Services
 
-#• Dependencies
+#· Dependencies
 
 F Analyzers
 
@@ -7878,9 +7878,9 @@ P
 
 P
 
-•.
+·.
 
-• Projects
+· Projects
 
 Properties
 
@@ -7992,39 +7992,39 @@ It would take another guide to cover SOLID in detail. Therefore, this guide requ
 
 $ Connected Services
 
-• .: Dependencies
+· .: Dependencies
 
-• &amp;
+· &amp;
 
 Properties
 
-• &amp;
+· &amp;
 
-• &amp;|
+· &amp;|
 
 - Inversion of Control Containers and the Dependency Injection pattern https://martinfowler.com/articles/injection.html
 
-• â|
+· â|
 
 - Steve Smith. New is Glue
 
 https://ardalis.com/new-is-glue
 
-• 6[
+· 6[
 
 Models
 
-• a 1 Queries
+· a 1 Queries
 
-• a
+· a
 
-• &amp;
+· &amp;
 
-• a
+· a
 
 ## Implement the microservice application layer using the Web API
 
-• a
+· a
 
 ## Use Dependency Injection to inject infrastructure objects into your application layer
 
@@ -8481,12 +8481,12 @@ In a similar way, you could implement other behaviors for additional aspects or 
 
 ## The mediator pattern
 
-- •
+- ·
 - Mediator pattern https://en.wikipedia.org/wiki/Mediator\_pattern
 
 ## The decorator pattern
 
-- •
+- ·
 - Decorator pattern https://en.wikipedia.org/wiki/Decorator\_pattern
 
 ## MediatR (Jimmy Bogard)
@@ -8497,7 +8497,7 @@ In a similar way, you could implement other behaviors for additional aspects or 
 
 https://lostechies.com/jimmybogard/2015/05/05/cqrs-with-mediatr-and-automapper/
 
-- •
+- ·
 - Put your controllers on a diet: POSTs and commands.
 
 https://lostechies.com/jimmybogard/2013/12/19/put-your-controllers-on-a-diet-posts-andcommands/
@@ -9020,7 +9020,7 @@ My Cart - Microsoft.eSh X
 
 + v
 
-• localhost:5100/Cart
+· localhost:5100/Cart
 
 e
 
@@ -9032,7 +9032,7 @@ BACK TO CATALOG
 
 Basket Service is inoperative, please try later on. (Business Msg Due to Circuit-Breaker)
 
-• *
+· *
 
 demouser@microsoft.com sa
 
@@ -9093,7 +9093,7 @@ Note that in the previous code, Select 1 is the query used to check the Health o
 
 Catalog.API
 
-• Connected Services
+· Connected Services
 
 ** Dependencies
 
@@ -9113,7 +9113,7 @@ Autofac.Extensions.Dependencylnjection (5.0.1)
 
 ## HealthChecks implementation in eShopOnContainers
 
-• Grpc.AspNetCore.Server (2.25.0)
+· Grpc.AspNetCore.Server (2.25.0)
 
 Microservices in eShopOnContainers rely on multiple services to perform its task. For example, the Catalog.API microservice from eShopOnContainers depends on many services, such as Azure Blob Storage, SQL Server, and RabbitMQ. Therefore, it has several health checks added using the AddCheck() method. For every dependent service, a custom IHealthCheck implementation that defines its respective health status would need to be added.
 
@@ -9153,7 +9153,7 @@ L host.docker.internal:5101/hc
 
 A Notsecure | host.docker.internal:5101/hc
 
-• ("status": "Healthy", "totalDuration": "00:00:00.0035390", "entries": ("self": ("data":
+· ("status": "Healthy", "totalDuration": "00:00:00.0035390", "entries": ("self": ("data":
 
 {), "duration": "00:00:00.0000017"
 
@@ -9185,7 +9185,7 @@ E
 
 &amp; Health Checks
 
-• Webhooks
+· Webhooks
 
 Health Checks status
 
@@ -9267,7 +9267,7 @@ Request with user information
 
 Basket Microservice
 
-101•
+101·
 
 SQL Server conta ner
 

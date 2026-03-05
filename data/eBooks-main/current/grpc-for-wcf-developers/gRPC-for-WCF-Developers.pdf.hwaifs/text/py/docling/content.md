@@ -1130,7 +1130,7 @@ Location
 
 C:\Code\ TraderSys
 
-•C#
+·C#
 
 Linux macOS
 
@@ -1470,9 +1470,9 @@ Add new gRPC service reference
 
 Select a file or URL
 
-• File
+· File
 
-• URL
+· URL
 
 Select the type of class to be generated
 
@@ -2354,7 +2354,7 @@ If you're running Docker Desktop for Windows or Docker Desktop for Mac, Kubernet
 
 Settings
 
-• Docker running
+· Docker running
 
 General
 
@@ -2498,7 +2498,7 @@ Home Page - StockWeb x+
 
 &lt; &gt;
 
-• localhost:32564
+· localhost:32564
 
 StockWeb
 

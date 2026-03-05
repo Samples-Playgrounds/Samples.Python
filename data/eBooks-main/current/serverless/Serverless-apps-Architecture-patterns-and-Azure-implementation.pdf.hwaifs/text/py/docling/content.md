@@ -275,9 +275,9 @@ N-layer application partition application logic into specific layers. The most c
 
 Ul Layer
 
-• Web Pages
+· Web Pages
 
-• Mobile App
+· Mobile App
 
 Other layers may include middleware, batch processing, and API. It's important to note the layers are logical. Although they're developed in isolation, they may all be deployed to the same target platform.
 
@@ -941,13 +941,13 @@ O Search (Ctri+/)
 
 @ Overview
 
-• Activity log iM Access control (IAM)
+· Activity log iM Access control (IAM)
 
 Tags
 
 INVESTIGATE
 
-• Application map
+· Application map
 
 @ Smart Detection
 
@@ -971,7 +971,7 @@ Users
 
 + Add chart
 
-• Time range
+· Time range
 
 Y Filters
 
@@ -981,7 +981,7 @@ Alert rules
 
 * ×
 
-••• More
+··· More
 
 # *
 
@@ -1109,7 +1109,7 @@ When a new tweet is posted
 
 When a Event Grid event occurs
 
-• Office 365
+· Office 365
 
 If true
 
@@ -1179,13 +1179,13 @@ Azure provides several messaging services, including Event Hubs and Service Bus.
 
 Event Hubs
 
-• "Point in time" data
+· "Point in time" data
 
-• Fast pull
+· Fast pull
 
-• Replay / strict ordering
+· Replay / strict ordering
 
-• Big data streams
+· Big data streams
 
 <!-- image -->
 

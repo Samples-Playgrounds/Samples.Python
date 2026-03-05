@@ -473,7 +473,7 @@ Application map
 
 CONTOSORETAILWEB - LAST 24 HOURS
 
-• ••
+· ··
 
 Visual Studio App Center provides logging and monitoring as part of a fully featured suite of tools for mobile applications. Azure Security Center, which is your one-stopshop for all the security aspects of all your services in Azure. Your logs can be visualized using Azure Dashboards or Power BI and you can even trigger custom actions from log events using Logic Apps.
 
@@ -493,7 +493,7 @@ Edit
 
 Security
 
-• Delete
+· Delete
 
 Edit
 
@@ -533,7 +533,7 @@ Figure 3 : Cloud Explorer in Visual Studio
 
 Collapse All
 
-• Bo
+· Bo
 
 Publish to Azure
 
@@ -669,7 +669,7 @@ Pipelines da Builds
 
 OI% Library
 
-• Task groups
+· Task groups
 
 ** Deployment groups
 
@@ -701,7 +701,7 @@ A
 
 99
 
-• Builds
+· Builds
 
 IS Library
 

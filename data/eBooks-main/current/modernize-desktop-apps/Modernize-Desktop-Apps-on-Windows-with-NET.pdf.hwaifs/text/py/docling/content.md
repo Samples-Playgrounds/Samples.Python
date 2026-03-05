@@ -904,11 +904,11 @@ Let's take an existing WPF sample app that reads files and shows its contents on
 
 Notification Class (Winc https://docs.microsoft.com/en-w//Uwp/apv/w
 
-•E File Loaded: C:\Users\martafuentes\Desktop\TestFile.txt
+·E File Loaded: C:\Users\martafuentes\Desktop\TestFile.txt
 
 Microsoft
 
-Clear •
+Clear ·
 
 Wrao Content indows ut notifications not/fication
 
@@ -932,7 +932,7 @@ AdaptiveNotificationContent
 
 &gt; AdaptiveNobficationTest
 
-• BadgeNotification
+· BadgeNotification
 
 Badge Template Type
 
@@ -942,9 +942,9 @@ Badge Template Type
 
 &gt; BadgeUpdater
 
-• AdaptiveNotificationContent
+· AdaptiveNotificationContent
 
-• KnownAdaptiveNotificationkints
+· KnownAdaptiveNotificationkints
 
 *
 
@@ -982,7 +982,7 @@ You're now prepared to start adding some code.
 
 › KnownAdaptiveNotificationTextStyles
 
-• Known Notification®indings
+· Known Notification®indings
 
 - Notification
 
@@ -990,7 +990,7 @@ Notification
 
 + Download PDF
 
-• Escribe aqui para buscar
+· Escribe aqui para buscar
 
 Notification Class
 
@@ -1010,19 +1010,19 @@ X
 
 Add New Project
 
-• Recent
+· Recent
 
 4 Installed
 
-• Visual C#
+· Visual C#
 
 Get Started
 
 Windows Desktop
 
-• Web
+· Web
 
-• Office/SharePoint
+· Office/SharePoint
 
 .NET Core
 
@@ -1048,7 +1048,7 @@ WCF
 
 Workflow
 
-• Azure Data Lake
+· Azure Data Lake
 
 Although the project builds, there are errors because the Notifications API requires a Package Identity and you didn't provide it. Adding a Windows Packaging Project to the solution will fix the issue:
 
@@ -1066,7 +1066,7 @@ Select the minimum Windows version you want to support and the version you're ta
 
 Sort by: Default
 
-• # E
+· # E
 
 Blank App (Universal Windows)
 
@@ -1120,15 +1120,15 @@ ShowFileWpf
 
 / Properties
 
-•-• References
+·-· References
 
 App.config
 
 App.xaml
 
-• ShowFileWPFApp.Package
+· ShowFileWPFApp.Package
 
-• Apalicatinna
+· Apalicatinna
 
 Im
 
@@ -1170,7 +1170,7 @@ Help:
 
 Application
 
-• Wao Contene
+· Wao Contene
 
 Search Solution Explorer (Ctrl+*) |
 
@@ -1192,25 +1192,25 @@ ShowFileWpf
 
 Properties
 
-•-• References
+·-· References
 
 + App.config
 
-• Display Settings
+· Display Settings
 
 Short name
 
-• App.xaml
+· App.xaml
 
-• ₩ App.xaml.cs
+· ₩ App.xaml.cs
 
-• • MainWindow.xaml
+· · MainWindow.xaml
 
 "Shoef11mpf-exe"
 
 .(Hi432): Loaded Ci1Mindows15ysM0/41MSn/etaostaiMind
 
-• # ShowFileWPFApp.Package show Steief.exe
+· # ShowFileWPFApp.Package show Steief.exe
 
 Applications
 
@@ -1218,7 +1218,7 @@ Applications
 
 mmedate Window
 
-• Image
+· Image
 
 Escribe aqui para buscar
 
@@ -1242,15 +1242,15 @@ Let's generate the package so you can install your app. Right click on Store &gt
 
 El LargeTaescale-200 pag roperties
 
-• 0 x
+· 0 x
 
 1627
 
-•
+·
 
 P
 
-• O
+· O
 
 Diagnostic Tools Properties
 
@@ -1296,7 +1296,7 @@ Rename
 
 Unload Project
 
-• Open Folder in File Explorer
+· Open Folder in File Explorer
 
 Properties
 
@@ -1366,7 +1366,7 @@ x64
 
 ARM
 
-• Include full PDB symbol files, if any, to enable crash analytics for the app. Learn More
+· Include full PDB symbol files, if any, to enable crash analytics for the app. Learn More
 
 <!-- image -->
 
@@ -1562,19 +1562,19 @@ Win32 Resources
 
 Packaging
 
-• Global Usings
+· Global Usings
 
-• Build
+· Build
 
-• Package
+· Package
 
-• Code Analysis
+· Code Analysis
 
-• Debug
+· Debug
 
-• Resources
+· Resources
 
-• Settings
+· Settings
 
 Application
 
@@ -1598,7 +1598,7 @@ The migration process consists of four sequential steps:
 
 &lt; &gt;
 
-• Not secure https://www.nuget.org/packages/Castle.Windsor/
+· Not secure https://www.nuget.org/packages/Castle.Windsor/
 
 Sign in
 
@@ -1636,15 +1636,15 @@ Maybe the project is referencing older package versions that don't support .NET,
 
 © Project Site
 
-• Source repository
+· Source repository
 
-• License Info
+· License Info
 
-• Contact owners fo Report
+· Contact owners fo Report
 
-• Download package (415.32 KB)
+· Download package (415.32 KB)
 
-• *
+· *
 
 - OX
 
@@ -1755,7 +1755,7 @@ You can see the main application window in the following picture:
 
 eShopWinforms.csproj
 
-•y eShop WinForms
+·y eShop WinForms
 
 ‹}xm] version="1.0" encoding="utf-8"?›
 
@@ -1769,9 +1769,9 @@ OnCONTAINERS
 
 &lt;PropertyGroup&gt;
 
-‹Configuration Condition=" '(Configuration)' == '• "›Debug&lt;/Configuration&gt;
+‹Configuration Condition=" '(Configuration)' == '· "›Debug&lt;/Configuration&gt;
 
-‹Platform Condition=" 'S(Platform)' .. "• "›AnyCPU&lt;/Platform&gt;
+‹Platform Condition=" 'S(Platform)' .. "· "›AnyCPU&lt;/Platform&gt;
 
 &lt;ProjectGuid&gt;(AE32909C-9EE6-4ECE-B407-D23A15A1FEED}&lt;/ProjectGuid&gt;
 
@@ -1859,7 +1859,7 @@ Inventory
 
 Preview
 
-• • No issues found
+· · No issues found
 
 &lt;WarningLevel&gt;4&lt;/WarnineLevel&gt;
 
@@ -2085,7 +2085,7 @@ If you have the WCF Service in the same solution as we have in this example, you
 
 Once the service is located, the tool reflects the API contract implemented by the service. Change the name of the namespace to be eShopServiceReference as shown in the following image:
 
-- • IIS Express (Google Chrome) - C - • =
+- · IIS Express (Google Chrome) - C - · =
 
 eShopLegacyNTier
 
@@ -2169,7 +2169,7 @@ First, you must update the .csproj file to the new SDK style used by .NET Core a
 
 In this case, delete all the content of the .csproj file and replace it with the following code:
 
-•
+·
 
 Error List
 
@@ -2211,9 +2211,9 @@ Reference Manager - eShop. ClassicWPF
 
 Solution
 
-• Shared Projects
+· Shared Projects
 
-• Browse
+· Browse
 
 Name eShop.Server
 
@@ -2451,13 +2451,13 @@ Toolbox
 
 Search Toolbox
 
-• Microsoft.Toolkit.Forms.U
+· Microsoft.Toolkit.Forms.U
 
-• Microsoft.Toolkit.Forms.U
+· Microsoft.Toolkit.Forms.U
 
 P All Windows Forms
 
-• Common Controls
+· Common Controls
 
 Pointer
 
@@ -2505,7 +2505,7 @@ Project Build Debug
 
 Add New Project
 
-• Recent
+· Recent
 
 4 Installed
 
@@ -2519,7 +2519,7 @@ A project that creates packages
 
 To start, add a new project to your solution, select the Windows Application Packaging Project, and give it a name. Windows Universal Class Library (Universal Windows) Visual C# Windows Store
 
-• Web
+· Web
 
 Name:
 
@@ -2571,7 +2571,7 @@ Adam Braden *
 
 + 4 ×
 
-• P
+· P
 
 P
 
@@ -2579,7 +2579,7 @@ Solution Explorer
 
 Search Solution Explorer (Ctrl+;)
 
-•
+·
 
 Solution Explorer
 
@@ -2633,7 +2633,7 @@ Output
 
 Show output from: Debug
 
-The thread 0x553c has exited with code • (0x0).
+The thread 0x553c has exited with code · (0x0).
 
 The thread 0x2a0 has exited with code 0(0x0).
 
@@ -2641,7 +2641,7 @@ The program ' [19988] Coupon. Forms. exe' has exited with code 0(0x0).
 
 Error List
 
-• This item does not support previewing.
+· This item does not support previewing.
 
 Output
 
@@ -2919,7 +2919,7 @@ There you can select the different architectures you want to target as you can i
 
 The final step is to declare where you want to deploy the final installation assets.
 
-•
+·
 
 ?
 
@@ -2937,9 +2937,9 @@ How can I publish my application?
 
 Specify how often the application should check for updates:
 
-• Check everytime the application runs
+· Check everytime the application runs
 
-• Check every: |1
+· Check every: |1
 
 <!-- image -->
 
@@ -3011,7 +3011,7 @@ E&lt;AppInstaller-
 
 - User prompted updates: The OS shows some autogenerated nice UI to notify the user about the application it's about to install. It builds this UI based on the properties you specify on your installation files.
 
-•Version="2.0.0.0"
+·Version="2.0.0.0"
 
 - Silent updates in the background. With this option, your users don't need to be aware of the updates. =· "x86"/&gt;
 

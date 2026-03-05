@@ -352,11 +352,14 @@ Alice sighed wearily. 'I think you might do something better with the time,' she
 'Not at first, perhaps,' said the Hatter: 'but you could keep it to half-past one as long as you liked.' 
 'Is that the way You manage?' Alice asked. 
 The Hatter shook his head mournfully. 'Not I!' he replied. 'We quarrelled last March--just before He went mad, you know--' (pointing with his tea spoon at the March Hare,) '--it was at the great concert given by the Queen of Hearts, and I had to sing 
-"Twinkle, twinkle, little bat! How I wonder what you're at!" 
+"Twinkle, twinkle, little bat!
+How I wonder what you're at!" 
 You know the song, perhaps?' 
 'I've heard something like it,' said Alice. 
 'It goes on, you know,' the Hatter continued, 'in this way:-- 
-"Up above the world you fly, Like a tea-tray in the sky. Twinkle, twinkle--"' 
+"Up above the world you fly,
+Like a tea-tray in the sky.
+Twinkle, twinkle--"' 
 Here the Dormouse shook itself, and began singing in its sleep 'Twinkle, twinkle, twinkle, twinkle--' and went on so long that they had to pinch it to make it stop. 
 'Well, I'd hardly finished the first verse,' said the Hatter, 'when the Queen jumped up and bawled out, "He's murdering the time! Off with his head!"' 
 'How dreadfully savage!' exclaimed Alice. 
@@ -603,9 +606,15 @@ The Mock Turtle sighed deeply, and drew the back of one flapper across his eyes.
 So they began solemnly dancing round and round Alice, every now and then treading on her toes when they passed too close, and waving their forepaws to mark the time, while the Mock Turtle sang this, very slowly and sadly:-- 
 '"Will you walk a little faster?" said a whiting to a snail. "There's a porpoise close behind us, and he's treading on my tail. See how eagerly the lobsters and the turtles all advance! They are waiting on the shingle--will you come and join the dance? 
 Will you, won't you, will you, won't you, will you join the dance? Will you, won't you, will you, won't you, won't you join the dance? 
-"You can really have no notion how delightful it will be When they take us up and throw us, with the lobsters, out to sea!" But the snail replied "Too far, too far!" and gave a look askance-- Said he thanked the whiting kindly, but he would not join the dance. Would not, could not, would not, could not, would not join the dance. Would not, could not, would not, could not, could not join the dance.  
+"You can really have no notion how delightful it will be
+When they take us up and throw us, with the lobsters, out to sea!"
+But the snail replied "Too far, too far!" and gave a look askance--
+Said he thanked the whiting kindly, but he would not join the dance.
+Would not, could not, would not, could not, would not join the dance.
+Would not, could not, would not, could not, could not join the dance. 
 '"What matters it how far we go?" his scaly friend replied. "There is another shore, you know, upon the other side. The further off from England the nearer is to France-- Then turn not pale, beloved snail, but come and join the dance. 
-Will you, won't you, will you, won't you, will you join the dance? Will you, won't you, will you, won't you, won't you join the dance?"' 
+Will you, won't you, will you, won't you, will you join the dance?
+Will you, won't you, will you, won't you, won't you join the dance?"' 
 'Thank you, it's a very interesting dance to watch,' said Alice, feeling very glad that it was over at last: 'and I do so like that curious song about the whiting!' 
 'Oh, as to the whiting,' said the Mock Turtle, 'they--you've seen them, of course?' 
 'Yes,' said Alice, 'I've often seen them at dinn--' she checked herself hastily. 
@@ -637,7 +646,16 @@ So Alice began telling them her adventures from the time when she first saw the 
 'It all came different!' the Mock Turtle repeated thoughtfully. 'I should like to hear her try and repeat something now. Tell her to begin.' He looked at the Gryphon as if he thought it had some kind of authority over Alice. 
 'Stand up and repeat "'Tis The Voice Of The Sluggard,"' said the Gryphon. 
 'How the creatures order one about, and make one repeat lessons!' thought Alice; 'I might as well be at school at once.' However, she got up, and began to repeat it, but her head was so full of the Lobster Quadrille, that she hardly knew what she was saying, and the words came very queer indeed:-- 
-''Tis the voice of the Lobster; I heard him declare, "You have baked me too brown, I must sugar my hair." As a duck with its eyelids, so he with his nose Trims his belt and his buttons, and turns out his toes.'  [later editions continued as follows When the sands are all dry, he is gay as a lark, And will talk in contemptuous tones of the Shark, But, when the tide rises and sharks are around, His voice has a timid and tremulous sound.]  
+''Tis the voice of the Lobster; I heard him declare,
+"You have baked me too brown, I must sugar my hair."
+As a duck with its eyelids, so he with his nose
+Trims his belt and his buttons, and turns out his toes.'
+
+[later editions continued as follows
+When the sands are all dry, he is gay as a lark,
+And will talk in contemptuous tones of the Shark,
+But, when the tide rises and sharks are around,
+His voice has a timid and tremulous sound.] 
 'That's different from what I used to say when I was a child,' said the Gryphon. 
 'Well, I never heard it before,' said the Mock Turtle; 'but it sounds uncommon nonsense.' 
 Alice said nothing; she had sat down with her face in her hands, wondering if anything would Ever happen in a natural way again. 
@@ -647,17 +665,45 @@ Alice said nothing; she had sat down with her face in her hands, wondering if an
 'It's the first position in dancing.' Alice said; but was dreadfully puzzled by the whole thing, and longed to change the subject. 
 'Go on with the next verse,' the Gryphon repeated impatiently: 'it begins "I passed by his garden."' 
 Alice did not dare to disobey, though she felt sure it would all come wrong, and she went on in a trembling voice:-- 
-'I passed by his garden, and marked, with one eye, How the Owl and the Panther were sharing a pie--'  [later editions continued as follows The Panther took pie-crust, and gravy, and meat, While the Owl had the dish as its share of the treat. When the pie was all finished, the Owl, as a boon, Was kindly permitted to pocket the spoon: While the Panther received knife and fork with a growl, And concluded the banquet--]  
+'I passed by his garden, and marked, with one eye,
+How the Owl and the Panther were sharing a pie--'
+
+[later editions continued as follows
+The Panther took pie-crust, and gravy, and meat,
+While the Owl had the dish as its share of the treat.
+When the pie was all finished, the Owl, as a boon,
+Was kindly permitted to pocket the spoon:
+While the Panther received knife and fork with a growl,
+And concluded the banquet--] 
 'What Is the use of repeating all that stuff,' the Mock Turtle interrupted, 'if you don't explain it as you go on? It's by far the most confusing thing I ever heard!' 
 'Yes, I think you'd better leave off,' said the Gryphon: and Alice was only too glad to do so. 
 'Shall we try another figure of the Lobster Quadrille?' the Gryphon went on. 'Or would you like the Mock Turtle to sing you a song?' 
 'Oh, a song, please, if the Mock Turtle would be so kind,' Alice replied, so eagerly that the Gryphon said, in a rather offended tone, 'Hm! No accounting for tastes! Sing her "Turtle Soup," will you, old fellow?' 
 The Mock Turtle sighed deeply, and began, in a voice sometimes choked with sobs, to sing this:-- 
-'Beautiful Soup, so rich and green, Waiting in a hot tureen! Who for such dainties would not stoop? Soup of the evening, beautiful Soup! Soup of the evening, beautiful Soup! Beau--ootiful Soo--oop! Beau--ootiful Soo--oop! Soo--oop of the e--e--evening, Beautiful, beautiful Soup!  'Beautiful Soup! Who cares for fish, Game, or any other dish? Who would not give all else for two p ennyworth only of beautiful Soup? Pennyworth only of beautiful Soup? Beau--ootiful Soo--oop! Beau--ootiful Soo--oop! Soo--oop of the e--e--evening, Beautiful, beauti--Ful Soup!' 
+'Beautiful Soup, so rich and green,
+Waiting in a hot tureen!
+Who for such dainties would not stoop?
+Soup of the evening, beautiful Soup!
+Soup of the evening, beautiful Soup!
+Beau--ootiful Soo--oop!
+Beau--ootiful Soo--oop!
+Soo--oop of the e--e--evening,
+Beautiful, beautiful Soup!
+
+'Beautiful Soup! Who cares for fish,
+Game, or any other dish?
+Who would not give all else for two p
+ennyworth only of beautiful Soup?
+Pennyworth only of beautiful Soup?
+Beau--ootiful Soo--oop!
+Beau--ootiful Soo--oop!
+Soo--oop of the e--e--evening,
+Beautiful, beauti--Ful Soup!'
 'Chorus again!' cried the Gryphon, and the Mock Turtle had just begun to repeat it, when a cry of 'The trial's beginning!' was heard in the distance. 
 'Come on!' cried the Gryphon, and, taking Alice by the hand, it hurried off, without waiting for the end of the song. 
 'What trial is it?' Alice panted as she ran; but the Gryphon only answered 'Come on!' and ran the faster, while more and more faintly came, carried on the breeze that followed them, the melancholy words:-- 
-'Soo--oop of the e--e--evening, Beautiful, beautiful Soup!'
+'Soo--oop of the e--e--evening,
+Beautiful, beautiful Soup!'
 Chapter XI
 Who Stole the Tarts?
 The King and Queen of Hearts were seated on their throne when they arrived, with a great crowd assembled about them--all sorts of little birds and beasts, as well as the whole pack of cards: the Knave was standing before them, in chains, with a soldier on each side to guard him; and near the King was the White Rabbit, with a trumpet in one hand, and a scroll of parchment in the other. In the very middle of the court was a table, with a large dish of tarts upon it: they looked so good, that it made Alice quite hungry to look at them--'I wish they'd get the trial done,' she thought, 'and hand round the refreshments!' But there seemed to be no chance of this, so she began looking at everything about her, to pass away the time. 
@@ -671,7 +717,10 @@ Alice could see, as well as if she were looking over their shoulders, that all t
 One of the jurors had a pencil that squeaked. This of course, Alice could not stand, and she went round the court and got behind him, and very soon found an opportunity of taking it away. She did it so quickly that the poor little juror (it was Bill, the Lizard) could not make out at all what had become of it; so, after hunting all about for it, he was obliged to write with one finger for the rest of the day; and this was of very little use, as it left no mark on the slate. 
 'Herald, read the accusation!' said the King. 
 On this the White Rabbit blew three blasts on the trumpet, and then unrolled the parchment scroll, and read as follows:-- 
-'The Queen of Hearts, she made some tarts, All on a summer day: The Knave of Hearts, he stole those tarts, And took them quite away!' 
+'The Queen of Hearts, she made some tarts,
+All on a summer day:
+The Knave of Hearts, he stole those tarts,
+And took them quite away!' 
 'Consider your verdict,' the King said to the jury. 
 'Not yet, not yet!' the Rabbit hastily interrupted. 'There's a great deal to come before that!' 
 'Call the first witness,' said the King; and the White Rabbit blew three blasts on the trumpet, and called out, 'First witness!' 
@@ -775,7 +824,35 @@ There was a general clapping of hands at this: it was the first really clever th
 The White Rabbit put on his spectacles. 'Where shall I begin, please your Majesty?' he asked. 
 'Begin at the beginning,' the King said gravely, 'and go on till you come to the end: then stop.' 
 These were the verses the White Rabbit read:-- 
-'They told me you had been to her, And mentioned me to him: She gave me a good character, But said I could not swim.  He sent them word I had not gone (We know it to be true): If she should push the matter on, What would become of you?  I gave her one, they gave him two, You gave us three or more; They all returned from him to you, Though they were mine before.  If I or she should chance to be Involved in this affair, He trusts to you to set them free, Exactly as we were.  My notion was that you had been (Before she had this fit) An obstacle that came between Him, and ourselves, and it.  Don't let him know she liked them best, For this must ever be A secret, kept from all the rest, Between yourself and me.'  
+'They told me you had been to her,
+And mentioned me to him:
+She gave me a good character,
+But said I could not swim.
+
+He sent them word I had not gone
+(We know it to be true):
+If she should push the matter on,
+What would become of you?
+
+I gave her one, they gave him two,
+You gave us three or more;
+They all returned from him to you,
+Though they were mine before.
+
+If I or she should chance to be
+Involved in this affair,
+He trusts to you to set them free,
+Exactly as we were.
+
+My notion was that you had been
+(Before she had this fit)
+An obstacle that came between
+Him, and ourselves, and it.
+
+Don't let him know she liked them best,
+For this must ever be
+A secret, kept from all the rest,
+Between yourself and me.' 
 'That's the most important piece of evidence we've heard yet,' said the King, rubbing his hands; 'so now let the jury--' 
 'If any one of them can explain it,' said Alice, (she had grown so large in the last few minutes that she wasn't a bit afraid of interrupting him,) 'I'll give him sixpence. _I_ don't believe there's an atom of meaning in it.' 
 The jury all wrote down on their slates, 'SHE doesn't believe there's an atom of meaning in it,' but none of them attempted to explain the paper. 

@@ -1,0 +1,24 @@
+Exception reading tables from PDF document source = ../../../../../../../data/microsoft/word-docx-doc/file-sample_500kB.doc : File format not allowed: file-sample_500kB.docTraceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/api_text_extraction_docling_DocumentConverter.py", line 89, in extract_markdown_to_file_from_any_document
+    result_doc = converter.convert(source)
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/.venv/lib/python3.14/site-packages/pydantic/_internal/_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/.venv/lib/python3.14/site-packages/pydantic/_internal/_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/.venv/lib/python3.14/site-packages/docling/document_converter.py", line 345, in convert
+    return next(all_res)
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/.venv/lib/python3.14/site-packages/docling/document_converter.py", line 388, in convert_all
+    for conv_res in conv_res_iter:
+                    ^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/.venv/lib/python3.14/site-packages/docling/document_converter.py", line 487, in _convert
+    for item in map(
+                ~~~^
+        process_func,
+        ^^^^^^^^^^^^^
+        input_batch,
+        ^^^^^^^^^^^^
+    ):
+    ^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/.venv/lib/python3.14/site-packages/docling/document_converter.py", line 538, in _process_document
+    raise ConversionError(error_message)
+docling.exceptions.ConversionError: File format not allowed: file-sample_500kB.doc

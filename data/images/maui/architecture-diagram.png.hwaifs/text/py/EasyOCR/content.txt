@@ -1,0 +1,16 @@
+2
+Your App Code
+NET MAUI
+Device Abstraction Layer (Controls and APIs)
+Bindings andcore Components
+NET for Mac
+NETfor Android
+NET for iOS
+WinUl 3
+Catalyst
+NET Runtimes and Libraries
+Android
+iOS
+Macos
+macOS
+Windows

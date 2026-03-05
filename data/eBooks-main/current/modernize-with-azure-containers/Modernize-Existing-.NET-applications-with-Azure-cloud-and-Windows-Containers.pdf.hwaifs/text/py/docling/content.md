@@ -582,7 +582,7 @@ I Dashboard
 
 I All resources
 
-• Resource groups
+· Resource groups
 
 Migration projects
 
@@ -618,7 +618,7 @@ Use Ctri - Click to multiselect machines on the map to add or remove from the gr
 
 © Time Range: 9/21/2017 7:00 AM — 8:00 AM (1 hour)
 
-• *
+· *
 
 Legend shons@microsoft.com
 
@@ -676,7 +676,7 @@ Figure 2-3 shows the execution of multiple VM migrations by using Azure Site Rec
 
 FabrikamFinance
 
-• ContosoReplicationGr...
+· ContosoReplicationGr...
 
 Figure 2-3. Positioning Cloud Infrastructure-Ready applications
 
@@ -693,7 +693,7 @@ Figure 2-3. Positioning Cloud Infrastructure-Ready applications
 
 Change PIT
 
-- • x
+- · x
 
 https://learn.microsoft.com/azure/site-recovery/site-recovery-overview
 
@@ -741,7 +741,7 @@ ADMS
 
 Service
 
-• Microsoft Azure
+· Microsoft Azure
 
 Azure SQL Database Services
 
@@ -1155,7 +1155,7 @@ A .NET Framework application must run on Windows, period. If you want to contain
 
 Existing
 
-•NET
+·NET
 
 apps
 
@@ -1589,7 +1589,7 @@ Azure DevOps Services supports continuous integration and deployment of multi-co
 
 But you can also deploy to Docker Swarm or DC/OS by using Azure DevOps Services script-based tasks.
 
-eShopModernizing V Dashboards Code Work Build and Release Test Wiki* Wiki •
+eShopModernizing V Dashboards Code Work Build and Release Test Wiki* Wiki ·
 
 Builds
 
@@ -2168,7 +2168,7 @@ ASPNET app
 
 ACS
 
-• Kubernetes cluster - Production
+· Kubernetes cluster - Production
 
 K8s Cluster
 
@@ -2190,7 +2190,7 @@ Azure
 
 2. Deploy the application and related resources to the Kubernetes cluster.
 
-• Docker host
+· Docker host
 
 Additional nodes
 

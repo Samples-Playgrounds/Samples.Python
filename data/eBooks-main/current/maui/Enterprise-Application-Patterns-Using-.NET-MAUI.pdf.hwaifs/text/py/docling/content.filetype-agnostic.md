@@ -62,7 +62,7 @@ This book is for .NET MAUI developers that are already familiar with the framewo
 
 This book focuses on building cross-platform enterprise apps using .NET MAUI. As such, it should be read in its entirety to provide a foundation of understanding such apps and their technical considerations. The book, along with its sample app, can also serve as a starting point or reference for creating a new enterprise app. Use the associated sample app as a template for the new app, or to see how to organize an app's component parts. Then, refer back to this guide for architectural guidance. You can find the sample app on GitHub .
 
-## What this book doesn’t cover
+## What this book doesn't cover
 
 This book is aimed at readers who are already familiar with .NET MAUI. It does cover some concepts of .NET MAUI to help better illustrate the topic, but it does not cover most controls and concepts in any detail. For general guidance on building a new .NET MAUI app, please refer to the Building your first app guide in the .NET MAUI documentation.
 
@@ -202,7 +202,7 @@ The guide provides architectural guidance for developing adaptable, maintainable
 
 The guide comes with source code for the eShop multi-platform app, and source code for the eShop reference app. The eShop multi-platform app is a cross-platform enterprise app developed using .NET MAUI, which connects to a series of containerized microservices known as the eShop reference app. However, the eShop multi-platform app can be configured to consume data from mock services for those who wish to avoid deploying the containerized microservices.
 
-## What’s left out of this guide’s scope
+## What's left out of this guide's scope
 
 This guide is aimed at readers who are already familiar with .NET MAUI. For a detailed introduction to .NET MAUI, see the .NET MAUI documentation .
 
@@ -1149,7 +1149,7 @@ IValidity
 
 &lt;T&gt;
 
-•
+·
 
 derives from
 
@@ -1589,7 +1589,7 @@ A container is an isolated, resource-controlled, and portable operating environm
 
 UpdateUser command
 
-•
+·
 
 Database
 
@@ -1801,7 +1801,7 @@ The most common form of caching is read-through caching, where an app retrieves 
 
 ## Tip
 
-Cache data that’s read frequently and changes infrequently.
+Cache data that's read frequently and changes infrequently.
 
 This data can be added to the cache on demand the first time it is retrieved by an app. This means that the app needs to fetch the data only once from the data store, and that subsequent access can be satisfied by using the cache.
 
@@ -2098,7 +2098,7 @@ Identity Microservice (STS+Users)
 
 Web API
 
-•
+·
 
 SQL Server database
 

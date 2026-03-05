@@ -1088,7 +1088,7 @@ eShopOnContainers reference application
 
 -
 
-• Docker Host
+· Docker Host
 
 Different types of microservices
 
@@ -1140,7 +1140,7 @@ Search Solution Explorer (CtrI+:)
 
 в Solution 'eShopOnContainers-ServicesAndWebApps' (31 of 31 projects)
 
-• Solution Items
+· Solution Items
 
 D sc
 
@@ -1154,7 +1154,7 @@ Web Apps
 
 P
 
-• tests
+· tests
 
 → Service Tests docker-compose
 
@@ -1208,7 +1208,7 @@ SQL Server
 
 API Gateways / BFF Catalog microservice SQL Server
 
-•0
+·0
 
 database
 
@@ -1296,59 +1296,59 @@ Branch: dev - eShopOnContainers / k8s / helm /
 
 mvelosop Add option to use local images for kis deployment
 
-• apigwmm
+· apigwmm
 
-• apigwms
+· apigwms
 
-• apigwwm
+· apigwwm
 
-• apigwws
+· apigwws
 
-• basket-api
+· basket-api
 
-• basket-data
+· basket-data
 
-• catalog-api
+· catalog-api
 
-• eshop-common
+· eshop-common
 
-• identity-api
+· identity-api
 
-• istio
+· istio
 
-• keystore-data
+· keystore-data
 
-• locations-api
+· locations-api
 
-• marketing-api
+· marketing-api
 
-• mobileshoppingagg
+· mobileshoppingagg
 
-• nosql-data
+· nosql-data
 
-• ordering-api
+· ordering-api
 
-• ordering-backgroundtasks
+· ordering-backgroundtasks
 
-• ordering-signalrhub
+· ordering-signalrhub
 
-• payment-api
+· payment-api
 
-• rabbitmq
+· rabbitmq
 
-• sql-data
+· sql-data
 
-• webhooks-api
+· webhooks-api
 
-• webhooks-web
+· webhooks-web
 
-• webmvc
+· webmvc
 
-• webshoppingagg
+· webshoppingagg
 
-• webspa
+· webspa
 
-• webstatus devspaces scripts
+· webstatus devspaces scripts
 
 Upload files
 
@@ -1614,7 +1614,7 @@ General
 
 Kubernetes v1.21.3
 
-• Enable Kubernetes
+· Enable Kubernetes
 
 What is Minikube? The Minikube project says 'Minikube implements a local Kubernetes cluster on macOS, Linux, and Windows.' Its primary goals are 'to be the best tool for local Kubernetes application development and to support all Kubernetes features that f it.' Installing Minikube is separate from Docker, but Minikube supports different hypervisors than Docker Desktop supports. The following Kubernetes features are currently supported by Minikube: Reset Kubernetes Cluster
 
@@ -1694,7 +1694,7 @@ Debug *
 
 Any CPU
 
-• Docker api\_sample\_app
+· Docker api\_sample\_app
 
 IIS Express
 
@@ -1768,7 +1768,7 @@ Solution 'api-sample-app' (1 of 1 project)
 
 9 Dependencies
 
-• Properties
+· Properties
 
 Figure 3-8. Adding Docker support to Visual Studio
 
@@ -1954,7 +1954,7 @@ After you've tagged the image, you use the docker push command to push the image
 
 docker push myregistry.azurecr.io/mycontainer:v1
 
-•
+·
 
 X
 
@@ -2074,11 +2074,11 @@ myregistry - Repositories
 
 Container registry
 
-• Search (Ctri+/)
+· Search (Ctri+/)
 
 € Overview
 
-• Activity log iM Access control (IAM)
+· Activity log iM Access control (IAM)
 
 Tags
 
@@ -2090,7 +2090,7 @@ Access keys
 
 Locks
 
-• Automation script
+· Automation script
 
 SERVICES
 
@@ -2102,7 +2102,7 @@ Replications (Preview)
 
 SUPPORT + TROUBLESHOOTING
 
-• New support request
+· New support request
 
 © Refresh
 
@@ -2403,7 +2403,7 @@ Client 3 SPA Web app
 
 JavaScript/Angular.js
 
-• Cloud
+· Cloud
 
 Figure 4-7. Azure SignalR
 
@@ -2851,21 +2851,21 @@ Recent project templates
 
 5 Properties gic ASP.NET Core gRPC Service
 
-• E Protos
+· E Protos
 
-• greet.proto
+· greet.proto
 
 Fo ASP.NET Core Web API
 
-• E Services
+· E Services
 
-• C# GreeterService.cs
+· C# GreeterService.cs
 
-• appsettings.json
+· appsettings.json
 
 › Azure Functions
 
-• C# Program.cs
+· C# Program.cs
 
 Figure 4-20. gRPC support in Visual Studio 2022
 
@@ -3465,7 +3465,7 @@ PostgreSQL
 
 Built-in high availability with a 99.99% service level agreement
 
-• Automatic upgrades, patching, and backups
+· Automatic upgrades, patching, and backups
 
 ## Azure relational databases
 
@@ -3541,13 +3541,13 @@ MongoDB
 
 Table API
 
-• OOO
+· OOO
 
 Column-family
 
 Gremlin
 
-•
+·
 
 Figure 5-12: Overview of Azure Cosmos DB
 
@@ -4057,7 +4057,7 @@ Figure 6-4. Replicated resources across regions
 
 <!-- image -->
 
-West •
+West ·
 
 SQL
 
@@ -4421,7 +4421,7 @@ Selected Fields
 
 Available Fields
 
-• @timestamp t @version
+· @timestamp t @version
 
 t \_id t \_index
 
@@ -4459,7 +4459,7 @@ Logstash would use a configuration like the one shown in Figure 7-8.
 
 Share
 
-• Last 15 minutes
+· Last 15 minutes
 
 Uses lucene query syntax
 
@@ -4635,7 +4635,7 @@ Azure Tenant
 
 Custom Sources
 
-Azure Monitor •
+Azure Monitor ·
 
 Insights
 
@@ -4679,7 +4679,7 @@ COLORADO: 7.25%
 
 ALABAMA: 8.12%
 
-• Done (0.819 s)
+· Done (0.819 s)
 
 123
 
@@ -4715,7 +4715,7 @@ There is a playground for experimenting with Kusto queries. Reading sample queri
 
 There are several different dashboard technologies that may be used to surface the information from Azure Monitor. Perhaps the simplest is to just run queries in Application Insights and plot the data into a chart.
 
-Fabrikam v + New dashboard 7 Upload Download Edit © Unshare / Full screen D Clone • Delete
+Fabrikam v + New dashboard 7 Upload Download Edit © Unshare / Full screen D Clone · Delete
 
 UTC Time: Past 24 hours
 
@@ -5314,7 +5314,7 @@ The patterns and practices that enable faster, more reliable releases to deliver
 
 DevOps emerged before microservices and it's likely that the movement towards smaller, more fit to purpose services wouldn't have been possible without DevOps to make releasing and operating not just one but many applications in production easier.
 
-• microservices
+· microservices
 
 Search term
 
@@ -5492,7 +5492,7 @@ Simon Timms
 
 State
 
-• To Do
+· To Do
 
 Reason
 
@@ -5502,7 +5502,7 @@ User Name:
 
 Password:
 
-• 0 comments
+· 0 comments
 
 Add tag
 
@@ -5522,7 +5522,7 @@ The description field supports the normal styles you'd expect (bold, italic unde
 
 Tasks can be rolled up into features, which define a larger unit of work. Features, in turn, can be rolled up into epics. Classifying tasks in this hierarchy makes it much easier to understand how close a large feature is to rolling out.
 
-• Back to Work Items
+· Back to Work Items
 
 O, AzureCamp2019 Team v
 
@@ -5538,9 +5538,9 @@ Namel
 
 ¿ Collapse all
 
-• Epic
+· Epic
 
-• Unparented
+· Unparented
 
 ¡ Issue
 
@@ -5548,7 +5548,7 @@ Task
 
 5f Test Case
 
-• Test Plan
+· Test Plan
 
 CA Test Suite
 
@@ -5558,7 +5558,7 @@ Projects
 
 To Do 8 h
 
-• 2 Add "remember me"
+· 2 Add "remember me"
 
 button to login screen
 

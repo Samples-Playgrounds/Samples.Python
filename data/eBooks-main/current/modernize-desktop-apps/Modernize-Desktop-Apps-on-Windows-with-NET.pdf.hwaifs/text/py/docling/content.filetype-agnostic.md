@@ -84,7 +84,7 @@ This book addresses the "why"—why you might want to modernize your existing ap
 
 Along the different chapters, sample implementation code snippets and screenshots are provided, with chapter 5 devoted to showcase a complete migration process for sample applications.
 
-## What this book doesn’t cover
+## What this book doesn't cover
 
 This book covers a specific subset of scenarios that are focused on lift-and-shift scenarios, outlining the way to gain the benefits of modernizing without the effort of rewriting code.
 
@@ -249,7 +249,7 @@ According to a survey published by Telerik on April 2016, the most popular techn
 
 <!-- image -->
 
-You can develop in any of them using C# and Visual Basic, but let’s take a closer look.
+You can develop in any of them using C# and Visual Basic, but let's take a closer look.
 
 ## Windows Forms
 
@@ -394,7 +394,7 @@ Desktop applications such as Windows Forms and WPF can be built using various .N
 
 If you've been developing Windows Forms or WPF applications for a long time, you're familiar with .NET Framework. Later, .NET Core (specifically its 3.0 version) started supporting desktop applications. .NET Core was rebranded to .NET when .NET 5 was released. Just as there are different versions of .NET Framework, for example, 4.6, 4.7, and 4.8, there are also different versions of .NET Core: .NET Core 3.0, .NET 5, .NET 6, .NET 7, and so on.
 
-Let’s look into the history of each implementation to understand the differences and benefits of each.
+Let's look into the history of each implementation to understand the differences and benefits of each.
 
 ## The motivation behind .NET Core
 
@@ -686,7 +686,7 @@ You may come across some issues when using configuration sections that were defi
 <configuration> <system.diagnostics> <switches> <add name="General" value="4" /> </switches> <trace autoflush="true" indentsize="2"> <listeners> <add name="myListener" type="System.Diagnostics.TextWriterTraceListener, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" initializeData="MyListener.log" traceOutputOptions="ProcessId, LogicalOperationStack, Timestamp, ThreadId, Callstack, DateTime" /> </listeners> </trace> </system.diagnostics> </configuration>
 ```
 
-If you take this configuration to a .NET app, you’ll get an exception:
+If you take this configuration to a .NET app, you'll get an exception:
 
 Unrecognized configuration section System.Diagnostics
 
@@ -907,11 +907,11 @@ Let's take an existing WPF sample app that reads files and shows its contents on
 
 Notification Class (Winc https://docs.microsoft.com/en-w//Uwp/apv/w
 
-•E File Loaded: C:\Users\martafuentes\Desktop\TestFile.txt
+·E File Loaded: C:\Users\martafuentes\Desktop\TestFile.txt
 
 Microsoft
 
-Clear •
+Clear ·
 
 Wrao Content indows ut notifications not/fication
 
@@ -935,7 +935,7 @@ AdaptiveNotificationContent
 
 &gt; AdaptiveNobficationTest
 
-• BadgeNotification
+· BadgeNotification
 
 Badge Template Type
 
@@ -945,9 +945,9 @@ Badge Template Type
 
 &gt; BadgeUpdater
 
-• AdaptiveNotificationContent
+· AdaptiveNotificationContent
 
-• KnownAdaptiveNotificationkints
+· KnownAdaptiveNotificationkints
 
 *
 
@@ -979,13 +979,13 @@ Our sample will use the Windows.UI.Notifications.Notification API that requires 
 
 To access the WinRT API, add a reference to the Microsoft.Windows.SDK.Contracts NuGet package and this package will do the magic behind the scenes (see details at https://blogs.windows.com/windowsdeveloper/2019/04/30/calling-windows-10-apis-from-a-desktopapplication-just-got-easier/).
 
-You’re now prepared to start adding some code.
+You're now prepared to start adding some code.
 
 <!-- image -->
 
 › KnownAdaptiveNotificationTextStyles
 
-• Known Notification®indings
+· Known Notification®indings
 
 - Notification
 
@@ -993,7 +993,7 @@ Notification
 
 + Download PDF
 
-• Escribe aqui para buscar
+· Escribe aqui para buscar
 
 Notification Class
 
@@ -1013,19 +1013,19 @@ X
 
 Add New Project
 
-• Recent
+· Recent
 
 4 Installed
 
-• Visual C#
+· Visual C#
 
 Get Started
 
 Windows Desktop
 
-• Web
+· Web
 
-• Office/SharePoint
+· Office/SharePoint
 
 .NET Core
 
@@ -1051,11 +1051,11 @@ WCF
 
 Workflow
 
-• Azure Data Lake
+· Azure Data Lake
 
 Sort by: Default
 
-• # E
+· # E
 
 Blank App (Universal Windows)
 
@@ -1121,15 +1121,15 @@ ShowFileWpf
 
 / Properties
 
-•-• References
+·-· References
 
 App.config
 
 App.xaml
 
-• ShowFileWPFApp.Package
+· ShowFileWPFApp.Package
 
-• Apalicatinna
+· Apalicatinna
 
 Im
 
@@ -1171,7 +1171,7 @@ Help:
 
 Application
 
-• Wao Contene
+· Wao Contene
 
 Search Solution Explorer (Ctrl+*) |
 
@@ -1193,25 +1193,25 @@ ShowFileWpf
 
 Properties
 
-•-• References
+·-· References
 
 + App.config
 
-• Display Settings
+· Display Settings
 
 Short name
 
-• App.xaml
+· App.xaml
 
-• ₩ App.xaml.cs
+· ₩ App.xaml.cs
 
-• • MainWindow.xaml
+· · MainWindow.xaml
 
 "Shoef11mpf-exe"
 
 .(Hi432): Loaded Ci1Mindows15ysM0/41MSn/etaostaiMind
 
-• # ShowFileWPFApp.Package show Steief.exe
+· # ShowFileWPFApp.Package show Steief.exe
 
 Applications
 
@@ -1219,7 +1219,7 @@ Applications
 
 mmedate Window
 
-• Image
+· Image
 
 Escribe aqui para buscar
 
@@ -1243,15 +1243,15 @@ Let's generate the package so you can install your app. Right click on Store &gt
 
 El LargeTaescale-200 pag roperties
 
-• 0 x
+· 0 x
 
 1627
 
-•
+·
 
 P
 
-• O
+· O
 
 Diagnostic Tools Properties
 
@@ -1297,7 +1297,7 @@ Rename
 
 Unload Project
 
-• Open Folder in File Explorer
+· Open Folder in File Explorer
 
 Properties
 
@@ -1367,7 +1367,7 @@ x64
 
 ARM
 
-• Include full PDB symbol files, if any, to enable crash analytics for the app. Learn More
+· Include full PDB symbol files, if any, to enable crash analytics for the app. Learn More
 
 <!-- image -->
 
@@ -1489,7 +1489,7 @@ The following article demonstrates how to host a UWP XAML control from the WinUI
 
 XAML Islands are intended for existing Win32 apps that want to improve their user experience by leveraging new UWP controls and behaviors without a full rewrite of the app. You could already leverage Windows 10 and Windows 11 APIs, but up until XAML Islands, only non-UI related APIs.
 
-If you’re developing a new Windows App, a UWP App is probably the right approach.
+If you're developing a new Windows App, a UWP App is probably the right approach.
 
 ## The road ahead XAML Islands: WinUI 3.0
 
@@ -1563,19 +1563,19 @@ Win32 Resources
 
 Packaging
 
-• Global Usings
+· Global Usings
 
-• Build
+· Build
 
-• Package
+· Package
 
-• Code Analysis
+· Code Analysis
 
-• Debug
+· Debug
 
-• Resources
+· Resources
 
-• Settings
+· Settings
 
 Application
 
@@ -1597,11 +1597,11 @@ The migration process consists of four sequential steps:
 2. Migrate Project File: .NET projects use the new SDK-style project format. Create a new project file with this format or update the one you have to use the SDK style.
 3. Fix code and build: Build the code in .NET addressing API-level differences between .NET Framework and .NET. If needed, update third-party packages to the ones that support .NET.
 
-B • 0 NuGet Gallery | Castle.V X
+B · 0 NuGet Gallery | Castle.V X
 
 &lt; &gt;
 
-• Not secure https://www.nuget.org/packages/Castle.Windsor/
+· Not secure https://www.nuget.org/packages/Castle.Windsor/
 
 Sign in
 
@@ -1617,13 +1617,13 @@ Paket CU
 
 © Project Site
 
-• Source repository
+· Source repository
 
-• License Info
+· License Info
 
-• Contact owners fo Report
+· Contact owners fo Report
 
-• Download package (415.32 KB)
+· Download package (415.32 KB)
 
 In a .NET Framework application, all references to external packages are declared in the packages.config file. In .NET, there's no longer the need to use the packages.config file. Instead, use the PackageReference property inside the project file to specify the NuGet packages for your app.
 
@@ -1645,7 +1645,7 @@ To check the package compatibility, you can use the tool https://fuget.org that 
 
 Maybe the project is referencing older package versions that don't support .NET, but you might find newer versions that do support it. So, updating packages to newer versions is generally a good
 
-• *
+· *
 
 - OX
 
@@ -1699,7 +1699,7 @@ With the Migrate packages.config to PackageReference option, you can easily move
 
 ## Update package references
 
-Update the versions of the packages you’ve found to be compatible, as shown in the previous section.
+Update the versions of the packages you've found to be compatible, as shown in the previous section.
 
 ## Fix the code and build
 
@@ -1707,7 +1707,7 @@ Update the versions of the packages you’ve found to be compatible, as shown in
 
 If your application depends on APIs that aren't available on .NET, such as Registry or ACLs, you have to include a reference to the Microsoft.Windows.Compatibility package to add these Windowsspecific APIs. They work on .NET but aren't included as they aren't cross-platform.
 
-There’s a tool called Platform compatibility analyzer
+There's a tool called Platform compatibility analyzer
 
 (https://learn.microsoft.com/dotnet/standard/analyzers/platform-compat-analyzer) that helps you identify APIs that aren't compatible with your code.
 
@@ -1717,7 +1717,7 @@ If you need different execution paths when targeting .NET Framework and .NET, yo
 
 ## Technologies not available on .NET
 
-Some technologies aren’t available on .NET, such as:
+Some technologies aren't available on .NET, such as:
 
 - AppDomains
 - Remoting
@@ -1756,7 +1756,7 @@ You can see the main application window in the following picture:
 
 eShopWinforms.csproj
 
-•y eShop WinForms
+·y eShop WinForms
 
 ‹}xm] version="1.0" encoding="utf-8"?›
 
@@ -1770,9 +1770,9 @@ OnCONTAINERS
 
 &lt;PropertyGroup&gt;
 
-‹Configuration Condition=" '(Configuration)' == '• "›Debug&lt;/Configuration&gt;
+‹Configuration Condition=" '(Configuration)' == '· "›Debug&lt;/Configuration&gt;
 
-‹Platform Condition=" 'S(Platform)' .. "• "›AnyCPU&lt;/Platform&gt;
+‹Platform Condition=" 'S(Platform)' .. "· "›AnyCPU&lt;/Platform&gt;
 
 &lt;ProjectGuid&gt;(AE32909C-9EE6-4ECE-B407-D23A15A1FEED}&lt;/ProjectGuid&gt;
 
@@ -1860,7 +1860,7 @@ Inventory
 
 Preview
 
-• • No issues found
+· · No issues found
 
 &lt;WarningLevel&gt;4&lt;/WarnineLevel&gt;
 
@@ -2086,7 +2086,7 @@ If you have the WCF Service in the same solution as we have in this example, you
 
 Once the service is located, the tool reflects the API contract implemented by the service. Change the name of the namespace to be eShopServiceReference as shown in the following image:
 
-- • IIS Express (Google Chrome) - C - • =
+- · IIS Express (Google Chrome) - C - · =
 
 eShopLegacyNTier
 
@@ -2102,7 +2102,7 @@ Client Options
 
 <!-- image -->
 
-Select the Finish button. After a while, you’ll see the generated code.
+Select the Finish button. After a while, you'll see the generated code.
 
 You should see three autogenerated files:
 
@@ -2168,7 +2168,7 @@ First, you must update the .csproj file to the new SDK style used by .NET Core a
 
 In this case, delete all the content of the .csproj file and replace it with the following code:
 
-•
+·
 
 Error List
 
@@ -2186,7 +2186,7 @@ The type or namespace name 'SqlProvider' does not exist in the namespace 'eShop'
 <Project Sdk="Microsoft.NET.Sdk"> <PropertyGroup> <OutputType>WinExe</OutputType> <TargetFramework>net7.0-windows</TargetFramework> <UseWpf>true</UseWpf> <GenerateAssemblyInfo>false</GenerateAssemblyInfo> </PropertyGroup> </Project>
 ```
 
-If you reload the project and compile it, you’ll get the following error:
+If you reload the project and compile it, you'll get the following error:
 
 <!-- image -->
 
@@ -2210,9 +2210,9 @@ Reference Manager - eShop. ClassicWPF
 
 Solution
 
-• Shared Projects
+· Shared Projects
 
-• Browse
+· Browse
 
 Name eShop.Server
 
@@ -2247,7 +2247,7 @@ Installing desktop applications have traditionally been a nightmare for two main
 - Lack of close collaboration culture between dev and IT teams.
 - Lack of a solid packaging and deploying technology we can build upon.
 
-In fact, we’ve been living with the fact that sometimes you regret that you installed an app because:
+In fact, we've been living with the fact that sometimes you regret that you installed an app because:
 
 - It ends up having some undesired side effects on your machine.
 - Some applications that were previously installed stop working.
@@ -2450,13 +2450,13 @@ Toolbox
 
 Search Toolbox
 
-• Microsoft.Toolkit.Forms.U
+· Microsoft.Toolkit.Forms.U
 
-• Microsoft.Toolkit.Forms.U
+· Microsoft.Toolkit.Forms.U
 
 P All Windows Forms
 
-• Common Controls
+· Common Controls
 
 Pointer
 
@@ -2504,7 +2504,7 @@ Project Build Debug
 
 Add New Project
 
-• Recent
+· Recent
 
 4 Installed
 
@@ -2518,7 +2518,7 @@ A project that creates packages
 
 To start, add a new project to your solution, select the Windows Application Packaging Project, and give it a name. Windows Universal Class Library (Universal Windows) Visual C# Windows Store
 
-• Web
+· Web
 
 Name:
 
@@ -2570,7 +2570,7 @@ Adam Braden *
 
 + 4 ×
 
-• P
+· P
 
 P
 
@@ -2578,7 +2578,7 @@ Solution Explorer
 
 Search Solution Explorer (Ctrl+;)
 
-•
+·
 
 Solution Explorer
 
@@ -2632,7 +2632,7 @@ Output
 
 Show output from: Debug
 
-The thread 0x553c has exited with code • (0x0).
+The thread 0x553c has exited with code · (0x0).
 
 The thread 0x2a0 has exited with code 0(0x0).
 
@@ -2640,7 +2640,7 @@ The program ' [19988] Coupon. Forms. exe' has exited with code 0(0x0).
 
 Error List
 
-• This item does not support previewing.
+· This item does not support previewing.
 
 Output
 
@@ -2918,7 +2918,7 @@ There you can select the different architectures you want to target as you can i
 
 The final step is to declare where you want to deploy the final installation assets.
 
-•
+·
 
 ?
 
@@ -2936,9 +2936,9 @@ How can I publish my application?
 
 Specify how often the application should check for updates:
 
-• Check everytime the application runs
+· Check everytime the application runs
 
-• Check every: |1
+· Check every: |1
 
 <!-- image -->
 
@@ -3010,7 +3010,7 @@ E&lt;AppInstaller-
 
 - User prompted updates: The OS shows some autogenerated nice UI to notify the user about the application it's about to install. It builds this UI based on the properties you specify on your installation files.
 
-•Version="2.0.0.0"
+·Version="2.0.0.0"
 
 - Silent updates in the background. With this option, your users don't need to be aware of the updates. =· "x86"/&gt;
 

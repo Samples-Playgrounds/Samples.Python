@@ -223,11 +223,11 @@ EXPLORER
 
 4 HELLOWORLD
 
-• .vscode
+· .vscode
 
-• bin
+· bin
 
-• obj helloworld.csproj
+· obj helloworld.csproj
 
 C* Program.cs
 
@@ -267,7 +267,7 @@ $ dotnet --version 2.1.1
 
 X
 
-•..
+·..
 
 J
 
@@ -325,13 +325,13 @@ Summary
 
 Once started, take a few minutes to grab some coffee; like its cousin on Windows, Visual Studio for Mac will download the components it needs and install them to disk. Don't walk away from the machine for too long, however-the installer will ask for the administrator password several times during the installation. Mobile development with C++ ~ .NET Framework 4.6.1 development tools v ASP.NET and web development tools prerequisites
 
-• Developer Analytics tools
+· Developer Analytics tools
 
 Optional
 
-• Cloud tools for web development
+· Cloud tools for web development
 
-• IntelliTrace
+· IntelliTrace
 
 M NET profiling tools
 
@@ -343,7 +343,7 @@ Lastly, if you're running Windows, the most obvious option is installing Visual 
 
 When the Visual Studio installer fires up, it immediately becomes obvious that this is every bit as large of an installation as Eclipse or IDEA-hundreds of options lie before you. While most of them are not necessary (many of them have to do with building unmanaged C++ code, for example, or for building game projects), selecting all of them will help ensure that anything you might look to explore will be available to you. The total install size is about the same as your favorite Java IDE with all the trimmings, when all is said and done. Alternatively, you can select just '.NET Core Crossplatform development' for a streamlined install of just .NET Core.
 
-- • x
+- · x
 
 X
 
@@ -385,17 +385,9 @@ Projects/MPDesign/MPDesign.sin.
 
 Choose a template for your new project
 
-• Recently used
+· Recently used
 
-• Multiplatform
-
-App
-
-Library
-
-Tests
-
-• ios
+· Multiplatform
 
 App
 
@@ -403,7 +395,7 @@ Library
 
 Tests
 
-• Android
+· ios
 
 App
 
@@ -411,7 +403,7 @@ Library
 
 Tests
 
-• NET Core
+· Android
 
 App
 
@@ -419,7 +411,15 @@ Library
 
 Tests
 
-• Cloud
+· NET Core
+
+App
+
+Library
+
+Tests
+
+· Cloud
 
 General
 
@@ -447,13 +447,13 @@ File
 
 Edit
 
-• Debug &gt;
+· Debug &gt;
 
 gex lE Solution gul" !
 
 gnut hoa
 
-• HolloDoetNet can
+· HolloDoetNet can
 
 BEЛEERЕНЛERЕВЕ0ES.10E08
 

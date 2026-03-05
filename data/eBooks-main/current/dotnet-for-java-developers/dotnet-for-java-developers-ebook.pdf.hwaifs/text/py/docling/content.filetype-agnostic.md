@@ -79,7 +79,7 @@ If you're a Java developer, looking to get started exploring the .NET ecosystem,
 
 finish up, if you're following along, you'll have everything you need to start your own exploration of the .NET community, and from there you'll get to draw your own conclusions and make your own opinions.
 
-Most importantly, you’ll know how to order off the menu and tell the bathrooms apart.
+Most importantly, you'll know how to order off the menu and tell the bathrooms apart.
 
 Ready?
 
@@ -191,7 +191,7 @@ But meanwhile, over in the Microsoft world, a new CEO runs the firm, and he has 
 
 Within the .NET ecosystem, the .NET Standard, now at a 2.0 release, provides an umbrella of guaranteed compatibility across three major platforms of this writing: the Windows-based .NET Framework (which contains the necessary libraries for building Windows client applications, for example), .NET Core (intended for the cross-platform server world, including Docker containers and cloud-native targets), and Xamarin (principally aimed at the iOS and Android world, but also providing bindings for building macOS applications). Unity has joined the .NET Foundation and expects to be aligned with the various versions of .NET Standard by mid-2018.
 
-All of which means that it’s not a bad time to start exploring this world in more depth.
+All of which means that it's not a bad time to start exploring this world in more depth.
 
 <!-- image -->
 
@@ -215,7 +215,7 @@ This will pull the latest version of Microsoft's Docker Hub–stored Docker imag
 
 ## Linux .NET?
 
-As with most things Linux, installation instructions depend on which flavor of Linux you’re running.
+As with most things Linux, installation instructions depend on which flavor of Linux you're running.
 
 Red Hat is the easiest install, since Microsoft and Red Hat have partnered on a few things in the past, so the .NET Core packages are in the Red Hat distribution channels; assuming you are using the Red Hat Subscription Manager, two commands get .NET Core on your machine:
 
@@ -223,13 +223,13 @@ yum install rh-dotnet20 -y scl enable rh-dotnet20 bash
 
 <!-- image -->
 
-At that point, the “dotnet” tool should be in your PATH and good to go.
+At that point, the "dotnet" tool should be in your PATH and good to go.
 
 If you're on Ubuntu, there's a bit more work required. While Microsoft is working to get the .NET Core packages into the standard Ubuntu distribution channels, at the time of this writing that hasn't happened completely, so Ubuntu users will need to add Microsoft's key and Ubuntu-release-specific URL into the list of sources the Ubuntu apt-get utilities check for packages. Full details are on the .NET Core website at www.dot.net/core; once that's done, however, apt-get can install the "dotnetsdk-2.1.101" package onto the system, and this will get the "dotnet" tool in the PATH and good to go.
 
 This "register the channel" followed by "use the standard package manager" is actually the same story for Fedora, openSUSE, CentOS, and Debian; again, full step-by-step instructions are on the .NET Core "Getting Started" page (https://aka.ms/dotnet-getstarted-linux), which has a drop-down to choose between the six flavors of Linux that .NET Core supports. Add the Microsoft feed to the package manager, use the package manager to do the install, and the "dotnet" tool should be available on the PATH.
 
-Once that’s done, .NET Core is ready to go.
+Once that's done, .NET Core is ready to go.
 
 ## Visual Studio Code
 
@@ -253,11 +253,11 @@ EXPLORER
 
 4 HELLOWORLD
 
-• .vscode
+· .vscode
 
-• bin
+· bin
 
-• obj helloworld.csproj
+· obj helloworld.csproj
 
 C* Program.cs
 
@@ -301,7 +301,7 @@ $ dotnet --version
 
 X
 
-•..
+·..
 
 <!-- image -->
 
@@ -363,13 +363,13 @@ Summary
 
 Once started, take a few minutes to grab some coffee; like its cousin on Windows, Visual Studio for Mac will download the components it needs and install them to disk. Don't walk away from the machine for too long, however—the installer will ask for the administrator password several times during the installation. ~ .NET Framework 4.6.1 development tools v ASP.NET and web development tools prerequisites
 
-• Developer Analytics tools
+· Developer Analytics tools
 
 Optional
 
-• Cloud tools for web development
+· Cloud tools for web development
 
-• IntelliTrace
+· IntelliTrace
 
 M NET profiling tools
 
@@ -383,7 +383,7 @@ When the Visual Studio installer fires up, it immediately becomes obvious that t
 
 <!-- image -->
 
-- • x
+- · x
 
 X
 
@@ -431,17 +431,9 @@ Projects/MPDesign/MPDesign.sin.
 
 Choose a template for your new project
 
-• Recently used
+· Recently used
 
-• Multiplatform
-
-App
-
-Library
-
-Tests
-
-• ios
+· Multiplatform
 
 App
 
@@ -449,7 +441,7 @@ Library
 
 Tests
 
-• Android
+· ios
 
 App
 
@@ -457,7 +449,7 @@ Library
 
 Tests
 
-• NET Core
+· Android
 
 App
 
@@ -465,7 +457,15 @@ Library
 
 Tests
 
-• Cloud
+· NET Core
+
+App
+
+Library
+
+Tests
+
+· Cloud
 
 General
 
@@ -497,13 +497,13 @@ File
 
 Edit
 
-• Debug &gt;
+· Debug &gt;
 
 gex lE Solution gul" !
 
 gnut hoa
 
-• HolloDoetNet can
+· HolloDoetNet can
 
 BEЛEERЕНЛERЕВЕ0ES.10E08
 
@@ -583,7 +583,7 @@ It's pretty easy to spot a number of things right off the bat: C# is a C-family 
 
 namespaces using the "namespace" keyword, and pretty clearly we have classes just as Java does. The Console class (part of the "System" namespace) represents the command-line input/output facilities, and WriteLine is obviously a synonym for "println." Square brackets are used to denote an array in the same way they do in Java, and arrays in C# work almost exactly the same way as they do in Java, save that they have been slightly more "formalized" in that there is a full-blown class, System. Array, that defines a number of methods and properties that all arrays will share. Core "primitive" types are actually defined as full-blown classes, so that System.Array is the "class" representing each array instance, System.String is the "string" primitive type, System.Int32 is the "int" primitive type, and so on. All types, whether "primitive" (what .NET calls "value types") or "class," all inherit from the base System.Object type, with value types being "boxed" to objects when necessary. (This was the inspiration for autoboxing rules in Java5, in fact.) As a result, "System.String s" and "string s" are actually entirely equivalent declarations. New value types can be defined, but it's pretty rare.
 
-Let’s start with some of the more straightforward parts of the language.
+Let's start with some of the more straightforward parts of the language.
 
 ## Starting exploration: classes, properties, and methods
 
@@ -693,7 +693,7 @@ Extension classes don't just magically apply everywhere, however—they must be 
 
 All of this led up to one of the signature moments for the C# compiler with the 3.0 release: Language-INtegrated Query, or LINQ, for short. To many in the Java community, LINQ represented everything that was wrong with Microsoft, accusing them of "embedding SQL into the C# language" and turning C# into a 4GL that was proprietarily bound to SQL Server. As the Jedi Master put it, "Amazing—every single part of that sentence is entirely incorrect." LINQ wasn't integrating SQL, it isn't about SQL Server, and it's actually built up around core language principles that had nothing to do with relational databases, much less integrated with SQL Server.
 
-Let’s start by examining a simple collection of Person objects in a list:
+Let's start by examining a simple collection of Person objects in a list:
 
 ```
 var people = new List<Person>() { new Person("Ted" , "Neward", 45), new Person("Charlotte" , "Neward", 39), new Person("Michael" , "Neward", 24), new Person("Matthew" , "Neward", 18), new Person("Beth" , "Massi", 39), new Person("Dustin" , "Campbell", 43)
@@ -810,7 +810,7 @@ Views, of course, can make use of objects and data provided by a controller, oft
 <h2>Welcome</h2> <ul> @for (int i = 0; i < (int)ViewData["NumTimes"]; i++) { <li>@ViewData["Message"]</li> } </ul>
 ```
 
-In essence, ViewData is the ASP.NET equivalent to Servlet “request” scope.
+In essence, ViewData is the ASP.NET equivalent to Servlet "request" scope.
 
 <!-- image -->
 

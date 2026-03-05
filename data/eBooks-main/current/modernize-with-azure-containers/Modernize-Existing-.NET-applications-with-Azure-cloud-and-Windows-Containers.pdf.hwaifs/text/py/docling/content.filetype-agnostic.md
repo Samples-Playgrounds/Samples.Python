@@ -586,7 +586,7 @@ I Dashboard
 
 I All resources
 
-• Resource groups
+· Resource groups
 
 Migration projects
 
@@ -622,7 +622,7 @@ Use Ctri - Click to multiselect machines on the map to add or remove from the gr
 
 © Time Range: 9/21/2017 7:00 AM — 8:00 AM (1 hour)
 
-• *
+· *
 
 Legend shons@microsoft.com
 
@@ -680,7 +680,7 @@ Figure 2-3 shows the execution of multiple VM migrations by using Azure Site Rec
 
 FabrikamFinance
 
-• ContosoReplicationGr...
+· ContosoReplicationGr...
 
 Figure 2 -3. Positioning Cloud Infrastructure -Ready applications
 
@@ -696,7 +696,7 @@ Figure 2 -3. Positioning Cloud Infrastructure -Ready applications
 
 Change PIT
 
-- • x
+- · x
 
 https://learn.microsoft.com/azure/site-recovery/site-recovery-overview
 
@@ -744,7 +744,7 @@ ADMS
 
 Service
 
-• Microsoft Azure
+· Microsoft Azure
 
 Azure SQL Database Services
 
@@ -1102,7 +1102,7 @@ The main characteristic of a container is that it makes the environment the same
 
 A container is an instance of a container image. A container image is a way to package an app or service (like a snapshot), and then deploy it in a reliable and reproducible way. You could say that Docker is not only a technology-it's also a philosophy and a process.
 
-As containers daily become more common, they are becoming an industry-wide “unit of deployment.”
+As containers daily become more common, they are becoming an industry-wide "unit of deployment."
 
 ## Benefits of containers (Docker Engine on Linux or Windows)
 
@@ -1157,7 +1157,7 @@ A .NET Framework application must run on Windows, period. If you want to contain
 
 Existing
 
-•NET
+·NET
 
 apps
 
@@ -1592,7 +1592,7 @@ Azure DevOps Services supports continuous integration and deployment of multi-co
 
 But you can also deploy to Docker Swarm or DC/OS by using Azure DevOps Services script-based tasks.
 
-eShopModernizing V Dashboards Code Work Build and Release Test Wiki* Wiki •
+eShopModernizing V Dashboards Code Work Build and Release Test Wiki* Wiki ·
 
 Builds
 
@@ -2183,7 +2183,7 @@ ASPNET app
 
 ACS
 
-• Kubernetes cluster - Production
+· Kubernetes cluster - Production
 
 K8s Cluster
 

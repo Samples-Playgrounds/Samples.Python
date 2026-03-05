@@ -350,7 +350,7 @@ In Blazor Server apps, the components run on the server instead of client-side i
 
 X
 
-- •
+- ·
 
 ‹ https..
 
@@ -560,7 +560,7 @@ File
 
 Test Analyze Tools
 
-• -
+· -
 
 Edit View Git Project Build Debug
 
@@ -570,7 +570,7 @@ Window
 
 Help
 
-• HotReloadDemo - D
+· HotReloadDemo - D
 
 Architecture Test Analyze Tools Extensions
 
@@ -622,13 +622,13 @@ Options
 
 Search Options (Ctrl+E)
 
-• Source Control
+· Source Control
 
-• Work Items
+· Work Items
 
-• Text Editor
+· Text Editor
 
-• Debugging
+· Debugging
 
 General
 
@@ -642,19 +642,19 @@ Symbols
 
 XAML Hot Reload
 
-• IntelliTrace
+· IntelliTrace
 
-• Performance Tools
+· Performance Tools
 
-• .NET Core Debugging with WSL
+· .NET Core Debugging with WSL
 
-• Azure Data Lake
+· Azure Data Lake
 
-• Azure Service Authentication
+· Azure Service Authentication
 
-• Container Tools
+· Container Tools
 
-• Cross Platform
+· Cross Platform
 
 / Enable Hot Reload and Edit and Continue when debugging
 
@@ -1742,11 +1742,11 @@ membership
 
 Database Diagrams
 
-• Tables
+· Tables
 
-• System Tables
+· System Tables
 
-• FileTables
+· FileTables
 
 External Tables
 
@@ -1969,7 +1969,7 @@ ECR8 localhost:44343/Identity/Account/Register by the login. The login failed. L
 
 There are migrations for ApplicationDbContext that have not been applied to the database
 
-• 00000000000000\_CreateldentitySchema
+· 00000000000000\_CreateldentitySchema
 
 Apply Migrations
 

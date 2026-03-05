@@ -2,7 +2,7 @@ Na temelju članka 13. Zakona o udrugama (Narodne novine, br. 74/14, 70/17, 98/1
 
 ## STATUT
 
-## GRAĐANSKOG NOGOMETNOG KLUBA „DINAMO”
+## GRAĐANSKOG NOGOMETNOG KLUBA „DINAMO"
 
 ## I. UVODNE ODREDBE
 

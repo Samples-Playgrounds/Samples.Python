@@ -356,7 +356,7 @@ You can use Azure Storage from your .NET Framework and .NET Core applications by
 
 <!-- image -->
 
-## Let’s explore the different types of Azure Storage:
+## Let's explore the different types of Azure Storage:
 
 ## File Storage
 
@@ -584,7 +584,7 @@ CONTOSORETAILWEB - LAST 24 HOURS
 
 ® Unshare
 
-• ••
+· ··
 
 <!-- image -->
 
@@ -608,7 +608,7 @@ Edit
 
 Security
 
-• Delete
+· Delete
 
 Edit
 
@@ -656,7 +656,7 @@ Figure 3: Cloud Explorer in Visual Studio
 
 Collapse All
 
-• Bo
+· Bo
 
 Publish to Azure
 
@@ -834,7 +834,7 @@ Pipelines da Builds
 
 OI% Library
 
-• Task groups
+· Task groups
 
 ** Deployment groups
 
@@ -868,7 +868,7 @@ A
 
 99
 
-• Builds
+· Builds
 
 IS Library
 

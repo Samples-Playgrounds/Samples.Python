@@ -995,7 +995,7 @@ This example shows how to add metadata to a call from a C# client:
 var metadata = new Metadata { { "Requester" , _clientName } }; var request = new GetPortfolioRequest { Id = portfolioId }; var response = await client . GetPortfolioAsync(request , metadata);
 ```
 
-gRPC services can access metadata from the ServerCallContext argument’s RequestHeaders property:
+gRPC services can access metadata from the ServerCallContext argument's RequestHeaders property:
 
 ```
 public async Task<GetPortfolioResponse> GetPortfolio(GetPortfolioRequest request , ServerCallContext context) { var requesterHeader = context . RequestHeaders . FirstOrDefault(e => e . Key == "Requester"); if (requesterHeader != null) { _logger . LogInformation($"Request from {requesterHeader.Value}"); } // ... }
@@ -1132,7 +1132,7 @@ Location
 
 C:\Code\ TraderSys
 
-•C#
+·C#
 
 Linux macOS
 
@@ -1238,7 +1238,7 @@ There was a reference to the GreeterService class in the Program.cs. If you used
 using TraderSys . Portfolios . Services; var builder = WebApplication . CreateBuilder(args); // Add services to the container. builder . Services . AddGrpc(); var app = builder . Build(); // Configure the HTTP request pipeline. app.MapGrpcService<PortfolioService>(); app.MapGet("/" , () => "Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909"); app.Run();
 ```
 
-In the next section, we’ll add functionality to this new service.
+In the next section, we'll add functionality to this new service.
 
 ## Migrate a WCF request -reply service to a gRPC unary RPC
 
@@ -1470,9 +1470,9 @@ Add new gRPC service reference
 
 Select a file or URL
 
-• File
+· File
 
-• URL
+· URL
 
 Select the type of class to be generated
 
@@ -1490,7 +1490,7 @@ When you use the Visual Studio Add Connected Service feature, the portfolios.pro
 
 Tip
 
-If you’re not using Visual Studio or prefer to work from the command line, you can use the dotnet- grpc global tool to manage Protobuf references in a .NET gRPC project. For more information, see the
+If you're not using Visual Studio or prefer to work from the command line, you can use the dotnet- grpc global tool to manage Protobuf references in a .NET gRPC project. For more information, see the
 
 dotnet grpc documentation
 
@@ -2076,7 +2076,7 @@ public static IHostBuilder CreateHostBuilder(string[] args) => Host . CreateDefa
 
 ## Note
 
-If the application isn’t running as a Linux service, the UseSystemd method doesn’t do anything.
+If the application isn't running as a Linux service, the UseSystemd method doesn't do anything.
 
 Now publish your application. The application can be either framework dependent or self-contained for the relevant Linux runtime (for example, linux-x64). You can publish by using one of these methods:
 
@@ -2103,7 +2103,7 @@ Before systemd will recognize the service, it needs to reload its configuration.
 sudo systemctl daemon-reload sudo systemctl status myapp
 ```
 
-If you’ve configured the service correctly, you’ll get the following output:
+If you've configured the service correctly, you'll get the following output:
 
 ```
 myapp.service -My gRPC Application Loaded: loaded (/etc/systemd/system/myapp.service; disabled; vendor preset: enabled) Active: inactive (dead)
@@ -2160,7 +2160,7 @@ Provide the password by using a secure configuration source such as Azure Key Va
 
 ## Important
 
-Don’t store unencrypted passwords in configuration files.
+Don't store unencrypted passwords in configuration files.
 
 ## Set HTTPS certificates in code
 
@@ -2348,7 +2348,7 @@ If you're running Docker Desktop for Windows or Docker Desktop for Mac, Kubernet
 
 Settings
 
-• Docker running
+· Docker running
 
 General
 
@@ -2496,7 +2496,7 @@ Home Page - StockWeb x+
 
 &lt; &gt;
 
-• localhost:32564
+· localhost:32564
 
 StockWeb
 

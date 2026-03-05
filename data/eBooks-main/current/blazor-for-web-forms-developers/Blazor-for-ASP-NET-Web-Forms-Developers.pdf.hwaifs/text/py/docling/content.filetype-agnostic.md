@@ -62,7 +62,7 @@ This book is for ASP.NET Web Forms developers looking for an introduction to Bla
 
 The first part of this book covers what Blazor is and compares it to web app development with ASP.NET Web Forms. The book then covers a variety of Blazor topics, chapter by chapter, and relates each Blazor concept to the corresponding concept in ASP.NET Web Forms, or explains fully any completely new concepts. The book also refers regularly to a complete sample app implemented in both ASP.NET Web Forms and Blazor to demonstrate Blazor features and to provide a case study for migrating from ASP.NET Web Forms to Blazor. You can find both implementations of the sample app (ASP.NET Web Forms and Blazor versions) on GitHub .
 
-## What this book doesn’t cover
+## What this book doesn't cover
 
 This book is an introduction to Blazor, not a comprehensive migration guide. While it does include guidance on how to approach migrating a project from ASP.NET Web Forms to Blazor, it does not attempt to cover every nuance and detail. For more general guidance on migrating from ASP.NET to ASP.NET Core, refer to the migration guidance in the ASP.NET Core documentation.
 
@@ -214,7 +214,7 @@ There were efforts in the early days of .NET Core to port ASP.NET Web Forms. The
 
 Does this mean ASP.NET Web Forms is dead and should no longer be used? Of course not! As long as the .NET Framework ships as part of Windows, ASP.NET Web Forms will be a supported framework. For many Web Forms developers, the lack of cross-platform and open-source support is a non-issue. If you don't have a requirement for cross-platform support, open-source, or any of the other new features in .NET Core or .NET 8, then sticking with ASP.NET Web Forms on Windows is fine. ASP.NET Web Forms will continue to be a productive way to write web apps for many years to come.
 
-But there’s another trend worth considering, and that’s the shift to the client.
+But there's another trend worth considering, and that's the shift to the client.
 
 ## Client -side web development
 
@@ -350,7 +350,7 @@ In Blazor Server apps, the components run on the server instead of client-side i
 
 X
 
-- •
+- ·
 
 ‹ https..
 
@@ -463,7 +463,7 @@ Configuration in ASP.NET Web Forms apps is typically handled using one or more w
 { "Logging": { "LogLevel": { "Default": "Information" , "Microsoft": "Warning" , "Microsoft.Hosting.Lifetime": "Information" } }, "AllowedHosts": "*" }
 ```
 
-You’ll learn more about configuration in ASP.NET Core projects in the Configuration section.
+You'll learn more about configuration in ASP.NET Core projects in the Configuration section.
 
 ## Razor components
 
@@ -471,7 +471,7 @@ Most files in Blazor projects are .razor files. Razor is a templating language b
 
 Each Razor component file is compiled into a .NET class when the project is built. The generated class captures the component's state, rendering logic, lifecycle methods, event handlers, and other logic. You'll learn more about authoring components in the Building reusable UI components with Blazor section.
 
-The *\_Imports.razor* files aren’t Razor component files. Instead, they define a set of Razor directives to import into other .razor files within the same folder and in its subfolders. For example, a *\_Imports.razor* file is a conventional way to add using directives for commonly used namespaces:
+The *\_Imports.razor* files aren't Razor component files. Instead, they define a set of Razor directives to import into other .razor files within the same folder and in its subfolders. For example, a *\_Imports.razor* file is a conventional way to add using directives for commonly used namespaces:
 
 ```
 @using System.Net.Http @using System.Net.Http.Json @using Microsoft.AspNetCore.Components.Forms @using Microsoft.AspNetCore.Components.Routing
@@ -491,7 +491,7 @@ Routing in Blazor is handled client-side, not on the server. As the user navigat
 
 The component routes aren't currently inferred by the component's file location like they are with .aspx pages or ASP.NET Core Razor Pages. This feature may be added in the future. Each route must be specified explicitly on the component. Storing routable components in a Pages folder has no special meaning and is purely a convention.
 
-You’ll learn more about routing in Blazor in the Pages, routing, and layouts section.
+You'll learn more about routing in Blazor in the Pages, routing, and layouts section.
 
 ## Layout
 
@@ -560,7 +560,7 @@ File
 
 Test Analyze Tools
 
-• -
+· -
 
 Edit View Git Project Build Debug
 
@@ -570,7 +570,7 @@ Window
 
 Help
 
-• HotReloadDemo - D
+· HotReloadDemo - D
 
 Architecture Test Analyze Tools Extensions
 
@@ -622,13 +622,13 @@ Options
 
 Search Options (Ctrl+E)
 
-• Source Control
+· Source Control
 
-• Work Items
+· Work Items
 
-• Text Editor
+· Text Editor
 
-• Debugging
+· Debugging
 
 General
 
@@ -642,19 +642,19 @@ Symbols
 
 XAML Hot Reload
 
-• IntelliTrace
+· IntelliTrace
 
-• Performance Tools
+· Performance Tools
 
-• .NET Core Debugging with WSL
+· .NET Core Debugging with WSL
 
-• Azure Data Lake
+· Azure Data Lake
 
-• Azure Service Authentication
+· Azure Service Authentication
 
-• Container Tools
+· Container Tools
 
-• Cross Platform
+· Cross Platform
 
 / Enable Hot Reload and Edit and Continue when debugging
 
@@ -1750,11 +1750,11 @@ membership
 
 Database Diagrams
 
-• Tables
+· Tables
 
-• System Tables
+· System Tables
 
-• FileTables
+· FileTables
 
 External Tables
 
@@ -1977,7 +1977,7 @@ ECR8 localhost:44343/Identity/Account/Register by the login. The login failed. L
 
 There are migrations for ApplicationDbContext that have not been applied to the database
 
-• 00000000000000\_CreateldentitySchema
+· 00000000000000\_CreateldentitySchema
 
 Apply Migrations
 
@@ -2254,7 +2254,7 @@ For example, the details view comprises three files in the Web Forms project: De
 <dd> <asp:Label runat="server" Text='<%#product.MaxStockThreshold%>' /> </dd> </dl> </div> <div class="form -actions no -color esh -link -list"> <a runat="server" href='<%# GetRouteUrl("EditProductRoute", new {id =product.Id}) %>' class="esh-link-item">Edit </a> | <a runat="server" href="~" class="esh -link -item">Back to list </a> </div> </div> </asp:Content>
 ```
 
-The preceding markup’s code-behind includes the following code:
+The preceding markup's code-behind includes the following code:
 
 ```
 using eShopLegacyWebForms . Models; using eShopLegacyWebForms . Services; using log4net; using System; using System . Web . UI; namespace eShopLegacyWebForms . Catalog { public partial class Details : System . Web . UI . Page { private static readonly ILog _log = LogManager . GetLogger(System . Reflection . MethodBase . GetCurrentMethod().DeclaringType); protected CatalogItem product; public ICatalogService CatalogService { get; set; } protected void Page_Load(object sender , EventArgs e) { var productId = Convert . ToInt32(Page . RouteData . Values["id"]); _log . Info($"Now loading... /Catalog/Details.aspx?id={productId}"); product = CatalogService . FindCatalogItem(productId); this . DataBind(); } } }

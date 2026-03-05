@@ -291,7 +291,7 @@ V
 
 [ADD TO CART 1
 
-•NET BOT BLACK SWEATSHIRT
+·NET BOT BLACK SWEATSHIRT
 
 Figure 2 -1. eShopOnWeb
 
@@ -554,7 +554,7 @@ When this principle is applied to application architecture and taken to its logi
 
 Learn more about microservices architecture
 
-## Don’t repeat yourself (DRY)
+## Don't repeat yourself (DRY)
 
 The application should avoid specifying behavior related to a particular concept in multiple places as this practice is a frequent source of errors. At some point, a change in requirements will require changing this behavior. It's likely that at least one instance of the behavior will fail to be updated, and the system will behave inconsistently.
 
@@ -592,7 +592,7 @@ At a minimum, individual web applications should strive to be their own bounded 
 
 ## Common web application architectures
 
-“If you think good architecture is expensive, try bad architecture.” - Brian Foote and Joseph Yoder
+"If you think good architecture is expensive, try bad architecture." - Brian Foote and Joseph Yoder
 
 Most traditional .NET applications are deployed as single units corresponding to an executable or a single web application running within a single IIS appdomain. This approach is the simplest deployment model and serves many internal and smaller public applications very well. However, even given this single unit of deployment, most non-trivial business applications benefit from some logical separation into several layers.
 
@@ -616,29 +616,29 @@ a] Solution 'MonolithSample' (1 project)
 
 4 5 MonolithSample
 
-• Connected Services
+· Connected Services
 
-• Dependencies
+· Dependencies
 
 * Properties
 
 * wwwroot
 
-• Controllers
+· Controllers
 
-• Data
+· Data
 
-• Migrations
+· Migrations
 
-4 • Models i deletonocontes
+4 · Models i deletonocontes
 
 I AccountViewModels
 
 I ManageViewModels co ApplicationUser.cs
 
-* • Services
+* · Services
 
-C• IEmailSender.cs c• ISmsSender.cs
+C· IEmailSender.cs c· ISmsSender.cs
 
 C MessageServices.cs
 
@@ -648,13 +648,13 @@ Account
 
 Home
 
-• Manage
+· Manage
 
 I Shared
 
-•\_Viewimports.cshtml
+·\_Viewimports.cshtml
 
-•\_ViewStart.cshtml y2 app.config
+·\_ViewStart.cshtml y2 app.config
 
 IT appsettings.json fT bower.json
 
@@ -724,7 +724,7 @@ D / ca ApplicationCore
 
 4 [ca) Infrastructure
 
-• == Dependencies
+· == Dependencies
 
 Migrations
 
@@ -734,13 +734,13 @@ D + C" CatalogContextSeed.cs
 
 4 › Web
 
-• Connected Services
+· Connected Services
 
-• Dependencies
+· Dependencies
 
-• a J Properties
+· a J Properties
 
-• a wwwroot
+· a wwwroot
 
 Controllers
 
@@ -752,7 +752,7 @@ ViewModels
 
 Views adJ appsettings.json
 
-• adJ bower.json adJ bundleconfig.json
+· adJ bower.json adJ bundleconfig.json
 
 Visual Studio
 
@@ -846,7 +846,7 @@ View your spending in your App Service
 
 Environment settings
 
-* - • x
+* - · x
 
 Scale setting
 
@@ -870,7 +870,7 @@ The eShopOnWeb reference application uses the Clean Architecture approach in org
 
 Clean architecture puts the business logic and application model at the center of the application. Instead of having business logic depend on data access or other infrastructure concerns, this dependency is inverted: infrastructure and implementation details depend on the Application Core. This functionality is achieved by defining abstractions, or interfaces, in the Application Core, which are then implemented by types defined in the Infrastructure layer. A common way of visualizing this architecture is to use a series of concentric circles, similar to an onion. Figure 5-7 shows an example of this style of architectural representation.
 
-- • x
+- · x
 
 Clean Architecture Layers (Onion view)
 
@@ -1203,7 +1203,7 @@ https://deviq.com/repository-pattern/
 
 ## Common client -side web technologies
 
-“Websites should look good from the inside and out.” - Paul Cookson
+"Websites should look good from the inside and out." - Paul Cookson
 
 ASP.NET Core applications are web applications and they typically rely on client-side web technologies like HTML, CSS, and JavaScript. By separating the content of the page (the HTML) from its layout and styling (the CSS), and its behavior (via JavaScript), complex web apps can leverage the Separation of Concerns principle. Future changes to the structure, design, or behavior of the application can be made more easily when these concerns are not intertwined.
 
@@ -1463,7 +1463,7 @@ The end result of this approach is for controllers to be much smaller and focuse
 
 ## References – – Mapping Requests to Responses
 
-- •
+- ·
 - Routing to Controller Actions
 
 https://learn.microsoft.com/aspnet/core/mvc/controllers/routing
@@ -1476,7 +1476,7 @@ https://learn.microsoft.com/aspnet/core/mvc/models/model-binding
 
 https://learn.microsoft.com/aspnet/core/mvc/models/validation
 
-- •
+- ·
 - Filters
 
 https://learn.microsoft.com/aspnet/core/mvc/controllers/filters
@@ -1555,9 +1555,9 @@ By default, ASP.NET Core applications organize their folder structure to include
 
 ASP.NET Core MVC supports Areas for this purpose. Using areas, you can create separate sets of Controllers and Views folders (as well as any associated models) in each Area folder. Figure 7-1 shows an example folder structure, using Areas.
 
-• 8E
+· 8E
 
-• B
+· B
 
 wwwroot
 
@@ -1577,27 +1577,27 @@ Catalog
 
 Games
 
-• &amp; D
+· &amp; D
 
 Identity
 
-• 82] Configuration
+· 82] Configuration
 
 Controllers
 
-• 8[
+· 8[
 
 Extensions
 
-• &amp;C Features
+· &amp;C Features
 
-• BC HealthChecks
+· BC HealthChecks
 
-• &amp;C Interfaces
+· &amp;C Interfaces
 
-• 82] Pages
+· 82] Pages
 
-• 8[
+· 8[
 
 Services
 
@@ -1945,7 +1945,7 @@ Consider ways in which your applications communicate directly with client applic
 
 ## References – – Client Communication
 
-- •
+- ·
 - ASP.NET Core SignalR
 
 https://github.com/dotnet/aspnetcore/tree/main/src/SignalR
@@ -1983,7 +1983,7 @@ DDD also recommends the use of the Clean Architecture discussed previously, allo
 
 DDD is well suited to large applications with significant business (not just technical) complexity. The application should require the knowledge of domain experts. There should be significant behavior in the domain model itself, representing business rules and interactions beyond simply storing and retrieving the current state of various records from data stores.
 
-## When shouldn’t you apply DDD
+## When shouldn't you apply DDD
 
 DDD involves investments in modeling, architecture, and communication that may not be warranted for smaller applications or applications that are essentially just CRUD (create/read/update/delete). If you choose to approach your application following DDD, but find that your domain has an anemic model with no behavior, you may need to rethink your approach. Either your application may not
 
@@ -2035,7 +2035,7 @@ Reverse proxy server:
 
 IIS, Nginx, Apache
 
-•
+·
 
 ASP.NET Core application
 
@@ -2085,7 +2085,7 @@ Kestrel
 
 ## Working with Data in ASP.NET Core Apps
 
-“Data is a precious thing and will last longer than the systems themselves.”
+"Data is a precious thing and will last longer than the systems themselves."
 
 Tim Berners -Lee
 
@@ -2469,11 +2469,11 @@ Admin - Catalog - Microsoft.eSh x
 
 +
 
-• localhost:44315/Admin eShopOnWeb Admin
+· localhost:44315/Admin eShopOnWeb Admin
 
 Home admin@microsoft.com
 
-• Logout
+· Logout
 
 Manage Product Catalog
 
@@ -2599,7 +2599,7 @@ P 8
 
 C#
 
-• 8@
+· 8@
 
 C#
 
@@ -2656,7 +2656,7 @@ Name your tests in a consistent fashion, with names that indicate what each test
 - CatalogControllerGetImage.ReturnsFileResultWithBytesGivenSuccess
 - CatalogControllerGetImage.ReturnsNotFoundResultGivenImageMissingException
 
-A variation of this approach ends each test class name with “Should” and modifies the tense slightly:
+A variation of this approach ends each test class name with "Should" and modifies the tense slightly:
 
 - CatalogControllerGetImageShould . CallImageServiceWithId
 - CatalogControllerGetImageShould . LogWarningGivenImageMissingException
@@ -2673,7 +2673,7 @@ tests
 
 FunctionalTests
 
-• do
+· do
 
 Dependencies
 
@@ -2681,31 +2681,31 @@ PublicApi
 
 Some teams find the second naming approach clearer, though slightly more verbose. In any case, try to use a naming convention that provides insight into test behavior, so that when one or more tests fail, it's obvious from their names what cases have failed. Avoid naming your tests vaguely, such as ControllerTests.Test1, as these names offer no value when you see them in test results.
 
-• B C# OrderControllerlndex.cs
+· B C# OrderControllerlndex.cs
 
 If you follow a naming convention like the one above that produces many small test classes, it's a good idea to further organize your tests using folders and namespaces. Figure 9-4 shows one approach to organizing tests by folder within several test projects.
 
-• Sd Dependencies
+· Sd Dependencies
 
-• 8E Repositories
+· 8E Repositories
 
-• 8C
+· 8C
 
 I Unitlests
 
-• So Dependencies
+· So Dependencies
 
 1 8E Entities
 
-• 8
+· 8
 
-• AC
+· AC
 
-• BC Services
+· BC Services
 
-• BT
+· BT
 
-• B Builders
+· B Builders
 
 Figure 9 -4. Organizing test classes by folder based on class being tested.
 
@@ -2807,7 +2807,7 @@ https://ardalis.com/unit-test-naming-convention
 
 https://learn.microsoft.com/ef/core/miscellaneous/testing/
 
-- •
+- ·
 - Integration tests in ASP.NET Core
 
 https://learn.microsoft.com/aspnet/core/test/integration-tests

@@ -1,0 +1,14 @@
+Your App Code
+
+-NET MAUI
+
+Bindings and|Core Components |
+
+-NET for Mac
+
+NET for Android
+
+Catalyst
+
+Android ios macOS
+

@@ -856,7 +856,7 @@ Authentication type O
 
 None
 
-• Configure for HTTPS O
+· Configure for HTTPS O
 
 L Enable Docker ®
 
@@ -987,15 +987,15 @@ C# Program.cs
 
 MyFrontEnd
 
-• wwwroot
+· wwwroot
 
-• Pages
+· Pages
 
-• Dockerfile
+· Dockerfile
 
 C# Program.cs
 
-• C# WeatherForecast.cs
+· C# WeatherForecast.cs
 
 * 4 x
 
@@ -2221,7 +2221,7 @@ Dapr also includes output binding capabilities. They enable your service to trig
 
 POST http://localhost:3500/v1.0/bindings/sms
 
-7=•
+7=·
 
 =
 
@@ -3102,7 +3102,7 @@ EXPAND ALL
 
 COLLAPSE ALL
 
-• Zipkin
+· Zipkin
 
 Q Find a trace
 
@@ -3114,7 +3114,7 @@ Duration: 5.666ms Services: 1 Depth: 2 Total Spans: 2 Trace ID: 572745da4058a2f8
 
 ^ v
 
-• TRAFFICCONTROLSERVICE
+· TRAFFICCONTROLSERVICE
 
 TRAFFICCONTROLSERVICE
 
@@ -3326,7 +3326,7 @@ Heap Memory usage in bytes
 
 1h 4
 
-• Last 5 minutes
+· Last 5 minutes
 
 Number of GO routines
 
@@ -3443,7 +3443,7 @@ The dashboard also shows the configured components (and their configuration) for
 
 Figure 10-11. Dapr dashboard components.
 
-• Zipkin
+· Zipkin
 
 Q, Find a trace
 
@@ -4123,7 +4123,7 @@ eShopOnContainers reference application
 
 -
 
-• Docker Host
+· Docker Host
 
 Identity microservice (STS+users)
 

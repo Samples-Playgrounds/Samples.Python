@@ -1,5 +1,6 @@
 Cover
-Famous Paintings 
+Famous
+Paintings 
 Infogrid Pacific
 Famous Paintings
 ePub3 Fixed Layout Demonstration
@@ -7,13 +8,18 @@ Famous Paintings
 © 2012 Infogrid Pacific Pte. Ltd. Some rights reserved.
 This is an IGP Fixed Layout (FLO) demonstration book for AZARDI.
 Credits 
-Images and text in this book have been sourced from Wikipedia and interactive source references are included with the image of each painting. 
-The text has been edited on an arbitrary basis for this demonstration book and it is not recommended this is used as a knowledge source. 
+Images and text in this book have been sourced from Wikipedia and interactive
+source references are included with the image of each painting. 
+The text has been edited on an arbitrary basis for this demonstration book and
+it is not recommended this is used as a knowledge source. 
 All Wikipedia text and images are available under the:
 Creative Commons Attribution-ShareAlike License 
 About this Demonstration 
-This is a valid IDPF ePub3 which uses features than can only be seen in AZARDI 17. It will load in all other Fixed Layout ePub3 readers but will not display in the same presentation manner as when viewed on AZARDI. 
-This book has been FLO metadata configured for landscape orientation and no page spread. 
+This is a valid IDPF ePub3 which uses features than can only be seen
+in AZARDI 17. It will load in all other Fixed Layout ePub3 readers but will not
+display in the same presentation manner as when viewed on AZARDI. 
+This book has been FLO metadata configured for
+landscape orientation and no page spread. 
 Visit the Infogrid Pacific Websites 
 www.infogridpacific.com 
 azardi.infogridpacific.com  

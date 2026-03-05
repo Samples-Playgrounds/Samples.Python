@@ -579,7 +579,7 @@ Application map
 
 CONTOSORETAILWEB - LAST 24 HOURS
 
-• ••
+· ··
 
 <!-- image -->
 
@@ -605,7 +605,7 @@ Edit
 
 Security
 
-• Delete
+· Delete
 
 Edit
 
@@ -653,7 +653,7 @@ Figure 3 : Cloud Explorer in Visual Studio
 
 Collapse All
 
-• Bo
+· Bo
 
 Publish to Azure
 
@@ -829,7 +829,7 @@ Pipelines da Builds
 
 OI% Library
 
-• Task groups
+· Task groups
 
 ** Deployment groups
 
@@ -863,7 +863,7 @@ A
 
 99
 
-• Builds
+· Builds
 
 IS Library
 

@@ -113,7 +113,7 @@ Analyzers
 
 ..............................................................................................................................
 
-What’s Next?
+What's Next?
 
 .
 
@@ -782,7 +782,7 @@ cmp [rcx],ecx call System.Array.GetLowerBound(Int32) mov ebx,eax mov rcx,rsi xor
 M00_L05: mov rcx,offset MT_System.IndexOutOfRangeException call CORINFO_HELP_NEWSFAST mov rsi,rax call System.SR.get_IndexOutOfRange_ArrayRankIndex() mov rdx,rax mov rcx,rsi call System.IndexOutOfRangeException..ctor(System.String) mov rcx,rsi call CORINFO_HELP_THROW int 3 ; Total bytes of code 219
 ```
 
-## Now here’s what it is for .NET 7:
+## Now here's what it is for .NET 7:
 
 ```
 ; Program.Sum() push r14 push rdi push rsi push rbp push rbx sub rsp,20 mov rdx,[rcx+8] xor eax,eax mov ecx,[rdx+18] mov r8d,ecx mov r9d,[rdx+10] lea ecx,[rcx+r9+0FFFF] cmp ecx,r8d jle short M00_L03 mov r9d,[rdx+1C] mov r10d,[rdx+14] lea r10d,[r9+r10+0FFFF] M00_L00: mov r11d,r9d cmp r10d,r11d jle short M00_L02 mov esi,r8d sub esi,[rdx+18] mov edi,[rdx+10] M00_L01: mov ebx,esi cmp ebx,edi jae short M00_L04 mov ebp,[rdx+14] imul ebx,ebp mov r14d,r11d sub r14d,[rdx+1C] cmp r14d,ebp jae short M00_L04 add ebx,r14d add eax,[rdx+rbx*4+20] inc r11d cmp r10d,r11d jg short M00_L01 M00_L02: inc r8d cmp ecx,r8d jg short M00_L00 M00_L03:
@@ -915,7 +915,7 @@ and if value is a constant, let's say 5, that whole thing can be constant folded
 return new TimeSpan(50 _ 000 _ 000);
 ```
 
-I’ll spare you the .NET 6 assembly for this, but on .NET 7 with a benchmark like:
+I'll spare you the .NET 6 assembly for this, but on .NET 7 with a benchmark like:
 
 ```
 [Benchmark] public TimeSpan FromSeconds() => TimeSpan.FromSeconds(5);
@@ -1097,7 +1097,7 @@ static unsafe bool Contains(ReadOnlySpan<byte> haystack, byte needle) { if (Vect
 if (Vector256.EqualsAny(target, Vector256.LoadUnsafe(ref endMinusOneVector))) { return true; } } else { Vector128<byte> target = Vector128.Create(needle); ref byte endMinusOneVector = ref Unsafe.Add(ref current, haystack.Length -Vector128<byte>.Count); do { if (Vector128.EqualsAny(target, Vector128.LoadUnsafe(ref current))) { return true; } current = ref Unsafe.Add(ref current, Vector128<byte>.Count); } while (Unsafe.IsAddressLessThan(ref current, ref endMinusOneVector)); if (Vector128.EqualsAny(target, Vector128.LoadUnsafe(ref endMinusOneVector))) { return true; } } } else { for (int i = 0; i < haystack.Length; i++) { if (haystack[i] == needle) { return true; } } } return false; }
 ```
 
-And, boom, we’re back:
+And, boom, we're back:
 
 | Method         | Mean      |   Ratio |
 |----------------|-----------|---------|
@@ -1126,7 +1126,7 @@ public override string ToString()
 if (!m_value) return "False"; return "True"; }
 ```
 
-Pretty simple, right? You’d expect something this trivial to be inlined. Alas, on .NET 6, this benchmark:
+Pretty simple, right? You'd expect something this trivial to be inlined. Alas, on .NET 6, this benchmark:
 
 ```
 private bool _value = true; [Benchmark] public int BoolStringLength() => _value.ToString().Length;
@@ -1168,7 +1168,7 @@ However, change the benchmark slightly:
 [Benchmark] public bool IsValueType() => IsValueType(typeof(int)); private static bool IsValueType(Type t) => t.IsValueType;
 ```
 
-and it’s no longer as simple:
+and it's no longer as simple:
 
 ```
 ; Program.IsValueType() sub rsp,28 mov rcx,offset MT_System.Int32 call CORINFO_HELP_TYPEHANDLE_TO_RUNTIMETYPE mov rcx,rax mov rax,[7FFCA47C9560] cmp [rcx],ecx add rsp,28 jmp rax ; Total bytes of code 38
@@ -1199,13 +1199,13 @@ While logically part of the runtime, the JIT is actually isolated from the rest 
 
 dotnet/runtime#65738 rewrote various "stubs" to be more efficient. Stubs are tiny bits of code that serve to perform some check and then redirect execution somewhere else. For example, when an interface dispatch call site is expected to only ever be used with a single implementation of that interface, the JIT might employ a "dispatch stub" that compares the type of the object against the
 
-kunalspathak commented on Mar 22 • edited - windows x64 improvements: dotnet/perf-autofiling-issues#4226, dotnet/perf-autofiling-issues#4225
+kunalspathak commented on Mar 22 · edited - windows x64 improvements: dotnet/perf-autofiling-issues#4226, dotnet/perf-autofiling-issues#4225
 
 single one it's cached, and if they're equal simply jumps to the right target. You know you're in the corest of the core areas of the runtime when a PR contains lots of assembly code for every architecture the runtime targets. And it paid off; there's a virtual group of folks from around .NET that review performance improvements and regressions in our automated performance test suites, and attribute these back to the PRs likely to be the cause (this is mostly automated but requires some human oversight). It's always nice then when a few days after a PR is merged and performance information has stabilized that you see a rash of comments like there were on this PR:
 
 Windows Arm64 Improvements dotnet/perf-autofiling-issues#4251 dotnet/perf-autofiling-issues#4252
 
-DrewScoggins commented on Mar 24 • edited -
+DrewScoggins commented on Mar 24 · edited -
 
 <!-- image -->
 
@@ -1312,7 +1312,7 @@ To many people, the word "performance" in the context of software is about throu
 
 Too many PRs to mention have gone into bringing up the Native AOT stack, in part because it's been in the works for years (as part of the archived dotnet/corert project and then as part of dotnet/runtimelab/feature/NativeAOT) and in part because there have been over a hundred PRs just in dotnet/runtime that have gone into bringing Native AOT up to a shippable state since the code was originally brought over from dotnet/runtimelab in dotnet/runtime#62563 and dotnet/runtime#62563 . Between that and there not being a previous version to compare its performance to, instead of focusing PR by PR on improvements, let's just look at how to use it and the benefits it brings.
 
-Today, Native AOT is focused on console applications, so let’s create a console app:
+Today, Native AOT is focused on console applications, so let's create a console app:
 
 ```
 dotnet new console -o nativeaotexample
@@ -1336,7 +1336,7 @@ I now have my generated executable in the output publish directory:
 Directory: C:\nativeaotexample\bin\Release\net7.0\win-x64\publish Mode LastWriteTime Length Name -a--8/27/2022 6:19 PM 2061824 nativeaotexample.exe -a--8/27/2022 6:19 PM 14290944 nativeaotexample.pdb
 ```
 
-so 2M instead of 3.5MB. Of course, for that significant reduction I’ve given up some things:
+so 2M instead of 3.5MB. Of course, for that significant reduction I've given up some things:
 
 - Setting InvariantGlobalization to true means I'm now not respecting culture information and am instead using a set of invariant data for most globalization operations.
 - Setting UseSystemResourceKeys to true means nice exception messages are stripped away.
@@ -1576,7 +1576,7 @@ There were plenty of other PRs that went into making the LibraryImport generator
 
 One more category of interop-related changes that I think are worth talking about are to do with SafeHandle cleanup. As a reminder, SafeHandle exists to mitigate various issues around managing native handles and file descriptors. A native handle or file descriptor is just a memory address or number that refers to some owned resource and which must be cleaned up / closed when done with it. A SafeHandle at its core is just a managed object that wraps such a value and provides a Dispose method and a finalizer for closing it. That way, if you neglect to Dispose of the SafeHandle in order to close the resource, the resource will still be cleaned up when the SafeHandle is garbage collected and its finalizer eventually run. SafeHandle then also provides some synchronization around that closure, trying to minimize the possibility that the resource is closed while it's still in use. It provides DangerousAddRef and DangerousRelease methods that increment and decrement a ref count, respectively, and if Dispose is called while the ref count is above zero, the actual releasing of the handle triggered by Dispose is delayed until the ref count goes back to 0. When you pass a SafeHandle into a P/Invoke, the generated code for that P/Invoke handles calling DangerousAddRef
 
-• • Mark the method "CreatePipe' with "Library/mportAtribute' instead
+· · Mark the method "CreatePipe' with "Library/mportAtribute' instead
 
 and DangerousRelease (and due to the wonders of LibraryImport I've already extolled, you can easily see that being done, such as in the previous generated code example). Our code tries hard to clean up after SafeHandles deterministically, but it's quite easy to accidentally leave some for finalization.
 
@@ -2320,7 +2320,7 @@ Span&lt;T&gt; and ReadOnlySpan&lt;T&gt; themselves are heavily-based on refs. Fo
 private T[] _items; ... public T this[int i] { get => _items[i]; set => _items[i] = value; }
 ```
 
-But not span. Span&lt;T&gt;’s indexer looks more like this:
+But not span. Span&lt;T&gt;'s indexer looks more like this:
 
 ```
 public ref T this[int index] { get { if ((uint)index >= (uint)_length) ThrowHelper.ThrowIndexOutOfRangeException(); return ref Unsafe.Add(ref _reference, index); } }
@@ -2358,7 +2358,7 @@ public Span(ref T reference); public ReadOnlySpan(in T reference);
 
 added in dotnet/runtime#67447 (and then made public and used more broadly in dotnet/runtime#71589). This may beg the question, why does ref field support enable two new constructors that take refs, considering spans already were able to store a ref? After all, the MemoryMarshal.CreateSpan(ref T reference, int length) and corresponding CreateReadOnlySpan methods have existed for as long as spans have, and these new constructors are equivalent to calling those methods with a length of 1. The answer is: safety.
 
-Imagine if you could willy-nilly call this constructor. You’d be able to write code like this:
+Imagine if you could willy-nilly call this constructor. You'd be able to write code like this:
 
 ```
 public Span<int> RuhRoh() { int i = 42; return new Span<int>(ref i); }
@@ -2570,13 +2570,13 @@ So even without all the other benefits that come from operating in terms of span
 [Benchmark] [Arguments(0 , 0 , 26)] public bool IsBoundary(int index, int startpos, int endpos) { return (index > startpos && IsBoundaryWordChar(runtext[index -1])) != (index < endpos && IsBoundaryWordChar(runtext[index])); } [MethodImpl(MethodImplOptions.NoInlining)] private bool IsBoundaryWordChar(char c) => false;
 ```
 
-and here’s what the span version looks like:
+and here's what the span version looks like:
 
 ```
 [Benchmark] [Arguments("abcdefghijklmnopqrstuvwxyz" , 0)] public bool IsBoundary(ReadOnlySpan<char> inputSpan, int index) { int indexM1 = index -1; return ((uint)indexM1 < (uint)inputSpan.Length && IsBoundaryWordChar(inputSpan[indexM1])) != ((uint)index < (uint)inputSpan.Length && IsBoundaryWordChar(inputSpan[index])); } [MethodImpl(MethodImplOptions.NoInlining)] private bool IsBoundaryWordChar(char c) => false;
 ```
 
-## And here’s the resulting assembly:
+## And here's the resulting assembly:
 
 ```
 ; Program.IsBoundary(Int32, Int32, Int32) push rdi push rsi push rbp push rbx sub rsp,28 mov rdi,rcx mov esi,edx mov ebx,r9d cmp esi,r8d jle short M00_L00 mov rcx,rdi mov rcx,[rcx+8] lea edx,[rsi-1] cmp edx,[rcx+8] jae short M00_L04 mov edx,edx movzx edx,word ptr [rcx+rdx*2+0C] mov rcx,rdi call qword ptr [Program.IsBoundaryWordChar(Char)] jmp short M00_L01 M00_L00: xor eax,eax M00_L01: mov ebp,eax cmp esi,ebx jge short M00_L02 mov rcx,rdi mov rcx,[rcx+8] cmp esi,[rcx+8] jae short M00_L04 mov edx,esi movzx edx,word ptr [rcx+rdx*2+0C] mov rcx,rdi call qword ptr [Program.IsBoundaryWordChar(Char)] jmp short M00_L03 M00_L02: xor eax,eax M00_L03: cmp ebp,eax setne al movzx eax,al add rsp,28 pop rbx pop rbp pop rsi pop rdi ret M00_L04: call CORINFO_HELP_RNGCHKFAIL int 3 ; Total bytes of code 117 ; Program.IsBoundary(System.ReadOnlySpan`1<Char>, Int32) push r14 push rdi push rsi push rbp
@@ -2870,7 +2870,7 @@ One of the more interesting aspects of the PR, however, is one line that's meant
 if (source is int[] array) { ProcessArray(array); } else { ProcessEnumerable(source); }
 ```
 
-However, if you look at the PR, you’ll see the if condition is actually:
+However, if you look at the PR, you'll see the if condition is actually:
 
 ```
 if (source.GetType() == typeof(int[]))
@@ -3138,7 +3138,7 @@ Size (bytes)
 
 0009
 
-000 •
+000 ·
 
 000Z
 
@@ -3546,7 +3546,7 @@ generators we love today). In both cases, when deserializing, the generated code
 using System.Text; using System.Xml . Serialization; var serializer = new XmlSerializer(typeof(Release[])); var stream = new MemoryStream(Encoding.UTF8 . GetBytes( """ <?xml version="1.0" encoding="utf-8"?> <ArrayOfRelease xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"> <Release><Major>1</Major><Minor>0</Minor></Release> <Release><Major>1</Major><Minor>1</Minor></Release> <Release><Major>2</Major><Minor>0</Minor></Release> <Release><Major>2</Major><Minor>1</Minor></Release> <Release><Major>2</Major><Minor>2</Minor></Release> <Release><Major>3</Major><Minor>0</Minor></Release> <Release><Major>3</Major><Minor>1</Minor></Release> <Release><Major>5</Major><Minor>0</Minor></Release> <Release><Major>6</Major><Minor>0</Minor></Release> <Release><Major>7</Major><Minor>0</Minor></Release> </ArrayOfRelease> """)); for (int i = 0; i < 1000; i++) { stream.Position = 0; serializer.Deserialize(stream); } public class Release { public int Major; public int Minor; public int Build; public int Revision; }
 ```
 
-Here’s what I see when I run this under .NET 6:
+Here's what I see when I run this under .NET 6:
 
 Allocations Call Tree Functions Collections
 
@@ -3616,9 +3616,9 @@ XML pops up in other areas as well, as in the XmlWriterTraceListener type. While
 | TraceWrite | .NET 6.0  | 961.9 ns |     1   | 288 B       |          1    |
 | TraceWrite | .NET 7.0  | 772.2 ns |     0.8 | 64 B        |          0.22 |
 
-• System.Security.Cryptography.Algorithms.dIl
+· System.Security.Cryptography.Algorithms.dIl
 
-• System.Security.Cryptography.Cng.dll
+· System.Security.Cryptography.Cng.dll
 
 System.Security. Cryptography.Csp.dil
 
@@ -3672,21 +3672,21 @@ Assemblies :
 
 - 4
 
-- *• System.Security.Cryptography.Primitives (7.0.0.0, NETCoreApp, v7.0)
+- *· System.Security.Cryptography.Primitives (7.0.0.0, NETCoreApp, v7.0)
 
 + ..: Metadata
 
 - *° References
 
-+ •• System.Runtime
++ ·· System.Runtime
 
-+ ••• System.Security. Cryptography
++ ··· System.Security. Cryptography
 
 = {} -
 
 «Module ›
 
-• Derived Types
+· Derived Types
 
 System.Security.Cryptography.Primitives (7.0.0.0, NETCoreApp, v7.0)
 
@@ -3730,7 +3730,7 @@ Rfc2898DeriveBytes to supports spans such that its constructors that accept span
 
 - Replacing O(1) data structures . O(1) lookup data structures like Dictionary&lt;,&gt; and HashSet&lt;&gt; are the lifeblood of most applications and services, but sometimes algorithmic complexity is misleading. Yes, these provide very efficient searching, but there's still overhead associated with computing a hash code, mapping that hash code to a location in the data structure, and so on. If there's only ever a handful of items (i.e. the N in the complexity is really, really small), it can be much faster to just do a linear search, and if N is sufficiently small, a data structure may not even be needed at all: the search can just be open-coded as a waterfall of if/elseif/else constructs. That's the case in a PR like dotnet/runtime#71341 from [@vcsjones](https://github.com/vcsjones), where the 99.999% case involves just five strings (names of hash algorithms); it's cheaper to just compare against each than it is do a HashSet&lt;&gt;.Contains, especially since the JIT now unrolls and vectorizes the comparison against the constant string names.
 - Simply avoiding unnecessary work. The best optimizations are ones where you simply stop
-- doing work you don’t have to do. dotnet/runtime#68553 from
+- doing work you don't have to do. dotnet/runtime#68553 from
 
 [@vcsjones](https://github.com/vcsjones) is a good example of this. This code was performing a hash of some data in order to determine the length of resulting hashes for that particular configuration, but we actually know ahead of time exactly how long a hash for a given algorithm is going to be, and we already have in this code a cascading if/elseif/else that's checking for each known algorithm, so we can instead just hardcode the length for each. dotnet/runtime#70589 from [@vcsjones](https://github.com/vcsjones) is another good example, in the same spirit of the ownership transfer example mentioned earlier (but this one didn't previously span assembly boundaries). Rather than in several places taking an X509Extension, serializing it to a byte[] , and passing that temporary byte[] to something else that in turn makes a defensive copy, we can instead provide an internal pathway for ownership transfer, bypassing all of the middle stages. Another good one is dotnet/runtime#70618 from
 
@@ -3965,7 +3965,7 @@ if (\_counts. ContainsKey(\_word))
 
 Use 'TryGetValue(TKey, out TValue)'
 
-• CA1854 Prefer a 'TryGetValue' call over a Dictionary indexer access
+· CA1854 Prefer a 'TryGetValue' call over a Dictionary indexer access
 
 Convert to conditional expression
 
@@ -3991,7 +3991,7 @@ Similarly, dotnet/roslyn-analyzers#4836 from [@chucker](https://github.com/chuck
 if (m_subscriptions.ContainsKey(listener)) { m_subscriptions.Remove(listener); }
 ```
 
-which the analyzer flagged and which it’s auto-fixer replaced with just:
+which the analyzer flagged and which it's auto-fixer replaced with just:
 
 ```
 m_subscriptions.Remove(listener);
@@ -4003,11 +4003,11 @@ if (\_subscriptions. ContainsKey(listener))
 
 Remove unnecessary call
 
-• • CA1853 Do not guard Dictionary, Remove(key) with
+· · CA1853 Do not guard Dictionary, Remove(key) with
 
 Invert if
 
-Suppress or Configure issues •
+Suppress or Configure issues ·
 
 'Dictionary. ContainsKey(key)"
 
@@ -4051,7 +4051,7 @@ using (SHA256 h = SHA256.Create())
 
 {
 
-The result is not only simpler, it’s also faster:
+The result is not only simpler, it's also faster:
 
 ```
 private readonly byte[] _data = RandomNumberGenerator.GetBytes(128); [Benchmark(Baseline = true)] public byte[] Hash1() { using (SHA256 h = SHA256.Create()) { return h.ComputeHash(_data); } } [Benchmark] public byte[] Hash2() { return SHA256.HashData(_data); } } return SHA256. HashData(data); }
@@ -4081,7 +4081,7 @@ Extract base class...
 
 Suppress or Configure issues
 
-• ® Use 'GeneratedRegexAttribute' to generate the regular expression implementation at compile-time
+· ® Use 'GeneratedRegexAttribute' to generate the regular expression implementation at compile-time
 
 Lines 38 to 40
 
@@ -4093,7 +4093,7 @@ private readonly Regex \_parseSocial = MyRegexO;
 
 This release also saw dotnet/runtime turn on a bunch of additional IDEXXXX code style rules and make a huge number of code changes in response. Most of the resulting changes are purely about simplifying the code, but in almost every case some portion of the changes also have a functional and performance impact.
 
-Let’s start with IDE0200, which is about removing unnecessary lambdas. Consider a setup like this:
+Let's start with IDE0200, which is about removing unnecessary lambdas. Consider a setup like this:
 
 ```
 public class C { public void CallSite() => M(i => Work(i)); public void M(Action<int> action) { } private static void Work(int value) { } }
@@ -4187,7 +4187,7 @@ Then there's IDE0031, which promotes using null propagation features of C#. This
 return _value != null ? _value.Property : null;
 ```
 
-into code that’s instead like:
+into code that's instead like:
 
 ```
 return _value?.Property;
@@ -4251,7 +4251,7 @@ entry.GetKey(\_thisCollection) ?? "key"
 
 and avoiding an unnecessary table lookup.
 
-## What’s Next?
+## What's Next?
 
 Whew! That was a lot. Congrats on getting through it all.
 

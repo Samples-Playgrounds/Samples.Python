@@ -119,7 +119,7 @@ Another feature of serverless is micro -billing. It's common for web application
 
 based on supporting the popular endpoints. Serverless enables you to scale each endpoint independently and pay for usage, so no costs are incurred when the APIs aren't being called. Migration may in many circumstances dramatically reduce the ongoing cost to support the endpoints.
 
-## What this guide doesn’t cover
+## What this guide doesn't cover
 
 This guide specifically emphasizes architecture approaches and design patterns and isn't a deep dive into the implementation details of Azure Functions, Logic Apps, or other serverless platforms. This guide doesn't cover, for example, advanced workflows with Logic Apps or features of Azure Functions such as configuring Cross-Origin Resource Sharing (CORS), applying custom domains, or uploading SSL certificates. These details are available through the online Azure Functions documentation .
 
@@ -275,9 +275,9 @@ N -layer application partition application logic into specific layers. The most 
 
 Ul Layer
 
-• Web Pages
+· Web Pages
 
-• Mobile App
+· Mobile App
 
 Other layers may include middleware, batch processing, and API. It's important to note the layers are logical. Although they're developed in isolation, they may all be deployed to the same target platform.
 
@@ -561,7 +561,7 @@ The full serverless back end is ideal for several types of scenarios, especially
 
 There are other, more specific use cases that are covered later in this document.
 
-## Monoliths and “starving the beast”
+## Monoliths and "starving the beast"
 
 A common challenge is migrating an existing monolithic application to the cloud. The least risky approach is to "lift and shift" entirely onto virtual machines. Many shops prefer to use the migration as an opportunity to modernize their code base. A practical approach to migration is called "starving the beast." In this scenario, the monolith is migrated "as is" to start with. Then, selected services are modernized. In some cases, the signature of the service is identical to the original: it simply is hosted as a function. Clients are updated to use the new service rather than the monolith endpoint. In the interim, steps such as database replication enable microservices to host their own storage even when transactions are still handled by the monolith. Eventually, all clients are migrated onto the new services. The monolith is "starved" (its services no longer called) until all functionality has been replaced. The combination of serverless and proxies can facilitate much of this migration.
 
@@ -941,13 +941,13 @@ O Search (Ctri+/)
 
 @ Overview
 
-• Activity log iM Access control (IAM)
+· Activity log iM Access control (IAM)
 
 Tags
 
 INVESTIGATE
 
-• Application map
+· Application map
 
 @ Smart Detection
 
@@ -971,7 +971,7 @@ Users
 
 + Add chart
 
-• Time range
+· Time range
 
 Y Filters
 
@@ -981,7 +981,7 @@ Alert rules
 
 * ×
 
-••• More
+··· More
 
 # *
 
@@ -1109,7 +1109,7 @@ When a new tweet is posted
 
 When a Event Grid event occurs
 
-• Office 365
+· Office 365
 
 If true
 
@@ -1179,13 +1179,13 @@ Azure provides several messaging services, including Event Hubs and Service Bus.
 
 Event Hubs
 
-• "Point in time" data
+· "Point in time" data
 
-• Fast pull
+· Fast pull
 
-• Replay / strict ordering
+· Replay / strict ordering
 
-• Big data streams
+· Big data streams
 
 <!-- image -->
 

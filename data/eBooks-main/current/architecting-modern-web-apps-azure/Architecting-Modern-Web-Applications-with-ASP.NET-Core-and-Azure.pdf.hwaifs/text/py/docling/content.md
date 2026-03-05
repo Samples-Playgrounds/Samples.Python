@@ -293,7 +293,7 @@ V
 
 [ADD TO CART 1
 
-•NET BOT BLACK SWEATSHIRT
+·NET BOT BLACK SWEATSHIRT
 
 Figure 2-1. eShopOnWeb
 
@@ -618,29 +618,29 @@ a] Solution 'MonolithSample' (1 project)
 
 4 5 MonolithSample
 
-• Connected Services
+· Connected Services
 
-• Dependencies
+· Dependencies
 
 * Properties
 
 * wwwroot
 
-• Controllers
+· Controllers
 
-• Data
+· Data
 
-• Migrations
+· Migrations
 
-4 • Models i deletonocontes
+4 · Models i deletonocontes
 
 I AccountViewModels
 
 I ManageViewModels co ApplicationUser.cs
 
-* • Services
+* · Services
 
-C• IEmailSender.cs c• ISmsSender.cs
+C· IEmailSender.cs c· ISmsSender.cs
 
 C MessageServices.cs
 
@@ -650,13 +650,13 @@ Account
 
 Home
 
-• Manage
+· Manage
 
 I Shared
 
-•\_Viewimports.cshtml
+·\_Viewimports.cshtml
 
-•\_ViewStart.cshtml y2 app.config
+·\_ViewStart.cshtml y2 app.config
 
 IT appsettings.json fT bower.json
 
@@ -726,7 +726,7 @@ D / ca ApplicationCore
 
 4 [ca) Infrastructure
 
-• == Dependencies
+· == Dependencies
 
 Migrations
 
@@ -736,13 +736,13 @@ D + C" CatalogContextSeed.cs
 
 4 › Web
 
-• Connected Services
+· Connected Services
 
-• Dependencies
+· Dependencies
 
-• a J Properties
+· a J Properties
 
-• a wwwroot
+· a wwwroot
 
 Controllers
 
@@ -754,7 +754,7 @@ ViewModels
 
 Views adJ appsettings.json
 
-• adJ bower.json adJ bundleconfig.json
+· adJ bower.json adJ bundleconfig.json
 
 Visual Studio
 
@@ -848,7 +848,7 @@ View your spending in your App Service
 
 Environment settings
 
-* - • x
+* - · x
 
 Scale setting
 
@@ -872,7 +872,7 @@ The eShopOnWeb reference application uses the Clean Architecture approach in org
 
 Clean architecture puts the business logic and application model at the center of the application. Instead of having business logic depend on data access or other infrastructure concerns, this dependency is inverted: infrastructure and implementation details depend on the Application Core. This functionality is achieved by defining abstractions, or interfaces, in the Application Core, which are then implemented by types defined in the Infrastructure layer. A common way of visualizing this architecture is to use a series of concentric circles, similar to an onion. Figure 5-7 shows an example of this style of architectural representation.
 
-- • x
+- · x
 
 Clean Architecture Layers (Onion view)
 
@@ -1465,7 +1465,7 @@ The end result of this approach is for controllers to be much smaller and focuse
 
 ## References -Mapping Requests to Responses
 
-- •
+- ·
 - Routing to Controller Actions
 
 https://learn.microsoft.com/aspnet/core/mvc/controllers/routing
@@ -1555,9 +1555,9 @@ By default, ASP.NET Core applications organize their folder structure to include
 
 ASP.NET Core MVC supports Areas for this purpose. Using areas, you can create separate sets of Controllers and Views folders (as well as any associated models) in each Area folder. Figure 7-1 shows an example folder structure, using Areas.
 
-• 8E
+· 8E
 
-• B
+· B
 
 wwwroot
 
@@ -1577,27 +1577,27 @@ Catalog
 
 Games
 
-• &amp; D
+· &amp; D
 
 Identity
 
-• 82] Configuration
+· 82] Configuration
 
 Controllers
 
-• 8[
+· 8[
 
 Extensions
 
-• &amp;C Features
+· &amp;C Features
 
-• BC HealthChecks
+· BC HealthChecks
 
-• &amp;C Interfaces
+· &amp;C Interfaces
 
-• 82] Pages
+· 82] Pages
 
-• 8[
+· 8[
 
 Services
 
@@ -1957,7 +1957,7 @@ Consider ways in which your applications communicate directly with client applic
 
 ## References -Client Communication
 
-- •
+- ·
 - ASP.NET Core SignalR https://github.com/dotnet/aspnetcore/tree/main/src/SignalR
 - WebSocket Manager
 - https://github.com/radu-matei/websocket-manager
@@ -2043,7 +2043,7 @@ Reverse proxy server:
 
 IIS, Nginx, Apache
 
-•
+·
 
 ASP.NET Core application
 
@@ -2471,11 +2471,11 @@ Admin - Catalog - Microsoft.eSh x
 
 +
 
-• localhost:44315/Admin eShopOnWeb Admin
+· localhost:44315/Admin eShopOnWeb Admin
 
 Home admin@microsoft.com
 
-• Logout
+· Logout
 
 Manage Product Catalog
 
@@ -2601,7 +2601,7 @@ P 8
 
 C#
 
-• 8@
+· 8@
 
 C#
 
@@ -2675,7 +2675,7 @@ tests
 
 FunctionalTests
 
-• do
+· do
 
 Dependencies
 
@@ -2683,31 +2683,31 @@ PublicApi
 
 Some teams find the second naming approach clearer, though slightly more verbose. In any case, try to use a naming convention that provides insight into test behavior, so that when one or more tests fail, it's obvious from their names what cases have faile d. Avoid naming your tests vaguely, such as ControllerTests.Test1, as these names offer no value when you see them in test results.
 
-• B C# OrderControllerlndex.cs
+· B C# OrderControllerlndex.cs
 
 If you follow a naming convention like the one above that produces many small test classes, it's a good idea to further organize your tests using folders and namespaces. Figure 9-4 shows one approach to organizing tests by folder within several test projects.
 
-• Sd Dependencies
+· Sd Dependencies
 
-• 8E Repositories
+· 8E Repositories
 
-• 8C
+· 8C
 
 I Unitlests
 
-• So Dependencies
+· So Dependencies
 
 1 8E Entities
 
-• 8
+· 8
 
-• AC
+· AC
 
-• BC Services
+· BC Services
 
-• BT
+· BT
 
-• B Builders
+· B Builders
 
 Figure 9-4. Organizing test classes by folder based on class being tested.
 
@@ -2801,7 +2801,7 @@ This functional test exercises the full ASP.NET Core MVC / Razor Pages applicati
 
 https://learn.microsoft.com/aspnet/core/testing/
 
-- •
+- ·
 - Unit Test Naming Convention
 
 https://ardalis.com/unit-test-naming-convention
@@ -2810,7 +2810,7 @@ https://ardalis.com/unit-test-naming-convention
 
 https://learn.microsoft.com/ef/core/miscellaneous/testing/
 
-- •
+- ·
 - Integration tests in ASP.NET Core https://learn.microsoft.com/aspnet/core/test/integration-tests
 
 ## Development process for Azure

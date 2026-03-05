@@ -839,11 +839,11 @@ Using orchestrators for production-ready applications is essential if your appli
 
 Figure 4-6 illustrates deployment into a cluster of an application composed of multiple microservices (containers).
 
-• Docker images/containers are units of deployment
+· Docker images/containers are units of deployment
 
-• A container is an instance of a docker image
+· A container is an instance of a docker image
 
-• A host (VM/server) handles many containers or
+· A host (VM/server) handles many containers or
 
 Figure 4-6. A cluster of containers
 
@@ -1007,7 +1007,7 @@ Azure Service Fabric - Types of clusters
 
 Service Fabric cluster
 
-•
+·
 
 Microservices as processes
 
@@ -1260,11 +1260,11 @@ Name Tu
 
 [9) explore-docker-aks-rg
 
-[•) explore-docker-aks-rg
+[·) explore-docker-aks-rg
 
-(9) MC\_explore-docker-aks-rg\_explore-doc... •••
+(9) MC\_explore-docker-aks-rg\_explore-doc... ···
 
-[9) Mc\_explore-docker-aks-rg\_explore-doc... •••
+[9) Mc\_explore-docker-aks-rg\_explore-doc... ···
 
 Page 1 V of 1
 
@@ -1280,7 +1280,7 @@ Resource group
 
 EE Edit columns
 
-• Delete resource group Refresh → Move
+· Delete resource group Refresh → Move
 
 + Add
 
@@ -1300,7 +1300,7 @@ Subscription ID
 
 * Export to CSV | ® Assign tags
 
-• Delete
+· Delete
 
 &amp; Export to CSV | ® Assign tags
 
@@ -1334,9 +1334,9 @@ az aks get-credentials --resource-group explore-docker-aks-rg --name explore-doc
 
 &amp; Export template
 
-• Feedback
+· Feedback
 
-• Feedback
+· Feedback
 
 8 X
 
@@ -1535,7 +1535,7 @@ Microsoft
 
 Install
 
-• Extension: Docker X
+· Extension: Docker X
 
 docker
 
@@ -1598,7 +1598,7 @@ Docker: Add Docker Files to Workspace...
 
 Select Application Platform
 
-•NET: ASPINET Core (recently used)
+·NET: ASPINET Core (recently used)
 
 Node.js
 
@@ -1902,9 +1902,9 @@ StatusCode
 
 StatusDescription
 
-• G • localhost:50080/WeatherForecast
+· G · localhost:50080/WeatherForecast
 
-• m G 0 0
+· m G 0 0
 
 : [f"date": "2021-01-06T12:13:43.7721387+00:00", "temperatureC": 42, "temperaturef": 107, "summary": "Chilly"}, {"date": "2021-01-07T12:1
 
@@ -2016,7 +2016,7 @@ Application Insights Telemetry...
 
 Container Orchestrator Support...
 
-• Docker Support...
+· Docker Support...
 
 ® Client-Side Library..
 
@@ -2102,9 +2102,9 @@ P
 
 <!-- image -->
 
-•--
+·--
 
-•-L
+·-L
 
 C*
 
@@ -2112,7 +2112,7 @@ a C#
 
 docker-compose
 
-•dockerignore
+·dockerignore
 
 Figure 4-33. Docker files in Solution Explorer in Visual Studio
 
@@ -2130,7 +2130,7 @@ Options
 
 Search Options (Ctrl+E)
 
-• Azure Service Authentication
+· Azure Service Authentication
 
 4 Container Tools
 
@@ -2142,27 +2142,27 @@ Containers Tool Window
 
 Docker Compose
 
-• Cross Platform
+· Cross Platform
 
-• Database Tools
+· Database Tools
 
-• F# Tools
+· F# Tools
 
-• IntelliCode
+· IntelliCode
 
 D Kubernetes Debugging Tools
 
-• Live Share
+· Live Share
 
-• NuGet Package Manager
+· NuGet Package Manager
 
-• Service Fabric Tools
+· Service Fabric Tools
 
 D SQL Server Tools
 
-• Test
+· Test
 
-• Text Templating
+· Text Templating
 
 D Web Forms Designer
 
@@ -2270,7 +2270,7 @@ C:\src\explore-docker
 
 Solution name explore-docker
 
-• Place solution and project in the same directory
+· Place solution and project in the same directory
 
 Linux macos
 
@@ -2404,7 +2404,7 @@ Figure 4-40. Adding orchestrator support to WebApi project.
 
 When you choose the Docker Compose option, which is fine for local development, Visual Studio adds the docker-compose project, with the docker-compose files as shown in image 4-41.
 
-• = 4 x
+· = 4 x
 
 Solution Explorer
 
@@ -2517,13 +2517,13 @@ x+
 
 Solution Containers
 
-• WebApi
+· WebApi
 
 © WebApp
 
 Other Containers
 
-• explore-docker-vscode\_webapi \_1
+· explore-docker-vscode\_webapi \_1
 
 explore-docker-vscode\_webapp\_1
 
@@ -2575,7 +2575,7 @@ docker images
 
 X
 
-• docker images
+· docker images
 
 REPOSITORY
 
@@ -2681,7 +2681,7 @@ EXTENSIONS
 
 616MB
 
-• Docker - G
+· Docker - G
 
 25 hours ago
 
@@ -2731,7 +2731,7 @@ P Search (Ctri+/)
 
 Overview
 
-• Activity log
+· Activity log
 
 ° Access control (IAM)
 
@@ -2903,7 +2903,7 @@ I Weather Forecast - WebApp
 
 &lt; →
 
-• Not secure
+· Not secure
 
 WebApp Home Privacy
 
@@ -2955,7 +2955,7 @@ Overview - Kubernetes Dashboar X
 
 © 127.0.0.1:8001/api/v1/namespaces/kube-sy.../
 
-• kubernetes
+· kubernetes
 
 = Overview
 
@@ -3001,7 +3001,7 @@ Q Search
 
 1. = .
 
-•••
+···
 
 + CREATE
 
@@ -3188,7 +3188,7 @@ Build
 
 Options Repository Variables
 
-• Save
+· Save
 
 &gt; Undo
 
@@ -3216,7 +3216,7 @@ Push services docter Docker Compose
 
 Write service image digests docter Docker Compose
 
-•
+·
 
 Combine configuration docter Docker Compose
 
@@ -3314,7 +3314,7 @@ Build
 
 Options
 
-• Save »
+· Save »
 
 2 Undo
 
@@ -3326,7 +3326,7 @@ Search work items
 
 # Summary 37 Queue new build
 
-• Security
+· Security
 
 Help
 
@@ -3426,7 +3426,7 @@ Repository
 
 Variables
 
-• Save
+· Save
 
 2 Undo
 
@@ -3624,11 +3624,11 @@ Add tasks
 
 © Refresh
 
-— Release V ..•
+— Release V ..·
 
-• Save + Release v ...
+· Save + Release v ...
 
-• View YAML W Remove
+· View YAML W Remove
 
 Figure 5-10. Adding the Deploy to Kubernetes task to your Environment
 
@@ -3719,7 +3719,7 @@ As shown in Figure 5-13, the first phase is the build/CI pipeline. In Azure DevO
 
 eShopModernizing v Dashboards Code Work Build and Release Test Wiki Wiki /
 
-• ShopModerizing v Dashboards Code Work Build and Release Test Wik* Wik | @
+· ShopModerizing v Dashboards Code Work Build and Release Test Wik* Wik | @
 
 Builds Releases Library Task Groups Deployment Groups*
 
@@ -3751,7 +3751,7 @@ Agent phase
 
 IE Run on agent
 
-• dotnet-architecture/eShopModernizing
+· dotnet-architecture/eShopModernizing
 
 $ Deploy SQl containe
 
@@ -3793,7 +3793,7 @@ E Save &amp; queue V Discard
 
 = Summary
 
-• Queue
+· Queue
 
 X Remove
 

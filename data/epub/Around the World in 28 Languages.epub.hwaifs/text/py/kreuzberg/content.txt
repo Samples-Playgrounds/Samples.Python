@@ -1,12 +1,16 @@
 Cover
-Around theWorld in 28Languages 
+Around the
+World in 28
+Languages 
 AZARDI Language Test Book 1
 Infogrid Pacific Pte. Ltd. 
 © 2011 Infogrid Pacific. All rights reserved.
-This testing demonstration book is provided for  AZARDI information and testing purposes only. 
-The Universal Declaration of Human Rights is  © 1996 – 2009 The Office of the High Commissioner for Human Rights
+This testing demonstration book is provided for 
+AZARDI information and testing purposes only. 
+The Universal Declaration of Human Rights is 
+© 1996 – 2009 The Office of the High Commissioner for Human Rights
 HTML translated pages were sourced from the Unicode Consortium UDHR Project at www.unicode.org/udhr/. 
-DISCLAIMER 
+DISCLAIMER
 This information demonstration and test book is provided with no warrant as to accuracy and fitness for any specific purpose. The editors have no expertise in any or all of the languages presented. The sole purpose of this book is to test Unicode font availability, rendering and presentation in AZARDI.
 Introduction
 This demonstration ePub 3 book was created with IGP:Digital Publisher for AZARDI. It demonstrates the multi-language power of standards-based digital content production and delivery solutions. 
@@ -1184,6 +1188,7 @@ This HTML version prepared by the UDHR in Unicode project.
 ഒരു രാജ്യത്തിന്നോ, വകുപ്പിന്നോ, വ്യക്തിക്കോ ഇഷ്ടമുള്ള പ്രവൃത്തികളിലെല്ലാമേര്‍പ്പെടാമെന്നോ, ഇതിലടങ്ങിയിരിക്കുന്ന തത്വങ്ങള്‍ക്കെതിരായിത്തന്നെ ഏന്തെങ്കിലും പ്രവര്‍ത്തിക്കാമെന്നോ ഉള്ള രീതിയില്‍ ഈ പ്രഖ്യാപനത്തെ വ്യാഖ്യാനിക്കാന്‍ പാടുള്ളതല്ല.
 ਮਨੁੱਖੀ ਅਧਿਕਾਰਾਂ ਬਾਰੇ ਵਿਸ਼ਵਵਿਆਪੀ ਐਲਾਨਨਾਮਾ
 Universal Declaration of Human Rights - Panjabi, Eastern
+
 © 1996 – 2009 The Office of the High Commissioner for Human Rights
 This HTML version prepared by the UDHR in Unicode project. 
 (10 ਦਸੰਬਰ 1948 ਦੇ ਆਮ ਇਜਲਾਸ ਦੇ ਮਤਾ ਨੰ: 217-ਏ(3) ਰਾਹੀਂ ਪ੍ਰਵਾਣ ਕੀਤਾ ਅਤੇ ਐਲਾਨਿਆ ਗਿਆ)

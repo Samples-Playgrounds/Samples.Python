@@ -1089,7 +1089,7 @@ Once you've identified the ASP.NET app to migrate and have its dependent project
 
 Contoso.Utils
 
-• NET 4.5 Class Library
+· NET 4.5 Class Library
 
 Contoso.Web
 
@@ -1103,7 +1103,7 @@ Choose a particular front-end app, an ASP.NET MVC 5 / Web API 2 project. Identif
 
 Figure 3-2 shows the installer for the .NET Portability Analyzer Visual Studio extension:
 
-• VSIX Installer
+· VSIX Installer
 
 Install
 
@@ -1129,57 +1129,57 @@ Options
 
 Search Options (CtrI+E)
 
-• Environment
+· Environment
 
-• Projects and Solutions
+· Projects and Solutions
 
-• Source Control
+· Source Control
 
-• Work Items
+· Work Items
 
-• Text Editor
+· Text Editor
 
-• Debugging
+· Debugging
 
-• IntelliTrace
+· IntelliTrace
 
-• Performance Tools
+· Performance Tools
 
-• .NET Portability Analyzer
+· .NET Portability Analyzer
 
 General
 
-• Azure Service Authentication
+· Azure Service Authentication
 
-• Container Tools
+· Container Tools
 
-• Cross Platform
+· Cross Platform
 
-• Database Tools
+· Database Tools
 
-• F# Tools
+· F# Tools
 
-• Live Share
+· Live Share
 
-• Live Unit Testing
+· Live Unit Testing
 
-• NuGet Package Manager
+· NuGet Package Manager
 
-• Snapshot Debugger
+· Snapshot Debugger
 
-• SQL Server Tools
+· SQL Server Tools
 
-• Test
+· Test
 
-• Text Templating
+· Text Templating
 
-• Web Forms Designer
+· Web Forms Designer
 
-• Web Performance Test Tools
+· Web Performance Test Tools
 
-• Windows Forms Designer
+· Windows Forms Designer
 
-• XAML Designer
+· XAML Designer
 
 P
 
@@ -1195,7 +1195,7 @@ Output formats
 
 ~ Excel V HTML
 
-•Ison
+·Ison
 
 Figure 3 -3. Configure the .NET Portability Analyzer.
 
@@ -1632,11 +1632,11 @@ Migration complete
 
 P
 
-• 8
+· 8
 
-• 8
+· 8
 
-• 8
+· 8
 
 eShopLegacyMVC
 
@@ -1664,7 +1664,7 @@ In this chapter, you'll see how to migrate a .NET Framework app to .NET Core. Th
 
 ex log4Net.xml
 
-The initial version of the project is shown in Figure 4-1. It’s a fairly standard ASP.NET MVC 5 app.
+The initial version of the project is shown in Figure 4-1. It's a fairly standard ASP.NET MVC 5 app.
 
 <!-- image -->
 
@@ -1692,13 +1692,13 @@ Window
 
 He
 
-•
+·
 
 Figure 4 -2. Analyze assembly portability in Visual Studio.
 
 <!-- image -->
 
-Choose the web project’s assembly from the project’s bin folder, as shown in Figure 4-3.
+Choose the web project's assembly from the project's bin folder, as shown in Figure 4-3.
 
 5 - =
 
@@ -1732,7 +1732,7 @@ View
 
 fx
 
-Organize •
+Organize ·
 
 New folder
 
@@ -1746,11 +1746,11 @@ Target Framework
 
 .NETFramework,Version=v4.7.2
 
-• This PC
+· This PC
 
 y 3D Objects
 
-• Desktop
+· Desktop
 
 Documents
 
@@ -1860,7 +1860,7 @@ T:System.Web.Mvc.HttpGetAttribute
 
 T:System.Web.Mvc.HttpGetAttribute
 
-• Target member
+· Target member
 
 T:System.Web.Mvc.Ur|Parameter
 
@@ -1894,7 +1894,7 @@ Next, migrate from the older .csproj file structure to the newer, simpler struct
 
 The original project's eShopLegacyMVC.csproj file is 418 lines long. A sample of the project file is shown in Figure 4-6. To offer a sense of its overall size and complexity, the right side of the image contains a miniature view of the entire file.
 
-• eShopLegacyMVC.csproj X
+· eShopLegacyMVC.csproj X
 
 src &gt; eShopLegacyMVC &gt; i eShopLegacyMVC.csproj k/?xm] version="1.0" encoding="utf-8"?l)
 
@@ -1992,9 +1992,9 @@ In addition to the C# project file, NuGet dependencies are stored in a separate 
 
 &gt;
 
-• packages.config X
+· packages.config X
 
-src &gt; eShopLegacyMVC &gt; • packages.config
+src &gt; eShopLegacyMVC &gt; · packages.config
 
 1
 
@@ -2216,7 +2216,7 @@ The first two commands download files so that they exist locally. The last line 
 
 X
 
-eShopPorted &gt; • eShopPorted.csproj
+eShopPorted &gt; · eShopPorted.csproj
 
 1
 
@@ -2319,11 +2319,11 @@ In Startup.cs, add a call to app.UseStaticFiles() in the Configure method:
 public void Configure(IApplicationBuilder app , IHostingEnvironment env) { if (env . IsDevelopment()) { app.UseDeveloperExceptionPage(); } app.UseStaticFiles(); // ... }
 ```
 
-Copy the Content folder from the ASP.NET MVC app to the new project’s wwwroot folder.
+Copy the Content folder from the ASP.NET MVC app to the new project's wwwroot folder.
 
 Run the app and navigate to its /Content/base.css folder to verify that the static file is served correctly from its expected path. Continue copying the rest of the folders containing static files to the new project. You'll also want to copy the favicon.ico file from the project's root to the wwwroot folder. Figure 4-11 shows the results after these files and their folders have all been copied.
 
-• B
+· B
 
 eShopPorted
 
@@ -2331,7 +2331,7 @@ eShopPorted
 
 Dependencies
 
-• 8.
+· 8.
 
 1 8t
 
@@ -2341,13 +2341,13 @@ Properties www.root
 
 8
 
-• 8П
+· 8П
 
 Controllers
 
-• 82] Migrations
+· 82] Migrations
 
-• &amp;
+· &amp;
 
 Models
 
@@ -2355,21 +2355,21 @@ Models
 
 8C Services
 
-• 8
+· 8
 
 ViewModel
 
-• 8C
+· 8C
 
 Views
 
 82] app.config
 
-• B
+· B
 
 appsettings json
 
-• 8C# Program.cs
+· 8C# Program.cs
 
 D BC# Startup.cs
 
@@ -2383,7 +2383,7 @@ Next, copy over the C# files used by the app, including standard MVC folders and
 
 For the eShop sample, the first folder I choose to migrate is the Models folder, which includes C# entities and Entity Framework classes. This folder's classes are used by most of the others, so they won't work until these classes have been copied. After copying the folder and building, the compiler revealed errors related to missing namespace System.Web.Hosting, related access to HostingEnvironment, and a reference to ConfigurationManager.AppSettings. The solution to these issues will be to pass in the necessary path data; for now the breaking lines are commented out and a TODO: comment is added to each one to track it. After changing five lines, the Task List shows five items and the project builds.
 
-Next, the ViewModel folder, with its one class, is copied over. It’s an easy one, and builds immediately.
+Next, the ViewModel folder, with its one class, is copied over. It's an easy one, and builds immediately.
 
 The Services folder is copied over. This folder's classes depend on Entity Framework classes from the Models folder, which is why it needed to be copied after that folder. Fortunately, it too builds without errors.
 
@@ -2581,7 +2581,7 @@ The preceding code is the minimal configuration required to get MVC features wor
 
 ## Migrate dependency injection configuration
 
-The original app’s Global.asax file defines the following method, called when the app starts up:
+The original app's Global.asax file defines the following method, called when the app starts up:
 
 ```
 protected IContainer RegisterContainer() { var builder = new ContainerBuilder(); builder . RegisterControllers(typeof(MvcApplication).Assembly); var mockData = bool . Parse(ConfigurationManager . AppSettings["UseMockData"]); builder . RegisterModule(new ApplicationModule(mockData)); var container = builder . Build(); DependencyResolver . SetResolver(new AutofacDependencyResolver(container)); return container; }
@@ -2599,7 +2599,7 @@ For now, the setting for useMockData is set to true. This setting will be read f
 
 IF Index - Catalog manager (MVC) ×
 
-+ &gt; C• localhost:44337
++ &gt; C· localhost:44337
 
 Create New
 
@@ -2648,7 +2648,7 @@ The original app referenced its settings using ConfigurationManager.AppSettings.
 
 If your app has more complex configuration, especially if it's using custom configuration sections, you'll probably want to create and bind objects to different parts of your app's configuration. These types can then be accessed using the options pattern. However, as noted in the referenced doc, this pattern shouldn't be used in Program.cs (or Startup.ConfigureServices). Instead the ported app will reference the UseMockData configuration value directly.
 
-First, modify the ported app’s appsettings.json file and add the two settings in the root:
+First, modify the ported app's appsettings.json file and add the two settings in the root:
 
 <!-- image -->
 
@@ -2676,7 +2676,7 @@ At this point, the setting is pulled from configuration. The other setting, UseC
 
 All access to configuration within the web app should be modified in this manner to use the new IConfiguration type. Dependencies that require access to .NET Framework configuration can include such settings in an app.config file added to the web project. The dependent projects can work with ConfigurationManager to access settings, and shouldn't require any changes if they already use this approach. However, since ASP.NET Core apps run as their own executable, they don't reference web.config but rather app.config. By migrating settings from the legacy app's web.config file to a new app.config file in the ASP.NET Core app, components that use ConfigurationManager to access their settings will continue to function properly.
 
-The app’s migration is nearly complete. The only remaining task is data access configuration.
+The app's migration is nearly complete. The only remaining task is data access configuration.
 
 ## Data access considerations
 
@@ -2805,7 +2805,7 @@ Drop the existing eShopPorted database if it exists, then run:
 
 dotnet ef database update
 
-This creates and seeds the database. It’s now ready to run, with a few small updates left to address.
+This creates and seeds the database. It's now ready to run, with a few small updates left to address.
 
 ## Fix all TODO tasks
 
@@ -2961,7 +2961,7 @@ In ASP.NET Core, the process is similar. ASP.NET Core supports both input format
 builder . Services . AddControllers(options => { options . InputFormatters . Insert(0 , new CustomInputFormatter()); options . OutputFormatters . Insert(0 , new CustomOutputFormatter()); });
 ```
 
-You’ll find a complete list of base classes in the Microsoft.AspNetCore.Mvc.Formatters namespace.
+You'll find a complete list of base classes in the Microsoft.AspNetCore.Mvc.Formatters namespace.
 
 The steps to migrate from a Web API formatter to an ASP.NET Core MVC formatter are:
 
@@ -3199,7 +3199,7 @@ Figure 5-1 shows how the ASP.NET Core 2.1 api app appears in IIS Manager as a pa
 
 Internet Information Services (IIS) Manager
 
-• NIGHTKING • Sites • DotNetMvcApp •
+· NIGHTKING · Sites · DotNetMvcApp ·
 
 File View Help
 
@@ -3245,7 +3245,7 @@ X
 
 &lt; →
 
-6] • NIGHTKING »
+6] · NIGHTKING »
 
 File View
 
@@ -3279,7 +3279,7 @@ Another alternative to IIS Rewrite rules is the use of a reverse proxy like YARP
 
 A common approach to porting large apps from .NET Framework to ASP.NET Core is to choose individual portions of the app to migrate one by one. As each piece of the app is ported, the entire app remains running and usable, with some parts of it running in its original configuration and other parts running on some version of .NET Core. By following this approach, a large app migration can be performed incrementally. This approach results in limiting risk by providing more rapid feedback and
 
-• 0-
+· 0-
 
 reducing total surface area involved in testing. It also allows for more rapid realization of benefits of .NET Core, such as performance increases. Although ASP.NET Core apps are no longer required to be hosted on IIS, IIS remains a very flexible and powerful web server that can be configured to support a variety of hosting scenarios involving both .NET Framework and ASP.NET Core apps on the same IIS instance or even hosted on different servers.
 

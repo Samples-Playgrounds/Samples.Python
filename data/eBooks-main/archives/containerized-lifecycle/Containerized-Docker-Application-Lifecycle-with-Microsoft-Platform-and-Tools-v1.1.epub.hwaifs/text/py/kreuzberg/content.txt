@@ -328,11 +328,16 @@ There are no fees for any of the software installed by default as part of ACS. A
 Container Service is currently available for Standard A, D, DS, G, and GS series Linux VMs in Azure. You are charged only for the compute instances you choose as well as the other underlying infrastructure resources consumed, such as storage and networking. There are no incremental charges for Container Service itself.
 Additional resources
 Following are locations where you can find additional information:
-Introduction to Docker container hosting solutions with Container Service:https://azure.microsoft.com/documentation/articles/container-service-intro/
-Docker Swarm overview:https://docs.docker.com/swarm/overview/
-Swarm mode overview:https://docs.docker.com/engine/swarm/
-Mesosphere DC/OS Overview:https://docs.mesosphere.com/1.7/overview/
-Kubernetes (the official site):http://kubernetes.io/
+Introduction to Docker container hosting solutions with Container Service:
+https://azure.microsoft.com/documentation/articles/container-service-intro/
+Docker Swarm overview:
+https://docs.docker.com/swarm/overview/
+Swarm mode overview:
+https://docs.docker.com/engine/swarm/
+Mesosphere DC/OS Overview:
+https://docs.mesosphere.com/1.7/overview/
+Kubernetes (the official site):
+http://kubernetes.io/
 Using Azure Container Service (AKS)
 Azure Container Service has been available since 2015 with support for multiple container orchestrators as described before. During these years Kubernetes has emerged as the open source standard for container orchestration. Microsoft has been working in a new version of Azure Container Service (AKS) that contains a lot of improvements and full coverage of Kubernetes.
 Using Azure Container Service AKS, you can take the advantage of the enterprise-grade features of Azure, while still maintaining application portability through Kubernetes and Docker.
@@ -486,7 +491,19 @@ When you add DockerFile, you specify what base Docker image you’ll be using (l
 Option A: Use an existing official Docker image
 Using an official repository of a language stack with a version number ensures that the same language features are available on all machines (including development, testing, and production).
 Following is a sample DockerFile for a .NET Core container:
-# Base Docker image to useFROM microsoft/aspnetcore:2.0 # Set the Working Directory and files to be copied to the imageARG sourceWORKDIR /appCOPY ${source:-bin/Release/PublishOutput} .# Configure the listening port to 80 (Internal/Secured port within Docker host)EXPOSE 80# Application entry pointENTRYPOINT ["dotnet", "MyCustomMicroservice.dll"]
+# Base Docker image to use
+FROM microsoft/aspnetcore:2.0
+
+# Set the Working Directory and files to be copied to the image
+ARG source
+WORKDIR /app
+COPY ${source:-bin/Release/PublishOutput} .
+
+# Configure the listening port to 80 (Internal/Secured port within Docker host)
+EXPOSE 80
+
+# Application entry point
+ENTRYPOINT ["dotnet", "MyCustomMicroservice.dll"]
 In this case, it is using the version 2.0 of the official ASP.NET Core Docker image for Linux named microsoft/aspnetcore:2.0. For further details, consult the ASP.NET Core Docker Image page and the .NET Core Docker Image page. You also could be using another comparable image like node:4-onbuild for Node.js, or many other preconfigured images for development languages, which are available at Docker Hub.
 In the DockerFile, you can instruct Docker to listen to the TCP port that you will use at runtime (such as port 80).
 There are other lines of configuration that you can add in the DockerFile depending on the language/framework you are using, so Docker knows how to run the app. For instance, you need the ENTRYPOINT line with ["dotnet", "MyCustomMicroservice.dll"] to run a .NET Core app, although you can have multiple variants depending on the approach to build and run your service. If you’re using the SDK and dotnet CLI to build and run the .NET app, it would be slightly different. The bottom line is that the ENTRYPOINT line plus additional lines will be different depending on the language/platform you choose for your application.
@@ -513,7 +530,18 @@ Figure 4-22: Viewing existing images using docker images
 Step 4: Define your services in docker-compose.yml when building a composed Docker app with multiple services
 With the docker-compose.yml file you can define a set of related services to be deployed as a composed application with the deployment commands explained in the next step section.
 You need to create that file in your main or root solution folder; it should have a similar content to the following docker-compose.yml file:
-version: '2'services: web: build: . ports: - "81:80" volumes: - .:/code depends_on: - redis redis: image: redis
+version: '2'
+services:
+web:
+build: .
+ports:
+- "81:80"
+volumes:
+- .:/code
+depends_on:
+- redis
+redis:
+image: redis
 In this particular case, this file defines two services: the web service (your custom service) and the redis service (a popular cache service). Each service will be deployed as a container, so we need to use a concrete Docker image for each. For this particular web service, the image will need to do the following:
 Build from the DockerFile in the current directory
 Forward the exposed port 80 on the container to port 81 on the host machine
@@ -568,7 +596,10 @@ https://azure.microsoft.com/documentation/articles/vs-azure-tools-docker-hosting
 Using Windows PowerShell commands in a DockerFile to set up Windows Containers (Docker standard based)
 With Windows Containers, you can convert your existing Windows applications to Docker images and deploy them with the same tools as the rest of the Docker ecosystem.
 To use Windows Containers, you just need to write Windows PowerShell commands in the DockerFile, as demonstrated in the following example:
-FROM microsoft/windowsservercoreLABEL Description="IIS" Vendor="Microsoft" Version="10"RUN powershell -Command Add-WindowsFeature Web-ServerCMD [ "ping", "localhost", "-t" ]
+FROM microsoft/windowsservercore
+LABEL Description="IIS" Vendor="Microsoft" Version="10"
+RUN powershell -Command Add-WindowsFeature Web-Server
+CMD [ "ping", "localhost", "-t" ]
 In this case, we’re using Windows PowerShell to install a Windows Server Core base image as well as IIS.
 In a similar way, you also could use Windows PowerShell commands to set up additional components like the traditional ASP.NET 4.x and .NET 4.6 or any other Windows software, as shown here:
 RUN powershell add-windowsfeature web-asp-net45

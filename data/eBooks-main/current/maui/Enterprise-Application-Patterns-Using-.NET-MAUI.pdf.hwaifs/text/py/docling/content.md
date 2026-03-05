@@ -1159,7 +1159,7 @@ IValidity
 
 creates and uses
 
-•
+·
 
 derives from
 
@@ -1599,7 +1599,7 @@ A container is an isolated, resource-controlled, and portable operating environm
 
 UpdateUser command
 
-•
+·
 
 Database
 
@@ -2104,7 +2104,7 @@ Identity Microservice (STS+Users)
 
 Web API
 
-•
+·
 
 SQL Server database
 

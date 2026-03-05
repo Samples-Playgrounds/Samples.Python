@@ -318,7 +318,7 @@ Relational
 
 ## Introduction to cloud -native applications Marketing Location
 
-Another day, at the office, working on “the next big thing.”
+Another day, at the office, working on "the next big thing."
 
 Your cellphone rings. It's your friendly recruiter - the one who calls daily with exciting new opportunities.
 
@@ -330,7 +330,7 @@ Fast forward a few weeks and you're now a new employee in a design session archi
 
 How will you build it?
 
-If you follow the guidance from past 15 years, you’ll most likely build the system shown in Figure 1.1.
+If you follow the guidance from past 15 years, you'll most likely build the system shown in Figure 1.1.
 
 Figure 1 -1. Traditional monolithic design
 
@@ -340,7 +340,7 @@ You construct a large core application containing all of your domain logic. It i
 
 Congratulations! You just created a monolithic application.
 
-Not all is bad. Monoliths offer some distinct advantages. For example, they’re straightforward to…
+Not all is bad. Monoliths offer some distinct advantages. For example, they're straightforward to…
 
 Monolithic server process
 
@@ -404,7 +404,7 @@ Note how the application is decomposed across a set of small isolated microservi
 
 Hmm… We just used the term, Cloud Native. Your first thought might be, "What exactly does that mean?" Another industry buzzword concocted by software vendors to market more stuff?"
 
-Fortunately it’s far different, and hopefully this book will help convince you.
+Fortunately it's far different, and hopefully this book will help convince you.
 
 Within a short time, cloud native has become a driving trend in the software industry. It's a new way to construct large, complex systems. The approach takes full advantage of modern software development practices, technologies, and cloud infrastructure. Cloud native changes the way you design, implement, deploy, and operationalize systems.
 
@@ -422,7 +422,7 @@ So, what exactly is Cloud Native? Sit back, relax, and let us help you explore t
 
 Stop what you're doing and ask your colleagues to define the term "Cloud Native". There's a good chance you'll get several different answers.
 
-Let’s start with a simple definition:
+Let's start with a simple definition:
 
 Cloud -native architecture and technologies are an approach to designing, constructing, and operating workloads that are built in the cloud and take full advantage of the cloud computing model.
 
@@ -467,7 +467,7 @@ Figure 1 -3. Cloud -native foundational pillars
 
 <!-- image -->
 
-Let’s take some time to better understand the significance of each pillar.
+Let's take some time to better understand the significance of each pillar.
 
 ## The cloud
 
@@ -525,7 +525,7 @@ In the book, Beyond the Twelve-Factor App, author Kevin Hoffman details each of 
 | 14  -  Telemetry                     | On a workstation, you have deep visibility into your application and its behavior. In the cloud, you don’t. Make sure your design includes the collection of monitoring, domain-specific, and health/system data. |
 | 15  -  Authentication/ Authorization | Implement identity from the start. Consider RBAC (role-based access control) features available in public clouds.                                                                                                 |
 
-We’ll refer to many of the 12+ factors in this chapter and throughout the book.
+We'll refer to many of the 12+ factors in this chapter and throughout the book.
 
 ## Azure Well -Architected Framework
 
@@ -1084,7 +1084,7 @@ eShopOnContainers reference application
 
 -
 
-• Docker Host
+· Docker Host
 
 Different types of microservices
 
@@ -1136,7 +1136,7 @@ Search Solution Explorer (CtrI+:)
 
 в Solution 'eShopOnContainers-ServicesAndWebApps' (31 of 31 projects)
 
-• Solution Items
+· Solution Items
 
 D sc
 
@@ -1150,7 +1150,7 @@ Web Apps
 
 P
 
-• tests
+· tests
 
 → Service Tests docker-compose
 
@@ -1204,7 +1204,7 @@ SQL Server
 
 API Gateways / BFF Catalog microservice SQL Server
 
-•0
+·0
 
 database
 
@@ -1292,59 +1292,59 @@ Branch: dev - eShopOnContainers / k8s / helm /
 
 mvelosop Add option to use local images for kis deployment
 
-• apigwmm
+· apigwmm
 
-• apigwms
+· apigwms
 
-• apigwwm
+· apigwwm
 
-• apigwws
+· apigwws
 
-• basket-api
+· basket-api
 
-• basket-data
+· basket-data
 
-• catalog-api
+· catalog-api
 
-• eshop-common
+· eshop-common
 
-• identity-api
+· identity-api
 
-• istio
+· istio
 
-• keystore-data
+· keystore-data
 
-• locations-api
+· locations-api
 
-• marketing-api
+· marketing-api
 
-• mobileshoppingagg
+· mobileshoppingagg
 
-• nosql-data
+· nosql-data
 
-• ordering-api
+· ordering-api
 
-• ordering-backgroundtasks
+· ordering-backgroundtasks
 
-• ordering-signalrhub
+· ordering-signalrhub
 
-• payment-api
+· payment-api
 
-• rabbitmq
+· rabbitmq
 
-• sql-data
+· sql-data
 
-• webhooks-api
+· webhooks-api
 
-• webhooks-web
+· webhooks-web
 
-• webmvc
+· webmvc
 
-• webshoppingagg
+· webshoppingagg
 
-• webspa
+· webspa
 
-• webstatus devspaces scripts
+· webstatus devspaces scripts
 
 Upload files
 
@@ -1610,7 +1610,7 @@ General
 
 Kubernetes v1.21.3
 
-• Enable Kubernetes
+· Enable Kubernetes
 
 What is Minikube? The Minikube project says "Minikube implements a local Kubernetes cluster on macOS, Linux, and Windows." Its primary goals are "to be the best tool for local Kubernetes application development and to support all Kubernetes features that fit." Installing Minikube is separate from Docker, but Minikube supports different hypervisors than Docker Desktop supports. The following Kubernetes features are currently supported by Minikube: Reset Kubernetes Cluster
 
@@ -1690,7 +1690,7 @@ Debug *
 
 Any CPU
 
-• Docker api\_sample\_app
+· Docker api\_sample\_app
 
 IIS Express
 
@@ -1764,7 +1764,7 @@ Solution 'api-sample-app' (1 of 1 project)
 
 9 Dependencies
 
-• Properties
+· Properties
 
 Figure 3 -8. Adding Docker support to Visual Studio
 
@@ -1950,7 +1950,7 @@ After you've tagged the image, you use the docker push command to push the image
 
 docker push myregistry.azurecr.io/mycontainer:v1
 
-•
+·
 
 X
 
@@ -2070,11 +2070,11 @@ myregistry - Repositories
 
 Container registry
 
-• Search (Ctri+/)
+· Search (Ctri+/)
 
 € Overview
 
-• Activity log iM Access control (IAM)
+· Activity log iM Access control (IAM)
 
 Tags
 
@@ -2086,7 +2086,7 @@ Access keys
 
 Locks
 
-• Automation script
+· Automation script
 
 SERVICES
 
@@ -2098,7 +2098,7 @@ Replications (Preview)
 
 SUPPORT + TROUBLESHOOTING
 
-• New support request
+· New support request
 
 © Refresh
 
@@ -2399,7 +2399,7 @@ Client 3 SPA Web app
 
 JavaScript/Angular.js
 
-• Cloud
+· Cloud
 
 Figure 4 -7. Azure SignalR
 
@@ -2845,21 +2845,21 @@ Recent project templates
 
 5 Properties gic ASP.NET Core gRPC Service
 
-• E Protos
+· E Protos
 
-• greet.proto
+· greet.proto
 
 Fo ASP.NET Core Web API
 
-• E Services
+· E Services
 
-• C# GreeterService.cs
+· C# GreeterService.cs
 
-• appsettings.json
+· appsettings.json
 
 › Azure Functions
 
-• C# Program.cs
+· C# Program.cs
 
 Figure 4 -20. gRPC support in Visual Studio 2022
 
@@ -3457,7 +3457,7 @@ PostgreSQL
 
 Built-in high availability with a 99.99% service level agreement
 
-• Automatic upgrades, patching, and backups
+· Automatic upgrades, patching, and backups
 
 ## Azure relational databases
 
@@ -3533,13 +3533,13 @@ MongoDB
 
 Table API
 
-• OOO
+· OOO
 
 Column-family
 
 Gremlin
 
-•
+·
 
 Figure 5 -12: Overview of Azure Cosmos DB
 
@@ -3818,14 +3818,14 @@ This chapter presented a detailed look at data in cloud-native systems. We start
 - Getting Behind the 9-Ball: Cosmos DB Consistency Levels Explained
 - On RDBMS, NoSQL and NewSQL databases. Interview with John Ryan
 
-- •
-- •
-- •
+- ·
+- ·
+- ·
 - TiDB
-- •
+- ·
 - Vitess
-- •
-- •
+- ·
+- ·
 
 SQL vs NoSQL vs NewSQL: The Full Comparison DASH: Four Properties of Kubernetes-Native Databases CockroachDB YugabyteDB Elasticsearch: The Definitive Guide Introduction to Apache Lucene
 
@@ -3933,7 +3933,7 @@ Question: Would you retry an HTTP Status Code of 403 Forbidden? No. Here, the sy
 
 As recommended in Chapter 1, Microsoft developers constructing cloud-native applications should target the .NET platform. Version 2.1 introduced the HTTPClientFactory library for creating HTTP Client instances for interacting with URL-based resources. Superseding the original HTTPClient class, the factory class supports many enhanced features, one of which is tight integration with the Polly resiliency library. With it, you can easily define resiliency policies in the application Startup class to handle partial failures and connectivity issues.
 
-Next, let’s expand on retry and circuit breaker patterns.
+Next, let's expand on retry and circuit breaker patterns.
 
 ## Retry pattern
 
@@ -4058,7 +4058,7 @@ Figure 6 -4 . Replicated resources across regions
 
 <!-- image -->
 
-West •
+West ·
 
 SQL
 
@@ -4422,7 +4422,7 @@ Selected Fields
 
 Available Fields
 
-• @timestamp t @version
+· @timestamp t @version
 
 t \_id t \_index
 
@@ -4460,7 +4460,7 @@ Logstash would use a configuration like the one shown in Figure 7-8.
 
 Share
 
-• Last 15 minutes
+· Last 15 minutes
 
 Uses lucene query syntax
 
@@ -4636,7 +4636,7 @@ Azure Tenant
 
 Custom Sources
 
-Azure Monitor •
+Azure Monitor ·
 
 Insights
 
@@ -4670,7 +4670,7 @@ Once the data is gathered, it can be manipulated, summarized, and plotted into c
 
 # Table 1
 
-• Stats
+· Stats
 
 HAWAII: 10.58%
 
@@ -4682,7 +4682,7 @@ COLORADO: 7.25%
 
 ALABAMA: 8.12%
 
-• Done (0.819 s)
+· Done (0.819 s)
 
 123
 
@@ -4718,7 +4718,7 @@ There is a playground for experimenting with Kusto queries. Reading sample queri
 
 There are several different dashboard technologies that may be used to surface the information from Azure Monitor. Perhaps the simplest is to just run queries in Application Insights and plot the data into a chart .
 
-Fabrikam v + New dashboard 7 Upload Download Edit © Unshare / Full screen D Clone • Delete
+Fabrikam v + New dashboard 7 Upload Download Edit © Unshare / Full screen D Clone · Delete
 
 UTC Time: Past 24 hours
 
@@ -5317,7 +5317,7 @@ The patterns and practices that enable faster, more reliable releases to deliver
 
 DevOps emerged before microservices and it's likely that the movement towards smaller, more fit to purpose services wouldn't have been possible without DevOps to make releasing and operating not just one but many applications in production easier.
 
-• microservices
+· microservices
 
 Search term
 
@@ -5495,7 +5495,7 @@ Simon Timms
 
 State
 
-• To Do
+· To Do
 
 Reason
 
@@ -5505,7 +5505,7 @@ User Name:
 
 Password:
 
-• 0 comments
+· 0 comments
 
 Add tag
 
@@ -5525,7 +5525,7 @@ The description field supports the normal styles you'd expect (bold, italic unde
 
 Tasks can be rolled up into features, which define a larger unit of work. Features, in turn, can be rolled up into epics. Classifying tasks in this hierarchy makes it much easier to understand how close a large feature is to rolling out.
 
-• Back to Work Items
+· Back to Work Items
 
 O, AzureCamp2019 Team v
 
@@ -5541,9 +5541,9 @@ Namel
 
 ¿ Collapse all
 
-• Epic
+· Epic
 
-• Unparented
+· Unparented
 
 ¡ Issue
 
@@ -5551,7 +5551,7 @@ Task
 
 5f Test Case
 
-• Test Plan
+· Test Plan
 
 CA Test Suite
 
@@ -5561,7 +5561,7 @@ Projects
 
 To Do 8 h
 
-• 2 Add "remember me"
+· 2 Add "remember me"
 
 button to login screen
 

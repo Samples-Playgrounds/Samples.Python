@@ -656,7 +656,8 @@ Figure 8-2. DocumentDB resource organization.
 The DocumentDB query language is a simple yet powerful interface for querying JSON documents. The language supports a subset of ANSI SQL grammar and adds deep integration of JavaScript object, arrays, object construction, and function invocation.
 Azure Cosmos DB supports the MongoDB API, which can be used with existing MongoDB libraries and tools. It also offers a Table API, for key-value storage, and a Graph API built following the Apache TinkerPop specification.
 References – Azure Cosmos DB
-Cosmos DB Introductionhttps://docs.microsoft.com/en-us/azure/cosmos-db/introduction
+Cosmos DB Introduction
+https://docs.microsoft.com/en-us/azure/cosmos-db/introduction
 Other Persistence Options
 In addition to relational and NoSQL storage options, ASP.NET Core applications can use Azure Storage to store a variety of data formats and files in a cloud-based, scalable fashion. Azure Storage is massively scalable, so you can start out storing small amounts of data and scale up to storing hundreds or terabytes if your application requires it. Azure Storage supports four kinds of data:
 Blob Storage for unstructured text or binary storage, also referred to as object storage.
@@ -664,7 +665,8 @@ Table Storage for structured datasets, accessible via row keys.
 Queue Storage for reliable queue-based messaging.
 File Storage for shared file access between Azure virtual machines and on-premises applications.
 References – Azure Storage
-Azure Storage Introductionhttps://docs.microsoft.com/en-us/azure/storage/storage-introduction 
+Azure Storage Introduction
+https://docs.microsoft.com/en-us/azure/storage/storage-introduction 
 Caching
 In web applications, each web request should be completed in the shortest time possible. One way to achieve this is to limit the number of external calls the server must make to complete the request. Caching involves storing a copy of data on the server (or another data store that is more easily queried than the source of the data). Web applications, and especially non-SPA traditional web applications, need to build the entire user interface with every request. This frequently involves making many of the same database queries repeatedly from one user request to the next. In most cases, this data changes rarely, so there is little reason to constantly request it from the database. ASP.NET Core supports response caching, for caching entire pages, and data caching, which supports more granular caching behavior.
 When implementing caching, it’s important to keep in mind separation of concerns. Avoid implementing caching logic in your data access logic, or in your user interface. Instead, encapsulate caching in its own classes, and use configuration to manage its behavior. This follows the Open/Closed and Single Responsibility principles, and will make it easier for you to manage how you use caching in your application as it grows.
@@ -796,7 +798,8 @@ Once deployed, the ASP.NET Core application runs within the context of an Azure 
 Step 6. Production Monitoring and Diagnostics
 While the Web App is running, you can monitor the health of the application and collect diagnostics and user behavior data. Application Insights is included in Visual Studio, and offers automatic instrumentation for ASP.NET apps. It can provide you with information on usage, exceptions, requests, performance, and logs.
 References
-Build and Deploy Your ASP.NET Core App to Azurehttps://www.visualstudio.com/en-us/docs/build/apps/aspnet/aspnetcore-to-azure
+Build and Deploy Your ASP.NET Core App to Azure
+https://www.visualstudio.com/en-us/docs/build/apps/aspnet/aspnetcore-to-azure
 Azure Hosting Recommendations for ASP.NET Core Web Apps
 “Line-of-business leaders everywhere are bypassing IT departments to get applications from the cloud (aka SaaS) and paying for them like they would a magazine subscription. And when the service is no longer required, they can cancel the subscription with no equipment left unused in the corner.”
 Daryl Plummer, Gartner analyst
@@ -844,8 +847,13 @@ Your application’s requirements should dictate its architecture. There are man
 Figure 11-1 shows an example reference architecture. This diagram describes a recommended architecture approach for a Sitecore content management system website optimized for marketing.
 Figure 11-1. Sitecore marketing website reference architecture.
 References – Azure Hosting Recommendations
-Azure Solution Architectureshttps://azure.microsoft.com/en-us/solutions/architecture/ 
-Azure Developer Guidehttps://azure.microsoft.com/en-us/campaigns/developer-guide/ 
-What is Azure App Service?https://docs.microsoft.com/en-us/azure/app-service/app-service-value-prop-what-is 
-Azure App Service, Virtual Machines, Service Fabric and Cloud Services Comparisonhttps://docs.microsoft.com/en-us/azure/app-service-web/choose-web-site-cloud-service-vm 
-Azure Container Optionshttps://social.technet.microsoft.com/wiki/contents/articles/51465.azure-container-options.aspx
+Azure Solution Architectures
+https://azure.microsoft.com/en-us/solutions/architecture/ 
+Azure Developer Guide
+https://azure.microsoft.com/en-us/campaigns/developer-guide/ 
+What is Azure App Service?
+https://docs.microsoft.com/en-us/azure/app-service/app-service-value-prop-what-is 
+Azure App Service, Virtual Machines, Service Fabric and Cloud Services Comparison
+https://docs.microsoft.com/en-us/azure/app-service-web/choose-web-site-cloud-service-vm 
+Azure Container Options
+https://social.technet.microsoft.com/wiki/contents/articles/51465.azure-container-options.aspx

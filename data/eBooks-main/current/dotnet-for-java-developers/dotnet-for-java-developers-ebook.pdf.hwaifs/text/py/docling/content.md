@@ -253,11 +253,11 @@ EXPLORER
 
 4 HELLOWORLD
 
-• .vscode
+· .vscode
 
-• bin
+· bin
 
-• obj helloworld.csproj
+· obj helloworld.csproj
 
 C* Program.cs
 
@@ -299,7 +299,7 @@ $ dotnet --version 2.1.1
 
 X
 
-•..
+·..
 
 <!-- image -->
 
@@ -363,13 +363,13 @@ Summary
 
 Once started, take a few minutes to grab some coffee; like its cousin on Windows, Visual Studio for Mac will download the components it needs and install them to disk. Don't walk away from the machine for too long, however-the installer will ask for the administrator password several times during the installation. Mobile development with C++ ~ .NET Framework 4.6.1 development tools v ASP.NET and web development tools prerequisites
 
-• Developer Analytics tools
+· Developer Analytics tools
 
 Optional
 
-• Cloud tools for web development
+· Cloud tools for web development
 
-• IntelliTrace
+· IntelliTrace
 
 M NET profiling tools
 
@@ -383,7 +383,7 @@ When the Visual Studio installer fires up, it immediately becomes obvious that t
 
 <!-- image -->
 
-- • x
+- · x
 
 X
 
@@ -431,17 +431,9 @@ Projects/MPDesign/MPDesign.sin.
 
 Choose a template for your new project
 
-• Recently used
+· Recently used
 
-• Multiplatform
-
-App
-
-Library
-
-Tests
-
-• ios
+· Multiplatform
 
 App
 
@@ -449,7 +441,7 @@ Library
 
 Tests
 
-• Android
+· ios
 
 App
 
@@ -457,7 +449,7 @@ Library
 
 Tests
 
-• NET Core
+· Android
 
 App
 
@@ -465,7 +457,15 @@ Library
 
 Tests
 
-• Cloud
+· NET Core
+
+App
+
+Library
+
+Tests
+
+· Cloud
 
 General
 
@@ -497,13 +497,13 @@ File
 
 Edit
 
-• Debug &gt;
+· Debug &gt;
 
 gex lE Solution gul" !
 
 gnut hoa
 
-• HolloDoetNet can
+· HolloDoetNet can
 
 BEЛEERЕНЛERЕВЕ0ES.10E08
 

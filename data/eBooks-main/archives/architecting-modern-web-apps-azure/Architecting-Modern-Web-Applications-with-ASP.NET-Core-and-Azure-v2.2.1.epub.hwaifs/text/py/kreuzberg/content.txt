@@ -734,7 +734,8 @@ https://msdn.microsoft.com/en-us/magazine/mt767699.aspx
 Areas
 https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/areas 
 Filters
-https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/filtersValidateModel Nuget Package
+https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/filters
+ValidateModel Nuget Package
 https://www.nuget.org/packages/Ardalis.ValidateModel
 Security
 Securing web applications is a large topic, with many considerations. At its most basic level, security involves ensuring you know who a given request is coming from, and then ensuring that that request only has access to resources it should. Authentication is the process of comparing credentials provided with a request to those in a trusted data store, to see if the request should be treated as coming from a known entity. Authorization is the process of restricting access to certain resources based on user identity. A third security concern is protecting requests from eavesdropping by third parties, for which you should at least ensure that SSL is used by your application.
@@ -752,7 +753,9 @@ services.AddIdentity<ApplicationUser, IdentityRole>()
 .AddDefaultTokenProviders();
 services.AddMvc()
 }
-public void Configure(IApplicationBuilder app,  IHostingEnvironment env)
+
+public void Configure(IApplicationBuilder app, 
+IHostingEnvironment env)
 {
 if (env.IsDevelopment())
 {
@@ -965,7 +968,9 @@ To retrieve data from EF Core, you access the appropriate property and use LINQ 
 var brandItems = await _context.CatalogBrands
 .Where(b => b.Enabled)
 .OrderBy(b => b.Name)
-.Select(b => new SelectListItem { Value = b.Id, Text = b.Name }) .ToListAsync();
+.Select(b => new SelectListItem { 
+Value = b.Id, Text = b.Name })
+.ToListAsync();
 It’s important in the above example to add the call to ToListAsync in order to execute the query immediately. Otherwise, the statement will assign an IQueryable<SelectListItem> to brandItems, which will not be executed until it is enumerated. There are pros and cons to returning IQueryable results from methods. It allows the query EF Core will construct to be further modified, but can also result in errors that only occur at runtime, if operations are added to the query that EF Core cannot translate. It’s generally safer to pass any filters into the method performing the data access, and return back an in-memory collection (for example, List<T>) as the result. These filters can be further encapsulated by using the Specification pattern.
 EF Core tracks changes on entities it fetches from persistence. To save changes to a tracked entity, you just call the SaveChanges method on the DbContext, making sure it’s the same DbContext instance that was used to fetch the entity. Adding and removing entities is done directly on the appropriate DbSet property, again with a call to SaveChanges to execute the database commands. The following example demonstrates adding, updating, and removing entities from persistence.
 // create
@@ -1016,7 +1021,8 @@ UnitPrice = unitPrice
 });
 return;
 }
-var existingItem = Items.FirstOrDefault(i => i.CatalogItemId == catalogItemId);
+var existingItem = Items
+.FirstOrDefault(i => i.CatalogItemId == catalogItemId);
 existingItem.Quantity += quantity;
 }
 }
@@ -1085,7 +1091,8 @@ The first DbContext is the _catalogContext and the second DbContext is within th
 EF Core Docs
 https://docs.microsoft.com/en-us/ef/
 EF Core: Related Data
-https://docs.microsoft.com/en-us/ef/core/querying/related-dataAvoid Lazy Loading Entities in ASP.NET Applications
+https://docs.microsoft.com/en-us/ef/core/querying/related-data
+Avoid Lazy Loading Entities in ASP.NET Applications
 http://ardalis.com/avoid-lazy-loading-entities-in-asp-net-applications
 EF Core or micro-ORM?
 While EF Core is a great choice for managing persistence, and for the most part encapsulates database details from application developers, it is not the only choice. Another popular open source alternative is Dapper, a so-called micro-ORM. A micro-ORM is a lightweight, less full-featured tool for mapping objects to data structures. In the case of Dapper, its design goals focus on performance, rather than fully encapsulating the underlying queries it uses to retrieve and update data. Because it doesn’t abstract SQL from the developer, Dapper is “closer to the metal” and lets developers write the exact queries they want to use for a given data access operation.
@@ -1129,7 +1136,8 @@ Figure 8-2. DocumentDB resource organization.
 The DocumentDB query language is a simple yet powerful interface for querying JSON documents. The language supports a subset of ANSI SQL grammar and adds deep integration of JavaScript object, arrays, object construction, and function invocation.
 Azure Cosmos DB supports the MongoDB API, which can be used with existing MongoDB libraries and tools. It also offers a Table API, for key-value storage, and a Graph API built following the Apache TinkerPop specification.
 References – Azure Cosmos DB
-Cosmos DB Introductionhttps://docs.microsoft.com/en-us/azure/cosmos-db/introduction
+Cosmos DB Introduction
+https://docs.microsoft.com/en-us/azure/cosmos-db/introduction
 Other Persistence Options
 In addition to relational and NoSQL storage options, ASP.NET Core applications can use Azure Storage to store a variety of data formats and files in a cloud-based, scalable fashion. Azure Storage is massively scalable, so you can start out storing small amounts of data and scale up to storing hundreds or terabytes if your application requires it. Azure Storage supports four kinds of data:
 Blob Storage for unstructured text or binary storage, also referred to as object storage.
@@ -1137,7 +1145,8 @@ Table Storage for structured datasets, accessible via row keys.
 Queue Storage for reliable queue-based messaging.
 File Storage for shared file access between Azure virtual machines and on-premises applications.
 References – Azure Storage
-Azure Storage Introductionhttps://docs.microsoft.com/en-us/azure/storage/storage-introduction 
+Azure Storage Introduction
+https://docs.microsoft.com/en-us/azure/storage/storage-introduction 
 Caching
 In web applications, each web request should be completed in the shortest time possible. One way to achieve this is to limit the number of external calls the server must make to complete the request. Caching involves storing a copy of data on the server (or another data store that is more easily queried than the source of the data). Web applications, and especially non-SPA traditional web applications, need to build the entire user interface with every request. This frequently involves making many of the same database queries repeatedly from one user request to the next. In most cases, this data changes rarely, so there is little reason to constantly request it from the database. ASP.NET Core supports response caching, for caching entire pages, and data caching, which supports more granular caching behavior.
 When implementing caching, it’s important to keep in mind separation of concerns. Avoid implementing caching logic in your data access logic, or in your user interface. Instead, encapsulate caching in its own classes, and use configuration to manage its behavior. This follows the Open/Closed and Single Responsibility principles, and will make it easier for you to manage how you use caching in your application as it grows.
@@ -1157,7 +1166,8 @@ public void ConfigureServices(IServiceCollection services)
 services.AddResponseCaching();
 }
 public void Configure(IApplicationBuilder app)
-{ app.UseResponseCaching();
+{
+app.UseResponseCaching();
 }
 The Response Caching Middleware will automatically cache responses based on a set of conditions, which you can customize. By default, only 200 (OK) responses requested via GET or HEAD methods are cached. In addition, requests must have a response with a Cache-Control: public header, and cannot include headers for Authorization or Set-Cookie. See a complete list of the caching conditions used by the response caching middleware.
 Data Caching
@@ -1224,7 +1234,10 @@ var cts = new CancellationTokenSource();
 _cache.Set(“cts”, cts);
 _cache.Set(cacheKey,
 itemToCache,
-new CancellationChangeToken(cts.Token));// elsewhere, expire the cache by cancelling the token_cache.Get<CancellationTokenSource>(“cts”).Cancel();
+new CancellationChangeToken(cts.Token));
+
+// elsewhere, expire the cache by cancelling the token
+_cache.Get<CancellationTokenSource>(“cts”).Cancel();
 Caching can dramatically improve the performance of web pages that repeatedly request the same values from the database. Be sure to measure data access and page performance before applying caching, and only apply caching where you see a need for improvement. Caching consumes web server memory resources and increases the complexity of the application, so it’s important you don’t prematurely optimize using this technique.
 Testing ASP.NET Core MVC Apps
 “If you don’t like unit testing your product, most likely your customers won’t like to test it, either.”
@@ -1486,7 +1499,8 @@ Once deployed, the ASP.NET Core application runs within the context of an Azure 
 Step 6. Production Monitoring and Diagnostics
 While the Web App is running, you can monitor the health of the application and collect diagnostics and user behavior data. Application Insights is included in Visual Studio, and offers automatic instrumentation for ASP.NET apps. It can provide you with information on usage, exceptions, requests, performance, and logs.
 References
-Build and Deploy Your ASP.NET Core App to Azurehttps://www.visualstudio.com/en-us/docs/build/apps/aspnet/aspnetcore-to-azure
+Build and Deploy Your ASP.NET Core App to Azure
+https://www.visualstudio.com/en-us/docs/build/apps/aspnet/aspnetcore-to-azure
 Azure Hosting Recommendations for ASP.NET Core Web Apps
 “Line-of-business leaders everywhere are bypassing IT departments to get applications from the cloud (aka SaaS) and paying for them like they would a magazine subscription. And when the service is no longer required, they can cancel the subscription with no equipment left unused in the corner.”
 Daryl Plummer, Gartner analyst
@@ -1545,10 +1559,17 @@ Your application’s requirements should dictate its architecture. There are man
 Figure 11-1 shows an example reference architecture. This diagram describes a recommended architecture approach for a Sitecore content management system website optimized for marketing.
 Figure 11-1. Sitecore marketing website reference architecture.
 References – Azure Hosting Recommendations
-Azure Solution Architectureshttps://azure.microsoft.com/en-us/solutions/architecture/ 
-Azure Basic Web Application Architecturehttps://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app 
-Design Patterns for Microserviceshttps://docs.microsoft.com/azure/architecture/microservices/design/patterns 
-Azure Developer Guidehttps://azure.microsoft.com/en-us/campaigns/developer-guide/ 
-Web Apps Overviewhttps://docs.microsoft.com/azure/app-service/app-service-web-overview 
-Web Apps for Containershttps://azure.microsoft.com/services/app-service/containers/ 
-Introduction to Azure Kubernetes Service (AKS)https://docs.microsoft.com/azure/aks/intro-kubernetes
+Azure Solution Architectures
+https://azure.microsoft.com/en-us/solutions/architecture/ 
+Azure Basic Web Application Architecture
+https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/basic-web-app 
+Design Patterns for Microservices
+https://docs.microsoft.com/azure/architecture/microservices/design/patterns 
+Azure Developer Guide
+https://azure.microsoft.com/en-us/campaigns/developer-guide/ 
+Web Apps Overview
+https://docs.microsoft.com/azure/app-service/app-service-web-overview 
+Web Apps for Containers
+https://azure.microsoft.com/services/app-service/containers/ 
+Introduction to Azure Kubernetes Service (AKS)
+https://docs.microsoft.com/azure/aks/intro-kubernetes

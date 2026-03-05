@@ -1127,13 +1127,13 @@ While logically part of the runtime, the JIT is actually isolated from the rest 
 
 dotnet/runtime#65738 rewrote various 'stubs' to be more efficient. Stubs are tiny bits of code that serve to perform some check and then redirect execution somewhere else. For example, when an interface dispatch call site is expected to only ever be used with a single implementation of that interface, the JIT might employ a 'dispatch stub' that compares the type of the object agains t the
 
-kunalspathak commented on Mar 22 • edited - windows x64 improvements: dotnet/perf-autofiling-issues#4226, dotnet/perf-autofiling-issues#4225
+kunalspathak commented on Mar 22 · edited - windows x64 improvements: dotnet/perf-autofiling-issues#4226, dotnet/perf-autofiling-issues#4225
 
 single one it's cached, and if they're equal simply jumps to the right target. You know you're in the corest of the core areas of the runtime when a PR contains lots of assembly code for every architecture the runtime targets. And it paid off; there' s a virtual group of folks from around .NET that review performance improvements and regressions in our automated performance test suites, and attribute these back to the PRs likely to be the cause (this is mostly automated but requires some human oversigh t). It's always nice then when a few days after a PR is merged and performance information has stabilized that you see a rash of comments like there were on this PR:
 
 Windows Arm64 Improvements dotnet/perf-autofiling-issues#4251 dotnet/perf-autofiling-issues#4252
 
-DrewScoggins commented on Mar 24 • edited -
+DrewScoggins commented on Mar 24 · edited -
 
 <!-- image -->
 
@@ -1504,7 +1504,7 @@ There were plenty of other PRs that went into making the LibraryImport generator
 
 One more category of interop-related changes that I think are worth talking about are to do with SafeHandle cleanup. As a reminder, SafeHandle exists to mitigate various issues around managing native handles and file descriptors. A native handle or file descriptor is just a memory address or number that refers to some owned resource and which must be cleaned up / closed when done with it. A SafeHandle at its core is just a managed object that wraps such a value and provides a Dispose method and a finalizer for closing it. That way, if you neglect to Dispose of the SafeHandle in order to close the resource, the resource will still be cleaned up when the SafeHandle is garbage collected and its finalizer eventually run. SafeHandle then also provides some synchronization around that closure, trying to minimize the possibility that the resource is closed while it's still in use. It provides DangerousAddRef and DangerousRelease methods that increment and decrement a ref count, respectively, and if Dispose is called while the ref count is above zero, the actual releasing of the handle triggered by Dispose is delayed until the ref count goes back to 0. When you pass a SafeHandle into a P/Invoke, the generated code for that P/Invoke handles calling DangerousAddRef
 
-• • Mark the method "CreatePipe' with "Library/mportAtribute' instead
+· · Mark the method "CreatePipe' with "Library/mportAtribute' instead
 
 and DangerousRelease (and due to the wonders of LibraryImport I've already extolled, you can easily see that being done, such as in the previous generated code example). Our code tries hard to clean up after SafeHandle s deterministically, but it's quite easy to accidentally l eave some for finalization.
 
@@ -3084,7 +3084,7 @@ Size (bytes)
 
 0009
 
-000 •
+000 ·
 
 000Z
 
@@ -3572,9 +3572,9 @@ XML pops up in other areas as well, as in the XmlWriterTraceListener type. While
 | TraceWrite | .NET 6.0  | 961.9 ns |     1   | 288 B       |          1    |
 | TraceWrite | .NET 7.0  | 772.2 ns |     0.8 | 64 B        |          0.22 |
 
-• System.Security.Cryptography.Algorithms.dIl
+· System.Security.Cryptography.Algorithms.dIl
 
-• System.Security.Cryptography.Cng.dll
+· System.Security.Cryptography.Cng.dll
 
 System.Security. Cryptography.Csp.dil
 
@@ -3628,21 +3628,21 @@ Assemblies :
 
 - 4
 
-- *• System.Security.Cryptography.Primitives (7.0.0.0, NETCoreApp, v7.0)
+- *· System.Security.Cryptography.Primitives (7.0.0.0, NETCoreApp, v7.0)
 
 + ..: Metadata
 
 - *° References
 
-+ •• System.Runtime
++ ·· System.Runtime
 
-+ ••• System.Security. Cryptography
++ ··· System.Security. Cryptography
 
 = {} -
 
 «Module ›
 
-• Derived Types
+· Derived Types
 
 System.Security.Cryptography.Primitives (7.0.0.0, NETCoreApp, v7.0)
 
@@ -3924,7 +3924,7 @@ if (\_counts. ContainsKey(\_word))
 
 Use 'TryGetValue(TKey, out TValue)'
 
-• CA1854 Prefer a 'TryGetValue' call over a Dictionary indexer access
+· CA1854 Prefer a 'TryGetValue' call over a Dictionary indexer access
 
 Convert to conditional expression
 
@@ -3962,11 +3962,11 @@ if (\_subscriptions. ContainsKey(listener))
 
 Remove unnecessary call
 
-• • CA1853 Do not guard Dictionary, Remove(key) with
+· · CA1853 Do not guard Dictionary, Remove(key) with
 
 Invert if
 
-Suppress or Configure issues •
+Suppress or Configure issues ·
 
 'Dictionary. ContainsKey(key)"
 
@@ -4043,7 +4043,7 @@ Extract base class...
 
 Suppress or Configure issues
 
-• ® Use 'GeneratedRegexAttribute' to generate the regular expression implementation at compile-time
+· ® Use 'GeneratedRegexAttribute' to generate the regular expression implementation at compile-time
 
 Lines 38 to 40
 

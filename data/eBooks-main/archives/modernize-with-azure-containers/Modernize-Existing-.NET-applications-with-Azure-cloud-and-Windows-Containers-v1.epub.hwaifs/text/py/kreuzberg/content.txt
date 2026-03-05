@@ -56,8 +56,10 @@ Level 2: Cloud DevOps-Ready: At this level, after an initial lift and shift, and
 The third level of maturity is the ultimate goal in the cloud, but it’s optional for many apps and not the main focus of this guide:
 Level 3: Cloud-Optimized: This migration approach typically is driven by business need, and targets modernizing your mission-critical applications. At this level, you use PaaS services to move your apps to PaaS computing platforms. You implement cloud-native applications and microservices architecture to evolve applications with long-term agility, and to scale to new limits. This type of modernization usually requires architecting specifically for the cloud. New code often must be written, especially when you move to cloud-native application and microservice-based models. This approach can help you gain benefits that are difficult to achieve in your monolithic and on-premises application environment.
 The tables below describe the main benefits of and reasons for choosing each migration or modernization approach.
-Cloud Infrastructure-Ready
-Cloud DevOps-Ready
+Cloud
+Infrastructure-Ready
+Cloud
+DevOps-Ready
 Lift and shift
 Application’s compute target
 Applications deployed to VMs in Azure
@@ -128,9 +130,12 @@ Figure 1-7. Lift and shift and initial modernization to Cloud DevOps-Ready appli
 The focus of this guide is specific. We show you the path you can take to achieve a lift and shift of your existing .NET applications, without re-architecting, and with no code changes. Ultimately, we show you how to make your application Cloud DevOps-Ready.
 This guide doesn’t show you how to work with cloud-native applications, such as how to evolve to a microservices architectures. To re-architect your applications or to create brand-new applications that are based on microservices, see the eBook .NET Microservices: Architecture for containerized .NET applications.
 Additional resources
-Containerized Docker application lifecycle with Microsoft platform and tools (downloadable eBook)  https://aka.ms/dockerlifecycleebook 
-.NET Microservices: Architecture for containerized .NET applications (downloadable eBook)  https://aka.ms/microservicesebook 
-Architecting modern web applications with ASP.NET Core and Azure (downloadable eBook)  https://aka.ms/webappebook 
+Containerized Docker application lifecycle with Microsoft platform and tools (downloadable eBook) 
+https://aka.ms/dockerlifecycleebook 
+.NET Microservices: Architecture for containerized .NET applications (downloadable eBook) 
+https://aka.ms/microservicesebook 
+Architecting modern web applications with ASP.NET Core and Azure (downloadable eBook) 
+https://aka.ms/webappebook 
 Who should use this guide
 We wrote this guide for developers and solution architects who want to modernize existing ASP.NET applications that are based on the .NET Framework, for improved agility in shipping and releasing applications.
 You also might find this guide useful if you are a technical decision maker, such as an enterprise architect or a development lead/director who just wants an overview of the benefits that you can get by using Windows Containers, and by deploying to the cloud when using Microsoft Azure.
@@ -177,11 +182,16 @@ Site Recovery is also made specifically for hybrid environments that are partly 
 Figure 2-3 shows the execution of multiple VM migrations by using Azure Site Recovery.
 Figure 2-3. Positioning Cloud Infrastructure-Ready applications
 Additional resources
-Azure Migrate Datasheet  https://aka.ms/azuremigration_datasheet 
-Azure Migrate  http://azuremigrationcenter.com/ 
-Migrate to Azure with Site Recovery  https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-migrate-to-azure 
-Azure Site Recovery service overview  https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-overview 
-Migrating VMs in AWS to Azure VMs  https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-migrate-aws-to-azure
+Azure Migrate Datasheet 
+https://aka.ms/azuremigration_datasheet 
+Azure Migrate 
+http://azuremigrationcenter.com/ 
+Migrate to Azure with Site Recovery 
+https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-migrate-to-azure 
+Azure Site Recovery service overview 
+https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-overview 
+Migrating VMs in AWS to Azure VMs 
+https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-migrate-aws-to-azure
 3
 Migrate your relational databases to Azure
 Vision
@@ -230,11 +240,16 @@ Whenever you change an original RDBMS, you might need to retest. You also might 
 If you have any other database (for example, IBM DB2) and you opt for a lift and shift approach, you might want to continue using those databases as IaaS VMs in Azure, unless you are willing to perform a more complex data migration. A more complex data migration will require additional effort, because you’d be migrating to a different database type with new schema and different programming libraries.
 To learn how to migrate databases by using Azure Database Migration Service, see Get to the cloud faster with Azure SQL Database Managed Instance and Azure Database Migration Service.
 Additional resources
-Choose a cloud SQL Server option: Azure SQL Database (PaaS) or SQL Server on Azure VM (IaaS)  https://docs.microsoft.com/en-us/azure/sql-database/sql-database-paas-vs-sql-server-iaas 
-Get to the cloud faster with Azure SQL DB Managed Instance and Database Migration Service  https://channel9.msdn.com/Events/Build/2017/P4008 
-SQL Server database migration to SQL Database in the cloud  https://docs.microsoft.com/en-us/azure/sql-database/sql-database-cloud-migrate 
-Azure SQL Database  https://azure.microsoft.com/en-us/services/sql-database/?v=16.50 
-SQL Server on virtual machines  https://azure.microsoft.com/en-us/services/virtual-machines/sql-server/
+Choose a cloud SQL Server option: Azure SQL Database (PaaS) or SQL Server on Azure VM (IaaS) 
+https://docs.microsoft.com/en-us/azure/sql-database/sql-database-paas-vs-sql-server-iaas 
+Get to the cloud faster with Azure SQL DB Managed Instance and Database Migration Service 
+https://channel9.msdn.com/Events/Build/2017/P4008 
+SQL Server database migration to SQL Database in the cloud 
+https://docs.microsoft.com/en-us/azure/sql-database/sql-database-cloud-migrate 
+Azure SQL Database 
+https://azure.microsoft.com/en-us/services/sql-database/?v=16.50 
+SQL Server on virtual machines 
+https://azure.microsoft.com/en-us/services/virtual-machines/sql-server/
 4
 Lift and shift existing .NET apps to Cloud DevOps-Ready applications
 Vision
@@ -332,7 +347,8 @@ Load balancing and Distributed Denial of Service (DDoS) protection.
 Traffic management to direct users to the closest geographic deployment.
 Although App Service might be the best choice for new web apps, however, for existing applications, App Service might be the best choice only if your application dependencies are supported in App Service.
 Additional resources
-Compatibility analysis for Azure App Service  https://www.migratetoazure.net/Resources 
+Compatibility analysis for Azure App Service 
+https://www.migratetoazure.net/Resources 
 Benefits of moving to Windows Containers
 The main benefit of using Windows Containers is that you gain a more reliable and improved deployment experience, compared to non-containerized apps. In addition, having your application modernized with containers effectively makes your application ready for many other platforms and clouds that support Windows Containers. The benefits of moving to Windows Containers are covered in more detail in the next sections.
 The primary compute environments in Azure (in general availability, as of mid-2017) that support Windows Containers are Azure Service Fabric and basic Windows Containers hosts (Windows Server 2016 VMs). These environments are the main infrastructure scenarios covered in this guide.
@@ -348,7 +364,8 @@ App Service Migration Assistant is a tool that moves your websites from your web
 After a website is migrated to App Service, the site has everything it needs to run safely and efficiently. Sites are set up and run automatically in the Azure cloud PaaS service (App Service).
 The App Service migration tool can analyze your websites and report on their compatibility for moving to App Service. If you’re happy with the analysis, you can let App Service Migration Assistant migrate content, data, and settings for you. If a site is not quite compatible, the migration tool tells you what you need to adjust to make it work.
 Additional resources
-Azure App Service Migration Assistant  https://www.migratetoazure.net/ 
+Azure App Service Migration Assistant 
+https://www.migratetoazure.net/ 
 Deploy existing .NET apps as Windows containers
 Deployments that are based on Windows Containers are applicable to Cloud-Optimized applications, cloud-native applications, and Cloud DevOps-Ready applications.
 In this guide, and in the following sections, we focus on using Windows Containers for Cloud DevOps-Ready applications, when you lift and shift existing .NET applications.
@@ -410,9 +427,12 @@ Windows Server containers: Provides application isolation through process and na
 Hyper-V isolation: Expands on the isolation provided by Windows Server Containers by running each container on a highly optimized VM. In this configuration, the kernel of the container host is not shared with other containers on the same host. These containers are designed for hostile multitenant hosting, with the same security assurances of a VM. Because these containers don’t share the kernel with the host or other containers on the host, they can run kernels with different versions and configurations (with supported versions). For example, all Windows containers on Windows 10 use Hyper-V isolation to utilize the Windows Server kernel version and configuration.
 Running a container on Windows with or without Hyper-V isolation is a run-time decision. You might choose to create the container with Hyper-V isolation initially, and at run time, choose to run it as a Windows Server container instead.
 Additional resources
-Windows Containers documentation  https://docs.microsoft.com/en-us/virtualization/windowscontainers/ 
-Windows Containers fundamentals  https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/ 
-Infographic: Microsoft and containers  https://info.microsoft.com/rs/157-GQE-382/images/Container%20infographic%201.4.17.pdf 
+Windows Containers documentation 
+https://docs.microsoft.com/en-us/virtualization/windowscontainers/ 
+Windows Containers fundamentals 
+https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/ 
+Infographic: Microsoft and containers 
+https://info.microsoft.com/rs/157-GQE-382/images/Container%20infographic%201.4.17.pdf 
 When not to deploy to Windows Containers
 Some Windows technologies are not supported by Windows Containers. In those cases, you still need to migrate to standards VMs, usually with just Windows and IIS.
 Cases not supported in Windows Containers, as of mid-2017:
@@ -425,7 +445,8 @@ Microsoft Office currently does not support containers
 UserVoice request forum
 For additional not-supported scenarios and requests from the community, see the UserVoice forum for Windows Containers: https://windowsserver.uservoice.com/forums/304624-containers.
 Additional resources
-Virtual machines and containers in Azure  https://docs.microsoft.com/en-us/azure/virtual-machines/windows/containers 
+Virtual machines and containers in Azure 
+https://docs.microsoft.com/en-us/azure/virtual-machines/windows/containers 
 When to deploy Windows Containers in your on-premises IaaS VM infrastructure
 Deploying Windows Containers in your on-premises infrastructure (VMs or bare-metal servers) is an important choice for several reasons:
 Your organization might not be ready to move to the cloud, or it might simply not be able to move to the cloud for a business reason. But, you can still get the benefits of using Windows Containers in your own datacenters.
@@ -467,10 +488,14 @@ When implementing resilient communications that access the database, depending o
 When implementing HTTP retries and circuit breakers, the recommendation for .NET is to use the Polly library, which targets .NET 4.0, .NET 4.5, and .NET Standard 1.1, which includes .NET Core support.
 To learn how to implement strategies for handling partial failures in the cloud, see the following references.
 Additional resources
-Implementing resilient communication to handle partial failure  https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/implement-resilient-applications/partial-failure-strategies 
-Entity Framework connection resiliency and retry logic (version 6 and later)  https://msdn.microsoft.com/en-us/library/dn456835(v=vs.113).aspx 
-The Transient Fault Handling Application Block  https://msdn.microsoft.com/en-us/library/hh680934(v=pandp.50).aspx 
-Polly library for resilient HTTP communication  https://github.com/App-vNext/Polly 
+Implementing resilient communication to handle partial failure 
+https://docs.microsoft.com/en-us/dotnet/standard/microservices-architecture/implement-resilient-applications/partial-failure-strategies 
+Entity Framework connection resiliency and retry logic (version 6 and later) 
+https://msdn.microsoft.com/en-us/library/dn456835(v=vs.113).aspx 
+The Transient Fault Handling Application Block 
+https://msdn.microsoft.com/en-us/library/hh680934(v=pandp.50).aspx 
+Polly library for resilient HTTP communication 
+https://github.com/App-vNext/Polly 
 Modernize your apps with monitoring and telemetry
 When you run an application in production, it’s critical that you have insights about how your application is performing. Is it performing at a high level? Are users getting errors, or is the application stable and reliable? You need rich performance monitoring, powerful alerting, and dashboards to help ensure that your application is available and performing as expected. You also need to be able to see quickly if there’s a problem, determine how many customers are affected, and perform a root-cause analysis to find and fix the issue.
 Monitor your application with Application Insights
@@ -497,13 +522,20 @@ Troubleshoot by viewing and searching centralized logs without remote login to t
 Find containers that might be “noisy neighbors,” and be consuming excess resources on a host.
 View centralized CPU, memory, storage, and network usage, and performance information, for containers.
 Additional resources
-Overview of monitoring in Microsoft Azure  https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-overview 
-What is Application Insights?  https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview 
-What is Log Analytics?  https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-overview 
-Container Monitoring solution in Log Analytics  https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-containers 
-Overview of Azure Monitor  https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor 
-What is Operations Management Suite (OMS)?  https://docs.microsoft.com/en-us/azure/operations-management-suite/operations-management-suite-overview 
-Monitoring Windows Server containers in Service Fabric with OMS  https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-containers-windowsserver 
+Overview of monitoring in Microsoft Azure 
+https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-overview 
+What is Application Insights? 
+https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview 
+What is Log Analytics? 
+https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-overview 
+Container Monitoring solution in Log Analytics 
+https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-containers 
+Overview of Azure Monitor 
+https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor 
+What is Operations Management Suite (OMS)? 
+https://docs.microsoft.com/en-us/azure/operations-management-suite/operations-management-suite-overview 
+Monitoring Windows Server containers in Service Fabric with OMS 
+https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-diagnostics-containers-windowsserver 
 Modernize your app’s lifecycle with CI/CD pipelines and DevOps tools in the cloud
 Today’s businesses need to innovate at a rapid pace to be competitive in the marketplace. Delivering high-quality, modern applications requires DevOps tools and processes that are critical to implement this constant cycle of innovation. With the right DevOps tools, developers can streamline continuous deployment and get innovative applications into the hands of users more quickly.
 Although continuous integration and deployment practices are well established, the introduction of containers introduces new considerations, particularly when you are working with multi-container applications.
@@ -532,11 +564,16 @@ Azure Stack integrated systems are offered through a partnership of Microsoft an
 Azure Stack Development Kit
 Microsoft Azure Stack Development Kit is a single-node deployment of Azure Stack, which you can use to evaluate and learn about Azure Stack. You can also use Azure Stack Development Kit as a developer environment, where you can develop using APIs and tooling that are consistent with Azure. Azure Stack Development Kit is not intended to be used as a production environment.
 Additional resources
-Azure hybrid cloud  https://www.microsoft.com/en-us/cloud-platform/hybrid-cloud 
-Azure Stack  https://azure.microsoft.com/en-us/overview/azure-stack/ 
-Active Directory Service Accounts for Windows Containers  https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/manage-serviceaccounts 
-Create a container with Active Directory support  https://blogs.msdn.microsoft.com/containerstuff/2017/01/30/create-a-container-with-active-directory-support/ 
-Azure Hybrid Benefit licensing  https://azure.microsoft.com/en-us/pricing/hybrid-use-benefit/
+Azure hybrid cloud 
+https://www.microsoft.com/en-us/cloud-platform/hybrid-cloud 
+Azure Stack 
+https://azure.microsoft.com/en-us/overview/azure-stack/ 
+Active Directory Service Accounts for Windows Containers 
+https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/manage-serviceaccounts 
+Create a container with Active Directory support 
+https://blogs.msdn.microsoft.com/containerstuff/2017/01/30/create-a-container-with-active-directory-support/ 
+Azure Hybrid Benefit licensing 
+https://azure.microsoft.com/en-us/pricing/hybrid-use-benefit/
 5
 Walkthroughs and technical get-started overview
 To limit the size of this eBook, we’ve made additional technical documentation and the full walkthroughs available in a GitHub repo. The online series of walkthroughs that is described in this chapter covers the step-by-step setup of the multiple environments that are based on Windows Containers, and deployment to Azure.

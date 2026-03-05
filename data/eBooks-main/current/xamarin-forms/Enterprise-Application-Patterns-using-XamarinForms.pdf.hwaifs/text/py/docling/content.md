@@ -424,7 +424,7 @@ Send notifications
 
 ViewModel updates the model
 
-•
+·
 
 Send notifications
 
@@ -450,7 +450,7 @@ The benefits of using the MVVM pattern are as follows:
 
 - If there's an existing model implementation that encapsulates existing business logic, it can be difficult or risky to change it. In this scenario, the view model acts as an adapter for the model classes and enables you to avoid making any major changes to the model code.
 
-•
+·
 
 View Model
 
@@ -1478,7 +1478,7 @@ The Xam.Plugins.Settings library provides a consistent, type-safe, cross-platfor
 
 ## Containerized microservices
 
-• Manathic nnestion coing on
+· Manathic nnestion coing on
 
 Developing client-server applications has resulted in a focus on building tiered applications that use specific technologies in each tier. Such applications are often referred to as monolithic applications, and are packaged onto hardware pre-scaled for peak loads. The main drawbacks of this development approach are the tight coupling between components within each tier, that individual components can't be easily scaled, and the cost of testing. A simple update can have unforeseen effects on the rest of the tier, and so a change to an application component requires its entire tier to be retested and redeployed.
 
@@ -2021,7 +2021,7 @@ Sign-in
 
 Security token
 
-• -
+· -
 
 Identity Microservice (STS+Users)
 
@@ -2430,7 +2430,7 @@ public class OrderDetailViewModel : ViewModelBase { private IOrderService _order
 
 <!-- image -->
 
-•
+·
 
 IOrderService
 
