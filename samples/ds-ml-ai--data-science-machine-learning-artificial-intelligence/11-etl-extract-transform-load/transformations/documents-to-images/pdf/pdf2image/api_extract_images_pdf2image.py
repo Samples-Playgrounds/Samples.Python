@@ -1,7 +1,17 @@
 from pdf2image import convert_from_path
+
+import os
 from pathlib import Path
 
+import traceback
+import json
+import datetime
+import time
+from time import perf_counter
+from time import perf_counter_ns
+# from timer import timer
 
+#@timer()
 def extract_pages_to_images (source: str) -> str:
     """
     """
