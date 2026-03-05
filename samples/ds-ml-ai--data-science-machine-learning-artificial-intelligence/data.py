@@ -69,23 +69,31 @@ files_private = [
 
 
 files_documents_pdfs_legal = [
-    "/Volumes/xFAT-1TB-2/e/personal-private/judo/HJS/01-pravno/DORH/02-kaznena-prijava-koraci/TODO/mails/20251201-03-czm-pravobraniteljica--odgovor-akcijski-plan/docs/MAIL_001119.pdf",
-    "/Users/moljac/Downloads/20250913/Zapisnik OS NZG K-226-2022-48 od 12.02.2024. - Nastavak glavne rasprave dana 12.02.2024. u 10_00 sati.pdf",
+   "/Volumes/xFAT-1TB-2/e/personal-private/judo/HJS/01-pravno/DORH/02-kaznena-prijava-koraci/TODO/mails/20251201-03-czm-pravobraniteljica--odgovor-akcijski-plan/docs/MAIL_001119.pdf",
+   "/Volumes/xFAT-1TB-2/e/personal-private/judo/HJS/01-pravno/DORH/02-kaznena-prijava-koraci/TODO/mails/20260399-11-uskok--jk-profectus-frlic/docs/Fwd: MIŠLJENJE: Odluka STK HJS o nastupu na SP za juniore Nassau, BAH.pdf",
+   "/Volumes/xFAT-1TB-2/e/personal-private/judo/HJS/01-pravno/DORH/02-kaznena-prijava-koraci/TODO/mails/20260399-11-uskok--jk-profectus-frlic/docs/Ocitovanje o odluci STK HJS o nastupu na SP za juniore.pdf",
+   "/Volumes/xFAT-1TB-2/e/personal-private/judo/HJS/01-pravno/DORH/02-kaznena-prijava-koraci/TODO/mails/20260399-11-uskok--jk-profectus-frlic/docs/profectus-kaznena/odvjetnica-01.pdf",
+   "/Volumes/xFAT-1TB-2/e/personal-private/judo/HJS/01-pravno/DORH/02-kaznena-prijava-koraci/TODO/mails/20260399-11-uskok--jk-profectus-frlic/docs/profectus-kaznena/odvjetnica-02.pdf",
+   "/Volumes/xFAT-1TB-2/e/personal-private/judo/HJS/01-pravno/DORH/02-kaznena-prijava-koraci/TODO/mails/20260399-11-uskok--jk-profectus-frlic/docs/profectus-kaznena/profectus-odluka.pdf",
+   "/Volumes/xFAT-1TB-2/e/personal-private/judo/HJS/01-pravno/DORH/02-kaznena-prijava-koraci/TODO/mails/20260399-11-uskok--jk-profectus-frlic/docs/profectus-kaznena/ured-drzavne-uprave-jk-profectus-01.pdf",
+   "/Volumes/xFAT-1TB-2/e/personal-private/judo/HJS/01-pravno/DORH/02-kaznena-prijava-koraci/TODO/mails/20260399-11-uskok--jk-profectus-frlic/docs/profectus-kaznena/ured-drzavne-uprave-jk-profectus-02.pdf",
 
-    f"{root}/pravno/zakoni/zakon_o_sportskoj_inspekciji_nn_86_12.pdf",
-    f"{root}/pravno/zakoni/kazneni-zakon.docx",
-    f"{root}/pravno/zakoni/zakon-o-sportu-NN-19-16.pdf",
-    f"{root}/pravno/zakoni/zakon-o-sportu-2022.pdf",
-    f"{root}/pravno/zakoni/Kazneni-zakon.pdf",
-    f"{root}/pravno/zakoni/55-4.pdf",
-    f"{root}/pravno/satuti/hjs/status-HJS-a-2024.pdf",
-    f"{root}/pravno/satuti/hoo/Statut-HOO-a_procisceni-tekst_srpanj-2024.pdf",
-    f"{root}/pravno/satuti/gnk-dinamo/Nacrt+Prijedloga+Statuta+GNK+Dinamo.pdf",
-    f"{root}/pravno/satuti/gnk-dinamo/Prijedlog_Statuta_GNK_Dinamo_finalno_20250811_za+IO.pdf",
-    f"{root}/pravno/satuti/gnk-dinamo/statut-dinamo.2023.pdf",
-    f"{root}/pravno/satuti/gnk-dinamo/O Statutu_250814_100408.pdf",
-    f"{root}/pravno/dokumenti/hjs-zppi-2023-rjesenje.2.600dpi.compressed.pdf",
-    f"{root}/pravno/dokumenti/Rješenje - odbijanje zahtjeva Miljenko CVJETKO - 18.8.2025. .pdf",
+   "/Users/moljac/Downloads/20250913/Zapisnik OS NZG K-226-2022-48 od 12.02.2024. - Nastavak glavne rasprave dana 12.02.2024. u 10_00 sati.pdf",
+
+   f"{root}/pravno/zakoni/zakon_o_sportskoj_inspekciji_nn_86_12.pdf",
+   f"{root}/pravno/zakoni/kazneni-zakon.docx",
+   f"{root}/pravno/zakoni/zakon-o-sportu-NN-19-16.pdf",
+   f"{root}/pravno/zakoni/zakon-o-sportu-2022.pdf",
+   f"{root}/pravno/zakoni/Kazneni-zakon.pdf",
+   f"{root}/pravno/zakoni/55-4.pdf",
+   f"{root}/pravno/satuti/hjs/status-HJS-a-2024.pdf",
+   f"{root}/pravno/satuti/hoo/Statut-HOO-a_procisceni-tekst_srpanj-2024.pdf",
+   f"{root}/pravno/satuti/gnk-dinamo/Nacrt+Prijedloga+Statuta+GNK+Dinamo.pdf",
+   f"{root}/pravno/satuti/gnk-dinamo/Prijedlog_Statuta_GNK_Dinamo_finalno_20250811_za+IO.pdf",
+   f"{root}/pravno/satuti/gnk-dinamo/statut-dinamo.2023.pdf",
+   f"{root}/pravno/satuti/gnk-dinamo/O Statutu_250814_100408.pdf",
+   f"{root}/pravno/dokumenti/hjs-zppi-2023-rjesenje.2.600dpi.compressed.pdf",
+   f"{root}/pravno/dokumenti/Rješenje - odbijanje zahtjeva Miljenko CVJETKO - 18.8.2025. .pdf",
 ]
 
 files_documents_pdfs_ebooks = [
