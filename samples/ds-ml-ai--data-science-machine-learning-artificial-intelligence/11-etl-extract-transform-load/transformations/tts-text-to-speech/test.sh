@@ -6,8 +6,13 @@ ls -d1 */ > list.md
 
 EXTRACTORS=\
 "
-documents-to-images
-markdown-parsing
+gTTS
+pypiwin32
+pyt2s
+python-espeak
+pyttsx3
+TTS
+yapper-tts
 # todo
 "
 
