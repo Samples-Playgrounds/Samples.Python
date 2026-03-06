@@ -5,6 +5,8 @@
 
 *   https://github.com/executablebooks/markdown-it-py
 
+Python-Markdown and 5 times faster than Python-Markdown2. Its speed is on par with mistune, but mistletoe is also designed to be easily customizable so that you can make it fully your own.
+
 
 ```python
 from markdown_it import MarkdownIt
