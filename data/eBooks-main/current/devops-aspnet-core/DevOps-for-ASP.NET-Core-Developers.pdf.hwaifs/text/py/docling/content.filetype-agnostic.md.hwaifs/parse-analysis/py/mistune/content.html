@@ -30,9 +30,9 @@
 <p>&lt;!-- image --&gt;</p>
 <p>You should be an experienced ASP.NET Core developer (200-300 level). You don't need to know anything about Azure, as we'll cover that in this introduction. This guide may also be useful for DevOps engineers who are more focused on operations than development.</p>
 <p>This guide targets Windows developers. However, Linux and macOS are fully supported by .NET Core. To adapt this guide for Linux/macOS, watch for callouts for Linux/macOS differences.</p>
-<h2>What this guide doesn’t cover</h2>
+<h2>What this guide doesn't cover</h2>
 <p>This guide is focused on an end-to-end continuous deployment experience for .NET developers. It's not an exhaustive guide to all things Azure, and it doesn't focus extensively on .NET APIs for Azure services. The emphasis is all around continuous integration, deployment, monitoring, and debugging. Near the end of the guide, recommendations for next steps are offered. Included in the suggestions are Azure platform services that are useful to ASP.NET Core developers.</p>
-<h2>What’s in this guide</h2>
+<h2>What's in this guide</h2>
 <h2>Tools and downloads</h2>
 <p>Learn where to acquire the tools used in this guide.</p>
 <h2>Deploy to App Service</h2>
@@ -42,7 +42,7 @@
 <h2>Continuous integration and deployment with GitHub Actions</h2>
 <p>Build an end -to -end continuous integration and deployment solution for your ASP.NET Core app with GitHub, GitHub Actions, and Azure, including code scanning for security and quality using CodeQL.</p>
 <h2>Monitor and debug</h2>
-<p>Use Azure’s tools to monitor, troubleshoot, and tune your application.</p>
+<p>Use Azure's tools to monitor, troubleshoot, and tune your application.</p>
 <h2>Next steps</h2>
 <p>Other learning paths for the ASP.NET Core developer learning Azure.</p>
 <h2>Additional introductory reading</h2>
@@ -168,8 +168,8 @@
 </ul>
 <h2>Deploy an app to App Service</h2>
 <p>Azure App Service is Azure's web hosting platform. Deploying a web app to Azure App Service can be done manually or by an automated process. This section of the guide discusses deployment methods that can be triggered manually or by script using the command line, or triggered manually using Visual Studio.</p>
-<p>In this section, you’ll accomplish the following tasks:</p>
-<p>[!div class=“checklist”]</p>
+<p>In this section, you'll accomplish the following tasks:</p>
+<p>[!div class=&quot;checklist&quot;]</p>
 <ul>
 <li>Download and build the sample app.</li>
 <li>Create an Azure App Service Web App using the Azure Cloud Shell.</li>
@@ -193,7 +193,7 @@
 <p>→</p>
 <p>localhost:5000/?FeedUrl=http%3A%2F%2F1</p>
 <ul>
-<li>• ×</li>
+<li>· ×</li>
 </ul>
 <ul>
 <li>2 ..</li>
@@ -343,7 +343,7 @@
 <p>Properties</p>
 <p>Connected Services</p>
 <p>Dependencies</p>
-<p>•Properties</p>
+<p>·Properties</p>
 <p>Pages</p>
 <p>Repositories appsettings.json</p>
 <p>&lt;!-- image --&gt;</p>
@@ -356,7 +356,7 @@
 <p>Visual Studio builds and deploys the app to Azure. Browse to the web app URL. Validate that the &amp;lt;h2&amp;gt; element modification is live.</p>
 <p>XX</p>
 <p>X</p>
-<p>• = 1] Home page - SimpleFer X + v</p>
+<p>· = 1] Home page - SimpleFer X + v</p>
 <p>→</p>
 <p>mywebapp14483.azurewebsites.net/</p>
 <p>SimpleFeedReader</p>
@@ -365,7 +365,7 @@
 <p>Retrieve Feed</p>
 <p>© 2017 - SimpleFeedReader</p>
 <ul>
-<li>• x</li>
+<li>· x</li>
 </ul>
 <h1>R</h1>
 <p>&lt;!-- image --&gt;</p>
@@ -396,7 +396,7 @@
 <ul>
 <li>d. Display the staging slot's URL. Browse to the URL to see the empty staging slot. Note this URL for reference later .</li>
 </ul>
-<p>9 • 1] Home page - SimpleFer × + ~</p>
+<p>9 · 1] Home page - SimpleFer × + ~</p>
 <p>© mywebapp14483.azurewebsites.net/</p>
 <p>SimpleFeedReader</p>
 <p>Simple Feed Reader - V2</p>
@@ -436,7 +436,7 @@
 <ul>
 <li>:::{custom-style=CodeBox} console echo Staging web app URL: http://$webappnamestaging.azurewebsites.net :::</li>
 </ul>
-<p>0 • | 1] Home page - Simplefee × | + v</p>
+<p>0 · | 1] Home page - Simplefee × | + v</p>
 <p>O mywebapp14483.azurewebsites.net/</p>
 <p>SimpleFeedReader</p>
 <p>Simple Feed Reader - V3</p>
@@ -445,13 +445,13 @@
 <ul>
 <li></li>
 </ul>
-<p>• ×</p>
+<p>· ×</p>
 <p>2 ...</p>
 <p>:::{custom-style=CodeBox} azurecli az webapp deployment slot swap --name $webappname --resource-group AzureTutorial --slot staging :::</p>
 <ol start="8">
 <li>Verify that the swap occurred by refreshing the two browser windows.</li>
 </ol>
-<p>4 • 1 Home page - Simplefet X</p>
+<p>4 · 1 Home page - Simplefet X</p>
 <p>&amp;lt; &amp;gt; O</p>
 <p>O mywebapp14483-staging.azurewebsites.net/</p>
 <p>SimpleFeedReader</p>
@@ -462,7 +462,7 @@
 <ul>
 <li></li>
 </ul>
-<p>• ×</p>
+<p>· ×</p>
 <p>&lt;!-- image --&gt;</p>
 <h2>Summary</h2>
 <p>In this section, the following tasks were completed:</p>
@@ -475,7 +475,7 @@
 <li>Deployed an update to the staging slot.</li>
 <li>Swapped the staging and production slots.</li>
 </ul>
-<p>In the next section, you’ll learn how to build a DevOps pipeline with Azure Pipelines.</p>
+<p>In the next section, you'll learn how to build a DevOps pipeline with Azure Pipelines.</p>
 <h2>Additional reading</h2>
 <ul>
 <li>Web Apps overview</li>
@@ -487,8 +487,8 @@
 <h2>Note</h2>
 <p>This section details continuous integration and deployment with Azure DevOps. You can achieve that with GitHub Actions as well. GitHub Actions is a workflow engine built into GitHub that can also be used for continuous integration and deployment. To follow the guide for building and deploying to Azure using GitHub, complete the Publish the app's code to GitHub and Disconnect local Git deployment sections below and then proceed to the GitHub Actions section .</p>
 <p>In the previous chapter, you created a local Git repository for the Simple Feed Reader app. In this chapter, you'll publish that code to a GitHub repository and construct an Azure DevOps Services pipeline using Azure Pipelines. The pipeline enables continuous builds and deployments of the app. Any commit to the GitHub repository triggers a build and a deployment to the Azure Web App's staging slot.</p>
-<p>In this section, you’ll complete the following tasks:</p>
-<p>[!div class=“checklist”]</p>
+<p>In this section, you'll complete the following tasks:</p>
+<p>[!div class=&quot;checklist&quot;]</p>
 <ul>
 <li>Publish the app's code to GitHub</li>
 <li>Disconnect local Git deployment</li>
@@ -500,7 +500,7 @@
 <li>Commit changes to GitHub and automatically deploy to Azure</li>
 <li>Examine the Azure Pipelines pipeline</li>
 </ul>
-<h2>Publish the app’s code to GitHub</h2>
+<h2>Publish the app's code to GitHub</h2>
 <ol>
 <li>Open a browser window, and navigate to https://github.com.</li>
 <li>Click the + drop-down in the header, and select New repository:</li>
@@ -570,7 +570,7 @@
 <p>Select</p>
 <p>Configure</p>
 <p>Review</p>
-<p>• We need your authorization to access your repositories</p>
+<p>· We need your authorization to access your repositories</p>
 <p>New pipeline</p>
 <p>Where is your code?</p>
 <p>Connection name *</p>
@@ -578,12 +578,12 @@
 <ol>
 <li>Use Use the classic editor to create the pipeline.</li>
 </ol>
-<p>• Bitbucket Cloud YAML</p>
+<p>· Bitbucket Cloud YAML</p>
 <p>Authorize using Auth</p>
 <p>Hosted by Atlassian</p>
 <p>YAML</p>
 <p>Home to the world's largest community of developers</p>
-<p>• Goreto</p>
+<p>· Goreto</p>
 <p>GitHub Enterprise Server</p>
 <p>YAML</p>
 <p>Are sul Enterprise sever u enterprise</p>
@@ -650,12 +650,12 @@
 </ol>
 <p>&lt;!-- image --&gt;</p>
 <p>&lt;!-- image --&gt;</p>
-<p>• Save &amp;amp; queue v &amp;gt; Discard</p>
+<p>· Save &amp;amp; queue v &amp;gt; Discard</p>
 <p>= Summary &amp;gt; Queue ...</p>
 <p>X</p>
 <p>inal the type arop-aown is set to include. sel tne branch spectication arop-aown to main.</p>
 <p>Save build definition</p>
-<p>• Enable continuous integration l</p>
+<p>· Enable continuous integration l</p>
 <p>Save &amp;amp; queue V</p>
 <p>Select folder *</p>
 <p>\</p>
@@ -715,10 +715,10 @@
 <ol>
 <li>Click the Releases tab of your team project. Click the New pipeline button.</li>
 </ol>
-<p>• Task groups</p>
+<p>· Task groups</p>
 <p>Others</p>
 <p>*** Deployment groups</p>
-<p>• Test Plans</p>
+<p>· Test Plans</p>
 <p>Artifacts</p>
 <p>Azure App Service deployment with continuous monitoring</p>
 <p>Deploy your Web applications to Azure App Service and enable continuous monitoring using Application Insights.</p>
@@ -741,7 +741,7 @@
 <p>All pipelines › ** New release pipeline</p>
 <p>Add artifact</p>
 <p>Pipeline</p>
-<p>• Tasks v</p>
+<p>· Tasks v</p>
 <p>Variables</p>
 <p>Source type</p>
 <p>Artifacts | + Add</p>
@@ -812,11 +812,11 @@
 <p>Display name *</p>
 <p>Run on agent</p>
 <p>Agent selection ^</p>
-<p>Agent pool • | Pool information | Manage C</p>
+<p>Agent pool · | Pool information | Manage C</p>
 <p>Default</p>
 <p>&lt;!-- image --&gt;</p>
 <p>Production</p>
-<p>• 1 job, 2 tasks</p>
+<p>· 1 job, 2 tasks</p>
 <p>The <strong>Tasks</strong> tab of the environment appears.</p>
 <ol>
 <li>Click the Deploy Azure App Service to Slot task. Its settings appear in a panel to the right.</li>
@@ -833,9 +833,9 @@
 <li>Hover over the default release pipeline name. Click the pencil icon to edit it. Use MyFirstProject-ASP.NET Core-CD as the name.</li>
 </ol>
 <p>&lt;!-- image --&gt;</p>
-<p>• Remove</p>
+<p>· Remove</p>
 <p>Tasks</p>
-<p>• MyFirstProject / MyFirst... V</p>
+<p>· MyFirstProject / MyFirst... V</p>
 <p>Dashboards Code Work</p>
 <p>Triggers</p>
 <ul>
@@ -853,7 +853,7 @@
 <p>All definitions ›</p>
 <p>Build an</p>
 <p>Save &amp;amp; queue V</p>
-<p>• scottaddie/simple-feed-reader</p>
+<p>· scottaddie/simple-feed-reader</p>
 <p>&lt;!-- image --&gt;</p>
 <ol>
 <li>Click the Save button.</li>
@@ -895,7 +895,7 @@
 <p>Releases</p>
 <p>Release-3</p>
 <p>Last run sia 20210420.... ¿ main</p>
-<p>#20210420.5 • Update Index shtml</p>
+<p>#20210420.5 · Update Index shtml</p>
 <p>New pipeline</p>
 <p>Edit</p>
 <ul>
@@ -915,25 +915,25 @@
 <h2>Examine the Azure Pipelines pipeline</h2>
 <h2>Build definition</h2>
 <p>A build definition was created with the name MyFirstProject-ASP.NET Core-CI. Upon completion, the build produces a .zip file including the assets to be published. The release pipeline deploys those assets to Azure.</p>
-<p>The build definition’s Tasks tab lists the individual steps being used. There are five build tasks.</p>
+<p>The build definition's Tasks tab lists the individual steps being used. There are five build tasks.</p>
 <p>Created</p>
 <p>4/20/2021, 12:58:08 PM</p>
 <p>Stages</p>
 <p>© Production</p>
-<p>• ... › MyFirstProject-ASP.NET Core (NET Framework)-C|</p>
+<p>· ... › MyFirstProject-ASP.NET Core (NET Framework)-C|</p>
 <p>Options Retention History</p>
 <p>Tasks Variables Triggers m</p>
 <p>Pipeline</p>
 <p>Build pipeline</p>
 <p>= Get sources</p>
-<p>• sughosneo/simple-feed-reader</p>
+<p>· sughosneo/simple-feed-reader</p>
 <p>Agent job 1</p>
 <p>= Run on agent</p>
 <p>Use NuGet 4.4.1</p>
-<p>#• NuGet tool installer</p>
+<p>#· NuGet tool installer</p>
 <p>NuGet restore</p>
 <p>NuGet</p>
-<p>• Build solution</p>
+<p>· Build solution</p>
 <p>Visual Studio build</p>
 <p>Test Assemblies</p>
 <p>Visual Studio Test</p>
@@ -952,14 +952,14 @@
 <p>Runs Branches Analytics</p>
 <p>Description</p>
 <p>#20210420.5 Update Index.cshtml</p>
-<p>• Individual Cl for (* 3º main $ 97c0a2b *</p>
+<p>· Individual Cl for (* 3º main $ 97c0a2b *</p>
 <p>#20210420.4 Update Index.cshtml</p>
-<p>• Individual Cl for * 3º main 4 d1077bb *</p>
+<p>· Individual Cl for * 3º main 4 d1077bb *</p>
 <p>#20210420.3 Update Index.cshtml</p>
-<p>• Individual Cl for ( 8º main $ 58b2b8e *</p>
+<p>· Individual Cl for ( 8º main $ 58b2b8e *</p>
 <p>#20210420.2 Update Index.cshtml</p>
-<p>• Individual Cl for * 8° main ° cb034f7|</p>
-<p>• Queue</p>
+<p>· Individual Cl for * 8° main ° cb034f7|</p>
+<p>· Queue</p>
 <p>Edit</p>
 <p>Run pipeline ts 19m ago</p>
 <p>© 41s</p>
@@ -968,7 +968,7 @@
 <li>Publish — Executes the dotnet publish --configuration release --output &amp;lt;local_path_on_build_agent&amp;gt; command to produce a .zip file with the artifacts to be deployed. The --output option specifies the publish location of the .zip file. That location is specified by passing a predefined variable named $(build.artifactstagingdirectory). That variable expands to a local path, such as *c:_work\1, on the build agent.</li>
 <li>Publish Artifact — Publishes the .zip file produced by the Publish task. The task accepts the .zip file location as a parameter, which is the predefined variable $(build.artifactstagingdirectory). The .zip file is published as a folder named drop .</li>
 </ol>
-<p>Click the build definition’s Summary link to view a history of builds with the definition:</p>
+<p>Click the build definition's Summary link to view a history of builds with the definition:</p>
 <p>&lt;!-- image --&gt;</p>
 <p>On the resulting page, click the individual build for more details.</p>
 <p>&lt;!-- image --&gt;</p>
@@ -977,7 +977,7 @@
 <p>Options</p>
 <p>Retention</p>
 <p>History</p>
-<p>• Save &amp;amp; queue v</p>
+<p>· Save &amp;amp; queue v</p>
 <p>Stages</p>
 <p>7 Discard</p>
 <p>= Summary</p>
@@ -986,19 +986,19 @@
 <p>Tasks v</p>
 <p>Variables</p>
 <p>Retention on MyFirstProject-ASP.NET Core (.NET Framework)-Cl * Retained by release</p>
-<p>• #20210420.5 Update Index.cshtml</p>
+<p>· #20210420.5 Update Index.cshtml</p>
 <p>Summary Releases</p>
 <p>Triggered by</p>
 <h1>sughosneo</h1>
 <p>Repository and version</p>
-<p>•sughosneo/simple-feed-reader</p>
+<p>·sughosneo/simple-feed-reader</p>
 <p>Artifacts | + Add</p>
 <p>8 main $ 97c0a2b</p>
 <p>&amp;lt; Artifacts</p>
 <p>Published Consumed</p>
 <p>Name</p>
 <p>Drop</p>
-<p>&amp;gt; • drop</p>
+<p>&amp;gt; · drop</p>
 <p>Run new</p>
 <p>View change</p>
 <p>&lt;!-- image --&gt;</p>
@@ -1086,8 +1086,8 @@
 <h2>Note</h2>
 <p>This section details continuous integration and deployment with Azure DevOps. You can achieve that with GitHub Actions as well. GitHub Actions is a workflow engine built into GitHub that can also be used for continuous integration and deployment. To follow the guide for building and deploying to Azure using GitHub, complete the Publish the app's code to GitHub and Disconnect local Git deployment sections below and then proceed to the GitHub Actions section .</p>
 <p>In the previous chapter, you created a local Git repository for the Simple Feed Reader app. In this chapter, you'll publish that code to a GitHub repository and construct an Azure DevOps Services pipeline using Azure Pipelines. The pipeline enables continuous builds and deployments of the app. Any commit to the GitHub repository triggers a build and a deployment to the Azure Web App's staging slot.</p>
-<p>In this section, you’ll complete the following tasks:</p>
-<p>[!div class=“checklist”]</p>
+<p>In this section, you'll complete the following tasks:</p>
+<p>[!div class=&quot;checklist&quot;]</p>
 <ul>
 <li>Publish the app's code to GitHub</li>
 <li>Disconnect local Git deployment</li>
@@ -1099,7 +1099,7 @@
 <li>Commit changes to GitHub and automatically deploy to Azure</li>
 <li>Examine the Azure Pipelines pipeline</li>
 </ul>
-<h2>Publish the app’s code to GitHub</h2>
+<h2>Publish the app's code to GitHub</h2>
 <ol>
 <li>Open a browser window, and navigate to https://github.com.</li>
 <li>Click the + drop-down in the header, and select New repository:</li>
@@ -1205,7 +1205,7 @@
 <p>Select a template</p>
 <p>Or start with an e Empty pipeline</p>
 <p>ASP.NET Core</p>
-<p>• We need your authorization to access your repositories</p>
+<p>· We need your authorization to access your repositories</p>
 <p>Connection name *</p>
 <p>Others scottaddie GitHub connection</p>
 <p>dotnet</p>
@@ -1236,10 +1236,10 @@
 <p>Pipeline</p>
 <p>Culd poeine y Get sources</p>
 <p>B Save &amp;amp; queue Y Discard</p>
-<p>• Enable continuous integration</p>
-<p>• sughosneo/simple-feed-reader</p>
+<p>· Enable continuous integration</p>
+<p>· sughosneo/simple-feed-reader</p>
 <p>= Summary</p>
-<p>• Queue ...</p>
+<p>· Queue ...</p>
 <p>Name*</p>
 <p>P main</p>
 <p>Agent job 1</p>
@@ -1272,7 +1272,7 @@
 <li></li>
 </ul>
 <p>MyFirstProject-ASP.NET Core (.NET Framework)-Cl</p>
-<p>Agent pool • © | Pool information | Manage E</p>
+<p>Agent pool · © | Pool information | Manage E</p>
 <p>Default</p>
 <p>~ O</p>
 <p>&lt;!-- image --&gt;</p>
@@ -1303,14 +1303,14 @@
 <p>Select folder *</p>
 <p>1 Save &amp;amp; queue a Pipelines</p>
 <p>di Environments</p>
-<p>• Releases</p>
+<p>· Releases</p>
 <p>H Save</p>
 <p>0% Library</p>
 <p>Comment</p>
-<p>• Task groups</p>
+<p>· Task groups</p>
 <p>1 Save as draft</p>
 <p>*** Deployment groups</p>
-<p>• Test Plans</p>
+<p>· Test Plans</p>
 <p>Artifacts</p>
 <p>&lt;!-- image --&gt;</p>
 <ol>
@@ -1333,7 +1333,7 @@
 <p>Select a template</p>
 <p>Pipeline</p>
 <p>Or start with an ku Empty job</p>
-<p>• Tasks v</p>
+<p>· Tasks v</p>
 <p>Variables</p>
 <p>Retention Options</p>
 <p>History</p>
@@ -1348,7 +1348,7 @@
 <ul>
 <li>Add an monitoring</li>
 </ul>
-<p>• 1 job, 2 tasks</p>
+<p>· 1 job, 2 tasks</p>
 <p>Deploy your Web applications to Azure App Service and enable continuous monitoring using Application Insights.</p>
 <p>Schedule not set</p>
 <p>Azure App Service deployment with slot</p>
@@ -1419,7 +1419,7 @@
 <p>, Manage Azure App Service - Slot Swap</p>
 <p>Azure ADD service mandaci</p>
 <p>Production</p>
-<p>• 1 job, 2 tasks</p>
+<p>· 1 job, 2 tasks</p>
 <p>R</p>
 <p>Agent job O</p>
 <p>Display name*</p>
@@ -1450,11 +1450,11 @@
 <p>&lt;!-- image --&gt;</p>
 <p>...</p>
 <p>I| Delete = Move V ...</p>
-<p>• Remove</p>
+<p>· Remove</p>
 <p>&quot; o</p>
 <p>Myrustrioject-Asr.NEl Core-co as the name.</p>
 <p>Tasks</p>
-<p>• MyFirstProject / MyFirst... V</p>
+<p>· MyFirstProject / MyFirst... V</p>
 <p>Triggers</p>
 <ul>
 <li></li>
@@ -1495,7 +1495,7 @@
 <p>Task Groups Deployment Groups</p>
 <p>Build an</p>
 <p>Save &amp;amp; queue V</p>
-<p>• scottaddie/simple-feed-reader</p>
+<p>· scottaddie/simple-feed-reader</p>
 <p>Variables</p>
 <p>aown sous delalls.</p>
 <p>butter to see more delals or each step.</p>
@@ -1516,10 +1516,10 @@
 <p>Releases</p>
 <p>Release-3</p>
 <p>Last run sia 20210420.... 8º main</p>
-<p>#20210420.5 • Update Index shtml</p>
+<p>#20210420.5 · Update Index shtml</p>
 <p>New pipeline</p>
 <p>Edit</p>
-<p>• Create release</p>
+<p>· Create release</p>
 <p>T Filter pipelines</p>
 <h1>All releases v ta Just now</h1>
 <ol>
@@ -1540,25 +1540,25 @@
 <h2>Examine the Azure Pipelines pipeline</h2>
 <h2>Build definition</h2>
 <p>A build definition was created with the name MyFirstProject-ASP.NET Core-CI. Upon completion, the build produces a .zip file including the assets to be published. The release pipeline deploys those assets to Azure.</p>
-<p>The build definition’s Tasks tab lists the individual steps being used. There are five build tasks.</p>
+<p>The build definition's Tasks tab lists the individual steps being used. There are five build tasks.</p>
 <p>Created</p>
 <p>4/20/2021,12:58:08 PM</p>
 <p>Stages</p>
 <p>© Production</p>
-<p>• ... › MyFirstProject-ASP.NET Core (NET Framework)-C|</p>
+<p>· ... › MyFirstProject-ASP.NET Core (NET Framework)-C|</p>
 <p>Options Retention History</p>
 <p>Tasks Variables Triggers m</p>
 <p>Pipeline</p>
 <p>Build pipeline</p>
 <p>= Get sources</p>
-<p>• sughosneo/simple-feed-reader</p>
+<p>· sughosneo/simple-feed-reader</p>
 <p>Agent job 1</p>
 <p>= Run on agent</p>
 <p>Use NuGet 4.4.1</p>
-<p>#• NuGet tool installer</p>
+<p>#· NuGet tool installer</p>
 <p>NuGet restore</p>
 <p>NuGet</p>
-<p>• Build solution</p>
+<p>· Build solution</p>
 <p>Visual Studio build</p>
 <p>Test Assemblies</p>
 <p>Visual Studio Test</p>
@@ -1577,14 +1577,14 @@
 <p>Runs Branches Analytics</p>
 <p>Description</p>
 <p>#20210420.5 Update Index.cshtml</p>
-<p>• Individual Cl for (* 3º main $ 97c0a2b *</p>
+<p>· Individual Cl for (* 3º main $ 97c0a2b *</p>
 <p>#20210420.4 Update Index.cshtml</p>
-<p>• Individual Cl for * 3º main 4 d1077bb *</p>
+<p>· Individual Cl for * 3º main 4 d1077bb *</p>
 <p>#20210420.3 Update Index.cshtml</p>
-<p>• Individual Cl for ( 8º main $ 58b2b8e *</p>
+<p>· Individual Cl for ( 8º main $ 58b2b8e *</p>
 <p>#20210420.2 Update Index.cshtml</p>
-<p>• Individual Cl for * 8° main ° cb034f7|</p>
-<p>• Queue</p>
+<p>· Individual Cl for * 8° main ° cb034f7|</p>
+<p>· Queue</p>
 <p>Edit</p>
 <p>Run pipeline ts 19m ago</p>
 <p>© 41s</p>
@@ -1593,7 +1593,7 @@
 <li>Publish — Executes the dotnet publish --configuration release --output &amp;lt;local_path_on_build_agent&amp;gt; command to produce a .zip file with the artifacts to be deployed. The --output option specifies the publish location of the .zip file. That location is specified by passing a predefined variable named $(build.artifactstagingdirectory). That variable expands to a local path, such as *c:_work\1, on the build agent.</li>
 <li>Publish Artifact — Publishes the .zip file produced by the Publish task. The task accepts the .zip file location as a parameter, which is the predefined variable $(build.artifactstagingdirectory). The .zip file is published as a folder named drop .</li>
 </ol>
-<p>Click the build definition’s Summary link to view a history of builds with the definition:</p>
+<p>Click the build definition's Summary link to view a history of builds with the definition:</p>
 <p>&lt;!-- image --&gt;</p>
 <p>On the resulting page, click the individual build for more details.</p>
 <p>&lt;!-- image --&gt;</p>
@@ -1602,7 +1602,7 @@
 <p>Options</p>
 <p>Retention</p>
 <p>History</p>
-<p>• Save &amp;amp; queue v</p>
+<p>· Save &amp;amp; queue v</p>
 <p>Stages</p>
 <p>7 Discard</p>
 <p>= Summary</p>
@@ -1611,19 +1611,19 @@
 <p>Tasks V</p>
 <p>Variables</p>
 <p>Retention on MyFirstProject-ASP.NET Core (.NET Framework)-Cl * Retained by release</p>
-<p>• #20210420.5 Update Index.cshtml</p>
+<p>· #20210420.5 Update Index.cshtml</p>
 <p>Summary Releases</p>
 <p>Triggered by</p>
 <h1>sughosneo</h1>
 <p>Repository and version</p>
-<p>•sughosneo/simple-feed-reader</p>
+<p>·sughosneo/simple-feed-reader</p>
 <p>Artifacts | + Add</p>
 <p>8 main $ 97c0a2b</p>
 <p>&amp;lt; Artifacts</p>
 <p>Published Consumed</p>
 <p>Name</p>
 <p>Drop</p>
-<p>&amp;gt; • drop</p>
+<p>&amp;gt; · drop</p>
 <p>Run new</p>
 <p>View change</p>
 <p>&lt;!-- image --&gt;</p>
@@ -1714,8 +1714,8 @@
 <li>Use a template to create a basic build workflow that builds a .NET app and executes unit tests.</li>
 <li>Publish the compiled app so that it's ready for deployment.</li>
 </ul>
-<p>In the Deploy article, you’ll:</p>
-<p>[!div class=“checklist”]</p>
+<p>In the Deploy article, you'll:</p>
+<p>[!div class=&quot;checklist&quot;]</p>
 <ul>
 <li>Learn about environments in GitHub Actions.</li>
 <li>Create two environments and specify environment protection rules.</li>
@@ -1726,7 +1726,7 @@
 <h2>Secure code with CodeQL</h2>
 <p>In addition to building and deploying code, GitHub Advanced Security offers tools for &quot;shifting left&quot; with security. That is, integrating security early on in the software delivery lifecycle. CodeQL is a code scanning language that runs queries to find potential vulnerabilities or quality issues in your code. CodeQL is run using an Actions workflow.</p>
 <p>In the CodeQL article, you’ll:</p>
-<p>[!div class=“checklist”]</p>
+<p>[!div class=&quot;checklist&quot;]</p>
 <ul>
 <li>Create a Code Scanning Action.</li>
 <li>Edit the workflow file to include custom scan settings.</li>
@@ -1742,15 +1742,15 @@
 <p>| Note                                                                                                                                                                                                                                                   |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Before you begin, complete the Publish the app’s code to GitHub and Disconnect local Git deployment sections of the Continuous integration and deployment with Azure DevOps section to publish your code to GitHub. Then proceed to the Build article. |</p>
-<p>In the Build article, you’ll create the initial workflow to build and test the .NET app. You’ll:</p>
-<p>[!div class=“checklist”]</p>
+<p>In the Build article, you'll create the initial workflow to build and test the .NET app. You'll:</p>
+<p>[!div class=&quot;checklist&quot;]</p>
 <ul>
 <li>Learn the basic structure of a GitHub Action workflow YAML file.</li>
 <li>Use a template to create a basic build workflow that builds a .NET app and executes unit tests.</li>
 <li>Publish the compiled app so that it's ready for deployment.</li>
 </ul>
-<p>In the Deploy article, you’ll:</p>
-<p>[!div class=“checklist”]</p>
+<p>In the Deploy article, you'll:</p>
+<p>[!div class=&quot;checklist&quot;]</p>
 <ul>
 <li><p>Learn about environments in GitHub Actions.</p>
 </li>
@@ -1765,8 +1765,8 @@
 </ul>
 <h2>Secure code with CodeQL</h2>
 <p>In addition to building and deploying code, GitHub Advanced Security offers tools for &quot;shifting left&quot; with security. That is, integrating security early on in the software delivery lifecycle. CodeQL is a code scanning language that runs queries to find potential vulnerabilities or quality issues in your code. CodeQL is run using an Actions workflow.</p>
-<p>In the CodeQL article, you’ll:</p>
-<p>[!div class=“checklist”]</p>
+<p>In the CodeQL article, you'll:</p>
+<p>[!div class=&quot;checklist&quot;]</p>
 <ul>
 <li>Create a Code Scanning Action.</li>
 <li>Edit the workflow file to include custom scan settings.</li>
@@ -1778,7 +1778,7 @@
 <p>GitHub Actions and Azure Pipelines have a common history. In fact, the Actions agent is a fork of the Pipelines agent. There are many similarities between GitHub Actions and Azure Pipelines and it's worth comparing and contrasting them.</p>
 <h2>Pipelines as code</h2>
 <p>Before you compare GitHub Actions and Azure Pipelines, you should consider the benefits of pipelines as code. Pipelines as code:</p>
-<p>[!div class=“checklist”]</p>
+<p>[!div class=&quot;checklist&quot;]</p>
 <ul>
 <li><p>Benefit from standard source control practices (such as code reviews via pull request and versioning).</p>
 </li>
@@ -1802,7 +1802,7 @@
 <h2>Note</h2>
 <p>The list of software installed on Azure Pipelines images is listed in this repository. You can select the platform folder and examine the README.md files. You can find information on GitHub hosted runners .</p>
 <h2>Private agents and self-hosted runners</h2>
-<p>There are times when you can’t use hosted images. For example, when you:</p>
+<p>There are times when you can't use hosted images. For example, when you:</p>
 <ul>
 <li>Require SDKs or other software that isn't installed on the images.</li>
 <li>Need to access resources that aren't public (such as an internal SonarQube server or an internal Artifactory instance).</li>
@@ -1952,14 +1952,14 @@
 <p>Update dotnet.yml.NET #2</p>
 <p>A Summary</p>
 <p>Jobs</p>
-<p>• build</p>
+<p>· build</p>
 <p>W Projects</p>
-<p>• Security</p>
+<p>· Security</p>
 <p>Le Insights @ Settings</p>
 <p>Puste succeeced.</p>
 <p>Commit changes</p>
-<p>• barning(o)</p>
-<p>• trear(e)</p>
+<p>· barning(o)</p>
+<p>· trear(e)</p>
 <p>Update dotnet.yml</p>
 <p>Tine eligsed 03:00:00.19</p>
 <p>Featured Acti</p>
@@ -1991,7 +1991,7 @@
 <h2>Note</h2>
 <p>If any of the tests fail, the workflow will fail.</p>
 <h2>Dissect the workflow file</h2>
-<p>Let’s examine the workflow YAML file you have so far:</p>
+<p>Let's examine the workflow YAML file you have so far:</p>
 <pre><code>name: .NET on: push: branches: [ main ] pull_request: branches: [ main ] jobs: build: runs-on: ubuntu -latest steps: -uses: actions/checkout@v3 -name: Setup .NET uses: actions/setup-dotnet@v3 with: dotnet -version: 6.0.x -name: Restore dependencies run: dotnet restore -name: Build run: dotnet build --no-restore -name: Test run: dotnet test --no-build --verbosity normal
 </code></pre>
 <h2>Notice the following things:</h2>
@@ -2028,12 +2028,12 @@
 <p>Actions forked from Azure-Samples/simple-feed-reader</p>
 <p>‹&amp;gt; Code</p>
 <p>12 Pull requests</p>
-<p>• Actions</p>
+<p>· Actions</p>
 <p>P master - simple-feed-reader / github / workflows /</p>
 <p>L Projects</p>
 <p>Projects</p>
 <p>Ц Wiki</p>
-<p>• Security</p>
+<p>· Security</p>
 <p>L Insights</p>
 <p>10 Wiki</p>
 <p>© Security</p>
@@ -2055,20 +2055,20 @@
 </ul>
 <p>name: NET</p>
 <h2>Publish the output</h2>
-<p>• Watch - 0</p>
+<p>· Watch - 0</p>
 <ul>
 <li><ul>
 <li></li>
 </ul>
 </li>
 </ul>
-<p>• Star</p>
+<p>· Star</p>
 <p>P Fork</p>
 <p>79</p>
 <p>Go to file</p>
 <p>Start commit -</p>
 <p>Latest commit 103eala 4 minutes ago</p>
-<p>• History</p>
+<p>· History</p>
 <p>Spaces</p>
 <p>03 Settings</p>
 <p>No wrap</p>
@@ -2091,19 +2091,19 @@
 <p><strong>Figure 6</strong>: Accessing the snippet helper.</p>
 <p>&lt;!-- image --&gt;</p>
 <p>12 803</p>
-<p>• Watch -</p>
+<p>· Watch -</p>
 <h1>Star</h1>
 <p>slipped dna paste i tre worklow below the publish step.</p>
 <p>· colindembovsky / simple-feed-reader forked from Azure-Samples/simple-feed-reader</p>
 <p>‹&amp;gt; Code</p>
 <p>Marketplace / Search results / Upload a Build Artifact</p>
 <p>I1 Pull requests</p>
-<p>• Actions</p>
-<p>• Update dotnet.yml NET #5</p>
+<p>· Actions</p>
+<p>· Update dotnet.yml NET #5</p>
 <p>( Summary</p>
 <p>Upload a Build Artifact</p>
 <p>JODH</p>
-<p>• build</p>
+<p>· build</p>
 <p>By actions v2</p>
 <ul>
 <li>803</li>
@@ -2127,7 +2127,7 @@
 <p>1m 15s</p>
 <p>&lt;!-- image --&gt;</p>
 <p>Installation</p>
-<p>Copy and paste the following snippet into your • yml file.</p>
+<p>Copy and paste the following snippet into your · yml file.</p>
 <p>Version: v2.2.2 -</p>
 <ul>
 <li>name: Upload a Build Artifact uses: actions/upload-artifact@v2.2.2</li>
@@ -2301,7 +2301,7 @@
 <ol start="2">
 <li>Select Environments again and again select New Environment. Now enter PROD as the name and select Configure environment .</li>
 </ol>
-<p>5**•</p>
+<p>5**·</p>
 <p>nantection aulec</p>
 <ol start="3">
 <li>Check the Required reviewers rule and add yourself as a reviewer. Don't forget to select Save protection rules:</li>
@@ -2388,7 +2388,7 @@ Pull requests Issues Codespaces Marketplace Explore
 
 11 Pull requests
 
-• Actions
+· Actions
 
 &quot; Projects
 
@@ -2398,7 +2398,7 @@ Deployed to PRE-PROD
 
 **figune 9**. View denlovmente..
 
-• Security
+· Security
 
 ~ Insights
 
@@ -2432,9 +2432,9 @@ $ Star
 
 select Approve ana deploy to start Ine PROD JOD.
 
-• Watch r
+· Watch r
 
-• Watch +
+· Watch +
 
 Search or jump to....
 
@@ -2448,29 +2448,29 @@ Y colindembovsky / simple-feed-reader forked from Anure-Samples/imple-feed-rende
 
 I7 Pull requests
 
-• Actions a Projects
+· Actions a Projects
 
-• Update dotnet.yml NET #9
+· Update dotnet.yml NET #9
 
 PROD
 
 Review needed from colindembovsky
 
-• Summary
+· Summary
 
 Jobs
 
 Leave a comment
 
-• build
+· build
 
-• deploy staging
+· deploy staging
 
 © deploy\_prod
 
 ** igno
 
-• Wiki dotnet.ymi
+· Wiki dotnet.ymi
 
 on: push build
 
@@ -2480,7 +2480,7 @@ let Insights
 
 Reject
 
-• Star
+· Star
 
 0
 
@@ -2499,7 +2499,7 @@ Cancel workflow
 3. For the steps, you don't need to download the artifact since you're just going to perform a slot swap. You start by executing a login to the Azure context.
 4. The Swap staging slot into production step is a multi-line run command (note the use of the pipe symbol |). You also specify an id for this step so that you can refer to it (you refer to it in the url property of the environment). The first line executes the slot swap using the variables you defined above in the workflow. The second line uses an az webapp show command to extract the URL of the target web app. This final line uses ::set -output in an echo to create an output variable for this task, setting the value to the web app URL.
 
-[!NOTE] The URL must start with http:// or https:// or it won’t render.
+[!NOTE] The URL must start with http:// or https:// or it won't render.
 
 3. Commit the file.
 4. Let the workflow run for a couple minutes until it has deployed to PRE-PROD. At this point, the workflow will pause and wait for the required approval since you're targeting the PROD environment, which requires an approval as defined earlier:
@@ -2514,7 +2514,7 @@ Cancel workflow
 
 &lt;!-- image --&gt;
 
-• Settings
+· Settings
 
 79
 
@@ -2598,7 +2598,7 @@ Pull requests
 
 Y colindembovsky / simple-feed-reader forked from Azure-Samples/simple-feed-reader
 
-•&amp;gt; Code
+·&amp;gt; Code
 
 I? Pull requests
 
@@ -2608,7 +2608,7 @@ Workflows
 
 All workflows lo NET
 
-• Projects
+· Projects
 
 New workflow
 
@@ -2624,7 +2624,7 @@ Le Insights
 
 5. To see the Run workflow button, select the Actions tab. Select the .NET workflow in the list of workflows. At the top of the list of runs, you'll see the Run workflow button. If you select it, you can choose the branch to run the workflow against and queue it:
 
-• Update dotnet.yml
+· Update dotnet.yml
 
 **fioune 13**. Manual dicnatch..
 
@@ -2704,7 +2704,7 @@ Add Secret
 
 **fioune 15**. View cernetc.
 
-**fioune 14**• Add an envisaament coset
+**fioune 14**· Add an envisaament coset
 
 **Figure 14**: Add an environment secret.
 
@@ -2736,7 +2736,7 @@ A Not secure cd-simplefeedreader-staging.azureweb...
 
 AZ Exams il Learning
 
-• NET on Actions
+· NET on Actions
 
 SimpleFeedReader
 
@@ -2780,7 +2780,7 @@ The final workflow file should look like this:
 </code></pre>
 <p>name: .NET on: workflow_dispatch: inputs: reason: description: 'The reason for running the workflow' required: true default: 'Manual build from GitHub UI' push: branches: [ main ] pull_request: branches: [ main ] env: app -name: &quot;cd -simplefeedreader&quot; rg -name: &quot;cd -dotnetactions&quot; jobs: build:</p>
 <pre><code>
-••.
+··.
 
 10
 
@@ -2794,7 +2794,7 @@ The final workflow file should look like this:
 
 CodeQL is a static code analysis engine that can automate security and quality checks. With CodeQL, you can perform variant analysis, which uses known vulnerabilities as seeds to find similar issues. CodeQL is part of GitHub Advanced Security that includes:
 
-[!div class=“checklist”]
+[!div class=&quot;checklist&quot;]
 
 Search or jump to....
 
@@ -2806,7 +2806,7 @@ Y colindembovsky / simple-feed-reader forked from Azure-Samples/simple-feed-read
 
 12 Pull requests
 
-• Actions
+· Actions
 
 WE Projects
 
@@ -2838,7 +2838,7 @@ CodeQL is a powerful language and security professionals can create custom queri
 
 In this article, you'll set up a GitHub workflow that will scan code in your repository using CodeQL. You will:
 
-[!div class=“checklist”]
+[!div class=&quot;checklist&quot;]
 
 - Create a code scanning action.
 - Edit the workflow file to include custom scan settings.
@@ -2892,15 +2892,15 @@ Workflows
 
 ‹&amp;gt; Edit new file
 
-• Preview
+· Preview
 
 All workflows
 
 NET
 
-• to conmit it to your repository-
+· to conmit it to your repository-
 
-• Actions
+· Actions
 
 Projects
 
@@ -2912,13 +2912,13 @@ L Insights
 
 @ Settings
 
-• Actions
+· Actions
 
 Projects
 
 M Wiki
 
-• Security
+· Security
 
 L Insights
 
@@ -2932,17 +2932,17 @@ codeql-analysisymi
 
 CodeQL
 
-• You may wish to alter this file to override the set of languages analyzed,
+· You may wish to alter this file to override the set of languages analyzed,
 
 1 workflow run
 
-• or to provide custom queries or build logic.
+· or to provide custom queries or build logic.
 
 * ******** NOTE ********
 
 # Ne have attempted to detect the languages in your repository. Please check
 
-• the &quot;Language&quot; matrix defined below to confirm you have the correct set of
+· the &quot;Language&quot; matrix defined below to confirm you have the correct set of
 
 # supported CodeQL languages.
 
@@ -2981,9 +2981,9 @@ Take a look at the workflow file while it runs. If you remove the comments from 
 </code></pre>
 <p>name: &quot;CodeQL&quot; on: push: branches: [ main ] pull_request: branches: [ main ] schedule: -cron: '40 14 * * 6' jobs: analyze: name: Analyze runs-on: ubuntu -latest strategy: fail -fast: false</p>
 <pre><code>
-• Watch -
+· Watch -
 
-• Watch -
+· Watch -
 
 * Star
 
@@ -3061,7 +3061,7 @@ Q tool:CodeQL is:open
 
 Projects
 
-• v 0Open x 0 Closed
+· v 0Open x 0 Closed
 
 Set up more code scanning tools
 
@@ -3071,7 +3071,7 @@ Set up more code scanning tools
 
 0
 
-• Star 0
+· Star 0
 
 Y Fork
 
@@ -3083,7 +3083,7 @@ Actions
 
 Щ Wiki
 
-• Security
+· Security
 
 L Insights
 
@@ -3101,7 +3101,7 @@ The CodeQL scan isn't reporting any security issues. That's expected with this b
 
 1. Navigate to the .github folder in the Code tab and select Add File:
 1. Enter codeql/codeql-config.yml as the name. This creates the file in a folder. Paste in the following code:
-3. :::{custom-style=CodeBox} ```yml name: “Security and Quality”
+3. :::{custom-style=CodeBox} ```yml name: &quot;Security and Quality&quot;
 
 **Figure 5:** Create a new file.
 
@@ -3113,7 +3113,7 @@ queries:
 
 Search or jump to...
 
-• Pull requests Issues Marketplace Explore y colindembovsky / simple-feed-reader
+· Pull requests Issues Marketplace Explore y colindembovsky / simple-feed-reader
 
 forked from Azure-Samples/simple-feed-reader
 
@@ -3200,7 +3200,7 @@ Code scanning alerts
 
 CodeQL
 
-• First appeared in commit 824b301 8 minutes ago
+· First appeared in commit 824b301 8 minutes ago
 
 -O-
 
@@ -3280,7 +3280,7 @@ mywebapp21816
 
 App Service
 
-• Search (Chri*/
+· Search (Chri*/
 
 Wweryew
 
@@ -3288,7 +3288,7 @@ Activity log
 
 Access control (LAM)
 
-• Tags
+· Tags
 
 % Diagnose and solve problems d Quickstart
 
@@ -3364,9 +3364,9 @@ Http Sxx
 
 Having deployed the app and built a DevOps pipeline, it's important to understand how to monitor and troubleshoot the app.
 
-In this section, you’ll complete the following tasks:
+In this section, you'll complete the following tasks:
 
-[!div class=“checklist”]
+[!div class=&quot;checklist&quot;]
 
 - Find basic monitoring and troubleshooting data in the Azure portal
 - Learn how Azure Monitor provides a deeper look at metrics across all Azure services
@@ -3445,7 +3445,7 @@ Deployment credentiais
 
 Deployment slots
 
-•• Deployment options.
+·· Deployment options.
 
 ( Continuous Delivery (Preview)
 
@@ -3477,7 +3477,7 @@ Properties
 
 4 Browse
 
-• Stor
+· Stor
 
 Resource group Ghanad
 
@@ -3499,7 +3499,7 @@ Subscription ID
 
 C Restart
 
-• Delete &amp;amp; Get publish profile () Reset publish profile https://mywebapp21816.azurewebsites.net
+· Delete &amp;amp; Get publish profile () Reset publish profile https://mywebapp21816.azurewebsites.net
 
 App Service plan/pricing tier mywebapp21816 (Standard: 1 Small)
 
@@ -3577,13 +3577,13 @@ Getting started with Application Insights monitoring users actually do with it.
 
 Link your application to Application Insights
 
-• Select existing resource
+· Select existing resource
 
 Search....
 
-• my-blog
+· my-blog
 
-• Create new resource
+· Create new resource
 
 * New resource name mywebapp21816
 
@@ -3618,7 +3618,7 @@ mywebapp21816
 
 Application Insights - Last 24 hours (30 minute granularity) - ASP.NET web application
 
-• Search (Ctrl+/)
+· Search (Ctrl+/)
 
 Overview
 
@@ -3630,7 +3630,7 @@ Tags
 
 INVESTIGATE
 
-• Application map
+· Application map
 
 Smart Detection
 
@@ -3694,11 +3694,11 @@ Ils
 
 X
 
-••• More
+··· More
 
 MONITORING
 
-• Alerts (Classic)
+· Alerts (Classic)
 
 +
 
@@ -3770,7 +3770,7 @@ Azure App Service can be debugged remotely with Visual Studio when logs don't pr
 
 In this section, you completed the following tasks:
 
-[!div class=“checklist”]
+[!div class=&quot;checklist&quot;]
 
 - Find basic monitoring and troubleshooting data in the Azure portal
 - Learn how Azure Monitor provides a deeper look at metrics across all Azure services

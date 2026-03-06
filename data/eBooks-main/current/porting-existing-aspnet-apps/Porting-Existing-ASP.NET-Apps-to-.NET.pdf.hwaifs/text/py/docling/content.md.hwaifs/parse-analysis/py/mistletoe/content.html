@@ -1133,14 +1133,14 @@
 <p>For solutions that involve multiple frontend apps, it's best to migrate the apps one by one. For example, create a solution that only includes one front-end app and its dependencies so you can easily identify the scope of work involved. Solutions are lightweight, and you can include projects in multiple solutions if needed. Take advantage of solutions as an organizational tool when migrating.</p>
 <p>Once you've identified the ASP.NET app to migrate and have its dependent projects located with it (ideally in a solution), the next step is to identify framework and NuGet dependencies. Having identified all dependencies, the simplest migration approach is a 'bottom up' approach. With this approach, the lowest level of dependencies is migrated first. Then the next level of dependencies is migrated, until eventually the only thing left is the front-end app. Figure 3-1 shows an example set of projects composing an app. The low-level class libraries are at the bottom, and the ASP.NET MVC project is at the top.</p>
 <p>Contoso.Utils</p>
-<p>• NET 4.5 Class Library</p>
+<p>· NET 4.5 Class Library</p>
 <p>Contoso.Web</p>
 <p>ASP. NET MVC 5</p>
 <p>Figure 3-1. Project dependencies graph.</p>
 <!-- image -->
 <p>Choose a particular front-end app, an ASP.NET MVC 5 / Web API 2 project. Identify its dependencies in the solution, and map out their dependencies until you have a complete list. A diagram like the one shown in Figure 3-1 may be useful when mapping out project dependencies. Visual Studio can produce a dependency diagram for your solution , depending on which edition you're using. The .NET Portability Analyzer can also produce dependency diagrams.</p>
 <p>Figure 3-2 shows the installer for the .NET Portability Analyzer Visual Studio extension:</p>
-<p>• VSIX Installer</p>
+<p>· VSIX Installer</p>
 <p>Install</p>
 <p>.NET Portability Analyzer</p>
 <p>V Visual Studio Enterprise 2019</p>
@@ -1153,32 +1153,32 @@
 <p>X</p>
 <p>Options</p>
 <p>Search Options (CtrI+E)</p>
-<p>• Environment</p>
-<p>• Projects and Solutions</p>
-<p>• Source Control</p>
-<p>• Work Items</p>
-<p>• Text Editor</p>
-<p>• Debugging</p>
-<p>• IntelliTrace</p>
-<p>• Performance Tools</p>
-<p>• .NET Portability Analyzer</p>
+<p>· Environment</p>
+<p>· Projects and Solutions</p>
+<p>· Source Control</p>
+<p>· Work Items</p>
+<p>· Text Editor</p>
+<p>· Debugging</p>
+<p>· IntelliTrace</p>
+<p>· Performance Tools</p>
+<p>· .NET Portability Analyzer</p>
 <p>General</p>
-<p>• Azure Service Authentication</p>
-<p>• Container Tools</p>
-<p>• Cross Platform</p>
-<p>• Database Tools</p>
-<p>• F# Tools</p>
-<p>• Live Share</p>
-<p>• Live Unit Testing</p>
-<p>• NuGet Package Manager</p>
-<p>• Snapshot Debugger</p>
-<p>• SQL Server Tools</p>
-<p>• Test</p>
-<p>• Text Templating</p>
-<p>• Web Forms Designer</p>
-<p>• Web Performance Test Tools</p>
-<p>• Windows Forms Designer</p>
-<p>• XAML Designer</p>
+<p>· Azure Service Authentication</p>
+<p>· Container Tools</p>
+<p>· Cross Platform</p>
+<p>· Database Tools</p>
+<p>· F# Tools</p>
+<p>· Live Share</p>
+<p>· Live Unit Testing</p>
+<p>· NuGet Package Manager</p>
+<p>· Snapshot Debugger</p>
+<p>· SQL Server Tools</p>
+<p>· Test</p>
+<p>· Text Templating</p>
+<p>· Web Forms Designer</p>
+<p>· Web Performance Test Tools</p>
+<p>· Windows Forms Designer</p>
+<p>· XAML Designer</p>
 <p>P</p>
 <p>General settings</p>
 <p>Default output directory C:\Portability Analysis</p>
@@ -1186,7 +1186,7 @@
 <p>ApiPortAnalysis</p>
 <p>Output formats</p>
 <p>~ Excel V HTML</p>
-<p>•Ison</p>
+<p>·Ison</p>
 <p>Figure 3-3. Configure the .NET Portability Analyzer.</p>
 <!-- image -->
 <p>The analyzer produces a detailed report for each assembly. The report:</p>
@@ -1424,9 +1424,9 @@
 </ul>
 <p>Migration complete</p>
 <p>P</p>
-<p>• 8</p>
-<p>• 8</p>
-<p>• 8</p>
+<p>· 8</p>
+<p>· 8</p>
+<p>· 8</p>
 <p>o Connected Services</p>
 <p>Properties</p>
 <p>References</p>
@@ -1452,7 +1452,7 @@
 <p>Extensions</p>
 <p>Window</p>
 <p>He</p>
-<p>•</p>
+<p>·</p>
 <p>Figure 4-2. Analyze assembly portability in Visual Studio.</p>
 <!-- image -->
 <p>Choose the web project's assembly from the project's bin folder, as shown in Figure 4-3.</p>
@@ -1472,16 +1472,16 @@
 <p>"src &gt; eShopLegacyMVC &gt; bin &gt;</p>
 <p>80.59</p>
 <p>fx</p>
-<p>Organize •</p>
+<p>Organize ·</p>
 <p>New folder</p>
 <p>7d9637ec-b1a8-4808-8e19-59fdc4ecb3ea</p>
 <p>** Dropbox</p>
 <p>Target Framework</p>
 <p>&amp;OneDrive</p>
 <p>.NETFramework,Version=v4.7.2</p>
-<p>• This PC</p>
+<p>· This PC</p>
 <p>y 3D Objects</p>
-<p>• Desktop</p>
+<p>· Desktop</p>
 <p>Documents</p>
 <ul>
 <li>Downloads</li>
@@ -1538,7 +1538,7 @@
 <p>T:System.Web.Mvc.HandleErrorAttribute</p>
 <p>T:System.Web.Mvc.HttpGetAttribute</p>
 <p>T:System.Web.Mvc.HttpGetAttribute</p>
-<p>• Target member</p>
+<p>· Target member</p>
 <p>T:System.Web.Mvc.Ur|Parameter</p>
 <p>F:System.Web.Mvc.UrlParameter.Optional</p>
 <p>T:System.Web.HttpApplication</p>
@@ -1555,7 +1555,7 @@
 <h2>Update project files and NuGet reference syntax</h2>
 <p>Next, migrate from the older .csproj file structure to the newer, simpler structure introduced with .NET Core. In doing so, you'll also migrate from using a packages.config file for NuGet references to using &lt;PackageReference&gt; elements in the project file. Old-style project files may also use &lt;PackageReference&gt; elements, so it usually makes sense to migrate all NuGet package references to this format first, before upgrading to the new project file format.</p>
 <p>The original project's eShopLegacyMVC.csproj file is 418 lines long. A sample of the project file is shown in Figure 4-6. To offer a sense of its overall size and complexity, the right side of the image contains a miniature view of the entire file.</p>
-<p>• eShopLegacyMVC.csproj X</p>
+<p>· eShopLegacyMVC.csproj X</p>
 <p>src &gt; eShopLegacyMVC &gt; i eShopLegacyMVC.csproj k/?xm] version="1.0" encoding="utf-8"?l)</p>
 <p>‹Project ToolsVersion="15.0" DefaultTargets="Build" xmIns="http://schemas.microsoft.com/developer/msbuild/200=</p>
 <p>‹Import Project=".... \packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsc</p>
@@ -1604,8 +1604,8 @@
 <p>213</p>
 <p>&gt;</p>
 <p>&gt;</p>
-<p>• packages.config X</p>
-<p>src &gt; eShopLegacyMVC &gt; • packages.config</p>
+<p>· packages.config X</p>
+<p>src &gt; eShopLegacyMVC &gt; · packages.config</p>
 <p>1</p>
 <p>#?xml version="1.0" encoding="utf-8"?[</p>
 <p>‹packages&gt;</p>
@@ -1716,7 +1716,7 @@
 <p>./Convert-ToPackageReference.ps1 | Out-Null</p>
 <p>The first two commands download files so that they exist locally. The last line runs the script. After running it, try to build the new project. You'll most likely get some errors. To resolve them, you'll want to eliminate some references (like most of the Microsoft.AspNet and System packages), and you may need to remove some xmlns attributes.</p>
 <p>X</p>
-<p>eShopPorted &gt; • eShopPorted.csproj</p>
+<p>eShopPorted &gt; · eShopPorted.csproj</p>
 <p>1</p>
 <p>‹Project Sdk="Microsoft.NET.Sdk. Web"&gt;</p>
 <p>2</p>
@@ -1778,30 +1778,30 @@
 </code></pre>
 <p>Copy the Content folder from the ASP.NET MVC app to the new project's wwwroot folder.</p>
 <p>Run the app and navigate to its /Content/base.css folder to verify that the static file is served correctly from its expected path. Continue copying the rest of the folders containing static files to the new project. You'll also want to copy the favicon.ico file from the project's root to the wwwroot folder. Figure 4-11 shows the results after these files and their folders have all been copied.</p>
-<p>• B</p>
+<p>· B</p>
 <p>eShopPorted</p>
 <p>&gt; Connected Services</p>
 <p>Dependencies</p>
-<p>• 8.</p>
+<p>· 8.</p>
 <p>1 8t</p>
 <p>Properties www.root</p>
 <p>8</p>
 <p>8</p>
-<p>• 8П</p>
+<p>· 8П</p>
 <p>Controllers</p>
-<p>• 82] Migrations</p>
-<p>• &amp;</p>
+<p>· 82] Migrations</p>
+<p>· &amp;</p>
 <p>Models</p>
 <p>8 Modules</p>
 <p>8C Services</p>
-<p>• 8</p>
+<p>· 8</p>
 <p>ViewModel</p>
-<p>• 8C</p>
+<p>· 8C</p>
 <p>Views</p>
 <p>82] app.config</p>
-<p>• B</p>
+<p>· B</p>
 <p>appsettings json</p>
-<p>• 8C# Program.cs</p>
+<p>· 8C# Program.cs</p>
 <p>D BC# Startup.cs</p>
 <p>Figure 4-11. Static folders copied over to wwwroot folder.</p>
 <!-- image -->
@@ -1927,7 +1927,7 @@
 <p>For now, the setting for useMockData is set to true. This setting will be read from configuration in a moment. At this point, the app compiles and should load successfully when run, as shown in Figure 412.</p>
 <p>IF Index - Catalog manager (MVC) ×</p>
 <ul>
-<li>&gt; C• localhost:44337</li>
+<li>&gt; C· localhost:44337</li>
 </ul>
 <p>Create New</p>
 <p>NAME</p>
@@ -2271,7 +2271,7 @@
 <p>In the example described above, assume the API endpoints are designated as the first part of the app to be ported to ASP.NET Core. In this case, a new ASP.NET Core app is created and hosted in IIS as a separate web application within the existing ASP.NET MVC web site . Since it will be added as a child of the original web site and will be named api , its default route should no longer begin with api/. Keeping this would result in it matching URLs of the form /api/api/endpoint.</p>
 <p>Figure 5-1 shows how the ASP.NET Core 2.1 api app appears in IIS Manager as a part of the existing DotNetMvcApp site.</p>
 <p>Internet Information Services (IIS) Manager</p>
-<p>• NIGHTKING • Sites • DotNetMvcApp •</p>
+<p>· NIGHTKING · Sites · DotNetMvcApp ·</p>
 <p>File View Help</p>
 <p>Connections v .6g NIGHTKING (NIGHTKING\stev</p>
 <p>..a Application Pools</p>
@@ -2298,7 +2298,7 @@
 <li>Internet Information Services (IIS) Manager</li>
 </ul>
 <p>&lt; →</p>
-<p>6] • NIGHTKING »</p>
+<p>6] · NIGHTKING »</p>
 <p>File View</p>
 <p>Help</p>
 <p>Connections la Application Pools</p>
@@ -2315,7 +2315,7 @@
 <p>Another alternative to IIS Rewrite rules is the use of a reverse proxy like YARP, which can facilitate incremental ASP.NET to ASP.NET Core Migration.</p>
 <h2>Summary</h2>
 <p>A common approach to porting large apps from .NET Framework to ASP.NET Core is to choose individual portions of the app to migrate one by one. As each piece of the app is ported, the entire app remains running and usable, with some parts of it running in its original configuration and other parts running on some version of .NET Core. By following this approach, a large app migration can be performed incrementally. This approach results in limiting risk by providing more rapid feedback and</p>
-<p>• 0-</p>
+<p>· 0-</p>
 <p>reducing total surface area involved in testing. It also allows for more rapid realization of benefits of .NET Core, such as performance increases. Although ASP.NET Core apps are no longer required to be hosted on IIS, IIS remains a very flexible and powerful web server that can be configured to support a variety of hosting scenarios involving both .NET Framework and ASP.NET Core apps on the same IIS instance or even hosted on different servers.</p>
 <h2>References</h2>
 <ul>

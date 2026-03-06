@@ -886,18 +886,18 @@
 <p>Database</p>
 <p>Relational</p>
 <h2>Introduction to cloud -native applications Marketing Location</h2>
-<p>Another day, at the office, working on “the next big thing.”</p>
+<p>Another day, at the office, working on "the next big thing."</p>
 <p>Your cellphone rings. It's your friendly recruiter - the one who calls daily with exciting new opportunities.</p>
 <p>But this time it's different: Start -up, equity, and plenty of funding.</p>
 <p>The mention of the cloud, microservices, and cutting-edge technology pushes you over the edge.</p>
 <p>Fast forward a few weeks and you're now a new employee in a design session architecting a major eCommerce application. You're going to compete with the leading eCommerce sites.</p>
 <p>How will you build it?</p>
-<p>If you follow the guidance from past 15 years, you’ll most likely build the system shown in Figure 1.1.</p>
+<p>If you follow the guidance from past 15 years, you'll most likely build the system shown in Figure 1.1.</p>
 <p>Figure 1 -1. Traditional monolithic design</p>
 <!-- image -->
 <p>You construct a large core application containing all of your domain logic. It includes modules such as Identity, Catalog, Ordering, and more. They directly communicate with each other within a single server process. The modules share a large relational database. The core exposes functionality via an HTML interface and a mobile app.</p>
 <p>Congratulations! You just created a monolithic application.</p>
-<p>Not all is bad. Monoliths offer some distinct advantages. For example, they’re straightforward to…</p>
+<p>Not all is bad. Monoliths offer some distinct advantages. For example, they're straightforward to…</p>
 <p>Monolithic server process</p>
 <p>Modules</p>
 <p>API</p>
@@ -939,7 +939,7 @@
 <p>Note how the application is decomposed across a set of small isolated microservices. Each service is self -contained and encapsulates its own code, data, and dependencies. Each is deployed in a software container and managed by a container orchestrator. Instead of a large relational database, each service owns it own datastore, the type of which vary based upon the data needs. Note how some services depend on a relational database, but other on NoSQL databases. One service stores its state in a distributed cache. Note how all traffic routes through an API Gateway service that is responsible for routing traffic to the core back-end services and enforcing many cross-cutting concerns. Most importantly, the application takes full advantage of the scalability, availability, and resiliency features found in modern cloud platforms.</p>
 <h2>Cloud -native computing</h2>
 <p>Hmm… We just used the term, Cloud Native. Your first thought might be, "What exactly does that mean?" Another industry buzzword concocted by software vendors to market more stuff?"</p>
-<p>Fortunately it’s far different, and hopefully this book will help convince you.</p>
+<p>Fortunately it's far different, and hopefully this book will help convince you.</p>
 <p>Within a short time, cloud native has become a driving trend in the software industry. It's a new way to construct large, complex systems. The approach takes full advantage of modern software development practices, technologies, and cloud infrastructure. Cloud native changes the way you design, implement, deploy, and operationalize systems.</p>
 <p>Unlike the continuous hype that drives our industry, cloud native is for-real. Consider the Cloud Native Computing Foundation (CNCF), a consortium of over 400 major corporations. Its charter is to make</p>
 <p>Docker Host</p>
@@ -948,7 +948,7 @@
 <p>So, what exactly is Cloud Native? Sit back, relax, and let us help you explore this new world.</p>
 <h2>What is Cloud Native?</h2>
 <p>Stop what you're doing and ask your colleagues to define the term "Cloud Native". There's a good chance you'll get several different answers.</p>
-<p>Let’s start with a simple definition:</p>
+<p>Let's start with a simple definition:</p>
 <p>Cloud -native architecture and technologies are an approach to designing, constructing, and operating workloads that are built in the cloud and take full advantage of the cloud computing model.</p>
 <p>The Cloud Native Computing Foundation provides the official definition:</p>
 <p>Cloud -native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.</p>
@@ -998,7 +998,7 @@
 <p>The speed and agility of cloud native derive from many factors. Foremost is cloud infrastructure. But there's more: Five other foundational pillars shown in Figure 1-3 also provide the bedrock for cloudnative systems.</p>
 <p>Figure 1 -3. Cloud -native foundational pillars</p>
 <!-- image -->
-<p>Let’s take some time to better understand the significance of each pillar.</p>
+<p>Let's take some time to better understand the significance of each pillar.</p>
 <h2>The cloud</h2>
 <p>Cloud -native systems take full advantage of the cloud service model.</p>
 <p>Designed to thrive in a dynamic, virtualized cloud environment, these systems make extensive use of Platform as a Service (PaaS) compute infrastructure and managed services. They treat the underlying infrastructure as disposable - provisioned in minutes and resized, scaled, or destroyed on demand – via automation.</p>
@@ -1105,7 +1105,7 @@
 </tr>
 </tbody>
 </table>
-<p>We’ll refer to many of the 12+ factors in this chapter and throughout the book.</p>
+<p>We'll refer to many of the 12+ factors in this chapter and throughout the book.</p>
 <h2>Azure Well -Architected Framework</h2>
 <p>Designing and deploying cloud-based workloads can be challenging, especially when implementing cloud -native architecture. Microsoft provides industry standard best practices to help you and your team deliver robust cloud solutions.</p>
 <p>The Microsoft Well -Architected Framework provides a set of guiding tenets that can be used to improve the quality of a cloud-native workload. The framework consists of five pillars of architecture excellence:</p>
@@ -1513,7 +1513,7 @@
 <ul>
 <li></li>
 </ul>
-<p>• Docker Host</p>
+<p>· Docker Host</p>
 <p>Different types of microservices</p>
 <p>Identity Microservice (STS+ Users)</p>
 <p>SQL Server</p>
@@ -1539,14 +1539,14 @@
 <p>Solution Explorer</p>
 <p>Search Solution Explorer (CtrI+:)</p>
 <p>в Solution 'eShopOnContainers-ServicesAndWebApps' (31 of 31 projects)</p>
-<p>• Solution Items</p>
+<p>· Solution Items</p>
 <p>D sc</p>
 <p>ApiGateways</p>
 <p>BuildingBlocks</p>
 <p>Services</p>
 <p>Web Apps</p>
 <p>P</p>
-<p>• tests</p>
+<p>· tests</p>
 <p>→ Service Tests docker-compose</p>
 <p>P-</p>
 <!-- image -->
@@ -1579,7 +1579,7 @@
 <p>SQL Server</p>
 <h2>database</h2>
 <p>API Gateways / BFF Catalog microservice SQL Server</p>
-<p>•0</p>
+<p>·0</p>
 <p>database</p>
 <p>Figure 2 -5. The eShopOnContainers Architecture.</p>
 <!-- image -->
@@ -1623,33 +1623,33 @@
 <p>You'll find the eShopOnContainers helm charts in the /k8s/helm folder. Figure 2-6 shows how the different components of the application are organized into a folder structure used by helm to define and managed deployments.</p>
 <p>Branch: dev - eShopOnContainers / k8s / helm /</p>
 <p>mvelosop Add option to use local images for kis deployment</p>
-<p>• apigwmm</p>
-<p>• apigwms</p>
-<p>• apigwwm</p>
-<p>• apigwws</p>
-<p>• basket-api</p>
-<p>• basket-data</p>
-<p>• catalog-api</p>
-<p>• eshop-common</p>
-<p>• identity-api</p>
-<p>• istio</p>
-<p>• keystore-data</p>
-<p>• locations-api</p>
-<p>• marketing-api</p>
-<p>• mobileshoppingagg</p>
-<p>• nosql-data</p>
-<p>• ordering-api</p>
-<p>• ordering-backgroundtasks</p>
-<p>• ordering-signalrhub</p>
-<p>• payment-api</p>
-<p>• rabbitmq</p>
-<p>• sql-data</p>
-<p>• webhooks-api</p>
-<p>• webhooks-web</p>
-<p>• webmvc</p>
-<p>• webshoppingagg</p>
-<p>• webspa</p>
-<p>• webstatus devspaces scripts</p>
+<p>· apigwmm</p>
+<p>· apigwms</p>
+<p>· apigwwm</p>
+<p>· apigwws</p>
+<p>· basket-api</p>
+<p>· basket-data</p>
+<p>· catalog-api</p>
+<p>· eshop-common</p>
+<p>· identity-api</p>
+<p>· istio</p>
+<p>· keystore-data</p>
+<p>· locations-api</p>
+<p>· marketing-api</p>
+<p>· mobileshoppingagg</p>
+<p>· nosql-data</p>
+<p>· ordering-api</p>
+<p>· ordering-backgroundtasks</p>
+<p>· ordering-signalrhub</p>
+<p>· payment-api</p>
+<p>· rabbitmq</p>
+<p>· sql-data</p>
+<p>· webhooks-api</p>
+<p>· webhooks-web</p>
+<p>· webmvc</p>
+<p>· webshoppingagg</p>
+<p>· webspa</p>
+<p>· webstatus devspaces scripts</p>
 <p>Upload files</p>
 <p>Find file</p>
 <p>History</p>
@@ -1822,7 +1822,7 @@
 <p>General</p>
 <h2>Minikube</h2>
 <p>Kubernetes v1.21.3</p>
-<p>• Enable Kubernetes</p>
+<p>· Enable Kubernetes</p>
 <p>What is Minikube? The Minikube project says "Minikube implements a local Kubernetes cluster on macOS, Linux, and Windows." Its primary goals are "to be the best tool for local Kubernetes application development and to support all Kubernetes features that fit." Installing Minikube is separate from Docker, but Minikube supports different hypervisors than Docker Desktop supports. The following Kubernetes features are currently supported by Minikube: Reset Kubernetes Cluster</p>
 <ul>
 <li>DNS</li>
@@ -1867,7 +1867,7 @@
 <p>X</p>
 <p>Debug *</p>
 <p>Any CPU</p>
-<p>• Docker api_sample_app</p>
+<p>· Docker api_sample_app</p>
 <p>IIS Express</p>
 <p>Docker</p>
 <p>WSL</p>
@@ -1904,7 +1904,7 @@
 <p>= -pi-sample-app</p>
 <p>› Connected Services</p>
 <p>9 Dependencies</p>
-<p>• Properties</p>
+<p>· Properties</p>
 <p>Figure 3 -8. Adding Docker support to Visual Studio</p>
 <!-- image -->
 <h2>Visual Studio Code Docker Tooling</h2>
@@ -2020,7 +2020,7 @@
 <p>docker tag mycontainer myregistry.azurecr.io/mycontainer:v1</p>
 <p>After you've tagged the image, you use the docker push command to push the image to your ACR instance.</p>
 <p>docker push myregistry.azurecr.io/mycontainer:v1</p>
-<p>•</p>
+<p>·</p>
 <p>X</p>
 <p>After you push an image to the registry, it's a good idea to remove the image from your local Docker environment, using this command:</p>
 <p>docker rmi myregistry.azurecr.io/mycontainer:v1</p>
@@ -2105,21 +2105,21 @@
 <p>To deploy to Azure Container Instances (ACI), you need an Azure Container Registry (ACR) and credentials for accessing it. Once you push your container image to the repository, it's available to pull into ACI. You can work with ACI using the Azure portal or command-line interface. ACR provides tight integration with ACI. Figure 3-12 shows how to push an individual container image to ACR.</p>
 <p>myregistry - Repositories</p>
 <p>Container registry</p>
-<p>• Search (Ctri+/)</p>
+<p>· Search (Ctri+/)</p>
 <p>€ Overview</p>
-<p>• Activity log iM Access control (IAM)</p>
+<p>· Activity log iM Access control (IAM)</p>
 <p>Tags</p>
 <p>&amp; Quick start</p>
 <p>SETTINGS</p>
 <p>Access keys</p>
 <p>Locks</p>
-<p>• Automation script</p>
+<p>· Automation script</p>
 <p>SERVICES</p>
 <p>i Repositories</p>
 <p>&amp; Webhooks</p>
 <p>Replications (Preview)</p>
 <p>SUPPORT + TROUBLESHOOTING</p>
-<p>• New support request</p>
+<p>· New support request</p>
 <p>© Refresh</p>
 <p>O Search to filter repositories ....</p>
 <p>Tags myregistry azurecr.io/aci-helloworld</p>
@@ -2314,7 +2314,7 @@
 <p>JavaScript/Angular.js</p>
 <p>Client 3 SPA Web app</p>
 <p>JavaScript/Angular.js</p>
-<p>• Cloud</p>
+<p>· Cloud</p>
 <p>Figure 4 -7. Azure SignalR</p>
 <!-- image -->
 <p>Another advantage of Azure SignalR Service comes with implementing Serverless cloud-native services. Perhaps your code is executed on demand with Azure Functions triggers. This scenario can be tricky because your code doesn't maintain long connections with clients. Azure SignalR Service can handle this situation since the service already manages connections for you.</p>
@@ -2562,14 +2562,14 @@
 <p>88 Dependencies</p>
 <p>Recent project templates</p>
 <p>5 Properties gic ASP.NET Core gRPC Service</p>
-<p>• E Protos</p>
-<p>• greet.proto</p>
+<p>· E Protos</p>
+<p>· greet.proto</p>
 <p>Fo ASP.NET Core Web API</p>
-<p>• E Services</p>
-<p>• C# GreeterService.cs</p>
-<p>• appsettings.json</p>
+<p>· E Services</p>
+<p>· C# GreeterService.cs</p>
+<p>· appsettings.json</p>
 <p>› Azure Functions</p>
-<p>• C# Program.cs</p>
+<p>· C# Program.cs</p>
 <p>Figure 4 -20. gRPC support in Visual Studio 2022</p>
 <!-- image -->
 <p>Figure 4-21 shows the skeleton gRPC service generated from the built-in scaffolding included in Visual Studio 2022.</p>
@@ -2964,7 +2964,7 @@
 <p>MariaDB</p>
 <p>PostgreSQL</p>
 <p>Built-in high availability with a 99.99% service level agreement</p>
-<p>• Automatic upgrades, patching, and backups</p>
+<p>· Automatic upgrades, patching, and backups</p>
 <h2>Azure relational databases</h2>
 <p>For cloud -native microservices that require relational data, Azure offers four managed relational databases as a service (DBaaS) offerings, shown in Figure 5-11.</p>
 <p>Figure 5 -11. Managed relational databases available in Azure</p>
@@ -3013,10 +3013,10 @@
 <p>Turnkey global distribution</p>
 <p>MongoDB</p>
 <p>Table API</p>
-<p>• OOO</p>
+<p>· OOO</p>
 <p>Column-family</p>
 <p>Gremlin</p>
-<p>•</p>
+<p>·</p>
 <p>Figure 5 -12: Overview of Azure Cosmos DB</p>
 <!-- image -->
 <p>The previous figure presents many of the built-in cloud-native capabilities available in Cosmos DB. In this section, we'll take a closer look at them.</p>
@@ -3315,28 +3315,28 @@
 <p>On RDBMS, NoSQL and NewSQL databases. Interview with John Ryan</p>
 </li>
 <li>
-<p>•</p>
+<p>·</p>
 </li>
 <li>
-<p>•</p>
+<p>·</p>
 </li>
 <li>
-<p>•</p>
+<p>·</p>
 </li>
 <li>
 <p>TiDB</p>
 </li>
 <li>
-<p>•</p>
+<p>·</p>
 </li>
 <li>
 <p>Vitess</p>
 </li>
 <li>
-<p>•</p>
+<p>·</p>
 </li>
 <li>
-<p>•</p>
+<p>·</p>
 </li>
 </ul>
 <p>SQL vs NoSQL vs NewSQL: The Full Comparison DASH: Four Properties of Kubernetes-Native Databases CockroachDB YugabyteDB Elasticsearch: The Definitive Guide Introduction to Apache Lucene</p>
@@ -3466,7 +3466,7 @@
 </table>
 <p>Question: Would you retry an HTTP Status Code of 403 Forbidden? No. Here, the system is functioning properly, but informing the caller that they aren't authorized to perform the requested operation. Care must be taken to retry only those operations caused by failures.</p>
 <p>As recommended in Chapter 1, Microsoft developers constructing cloud-native applications should target the .NET platform. Version 2.1 introduced the HTTPClientFactory library for creating HTTP Client instances for interacting with URL-based resources. Superseding the original HTTPClient class, the factory class supports many enhanced features, one of which is tight integration with the Polly resiliency library. With it, you can easily define resiliency policies in the application Startup class to handle partial failures and connectivity issues.</p>
-<p>Next, let’s expand on retry and circuit breaker patterns.</p>
+<p>Next, let's expand on retry and circuit breaker patterns.</p>
 <h2>Retry pattern</h2>
 <p>In a distributed cloud -native environment, calls to services and cloud resources can fail because of transient (short-lived) failures, which typically correct themselves after a brief period of time. Implementing a retry strategy helps a cloud-native service mitigate these scenarios.</p>
 <p>The Retry pattern enables a service to retry a failed request operation a (configurable) number of times with an exponentially increasing wait time. Figure 6-2 shows a retry in action.</p>
@@ -3552,7 +3552,7 @@
 </ul>
 <p>Figure 6 -4 . Replicated resources across regions</p>
 <!-- image -->
-<p>West •</p>
+<p>West ·</p>
 <p>SQL</p>
 <p>Network</p>
 <p>Infrastructure</p>
@@ -3790,7 +3790,7 @@
 <p>?</p>
 <p>_source</p>
 <p>Available Fields</p>
-<p>• @timestamp t @version</p>
+<p>· @timestamp t @version</p>
 <p>t _id t _index</p>
 <p>_score t _type</p>
 <p>t e.Level t e.MessageTempl...</p>
@@ -3809,7 +3809,7 @@
 <p>Figure 7 -7. Serilog config for writing log information directly to logstash over HTTP</p>
 <p>Logstash would use a configuration like the one shown in Figure 7-8.</p>
 <p>Share</p>
-<p>• Last 15 minutes</p>
+<p>· Last 15 minutes</p>
 <p>Uses lucene query syntax</p>
 <pre><code>input { http { #default host 0.0.0.0:8080 codec =&gt; json } } output { elasticsearch { hosts =&gt; "elasticsearch:9200" index=&gt;"sales -%{+xxxx.ww}" } }
 </code></pre>
@@ -3899,7 +3899,7 @@
 <p>Azure Subscription</p>
 <p>Azure Tenant</p>
 <p>Custom Sources</p>
-<p>Azure Monitor •</p>
+<p>Azure Monitor ·</p>
 <p>Insights</p>
 <p>Application</p>
 <p>Container</p>
@@ -3916,13 +3916,13 @@
 <p>Once the data is gathered, it can be manipulated, summarized, and plotted into charts, which allow users to instantly see when there are problems. These charts can be gathered into dashboards or into Workbooks, a multi-page report designed to tell a story about some aspect of the system.</p>
 <p>&lt; Graph</p>
 <h1>Table 1</h1>
-<p>• Stats</p>
+<p>· Stats</p>
 <p>HAWAII: 10.58%</p>
 <p>KENTUCKY: 7.68%_</p>
 <p>GEORGIA: 15.36%</p>
 <p>COLORADO: 7.25%</p>
 <p>ALABAMA: 8.12%</p>
-<p>• Done (0.819 s)</p>
+<p>· Done (0.819 s)</p>
 <p>123</p>
 <p>10 records</p>
 <p>-o ALABAMA</p>
@@ -3940,7 +3940,7 @@
 <p>There is a playground for experimenting with Kusto queries. Reading sample queries can also be instructive.</p>
 <h2>Dashboards</h2>
 <p>There are several different dashboard technologies that may be used to surface the information from Azure Monitor. Perhaps the simplest is to just run queries in Application Insights and plot the data into a chart .</p>
-<p>Fabrikam v + New dashboard 7 Upload Download Edit © Unshare / Full screen D Clone • Delete</p>
+<p>Fabrikam v + New dashboard 7 Upload Download Edit © Unshare / Full screen D Clone · Delete</p>
 <p>UTC Time: Past 24 hours</p>
 <p>Fabrikam</p>
 <p>Daily Statistics</p>
@@ -4296,7 +4296,7 @@
 <p>It's now fairly well established that being able to release software rapidly gives fast-moving companies a huge market advantage over their more sloth-like competitors. It's for that reason that major updates to Windows 10 are now approximately every six months.</p>
 <p>The patterns and practices that enable faster, more reliable releases to deliver value to the business are collectively known as DevOps. They consist of a wide range of ideas spanning the entire software development life cycle from specifying an application all the way up to delivering and operating that application.</p>
 <p>DevOps emerged before microservices and it's likely that the movement towards smaller, more fit to purpose services wouldn't have been possible without DevOps to make releasing and operating not just one but many applications in production easier.</p>
-<p>• microservices</p>
+<p>· microservices</p>
 <p>Search term</p>
 <p>United States</p>
 <p>Azure</p>
@@ -4403,12 +4403,12 @@
 <p>Add "remember me" button to login screen</p>
 <p>Simon Timms</p>
 <p>State</p>
-<p>• To Do</p>
+<p>· To Do</p>
 <p>Reason</p>
 <p>Description checkbox clicked.</p>
 <p>User Name:</p>
 <p>Password:</p>
-<p>• 0 comments</p>
+<p>· 0 comments</p>
 <p>Add tag</p>
 <p>A Save</p>
 <p>Azure DevOps comes with a number of popular templates pre-configured. In the most basic configuration, all that is needed to know is what's in the backlog, what people are working on, and what's done. It's important to have this visibility into the process of building software, so that work can be prioritized and completed tasks reported to the customer. Of course, few software projects stick to a process as simple as to do, doing, and done. It doesn't take long for people to start adding steps like QA or Detailed Specification to the process. + Add link v</p>
@@ -4418,7 +4418,7 @@
 <!-- image -->
 <p>The description field supports the normal styles you'd expect (bold, italic underscore and strike through) and the ability to insert images. This makes it a powerful tool for use when specifying work or bugs.</p>
 <p>Tasks can be rolled up into features, which define a larger unit of work. Features, in turn, can be rolled up into epics. Classifying tasks in this hierarchy makes it much easier to understand how close a large feature is to rolling out.</p>
-<p>• Back to Work Items</p>
+<p>· Back to Work Items</p>
 <p>O, AzureCamp2019 Team v</p>
 <p>All processes &gt; Basic</p>
 <p>Work item types</p>
@@ -4426,19 +4426,19 @@
 <p>Taskboard Backlog Capacity</p>
 <p>Namel</p>
 <p>¿ Collapse all</p>
-<p>• Epic</p>
-<p>• Unparented</p>
+<p>· Epic</p>
+<p>· Unparented</p>
 <p>¡ Issue</p>
 <p>Task</p>
 <p>5f Test Case</p>
-<p>• Test Plan</p>
+<p>· Test Plan</p>
 <p>CA Test Suite</p>
 <p>Projects</p>
 <ul>
 <li>New Work Item</li>
 </ul>
 <p>To Do 8 h</p>
-<p>• 2 Add "remember me"</p>
+<p>· 2 Add "remember me"</p>
 <p>button to login screen</p>
 <!-- image -->
 <p>8 h</p>

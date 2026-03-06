@@ -41,7 +41,7 @@
 <h2>How to use the book</h2>
 <p>This book addresses the &quot;why&quot;—why you might want to modernize your existing applications, and the specific benefits you get from using NET and MSIX to modernize your desktop apps. The content of the book is designed for architects and technical decision makers who want an overview, but who don't need to focus on implementation and technical, step-by-step details.</p>
 <p>Along the different chapters, sample implementation code snippets and screenshots are provided, with chapter 5 devoted to showcase a complete migration process for sample applications.</p>
-<h2>What this book doesn’t cover</h2>
+<h2>What this book doesn't cover</h2>
 <p>This book covers a specific subset of scenarios that are focused on lift-and-shift scenarios, outlining the way to gain the benefits of modernizing without the effort of rewriting code.</p>
 <p>This book isn't about developing modern applications with .NET from scratch or about getting started with Windows Forms and WPF. It focuses on how you can update existing desktop applications with the latest technologies for desktop development.</p>
 <!-- image -->
@@ -164,7 +164,7 @@
 <!-- image -->
 <p>According to a survey published by Telerik on April 2016, the most popular technologies for building Windows desktop apps are Windows Forms, WPF, and UWP.</p>
 <!-- image -->
-<p>You can develop in any of them using C# and Visual Basic, but let’s take a closer look.</p>
+<p>You can develop in any of them using C# and Visual Basic, but let's take a closer look.</p>
 <h2>Windows Forms</h2>
 <p>First released in 2002, Windows Forms is a managed framework and is the oldest, most-used desktop technology built on the Windows graphics device interface (GDI) engine. It offers a smooth drag-anddrop experience for developing user interfaces in Visual Studio. At the same time, Windows Forms relies on the Visual Studio Designer as the main way you develop your UI, so creating visual components from code isn't trivial.</p>
 <p>The following list summarizes the main characteristics of Windows Forms:</p>
@@ -258,7 +258,7 @@
 <h2>What's new with .NET for Desktop?</h2>
 <p>Desktop applications such as Windows Forms and WPF can be built using various .NET implementations, for example, .NET Framework or .NET 7. In this chapter, we'll talk about the history of each implementation, explain the differences, and show what new features await desktop developers in newer implementations.</p>
 <p>If you've been developing Windows Forms or WPF applications for a long time, you're familiar with .NET Framework. Later, .NET Core (specifically its 3.0 version) started supporting desktop applications. .NET Core was rebranded to .NET when .NET 5 was released. Just as there are different versions of .NET Framework, for example, 4.6, 4.7, and 4.8, there are also different versions of .NET Core: .NET Core 3.0, .NET 5, .NET 6, .NET 7, and so on.</p>
-<p>Let’s look into the history of each implementation to understand the differences and benefits of each.</p>
+<p>Let's look into the history of each implementation to understand the differences and benefits of each.</p>
 <h2>The motivation behind .NET Core</h2>
 <p>Since its launch in 2002, .NET Framework has evolved to support many technologies, like Windows Forms, ASP.NET, Entity Framework, Windows Store, and many others. All of them are different in nature. Therefore, Microsoft approached this evolution by taking parts of .NET Framework and creating a different application stack for each technology. That way, development capabilities could be customized for the needs of the specific stack, which maximized the potential of every platform. That led to fragmentation on the versions of .NET Framework maintained by different independent teams. All of these stacks have a common structure, containing an app model, a framework, and a runtime, but they differ in the implementation of each of the parts.</p>
 <p>If you're targeting only one of these platforms, you can use this model. However, in many cases you might need more than one target platform in the same solution. For example, your application may have a desktop admin part, a customer-facing web site that shares the back-end logic running on a server, and even a mobile client. In this case, you need a unified coding experience that can span all of these .NET verticals.</p>
@@ -431,7 +431,7 @@
 <p>You may come across some issues when using configuration sections that were defined in the machine.config file. For example, consider the following configuration:</p>
 <pre><code>&lt;configuration&gt; &lt;system.diagnostics&gt; &lt;switches&gt; &lt;add name=&quot;General&quot; value=&quot;4&quot; /&gt; &lt;/switches&gt; &lt;trace autoflush=&quot;true&quot; indentsize=&quot;2&quot;&gt; &lt;listeners&gt; &lt;add name=&quot;myListener&quot; type=&quot;System.Diagnostics.TextWriterTraceListener, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; initializeData=&quot;MyListener.log&quot; traceOutputOptions=&quot;ProcessId, LogicalOperationStack, Timestamp, ThreadId, Callstack, DateTime&quot; /&gt; &lt;/listeners&gt; &lt;/trace&gt; &lt;/system.diagnostics&gt; &lt;/configuration&gt;
 </code></pre>
-<p>If you take this configuration to a .NET app, you’ll get an exception:</p>
+<p>If you take this configuration to a .NET app, you'll get an exception:</p>
 <p>Unrecognized configuration section System.Diagnostics</p>
 <p>This exception occurs because that section and the assembly responsible for handling that section was defined in the machine.config file, which now doesn't exist.</p>
 <p>To easily fix the issue, you can copy the section definition from your old machine.config to your new configuration file:</p>
@@ -563,9 +563,9 @@
 <p>In this section, you can find a walkthrough on how to integrate Toast Notifications in an existing WPF application. Although it's simple from the code perspective, it helps illustrate the whole process. Notifications are one of the many available WinRT APIs available that you can use in .NET app. In this case, the API requires a Package Identity. This process is more straightforward if the APIs don't require Package Identity.</p>
 <p>Let's take an existing WPF sample app that reads files and shows its contents on the screen. The goal is to display a Toast Notification when the application starts.</p>
 <p>Notification Class (Winc https://docs.microsoft.com/en-w//Uwp/apv/w</p>
-<p>•E File Loaded: C:\Users\martafuentes\Desktop\TestFile.txt</p>
+<p>·E File Loaded: C:\Users\martafuentes\Desktop\TestFile.txt</p>
 <p>Microsoft</p>
-<p>Clear •</p>
+<p>Clear ·</p>
 <p>Wrao Content indows ut notifications not/fication</p>
 <p>Windows Dev Center UP appr</p>
 <p>Drop a single file below Ep</p>
@@ -577,13 +577,13 @@
 <p>Window Ul Notifications</p>
 <p>AdaptiveNotificationContent</p>
 <p>&gt; AdaptiveNobficationTest</p>
-<p>• BadgeNotification</p>
+<p>· BadgeNotification</p>
 <p>Badge Template Type</p>
 <p>&gt; Badgedpdate Manager</p>
 <p>» BadgeLpdateManagerfortiser</p>
 <p>&gt; BadgeUpdater</p>
-<p>• AdaptiveNotificationContent</p>
-<p>• KnownAdaptiveNotificationkints</p>
+<p>· AdaptiveNotificationContent</p>
+<p>· KnownAdaptiveNotificationkints</p>
 <ul>
 <li>
 </li>
@@ -603,10 +603,10 @@
 <p>Our sample will use the Windows.UI.Notifications.Notification API that requires a packaged identity:</p>
 <!-- image -->
 <p>To access the WinRT API, add a reference to the Microsoft.Windows.SDK.Contracts NuGet package and this package will do the magic behind the scenes (see details at https://blogs.windows.com/windowsdeveloper/2019/04/30/calling-windows-10-apis-from-a-desktopapplication-just-got-easier/).</p>
-<p>You’re now prepared to start adding some code.</p>
+<p>You're now prepared to start adding some code.</p>
 <!-- image -->
 <p>› KnownAdaptiveNotificationTextStyles</p>
-<p>• Known Notification®indings</p>
+<p>· Known Notification®indings</p>
 <ul>
 <li>Notification</li>
 </ul>
@@ -614,7 +614,7 @@
 <ul>
 <li>Download PDF</li>
 </ul>
-<p>• Escribe aqui para buscar</p>
+<p>· Escribe aqui para buscar</p>
 <p>Notification Class</p>
 <p>Windows 10 requirements</p>
 <p>Device turniy</p>
@@ -624,13 +624,13 @@
 <p>Constructors</p>
 <p>X</p>
 <p>Add New Project</p>
-<p>• Recent</p>
+<p>· Recent</p>
 <p>4 Installed</p>
-<p>• Visual C#</p>
+<p>· Visual C#</p>
 <p>Get Started</p>
 <p>Windows Desktop</p>
-<p>• Web</p>
-<p>• Office/SharePoint</p>
+<p>· Web</p>
+<p>· Office/SharePoint</p>
 <p>.NET Core</p>
 <p>.NET Standard</p>
 <p>Android</p>
@@ -643,9 +643,9 @@
 <p>Test</p>
 <p>WCF</p>
 <p>Workflow</p>
-<p>• Azure Data Lake</p>
+<p>· Azure Data Lake</p>
 <p>Sort by: Default</p>
-<p>• # E</p>
+<p>· # E</p>
 <p>Blank App (Universal Windows)</p>
 <p>Class Library (Universal Windows)</p>
 <p>Visual C#</p>
@@ -681,11 +681,11 @@
 <p>C*</p>
 <p>ShowFileWpf</p>
 <p>/ Properties</p>
-<p>•-• References</p>
+<p>·-· References</p>
 <p>App.config</p>
 <p>App.xaml</p>
-<p>• ShowFileWPFApp.Package</p>
-<p>• Apalicatinna</p>
+<p>· ShowFileWPFApp.Package</p>
+<p>· Apalicatinna</p>
 <p>Im</p>
 <p>Reference Manager - ShowFileWPFApp.Package</p>
 <p>4 Projects</p>
@@ -713,7 +713,7 @@
 </li>
 </ol>
 <p>Application</p>
-<p>• Wao Contene</p>
+<p>· Wao Contene</p>
 <p>Search Solution Explorer (Ctrl+*) |</p>
 <p>Small Tie</p>
 <p>Medium Tie</p>
@@ -724,22 +724,22 @@
 <p>Badge Loge</p>
 <p>ShowFileWpf</p>
 <p>Properties</p>
-<p>•-• References</p>
+<p>·-· References</p>
 <ul>
 <li>App.config</li>
 </ul>
-<p>• Display Settings</p>
+<p>· Display Settings</p>
 <p>Short name</p>
-<p>• App.xaml</p>
-<p>• ₩ App.xaml.cs</p>
-<p>• • MainWindow.xaml</p>
+<p>· App.xaml</p>
+<p>· ₩ App.xaml.cs</p>
+<p>· · MainWindow.xaml</p>
 <p>&quot;Shoef11mpf-exe&quot;</p>
 <p>.(Hi432): Loaded Ci1Mindows15ysM0/41MSn/etaostaiMind</p>
-<p>• # ShowFileWPFApp.Package show Steief.exe</p>
+<p>· # ShowFileWPFApp.Package show Steief.exe</p>
 <p>Applications</p>
 <p>(41432)1 Loades C/145n00515y5400641450</p>
 <p>mmedate Window</p>
-<p>• Image</p>
+<p>· Image</p>
 <p>Escribe aqui para buscar</p>
 <p>Packa</p>
 <p>P - 5 ×</p>
@@ -751,11 +751,11 @@
 <!-- image -->
 <p>Let's generate the package so you can install your app. Right click on Store &gt; Create App Packages .</p>
 <p>El LargeTaescale-200 pag roperties</p>
-<p>• 0 x</p>
+<p>· 0 x</p>
 <p>1627</p>
-<p>•</p>
+<p>·</p>
 <p>P</p>
-<p>• O</p>
+<p>· O</p>
 <p>Diagnostic Tools Properties</p>
 <p>Dick Land (00-2</p>
 <p>Build</p>
@@ -780,7 +780,7 @@
 <p>Remove</p>
 <p>Rename</p>
 <p>Unload Project</p>
-<p>• Open Folder in File Explorer</p>
+<p>· Open Folder in File Explorer</p>
 <p>Properties</p>
 <p>Solution Explorer</p>
 <p>Search Solution Explorer (Ctrl+ )</p>
@@ -817,7 +817,7 @@
 <p>Neutral x86</p>
 <p>x64</p>
 <p>ARM</p>
-<p>• Include full PDB symbol files, if any, to enable crash analytics for the app. Learn More</p>
+<p>· Include full PDB symbol files, if any, to enable crash analytics for the app. Learn More</p>
 <!-- image -->
 <p>Finally, create the package by clicking on Create .</p>
 <h2>XAML Islands</h2>
@@ -884,7 +884,7 @@
 <p>The following article demonstrates how to host a UWP XAML control from the WinUI 2 library: https://learn.microsoft.com/windows/apps/desktop/modernize/host-custom-control-with-xamlislands</p>
 <h2>Do you need XAML Islands</h2>
 <p>XAML Islands are intended for existing Win32 apps that want to improve their user experience by leveraging new UWP controls and behaviors without a full rewrite of the app. You could already leverage Windows 10 and Windows 11 APIs, but up until XAML Islands, only non-UI related APIs.</p>
-<p>If you’re developing a new Windows App, a UWP App is probably the right approach.</p>
+<p>If you're developing a new Windows App, a UWP App is probably the right approach.</p>
 <h2>The road ahead XAML Islands: WinUI 3.0</h2>
 <p>Since Windows 8, the Windows UI platform, including the XAML UI framework, visual composition layer, and input processing has been shipped as an integral part of Windows. This means that to benefit from the latest improvements on UI technologies, you must upgrade to the latest version of the UI, slowing down the pace of innovation when you develop your apps. To decouple these two evolution cycles and foster innovation, Microsoft is actively working on the WinUI project.</p>
 <p>Starting with WinUI 2 in 2018, Microsoft started shipping some new XAML UI controls and features as separate NuGet packages that build on top of the UWP SDK.</p>
@@ -925,13 +925,13 @@
 <p>General</p>
 <p>Win32 Resources</p>
 <p>Packaging</p>
-<p>• Global Usings</p>
-<p>• Build</p>
-<p>• Package</p>
-<p>• Code Analysis</p>
-<p>• Debug</p>
-<p>• Resources</p>
-<p>• Settings</p>
+<p>· Global Usings</p>
+<p>· Build</p>
+<p>· Package</p>
+<p>· Code Analysis</p>
+<p>· Debug</p>
+<p>· Resources</p>
+<p>· Settings</p>
 <p>Application</p>
 <!-- image -->
 <h2>Migrating from .NET Framework</h2>
@@ -945,9 +945,9 @@
 <li>Migrate Project File: .NET projects use the new SDK-style project format. Create a new project file with this format or update the one you have to use the SDK style.</li>
 <li>Fix code and build: Build the code in .NET addressing API-level differences between .NET Framework and .NET. If needed, update third-party packages to the ones that support .NET.</li>
 </ol>
-<p>B • 0 NuGet Gallery | Castle.V X</p>
+<p>B · 0 NuGet Gallery | Castle.V X</p>
 <p>&lt; &gt;</p>
-<p>• Not secure https://www.nuget.org/packages/Castle.Windsor/</p>
+<p>· Not secure https://www.nuget.org/packages/Castle.Windsor/</p>
 <p>Sign in</p>
 <ol start="4">
 <li>Run and test: There might be differences that don't show up until run time. So, don't forget to run the application and test that everything works as expected.</li>
@@ -957,10 +957,10 @@
 <p>Paket CU</p>
 <h2>Migrate packages.config file</h2>
 <p>© Project Site</p>
-<p>• Source repository</p>
-<p>• License Info</p>
-<p>• Contact owners fo Report</p>
-<p>• Download package (415.32 KB)</p>
+<p>· Source repository</p>
+<p>· License Info</p>
+<p>· Contact owners fo Report</p>
+<p>· Download package (415.32 KB)</p>
 <p>In a .NET Framework application, all references to external packages are declared in the packages.config file. In .NET, there's no longer the need to use the packages.config file. Instead, use the PackageReference property inside the project file to specify the NuGet packages for your app.</p>
 <p>System.Runtime.Loader (&gt; = 4.3.0)</p>
 <p>System.Runtime.Serialization.Formatters (&gt; = 4.3.0)</p>
@@ -971,7 +971,7 @@
 <!-- image -->
 <p>To check the package compatibility, you can use the tool https://fuget.org that offers a more detailed information about versions and dependencies.</p>
 <p>Maybe the project is referencing older package versions that don't support .NET, but you might find newer versions that do support it. So, updating packages to newer versions is generally a good</p>
-<p>• *</p>
+<p>· *</p>
 <ul>
 <li>OX</li>
 </ul>
@@ -1005,16 +1005,16 @@
 <h2>Package references</h2>
 <p>With the Migrate packages.config to PackageReference option, you can easily move your external package references to the new format as previously mentioned.</p>
 <h2>Update package references</h2>
-<p>Update the versions of the packages you’ve found to be compatible, as shown in the previous section.</p>
+<p>Update the versions of the packages you've found to be compatible, as shown in the previous section.</p>
 <h2>Fix the code and build</h2>
 <h2>Microsoft.Windows.Compatibility</h2>
 <p>If your application depends on APIs that aren't available on .NET, such as Registry or ACLs, you have to include a reference to the Microsoft.Windows.Compatibility package to add these Windowsspecific APIs. They work on .NET but aren't included as they aren't cross-platform.</p>
-<p>There’s a tool called Platform compatibility analyzer</p>
+<p>There's a tool called Platform compatibility analyzer</p>
 <p>(https://learn.microsoft.com/dotnet/standard/analyzers/platform-compat-analyzer) that helps you identify APIs that aren't compatible with your code.</p>
 <h2>Use #if directives</h2>
 <p>If you need different execution paths when targeting .NET Framework and .NET, you should use compilation constants. Add some #if directives to your code to keep the same codebase for both targets.</p>
 <h2>Technologies not available on .NET</h2>
-<p>Some technologies aren’t available on .NET, such as:</p>
+<p>Some technologies aren't available on .NET, such as:</p>
 <ul>
 <li>AppDomains</li>
 <li>Remoting</li>
@@ -1037,15 +1037,15 @@
 <p>This application shows a product catalog and allows the user to navigate, filter, and search for products. From an architecture point of view, the app relies on an external WCF service that serves as a façade to a back-end database.</p>
 <p>You can see the main application window in the following picture:</p>
 <p>eShopWinforms.csproj</p>
-<p>•y eShop WinForms</p>
+<p>·y eShop WinForms</p>
 <p>‹}xm] version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?›</p>
 <p>eSHOP</p>
 <p>OnCONTAINERS</p>
 <p>2 ‹Project ToolsVersion=&quot;15.0&quot; xmlns=&quot;http://schemas.microsoft.com/developer/msbuild/2003&quot;&gt;</p>
 <p>‹Import Project=&quot;$(MSBuildExtensionsPath) $(MSBuildToolsVersion) \Microsoft.Common.props&quot; Condition=&quot;Exists('$(MSBuildExtensionsPath)|</p>
 <p>&lt;PropertyGroup&gt;</p>
-<p>‹Configuration Condition=&quot; '(Configuration)' == '• &quot;›Debug&lt;/Configuration&gt;</p>
-<p>‹Platform Condition=&quot; 'S(Platform)' .. &quot;• &quot;›AnyCPU&lt;/Platform&gt;</p>
+<p>‹Configuration Condition=&quot; '(Configuration)' == '· &quot;›Debug&lt;/Configuration&gt;</p>
+<p>‹Platform Condition=&quot; 'S(Platform)' .. &quot;· &quot;›AnyCPU&lt;/Platform&gt;</p>
 <p>&lt;ProjectGuid&gt;(AE32909C-9EE6-4ECE-B407-D23A15A1FEED}&lt;/ProjectGuid&gt;</p>
 <p>‹OutputType›WinExe&lt;/OutputType&gt;</p>
 <p>&lt;RootNamespace&gt;eShoplinForms&lt;/RootNamespace&gt;</p>
@@ -1089,7 +1089,7 @@
 <p>‹ErrorReport›prompt‹/ErrorReport&gt;</p>
 <p>39</p>
 <p>Preview</p>
-<p>• • No issues found</p>
+<p>· · No issues found</p>
 <p>&lt;WarningLevel&gt;4&lt;/WarnineLevel&gt;</p>
 <p>Cup &lt;T&gt;</p>
 <p>Escribe aquí para buscar</p>
@@ -1209,7 +1209,7 @@
 <!-- image -->
 <p>Once the service is located, the tool reflects the API contract implemented by the service. Change the name of the namespace to be eShopServiceReference as shown in the following image:</p>
 <ul>
-<li>• IIS Express (Google Chrome) - C - • =</li>
+<li>· IIS Express (Google Chrome) - C - · =</li>
 </ul>
 <p>eShopLegacyNTier</p>
 <p>Configure WCF Web Service Reference</p>
@@ -1218,7 +1218,7 @@
 <p>Data Type Options</p>
 <p>Client Options</p>
 <!-- image -->
-<p>Select the Finish button. After a while, you’ll see the generated code.</p>
+<p>Select the Finish button. After a while, you'll see the generated code.</p>
 <p>You should see three autogenerated files:</p>
 <ol>
 <li>Getting Started: a link to GitHub to provide some information on WCF.</li>
@@ -1254,7 +1254,7 @@
 <p>This application uses a local SQL Server Express database to hold the product catalog information. This database is accessed directly from the WPF application.</p>
 <p>First, you must update the .csproj file to the new SDK style used by .NET Core applications. You'll follow the same steps described in the Windows Forms migration: you'll unload the project, open the .csproj file, update its contents, and reload the project.</p>
 <p>In this case, delete all the content of the .csproj file and replace it with the following code:</p>
-<p>•</p>
+<p>·</p>
 <p>Error List</p>
 <p>Entire Solution</p>
 <ul>
@@ -1269,7 +1269,7 @@
 <p>The type or namespace name 'SqlProvider' does not exist in the namespace 'eShop' (are you missing an assembly</p>
 <pre><code>&lt;Project Sdk=&quot;Microsoft.NET.Sdk&quot;&gt; &lt;PropertyGroup&gt; &lt;OutputType&gt;WinExe&lt;/OutputType&gt; &lt;TargetFramework&gt;net7.0-windows&lt;/TargetFramework&gt; &lt;UseWpf&gt;true&lt;/UseWpf&gt; &lt;GenerateAssemblyInfo&gt;false&lt;/GenerateAssemblyInfo&gt; &lt;/PropertyGroup&gt; &lt;/Project&gt;
 </code></pre>
-<p>If you reload the project and compile it, you’ll get the following error:</p>
+<p>If you reload the project and compile it, you'll get the following error:</p>
 <!-- image -->
 <p>Since you've deleted all the .csproj contents, you've lost a project reference specification present in the old project. You just need to add this line to the .csproj file to include the project reference back:</p>
 <!-- image -->
@@ -1281,8 +1281,8 @@
 <p>Reference Manager - eShop. ClassicWPF</p>
 <p>4 Projects</p>
 <p>Solution</p>
-<p>• Shared Projects</p>
-<p>• Browse</p>
+<p>· Shared Projects</p>
+<p>· Browse</p>
 <p>Name eShop.Server</p>
 <p>Path</p>
 <p>E: \ModernizeAppsNET...</p>
@@ -1302,7 +1302,7 @@
 <li>Lack of close collaboration culture between dev and IT teams.</li>
 <li>Lack of a solid packaging and deploying technology we can build upon.</li>
 </ul>
-<p>In fact, we’ve been living with the fact that sometimes you regret that you installed an app because:</p>
+<p>In fact, we've been living with the fact that sometimes you regret that you installed an app because:</p>
 <ul>
 <li>It ends up having some undesired side effects on your machine.</li>
 <li>Some applications that were previously installed stop working.</li>
@@ -1419,10 +1419,10 @@
 <p>File</p>
 <p>Toolbox</p>
 <p>Search Toolbox</p>
-<p>• Microsoft.Toolkit.Forms.U</p>
-<p>• Microsoft.Toolkit.Forms.U</p>
+<p>· Microsoft.Toolkit.Forms.U</p>
+<p>· Microsoft.Toolkit.Forms.U</p>
 <p>P All Windows Forms</p>
-<p>• Common Controls</p>
+<p>· Common Controls</p>
 <p>Pointer</p>
 <p>Button</p>
 <p>CheckBox</p>
@@ -1446,14 +1446,14 @@
 <p>View</p>
 <p>Project Build Debug</p>
 <p>Add New Project</p>
-<p>• Recent</p>
+<p>· Recent</p>
 <p>4 Installed</p>
 <p>4 Visual C#</p>
 <p>Search (Ctri+E)</p>
 <p>Type: Visual C#</p>
 <p>A project that creates packages</p>
 <p>To start, add a new project to your solution, select the Windows Application Packaging Project, and give it a name. Windows Universal Class Library (Universal Windows) Visual C# Windows Store</p>
-<p>• Web</p>
+<p>· Web</p>
 <p>Name:</p>
 <p>Location:</p>
 <p>Visual C#</p>
@@ -1483,11 +1483,11 @@
 <ul>
 <li>4 ×</li>
 </ul>
-<p>• P</p>
+<p>· P</p>
 <p>P</p>
 <p>Solution Explorer</p>
 <p>Search Solution Explorer (Ctrl+;)</p>
-<p>•</p>
+<p>·</p>
 <p>Solution Explorer</p>
 <!-- image -->
 <p>Right-click on the Applications folder and select the Windows Forms project you want to package from the Visual Studio solution.</p>
@@ -1516,11 +1516,11 @@
 <p>Large Tile</p>
 <p>Output</p>
 <p>Show output from: Debug</p>
-<p>The thread 0x553c has exited with code • (0x0).</p>
+<p>The thread 0x553c has exited with code · (0x0).</p>
 <p>The thread 0x2a0 has exited with code 0(0x0).</p>
 <p>The program ' [19988] Coupon. Forms. exe' has exited with code 0(0x0).</p>
 <p>Error List</p>
-<p>• This item does not support previewing.</p>
+<p>· This item does not support previewing.</p>
 <p>Output</p>
 <p>P Type here to search</p>
 <p>4 Projects</p>
@@ -1672,7 +1672,7 @@
 <!-- image -->
 <p>There you can select the different architectures you want to target as you can include as many as you want into the same MSIX package.</p>
 <p>The final step is to declare where you want to deploy the final installation assets.</p>
-<p>•</p>
+<p>·</p>
 <p>?</p>
 <p>X</p>
 <p>Create App Packages</p>
@@ -1681,8 +1681,8 @@
 <p>http://apps.contoso.com/MyUniversalApp</p>
 <p>How can I publish my application?</p>
 <p>Specify how often the application should check for updates:</p>
-<p>• Check everytime the application runs</p>
-<p>• Check every: |1</p>
+<p>· Check everytime the application runs</p>
+<p>· Check every: |1</p>
 <!-- image -->
 <p>You can choose to use a web server or a shared UNC path on your enterprise file servers. Pay attention to the settings to specify how you want to update your application. We'll cover application updates in the next section.</p>
 <p>For a detailed step-by-step guide, see Package a desktop app from source code using Visual Studio .</p>
@@ -1720,7 +1720,7 @@
 <ul>
 <li>User prompted updates: The OS shows some autogenerated nice UI to notify the user about the application it's about to install. It builds this UI based on the properties you specify on your installation files.</li>
 </ul>
-<p>•Version=&quot;2.0.0.0&quot;</p>
+<p>·Version=&quot;2.0.0.0&quot;</p>
 <ul>
 <li>Silent updates in the background. With this option, your users don't need to be aware of the updates. =· &quot;x86&quot;/&gt;</li>
 </ul>

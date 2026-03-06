@@ -6,7 +6,7 @@
 <h2>EDITION v1.2</h2>
 <p>PUBLISHED BY Microsoft Developer Division, .NET, and Azure Incubations teams A division of Microsoft Corporation One Microsoft Way Redmond, Washington 98052-6399 Copyright © 2023 by Microsoft Corporation All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher. This book is provided "as-is" and expresses the author's views and opinions. The views, opinions, and information expressed in this book, including URL and other Internet website references, may change without notice. Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred. Microsoft and the trademarks listed at https://www.microsoft.com on the "Trademarks" webpage are trademarks of the Microsoft group of companies. Mac and macOS are trademarks of Apple Inc. The Docker whale logo is a registered trademark of Docker, Inc. Used by permission. All other marks and logos are property of their respective owners. Authors: Rob Vettor, Principal Cloud Solution Architect - thinkingincloudnative.com, Microsoft Sander Molenkamp, Principal Cloud Architect/Microsoft MVP - sandermolenkamp.com , Info Support Edwin van Wijk, Principal Solution Architect/Microsoft MVP - defaultconstructor.com , Info Support Participants and Reviewers: Mark Russinovich, Azure CTO and Technical Fellow, Azure Office of CTO, Microsoft Nish Anil, Senior Program Manager, .NET team, Microsoft Mark Fussell, Principal Program Manager, Azure Incubations, Microsoft Yaron Schneider, Principal Software Engineer, Azure Incubations, Microsoft Ori Zohar, Senior Program Manager, Azure Incubations, Microsoft Editors: David Pine, Senior Content Developer, .NET team, Microsoft</p>
 <p>Maira Wenzel, Senior Program Manager, .NET team, Microsoft</p>
-<p>Steve “ardalis” Smith, Senior Architect and Trainer, NimblePros</p>
+<p>Steve "ardalis" Smith, Senior Architect and Trainer, NimblePros</p>
 <h2>Version</h2>
 <p>This guide has been written to cover the Dapr 1.9 version. .NET samples are based on .NET 7 .</p>
 <h2>Who should use this guide</h2>
@@ -603,7 +603,7 @@
 <p>database</p>
 <p>Marketing</p>
 <p>Location</p>
-<p>Just ask any ‘cool kid’: Modern, distributed systems are in, and monolithic apps are out!</p>
+<p>Just ask any 'cool kid': Modern, distributed systems are in, and monolithic apps are out!</p>
 <p>But, it's not just "cool kids." Progressive IT Leaders, corporate architects, and astute developers are echoing these same thoughts as they explore and evaluate modern distributed applications. Many have bought in. They're designing new and replatforming existing enterprise applications following the principles, patterns, and practices of distributed microservice applications.</p>
 <p>But, this evolution raises many questions…</p>
 <ul>
@@ -616,7 +616,7 @@
 <p>Figure 1 -1. Monolithic architecture.</p>
 <!-- image -->
 <p>Note how the modules for Ordering, Identity, and Marketing execute in a single-server process. Application data is stored in a shared database. Business functionality is exposed via HTML and RESTful interfaces.</p>
-<p>In many ways, monolithic apps are straightforward. They’re straightforward to:</p>
+<p>In many ways, monolithic apps are straightforward. They're straightforward to:</p>
 <ul>
 <li>Build</li>
 </ul>
@@ -913,7 +913,7 @@
 <p>Figure 2 -8. Service mesh with a side car.</p>
 <!-- image -->
 <p>The previous figure shows how messages are intercepted by a sidecar proxy that runs alongside each service. Each proxy can be configured with traffic rules specific to the service. It understands messages and can route them across your services and the outside world.</p>
-<p>So the question becomes, “Is Dapr a service mesh?”.</p>
+<p>So the question becomes, "Is Dapr a service mesh?".</p>
 <p>While both use a sidecar architecture, each technology has a different purpose. Dapr provides distributed application features. A service mesh provides a dedicated network infrastructure layer.</p>
 <p>As each works at a different level, both can work together in the same application. For example, a service mesh could provide networking communication between services. Dapr could provide application services such as state management or actor services.</p>
 <p>Figure 2-9 shows an application that implements both Dapr and service mesh technology.</p>
@@ -948,7 +948,7 @@
 <li>Initialize Dapr. This step sets up your development environment by installing the latest Dapr binaries and container images.</li>
 <li>Install the .NET 7 SDK .</li>
 </ol>
-<p>Now that Dapr is installed, it’s time to build your first Dapr application!</p>
+<p>Now that Dapr is installed, it's time to build your first Dapr application!</p>
 <h2>Build your first Dapr application</h2>
 <p>You'll start by building a simple .NET Console application that consumes the Dapr state management building block.</p>
 <h2>Create the application</h2>
@@ -1074,7 +1074,7 @@
 <p>.NET 6.0 (Long-term support)</p>
 <p>Authentication type O</p>
 <p>None</p>
-<p>• Configure for HTTPS O</p>
+<p>· Configure for HTTPS O</p>
 <p>L Enable Docker ®</p>
 <p>Docker OS O</p>
 <p>Linux</p>
@@ -1161,11 +1161,11 @@
 <p>e] MyBackEnd</p>
 <p>C# Program.cs</p>
 <p>MyFrontEnd</p>
-<p>• wwwroot</p>
-<p>• Pages</p>
-<p>• Dockerfile</p>
+<p>· wwwroot</p>
+<p>· Pages</p>
+<p>· Dockerfile</p>
 <p>C# Program.cs</p>
-<p>• C# WeatherForecast.cs</p>
+<p>· C# WeatherForecast.cs</p>
 <ul>
 <li>4 x</li>
 </ul>
@@ -1224,7 +1224,7 @@
 <p>The first example was a simple, stateful, .NET Console application that used the Dapr state management building block.</p>
 <p>The second example involved a multi-container application running in Docker. By using Visual Studio with Docker Compose, you experienced the familiar F5 debugging experience available across all .NET apps.</p>
 <p>You also got a closer look at Dapr component configuration files. They configure the actual infrastructure implementation used by the Dapr building blocks. You can use namespaces and scopes to restrict component access to particular environments and applications.</p>
-<p>In the upcoming chapters, you’ll dive deep into the building blocks offered by Dapr.</p>
+<p>In the upcoming chapters, you'll dive deep into the building blocks offered by Dapr.</p>
 <h2>References</h2>
 <ul>
 <li>Dapr documentation - Getting started</li>
@@ -1564,11 +1564,11 @@
 <li>&lt;application-id&gt; application ID of the service to call.</li>
 <li>&lt;method -name&gt; name of the method to invoke on the remote service.</li>
 </ul>
-<p>In the following example, a curl call is made to the catalog/items ‘GET’ endpoint of Service B:</p>
+<p>In the following example, a curl call is made to the catalog/items 'GET' endpoint of Service B:</p>
 <p>curl http://localhost:3500/v1.0/invoke/serviceb/method/catalog/items</p>
 <h2>Note</h2>
 <p>The Dapr APIs enable any application stack that supports HTTP or gRPC to use Dapr building blocks. Therefore, the service invocation building block can act as a bridge between protocols. Services can communicate with each other using HTTP, gRPC or a combination of both.</p>
-<p>In the next section, you’ll learn how to use the .NET SDK to simplify service invocation calls.</p>
+<p>In the next section, you'll learn how to use the .NET SDK to simplify service invocation calls.</p>
 <h2>Use the Dapr .NET SDK</h2>
 <p>The Dapr .NET SDK provides .NET developers with an intuitive and language-specific way to interact with Dapr. The SDK offers developers three ways of making remote service invocation calls:</p>
 <ol>
@@ -1624,7 +1624,7 @@
 <li>Content = JsonContent object containing the JSON-serialized order</li>
 <li>Headers.Authorization = "bearer &lt;token&gt;"</li>
 </ul>
-<p>Once you’ve got the request set up the way you want, use DaprClient.InvokeMethodAsync to send it:</p>
+<p>Once you've got the request set up the way you want, use DaprClient.InvokeMethodAsync to send it:</p>
 <pre><code>var orderConfirmation = await daprClient.InvokeMethodAsync&lt;OrderConfirmation&gt;(request);
 </code></pre>
 <p>DaprClient.InvokeMethodAsync deserializes the response to an OrderConfirmation object if the request is successful. Alternatively, you can use DaprClient.InvokeMethodWithResponseAsync to get full access to the underlying HttpResponseMessage:</p>
@@ -1958,7 +1958,7 @@
 <h2>Output bindings</h2>
 <p>Dapr also includes output binding capabilities. They enable your service to trigger an event that invokes an external resource. Again, you start by configuring a binding configuration YAML file that describes the output binding. Once in place, you trigger an event that invokes the bindings API on the Dapr sidecar of your application. Figure 8-3 shows the flow of an output binding:</p>
 <p>POST http://localhost:3500/v1.0/bindings/sms</p>
-<p>7=•</p>
+<p>7=·</p>
 <p>=</p>
 <p>=</p>
 <!-- image -->
@@ -2211,7 +2211,7 @@
 <p>To configure a state store component for use with actors, you need to append the following metadata to the state store configuration:</p>
 <pre><code>-name: actorStateStore value: "true"
 </code></pre>
-<p>Here’s a complete example for a Redis state store:</p>
+<p>Here's a complete example for a Redis state store:</p>
 <pre><code>apiVersion: dapr.io/v1alpha1 kind: Component metadata: name: statestore spec: type: state.redis version: v1 metadata: -name: redisHost value: localhost:6379 -name: redisPassword value: "" -name: actorStateStore value: "true"
 </code></pre>
 <h2>Use the Dapr .NET SDK</h2>
@@ -2225,7 +2225,7 @@
 <pre><code>public class ScoreActor : Actor, IScoreActor { public ScoreActor(ActorHost host) : base(host) { } // TODO Implement interface methods. }
 </code></pre>
 <p>The constructor in the snippet above takes a host argument of type ActorHost. The ActorHost class represents the host for an actor type within the actor runtime. You need to pass this argument to the constructor of the Actor base class. Actors also support dependency injection. Any additional arguments that you add to the actor constructor are resolved using the .NET dependency injection container.</p>
-<p>Let’s now implement the IncrementScoreAsync method of the interface:</p>
+<p>Let's now implement the IncrementScoreAsync method of the interface:</p>
 <pre><code>public Task&lt;int&gt; IncrementScoreAsync() { return StateManager.AddOrUpdateStateAsync( "score" , 1 , (key, currentScore) =&gt; currentScore + 1 ); }
 </code></pre>
 <p>In the snippet above, a single call to StateManager.AddOrUpdateStateAsync provides the full implementation for the IncrementScoreAsync method. The AddOrUpdateStateAsync method takes three arguments:</p>
@@ -2361,7 +2361,7 @@
 </ol>
 <p>The depth of telemetry is determined by the observability features of an application platform. Consider the Azure cloud. It provides a rich telemetry experience that includes all of the telemetry categories. With little configuration, Azure IaaS and PaaS services will propagate and publish telemetry to the Azure Monitor and Azure Application Insights services. Application Insights presents system logging, tracing, and problem areas with highly visual dashboards. It can even render a diagram showing the dependencies between services based on their communication.</p>
 <p>However, what if an application can't use Azure PaaS and IaaS resources? Is it still possible to take advantage of the rich telemetry experience of Application Insights? The answer is yes. A non-Azure application can import libraries, add configuration, and instrument code to emit telemetry to Azure Application Insights. However, this approach tightly couples the application to Application Insights. Moving the app to a different monitoring platform could involve expensive refactoring. Wouldn't it be great to avoid tight coupling and consume observability outside of the code?</p>
-<p>With Dapr, you can. Let’s look at how Dapr can add observability to our distributed applications.</p>
+<p>With Dapr, you can. Let's look at how Dapr can add observability to our distributed applications.</p>
 <p>Service A</p>
 <p>1</p>
 <p>Service A</p>
@@ -2467,13 +2467,13 @@
 <p>*A ENGLISH V</p>
 <p>EXPAND ALL</p>
 <p>COLLAPSE ALL</p>
-<p>• Zipkin</p>
+<p>· Zipkin</p>
 <p>Q Find a trace</p>
 <p>" Dependencies</p>
 <p>TRAFFICCONTROLSERVICE: bindings/entrycam</p>
 <p>Duration: 5.666ms Services: 1 Depth: 2 Total Spans: 2 Trace ID: 572745da4058a2f8406446420c402657</p>
 <p>^ v</p>
-<p>• TRAFFICCONTROLSERVICE</p>
+<p>· TRAFFICCONTROLSERVICE</p>
 <p>TRAFFICCONTROLSERVICE</p>
 <p>«</p>
 <p>Figure 10 -6. Zipkin trace details.</p>
@@ -2667,7 +2667,7 @@
 <p>Total CPU usage (kernel and user)</p>
 <p>Heap Memory usage in bytes</p>
 <p>1h 4</p>
-<p>• Last 5 minutes</p>
+<p>· Last 5 minutes</p>
 <p>Number of GO routines</p>
 <p>5s v</p>
 <table>
@@ -2751,7 +2751,7 @@
 <p>The dashboard also shows the configured components (and their configuration) for an application:</p>
 <p>:::image type="content" source="./media/observability/dapr-dashboard-components.png" alttext="Dapr dashboard components":::</p>
 <p>Figure 10 -11. Dapr dashboard components.</p>
-<p>• Zipkin</p>
+<p>· Zipkin</p>
 <p>Q, Find a trace</p>
 <p>*' Dependencies</p>
 <p>TRAFFICCONTROLSERVICE: bindings/exitcam</p>
@@ -2806,7 +2806,7 @@
 <p>Dapr provides different types of telemetry, including distributed tracing, logging, metrics, and health status.</p>
 <p>Dapr only produces telemetry for the Dapr system services and sidecars. Telemetry from your application code isn't automatically included. You can however use a specific SDK like the OpenTelemetry SDK for .NET to emit telemetry from your application code.</p>
 <p>Dapr telemetry is produced in an open-standards based format so that it can be ingested by a large set of available monitoring tools. Examples include Zipkin, Azure Application Insights, the ELK Stack, New Relic, and Grafana. See Monitor your application with Dapr in the Dapr documentation for tutorials on how to monitor your Dapr applications with specific monitoring back ends.</p>
-<p>You’ll need a telemetry scraper that ingests telemetry and publishes it to the monitoring back end.</p>
+<p>You'll need a telemetry scraper that ingests telemetry and publishes it to the monitoring back end.</p>
 <p>Dapr can be configured to emit structured logging. Structured logging is favored as it can be indexed by back-end monitoring tools. Indexed logging enables users to execute rich queries when searching through the logging.</p>
 <p>Dapr offers a dashboard that presents information about the Dapr services and configuration.</p>
 <h2>References</h2>
@@ -2832,7 +2832,7 @@
 <li>An API key for calling an external web API.</li>
 <li>A client certificate for authenticating to an external system.</li>
 </ul>
-<p>Secrets must be carefully managed so that they’re never disclosed outside of the application.</p>
+<p>Secrets must be carefully managed so that they're never disclosed outside of the application.</p>
 <p>Not long ago, it was popular to store application secrets in a configuration file inside the application codebase. .NET developers will fondly recall the web.config file. While simple to implement, integrating secrets to along with code was far from secure. A common misstep was to include the file when pushing to a public GIT repository, exposing the secrets to the world.</p>
 <p>A widely accepted methodology for constructing modern distributed applications is The TwelveFactor App. It describes a set of principles and best practices. Its third factor prescribes that configuration and secrets be externalized outside of the code base.</p>
 <p>To address this concern, the .NET platform includes a Secret Manager feature that stores sensitive data in a physical folder outside of the project tree. While secrets are outside of source control, this feature doesn't encrypt data. It's designed for development purposes only.</p>
@@ -3039,7 +3039,7 @@
 <p>When running in Azure Kubernetes Service (AKS), it's preferable to use an Azure Managed Identity for authenticating against Azure Key Vault. Managed identities are outside of the scope of this book, but explained in the Azure Key Vault with managed identities documentation.</p>
 <h2>Scope secrets</h2>
 <p>Secret scopes allow you to control which secrets your application can access. You configure scopes in a Dapr sidecar configuration file. The Dapr configuration documentation provides instructions for scoping secrets.</p>
-<p>Here’s an example of a Dapr sidecar configuration file that contains secret scopes:</p>
+<p>Here's an example of a Dapr sidecar configuration file that contains secret scopes:</p>
 <pre><code>apiVersion: dapr.io/v1alpha1 kind: Configuration metadata: name: dapr-config namespace: eshop spec: tracing: samplingRate: "1" secrets: scopes: -storeName: eshop-azurekv-secret-store defaultAccess: allow deniedSecrets: ["redisPassword" , "apiKey"]
 </code></pre>
 <p>You specify scopes per secret store. In the above example, the secret store is named eshop-azurekvsecret -store. You configure access to secrets using the following properties:</p>
@@ -3113,7 +3113,7 @@
 </code></pre>
 <p>The component is also named trafficcontrol-secrets. Secrets are stored as Base64 encoded strings.</p>
 <h2>Important</h2>
-<p>Base64 representations encode, but do not encrypt data. Base64 isn’t secure for production scenarios.</p>
+<p>Base64 representations encode, but do not encrypt data. Base64 isn't secure for production scenarios.</p>
 <p>The following paragraphs describe how secrets are used in the Traffic Control sample application.</p>
 <h2>SMTP server credentials</h2>
 <p>Examine the email.yaml component configuration file located in the dapr/components folder:</p>
@@ -3208,7 +3208,7 @@
 <ul>
 <li></li>
 </ul>
-<p>• Docker Host</p>
+<p>· Docker Host</p>
 <p>Identity microservice (STS+users)</p>
 <p>SQL Server database</p>
 <p>API Gateways/BFF Catalog microservice SQL Server</p>
@@ -3432,7 +3432,7 @@
 </code></pre>
 <pre><code>await _eventBus.PublishAsync(new OrderStatusChangedToSubmittedIntegrationEvent( OrderId, OrderStatus.Submitted . Name , buyerId, buyerEmail)); }
 </code></pre>
-<p>There’s a lot going on in the Submit method:</p>
+<p>There's a lot going on in the Submit method:</p>
 <ol>
 <li>The method takes the given arguments to create an OrderState object and saves it in the actor state.</li>
 <li>The method saves the current status of the process (OrderStatus.Submitted) in the actor state.</li>

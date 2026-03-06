@@ -30,7 +30,7 @@
 <p>This book is for .NET MAUI developers that are already familiar with the framework, but that are looking for guidance on architecture and implementation when building enterprise applications. This book can help developers solve common problems using tried and true patterns.</p>
 <h2>How to use the book</h2>
 <p>This book focuses on building cross-platform enterprise apps using .NET MAUI. As such, it should be read in its entirety to provide a foundation of understanding such apps and their technical considerations. The book, along with its sample app, can also serve as a starting point or reference for creating a new enterprise app. Use the associated sample app as a template for the new app, or to see how to organize an app's component parts. Then, refer back to this guide for architectural guidance. You can find the sample app on GitHub .</p>
-<h2>What this book doesn’t cover</h2>
+<h2>What this book doesn't cover</h2>
 <p>This book is aimed at readers who are already familiar with .NET MAUI. It does cover some concepts of .NET MAUI to help better illustrate the topic, but it does not cover most controls and concepts in any detail. For general guidance on building a new .NET MAUI app, please refer to the Building your first app guide in the .NET MAUI documentation.</p>
 <h2>Additional resources</h2>
 <p>For official .NET MAUI content, see .NET MAUI docs. .NET MAUI is developed as an open-source project and is available on GitHub at dotnet/maui. For code samples developed with .NET MAUI, see the dotnet/maui -samples repo.</p>
@@ -519,7 +519,7 @@
 <p>This eBook provides guidance on building cross-platform enterprise apps using .NET MAUI. .NET MAUI is a cross -platform UI toolkit that allows developers to easily create native user interface layouts that can be shared across platforms, including iOS, macOS, Android, and Windows. It provides a comprehensive solution for Business to Employee (B2E), Business to Business (B2B), and Business to Consumer (B2C) apps, providing the ability to share code across all target platforms and helping to lower the total cost of ownership (TCO).</p>
 <p>The guide provides architectural guidance for developing adaptable, maintainable, and testable .NET MAUI enterprise apps. Guidance is provided on how to implement MVVM, dependency injection, navigation, validation, and configuration management, while maintaining loose coupling. In addition, there's also guidance on performing authentication and authorization with IdentityServer, accessing data from containerized microservices, and unit testing.</p>
 <p>The guide comes with source code for the eShop multi-platform app, and source code for the eShop reference app. The eShop multi-platform app is a cross-platform enterprise app developed using .NET MAUI, which connects to a series of containerized microservices known as the eShop reference app. However, the eShop multi-platform app can be configured to consume data from mock services for those who wish to avoid deploying the containerized microservices.</p>
-<h2>What’s left out of this guide’s scope</h2>
+<h2>What's left out of this guide's scope</h2>
 <p>This guide is aimed at readers who are already familiar with .NET MAUI. For a detailed introduction to .NET MAUI, see the .NET MAUI documentation .</p>
 <h2>Who should use this guide</h2>
 <p>The audience for this guide is mainly developers and architects who would like to learn how to architect and implement cross-platform enterprise apps using .NET MAUI.</p>
@@ -1171,7 +1171,7 @@
 <p>IValidity</p>
 <h2>Validation</h2>
 <p>&lt;T&gt;</p>
-<p>•</p>
+<p>·</p>
 <p>derives from</p>
 <p>INotifyPropertyChanged</p>
 <p>ExtendedBindable</p>
@@ -1456,7 +1456,7 @@
 <p>Microservices offer an approach to application development and deployment that's suited to the agility, scale, and reliability requirements of modern cloud applications. One of the main advantages of microservices is that they can be scaled-out independently, which means that a specific functional area can be scaled that requires more processing power or network bandwidth to support demand without unnecessarily scaling areas of the application that are not experiencing increased demand.</p>
 <p>A container is an isolated, resource-controlled, and portable operating environment where an application can run without touching the resources of other containers or the host. Enterprises are increasingly adopting containers when implementing microservice-based applications, and Docker has become the standard container implementation that most software platforms and cloud vendors have adopted.</p>
 <p>UpdateUser command</p>
-<p>•</p>
+<p>·</p>
 <p>Database</p>
 <p>Basket Microservice</p>
 <h2>Accessing remote data</h2>
@@ -1562,7 +1562,7 @@
 <p>The performance of an app can be improved by caching frequently accessed data to fast storage that's located close to the app. If the fast storage is located closer to the app than the original source, then caching can significantly improve response times when retrieving data.</p>
 <p>The most common form of caching is read-through caching, where an app retrieves data by referencing the cache. If the data isn't in the cache, it's retrieved from the data store and added to the cache. Apps can implement read-through caching with the cache-aside pattern. This pattern determines whether the item is currently in the cache. If the item isn't in the cache, it's read from the data store and added to the cache. For more information, see the Cache -Aside pattern on Microsoft Docs.</p>
 <h2>Tip</h2>
-<p>Cache data that’s read frequently and changes infrequently.</p>
+<p>Cache data that's read frequently and changes infrequently.</p>
 <p>This data can be added to the cache on demand the first time it is retrieved by an app. This means that the app needs to fetch the data only once from the data store, and that subsequent access can be satisfied by using the cache.</p>
 <p>Distributed applications, such as the eShop reference application, should provide either or both of the following caches:</p>
 <ul>
@@ -1837,7 +1837,7 @@
 <p>Web API</p>
 <p>Identity Microservice (STS+Users)</p>
 <p>Web API</p>
-<p>•</p>
+<p>·</p>
 <p>SQL Server database</p>
 <p>database</p>
 <p>Container</p>

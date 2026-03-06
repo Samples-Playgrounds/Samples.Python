@@ -1,4 +1,4 @@
-name: “Security and Quality”
+name: "Security and Quality"
 
 **Figure 5:** Create a new file.
 

@@ -614,7 +614,7 @@
 <p>All</p>
 <p>V</p>
 <p>[ADD TO CART 1</p>
-<p>•NET BOT BLACK SWEATSHIRT</p>
+<p>·NET BOT BLACK SWEATSHIRT</p>
 <p>Figure 2 -1. eShopOnWeb</p>
 <!-- image -->
 <h2>Reference Application</h2>
@@ -809,7 +809,7 @@
 <p>In a monolithic application, we can apply the single responsibility principle at a high level to the layers in the application. Presentation responsibility should remain in the UI project, while data access responsibility should be kept within an infrastructure project. Business logic should be kept in the application core project, where it can be easily tested and can evolve independently from other responsibilities.</p>
 <p>When this principle is applied to application architecture and taken to its logical endpoint, you get microservices. A given microservice should have a single responsibility. If you need to extend the behavior of a system, it's usually better to do it by adding additional microservices, rather than by adding responsibility to an existing one.</p>
 <p>Learn more about microservices architecture</p>
-<h2>Don’t repeat yourself (DRY)</h2>
+<h2>Don't repeat yourself (DRY)</h2>
 <p>The application should avoid specifying behavior related to a particular concept in multiple places as this practice is a frequent source of errors. At some point, a change in requirements will require changing this behavior. It's likely that at least one instance of the behavior will fail to be updated, and the system will behave inconsistently.</p>
 <p>Rather than duplicating logic, encapsulate it in a programming construct. Make this construct the single authority over this behavior, and have any other part of the application that requires this behavior use the new construct.</p>
 <h2>Note</h2>
@@ -835,7 +835,7 @@
 <li>Bounded Context</li>
 </ul>
 <h2>Common web application architectures</h2>
-<p>“If you think good architecture is expensive, try bad architecture.” - Brian Foote and Joseph Yoder</p>
+<p>"If you think good architecture is expensive, try bad architecture." - Brian Foote and Joseph Yoder</p>
 <p>Most traditional .NET applications are deployed as single units corresponding to an executable or a single web application running within a single IIS appdomain. This approach is the simplest deployment model and serves many internal and smaller public applications very well. However, even given this single unit of deployment, most non-trivial business applications benefit from some logical separation into several layers.</p>
 <h2>What is a monolithic application?</h2>
 <p>A monolithic application is one that is entirely self-contained, in terms of its behavior. It may interact with other services or data stores in the course of performing its operations, but the core of its behavior runs within its own process and the entire application is typically deployed as a single unit. If such an application needs to scale horizontally, typically the entire application is duplicated across multiple servers or virtual machines.</p>
@@ -847,8 +847,8 @@
 <p>Search Solution Explorer (Ctri+:) |</p>
 <p>a] Solution 'MonolithSample' (1 project)</p>
 <p>4 5 MonolithSample</p>
-<p>• Connected Services</p>
-<p>• Dependencies</p>
+<p>· Connected Services</p>
+<p>· Dependencies</p>
 <ul>
 <li>
 <p>Properties</p>
@@ -857,24 +857,24 @@
 <p>wwwroot</p>
 </li>
 </ul>
-<p>• Controllers</p>
-<p>• Data</p>
-<p>• Migrations</p>
-<p>4 • Models i deletonocontes</p>
+<p>· Controllers</p>
+<p>· Data</p>
+<p>· Migrations</p>
+<p>4 · Models i deletonocontes</p>
 <p>I AccountViewModels</p>
 <p>I ManageViewModels co ApplicationUser.cs</p>
 <ul>
-<li>• Services</li>
+<li>· Services</li>
 </ul>
-<p>C• IEmailSender.cs c• ISmsSender.cs</p>
+<p>C· IEmailSender.cs c· ISmsSender.cs</p>
 <p>C MessageServices.cs</p>
 <p>] Views</p>
 <p>Account</p>
 <p>Home</p>
-<p>• Manage</p>
+<p>· Manage</p>
 <p>I Shared</p>
-<p>•_Viewimports.cshtml</p>
-<p>•_ViewStart.cshtml y2 app.config</p>
+<p>·_Viewimports.cshtml</p>
+<p>·_ViewStart.cshtml y2 app.config</p>
 <p>IT appsettings.json fT bower.json</p>
 <p>bundleconfig.json c* Program.cs</p>
 <p>C" Startup.cs</p>
@@ -909,21 +909,21 @@
 <p>sTc</p>
 <p>D / ca ApplicationCore</p>
 <p>4 [ca) Infrastructure</p>
-<p>• == Dependencies</p>
+<p>· == Dependencies</p>
 <p>Migrations</p>
 <p>D + C" CatalogContext.cs</p>
 <p>D + C" CatalogContextSeed.cs</p>
 <p>4 › Web</p>
-<p>• Connected Services</p>
-<p>• Dependencies</p>
-<p>• a J Properties</p>
-<p>• a wwwroot</p>
+<p>· Connected Services</p>
+<p>· Dependencies</p>
+<p>· a J Properties</p>
+<p>· a wwwroot</p>
 <p>Controllers</p>
 <p>Pics</p>
 <p>Services</p>
 <p>ViewModels</p>
 <p>Views adJ appsettings.json</p>
-<p>• adJ bower.json adJ bundleconfig.json</p>
+<p>· adJ bower.json adJ bundleconfig.json</p>
 <p>Visual Studio</p>
 <p>D a C" CatalogSettings.cs</p>
 <p>D a c" Program.cs</p>
@@ -973,7 +973,7 @@
 <ul>
 <li>
 <ul>
-<li>• x</li>
+<li>· x</li>
 </ul>
 </li>
 </ul>
@@ -989,7 +989,7 @@
 <p>The eShopOnWeb reference application uses the Clean Architecture approach in organizing its code into projects. You can find a solution template you can use as a starting point for your own ASP.NET Core solutions in the ardalis/cleanarchitecture GitHub repository or by installing the template from NuGet .</p>
 <p>Clean architecture puts the business logic and application model at the center of the application. Instead of having business logic depend on data access or other infrastructure concerns, this dependency is inverted: infrastructure and implementation details depend on the Application Core. This functionality is achieved by defining abstractions, or interfaces, in the Application Core, which are then implemented by types defined in the Infrastructure layer. A common way of visualizing this architecture is to use a series of concentric circles, similar to an onion. Figure 5-7 shows an example of this style of architectural representation.</p>
 <ul>
-<li>• x</li>
+<li>· x</li>
 </ul>
 <p>Clean Architecture Layers (Onion view)</p>
 <p>User Interface</p>
@@ -1188,7 +1188,7 @@
 </li>
 </ul>
 <h2>Common client -side web technologies</h2>
-<p>“Websites should look good from the inside and out.” - Paul Cookson</p>
+<p>"Websites should look good from the inside and out." - Paul Cookson</p>
 <p>ASP.NET Core applications are web applications and they typically rely on client-side web technologies like HTML, CSS, and JavaScript. By separating the content of the page (the HTML) from its layout and styling (the CSS), and its behavior (via JavaScript), complex web apps can leverage the Separation of Concerns principle. Future changes to the structure, design, or behavior of the application can be made more easily when these concerns are not intertwined.</p>
 <p>While HTML and CSS are relatively stable, JavaScript, by means of the application frameworks and utilities developers work with to build web-based applications, is evolving at breakneck speed. This chapter looks at a few ways that JavaScript is used by web developers and provides a high-level overview of the Angular and React client-side libraries.</p>
 <h2>Note</h2>
@@ -1413,7 +1413,7 @@
 <p>The end result of this approach is for controllers to be much smaller and focused primarily on routing and model binding, while individual handlers are responsible for the specific tasks needed by a given endpoint. This approach can also be achieved without MediatR by using the ApiEndpoints NuGet package, which attempts to bring to API controllers the same benefits Razor Pages brings to viewbased controllers.</p>
 <h2>References – – Mapping Requests to Responses</h2>
 <ul>
-<li>•</li>
+<li>·</li>
 <li>Routing to Controller Actions</li>
 </ul>
 <p>https://learn.microsoft.com/aspnet/core/mvc/controllers/routing</p>
@@ -1426,7 +1426,7 @@
 </ul>
 <p>https://learn.microsoft.com/aspnet/core/mvc/models/validation</p>
 <ul>
-<li>•</li>
+<li>·</li>
 <li>Filters</li>
 </ul>
 <p>https://learn.microsoft.com/aspnet/core/mvc/controllers/filters</p>
@@ -1469,8 +1469,8 @@
 <h2>Feature organization</h2>
 <p>By default, ASP.NET Core applications organize their folder structure to include Controllers and Views, and frequently ViewModels. Client-side code to support these server-side structures is typically stored separately in the wwwroot folder. However, large applications may encounter problems with this organization, since working on any given feature often requires jumping between these folders. This gets more and more difficult as the number of files and subfolders in each folder grows, resulting in a great deal of scrolling through Solution Explorer. One solution to this problem is to organize application code by feature instead of by file type. This organizational style is typically referred to as feature folders or feature slices (see also: Vertical Slices).</p>
 <p>ASP.NET Core MVC supports Areas for this purpose. Using areas, you can create separate sets of Controllers and Views folders (as well as any associated models) in each Area folder. Figure 7-1 shows an example folder structure, using Areas.</p>
-<p>• 8E</p>
-<p>• B</p>
+<p>· 8E</p>
+<p>· B</p>
 <p>wwwroot</p>
 <p>« 8</p>
 <p>Areas</p>
@@ -1480,17 +1480,17 @@
 <p>8</p>
 <p>8 Search</p>
 <p>Games</p>
-<p>• &amp; D</p>
+<p>· &amp; D</p>
 <p>Identity</p>
-<p>• 82] Configuration</p>
+<p>· 82] Configuration</p>
 <p>Controllers</p>
-<p>• 8[</p>
+<p>· 8[</p>
 <p>Extensions</p>
-<p>• &amp;C Features</p>
-<p>• BC HealthChecks</p>
-<p>• &amp;C Interfaces</p>
-<p>• 82] Pages</p>
-<p>• 8[</p>
+<p>· &amp;C Features</p>
+<p>· BC HealthChecks</p>
+<p>· &amp;C Interfaces</p>
+<p>· 82] Pages</p>
+<p>· 8[</p>
 <p>Services</p>
 <p>ViewModels</p>
 <p>Views</p>
@@ -1699,7 +1699,7 @@
 <p>Consider ways in which your applications communicate directly with client applications, and consider whether real -time communication would improve your app's user experience.</p>
 <h2>References – – Client Communication</h2>
 <ul>
-<li>•</li>
+<li>·</li>
 <li>ASP.NET Core SignalR</li>
 </ul>
 <p>https://github.com/dotnet/aspnetcore/tree/main/src/SignalR</p>
@@ -1729,7 +1729,7 @@
 <p>DDD also recommends the use of the Clean Architecture discussed previously, allowing for loose coupling, encapsulation, and code that can easily be verified using unit tests.</p>
 <h2>When should you apply DDD</h2>
 <p>DDD is well suited to large applications with significant business (not just technical) complexity. The application should require the knowledge of domain experts. There should be significant behavior in the domain model itself, representing business rules and interactions beyond simply storing and retrieving the current state of various records from data stores.</p>
-<h2>When shouldn’t you apply DDD</h2>
+<h2>When shouldn't you apply DDD</h2>
 <p>DDD involves investments in modeling, architecture, and communication that may not be warranted for smaller applications or applications that are essentially just CRUD (create/read/update/delete). If you choose to approach your application following DDD, but find that your domain has an anemic model with no behavior, you may need to rethink your approach. Either your application may not</p>
 <p>Internet</p>
 <p>HTTP</p>
@@ -1757,7 +1757,7 @@
 <p>HTTPS</p>
 <p>Reverse proxy server:</p>
 <p>IIS, Nginx, Apache</p>
-<p>•</p>
+<p>·</p>
 <p>ASP.NET Core application</p>
 <p>HttpContext</p>
 <p>Application code</p>
@@ -1795,7 +1795,7 @@
 <p>HTTP</p>
 <p>Kestrel</p>
 <h2>Working with Data in ASP.NET Core Apps</h2>
-<p>“Data is a precious thing and will last longer than the systems themselves.”</p>
+<p>"Data is a precious thing and will last longer than the systems themselves."</p>
 <p>Tim Berners -Lee</p>
 <p>Data access is an important part of almost any software application. ASP.NET Core supports various data access options, including Entity Framework Core (and Entity Framework 6 as well), and can work with any .NET data access framework. The choice of which data access framework to use depends on the application's needs. Abstracting these choices from the ApplicationCore and UI projects, and encapsulating implementation details in Infrastructure, helps to produce loosely coupled, testable software.</p>
 <h2>Entity Framework Core (for relational databases)</h2>
@@ -2007,9 +2007,9 @@
 <ul>
 <li></li>
 </ul>
-<p>• localhost:44315/Admin eShopOnWeb Admin</p>
+<p>· localhost:44315/Admin eShopOnWeb Admin</p>
 <p>Home admin@microsoft.com</p>
-<p>• Logout</p>
+<p>· Logout</p>
 <p>Manage Product Catalog</p>
 <pre><code>// configure CancellationToken and add entry to cache var cts = new CancellationTokenSource(); _cache . Set("cts" , cts); _cache . Set(cacheKey , itemToCache , new CancellationChangeToken(cts . Token)); // elsewhere, expire the cache by cancelling the token\ _cache . Get&lt;CancellationTokenSource&gt;("cts").Cancel(); Id Name Description Price 12 Actions
 </code></pre>
@@ -2076,7 +2076,7 @@
 <p>5ГC</p>
 <p>P 8</p>
 <p>C#</p>
-<p>• 8@</p>
+<p>· 8@</p>
 <p>C#</p>
 <p>8</p>
 <p>Test projects can be organized however works best for you. It's a good idea to separate tests by type (unit test, integration test) and by what they are testing (by project, by namespace). Whether this separation consists of folders within a single test project, or multiple test projects, is a design decision. One project is simplest, but for large projects with many tests, or in order to more easily run different sets of tests, you might want to have several different test projects. Many teams organize test projects based on the project they are testing, which for applications with more than a few projects can result in a large number of test projects, especially if you still break these down according to what kind of tests are in each project. A compromise approach is to have one project per kind of test, per application, with folders inside the test projects to indicate the project (and class) being tested.</p>
@@ -2108,7 +2108,7 @@
 <li>CatalogControllerGetImage.ReturnsFileResultWithBytesGivenSuccess</li>
 <li>CatalogControllerGetImage.ReturnsNotFoundResultGivenImageMissingException</li>
 </ul>
-<p>A variation of this approach ends each test class name with “Should” and modifies the tense slightly:</p>
+<p>A variation of this approach ends each test class name with "Should" and modifies the tense slightly:</p>
 <ul>
 <li>CatalogControllerGetImageShould . CallImageServiceWithId</li>
 <li>CatalogControllerGetImageShould . LogWarningGivenImageMissingException</li>
@@ -2119,23 +2119,23 @@
 <p>tests</p>
 <p>« 8</p>
 <p>FunctionalTests</p>
-<p>• do</p>
+<p>· do</p>
 <p>Dependencies</p>
 <p>PublicApi</p>
 <p>Some teams find the second naming approach clearer, though slightly more verbose. In any case, try to use a naming convention that provides insight into test behavior, so that when one or more tests fail, it's obvious from their names what cases have failed. Avoid naming your tests vaguely, such as ControllerTests.Test1, as these names offer no value when you see them in test results.</p>
-<p>• B C# OrderControllerlndex.cs</p>
+<p>· B C# OrderControllerlndex.cs</p>
 <p>If you follow a naming convention like the one above that produces many small test classes, it's a good idea to further organize your tests using folders and namespaces. Figure 9-4 shows one approach to organizing tests by folder within several test projects.</p>
-<p>• Sd Dependencies</p>
-<p>• 8E Repositories</p>
-<p>• 8C</p>
+<p>· Sd Dependencies</p>
+<p>· 8E Repositories</p>
+<p>· 8C</p>
 <p>I Unitlests</p>
-<p>• So Dependencies</p>
+<p>· So Dependencies</p>
 <p>1 8E Entities</p>
-<p>• 8</p>
-<p>• AC</p>
-<p>• BC Services</p>
-<p>• BT</p>
-<p>• B Builders</p>
+<p>· 8</p>
+<p>· AC</p>
+<p>· BC Services</p>
+<p>· BT</p>
+<p>· B Builders</p>
 <p>Figure 9 -4. Organizing test classes by folder based on class being tested.</p>
 <!-- image -->
 <p>If a particular application class has many methods being tested (and thus many test classes), it may make sense to place these classes in a folder corresponding to the application class. This organization is no different than how you might organize files into folders elsewhere. If you have more than three</p>
@@ -2193,7 +2193,7 @@
 </ul>
 <p>https://learn.microsoft.com/ef/core/miscellaneous/testing/</p>
 <ul>
-<li>•</li>
+<li>·</li>
 <li>Integration tests in ASP.NET Core</li>
 </ul>
 <p>https://learn.microsoft.com/aspnet/core/test/integration-tests</p>
