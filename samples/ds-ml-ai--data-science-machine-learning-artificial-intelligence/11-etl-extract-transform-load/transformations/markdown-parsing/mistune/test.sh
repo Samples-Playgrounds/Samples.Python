@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LIBRARY=markdown-it-py
+LIBRARY=mistune
 figlet $LIBRARY
 figlet start
 
@@ -15,10 +15,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
 
-pip install markdown-it-py
-pip install "markdown-it-py[plugins]"
-pip install "markdown-it-py[linkify,plugins]"
-
+pip install mistune
 
 pip install timer
 pip install codetiming
