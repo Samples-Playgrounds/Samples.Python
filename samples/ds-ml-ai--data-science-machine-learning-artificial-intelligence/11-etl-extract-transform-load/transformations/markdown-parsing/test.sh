@@ -6,12 +6,14 @@ ls -d1 */ > list.md
 
 EXTRACTORS=\
 "
-markdown-analysis
 markdown-it-py
 markdown-to-json
 marko
 mdextractor
+mistletoe
+mistune
 # todo
+#z_markdown-analysis
 "
 
 IFS=$'\n'
