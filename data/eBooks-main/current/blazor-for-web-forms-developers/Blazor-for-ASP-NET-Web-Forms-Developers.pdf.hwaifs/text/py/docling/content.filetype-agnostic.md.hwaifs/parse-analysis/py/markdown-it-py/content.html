@@ -30,7 +30,7 @@
 <p>This book is for ASP.NET Web Forms developers looking for an introduction to Blazor that relates to their existing knowledge and skills. This book can help with quickly getting started on a new Blazorbased project or to help chart a roadmap for modernizing an existing ASP.NET Web Forms application.</p>
 <h2>How to use the book</h2>
 <p>The first part of this book covers what Blazor is and compares it to web app development with ASP.NET Web Forms. The book then covers a variety of Blazor topics, chapter by chapter, and relates each Blazor concept to the corresponding concept in ASP.NET Web Forms, or explains fully any completely new concepts. The book also refers regularly to a complete sample app implemented in both ASP.NET Web Forms and Blazor to demonstrate Blazor features and to provide a case study for migrating from ASP.NET Web Forms to Blazor. You can find both implementations of the sample app (ASP.NET Web Forms and Blazor versions) on GitHub .</p>
-<h2>What this book doesn’t cover</h2>
+<h2>What this book doesn't cover</h2>
 <p>This book is an introduction to Blazor, not a comprehensive migration guide. While it does include guidance on how to approach migrating a project from ASP.NET Web Forms to Blazor, it does not attempt to cover every nuance and detail. For more general guidance on migrating from ASP.NET to ASP.NET Core, refer to the migration guidance in the ASP.NET Core documentation.</p>
 <h2>Additional resources</h2>
 <p>You can find the official Blazor home page and documentation at https://blazor.net .</p>
@@ -458,7 +458,7 @@
 <p>Will ASP.NET Web Forms benefit from the move to open-source and cross-platform support? The answer, unfortunately, is no, or at least not to the same extent as the rest of the platform. The .NET team made it clear that ASP.NET Web Forms won't be ported to .NET Core or .NET 8. Why is that?</p>
 <p>There were efforts in the early days of .NET Core to port ASP.NET Web Forms. The number of breaking changes required were found to be too drastic. There's also an admission here that even for Microsoft, there's a limit to the number of web frameworks that it can support simultaneously. Perhaps someone in the community will take up the cause of creating an open-source and cross-platform version of ASP.NET Web Forms. The source code for ASP.NET Web Forms has been made available publicly in reference form. But for the time being, it seems ASP.NET Web Forms will remain Windows-only and without an open-source contribution model. If cross-platform support or open-source become important for your scenarios, then you'll need to look for something new.</p>
 <p>Does this mean ASP.NET Web Forms is dead and should no longer be used? Of course not! As long as the .NET Framework ships as part of Windows, ASP.NET Web Forms will be a supported framework. For many Web Forms developers, the lack of cross-platform and open-source support is a non-issue. If you don't have a requirement for cross-platform support, open-source, or any of the other new features in .NET Core or .NET 8, then sticking with ASP.NET Web Forms on Windows is fine. ASP.NET Web Forms will continue to be a productive way to write web apps for many years to come.</p>
-<p>But there’s another trend worth considering, and that’s the shift to the client.</p>
+<p>But there's another trend worth considering, and that's the shift to the client.</p>
 <h2>Client -side web development</h2>
 <p>All of the .NET -based web frameworks, including ASP.NET Web Forms, have historically had one thing in common: they're server-rendered. In server-rendered web apps, the browser makes a request to the server, which executes some code (.NET code in ASP.NET apps) to produce a response. That response is sent back to the browser to handle. In this model, the browser is used as a thin rendering engine. The hard work of producing the UI, running the business logic, and managing state occurs on the server.</p>
 <p>However, browsers have become versatile platforms. They implement an ever-increasing number of open web standards that grant access to the capabilities of the user's machine. Why not take advantage of the compute power, storage, memory, and other resources of the client device? UI interactions in particular can benefit from a richer and more interactive feel when handled at least partially or completely client-side. Logic and data that should be handled on the server can still be handled server -side. Web API calls or even real -time protocols, like WebSockets, can be used. These benefits are available to web developers for free if they're willing to write JavaScript. Client-side UI frameworks, such as Angular, React, and Vue, simplify client-side web development and have grown in popularity. ASP.NET Web Forms developers can also benefit from leveraging the client, and even have some out -of -the -box support with integrated JavaScript frameworks like ASP.NET AJAX.</p>
@@ -541,7 +541,7 @@
 <p>In Blazor Server apps, the components run on the server instead of client-side in the browser. UI events that occur in the browser are sent to the server over a real -time connection. The events are dispatched to the correct component instances. The components render, and the calculated UI diff is serialized and sent to the browser where it's applied to the DOM.</p>
 <p>X</p>
 <ul>
-<li>•</li>
+<li>·</li>
 </ul>
 <p>‹ https..</p>
 <!-- image -->
@@ -623,11 +623,11 @@
 <p>Configuration in ASP.NET Web Forms apps is typically handled using one or more web.config files. Blazor apps don't typically have web.config files. If they do, the file is only used to configure IISspecific settings when hosted on IIS. Instead, Blazor Server apps use the ASP.NET Core configuration abstractions. (Blazor WebAssembly apps don't currently support the same configuration abstractions, but that may be a feature added in the future.) For example, the default Blazor Server app stores some settings in appsettings.json .</p>
 <pre><code>{ &quot;Logging&quot;: { &quot;LogLevel&quot;: { &quot;Default&quot;: &quot;Information&quot; , &quot;Microsoft&quot;: &quot;Warning&quot; , &quot;Microsoft.Hosting.Lifetime&quot;: &quot;Information&quot; } }, &quot;AllowedHosts&quot;: &quot;*&quot; }
 </code></pre>
-<p>You’ll learn more about configuration in ASP.NET Core projects in the Configuration section.</p>
+<p>You'll learn more about configuration in ASP.NET Core projects in the Configuration section.</p>
 <h2>Razor components</h2>
 <p>Most files in Blazor projects are .razor files. Razor is a templating language based on HTML and C# that is used to dynamically generate web UI. The .razor files define components that make up the UI of the app. For the most part, the components are identical for both the Blazor Server and Blazor WebAssembly apps. Components in Blazor are analogous to user controls in ASP.NET Web Forms.</p>
 <p>Each Razor component file is compiled into a .NET class when the project is built. The generated class captures the component's state, rendering logic, lifecycle methods, event handlers, and other logic. You'll learn more about authoring components in the Building reusable UI components with Blazor section.</p>
-<p>The <em>_Imports.razor</em> files aren’t Razor component files. Instead, they define a set of Razor directives to import into other .razor files within the same folder and in its subfolders. For example, a <em>_Imports.razor</em> file is a conventional way to add using directives for commonly used namespaces:</p>
+<p>The <em>_Imports.razor</em> files aren't Razor component files. Instead, they define a set of Razor directives to import into other .razor files within the same folder and in its subfolders. For example, a <em>_Imports.razor</em> file is a conventional way to add using directives for commonly used namespaces:</p>
 <pre><code>@using System.Net.Http @using System.Net.Http.Json @using Microsoft.AspNetCore.Components.Forms @using Microsoft.AspNetCore.Components.Routing
 </code></pre>
 <pre><code>@using Microsoft.AspNetCore.Components.Web @using Microsoft.AspNetCore.Components.Web.Virtualization @using Microsoft.AspNetCore.Components.WebAssembly.Http @using Microsoft.JSInterop @using BlazorApp1 @using BlazorApp1.Shared
@@ -637,7 +637,7 @@
 <p>@page &quot;/counter&quot;</p>
 <p>Routing in Blazor is handled client-side, not on the server. As the user navigates in the browser, Blazor intercepts the navigation and then renders the component with the matching route.</p>
 <p>The component routes aren't currently inferred by the component's file location like they are with .aspx pages or ASP.NET Core Razor Pages. This feature may be added in the future. Each route must be specified explicitly on the component. Storing routable components in a Pages folder has no special meaning and is purely a convention.</p>
-<p>You’ll learn more about routing in Blazor in the Pages, routing, and layouts section.</p>
+<p>You'll learn more about routing in Blazor in the Pages, routing, and layouts section.</p>
 <h2>Layout</h2>
 <p>In ASP.NET Web Forms apps, a common page layout is handled using master pages (Site.Master). In Blazor apps, the page layout is handled using layout components (Shared/MainLayout.razor). Layout components are discussed in more detail in the Page, routing, and layouts section.</p>
 <h2>Bootstrap Blazor</h2>
@@ -695,12 +695,12 @@
 <p>00</p>
 <p>File</p>
 <p>Test Analyze Tools</p>
-<p>• -</p>
+<p>· -</p>
 <p>Edit View Git Project Build Debug</p>
 <p>Extensions</p>
 <p>Window</p>
 <p>Help</p>
-<p>• HotReloadDemo - D</p>
+<p>· HotReloadDemo - D</p>
 <p>Architecture Test Analyze Tools Extensions</p>
 <p>9-9-</p>
 <p>Debug -</p>
@@ -728,23 +728,23 @@
 <p>Toolbox</p>
 <p>Options</p>
 <p>Search Options (Ctrl+E)</p>
-<p>• Source Control</p>
-<p>• Work Items</p>
-<p>• Text Editor</p>
-<p>• Debugging</p>
+<p>· Source Control</p>
+<p>· Work Items</p>
+<p>· Text Editor</p>
+<p>· Debugging</p>
 <p>General</p>
 <p>NET / C++ Hot Reload</p>
 <p>Just-In-Time</p>
 <p>Output Window</p>
 <p>Symbols</p>
 <p>XAML Hot Reload</p>
-<p>• IntelliTrace</p>
-<p>• Performance Tools</p>
-<p>• .NET Core Debugging with WSL</p>
-<p>• Azure Data Lake</p>
-<p>• Azure Service Authentication</p>
-<p>• Container Tools</p>
-<p>• Cross Platform</p>
+<p>· IntelliTrace</p>
+<p>· Performance Tools</p>
+<p>· .NET Core Debugging with WSL</p>
+<p>· Azure Data Lake</p>
+<p>· Azure Service Authentication</p>
+<p>· Container Tools</p>
+<p>· Cross Platform</p>
 <p>/ Enable Hot Reload and Edit and Continue when debugging</p>
 <p>/ Enable Hot Reload when starting without debugging</p>
 <p>/ Apply Hot Reload on File Save</p>
@@ -1632,9 +1632,9 @@
 <p>The Universal Providers work with a SQL database schema that includes tables like aspnet_Applications, aspnet_Membership, aspnet_Roles, and aspnet_Users. When configured by running the aspnet_regsql.exe command, the providers install tables and stored procedures that provide all of the necessary queries and commands to work with the underlying data. The database schema and these stored procedures are not compatible with newer ASP.NET Identity and ASP.NET Core Identity systems, so existing data must be migrated into the new system. Figure 1 shows an example table schema configured for universal providers.</p>
 <p>membership</p>
 <p>Database Diagrams</p>
-<p>• Tables</p>
-<p>• System Tables</p>
-<p>• FileTables</p>
+<p>· Tables</p>
+<p>· System Tables</p>
+<p>· FileTables</p>
 <p>External Tables</p>
 <p>Graph Tables</p>
 <h1>dbo.aspnet_Applications</h1>
@@ -1753,7 +1753,7 @@
 </ul>
 <p>ECR8 localhost:44343/Identity/Account/Register by the login. The login failed. Login failed for user 'NIGHTKING\steve'.</p>
 <p>There are migrations for ApplicationDbContext that have not been applied to the database</p>
-<p>• 00000000000000_CreateldentitySchema</p>
+<p>· 00000000000000_CreateldentitySchema</p>
 <p>Apply Migrations</p>
 <p>PM&gt; Update-Database</p>
 <p>› dotnet ef database update</p>
@@ -1905,7 +1905,7 @@
 </code></pre>
 <pre><code>&lt;dd&gt; &lt;asp:Label runat=&quot;server&quot; Text='&lt;%#product.MaxStockThreshold%&gt;' /&gt; &lt;/dd&gt; &lt;/dl&gt; &lt;/div&gt; &lt;div class=&quot;form -actions no -color esh -link -list&quot;&gt; &lt;a runat=&quot;server&quot; href='&lt;%# GetRouteUrl(&quot;EditProductRoute&quot;, new {id =product.Id}) %&gt;' class=&quot;esh-link-item&quot;&gt;Edit &lt;/a&gt; | &lt;a runat=&quot;server&quot; href=&quot;~&quot; class=&quot;esh -link -item&quot;&gt;Back to list &lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;/asp:Content&gt;
 </code></pre>
-<p>The preceding markup’s code-behind includes the following code:</p>
+<p>The preceding markup's code-behind includes the following code:</p>
 <pre><code>using eShopLegacyWebForms . Models; using eShopLegacyWebForms . Services; using log4net; using System; using System . Web . UI; namespace eShopLegacyWebForms . Catalog { public partial class Details : System . Web . UI . Page { private static readonly ILog _log = LogManager . GetLogger(System . Reflection . MethodBase . GetCurrentMethod().DeclaringType); protected CatalogItem product; public ICatalogService CatalogService { get; set; } protected void Page_Load(object sender , EventArgs e) { var productId = Convert . ToInt32(Page . RouteData . Values[&quot;id&quot;]); _log . Info($&quot;Now loading... /Catalog/Details.aspx?id={productId}&quot;); product = CatalogService . FindCatalogItem(productId); this . DataBind(); } } }
 </code></pre>
 <p>When converted to Blazor, the Web Forms page translates to the following code:</p>

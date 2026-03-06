@@ -138,7 +138,7 @@
 <p>If you're a Java developer, looking to get started exploring the .NET ecosystem, then suspend what you think you know, take my hand, and let's take a trip to a foreign land. Doing so will require a little history to understand how things came to be, then a quick set of instructions on how to get the tooling set up (and which tooling you want, depending on your preferences). Once the environment is set up, we can pick up the critical differences between C# and Java, and start diving into some of the central frameworks in this world—ASP.NET, Entity Framework, and a few others. When we</p>
 <!-- image -->
 <p>finish up, if you're following along, you'll have everything you need to start your own exploration of the .NET community, and from there you'll get to draw your own conclusions and make your own opinions.</p>
-<p>Most importantly, you’ll know how to order off the menu and tell the bathrooms apart.</p>
+<p>Most importantly, you'll know how to order off the menu and tell the bathrooms apart.</p>
 <p>Ready?</p>
 <!-- image -->
 <!-- image -->
@@ -194,7 +194,7 @@
 <p>For starters, the Java world looks wildly different than it once did. Sun no longer exists, acquired by Oracle. Oracle and Google squabble in the courtroom over the legal implications of Java on Android devices. Spring was acquired, then spun out into its own company, Pivotal. JBoss absorbed into Red Hat. IBM no longer really even tries to push Java much anymore. Does anybody even remember EJB? Or that it was once &quot;a thing&quot;? Who would've guessed any of this back in 2001?</p>
 <p>But meanwhile, over in the Microsoft world, a new CEO runs the firm, and he has made it clear that Microsoft is an open-source player. A new player, to be sure, and still finding its feet in a variety of ways, but one committed to the open-source community. In addition to the strides it has made with .NET, Microsoft has opened Azure up to almost every mainstream language and platform—including Java. (Yes, you can run Tomcat and MySQL in an Azure cloud cluster.) SQL Server has been ported to Linux. Windows Server can be loaded into a Docker container, and Microsoft works with the Docker community to bring Docker-on-Windows up to the same level of sublime that it has on other platforms.</p>
 <p>Within the .NET ecosystem, the .NET Standard, now at a 2.0 release, provides an umbrella of guaranteed compatibility across three major platforms of this writing: the Windows-based .NET Framework (which contains the necessary libraries for building Windows client applications, for example), .NET Core (intended for the cross-platform server world, including Docker containers and cloud-native targets), and Xamarin (principally aimed at the iOS and Android world, but also providing bindings for building macOS applications). Unity has joined the .NET Foundation and expects to be aligned with the various versions of .NET Standard by mid-2018.</p>
-<p>All of which means that it’s not a bad time to start exploring this world in more depth.</p>
+<p>All of which means that it's not a bad time to start exploring this world in more depth.</p>
 <!-- image -->
 <h2>Getting Started: Tooling</h2>
 <p>Getting started with .NET depends pretty heavily on your choice of operating system and, to a lesser degree, the development experience you want. As mentioned earlier, Visual Studio supports both Windows and macOS, as well as a variety of Linux distributions, which pretty much covers everybody. In this section, the goal is to get tools installed, a basic introduction to the major project artifacts, and, of course, build the traditional &quot;HelloWorld.&quot; Once we've done that, we'll talk a little bit about what we're producing, and the package system for .NET (called NuGet).</p>
@@ -206,14 +206,14 @@
 <p>docker run -it microsoft/dotnet bash</p>
 <p>This will pull the latest version of Microsoft's Docker Hub–stored Docker images, and drop you into a shell prompt from which you can run the &quot;dotnet&quot; CLI tool. When you are ready to edit some files, run the Docker image with a volume mount to a host's local directory, and use your favorite editor— might we suggest Visual Studio Code?—to edit the .NET Core–generated files we're about to create.</p>
 <h2>Linux .NET?</h2>
-<p>As with most things Linux, installation instructions depend on which flavor of Linux you’re running.</p>
+<p>As with most things Linux, installation instructions depend on which flavor of Linux you're running.</p>
 <p>Red Hat is the easiest install, since Microsoft and Red Hat have partnered on a few things in the past, so the .NET Core packages are in the Red Hat distribution channels; assuming you are using the Red Hat Subscription Manager, two commands get .NET Core on your machine:</p>
 <p>yum install rh-dotnet20 -y scl enable rh-dotnet20 bash</p>
 <!-- image -->
-<p>At that point, the “dotnet” tool should be in your PATH and good to go.</p>
+<p>At that point, the &quot;dotnet&quot; tool should be in your PATH and good to go.</p>
 <p>If you're on Ubuntu, there's a bit more work required. While Microsoft is working to get the .NET Core packages into the standard Ubuntu distribution channels, at the time of this writing that hasn't happened completely, so Ubuntu users will need to add Microsoft's key and Ubuntu-release-specific URL into the list of sources the Ubuntu apt-get utilities check for packages. Full details are on the .NET Core website at www.dot.net/core; once that's done, however, apt-get can install the &quot;dotnetsdk-2.1.101&quot; package onto the system, and this will get the &quot;dotnet&quot; tool in the PATH and good to go.</p>
 <p>This &quot;register the channel&quot; followed by &quot;use the standard package manager&quot; is actually the same story for Fedora, openSUSE, CentOS, and Debian; again, full step-by-step instructions are on the .NET Core &quot;Getting Started&quot; page (https://aka.ms/dotnet-getstarted-linux), which has a drop-down to choose between the six flavors of Linux that .NET Core supports. Add the Microsoft feed to the package manager, use the package manager to do the install, and the &quot;dotnet&quot; tool should be available on the PATH.</p>
-<p>Once that’s done, .NET Core is ready to go.</p>
+<p>Once that's done, .NET Core is ready to go.</p>
 <h2>Visual Studio Code</h2>
 <p>For almost any operating system you might find yourself using, including most of the popular distributions of Linux, Microsoft has a lightweight editor called Visual Studio Code. If you've been doing a lot of web front-end work, you may already have been using it. In many ways, it's the latest attempt at building an &quot;editor-plus-plug-ins&quot; tool, and it is gaining some traction with the world outside the Microsoft ecosystem. (It's actually the preferred tool for working with Google's opensource Angular project, among other things.) It's also available from http://code.visualstudio.com , it's available for Windows, macOS, and most of the major flavors of Linux, and it's a pretty quick download and install. And, honestly, it's not a bad editor for writing Java code, in case you were wondering; check out the Java extensions at https://code.visualstudio.com/docs/java/extensions the next time you're looking for a lightweight editor that understands Java projects.</p>
 <p>Firing up Visual Studio Code from the command-line is often just a simple &quot;code&quot; if you're in the root directory of your project.</p>
@@ -225,9 +225,9 @@
 <p>4 OPEN EDITORS</p>
 <p>© Program.cs</p>
 <p>4 HELLOWORLD</p>
-<p>• .vscode</p>
-<p>• bin</p>
-<p>• obj helloworld.csproj</p>
+<p>· .vscode</p>
+<p>· bin</p>
+<p>· obj helloworld.csproj</p>
 <p>C* Program.cs</p>
 <p>Tasks Help</p>
 <p>C* Program.cs x</p>
@@ -255,7 +255,7 @@
 <li></li>
 </ul>
 <p>X</p>
-<p>•..</p>
+<p>·..</p>
 <!-- image -->
 <p>J</p>
 <p>Tools eury</p>
@@ -286,10 +286,10 @@
 <p>Summary</p>
 <p>› Visual Studio core editor</p>
 <p>Once started, take a few minutes to grab some coffee; like its cousin on Windows, Visual Studio for Mac will download the components it needs and install them to disk. Don't walk away from the machine for too long, however—the installer will ask for the administrator password several times during the installation. ~ .NET Framework 4.6.1 development tools v ASP.NET and web development tools prerequisites</p>
-<p>• Developer Analytics tools</p>
+<p>· Developer Analytics tools</p>
 <p>Optional</p>
-<p>• Cloud tools for web development</p>
-<p>• IntelliTrace</p>
+<p>· Cloud tools for web development</p>
+<p>· IntelliTrace</p>
 <p>M NET profiling tools</p>
 <p>/ Live Unit Testing v Snapshot Debugger</p>
 <p>NET Core 1.0 - 1.1 development tools for Web</p>
@@ -297,7 +297,7 @@
 <p>When the Visual Studio installer fires up, it immediately becomes obvious that this is every bit as large of an installation as Eclipse or IDEA—hundreds of options lie before you. While most of them are not necessary (many of them have to do with building unmanaged C++ code, for example, or for building game projects), selecting all of them will help ensure that anything you might look to explore will be available to you. The total install size is about the same as your favorite Java IDE with all the trimmings, when all is said and done. Alternatively, you can select just &quot;.NET Core Crossplatform development&quot; for a streamlined install of just .NET Core.</p>
 <!-- image -->
 <ul>
-<li>• x</li>
+<li>· x</li>
 </ul>
 <p>X</p>
 <!-- image -->
@@ -322,24 +322,24 @@
 <!-- image -->
 <p>Projects/MPDesign/MPDesign.sin.</p>
 <p>Choose a template for your new project</p>
-<p>• Recently used</p>
-<p>• Multiplatform</p>
+<p>· Recently used</p>
+<p>· Multiplatform</p>
 <p>App</p>
 <p>Library</p>
 <p>Tests</p>
-<p>• ios</p>
+<p>· ios</p>
 <p>App</p>
 <p>Library</p>
 <p>Tests</p>
-<p>• Android</p>
+<p>· Android</p>
 <p>App</p>
 <p>Library</p>
 <p>Tests</p>
-<p>• NET Core</p>
+<p>· NET Core</p>
 <p>App</p>
 <p>Library</p>
 <p>Tests</p>
-<p>• Cloud</p>
+<p>· Cloud</p>
 <p>General</p>
 <p>Cancel</p>
 <p>General</p>
@@ -355,10 +355,10 @@
 <p>Visual Studio Community</p>
 <p>File</p>
 <p>Edit</p>
-<p>• Debug &gt;</p>
+<p>· Debug &gt;</p>
 <p>gex lE Solution gul&quot; !</p>
 <p>gnut hoa</p>
-<p>• HolloDoetNet can</p>
+<p>· HolloDoetNet can</p>
 <p>BEЛEERЕНЛERЕВЕ0ES.10E08</p>
 <p>View</p>
 <p>Search</p>
@@ -398,7 +398,7 @@
 <p>It's pretty easy to spot a number of things right off the bat: C# is a C-family language, using curlybrackets to denote scope blocks and semicolons to terminate statements. Code is organized into</p>
 <!-- image -->
 <p>namespaces using the &quot;namespace&quot; keyword, and pretty clearly we have classes just as Java does. The Console class (part of the &quot;System&quot; namespace) represents the command-line input/output facilities, and WriteLine is obviously a synonym for &quot;println.&quot; Square brackets are used to denote an array in the same way they do in Java, and arrays in C# work almost exactly the same way as they do in Java, save that they have been slightly more &quot;formalized&quot; in that there is a full-blown class, System. Array, that defines a number of methods and properties that all arrays will share. Core &quot;primitive&quot; types are actually defined as full-blown classes, so that System.Array is the &quot;class&quot; representing each array instance, System.String is the &quot;string&quot; primitive type, System.Int32 is the &quot;int&quot; primitive type, and so on. All types, whether &quot;primitive&quot; (what .NET calls &quot;value types&quot;) or &quot;class,&quot; all inherit from the base System.Object type, with value types being &quot;boxed&quot; to objects when necessary. (This was the inspiration for autoboxing rules in Java5, in fact.) As a result, &quot;System.String s&quot; and &quot;string s&quot; are actually entirely equivalent declarations. New value types can be defined, but it's pretty rare.</p>
-<p>Let’s start with some of the more straightforward parts of the language.</p>
+<p>Let's start with some of the more straightforward parts of the language.</p>
 <h2>Starting exploration: classes, properties, and methods</h2>
 <p>C# 1.0 was, in large measure, a near-direct clone of Java, with some keyword changes and some new features that Java has debated for years: explicit properties and delegates (an early form of lambda expressions). Thus, we can write the traditional &quot;Person&quot; type in C# like so:</p>
 <pre><code>class Person { public string FirstName { get { return this.firstName; } set { this.firstName = value; } } private string firstName; public string LastName { get { return this.lastName; } set { this.lastName = value; } } private string lastName; public int Age { get { return this.age; } set { this.age = value; }
@@ -453,7 +453,7 @@
 <!-- image -->
 <h2>Language-INtegrated Query (LINQ)</h2>
 <p>All of this led up to one of the signature moments for the C# compiler with the 3.0 release: Language-INtegrated Query, or LINQ, for short. To many in the Java community, LINQ represented everything that was wrong with Microsoft, accusing them of &quot;embedding SQL into the C# language&quot; and turning C# into a 4GL that was proprietarily bound to SQL Server. As the Jedi Master put it, &quot;Amazing—every single part of that sentence is entirely incorrect.&quot; LINQ wasn't integrating SQL, it isn't about SQL Server, and it's actually built up around core language principles that had nothing to do with relational databases, much less integrated with SQL Server.</p>
-<p>Let’s start by examining a simple collection of Person objects in a list:</p>
+<p>Let's start by examining a simple collection of Person objects in a list:</p>
 <pre><code>var people = new List&lt;Person&gt;() { new Person(&quot;Ted&quot; , &quot;Neward&quot;, 45), new Person(&quot;Charlotte&quot; , &quot;Neward&quot;, 39), new Person(&quot;Michael&quot; , &quot;Neward&quot;, 24), new Person(&quot;Matthew&quot; , &quot;Neward&quot;, 18), new Person(&quot;Beth&quot; , &quot;Massi&quot;, 39), new Person(&quot;Dustin&quot; , &quot;Campbell&quot;, 43)
 </code></pre>
 <p>};</p>
@@ -516,7 +516,7 @@
 <p>Views, of course, can make use of objects and data provided by a controller, often by making use of a predefined key-value map called ViewData. If we want the message and the number of times it should be printed to be set up by a controller (perhaps the controller is obtaining it from HTML query parameters or a database), then the controller can set those by using the keys &quot;Message&quot; and &quot;NumTimes&quot; in the ViewData dictionary, respectively. The view can then display them like this:</p>
 <pre><code>&lt;h2&gt;Welcome&lt;/h2&gt; &lt;ul&gt; @for (int i = 0; i &lt; (int)ViewData[&quot;NumTimes&quot;]; i++) { &lt;li&gt;@ViewData[&quot;Message&quot;]&lt;/li&gt; } &lt;/ul&gt;
 </code></pre>
-<p>In essence, ViewData is the ASP.NET equivalent to Servlet “request” scope.</p>
+<p>In essence, ViewData is the ASP.NET equivalent to Servlet &quot;request&quot; scope.</p>
 <!-- image -->
 <p>The controller perspective that drives this looks remarkably similar to what a servlet controller would do, with a few differences:</p>
 <pre><code>using Microsoft.AspNetCore.Mvc; using System.Text.Encodings.Web; namespace MvcMovie.Controllers { public class HelloWorldController : Controller { public IActionResult Welcome(string name, int numTimes = 1) { ViewData[&quot;Message&quot;] = &quot;Hello &quot; + name; ViewData[&quot;NumTimes&quot;] = numTimes; return View(); } } }

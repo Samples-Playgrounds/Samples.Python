@@ -1211,7 +1211,7 @@
 <p>This example shows how to add metadata to a call from a C# client:</p>
 <pre><code>var metadata = new Metadata { { &quot;Requester&quot; , _clientName } }; var request = new GetPortfolioRequest { Id = portfolioId }; var response = await client . GetPortfolioAsync(request , metadata);
 </code></pre>
-<p>gRPC services can access metadata from the ServerCallContext argument’s RequestHeaders property:</p>
+<p>gRPC services can access metadata from the ServerCallContext argument's RequestHeaders property:</p>
 <pre><code>public async Task&lt;GetPortfolioResponse&gt; GetPortfolio(GetPortfolioRequest request , ServerCallContext context) { var requesterHeader = context . RequestHeaders . FirstOrDefault(e =&gt; e . Key == &quot;Requester&quot;); if (requesterHeader != null) { _logger . LogInformation($&quot;Request from {requesterHeader.Value}&quot;); } // ... }
 </code></pre>
 <p>Services can send metadata to clients by using the ResponseTrailers property of ServerCallContext:</p>
@@ -1318,7 +1318,7 @@
 <p>TraderSys.Portfolios</p>
 <p>Location</p>
 <p>C:\Code\ TraderSys</p>
-<p>•C#</p>
+<p>·C#</p>
 <p>Linux macOS</p>
 <p>Windows</p>
 <p>Cloud</p>
@@ -1371,7 +1371,7 @@
 <p>There was a reference to the GreeterService class in the Program.cs. If you used refactoring to rename the class, this reference should have been updated automatically. However, if you didn't, you need to edit it manually.</p>
 <pre><code>using TraderSys . Portfolios . Services; var builder = WebApplication . CreateBuilder(args); // Add services to the container. builder . Services . AddGrpc(); var app = builder . Build(); // Configure the HTTP request pipeline. app.MapGrpcService&lt;PortfolioService&gt;(); app.MapGet(&quot;/&quot; , () =&gt; &quot;Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909&quot;); app.Run();
 </code></pre>
-<p>In the next section, we’ll add functionality to this new service.</p>
+<p>In the next section, we'll add functionality to this new service.</p>
 <h2>Migrate a WCF request -reply service to a gRPC unary RPC</h2>
 <p>This section covers how to migrate a basic request-reply service in WCF to a unary RPC service in ASP.NET Core gRPC. These services are the simplest service types in both Windows Communication Foundation (WCF) and gRPC, so it's an excellent place to start. After migrating the service, you'll learn how to generate a client library from the same .proto file to consume the service from a .NET client application.</p>
 <h2>The WCF solution</h2>
@@ -1489,8 +1489,8 @@
 <p>+02...</p>
 <p>Add new gRPC service reference</p>
 <p>Select a file or URL</p>
-<p>• File</p>
-<p>• URL</p>
+<p>· File</p>
+<p>· URL</p>
 <p>Select the type of class to be generated</p>
 <p>Client</p>
 <!-- image -->
@@ -1499,7 +1499,7 @@
 <p>When you use the Visual Studio Add Connected Service feature, the portfolios.proto file is added to the class library project as a linked file rather than copied, so changes to the file in the service project will automatically be applied in the client project. The &lt;Protobuf&gt; element in the csproj file looks like this:</p>
 <p>&lt;Protobuf Include=&quot;..\TraderSys.Portfolios\Protos\portfolios.proto&quot; GrpcServices=&quot;Client&quot;&gt; &lt;Link&gt;Protos\portfolios.proto&lt;/Link&gt; &lt;/Protobuf&gt;</p>
 <p>Tip</p>
-<p>If you’re not using Visual Studio or prefer to work from the command line, you can use the dotnet- grpc global tool to manage Protobuf references in a .NET gRPC project. For more information, see the</p>
+<p>If you're not using Visual Studio or prefer to work from the command line, you can use the dotnet- grpc global tool to manage Protobuf references in a .NET gRPC project. For more information, see the</p>
 <p>dotnet grpc documentation</p>
 <p>.</p>
 <h2>Use the Portfolios service from a client application</h2>
@@ -1834,7 +1834,7 @@
 <pre><code>public static IHostBuilder CreateHostBuilder(string[] args) =&gt; Host . CreateDefaultBuilder(args) . UseSystemd() // Enable running as a Systemd service . ConfigureServices((hostContext , services) =&gt; { ... });
 </code></pre>
 <h2>Note</h2>
-<p>If the application isn’t running as a Linux service, the UseSystemd method doesn’t do anything.</p>
+<p>If the application isn't running as a Linux service, the UseSystemd method doesn't do anything.</p>
 <p>Now publish your application. The application can be either framework dependent or self-contained for the relevant Linux runtime (for example, linux-x64). You can publish by using one of these methods:</p>
 <ul>
 <li>From Visual Studio by right-clicking the project and selecting Publish on the shortcut menu.</li>
@@ -1850,7 +1850,7 @@
 <p>Before systemd will recognize the service, it needs to reload its configuration. You control systemd by using the systemctl command. After reloading, use the status subcommand to confirm that the application has registered successfully.</p>
 <pre><code>sudo systemctl daemon-reload sudo systemctl status myapp
 </code></pre>
-<p>If you’ve configured the service correctly, you’ll get the following output:</p>
+<p>If you've configured the service correctly, you'll get the following output:</p>
 <pre><code>myapp.service -My gRPC Application Loaded: loaded (/etc/systemd/system/myapp.service; disabled; vendor preset: enabled) Active: inactive (dead)
 </code></pre>
 <p>Use the start command to start the service.</p>
@@ -1881,7 +1881,7 @@
 </code></pre>
 <p>Provide the password by using a secure configuration source such as Azure Key Vault or Hashicorp Vault.</p>
 <h2>Important</h2>
-<p>Don’t store unencrypted passwords in configuration files.</p>
+<p>Don't store unencrypted passwords in configuration files.</p>
 <h2>Set HTTPS certificates in code</h2>
 <p>To configure HTTPS on Kestrel in code, use the ConfigureKestrel method on IWebHostBuilder in the Program class.</p>
 <pre><code>public static IHostBuilder CreateHostBuilder(string[] args) =&gt; Host . CreateDefaultBuilder(args) . ConfigureWebHostDefaults(webBuilder =&gt; { webBuilder . ConfigureKestrel(kestrel =&gt; { kestrel . ConfigureHttpsDefaults(https =&gt; { https . ServerCertificate = new X509Certificate2(&quot;mycert.pfx&quot; , &quot;password&quot;); }); }); });
@@ -2079,7 +2079,7 @@
 <h2>Get started with Kubernetes</h2>
 <p>If you're running Docker Desktop for Windows or Docker Desktop for Mac, Kubernetes is already available. Just enable it in the Kubernetes section of the Settings window:</p>
 <p>Settings</p>
-<p>• Docker running</p>
+<p>· Docker running</p>
 <p>General</p>
 <p>X</p>
 <p>X</p>
@@ -2153,7 +2153,7 @@
 <p>The output of the get service command shows that the HTTP port has been published to port 32564 on the external network. For Docker Desktop, this IP address will be localhost. You can access the application by browsing to http://localhost:32564.</p>
 <p>Home Page - StockWeb x+</p>
 <p>&lt; &gt;</p>
-<p>• localhost:32564</p>
+<p>· localhost:32564</p>
 <p>StockWeb</p>
 <p>Home Privacy</p>
 <h2>Test the application</h2>
