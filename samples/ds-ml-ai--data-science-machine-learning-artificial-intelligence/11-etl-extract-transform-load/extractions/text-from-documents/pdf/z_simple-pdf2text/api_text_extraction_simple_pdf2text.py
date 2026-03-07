@@ -1,6 +1,6 @@
 from docling.document_converter import DocumentConverter
 
-import json
+import orjson
 import datetime
 import time
 from time import perf_counter
@@ -20,7 +20,7 @@ def extract_text_to_file_from_any_document (source: str) -> str:
     result_doc = converter.convert(source)
     result_txt = result_doc.document.export_to_text()
 
-    directory = f"{source}.hwaifs/text/py/docling/"
+    directory = f"{source}.hwaifs/extractions/text/py/docling/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file
@@ -50,7 +50,7 @@ def extract_text_to_file_from_any_document (source: str) -> str:
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
     with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
-        f.write(json.dumps(times, indent=4))
+        f.write(orjson.dumps(times, option=orjson.OPT_INDENT_2).decode())
     #---------------------------------------------------------------------------
 
     return result_txt
@@ -70,7 +70,7 @@ def extract_markdown_to_file_from_any_document (source: str) -> str:
     result_md = result_doc.document.export_to_markdown()
     num_pages = len(result_doc.document.pages)
 
-    directory = f"{source}.hwaifs/text/py/docling/"
+    directory = f"{source}.hwaifs/extractions/text/py/docling/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file
@@ -104,7 +104,7 @@ def extract_markdown_to_file_from_any_document (source: str) -> str:
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
     with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
-        f.write(json.dumps(times, indent=4))
+        f.write(orjson.dumps(times, option=orjson.OPT_INDENT_2).decode())
     #---------------------------------------------------------------------------
 
     return result_md
@@ -186,7 +186,7 @@ def extract_markdown_to_file_from_any_document_complex (source: str) -> str:
         #with (out_path / f"{res.input.file.stem}.md").open("w") as fp:
         #    fp.write(res.document.export_to_markdown())
 
-    directory = f"{source}.hwaifs/text/py/docling/"
+    directory = f"{source}.hwaifs/extractions/text/py/docling/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file
@@ -220,7 +220,7 @@ def extract_markdown_to_file_from_any_document_complex (source: str) -> str:
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
     with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
-        f.write(json.dumps(times, indent=4))
+        f.write(json.dumps(times, , separators=(',', ':'), indent=4))
     #---------------------------------------------------------------------------
 
     return result_md

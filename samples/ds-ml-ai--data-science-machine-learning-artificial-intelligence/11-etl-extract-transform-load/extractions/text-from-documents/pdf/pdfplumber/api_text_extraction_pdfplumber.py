@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 
 import traceback
-import json
+import orjson
 import datetime
 import time
 from time import perf_counter
@@ -14,7 +14,8 @@ from time import perf_counter_ns
 
 #@timer()
 def extract_text_to_file_from_pdf_document (source: str) -> str:
-
+    """
+    """
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
     time_start_2 = perf_counter()
@@ -28,8 +29,10 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
             for page in pdf.pages:
                 result_txt = result_txt + page.extract_text()
 
-        directory = f"{source}.hwaifs/text/py/pdfplumber/"
+        directory = f"{source}.hwaifs/extractions/text/py/pdfplumber/"
         Path(directory).mkdir(parents=True, exist_ok=True)
+
+        num_pages = len(pdf.pages)
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
@@ -56,62 +59,79 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
 
     times = {
         "function_method_name" : "extract_text_to_file_from_any_document",
+        "num_pages" : num_pages,
         "time_start_1": time_start_1,
         "time_end_1": time_stop_1,
         "time_total_1": time_total_1,
+        "pages_per_second_1" : num_pages / time_total_1,
         "time_start_2": time_start_2,
         "time_end_2": time_stop_2,
         "time_total_2": time_total_2,
+        "pages_per_second_2" : num_pages / time_total_2,
         "time_start_3": time_start_3,
         "time_end_3": time_stop_3,
         "time_total_3": time_total_3,
+        "pages_per_second_3" : num_pages / time_total_3
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
     with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
-        f.write(json.dumps(times, indent=4))
+        f.write(orjson.dumps(times, option=orjson.OPT_INDENT_2).decode())
     #---------------------------------------------------------------------------
 
     return result_txt
 
 #@timer()
 def extract_markdown_to_file_from_pdf_document (source: str) -> str:
-
+    """
+    """
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    result_txt = ""
+    try:
+        result_txt = ""
 
-    all_text = []
+        all_text = []
 
-    with pdfplumber.open(source) as pdf:
-        for page in pdf.pages:
-            filtered_page = page
-            chars = filtered_page.chars
-            for table in page.find_tables():
-                first_table_char = page.crop(table.bbox).chars[0]
-                filtered_page = filtered_page.filter(lambda obj: 
-                    get_bbox_overlap(obj_to_bbox(obj), table.bbox) is None
-                )
+        with pdfplumber.open(source) as pdf:
+            for page in pdf.pages:
+                filtered_page = page
                 chars = filtered_page.chars
-                df = pd.DataFrame(table.extract())
-                df.columns = df.iloc[0]
-                markdown = df.drop(0).to_markdown(index=False)
-                chars.append(first_table_char | {"text": markdown})
-            page_text = extract_text(chars, layout=True)
-            all_text.append(page_text)
-        pdf.close()
+                for table in page.find_tables():
+                    first_table_char = page.crop(table.bbox).chars[0]
+                    filtered_page = filtered_page.filter(lambda obj: 
+                        get_bbox_overlap(obj_to_bbox(obj), table.bbox) is None
+                    )
+                    chars = filtered_page.chars
+                    df = pd.DataFrame(table.extract())
+                    df.columns = df.iloc[0]
+                    markdown = df.drop(0).to_markdown(index=False)
+                    chars.append(first_table_char | {"text": markdown})
+                page_text = extract_text(chars, layout=True)
+                all_text.append(page_text)
+            pdf.close()
 
-    directory = f"{source}.hwaifs/text/py/pdfplumber/"
-    Path(directory).mkdir(parents=True, exist_ok=True)
+        directory = f"{source}.hwaifs/extractions/text/py/pdfplumber/"
+        Path(directory).mkdir(parents=True, exist_ok=True)
+        
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables from PDF document source = {source} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
 
     # save to file
     with open(f"{directory}/content.md", "w") as f:
         f.write(result_txt)
-
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()
     time_total_1 = time_stop_1 - time_start_1
@@ -135,7 +155,7 @@ def extract_markdown_to_file_from_pdf_document (source: str) -> str:
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
     with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
-        f.write(json.dumps(times, indent=4))
+        f.write(orjson.dumps(times, option=orjson.OPT_INDENT_2).decode())
     #---------------------------------------------------------------------------
 
     return "\n".join(all_text)

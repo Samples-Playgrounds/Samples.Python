@@ -4,7 +4,7 @@ import os
 from pathlib import Path
 
 import traceback
-import json
+import orjson
 import datetime
 import time
 from time import perf_counter
@@ -13,18 +13,21 @@ from time import perf_counter_ns
 
 #@timer()
 def extract_markdown_to_file_from_pdf_document (source: str) -> str:
-
+    """
+    """
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    directory = f"{source}.hwaifs/text/py/pymupdf4llm/"
-    Path(directory).mkdir(parents=True, exist_ok=True)
-
     try:
         result_md = pymupdf4llm.to_markdown(source)
+        num_pages = len(fitz.open(source))
+
+        directory = f"{source}.hwaifs/extractions/text/py/pymupdf4llm/"
+        Path(directory).mkdir(parents=True, exist_ok=True)
+
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
@@ -51,36 +54,55 @@ def extract_markdown_to_file_from_pdf_document (source: str) -> str:
 
     times = {
         "function_method_name" : "extract_text_to_file_from_any_document",
+        "num_pages" : num_pages,
         "time_start_1": time_start_1,
         "time_end_1": time_stop_1,
         "time_total_1": time_total_1,
+        "pages_per_second_1" : num_pages / time_total_1,
         "time_start_2": time_start_2,
         "time_end_2": time_stop_2,
         "time_total_2": time_total_2,
+        "pages_per_second_2" : num_pages / time_total_2,
         "time_start_3": time_start_3,
         "time_end_3": time_stop_3,
         "time_total_3": time_total_3,
+        "pages_per_second_3" : num_pages / time_total_3
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
     with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
-        f.write(json.dumps(times, indent=4))
+        f.write(orjson.dumps(times, option=orjson.OPT_INDENT_2).decode())
     #---------------------------------------------------------------------------
 
     return result_md
 
 def extract_markdown_to_file_from_office_doc_docx_document (source: str) -> str:
-
+    """
+    """
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    result_md = pymupdf4llm.to_markdown(source)
+    try:
+        result_md = pymupdf4llm.to_markdown(source)
+        num_pages = len(fitz.open(source))
 
-    directory = f"{source}.hwaifs/text/py/pymupdf4llm/"
-    Path(directory).mkdir(parents=True, exist_ok=True)
+        directory = f"{source}.hwaifs/extractions/text/py/pymupdf4llm/"
+        Path(directory).mkdir(parents=True, exist_ok=True)
+
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables from PDF document source = {source} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
 
     # save to file
     with open(f"{directory}/content.md", "w") as f:
@@ -96,20 +118,24 @@ def extract_markdown_to_file_from_office_doc_docx_document (source: str) -> str:
 
     times = {
         "function_method_name" : "extract_text_to_file_from_any_document",
+        "num_pages" : num_pages,
         "time_start_1": time_start_1,
         "time_end_1": time_stop_1,
         "time_total_1": time_total_1,
+        "pages_per_second_1" : num_pages / time_total_1,
         "time_start_2": time_start_2,
         "time_end_2": time_stop_2,
         "time_total_2": time_total_2,
+        "pages_per_second_2" : num_pages / time_total_2,
         "time_start_3": time_start_3,
         "time_end_3": time_stop_3,
         "time_total_3": time_total_3,
+        "pages_per_second_3" : num_pages / time_total_3
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
     with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
-        f.write(json.dumps(times, indent=4))
+        f.write(orjson.dumps(times, option=orjson.OPT_INDENT_2).decode())
     #---------------------------------------------------------------------------
 
     return result_md

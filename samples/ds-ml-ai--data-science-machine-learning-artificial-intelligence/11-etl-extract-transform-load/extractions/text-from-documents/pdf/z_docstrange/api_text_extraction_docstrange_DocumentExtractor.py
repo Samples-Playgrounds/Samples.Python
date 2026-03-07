@@ -1,6 +1,6 @@
 from docstrange import DocumentExtractor
 
-import json
+import orjson
 import datetime
 import time
 from time import perf_counter
@@ -24,7 +24,7 @@ def extract_markdown_to_file_from_pdf_document (source: str) -> str:
     result_md = result.extract_markdown()
     print(result_md)
 
-    directory = f"{source}.hwaifs/text/py/docstrange/"
+    directory = f"{source}.hwaifs/extractions/wtext/py/docstrange/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file
@@ -58,7 +58,7 @@ def extract_markdown_to_file_from_pdf_document (source: str) -> str:
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
     with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
-        f.write(json.dumps(times, indent=4))
+        f.write(orjson.dumps(times, option=orjson.OPT_INDENT_2).decode())
     #---------------------------------------------------------------------------
 
     return result_md
