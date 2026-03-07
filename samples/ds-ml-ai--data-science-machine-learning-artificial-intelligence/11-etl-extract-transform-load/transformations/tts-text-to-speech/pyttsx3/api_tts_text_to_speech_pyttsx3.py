@@ -11,7 +11,7 @@ from time import perf_counter_ns
 # from timer import timer
 
 #@timer()
-def speak (text: str, file: str = None) -> str:
+def speak (text: str) -> str:
 
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
@@ -35,7 +35,7 @@ def speak (text: str, file: str = None) -> str:
     time_total_3 = (time_stop_3 - time_start_3) / 1_000_000_000
 
     times = {
-        "function_method_name" : "extract_text_to_file_from_any_document",
+        "function_method_name" : "speak",
         "time_start_1": time_start_1,
         "time_end_1": time_stop_1,
         "time_total_1": time_total_1,
