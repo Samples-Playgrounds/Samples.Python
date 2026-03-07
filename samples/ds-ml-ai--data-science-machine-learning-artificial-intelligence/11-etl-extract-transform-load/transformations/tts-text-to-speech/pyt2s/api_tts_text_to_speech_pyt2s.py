@@ -18,11 +18,7 @@ def speak (text: str, file: = None str ) -> str:
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    tts = gTTS(text)
 
-    # if not file:
-    if file:
-        tts.save(file)
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()
     time_total_1 = time_stop_1 - time_start_1
@@ -32,7 +28,7 @@ def speak (text: str, file: = None str ) -> str:
     time_total_3 = (time_stop_3 - time_start_3) / 1_000_000_000
 
     times = {
-        "function_method_name" : "extract_text_to_file_from_any_document",
+        "function_method_name" : "speak",
         "time_start_1": time_start_1,
         "time_end_1": time_stop_1,
         "time_total_1": time_total_1,
