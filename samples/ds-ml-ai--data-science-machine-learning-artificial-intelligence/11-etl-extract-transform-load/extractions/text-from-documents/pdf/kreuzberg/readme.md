@@ -4,6 +4,8 @@ readme.md
 
 *   https://github.com/kreuzberg-dev/kreuzberg
 
+*   https://kreuzberg.dev/
+
 *   https://www.reddit.com/r/Rag/comments/1pn2fxv/kreuzberg_v400rc8_is_available/
 
 *   polyglot multi-lingual
