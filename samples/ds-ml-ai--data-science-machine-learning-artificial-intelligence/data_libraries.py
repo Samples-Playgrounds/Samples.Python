@@ -1,5 +1,7 @@
-import 
+# data_libraries.py
+# This file contains lists of libraries for various data-related tasks
 
+#   *   text extraction from documents.
 
 #-----------------------------------------------------------------------------------------------------------------------
 # libraries
