@@ -1,4 +1,5 @@
 codetiming==1.4.0
+orjson==3.11.7
 PyMuPDF==1.27.1
 pymupdf4llm==0.3.4
 tabulate==0.10.0

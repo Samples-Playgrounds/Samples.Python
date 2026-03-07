@@ -1,4 +1,5 @@
 codetiming==1.4.0
+orjson==3.11.7
 packaging==26.0
 pdf2image==1.17.0
 pillow==12.1.1
