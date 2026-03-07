@@ -18,11 +18,6 @@ def speak (text: str, file: = None str ) -> str:
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    tts = gTTS(text)
-
-    # if not file:
-    if file:
-        tts.save(file)
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()
     time_total_1 = time_stop_1 - time_start_1
