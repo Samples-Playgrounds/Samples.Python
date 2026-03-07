@@ -18,6 +18,7 @@ pip install --upgrade pip
 pip install pdfminer.six
 pip install 'pdfminer.six[image]'
 
+pip install orjson
 pip install timer
 pip install codetiming
 

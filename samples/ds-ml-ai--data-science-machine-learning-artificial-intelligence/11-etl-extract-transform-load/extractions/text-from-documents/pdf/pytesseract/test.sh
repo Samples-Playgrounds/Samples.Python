@@ -18,6 +18,7 @@ pip install --upgrade pip
 pip install pytesseract
 pip install pdf2image
 
+pip install orjson
 pip install timer
 pip install codetiming
 

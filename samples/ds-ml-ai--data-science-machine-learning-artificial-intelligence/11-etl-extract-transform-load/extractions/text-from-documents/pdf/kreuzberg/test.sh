@@ -20,6 +20,7 @@ pip install "kreuzberg[easyocr]"
 pip install "kreuzberg[paddleocr]"
 pip install "kreuzberg[all]"
 
+pip install orjson
 pip install timer
 pip install codetiming
 

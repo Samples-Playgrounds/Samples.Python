@@ -13,6 +13,7 @@ pip install docling
 pip install docling[vlm]
 pip install opencv-python
 
+pip install orjson
 pip install timer
 pip install codetiming
 

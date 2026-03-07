@@ -18,6 +18,7 @@ pip install --upgrade pip
 pip install python-doctr
 #pip install "python-doctr[viz,html,contrib]"
 
+pip instal orjson
 pip install timer
 pip install codetiming
 

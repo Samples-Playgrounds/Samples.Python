@@ -17,6 +17,7 @@ pip install --upgrade pip
 
 pip install pymupdf4llm
 
+pip install orjson
 pip install timer
 pip install codetiming
 
