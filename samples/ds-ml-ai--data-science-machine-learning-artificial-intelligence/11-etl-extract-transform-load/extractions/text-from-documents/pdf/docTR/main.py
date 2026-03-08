@@ -9,6 +9,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install python-doctr
 pip install "python-doctr[viz,html,contrib]"
+pip instal orjson
 pip install timer
 pip install codetiming
 pip freeze > requirements.txt

@@ -10,6 +10,9 @@ source .venv/bin/activate
 pip install PyPDF2
 pip install pytesseract
 pip install Pillow
+pip install orjson
+pip install timer
+pip install codetiming
 pip freeze > requirements.txt
 """
 

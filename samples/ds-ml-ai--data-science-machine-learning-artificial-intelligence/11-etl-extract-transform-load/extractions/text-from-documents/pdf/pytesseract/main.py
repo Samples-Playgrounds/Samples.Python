@@ -9,6 +9,9 @@ python -m venv .venv
 source .venv/bin/activate
 pip install pytesseract
 pip install pdf2image
+pip install orjson
+pip install timer
+pip install codetiming
 pip freeze > requirements.txt
 """
 

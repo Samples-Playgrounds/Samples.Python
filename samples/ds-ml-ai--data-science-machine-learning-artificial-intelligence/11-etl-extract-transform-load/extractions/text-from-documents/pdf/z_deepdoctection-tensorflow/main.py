@@ -11,6 +11,7 @@ pip install transformers
 pip install python-doctr
 pip install deepdoctection
 pip install deepdoctection[tf]
+pip install orjson
 pip install timer
 pip install codetiming
 pip freeze > requirements.txt

@@ -8,6 +8,9 @@ rm *.pyc
 python -m venv .venv
 source .venv/bin/activate
 pip install pdfplumber
+pip install orjson
+pip install timer
+pip install codetiming
 pip freeze > requirements.txt
 """
 
