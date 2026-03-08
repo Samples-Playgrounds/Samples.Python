@@ -9,9 +9,6 @@ rm *.pyc
 python -m venv .venv
 source .venv/bin/activate
 
-pip install docling
-pip install docling[vlm]
-pip install opencv-python
 
 pip install orjson
 pip install timer
