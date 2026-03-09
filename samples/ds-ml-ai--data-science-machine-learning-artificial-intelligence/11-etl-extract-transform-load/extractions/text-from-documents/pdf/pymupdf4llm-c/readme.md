@@ -8,7 +8,7 @@ TODO
 
 *   https://pypi.org/project/pymupdf4llm-c/
 
-```
+```shell
 pip install pymupdf4llm-c 
 ```
 
@@ -29,4 +29,6 @@ except ExtractionError as exc:
     print(f"Extraction failed: {exc}")
 ```
 
-*   
+*   https://www.reddit.com/r/Rag/comments/1pzwot0/i_made_a_fast_structured_pdf_extractor_for_rag/
+
+

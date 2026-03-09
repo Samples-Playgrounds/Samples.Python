@@ -5,11 +5,11 @@ docTR/
 docling/
 kreuzberg/
 marker/
-pdfium2/
 pdfminer.six/
 pdfplumber/
 pymupdf4llm-c/
 pymupdf4llm/
+pypdfium2/
 pytesseract/
 unstructured/
 z_deepdoctection-pytorch/
