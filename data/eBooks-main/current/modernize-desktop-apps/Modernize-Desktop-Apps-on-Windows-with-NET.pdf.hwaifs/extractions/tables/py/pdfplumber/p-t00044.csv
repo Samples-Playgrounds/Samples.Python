@@ -1,0 +1,8 @@
+,0
+0,<Window
+1,...
+2,"xmlns:xamlhost=""clr-"
+3,"namespace:Microsoft.Toolkit.Wpf.UI.XamlHost;assembly=Microsoft.Toolkit.Wpf.UI.XamlHost"">"
+4,
+5,"<xamlhost:WindowsXamlHost x:Name=""myUwpButton"""
+6,"InitialTypeName=""Windows.UI.Xaml.Controls.Button"" />"

@@ -1,0 +1,25 @@
+,0
+0,"public class ReminderActor : Actor, IReminderActor, IRemindable"
+1,{
+2,public ReminderActor(ActorHost host) : base(host)
+3,{
+4,}
+5,
+6,public Task SetReminderAsync(string text)
+7,{
+8,return RegisterReminderAsync(
+9,"""DoNotForget"","
+10,"Encoding.UTF8.GetBytes(text),"
+11,"TimeSpan.FromSeconds(3),"
+12,TimeSpan.FromMilliseconds(-1));
+13,}
+14,
+15,public Task ReceiveReminderAsync(
+16,"string reminderName, byte[] state,"
+17,"TimeSpan dueTime, TimeSpan period)"
+18,{
+19,"if (reminderName == ""DoNotForget"")"
+20,{
+21,var text = Encoding.UTF8.GetString(state);
+22,
+23,"Logger.LogInformation($""Don't forget: {text}"");"

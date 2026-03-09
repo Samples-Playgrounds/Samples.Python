@@ -1,0 +1,15 @@
+,0
+0,public class MyService
+1,{
+2,private readonly IHttpContextAccessor _httpContextAccessor;
+3,
+4,public MyService(IHttpContextAccessor httpContextAccessor)
+5,{
+6,_httpContextAccessor = httpContextAccessor;
+7,}
+8,
+9,public void DoSomething()
+10,{
+11,var currentContext = _httpContextAccessor.HttpContext;
+12,}
+13,}

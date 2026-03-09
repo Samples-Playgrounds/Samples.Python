@@ -1,0 +1,10 @@
+,0
+0,"syntax ""proto3"";"
+1,
+2,message Stock {
+3,
+4,"reserved 3, 4;"
+5,int32 id = 1;
+6,string symbol = 2;
+7,
+8,}

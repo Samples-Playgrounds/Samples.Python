@@ -1,0 +1,6 @@
+,0
+0,builder.Services.AddControllers(options =>
+1,{
+2,"options.InputFormatters.Insert(0, new CustomInputFormatter());"
+3,"options.OutputFormatters.Insert(0, new CustomOutputFormatter());"
+4,});

@@ -1,0 +1,18 @@
+,0
+0,matrix:
+1,language: [ 'csharp' ]
+2,
+3,steps:
+4,- name: Checkout repository
+5,uses: actions/checkout@v3
+6,
+7,- name: Initialize CodeQL
+8,uses: github/codeql-action/init@v1
+9,with:
+10,languages: ${{ matrix.language }}
+11,
+12,- name: Autobuild
+13,uses: github/codeql-action/autobuild@v1
+14,
+15,- name: Perform CodeQL Analysis
+16,uses: github/codeql-action/analyze@v1

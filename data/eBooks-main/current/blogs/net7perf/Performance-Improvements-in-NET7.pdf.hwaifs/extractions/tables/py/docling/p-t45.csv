@@ -1,0 +1,3 @@
+,Method,Runtime,Mean,Ratio
+0,StartsWith,.NET 6.0,8.130 ns,1.00
+1,StartsWith,.NET 7.0,1.653 ns,0.20

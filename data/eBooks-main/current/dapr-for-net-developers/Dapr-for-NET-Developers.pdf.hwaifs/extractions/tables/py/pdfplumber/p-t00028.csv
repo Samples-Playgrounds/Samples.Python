@@ -1,0 +1,12 @@
+,0
+0,using Dapr.Client
+1,"const string storeName = ""statestore"";"
+2,"const string key = ""counter"""
+3,var daprClient = new DaprClientBuilder().Build();
+4,"var counter = await daprClient.GetStateAsync<int>(storeName, key)"
+5,while (true)
+6,{
+7,"Console.WriteLine($""Counter = {counter++}"")"
+8,"await daprClient.SaveStateAsync(storeName, key, counter);"
+9,await Task.Delay(1000);
+10,}

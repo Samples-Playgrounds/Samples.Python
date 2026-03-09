@@ -1,0 +1,6 @@
+,0
+0,public LoginView()
+1,{
+2,InitializeComponent();
+3,BindingContext = new LoginViewModel(navigationService);
+4,}

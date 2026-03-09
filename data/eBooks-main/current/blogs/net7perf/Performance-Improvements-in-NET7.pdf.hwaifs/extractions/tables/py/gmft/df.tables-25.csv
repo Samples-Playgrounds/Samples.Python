@@ -1,0 +1,10 @@
+,,,,
+0,;,Program.IsValueType() sub,,
+1,,mov,,"rsp,28 rcx,offset MT_System.Int32"
+2,,call,,CORINFO_HELP_TYPEHANDLE_TO_RUNTIMETYPE
+3,,mov,,"rcx,rax"
+4,,mov,,"rax,[7FFCA47C9560]"
+5,,cmp,,"[rcx],ecx"
+6,,add,,"rsp,28"
+7,,jmp,,rax
+8,;,Total bytes,of,code 38

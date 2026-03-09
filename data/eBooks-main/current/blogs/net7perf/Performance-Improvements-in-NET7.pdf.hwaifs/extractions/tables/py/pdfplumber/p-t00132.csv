@@ -1,0 +1,7 @@
+,0
+0,"int wsIndex = target.AsSpan(targetPosition).IndexOfAny(' ', '\u00A0');"
+1,if (wsIndex < 0)
+2,{
+3,return false;
+4,}
+5,wsIndex += targetPosition;

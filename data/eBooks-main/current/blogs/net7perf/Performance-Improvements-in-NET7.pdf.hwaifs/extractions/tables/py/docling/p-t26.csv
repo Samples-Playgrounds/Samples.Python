@@ -1,0 +1,3 @@
+,Method,Runtime,Mean,Ratio
+0,ParseAll,.NET 6.0,26.84 ms,1.00
+1,ParseAll,.NET 7.0,12.63 ms,0.47

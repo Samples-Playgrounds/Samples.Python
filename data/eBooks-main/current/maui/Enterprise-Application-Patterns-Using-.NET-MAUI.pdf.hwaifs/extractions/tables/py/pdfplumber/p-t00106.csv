@@ -1,0 +1,17 @@
+,0
+0,[TestMethod]
+1,public void CheckValidationFailsWhenOnlyForenameHasDataTest()
+2,{
+3,var mockViewModel = new MockViewModel();
+4,"mockViewModel.Forename.Value = ""John"";"
+5,
+6,bool isValid = mockViewModel.Validate();
+7,
+8,Assert.IsFalse(isValid);
+9,Assert.IsNotNull(mockViewModel.Forename.Value);
+10,Assert.IsNull(mockViewModel.Surname.Value);
+11,Assert.IsTrue(mockViewModel.Forename.IsValid);
+12,Assert.IsFalse(mockViewModel.Surname.IsValid);
+13,"Assert.AreEqual(mockViewModel.Forename.Errors.Count(), 0);"
+14,"Assert.AreNotEqual(mockViewModel.Surname.Errors.Count(), 0);"
+15,}

@@ -1,0 +1,9 @@
+,0
+0,"public Task NavigateToAsync(string route, IDictionary<string, object> routeParameters ="
+1,null)
+2,{
+3,return
+4,routeParameters != null
+5,"? Shell.Current.GoToAsync(route, routeParameters)"
+6,: Shell.Current.GoToAsync(route);
+7,}

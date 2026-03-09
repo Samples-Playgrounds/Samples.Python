@@ -1,0 +1,3 @@
+,0
+0,services.AddDbContext<MyDbContext>(options =>
+1,"options.UseSqlServer(""MY DATABASE CONNECTION STRING""));"

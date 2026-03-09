@@ -1,0 +1,3 @@
+,Method,Mean,Ratio
+0,Find,15.388 ns,1.00
+1,FindVectorized,1.747 ns,0.11

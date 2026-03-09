@@ -1,0 +1,6 @@
+,0
+0,services.AddAuthorization(options =>
+1,{
+2,"options.AddPolicy(""CanadiansOnly"", policy => policy.RequireClaim(ClaimTypes.Country,"
+3,"""Canada""));"
+4,});

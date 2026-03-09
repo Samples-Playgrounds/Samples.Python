@@ -1,0 +1,7 @@
+,Service name,Description
+0,webmvc,Container including the ASP.NET Core MVC application consuming the microservices from server-side C#
+1,catalog-api,Container including the Catalog ASP.NET Core Web API microservice
+2,ordering-api,Container including the Ordering ASP.NET Core Web API microservice
+3,sqldata,"Container running SQL Server for Linux, holding the microservices databases"
+4,basket-api,Container with the Basket ASP.NET Core Web API microservice
+5,basketdata,"Container running the REDIS cache service, with the basket database as a REDIS cache"

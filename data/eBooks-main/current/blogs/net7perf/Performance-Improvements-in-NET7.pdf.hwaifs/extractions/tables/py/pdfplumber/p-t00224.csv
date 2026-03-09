@@ -1,0 +1,17 @@
+,0
+0,private readonly byte[] _data = RandomNumberGenerator.GetBytes(128);
+1,
+2,[Benchmark(Baseline = true)]
+3,public byte[] Hash1()
+4,{
+5,using (SHA256 h = SHA256.Create())
+6,{
+7,return h.ComputeHash(_data);
+8,}
+9,}
+10,
+11,[Benchmark]
+12,public byte[] Hash2()
+13,{
+14,return SHA256.HashData(_data);
+15,}

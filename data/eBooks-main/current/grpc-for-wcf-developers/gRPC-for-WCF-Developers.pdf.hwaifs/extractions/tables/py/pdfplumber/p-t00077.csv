@@ -1,0 +1,22 @@
+,0
+0,//
+1,//
+2,builder.Services.AddGrpc();
+3,
+4,var signingKey = ObtainSigningKeySomehow();
+5,
+6,builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+7,.AddJwtBearer(options =>
+8,{
+9,options.TokenValidationParameters =
+10,new TokenValidationParameters
+11,{
+12,"ValidateAudience = false,"
+13,"ValidateIssuer = false,"
+14,"ValidateActor = false,"
+15,"ValidateLifetime = true,"
+16,IssuerSigningKey = signingKey
+17,};
+18,});
+19,//
+20,//

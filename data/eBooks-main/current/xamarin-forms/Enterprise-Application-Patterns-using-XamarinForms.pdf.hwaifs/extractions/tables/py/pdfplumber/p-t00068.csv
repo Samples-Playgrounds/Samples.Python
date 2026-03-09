@@ -1,0 +1,15 @@
+,0
+0,public void ConfigureServices(IServiceCollection services)
+1,{
+2,...
+3,"services.AddIdentityServer(x => x.IssuerUri = ""null"")"
+4,.AddSigningCredential(Certificate.Get())
+5,.AddAspNetIdentity<ApplicationUser>()
+6,.AddConfigurationStore(builder =>
+7,"builder.UseSqlServer(connectionString, options =>"
+8,options.MigrationsAssembly(migrationsAssembly)))
+9,.AddOperationalStore(builder =>
+10,"builder.UseSqlServer(connectionString, options =>"
+11,options.MigrationsAssembly(migrationsAssembly)))
+12,".Services.AddTransient<IProfileService, ProfileService>();"
+13,}

@@ -1,0 +1,31 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Factor</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1 - Code Base</td>
+      <td>A single code base for each microservice, stored in its own repository. Tracked with version control, it can deploy to multiple environments (QA, Staging, Production).</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2 - Dependencies</td>
+      <td>Each microservice isolates and packages its own dependencies, embracing changes without impacting the entire system.</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3 - Configurations</td>
+      <td>Configuration information is moved out of the microservice and externalized through a configuration management tool outside of the code. The same deployment can propagate across environments with the correct configuration applied.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4 - Backing Services</td>
+      <td>Ancillary resources (data stores, caches, message brokers) should be exposed via an addressable URL. Doing so decouples the resource from the application, enabling it to be interchangeable.</td>
+    </tr>
+  </tbody>
+</table>

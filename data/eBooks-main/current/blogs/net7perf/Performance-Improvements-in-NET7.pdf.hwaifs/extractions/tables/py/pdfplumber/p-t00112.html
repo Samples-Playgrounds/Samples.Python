@@ -1,0 +1,138 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>private readonly char[] s_target = new[] { 'z', 'q' };</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>const string Sonnet = """</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Shall I compare thee to a summer's day?</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Thou art more lovely and more temperate:</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Rough winds do shake the darling buds of May,</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>And summer's lease hath all too short a date;</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Sometime too hot the eye of heaven shines,</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>And often is his gold complexion dimm'd;</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>And every fair from fair sometime declines,</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>By chance or nature's changing course untrimm'd;</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>But thy eternal summer shall not fade,</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Nor lose possession of that fair thou ow'st;</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Nor shall death brag thou wander'st in his shade,</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>When in eternal lines to time thou grow'st:</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>So long as men can breathe or eyes can see,</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>So long lives this, and this gives life to thee.</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>""";</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>[Benchmark]</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>public int LastIndexOfAny() =&gt; Sonnet.LastIndexOfAny(s_target);</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>[Benchmark]</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>public int CountLines()</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>int count = 0;</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>foreach (ReadOnlySpan&lt;char&gt; _ in Sonnet.AsSpan().EnumerateLines())</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>count++;</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>return count;</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

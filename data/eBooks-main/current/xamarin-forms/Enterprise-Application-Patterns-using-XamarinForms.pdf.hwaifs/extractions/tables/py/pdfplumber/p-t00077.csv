@@ -1,0 +1,11 @@
+,0
+0,protected virtual void ConfigureAuth(IApplicationBuilder app)
+1,{
+2,"var identityUrl = Configuration.GetValue<string>(""IdentityUrl"");"
+3,app.UseIdentityServerAuthentication(new IdentityServerAuthenticationOptions
+4,{
+5,"Authority = identityUrl.ToString(),"
+6,"ScopeName = ""basket"","
+7,RequireHttpsMetadata = false
+8,});
+9,}

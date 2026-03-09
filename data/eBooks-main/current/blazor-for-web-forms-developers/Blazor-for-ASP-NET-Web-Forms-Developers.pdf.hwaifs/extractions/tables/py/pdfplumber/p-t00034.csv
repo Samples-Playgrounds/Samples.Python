@@ -1,0 +1,26 @@
+,0,1,2,3
+0,Directive,Description,Example,Web Forms equivalent
+1,@layout,"Specifies a layout
+component for the
+component","@layout
+MainLayout","<%@ Page
+MasterPageFile=""~/Site.Master"" %>"
+2,@namespace,"Sets the namespace
+for the component","@namespa
+ce
+MyNamesp
+ace",None
+3,@page,"Specifies the route
+for the component","@page
+""/product/{i
+d}""",<%@ Page %>
+4,@typeparam,"Specifies a generic
+type parameter for
+the component","@typepara
+m TItem",Use code-behind
+5,@using,"Specifies a
+namespace to bring
+into scope","@using
+MyCompon
+entNamesp
+ace",Add namespace in web.config

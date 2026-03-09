@@ -1,0 +1,58 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>private byte[] _data = new</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>HttpClient().GetByteArrayAsync("https://www.gutenberg.org/ebooks/100.txt.utf-8").Result;</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>private Stream _output = new MemoryStream();</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>[Benchmark]</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>public void Compress()</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>_output.Position = 0;</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>using var brotli = new BrotliStream(_output, CompressionMode.Compress, leaveOpen:</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>true);</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>brotli.Write(_data);</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

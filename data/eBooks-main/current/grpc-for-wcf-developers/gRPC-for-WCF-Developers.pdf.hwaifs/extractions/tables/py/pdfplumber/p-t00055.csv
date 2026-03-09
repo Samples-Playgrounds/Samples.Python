@@ -1,0 +1,11 @@
+,0
+0,"public override Task<GetResponse> Get(GetRequest request, ServerCallContext context)"
+1,{
+2,"if (!Guid.TryParse(request.TraderId, out var traderId))"
+3,{
+4,"throw new RpcException(new Status(StatusCode.InvalidArgument, ""traderId must be a"
+5,"UUID""));"
+6,}
+7,
+8,"return base.Get(request, context);"
+9,}

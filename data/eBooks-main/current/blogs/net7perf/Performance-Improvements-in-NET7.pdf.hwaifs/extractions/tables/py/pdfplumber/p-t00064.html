@@ -1,0 +1,150 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>static unsafe bool Contains(ReadOnlySpan&lt;byte&gt; haystack, byte needle)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>if (Vector128.IsHardwareAccelerated &amp;&amp; haystack.Length &gt;= Vector128&lt;byte&gt;.Count)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ref byte current = ref MemoryMarshal.GetReference(haystack);</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Vector128&lt;byte&gt; target = Vector128.Create(needle);</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>ref byte endMinusOneVector = ref Unsafe.Add(ref current, haystack.Length -</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Vector128&lt;byte&gt;.Count);</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>do</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>if (Vector128.EqualsAny(target, Vector128.LoadUnsafe(ref current)))</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>return true;</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>current = ref Unsafe.Add(ref current, Vector128&lt;byte&gt;.Count);</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>while (Unsafe.IsAddressLessThan(ref current, ref endMinusOneVector));</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>if (Vector128.EqualsAny(target, Vector128.LoadUnsafe(ref endMinusOneVector)))</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>return true;</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>else</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>for (int i = 0; i &lt; haystack.Length; i++)</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>if (haystack[i] == needle)</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>return true;</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

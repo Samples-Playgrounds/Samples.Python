@@ -1,0 +1,118 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>// C# EXAMPLE OF AN ORDER AGGREGATE BEING PERSISTED WITH AZURE COSMOS DB API</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>// *** Domain Model Code ***</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>// Aggregate: Create an Order object with its child entities and/or value objects.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>// Then, use AggregateRoot's methods to add the nested objects so invariants and</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>// logic is consistent across the nested properties (value objects and entities).</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Order orderAggregate = new Order</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Id = "2024001",</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>OrderDate = new DateTime(2005, 7, 1),</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>BuyerId = "1234567",</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>PurchaseOrderNumber = "PO18009186470"</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Address address = new Address</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Street = "100 One Microsoft Way",</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>City = "Redmond",</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>State = "WA",</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Zip = "98052",</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Country = "U.S."</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>orderAggregate.UpdateAddress(address);</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>OrderItem orderItem1 = new OrderItem</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>{</td>
+    </tr>
+  </tbody>
+</table>

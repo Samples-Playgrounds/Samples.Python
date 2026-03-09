@@ -1,0 +1,15 @@
+,0
+0,private ImmutableArray<int>.Builder _builder = ImmutableArray.CreateBuilder<int>();
+1,
+2,[GlobalSetup]
+3,public void Setup()
+4,{
+5,"_builder.AddRange(Enumerable.Range(0, 1_000));"
+6,}
+7,
+8,[Benchmark]
+9,public void Sort()
+10,{
+11,"_builder.Sort((left, right) => right.CompareTo(left));"
+12,"_builder.Sort((left, right) => left.CompareTo(right));"
+13,}

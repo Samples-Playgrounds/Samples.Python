@@ -1,0 +1,16 @@
+,0,1,2
+0,Host,Microsoft technologies,Third-party (Azure pluggable)
+1,"DevOps for
+Docker apps","• Azure DevOps Services
+• Microsoft Team Foundation
+Server
+• GitHub
+• Azure Kubernetes Service
+(AKS)\","• GitHub, Git, Subversion, etc.
+• Jenkins, Chef, Puppet, Velocity, CircleCI,
+TravisCI, etc.
+• On-premises Docker Datacenter, Kubernetes,
+Mesos DC/OS, etc.\"
+2,"Management
+and
+monitoring",• Azure Monitor,"• Marathon, Chronos, etc.\"

@@ -1,0 +1,62 @@
+,0
+0,protected virtual R CreateResultForDuplicateRequest()
+1,{
+2,return default(R);
+3,}
+4,
+5,/// <summary>
+6,/// This method handles the command. It just ensures that no other request exists with
+7,"the same ID, and if this is the case"
+8,/// just enqueues the original inner command.
+9,/// </summary>
+10,"/// <param name=""message"">IdentifiedCommand which contains both original command &"
+11,request ID</param>
+12,/// <returns>Return value of inner command or default value if request same ID was
+13,found</returns>
+14,"public async Task<R> Handle(IdentifiedCommand<T, R> message, CancellationToken"
+15,cancellationToken)
+16,{
+17,var alreadyExists = await _requestManager.ExistAsync(message.Id);
+18,if (alreadyExists)
+19,{
+20,return CreateResultForDuplicateRequest();
+21,}
+22,else
+23,{
+24,await _requestManager.CreateRequestForCommandAsync<T>(message.Id);
+25,try
+26,{
+27,var command = message.Command;
+28,var commandName = command.GetGenericTypeName();
+29,var idProperty = string.Empty;
+30,var commandId = string.Empty;
+31,
+32,switch (command)
+33,{
+34,case CreateOrderCommand createOrderCommand:
+35,idProperty = nameof(createOrderCommand.UserId);
+36,commandId = createOrderCommand.UserId;
+37,break;
+38,
+39,case CancelOrderCommand cancelOrderCommand:
+40,idProperty = nameof(cancelOrderCommand.OrderNumber);
+41,"commandId = $""{cancelOrderCommand.OrderNumber}"";"
+42,break;
+43,
+44,case ShipOrderCommand shipOrderCommand:
+45,idProperty = nameof(shipOrderCommand.OrderNumber);
+46,"commandId = $""{shipOrderCommand.OrderNumber}"";"
+47,break;
+48,
+49,default:
+50,"idProperty = ""Id?"";"
+51,"commandId = ""n/a"";"
+52,break;
+53,}
+54,
+55,_logger.LogInformation(
+56,"""----- Sending command: {CommandName} - {IdProperty}: {CommandId}"
+57,"({@Command})"","
+58,"commandName,"
+59,"idProperty,"
+60,"commandId,"

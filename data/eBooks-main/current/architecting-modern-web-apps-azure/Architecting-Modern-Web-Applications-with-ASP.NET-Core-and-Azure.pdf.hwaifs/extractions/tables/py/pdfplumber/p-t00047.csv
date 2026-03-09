@@ -1,0 +1,6 @@
+,0,1,2
+0,Factor,jQuery,Angular
+1,Abstracts the DOM,Yes,Yes
+2,AJAX Support,Yes,Yes
+3,Declarative Data Binding,No,Yes
+4,MVC-style Routing,No,Yes

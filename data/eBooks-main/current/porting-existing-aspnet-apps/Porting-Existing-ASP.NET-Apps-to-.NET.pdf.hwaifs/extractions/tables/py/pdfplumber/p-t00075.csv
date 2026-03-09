@@ -1,0 +1,26 @@
+,0
+0,public class ApplicationModule : Module
+1,{
+2,private bool _useMockData;
+3,
+4,public ApplicationModule(bool useMockData)
+5,{
+6,_useMockData = useMockData;
+7,}
+8,
+9,protected override void Load(ContainerBuilder builder)
+10,{
+11,if (_useMockData)
+12,{
+13,builder.RegisterType<CatalogServiceMock>()
+14,.As<ICatalogService>()
+15,.SingleInstance();
+16,}
+17,else
+18,{
+19,builder.RegisterType<CatalogService>()
+20,.As<ICatalogService>()
+21,.InstancePerLifetimeScope();
+22,}
+23,}
+24,}

@@ -1,0 +1,7 @@
+,0
+0,@using Microsoft.AspNetCore.Components.Web
+1,@using Microsoft.AspNetCore.Components.Web.Virtualization
+2,@using Microsoft.AspNetCore.Components.WebAssembly.Http
+3,@using Microsoft.JSInterop
+4,@using BlazorApp1
+5,@using BlazorApp1.Shared

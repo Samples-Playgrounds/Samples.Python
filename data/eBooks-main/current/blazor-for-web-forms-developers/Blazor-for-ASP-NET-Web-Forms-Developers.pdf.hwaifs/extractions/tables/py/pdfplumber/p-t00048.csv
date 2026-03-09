@@ -1,0 +1,14 @@
+,0
+0,"<%@ Page Title=""Name"" Language=""C#"" MasterPageFile=""~/Site.Master"" AutoEventWireup=""true"""
+1,"CodeBehind=""Name.aspx.cs"" Inherits=""WebApplication1.Name"" %>"
+2,
+3,"<asp:Content ID=""BodyContent"" ContentPlaceHolderID=""MainContent"" runat=""server"">"
+4,<div>
+5,What is your name?<br />
+6,"<asp:TextBox ID=""TextBox1"" runat=""server""></asp:TextBox>"
+7,"<asp:Button ID=""Button1"" runat=""server"" Text=""Submit"" OnClick=""Button1_Click"" />"
+8,</div>
+9,<div>
+10,"<asp:Literal ID=""Literal1"" runat=""server"" />"
+11,</div>
+12,</asp:Content>

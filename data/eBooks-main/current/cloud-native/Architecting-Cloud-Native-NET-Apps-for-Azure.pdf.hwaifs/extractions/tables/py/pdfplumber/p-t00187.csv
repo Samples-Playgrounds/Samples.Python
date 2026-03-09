@@ -1,0 +1,18 @@
+,0
+0,"provider ""azurerm"" {"
+1,"version = ""=1.28.0"""
+2,}
+3,
+4,"resource ""azurerm_resource_group"" ""testrg"" {"
+5,"name = ""production"""
+6,"location = ""West US"""
+7,}
+8,
+9,"resource ""azurerm_storage_account"" ""testsa"" {"
+10,"name = ""${var.storageAccountName}"""
+11,"resource_group_name = ""${azurerm_resource_group.testrg.name}"""
+12,"location = ""${var.region}"""
+13,"account_tier = ""${var.tier}"""
+14,"account_replication_type = ""${var.replicationType}"""
+15,
+16,}

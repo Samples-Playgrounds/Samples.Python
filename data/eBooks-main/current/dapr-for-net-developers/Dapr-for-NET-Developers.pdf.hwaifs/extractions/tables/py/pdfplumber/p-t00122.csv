@@ -1,0 +1,9 @@
+,0
+0,readinessProbe:
+1,httpGet:
+2,path: v1.0/healthz
+3,port: 3500
+4,initialDelaySeconds: 5
+5,periodSeconds: 10
+6,timeoutSeconds : 5
+7,failureThreshold: 3

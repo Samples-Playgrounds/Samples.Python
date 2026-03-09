@@ -1,0 +1,11 @@
+,0
+0,<AuthorizeView>
+1,<Authorized>
+2,"<h1>Hello, @context.User.Identity.Name!</h1>"
+3,<p>You can only see this content if you are authenticated.</p>
+4,</Authorized>
+5,<NotAuthorized>
+6,<h1>Authentication Failure!</h1>
+7,<p>You are not signed in.</p>
+8,</NotAuthorized>
+9,</AuthorizeView>

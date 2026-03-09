@@ -1,0 +1,38 @@
+,0
+0,using Microsoft.AspNetCore.Hosting;
+1,using Microsoft.AspNetCore.Identity;
+2,using Microsoft.AspNetCore.Mvc.Testing;
+3,using Microsoft.EntityFrameworkCore;
+4,using Microsoft.eShopWeb.Infrastructure.Data;
+5,using Microsoft.eShopWeb.Infrastructure.Identity;
+6,using Microsoft.eShopWeb.Web;
+7,using Microsoft.Extensions.DependencyInjection;
+8,using Microsoft.Extensions.Logging;
+9,using System;
+10,
+11,namespace Microsoft.eShopWeb.FunctionalTests.Web;
+12,public class WebTestFixture : WebApplicationFactory<Startup>
+13,{
+14,protected override void ConfigureWebHost(IWebHostBuilder builder)
+15,{
+16,"builder.UseEnvironment(""Testing"");"
+17,
+18,builder.ConfigureServices(services =>
+19,{
+20,services.AddEntityFrameworkInMemoryDatabase();
+21,
+22,// Create a new service provider.
+23,var provider = services
+24,.AddEntityFrameworkInMemoryDatabase()
+25,.BuildServiceProvider();
+26,
+27,// Add a database context (ApplicationDbContext) using an in-memory
+28,// database for testing.
+29,services.AddDbContext<CatalogContext>(options =>
+30,{
+31,"options.UseInMemoryDatabase(""InMemoryDbForTesting"");"
+32,options.UseInternalServiceProvider(provider);
+33,});
+34,
+35,services.AddDbContext<AppIdentityDbContext>(options =>
+36,{

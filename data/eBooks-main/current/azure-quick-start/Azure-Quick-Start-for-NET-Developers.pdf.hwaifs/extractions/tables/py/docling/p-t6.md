@@ -1,0 +1,10 @@
+|    |                             | Database   | Cosmos DB   | Blob   | Table   | File   | PostgreSQL, MySQL   | SQL Data Warehouse   | Data Lake Store   |
+|---:|:----------------------------|:-----------|:------------|:-------|:--------|:-------|:--------------------|:---------------------|:------------------|
+|  0 | Relational data             |            |             |        |         |        |                     |                      |                   |
+|  1 | Unstructured data           |            |             |        |         |        |                     |                      |                   |
+|  2 | Semistructured data         |            |             |        |         |        |                     |                      |                   |
+|  3 | Files on disk               |            |             |        |         |        |                     |                      |                   |
+|  4 | Store large data            |            |             |        |         |        |                     |                      |                   |
+|  5 | Store small data            |            |             |        |         |        |                     |                      |                   |
+|  6 | Geographic data replication |            |             |        |         |        |                     |                      |                   |
+|  7 | Tunable data consistency    |            |             |        |         |        |                     |                      |                   |

@@ -1,0 +1,18 @@
+|    |     |                                                                                                                                                                                     |
+|---:|:----|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  0 | •   | List catalog items                                                                                                                                                                  |
+|  1 | •   | Filter items by type                                                                                                                                                                |
+|  2 | •   | Filter items by brand                                                                                                                                                               |
+|  3 | •   | Add items to the shopping basket                                                                                                                                                    |
+|  4 | •   | Edit or remove items from the basket                                                                                                                                                |
+|  5 | •   | Checkout                                                                                                                                                                            |
+|  6 | •   | Register an account                                                                                                                                                                 |
+|  7 | •   | Sign in                                                                                                                                                                             |
+|  8 | •   | Sign out                                                                                                                                                                            |
+|  9 | •   | Review orders                                                                                                                                                                       |
+| 10 | The | application also has the following non-functional requirements:                                                                                                                     |
+| 11 | •   | It needs to be highly available and it must scale automatically to meet increased traffic (and scale back down once traffic subsides).                                              |
+| 12 | •   | It should provide easy-to-use monitoring of its health and diagnostic logs to help troubleshoot any issues it encounters.                                                           |
+| 13 | •   | It should support an agile development process, including support for continuous integration and deployment (CI/CD).                                                                |
+| 14 | •   | In addition to the two web front ends (traditional and Single Page Application), the application must also support mobile client apps running different kinds of operating systems. |
+| 15 | •   | It should support cross-platform hosting and cross-platform development.                                                                                                            |

@@ -1,0 +1,21 @@
+,0
+0,service ClockStreamer {
+1,rpc Subscribe(ClockSubscribeRequest) returns (stream ClockMessage);
+2,}
+3,
+4,
+5,public class ClockStreamerService : ClockStreamer.ClockStreamerBase
+6,{
+7,"public override async Task Subscribe(ClockSubscribeRequest request,"
+8,"IServerStreamWriter<ClockMessage> responseStream,"
+9,ServerCallContext context)
+10,{
+11,while (!context.CancellationToken.IsCancellationRequested)
+12,{
+13,var time = DateTimeOffset.UtcNow;
+14,"await responseStream.WriteAsync(new ClockMessage { message = $""The time is"
+15,"{time:t}."" });"
+16,"await Task.Delay(TimeSpan.FromSeconds(10), context.CancellationToken);"
+17,}
+18,}
+19,}

@@ -1,0 +1,6 @@
+,0,1,2,3,4,5,6
+0,Important,,,,,,
+1,Make sure your,Program,(or,Startup,) class does not contain an,app.UseHttpsRedirection,call to
+2,"redirect clients to the HTTPS endpoint. This will not work with actors. By design, a Dapr sidecar sends",,,,,,
+3,requests over unencrypted HTTP by default. The HTTPS middleware will block these requests when,,,,,,
+4,enabled.,,,,,,

@@ -1,0 +1,16 @@
+,0
+0,"<?xml version=""1.0"" encoding=""utf-8""?>"
+1,<configuration>
+2,"<location path=""."" inheritInChildApplications=""false"">"
+3,<system.webServer>
+4,<handlers>
+5,"<add name=""aspNetCore"" path=""*"" verb=""*"" modules=""AspNetCoreModuleV2"""
+6,"resourceType=""Unspecified"" />"
+7,</handlers>
+8,"<aspNetCore processPath="".\MyApp.exe"""
+9,"stdoutLogEnabled=""false"""
+10,"stdoutLogFile="".\logs\stdout"""
+11,"hostingModel=""inprocess"" />"
+12,</system.webServer>
+13,</location>
+14,</configuration>

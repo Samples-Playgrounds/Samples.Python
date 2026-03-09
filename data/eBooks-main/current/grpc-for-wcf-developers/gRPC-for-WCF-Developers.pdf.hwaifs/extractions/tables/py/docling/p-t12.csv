@@ -1,0 +1,9 @@
+,OperationContract property,gRPC
+0,Action,"A URI identifies the operation. gRPC uses the name of package, service, and rpc from the .proto file."
+1,AsyncPattern,All gRPC service methods return Task objects.
+2,IsInitiating,See the paragraph after this table.
+3,IsOneWay,One-way gRPC methods return Empty results or use client streaming.
+4,IsTerminating,See the paragraph after this table.
+5,Name,This property is SOAP related and has no meaning in gRPC.
+6,ProtectionLevel,There's no message encryption. Network encryption is handled at the transport layer (TLS over HTTP/2).
+7,ReplyAction,This property is SOAP related and has no meaning in gRPC.

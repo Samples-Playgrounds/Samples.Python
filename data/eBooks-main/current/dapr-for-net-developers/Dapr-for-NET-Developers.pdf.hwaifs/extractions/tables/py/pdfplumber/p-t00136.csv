@@ -1,0 +1,22 @@
+,0
+0,apiVersion: dapr.io/v1alpha1
+1,kind: Component
+2,metadata:
+3,name: eshop-azurekv-secret-store
+4,namespace: eshop
+5,spec:
+6,type: secretstores.azure.keyvault
+7,version: v1
+8,metadata:
+9,- name: vaultName
+10,value: [your_keyvault_name]
+11,- name: spnTenantId
+12,"value: ""619926af-a7c3-4e95-93ed-4ecc4e3e652b"""
+13,- name: spnClientId
+14,"value: ""6cf48032-6c38-43be-9d6f-2a43ce736b09"""
+15,- name: spnCertificate
+16,secretKeyRef:
+17,name: [k8s_spn_secret_name]
+18,key: [pfx_certificate_file_local_name]
+19,auth:
+20,secretStore: kubernetes

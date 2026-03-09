@@ -1,0 +1,62 @@
+,0
+0,"<asp:Image runat=""server"" CssClass=""col-md-6 esh-picture"" ImageUrl='<%#""/Pics/"""
+1,+ product.PictureFileName%>' />
+2,"<dl class=""col-md-6 dl-horizontal"">"
+3,<dt>Name
+4,</dt>
+5,
+6,<dd>
+7,"<asp:Label runat=""server"" Text='<%#product.Name%>' />"
+8,</dd>
+9,
+10,<dt>Description
+11,</dt>
+12,
+13,<dd>
+14,"<asp:Label runat=""server"" Text='<%#product.Description%>' />"
+15,</dd>
+16,
+17,<dt>Brand
+18,</dt>
+19,
+20,<dd>
+21,"<asp:Label runat=""server"" Text='<%#product.CatalogBrand.Brand%>' />"
+22,</dd>
+23,
+24,<dt>Type
+25,</dt>
+26,
+27,<dd>
+28,"<asp:Label runat=""server"" Text='<%#product.CatalogType.Type%>' />"
+29,</dd>
+30,<dt>Price
+31,</dt>
+32,
+33,<dd>
+34,"<asp:Label CssClass=""esh-price"" runat=""server"""
+35,Text='<%#product.Price%>' />
+36,</dd>
+37,
+38,<dt>Picture name
+39,</dt>
+40,
+41,<dd>
+42,"<asp:Label runat=""server"" Text='<%#product.PictureFileName%>' />"
+43,</dd>
+44,
+45,<dt>Stock
+46,</dt>
+47,
+48,<dd>
+49,"<asp:Label runat=""server"" Text='<%#product.AvailableStock%>' />"
+50,</dd>
+51,
+52,<dt>Restock
+53,</dt>
+54,
+55,<dd>
+56,"<asp:Label runat=""server"" Text='<%#product.RestockThreshold%>' />"
+57,</dd>
+58,
+59,<dt>Max stock
+60,</dt>

@@ -1,0 +1,12 @@
+,0
+0,> kubectl apply -f .\stockweb.yml
+1,deployment.apps/stockweb created
+2,service/stockweb created
+3,
+4,> kubectl get deployment stockweb --namespace stocks
+5,NAME READY UP-TO-DATE AVAILABLE AGE
+6,stockweb 1/1 1 1 8s
+7,
+8,> kubectl get service stockweb --namespace stocks
+9,NAME TYPE CLUSTER-IP EXTERNAL-IP PORT(S) AGE
+10,stockweb NodePort 10.106.141.5 <none> 80:32564/TCP 13s

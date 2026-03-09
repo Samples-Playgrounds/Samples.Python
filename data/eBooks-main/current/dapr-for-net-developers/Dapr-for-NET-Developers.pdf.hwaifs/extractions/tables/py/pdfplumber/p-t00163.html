@@ -1,0 +1,122 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>private async Task&lt;bool&gt; TryUpdateOrderStatusAsync(OrderStatus expectedOrderStatus,</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>OrderStatus newOrderStatus)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>var orderStatus = await</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>StateManager.TryGetStateAsync&lt;OrderStatus&gt;(OrderStatusStateName);</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>if (!orderStatus.HasValue)</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>_logger.LogWarning(</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>"Order with Id: {OrderId} cannot be updated because it doesn't exist",</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>OrderId);</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>return false;</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>if (orderStatus.Value.Id != expectedOrderStatus.Id)</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>_logger.LogWarning(</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>"Order with Id: {OrderId} is in status {Status} instead of expected status</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>{ExpectedStatus}",</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>OrderId, orderStatus.Value.Name, expectedOrderStatus.Name);</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>return false;</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>await StateManager.SetStateAsync(OrderStatusStateName, newOrderStatus);</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>return true;</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

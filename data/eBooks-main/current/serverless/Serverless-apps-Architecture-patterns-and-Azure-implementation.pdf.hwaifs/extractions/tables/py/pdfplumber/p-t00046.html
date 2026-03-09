@@ -1,0 +1,70 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>[FunctionName("PlaceOrder")]</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>public static async Task&lt;string&gt; PlaceOrder([OrchestrationTrigger]</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>DurableOrchestrationContext context)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>OrderRequestData orderData = context.GetInput&lt;OrderRequestData&gt;();</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>await context.CallActivityAsync&lt;bool&gt;("CheckAndReserveInventory", orderData);</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>await context.CallActivityAsync&lt;string&gt;("ProcessPayment", orderData);</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>string trackingNumber = await context.CallActivityAsync&lt;string&gt;("ScheduleShipping",</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>orderData);</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>await context.CallActivityAsync&lt;string&gt;("EmailCustomer", trackingNumber);</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>return trackingNumber;</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,106 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>public class ReminderActor : Actor, IReminderActor, IRemindable</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>public ReminderActor(ActorHost host) : base(host)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>public Task SetReminderAsync(string text)</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>return RegisterReminderAsync(</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>"DoNotForget",</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Encoding.UTF8.GetBytes(text),</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>TimeSpan.FromSeconds(3),</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>TimeSpan.FromMilliseconds(-1));</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>public Task ReceiveReminderAsync(</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>string reminderName, byte[] state,</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>TimeSpan dueTime, TimeSpan period)</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>if (reminderName == "DoNotForget")</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>var text = Encoding.UTF8.GetString(state);</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Logger.LogInformation($"Don't forget: {text}");</td>
+    </tr>
+  </tbody>
+</table>

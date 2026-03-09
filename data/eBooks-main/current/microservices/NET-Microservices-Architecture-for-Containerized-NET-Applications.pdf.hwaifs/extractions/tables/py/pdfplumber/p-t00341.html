@@ -1,0 +1,122 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>// Program.cs</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>var identityUrl = builder.Configuration.GetValue&lt;string&gt;("IdentityUrl");</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>// Add Authentication services</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>builder.Services.AddAuthentication(options =&gt;</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>options.DefaultAuthenticateScheme =</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme;</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>options.DefaultChallengeScheme =</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme;</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>}).AddJwtBearer(options =&gt;</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>options.Authority = identityUrl;</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>options.RequireHttpsMetadata = false;</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>options.Audience = "orders";</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>});</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>// Build the app</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>app.UseAuthentication();</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>//…</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>app.UseEndpoints(endpoints =&gt;</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>//...</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>});</td>
+    </tr>
+  </tbody>
+</table>

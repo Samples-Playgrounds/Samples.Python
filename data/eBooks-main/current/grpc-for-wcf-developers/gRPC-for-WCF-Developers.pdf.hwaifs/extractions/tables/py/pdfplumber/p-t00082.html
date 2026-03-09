@@ -1,0 +1,90 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>var handler = new HttpClientHandler();</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>handler.ClientCertificates.Add(cert);</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>var httpClient = new HttpClient(handler);</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>var callCredentials = CallCredentials.FromInterceptor(((context, metadata) =&gt;</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>metadata.Add("Authorization", $"Bearer {_token}");</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>return Task.CompletedTask;</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>}));</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>var channelCredentials = ChannelCredentials.Create(new SslCredentials(), callCredentials);</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>var channel = GrpcChannel.ForAddress("https://localhost:5001/", new GrpcChannelOptions</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>HttpClient = httpClient,</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Credentials = channelCredentials</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>});</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>var grpc = new Portfolios.PortfoliosClient(channel);</td>
+    </tr>
+  </tbody>
+</table>

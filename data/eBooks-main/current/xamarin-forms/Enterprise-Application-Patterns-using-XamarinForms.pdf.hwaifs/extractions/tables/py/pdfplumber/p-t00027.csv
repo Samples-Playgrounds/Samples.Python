@@ -1,0 +1,7 @@
+,0
+0,Tip: Dependency injection containers are not always suitable
+1,Dependency injection introduces additional complexity and requirements that might not be
+2,"appropriate or useful to small apps. If a class does not have any dependencies, or is not a"
+3,"dependency for other types, it might not make sense to put it in the container. In addition, if a class"
+4,"has a single set of dependencies that are integral to the type and will never change, it might not"
+5,make sense to put it in the container.

@@ -1,0 +1,5 @@
+,0,1,2,3,4
+0,,IaaS,PaaS,Container,Serverless
+1,Scale,VM,Instance,App,Function
+2,Abstracts,Hardware,Platform,OS Host,Runtime
+3,Unit,VM,Project,Image,Code

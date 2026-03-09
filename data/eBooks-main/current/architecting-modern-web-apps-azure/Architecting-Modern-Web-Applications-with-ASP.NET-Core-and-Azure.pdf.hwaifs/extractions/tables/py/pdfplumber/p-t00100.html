@@ -1,0 +1,62 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>[HttpGet("[controller]/pic/{id}")]</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>public IActionResult GetImage(int id)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>byte[] imageBytes;</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>try</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>imageBytes = _imageService.GetImageBytesById(id);</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>catch (CatalogImageMissingException ex)</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>_logger.LogWarning($"No image found for id: {id}");</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>return NotFound();</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

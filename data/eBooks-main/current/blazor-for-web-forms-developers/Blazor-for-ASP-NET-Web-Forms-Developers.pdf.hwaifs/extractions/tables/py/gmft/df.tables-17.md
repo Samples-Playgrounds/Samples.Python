@@ -1,0 +1,17 @@
+|    | Module                  | ASP.NET 4.x module          | ASP.NET Core option             |
+|---:|:------------------------|:----------------------------|:--------------------------------|
+|  0 | Default document        | DefaultDocumentModule       | Default Files Middleware        |
+|  1 | Directory browsing      | DirectoryListingModule      | Directory Browsing Middleware   |
+|  2 | Dynamic compression     | DynamicCompressionModule    | Response Compression Middleware |
+|  3 | Failed requests tracing | FailedRequestsTracingModule | ASP.NET Core Logging            |
+|  4 | File caching            | FileCacheModule             | Response Caching Middleware     |
+|  5 | HTTP caching            | HttpCacheModule             | Response Caching Middleware     |
+|  6 | HTTP logging            | HttpLoggingModule           | ASP.NET Core Logging            |
+|  7 | HTTP redirection        | HttpRedirectionModule       | URL Rewriting Middleware        |
+|  8 | ISAPI filters           | IsapiFilterModule           | Middleware                      |
+|  9 | ISAPI                   | IsapiModule                 | Middleware                      |
+| 10 | Request filtering       | RequestFilteringModule      | URL Rewriting Middleware IRule  |
+| 11 | URL rewriting†          | RewriteModule               | URL Rewriting Middleware        |
+| 12 | Static compression      | StaticCompressionModule     | Response Compression Middleware |
+| 13 | Static content          | StaticFileModule            | Static File Middleware          |
+| 14 | URL authorization       | UrlAuthorizationModule      | ASP.NET Core Identity           |

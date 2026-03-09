@@ -1,0 +1,4 @@
+,0
+0,Note: The NavigationService used by the app is designed only to perform hierarchical
+1,navigation between ContentPage instances. Using the service to navigate between other page
+2,types might result in unexpected behavior.

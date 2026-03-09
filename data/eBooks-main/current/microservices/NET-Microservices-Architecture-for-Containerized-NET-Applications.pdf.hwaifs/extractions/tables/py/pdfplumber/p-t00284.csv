@@ -1,0 +1,14 @@
+,0
+0,{
+1,"order.AddOrderItem(item.ProductId, item.ProductName, item.UnitPrice,"
+2,"item.Discount, item.PictureUrl, item.Units);"
+3,}
+4,
+5,"_logger.LogInformation(""----- Creating Order - Order: {@Order}"", order);"
+6,
+7,_orderRepository.Add(order);
+8,
+9,return await _orderRepository.UnitOfWork
+10,.SaveEntitiesAsync(cancellationToken);
+11,}
+12,}

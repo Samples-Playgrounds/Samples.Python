@@ -1,0 +1,5 @@
+Exception reading text with epub2txt from EPUB document source = ../../../../../../../data/epub/Around the World in 28 Languages.epub : name 'source' is not definedTraceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/epub/epub2txt/api_text_extraction_epub2txt.py", line 31, in extract_text_to_file_from_epub_document
+    result_txt = epub2txt(source)
+                          ^^^^^^
+NameError: name 'source' is not defined

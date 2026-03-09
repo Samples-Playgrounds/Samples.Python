@@ -1,0 +1,5 @@
+,,,
+0,@code,{,
+1,{,protected override async Task,OnInitializedAsync()
+2,,var client = var response = await response.EnsureStatusCode();,"factory.CreateClient(""github""); client.GetAsync(""repos/dotnet/docs/issues"");"
+3,,,var content = await response.Content.ReadAsStringAsync();

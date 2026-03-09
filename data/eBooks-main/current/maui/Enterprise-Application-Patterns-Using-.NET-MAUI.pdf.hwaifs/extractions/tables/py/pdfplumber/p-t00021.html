@@ -1,0 +1,62 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>public abstract class ExtendedBindableObject : BindableObject</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>public void RaisePropertyChanged&lt;T&gt;(Expression&lt;Func&lt;T&gt;&gt; property)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>var name = GetMemberInfo(property).Name;</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>OnPropertyChanged(name);</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>private MemberInfo GetMemberInfo(Expression expression)</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>// Omitted for brevity ...</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

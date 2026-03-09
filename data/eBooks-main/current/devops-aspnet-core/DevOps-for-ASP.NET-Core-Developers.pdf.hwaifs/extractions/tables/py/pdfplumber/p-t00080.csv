@@ -1,0 +1,22 @@
+,0
+0,name: .NET
+1,
+2,on:
+3,workflow_dispatch:
+4,inputs:
+5,reason:
+6,description: 'The reason for running the workflow'
+7,required: true
+8,default: 'Manual build from GitHub UI'
+9,push:
+10,branches: [ main ]
+11,pull_request:
+12,branches: [ main ]
+13,
+14,env:
+15,"app-name: ""cd-simplefeedreader"""
+16,"rg-name: ""cd-dotnetactions"""
+17,
+18,jobs:
+19,build:
+20,

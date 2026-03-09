@@ -1,0 +1,14 @@
+,0
+0,<ErrorBoundary>
+1,<ChildContent>
+2,<Counter />
+3,</ChildContent>
+4,<ErrorContent>
+5,Oops! The counter isn't working right now; please try again later.
+6,</ErrorContent>
+7,</ErrorBoundary>
+8,"If you don’t need to specify custom error content, you can just wrap the component"
+9,directly:
+10,<ErrorBoundary>
+11,<Counter />
+12,</ErrorBoundary>

@@ -1,0 +1,40 @@
+,0
+0,public static int Main(string[] args)
+1,{
+2,var configuration = GetConfiguration();
+3,
+4,Log.Logger = CreateSerilogLogger(configuration);
+5,
+6,try
+7,{
+8,"Log.Information(""Configuring web host ({ApplicationContext})..."", AppName);"
+9,"var host = CreateHostBuilder(configuration, args);"
+10,
+11,"Log.Information(""Applying migrations ({ApplicationContext})..."", AppName);"
+12,"host.MigrateDbContext<CatalogContext>((context, services) =>"
+13,{
+14,var env = services.GetService<IWebHostEnvironment>();
+15,var settings = services.GetService<IOptions<CatalogSettings>>();
+16,var logger = services.GetService<ILogger<CatalogContextSeed>>();
+17,
+18,new CatalogContextSeed()
+19,".SeedAsync(context, env, settings, logger)"
+20,.Wait();
+21,})
+22,".MigrateDbContext<IntegrationEventLogContext>((_, __) => { });"
+23,
+24,"Log.Information(""Starting web host ({ApplicationContext})..."", AppName);"
+25,host.Run();
+26,
+27,return 0;
+28,}
+29,catch (Exception ex)
+30,{
+31,"Log.Fatal(ex, ""Program terminated unexpectedly ({ApplicationContext})!"", AppName);"
+32,return 1;
+33,}
+34,finally
+35,{
+36,Log.CloseAndFlush();
+37,}
+38,}

@@ -1,0 +1,4 @@
+,0,1,2,3,4,5
+0,Method,Runtime,Mean,Ratio,Allocated,Alloc Ratio
+1,RegSz,.NET 6.0,6.266 us,1.00,200 B,1.00
+2,RegSz,.NET 7.0,3.182 us,0.51,96 B,0.48

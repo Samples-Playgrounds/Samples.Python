@@ -1,0 +1,86 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>static async Task DisplayAsync(IAsyncStreamReader&lt;StockTickerUpdate&gt; stream,</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>CancellationToken token)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>try</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>await foreach (var update in stream.ReadAllAsync(token))</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Console.WriteLine($"{update.Symbol}: {update.Price}");</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>catch (RpcException e) when (e.StatusCode == StatusCode.Cancelled)</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>return;</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>catch (OperationCanceledException)</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Console.WriteLine("Finished.");</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

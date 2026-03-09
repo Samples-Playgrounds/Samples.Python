@@ -1,0 +1,114 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>public class CartController : Controller</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>//…</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>public async Task&lt;IActionResult&gt; Index()</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>try</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>var user = _appUserParser.Parse(HttpContext.User);</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>//Http requests using the Typed Client (Service Agent)</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>var vm = await _basketSvc.GetBasket(user);</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>return View(vm);</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>catch (BrokenCircuitException)</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>// Catches error when Basket.api is in circuit-opened mode</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>HandleBrokenCircuitException();</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>return View();</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>private void HandleBrokenCircuitException()</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>TempData["BasketInoperativeMsg"] = "Basket Service is inoperative, please try later</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>on. (Business message due to Circuit-Breaker)";</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

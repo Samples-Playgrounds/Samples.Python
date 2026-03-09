@@ -1,0 +1,6 @@
+,0
+0,public static TimeSpan FromSeconds(double value)
+1,{
+2,double ticks = value * 10_000_000;
+3,return ticks == long.MaxValue ? TimeSpan.MaxValue : new TimeSpan((long)ticks);
+4,}

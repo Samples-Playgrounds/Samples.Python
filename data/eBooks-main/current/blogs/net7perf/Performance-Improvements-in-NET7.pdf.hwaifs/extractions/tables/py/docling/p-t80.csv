@@ -1,0 +1,3 @@
+,Method,Runtime,Mean,Ratio
+0,Compress,.NET 6.0,"9,807.0 ms",1.00
+1,Compress,.NET 7.0,133.1 ms,0.01

@@ -1,0 +1,90 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>public class ThingLogService : Protos.ThingLog.ThingLogBase</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>private static readonly ConnectionClosedResponse EmptyResponse = new</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>ConnectionClosedResponse();</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>private readonly ILogger&lt;ThingLogService&gt; _logger;</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>public ThingLogService(ILogger&lt;ThingLogService&gt; logger)</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>_logger = logger;</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>public override async Task&lt;CompletedResponse&gt; OpenConnection(IAsyncStreamReader&lt;Thing&gt;</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>requestStream, ServerCallContext context)</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>while (await requestStream.MoveNext(context.CancellationToken))</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>_logger.LogInformation(requestStream.Current.Description);</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>return EmptyResponse;</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

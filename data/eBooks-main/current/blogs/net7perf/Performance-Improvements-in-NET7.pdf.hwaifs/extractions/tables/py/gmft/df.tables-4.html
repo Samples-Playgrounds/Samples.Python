@@ -1,0 +1,36 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>G_M000_IG12: C5F857C0 C4E1FB2AC5 C5FB11442430</th>
+      <th>FFD0 488B4C2420 488B9C24A0000000 482B4B10 4803E9 833D2FA1E55F00 48899C24A0000000 756D</th>
+      <th>G_M000_IG11:</th>
+      <th>G_M000_IG10: 488D4C2420 48B87066E68AFD7F0000</th>
+      <th>G_M000_IG09: 488B6B08 48899C24A0000000 807B1800 7436</th>
+      <th>G_M000_IG08: FFC6 81FE00CA9A3B 7CE9</th>
+      <th>G_M000_IG07: FFC7</th>
+      <th>83C1D0 83F909 7702</th>
+      <th>G_M000_IG06: 0FB7CE</th>
+      <th>G_M000_IG05: 81FE00CA9A3B 7D17</th>
+      <th>G_M000_IG04: FFD0 488B442428 488B9C24A0000000 48894310 C6431801 33FF 33F6 833D92A1E55F00 0F85CA000000</th>
+      <th>G_M000_IG03: 33C9 488B9C24A0000000 48894B08 488D4C2428 48B87066E68AFD7F0000</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>;; offset=00EFH vxorps xmm0, xmm0 vcvtsi2sd xmm0, rbp vmovsd qword ptr [rsp+30H], xmm0</td>
+      <td>call rax ; Kernel32:QueryPerformanceCounter(long):int mov rcx, qword ptr [rsp+20H] mov rbx, gword ptr [rsp+A0H] sub rcx, qword ptr [rbx+10H] add rbp, rcx cmp dword ptr [(reloc 0x7ffcafe1ae34)], 0 mov gword ptr [rsp+A0H], rbx jne SHORT G_M000_IG14</td>
+      <td>;; offset=00C8H</td>
+      <td>;; offset=00B9H lea rcx, [rsp+20H] mov rax, 0x7FFD8AE66670</td>
+      <td>;; offset=00A7H mov rbp, qword ptr [rbx+08H] mov gword ptr [rsp+A0H], rbx cmp byte ptr [rbx+18H], 0 je SHORT G_M000_IG12</td>
+      <td>;; offset=009DH inc esi cmp esi, 0x3B9ACA00 jl SHORT G_M000_IG06</td>
+      <td>;; inc edi</td>
+      <td>add ecx, -48 cmp ecx, 9 ja SHORT G_M000_IG08 offset=009BH</td>
+      <td>;; offset=0090H movzx rcx, si</td>
+      <td>;; offset=0088H cmp esi, 0x3B9ACA00 jge SHORT G_M000_IG09</td>
+      <td>;; offset=0060H call rax ; Kernel32:QueryPerformanceCounter(long):int mov rax, qword ptr [rsp+28H] mov rbx, gword ptr [rsp+A0H] mov qword ptr [rbx+10H], rax mov byte ptr [rbx+18H], 1 xor edi, edi xor esi, esi cmp dword ptr [(reloc 0x7ffcafe1ae34)], 0 jne G_M000_IG13</td>
+      <td>;; offset=0043H xor ecx, ecx mov rbx, gword ptr [rsp+A0H] mov qword ptr [rbx+08H], rcx lea rcx, [rsp+28H] mov rax, 0x7FFD8AE66670</td>
+    </tr>
+  </tbody>
+</table>

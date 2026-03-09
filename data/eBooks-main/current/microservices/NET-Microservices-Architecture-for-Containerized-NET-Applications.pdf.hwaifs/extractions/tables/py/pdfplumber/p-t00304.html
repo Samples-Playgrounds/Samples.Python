@@ -1,0 +1,106 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>RuleFor(command =&gt; command.State).NotEmpty();</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>RuleFor(command =&gt; command.Country).NotEmpty();</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>RuleFor(command =&gt; command.ZipCode).NotEmpty();</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>RuleFor(command =&gt; command.CardNumber).NotEmpty().Length(12, 19);</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>RuleFor(command =&gt; command.CardHolderName).NotEmpty();</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>RuleFor(command =&gt;</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>command.CardExpiration).NotEmpty().Must(BeValidExpirationDate).WithMessage("Please specify</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>a valid card expiration date");</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>RuleFor(command =&gt; command.CardSecurityNumber).NotEmpty().Length(3);</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>RuleFor(command =&gt; command.CardTypeId).NotEmpty();</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>RuleFor(command =&gt; command.OrderItems).Must(ContainOrderItems).WithMessage("No</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>order items found");</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>private bool BeValidExpirationDate(DateTime dateTime)</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>return dateTime &gt;= DateTime.UtcNow;</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>private bool ContainOrderItems(IEnumerable&lt;OrderItemDTO&gt; orderItems)</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>return orderItems.Any();</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

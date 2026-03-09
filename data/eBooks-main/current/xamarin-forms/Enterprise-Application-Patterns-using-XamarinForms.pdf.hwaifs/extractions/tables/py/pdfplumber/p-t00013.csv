@@ -1,0 +1,20 @@
+,0,1
+0,Folder,Description
+1,Animations,Contains classes that enable animations to be consumed in XAML.
+2,Behaviors,Contains behaviors that are exposed to view classes.
+3,Controls,Contains custom controls used by the app.
+4,Converters,Contains value converters that apply custom logic to a binding.
+5,Effects,"Contains the EntryLineColorEffect class, which is used to change the border
+color of specific Entry controls."
+6,Exceptions,Contains the custom ServiceAuthenticationException.
+7,Extensions,Contains extension methods for the VisualElement and IEnumerable<T> classes.
+8,Helpers,Contains helper classes for the app.
+9,Models,Contains the model classes for the app.
+10,Properties,"Contains AssemblyInfo.cs, a .NET assembly metadata file."
+11,Services,"Contains interfaces and classes that implement services that are provided to the
+app."
+12,Triggers,"Contains the BeginAnimation trigger, which is used to invoke an animation in
+XAML."
+13,Validations,Contains classes involved in validating data input.
+14,ViewModels,Contains the application logic that's exposed to pages.
+15,Views,Contains the pages for the app.

@@ -1,0 +1,26 @@
+,0
+0,"48B9F04BF24FFC7F0000 mov rcx, 0x7FFC4FF24BF0"
+1,"BAE7070000 mov edx, 0x7E7"
+2,E82E1FB25F call CORINFO_HELP_GETSHARED_NONGCSTATIC_BASE
+3,"C5FB10442430 vmovsd xmm0, qword ptr [rsp+30H]"
+4,"C5FB5905E049F6FF vmulsd xmm0, xmm0, qword ptr [(reloc 0x7ffc4ff25720)]"
+5,"C4E1FB2CD0 vcvttsd2si rdx, xmm0"
+6,"48B94B598638D6C56D34 mov rcx, 0x346DC5D63886594B"
+7,"488BC1 mov rax, rcx"
+8,"48F7EA imul rdx:rax, rdx"
+9,"488BCA mov rcx, rdx"
+10,"48C1E93F shr rcx, 63"
+11,"48C1FA0B sar rdx, 11"
+12,"4803CA add rcx, rdx"
+13,FF1567CE0D00 call [Console:WriteLine(long)]
+14,E9F5FEFFFF jmp G_M000_IG03
+15,
+16,G_M000_IG13: ;; offset=014EH
+17,E8DDCBAC5F call CORINFO_HELP_POLL_GC
+18,E930FFFFFF jmp G_M000_IG05
+19,
+20,G_M000_IG14: ;; offset=0158H
+21,E8D3CBAC5F call CORINFO_HELP_POLL_GC
+22,EB90 jmp SHORT G_M000_IG12
+23,
+24,; Total bytes of code 351

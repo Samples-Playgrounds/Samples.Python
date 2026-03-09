@@ -1,0 +1,6 @@
+,0
+0,Tip: Combine the retry and circuit breaker patterns
+1,An app can combine the retry and circuit breaker patterns by using the retry pattern to invoke an
+2,"operation through a circuit breaker. However, the retry logic should be sensitive to any exceptions"
+3,returned by the circuit breaker and abandon retry attempts if the circuit breaker indicates that a
+4,fault is not transient.

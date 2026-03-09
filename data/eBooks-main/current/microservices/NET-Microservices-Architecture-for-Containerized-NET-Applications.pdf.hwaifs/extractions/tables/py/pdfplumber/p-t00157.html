@@ -1,0 +1,86 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>[Route("items")]</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>[HttpPost]</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>public async Task&lt;IActionResult&gt; UpdateProduct([FromBody]CatalogItem product)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>var item = await _context.CatalogItems.SingleOrDefaultAsync(</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>i =&gt; i.Id == product.Id);</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>// ...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>if (item.Price != product.Price)</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>var oldPrice = item.Price;</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>item.Price = product.Price;</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>_context.CatalogItems.Update(item);</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>var @event = new ProductPriceChangedIntegrationEvent(item.Id,</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>item.Price,</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>oldPrice);</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>// Commit changes in original transaction</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>await _context.SaveChangesAsync();</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>// Publish integration event to the event bus</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>// (RabbitMQ or a service bus underneath)</td>
+    </tr>
+  </tbody>
+</table>

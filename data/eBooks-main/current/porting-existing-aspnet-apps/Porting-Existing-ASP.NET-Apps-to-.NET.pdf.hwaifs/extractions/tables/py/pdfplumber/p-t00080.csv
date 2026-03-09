@@ -1,0 +1,12 @@
+,0
+0,public static class WebApiConfig
+1,{
+2,public static void Register(HttpConfiguration config)
+3,{
+4,var provider = new CustomModelBinderProvider(
+5,"typeof(CustomDTO), new CustomModelBinder());"
+6,"config.Services.Insert(typeof(ModelBinderProvider), 0, provider);"
+7,
+8,// ...
+9,}
+10,}

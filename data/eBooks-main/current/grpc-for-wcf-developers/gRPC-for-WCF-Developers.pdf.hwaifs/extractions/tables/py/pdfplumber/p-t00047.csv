@@ -1,0 +1,3 @@
+,0
+0,dotnet new sln -o TraderSys
+1,cd TraderSys

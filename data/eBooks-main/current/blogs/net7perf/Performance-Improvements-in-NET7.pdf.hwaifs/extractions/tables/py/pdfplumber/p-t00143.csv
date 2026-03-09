@@ -1,0 +1,10 @@
+,0
+0,public ref struct ValueMatchEnumerator
+1,{
+2,private readonly Regex _regex;
+3,private readonly ReadOnlySpan<char> _input;
+4,private ValueMatch _current;
+5,private int _startAt;
+6,private int _prevLen;
+7,...
+8,}

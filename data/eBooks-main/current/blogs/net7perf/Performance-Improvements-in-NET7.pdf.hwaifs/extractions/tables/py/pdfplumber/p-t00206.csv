@@ -1,0 +1,4 @@
+,0,1,2,3,4,5
+0,Method,Runtime,Mean,Ratio,Allocated,Alloc Ratio
+1,OneShot,.NET 6.0,1.828 us,1.00,336 B,1.00
+2,OneShot,.NET 7.0,1.770 us,0.97,184 B,0.55

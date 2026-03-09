@@ -1,0 +1,33 @@
+|    | Additional resources .....................................................................................................................................................238      |               |
+|---:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------|
+|  0 | Design the infrastructure persistence layer..............................................................................................................238                       | nan           |
+|  1 | The Repository pattern ................................................................................................................................................238         | nan           |
+|  2 | Additional resources .....................................................................................................................................................243      | nan           |
+|  3 | Implement the infrastructure persistence layer with Entity Framework Core ............................................243                                                          | nan           |
+|  4 | Introduction to Entity Framework Core.................................................................................................................244                          | nan           |
+|  5 | Infrastructure in Entity Framework Core from a DDD perspective.............................................................244                                                     | nan           |
+|  6 | Implement custom repositories with Entity Framework Core......................................................................246                                                  | nan           |
+|  7 | EF DbContext and IUnitOfWork instance lifetime in your IoC container.................................................248                                                           | nan           |
+|  8 | The repository instance lifetime in your IoC container...................................................................................249                                       | nan           |
+|  9 | Table mapping ................................................................................................................................................................250  | nan           |
+| 10 | Implement the Query Specification pattern........................................................................................................253                               | nan           |
+| 11 | Use NoSQL databases as a persistence infrastructure.........................................................................................255                                    | nan           |
+| 12 | Introduction to Azure Cosmos DB and the native Cosmos DB API ...........................................................256                                                        | nan           |
+| 13 | Implement .NET code targeting MongoDB and Azure Cosmos DB ..........................................................258                                                            | nan           |
+| 14 | Design the microservice application layer and Web API ....................................................................................266                                      | nan           |
+| 15 | Use SOLID principles and Dependency Injection..............................................................................................266                                     | nan           |
+| 16 | Implement the microservice application layer using the Web API .................................................................267                                                | nan           |
+| 17 | Use Dependency Injection to inject infrastructure objects into your application layer.....................267                                                                      | nan           |
+| 18 | Implement the Command and Command Handler patterns .......................................................................271                                                      | nan           |
+| 19 | The Command process pipeline: how to trigger a command handler.....................................................278                                                             | nan           |
+| 20 | Implement the command process pipeline with a mediator pattern (MediatR) ..................................281                                                                     | nan           |
+| 21 | Apply cross-cutting concerns when processing commands with the Behaviors in MediatR                                                                                                | ..........287 |
+| 22 | Implement resilient applications .......................................................................................                                                           | 291           |
+| 23 | Handle partial failure.........................................................................................................................................................292 | nan           |
+| 24 | Strategies to handle partial failure...............................................................................................................................294             | nan           |
+| 25 | Additional resources .....................................................................................................................................................295      | nan           |
+| 26 | Implement retries with exponential backoff ............................................................................................................295                         | nan           |
+| 27 | Implement resilient Entity Framework Core SQL connections..........................................................................295                                             | nan           |
+| 28 | Execution strategies and explicit transactions using BeginTransaction and multiple                                                                                                 | DbContexts296 |
+| 29 | Additional resources .....................................................................................................................................................298      | nan           |
+| 30 | Use IHttpClientFactory to implement resilient HTTP requests .........................................................................298                                           | nan           |

@@ -1,0 +1,15 @@
+,0
+0,public class ProductPriceChangedIntegrationEvent : IntegrationEvent
+1,{
+2,public int ProductId { get; private set; }
+3,public decimal NewPrice { get; private set; }
+4,public decimal OldPrice { get; private set; }
+5,
+6,"public ProductPriceChangedIntegrationEvent(int productId, decimal newPrice,"
+7,decimal oldPrice)
+8,{
+9,ProductId = productId;
+10,NewPrice = newPrice;
+11,OldPrice = oldPrice;
+12,}
+13,}

@@ -1,0 +1,22 @@
+,0,1,2,3
+0,Directive,Description,Example,Web Forms equivalent
+1,@attribute,"Adds a class-level
+attribute to the
+component","@attribute
+[Authorize]",None
+2,@code,"Adds class
+members to the
+component",@code { ... },"<script runat=""server"">...</script>"
+3,@implements,"Implements the
+specified interface","@impleme
+nts
+IDisposable",Use code-behind
+4,@inherits,"Inherits from the
+specified base class","@inherits
+MyCompon
+entBase","<%@ Control
+Inherits=""MyUserControlBase"" %>"
+5,@inject,"Injects a service
+into the component","@inject
+IJSRuntime
+JS",None

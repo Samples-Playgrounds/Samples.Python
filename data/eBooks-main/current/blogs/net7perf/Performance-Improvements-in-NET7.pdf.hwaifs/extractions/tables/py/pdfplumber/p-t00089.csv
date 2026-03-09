@@ -1,0 +1,57 @@
+,0
+0,"[System.CodeDom.Compiler.GeneratedCodeAttribute(""Microsoft.Interop.LibraryImportGenerator"","
+1,"""7.0.6.42316"")]"
+2,[System.Runtime.CompilerServices.SkipLocalsInitAttribute]
+3,private static unsafe partial bool CreatePipe(out
+4,"global::Microsoft.Win32.SafeHandles.SafeFileHandle hReadPipe, out"
+5,"global::Microsoft.Win32.SafeHandles.SafeFileHandle hWritePipe, void* lpPipeAttributes, uint"
+6,nSize)
+7,{
+8,int __lastError;
+9,bool __invokeSucceeded = default;
+10,System.Runtime.CompilerServices.Unsafe.SkipInit(out hReadPipe);
+11,System.Runtime.CompilerServices.Unsafe.SkipInit(out hWritePipe);
+12,System.IntPtr __hReadPipe_native = default;
+13,System.IntPtr __hWritePipe_native = default;
+14,bool __retVal;
+15,int __retVal_native = default;
+16,
+17,// Setup - Perform required setup.
+18,global::Microsoft.Win32.SafeHandles.SafeFileHandle hReadPipe__newHandle = new
+19,global::Microsoft.Win32.SafeHandles.SafeFileHandle();
+20,global::Microsoft.Win32.SafeHandles.SafeFileHandle hWritePipe__newHandle = new
+21,global::Microsoft.Win32.SafeHandles.SafeFileHandle();
+22,try
+23,{
+24,{
+25,System.Runtime.InteropServices.Marshal.SetLastSystemError(0);
+26,"__retVal_native = __PInvoke(&__hReadPipe_native, &__hWritePipe_native,"
+27,"lpPipeAttributes, nSize);"
+28,__lastError = System.Runtime.InteropServices.Marshal.GetLastSystemError();
+29,}
+30,
+31,__invokeSucceeded = true;
+32,
+33,// Unmarshal - Convert native data to managed data.
+34,__retVal = __retVal_native != 0;
+35,}
+36,finally
+37,{
+38,if (__invokeSucceeded)
+39,{
+40,// GuaranteedUnmarshal - Convert native data to managed data even in the case
+41,of an exception during the non-cleanup phases.
+42,"System.Runtime.InteropServices.Marshal.InitHandle(hWritePipe__newHandle,"
+43,__hWritePipe_native);
+44,hWritePipe = hWritePipe__newHandle;
+45,"System.Runtime.InteropServices.Marshal.InitHandle(hReadPipe__newHandle,"
+46,__hReadPipe_native);
+47,hReadPipe = hReadPipe__newHandle;
+48,}
+49,}
+50,
+51,System.Runtime.InteropServices.Marshal.SetLastPInvokeError(__lastError);
+52,return __retVal;
+53,
+54,// Local P/Invoke
+55,"[System.Runtime.InteropServices.DllImportAttribute(""kernel32"", EntryPoint ="

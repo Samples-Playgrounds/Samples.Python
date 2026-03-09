@@ -1,0 +1,27 @@
+,0
+0,environment:
+1,name: PRE-PROD
+2,url: ${{ steps.deploywebapp.outputs.webapp-url }}
+3,
+4,steps:
+5,- name: Download a Build Artifact
+6,uses: actions/download-artifact@v3
+7,with:
+8,name: website
+9,path: website
+10,
+11,- name: Login via Azure CLI
+12,uses: azure/login@v1
+13,with:
+14,creds: ${{ secrets.AZURE_CREDENTIALS }}
+15,
+16,- name: Deploy web app
+17,id: deploywebapp
+18,uses: azure/webapps-deploy@v2
+19,with:
+20,app-name: ${{ env.app-name }}
+21,slot-name: staging
+22,package: website
+23,
+24,- name: az cli logout
+25,run: az logout

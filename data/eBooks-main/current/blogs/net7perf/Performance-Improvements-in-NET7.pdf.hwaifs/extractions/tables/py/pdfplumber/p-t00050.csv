@@ -1,0 +1,20 @@
+,0
+0,[Benchmark]
+1,public void Compute()
+2,{
+3,for (int thousands = 0; thousands < 10; thousands++)
+4,{
+5,for (int hundreds = 0; hundreds < 10; hundreds++)
+6,{
+7,for (int tens = 0; tens < 10; tens++)
+8,{
+9,for (int ones = 0; ones < 10; ones++)
+10,{
+11,"int n = ComputeNumber(thousands, hundreds, tens, ones);"
+12,Process(n);
+13,}
+14,}
+15,}
+16,}
+17,}
+18,

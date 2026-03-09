@@ -1,0 +1,3 @@
+,Method,Runtime,Mean,Ratio,Code Size
+0,IsByRefLike,.NET 6.0,2.1322 ns,1.000,31
+1,IsByRefLike,.NET 7.0,0.0000 ns,0.000,6

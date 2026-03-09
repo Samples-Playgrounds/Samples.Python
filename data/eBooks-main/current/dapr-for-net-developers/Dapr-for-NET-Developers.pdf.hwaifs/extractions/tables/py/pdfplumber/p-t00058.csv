@@ -1,0 +1,23 @@
+,0
+0,public class DaprVehicleStateRepository : IVehicleStateRepository
+1,{
+2,"private const string DAPR_STORE_NAME = ""statestore"";"
+3,private readonly DaprClient _daprClient;
+4,
+5,public DaprVehicleStateRepository(DaprClient daprClient)
+6,{
+7,_daprClient = daprClient;
+8,}
+9,
+10,public async Task SaveVehicleStateAsync(VehicleState vehicleState)
+11,{
+12,await _daprClient.SaveStateAsync<VehicleState>(
+13,"DAPR_STORE_NAME, vehicleState.LicenseNumber, vehicleState);"
+14,}
+15,
+16,public async Task<VehicleState> GetVehicleStateAsync(string licenseNumber)
+17,{
+18,return await _daprClient.GetStateAsync<VehicleState>(
+19,"DAPR_STORE_NAME, licenseNumber);"
+20,}
+21,}

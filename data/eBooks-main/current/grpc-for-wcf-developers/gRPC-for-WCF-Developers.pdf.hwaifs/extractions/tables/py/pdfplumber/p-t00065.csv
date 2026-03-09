@@ -1,0 +1,20 @@
+,0
+0,"static async Task DisplayAsync(IAsyncStreamReader<StockTickerUpdate> stream,"
+1,CancellationToken token)
+2,{
+3,try
+4,{
+5,await foreach (var update in stream.ReadAllAsync(token))
+6,{
+7,"Console.WriteLine($""{update.Symbol}: {update.Price}"");"
+8,}
+9,}
+10,catch (RpcException e) when (e.StatusCode == StatusCode.Cancelled)
+11,{
+12,return;
+13,}
+14,catch (OperationCanceledException)
+15,{
+16,"Console.WriteLine(""Finished."");"
+17,}
+18,}

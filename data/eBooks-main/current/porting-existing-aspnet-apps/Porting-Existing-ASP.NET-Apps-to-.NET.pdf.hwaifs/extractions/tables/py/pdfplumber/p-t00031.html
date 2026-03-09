@@ -1,0 +1,62 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>public static void Register(HttpConfiguration config)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>// Attribute routing.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>config.MapHttpAttributeRoutes();</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>// Convention-based routing.</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>config.Routes.MapHttpRoute(</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>name: "DefaultApi",</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>routeTemplate: "api/{controller}/{id}",</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>defaults: new { id = RouteParameter.Optional }</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>);</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

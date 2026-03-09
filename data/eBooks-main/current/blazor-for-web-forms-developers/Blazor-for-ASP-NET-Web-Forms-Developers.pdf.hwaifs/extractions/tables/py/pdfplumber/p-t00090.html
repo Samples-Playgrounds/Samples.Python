@@ -1,0 +1,250 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>using eShopOnBlazor.Models;</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>using eShopOnBlazor.Models.Infrastructure;</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>using eShopOnBlazor.Services;</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>using log4net;</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>using System.Data.Entity;</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>using eShopOnBlazor;</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>var builder = WebApplication.CreateBuilder(args);</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>// add services</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>builder.Services.AddRazorPages();</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>builder.Services.AddServerSideBlazor();</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>if (builder.Configuration.GetValue&lt;bool&gt;("UseMockData"))</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>builder.Services.AddSingleton&lt;ICatalogService, CatalogServiceMock&gt;();</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>else</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>builder.Services.AddScoped&lt;ICatalogService, CatalogService&gt;();</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>builder.Services.AddScoped&lt;IDatabaseInitializer&lt;CatalogDBContext&gt;,</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>CatalogDBInitializer&gt;();</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>builder.Services.AddSingleton&lt;CatalogItemHiLoGenerator&gt;();</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>builder.Services.AddScoped(_ =&gt; new</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>CatalogDBContext(builder.Configuration.GetConnectionString("CatalogDBContext")));</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>var app = builder.Build();</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>new LoggerFactory().AddLog4Net("log4Net.xml");</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>if (app.Environment.IsDevelopment())</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>app.UseDeveloperExceptionPage();</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>else</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>app.UseExceptionHandler("/Home/Error");</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>// Middleware for Application_BeginRequest</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>app.Use((ctx, next) =&gt;</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>LogicalThreadContext.Properties["activityid"] = new ActivityIdHelper(ctx);</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>LogicalThreadContext.Properties["requestinfo"] = new WebRequestInfo(ctx);</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>return next();</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>});</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>app.UseStaticFiles();</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>app.UseRouting();</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>app.UseEndpoints(endpoints =&gt;</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>endpoints.MapBlazorHub();</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>endpoints.MapFallbackToPage("/_Host");</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>});</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>ConfigDataBase(app);</td>
+    </tr>
+  </tbody>
+</table>

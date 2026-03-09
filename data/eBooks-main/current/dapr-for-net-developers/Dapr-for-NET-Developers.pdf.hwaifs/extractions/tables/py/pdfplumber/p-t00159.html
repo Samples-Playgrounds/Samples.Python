@@ -1,0 +1,130 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>public Task Handle(OrderStartedDomainEvent notification, CancellationToken</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>cancellationToken)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>var message = CreateEmailBody(notification);</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>var metadata = new Dictionary&lt;string, string&gt;</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>["emailFrom"] = "eShopOn@dapr.io",</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>["emailTo" = notification.UserName,</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>["subject"] = $"Your eShopOnDapr order #{notification.Order.Id}"</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>};</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>return _daprClient.InvokeBindingAsync("sendmail", "create", message, metadata,</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>cancellationToken);</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>public Task SendOrderConfirmationAsync(Order order)</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>var message = CreateEmailBody(order);</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>return _daprClient.InvokeBindingAsync(</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>"sendmail",</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>"create",</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>CreateEmailBody(order),</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>new Dictionary&lt;string, string&gt;</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>["emailFrom"] = "eshopondapr@example.com",</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>["emailTo"] = order.BuyerEmail,</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>["subject"] = $"Your eShopOnDapr Order #{order.OrderNumber}"</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>});</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,21 @@
+,0
+0,int? typeId)
+1,{
+2,"string cacheKey = $""items-{pageIndex}-{itemsPage}-{brandID}-{typeId}"";"
+3,"return await _cache.GetOrCreateAsync(cacheKey, async entry =>"
+4,{
+5,entry.SlidingExpiration = _defaultCacheDuration;
+6,"return await _catalogService.GetCatalogItems(pageIndex, itemsPage, brandID,"
+7,typeId);
+8,});
+9,}
+10,
+11,public async Task<IEnumerable<SelectListItem>> GetTypes()
+12,{
+13,"return await _cache.GetOrCreateAsync(_typesKey, async entry =>"
+14,{
+15,entry.SlidingExpiration = _defaultCacheDuration;
+16,return await _catalogService.GetTypes();
+17,});
+18,}
+19,}

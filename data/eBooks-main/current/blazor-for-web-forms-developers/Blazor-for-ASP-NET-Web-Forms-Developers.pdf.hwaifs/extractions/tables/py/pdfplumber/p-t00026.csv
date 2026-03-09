@@ -1,0 +1,27 @@
+,0
+0,<!DOCTYPE html>
+1,"<html lang=""en"">"
+2,
+3,<head>
+4,"<meta charset=""utf-8"" />"
+5,"<meta name=""viewport"" content=""width=device-width, initial-scale=1.0, maximum-"
+6,"scale=1.0, user-scalable=no"" />"
+7,<title>BlazorApp1</title>
+8,"<base href=""/"" />"
+9,"<link href=""css/bootstrap/bootstrap.min.css"" rel=""stylesheet"" />"
+10,"<link href=""css/app.css"" rel=""stylesheet"" />"
+11,"<link href=""BlazorApp1.styles.css"" rel=""stylesheet"" />"
+12,</head>
+13,
+14,<body>
+15,"<div id=""app"">Loading...</div>"
+16,
+17,"<div id=""blazor-error-ui"">"
+18,An unhandled error has occurred.
+19,"<a href="""" class=""reload"">Reload</a>"
+20,"<a class=""dismiss"">🗙</a>"
+21,</div>
+22,"<script src=""_framework/blazor.webassembly.js""></script>"
+23,</body>
+24,
+25,</html>

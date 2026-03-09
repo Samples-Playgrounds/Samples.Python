@@ -1,0 +1,54 @@
+,0
+0,"1: JIT compiled CastHelpers:StelemRef(Array,long,Object) [Tier1, IL size=88, code"
+1,size=93]
+2,"2: JIT compiled CastHelpers:LdelemaRef(Array,long,long):byref [Tier1, IL size=44, code"
+3,size=44]
+4,"3: JIT compiled AppContext:Setup(long,long,int) [Tier0, IL size=68, code size=275]"
+5,"4: JIT compiled Dictionary`2:.ctor(int):this [Tier0, IL size=9, code size=40]"
+6,"5: JIT compiled Dictionary`2:.ctor(int,IEqualityComparer`1):this [Tier0, IL size=102,"
+7,code size=444]
+8,"6: JIT compiled Object:.ctor():this [Tier0, IL size=1, code size=10]"
+9,"7: JIT compiled Dictionary`2:Initialize(int):int:this [Tier0, IL size=56, code size=231]"
+10,"8: JIT compiled HashHelpers:GetPrime(int):int [Tier0, IL size=83, code size=379]"
+11,"9: JIT compiled HashHelpers:.cctor() [Tier0, IL size=24, code size=102]"
+12,"10: JIT compiled HashHelpers:GetFastModMultiplier(int):long [Tier0, IL size=9, code"
+13,size=37]
+14,"11: JIT compiled Type:GetTypeFromHandle(RuntimeTypeHandle):Type [Tier0, IL size=8, code"
+15,size=14]
+16,"12: JIT compiled Type:op_Equality(Type,Type):bool [Tier0, IL size=38, code size=143]"
+17,13: JIT compiled
+18,"NonRandomizedStringEqualityComparer:GetStringComparer(Object):IEqualityComparer`1 [Tier0,"
+19,"IL size=39, code size=170]"
+20,"14: JIT compiled NonRandomizedStringEqualityComparer:.cctor() [Tier0, IL size=46, code"
+21,size=232]
+22,"15: JIT compiled EqualityComparer`1:get_Default():EqualityComparer`1 [Tier0, IL size=6,"
+23,code size=36]
+24,"16: JIT compiled EqualityComparer`1:.cctor() [Tier0, IL size=26, code size=125]"
+25,"17: JIT compiled ComparerHelpers:CreateDefaultEqualityComparer(Type):Object [Tier0, IL"
+26,"size=235, code size=949]"
+27,"18: JIT compiled CastHelpers:ChkCastClass(long,Object):Object [Tier0, IL size=22, code"
+28,size=72]
+29,"19: JIT compiled RuntimeHelpers:GetMethodTable(Object):long [Tier0, IL size=11, code"
+30,size=33]
+31,"20: JIT compiled CastHelpers:IsInstanceOfClass(long,Object):Object [Tier0, IL size=97,"
+32,code size=257]
+33,"21: JIT compiled GenericEqualityComparer`1:.ctor():this [Tier0, IL size=7, code size=31]"
+34,"22: JIT compiled EqualityComparer`1:.ctor():this [Tier0, IL size=7, code size=31]"
+35,"23: JIT compiled CastHelpers:ChkCastClassSpecial(long,Object):Object [Tier0, IL size=87,"
+36,code size=246]
+37,"24: JIT compiled OrdinalComparer:.ctor(IEqualityComparer`1):this [Tier0, IL size=8, code"
+38,size=39]
+39,25: JIT compiled NonRandomizedStringEqualityComparer:.ctor(IEqualityComparer`1):this
+40,"[Tier0, IL size=14, code size=52]"
+41,"26: JIT compiled StringComparer:get_Ordinal():StringComparer [Tier0, IL size=6, code"
+42,size=49]
+43,"27: JIT compiled OrdinalCaseSensitiveComparer:.cctor() [Tier0, IL size=11, code size=71]"
+44,"28: JIT compiled OrdinalCaseSensitiveComparer:.ctor():this [Tier0, IL size=8, code"
+45,size=33]
+46,"29: JIT compiled OrdinalComparer:.ctor(bool):this [Tier0, IL size=14, code size=43]"
+47,"30: JIT compiled StringComparer:.ctor():this [Tier0, IL size=7, code size=31]"
+48,"31: JIT compiled StringComparer:get_OrdinalIgnoreCase():StringComparer [Tier0, IL size=6,"
+49,code size=49]
+50,"32: JIT compiled OrdinalIgnoreCaseComparer:.cctor() [Tier0, IL size=11, code size=71]"
+51,"33: JIT compiled OrdinalIgnoreCaseComparer:.ctor():this [Tier0, IL size=8, code size=36]"
+52,"34: JIT compiled OrdinalIgnoreCaseComparer:.ctor(IEqualityComparer`1):this [Tier0, IL"

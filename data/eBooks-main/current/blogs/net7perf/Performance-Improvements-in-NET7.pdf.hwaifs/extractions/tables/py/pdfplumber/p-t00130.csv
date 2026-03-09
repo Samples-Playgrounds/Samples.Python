@@ -1,0 +1,4 @@
+,0,1,2,3
+0,Method,Runtime,Mean,Ratio
+1,AddBytes,.NET 6.0,159.11 ns,1.00
+2,AddBytes,.NET 7.0,42.11 ns,0.26

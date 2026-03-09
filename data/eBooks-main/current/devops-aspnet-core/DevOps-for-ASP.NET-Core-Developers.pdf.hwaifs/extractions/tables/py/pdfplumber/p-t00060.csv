@@ -1,0 +1,31 @@
+,0,1,2,3
+0,Feature,Description,GitHub Actions,Azure Pipelines
+1,Approvals,"Define approval
+conditions before
+moving further in the
+pipeline",Yes,Yes
+2,Artifacts,"Upload, store, and
+download artifacts
+from jobs",Yes,Yes
+3,Caching,"Cache folders or files
+for subsequent runs",Yes,Yes
+4,Conditions,"Specify conditions
+for steps or jobs",Yes,Yes
+5,"Container
+Jobs","Run jobs inside a
+container",Yes,Yes
+6,Demands,"Specify demands
+that must be met to
+match jobs to agents",Yes,Yes
+7,"Dependenci
+es","Specify
+dependencies
+between jobs or
+stages",Yes,Yes
+8,"Deployment
+Groups","A logical set of target
+machines for
+deployments",No,Yes
+9,"Deployment
+Jobs","Job that targets a
+deployment group",No,Yes

@@ -1,0 +1,7 @@
+,0
+0,name: dapr-config
+1,spec:
+2,nameResolution:
+3,"component: ""consul"""
+4,configuration:
+5,selfRegister: true

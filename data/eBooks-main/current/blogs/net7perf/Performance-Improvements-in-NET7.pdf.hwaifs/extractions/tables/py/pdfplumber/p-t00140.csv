@@ -1,0 +1,16 @@
+,0
+0,; Program.Scan(System.ReadOnlySpan`1<Char>)
+1,"mov rax,[rdx]"
+2,"mov edx,[rdx+8]"
+3,"xor ecx,ecx"
+4,"test edx,edx"
+5,jle short M00_L01
+6,M00_L00:
+7,"mov r8d,ecx"
+8,"movsx r8,word ptr [rax+r8*2]"
+9,inc ecx
+10,"cmp ecx,edx"
+11,jl short M00_L00
+12,M00_L01:
+13,ret
+14,; Total bytes of code 27

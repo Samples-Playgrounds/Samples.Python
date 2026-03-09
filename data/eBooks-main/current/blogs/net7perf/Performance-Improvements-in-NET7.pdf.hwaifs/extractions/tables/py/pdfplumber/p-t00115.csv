@@ -1,0 +1,8 @@
+,0
+0,public bool StartsWith(char value)
+1,{
+2,if (RuntimeHelpers.IsKnownConstant(value) && value != '\0')
+3,return _firstChar == value;
+4,
+5,return Length != 0 && _firstChar == value;
+6,}

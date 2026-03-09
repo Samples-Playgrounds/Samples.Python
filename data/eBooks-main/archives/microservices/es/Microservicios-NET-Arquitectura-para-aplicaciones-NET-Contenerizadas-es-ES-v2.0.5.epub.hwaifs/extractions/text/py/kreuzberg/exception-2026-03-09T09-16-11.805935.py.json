@@ -1,0 +1,5 @@
+Exception reading text with kreuzberg from EPUB document source = ../../../../../../../data/eBooks-main/archives/microservices/es/Microservicios-NET-Arquitectura-para-aplicaciones-NET-Contenerizadas-es-ES-v2.0.5.epub : name 'source' is not definedTraceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/epub/kreuzberg/api_text_extraction_kreuzberg.py", line 30, in extract_text_to_file_from_epub_document
+    result = extract_file_sync(source)
+                               ^^^^^^
+NameError: name 'source' is not defined

@@ -1,0 +1,10 @@
+,0
+0,"<Entry Text=""{Binding UserName.Value, Mode=TwoWay}"">"
+1,<Entry.Style>
+2,"<OnPlatform x:TypeArguments=""Style"""
+3,"iOS=""{StaticResource EntryStyle}"""
+4,"Android=""{StaticResource EntryStyle}"""
+5,"WinPhone=""{StaticResource UwpEntryStyle}""/>"
+6,</Entry.Style>
+7,...
+8,</Entry>

@@ -1,0 +1,90 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>[HttpGet]</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>[Route("[action]")]</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>public async Task&lt;IActionResult&gt; Items(</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>[FromQuery]int pageSize = 10, [FromQuery]int pageIndex = 0)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>var totalItems = await _catalogContext.CatalogItems</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>.LongCountAsync();</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>var itemsOnPage = await _catalogContext.CatalogItems</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>.OrderBy(c =&gt; c.Name)</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>.Skip(pageSize * pageIndex)</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>.Take(pageSize)</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>.ToListAsync();</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>itemsOnPage = ComposePicUri(itemsOnPage);</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>var model = new PaginatedItemsViewModel&lt;CatalogItem&gt;(</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>pageIndex, pageSize, totalItems, itemsOnPage);</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>return Ok(model);</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

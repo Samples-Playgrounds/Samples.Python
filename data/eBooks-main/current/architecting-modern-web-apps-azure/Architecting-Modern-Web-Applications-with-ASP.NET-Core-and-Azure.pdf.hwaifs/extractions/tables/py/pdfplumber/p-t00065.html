@@ -1,0 +1,58 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>if ((await _authorRepository.ListAsync()).All(a =&gt; a.Id != id))</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>return NotFound(id);</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>if (!ModelState.IsValid)</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>return BadRequest(ModelState);</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>author.Id = id;</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>await _authorRepository.UpdateAsync(author);</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>return Ok();</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

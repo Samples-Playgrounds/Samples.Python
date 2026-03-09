@@ -1,0 +1,16 @@
+,0
+0,services:
+1,webapi:
+2,#...
+3,ports:
+4,"- ""51080:80"""
+5,"- ""51443:443"""
+6,#...
+7,webapp:
+8,environment:
+9,#...
+10,- WebApiBaseAddress=http://webapi
+11,ports:
+12,"- ""50080:80"""
+13,"- ""50443:443"""
+14,#...

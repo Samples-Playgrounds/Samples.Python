@@ -1,0 +1,4 @@
+,0,1,2,3
+0,Method,Mean,Ratio,Code Size
+1,WithIs,1.9246 ns,1.000,215 B
+2,WithTypeCheck,0.0013 ns,0.001,24 B

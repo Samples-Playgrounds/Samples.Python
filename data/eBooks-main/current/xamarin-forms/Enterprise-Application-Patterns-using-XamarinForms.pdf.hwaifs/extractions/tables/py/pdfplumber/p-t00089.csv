@@ -1,0 +1,8 @@
+,0
+0,<ffimageloading:CachedImage
+1,"Grid.Row=""0"""
+2,"Source=""{Binding PictureUri}"""
+3,"Aspect=""AspectFill"">"
+4,<ffimageloading:CachedImage.LoadingPlaceholder>
+5,<OnPlatform
+6,"x:TypeArguments=""ImageSource"""

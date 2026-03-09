@@ -1,0 +1,15 @@
+,0
+0,public class ProductsController
+1,{
+2,"[Route(""products"")]"
+3,public ActionResult Index()
+4,{
+5,return View();
+6,}
+7,
+8,"[Route(""products/{id}"")]"
+9,public ActionResult Details(int id)
+10,{
+11,return View();
+12,}
+13,}

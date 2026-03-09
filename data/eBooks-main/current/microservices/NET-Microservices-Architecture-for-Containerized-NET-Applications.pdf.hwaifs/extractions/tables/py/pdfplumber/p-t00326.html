@@ -1,0 +1,54 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>// Program.cs from .NET 7 Web API sample</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>//...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>// Registers required services for health checks</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>builder.Services.AddHealthChecks()</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>// Add a health check for a SQL Server database</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>.AddCheck(</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>"OrderingDB-check",</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>new SqlConnectionHealthCheck(builder.Configuration["ConnectionString"]),</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>HealthStatus.Unhealthy,</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>new string[] { "orderingdb" });</td>
+    </tr>
+  </tbody>
+</table>

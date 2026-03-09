@@ -1,0 +1,70 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>using BenchmarkDotNet.Attributes;</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>using BenchmarkDotNet.Running;</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>using System;</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>[DisassemblyDiagnoser]</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>public partial class Program</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>static void Main(string[] args) =&gt;</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args);</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>private int _a = 42, _b = 84;</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>[Benchmark]</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>public int Min() =&gt; Math.Min(_a, _b);</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

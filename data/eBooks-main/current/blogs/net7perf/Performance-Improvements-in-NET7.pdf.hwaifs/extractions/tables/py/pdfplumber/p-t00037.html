@@ -1,0 +1,150 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>using System.Runtime.CompilerServices;</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>class Program</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>static void Main()</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>IPrinter printer = new BlankPrinter();</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>while (true)</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>DoWork(printer);</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>[MethodImpl(MethodImplOptions.NoInlining)]</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>static void DoWork(IPrinter printer)</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>for (int j = 0; j &lt; 123; j++)</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>printer.Print(j);</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>interface IPrinter</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>void Print(int i);</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>class BlankPrinter : IPrinter</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>public void Print(int i)</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>Console.Write("");</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,19 @@
+,0
+0,_activity.Stop();
+1,}
+2,
+3,[Benchmark(Baseline = true)]
+4,public ActivityLink EnumerateActivityLinks_Old()
+5,{
+6,ActivityLink last = default;
+7,foreach (ActivityLink link in _activity.Links) last = link;
+8,return last;
+9,}
+10,
+11,[Benchmark]
+12,public ActivityLink EnumerateActivityLinks_New()
+13,{
+14,ActivityLink last = default;
+15,foreach (ActivityLink link in _activity.EnumerateLinks()) last = link;
+16,return last;
+17,}

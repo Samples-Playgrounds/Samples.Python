@@ -1,0 +1,4 @@
+,0
+0,"Note: Dependency injection can also be implemented manually using factories. However, using a"
+1,"container provides additional capabilities such as lifetime management, and registration through"
+2,assembly scanning.

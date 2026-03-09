@@ -1,0 +1,22 @@
+,0
+0,[HttpGet]
+1,"[Route(""items/{id:int}"")]"
+2,[ProducesResponseType((int)HttpStatusCode.BadRequest)]
+3,[ProducesResponseType((int)HttpStatusCode.NotFound)]
+4,"[ProducesResponseType(typeof(CatalogItem),(int)HttpStatusCode.OK)]"
+5,public async Task<IActionResult> GetItemById(int id)
+6,{
+7,if (id <= 0)
+8,{
+9,return BadRequest();
+10,}
+11,var item = await _catalogContext.CatalogItems.
+12,SingleOrDefaultAsync(ci => ci.Id == id);
+13,//…
+14,
+15,if (item != null)
+16,{
+17,return Ok(item);
+18,}
+19,return NotFound();
+20,}

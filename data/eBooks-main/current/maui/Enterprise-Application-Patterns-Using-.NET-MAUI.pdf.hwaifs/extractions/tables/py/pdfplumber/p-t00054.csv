@@ -1,0 +1,21 @@
+,0
+0,public sealed class SettingsService : ISettingsService
+1,{
+2,"private const string AccessToken = ""access_token"";"
+3,private const string AccessTokenDefault = string.Empty;
+4,
+5,"private const string IdUseMocks = ""use_mocks"";"
+6,private const bool UseMocksDefault = true;
+7,
+8,public string AuthAccessToken
+9,{
+10,"get => Preferences.Get(AccessToken, AccessTokenDefault);"
+11,"set => Preferences.Set(AccessToken, value);"
+12,}
+13,
+14,public bool UseMocks
+15,{
+16,"get => Preferences.Get(IdUseMocks, UseMocksDefault);"
+17,"set => Preferences.Set(IdUseMocks, value);"
+18,}
+19,}

@@ -1,0 +1,50 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>private void ShowNotification(string title, string content, string image)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>string xmlString = $@"&lt;toast&gt;&lt;visual&gt;&lt;binding template =</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>'ToastGeneric'&gt;&lt;text&gt;{title}&lt;/text&gt;&lt;text&gt;{content}&lt;/text&gt;&lt;image</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>src=&gt;'{image}'&lt;/image&gt;&lt;/binding&gt;&lt;/visual&gt;&lt;/toast&gt;";</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>XmlDocument toastXml = new XmlDocument();</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>toastXml.LoadXml(xmlString);</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>ToastNotification toast = new ToastNotification(toastXml);</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>ToastNotificationManager.CreateToastNotifier().Show(toast);</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

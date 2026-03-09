@@ -1,0 +1,23 @@
+,0
+0,using System.Runtime.CompilerServices;
+1,using System.Runtime.Intrinsics;
+2,using System.Runtime.Intrinsics.X86;
+3,
+4,internal class Program
+5,{
+6,private static void Main()
+7,{
+8,Vector128<byte> v = Vector128.Create((byte)123);
+9,while (true)
+10,{
+11,WithIntrinsics(v);
+12,WithVector(v);
+13,}
+14,}
+15,
+16,[MethodImpl(MethodImplOptions.NoInlining)]
+17,private static int WithIntrinsics(Vector128<byte> v) => Sse2.MoveMask(v);
+18,
+19,[MethodImpl(MethodImplOptions.NoInlining)]
+20,private static uint WithVector(Vector128<byte> v) => v.ExtractMostSignificantBits();
+21,}

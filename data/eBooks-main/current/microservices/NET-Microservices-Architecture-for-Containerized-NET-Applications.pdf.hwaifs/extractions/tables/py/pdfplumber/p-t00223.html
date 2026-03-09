@@ -1,0 +1,54 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>// WRONG ACCORDING TO DDD PATTERNS – CODE AT THE APPLICATION LAYER OR</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>// COMMAND HANDLERS</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>// Code in command handler methods or Web API controllers</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>//... (WRONG) Some code with business logic out of the domain classes ...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>OrderItem myNewOrderItem = new OrderItem(orderId, productId, productName,</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>pictureUrl, unitPrice, discount, units);</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>//... (WRONG) Accessing the OrderItems collection directly from the application layer // or</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>command handlers</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>myOrder.OrderItems.Add(myNewOrderItem);</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>//...</td>
+    </tr>
+  </tbody>
+</table>
