@@ -13,25 +13,32 @@ from time import perf_counter
 from time import perf_counter_ns
 # from timer import timer
 
+library_name = "MarkItDown"
+
+md = MarkItDown()
+
 #@timer()
-def extract_text_to_file_from_any_document (source: str) -> str:
+def extract_text_to_file_from_any_document (
+                                                source_file: str
+                                            ) -> str:
 
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
-
-    directory = f"{source}.hwaifs/text/py/MarkItDown/"
+    directory = f"{source_file}.hwaifs/extractions/text/py/{library_name}/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     try:
-        md = MarkItDown()
-        result_md = md.convert(source).text_content
+        result = md.convert(source_file)
+        result_md = result.text
+        num_pages = result.num_pages
+
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from EPUB document source = {source} : {e}" \
+            f"Exception reading text with {library_name} from EPUB document source = {source_file} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")
@@ -63,11 +70,15 @@ def extract_text_to_file_from_any_document (source: str) -> str:
         "time_start_3": time_start_3,
         "time_end_3": time_stop_3,
         "time_total_3": time_total_3,
+        "num_pages" : num_pages,
+        "pages_per_second_1" : num_pages / time_total_1,
+        "pages_per_second_2" : num_pages / time_total_2,
+        "pages_per_second_3" : num_pages / time_total_3,
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
     with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
-        f.write(json.dumps(times, indent=4))
+        f.write(orjson.dumps(times, option=orjson.OPT_INDENT_2).decode())
     #---------------------------------------------------------------------------
 
     return result_md

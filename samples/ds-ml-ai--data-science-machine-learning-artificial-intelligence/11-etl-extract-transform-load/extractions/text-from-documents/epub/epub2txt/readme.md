@@ -5,6 +5,8 @@
 
 *   https://pypi.org/project/epub2txt/
 
+*   https://github.com/ffreemt/epub2txt/blob/master/epub2txt/epub2txt.py
+
 ```shell
 pip install epub2txt
 # pip install epub2txt -U  # to upgrade

@@ -18,6 +18,7 @@ pip install --upgrade pip
 pip install EbookLib
 pip install beautifulsoup4
 
+pip install orjson
 pip install timer
 pip install codetiming
 
