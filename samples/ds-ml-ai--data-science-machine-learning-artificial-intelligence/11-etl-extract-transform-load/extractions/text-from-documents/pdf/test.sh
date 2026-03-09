@@ -15,7 +15,7 @@ PyMuPDF
 pymupdf4llm
 pymupdf4llm-c
 PyPDF2
-pdfium2
+pypdfium2
 unstructured
 # OCR based => slower
 marker
