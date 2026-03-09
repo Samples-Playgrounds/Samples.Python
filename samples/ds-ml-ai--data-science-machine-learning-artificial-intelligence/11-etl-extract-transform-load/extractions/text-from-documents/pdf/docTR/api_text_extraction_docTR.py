@@ -5,12 +5,18 @@ import os
 from pathlib import Path
 
 import traceback
-import orjson
+# import orjson # import error
+import json
 import datetime
 import time
 from time import perf_counter
 from time import perf_counter_ns
 # from timer import timer
+
+library_name = "docTR"
+
+model = ocr_predictor(pretrained=True)
+
 
 #@timer()
 def extract_text_to_file_from_pdf_document (
@@ -23,12 +29,13 @@ def extract_text_to_file_from_pdf_document (
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
+    directory = f"{source_file}.hwaifs/extractions/text/py/{library_name}/"
+    Path(directory).mkdir(parents=True, exist_ok=True)
 
     result_txt = ""
     result_json = ""
 
     try:
-        model = ocr_predictor(pretrained=True)
         # PDF
         doc = DocumentFile.from_pdf(source_file)
         # Analyze
@@ -39,13 +46,10 @@ def extract_text_to_file_from_pdf_document (
         # NO direct way shown to get the number of pages
         num_pages = len(result.export()["pages"])
 
-
-        directory = f"{source_file}.hwaifs/extractions/text/py/docTR/"
-        Path(directory).mkdir(parents=True, exist_ok=True)
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from PDF document source = {source_file} : {e}" \
+            f"Exception reading text with {library_name} from PDF document source = {source_file} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")
@@ -58,7 +62,8 @@ def extract_text_to_file_from_pdf_document (
     with open(f"{directory}/content.txt", "w") as f:
         f.write(result_txt) 
     with open(f"{directory}/content.json", "w") as f:
-        f.write(orjson.dumps(times, option=orjson.OPT_INDENT_2).decode())
+        # f.write(orjson.dumps(times, option=orjson.OPT_INDENT_2).decode())
+        f.write(json.dumps(result_json, indent=2))
 
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()
@@ -87,7 +92,8 @@ def extract_text_to_file_from_pdf_document (
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
     with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
-        f.write(orjson.dumps(times, option=orjson.OPT_INDENT_2).decode())
+        # f.write(orjson.dumps(times, option=orjson.OPT_INDENT_2).decode())
+        f.write(json.dumps(times, indent=2))
     #---------------------------------------------------------------------------
 
     if result_txt is None and result_json is None:
