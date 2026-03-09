@@ -12,8 +12,12 @@ from time import perf_counter
 from time import perf_counter_ns
 # from timer import timer
 
+library_name = "pdfplumber"
+
 #@timer()
-def extract_text_to_file_from_pdf_document (source: str) -> str:
+def extract_text_to_file_from_pdf_document (
+                                                source_file: str
+                                            ) -> str:
     """
     """
     #---------------------------------------------------------------------------
@@ -21,22 +25,21 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
+    directory = f"{source_file}.hwaifs/extractions/text/py/{library_name}/"
+    Path(directory).mkdir(parents=True, exist_ok=True)
 
     result_txt = ""
 
     try:
-        with pdfplumber.open(source) as pdf:
+        with pdfplumber.open(source_file) as pdf:
             for page in pdf.pages:
                 result_txt = result_txt + page.extract_text()
-
-        directory = f"{source}.hwaifs/extractions/text/py/pdfplumber/"
-        Path(directory).mkdir(parents=True, exist_ok=True)
 
         num_pages = len(pdf.pages)
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from PDF document source = {source} : {e}" \
+            f"Exception reading text with {library_name} from PDF document source = {source_file} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")
@@ -112,11 +115,11 @@ def extract_markdown_to_file_from_pdf_document (source: str) -> str:
                     chars.append(first_table_char | {"text": markdown})
                 page_text = extract_text(chars, layout=True)
                 all_text.append(page_text)
+            num_pages = len(pdf.pages)
             pdf.close()
 
         directory = f"{source}.hwaifs/extractions/text/py/pdfplumber/"
         Path(directory).mkdir(parents=True, exist_ok=True)
-        
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
@@ -141,16 +144,20 @@ def extract_markdown_to_file_from_pdf_document (source: str) -> str:
     time_total_3 = (time_stop_3 - time_start_3) / 1_000_000_000
 
     times = {
-        "function_method_name" : "extract_text_to_file_from_any_document",
+        "function_method_name" : "extract_text_to_file_from_pdf_document",
+        "num_pages" : num_pages,
         "time_start_1": time_start_1,
         "time_end_1": time_stop_1,
         "time_total_1": time_total_1,
+        "pages_per_second_1" : num_pages / time_total_1,
         "time_start_2": time_start_2,
         "time_end_2": time_stop_2,
         "time_total_2": time_total_2,
+        "pages_per_second_2" : num_pages / time_total_2,
         "time_start_3": time_start_3,
         "time_end_3": time_stop_3,
         "time_total_3": time_total_3,
+        "pages_per_second_3" : num_pages / time_total_3
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")

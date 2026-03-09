@@ -18,30 +18,32 @@ try:
 except ImportError:
     from PIL import Image
 
+library_name = "PyPDF2"
+
 #@timer()
-def extract_text_to_file_from_pdf_document (source: str) -> str:
+def extract_text_to_file_from_pdf_document (
+                                                source_file: str
+                                            ) -> str:
 
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
-
+    directory = f"{source_file}.hwaifs/extractions/text/py/{library_name}/"
+    Path(directory).mkdir(parents=True, exist_ok=True)
 
     try:
-        reader = PdfReader(source)
+        reader = PdfReader(source_file)
         result_txt = ""
         for page in reader.pages:
             result_txt = result_txt + page.extract_text()
         num_pages = len(reader.pages)
 
-        directory = f"{source}.hwaifs/extractions/text/py/PyPDF2/"
-        Path(directory).mkdir(parents=True, exist_ok=True)
-
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from PDF document source = {source} : {e}" \
+            f"Exception reading text with {library_name} from PDF document source = {source_file} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")

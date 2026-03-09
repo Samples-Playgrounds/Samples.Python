@@ -15,6 +15,8 @@ def extract_text_to_file_from_any_document (source: str) -> str:
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
+    directory = f"{source}.hwaifs/extractions/text/py/deepdoctection-pytorch/"
+    Path(directory).mkdir(parents=True, exist_ok=True)
 
     analyzer = dd.get_dd_analyzer()
 
@@ -28,8 +30,6 @@ def extract_text_to_file_from_any_document (source: str) -> str:
         text = page.text
         result_txt += text
             
-    directory = f"{source}.hwaifs/extractions/text/py/deepdoctection-pytorch/"
-    Path(directory).mkdir(parents=True, exist_ok=True)
 
     # save to file
     with open(f"{directory}/content.txt", "w") as f:

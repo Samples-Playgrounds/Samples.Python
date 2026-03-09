@@ -11,28 +11,31 @@ from time import perf_counter
 from time import perf_counter_ns
 # from timer import timer
 
+library_name = "kreuzberg"
+
 #@timer()
-def extract_text_to_file_from_pdf_document (source: str) -> str:
+def extract_text_to_file_from_pdf_document (
+                                                source_file: str
+                                            ) -> str:
 
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
+    directory = f"{source_file}.hwaifs/extractions/text/py/{library_name}/"
+    Path(directory).mkdir(parents=True, exist_ok=True)
 
     try:
-        result = extract_file_sync(source)
+        result = extract_file_sync(source_file)
         result_txt = result.content
 
         num_pages = result.num_pages  # or result.page_count, result.pages, etc.
         
-        directory = f"{source}.hwaifs/extractions/text/py/kreuzberg/"
-        Path(directory).mkdir(parents=True, exist_ok=True)
-
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from PDF document source = {source} : {e}" \
+            f"Exception reading text with {library_name} from PDF document source = {source_file} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")

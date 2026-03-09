@@ -12,8 +12,13 @@ from time import perf_counter
 from time import perf_counter_ns
 # from timer import timer
 
+library_name = "pytesseract"
+
 #@timer()
-def extract_text_to_file_from_pdf_document (source: str, lang: str = "eng") -> str:
+def extract_text_to_file_from_pdf_document (
+                                                source_file: str, 
+                                                lang: str = "eng"
+                                            ) -> str:
     """
     """
     #---------------------------------------------------------------------------
@@ -21,9 +26,10 @@ def extract_text_to_file_from_pdf_document (source: str, lang: str = "eng") -> s
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
+    directory = f"{source_file}.hwaifs/extractions/text/py/{library_name}/"
 
     try:
-        pages = convert_from_path(source, 500)
+        pages = convert_from_path(source_file, 500)
         
         result_txt = ""
         for pageNum,imgBlob in enumerate(pages):
@@ -31,13 +37,12 @@ def extract_text_to_file_from_pdf_document (source: str, lang: str = "eng") -> s
             
         num_pages = len(pages)
 
-        directory = f"{source}.hwaifs/extractions/text/py/pytesseract/"
         Path(directory).mkdir(parents=True, exist_ok=True)
 
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from PDF document source = {source} : {e}" \
+            f"Exception reading text with {library_name} from PDF document source = {source_file} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")

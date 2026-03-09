@@ -11,10 +11,14 @@ from time import perf_counter
 from time import perf_counter_ns
 # from timer import timer
 
+library_name = "MarkItDown"
+
 md = MarkItDown()
 
 #@timer()
-def extract_text_to_file_from_any_document (source: str) -> str:
+def extract_text_to_file_from_any_document (
+                                                source_file: str
+                                            ) -> str:
     """
     """
     #---------------------------------------------------------------------------
@@ -22,19 +26,18 @@ def extract_text_to_file_from_any_document (source: str) -> str:
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
-
+    directory = f"{source_file}.hwaifs/extractions/text/py/{library_name}/"
+    Path(directory).mkdir(parents=True, exist_ok=True)
 
     try:
-        result_md = md.convert(source).text_content
-        num_pages = result_md.pages.count()
+        result = md.convert(source_file)        
+        result_md = result.text_content
+        num_pages = 0       # result.pages.count()
 
-        directory = f"{source}.hwaifs/extractions/text/py/MarkItDown/"
-        Path(directory).mkdir(parents=True, exist_ok=True)
-        
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from PDF document source = {source} : {e}" \
+            f"Exception reading text with {library_name} from PDF document source = {source_file} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")

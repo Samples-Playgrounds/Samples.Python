@@ -30,12 +30,14 @@ scriptpath = "../../../../../"
 sys.path.append(os.path.abspath(scriptpath))
 from data import *
 
-
+sources = files_documents_pdfs
+ 
 def main():
    for source in sources:
       print(f"pdfminer.six <- source = {source}")
       if source.endswith(".pdf"):
-         result_md = api.extract_text_to_file_from_pdf_document(source)
+         result_md = api.extract_text_to_file_from_pdf_document_high_level(source)
+         result_md = api.extract_text_to_file_from_pdf_document_low_level(source)
 
 if __name__ == '__main__':
     main()

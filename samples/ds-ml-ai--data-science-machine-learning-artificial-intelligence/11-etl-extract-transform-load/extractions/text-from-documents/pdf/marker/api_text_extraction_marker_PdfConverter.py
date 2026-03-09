@@ -13,8 +13,17 @@ from time import perf_counter
 from time import perf_counter_ns
 # from timer import timer
 
+library_name = "marker"
+
+converter = PdfConverter(
+                            artifact_dict=create_model_dict(),
+                        )
+
+
 #@timer()
-def extract_text_to_file_from_pdf_document (source: str) -> str:
+def extract_text_to_file_from_pdf_document (
+                                                source_file: str
+                                            ) -> str:
     """
     """
     #---------------------------------------------------------------------------
@@ -22,23 +31,19 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
+    directory = f"{source_file}.hwaifs/extractions/text/py/{library_name}/"
+    Path(directory).mkdir(parents=True, exist_ok=True)
 
     try:
-        converter = PdfConverter(
-            artifact_dict=create_model_dict(),
-        )
-        rendered = converter(source)
+        rendered = converter(source_file)
         result_md, _, images = text_from_rendered(rendered)
 
         num_pages = len(rendered)
 
-        directory = f"{source}.hwaifs/extractions/text/py/marker/"
-        Path(directory).mkdir(parents=True, exist_ok=True)
-        
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from PDF document source = {source} : {e}" \
+            f"Exception reading text with {library_name} from PDF document source = {source_file} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")

@@ -11,6 +11,9 @@ from time import perf_counter
 from time import perf_counter_ns
 # from timer import timer
 
+library_name = "docling"
+
+converter = DocumentConverter()
 
 #@timer()
 def extract_text_to_file_from_any_document (
@@ -22,18 +25,18 @@ def extract_text_to_file_from_any_document (
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
-    directory = f"{source_file}.hwaifs/extractions/text/py/docling/"
+    directory = f"{source_file}.hwaifs/extractions/text/py/{library_name}/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     try:
-        converter = DocumentConverter()
         result_doc = converter.convert(source_file)
         result_txt = result_doc.document.export_to_text()
         num_pages = len(result_doc.document.pages)
+
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from PDF document source = {source_file} : {e}" \
+            f"Exception reading text with {library_name} from PDF document source = {source_file} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")
@@ -79,8 +82,6 @@ def extract_text_to_file_from_any_document (
     return result_txt
 
 
-converter = DocumentConverter()
-
 #@timer()
 def extract_markdown_to_file_from_any_document (
                                                     source_file: str
@@ -92,18 +93,18 @@ def extract_markdown_to_file_from_any_document (
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
+    directory = f"{source_file}.hwaifs/extractions/text/py/{library_name}/"
+    Path(directory).mkdir(parents=True, exist_ok=True)
 
     try:
         result_doc = converter.convert(source_file)
         result_md = result_doc.document.export_to_markdown()
         num_pages = len(result_doc.document.pages)
 
-        directory = f"{source_file}.hwaifs/extractions/text/py/docling/"
-        Path(directory).mkdir(parents=True, exist_ok=True)
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from PDF document source_file = {source_file} : {e}" \
+            f"Exception reading text from PDF document source = {source_file} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")
@@ -168,31 +169,35 @@ from docling.datamodel.pipeline_options import PipelineOptions, EasyOcrOptions, 
 from docling.datamodel.base_models import ConversionStatus, InputFormat
 
 doc_converter = (
-            DocumentConverter(  # all of the below is optional, has internal defaults.
-            allowed_formats=[
-                InputFormat.PDF,
-                InputFormat.IMAGE,
-                InputFormat.DOCX,
-                InputFormat.HTML,
-                InputFormat.PPTX,
-                InputFormat.ASCIIDOC,
-                InputFormat.CSV,
-                InputFormat.MD,
-                InputFormat.XLSX
-            ],  # whitelist formats, non-matching files are ignored.
-            format_options={
-                InputFormat.PDF: PdfFormatOption(
-                    pipeline_cls=StandardPdfPipeline, backend=PyPdfiumDocumentBackend
-                ),
-                InputFormat.DOCX: WordFormatOption(
-                    pipeline_cls=SimplePipeline  , backend=MsWordDocumentBackend
-                ),
-                InputFormat.XLSX: ExcelFormatOption(
-                    pipeline_cls=SimplePipeline  , backend=MsExcelDocumentBackend
-                ),
-            },
-        )
-    )
+                    DocumentConverter(  # all of the below is optional, has internal defaults.
+                                allowed_formats=[
+                                    InputFormat.PDF,
+                                    InputFormat.IMAGE,
+                                    InputFormat.DOCX,
+                                    InputFormat.HTML,
+                                    InputFormat.PPTX,
+                                    InputFormat.ASCIIDOC,
+                                    InputFormat.CSV,
+                                    InputFormat.MD,
+                                    InputFormat.XLSX
+                                ],  # whitelist formats, non-matching files are ignored.
+                                format_options=
+                                {
+                                    InputFormat.PDF: PdfFormatOption(
+                                                                        pipeline_cls=StandardPdfPipeline,
+                                                                        backend=PyPdfiumDocumentBackend
+                                                                    ),
+                                    InputFormat.DOCX: WordFormatOption(
+                                                                        pipeline_cls=SimplePipeline,
+                                                                        backend=MsWordDocumentBackend
+                                                                    ),
+                                    InputFormat.XLSX: ExcelFormatOption(
+                                                                        pipeline_cls=SimplePipeline, 
+                                                                        backend=MsExcelDocumentBackend
+                                                                    ),
+                                },
+                            )
+                    )
 
 #@timer()
 def extract_markdown_to_file_from_any_document_complex (
@@ -205,17 +210,17 @@ def extract_markdown_to_file_from_any_document_complex (
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
+    directory = f"{source_file}.hwaifs/extractions/text/py/{library_name}/"
+    Path(directory).mkdir(parents=True, exist_ok=True)
 
     try:
         result_doc = doc_converter.convert_all([source_file])
-        num_pages = len(result_doc.document.pages)
+        num_pages = len(result_doc.pages)
 
-        directory = f"{source_file}.hwaifs/extractions/text/py/docling/"
-        Path(directory).mkdir(parents=True, exist_ok=True)
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from PDF document source_file = {source_file} : {e}" \
+            f"Exception reading text from PDF document source = {source_file} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")

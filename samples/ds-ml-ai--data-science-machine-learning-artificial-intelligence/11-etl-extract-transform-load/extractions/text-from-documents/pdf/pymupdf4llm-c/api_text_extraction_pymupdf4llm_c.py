@@ -1,4 +1,4 @@
-from pymupdf4llm_c import ConversionConfig, ExtractionError, to_json
+from pymupdf4llm_c import ExtractionError, to_json
 
 import os
 from pathlib import Path
@@ -11,8 +11,12 @@ from time import perf_counter
 from time import perf_counter_ns
 # from timer import timer
 
+library_name = "pymupdf4llm_c"
+
 #@timer()
-def extract_text_to_file_from_pdf_document (source: str) -> str:
+def extract_text_to_file_from_pdf_document (
+                                                source_file: str
+                                            ) -> str:
     """
     """
     #---------------------------------------------------------------------------
@@ -20,23 +24,24 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
-
-    directory = f"{source}.hwaifs/extractions/text/py/pymupdf4llm_c/"
+    directory = f"{source_file}.hwaifs/extractions/text/py/{library_name}/"
     Path(directory).mkdir(parents=True, exist_ok=True)
-
-    result_txt = ""
-
-    # save to file
-    # with open(f"{directory}/content.txt", "w") as f:
-    #     f.write(result_txt) 
     
     try:
-        json_files = to_json(source, output_dir=directory)
-        num_pages = len(fitz.open(source))
+        output_file = f"{directory}/content.json"
+        result_json = to_json(source_file, output=output_file)
+        num_pages = 0
+
+        # for path in json_files:
+        #     with open(path, "r") as f:
+        #         data = json.load(f)
+        #         if "text" in data:
+        #             result_txt = result_txt + data["text"] + "\n"
+
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from PDF document source = {source} : {e}" \
+            f"Exception reading text with {library_name} from PDF document source = {source_file} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")
@@ -45,12 +50,6 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
         
         return
 
-    json_files = to_json(source, output_dir=directory)
-    for path in json_files:
-        with open(path, "r") as f:
-            data = json.load(f)
-            if "text" in data:
-                result_txt = result_txt + data["text"] + "\n"
 
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()
@@ -82,4 +81,4 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
         f.write(orjson.dumps(times, option=orjson.OPT_INDENT_2).decode())
    #---------------------------------------------------------------------------
 
-    return result_txt
+    return result_json

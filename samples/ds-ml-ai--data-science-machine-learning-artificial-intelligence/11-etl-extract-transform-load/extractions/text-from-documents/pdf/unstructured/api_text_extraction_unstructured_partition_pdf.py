@@ -11,8 +11,12 @@ from time import perf_counter
 from time import perf_counter_ns
 # from timer import timer
 
+library_name = "unstructured"
+
 #@timer()
-def extract_text_to_file_from_pdf_document (source: str) -> str:
+def extract_text_to_file_from_pdf_document (
+                                                source_file: str
+                                            ) -> str:
     """
     """
     #---------------------------------------------------------------------------
@@ -20,21 +24,21 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
+    directory = f"{source_file}.hwaifs/extractions/text/py/{library_name}/"
 
     try:
         # Returns a List[Element] present in the pages of the parsed pdf document
-        elements = partition_pdf(source)
+        elements = partition_pdf(source_file)
 
         result_txt = "\n\n".join([str(el) for el in elements])
         num_pages = len(elements)
 
-        directory = f"{source}.hwaifs/extractions/text/py/unstructured/"
         Path(directory).mkdir(parents=True, exist_ok=True)
 
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from PDF document source = {source} : {e}" \
+            f"Exception reading text with {library_name} from PDF document source = {source_file} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")
