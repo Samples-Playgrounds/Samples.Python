@@ -18,6 +18,7 @@ pip install --upgrade pip
 pip install legacy-cgi
 pip install 'marker-pdf[full]'
 
+pip install orjson
 pip install timer
 pip install codetiming
 

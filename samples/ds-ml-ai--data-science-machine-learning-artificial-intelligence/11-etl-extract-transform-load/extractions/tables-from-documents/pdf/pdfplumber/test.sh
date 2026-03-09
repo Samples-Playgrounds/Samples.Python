@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LIBRARY=pdfplumbers
+LIBRARY=pdfplumber
 figlet $LIBRARY
 figlet start
 
@@ -20,6 +20,7 @@ pip install pandas
 pip install tabulate
 pip install openpyxl
 
+pip install orjson
 pip install timer
 pip install codetiming
 

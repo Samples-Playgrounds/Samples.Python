@@ -13,32 +13,35 @@ from time import perf_counter
 from time import perf_counter_ns
 # from timer import timer
 
+library_name = "marker"
 
 converter = TableConverter(
-    artifact_dict=create_model_dict(),
-)
+                                artifact_dict=create_model_dict(),
+                            )
 
 #@timer()
-def extract_tables_to_files_from_pdf_document (source: str) -> str:
+def extract_tables_to_files_from_pdf_document (
+                                                source_file: str
+                                            ) -> str:
     """
-    """
-    
+    """  
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
-
-    directory = f"{source}.hwaifs/tables/py/marker/"
+    directory = f"{source_file}.hwaifs/extractions/tables/py/{library_name}/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     try:
         rendered = converter(source)
         text, _, images = text_from_rendered(rendered)
+        num_pages = len(rendered)
+        
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from PDF document source = {source} : {e}" \
+            f"Exception reading tables with {library_name} from PDF document source = {source_file} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")
@@ -66,11 +69,15 @@ def extract_tables_to_files_from_pdf_document (source: str) -> str:
         "time_start_3": time_start_3,
         "time_end_3": time_stop_3,
         "time_total_3": time_total_3,
+        "num_pages" : num_pages,
+        "pages_per_second_1" : num_pages / time_total_1,
+        "pages_per_second_2" : num_pages / time_total_2,
+        "pages_per_second_3" : num_pages / time_total_3,
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
     with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
-        f.write(json.dumps(times, indent=4))
+        f.write(orjson.dumps(times, option=orjson.OPT_INDENT_2).decode())
     #---------------------------------------------------------------------------
 
     return

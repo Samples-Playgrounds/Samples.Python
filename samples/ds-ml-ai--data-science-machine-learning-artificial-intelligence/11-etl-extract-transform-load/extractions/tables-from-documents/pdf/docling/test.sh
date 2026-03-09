@@ -20,6 +20,7 @@ pip install docling[vlm]
 pip install opencv-python
 pip install pandas
 
+pip install orjson
 pip install timer
 pip install codetiming
 

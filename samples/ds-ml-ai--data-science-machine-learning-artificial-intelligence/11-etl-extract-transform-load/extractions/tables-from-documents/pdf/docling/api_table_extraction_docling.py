@@ -11,8 +11,15 @@ from time import perf_counter
 from time import perf_counter_ns
 # from timer import timer
 
+library_name = "docling"
+
+doc_converter = DocumentConverter()
+
+
 #@timer()
-def extract_tables_to_files_from_pdf_document (source: str) -> str:
+def extract_tables_to_files_from_pdf_document (
+                                                source_file: str
+                                            ) -> str:
     """
     """
 
@@ -21,14 +28,13 @@ def extract_tables_to_files_from_pdf_document (source: str) -> str:
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
-
-    directory = f"{source}.hwaifs/tables/py/docling/"
+    directory = f"{source_file}.hwaifs/extractions/tables/py/{library_name}/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     try:
-        doc_converter = DocumentConverter()
+        conv_res = doc_converter.convert(source_file)
 
-        conv_res = doc_converter.convert(source)
+        num_pages = len(conv_res.document.pages)
 
         # Iterate through tables
         # Export tables
@@ -49,7 +55,7 @@ def extract_tables_to_files_from_pdf_document (source: str) -> str:
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from PDF document source = {source} : {e}" \
+            f"Exception reading tables with {library_name} from PDF document source = {source_file} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")
@@ -77,6 +83,10 @@ def extract_tables_to_files_from_pdf_document (source: str) -> str:
         "time_start_3": time_start_3,
         "time_end_3": time_stop_3,
         "time_total_3": time_total_3,
+        "num_pages" : num_pages,
+        "pages_per_second_1" : num_pages / time_total_1,
+        "pages_per_second_2" : num_pages / time_total_2,
+        "pages_per_second_3" : num_pages / time_total_3,
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
