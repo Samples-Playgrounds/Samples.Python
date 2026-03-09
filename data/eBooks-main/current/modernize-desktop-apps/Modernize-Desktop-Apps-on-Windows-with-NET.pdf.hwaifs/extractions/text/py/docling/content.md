@@ -1987,13 +1987,17 @@ PublicKeyToken= b0315f7f11d50a3a Consider adding a reference to that assembly.
 
 C#
 
-Project eShopWinForms
+Project
+
+X
 
 eShopWinForms eShopWinForms
 
 eShopWinForms eShopWinForms
 
 eShopWinForms eShopWinForms
+
+eShopWinForms
 
 File
 

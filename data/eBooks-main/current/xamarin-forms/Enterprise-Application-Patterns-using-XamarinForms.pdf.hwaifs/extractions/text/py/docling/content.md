@@ -274,7 +274,7 @@ These backend services are implemented as microservices using ASP.NET Core MVC, 
 
 For information about the implementation of the backend services, see .NET Microservices: Architecture for Containerized .NET Applications.
 
-[e] OTCONTANNERS
+[e] CONTANERS
 
 E
 
@@ -546,9 +546,7 @@ A view can be defined as a data template and associated with a view model type. 
 
 A view model locator is a custom class that manages the instantiation of view models and their association to views. In the eShopOnContainers mobile app, the ViewModelLocator class has an attached property, AutoWireViewModel , that's used to associate view models with views. In the view's XAML, this attached property is set to true to indicate that the view model should be automatically connected to the view, as shown in the following code example:
 
-```
 viewModelBase:ViewModelLocator.AutoWireViewModel="true"
-```
 
 The AutoWireViewModel property is a bindable property that's initialized to false , and when its value changes the OnAutoWireViewModelChanged event handler is called. This method resolves the view model for the view. The following code example shows how this is achieved:
 
@@ -729,7 +727,7 @@ OrderService m
 
 Note: Dependency injection can also be implemented manually using factories. However, using a container provides additional capabilities such as lifetime management, and registration through assembly scanning.
 
-Saure 2-1. Demendencies when icina denendency iniertion
+Sure 2-1. Demendencies when icina denendency iniertion
 
 There are several advantages to using a dependency injection container:
 
@@ -1602,7 +1600,7 @@ Web API
 
 Container
 
-PAtinare raforans anplication hark-and microcor
+PAtinare raforans anplication hark-and miracor
 
 Figure 8-4 : eShopOnContainers reference application back-end microservices
 
@@ -1620,7 +1618,7 @@ The eShopOnContainers mobile app communicates with the containerized back-end mi
 
 Mobile App
 
-Fiaure 9-5: Direct client-to-microcervice communication
+Faure 9-5: Direct client-to-microcervice communication
 
 Backend Microservices
 

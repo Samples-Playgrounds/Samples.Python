@@ -618,13 +618,9 @@ Use Ctri - Click to multiselect machines on the map to add or remove from the gr
 
 © Time Range: 9/21/2017 7:00 AM — 8:00 AM (1 hour)
 
-· *
-
-Legend shons@microsoft.com
+conversations within your organization. You don't know enough about the potential cost benefits, or whether workloads could just lift-and-shift or would require significant rework to migrate successfully. No wonder many organizations hesitate. Legend shons@microsoft.com
 
 «
-
-conversations within your organization. You don't know enough about the potential cost benefits, or whether workloads could just lift-and-shift or would require significant rework to migrate successfully. No wonder many organizations hesitate.
 
 Azure Migrate is a new service that provides the guidance, insights, and mechanisms needed to assist you in migrating to Azure. Azure Migrate provides:
 
@@ -647,6 +643,8 @@ Figure 2-2. Positioning Cloud Infrastructure-Ready applications
 As part of the end-to-end Azure Migrate, Azure Site Recovery is a tool that you can use to easily migrate your web apps to VMs in Azure. You can use Site Recovery to replicate on-premises VMs and physical servers to Azure, or to replicate them to a secondary on-premises location. You can even replicate a workload t hat's running on a supported Azure VM, on an on -premises Hyper-V VM, on a VMware VM, or on a Windows or Linux physical server. Replication to Azure eliminates the cost and complexity of maintaining a secondary datacenter.
 
 Restore default configuration Report a bug P Q &gt;
+
+· *
 
 MICROSOFT
 
@@ -741,7 +739,7 @@ ADMS
 
 Service
 
-· Microsoft Azure
+Microsoft Azure
 
 Azure SQL Database Services
 
@@ -1750,9 +1748,9 @@ NET Bot Black Hoodie NET T-SN $7950 1p0g
 
 NET Black &amp; White Mug NET
 
-Priam White T-Shit
+Priam White T-shin
 
-Prism White T-Shit
+Prism White T-shit
 
 NET Foundallen T-shirt NET Foundation T-shit NET T-Sh $1209 4png
 

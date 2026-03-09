@@ -587,6 +587,7 @@ In the next section, you'll learn how to build a DevOps pipeline with Azure Pipe
 
 ## Additional reading
 
+- ·
 - Web Apps overview
 - Build a .NET Core and SQL Database web app in Azure App Service
 - Configure deployment credentials for Azure App Service
@@ -786,6 +787,8 @@ External Git
 1. If two-factor authentication is enabled on your GitHub account, a personal access token is required. In that case, click the Authorize with a GitHub personal access token link. See the official GitHub personal access token creation instructions for help. Only the repo scope of permissions is needed. Otherwise, click the Authorize using OAuth button.
 
 <!-- image -->
+
+·LL'
 
 Tasks Variables Triggers Options Retention History
 
@@ -1204,17 +1207,13 @@ MyFirstProject-ASP.NET Core-CD
 
 SimpleFeedReader
 
-Releases
-
-Deployments
-
-Analytics
+Releases Denloyments Analvtics
 
 Releases
 
 Release-3
 
-Last run sia 20210420.... ¿ main
+Last run sia 20210420.... 8º main
 
 #20210420.5 · Update Index shtml
 
@@ -1222,7 +1221,7 @@ New pipeline
 
 Edit
 
-* Create release
+· Create release
 
 T Filter pipelines
 
@@ -1254,7 +1253,7 @@ The build definition's Tasks tab lists the individual steps being used. There ar
 
 Created
 
-4/20/2021, 12:58:08 PM
+4/20/2021,12:58:08 PM
 
 Stages
 
@@ -3355,7 +3354,7 @@ Deploy keys
 
 1 wiki
 
-© Securty
+© Security
 
 Environments a Projects
 
@@ -4011,9 +4010,7 @@ You can use a starter workflow for code scanning by navigating to the Security t
 
 <!-- image -->
 
-**ioune 1.**
-
-4
+**joune 1.**
 
 10
 
@@ -4043,16 +4040,6 @@ I7 Pull requests
 
 Workflows
 
-‹&gt; Edit new file
-
-· Preview
-
-All workflows
-
-NET
-
-· to conmit it to your repository-
-
 · Actions
 
 Projects
@@ -4079,13 +4066,23 @@ L Insights
 
 1. A new workflow file is created in your .github/workflows folder.
 
+‹&gt; Edit new file
+
+· Preview
+
+All workflows lo NET
+
 codeql-analysisymi
 
 2. Select Start Commit on the upper right to save the default workflow. You can commit to the main branch. Search Marketplace for Actions
 
-CodeQL
+· to conmit it to your repository-
+
+4
 
 · You may wish to alter this file to override the set of languages analyzed,
+
+CodeQL
 
 1 workflow run
 
@@ -4287,7 +4284,7 @@ queries:
 
 - uses: security-and-quality
 
-**Fioune 6.**
+**Figune 6.**
 
 **Figure 6:** Create the CodeQL configuration file.
 
@@ -4420,7 +4417,7 @@ This alert is not relevant
 
 Nicmice an alant
 
-**igno o.**
+**igno a.**
 
 Dismiss
 
@@ -4583,7 +4580,7 @@ nywebapp2181
 
 O Search (Ctri-/)
 
-Overview ectvity o9
+Overview
 
 Access control (AMM
 
@@ -4600,6 +4597,8 @@ Deployment slots
 ·· Deployment options.
 
 ( Continuous Delivery (Preview)
+
+SETTINO
 
 apoucation serro
 

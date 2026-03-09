@@ -671,13 +671,15 @@ Get started by using the Visual Studio Publish Azure Application wizard .
 
 <!-- image -->
 
-X
-
 <!-- image -->
+
+Figure 4 : Publish to Azure
 
 <!-- image -->
 
 For a more repeatable process you can set up an Azure DevOps pipeline from inside Visual Studio 2019 which will build, test, and deploy your application to Azure. The Pipeline will be kicked off every time there is a check-in to your source control ensuring your application is always up to date.
+
+X
 
 Figure 5 : Configure a DevOps Pipeline
 

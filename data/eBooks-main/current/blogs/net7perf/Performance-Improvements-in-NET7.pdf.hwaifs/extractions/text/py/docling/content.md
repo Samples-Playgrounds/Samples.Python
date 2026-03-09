@@ -1046,9 +1046,7 @@ All that is to say, inlining is really important, it's important that the 'right
 
 One really interesting improvement around inlining is dotnet/runtime#64521, and it might be surprising. Consider the Boolean.ToString method; here's its full implementation:
 
-public override string ToString()
-
-{
+public override string ToString() {
 
 ```
 if (!m_value) return "False"; return "True"; }
@@ -1361,9 +1359,7 @@ private readonly string _assemblyName = typeof (MyClass).Assembly.FullName; priv
 | CreateInstance | .NET 6.0  | 3.827 us |     1   |
 | CreateInstance | .NET 7.0  | 2.276 us |     0.6 |
 
-Other changes contributed to Activator.CreateInstance improvements as well. dotnet/runtime#67148 removed several array and list allocations from inside of the RuntimeType.CreateInstanceImpl me thod that's used by CreateInstance (using instead of allocating a new Type[0] , avoiding unnecessarily turning a builder into an array, etc.), resulting in less allocation and faster throughput.
-
-Type.EmptyTypes
+Other changes contributed to Activator.CreateInstance improvements as well. dotnet/runtime#67148 removed several array and list allocations from inside of the RuntimeType.CreateInstanceImpl me thod that's used by CreateInstance (using Type.EmptyTypes instead of allocating a new Type[0] , avoiding unnecessarily turning a builder into an array, etc.), resulting in less allocation and faster throughput.
 
 ```
 [Benchmark] public void CreateInstance() => Activator.CreateInstance( typeof (MyClass), BindingFlags.NonPublic | BindingFlags.Instance, null , Array.Empty<object>(), null ); internal class MyClass {
@@ -2067,7 +2063,11 @@ public static ReadOnlySpan<byte> Text => "hello"u8;
 the C# compiler will compile that equivalent to if you wrote:
 
 ```
-public static ReadOnlySpan<byte> Text => new ReadOnlySpan<byte>( new byte[] { (byte)'h', (byte)'e', (byte)'l', (byte)'l', (byte)'o', (byte)'\0' }, 0, 5);
+byte[] { (byte)'h', (byte)'e', (byte)'l', (byte)'l',
+```
+
+```
+public static ReadOnlySpan<byte> Text => new ReadOnlySpan<byte>( new (byte)'o', (byte)'\0' }, 0, 5);
 ```
 
 In other words, the compiler is doing the equivalent of Encoding.UTF8.GetBytes at compile-time and hardcoding the resulting bytes, saving the cost of performing that encoding at run-time. Of course, at first glance, that array allocation might look terribly inefficient. However, looks can be deceiving, and are in this case. For several releases now, when the C# compiler sees a byte[] (or sbyte[] or bool[] ) being initialized with a constant length and constant values and immediately cast to or used to construct a ReadOnlySpan&lt;byte&gt; , it optimizes away the byte[] allocation. Instead, it blits the data for that span into the assembly's data section, and then constructs a span that points directly to that data in the loaded assembly. This is the actual generated IL for the above property:
@@ -2324,11 +2324,7 @@ var writer = new SpanWriter( stackalloc char[128]); Append( ref writer, 123); wr
 
 We have a ref struct SpanWriter that takes a Span&lt;char&gt; to its constructor and allows for writing to it by copying in additional content and then updating the stored length. The Write method accepts a ReadOnlySpan&lt;char&gt; . And we then have a helper Append method which is formatting a byte into some stackalloc 'd temporary space and passing the resulting formatted char s in to Write . Straightforward. Except, this doesn't compile:
 
-error CS8350: This combination of arguments to 'SpanWriter.Write(ReadOnlySpan&lt;char&gt;)' is
-
-```
-disallowed because it may expose variables referenced by parameter 'value' outside of their declaration scope
-```
+error CS8350: This combination of arguments to 'SpanWriter.Write(ReadOnlySpan&lt;char&gt;)' is disallowed because it may expose variables referenced by parameter 'value' outside of their declaration scope
 
 What do we do? The Write method doesn't actually store the value parameter and won't ever need to, so we can change the signature of the method to annotate it as scoped :
 

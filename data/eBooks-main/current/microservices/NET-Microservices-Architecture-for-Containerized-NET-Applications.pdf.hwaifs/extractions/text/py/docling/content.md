@@ -137,7 +137,9 @@ Pierre Millet , Sr. Consultant, Microsoft
 
 Michael Friis , Product Manager, Docker Inc
 
-Charles Lowell , Software Engineer, VS CAT team, Microsoft
+Charles Lowell
+
+, Software Engineer, VS CAT team, Microsoft
 
 Miguel Veloso , Software Development Engineer at Plain Concepts
 
@@ -3177,7 +3179,7 @@ StatusDescription : oK
 
 RaContent
 
-: HTTP/1.1 200 OK
+HTTP/1.1 200 OK
 
 If localhost is not pointing to the Docker host IP (by default, when using Docker CE, it should), to navigate to your service, use the IP address of your machine's network card.
 
@@ -4315,8 +4317,7 @@ environments so that you can easily run integration tests starting from a clean 
 
 https://learn.microsoft.com/sql/linux/sql-server-linux-setup-docker
 
-- Connect and query SQL Server on Linux with sqlcmd
-- https://learn.microsoft.com/sql/linux/sql-server-linux-connect-and-query-sqlcmd
+- Connect and query SQL Server on Linux with sqlcmd https://learn.microsoft.com/sql/linux/sql-server-linux-connect-and-query-sqlcmd
 
 ## Seeding with test data on Web application startup
 
@@ -4495,7 +4496,7 @@ B
 
 Event bus
 
-Lupublish/subscribe channel
+Lupublish/Subscribe channel
 
 In Figure 6-19 you can see how, from an application point of view, the event bus is nothing more than a Pub/Sub channel. The way you implement this asynchronous communication can vary. It can have multiple implementations so that you can swap between them, depending on the environment requirements (for example, production versus development environments).
 
@@ -5264,7 +5265,7 @@ Identity
 
 Location
 
-Dependencies
+* Dependencies
 
 ## Sample microservices/containers to reroute through the API Gateways
 
@@ -8540,7 +8541,7 @@ Customers
 
 Browser
 
-Submit Order page r - -
+Submit Order page r- -
 
 | Backend
 

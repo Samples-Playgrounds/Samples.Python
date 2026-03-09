@@ -1,0 +1,121 @@
+**Vježba**
+
+**Izrada jednostavne ASP.NET App**
+
+Otvaranjem Visual Studio-a stvarate novi projekt. Potrebno je odabrati ASP:NET App projekt kako je prikazano na slici 1.
+
+![](data:image/png;base64...)
+
+Slika 1. ASP:NET App
+
+Idući korak je dodavanje imena projektu i postavljanje osnovni postavki. Slika 2., i slika 3., prikazuju način definiranja osnovnih postavki za izradu jednostavne aplikacije. U ovoj lekciji ime projekta definirano je kao *Edukacija* te odabrana lokacija gdje će se nalazi spremljeni projekt.
+
+![](data:image/png;base64...)
+
+Slika 2. Ime projekta
+
+![](data:image/png;base64...)
+
+Slika 3. Osnovne postavke
+
+Kreiranjem projekta otvara se sučelje programa i prva aplikacija. Aplikacija se pokreće tipkom F5. Prije otvaranja aplikacije u pregledniku, slika 6., potrebno je odobriti instalaciju i korištenje pojedinih certifikata, slika 5.
+
+![](data:image/png;base64...)
+
+Slika 4. Radno sučelje programa
+
+![](data:image/png;base64...)
+
+Slika 5.SSL certifikat
+
+![](data:image/png;base64...)
+
+Slika 6. Početna aplikacija
+
+Za rad, uz središnji prozor, bitan prozor je Solution Explorer. Zadužen je za prikaz svih datoteka i servisa za rad aplikacije. Vidljive datoteke i servisi dolaze kao ugrađene mape u ovom projektu kako bi olakšale i ubrzale pisanje programskog koda. Otvaranjem mape *Pages*, slika7., uočavamo sve stranice i stavke koje su potrebne za rad. U ovoj lekciji editirat će se postojeća aplikacija i dodati nove stavke.
+
+Layout dokument definira izgled aplikacije i prikazuje koje sve stranice su prikazane pokretanjem aplikacije, slika 8. Na slici su uokvireni dijelovi koda koji prikazuju da se na web stranici prikazuju dvije stranice Home i Privacy.
+
+Potrebno je dodati još dvije stranice, Galerija i Kontakt. Slika 9., slika 10., i slika 11., prikazuju način dodavanja novih stranica u mapu Pages. Slika 12., prikazuje dodavanje elemenata u layout datoteku. Potrebno je kopirati oznaku liste elementa i promijeniti ime stranice.
+
+![](data:image/png;base64...)
+
+Slika 7.Solution Explorer
+
+![](data:image/png;base64...)
+
+Slika 8. Layout
+
+![](data:image/png;base64...)
+
+Slika 9. Dodavanje stranice u mapu Pages
+
+![](data:image/png;base64...)
+
+Slika 10. Postavke stranice
+
+![](data:image/png;base64...)
+
+Slika 11. Odabir stranice i dodjela imena
+
+![](data:image/png;base64...)
+
+Slika 12. Layout – zapis koda za nove stranice
+
+# Uređivanje stranice
+
+Dvostrukim klikom na Index stranicu u solution Exploreru otvara se prozor za uređivanje HTML koda. Slika 13. prikazuje otvorenu Index stranicu i HTML kod. Index stranica je početna stranica u ovoj lekciji.
+
+![](data:image/png;base64...)
+
+Slika 13. Programksi kod stranice Index
+
+U skupini podatka označenoj pomoću oznake <dvi> nalazi se atribut class koji označava kojoj skupini i na kakav način su definirati ostali elementi u skupini. Elementi su naslov i rečenice koje će se pojaviti na početnoj stranici. Uredite dokument da izgleda jednako slici 13.
+
+Stranicu Galerija potreno je urediti kako je prikazano na slici 14., kako bi prikazali sliku. Prije pisanja programskog koda potrebno je stvorit novu mapu u wwroot formi, kako je prikazno na slici 15.
+
+![](data:image/png;base64...)
+
+Slika 14. Programksi kod stranice Galerija
+
+![](data:image/png;base64...)
+
+Slika 15. Kreiranje mape Slike
+
+![](data:image/png;base64...)
+
+Slika 16. Postavljanje slike u kreiranu mapu Slike
+
+U kreiranu mapu *Slike* potrebno je dodati sliku po izboru .U ovoj lekciji slika je naziva SB.jpg. Slika 16., prikazuje način postavljanja slike u mapu.
+
+Po završetku pisanja koda, slika 14., na zaslonu stranice galerija prikazat će se slika koju ste dodali u projekt, slika 17.
+
+![](data:image/png;base64...)
+
+Slika 17. Prikaz stranice Galerija
+
+Izrada posljednje stranice Kontakt prikazano je slikama 17.,18.,19., i 20.
+
+![](data:image/png;base64...)
+
+Slika 17. HTML stranice Kontakt
+
+![](data:image/png;base64...)
+
+Slika 18. Poziv pozadinskog koda
+
+![](data:image/png;base64...)
+
+Slika 19. Pozadinski kod stranice Kontakt
+
+![](data:image/png;base64...)![](data:image/png;base64...)
+
+Slika 20. Kontakt Forma
+
+# Zadatak
+
+Izraditi dodatnu stranicu pod nazivom *Ocjene*. Stranica sadrži tablicu s popisom Lovrinih predmeta u 5. razredu i ocjena koju bi Lovro na kraju razreda želio imati.
+
+Izvor za dodatnu edukaciju:
+
+https://learn.microsoft.com/hr-hr/training/paths/aspnet-core-web-app/

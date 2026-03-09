@@ -1381,8 +1381,6 @@ Microservice 1
 
 Web API
 
-Container
-
 With direct client-to-microservice communication, the multi-platform app makes requests to each microservice directly through its public endpoint, with a different TCP port per microservice. In production, the endpoint would typically map to the microservice's load balancer, which distributes requests across the available instances.
 
 Tip

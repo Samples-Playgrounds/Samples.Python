@@ -3125,6 +3125,9 @@ public class GetByIdEndpoint : IClassFixture<ApiTestFixture> { JsonSerializerOpt
 
 <!-- image -->
 
+| }   |
+|-----|
+
 If the app being migrated has no integration tests, the migration process can be a great opportunity to add some. These tests can verify that the migrated app behaves as the team expects. When such tests are in place early in a migration, they can ensure that later migration efforts do not break previously migrated portions of the app. Given how easy it is to set up and run integration tests in ASP.NET Core, the return on the investment spent setting up such tests is usually pretty high.
 
 ## WCF client configuration
