@@ -12,8 +12,12 @@ from time import perf_counter
 from time import perf_counter_ns
 # from timer import timer
 
+library_name = "pypdfium2"
+
 #@timer()
-def extract_text_to_file_from_pdf_document (source: str) -> str:
+def extract_text_to_file_from_pdf_document (
+                                                source_file: str
+                                            ) -> str:
     """
     """
     #---------------------------------------------------------------------------
@@ -21,9 +25,10 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
+    directory = f"{source_file}.hwaifs/extractions/text/py/{library_name}/"
 
     try:
-        pdf = pdfium.PdfDocument(source)
+        pdf = pdfium.PdfDocument(source_file)
         
         result_txt = ""
         for page in pdf:    
@@ -33,13 +38,12 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
 
         num_pages = len(pdf)            
 
-        directory = f"{source}.hwaifs/extractions/text/py/pypdfium2/"
         Path(directory).mkdir(parents=True, exist_ok=True)
 
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
-            f"Exception reading tables from PDF document source = {source} : {e}" \
+            f"Exception reading text with {library_name} from PDF document source = {source_file} : {e}" \
             + \
             tb
         timestamp = datetime.datetime.now().isoformat().replace(":", "-")
@@ -61,7 +65,7 @@ def extract_text_to_file_from_pdf_document (source: str) -> str:
     time_total_3 = (time_stop_3 - time_start_3) / 1_000_000_000
 
     times = {
-        "function_method_name" : "extract_text_to_file_from_any_document",
+        "function_method_name" : "extract_text_to_file_from_pdf_document",
         "num_pages" : num_pages,
         "time_start_1": time_start_1,
         "time_end_1": time_stop_1,

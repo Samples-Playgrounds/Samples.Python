@@ -19,7 +19,7 @@ pip install -r requirements.txt
 python main.py
 """
 
-import api_text_extraction_pdfium2 as api
+import api_text_extraction_pypdfium2 as api
 
 import sys
 import os
