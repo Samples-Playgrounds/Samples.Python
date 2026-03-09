@@ -9,6 +9,9 @@ python -m venv .venv
 source .venv/bin/activate
 pip install opencv-python
 pip install docling pandas
+pip install orjson
+pip install timer
+pip install codetiming
 pip freeze > requirements.txt
 """
 

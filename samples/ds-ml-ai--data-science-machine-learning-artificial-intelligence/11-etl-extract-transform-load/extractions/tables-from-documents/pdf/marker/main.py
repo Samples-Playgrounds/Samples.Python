@@ -4,6 +4,9 @@ python -m venv .venv
 source .venv/bin/activate
 pip install legacy-cgi
 pip install 'marker-pdf[full]'
+pip install orjson
+pip install timer
+pip install codetiming
 pip freeze > requirements.txt
 """
 

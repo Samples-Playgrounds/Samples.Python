@@ -11,6 +11,10 @@ pip install transformers
 pip install torch torchvision
 pip install gmft
 pip install openpyxl
+pip install orjson
+pip install timer
+pip install codetiming
+
 pip freeze > requirements.txt
 """
 

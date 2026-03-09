@@ -10,6 +10,9 @@ pip install pdfplumber
 pip install pandas
 pip install tabulate
 pip install openpyxl
+pip install orjson
+pip install timer
+pip install codetiming
 pip freeze > requirements.txt
 """
 
