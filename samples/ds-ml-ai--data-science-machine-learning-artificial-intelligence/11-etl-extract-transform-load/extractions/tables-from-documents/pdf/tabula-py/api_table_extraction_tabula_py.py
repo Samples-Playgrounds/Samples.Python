@@ -3,7 +3,7 @@ import tabula
 from pathlib import Path
 import traceback
 
-import json
+import orjson
 import datetime
 import time
 from time import perf_counter
@@ -29,6 +29,8 @@ def extract_tables_to_files_from_pdf_document (
 
     try:
         dfs = tabula.read_pdf(source_file, pages='all')
+        num_pages = 0
+        
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
