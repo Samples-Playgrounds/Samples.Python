@@ -11,6 +11,7 @@ source .venv/bin/activate
 pip install pytesseract
 pip install opencv-python
 
+pip install orjson
 pip install timer
 pip install codetiming
 pip freeze > requirements.txt
