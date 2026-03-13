@@ -18,6 +18,7 @@ pip install --upgrade pip
 pip install pytesseract
 pip install opencv-python
 
+pip install orjson
 pip install timer
 pip install codetiming
 
