@@ -1,0 +1,114 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>using System;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>using System.ComponentModel.DataAnnotations;</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>public class Starship</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>[Required]</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>[StringLength(16,</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>ErrorMessage = "Identifier too long (16 character limit).")]</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>public string Identifier { get; set; }</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>public string Description { get; set; }</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>[Required]</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>public string Classification { get; set; }</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>[Range(1, 100000,</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>ErrorMessage = "Accommodation invalid (1-100000).")]</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>public int MaximumAccommodation { get; set; }</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>[Required]</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>[Range(typeof(bool), "true", "true",</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>ErrorMessage = "This form disallows unapproved ships.")]</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>public bool IsValidatedDesign { get; set; }</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>[Required]</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>public DateTime ProductionDate { get; set; }</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

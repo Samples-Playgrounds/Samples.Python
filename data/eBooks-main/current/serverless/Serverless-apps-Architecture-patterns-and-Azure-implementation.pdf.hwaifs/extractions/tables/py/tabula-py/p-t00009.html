@@ -1,0 +1,26 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>var startTime = DateTime.UtcNow;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>var timer = System.Diagnostics.Stopwatch.StartNew();</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>await tableClient.AddEntityAsync(entry);</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>telemetry.TrackDependency("AzureTableStorageInsert", "Insert", startTime, timer.Elapsed,</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>true);</td>
+    </tr>
+  </tbody>
+</table>

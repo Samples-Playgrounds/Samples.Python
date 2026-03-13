@@ -1,0 +1,38 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>[HttpGet("[controller]/pic/{id}")]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>public IActionResult GetImage(int id)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>var contentRoot = _env.ContentRootPath + "//Pics";</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>var path = Path.Combine(contentRoot, id + ".png");</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Byte[] b = System.IO.File.ReadAllBytes(path);</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>return File(b, "image/png");</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

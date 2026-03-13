@@ -1,0 +1,7 @@
+,private byte[] _buffer = new byte[1024];
+0,
+1,[Benchmark]
+2,public void PinUnpin()
+3,{
+4,"GCHandle.Alloc(_buffer, GCHandleType.Pinned).Free();"
+5,}

@@ -1,0 +1,2 @@
+,sudo systemctl daemon-reload
+0,sudo systemctl status myapp

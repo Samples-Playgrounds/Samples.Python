@@ -1,0 +1,35 @@
+,public async Task<bool> CancelAsync()
+0,{
+1,var orderStatus = await
+2,StateManager.TryGetStateAsync<OrderStatus>(OrderStatusStateName);
+3,if (!orderStatus.HasValue)
+4,{
+5,_logger.LogWarning(
+6,"""Order with Id: {OrderId} cannot be cancelled because it doesn't exist"","
+7,OrderId);
+8,
+9,return false;
+10,}
+11,
+12,if (orderStatus.Value.Id == OrderStatus.Paid.Id || orderStatus.Value.Id ==
+13,OrderStatus.Shipped.Id)
+14,{
+15,_logger.LogWarning(
+16,"""Order with Id: {OrderId} cannot be cancelled because it's in status {Status}"","
+17,"OrderId, orderStatus.Value.Name);"
+18,
+19,return false;
+20,}
+21,
+22,"await StateManager.SetStateAsync(OrderStatusStateName, OrderStatus.Cancelled);"
+23,
+24,var order = await StateManager.GetStateAsync<Order>(OrderDetailsStateName);
+25,
+26,await _eventBus.PublishAsync(new OrderStatusChangedToCancelledIntegrationEvent(
+27,"OrderId,"
+28,"OrderStatus.Cancelled.Name,"
+29,"$""The order was cancelled by buyer."","
+30,order.UserName));
+31,
+32,return true;
+33,}

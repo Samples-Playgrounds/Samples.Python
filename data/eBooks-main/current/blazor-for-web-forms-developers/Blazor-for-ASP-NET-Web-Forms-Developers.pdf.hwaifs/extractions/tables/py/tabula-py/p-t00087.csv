@@ -1,0 +1,8 @@
+,"<location path=""/admin"">"
+0,<system.web>
+1,<authorization>
+2,"<allow roles=""Administrators"" />"
+3,"<deny users=""*"" />"
+4,</authorization>
+5,</system.web>
+6,</location>

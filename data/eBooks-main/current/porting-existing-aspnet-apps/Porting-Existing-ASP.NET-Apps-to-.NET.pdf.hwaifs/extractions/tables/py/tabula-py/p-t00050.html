@@ -1,0 +1,50 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>public class RouteConfig</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>public static void RegisterRoutes(RouteCollection routes)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>routes.IgnoreRoute("{resource}.axd/{*pathInfo}");</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>var constraintsResolver = new DefaultInlineConstraintResolver();</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>constraintsResolver.ConstraintMap.Add("values", typeof(ValuesConstraint));</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>routes.MapMvcAttributeRoutes(constraintsResolver);</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

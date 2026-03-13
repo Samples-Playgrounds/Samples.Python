@@ -1,0 +1,6 @@
+,Note
+0,Property validation can sometimes involve dependent properties. An example of dependent
+1,properties is when the set of valid values for property A depends on the particular value that has been
+2,set in property B. To check that the value of property A is one of the allowed values would involve
+3,"retrieving the value of property B. In addition, when the value of property B changes, property A"
+4,would need to be revalidated.

@@ -1,0 +1,3 @@
+,etIndexOfFirstNonAsciiChar
+0,ncoding.UTF8.GetByteCount
+1,exConverter.EncodeToUtf16

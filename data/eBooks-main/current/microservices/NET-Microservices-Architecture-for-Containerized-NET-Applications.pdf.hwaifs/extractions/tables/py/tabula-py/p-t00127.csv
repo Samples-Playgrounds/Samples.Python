@@ -1,0 +1,4 @@
+,//Set 5 min as the lifetime for the HttpMessageHandler objects in the pool used for the
+0,Catalog Typed Client
+1,"builder.Services.AddHttpClient<ICatalogService, CatalogService>()"
+2,.SetHandlerLifetime(TimeSpan.FromMinutes(5));

@@ -1,0 +1,6 @@
+|    | [Route("api/{controller}/{action}/{id?:int}")]                           |
+|---:|:-------------------------------------------------------------------------|
+|  0 | public abstract class BaseApiController : ControllerBase, IApiController |
+|  1 | {                                                                        |
+|  2 | // ...                                                                   |
+|  3 | }                                                                        |

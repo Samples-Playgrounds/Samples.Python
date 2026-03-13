@@ -1,0 +1,2 @@
+,kubectl create clusterrolebinding kubernetes-dashboard --clusterrole=cluster-admin --
+0,serviceaccount=kube-system:kubernetes-dashboard

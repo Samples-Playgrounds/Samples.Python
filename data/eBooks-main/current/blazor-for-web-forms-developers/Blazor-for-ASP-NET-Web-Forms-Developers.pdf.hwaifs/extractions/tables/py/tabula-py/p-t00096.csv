@@ -1,0 +1,1 @@
+,@inject UserManager<IdentityUser> MyUserManager

@@ -1,0 +1,3 @@
+,builder.Services.AddMemoryCache();
+0,"builder.Services.AddScoped<ICatalogService, CachedCatalogService>();"
+1,builder.Services.AddScoped<CatalogService>();

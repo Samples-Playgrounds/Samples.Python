@@ -1,0 +1,5 @@
+,public static class WebApiConfig
+0,{
+1,public static void Register(HttpConfiguration config)
+2,{
+3,config.EnableCors();

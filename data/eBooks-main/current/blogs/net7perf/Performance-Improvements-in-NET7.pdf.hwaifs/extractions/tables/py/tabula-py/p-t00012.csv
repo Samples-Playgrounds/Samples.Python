@@ -1,0 +1,61 @@
+,116: JIT compiled
+0,"Guid:.ctor(int,ushort,ushort,ubyte,ubyte,ubyte,ubyte,ubyte,ubyte,ubyte,ubyte):this [Tier0,"
+1,"IL size=88, code size=132]"
+2,117: JIT compiled NativeRuntimeEventSource:get_ProviderMetadata():ReadOnlySpan`1:this
+3,"[Tier0, IL size=13, code size=91]"
+4,118: JIT compiled
+5,"EventPipeEventProvider:System.Diagnostics.Tracing.IEventProvider.EventRegister(EventSource,"
+6,"EtwEnableCallback,long,byref):int:this [Tier0, IL size=44, code size=118]"
+7,"119: JIT compiled EventPipeInternal:CreateProvider(String,EtwEnableCallback):long [Tier0,"
+8,"IL size=43, code size=320]"
+9,"120: JIT compiled Utf16StringMarshaller:GetPinnableReference(String):byref [Tier0, IL"
+10,"size=13, code size=50]"
+11,"121: JIT compiled String:GetPinnableReference():byref:this [Tier0, IL size=7, code"
+12,size=24]
+13,"122: JIT compiled EventListener:AddEventSource(EventSource) [Tier0, IL size=175, code"
+14,size=560]
+15,"123: JIT compiled List`1:get_Count():int:this [Tier0, IL size=7, code size=17]"
+16,"124: JIT compiled WeakReference`1:.ctor(__Canon):this [Tier0, IL size=9, code size=42]"
+17,"125: JIT compiled WeakReference`1:.ctor(__Canon,bool):this [Tier0, IL size=15, code"
+18,size=60]
+19,"126: JIT compiled List`1:Add(__Canon):this [Tier0, IL size=60, code size=124]"
+20,"127: JIT compiled String:op_Inequality(String,String):bool [Tier0, IL size=11, code"
+21,size=46]
+22,"128: JIT compiled String:Equals(String,String):bool [Tier0, IL size=36, code size=114]"
+23,"129: JIT compiled ReadOnlySpan`1:GetPinnableReference():byref:this [Tier0, IL size=23,"
+24,code size=57]
+25,"130: JIT compiled EventProvider:SetInformation(int,long,int):int:this [Tier0, IL size=38,"
+26,code size=131]
+27,"131: JIT compiled ILStubClass:IL_STUB_PInvoke(long,int,long,int):int [FullOpts, IL"
+28,"size=62, code size=170]"
+29,"132: JIT compiled Program:Main() [Tier0, IL size=11, code size=36]"
+30,"133: JIT compiled Console:WriteLine(String) [Tier0, IL size=12, code size=59]"
+31,"134: JIT compiled Console:get_Out():TextWriter [Tier0, IL size=20, code size=113]"
+32,"135: JIT compiled Console:.cctor() [Tier0, IL size=11, code size=71]"
+33,"136: JIT compiled Volatile:Read(byref):__Canon [Tier0, IL size=6, code size=21]"
+34,"137: JIT compiled Console:<get_Out>g__EnsureInitialized|26_0():TextWriter [Tier0, IL"
+35,"size=63, code size=209]"
+36,"138: JIT compiled ConsolePal:OpenStandardOutput():Stream [Tier0, IL size=34, code"
+37,size=130]
+38,"139: JIT compiled Console:get_OutputEncoding():Encoding [Tier0, IL size=72, code size=237]"
+39,"140: JIT compiled ConsolePal:get_OutputEncoding():Encoding [Tier0, IL size=11, code"
+40,size=200]
+41,"141: JIT compiled NativeLibrary:LoadLibraryCallbackStub(String,Assembly,bool,int):long"
+42,"[Tier0, IL size=63, code size=280]"
+43,"142: JIT compiled EncodingHelper:GetSupportedConsoleEncoding(int):Encoding [Tier0, IL"
+44,"size=53, code size=186]"
+45,"143: JIT compiled Encoding:GetEncoding(int):Encoding [Tier0, IL size=340, code size=1025]"
+46,"144: JIT compiled EncodingProvider:GetEncodingFromProvider(int):Encoding [Tier0, IL"
+47,"size=51, code size=232]"
+48,"145: JIT compiled Encoding:FilterDisallowedEncodings(Encoding):Encoding [Tier0, IL"
+49,"size=29, code size=84]"
+50,"146: JIT compiled LocalAppContextSwitches:get_EnableUnsafeUTF7Encoding():bool [Tier0, IL"
+51,"size=16, code size=46]"
+52,"147: JIT compiled LocalAppContextSwitches:GetCachedSwitchValue(String,byref):bool [Tier0,"
+53,"IL size=22, code size=76]"
+54,"148: JIT compiled LocalAppContextSwitches:GetCachedSwitchValueInternal(String,byref):bool"
+55,"[Tier0, IL size=46, code size=168]"
+56,"149: JIT compiled LocalAppContextSwitches:GetSwitchDefaultValue(String):bool [Tier0, IL"
+57,"size=32, code size=98]"
+58,"150: JIT compiled String:op_Equality(String,String):bool [Tier0, IL size=8, code size=39]"
+59,"151: JIT compiled Encoding:get_Default():Encoding [Tier0, IL size=6, code size=49]"

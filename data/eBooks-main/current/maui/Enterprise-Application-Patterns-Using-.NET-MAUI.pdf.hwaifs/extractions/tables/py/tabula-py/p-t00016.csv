@@ -1,0 +1,1 @@
+,var settingsService = this.Handler.MauiContext.Services.GetServices<ISettingsService>();

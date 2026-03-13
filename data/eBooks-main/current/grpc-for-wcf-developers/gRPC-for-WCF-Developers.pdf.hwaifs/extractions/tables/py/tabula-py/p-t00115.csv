@@ -1,0 +1,9 @@
+,[Unit]
+0,Description=My gRPC Application
+1,
+2,[Service]
+3,Type=notify
+4,ExecStart=/usr/sbin/myapp
+5,
+6,[Install]
+7,WantedBy=multi-user.target

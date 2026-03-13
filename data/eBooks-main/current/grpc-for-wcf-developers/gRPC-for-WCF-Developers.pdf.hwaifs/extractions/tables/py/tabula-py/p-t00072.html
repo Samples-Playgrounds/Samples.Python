@@ -1,0 +1,98 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>public class Program</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>public async Task Main(string[] args)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>GetResponse response;</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>using (var channel = GrpcChannel.ForAddress("https://localhost:5001"))</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>var client = new Protos.Portfolios.PortfoliosClient(channel);</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>response = await client.GetAsync(new GetRequest</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>TraderId = args[0],</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>PortfolioId = int.Parse(args[1])</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>});</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>foreach (var item in response.Portfolio.Items)</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Console.WriteLine($"Holding {item.Holding} of Share ID {item.ShareId}.");</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

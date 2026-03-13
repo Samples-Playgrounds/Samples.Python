@@ -1,0 +1,5 @@
+,[Benchmark]
+0,[Arguments(1)]
+1,public char GetChar(int i)
+2,{
+3,"const string Text = ""hello"";"

@@ -1,0 +1,90 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>apiVersion: dapr.io/v1alpha1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>kind: Component</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>metadata:</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>name: eshop-azurekv-secret-store</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>namespace: eshop</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>spec:</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>type: secretstores.azure.keyvault</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>version: v1</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>metadata:</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>- name: vaultName</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>value: [your_keyvault_name]</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>- name: spnTenantId</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>value: "619926af-a7c3-4e95-93ed-4ecc4e3e652b"</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>- name: spnClientId</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>value: "6cf48032-6c38-43be-9d6f-2a43ce736b09"</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>- name: spnCertificate</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>secretKeyRef:</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>name: [k8s_spn_secret_name]</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>key: [pfx_certificate_file_local_name]</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>auth:</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>secretStore: kubernetes</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,61 @@
+,"152: JIT compiled Encoding:.cctor() [Tier0, IL size=12, code size=73]"
+0,"153: JIT compiled UTF8EncodingSealed:.ctor(bool):this [Tier0, IL size=8, code size=40]"
+1,"154: JIT compiled UTF8Encoding:.ctor(bool):this [Tier0, IL size=14, code size=43]"
+2,"155: JIT compiled UTF8Encoding:.ctor():this [Tier0, IL size=12, code size=36]"
+3,"156: JIT compiled Encoding:.ctor(int):this [Tier0, IL size=42, code size=152]"
+4,"157: JIT compiled UTF8Encoding:SetDefaultFallbacks():this [Tier0, IL size=64, code"
+5,size=212]
+6,"158: JIT compiled EncoderReplacementFallback:.ctor(String):this [Tier0, IL size=110, code"
+7,size=360]
+8,"159: JIT compiled EncoderFallback:.ctor():this [Tier0, IL size=7, code size=31]"
+9,"160: JIT compiled String:get_Chars(int):ushort:this [Tier0, IL size=29, code size=61]"
+10,"161: JIT compiled Char:IsSurrogate(ushort):bool [Tier0, IL size=17, code size=43]"
+11,"162: JIT compiled Char:IsBetween(ushort,ushort,ushort):bool [Tier0, IL size=12, code"
+12,size=52]
+13,"163: JIT compiled DecoderReplacementFallback:.ctor(String):this [Tier0, IL size=110, code"
+14,size=360]
+15,"164: JIT compiled DecoderFallback:.ctor():this [Tier0, IL size=7, code size=31]"
+16,"165: JIT compiled Encoding:get_CodePage():int:this [Tier0, IL size=7, code size=17]"
+17,"166: JIT compiled Encoding:get_UTF8():Encoding [Tier0, IL size=6, code size=49]"
+18,"167: JIT compiled UTF8Encoding:.cctor() [Tier0, IL size=12, code size=76]"
+19,"168: JIT compiled Volatile:Write(byref,__Canon) [Tier0, IL size=6, code size=32]"
+20,"169: JIT compiled ConsolePal:GetStandardFile(int,int,bool):Stream [Tier0, IL size=50, code"
+21,size=183]
+22,"170: JIT compiled ConsolePal:get_InvalidHandleValue():long [Tier0, IL size=7, code"
+23,size=41]
+24,"171: JIT compiled IntPtr:.ctor(int):this [Tier0, IL size=9, code size=25]"
+25,"172: JIT compiled ConsolePal:ConsoleHandleIsWritable(long):bool [Tier0, IL size=26, code"
+26,size=68]
+27,"173: JIT compiled Kernel32:WriteFile(long,long,int,byref,long):int [Tier0, IL size=46,"
+28,code size=294]
+29,"174: JIT compiled Marshal:SetLastSystemError(int) [Tier0, IL size=7, code size=40]"
+30,"175: JIT compiled Marshal:GetLastSystemError():int [Tier0, IL size=6, code size=34]"
+31,"176: JIT compiled WindowsConsoleStream:.ctor(long,int,bool):this [Tier0, IL size=37, code"
+32,size=90]
+33,"177: JIT compiled ConsoleStream:.ctor(int):this [Tier0, IL size=31, code size=71]"
+34,"178: JIT compiled Stream:.ctor():this [Tier0, IL size=7, code size=31]"
+35,"179: JIT compiled MarshalByRefObject:.ctor():this [Tier0, IL size=7, code size=31]"
+36,"180: JIT compiled Kernel32:GetFileType(long):int [Tier0, IL size=27, code size=217]"
+37,"181: JIT compiled Console:CreateOutputWriter(Stream):TextWriter [Tier0, IL size=50, code"
+38,size=230]
+39,"182: JIT compiled Stream:.cctor() [Tier0, IL size=11, code size=71]"
+40,"183: JIT compiled NullStream:.ctor():this [Tier0, IL size=7, code size=31]"
+41,"184: JIT compiled EncodingExtensions:RemovePreamble(Encoding):Encoding [Tier0, IL size=25,"
+42,code size=118]
+43,"185: JIT compiled UTF8EncodingSealed:get_Preamble():ReadOnlySpan`1:this [Tier0, IL"
+44,"size=24, code size=99]"
+45,"186: JIT compiled UTF8Encoding:get_PreambleSpan():ReadOnlySpan`1 [Tier0, IL size=12, code"
+46,size=87]
+47,"187: JIT compiled ConsoleEncoding:.ctor(Encoding):this [Tier0, IL size=14, code size=52]"
+48,"188: JIT compiled Encoding:.ctor():this [Tier0, IL size=8, code size=33]"
+49,"189: JIT compiled Encoding:SetDefaultFallbacks():this [Tier0, IL size=23, code size=65]"
+50,"190: JIT compiled EncoderFallback:get_ReplacementFallback():EncoderFallback [Tier0, IL"
+51,"size=6, code size=49]"
+52,"191: JIT compiled EncoderReplacementFallback:.cctor() [Tier0, IL size=11, code size=71]"
+53,"192: JIT compiled EncoderReplacementFallback:.ctor():this [Tier0, IL size=12, code"
+54,size=44]
+55,"193: JIT compiled DecoderFallback:get_ReplacementFallback():DecoderFallback [Tier0, IL"
+56,"size=6, code size=49]"
+57,"194: JIT compiled DecoderReplacementFallback:.cctor() [Tier0, IL size=11, code size=71]"
+58,"195: JIT compiled DecoderReplacementFallback:.ctor():this [Tier0, IL size=12, code"
+59,size=44]

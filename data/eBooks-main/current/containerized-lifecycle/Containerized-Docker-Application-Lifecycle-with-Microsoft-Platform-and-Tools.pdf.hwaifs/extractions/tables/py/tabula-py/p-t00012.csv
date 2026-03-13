@@ -1,0 +1,3 @@
+,volumes:
+0,- ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+1,- ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro

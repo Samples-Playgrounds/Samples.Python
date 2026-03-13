@@ -1,0 +1,98 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>namespace OcelotApiGw</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>public class Program</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>public static void Main(string[] args)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>BuildWebHost(args).Run();</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>public static IWebHost BuildWebHost(string[] args)</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>var builder = WebHost.CreateDefaultBuilder(args);</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>builder.ConfigureServices(s =&gt; s.AddSingleton(builder))</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>.ConfigureAppConfiguration(</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>ic =&gt; ic.AddJsonFile(Path.Combine("configuration",</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>"configuration.json")))</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>.UseStartup&lt;Startup&gt;();</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>var host = builder.Build();</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>return host;</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

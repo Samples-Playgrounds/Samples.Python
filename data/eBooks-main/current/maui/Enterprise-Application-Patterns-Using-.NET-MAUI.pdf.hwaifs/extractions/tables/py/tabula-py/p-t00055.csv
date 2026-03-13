@@ -1,0 +1,4 @@
+,public override async Task InitializeAsync()
+0,{
+1,Products = await _productsService.GetCatalogAsync();
+2,}

@@ -1,0 +1,4 @@
+Exception reading text with kreuzberg from EPUB document source = ../../../../../../../data/eBooks-main/archives/containerized-lifecycle/Containerized-Docker-Application-Lifecycle-with-Microsoft-Platform-and-Tools-v1.1.epub : object of type 'NoneType' has no len()Traceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/epub/kreuzberg/api_text_extraction_kreuzberg.py", line 32, in extract_text_to_file_from_epub_document
+    num_pages = len(result.pages)
+TypeError: object of type 'NoneType' has no len()

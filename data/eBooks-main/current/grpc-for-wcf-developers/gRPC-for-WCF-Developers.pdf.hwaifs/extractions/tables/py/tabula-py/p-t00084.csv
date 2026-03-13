@@ -1,0 +1,13 @@
+,"[ServiceContract(SessionMode = SessionMode.Required, CallbackContract ="
+0,typeof(IFullStockTickerCallback))]
+1,public interface IFullStockTickerService
+2,{
+3,[OperationContract(IsOneWay = true)]
+4,void Subscribe();
+5,
+6,[OperationContract(IsOneWay = true)]
+7,void AddSymbol(string symbol);
+8,
+9,[OperationContract(IsOneWay = true)]
+10,void RemoveSymbol(string symbol);
+11,}

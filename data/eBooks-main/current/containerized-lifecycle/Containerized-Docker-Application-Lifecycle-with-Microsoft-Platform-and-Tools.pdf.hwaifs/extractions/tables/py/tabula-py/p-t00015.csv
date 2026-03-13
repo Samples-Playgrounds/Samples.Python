@@ -1,0 +1,1 @@
+,docker tag <image-name>:latest <login-server-name>/<image-name>:v1

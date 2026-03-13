@@ -1,0 +1,5 @@
+Exception reading text with pymupdf4llm from PDF document source = ../../../../../../../data/eBooks-main/current/serverless/Serverless-apps-Architecture-patterns-and-Azure-implementation.pdf : name 'fitz' is not definedTraceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/pymupdf4llm/api_text_extraction_pymupdf4llm.py", line 32, in extract_markdown_to_file_from_pdf_document
+    num_pages = len(fitz.open(source_file))
+                    ^^^^
+NameError: name 'fitz' is not defined

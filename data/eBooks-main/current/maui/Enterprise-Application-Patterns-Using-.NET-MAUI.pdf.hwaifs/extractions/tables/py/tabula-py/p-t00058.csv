@@ -1,0 +1,25 @@
+,private readonly Lazy<HttpClient> _httpClient =
+0,new Lazy<HttpClient>(
+1,() =>
+2,{
+3,var httpClient = new HttpClient();
+4,httpClient.DefaultRequestHeaders.Accept.Add(new
+5,"MediaTypeWithQualityHeaderValue(""application/json""));"
+6,return httpClient;
+7,"},"
+8,LazyThreadSafetyMode.ExecutionAndPublication);
+9,
+10,"private HttpClient GetOrCreateHttpClient(string token = """")"
+11,{
+12,var httpClient = _httpClient.Value;
+13,
+14,if (!string.IsNullOrEmpty(token))
+15,{
+16,httpClient.DefaultRequestHeaders.Authorization = new
+17,"AuthenticationHeaderValue(""Bearer"", token);"
+18,}
+19,else
+20,{
+21,httpClient.DefaultRequestHeaders.Authorization = null;
+22,}
+23,

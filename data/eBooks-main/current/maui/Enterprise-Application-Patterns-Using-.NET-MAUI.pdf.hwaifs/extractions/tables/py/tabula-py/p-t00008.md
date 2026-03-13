@@ -1,0 +1,7 @@
+|    | Note                                                                                                      |
+|---:|:----------------------------------------------------------------------------------------------------------|
+|  0 | Dependency injection containers are not always suitable. Dependency injection introduces additional       |
+|  1 | complexity and requirements that might not be appropriate or useful to small apps. If a class does not    |
+|  2 | have any dependencies, or is not a dependency for other types, it might not make sense to put it in       |
+|  3 | the container. In addition, if a class has a single set of dependencies that are integral to the type and |
+|  4 | will never change, it might not make sense to put it in the container.                                    |

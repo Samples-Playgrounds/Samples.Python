@@ -1,0 +1,7 @@
+|    | <configSections>                                   |
+|---:|:---------------------------------------------------|
+|  0 | <section name="system.diagnostics"                 |
+|  1 | type="System.Diagnostics.SystemDiagnosticsSection, |
+|  2 | System, Version=4.0.0.0, Culture=neutral,          |
+|  3 | PublicKeyToken=b77a5c561934e089"/>                 |
+|  4 | </configSections>                                  |

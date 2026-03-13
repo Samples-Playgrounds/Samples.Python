@@ -1,0 +1,7 @@
+,var scoreActor = _actorProxyFactory.CreateActorProxy<IScoreActor>(
+0,"new ActorId(scoreId),"
+1,"""ScoreActor"");"
+2,
+3,return scoreActor.IncrementScoreAsync();
+4,}
+5,}

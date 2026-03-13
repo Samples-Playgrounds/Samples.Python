@@ -1,0 +1,13 @@
+,input {
+0,http {
+1,#default host 0.0.0.0:8080
+2,codec => json
+3,}
+4,}
+5,
+6,output {
+7,elasticsearch {
+8,"hosts => ""elasticsearch:9200"""
+9,"index=>""sales-%{+xxxx.ww}"""
+10,}
+11,}

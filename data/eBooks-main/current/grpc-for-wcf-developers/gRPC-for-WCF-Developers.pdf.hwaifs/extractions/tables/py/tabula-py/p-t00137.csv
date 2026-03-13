@@ -1,0 +1,4 @@
+,Important
+0,"By default, Kubernetes will always check for and try to pull a new image. If it can’t find the image in"
+1,"any of its known repositories, the Pod creation will fail. To work with local images, set the"
+2,imagePullPolicy to Never.

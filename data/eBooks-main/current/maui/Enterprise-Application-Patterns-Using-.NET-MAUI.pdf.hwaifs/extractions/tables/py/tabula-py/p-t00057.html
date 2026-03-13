@@ -1,0 +1,46 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>public async Task&lt;TResult&gt; GetAsync&lt;TResult&gt;(string uri, string token = "")</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>HttpClient httpClient = GetOrCreateHttpClient(token);</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>HttpResponseMessage response = await httpClient.GetAsync(uri);</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>await HandleResponse(response);</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>TResult result = await response.Content.ReadFromJsonAsync&lt;TResult&gt;();</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>return result;</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

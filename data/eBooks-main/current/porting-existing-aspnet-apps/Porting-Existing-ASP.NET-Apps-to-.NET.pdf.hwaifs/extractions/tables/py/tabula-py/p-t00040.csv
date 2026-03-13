@@ -1,0 +1,22 @@
+,protected IContainer RegisterContainer()
+0,{
+1,var builder = new ContainerBuilder();
+2,
+3,var thisAssembly = Assembly.GetExecutingAssembly();
+4,builder.RegisterControllers(thisAssembly);      // MVC controllers
+5,builder.RegisterApiControllers(thisAssembly);   // Web API controllers
+6,
+7,"var mockData = bool.Parse(ConfigurationManager.AppSettings[""UseMockData""]);"
+8,builder.RegisterModule(new ApplicationModule(mockData));
+9,
+10,var container = builder.Build();
+11,
+12,// set mvc resolver
+13,DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
+14,
+15,// set webapi resolver
+16,var resolver = new AutofacWebApiDependencyResolver(container);
+17,GlobalConfiguration.Configuration.DependencyResolver = resolver;
+18,
+19,return container;
+20,}

@@ -1,0 +1,8 @@
+,"@page ""/Catalog/Details/{id:int}"""
+0,@inject ICatalogService CatalogService
+1,@inject ILogger<Details> Logger
+2,
+3,"<h2 class=""esh-body-title"">Details</h2>"
+4,
+5,"<div class=""container"">"
+6,"<div class=""row"">"

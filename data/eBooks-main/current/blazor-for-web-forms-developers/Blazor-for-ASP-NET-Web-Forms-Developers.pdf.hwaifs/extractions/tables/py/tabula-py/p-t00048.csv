@@ -1,0 +1,23 @@
+,"@page ""/Name"""
+0,@layout MainLayout
+1,
+2,<div>
+3,What is your name?<br />
+4,"<input @bind=""text"" />"
+5,"<button @onclick=""OnClick"">Submit</button>"
+6,</div>
+7,<div>
+8,@if (name != null)
+9,{
+10,@:Hello @name
+11,}
+12,</div>
+13,
+14,@code {
+15,string text;
+16,string name;
+17,
+18,void OnClick() {
+19,name = text;
+20,}
+21,}

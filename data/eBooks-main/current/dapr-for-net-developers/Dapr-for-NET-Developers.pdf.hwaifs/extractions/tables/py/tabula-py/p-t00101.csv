@@ -1,0 +1,23 @@
+,metadata:
+0,name: sendmail
+1,namespace: dapr-trafficcontrol
+2,spec:
+3,type: bindings.smtp
+4,version: v1
+5,metadata:
+6,- name: host
+7,value: mailserver
+8,- name: port
+9,value: 25
+10,- name: user
+11,secretKeyRef:
+12,name: trafficcontrol-secrets
+13,key: smtp.user
+14,- name: password
+15,secretKeyRef:
+16,name: trafficcontrol-secrets
+17,key: smtp.password
+18,- name: skipTLSVerify
+19,value: true
+20,scopes:
+21,- finecollectionservice

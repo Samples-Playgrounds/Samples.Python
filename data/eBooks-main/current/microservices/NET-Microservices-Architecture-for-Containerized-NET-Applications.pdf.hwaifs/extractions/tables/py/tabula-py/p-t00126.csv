@@ -1,0 +1,8 @@
+,static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
+0,{
+1,return HttpPolicyExtensions
+2,.HandleTransientHttpError()
+3,.OrResult(msg => msg.StatusCode == System.Net.HttpStatusCode.NotFound)
+4,".WaitAndRetryAsync(6, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2,"
+5,retryAttempt)));
+6,}
