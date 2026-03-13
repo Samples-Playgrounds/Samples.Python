@@ -16,6 +16,7 @@ pip install --upgrade pip
 
 pip install easyocr
 
+pip install orjson
 pip install timer
 pip install codetiming
 
