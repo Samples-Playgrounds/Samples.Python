@@ -10,20 +10,45 @@ from time import perf_counter
 from time import perf_counter_ns
 # from timer import timer
 
-#@timer()
-def speak (text: str, lang: str = "en", file: str = None  ) -> str:
+library_name = "gTTS"
 
+#@timer()
+def speak (
+            text: str, 
+            lang: str = "en", 
+            file: str = None 
+            ) -> str:
+    """
+    """
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
+    if file is None:
 
-    tts = gTTS(text=text, lang=lang, tld="com")
-    timestamp = datetime.datetime.now().isoformat().replace(":", "-")
-    filename = f"tts-audio-{timestamp}.mp3"
-    tts.save(filename)
-    os.system(f"open {filename}")
+    directory = f"{source_file}.hwaifs/transformations/TTS/py/{library_name}/"
+    Path(directory).mkdir(parents=True, exist_ok=True)
+
+    try:
+        tts = gTTS(text=text, lang=lang, tld="com")
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        filename = f"{file}-{timestamp}.mp3"
+        tts.save(filename)
+        os.system(f"open {filename}")
+        
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables with {library_name} from PDF document source = {source_file} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
+
 
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()
@@ -44,33 +69,57 @@ def speak (text: str, lang: str = "en", file: str = None  ) -> str:
         "time_start_3": time_start_3,
         "time_end_3": time_stop_3,
         "time_total_3": time_total_3,
+        "num_pages" : num_pages,
+        "pages_per_second_1" : num_pages / time_total_1,
+        "pages_per_second_2" : num_pages / time_total_2,
+        "pages_per_second_3" : num_pages / time_total_3
     }
 
-    #timestamp = datetime.datetime.now().isoformat().replace(":", "-")
-    #with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
-    #    f.write(json.dumps(times, indent=4))
+    timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+    with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
+        f.write(orjson.dumps(times, option=orjson.OPT_INDENT_2).decode())
     #---------------------------------------------------------------------------
 
     return file
 
 #@timer()
-def speak_from_file (file: str, lang: str = "en") -> str:
-
+def speak_from_file (
+                        file: str, 
+                        lang: str = "en"
+                    ) -> str:
+    """
+    """
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
 
-    with open(file, 'r') as f:
-        text = f.read()
-
-    directory = f"{file}.hwaifs/transformations/tts-text-to-speech/py/gTTS/"
+    directory = f"{source_file}.hwaifs/transformations/TTS/py/{library_name}/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
-    file_output = f"{directory}/content.mp3"
+    try:
+        with open(file, 'r') as f:
+            text = f.read()
 
-    speak(text, lang, file_output)
+        Path(directory).mkdir(parents=True, exist_ok=True)
+
+        file_output = f"{directory}/content.mp3"
+
+        speak(text, lang, file_output)
+        
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading tables with {library_name} from PDF document source = {source_file} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
+
 
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()
