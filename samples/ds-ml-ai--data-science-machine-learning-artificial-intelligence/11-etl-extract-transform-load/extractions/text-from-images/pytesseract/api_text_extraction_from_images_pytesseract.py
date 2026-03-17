@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 
 import traceback
-import json
+import orjson
 import datetime
 import time
 from time import perf_counter
@@ -16,7 +16,7 @@ library_name = "pytesseract"
 
 #@timer()
 def extract_text_to_file_from_image (
-                                        source: str,
+                                        source_file: str,
                                         lang = "eng"
                                         ) -> str:
 
@@ -28,11 +28,19 @@ def extract_text_to_file_from_image (
     directory = f"{source_file}.hwaifs/extractions/text/py/{library_name}/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
+    num_pages = 1
+    result = ""
+
     try:
         # https://github.com/tesseract-ocr/tessdata_best/raw/refs/heads/main/eng.traineddata
 
-        img = cv2.imread(source)
+        img = cv2.imread(source_file)
         result = pytesseract.image_to_string(img, lang)
+
+        # save to file
+        with open(f"{directory}/content.txt", "w") as f:
+            f.write(result) 
+
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
@@ -44,10 +52,6 @@ def extract_text_to_file_from_image (
             f.write(msg)
         
         return
-
-    # save to file
-    with open(f"{directory}/content.txt", "w") as f:
-        f.write(result) 
 
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()
