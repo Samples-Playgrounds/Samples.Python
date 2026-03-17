@@ -197,7 +197,8 @@ files_excel_xls = [
    f"{root}/microsoft/excel-xlsx-xls/file_example_XLS_50.xls",
 ]
 
-root="../../../../../../data/images/"
+root_images="../../../../../../data/images/"
+root = root_images
 # document per local path or URL
 files_images = [
     f"{root}/maui/architecture-diagram.png",
@@ -208,6 +209,12 @@ files_images = [
     f"{root}/dontetconf/2025/Screenshot 2025-11-17 at 11.35.46.edited.png",
     f"{root}/dontetconf/2025/Screenshot 2025-11-17 at 11.35.46.png"
 ]
+
+folders_with_images = [
+    f"{}/",
+                        f"/Volumes/pics-imgs-5/pics/Pixel 6/20260313/pictures/Screenshots/ai/",
+                        f"/Volumes/pics-imgs-5/pics/Pixel 6/20260313/pictures/Screenshots/personal/",
+                    ]
 
 files_documents_pdfs = \
             files_documents_pdfs_ebooks \
