@@ -1,0 +1,16 @@
+{
+  "function_method_name": "extract_text_to_file_from_image",
+  "time_start_1": 1773757816.603636,
+  "time_end_1": 1773757819.5146291,
+  "time_total_1": 2.9109930992126465,
+  "time_start_2": 536069.050345416,
+  "time_end_2": 536071.961336458,
+  "time_total_2": 2.9109910420374945,
+  "time_start_3": 536069050345750,
+  "time_end_3": 536071961336791,
+  "time_total_3": 2.910991041,
+  "num_pages": 1,
+  "pages_per_second_1": 0.3435253763639893,
+  "pages_per_second_2": 0.3435256191307509,
+  "pages_per_second_3": 0.3435256192531855
+}
