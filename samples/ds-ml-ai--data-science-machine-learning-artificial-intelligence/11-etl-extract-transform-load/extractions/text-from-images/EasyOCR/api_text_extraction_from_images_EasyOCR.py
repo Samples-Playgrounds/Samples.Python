@@ -3,7 +3,8 @@ import easyocr
 import os
 from pathlib import Path
 
-import json
+import traceback
+import orjson
 import datetime
 import time
 from time import perf_counter
@@ -27,15 +28,23 @@ def extract_text_to_file_from_image (
     directory = f"{source_file}.hwaifs/extractions/text/py/{library_name}/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
-
+    num_pages = 1
     result_txt = ""
 
     try:
         # https://www.jaided.ai/easyocr/modelhub/
 
         # this needs to run only once to load the model into memory
-        reader = easyocr.Reader(languages) 
+        reader = easyocr.Reader(languages)
         result = reader.readtext(source_file)
+
+        for (bbox, text, prob) in result:
+            result_txt += text + '\n'
+
+        # save to file
+        with open(f"{directory}/content.txt", "w") as f:
+            f.write(result_txt) 
+
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
@@ -47,13 +56,6 @@ def extract_text_to_file_from_image (
             f.write(msg)
         
         return
-
-    for (bbox, text, prob) in result:
-        result_txt += text + '\n'
-
-    # save to file
-    with open(f"{directory}/content.txt", "w") as f:
-        f.write(result_txt) 
         
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()
