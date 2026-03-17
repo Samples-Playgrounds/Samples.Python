@@ -1,0 +1,5 @@
+
+
+```
+SearxSearchWrapper Failed to establish a new connection: [Errno 61] Connection refused
+```
