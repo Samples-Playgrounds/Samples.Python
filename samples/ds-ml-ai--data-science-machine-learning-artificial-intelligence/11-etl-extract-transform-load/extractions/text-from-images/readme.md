@@ -22,8 +22,6 @@
 
 *   https://www.nutrient.io/blog/how-to-use-tesseract-ocr-in-python/
 
-
-
 *   pytesseract
 
     *   great for documents
@@ -74,6 +72,63 @@
 *   Spire.OCR
 
     *   https://www.kaggle.com/datasets/robikscube/textocr-text-extraction-from-images-dataset
+
+## LLM local
+
+*   Qwen2.5-VL / Qwen2-VL
+
+    Currently regarded as excellent for both text extraction (OCR) and general visual understanding.
+
+    qwen3.5:122b
+    qwen3.5:35b
+    qwen3.5:27b
+    qwen3.5:9b
+
+    qwen3-vl:32b
+    qwen3-vl:30b
+    qwen3-vl:8b
+    qwen3-vl:4b
+
+    qwen2.5vl:7b
+    qwen2.5vl:32b
+    qwen2.5vl:72b
+
+*   LLaVA (v1.5/v1.6)
+
+    A popular, versatile open-source model that works well on standard consumer hardware.
+
+*   Gemma 3 (4b/27b)
+
+    A powerful, lightweight vision model capable of running locally.
+
+*   PaliGemma 2
+
+    A strong model for document understanding and OCR tasks.
+
+*   Granite (Vision)
+
+    Recommended for specialized document analysis
+
+    granite3.2-vision:latest
+
+*   https://github.com/Dicklesworthstone/llm_aided_ocr/blob/main/llm_aided_ocr.py#L14
+
+    *   https://github.com/ggml-org/llama.cpp
+
+    *   Phi 3
+    
+        *   https://huggingface.co/microsoft/Phi-3-vision-128k-instruct
+
+    *   LLaVA: Large Language and Vision Assistant
+    
+        *   https://github.com/haotian-liu/LLaVA
+
+        *   https://llava-vl.github.io/
+
+    *   https://github.com/OpenBMB/MiniCPM-o
+
+        *   https://github.com/OpenSQZ/MiniCPM-V-Cookbook
+
 
 ## Diverse
 
