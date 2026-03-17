@@ -34,6 +34,7 @@ scriptpath = "../../../../"
 sys.path.append(os.path.abspath(scriptpath))
 from data import *
 
+root = "../../../../../../data"
 
 def main():
 
