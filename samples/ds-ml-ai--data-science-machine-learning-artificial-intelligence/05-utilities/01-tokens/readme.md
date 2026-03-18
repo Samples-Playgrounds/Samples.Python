@@ -229,9 +229,12 @@ shlex.split("sudo echo 'foo && bar'")
 
 
 
+```python
 print(list("word"))
 #  ['w', 'o', 'r', 'd']
+```
 
-
+```python
 print(list("some sentence"))
 #  ['s', 'o', 'm', 'e', ' ', 's', 'e', 'n', 't', 'e', 'n', 'c', 'e']
+```
