@@ -1,12 +1,21 @@
 # Tokens
 
+*   tiktoken
+
+*   hugging face
+
+*   iree
+
+    *   https://github.com/iree-org/iree-tokenizer-py
+
+
 * OpenAI Price: Calculate Tokens with Python
 
   * https://www.youtube.com/watch?v=Iu2WC7uaSWY
 
     * https://github.com/openai/tiktoken
 
-```
+```python
 import tiktoken
 enc = tiktoken.get_encoding("o200k_base")
 assert enc.decode(enc.encode("hello world")) == "hello world"
@@ -132,12 +141,14 @@ client = genai.Client()
 prompt = "The quick brown fox jumps over the lazy dog."
 
 total_tokens = client.models.count_tokens(
-    model="gemini-3-flash-preview", contents=prompt
-)
+                                            model="gemini-3-flash-preview", 
+                                            contents=prompt
+                                        )
 print("total_tokens: ", total_tokens)
 
 response = client.models.generate_content(
-    model="gemini-3-flash-preview", contents=prompt
+                                            model="gemini-3-flash-preview", 
+                                            contents=prompt
 )
 
 print(response.usage_metadata)
