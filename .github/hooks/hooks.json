@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "hooks": 
+  {
+    "sessionStart": 
+    [
+        {
+            "type": "command",
+            "bash": "echo \"Session started: $(date)\" >> logs/session.log",
+            "powershell": "Add-Content -Path logs/session.log -Value \"Session started: $(Get-Date)\"",
+            "cwd": ".",
+            "timeoutSec": 10
+        },
+        {
+            "type": "command",
+            "bash": "./scripts/log-prompt.sh",
+            "powershell": "./scripts/log-prompt.ps1",
+            "cwd": "scripts",
+        },
+        {
+            "type": "command",
+            "bash": 
+            "dotnet run ./scripts/info.cs",
+            "powershell": 
+            "dotnet run ./scripts/info.cs",
+            "cwd": "scripts",
+        },       
+    ],
+    "sessionEnd":
+    [
+        
+    ],
+    "userPromptSubmitted":
+    [
+        
+    ],
+    "preToolUse":
+    [
+        
+    ],
+    "postToolUse":
+    [
+        
+    ],
+    "errorOccurred":
+    [
+        
+    ],
+  }
+}
