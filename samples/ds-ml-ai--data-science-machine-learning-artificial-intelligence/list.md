@@ -2,10 +2,12 @@
 02-model-conversion/
 03-lms-local-run/
 04-formatters/
+05-utilities/
 11-etl-extract-transform-load/
 21-splitting-chunking/
 31-text-transformers/
 41-document-loaders/
+42-search/
 51-embeddings/
 61-vector-stores/
 71-retrieval/
