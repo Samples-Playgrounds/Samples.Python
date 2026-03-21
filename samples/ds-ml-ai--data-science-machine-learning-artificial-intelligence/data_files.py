@@ -34,6 +34,15 @@ files_private_book_docx = [
    f"{root_sports_book}/doc_files/8. Testovi fleksibilnosti.docx",
 ]
 
+files_private_strives_ai_tests = [
+   "/Users/Shared/Projects/d/strives.ai/gitlab-private/docs/odabir-partnera/odabirrazvojnogpartnerazastrives_aiplatformu/Aether Signum proposal for Strives_Architecture.pdf",
+   "/Users/Shared/Projects/d/strives.ai/gitlab-private/docs/odabir-partnera/odabirrazvojnogpartnerazastrives_aiplatformu/Notch proposal for Strives_AI_Architecture and Features.pdf",
+   "/Users/Shared/Projects/d/strives.ai/gitlab-private/docs/odabir-partnera/odabirrazvojnogpartnerazastrives_aiplatformu/Notch proposal for Strives_Offer.pdf",
+   "/Users/Shared/Projects/d/strives.ai/gitlab-private/docs/odabir-partnera/odabirrazvojnogpartnerazastrives_aiplatformu/Profico proposal for Strives_Architecture Option A.pdf",
+   "/Users/Shared/Projects/d/strives.ai/gitlab-private/docs/odabir-partnera/odabirrazvojnogpartnerazastrives_aiplatformu/Profico proposal for Strives_Architecture Option B.pdf",
+   "/Users/Shared/Projects/d/strives.ai/gitlab-private/docs/odabir-partnera/odabirrazvojnogpartnerazastrives_aiplatformu/Profico proposal for Strives_Offer.pdf",
+   "/Users/Shared/Projects/d/strives.ai/gitlab-private/docs/odabir-partnera/odabirrazvojnogpartnerazastrives_aiplatformu/Strives_AI_Overview_and_Requirements_v2 16032026.docx",
+]
 files_documents_pdfs_business_projects = [
    "/Users/Shared/Projects/d/hw/apps/gl/samples-playgrounds/HolisticWare.AddressBook.Private/docs/SPECIFIKACIJA ZADATKA L2.pdf",
    ]
@@ -209,12 +218,6 @@ files_images = [
     f"{root}/dontetconf/2025/Screenshot 2025-11-17 at 11.35.46.edited.png",
     f"{root}/dontetconf/2025/Screenshot 2025-11-17 at 11.35.46.png"
 ]
-
-folders_with_images = [
-    f"{}/",
-                        f"/Volumes/pics-imgs-5/pics/Pixel 6/20260313/pictures/Screenshots/ai/",
-                        f"/Volumes/pics-imgs-5/pics/Pixel 6/20260313/pictures/Screenshots/personal/",
-                    ]
 
 files_documents_pdfs = \
             files_documents_pdfs_ebooks \
