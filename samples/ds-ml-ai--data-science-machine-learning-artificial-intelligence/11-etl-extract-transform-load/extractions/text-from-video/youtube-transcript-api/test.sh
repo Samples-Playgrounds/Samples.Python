@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LIBRARY=PyPDF2
+LIBRARY=youtube-transcript-api
 figlet $LIBRARY
 figlet start
 
@@ -14,8 +14,8 @@ rm *.pyc
 python -m venv .venv
 source .venv/bin/activate
 
-pip install PyPDF2
-pip install "PyPDF2[image]"
+pip install youtube-transcript-api
+pip install jsonpickle
 
 pip install timer
 pip install codetiming
