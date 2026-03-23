@@ -18,6 +18,7 @@ pip install --upgrade pip
 pip install minecart
 pip install Pillow
 
+pip install orjson
 pip install timer
 pip install codetiming
 

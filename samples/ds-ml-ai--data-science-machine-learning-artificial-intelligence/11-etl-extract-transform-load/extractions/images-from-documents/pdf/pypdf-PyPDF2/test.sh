@@ -18,6 +18,7 @@ pip install --upgrade pip
 pip install PyPDF2
 pip install "PyPDF2[image]"
 
+pip install orjson
 pip install timer
 pip install codetiming
 

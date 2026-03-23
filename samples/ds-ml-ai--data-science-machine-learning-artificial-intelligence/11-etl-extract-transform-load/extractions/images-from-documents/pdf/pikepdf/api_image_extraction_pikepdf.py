@@ -1,34 +1,49 @@
 from pikepdf import Pdf, PdfImage
 
 from pathlib import Path
+import traceback
 
-import json
+import orjson
 import datetime
 import time
 from time import perf_counter
 from time import perf_counter_ns
 # from timer import timer
 
-#@timer()
-def extract_images_from_pdf_to_files (source: str) -> str:
-    """
-    """
+library_name = "pikepdf"
 
+#@timer()
+def extract_images_from_pdf_to_files (
+                                        source_file: str
+                                    ) -> str:
+    """
+    """
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
-
-    directory = f"{source}.hwaifs/images/py/pikepdf/"
+    directory = f"{source_file}.hwaifs/extractions/images/py/{library_name}/"
     Path(directory).mkdir(parents=True, exist_ok=True)
 
-    example = Pdf.open(source)
+    example = Pdf.open(source_file)
 
-    for i, page in enumerate(example.pages):
-        for j, (name, raw_image) in enumerate(page.images.items()):
-            image = PdfImage(raw_image)
-            out = image.extract_to(fileprefix=f"{directory}/img-page{i:03}-img{j:03}")
+    try:
+        num_pages = len(example.pages)
+    
+        for i, page in enumerate(example.pages):
+            for j, (name, raw_image) in enumerate(page.images.items()):
+                image = PdfImage(raw_image)
+                out = image.extract_to(fileprefix=f"{directory}/img-page{i:03}-img{j:03}")
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading images with {library_name} from PDF document source = {source_file} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
 
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()
@@ -49,10 +64,14 @@ def extract_images_from_pdf_to_files (source: str) -> str:
         "time_start_3": time_start_3,
         "time_end_3": time_stop_3,
         "time_total_3": time_total_3,
+        "num_pages" : num_pages,
+        "pages_per_second_1" : num_pages / time_total_1,
+        "pages_per_second_2" : num_pages / time_total_2,
+        "pages_per_second_3" : num_pages / time_total_3,
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
     with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
-        f.write(json.dumps(times, indent=4))
+        f.write(orjson.dumps(times, option=orjson.OPT_INDENT_2).decode())
     #---------------------------------------------------------------------------
     
