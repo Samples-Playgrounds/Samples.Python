@@ -3,36 +3,55 @@ from docx import Document
 import os
 from pathlib import Path
 
-import json
+import traceback
+import orjson
 import datetime
 import time
 from time import perf_counter
 from time import perf_counter_ns
 # from timer import timer
 
-#@timer()
-def extract_text_to_file_from_docx_document (source: str) -> str:
+library_name = "python-docx"
 
+#@timer()
+def extract_text_to_file_from_docx_document (
+                                                source_file: str
+                                            ) -> str:
+    """
+    """
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
     time_start_2 = perf_counter()
     time_start_3 = perf_counter_ns()
     #---------------------------------------------------------------------------
-
-    doc = Document(source)
-    fullText = []
-    for para in doc.paragraphs:
-        fullText.append(para.text)
-    
-    result_txt = '\n'.join(fullText)
-
-    directory = f"{source}.hwaifs/text/py/docx/"
+    directory = f"{source_file}.hwaifs/extractions/text/py/{library_name}/"
     Path(directory).mkdir(parents=True, exist_ok=True)
+    
+    try:
+        doc = Document(source_file)
+        fullText = []
+        num_pages = len(doc.pages) if hasattr(doc, 'pages') else 0
+
+        for para in doc.paragraphs:
+            fullText.append(para.text)
+        
+        result_txt = '\n'.join(fullText)
+
+    except Exception as e:
+        tb = traceback.format_exc()
+        msg = \
+            f"Exception reading text with {library_name} from DOCX document source = {source_file} : {e}" \
+            + \
+            tb
+        timestamp = datetime.datetime.now().isoformat().replace(":", "-")
+        with open(f"{directory}/exception-{timestamp}.py.json", "w") as f:
+            f.write(msg)
+        
+        return
 
     # save to file
     with open(f"{directory}/content.txt", "w") as f:
         f.write(result_txt) 
-
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()
     time_total_1 = time_stop_1 - time_start_1
@@ -52,11 +71,15 @@ def extract_text_to_file_from_docx_document (source: str) -> str:
         "time_start_3": time_start_3,
         "time_end_3": time_stop_3,
         "time_total_3": time_total_3,
+        "num_pages" : num_pages,
+        "pages_per_second_1" : num_pages / time_total_1,
+        "pages_per_second_2" : num_pages / time_total_2,
+        "pages_per_second_3" : num_pages / time_total_3,
     }
 
     timestamp = datetime.datetime.now().isoformat().replace(":", "-")
-    with open(f"{directory}/performance-data-{timestamp}.python.json", "w") as f:
-        f.write(json.dumps(times, indent=4))
+    with open(f"{directory}/performance-data-{timestamp}.py.json", "w") as f:
+        f.write(orjson.dumps(times, option=orjson.OPT_INDENT_2).decode())
     #---------------------------------------------------------------------------
 
     return result_txt
