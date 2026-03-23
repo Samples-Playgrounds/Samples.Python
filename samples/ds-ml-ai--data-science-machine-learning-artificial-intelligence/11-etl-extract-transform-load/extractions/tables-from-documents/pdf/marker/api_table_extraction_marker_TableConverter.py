@@ -34,7 +34,7 @@ def extract_tables_to_files_from_pdf_document (
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     try:
-        rendered = converter(source)
+        rendered = converter(source_file)
         text, _, images = text_from_rendered(rendered)
         num_pages = len(rendered)
         

@@ -50,8 +50,9 @@ def extract_tables_to_files_from_pdf_document (
             element_excel_filename = f"{directory}/p-t{table_ix + 1}.xlsx"
             df.to_excel(element_excel_filename)
 
-            element_html_filename = f"{directory}/  p-t{table_ix + 1}.html"
+            element_html_filename = f"{directory}/p-t{table_ix + 1}.html"
             df.to_html(element_html_filename)
+
     except Exception as e:
         tb = traceback.format_exc()
         msg = \

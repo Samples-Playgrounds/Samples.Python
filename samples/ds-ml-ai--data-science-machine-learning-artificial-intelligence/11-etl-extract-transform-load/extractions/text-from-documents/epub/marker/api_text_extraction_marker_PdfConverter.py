@@ -6,7 +6,7 @@ import os
 from pathlib import Path
 
 import traceback
-import json
+import orjson
 import datetime
 import time
 from time import perf_counter

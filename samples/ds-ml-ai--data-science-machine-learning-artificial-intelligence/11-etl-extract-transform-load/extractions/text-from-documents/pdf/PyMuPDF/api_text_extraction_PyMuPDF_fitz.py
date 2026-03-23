@@ -69,7 +69,7 @@ def extract_text_to_file_from_pdf_document (
     Path(directory).mkdir(parents=True, exist_ok=True)
 
     try:
-        doc = fitz.open(source)
+        doc = fitz.open(source_file)
         result_txt = ""
         for page in doc:
             result_txt = result_txt + page.get_text("text")
@@ -130,8 +130,8 @@ def extract_text_to_file_from_pdf_document (
 # import pymupdf
 # from pymupdf_rag import to_markdown  # import Markdown converter
 # 
-# def covert_pdf_file_to_markdown (source: str) -> str:
-#     doc = fitz.open(source)
+# def covert_pdf_file_to_markdown (source_file: str) -> str:
+#     doc = fitz.open(source_file)
 #     result_md = ""
 #     for page in doc:
 #         result_md = result_md +  to_markdown(doc, page_number=page.number)

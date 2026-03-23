@@ -1,5 +1,5 @@
 cffi==2.0.0
-charset-normalizer==3.4.5
+charset-normalizer==3.4.6
 codetiming==1.4.0
 cryptography==46.0.5
 et_xmlfile==2.0.0

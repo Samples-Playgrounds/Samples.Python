@@ -18,6 +18,15 @@ readme.md
 
         *   https://github.com/kreuzberg-dev/kreuzberg/blob/main/packages/csharp/README.md
 
+https://github.com/kreuzberg-dev/kreuzberg/blob/main/skills/kreuzberg/SKILL.md
+
+https://pypi.org/project/kreuzberg/4.0.0rc11/
+
+https://news.ycombinator.com/item?id=43057375
+
+https://pypi.org/project/kreuzberg/
+
+https://dev.to/kreuzberg/how-to-extract-text-from-pdf-in-python-2026-3a97
 
 ```shell
 brew install onnxruntime

@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 
 import traceback
+import orjson
 import json
 import datetime
 import time

@@ -29,7 +29,38 @@ def extract_tables_to_files_from_pdf_document (
 
     try:
         tables = camelot.read_pdf(source_file)
-        num_pages = tables.npages
+
+        num_pages = len(tables)
+
+        tables.export(f'{directory}/tables.csv', f='csv', compress=False) # json, excel, html
+        tables.export(f'{directory}/tables.json', f='json', compress=False) # json, excel, html
+
+        for i, table in enumerate(tables):
+            # Extract table data as a Pandas DataFrame, including headers
+            df = table.df
+
+            element_md_filename = f"{directory}/p-t{i + 1}.md"
+            df.to_markdown(element_md_filename)
+
+            element_csv_filename = f"{directory}/p-t{i + 1}.csv"
+            df.to_csv(element_csv_filename)
+
+            element_excel_filename = f"{directory}/p-t{i + 1}.xlsx"
+            df.to_excel(element_excel_filename)
+
+            element_html_filename = f"{directory}/p-t{i + 1}.html"
+            df.to_html(element_html_filename)
+
+
+        # Iterate through each table found in the PDF
+        for i, table in enumerate(tables):
+            # Extract table data as a Pandas df, including headers
+            df = table.df                   # get a pandas df!
+            df.to_csv(f"{directory}/df.tables-{i}.csv")      # to_json, to_excel, to_html
+            df.to_json(f"{directory}/df.tables-{i}.json")    # to_json, to_excel, to_html
+            df.to_excel(f"{directory}/df.tables-{i}.xlsx")   # to_json, to_excel, to_html
+            df.to_html(f"{directory}/df.tables-{i}.html")    # to_json, to_excel, to_html
+
 
     except Exception as e:
         tb = traceback.format_exc()
@@ -43,21 +74,6 @@ def extract_tables_to_files_from_pdf_document (
         
         return
 
-    tables.export(f'{directory}/tables.csv', f='csv', compress=False) # json, excel, html
-    tables.export(f'{directory}/tables.json', f='json', compress=False) # json, excel, html
-
-    # Iterate through each table found in the PDF
-    for i, table in enumerate(tables):
-        # Extract table data as a Pandas df, including headers
-        df = table.df                   # get a pandas df!
-        df.to_csv(f"{directory}/df.tables-{i}.csv")      # to_json, to_excel, to_html
-        df.to_json(f"{directory}/df.tables-{i}.json")    # to_json, to_excel, to_html
-        df.to_excel(f"{directory}/df.tables-{i}.xlsx")   # to_json, to_excel, to_html
-        df.to_html(f"{directory}/df.tables-{i}.html")    # to_json, to_excel, to_html
-
-        pr = table.parsing_report
-        with open(f"{directory}/df.tables-{i}.parsing_report.json", "w") as f:
-            f.write(json.dumps(pr))
 
     #---------------------------------------------------------------------------
     time_stop_1 = time.time()

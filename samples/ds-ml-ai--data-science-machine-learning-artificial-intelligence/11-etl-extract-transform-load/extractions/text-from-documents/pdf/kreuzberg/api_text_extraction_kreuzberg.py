@@ -30,8 +30,12 @@ def extract_text_to_file_from_pdf_document (
         result = extract_file_sync(source_file)
         result_txt = result.content
 
-        num_pages = result.num_pages  # or result.page_count, result.pages, etc.
+        # num_pages = result.num_pages  # or result.page_count, result.pages, etc.
         
+        if "pdf" in result.metadata:
+            pdf_meta = result.metadata["pdf"]
+            num_pages = pdf_meta.get('page_count')
+
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
