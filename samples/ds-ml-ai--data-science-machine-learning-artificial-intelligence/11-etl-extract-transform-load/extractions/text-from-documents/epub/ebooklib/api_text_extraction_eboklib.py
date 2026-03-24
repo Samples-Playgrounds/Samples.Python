@@ -19,7 +19,6 @@ library_name = "EbookLib"
 def extract_text_to_file_from_epub_document (
                                                 source_file: str
                                             ) -> str:
-
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
     time_start_2 = perf_counter()
