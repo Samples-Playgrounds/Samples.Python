@@ -38,7 +38,7 @@ def extract_text_to_file_from_pdf_document (
         rendered = converter(source_file)
         result_md, _, images = text_from_rendered(rendered)
 
-        num_pages = len(rendered)
+        num_pages = -1
 
     except Exception as e:
         tb = traceback.format_exc()

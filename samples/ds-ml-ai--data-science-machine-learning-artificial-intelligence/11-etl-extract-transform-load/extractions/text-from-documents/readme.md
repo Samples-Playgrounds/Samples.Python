@@ -150,4 +150,5 @@ text
 
 
 
+*   https://www.ai-bites.net/rag-three-python-libraries-for-pipeline-based-pdf-parsing/
 

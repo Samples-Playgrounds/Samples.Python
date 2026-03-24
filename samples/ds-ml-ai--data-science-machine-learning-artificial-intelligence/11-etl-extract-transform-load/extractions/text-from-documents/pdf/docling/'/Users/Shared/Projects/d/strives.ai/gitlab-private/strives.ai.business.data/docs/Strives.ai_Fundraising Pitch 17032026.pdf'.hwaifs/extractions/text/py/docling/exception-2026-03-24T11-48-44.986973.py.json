@@ -1,0 +1,57 @@
+Exception reading text with docling from PDF document source = '/Users/Shared/Projects/d/strives.ai/gitlab-private/strives.ai.business.data/docs/Strives.ai_Fundraising Pitch 17032026.pdf' : [Errno 2] No such file or directory: "'/Users/Shared/Projects/d/strives.ai/gitlab-private/strives.ai.business.data/docs/Strives.ai_Fundraising Pitch 17032026.pdf'"Traceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/.venv/lib/python3.14/site-packages/docling_core/utils/file.py", line 65, in resolve_source_to_stream
+    http_url: AnyHttpUrl = TypeAdapter(AnyHttpUrl).validate_python(source)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/.venv/lib/python3.14/site-packages/pydantic/type_adapter.py", line 441, in validate_python
+    return self.validator.validate_python(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        object,
+        ^^^^^^^
+    ...<6 lines>...
+        by_name=by_name,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for function-wrap[wrap_val()]
+  Input should be a valid URL, relative URL without a base [type=url_parsing, input_value="'/Users/Shared/Projects/...ing Pitch 17032026.pdf'", input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/url_parsing
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/api_text_extraction_docling_DocumentConverter.py", line 32, in extract_text_to_file_from_any_document
+    result_doc = converter.convert(source_file)
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/.venv/lib/python3.14/site-packages/pydantic/_internal/_validate_call.py", line 39, in wrapper_function
+    return wrapper(*args, **kwargs)
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/.venv/lib/python3.14/site-packages/pydantic/_internal/_validate_call.py", line 136, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/.venv/lib/python3.14/site-packages/docling/document_converter.py", line 388, in convert
+    return next(all_res)
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/.venv/lib/python3.14/site-packages/docling/document_converter.py", line 447, in convert_all
+    for conv_res in conv_res_iter:
+                    ^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/.venv/lib/python3.14/site-packages/docling/document_converter.py", line 542, in _convert
+    for input_batch in chunkify(
+                       ~~~~~~~~^
+        conv_input.docs(self.format_to_options),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        settings.perf.doc_batch_size,  # pass format_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/.venv/lib/python3.14/site-packages/docling/utils/utils.py", line 15, in chunkify
+    for first in iterator:  # Take the first element from the iterator
+                 ^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/.venv/lib/python3.14/site-packages/docling/datamodel/document.py", line 452, in docs
+    resolve_source_to_stream(item, self.headers)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/.venv/lib/python3.14/site-packages/docling_core/utils/file.py", line 111, in resolve_source_to_stream
+    stream = BytesIO(local_path.read_bytes())
+                     ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 777, in read_bytes
+    with self.open(mode='rb', buffering=0) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: "'/Users/Shared/Projects/d/strives.ai/gitlab-private/strives.ai.business.data/docs/Strives.ai_Fundraising Pitch 17032026.pdf'"
