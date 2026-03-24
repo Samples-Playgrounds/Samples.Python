@@ -5,21 +5,22 @@
 
 #-----------------------------------------------------------------------------------------------------------------------
 # libraries
-libs_text_extraction_from_documents_pdf = [
-                                                "PyMuPDF",
-                                                "PyPDF2",
-                                                "docling",
-                                                "docTR",
-                                                "kreuzberg",
-                                                "marker",
-                                                "MarkItDown",
-                                                "pdfium2",
-                                                "pdfminer.six",
-                                                "pdfplumber",
-                                                "pymupdf4llm-c",
-                                                "pymupdf4llm",
-                                                "pytesseract",
-                                                "unstructured",
+libs_extraction_text_from_documents_pdf =   [
+                                                ("PyMuPDF_fitz", "content.txt"),
+                                                ("PyPDF2", "content.txt"),
+                                                ("docling", "content.md"),
+                                                ("docling", "content.txt"),
+                                                ("docTR","content.txt"),
+                                                ("kreuzberg", "content.txt"),
+                                                ("marker", ""),
+                                                ("MarkItDown", ""),
+                                                ("pdfium2", ""),
+                                                ("pdfminer.six", ""),
+                                                ("pdfplumber", ""),
+                                                ("pymupdf4llm-c", ""),
+                                                ("pymupdf4llm", ""),
+                                                ("pytesseract", ""),
+                                                ("unstructured", ""),
                                             ]
 
 libs_text_extraction_from_documents_ms_word_docx_doc = [
