@@ -1,1 +1,0 @@
-RegisterRoutes(RouteTable . Routes); } }

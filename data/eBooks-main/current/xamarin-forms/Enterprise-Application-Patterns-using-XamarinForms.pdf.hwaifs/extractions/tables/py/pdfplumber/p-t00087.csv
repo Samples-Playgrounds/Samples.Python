@@ -1,8 +1,0 @@
-,0
-0,"public async Task ClearBasketAsync(string guidUser, string token)"
-1,{
-2,UriBuilder builder = new UriBuilder(GlobalSetting.Instance.BasketEndpoint);
-3,builder.Path = guidUser;
-4,string uri = builder.ToString();
-5,"await _requestProvider.DeleteAsync(uri, token);"
-6,}

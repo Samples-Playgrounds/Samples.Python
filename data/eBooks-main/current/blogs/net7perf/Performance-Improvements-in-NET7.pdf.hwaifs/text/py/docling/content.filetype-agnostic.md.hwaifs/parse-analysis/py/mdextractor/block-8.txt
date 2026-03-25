@@ -1,1 +1,0 @@
-; Program.Min() mov eax,[rcx+8] mov edx,[rcx+0C] cmp eax,edx

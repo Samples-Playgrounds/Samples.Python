@@ -1,1 +1,0 @@
-[LibraryImport("SomeLibrary", SetLastError = true)] internal static partial SafeFileHandle CreateFile();

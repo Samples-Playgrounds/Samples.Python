@@ -1,4 +1,0 @@
-var myKeyValue = _configuration["MyKey"];
- // ...
- }
-}

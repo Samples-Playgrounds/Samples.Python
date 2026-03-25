@@ -1,1 +1,0 @@
-static abstract TResult operator *(TSelf left, TOther right); static virtual TResult operator checked

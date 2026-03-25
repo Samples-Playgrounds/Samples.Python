@@ -1,3 +1,0 @@
-<ItemGroup>
- <ProjectReference Include="..\\eShop.SqlProvider\\eShop.SqlProvider.csproj" />
-<ItemGroup>

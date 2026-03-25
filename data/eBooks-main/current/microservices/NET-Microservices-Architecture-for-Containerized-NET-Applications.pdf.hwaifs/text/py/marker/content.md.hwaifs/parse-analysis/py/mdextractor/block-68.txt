@@ -1,6 +1,0 @@
-}
- }
- _logger.LogDebug($"GracePeriod background task is stopping.");
- }
- .../...
-}

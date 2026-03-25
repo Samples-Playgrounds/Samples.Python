@@ -1,9 +1,0 @@
-|    | type Store interface {                     |
-|---:|:-------------------------------------------|
-|  0 | Init(metadata Metadata) error              |
-|  1 | Delete(req *DeleteRequest) error           |
-|  2 | BulkDelete(req []DeleteRequest) error      |
-|  3 | Get(req *GetRequest) (*GetResponse, error) |
-|  4 | Set(req *SetRequest) error                 |
-|  5 | BulkSet(req []SetRequest) error            |
-|  6 | }                                          |

@@ -1,1 +1,0 @@
-[QueryProperty(nameof(OrderNumber), "OrderNumber")] public class OrderDetailViewModel : ViewModelBase { public int OrderNumber { get; set; } }

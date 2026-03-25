@@ -1,7 +1,0 @@
-,Aspect of comparison,Modern Application,Desktop Application
-0,Security,"Contained execution & Great Fundamentals. Designed from the ground up to respect user’s privacy, manage battery life, and focus to keep the device safe.",User & Admin level of security. You have native access to the registry and hard drive folders.
-1,Deployment,Installation and updates are managed by the platform.,"MSI, Custom installers & Updates. Traditionally a source of headaches for developers and IT managers."
-2,Distribution,Trusted Distribution & Signed Packages. Distribution is performed from a trusted source and never from the web.,"Web, SCCM & Custom distribution. No control over what is installed, affects the whole machine."
-3,UI,"Modern UI. Different input mechanisms, ink, touch, gamepad, keyboard, mouse, etc.","Windows Forms, WPF, MFC. Designed for the mouse and keyboard for a dense UI and to get the most productivity from the desktop."
-4,Data,Cloud First Data with Insights. Source of truth in the cloud. Insights to know what happens with your app and how it’s performing.,Local Data. Traditional desktop applications usually need some local data.
-5,Design,"Designed for reuse. Reuse in mind between different platforms, front end, and back end, running assets in many places as possible.",Designed for Windows Desktop only

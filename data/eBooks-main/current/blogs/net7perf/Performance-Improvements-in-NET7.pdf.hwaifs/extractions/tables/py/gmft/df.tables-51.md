@@ -1,4 +1,0 @@
-|    | Method          | Runtime   | Mean      |   Ratio |
-|---:|:----------------|:----------|:----------|--------:|
-|  0 | GetMaxByteCount | .NET 6.0  | 1.7442 ns |    1    |
-|  1 | GetMaxByteCount | .NET 7.0  | 0.4746 ns |    0.27 |

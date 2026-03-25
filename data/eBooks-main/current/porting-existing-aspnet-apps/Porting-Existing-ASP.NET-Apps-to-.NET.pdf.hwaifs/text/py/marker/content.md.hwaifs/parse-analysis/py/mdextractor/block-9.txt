@@ -1,2 +1,0 @@
-// required in ConfigureServices
-services.Configure<PositionOptions>(Configuration.GetSection(PositionOptions.Position));

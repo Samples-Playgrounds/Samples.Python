@@ -1,5 +1,0 @@
-Exception reading text with MarkItDown from PDF document source = ../../../../../../../data/pravno/zakoni/55-4.pdf : 'DocumentConverterResult' object has no attribute 'pages'Traceback (most recent call last):
-  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/MarkItDown/api_text_extraction_MarkItDown.py", line 35, in extract_text_to_file_from_any_document
-    num_pages = result.pages.count()
-                ^^^^^^^^^^^^
-AttributeError: 'DocumentConverterResult' object has no attribute 'pages'

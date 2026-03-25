@@ -1,4 +1,0 @@
-,Tip
-0,"For developers using reactive programming patterns, the section on client libraries at the end of this"
-1,chapter shows how to add an extension method and classes to wrap IAsyncStreamReader<T> in an
-2,IObservable<T>.

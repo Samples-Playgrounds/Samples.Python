@@ -1,1 +1,0 @@
-; Program.M2(System.Object) mov       rax,offset MT_System.Int32[] cmp       [rdx],rax sete      al movzx     eax,al ret ; Total bytes of code 20

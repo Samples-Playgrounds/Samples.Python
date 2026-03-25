@@ -1,1 +1,0 @@
-[HttpPost("entrycam")] public async Task<ActionResult> VehicleEntry(VehicleRegistered msg) { // ... }

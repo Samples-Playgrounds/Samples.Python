@@ -1,1 +1,0 @@
-[TestMethod] public void InvalidEventNameShouldThrowArgumentExceptionText() { var behavior = new MockEventToCommandBehavior { EventName = "OnItemTapped" }; var listView = new ListView(); Assert.Throws<ArgumentException>(() => listView.Behaviors.Add(behavior)); }

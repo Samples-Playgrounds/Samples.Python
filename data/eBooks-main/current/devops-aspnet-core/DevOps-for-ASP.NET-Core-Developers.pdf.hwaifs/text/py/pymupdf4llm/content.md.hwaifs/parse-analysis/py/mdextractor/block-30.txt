@@ -1,3 +1,0 @@
-**Figure 5**: Add protection rules.
-
-#### **Deploy to staging**

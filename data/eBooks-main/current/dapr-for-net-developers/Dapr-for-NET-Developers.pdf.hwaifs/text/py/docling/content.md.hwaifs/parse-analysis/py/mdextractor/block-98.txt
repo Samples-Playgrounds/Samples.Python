@@ -1,1 +1,0 @@
-await StateManager.SetStateAsync("counter", newValue); return newValue; }

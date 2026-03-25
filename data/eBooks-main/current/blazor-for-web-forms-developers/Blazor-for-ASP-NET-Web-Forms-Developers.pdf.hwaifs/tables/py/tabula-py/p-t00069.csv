@@ -1,9 +1,0 @@
-,// in Program.cs
-0,"builder.Services.AddHttpClient(""github"", client =>"
-1,{
-2,"client.BaseAddress = new Uri(""http://api.github.com/"");"
-3,// Github API versioning
-4,"client.DefaultRequestHeaders.Add(""Accept"", ""application/vnd.github.v3+json"");"
-5,// Github requires a user-agent
-6,"client.DefaultRequestHeaders.Add(""User-Agent"", ""BlazorWebForms-Sample"");"
-7,});

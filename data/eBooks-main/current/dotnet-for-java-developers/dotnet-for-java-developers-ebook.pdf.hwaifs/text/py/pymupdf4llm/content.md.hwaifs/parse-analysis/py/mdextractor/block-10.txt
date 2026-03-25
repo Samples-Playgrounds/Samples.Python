@@ -1,3 +1,0 @@
-public string LastName
-    {
-        get { return this.lastName; }

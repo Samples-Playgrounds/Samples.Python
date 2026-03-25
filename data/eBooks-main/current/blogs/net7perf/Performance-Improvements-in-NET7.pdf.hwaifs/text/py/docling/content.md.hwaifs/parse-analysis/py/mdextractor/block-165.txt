@@ -1,1 +1,0 @@
-if (RuntimeFeature.IsDynamicCodeCompiled) { factory = Compile(pattern, tree, options, matchTimeout != InfiniteMatchTimeout); }

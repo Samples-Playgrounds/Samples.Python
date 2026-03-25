@@ -1,2 +1,0 @@
-name: 'Security and Quality'
-4. queries: -uses: security-and-quality

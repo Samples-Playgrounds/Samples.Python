@@ -1,2 +1,0 @@
-string image_name = Environment.CurrentDirectory +
-"\\..\\..\\..\\Assets\\Images\\Catalog\\" + catalogItems.Picturefilename;

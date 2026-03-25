@@ -1,5 +1,0 @@
-public void M(string arg)
-{
- ArgumentNullException.ThrowIfNull(arg);
- ...
-}

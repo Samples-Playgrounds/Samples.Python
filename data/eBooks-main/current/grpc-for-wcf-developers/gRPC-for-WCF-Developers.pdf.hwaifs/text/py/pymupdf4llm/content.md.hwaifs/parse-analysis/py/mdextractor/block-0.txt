@@ -1,3 +1,0 @@
-var inner = new Outer.Types.Inner { Text = "Hello" };
-
-### Repeated fields for lists and arrays

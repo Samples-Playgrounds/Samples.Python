@@ -1,8 +1,0 @@
-<MyLoginDialog @ref="loginDialog" ... />
-@code {
- MyLoginDialog loginDialog = default!;
- void OnSomething()
- {
- loginDialog.Show();
- }
-}

@@ -1,3 +1,0 @@
-var configurationValue = ConfigurationManager.AppSettings["ConfigurationSettingName"];
-var connectionString =
-ConfigurationManager.ConnectionStrings["MyDatabaseConnectionName"].ConnectionString;

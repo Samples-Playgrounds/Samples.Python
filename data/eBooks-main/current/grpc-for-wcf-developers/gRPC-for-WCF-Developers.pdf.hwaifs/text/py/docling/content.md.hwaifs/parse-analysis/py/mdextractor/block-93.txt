@@ -1,1 +1,0 @@
-service FullStockTicker { rpc Subscribe (stream ActionMessage) returns (stream StockTickerUpdate); }

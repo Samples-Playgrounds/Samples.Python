@@ -1,4 +1,0 @@
-destination[0] = 'T';
-destination[1] = 'r';
-destination[2] = 'u';
-destination[3] = 'e';

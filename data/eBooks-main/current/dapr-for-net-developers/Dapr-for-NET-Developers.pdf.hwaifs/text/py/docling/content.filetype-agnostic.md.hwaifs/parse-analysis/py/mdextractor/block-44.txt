@@ -1,1 +1,0 @@
-var httpClient = DaprClient.CreateInvokeHttpClient("orderservice"); await httpClient.PostAsJsonAsync("/submit");

@@ -1,3 +1,0 @@
-**Figure 8**: View deployments.
-
-#### **Deploy to production**

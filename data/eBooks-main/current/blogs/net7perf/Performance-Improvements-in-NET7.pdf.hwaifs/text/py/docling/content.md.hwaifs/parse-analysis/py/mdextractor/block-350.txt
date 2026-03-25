@@ -1,1 +1,0 @@
-{ public static ValueTask<int> ReadAsync(Stream s, Memory<byte> buffer) => s.ReadAsync(buffer); }

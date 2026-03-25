@@ -1,1 +1,0 @@
-private void UpdateEndpoint(string endpoint) { Settings.UrlBase = endpoint; }

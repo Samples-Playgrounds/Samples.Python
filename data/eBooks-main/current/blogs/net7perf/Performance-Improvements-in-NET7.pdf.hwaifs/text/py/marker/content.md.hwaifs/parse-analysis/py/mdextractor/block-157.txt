@@ -1,3 +1,0 @@
-[Benchmark]
-[Arguments(42)]
-public int Neg(int i) => ~i + 1;

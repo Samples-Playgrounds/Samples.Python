@@ -1,4 +1,0 @@
-add eax,50
- add rsp,28
- ret
-; Total bytes of code 18

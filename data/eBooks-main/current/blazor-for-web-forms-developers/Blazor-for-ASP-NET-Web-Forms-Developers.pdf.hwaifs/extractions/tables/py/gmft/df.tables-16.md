@@ -1,3 +1,0 @@
-|    | Module      | ASP.NET 4.x module   | ASP.NET Core option   |
-|---:|:------------|:---------------------|:----------------------|
-|  0 | HTTP errors | CustomErrorModule    | Status Code Pages     |

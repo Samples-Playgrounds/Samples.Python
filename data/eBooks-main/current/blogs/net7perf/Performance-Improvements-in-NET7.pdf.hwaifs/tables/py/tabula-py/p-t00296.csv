@@ -1,8 +1,0 @@
-,if (source is int[] array)
-0,{
-1,ProcessArray(array);
-2,}
-3,else
-4,{
-5,ProcessEnumerable(source);
-6,}

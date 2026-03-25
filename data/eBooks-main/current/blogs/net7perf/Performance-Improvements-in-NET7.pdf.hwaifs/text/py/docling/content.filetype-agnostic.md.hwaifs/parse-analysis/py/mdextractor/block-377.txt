@@ -1,1 +1,0 @@
-if (_dictionary.TryGetValue(key, out var value)) { Use(value); }

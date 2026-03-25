@@ -1,4 +1,0 @@
-};
-
-        // GET api/todos
-    [HttpGet]

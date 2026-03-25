@@ -1,1 +1,0 @@
-// Program.cs //Add http client services at ConfigureServices(IServiceCollection services) builder . Services . AddHttpClient<ICatalogService , CatalogService>(); builder . Services . AddHttpClient<IBasketService , BasketService>(); builder . Services . AddHttpClient<IOrderingService , OrderingService>();

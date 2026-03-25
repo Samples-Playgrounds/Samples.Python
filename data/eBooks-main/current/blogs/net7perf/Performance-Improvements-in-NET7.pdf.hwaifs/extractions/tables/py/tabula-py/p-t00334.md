@@ -1,4 +1,0 @@
-|    | Method    | Runtime   | Mean     |   Ratio | Allocated   |   Alloc Ratio |
-|---:|:----------|:----------|:---------|--------:|:------------|--------------:|
-|  0 | Handshake | .NET 6.0  | 4.647 ms |     1   | 19.27 KB    |           1   |
-|  1 | Handshake | .NET 7.0  | 2.314 ms |     0.5 | 9.56 KB     |           0.5 |

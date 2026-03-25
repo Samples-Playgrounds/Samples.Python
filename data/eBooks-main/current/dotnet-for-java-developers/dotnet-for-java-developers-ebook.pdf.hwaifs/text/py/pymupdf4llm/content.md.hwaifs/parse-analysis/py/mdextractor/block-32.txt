@@ -1,5 +1,0 @@
-await PlayAsync(song);
-    }
-        catch (Exception e) { /* just skip the song */ }
-    }
-    }

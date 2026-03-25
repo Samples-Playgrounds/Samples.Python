@@ -1,6 +1,0 @@
-,,,
-0,G_M000_IG03:,;;,offset=0020H
-1,8BD0,mov,"edx, eax"
-2,837C91102A,cmp,"dword ptr [rcx+4*rdx+10H], 42"
-3,7429,je,SHORT G_M000_IG08
-4,FFC0,inc,eax

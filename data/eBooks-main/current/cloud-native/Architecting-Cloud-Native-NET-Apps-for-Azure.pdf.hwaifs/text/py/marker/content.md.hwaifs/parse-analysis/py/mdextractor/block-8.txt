@@ -1,3 +1,0 @@
-var log = new LoggerConfiguration()
- .WriteTo.Http("http://localhost:8080")
- .CreateLogger();

@@ -1,3 +1,0 @@
-,Note: The eShopOnContainers also allows a mock sign-in when the app is configured to use mock
-0,"services in the SettingsView. In this mode, the app doesn't communicate with IdentityServer,"
-1,instead allowing the user to sign-in using any credentials.

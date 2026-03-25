@@ -1,7 +1,0 @@
-,0
-0,Tip: Consider using API gateway communication
-1,Direct client-to-microservice communication can have drawbacks when building a large and
-2,"complex microservice based application, but it's more than adequate for a small application. When"
-3,"designing a large microservice based application with tens of microservices, consider using API"
-4,"gateway communication. For more information, see .NET Microservices: Architecture for"
-5,Containerized .NET Applications.

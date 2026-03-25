@@ -1,5 +1,0 @@
-Exception reading text with PyMuPDF_fitz from PDF document source = ../../../../../../../data/eBooks-main/current/xamarin-forms/Enterprise-Application-Patterns-using-XamarinForms.pdf : name 'source' is not definedTraceback (most recent call last):
-  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/PyMuPDF/api_text_extraction_PyMuPDF_fitz.py", line 71, in extract_text_to_file_from_pdf_document
-    doc = fitz.open(source)
-                    ^^^^^^
-NameError: name 'source' is not defined

@@ -1,5 +1,0 @@
-|    | Step    | Description                                                                                 |
-|---:|:--------|:--------------------------------------------------------------------------------------------|
-|  0 | Arrange | Initializes objects and sets the value of the data that is passed to the method under test. |
-|  1 | Act     | Invokes the method under test with the required arguments.                                  |
-|  2 | Assert  | Verifies that the action of the method under test behaves as expected.                      |

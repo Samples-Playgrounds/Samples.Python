@@ -1,8 +1,0 @@
-,0,1
-0,Input component,Rendered HTML element
-1,InputCheckbox,"<input type=""checkbox"">"
-2,InputDate,"<input type=""date"">"
-3,InputNumber,"<input type=""number"">"
-4,InputSelect,<select>
-5,InputText,<input>
-6,InputTextArea,<textarea>

@@ -1,3 +1,0 @@
-builder.Services.AddResponseCaching();
-// other code omitted, including building the app
-app.UseResponseCaching();

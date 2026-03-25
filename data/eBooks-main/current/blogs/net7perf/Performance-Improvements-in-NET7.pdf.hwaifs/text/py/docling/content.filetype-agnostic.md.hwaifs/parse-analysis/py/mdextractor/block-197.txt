@@ -1,1 +1,0 @@
-sete al movzx eax,al ret ; Total bytes of code 22

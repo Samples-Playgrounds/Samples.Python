@@ -1,6 +1,0 @@
-[HttpPost]
-[ValidateAntiForgeryToken]
-public ActionResult Create([Bind(Include =
-"Id,Name,Description,Price,PictureFileName,CatalogTypeId,CatalogBrandId,AvailableStock,Rest
-ockThreshold,MaxStockThreshold,OnReorder")] CatalogItem catalogItem)
-{

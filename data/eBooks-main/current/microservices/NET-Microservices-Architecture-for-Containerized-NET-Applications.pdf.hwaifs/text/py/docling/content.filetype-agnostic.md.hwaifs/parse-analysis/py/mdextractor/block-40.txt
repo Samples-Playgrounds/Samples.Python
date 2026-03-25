@@ -1,1 +1,0 @@
-basket -api: environment: # Other data ... -ConnectionString=basketdata -EventBusConnection=rabbitmq

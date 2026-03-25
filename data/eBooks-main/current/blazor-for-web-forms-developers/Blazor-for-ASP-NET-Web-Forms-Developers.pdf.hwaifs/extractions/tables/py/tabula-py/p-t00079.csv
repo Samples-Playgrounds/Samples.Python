@@ -1,7 +1,0 @@
-,"<aspNetCore processPath=""dotnet"""
-0,"arguments="".\MyApp.dll"""
-1,"stdoutLogEnabled=""false"""
-2,"stdoutLogFile="".\logs\stdout"""
-3,"hostingModel=""inprocess"">"
-4,<environmentVariables>
-5,"<environmentVariable name=""ASPNETCORE_ENVIRONMENT"" value=""Development"" />"

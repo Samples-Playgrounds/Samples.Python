@@ -1,5 +1,0 @@
-builder.Services.AddControllers();
-builder.Services.AddRouting(options =>
-{
- options.ConstraintMap.Add("customName", typeof(MyCustomConstraint));
-});

@@ -1,9 +1,0 @@
-,0
-0,public Span<int> RuhRoh()
-1,{
-2,unsafe
-3,{
-4,int i = 42;
-5,"return new Span<int>(&i, 1);"
-6,}
-7,}

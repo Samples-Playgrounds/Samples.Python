@@ -1,6 +1,0 @@
-,0
-0,Host.CreateDefaultBuilder(args)
-1,.UseWindowsService()
-2,...
-3,
-4,

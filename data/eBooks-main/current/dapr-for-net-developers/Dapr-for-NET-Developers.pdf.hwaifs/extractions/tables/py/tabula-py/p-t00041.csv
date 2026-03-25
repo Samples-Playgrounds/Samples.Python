@@ -1,2 +1,0 @@
-,"[HttpPut(""{scoreId}"")]"
-0,public Task<int> IncrementAsync(string scoreId)

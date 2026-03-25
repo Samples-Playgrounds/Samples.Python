@@ -1,3 +1,0 @@
-private static readonly RegistryKey s_netFramework = 
-Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\.NETFramework");
-[Benchmark] public string RegSz() => (string)s_netFramework.GetValue("InstallRoot");

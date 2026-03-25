@@ -1,3 +1,0 @@
-@page "/"
-@layout ChildLayout
-<p>I'm in a nested layout!</p>

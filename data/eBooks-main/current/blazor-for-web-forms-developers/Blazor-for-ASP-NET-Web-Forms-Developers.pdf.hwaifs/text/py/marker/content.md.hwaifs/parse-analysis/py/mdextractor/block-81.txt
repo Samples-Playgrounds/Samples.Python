@@ -1,2 +1,0 @@
-dotnet ef dbcontext scaffold "CONNECTION STRING" Microsoft.EntityFrameworkCore.SqlServer -c 
-MyDbContext -t Product -t Customer

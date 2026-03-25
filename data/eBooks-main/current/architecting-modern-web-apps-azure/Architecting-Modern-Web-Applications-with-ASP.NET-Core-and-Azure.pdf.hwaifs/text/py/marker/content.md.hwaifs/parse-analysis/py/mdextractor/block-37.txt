@@ -1,2 +1,0 @@
-builder.Services.AddDbContext<CatalogContext>(options =>
- options.UseInMemoryDatabase());

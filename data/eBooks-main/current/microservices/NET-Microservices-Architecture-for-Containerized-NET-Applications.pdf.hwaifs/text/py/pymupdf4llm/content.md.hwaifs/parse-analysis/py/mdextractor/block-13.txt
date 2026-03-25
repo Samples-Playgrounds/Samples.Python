@@ -1,1 +1,0 @@
-Use enumeration classes instead of enum types

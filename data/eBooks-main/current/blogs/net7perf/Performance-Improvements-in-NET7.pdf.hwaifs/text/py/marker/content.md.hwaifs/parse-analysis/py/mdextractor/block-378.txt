@@ -1,4 +1,0 @@
-public void Process(string name!!)
-{
- ...
-}

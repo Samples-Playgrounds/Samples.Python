@@ -1,3 +1,0 @@
-; Program.AllAreStrings(System.Object, System.Object, System.Object, System.Object)
- test rdx,rdx
- je short M00_L01

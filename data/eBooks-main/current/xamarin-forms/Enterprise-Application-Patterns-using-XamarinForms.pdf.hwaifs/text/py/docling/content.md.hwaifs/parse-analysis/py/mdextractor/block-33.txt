@@ -1,1 +1,0 @@
-private async Task OrderDetailAsync(Order order) { await NavigationService.NavigateToAsync<OrderDetailViewModel>(order); }

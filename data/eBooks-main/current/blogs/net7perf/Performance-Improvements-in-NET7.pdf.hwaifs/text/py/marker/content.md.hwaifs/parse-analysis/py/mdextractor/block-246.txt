@@ -1,2 +1,0 @@
-private static string CreateSortString(PropertyDescriptor property, ListSortDirection 
-direction) =>

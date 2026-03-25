@@ -1,1 +1,0 @@
-var orderConfirmation = await daprClient.InvokeMethodAsync<OrderConfirmation>(request);

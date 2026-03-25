@@ -1,3 +1,0 @@
-<PropertyGroup>
- <UserSecretsId>UniqueIdentifyingString</UserSecretsId>
-</PropertyGroup>

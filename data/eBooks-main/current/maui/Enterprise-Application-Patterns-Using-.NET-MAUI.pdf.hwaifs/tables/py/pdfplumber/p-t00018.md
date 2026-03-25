@@ -1,4 +1,0 @@
-|    | 0                                                    |
-|---:|:-----------------------------------------------------|
-|  0 | Tip                                                  |
-|  1 | Keep the UI responsive with asynchronous operations. |

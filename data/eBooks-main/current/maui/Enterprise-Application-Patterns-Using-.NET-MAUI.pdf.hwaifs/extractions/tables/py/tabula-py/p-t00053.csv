@@ -1,4 +1,0 @@
-,Concept,Description
-0,Container Host,"The physical or virtual machine configured tohost containers. The container host will run oneor more containers."
-1,Container Image,"An image consists of a union of layeredfilesystems stacked on top of each other, and isthe basis of a container. An image does nothave state and it never changes as it’s deployedto different environments."
-2,Container,A container is a runtime instance of an image.

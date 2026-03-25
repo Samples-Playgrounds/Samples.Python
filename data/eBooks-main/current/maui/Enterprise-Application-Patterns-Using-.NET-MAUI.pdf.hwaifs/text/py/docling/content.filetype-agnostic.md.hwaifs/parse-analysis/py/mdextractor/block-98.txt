@@ -1,1 +1,0 @@
-var mockViewModel = new MockViewModel(); mockViewModel . Forename . Value = "John"; mockViewModel . Surname . Value = "Smith"; var isValid = mockViewModel . Validate(); Assert . IsTrue(isValid); }

@@ -1,6 +1,0 @@
-|    | Factor                                               | Traditional Web App   | Single Page Application   | Blazor App   |
-|---:|:-----------------------------------------------------|:----------------------|:--------------------------|:-------------|
-|  0 | Required Team Familiarity with JavaScript/TypeScript | Minimal               | Required                  | Minimal      |
-|  1 | Support Browsers without Scripting                   | Supported             | Not Supported             | Supporte d   |
-|  2 | Minimal Client-Side Application Behavior             | Well-Suited           | Overkill                  | Viable       |
-|  3 | Rich, Complex User Interface Requirements            | Limited               | Well-Suited               | Well- Suited |

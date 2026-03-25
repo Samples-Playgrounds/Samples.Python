@@ -1,1 +1,0 @@
-{ get => _identityEndpoint; set { SetProperty( ref _identityEndpoint, value); if (!string.IsNullOrWhiteSpace(value)) { UpdateIdentityEndpoint(); } } }

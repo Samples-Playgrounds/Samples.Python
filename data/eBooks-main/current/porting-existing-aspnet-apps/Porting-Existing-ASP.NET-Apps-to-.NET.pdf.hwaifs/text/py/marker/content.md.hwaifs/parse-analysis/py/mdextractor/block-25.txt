@@ -1,3 +1,0 @@
-return new HttpStatusCodeResult(200);
- // or
- return new HttpStatusCodeResult(HttpStatusCode.OK);

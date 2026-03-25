@@ -1,5 +1,0 @@
-<ul>
-{ authors.map(author =>
- <li key={author.id}>{author.name}</li>
-)}
-</ul>

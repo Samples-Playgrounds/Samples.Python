@@ -1,1 +1,0 @@
-drinkers = people.Where((p) => p.Age > 21);

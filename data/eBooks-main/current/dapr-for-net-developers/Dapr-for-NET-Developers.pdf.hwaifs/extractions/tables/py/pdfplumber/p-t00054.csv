@@ -1,7 +1,0 @@
-,0
-0,curl -X POST http://localhost:3500/v1.0/state/<store-name> \
-1,"-H ""Content-Type: application/json"" \"
-2,-d '[
-3,"{ ""key"": ""Key1"", ""value"": ""Value1"" },"
-4,"{ ""key"": ""Key2"", ""value"": ""Value2"" }"
-5,]'

@@ -1,3 +1,0 @@
-image: mcr.microsoft.com/mssql/server:2017-latest
- nosqldata:
- image: mongo

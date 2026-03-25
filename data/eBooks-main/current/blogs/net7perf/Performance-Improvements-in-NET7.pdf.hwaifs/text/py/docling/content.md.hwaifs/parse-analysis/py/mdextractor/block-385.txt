@@ -1,1 +1,0 @@
-string RegSz() => (string)s_netFramework.GetValue("InstallRoot");

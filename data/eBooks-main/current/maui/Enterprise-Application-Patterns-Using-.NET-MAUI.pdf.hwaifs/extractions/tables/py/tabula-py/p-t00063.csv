@@ -1,7 +1,0 @@
-,private async Task CheckoutAsync()
-0,{
-1,// Omitted for brevity...
-2,
-3,await _basketService.ClearBasketAsync(
-4,"_shippingAddress.Id.ToString(), authToken);"
-5,}

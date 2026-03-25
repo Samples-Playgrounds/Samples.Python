@@ -1,2 +1,0 @@
-return (uint)i < Text.Length ? Text[i] : '\0';
-}

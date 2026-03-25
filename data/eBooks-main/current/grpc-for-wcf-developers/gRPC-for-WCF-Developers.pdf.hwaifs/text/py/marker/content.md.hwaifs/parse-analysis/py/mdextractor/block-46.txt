@@ -1,7 +1,0 @@
-public async Task<GetPortfolioResponse> GetPortfolio(GetPortfolioRequest request,
-ServerCallContext context)
-{
- // ...
- context.ResponseTrailers.Add("Responder", _serverName);
- // ...
-}

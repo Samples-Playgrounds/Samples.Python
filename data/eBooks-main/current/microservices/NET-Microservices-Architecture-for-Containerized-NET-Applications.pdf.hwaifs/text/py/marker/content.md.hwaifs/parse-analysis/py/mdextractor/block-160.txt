@@ -1,8 +1,0 @@
-public class MyMicroserviceController : Controller
-{
- public MyMicroserviceController(IMediator mediator,
- IMyMicroserviceQueries microserviceQueries)
- {
- // ...
- }
-}

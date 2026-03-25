@@ -1,2 +1,0 @@
-ret
-; Total bytes of code 6

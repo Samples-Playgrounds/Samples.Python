@@ -1,5 +1,0 @@
-Exception reading tables with camelot from PDF document source = ../../../../../../../data/eBooks-main/current/dotnet-for-java-developers/dotnet-for-java-developers-ebook.pdf : 'TableList' object has no attribute 'npages'Traceback (most recent call last):
-  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/tables-from-documents/pdf/camelot/api_table_extraction_camelot.py", line 32, in extract_tables_to_files_from_pdf_document
-    num_pages = tables.npages
-                ^^^^^^^^^^^^^
-AttributeError: 'TableList' object has no attribute 'npages'

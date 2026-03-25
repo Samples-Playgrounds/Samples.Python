@@ -1,4 +1,0 @@
-,kubectl apply -f deploy-webapi.yml
-0,kubectl apply -f deploy-webapp.yml
-1,
-2,kubectl get all

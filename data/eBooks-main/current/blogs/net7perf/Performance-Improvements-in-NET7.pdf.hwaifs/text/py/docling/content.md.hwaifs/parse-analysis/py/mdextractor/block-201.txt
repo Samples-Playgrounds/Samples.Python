@@ -1,1 +1,0 @@
-*(TSelf left, TOther right) => left * right;

@@ -1,2 +1,0 @@
-_httpClient.DefaultRequestHeaders.Authorization =
- new AuthenticationHeaderValue("Bearer", token);

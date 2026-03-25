@@ -1,4 +1,0 @@
-,0,1,2,3
-0,Method,Runtime,Mean,Ratio
-1,IsMatch,.NET 6.0,"4,291.77 us",1.000
-2,IsMatch,.NET 7.0,42.40 us,0.010

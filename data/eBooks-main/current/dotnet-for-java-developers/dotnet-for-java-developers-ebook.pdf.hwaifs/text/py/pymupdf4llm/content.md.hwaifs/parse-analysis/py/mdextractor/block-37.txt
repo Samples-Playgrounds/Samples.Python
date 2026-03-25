@@ -1,8 +1,0 @@
-{
-          return todos;
-    }
-
-        // GET api/todos/5
-    [HttpGet("{id}")]
-        public Todo Get(int id)
-    {

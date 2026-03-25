@@ -1,5 +1,0 @@
-|    |                                                                             |
-|---:|:----------------------------------------------------------------------------|
-|  0 | Migrate from ASP.NET Membership authentication to ASP.NET Core 2.0 Identity |
-|  1 | Migrate Authentication and Identity to ASP.NET Core                         |
-|  2 | ASP.NET Core Blazor authentication and authorization                        |

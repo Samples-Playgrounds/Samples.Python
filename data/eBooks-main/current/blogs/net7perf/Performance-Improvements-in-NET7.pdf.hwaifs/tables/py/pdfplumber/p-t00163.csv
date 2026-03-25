@@ -1,4 +1,0 @@
-,0,1,2,3,4,5
-0,Method,Length,Mean,Ratio,Allocated,Alloc Ratio
-1,OrderBy,1024,68.74 us,1.00,12.3 KB,1.00
-2,Order,1024,66.24 us,0.96,8.28 KB,0.67

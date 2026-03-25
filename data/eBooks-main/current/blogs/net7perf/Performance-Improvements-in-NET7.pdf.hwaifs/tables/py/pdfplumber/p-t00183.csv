@@ -1,3 +1,0 @@
-,0
-0,private List<T>? _items;
-1,public List<T> Items => _items ??= new List<T>();

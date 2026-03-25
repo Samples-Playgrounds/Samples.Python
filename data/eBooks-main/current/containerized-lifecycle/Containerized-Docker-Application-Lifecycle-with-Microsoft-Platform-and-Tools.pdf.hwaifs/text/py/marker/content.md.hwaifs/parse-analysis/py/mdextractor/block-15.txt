@@ -1,3 +1,0 @@
-kubectl apply -f deploy-webapi.yml
-kubectl apply -f deploy-webapp.yml
-kubectl get all

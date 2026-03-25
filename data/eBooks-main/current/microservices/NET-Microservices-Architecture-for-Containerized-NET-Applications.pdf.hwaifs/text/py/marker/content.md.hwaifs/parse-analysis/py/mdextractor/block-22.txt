@@ -1,6 +1,0 @@
-catalog-api:
- image: eshop/catalog-api
- environment:
- - ConnectionString=Server=sqldata;Initial Catalog=CatalogData;User 
-Id=sa;Password=[PLACEHOLDER]
- expose:

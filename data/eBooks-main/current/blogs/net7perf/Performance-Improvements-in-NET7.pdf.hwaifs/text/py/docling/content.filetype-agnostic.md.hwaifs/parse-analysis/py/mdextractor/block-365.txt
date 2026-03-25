@@ -1,1 +1,0 @@
-Stopwatch sw = Stopwatch.StartNew(); ...; TimeSpan elapsed = sw.Elapsed;

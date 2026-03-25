@@ -1,3 +1,0 @@
-if (!m_value) return "False";
- return "True";
-}

@@ -1,6 +1,0 @@
-,0
-0,Tip
-1,"If your service can only process a message once, you’ll need to provide an idempotency check to"
-2,"ensure that the same message is not processed multiple times. While such logic can be coded, some"
-3,"message brokers, such as Azure Service Bus, provide built-in duplicate detection messaging"
-4,capabilities.

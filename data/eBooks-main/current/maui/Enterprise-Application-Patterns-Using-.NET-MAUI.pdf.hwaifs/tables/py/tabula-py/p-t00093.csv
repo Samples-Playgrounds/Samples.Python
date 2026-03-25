@@ -1,5 +1,0 @@
-,public partial class SampleViewModel : ObservableObject
-0,{
-1,[ObservableProperty]
-2,private string _name;
-3,}

@@ -1,2 +1,0 @@
-{
-      foreach (var blog in context.Blogs

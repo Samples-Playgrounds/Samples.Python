@@ -1,5 +1,0 @@
-Exception reading tables from PDF document source = ../../../../../../../data/eBooks-main/current/azure-quick-start/Azure-Quick-Start-for-NET-Developers.pdf : 'kreuzberg.ExtractionResult' object has no attribute 'num_pages'Traceback (most recent call last):
-  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/kreuzberg/api_text_extraction_kreuzberg.py", line 30, in extract_text_to_file_from_pdf_document
-    num_pages = result.num_pages  # or result.page_count, result.pages, etc.
-                ^^^^^^^^^^^^^^^^
-AttributeError: 'kreuzberg.ExtractionResult' object has no attribute 'num_pages'

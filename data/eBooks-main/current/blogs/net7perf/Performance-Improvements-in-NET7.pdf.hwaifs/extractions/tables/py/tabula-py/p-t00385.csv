@@ -1,3 +1,0 @@
-,Method,Runtime,Mean,Ratio,Allocated,Alloc Ratio
-0,TraceWrite,.NET 6.0,961.9 ns,1.0,288 B,1.0
-1,TraceWrite,.NET 7.0,772.2 ns,0.8,64 B,0.22

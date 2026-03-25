@@ -1,3 +1,0 @@
-service Chatter {
- rpc Connect(stream IncomingMessage) returns (stream OutgoingMessage);
-}

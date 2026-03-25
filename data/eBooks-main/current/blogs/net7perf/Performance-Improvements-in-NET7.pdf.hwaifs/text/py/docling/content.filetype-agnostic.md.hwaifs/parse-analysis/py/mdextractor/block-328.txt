@@ -1,1 +1,0 @@
-if (_items is List<T> items && items.Count >

@@ -1,1 +1,0 @@
-await _eventBus.PublishAsync(new OrderStatusChangedToSubmittedIntegrationEvent( OrderId, OrderStatus.Submitted . Name , buyerId, buyerEmail)); }

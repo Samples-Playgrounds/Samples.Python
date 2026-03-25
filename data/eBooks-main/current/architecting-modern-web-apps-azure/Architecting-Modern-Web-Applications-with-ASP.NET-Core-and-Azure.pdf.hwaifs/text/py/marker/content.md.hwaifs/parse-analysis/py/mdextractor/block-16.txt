@@ -1,3 +1,0 @@
-[Area("Catalog")]
-public class HomeController
-{}

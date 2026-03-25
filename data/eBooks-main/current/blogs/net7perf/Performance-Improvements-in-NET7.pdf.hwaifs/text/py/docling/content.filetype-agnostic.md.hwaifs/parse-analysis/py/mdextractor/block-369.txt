@@ -1,1 +1,0 @@
-private static void ThrowArgumentNullException(string arg) => throw new ArgumentNullException(arg, SR.SomeResourceMessage);

@@ -1,2 +1,0 @@
-<input @bind="text" @bind:event="oninput" />
-<p>@text</p>

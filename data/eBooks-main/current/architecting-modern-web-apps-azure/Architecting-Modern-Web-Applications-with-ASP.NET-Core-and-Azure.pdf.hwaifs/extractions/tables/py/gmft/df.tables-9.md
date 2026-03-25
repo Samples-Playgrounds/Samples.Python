@@ -1,6 +1,0 @@
-|    | builder.Services.AddMemoryCache(); builder.Services.AddMvc();                                                 |                                                             |
-|---:|:--------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------|
-|  0 | Be sure to add the Microsoft.Extensions.Caching.Memory NuGet package as well.                                 | nan                                                         |
-|  1 | Once you’ve added the service, you request IMemoryCache via dependency injection wherever                     | you                                                         |
-|  2 | need to access the cache. In this example, the CachedCatalogService is using the Proxy (or                    | Decorator)                                                  |
-|  3 | design pattern, by providing an alternative implementation of ICatalogService that controls (or adds behavior | access to to) the underlying CatalogService implementation. |

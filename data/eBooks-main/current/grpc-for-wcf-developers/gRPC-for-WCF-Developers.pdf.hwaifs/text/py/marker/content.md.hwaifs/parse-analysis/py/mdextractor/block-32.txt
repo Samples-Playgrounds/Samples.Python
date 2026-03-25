@@ -1,6 +1,0 @@
-[ServiceContract]
-public interface IGreeterService
-{
- [OperationContract]
- string SayHello(string name);
-}

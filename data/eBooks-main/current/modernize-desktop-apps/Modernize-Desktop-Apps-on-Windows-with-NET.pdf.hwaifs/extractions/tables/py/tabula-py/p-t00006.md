@@ -1,9 +1,0 @@
-|    | <Project Sdk="Microsoft.NET.Sdk">                  |
-|---:|:---------------------------------------------------|
-|  0 | <PropertyGroup>                                    |
-|  1 | <OutputType>WinExe</OutputType>                    |
-|  2 | <TargetFramework>net7.0-windows</TargetFramework>  |
-|  3 | <UseWpf>true</UseWpf>                              |
-|  4 | <GenerateAssemblyInfo>false</GenerateAssemblyInfo> |
-|  5 | </PropertyGroup>                                   |
-|  6 | </Project>                                         |

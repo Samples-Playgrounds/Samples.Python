@@ -1,1 +1,0 @@
-fixed (char* ptr = value) { Append(ptr + startIndex, count); }

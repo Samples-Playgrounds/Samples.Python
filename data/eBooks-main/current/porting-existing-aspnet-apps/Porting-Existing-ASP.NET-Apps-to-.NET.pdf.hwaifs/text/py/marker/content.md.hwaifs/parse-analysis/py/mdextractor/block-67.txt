@@ -1,3 +1,0 @@
-builder.HasData(
- PreconfiguredData.GetPreconfiguredCatalogBrands()
-);

@@ -1,3 +1,0 @@
-# create a container registry
-az acr create --resource-group myResourceGroup --name myContainerRegistry008 --sku 
-Basic

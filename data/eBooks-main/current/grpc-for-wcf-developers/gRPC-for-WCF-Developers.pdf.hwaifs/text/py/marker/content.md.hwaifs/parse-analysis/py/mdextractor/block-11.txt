@@ -1,2 +1,0 @@
-Inner inner = 1;
-}

@@ -1,4 +1,0 @@
-,Platform,Description
-0,Kubernetes,"Kubernetes is an open-source product that provides functionality that ranges from cluster infrastructure and container scheduling to orchestrating capabilities. It lets you automate deployment, scaling, and operations of application containers across clusters of hosts. Kubernetes provides a container- centric infrastructure that groups application containers into logical units for easy management and discovery. Kubernetes is mature in Linux, less mature in Windows."
-1,Azure Kubernetes Service (AKS),"AKS is a managed Kubernetes container orchestration service in Azure that simplifies Kubernetes cluster's management, deployment, and operations."
-2,Azure Container Apps,Azure Container Apps is a managed serverless container service for building and deploying modern apps at scale.

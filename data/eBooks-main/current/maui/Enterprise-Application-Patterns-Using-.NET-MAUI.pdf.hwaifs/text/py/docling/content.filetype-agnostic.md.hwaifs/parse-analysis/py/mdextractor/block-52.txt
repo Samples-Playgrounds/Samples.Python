@@ -1,1 +1,0 @@
-private void UpdateIdentityEndpoint() { _settingsService . IdentityEndpointBase = _identityEndpoint; }

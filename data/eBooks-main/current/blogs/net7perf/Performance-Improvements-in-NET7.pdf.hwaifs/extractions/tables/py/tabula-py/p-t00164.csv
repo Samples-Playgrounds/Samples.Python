@@ -1,3 +1,0 @@
-,Method,Runtime,Mean,Ratio,Code Size,Allocated,Alloc Ratio
-0,Update,.NET 6.0,61.96 ns,1.0,"1,272 B",176 B,1.0
-1,Update,.NET 7.0,61.92 ns,1.0,"1,832 B",144 B,0.82

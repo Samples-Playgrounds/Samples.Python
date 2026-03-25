@@ -1,5 +1,0 @@
-if (featureFlag) {
- // Run this code block if the featureFlag value is true
-} else {
- // Run this code block if the featureFlag value is false
-}

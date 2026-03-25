@@ -1,4 +1,0 @@
-GROUP BY o.[Id], o.[OrderDate], os.[Name]");
- }
- }
-}

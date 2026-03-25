@@ -1,1 +1,0 @@
-string connectionString = builder . Configuration . GetConnectionString("DefaultConnection"); builder . Services . AddDbContext<CatalogDBContext>(options => options . UseSqlServer(connectionString) ); }

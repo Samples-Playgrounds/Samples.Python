@@ -1,1 +1,0 @@
-var builder = WebApplication.CreateBuilder(args); builder.Services . AddActors(options => { var jsonSerializerOptions = new JsonSerializerOptions() { PropertyNamingPolicy = JsonNamingPolicy.CamelCase , PropertyNameCaseInsensitive = true }; options.JsonSerializerOptions = jsonSerializerOptions; options.Actors . RegisterActor<ScoreActor>(); });

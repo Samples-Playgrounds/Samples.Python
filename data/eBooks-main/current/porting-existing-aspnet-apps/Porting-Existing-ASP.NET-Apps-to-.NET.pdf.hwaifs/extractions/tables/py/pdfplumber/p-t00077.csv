@@ -1,7 +1,0 @@
-,0
-0,var binding = new BasicHttpBinding();
-1,binding.MaxReceivedMessageSize = 2_000_000;
-2,
-3,"var endpointAddress = new EndpointAddress(""http://localhost:9200/ExampleService"");"
-4,
-5,"var myClient = new MyServiceClient(binding, endpointAddress);"

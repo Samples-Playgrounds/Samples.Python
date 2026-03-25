@@ -1,3 +1,0 @@
-,Note
-0,"The previous .yml files only enable the HTTP ports, using the ASPNETCORE_URLS parameter, to avoid"
-1,issues with the missing certificate in the sample app.

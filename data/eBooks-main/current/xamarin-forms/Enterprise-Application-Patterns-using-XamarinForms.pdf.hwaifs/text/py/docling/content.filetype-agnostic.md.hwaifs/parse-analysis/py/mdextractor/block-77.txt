@@ -1,1 +1,0 @@
-var authToken = Settings.AuthAccessToken; await _basketService.UpdateBasketAsync(new CustomerBasket { BuyerId = userInfo.UserId, Items = BasketItems.ToList() }, authToken);

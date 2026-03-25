@@ -1,4 +1,0 @@
-env: app-name: “” rg-name: “”
-
-
-jobs: # <– this is the existing jobs line

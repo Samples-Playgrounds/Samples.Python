@@ -1,3 +1,0 @@
-WebHost.CreateDefaultBuilder(args)
-  .UseShutdownTimeout(TimeSpan.FromSeconds(10))
-  ...

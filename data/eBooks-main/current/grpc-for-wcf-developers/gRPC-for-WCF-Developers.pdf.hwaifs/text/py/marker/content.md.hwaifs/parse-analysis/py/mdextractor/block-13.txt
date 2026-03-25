@@ -1,4 +1,0 @@
-message Person {
- // Other fields elided
- repeated string aliases = 8;
-}

@@ -1,5 +1,0 @@
-if-no-files-found: error # <– last line of build job: insert
-below this line
-
-
-deploy_staging: needs: build runs-on: ubuntu-latest

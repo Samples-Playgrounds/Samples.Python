@@ -1,3 +1,0 @@
-<% if (HttpContext.Current.User.IsInRole("Administrators")) { %>
- <a href="/admin">Go To Admin</a>
-<% } %>

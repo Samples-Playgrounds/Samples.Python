@@ -1,3 +1,0 @@
-dotnet new console -o nativeaotexample
-
-<PublishAot>true</PublishAot>

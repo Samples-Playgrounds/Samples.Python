@@ -1,1 +1,0 @@
-[assembly: ResolutionGroupName("eShopOnContainers")] [assembly: ExportEffect(typeof(EntryLineColorEffect), "EntryLineColorEffect")] namespace eShopOnContainers.iOS.Effects { public class EntryLineColorEffect : PlatformEffect

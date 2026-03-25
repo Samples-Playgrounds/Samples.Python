@@ -1,2 +1,0 @@
-$ dotnet run --project HelloWorld/HelloWorld.csproj
-    Hello World!

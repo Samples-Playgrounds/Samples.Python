@@ -1,3 +1,0 @@
-private DateTimeOffset _dto = DateTimeOffset.UtcNow;
-[Benchmark]
-public string DateTimeOffsetToString() => _dto.ToString();

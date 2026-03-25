@@ -1,1 +1,0 @@
-[HttpGet("[controller]/pic/{id}")] public IActionResult GetImage(int id) { byte[] imageBytes; try { imageBytes = _imageService . GetImageBytesById(id); } catch (CatalogImageMissingException ex) { _logger . LogWarning($"No image found for id: {id}"); return NotFound(); }

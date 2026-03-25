@@ -1,6 +1,0 @@
-,0,1
-0,Status,Action
-1,SUCCESS,The message is considered as processed successfully and dropped.
-2,RETRY,The message is retried.
-3,DROP,A warning is logged and the message is dropped.
-4,Any other status,The message is retried.

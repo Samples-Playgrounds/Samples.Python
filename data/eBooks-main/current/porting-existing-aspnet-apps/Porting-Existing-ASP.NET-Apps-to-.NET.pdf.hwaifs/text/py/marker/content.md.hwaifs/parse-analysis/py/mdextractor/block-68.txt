@@ -1,3 +1,0 @@
-builder.Property(ci => ci.Id)
- .ValueGeneratedNever()
- .IsRequired();

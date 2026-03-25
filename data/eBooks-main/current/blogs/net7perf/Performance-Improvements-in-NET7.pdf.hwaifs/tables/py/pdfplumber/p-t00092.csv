@@ -1,9 +1,0 @@
-,0
-0,SafeFileHandle handle = Interop.CreateFile();
-1,if (handle.IsInvalid)
-2,{
-3,int lastError = Marshal.GetLastPInvokeError();
-4,handle.Dispose(); // or handle.SetHandleAsInvalid()
-5,throw new UhOhException(lastError);
-6,}
-7,return handle;

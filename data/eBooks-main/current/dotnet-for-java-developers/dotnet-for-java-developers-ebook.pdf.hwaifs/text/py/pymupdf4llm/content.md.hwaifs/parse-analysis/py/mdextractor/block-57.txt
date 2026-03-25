@@ -1,3 +1,0 @@
-// do something with the blog
-    }
-    }

@@ -1,3 +1,0 @@
-dotnet new console -o DaprCounter
-
-The command scaffolds a simple "Hello World" .NET application.

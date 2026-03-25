@@ -1,4 +1,0 @@
-,string symbol = 1;
-0,int32 price_cents = 2;
-1,google.protobuf.Timestamp time = 3;
-2,}

@@ -1,1 +1,0 @@
-[Benchmark] [Arguments("System.Private.CoreLib.dll" , ".DLL")] public bool EndsWith(string haystack, string needle) => haystack.EndsWith(needle, StringComparison.OrdinalIgnoreCase);

@@ -1,1 +1,0 @@
-public static IEnumerable<IdentityResource> GetResources() { return new List<IdentityResource> { new IdentityResources . OpenId(), new IdentityResources . Profile() }; }

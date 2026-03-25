@@ -1,1 +1,0 @@
-,null != foundColumns[i] ? foundColumns[i] : DBNull.Value;

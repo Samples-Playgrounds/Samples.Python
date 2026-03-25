@@ -1,1 +1,0 @@
-<ContentPage ... xmlns:local="clr-namespace:eShop"> <ContentPage.BindingContext> <local:LoginViewModel /> </ContentPage.BindingContext> ... </ContentPage>

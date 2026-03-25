@@ -1,3 +1,0 @@
-<MyComponentLib.Counter />
-
-### Modify page title from components

@@ -1,2 +1,0 @@
-[Benchmark]
-public bool Contains() => _data.AsSpan().Contains((byte)1);

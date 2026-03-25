@@ -1,1 +1,0 @@
-ModelBinderProviders.BinderProviders.Insert(0, new MyCustomBinderProvider()); // MVC

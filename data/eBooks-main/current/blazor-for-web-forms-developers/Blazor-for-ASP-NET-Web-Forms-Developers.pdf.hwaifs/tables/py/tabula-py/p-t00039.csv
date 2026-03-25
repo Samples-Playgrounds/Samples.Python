@@ -1,6 +1,0 @@
-,public partial class Counter : System.Web.UI.UserControl
-0,{
-1,"protected void Page_Init(object sender, EventArgs e) { ... }"
-2,"protected void Page_Load(object sender, EventArgs e) { ... }"
-3,"protected void Page_UnLoad(object sender, EventArgs e) { ... }"
-4,}

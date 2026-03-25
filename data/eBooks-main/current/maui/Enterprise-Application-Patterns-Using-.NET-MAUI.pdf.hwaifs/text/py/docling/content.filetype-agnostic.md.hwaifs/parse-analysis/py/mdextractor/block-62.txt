@@ -1,1 +1,0 @@
-[HttpPost] public async Task<IActionResult> Post([FromBody] CustomerBasket value) { var basket = await _repository . UpdateBasketAsync(value); return Ok(basket); }

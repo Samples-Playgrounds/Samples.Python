@@ -1,3 +1,0 @@
-,Method,Runtime,Mean,Ratio
-0,MultipleSerial,.NET 6.0,14.340 us,1.00
-1,MultipleSerial,.NET 7.0,9.262 us,0.65

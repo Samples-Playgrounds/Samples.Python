@@ -1,6 +1,0 @@
-,Feature,Web Forms,Syntax,Razor,"Syntax"
-0,Directives,<%@ [directive] %>,<%@ Page %>,@[directive],"@page"
-1,Code blocks,<% %>,<% int x = 123; %>,@{ },"@{int x=123; }"
-2,"Expressions(HTML-encoded)",<%: %>,"<%:DateTime.Now%>","Implicit: @Explicit: @()","@DateTime.Now@(DateTime.Now)"
-3,Comments,<%-- --%>,"<%-- Commented --%>",@* *@,"@*Commented*@"
-4,Data binding,<%# %>,"<%# Bind(""Name"")%>",@bind,"<input@bind=""username""/>"

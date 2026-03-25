@@ -1,7 +1,0 @@
-while (i < str.Length)
-{
- if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'))
- {
- i++;
- }
-}

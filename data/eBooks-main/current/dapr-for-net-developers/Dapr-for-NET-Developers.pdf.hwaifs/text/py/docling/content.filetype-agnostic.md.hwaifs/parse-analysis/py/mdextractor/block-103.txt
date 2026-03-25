@@ -1,1 +1,0 @@
-public async Task<int> GetScoreAsync() { var scoreValue = await StateManager.TryGetStateAsync<int>("score"); if (scoreValue.HasValue) { return scoreValue.Value; }

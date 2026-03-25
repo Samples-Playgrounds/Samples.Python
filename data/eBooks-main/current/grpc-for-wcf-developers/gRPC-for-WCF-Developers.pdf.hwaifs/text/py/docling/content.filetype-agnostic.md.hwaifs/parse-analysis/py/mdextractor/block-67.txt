@@ -1,1 +1,0 @@
-dotnet new classlib -o src/TraderSys.PortfolioData dotnet sln add src/TraderSys.PortfolioData

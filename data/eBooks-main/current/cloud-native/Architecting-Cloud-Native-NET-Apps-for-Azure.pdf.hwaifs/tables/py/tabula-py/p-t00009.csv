@@ -1,9 +1,0 @@
-,Unnamed: 0,Tasks,Explanation
-0,Scaling,,Automatically add or remove a container
-1,,,instance to meet demand.
-2,Networking,,Manage a networking overlay for container
-3,,,communication.
-4,Service Discovery,,Enable containers to locate each other.
-5,Rolling Upgrades,,Coordinate incremental upgrades with zero
-6,,,downtime deployment. Automatically roll back
-7,,,problematic changes.

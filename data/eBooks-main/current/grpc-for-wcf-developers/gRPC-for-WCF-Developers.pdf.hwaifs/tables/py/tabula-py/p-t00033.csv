@@ -1,5 +1,0 @@
-,Note
-0,Server-streaming RPCs are useful for subscription-style services. They’re also useful for sending large
-1,"datasets when it would be inefficient or impossible to build the entire dataset in memory. However,"
-2,"streaming responses isn’t as fast as sending repeated fields in a single message. As a rule, streaming"
-3,shouldn’t be used for small datasets.

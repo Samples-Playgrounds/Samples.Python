@@ -1,5 +1,0 @@
-,0
-0,"$sp = New-AzADServicePrincipal -ApplicationId ""<Application ID guid>"""
-1,"Set-AzKeyVaultAccessPolicy -VaultName ""<VaultName>"" -ServicePrincipalName"
-2,"$sp.ServicePrincipalNames[0] -PermissionsToSecrets all -ResourceGroupName ""<KeyVault"
-3,"Resource Group>"""

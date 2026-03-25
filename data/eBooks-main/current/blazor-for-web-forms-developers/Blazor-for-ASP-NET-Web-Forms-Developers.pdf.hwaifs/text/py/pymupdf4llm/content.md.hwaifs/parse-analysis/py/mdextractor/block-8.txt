@@ -1,3 +1,0 @@
-<Counter IncrementAmount="10" />
-
-#### **Query string parameters**

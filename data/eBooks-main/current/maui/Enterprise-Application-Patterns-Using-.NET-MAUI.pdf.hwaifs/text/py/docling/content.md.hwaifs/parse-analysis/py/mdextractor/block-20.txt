@@ -1,1 +1,0 @@
-public class AddProductMessage : ValueChangedMessage<int> { public AddProductMessage(int count) : base (count) { } }

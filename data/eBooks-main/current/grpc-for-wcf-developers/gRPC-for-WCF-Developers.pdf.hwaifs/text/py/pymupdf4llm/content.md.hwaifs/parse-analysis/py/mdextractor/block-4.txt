@@ -1,5 +1,0 @@
-_repository = repository;
-  }
-}
-
-#### **Implement the gRPC service**

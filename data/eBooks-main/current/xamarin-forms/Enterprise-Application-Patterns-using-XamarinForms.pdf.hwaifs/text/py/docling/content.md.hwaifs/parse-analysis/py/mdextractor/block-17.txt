@@ -1,1 +1,0 @@
-var requestProvider = _container.Resolve<IRequestProvider>();

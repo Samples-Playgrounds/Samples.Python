@@ -1,5 +1,0 @@
-,0
-0,Note
-1,"Even though the .NET MAUI Command and RelayCommand are similar, using RelayCommand allows"
-2,for decoupling your ViewModel from any direct .NET MAUI references. This means that your
-3,"ViewModel is more portable, leading to easier reuse across projects."

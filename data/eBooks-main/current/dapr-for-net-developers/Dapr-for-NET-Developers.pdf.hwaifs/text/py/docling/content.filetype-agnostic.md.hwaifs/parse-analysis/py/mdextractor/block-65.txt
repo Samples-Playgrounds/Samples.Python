@@ -1,1 +1,0 @@
-[ { "pubsubname": "pubsub" , "topic": "newOrder" , "route": "/orders" } , { "pubsubname": "pubsub" , "topic": "newProduct" , "route": "/productCatalog/products" } ]

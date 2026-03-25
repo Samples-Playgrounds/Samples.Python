@@ -1,1 +1,0 @@
-[Benchmark] public void ReadAllLines() { var reader = new StringReader(Sonnet); while (reader.ReadLine() != null ) ; }

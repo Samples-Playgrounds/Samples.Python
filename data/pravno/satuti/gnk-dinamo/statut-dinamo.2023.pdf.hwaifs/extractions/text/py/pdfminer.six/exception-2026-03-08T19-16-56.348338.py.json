@@ -1,7 +1,0 @@
-Exception reading text with pdfminer.six from PDF document source = ../../../../../../../data/pravno/satuti/gnk-dinamo/statut-dinamo.2023.pdf : extract_pages() got an unexpected keyword argument 'codec'Traceback (most recent call last):
-  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/pdfminer.six/api_text_extraction_pdfminer_six.py", line 35, in extract_text_to_file_from_pdf_document
-    pages = extract_pages(
-                                source_file, password='', page_numbers=None, maxpages=0,
-                                caching=True, codec='utf-8', laparams=None
-                                )
-TypeError: extract_pages() got an unexpected keyword argument 'codec'

@@ -1,6 +1,0 @@
-,,
-0,},
-1,"resource ""azurerm_resource_group""","""testrg"" {"
-2,"name = ""production"" location = ""West US"" }",
-3,"resource ""azurerm_storage_account""","""testsa"" {"
-4,name = resource_group_name = location = account_tier = account_replication_type =,"""${var.storageAccountName}"" ""${azurerm_resource_group.testrg.name}"" ""${var.region}"" ""${var.tier}"" ""${var.replicationType}"""

@@ -1,4 +1,0 @@
-[Topic(“pubsub”, “speedingviolations”)] [Route(“collectfine”)]
-
-[HttpPost] public async Task CollectFine(SpeedingViolation speedingViolation, [FromServices]
-DaprClient daprClient) { // …

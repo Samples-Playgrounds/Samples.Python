@@ -1,3 +1,0 @@
-// Defined at IOrderRepository.cs
-public interface IOrderRepository : IRepository<Order>
-{

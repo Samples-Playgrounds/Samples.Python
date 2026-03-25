@@ -1,1 +1,0 @@
-ProductPriceChangedIntegrationEventHandler>(); eventBus . Subscribe<OrderStartedIntegrationEvent , OrderStartedIntegrationEventHandler>();

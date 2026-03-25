@@ -1,8 +1,0 @@
-syntax = "proto3";
-option csharp_namespace = "TraderSys";
-message Stock {
- int32 id = 1;
- string symbol = 2;
- string display_name = 3;
- int32 market_id = 4;
-}

@@ -1,5 +1,0 @@
-Exception reading text from PDF document source = ../../../../../../../data/eBooks-main/current/grpc-for-wcf-developers/gRPC-for-WCF-Developers.pdf : 'generator' object has no attribute 'pages'Traceback (most recent call last):
-  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/docling/api_text_extraction_docling_DocumentConverter.py", line 216, in extract_markdown_to_file_from_any_document_complex
-    num_pages = len(result_doc.pages)
-                    ^^^^^^^^^^^^^^^^
-AttributeError: 'generator' object has no attribute 'pages'

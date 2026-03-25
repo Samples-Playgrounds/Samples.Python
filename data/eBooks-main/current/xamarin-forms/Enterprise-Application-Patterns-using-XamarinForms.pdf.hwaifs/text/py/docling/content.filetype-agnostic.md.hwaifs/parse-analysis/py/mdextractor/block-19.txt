@@ -1,1 +1,0 @@
-MessagingCenter.Send(this , MessengerKeys.AddProduct, catalogItem);

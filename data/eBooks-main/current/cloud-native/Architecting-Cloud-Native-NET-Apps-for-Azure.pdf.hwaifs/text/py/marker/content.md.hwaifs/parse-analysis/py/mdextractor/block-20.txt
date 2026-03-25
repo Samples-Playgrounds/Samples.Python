@@ -1,8 +1,0 @@
-public class ProductController : Controller
-{
- private readonly IFeatureManager _featureManager;
- public ProductController(IFeatureManager featureManager)
- {
- _featureManager = featureManager;
- }
-}

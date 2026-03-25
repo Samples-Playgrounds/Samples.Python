@@ -1,2 +1,0 @@
-[Benchmark]
-public Type GetUnderlyingType() => Enum.GetUnderlyingType(typeof(DayOfWeek));

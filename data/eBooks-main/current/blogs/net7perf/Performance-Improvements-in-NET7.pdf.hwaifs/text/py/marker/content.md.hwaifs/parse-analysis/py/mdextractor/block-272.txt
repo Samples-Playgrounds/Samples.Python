@@ -1,3 +1,0 @@
-private static readonly char[] s_pathDelims = { ':', '\\', '/', '?', '#' };
-...
-int index = value.IndexOfAny(s_pathDelims);

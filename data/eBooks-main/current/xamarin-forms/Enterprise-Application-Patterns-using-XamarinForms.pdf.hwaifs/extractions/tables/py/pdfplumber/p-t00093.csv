@@ -1,6 +1,0 @@
-,0
-0,public class OrderDetailViewModel : ViewModelBase
-1,{
-2,private IOrderService _ordersService;
-3,
-4,public OrderDetailViewModel(IOrderService ordersService)

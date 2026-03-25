@@ -1,1 +1,0 @@
-var catalogItems = await daprClient.InvokeMethodAsync<IEnumerable<CatalogItem>>(HttpMethod.Get , "catalogservice" , "items");

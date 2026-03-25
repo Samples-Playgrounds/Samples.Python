@@ -1,3 +1,0 @@
-string connectionString =
- ConfigurationManager.ConnectionStrings["DefaultConnection"]
- .ConnectionString;

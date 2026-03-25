@@ -1,6 +1,0 @@
-,0
-0,Note
-1,The implementation of IHttpClientFactory (DefaultHttpClientFactory) is tightly tied to the DI
-2,implementation in the Microsoft.Extensions.DependencyInjection NuGet package. If you need to use
-3,"HttpClient without DI or with other DI implementations, consider using a static or singleton HttpClient"
-4,"with PooledConnectionLifetime set up. For more information, see HttpClient guidelines for .NET."

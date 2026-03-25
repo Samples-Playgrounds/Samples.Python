@@ -1,5 +1,0 @@
-public Span<int> RuhRoh()
-{
- int i = 42;
- return new Span<int>(ref i);
-}

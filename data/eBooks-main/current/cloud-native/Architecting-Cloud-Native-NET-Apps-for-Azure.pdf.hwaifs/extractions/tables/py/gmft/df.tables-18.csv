@@ -1,7 +1,0 @@
-,Consider a NoSQL datastore when:,Consider a relational database when:
-0,"You have high volume workloads that require predictable latency at large scale (for example, latency measured in milliseconds while performing millions of transactions per second)",Your workload volume generally fits within thousands of transactions per second
-1,Your data is dynamic and frequently changes,Your data is highly structured and requires referential integrity
-2,Relationships can be de-normalized data models,Relationships are expressed through table joins on normalized data models
-3,Data retrieval is simple and expressed without table joins,You work with complex queries and reports
-4,"Data is typically replicated across geographies and requires finer control over consistency, availability, and performance","Data is typically centralized, or can be replicated regions asynchronously"
-5,"Your application will be deployed to commodity hardware, such as with public clouds","Your application will be deployed to large, high￾end hardware"

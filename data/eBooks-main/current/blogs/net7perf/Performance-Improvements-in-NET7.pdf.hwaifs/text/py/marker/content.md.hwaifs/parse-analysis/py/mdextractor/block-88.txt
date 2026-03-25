@@ -1,4 +1,0 @@
-M00_L00:
- xor eax,eax
- ret
-; Total bytes of code 51

@@ -1,2 +1,0 @@
-<a href="ms-appinstaller:?source=http://mywebservice.azureedge.net/MyApp.msix">Install 
-app package </a>
