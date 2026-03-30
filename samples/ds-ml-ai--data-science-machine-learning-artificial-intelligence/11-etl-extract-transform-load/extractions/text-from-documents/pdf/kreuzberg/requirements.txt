@@ -1,4 +1,4 @@
 codetiming==1.4.0
-kreuzberg==4.5.4
+kreuzberg==4.6.3
 orjson==3.11.7
 timer==0.3.0
