@@ -30,6 +30,10 @@ sys.path.append(os.path.abspath(scriptpath))
 from data import *
 
 def main():
+   for source in files_documents_pdfs:
+      if source.endswith(".pdf"):
+         print(f"unstructured <- source :  {source}")
+         result_txt = api.extract_text_to_file_from_pdf_document(source)
 
    for source in sources:
       if source.endswith(".pdf"):
