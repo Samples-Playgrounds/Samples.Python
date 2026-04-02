@@ -6,7 +6,7 @@ anyio==4.13.0
 attrs==26.1.0
 beautifulsoup4==4.14.3
 certifi==2026.2.25
-charset-normalizer==3.4.6
+charset-normalizer==3.4.7
 click==8.3.1
 codetiming==1.4.0
 colorlog==6.10.1
@@ -93,7 +93,7 @@ tokenizers==0.22.2
 torch==2.11.0
 torchvision==0.26.0
 tqdm==4.67.3
-transformers==5.4.0
+transformers==5.5.0
 tree-sitter==0.25.2
 tree-sitter-c==0.24.1
 tree-sitter-javascript==0.25.0
