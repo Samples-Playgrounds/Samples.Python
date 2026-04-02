@@ -33,6 +33,10 @@ from data import *
 
 
 def main():
+   for source in files_documents_pdfs:
+      if source.endswith(".pdf"):
+         print(f"PyPDF2 <- source :  {source}")
+         result_txt = api.extract_text_to_file_from_pdf_document(source)
 
    for source in sources:
       if source.endswith(".pdf"):
@@ -42,3 +46,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
