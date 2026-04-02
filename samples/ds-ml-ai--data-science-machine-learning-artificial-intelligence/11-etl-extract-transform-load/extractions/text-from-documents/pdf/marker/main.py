@@ -31,10 +31,16 @@ from data import *
 
 
 def main():
+   for source in files_documents_pdfs:
+      if source.endswith(".pdf"):
+         print(f"marker <- source = {source}")
+         result_txt = api.extract_text_to_file_from_pdf_document(source)
+
    for source in sources:
       if source.endswith(".pdf"):
          print(f"marker <- source = {source}")
-         result_md = api.extract_text_to_file_from_pdf_document(source)
+         result_txt = api.extract_text_to_file_from_pdf_document(source)
+
 
 if __name__ == '__main__':
     main()
