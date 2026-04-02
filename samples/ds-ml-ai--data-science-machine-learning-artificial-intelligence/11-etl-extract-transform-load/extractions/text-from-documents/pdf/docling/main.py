@@ -33,6 +33,12 @@ from data import *
 
 
 def main():
+   for source in files_documents_pdfs:
+      print(f"docling <- source = {source}")
+      result_txt = api.extract_text_to_file_from_any_document(source)
+      result_md = api.extract_markdown_to_file_from_any_document(source)
+      result_md = api.extract_markdown_to_file_from_any_document_complex(source)
+
    for source in sources:
       print(f"docling <- source = {source}")
       result_txt = api.extract_text_to_file_from_any_document(source)
