@@ -33,9 +33,14 @@ from data import *
 sources = files_documents_pdfs
 
 def main():
+   for source in files_documents_pdfs:
+      print(f"docTR <- source = {source}")
+      result_txt = api.extract_text_to_file_from_pdf_document(source)
+
    for source in sources:
       print(f"docTR <- source = {source}")
-      api.extract_text_to_file_from_pdf_document(source)
+      result_txt = api.extract_text_to_file_from_pdf_document(source)
+
 
 if __name__ == '__main__':
     main()
