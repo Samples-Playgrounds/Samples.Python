@@ -31,6 +31,12 @@ from data import *
 
 
 def main():
+   for source in files_documents_pdfs:
+      print(f"pdfplumber <- source = {source}")
+      if source.endswith(".pdf"):
+         result_txt = api.extract_text_to_file_from_pdf_document(source)
+         # result_md = api.extract_markdown_to_file_from_pdf_document(source)
+
    for source in sources:
       print(f"pdfplumber <- source = {source}")
       if source.endswith(".pdf"):
