@@ -30,6 +30,17 @@ sys.path.append(os.path.abspath(scriptpath))
 from data import *
 
 def main():
+   for source in files_documents_pdfs:
+      print(f"pymupdf4llm <- source :  {source}")
+
+      if source.endswith(".pdf"):
+         result_md = api.extract_markdown_to_file_from_pdf_document(source)
+
+      if source.endswith(".doc"):
+         result_md = api.extract_markdown_to_file_from_office_doc_docx_document(source)
+
+      if source.endswith(".docx"):
+         result_md = api.extract_markdown_to_file_from_office_doc_docx_document(source)
 
    for source in sources:
       print(f"pymupdf4llm <- source :  {source}")
