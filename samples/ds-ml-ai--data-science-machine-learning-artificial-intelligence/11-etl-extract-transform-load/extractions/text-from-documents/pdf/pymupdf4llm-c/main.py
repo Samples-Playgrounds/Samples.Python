@@ -32,10 +32,14 @@ from data import *
 
 
 def main():
+   for source in files_documents_pdfs:
+      if source.endswith(".pdf"):
+         print(f"pymupdf4llm-c <- source :  {source}")
+         result_txt = api.extract_text_to_file_from_pdf_document(source)
 
    for source in sources:
       if source.endswith(".pdf"):
-         print(f"pytesseract <- source :  {source}")
+         print(f"pymupdf4llm-c <- source :  {source}")
          result_txt = api.extract_text_to_file_from_pdf_document(source)
 
 
