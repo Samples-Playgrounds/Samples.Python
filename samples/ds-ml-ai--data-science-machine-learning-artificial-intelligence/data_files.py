@@ -6,16 +6,19 @@ root_sports_reports_lab_kif="/Users/Shared/Projects/d/hw/apps/Ph4ct3x/gl/Ph4ct3x
 
 #-----------------------------------------------------------------------------------------------------------------------
 # document per local path or URL
-files_private_kif_diagnostic = [
+files_documents_pdfs_kif_diagnostics_private = [
    f"{root_sports_reports_lab_kif}/201907/FINAL-REPORT-Lara-Cvjetko-2019-07.pdf",
    f"{root_sports_reports_lab_kif}/201809/FINAL-REPORT-Cvjetko-Lara-Judo-2018-09.pdf",
    f"{root_sports_reports_lab_kif}/201711/Lara Cvjetko-FINAL REPORT-Judo-2017-11.pdf",
 ]
 
-files_private_book_pdf = [
+
+
+
+files_documents_pdfs_kif_book_private = [
    f"{root_sports_book}/RUKOPIS_ver_Final.pdf",
 ]
-files_private_book_docx = [
+files_documents_docx_book_kif_private = [
    f"{root_sports_book}/doc_files/2. Testovi jakosti.docx",
    f"{root_sports_book}/doc_files/1. Uvod.docx",
    f"{root_sports_book}/doc_files/14. Literatura.docx",
@@ -34,7 +37,18 @@ files_private_book_docx = [
    f"{root_sports_book}/doc_files/8. Testovi fleksibilnosti.docx",
 ]
 
-files_private_strives_ai_pdf_tests = [
+files_documents_book_kif_private = [
+                                    *files_documents_docx_book_kif_private,
+                                    *files_documents_pdfs_kif_diagnostics_private,
+                                    *files_documents_pdfs_kif_book_private,
+                                 ]
+
+
+
+
+
+
+files_documents_pdfs_strives_ai_private = [
    "/Users/Shared/Projects/d/strives.ai/gitlab-private/strives.ai.business.data/docs/odabir-partnera/odabirrazvojnogpartnerazastrives_aiplatformu/Aether Signum proposal for Strives_Architecture.pdf",
    "/Users/Shared/Projects/d/strives.ai/gitlab-private/strives.ai.business.data/docs/odabir-partnera/odabirrazvojnogpartnerazastrives_aiplatformu/Notch proposal for Strives_AI_Architecture and Features.pdf",
    "/Users/Shared/Projects/d/strives.ai/gitlab-private/strives.ai.business.data/docs/odabir-partnera/odabirrazvojnogpartnerazastrives_aiplatformu/Notch proposal for Strives_Offer.pdf",
@@ -43,37 +57,24 @@ files_private_strives_ai_pdf_tests = [
    "/Users/Shared/Projects/d/strives.ai/gitlab-private/strives.ai.business.data/docs/odabir-partnera/odabirrazvojnogpartnerazastrives_aiplatformu/Profico proposal for Strives_Offer.pdf",
    "'/Users/Shared/Projects/d/strives.ai/gitlab-private/strives.ai.business.data/docs/Strives.ai_Fundraising Pitch 17032026.pdf'",
 ]
-files_private_strives_ai_docx_tests = [
+files_documents_docx_strives_ai_private = [
    # docx
    "/Users/Shared/Projects/d/strives.ai/gitlab-private/strives.ai.business.data/docs/odabir-partnera/Strives_AI_Overview_and_Requirements_v2 16032026.docx",
 ]
 
-files_private_strives_ai = [
-    files_private_strives_ai_pdf_tests,
-      files_private_strives_ai_docx_tests,
-]
+files_documents_strives_ai_private = [
+                                             *files_documents_pdfs_strives_ai_private,
+                                             *files_documents_docx_strives_ai_private,                                             
+                                          ]
 
 
 
-files_documents_pdfs_business_projects = [
+files_documents_pdfs_business_projects_private = [
    "/Users/Shared/Projects/d/hw/apps/gl/samples-playgrounds/HolisticWare.AddressBook.Private/docs/SPECIFIKACIJA ZADATKA L2.pdf",
    ]
 
-files_private_book = [
-                        *files_private_book_pdf,
-                        *files_private_book_docx,
-                     ]
 
-files_private = [
-                        *files_documents_pdfs_business_projects,
-                        *files_private_book,
-                        *files_private_kif_diagnostic,
-                        *files_private_strives_ai_pdf_tests,
-                        *files_private_strives_ai_docx_tests,
-                     ]
-
-
-files_documents_pdfs_legal = [
+files_documents_pdfs_legal_private = [
    "/Volumes/xFAT-1TB-2/e/personal-private/judo/HJS/01-pravno/DORH/02-kaznena-prijava-koraci/TODO/mails/20251201-03-czm-pravobraniteljica--odgovor-akcijski-plan/docs/MAIL_001119.pdf",
    "/Volumes/xFAT-1TB-2/e/personal-private/judo/HJS/01-pravno/DORH/02-kaznena-prijava-koraci/TODO/mails/20260399-11-uskok--jk-profectus-frlic/docs/Fwd: MIŠLJENJE: Odluka STK HJS o nastupu na SP za juniore Nassau, BAH.pdf",
    "/Volumes/xFAT-1TB-2/e/personal-private/judo/HJS/01-pravno/DORH/02-kaznena-prijava-koraci/TODO/mails/20260399-11-uskok--jk-profectus-frlic/docs/Ocitovanje o odluci STK HJS o nastupu na SP za juniore.pdf",
@@ -84,7 +85,8 @@ files_documents_pdfs_legal = [
    "/Volumes/xFAT-1TB-2/e/personal-private/judo/HJS/01-pravno/DORH/02-kaznena-prijava-koraci/TODO/mails/20260399-11-uskok--jk-profectus-frlic/docs/profectus-kaznena/ured-drzavne-uprave-jk-profectus-02.pdf",
 
    "/Users/moljac/Downloads/20250913/Zapisnik OS NZG K-226-2022-48 od 12.02.2024. - Nastavak glavne rasprave dana 12.02.2024. u 10_00 sati.pdf",
-
+]
+files_documents_pdfs_legal_public = [
    f"{root}/pravno/zakoni/zakon_o_sportskoj_inspekciji_nn_86_12.pdf",
    f"{root}/pravno/zakoni/kazneni-zakon.docx",
    f"{root}/pravno/zakoni/zakon-o-sportu-NN-19-16.pdf",
@@ -101,7 +103,7 @@ files_documents_pdfs_legal = [
    f"{root}/pravno/dokumenti/Rješenje - odbijanje zahtjeva Miljenko CVJETKO - 18.8.2025. .pdf",
 ]
 
-files_documents_pdfs_ebooks = [
+files_documents_pdfs_ebooks_public = [
    f"{root}/eBooks-main/current/maui/Enterprise-Application-Patterns-Using-.NET-MAUI.pdf",
    f"{root}/eBooks-main/current/xamarin-forms/Enterprise-Application-Patterns-using-XamarinForms.pdf",
    f"{root}/eBooks-main/current/azure-quick-start/Azure-Quick-Start-for-NET-Developers.pdf",
@@ -121,7 +123,7 @@ files_documents_pdfs_ebooks = [
    f"{root}/eBooks-main/current/modernize-desktop-apps/Modernize-Desktop-Apps-on-Windows-with-NET.pdf"
 ]
 
-files_documents_pdfs_cheat_sheets = [
+files_documents_pdfs_cheat_sheets_public = [
    f"{root}/cheat-sheets/cheat-sheet.pdf",
    f"{root}/cheat-sheets/cheat.pdf",
    f"{root}/cheat-sheets/SQL-Cheat-Sheet.pdf",
@@ -156,19 +158,19 @@ files_documents_pdfs_cheat_sheets = [
 #  "/Volumes/FAT_VERB/learning/books/topics/microsoft/architecture/adevelopersguidetonetinazure.pdf"
 #   "https://arxiv.org/pdf/2408.09869"
 
-files_documents_rtfs = [
+files_documents_rtfs_public = [
    f"{root}/microsoft/rtf/file-sample_1MB.rtf",
    f"{root}/microsoft/rtf/file-sample_300kB.rtf",
    f"{root}/microsoft/rtf/file-sample_100kB.rtf",
    f"{root}/microsoft/rtf/file-sample_500kB.rtf",
 ]
 
-files_documents_docs = [
+files_documents_docxs_public = [
    f"{root}/microsoft/word-docx-doc/file-sample_500kB.doc",
    f"{root}/microsoft/word-docx-doc/file-sample_1MB.doc",
    f"{root}/microsoft/word-docx-doc/file-sample_100kB.doc",
 ]
-files_documents_docxs = [
+files_documents_docxs_public = [
    f"{root}/pravno/zakoni/kazneni-zakon.docx",
    f"{root}/microsoft/word-docx-doc/NET 6.0 - ASP.NET Core Project Templates.Web.EN.docx",
    f"{root}/microsoft/word-docx-doc/visualStudioAsp.netTutorial.docx",
@@ -186,7 +188,7 @@ files_documents_docxs = [
    f"{root}/microsoft/word-docx-doc/NET MAUI VS Code Extension.Windows, Linux, Mac.WCAG_22.docx",
 ]
 
-files_documents_epubs = [
+files_documents_epubs_public = [
    f"{root}/eBooks-main/archives/microservices/NET-Microservices-Architecture-for-Containerized-NET-Applications-v1.epub",
    f"{root}/eBooks-main/archives/microservices/NET-Microservices-Architecture-for-Containerized-NET-Applications-v2.1.01.epub",
    f"{root}/eBooks-main/archives/microservices/NET-Microservices-Architecture-for-Containerized-NET-Applications-v2.2.0.epub",
@@ -256,15 +258,35 @@ youtube_video_ids = [
                      ]
 
 
+files_documents_private = [
+                        *files_documents_pdfs_business_projects_private,
+                        *files_documents_book_kif_private,
+                        *files_documents_pdfs_kif_diagnostics_private,
+                        *files_documents_strives_ai_private,
+                     ]
+
+
+
 files_documents_pdfs = \
-            files_documents_pdfs_ebooks \
+            files_documents_pdfs_business_projects_private \
             + \
-            files_documents_pdfs_legal
+            files_documents_pdfs_cheat_sheets_public \
+            + \
+            files_documents_pdfs_ebooks_public \
+            + \
+            files_documents_pdfs_legal_private \
+            + \
+            files_documents_pdfs_legal_public
+
+files_documents_public = \
+            files_documents_pdfs \
+            + \
+            files_documents_docxs_public
 
 files = \
-         files_private \
-         # + \
-         # files_documents_pdfs \
+         files_documents_private \
+         + \
+         files_documents_public \
          # + \
          # files_documents_docxs \
          # + \
@@ -277,4 +299,4 @@ files += [
 
 sources = files
 # only smaller documents for testing
-# sources = files_documents_pdfs_cheat_sheets
+# sources = files_documents_pdfs_privatecheat_sheets
