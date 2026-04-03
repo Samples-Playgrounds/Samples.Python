@@ -31,7 +31,7 @@ scriptpath = "../../../../../"
 sys.path.append(os.path.abspath(scriptpath))
 from data import *
 
-sources = files_documents_epubs
+sources = files_documents_epubs_public
 
 def main():
    for source in sources:
