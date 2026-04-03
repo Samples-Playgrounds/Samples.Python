@@ -10,7 +10,7 @@ ebooklib
 epub2txt
 kreuzberg
 marker
-# MarkItDown
+MarkItDown
 # textract
 # tika-python
 "
