@@ -1,0 +1,1450 @@
+Theoretical Computer Science Cheat Sheet
+
+Definitions Series
+
+f(n) = O(g(n)) iff 4 positive c,no such that n n n 9 9
+0< f(n) < cg(n) Yn > no. __ n(n+t) 2 nn+1)2n+1) 3 w(nt+))
+< f( )< g( ) =— No Soi 5 , d! 6 _ a a
+
+f(n) = Q(g(n)) iff 4 positive c,no such that =
+
+f(n) > cg(n) > 0 Yn > no. m general: ;
+1
+Fm =m) | Fim = Ow) md | Le= Tos [ine ym —1— (44 —m +ayi”)|
+f(n) = X(g(n)). - i=l
+f(r) =o(g(n)) | iff lim, 5x f(n)/g(n) = 0. Stim = 4 3 (" * ‘) Bynmti-k.
+lim a, =a iff Ve > 0, dno such that ‘=I k=0
+m—¥00 Geometric series:
+
+lan — al <€, Vn > no. ntl — 4 =
+
+= F 1 F Cc
+sup S least b € R such that b > s, ) c- 1” c#l, i ert a ert le] <1,
+Vs ES. =0 i=l
+n+2 __ n+l Oo
+inf S greatest b € R such that b < ic = ning hee c#1, Sic’ = —< x lel <l.
+s, Vs ES. : (c— 1) = (1 —c)
+noo noo .
+N—> OO N70
+
+(7) Combinations: Size k sub-
+sets of a size n set.
+
+Stirling numbers (1st kind):
+Arrangements of an n ele-
+ment set into k cycles.
+
+Stirling numbers (2nd kind):
+Partitions of an n element
+set into / non-empty sets.
+
+lst order Eulerian numbers:
+Permutations 7179... on
+{1,2,...,n} with k ascents.
+
+Ch Catalan Numbers: Binary
+trees with n+ 1 vertices.
+n
+
+n _— an n n+
+7 0 otherwise 20. Ci) sean d, a. CG) = Sh (n+ dah ( 2)’
+“./n\ (x+k n “(n+l k n “/n k;
+28. ©" = 29. = 1—k)"(-1 30. m! =
+on): (in) = 2a (Jom tren nt = en =m
+
+k;
+Theoretical Computer Science Cheat Sheet
+
+Master method:
+T(n) = aT'(n/b) + f(n),
+
+If de > 0 such that f(n) = O(n! 4~*)
+then
+
+a>1,b>1
+
+T(n) = O(n! *),
+
+If f(n) = O(n'°8%) then
+T(n) = O(n!8* log, n).
+
+If de > O such that f(n) = O(n!8 2t¢),
+and dc < 1 such that af(n/b) < cf(n)
+for large n, then
+
+T(n) = O(f(n)).
+
+Substitution (example): Consider the
+following recurrence
+
+Ti41 = 2? -T?, T, =2.
+
+Note that T; is always a power of two.
+Let t; = log, Tj. Then we have
+Ci4d = 2'°42t;,, ty =1.
+
+Let u; = t,;/2’. Dividing both sides of
+the previous equation by 2't+! we get
+Ci4d _ 2’ ti
+Ji+1 ~ 9i+1 1 90°
+Substituting we find
+
+1
+Uit1 = 7 TU, Ul= 35;
+
+which is simply u; = 1/2. So we find
+that T; has the closed form T; = 2°".
+Summing factors (example): Consider
+the following recurrence
+
+T(n) = 3T(n/2)+n, T(1)=1.
+
+Rewrite so that all terms involving T'
+are on the left side
+T(n) — 387 (n/2) = n.
+
+Now expand the recurrence, and choose
+a factor which makes the left side “tele-
+scope”
+
+Identities Cont.
+
+1(T'(n) — 3T(n/2) = n)
+3(T (n/2) — 3T(n/4) = n/2)
+
+giese"—1(T(2) — 3T(1) = 2)
+Let m = loggn. Summing the left side
+we get T(n) — 377(1) = T(n) — 3” =
+T(n) — n® where k = logs3 & 1.58496.
+Summing the right side we get
+
+m-1 m-1
+
+nS? (3):
+
+= 2n(c'°e2” — 1)
+_— An(clP-Y) log.n _ 1)
+= Ink — 2n,
+and so T(n) = 3n* — 2n. Full history re-
+
+currences can often be changed to limited
+
+history ones (example): Consider
+i-1
+
+T,=14+507;, To=1.
+j=0
+
+Note that
+
+Tia =1+ S07).
+j=0
+
+Subtracting we find
+
+a a—1
+Ti —T =14+ 5 07;-1-JS0T;
+j=0 j=0
+= Tj.
+And so Th41 = 27; = girl.
+
++n mtk
++k k
+
+‘Trees
+
+Every tree with n
+vertices has n — 1
+edges.
+
+Kraft inequal-
+ity: If the depths
+of the leaves of
+a binary tree are
+dy, sey dy:
+
+2 <1,
+i=1
+
+and equality holds
+only if every in-
+ternal node has 2
+sons.
+
+forn >m,
+
+pall
+
+Generating functions:
+. Multiply both sides of the equa-
+tion by 2’.
+. Sum both sides over all 2 for
+which the equation is valid.
+. Choose a_ generating function
+G(a). Usually G(x) = S725 "gi.
+. Rewrite the equation in terms of
+the generating function G(z).
+. Solve for G(x).
+. The coefficient of x’ in G(x) is gj.
+Example:
+
+Gi41 =29g:+1, go =0.
+
+Multiply and sum:
+
+So gigi" = S- 29,2" + Soa.
+
+i>0 i>0 i>0
+
+We choose G(x) = >.) x"gi. Rewrite
+in terms of G(x): 7
+
+i>0
+Simplify:
+2G(ax) +
+
+© l-x
+Solve for G(x):
+G(x) =
+
+(l= 2)(1 = 22)’
+
+Expand this using partial fractions:
+
+Ge) =«(- >)
+
+=a [20 2a! Soe
+
+i>0 i>0
+
+_ So (2itt —1)ait),
+
+i>0
+
+So g; = 2° — 1.
+
+Theoretical Computer Science Cheat Sheet
+
+m = 3.14159, e © 2.71828, y = 0.57721, o= 1+v5 ~ 1.61803,
+
+a Probably
+
+Bernoulli Numbers (B; = °, odd iF 1): Continuous distributions: If
+_ _ _ __1 b
+Bo = 1, Bi = —3, Bo = §, Ba = — 35; Prla<X <8)= [ ple)dr.
+
+Be = 1 By = -4, Bo =%. ys ; .
+Change of base, quadratic formula: one is the probability density function of
+
+~b= vot dac PrLX <a] = P(a),
+2a
+
+16
+32
+64
+
+then P is the distribution function of X. If
+
+Oo BdaOnn oF W WHY FI] ~w.
+
+128 Euler's number C: , 4 ; P and p both exist then
+256 ne ee a
+19 P(a) = p(x) dx.
+
+n—- co
+
+(1+ +)" cee (id
+
+n e€ lle 1
+1++) =e—-— —-O|-—}).
+(1+) ~~ On r 24n? (=)
+
+Expectation: If X is discrete
+
+= S- g(x) Pr[X =
+
+1,024
+2,048
+4,096
+
+apt
+
+If X continuous then
+8,192 Harmonic numbers: Elg(X)] = ~ (x)p(a) dx = ~ (x) dP(x)
+16,384 1 25 137 49 363 761 7129 J _ Ie _J
+15, @o 60? 20? 140° 280° 2520°°°° —
+
+32,768 Variance, standard deviation:
+
+65,536 Inn < Hy <Inn +1, VAR[X] = E[X*] — E[X]’,
+
+131,072 1
+
+ny =n 40(2) VARIN]
+
+262,144 n For events A and B:
+
+524,288 Factorial, Stirling’s approximation: Pr[A V B] = Pr[A] + Pr[B] — Pr[A A B]
+1,048,576 1, 2, 6, 24, 120, 720, 5040, 40320, 362880, ... Pr[A A B] = Pr[A] - Pr[B],
+
+2,097,152
+4,194,304
+8,388,608
+16,777,216
+33,554,432
+67,108,864
+
+iff A and B are independent.
+
+n! = mn(*) (1 +0(<)). pr[Ajp) — PMA ABI
+
+Ackermann’s function and inverse: Pr|B]
+oy i=1 For random variables X and Y:
+
+a(i — 1,2) j=l E[X - Y] = E[X]- E[Y],
+a(i—l,a(t,j-—1)) 14,9 >2 if X and Y are independent.
+
+134,217,728 a(i) = min{j | a(j, 7) > i}. E[X + Y] = E[X] + EY],
+X|= X |.
+268,435,456 Binomial Cistri bution: BlcX] = cE[X]
+536.870.912 k , Bayes’ theorem:
+73,741,824 pe gee Py[4,|B) = —PrlBlAil Pela
+daj=1 Pr[Ay] Pr[BlA5]
+
+2,147 ,483,648 | —
+= Np. Inclusion-exclusion:
+
+4,294,967 ,296 bal
+
+Pascal’s Triangle Poisson distribution: Pr VX: = S_ Prix +
+e “YX i=1 i=1
+
+1 Pr[X = k] = E|X] = 4. n
+
+kl? . k
++1 .
+il Normal (Gaussian) distribution: dV) » Pr /\ Xi).
+121 1 | 2 1992 k=2 ig<e <p j=l
+rt) = e WUE) 140" BX | = ps. M t 1 lities:
+1331 p(x) Jana | bh oment Inequalities
+14641 The “coupon collector”: We are given a Pr [|X| > AE[X]] < 7
+15101051 random coupon each day, and there are n ,
+different types of coupons. The distribu- Pr |X — BX ]| >A-o) <s.
+1615201561 | ao 2
+tion of coupons is uniform. The expected fe tric distribution:
+17 21 35 35 21 7 1 number of days to pass before we to col- COMORES Sen et
+PrX=kl=pq’, gq=1-p,
+
+1 8 28 56 70 56 28 8 1 lect all n types is :
+1 9 36 84 126 126 84 3691 ny. EX] = S~ kpg'
+1 10 45 120 210 252 210 120 45 10 1
+
+Theoretical Computer Science Cheat Sheet
+
+C
+
+Multiplication:
+
+0,1 —
+( ) C=A-B, Ci, j = So aindr,;. b a
+(cos 6, sin 0) k=1 h
+_ Determinants: det A ¥ 0 iff A is non-singular.
+(1,0) A C B
+det A: B = det A- det B, Law of cosines:
+n 2 2, 72
+= b“—2abcosC.
+det A = S- II sign(7)@;,7(i)- oaar me 08
+~ Area:
+Pythagorean theorem: x t=1
+C2 = A? + B?. 2 x 2 and 3 x 3 determinant:
+
+Definitions: d = ad — be, = gabsinC,
+sina= A/C, cosa= B/C, 1 be , , sin Asin B
+csca=C/A, seca=C/B, de fl=g Cl pf €]. 5/4 — osnc
+
+sin a A cosa B h e f df de Heron’s formula:
+tana = =—, cota=— = —, g b
+cosa B sina A
+
+_ aei + bfg+cdh
+7 —ceg — fha — ibd. A= \/8° 8a" 8b° Se;
+
+Area, radius of inscribed circle:
+
+1 AB, _ AB Permanents: 5 = 5(a +b+c),
+2 A+B+C n _
+Sg=s—a,
+Identities: perm A = » I] Cim(i)- s, —s—b
+wT i=1 b= 8 ?
+sinxz = csc a’ cost = Hyperbolic Functions Se =S-C.
+tang — l sin? x + cos? 2 = 1 Definitions: More identities:
+1+ tan? x = sec? x, 1+ cot? x = csc’ g, 20 20 | m2 V 2
+
+x
+
+e” —e_ 1
+tanhz = ————_, cschx = — , + 1+cosz
+ex it e— sinh x COS 5 5 ;
+
+sin = cos (3 — 2), sinx = sin(a — 2),
+
+sech a = , cothx = ;
+cosh x tanh x + ‘pe
+tan 3 =
+Identities: 1+ cosz
+
+cos x = —cos(m — 2), tanz = cot (%—2),
+
+cot x = —cot(m — 2), csc x = cot § — cot 2, L— cos
+2 - 12 2 2 = —___
+. cosh* x — sinh“ x = 1, tanh” x + sech* x = 1, sing”?
+sin(x + y) = sinxcosy +cosxsiny, sin 7
+coth? x — esch* « = 1, sinh(—x) = — sinha, = ——_
+cos(x + y) = cosxcosy F sin x sin y, 1+ cos x
+tana ttany cosh(—x) = cosh, tanh(—ax) = —tanhz, . 1+ cosz
+tan(a@ + = —__ cots = ——
+ey) 1+ tanztany sinh(a + y) = sinh x cosh y + cosh a sinh y, / : COS ©
+COS &
+cot x cot 1 — ___
+cot(a@ ty) = ——, cosh(a + y) = coshaz cosh y + sinh x sinh y, sin x
+cot x + cot y ;
+2tan x sinh 2x = 2sinh x cosh x -—*
+sin 2x7 = 2sinx cosa, sin 22 = ————, _ 1—
+1+ tan? x 5 ; . ae
+cos 2a = cos? x — sin? x, cos 2a = 2cos? x — 1, cosh 2¢ = cosh" x + sinh’ g, sinx = oe 7 ,
+a
+1 —tan?2 coshz + sinhx = e”, cosha —sinhx=e “, ix se
+cos 2% = 1 — 2sin? x, Cos 2% = -— costae +e
+" “we (cosha + sinha)” =coshnaz+sinhnz, ne Z, 2
+2tanx cot x —1 ix ,—iax
+tan 20 = 2 ,,° cot 2% = 2sinh? 2 = coshz —1 2 cosh? = = coshx+1 tan x = ~j;—_<_,
+1 — tan* x 2 cot x 27 ’ 2 . e7 te
+
+sin(a2 + y) sin(x — y) = sin? x — sin? y,
+
+d sin@ cosé@ tané ...1n mathematics ay,
+cos(x + y) cos(x — y) = cos? x — sin? y. 0 1 you don’t under-
+, ; stand things, you
+Euler’s equation: us ;
+iz a in 6 just get used to
+e” =cosx+7sinz, ee" =-—l. n
+7 them.
+v2.02 ©1994 by Steve Seiden © — J. von Neumann
+sseiden@acm.org 3
+2
+
+http://www.csc.1lsu.edu/~seiden
+Theoretical Computer Science Cheat Sheet
+Number ‘Theory
+
+Graph Theory
+
+Definitions: Notation:
+
+The Chinese remainder theorem: There ex-
+
+ists a number C’ such that:
+
+C=r, modmy,
+
+C=r,modm,
+
+ifm; and m; are relatively prime for 7 ¥ 7.
+
+Euler’s function: (2) is the number of
+positive integers less than wz relatively
+prime to x. If [];__, p5* is the prime fac-
+torization of x then
+
+oa) =] [pe @ - 0).
+
+Euler’s theorem: If a and 6 are relatively
+prime then
+1 = a? mod b.
+
+Fermat’s theorem:
+= a?" mod p.
+
+The Euclidean algorithm: if a > 6 are in-
+tegers then
+ecd(a, b) = gcd(a mod 8, b).
+
+If [],_, p;* is the prime factorization of x
+
+then
+nr ej +1 _ 1
+
+S(x) = Sod _yj%
+d|
+
+i=1 pil
+
+Perfect Numbers: x is an even perfect num-
+ber iff 2 = 2"~1(2”—1) and 2” —1 is prime.
+Wilson’s theorem: n is a prime iff
+(n — 1)! = —1 mod n.
+Mobius inversion:
+1 if7=1.
+if 7 is not square-free.
+if 7 is the product of
+r distinct primes.
+
+Ga) = FO),
+
+dla
+
+then
+
+F(a) = Yn(@)G (5).
+dla
+
+Prime numbers:
+
+Inlnn
+Dn =NInn+ninInn-—n+n
+
+ro().
+Inn
+n n 2!'n
+
+Inn r (Inn)? r (Inn)?
+
++(e)
+
+Inn
+
+Loop An edge connecting a ver-
+tex to itself.
+
+Directed
+
+Simple
+
+Each edge has a direction.
+Graph with no loops or
+multi-edges.
+
+Walk A sequence Upe1 U1... €¢Ue.
+Trail A walk with distinct edges.
+Path A trail with distinct
+vertices.
+
+A graph where there exists
+a path between any two
+vertices.
+
+Connected
+
+A maximal connected
+subgraph.
+
+A connected acyclic graph.
+A tree with no root.
+Directed acyclic graph.
+Graph with a trail visiting
+
+each edge exactly once.
+
+Component
+
+Tree
+Free tree
+DAG
+Eulerian
+
+Hamiltonian Graph with a cycle visiting
+each vertex exactly once.
+
+Cut A set of edges whose re-
+moval increases the num-
+ber of components.
+
+Cut-set A minimal cut.
+
+Cut edge A size 1 cut.
+
+k-Connected A graph connected with
+
+the removal of any k — 1
+
+vertices.
+
+VS C V,S 4 @ we have
+
+k-c(G—S) < |S}.
+
+A graph where all vertices
+
+have degree k.
+
+k- Factor A k-regular
+
+subgraph.
+
+A set of edges, no two of
+
+which are adjacent.
+
+k- Tough
+
+k-Regular
+spanning
+Matching
+
+A set of vertices, all of
+which are adjacent.
+
+Clique
+
+Ind. set A set of vertices, none of
+
+which are adjacent.
+
+Vertex cover A set of vertices which
+cover all edges.
+
+Planar graph A graph which can be em-
+beded in the plane.
+
+Plane graph An embedding of a planar
+graph.
+
+S- deg(v) = 2m.
+vEV
+If G is planar then n — m+ f = 2, so
+f<2n-—4, m<3n-6.
+Any planar graph has a vertex with de-
+gree <5.
+
+E(G)
+V(G)
+c(G)
+GS]
+deg(v)
+
+Edge set
+
+Vertex set
+
+Number of components
+Induced subgraph
+Degree of v
+
+Maximum degree
+Minimum degree
+
+Chromatic number
+
+Edge chromatic number
+Complement graph
+Complete graph
+Complete bipartite graph
+Ramsey number
+
+Projective coordinates: triples
+
+(x,y,z), not all x, y and z zero.
+(x,y, 2) = (cx, cy,cz) Ve #0.
+
+Cartesian Projective
+
+(x, y) (x,y, 1)
+
+y=mr+b (m,-—1,))
+
+L=C (1,0, —c)
+
+Distance formula, L, and Lo&
+
+metric:
+
+(v1 — %)? + (yi — Yo)?,
+
+lai — vol? + ly — yol?|!”,
+yi”.
+
+lim ||a1 — aol? + |y1 — yol”
+poo
+
+Area of triangle (x0, yo), (@1, Y1)
+and (x2, y2):
+t1 — XO
+2 — XO
+
+Y1 — Yo
+Y2 — Yo
+Angle formed by three points:
+
+(x2, y2)
+C3
+au
+(0,0) ¢: = (a1, 41)
+(v1, 1) - (2, y2)
+Ly bo
+Line through two points (20, yo)
+and (#1, 1):
+x y 1
+Zo Yo 1} =0.
+m1 ys it
+Area of circle, volume of sphere:
+
+A=nr’, V= far’.
+
+cos @ =
+
+If I have seen farther than others,
+it is because I have stood on the
+shoulders of giants.
+
+— Issac Newton
+
+Theoretical Computer Science Cheat Sheet
+
+Wallis’ identity:
+2.2-4-4-6-6--:
+
+—9.,2 27
+" 1-3-3-5-5-7---
+
+Brouncker’s continued fraction expansion:
+2
+
+palto 32
+
+24+“
+2+ yi
+
+Gregrory’s series:
+mo—y7e—isytl_lisztl_...
+zal 3 t5 TT 9
+
+Newton’s series:
+
+Sharp’s series:
+
+L(1- a
+6 VB 31-3 32-5 38.
+
+Euler’s series:
+
+|
+-~ +
+Ye Qe YE
+-~ +
+ee eae
+-~ +
+
+| |
+|
+
++ + +
+ns ee
+|
+
++ + +
+Se ee
+
+ale AAS AA.
+|
+Me GR eR
+
+Partial Fractions
+
+Let N(x) and D(x) be polynomial func-
+tions of @. We can break down
+N(a)/D(a) using partial fraction expan-
+sion. First, if the degree of N is greater
+than or equal to the degree of D, divide
+N by D, vane Ha)
+
+N(a N'(a@
+
+Dia) > Q(x) + Din)’
+where the degree of N’ is less than that of
+D. Second, factor D(x). Use the follow-
+ing rules: For a non-repeated factor:
+
+N(x) A N'(ax)
+
+(x—a)D(x) x—-a D(x)’
+
+where
+
+a= [5G].
+
+For a repeated factor:
+(2 — a)” D(x)
+
+k=0
+
+1 [a (Nw)
+
+KY L dak \ D(x) / }
+
+The reasonable man adapts himself to the
+world; the unreasonable persists in trying
+to adapt the world to himself. Therefore
+
+all progress depends on the unreasonable.
+— George Bernard Shaw
+
+Ax
+
+Ak
+
+Derivatives:
+d(cu)
+1.
+dx
+d(u™)
+4, ———_— =
+dx
+
+13.
+
+15.
+dx
+
+17.
+dx
+
+19.
+dx
+
+21.
+dx
+
+23.
+dx
+
+25.
+da
+
+27.
+da
+
+29.
+dx
+
+31.
+dx
+
+Integrals:
+
+1. [evade =e f ude,
+
+1
+3. fe dx = ght
+
+6
+
+8
+
+sec x dx = In|seca + tana],
+
+arcsin =dx = arcsin = + Va? — 2,
+
+= C—
+dx’
+
+d(arcsin wu)
+d(arctanu) ——s 1
+d(arcsec u) 1
+d(sinh w)
+d(tanh w)
+d(sech u)
+d(arcsinh wu) 1
+d(arctanh u) 1
+
+d(arcsech wu)
+
+sinxdx = — cosa,
+
+/ dx
+" 1+ x?
+
+du 5 d(u+v) du | dv
+" dx dx dt’
+< Mujr) _ o(4t) —u( 4
+dx
+
+du
+
+n-1la
+
+dx’
+
+du
+14. = — cotu cscu—,
+
+dx dx
+_ —l1 adu
+— /T— uP? dx’
+
+d(arccos u)
+
+16.
+dx
+
+du d(arccotu) — —1 du
+1+ u? dx’ dx 1+u? dx’
+
+_ du 30. d(arccsc u) _ i du
+uV1 —u2 dx’ da uV1 —u2 dx’
+
+du d(cosh u U
+
+= cosh u= . aeosw) = sinh wu,
+= sech? ue 24. acon) = — sch? ue
+26. d(esch tw) = — cschu coth unt,
+dx. dx
+d(arccoshu) _ 1 du
+dx Juz —1 dx’
+
+30. d(arccoth wu) __ i du
+dx u2 — 1 da’
+d(arceschu) _ —] du
+da ul (TF 0? dev’
+
+dx
+2. [twrvjde= fader | vac,
+1
+. | cavemen, 5. [eanre
+x
+dv du
+7. [Zar = w= fv Zar,
+
+9. [cosa = sinz,
+
+18.
+
+= — sechu tanh yt
+dx
+
+_ du
+VT Fee da’
+du
+~ 1 — ue da’
+_ —] du
+7 uf/l—u dz’
+
+28.
+
+32.
+
+—|l
+
+= arctan %,
+
+= —In| cosa], 11. [ cotrde = In cosa
+13. [ cscarde = In ese + cota,
+
+a> 0,
+Theoretical Computer Science Cheat Sheet
+Calculus Cont.
+
+15. | arccos {dz = arccos = — Va? —2?, a>Q0, 16. [ evetan “dx = x arctan = — £ In(a? +27), a>O,
+17. | sin*(ax)dx = + (ax — sin(az) cos(az)), 18. [ cos*(ax)aex = = (ax + sin(azx) cos(az)),
+19. sec? «dx = tana, 20. [ose xdx = — cota,
+, sin”-'acosa n—1 . n—2 cos”"!xsinzg n-1 9
+21 sin” «dx = ————_. + [swe x dx, 22. [ cos" x dx = ————————_ + [cos x dx,
+n n n n
+n tan” la n—2 n cot” lx n—2
+23. | tan” cdxr = a a tan” “axdz, n#l, 24. | cot’ xdzr = a cot xdz, n#1,
+n— n—
+t not —2
+25. sec” 1 dx = —_en + “a * [sco xdz, n#1,
+n—-1 n—-1
+
+cot x esc”! x n—2
+
+i [osc ade, nA#1, 27. [suede =coshz, 28. [costae = sinh x,
+
+n—l n—
+
+)
+
+tanh x dx =In|coshz|, 30. [coth.xae =In|sinhz|, 31. [ sechedx =arctansinhz, 32. [csche dr = In |tanh $
+sinh? «dx = 4 sinh(2x) — $2, 34. [ cost! vdx = +sinh(2zx) + $2, 35. [ sect? xdx = tanhz,
+
+arcsinh dx = x arcsinh = — Va2?+a?, a>0, 37. [ exctanh dx = xarctanh = + $ In ja? — «|,
+
+x ,
+x arccosh — — a? +a?, if arccosh = > 0 anda > 0,
+arccosh =dx = a
+a x .
+x arccosh — + Va?+a?, if arccosh = < 0 anda > 0,
+a
+
+da
+
+2 .
+= + arctan 4, a > 0, a. | VP ae = 5 a*— a? + Sarcsin=, a>Q0,
+
+=In(x+ +2?) a> 0,
+
+A2. [@ — x?)3/2 da = £ (5a? — 2x7) Va? — 2? + 3a" arcsin=, a> 0,
+
+43 de in=, a>0 44 / ae ty
+e S—sSTT—_ >= a csl1n = a e OT oT It
+ae — x2 a” a*—x? 2a
+
+A6. [Vee Pa = 3VP EP 4S info a2 + x?
+x
+
+a8. [ del
+
+; ax2+br a at bx
+
+50, [OE ae = 2Varbe +a |
+x
+
+[=
+
+. ——— dr =
+x
+
+at+az
+a-—-2x
+
+AS dx _ x
+: | (@— 2 BP Vea a
+
+= In|x + x? — a?
+
+, a>QJ,
+
+av. | dx
+: | Vee
+
+2(3ba — 2 3/2
+. A9. [verter eee
+| Vat ba—/a
+
+1 x
+dy, 51. | 2dr = =n |e ve
+rVat bx l= V2 |Vatbre+ Ja
+Jd ad
+arva 7x , 53. [eve _ 2dr = —1(a? — x7)3/2,
+x
+
+a+ Va? — x?
+
+X
+
+, a>QJ,
+
+a2 — x2 —aln
+
+—1in
+a
+
+)
+
+4 °
+54. [Vb de = (20° ~ 0?) a? —a*+arcsin=, a>0,
+
+x dx
+
+; Jeon
+S72 D}
+58. [we ver ean
+x
+
+60. [we +a? dx = $(x* + g2)3/?
+
+dx
+55. —_—_—_—— =>
+/ Jaz — x?
+
+2 .
+a? — x7, —5Va?—a*+Sarcsin= a>Q0,
+
+2
+st. | 5 -
+\/az — x2
+
+Sn 5 Spd 72
+ar vate 59. [ite = VP 8 ~ a arc008 1, a> 0,
+x x
+
+lar]?
+
+)
+
+dx x
+61. | ——— = !))|/
+= @ a+ Va? + x?
+Theoretical Computer Science Cheat Sheet
+Calculus Cont. Finite Calculus
+
+= = +arccos 4 Iz]?
+
+=V2r2+a?,
+
+x
+. —___ a> 0,
+f rv x2 — a?
+x dx
+
+Jmta + qa?
+
+2ax + b — Vb? — 4ac
+" 2ax +b + Vb? — 4ac
+2ax + b
+V4ac — 0?’
+
+dx _ b2 — dac
+ax? + ba+e
+
+2
+/4ac — b?
+1
+— |
+Ta n
+
+aa + bx +e — arcs]ln
+
+2 b
+4a
+
+x dx
+
+Jax? +br +e a
+
+7
+
+rVax? +ba +e
+
+arcsin
+
+1
+V—-c
+; [eve + a? dx = (427 — 2a’)(2?
+
+arctan
+
+Vax? +ba+e
+
+24 q2
+65. | ar = +
+
+—2ax — b
+b2
+
+bx + 2c
+|| /b2 — dac’
+
+4 a2)3/2
+
+9
+— dac
+
+Aax — b? dx
+ax? + ba + ce + ———
+
+dx _ Vx? + a?
+
+a?x
+ye a?)3/2
+3a2x3
+
+v2 x7 + a?
+
+if b? > 4ac,
+
+if b? < 4ac,
+
+ax2+br+ec|, ifa>0,
+
+ifa <0,
+
+8a Vax? + bx +e
+
+| Vax? + bx +c
+=a 2/ceVax? + bx +c+ bax + 2c
+nN ES
+
+, ifc>QJ,
+
+ifc <0,
+
+; fe sin(ax) dx = —+2x" cos(ax) + fem cos(ax) dx,
+
+x” cos(ax) dx = +2” sin(ax) —
+
+— ge + ah
+
+2+ 3024 ct
+
+— 4+ 622+ 7x24 xt
+5 924+ 1544 2572+ 1022+ xt
+
+= at
+
+_ 72 +g)
+
+— x? + 327 + 22!
+
+4 x* + 6x? + 112? + 62!
+
+>= 9g? + 10+ 4+ 3523 + 50x? + 2421
+
+efor sin(ax) dx,
+
+a? — 3x2 + at
+at — 623 + 7x? — xt
+x — 1544 + a ~ 10x? 4 at
+
+at
+
+xe? — x!
+xv? — 3x2 + 27!
+
+x* — 6x? + 112? — 62!
+
+x” — 1004 + 35a? — 50x? + 2421
+
+Difference, shift operators:
+
+Af (x) = f(z~+1)— f(x),
+E f(x) = f(a+1).
+Fundamental Theorem:
+f(z) yes? {te oa = F(x) +C.
+
+pla
+
+Differences:
+
+A(cu) = cAu, A(u+v) = Au+ Ay,
+A(uv) = uAv+ EvAu,
+
+A(x2®) = nx},
+
+A(H,) = «=, A(2*) = 2°,
+A(ct) = (e— 1)e* ACh) = Gnas)
+Sums:
+
+Si cudz =c) uoda,
+
+So(u+v) da = So uda+ So voa,
+
+Si uAv oa = uv — >> EvAu da,
+
+yo v2 6x = —, Saba = H.
+Seton, O(Zbr= (5)
+
+Falling Factorial Powers:
+
+ct#=a(a—1)---(a—-n+4+1), n>0,
+ge =
+n 1
+Gt) etm "S
+ghtm — 7™@(¢ — m)#.
+Rising Factorial Powers:
+a” =a(a+1)---(2+n—-1), n>0,
+x = 1,
+a 1
+"Gem "<"
+grt™ = x ™ae +m)".
+Conversion:
+a = (-1)"(—2)" = (a@—n+1)"
+=1/(a+1)"
+x” = (-1)"(-a)* = (4 +n-1)
+
+>
+k=1 k=1
+Theoretical Computer Science Cheat Sheet
+
+Taylor’s series:
+
+Expansions:
+
+1-2-2?
+
+Fa
+
+1— (Fn—-1 + Fy4i)x —_ (—1)"a?
+
+=l+artarttartatt---
+
+=lt+ert+ cr? +cr?+---
+
+x + Qe? + 30° + 4a4* +...
+
+L+a+ 5a? 4+ ea%4+--
+
+—», _ 1,3 1,5 #1
+= 2 30 + Fx
+
+n+2
+
+=14+(n+1)x+ ( 3 jar +e.
+
+=1-$2+ 52° a
+
+12% — 720
+
+=l+ae42¢7+5r34+---.
+
+—=14+2x7+ 6x? + 2022 +---
+
+4+n
+
+=14+(24+n)a+ (*5")a?4+---
+
+oe Bp 4p Wy d 4 Bod...
+SET BU Ge Te +
+
+= hott fo 4 Hot
+=xt+a74+27°+3at4+---
+
+= Fux t+ Fon x? + F3n23 +---
+
+Ordinary power series:
+
+A(x) = 3 aja”.
+i=0
+
+Exponential power series:
+
+i=0 ;
+
+Dirichlet power series:
+oe) A;
+t=1
+
+Binomial theorem:
+
++=
+k=0
+
+Difference of like powers:
+
+n—-1
+k=0
+
+For ordinary power series:
+
+CO
+
+a A(x) + 8B(0) = Y (oa; + Bbi)a"
+
+7=0
+
+CoO
+a® A(x) = S- Aiken’,
+i=k
+
+A'(a) = Sri + Vaisre",
+
+i=0
+CO
+rA'(x) = So ia’,
+i=l
+
+CO
+
+[Aw da =\~ Sel,
+
+w=1
+
+)
+
+A(x) + A(—2) = 25
+——; = 2, mit
+
+A(x) — A(—x — P
+1A Feat
+
+Summation: If b; = 0 a; then
+
+Convolution:
+CO
+
+A(x) B(x) = 5° So aj; a.
+
+i=0 \j=0
+
+God made the natural numbers;
+all the rest is the work of man.
+— Leopold Kronecker
+
+Theoretical Computer Science Cheat Sheet
+
+Expansions:
+
+nein +
+
+a
+’
+
+co 9t/2 gin Tr
+
+a)
+
+i=1
+1-2 ~ (47)! .
+© — 16%/2(2i)!(2i + 1)!
+
+arcsina \* Ari! .
+© <= (i+ 1)(Qi+ 1)!
+Cramer’s Rule
+If we have equations:
+01,101 + 01,9%2 +++++A1 nF = 01
+
+2,101 + A2,2%2 +++: +42 n%n = be
+
+An,101 + An,2X2 i Anntn = Dn
+
+Let A = (a;,;) and B be the column matrix (b;). Then
+there is a unique solution iff det A ~ 0. Let A; be A
+with column 7 replaced by B. Then
+
+wi det A-
+
+Improvement makes strait roads, but the crooked
+roads without Improvement, are roads of Genius.
+— William Blake (The Marriage of Heaven and Hell)
+
+Stieltjes Integration
+
+If G is continuous in the interval [a,b] and F is nondecreasing then
+
+b
+exists. Ifa <b<c then
+
+[ ware = [ care +
+
+If the integrals involved exist
+
+[ico )+ A(x = [ow )dF (x
+
+[son hee ) dF (x
+
+[ee fe G(x) d(c- F(x)) =c¢ | * G(e) dF (2),
+b
+
+im G(x) dF(«x) = G(b)F(b) — G(a) F(a) — / F(x) dG(a).
+
+If the integrals involved exist, and F’ possesses a derivative F” at every
+point in [a,b] then
+
+fe G(x) dF (a y= fro G(x) F(a
+Fibonacci Numbers
+
+1,1, 2,3,5,8, 13, 21,34, 55,89,...
+Definitions:
+Fe=Fi-ith-2, fo= hi =1,
+F_j=(-1)'"F,
+Cassini’s identity: for 7 > 0:
+Fy4i Fi 1 F? = (— 1)’.
+
+The Fibonacci number system: Additive rule:
+
+Every integer n has a unique Png k = FRE nga + Pr-ifn,
+representation Fy, = Fy Pasi + Fy-iF hn.
+n= Fe, + Fey +--+ + Fr, 5 Calculation by matrices:
+
+where kj > kj41 + 2 for all 2, F->5 ) «6~F,-1 0 1\"
+1<i<mand kp > 2. Fi. F, ) \1 1

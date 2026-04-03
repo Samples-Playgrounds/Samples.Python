@@ -1,0 +1,159 @@
+Git Cheat Sheet
+GitLab
+01 Git configuration
+git config - global
+Set the name that will be attached to your commits and tags.
+git rm [file]
+Remove file from working directory and staging area.
+user.name "Your Name"
+git config --global
+Set the e-mail address that will be attached to your commits
+user.email "you@example. and tags.
+04 Storing
+work
+com"
+your
+git config --global
+git stash
+Put current changes in your working directory into stash for
+color.ui auto
+Enable some colorization of Git output.
+later use.
+git stash pop
+Apply stored stash contenti into working directory, and clear
+stash.
+02 Starting a project
+git stash drop
+Delete as specific stash from all your previous stashes.
+Create a new local repository in the current directory. If
+git init [project name] [project name] is provided, Git will create a new directory
+named [projectr name] and will initialize ar repositoryi inside it.
+05 Git branching model
+Downloads a project with the entire history from the remote
+branch
+List all local branchesi in repository. With -a: show all branches
+git clone <project url>
+git
+[-a]
+(with remote).
+repository.
+git branch [branch_name] Create new branch, referencing the current HEAD.
+03 Day-to-day work
+Apply commits of the current working branch and apply them
+git rebase [branch_name] to the HEAD of [branch] to make the history of your branch
+morel linear.
+Displays the status of your working directory. Options include
+git status
+new, staged, and modified files. It will retrievel branch name,
+git checkout [-b]
+Switch working directory to the specified branch. With -b: Git
+current commiti identifier, and changes pending commit.
+[branch_name]
+will create the specified branchi ifit does not exist.
+Add af file to the staging area. Use. in place off the full file path
+git merge [branch_name] Join specified [branch_name] branch into your current branch
+git add [file]
+to add all changed files from the current directory down into
+(the one you are on currently).
+the directory tree.
+git branch -d [branch_ Remove selected branch, ifit is already mergedi into any other.
+name]
+-D instead of -d forces deletion.
+git diff [file]
+Show changes between working directory and staging area.
+git diff --staged [file] Shows any changes between the staging area and the
+repository.
+Discard changes in working directory. This operation is
+Commit a state of the code base
+git checkout -- [file] unrecoverable.
+Branch a reference to a commit; can have a tracked upstream
+git reset [<path>...]
+Revert some paths in thei index (or the whole index) to their
+Tag a reference (standard) or an object (annotated)
+state in HEAD.
+HEAD a place where your working directory is now
+git commit
+Create a new commit from changes added to the staging area.
+The commit must have a message!
+
+
+
+2
+06 Inspect history
+09 Synchronizing repositories
+git log [-n count]
+List commit history of current branch. -n count limits list to last
+git fetch [remote]
+Fetch changes from the remote, but not update tracking
+n commits.
+branches.
+git log --oneline
+An overview with reference labels and history graph. One
+git fetch --prune
+Delete remote Refs that were removed from the remote
+--graph -- decorate
+commit per line.
+[remote]
+repository.
+List commits that are present on the currentl branch and not
+Fetch
+from the remote and
+branch with
+:
+git log ref.
+git pull [remote]
+changes
+merge current
+merged into ref. AI ref can be al branch name or a tag name.
+its upstream.
+git log ..ref
+List commit that are present on ref and not mergedi into current
+git push [--tags]
+Push local changes to the remote. Use --tags to push tags.
+branch.
+[remote]
+git reflog
+List operations (e.g. checkouts or commits) made on local
+git push -U [remote]
+Push local branch to remote repository.: Set its copy as an
+repository.
+[branch]
+upstream.
+07 Tagging commits
+10 Git installation
+git tag
+List all tags.
+For GNU/Linux distributions, Git should be availablei in the standard system repository. For
+example, in Debian/Ubuntu please type inthe terminal:
+git tag [name]
+Create at tag reference named name for current commit. Add
+[commit sha]
+commits sha to tag a specific commiti instead of current one.
+sudo apt-get install git
+git tag -a [name]
+If you need toi install Git from source, you can get it from git-scm.com/downloads.
+[commit sha]
+Create at tag object named name for current commit.
+An excellent Git course can be found in the great Pro Git book by Scott Chacon and Ben Straub.
+The book is available online for free at git-scm.com/book.
+git tag -d [name]
+Remove at tag froml local repository.
+11 Ignoring files
+08 Reverting changes
+cat <<EOF > .gitignore
+/logs/*
+Switches the current branch to the target reference, leaving
+Ilogs/.gitkeep
+git reset [--hard]
+a difference as an uncommitted change. When --hard is used,
+[target reference]
+all changes are discarded. It's easy to lose uncommitted
+/tmp
+changes with --hard.
+*.swp
+git revert [commit sha] Create ar new commit, reverting changes from the specified
+EOF
+commit. It generates an inversion of changes.
+Toi ignoret files, create a .gitignore filei in your repository with a line for each pattern. Filei ignoring will
+work for the current and sub directories where .gitignore file is placed. In this example, alli files are
+ignoredi in the logs directory (excluding the .gitkeep file), whole tmp directory and all files *.swp.

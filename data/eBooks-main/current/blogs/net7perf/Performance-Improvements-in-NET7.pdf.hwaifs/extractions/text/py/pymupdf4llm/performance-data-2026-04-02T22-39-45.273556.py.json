@@ -1,0 +1,16 @@
+{
+  "function_method_name": "extract_text_to_file_from_any_document",
+  "num_pages": 232,
+  "time_start_1": 1775162351.212445,
+  "time_end_1": 1775162385.2735481,
+  "time_total_1": 34.061103105545044,
+  "pages_per_second_1": 6.811288503519756,
+  "time_start_2": 578470.809752958,
+  "time_end_2": 578504.87253775,
+  "time_total_2": 34.062784792040475,
+  "pages_per_second_2": 6.810952228844541,
+  "time_start_3": 578470809753000,
+  "time_end_3": 578504872538083,
+  "time_total_3": 34.062785083,
+  "pages_per_second_3": 6.810952170666344
+}

@@ -1,0 +1,574 @@
+Data Types
+Strings
+Numbers &l Math
+Real Python
+Pythonisdynamically typed
+It'srecommendedt touse double-quotesf fors strings
+Arithmetic Operators
+Pocket Reference UseNone torepresentr missingora optional values
+Use' "In" "tocreateal linet breakinastring
+Uset type() to check objecttype
+Towriteal backsiashinanormalstring write "II"
+10 10 13
+Visit realpython.com to Checkfor aspecific type with isinstance()
+10 * 3 30
+Reale
+turbocharge your
+issubclass() checksifaclassisasubclass
+Creating Strings
+10 13 3.333333333335
+Python learning with
+single 'Hello'
+10 10 % 113 3
+Type Investigation
+double "World"
+2 * 3
+in-depth tutorials,
+<class
+multi ""Multiple
+line
+Python
+Honts
+string"
+real-world examples,
+Useful Functions
+and expert guidance.
+E E
+String Operations
+abs(-5)
+5
+round(3.7)
+E
+isinstance(3.14, float) # True
+greeting me "ow!" "meow!"
+2) 3.14
+issubclass(int, object) # True everything inherits from object repeat = "Meow!
+"MeowlMeow! Meow!
+length len( "Python")
+Getting Started
+EU
+2,
+3
+Type Conversion
+ER
+String Methods
+Follow these guidest tol kickstartyour Pythonj journey:
+int("42")
+#42
+"a" .upper()
+Learn More on realpython.com/search:
+realpython.com/what.ca-do-with-python
+float("3.14")
+3434
+lower0
+math operators built in functions
+realpython.com/installing-python
+MAE
+True
+.strip()
+realpython.com/python-fist-steps
+list("abc")
+"b", "c"]
+"abc" replace("bc", "ha") "aha"
+['a",
+a b" split()
+["a" "b"]
+Conditionals
+Startt thel Interactives Shell
+.join( "b"1)
+a-b'
+Learn More on realpython.com/search:
+Python usesi indentationf for codel blocks
+$ python
+data types type checking isinstance issubclass
+String Indexing &Slicing
+Use4spacesp peri indentationl level
+Quit thel Interactive: Shell
+text(0] text = "Python" "P" (first)
+If-Elif-Else
+Variables &A Assignment
+>>> exit0)
+textl-il "n"
+if age < 13:
+Variables arecreatedv whenf firsta assigned
+category "child"
+Runas Script
+Usec descriptivev variable names
+enstart)
+elif age < 20:
+ER
+convention
+"teenager"
+E
+$ python
+Follows snake_case
+text[::2]
+(every 2nd)
+category
+E
+my_script.py
+texti::-1] "nohtyp" (reverse)
+else:
+"adult"
+category
+Run as Scripti in Interactivel Mode
+Basic Assignment
+name "Leo"
+String
+String Formatting
+Comparison Operators
+$ python -i my_script.py
+age = 7
+height = 5.6
+Integer
+Maringarny
+Equal to
+Learn More onr realpython.com/search:
+is_cat True
+Boolean
+age
+to
+interpreter run a script command line
+flaws = None
+None type
+(name)i: years old"
+old"
+or equal
+E E
+lepleogey
+Greater than
+E
+E
+Parallel Chained
+EgpEn
+& Assignments
+Greater than or equal
+Comments
+10, 20
+Assign multiple values
+terotetE methosio, (name)! You'r re
+Alwaysaddas space aftert the#
+Give same value to multiple variables template.format(name- Aubrey", moctagel "Hello, Aubrey! You' re 2." Logical Operators
+Usecommentst toe explain "why" ofyour code
+if age > 18 and has_car:
+Augmented Assignments
+Raw Strings
+print(" "Roadtrip!")
+Write Comments
+counter +=
+Normal string with an escaped tab
+if is_weekend or
+numbers += [4, 5]
+"This is:1tCool."
+"This is: Cool."
+is_holiday:
+This is comment
+permissions I= write
+print(" "No work today. ")
+# print("This code will not run.")
+Raw with escape
+#
+print( "This will run.") Comments are ignored by Python
+r"This string is:1tCool." sequences "This is:1tCool."
+if not is_raining:
+Learn More on realpython.com/search:
+print("You can go outside.")
+Learn! More onr realpython.com/search:
+variables assignment operator walrus operator
+Learn More onr realpython.com,search:
+comment documentation
+Learn More on realpython.com/search:
+strings string methods slice notation raw strings conditional statements operators truthy falsy
+ta Continue your learningjourney: and become a Python expert tatrealpython.comjsthon.com/start-here
+Real Python
+
+
+
+Loops
+Calling Functions
+Class Attributes &l Methods
+Raising Exceptions
+range(5) generatesot through4
+greet()
+"Hello!"
+class Cat:
+def validate.age(age):
+greet_person(" ("Bartosz") "Hello, Bartosz"
+species "Felis catus" Class attribute
+if age < 0:
+Usee enumerate() togetindexa and value
+add(5, 3)
+raise ValueError("Age cannot be negative")
+break exitst thel loop, continues skipstor next
+add(7)
+17
+def -init.(self, name):
+return age
+Bed careful with whiletonoto create aninfinitel loop
+self.name name Instance attribute
+Return Values
+def meow(self):
+Learn More onr realpython.com/search:
+Forl Loops
+def get.min.max(numbers):
+return f"(self.name) says Meow!"
+exceptions errors debugging
+# Loop through range
+return min(numbers), max(numbers)
+for 1 in range(5): #0, 1,2,3,4
+eclassmethod def
+name):
+print(i)
+minimum, maximum get.min_max(11, 5, 3])
+create.kitten(cls,
+Collections
+return cls(f"Baby {name}" )
+# Loop through collection
+Usefull Built-in Functions
+Acollectioni isany container data structure that stores multiplei items
+"banana"]
+Inheritance
+Ifan objectisacollection, theny you canloopt throughit
+foutrunt Siaplants
+callable() Checks if object called as function
+Strings are collections, too
+print(fruit)
+class def Animal:
+Usel len() tog esizeofacollection
+current global symbol table
+init_(self, name):
+getthes
+#
+EER
+With
+for index
+name
+Youcancheckifani itemisi sinacollectionv withthe ink
+EU
+self.name
+keyword
+EwO
+for
+id() # Get
+H
+i, truserates enumerate(fruits):
+the unique identifier
+Some collectionsr may looks similar,bute each datas structures solves specific
+print(f"(1): (fruit)")
+locals() : Get Get
+of the local symbol table def speak(self):
+needs
+repr()
+: actionoventnoncourerl debugging
+pass
+While Loops
+Lambdal Functions
+class
+Lists
+while True:
+speak(self):
+lists
+ma.bodonseainy
+user_input input("Enter 'quit' to exit: ")
+square = lambda x: X**2
+return f"(self.name) barks!"
+if user_input = "quit":
+result = square(5) 25
+empty nums =
+break
+E
+# With and filter
+Learn More onr realpython.com/search:
+mixed [1, "two", 3.0, True]
+print(f"You entered: {user_ _input)")
+numbers map = [1, 2, 3, 4]
+object oriented programming classes
+= list(map(lambda x: X**2. numbers))
+Add
+=
+Loop Control
+sowares list(filter(lambda x: 2 0, numbers))
+")
+end index 0
+for i in range(10):
+Exceptions
+'z" 5])
+E MLn
+if i = 3:
+Learn More on realpython.com/search:
+Remove first iterable
+# Skip this iteration
+define functions return
+values lambda
+When Pythonr runs and encountersane error,itcreates ane exception
+nums.pop() Pop returns last element
+if i
+multiple
+Usespecifice exceptiont types when possible
+E
+continve
+break Exit loop
+elserunsifnoe exception occurred
+List indexing and checks
+print(i)
+Classes
+finally alwaysr runs, evena aftere errors
+["banana", "apple" hanrenge'l
+Learn! More onr realpython.com/search:
+Classes arel blueprintsf for objects
+Try-Except
+fruits Tprager
+for loop while loop enumerate control flow
+Youcan create multiplei instances ofone class
+try:
+E
+Youcommonly use classest toe encapsulate data
+number int(input("Enter a number: "))
+Inside aclass,your providen methodsf forinteracting witht thec data
+result I number
+Tuples
+Functions
+init_0i isthe constructor method
+except valucrot."
+tuples
+Definef functions with def
+self referstothei instance
+That' S not valid number!")
+point Creating = 4)
+except brperonvicsonrore
+Alwaysuse ()tocallafunction
+"Cannot divide zero!")
+single
+Note the comma!
+0.3
+by
+Add return tosendvaluest back
+Defining Classes
+elserint
+empty ()
+Create anonymousf functions with thel lambdal keyword
+class Dog:
+(result)")
+Basic tuple unpacking
+def
+name, age):
+fiunatintrneaudts
+print("Calculation attempted")
+point = (3, 4)
+Defining Functions
+name
+x, y point
+maritoi
+self.age age
+def greet():
+Common
+return "Hello!"
+def bark(self):
+Exceptions
+return f" (self.name) says Woof!"
+ValueError
+Invalid value
+Extended unpacking
+def greet.person(name):
+first, *rest
+#
+Create instance
+TypeError
+Wrong type
+(1, 3, 4)
+return f"Hello, {name}!"
+Dog( Frieda", 3)
+IndexError
+List index out of range
+first
+def add(x, y=10): Default parameter
+MAR0s/DgSen0y Frieda says Woof!
+FileNotFoundError KeyError
+# File Dict key doesn't not exist found
+rest
+[2,3,4]
+return
+ta Continue your learningjourney: and become Python expert atrealpython.com/start-here
+Real Python
+
+
+
+Sets
+Filel I/O
+Virtuall Environments
+Pythonic Constructs
+Creating Sets
+Swap variables
+(1, 2, 3}
+File Operations
+Virtual Environments: arec often called "venv"
+a, a
+b
+b=b,
+set(13, 4, 4, 5])
+# Read an entire file
+Usevenvst toi isolate project packagesf fromt thes system-wide Python packages
+with open("file.txt", mode-"r", encoding-'utf-8") as file:
+# Flatten a list of lists
+Set Operations
+content = file.read()
+Create Virtual Environment
+matrix [I1, 3], [4, 5, 6], [7, 8, 911
+2, 3, 4, 5}
+flat [item for sublist in matrix for item in sublist]
+(3}
+# Read a file line line
+$ python m venv .venv
+(1, 2
+with
+mode="r
+as file:
+Remove duplicates
+(1, 2, 4,5}
+- for
+encoding-'utf-8")
+Activate Virtual Environment (Windows)
+unique.unordered = list(set(my.list)
+print(line. strip0)
+venviScriptslactivate
+order
+Dictionaries
+PS>
+Remove duplicates, preserve
+# Write a file
+unique = list(dict.fromkeys(mylist))
+socronting ) Dictionaries
+with open("output. .txt" mode=" encoding-" "utf-8") as file: Activate Virtual Environment (Linux & macos)
+Count occurrences
+pet ("name" "Leo", "age": 42)
+file.write( "Hello, Worldlin")
+$ source venv/bin/activate
+from collections import Counter
+Dictionary Operations
+Append to File
+=
+petl agand Purr!
+value
+with open("log.txt", mode-" encoding-'utf-8") as file: Deactivatel Virtual Environment
+counts Counter(my.list)
+ge 0) Mre
+file.write( "New log entryin")
+ar petrt.getrs
+(.venv) $ deactivate
+Learn More onr realpython.com/search:
+pet.pop(" "age")
+Remove return
+Learn
+E
+More on realpython.com/search:
+counter tricks
+#
+files context manager pathlib
+Learn More onr realpython.com/search:
+- sound' 1)
+virtual environment venv
+:
+&Modules
+-
+dict_items(IC 'name", Vmsle ('sound', 'Bark!)))
+Imports
+Doyou want tog go deeper on any topici in thel Python curriculum?
+E
+Packages
+Learn More on realpython.com,search:
+Prefer expliciti imports over: import *
+Atf Real Python you cani immerse yourselfi finanyt topic. Level upy your
+Usealiasesf forl long moduler names
+Thec officialt third-party package repositoryi isthel Python Package Index (PyPI) skills with curated like:
+list
+effectively
+resourcesl
+tuple set dictionary indexing unpacking
+Groupi imports: standardlibrary,t third-partyl libraries, user-definedr modules
+Learning paths
+Install Packages
+Video courses
+Comprehensions
+Import Styles
+$ python -m pip install requests
+Writtent tutorials
+Youcanthink kofcomprehensionsase condensed forl loops
+# Import entire module
+Interactive quizzes
+Comprehensions aref faster thane loops
+import math
+Savel Requirements &Install from File
+equivalent
+result = math.sqrt(16)
+Podcasti interviews
+python -m pip freeze requirements. .txt
+Referencea articles
+List Comprehensions
+specific function
+$ python -m pip install -r requirements.txt
+math import sqrt
+Continuey your learningjourney: andl become al Python expert at
+#
+tipenth
+Basic
+result = sgrt(16)
+Related Tutorials
+realpython.com/start-here a
+squares [x**2 for x in range(10)]
+Import with alias
+Installing Python
+#
+Packages
+With condition
+numpy
+=
+Projects
+tpopornt
+Requirements
+evens [x for x in range(20) if %2 == 0]
+array = mnncaretin. 2, 31)
+FilesinPython
+# Nested
+# Import all (not recommended)
+Miscellaneous
+matrix [li*j for j in range(3)] for i in range(3)]
+from math import
+Truthy
+Other
+Falsy
+Comprehensions
+Package Imports
+# Dictionary comprehension
+# Import from package
+-42
+0
+word_lengths = {word: len(word) for word in ["hello", "world"]) import package.module
+3.14
+0.0
+# Set comprehension
+from package import module
+unique_lengths {len(word) for word in ["who", "what", "why"1) from package.subpackage import module
+"John"
+""
+# Generator expression
+package
+Class
+[1, 2, 3]
+[l
+sum_ squares = for X
+import function,
+Lapecacenlarengor
+sum(x**2 in range(1000))
+tmprce
+from package .module import name as alias
+("apple", "banana")
+(
+Learn More onr realpython.com/search:
+("key": None}
+0
+comprehensions data structures generators
+Learn More on realpython.com/search:
+import modules packages
+None
+ta Continue your learningjourney: and become a Python expert tatrealpython.comjsthon.com/start-here
+Real Python

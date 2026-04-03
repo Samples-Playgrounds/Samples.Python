@@ -1,0 +1,139 @@
+VI “Cheat” Sheet ACNS Bulletin ED–03 February 1995
+
+vi Editor “Cheat Sheet”
+
+Invoking vi: Format of vi commands:
+
+vi filename [count][command]
+
+(count repeats the effect of the command)
+
+Command mode versus input mode
+
+File management commands
+
+Vi starts in command mode. The positioning commands operate only while vi is in command mode. You switch vi to input mode by entering any one of several vi input com- mands. (See next section.) Once in input mode, any charac- ter you type is taken to be text and is added to the file. You cannot execute any commands until you exit input mode. To exit input mode, press the escape (Esc) key.
+
+:w name :wq :q! ZZ :sh
+
+Write edit buffer to file name Write to file and quit Quit without saving changes Same as :wq Execute shell commands (<ctrl>d)
+
+Window motions
+
+Input commands (end with Esc)
+
+a i o O :r file
+
+Append after cursor Insert before cursor Open line below Open line above Insert file after current line
+
+Any of these commands leaves vi in input mode until you press Esc. Pressing the RETURN key will not take you out of input mode.
+
+Change commands (Input mode)
+
+cw cc c$ rc R s S
+
+.
+
+Change word (Esc) Change line (Esc) - blanks line Change to end of line Replace character with c Replace (Esc) - typeover Substitute (Esc) - 1 char with string Substitute (Esc) - Rest of line with text Repeat last change
+
+Changes during insert mode
+
+<ctrl>h <ctrl>w <ctrl>u
+
+Back one character Back one word Back to beginning of insert
+
+<ctrl>d <ctrl>u <ctrl>f <ctrl>b /string ?string <ctrl>l <ctrl>g
+
+n N G nG :n z<CR> z. z-
+
+Cursor motions
+
+H M L h j k ^ $ l w b fc ;
+
+Scroll down (half a screen) Scroll up (half a screen) Page forward Page backward Search forward Search backward Redraw screen Display current line number and file information Repeat search Repeat search reverse Go to last line Go to line n Go to line n Reposition window: cursor at top Reposition window: cursor in middle Reposition window: cursor at bottom
+
+Upper left corner (home) Middle line Lower left corner Back a character Down a line Up a line Beginning of line End of line Forward a character One word forward Back one word Find c Repeat find (find next c)
+
+Deletion commands
+
+dd or ndd dw dnw d) db D x
+
+Delete n lines to general buffer Delete word to general buffer Delete n words Delete to end of sentence Delete previous word Delete to end of line Delete character
+
+Recovering deletions
+
+p P
+
+Put general buffer after cursor Put general buffer before cursor
+
+Undo commands
+
+u U
+
+Undo last change Undo all changes on line
+
+Rearrangement commands
+
+yy or Y “z6yy yw “a9dd “A9dd “ap p P J
+
+Yank (copy) line to general buffer Yank 6 lines to buffer z Yank word to general buffer Delete 9 lines to buffer a Delete 9 lines; Append to buffer a Put text from buffer a after cursor Put general buffer after cursor Put general buffer before cursor Join lines
+
+Parameters
+
+:set list :set nolist
+
+Show invisible characters Don’t show invisible characters
+
+:set number :set nonumber
+
+Show line numbers Don’t show line numbers
+
+:set autoindent :set noautoindent :set showmatch
+
+Indent after carriage return Turn off autoindent Show matching sets of parentheses as they are typed
+
+:set noshowmatch Turn off showmatch
+
+:set showmode :set noshowmode Turn off showmode
+
+Display mode on last line of screen
+
+:set all
+
+Show values of all possible parameters
+
+Move text from file old to file new
+
+vi old “a10yy :w :e new “ap :30,60w new
+
+yank 10 lines to buffer a write work buffer edit new file put text from a after cursor Write lines 30 to 60 in file new
+
+Regular expressions (search strings)
+
+^ $ . * .*
+
+Matches beginning of line Matches end of line Matches any single character Matches any previous character Matches any character
+
+Search and replace commands
+
+Syntax:
+
+:[address]s/old_text/new_text/
+
+Address components: . n .+m $ /string/ % [addr1],[addr2]
+
+Current line Line number n Current line plus m lines Last line A line that contains "string" Entire file Specifies a range
+
+Examples:
+
+The following example replaces only the first occur- rence of Banana with Kumquat in each of 11 lines starting with the current line (.) and continuing for the 10 that follow (.+10).
+
+:.,.+10s/Banana/Kumquat
+
+The following example replaces every occurrence (caused by the g at the end of the command) of apple with pear.
+
+:%s/apple/pear/g
+
+The following example removes the last character from every line in the file. Use it if every line in the file ends with ^M as the result of a file transfer. Execute it when the cursor is on the first line of the file.
+
+:%s/.$//

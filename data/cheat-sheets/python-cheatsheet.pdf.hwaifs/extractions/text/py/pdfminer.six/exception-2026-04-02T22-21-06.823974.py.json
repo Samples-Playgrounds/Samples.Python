@@ -1,0 +1,5 @@
+Exception reading text with pdfminer.six from PDF document source = ../../../../../../../data/cheat-sheets/python-cheatsheet.pdf : name 'resolve1' is not definedTraceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/pdf/pdfminer.six/api_text_extraction_pdfminer_six.py", line 115, in extract_text_to_file_from_pdf_document_low_level
+    pages = resolve1(doc.catalog['Pages'])
+            ^^^^^^^^
+NameError: name 'resolve1' is not defined

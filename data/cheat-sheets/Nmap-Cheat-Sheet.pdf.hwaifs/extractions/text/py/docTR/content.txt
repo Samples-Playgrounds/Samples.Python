@@ -1,0 +1,220 @@
+Different usage options
+Port discovery and specification
+compartech
+Host discovery and specification
+Vulnerability scanning
+Nmap Cheat Sheet
+Application and service version detection
+Software version detection against the ports
+Firewall / IDS Spoofing
+Port Specification Options
+Scanning Types
+Syntax
+Example
+Description
+Switch/Syntax
+Example
+Description
+-P
+nmap -P 23 172.16.1.1
+Port scanning port specific port
+-SS
+nmap 172.16.1.1 -SS
+TCP SYN port scan
+-P
+nmap -p 23-100 172.16.1.1
+Port scanning port specific port range
+-ST
+nmap 172.16.1.1 -ST
+TCP connect port scan
+-P nmap -pU:110,T:23-25,443 172.16.1.1
+U-UDP,T-TCP different port types scan
+-SA
+nmap 172.16.1.1 -SA
+TCP ACK port scan
+-SU
+nmap 172.16.1.1 -SU
+UDP port scan
+-p-
+nmap -p- 172.16.1.1
+Port scan for all ports
+-Sf
+nmap -Sf 172.16.1.1
+TCP FIN scan
+-p
+nmap -smtp,https 172.16.1.1
+Port scan from specified protocols
+-sx
+nmap -SX 172.16.1.1
+XMAS scan
+-F
+nmap -F 172.16.1.1
+Fast port scan for speed up
+-Sp
+nmap -Sp 172.16.1.1
+Ping scan
+-P "*"
+namp -P ftp 172.16.1.1
+Port scan using name
+-SU
+nmap -Su 172.16.1.1
+UDP scan
+r
+nmap -r 172.16.1.1
+Sequential port scan
+-SA
+nmap -Sa 172.16.1.1
+TCP ACK scan
+-SL
+nmap -Sl 172.16.1.1
+list scan
+Host /172.16.1.1 Discovery
+Switch/Syntax
+Example
+Description
+Scanning Command Syntax
+-SL
+nmap 172.16.1.1-5 -SL
+List 172.16.1.1 without scanning
+nmap [scan types] [options] (172.16.1.1 specification)
+-sn
+nmap 172.16.1.1/8 -sn
+Disable port scanning
+-Pn
+nmap 172.16.1.1-8 -Pn
+Port scans only and no host discovery
+Use of Nmap Scripts NSE
+-PS
+nmap 172.16.1.185 -PS22-25,80
+TCP SYN discovery on specified port
+nmap --script= test script
+execute thee listed script against
+172.16.1.0/24
+target IP address
+-PA
+nmap 172.16.1.185 -PA22-25,80
+TCP ACK discovery on specified port
+nmap --script-update-db
+adding new scripts
+-PU
+nmap 172.16.1.1-8 -PU53
+UDP discovery on specified port
+-PR
+nmap 172.16.1.1-1/8 -PR
+ARP discovery within local network
+nmap -SV -SC
+use of safe default scripts for scan
+-n
+nmap 172.16.1.1 -n
+no DNS resolution
+nmap --script-help-"Test Script"
+get help for script
+Nmap output Formats
+Version Detection
+Switch/Syntax
+Example
+Description
+Default/normal output nmap -ON scan.txt 172.16.1.1
+-SV
+nmap 172.16.1.1 -sV
+Try to find the version of the service running on
+port
+XML
+nmap -oX scanr.xml
+-sV
+172.16.1.1
+-version-intensity nmap 172.16.1.1 -V --version-intensity 6
+Intensity level range 0 to 9.
+-sV --version-all
+nmap 172.16.1.1 -SV --version-all
+Set intensity level to 9
+Grepable format
+snmap -OG grep.txt
+172.16.1.1
+-SV --version-light nmap 172.16.1.1 -sV --version-light
+Enable light mode
+-A
+nmap 172.16.1.1 -A
+Enables OS detection, version detection, script
+All formats
+nmap -OA 172.16.1.1
+scanning, and traceroute
+-0
+nmap 172.16.1.1 -0
+Remote OS detection
+172.16.1.1 Specification
+Firewall Proofing
+Miscellaneous Commands
+nmap 172.16.1.1
+single IP scan
+nmap -f [172.16.1.1]
+scan fragment packets
+nmap 172.16.1.1
+-6
+scan IPV6
+172.16.100.1
+scan specific IPs
+nmap
+nmap -mtu [MTU] [172.16.1.1]
+specify MTU
+targets
+nmap 172.16.1.1-254
+scan a range of IPs
+nmap -SI [zombie] [172.16.1.1]
+scan idle zoombie
+nmap -proxies proxy Run in targets
+nmap xyz.org
+scan a domain
+nmap -source-port [port]
+manual source port specify
+1 URL, proxy 2 URL with proxies
+[172.16.1.1]
+nmap 10.1.1.0/8
+scan using CIDR notation
+nmap -data-length [size]
+randomly append data
+nmap -il scan.txt scan 172.16.1.1s from a file
+[172.16.1.1]
+Show open
+nmap -open
+ports
+172.16.1.1 specified IP s exclude from
+-randomize-hosts
+only nmap --exclude
+nmap
+[172.16.1.1] 172.16.1.1 scan order randomization
+scan
+nmap -badsum [172.16.1.1]
+bad checksum
+Scan Options
+Nmap Timing Options
+Syntax
+Description
+nmap -SP 172.16.1.1
+Ping scan only
+Syntax
+Description
+nmap -PU 172.16.1.1
+UDP ping scan
+nmap -TO 172.16.1.1
+Slowest scan
+nmap -T1 172.16.1.1
+Tricky scan to avoid IDS
+nmap -PE 172.16.1.1
+ICMP echo ping
+nmap -T2 172.16.1.1
+Timely scan
+nmap -PO 172.16.1.1
+IP protocol ping
+nmap -T3 172.16.1.1
+Default scan timer
+nmap -PR 172.16.1.1
+ARP ping
+nmap -T4 172.16.1.1
+Aggressive scan
+nmap -Pn 172.16.1.1
+Scan without pinging
+nmap -T5 172.16.1.1
+Very aggressive scan
+nmap -traceroute 172.16.1.1
+Traceroute

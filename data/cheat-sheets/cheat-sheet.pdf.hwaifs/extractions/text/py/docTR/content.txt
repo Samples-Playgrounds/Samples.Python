@@ -1,0 +1,239 @@
+git --print-out
+Git Cheat Sheet
+Getting Started
+Move Between Branches
+Ways to refer to a commit
+Edit History
+Start a new repo:
+Switch branches:
+"Undo" the most recent commit (keep your
+git init
+git switch <name>
+Every time we say <commit>, you can use any of working directory the same):
+Clone an existing repo:
+OR
+these:
+git reset HEADA
+git clone <url>
+git checkout <name>
+Squash the last 5 commits into one:
+Create al branch:
+branch main
+git rebase -i HEAD-6
+git switch -C <name>
+atag
+Then change "pick" to "fixup" for any commit you
+ve.1
+Prepare to Commit
+OR
+ID
+want to combine with the previous one
+Add untracked file or unstaged changes:
+git checkout -b <name>
+commit 3e887ab
+Undo a failed rebase:
+git add <file>
+List branches:
+aremote branch origin/main
+git reflog BRANCHNAME
+Add all untracked files and unstaged changes: git branch
+*current commit HEAD
+Then manually find the right commit ID in the
+git add
+List branches by most recently committed to:
++3 commits ago HEAD*AA or HEAD-3
+reflog, then run:
+Choose which parts of at file to stage:
+git branch sort=- committerdate
+git reset --hard <commit>
+git add -p
+Delete a branch:
+Change a commit message (or add a file you
+Move file:
+git branch -d <name>
+Discard Your Changes
+forgot):
+git mv <old> <new>
+Delete unstaged changes to one file:
+git commit amend
+Force delete at branch:
+git restore <file>
+Delete file:
+git branch -D <name>
+OR
+git rm <file>
+git checkout <file>
+Code Archaeology
+Tell Git to forget about a file without deleting it:
+Look at al branch's history:
+git rm -cached <file>
+Diff Staged/Unstaged Changes
+Delete all staged and unstaged changes to one git log main
+file:
+Unstage one file:
+Diff. all staged and unstaged changes:
+git restore -staged -worktree <file> git log --graph main
+git reset <file>
+git diff HEAD
+OR
+git log --oneline
+Unstage everything:
+Diff just staged changes:
+git checkout HEAD <file>
+git reset
+git diff --staged
+Show every commit that modified a file:
+Delete all staged and unstaged changes:
+git log <file>
+Check what you added:
+Diff just unstaged changes:
+git reset --hard
+git diff
+Show commit that modified at including
+git
+file,
+status
+Delete untracked files:
+before everess renamed:
+git clean
+git log --follow <file>
+Diff Commits
+'Stash' all staged and unstaged changes:
+Find every commit that added or removed some
+Make Commits
+git stash
+text:
+Make a commit (and open text editor to write Show diff between a commit and its parent:
+git log -G banana
+message):
+git show <commit>
+git commit
+Diff two commits:
+Show who last changed each line of at file:
+diff <commit> <commit>
+git blame <file>
+Make a commit:
+git
+git commit -m 'message'
+Diff one file since a commit:
+Commit all unstaged changes:
+git diff <commit> <file>
+git commit -am 'message'
+Show a: summary of a diff:
+git diff <commit> -stat
+git show <commit> -stat
+
+
+
+Bring a branch up to date with another branch
+Combine Diverged Branches
+(aka "fast-forward merge"):
+Push Your Changes
+Important Files
+Combine with rebase:
+git switch main
+Push the
+Local git config:
+git switch banana
+git merge banana
+main
+git/config
+git rebase main
+Before:
+branch to the remote
+Global git config:
+origin
+Before:
+-/.gitconfig
+A B C D E
+A B C
+main
+git push origin main
+List of files to ignore:
+gitignore
+main banana
+Push the current branch to its remote "tracking
+branch":
+D
+banana
+git push
+After:
+Push al branch that you've never pushed before:
+After:
+A B
+D E
+main git push -u origin <name>
+main banana
+Force push:
++
+banana
+git push --force-with-lease
+A B C
+E'
+Copy one commit onto the current branch:
+Push tags:
+git cherry-pick <commit>
+git push tags
+D E
+lost" Before:
+A B C
+main Pull Changes
+Combine with merge:
+Fetch changes (but don't change any of your
+git switch main
+local branches):
+git merge banana
+D E
+git fetch origin main
+Before:
+Fetch changes and then rebase your current
+After:
+branch:
+A B C
+main
+git pull -rebase
+A B C D'
+main
+Fetch changes and then merge them into your
+current branch:
+D E
+banana
+git pull origin main
+D E
+OR
+After:
+git pull
+A B C
+o -main
+Restore an Old File
+Get the version of a file from another commit: Configure Git
+D E
+banana git checkout <commit> <file>
+Set a config option:
+OR
+git config user. name 'Your Name'
+Combine with squash merge:
+git restore <file> - source <commit>
+Set
+git switch main
+option globally:
+git merge -squash banana
+git config --global
+git commit
+Add al Remote
+Add git an config alias: alias.st status
+Before:
+git remote add <name> <url>
+See all possible config options:
+A B C
+main
+man git-config
+D E
+banana
+After:
+D
+A
+E
+main
+D E
+banana

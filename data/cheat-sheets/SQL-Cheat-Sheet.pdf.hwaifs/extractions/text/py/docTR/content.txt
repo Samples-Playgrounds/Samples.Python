@@ -1,0 +1,725 @@
+SQL cheat sheet
+Comprehensive
+Data Manipulation Language (DML) Commands
+Command
+Description
+Syntax
+Example
+SELECT
+The SELECT command retrieves SELECT column1, column2 FROM SELECT first_name, last_name
+data from a database.
+table_name;
+FROM customers;
+INSERT
+The INSERT command adds new INSERT INTO table_name
+INSERT INTO customers
+records to a table.
+(column1, column2) VALUES
+(first_name, last_name)
+(value1, value2);
+VALUES ("Mary', 'Doe');
+UPDATE
+The UPDATE command is used UPDATE table_name SET column1 UPDATE employees SET
+to modify existing records in a = value1, column2 = value2
+employee_name - 'John Doe',
+table.
+WHERE condition;
+department = 'Marketing';
+DELETE
+The DELETE command removes DELETE FROM table_name WHERE DELETE FROM employees WHERE
+records from a table.
+condition;
+employee_name - 'John Doe';
+Datal Definition Language (DDL) Commands
+Command
+Description
+Syntax
+Example
+CREATE
+The CREATE command creates a CREATE TABLE table_name
+CREATE TABLE employees (
+new database: and objects, such (column1 datatype1,
+employee_id INT
+as at table, index, view, or stored column2 datatype2, ; PRIMARY KEY,
+procedure.
+first_name
+VARCHAR(50),
+Last_name
+VARCHAR(50),
+age INT
+;
+ALTER
+The ALTER command adds,
+ALTER TABLE table_name
+ALTER TABLE customers ADD
+deletes, or modifies columns in ADD column_name datatype; email VARCHAR(100);
+an existing table.
+DROP
+The DROP command is used to DROP TABLE table_name;
+DROP TABLE customers;
+drop an existing tablei in a
+database.
+TRUNCATE
+The TRUNCATE command is
+TRUNCATE TABLE
+TRUNCATE TABLE customers;
+used to delete the data inside a table_name;
+table, but not the tablei itself.
+D DbVisualizer
+The SQL tool with the highest user satisfaction.
+DBVIS.COM >
+
+
+
+Data Control Language (DCL) Commands
+Command
+Description
+Syntax
+Example
+GRANT
+The GRANT command is usedi to GRANT SELECT, INSERT ON
+GRANT SELECT, INSERT ON
+give specific privileges to users table_name TO user_name; employees TO 'John Doe';
+or roles.
+REVOKE
+Thel REVOKE command is used REVOKE SELECT, INSERT ON REVOKE SELECT, INSERT ON
+to take away privileges
+table_name FROM
+employees FROM 'John
+previously granted to users or user_name;
+Doe';
+roles.
+Querying Data Commands
+Command
+Description
+Syntax
+Example
+SELECT: Statement
+The SELECT: statementi is the
+SELECT column1, column2
+SELECT first_name,
+primary command used to
+FROM table_name;
+last_name FROM customers;
+retrieve data from a database
+WHERE Clause
+The WHERE clause is used to
+SELECT * FROM table_name SELECT * FROM customers
+filter rows based on a: specified WHERE condition;
+WHERE age >> 30;
+condition.
+ORDER BY Clause
+The ORDER BY clausei is used to SELECT * FROM table_name SELECT * FROM products
+sort the result: set in ascending ORDER BY column_name
+ORDER BY price DESC;
+or descending order based on a ASCIDESC;
+specified column.
+GROUP BY Clause
+The GROUP BY clause groups SELECT column_name,
+SELECT category, COUNT(*)
+rows based on the values in a COUNT(*) FROM table_name FROM products GROUP BY
+specified column. It is often
+GROUP BY column_name;
+category;
+used with aggregate functions
+like COUNT, SUM, AVG, etc.
+HAVING Clause
+The HAVING clause filters
+SELECT column_name,
+SELECT category, COUNT(*)
+grouped results based on a
+COUNT(*) FROM table_name FROM products GROUP BY
+specified condition.
+GROUP BY column_name
+category HAVING COUNT(*)
+HAVING condition;
+>> 5;
+- DbVisualizer
+The SQL tool with the highest user satisfaction.
+DBVIS.COM >
+
+
+
+Joining Commands
+Command
+Description
+Syntax
+Example
+INNER JOIN
+Thel INNER. JOIN command
+SELECT * FROM table1
+SELECT * FROM employees
+returns rows with matching
+INNER JOIN table2 ON
+INNER JOIN departments ON
+valuesi in both tables.
+table1.column ==
+employees.department_id =
+table2.column;
+departments.id;
+LEFT JOIN/LEFT OUTER JOIN Thel LEFT. JOIN command
+SELECT * FROM table1 LEFT SELECT * FROM employees LEFT
+returns all rows from the left JOIN table2 ON
+JOIN departments ON
+table (first table) and the
+table1.column =
+employees.department_id =
+matching rows from the right table2.column;
+departments.id;
+table (second table).
+RIGHT JOIN/RIGHT OUTER
+The RIGHT JOIN command
+SELECT * FROM table1
+SELECT *
+JOIN
+returns all rows from the right RIGHT JOIN table2 ON
+FROM employees
+table (second table) and the
+table1.column =
+RIGHT JOIN departments
+matching rows from the left
+table2.column;
+ON employees.department_id -
+table (first table).
+departments. department_id;
+FULL JOIN/FULL OUTER JOIN The FULL. JOIN command
+SELECT * FROM table1 FULL SELECT *
+returns all rows when therei is a JOIN table2 ON
+FROM employees
+matchi in either the left table or table1.column =
+LEFT JOIN departments ON
+the right table.
+table2.column;
+employees.employee_id -
+departments.6 employee_id
+UNION
+SELECT *
+FROM employees
+RIGHT JOIN departments ON
+employees.employee_id =
+departments. employee_id;
+CROSS JOIN
+The CROSS JOIN command
+SELECT * FROM table1
+SELECT * FROM employees
+combines every row from the CROSS JOIN table2;
+CROSS JOIN departments;
+first table with every row from
+the second table, creating a
+Cartesian product.
+SELF JOIN
+The SELF JOIN command joins SELECT * FROM table1 t1, SELECT * FROM employees t1,
+at table withi itself.
+table1 t2 WHERE t1.column employees t2
+= t2.column;
+WHERE t1.employee_id =
+t2.employee_id;
+NATURAL JOIN
+The NATURAL JOIN command SELECT * FROM table1
+SELECT * FROM employees
+matches columns with the
+NATURAL JOIN table2;
+NATURAL JOIN departments;
+same name in both tables.
+- DbVisualizer
+The SQL tool with the highest user satisfaction.
+DBVIS.COM >
+
+
+
+Subqueries in SQL
+Command
+Description
+Syntax
+Example
+IN
+The IN command is used to
+SELECT column(s) FROM
+SELECT * FROM customers
+determine whether a value
+table WHERE value IN
+WHERE city IN (SELECT
+matches any value in a: subquery (subquery);
+city FROM suppliers);
+result. It is often usedi in the
+WHERE clause.
+ANY
+The ANY command is used to SELECT column(s) FROM
+SELECT * FROM products
+compare. a value to any value table WHERE value < ANY
+WHERE price < ANY (SELECT
+returned by a: subquery. It can (subquery);
+unit_price FROM
+be used with comparison
+supplier_products);
+operators like =, >, <, etc.
+ALL
+The. ALL command is used to
+SELECT column(s) FROM
+SELECT * FROM orders
+compare. a value to all values
+table WHERE value > ALL
+WHERE order_amount > ALL
+returned by a: subquery. It can (subquery);
+(SELECT total_amount FROM
+be used with comparison
+previous_orders);
+operators like =, >, <, etc.
+Aggregate Functions Commands
+Command
+Description
+Syntax
+Example
+COUNTO
+The COUNT command counts SELECT COUNT(column_name) SELECT COUNT(age) FROM
+the number of rows or non-null FROM table_name;
+employees;
+values in a: specified column.
+SUMO
+The SUM command is used to SELECT SUM(column_name)
+SELECT SUM(revenue) FROM
+calculate the sum of all values in FROM table_name;
+sales;
+a specified column.
+AVGO
+The AVG command is used to
+SELECT AVG(column_name)
+SELECT AVG(price) FROM
+calculate the average (mean) of FROM table_name;
+products;
+all valuesi in a: specified column.
+MINO
+The MIN command returns the SELECT MIN(coLumn_name)
+SELECT MIN(price) FROM
+minimum (lowest) value in a
+FROM table_name;
+products;
+specified column.
+MAXO
+The MAX command returns the SELECT MAX(coLumn_name)
+SELECT MAX(price) FROM
+maximum (highest) value in a FROM table_name;
+products;
+specified column.
+- DbVisualizer
+The SQL tool with the highest user satisfaction.
+DBVIS.COM >
+
+
+
+String Functions in SQL
+Command
+Description
+Syntax
+Example
+CONCATO
+The CONCAT command
+SELECT CONCAT(string1,
+SELECT CONCAT(first_name,
+concatenates' two or more
+string2, ) AS
+', last_name) AS
+strings into a: single string.
+concatenated_string FROM full_name FROM employees;
+table_name;
+SUBSTRINGO/SUBSTRO
+The SUBSTRING command
+SELECT SUBSTRING(string
+SELECT
+extracts a: substring from a
+FROM start_position [FOR SUBSTRING(product_name
+string.
+length]) AS substring
+FROM 1 FOR 5) AS
+FROM table_name;
+substring FROM products;
+CHAR_LENGTHO/LENGTHO
+The LENGTH command returns SELECT
+SELECT
+thel length (number of
+CHAR_LENGTH(string) AS
+CHAR_LENGTH(product_name)
+characters) of a string.
+length FROM table_name;
+AS Length FROM products;
+UPPERO
+The UPPER command converts SELECT UPPER(string) AS
+SELECT UPPER(first_name)
+all characters in a: string to
+uppercase.string FROM
+AS uppercase_first_name
+uppercase.
+table_name;
+FROM employees;
+LOWERO
+The LOWER command converts SELECT LOWER(string) AS
+SELECT LOWER(Last_name)
+all characters in a: string to
+Lowercase_string FROM
+AS Lowercase_last_name
+lowercase.
+table_name;
+FROM employees;
+TRIMO
+The TRIM command removes
+SELECT TRIMCILEADING I
+SELECT TRIM(TRAILING I
+specified prefixes or suffixes (or TRAILING I BOTH]
+FROM full_name) AS
+whitespace by default) from a characters FROM string)
+trimmed_full_name FROM
+string.
+AS trimmed_string FROM
+customers;
+table_name;
+LEFTO
+The LEFT command returns a SELECT LEFT(string,
+SELECT
+specified number of characters num_characters) AS
+LEFT(product_name, 5)
+from the left of a: string.
+Left_string FROM
+AS Left_product_name
+table_name;
+FROM products;
+RIGHTO
+The RIGHT command returns a SELECT RIGHT(string,
+SELECT
+specified number of characters num_characters) AS
+RIGHT(order_number, 4) AS
+from the right of a: string.
+right_string FROM
+right_order_number FROM
+table_name;
+orders;
+REPLACEO
+The REPLACE command
+SELECT REPLACE(string,
+SELECT
+replaces occurrences of a
+old_substring,
+REPLACE(description,
+substring within a: string.
+new_substring) AS
+'old_string',
+replaced_string FROM
+new_string') AS
+table_name;
+replaced_description FROM
+product_descriptions;
+- DbVisualizer
+The SQL tool with the highest user satisfaction.
+DBVIS.COM >
+
+
+
+Date and Time SQL Commands
+Command
+Description
+Syntax
+Example
+CURRENT_DATEO
+The CURRENT_DATE command SELECT CURRENT_DATEO AS +
+returns the current date.
+current_date;
+CURRENT_TIMEQ
+The CURRENT_TIME command SELECT CURRENT_TIMEO AS +
+returns the current time.
+current_time;
+CURRENT_TIMESTAMPO
+The CURRENT.TIMESTAMP
+SELECT
++
+command returns the current
+CURRENT_TIMESTAMPO AS
+date: and time.
+current.timestamp;
+DATE_PARTO
+The DATE_PART command
+SELECT DATE_PARTC'part', SELECT DATE_PART('year',
+extracts a: specific part (e.g.,
+date_expression) AS
+"2024-04-11") AS
+year, month, day) from a date or extracted_part;
+extracted_part;
+time.
+DATE_ADDO/DATE_SUBO
+The DATE_ADD command adds SELECT
+DATE_ADD Example
+or subtracts. a specified number DATE_ADD(date_expression, SELECT
+of days, months, or years
+INTERVAL value unit) AS
+DATE_ADD('2024-04-11',
+to/from a date.
+new_date;
+INTERVAL 1 DAY) AS
+new_date;
+DATE_SUB Example
+SELECT
+DATE_SUB(2024-04-11',
+INTERVAL 1 DAY) AS
+new_date;
+EXTRACTO
+The EXTRACT command
+SELECT EXTRACT(part FROM SELECT EXTRACT(YEAR FROM
+extracts a: specific part (e.g.,
+date_expression) AS
+2024-04-11") AS
+year, month, day) from a date or extracted_part;
+extracted_part;
+time.
+TO_CHARO
+The TO_CHAR command
+SELECT
+SELECT
+converts a date or time to a
+TO_CHAR(date_expression, TO_CHAR("2024-04-11',
+specified format.
+'format') AS
+"YYYY-MM-DD') AS
+formatted_date;
+formatted_date;
+TIMESTAMPDIFFO
+The TIMESTAMPDIFF command SELECT
+SELECT TIMESTAMPDIFF(DAY,
+calculates the difference
+TIMESTAMPDIFF(unit,
+2024-04-10",
+between two timestamps in a timestamp1, timestamp2)
+2024-04-11") AS
+specified unit (e.g., days, hours, AS difference;
+difference;
+minutes).
+DATEDIFFO
+The DATEDIFF command
+SELECT DATEDIFF(date1,
+SELECT
+calculates the difference in days date2) AS
+DATEDIFF("2024-04-11',
+between two dates.
+difference_in_days;
+2024-04-10") AS
+difference_in_days;
+- DbVisualizer
+The SQL tool with the highest user satisfaction.
+DBVIS.COM -
+
+
+
+Conditional Expressions
+Command
+Description
+Syntax
+Example
+CASE Statement
+The CASE statement allows you SELECT
+SELECT
+to perform conditional logic
+column1,
+order_id,
+within a query.
+column2,
+total_amount,
+CASE
+CASE
+WHEN condition1
+WHEN total_amount
+THEN result1
+> 1000 THEN 'High Value
+WHEN condition2
+Order'
+THEN result2
+WHEN total_amount
+ELSE
+> 500 THEN 'Medium Value
+default_result
+Order'
+END AS alias
+ELSE 'Low Value
+FROM table_name;
+Order'
+END AS order_status
+FROM orders;
+IFO Function
+The IFO function evaluates a
+SELECT IF(condition,
+SELECT
+condition and returns a value
+true_value, false_value)
+name,
+based on the evaluation.
+AS alias FROM table_name;
+age,
+IF(age > 50,
+Senior', 'Junior') AS
+employee_category
+FROM employees;
+COALESCEO Function
+The COALESCEO function
+SELECT COALESCE(value1,
+SELECT
+returns the first non-null value value2, .) AS alias
+COALESCE(first_name,
+from al list of values.
+FROM table_name;
+middle_name) AS
+preferred_name
+FROM employees;
+NULLIFO Function
+The NULLIFO function returns SELECT
+SELECT
+null ift two specified expressions NULLIF(expression1,
+NULLIF(total_amount,
+are equal.
+expression2) AS alias
+discounted_amount) AS
+FROM table_name;
+diff_amount FROM orders;
+- DbVisualizer
+The SQL tool with the highest user satisfaction.
+DBVIS.COM >
+
+
+
+Set Operations
+Command
+Description
+Syntax
+Example
+UNION
+The UNION operator
+SELECT column1, column2 FROM
+SELECT first_name, last_name
+combines the result: sets of table1
+FROM customers
+two or more SELECT
+UNION
+UNION
+statements into a: single
+SELECT column1, column2 FROM
+SELECT first_name, last_name
+result set.
+table2;
+FROM employees;
+INTERSECT
+The INTERSECT operator SELECT column1, column2 FROM
+SELECT first_name, last_name
+returns the common rows table1
+FROM customers
+that appeari in both result INTERSECT
+INTERSECT
+sets.
+SELECT column1, column2 FROM
+SELECT first_name, last_name
+table2;
+FROM employees;
+EXCEPT
+The EXCEPT operator
+SELECT column1, column2 FROM
+SELECT first_name, last_name
+returns the distinct rows
+table1
+FROM customers
+from the left result: set that EXCEPT
+EXCEPT
+are not presenti in the right SELECT column1, column2 FROM
+SELECT first_name, last_name
+result: set.
+table2;
+FROM employees;
+Transaction Control Commands
+Command
+Description
+Syntax
+Example
+COMMIT
+The COMMIT command is COMMIT;
+BEGIN TRANSACTION;
+used to save all the changes
+made during the current
+SQL statements and changes within the transaction
+transaction: and make them
+permanent.
+INSERT INTO employees (name, age) VALUES ('Alice',
+30);
+UPDATE products SET price == 25.00 WHERE category =
+Electronics';
+COMMIT;
+ROLLBACK
+The ROLLBACK command is ROLLBACK; BEGIN TRANSACTION;
+used to undo all the
+changes made during the
+SQL statements and changes within the transaction
+current transaction. and
+discard them.
+INSERT INTO employees (name, age) VALUES ('Bob', 35);
+UPDATE products SET price = 30.00 WHERE category =
+'Electronics';
+ROLLBACK;
+o DbVisualizer
+The SQL tool with the highest user satisfaction.
+DBVIS.COM >
+
+
+
+SAVEPOINT
+The SAVEPOINT command SAVEPOINT BEGIN TRANSACTION;
+is used to set. a point within savepoint_n
+at transaction: to which you ame;
+INSERT INTO employees (name, age) VALUES ('Carol',
+can later roll back.
+28);
+SAVEPOINT before_update;
+UPDATE products SET price = 40.00 WHERE category =
+Electronics";
+SAVEPOINT after_update;
+DELETE FROM customers WHERE age > 60;
+ROLLBACK TO before_update;
+At this point, the DELETE is rolled back, but the
+UPDATE remains.
+COMMIT;
+ROLLBACK TO
+The ROLLBACK TO
+ROLLBACK TO BEGIN TRANSACTION;
+SAVEPOINT
+SAVEPOINT commandi is
+SAVEPOINT
+used to roll back to a
+savepoint_n INSERT INTO employees (name, age) VALUES ('David',
+specific savepoint within a ame;
+42);
+transaction.
+SAVEPOINT before_update;
+UPDATE products SET price = 50.00 WHERE category =
+'Electronics';
+SAVEPOINT after_update;
+DELETE FROM customers WHERE age >> 60;
+- Rollback to the savepoint before the update
+ROLLBACK TO SAVEPOINT before_update;
+At this point, the UPDATE is rolled back, but the
+INSERT remains.
+COMMIT;
+SET TRANSACTION The SET TRANSACTION
+SET
+BEGIN TRANSACTION;
+command is used to
+TRANSACTION
+configure properties for the [ISOLATION
+Set the isolation level to READ COMMITTED
+current transaction, such as LEVEL {
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+isolation level and
+READ
+transaction mode.
+COMMITTED I
+SQL statements and changes within the transaction
+SERIALIZABL
+E H]
+INSERT INTO employees (name, age) VALUES ('Emily',
+35);
+UPDATE products SET price = 60.00 WHERE category =
+Electronics';
+COMMIT;
+D DbVisualizer
+The SQL tool with the highest user satisfaction.
+DBVIS.COM >

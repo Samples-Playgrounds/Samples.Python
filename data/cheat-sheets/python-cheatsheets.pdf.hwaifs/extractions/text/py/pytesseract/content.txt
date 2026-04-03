@@ -1,0 +1,1983 @@
+Python For Data Science Cheat Sheet Libraries
+>>> is! Import libraries pandas lula ef.
+
+Python Basics
+
+>>> >>> import numpy Data analysis Machine learning
+Learn More Python for Data Science Interactively at www.datacamp.com >>> ['my', 'list', a, b] >>> import numpy as np
+>>> my list2 [[4,5,6,7], [3,4,5,6]] Selective import Brumry & matplotlib
+>>> from math import pi Scientific computing 2D plotting
+
+Variables and Data Types Selecting List Elements Index starts at o
+Variable Assignment Subset | ;
+
+7 >>> my list[1] Select item at index 1 a i A °
+
+P>> K=9 >>> my list[-3] Select 3rd last item me ) we —
+
+Install Python
+
+Slice us
+>>> my list[1:3] Select items at index 1 and 2 c a
+>>> my list[1l: Select items after index o ANACON DA spyder @
+>>> my list[:3
+
+]
+]
+SS> my 1 ist[:] Copy my_list powered by Python with Anaconda documents with live code,
+
+Select items before index 3 Leading open data science platform Free IDE that is included Create and share
+
+Sum of two variables
+
+visualizations, text, ...
+
+Subset Lists of Lists
+>>> my list2[1] [0]
+>>> my list2[1][:2]
+
+List Operations
+
+>>> my list + my list
+>>> Remainder of a variable ['my', 'list', 'is', 'nice', 'my', ‘list
+>>> my list * 2
+>>> Division of a variable ['my', 'list', 'is', 'nice', 'my', ‘list
+2.5 >>> my list2 > 4
+
+True
+
+Subtraction of two variables my_list[list][itemOfList]
+
+Numpy Arrays Also see Lists
+
+>>> my list = [l, 2, 3, 4]
+>>> my array = np.array(my list)
+>>> my 2darray = np.array([[1,2,3],[4,5,6]])
+
+Multiplication of two variables
+
+Exponentiation of a variable
+
+Selecting Numpy Array Elements Index starts at o
+
+Subset
+
+>>> my_array[1] Select item at index 1
+2
+
+Slice
+
+>>> my _array[0:2] Select items at index 0 and 1
+array([l, 2])
+
+"S', '3.45', 'True' | Variables to strings
+my list. index ( Get the index of an item
+
+my list.count ( Count an item
+
+my list.append Append an item at a time
+my list.remove('! Remove an item
+
+del (my list[0:1]) Remove an item
+
+my list.reverse () Reverse the list
+
+my list.extend('!') Append an item
+
+my list.pop(-1) Remove an item
+
+my list.insert(0,'!') | Insertanitem
+
+my list.sort() Sort the list
+
+Subset 2D Numpy arrays
+>>> my 2darray[:,0] my_2darray[rows, columns]
+array([l, 4])
+
+Variables to integers
+Variables to floats
+
+True, True, Truc | Variables to booleans >>> my array > 3
+
+array([False, False, False, True], dtype=bool)
+>>> my array * 2
+
+array([2, 4, 6, 8])
+>>> my array + np.array([5,
+
+>>> my array.shape Get the dimensions of the array
+'thisStringIsAwesome' >>> my string[3] >>> np.append(other array) Append items to an array
+
+>>> my string[4:9] >>> np.insert(my array, 1, 5)| Insert items inan array
+: — >>> np.delete(my array, [1]) Delete items in an array
+>>> my string * 2 >>> np.mean(my array) Mean of the array
+_ my string. upper () String to uppercase >>> np.median(my array) Median of the array
+
+my string.lower () String to lowercase >>> my array.corrcoef () Correlation coefficient
+Count String elements >>> np.std(my array) Standard deviation
+
+v>> my string = 'thisStringIsAwesome' String Operations Index starts at 0
+
+>>> my string
+
+"thisStringIsAwesomethisStringIsAwesome'
+>>> my string + 'Innit'
+my string.count('w'
+
+"thisStringIsAwesomeInnit' )
+>>> 'm' in my string my string.replace('e', 'i') | Replace String elements
+
+my string.strip() Strip whitespaces DataCamp
+
+Learn Python for Data Science
+
+Python For Data Science Cheat Sheet
+Jupyter Notebook
+
+Learn More Python for Data Science Interactively at www.DataCamp.com
+
+Saving/Loading Notebooks
+
+Create new notebook
+
+File Edit View Insert se
+[ Open an existing
+* New Notebook » BM ifee es b k
+Make a copy of the Open. o0ttt 8) noteboo
+current notebook “**::.... { —
+eR eceeferes Rename notebook
+Rename...-ssse°%"* .
++ Save and Checkpoint
+
+eee
+eee
+eee
+
+Revert notebook to a
+
+Save current notebook . .
+previous checkpoint
+
+and record checkpoint
+
+ee
+eee
+eee
+
+oe
+
+Revert to Checkpoint >.
+
+Print Preview
+
+oJ?
+.
+.
+.
+.
+.
+.
+
+Downloadas Download notebook as
+Preview of the printed a joo - Python notebook
+notebook usted Notebook ~ Fython
+
+- HTML
+Close notebook & stop ..-: Se" ; Markdown
+running any scripts - LaleX
+
+- PDF
+
+Writing Code And Text
+
+Code and text are encapsulated by 3 basic cell types: markdown cells, code
+cells, and raw NBConvert cells.
+
+Edit Cells
+
+Cut currently selected cells
+
+Copy cells from
+to clipboard ..
+
+clipboard to current
+
+te, -“’” Cursor position
+Paste cells from *-.. P
+
+clipboard above
+
+Paste cells from
+current cell
+
+_ Clipboard below
+current cell
+
+Edit View Insert
+
+| * Cut Cells
+Copy Cells ° .
+* + Paste Cells Above
+
+Paste cells from
+clipboard on top *°:.
+of current cel
+
+Paste Cells Below -**”
+
+Delete current cells
+
+oe
+oe
+oe
+ee
+oe
+ee
+
+* © Paste Cells & Replace
+Delete Cells ..-°°°"”
+. Undo Delete Cells
+
+oe?
+
+Split up a cell from
+current cursor
+position
+
+Revert “Delete Cells”...
+invocation
+
+eoee
+oor?
+Ps ee
+eee
+eoeee
+
+Split Cell
+. Merge Cell Above
+
+Merge current cell ..----° Merge Cell Below...
+
+. Merge current cell
+with the one above
+
+with the one below
+
+°
+a re
+.
+
+. . * Move Cell Up
+Move current cell up" | Mo*eCs#20" ee Move current cell
+Adjust metadata _. | + Edit Notebook Metadata down
+underlying the *~ Find and Replace...) Find and replace
+
+|
+
+current notebook in selected cells
+
+, - Cut Cell Attachments
+Copy Cell Attachments
+, + Paste Cell Attachments
+
+ee
+.°
+. oe
+. .
+ee ee TO OO
+
+Remove cell
+attachments
+
+Paste attachments of Insert image in
+current cell selected cells
+
+Insert Cells
+
+Cell
+
+Copy attachments of
+current cell
+
+Teoeee,
+
+Insert Image
+
+a ry
+
+Kernel
+
+Insert
+
+_Add new cell below the
+current one
+
+Add new cell above the
+
+ee Insert Cell Above 0°
+current one ood .
+
+Insert Cell Below **”
+
+Working with Different Programming Languages
+
+Kernels provide computation and communication with front-end interfaces
+
+Widgets
+
+like the notebooks. There are three main kernels:
+
+IP (yi: R
+
+IPython IRkernel
+
+I J[%]
+
+Julia
+
+Notebook widgets provide the ability to visualize and control changes
+in your data, often as a control like a slider, textbox, etc.
+
+You can use them to build interactive GUIs for your notebooks or to
+synchronize stateful and stateless information between Python and
+
+Save notebook
+
+Installing Jupyter Notebook will automatically install the [Python kernel. JavaScript.
+Restart kernel oa Kemel Widgets Help |,.-+°"* Interrupt kernel
+Restart kernel & run J. interupt -° °° = Interrupt kernel & Download serialized
+all cells wee, “Restart Jee clear all output state of all widget eee Hep
+8050, Restart & Clear Output + *" d | in .
+* +) «Restart & Rum Al Connect back to a mode's In Use Save Notebook with Widgets
+
+poooree®
+
+Restart kernel & run
+all cells
+
+eee
+
+.
+cary
+.
+a
+.
+cary
+|
+eoeeer ree eet —mUmUmUmm™m™m™UhUvFADM—DFANHTANHNDHAW .}§=©=—erer—eeeeeeeeeeee
+
+remote notebook
+
+Reconnect
+
+* * Shutdown
+Change kernel Ss an
+
+e.
+.
+tee,
+.
+.
+
+. Embed Widgets
+Run other installed
+
+kernels
+
+Command Mode:
+
+Download Widget State
+
+with interactive
+widgets
+
+oe?
+.
+oe?
+ec
+.
+ele
+.
+
+Embed current
+widgets
+
+- jupyter MyJupyterNotebook Last Checkpoint: a few seconds ago (unsaved changes)
+
+File Edit View Insert Cell Kernel Widgets Help
++ =x ® KR ® &© WH HC Code +) |
+1 2 3 4 5 6 7 8 9 10 11 12
+
+Oia
+
+Trusted | Python 3 O
+
+13 14
+
+| In [ ]:
+
+Edit Mode:
+
+| In (1: |
+Executing Cells
+
+Run current cells down
+and create a new one
+
+. Save and checkpoint
+. Insert cell below
+
+. Cut cell
+
+. Copy cell(s)
+
+. Paste cell(s) below
+
+. Move cell up
+
+. Move cell down
+
+. Run current cell
+
+CONAOKRONPE
+
+Run selected cell(s)
+
+9. Interrupt kernel
+
+10. Restart kernel
+
+11. Display characteristics
+
+12. Open command palette
+
+13. Current kernel
+
+14. Kernel status
+
+15. Log out from notebook server
+
+ma Cell Kernel — Widgets nallaw Asking For Help
+Run current cells down =" *}- Runcelis pet
+and create anew one -...__ Run Cells and Select Below -* Walk through a UI tour
+above "* Run Cells and insert Below = Run all cells g 7
+RunAll eceeerrrrt tte . 9 mo
+Run all cells above the ....).. Run All Above Run all cells below _ | nee I . pate keyboard
+current cell Run AliBelow essere the current cell Edit the built-in "+ User Interface Tour i. - Shortcuts
+keyboard shortcuts ... Keyboard Ghortois - - .
+Change the cell type of ....|.. Cell Type p toggle, toggle y mE 22000 + + Edit Keyboard Shortcuts _,Notebook help topics
+current cell Cuwent Oulpats rleceeeee scrolling and clear Description of votebook ay oo
+toggle, toggle ....-|: All Output , current outputs markdown available --..... « « Mariedown o Information on
+scrolling and clear in notebook Jupyter-contrib __.. unofficial Jupyter
+all output Python help topics nbextensions @*r" Notebook extensions
+‘anCalle SR ; + Python G IPython help topics
+View Cells NumPy help topics ...| ‘Per pee y p top
+Toggle display of Jupyter “y+ NumPy @ | _,.. SciPy help topics
+le oS nd flevame PY Toggle display of toolbar Matplotlib help topics... Gory ay"
+g Co, View Insert Cell .* * Matplotlib ae SymPy help topics
+ale Header Togsle display of cell Pandas help topics SymPy en
+Toggle Tootbar -*' 7 ack None About Jupyter Notebook
+ere oe eames - Edit metadata
+; a a - Raw cell format
+Toggle line numbers - Slideshow
+in cells - Attachments
+- Tags DataCamp
+
+Learn Python for Data Science
+
+\)
+Python For Data Science Cheat Sheet
+
+NumPy Basics
+Learn Python for Data Science Interactively at www.DataCamp.com
+
+NumPy
+
+The NumPy library is the core library for scientific computing in
+Python. It provides a high-performance multidimensional array
+object, and tools for working with these arrays.
+
+Array dimensions
+
+Length of array
+
+Number of array dimensions
+Number of array elements
+
+a.shape
+
+len (a)
+b.ndim
+e.size
+b.dtype
+b.dtype.name
+b.astype (int)
+
+Data type of array elements
+Name of data type
+Convert an array to a different type
+
+Asking For Help
+
+>>> np.info(np.ndarray.dtype)
+
+Array Mathematics
+Arithmetic Operations
+
+>>> g
+
+Use the following import convention:
+>>> import numpy as np
+
+Subtraction
+
+array ([
+NumPy Arrays
+1D array 2D array 3D array >>> np.subtract (a,b) Subtraction
+>>> bta Addition
+A axis 2 array([[ 2.5, 4. , - |
+axis Ty [5., Te, 9]
+
+axis 1.
+axis O —»>
+
+Addition
+Division
+
+>>> np.add(b,a)
+
+>>> a/b
+array ([[ 0.66666667,
+[ 0.25 ,
+
+>>> np.divide (a,b)
+>>> a*b
+array([{[ 1.5, 4. , 9.
+[ 4. , 10. , 18.
+-multiply (a,b)
+.exp (b)
+
+axis O —»>
+4 sto
+
+Creating Arrays
+
+a = np.array([1,2,3])
+= np.array([(1.5,2,3),
+= np.array([[(1.5,2,3),
+dtype = float)
+
+0.4
+Division
+Multiplication
+
+dtype = float)
+[(3,2,1), (4,5,6)]],
+
+>>>
+>>>
+>>>
+>>>
+>>>
+
+Multiplication
+
+Exponentiation
+
+Square root
+
+Print sines of an array
+Element-wise cosine
+Element-wise natural logarithm
+Dot product
+
+(4,5,6) ]
+)
+
+(4,5,6)],
+
+Initial Placeholders
+
+Create an array of zeros
+
+Create an array of ones
+
+Create an array of evenly
+
+spaced values (step value)
+
+Create an array of evenly
+
+spaced values (number of samples)
+Create a constant array
+
+Create a 2X2 identity matrix
+Create an array with random values
+Create an empty array
+
+np.zeros ((3,4))
+np.ones ((2,3,4) ,dtype=np.intl16é)
+d = np.arange(10,25,5)
+
+np.linspace (0,2, 9)
+
+e = np.full((2,2),7)
+
+f = np.eye (2)
+np.random. random ( (2,2) )
+np.empty ( (3,2) )
+
+Saving & Loading On Disk
+
+>>> np.save('my array', a)
+>>> np.savez('array.npz', a,
+>>> np.load('my array.npy')
+
+Saving & Loading Text Files
+
+>>> np.loadtxt ("myfile.txt"
+>>> np.genfromtxt ("my file.csv",
+>>> np.savetxt("myarray.txt", a,
+
+>>> a
+array([[f®alse,
+
+Element-wise comparison
+True],
+
+False]],
+
+True,
+[False,
+
+>>> a < 2
+array([True,
+
+False, dtype=bool1)
+
+Element-wise comparison
+
+False, False],
+
+>>> np.array equal(a, b)
+
+dtype=bool1)
+Array-wise comparison
+
+>>> a. ( Array-wise sum
+>>> ( Array-wise minimum value
+>>> b.max (axis=0) Maximum value of an array row
+
+a
+
+b) b
+>>> b.cumsum (axis=1) Cumulative sum of the elements
+
+a
+
+b
+
+a
+
+>>> a.mean() Mean
+>>> b.median ()
+>>> a.corrcoef ()
+>>> np.std(b)
+
+Median
+Correlation coefficient
+Standard deviation
+
+Copying Arrays
+
+>>> h = a.view() Create a view of the array with the same data
+>>> np.copy (a) Create a copy of the array
+a.copy () Create a deep copy of the array
+
+Sorting Arrays
+
+>>> a.sort() Sort an array
+>>> c.sort (axis=0) Sort the elements of an array's axis
+
+delimiter=',')
+delimiter=" ")
+
+Data Types
+
+>>> np.int64
+>>> np.float32
+>>> np.complex
+>>> bool
+
+>>> object
+>>> string_
+>>> unicode |
+
+Signed 64-bit integer types
+
+Standard double-precision floating point
+Complex numbers represented by 128 floats
+Boolean type storing TRUE and FALSE values
+Python object type
+
+Fixed-length string type
+
+Fixed-length unicode type
+
+>>> h =
+
+np.
+np.
+np.
+np.
+
+Subsettinc
+
+Subsetting ne
+1 2
+
+nom
+
+py fe
+
+Slicing
+
+>>> al0:2]
+array([1, )
+
+>>> b[0:2,1]
+array([ 2., 5.])
+
+>>> b[:1]
+array([[1.5, 2., 3.]])
+>>> c[l,...]
+array([[[ 3., 2.
+[ 4., 5.,
+>>> al 2-1]
+array([3, 2, 1])
+Boolean Indexing
+>>> afla<2]
+array([1])
+Fancy Indexing
+>>> b[[1, 0, 1,
+array ( - 7 2.
+>>> b[[1, 0, 1,
+array({l 4s + :
+
+1.5,
+[4.,
+[ 1.5,
+
+0], [0, 1, 2, 0]]
+
+Transposing Array
+
+np.transpose (b)
+
+Changing Array Shape
+
+>>> b.ravel ()
+>>> g.reshape(3,-2)
+
+Adding/Removing Elements
+>>> h.resize((2,6))
+>>> np.append(h,g)
+>>> np.insert(a, 1,
+>>> np.delete(a, [1])
+Combining Arrays
+>>> np.concatenate((a,d),axis=0)
+array([ 1, 2, 3, 10, 15, 20])
+>>> np.vstack((a,b))
+
+S)
+
+array([[ l. ,
+[ 1.5,
+[ 4. ,
+
+>>> np.r_ [e,f]
+>>> np.hstack((e,f
+array([[ 7., 7.,
+Ll Dog Tog
+>>> np.column_ stac
+
+array([{[ 1, 10],
+[ 2, 15],
+[ 3, 20]])
+>>> np.c_[a,d]
+
+Splitting Arrays
+>>> np.hsplit (a, 3)
+[array([1]),array([2]),array([3])]
+
+>>> np.vsplit(c, 2)
+[array([[[ 1.5,
+
+. ,
+
+So
+So
+6
+
+cr
+
+cr
+
+Also see Lists
+
+Select the element at the 2nd index
+
+Select the element at row 0 column 2
+(equivalent to b[1] [2])
+
+Select items at index 0 and 1
+
+Select items at rows O and1incolumn1
+
+Select all items at row o
+(equivalent to b[0:1, :])
+Sameas [1,:,:]
+
+Reversed array a
+
+Select elements from a less than 2
+
+Select elements (1,0), (0,1), (1,2) and (0,0)
+
+Select a subset of the matrix’s rows
+and columns
+
+Permute array dimensions
+Permute array dimensions
+
+Flatten the array
+Reshape, but don’t change data
+
+Return a new array with shape (2,6)
+Append items to an array
+
+Insert items in an array
+
+Delete items from an array
+
+Concatenate arrays
+
+Stack arrays vertically (row-wise)
+
+Stack arrays vertically (row-wise)
+Stack arrays horizontally (column-wise)
+
+Create stacked column-wise arrays
+
+Create stacked column-wise arrays
+
+Split the array horizontally at the 3rd
+index
+Split the array vertically at the 2nd index
+
+Learn Python for Data Science
+Also see NumPy
+
+Linear Algebra
+
+Python For Data Science Cheat Sheet
+SciPy - Linear Algebra
+
+Learn More Python for Data Science !nteractively at www.datacamp.com
+
+You'll use the 1inalg and sparse modules. Note that scipy.1linalg contains and expands on numpy.linalg.
+
+Matrix Functions
+
+Creating Matrices Addition
+; >>> np.add (A, D) Addition
+-matrix(np.random.random((2,2))) .
+SciPy -asmatrix (b) Subtraction
+, . . .mat (np.random.random((10,5))) >>> np.subtract (A,D) Subtraction
+The SciPy library is one of the core packages for smat({[3,4], [5,6]]) Division
+scientific computing that provides mathematical S ociPy Basic Matrix Routines >>> np.divide (A, D) Division
+algorithms and convenience functions built on the Multiplication ae
+; Inverse >>> np.multiply(D,A) Multiplication
+NumPy extension of Python. | >>> np.dot (A, D) Dot product
+: : <“ oon sav (a) inverse >>> np.vdot (A,D) Vector dot product
+Interacting With NumPy Also see NumPy So ot o: Tranpose matrix >>> np. inner (A,D) Inner product
+; >>> np.outer (A, D) Outer product
+
+numpy as np
+.array([1,2,3])
+
+-array([(1+55,23,33), (43,53,63) 1)
+array([[(1.5,2,3), (4,5,6)], [(3,2,1),
+
+>>> A.H
+>>> np.trace (A)
+
+Norm
+
+Conjugate transposition >>> np.tensordot (A, D)
+Trace >>> np.kron (A,D)
+
+Exponential Functions
+
+Tensor dot product
+Kronecker product
+
+(4,5,6)]])
+
+>>> no.mgrid[0:5,0:5]
+>>> np.ogrid[0:2,0:2]
+>>> np.r_ [[3, [0]*5,-1:1:103]
+
+>>> np.c_ [b,c]
+
+>>> np.transpose(b
+>>> b.flatten ()
+
+>>> np.hstack
+>>> np.vstack
+>>> np.hsplit
+
+( (
+( (
+(c
+>>> np.vpslit(d
+
+Polynomials
+
+Create a polynomial object
+Vectorizing Functions
+
+>>> from numpy import polyld
+>>> p = polyld([3,4,5])
+
+>>> def myfunc(a):
+if a< 0:
+return a*2
+else:
+return a/2
+
+>>> np.vectorize (myfunc)
+
+Create a dense meshgrid
+
+Create an open meshgrid
+
+Stack arrays vertically (row-wise)
+Create stacked column-wise arrays
+
+Permute array dimensions
+Flatten the array
+
+Stack arrays horizontally (column-wise)
+Stack arrays vertically (row-wise)
+
+Split the array horizontally at the 2nd index
+
+Split the array vertically at the 2nd index
+
+Vectorize functions
+
+>>> linalg.norm (A)
+
+>>> linalg.norm(A,1)
+
+>>> linalg.norm(A,np.inf)
+Rank
+
+>>> np.linalg.matrix rank(C)
+Determinant
+>>> linalg.det (A)
+
+Solving linear problems
+>>> linalg.solve(A,b)
+>>> E = np.mat(a).T
+>>> linalg.lstsq(D,B&)
+
+Generalized inverse
+>>> linalg.pinv(C)
+
+>>> linalg.pinv2(C)
+
+Creating Sparse Matrices
+
+F = np.eye(3, k=1)
+= np.mat(np.identity(2) )
+> 0.5] = 0
+= sparse.csr matrix(C)
+sparse.csc_ matrix (D)
+= sparse.dok matrix (A)
+. todense ()
+
+Frobenius norm
+L1 norm (max column sum)
+L inf norm (max row sum)
+
+Matrix rank
+Determinant
+
+Solver for dense matrices
+
+Solver for dense matrices
+Least-squares solution to linear matrix
+equation
+
+Compute the pseudo-inverse of a matrix
+(least-squares solver)
+
+Compute the pseudo-inverse of a matrix
+(SVD)
+
+Create a 2X2 identity matrix
+Create a 2x2 identity matrix
+
+Compressed Sparse Row matrix
+Compressed Sparse Column matrix
+Dictionary Of Keys matrix
+
+Sparse matrix to full matrix
+
+>>> Llinalg.expm (A)
+>>> Llinalg.expm2 (A)
+>>> Llinalg.expm3 (D)
+
+Logarithm Function
+
+>>> linalg.logm(A)
+Trigonometric Tunctions
+>>> Llinalg.sinm(D)
+>>> linalg.cosm(D)
+>>> Llinalg.tanm(A)
+
+Matrix exponential
+Matrix exponential (Taylor Series)
+
+Matrix exponential (eigenvalue
+decomposition)
+
+Matrix logarithm
+
+Matrix sine
+Matrix cosine
+Matrix tangent
+
+Hyperbolic Trigonometric Functions
+
+>>> Llinalg.sinhm(D)
+>>> Llinalg.coshm(D)
+>>> Llinalg.tanhm (A)
+
+Matrix Sign Function
+>>> np.sigm (A)
+
+Matrix Square Root
+>>> linalg.sqrtm(A)
+
+Arbitrary Functions
+>>> Llinalg.funm(A,
+
+Decompositions
+
+Eigenvalues and Eigenvectors
+>>> la, v = linalg.eig(A)
+
+>>> 11, 12 = la
+
+lambda x: x*x)
+
+Hypberbolic matrix sine
+Hyperbolic matrix cosine
+Hyperbolic matrix tangent
+
+Matrix sign function
+Matrix square root
+
+Evaluate matrix function
+
+Solve ordinary or generalized
+eigenvalue problem for square matrix
+Unpack eigenvalues
+
+Type Handling
+
+>>> sparse.isspmatrix csc (A) Identify sparse matrix >>> v[1,0]
+
+>>> vi:,1]
+
+Sparse Matrix Routines >>> linalg.eigvals (A)
+
+Singular Value Decomposition
+Inverse >>> U,s,Vh = linalg.svd(B)
+>>> sparse.linalg.inv(I) Inverse = B.shape
+Norm ig = linalg.diagsvd(s,M,N)
+LU Decomposition
+>>> P,L,U = linalg.1lu(C)
+
+First eigenvector
+Second eigenvector
+Unpack eigenvalues
+
+Return the real part of the array elements
+Return the imaginary part of the array elements
+Return a real array if complex parts close too
+Cast object to a data type
+
+>>> np.real(c)
+>>> np.imag(c)
+>>> np.real_ if close (c, tol=1000)
+
+>> np.cast['f'] (np.pi) Singular Value Decomposition (SVD)
+
+Construct sigma matrix in SVD
+
+Norm
+
+>
+Other Useful Functions
+>
+
+>>> sparse.linalg.norm(T)
+Solving linear problems
+>>> sparse.linalg.spsolve (H, TI)
+
+>> np.angle(b, deg=True) Return the angle of the complex argument
+>>> g = np.linspace(0,np.pi,num=5) |Create an array of evenly spaced values
+(number of samples)
+
+LU Decomposition
+Solver for sparse matrices
+
+>>> g [3:] += np.pi
+
+>>> np.unwrap (g)
+
+>>> np.logspace(0,10,3)
+>>> np.select ([c<4], [c*2])
+
+Sparse Matrix Decompositions
+
+Sparse Matrix Functions
+>>> la, v = sparse.linalg.eigs(F,1) | Eigenvalues and eigenvectors
+Sparse matrix exponential >>> sparse.linalg.svds(H, 2) SVD
+
+Asking For Help
+
+Unwrap
+
+Create an array of evenly spaced values (log scale)
+Return values from a list of arrays depending on
+conditions
+
+Factorial
+
+Combine N things taken at k time
+
+Weights for Np-point central derivative
+
+Find the n-th derivative of a function at a point
+
+>>> misc.factorial (a)
+
+>>> misc.comb(10,3,exact=True)
+>>> misc.central diff weights (3)
+>>> misc.derivative (myfunc,1.0)
+
+DataCamp
+
+Learn Python for Data Science
+
+>>> help(scipy.linalg.diagsvd)
+>>> np.info(np.matrix)
+
+Python For Data Science Cheat Sheet
+>>> help(pd.Series.loc)
+
+Selection Also see NumPy Arrays
+
+Get one element
+
+Pandas Basics
+Learn Python for Data Science Interactively at www.DataCamp.com
+
+Pandas
+
+The Pandas library is built on NumPy and provides easy-to-use
+data structures and data analysis tools for the Python
+
+programming language. MAA
+pandas |Add
+
+yit = B' vie + pi + Et
+
+>>> dft[1:]
+Country
+India
+
+2 Brazil
+
+Population
+1303171035
+207847528
+
+Capital
+New Delhi
+Brasilia
+
+Use the following import convention: By Position
+>>> import pandas as pd >>> df.iloc([0], [0])
+"Belgium'
+Pandas Data Structures >>> d£.iat({0],[0])
+Series "Belgium!
+A one-dimensional labeled array By Label
+capable of holding any data type eee dt.toc([0}, ['Ccountry'])
+Fal "Belgium!
+Index >>> df.at([0], ['Country'])
+"Belgium'
+>>> s = pd.Series([3, -5, 7, 4], index=['a', 'b', ta'y) By Label/Position
+>>> df.ix[2]
+DataFrame Country Brazil
+Capital Brasilia
+Columns Population 207847528
+~« [Gein Gap Population] A two-dimensionallabeled >>> df.ix[:,'Capital']
+
+data structure with columns 0 Brussels
+1 New Delhi
+
+of potentially different types 2 Brasilia
+
+New Delhiff1303171035
+207847528
+
+>>> df.ix[1, 'Capital']
+"New Delhi'
+
+Boolean Indexing
+
+||
+Index
+
+>>> data = {'Country': ['Belgium', 'India', 'Brazil'], >>> s[~(s > 1)]
+"Capital': ['Brussels', 'New Delhi', 'Brasilia'], >>> s[(s < -1) | (s > 2)]
+"Population': [11190846, 1303171035, 207847528] } >>> df [df ['Population']>1200000000]
+>>> df = pd.DataFrame (data, Setting
+
+columns=['Country', 'Capital', 'Population'])
+
+Read and Write to CSV Read and Write to SQL Query or Database Table
+
+>>> pd.read _csv('file.csv', header=None, nrows=5)
+
+>>> df.to csv('myDataFrame.csv') engine =
+
+Read and Write to Excel
+
+>>> pd.read_ excel ('file.xlsx')
+
+pd.read_ sql table('my table',
+
+>>> pd.to excel ('dir/myDataFrame.xlsx', sheet name='Sheetl1')
+
+Read multiple sheets from the same file
+>>> xlsx = pd.ExcelFile('file.xls')
+>>> df = pd.read_ excel (xlsx, 'Sheetl')
+
+read_sql query()
+
+>>> pd.to sql('myDf', engine)
+
+Get subset of a DataFrame
+
+Selecting, Boolean Indexing & Setting
+
+from sqlalchemy import create _
+create engine('sqlite:///:memory:')
+pd.read_ sql ("SELECT * FROM my table;",
+pd.read_ sql query("SELECT * FROM my table;",
+
+read_sql()isaconvenience wrapper around read sql table() and
+
+>>> s.drop(['a', 'c']) Drop values from rows (axis=0)
+
+>>> df.drop('Country', axis=1) | Drop values from columns(axis=1)
+
+Sort & Rank
+
+>>> df.sort index()
+
+Sort by labels along an axis
+Sort by the values along an axis
+Assign ranks to entries
+
+>>> df.sort values (by='Country')
+
+>>> df.rank()
+
+Retrieving Series/DataFrame Information
+
+Basic Information
+df
+
+(rows,columns)
+
+Describe index
+
+Describe DataFrame columns
+Info on DataFrame
+
+Number of non-NA values
+
+.shape
+. index
+.columns
+-info()
+.count ()
+
+Select single value by row &
+column
+
+Sum of values
+
+Cummulative sum of values
+Minimum/maximum values
+Minimum/Maximum index value
+Summary statistics
+
+Mean of values
+
+Median of values
+
+. sum ()
+
+.cumsum ()
+
+-min() /df£.max ()
+.idxmin ()/df£.idxmax ()
+describe ()
+
+.-mean ()
+
+-median()
+
+Select single value by row &
+column labels
+
+Fy FH Fh Fh) Fh) Fh Fh
+
+Select single row of
+subset of rows
+
+>>> f£ = lambda x: x*2
+>>> df.apply(f)
+
+>>> df.applymap (f£)
+
+Apply function
+Apply function element-wise
+
+Select a single column of
+subset of columns
+
+Select rows and columns
+
+Internal Data Alignment
+
+NA values are introduced in the indices that don’t overlap:
+
+Series s where value is not >1 -2, 3], index=['a', 'c',
+
+s where value is <-1 or >2
+Use filter to adjust DataFrame
+
+Set index a of Series s to 6
+
+You can also do the internal data alignment yourself with
+the help of the fill methods:
+
+.add(s3, fill value=0)
+10.0
+-5.0
+5.0
+7.0
+-sub(s3, fill value=2)
+-div(s3, fill value=4)
+-mul(s3, fill value=3)
+
+engine
+
+engine)
+engine)
+
+engine)
+
+DataCamp
+
+Learn Python for Data Science
+e 9
+Python For Data Science Cheat Sheet @Sicicacits Model Evaluate Your Model’s Performance
+Learn Python for data science Interactively at www.DataCamp.com Linear Regression Accuracy Score
+>>> from sklearn.linear model import LinearRegression >>> knn.score(X_test, y_test) Estimator score method
+Support Vector Machines (SVM) re accuracy _score(y test, y_pred)
+Scikit-learn is an open source Python library that Naive Bayes >>> print(classification report (y test, y pred))
+(earn >>> from sklearn.naive bayes import GaussianNB Confusion Matrix
+preprocessing, cross-validation and visualization 9 = >>> print (confusion matrix(y test, y pred))
+algorithms using a unified interface. KNN
+g . g >>> from sklearn import neighbors Regression Metrics
+f kl t neighbors, datasets, : ; :
+from sklearn.metrics import accuracy score >>> y_true = [3, -0.5, 2]
+X, y = iris.data[:, :2], iris.target >>> from sklearn.decomposition import PCA Mean Squared Error
+X train, X test, y train, y test= train test split (x, y, random state=33) >>> pca = PCA(n components=0.95) SoS Ff
+scaler = preprocessing.StandardScaler() .fit (X_train) K Means >>> mean squared _error(y test, y_ pred)
+in = ler. f
+¥_train = scaler. transform(¥_train) >>> from sklearn.cluster import KMeans R? Score
+knn = neighbors.KNeighborsClassifier (n_ neighbors=5)
+knn.fit (X_ train, y train) aad re_score(y_true, y_pred)
+; ; Adjusted Rand Index
+Supervised learning Fit the model to the data >>> £ k1 trics ji t adjusted d
+e ; l rom s €arn.metrics impor adadjuste ran Score
+Loadina The Data Also see NumPy & Pandas >>> lr. fit (X, y) SSS adjusted rand score(y true, y pred) ~~
+
+“1° i i i Classification Metrics
+Scikit-Learn Supervised Learning Estimators
+>>> lr = LinearRegression (normalize=Truc) >>> from sklearn.metrics import accuracy score |Metric scoring functions
+>>> svc = SVC(kernel='linear') >>> from sklearn.metrics import classification report | Precision, recall, fi-score
+implements a range of machine learning,
+>>> gnb = GaussianNB()_ >>> from sklearn.metrics import confusion matrix
+A Basic Example >>> knn = neighbors.KNeighborsClassifier (n neighbors=5)
+Mean Absolute Error
+iris = datasets.load iris() - Principal Component Analysis (PCA) >>> mean absolute error(y true, y pred)
+from sklearn.metrics import mean squared error
+X test = scaler.transform(X test) - . .
+i I >>> k_ means = KMeans(n clusters=3, random state=0) >>> from sklearn.metrics import r2_score
+y_ pred = knn.predict (X_test) Clustering Metrics
+accuracy score(y test, y pred)
+>>> knn.fit (X_ train, y train)
+
+Your data needs to be numeric and stored as NumPy arrays or SciPy sparse >>> svc.fit(X_train, y train) Homogeneity er th t
+
+9 9 9 be be rom s earn.metrics impor omogenel Score
+matrices. Other types that are convertible to numeric arrays, such as Pandas Unsupervised Learning SSS homogeneity score (y trae 5 pred) Y_
+DataFrame, are also acceptable. >>> k_means .fit (X_train) Fit the model to the data - a
+
+V-measure
+>>> from sklearn.metrics import v_measure_ score
+>>> metrics.v_ measure score(y true, y pred)
+
+Prediction Cross-Validation
+
+Supervised Estimators >>> from sklearn.cross validation import cross val score
+
+: >>> i 1 , in, in,
+= svc.predict (np. random. random ( (2,5) ))| Predict labels SS> Print (cross aes ane ial x vow ey ovea))
+= lr.predict (X test) Predict labels : : :
+
+>>> = . 7 . ‘ .
+import numpy as np pca_model = pca.fit_transform(X_train) | Fit to data, then transform it
+
+X = np.random.random( (10,5) )
+y = np.array(['M', 'M','F','F',
+X[X < 0.7] = 0
+
+Training And Test Data
+
+>>> from sklearn.model selection import train test split = knn.predict proba (X_test) Estimate probability of a label
+
+>>> X train, X test, y train, y test = train test split (X,
+
+y, Unsupervised Estimators
+
+random_state=0) >>> y_pred = k_means.predict (X_test) Predict labels in clustering algos Grid Search
+
+from sklearn.grid search import GridSearchCVv
+e arams = {"n neighbors": np.arange(1,3),
+Preprocessing The Data ° ‘imStric": [teuclidean". "cityblock"} }
+grid = GridSearchCV (estimator=knn,
+param grid=params)
+grid.fit (X_train, y train)
+from sklearn.preprocessing import StandardScaler >>> from sklearn.preprocessing import LabelEncoder print (grid.best_score_)
+scaler = StandardScaler() .fit (X train) >>> enc = LabelEncoder () print (grid.best estimator .n neighbors)
+standardized X = scaler.transform(X train)
+standardized X test = scaler.transform(X test)
+
+Tune Your Model
+
+>>> y = enc.fit transform(y)
+
+>>> from sklearn.grid search import RandomizedSearchCv
+>>> params = {"n neighbors": range(1,5),
+
+; ; "weights": ["uniform", "distance"] }
+>>> from sklearn.preprocessing import Imputer rsearch = RandomizedSearchcv (estimator-knn,
+
+>>> imp = Imputer(missing values=0, strategy='mean', axis=0) param distributions=params,
+>>> imp.fit transform(X train) =4,
+
+from sklearn.preprocessing import Normalizer
+scaler = Normalizer() .fit (X_train)
+
+normalized X = scaler.transform(X train)
+normalized X test = scaler.transform(X_ test)
+
+random state=5)
+rsearch.fit (X_train, y_ way”)
+print (rsearch.best score _
+
+>>> from sklearn.preprocessing import Binarizer >>> from sklearn.preprocessing import PolynomialFeatures
+
+>>> binarizer = Binarizer(threshold=0.0) .fit (X) ly = PolynomialFeatures (5) DataCam
+>>> binary X = binarizer.transform(X) ly.fit transform (X) p
+= = Learn Python for Data Science
+
+Python For Data Science Cheat Sheet faMlncw aise
+Workflow
+
+M atp | otl | b Faw | The basic steps to creating plots with matplotlib are:
+Learn Python Interactively at www.DataCamp.com 1 Preparedata 2Createplot 3Plot 4 Customizeplot 5Saveplot © Showplot
+
+import matplotlib.pyplot as plt
+x = [1,2,3,4]
+= [10,20,25, 30] <om
+fig plt.figure ()
+ax = fig.add_ subplot (111)
+ax.plot(x, y, color='lightblue', linewidth=3)<@m Ew)
+ax.scatter([2,4,6],
+
+[5,15,25],
+color='darkgreen',
+marker='*')
+
+ax.set_xlim(1, 6.5)
+plt.savefig('foo.png')
+
+plt.show () e otep 6 |
+
+4) Customize Plot
+SSS X= np. linspace(0, 10, 100) Colors, Color Bars & Color Maps Mathtext
+
+np .cos (x) plt.plot(x, x, x, x**2, x, x**3)
+np.sin (x) ax.plot(x, y, alpha = 0.4)
+ax.plot(x, y, c='k') Limits, Legends & Layouts
+fig.colorbar(im, orientation="'horizontal')
+im = ax.imshow(img,
+data = 2 * np.random.random((10, cmap='seismic')
+data2 = 3 * np.random.random((10,
+Y, X = np.mgrid[-3:3:100j, -3:3:1003]
+U = -1 - x**2 4+ Y
+V=1+X - Y**2
+from matplotlib.cbook import get sample data
+
+Matplotlib
+Matplotlib is a Python 2D plotting library which produces
+
+publication-quality figures in a variety of hardcopy formats
+
+and interactive environments across x matp | ot| b
+
+platforms.
+
+@ Prepare The Data Also see Lists & NumPy
+1D Data
+
+>>> plt.title(r'Ssigma_i=15$', fontsize=20)
+
+Limits & Autoscaling
+ax.margins (x=0.0, y=0.1) Add padding to a plot
+ax.axis('equal') Set the aspect ratio of the plot to 1
+ax.set (xlim=[0,10.5], ylim=[-1.5,1.5]) Set limits for x-and y-axis
+ax.set_xlim(0,10.5) Set limits for x-axis
+
+Legends
+>>> ax.set(title='An Example Axes', Set a title and x-and y-axis labels
+ylabel='Y-Axis',
+xlabel='X-Axis')
+>>> ax.legend(loc='best') No overlapping plot elements
+Ticks
+>>> ax.xaxis.set(ticks=range(1,5), Manually set x-ticks
+ticklabels=[3,100,-12,"f00"])
+>>> ax.tick params (axis='y', Make y-ticks longer and go in and out
+7 direction='inout',
+
+. length=10
+Text & Annotations eng )
+Subplot Spacing
+
+>>> ax.text(1, >>> fig3.subplots adjust (wspace=0.5, Adjust the spacing between subplots
+
+Markers
+
+>>> fig, ax = plt.subplots()
+
+>>> ax.scatter(x,y,marker=".")
+>>> ax.plot(x,y,marker="0")
+
+C PI Linestyles
+reate ot -plot (x,y, linewidth=4.0)
+: : .plot(x,y,1ls='solid'
+>>> import matplotlib.pyplot as plt eect test on') )
+
+img = np.load(get_sample data('axes grid/bivariate normal.npy') )
+
+. -plot (x,y, '--',x**2,y**2,'-.')
+Figure .setp (lines, color='r',linewidth=4.0)
+>>> fig = plt.figure()
+>>> fig2 plt.figure (figsize=plt.figaspect (2.0) )
+
+. . -2.1, hspace=0.3,
+All plotting is done with respect to an Axes. In most cases, a 'Example Graph’, left=0.125,
+. . , style='italic') right=0.9,
+subplot will fit your needs. A subplot is an axes on a grid system. SS> ax.annotate ("Sine", top=0 9.
+
+fig.add_axes () xy= (8, 0), ; bottom=0.1)
+axl = fig.add subplot (221) # row-col-num xycoords= ‘data’, >>> fig. tight_layout () Fit subplot(s) in to the figure area
+; — xytext=(10.5, 0), . .
+ax3 = fig.add_subplot (212) textcoords='data', Axis Spines
+fig3, axes = plt.subplots (nrows=2,ncols=2) arrowprops=dict (arrowstyle="->", >>> axl.spines['top'].set visible (false) Make the top axis line for a plot invisible
+
+fig4, axes2 = plt.subplots (ncols=3) connectionstyle="arc3"),) | >>> axl.spines['bottom'].set position (('outward', 10) )|Move the bottom axis line outward
+
+Save figures
+
+: = >>> plt.savefig('foo.png')
+fig, ax = plt.subplots() ; oo . >>> axes[0,1].arrow(0,0,0.5,0.5) Add an arrow to the axes S fi
+lines = ax.plot(x,y) Draw points with lines or markers connecting them >>> axes[1,1].quiver (y,z) Plot a 2D field of arrows ave transparent figures
+
+ax.scatter (x,y) Draw unconnected points, scaled or colored >>> axes[0,1].streamplot (X,Y,U,V) | Plota2D field of arrows >>> plt.savefig('foo.png', transparent=Truc)
+
+axes[0,0].bar([1,2,3],[3,4,5]) Plot vertical rectangles (constant width)
+axes[1,0].barh([0.5,1,2.5],[0,1,2]) | Plot horiontal rectangles (constant height)
+axes[1,1].axhline(0.45) Draw a horizontal line across axes
+
+axes[0,1].axvline(0.65) Draw a vertical line across axes >>> axl.hist(y) Plot a histogram I A
+ax. fill (x, y,color='blue') Draw filled polygons >>> ax3.boxplot (y) Make a box and whisker plot 22> plt.show()
+
+ax.fill between (x,y,color='yellow') | Fill between y-values and o >>> ax3.violinplot (z) Make a violin plot
+
+Close & Clear
+
+>>> plt.cl | i
+ax = plt.subplots () axes2[0].pcolor (data2) Pseudocolor plot of 2D array SSS ele ele) Clear the ontire figure
+
+ax.imshow (img, cet earth Colormapped or RGB arrays axes2[0].pcolormesh (data) Pseudocolor plot of 2D array SSS plt close () Close a window
+inter Seat Tone necrest' CS = plt.contour (Y,X,U) Plot contours
+P ’ axes2[2].contourf (datal) Plot filled contours
+
+vine axes2[2]= ax.clabel (CS) Label a contour plot DataCamp
+vmax=2 ) Learn Python for Data Science
+Python For Data Science Cheat Sheet @MAEoir MULE. yi A
+Seaborn
+
+Learn Data Science Interactively at www.DataCamp.com sns.FacetGrid(titanic, Subplot grid for plotting conditional = sns.PairGrid(iris) Subplot grid for plotting pairwise
+col="survived", | relationships = h.map (plt.scatter) relationships
+row="sex") .pairplot (iris) Plot pairwise bivariate distributions
+g.map(plt.hist,"age") sns.JointGrid(x="x", Grid for bivariate plot with marginal
+.factorplot (x="pclass", Draw a categorical plot onto a y="y", univariate plots
+y="survived", Facetgrid data=data)
+Statistical Data Visualization With Seaborn re He PEO (one eon
+data=titanic) sns.distplot)
+The Python visualization library Seaborn is based on .lmplot (x="sepal width", Plot data and regression model fits .jointplot("sepal length", | Plot bivariate distribution
+. . . . . y="sepal length", across a FacetGrid "sepal width",
+matplotlib and provides a high-level interface for drawing hue="species", data-iris,
+
+attractive statistical graphics. data=iris) kind='kde')
+
+Categorical Plots Regression Plots
+
+>>> sns.regplot(x="sepal width", Plot data and a linear regression
+
+Make use of the following aliases to import the libraries:
+Scatterplot y="sepal_ length", model fit
+
+aa import matplotlib.pyplot as plt >>> sns.stripplot (x="species", Scatterplot with one datazird
+>>> import seaborn as sns y="petal_ length", categorical variable GEGSL ELS 1
+
+data=iris) ax=ax)
+
+The basic steps to creating plots with Seaborn are: >>> sns.swarmplot (x="species", Categorical scatterplot with Distribution Plots
+non-overlapping points
+
+y="petal length",
+1. Prepare some data >>> plot = sns.distplot(data.y, Plot univariate distribution
+kde=False,
+color="b"
+
+2. Control figure aesthetics Bar Chart
+
+3. Plot with Seaborn >>> sns.barplot (x="sex", Show point estimates and :
+Furth i | y="survived", confidence intervals with Matrix Plots
+4. Further customize your plot ve entoneean, coaterplot alyphe
+
+data=titanic) >>> sns.heatmap (uniform data, vmin=0, vmax=1) Heatmap
+Count Plot
+
+>>> sns.countplot (x="deck", Show count of observations @ Further Customizations
+
+data=titanic,
+Axisgrid Objects
+
+data=iris)
+
+import matplotlib.pyplot as plt
+
+import seaborn as sns
+
+tips = sns.load_ dataset ("tips")
+
+sns.set_style("whitegrid")
+
+g = sns.implot(x="tip",
+y="total bill",
+
+Also see Matplotlib
+
+palette="Greens d")
+
+Point Plot
+
+data=tips, >>> sns.pointplot (x="class", Show point estimates and .despine (left=True) Remove left spine
+aspect=2) y="survived", confidence intervals as .set_ylabels ("Survived") Set the labels of the y-axis
+>>> g = (g.set axis labels("Tip","Total bill (USI hue="sex", rectangular bars .set_xticklabels (rotation=45)| Set the tick labels for x
+set (xlim=(0,10),ylim=(0,100))) data=titanic, .set_axis labels("Survived", | Setthe axis labels
+>>> plt.title ("title") <c73 eee ore latamny "Sex") set the | dticks of th
+emale vi mt, .set (xlim=(0,5), et the limit and ticks of the
+p>>_ pit. show (9) <= markers=["*","o"], ylim=(0,5), x-and y-axis
+linestyles=["-","--"]) xticks=[0,2.5,5],
+Boxplot yticks=[0,2.5,5])
+>>> sns.boxplot (x="alive", Boxplot
+y="age",
+puport pandas as pd hues"adult_male ’ .title("A Title") Add plot title
+eee Se EP data=titanic) ee label ("Survived") Adjust the label of the y-axis
+uniform_data = np.random.rand(10, 12) >>> sns.boxplot (data=iris, orient="h") Boxplot with wide-form data “yre ) y-axl
+data = pd.DataFrame({'x':np.arange(1,101), a .xlabel ("Sex") Adjust the label of the x-axis
+'y':np.random.normal (0, 4,100) }) Violinplot -ylim(0,100) Adjust the limits of the y-axis
+a >>> sns.violinplot (x="age", Violin plot .xlim(0,10) Adjust the limits of the x-axis
+Seaborn also offers built-in data sets: y="sex", .setp (ax, yticks=[0,5]) | Adjust a plot property
+
+.tight layout () Adjust subplot params
+
+: : 5) Show or Save Plot Also see Matplotlib
+2) Figure Aesthetics Also see Matplotlib
+>>> plt.show() Show the plot
+
+hue="survived",
+
+>>> titanic = sns.load_ dataset ("titanic")
+data=titanic)
+
+>>> iris = sns.load_ dataset ("iris")
+
+Context Functions >>> plt.savefig("foo.png") Save the plot as a figure
+= igsize= >>> plt.savefig("foo.png", Save transparent figure
+>>> f, ax = plt.subplots (figsize= (5,6) ) | Create a figure and one subplot >>> sns.set context ("talk") Set context to "talk" p g  ronbencehter rus) p g
+>>> sns.set context ("notebook", Set context to "notebook",
+Seaborn styles font _scale=1.5, scale font elements and :
+re={"lines.linewidth":2.5}) | override param mapping Close & Clear Also see Matplotlib
+.set () (Re)set the seaborn default
+.set_style("whitegrid") Set the matplotlib parameters Color Palette >>> plt.cla() Clear an axis
+.set_ style("ticks", Set the matplotlib parameters - - >>> plt.clf() Clear an entire figure
+("xtick.major.size":8, sns.set_palette("husl", 3) Define the color palette SSS plt.close () Close a window
+
+sns.color palette("husl") Use with with to temporarily set palette
+
+"vtick.major.size":8})
+.axes style ("whitegrid") Return a dict of params or use with
+with to temporarily set the style
+
+flatul = ["#9b59b6","#3498db", "#95a5a6", "#e74c3c", "#34495e", "#2ecc71"]
+
+sns.set palette (flatui) Set your own color palette DataCamp
+
+Learn Python for Data Science
+
+Python For Data Science Cheat Sheet 3) Renderers & Visual Customizations
+Bokeh
+
+Learn Bokeh Interactively at www.DataCamp.com, Scatter Markers
+taught by Bryan Van de Ven, core contributor >>> pl.circle(np.array([1,2,3]), np.array([3,2,1]),
+fill _color='white')
+>>> p2.square(np.array([1.5,3.5,5.5]), [1,4,3],
+color='blue', size=1)
+‘ ‘ Line Glyphs
+Plotting With Bokeh >>> pl.line({1,2,3,4], [3,4,5,6], line width=2)
+The Python interactive visualization library Bokeh >>> p2.multi_line(pd.DataFrame([[1,2,3],[5,6,7]]),
+pd.DataFrame([[3,4,5],[3,2,1]]),
+
+enables high-performance visual presentation of
+large datasets in modern web browsers.
+
+color="blue")
+
+gd
+
+Bokeh’s mid-level general purpose bokeh. plotting Selection and Non-Selection Glyphs
+interface is centered around two main components: data e727 p = figure (tools="'box_select’)
+>>> p.circle('mpg', 'cyl', source=cds df,
+and glyphs. selection color='red',
+rT o.oo nonselection alpha=0.1)
+
+4 @
+
+: + @ =1)\% Hover Glyphs
+
+oo @ e rere >>> from bokeh.models import HoverTool
+
+data glyphs plot >>> hover = HoverTool (tooltips=None, mode='vline')
+
+>>> p3.add_tools (hover)
+The basic steps to creating plots with the bokeh. plotting
+
+interface are:
+
+Colormapping
+
+1. Prepare some data: = >>> from bokeh.models import CategoricalColorMapper
+Python lists, NumPy arrays, Pandas DataFrames and other sequences of values >>> color mapper = CategoricalColorMapper (
+
+2. Create anew lot factors=['US', 'Asia', 'Europe'],
+
+. p . . . . palette=['blue', 'red', 'green'])
+3. Add renderers for your data, with visual customizations >>> p3.circle('mpg', 'cyl', source=cds df,
+4. Specify where to generate the output color=dict (feld="origin’,
+transform=color mapper),
+5. Show or save the results legend="Origin')
+
+-
+
+from bokeh.plotting import figure
+
+from bokeh.io import output file, show Legend Location
+
+= [1, 2, 3, 4, 5] Step 1.
+= [6, 7, 2, 4, 5]
+
+figure (title="Simple line example", S Step 2 |
+
+Inside Plot Area
+>>> p.legend.location = 'bottom left'
+
+x axis label='x',
+y_axis label='y')
+p.line(x, y, legend="Temp.", line width=2)
+
+output file("lines.html") <@myZy
+show(p) ~<@ithep
+
+0d Data Also see Lists, NumPy & Pandas : :
+Under the hood, your data is converted to Column Data Legend Orientation
+
+Sources. You can also do this manually: >>> p.legend.orientation = "horizontal"
+>>> import numpy as np >>> p.legend.orientation = "vertical"
+>>> import pandas as pd
+
+>>> df = pd.DataFrame(np.array([[33.9,4,65, 'US'], Legend Background & Border
+
+[32.4,4,66, 'Asia'],
+
+Outside Plot Area
+>>> from bokeh.models import Legend
+>>> rl = p2.asterisk(np.array([1,2,
+
+3]), np.array([3,2,1])
+>>> r2 = p2.line([1,2,3,4], [3,4,5,6
+[
+-30
+
+>>> legend = Legend(items=[ ("One"
+location=(0,
+>>> p.add_layout(legend, 'right')
+
+])
+])
+pl, rl1]),("Two",[r2])],
+))
+
+>>> p.legend.border line color = "navy"
+>>> p.legend.background fill color = "white"
+
+[21.4,4,109, 'Europe']]),
+columns=['mpg','cyl', 'hp', ‘origin'],
+index=['Toyota', 'Fiat', 'Volvo'])
+
+>>> from bokeh.models import ColumnDataSource Rows & Columns Layout
+
+>>> cds df = ColumnDataSource (df) Rows
+
+>>> from bokeh.layouts import row
+2) >>> layout = row(pl,p2,p3)
+Columns
+
+>>> from bokeh.layouts import columns
+>>> layout = column(pl1,p2,p3)
+
+Nesting Rows & Columns
+>>>layout = row(column(pl1,p2), p3)
+
+>>> from bokeh.plotting import figure
+>>> pl = figure (plot _width=300, tools='pan,box zoom')
+>>> p2 = figure (plot width=300, plot height=300,
+
+x range=(0, 8), y range=(0, 8))
+figure ()
+
+Grid Layout
+
+>>> from bokeh.layouts import gridplot
+>>> rowl = [pl1,p2]
+
+>>> row2 = [p3]
+>>> layout = gridplot([[pl1,p2], [p3]])
+
+Tabbed Layout
+
+>>> from bokeh.models.widgets import Panel, Tabs
+>>> tabl = Panel (child=pl, title="tab1")
+
+>>> tab2 = Panel (child=p2, title="tab2")
+
+>>> layout = Tabs (tabs=[tabl, tab2])
+
+Linked Plots
+
+Linked Axes
+>>> p2.x range = pl.x range
+>>> p2.y range pl.y range
+Linked Brushing
+>>> p4 = figure(plot width = 100,
+tools='box select,lasso select")
+>>> p4.circle('mpg', 'cyl', source=cds_ df)
+>>> pS = figure(plot width = 200,
+tools='box select,lasso select")
+>>> p5.circle('mpg', 'hp', source=cds df)
+>>> layout = row(p4,p5)
+
+4) Output & Export
+
+>>> from bokeh.io import output notebook, show
+>>> output notebook ()
+
+Standalone HTML
+>>> from bokeh.embed import file html
+>>> from bokeh.resources import CDN
+>>> html = file html(p, CDN, "my plot")
+
+>>> from bokeh.io import output file, show
+>>> output _file('my bar chart.html', mode='cdn"')
+
+Components
+>>> from bokeh.embed import components
+>>> script, div = components (p)
+
+>>> from bokeh.io import export png
+>>> export png(p, filename="plot.png")
+
+>>> from bokeh.io import export svgs
+>>> p.output backend = "svg"
+
+>>> export svgs(p, filename="plot.svg")
+
+5) Show or Save Your Plots
+
+>>> show(pl) >>> show (layout)
+>>> save(pl) >>> save (layout)
+
+DataCamp
+
+Learn Python for Data Science
+

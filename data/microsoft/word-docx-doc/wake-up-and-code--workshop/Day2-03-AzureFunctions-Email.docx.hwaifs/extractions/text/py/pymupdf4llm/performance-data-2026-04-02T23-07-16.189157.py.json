@@ -1,0 +1,16 @@
+{
+  "function_method_name": "extract_markdown_to_file_from_office_doc_docx_document",
+  "num_pages": 25,
+  "time_start_1": 1775164035.018501,
+  "time_end_1": 1775164036.189147,
+  "time_total_1": 1.1706459522247314,
+  "pages_per_second_1": 21.355730955622608,
+  "time_start_2": 580152.428198333,
+  "time_end_2": 580153.598905708,
+  "time_total_2": 1.1707073749275878,
+  "pages_per_second_2": 21.354610499097895,
+  "time_start_3": 580152428198375,
+  "time_end_3": 580153598905916,
+  "time_total_3": 1.170707541,
+  "pages_per_second_3": 21.35460746980872
+}

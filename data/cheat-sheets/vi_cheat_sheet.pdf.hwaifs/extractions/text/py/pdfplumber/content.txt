@@ -1,0 +1,128 @@
+VI “Cheat” Sheet
+ACNS Bulletin ED–03
+February 1995
+vi Editor “Cheat Sheet”
+Invoking vi: vi filename
+Format of vi commands: [count][command] (count repeats the effect of the command)
+Command mode versus input mode File management commands
+:w name Write edit buffer to file name
+Vi starts in command mode. The positioning commands
+operate only while vi is in command mode. You switch vi :wq Write to file and quit
+to input mode by entering any one of several vi input com- :q! Quit without saving changes
+mands. (See next section.) Once in input mode, any charac- ZZ Same as :wq
+ter you type is taken to be text and is added to the file. You
+:sh Execute shell commands (<ctrl>d)
+cannot execute any commands until you exit input mode.
+To exit input mode, press the escape (Esc) key.
+Window motions
+Input commands (end with Esc) <ctrl>d Scroll down (half a screen)
+<ctrl>u Scroll up (half a screen)
+a Append after cursor
+<ctrl>f Page forward
+i Insert before cursor
+<ctrl>b Page backward
+o Open line below
+/string Search forward
+O Open line above
+?string Search backward
+:r file Insert file after current line
+<ctrl>l Redraw screen
+Any of these commands leaves vi in input mode until you
+<ctrl>g Display current line number and
+press Esc. Pressing the RETURN key will not take you out
+file information
+of input mode.
+n Repeat search
+N Repeat search reverse
+Change commands (Input mode) G Go to last line
+nG Go to line n
+cw Change word (Esc)
+:n Go to line n
+cc Change line (Esc) - blanks line
+z<CR> Reposition window: cursor at top
+c$ Change to end of line
+z. Reposition window: cursor in middle
+rc Replace character with c
+z- Reposition window: cursor at bottom
+R Replace (Esc) - typeover
+s Substitute (Esc) - 1 char with string
+S Substitute (Esc) - Rest of line with Cursor motions
+text
+. H Upper left corner (home)
+Repeat last change
+M Middle line
+L Lower left corner
+Changes during insert mode
+h Back a character
+j Down a line
+<ctrl>h Back one character
+k Up a line
+<ctrl>w Back one word
+^ Beginning of line
+<ctrl>u Back to beginning of insert
+$ End of line
+l Forward a character
+w One word forward
+b Back one word
+fc Find c
+; Repeat find (find next c)Deletion commands Move text from file old to file new
+dd or ndd Delete n lines to general buffer vi old
+dw Delete word to general buffer “a10yy yank 10 lines to buffer a
+dnw Delete n words :w write work buffer
+d) Delete to end of sentence :e new edit new file
+db Delete previous word “ap put text from a after cursor
+D Delete to end of line :30,60w new Write lines 30 to 60 in file new
+x Delete character
+Regular expressions (search strings)
+Recovering deletions
+^ Matches beginning of line
+p Put general buffer after cursor $ Matches end of line
+P Put general buffer before cursor . Matches any single character
+* Matches any previous character
+.* Matches any character
+Undo commands
+u Undo last change
+Search and replace commands
+U Undo all changes on line
+Syntax:
+Rearrangement commands
+:[address]s/old_text/new_text/
+yy or Y Yank (copy) line to general buffer
+Address components:
+“z6yy Yank 6 lines to buffer z
+. Current line
+yw Yank word to general buffer
+n Line number n
+“a9dd Delete 9 lines to buffer a
+.+m Current line plus m lines
+“A9dd Delete 9 lines; Append to buffer a
+$ Last line
+“ap Put text from buffer a after cursor
+/string/ A line that contains "string"
+p Put general buffer after cursor
+% Entire file
+P Put general buffer before cursor
+[addr1],[addr2] Specifies a range
+J Join lines
+Examples:
+Parameters
+The following example replaces only the first occur-
+:set list Show invisible characters rence of Banana with Kumquat in each of 11 lines
+:set nolist Don’t show invisible characters starting with the current line (.) and continuing for the
+10 that follow (.+10).
+:set number Show line numbers
+:.,.+10s/Banana/Kumquat
+:set nonumber Don’t show line numbers
+:set autoindent Indent after carriage return The following example replaces every occurrence
+:set noautoindent Turn off autoindent (caused by the g at the end of the command) of
+:set showmatch Show matching sets of apple with pear.
+parentheses as they are typed
+:%s/apple/pear/g
+:set noshowmatch Turn off showmatch
+:set showmode Display mode on last line of screen The following example removes the last character from
+:set noshowmode Turn off showmode every line in the file. Use it if every line in the file ends
+with ^M as the result of a file transfer. Execute it
+:set all Show values of all possible
+when the cursor is on the first line of the file.
+parameters
+:%s/.$//

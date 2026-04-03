@@ -1,0 +1,1171 @@
+Theoretical Computer Science Cheat Sheet
+Definitions Series
+f(n)=O(g(n)) iff positive c,n such that
+∃ 0 n n(n+1) n n(n+1)(2n+1) n n2(n+1)2
+0 f(n) cg(n) n n 0 . i= , i2 = , i3 = .
+≤ ≤ ∀ ≥ 2 6 4
+i=1 i=1 i=1
+f(n)=Ω(g(n)) iff positive c,n such that X X X
+∃ 0 In general:
+f(n) cg(n) 0 n n .
+≥ ≥ ∀ ≥ 0 n n
+1
+f(n)=Θ(g(n)) iff f(n) = O(g(n)) and im = (n+1)m+1 1 (i+1)m+1 im+1 (m+1)im
+m+1 − − − −
+f(n)=Ω(g(n)). i=1 (cid:20) i=1 (cid:21)
+X X(cid:0) (cid:1)
+n 1 m
+− 1 m+1
+f(n)=o(g(n)) iff lim n f(n)/g(n)=0. im = B k nm+1 − k.
+→∞ m+1 k
+lim a =a iff ǫ > 0, n such that X
+i=1
+X
+k=0(cid:18) (cid:19)
+n 0
+n ∀ ∃ Geometric series:
+→∞ | a n − a | <ǫ, ∀ n ≥ n 0 . n cn+1 1 ∞ 1 ∞ c
+supS least b R such that b s, ci = − , c=1, ci = , ci = , c <1,
+c 1 6 1 c 1 c | |
+∈ ≥
+s S. X i=0 − X i=0 − X i=1 −
+infS ∀ gre ∈ atestb R suchthat b n ici = ncn+2 − (n+1)cn+1+c , c=1, ∞ ici = c , c <1.
+∈ ≤ (c 1)2 6 (1 c)2 | |
+s, s S. i=0 − i=0 −
+∀ ∈ X X
+Harmonic series:
+liminfa lim inf a i n,i N .
+n n n { i | ≥ ∈ } n 1 n n(n+1) n(n 1)
+→∞ →∞ H = , iH = H − .
+limsupa lim sup a i n,i N . n i i 2 n − 4
+n →∞ n n →∞ { i | ≥ ∈ } n X i=1 X i= n 1 i n+1 1
+n Combinations: Size k sub- H =(n+1)H n, H = H .
+k i n − m i m+1 n+1 − m+1
+sets of a size n set. i=1 i=1(cid:18) (cid:19) (cid:18) (cid:19)(cid:18) (cid:19)
+(cid:0) (cid:1) X X
+n Stirling numbers (1st kind): n n! n n n n
+k 1. = , 2. =2n, 3. = ,
+Arrangements of an n ele- k (n k)!k! k k n k
+(cid:2) (cid:3) ment set into k cycles. (cid:18) (cid:19) − k X =0(cid:18) (cid:19) (cid:18) (cid:19) (cid:18) − (cid:19)
+n n n 1 n n 1 n 1
+n Stirlingnumbers(2ndkind): 4. k = k k − 1 , 5. k = − k + k − 1 ,
+k (cid:18) (cid:19) (cid:18) − (cid:19) (cid:18) (cid:19) (cid:18) (cid:19) (cid:18) − (cid:19)
+Partitions of an n element n
+(cid:8) (cid:9) n m n n k r+k r+n+1
+set into k non-empty sets. 6. = − , 7. = ,
+m k k m k k n
+n 1st order Eulerian numbers: (cid:18) n (cid:19)(cid:18) (cid:19) (cid:18) (cid:19)(cid:18) − (cid:19) k Xn =0(cid:18) (cid:19) (cid:18) (cid:19)
+k k n+1 r s r+s
+Permutations π π ...π on 8. = , 9. = ,
+1 2 n
+(cid:10) (cid:11) m m+1 k n k n
+1,2,...,n with k ascents. k=0(cid:18) (cid:19) (cid:18) (cid:19) k=0(cid:18) (cid:19)(cid:18) − (cid:19) (cid:18) (cid:19)
+{ } X n k n 1 X n n
+n 2ndorderEuleriannumbers. 10. =( 1)k − − , 11. = =1,
+k k − k 1 n
+(cid:18) (cid:19) (cid:18) (cid:19) (cid:26) (cid:27) (cid:26) (cid:27)
+(cid:10)(cid:10)C n(cid:11)(cid:11) Catalan Numbers: Binary n n n 1 n 1
+trees with n+1 vertices. 12. =2n − 1 1, 13. =k − + − ,
+2 − k k k 1
+(cid:26) (cid:27) (cid:26) (cid:27) (cid:26) (cid:27) (cid:26) − (cid:27)
+n n n n n
+14. =(n 1)!, 15. =(n 1)!H , 16. =1, 17. ,
+n 1
+1 − 2 − − n k ≥ k
+(cid:20) (cid:21) (cid:20) (cid:21) (cid:20) (cid:21) (cid:20) (cid:21) (cid:26) (cid:27)
+n
+n n 1 n 1 n n n n 1 2n
+18. =(n 1) − + − , 19. = = , 20. =n!, 21. C = ,
+n
+k − k k 1 n 1 n 1 2 k n+1 n
+(cid:20) (cid:21) (cid:20) (cid:21) (cid:20) − (cid:21) (cid:26) − (cid:27) (cid:20) − (cid:21) (cid:18) (cid:19) k=0(cid:20) (cid:21) (cid:18) (cid:19)
+X
+n n n n n n 1 n 1
+22. = =1, 23. = , 24. =(k+1) − +(n k) − ,
+0 n 1 k n 1 k k k − k 1
+(cid:28) (cid:29) (cid:28) − (cid:29) (cid:28) (cid:29) (cid:28) − − (cid:29) (cid:28) (cid:29) (cid:28) (cid:29) (cid:28) − (cid:29)
+0 1 if k =0, n n n+1
+25. = 26. =2n n 1, 27. =3n (n+1)2n+ ,
+k 0 otherwise 1 − − 2 − 2
+(cid:28) (cid:29) nn (cid:28) m (cid:29) (cid:28) (cid:29) n (cid:18) (cid:19)
+n x+k n n+1 n n k
+28. xn = , 29. = (m+1 k)n( 1)k, 30. m! = ,
+k n m k − − m k n m
+k=0(cid:28) (cid:29)(cid:18) (cid:19) (cid:28) (cid:29) k=0(cid:18) (cid:19) (cid:26) (cid:27) k=0(cid:28) (cid:29)(cid:18) − (cid:19)
+X n X X
+n n n k n n
+31. = − ( 1)n − k − mk!, 32. =1, 33. =0 for n=0,
+m k m − 0 n 6
+(cid:28) (cid:29) k=0(cid:26) (cid:27)(cid:18) (cid:19) (cid:28)(cid:28) (cid:29)(cid:29) (cid:28)(cid:28) (cid:29)(cid:29)
+n X n 1 n 1 n n (2n)n
+34. =(k+1) − +(2n 1 k) − , 35. = ,
+k k − − k 1 k 2n
+(cid:28)(cid:28) (cid:29)(cid:29) (cid:28)(cid:28) (cid:29)(cid:29) (cid:28)(cid:28) − (cid:29)(cid:29) k=0(cid:28)(cid:28) (cid:29)(cid:29)
+n nX
+x n x+n 1 k n+1 n k k
+36. = − − , 37. = = (m+1)n − k,
+x n k 2n m+1 k m m
+(cid:26) − (cid:27) k=0(cid:28)(cid:28) (cid:29)(cid:29)(cid:18) (cid:19) (cid:26) (cid:27) k (cid:18) (cid:19)(cid:26) (cid:27) k=0(cid:26) (cid:27)
+X X XTheoretical Computer Science Cheat Sheet
+Identities Cont. Trees
+n n n
+n+1 n k k 1 k x n x+k Every tree with n
+38. = = nn k =n! , 39. = ,
+m+1 k m m − k! m x n k 2n vertices has n 1
+(cid:20) (cid:21) X k (cid:20) (cid:21)(cid:18) (cid:19) X k=0(cid:20) (cid:21) X k=0 (cid:20) (cid:21) (cid:20) − (cid:21) X k=0(cid:28)(cid:28) (cid:29)(cid:29)(cid:18) (cid:19) edges. −
+n n k+1 n n+1 k
+40. = ( 1)n − k, 41. = ( 1)m − k, Kraft inequal-
+m k m+1 − m k+1 m −
+(cid:26) (cid:27) X k (cid:18) (cid:19)(cid:26) m (cid:27) (cid:20) (cid:21) X k (cid:20) m (cid:21)(cid:18) (cid:19) ity: If the depths
+m+n+1 n+k m+n+1 n+k
+of the leaves of
+42. = k , 43. = k(n+k) ,
+m k m k a binary tree are
+(cid:26) (cid:27) k=0 (cid:26) (cid:27) (cid:20) (cid:21) k=0 (cid:20) (cid:21)
+n n+ X 1 k n n+1 k X d 1 ,...,d n :
+44. = ( 1)m − k, 45. (n m)! = ( 1)m − k, for n m, n
+(cid:18) m (cid:19) k (cid:26) k+1 (cid:27)(cid:20) m (cid:21) − − (cid:18) m (cid:19) k (cid:20) k+1 (cid:21)(cid:26) m (cid:27) − ≥ 2 − di 1,
+X X ≤
+n m n m+n m+k n m n m+n m+k i=1
+46. = − , 47. = − , X
+n m m+k n+k k n m m+k n+k k andequalityholds
+(cid:26) − (cid:27) k (cid:18) (cid:19)(cid:18) (cid:19)(cid:20) (cid:21) (cid:20) − (cid:21) k (cid:18) (cid:19)(cid:18) (cid:19)(cid:26) (cid:27)
+X X
+n ℓ+m k n k n n ℓ+m k n k n only if every in-
+48. = − , 49. = − .
+ℓ+m ℓ ℓ m k ℓ+m ℓ ℓ m k ternal node has 2
+(cid:26) (cid:27)(cid:18) (cid:19) X k (cid:26) (cid:27)(cid:26) (cid:27)(cid:18) (cid:19) (cid:20) (cid:21)(cid:18) (cid:19) X k (cid:20) (cid:21)(cid:20) (cid:21)(cid:18) (cid:19) sons.
+Recurrences
+Master method: Generating functions:
+T(n)=aT(n/b)+f(n), a 1,b>1 1 T(n) 3T(n/2)=n 1. Multiply both sides of the equa-
+≥ −
+I t f he ∃ n ǫ>0 such that f(n)=O(nlog b a − ǫ)
+3
+. .(cid:0)
+(cid:0)T(n/
+. .
+2)
+− . .
+3T(n/4)=(cid:1)n/2
+(cid:1) 2. S
+ti
+u
+o
+m
+n by
+bo
+x
+t
+i
+h
+.
+sides over all i for
+. . . which the equation is valid.
+T(n)=Θ(nlog
+b
+a).
+3log 2 n − 1 T(2) 3T(1)=2 3. Choose a generating function
+If f(n)=Θ(nlog b a) then − G(x). UsuallyG(x)= ∞ i=0 xig i .
+T(n)=Θ(nlog b alog 2 n). L w e e t g m et = T(n lo(cid:0) ) g 2 n 3 . m S T u ( m 1) m = ing T t ( (cid:1)h n e ) lef 3 t m sid = e 3. Rewrite the equation i P n terms of
+the generating function G(x).
+If ǫ>0suchthatf(n)=Ω(nlog b a+ǫ), T(n) nk wh − ere k = log 3 − 1.58496.
+an ∃ d c < 1 such that af(n/b) cf(n) Summ − ing the right side we 2 get ≈ 4. Solve for G(x).
+∃ ≤ 5. Thecoefficientofxi inG(x)isg .
+for large n, then m 1 m 1 i
+T(n)=Θ(f(n)). − n 3i =n − 3 i . Example:
+2i 2 g =2g +1, g =0.
+i=0 i=0 i+1 i 0
+Substitution (example): Consider the X X (cid:0) (cid:1)
+following recurrence Let c= 2 3. Then we have Multiply and sum:
+T i+1 =22i · T i 2, T 1 =2. n m − 1 ci =n cm − 1 i 0 g i+1 xi = i 0 2g i xi+ i 0 xi.
+c 1 X≥ X≥ X≥
+Note that T i is always a power of two. X i=0 (cid:18) − (cid:19) WechooseG(x)= xig . Rewrite
+Let t i = t i+ lo 1 g 2 = T 2 i . i+ Th 2 e t n i , we t 1 h = ave 1. = = 2 2 n n ( ( c c ( lo k g − 2 1 n )l − og c 1 n ) − 1) in ter G m ( s x) of − G g ( 0 x = ): 2 P G( i ≥ x 0 )+ i xi.
+Let u i = t i /2i. Dividing both sides of =2nk 2n, x
+the previous equation by 2i+1 we get − X i ≥ 0
+t 2i t and so T(n) = 3nk 2n. Full history re- Simplify:
+i+1 i
+2i+1 = 2i+1 + 2i . currences can often − be changedto limited G(x)
+=2G(x)+
+1
+.
+history ones (example): Consider x 1 x
+Substituting we find −
+i 1
+u = 1 +u , u = 1, − Solve for G(x):
+i+1 2 i 1 2 T i =1+ T j , T 0 =1. x
+G(x)= .
+which is simply u i = i/2. So we find X j=0 (1 x)(1 2x)
+thatT i hasthe closedformT i
+=2i2i−1
+. Note that Expand this using
+−
+partia
+−
+l fractions:
+Summing factors (example): Consider i
+2 1
+the following recurrence T i+1 =1+ T j . G(x)=x
+1 2x − 1 x
+T(n)=3T(n/2)+n, T(1)=1. X j=0 (cid:18) − − (cid:19)
+Subtracting we find
+Rewrite so that all terms involving T =x 2 2ixi xi
+i i 1
+are on the left side −  − 
+T T =1+ T 1 T i 0 i 0
+T(n) 3T(n/2)=n.
+i+1
+−
+i j
+− −
+j
+
+X≥ X≥
+
+− X j=0 X j=0 = (2i+1 1)xi+1.
+−
+Nowexpandtherecurrence,andchoose =T .
+i i 0
+X≥
+afactorwhichmakestheleftside“tele-
+And so T =2T =2i+1. So g =2i 1.
+scope” i+1 i i −Theoretical Computer Science Cheat Sheet
+π 3.14159, e 2.71828, γ 0.57721, φ= 1+√5 1.61803, φˆ= 1 √5 .61803
+≈ ≈ ≈ 2 ≈ −2 ≈−
+i 2i p General Probability
+i
+1 2 2 Bernoulli Numbers (B =0, odd i=1): Continuous distributions: If
+i
+6
+2 4 3 B =1, B = 1, B = 1, B = 1 , b
+0 1 −2 2 6 4 −30 Pr[a<X <b]= p(x)dx,
+3 8 5 B 6 = 4 1 2 , B 8 = −3 1 0 , B 10 = 6 5 6 . Za
+thenpistheprobabilitydensityfunctionof
+4 16 7 Change of base, quadratic formula:
+X. If
+5 32 11 log x b √b2 4ac
+log x= a , − ± − . Pr[X <a]=P(a),
+6 64 13 b log a b 2a then P is the distribution function of X. If
+Euler’s number e:
+7 128 17 P and p both exist then
+8 256 19 e=1+ 2 1 + 6 1 + 2 1 4 + 1 1 20 + ··· P(a)= a p(x)dx.
+x n
+9 512 23 lim 1+ =ex.
+10 1,024 29 1+ n → 1 ∞ n(cid:16) <e< n (cid:17) 1+ 1 n+1 . Expectation: If X i Z s − d ∞ iscrete
+11 2,048 31 n n E[g(X)]= g(x)Pr[X =x].
+12 4,096 37 1+ 1(cid:0) n =e (cid:1) e + (cid:0) 11e (cid:1) O 1 . X x
+n − 2n 24n2 − n3 If X continuous then
+13 8,192 41 (cid:18) (cid:19)
+H(cid:0)armon(cid:1)ic numbers: ∞ ∞
+E[g(X)]= g(x)p(x)dx= g(x)dP(x).
+14 16,384 43
+1, 3, 11, 25, 137, 49, 363, 761, 7129,...
+2 6 12 60 20 140 280 2520 Z−∞ Z−∞
+15 32,768 47 Variance, standard deviation:
+16 65,536 53 lnn<H <lnn+1, VAR[X]=E[X2] E[X]2,
+n −
+17 131,072 59 1 σ = VAR[X].
+H =lnn+γ+O .
+n
+18 262,144 61 n For events A and B:
+(cid:18) (cid:19) p
+19 524,288 67 Factorial, Stirling’s approximation: Pr[A B]=Pr[A]+Pr[B] Pr[A B]
+∨ − ∧
+20 1,048,576 71 1,2,6,24,120,720,5040,40320,362880,... Pr[A B]=Pr[A] Pr[B],
+∧ ·
+21 2,097,152 73 iff A and B are independent.
+n n 1
+22 4,194,304 79 n!=√2πn 1+Θ . Pr[A B]
+e n Pr[AB]= ∧
+23 8,388,608 83 (cid:18) (cid:19) (cid:18) (cid:18) (cid:19)(cid:19) | Pr[B]
+Ackermann’s function and inverse:
+For random variables X and Y:
+24 16,777,216 89 2j i=1
+E[X Y]=E[X] E[Y],
+25 33,554,432 97 a(i,j)= a(i 1,2) j =1 · ·
+ a(i − 1,a(i,j 1)) i,j 2 if X and Y are independent.
+26 67,108,864 101 
+− − ≥
+27 134,217,728 103 α(i)=m  in { j | a(j,j) ≥ i } . E[X+Y]=E[X]+E[Y],
+E[cX]=cE[X].
+28 268,435,456 107 Binomial distribution:
+Bayes’ theorem:
+n
+29 536,870,912 109 Pr[X =k]= pkqn − k, q =1 p, Pr[B A ]Pr[A ]
+30 1,073,741,824 113 (cid:18) k (cid:19) − Pr[A i | B]= n Pr | [A i ]Pr[B i A ] .
+n n j=1 j | j
+31 2,147,483,648 127 E[X]= k pkqn − k =np. Inclusion-exclusion:
+k P
+32 4,294,967,296 131 k=1 (cid:18) (cid:19) n n
+X
+Pascal’s Triangle Poisson distribution: Pr X i = Pr[X i ]+
+1 Pr[X =k]= e − λλk , E[X]=λ. hi _ =1 i X i=1
+k! n k
+1 1 ( 1)k+1 Pr X .
+Normal (Gaussian) distribution: − ij
+1 2 1 p(x)= 1 e− (x − µ)2/2σ2 , E[X]=µ. Moment X k in = e 2 qualities: ii< X··· <ik hj ^ =1 i
+1 3 3 1 √2πσ
+1
+1 4 6 4 1 The “coupon collector”: We are given a Pr X λE[X] ,
+| |≥ ≤ λ
+randomcouponeachday,andthere are n
+1 5 10 10 5 1 (cid:2) (cid:3) 1
+different types of coupons. The distribu- Pr X E[X] λ σ .
+1 6 15 20 15 6 1 − ≥ · ≤ λ2
+tion of coupons is uniform. The expected
+Geometrihc(cid:12)distributio(cid:12)n: i
+1 7 21 35 35 21 7 1 number of days to pass before we to col- (cid:12) (cid:12)
+1 8 28 56 70 56 28 8 1 lect all n types is Pr[X =k]=pqk − 1, q =1 − p,
+1 9 36 84 126 126 84 36 9 1 nH n . E[X]= ∞ kpqk
+−
+1 = 1 .
+p
+1 10 45 120 210 252 210 120 45 10 1 k=1
+XTheoretical Computer Science Cheat Sheet
+Trigonometry Matrices More Trig.
+Multiplication: C
+n
+(0,1)
+b (cosθ,sinθ) C =A · B, c i,j = k=1 a i,k b k,j . b h a
+C θ X
+A Determinants: detA=0 iff A is non-singular.
+(-1,0) (1,0) 6 A c B
+detA B =detA detB, Law of cosines:
+c a · n · c2 =a2+b2 2abcosC.
+(0,-1)
+B detA= sign(π)a . −
+i,π(i)
+Area:
+Pythagoreantheorem: π i=1
+XY
+C2 =A2+B2. 2 2 and 3 3 determinant:
+× × A= 1hc,
+a b 2
+Definitions: c d =ad − bc, = 1absinC,
+sina=A/C, cosa=B/C, (cid:12) (cid:12) 2
+csca=C/A, seca=C/B, a b c
+(cid:12)
+(cid:12) (cid:12) b
+(cid:12)
+(cid:12) (cid:12)c a c a b =
+c2sinAsinB
+.
+d e f =g h +i 2sinC
+tana= sina = A , cota= cosa = B . (cid:12) (cid:12)g h i (cid:12) (cid:12) (cid:12) e f (cid:12) − (cid:12) d f (cid:12) (cid:12) d e (cid:12) Heron’s formula:
+(cid:12) (cid:12) (cid:12) (cid:12) (cid:12) (cid:12) (cid:12) (cid:12)
+cosa B sina A (cid:12) (cid:12) (cid:12) aei(cid:12)+bfg(cid:12)+cdh(cid:12) (cid:12) (cid:12)
+Area, radius of inscribed circle: (cid:12) (cid:12) (cid:12) (cid:12) = (cid:12) c (cid:12) eg (cid:12) fha (cid:12) ibd. (cid:12) (cid:12) A=√s s a s b s c ,
+· · ·
+1AB, AB . Permanents: − − − s= 1 2 (a+b+c),
+2 A+B+C n s =s a,
+a
+permA= a . −
+Identities: i,π(i)
+s =s b,
+1 1 X π Y i=1 b −
+sinx= cscx , cosx= secx , Hyperbolic Functions s c =s − c.
+tanx= 1 , sin2x+cos2x=1, Definitions: More identities:
+cotx sinhx = ex − e − x , coshx= ex+e − x , sinx = 1 − cosx ,
+1+tan2x=sec2x, 1+cot2x=csc2x, 2 2 2 2
+ex e x 1 r
+−
+tanhx= − , cschx = , 1+cosx
+sinx=cos π x , sinx=sin(π x), ex+e x sinhx cosx = ,
+2 − − 1 − 1 2 2
+r
+sechx = , cothx= .
+cosx= co (cid:0) s(π (cid:1) x), tanx=cot π x , coshx tanhx 1 cosx
+− − 2 − tanx = − ,
+cotx= cot(π x),
+cscx=cotx(cid:0)
+cot
+(cid:1)
+x,
+Identities: 2 r 1+cosx
+− − 2 − cosh2x sinh2x=1, tanh2x+sech2x=1, = 1 − cosx ,
+sinx
+sin(x y)=sinxcosy cosxsiny, −
+± ± coth2x csch2x=1, sinh( x)= sinhx, = sinx ,
+− − − 1+cosx
+cos(x y)=cosxcosy sinxsiny,
+± ∓ cosh( x)=coshx, tanh( x)= tanhx, 1+cosx
+tanx tany − − − cotx = ,
+tan(x y)= ± , 2 1 cosx
+± 1 tanxtany sinh(x+y)=sinhxcoshy+coshxsinhy, r −
+∓ 1+cosx
+cotxcoty 1 = ,
+cot(x y)= ∓ , cosh(x+y)=coshxcoshy+sinhxsinhy, sinx
+± cotx coty
+± 2tanx sinh2x=2sinhxcoshx, = sinx ,
+sin2x=2sinxcosx, sin2x= , 1 cosx
+1+tan2x
+−
+cos2x=cos2x sin2x, cos2x=2cos2x 1,
+cosh2x=cosh2x+sinh2x,
+sinx=
+eix
+−
+e
+−
+ix
+,
+− − 2i
+cos2x=1 2sin2x, cos2x= 1 − tan2x , coshx+sinhx=ex, coshx − sinhx=e − x, eix+e − ix
+− 1+tan2x cosx= ,
+(coshx+sinhx)n =coshnx+sinhnx, n Z, 2
+2tanx cot2x 1 ∈ eix e ix
+tan2x= 1 − tan2x , cot2x= 2cot − x , 2sinh2 x 2 =coshx − 1, 2cosh2 x 2 =coshx+1. tanx= − i eix+ − e − − ix ,
+sin(x+y)sin(x y)=sin2x sin2y, e2ix 1
+− − = i − ,
+θ sinθ cosθ tanθ ...inmathematics − e2ix+1
+cos(x+y)cos(x − y)=cos2x − sin2y. 0 0 1 0 y st o a u nd do t n h ’ i t ngs u , nd y e o r u - sinx= sinhix ,
+Euler’s equation: π 1 √3 √3 i
+6 2 2 3 just get used to
+eix =cosx+isinx, eiπ = − 1. π √2 √2 1 them. cosx=coshix,
+4 2 2 tanhix
+v2.02
+s (cid:13)
+c
+se
+1
+i
+9
+d
+9
+e
+4
+n
+b
+@
+y
+ac
+S
+m
+te
+.
+v
+o
+e
+rg
+Seiden π
+3
+√
+2
+3 1
+2
+√3 – J. von Neumann tanx=
+i
+.
+π 1 0
+http://www.csc.lsu.edu/~seiden 2 ∞Theoretical Computer Science Cheat Sheet
+Number Theory Graph Theory
+TheChineseremaindertheorem: Thereex- Definitions: Notation:
+ists a number C such that: Loop An edge connecting a ver- E(G) Edge set
+tex to itself. V(G) Vertex set
+C r modm
+≡ 1 1 Directed Each edge has a direction. c(G) Number of components
+. . . . . . Simple Graph with no loops or G[S] Induced subgraph
+. . .
+multi-edges. deg(v) Degree of v
+C ≡ r n modm n Walk A sequence v 0 e 1 v 1 ...e ℓ v ℓ . ∆(G) Maximum degree
+ifm andm arerelativelyprimefori=j. Trail Awalkwithdistinctedges. δ(G) Minimum degree
+i j
+6 Path A trail with distinct χ(G) Chromatic number
+Euler’s function: φ(x) is the number of
+χ (G) Edge chromatic number
+vertices. E
+positive integers less than x relatively
+Gc Complement graph
+prime to x. If n pei is the prime fac- Connected Agraphwherethereexists
+i=1 i K Complete graph
+torization of x then a path between any two n
+Qn vertices. K n1,n2 Complete bipartite graph
+φ(x)= p
+i
+ei− 1(p
+i −
+1).
+Component A maximal connected
+r(k,ℓ) Ramsey number
+i Y =1 subgraph. Geometry
+Euler’s theorem: If a and b are relatively Tree Aconnectedacyclicgraph.
+Projective coordinates: triples
+prime then Free tree A tree with no root.
+1 aφ(b) modb. DAG Directed acyclic graph. (x,y,z), not all x, y and z zero.
+≡
+(x,y,z)=(cx,cy,cz) c=0.
+Eulerian Graph with a trail visiting
+Fermat’s theorem: ∀ 6
+each edge exactly once. Cartesian Projective
+1 ap 1 modp.
+−
+≡ Hamiltonian Graphwithacyclevisiting (x,y) (x,y,1)
+The Euclidean algorithm: if a > b are in- each vertex exactly once. y =mx+b (m, 1,b)
+tegers then Cut A set of edges whose re- x=c (1,0 − , c)
+gcd(a,b)=gcd(amodb,b). moval increases the num- Distance formula, − L and L
+p
+If n pei is the prime factorization of x ber of components. metric: ∞
+then i=1 i Cut-set A minimal cut. (x x )2+(y y )2,
+1 0 1 0
+Q S(x)= d= n p i ei+1 − 1 . C k- u C t o e n d n g e e cted A A s g iz r e ap 1 h cu c t o . nnected with px 1 x − 0 p+ y 1 y − 0 p 1/p ,
+p 1 | − | | − |
+i
+Xd | x i Y =1 − the removal of any k − 1 lim(cid:2) x 1 x 0 p+ y 1 y 0 (cid:3)p 1/p .
+vertices. p | − | | − |
+PerfectNumbers: xisanevenperfectnum- →∞
+beriffx=2n 1(2n 1)and2n 1isprime. k-Tough S V,S = we have Area(cid:2)of triangle (x 0 ,y 0 ), (x 1 (cid:3),y 1 )
+Wilson’s theo − rem: − n is a prime − iff ∀ k c( ⊆ G S) 6 S ∅ . and (x 2 ,y 2 ):
+· − ≤| |
+(n − 1)! ≡− 1modn. k-Regular A graph where all vertices 1abs x 1 − x 0 y 1 − y 0 .
+have degree k. 2 x x y y
+Mo¨bius inversion: (cid:12) 2 − 0 2 − 0(cid:12)
+1 if i=1. k-Factor A k-regular spanning Angle for(cid:12) (cid:12) med by three poin(cid:12) (cid:12) ts:
+subgraph. (cid:12) (cid:12)
+0 if i is not square-free.
+µ(i)=
+( 1)r if i is the product of Matching A set of edges, no two of (x ,y )
+ − r distinct primes. which are adjacent. 2 2
+ℓ
+Clique A set of vertices, all of 2
+If  θ
+which are adjacent.
+G(a)= F(d), (0,0) ℓ (x ,y )
+Ind. set A set of vertices, none of 1 1 1
+Xd | a which are adjacent. (x 1 ,y 1 ) (x 2 ,y 2 )
+cosθ = · .
+then a Vertex cover A set of vertices which ℓ 1 ℓ 2
+F(a)= µ(d)G . cover all edges. Line through two points (x ,y )
+d 0 0
+Xd | a (cid:16) (cid:17) Planar graph A graph which can be em- and (x 1 ,y 1 ):
+Prime numbers: beded in the plane. x y 1
+lnlnn Plane graph An embedding of a planar x y 1 =0.
+p n =nlnn+nlnlnn − n+n lnn graph. (cid:12) (cid:12)x 0 y 0 1 (cid:12) (cid:12)
+(cid:12) 1 1 (cid:12)
+n Area of(cid:12)circle, volum(cid:12)e of sphere:
++O , deg(v)=2m. (cid:12) (cid:12)
+(cid:18) lnn (cid:19) A= (cid:12) πr2, V (cid:12) = 4πr3.
+v V 3
+n n 2!n X∈
+π(n)= + + If G is planar then n m+f =2, so
+lnn (lnn)2 (lnn)3 − IfIhaveseenfartherthanothers,
+f 2n 4, m 3n 6.
+n ≤ − ≤ − it is because I have stood on the
++O (lnn)4 . Any planar graph has a vertex with de- shoulders of giants.
+(cid:18) (cid:19) gree 5. – Issac Newton
+≤Theoretical Computer Science Cheat Sheet
+π Calculus
+Wallis’ identity: Derivatives:
+2 2 4 4 6 6
+π =2 · · · · · ··· d(cu) du d(u+v) du dv d(uv) dv du
+· 1 3 3 5 5 7 1. =c , 2. = + , 3. =u +v ,
+· · · · · ··· dx dx dx dx dx dx dx dx
+Brouncker’scontinuedfractionexpansion:
+π 4 =1+ 2+ 12 32 4. d( d u x n) =nun − 1 d d x u , 5. d(u dx /v) = v (cid:0) d d u x (cid:1) v − 2 u (cid:0) d d x v (cid:1) , 6. d( d e x cu) =cecu d d x u ,
+2+
+2+
+5
+2
+2
++
+72
+··· 7.
+d(cu)
+=(lnc)cu
+du
+, 8.
+d(lnu)
+=
+1du
+,
+dx dx dx udx
+Gregrory’s series:
+π =1 1 + 1 1 + 1 d(sinu) du d(cosu) du
+4 − 3 5 − 7 9 −··· 9. =cosu , 10. = sinu ,
+dx dx dx − dx
+Newton’s series:
+d(tanu) du d(cotu) du
+11. =sec2u , 12. =csc2u ,
+1 1 1 3 dx dx dx dx
+π = + + · +
+6 2 2 3 23 2 4 5 25 ···
+d(secu) du d(cscu) du
+· · · · · 13. =tanu secu , 14. = cotu cscu ,
+Sharp’s series: dx dx dx − dx
+1 1 1 1 d(arcsinu) 1 du d(arccosu) 1 du
+π = 1 + + 15. = , 16. = − ,
+6 √3 −31 3 32 5−33 7 ··· dx √1 u2dx dx √1 u2dx
+(cid:16) · · · (cid:17) − −
+d(arctanu) 1 du d(arccotu) 1 du
+Euler’s series: 17. = , 18. = − ,
+dx 1+u2dx dx 1+u2dx
+π 6 2 = 1 1 2 + 2 1 2 + 3 1 2 + 4 1 2 + 5 1 2 + ··· 19. d(arcsecu) = 1 du , 20. d(arccscu) = − 1 du ,
+π2 = 1 + 1 + 1 + 1 + 1 + dx u√1 u2dx dx u√1 u2dx
+8 12 32 52 72 92 ··· − −
+π 12 2 = 1 1 2 − 2 1 2 + 3 1 2 − 4 1 2 + 5 1 2 −··· 21. d(si d n x hu) =coshu d d x u , 22. d(co d s x hu) =sinhu d d x u ,
+Partial Fractions d(tanhu) du d(cothu) du
+23. =sech2u , 24. = csch2u ,
+Let N(x) and D(x) be polynomial func- dx dx dx − dx
+tions of x. We can break down
+d(sechu) du d(cschu) du
+N(x)/D(x) using partial fraction expan- 25. = sechu tanhu , 26. = cschu cothu ,
+dx − dx dx − dx
+sion. First, if the degree of N is greater
+d(arcsinhu) 1 du d(arccoshu) 1 du
+than or equal to the degree of D, divide 27. = , 28. = ,
+N by D, obtaining dx √1+u2dx dx √u2 1dx
+−
+N(x) N ′ (x) d(arctanhu) 1 du d(arccothu) 1 du
+=Q(x)+ , 29. = , 30. = ,
+D(x) D(x) dx 1 u2dx dx u2 1dx
+− −
+wherethedegreeofN islessthanthatof d(arcsechu) 1 du d(arccschu) 1 du
+′ 31. = − , 32. = − .
+D. Second, factor D(x). Use the follow- dx u√1 u2dx dx u√1+u2dx
+ing rules: For a non-repeated factor: − | |
+Integrals:
+N(x) A N (x)
+′
+= + ,
+(x a)D(x) x a D(x) 1. cudx=c udx, 2. (u+v)dx= udx+ vdx,
+− −
+where Z Z Z Z Z
+N(x) 1 1
+A= . 3. xndx= xn+1, n= 1, 4. dx=lnx, 5. exdx=ex,
+D(x) n+1 6 − x
+(cid:20) (cid:21)x=a Z Z Z
+dx dv du
+For a repeated factor: 6. =arctanx, 7. u dx=uv v dx,
+m 1 1+x2 dx − dx
+N(x) − A k N ′ (x) Z Z Z
+= + ,
+(x a)mD(x) (x a)m k D(x)
+− k=0 − − 8. sinxdx= cosx, 9. cosxdx=sinx,
+X −
+Z Z
+where
+1 dk N(x) 10. tanxdx= ln cosx, 11. cotxdx=ln cosx,
+A = .
+k k! (cid:20) dxk (cid:18) D(x) (cid:19)(cid:21)x=a Z − | | Z | |
+12. secxdx=ln secx+tanx, 13. cscxdx=ln cscx+cotx,
+Thereasonablemanadaptshimselftothe | | | |
+Z Z
+world; the unreasonablepersists in trying
+to adapt the world to himself. Therefore 14. arcsinxdx=arcsinx + a2 x2, a>0,
+a a −
+allprogressdepends onthe unreasonable. Z
+p
+– George Bernard ShawTheoretical Computer Science Cheat Sheet
+Calculus Cont.
+15. arccosxdx=arccosx a2 x2, a>0, 16. arctanxdx=xarctanx aln(a2+x2), a>0,
+a a − − a a − 2
+Z Z
+p
+17. sin2(ax)dx= 1 ax sin(ax)cos(ax) , 18. cos2(ax)dx= 1 ax+sin(ax)cos(ax) ,
+2a − 2a
+Z Z
+(cid:0) (cid:1) (cid:0) (cid:1)
+19. sec2xdx=tanx, 20. csc2xdx= cotx,
+−
+Z Z
+21. sinnxdx= sinn − 1xcosx + n − 1 sinn − 2xdx, 22. cosnxdx= cosn − 1xsinx + n − 1 cosn − 2xdx,
+− n n n n
+Z Z Z Z
+tann 1x cotn 1x
+23. tannxdx= − tann − 2xdx, n=1, 24. cotnxdx= − cotn − 2xdx, n=1,
+n 1 − 6 − n 1 − 6
+Z − Z Z − Z
+tanxsecn 1x n 2
+25. secnxdx= − + − secn − 2xdx, n=1,
+n 1 n 1 6
+Z − − Z
+cotxcscn 1x n 2
+26. cscnxdx= − + − cscn − 2xdx, n=1, 27. sinhxdx=coshx, 28. coshxdx=sinhx,
+− n 1 n 1 6
+Z − − Z Z Z
+29. tanhxdx=ln coshx, 30. cothxdx=ln sinhx, 31. sechxdx=arctansinhx, 32. cschxdx=ln tanhx ,
+| | | | 2
+Z Z Z Z
+(cid:12) (cid:12)
+33. sinh2xdx= 1sinh(2x) 1x, 34. cosh2xdx= 1sinh(2x)+ 1x, 35. sech2xdx= (cid:12) tanhx (cid:12) ,
+4 − 2 4 2
+Z Z Z
+36. arcsinhxdx=xarcsinhx x2+a2, a>0, 37. arctanhxdx=xarctanhx + aln a2 x2 ,
+a a − a a 2 | − |
+Z Z
+xp
+xarccosh x2+a2, if arccoshx >0 and a>0,
+38. arccoshxdx= a − a
+Z a   xarccosh x a + p x2+a2, if arccoshx a <0 and a>0,
+dx p
+39. =ln  x+ a2+x2 , a>0,
+√a2+x2
+Z (cid:16) p (cid:17)
+dx
+40. = 1arctanx, a>0, 41. a2 x2dx= x a2 x2+ a2 arcsinx, a>0,
+a2+x2 a a − 2 − 2 a
+Z Z
+p p
+42. (a2 x2)3/2dx= x(5a2 2x2) a2 x2+ 3a4 arcsinx, a>0,
+− 8 − − 8 a
+Z
+p
+dx dx 1 a+x dx x
+43. =arcsinx, a>0, 44. = ln , 45. = ,
+√a2 x2 a a2 x2 2a a x (a2 x2)3/2 a2√a2 x2
+Z − Z − (cid:12) − (cid:12) Z − −
+(cid:12) (cid:12)
+46. a2 x2dx= x a2 x2 a2 ln x+ a2 x2 , (cid:12) (cid:12) (cid:12) (cid:12)47. dx =ln x+ x2 a2 , a>0,
+± 2 ± ± 2 ± √x2 a2 −
+Z p p (cid:12) p (cid:12) Z − (cid:12) p (cid:12)
+dx 1 x (cid:12) (cid:12) (cid:12) 2(3bx 2a)(a(cid:12)+bx)3/2
+48. = ln , (cid:12) (cid:12) 49. x√a+bxdx=(cid:12) − (cid:12) ,
+ax2+bx a a+bx 15b2
+Z (cid:12) (cid:12) Z
+50. √a+bx dx=2√ (cid:12) (cid:12) (cid:12)a+bx (cid:12) (cid:12) (cid:12)+a 1 dx, 51. x dx= 1 ln √a+bx − √a , a>0,
+x x√a+bx √a+bx √2 √a+bx+√a
+Z Z Z (cid:12) (cid:12)
+52.
+√a2
+−
+x2
+dx= a2 x2 aln
+a+√a2
+−
+x2
+, 53. x a2
+(cid:12)
+(cid:12) (cid:12) x2dx= 1(a2
+(cid:12)
+(cid:12) (cid:12) x2)3/2,
+x − − (cid:12) x (cid:12) − −3 −
+Z p (cid:12) (cid:12) Z p
+(cid:12) (cid:12) dx a+√a2 x2
+54. x2 a2 x2dx= x(2x2 a2) (cid:12) (cid:12)a2 x2+ a4 ar (cid:12) (cid:12)csinx, a>0, 55. = 1ln − ,
+− 8 − − 8 a √a2 x2 −a (cid:12) x (cid:12)
+Z p p Z − (cid:12) (cid:12)
+xdx x2dx (cid:12) (cid:12)
+56. = a2 x2, 57. = x a2 x2+ a2 a(cid:12)rcsin x a>(cid:12)0,
+√a2 x2 − − √a2 x2 −2 − 2 (cid:12) a, (cid:12)
+Z − p Z − p
+√a2+x2 a+√a2+x2 √x2 a2
+58. dx= a2+x2 aln , 59. − dx= x2 a2 aarccos a , a>0,
+Z x p − (cid:12) (cid:12) x (cid:12) (cid:12) Z x p − − | x |
+(cid:12) (cid:12) dx x
+60. x x2 a2dx= 1(x2 a2)3/2, (cid:12) (cid:12) 61. = 1ln ,
+± 3 ± (cid:12) (cid:12) x√x2+a2 a a+√a2+x2
+Z Z (cid:12) (cid:12)
+p (cid:12) (cid:12)
+(cid:12) (cid:12)
+(cid:12) (cid:12)Theoretical Computer Science Cheat Sheet
+Calculus Cont. Finite Calculus
+dx dx √x2 a2 Difference, shift operators:
+62. = 1arccos a , a>0, 63. = ± ,
+Z
+x√x2
+−
+a2 a
+|
+x
+| Z
+x2√x2
+±
+a2 ∓ a2x ∆f(x)=f(x+1)
+−
+f(x),
+xdx √x2 a2 (x2+a2)3/2 Ef(x)=f(x+1).
+64. = x2 a2, 65. ± dx= ,
+√x2 a2 ± x4 ∓ 3a2x3 Fundamental Theorem:
+Z ± p 1 2ax+b Z √b2 4ac f(x)=∆F(x) f(x)δx=F(x)+C.
+ln − − , if b2 >4ac, ⇔
+66. dx = √b2 − 4ac (cid:12) (cid:12) 2ax+b+√b2 − 4ac(cid:12) (cid:12) b X b − 1
+Z
+ax2+bx+c  2
+arc
+(cid:12)
+(cid:12)tan
+2ax+b
+,
+(cid:12)
+(cid:12) if b2 <4ac,
+f(x)δx= f(i).
+√4ac b2 (cid:12) √4ac b2 (cid:12) X a X i=a
+
+1
+− − D
+∆
+i
+(
+ff
+c
+e
+u
+r
+)
+e
+=
+nce
+c
+s
+∆
+:
+u, ∆(u+v)=∆u+∆v,
+ln 2ax+b+2√a ax2+bx+c , if a>0,
+dx √a
+67. = (cid:12) p (cid:12) ∆(uv)=u∆v+Ev∆u,
+Z
+√ax2+bx+c 
+√
+1
+a
+a
+(cid:12)
+(cid:12)rcsin
+√
+−
+b
+2
+2
+ax
+−
+4a
+b
+c
+,
+(cid:12)
+(cid:12) if a<0, ∆(xn)=nxn
+−
+1,
+
+2a
+−
+x+b
+−
+4ax b2 dx
+∆(H x )=x − 1, ∆(2x)=2x,
+68. ax2+bx+cdx= ax2+bx+c+ − , ∆(cx)=(c 1)cx, ∆ x = x .
+4a 8a √ax2+bx+c − m m 1
+Z p p Z Sums: (cid:0) (cid:1) (cid:0) − (cid:1)
+xdx √ax2+bx+c b dx cuδx=c uδx,
+69. = ,
+√ax2+bx+c a − 2a √ax2+bx+c
+Z Z P(u+v)δxP= uδx+ vδx,
+1 2√c√ax2+bx+c+bx+2c Pu∆vδx=uvP Ev∆Puδx,
+− ln , if c>0, −
+70. dx = √c (cid:12) (cid:12) x (cid:12) (cid:12) Pxnδx= xn+1 , P x 1δx=H ,
+Z
+x√ax2+bx+c 
+√
+1
+c a
+(cid:12)
+(cid:12) (cid:12) rcsin x√
+bx
+b2
++2c
+4ac ,
+(cid:12)
+(cid:12) (cid:12) if c<0, Pcxδx=
+m
+cx
++
+,
+1
+Px δ
+−
+x= x
+x
+.
+71. x3 x2+a2dx=(1
+
+x2
+−
+2 a2)(x2
+|
++
+|
+a2)3
+−
+/2, P
+Falling Fact
+c
+o
+−
+r
+1
+ial Powe
+P
+rs:
+(cid:0)
+m
+(cid:1) (cid:0)
+m+1
+(cid:1)
+3 − 15 xn =x(x 1) (x n+1), n>0,
+Z − ··· −
+p x0 =1,
+72. xnsin(ax)dx= 1xncos(ax)+ n xn 1cos(ax)dx,
+−a a − 1
+Z Z xn = , n<0,
+(x+1) (x+ n)
+73. xncos(ax)dx=
+a
+1xnsin(ax)
+−
+n
+a
+xn
+−
+1sin(ax)dx,
+xn+m =xm(x
+·
+m
+··
+)n.
+| |
+Z Z −
+xneax Rising Factorial Powers:
+74. xneaxdx= n xn 1eaxdx,
+a − a − xn =x(x+1) (x+n 1), n>0,
+Z Z ··· −
+75. xnln(ax)dx=xn+1 ln(ax) 1 , x0 =1,
+n+1 − (n+1)2 1
+Z (cid:18) (cid:19) xn = , n<0,
+xn+1 m (x 1) (x n)
+76. xn(lnax)mdx= (lnax)m xn(lnax)m − 1dx. − ··· −| |
+Z
+n+1 − n+1
+Z
+xn+m =xm(x+m)n.
+Conversion:
+x1 = x1 = x1 xn =( − 1)n( − x)n =(x − n+1)n
+x2 = x2+x1 = x2 x1 =1/(x+1) − n,
+−
+x3 = x3+3x2+x1 = x3 3x2+x1 xn =( 1)n( x)n =(x+n 1)n
+− − − −
+x4 = x4+6x3+7x2+x1 = x4 6x3+7x2 x1 =1/(x 1)− n,
+− − −
+x5 = x5+15x4+25x3+10x2+x1 = x5 15x4+25x3 10x2+x1 n n n n
+− − xn = xk = ( 1)n kxk,
+−
+k k −
+x1 = x1 x1 = x1 k=1(cid:26) (cid:27) k=1(cid:26) (cid:27)
+X X
+n
+x2 = x2+x1 x2 = x2 x1 n
+− xn = ( 1)n − kxk,
+x3 = x3+3x2+2x1 x3 = x3
+−
+3x2+2x1
+X
+k=1(cid:20) k (cid:21) −
+x4 = x4+6x3+11x2+6x1 x4 = x4 6x3+11x2 6x1 n n
+− − xn = xk.
+x5 = x5+10x4+35x3+50x2+24x1 x5 = x5 10x4+35x3 50x2+24x1 k
+− − k=1(cid:20) (cid:21)
+XTheoretical Computer Science Cheat Sheet
+Series
+Taylor’s series: Ordinary power series:
+f(x)=f(a)+(x a)f′(a)+ (x − a)2 f′′(a)+ = ∞ (x − a)i f(i)(a). A(x)= ∞ a xi.
+− 2 ··· i! i
+Expansions: X i=0 X i=0
+Exponential power series:
+1 ∞
+1 x =1+x+x2+x3+x4+ ··· = xi, ∞ xi
+− X i=0 A(x)= a i i! .
+1 ∞ i=0
+=1+cx+c2x2+c3x3+ = cixi, X
+1 cx ··· Dirichlet power series:
+− i=0
+1
+1
+xn
+=1+xn+x2n+x3n+
+···
+= X ∞ xni, A(x)= ∞ a ix i .
+i=1
+− i=0 X
+X Binomial theorem:
+x ∞
+=x+2x2+3x3+4x4+ = ixi, n
+(1 − x)2 ··· i=0 (x+y)n = n xn − kyk.
+n n k!zk X ∞ k=0(cid:18) k (cid:19)
+=x+2nx2+3nx3+4nx4+ = inxi, X
+k (1 z)k+1 ··· Difference of like powers:
+k=0(cid:26) (cid:27) − i=0
+X X n 1
+ex =1+x+ 1x2+ 1x3+ = ∞ xi , xn yn =(x y) − xn − 1 − kyk.
+2 6 ··· i! − −
+X i=0 X k=0
+∞ xi For ordinary power series:
+ln(1+x) =x 1x2+ 1x3 1x4 = ( 1)i+1 ,
+− 2 3 − 4 −··· − i ∞
+i=1 αA(x)+βB(x)= (αa +βb )xi,
+X i i
+ln 1 =x+ 1x2+ 1x3+ 1x4+ = ∞ xi , X i=0
+1 x 2 3 4 ··· i
+∞
+− X i ∞ =1 x2i+1 xkA(x)= a i − k xi,
+sinx =x 1x3+ 1x5 1x7+ = ( 1)i , i=k
+− 3! 5! − 7! ··· − (2i+1)! X
+cosx =1 − 2 1 ! x2+ 4 1 ! x4 − 6 1 ! x6+ ··· = X i ∞ =0 ( − 1)i ( x 2 2 i) i ! , A(x) − P xk i k = − 0 1a i xi = X i ∞ =0 a i+k xi,
+X i ∞ =0 x2i+1 A(cx)= ∞ cia i xi,
+tan− 1x =x
+− 3
+1x3+
+5
+1x5
+− 7
+1x7+
+···
+= (
+−
+1)i
+(2i+1)
+,
+X i=0
+i=0
+X ∞
+(1+x)n =1+nx+ n(n − 1)x2+ = ∞ n xi, A ′ (x)= (i+1)a i+1 xi,
+2 ··· i i=0
+i=0(cid:18) (cid:19) X
+X
+1 =1+(n+1)x+ n+2 x2+ = ∞ i+n xi, xA ′ (x)= ∞ ia i xi,
+(1 x)n+1 2 ··· i i=1
+− i=0(cid:18) (cid:19) X
+(cid:0) (cid:1) X
+x =1 1x+ 1 x2 1 x4+ = ∞ B i xi , A(x)dx= ∞ a i − 1 xi,
+ex 1 − 2 12 − 720 ··· i! i
+− X i=0 Z X i=1
+1 (1 √1 4x) =1+x+2x2+5x3+ = ∞ 1 2i xi, A(x)+A( − x) = ∞ a x2i,
+2x − − ··· i+1 i 2 2i
+X i=0 (cid:18) (cid:19) X i=0
+1 ∞ 2i
+=1+2x+6x2+20x3+ = xi, A(x) A( x) ∞
+√1 4x ··· i − − = a 2i+1 x2i+1.
+1 1 − √1 4x n X i ∞ =0(cid:18) 2i (cid:19) +n 2 X i=0
+− − =1+(2+n)x+ 4+n x2+ = xi, Summation: If b = i a then
+√1 4x 2x 2 ··· i i j=0 i
+− 1 (cid:18) 1 (cid:19) (cid:0) (cid:1) X i ∞ =0(cid:18) (cid:19) B(x)= 1 PA(x).
+ln =x+ 3x2+ 11x3+ 25x4+ = H xi, 1 x
+1 x 1 x 2 6 12 ··· i −
+− − i=1 Convolution:
+2 1 ln 1 1 x 2 = 2 1x2+ 4 3x3+ 2 1 4 1x4+ ··· = X ∞ H i − i 1 xi , A(x)B(x)= ∞ i a j b i j xi.
+(cid:18) − (cid:19) i=2  − 
+X i=0 j=0
+x ∞ X X
+=x+x2+2x3+3x4+ = F xi,  
+1 x x2 ··· i
+− − i=0 God made the natural numbers;
+X
+F n x =F x+F x2+F x3+ = ∞ F xi. all the rest is the work of man.
+1 (F +F )x ( 1)nx2 n 2n 3n ··· ni – Leopold Kronecker
+n 1 n+1
+− − − − X i=0Theoretical Computer Science Cheat Sheet
+Series Escher’s Knot
+Expansions:
+n
+1 1 ∞ n+i 1 − ∞ i
+ln = (H H ) xi, = xi,
+(1 x)n+1 1 x n+i − n i x n
+− − i=0 (cid:18) (cid:19) (cid:18) (cid:19) i=0(cid:26) (cid:27)
+X X
+∞ n ∞ i n!xi
+xn = xi, (ex 1)n = ,
+i − n i!
+i=0(cid:20) (cid:21) i=0(cid:26) (cid:27)
+1 n X ∞ i n!xi X ∞ ( 4)iB 2i x2i
+ln = , xcotx = − ,
+1 x n i! (2i)!
+(cid:18) − (cid:19) i=0(cid:20) (cid:21) i=0
+X X
+tanx = ∞ ( 1)i − 1 22i(22i − 1)B 2i x2i − 1 , ζ(x) = ∞ 1 ,
+− (2i)! ix
+i=1 i=1
+X X
+1 ∞ µ(i) ζ(x 1) ∞ φ(i)
+= , − = ,
+ζ(x) ix ζ(x) ix
+i=1 i=1
+X X
+1
+ζ(x) = , Stieltjes Integration
+1 p x
+p − −
+Y If G is continuous in the interval [a,b] and F is nondecreasing then
+ζ2(x) = ∞ d(i) where d(n)= 1, b
+xi dn G(x)dF(x)
+|
+i=1
+X P Za
+∞ S(i) exists. If a b c then
+ζ(x)ζ(x 1) = where S(n)= d, ≤ ≤
+− xi dn c b c
+|
+i=1 G(x)dF(x)= G(x)dF(x)+ G(x)dF(x).
+X P
+ζ(2n) = 22n − 1 | B 2n |π2n, n N, If the int Z eg a rals involved exi Z s a t Zb
+(2n)! ∈
+b b b
+sin x x = ∞ ( − 1)i − 1 (4i − ( 2 2 ) i B )! 2i x2i , Za G(x)+H(x) dF(x)= Za G(x)dF(x)+ Za H(x)dF(x),
+X i=0 b(cid:0) (cid:1) b b
+1 √1 4x n ∞ n(2i+n 1)! G(x)d F(x)+H(x) = G(x)dF(x)+ G(x)dH(x),
+(cid:18)
+−
+2x
+−
+(cid:19)
+=
+i=0 i!(n+
+−
+i)!
+xi, Za
+b (cid:0) b(cid:1)
+Za Za
+b
+X c G(x)dF(x)= G(x)d c F(x) =c G(x)dF(x),
+exsinx = ∞ 2i/2sini 4 π xi, Za · Za · Za
+i! b (cid:0) (cid:1) b
+X i=1 G(x)dF(x) =G(b)F(b) G(a)F(a) F(x)dG(x).
+− −
+1 √1 x ∞ (4i)!
+Za Za
+− − = xi, Iftheintegralsinvolvedexist,andF possessesaderivativeF ′ atevery
+s x 16i√2(2i)!(2i+1)!
+point in [a,b] then
+i=0
+X
+arcsinx 2 ∞ 4ii!2 b b
+= x2i. G(x)dF(x) = G(x)F ′ (x)dx.
+x (i+1)(2i+1)!
+(cid:18) (cid:19) i=0 Za Za
+X
+Cramer’s Rule Fibonacci Numbers
+00 47 18 76 29 93 85 34 61 52
+If we have equations:
+86 11 57 28 70 39 94 45 02 63 1,1,2,3,5,8,13,21,34,55,89,...
+a x +a x + +a x =b
+1,1 1 1,2 2 ··· 1,n n 1 95 80 22 67 38 71 49 56 13 04
+Definitions:
+a x +a x + +a x =b
+2,1 1 2,2 2 2,n n 2 59 96 81 33 07 48 72 60 24 15
+···
+. . . 73 69 90 82 44 17 58 01 35 26 F i =F i 1 +F i 2 , F 0 =F 1 =1,
+. . . . . . 68 74 09 91 83 55 27 12 46 30 F − i =( − 1)i − 1F i ,
+a n,1 x 1 +a n,2 x 2 + ··· +a n,n x n =b n 37 08 75 19 92 84 66 23 50 41 F − = 1 − φi φˆi ,
+14 25 36 40 51 62 03 77 88 99 i √5 −
+LetA=(a )andB bethecolumnmatrix(b ). Then
+i,j i 21 32 43 54 65 06 10 89 97 78 Cassini’s ident(cid:16)ity: for i(cid:17)>0:
+there is a unique solution iff detA = 0. Let A be A
+6 i 42 53 64 05 16 20 31 98 79 87 F F F2 =( 1)i.
+with column i replaced by B. Then i+1 i − 1 − i −
+x = detA i . TheFibonaccinumbersystem: Additive rule:
+i
+detA Every integer n has a unique F n+k =F k F n+1 +F k 1 F n ,
+−
+representation F =F F +F F .
+2n n n+1 n 1 n
+−
+Improvement makes strait roads, but the crooked n=F k1 +F k2 +
+···
++F km , Calculation by matrices:
+r – o W ad i s ll w ia i m tho B u la t k I e m ( p T r h ov e e M m a en rr t i , a a g r e e o r f o H ad e s av o e f n G a e n n d iu H s. ell) w 1 h ≤ er i e < k i m ≥ an k d i+ k 1 m + ≥ 2 2 f . or all i, (cid:18) F F n n − − 1 2 F F n − n 1 (cid:19) = (cid:18) 0 1 1 1 (cid:19) n .

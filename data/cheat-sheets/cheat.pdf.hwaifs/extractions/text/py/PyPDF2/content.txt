@@ -1,0 +1,1936 @@
+Theoretical Computer Science Cheat Sheet
+Deﬁnitions Series
+f(n) =O(g(n))iﬀ∃positivec,n0such that
+0≤f(n)≤cg(n)∀n≥n0.n/summationdisplay
+i=1i=n(n+1)
+2,n/summationdisplay
+i=1i2=n(n+1)(2n+1)
+6,n/summationdisplay
+i=1i3=n2(n+1)2
+4.
+In general:
+n/summationdisplay
+i=1im=1
+m+1/bracketleftbigg
+(n+1)m+1−1−n/summationdisplay
+i=1/parenleftbig
+(i+1)m+1−im+1−(m+1)im/parenrightbig/bracketrightbigg
+n−1/summationdisplay
+i=1im=1
+m+1m/summationdisplay
+k=0/parenleftbiggm+1
+k/parenrightbigg
+Bknm+1−k.
+Geometric series:
+n/summationdisplay
+i=0ci=cn+1−1
+c−1, c/ne}ationslash= 1,∞/summationdisplay
+i=0ci=1
+1−c,∞/summationdisplay
+i=1ci=c
+1−c,|c|<1,
+n/summationdisplay
+i=0ici=ncn+2−(n+1)cn+1+c
+(c−1)2, c/ne}ationslash= 1,∞/summationdisplay
+i=0ici=c
+(1−c)2,|c|<1.
+Harmonic series:
+Hn=n/summationdisplay
+i=11
+i,n/summationdisplay
+i=1iHi=n(n+1)
+2Hn−n(n−1)
+4.
+n/summationdisplay
+i=1Hi= (n+1)Hn−n,n/summationdisplay
+i=1/parenleftbiggi
+m/parenrightbigg
+Hi=/parenleftbiggn+1
+m+1/parenrightbigg/parenleftbigg
+Hn+1−1
+m+1/parenrightbigg
+.f(n) = Ω(g(n))iﬀ∃positivec,n0such that
+f(n)≥cg(n)≥0∀n≥n0.
+f(n) = Θ(g(n))iﬀf(n) =O(g(n)) and
+f(n) = Ω(g(n)).
+f(n) =o(g(n))iﬀ limn→∞f(n)/g(n) = 0.
+lim
+n→∞an=aiﬀ∀ǫ >0,∃n0such that
+|an−a|< ǫ,∀n≥n0.
+supS leastb∈Rsuch that b≥s,
+∀s∈S.
+infS greatest b∈Rsuch that b≤
+s,∀s∈S.
+liminf
+n→∞an lim
+n→∞inf{ai|i≥n,i∈N}.
+limsup
+n→∞an lim
+n→∞sup{ai|i≥n,i∈N}.
+/parenleftbign
+k/parenrightbig
+Combinations: Size ksub-
+sets of a size nset.
+/bracketleftbign
+k/bracketrightbig
+Stirling numbers (1st kind):
+Arrangements of an nele-
+ment set into kcycles.1./parenleftbiggn
+k/parenrightbigg
+=n!
+(n−k)!k!,2.n/summationdisplay
+k=0/parenleftbiggn
+k/parenrightbigg
+= 2n,3./parenleftbiggn
+k/parenrightbigg
+=/parenleftbiggn
+n−k/parenrightbigg
+,
+4./parenleftbiggn
+k/parenrightbigg
+=n
+k/parenleftbiggn−1
+k−1/parenrightbigg
+, 5./parenleftbiggn
+k/parenrightbigg
+=/parenleftbiggn−1
+k/parenrightbigg
++/parenleftbiggn−1
+k−1/parenrightbigg
+,
+6./parenleftbiggn
+m/parenrightbigg/parenleftbiggm
+k/parenrightbigg
+=/parenleftbiggn
+k/parenrightbigg/parenleftbiggn−k
+m−k/parenrightbigg
+, 7.n/summationdisplay
+k=0/parenleftbiggr+k
+k/parenrightbigg
+=/parenleftbiggr+n+1
+n/parenrightbigg
+,
+8.n/summationdisplay
+k=0/parenleftbiggk
+m/parenrightbigg
+=/parenleftbiggn+1
+m+1/parenrightbigg
+, 9.n/summationdisplay
+k=0/parenleftbiggr
+k/parenrightbigg/parenleftbiggs
+n−k/parenrightbigg
+=/parenleftbiggr+s
+n/parenrightbigg
+,
+10./parenleftbiggn
+k/parenrightbigg
+= (−1)k/parenleftbiggk−n−1
+k/parenrightbigg
+, 11./braceleftbiggn
+1/bracerightbigg
+=/braceleftbiggn
+n/bracerightbigg
+= 1,
+12./braceleftbiggn
+2/bracerightbigg
+= 2n−1−1, 13./braceleftbiggn
+k/bracerightbigg
+=k/braceleftbiggn−1
+k/bracerightbigg
++/braceleftbiggn−1
+k−1/bracerightbigg
+,/braceleftbign
+k/bracerightbig
+Stirling numbers (2nd kind):
+Partitions of an nelement
+set intoknon-empty sets.
+/angbracketleftbign
+k/angbracketrightbig
+1st order Eulerian numbers:
+Permutations π1π2...πnon
+{1,2,...,n}withkascents.
+/angbracketleftbig /angbracketleftbign
+k/angbracketrightbig /angbracketrightbig
+2ndorderEuleriannumbers.
+Cn Catalan Numbers: Binary
+trees with n+1 vertices.
+14./bracketleftbiggn
+1/bracketrightbigg
+= (n−1)!, 15./bracketleftbiggn
+2/bracketrightbigg
+= (n−1)!Hn−1, 16./bracketleftbiggn
+n/bracketrightbigg
+= 1, 17./bracketleftbiggn
+k/bracketrightbigg
+≥/braceleftbiggn
+k/bracerightbigg
+,
+18./bracketleftbiggn
+k/bracketrightbigg
+= (n−1)/bracketleftbiggn−1
+k/bracketrightbigg
++/bracketleftbiggn−1
+k−1/bracketrightbigg
+,19./braceleftbiggn
+n−1/bracerightbigg
+=/bracketleftbiggn
+n−1/bracketrightbigg
+=/parenleftbiggn
+2/parenrightbigg
+,20.n/summationdisplay
+k=0/bracketleftbiggn
+k/bracketrightbigg
+=n!,21.Cn=1
+n+1/parenleftbigg2n
+n/parenrightbigg
+,
+22./angbracketleftbiggn
+0/angbracketrightbigg
+=/angbracketleftbiggn
+n−1/angbracketrightbigg
+= 1, 23./angbracketleftbiggn
+k/angbracketrightbigg
+=/angbracketleftbiggn
+n−1−k/angbracketrightbigg
+, 24./angbracketleftbiggn
+k/angbracketrightbigg
+= (k+1)/angbracketleftbiggn−1
+k/angbracketrightbigg
++(n−k)/angbracketleftbiggn−1
+k−1/angbracketrightbigg
+,
+25./angbracketleftbigg0
+k/angbracketrightbigg
+=/braceleftBig1 ifk= 0,
+0 otherwise26./angbracketleftbiggn
+1/angbracketrightbigg
+= 2n−n−1, 27./angbracketleftbiggn
+2/angbracketrightbigg
+= 3n−(n+1)2n+/parenleftbiggn+1
+2/parenrightbigg
+,
+28.xn=n/summationdisplay
+k=0/angbracketleftbiggn
+k/angbracketrightbigg/parenleftbiggx+k
+n/parenrightbigg
+,29./angbracketleftbiggn
+m/angbracketrightbigg
+=m/summationdisplay
+k=0/parenleftbiggn+1
+k/parenrightbigg
+(m+1−k)n(−1)k,30.m!/braceleftbiggn
+m/bracerightbigg
+=n/summationdisplay
+k=0/angbracketleftbiggn
+k/angbracketrightbigg/parenleftbiggk
+n−m/parenrightbigg
+,
+31./angbracketleftbiggn
+m/angbracketrightbigg
+=n/summationdisplay
+k=0/braceleftbiggn
+k/bracerightbigg/parenleftbiggn−k
+m/parenrightbigg
+(−1)n−k−mk!, 32./angbracketleftbigg /angbracketleftbiggn
+0/angbracketrightbigg /angbracketrightbigg
+= 1, 33./angbracketleftbigg /angbracketleftbiggn
+n/angbracketrightbigg /angbracketrightbigg
+= 0 for n/ne}ationslash= 0,
+34./angbracketleftbigg /angbracketleftbiggn
+k/angbracketrightbigg /angbracketrightbigg
+= (k+1)/angbracketleftbigg /angbracketleftbiggn−1
+k/angbracketrightbigg /angbracketrightbigg
++(2n−1−k)/angbracketleftbigg /angbracketleftbiggn−1
+k−1/angbracketrightbigg /angbracketrightbigg
+, 35.n/summationdisplay
+k=0/angbracketleftbigg /angbracketleftbiggn
+k/angbracketrightbigg /angbracketrightbigg
+=(2n)n
+2n,
+36./braceleftbiggx
+x−n/bracerightbigg
+=n/summationdisplay
+k=0/angbracketleftbigg /angbracketleftbiggn
+k/angbracketrightbigg /angbracketrightbigg/parenleftbiggx+n−1−k
+2n/parenrightbigg
+, 37./braceleftbiggn+1
+m+1/bracerightbigg
+=/summationdisplay
+k/parenleftbiggn
+k/parenrightbigg/braceleftbiggk
+m/bracerightbigg
+=n/summationdisplay
+k=0/braceleftbiggk
+m/bracerightbigg
+(m+1)n−k,Theoretical Computer Science Cheat Sheet
+Identities Cont. Trees
+38./bracketleftbiggn+1
+m+1/bracketrightbigg
+=/summationdisplay
+k/bracketleftbiggn
+k/bracketrightbigg/parenleftbiggk
+m/parenrightbigg
+=n/summationdisplay
+k=0/bracketleftbiggk
+m/bracketrightbigg
+nn−k=n!n/summationdisplay
+k=01
+k!/bracketleftbiggk
+m/bracketrightbigg
+,39./bracketleftbiggx
+x−n/bracketrightbigg
+=n/summationdisplay
+k=0/angbracketleftbigg /angbracketleftbiggn
+k/angbracketrightbigg /angbracketrightbigg/parenleftbiggx+k
+2n/parenrightbigg
+,
+40./braceleftbiggn
+m/bracerightbigg
+=/summationdisplay
+k/parenleftbiggn
+k/parenrightbigg/braceleftbiggk+1
+m+1/bracerightbigg
+(−1)n−k, 41./bracketleftbiggn
+m/bracketrightbigg
+=/summationdisplay
+k/bracketleftbiggn+1
+k+1/bracketrightbigg/parenleftbiggk
+m/parenrightbigg
+(−1)m−k,
+42./braceleftbiggm+n+1
+m/bracerightbigg
+=m/summationdisplay
+k=0k/braceleftbiggn+k
+k/bracerightbigg
+, 43./bracketleftbiggm+n+1
+m/bracketrightbigg
+=m/summationdisplay
+k=0k(n+k)/bracketleftbiggn+k
+k/bracketrightbigg
+,
+44./parenleftbiggn
+m/parenrightbigg
+=/summationdisplay
+k/braceleftbiggn+1
+k+1/bracerightbigg/bracketleftbiggk
+m/bracketrightbigg
+(−1)m−k,45.(n−m)!/parenleftbiggn
+m/parenrightbigg
+=/summationdisplay
+k/bracketleftbiggn+1
+k+1/bracketrightbigg/braceleftbiggk
+m/bracerightbigg
+(−1)m−k,forn≥m,
+46./braceleftbiggn
+n−m/bracerightbigg
+=/summationdisplay
+k/parenleftbiggm−n
+m+k/parenrightbigg/parenleftbiggm+n
+n+k/parenrightbigg/bracketleftbiggm+k
+k/bracketrightbigg
+,47./bracketleftbiggn
+n−m/bracketrightbigg
+=/summationdisplay
+k/parenleftbiggm−n
+m+k/parenrightbigg/parenleftbiggm+n
+n+k/parenrightbigg/braceleftbiggm+k
+k/bracerightbigg
+,
+48./braceleftbiggn
+ℓ+m/bracerightbigg/parenleftbiggℓ+m
+ℓ/parenrightbigg
+=/summationdisplay
+k/braceleftbiggk
+ℓ/bracerightbigg/braceleftbiggn−k
+m/bracerightbigg/parenleftbiggn
+k/parenrightbigg
+, 49./bracketleftbiggn
+ℓ+m/bracketrightbigg/parenleftbiggℓ+m
+ℓ/parenrightbigg
+=/summationdisplay
+k/bracketleftbiggk
+ℓ/bracketrightbigg/bracketleftbiggn−k
+m/bracketrightbigg/parenleftbiggn
+k/parenrightbigg
+.Every tree with n
+vertices has n−1
+edges.
+Kraft inequal-
+ity: If the depths
+of the leaves of
+a binary tree are
+d1,...,d n:
+n/summationdisplay
+i=12−di≤1,
+and equality holds
+only if every in-
+ternal node has 2
+sons.
+Recurrences
+Master method:
+T(n) =aT(n/b)+f(n), a≥1,b >1
+If∃ǫ >0 such that f(n) =O(nlogba−ǫ)
+then
+T(n) = Θ(nlogba).
+Iff(n) = Θ(nlogba) then
+T(n) = Θ(nlogbalog2n).
+If∃ǫ >0 such that f(n) = Ω(nlogba+ǫ),
+and∃c <1 such that af(n/b)≤cf(n)
+for large n, then
+T(n) = Θ(f(n)).
+Substitution (example): Consider the
+following recurrence
+Ti+1= 22i·T2
+i, T1= 2.
+Note that Tiis always a power of two.
+Letti= log2Ti. Then we have
+ti+1= 2i+2ti, t1= 1.
+Letui=ti/2i. Dividing both sides of
+the previous equation by 2i+1we get
+ti+1
+2i+1=2i
+2i+1+ti
+2i.
+Substituting we ﬁnd
+ui+1=1
+2+ui, u 1=1
+2,
+which is simply ui=i/2. So we ﬁnd
+thatTihas the closed form Ti= 2i2i−1.
+Summing factors (example): Consider
+the following recurrence
+T(n) = 3T(n/2)+n, T(1) = 1.
+Rewrite so that all terms involving T
+are on the left side
+T(n)−3T(n/2) =n.
+Now expandthe recurrence, and choose
+a factor which makes the left side “tele-
+scope”1/parenleftbig
+T(n)−3T(n/2) =n/parenrightbig
+3/parenleftbig
+T(n/2)−3T(n/4) =n/2/parenrightbig
+.........
+3log2n−1/parenleftbig
+T(2)−3T(1) = 2/parenrightbig
+Letm= log2n. Summing the left side
+we getT(n)−3mT(1) =T(n)−3m=
+T(n)−nkwherek= log23≈1.58496.
+Summing the right side we get
+m−1/summationdisplay
+i=0n
+2i3i=nm−1/summationdisplay
+i=0/parenleftbig3
+2/parenrightbigi.
+Letc=3
+2. Then we have
+nm−1/summationdisplay
+i=0ci=n/parenleftbiggcm−1
+c−1/parenrightbigg
+= 2n(clog2n−1)
+= 2n(c(k−1)logcn−1)
+= 2nk−2n,
+and soT(n) = 3nk−2n. Full history re-
+currences can often be changed to limited
+history ones (example): Consider
+Ti= 1+i−1/summationdisplay
+j=0Tj, T0= 1.
+Note that
+Ti+1= 1+i/summationdisplay
+j=0Tj.
+Subtracting we ﬁnd
+Ti+1−Ti= 1+i/summationdisplay
+j=0Tj−1−i−1/summationdisplay
+j=0Tj
+=Ti.
+And soTi+1= 2Ti= 2i+1.Generating functions:
+1. Multiply both sides of the equa-
+tion byxi.
+2. Sum both sides over all ifor
+which the equation is valid.
+3. Choose a generating function
+G(x). Usually G(x) =/summationtext∞
+i=0xigi.
+3. Rewrite the equation in terms of
+the generating function G(x).
+4. Solve for G(x).
+5. The coeﬃcient of xiinG(x) isgi.
+Example:
+gi+1= 2gi+1, g0= 0.
+Multiply and sum:/summationdisplay
+i≥0gi+1xi=/summationdisplay
+i≥02gixi+/summationdisplay
+i≥0xi.
+Wechoose G(x) =/summationtext
+i≥0xigi. Rewrite
+in terms of G(x):
+G(x)−g0
+x= 2G(x)+/summationdisplay
+i≥0xi.
+Simplify:
+G(x)
+x= 2G(x)+1
+1−x.
+Solve for G(x):
+G(x) =x
+(1−x)(1−2x).
+Expand this using partial fractions:
+G(x) =x/parenleftbigg2
+1−2x−1
+1−x/parenrightbigg
+=x
+2/summationdisplay
+i≥02ixi−/summationdisplay
+i≥0xi
+
+=/summationdisplay
+i≥0(2i+1−1)xi+1.
+Sogi= 2i−1.Theoretical Computer Science Cheat Sheet
+π≈3.14159, e≈2.71828, γ≈0.57721, φ=1+√
+5
+2≈1.61803, ˆφ=1−√
+5
+2≈ −.61803
+i 2ipi General Probability
+1 2 2 Bernoulli Numbers ( Bi= 0, odd i/ne}ationslash= 1):
+B0= 1,B1=−1
+2,B2=1
+6,B4=−1
+30,
+B6=1
+42,B8=−1
+30,B10=5
+66.
+Change of base, quadratic formula:
+logbx=logax
+logab,−b±√
+b2−4ac
+2a.
+Euler’s number e:
+e= 1+1
+2+1
+6+1
+24+1
+120+···
+lim
+n→∞/parenleftBig
+1+x
+n/parenrightBign
+=ex.
+/parenleftbig
+1+1
+n/parenrightbign< e </parenleftbig
+1+1
+n/parenrightbign+1.
+/parenleftbig
+1+1
+n/parenrightbign=e−e
+2n+11e
+24n2−O/parenleftbigg1
+n3/parenrightbigg
+.
+Harmonic numbers:
+1,3
+2,11
+6,25
+12,137
+60,49
+20,363
+140,761
+280,7129
+2520,...
+lnn < H n<lnn+1,
+Hn= lnn+γ+O/parenleftbigg1
+n/parenrightbigg
+.
+Factorial, Stirling’s approximation:
+1, 2, 6, 24, 120, 720, 5040, 40320, 362880, ...
+n! =√
+2πn/parenleftbiggn
+e/parenrightbiggn/parenleftbigg
+1+Θ/parenleftbigg1
+n/parenrightbigg/parenrightbigg
+.
+Ackermann’s function and inverse:
+a(i,j) =
+
+2ji= 1
+a(i−1,2) j= 1
+a(i−1,a(i,j−1))i,j≥2
+α(i) = min{j|a(j,j)≥i}.Continuous distributions: If
+Pr[a < X < b ] =/integraldisplayb
+ap(x)dx,
+thenpis the probability density function of
+X. If
+Pr[X < a] =P(a),
+thenPis the distribution function of X. If
+Pandpboth exist then
+P(a) =/integraldisplaya
+−∞p(x)dx.
+Expectation: If Xis discrete
+E[g(X)] =/summationdisplay
+xg(x)Pr[X=x].
+IfXcontinuous then
+E[g(X)] =/integraldisplay∞
+−∞g(x)p(x)dx=/integraldisplay∞
+−∞g(x)dP(x).
+Variance, standard deviation:
+VAR[X] =E[X2]−E[X]2,
+σ=/radicalbig
+VAR[X].
+For events AandB:
+Pr[A∨B] = Pr[A]+Pr[B]−Pr[A∧B]
+Pr[A∧B] = Pr[A]·Pr[B],
+iﬀAandBare independent.
+Pr[A|B] =Pr[A∧B]
+Pr[B]
+For random variables XandY:
+E[X·Y] =E[X]·E[Y],
+ifXandYare independent.
+E[X+Y] =E[X]+E[Y],
+E[cX] =cE[X].
+Bayes’ theorem:
+Pr[Ai|B] =Pr[B|Ai]Pr[Ai]/summationtextn
+j=1Pr[Aj]Pr[B|Aj].
+Inclusion-exclusion:
+Pr/bracketleftBign/logicalordisplay
+i=1Xi/bracketrightBig
+=n/summationdisplay
+i=1Pr[Xi]+
+n/summationdisplay
+k=2(−1)k+1/summationdisplay
+ii<···<ikPr/bracketleftBigk/logicalanddisplay
+j=1Xij/bracketrightBig
+.
+Moment inequalities:
+Pr/bracketleftbig
+|X| ≥λE[X]/bracketrightbig
+≤1
+λ,
+Pr/bracketleftBig/vextendsingle/vextendsingleX−E[X]/vextendsingle/vextendsingle≥λ·σ/bracketrightBig
+≤1
+λ2.
+Geometric distribution:
+Pr[X=k] =pqk−1, q= 1−p,
+E[X] =∞/summationdisplay
+k=1kpqk−1=1
+p.2 4 3
+3 8 5
+4 16 7
+5 32 11
+6 64 13
+7 128 17
+8 256 19
+9 512 23
+10 1,024 29
+11 2,048 31
+12 4,096 37
+13 8,192 41
+14 16,384 43
+15 32,768 47
+16 65,536 53
+17 131,072 59
+18 262,144 61
+19 524,288 67
+20 1,048,576 71
+21 2,097,152 73
+22 4,194,304 79
+23 8,388,608 83
+24 16,777,216 89
+25 33,554,432 97
+26 67,108,864 101
+27 134,217,728 103
+28 268,435,456 107 Binomial distribution:
+Pr[X=k] =/parenleftbiggn
+k/parenrightbigg
+pkqn−k, q= 1−p,
+E[X] =n/summationdisplay
+k=1k/parenleftbiggn
+k/parenrightbigg
+pkqn−k=np.
+Poisson distribution:
+Pr[X=k] =e−λλk
+k!,E[X] =λ.
+Normal (Gaussian) distribution:
+p(x) =1√
+2πσe−(x−µ)2/2σ2,E[X] =µ.
+The “coupon collector”: We are given a
+random coupon each day, and there are n
+diﬀerent types of coupons. The distribu-
+tion of coupons is uniform. The expected
+number of days to pass before we to col-
+lect allntypes is
+nHn.29 536,870,912 109
+301,073,741,824 113
+312,147,483,648 127
+324,294,967,296 131
+Pascal’s Triangle
+1
+1 1
+1 2 1
+1 3 3 1
+1 4 6 4 1
+1 5 10 10 5 1
+1 6 15 20 15 6 1
+1 7 21 35 35 21 7 1
+1 8 28 56 70 56 28 8 1
+1 9 36 84 126 126 84 36 9 1
+1 10 45 120 210 252 210 120 45 10 1Theoretical Computer Science Cheat Sheet
+Trigonometry Matrices More Trig.
+θA
+c
+Bab
+C
+(0,-1)(0,1)
+(-1,0) (1,0)(cosθ,sinθ)
+Pythagorean theorem:
+C2=A2+B2.
+Deﬁnitions:
+sina=A/C,cosa=B/C,
+csca=C/A,seca=C/B,
+tana=sina
+cosa=A
+B,cota=cosa
+sina=B
+A.
+Area, radius of inscribed circle:
+1
+2AB,AB
+A+B+C.
+Identities:
+sinx=1
+cscx, cosx=1
+secx,
+tanx=1
+cotx, sin2x+cos2x= 1,
+1+tan2x= sec2x, 1+cot2x= csc2x,
+sinx= cos/parenleftbigπ
+2−x/parenrightbig
+, sinx= sin(π−x),
+cosx=−cos(π−x), tanx= cot/parenleftbigπ
+2−x/parenrightbig
+,
+cotx=−cot(π−x),cscx= cotx
+2−cotx,
+sin(x±y) = sinxcosy±cosxsiny,
+cos(x±y) = cosxcosy∓sinxsiny,
+tan(x±y) =tanx±tany
+1∓tanxtany,
+cot(x±y) =cotxcoty∓1
+cotx±coty,
+sin2x= 2sinxcosx, sin2x=2tanx
+1+tan2x,
+cos2x= cos2x−sin2x,cos2x= 2cos2x−1,
+cos2x= 1−2sin2x, cos2x=1−tan2x
+1+tan2x,
+tan2x=2tanx
+1−tan2x, cot2x=cot2x−1
+2cotx,
+sin(x+y)sin(x−y) = sin2x−sin2y,
+cos(x+y)cos(x−y) = cos2x−sin2y.
+Euler’s equation:
+eix= cosx+isinx, eiπ=−1.Multiplication:
+C=A·B, c i,j=n/summationdisplay
+k=1ai,kbk,j.
+Determinants: det A/ne}ationslash= 0 iﬀAis non-singular.
+detA·B= detA·detB,
+detA=/summationdisplay
+πn/productdisplay
+i=1sign(π)ai,π(i).
+2×2 and 3×3 determinant:/vextendsingle/vextendsingle/vextendsingle/vextendsinglea b
+c d/vextendsingle/vextendsingle/vextendsingle/vextendsingle=ad−bc,
+/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsinglea b c
+d e f
+g h i/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingle=g/vextendsingle/vextendsingle/vextendsingle/vextendsingleb c
+e f/vextendsingle/vextendsingle/vextendsingle/vextendsingle−h/vextendsingle/vextendsingle/vextendsingle/vextendsinglea c
+d f/vextendsingle/vextendsingle/vextendsingle/vextendsingle+i/vextendsingle/vextendsingle/vextendsingle/vextendsinglea b
+d e/vextendsingle/vextendsingle/vextendsingle/vextendsingle
+=aei+bfg+cdh
+−ceg−fha−ibd.
+Permanents:
+permA=/summationdisplay
+πn/productdisplay
+i=1ai,π(i).h
+Aa
+cb
+BC
+Law of cosines:
+c2=a2+b2−2abcosC.
+Area:
+A=1
+2hc,
+=1
+2absinC,
+=c2sinAsinB
+2sinC.
+Heron’s formula:
+A=√s·sa·sb·sc,
+s=1
+2(a+b+c),
+sa=s−a,
+sb=s−b,
+sc=s−c.
+More identities:
+sinx
+2=/radicalbigg
+1−cosx
+2,
+cosx
+2=/radicalbigg
+1+cosx
+2,
+tanx
+2=/radicalbigg
+1−cosx
+1+cosx,
+=1−cosx
+sinx,
+=sinx
+1+cosx,
+cotx
+2=/radicalbigg
+1+cosx
+1−cosx,
+=1+cosx
+sinx,
+=sinx
+1−cosx,
+sinx=eix−e−ix
+2i,
+cosx=eix+e−ix
+2,
+tanx=−ieix−e−ix
+eix+e−ix,
+=−ie2ix−1
+e2ix+1,
+sinx=sinhix
+i,
+cosx= coshix,
+tanx=tanhix
+i.Hyperbolic Functions
+Deﬁnitions:
+sinhx=ex−e−x
+2,coshx=ex+e−x
+2,
+tanhx=ex−e−x
+ex+e−x,cschx=1
+sinhx,
+sechx=1
+coshx,cothx=1
+tanhx.
+Identities:
+cosh2x−sinh2x= 1,tanh2x+sech2x= 1,
+coth2x−csch2x= 1,sinh(−x) =−sinhx,
+cosh(−x) = cosh x, tanh(−x) =−tanhx,
+sinh(x+y) = sinhxcoshy+coshxsinhy,
+cosh(x+y) = cosh xcoshy+sinhxsinhy,
+sinh2x= 2sinhxcoshx,
+cosh2x= cosh2x+sinh2x,
+coshx+sinhx=ex,coshx−sinhx=e−x,
+(coshx+sinhx)n= coshnx+sinhnx, n∈Z,
+2sinh2x
+2= coshx−1,2cosh2x
+2= coshx+1.
+θsinθcosθtanθ
+0 0 1 0
+π
+61
+2√
+3
+2√
+3
+3
+π
+4√
+2
+2√
+2
+21
+π
+3√
+3
+21
+2√
+3
+π
+21 0 ∞...in mathematics
+you don’t under-
+stand things, you
+just get used to
+them.
+– J. von Neumann v2.02c/circleco√yrt1994 by Steve Seiden
+sseiden@acm.org
+http://www.csc.lsu.edu/~seidenTheoretical Computer Science Cheat Sheet
+Number Theory Graph Theory
+TheChineseremaindertheorem: Thereex-
+ists a number Csuch that:
+C≡r1modm1
+.........
+C≡rnmodmn
+ifmiandmjare relatively prime for i/ne}ationslash=j.
+Euler’s function: φ(x) is the number of
+positive integers less than xrelatively
+prime to x. If/producttextn
+i=1pei
+iis the prime fac-
+torization of xthen
+φ(x) =n/productdisplay
+i=1pei−1
+i(pi−1).
+Euler’s theorem: If aandbare relatively
+prime then
+1≡aφ(b)modb.
+Fermat’s theorem:
+1≡ap−1modp.
+The Euclidean algorithm: if a > bare in-
+tegers then
+gcd(a,b) = gcd(amodb,b).
+If/producttextn
+i=1pei
+iis the prime factorization of x
+then
+S(x) =/summationdisplay
+d|xd=n/productdisplay
+i=1pei+1
+i−1
+pi−1.
+PerfectNumbers: xisanevenperfectnum-
+ber iﬀx= 2n−1(2n−1)and 2n−1isprime.
+Wilson’s theorem: nis a prime iﬀ
+(n−1)!≡ −1 modn.
+M¨ obius inversion:
+µ(i) =
+
+1 if i= 1.
+0 if iis not square-free.
+(−1)rifiis the product of
+rdistinct primes.
+If
+G(a) =/summationdisplay
+d|aF(d),
+then
+F(a) =/summationdisplay
+d|aµ(d)G/parenleftBiga
+d/parenrightBig
+.
+Prime numbers:
+pn=nlnn+nlnlnn−n+nlnlnn
+lnn
++O/parenleftbiggn
+lnn/parenrightbigg
+,
+π(n) =n
+lnn+n
+(lnn)2+2!n
+(lnn)3
++O/parenleftbiggn
+(lnn)4/parenrightbigg
+.Deﬁnitions:
+Loop An edge connecting a ver-
+tex to itself.
+Directed Each edge has a direction.
+Simple Graph with no loops or
+multi-edges.
+Walk A sequence v0e1v1...eℓvℓ.
+Trail Awalkwithdistinct edges.
+Path A trail with distinct
+vertices.
+Connected A graph where there exists
+a path between any two
+vertices.
+Component A maximal connected
+subgraph.
+Tree A connected acyclic graph.
+Free tree A tree with no root.
+DAG Directed acyclic graph.
+Eulerian Graph with a trail visiting
+each edge exactly once.
+Hamiltonian Graphwith acyclevisiting
+each vertex exactly once.
+Cut A set of edges whose re-
+moval increases the num-
+ber of components.
+Cut-set A minimal cut.
+Cut edge A size 1 cut.
+k-Connected A graph connected with
+the removal of any k−1
+vertices.
+k-Tough ∀S⊆V,S/ne}ationslash=∅we have
+k·c(G−S)≤ |S|.
+k-Regular A graph where all vertices
+have degree k.
+k-Factor Ak-regular spanning
+subgraph.
+Matching A set of edges, no two of
+which are adjacent.
+Clique A set of vertices, all of
+which are adjacent.
+Ind. set A set of vertices, none of
+which are adjacent.
+Vertex cover A set of vertices which
+cover all edges.
+Planar graph A graph which can be em-
+beded in the plane.
+Plane graph An embedding of a planar
+graph.
+/summationdisplay
+v∈Vdeg(v) = 2m.
+IfGis planar then n−m+f= 2, so
+f≤2n−4, m≤3n−6.
+Any planar graph has a vertex with de-
+gree≤5.Notation:
+E(G) Edge set
+V(G) Vertex set
+c(G) Number of components
+G[S] Induced subgraph
+deg(v) Degree of v
+∆(G) Maximum degree
+δ(G) Minimum degree
+χ(G) Chromatic number
+χE(G) Edge chromatic number
+GcComplement graph
+KnComplete graph
+Kn1,n2Complete bipartite graph
+r(k,ℓ) Ramsey number
+Geometry
+Projective coordinates: triples
+(x,y,z), not all x,yandzzero.
+(x,y,z) = (cx,cy,cz )∀c/ne}ationslash= 0.
+Cartesian Projective
+(x,y) ( x,y,1)
+y=mx+b(m,−1,b)
+x=c (1,0,−c)
+Distance formula, LpandL∞
+metric:/radicalbig
+(x1−x0)2+(y1−y0)2,
+/bracketleftbig
+|x1−x0|p+|y1−y0|p/bracketrightbig1/p,
+lim
+p→∞/bracketleftbig
+|x1−x0|p+|y1−y0|p/bracketrightbig1/p.
+Area of triangle ( x0,y0), (x1,y1)
+and (x2,y2):
+1
+2abs/vextendsingle/vextendsingle/vextendsingle/vextendsinglex1−x0y1−y0
+x2−x0y2−y0/vextendsingle/vextendsingle/vextendsingle/vextendsingle.
+Angle formed by three points:
+(0,0)θ
+(x1,y1)(x2,y2)
+ℓ2
+ℓ1
+cosθ=(x1,y1)·(x2,y2)
+ℓ1ℓ2.
+Line through two points ( x0,y0)
+and (x1,y1):/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsinglex y1
+x0y01
+x1y11/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingle= 0.
+Area of circle, volume of sphere:
+A=πr2, V=4
+3πr3.
+If I have seen farther than others,
+it is because I have stood on the
+shoulders of giants.
+– Issac NewtonTheoretical Computer Science Cheat Sheet
+π Calculus
+Wallis’ identity:
+π= 2·2·2·4·4·6·6···
+1·3·3·5·5·7···
+Brouncker’scontinuedfractionexpansion:
+π
+4= 1+12
+2+32
+2+52
+2+72
+2+···
+Gregrory’s series:
+π
+4= 1−1
+3+1
+5−1
+7+1
+9−···
+Newton’s series:
+π
+6=1
+2+1
+2·3·23+1·3
+2·4·5·25+···
+Sharp’s series:
+π
+6=1√
+3/parenleftBig
+1−1
+31·3+1
+32·5−1
+33·7+···/parenrightBig
+Euler’s series:
+π2
+6=1
+12+1
+22+1
+32+1
+42+1
+52+···
+π2
+8=1
+12+1
+32+1
+52+1
+72+1
+92+···
+π2
+12=1
+12−1
+22+1
+32−1
+42+1
+52−···Derivatives:
+1.d(cu)
+dx=cdu
+dx,2.d(u+v)
+dx=du
+dx+dv
+dx,3.d(uv)
+dx=udv
+dx+vdu
+dx,
+4.d(un)
+dx=nun−1du
+dx,5.d(u/v)
+dx=v/parenleftbigdu
+dx/parenrightbig
+−u/parenleftbigdv
+dx/parenrightbig
+v2,6.d(ecu)
+dx=cecudu
+dx,
+7.d(cu)
+dx= (lnc)cudu
+dx, 8.d(lnu)
+dx=1
+udu
+dx,
+9.d(sinu)
+dx= cosudu
+dx, 10.d(cosu)
+dx=−sinudu
+dx,
+11.d(tanu)
+dx= sec2udu
+dx, 12.d(cotu)
+dx= csc2udu
+dx,
+13.d(secu)
+dx= tanusecudu
+dx, 14.d(cscu)
+dx=−cotucscudu
+dx,
+15.d(arcsinu)
+dx=1√
+1−u2du
+dx, 16.d(arccosu)
+dx=−1√
+1−u2du
+dx,
+17.d(arctanu)
+dx=1
+1+u2du
+dx, 18.d(arccotu)
+dx=−1
+1+u2du
+dx,
+19.d(arcsecu)
+dx=1
+u√
+1−u2du
+dx, 20.d(arccscu)
+dx=−1
+u√
+1−u2du
+dx,
+21.d(sinhu)
+dx= coshudu
+dx, 22.d(coshu)
+dx= sinhudu
+dx,
+23.d(tanhu)
+dx= sech2udu
+dx, 24.d(cothu)
+dx=−csch2udu
+dx,
+25.d(sechu)
+dx=−sechutanhudu
+dx, 26.d(cschu)
+dx=−cschucothudu
+dx,
+27.d(arcsinhu)
+dx=1√
+1+u2du
+dx, 28.d(arccosh u)
+dx=1√
+u2−1du
+dx,
+29.d(arctanh u)
+dx=1
+1−u2du
+dx, 30.d(arccoth u)
+dx=1
+u2−1du
+dx,
+31.d(arcsechu)
+dx=−1
+u√
+1−u2du
+dx, 32.d(arccschu)
+dx=−1
+|u|√
+1+u2du
+dx.
+Integrals:
+1./integraldisplay
+cudx=c/integraldisplay
+udx, 2./integraldisplay
+(u+v)dx=/integraldisplay
+udx+/integraldisplay
+vdx,
+3./integraldisplay
+xndx=1
+n+1xn+1, n/ne}ationslash=−1,4./integraldisplay1
+xdx= lnx,5./integraldisplay
+exdx=ex,
+6./integraldisplaydx
+1+x2= arctan x, 7./integraldisplay
+udv
+dxdx=uv−/integraldisplay
+vdu
+dxdx,
+8./integraldisplay
+sinxdx=−cosx, 9./integraldisplay
+cosxdx= sinx,
+10./integraldisplay
+tanxdx=−ln|cosx|, 11./integraldisplay
+cotxdx= ln|cosx|,
+12./integraldisplay
+secxdx= ln|secx+tanx|, 13./integraldisplay
+cscxdx= ln|cscx+cotx|,
+14./integraldisplay
+arcsinx
+adx= arcsinx
+a+/radicalbig
+a2−x2, a >0,Partial Fractions
+LetN(x) andD(x) be polynomial func-
+tions of x. We can break down
+N(x)/D(x) using partial fraction expan-
+sion. First, if the degree of Nis greater
+than or equal to the degree of D, divide
+NbyD, obtaining
+N(x)
+D(x)=Q(x)+N′(x)
+D(x),
+where the degree of N′is less than that of
+D. Second, factor D(x). Use the follow-
+ing rules: For a non-repeated factor:
+N(x)
+(x−a)D(x)=A
+x−a+N′(x)
+D(x),
+where
+A=/bracketleftbiggN(x)
+D(x)/bracketrightbigg
+x=a.
+For a repeated factor:
+N(x)
+(x−a)mD(x)=m−1/summationdisplay
+k=0Ak
+(x−a)m−k+N′(x)
+D(x),
+where
+Ak=1
+k!/bracketleftbiggdk
+dxk/parenleftbiggN(x)
+D(x)/parenrightbigg/bracketrightbigg
+x=a.
+The reasonableman adapts himself to the
+world; the unreasonable persists in trying
+to adapt the world to himself. Therefore
+all progress depends on the unreasonable.
+– George Bernard ShawTheoretical Computer Science Cheat Sheet
+Calculus Cont.
+15./integraldisplay
+arccosx
+adx= arccosx
+a−/radicalbig
+a2−x2, a >0, 16./integraldisplay
+arctanx
+adx=xarctanx
+a−a
+2ln(a2+x2), a >0,
+17./integraldisplay
+sin2(ax)dx=1
+2a/parenleftbig
+ax−sin(ax)cos(ax)/parenrightbig
+, 18./integraldisplay
+cos2(ax)dx=1
+2a/parenleftbig
+ax+sin(ax)cos(ax)/parenrightbig
+,
+19./integraldisplay
+sec2xdx= tanx, 20./integraldisplay
+csc2xdx=−cotx,
+21./integraldisplay
+sinnxdx=−sinn−1xcosx
+n+n−1
+n/integraldisplay
+sinn−2xdx, 22./integraldisplay
+cosnxdx=cosn−1xsinx
+n+n−1
+n/integraldisplay
+cosn−2xdx,
+23./integraldisplay
+tannxdx=tann−1x
+n−1−/integraldisplay
+tann−2xdx, n /ne}ationslash= 1, 24./integraldisplay
+cotnxdx=−cotn−1x
+n−1−/integraldisplay
+cotn−2xdx, n /ne}ationslash= 1,
+25./integraldisplay
+secnxdx=tanxsecn−1x
+n−1+n−2
+n−1/integraldisplay
+secn−2xdx, n /ne}ationslash= 1,
+26./integraldisplay
+cscnxdx=−cotxcscn−1x
+n−1+n−2
+n−1/integraldisplay
+cscn−2xdx, n /ne}ationslash= 1,27./integraldisplay
+sinhxdx= coshx,28./integraldisplay
+coshxdx= sinhx,
+29./integraldisplay
+tanhxdx= ln|coshx|,30./integraldisplay
+cothxdx= ln|sinhx|,31./integraldisplay
+sechxdx= arctansinh x,32./integraldisplay
+cschxdx= ln/vextendsingle/vextendsingletanhx
+2/vextendsingle/vextendsingle,
+33./integraldisplay
+sinh2xdx=1
+4sinh(2x)−1
+2x, 34./integraldisplay
+cosh2xdx=1
+4sinh(2x)+1
+2x, 35./integraldisplay
+sech2xdx= tanhx,
+36./integraldisplay
+arcsinhx
+adx=xarcsinhx
+a−/radicalbig
+x2+a2, a >0, 37./integraldisplay
+arctanhx
+adx=xarctanhx
+a+a
+2ln|a2−x2|,
+38./integraldisplay
+arccoshx
+adx=
+
+xarccoshx
+a−/radicalbig
+x2+a2,if arccoshx
+a>0 anda >0,
+xarccoshx
+a+/radicalbig
+x2+a2,if arccoshx
+a<0 anda >0,
+39./integraldisplaydx√
+a2+x2= ln/parenleftBig
+x+/radicalbig
+a2+x2/parenrightBig
+, a >0,
+40./integraldisplaydx
+a2+x2=1
+aarctanx
+a, a >0, 41./integraldisplay/radicalbig
+a2−x2dx=x
+2/radicalbig
+a2−x2+a2
+2arcsinx
+a, a >0,
+42./integraldisplay
+(a2−x2)3/2dx=x
+8(5a2−2x2)/radicalbig
+a2−x2+3a4
+8arcsinx
+a, a >0,
+43./integraldisplaydx√
+a2−x2= arcsinx
+a, a >0, 44./integraldisplaydx
+a2−x2=1
+2aln/vextendsingle/vextendsingle/vextendsingle/vextendsinglea+x
+a−x/vextendsingle/vextendsingle/vextendsingle/vextendsingle, 45./integraldisplaydx
+(a2−x2)3/2=x
+a2√
+a2−x2,
+46./integraldisplay/radicalbig
+a2±x2dx=x
+2/radicalbig
+a2±x2±a2
+2ln/vextendsingle/vextendsingle/vextendsinglex+/radicalbig
+a2±x2/vextendsingle/vextendsingle/vextendsingle, 47./integraldisplaydx√
+x2−a2= ln/vextendsingle/vextendsingle/vextendsinglex+/radicalbig
+x2−a2/vextendsingle/vextendsingle/vextendsingle, a >0,
+48./integraldisplaydx
+ax2+bx=1
+aln/vextendsingle/vextendsingle/vextendsingle/vextendsinglex
+a+bx/vextendsingle/vextendsingle/vextendsingle/vextendsingle, 49./integraldisplay
+x√
+a+bxdx=2(3bx−2a)(a+bx)3/2
+15b2,
+50./integraldisplay√
+a+bx
+xdx= 2√
+a+bx+a/integraldisplay1
+x√
+a+bxdx, 51./integraldisplayx√
+a+bxdx=1√
+2ln/vextendsingle/vextendsingle/vextendsingle/vextendsingle√
+a+bx−√a√
+a+bx+√a/vextendsingle/vextendsingle/vextendsingle/vextendsingle, a >0,
+52./integraldisplay√
+a2−x2
+xdx=/radicalbig
+a2−x2−aln/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsinglea+√
+a2−x2
+x/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingle, 53./integraldisplay
+x/radicalbig
+a2−x2dx=−1
+3(a2−x2)3/2,
+54./integraldisplay
+x2/radicalbig
+a2−x2dx=x
+8(2x2−a2)/radicalbig
+a2−x2+a4
+8arcsinx
+a, a >0, 55./integraldisplaydx√
+a2−x2=−1
+aln/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsinglea+√
+a2−x2
+x/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingle,
+56./integraldisplayxdx√
+a2−x2=−/radicalbig
+a2−x2, 57./integraldisplayx2dx√
+a2−x2=−x
+2/radicalbig
+a2−x2+a2
+2arcsinx
+a,a >0,
+58./integraldisplay√
+a2+x2
+xdx=/radicalbig
+a2+x2−aln/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsinglea+√
+a2+x2
+x/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingle, 59./integraldisplay√
+x2−a2
+xdx=/radicalbig
+x2−a2−aarccosa
+|x|, a >0,
+60./integraldisplay
+x/radicalbig
+x2±a2dx=1
+3(x2±a2)3/2, 61./integraldisplaydx
+x√
+x2+a2=1
+aln/vextendsingle/vextendsingle/vextendsingle/vextendsinglex
+a+√
+a2+x2/vextendsingle/vextendsingle/vextendsingle/vextendsingle,Theoretical Computer Science Cheat Sheet
+Calculus Cont. Finite Calculus
+62./integraldisplaydx
+x√
+x2−a2=1
+aarccosa
+|x|, a >0,63./integraldisplaydx
+x2√
+x2±a2=∓√
+x2±a2
+a2x,
+64./integraldisplayxdx√
+x2±a2=/radicalbig
+x2±a2, 65./integraldisplay√
+x2±a2
+x4dx=∓(x2+a2)3/2
+3a2x3,
+66./integraldisplaydx
+ax2+bx+c=
+
+1√
+b2−4acln/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingle2ax+b−√
+b2−4ac
+2ax+b+√
+b2−4ac/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingle,ifb2>4ac,
+2√
+4ac−b2arctan2ax+b√
+4ac−b2, ifb2<4ac,
+67./integraldisplaydx√
+ax2+bx+c=
+
+1√aln/vextendsingle/vextendsingle/vextendsingle2ax+b+2√a/radicalbig
+ax2+bx+c/vextendsingle/vextendsingle/vextendsingle,ifa >0,
+1√−aarcsin−2ax−b√
+b2−4ac, ifa <0,
+68./integraldisplay/radicalbig
+ax2+bx+cdx=2ax+b
+4a/radicalbig
+ax2+bx+c+4ax−b2
+8a/integraldisplaydx√
+ax2+bx+c,
+69./integraldisplayxdx√
+ax2+bx+c=√
+ax2+bx+c
+a−b
+2a/integraldisplaydx√
+ax2+bx+c,
+70./integraldisplaydx
+x√
+ax2+bx+c=
+
+−1√cln/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingle2√c√
+ax2+bx+c+bx+2c
+x/vextendsingle/vextendsingle/vextendsingle/vextendsingle/vextendsingle,ifc >0,
+1√−carcsinbx+2c
+|x|√
+b2−4ac, ifc <0,
+71./integraldisplay
+x3/radicalbig
+x2+a2dx= (1
+3x2−2
+15a2)(x2+a2)3/2,
+72./integraldisplay
+xnsin(ax)dx=−1
+axncos(ax)+n
+a/integraldisplay
+xn−1cos(ax)dx,
+73./integraldisplay
+xncos(ax)dx=1
+axnsin(ax)−n
+a/integraldisplay
+xn−1sin(ax)dx,
+74./integraldisplay
+xneaxdx=xneax
+a−n
+a/integraldisplay
+xn−1eaxdx,
+75./integraldisplay
+xnln(ax)dx=xn+1/parenleftbiggln(ax)
+n+1−1
+(n+1)2/parenrightbigg
+,
+76./integraldisplay
+xn(lnax)mdx=xn+1
+n+1(lnax)m−m
+n+1/integraldisplay
+xn(lnax)m−1dx.Diﬀerence, shift operators:
+∆f(x) =f(x+1)−f(x),
+Ef(x) =f(x+1).
+Fundamental Theorem:
+f(x) = ∆F(x)⇔/summationdisplay
+f(x)δx=F(x)+C.
+b/summationdisplay
+af(x)δx=b−1/summationdisplay
+i=af(i).
+Diﬀerences:
+∆(cu) =c∆u,∆(u+v) = ∆u+∆v,
+∆(uv) =u∆v+Ev∆u,
+∆(xn) =nxn−1,
+∆(Hx) =x−1, ∆(2x) = 2x,
+∆(cx) = (c−1)cx,∆/parenleftbigx
+m/parenrightbig
+=/parenleftbigx
+m−1/parenrightbig
+.
+Sums:
+/summationtextcuδx=c/summationtextuδx,
+/summationtext(u+v)δx=/summationtextuδx+/summationtextvδx,
+/summationtextu∆vδx=uv−/summationtext
+Ev∆uδx,
+/summationtextxnδx=xn+1
+m+1,/summationtextx−1δx=Hx,
+/summationtextcxδx=cx
+c−1,/summationtext/parenleftbigx
+m/parenrightbig
+δx=/parenleftbigx
+m+1/parenrightbig
+.
+Falling Factorial Powers:
+xn=x(x−1)···(x−n+1), n >0,
+x0= 1,
+xn=1
+(x+1)···(x+|n|), n <0,
+xn+m=xm(x−m)n.
+Rising Factorial Powers:
+xn=x(x+1)···(x+n−1), n >0,
+x0= 1,
+xn=1
+(x−1)···(x−|n|), n <0,
+xn+m=xm(x+m)n.
+Conversion:
+xn= (−1)n(−x)n= (x−n+1)n
+= 1/(x+1)−n,
+xn= (−1)n(−x)n= (x+n−1)n
+= 1/(x−1)−n,
+xn=n/summationdisplay
+k=1/braceleftbiggn
+k/bracerightbigg
+xk=n/summationdisplay
+k=1/braceleftbiggn
+k/bracerightbigg
+(−1)n−kxk,
+xn=n/summationdisplay
+k=1/bracketleftbiggn
+k/bracketrightbigg
+(−1)n−kxk,
+xn=n/summationdisplay
+k=1/bracketleftbiggn
+k/bracketrightbigg
+xk.x1= x1= x1
+x2= x2+x1= x2−x1
+x3= x3+3x2+x1= x3−3x2+x1
+x4= x4+6x3+7x2+x1= x4−6x3+7x2−x1
+x5=x5+15x4+25x3+10x2+x1= x5−15x4+25x3−10x2+x1
+x1= x1x1= x1
+x2= x2+x1x2= x2−x1
+x3= x3+3x2+2x1x3= x3−3x2+2x1
+x4= x4+6x3+11x2+6x1x4= x4−6x3+11x2−6x1
+x5=x5+10x4+35x3+50x2+24x1x5=x5−10x4+35x3−50x2+24x1Theoretical Computer Science Cheat Sheet
+Series
+Taylor’s series:
+f(x) =f(a)+(x−a)f′(a)+(x−a)2
+2f′′(a)+···=∞/summationdisplay
+i=0(x−a)i
+i!f(i)(a).
+Expansions:
+1
+1−x= 1+x+x2+x3+x4+···=∞/summationdisplay
+i=0xi,
+1
+1−cx= 1+cx+c2x2+c3x3+···=∞/summationdisplay
+i=0cixi,
+1
+1−xn= 1+xn+x2n+x3n+···=∞/summationdisplay
+i=0xni,
+x
+(1−x)2=x+2x2+3x3+4x4+···=∞/summationdisplay
+i=0ixi,
+n/summationdisplay
+k=0/braceleftbiggn
+k/bracerightbiggk!zk
+(1−z)k+1=x+2nx2+3nx3+4nx4+···=∞/summationdisplay
+i=0inxi,
+ex= 1+x+1
+2x2+1
+6x3+··· =∞/summationdisplay
+i=0xi
+i!,
+ln(1+x) = x−1
+2x2+1
+3x3−1
+4x4−··· =∞/summationdisplay
+i=1(−1)i+1xi
+i,
+ln1
+1−x=x+1
+2x2+1
+3x3+1
+4x4+···=∞/summationdisplay
+i=1xi
+i,
+sinx =x−1
+3!x3+1
+5!x5−1
+7!x7+···=∞/summationdisplay
+i=0(−1)ix2i+1
+(2i+1)!,
+cosx = 1−1
+2!x2+1
+4!x4−1
+6!x6+···=∞/summationdisplay
+i=0(−1)ix2i
+(2i)!,
+tan−1x =x−1
+3x3+1
+5x5−1
+7x7+···=∞/summationdisplay
+i=0(−1)ix2i+1
+(2i+1),
+(1+x)n= 1+nx+n(n−1)
+2x2+··· =∞/summationdisplay
+i=0/parenleftbiggn
+i/parenrightbigg
+xi,
+1
+(1−x)n+1= 1+(n+1)x+/parenleftbign+2
+2/parenrightbig
+x2+···=∞/summationdisplay
+i=0/parenleftbiggi+n
+i/parenrightbigg
+xi,
+x
+ex−1= 1−1
+2x+1
+12x2−1
+720x4+···=∞/summationdisplay
+i=0Bixi
+i!,
+1
+2x(1−√
+1−4x) = 1+ x+2x2+5x3+··· =∞/summationdisplay
+i=01
+i+1/parenleftbigg2i
+i/parenrightbigg
+xi,
+1√1−4x= 1+2x+6x2+20x3+···=∞/summationdisplay
+i=0/parenleftbigg2i
+i/parenrightbigg
+xi,
+1√1−4x/parenleftbigg1−√1−4x
+2x/parenrightbiggn
+= 1+(2+ n)x+/parenleftbig4+n
+2/parenrightbig
+x2+···=∞/summationdisplay
+i=0/parenleftbigg2i+n
+i/parenrightbigg
+xi,
+1
+1−xln1
+1−x=x+3
+2x2+11
+6x3+25
+12x4+···=∞/summationdisplay
+i=1Hixi,
+1
+2/parenleftbigg
+ln1
+1−x/parenrightbigg2
+=1
+2x2+3
+4x3+11
+24x4+··· =∞/summationdisplay
+i=2Hi−1xi
+i,
+x
+1−x−x2=x+x2+2x3+3x4+···=∞/summationdisplay
+i=0Fixi,
+Fnx
+1−(Fn−1+Fn+1)x−(−1)nx2=Fnx+F2nx2+F3nx3+···=∞/summationdisplay
+i=0Fnixi.Ordinary power series:
+A(x) =∞/summationdisplay
+i=0aixi.
+Exponential power series:
+A(x) =∞/summationdisplay
+i=0aixi
+i!.
+Dirichlet power series:
+A(x) =∞/summationdisplay
+i=1ai
+ix.
+Binomial theorem:
+(x+y)n=n/summationdisplay
+k=0/parenleftbiggn
+k/parenrightbigg
+xn−kyk.
+Diﬀerence of like powers:
+xn−yn= (x−y)n−1/summationdisplay
+k=0xn−1−kyk.
+For ordinary power series:
+αA(x) +βB(x) =∞/summationdisplay
+i=0(αai+βbi)xi,
+xkA(x) =∞/summationdisplay
+i=kai−kxi,
+A(x)−/summationtextk−1
+i=0aixi
+xk=∞/summationdisplay
+i=0ai+kxi,
+A(cx) =∞/summationdisplay
+i=0ciaixi,
+A′(x) =∞/summationdisplay
+i=0(i+1)ai+1xi,
+xA′(x) =∞/summationdisplay
+i=1iaixi,
+/integraldisplay
+A(x)dx=∞/summationdisplay
+i=1ai−1
+ixi,
+A(x)+A(−x)
+2=∞/summationdisplay
+i=0a2ix2i,
+A(x)−A(−x)
+2=∞/summationdisplay
+i=0a2i+1x2i+1.
+Summation: If bi=/summationtexti
+j=0aithen
+B(x) =1
+1−xA(x).
+Convolution:
+A(x)B(x) =∞/summationdisplay
+i=0
+i/summationdisplay
+j=0ajbi−j
+xi.
+God made the natural numbers;
+all the rest is the work of man.
+– Leopold KroneckerTheoretical Computer Science Cheat Sheet
+Series Escher’s Knot
+Expansions:
+1
+(1−x)n+1ln1
+1−x=∞/summationdisplay
+i=0(Hn+i−Hn)/parenleftbiggn+i
+i/parenrightbigg
+xi,/parenleftbigg1
+x/parenrightbigg−n
+=∞/summationdisplay
+i=0/braceleftbiggi
+n/bracerightbigg
+xi,
+xn=∞/summationdisplay
+i=0/bracketleftbiggn
+i/bracketrightbigg
+xi, (ex−1)n=∞/summationdisplay
+i=0/braceleftbiggi
+n/bracerightbiggn!xi
+i!,
+/parenleftbigg
+ln1
+1−x/parenrightbiggn
+=∞/summationdisplay
+i=0/bracketleftbiggi
+n/bracketrightbiggn!xi
+i!, x cotx=∞/summationdisplay
+i=0(−4)iB2ix2i
+(2i)!,
+tanx =∞/summationdisplay
+i=1(−1)i−122i(22i−1)B2ix2i−1
+(2i)!, ζ(x) =∞/summationdisplay
+i=11
+ix,
+1
+ζ(x)=∞/summationdisplay
+i=1µ(i)
+ix,ζ(x−1)
+ζ(x)=∞/summationdisplay
+i=1φ(i)
+ix,
+Stieltjes Integration ζ(x) =/productdisplay
+p1
+1−p−x,
+ζ2(x) =∞/summationdisplay
+i=1d(i)
+xiwhered(n) =/summationtext
+d|n1,
+ζ(x)ζ(x−1) =∞/summationdisplay
+i=1S(i)
+xiwhereS(n) =/summationtext
+d|nd,
+ζ(2n) =22n−1|B2n|
+(2n)!π2n, n∈N,
+x
+sinx=∞/summationdisplay
+i=0(−1)i−1(4i−2)B2ix2i
+(2i)!,
+/parenleftbigg1−√1−4x
+2x/parenrightbiggn
+=∞/summationdisplay
+i=0n(2i+n−1)!
+i!(n+i)!xi,
+exsinx =∞/summationdisplay
+i=12i/2siniπ
+4
+i!xi,
+/radicalBigg
+1−√1−x
+x=∞/summationdisplay
+i=0(4i)!
+16i√
+2(2i)!(2i+1)!xi,
+/parenleftbiggarcsinx
+x/parenrightbigg2
+=∞/summationdisplay
+i=04ii!2
+(i+1)(2i+1)!x2i.IfGis continuous in the interval [ a,b] andFis nondecreasing then
+/integraldisplayb
+aG(x)dF(x)
+exists. If a≤b≤cthen/integraldisplayc
+aG(x)dF(x) =/integraldisplayb
+aG(x)dF(x) +/integraldisplayc
+bG(x)dF(x).
+If the integrals involved exist
+/integraldisplayb
+a/parenleftbig
+G(x)+H(x)/parenrightbig
+dF(x) =/integraldisplayb
+aG(x)dF(x)+/integraldisplayb
+aH(x)dF(x),
+/integraldisplayb
+aG(x)d/parenleftbig
+F(x)+H(x)/parenrightbig
+=/integraldisplayb
+aG(x)dF(x)+/integraldisplayb
+aG(x)dH(x),
+/integraldisplayb
+ac·G(x)dF(x) =/integraldisplayb
+aG(x)d/parenleftbig
+c·F(x)/parenrightbig
+=c/integraldisplayb
+aG(x)dF(x),
+/integraldisplayb
+aG(x)dF(x) =G(b)F(b)−G(a)F(a)−/integraldisplayb
+aF(x)dG(x).
+Ifthe integralsinvolvedexist, and Fpossessesa derivative F′at every
+point in [ a,b] then
+/integraldisplayb
+aG(x)dF(x) =/integraldisplayb
+aG(x)F′(x)dx.
+Cramer’s Rule
+00 47 18 76 29 93 85 34 61 52
+86 11 57 28 70 39 94 45 02 63
+95 80 22 67 38 71 49 56 13 04
+59 96 81 33 07 48 72 60 24 15
+73 69 90 82 44 17 58 01 35 26
+68 74 09 91 83 55 27 12 46 30
+37 08 75 19 92 84 66 23 50 41
+14 25 36 40 51 62 03 77 88 99
+21 32 43 54 65 06 10 89 97 78
+42 53 64 05 16 20 31 98 79 87Fibonacci Numbers
+If we have equations:
+a1,1x1+a1,2x2+···+a1,nxn=b1
+a2,1x1+a2,2x2+···+a2,nxn=b2
+.........
+an,1x1+an,2x2+···+an,nxn=bn
+LetA= (ai,j) andBbe the column matrix ( bi). Then
+there is a unique solution iﬀ det A/ne}ationslash= 0. Let AibeA
+with column ireplaced by B. Then
+xi=detAi
+detA.1,1,2,3,5,8,13,21,34,55,89,...
+Deﬁnitions:
+Fi=Fi−1+Fi−2, F0=F1= 1,
+F−i= (−1)i−1Fi,
+Fi=1√
+5/parenleftBig
+φi−ˆφi/parenrightBig
+,
+Cassini’s identity: for i >0:
+Fi+1Fi−1−F2
+i= (−1)i.
+Additive rule:
+Fn+k=FkFn+1+Fk−1Fn,
+F2n=FnFn+1+Fn−1Fn.
+Calculation by matrices:/parenleftbigg
+Fn−2Fn−1
+Fn−1Fn/parenrightbigg
+=/parenleftbigg
+0 1
+1 1/parenrightbiggn
+.The Fibonacci number system:
+Every integer nhas a unique
+representation
+n=Fk1+Fk2+···+Fkm,
+whereki≥ki+1+ 2 for all i,
+1≤i < mandkm≥2.Improvement makes strait roads, but the crooked
+roads without Improvement, are roads of Genius.
+– William Blake (The Marriage of Heaven and Hell)

@@ -1,0 +1,123 @@
+GitHub
+GITCHEATSHEET
+LPr
+Git is the free and open source distributed version control system that's responsible for everything GitHub
+related that happens locally on your computer. This cheat sheet features the most important and commonly
+used Git commands for easyreference.
+INSTALLATION & GUIS
+STAGE & SNAPSHOT
+With platform specifici installersi for Git, GitHub alsop provides the
+Working with snapshots and the Git staging area
+ease of staying up-to-date withi thel latesti releases off the command
+line tool while providing agraphical useri interface for day-to-day
+git status
+interaction, review, and repositorys synchronization.
+show modified filesi in working directory, staged for your next commit
+GitHub for Windows
+git add [file]
+https://windows.github.com
+addaf file as itl looks now to your next commit (stage)
+GitHub forl Mac
+tps/macgithub.com
+git reset [file]
+Forl Linux and Solaris platforms, thel latestr releasei is available on
+unstage af file whileretaining the changes in working directory
+the official Gitweb site.
+git diff
+Giti for All Platforms
+diff ofwhati is changedbut not staged
+http//git-scm.com
+git diff staged
+diff ofwhatis staged butr noty yet committed
+SETUP
+git commit -m "[descriptive message]"
+Configuring useri information useda across all localrepositories
+commity your stagedcontenta as a new commits snapshot
+git config --global user. name "[firstname lastname]"
+seta ar name thati isi identifiable for credit when review versiont history
+BRANCH & MERGE
+git config --global user.email "[valid-email]"
+Isolating work inl branches, changing context, andi integratingchanges
+seta ane email address that will bei associatedi withe eachhistoryi marker
+git branch
+git config --global color.ui auto
+setautomatice commandi line coloringt for Git for easy reviewing
+list yourt branches. a*will appear next to the currently activel branch
+git branch [branch-name]
+create ar newl branch at the current commit
+SETUP & INIT
+git checkout
+Configuring useri information, initializing and cloningrepositories
+switch to anotherl branch and check it outi into your working directory
+git init
+git merge [branch]
+initialize: ane existing directory as a Giti repository
+merge thes specified branch's historyi into the current one
+git clone [url]
+git log
+retrieve ane entirel repository from at hostedl location vial URL
+show all commitsi in the current branch's history
+
+
+
+INSPECT & COMPARE
+SHARE & UPDATE
+Examining logs, diffs and objecti information
+Retrieving updates from another repository: and updating local repos
+git log
+git remote add [alias] [url]
+show the committ history fort the currently activel branch
+add a gitl URL as an alias
+git log branchB. branchA
+git fetch [alias]
+show the commits onl branchA thata are not onl branchB
+fetch down all thet branches from that Git remote
+git log --follow [file]
+git merge [alias]/Ibranch]
+showt the commits thate changed file, even across renames
+merge ar remotel branchi into your currentl branchi to bring it up to date
+git diff branchB. branchA
+git push [alias] [branch]
+show the diff of whati is inl branchA thati is not inl branchB
+Transmit locall branch commits to ther remote repositoryl branch
+git show [SHA]
+git pull
+show any objecti in Giti int human-readable format
+fetcha andi merge any commits fromt the tracking remote branch
+TRACKING PATH CHANGES
+REWRITE HISTORY
+Versioning filer removes and path changes
+Rewriting branches, updating commits and clearing history
+git rm [file]
+git rebase [branch]
+delete thet file from project ands stage the removal for commit
+apply any commits of current branch ahead of specified one
+git mv [existing-path] [new-path]
+git reset --hard [commit]
+change an existing file path ands stage ther move
+clears staging area, rewrite working tree from specified commit
+git log -stat -M
+show all commitl logs withi indication of any paths thatr moved
+TEMPORARY COMMITS
+Temporarily: store modified, tracked files inorder to changel branches
+IGNORING PATTERNS
+git stash
+Preventing unintentional staging or commiting of files
+Saver modified and staged changes
+logs/
+git stash list
+*.notes
+pattern*/
+lists stack-order of stashed file changes
+Save af file with desired patterns as. gitignore with either directs string git stash pop
+matches or wildcardglobs.
+write workingt fromt top of stashs stack
+git config --global core.excludesfile [file]
+git stash drop
+system wide ignore pattern for all local repositories
+discard the changes from top of stashs stack
+GitHub Education
+Teach and learnbetter, together. GitHubi is freet for students and teach-
+X education@github.com
+ers. Discounts available for other educational uses.
+3 education.github.com

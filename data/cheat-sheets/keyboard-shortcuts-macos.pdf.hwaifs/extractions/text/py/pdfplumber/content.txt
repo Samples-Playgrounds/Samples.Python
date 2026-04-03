@@ -1,0 +1,60 @@
+Search and replace ⇧⌘T Reopen closed editor
+⌘K Enter Keep preview mode editor open
+⌘F Find ⌃Tab / ⌃⇧Tab Open next / previous
+Keyboard shortcuts for macOS ⌥⌘F Replace ⌘K P Copy path of active file
+⌘G / ⇧⌘G Find next/previous ⌘K R Reveal active file in Finder
+⌥Enter Select all occurrences of Find match ⌘K O Show active file in new window/instance
+General ⌘D Add selection to next Find match
+⌘K ⌘D Move last selection to next Find match Display
+⇧⌘P, F1 Show Command Palette
+⌘P Quick Open, Go to File… Rich languages editing ⌃⌘F Toggle full screen
+⇧⌘N New window/instance ⌥⌘0 Toggle editor layout (horizontal/vertical)
+⌘W Close window/instance ⌃Space, ⌘I Trigger suggestion ⌘= / ⇧⌘- Zoom in/out
+⌘, User Settings ⇧⌘Space Trigger parameter hints ⌘B Toggle Sidebar visibility
+⌘K ⌘S Keyboard Shortcuts ⇧⌥F Format document ⇧⌘E Show Explorer / Toggle focus
+⌘K ⌘F Format selection ⇧⌘F Show Search
+Basic editing F12 Go to Definition ⌃⇧G Show Source Control
+⌥F12 Peek Definition ⇧⌘D Show Debug
+⌘X Cut line (empty selection) ⌘K F12 Open Definition to the side ⇧⌘X Show Extensions
+⌘C Copy line (empty selection) ⌘. Quick Fix ⇧⌘H Replace in files
+⌥↓ / ⌥↑ Move line down/up ⇧F12 Show References ⇧⌘J Toggle Search details
+⇧⌥↓ / ⇧⌥↑ Copy line down/up F2 Rename Symbol ⇧⌘U Show Output panel
+⇧⌘K Delete line ⌘K ⌘X Trim trailing whitespace ⇧⌘V Open Markdown preview
+⌘Enter / ⇧⌘Enter Insert line below/above ⌘K M Change file language ⌘K V Open Markdown preview to the side
+⇧⌘\ Jump to matching bracket ⌘K Z Zen Mode (Esc Esc to exit)
+⌘] / ⌘[ Indent/outdent line Navigation
+Home / End Go to beginning/end of line
+Debug
+⌘↑ / ⌘↓ Go to beginning/end of file ⌘T Show all Symbols
+⌃PgUp / ⌃PgDn Scroll line up/down ⌃G Go to Line... F9 Toggle breakpoint
+⌘PgUp /⌘PgDn Scroll page up/down ⌘P Go to File... F5 Start/Continue
+⌥⌘[ / ⌥⌘] Fold/unfold region ⇧⌘O Go to Symbol... F11 / ⇧F11 Step into/ out
+⌘K ⌘[ / ⌘K ⌘] Fold/unfold all subregions ⇧⌘M Show Problems panel F10 Step over
+⌘K ⌘0 / ⌘K ⌘J Fold/unfold all regions F8 / ⇧F8 Go to next/previous error or warning ⇧F5 Stop
+⌘K ⌘C Add line comment ⌃⇧Tab Navigate editor group history ⌘K ⌘I Show hover
+⌘K ⌘U Remove line comment ⌃- / ⌃⇧- Go back/forward
+⌘/ Toggle line comment ⌃⇧M Toggle Tab moves focus Integrated terminal
+⇧⌥A Toggle block comment
+⌥Z Toggle word wrap Editor management ⌃` Show integrated terminal
+⌃⇧` Create new terminal
+Multi-cursor and selection ⌘W Close editor ⌘C Copy selection
+⌘K F Close folder ⌘↑ / ↓ Scroll up/down
+⌥ + click Insert cursor ⌘\ Split editor PgUp / PgDn Scroll page up/down
+⌥⌘↑ Insert cursor above ⌘1 / ⌘2 / ⌘3 Focus into 1st, 2nd, 3rd editor group ⌘Home / End Scroll to top/bottom
+⌥⌘↓ Insert cursor below ⌘K ⌘← / ⌘K ⌘→ Focus into previous/next editor group
+⌘U Undo last cursor operation ⌘K ⇧⌘← / ⌘K ⇧⌘→ Move editor left/right
+⇧⌥I Insert cursor at end of each line selected ⌘K ← / ⌘K → Move active editor group
+⌘L Select current line
+⇧⌘L Select all occurrences of current selection File management
+⌘F2 Select all occurrences of current word
+⌘N New File
+⌃⇧⌘→ / ← Expand / shrink selection
+⌘O Open File...
+⇧⌥ + drag mouse Column (box) selection
+⌘S Save
+⇧⌥⌘↑ / ↓ Column (box) selection up/down
+⇧⌘S Save As...
+⇧⌥⌘← / → Column (box) selection left/right
+⇧⌥⌘PgUp Column (box) selection page up ⌥⌘S Save All Other operating systems’ keyboard shortcuts and additional
+⇧⌥⌘PgDn Column (box) selection page down ⌘W Close unassigned shortcuts available at aka.ms/vscodekeybindings
+⌘K ⌘W Close All

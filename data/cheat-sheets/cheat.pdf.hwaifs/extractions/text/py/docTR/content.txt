@@ -1,0 +1,2025 @@
+Theoretical Computer Science Cheat Sheet
+Definitions
+Series
+f(n) = O(g(n)) iff E positive C, no such that
+0 Sf(n) S cg(n) Vn 2 no.
+> n(n +
+T2= n(n - + 1)(2n + 1) Ze-nn+1)
+2
+6
+4
+f(n) = 2(g(n))
+iff E positive C, no such that
+i=1
+i=1
+i=1
+f(n) 2 cg(n) 2 0 Vn 2 no.
+In general:
+1
+f(n) = O(g(n))
+iff f(n) = O(g(n)) and
+>
+C(i+1)m+1 im+1 (m + 1):")
+f(n) = 2(g(n)).
+i=l
+m +
+i
+n-1
+1
+m +
+f(n) = o(g(n)) iff limn-to f(n)/g(n) = 0.
+>
+Bkn" m+1-k
+i=1
+m + k=0 k
+lim an = a
+iff Ve > 0, 3no such that
+n-00
+lan a<e, Vn 2 no.
+Geometric series:
+cn+1 1
+1
+sup S
+least b E R such that b N s,
+c c-1 c+1,
+- C le<1,
+Vs E S.
+i=0
+=0
+inf S
+greatest b E R such that b S
+> ic ncn+2 (n + 1)cn+1 + C c+1,
+c<1.
+s, Vs E S.
+i=0
+(c- 1)2
+=0
+(1-c)2
+limi inf an
+lim inffai i N n,iEN).
+Harmonic series:
+n-+00
+n-00
+I
+n(n +
+n(n
+Hn
+- iHi
+lims sup an
+lim supfai i 2 n,iE N}.
+i=1
+=1
+2
+4
+n-+00
+n-00
+k)
+Combinations: Size k sub-
+I Hi = (n + 1)Hn n, I
+1
+Hn+1
+1
+sets of a size n set.
+i=1
+i=1
+n
+m +
+[x]
+Stirling numbers (1st kind):
+n!
+Arrangements of an n ele-
+1.
+2.
+= 2"
+3.
+(n - k)!k!
+k=0
+ment set into k cycles.
+16 n -
+(K}
+Stirling numbers (2nd kind):
+4.
+= k (E-1)
+5.
+)+(
+Partitions of an n element
+L
+T n+
+set into k non-empty sets.
+6.
+7. - k =
+n
+(R)(R)-()(m-A)
+k=0
+(k>
+1st order Eulerian numbers:
+
+n +
+Permutations T1 T2 Tn on
+8.
+9.
+with k ascents.
+m
+m
+206-1)-(*)
+(1,2,. ,ny
+k=0
+k=0
+(E>
+2nd order Eulerian numbers.
+10.
+-1)
+11. 6-6-1
+Cn
+Catalan Numbers: Binary
+trees with n + 1 vertices.
+12. (21-2-1-1,
+13. (-E} H+ I
+n
+n
+n
+n
+14.
+i n 1)!,
+15.
+(n - 1).Hn-1,
+16.
+I 1,
+17.
+n
+2
+n
+k 2 k
+n
+n
+1 2n
+18.
+19.
+20.
+I n!, 21.
+:
+Cn
+n +
+L-h-)-()
+k=0
+22. TL
+IL
+23. n
+n
+24. n
+k
+n 1- k
+k
+25.
+I ifk=0,
+26. n 2" - n- 1
+27. L
+- n + 1)2" +
+k
+0 otherwise
+2
+IL
+TL +
+28. r" I ( 2)(E+k) k
+29.
+m + 1-k k)"(-1)*,
+30.
+n
+m
+k
+k=0
+k=0
+(m)-(Am)
+k=0
+31. L
+1) R
+32.
+33. o =
+n
+72
+for 7 0,
+m
+l
+Ka)-1
+(2n)2
+34.
+35.
+2n
+=0
+n. +
+36.
+37.
+2n
+m
+
+
+
+Theoretical Computer Science Cheat Sheet
+Identities Cont.
+Trees
+n + -
+à -
+k
+1 k
+X
+n T + k
+Every tree with n
+38.
+n!
+39.
+m+1
+n
+k! m
+:
+2n
+vertices has n - 1
+k=0
+=0
+edges.
+40. m-> (Imti-nr
+41.
+-
+Kraft inequal-
+ity: If the depths
+42. m+n+
+43. m
+n t R
+of the leaves of
+m
+=0
+k
+-EHH
+a binary tree are
+d1, dn:
+44.
+k+1
+45. n
+for n N m,
+IIL
+m(-1)m-k
+E2-d S 1,
+n
+m
+m +k
+m k
+i=1
+46.
+=X
+47.
+n m
+m
+:
+k
+k
+and equality holds
+48. n
+T1L
+>
+n
+m
+only if every in-
+=
+49.
+en m ICR)
+P
+mTC) m
+ternal node has 2
+sons.
+Recurrences
+Master method:
+Generating functions:
+T(n) = aT(n/b) + f(n), a 2 1,b> 1
+1(T(n) - 3T(n/2)=n)
+1. Multiply both sides of the equa-
+3e
+3(T(n/2) - 3T(n/4) =1 n/2)
+tion by r'.
+If > 0 such that f(n) = O(nlogoa- )
+2. Sum both sides over all i for
+then
+: : :
+which the equation is valid.
+T(n) = O(nlogs a).
+3log2 n 1 (T(2) - 3T(1)=2)
+3. Choose a generating function
+If f(n) = O(nlogo a) then
+G(r). Usually G(x) = Disoz'gi.
+T(n) = O(nlogs a log2 n).
+Let m = log2 n. Summing the left side
+3. Rewrite the equation in terms of
+we get T(n) - 3MT(1) = T(n) - 3m =
+the generating function
+If 3e > 0 such that f(n) = (n logo a+s), T(n) - nk where k = log2 3 R 1.58496.
+G(r).
+and Jc < 1 such that af(n/b) S cf(n)
+Summing the right side we get
+4. Solve for G(z).
+for large n, then
+-I
+m 1
+5. The coefficient of 2i in G(x) is gi.
+T(n) = O(f(n)).
+n
+n - 3)
+Example:
+i=0
+i=0
+9i+1 = 2gi + 1, go = 0.
+Substitution (example): Consider the
+following recurrence
+Let C = - Then we have
+Multiply and sum:
+m-
+>
+Tit1 = 22'. T2, Ti = 2.
+- -1
+9it12
+2g:2 + a
+n > c=n
+i20
+i20
+iz0
+Note that Ti is always a power of two.
+i=0
+C 1
+We choose G(z) =
+Rewrite
+Let ti = log2 Ti. Then we have
+= 2n(dogs n - 1)
+Lizo z'gi.
+in terms of
+titl = 2i + 2ti, t1 = 1.
+loge n
+G(z):
+= 2n(c(k-1)1
+1)
+G(z) - 9o
+ 2G(z) +
+Let Ui =
+both sides of
+r.
+ti/2. Dividing
+= 2n* 2n,
+I
+i>0
+the previous equation by 2i+1 we get
+titl 2i ti
+and So T(n) = 3nk I 2n. Full history re- Simplify:
+2i+1 2i+1 21
+currences can often be changed to limited
+G(x)
+1
+I 2G(x) +
+Substituting we find
+history ones (example): Consider
+X
+I X
+Uit1 = I + Ui, u1 2,
+T=1+XT, i-1
+To=1 1.
+Solve for G(z):
+X
+which is simply Ui = i/2. So we find
+j=0
+G(z) = - x)(1 - 2x)
+that Ti has the closed form Ti i 2i2t-1
+Note that
+Expand this using partial fractions:
+Summing factors (example): Consider
+2
+1
+the following recurrence
+Ti+1 = 1 + Tj.
+G(x) = X
+T(n) = 3T(n/2) + n, T(1) = 1.
+j=0
+2x
+X
+Rewrite sO that all terms involving T Subtracting we find
+2r
+i-1
+I
+Ez
+are on the left side
+Ti+1 - Ti = 1+ ET-1-XT
+iz0
+T(n) - 3T(n/2) = n.
+j=0
+j=0
+I (2i+1 1)24+1.
+Now expand the recurrence, and choose
+= Ti.
+i>0
+a factor which makes the left side "tele-
+And so Ti+1 = 2T; = 2i+1.
+So 9i à L.
+scope"
+
+
+
+Theoretical Computer Science Cheat Sheet
+TT a 3.14159,
+e a 2.71828,
+1 a 0.57721,
+9 1+/5 2a 1.61803,
+o =
+R -.61803
+i
+2i
+Pi
+General
+Probability
+1
+2
+2
+Bernoulli Numbers (Bi = 0, odd i 7 1):
+Continuous distributions: If
+2
+4
+3
+Bo = 1, B1
+B2 6 B4 30' 
+Pra < X < b]
+p(x) dx,
+3
+8
+5
+B6
+Bg
+B1o = 66
+a
+4
+16
+7
+Change of base, quadratic formula:
+then p is the probability density function of
+X. If
+5
+32
+11
+loga C
+-b + Vb2 4ac
+logb X =
+Pr(X  al = P(a),
+6
+64
+13
+logal b'
+2a
+then P is the distribution function of X. If
+7
+128
+17
+Euler's number e:
+P and p both exist then
+8
+256
+19
+e I 1+
+20 +
+P(a) = p(x) da.
+9
+512
+23
+lim
+e"
+0
+n-+00
+10
+1,024
+29
+Expectation: If X is discrete
+1+#)*<e<( + LT
+11
+2,048
+31
+Elg(X)]= > g(x) Pr/X = z).
+11e
+1
+12
+4,096
+37
+1+; =e
+2n 24n2
+If X continuous then
+13
+8,192
+41
+Harmonic numbers:
+14
+16,384
+43
+137
+363 761 7129
+Elg(X)]= g(z)p(z) dx = g(x) dP(z).
+1, 2
+60
+140' 280 2520
+O
+A
+15
+32,768
+47
+Variance, standard deviation:
+16
+65,536
+53
+Inn < Hn < Inn+1,
+VAR/X] = E/X?] - E/X],
+17
+131,072
+59
+a =
+Hn = Inn +y+0
+VVAR/X].
+18
+262,144
+61
+For events A and B:
+19
+524,288
+67
+Factorial, Stirling's approximation:
+PrA V B] = Pr[A] + Pr(B] - PrA A B]
+20
+1,048,576
+71
+1, 2, 6, 24, 120, 720, 5040, 40320, 362880,
+PrA A B] = PrA] - Pr(B],
+21
+2,097,152
+73
+iff A and B are independent.
+22
+4,194,304
+79
+n! 2mn
++e -
+PrA A B]
+PrAB] =
+23
+8,388,608
+83
+Ackermann' 's function and inverse:
+Pr(B]
+24
+16,777,216
+89
+2j
+i=1
+For random variables X and Y:
+25
+33,554,432
+97
+ali,j) = ali -1 1,2)
+j=1
+E[X Y] = E[X]- E[Y],
+ali
+if X and Y are independent.
+26
+67,108,864
+101
+1,a(i,j-1 1)) i,j22
+27
+134,217,728
+103
+a(i) = mintj I alj,j) 2 ij.
+E[X + Y] = E[X] + E(Y],
+EcX] = CE/X].
+28
+268,435,456
+107
+Binomial distribution:
+Bayes' theorem:
+29
+536,870,912
+109
+Pr(X = I L
+k] L pkqn-k
+q=1-p,
+Pr(BAJPrAJ
+30
+1,073,741,824
+113
+Pr(AB] i
+Lj-l Pr(A,IPr(BLA,
+31
+2,147,483,648
+127
+E/X] = k
+2-K np.
+Inclusion-exclusion:
+32
+4,294,967,296
+131
+k=1
+Pascal's Triangle
+Poisson distribution:
+Pr [VX)-EPIXI+
+AK
+i=1
+i=1
+1
+PrX = k]
+E[X]=) A.
+k!
+1 1
+Normal (Gaussian) distribution:
+X(-1)41 I Pr(Axil
+121
+1
+k=2
+i<..<ik j=1
+p(z) i
+p)2/202 E[X] = p.
+Moment inequalities:
+1331
+2ma
+1
+14641
+The "coupon collector": We are given a
+Pr [XI N AE/X]] S I
+1 5 10 10 5 1
+random coupon each day, and there are n
+1
+different types of coupons. The distribu-
+Pr - E(X]121. a <
+6 15
+[Ix
+1 20 15 6 1
+tion of coupons is uniform. The expected
+1 7 21 35 35 21 7 1
+number of days to pass before we to col- Geometric distribution:
+1 8 28 56 70 56 28 8 1
+lect all n types is
+PrX = k] i pgk-1,
+q=1-p,
+1 9 36 84 126 126 84 36 9 1
+nHn.
+E[X] =
+1 10 45 120 210 252 210 120 45 10 1
+k=1
+
+
+
+Theoretical Computer Science Cheat Sheet
+Trigonometry
+Matrices
+More Trig.
+Multiplication:
+C
+[(0,1)
+C=A-B, Cij = aikbk,j.
+a
+b
+(cos 0, sin 0)
+k=1
+h
+C
+6
+A
+Determinants: det A # 0 iff A is non-singular.
+(-1,0)
+(1,0)
+A
+B
+det. A B = det. A. det. B,
+Law of cosines:
+a
+(0,-1)
+c2  a2+62-2ab COS C.
+B
+det. A =
+V
+sign(m)ai,m()-
+Area:
+Pythagorean theorem:
+T i=1
+C2= A? +. B2.
+2 X 2 and 3 X 3 determinant:
+a b
+A = Zhc,
+Definitions:
+C d - ad bc,
+= Zabsin C,
+sin a = A/C, COS a = B/C,
+a b L
+c2 sin. Asin B
+CSC a = C/A, sec a = C/B,
+d e
++
+b
+2sin C
+sin a A
+COS a B
+h 2
+d
+d e
+Heron's formula:
+tan a =
+cot a I
+9
+COS a B
+sin a A
+aei + bfg + cdh
+Area, radius of inscribed circle:
+ceg - fha - ibd.
+A = Vs. Sa'Sb' Sc,
+ZAB,
+AB
+Permanents:
+S I i(a+b+c),
+A+B+C
+Sa =S a,
+Identities:
+perm. A I > ai,m(i)-
+1
+1
+T i=1
+Sb=S- - b,
+sin X I
+COS: C I
+Hyperbolic Functions
+Sc I S C.
+CSC: C
+secr
+1
+Definitions:
+I
+More
+tan: C
+sin? X + cos?. I = 1,
+identities:
+cot: C
+et - e
+e + e
+COS: X
+sinh: X I
+cosh: I i
+sin
+1+ tan? X = sec2a,
+1 + cot? C = csc2. x,
+2
+2
+Z
+2
+- e
+I
+tanh x
+csch: C I
+1 + COS: X
+sin: X = COS Z r),
+sin: X = sin(m x),
+t
+sinhz
+COS 2
+1
+2
+sech: X I
+coth: X l
+COS: X = cos(T x),
+tan: X = cot Z C)
+cosh x
+tanh C
+COS: X
+tan 2
+Identities:
+1 + COS x
+cot. X = = cot(T x),
+CSC: X = cot Z cot. x,
+1 - COS: X
+cosh? x - sinh?a=1, tanh? X + sech? x = 1,
+X
+sin(x t y) = sin C COS y t COS: T sin y,
+sin
+sin: C
+coth? r csch? I = 1,
+sinh(-r) = sinh: x,
+cos(r t y) = COS: I COS y F sin r sin y,
+1 + COS: x
+cosh(-r) = cosh. x,
+tanh(-r) tanha,
+1 + COS: X
+tan: X t tan y
+tan(x t y)
+cot 2 / 1 COS x
+1 F tan xt tan y
+sinh(z + y) = sinh X cosh y + cosh I sinh y,
+1 + COS: X
+cot X cot y F 1
+cot(x t y) 
+cosh(z + y) = cosh X coshy + sinh: I sinh y,
+sin X
+cot: I t cot y
+sin: X
+sin 2x i 2sin X COS: r,
+sin 2x = 2tanr
+sinh 2x = 2sinh: I cosh r,
+1 COS: x
+1+1 tanz'
+cosh: 2x = cosh? X + sinh? I,
+elt e a
+COS 2x = cos? C sin? x, COS 2x = 2 cos? x-1,
+sin C =
+2i
+1 - tana cosh: x + sinhr = et,
+cosh: X - sinh x i e
+-
+COS 2x = 1 2sin? a,
+COS 2x =
+ix + e ir
+1 + tanx
+COS. X =
+(cosh: C + sinh: 2)" = cosh nx + sinh nx, n EZ,
+2
+21 tan X
+cot2r-1 I
+e 
+tan 2x =
+cot 2x =
+=
+tan X =
+1 - tan?z'
+2cota X
+2sinh? Z coshr 1, 2cosh? Z = coshr + 1.
+ezr + e -ir
+sin(z + y) sin(z y) sin sin? y,
+21T 1
+0 sin 0 COS 0 tan 0
+in mathematics
+e2ix + 1
+cos(z + y) cos(z y) COS C sin y.
+0 0
+1
+0
+you don't under-
+sinh ix
+stand things, you sin X =
+Euler's equation:
+3
+i
+6
+3
+a
+used to
+I
+just get
+COS: X + isin r,
+= 1.
+/
+V2
+COS C = cosh ix,
+1
+them.
+tanh ix
+v2.02 O1994 by Steve Seiden
+1 V3
+- J. von Neumann
+tan I
+sseiden@acm.org
+-
+i
+1
+0 8
+http://www.csc.lsu.edu/"seiden
+
+
+
+Theoretical Computer Science Cheat Sheet
+Number Theory
+Graph Theory
+The Chinese remainder theorem: There ex-
+Definitions:
+Notation:
+ists a number C such that:
+Loop
+An edge connecting a ver- E(G) Edge set
+tex to itself.
+V(G) Vertex set
+CETI mod m1
+Directed Each edge has a direction. c(G) Number of components
+: :
+Simple
+Graph with no loops or GIS] Induced subgraph
+multi-edges.
+deg(v) Degree of U
+C= Tn mod mn
+Walk:
+A sequence voe101 eeve. A(G) Maximum degree
+if mi and mj are relatively prime for i 7 j.
+Trail
+A walk with distinct edges. 8(G) Minimum degree
+Euler's function: O(x) is the number of
+Path
+A trail with distinct X(G) Chromatic number
+vertices.
+XE(G) Edge chromatic number
+positive integers less than C relatively
+Go
+prime to T. If I-1 pi is the prime fac-
+Connected A graph where there exists
+Complement graph
+Kn Complete graph
+torization of C then
+a path between any two
+n
+vertices.
+Kni,na Complete bipartite graph
+o(z) =
+Pi - - 1).
+Component A maximal connected r(k,e) Ramsey number
+i=1
+subgraph.
+Geometry
+Euler's theorem: If a and b are relatively
+Tree
+A connected acyclic graph.
+prime then
+Free tree A tree with no root.
+Projective coordinates: triples
+1=as(6) mod b.
+DAG
+Directed acyclic graph.
+(x,Y, z), not all T, y and z zero.
+Eulerian Graph with a trail visiting
+(a,y, z) = (cx, cy,cz) Vc 7 0.
+Fermat's theorem:
+1= aP-1 mod p.
+each edge exactly once.
+Cartesian Projective
+Hamiltonian Graph with a cycle visiting (z, y)
+(2,3,1)
+The Euclidean algorithm: if a >> b are in-
+each vertex exactly once.
+y = mx + b (m, -1,6)
+tegers then
+Cut
+A set of edges whose re- C = C
+(1,0,-c)
+gcd(a,b) = ged(a mod b,b).
+moval increases the num- Distance formula, Lp and Loo
+If I-1 pi is the prime factorization of X
+ber of components.
+metric:
+then
+Cut-set
+A minimal cut.
+V(21 - ro)2 + (y1 - Yo)2,
+I
+Cut edge A size 1 cut.
+S(x) = d=l
+k-Connected A graph connected with
+[l21 TolP + lyi Yol P11/p,
+dlz i=1 Pi-1
+the removal of any k - 1
+lim [la1 - 2olP + lyi yoP]/P
+Perfect Numbers: C is an even perfect num-
+vertices.
+P-00
+ber iff x = 2n-1(2n-1) and 2n-1 is prime. k-Tough VS I V,S + 0 we have Area of triangle (ro, yo), (21,91)
+Wilson's theorem: n is a prime iff
+k. c(G S) S |SI.
+and (r2,92):
+(n - 1)! E -1 mod n.
+k-Regular A graph where all vertices
+T1 To Y1 I Yo
+have degree k.
+2 abs T2 - CO Y2 - Yo
+Mobius inversion: ifi= 1.
+k-Factor A k-regular spanning Angle formed by three points:
+U
+if i is not square-free.
+subgraph.
+p(i)
+(-1)" if i is the product of
+Matching A set of edges, no two of
+(22,92)
+T distinct primes.
+which are adjacent.
+l2
+Clique
+A set of vertices, all of
+If
+which are adjacent.
+- 0
+G(a) = > F(d),
+Ind. set
+A set of vertices, none of
+(0,0) l1 (21,31)
+dla
+which are adjacent.
+(21,91) - (22,92)
+COS 0 =
+then
+Verter cover A set of vertices which
+lil2
+F(a)-XHOC()
+cover all edges.
+Line through two points (2o,90)
+dla
+Planar graph A graph which can be em- and (21,Y1):
+Prime numbers:
+beded in the plane.
+X y 1
+Inlnn
+Plane graph An embedding of a
+1 =1 0.
+Pn = nl Inn + n In In n n + n
+planar
+TO Yo
+Inn
+graph.
+T1 Y1 1
+Area of circle, volume of sphere:
+deg(u) = 2m.
+VEV
+A = Tr2, V=373.
+n
+n
+2ln
+T(n)
+If G is planar then n - m + f=2,s0
+Inn (In n)4 (Inn)3
+IfI have seen farther than others,
+f S 2n 4, m S 3n - 6.
+n
+it is because I have stood on the
+t
+Any planar graph has a vertex with de- shoulders of giants.
+gree S 5.
+Issac Newton
+
+
+
+Theoretical Computer Science Cheat Sheet
+T
+Calculus
+Wallis' identity:
+Derivatives:
+2-2.4-4-6-6...
+T = 2.
+d(cu) du
+d(u +v) du du
+d(uv) du du
+1-3-3-5-5-7-.
+1.
+2.
++
+3.
+U + U
+dx
+dx'
+dx
+dr dx
+dr
+dx dx
+Brouncker's continued fraction expansion:
+12
+d(u")
+du
+d(u/v)
+d(ecu)
+du
+Z=1+
+4.
+nu'
+5.
+6.
+cecu
+32
+da
+dx
+da
+u2
+dx
+dx
+2 +
+2+- 2+1
+d(cu)
+du
+d(Inu) 1 du
+7.
+(In c)cu
+8.
+series:
+dx
+dx
+dx u dx'
+Gregrory's
+- =1- 1
+1 +
+d(sin u)
+du
+d(cos u)
+du
+9.
+COS u-
+10.
+sin u
+dr
+dx
+da
+dx
+Newton's series:
+d(tan u)
+du
+u)
+du
+I
+d(cot
+1
+1
+1-3
+11.
+sec? u-
+12.
+I csc- u
+6 = +
++
+dx
+dx
+dx
+dx'
+2 2-3.23 2.4.5.25
+d(sec u)
+du
+d(csc u)
+du
+Sharp's series:
+13. dx i tan u sec u- dx
+14. dx
+cot u CSC u- dx'
+1
+1
+1
+d(arcsin u)
+1 du
+d(arccos u)
+1 du
+15.
+16.
+3
+31.3 32.5 33.7
+dx
+1 -u2dr
+dx
+u2 dx'
+Euler's series:
+d(arctan u)
+1 du
+d(arccot u)
+du
+17.
+18.
+dx
+1+u2 dx
+dx
+1 + u2 dx'
+d(arcsec u)
+1 du
+d(arccsc u)
+1 du
+19.
+20.
+dx
+uv1 u2 da
+dx
+uv1 u2 dx
+d(sinh u)
+du
+d(cosh u)
+du
+21.
+I cosh u-
+22.
+= sinh U
+dr
+dx'
+dx
+dx
+Partial Fractions
+d(tanh u)
+du
+u)
+du
+71.
+d(coth
+23.
+sech
+24.
+csch? u
+Let N(z) and D(z) be polynomial func-
+dx
+dx
+dx
+dx
+tions of X. We can break down
+d(sech u)
+du
+d(csch u)
+du
+N(z)/D(z) using partial fraction expan- 25. da
+sech u tanh u- dx
+26. da I csch u coth u- dx'
+sion. First, if the degree of N is greater
+than or equal to the degree of D, divide 27. d(arcsinh u)
+1 du
+28. d(arccosh u)
+1 du
+N by D, obtaining
+dx
+/1 +u2 dx
+dr
+dx'
+N(z) Q(z) + N'(x)
+d(arctanh u)
+1 du
+d(arccoth u)
+1 du
+D(x)
+D(x)
+29.
+dx
+u2dr
+30.
+dx
+1dr'
+where the degree of N' is less than that of
+d(arcsech u)
+du
+d(arccsch u)
+du
+D. Second, factor D(x). Use the follow- 31.
+dr
+uv1 14 dx
+32.
+dx
+Juv1+u2 dx
+ing rules: For a non-repeated factor:
+Integrals:
+N(x)
+A N'(x)
+a)D(x) X a D(z)
+1. cu da
+lx
+2.
+da
+a vda,
+where
+N(x)]
+A I
+3. x" 
+n
+4.
+In a, 5. e dx = et
+D(x) =a
+n + 1
+X
+For a repeated factor:
+6.
+dx arctan x,
+7. u du da I uv
+du dr,
+N(z)
+m
+Ak
+N'(x)
++
+dx
+dx
+(z a)mD(z) k=0
+D(x)
+8. sin I dx = COS: x,
+9. COS: I dx = sinr,
+where
+Ak
+K N(x)
+10. tan I da I - In COS x),
+11. cot: I dr = In COS: xl,
+C dak D(x) c=a
+12. sec: X dr = In sec: I + tan x,
+13. CSC I dx  In CSC: x + cot:
+The reasonable: man adapts himself to the
+x,
+world; the unreasonable persists in trying
+to adapt the world to himself. Therefore 14. arcsin Eda = arcsin a + a2 xr2. a>0,
+all progress depends on the unreasonable.
+George Bernard Shaw
+
+
+
+Theoretical Computer Science Cheat Sheet
+Calculus Cont.
+15. arccos Edz = arccos a a2. x2, a>0,
+16. arctan Edx = I arctan a 2 In(a? + 22), a>0,
+17. sin (ax) dx = za (ax - sin(ax) cos(ax)),
+18. cos (ax)dx = za (ax + sin(ax) cos(ax)),
+19. sec C dx I tan a,
+20.
+C dx cot a,
+sin"- a COS: C L
+cos"  sin X
+21. sin' dx
+sin
+da,
+22. cos" C dx
+cos" C dx,
+n
+n
+n
+16
+tan"-lr
+cot" a
+23. tan" T dx
+tan"-2 X dx, n 7 1,
+24. cot' C dr il
+cot' -2 I dr, n
+-
+7 1,
+n 1
+n 1
+tan r sec"
+n 2
+25. sec" X dx
+sec" I dx, n # 1,
+n 1
+n
+cot: C csc"
+n 2
+26. csc" C dx i
+Csc" -2rdr, n 7 1, 27. sinh: I dr = cosh: C, 28. cosh X dx = sinh: x,
+n - 1
+L
+29. tanh I dx = In cosh z), 30. coth X da = In sinh zl, 31. sech: I dx = arctan sinh x, 32. csch I dx = In |tanh zl,
+33. sinh? C dx = I sinh(2x) 2r,
+34. cosh? X dx = I sinh(2x) + 22,
+35. sech? X dx = tanh: T,
+36. arcsinh Eda = C arcsinh a Vx2 + a2, a> 0,
+37. arctanh Ida = I arctanh a + 2 In
+c
+C
+r arccosh
+if arccosh a > 0 and a >> 0,
+38. arccosh =
+a
+Edz
+C
+C arccosh +
+a2, if arccosh a < 0 and a > 0,
+a
+dx
+39.
+In 
+a > 0,
+40.
+dx
+1 arctan a > 0,
+41.
+da
+a x2 +
+r2 a
+a
+a2-22d
+arcsin a a>0,
+42. (a2 -22)3/2da = $(502 2x)
++ a arcsin a a > 0,
+dx
+dx
+1 a + r
+da
+C
+43.
+i arcsin a a>0,
+44.
+In
+45.
+c2 2a a X
+(a2 22)3/2 a2Va2-22
+dr
+46.
+t: x2 dr l
+H r2
+In
+a2. tx2
+47.
+In +
+a21 a>0,
+dx
+C
+2(3bx =
++
+n
+2a)(a bar)3/2
+48.
+49.
++ badx I
++
+ava
+ar br a a + bx
+1562
+Va + bx
+C
+a + bx
+i
+Va
+50.
+dx 2va + br + a
+dr,
+51.
+dx
+a > 0,
+CV a + ba
++ bx
+a + bx + Va
+E
+a + Va2-r2
+52.
+dr
+aln
+53.
+dr
+1/2
+C
+C
+da
+a +
+T-
+54. 2Va2-2dr = (2x2 2)Va2-22 + - arcsin a a> 0,
+55.
+n
+C
+X dx
+da
+56.
+a2 r2
+57.
+arcsin a a >> 0,
+a2+r2
+a + Va2+22
+58.
+dx
+aln
+59.
+da
+a arccos
+a > 0,
+
+C
+C
+da
+60. rv22ta2 dr (22 t a2)3/2,
+61.
+a +
+C
+
+
+
+Theoretical Computer Science Cheat Sheet
+Calculus Cont.
+Finite Calculus
+dx
+dx
+Vx2: t a2 Difference, shift operators:
+62.
+arccos
+a> 0,
+63.
+F
+Tv
+a2
++ a
+a2r
+Af(z) = f(x + 1)-f(x),
+X dx
++ a2)3/2
+Ef(z) = f(z + 1).
+64.
+x2 t a,
+65.
+dr l +
+t
+3a2x3
+Fundamental Theorem:
+1
+2ax + b
+4ac
+f(x) = AF(x) 4
+= F(x)+C.
+In
+if b2 > 4ac,
+Ef(a)oz
+66.
+dx
+ b 4ac 2ax + b + Vb2 4acl
+b-1
+ax2 + bx + C
+2
+2ax + b
+Ef(a)oz = Ef().
+arctan
+if b2 < 4ac,
+i=a
+4ac
+V4ac
+Differences:
+In 2ax + b + 2vav ar2 + br + cl ifa>0,
+A(cu) = cAu,
+A(u + v) = Au + Av,
+67.
+dx
+va
+A(uv) = uAv + EvAu,
+/ ax2 + bx + C
+1
+2ax - b
+arcsin
+ifa<0,
+A(2) = nz1-1,
+/62 4ac
+A(Hz) = T
+A(27) = 22,
+2ax + b
+4ax b2
+dx
+68.
+ar2 + br + cdx =
+ar2 + br + C +
+A(c7)= (c - 1)ct,
+4a
+A(m)=(-1)-
+8a
+ax2 + br + C
+Sums:
+C dx
+/ ar2 + br + C b
+dx
+L cu Sx = cEut Sx,
+69.
+ar + br + C
+a
+2a
+LC + br + C
+(u + Sr I I udr + Evor,
+2vCv ar + ba + C + br + 2c
+Sr = uv -
+In
+ifc>0,
+EuAvd
+EEvAuSr,
+dr
+X
+70.
+Ern8r = Int1
+= Hz,
+CV ar bx
+Er-l8r
++ + C
+1
+ba + 2c
+m+I
+arcsin
+ifc<0,
+V62 4ac
+Ec Sx =
+E()8x = (m+1).
+Falling Factorial Powers:
+71. rv Va2+a2 dx =
+)(x + 2)3/2,
+22 I a(z 1) C -n+ 1), n>0,
+a = 1,
+72. 2" sin(ax) dx = Lz" cos(ax) + 2
+cos(ax) da,
+1
+x"
+n<0,
+X + 1) (x + |nl)
+73. a" cos(ax) dx = lzn sin(ax) L
+sin( (ax) dr,
+n+m
+ l 2"(r m)".
+Rising Factorial Powers:
+74. z"eaed dx
+x" -lea dx,
+a
+2" 2(z +
+a +n-1 1), n>0,
+In(ax)
+1
+dr =
+20=1,
+75. 2" In(ax)
+2n+1
+n +
+(n + 12
+1
+27
+n<0,
+m
+X
+(r
+i=
+Inl)'
+76.
+dx
+In ax)"
+ax dr.
+I
+n
+2"(nar)"
+n +
+t
+2ntm m  m)".
+Conversion:
+l
+a1
+at
+21 = (-D"(-a)"-(E-n+1"
+r2
+22+21
+22-21
+= 1/(z + 1)-",
+r3 =
+23. + 322+21
+I
+23-3 322+27
+2" = (-1)(-2)4-(2+n-1)4
+ I
+24+ 6x3+ 7r2+r1
+I
+27-623+1 722-21
+= 1/(x-1)-n,
+o I 25. + 15x4. + 25r3. + 1022+ al
+25- 1527+2 2523-1 1022+21
+x" EW-2R
+xl
+al=
+xl
+k=1
+==
+22. + xl
+22=
+22- xl
+I" ) >
+i
+I
+R(-1ym-kgt
+23 + 3.x2 + 2x1
+23.
+23 3x2 + 2x1
+k=1
+24 + 623 + 11x2 + 6x1
+24. i
+2r4 6x3 + 11x2 - 6x1
+C = 25 + 1024 + 35x3 + 50x2 + 24x1 25- 25 = 10x4 + 35.x3 I 50x2 + 24x1
+k=1
+
+
+
+Theoretical Computer Science Cheat Sheet
+Series
+Taylor's series:
+Ordinary power series:
+=
+(x
+0O
+f(z) = f(a) + (z a)f'(a)
+"(a) +
+ a0(a).
+= >
+2
+i!
+A(x)
+aiz.
+Expansions:
+i=0
+i=0
+1
+Exponential power series:
+=1+2+22+ 23 +
+I
+A(x)  - ai
+i!
+1
+i=0
+1-c
+=1+er+er+dt
+Dirichlet power series:
+1
+= di
+=1+2"+22n + 23n +
+A(x) > ir
+1-2"
+i=1
+I
+Binomial theorem:
+=T+ 2x2 + 3x3 + 4x4 +
+ix
+(1-2)2
+i=0
+(x + y)"
+klzk
+k=0
+=r+2"22 + 3"3 + 4"x4
+- a
+Difference of like powers:
+k=0
+E0a
+i=0
+et
+i= 1+r+
++
+a"
+
+k=0
+For ordinary power series:
+In(1 +x)
+1)i+1
+aA(x) + BB(z) = E(aai + Bbi)z,
+1
+i=0
+In
+t
+1-r
+2kA(z) = Eai-ka',
+22i+1
+sin: X
+-1)
+i=k
+(2i + 1)!'
+A(x) - LiEd ajzt
+221
+Laitka,
+COS: X
+-
+C(-1)
+ak
+i=0
+i=0
+(2i)!'
+= Xcaia,
+1
+22i+1
+A(cr)
+tan X
+
+(-1)
+i=0
+(2i+1)
+i=0
+X
+n(n-1)
+A'(z) =
++
+1)ai+12,
+nx
+E(i+
+(1+x)"
+=1+ +
+i=0
+1
+=1+ (n + 1)z + (n+2): r +
+itn
+rA'(x) = > iaja',
+(1-2)m+1
+i=1
+X
+Biat
+ai-1
+- 1
+dx = >
+.
+et-1
+i!
+JA(E)
+i=1
+1 (1 - V1-4x)
+=1+r+: 2x2 + 5x3 +
+2i
+A(z) + A(-r) >
+2x
+a2:22i,
+=0 + I
+2
+i=0
+1
+4
+= 1+ 2x + 6x2 + 20x3 +
+x
+A(x) - A(-r)
+1 -4x
+a2141221+1
+=U
+2
+i=0
+1
+- V1-4r
+4+n)
+2i +n
+= 1+ (2 + n)z + )
+Summation: If bi I
+ai then
+V1-4r
+2x
+i
+Lj-o
+1
+1
+1
+B(x) =
+A(x).
+- C
+Hia,
+1 X
+1 X - X
+Convolution:
+1
+1
+Hi-12
+8
+In
+2
+A(x)B(x) = > Eajbi-j x'
+i=0 j=0
+C
+I+ x2 + 2x3 + 3x4 +
+Fia,
+1-1-22
+i=0
+God made the natural numbers;
+Fnr
+-
+all the rest is the work of man.
+I Fnx + F2n22 + F3n23 +
+Fnia.
+1- (Fn-1 + Fn+1)z - (-1)"22
+- Leopold Kronecker
+i=0
+
+
+
+Theoretical Computer Science Cheat Sheet
+Series
+Escher's Knot
+Expansions:
+1
+1
+n
+(Hnti Hn)
+1
+(1 - x)n+1
+CC
+(t)
+i=0
+i=0
+2n
+n
+nla?
+- r
+(et- 1)"
+i!
+i=0
+i=0
+1
+21 nlai
+(-4)'B2:22i
+In
+X
+X cot C
+1 C
+Inj i!
+(2i)!
+i=0
+i=0
+22i(22i - 1)B2:221-1
+
+tan X
+I- E(-1)-1
+C(z)
+- > iz
+(2i)!
+i=1
+i=1
+1
+(2)
+S(z-1)
+o(i)
+S(x)
+=l
+C(z)
+i=1
+S(x)
+
+Stieltjes Integration
+If G is continuous in the interval [a, b] and F is nondecreasing then
+d(i)
+S(x)
+where d(n) =
+1,
+C
+Ldm
+G(z) dF(z)
+i=1
+S(i)
+exists. If a b S C then
+C(z)C(z - 1)
+I
+where S(n) = Ldnd,
+r2
+i=1
+G(z)dF(z) = G(x) dF(x) + G(x) dF(x).
+22n-1 B2nl
+a
+Jb
+(2n)
+2n n E N,
+If the integrals involved exist
+(2n)!
+X
+E(-1)-1 (4i - 2)B2i22i
+(G(z) + H(z)) dF(z)
+G(x) dF(z) + H (x) dF(x),
+sin: X
+(2i)!
+i=0
+1-1 V1-4x
+n(2i +n-1)!
+G(x)d(F(x) + H(z))
+G(z) dF(z) + G(z) dH(x),
+I >
+2x
+il(n + i)!
+i=0
+2i/2 sin iT
+G(x) dF(z) = G(x) dlc F(z))
+G(z) dF(z),
+et sin: X
+>
+i!
+i=1
+G(x) dF(x) = G(b)F(6) - G(a)F(a)
+F(z) dG(z).
+1-V1-1
+(4i)!
+1
+/
+-
+If thei integrals involved exist, and F possesses a derivative F' at every
+X
+i=0 16'V2(2i)(2i + 1)!
+point in [a, b] then
+arcsin: C 2
+4'112
+G(x) dF(z) = G(z)F'(z) dr.
+X
+i=0 i + 1)(2i + 1)!
+Cramer' 's Rule
+Fibonacci Numbers
+00 47 18 76 29 93 85 34 61 52
+If we have equations:
+86 11 57 28 70 39 94 45 02 63
+a1,101 + a1,22 + + a1,nn = bi
+95 80 22 67 38 71 49 56 13 04
+1,1,2,3,5,8,13, 21, 34, 55, 89,
+a2,121 + a2,22 + + a2,nIn = b2
+59 96 81 33 07 48 72 60 24 15
+Definitions:
+73 69 90 82 44 17 58 01 35 26
+Fi = Fi-1+Fi-2, Fo=Fi=1,
+68 74 09 91 83 55 27 12 46 30
+F-i=( (-1):-1Fi,
+an,121 + an,212 + + an,nin = bn
+37 08 75 19 92 84 66 23 50 41
+14 25 36 40 51 62 03 77 88 99
+Fi= - IA (pt-8),
+Let A = (ai,3) and B be the column matrix (bi). Then
+21 32 43 54 65 06 10 89 97 78
+Cassini's
+for i > 0:
+there
+identity:
+is a unique solution iff det. A 7 0. Let Ai be A
+42 53 64 05 16 20 31 98 79 87
+with column i replaced by B. Then
+-
+Fi+1Fi-1 F2 =(-1).
+det. Ai
+The
+Additive rule:
+Ti
+Fibonacci number system:
+det. A
+Every integer n has a unique
+Fntk = FkFn+1 + Fk-1Fn,
+representation
+F2n = FnFn+1 + Fn-1Fn.
+Improvement makes strait roads, but the crooked
+n = Fki + Fkz + + Fkm)
+Calculation by matrices:
+roads without Improvement, are roads of Genius.
+where ki N kitl + 2 for all i,
+Fn-2 ,
+1 n
+William Blake (The Marriage of Heaven and Hell)
+1 Si< m and km 2 2.
+Fn-1
+1

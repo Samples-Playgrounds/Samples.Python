@@ -1,0 +1,72 @@
+docker
+CLI Cheat Sheet
+Docker provides the ability to package and run an application in a loosely isolated environment called a container.
+The isolation and security allows you to run many containers simultaneously on a given host. Containers are
+lightweight and contain everything needed to run the application, SO you do not need to rely on what is currently
+installed on the host. You can easily share containers while you work, and be sure that everyone you share with gets
+the same container that works in the same way.
+INSTALLATION
+GENERAL COMMANDS
+Docker Desktop is available for Mac, Linux and Windows
+Start the docker daemon
+https:/Idocs.docker.com/desktop
+docker -d
+View example projects that use Docker
+Getl help with Docker. Can also use -help on all subcommands
+https://github.com/docker/awesome-compose
+docker --help
+Check out our docs for information on using Docker
+Display: system-widei information
+httpsi//docs.docker.com
+docker info
+IMAGES
+CONTAINERS
+Docker images are al lightweight, standalone, executable package A container is a runtime instance of a docker image.. A container
+of software that includes everything needed to run an application: will always run the same, regardless of thei infrastructure.
+code, runtime, system tools, system libraries and settings.
+Containers isolate: software from its environment. and ensure
+that it works uniformly despite differences for instance between
+Build an Image from al Dockerfile
+development and staging.
+docker build -t <image_name>
+Build an Image from al Dockerfile without the cache
+Create and run a container from an image, with a custom name:
+docker build -t <image_name> -no-cache
+docker run --name <container_name> <image_name>
+List local images
+Run a container with and publish ac container's port(s) to the host.
+docker images
+docker run -P <host_port>:<container_port> <image_name>
+Delete an Image
+Run a containeri in thel background
+docker rmi <image_name>
+docker run -d <image_name>
+Remove all unused images
+Start or stop an existing container:
+docker image prune
+docker start/stop <container_name> (or <container-id>)
+Remove as stopped container:
+docker rm <container_name>
+DOCKER HUB
+Open a shell inside a running container:
+Docker Hubi is a service provided by Docker for finding and sharing docker exec -it <container_name> sh
+container images with your team. Learn more andi findi images
+Fetch and follow the logs of a container:
+at httpsi/hub.docker.com
+docker logs -f <container_name>
+Login into Docker
+Toi inspect ar running container:
+docker login -u <username>
+docker inspect <container_name> (or <container_id>)
+Publish an image tol Docker Hub
+To list currently running containers:
+docker push <username>/kimage_name>
+docker ps
+Search Hub for an image
+List all docker containers (running and stopped):
+docker search <image_name>
+docker ps --all
+Pull ani image from a Docker Hub
+View resource usage stats
+docker pull <image_name>
+docker container stats

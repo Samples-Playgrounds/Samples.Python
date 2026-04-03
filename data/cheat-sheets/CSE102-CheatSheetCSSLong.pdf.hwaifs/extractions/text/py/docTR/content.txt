@@ -1,0 +1,1259 @@
+-
+T
+Cheat'Sheet
+Cascading Style Sheets
+(CSS 3)
+Powered by L HOSTINGER
+ I
+www.hostinger.com
+
+
+
+LIST OF CONTENTS
+CONTENT
+PAGE
+CONTENT
+PAGE
+BACKGROUND
+1
+PSUEDO-CLASS
+9
+BORDER
+1
+PSUEDO-ELEMENTS
+9
+TABLE
+1
+UI
+9
+BOX MODEL
+2
+TRANSITIONS
+2
+UNITS
+10
+COLOR
+3
+ANGELS
+10
+FONT
+3
+ABSOLUTE MEASUREMENT
+10
+ANIMATIONS
+4
+COLORS
+10
+COLUMN
+4
+FREQUENCY
+10
+TEXT
+4
+RELATIVE MEASUREMENT
+10
+SPEECH
+5
+TIME
+10
+TEMPLATE LAYOUT
+5
+3D / 2D TRANSFORM
+6
+SELECTOR TYPES
+11
+GRID POSITIONING
+6
+HYPERLINK
+6
+LIST AND MARKERS
+6
+OUTLINE
+6
+GENERATED CONTENT
+7
+POSITIONING
+7
+RUBY
+7
+LINE BOX
+8
+PAGED MEDIA
+8
+Hostinger Tutorials
+ol CSS3 Cheat Sheet
+www.hostinger.com
+
+
+
+BACKGROUND
+BORDER
+background
+background-image
+border
+border-width
+background-position
+border-style
+background-size
+border-color
+background-repeat
+background-attachment
+border-break
+border-width
+background-origin
+border-style
+background-clip
+color
+background-color
+close
+background-attachment scroll I fixed
+border-bottom
+border-bottom-width
+border-style
+background-break
+bounding-box I each-box I
+border-color
+continuous
+border-bottom-color
+border-color
+background-clip
+length
+%
+border-bottom-style
+border-style
+border-box I padding-box I
+content-box I no-clip
+border-bottom-width
+thin I medium I thick
+length
+background-color
+color
+transparent
+border-collapse
+collapse I separate
+background-image
+url
+border-color
+color
+none
+border-image
+image
+background-origin
+border-box I padding-box I
+[number / %
+content-box
+border-width
+stretch I repeat I round ]
+background-position
+top left I top center I top
+none
+right I center left I center
+center I center right
+border-left
+border-left-width
+bottom left I bottom center
+border-style
+I bottom right
+border-color
+x-% y-%
+x-pos y-pos
+border-left-color
+border-color
+background-repeat
+repeat I repeat-x I repeaty
+border-left-style
+border-style
+I no-repeat
+border-left-width
+thin I medium I thick
+background-size
+length
+length
+%
+auto I cover I contain
+border-right
+border-right-width
+border-style
+border-color
+TABLE
+border-right-color
+border-color
+border-right-style
+border-style
+border-collapse
+collapse I separate
+border-right-width
+thin I medium I thick
+border-spacing
+length length
+length
+caption-side
+top I bottom I left I right
+empty-cells
+show I hide
+table-layout
+table-layout auto I fixed
+11 CSS3 Cheat Sheet
+www.hostinger.com
+
+
+
+BORDER
+BOX MODEL
+border-top
+border-top-width
+clear
+left I right I both I none
+border-style
+border-color
+display
+none I inline I block I inlineblock
+I list-item I run-in I
+border-top-color
+border-color
+compact I table I inlinetable
+I table-row-group
+border-top-style
+border-style
+table-header-group I tablefooter-
+group I table-row
+border-top-width
+thin I medium I thick
+table-column-group I tablecolumn
+length
+I table-cell I tablecaption
+I ruby I ruby-base I
+border-width
+thin I medium I thick
+ruby-text I ruby-base-group
+length
+I ruby-text-group
+border-radius
+border-top-right-radius
+float
+left I right I none
+border-bottom-right-radius
+border-bottom-left-radius
+height
+auto
+border-top-left-radius
+length
+%
+border-top-right-radius
+length
+max-height
+none
+border-bottom-right-radius length
+length
+%
+border-bottom-left-radius length
+max-width
+none
+border-top-left-radius
+length
+length
+%
+box-shadow
+inset II [length, length,
+length, length II <color> ]
+min-height
+none I inherit
+none
+length
+%
+border-style
+none I hidden I dotted I I
+dashed I solid I double I
+min-width
+none I inherit
+groove I ridge I inset I
+length
+outset
+%
+width
+auto
+%
+TRANSITIONS
+length
+margin
+margin margin-top
+transition
+transition-property
+margin-right
+transition-duration
+margin-bottom
+transition-timing-function
+margin-left
+transition-delay
+margin-bottom
+auto
+transition-delay
+time
+length
+%
+transition-duration
+time
+margin-left
+auto
+transition-property
+none I all
+length
+%
+transition-timing-function ease I linear I ease-in I
+ease-out I ease-in-out
+margin-right
+auto
+cubic-Bezier (number,
+length
+number, number, number)
+%
+21 CSS3 Cheat Sheet
+www.hostinger.com
+
+
+
+BOX MODEL
+FONT
+margin-top
+auto
+font
+font-style
+length
+font-variant
+%
+font-weight
+font-size/line-height
+padding
+padding padding-top
+font-family
+padding-right
+caption I icon I menu I
+padding-bottom
+message-box I smallcaption
+padding-left
+I status-bar
+padding-bottom
+length
+font-family
+family-name
+%
+generic-family
+inherit
+padding-left
+length
+%
+font-size
+xx-small I x-small I small I
+medium I large I x-large I
+padding-right
+length
+xx-large I smaller I larger I
+%
+inherit
+length
+padding-top
+length
+%
+%
+font-size-adjust
+nonel inherit
+marquee-direction
+forward reverse
+number
+marquee-loop
+infinite
+font-stretch
+normal I wider I narrower I
+number
+ultra-condensed I extracondensed
+I condensed I semi-condensed
+marquee-play-count infinite
+I semiexpanded I expanded I
+integer
+extra-expanded I ultraexpanded
+I inherit
+marquee-speed
+slow I normal I fast
+font-style
+normal I italic I oblique I
+marquee-style
+scroll I slide I alternate
+inherit
+overflow
+visible I hidden I scroll I
+font-variant
+normal I small-caps I inherit
+auto I no-display I nocontent
+overflow-x
+font-weight
+normal I bold I bolder I
+overflow-y
+lighter I 100 I 200 I 300 I
+400 I 500 I 600 I 700 I 800
+overflow-style
+auto I marquee-line I marquee-
+I 900 I inherit
+block
+overflow-x
+visible I hidden scroll
+auto I no-display I nocontent
+COLOR
+overflow-y
+visible I hidden scroll I
+auto I no-display I nocontent
+color
+inherit
+rotation
+angle
+color
+rotation-point
+position (paired value offset)
+opacity
+inherit
+number
+visibility
+visibility visible I hidden I
+collapse
+31CSS3 Cheat Sheet
+www.hostinger.com
+
+
+
+TEXT
+COLUMN
+direction
+ltr I rtl I inherit
+column-count
+auto
+number
+hanging-punctuation none IIstart I end I endedge ]
+column-fill
+auto I balance
+letter-spacing
+normal
+length
+column-gap
+normal
+%
+length
+punctuation-trim
+none I [start I end I adjacent]
+column-rule
+column-rule-width
+column-rule-style
+text-align
+start I end I left I right I
+column-rule-color
+center I justify
+column-rule-color
+color
+text-align-last
+start I end I left I right I
+center I justify
+column-rule-style
+border-style
+text-decoration
+none I underline I overline I
+column-rule-width
+thin I medium I thick
+line-through I blink
+length
+text-emphasis
+none I [[accent I dot I circle
+columns
+column-width
+I disc] [ before I after J?]
+column-count
+text-indent
+length
+column-span
+1 I all
+%
+column-width
+auto
+text-justify
+auto I inter-word I interideograph
+length
+I inter-cluster I distribute I
+kashida I tibetan
+text-outline
+none
+ANIMATIONS
+color
+length
+text-shadow
+none
+animation
+animation-name
+color
+animation-duration
+length
+animation-timing-function
+animation-delay
+text-transform
+none I capitalize I uppercase
+animation-iteration-count
+I lowercase
+animation-direction
+text-wrap
+normal I unrestricted I none
+animation-delay
+time
+I suppress
+animation-direction
+normal I alternate
+unicode-bidi
+normal I embed I bidioverride
+animation-duration
+time
+white-space
+normal I pre I nowrap I prewrap
+I pre-line
+animation-iteration-count inherit
+number
+white-space-collapse preserve I collapse I preserve-
+breaks I discard
+animation-name
+none I IDENT
+word-break
+normal I keep-all I loose I
+animation-play-state
+running I paused
+break-strict I break-all
+animation-timing-function ease I linear I ease-in I
+word-spacing
+normal
+ease-out I ease-in-out I
+length
+cubic-Bezier (number,
+%
+number, number, number)
+word-wrap
+normal I break-word
+4 I CSS3 Cheat Sheet
+www.hostinger.com
+
+
+
+SPEECH
+SPEECH
+cue
+cue-before
+voice-family
+inherit I [<specific-voice,
+cue-after
+age, generic-voice, number> ]
+cue-before
+uri [silent I x-soft I soft
+voice-rate
+x-slow I slow I medium
+medium I loud I x-loud] I
+fast I x-fast I inherit
+none I inherit] ]
+%
+number
+%
+voice-pitch
+x-low I low I medium I high
+I x-high I inherit
+cue-after
+uri [ silent I x-soft I soft I
+number
+medium I loud I x-loud]
+%
+none I inherit ]
+number
+voice-pitch-range
+x-low I low I medium I high
+%
+I x-high I inherit
+number
+mark
+mark-before
+mark-after
+voice-stress
+strong I moderate I none I
+reduced I inherit
+mark-before
+string
+voice-volume
+silent I x-soft I soft I medium
+mark-after
+string
+I loud I x-loud I inherit
+number
+pause
+pause-before
+%
+pause-after
+pause-before
+none I x-weak I weak I
+medium I strong I x-strong
+TEMPLATE
+I inherit
+LAYOUT
+time
+pause-after
+none I x-weak I weak I
+box-align
+start I end I center I base
+medium I strong I x-strong
+I inherit
+box-direction
+normal I reverse
+time
+box-flex
+number
+phonemes string
+string
+box-flex-group
+integer
+rest
+rest-before
+rest-after
+box-lines
+single I multiple
+rest-before
+none I x-weak I weak I
+box-orient
+horizontal I vertical I inlineaxis
+medium I strong I x-strong
+I block-axis
+I inherit
+time
+box-pack
+start I end I center I justify
+rest-after
+none I x-weak I weak I
+box-sizing
+content-box I padding-box I
+medium I strong I x-strong
+border-box I margin-box
+I inherit
+time
+tab-side
+top I bottom I left I right
+speak
+none I normal I spell-out I
+digits I literal-punctuation I
+no-punctuation I inherit
+voice-balance
+left I center I right I leftwards
+I rightwards I inherit
+number
+voice-duration
+time
+51CSS3 Cheat Sheet
+www.hostinger.com
+
+
+
+LIST & MARKERS
+3D /2D
+TRANSFORM
+list-style
+list-style-type
+backface-visibility
+visible I hidden
+list-style-position
+list-style-image
+perspective
+none
+number
+list-style-image
+none
+url
+perspective-origin
+II(percentage> I <length> I
+left I center I right]l
+list-style-position
+Inside I outside
+<percentage> <length> I top
+I center I bottom J?] <length> ]
+list-style-type
+none I asterisks I box I
+IIIfleft I center I right 11I
+check I circle I diamond I
+[top I center I bottom]]
+disc I hyphen I square I
+<length> ]
+decimal I decimal-leadingzero
+I lower-roman I upperroman
+transform
+none I matrix I matrix3d I
+I lower-alpha I upper-
+translate3d I translateX
+alpha I lower-greek
+translateY I translatez I
+lower-latin I upper-latin I
+scale I scale3d I scaleX I
+hebrew I armenian I georgian
+scaleY I scalez I rotate I
+I cjk-ideographic I
+rotate3d I rotateX I rotateY
+hiragana I katakana I hiragana-
+I rotatez I skewX I skewY
+iroha I katakana-iroha
+skew I perspective
+I footnotes
+transform-origin
+Illspercentoge>
+marker-offset
+auto
+<length> I left I center I
+length
+right JE<percentage>
+<length> I top I center I
+bottom J?] <length> 1I
+IIfleft I center I right]ll
+GRID POSITIONING
+[top I center I bottom]]
+<length> 1
+grid-columns
+none inherit
+transform-style
+flat I preserve-3d
+[length percentage relative
+length 1
+grid-rows
+none inherit
+[length percentage relative
+HYPERLINK
+length 1
+target
+target-name
+OUTLINE
+target-new
+target-position
+outline
+outline-color
+target-name
+current I root I parent new
+I modal
+outline-style
+string
+outline-width
+target-new
+window I tab none
+outline-color
+color
+invert
+target-position
+above I behind I front
+back
+outline-offset
+inherit
+length
+outline-style
+None I dotted I dashed
+solid I double I groove I
+ridge I inset I outset
+outline-width
+thin I medium I thick
+length
+61CSS3 Cheat Sheet
+www.hostinger.com
+
+
+
+GENERATED
+GENERATED
+CONTENT
+CONTENT
+bookmark-label
+content
+string-set
+identifier
+attr
+content-list
+string
+text-replace
+none
+bookmark-level
+none
+[<string> <string>]+
+integer
+bookmark-target self
+uri
+POSITIONING
+attr
+border-length
+auto
+length
+bottom
+auto
+%
+content
+normal I none I inhibit
+length
+uri
+clip
+shape
+counter-increment none
+auto
+identifier number
+left
+auto
+counter-reset
+none
+%
+identifier number
+length
+crop
+auto
+position
+static I relative I absolute I fixed
+shape
+right
+auto
+display
+normal I none I I list-item
+%
+length
+float-offset
+length length
+top
+auto
+hyphenate-after
+auto
+%
+integer
+length
+hyphenate-before auto
+z-index
+auto
+integer
+number
+hyphenate-character auto
+integer
+hyphenate-lines
+no-limit
+RUBY
+integer
+hyphenate-resource none
+ruby-align
+auto I start I left I center
+uri
+end I right I distribute-letter
+I distribute-space I lineedge
+hyphens
+none I manual I auto
+ruby-overhang
+auto I start I end I none
+image-resolution
+normal I auto
+dpi
+ruby-position
+before I after I right I inline
+marks
+[crop II cross 11 none
+ruby-span
+attr(x) none
+move-to
+normal I here
+identifier
+page-policy
+start I first I last
+quotes
+none
+string string string string
+71CSS3 Cheat Sheet
+www.hostinger.com
+
+
+
+LINE BOX
+LINE BOX
+alignment-adjust
+auto I baseline I beforeedge
+line-stacking
+line-stacking-strategy
+I text-before-edge I
+line-stacking-ruby
+middle I central I after-edge
+line-stacking-shift
+text-after-edge I ideographic
+I alphabetic I hanging
+line-stacking-strategy inline-line-height I blockline-
+I mathematical
+height I max-height I
+length
+grid-height
+%
+line-stacking-ruby
+exclude-ruby I include-ruby
+alignment-baseline
+baseline I use-script I before-
+edge I text-beforeedge
+line-stacking-shift
+consider-shifts I disregardshifts
+I after-edge I textafter-
+edge I central I middle
+text-height
+auto I font-size I text-size I I
+I ideographic I alphabetic I
+max-size
+hanging I mathematical
+vertical-align
+Baseline I sub I super I top
+baseline-shift
+baseline I sub I super
+I text-top I middle I bottom
+length
+text-bottom
+%
+length
+%
+dominant-baseline
+auto I use-script I nochange
+reset-size I alphabetic
+I hanging I ideographic
+I mathematical I
+PAGED MEDIA
+central I middle I text-after-
+edge I text-before-edge
+drop-initial-after-align alignment-baseline
+fit
+fill I hidden I meet I slice
+drop-initial-after-adjust central I middle I after-edge
+fit-position
+[top I center I bottom] II
+text-after-edge I ideographic
+[left I center I right]
+I alphabetic I
+length
+%
+mathematical
+length
+%
+image-orientation auto
+angle
+drop-initial-before-align caps-height
+alignment-baseline
+orphans
+integer
+drop-initial-before-adjust before-edge I text-beforeedge
+page
+auto
+I central I middle I
+identifier
+hanging I mathematical
+length
+page-break-after
+auto I always I avoid left I
+%
+right
+drop-initial-value
+initial
+page-break-before auto I always I avoid I left I
+integer
+right
+drop-initial-size
+auto
+page-break-inside auto I avoid
+integer
+%
+size
+auto I landscape I portrait
+line
+length
+inline-box-align
+initial I last
+windows
+integer
+integer
+line-height
+normal
+number
+length
+%
+81CSS3 Cheat Sheet
+www.hostinger.com
+
+
+
+UI
+PSEUDO-CLASS
+appearance
+normal I inherit I [icon I
+:active
+an activated element
+window I desktop I workspace
+I document I tooltip I dialog I
+:focus
+an element while the element
+button I pushbutton I hyperlink
+has focus
+I radiobutton I checkbox I
+:visited
+a visited link
+menuitem I tab I menu I menubar
+I pull-down-menu I pop-up-menu
+:hover
+an element when you mouse over it
+I list-menu I radio-group I
+checkboxgroup I outline-tree I
+:link
+an unvisited link
+range I field I combo-box I
+signature I password]
+:disabled
+an element while the element
+is disabled
+cursor
+auto I crosshair I default I pointer
+I move I e-resize I ne-resize I
+:enabled
+an element while the element
+is enabled
+nw-resize I nresize I se-resize
+sw-resize I s-resize I w-resize I
+:checked
+an element (form element control)
+text I wait I help
+that is checked
+url
+:selection
+an element that is currently
+icon
+auto I inherit
+selected of highlighted by
+url
+the user
+nav-index
+auto I inherit
+:lang
+Allows the author to specify
+a language to use in a specified
+number
+element
+nav-up
+auto I inherit
+:nth-child(n)
+an element that is the n-th sibling
+<id> [ current I root
+<target-name> ]
+inth-last-child(n) an element that is the n-th sibling
+counting from the last sibling
+nav-right
+auto I inherit
+<id> [ current root
+:first-child
+an element that is the first sibling
+<target-name> 1
+:last-child
+an element that is the last sibling
+nav-down
+auto I inherit
+:only-child
+an element that is the only child
+<id> [ current I root I
+<target-name> ]
+inth-of-type(n)
+an element that is the n-th sibling
+of its type.
+nav-left
+auto I inherit
+<id> current I root I
+inth-last-of-type(n) an element that is the n-th sibling
+[
+II
+of its type counting from the last
+<target-name> ]
+sibling
+resize
+none I both I horizontal I
+:last-of-type
+an element that is the first sibling
+vertical I inherit
+of its type
+:first-of-type
+an element that is the last sibling
+of its type
+PSEUDO-ELEMENT
+:only-of-type
+an element that is the only
+child of that type
+:first-letter
+Adds special style to the first
+letter of a text
+:empty
+an element that has no children
+::first-line
+Adds special style to the first
+:root
+root element within the document
+line of a text
+:not(x)
+an element not represented
+by the argument 'x'
+::before
+Inserts some content before
+an element
+:target
+a target element as specified
+by a target in a URI
+:after
+Inserts some content after an
+element
+9 I CSS3 Cheat Sheet
+www.hostinger.com
+
+
+
+UNITS
+ABSOLUTE
+FREQUENCY
+MEASUREMENT
+%
+percentage
+Hz
+hertz
+cm
+centimeter
+kHz
+kilo-hertz
+in
+inch
+mm
+millimeter
+TIME
+pc
+pica (1p = 12 points)
+pt
+point (1pt = 1/72 inch)
+ms
+milli-seconds
+seconds
+RELATIVE
+MEASUREMENT
+COLORS
+ch
+width of the "0" glyph found in
+the font for the font size used to
+color name
+red, blue, green, dark green
+render
+rgb(x,y,z)
+red = rgb(255,0,0)
+em
+1em = current font size of
+current element
+rgb(x%.y96,2%6)
+red = rgb(100%,0,0)
+ex
+x-height of the element's font
+rgba(x,y,Z, alpha)
+red = rgba(255,0,0)
+gd
+the grid defined by 'layout-grid'
+#rrggbb
+red = #ff0000 (or shorthand =
+#f00)
+px
+pixel of the viewing device
+hsl(hue, saturation, red = hsl0, 100%, 50%)
+rem
+the font size of the root element
+lightness)
+vh
+the viewport's height
+hsla(hue, saturation, red = hsl(0, 100%, 50%)
+lightness, alpha)
+VW
+the viewport's width
+flavor
+An accent color (typically chosen
+vm
+viewport's height or width,
+by the user) to customize the
+whichever is smaller of the two
+user interface of the user agent
+itself
+currentColor
+computed value of the
+'currentColor' keyword is the
+ANGLES
+computed value of the 'color'
+property
+deg
+degrees
+grad
+grads
+rad
+radians
+turn
+turns
+10 ICSS3 Cheat Sheet
+www.hostinger.com
+
+
+
+SELECTOR TYPES
+Name
+Info
+Example
+Universal
+Any element
+*(f font: 10px Arial; }
+Type
+Any element of that type
+h1 { text-decoration:
+underline; }
+Grouping
+Multiple elements of different types
+h1, h2, h3 ( font-family: Verdana; }
+Class
+Multiple elements of different types
+.sampleclass (textdecoration:
+when you don't want to affect all
+underline; }
+instances of that type
+Id
+A: single element type when you don't
+#sampleid i textdecoration:
+want to affect all instances of that type
+underline; }
+Descendant
+An element that is below (in the
+#gallery h1 (textdecoration:
+document tree) another element-no
+underline; }
+matter how many levels below
+Child
+An element that is directly below
+#title > p(font-weight: bold; }
+(in the document tree) another element
+Adjacent
+All elements that share the same parent
+h1 + pi font-style: italic; }
+Sibling
+and elements are in the same immediate
+sequence
+General
+All elements that share the same parent
+h1 - p(font-style: italic; }
+Sibling
+and elements are in the same sequence
+(not necessarily immediate)
+Attribute
+An element with that matches
+E[selected] att whatever the value
+the attribute listed
+E[att="val"] att with a specific value
+E[rel-="next"]- att with a value is
+a whitespace separated list
+*[lang/="en"]- att value either
+being exactly "val" or beginning
+with "val" immediately followed
+by "-'
+ElattA="val"] - att value that
+begins with the prefix "val"
+E[attS="val"] - att value that end
+with the suffix "val"
+Elatt*="val"] att value
+contains at least one instance
+of the substring "val"
+-
+11 - CSS3 Cheat Sheet
+www.hostinger.com

@@ -1,0 +1,236 @@
+Search and replace
+18T
+Reopen closed editor
+Visual Studio Code
+8K Enter
+Keep preview mode editor open
+8F
+Find
+*Tabl' MTab
+Open next/ previous
+Keyboard shortcuts for macos
+-8F
+Replace
+8K P
+Copy path of active file
+88G/18G
+Find next/previous
+K R
+Reveal active file in Finder
+-=Enter
+Select all occurrences of Find match
+%K O
+Show active file in new window/instance
+General
+D
+Add selection to next Find match
+K D
+Move last selection to next Find match
+18P, F1
+Show Command Palette
+Display
+dP
+Quick Open, Go to File...
+Rich languages editing
+AOBF
+Toggle full screen
+1N
+New window/instance
+-880
+Toggle editor layout (horizontal/vertical)
+gW
+Close window/instance
+*Space, 8I
+Trigger suggestion
+88=/188-
+Zoom in/out
+88,
+User Settings
+1Space
+Trigger parameter hints
+%B
+Toggle: Sidebar visibility
+K S
+Keyboard Shortcuts
+t-F
+Format document
+18E
+Show Explorer / Toggle focus
+K 9F
+Format selection
+188F
+Show Search
+Basic editing
+F12
+Go to Definition
+MG
+Show Source Control
+-F12
+Peek Definition
+188D
+Show Debug
+*X
+Cut line (empty selection)
+K F12
+Open Definition to the side
+18X
+Show Extensions
+8C
+Copy line (empty: selection)
+%.
+Quick Fix
+18H
+Replace in files
+El/t
+Move line down/up
+1F12
+Show References
+188J
+Toggle: Search details
+1-1/1-t
+Copy line down/up
+F2
+Rename Symbol
+188U
+Show Output panel
+188K
+Deletel line
+BK g8X
+Trim trailing whitespace
+18V
+Open Markdown preview
+WEnter / 1%Enter Insert line below/above
+K M
+Change filel language
+8K V
+Open Markdown preview to the side
+1881
+Jump to matching bracket
+K Z
+Zen Mode (Esc Esc to exit)
+98]/ 8[
+Indent/outdent line
+Navigation
+Home / End
+Go to beginning/end ofl line
+8811 1881
+Go to beginning/end off file
+%T
+Show all Symbols
+Debug
+*PgUp I *PgDn
+Scroll line up/down
+"G
+Go to Line...
+F9
+Toggle breakpoint
+PgUp 18PgDn Scroll page up/down
+*P
+Go tol File...
+F5
+Start/Continue
+-88[ / -98]
+Fold/unfold region
+1%0
+Go to Symbol...
+F11/1F11
+Step into/ out
+K 8[ I K 88] Fold/unfold all subregions
+18M
+Show Problems panel
+F10
+Step over
+K %0 I 8K A8J Fold/unfold all regions
+F8/1F8
+Go to next/previous error or warning
+1F5
+Stop
+K %C
+Add line comment
+MTab
+Navigate editor group history
+K 8I
+Show hover
+88K 8U
+Removel line comment
+A-IM-
+Go back/forward
+88/
+Toggle line comment
+MOM
+Toggle Tab moves focus
+Integrated terminal
+tr=A
+Toggle block comment
+-Z
+Toggle word wrap
+Editor management
+A
+Showi integrated terminal
+nO
+Create new terminal
+W
+Close editor
+88C
+Multi-cursor and selection
+Copy selection
+KI F
+Close folder
+88111
+Scroll up/down
+T+ click
+Insert cursor
+881
+Split editor
+PgUp PgDn
+Scroll page up/down
+-8t
+Insert cursor above
+981/8 98218 983
+Focus into 1st, 2nd, 3rd editor group
+Home / End
+Scroll to top/bottom
+-881
+Insert cursor below
+K 88+188K 98- Focus into previous/next editor group
+9BU
+Undo last cursor operation
+8K 188e1 8K 188- Move editor left/right
+thel
+Insert cursor at end of each line selected
+8K t1 K +
+Move active editor group
+AL
+Select current line
+188L
+Select all occurrences of current selection
+File management
+9F2
+Select all occurrences of current word
+m-lt
+Expand /shrink selection
+SN
+New File
+te + drag mouse Column (box) selection
+8O
+Open File...
+1-88111
+Column (box) selection up/down
+88S
+Save
+1-88+1-
+Column (box) selection left/right
+1S
+Save As...
+1-8PgUp
+Column (box) selection page up
+--88S
+Save All
+Other operating systems' keyboard shortcuts and additional
+1-8PgDn
+Column (box) selection page down
+W
+Close
+unassigned shortcuts available at aka.ms/vscodekeybindings
+K W
+Close All

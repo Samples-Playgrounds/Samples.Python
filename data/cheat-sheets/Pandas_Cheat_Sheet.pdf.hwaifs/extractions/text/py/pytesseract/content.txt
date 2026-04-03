@@ -1,0 +1,561 @@
+Tidy Data — A foundation for wrangling in pandas
+
+Fi/M/ A Tidy data complements pandas’s vectorized M * FF.
+
+operations. pandas will automatically preserve —
+observations as you manipulate variables. No — ——-
+
+other format works as intuitively with pandas. M k A
+
+Data Wrangling
+with pandas Cheat Sheet natidy +
+http://pandas.pydata.org data set: + 7 7
+
+Pandas API Reference Pandas User Guide Each variable is saved Each observation is
+in its own column saved in its own row
+
+Creating DataFrames Resha ping Data -— Change layout, sorting, reindexing, renaming
+
+df.sort values('mpg' )
+Order rows by values of a column (low to high).
+
+df.sort values('mpg', ascending=False)
+Order rows by values of a column (high to low).
+
+= pd.DataFrame(  aileeae
+{"a" : [4, 5, 6], pe meet ) df.pivot(columns='var', values='val')
+"b" : [7, 8, 9], atner columns Into rows. Spread rows into columns.
+
+index = {hd 31) a _ df sort index()
+Tex = ! 31) Sort the index of a DataFrame
+Specify values for each column.
+
+df.rename(columns = {'y': 'year'})
+Rename the columns of a DataFrame
+
+| ht SC |} ht SC df.reset_index()
+
+df = pd.DataFrame( Reset index of DataFrame to row numbers, moving
+[[4, 7, 10], index to columns.
+
+[5, 8, 11], pd.concat([df1,d2]) pd.concat([df1,df2], axis=1) df.drop(columns=['Length', 'Height'])
+
+[6, 9, 12]]
+index=[1, 2, ; 3], Append rows of DataFrames Append columns of DataFrames DroplcolurnenronDaraeramne
+
+columns=['a', 'b', 'c'])
+Specify values for each row. Subset Observations - rows Subset Variables - columns Subsets - rows and columns
+
+ss ee ee — Usedf.loc[ ] anddf.iloc[] to select only
+
+ee ee ee IJ - rows, only columns or both.
+ee ee
+aa Usedf.at[] anddf.iat[] to access asingle
+df[df.Length > 7] df[['width', ‘length', '‘species' ] | value by row and column.
+Extract rows that meet logical criteria. Select multiple columns with specific names. First index selects rows, second index columns.
+df.drop duplicates f[ "width' f width .
+3 Q | df[ width’ ] or df.width df .iloc[10:20]
+df = pd Stu Remove duplicate rows (only considers columns). Select single column with specific name. —
+—— . ; ' Select rows 10-20.
+{"a" : [4 ,5, 6], df.sample(frac=0.5) df.filter(regex='regex' ) ;
+nun . df.iloc[:, [1, 2, 5]]
+b" : [7, 8, 9], Randomly select fraction of rows. Select columns whose name matches Select | ; ti 1.2 and5 (first
+"ce" : [10, 11, 12]}, df.sample(n=10) Randomly select n rows. regular expression regex. olumn iso). positions 1, 2 and 5 (firs
+index = pd. memeelviaeere from tuples ( df.nlargest(n, ‘value’ ) ; df. loc[: 2's x4]
+[('d', 1), ('d', 2), Select and order top n entries. Using query ee "
+ta! rte Select all columns between x2 and x4 (inclusive).
+('e', 2)], names=['n', 'v'])) df.nsmallest(n, ‘value’ ) ‘lows Bool ‘ons for filter} df.loc[df['a’] > 10, ['a’, ‘c']]
+Create DataFrame with a Multilndex Select and order bottom n entries. query() allows Boolean expressions for filtering —— . ”
+df zhead(n) rows. Select rows meeting logical condition, and only
+Select first n rows df.query("Length > 7") the specific columns .
+Method Chaining df.tail(n) df.query('Length > 7 and Width < 8") df.iat[1, 2] Access single value by index
+df .query('Name.str.startswith("abc")', df.at[4, 'A'] Access single value by label
+
+Select last n rows. . 1 1
+engine="python" )
+
+Logic in Python (and pandas) regex (Regular Expressions) Examples
+
+Greater than df.column.isin(vaLues) Group membership "Length$' Matches strings ending with word 'Length'
+
+Most pandas methods return a DataFrame so that
+another pandas method can be applied to the result.
+This improves readability of code.
+= (pd.melt(df)
+. rename (columns={
+"variable':'var',
+‘value’: 'val'})
+.query('val >= 200')
+
+Sco See) Maher ns ern wh ie word ea
+Less than or equals pd.notnull(ob7) "A4x[1-5]$' Matches strings beginning with 'x' and ending with 1,2,3,4,5
+Greater than or equals )}&,|,~,*,df.any(),df.all() | Logical and, or, not, xor, any, all "4(? !Species$) .*' Matches strings except the string 'Species'
+
+Cheatsheet for pandas (http://pandas. pydata.org/ originally written by Irv Lustig, Princeton Consultants, inspired by Rstudio Data Wrangling Cheatsheet
+
+df .groupby(by="col")
+Return a GroupBy object, grouped
+by values in column named "col".
+
+df.groupby(level="ind" )
+Return a GroupBy object, grouped
+by values in index level named
+"ind".
+
+All of the summary functions listed above can be applied to a group.
+Additional GroupBy functions:
+size()
+
+Size of each group.
+
+agg(function)
+Aggregate group using function.
+
+Summarize Data
+
+df['w'].value counts()
+
+Count number of rows with each unique value of variable
+len(df)
+
+# of rows in DataFrame.
+df.shape
+
+Tuple of # of rows, # of columns in DataFrame.
+df[ 'w'].nunique()
+
+# of distinct values in a column.
+df.describe()
+
+Basic descriptive and statistics for each column (or GroupBy).
+df.info()
+
+Prints a concise summary of the DataFrame.
+
+df.memory usage()
+Prints the memory usage of each column in the DataFrame.
+
+df .dtypes()
+Prints a Series with the dtype of each column in the DataFrame.
+Pe; TT a
+[J
+[|
+[J
+
+pandas provides a large set of summary functions that operate on
+different kinds of pandas objects (DataFrame columns, Series,
+GroupBy, Expanding and Rolling (see below)) and produce single
+values for each of the groups. When applied to a DataFrame, the
+result is returned as a pandas Series for each column. Examples:
+
+sum() min()
+Sum values of each object. Minimum value in each object.
+count () max()
+Count non-NA/null values of Maximum value in each object.
+each object. mean()
+median() Mean value of each object.
+Median value of each object. var()
+quantile([@.25,0.75]) Variance of each object.
+Quantiles of each object. std()
+apply(function) Standard deviation of each
+Apply function to each object. object.
+
+The examples below can also be applied to groups. In this case, the
+function is applied on a per-group basis, and the returned vectors
+are of the length of the original DataFrame.
+
+shift (1) shift (-1)
+Copy with values shifted by 1.
+rank(method='dense' )
+Ranks with no gaps.
+rank(method=' min’ )
+Ranks. Ties get min rank.
+rank(pct=True)
+Ranks rescaled to interval [0, 1].
+rank(method=' first" )
+Ranks. Ties go to first value.
+
+cumsum( )
+Cumulative sum.
+
+cummax ( )
+Cumulative max.
+
+cummin ( )
+Cumulative min.
+
+cumprod()
+Cumulative product.
+
+Handling Missing Data
+
+df .dropna()
+Drop rows with any column having NA/null data.
+
+df.fillna(value)
+Replace all NA/null data with value.
+
+Make New Columns
+
+df.assign(Area=lambda df: df.Length*df.Height)
+Compute and append one or more new columns.
+
+df[ 'Volume'] = df.Length*df.Height*df.Depth
+Add single column.
+
+pd.gcut(df.col, n, labels=False)
+Bin column into n buckets.
+
+Vector
+
+function
+
+pandas provides a large set of vector functions that operate on all
+columns of a DataFrame or a single selected column (a pandas
+Series). These functions produce vectors of values for each of the
+columns, or a single Series for the individual Series. Examples:
+min(axis=1)
+
+Element-wise min.
+
+max(axis=1)
+Element-wise max.
+
+clip(lower=-10,upper=10) abs()
+Trim values at input thresholds Absolute value.
+
+df.expanding()
+Return an Expanding object allowing summary functions to be
+
+applied cumulatively.
+
+df.rolling(n)
+Return a Rolling object allowing summary functions to be
+applied to windows of length n.
+
+Cheatsheet for pandas (http://pandas.pydata.org/) originally written by Irv Lustig, Princeton Consultants, inspired by Rstudio Data Wrangling Cheatsheet
+
+Copy with values lagged by 1.
+
+Combine Data Sets
+
+Standard Joins
+
+xd | x2 | x3 pd.merge(adf, bdf,
+A 1 T how='left', on='x1')
+
+7
+
+C 3 NaN
+
+St 2S pd.merge(adf, bdf,
+
+how='right', on='x1")
+Join matching rows from adf to bdf.
+
+Join matching rows from bdf to adf.
+
+22 pd.merge(adf, bdf,
+
+how='inner', on='x1")
+Bo 2 FO Join data. Retain only rows in both sets.
+
+pe) pd.merge(adf, bdf,
+
+how="outer', on='x1')
+8 : FF Join data. Retain all values, all rows.
+C 3 NaN
+
+adf[adf.x1.isin(bdf.x1) ]
+All rows in adf that have a match in bdf.
+
+adf[~adf.x1.isin(bdf.x1) ]
+All rows in adf that do not have a match in bdf.
+
+pd.merge(ydf, zdf)
+Rows that appear in both ydf and zdf
+(Intersection).
+
+pd.merge(ydf, zdf, how='outer' )
+Rows that appear in either or both ydf and zdf
+(Union).
+
+pd.merge(ydf, zdf, how='outer',
+indicator=True)
+.query('_merge == "left_only"')
+.drop(columns=['_merge' ] )
+Rows that appear in ydf but not zdf (Setdiff).
+Plotting
+
+df .plot.scatter(x='w', y="h')
+Plot a scatter graph of the DataFrame.
+
+df .plot()
+Plot a line graph for the DataFrame.
+
+all.
+
+df .plot.bar()
+Plot a line graph for the DataFrame.
+
+df .plot(subplots=True)
+Separate into different graphs for each column in
+the DataFrame.
+
+df.plot(title=“Graph of A against B”)
+Sets the title of the graph.
+
+a
+* sehe ot
+ome .
+.
+° s: ee en
+© We Of, 5°
+
+“tame 6
+
+df .plot.boxplot()
+Plot a scatter graph of the DataFrame.
+
+df .plot(bins=3@)
+
+(histograms)
+
+df .plot(subplots=True, title=['col1', ‘col2', ‘'col3'])
+Arguments can be combined for more flexibility when graphing, this would plot a separate line graph for of column of a 3-columned DataFrame. The first string in the
+list of titles applies to the graph of the left-most column.
+
+Changing Type
+
+pd.to numeric(data)
+Convert non-numeric types to
+numeric.
+
+pd.to datetime(data)
+Convert non-datetime types to
+datetime type
+
+pd.to timedelta(data)
+Convert non- timedelta types to
+timedelta
+
+df.astype(type)
+Convert data to (almost) any given
+type including categorical
+df.infer_objects()
+Attempts to infer a better type for
+object type data.
+df.convert dtypes()
+Convert columns to best possible
+dtypes
+
+Datetime
+
+With a Series containing data of type
+datetime, the dt accessor is used to get
+various components of the datetime
+values:
+
+s.dt.day
+
+Extract the day (int) from the date.
+s.dt.quarter
+
+Find which quarter the date lies in.
+s.dt.hour
+
+Extract the hour.
+s.dt.year
+
+Extract the year
+s.dt.month
+Extract the month as an integer.
+
+s.dt.minute
+Extract the minute.
+
+s.dt.second
+Extract the second.
+
+Mapping
+
+Apply a mapping to every element in a DataFrame or Series, useful for
+recategorizing or transforming data.
+
+s.map(lambda x: 2*x)
+Returns a copy of the series where every entry is doubled
+df.apply(lambda s: s.max() - s.min(), axis=1)
+Returns a Series with the difference of the maximum and minimum values of
+each row of the DataFrame
+
+df .plot(cumulative=True)
+Creates a cumulative plot
+
+Set the number of bins into which data is grouped
+
+df.plot.hist() df .plot.pie()
+Plot a histogram of the DataFrame. Plot a pie chart of the DataFrame.
+
+as £ vn a eneery
+et
+—
+
+20
+
+8
+
+: mercury
+
+10
+
+5
+
+“a 1 2 2 2 * on
+
+df .plot.area() df .plot.hexbin()
+Plot an area graph of the DataFrame. Plot ahexbin graph of the DataFrame.
+
+me anon
+ee nen
+ue
+ot
+m
+™
+.
+2: 8 © & we mS me ofS
+
+df .plot(stacked=True)
+Stacks the data for the columns on top of each
+other. (bar, barh and area only)
+
+df .plot(alpha=@.5)
+Sets the transparency of the plot to 50%.
+
+Series String Operations
+
+Similar to python string operations, except these are vectorized to apply to the
+
+entire Series efficiently.
+s.str.count (pattern)
+
+Returns a series with the integer
+counts in each element.
+s.str.get(index)
+Returns a series with the data at the
+given index for each element.
+s.str.join(sep)
+Returns a series where each element
+has been concatenated.
+s.str.title()
+Converts the first character of each
+word to be a capital.
+s.str.len()
+Returns a series with the lengths of
+each element.
+
+s.str.cat()
+Concatenate elements into a single
+string
+s.str.partition(sep)
+Splits the string on the first instance
+of the separator
+s.str.slice(start, stop,
+step)
+Slices each string
+s.str.replace(pat, rep)
+Use regex to replace patterns in each
+string.
+s.str.isalnum()
+Checks whether each element is
+alpha-numeric
+
+Input/Output
+
+Common file types for data input include CSV, JSON, HTML which are human-
+readable, while the common output types are usually more optimized for
+performance and scalability such as feather, parquet and HDF.
+
+df = pd.read csv(filepath)
+Read data from csv file
+
+df = pd.read html(filepath)
+Read data from html file
+
+df = pd.read excel(filepath)
+Read data from xls (and related) files
+
+df = pd.read sql(filepath)
+Read data from sql file
+
+pd.read clipboard()
+Read text from clipboard
+
+df.to parquet(filepath)
+Write data to parquet file
+
+df.to feather(filepath)
+Write data to feather file
+
+df.to hdf(filepath)
+Write data to HDF file
+
+df.to clipboard()
+Copy object to the system clipboard
+
+Frequently Used
+Options
+
+Pandas offers some ‘options’ to globally
+control how Pandas behaves, display etc.
+Options can be queried and set via:
+pd.options.option_name (where
+option_name is the name of an option). For
+example:
+pd.options.display.max_rows = 20
+Set the display .max_rows option to 20.
+
+Functions
+get_option(option)
+Fetch the value of the given option.
+set_option(option)
+Set the value of the given option.
+reset _option(options)
+Reset the values of all given options to
+default settings.
+
+describe option(options)
+Print descriptions of given options.
+
+option context(options )
+Execute code with temporary option
+settings that revert to prior settings after
+execution.
+
+display .max_rows
+The maximum number of rows displayed
+in pretty-print.
+display.max_columns
+The maximum number of columns
+displayed in pretty-print.
+display.expand_frame_repr
+Controls whether the DataFrame
+representation stretches across pages.
+display.large repr
+Controls whether a DataFrame that
+exceeds maximum rows/columns is
+truncated or summarized
+display.precision
+The output display precision in decimal
+places.
+display.max_colwidth
+The maximum width of columns, longer
+cells will be truncated.
+display.max_info_columns
+The maximum number of columns
+displayed after calling info().
+display.chop_threshold
+Sets the rounding threshold to zero when
+displaying a Series/DataFrame.
+display.colheader_justify
+Controls how column headers are justified.
+
