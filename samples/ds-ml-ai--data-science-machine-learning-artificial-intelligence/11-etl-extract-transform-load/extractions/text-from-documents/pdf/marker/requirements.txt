@@ -6,7 +6,7 @@ brotli==1.2.0
 certifi==2026.2.25
 cffi==2.0.0
 cfgv==3.5.0
-charset-normalizer==3.4.6
+charset-normalizer==3.4.7
 click==8.3.1
 cobble==0.1.4
 codetiming==1.4.0
@@ -23,9 +23,9 @@ fonttools==4.62.1
 fsspec==2026.3.0
 ftfy==6.3.1
 google-auth==2.49.1
-google-genai==1.69.0
+google-genai==1.70.0
 h11==0.16.0
-hf-xet==1.4.2
+hf-xet==1.4.3
 httpcore==1.0.9
 httpx==0.28.1
 huggingface_hub==0.36.2
@@ -47,7 +47,7 @@ numpy==2.4.4
 openai==1.109.1
 opencv-python-headless==4.11.0.86
 openpyxl==3.1.5
-orjson==3.11.7
+orjson==3.11.8
 packaging==26.0
 pdftext==0.6.3
 pillow==10.4.0
@@ -68,7 +68,7 @@ python-pptx==1.0.2
 PyYAML==6.0.3
 RapidFuzz==3.14.3
 regex==2024.11.6
-requests==2.33.0
+requests==2.33.1
 safetensors==0.7.0
 scikit-learn==1.8.0
 scipy==1.17.1

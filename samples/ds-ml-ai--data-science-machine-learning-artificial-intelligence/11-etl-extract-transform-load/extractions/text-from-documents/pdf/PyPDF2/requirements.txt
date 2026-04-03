@@ -1,7 +1,7 @@
 codetiming==1.4.0
-orjson==3.11.7
+orjson==3.11.8
 packaging==26.0
-pillow==12.1.1
+pillow==12.2.0
 PyPDF2==3.0.1
 pytesseract==0.3.13
 timer==0.3.0
