@@ -1,0 +1,58 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>public async Task OnGracePeriodElapsedAsync()</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>var statusChanged = await TryUpdateOrderStatusAsync(</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>OrderStatus.Submitted, OrderStatus.AwaitingStockValidation);</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>if (statusChanged)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>var order = await StateManager.GetStateAsync&lt;Order&gt;(OrderDetailsStateName);</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>await _eventBus.PublishAsync(new</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>OrderStatusChangedToAwaitingStockValidationIntegrationEvent(</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>OrderId,</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>OrderStatus.AwaitingStockValidation.Name,</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>"Grace period elapsed; waiting for stock validation.",</td>
+    </tr>
+  </tbody>
+</table>

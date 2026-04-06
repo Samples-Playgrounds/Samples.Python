@@ -1,0 +1,28 @@
+,public class GlobalSetting
+0,{
+1,...
+2,public string BaseEndpoint
+3,{
+4,get { return _baseEndpoint; }
+5,set
+6,{
+7,_baseEndpoint = value;
+8,UpdateEndpoint(_baseEndpoint);
+9,}
+10,}
+11,...
+12,
+13,private void UpdateEndpoint(string baseEndpoint)
+14,{
+15,"RegisterWebsite = string.Format(""{0}:5105/Account/Register"", baseEndpoint);"
+16,"CatalogEndpoint = string.Format(""{0}:5101"", baseEndpoint);"
+17,"OrdersEndpoint = string.Format(""{0}:5102"", baseEndpoint);"
+18,"BasketEndpoint = string.Format(""{0}:5103"", baseEndpoint);"
+19,"IdentityEndpoint = string.Format(""{0}:5105/connect/authorize"", baseEndpoint);"
+20,"UserInfoEndpoint = string.Format(""{0}:5105/connect/userinfo"", baseEndpoint);"
+21,"TokenEndpoint = string.Format(""{0}:5105/connect/token"", baseEndpoint);"
+22,"LogoutEndpoint = string.Format(""{0}:5105/connect/endsession"", baseEndpoint);"
+23,"IdentityCallback = string.Format(""{0}:5105/xamarincallback"", baseEndpoint);"
+24,"LogoutCallback = string.Format(""{0}:5105/Account/Redirecting"", baseEndpoint);"
+25,}
+26,}

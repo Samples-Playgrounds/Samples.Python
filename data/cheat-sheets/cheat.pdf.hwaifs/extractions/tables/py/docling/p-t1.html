@@ -1,0 +1,118 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Theoretical Computer Science Cheat Sheet.Definitions</th>
+      <th>Theoretical Computer Science Cheat Sheet.Definitions</th>
+      <th>Theoretical Computer Science Cheat Sheet.</th>
+      <th>Theoretical Computer Science Cheat Sheet.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>f ( n ) = O ( g ( n ))</td>
+      <td>iff ∃ positive c,n 0 such that 0 ≤ f ( n ) ≤ cg ( n ) ∀ n ≥ n 0 .</td>
+      <td>Series n ∑ i =1 i = n ( n +1) 2 , n ∑ i =1 i 2 = n ( n +1)(2 n +1) 6 , n ∑ i =1 i 3 = n 2 ( n +1) 2 4 . In general: n ∑ i =1 i m = 1 m +1 [ ( n +1) m +1 - 1 - n ∑ i =1 ( ( i +1) m +1 - i m +1 - ( m +1) i m ) ] n - 1 ∑ i =1 i m = 1 m +1 m ∑ k =0 ( m +1 k ) B k n m +1 - k . Geometric series: n ∑ i =0 c i = c n +1 - 1 c - 1 , c = 1 , ∞ ∑ i =0 c i = 1 1 - c , ∞ ∑ i =1 c i = c 1 - c , | c | &lt; 1 , n ∑ i =0 ic i = nc n +2 - ( n +1) c n +1 + c ( c - 1) 2 , c = 1 , ∞ ∑ i =0 ic i = c (1 - c ) 2 , | c | &lt; 1 Harmonic series: H n = n ∑ i =1 1 i , n ∑ i =1 iH i = n ( n +1) 2 H n - n ( n - 1) 4 . n ∑ i =1 H i = ( n +1) H n - n, n ∑ i =1 ( i m ) H i = ( n +1 m +1 )( H n +1 - 1 m +1 ) . 1. ( n k ) = n ! ( n - k )! k ! , 2. n ∑ k =0 ( n k ) = 2 n , 3. ( n k ) = ( n n - k ) , 4. ( n k ) = n k ( n - 1 k - 1 ) , 5. ( n k ) = ( n - 1 k ) + ( n - 1 k - 1 ) , 6. ( n m )( m k ) = ( n k )( n - k m - k ) , 7. n ∑ k =0 ( r + k k ) = ( r + n +1 n ) , 8. n ∑ k =0 ( k m ) = ( n +1 m +1 ) , 9. n ∑ k =0 ( r k )( s n - k ) = ( r + s n ) , 10. ( n k ) = ( - 1) k ( k - n - 1 k ) , 11. { n 1 } = { n n } = 1 , 12. { n 2 } = 2 n - 1 - 1 , 13. { n k } = k { n - 1 k } + { n - 1 k - 1 } , - 1)! H n - 1 , 16. [ n n ] = 1 , 17. [ n k ] ≥ { n k } , n } = [ n ] = ( n ) , 20. n ∑ [ n ] = n ! , 21. C = 1 ( 2 n ) ,</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>f ( n ) = Ω( g ( n ))</td>
+      <td>iff ∃ positive c,n 0 such that f ( n ) ≥ cg ( n ) ≥ 0 ∀ n ≥ n 0 .</td>
+      <td>Series n ∑ i =1 i = n ( n +1) 2 , n ∑ i =1 i 2 = n ( n +1)(2 n +1) 6 , n ∑ i =1 i 3 = n 2 ( n +1) 2 4 . In general: n ∑ i =1 i m = 1 m +1 [ ( n +1) m +1 - 1 - n ∑ i =1 ( ( i +1) m +1 - i m +1 - ( m +1) i m ) ] n - 1 ∑ i =1 i m = 1 m +1 m ∑ k =0 ( m +1 k ) B k n m +1 - k . Geometric series: n ∑ i =0 c i = c n +1 - 1 c - 1 , c = 1 , ∞ ∑ i =0 c i = 1 1 - c , ∞ ∑ i =1 c i = c 1 - c , | c | &lt; 1 , n ∑ i =0 ic i = nc n +2 - ( n +1) c n +1 + c ( c - 1) 2 , c = 1 , ∞ ∑ i =0 ic i = c (1 - c ) 2 , | c | &lt; 1 Harmonic series: H n = n ∑ i =1 1 i , n ∑ i =1 iH i = n ( n +1) 2 H n - n ( n - 1) 4 . n ∑ i =1 H i = ( n +1) H n - n, n ∑ i =1 ( i m ) H i = ( n +1 m +1 )( H n +1 - 1 m +1 ) . 1. ( n k ) = n ! ( n - k )! k ! , 2. n ∑ k =0 ( n k ) = 2 n , 3. ( n k ) = ( n n - k ) , 4. ( n k ) = n k ( n - 1 k - 1 ) , 5. ( n k ) = ( n - 1 k ) + ( n - 1 k - 1 ) , 6. ( n m )( m k ) = ( n k )( n - k m - k ) , 7. n ∑ k =0 ( r + k k ) = ( r + n +1 n ) , 8. n ∑ k =0 ( k m ) = ( n +1 m +1 ) , 9. n ∑ k =0 ( r k )( s n - k ) = ( r + s n ) , 10. ( n k ) = ( - 1) k ( k - n - 1 k ) , 11. { n 1 } = { n n } = 1 , 12. { n 2 } = 2 n - 1 - 1 , 13. { n k } = k { n - 1 k } + { n - 1 k - 1 } , - 1)! H n - 1 , 16. [ n n ] = 1 , 17. [ n k ] ≥ { n k } , n } = [ n ] = ( n ) , 20. n ∑ [ n ] = n ! , 21. C = 1 ( 2 n ) ,</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>f ( n ) = Θ( g ( n ))</td>
+      <td>iff f ( n ) = O ( g ( n )) and f ( n ) = Ω( g ( n )).</td>
+      <td>Series n ∑ i =1 i = n ( n +1) 2 , n ∑ i =1 i 2 = n ( n +1)(2 n +1) 6 , n ∑ i =1 i 3 = n 2 ( n +1) 2 4 . In general: n ∑ i =1 i m = 1 m +1 [ ( n +1) m +1 - 1 - n ∑ i =1 ( ( i +1) m +1 - i m +1 - ( m +1) i m ) ] n - 1 ∑ i =1 i m = 1 m +1 m ∑ k =0 ( m +1 k ) B k n m +1 - k . Geometric series: n ∑ i =0 c i = c n +1 - 1 c - 1 , c = 1 , ∞ ∑ i =0 c i = 1 1 - c , ∞ ∑ i =1 c i = c 1 - c , | c | &lt; 1 , n ∑ i =0 ic i = nc n +2 - ( n +1) c n +1 + c ( c - 1) 2 , c = 1 , ∞ ∑ i =0 ic i = c (1 - c ) 2 , | c | &lt; 1 Harmonic series: H n = n ∑ i =1 1 i , n ∑ i =1 iH i = n ( n +1) 2 H n - n ( n - 1) 4 . n ∑ i =1 H i = ( n +1) H n - n, n ∑ i =1 ( i m ) H i = ( n +1 m +1 )( H n +1 - 1 m +1 ) . 1. ( n k ) = n ! ( n - k )! k ! , 2. n ∑ k =0 ( n k ) = 2 n , 3. ( n k ) = ( n n - k ) , 4. ( n k ) = n k ( n - 1 k - 1 ) , 5. ( n k ) = ( n - 1 k ) + ( n - 1 k - 1 ) , 6. ( n m )( m k ) = ( n k )( n - k m - k ) , 7. n ∑ k =0 ( r + k k ) = ( r + n +1 n ) , 8. n ∑ k =0 ( k m ) = ( n +1 m +1 ) , 9. n ∑ k =0 ( r k )( s n - k ) = ( r + s n ) , 10. ( n k ) = ( - 1) k ( k - n - 1 k ) , 11. { n 1 } = { n n } = 1 , 12. { n 2 } = 2 n - 1 - 1 , 13. { n k } = k { n - 1 k } + { n - 1 k - 1 } , - 1)! H n - 1 , 16. [ n n ] = 1 , 17. [ n k ] ≥ { n k } , n } = [ n ] = ( n ) , 20. n ∑ [ n ] = n ! , 21. C = 1 ( 2 n ) ,</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>f ( n ) = o ( g ( n ))</td>
+      <td>iff lim n →∞ f ( n ) /g ( n ) = 0.</td>
+      <td>Series n ∑ i =1 i = n ( n +1) 2 , n ∑ i =1 i 2 = n ( n +1)(2 n +1) 6 , n ∑ i =1 i 3 = n 2 ( n +1) 2 4 . In general: n ∑ i =1 i m = 1 m +1 [ ( n +1) m +1 - 1 - n ∑ i =1 ( ( i +1) m +1 - i m +1 - ( m +1) i m ) ] n - 1 ∑ i =1 i m = 1 m +1 m ∑ k =0 ( m +1 k ) B k n m +1 - k . Geometric series: n ∑ i =0 c i = c n +1 - 1 c - 1 , c = 1 , ∞ ∑ i =0 c i = 1 1 - c , ∞ ∑ i =1 c i = c 1 - c , | c | &lt; 1 , n ∑ i =0 ic i = nc n +2 - ( n +1) c n +1 + c ( c - 1) 2 , c = 1 , ∞ ∑ i =0 ic i = c (1 - c ) 2 , | c | &lt; 1 Harmonic series: H n = n ∑ i =1 1 i , n ∑ i =1 iH i = n ( n +1) 2 H n - n ( n - 1) 4 . n ∑ i =1 H i = ( n +1) H n - n, n ∑ i =1 ( i m ) H i = ( n +1 m +1 )( H n +1 - 1 m +1 ) . 1. ( n k ) = n ! ( n - k )! k ! , 2. n ∑ k =0 ( n k ) = 2 n , 3. ( n k ) = ( n n - k ) , 4. ( n k ) = n k ( n - 1 k - 1 ) , 5. ( n k ) = ( n - 1 k ) + ( n - 1 k - 1 ) , 6. ( n m )( m k ) = ( n k )( n - k m - k ) , 7. n ∑ k =0 ( r + k k ) = ( r + n +1 n ) , 8. n ∑ k =0 ( k m ) = ( n +1 m +1 ) , 9. n ∑ k =0 ( r k )( s n - k ) = ( r + s n ) , 10. ( n k ) = ( - 1) k ( k - n - 1 k ) , 11. { n 1 } = { n n } = 1 , 12. { n 2 } = 2 n - 1 - 1 , 13. { n k } = k { n - 1 k } + { n - 1 k - 1 } , - 1)! H n - 1 , 16. [ n n ] = 1 , 17. [ n k ] ≥ { n k } , n } = [ n ] = ( n ) , 20. n ∑ [ n ] = n ! , 21. C = 1 ( 2 n ) ,</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>lim n →∞ a n = a</td>
+      <td>iff ∀ /epsilon1 &gt; 0, ∃ n 0 such that | a n - a | &lt; /epsilon1 , ∀ n ≥ n 0 .</td>
+      <td>Series n ∑ i =1 i = n ( n +1) 2 , n ∑ i =1 i 2 = n ( n +1)(2 n +1) 6 , n ∑ i =1 i 3 = n 2 ( n +1) 2 4 . In general: n ∑ i =1 i m = 1 m +1 [ ( n +1) m +1 - 1 - n ∑ i =1 ( ( i +1) m +1 - i m +1 - ( m +1) i m ) ] n - 1 ∑ i =1 i m = 1 m +1 m ∑ k =0 ( m +1 k ) B k n m +1 - k . Geometric series: n ∑ i =0 c i = c n +1 - 1 c - 1 , c = 1 , ∞ ∑ i =0 c i = 1 1 - c , ∞ ∑ i =1 c i = c 1 - c , | c | &lt; 1 , n ∑ i =0 ic i = nc n +2 - ( n +1) c n +1 + c ( c - 1) 2 , c = 1 , ∞ ∑ i =0 ic i = c (1 - c ) 2 , | c | &lt; 1 Harmonic series: H n = n ∑ i =1 1 i , n ∑ i =1 iH i = n ( n +1) 2 H n - n ( n - 1) 4 . n ∑ i =1 H i = ( n +1) H n - n, n ∑ i =1 ( i m ) H i = ( n +1 m +1 )( H n +1 - 1 m +1 ) . 1. ( n k ) = n ! ( n - k )! k ! , 2. n ∑ k =0 ( n k ) = 2 n , 3. ( n k ) = ( n n - k ) , 4. ( n k ) = n k ( n - 1 k - 1 ) , 5. ( n k ) = ( n - 1 k ) + ( n - 1 k - 1 ) , 6. ( n m )( m k ) = ( n k )( n - k m - k ) , 7. n ∑ k =0 ( r + k k ) = ( r + n +1 n ) , 8. n ∑ k =0 ( k m ) = ( n +1 m +1 ) , 9. n ∑ k =0 ( r k )( s n - k ) = ( r + s n ) , 10. ( n k ) = ( - 1) k ( k - n - 1 k ) , 11. { n 1 } = { n n } = 1 , 12. { n 2 } = 2 n - 1 - 1 , 13. { n k } = k { n - 1 k } + { n - 1 k - 1 } , - 1)! H n - 1 , 16. [ n n ] = 1 , 17. [ n k ] ≥ { n k } , n } = [ n ] = ( n ) , 20. n ∑ [ n ] = n ! , 21. C = 1 ( 2 n ) ,</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>sup S</td>
+      <td>least b ∈ R such that b ≥ s , ∀ s ∈ S .</td>
+      <td>Series n ∑ i =1 i = n ( n +1) 2 , n ∑ i =1 i 2 = n ( n +1)(2 n +1) 6 , n ∑ i =1 i 3 = n 2 ( n +1) 2 4 . In general: n ∑ i =1 i m = 1 m +1 [ ( n +1) m +1 - 1 - n ∑ i =1 ( ( i +1) m +1 - i m +1 - ( m +1) i m ) ] n - 1 ∑ i =1 i m = 1 m +1 m ∑ k =0 ( m +1 k ) B k n m +1 - k . Geometric series: n ∑ i =0 c i = c n +1 - 1 c - 1 , c = 1 , ∞ ∑ i =0 c i = 1 1 - c , ∞ ∑ i =1 c i = c 1 - c , | c | &lt; 1 , n ∑ i =0 ic i = nc n +2 - ( n +1) c n +1 + c ( c - 1) 2 , c = 1 , ∞ ∑ i =0 ic i = c (1 - c ) 2 , | c | &lt; 1 Harmonic series: H n = n ∑ i =1 1 i , n ∑ i =1 iH i = n ( n +1) 2 H n - n ( n - 1) 4 . n ∑ i =1 H i = ( n +1) H n - n, n ∑ i =1 ( i m ) H i = ( n +1 m +1 )( H n +1 - 1 m +1 ) . 1. ( n k ) = n ! ( n - k )! k ! , 2. n ∑ k =0 ( n k ) = 2 n , 3. ( n k ) = ( n n - k ) , 4. ( n k ) = n k ( n - 1 k - 1 ) , 5. ( n k ) = ( n - 1 k ) + ( n - 1 k - 1 ) , 6. ( n m )( m k ) = ( n k )( n - k m - k ) , 7. n ∑ k =0 ( r + k k ) = ( r + n +1 n ) , 8. n ∑ k =0 ( k m ) = ( n +1 m +1 ) , 9. n ∑ k =0 ( r k )( s n - k ) = ( r + s n ) , 10. ( n k ) = ( - 1) k ( k - n - 1 k ) , 11. { n 1 } = { n n } = 1 , 12. { n 2 } = 2 n - 1 - 1 , 13. { n k } = k { n - 1 k } + { n - 1 k - 1 } , - 1)! H n - 1 , 16. [ n n ] = 1 , 17. [ n k ] ≥ { n k } , n } = [ n ] = ( n ) , 20. n ∑ [ n ] = n ! , 21. C = 1 ( 2 n ) ,</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>inf S</td>
+      <td>greatest b ∈ R such that b ≤ s , ∀ s ∈ S .</td>
+      <td>Series n ∑ i =1 i = n ( n +1) 2 , n ∑ i =1 i 2 = n ( n +1)(2 n +1) 6 , n ∑ i =1 i 3 = n 2 ( n +1) 2 4 . In general: n ∑ i =1 i m = 1 m +1 [ ( n +1) m +1 - 1 - n ∑ i =1 ( ( i +1) m +1 - i m +1 - ( m +1) i m ) ] n - 1 ∑ i =1 i m = 1 m +1 m ∑ k =0 ( m +1 k ) B k n m +1 - k . Geometric series: n ∑ i =0 c i = c n +1 - 1 c - 1 , c = 1 , ∞ ∑ i =0 c i = 1 1 - c , ∞ ∑ i =1 c i = c 1 - c , | c | &lt; 1 , n ∑ i =0 ic i = nc n +2 - ( n +1) c n +1 + c ( c - 1) 2 , c = 1 , ∞ ∑ i =0 ic i = c (1 - c ) 2 , | c | &lt; 1 Harmonic series: H n = n ∑ i =1 1 i , n ∑ i =1 iH i = n ( n +1) 2 H n - n ( n - 1) 4 . n ∑ i =1 H i = ( n +1) H n - n, n ∑ i =1 ( i m ) H i = ( n +1 m +1 )( H n +1 - 1 m +1 ) . 1. ( n k ) = n ! ( n - k )! k ! , 2. n ∑ k =0 ( n k ) = 2 n , 3. ( n k ) = ( n n - k ) , 4. ( n k ) = n k ( n - 1 k - 1 ) , 5. ( n k ) = ( n - 1 k ) + ( n - 1 k - 1 ) , 6. ( n m )( m k ) = ( n k )( n - k m - k ) , 7. n ∑ k =0 ( r + k k ) = ( r + n +1 n ) , 8. n ∑ k =0 ( k m ) = ( n +1 m +1 ) , 9. n ∑ k =0 ( r k )( s n - k ) = ( r + s n ) , 10. ( n k ) = ( - 1) k ( k - n - 1 k ) , 11. { n 1 } = { n n } = 1 , 12. { n 2 } = 2 n - 1 - 1 , 13. { n k } = k { n - 1 k } + { n - 1 k - 1 } , - 1)! H n - 1 , 16. [ n n ] = 1 , 17. [ n k ] ≥ { n k } , n } = [ n ] = ( n ) , 20. n ∑ [ n ] = n ! , 21. C = 1 ( 2 n ) ,</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>lim inf n →∞ a n</td>
+      <td>lim n →∞ inf { a i | i ≥ n, i ∈ N } .</td>
+      <td>Series n ∑ i =1 i = n ( n +1) 2 , n ∑ i =1 i 2 = n ( n +1)(2 n +1) 6 , n ∑ i =1 i 3 = n 2 ( n +1) 2 4 . In general: n ∑ i =1 i m = 1 m +1 [ ( n +1) m +1 - 1 - n ∑ i =1 ( ( i +1) m +1 - i m +1 - ( m +1) i m ) ] n - 1 ∑ i =1 i m = 1 m +1 m ∑ k =0 ( m +1 k ) B k n m +1 - k . Geometric series: n ∑ i =0 c i = c n +1 - 1 c - 1 , c = 1 , ∞ ∑ i =0 c i = 1 1 - c , ∞ ∑ i =1 c i = c 1 - c , | c | &lt; 1 , n ∑ i =0 ic i = nc n +2 - ( n +1) c n +1 + c ( c - 1) 2 , c = 1 , ∞ ∑ i =0 ic i = c (1 - c ) 2 , | c | &lt; 1 Harmonic series: H n = n ∑ i =1 1 i , n ∑ i =1 iH i = n ( n +1) 2 H n - n ( n - 1) 4 . n ∑ i =1 H i = ( n +1) H n - n, n ∑ i =1 ( i m ) H i = ( n +1 m +1 )( H n +1 - 1 m +1 ) . 1. ( n k ) = n ! ( n - k )! k ! , 2. n ∑ k =0 ( n k ) = 2 n , 3. ( n k ) = ( n n - k ) , 4. ( n k ) = n k ( n - 1 k - 1 ) , 5. ( n k ) = ( n - 1 k ) + ( n - 1 k - 1 ) , 6. ( n m )( m k ) = ( n k )( n - k m - k ) , 7. n ∑ k =0 ( r + k k ) = ( r + n +1 n ) , 8. n ∑ k =0 ( k m ) = ( n +1 m +1 ) , 9. n ∑ k =0 ( r k )( s n - k ) = ( r + s n ) , 10. ( n k ) = ( - 1) k ( k - n - 1 k ) , 11. { n 1 } = { n n } = 1 , 12. { n 2 } = 2 n - 1 - 1 , 13. { n k } = k { n - 1 k } + { n - 1 k - 1 } , - 1)! H n - 1 , 16. [ n n ] = 1 , 17. [ n k ] ≥ { n k } , n } = [ n ] = ( n ) , 20. n ∑ [ n ] = n ! , 21. C = 1 ( 2 n ) ,</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>lim sup n →∞ a n</td>
+      <td>lim n →∞ sup { a i | i ≥ n, i ∈ N } .</td>
+      <td>Series n ∑ i =1 i = n ( n +1) 2 , n ∑ i =1 i 2 = n ( n +1)(2 n +1) 6 , n ∑ i =1 i 3 = n 2 ( n +1) 2 4 . In general: n ∑ i =1 i m = 1 m +1 [ ( n +1) m +1 - 1 - n ∑ i =1 ( ( i +1) m +1 - i m +1 - ( m +1) i m ) ] n - 1 ∑ i =1 i m = 1 m +1 m ∑ k =0 ( m +1 k ) B k n m +1 - k . Geometric series: n ∑ i =0 c i = c n +1 - 1 c - 1 , c = 1 , ∞ ∑ i =0 c i = 1 1 - c , ∞ ∑ i =1 c i = c 1 - c , | c | &lt; 1 , n ∑ i =0 ic i = nc n +2 - ( n +1) c n +1 + c ( c - 1) 2 , c = 1 , ∞ ∑ i =0 ic i = c (1 - c ) 2 , | c | &lt; 1 Harmonic series: H n = n ∑ i =1 1 i , n ∑ i =1 iH i = n ( n +1) 2 H n - n ( n - 1) 4 . n ∑ i =1 H i = ( n +1) H n - n, n ∑ i =1 ( i m ) H i = ( n +1 m +1 )( H n +1 - 1 m +1 ) . 1. ( n k ) = n ! ( n - k )! k ! , 2. n ∑ k =0 ( n k ) = 2 n , 3. ( n k ) = ( n n - k ) , 4. ( n k ) = n k ( n - 1 k - 1 ) , 5. ( n k ) = ( n - 1 k ) + ( n - 1 k - 1 ) , 6. ( n m )( m k ) = ( n k )( n - k m - k ) , 7. n ∑ k =0 ( r + k k ) = ( r + n +1 n ) , 8. n ∑ k =0 ( k m ) = ( n +1 m +1 ) , 9. n ∑ k =0 ( r k )( s n - k ) = ( r + s n ) , 10. ( n k ) = ( - 1) k ( k - n - 1 k ) , 11. { n 1 } = { n n } = 1 , 12. { n 2 } = 2 n - 1 - 1 , 13. { n k } = k { n - 1 k } + { n - 1 k - 1 } , - 1)! H n - 1 , 16. [ n n ] = 1 , 17. [ n k ] ≥ { n k } , n } = [ n ] = ( n ) , 20. n ∑ [ n ] = n ! , 21. C = 1 ( 2 n ) ,</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>( n k )</td>
+      <td>Combinations: Size k sub- sets of a size n set.</td>
+      <td>Series n ∑ i =1 i = n ( n +1) 2 , n ∑ i =1 i 2 = n ( n +1)(2 n +1) 6 , n ∑ i =1 i 3 = n 2 ( n +1) 2 4 . In general: n ∑ i =1 i m = 1 m +1 [ ( n +1) m +1 - 1 - n ∑ i =1 ( ( i +1) m +1 - i m +1 - ( m +1) i m ) ] n - 1 ∑ i =1 i m = 1 m +1 m ∑ k =0 ( m +1 k ) B k n m +1 - k . Geometric series: n ∑ i =0 c i = c n +1 - 1 c - 1 , c = 1 , ∞ ∑ i =0 c i = 1 1 - c , ∞ ∑ i =1 c i = c 1 - c , | c | &lt; 1 , n ∑ i =0 ic i = nc n +2 - ( n +1) c n +1 + c ( c - 1) 2 , c = 1 , ∞ ∑ i =0 ic i = c (1 - c ) 2 , | c | &lt; 1 Harmonic series: H n = n ∑ i =1 1 i , n ∑ i =1 iH i = n ( n +1) 2 H n - n ( n - 1) 4 . n ∑ i =1 H i = ( n +1) H n - n, n ∑ i =1 ( i m ) H i = ( n +1 m +1 )( H n +1 - 1 m +1 ) . 1. ( n k ) = n ! ( n - k )! k ! , 2. n ∑ k =0 ( n k ) = 2 n , 3. ( n k ) = ( n n - k ) , 4. ( n k ) = n k ( n - 1 k - 1 ) , 5. ( n k ) = ( n - 1 k ) + ( n - 1 k - 1 ) , 6. ( n m )( m k ) = ( n k )( n - k m - k ) , 7. n ∑ k =0 ( r + k k ) = ( r + n +1 n ) , 8. n ∑ k =0 ( k m ) = ( n +1 m +1 ) , 9. n ∑ k =0 ( r k )( s n - k ) = ( r + s n ) , 10. ( n k ) = ( - 1) k ( k - n - 1 k ) , 11. { n 1 } = { n n } = 1 , 12. { n 2 } = 2 n - 1 - 1 , 13. { n k } = k { n - 1 k } + { n - 1 k - 1 } , - 1)! H n - 1 , 16. [ n n ] = 1 , 17. [ n k ] ≥ { n k } , n } = [ n ] = ( n ) , 20. n ∑ [ n ] = n ! , 21. C = 1 ( 2 n ) ,</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>[ n k ]</td>
+      <td>Stirling numbers (1st kind): Arrangements of an n ele- ment set into k cycles.</td>
+      <td>Series n ∑ i =1 i = n ( n +1) 2 , n ∑ i =1 i 2 = n ( n +1)(2 n +1) 6 , n ∑ i =1 i 3 = n 2 ( n +1) 2 4 . In general: n ∑ i =1 i m = 1 m +1 [ ( n +1) m +1 - 1 - n ∑ i =1 ( ( i +1) m +1 - i m +1 - ( m +1) i m ) ] n - 1 ∑ i =1 i m = 1 m +1 m ∑ k =0 ( m +1 k ) B k n m +1 - k . Geometric series: n ∑ i =0 c i = c n +1 - 1 c - 1 , c = 1 , ∞ ∑ i =0 c i = 1 1 - c , ∞ ∑ i =1 c i = c 1 - c , | c | &lt; 1 , n ∑ i =0 ic i = nc n +2 - ( n +1) c n +1 + c ( c - 1) 2 , c = 1 , ∞ ∑ i =0 ic i = c (1 - c ) 2 , | c | &lt; 1 Harmonic series: H n = n ∑ i =1 1 i , n ∑ i =1 iH i = n ( n +1) 2 H n - n ( n - 1) 4 . n ∑ i =1 H i = ( n +1) H n - n, n ∑ i =1 ( i m ) H i = ( n +1 m +1 )( H n +1 - 1 m +1 ) . 1. ( n k ) = n ! ( n - k )! k ! , 2. n ∑ k =0 ( n k ) = 2 n , 3. ( n k ) = ( n n - k ) , 4. ( n k ) = n k ( n - 1 k - 1 ) , 5. ( n k ) = ( n - 1 k ) + ( n - 1 k - 1 ) , 6. ( n m )( m k ) = ( n k )( n - k m - k ) , 7. n ∑ k =0 ( r + k k ) = ( r + n +1 n ) , 8. n ∑ k =0 ( k m ) = ( n +1 m +1 ) , 9. n ∑ k =0 ( r k )( s n - k ) = ( r + s n ) , 10. ( n k ) = ( - 1) k ( k - n - 1 k ) , 11. { n 1 } = { n n } = 1 , 12. { n 2 } = 2 n - 1 - 1 , 13. { n k } = k { n - 1 k } + { n - 1 k - 1 } , - 1)! H n - 1 , 16. [ n n ] = 1 , 17. [ n k ] ≥ { n k } , n } = [ n ] = ( n ) , 20. n ∑ [ n ] = n ! , 21. C = 1 ( 2 n ) ,</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>{ n k }</td>
+      <td>Stirling numbers (2nd kind): Partitions of an n element set into k non-empty sets.</td>
+      <td>Series n ∑ i =1 i = n ( n +1) 2 , n ∑ i =1 i 2 = n ( n +1)(2 n +1) 6 , n ∑ i =1 i 3 = n 2 ( n +1) 2 4 . In general: n ∑ i =1 i m = 1 m +1 [ ( n +1) m +1 - 1 - n ∑ i =1 ( ( i +1) m +1 - i m +1 - ( m +1) i m ) ] n - 1 ∑ i =1 i m = 1 m +1 m ∑ k =0 ( m +1 k ) B k n m +1 - k . Geometric series: n ∑ i =0 c i = c n +1 - 1 c - 1 , c = 1 , ∞ ∑ i =0 c i = 1 1 - c , ∞ ∑ i =1 c i = c 1 - c , | c | &lt; 1 , n ∑ i =0 ic i = nc n +2 - ( n +1) c n +1 + c ( c - 1) 2 , c = 1 , ∞ ∑ i =0 ic i = c (1 - c ) 2 , | c | &lt; 1 Harmonic series: H n = n ∑ i =1 1 i , n ∑ i =1 iH i = n ( n +1) 2 H n - n ( n - 1) 4 . n ∑ i =1 H i = ( n +1) H n - n, n ∑ i =1 ( i m ) H i = ( n +1 m +1 )( H n +1 - 1 m +1 ) . 1. ( n k ) = n ! ( n - k )! k ! , 2. n ∑ k =0 ( n k ) = 2 n , 3. ( n k ) = ( n n - k ) , 4. ( n k ) = n k ( n - 1 k - 1 ) , 5. ( n k ) = ( n - 1 k ) + ( n - 1 k - 1 ) , 6. ( n m )( m k ) = ( n k )( n - k m - k ) , 7. n ∑ k =0 ( r + k k ) = ( r + n +1 n ) , 8. n ∑ k =0 ( k m ) = ( n +1 m +1 ) , 9. n ∑ k =0 ( r k )( s n - k ) = ( r + s n ) , 10. ( n k ) = ( - 1) k ( k - n - 1 k ) , 11. { n 1 } = { n n } = 1 , 12. { n 2 } = 2 n - 1 - 1 , 13. { n k } = k { n - 1 k } + { n - 1 k - 1 } , - 1)! H n - 1 , 16. [ n n ] = 1 , 17. [ n k ] ≥ { n k } , n } = [ n ] = ( n ) , 20. n ∑ [ n ] = n ! , 21. C = 1 ( 2 n ) ,</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>〈 n k 〉</td>
+      <td>1st order Eulerian numbers: Permutations π 1 π 2 . . .π n on { 1 , 2 , . . .,n } with k ascents.</td>
+      <td>Series n ∑ i =1 i = n ( n +1) 2 , n ∑ i =1 i 2 = n ( n +1)(2 n +1) 6 , n ∑ i =1 i 3 = n 2 ( n +1) 2 4 . In general: n ∑ i =1 i m = 1 m +1 [ ( n +1) m +1 - 1 - n ∑ i =1 ( ( i +1) m +1 - i m +1 - ( m +1) i m ) ] n - 1 ∑ i =1 i m = 1 m +1 m ∑ k =0 ( m +1 k ) B k n m +1 - k . Geometric series: n ∑ i =0 c i = c n +1 - 1 c - 1 , c = 1 , ∞ ∑ i =0 c i = 1 1 - c , ∞ ∑ i =1 c i = c 1 - c , | c | &lt; 1 , n ∑ i =0 ic i = nc n +2 - ( n +1) c n +1 + c ( c - 1) 2 , c = 1 , ∞ ∑ i =0 ic i = c (1 - c ) 2 , | c | &lt; 1 Harmonic series: H n = n ∑ i =1 1 i , n ∑ i =1 iH i = n ( n +1) 2 H n - n ( n - 1) 4 . n ∑ i =1 H i = ( n +1) H n - n, n ∑ i =1 ( i m ) H i = ( n +1 m +1 )( H n +1 - 1 m +1 ) . 1. ( n k ) = n ! ( n - k )! k ! , 2. n ∑ k =0 ( n k ) = 2 n , 3. ( n k ) = ( n n - k ) , 4. ( n k ) = n k ( n - 1 k - 1 ) , 5. ( n k ) = ( n - 1 k ) + ( n - 1 k - 1 ) , 6. ( n m )( m k ) = ( n k )( n - k m - k ) , 7. n ∑ k =0 ( r + k k ) = ( r + n +1 n ) , 8. n ∑ k =0 ( k m ) = ( n +1 m +1 ) , 9. n ∑ k =0 ( r k )( s n - k ) = ( r + s n ) , 10. ( n k ) = ( - 1) k ( k - n - 1 k ) , 11. { n 1 } = { n n } = 1 , 12. { n 2 } = 2 n - 1 - 1 , 13. { n k } = k { n - 1 k } + { n - 1 k - 1 } , - 1)! H n - 1 , 16. [ n n ] = 1 , 17. [ n k ] ≥ { n k } , n } = [ n ] = ( n ) , 20. n ∑ [ n ] = n ! , 21. C = 1 ( 2 n ) ,</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>n k 〉</td>
+      <td>2nd order Eulerian numbers.</td>
+      <td>Series n ∑ i =1 i = n ( n +1) 2 , n ∑ i =1 i 2 = n ( n +1)(2 n +1) 6 , n ∑ i =1 i 3 = n 2 ( n +1) 2 4 . In general: n ∑ i =1 i m = 1 m +1 [ ( n +1) m +1 - 1 - n ∑ i =1 ( ( i +1) m +1 - i m +1 - ( m +1) i m ) ] n - 1 ∑ i =1 i m = 1 m +1 m ∑ k =0 ( m +1 k ) B k n m +1 - k . Geometric series: n ∑ i =0 c i = c n +1 - 1 c - 1 , c = 1 , ∞ ∑ i =0 c i = 1 1 - c , ∞ ∑ i =1 c i = c 1 - c , | c | &lt; 1 , n ∑ i =0 ic i = nc n +2 - ( n +1) c n +1 + c ( c - 1) 2 , c = 1 , ∞ ∑ i =0 ic i = c (1 - c ) 2 , | c | &lt; 1 Harmonic series: H n = n ∑ i =1 1 i , n ∑ i =1 iH i = n ( n +1) 2 H n - n ( n - 1) 4 . n ∑ i =1 H i = ( n +1) H n - n, n ∑ i =1 ( i m ) H i = ( n +1 m +1 )( H n +1 - 1 m +1 ) . 1. ( n k ) = n ! ( n - k )! k ! , 2. n ∑ k =0 ( n k ) = 2 n , 3. ( n k ) = ( n n - k ) , 4. ( n k ) = n k ( n - 1 k - 1 ) , 5. ( n k ) = ( n - 1 k ) + ( n - 1 k - 1 ) , 6. ( n m )( m k ) = ( n k )( n - k m - k ) , 7. n ∑ k =0 ( r + k k ) = ( r + n +1 n ) , 8. n ∑ k =0 ( k m ) = ( n +1 m +1 ) , 9. n ∑ k =0 ( r k )( s n - k ) = ( r + s n ) , 10. ( n k ) = ( - 1) k ( k - n - 1 k ) , 11. { n 1 } = { n n } = 1 , 12. { n 2 } = 2 n - 1 - 1 , 13. { n k } = k { n - 1 k } + { n - 1 k - 1 } , - 1)! H n - 1 , 16. [ n n ] = 1 , 17. [ n k ] ≥ { n k } , n } = [ n ] = ( n ) , 20. n ∑ [ n ] = n ! , 21. C = 1 ( 2 n ) ,</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>〈 〈 〉 C n</td>
+      <td>Catalan Numbers: Binary trees with n +1 vertices.</td>
+      <td>Series n ∑ i =1 i = n ( n +1) 2 , n ∑ i =1 i 2 = n ( n +1)(2 n +1) 6 , n ∑ i =1 i 3 = n 2 ( n +1) 2 4 . In general: n ∑ i =1 i m = 1 m +1 [ ( n +1) m +1 - 1 - n ∑ i =1 ( ( i +1) m +1 - i m +1 - ( m +1) i m ) ] n - 1 ∑ i =1 i m = 1 m +1 m ∑ k =0 ( m +1 k ) B k n m +1 - k . Geometric series: n ∑ i =0 c i = c n +1 - 1 c - 1 , c = 1 , ∞ ∑ i =0 c i = 1 1 - c , ∞ ∑ i =1 c i = c 1 - c , | c | &lt; 1 , n ∑ i =0 ic i = nc n +2 - ( n +1) c n +1 + c ( c - 1) 2 , c = 1 , ∞ ∑ i =0 ic i = c (1 - c ) 2 , | c | &lt; 1 Harmonic series: H n = n ∑ i =1 1 i , n ∑ i =1 iH i = n ( n +1) 2 H n - n ( n - 1) 4 . n ∑ i =1 H i = ( n +1) H n - n, n ∑ i =1 ( i m ) H i = ( n +1 m +1 )( H n +1 - 1 m +1 ) . 1. ( n k ) = n ! ( n - k )! k ! , 2. n ∑ k =0 ( n k ) = 2 n , 3. ( n k ) = ( n n - k ) , 4. ( n k ) = n k ( n - 1 k - 1 ) , 5. ( n k ) = ( n - 1 k ) + ( n - 1 k - 1 ) , 6. ( n m )( m k ) = ( n k )( n - k m - k ) , 7. n ∑ k =0 ( r + k k ) = ( r + n +1 n ) , 8. n ∑ k =0 ( k m ) = ( n +1 m +1 ) , 9. n ∑ k =0 ( r k )( s n - k ) = ( r + s n ) , 10. ( n k ) = ( - 1) k ( k - n - 1 k ) , 11. { n 1 } = { n n } = 1 , 12. { n 2 } = 2 n - 1 - 1 , 13. { n k } = k { n - 1 k } + { n - 1 k - 1 } , - 1)! H n - 1 , 16. [ n n ] = 1 , 17. [ n k ] ≥ { n k } , n } = [ n ] = ( n ) , 20. n ∑ [ n ] = n ! , 21. C = 1 ( 2 n ) ,</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

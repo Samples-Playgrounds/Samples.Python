@@ -1,0 +1,7 @@
+|    | public class EntryLineColorEffect : RoutingEffect                              |
+|---:|:-------------------------------------------------------------------------------|
+|  0 | {                                                                              |
+|  1 | public EntryLineColorEffect() : base("eShopOnContainers.EntryLineColorEffect") |
+|  2 | {                                                                              |
+|  3 | }                                                                              |
+|  4 | }                                                                              |

@@ -1,0 +1,6 @@
+,Feature,Azure Table Storage,Azure Cosmos DB
+0,Latency,Fast,"Single-digit millisecond latency for reads andwrites anywhere in the world"
+1,"Throughput","Limit of 20,000 operations per table",Unlimited operations per table
+2,"GlobalDistribution","Single region with optional singlesecondary read region","Turnkey distributions to all regions withautomatic failover"
+3,Indexing,"Available for partition and row keyproperties only",Automatic indexing of all properties
+4,Pricing,"Optimized for cold workloads (lowthroughput : storage ratio)","Optimized for hot workloads (highthroughput : storage ratio)"

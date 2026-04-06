@@ -1,0 +1,15 @@
+,- myfrontend
+0,"network_mode: ""service:myfrontend"
+1,mybackend:
+2,image: ${DOCKER_REGISTRY-}mybackend
+3,build:
+4,context: .
+5,dockerfile: MyBackEnd/Dockerfile
+6,ports:
+7,"- ""52000:50001"
+8,mybackend-dapr:
+9,"image: ""daprio/daprd:latest"""
+10,"command: [ ""./daprd"", ""-app-id"", ""MyBackEnd"", ""-app-port"", ""80"" ]"
+11,depends_on:
+12,- mybackend
+13,"network_mode: ""service:mybackend"""

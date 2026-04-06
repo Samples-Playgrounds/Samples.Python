@@ -1,0 +1,8 @@
+,// Register out-of-the-box framework services.
+0,builder.Services.AddDbContext<CatalogContext>(c =>
+1,"c.UseSqlServer(Configuration[""ConnectionString""]),"
+2,ServiceLifetime.Scoped);
+3,
+4,builder.Services.AddMvc();
+5,// Register custom application dependencies.
+6,"builder.Services.AddScoped<IMyCustomRepository, MyCustomSQLRepository>();"

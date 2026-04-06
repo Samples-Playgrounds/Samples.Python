@@ -1,0 +1,24 @@
+Exception reading images with PyPDF2-pypdf from PDF document source = ../../../../../../../data/cheat-sheets/python-cheatsheet.pdf : cannot write mode PA as PNGTraceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/pypdf-PyPDF2/.venv/lib/python3.14/site-packages/PIL/PngImagePlugin.py", line 1383, in _save
+    rawmode, bit_depth, color_type = _OUTMODES[outmode]
+                                     ~~~~~~~~~^^^^^^^^^
+KeyError: 'PA'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/pypdf-PyPDF2/api_image_extraction_PyPDF2_pypdf.py", line 38, in extract_images_from_pdf_to_files
+    images.extend(page.images)
+                  ^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/pypdf-PyPDF2/.venv/lib/python3.14/site-packages/PyPDF2/_page.py", line 481, in images
+    extension, byte_stream = _xobj_to_image(x_object[obj])
+                             ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/pypdf-PyPDF2/.venv/lib/python3.14/site-packages/PyPDF2/filters.py", line 617, in _xobj_to_image
+    img.save(img_byte_arr, format="PNG")
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/pypdf-PyPDF2/.venv/lib/python3.14/site-packages/PIL/Image.py", line 2713, in save
+    save_handler(self, fp, filename)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/pypdf-PyPDF2/.venv/lib/python3.14/site-packages/PIL/PngImagePlugin.py", line 1386, in _save
+    raise OSError(msg) from e
+OSError: cannot write mode PA as PNG

@@ -1,0 +1,9 @@
+">>> my_string.upper()
+>>> my_string.lower()
+>>> my_string.count('w')
+>>> my_string.replace('e', 'i')
+>>> my_string.strip()","String to uppercase
+String to lowercase
+Count String elements
+Replace String elements
+Strip whitespaces"

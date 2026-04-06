@@ -1,0 +1,1 @@
+{"0":{"0":"Subset\n>>> my_list[1]\n>>> my_list[-3]\n  Slice\n>>> my_list[1:3]\n>>> my_list[1:]\n>>> my_list[:3]\n>>> my_list[:]\n  Subset Lists of Lists\n>>> my_list2[1][0]\n>>> my_list2[1][:2]"},"1":{"0":"Select item at index 1\nSelect 3rd last item\nSelect items at index 1 and 2\nSelect items after index 0\nSelect items before index 3\nCopy my_list\nmy_list[list][itemOfList]"}}

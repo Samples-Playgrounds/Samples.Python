@@ -1,0 +1,13 @@
+,"<?xml version=""1.0""?>"
+0,<configuration>
+1,<system.web>
+2,"<authentication mode=""Forms"">"
+3,"<forms defaultUrl=""~/home.aspx"" loginUrl=""~/login.aspx"""
+4,"slidingExpiration=""true"" timeout=""2880""></forms>"
+5,</authentication>
+6,
+7,<authorization>
+8,"<deny users=""?"" />"
+9,</authorization>
+10,</system.web>
+11,</configuration>

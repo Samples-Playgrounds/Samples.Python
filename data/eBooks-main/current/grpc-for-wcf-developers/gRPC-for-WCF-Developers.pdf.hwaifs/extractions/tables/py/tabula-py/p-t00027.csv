@@ -1,0 +1,6 @@
+,[ServiceContract]
+0,public interface IGreeterService
+1,{
+2,[OperationContract]
+3,string SayHello(string name);
+4,}

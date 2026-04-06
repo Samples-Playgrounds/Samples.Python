@@ -1,0 +1,6 @@
+|    | 0      | 1                                                    |
+|---:|:-------|:-----------------------------------------------------|
+|  0 | Commit | a state of the code base                             |
+|  1 | Branch | a reference to a commit; can have a tracked upstream |
+|  2 | Tag    | a reference (standard) or an object (annotated)      |
+|  3 | HEAD   | a place where your working directory is now          |

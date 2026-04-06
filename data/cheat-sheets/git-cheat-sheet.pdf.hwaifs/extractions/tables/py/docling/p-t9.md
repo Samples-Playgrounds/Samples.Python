@@ -1,0 +1,6 @@
+|    | 0                              | 1                                                                                                                    |
+|---:|:-------------------------------|:---------------------------------------------------------------------------------------------------------------------|
+|  0 | git tag                        | List all tags.                                                                                                       |
+|  1 | git tag [name] [commit sha]    | Create a tag reference named name for current commit. Add commitsha to tag a specific commit instead of current one. |
+|  2 | git tag -a [name] [commit sha] | Create a tag object named name for current commit.                                                                   |
+|  3 | git tag -d [name]              | Remove a tag from local repository.                                                                                  |

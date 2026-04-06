@@ -1,0 +1,13 @@
+,public class OrderDetailViewModel : ViewModelBase
+0,{
+1,private IAppEnvironmentService _appEnvironmentService;
+2,
+3,public OrderDetailViewModel(
+4,"IAppEnvironmentService appEnvironmentService,"
+5,"IDialogService dialogService, INavigationService navigationService,"
+6,ISettingsService settingsService)
+7,": base(dialogService, navigationService, settingsService)"
+8,{
+9,_appEnvironmentService = appEnvironmentService;
+10,}
+11,}

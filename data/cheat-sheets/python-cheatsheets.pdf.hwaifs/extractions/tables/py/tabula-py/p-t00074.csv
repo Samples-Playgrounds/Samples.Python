@@ -1,0 +1,9 @@
+,Python For Data Science Cheat Sheet,Renderers & Visual Customizations,Unnamed: 0
+0,Bokeh,Glyphs,Grid Layout
+1,"Learn Bokeh Interactively at  www.DataCamp.com,",Scatter Markers,>>> from bokeh.layouts import gridplot
+2,"taught by Bryan Van de Ven, core contributor",">>> p1.circle(np.array([1,2,3]), np.array([3,2,1]),",">>> row1 = [p1,p2]"
+3,,fill_color='white'),>>> row2 = [p3]
+4,,">>> p2.square(np.array([1.5,3.5,5.5]), [1,4,3],",">>> layout = gridplot([[p1,p2],[p3]])"
+5,,"color='blue', size=1)",
+6,Plotting With Bokeh,"Line Glyphs >>> p1.line([1,2,3,4], [3,4,5,6], line_width=2)",Tabbed Layout
+7,The Python interactive visualization library Bokeh,">>> p2.multi_line(pd.DataFrame([[1,2,3],[5,6,7]]),",">>> from bokeh.models.widgets import Panel, Tabs"

@@ -1,0 +1,50 @@
+,name: $(rev:r)
+0,
+1,variables:
+2,version: 9.2.0.$(Build.BuildNumber)
+3,solution: Portals.sln
+4,artifactName: drop
+5,buildPlatform: any cpu
+6,buildConfiguration: release
+7,
+8,pool:
+9,name: Hosted VisualStudio
+10,demands:
+11,- msbuild
+12,- visualstudio
+13,- vstest
+14,
+15,steps:
+16,- task: NuGetToolInstaller@0
+17,displayName: 'Use NuGet 4.4.1'
+18,inputs:
+19,versionSpec: 4.4.1
+20,
+21,- task: NuGetCommand@2
+22,displayName: 'NuGet restore'
+23,inputs:
+24,restoreSolution: '$(solution)'
+25,
+26,- task: VSBuild@1
+27,displayName: 'Build solution'
+28,inputs:
+29,solution: '$(solution)'
+30,msbuildArgs: '-p:DeployOnBuild=true -p:WebPublishMethod=Package -
+31,p:PackageAsSingleFile=true -p:SkipInvalidConfigurations=true -
+32,"p:PackageLocation=""$(build.artifactstagingdirectory)\\""'"
+33,platform: '$(buildPlatform)'
+34,configuration: '$(buildConfiguration)'
+35,
+36,- task: VSTest@2
+37,displayName: 'Test Assemblies'
+38,inputs:
+39,testAssemblyVer2: |
+40,**\$(buildConfiguration)\**\*test*.dll
+41,!**\obj\**
+42,!**\*testadapter.dll
+43,platform: '$(buildPlatform)'
+44,configuration: '$(buildConfiguration)'
+45,
+46,- task: CopyFiles@2
+47,displayName: 'Copy UI Test Files to: $(build.artifactstagingdirectory)'
+48,inputs:

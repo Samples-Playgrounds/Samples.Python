@@ -1,0 +1,18 @@
+,0,1
+0,"Subset
+>>> my_list[1]
+>>> my_list[-3]
+  Slice
+>>> my_list[1:3]
+>>> my_list[1:]
+>>> my_list[:3]
+>>> my_list[:]
+  Subset Lists of Lists
+>>> my_list2[1][0]
+>>> my_list2[1][:2]","Select item at index 1
+Select 3rd last item
+Select items at index 1 and 2
+Select items after index 0
+Select items before index 3
+Copy my_list
+my_list[list][itemOfList]"

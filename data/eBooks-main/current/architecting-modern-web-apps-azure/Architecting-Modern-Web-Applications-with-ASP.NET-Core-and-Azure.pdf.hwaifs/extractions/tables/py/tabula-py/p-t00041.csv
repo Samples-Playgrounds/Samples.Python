@@ -1,0 +1,5 @@
+,builder.Services.AddResponseCaching();
+0,
+1,"// other code omitted, including building the app"
+2,
+3,app.UseResponseCaching();

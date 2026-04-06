@@ -1,0 +1,51 @@
+Exception reading images with minecart from PDF document source = ../../../../../../../data/cheat-sheets/csscheatsheet.pdf : ('Adobe-Identity', 3)Traceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/pdfminer/pdffont.py", line 660, in to_unichr
+    raise KeyError(cid)
+KeyError: 3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/api_image_extraction_minecart.py", line 36, in extract_images_from_pdf_to_files
+    for page in doc.iter_pages():
+                ~~~~~~~~~~~~~~^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/minecart/miner.py", line 337, in iter_pages
+    self.interpreter.process_page(page)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/pdfminer/pdfinterp.py", line 642, in process_page
+    self.render_contents(page.resources, page.contents, ctm=ctm)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/pdfminer/pdfinterp.py", line 652, in render_contents
+    self.execute(list_value(streams))
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/pdfminer/pdfinterp.py", line 675, in execute
+    func(*args)
+    ~~~~^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/pdfminer/pdfinterp.py", line 573, in do_Tj
+    self.do_TJ([s])
+    ~~~~~~~~~~^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/pdfminer/pdfinterp.py", line 570, in do_TJ
+    self.device.render_string(self.textstate, seq)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/pdfminer/pdfdevice.py", line 64, in render_string
+    textstate.linematrix = self.render_string_horizontal(
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        seq, matrix, textstate.linematrix, font, fontsize,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        scaling, charspace, wordspace, rise, dxscale)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/minecart/miner.py", line 253, in render_string_horizontal
+    return self.render_string_hv('horizontal', *args)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/minecart/miner.py", line 306, in render_string_hv
+    vec[hv] += self.render_char(
+               ~~~~~~~~~~~~~~~~^
+        pdfminer.utils.translate_matrix(matrix, vec),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        font, fontsize, scaling, rise, cid)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/minecart/miner.py", line 261, in render_char
+    text = font.to_unichr(cid)
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/pdfminer/pdffont.py", line 663, in to_unichr
+    raise PDFUnicodeNotDefined(self.cidcoding, cid)
+pdfminer.pdffont.PDFUnicodeNotDefined: ('Adobe-Identity', 3)

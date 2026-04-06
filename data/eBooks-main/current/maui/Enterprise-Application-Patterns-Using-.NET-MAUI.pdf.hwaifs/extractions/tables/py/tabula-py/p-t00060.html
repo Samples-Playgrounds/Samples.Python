@@ -1,0 +1,38 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>public async Task&lt;CustomerBasket&gt; UpdateBasketAsync(</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>CustomerBasket customerBasket, string token)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>UriBuilder builder = new UriBuilder(GlobalSetting.Instance.BasketEndpoint);</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>string uri = builder.ToString();</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>var result = await _requestProvider.PostAsync(uri, customerBasket, token);</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>return result;</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

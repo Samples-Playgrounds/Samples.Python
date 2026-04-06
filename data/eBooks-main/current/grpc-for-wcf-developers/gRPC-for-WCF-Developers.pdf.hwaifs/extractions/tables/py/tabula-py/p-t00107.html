@@ -1,0 +1,70 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>class Program</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>static async Task Main(string[] args)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>// Assume path to a client .pfx file and password are passed from command line</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>// On Windows this would probably be a reference to the Certificate Store</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>var cert = new X509Certificate2(args[0], args[1]);</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>var handler = new HttpClientHandler();</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>handler.ClientCertificates.Add(cert);</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>var httpClient = new HttpClient(handler);</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>var channel = GrpcChannel.ForAddress("https://localhost:5001/", new</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>GrpcChannelOptions</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>HttpClient = httpClient</td>
+    </tr>
+  </tbody>
+</table>

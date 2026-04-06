@@ -1,0 +1,19 @@
+"git status","Displays the status of your working directory. Options include 
+new, staged, and modified files. It will retrieve branch name, 
+current commit identifier, and changes pending commit."
+"git add [file]","Add a file to the staging area. Use. in place of the full file path 
+to add all changed files from the current directory down into 
+the directory tree."
+"git diff [file]
+git diff --staged [file]
+git checkout -- [file]
+git reset -<path>--.]
+git commit","Show changes between working directory and staging area.
+Shows any changes between the staging area and the 
+repository.
+Discard changes in working directory. This operation is 
+unrecoverable.
+Revert some paths in the index (or the whole index) to their 
+state in HEAD.
+Create a new commit from changes added to the staging area. 
+The commit must have a message!"

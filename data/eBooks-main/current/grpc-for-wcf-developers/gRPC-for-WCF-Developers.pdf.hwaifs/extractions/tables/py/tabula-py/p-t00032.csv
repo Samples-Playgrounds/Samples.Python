@@ -1,0 +1,13 @@
+,public async Task TellTheTimeAsync(CancellationToken token)
+0,{
+1,"var channel = GrpcChannel.ForAddress(""https://localhost:5001"");"
+2,var client = new ClockStreamer.ClockStreamerClient(channel);
+3,
+4,var request = new ClockSubscribeRequest();
+5,var response = client.Subscribe(request);
+6,
+7,await foreach (var update in response.ResponseStream.ReadAllAsync(token))
+8,{
+9,Console.WriteLine(update.Message);
+10,}
+11,}

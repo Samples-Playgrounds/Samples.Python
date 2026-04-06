@@ -1,0 +1,69 @@
+,0,1,2
+0,"Command
+Description
+Examples and Options",,
+1,"<tab>
+Attempt to autocomplete
+Use this to speed up typing/avoid typos",,
+2,Navigating Directories,,
+3,ls,List the contents of the directory.,"ls -larth
+/home/mcuser/science/code"
+4,cd,Change directory.,cd /home/mcuser/science
+5,pwd,present w orking d irectory.,pwd
+6,*,"Wild card, any number of chars.",ls *.txt
+7,?,"Wild card, 0 or 1 characters.",ls foo?.txt
+8,.,Current directory.,cd .
+9,..,Directory one level up.,cd ..
+10,~,Home directory.,cd ~
+11,-,Previous directory.,cd -
+12,Modifying Directories and Files,,
+13,mkdir,Make new empty directory.,mkdir MyNewDirectory
+14,rmdir,Remove empty directory.,rmdir MyNewDirectory
+15,mv,Move ﬁles (overwrites destination).,"mv -i
+foo.txt foo2.txt"
+16,cp,Copy ﬁles (overwrites destination).,"cp -i
+../foo.txt
+."
+17,rm,Remove ﬁles. CANNOT UNDO!,"rm -i
+foo.txt"
+18,chmod,"Change ﬁle permissions.
+rwx = read, write, execute.
+ugoa = user, group, other, all.","chmod a+rwx
+badger.txt
+chmod o-wx
+badger.txt
+chmod u+x
+myscript.sh"
+19,Viewing Files in Terminal,,
+20,less,View ﬁles in terminal window.,less foo.txt
+21,cat,Concatenate ﬁles.,cat foo1.txt foo2.txt
+22,head,Display ﬁrst 10 lines.,"head -20
+foo.txt"
+23,tail,Display last 10 lines.,"tail -f
+logfile.txt"
+24,Searching,,
+25,grep,Search for word(s) in a ﬁle.,"grep myvarname *.txt
+grep rodent
+*.txt
+grep ""Hello
+World""
+*.txt"
+26,find,"Search
+a
+path
+for
+ﬁles/directories
+that match some speciﬁcation.","find playground -name
+""*.txt""
+find playground -type
+d
+find playground -not
+-name
+""*.txt"""
+27,Environment Variables,,
+28,$HOME,Home directory.,workpath=$HOME/playground
+29,$SHELL,Shell name.,echo $SHELL
+30,$USER,User name.,echo $USER
+31,$PATH,Paths to look in for executables.,PATH=${PATH}:/my/new/program/path/bin
+32,env,List environment vars and values.,"env |
+less"

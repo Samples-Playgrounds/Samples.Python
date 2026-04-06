@@ -1,0 +1,7 @@
+,public static IHostBuilder CreateHostBuilder(string[] args) =>
+0,Host.CreateDefaultBuilder(args)
+1,.UseSystemd() // Enable running as a Systemd service
+2,".ConfigureServices((hostContext, services) =>"
+3,{
+4,...
+5,});

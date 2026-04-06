@@ -1,0 +1,28 @@
+,// GENERIC SPECIFICATION IMPLEMENTATION (BASE CLASS)
+0,// https://github.com/dotnet-architecture/eShopOnWeb
+1,
+2,public abstract class BaseSpecification<T> : ISpecification<T>
+3,{
+4,"public BaseSpecification(Expression<Func<T, bool>> criteria)"
+5,{
+6,Criteria = criteria;
+7,}
+8,"public Expression<Func<T, bool>> Criteria { get; }"
+9,
+10,"public List<Expression<Func<T, object>>> Includes { get; } ="
+11,"new List<Expression<Func<T, object>>>();"
+12,
+13,public List<string> IncludeStrings { get; } = new List<string>();
+14,
+15,"protected virtual void AddInclude(Expression<Func<T, object>> includeExpression)"
+16,{
+17,Includes.Add(includeExpression);
+18,}
+19,
+20,// string-based includes allow for including children of children
+21,// e.g. Basket.Items.Product
+22,protected virtual void AddInclude(string includeString)
+23,{
+24,IncludeStrings.Add(includeString);
+25,}
+26,}

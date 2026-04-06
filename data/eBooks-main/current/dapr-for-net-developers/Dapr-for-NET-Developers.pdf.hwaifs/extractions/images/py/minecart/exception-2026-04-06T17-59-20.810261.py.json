@@ -1,0 +1,8 @@
+Exception reading images with minecart from PDF document source = ../../../../../../../data/eBooks-main/current/dapr-for-net-developers/Dapr-for-NET-Developers.pdf : cannot identify image file <_io.BytesIO object at 0x10966d8a0>Traceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/api_image_extraction_minecart.py", line 40, in extract_images_from_pdf_to_files
+    im = im1.as_pil()  # requires pillow
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/minecart/content.py", line 368, in as_pil
+    image = PIL.Image.open(io.BytesIO(image_data))
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/PIL/Image.py", line 3711, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x10966d8a0>

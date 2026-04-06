@@ -1,0 +1,3 @@
+,dotnet run CommandLineKey1=value1 --CommandLineKey2=value2 /CommandLineKey3=value3
+0,dotnet run --CommandLineKey1 value1 /CommandLineKey2 value2
+1,dotnet run Parent:ApiKey=67890

@@ -1,0 +1,15 @@
+|    | <!-- development version, includes helpful console warnings -->                          |
+|---:|:-----------------------------------------------------------------------------------------|
+|  0 | <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>                     |
+|  1 | With the framework added, you’re then able to declaratively render data to the DOM using |
+|  2 | Vue’s straightforward templating syntax:                                                 |
+|  3 | <div id="app">                                                                           |
+|  4 | {{ message }}                                                                            |
+|  5 | </div>                                                                                   |
+|  6 | and then adding the following script:                                                    |
+|  7 | var app = new Vue({                                                                      |
+|  8 | el: '#app',                                                                              |
+|  9 | data: {                                                                                  |
+| 10 | message: 'Hello Vue!'                                                                    |
+| 11 | }                                                                                        |
+| 12 | })                                                                                       |

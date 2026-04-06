@@ -1,0 +1,11 @@
+,var metadata = new Metadata
+0,{
+1,"{ ""Requester"", _clientName }"
+2,};
+3,
+4,var request = new GetPortfolioRequest
+5,{
+6,Id = portfolioId
+7,};
+8,
+9,"var response = await client.GetPortfolioAsync(request, metadata);"

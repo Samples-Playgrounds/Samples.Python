@@ -1,0 +1,1 @@
+{"0":{"0":">>> my_string.upper()\n>>> my_string.lower()\n>>> my_string.count('w')\n>>> my_string.replace('e', 'i')\n>>> my_string.strip()"},"1":{"0":"String to uppercase\nString to lowercase\nCount String elements\nReplace String elements\nStrip whitespaces"}}

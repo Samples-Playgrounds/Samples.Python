@@ -1,0 +1,14 @@
+,private bool Validate()
+0,{
+1,bool isValidUser = ValidateUserName();
+2,bool isValidPassword = ValidatePassword();
+3,return isValidUser && isValidPassword;
+4,}
+5,
+6,private bool ValidateUserName()
+7,{
+8,return _userName.Validate();
+9,}
+10,
+11,private bool ValidatePassword()
+12,{

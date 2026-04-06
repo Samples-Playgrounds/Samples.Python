@@ -1,0 +1,76 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>3.</th>
+      <th>In a text editor or Visual Studio, modify Pages/Index.cshtml again so that the &lt;h2&gt; element</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td></td>
+      <td>reads &lt;h2&gt;Simple Feed Reader - V3&lt;/h2&gt; and save the file.</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4.0</td>
+      <td>Commit the file to the local Git repository, using either the Changes page in Visual Studio’s</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td></td>
+      <td>Team Explorer tab, or by entering the following using the local machine’s command shell:</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td></td>
+      <td>:::{custom-style=CodeBox} console&nbsp;&nbsp;git commit -a -m "upgraded to V3" :::</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5.0</td>
+      <td>Using the local machine’s command shell, add the staging deployment URL as a Git remote</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td></td>
+      <td>and push the committed changes:</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td></td>
+      <td>a. Add the remote URL for staging to the local Git repository.</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td></td>
+      <td>:::{custom-style=CodeBox} console&nbsp;&nbsp;git remote add azure-staging</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td></td>
+      <td>&lt;Git_staging_deployment_URL&gt; :::</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td></td>
+      <td>b. Push the local default branch (main) to the azure-staging remote’s deployment</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td></td>
+      <td>branch (main).</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td></td>
+      <td>:::{custom-style=CodeBox} console&nbsp;&nbsp;git push azure-staging main :::</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td></td>
+      <td>Wait while Azure builds and deploys the app.</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,54 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>protected void Page_Load(object sender, EventArgs e)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>if (!User.Identity.IsAuthenticated)</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>FormsAuthentication.RedirectToLoginPage();</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>if (!Roles.IsUserInRole(User.Identity.Name, "Administrators"))</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>MessageLabel.Text = "Only administrators can view this.";</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>SecretPanel.Visible = false;</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,3 @@
+,Image,Description
+0,"mcr.microsoft.com/dotnet/sdk","For building applications with docker build. Not to be used inproduction."
+1,"mcr.microsoft.com/dotnet/aspnet","Contains the runtime and ASP.NET Core dependencies. Forproduction."

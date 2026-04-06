@@ -1,0 +1,14 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Scikit-learn is an open source Python library thatimplements a range of machine learning,preprocessing, cross-validation and visualizationalgorithms using a unified interface.A Basic Example&gt;&gt;&gt; from sklearn import neighbors, datasets, preprocessing&gt;&gt;&gt; from sklearn.model_selection import train_test_split&gt;&gt;&gt; from sklearn.metrics import accuracy_score&gt;&gt;&gt; iris = datasets.load_iris()&gt;&gt;&gt; X, y = iris.data[:, :2], iris.target&gt;&gt;&gt; X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=33)&gt;&gt;&gt; scaler = preprocessing.StandardScaler().fit(X_train)&gt;&gt;&gt; X_train = scaler.transform(X_train)&gt;&gt;&gt; X_test = scaler.transform(X_test)&gt;&gt;&gt; knn = neighbors.KNeighborsClassifier(n_neighbors=5)&gt;&gt;&gt; knn.fit(X_train, y_train)&gt;&gt;&gt; y_pred = knn.predict(X_test)&gt;&gt;&gt; accuracy_score(y_test, y_pred)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>&gt;&gt;&gt; from sklearn import neighbors, datasets, preprocessing\r&gt;&gt;&gt; from sklearn.model_selection import train_test_split\r&gt;&gt;&gt; from sklearn.metrics import accuracy_score\r&gt;&gt;&gt; iris = datasets.load_iris()\r&gt;&gt;&gt; X, y = iris.data[:, :2], iris.target\r&gt;&gt;&gt; X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=33)\r&gt;&gt;&gt; scaler = preprocessing.StandardScaler().fit(X_train)\r&gt;&gt;&gt; X_train = scaler.transform(X_train)\r&gt;&gt;&gt; X_test = scaler.transform(X_test)\r&gt;&gt;&gt; knn = neighbors.KNeighborsClassifier(n_neighbors=5)\r&gt;&gt;&gt; knn.fit(X_train, y_train)\r&gt;&gt;&gt; y_pred = knn.predict(X_test)\r&gt;&gt;&gt; accuracy_score(y_test, y_pred)</td>
+    </tr>
+  </tbody>
+</table>

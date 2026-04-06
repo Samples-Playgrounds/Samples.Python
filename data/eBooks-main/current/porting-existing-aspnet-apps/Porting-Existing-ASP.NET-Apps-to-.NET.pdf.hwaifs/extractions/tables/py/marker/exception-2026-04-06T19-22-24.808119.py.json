@@ -1,0 +1,4 @@
+Exception reading tables with marker from PDF document source = ../../../../../../../data/eBooks-main/current/porting-existing-aspnet-apps/Porting-Existing-ASP.NET-Apps-to-.NET.pdf : object of type 'MarkdownOutput' has no len()Traceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/tables-from-documents/pdf/marker/api_table_extraction_marker_TableConverter.py", line 39, in extract_tables_to_files_from_pdf_document
+    num_pages = len(rendered)
+TypeError: object of type 'MarkdownOutput' has no len()

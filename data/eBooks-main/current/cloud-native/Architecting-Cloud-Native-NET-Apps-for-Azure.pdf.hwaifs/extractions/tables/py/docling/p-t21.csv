@@ -1,0 +1,6 @@
+,Consistency Level,Description
+0,Eventual,No ordering guarantee for reads. Replicas will eventually converge.
+1,Constant Prefix,"Reads are still eventual, but data is returned in the ordering in which it is written."
+2,Session,Guarantees you can read any data written during the current session. It is the default consistency level.
+3,Bounded Staleness,Reads trail writes by interval that you specify.
+4,Strong,Reads are guaranteed to return most recent committed version of an item. A client never sees an uncommitted or partial read.

@@ -1,0 +1,23 @@
+,0,1,2,3
+0,Command,Description,Syntax,Example
+1,SELECT,"TheSELECTcommandretrieves
+datafromadatabase.","SELECT column1, column2 FROM
+table_name;","SELECT first_name, last_name
+FROM customers;"
+2,INSERT,"TheINSERTcommandaddsnew
+recordstoatable.","INSERT INTO table_name
+(column1, column2) VALUES
+(value1, value2);","INSERT INTO customers
+(first_name, last_name)
+VALUES ('Mary', 'Doe');"
+3,UPDATE,"TheUPDATEcommandisused
+tomodifyexistingrecordsina
+table.","UPDATE table_name SET column1
+= value1, column2 = value2
+WHERE condition;","UPDATE employees SET
+employee_name = ‘John Doe’,
+department = ‘Marketing’;"
+4,DELETE,"TheDELETEcommandremoves
+recordsfromatable.","DELETE FROM table_name WHERE
+condition;","DELETE FROM employees WHERE
+employee_name = ‘John Doe’;"

@@ -1,0 +1,27 @@
+,using System;
+0,using System.ComponentModel.DataAnnotations;
+1,
+2,public class Starship
+3,{
+4,[Required]
+5,"[StringLength(16,"
+6,"ErrorMessage = ""Identifier too long (16 character limit)."")]"
+7,public string Identifier { get; set; }
+8,
+9,public string Description { get; set; }
+10,
+11,[Required]
+12,public string Classification { get; set; }
+13,
+14,"[Range(1, 100000,"
+15,"ErrorMessage = ""Accommodation invalid (1-100000)."")]"
+16,public int MaximumAccommodation { get; set; }
+17,
+18,[Required]
+19,"[Range(typeof(bool), ""true"", ""true"","
+20,"ErrorMessage = ""This form disallows unapproved ships."")]"
+21,public bool IsValidatedDesign { get; set; }
+22,
+23,[Required]
+24,public DateTime ProductionDate { get; set; }
+25,}

@@ -1,0 +1,5 @@
+|    | Tip                                                                                               |
+|---:|:--------------------------------------------------------------------------------------------------|
+|  0 | The Dapr runtime as well as all of the Dapr components have been written in the Golang, or Go,    |
+|  1 | language. Go is a popular language across the open source community and attests to cross-platform |
+|  2 | commitment of Dapr.                                                                               |

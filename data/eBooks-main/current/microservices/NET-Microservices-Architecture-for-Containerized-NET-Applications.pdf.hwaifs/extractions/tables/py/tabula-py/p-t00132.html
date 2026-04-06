@@ -1,0 +1,46 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>// Program.cs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>var retryPolicy = GetRetryPolicy();</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>var circuitBreakerPolicy = GetCircuitBreakerPolicy();</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>builder.Services.AddHttpClient&lt;IBasketService, BasketService&gt;()</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>.SetHandlerLifetime(TimeSpan.FromMinutes(5))&nbsp;&nbsp;// Sample: default lifetime is 2</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>minutes</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>.AddHttpMessageHandler&lt;HttpClientAuthorizationDelegatingHandler&gt;()</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>.AddPolicyHandler(retryPolicy)</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>.AddPolicyHandler(circuitBreakerPolicy);</td>
+    </tr>
+  </tbody>
+</table>

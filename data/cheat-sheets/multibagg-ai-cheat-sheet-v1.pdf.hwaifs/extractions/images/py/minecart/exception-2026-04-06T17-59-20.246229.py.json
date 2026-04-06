@@ -1,0 +1,35 @@
+Exception reading images with minecart from PDF document source = ../../../../../../../data/cheat-sheets/multibagg-ai-cheat-sheet-v1.pdf : 'PDFGraphicState' object has no attribute 'fill_color'Traceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/api_image_extraction_minecart.py", line 36, in extract_images_from_pdf_to_files
+    for page in doc.iter_pages():
+                ~~~~~~~~~~~~~~^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/minecart/miner.py", line 337, in iter_pages
+    self.interpreter.process_page(page)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/pdfminer/pdfinterp.py", line 642, in process_page
+    self.render_contents(page.resources, page.contents, ctm=ctm)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/pdfminer/pdfinterp.py", line 652, in render_contents
+    self.execute(list_value(streams))
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/pdfminer/pdfinterp.py", line 675, in execute
+    func(*args)
+    ~~~~^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/pdfminer/pdfinterp.py", line 620, in do_Do
+    interpreter.render_contents(resources, [xobj], ctm=mult_matrix(matrix, self.ctm))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/pdfminer/pdfinterp.py", line 652, in render_contents
+    self.execute(list_value(streams))
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/pdfminer/pdfinterp.py", line 678, in execute
+    func()
+    ~~~~^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/pdfminer/pdfinterp.py", line 399, in do_f
+    self.device.paint_path(self.graphicstate, False, True, False, self.curpath)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/minecart/miner.py", line 246, in paint_path
+    fill = FillState.from_gs(graphicstate) if filled else None
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/minecart/miner.py", line 91, in from_gs
+    ret.color = graphics.fill_color
+                ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PDFGraphicState' object has no attribute 'fill_color'

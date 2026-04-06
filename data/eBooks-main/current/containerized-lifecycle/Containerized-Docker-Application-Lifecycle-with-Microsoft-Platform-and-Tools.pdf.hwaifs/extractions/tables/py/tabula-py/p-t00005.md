@@ -1,0 +1,21 @@
+|    | FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base              |
+|---:|:--------------------------------------------------------------|
+|  0 | WORKDIR /app                                                  |
+|  1 | EXPOSE 80                                                     |
+|  2 | EXPOSE 443                                                    |
+|  3 |                                                               |
+|  4 | FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build                |
+|  5 | WORKDIR /src                                                  |
+|  6 | COPY ["src/WebApi/WebApi.csproj", "src/WebApi/"]              |
+|  7 | RUN dotnet restore "src/WebApi/WebApi.csproj"                 |
+|  8 | COPY . .                                                      |
+|  9 | WORKDIR "/src/src/WebApi"                                     |
+| 10 | RUN dotnet build "WebApi.csproj" -c Release -o /app/build     |
+| 11 |                                                               |
+| 12 | FROM build AS publish                                         |
+| 13 | RUN dotnet publish "WebApi.csproj" -c Release -o /app/publish |
+| 14 |                                                               |
+| 15 | FROM base AS final                                            |
+| 16 | WORKDIR /app                                                  |
+| 17 | COPY --from=publish /app/publish .                            |
+| 18 | ENTRYPOINT ["dotnet", "WebApi.dll"]                           |

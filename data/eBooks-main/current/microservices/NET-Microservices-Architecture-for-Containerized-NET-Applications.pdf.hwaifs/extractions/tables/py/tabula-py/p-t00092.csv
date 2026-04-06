@@ -1,0 +1,20 @@
+,{
+0,"""id"": ""2024001"","
+1,"""orderDate"": ""2/25/2024"","
+2,"""buyerId"": ""1234567"","
+3,"""address"": ["
+4,{
+5,"""street"": ""100 One Microsoft Way"","
+6,"""city"": ""Redmond"","
+7,"""state"": ""WA"","
+8,"""zip"": ""98052"","
+9,"""country"": ""U.S."""
+10,}
+11,"],"
+12,"""orderItems"": ["
+13,"{""id"": 20240011, ""productId"": ""123456"", ""productName"": "".NET T-Shirt"","
+14,"""unitPrice"": 25, ""units"": 2, ""discount"": 0},"
+15,"{""id"": 20240012, ""productId"": ""123457"", ""productName"": "".NET Mug"","
+16,"""unitPrice"": 15, ""units"": 1, ""discount"": 0}"
+17,]
+18,}

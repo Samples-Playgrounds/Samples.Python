@@ -1,0 +1,1 @@
+[{"0":"int()     5, 3, 1 \n float()    5.0, 1.0\n bool()    True, True, True","1":"str()     '5', '3.45', 'True'","2":"Variables to strings\nVariables to integers\nVariables to floats\nVariables to booleans"}]

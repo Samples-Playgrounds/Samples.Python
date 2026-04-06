@@ -1,0 +1,16 @@
+{
+  "function_method_name": "extract_images_from_pdf_to_files",
+  "time_start_1": 1775491135.256175,
+  "time_end_1": 1775491135.26672,
+  "time_total_1": 0.010545015335083008,
+  "time_start_2": 907251.927250083,
+  "time_end_2": 907251.937771458,
+  "time_total_2": 0.010521374992094934,
+  "time_start_3": 907251927250125,
+  "time_end_3": 907251937771583,
+  "time_total_3": 0.010521458,
+  "num_pages": 44,
+  "pages_per_second_1": 4172.58757828574,
+  "pages_per_second_2": 4181.962911982388,
+  "pages_per_second_3": 4181.929918838245
+}

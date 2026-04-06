@@ -1,0 +1,6 @@
+,@code {
+0,int count = 0;
+1,
+2,void IncrementCount()
+3,{
+4,count++;

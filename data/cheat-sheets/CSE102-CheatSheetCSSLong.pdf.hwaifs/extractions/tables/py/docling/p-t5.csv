@@ -1,0 +1,13 @@
+,clear,left | right | both | none
+0,display,none | inline | block | inlineblock | list-item | run-in | compact | table | inlinetable | table-row-group | table-header-group | tablefooter- group | table-row | table-column-group | tablecolumn | table-cell | tablecaption | ruby | ruby-base | ruby-text | ruby-base-group | ruby-text-group
+1,float,left | right | none
+2,height,auto length %
+3,max-height,none length %
+4,max-width,none length %
+5,min-height,none | inherit length %
+6,min-width,none | inherit length %
+7,width,auto % length
+8,margin,margin margin-top margin-right margin-bottom margin-left
+9,margin-bottom,auto length %
+10,margin-left,auto length %
+11,margin-right,auto length %

@@ -1,0 +1,7 @@
+Exception reading images with minecart from PDF document source = ../../../../../../../data/cheat-sheets/python-cheatsheet.pdf : Colorspace 'ICCBased' is not supportedTraceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/api_image_extraction_minecart.py", line 40, in extract_images_from_pdf_to_files
+    im = im1.as_pil()  # requires pillow
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/images-from-documents/pdf/minecart/.venv/lib/python3.14/site-packages/minecart/content.py", line 362, in as_pil
+    raise pdfminer.pdftypes.PDFNotImplementedError(
+        "Colorspace %r is not supported" % colorspace)
+pdfminer.pdftypes.PDFNotImplementedError: Colorspace 'ICCBased' is not supported

@@ -1,0 +1,114 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>using eShopLegacyWebForms.Models;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>using eShopLegacyWebForms.Services;</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>using log4net;</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>using System;</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>using System.Web.UI;</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>namespace eShopLegacyWebForms.Catalog</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>public partial class Details : System.Web.UI.Page</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>private static readonly ILog _log =</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>protected CatalogItem product;</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>public ICatalogService CatalogService { get; set; }</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>protected void Page_Load(object sender, EventArgs e)</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>var productId = Convert.ToInt32(Page.RouteData.Values["id"]);</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>_log.Info($"Now loading... /Catalog/Details.aspx?id={productId}");</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>product = CatalogService.FindCatalogItem(productId);</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>this.DataBind();</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

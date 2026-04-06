@@ -1,0 +1,3 @@
+|    | 0             | 1                                                    |
+|---:|:--------------|:-----------------------------------------------------|
+|  0 | git rm [file] | Remove file from working directory and staging area. |

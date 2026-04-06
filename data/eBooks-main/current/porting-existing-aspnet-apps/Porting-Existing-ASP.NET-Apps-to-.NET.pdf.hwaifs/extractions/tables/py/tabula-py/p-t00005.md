@@ -1,0 +1,9 @@
+|    | app.UseEndpoints(endpoints =>                                 |
+|---:|:--------------------------------------------------------------|
+|  0 | {                                                             |
+|  1 | endpoints.MapHealthChecks("/healthz").RequireAuthorization(); |
+|  2 | endpoints.MapControllerRoute(                                 |
+|  3 | name: "default",                                              |
+|  4 | pattern: "{controller=Home}/{action=Index}/{id?}");           |
+|  5 | endpoints.MapRazorPages();                                    |
+|  6 | });                                                           |

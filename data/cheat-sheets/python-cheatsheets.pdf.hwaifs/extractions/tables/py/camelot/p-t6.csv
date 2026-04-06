@@ -1,0 +1,16 @@
+,0,1
+0,">>> my_array.shape
+>>> np.append(other_array)
+>>> np.insert(my_array, 1, 5)
+>>> np.delete(my_array,[1])
+>>> np.mean(my_array)
+>>> np.median(my_array)
+>>> my_array.corrcoef()
+>>> np.std(my_array)","Get the dimensions of the array
+Append items to an array
+Insert items in an array
+Delete items in an array
+Mean of the array
+Median of the array
+Correlation coefficient
+Standard deviation"

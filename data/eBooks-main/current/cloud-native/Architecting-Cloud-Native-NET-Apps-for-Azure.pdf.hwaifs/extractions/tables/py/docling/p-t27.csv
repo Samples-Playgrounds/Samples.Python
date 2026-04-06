@@ -1,0 +1,2 @@
+,0,1
+0,apply -f ./secret.yaml,kubectl

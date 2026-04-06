@@ -1,0 +1,3 @@
+,Method,Runtime,Mean,Ratio
+0,FindEnum,.NET 6.0,421.608 ns,1.00
+1,FindEnum,.NET 7.0,5.466 ns,0.01

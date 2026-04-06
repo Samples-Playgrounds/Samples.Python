@@ -1,0 +1,6 @@
+"int()     5, 3, 1 
+ float()    5.0, 1.0
+ bool()    True, True, True","str()     '5', '3.45', 'True'","Variables to strings
+Variables to integers
+Variables to floats
+Variables to booleans"

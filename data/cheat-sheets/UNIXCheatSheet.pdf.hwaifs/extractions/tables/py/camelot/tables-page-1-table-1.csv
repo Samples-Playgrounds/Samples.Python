@@ -1,0 +1,68 @@
+"Command
+Description
+Examples and Options","",""
+"<tab>
+Attempt to autocomplete
+Use this to speed up typing/avoid typos","",""
+"Navigating Directories","",""
+"ls","List the contents of the directory.","ls -larth
+/home/mcuser/science/code"
+"cd","Change directory.","cd /home/mcuser/science"
+"pwd","present w orking d irectory.","pwd"
+"*","Wild card, any number of chars.","ls *.txt"
+"?","Wild card, 0 or 1 characters.","ls foo?.txt"
+".","Current directory.","cd ."
+"..","Directory one level up.","cd .."
+"~","Home directory.","cd ~"
+"-","Previous directory.","cd -"
+"Modifying Directories and Files","",""
+"mkdir","Make new empty directory.","mkdir MyNewDirectory"
+"rmdir","Remove empty directory.","rmdir MyNewDirectory"
+"mv","Move ﬁles (overwrites destination).","mv -i
+foo.txt foo2.txt"
+"cp","Copy ﬁles (overwrites destination).","cp -i
+../foo.txt
+."
+"rm","Remove ﬁles. CANNOT UNDO!","rm -i
+foo.txt"
+"chmod","Change ﬁle permissions.
+rwx = read, write, execute.
+ugoa = user, group, other, all.","chmod a+rwx
+badger.txt
+chmod o-wx
+badger.txt
+chmod u+x
+myscript.sh"
+"Viewing Files in Terminal","",""
+"less","View ﬁles in terminal window.","less foo.txt"
+"cat","Concatenate ﬁles.","cat foo1.txt foo2.txt"
+"head","Display ﬁrst 10 lines.","head -20
+foo.txt"
+"tail","Display last 10 lines.","tail -f
+logfile.txt"
+"Searching","",""
+"grep","Search for word(s) in a ﬁle.","grep myvarname *.txt
+grep rodent
+*.txt
+grep ""Hello
+World""
+*.txt"
+"find","Search
+a
+path
+for
+ﬁles/directories
+that match some speciﬁcation.","find playground -name
+""*.txt""
+find playground -type
+d
+find playground -not
+-name
+""*.txt"""
+"Environment Variables","",""
+"$HOME","Home directory.","workpath=$HOME/playground"
+"$SHELL","Shell name.","echo $SHELL"
+"$USER","User name.","echo $USER"
+"$PATH","Paths to look in for executables.","PATH=${PATH}:/my/new/program/path/bin"
+"env","List environment vars and values.","env |
+less"

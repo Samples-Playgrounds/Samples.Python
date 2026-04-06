@@ -1,0 +1,7 @@
+,0,1
+0,voice-family,"inherit | [ <specific-voice, age, generic-voice, number> ]"
+1,voice-rate,x-slow | slow | medium | fast | x-fast | inherit %
+2,voice-pitch,x-low | low | medium | high | x-high | inherit number %
+3,voice-pitch-range,x-low | low | medium | high | x-high | inherit number
+4,voice-stress,strong | moderate | none | reduced | inherit
+5,voice-volume,silent | x-soft | soft | medium | loud | x-loud | inherit number %

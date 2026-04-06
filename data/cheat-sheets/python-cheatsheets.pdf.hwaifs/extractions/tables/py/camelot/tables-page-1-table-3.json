@@ -1,0 +1,1 @@
+[{"0":"Subset\n>>> my_array[1]\n   2\n  Slice\n>>> my_array[0:2]\n   array([1, 2])\n  Subset 2D Numpy arrays\n>>> my_2darray[:,0]\n   array([1, 4])","1":"Select item at index 1\nSelect items at index 0 and 1\nmy_2darray[rows, columns]"}]

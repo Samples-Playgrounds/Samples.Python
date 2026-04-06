@@ -1,0 +1,3 @@
+,and,"rax,rcx"
+0,and,"rdx,rcx"
+1,cmp,"rax,rdx"

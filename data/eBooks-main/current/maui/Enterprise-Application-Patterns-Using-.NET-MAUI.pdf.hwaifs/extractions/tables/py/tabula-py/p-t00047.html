@@ -1,0 +1,70 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>public ValidatableObject&lt;string&gt; UserName { get; private set; }</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>public ValidatableObject&lt;string&gt; Password { get; private set; }</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>For validation to occur, validation rules must be added to the Validations collection of</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>each ValidatableObject&lt;T&gt; instance, as demonstrated in the following code example:</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>private void AddValidations()</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>UserName.Validations.Add(new IsNotNullOrEmptyRule&lt;string&gt;</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>ValidationMessage = "A username is required."</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>});</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Password.Validations.Add(new IsNotNullOrEmptyRule&lt;string&gt;</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>ValidationMessage = "A password is required."</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>});</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

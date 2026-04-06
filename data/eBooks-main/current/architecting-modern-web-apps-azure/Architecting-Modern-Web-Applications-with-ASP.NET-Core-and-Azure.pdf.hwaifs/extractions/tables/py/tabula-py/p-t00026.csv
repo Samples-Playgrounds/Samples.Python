@@ -1,0 +1,5 @@
+,"[Authorize(Roles = ""HRManager,Finance"")]"
+0,public class SalaryController : Controller
+1,{
+2,
+3,}

@@ -1,0 +1,4 @@
+|    | 0                  | 1                                    |
+|---:|:-------------------|:-------------------------------------|
+|  0 | >>> a.sort()       | Sort an array                        |
+|  1 | >>> c.sort(axis=0) | Sort the elements of an array's axis |

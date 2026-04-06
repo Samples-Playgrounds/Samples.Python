@@ -1,0 +1,3 @@
+|    | Note                                              |
+|---:|:--------------------------------------------------|
+|  0 | If any of the tests fail, the workflow will fail. |

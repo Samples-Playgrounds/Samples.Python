@@ -1,0 +1,30 @@
+,<h1>New Ship Entry Form</h1>
+0,
+1,"<EditForm Model=""@starship"" OnValidSubmit=""@HandleValidSubmit"">"
+2,<DataAnnotationsValidator />
+3,<ValidationSummary />
+4,
+5,<p>
+6,"<label for=""identifier"">Identifier: </label>"
+7,"<InputText id=""identifier"" @bind-Value=""starship.Identifier"" />"
+8,"<ValidationMessage For=""() => starship.Identifier"" />"
+9,</p>
+10,<p>
+11,"<label for=""description"">Description (optional): </label>"
+12,"<InputTextArea id=""description"" @bind-Value=""starship.Description"" />"
+13,</p>
+14,<p>
+15,"<label for=""classification"">Primary Classification: </label>"
+16,"<InputSelect id=""classification"" @bind-Value=""starship.Classification"">"
+17,"<option value="""">Select classification ...</option>"
+18,"<option value=""Exploration"">Exploration</option>"
+19,"<option value=""Diplomacy"">Diplomacy</option>"
+20,"<option value=""Defense"">Defense</option>"
+21,</InputSelect>
+22,"<ValidationMessage For=""() => starship.Classification"" />"
+23,</p>
+24,<p>
+25,"<label for=""accommodation"">Maximum Accommodation: </label>"
+26,"<InputNumber id=""accommodation"" @bind-Value=""starship.MaximumAccommodation"" />"
+27,"<ValidationMessage For=""() => starship.MaximumAccommodation"" />"
+28,</p>

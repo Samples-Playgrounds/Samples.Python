@@ -1,0 +1,1 @@
+,http://localhost:<dapr-port>/v1.0/publish/<pub-sub-name>/<topic>

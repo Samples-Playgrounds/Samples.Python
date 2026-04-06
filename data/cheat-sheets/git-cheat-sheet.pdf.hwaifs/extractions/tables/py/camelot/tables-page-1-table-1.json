@@ -1,0 +1,1 @@
+[{"0":"git config --global \nuser.name \u201cYour Name\u201d","1":"Set the name that will be attached to your commits and tags."},{"0":"git config --global \nuser.email \u201cyou@example.\ncom\u201d","1":"Set the e-mail address that will be attached to your commits \nand tags."},{"0":"git config --global \ncolor.ui auto","1":"Enable some colorization of Git output."}]

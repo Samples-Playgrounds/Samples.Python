@@ -1,0 +1,6 @@
+,catalog-api:
+0,image: eshop/catalog-api
+1,environment:
+2,- ConnectionString=Server=sqldata;Initial Catalog=CatalogData;User
+3,Id=sa;Password=[PLACEHOLDER]
+4,expose:

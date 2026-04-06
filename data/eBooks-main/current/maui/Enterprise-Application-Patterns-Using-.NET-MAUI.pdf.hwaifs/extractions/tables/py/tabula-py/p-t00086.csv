@@ -1,0 +1,5 @@
+,[Authorize]
+0,public sealed class BasketController : Controller
+1,{
+2,// Omitted for brevity
+3,}

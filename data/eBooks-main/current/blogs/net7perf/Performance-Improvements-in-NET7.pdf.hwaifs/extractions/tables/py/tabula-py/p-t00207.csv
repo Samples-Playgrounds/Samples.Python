@@ -1,0 +1,5 @@
+,"private char[] text = ""Free. Cross-platform. Open source.\r\nA developer platform for"
+0,"building all your apps."".ToCharArray();"
+1,
+2,[Benchmark]
+3,public void Reverse() => Array.Reverse(text);

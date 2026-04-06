@@ -1,0 +1,8 @@
+,"== DAPR == time=""2021-01-12T16:11:39.4669323+01:00"" level=info msg=""starting Dapr Runtime -"
+0,"- version 1.0 -- commit 196483d"" app_id=finecollectionservice instance=TSTSRV03"
+1,scope=dapr.runtime type=log ver=1.0
+2,"== DAPR == time=""2021-01-12T16:11:39.467933+01:00"" level=info msg=""log level set to: info"""
+3,app_id=finecollectionservice instance=TSTSRV03 scope=dapr.runtime type=log ver=1.0
+4,"== DAPR == time=""2021-01-12T16:11:39.467933+01:00"" level=info msg=""metrics server started"
+5,"on :62408/"" app_id=finecollectionservice instance=TSTSRV03 scope=dapr.metrics type=log"
+6,ver=1.0

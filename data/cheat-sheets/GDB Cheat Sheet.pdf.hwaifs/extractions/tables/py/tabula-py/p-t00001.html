@@ -1,0 +1,96 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>GDB cheatsheet - page 1</th>
+      <th>Unnamed: 1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Running</td>
+      <td>&lt;where&gt;</td>
+      <td>next</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td># gdb &lt;program&gt; [core dump]</td>
+      <td>function_name</td>
+      <td>Go to next instruction (source line) but</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Start GDB (with optional core dump).</td>
+      <td>Break/watch the named function.</td>
+      <td>donʻt dive into functions.</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td># gdb --args &lt;program&gt; &lt;args...&gt;</td>
+      <td>line_number</td>
+      <td>finish</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Start GDB and pass arguments</td>
+      <td>Break/watch the line number in the cur-</td>
+      <td>Continue until the current function re-</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td></td>
+      <td>rent source file.</td>
+      <td>turns.</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td># gdb --pid &lt;pid&gt;</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Start GDB and attach to process.</td>
+      <td>file:line_number</td>
+      <td>continue</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td></td>
+      <td>Break/watch the line number in the</td>
+      <td>Continue normal execution.</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>set args &lt;args...&gt;</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td></td>
+      <td>named source file.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Set arguments to pass to program to</td>
+      <td></td>
+      <td>Variables and memory</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>be debugged.</td>
+      <td>Conditions</td>
+      <td>print/format &lt;what&gt;</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>run</td>
+      <td>break/watch &lt;where&gt; if &lt;condition&gt;</td>
+      <td>Print content of variable/memory locati-</td>
+    </tr>
+  </tbody>
+</table>

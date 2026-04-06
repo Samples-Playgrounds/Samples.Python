@@ -1,0 +1,5 @@
+|    | Useful MS Office File Analysis                    | Commands                                                                  |
+|---:|:--------------------------------------------------|:--------------------------------------------------------------------------|
+|  0 | zipdump.py file.pptx zipdump.py file.pptx -s 3 -d | Examine contents of OOXML file file.pptx . Extract file with index 3 from |
+|  1 |                                                   | file.pptx to STDOUT.                                                      |
+|  2 | olevba file.xlsm                                  | Locate and extract macros from file.xlsm .                                |

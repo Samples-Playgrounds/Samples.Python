@@ -1,0 +1,74 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>provider "azurerm" {</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>version = "=1.28.0"</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>resource "azurerm_resource_group" "testrg" {</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>name&nbsp;&nbsp;&nbsp;&nbsp; = "production"</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>location = "West US"</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>resource "azurerm_storage_account" "testsa" {</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = "${var.storageAccountName}"</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>resource_group_name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= "${azurerm_resource_group.testrg.name}"</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>location&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = "${var.region}"</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>account_tier&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = "${var.tier}"</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>account_replication_type = "${var.replicationType}"</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

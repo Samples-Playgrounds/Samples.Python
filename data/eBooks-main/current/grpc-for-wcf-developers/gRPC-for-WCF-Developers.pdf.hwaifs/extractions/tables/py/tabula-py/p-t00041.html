@@ -1,0 +1,62 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>public async Task&lt;GetPortfolioResponse&gt; GetPortfolio(GetPortfolioRequest request,</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ServerCallContext context)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>var user = context.GetHttpContext().User;</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>if (!ValidateUser(user))</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>var metadata = new Metadata</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>{ "User", user.Identity.Name }</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>};</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>throw new RpcException(new Status(StatusCode.PermissionDenied, "Permission</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>denied"), metadata);</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>}</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,4 @@
+,Command,Description,Syntax,Example
+0,UNION,The UNION operator combines the result sets of two or more SELECT statements into a single result set.,"SELECT column1, column2 FROM table1 UNION SELECT column1, column2 FROM table2;","SELECT first_name, last_name FROM customers UNION SELECT first_name, last_name FROM employees;"
+1,INTERSECT,The INTERSECT operator returns the common rows that appear in both result sets.,"SELECT column1, column2 FROM table1 INTERSECT SELECT column1, column2 FROM table2;","SELECT first_name, last_name FROM customers INTERSECT SELECT first_name, last_name FROM employees;"
+2,EXCEPT,The EXCEPT operator returns the distinct rows from the left result set that are not present in the right result set.,"SELECT column1, column2 FROM table1 EXCEPT SELECT column1, column2 FROM table2;","SELECT first_name, last_name FROM customers EXCEPT SELECT first_name, last_name FROM employees;"

@@ -1,0 +1,1 @@
+{"0":{"0":"pd.melt(df)\n  Gather columns into rows.","1":"pd.concat([df1,df2])\n  Append rows of DataFrames"},"1":{"0":"df.pivot(columns='var', values='val')\n  Spread rows into columns.","1":"pd.concat([df1,df2], axis=1)\n  Append columns of DataFrames"}}

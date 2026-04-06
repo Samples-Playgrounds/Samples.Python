@@ -1,0 +1,6 @@
+,# docker-compose.yml
+0,version: '3.4'
+1,services:
+2,# ...Other services...
+3,nosqldata:
+4,image: mongo

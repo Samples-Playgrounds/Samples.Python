@@ -1,0 +1,7 @@
+,0,1
+0,⇧⌘ T,Reopen closed editor
+1,⌘ K Enter,Keep preview mode editor open
+2,⌃ Tab / ⌃⇧ Tab,Open next / previous
+3,⌘ K P,Copy path of active file
+4,⌘ K R,Reveal active file in Finder
+5,⌘ K O,Show active file in new window/instance

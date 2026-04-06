@@ -1,0 +1,18 @@
+,<configuration>
+0,<system.diagnostics>
+1,<switches>
+2,"<add name=""General"" value=""4"" />"
+3,</switches>
+4,"<trace autoflush=""true"" indentsize=""2"">"
+5,<listeners>
+6,"<add name=""myListener"""
+7,"type=""System.Diagnostics.TextWriterTraceListener,"
+8,"System, Version=1.0.3300.0, Culture=neutral,"
+9,"PublicKeyToken=b77a5c561934e089"""
+10,"initializeData=""MyListener.log"""
+11,"traceOutputOptions=""ProcessId, LogicalOperationStack, Timestamp,"
+12,"ThreadId, Callstack, DateTime"" />"
+13,</listeners>
+14,</trace>
+15,</system.diagnostics>
+16,</configuration>

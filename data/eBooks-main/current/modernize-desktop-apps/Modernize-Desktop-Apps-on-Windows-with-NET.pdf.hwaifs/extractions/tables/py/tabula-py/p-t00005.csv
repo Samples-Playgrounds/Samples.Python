@@ -1,0 +1,6 @@
+,"<Project Sdk=""Microsoft.NET.Sdk"">"
+0,<PropertyGroup>
+1,<OutputType>WinExe</OutputType>
+2,<TargetFramework>net7.0-windows</TargetFramework>
+3,<UseWindowsForms>true</UseWindowsForms>
+4,<GenerateAssemblyInfo>false</GenerateAssemblyInfo>

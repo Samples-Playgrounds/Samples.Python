@@ -1,0 +1,7 @@
+,// Includes all expression-based includes
+0,"query = specification.Includes.Aggregate(query,"
+1,"(current, include) => current.Include(include));"
+2,
+3,// Include any string-based include statements
+4,"query = specification.IncludeStrings.Aggregate(query,"
+5,"(current, include) => current.Include(include));"

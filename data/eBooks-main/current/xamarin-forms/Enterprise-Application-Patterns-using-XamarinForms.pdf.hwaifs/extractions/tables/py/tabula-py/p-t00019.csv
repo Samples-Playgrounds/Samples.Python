@@ -1,0 +1,4 @@
+,"public async Task<CustomerBasket> UpdateBasketAsync(CustomerBasket customerBasket, string token)"
+0,{
+1,UriBuilder builder = new UriBuilder(GlobalSetting.Instance.BasketEndpoint);
+2,string uri = builder.ToString();

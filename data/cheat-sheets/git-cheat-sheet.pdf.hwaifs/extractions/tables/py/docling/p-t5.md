@@ -1,0 +1,5 @@
+|    | 0              | 1                                                                       |
+|---:|:---------------|:------------------------------------------------------------------------|
+|  0 | git stash      | Put current changes in your working directory into stash for later use. |
+|  1 | git stash pop  | Apply stored stash content into working directory, and clear stash.     |
+|  2 | git stash drop | Delete a specific stash from all your previous stashes.                 |

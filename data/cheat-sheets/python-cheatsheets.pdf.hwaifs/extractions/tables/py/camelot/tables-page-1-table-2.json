@@ -1,0 +1,1 @@
+[{"0":">>> x+2                Sum of two variables\n 7 \n>>> x-2                Subtraction of two variables\n 3\n>>> x*2                Multiplication of two variables\n 10\n>>> x**2               Exponentiation of a variable\n 25\n>>> x%2                Remainder of a variable\n 1\n>>> x\/float(2)          Division of a variable\n 2.5","1":""}]

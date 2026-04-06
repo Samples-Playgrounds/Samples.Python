@@ -1,0 +1,411 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Command mode</th>
+      <th>versus</th>
+      <th>input</th>
+      <th>mode</th>
+      <th>Unnamed: 0</th>
+      <th>File management commands</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Vi starts in command mode. The positioning commands</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>:w name Write edit buffer to file name</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>operate only while vi is in command mode. You switch vi</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>:wq Write to file and quit</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>to input mode by entering any one of several vi input com-</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>:q! Quit without saving changes</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>mands. (See next section.) Once in input mode, any charac-</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>ZZ Same as :wq</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ter you type is taken to be text and is added to the file. You</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>:sh Execute shell commands (&lt;ctrl&gt;d)</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>cannot execute any commands until you exit input mode.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>To exit input mode, press the escape (Esc) key.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Window motions</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Input commands (end with Esc)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ctrl&gt;d Scroll down&nbsp;&nbsp;(half a screen)</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ctrl&gt;u Scroll up&nbsp;&nbsp;(half a screen)</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>a Append after cursor</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ctrl&gt;f Page forward</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>i Insert before cursor</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ctrl&gt;b Page backward</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>o Open line below</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>/string Search forward</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>O Open line above</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>?string Search backward</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>:r file Insert file&nbsp;&nbsp;after current line</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ctrl&gt;l Redraw screen</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Any of these commands leaves vi in input mode until you</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ctrl&gt;g Display current line number and</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>press Esc. Pressing the RETURN key will not take you out</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>file information</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>of input mode.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>n Repeat search</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>N Repeat search reverse</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Change commands</td>
+      <td>(Input</td>
+      <td>mode)</td>
+      <td></td>
+      <td></td>
+      <td>G Go to last line</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>nG Go to line n</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>cw Change word (Esc)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>:n Go to line n</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>cc Change line (Esc) - blanks line</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>z&lt;CR&gt; Reposition window: cursor at top</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>c$ Change to end of line</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>z. Reposition window: cursor in middle</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>rc Replace character with c</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>z- Reposition window: cursor at bottom</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>R Replace (Esc) - typeover</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>s Substitute (Esc) - 1 char with string</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>S Substitute (Esc) - Rest of line with</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Cursor motions</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>text</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>H Upper left corner (home)</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>. Repeat last change</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>M Middle line</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>L Lower left corner</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>Changes during</td>
+      <td>insert mode</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>h Back a character</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,42 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>// Extension method from Catalog.api microservice</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>//</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>public static IServiceCollection AddCustomHealthCheck(this IServiceCollection services,</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>IConfiguration configuration)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>{</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>var accountName = configuration.GetValue&lt;string&gt;("AzureStorageAccountName");</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>var accountKey = configuration.GetValue&lt;string&gt;("AzureStorageAccountKey");</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>var hcBuilder = services.AddHealthChecks();</td>
+    </tr>
+  </tbody>
+</table>
