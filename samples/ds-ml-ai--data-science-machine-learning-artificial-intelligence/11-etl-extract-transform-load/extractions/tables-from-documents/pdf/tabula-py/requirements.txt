@@ -4,9 +4,9 @@ et_xmlfile==2.0.0
 jpype1==1.6.0
 numpy==2.4.4
 openpyxl==3.1.5
-orjson==3.11.7
+orjson==3.11.8
 packaging==26.0
-pandas==3.0.1
+pandas==3.0.2
 python-dateutil==2.9.0.post0
 six==1.17.0
 tabula-py==2.10.0
