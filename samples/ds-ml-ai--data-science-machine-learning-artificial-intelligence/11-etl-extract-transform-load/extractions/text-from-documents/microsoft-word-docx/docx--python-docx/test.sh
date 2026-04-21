@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LIBRARY=docx
+LIBRARY=python-docx
 figlet $LIBRARY
 figlet start
 
