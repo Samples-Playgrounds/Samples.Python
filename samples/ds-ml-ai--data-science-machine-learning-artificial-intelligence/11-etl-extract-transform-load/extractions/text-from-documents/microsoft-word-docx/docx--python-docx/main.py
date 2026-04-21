@@ -29,11 +29,11 @@ scriptpath = "../../../../../"
 sys.path.append(os.path.abspath(scriptpath))
 from data import *
 
-sources = files_private
+sources = files_documents_docxs
 
 def main():
    for source in sources:
-      if source.endswith(".docx"):
+      if source.endswith(".docx") or source.endswith(".doc"):
          print(f"python-docx <- source = {source}")
          result_txt = api.extract_text_to_file_from_docx_document(source)
 
