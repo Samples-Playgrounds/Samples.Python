@@ -166,12 +166,10 @@ files_documents_rtfs_public = [
 ]
 
 files_documents_docxs_public = [
+   f"{root}/pravno/zakoni/kazneni-zakon.docx",
    f"{root}/microsoft/word-docx-doc/file-sample_500kB.doc",
    f"{root}/microsoft/word-docx-doc/file-sample_1MB.doc",
    f"{root}/microsoft/word-docx-doc/file-sample_100kB.doc",
-]
-files_documents_docxs_public = [
-   f"{root}/pravno/zakoni/kazneni-zakon.docx",
    f"{root}/microsoft/word-docx-doc/NET 6.0 - ASP.NET Core Project Templates.Web.EN.docx",
    f"{root}/microsoft/word-docx-doc/visualStudioAsp.netTutorial.docx",
    f"{root}/microsoft/word-docx-doc/file-sample_100kB.docx",
@@ -277,6 +275,13 @@ files_documents_pdfs = \
             files_documents_pdfs_legal_private \
             + \
             files_documents_pdfs_legal_public
+
+files_documents_docxs = \
+            files_documents_docx_book_kif_private \
+            + \
+            files_documents_docx_strives_ai_private \
+            + \
+            files_documents_docxs_public
 
 files_documents_public = \
             files_documents_pdfs \
