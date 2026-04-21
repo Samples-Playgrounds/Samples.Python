@@ -1,0 +1,26 @@
+Exception reading text with python-docx from DOCX document source = ../../../../../../../data/microsoft/word-docx-doc/file-sample_1MB.doc : "There is no item named '[Content_Types].xml' in the archive"Traceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/microsoft-word-docx/docx--python-docx/api_text_extraction_docx.py", line 31, in extract_text_to_file_from_docx_document
+    doc = Document(source_file)
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/microsoft-word-docx/docx--python-docx/.venv/lib/python3.14/site-packages/docx/api.py", line 27, in Document
+    document_part = cast("DocumentPart", Package.open(docx).main_document_part)
+                                         ~~~~~~~~~~~~^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/microsoft-word-docx/docx--python-docx/.venv/lib/python3.14/site-packages/docx/opc/package.py", line 126, in open
+    pkg_reader = PackageReader.from_file(pkg_file)
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/microsoft-word-docx/docx--python-docx/.venv/lib/python3.14/site-packages/docx/opc/pkgreader.py", line 23, in from_file
+    content_types = _ContentTypeMap.from_xml(phys_reader.content_types_xml)
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/microsoft-word-docx/docx--python-docx/.venv/lib/python3.14/site-packages/docx/opc/phys_pkg.py", line 92, in content_types_xml
+    return self.blob_for(CONTENT_TYPES_URI)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/microsoft-word-docx/docx--python-docx/.venv/lib/python3.14/site-packages/docx/opc/phys_pkg.py", line 83, in blob_for
+    return self._zipf.read(pack_uri.membername)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/zipfile/__init__.py", line 1681, in read
+    with self.open(name, "r", pwd) as fp:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/zipfile/__init__.py", line 1718, in open
+    zinfo = self.getinfo(name)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/zipfile/__init__.py", line 1646, in getinfo
+    raise KeyError(
+        'There is no item named %r in the archive' % name)
+KeyError: "There is no item named '[Content_Types].xml' in the archive"

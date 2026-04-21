@@ -1,0 +1,47 @@
+
+EN 301 549 Accessibility Declaration of Conformance
+
+Date of Report: February 3, 2022
+Name of Product: NET 6.0 - ASP.NET Core Project Templates
+Description of Product: .NET is a developer platform made up of tools, programming languages, and libraries for building many different types of applications. ASP.NET Core is a cross-platform, high-performance, open-source framework for building modern, cloud-enabled, Internet-connected apps. The templates provided for ASP .NET Core developer a way to easily create new projects either from within Visual Studio, or from the .NET command line. For the most accessible experience use the latest release of .NET and Visual Studio for your web applications.
+Platform: Web
+Product Build: 6.0.100
+Accessibility website: Microsoft Accessibility
+For assistance with this report, please email us.
+
+Section 1 Scope
+This EN 301 549 V2.1.2 (PDF) Accessibility Conformance Report specifies the functional accessibility requirements applicable to Microsoft ICT products and services.
+Section 2 References
+Section 3 Definitions and abbreviations
+Section 4 Functional Statements
+
+Functional Accessibility Requirements
+Section 5 Generic Requirements
+
+
+Section 6 ICT with two-way voice communication
+This section does not apply to NET 6.0 - ASP.NET Core Project Templates.
+
+Section 7 ICT with video capabilities
+This section does not apply to NET 6.0 - ASP.NET Core Project Templates.
+
+Section 8 Hardware
+This section does not apply to NET 6.0 - ASP.NET Core Project Templates.
+
+Section 9 Web
+This section does not apply to NET 6.0 - ASP.NET Core Project Templates.
+
+Section 10 Non-web documents
+This section does not apply to NET 6.0 - ASP.NET Core Project Templates.
+
+Section 11 Software
+
+
+Section 11 Software – Closed Functionality
+This section does not apply to NET 6.0 - ASP.NET Core Project Templates.
+
+Section 12 Documentation and support services
+
+
+Section 13 ICT providing relay or emergency service access
+This section does not apply to NET 6.0 - ASP.NET Core Project Templates.
