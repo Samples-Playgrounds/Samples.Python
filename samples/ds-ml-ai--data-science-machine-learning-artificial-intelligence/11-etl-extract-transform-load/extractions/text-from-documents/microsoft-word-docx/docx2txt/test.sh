@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LIBRARY=docx
+LIBRARY=docx2txt
 figlet $LIBRARY
 figlet start
 
@@ -15,7 +15,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
 
-pip install python-docx
+pip install docx2txt
 
 pip install orjson
 pip install timer
