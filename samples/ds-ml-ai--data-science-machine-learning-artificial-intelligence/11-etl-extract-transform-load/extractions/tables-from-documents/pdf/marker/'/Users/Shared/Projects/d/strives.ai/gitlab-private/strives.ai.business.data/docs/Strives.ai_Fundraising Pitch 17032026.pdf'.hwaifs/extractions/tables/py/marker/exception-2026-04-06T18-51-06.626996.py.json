@@ -1,0 +1,20 @@
+Exception reading tables with marker from PDF document source = '/Users/Shared/Projects/d/strives.ai/gitlab-private/strives.ai.business.data/docs/Strives.ai_Fundraising Pitch 17032026.pdf' : [Errno 2] No such file or directory: "'/Users/Shared/Projects/d/strives.ai/gitlab-private/strives.ai.business.data/docs/Strives.ai_Fundraising Pitch 17032026.pdf'"Traceback (most recent call last):
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/tables-from-documents/pdf/marker/api_table_extraction_marker_TableConverter.py", line 37, in extract_tables_to_files_from_pdf_document
+    rendered = converter(source_file)
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/tables-from-documents/pdf/marker/.venv/lib/python3.14/site-packages/marker/converters/table.py", line 53, in __call__
+    document = self.build_document(filepath)
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/tables-from-documents/pdf/marker/.venv/lib/python3.14/site-packages/marker/converters/table.py", line 32, in build_document
+    provider_cls = provider_from_filepath(filepath)
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/tables-from-documents/pdf/marker/.venv/lib/python3.14/site-packages/marker/providers/registry.py", line 60, in provider_from_filepath
+    if filetype.image_match(filepath) is not None:
+       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/tables-from-documents/pdf/marker/.venv/lib/python3.14/site-packages/filetype/match.py", line 53, in image_match
+    return match(obj, image_matchers)
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/tables-from-documents/pdf/marker/.venv/lib/python3.14/site-packages/filetype/match.py", line 30, in match
+    buf = get_bytes(obj)
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/tables-from-documents/pdf/marker/.venv/lib/python3.14/site-packages/filetype/utils.py", line 64, in get_bytes
+    return get_signature_bytes(obj)
+  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/tables-from-documents/pdf/marker/.venv/lib/python3.14/site-packages/filetype/utils.py", line 24, in get_signature_bytes
+    with open(path, 'rb') as fp:
+         ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: "'/Users/Shared/Projects/d/strives.ai/gitlab-private/strives.ai.business.data/docs/Strives.ai_Fundraising Pitch 17032026.pdf'"
