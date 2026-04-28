@@ -6,10 +6,10 @@ with custom tools for web search and strategic thinking.
 """
 
 from agents.agent_deep_research.prompts import (
-    RESEARCHER_INSTRUCTIONS,
-    RESEARCH_WORKFLOW_INSTRUCTIONS,
-    SUBAGENT_DELEGATION_INSTRUCTIONS,
-)
+                                                    RESEARCHER_INSTRUCTIONS,
+                                                    RESEARCH_WORKFLOW_INSTRUCTIONS,
+                                                    SUBAGENT_DELEGATION_INSTRUCTIONS,
+                                                )
 from agents.agent_deep_research.tools import tavily_search, think_tool
 
 __all__ = [
