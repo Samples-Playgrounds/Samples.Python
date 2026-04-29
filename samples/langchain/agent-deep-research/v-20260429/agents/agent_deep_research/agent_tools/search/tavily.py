@@ -10,6 +10,7 @@ using Tavily for URL discovery and fetching full webpage content.
 from typing_extensions import Annotated, Literal
 from langchain_core.tools import InjectedToolArg, tool
 from tavily import TavilyClient
+from agents.agent_deep_research.tools import fetch_webpage_content
 
 tavily_client = TavilyClient()
 
