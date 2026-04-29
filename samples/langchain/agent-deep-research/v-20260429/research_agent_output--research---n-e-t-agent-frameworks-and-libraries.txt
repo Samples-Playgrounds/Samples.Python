@@ -521,3 +521,818 @@ https://www.digitalapplied.com/blog/microsoft-agent-framework-1-0-dotnet-python-
 **LangChain for .NET** is a thriving community alternative with built-in RAG capabilities, vector database support, and extensive document processing features.
 
 The report includes detailed comparisons, code examples, use case recommendations, and migration guidance for each framework.
+
+        research .NET agent frameworks and libraries
+        [human]: research .NET agent frameworks and libraries
+
+        research .NET agent frameworks and libraries
+        [ai]: [{'text': "I'll research .NET agent frameworks and libraries for you. Let me break this down into focused research tasks.", 'type': 'text'}, {'id': 'toolu_01QiRicBgibSjHV8FSi9FJE1', 'caller': {'type': 'direct'}, 'input': {'todos': [{'content': 'Save the research request to /research_request.md', 'status': 'in_progress'}, {'content': 'Delegate research on .NET agent frameworks and libraries to sub-agent', 'status': 'pending'}, {'content': 'Synthesize findings and consolidate citations', 'status': 'pending'}, {'content': 'Write comprehensive final report to /final_report.md', 'status': 'pending'}, {'content': 'Verify report addresses all aspects of the request', 'status': 'pending'}]}, 'name': 'write_todos', 'type': 'tool_use'}]
+
+        research .NET agent frameworks and libraries
+        [tool]: Updated todo list to [{'content': 'Save the research request to /research_request.md', 'status': 'in_progress'}, {'content': 'Delegate research on .NET agent frameworks and libraries to sub-agent', 'status': 'pending'}, {'content': 'Synthesize findings and consolidate citations', 'status': 'pending'}, {'content': 'Write comprehensive final report to /final_report.md', 'status': 'pending'}, {'content': 'Verify report addresses all aspects of the request', 'status': 'pending'}]
+
+        research .NET agent frameworks and libraries
+        [ai]: [{'id': 'toolu_019FCdf3ntCab7SWSmEfocy4', 'caller': {'type': 'direct'}, 'input': {'file_path': '/research_request.md', 'content': '# Research Request\n\nResearch .NET agent frameworks and libraries\n'}, 'name': 'write_file', 'type': 'tool_use'}]
+
+        research .NET agent frameworks and libraries
+        [tool]: Updated file /research_request.md
+
+        research .NET agent frameworks and libraries
+        [ai]: [{'id': 'toolu_01RphxZJ4CJ4Q4xuWDpXxQVk', 'caller': {'type': 'direct'}, 'input': {'todos': [{'content': 'Save the research request to /research_request.md', 'status': 'completed'}, {'content': 'Delegate research on .NET agent frameworks and libraries to sub-agent', 'status': 'in_progress'}, {'content': 'Synthesize findings and consolidate citations', 'status': 'pending'}, {'content': 'Write comprehensive final report to /final_report.md', 'status': 'pending'}, {'content': 'Verify report addresses all aspects of the request', 'status': 'pending'}]}, 'name': 'write_todos', 'type': 'tool_use'}]
+
+        research .NET agent frameworks and libraries
+        [tool]: Updated todo list to [{'content': 'Save the research request to /research_request.md', 'status': 'completed'}, {'content': 'Delegate research on .NET agent frameworks and libraries to sub-agent', 'status': 'in_progress'}, {'content': 'Synthesize findings and consolidate citations', 'status': 'pending'}, {'content': 'Write comprehensive final report to /final_report.md', 'status': 'pending'}, {'content': 'Verify report addresses all aspects of the request', 'status': 'pending'}]
+
+        research .NET agent frameworks and libraries
+        [ai]: [{'id': 'toolu_01DidDdCCz6C3XQKZbiEZcEe', 'caller': {'type': 'direct'}, 'input': {'subagent_type': 'research-agent', 'description': 'Research .NET agent frameworks and libraries comprehensively. Focus on:\n\n1. Major .NET agent frameworks (e.g., Semantic Kernel, AutoGen.NET, LangChain for .NET, etc.)\n2. Key features and capabilities of each framework\n3. Use cases and what each framework is best suited for\n4. Integration capabilities (LLM providers, tools, plugins)\n5. Community adoption and maturity\n6. Code examples or architectural patterns where relevant\n7. Comparison points between different frameworks\n\nFor each framework/library you find:\n- Provide the official name and description\n- Explain its core purpose and key features\n- Note any unique capabilities or differentiators\n- Include information about supported LLM providers\n- Mention documentation quality and community support\n\nReturn a comprehensive report with:\n- Detailed findings about each major framework\n- All source URLs with titles for citation purposes\n- Enough detail to understand the .NET agent ecosystem landscape\n\nConduct thorough web searches to find current, accurate information about the .NET agent framework ecosystem.'}, 'name': 'task', 'type': 'tool_use'}]
+
+        research .NET agent frameworks and libraries
+        [tool]: Based on my comprehensive research, I'll now provide you with a detailed report on the .NET agent framework ecosystem.
+
+---
+
+# Comprehensive Report: .NET Agent Frameworks and Libraries
+
+## Executive Summary
+
+The .NET agent framework landscape is experiencing a major consolidation in 2025-2026. Microsoft has merged its two primary frameworks—**Semantic Kernel** and **AutoGen**—into a unified **Microsoft Agent Framework** (currently in Release Candidate status, with GA expected Q1 2026). This consolidation eliminates the confusion that plagued developers choosing between overlapping Microsoft offerings and creates a single, enterprise-grade solution for building AI agents in .NET [1].
+
+Unlike the Python ecosystem where multiple competing frameworks (LangGraph, CrewAI, LangChain) serve different niches, the .NET space is dominated by Microsoft's offerings, which makes strategic sense given Microsoft's ownership of the .NET platform itself.
+
+---
+
+## Major .NET Agent Frameworks
+
+### 1. Microsoft Agent Framework (Unified Platform)
+
+**Official Name:** Microsoft Agent Framework  
+**Status:** Release Candidate (announced at .NET Conf 2025), GA expected Q1 2026  
+**Repository:** https://github.com/microsoft/agent-framework
+
+#### Core Purpose and Description
+
+Microsoft Agent Framework represents the convergence of Semantic Kernel's enterprise orchestration capabilities with AutoGen's multi-agent conversation patterns. It provides a unified SDK for building AI agents with first-class support for multi-agent workflows, human-in-the-loop patterns, and enterprise integration [1][4].
+
+The framework treats **agents as first-class concepts** rather than requiring developers to wire up services and build kernels manually. This architectural shift simplifies agent creation while maintaining the flexibility needed for complex enterprise scenarios.
+
+#### Key Features and Capabilities
+
+**Agent Creation & Management:**
+- Simple agent instantiation with name, instructions, and capabilities
+- Type-safe function tool definitions using `AIFunction.Create()`
+- Native streaming support for real-time responses
+- Built-in human-in-the-loop approval workflows [4]
+
+**Multi-Agent Orchestration Patterns:**
+- **Sequential Workflows:** Agents execute in defined order (writer → reviewer → finalizer)
+- **Concurrent Workflows:** Multiple agents work in parallel with aggregated results
+- **Handoff Patterns:** Dynamic agent-to-agent transfer with routing logic
+- **Group Chat:** Multi-agent conversations with configurable speaker selection [4]
+
+**Integration Capabilities:**
+- **Model Context Protocol (MCP):** Native support for MCP-compatible tool servers
+- **Agent-to-Agent (A2A) Protocol:** Interoperability standard for cross-framework communication
+- **Multi-provider support:** Azure OpenAI, OpenAI, Anthropic, Ollama, and custom endpoints [1][4]
+
+**Enterprise Features:**
+- Production SLAs and formal support contracts
+- SOC 2, HIPAA compliance guarantees
+- Role-based access control (RBAC)
+- Audit logging and security guarantees
+- Deep Azure integration (Azure OpenAI, Azure SQL, Azure services) [2]
+
+#### Code Example: Creating an Agent
+
+```csharp
+using Azure.Identity;
+using Microsoft.Agents.AI;
+using OpenAI;
+
+var agent = new OpenAIClient(
+    new BearerTokenPolicy(new AzureCliCredential(), "https://ai.azure.com/.default"),
+    new OpenAIClientOptions { Endpoint = new Uri("https://your-resource.openai.azure.com/openai/v1") })
+    .GetResponsesClient("gpt-4.1")
+    .AsAIAgent(
+        name: "CloudPoet",
+        instructions: "You are a helpful assistant."
+    );
+
+Console.WriteLine(await agent.RunAsync("Write a haiku about cloud computing."));
+```
+
+#### Multi-Agent Workflow Example
+
+```csharp
+using Microsoft.Agents.AI;
+using Microsoft.Agents.AI.Workflows;
+
+// Create specialized agents
+ChatClientAgent writer = new(chatClient,
+    "You are a concise copywriter. Create engaging marketing copy.",
+    "writer");
+
+ChatClientAgent reviewer = new(chatClient,
+    "You are a thorough editor. Review the copy and suggest improvements.",
+    "reviewer");
+
+ChatClientAgent finalizer = new(chatClient,
+    "You incorporate feedback and produce the final polished copy.",
+    "finalizer");
+
+// Build sequential workflow: writer -> reviewer -> finalizer
+Workflow workflow = AgentWorkflowBuilder.BuildSequential(writer, reviewer, finalizer);
+
+// Execute with streaming
+List<ChatMessage> messages = [new(ChatRole.User, "Write a tagline for a cybersecurity startup.")];
+
+await using StreamingRun run = await InProcessExecution.RunStreamingAsync(workflow, messages);
+await run.TrySendMessageAsync(new TurnToken(emitEvents: true));
+
+await foreach (WorkflowEvent evt in run.WatchStreamAsync())
+{
+    if (evt is AgentResponseUpdateEvent e)
+    {
+        Console.Write(e.Update.Text);
+    }
+}
+```
+
+#### Supported LLM Providers
+
+- **Azure OpenAI Service** (primary integration)
+- **OpenAI** (GPT-4, GPT-4.1, GPT-3.5-turbo)
+- **Anthropic** (Claude models)
+- **Ollama** (local model deployment)
+- **Custom endpoints** via OpenAI-compatible APIs [4]
+
+#### Use Cases and Best Suited For
+
+- **Enterprise .NET applications** requiring compliance and SLAs
+- **Azure-centric technology stacks** with deep service integration
+- **Multi-agent systems** with complex orchestration requirements
+- **Mission-critical applications** where risk minimization is paramount
+- **Teams with C#, Python, or Java** expertise (multi-language support) [1][2]
+
+#### Community and Documentation
+
+**Documentation Quality:** Excellent - Microsoft Learn provides comprehensive guides, migration documentation, and API references [3][4]
+
+**Community Support:**
+- Official Microsoft backing ensures long-term viability
+- Active GitHub repository with regular updates
+- Integration with Microsoft's broader AI ecosystem
+- Smaller community than Python alternatives but growing rapidly [1]
+
+**Maturity Level:** Release Candidate (stable for development, GA imminent)
+
+#### Unique Differentiators
+
+1. **Unified Platform:** Eliminates choice paralysis between Semantic Kernel and AutoGen
+2. **Multi-Language Support:** First-class C#, Python, and Java SDKs (not Python-only like competitors)
+3. **MCP Integration:** Native Model Context Protocol support for tool interoperability
+4. **Enterprise-Grade:** Production SLAs, formal support, compliance certifications
+5. **Workflow Builder:** Declarative multi-agent orchestration without custom glue code [1][4]
+
+---
+
+### 2. Semantic Kernel (Legacy - Being Merged)
+
+**Official Name:** Semantic Kernel  
+**Status:** Mature, transitioning to Microsoft Agent Framework  
+**Repository:** https://github.com/microsoft/semantic-kernel
+
+#### Core Purpose and Description
+
+Semantic Kernel is Microsoft's SDK for integrating Large Language Models into .NET applications. It focuses on **orchestration, plugins, and enterprise integration** rather than pure multi-agent conversations. The framework enables developers to encapsulate existing APIs as plugins that AI can invoke through function calling [3].
+
+While Semantic Kernel continues to be maintained, Microsoft is actively migrating developers to the unified Agent Framework. Existing Semantic Kernel applications remain supported, but new development should target Agent Framework [4].
+
+#### Key Features and Capabilities
+
+**Plugin System:**
+- Class-based plugins with `[KernelFunction]` attributes
+- Semantic descriptions for AI-friendly function discovery
+- Dependency injection support for complex services
+- 100+ data connectors for enterprise systems [3]
+
+**Function Calling:**
+- Native LLM function calling support
+- Automatic parameter marshaling and type conversion
+- Return type schema generation for accurate AI responses
+- Few-shot examples and detailed function descriptions [3]
+
+**Orchestration:**
+- Kernel-based service composition
+- Chat history management
+- Prompt execution settings and configuration
+- Planning capabilities (Handlebars, Stepwise planners) [3]
+
+#### Code Example: Plugin Definition
+
+```csharp
+using System.ComponentModel;
+using Microsoft.SemanticKernel;
+
+public class LightsPlugin
+{
+   private readonly List<LightModel> lights = new()
+   {
+      new LightModel { Id = 1, Name = "Table Lamp", IsOn = false, Brightness = 100, Hex = "FF0000" },
+      new LightModel { Id = 2, Name = "Porch light", IsOn = false, Brightness = 50, Hex = "00FF00" },
+      new LightModel { Id = 3, Name = "Chandelier", IsOn = true, Brightness = 75, Hex = "0000FF" }
+   };
+
+   [KernelFunction("get_lights")]
+   [Description("Gets a list of lights and their current state")]
+   public async Task<List<LightModel>> GetLightsAsync()
+   {
+      return lights;
+   }
+
+   [KernelFunction("change_state")]
+   [Description("Changes the state of the light")]
+   public async Task<LightModel?> ChangeStateAsync(int id, LightModel LightModel)
+   {
+      var light = lights.FirstOrDefault(light => light.Id == id);
+      if (light == null) return null;
+
+      light.IsOn = LightModel.IsOn;
+      light.Brightness = LightModel.Brightness;
+      light.Hex = LightModel.Hex;
+      return light;
+   }
+}
+
+// Registration
+var builder = Kernel.CreateBuilder();
+builder.Plugins.AddFromType<LightsPlugin>("Lights");
+Kernel kernel = builder.Build();
+```
+
+#### Supported LLM Providers
+
+- Azure OpenAI Service
+- OpenAI
+- Hugging Face models
+- Custom LLM endpoints
+- Local models via GGUF format [3]
+
+#### Use Cases and Best Suited For
+
+- **RAG (Retrieval-Augmented Generation)** applications
+- **Enterprise API integration** with existing .NET services
+- **Plugin-based architectures** where AI augments existing systems
+- **Teams migrating to Agent Framework** (migration path well-documented) [3][4]
+
+#### Documentation and Community
+
+**Documentation Quality:** Excellent - Comprehensive Microsoft Learn documentation with tutorials, best practices, and migration guides [3]
+
+**Community Support:**
+- Large existing user base from 2+ years of development
+- Active GitHub community
+- Extensive sample repositories and tutorials
+- Clear migration path to Agent Framework [4]
+
+**Maturity Level:** Mature (2+ years in production), transitioning to Agent Framework
+
+#### Migration to Agent Framework
+
+Microsoft provides detailed migration guidance:
+
+**Key Changes:**
+- `Kernel` → `IAIAgent` implementations
+- `KernelFunction` → `AIFunction`
+- `IChatCompletionService` → agent's `RunAsync()`
+- Plugins become tool collections passed to agents
+- `AgentGroupChat` → `AgentWorkflowBuilder` workflows [4]
+
+**Migration Checklist:**
+1. Update NuGet packages (remove `Microsoft.SemanticKernel`, add `Microsoft.Agents.AI.*`)
+2. Replace Kernel with Agents
+3. Convert plugins to tools using `AIFunction.Create()`
+4. Update orchestration to workflow patterns
+5. Test incrementally [4]
+
+---
+
+### 3. AutoGen / AutoGen.NET (Legacy - Being Merged)
+
+**Official Name:** AutoGen (Microsoft Research project)  
+**Status:** Mature research framework, merging into Microsoft Agent Framework  
+**Repository:** https://github.com/microsoft/autogen
+
+#### Core Purpose and Description
+
+AutoGen is Microsoft Research's framework for building **multi-agent conversational systems**. Unlike Semantic Kernel's focus on orchestration and plugins, AutoGen treats agent-to-agent communication as natural language conversations. This conversation-first design eliminates brittle API pipelines and makes complex workflows easier to prototype [5].
+
+AutoGen pioneered the multi-agent patterns that are now being incorporated into the unified Microsoft Agent Framework, including group chats, speaker selection strategies, and human-in-the-loop workflows [2][5].
+
+#### Key Features and Capabilities
+
+**Agent Types:**
+- **UserProxyAgent:** Human gateway for clarifications and approvals
+- **AssistantAgent:** Autonomous reasoning with LLM integration
+- **ConversableAgent:** Base class for custom agent implementations [5]
+
+**Conversation Orchestration:**
+- **GroupChat Manager:** Coordinates multi-agent conversations without hard-coded pipelines
+- **Speaker Selection Logic:** Custom heuristics for determining turn order
+- **Termination Rules:** Max rounds, explicit tokens, satisfaction checks to prevent infinite loops [5]
+
+**Code Execution:**
+- Sandboxed Python runner for secure code execution
+- Restricted file system and network access
+- Declarative tool integration with argument parsing
+- Resource limits and package whitelists [5]
+
+#### Architectural Patterns
+
+**Conversation-First Design:**
+- All coordination happens through structured chat messages
+- Natural language handoffs replace custom RPC calls
+- Transparent, replayable traces for debugging
+- Asynchronous agent execution across containers [5]
+
+**State Management:**
+- Each agent maintains independent context windows
+- Tool permissions isolated per agent
+- Configuration via JSON or environment variables
+- Docker/Kubernetes deployment support [5]
+
+#### Code Example: Multi-Agent Setup
+
+```python
+from autogen import UserProxyAgent, AssistantAgent, GroupChat, GroupChatManager
+
+# Create agents
+user_proxy = UserProxyAgent(
+    name="user_proxy",
+    human_input_mode="TERMINATE",
+    code_execution_config={"work_dir": "coding"}
+)
+
+assistant = AssistantAgent(
+    name="assistant",
+    llm_config={"model": "gpt-4", "api_key": "..."}
+)
+
+# Group chat orchestration
+groupchat = GroupChat(
+    agents=[user_proxy, assistant],
+    messages=[],
+    max_round=10
+)
+
+manager = GroupChatManager(groupchat=groupchat, llm_config={"model": "gpt-4"})
+```
+
+#### Supported LLM Providers
+
+- OpenAI (GPT-4, GPT-3.5)
+- Azure OpenAI Service
+- Anthropic Claude
+- Local models via compatible APIs
+- Custom LLM endpoints [5]
+
+#### Use Cases and Best Suited For
+
+- **Research and experimentation** with multi-agent systems
+- **Conversational AI** requiring natural agent interactions
+- **Prototyping complex workflows** before production deployment
+- **Teams familiar with AutoGen** migrating to Agent Framework [2][5]
+
+#### Documentation and Community
+
+**Documentation Quality:** Good - Research-oriented documentation with examples and tutorials
+
+**Community Support:**
+- Strong research community
+- Active development from Microsoft Research
+- Migration path to Agent Framework clearly defined
+- Smaller than Semantic Kernel but highly engaged [2][5]
+
+**Maturity Level:** Mature research framework, production use cases exist but transitioning to Agent Framework
+
+#### Challenges and Limitations
+
+**Production Deployment Issues:**
+- **Non-deterministic conversations:** Same prompts can trigger different dialogue paths, complicating debugging [5]
+- **State synchronization:** Isolated agent memory buffers can lead to coordination failures [5]
+- **Resource contention:** GPU cycles and API quotas can cause conversation timeouts [5]
+- **Distributed debugging:** Hundreds of interleaved LLM calls difficult to trace without proper tooling [5]
+
+**Solutions in Agent Framework:**
+- Centralized state management with checkpointing
+- Workflow-based orchestration with explicit control flow
+- Resource scheduling and adaptive throttling
+- Distributed tracing with correlation IDs [5]
+
+---
+
+## Framework Comparison Matrix
+
+| Feature | Microsoft Agent Framework | Semantic Kernel | AutoGen |
+|---------|--------------------------|-----------------|---------|
+| **Status** | RC (GA Q1 2026) | Mature, transitioning | Mature, transitioning |
+| **Primary Focus** | Unified agent platform | Orchestration & plugins | Multi-agent conversations |
+| **Multi-Agent Support** | ✅ Native workflows | ⚠️ Via AgentGroupChat | ✅ Native GroupChat |
+| **Plugin System** | ✅ AIFunction tools | ✅ KernelFunction plugins | ⚠️ Tool integration |
+| **Orchestration Patterns** | Sequential, Concurrent, Handoff, Group Chat | Planners, Chat completion | GroupChat, Speaker selection |
+| **MCP Support** | ✅ Native | ❌ No | ❌ No |
+| **Multi-Language** | C#, Python, Java | C#, Python | Python, .NET port |
+| **Enterprise Features** | ✅ SLAs, RBAC, Compliance | ✅ Azure integration | ⚠️ Research-focused |
+| **Learning Curve** | Medium | Medium-High | Medium |
+| **Production Readiness** | RC (stable) | ✅ Production-ready | ✅ Production-ready |
+| **Migration Path** | N/A (target platform) | ✅ Well-documented | ✅ Well-documented |
+
+---
+
+## LLM Provider Integration Across Frameworks
+
+All three Microsoft frameworks support multiple LLM providers through a unified configuration approach:
+
+### Supported Providers
+
+1. **Azure OpenAI Service** (Primary integration)
+   - GPT-4, GPT-4.1, GPT-3.5-turbo
+   - Native Azure authentication
+   - Regional deployment support
+   - Enterprise compliance features
+
+2. **OpenAI**
+   - Direct API integration
+   - All GPT models supported
+   - Function calling capabilities
+
+3. **Anthropic**
+   - Claude 3 (Opus, Sonnet, Haiku)
+   - Claude 2.1
+   - Tool use support
+
+4. **Local Models**
+   - Ollama integration
+   - GGUF format support
+   - Custom endpoint configuration
+
+5. **Custom Providers**
+   - OpenAI-compatible API endpoints
+   - Flexible authentication mechanisms
+   - Rate limiting and retry logic [3][4][5]
+
+### Configuration Approach
+
+```csharp
+// Agent Framework
+var agent = new OpenAIClient(
+    new BearerTokenPolicy(new AzureCliCredential(), "https://ai.azure.com/.default"),
+    new OpenAIClientOptions { Endpoint = new Uri("https://your-resource.openai.azure.com/openai/v1") })
+    .GetResponsesClient("gpt-4.1")
+    .AsAIAgent(name: "Assistant", instructions: "...");
+
+// Semantic Kernel
+var builder = Kernel.CreateBuilder();
+builder.AddAzureOpenAIChatCompletion(
+    deploymentName: "gpt-4",
+    endpoint: "https://your-resource.openai.azure.com/",
+    apiKey: Environment.GetEnvironmentVariable("AZURE_OPENAI_KEY")
+);
+```
+
+---
+
+## Community Adoption and Maturity
+
+### Microsoft Agent Framework
+- **Adoption:** Growing rapidly since RC announcement at .NET Conf 2025
+- **Maturity:** Release Candidate (stable for development)
+- **Community Size:** Consolidating Semantic Kernel + AutoGen communities
+- **Enterprise Adoption:** Expected to dominate .NET enterprise space post-GA
+- **GitHub Activity:** Active development, regular releases [1][4]
+
+### Semantic Kernel
+- **Adoption:** Established user base from 2+ years of production use
+- **Maturity:** Mature (2+ years)
+- **Community Size:** Large .NET developer community
+- **Enterprise Adoption:** Widely used in Azure-centric enterprises
+- **GitHub Stars:** 20,000+ (as of 2025)
+- **Documentation:** Comprehensive Microsoft Learn resources [3]
+
+### AutoGen
+- **Adoption:** Strong in research and experimentation
+- **Maturity:** Mature research framework
+- **Community Size:** Smaller but highly engaged
+- **Enterprise Adoption:** Some production deployments, primarily research-focused
+- **GitHub Stars:** 30,000+ (combined Python + .NET)
+- **Documentation:** Research-oriented with practical examples [5]
+
+---
+
+## Architectural Patterns and Best Practices
+
+### 1. Plugin/Tool Design Patterns
+
+**Semantic Kernel Approach:**
+```csharp
+public class WeatherPlugin
+{
+    [KernelFunction("get_weather")]
+    [Description("Gets the current weather for a location")]
+    public string GetWeather([Description("The city name")] string city)
+    {
+        return $"The weather in {city} is sunny, 72°F";
+    }
+}
+```
+
+**Agent Framework Approach:**
+```csharp
+var weatherTool = AIFunction.Create(
+    [Description("Gets the current weather for a location")]
+    (string city) => $"The weather in {city} is sunny, 72°F",
+    name: "get_weather"
+);
+```
+
+**Best Practices:**
+- Use descriptive, concise function names (avoid abbreviations)
+- Minimize function parameters (use primitive types when possible)
+- Provide detailed descriptions only when necessary to reduce token consumption
+- Use snake_case for function names (LLMs trained on Python conventions)
+- Implement proper error handling and validation [3]
+
+### 2. Multi-Agent Orchestration Patterns
+
+**Sequential Workflow:**
+- Use when agents must execute in specific order
+- Example: Research → Analysis → Writing → Review
+- Best for linear, dependent tasks [4]
+
+**Concurrent Workflow:**
+- Use when agents can work independently
+- Example: Multiple research agents gathering different data sources
+- Best for parallel, independent tasks [4]
+
+**Handoff Pattern:**
+- Use when agents need dynamic routing
+- Example: Customer service (sales → support → billing)
+- Requires router agent for decision-making [4]
+
+**Group Chat:**
+- Use for collaborative problem-solving
+- Example: Brainstorming, debate, consensus-building
+- Requires speaker selection strategy [5]
+
+### 3. State Management Strategies
+
+**Centralized State:**
+- Single source of truth for agent context
+- Prevents desynchronization issues
+- Requires conflict resolution logic [5]
+
+**Checkpointing:**
+- Persist state after critical transitions
+- Enable rollback on failures
+- Support long-running workflows [5]
+
+**Partitioning:**
+- Isolate state by task or customer ID
+- Reduce lock contention
+- Improve throughput under load [5]
+
+---
+
+## When to Choose Each Framework
+
+### Choose Microsoft Agent Framework When:
+- ✅ Starting a new .NET agent project
+- ✅ Need multi-agent orchestration with minimal code
+- ✅ Require MCP/A2A interoperability
+- ✅ Building for Azure-centric environments
+- ✅ Need enterprise SLAs and support contracts
+- ✅ Want future-proof solution (Microsoft's strategic direction)
+- ⚠️ Can work with RC status (GA Q1 2026) [1][4]
+
+### Choose Semantic Kernel When:
+- ✅ Have existing Semantic Kernel codebase in production
+- ✅ Need mature, stable framework immediately
+- ✅ Focus on plugin-based architecture over multi-agent
+- ✅ Require extensive RAG capabilities
+- ✅ Plan to migrate to Agent Framework later (clear path exists)
+- ⚠️ Understand it's transitioning to Agent Framework [3][4]
+
+### Choose AutoGen When:
+- ✅ Research and experimentation focus
+- ✅ Need conversation-first multi-agent design
+- ✅ Prototyping complex agent interactions
+- ✅ Plan to migrate to Agent Framework for production
+- ⚠️ Accept research-oriented tooling and documentation [5]
+
+---
+
+## Notable Gaps in .NET Ecosystem
+
+Unlike the Python ecosystem, the .NET space lacks mature ports of popular frameworks:
+
+**Missing .NET Equivalents:**
+- **LangGraph:** No native .NET port (Python-only)
+- **CrewAI:** No .NET implementation
+- **LangChain:** No official .NET port (community attempts exist but unmaintained)
+- **LlamaIndex:** Primarily Python-focused
+
+**Why This Matters:**
+The .NET agent ecosystem is essentially a **Microsoft monoculture**. While this provides consistency and enterprise support, it also means:
+- Limited framework diversity compared to Python
+- Vendor lock-in to Microsoft's strategic direction
+- Fewer community-driven alternatives
+- Strong Azure ecosystem bias [1][2]
+
+**Advantages of Microsoft Dominance:**
+- Unified developer experience
+- Enterprise-grade support and SLAs
+- Deep .NET and Azure integration
+- Clear migration paths between Microsoft frameworks
+- Long-term viability guaranteed by Microsoft backing [1][2]
+
+---
+
+## Future Outlook and Trends
+
+### 2026 Predictions
+
+1. **Microsoft Agent Framework GA (Q1 2026)** will become the de facto standard for .NET agent development [1][4]
+
+2. **Semantic Kernel and AutoGen** will continue as legacy frameworks with maintenance support but limited new features [4]
+
+3. **MCP Adoption** will accelerate as Agent Framework's native support drives ecosystem growth [4]
+
+4. **Multi-Modal Agents** will become mainstream with text + image + audio + video support [2]
+
+5. **Enterprise Features** (RBAC, audit logging, compliance) will become table stakes for production deployments [2]
+
+### Emerging Patterns
+
+**Human-AI Collaboration:**
+- Escalation to humans when confidence is low
+- Human override capabilities
+- Learning from human feedback [2]
+
+**Performance Optimization:**
+- Frameworks competing on latency and token efficiency
+- Strategic model assignment (expensive models for complex tasks, cheap for simple)
+- Caching and intermediate model usage [2]
+
+**Interoperability Standards:**
+- MCP for tool integration
+- A2A for agent-to-agent communication
+- Cross-framework compatibility [4]
+
+---
+
+## Recommendations for .NET Developers
+
+### For New Projects
+**Start with Microsoft Agent Framework** despite RC status:
+- API surface is stable and feature-complete
+- GA is imminent (Q1 2026)
+- Represents Microsoft's strategic direction
+- Avoids future migration work [1][4]
+
+### For Existing Semantic Kernel Projects
+**Evaluate migration timeline:**
+- If stable in production with no new requirements: **Stay on Semantic Kernel**
+- If adding multi-agent features: **Migrate to Agent Framework**
+- If hitting complexity ceiling: **Migrate to Agent Framework**
+- Use official migration guide for smooth transition [4]
+
+### For Existing AutoGen Projects
+**Plan migration to Agent Framework:**
+- AutoGen patterns map well to Agent Framework workflows
+- Conversation-first design preserved in new framework
+- GroupChat → Workflow orchestration
+- Migration complexity is moderate [4][5]
+
+### For Enterprise Teams
+**Prioritize Microsoft Agent Framework:**
+- Enterprise SLAs and support contracts
+- Compliance certifications (SOC 2, HIPAA)
+- Azure integration for existing infrastructure
+- Multi-language support for diverse teams
+- Production-ready monitoring and observability [1][2]
+
+---
+
+## Sources
+
+[1] The AI Agent Framework Landscape in 2025: What Changed and What Matters - Medium  
+https://medium.com/@hieutrantrung.it/the-ai-agent-framework-landscape-in-2025-what-changed-and-what-matters-3cd9b07ef2c3
+
+[2] The AI Agent Framework Landscape in 2025 - Medium (Framework Comparison)  
+https://medium.com/@hieutrantrung.it/the-ai-agent-framework-landscape-in-2025-what-changed-and-what-matters-3cd9b07ef2c3
+
+[3] Plugins in Semantic Kernel - Microsoft Learn  
+https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/
+
+[4] Migrating from Semantic Kernel to Microsoft Agent Framework: A C# Developer's Guide - DEV Community  
+https://dev.to/bspann/migrating-from-semantic-kernel-to-microsoft-agent-framework-a-c-developers-guide-3ad5
+
+[5] How AutoGen Framework Helps You Build Multi-Agent Systems - Galileo  
+https://galileo.ai/blog/autogen-framework-multi-agents
+
+---
+
+## Additional Resources
+
+**Official Documentation:**
+- Microsoft Agent Framework: https://learn.microsoft.com/en-us/agent-framework/
+- Semantic Kernel: https://learn.microsoft.com/en-us/semantic-kernel/
+- AutoGen: https://microsoft.github.io/autogen/
+
+**GitHub Repositories:**
+- Microsoft Agent Framework: https://github.com/microsoft/agent-framework
+- Semantic Kernel: https://github.com/microsoft/semantic-kernel
+- AutoGen: https://github.com/microsoft/autogen
+
+**Migration Guides:**
+- From Semantic Kernel: https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-semantic-kernel
+- From AutoGen: https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-autogen
+
+**NuGet Packages:**
+- Microsoft.Agents.AI: https://www.nuget.org/packages/Microsoft.Agents.AI/
+- Microsoft.Agents.AI.Workflows: https://www.nuget.org/packages/Microsoft.Agents.AI.Workflows/
+- Microsoft.SemanticKernel: https://www.nuget.org/packages/Microsoft.SemanticKernel/
+
+        research .NET agent frameworks and libraries
+        [ai]: [{'id': 'toolu_013sCpE5P9ggh2XwQBPAEzMq', 'caller': {'type': 'direct'}, 'input': {'todos': [{'content': 'Save the research request to /research_request.md', 'status': 'completed'}, {'content': 'Delegate research on .NET agent frameworks and libraries to sub-agent', 'status': 'completed'}, {'content': 'Synthesize findings and consolidate citations', 'status': 'in_progress'}, {'content': 'Write comprehensive final report to /final_report.md', 'status': 'pending'}, {'content': 'Verify report addresses all aspects of the request', 'status': 'pending'}]}, 'name': 'write_todos', 'type': 'tool_use'}]
+
+        research .NET agent frameworks and libraries
+        [tool]: Updated todo list to [{'content': 'Save the research request to /research_request.md', 'status': 'completed'}, {'content': 'Delegate research on .NET agent frameworks and libraries to sub-agent', 'status': 'completed'}, {'content': 'Synthesize findings and consolidate citations', 'status': 'in_progress'}, {'content': 'Write comprehensive final report to /final_report.md', 'status': 'pending'}, {'content': 'Verify report addresses all aspects of the request', 'status': 'pending'}]
+
+        research .NET agent frameworks and libraries
+        [ai]: [{'id': 'toolu_019jG9sXHFjnmmMWjwkyBV7i', 'caller': {'type': 'direct'}, 'input': {'todos': [{'content': 'Save the research request to /research_request.md', 'status': 'completed'}, {'content': 'Delegate research on .NET agent frameworks and libraries to sub-agent', 'status': 'completed'}, {'content': 'Synthesize findings and consolidate citations', 'status': 'completed'}, {'content': 'Write comprehensive final report to /final_report.md', 'status': 'in_progress'}, {'content': 'Verify report addresses all aspects of the request', 'status': 'pending'}]}, 'name': 'write_todos', 'type': 'tool_use'}]
+
+        research .NET agent frameworks and libraries
+        [tool]: Updated todo list to [{'content': 'Save the research request to /research_request.md', 'status': 'completed'}, {'content': 'Delegate research on .NET agent frameworks and libraries to sub-agent', 'status': 'completed'}, {'content': 'Synthesize findings and consolidate citations', 'status': 'completed'}, {'content': 'Write comprehensive final report to /final_report.md', 'status': 'in_progress'}, {'content': 'Verify report addresses all aspects of the request', 'status': 'pending'}]
+
+        research .NET agent frameworks and libraries
+        [ai]: [{'id': 'toolu_01MkUTuFdcegRvaLS99SzMUR', 'caller': {'type': 'direct'}, 'input': {'file_path': '/final_report.md', 'content': '# .NET Agent Frameworks and Libraries\n\n## Overview\n\nThe .NET agent framework landscape is undergoing significant consolidation in 2025-2026. Microsoft has merged its two primary frameworks—Semantic Kernel and AutoGen—into a unified **Microsoft Agent Framework**, currently in Release Candidate status with general availability expected in Q1 2026 [1]. This consolidation eliminates the confusion that previously existed when developers had to choose between overlapping Microsoft offerings and creates a single, enterprise-grade solution for building AI agents in .NET.\n\nUnlike the Python ecosystem where multiple competing frameworks (LangGraph, CrewAI, LangChain) serve different niches, the .NET space is dominated by Microsoft\'s offerings. This makes strategic sense given Microsoft\'s ownership of the .NET platform itself and results in a more unified but less diverse ecosystem [1][2].\n\n## Microsoft Agent Framework\n\nThe Microsoft Agent Framework represents the convergence of Semantic Kernel\'s enterprise orchestration capabilities with AutoGen\'s multi-agent conversation patterns. It provides a unified SDK for building AI agents with first-class support for multi-agent workflows, human-in-the-loop patterns, and enterprise integration [1][4].\n\n### Key Features\n\nThe framework treats agents as first-class concepts rather than requiring developers to wire up services and build kernels manually. This architectural shift simplifies agent creation while maintaining the flexibility needed for complex enterprise scenarios.\n\n**Agent Creation & Management:**\n- Simple agent instantiation with name, instructions, and capabilities\n- Type-safe function tool definitions using `AIFunction.Create()`\n- Native streaming support for real-time responses\n- Built-in human-in-the-loop approval workflows [4]\n\n**Multi-Agent Orchestration Patterns:**\nThe framework supports four primary orchestration patterns. Sequential workflows allow agents to execute in a defined order, such as writer → reviewer → finalizer. Concurrent workflows enable multiple agents to work in parallel with aggregated results. Handoff patterns support dynamic agent-to-agent transfer with routing logic. Group chat enables multi-agent conversations with configurable speaker selection [4].\n\n**Integration Capabilities:**\nThe framework includes native support for the Model Context Protocol (MCP) for MCP-compatible tool servers, the Agent-to-Agent (A2A) Protocol for interoperability across frameworks, and multi-provider support including Azure OpenAI, OpenAI, Anthropic, Ollama, and custom endpoints [1][4].\n\n**Enterprise Features:**\nProduction SLAs and formal support contracts are available, along with SOC 2 and HIPAA compliance guarantees. The framework includes role-based access control (RBAC), audit logging, security guarantees, and deep Azure integration with services like Azure OpenAI, Azure SQL, and other Azure services [2].\n\n### Code Examples\n\nCreating a basic agent is straightforward:\n\n```csharp\nusing Azure.Identity;\nusing Microsoft.Agents.AI;\nusing OpenAI;\n\nvar agent = new OpenAIClient(\n    new BearerTokenPolicy(new AzureCliCredential(), "https://ai.azure.com/.default"),\n    new OpenAIClientOptions { Endpoint = new Uri("https://your-resource.openai.azure.com/openai/v1") })\n    .GetResponsesClient("gpt-4.1")\n    .AsAIAgent(\n        name: "CloudPoet",\n        instructions: "You are a helpful assistant."\n    );\n\nConsole.WriteLine(await agent.RunAsync("Write a haiku about cloud computing."));\n```\n\nMulti-agent workflows demonstrate the framework\'s orchestration capabilities:\n\n```csharp\nusing Microsoft.Agents.AI;\nusing Microsoft.Agents.AI.Workflows;\n\n// Create specialized agents\nChatClientAgent writer = new(chatClient,\n    "You are a concise copywriter. Create engaging marketing copy.",\n    "writer");\n\nChatClientAgent reviewer = new(chatClient,\n    "You are a thorough editor. Review the copy and suggest improvements.",\n    "reviewer");\n\nChatClientAgent finalizer = new(chatClient,\n    "You incorporate feedback and produce the final polished copy.",\n    "finalizer");\n\n// Build sequential workflow: writer -> reviewer -> finalizer\nWorkflow workflow = AgentWorkflowBuilder.BuildSequential(writer, reviewer, finalizer);\n\n// Execute with streaming\nList<ChatMessage> messages = [new(ChatRole.User, "Write a tagline for a cybersecurity startup.")];\n\nawait using StreamingRun run = await InProcessExecution.RunStreamingAsync(workflow, messages);\nawait run.TrySendMessageAsync(new TurnToken(emitEvents: true));\n\nawait foreach (WorkflowEvent evt in run.WatchStreamAsync())\n{\n    if (evt is AgentResponseUpdateEvent e)\n    {\n        Console.Write(e.Update.Text);\n    }\n}\n```\n\n### Supported LLM Providers\n\nThe framework supports Azure OpenAI Service as its primary integration, along with OpenAI (GPT-4, GPT-4.1, GPT-3.5-turbo), Anthropic (Claude models), Ollama for local model deployment, and custom endpoints via OpenAI-compatible APIs [4].\n\n### Use Cases\n\nThe Microsoft Agent Framework is best suited for enterprise .NET applications requiring compliance and SLAs, Azure-centric technology stacks with deep service integration, multi-agent systems with complex orchestration requirements, mission-critical applications where risk minimization is paramount, and teams with C#, Python, or Java expertise since the framework provides multi-language support [1][2].\n\n### Community and Maturity\n\nThe framework is currently in Release Candidate status, which is stable for development purposes. The community is consolidating from both Semantic Kernel and AutoGen user bases. Microsoft Learn provides comprehensive guides, migration documentation, and API references. Official Microsoft backing ensures long-term viability, and the GitHub repository shows active development with regular updates [1][4].\n\n### Unique Differentiators\n\nThe Microsoft Agent Framework stands out as a unified platform that eliminates choice paralysis between Semantic Kernel and AutoGen. It offers first-class C#, Python, and Java SDKs rather than being Python-only like many competitors. Native Model Context Protocol support enables tool interoperability. Enterprise-grade features include production SLAs, formal support, and compliance certifications. The Workflow Builder provides declarative multi-agent orchestration without requiring custom glue code [1][4].\n\n## Semantic Kernel\n\nSemantic Kernel is Microsoft\'s SDK for integrating Large Language Models into .NET applications. It focuses on orchestration, plugins, and enterprise integration rather than pure multi-agent conversations. The framework enables developers to encapsulate existing APIs as plugins that AI can invoke through function calling [3].\n\nWhile Semantic Kernel continues to be maintained, Microsoft is actively migrating developers to the unified Agent Framework. Existing Semantic Kernel applications remain supported, but new development should target the Agent Framework [4].\n\n### Key Features\n\n**Plugin System:**\nThe framework supports class-based plugins with `[KernelFunction]` attributes, semantic descriptions for AI-friendly function discovery, dependency injection support for complex services, and over 100 data connectors for enterprise systems [3].\n\n**Function Calling:**\nNative LLM function calling support includes automatic parameter marshaling and type conversion, return type schema generation for accurate AI responses, and support for few-shot examples and detailed function descriptions [3].\n\n**Orchestration:**\nThe framework provides kernel-based service composition, chat history management, prompt execution settings and configuration, and planning capabilities through Handlebars and Stepwise planners [3].\n\n### Code Example\n\nPlugin definition in Semantic Kernel follows a straightforward pattern:\n\n```csharp\nusing System.ComponentModel;\nusing Microsoft.SemanticKernel;\n\npublic class LightsPlugin\n{\n   private readonly List<LightModel> lights = new()\n   {\n      new LightModel { Id = 1, Name = "Table Lamp", IsOn = false, Brightness = 100, Hex = "FF0000" },\n      new LightModel { Id = 2, Name = "Porch light", IsOn = false, Brightness = 50, Hex = "00FF00" },\n      new LightModel { Id = 3, Name = "Chandelier", IsOn = true, Brightness = 75, Hex = "0000FF" }\n   };\n\n   [KernelFunction("get_lights")]\n   [Description("Gets a list of lights and their current state")]\n   public async Task<List<LightModel>> GetLightsAsync()\n   {\n      return lights;\n   }\n\n   [KernelFunction("change_state")]\n   [Description("Changes the state of the light")]\n   public async Task<LightModel?> ChangeStateAsync(int id, LightModel LightModel)\n   {\n      var light = lights.FirstOrDefault(light => light.Id == id);\n      if (light == null) return null;\n\n      light.IsOn = LightModel.IsOn;\n      light.Brightness = LightModel.Brightness;\n      light.Hex = LightModel.Hex;\n      return light;\n   }\n}\n\n// Registration\nvar builder = Kernel.CreateBuilder();\nbuilder.Plugins.AddFromType<LightsPlugin>("Lights");\nKernel kernel = builder.Build();\n```\n\n### Supported LLM Providers\n\nSemantic Kernel supports Azure OpenAI Service, OpenAI, Hugging Face models, custom LLM endpoints, and local models via GGUF format [3].\n\n### Use Cases\n\nSemantic Kernel is best suited for RAG (Retrieval-Augmented Generation) applications, enterprise API integration with existing .NET services, plugin-based architectures where AI augments existing systems, and teams migrating to Agent Framework since a clear migration path exists [3][4].\n\n### Migration to Agent Framework\n\nMicrosoft provides detailed migration guidance with key changes including replacing `Kernel` with `IAIAgent` implementations, converting `KernelFunction` to `AIFunction`, replacing `IChatCompletionService` with the agent\'s `RunAsync()` method, transforming plugins into tool collections passed to agents, and updating `AgentGroupChat` to `AgentWorkflowBuilder` workflows [4].\n\nThe migration checklist involves updating NuGet packages (removing `Microsoft.SemanticKernel` and adding `Microsoft.Agents.AI.*`), replacing Kernel with Agents, converting plugins to tools using `AIFunction.Create()`, updating orchestration to workflow patterns, and testing incrementally [4].\n\n### Community and Maturity\n\nSemantic Kernel is a mature framework with over 2 years in production use. It has a large existing user base and over 20,000 GitHub stars as of 2025. The framework features excellent documentation through comprehensive Microsoft Learn resources with tutorials, best practices, and migration guides. The active GitHub community provides extensive sample repositories and tutorials, and there is a clear migration path to the Agent Framework [3][4].\n\n## AutoGen\n\nAutoGen is Microsoft Research\'s framework for building multi-agent conversational systems. Unlike Semantic Kernel\'s focus on orchestration and plugins, AutoGen treats agent-to-agent communication as natural language conversations. This conversation-first design eliminates brittle API pipelines and makes complex workflows easier to prototype [5].\n\nAutoGen pioneered the multi-agent patterns that are now being incorporated into the unified Microsoft Agent Framework, including group chats, speaker selection strategies, and human-in-the-loop workflows [2][5].\n\n### Key Features\n\n**Agent Types:**\nThe framework provides UserProxyAgent as a human gateway for clarifications and approvals, AssistantAgent for autonomous reasoning with LLM integration, and ConversableAgent as a base class for custom agent implementations [5].\n\n**Conversation Orchestration:**\nGroupChat Manager coordinates multi-agent conversations without hard-coded pipelines. Speaker Selection Logic provides custom heuristics for determining turn order. Termination Rules include max rounds, explicit tokens, and satisfaction checks to prevent infinite loops [5].\n\n**Code Execution:**\nThe framework includes a sandboxed Python runner for secure code execution with restricted file system and network access, declarative tool integration with argument parsing, and resource limits and package whitelists [5].\n\n### Architectural Patterns\n\nAutoGen\'s conversation-first design means all coordination happens through structured chat messages. Natural language handoffs replace custom RPC calls, providing transparent, replayable traces for debugging and enabling asynchronous agent execution across containers [5].\n\nState management in AutoGen involves each agent maintaining independent context windows, tool permissions isolated per agent, configuration via JSON or environment variables, and Docker/Kubernetes deployment support [5].\n\n### Code Example\n\nMulti-agent setup in AutoGen demonstrates the conversation-first approach:\n\n```python\nfrom autogen import UserProxyAgent, AssistantAgent, GroupChat, GroupChatManager\n\n# Create agents\nuser_proxy = UserProxyAgent(\n    name="user_proxy",\n    human_input_mode="TERMINATE",\n    code_execution_config={"work_dir": "coding"}\n)\n\nassistant = AssistantAgent(\n    name="assistant",\n    llm_config={"model": "gpt-4", "api_key": "..."}\n)\n\n# Group chat orchestration\ngroupchat = GroupChat(\n    agents=[user_proxy, assistant],\n    messages=[],\n    max_round=10\n)\n\nmanager = GroupChatManager(groupchat=groupchat, llm_config={"model": "gpt-4"})\n```\n\n### Supported LLM Providers\n\nAutoGen supports OpenAI (GPT-4, GPT-3.5), Azure OpenAI Service, Anthropic Claude, local models via compatible APIs, and custom LLM endpoints [5].\n\n### Use Cases\n\nAutoGen is best suited for research and experimentation with multi-agent systems, conversational AI requiring natural agent interactions, prototyping complex workflows before production deployment, and teams familiar with AutoGen who are migrating to the Agent Framework [2][5].\n\n### Challenges and Limitations\n\nProduction deployment with AutoGen faces several challenges. Non-deterministic conversations mean the same prompts can trigger different dialogue paths, complicating debugging. State synchronization issues arise because isolated agent memory buffers can lead to coordination failures. Resource contention occurs when GPU cycles and API quotas cause conversation timeouts. Distributed debugging becomes difficult with hundreds of interleaved LLM calls that are hard to trace without proper tooling [5].\n\nThe Agent Framework addresses these challenges through centralized state management with checkpointing, workflow-based orchestration with explicit control flow, resource scheduling and adaptive throttling, and distributed tracing with correlation IDs [5].\n\n### Community and Maturity\n\nAutoGen is a mature research framework with over 30,000 GitHub stars (combined Python and .NET). It has a strong research community with active development from Microsoft Research. The framework features good research-oriented documentation with examples and tutorials. While smaller than the Semantic Kernel community, it is highly engaged, and there is a clear migration path to the Agent Framework [2][5].\n\n## Framework Comparison\n\nWhen comparing the three frameworks across key dimensions, several patterns emerge:\n\n**Status and Focus:**\nMicrosoft Agent Framework is in Release Candidate status (GA expected Q1 2026) and serves as a unified agent platform. Semantic Kernel is mature and transitioning, focused on orchestration and plugins. AutoGen is mature and transitioning, focused on multi-agent conversations.\n\n**Multi-Agent Support:**\nMicrosoft Agent Framework provides native workflows. Semantic Kernel offers multi-agent support via AgentGroupChat. AutoGen provides native GroupChat functionality.\n\n**Plugin System:**\nMicrosoft Agent Framework uses AIFunction tools. Semantic Kernel uses KernelFunction plugins. AutoGen provides tool integration.\n\n**Orchestration Patterns:**\nMicrosoft Agent Framework supports Sequential, Concurrent, Handoff, and Group Chat patterns. Semantic Kernel provides Planners and Chat completion. AutoGen offers GroupChat and Speaker selection.\n\n**MCP Support:**\nOnly Microsoft Agent Framework provides native MCP support. Neither Semantic Kernel nor AutoGen support MCP.\n\n**Multi-Language Support:**\nMicrosoft Agent Framework supports C#, Python, and Java. Semantic Kernel supports C# and Python. AutoGen supports Python with a .NET port.\n\n**Enterprise Features:**\nMicrosoft Agent Framework provides SLAs, RBAC, and Compliance. Semantic Kernel offers Azure integration. AutoGen is research-focused with limited enterprise features.\n\n**Production Readiness:**\nMicrosoft Agent Framework is in RC (stable). Semantic Kernel is production-ready. AutoGen is production-ready but research-oriented.\n\n## LLM Provider Integration\n\nAll three Microsoft frameworks support multiple LLM providers through a unified configuration approach. Azure OpenAI Service serves as the primary integration, offering GPT-4, GPT-4.1, and GPT-3.5-turbo with native Azure authentication, regional deployment support, and enterprise compliance features.\n\nOpenAI integration provides direct API access to all GPT models with function calling capabilities. Anthropic support includes Claude 3 (Opus, Sonnet, Haiku) and Claude 2.1 with tool use support. Local models can be deployed through Ollama integration and GGUF format support with custom endpoint configuration. Custom providers are supported through OpenAI-compatible API endpoints with flexible authentication mechanisms and rate limiting and retry logic [3][4][5].\n\n## Architectural Patterns and Best Practices\n\n### Plugin and Tool Design\n\nWhen designing plugins and tools, use descriptive, concise function names and avoid abbreviations. Minimize function parameters and use primitive types when possible. Provide detailed descriptions only when necessary to reduce token consumption. Use snake_case for function names since LLMs are trained on Python conventions. Implement proper error handling and validation [3].\n\nSemantic Kernel plugins follow this pattern:\n\n```csharp\npublic class WeatherPlugin\n{\n    [KernelFunction("get_weather")]\n    [Description("Gets the current weather for a location")]\n    public string GetWeather([Description("The city name")] string city)\n    {\n        return $"The weather in {city} is sunny, 72°F";\n    }\n}\n```\n\nAgent Framework tools use a more concise approach:\n\n```csharp\nvar weatherTool = AIFunction.Create(\n    [Description("Gets the current weather for a location")]\n    (string city) => $"The weather in {city} is sunny, 72°F",\n    name: "get_weather"\n);\n```\n\n### Multi-Agent Orchestration\n\nSequential workflows should be used when agents must execute in a specific order, such as Research → Analysis → Writing → Review. This pattern is best for linear, dependent tasks [4].\n\nConcurrent workflows are appropriate when agents can work independently, such as multiple research agents gathering different data sources. This pattern is best for parallel, independent tasks [4].\n\nHandoff patterns should be used when agents need dynamic routing, such as customer service scenarios involving sales → support → billing transitions. This pattern requires a router agent for decision-making [4].\n\nGroup chat is suitable for collaborative problem-solving scenarios like brainstorming, debate, and consensus-building. This pattern requires a speaker selection strategy [5].\n\n### State Management\n\nCentralized state provides a single source of truth for agent context, prevents desynchronization issues, but requires conflict resolution logic [5].\n\nCheckpointing persists state after critical transitions, enables rollback on failures, and supports long-running workflows [5].\n\nPartitioning isolates state by task or customer ID, reduces lock contention, and improves throughput under load [5].\n\n## Ecosystem Gaps\n\nUnlike the Python ecosystem, the .NET space lacks mature ports of popular frameworks. There is no native .NET port of LangGraph (Python-only), no .NET implementation of CrewAI, no official .NET port of LangChain (community attempts exist but are unmaintained), and LlamaIndex is primarily Python-focused.\n\nThe .NET agent ecosystem is essentially a Microsoft monoculture. While this provides consistency and enterprise support, it also means limited framework diversity compared to Python, vendor lock-in to Microsoft\'s strategic direction, fewer community-driven alternatives, and a strong Azure ecosystem bias [1][2].\n\nHowever, Microsoft dominance provides advantages including a unified developer experience, enterprise-grade support and SLAs, deep .NET and Azure integration, clear migration paths between Microsoft frameworks, and long-term viability guaranteed by Microsoft backing [1][2].\n\n## Recommendations\n\n### For New Projects\n\nStart with Microsoft Agent Framework despite its RC status. The API surface is stable and feature-complete, GA is imminent (Q1 2026), it represents Microsoft\'s strategic direction, and choosing it avoids future migration work [1][4].\n\n### For Existing Semantic Kernel Projects\n\nEvaluate your migration timeline based on your situation. If you are stable in production with no new requirements, stay on Semantic Kernel. If you are adding multi-agent features or hitting a complexity ceiling, migrate to Agent Framework. Use the official migration guide for a smooth transition [4].\n\n### For Existing AutoGen Projects\n\nPlan migration to Agent Framework. AutoGen patterns map well to Agent Framework workflows, and the conversation-first design is preserved in the new framework. GroupChat translates to Workflow orchestration, and migration complexity is moderate [4][5].\n\n### For Enterprise Teams\n\nPrioritize Microsoft Agent Framework for enterprise SLAs and support contracts, compliance certifications (SOC 2, HIPAA), Azure integration for existing infrastructure, multi-language support for diverse teams, and production-ready monitoring and observability [1][2].\n\n## Future Outlook\n\nLooking ahead to 2026, Microsoft Agent Framework GA in Q1 2026 will likely become the de facto standard for .NET agent development [1][4]. Semantic Kernel and AutoGen will continue as legacy frameworks with maintenance support but limited new features [4]. MCP adoption will accelerate as Agent Framework\'s native support drives ecosystem growth [4]. Multi-modal agents supporting text, image, audio, and video will become mainstream [2]. Enterprise features like RBAC, audit logging, and compliance will become table stakes for production deployments [2].\n\nEmerging patterns include human-AI collaboration with escalation to humans when confidence is low, human override capabilities, and learning from human feedback [2]. Performance optimization will see frameworks competing on latency and token efficiency, strategic model assignment using expensive models for complex tasks and cheap models for simple ones, and increased use of caching and intermediate models [2]. Interoperability standards will advance through MCP for tool integration, A2A for agent-to-agent communication, and cross-framework compatibility [4].\n\n### Sources\n\n[1] The AI Agent Framework Landscape in 2025: What Changed and What Matters: https://medium.com/@hieutrantrung.it/the-ai-agent-framework-landscape-in-2025-what-changed-and-what-matters-3cd9b07ef2c3\n\n[2] The AI Agent Framework Landscape in 2025 (Framework Comparison): https://medium.com/@hieutrantrung.it/the-ai-agent-framework-landscape-in-2025-what-changed-and-what-matters-3cd9b07ef2c3\n\n[3] Plugins in Semantic Kernel - Microsoft Learn: https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/\n\n[4] Migrating from Semantic Kernel to Microsoft Agent Framework: A C# Developer\'s Guide: https://dev.to/bspann/migrating-from-semantic-kernel-to-microsoft-agent-framework-a-c-developers-guide-3ad5\n\n[5] How AutoGen Framework Helps You Build Multi-Agent Systems: https://galileo.ai/blog/autogen-framework-multi-agents\n'}, 'name': 'write_file', 'type': 'tool_use'}]
+
+        research .NET agent frameworks and libraries
+        [tool]: Updated file /final_report.md
+
+        research .NET agent frameworks and libraries
+        [ai]: [{'id': 'toolu_015it9jEsgW4yQVkvAsL4ErU', 'caller': {'type': 'direct'}, 'input': {'todos': [{'content': 'Save the research request to /research_request.md', 'status': 'completed'}, {'content': 'Delegate research on .NET agent frameworks and libraries to sub-agent', 'status': 'completed'}, {'content': 'Synthesize findings and consolidate citations', 'status': 'completed'}, {'content': 'Write comprehensive final report to /final_report.md', 'status': 'completed'}, {'content': 'Verify report addresses all aspects of the request', 'status': 'in_progress'}]}, 'name': 'write_todos', 'type': 'tool_use'}]
+
+        research .NET agent frameworks and libraries
+        [tool]: Updated todo list to [{'content': 'Save the research request to /research_request.md', 'status': 'completed'}, {'content': 'Delegate research on .NET agent frameworks and libraries to sub-agent', 'status': 'completed'}, {'content': 'Synthesize findings and consolidate citations', 'status': 'completed'}, {'content': 'Write comprehensive final report to /final_report.md', 'status': 'completed'}, {'content': 'Verify report addresses all aspects of the request', 'status': 'in_progress'}]
+
+        research .NET agent frameworks and libraries
+        [ai]: [{'id': 'toolu_012mwj4KCoXjXxLy3UNVPnB3', 'caller': {'type': 'direct'}, 'input': {'file_path': '/research_request.md'}, 'name': 'read_file', 'type': 'tool_use'}]
+
+        research .NET agent frameworks and libraries
+        [tool]:      1	# Research Request
+     2	
+     3	Research .NET agent frameworks and libraries
+
+        research .NET agent frameworks and libraries
+        [ai]: [{'id': 'toolu_01GgTuCvQ5VdNK5n4Vji4ReA', 'caller': {'type': 'direct'}, 'input': {'todos': [{'content': 'Save the research request to /research_request.md', 'status': 'completed'}, {'content': 'Delegate research on .NET agent frameworks and libraries to sub-agent', 'status': 'completed'}, {'content': 'Synthesize findings and consolidate citations', 'status': 'completed'}, {'content': 'Write comprehensive final report to /final_report.md', 'status': 'completed'}, {'content': 'Verify report addresses all aspects of the request', 'status': 'completed'}]}, 'name': 'write_todos', 'type': 'tool_use'}]
+
+        research .NET agent frameworks and libraries
+        [tool]: Updated todo list to [{'content': 'Save the research request to /research_request.md', 'status': 'completed'}, {'content': 'Delegate research on .NET agent frameworks and libraries to sub-agent', 'status': 'completed'}, {'content': 'Synthesize findings and consolidate citations', 'status': 'completed'}, {'content': 'Write comprehensive final report to /final_report.md', 'status': 'completed'}, {'content': 'Verify report addresses all aspects of the request', 'status': 'completed'}]
+
+        research .NET agent frameworks and libraries
+        [ai]: Research complete! I've compiled a comprehensive report on .NET agent frameworks and libraries, saved to `/final_report.md`.
+
+## Key Findings:
+
+**Major Consolidation in Progress:**
+Microsoft is merging Semantic Kernel and AutoGen into a unified **Microsoft Agent Framework** (RC status, GA expected Q1 2026). This eliminates the confusion of choosing between overlapping frameworks.
+
+**Three Main Frameworks:**
+
+1. **Microsoft Agent Framework** (Recommended for new projects)
+   - Unified platform combining best of Semantic Kernel + AutoGen
+   - Native multi-agent workflows (Sequential, Concurrent, Handoff, Group Chat)
+   - Enterprise features: SLAs, RBAC, SOC 2/HIPAA compliance
+   - Multi-language support: C#, Python, Java
+   - Native MCP (Model Context Protocol) support
+
+2. **Semantic Kernel** (Mature, transitioning)
+   - Focus on orchestration, plugins, and enterprise integration
+   - 100+ data connectors
+   - Strong RAG capabilities
+   - Clear migration path to Agent Framework
+
+3. **AutoGen** (Mature research framework, transitioning)
+   - Conversation-first multi-agent design
+   - GroupChat orchestration
+   - Best for research and prototyping
+   - Migrating to Agent Framework for production
+
+**Ecosystem Characteristics:**
+- Microsoft monoculture (unlike diverse Python ecosystem)
+- No mature .NET ports of LangGraph, CrewAI, or LangChain
+- Strong Azure integration bias
+- Enterprise-grade support and compliance
+
+**Recommendation:** Start new projects with Microsoft Agent Framework despite RC status—it's stable and represents Microsoft's strategic direction.
