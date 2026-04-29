@@ -7,8 +7,11 @@ This module provides search and content processing utilities for the research ag
 using Tavily for URL discovery and fetching full webpage content.
 """
 
+from typing_extensions import Annotated, Literal
 from langchain_core.tools import InjectedToolArg, tool
 from tavily import TavilyClient
+
+tavily_client = TavilyClient()
 
 @tool(parse_docstring=True)
 def tavily_search(
@@ -36,10 +39,10 @@ def tavily_search(
     """
     # Use Tavily to discover URLs
     search_results = tavily_client.search(
-        query,
-        max_results=max_results,
-        topic=topic,
-    )
+                                            query,
+                                            max_results=max_results,
+                                            topic=topic,
+                                        )
 
     # Fetch full content for each URL
     result_texts = []
@@ -50,7 +53,7 @@ def tavily_search(
         # Fetch webpage content
         content = fetch_webpage_content(url)
 
-        result_text = 
+        result_text = \
         f"""
         ## {title}
 
@@ -63,7 +66,7 @@ def tavily_search(
         result_texts.append(result_text)
 
     # Format final response
-    response = 
+    response = \
     f"""
     🔍 Found {len(result_texts)} result(s) for '{query}':
 

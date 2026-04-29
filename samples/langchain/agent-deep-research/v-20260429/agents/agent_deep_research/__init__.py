@@ -10,12 +10,13 @@ from agents.agent_deep_research.prompts import (
                                                     RESEARCH_WORKFLOW_INSTRUCTIONS,
                                                     SUBAGENT_DELEGATION_INSTRUCTIONS,
                                                 )
-from agents.agent_deep_research.tools import tavily_search, think_tool
+from agents.agent_deep_research.agent_tools.search.tavily import tavily_search
+from agents.agent_deep_research.agent_tools.think_tool import think_tool
 
 __all__ = [
-    "tavily_search",
-    "think_tool",
-    "RESEARCHER_INSTRUCTIONS",
-    "RESEARCH_WORKFLOW_INSTRUCTIONS",
-    "SUBAGENT_DELEGATION_INSTRUCTIONS",
-]
+                "tavily_search",
+                "think_tool",
+                "RESEARCHER_INSTRUCTIONS",
+                "RESEARCH_WORKFLOW_INSTRUCTIONS",
+                "SUBAGENT_DELEGATION_INSTRUCTIONS",
+            ]
