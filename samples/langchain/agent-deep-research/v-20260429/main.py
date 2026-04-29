@@ -52,7 +52,6 @@ from agents.agent_deep_research.prompts import (
                                                     RESEARCH_WORKFLOW_INSTRUCTIONS,
                                                     SUBAGENT_DELEGATION_INSTRUCTIONS,
                                                 )
-from agents.agent_deep_research.tools import tavily_search, think_tool
 
 # Limits
 max_concurrent_research_units = 3
@@ -72,6 +71,9 @@ INSTRUCTIONS = (
         max_researcher_iterations=max_researcher_iterations,
     )
 )
+
+from agents.agent_deep_research.agent_tools.search.tavily import tavily_search
+from agents.agent_deep_research.agent_tools.think_tool import think_tool
 
 # Create research sub-agent
 research_sub_agent = \
@@ -115,16 +117,16 @@ for topic in topics:
     print("researching topic:", topic)
 
     result = agent.invoke(
-        {
-            "messages": 
-            [
-                {
-                    "role": "user",
-                    "content": f"{topic}",
-                }
-            ],
-        }, 
-    )
+                            {
+                                "messages": 
+                                [
+                                    {
+                                        "role": "user",
+                                        "content": f"{topic}",
+                                    }
+                                ],
+                            }, 
+                        )
 
     for msg in result["messages"]:
         role = getattr(msg, "type", msg.__class__.__name__)
