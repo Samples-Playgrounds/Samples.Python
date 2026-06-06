@@ -1,5 +1,8 @@
+# Perplexity
 
-https://docs.perplexity.ai/docs/search/quickstart
+
+*   https://docs.perplexity.ai/docs/search/quickstart
+
 
 
 ```shell
