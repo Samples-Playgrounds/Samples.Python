@@ -1,0 +1,1391 @@
+{
+  "file name" : "htmlcheatsheet.pdf",
+  "number of pages" : 2,
+  "author" : "Mark Branom",
+  "title" : "HTML Cheat Sheet",
+  "creation date" : "D:20001024165533Z",
+  "modification date" : "D:20150210122138-08'00'",
+  "kids" : [ {
+    "type" : "header",
+    "id" : 8,
+    "page number" : 1,
+    "bounding box" : [ 215.711, 731.244, 576.751, 756.336 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 3,
+      "page number" : 1,
+      "bounding box" : [ 215.711, 731.244, 576.751, 756.336 ],
+      "heading level" : 1,
+      "font" : "ComicSansMS,Bold",
+      "font size" : 18.0,
+      "text color" : "[1.0, 1.0, 1.0]",
+      "content" : "HTML Cheatsheet page1 of 2"
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 9,
+    "page number" : 1,
+    "bounding box" : [ 30.75, 744.0, 139.5, 755.25 ]
+  }, {
+    "type" : "image",
+    "id" : 10,
+    "page number" : 1,
+    "bounding box" : [ 30.75, 730.5, 517.5, 755.25 ]
+  }, {
+    "type" : "image",
+    "id" : 11,
+    "page number" : 1,
+    "bounding box" : [ 275.25, 730.5, 372.75, 755.25 ]
+  }, {
+    "type" : "image",
+    "id" : 12,
+    "page number" : 1,
+    "bounding box" : [ 517.5, 744.0, 580.5, 755.25 ]
+  }, {
+    "type" : "image",
+    "id" : 13,
+    "page number" : 1,
+    "bounding box" : [ 551.25, 744.0, 576.0, 755.25 ]
+  }, {
+    "type" : "image",
+    "id" : 14,
+    "page number" : 1,
+    "bounding box" : [ 517.5, 730.5, 580.5, 744.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 15,
+    "page number" : 1,
+    "bounding box" : [ 36.75, 705.36, 115.498, 726.798 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Basic Tags <html> </html>"
+  }, {
+    "type" : "paragraph",
+    "id" : 68,
+    "page number" : 1,
+    "bounding box" : [ 324.75, 705.36, 381.003, 726.795 ],
+    "font" : "Verdana,Bold",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Formatting <p> </p>"
+  }, {
+    "type" : "image",
+    "id" : 16,
+    "page number" : 1,
+    "bounding box" : [ 36.75, 716.25, 88.5, 717.0 ]
+  }, {
+    "type" : "image",
+    "id" : 69,
+    "page number" : 1,
+    "bounding box" : [ 324.75, 716.25, 379.5, 717.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 17,
+    "page number" : 1,
+    "bounding box" : [ 36.75, 682.113, 176.426, 705.048 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates an HTML document <head> </head>"
+  }, {
+    "type" : "paragraph",
+    "id" : 70,
+    "page number" : 1,
+    "bounding box" : [ 324.75, 682.113, 453.932, 705.048 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates a new paragraph <br>"
+  }, {
+    "type" : "image",
+    "id" : 18,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 693.75, 290.25, 694.5 ]
+  }, {
+    "type" : "image",
+    "id" : 71,
+    "page number" : 1,
+    "bounding box" : [ 323.25, 693.75, 578.25, 694.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 19,
+    "page number" : 1,
+    "bounding box" : [ 36.753, 658.863, 272.548, 681.798 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets off the title & other info that isn't displayed <body> </body>"
+  }, {
+    "type" : "paragraph",
+    "id" : 72,
+    "page number" : 1,
+    "bounding box" : [ 324.753, 658.863, 515.728, 681.798 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "AInserts a line break (carriage return) <blockquote> </blockquote>"
+  }, {
+    "type" : "image",
+    "id" : 20,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 670.5, 290.25, 671.25 ]
+  }, {
+    "type" : "image",
+    "id" : 73,
+    "page number" : 1,
+    "bounding box" : [ 323.25, 670.5, 578.25, 671.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 21,
+    "page number" : 1,
+    "bounding box" : [ 51.0, 647.61, 251.149, 658.548 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets off the visible portion of the document"
+  }, {
+    "type" : "paragraph",
+    "id" : 74,
+    "page number" : 1,
+    "bounding box" : [ 324.753, 634.857, 586.473, 658.548 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Puts content in a quote - indents text from both sides <div> </div>"
+  }, {
+    "type" : "image",
+    "id" : 23,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 646.5, 290.25, 647.25 ]
+  }, {
+    "type" : "image",
+    "id" : 75,
+    "page number" : 1,
+    "bounding box" : [ 323.25, 646.5, 578.25, 647.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 22,
+    "page number" : 1,
+    "bounding box" : [ 36.753, 613.11, 277.708, 645.795 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<title> </title> Puts name of the document in the title bar; when bookmarking pages, this is what isbookmarked"
+  }, {
+    "type" : "paragraph",
+    "id" : 76,
+    "page number" : 1,
+    "bounding box" : [ 324.753, 611.607, 516.536, 635.298 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Used to format block content with CSS <span> </span>"
+  }, {
+    "type" : "image",
+    "id" : 77,
+    "page number" : 1,
+    "bounding box" : [ 323.25, 623.25, 578.25, 624.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 78,
+    "page number" : 1,
+    "bounding box" : [ 339.0, 601.11, 516.302, 612.048 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Used to format inline content with CSS"
+  }, {
+    "type" : "paragraph",
+    "id" : 24,
+    "page number" : 1,
+    "bounding box" : [ 36.75, 580.11, 279.476, 602.295 ],
+    "font" : "Verdana,Bold",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Body attributes (only used in email newsletters) <body bgcolor=?>"
+  }, {
+    "type" : "image",
+    "id" : 25,
+    "page number" : 1,
+    "bounding box" : [ 36.75, 591.75, 113.25, 592.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 26,
+    "page number" : 1,
+    "bounding box" : [ 36.75, 556.854, 272.842, 580.545 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets background color, using name or hex value <body text=?>"
+  }, {
+    "type" : "paragraph",
+    "id" : 79,
+    "page number" : 1,
+    "bounding box" : [ 324.744, 556.86, 379.336, 579.045 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Lists <ul> </ul>"
+  }, {
+    "type" : "image",
+    "id" : 27,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 568.5, 290.25, 569.25 ]
+  }, {
+    "type" : "image",
+    "id" : 80,
+    "page number" : 1,
+    "bounding box" : [ 324.75, 568.5, 347.25, 569.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 28,
+    "page number" : 1,
+    "bounding box" : [ 36.753, 533.607, 237.543, 557.298 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets text color, using name or hex value <body link=?>"
+  }, {
+    "type" : "paragraph",
+    "id" : 81,
+    "page number" : 1,
+    "bounding box" : [ 338.997, 546.357, 455.124, 557.295 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates an unordered list"
+  }, {
+    "type" : "image",
+    "id" : 29,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 545.25, 290.25, 546.0 ]
+  }, {
+    "type" : "image",
+    "id" : 83,
+    "page number" : 1,
+    "bounding box" : [ 323.25, 545.25, 578.25, 546.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 82,
+    "page number" : 1,
+    "bounding box" : [ 324.75, 511.86, 491.593, 544.542 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<ol start=?> </ol> Creates an ordered list (start=xx, where xx is a counting number)"
+  }, {
+    "type" : "paragraph",
+    "id" : 30,
+    "page number" : 1,
+    "bounding box" : [ 36.753, 510.357, 252.773, 534.048 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets color of links, using name or hex value <body vlink=?>"
+  }, {
+    "type" : "image",
+    "id" : 31,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 522.0, 290.25, 522.75 ]
+  }, {
+    "type" : "image",
+    "id" : 85,
+    "page number" : 1,
+    "bounding box" : [ 323.25, 510.75, 578.25, 511.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 32,
+    "page number" : 1,
+    "bounding box" : [ 36.753, 487.113, 286.813, 510.048 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets color of visited links, using name or hex value <body alink=?>"
+  }, {
+    "type" : "paragraph",
+    "id" : 84,
+    "page number" : 1,
+    "bounding box" : [ 324.753, 499.107, 372.004, 510.045 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<li> </li>"
+  }, {
+    "type" : "paragraph",
+    "id" : 86,
+    "page number" : 1,
+    "bounding box" : [ 324.753, 475.857, 466.665, 499.548 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Encompasses each list item <dl> </dl>"
+  }, {
+    "type" : "image",
+    "id" : 33,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 498.75, 290.25, 499.5 ]
+  }, {
+    "type" : "image",
+    "id" : 87,
+    "page number" : 1,
+    "bounding box" : [ 323.25, 487.5, 578.25, 488.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 34,
+    "page number" : 1,
+    "bounding box" : [ 51.0, 475.86, 268.708, 486.798 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets color of active links (while mouse-clicking)"
+  }, {
+    "type" : "paragraph",
+    "id" : 88,
+    "page number" : 1,
+    "bounding box" : [ 324.753, 452.607, 444.183, 476.298 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates a definition list <dt>"
+  }, {
+    "type" : "paragraph",
+    "id" : 35,
+    "page number" : 1,
+    "bounding box" : [ 36.75, 442.86, 104.256, 465.045 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Text Tags <pre> </pre>"
+  }, {
+    "type" : "image",
+    "id" : 89,
+    "page number" : 1,
+    "bounding box" : [ 323.25, 464.25, 578.25, 465.0 ]
+  }, {
+    "type" : "image",
+    "id" : 36,
+    "page number" : 1,
+    "bounding box" : [ 36.75, 454.5, 84.0, 455.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 90,
+    "page number" : 1,
+    "bounding box" : [ 324.75, 429.363, 472.49, 452.298 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Precedes each defintion term <dd>"
+  }, {
+    "type" : "paragraph",
+    "id" : 37,
+    "page number" : 1,
+    "bounding box" : [ 50.997, 432.357, 170.472, 443.295 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates preformatted text"
+  }, {
+    "type" : "image",
+    "id" : 91,
+    "page number" : 1,
+    "bounding box" : [ 323.25, 441.0, 578.25, 441.75 ]
+  }, {
+    "type" : "list",
+    "id" : 38,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 36.75, 361.86, 276.693, 430.542 ],
+    "numbering style" : "english letters",
+    "number of list items" : 2,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 36.75, 409.11, 260.426, 430.542 ],
+      "font" : "Verdana",
+      "font size" : 9.0,
+      "text color" : "[0.0, 0.0, 0.0]",
+      "content" : "<h1> </h1> --> <h6> </h6> Creates headlines -- H1=largest, H6=smallest",
+      "kids" : [ {
+        "type" : "image",
+        "id" : 5,
+        "page number" : 1,
+        "bounding box" : [ 35.25, 431.25, 290.25, 432.0 ]
+      }, {
+        "type" : "paragraph",
+        "id" : 6,
+        "page number" : 1,
+        "bounding box" : [ 36.753, 385.86, 274.682, 407.295 ],
+        "font" : "Verdana",
+        "font size" : 9.0,
+        "text color" : "[0.0, 0.0, 0.0]",
+        "content" : "<b> </b> Creates bold text (should use <strong> instead)"
+      }, {
+        "type" : "image",
+        "id" : 7,
+        "page number" : 1,
+        "bounding box" : [ 35.25, 408.0, 290.25, 408.75 ]
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 36.753, 361.86, 276.693, 384.045 ],
+      "font" : "Verdana",
+      "font size" : 9.0,
+      "text color" : "[0.0, 0.0, 0.0]",
+      "content" : "<i> </i> Creates italicized text (should use <em> instead)",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "paragraph",
+    "id" : 92,
+    "page number" : 1,
+    "bounding box" : [ 339.372, 418.11, 445.748, 429.048 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Precedes each defintion"
+  }, {
+    "type" : "paragraph",
+    "id" : 93,
+    "page number" : 1,
+    "bounding box" : [ 324.387, 385.86, 421.185, 407.295 ],
+    "font" : "Verdana,Bold",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Graphical elements <hr>"
+  }, {
+    "type" : "image",
+    "id" : 94,
+    "page number" : 1,
+    "bounding box" : [ 324.75, 396.75, 420.75, 397.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 95,
+    "page number" : 1,
+    "bounding box" : [ 324.75, 361.857, 448.703, 385.548 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Inserts a horizontal rule <hr size=?>"
+  }, {
+    "type" : "image",
+    "id" : 39,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 384.75, 290.25, 385.5 ]
+  }, {
+    "type" : "image",
+    "id" : 96,
+    "page number" : 1,
+    "bounding box" : [ 323.25, 373.5, 578.25, 374.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 97,
+    "page number" : 1,
+    "bounding box" : [ 324.753, 338.607, 500.322, 362.298 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets size (height) of horizontal rule <hr width=?>"
+  }, {
+    "type" : "image",
+    "id" : 41,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 361.5, 290.25, 362.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 40,
+    "page number" : 1,
+    "bounding box" : [ 36.753, 349.863, 87.752, 360.801 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<tt> </tt>"
+  }, {
+    "type" : "image",
+    "id" : 98,
+    "page number" : 1,
+    "bounding box" : [ 323.25, 350.25, 578.25, 351.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 42,
+    "page number" : 1,
+    "bounding box" : [ 36.753, 326.613, 182.454, 349.548 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates typewriter-style text <code> </code>"
+  }, {
+    "type" : "paragraph",
+    "id" : 99,
+    "page number" : 1,
+    "bounding box" : [ 324.753, 315.357, 577.662, 339.048 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets width of rule (as a % or absolute pixel length) <hr noshade>"
+  }, {
+    "type" : "image",
+    "id" : 43,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 338.25, 290.25, 339.0 ]
+  }, {
+    "type" : "image",
+    "id" : 100,
+    "page number" : 1,
+    "bounding box" : [ 323.25, 327.0, 578.25, 327.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 44,
+    "page number" : 1,
+    "bounding box" : [ 36.753, 302.607, 266.25, 326.298 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Used to define source code, usually monospace <cite> </cite>"
+  }, {
+    "type" : "paragraph",
+    "id" : 101,
+    "page number" : 1,
+    "bounding box" : [ 324.753, 292.113, 537.247, 315.048 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates a horizontal rule without a shadow <img src=\"URL\" />"
+  }, {
+    "type" : "image",
+    "id" : 45,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 314.25, 290.25, 315.0 ]
+  }, {
+    "type" : "image",
+    "id" : 102,
+    "page number" : 1,
+    "bounding box" : [ 323.25, 303.75, 578.25, 304.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 46,
+    "page number" : 1,
+    "bounding box" : [ 36.753, 279.357, 257.836, 303.048 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates a citation, usually processed in italics <address> </address>"
+  }, {
+    "type" : "paragraph",
+    "id" : 103,
+    "page number" : 1,
+    "bounding box" : [ 324.753, 268.863, 572.771, 291.798 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Adds image; it is a separate file located at the URL <img src=\"URL\" align=?>"
+  }, {
+    "type" : "image",
+    "id" : 47,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 291.0, 290.25, 291.75 ]
+  }, {
+    "type" : "image",
+    "id" : 104,
+    "page number" : 1,
+    "bounding box" : [ 323.25, 280.5, 578.25, 281.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 48,
+    "page number" : 1,
+    "bounding box" : [ 36.753, 256.107, 285.835, 279.798 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates address section, usually processed in italics <em> </em>"
+  }, {
+    "type" : "paragraph",
+    "id" : 105,
+    "page number" : 1,
+    "bounding box" : [ 324.753, 245.613, 609.927, 268.548 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Aligns image left/right/center/bottom/top/middle (use CSS) <img src=\"URL\" border=?>"
+  }, {
+    "type" : "image",
+    "id" : 49,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 267.75, 290.25, 268.5 ]
+  }, {
+    "type" : "image",
+    "id" : 106,
+    "page number" : 1,
+    "bounding box" : [ 323.25, 257.25, 578.25, 258.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 50,
+    "page number" : 1,
+    "bounding box" : [ 36.753, 232.857, 272.805, 256.548 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Emphasizes a word (usually processed in italics) <strong> </strong>"
+  }, {
+    "type" : "paragraph",
+    "id" : 107,
+    "page number" : 1,
+    "bounding box" : [ 324.753, 221.607, 561.633, 245.298 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets size of border surrounding image (use CSS) <img src=\"URL\" height=?>"
+  }, {
+    "type" : "image",
+    "id" : 51,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 244.5, 290.25, 245.25 ]
+  }, {
+    "type" : "image",
+    "id" : 108,
+    "page number" : 1,
+    "bounding box" : [ 323.25, 233.25, 578.25, 234.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 52,
+    "page number" : 1,
+    "bounding box" : [ 36.753, 209.613, 266.132, 232.548 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Emphasizes a word (usually processed in bold) <font size=?> </font>"
+  }, {
+    "type" : "paragraph",
+    "id" : 109,
+    "page number" : 1,
+    "bounding box" : [ 324.753, 198.357, 476.124, 222.048 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets height of image, in pixels <img src=\"URL\" width=?>"
+  }, {
+    "type" : "image",
+    "id" : 53,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 221.25, 290.25, 222.0 ]
+  }, {
+    "type" : "image",
+    "id" : 110,
+    "page number" : 1,
+    "bounding box" : [ 323.25, 210.0, 578.25, 210.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 54,
+    "page number" : 1,
+    "bounding box" : [ 36.753, 186.363, 280.486, 209.298 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets size of font - 1 to 7 (should use CSS instead) <font color=?> </font>"
+  }, {
+    "type" : "paragraph",
+    "id" : 111,
+    "page number" : 1,
+    "bounding box" : [ 339.0, 187.86, 474.846, 198.798 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets width of image, in pixels"
+  }, {
+    "type" : "image",
+    "id" : 55,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 198.0, 290.25, 198.75 ]
+  }, {
+    "type" : "image",
+    "id" : 113,
+    "page number" : 1,
+    "bounding box" : [ 323.25, 186.75, 578.25, 187.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 56,
+    "page number" : 1,
+    "bounding box" : [ 36.753, 162.357, 235.968, 186.048 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets font color (should use CSS instead) <font face=?> </font>"
+  }, {
+    "type" : "paragraph",
+    "id" : 112,
+    "page number" : 1,
+    "bounding box" : [ 324.753, 153.357, 550.335, 186.045 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<img src=\"URL\" alt=?> Sets the alternate text for browsers that can't process images (required by the ADA)"
+  }, {
+    "type" : "image",
+    "id" : 57,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 174.0, 290.25, 174.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 58,
+    "page number" : 1,
+    "bounding box" : [ 50.25, 151.86, 264.07, 162.798 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Defines the font used (should use CSS instead)"
+  }, {
+    "type" : "paragraph",
+    "id" : 59,
+    "page number" : 1,
+    "bounding box" : [ 36.75, 118.86, 196.504, 141.045 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Links <a href=\"URL\">clickable text</a>"
+  }, {
+    "type" : "image",
+    "id" : 60,
+    "page number" : 1,
+    "bounding box" : [ 36.75, 130.5, 62.25, 131.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 61,
+    "page number" : 1,
+    "bounding box" : [ 36.75, 95.613, 289.502, 118.548 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates a hyperlink to a Uniform Resource Locator <a href=\"mailto:EMAIL_ADDRESS\">clickable text</a>"
+  }, {
+    "type" : "image",
+    "id" : 62,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 107.25, 290.25, 108.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 63,
+    "page number" : 1,
+    "bounding box" : [ 36.753, 72.363, 235.839, 95.298 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates a hyperlink to an email address <a name=\"NAME\">"
+  }, {
+    "type" : "image",
+    "id" : 64,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 84.0, 290.25, 84.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 65,
+    "page number" : 1,
+    "bounding box" : [ 36.753, 49.113, 252.899, 72.048 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates a target location within a document <a href=\"#NAME\">clickable text</a>"
+  }, {
+    "type" : "image",
+    "id" : 66,
+    "page number" : 1,
+    "bounding box" : [ 35.25, 60.75, 290.25, 61.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 67,
+    "page number" : 1,
+    "bounding box" : [ 51.0, 37.86, 218.659, 48.798 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates a link to that target location"
+  }, {
+    "type" : "header",
+    "id" : 114,
+    "page number" : 2,
+    "bounding box" : [ 215.711, 731.244, 576.751, 756.336 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 4,
+      "page number" : 2,
+      "bounding box" : [ 215.711, 731.244, 576.751, 756.336 ],
+      "heading level" : 1,
+      "font" : "ComicSansMS,Bold",
+      "font size" : 18.0,
+      "text color" : "[1.0, 1.0, 1.0]",
+      "content" : "HTML Cheatsheet page2 of 2"
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 115,
+    "page number" : 2,
+    "bounding box" : [ 30.75, 744.0, 139.5, 755.25 ]
+  }, {
+    "type" : "image",
+    "id" : 116,
+    "page number" : 2,
+    "bounding box" : [ 30.75, 730.5, 517.5, 755.25 ]
+  }, {
+    "type" : "image",
+    "id" : 117,
+    "page number" : 2,
+    "bounding box" : [ 275.25, 730.5, 372.75, 755.25 ]
+  }, {
+    "type" : "image",
+    "id" : 118,
+    "page number" : 2,
+    "bounding box" : [ 517.5, 744.0, 580.5, 755.25 ]
+  }, {
+    "type" : "image",
+    "id" : 119,
+    "page number" : 2,
+    "bounding box" : [ 551.25, 744.0, 576.0, 755.25 ]
+  }, {
+    "type" : "image",
+    "id" : 120,
+    "page number" : 2,
+    "bounding box" : [ 517.5, 730.5, 580.5, 744.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 121,
+    "page number" : 2,
+    "bounding box" : [ 36.75, 698.61, 116.252, 720.048 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Forms <form> </form>"
+  }, {
+    "type" : "image",
+    "id" : 122,
+    "page number" : 2,
+    "bounding box" : [ 36.75, 709.5, 66.75, 710.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 123,
+    "page number" : 2,
+    "bounding box" : [ 50.997, 687.36, 119.201, 698.298 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Defines a form"
+  }, {
+    "type" : "image",
+    "id" : 125,
+    "page number" : 2,
+    "bounding box" : [ 35.25, 686.25, 290.25, 687.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 124,
+    "page number" : 2,
+    "bounding box" : [ 36.75, 652.86, 282.197, 685.545 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<select multiple name=? size=?> </select> Creates a scrolling menu. Size sets the number of menu items visible before user needs to scroll."
+  }, {
+    "type" : "image",
+    "id" : 127,
+    "page number" : 2,
+    "bounding box" : [ 35.25, 652.5, 290.25, 653.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 126,
+    "page number" : 2,
+    "bounding box" : [ 36.753, 640.863, 167.024, 651.801 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<select name=?> </select>"
+  }, {
+    "type" : "paragraph",
+    "id" : 128,
+    "page number" : 2,
+    "bounding box" : [ 36.753, 616.857, 167.244, 640.548 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates a pulldown menu <option>"
+  }, {
+    "type" : "image",
+    "id" : 129,
+    "page number" : 2,
+    "bounding box" : [ 35.25, 628.5, 290.25, 629.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 130,
+    "page number" : 2,
+    "bounding box" : [ 51.0, 606.36, 164.342, 617.298 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets off each menu item"
+  }, {
+    "type" : "image",
+    "id" : 132,
+    "page number" : 2,
+    "bounding box" : [ 35.25, 605.25, 290.25, 606.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 131,
+    "page number" : 2,
+    "bounding box" : [ 36.753, 571.86, 275.255, 604.545 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<textarea name=? cols=\"x\" rows=\"y\"></textarea> Creates a text box area. Columns set the width; rows set the height."
+  }, {
+    "type" : "image",
+    "id" : 134,
+    "page number" : 2,
+    "bounding box" : [ 35.25, 571.5, 290.25, 572.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 133,
+    "page number" : 2,
+    "bounding box" : [ 36.753, 535.857, 276.756, 570.801 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<input type=\"checkbox\" name=? value=?> Creates a checkbox. <input type=\"checkbox\" name=? value=? checked>"
+  }, {
+    "type" : "image",
+    "id" : 135,
+    "page number" : 2,
+    "bounding box" : [ 35.25, 547.5, 290.25, 548.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 136,
+    "page number" : 2,
+    "bounding box" : [ 36.753, 512.607, 243.267, 536.298 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates a checkbox which is pre-checked. <input type=\"radio\" name=? value=?>"
+  }, {
+    "type" : "image",
+    "id" : 137,
+    "page number" : 2,
+    "bounding box" : [ 35.25, 524.25, 290.25, 525.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 138,
+    "page number" : 2,
+    "bounding box" : [ 51.0, 502.11, 158.598, 513.048 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates a radio button."
+  }, {
+    "type" : "image",
+    "id" : 140,
+    "page number" : 2,
+    "bounding box" : [ 35.25, 501.0, 290.25, 501.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 139,
+    "page number" : 2,
+    "bounding box" : [ 36.753, 478.11, 257.253, 500.295 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<input type=\"radio\" name=? value=? checked> Creates a radio button which is pre-checked."
+  }, {
+    "type" : "image",
+    "id" : 142,
+    "page number" : 2,
+    "bounding box" : [ 35.25, 477.75, 290.25, 478.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 141,
+    "page number" : 2,
+    "bounding box" : [ 36.744, 444.357, 276.149, 477.051 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<input type=\"text\" name=? size=?> Creates a one-line text area. Size sets length, in characters."
+  }, {
+    "type" : "image",
+    "id" : 144,
+    "page number" : 2,
+    "bounding box" : [ 35.25, 443.25, 290.25, 444.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 143,
+    "page number" : 2,
+    "bounding box" : [ 36.753, 409.86, 288.622, 442.542 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<input type=\"submit\" value=?> Creates a submit button. Value sets the text in the submit button."
+  }, {
+    "type" : "image",
+    "id" : 146,
+    "page number" : 2,
+    "bounding box" : [ 35.25, 408.75, 290.25, 409.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 145,
+    "page number" : 2,
+    "bounding box" : [ 36.753, 397.107, 282.755, 408.045 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<input type=\"image\" name=? src=? border=? alt=?>"
+  }, {
+    "type" : "paragraph",
+    "id" : 147,
+    "page number" : 2,
+    "bounding box" : [ 36.753, 373.857, 239.582, 397.548 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates a submit button using an image. <input type=\"reset\">"
+  }, {
+    "type" : "image",
+    "id" : 148,
+    "page number" : 2,
+    "bounding box" : [ 35.25, 385.5, 290.25, 386.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 149,
+    "page number" : 2,
+    "bounding box" : [ 51.0, 363.36, 154.806, 374.298 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates a reset button"
+  }, {
+    "type" : "paragraph",
+    "id" : 183,
+    "level" : "2",
+    "page number" : 2,
+    "bounding box" : [ 321.904, 697.012, 577.114, 721.165 ],
+    "font" : "Verdana",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "HTML5 input tag attributes (not all browsers support; visit http://caniuse.com"
+  }, {
+    "type" : "image",
+    "id" : 184,
+    "page number" : 2,
+    "bounding box" : [ 321.904, 710.039, 473.174, 710.369 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 185,
+    "page number" : 2,
+    "bounding box" : [ 321.904, 661.012, 479.124, 697.165 ],
+    "font" : "Verdana",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "for details) <input type=\"email\" name=?>"
+  }, {
+    "type" : "paragraph",
+    "id" : 186,
+    "page number" : 2,
+    "bounding box" : [ 321.904, 637.012, 568.524, 661.165 ],
+    "font" : "Verdana",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Sets a single-line textbox for email addresses <input type=\"url\" name=?>"
+  }, {
+    "type" : "paragraph",
+    "id" : 187,
+    "page number" : 2,
+    "bounding box" : [ 321.904, 613.012, 513.424, 637.165 ],
+    "font" : "Verdana",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Sets a single-line textbox for URLs <input type=\"number\" name=?>"
+  }, {
+    "type" : "paragraph",
+    "id" : 188,
+    "page number" : 2,
+    "bounding box" : [ 321.904, 589.012, 536.744, 613.165 ],
+    "font" : "Verdana",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Sets a single-line textbox for a number <input type=\"range\" name=?>"
+  }, {
+    "type" : "paragraph",
+    "id" : 189,
+    "page number" : 2,
+    "bounding box" : [ 339.504, 577.012, 590.864, 589.165 ],
+    "font" : "Verdana",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Sets a single-line text box for a range of numbers"
+  }, {
+    "type" : "paragraph",
+    "id" : 190,
+    "page number" : 2,
+    "bounding box" : [ 321.904, 541.012, 568.514, 577.165 ],
+    "font" : "Verdana",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "<input type=\"date/month/week/time\" name=?> Sets a single-line text box with a calendar showing the date/month/week/time"
+  }, {
+    "type" : "paragraph",
+    "id" : 191,
+    "page number" : 2,
+    "bounding box" : [ 321.904, 529.012, 484.954, 541.165 ],
+    "font" : "Verdana",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "<input type=\"search\" name=?>"
+  }, {
+    "type" : "paragraph",
+    "id" : 192,
+    "page number" : 2,
+    "bounding box" : [ 321.904, 505.012, 540.164, 529.165 ],
+    "font" : "Verdana",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Sets a single-line text box for searching <input type=\"color\" name=?>"
+  }, {
+    "type" : "paragraph",
+    "id" : 193,
+    "page number" : 2,
+    "bounding box" : [ 339.504, 493.012, 564.674, 505.165 ],
+    "font" : "Verdana",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Sets a single-line text box for picking a color"
+  }, {
+    "type" : "paragraph",
+    "id" : 150,
+    "page number" : 2,
+    "bounding box" : [ 36.753, 330.357, 538.066, 351.798 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Tables (use only for data layout - use CSS for page layout) Table attributes (only use for email newsletters) <table> </table>"
+  }, {
+    "type" : "image",
+    "id" : 158,
+    "page number" : 2,
+    "bounding box" : [ 324.75, 341.5, 403.5, 342.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 159,
+    "page number" : 2,
+    "bounding box" : [ 324.75, 330.61, 407.255, 341.548 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<table border=?>"
+  }, {
+    "type" : "image",
+    "id" : 182,
+    "page number" : 2,
+    "bounding box" : [ 35.75, 340.626, 290.75, 341.376 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 160,
+    "page number" : 2,
+    "bounding box" : [ 324.759, 306.607, 553.588, 330.298 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets the width of the border around table cells <table cellspacing=?>"
+  }, {
+    "type" : "paragraph",
+    "id" : 151,
+    "page number" : 2,
+    "bounding box" : [ 36.753, 307.11, 120.651, 330.045 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Creates a table <tr> </tr>"
+  }, {
+    "type" : "image",
+    "id" : 152,
+    "page number" : 2,
+    "bounding box" : [ 35.25, 318.75, 290.25, 319.5 ]
+  }, {
+    "type" : "image",
+    "id" : 161,
+    "page number" : 2,
+    "bounding box" : [ 323.25, 318.25, 578.25, 319.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 162,
+    "page number" : 2,
+    "bounding box" : [ 339.0, 296.11, 529.008, 307.048 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets amount of space between table cells"
+  }, {
+    "type" : "paragraph",
+    "id" : 153,
+    "page number" : 2,
+    "bounding box" : [ 36.753, 283.863, 176.59, 306.798 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets off each row in a table <td> </td>"
+  }, {
+    "type" : "image",
+    "id" : 154,
+    "page number" : 2,
+    "bounding box" : [ 35.25, 295.5, 290.25, 296.25 ]
+  }, {
+    "type" : "image",
+    "id" : 164,
+    "page number" : 2,
+    "bounding box" : [ 323.25, 295.0, 578.25, 295.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 163,
+    "page number" : 2,
+    "bounding box" : [ 324.753, 248.857, 568.592, 294.295 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<table cellpadding=?> Sets amount of space between a cell's border and its contents <table width=?>"
+  }, {
+    "type" : "paragraph",
+    "id" : 155,
+    "page number" : 2,
+    "bounding box" : [ 51.0, 272.61, 169.091, 283.548 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets off each cell in a row"
+  }, {
+    "type" : "image",
+    "id" : 157,
+    "page number" : 2,
+    "bounding box" : [ 35.25, 271.5, 290.25, 272.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 156,
+    "page number" : 2,
+    "bounding box" : [ 36.753, 238.11, 280.117, 270.795 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<th> </th> Sets off the table header (a normal cell with bold, centered text)"
+  }, {
+    "type" : "image",
+    "id" : 165,
+    "page number" : 2,
+    "bounding box" : [ 323.25, 260.5, 578.25, 261.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 166,
+    "page number" : 2,
+    "bounding box" : [ 339.0, 238.36, 574.37, 249.298 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets width of the table in pixels or as a percentage"
+  }, {
+    "type" : "image",
+    "id" : 168,
+    "page number" : 2,
+    "bounding box" : [ 323.25, 237.25, 578.25, 238.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 167,
+    "page number" : 2,
+    "bounding box" : [ 324.753, 203.86, 515.526, 236.545 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<tr align=?> Sets alignment for cells within the row (left/center/right)"
+  }, {
+    "type" : "image",
+    "id" : 170,
+    "page number" : 2,
+    "bounding box" : [ 323.25, 203.5, 578.25, 204.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 169,
+    "page number" : 2,
+    "bounding box" : [ 324.753, 180.61, 530.898, 202.801 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<td align=?> Sets alignment for cells (left/center/right)"
+  }, {
+    "type" : "image",
+    "id" : 172,
+    "page number" : 2,
+    "bounding box" : [ 323.25, 179.5, 578.25, 180.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 171,
+    "page number" : 2,
+    "bounding box" : [ 324.753, 146.11, 551.674, 178.795 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<tr valign=?> Sets vertical alignment for cells within the row (top/middle/bottom)"
+  }, {
+    "type" : "image",
+    "id" : 174,
+    "page number" : 2,
+    "bounding box" : [ 323.25, 145.75, 578.25, 146.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 173,
+    "page number" : 2,
+    "bounding box" : [ 324.753, 134.113, 391.506, 145.051 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<td valign=?>"
+  }, {
+    "type" : "paragraph",
+    "id" : 175,
+    "page number" : 2,
+    "bounding box" : [ 324.753, 110.107, 574.483, 133.798 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets vertical alignment for cell (top/middle/bottom) <td rowspan=?>"
+  }, {
+    "type" : "image",
+    "id" : 176,
+    "page number" : 2,
+    "bounding box" : [ 323.25, 121.75, 578.25, 122.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 177,
+    "page number" : 2,
+    "bounding box" : [ 324.753, 86.857, 576.42, 110.548 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets number of rows a cell should span (default=1) <td colspan=?>"
+  }, {
+    "type" : "image",
+    "id" : 178,
+    "page number" : 2,
+    "bounding box" : [ 323.25, 98.5, 578.25, 99.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 179,
+    "page number" : 2,
+    "bounding box" : [ 324.753, 63.607, 534.42, 87.298 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Sets number of columns a cell should span <td nowrap>"
+  }, {
+    "type" : "image",
+    "id" : 180,
+    "page number" : 2,
+    "bounding box" : [ 323.25, 75.25, 578.25, 76.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 181,
+    "page number" : 2,
+    "bounding box" : [ 339.0, 53.11, 573.113, 64.048 ],
+    "font" : "Verdana",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Prevents lines within a cell from being broken to fit"
+  } ]
+}

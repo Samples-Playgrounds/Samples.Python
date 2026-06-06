@@ -1,0 +1,5012 @@
+{
+  "file name" : "python-cheatsheet.pdf",
+  "number of pages" : 3,
+  "author" : null,
+  "title" : "Python Cheat Sheet",
+  "creation date" : "D:20250917094427Z",
+  "modification date" : "D:20250917094427Z",
+  "kids" : [ {
+    "type" : "heading",
+    "id" : 52,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 343.324, 513.75, 379.482, 524.43 ],
+    "heading level" : 2,
+    "font" : "SourceSans3-Bold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Data Types"
+  }, {
+    "type" : "heading",
+    "id" : 116,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 586.84, 513.75, 610.345, 524.43 ],
+    "heading level" : 2,
+    "font" : "SourceSans3-Bold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Strings"
+  }, {
+    "type" : "heading",
+    "id" : 180,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 722.812, 496.5, 863.178, 524.43 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Numbers & Math Arithmetic Operators"
+  }, {
+    "type" : "heading",
+    "id" : 10,
+    "level" : "Doctitle",
+    "page number" : 1,
+    "bounding box" : [ 129.844, 487.95, 221.164, 517.788 ],
+    "heading level" : 1,
+    "font" : "SourceSans3-Bold",
+    "font size" : 12.0,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Real Python Pocket Reference"
+  }, {
+    "type" : "image",
+    "id" : 9,
+    "page number" : 1,
+    "bounding box" : [ 11.25, 410.25, 118.5, 517.5 ],
+    "source" : "python-cheatsheet_images/imageFile1.png"
+  }, {
+    "type" : "paragraph",
+    "id" : 54,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 257.437, 498.3, 336.784, 507.912 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Python is dynamically typed"
+  }, {
+    "type" : "paragraph",
+    "id" : 118,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 494.625, 498.3, 636.226, 507.912 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "It’s recommended to use double-quotes for strings"
+  }, {
+    "type" : "image",
+    "id" : 53,
+    "page number" : 1,
+    "bounding box" : [ 247.0, 502.0, 250.25, 505.25 ]
+  }, {
+    "type" : "image",
+    "id" : 117,
+    "page number" : 1,
+    "bounding box" : [ 484.75, 502.0, 488.0, 505.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 56,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 257.437, 489.3, 394.337, 498.912 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Use None to represent missing or optional values"
+  }, {
+    "type" : "paragraph",
+    "id" : 120,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 494.625, 489.3, 609.823, 498.912 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Use \"\\n\" to create a line break in a string"
+  }, {
+    "type" : "image",
+    "id" : 57,
+    "page number" : 1,
+    "bounding box" : [ 268.75, 490.0, 284.75, 498.5 ]
+  }, {
+    "type" : "image",
+    "id" : 121,
+    "page number" : 1,
+    "bounding box" : [ 505.75, 490.0, 521.75, 498.5 ]
+  }, {
+    "type" : "image",
+    "id" : 55,
+    "page number" : 1,
+    "bounding box" : [ 247.0, 493.0, 250.25, 496.25 ]
+  }, {
+    "type" : "image",
+    "id" : 119,
+    "page number" : 1,
+    "bounding box" : [ 484.75, 493.0, 488.0, 496.25 ]
+  }, {
+    "type" : "image",
+    "id" : 181,
+    "page number" : 1,
+    "bounding box" : [ 725.5, 485.5, 1127.625, 494.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 182,
+    "page number" : 1,
+    "bounding box" : [ 726.0, 441.604, 835.404, 493.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "10 + 3 # 13 10 3 # 7 10 * 3 # 30 10 / 3 # 3.3333333333333335 10 // 3 # 3 10 % 3 # 1 2 ** 3 # 8"
+  }, {
+    "type" : "paragraph",
+    "id" : 59,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 257.437, 480.3, 349.165, 489.912 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Use type() to check object type"
+  }, {
+    "type" : "paragraph",
+    "id" : 123,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 494.625, 480.3, 635.207, 489.912 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "To write a backslash in a normal string, write \"\\\\\""
+  }, {
+    "type" : "image",
+    "id" : 60,
+    "page number" : 1,
+    "bounding box" : [ 268.75, 481.0, 291.5, 489.5 ]
+  }, {
+    "type" : "image",
+    "id" : 124,
+    "page number" : 1,
+    "bounding box" : [ 620.5, 481.0, 635.75, 489.5 ]
+  }, {
+    "type" : "image",
+    "id" : 58,
+    "page number" : 1,
+    "bounding box" : [ 247.0, 484.0, 250.25, 487.25 ]
+  }, {
+    "type" : "image",
+    "id" : 122,
+    "page number" : 1,
+    "bounding box" : [ 484.75, 484.0, 488.0, 487.25 ]
+  }, {
+    "type" : "image",
+    "id" : 183,
+    "page number" : 1,
+    "bounding box" : [ 675.0, 478.5, 1076.25, 486.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 11,
+    "page number" : 1,
+    "bounding box" : [ 129.844, 431.55, 231.084, 481.002 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 10.5,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Visit realpython.com to turbocharge your Python learning with in-depth tutorials,"
+  }, {
+    "type" : "paragraph",
+    "id" : 62,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 257.437, 461.55, 384.259, 480.912 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Check for a specific type with isinstance() issubclass() checks if a class is a subclass"
+  }, {
+    "type" : "image",
+    "id" : 63,
+    "page number" : 1,
+    "bounding box" : [ 340.0, 472.0, 384.5, 480.5 ]
+  }, {
+    "type" : "image",
+    "id" : 184,
+    "page number" : 1,
+    "bounding box" : [ 627.75, 471.0, 1029.0, 478.5 ]
+  }, {
+    "type" : "image",
+    "id" : 61,
+    "page number" : 1,
+    "bounding box" : [ 247.0, 475.0, 250.25, 478.25 ]
+  }, {
+    "type" : "heading",
+    "id" : 125,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 485.625, 461.25, 537.097, 471.93 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Creating Strings"
+  }, {
+    "type" : "image",
+    "id" : 185,
+    "page number" : 1,
+    "bounding box" : [ 576.75, 463.5, 978.0, 471.0 ]
+  }, {
+    "type" : "image",
+    "id" : 64,
+    "page number" : 1,
+    "bounding box" : [ 247.0, 462.25, 302.0, 470.75 ]
+  }, {
+    "type" : "image",
+    "id" : 186,
+    "page number" : 1,
+    "bounding box" : [ 467.25, 456.0, 868.5, 463.5 ]
+  }, {
+    "type" : "image",
+    "id" : 126,
+    "page number" : 1,
+    "bounding box" : [ 488.5, 450.25, 726.375, 458.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 127,
+    "page number" : 1,
+    "bounding box" : [ 489.0, 435.604, 558.269, 458.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.3059, 0.6039, 0.0235]",
+    "content" : "single = 'Hello' double = \"World\" multi = \"\"\"Multiple"
+  }, {
+    "type" : "image",
+    "id" : 187,
+    "page number" : 1,
+    "bounding box" : [ 419.25, 448.5, 821.25, 456.0 ]
+  }, {
+    "type" : "heading",
+    "id" : 65,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 248.437, 443.25, 307.612, 453.93 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Type Investigation"
+  }, {
+    "type" : "image",
+    "id" : 128,
+    "page number" : 1,
+    "bounding box" : [ 430.5, 443.25, 667.5, 450.75 ]
+  }, {
+    "type" : "image",
+    "id" : 188,
+    "page number" : 1,
+    "bounding box" : [ 371.625, 441.25, 773.75, 449.75 ]
+  }, {
+    "type" : "image",
+    "id" : 129,
+    "page number" : 1,
+    "bounding box" : [ 372.0, 435.75, 609.0, 443.25 ]
+  }, {
+    "type" : "image",
+    "id" : 66,
+    "page number" : 1,
+    "bounding box" : [ 251.5, 432.777, 1257.65, 440.691 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 67,
+    "page number" : 1,
+    "bounding box" : [ 252.0, 405.486, 399.905, 440.529 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 5.6,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "type(42) # <class 'int'> type(3.14) # <class 'float'> type(\"Hello\") # <class 'str'> type(True) # <class 'bool'> type(None) # <class 'NoneType'>"
+  }, {
+    "type" : "image",
+    "id" : 130,
+    "page number" : 1,
+    "bounding box" : [ 302.625, 427.75, 540.5, 436.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 131,
+    "page number" : 1,
+    "bounding box" : [ 489.0, 428.104, 540.038, 436.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.3059, 0.6039, 0.0235]",
+    "content" : "line string\"\"\""
+  }, {
+    "type" : "paragraph",
+    "id" : 12,
+    "page number" : 1,
+    "bounding box" : [ 129.844, 408.3, 221.792, 434.502 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 10.5,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "real-world examples, and expert guidance."
+  }, {
+    "type" : "image",
+    "id" : 68,
+    "page number" : 1,
+    "bounding box" : [ 120.633, 426.363, 1125.937, 433.277 ]
+  }, {
+    "type" : "heading",
+    "id" : 189,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 722.812, 420.0, 776.437, 430.68 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Useful Functions"
+  }, {
+    "type" : "image",
+    "id" : 69,
+    "page number" : 1,
+    "bounding box" : [ -16.957, 419.449, 988.348, 426.363 ]
+  }, {
+    "type" : "image",
+    "id" : 70,
+    "page number" : 1,
+    "bounding box" : [ -148.324, 412.535, 856.98, 419.449 ]
+  }, {
+    "type" : "heading",
+    "id" : 132,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 485.625, 408.0, 542.25, 418.68 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "String Operations"
+  }, {
+    "type" : "image",
+    "id" : 190,
+    "page number" : 1,
+    "bounding box" : [ 725.5, 409.0, 1262.625, 417.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 191,
+    "page number" : 1,
+    "bounding box" : [ 726.0, 371.854, 824.479, 417.366 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "abs(-5) # 5 round(3.7) # 4 round(3.14159, 2) # 3.14 min(3, 1, 2) # 1 max(3, 1, 2) # 3 sum([1, 2, 3]) # 6"
+  }, {
+    "type" : "image",
+    "id" : 71,
+    "page number" : 1,
+    "bounding box" : [ -282.457, 405.621, 722.848, 412.535 ]
+  }, {
+    "type" : "image",
+    "id" : 192,
+    "page number" : 1,
+    "bounding box" : [ 638.25, 402.0, 1174.5, 409.5 ]
+  }, {
+    "type" : "image",
+    "id" : 133,
+    "page number" : 1,
+    "bounding box" : [ 488.5, 396.25, 875.625, 404.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 134,
+    "page number" : 1,
+    "bounding box" : [ 489.0, 381.604, 649.438, 404.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "greeting = \"me\" + \"ow!\" # \"meow!\" repeat = \"Meow!\" * 3 # \"Meow!Meow!Meow!\" length = len(\"Python\") # 6"
+  }, {
+    "type" : "image",
+    "id" : 193,
+    "page number" : 1,
+    "bounding box" : [ 551.25, 394.5, 1087.5, 402.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 73,
+    "page number" : 1,
+    "bounding box" : [ 252.0, 385.435, 470.496, 399.736 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 5.6,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "isinstance(3.14, float) # True issubclass(int, object) # True - everything inherits from object"
+  }, {
+    "type" : "image",
+    "id" : 72,
+    "page number" : 1,
+    "bounding box" : [ -430.418, 392.484, 574.887, 399.398 ]
+  }, {
+    "type" : "image",
+    "id" : 135,
+    "page number" : 1,
+    "bounding box" : [ 365.25, 389.25, 751.5, 396.75 ]
+  }, {
+    "type" : "image",
+    "id" : 194,
+    "page number" : 1,
+    "bounding box" : [ 452.25, 387.0, 988.5, 394.5 ]
+  }, {
+    "type" : "image",
+    "id" : 74,
+    "page number" : 1,
+    "bounding box" : [ -535.166, 385.07, 470.984, 392.984 ]
+  }, {
+    "type" : "image",
+    "id" : 136,
+    "page number" : 1,
+    "bounding box" : [ 204.375, 381.25, 591.5, 389.75 ]
+  }, {
+    "type" : "image",
+    "id" : 195,
+    "page number" : 1,
+    "bounding box" : [ 364.5, 379.5, 901.5, 387.0 ]
+  }, {
+    "type" : "heading",
+    "id" : 13,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 98.918, 372.75, 149.513, 383.43 ],
+    "heading level" : 2,
+    "font" : "SourceSans3-Bold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Getting Started"
+  }, {
+    "type" : "image",
+    "id" : 196,
+    "page number" : 1,
+    "bounding box" : [ 277.125, 371.5, 814.25, 380.0 ]
+  }, {
+    "type" : "heading",
+    "id" : 75,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 248.437, 364.5, 301.942, 375.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Type Conversion"
+  }, {
+    "type" : "heading",
+    "id" : 137,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 485.625, 361.5, 534.375, 372.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "String Methods"
+  }, {
+    "type" : "paragraph",
+    "id" : 14,
+    "page number" : 1,
+    "bounding box" : [ 11.25, 354.75, 176.647, 365.43 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 7.5,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Follow these guides to kickstart your Python journey:"
+  }, {
+    "type" : "heading",
+    "id" : 197,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 722.812, 351.0, 847.09, 361.68 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Learn More on realpython.com/search:"
+  }, {
+    "type" : "image",
+    "id" : 76,
+    "page number" : 1,
+    "bounding box" : [ 251.5, 352.75, 850.125, 361.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 77,
+    "page number" : 1,
+    "bounding box" : [ 252.0, 323.104, 405.147, 361.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "int(\"42\") # 42 float(\"3.14\") # 3.14 str(42) # \"42\" bool(1) # True list(\"abc\") # [\"a\", \"b\", \"c\"]"
+  }, {
+    "type" : "image",
+    "id" : 138,
+    "page number" : 1,
+    "bounding box" : [ 488.5, 349.75, 1339.125, 358.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 139,
+    "page number" : 1,
+    "bounding box" : [ 489.0, 312.604, 649.419, 358.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "\"a\".upper() # \"A\" \"A\".lower() # \"a\" \" a \".strip() # \"a\" \"abc\".replace(\"bc\", \"ha\") # \"aha\" \"a b\".split() # [\"a\", \"b\"] \"-\".join([\"a\", \"b\"]) # \"a-b\""
+  }, {
+    "type" : "paragraph",
+    "id" : 16,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 20.25, 344.55, 143.525, 354.162 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "realpython.com/what-can-i-do-with-python"
+  }, {
+    "type" : "image",
+    "id" : 78,
+    "page number" : 1,
+    "bounding box" : [ 146.25, 345.75, 744.0, 353.25 ]
+  }, {
+    "type" : "image",
+    "id" : 15,
+    "page number" : 1,
+    "bounding box" : [ 10.0, 348.25, 13.25, 351.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 199,
+    "page number" : 1,
+    "bounding box" : [ 724.734, 340.65, 864.527, 350.796 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.412,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "math ∙ operators ∙ built in functions"
+  }, {
+    "type" : "image",
+    "id" : 198,
+    "page number" : 1,
+    "bounding box" : [ 722.5, 341.5, 742.25, 350.75 ]
+  }, {
+    "type" : "image",
+    "id" : 200,
+    "page number" : 1,
+    "bounding box" : [ 748.0, 341.5, 787.25, 350.75 ]
+  }, {
+    "type" : "image",
+    "id" : 201,
+    "page number" : 1,
+    "bounding box" : [ 793.0, 341.5, 866.75, 350.75 ]
+  }, {
+    "type" : "image",
+    "id" : 140,
+    "page number" : 1,
+    "bounding box" : [ 354.0, 342.75, 1203.75, 350.25 ]
+  }, {
+    "type" : "image",
+    "id" : 79,
+    "page number" : 1,
+    "bounding box" : [ 33.0, 338.25, 631.5, 345.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 18,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 20.25, 335.55, 115.465, 345.162 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "realpython.com/installing-python"
+  }, {
+    "type" : "image",
+    "id" : 141,
+    "page number" : 1,
+    "bounding box" : [ 219.0, 335.25, 1068.75, 342.75 ]
+  }, {
+    "type" : "image",
+    "id" : 17,
+    "page number" : 1,
+    "bounding box" : [ 10.0, 339.25, 13.25, 342.5 ]
+  }, {
+    "type" : "image",
+    "id" : 80,
+    "page number" : 1,
+    "bounding box" : [ -79.5, 330.75, 518.25, 338.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 20,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 20.25, 326.55, 117.146, 336.162 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "realpython.com/python-first-steps"
+  }, {
+    "type" : "image",
+    "id" : 142,
+    "page number" : 1,
+    "bounding box" : [ 84.0, 327.75, 933.75, 335.25 ]
+  }, {
+    "type" : "image",
+    "id" : 19,
+    "page number" : 1,
+    "bounding box" : [ 10.0, 330.25, 13.25, 333.5 ]
+  }, {
+    "type" : "image",
+    "id" : 81,
+    "page number" : 1,
+    "bounding box" : [ -193.125, 322.75, 405.5, 331.25 ]
+  }, {
+    "type" : "heading",
+    "id" : 202,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 814.781, 318.75, 856.781, 329.43 ],
+    "heading level" : 2,
+    "font" : "SourceSans3-Bold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Conditionals"
+  }, {
+    "type" : "image",
+    "id" : 143,
+    "page number" : 1,
+    "bounding box" : [ -57.75, 320.25, 792.0, 327.75 ]
+  }, {
+    "type" : "image",
+    "id" : 144,
+    "page number" : 1,
+    "bounding box" : [ -218.625, 312.25, 632.0, 320.75 ]
+  }, {
+    "type" : "heading",
+    "id" : 21,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 11.25, 307.5, 93.112, 318.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Start the Interactive Shell"
+  }, {
+    "type" : "heading",
+    "id" : 82,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 248.437, 303.0, 372.715, 313.68 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Learn More on realpython.com/search:"
+  }, {
+    "type" : "paragraph",
+    "id" : 204,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 731.812, 303.3, 844.348, 312.912 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Python uses indentation for code blocks"
+  }, {
+    "type" : "image",
+    "id" : 203,
+    "page number" : 1,
+    "bounding box" : [ 721.75, 307.0, 725.0, 310.25 ]
+  }, {
+    "type" : "image",
+    "id" : 22,
+    "page number" : 1,
+    "bounding box" : [ 14.5, 296.5, 44.75, 305.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 23,
+    "page number" : 1,
+    "bounding box" : [ 15.0, 296.854, 44.174, 304.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.4235, 0.4588, 0.4902]",
+    "content" : "$ python"
+  }, {
+    "type" : "paragraph",
+    "id" : 206,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 722.812, 276.0, 827.028, 303.912 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Use 4 spaces per indentation level If-Elif-Else"
+  }, {
+    "type" : "heading",
+    "id" : 145,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 485.625, 292.5, 563.925, 303.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "String Indexing & Slicing"
+  }, {
+    "type" : "paragraph",
+    "id" : 84,
+    "page number" : 1,
+    "bounding box" : [ 250.359, 292.65, 446.563, 302.796 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.412,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "data types ∙ type checking ∙ isinstance ∙ issubclass"
+  }, {
+    "type" : "image",
+    "id" : 83,
+    "page number" : 1,
+    "bounding box" : [ 247.75, 293.5, 291.5, 302.75 ]
+  }, {
+    "type" : "image",
+    "id" : 85,
+    "page number" : 1,
+    "bounding box" : [ 296.5, 293.5, 351.5, 302.75 ]
+  }, {
+    "type" : "image",
+    "id" : 86,
+    "page number" : 1,
+    "bounding box" : [ 357.25, 293.5, 400.25, 302.75 ]
+  }, {
+    "type" : "image",
+    "id" : 87,
+    "page number" : 1,
+    "bounding box" : [ 406.0, 293.5, 449.0, 302.75 ]
+  }, {
+    "type" : "image",
+    "id" : 205,
+    "page number" : 1,
+    "bounding box" : [ 721.75, 298.0, 725.0, 301.25 ]
+  }, {
+    "type" : "image",
+    "id" : 146,
+    "page number" : 1,
+    "bounding box" : [ 488.5, 281.5, 1295.625, 290.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 147,
+    "page number" : 1,
+    "bounding box" : [ 489.0, 230.104, 609.329, 289.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "text = \"Python\" text[0] # \"P\" (first) text[-1] # \"n\" (last) text[1:4] # \"yth\" (slice) text[:3] # \"Pyt\" (from start) text[3:] # \"hon\" (to end) text[::2] # \"Pto\" (every 2nd) text[::-1] # \"nohtyP\" (reverse)"
+  }, {
+    "type" : "heading",
+    "id" : 24,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 11.25, 276.0, 91.192, 286.68 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Quit the Interactive Shell"
+  }, {
+    "type" : "image",
+    "id" : 148,
+    "page number" : 1,
+    "bounding box" : [ 434.25, 274.5, 1240.5, 282.0 ]
+  }, {
+    "type" : "heading",
+    "id" : 88,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 322.699, 270.0, 400.107, 280.68 ],
+    "heading level" : 2,
+    "font" : "SourceSans3-Bold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Variables & Assignment"
+  }, {
+    "type" : "image",
+    "id" : 149,
+    "page number" : 1,
+    "bounding box" : [ 339.75, 267.0, 1145.25, 274.5 ]
+  }, {
+    "type" : "image",
+    "id" : 25,
+    "page number" : 1,
+    "bounding box" : [ 14.5, 265.0, 52.25, 273.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 26,
+    "page number" : 1,
+    "bounding box" : [ 15.0, 265.354, 51.475, 273.366 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : ">>> exit()"
+  }, {
+    "type" : "image",
+    "id" : 207,
+    "page number" : 1,
+    "bounding box" : [ 725.5, 264.25, 1090.875, 272.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 208,
+    "page number" : 1,
+    "bounding box" : [ 726.0, 264.604, 769.771, 272.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "if age < 13:"
+  }, {
+    "type" : "image",
+    "id" : 150,
+    "page number" : 1,
+    "bounding box" : [ 248.25, 259.5, 1054.5, 267.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 210,
+    "page number" : 1,
+    "bounding box" : [ 726.0, 249.604, 806.21, 265.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "category = \"child\" elif age < 20:"
+  }, {
+    "type" : "image",
+    "id" : 209,
+    "page number" : 1,
+    "bounding box" : [ 682.5, 257.25, 1047.0, 264.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 90,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 257.437, 254.55, 371.566, 264.162 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Variables are created when first assigned"
+  }, {
+    "type" : "image",
+    "id" : 89,
+    "page number" : 1,
+    "bounding box" : [ 247.0, 258.25, 250.25, 261.5 ]
+  }, {
+    "type" : "image",
+    "id" : 151,
+    "page number" : 1,
+    "bounding box" : [ 146.25, 252.0, 951.75, 259.5 ]
+  }, {
+    "type" : "image",
+    "id" : 211,
+    "page number" : 1,
+    "bounding box" : [ 602.25, 249.75, 966.75, 257.25 ]
+  }, {
+    "type" : "heading",
+    "id" : 27,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 11.25, 245.25, 50.017, 255.93 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Run a Script"
+  }, {
+    "type" : "paragraph",
+    "id" : 92,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 257.437, 245.55, 344.533, 255.162 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Use descriptive variable names"
+  }, {
+    "type" : "image",
+    "id" : 91,
+    "page number" : 1,
+    "bounding box" : [ 247.0, 249.25, 250.25, 252.5 ]
+  }, {
+    "type" : "image",
+    "id" : 152,
+    "page number" : 1,
+    "bounding box" : [ 25.5, 244.5, 831.75, 252.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 213,
+    "page number" : 1,
+    "bounding box" : [ 726.0, 234.604, 817.147, 250.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "category = \"teenager\" else:"
+  }, {
+    "type" : "image",
+    "id" : 212,
+    "page number" : 1,
+    "bounding box" : [ 551.25, 242.25, 915.75, 249.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 94,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 248.437, 218.25, 347.169, 246.162 ],
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Follow snake_case convention Basic Assignment"
+  }, {
+    "type" : "image",
+    "id" : 95,
+    "page number" : 1,
+    "bounding box" : [ 277.0, 237.25, 314.75, 245.75 ]
+  }, {
+    "type" : "image",
+    "id" : 153,
+    "page number" : 1,
+    "bounding box" : [ -80.25, 237.75, 726.0, 245.25 ]
+  }, {
+    "type" : "image",
+    "id" : 93,
+    "page number" : 1,
+    "bounding box" : [ 247.0, 240.25, 250.25, 243.5 ]
+  }, {
+    "type" : "image",
+    "id" : 214,
+    "page number" : 1,
+    "bounding box" : [ 459.75, 234.75, 824.25, 242.25 ]
+  }, {
+    "type" : "image",
+    "id" : 28,
+    "page number" : 1,
+    "bounding box" : [ 14.5, 233.5, 92.0, 242.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 29,
+    "page number" : 1,
+    "bounding box" : [ 15.0, 233.854, 91.567, 241.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.4235, 0.4588, 0.4902]",
+    "content" : "$ python my_script.py"
+  }, {
+    "type" : "image",
+    "id" : 154,
+    "page number" : 1,
+    "bounding box" : [ -196.875, 229.75, 609.5, 238.25 ]
+  }, {
+    "type" : "image",
+    "id" : 215,
+    "page number" : 1,
+    "bounding box" : [ 441.375, 226.75, 806.75, 235.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 216,
+    "page number" : 1,
+    "bounding box" : [ 740.582, 227.104, 806.21, 235.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "category = \"adult\""
+  }, {
+    "type" : "heading",
+    "id" : 30,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 11.25, 213.75, 113.13, 224.43 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Run a Script in Interactive Mode"
+  }, {
+    "type" : "heading",
+    "id" : 155,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 485.625, 208.5, 542.61, 219.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "String Formatting"
+  }, {
+    "type" : "heading",
+    "id" : 217,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 722.812, 207.0, 795.525, 217.68 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Comparison Operators"
+  }, {
+    "type" : "image",
+    "id" : 96,
+    "page number" : 1,
+    "bounding box" : [ 251.5, 207.25, 832.125, 215.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 97,
+    "page number" : 1,
+    "bounding box" : [ 252.0, 177.604, 375.961, 215.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "name = \"Leo\" # String age = 7 # Integer height = 5.6 # Float is_cat = True # Boolean flaws = None # None type"
+  }, {
+    "type" : "image",
+    "id" : 31,
+    "page number" : 1,
+    "bounding box" : [ 14.5, 202.0, 103.25, 210.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 32,
+    "page number" : 1,
+    "bounding box" : [ 15.0, 202.354, 102.507, 210.366 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.4235, 0.4588, 0.4902]",
+    "content" : "$ python -i my_script.py"
+  }, {
+    "type" : "image",
+    "id" : 98,
+    "page number" : 1,
+    "bounding box" : [ 138.75, 200.25, 718.5, 207.75 ]
+  }, {
+    "type" : "image",
+    "id" : 156,
+    "page number" : 1,
+    "bounding box" : [ 488.5, 198.38, 1482.074, 205.902 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 157,
+    "page number" : 1,
+    "bounding box" : [ 489.0, 166.139, 669.751, 205.72 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 5.283,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# f-strings name = \"Aubrey\" age = 2 f\"Hello, {name}!\" # \"Hello, Aubrey!\" f\"{name} is {age} years old\" # \"Aubrey is 2 years old\" f\"Debug: {age=}\" # \"Debug: age=2\""
+  }, {
+    "type" : "image",
+    "id" : 218,
+    "page number" : 1,
+    "bounding box" : [ 725.5, 195.25, 1280.625, 203.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 219,
+    "page number" : 1,
+    "bounding box" : [ 726.0, 158.104, 846.305, 203.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "x == y # Equal to x != y # Not equal to x < y # Less than x <= y # Less than or equal x > y # Greater than x >= y # Greater than or equal"
+  }, {
+    "type" : "image",
+    "id" : 99,
+    "page number" : 1,
+    "bounding box" : [ 22.5, 192.75, 602.25, 200.25 ]
+  }, {
+    "type" : "image",
+    "id" : 158,
+    "page number" : 1,
+    "bounding box" : [ 454.43, 192.357, 1446.526, 198.88 ]
+  }, {
+    "type" : "image",
+    "id" : 220,
+    "page number" : 1,
+    "bounding box" : [ 653.25, 188.25, 1207.5, 195.75 ]
+  }, {
+    "type" : "heading",
+    "id" : 33,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 11.25, 182.25, 135.527, 192.93 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Learn More on realpython.com/search:"
+  }, {
+    "type" : "image",
+    "id" : 100,
+    "page number" : 1,
+    "bounding box" : [ -87.0, 185.25, 492.75, 192.75 ]
+  }, {
+    "type" : "image",
+    "id" : 159,
+    "page number" : 1,
+    "bounding box" : [ 406.815, 185.834, 1398.91, 192.357 ]
+  }, {
+    "type" : "image",
+    "id" : 221,
+    "page number" : 1,
+    "bounding box" : [ 565.5, 180.75, 1119.75, 188.25 ]
+  }, {
+    "type" : "image",
+    "id" : 160,
+    "page number" : 1,
+    "bounding box" : [ 384.637, 179.312, 1376.733, 185.834 ]
+  }, {
+    "type" : "image",
+    "id" : 101,
+    "page number" : 1,
+    "bounding box" : [ -204.375, 177.25, 376.25, 185.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 35,
+    "page number" : 1,
+    "bounding box" : [ 13.172, 171.9, 168.357, 182.046 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.412,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "interpreter ∙ run a script ∙ command line"
+  }, {
+    "type" : "image",
+    "id" : 34,
+    "page number" : 1,
+    "bounding box" : [ 10.75, 172.75, 58.25, 182.0 ]
+  }, {
+    "type" : "image",
+    "id" : 36,
+    "page number" : 1,
+    "bounding box" : [ 63.25, 172.75, 114.5, 182.0 ]
+  }, {
+    "type" : "image",
+    "id" : 37,
+    "page number" : 1,
+    "bounding box" : [ 119.5, 172.75, 170.75, 182.0 ]
+  }, {
+    "type" : "image",
+    "id" : 222,
+    "page number" : 1,
+    "bounding box" : [ 489.0, 173.25, 1043.25, 180.75 ]
+  }, {
+    "type" : "image",
+    "id" : 161,
+    "page number" : 1,
+    "bounding box" : [ 225.485, 172.789, 1218.233, 179.312 ]
+  }, {
+    "type" : "image",
+    "id" : 223,
+    "page number" : 1,
+    "bounding box" : [ 379.5, 165.75, 933.75, 173.25 ]
+  }, {
+    "type" : "image",
+    "id" : 162,
+    "page number" : 1,
+    "bounding box" : [ 44.807, 166.266, 1037.555, 172.789 ]
+  }, {
+    "type" : "heading",
+    "id" : 102,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 248.437, 156.75, 349.665, 167.43 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Parallel & Chained Assignments"
+  }, {
+    "type" : "image",
+    "id" : 224,
+    "page number" : 1,
+    "bounding box" : [ 292.125, 157.75, 846.5, 166.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 164,
+    "page number" : 1,
+    "bounding box" : [ 489.0, 140.701, 707.8, 160.714 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 5.283,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# Format method template = \"Hello, {name}! You're {age}.\" template.format(name=\"Aubrey\", age=2) # \"Hello, Aubrey! You're 2.\""
+  }, {
+    "type" : "heading",
+    "id" : 38,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 106.371, 150.0, 142.049, 160.68 ],
+    "heading level" : 2,
+    "font" : "SourceSans3-Bold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Comments"
+  }, {
+    "type" : "image",
+    "id" : 163,
+    "page number" : 1,
+    "bounding box" : [ -107.171, 153.873, 885.577, 160.396 ]
+  }, {
+    "type" : "image",
+    "id" : 103,
+    "page number" : 1,
+    "bounding box" : [ 251.5, 145.972, 636.82, 154.225 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 104,
+    "page number" : 1,
+    "bounding box" : [ 252.0, 139.076, 470.632, 154.079 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 5.876,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "x, y = 10, 20 # Assign multiple values a = b = c = 0 # Give same value to multiple variables"
+  }, {
+    "type" : "image",
+    "id" : 165,
+    "page number" : 1,
+    "bounding box" : [ -154.786, 147.351, 837.962, 153.873 ]
+  }, {
+    "type" : "heading",
+    "id" : 225,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 722.812, 138.0, 779.385, 148.68 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Logical Operators"
+  }, {
+    "type" : "image",
+    "id" : 166,
+    "page number" : 1,
+    "bounding box" : [ -284.913, 140.328, 708.009, 147.851 ]
+  }, {
+    "type" : "image",
+    "id" : 105,
+    "page number" : 1,
+    "bounding box" : [ 85.523, 138.718, 470.843, 146.972 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 40,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 20.25, 134.55, 104.333, 144.162 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Always add a space after the #"
+  }, {
+    "type" : "image",
+    "id" : 41,
+    "page number" : 1,
+    "bounding box" : [ 100.0, 135.25, 104.75, 143.75 ]
+  }, {
+    "type" : "image",
+    "id" : 39,
+    "page number" : 1,
+    "bounding box" : [ 10.0, 138.25, 13.25, 141.5 ]
+  }, {
+    "type" : "image",
+    "id" : 226,
+    "page number" : 1,
+    "bounding box" : [ 725.5, 127.0, 1280.625, 135.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 227,
+    "page number" : 1,
+    "bounding box" : [ 726.0, 119.854, 817.181, 135.366 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "if age >= 18 and has_car: print(\"Roadtrip!\")"
+  }, {
+    "type" : "paragraph",
+    "id" : 43,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 11.25, 106.5, 145.982, 134.412 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Use comments to explain “why” of your code Write Comments"
+  }, {
+    "type" : "image",
+    "id" : 42,
+    "page number" : 1,
+    "bounding box" : [ 10.0, 128.5, 13.25, 131.75 ]
+  }, {
+    "type" : "heading",
+    "id" : 167,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 485.625, 119.25, 523.695, 129.93 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Raw Strings"
+  }, {
+    "type" : "heading",
+    "id" : 106,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 248.437, 118.5, 328.147, 129.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Augmented Assignments"
+  }, {
+    "type" : "image",
+    "id" : 228,
+    "page number" : 1,
+    "bounding box" : [ 634.5, 120.0, 1189.5, 127.5 ]
+  }, {
+    "type" : "image",
+    "id" : 168,
+    "page number" : 1,
+    "bounding box" : [ 488.5, 108.25, 1061.625, 116.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 169,
+    "page number" : 1,
+    "bounding box" : [ 489.0, 101.104, 653.061, 116.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# Normal string with an escaped tab \"This is:\\tCool.\" # \"This is: Cool.\""
+  }, {
+    "type" : "image",
+    "id" : 107,
+    "page number" : 1,
+    "bounding box" : [ 251.5, 106.75, 430.875, 115.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 108,
+    "page number" : 1,
+    "bounding box" : [ 252.0, 92.104, 324.912, 115.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "counter += 1 numbers += [4, 5] permissions |= write"
+  }, {
+    "type" : "paragraph",
+    "id" : 230,
+    "page number" : 1,
+    "bounding box" : [ 726.0, 104.854, 828.106, 112.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "if is_weekend or is_holiday:"
+  }, {
+    "type" : "image",
+    "id" : 229,
+    "page number" : 1,
+    "bounding box" : [ 554.25, 105.0, 1109.25, 112.5 ]
+  }, {
+    "type" : "image",
+    "id" : 170,
+    "page number" : 1,
+    "bounding box" : [ 361.5, 101.25, 933.75, 108.75 ]
+  }, {
+    "type" : "image",
+    "id" : 109,
+    "page number" : 1,
+    "bounding box" : [ 208.5, 99.75, 387.0, 107.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 232,
+    "page number" : 1,
+    "bounding box" : [ 726.0, 83.104, 824.462, 105.366 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "print(\"No work today.\") if not is_raining:"
+  }, {
+    "type" : "image",
+    "id" : 231,
+    "page number" : 1,
+    "bounding box" : [ 452.25, 97.5, 1006.5, 105.0 ]
+  }, {
+    "type" : "image",
+    "id" : 44,
+    "page number" : 1,
+    "bounding box" : [ 14.5, 95.5, 416.625, 104.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 45,
+    "page number" : 1,
+    "bounding box" : [ 15.0, 80.854, 222.831, 103.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# This is a comment # print(\"This code will not run.\") print(\"This will run.\") # Comments are ignored by Python"
+  }, {
+    "type" : "image",
+    "id" : 110,
+    "page number" : 1,
+    "bounding box" : [ 145.875, 91.75, 325.25, 100.25 ]
+  }, {
+    "type" : "image",
+    "id" : 46,
+    "page number" : 1,
+    "bounding box" : [ -54.0, 88.5, 346.5, 96.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 172,
+    "page number" : 1,
+    "bounding box" : [ 489.0, 78.604, 645.77, 94.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# Raw string with escape sequences r\"This is:\\tCool.\" # \"This is:\\tCool.\""
+  }, {
+    "type" : "image",
+    "id" : 171,
+    "page number" : 1,
+    "bounding box" : [ 197.25, 86.25, 769.5, 93.75 ]
+  }, {
+    "type" : "image",
+    "id" : 233,
+    "page number" : 1,
+    "bounding box" : [ 354.0, 83.25, 908.25, 90.75 ]
+  }, {
+    "type" : "image",
+    "id" : 47,
+    "page number" : 1,
+    "bounding box" : [ -178.875, 80.5, 223.25, 89.0 ]
+  }, {
+    "type" : "image",
+    "id" : 173,
+    "page number" : 1,
+    "bounding box" : [ 73.125, 78.25, 646.25, 86.75 ]
+  }, {
+    "type" : "image",
+    "id" : 234,
+    "page number" : 1,
+    "bounding box" : [ 287.625, 75.25, 843.5, 83.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 235,
+    "page number" : 1,
+    "bounding box" : [ 740.582, 75.604, 842.685, 83.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.3059, 0.6039, 0.0235]",
+    "content" : "print(\"You can go outside.\")"
+  }, {
+    "type" : "heading",
+    "id" : 111,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 248.437, 72.0, 372.715, 82.68 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Learn More on realpython.com/search:"
+  }, {
+    "type" : "paragraph",
+    "id" : 113,
+    "page number" : 1,
+    "bounding box" : [ 250.359, 61.65, 436.331, 71.796 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.412,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "variables ∙ assignment operator ∙ walrus operator"
+  }, {
+    "type" : "image",
+    "id" : 112,
+    "page number" : 1,
+    "bounding box" : [ 247.75, 62.5, 287.75, 71.75 ]
+  }, {
+    "type" : "image",
+    "id" : 114,
+    "page number" : 1,
+    "bounding box" : [ 292.75, 62.5, 371.0, 71.75 ]
+  }, {
+    "type" : "image",
+    "id" : 115,
+    "page number" : 1,
+    "bounding box" : [ 376.0, 62.5, 438.5, 71.75 ]
+  }, {
+    "type" : "heading",
+    "id" : 48,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 11.25, 60.0, 135.527, 70.68 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Learn More on realpython.com/search:"
+  }, {
+    "type" : "heading",
+    "id" : 174,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 485.625, 57.75, 609.902, 68.43 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Learn More on realpython.com/search:"
+  }, {
+    "type" : "heading",
+    "id" : 236,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 722.812, 54.0, 847.09, 64.68 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Learn More on realpython.com/search:"
+  }, {
+    "type" : "paragraph",
+    "id" : 50,
+    "page number" : 1,
+    "bounding box" : [ 13.172, 49.65, 100.381, 59.796 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.412,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "comment ∙ documentation"
+  }, {
+    "type" : "image",
+    "id" : 49,
+    "page number" : 1,
+    "bounding box" : [ 10.75, 50.5, 42.5, 59.75 ]
+  }, {
+    "type" : "image",
+    "id" : 51,
+    "page number" : 1,
+    "bounding box" : [ 48.25, 50.5, 102.5, 59.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 176,
+    "page number" : 1,
+    "bounding box" : [ 487.547, 47.4, 695.31, 57.546 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.412,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "strings ∙ string methods ∙ slice notation ∙ raw strings"
+  }, {
+    "type" : "image",
+    "id" : 175,
+    "page number" : 1,
+    "bounding box" : [ 485.5, 48.25, 517.25, 57.5 ]
+  }, {
+    "type" : "image",
+    "id" : 177,
+    "page number" : 1,
+    "bounding box" : [ 522.25, 48.25, 581.0, 57.5 ]
+  }, {
+    "type" : "image",
+    "id" : 178,
+    "page number" : 1,
+    "bounding box" : [ 586.75, 48.25, 645.5, 57.5 ]
+  }, {
+    "type" : "image",
+    "id" : 179,
+    "page number" : 1,
+    "bounding box" : [ 650.5, 48.25, 698.0, 57.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 238,
+    "page number" : 1,
+    "bounding box" : [ 724.734, 43.65, 910.708, 53.796 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.412,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "conditional statements ∙ operators ∙ truthy falsy"
+  }, {
+    "type" : "image",
+    "id" : 237,
+    "page number" : 1,
+    "bounding box" : [ 722.5, 44.5, 812.0, 53.75 ]
+  }, {
+    "type" : "image",
+    "id" : 239,
+    "page number" : 1,
+    "bounding box" : [ 817.0, 44.5, 857.0, 53.75 ]
+  }, {
+    "type" : "image",
+    "id" : 240,
+    "page number" : 1,
+    "bounding box" : [ 862.0, 44.5, 913.25, 53.75 ]
+  }, {
+    "type" : "image",
+    "id" : 241,
+    "page number" : 1,
+    "bounding box" : [ 0.0, 0.0, 960.0, 26.25 ]
+  }, {
+    "type" : "footer",
+    "id" : 242,
+    "page number" : 1,
+    "bounding box" : [ 337.441, 8.25, 633.803, 18.93 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 4,
+      "page number" : 1,
+      "bounding box" : [ 337.441, 8.25, 633.803, 18.93 ],
+      "heading level" : 2,
+      "font" : "SourceSans3-Bold",
+      "font size" : 7.5,
+      "text color" : "[1.0, 1.0, 1.0]",
+      "content" : "Continue your learning journey and become a Python expert at realpython.com/start-here"
+    } ]
+  }, {
+    "type" : "heading",
+    "id" : 315,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 248.437, 514.5, 303.93, 525.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Calling Functions"
+  }, {
+    "type" : "heading",
+    "id" : 377,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 485.625, 514.5, 571.5, 525.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Class Attributes & Methods"
+  }, {
+    "type" : "heading",
+    "id" : 446,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 722.812, 514.5, 782.407, 525.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Raising Exceptions"
+  }, {
+    "type" : "paragraph",
+    "id" : 243,
+    "page number" : 2,
+    "bounding box" : [ 20.25, 498.3, 134.062, 524.43 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Loops range(5) generates 0 through 4"
+  }, {
+    "type" : "image",
+    "id" : 316,
+    "page number" : 2,
+    "bounding box" : [ 251.5, 503.5, 759.375, 512.0 ]
+  }, {
+    "type" : "image",
+    "id" : 378,
+    "page number" : 2,
+    "bounding box" : [ 488.5, 503.5, 1546.875, 512.0 ]
+  }, {
+    "type" : "image",
+    "id" : 447,
+    "page number" : 2,
+    "bounding box" : [ 725.5, 503.5, 1094.625, 512.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 317,
+    "page number" : 2,
+    "bounding box" : [ 252.0, 481.354, 412.425, 511.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "greet() # \"Hello!\" greet_person(\"Bartosz\") # \"Hello, Bartosz\" add(5, 3) # 8 add(7) # 17"
+  }, {
+    "type" : "paragraph",
+    "id" : 379,
+    "page number" : 2,
+    "bounding box" : [ 489.0, 496.354, 660.369, 511.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "class Cat: species = \"Felis catus\" # Class attribute"
+  }, {
+    "type" : "paragraph",
+    "id" : 448,
+    "page number" : 2,
+    "bounding box" : [ 726.0, 496.354, 806.252, 511.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "def validate_age(age): if age < 0:"
+  }, {
+    "type" : "image",
+    "id" : 244,
+    "page number" : 2,
+    "bounding box" : [ 10.0, 499.0, 50.0, 507.5 ]
+  }, {
+    "type" : "image",
+    "id" : 318,
+    "page number" : 2,
+    "bounding box" : [ 120.75, 496.5, 627.75, 504.0 ]
+  }, {
+    "type" : "image",
+    "id" : 380,
+    "page number" : 2,
+    "bounding box" : [ 452.25, 496.5, 1510.5, 504.0 ]
+  }, {
+    "type" : "image",
+    "id" : 449,
+    "page number" : 2,
+    "bounding box" : [ 645.75, 496.5, 1014.0, 504.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 246,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 20.25, 480.3, 146.179, 498.912 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Use enumerate() to get index and value break exits the loop, continue skips to next"
+  }, {
+    "type" : "image",
+    "id" : 247,
+    "page number" : 2,
+    "bounding box" : [ 31.75, 490.0, 72.5, 498.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 451,
+    "page number" : 2,
+    "bounding box" : [ 740.59, 481.354, 908.31, 496.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.3059, 0.6039, 0.0235]",
+    "content" : "raise ValueError(\"Age cannot be negative\") return age"
+  }, {
+    "type" : "image",
+    "id" : 319,
+    "page number" : 2,
+    "bounding box" : [ -39.75, 489.0, 467.25, 496.5 ]
+  }, {
+    "type" : "image",
+    "id" : 381,
+    "page number" : 2,
+    "bounding box" : [ 281.25, 489.0, 1338.75, 496.5 ]
+  }, {
+    "type" : "image",
+    "id" : 450,
+    "page number" : 2,
+    "bounding box" : [ 591.0, 489.0, 959.25, 496.5 ]
+  }, {
+    "type" : "image",
+    "id" : 245,
+    "page number" : 2,
+    "bounding box" : [ 10.0, 493.0, 13.25, 496.25 ]
+  }, {
+    "type" : "image",
+    "id" : 320,
+    "page number" : 2,
+    "bounding box" : [ -145.875, 481.0, 362.0, 489.5 ]
+  }, {
+    "type" : "image",
+    "id" : 452,
+    "page number" : 2,
+    "bounding box" : [ 408.375, 481.0, 777.5, 489.5 ]
+  }, {
+    "type" : "image",
+    "id" : 248,
+    "page number" : 2,
+    "bounding box" : [ 10.0, 481.0, 38.75, 489.5 ]
+  }, {
+    "type" : "image",
+    "id" : 249,
+    "page number" : 2,
+    "bounding box" : [ 79.75, 481.0, 110.0, 489.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 383,
+    "page number" : 2,
+    "bounding box" : [ 503.59, 481.354, 594.776, 489.366 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "def __init__(self, name):"
+  }, {
+    "type" : "image",
+    "id" : 382,
+    "page number" : 2,
+    "bounding box" : [ 266.25, 481.5, 1324.5, 489.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 385,
+    "page number" : 2,
+    "bounding box" : [ 503.59, 459.604, 671.294, 481.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "self.name = name # Instance attribute def meow(self):"
+  }, {
+    "type" : "image",
+    "id" : 384,
+    "page number" : 2,
+    "bounding box" : [ 160.5, 474.0, 1218.75, 481.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 251,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 20.25, 471.3, 162.377, 480.912 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Be careful with while to not create an infinite loop"
+  }, {
+    "type" : "image",
+    "id" : 252,
+    "page number" : 2,
+    "bounding box" : [ 63.25, 472.0, 82.25, 480.5 ]
+  }, {
+    "type" : "image",
+    "id" : 250,
+    "page number" : 2,
+    "bounding box" : [ 10.0, 475.0, 13.25, 478.25 ]
+  }, {
+    "type" : "image",
+    "id" : 386,
+    "page number" : 2,
+    "bounding box" : [ -21.75, 466.5, 1035.75, 474.0 ]
+  }, {
+    "type" : "heading",
+    "id" : 321,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 248.437, 460.5, 292.815, 471.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Return Values"
+  }, {
+    "type" : "heading",
+    "id" : 453,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 722.812, 460.5, 847.09, 471.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Learn More on realpython.com/search:"
+  }, {
+    "type" : "image",
+    "id" : 387,
+    "page number" : 2,
+    "bounding box" : [ -36.0, 459.75, 1021.5, 467.25 ]
+  }, {
+    "type" : "heading",
+    "id" : 253,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 11.25, 452.25, 42.705, 462.93 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "For Loops"
+  }, {
+    "type" : "paragraph",
+    "id" : 455,
+    "page number" : 2,
+    "bounding box" : [ 724.734, 450.15, 841.434, 460.296 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.412,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "exceptions ∙ errors ∙ debugging"
+  }, {
+    "type" : "image",
+    "id" : 454,
+    "page number" : 2,
+    "bounding box" : [ 722.5, 451.0, 765.5, 460.25 ]
+  }, {
+    "type" : "image",
+    "id" : 456,
+    "page number" : 2,
+    "bounding box" : [ 771.25, 451.0, 799.25, 460.25 ]
+  }, {
+    "type" : "image",
+    "id" : 457,
+    "page number" : 2,
+    "bounding box" : [ 804.25, 451.0, 843.5, 460.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 389,
+    "page number" : 2,
+    "bounding box" : [ 518.168, 452.104, 634.864, 460.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.3059, 0.6039, 0.0235]",
+    "content" : "return f\"{self.name} says Meow!\""
+  }, {
+    "type" : "image",
+    "id" : 388,
+    "page number" : 2,
+    "bounding box" : [ -105.75, 452.25, 952.5, 459.75 ]
+  }, {
+    "type" : "image",
+    "id" : 322,
+    "page number" : 2,
+    "bounding box" : [ 251.5, 449.5, 628.125, 458.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 323,
+    "page number" : 2,
+    "bounding box" : [ 252.0, 442.354, 386.927, 457.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "def get_min_max(numbers): return min(numbers), max(numbers)"
+  }, {
+    "type" : "image",
+    "id" : 390,
+    "page number" : 2,
+    "bounding box" : [ -251.25, 444.75, 806.25, 452.25 ]
+  }, {
+    "type" : "image",
+    "id" : 324,
+    "page number" : 2,
+    "bounding box" : [ 160.5, 442.5, 536.25, 450.0 ]
+  }, {
+    "type" : "image",
+    "id" : 254,
+    "page number" : 2,
+    "bounding box" : [ 14.5, 441.25, 912.375, 449.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 255,
+    "page number" : 2,
+    "bounding box" : [ 15.0, 434.104, 157.246, 449.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# Loop through range for i in range(5): # 0, 1, 2, 3, 4"
+  }, {
+    "type" : "paragraph",
+    "id" : 392,
+    "page number" : 2,
+    "bounding box" : [ 503.582, 429.604, 609.354, 445.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "@classmethod def create_kitten(cls, name):"
+  }, {
+    "type" : "image",
+    "id" : 391,
+    "page number" : 2,
+    "bounding box" : [ -266.25, 437.25, 792.0, 444.75 ]
+  }, {
+    "type" : "image",
+    "id" : 256,
+    "page number" : 2,
+    "bounding box" : [ -57.75, 434.25, 839.25, 441.75 ]
+  }, {
+    "type" : "heading",
+    "id" : 458,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 817.348, 428.25, 854.203, 438.93 ],
+    "heading level" : 2,
+    "font" : "SourceSans3-Bold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Collections"
+  }, {
+    "type" : "image",
+    "id" : 393,
+    "page number" : 2,
+    "bounding box" : [ -324.0, 429.75, 733.5, 437.25 ]
+  }, {
+    "type" : "image",
+    "id" : 325,
+    "page number" : 2,
+    "bounding box" : [ 25.875, 427.0, 401.75, 435.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 326,
+    "page number" : 2,
+    "bounding box" : [ 252.0, 427.354, 401.522, 435.366 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "minimum, maximum = get_min_max([1, 5, 3])"
+  }, {
+    "type" : "paragraph",
+    "id" : 258,
+    "page number" : 2,
+    "bounding box" : [ 29.582, 426.604, 58.761, 434.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "print(i)"
+  }, {
+    "type" : "image",
+    "id" : 257,
+    "page number" : 2,
+    "bounding box" : [ -200.25, 426.75, 696.75, 434.25 ]
+  }, {
+    "type" : "image",
+    "id" : 394,
+    "page number" : 2,
+    "bounding box" : [ -445.125, 421.75, 613.25, 430.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 395,
+    "page number" : 2,
+    "bounding box" : [ 518.168, 422.104, 612.985, 430.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.3059, 0.6039, 0.0235]",
+    "content" : "return cls(f\"Baby {name}\")"
+  }, {
+    "type" : "paragraph",
+    "id" : 460,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 731.812, 412.8, 924.342, 422.412 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "A collection is any container data structure that stores multiple items"
+  }, {
+    "type" : "image",
+    "id" : 459,
+    "page number" : 2,
+    "bounding box" : [ 721.75, 416.5, 725.0, 419.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 260,
+    "page number" : 2,
+    "bounding box" : [ 15.0, 389.854, 117.107, 419.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# Loop through collection fruits = [\"apple\", \"banana\"] for fruit in fruits: print(fruit)"
+  }, {
+    "type" : "image",
+    "id" : 259,
+    "page number" : 2,
+    "bounding box" : [ -243.75, 411.75, 653.25, 419.25 ]
+  }, {
+    "type" : "heading",
+    "id" : 327,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 248.437, 406.5, 327.262, 417.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Useful Built-in Functions"
+  }, {
+    "type" : "paragraph",
+    "id" : 462,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 731.812, 403.8, 885.375, 413.412 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "If an object is a collection, then you can loop through it"
+  }, {
+    "type" : "heading",
+    "id" : 396,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 485.625, 401.25, 522.397, 411.93 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Inheritance"
+  }, {
+    "type" : "image",
+    "id" : 261,
+    "page number" : 2,
+    "bounding box" : [ -335.25, 404.25, 561.75, 411.75 ]
+  }, {
+    "type" : "image",
+    "id" : 461,
+    "page number" : 2,
+    "bounding box" : [ 721.75, 407.5, 725.0, 410.75 ]
+  }, {
+    "type" : "image",
+    "id" : 262,
+    "page number" : 2,
+    "bounding box" : [ -437.25, 397.5, 459.75, 405.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 464,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 731.812, 394.8, 806.238, 404.412 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Strings are collections, too"
+  }, {
+    "type" : "image",
+    "id" : 328,
+    "page number" : 2,
+    "bounding box" : [ 251.5, 396.008, 1459.18, 403.944 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 329,
+    "page number" : 2,
+    "bounding box" : [ 252.0, 355.451, 471.151, 403.782 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 5.618,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "callable() # Checks if an object can be called as a function dir() # Lists attributes and methods globals() # Get a dictionary of the current global symbol table hash() # Get the hash value id() # Get the unique identifier locals() # Get a dictionary of the current local symbol table repr() # Get a string representation for debugging"
+  }, {
+    "type" : "image",
+    "id" : 463,
+    "page number" : 2,
+    "bounding box" : [ 721.75, 398.5, 725.0, 401.75 ]
+  }, {
+    "type" : "image",
+    "id" : 397,
+    "page number" : 2,
+    "bounding box" : [ 488.5, 390.25, 1131.375, 398.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 398,
+    "page number" : 2,
+    "bounding box" : [ 489.0, 375.604, 594.776, 398.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "class Animal: def __init__(self, name): self.name = name"
+  }, {
+    "type" : "image",
+    "id" : 263,
+    "page number" : 2,
+    "bounding box" : [ -510.0, 390.0, 387.0, 397.5 ]
+  }, {
+    "type" : "image",
+    "id" : 330,
+    "page number" : 2,
+    "bounding box" : [ 46.006, 389.572, 1253.533, 396.508 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 466,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 731.812, 385.05, 842.717, 394.662 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Use len() to get the size of a collection"
+  }, {
+    "type" : "image",
+    "id" : 467,
+    "page number" : 2,
+    "bounding box" : [ 743.5, 385.75, 762.5, 394.25 ]
+  }, {
+    "type" : "image",
+    "id" : 465,
+    "page number" : 2,
+    "bounding box" : [ 721.75, 388.75, 725.0, 392.0 ]
+  }, {
+    "type" : "image",
+    "id" : 399,
+    "page number" : 2,
+    "bounding box" : [ 441.75, 383.25, 1083.75, 390.75 ]
+  }, {
+    "type" : "image",
+    "id" : 331,
+    "page number" : 2,
+    "bounding box" : [ -95.485, 382.636, 1112.042, 389.572 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 469,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 731.812, 376.05, 904.035, 385.662 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "You can check if an item is in a collection with the in keyword"
+  }, {
+    "type" : "image",
+    "id" : 470,
+    "page number" : 2,
+    "bounding box" : [ 871.0, 376.75, 878.75, 385.25 ]
+  }, {
+    "type" : "image",
+    "id" : 400,
+    "page number" : 2,
+    "bounding box" : [ 336.0, 375.75, 978.0, 383.25 ]
+  }, {
+    "type" : "image",
+    "id" : 468,
+    "page number" : 2,
+    "bounding box" : [ 721.75, 379.75, 725.0, 383.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 265,
+    "page number" : 2,
+    "bounding box" : [ 15.0, 367.354, 138.997, 382.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# With enumerate for index for i, fruit in enumerate(fruits):"
+  }, {
+    "type" : "image",
+    "id" : 332,
+    "page number" : 2,
+    "bounding box" : [ -314.657, 375.7, 892.87, 382.636 ]
+  }, {
+    "type" : "image",
+    "id" : 264,
+    "page number" : 2,
+    "bounding box" : [ -568.5, 375.0, 328.5, 382.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 472,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 731.812, 358.8, 937.215, 376.662 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Some collections may look similar, but each data structure solves specific needs"
+  }, {
+    "type" : "image",
+    "id" : 401,
+    "page number" : 2,
+    "bounding box" : [ 248.25, 368.25, 890.25, 375.75 ]
+  }, {
+    "type" : "image",
+    "id" : 333,
+    "page number" : 2,
+    "bounding box" : [ -422.162, 368.764, 784.671, 375.7 ]
+  }, {
+    "type" : "image",
+    "id" : 266,
+    "page number" : 2,
+    "bounding box" : [ -663.0, 367.5, 234.0, 375.0 ]
+  }, {
+    "type" : "image",
+    "id" : 471,
+    "page number" : 2,
+    "bounding box" : [ 721.75, 370.75, 725.0, 374.0 ]
+  }, {
+    "type" : "image",
+    "id" : 334,
+    "page number" : 2,
+    "bounding box" : [ -553.943, 361.829, 652.891, 368.764 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 403,
+    "page number" : 2,
+    "bounding box" : [ 503.59, 353.104, 561.963, 368.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "def speak(self): pass"
+  }, {
+    "type" : "image",
+    "id" : 402,
+    "page number" : 2,
+    "bounding box" : [ 234.0, 360.75, 876.0, 368.25 ]
+  }, {
+    "type" : "image",
+    "id" : 267,
+    "page number" : 2,
+    "bounding box" : [ -787.875, 359.5, 110.0, 368.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 268,
+    "page number" : 2,
+    "bounding box" : [ 29.582, 359.854, 109.853, 367.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.1059, 0.4039, 0.0]",
+    "content" : "print(f\"{i}: {fruit}\")"
+  }, {
+    "type" : "image",
+    "id" : 335,
+    "page number" : 2,
+    "bounding box" : [ -769.994, 355.086, 437.687, 363.022 ]
+  }, {
+    "type" : "image",
+    "id" : 404,
+    "page number" : 2,
+    "bounding box" : [ 160.5, 353.25, 802.5, 360.75 ]
+  }, {
+    "type" : "heading",
+    "id" : 473,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 722.812, 340.5, 737.49, 351.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Lists"
+  }, {
+    "type" : "heading",
+    "id" : 269,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 11.25, 339.0, 50.07, 349.68 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "While Loops"
+  }, {
+    "type" : "paragraph",
+    "id" : 406,
+    "page number" : 2,
+    "bounding box" : [ 489.0, 323.854, 620.282, 346.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "class Dog(Animal): def speak(self): return f\"{self.name} barks!\""
+  }, {
+    "type" : "image",
+    "id" : 405,
+    "page number" : 2,
+    "bounding box" : [ 117.0, 339.0, 759.0, 346.5 ]
+  }, {
+    "type" : "heading",
+    "id" : 336,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 248.437, 334.5, 307.89, 345.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Lambda Functions"
+  }, {
+    "type" : "image",
+    "id" : 407,
+    "page number" : 2,
+    "bounding box" : [ 51.0, 331.5, 693.0, 339.0 ]
+  }, {
+    "type" : "image",
+    "id" : 474,
+    "page number" : 2,
+    "bounding box" : [ 725.5, 328.75, 2527.875, 337.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 475,
+    "page number" : 2,
+    "bounding box" : [ 726.0, 329.104, 784.329, 337.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# Creating lists"
+  }, {
+    "type" : "image",
+    "id" : 270,
+    "page number" : 2,
+    "bounding box" : [ 14.5, 328.0, 522.375, 336.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 271,
+    "page number" : 2,
+    "bounding box" : [ 15.0, 313.354, 190.021, 336.366 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "while True: user_input = input(\"Enter 'quit' to exit: \") if user_input == \"quit\":"
+  }, {
+    "type" : "image",
+    "id" : 408,
+    "page number" : 2,
+    "bounding box" : [ -22.125, 323.5, 620.75, 332.0 ]
+  }, {
+    "type" : "image",
+    "id" : 337,
+    "page number" : 2,
+    "bounding box" : [ 251.5, 322.75, 927.375, 331.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 338,
+    "page number" : 2,
+    "bounding box" : [ 252.0, 315.604, 339.52, 331.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "square = lambda x: x**2 result = square(5) # 25"
+  }, {
+    "type" : "paragraph",
+    "id" : 477,
+    "page number" : 2,
+    "bounding box" : [ 726.0, 306.604, 831.786, 329.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "empty = [] nums = [5] mixed = [1, \"two\", 3.0, True]"
+  }, {
+    "type" : "image",
+    "id" : 476,
+    "page number" : 2,
+    "bounding box" : [ 667.5, 321.75, 2469.0, 329.25 ]
+  }, {
+    "type" : "image",
+    "id" : 272,
+    "page number" : 2,
+    "bounding box" : [ -25.5, 321.0, 481.5, 328.5 ]
+  }, {
+    "type" : "image",
+    "id" : 339,
+    "page number" : 2,
+    "bounding box" : [ 168.0, 315.75, 843.0, 323.25 ]
+  }, {
+    "type" : "image",
+    "id" : 478,
+    "page number" : 2,
+    "bounding box" : [ 631.5, 314.25, 2432.25, 321.75 ]
+  }, {
+    "type" : "image",
+    "id" : 273,
+    "page number" : 2,
+    "bounding box" : [ -200.25, 313.5, 306.75, 321.0 ]
+  }, {
+    "type" : "image",
+    "id" : 479,
+    "page number" : 2,
+    "bounding box" : [ 594.75, 306.75, 2396.25, 314.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 275,
+    "page number" : 2,
+    "bounding box" : [ 29.582, 298.354, 157.232, 313.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.3059, 0.6039, 0.0235]",
+    "content" : "break print(f\"You entered: {user_input}\")"
+  }, {
+    "type" : "image",
+    "id" : 274,
+    "page number" : 2,
+    "bounding box" : [ -302.25, 306.0, 204.75, 313.5 ]
+  }, {
+    "type" : "heading",
+    "id" : 409,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 485.625, 302.25, 609.902, 312.93 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Learn More on realpython.com/search:"
+  }, {
+    "type" : "paragraph",
+    "id" : 341,
+    "page number" : 2,
+    "bounding box" : [ 252.0, 278.854, 438.0, 308.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# With map and filter numbers = [1, 2, 3, 4] squared = list(map(lambda x: x**2, numbers)) evens = list(filter(lambda x: x % 2 == 0, numbers))"
+  }, {
+    "type" : "image",
+    "id" : 340,
+    "page number" : 2,
+    "bounding box" : [ 80.25, 300.75, 755.25, 308.25 ]
+  }, {
+    "type" : "image",
+    "id" : 276,
+    "page number" : 2,
+    "bounding box" : [ -349.875, 298.0, 158.0, 306.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 411,
+    "page number" : 2,
+    "bounding box" : [ 487.547, 291.9, 628.636, 302.046 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.412,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "object oriented programming ∙ classes"
+  }, {
+    "type" : "image",
+    "id" : 410,
+    "page number" : 2,
+    "bounding box" : [ 485.5, 292.75, 593.75, 302.0 ]
+  }, {
+    "type" : "image",
+    "id" : 412,
+    "page number" : 2,
+    "bounding box" : [ 599.5, 292.75, 631.25, 302.0 ]
+  }, {
+    "type" : "image",
+    "id" : 342,
+    "page number" : 2,
+    "bounding box" : [ 3.75, 293.25, 678.75, 300.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 481,
+    "page number" : 2,
+    "bounding box" : [ 726.0, 254.854, 911.934, 299.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# List methods nums.append(\"x\") # Add to end nums.insert(0, \"y\") # Insert at index 0 nums.extend([\"z\", 5]) # Extend with iterable nums.remove(\"x\") # Remove first \"x\" last = nums.pop() # Pop returns last element"
+  }, {
+    "type" : "image",
+    "id" : 480,
+    "page number" : 2,
+    "bounding box" : [ 489.0, 291.75, 2290.5, 299.25 ]
+  }, {
+    "type" : "image",
+    "id" : 343,
+    "page number" : 2,
+    "bounding box" : [ -76.5, 285.75, 598.5, 293.25 ]
+  }, {
+    "type" : "image",
+    "id" : 482,
+    "page number" : 2,
+    "bounding box" : [ 438.0, 285.0, 2239.5, 292.5 ]
+  }, {
+    "type" : "heading",
+    "id" : 277,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 11.25, 278.25, 53.1, 288.93 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Loop Control"
+  }, {
+    "type" : "image",
+    "id" : 344,
+    "page number" : 2,
+    "bounding box" : [ -237.375, 278.5, 438.5, 287.0 ]
+  }, {
+    "type" : "image",
+    "id" : 483,
+    "page number" : 2,
+    "bounding box" : [ 303.0, 277.5, 2104.5, 285.0 ]
+  }, {
+    "type" : "heading",
+    "id" : 413,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 580.875, 270.0, 616.312, 280.68 ],
+    "heading level" : 2,
+    "font" : "SourceSans3-Bold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Exceptions"
+  }, {
+    "type" : "image",
+    "id" : 484,
+    "page number" : 2,
+    "bounding box" : [ 142.5, 270.0, 1944.0, 277.5 ]
+  }, {
+    "type" : "image",
+    "id" : 278,
+    "page number" : 2,
+    "bounding box" : [ 14.5, 266.5, 478.875, 275.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 279,
+    "page number" : 2,
+    "bounding box" : [ 15.0, 259.354, 84.33, 274.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "for i in range(10): if i == 3:"
+  }, {
+    "type" : "image",
+    "id" : 485,
+    "page number" : 2,
+    "bounding box" : [ -28.5, 262.5, 1772.25, 270.0 ]
+  }, {
+    "type" : "heading",
+    "id" : 345,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 248.437, 258.0, 372.715, 268.68 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Learn More on realpython.com/search:"
+  }, {
+    "type" : "image",
+    "id" : 280,
+    "page number" : 2,
+    "bounding box" : [ -54.0, 259.5, 408.75, 267.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 415,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 494.625, 254.55, 680.547, 264.162 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "When Python runs and encounters an error, it creates an exception"
+  }, {
+    "type" : "image",
+    "id" : 486,
+    "page number" : 2,
+    "bounding box" : [ -186.0, 255.0, 1615.5, 262.5 ]
+  }, {
+    "type" : "image",
+    "id" : 414,
+    "page number" : 2,
+    "bounding box" : [ 484.75, 258.25, 488.0, 261.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 282,
+    "page number" : 2,
+    "bounding box" : [ 29.59, 244.354, 157.194, 259.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "continue # Skip this iteration if i == 7:"
+  }, {
+    "type" : "image",
+    "id" : 281,
+    "page number" : 2,
+    "bounding box" : [ -105.75, 252.0, 357.75, 259.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 347,
+    "page number" : 2,
+    "bounding box" : [ 250.359, 247.65, 440.182, 257.796 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.412,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "define functions ∙ return multiple values ∙ lambda"
+  }, {
+    "type" : "image",
+    "id" : 346,
+    "page number" : 2,
+    "bounding box" : [ 247.75, 248.5, 314.0, 257.75 ]
+  }, {
+    "type" : "image",
+    "id" : 348,
+    "page number" : 2,
+    "bounding box" : [ 319.75, 248.5, 409.25, 257.75 ]
+  }, {
+    "type" : "image",
+    "id" : 349,
+    "page number" : 2,
+    "bounding box" : [ 415.0, 248.5, 442.25, 257.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 417,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 494.625, 227.55, 615.085, 255.162 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Use specific exception types when possible else runs if no exception occurred finally always runs, even after errors"
+  }, {
+    "type" : "image",
+    "id" : 416,
+    "page number" : 2,
+    "bounding box" : [ 484.75, 249.25, 488.0, 252.5 ]
+  }, {
+    "type" : "image",
+    "id" : 283,
+    "page number" : 2,
+    "bounding box" : [ -247.5, 244.5, 215.25, 252.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 488,
+    "page number" : 2,
+    "bounding box" : [ 726.0, 203.104, 864.575, 247.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# List indexing and checks fruits = [\"banana\", \"apple\", \"orange\"] fruits[0] # \"banana\" fruits[-1] # \"orange\" \"apple\" in fruits # True len(fruits) # 3"
+  }, {
+    "type" : "image",
+    "id" : 487,
+    "page number" : 2,
+    "bounding box" : [ -371.25, 240.0, 1429.5, 247.5 ]
+  }, {
+    "type" : "image",
+    "id" : 418,
+    "page number" : 2,
+    "bounding box" : [ 484.75, 237.25, 509.75, 245.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 285,
+    "page number" : 2,
+    "bounding box" : [ 29.582, 229.354, 120.738, 244.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "break # Exit loop print(i)"
+  }, {
+    "type" : "image",
+    "id" : 284,
+    "page number" : 2,
+    "bounding box" : [ -298.5, 237.0, 164.25, 244.5 ]
+  }, {
+    "type" : "image",
+    "id" : 489,
+    "page number" : 2,
+    "bounding box" : [ -466.5, 232.5, 1335.0, 240.0 ]
+  }, {
+    "type" : "image",
+    "id" : 286,
+    "page number" : 2,
+    "bounding box" : [ -404.625, 229.0, 59.0, 237.5 ]
+  }, {
+    "type" : "image",
+    "id" : 419,
+    "page number" : 2,
+    "bounding box" : [ 484.75, 228.25, 521.0, 236.75 ]
+  }, {
+    "type" : "heading",
+    "id" : 350,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 349.242, 225.75, 373.557, 236.43 ],
+    "heading level" : 2,
+    "font" : "SourceSans3-Bold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Classes"
+  }, {
+    "type" : "image",
+    "id" : 490,
+    "page number" : 2,
+    "bounding box" : [ -605.25, 225.0, 1196.25, 232.5 ]
+  }, {
+    "type" : "image",
+    "id" : 491,
+    "page number" : 2,
+    "bounding box" : [ -732.75, 217.5, 1068.75, 225.0 ]
+  }, {
+    "type" : "heading",
+    "id" : 287,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 11.25, 209.25, 135.527, 219.93 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Learn More on realpython.com/search:"
+  }, {
+    "type" : "paragraph",
+    "id" : 352,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 257.437, 210.3, 349.993, 219.912 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Classes are blueprints for objects"
+  }, {
+    "type" : "heading",
+    "id" : 420,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 485.625, 208.5, 519.487, 219.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Try-Except"
+  }, {
+    "type" : "image",
+    "id" : 492,
+    "page number" : 2,
+    "bounding box" : [ -860.25, 210.0, 941.25, 217.5 ]
+  }, {
+    "type" : "image",
+    "id" : 351,
+    "page number" : 2,
+    "bounding box" : [ 247.0, 214.0, 250.25, 217.25 ]
+  }, {
+    "type" : "image",
+    "id" : 493,
+    "page number" : 2,
+    "bounding box" : [ -973.875, 202.75, 828.5, 211.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 354,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 257.437, 200.55, 385.019, 210.162 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "You can create multiple instances of one class"
+  }, {
+    "type" : "paragraph",
+    "id" : 289,
+    "page number" : 2,
+    "bounding box" : [ 13.172, 198.9, 194.001, 209.046 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.412,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "for loop ∙ while loop ∙ enumerate ∙ control flow"
+  }, {
+    "type" : "image",
+    "id" : 288,
+    "page number" : 2,
+    "bounding box" : [ 10.75, 199.75, 46.25, 209.0 ]
+  }, {
+    "type" : "image",
+    "id" : 290,
+    "page number" : 2,
+    "bounding box" : [ 52.0, 199.75, 95.0, 209.0 ]
+  }, {
+    "type" : "image",
+    "id" : 291,
+    "page number" : 2,
+    "bounding box" : [ 100.75, 199.75, 140.0, 209.0 ]
+  }, {
+    "type" : "image",
+    "id" : 292,
+    "page number" : 2,
+    "bounding box" : [ 145.75, 199.75, 196.25, 209.0 ]
+  }, {
+    "type" : "image",
+    "id" : 353,
+    "page number" : 2,
+    "bounding box" : [ 247.0, 204.25, 250.25, 207.5 ]
+  }, {
+    "type" : "image",
+    "id" : 421,
+    "page number" : 2,
+    "bounding box" : [ 488.5, 197.5, 1456.125, 206.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 422,
+    "page number" : 2,
+    "bounding box" : [ 489.0, 197.854, 503.591, 205.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.1255, 0.2902, 0.5294]",
+    "content" : "try:"
+  }, {
+    "type" : "paragraph",
+    "id" : 356,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 257.437, 191.55, 388.387, 201.162 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "You commonly use classes to encapsulate data"
+  }, {
+    "type" : "image",
+    "id" : 355,
+    "page number" : 2,
+    "bounding box" : [ 247.0, 195.25, 250.25, 198.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 424,
+    "page number" : 2,
+    "bounding box" : [ 503.582, 182.854, 645.811, 198.366 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "number = int(input(\"Enter a number: \")) result = 10 / number"
+  }, {
+    "type" : "image",
+    "id" : 423,
+    "page number" : 2,
+    "bounding box" : [ 474.75, 190.5, 1440.75, 198.0 ]
+  }, {
+    "type" : "heading",
+    "id" : 494,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 722.812, 182.25, 744.045, 192.93 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Tuples"
+  }, {
+    "type" : "paragraph",
+    "id" : 358,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 257.437, 182.55, 436.791, 192.162 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Inside a class, you provide methods for interacting with the data"
+  }, {
+    "type" : "image",
+    "id" : 425,
+    "page number" : 2,
+    "bounding box" : [ 317.25, 183.0, 1284.0, 190.5 ]
+  }, {
+    "type" : "image",
+    "id" : 357,
+    "page number" : 2,
+    "bounding box" : [ 247.0, 186.25, 250.25, 189.5 ]
+  }, {
+    "type" : "heading",
+    "id" : 293,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 107.965, 176.25, 140.455, 186.93 ],
+    "heading level" : 2,
+    "font" : "SourceSans3-Bold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Functions"
+  }, {
+    "type" : "paragraph",
+    "id" : 427,
+    "page number" : 2,
+    "bounding box" : [ 489.0, 175.354, 554.626, 183.366 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "except ValueError:"
+  }, {
+    "type" : "paragraph",
+    "id" : 360,
+    "level" : "2",
+    "page number" : 2,
+    "bounding box" : [ 257.437, 164.55, 371.438, 183.162 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : ".__init__() is the constructor method self refers to the instance"
+  }, {
+    "type" : "image",
+    "id" : 426,
+    "page number" : 2,
+    "bounding box" : [ 230.25, 175.5, 1196.25, 183.0 ]
+  }, {
+    "type" : "image",
+    "id" : 359,
+    "page number" : 2,
+    "bounding box" : [ 247.0, 174.25, 298.25, 182.75 ]
+  }, {
+    "type" : "image",
+    "id" : 495,
+    "page number" : 2,
+    "bounding box" : [ 725.5, 170.5, 1678.125, 179.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 496,
+    "page number" : 2,
+    "bounding box" : [ 726.0, 148.354, 849.967, 178.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# Creating tuples point = (3, 4) single = (1,) # Note the comma! empty = ()"
+  }, {
+    "type" : "paragraph",
+    "id" : 429,
+    "page number" : 2,
+    "bounding box" : [ 489.0, 160.354, 631.208, 175.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.3059, 0.6039, 0.0235]",
+    "content" : "print(\"That's not a valid number!\") except ZeroDivisionError:"
+  }, {
+    "type" : "image",
+    "id" : 428,
+    "page number" : 2,
+    "bounding box" : [ 164.25, 168.0, 1131.0, 175.5 ]
+  }, {
+    "type" : "image",
+    "id" : 361,
+    "page number" : 2,
+    "bounding box" : [ 247.0, 165.25, 272.75, 173.75 ]
+  }, {
+    "type" : "image",
+    "id" : 497,
+    "page number" : 2,
+    "bounding box" : [ 663.75, 163.5, 1615.5, 171.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 295,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 20.25, 160.8, 92.338, 170.412 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Define functions with def"
+  }, {
+    "type" : "image",
+    "id" : 296,
+    "page number" : 2,
+    "bounding box" : [ 81.25, 161.5, 92.75, 170.0 ]
+  }, {
+    "type" : "image",
+    "id" : 430,
+    "page number" : 2,
+    "bounding box" : [ 22.5, 160.5, 988.5, 168.0 ]
+  }, {
+    "type" : "image",
+    "id" : 294,
+    "page number" : 2,
+    "bounding box" : [ 10.0, 164.5, 13.25, 167.75 ]
+  }, {
+    "type" : "image",
+    "id" : 498,
+    "page number" : 2,
+    "bounding box" : [ 612.75, 156.0, 1564.5, 163.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 432,
+    "page number" : 2,
+    "bounding box" : [ 489.0, 146.104, 616.63, 161.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.3059, 0.6039, 0.0235]",
+    "content" : "print(\"Cannot divide by zero!\") else:"
+  }, {
+    "type" : "paragraph",
+    "id" : 298,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 20.25, 151.8, 107.801, 161.412 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Always use () to call a function"
+  }, {
+    "type" : "image",
+    "id" : 431,
+    "page number" : 2,
+    "bounding box" : [ -69.0, 153.75, 897.75, 161.25 ]
+  }, {
+    "type" : "image",
+    "id" : 299,
+    "page number" : 2,
+    "bounding box" : [ 52.0, 152.5, 60.5, 161.0 ]
+  }, {
+    "type" : "image",
+    "id" : 297,
+    "page number" : 2,
+    "bounding box" : [ 10.0, 155.5, 13.25, 158.75 ]
+  }, {
+    "type" : "heading",
+    "id" : 362,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 248.437, 146.25, 300.727, 156.93 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Defining Classes"
+  }, {
+    "type" : "image",
+    "id" : 499,
+    "page number" : 2,
+    "bounding box" : [ 489.0, 148.5, 1440.75, 156.0 ]
+  }, {
+    "type" : "image",
+    "id" : 433,
+    "page number" : 2,
+    "bounding box" : [ -196.5, 146.25, 769.5, 153.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 301,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 20.25, 142.8, 110.953, 152.412 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Add return to send values back"
+  }, {
+    "type" : "image",
+    "id" : 302,
+    "page number" : 2,
+    "bounding box" : [ 32.5, 143.5, 55.25, 152.0 ]
+  }, {
+    "type" : "image",
+    "id" : 300,
+    "page number" : 2,
+    "bounding box" : [ 10.0, 146.5, 13.25, 149.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 435,
+    "page number" : 2,
+    "bounding box" : [ 489.0, 131.104, 598.419, 146.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.3059, 0.6039, 0.0235]",
+    "content" : "print(f\"Result: {result}\") finally:"
+  }, {
+    "type" : "image",
+    "id" : 434,
+    "page number" : 2,
+    "bounding box" : [ -214.5, 138.75, 751.5, 146.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 304,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 11.25, 115.5, 174.309, 143.412 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Create anonymous functions with the lambda keyword Defining Functions"
+  }, {
+    "type" : "image",
+    "id" : 305,
+    "page number" : 2,
+    "bounding box" : [ 126.25, 134.5, 149.0, 143.0 ]
+  }, {
+    "type" : "image",
+    "id" : 363,
+    "page number" : 2,
+    "bounding box" : [ 251.5, 134.5, 1113.375, 143.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 364,
+    "page number" : 2,
+    "bounding box" : [ 252.0, 134.854, 288.482, 142.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.1255, 0.2902, 0.5294]",
+    "content" : "class Dog:"
+  }, {
+    "type" : "paragraph",
+    "id" : 501,
+    "page number" : 2,
+    "bounding box" : [ 726.0, 119.104, 809.848, 141.366 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# Basic tuple unpacking point = (3, 4) x, y = point"
+  }, {
+    "type" : "image",
+    "id" : 500,
+    "page number" : 2,
+    "bounding box" : [ 452.25, 133.5, 1404.0, 141.0 ]
+  }, {
+    "type" : "image",
+    "id" : 303,
+    "page number" : 2,
+    "bounding box" : [ 10.0, 137.5, 13.25, 140.75 ]
+  }, {
+    "type" : "image",
+    "id" : 436,
+    "page number" : 2,
+    "bounding box" : [ -324.0, 131.25, 642.0, 138.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 366,
+    "page number" : 2,
+    "bounding box" : [ 266.59, 112.354, 375.998, 135.366 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "def __init__(self, name, age): self.name = name self.age = age"
+  }, {
+    "type" : "image",
+    "id" : 365,
+    "page number" : 2,
+    "bounding box" : [ 215.25, 127.5, 1076.25, 135.0 ]
+  }, {
+    "type" : "image",
+    "id" : 502,
+    "page number" : 2,
+    "bounding box" : [ 369.0, 126.75, 1320.75, 134.25 ]
+  }, {
+    "type" : "image",
+    "id" : 437,
+    "page number" : 2,
+    "bounding box" : [ -353.625, 123.25, 613.25, 131.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 438,
+    "page number" : 2,
+    "bounding box" : [ 503.582, 123.604, 612.985, 131.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.3059, 0.6039, 0.0235]",
+    "content" : "print(\"Calculation attempted\")"
+  }, {
+    "type" : "image",
+    "id" : 367,
+    "page number" : 2,
+    "bounding box" : [ 91.5, 120.0, 952.5, 127.5 ]
+  }, {
+    "type" : "image",
+    "id" : 503,
+    "page number" : 2,
+    "bounding box" : [ 317.25, 119.25, 1269.0, 126.75 ]
+  }, {
+    "type" : "image",
+    "id" : 368,
+    "page number" : 2,
+    "bounding box" : [ 3.75, 112.5, 864.75, 120.0 ]
+  }, {
+    "type" : "list",
+    "id" : 505,
+    "level" : "2",
+    "page number" : 2,
+    "bounding box" : [ 726.0, 104.104, 798.917, 119.616 ],
+    "numbering style" : "english letters",
+    "number of list items" : 2,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 2,
+      "bounding box" : [ 726.0, 111.604, 798.917, 119.616 ],
+      "font" : "RobotoMono-Regular",
+      "font size" : 6.075,
+      "text color" : "[0.0, 0.0, 0.0]",
+      "content" : "x # 3",
+      "kids" : [ {
+        "type" : "image",
+        "id" : 8,
+        "page number" : 2,
+        "bounding box" : [ 197.25, 104.25, 1149.0, 111.75 ]
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 2,
+      "bounding box" : [ 726.0, 104.104, 798.917, 112.116 ],
+      "font" : "RobotoMono-Regular",
+      "font size" : 6.075,
+      "text color" : "[0.0, 0.0, 0.0]",
+      "content" : "y # 4",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 504,
+    "page number" : 2,
+    "bounding box" : [ 270.0, 111.75, 1221.75, 119.25 ]
+  }, {
+    "type" : "image",
+    "id" : 369,
+    "page number" : 2,
+    "bounding box" : [ -76.5, 105.0, 784.5, 112.5 ]
+  }, {
+    "type" : "image",
+    "id" : 306,
+    "page number" : 2,
+    "bounding box" : [ 14.5, 103.75, 518.625, 112.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 307,
+    "page number" : 2,
+    "bounding box" : [ 15.0, 96.604, 84.29, 112.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.1255, 0.2902, 0.5294]",
+    "content" : "def greet(): return \"Hello!\""
+  }, {
+    "type" : "heading",
+    "id" : 439,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 485.625, 98.25, 551.092, 108.93 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Common Exceptions"
+  }, {
+    "type" : "paragraph",
+    "id" : 371,
+    "page number" : 2,
+    "bounding box" : [ 266.59, 90.604, 397.867, 105.366 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.3059, 0.6039, 0.0235]",
+    "content" : "def bark(self): return f\"{self.name} says Woof!\""
+  }, {
+    "type" : "image",
+    "id" : 370,
+    "page number" : 2,
+    "bounding box" : [ -90.75, 97.5, 769.5, 105.0 ]
+  }, {
+    "type" : "image",
+    "id" : 308,
+    "page number" : 2,
+    "bounding box" : [ -28.5, 96.75, 474.75, 104.25 ]
+  }, {
+    "type" : "image",
+    "id" : 372,
+    "page number" : 2,
+    "bounding box" : [ -160.5, 90.75, 700.5, 98.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 507,
+    "page number" : 2,
+    "bounding box" : [ 726.0, 66.604, 828.082, 97.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# Extended unpacking first, *rest = (1, 2, 3, 4) first # 1 rest # [2, 3, 4]"
+  }, {
+    "type" : "image",
+    "id" : 506,
+    "page number" : 2,
+    "bounding box" : [ 124.5, 89.25, 1076.25, 96.75 ]
+  }, {
+    "type" : "image",
+    "id" : 440,
+    "page number" : 2,
+    "bounding box" : [ 488.5, 87.25, 1171.125, 95.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 441,
+    "page number" : 2,
+    "bounding box" : [ 489.0, 57.604, 649.412, 95.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "ValueError # Invalid value TypeError # Wrong type IndexError # List index out of range KeyError # Dict key not found FileNotFoundError # File doesn't exist"
+  }, {
+    "type" : "paragraph",
+    "id" : 310,
+    "page number" : 2,
+    "bounding box" : [ 15.0, 74.104, 117.119, 89.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "def greet_person(name): return f\"Hello, {name}!\""
+  }, {
+    "type" : "image",
+    "id" : 309,
+    "page number" : 2,
+    "bounding box" : [ -98.25, 81.75, 405.0, 89.25 ]
+  }, {
+    "type" : "image",
+    "id" : 508,
+    "page number" : 2,
+    "bounding box" : [ 51.75, 81.75, 1003.5, 89.25 ]
+  }, {
+    "type" : "image",
+    "id" : 442,
+    "page number" : 2,
+    "bounding box" : [ 365.25, 80.25, 1047.0, 87.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 374,
+    "page number" : 2,
+    "bounding box" : [ 252.0, 60.604, 401.484, 83.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# Create instance my_dog = Dog(\"Frieda\", 3) print(my_dog.bark()) # Frieda says Woof!"
+  }, {
+    "type" : "image",
+    "id" : 373,
+    "page number" : 2,
+    "bounding box" : [ -306.0, 75.75, 555.0, 83.25 ]
+  }, {
+    "type" : "image",
+    "id" : 311,
+    "page number" : 2,
+    "bounding box" : [ -182.25, 74.25, 321.0, 81.75 ]
+  }, {
+    "type" : "image",
+    "id" : 509,
+    "page number" : 2,
+    "bounding box" : [ -51.0, 74.25, 900.75, 81.75 ]
+  }, {
+    "type" : "image",
+    "id" : 443,
+    "page number" : 2,
+    "bounding box" : [ 252.0, 72.75, 933.75, 80.25 ]
+  }, {
+    "type" : "image",
+    "id" : 375,
+    "page number" : 2,
+    "bounding box" : [ -368.25, 68.25, 492.75, 75.75 ]
+  }, {
+    "type" : "image",
+    "id" : 510,
+    "page number" : 2,
+    "bounding box" : [ -124.125, 66.25, 828.5, 74.75 ]
+  }, {
+    "type" : "image",
+    "id" : 444,
+    "page number" : 2,
+    "bounding box" : [ 91.5, 65.25, 773.25, 72.75 ]
+  }, {
+    "type" : "image",
+    "id" : 376,
+    "page number" : 2,
+    "bounding box" : [ -459.375, 60.25, 401.75, 68.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 313,
+    "page number" : 2,
+    "bounding box" : [ 15.0, 52.354, 160.886, 67.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "def add(x, y=10): # Default parameter return x + y"
+  }, {
+    "type" : "image",
+    "id" : 312,
+    "page number" : 2,
+    "bounding box" : [ -284.25, 60.0, 219.0, 67.5 ]
+  }, {
+    "type" : "image",
+    "id" : 445,
+    "page number" : 2,
+    "bounding box" : [ -50.625, 57.25, 632.0, 65.75 ]
+  }, {
+    "type" : "image",
+    "id" : 314,
+    "page number" : 2,
+    "bounding box" : [ -430.125, 52.0, 74.0, 60.5 ]
+  }, {
+    "type" : "image",
+    "id" : 511,
+    "page number" : 2,
+    "bounding box" : [ 0.0, 0.0, 960.0, 26.25 ]
+  }, {
+    "type" : "footer",
+    "id" : 512,
+    "page number" : 2,
+    "bounding box" : [ 337.441, 8.25, 633.803, 18.93 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 5,
+      "page number" : 2,
+      "bounding box" : [ 337.441, 8.25, 633.803, 18.93 ],
+      "heading level" : 2,
+      "font" : "SourceSans3-Bold",
+      "font size" : 7.5,
+      "text color" : "[1.0, 1.0, 1.0]",
+      "content" : "Continue your learning journey and become a Python expert at realpython.com/start-here"
+    } ]
+  }, {
+    "type" : "heading",
+    "id" : 513,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 11.25, 514.5, 24.93, 525.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Sets"
+  }, {
+    "type" : "heading",
+    "id" : 696,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 722.812, 514.5, 787.68, 525.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Pythonic Constructs"
+  }, {
+    "type" : "heading",
+    "id" : 580,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 248.437, 496.5, 373.096, 524.43 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "File I/O File Operations"
+  }, {
+    "type" : "heading",
+    "id" : 646,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 563.367, 513.75, 633.8, 524.43 ],
+    "heading level" : 2,
+    "font" : "SourceSans3-Bold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Virtual Environments"
+  }, {
+    "type" : "image",
+    "id" : 514,
+    "page number" : 3,
+    "bounding box" : [ 14.5, 503.5, 661.125, 512.0 ]
+  }, {
+    "type" : "image",
+    "id" : 697,
+    "page number" : 3,
+    "bounding box" : [ 725.5, 503.5, 2009.625, 512.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 515,
+    "page number" : 3,
+    "bounding box" : [ 15.0, 503.854, 69.684, 511.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# Creating Sets"
+  }, {
+    "type" : "paragraph",
+    "id" : 698,
+    "page number" : 3,
+    "bounding box" : [ 726.0, 496.354, 784.329, 511.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# Swap variables a, b = b, a"
+  }, {
+    "type" : "paragraph",
+    "id" : 648,
+    "level" : "1",
+    "page number" : 3,
+    "bounding box" : [ 494.625, 498.3, 618.939, 507.912 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Virtual Environments are often called “venv”"
+  }, {
+    "type" : "image",
+    "id" : 647,
+    "page number" : 3,
+    "bounding box" : [ 484.75, 502.0, 488.0, 505.25 ]
+  }, {
+    "type" : "list",
+    "id" : 517,
+    "level" : "2",
+    "page number" : 3,
+    "bounding box" : [ 15.0, 488.854, 91.654, 504.366 ],
+    "numbering style" : "english letters",
+    "number of list items" : 2,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 3,
+      "bounding box" : [ 15.0, 496.354, 62.45, 504.366 ],
+      "font" : "RobotoMono-Regular",
+      "font size" : 6.075,
+      "text color" : "[0.0, 0.0, 0.0]",
+      "content" : "a = {1, 2, 3}",
+      "kids" : [ {
+        "type" : "image",
+        "id" : 7,
+        "page number" : 3,
+        "bounding box" : [ -87.0, 489.0, 558.0, 496.5 ]
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 3,
+      "bounding box" : [ 15.0, 488.854, 91.654, 496.866 ],
+      "font" : "RobotoMono-Regular",
+      "font size" : 6.075,
+      "text color" : "[0.0, 0.0, 0.0]",
+      "content" : "b = set([3, 4, 4, 5])",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 516,
+    "page number" : 3,
+    "bounding box" : [ -39.75, 496.5, 606.0, 504.0 ]
+  }, {
+    "type" : "image",
+    "id" : 699,
+    "page number" : 3,
+    "bounding box" : [ 667.5, 496.5, 1951.5, 504.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 650,
+    "level" : "1",
+    "page number" : 3,
+    "bounding box" : [ 485.625, 459.604, 710.489, 498.912 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Use venvs to isolate project packages from the system-wide Python packages Create Virtual Environment $ python -m venv .venv"
+  }, {
+    "type" : "image",
+    "id" : 649,
+    "page number" : 3,
+    "bounding box" : [ 484.75, 493.0, 488.0, 496.25 ]
+  }, {
+    "type" : "image",
+    "id" : 581,
+    "page number" : 3,
+    "bounding box" : [ 251.5, 485.5, 1897.125, 494.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 582,
+    "page number" : 3,
+    "bounding box" : [ 252.0, 478.354, 463.544, 493.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# Read an entire file with open(\"file.txt\", mode=\"r\", encoding=\"utf-8\") as file:"
+  }, {
+    "type" : "paragraph",
+    "id" : 701,
+    "page number" : 3,
+    "bounding box" : [ 726.0, 466.354, 926.564, 489.366 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# Flatten a list of lists matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]] flat = [item for sublist in matrix for item in sublist]"
+  }, {
+    "type" : "image",
+    "id" : 700,
+    "page number" : 3,
+    "bounding box" : [ 627.75, 481.5, 1911.0, 489.0 ]
+  }, {
+    "type" : "image",
+    "id" : 583,
+    "page number" : 3,
+    "bounding box" : [ 175.5, 478.5, 1820.25, 486.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 519,
+    "page number" : 3,
+    "bounding box" : [ 15.0, 444.604, 138.955, 481.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# Set Operations a | b # {1, 2, 3, 4, 5} a & b # {3} a - b # {1, 2} a ^ b # {1, 2, 4, 5}"
+  }, {
+    "type" : "image",
+    "id" : 518,
+    "page number" : 3,
+    "bounding box" : [ -163.5, 474.0, 481.5, 481.5 ]
+  }, {
+    "type" : "image",
+    "id" : 702,
+    "page number" : 3,
+    "bounding box" : [ 536.25, 474.0, 1820.25, 481.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 585,
+    "page number" : 3,
+    "bounding box" : [ 266.582, 470.854, 343.143, 478.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "content = file.read()"
+  }, {
+    "type" : "image",
+    "id" : 584,
+    "page number" : 3,
+    "bounding box" : [ -36.0, 471.0, 1608.75, 478.5 ]
+  }, {
+    "type" : "image",
+    "id" : 520,
+    "page number" : 3,
+    "bounding box" : [ -222.0, 466.5, 423.0, 474.0 ]
+  }, {
+    "type" : "image",
+    "id" : 703,
+    "page number" : 3,
+    "bounding box" : [ 383.25, 466.5, 1666.5, 474.0 ]
+  }, {
+    "type" : "image",
+    "id" : 651,
+    "page number" : 3,
+    "bounding box" : [ 488.5, 459.25, 569.75, 467.75 ]
+  }, {
+    "type" : "image",
+    "id" : 521,
+    "page number" : 3,
+    "bounding box" : [ -345.75, 459.75, 299.25, 467.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 587,
+    "page number" : 3,
+    "bounding box" : [ 252.0, 448.354, 463.544, 463.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# Read a file line by line with open(\"file.txt\", mode=\"r\", encoding=\"utf-8\") as file:"
+  }, {
+    "type" : "image",
+    "id" : 586,
+    "page number" : 3,
+    "bounding box" : [ -127.5, 456.0, 1517.25, 463.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 705,
+    "page number" : 3,
+    "bounding box" : [ 726.0, 444.604, 860.917, 460.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# Remove duplicates unique_unordered = list(set(my_list))"
+  }, {
+    "type" : "image",
+    "id" : 522,
+    "page number" : 3,
+    "bounding box" : [ -426.0, 452.25, 219.0, 459.75 ]
+  }, {
+    "type" : "image",
+    "id" : 704,
+    "page number" : 3,
+    "bounding box" : [ 182.25, 452.25, 1466.25, 459.75 ]
+  }, {
+    "type" : "image",
+    "id" : 588,
+    "page number" : 3,
+    "bounding box" : [ -222.0, 448.5, 1422.75, 456.0 ]
+  }, {
+    "type" : "image",
+    "id" : 523,
+    "page number" : 3,
+    "bounding box" : [ -517.875, 444.25, 128.75, 452.75 ]
+  }, {
+    "type" : "image",
+    "id" : 706,
+    "page number" : 3,
+    "bounding box" : [ 113.25, 444.75, 1397.25, 452.25 ]
+  }, {
+    "type" : "heading",
+    "id" : 652,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 485.625, 439.5, 613.792, 450.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Activate Virtual Environment (Windows)"
+  }, {
+    "type" : "paragraph",
+    "id" : 590,
+    "page number" : 3,
+    "bounding box" : [ 266.59, 434.104, 350.441, 449.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "for line in file: print(line.strip())"
+  }, {
+    "type" : "image",
+    "id" : 589,
+    "page number" : 3,
+    "bounding box" : [ -433.5, 441.75, 1211.25, 449.25 ]
+  }, {
+    "type" : "image",
+    "id" : 591,
+    "page number" : 3,
+    "bounding box" : [ -510.0, 434.25, 1134.75, 441.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 708,
+    "page number" : 3,
+    "bounding box" : [ 726.0, 422.104, 860.917, 437.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# Remove duplicates, preserve order unique = list(dict.fromkeys(my_list))"
+  }, {
+    "type" : "image",
+    "id" : 707,
+    "page number" : 3,
+    "bounding box" : [ -21.75, 429.75, 1262.25, 437.25 ]
+  }, {
+    "type" : "image",
+    "id" : 653,
+    "page number" : 3,
+    "bounding box" : [ 488.5, 427.75, 584.0, 436.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 654,
+    "page number" : 3,
+    "bounding box" : [ 489.0, 428.104, 583.793, 436.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.4235, 0.4588, 0.4902]",
+    "content" : "PS> .venv\\Scripts\\activate"
+  }, {
+    "type" : "heading",
+    "id" : 524,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 11.25, 423.0, 49.95, 433.68 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Dictionaries"
+  }, {
+    "type" : "image",
+    "id" : 709,
+    "page number" : 3,
+    "bounding box" : [ -149.25, 422.25, 1134.75, 429.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 593,
+    "page number" : 3,
+    "bounding box" : [ 252.0, 411.604, 470.834, 427.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# Write a file with open(\"output.txt\", mode=\"w\", encoding=\"utf-8\") as file:"
+  }, {
+    "type" : "image",
+    "id" : 592,
+    "page number" : 3,
+    "bounding box" : [ -609.0, 419.25, 1035.75, 426.75 ]
+  }, {
+    "type" : "image",
+    "id" : 525,
+    "page number" : 3,
+    "bounding box" : [ 14.5, 413.193, 1611.927, 420.367 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 526,
+    "page number" : 3,
+    "bounding box" : [ 15.0, 401.225, 111.085, 420.168 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 5.001,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# Creating Dictionaries empty = {} pet = {\"name\": \"Leo\", \"age\": 42}"
+  }, {
+    "type" : "image",
+    "id" : 594,
+    "page number" : 3,
+    "bounding box" : [ -660.0, 411.75, 984.75, 419.25 ]
+  }, {
+    "type" : "heading",
+    "id" : 655,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 485.625, 408.0, 632.782, 418.68 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Activate Virtual Environment (Linux & macOS)"
+  }, {
+    "type" : "paragraph",
+    "id" : 711,
+    "page number" : 3,
+    "bounding box" : [ 726.0, 399.604, 839.036, 415.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# Count occurrences from collections import Counter"
+  }, {
+    "type" : "image",
+    "id" : 710,
+    "page number" : 3,
+    "bounding box" : [ -284.25, 407.25, 999.75, 414.75 ]
+  }, {
+    "type" : "image",
+    "id" : 527,
+    "page number" : 3,
+    "bounding box" : [ -54.15, 407.519, 1543.086, 413.693 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 596,
+    "page number" : 3,
+    "bounding box" : [ 266.582, 404.104, 372.317, 412.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.3059, 0.6039, 0.0235]",
+    "content" : "file.write(\"Hello, World!\\n\")"
+  }, {
+    "type" : "image",
+    "id" : 595,
+    "page number" : 3,
+    "bounding box" : [ -878.25, 404.25, 766.5, 411.75 ]
+  }, {
+    "type" : "image",
+    "id" : 528,
+    "page number" : 3,
+    "bounding box" : [ -83.785, 401.345, 1512.833, 407.519 ]
+  }, {
+    "type" : "image",
+    "id" : 712,
+    "page number" : 3,
+    "bounding box" : [ -353.25, 399.75, 930.0, 407.25 ]
+  }, {
+    "type" : "image",
+    "id" : 656,
+    "page number" : 3,
+    "bounding box" : [ 488.5, 397.0, 587.75, 405.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 657,
+    "page number" : 3,
+    "bounding box" : [ 489.0, 397.354, 587.446, 405.366 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.4235, 0.4588, 0.4902]",
+    "content" : "$ source .venv/bin/activate"
+  }, {
+    "type" : "paragraph",
+    "id" : 598,
+    "page number" : 3,
+    "bounding box" : [ 252.0, 381.604, 459.888, 397.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# Append to a File with open(\"log.txt\", mode=\"a\", encoding=\"utf-8\") as file:"
+  }, {
+    "type" : "image",
+    "id" : 597,
+    "page number" : 3,
+    "bounding box" : [ -999.0, 389.25, 645.75, 396.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 530,
+    "page number" : 3,
+    "bounding box" : [ 15.0, 358.624, 147.074, 395.472 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 5.001,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# Dictionary Operations pet[\"sound\"] = \"Purr!\" # Add key and value pet[\"age\"] = 7 # Update value age = pet.get(\"age\", 0) # Get with default del pet[\"sound\"] # Delete key pet.pop(\"age\") # Remove and return"
+  }, {
+    "type" : "image",
+    "id" : 529,
+    "page number" : 3,
+    "bounding box" : [ -180.101, 388.997, 1416.518, 395.171 ]
+  }, {
+    "type" : "image",
+    "id" : 713,
+    "page number" : 3,
+    "bounding box" : [ -466.875, 384.25, 818.0, 392.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 714,
+    "page number" : 3,
+    "bounding box" : [ 726.0, 384.604, 817.14, 392.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "counts = Counter(my_list)"
+  }, {
+    "type" : "image",
+    "id" : 599,
+    "page number" : 3,
+    "bounding box" : [ -1064.25, 381.75, 580.5, 389.25 ]
+  }, {
+    "type" : "image",
+    "id" : 531,
+    "page number" : 3,
+    "bounding box" : [ -249.251, 382.823, 1347.985, 388.997 ]
+  }, {
+    "type" : "heading",
+    "id" : 658,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 485.625, 376.5, 586.207, 387.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Deactivate Virtual Environment"
+  }, {
+    "type" : "image",
+    "id" : 532,
+    "page number" : 3,
+    "bounding box" : [ -381.376, 377.266, 1215.86, 383.44 ]
+  }, {
+    "type" : "image",
+    "id" : 600,
+    "page number" : 3,
+    "bounding box" : [ -1272.375, 373.75, 372.5, 382.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 601,
+    "page number" : 3,
+    "bounding box" : [ 266.582, 374.104, 372.317, 382.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.3059, 0.6039, 0.0235]",
+    "content" : "file.write(\"New log entry\\n\")"
+  }, {
+    "type" : "image",
+    "id" : 533,
+    "page number" : 3,
+    "bounding box" : [ -498.067, 371.092, 1098.552, 377.266 ]
+  }, {
+    "type" : "heading",
+    "id" : 715,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 722.812, 363.75, 847.09, 374.43 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Learn More on realpython.com/search:"
+  }, {
+    "type" : "image",
+    "id" : 659,
+    "page number" : 3,
+    "bounding box" : [ 488.5, 365.5, 562.25, 374.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 660,
+    "page number" : 3,
+    "bounding box" : [ 489.0, 365.854, 561.912, 373.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.4235, 0.4588, 0.4902]",
+    "content" : "(.venv) $ deactivate"
+  }, {
+    "type" : "image",
+    "id" : 534,
+    "page number" : 3,
+    "bounding box" : [ -627.105, 364.918, 969.514, 371.092 ]
+  }, {
+    "type" : "image",
+    "id" : 535,
+    "page number" : 3,
+    "bounding box" : [ -738.239, 358.744, 858.38, 364.918 ]
+  }, {
+    "type" : "heading",
+    "id" : 602,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 248.437, 353.25, 372.715, 363.93 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Learn More on realpython.com/search:"
+  }, {
+    "type" : "paragraph",
+    "id" : 717,
+    "page number" : 3,
+    "bounding box" : [ 724.734, 353.4, 785.007, 363.546 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.412,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "counter ∙ tricks"
+  }, {
+    "type" : "image",
+    "id" : 716,
+    "page number" : 3,
+    "bounding box" : [ 722.5, 354.25, 754.25, 363.5 ]
+  }, {
+    "type" : "image",
+    "id" : 718,
+    "page number" : 3,
+    "bounding box" : [ 759.25, 354.25, 787.25, 363.5 ]
+  }, {
+    "type" : "heading",
+    "id" : 661,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 485.625, 345.0, 609.902, 355.68 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Learn More on realpython.com/search:"
+  }, {
+    "type" : "paragraph",
+    "id" : 604,
+    "page number" : 3,
+    "bounding box" : [ 250.359, 342.9, 374.761, 353.046 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.412,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "files ∙ context manager ∙ pathlib"
+  }, {
+    "type" : "image",
+    "id" : 603,
+    "page number" : 3,
+    "bounding box" : [ 247.75, 343.75, 272.0, 353.0 ]
+  }, {
+    "type" : "image",
+    "id" : 605,
+    "page number" : 3,
+    "bounding box" : [ 277.75, 343.75, 340.25, 353.0 ]
+  }, {
+    "type" : "image",
+    "id" : 606,
+    "page number" : 3,
+    "bounding box" : [ 345.25, 343.75, 377.0, 353.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 537,
+    "page number" : 3,
+    "bounding box" : [ 15.0, 321.579, 234.082, 352.871 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 5.001,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# Dictionary Methods pet = {\"name\": \"Frieda\", \"sound\": \"Bark!\"} pet.keys() # dict_keys(['name', 'sound']) pet.values() # dict_values(['Frieda', 'Bark!']) pet.items() # dict_items([('name', 'Frieda'), ('sound', 'Bark!')])"
+  }, {
+    "type" : "image",
+    "id" : 536,
+    "page number" : 3,
+    "bounding box" : [ -870.364, 346.396, 726.255, 352.57 ]
+  }, {
+    "type" : "image",
+    "id" : 538,
+    "page number" : 3,
+    "bounding box" : [ -930.87, 340.222, 666.366, 346.396 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 663,
+    "page number" : 3,
+    "bounding box" : [ 487.547, 334.65, 586.307, 344.796 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.412,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "virtual environment ∙ venv"
+  }, {
+    "type" : "image",
+    "id" : 662,
+    "page number" : 3,
+    "bounding box" : [ 485.5, 335.5, 563.0, 344.75 ]
+  }, {
+    "type" : "image",
+    "id" : 664,
+    "page number" : 3,
+    "bounding box" : [ 568.75, 335.5, 588.5, 344.75 ]
+  }, {
+    "type" : "image",
+    "id" : 539,
+    "page number" : 3,
+    "bounding box" : [ -1056.821, 334.048, 540.415, 340.222 ]
+  }, {
+    "type" : "image",
+    "id" : 540,
+    "page number" : 3,
+    "bounding box" : [ -1203.765, 327.874, 392.854, 334.048 ]
+  }, {
+    "type" : "heading",
+    "id" : 607,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 330.375, 321.0, 392.415, 331.68 ],
+    "heading level" : 2,
+    "font" : "SourceSans3-Bold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Imports & Modules"
+  }, {
+    "type" : "heading",
+    "id" : 719,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 731.062, 321.0, 943.815, 331.68 ],
+    "heading level" : 2,
+    "font" : "SourceSans3-Bold",
+    "font size" : 7.5,
+    "text color" : "[0.1961, 0.3176, 0.4196]",
+    "content" : "Do you want to go deeper on any topic in the Python curriculum?"
+  }, {
+    "type" : "image",
+    "id" : 541,
+    "page number" : 3,
+    "bounding box" : [ -1363.365, 321.199, 234.68, 328.374 ]
+  }, {
+    "type" : "heading",
+    "id" : 665,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 583.219, 312.75, 613.961, 323.43 ],
+    "heading level" : 2,
+    "font" : "SourceSans3-Bold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Packages"
+  }, {
+    "type" : "paragraph",
+    "id" : 720,
+    "page number" : 3,
+    "bounding box" : [ 731.062, 295.5, 941.032, 315.18 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 7.5,
+    "text color" : "[0.1961, 0.3176, 0.4196]",
+    "content" : "At Real Python you can immerse yourself in any topic. Level up your skills eﬀectively with curated resources like:"
+  }, {
+    "type" : "paragraph",
+    "id" : 609,
+    "level" : "1",
+    "page number" : 3,
+    "bounding box" : [ 257.437, 305.55, 363.981, 315.162 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Prefer explicit imports over import *"
+  }, {
+    "type" : "image",
+    "id" : 610,
+    "page number" : 3,
+    "bounding box" : [ 334.0, 306.25, 364.25, 314.75 ]
+  }, {
+    "type" : "image",
+    "id" : 608,
+    "page number" : 3,
+    "bounding box" : [ 247.0, 309.25, 250.25, 312.5 ]
+  }, {
+    "type" : "heading",
+    "id" : 542,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 11.25, 300.75, 135.527, 311.43 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Learn More on realpython.com/search:"
+  }, {
+    "type" : "paragraph",
+    "id" : 667,
+    "level" : "1",
+    "page number" : 3,
+    "bounding box" : [ 485.625, 279.0, 710.462, 306.912 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "The oﬀicial third-party package repository is the Python Package Index (PyPI) Install Packages"
+  }, {
+    "type" : "paragraph",
+    "id" : 612,
+    "level" : "1",
+    "page number" : 3,
+    "bounding box" : [ 257.437, 296.55, 354.867, 306.162 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Use aliases for long module names"
+  }, {
+    "type" : "image",
+    "id" : 666,
+    "page number" : 3,
+    "bounding box" : [ 484.75, 301.0, 488.0, 304.25 ]
+  }, {
+    "type" : "image",
+    "id" : 611,
+    "page number" : 3,
+    "bounding box" : [ 247.0, 300.25, 250.25, 303.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 544,
+    "page number" : 3,
+    "bounding box" : [ 13.172, 290.4, 214.481, 300.546 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.412,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "list ∙ tuple ∙ set ∙ dictionary ∙ indexing ∙ unpacking"
+  }, {
+    "type" : "image",
+    "id" : 543,
+    "page number" : 3,
+    "bounding box" : [ 10.75, 291.25, 31.25, 300.5 ]
+  }, {
+    "type" : "image",
+    "id" : 545,
+    "page number" : 3,
+    "bounding box" : [ 36.25, 291.25, 60.5, 300.5 ]
+  }, {
+    "type" : "image",
+    "id" : 546,
+    "page number" : 3,
+    "bounding box" : [ 66.25, 291.25, 82.25, 300.5 ]
+  }, {
+    "type" : "image",
+    "id" : 547,
+    "page number" : 3,
+    "bounding box" : [ 88.0, 291.25, 131.0, 300.5 ]
+  }, {
+    "type" : "image",
+    "id" : 548,
+    "page number" : 3,
+    "bounding box" : [ 136.75, 291.25, 172.25, 300.5 ]
+  }, {
+    "type" : "image",
+    "id" : 549,
+    "page number" : 3,
+    "bounding box" : [ 177.25, 291.25, 217.25, 300.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 614,
+    "level" : "1",
+    "page number" : 3,
+    "bounding box" : [ 257.437, 287.55, 468.348, 297.162 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Group imports: standard library, third-party libraries, user-defined modules"
+  }, {
+    "type" : "paragraph",
+    "id" : 722,
+    "level" : "1",
+    "page number" : 3,
+    "bounding box" : [ 755.062, 284.25, 801.435, 294.93 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Learning paths"
+  }, {
+    "type" : "image",
+    "id" : 613,
+    "page number" : 3,
+    "bounding box" : [ 247.0, 291.25, 250.25, 294.5 ]
+  }, {
+    "type" : "image",
+    "id" : 721,
+    "page number" : 3,
+    "bounding box" : [ 745.0, 287.5, 748.25, 290.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 724,
+    "level" : "1",
+    "page number" : 3,
+    "bounding box" : [ 755.062, 274.5, 798.202, 285.18 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Video courses"
+  }, {
+    "type" : "image",
+    "id" : 723,
+    "page number" : 3,
+    "bounding box" : [ 745.0, 277.75, 748.25, 281.0 ]
+  }, {
+    "type" : "heading",
+    "id" : 550,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 96.375, 268.5, 152.047, 279.18 ],
+    "heading level" : 2,
+    "font" : "SourceSans3-Bold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Comprehensions"
+  }, {
+    "type" : "heading",
+    "id" : 615,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 248.437, 268.5, 291.607, 279.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Import Styles"
+  }, {
+    "type" : "image",
+    "id" : 668,
+    "page number" : 3,
+    "bounding box" : [ 488.5, 267.25, 606.5, 275.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 669,
+    "page number" : 3,
+    "bounding box" : [ 489.0, 267.604, 605.671, 275.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.4235, 0.4588, 0.4902]",
+    "content" : "$ python -m pip install requests"
+  }, {
+    "type" : "paragraph",
+    "id" : 726,
+    "level" : "1",
+    "page number" : 3,
+    "bounding box" : [ 755.062, 264.0, 805.935, 274.68 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Written tutorials"
+  }, {
+    "type" : "image",
+    "id" : 725,
+    "page number" : 3,
+    "bounding box" : [ 745.0, 267.25, 748.25, 270.5 ]
+  }, {
+    "type" : "image",
+    "id" : 616,
+    "page number" : 3,
+    "bounding box" : [ 251.5, 257.5, 1094.625, 266.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 617,
+    "page number" : 3,
+    "bounding box" : [ 252.0, 242.854, 332.216, 265.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# Import entire module import math result = math.sqrt(16)"
+  }, {
+    "type" : "paragraph",
+    "id" : 728,
+    "level" : "1",
+    "page number" : 3,
+    "bounding box" : [ 755.062, 234.0, 814.035, 264.93 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Interactive quizzes Podcast interviews Reference articles"
+  }, {
+    "type" : "paragraph",
+    "id" : 552,
+    "level" : "1",
+    "page number" : 3,
+    "bounding box" : [ 20.25, 253.05, 182.406, 262.662 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "You can think of comprehensions as condensed for loops"
+  }, {
+    "type" : "image",
+    "id" : 553,
+    "page number" : 3,
+    "bounding box" : [ 154.0, 253.75, 166.25, 262.25 ]
+  }, {
+    "type" : "image",
+    "id" : 727,
+    "page number" : 3,
+    "bounding box" : [ 745.0, 257.5, 748.25, 260.75 ]
+  }, {
+    "type" : "image",
+    "id" : 551,
+    "page number" : 3,
+    "bounding box" : [ 10.0, 256.75, 13.25, 260.0 ]
+  }, {
+    "type" : "heading",
+    "id" : 670,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 485.625, 247.5, 605.64, 258.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Save Requirements & Install from File"
+  }, {
+    "type" : "image",
+    "id" : 618,
+    "page number" : 3,
+    "bounding box" : [ 171.75, 250.5, 1014.0, 258.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 555,
+    "level" : "1",
+    "page number" : 3,
+    "bounding box" : [ 11.25, 225.75, 158.226, 253.662 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.4, 0.4, 0.4]",
+    "content" : "Comprehensions are faster than equivalent loops List Comprehensions"
+  }, {
+    "type" : "image",
+    "id" : 554,
+    "page number" : 3,
+    "bounding box" : [ 10.0, 247.75, 13.25, 251.0 ]
+  }, {
+    "type" : "image",
+    "id" : 619,
+    "page number" : 3,
+    "bounding box" : [ 132.0, 243.0, 974.25, 250.5 ]
+  }, {
+    "type" : "image",
+    "id" : 729,
+    "page number" : 3,
+    "bounding box" : [ 745.0, 247.0, 748.25, 250.25 ]
+  }, {
+    "type" : "image",
+    "id" : 671,
+    "page number" : 3,
+    "bounding box" : [ 488.5, 235.75, 795.375, 244.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 672,
+    "page number" : 3,
+    "bounding box" : [ 489.0, 228.604, 645.776, 244.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.4235, 0.4588, 0.4902]",
+    "content" : "$ python -m pip freeze > requirements.txt $ python -m pip install -r requirements.txt"
+  }, {
+    "type" : "image",
+    "id" : 730,
+    "page number" : 3,
+    "bounding box" : [ 745.0, 237.25, 748.25, 240.5 ]
+  }, {
+    "type" : "image",
+    "id" : 673,
+    "page number" : 3,
+    "bounding box" : [ 339.375, 228.25, 646.25, 236.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 621,
+    "page number" : 3,
+    "bounding box" : [ 252.0, 213.604, 346.791, 235.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# Import specific function from math import sqrt result = sqrt(16)"
+  }, {
+    "type" : "image",
+    "id" : 620,
+    "page number" : 3,
+    "bounding box" : [ 51.75, 228.0, 894.0, 235.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 731,
+    "page number" : 3,
+    "bounding box" : [ 731.062, 211.5, 926.947, 231.18 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 7.5,
+    "text color" : "[0.1961, 0.3176, 0.4196]",
+    "content" : "Continue your learning journey and become a Python expert at realpython.com/start-here"
+  }, {
+    "type" : "image",
+    "id" : 622,
+    "page number" : 3,
+    "bounding box" : [ -43.5, 220.5, 798.75, 228.0 ]
+  }, {
+    "type" : "image",
+    "id" : 556,
+    "page number" : 3,
+    "bounding box" : [ 14.5, 214.0, 606.375, 222.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 557,
+    "page number" : 3,
+    "bounding box" : [ 15.0, 206.854, 142.69, 222.366 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# Basic squares = [x**2 for x in range(10)]"
+  }, {
+    "type" : "image",
+    "id" : 623,
+    "page number" : 3,
+    "bounding box" : [ -120.0, 213.75, 722.25, 221.25 ]
+  }, {
+    "type" : "heading",
+    "id" : 674,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 485.625, 208.5, 540.232, 219.18 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Related Tutorials"
+  }, {
+    "type" : "image",
+    "id" : 558,
+    "page number" : 3,
+    "bounding box" : [ -10.5, 207.0, 580.5, 214.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 676,
+    "level" : "1",
+    "page number" : 3,
+    "bounding box" : [ 494.625, 197.55, 569.671, 207.162 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Installing Python Packages"
+  }, {
+    "type" : "paragraph",
+    "id" : 625,
+    "page number" : 3,
+    "bounding box" : [ 252.0, 183.604, 350.486, 206.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# Import with alias import numpy as np array = np.array([1, 2, 3])"
+  }, {
+    "type" : "image",
+    "id" : 624,
+    "page number" : 3,
+    "bounding box" : [ -182.25, 198.75, 660.75, 206.25 ]
+  }, {
+    "type" : "image",
+    "id" : 675,
+    "page number" : 3,
+    "bounding box" : [ 484.75, 201.25, 488.0, 204.5 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 560,
+    "page number" : 3,
+    "bounding box" : [ 15.0, 184.354, 175.524, 199.866 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# With condition evens = [x for x in range(20) if x % 2 == 0]"
+  }, {
+    "type" : "image",
+    "id" : 559,
+    "page number" : 3,
+    "bounding box" : [ -138.0, 192.0, 453.0, 199.5 ]
+  }, {
+    "type" : "image",
+    "id" : 626,
+    "page number" : 3,
+    "bounding box" : [ -251.25, 191.25, 591.0, 198.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 678,
+    "level" : "1",
+    "page number" : 3,
+    "bounding box" : [ 494.625, 188.55, 600.87, 198.162 ],
+    "font" : "SourceSans3-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Requirements Files in Python Projects"
+  }, {
+    "type" : "image",
+    "id" : 677,
+    "page number" : 3,
+    "bounding box" : [ 484.75, 192.25, 488.0, 195.5 ]
+  }, {
+    "type" : "image",
+    "id" : 561,
+    "page number" : 3,
+    "bounding box" : [ -196.5, 184.5, 394.5, 192.0 ]
+  }, {
+    "type" : "image",
+    "id" : 627,
+    "page number" : 3,
+    "bounding box" : [ -316.5, 183.75, 525.75, 191.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 563,
+    "page number" : 3,
+    "bounding box" : [ 15.0, 162.604, 204.717, 178.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# Nested matrix = [[i*j for j in range(3)] for i in range(3)]"
+  }, {
+    "type" : "image",
+    "id" : 562,
+    "page number" : 3,
+    "bounding box" : [ -357.0, 170.25, 234.0, 177.75 ]
+  }, {
+    "type" : "heading",
+    "id" : 679,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 575.355, 166.5, 621.81, 177.18 ],
+    "heading level" : 2,
+    "font" : "SourceSans3-Bold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Miscellaneous"
+  }, {
+    "type" : "paragraph",
+    "id" : 629,
+    "page number" : 3,
+    "bounding box" : [ 252.0, 161.104, 361.368, 176.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.5608, 0.349, 0.0078]",
+    "content" : "# Import all (not recommended) from math import *"
+  }, {
+    "type" : "image",
+    "id" : 628,
+    "page number" : 3,
+    "bounding box" : [ -415.5, 168.75, 426.75, 176.25 ]
+  }, {
+    "type" : "image",
+    "id" : 564,
+    "page number" : 3,
+    "bounding box" : [ -386.625, 162.25, 205.25, 170.75 ]
+  }, {
+    "type" : "image",
+    "id" : 630,
+    "page number" : 3,
+    "bounding box" : [ -525.375, 160.75, 318.5, 169.25 ]
+  }, {
+    "type" : "heading",
+    "id" : 680,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 487.875, 147.75, 684.067, 158.43 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Truthy Falsy"
+  }, {
+    "type" : "heading",
+    "id" : 565,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 11.25, 141.75, 85.747, 152.43 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Other Comprehensions"
+  }, {
+    "type" : "heading",
+    "id" : 631,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 248.437, 140.25, 302.092, 150.93 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Package Imports"
+  }, {
+    "type" : "image",
+    "id" : 681,
+    "page number" : 3,
+    "bounding box" : [ 487.75, 134.5, 500.75, 143.75 ]
+  }, {
+    "type" : "image",
+    "id" : 683,
+    "page number" : 3,
+    "bounding box" : [ 667.0, 134.5, 672.5, 143.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 682,
+    "level" : "2",
+    "page number" : 3,
+    "bounding box" : [ 487.875, 63.421, 679.816, 143.573 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "-42 0 3.14 0.0 \"John\" \"\" [1, 2, 3] [] (\"apple\", \"banana\") () {\"key\": None} {}"
+  }, {
+    "type" : "image",
+    "id" : 566,
+    "page number" : 3,
+    "bounding box" : [ 14.5, 130.324, 837.844, 138.464 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 567,
+    "page number" : 3,
+    "bounding box" : [ 15.0, 123.545, 233.698, 138.312 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 5.783,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# Dictionary comprehension word_lengths = {word: len(word) for word in [\"hello\", \"world\"]}"
+  }, {
+    "type" : "image",
+    "id" : 632,
+    "page number" : 3,
+    "bounding box" : [ 251.5, 129.25, 1018.125, 137.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 633,
+    "page number" : 3,
+    "bounding box" : [ 252.0, 107.104, 386.902, 137.616 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# Import from package import package.module from package import module from package.subpackage import module"
+  }, {
+    "type" : "image",
+    "id" : 568,
+    "page number" : 3,
+    "bounding box" : [ -74.96, 123.685, 747.528, 130.824 ]
+  }, {
+    "type" : "image",
+    "id" : 634,
+    "page number" : 3,
+    "bounding box" : [ 175.5, 122.25, 941.25, 129.75 ]
+  }, {
+    "type" : "image",
+    "id" : 684,
+    "page number" : 3,
+    "bounding box" : [ 487.75, 120.25, 504.5, 129.5 ]
+  }, {
+    "type" : "image",
+    "id" : 685,
+    "page number" : 3,
+    "bounding box" : [ 667.0, 120.25, 680.0, 129.5 ]
+  }, {
+    "type" : "image",
+    "id" : 635,
+    "page number" : 3,
+    "bounding box" : [ 99.0, 114.75, 864.75, 122.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 570,
+    "page number" : 3,
+    "bounding box" : [ 15.0, 102.126, 233.721, 116.893 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 5.783,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# Set comprehension unique_lengths = {len(word) for word in [\"who\", \"what\", \"why\"]}"
+  }, {
+    "type" : "image",
+    "id" : 569,
+    "page number" : 3,
+    "bounding box" : [ -294.147, 109.405, 529.055, 116.545 ]
+  }, {
+    "type" : "image",
+    "id" : 686,
+    "page number" : 3,
+    "bounding box" : [ 487.75, 106.0, 512.75, 115.25 ]
+  }, {
+    "type" : "image",
+    "id" : 687,
+    "page number" : 3,
+    "bounding box" : [ 667.0, 106.0, 676.25, 115.25 ]
+  }, {
+    "type" : "image",
+    "id" : 636,
+    "page number" : 3,
+    "bounding box" : [ 3.75, 107.25, 769.5, 114.75 ]
+  }, {
+    "type" : "image",
+    "id" : 571,
+    "page number" : 3,
+    "bounding box" : [ -359.832, 102.266, 462.656, 109.405 ]
+  }, {
+    "type" : "image",
+    "id" : 688,
+    "page number" : 3,
+    "bounding box" : [ 487.75, 91.75, 524.75, 101.0 ]
+  }, {
+    "type" : "image",
+    "id" : 689,
+    "page number" : 3,
+    "bounding box" : [ 667.0, 91.75, 676.25, 101.0 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 638,
+    "page number" : 3,
+    "bounding box" : [ 252.0, 77.854, 405.137, 100.116 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.075,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# Import specific items from package.module import function, Class from package.module import name as alias"
+  }, {
+    "type" : "image",
+    "id" : 637,
+    "page number" : 3,
+    "bounding box" : [ -130.5, 92.25, 634.5, 99.75 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 573,
+    "page number" : 3,
+    "bounding box" : [ 15.0, 81.421, 167.802, 96.188 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 5.783,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# Generator expression sum_squares = sum(x**2 for x in range(1000))"
+  }, {
+    "type" : "image",
+    "id" : 572,
+    "page number" : 3,
+    "bounding box" : [ -578.305, 88.7, 244.183, 95.84 ]
+  }, {
+    "type" : "image",
+    "id" : 639,
+    "page number" : 3,
+    "bounding box" : [ -214.5, 85.5, 551.25, 93.0 ]
+  }, {
+    "type" : "image",
+    "id" : 574,
+    "page number" : 3,
+    "bounding box" : [ -655.056, 81.061, 168.288, 89.2 ]
+  }, {
+    "type" : "image",
+    "id" : 690,
+    "page number" : 3,
+    "bounding box" : [ 487.75, 77.5, 565.25, 86.75 ]
+  }, {
+    "type" : "image",
+    "id" : 691,
+    "page number" : 3,
+    "bounding box" : [ 667.0, 77.5, 676.25, 86.75 ]
+  }, {
+    "type" : "image",
+    "id" : 640,
+    "page number" : 3,
+    "bounding box" : [ -367.875, 77.5, 398.0, 86.0 ]
+  }, {
+    "type" : "heading",
+    "id" : 575,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 11.25, 66.75, 135.527, 77.43 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Learn More on realpython.com/search:"
+  }, {
+    "type" : "image",
+    "id" : 692,
+    "page number" : 3,
+    "bounding box" : [ 487.75, 63.25, 541.25, 72.5 ]
+  }, {
+    "type" : "image",
+    "id" : 693,
+    "page number" : 3,
+    "bounding box" : [ 667.0, 63.25, 676.25, 72.5 ]
+  }, {
+    "type" : "heading",
+    "id" : 641,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 248.437, 57.0, 372.715, 67.68 ],
+    "heading level" : 3,
+    "font" : "SourceSans3-SemiBold",
+    "font size" : 7.5,
+    "text color" : "[0.0941, 0.2078, 0.298]",
+    "content" : "Learn More on realpython.com/search:"
+  }, {
+    "type" : "paragraph",
+    "id" : 577,
+    "page number" : 3,
+    "bounding box" : [ 13.172, 56.4, 183.747, 66.546 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.412,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "comprehensions ∙ data structures ∙ generators"
+  }, {
+    "type" : "image",
+    "id" : 576,
+    "page number" : 3,
+    "bounding box" : [ 10.75, 57.25, 69.5, 66.5 ]
+  }, {
+    "type" : "image",
+    "id" : 578,
+    "page number" : 3,
+    "bounding box" : [ 75.25, 57.25, 137.75, 66.5 ]
+  }, {
+    "type" : "image",
+    "id" : 579,
+    "page number" : 3,
+    "bounding box" : [ 142.75, 57.25, 186.5, 66.5 ]
+  }, {
+    "type" : "image",
+    "id" : 694,
+    "page number" : 3,
+    "bounding box" : [ 667.0, 49.0, 684.5, 58.25 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 695,
+    "page number" : 3,
+    "bounding box" : [ 667.664, 49.171, 683.867, 58.073 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.75,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "None"
+  }, {
+    "type" : "paragraph",
+    "id" : 643,
+    "page number" : 3,
+    "bounding box" : [ 250.359, 46.65, 351.668, 56.796 ],
+    "font" : "RobotoMono-Regular",
+    "font size" : 6.412,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "import ∙ modules ∙ packages"
+  }, {
+    "type" : "image",
+    "id" : 642,
+    "page number" : 3,
+    "bounding box" : [ 247.75, 47.5, 275.75, 56.75 ]
+  }, {
+    "type" : "image",
+    "id" : 644,
+    "page number" : 3,
+    "bounding box" : [ 281.5, 47.5, 313.25, 56.75 ]
+  }, {
+    "type" : "image",
+    "id" : 645,
+    "page number" : 3,
+    "bounding box" : [ 318.25, 47.5, 353.75, 56.75 ]
+  }, {
+    "type" : "footer",
+    "id" : 732,
+    "page number" : 3,
+    "bounding box" : [ 337.441, 8.25, 633.803, 18.93 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 6,
+      "page number" : 3,
+      "bounding box" : [ 337.441, 8.25, 633.803, 18.93 ],
+      "heading level" : 2,
+      "font" : "SourceSans3-Bold",
+      "font size" : 7.5,
+      "text color" : "[1.0, 1.0, 1.0]",
+      "content" : "Continue your learning journey and become a Python expert at realpython.com/start-here"
+    } ]
+  } ]
+}

@@ -1,0 +1,491 @@
+{
+  "file name" : "git-cheat-sheet-education.pdf",
+  "number of pages" : 2,
+  "author" : null,
+  "title" : "git-cheat-sheet-education",
+  "creation date" : "D:20140224195805Z00'00'",
+  "modification date" : "D:20140224195805Z00'00'",
+  "kids" : [ {
+    "type" : "heading",
+    "id" : 1,
+    "level" : "Doctitle",
+    "page number" : 1,
+    "bounding box" : [ 38.917, 693.026, 222.997, 724.874 ],
+    "heading level" : 1,
+    "font" : "ApexNew-Book",
+    "font size" : 24.0,
+    "text color" : "[0.0, 0.0, 0.0, 0.0]",
+    "content" : "GIT CHEAT SHEET"
+  }, {
+    "type" : "heading",
+    "id" : 27,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 35.429, 585.388, 575.969, 635.312 ],
+    "heading level" : 3,
+    "font" : "ApexNew-Book",
+    "font size" : 12.0,
+    "text color" : "[0.681, 0.614, 0.61, 0.813]",
+    "content" : "Git is the free and open source distributed version control system that's responsible for everything GitHub related that happens locally on your computer. This cheat sheet features the most important and commonly used Git commands for easy reference."
+  }, {
+    "type" : "image",
+    "id" : 26,
+    "page number" : 1,
+    "bounding box" : [ 36.148, 619.879, 575.954, 632.119 ]
+  }, {
+    "type" : "image",
+    "id" : 28,
+    "page number" : 1,
+    "bounding box" : [ 36.209, 603.0, 575.955, 615.12 ]
+  }, {
+    "type" : "image",
+    "id" : 29,
+    "page number" : 1,
+    "bounding box" : [ 36.148, 586.0, 229.096, 598.12 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 30,
+    "page number" : 1,
+    "bounding box" : [ 36.0, 476.939, 285.282, 537.429 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.639, 0.603, 0.585, 0.72]",
+    "content" : "INSTALLATION & GUIS With platform speciﬁc installers for Git, GitHub also provides the ease of staying up-to-date with the latest releases of the command line tool while providing a graphical user interface for day-to-day interaction, review, and repository synchronization."
+  }, {
+    "type" : "paragraph",
+    "id" : 31,
+    "page number" : 1,
+    "bounding box" : [ 36.0, 444.539, 140.805, 468.137 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.639, 0.603, 0.585, 0.72]",
+    "content" : "GitHub for Windows https://windows.github.com"
+  }, {
+    "type" : "paragraph",
+    "id" : 32,
+    "page number" : 1,
+    "bounding box" : [ 36.0, 347.339, 275.328, 435.737 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.639, 0.603, 0.585, 0.72]",
+    "content" : "GitHub for Mac https://mac.github.com For Linux and Solaris platforms, the latest release is available on the oﬃcial Git web site. Git for All Platforms http://git-scm.com"
+  }, {
+    "type" : "image",
+    "id" : 13,
+    "page number" : 1,
+    "bounding box" : [ 35.668, 93.843, 302.444, 330.279 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 10,
+    "page number" : 1,
+    "bounding box" : [ 36.0, 292.565, 266.877, 320.655 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.639, 0.603, 0.585, 0.72]",
+    "content" : "SETUP Conﬁguring user information used across all local repositories"
+  }, {
+    "type" : "image",
+    "id" : 14,
+    "page number" : 1,
+    "bounding box" : [ 35.668, 57.343, 302.444, 293.779 ]
+  }, {
+    "type" : "image",
+    "id" : 11,
+    "page number" : 1,
+    "bounding box" : [ 35.667, 247.624, 301.953, 284.123 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 12,
+    "page number" : 1,
+    "bounding box" : [ 40.5, 178.765, 295.398, 279.704 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "git config --global user.name “[firstname lastname]” set a name that is identiﬁable for credit when review version history git config --global user.email “[valid-email]” set an email address that will be associated with each history marker git config --global color.ui auto set automatic command line coloring for Git for easy reviewing"
+  }, {
+    "type" : "image",
+    "id" : 18,
+    "page number" : 1,
+    "bounding box" : [ 35.668, -80.352, 302.444, 156.472 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 15,
+    "page number" : 1,
+    "bounding box" : [ 36.0, 117.364, 276.705, 145.454 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.639, 0.603, 0.585, 0.72]",
+    "content" : "SETUP & INIT Conﬁguring user information, initializing and cloning repositories"
+  }, {
+    "type" : "image",
+    "id" : 16,
+    "page number" : 1,
+    "bounding box" : [ 35.667, 73.623, 301.953, 110.123 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 17,
+    "page number" : 1,
+    "bounding box" : [ 40.5, 41.265, 261.846, 105.704 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "git init initialize an existing directory as a Git repository git clone [url] retrieve an entire repository from a hosted location via URL"
+  }, {
+    "type" : "paragraph",
+    "id" : 2,
+    "page number" : 1,
+    "bounding box" : [ 310.5, 509.44, 490.374, 537.53 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.639, 0.603, 0.585, 0.72]",
+    "content" : "STAGE & SNAPSHOT Working with snapshots and the Git staging area"
+  }, {
+    "type" : "image",
+    "id" : 3,
+    "page number" : 1,
+    "bounding box" : [ 310.167, 464.499, 576.453, 500.998 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 4,
+    "page number" : 1,
+    "bounding box" : [ 315.0, 288.14, 571.185, 496.579 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "git status show modiﬁed ﬁles in working directory, staged for your next commit git add [file] add a ﬁle as it looks now to your next commit (stage) git reset [file] unstage a ﬁle while retaining the changes in working directory git diff diﬀ of what is changed but not staged git diff --staged diﬀ of what is staged but not yet committed git commit -m “[descriptive message]” commit your staged content as a new commit snapshot"
+  }, {
+    "type" : "image",
+    "id" : 5,
+    "page number" : 1,
+    "bounding box" : [ 310.167, 428.499, 576.453, 464.998 ]
+  }, {
+    "type" : "image",
+    "id" : 6,
+    "page number" : 1,
+    "bounding box" : [ 310.167, 392.499, 576.453, 428.998 ]
+  }, {
+    "type" : "image",
+    "id" : 9,
+    "page number" : 1,
+    "bounding box" : [ 310.168, 166.718, 576.944, 403.154 ]
+  }, {
+    "type" : "image",
+    "id" : 7,
+    "page number" : 1,
+    "bounding box" : [ 310.167, 356.498, 576.453, 392.998 ]
+  }, {
+    "type" : "image",
+    "id" : 8,
+    "page number" : 1,
+    "bounding box" : [ 310.167, 320.499, 576.453, 356.997 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 19,
+    "page number" : 1,
+    "bounding box" : [ 310.5, 225.81, 567.396, 253.899 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.639, 0.603, 0.585, 0.72]",
+    "content" : "BRANCH & MERGE Isolating work in branches, changing context, and integrating changes"
+  }, {
+    "type" : "image",
+    "id" : 20,
+    "page number" : 1,
+    "bounding box" : [ 310.167, 180.867, 576.453, 217.367 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 21,
+    "page number" : 1,
+    "bounding box" : [ 315.0, 40.508, 569.457, 212.948 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "git branch list your branches. a * will appear next to the currently active branch git branch [branch-name] create a new branch at the current commit git checkout switch to another branch and check it out into your working directory git merge [branch] merge the speciﬁed branch’s history into the current one git log show all commits in the current branch’s history"
+  }, {
+    "type" : "image",
+    "id" : 22,
+    "page number" : 1,
+    "bounding box" : [ 310.167, 144.867, 576.453, 181.367 ]
+  }, {
+    "type" : "image",
+    "id" : 25,
+    "page number" : 1,
+    "bounding box" : [ 310.168, -80.913, 576.944, 155.523 ]
+  }, {
+    "type" : "image",
+    "id" : 23,
+    "page number" : 1,
+    "bounding box" : [ 310.167, 109.242, 576.444, 145.367 ]
+  }, {
+    "type" : "image",
+    "id" : 24,
+    "page number" : 1,
+    "bounding box" : [ 310.167, 72.867, 576.453, 109.367 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 57,
+    "page number" : 2,
+    "bounding box" : [ 35.621, 659.614, 198.953, 687.704 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.639, 0.603, 0.585, 0.72]",
+    "content" : "INSPECT & COMPARE Examining logs, diﬀs and object information"
+  }, {
+    "type" : "paragraph",
+    "id" : 36,
+    "page number" : 2,
+    "bounding box" : [ 310.223, 659.614, 565.949, 687.704 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.639, 0.603, 0.585, 0.72]",
+    "content" : "SHARE & UPDATE Retrieving updates from another repository and updating local repos"
+  }, {
+    "type" : "image",
+    "id" : 58,
+    "page number" : 2,
+    "bounding box" : [ 35.288, 614.673, 301.574, 651.173 ]
+  }, {
+    "type" : "image",
+    "id" : 37,
+    "page number" : 2,
+    "bounding box" : [ 309.89, 614.673, 576.176, 651.172 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 59,
+    "page number" : 2,
+    "bounding box" : [ 40.121, 474.314, 253.609, 646.754 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "git log show the commit history for the currently active branch git log branchB..branchA show the commits on branchA that are not on branchB git log --follow [file] show the commits that changed ﬁle, even across renames git diff branchB...branchA show the diﬀ of what is in branchA that is not in branchB git show [SHA] show any object in Git in human-readable format"
+  }, {
+    "type" : "paragraph",
+    "id" : 38,
+    "page number" : 2,
+    "bounding box" : [ 314.723, 474.314, 568.739, 646.753 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "git remote add [alias] [url] add a git URL as an alias git fetch [alias] fetch down all the branches from that Git remote git merge [alias]/[branch] merge a remote branch into your current branch to bring it up to date git push [alias] [branch] Transmit local branch commits to the remote repository branch git pull fetch and merge any commits from the tracking remote branch"
+  }, {
+    "type" : "image",
+    "id" : 60,
+    "page number" : 2,
+    "bounding box" : [ 35.288, 578.673, 301.574, 615.172 ]
+  }, {
+    "type" : "image",
+    "id" : 39,
+    "page number" : 2,
+    "bounding box" : [ 309.89, 578.673, 576.176, 615.172 ]
+  }, {
+    "type" : "image",
+    "id" : 63,
+    "page number" : 2,
+    "bounding box" : [ 35.289, 352.892, 302.065, 589.328 ]
+  }, {
+    "type" : "image",
+    "id" : 42,
+    "page number" : 2,
+    "bounding box" : [ 309.89, 352.892, 576.667, 589.328 ]
+  }, {
+    "type" : "image",
+    "id" : 61,
+    "page number" : 2,
+    "bounding box" : [ 35.288, 542.673, 301.574, 579.172 ]
+  }, {
+    "type" : "image",
+    "id" : 40,
+    "page number" : 2,
+    "bounding box" : [ 309.89, 542.673, 576.176, 579.172 ]
+  }, {
+    "type" : "image",
+    "id" : 62,
+    "page number" : 2,
+    "bounding box" : [ 35.288, 506.673, 301.574, 543.172 ]
+  }, {
+    "type" : "image",
+    "id" : 41,
+    "page number" : 2,
+    "bounding box" : [ 309.89, 506.673, 576.176, 543.172 ]
+  }, {
+    "type" : "image",
+    "id" : 44,
+    "page number" : 2,
+    "bounding box" : [ 35.289, 257.142, 302.065, 493.578 ]
+  }, {
+    "type" : "image",
+    "id" : 56,
+    "page number" : 2,
+    "bounding box" : [ 309.89, 223.418, 576.667, 459.854 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 53,
+    "page number" : 2,
+    "bounding box" : [ 310.223, 421.89, 528.14, 449.979 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.639, 0.603, 0.585, 0.72]",
+    "content" : "REWRITE HISTORY Rewriting branches, updating commits and clearing history"
+  }, {
+    "type" : "paragraph",
+    "id" : 43,
+    "page number" : 2,
+    "bounding box" : [ 35.621, 421.314, 190.475, 449.404 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.639, 0.603, 0.585, 0.72]",
+    "content" : "TRACKING PATH CHANGES Versioning ﬁle removes and path changes"
+  }, {
+    "type" : "image",
+    "id" : 47,
+    "page number" : 2,
+    "bounding box" : [ 35.289, 184.443, 302.065, 420.879 ]
+  }, {
+    "type" : "image",
+    "id" : 54,
+    "page number" : 2,
+    "bounding box" : [ 309.89, 377.322, 576.167, 413.447 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 55,
+    "page number" : 2,
+    "bounding box" : [ 314.723, 344.84, 546.707, 409.028 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "git rebase [branch] apply any commits of current branch ahead of speciﬁed one git reset --hard [commit] clear staging area, rewrite working tree from speciﬁed commit"
+  }, {
+    "type" : "paragraph",
+    "id" : 45,
+    "page number" : 2,
+    "bounding box" : [ 40.121, 303.068, 421.51, 407.004 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "git rm [file] delete the ﬁle from project and stage the removal for commit git mv [existing-path] [new-path] change an existing ﬁle path and stage the move git log --stat -M show all commit logs with indication of any paths that moved TEMPORARY COMMITS"
+  }, {
+    "type" : "image",
+    "id" : 46,
+    "page number" : 2,
+    "bounding box" : [ 35.288, 338.223, 301.574, 374.723 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 48,
+    "page number" : 2,
+    "bounding box" : [ 310.223, 141.621, 569.117, 302.563 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "Temporarily store modiﬁed, tracked ﬁles in order to change branches git stash Save modiﬁed and staged changes git stash list list stack-order of stashed ﬁle changes git stash pop write working from top of stash stack git stash drop discard the changes from top of stash stack"
+  }, {
+    "type" : "image",
+    "id" : 49,
+    "page number" : 2,
+    "bounding box" : [ 309.724, 245.979, 576.009, 282.479 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 64,
+    "page number" : 2,
+    "bounding box" : [ 35.621, 252.87, 235.7, 280.96 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.639, 0.603, 0.585, 0.72]",
+    "content" : "IGNORING PATTERNS Preventing unintentional staging or commiting of ﬁles"
+  }, {
+    "type" : "image",
+    "id" : 65,
+    "page number" : 2,
+    "bounding box" : [ 35.121, 20.432, 301.898, 257.256 ]
+  }, {
+    "type" : "image",
+    "id" : 52,
+    "page number" : 2,
+    "bounding box" : [ 309.724, 20.344, 576.501, 256.489 ]
+  }, {
+    "type" : "image",
+    "id" : 50,
+    "page number" : 2,
+    "bounding box" : [ 309.724, 209.979, 576.009, 246.478 ]
+  }, {
+    "type" : "image",
+    "id" : 67,
+    "page number" : 2,
+    "bounding box" : [ 36.169, 205.508, 301.398, 245.675 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 68,
+    "page number" : 2,
+    "bounding box" : [ 39.954, 231.649, 63.954, 240.609 ],
+    "font" : "PTMono-Bold",
+    "font size" : 8.0,
+    "text color" : "[]",
+    "content" : "logs/"
+  }, {
+    "type" : "paragraph",
+    "id" : 69,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 39.954, 212.449, 83.154, 231.009 ],
+    "font" : "PTMono-Bold",
+    "font size" : 8.0,
+    "text color" : "[]",
+    "content" : "*.notes pattern*/"
+  }, {
+    "type" : "image",
+    "id" : 51,
+    "page number" : 2,
+    "bounding box" : [ 309.724, 173.979, 576.009, 210.478 ]
+  }, {
+    "type" : "image",
+    "id" : 70,
+    "page number" : 2,
+    "bounding box" : [ 36.169, 175.282, 301.907, 207.008 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 71,
+    "page number" : 2,
+    "bounding box" : [ 40.582, 179.97, 293.311, 202.713 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.0, 0.0, 0.0, 1.0]",
+    "content" : "Save a ﬁle with desired patterns as.gitignorewith either direct string matches or wildcard globs."
+  }, {
+    "type" : "paragraph",
+    "id" : 66,
+    "page number" : 2,
+    "bounding box" : [ 39.954, 142.048, 251.154, 170.487 ],
+    "font" : "PTMono-Bold",
+    "font size" : 8.0,
+    "text color" : "[]",
+    "content" : "git config --global core.excludesfile [file] system wide ignore pattern for all local repositories"
+  }, {
+    "type" : "heading",
+    "id" : 34,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 105.842, 63.023, 190.578, 89.764 ],
+    "heading level" : 2,
+    "font" : "ApexNew-Book",
+    "font size" : 20.151,
+    "text color" : "[0.639, 0.603, 0.585, 0.72]",
+    "content" : "Education"
+  }, {
+    "type" : "paragraph",
+    "id" : 33,
+    "page number" : 2,
+    "bounding box" : [ 398.257, 32.537, 490.057, 59.339 ],
+    "font" : "ApexNew-Bold",
+    "font size" : 9.0,
+    "text color" : "[0.639, 0.603, 0.585, 0.72]",
+    "content" : "education@github.com education.github.com"
+  }, {
+    "type" : "paragraph",
+    "id" : 35,
+    "page number" : 2,
+    "bounding box" : [ 42.25, 32.991, 305.905, 55.734 ],
+    "font" : "ApexNew-Book",
+    "font size" : 9.0,
+    "text color" : "[0.639, 0.603, 0.585, 0.72]",
+    "content" : "Teach and learn better, together. GitHub is free for students and teachers. Discounts available for other educational uses."
+  } ]
+}

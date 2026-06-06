@@ -1,0 +1,3126 @@
+{
+  "file name" : "CheatSheet.pdf",
+  "number of pages" : 13,
+  "author" : "",
+  "title" : "",
+  "creation date" : "D:20090429202433-07'00'",
+  "modification date" : "D:20090429202433-07'00'",
+  "kids" : [ {
+    "type" : "heading",
+    "id" : 30,
+    "level" : "Doctitle",
+    "page number" : 1,
+    "bounding box" : [ 14.4, 579.757, 178.962, 601.379 ],
+    "heading level" : 1,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 17.215,
+    "text color" : "[0.0]",
+    "content" : "Haskell Cheat Sheet"
+  }, {
+    "type" : "paragraph",
+    "id" : 31,
+    "page number" : 1,
+    "bounding box" : [ 14.4, 483.225, 262.157, 567.732 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "This cheat sheet lays out the fundamental elements of the Haskell language: syntax, keywords and other elements. It is presented as both an executable Haskell ﬁle and a printable document. Load the source into your favorite interpreter to play with code samples shown."
+  }, {
+    "type" : "heading",
+    "id" : 32,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 14.4, 413.042, 103.705, 458.342 ],
+    "heading level" : 2,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 14.346,
+    "text color" : "[0.0]",
+    "content" : "Basic Syntax Comments"
+  }, {
+    "type" : "paragraph",
+    "id" : 33,
+    "page number" : 1,
+    "bounding box" : [ 14.4, 347.442, 262.163, 403.496 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "A single line comment starts with ‘ ’ and extends to the end of the line. Multi-line comments start with ’ ’ and extend to ’ ’. Comments can be nested."
+  }, {
+    "type" : "paragraph",
+    "id" : 34,
+    "page number" : 1,
+    "bounding box" : [ 14.4, 289.745, 262.162, 345.799 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Comments above function deﬁnitions should start with ‘ ’ and those next to parameter types with ‘ ’ for compatibility with Haddock1, a system for documenting Haskell code."
+  }, {
+    "type" : "heading",
+    "id" : 35,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 14.4, 253.04, 107.902, 268.055 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Reserved Words"
+  }, {
+    "type" : "paragraph",
+    "id" : 36,
+    "page number" : 1,
+    "bounding box" : [ 14.4, 201.666, 262.157, 243.494 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "The following words are reserved in Haskell. It is a syntax error to give a variable or a function one of these names."
+  }, {
+    "type" : "paragraph",
+    "id" : 37,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 30.763, 79.577, 36.218, 183.866 ],
+    "font" : "CMSY10",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "• • • • • • •"
+  }, {
+    "type" : "paragraph",
+    "id" : 38,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 116.67, 79.577, 122.125, 183.866 ],
+    "font" : "CMSY10",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "• • • • • • •"
+  }, {
+    "type" : "image",
+    "id" : 55,
+    "page number" : 1,
+    "bounding box" : [ 14.4, 82.678, 113.502, 83.076 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 56,
+    "page number" : 1,
+    "bounding box" : [ 26.554, 73.281, 30.041, 81.831 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 6.974,
+    "text color" : "[0.0]",
+    "content" : "1"
+  }, {
+    "type" : "paragraph",
+    "id" : 39,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 202.577, 93.804, 208.032, 183.866 ],
+    "font" : "CMSY10",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "• • • • • •"
+  }, {
+    "type" : "heading",
+    "id" : 40,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 272.121, 582.971, 313.307, 597.986 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Strings"
+  }, {
+    "type" : "list",
+    "id" : 41,
+    "level" : "2",
+    "page number" : 1,
+    "bounding box" : [ 288.485, 525.814, 519.885, 575.027 ],
+    "numbering style" : "unordered",
+    "number of list items" : 2,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 288.485, 554.267, 519.885, 575.027 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – Unicode string, sugar for",
+      "kids" : [ {
+        "type" : "paragraph",
+        "id" : 29,
+        "level" : "3",
+        "page number" : 1,
+        "bounding box" : [ 372.678, 547.427, 375.405, 560.801 ],
+        "font" : "URWPalladioL-Roma",
+        "font size" : 10.909,
+        "text color" : "[0.0]",
+        "content" : "."
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 288.485, 525.814, 407.266, 546.574 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – Single character.",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "paragraph",
+    "id" : 42,
+    "page number" : 1,
+    "bounding box" : [ 272.121, 474.025, 519.878, 515.918 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Multi-line Strings Normally, it is a syntax error if a string has any actual newline characters. That is, this is a syntax error:"
+  }, {
+    "type" : "paragraph",
+    "id" : 43,
+    "page number" : 1,
+    "bounding box" : [ 272.121, 414.711, 470.205, 428.085 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Backslashes (‘ ’) can “escape” a newline:"
+  }, {
+    "type" : "paragraph",
+    "id" : 44,
+    "page number" : 1,
+    "bounding box" : [ 272.121, 340.93, 519.878, 368.771 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "The area between the backslashes is ignored. Newlines in the string must be represented explicitly:"
+  }, {
+    "type" : "heading",
+    "id" : 49,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 529.842, 582.972, 609.44, 597.987 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Enumerations"
+  }, {
+    "type" : "list",
+    "id" : 50,
+    "level" : "2",
+    "page number" : 1,
+    "bounding box" : [ 546.206, 427.693, 777.605, 569.107 ],
+    "numbering style" : "unordered",
+    "number of list items" : 6,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.206, 548.347, 768.631, 569.107 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – List of numbers – . . . .",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.206, 534.121, 724.355, 554.881 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – Inﬁnite list of numbers –",
+      "kids" : [ {
+        "type" : "paragraph",
+        "id" : 28,
+        "level" : "3",
+        "page number" : 1,
+        "bounding box" : [ 585.437, 527.28, 606.306, 540.654 ],
+        "font" : "URWPalladioL-Roma",
+        "font size" : 10.909,
+        "text color" : "[0.0]",
+        "content" : ". . . ."
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.206, 498.826, 777.605, 526.427 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – Empty list; ranges only go forwards.",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.206, 477.214, 713.197, 497.974 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – Negative integers.",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.206, 456.146, 777.6, 483.747 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – Syntax error; need for negatives.",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.206, 427.693, 777.598, 455.294 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – List from 1 to 100 by 2, -1 to 100 by 4.",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "paragraph",
+    "id" : 51,
+    "page number" : 1,
+    "bounding box" : [ 529.842, 396.319, 777.596, 423.92 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "In fact, any value which is in the class can be used:"
+  }, {
+    "type" : "list",
+    "id" : 52,
+    "level" : "2",
+    "page number" : 1,
+    "bounding box" : [ 546.206, 322.265, 777.606, 392.546 ],
+    "numbering style" : "unordered",
+    "number of list items" : 3,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.206, 371.786, 743.221, 392.546 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – List of characters –",
+      "kids" : [ {
+        "type" : "paragraph",
+        "id" : 27,
+        "level" : "3",
+        "page number" : 1,
+        "bounding box" : [ 557.251, 364.945, 589.39, 378.319 ],
+        "font" : "URWPalladioL-Roma",
+        "font size" : 10.909,
+        "text color" : "[0.0]",
+        "content" : ". . . ."
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.206, 343.333, 729.488, 364.093 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – .",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.206, 322.265, 777.606, 349.866 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – List of values (from ).",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "paragraph",
+    "id" : 45,
+    "page number" : 1,
+    "bounding box" : [ 272.121, 281.856, 414.073, 295.23 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "That is, evaluates to:"
+  }, {
+    "type" : "paragraph",
+    "id" : 46,
+    "page number" : 1,
+    "bounding box" : [ 272.121, 236.769, 407.156, 250.143 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "While evaluates to:"
+  }, {
+    "type" : "heading",
+    "id" : 47,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 272.121, 168.276, 323.756, 183.291 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Numbers"
+  }, {
+    "type" : "list",
+    "id" : 48,
+    "level" : "2",
+    "page number" : 1,
+    "bounding box" : [ 288.485, 82.665, 436.42, 160.332 ],
+    "numbering style" : "unordered",
+    "number of list items" : 5,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 288.485, 139.572, 436.42, 160.332 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – Integer or Floating point",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 288.485, 125.345, 430.496, 146.105 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – Floating point",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 288.485, 111.118, 381.338, 131.878 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – syntax error",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 288.485, 96.891, 366.578, 117.651 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – sugar for",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 288.485, 82.665, 372.215, 103.425 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – sugar for",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "heading",
+    "id" : 53,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 529.842, 272.49, 610.48, 287.505 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Lists & Tuples"
+  }, {
+    "type" : "list",
+    "id" : 54,
+    "level" : "2",
+    "page number" : 1,
+    "bounding box" : [ 546.206, 88.758, 777.601, 258.626 ],
+    "numbering style" : "unordered",
+    "number of list items" : 7,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.206, 237.866, 633.102, 258.626 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – Empty list.",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.206, 223.639, 715.605, 244.399 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – List of three numbers.",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.206, 202.572, 777.596, 230.172 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – Alternate way to write lists using “cons” ( ) and “nil” ( ).",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.206, 174.118, 777.598, 201.719 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – List of three characters (strings are lists).",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.206, 145.665, 777.599, 173.266 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – List of characters (same as ).",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.206, 117.212, 777.6, 144.812 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – 2-element tuple of a number and a string.",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.206, 88.758, 777.601, 116.359 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• – 4-element tuple of two functions, a number and a character.",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 57,
+    "page number" : 1,
+    "bounding box" : [ 14.4, 55.662, 777.6, 56.06 ]
+  }, {
+    "type" : "footer",
+    "id" : 58,
+    "page number" : 1,
+    "bounding box" : [ 17.433, 39.025, 398.727, 52.728 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 14,
+      "page number" : 1,
+      "bounding box" : [ 17.433, 39.025, 398.727, 52.728 ],
+      "heading level" : 5,
+      "font" : "URWPalladioL-Roma",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "c 2009 Justin Bailey. 1"
+    } ]
+  }, {
+    "type" : "heading",
+    "id" : 59,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 14.4, 582.971, 236.552, 597.986 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "“Layout” rule, braces and semi-colons."
+  }, {
+    "type" : "paragraph",
+    "id" : 60,
+    "page number" : 2,
+    "bounding box" : [ 14.4, 503.236, 262.157, 573.516 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Haskell can be written using braces and semicolons, just like C. However, no one does. Instead, the “layout” rule is used, where spaces represent scope. The general rule is: always indent. When the compiler complains, indent more."
+  }, {
+    "type" : "paragraph",
+    "id" : 66,
+    "page number" : 2,
+    "bounding box" : [ 272.121, 540.874, 519.883, 596.994 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Let Indent the body of the let at least one space from the ﬁrst deﬁnition in the . If appears on its own line, the body of any deﬁnition must appear in the column after the let:"
+  }, {
+    "type" : "paragraph",
+    "id" : 74,
+    "page number" : 2,
+    "bounding box" : [ 529.842, 569.328, 777.603, 596.994 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Nesting & Capture Nested matching and binding are also allowed."
+  }, {
+    "type" : "paragraph",
+    "id" : 75,
+    "page number" : 2,
+    "bounding box" : [ 574.086, 507.13, 701.995, 520.504 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Figure 1: The deﬁnition of"
+  }, {
+    "type" : "paragraph",
+    "id" : 61,
+    "page number" : 2,
+    "bounding box" : [ 14.4, 439.355, 262.162, 481.248 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Braces and semi-colons Semi-colons terminate an expression, and braces represent scope. They can be used after several keywords: ,"
+  }, {
+    "type" : "paragraph",
+    "id" : 62,
+    "page number" : 2,
+    "bounding box" : [ 14.4, 396.675, 262.157, 438.502 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : ", and . They cannot be used when deﬁning a function body. For example, the below will not compile."
+  }, {
+    "type" : "paragraph",
+    "id" : 67,
+    "page number" : 2,
+    "bounding box" : [ 272.121, 412.475, 519.88, 468.529 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "As can be seen above, the keyword must also be in the same column as . Finally, when multiple deﬁnitions are given, all identiﬁers must appear in the same column."
+  }, {
+    "type" : "heading",
+    "id" : 68,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 272.121, 374.766, 339.677, 392.785 ],
+    "heading level" : 2,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 14.346,
+    "text color" : "[0.0]",
+    "content" : "Keywords"
+  }, {
+    "type" : "paragraph",
+    "id" : 76,
+    "page number" : 2,
+    "bounding box" : [ 529.842, 463.55, 777.598, 491.151 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Using we can determine if any choice was given using a nested match:"
+  }, {
+    "type" : "paragraph",
+    "id" : 63,
+    "page number" : 2,
+    "bounding box" : [ 14.4, 343.581, 154.953, 356.955 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "However, this will work ﬁne:"
+  }, {
+    "type" : "paragraph",
+    "id" : 69,
+    "page number" : 2,
+    "bounding box" : [ 272.121, 335.862, 519.878, 363.462 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Haskell keywords are listed below, in alphabetical order."
+  }, {
+    "type" : "paragraph",
+    "id" : 77,
+    "page number" : 2,
+    "bounding box" : [ 529.842, 331.552, 777.599, 359.153 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Binding can be used to manipulate the value matched:"
+  }, {
+    "type" : "paragraph",
+    "id" : 64,
+    "page number" : 2,
+    "bounding box" : [ 14.4, 252.781, 262.153, 280.448 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Function Deﬁnition Indent the body at least one space from the function name:"
+  }, {
+    "type" : "heading",
+    "id" : 70,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 272.121, 304.349, 300.694, 319.364 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Case"
+  }, {
+    "type" : "paragraph",
+    "id" : 71,
+    "page number" : 2,
+    "bounding box" : [ 272.121, 254.577, 519.878, 296.405 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "is similar to a statement in C# or Java, but can match a pattern: the shape of the value being inspected. Consider a simple data type:"
+  }, {
+    "type" : "paragraph",
+    "id" : 65,
+    "page number" : 2,
+    "bounding box" : [ 14.4, 142.781, 262.157, 198.835 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Unless a clause is present. In that case, indent the where clause at least one space from the function name and any function bodies at least one space from the keyword:"
+  }, {
+    "type" : "paragraph",
+    "id" : 72,
+    "page number" : 2,
+    "bounding box" : [ 272.121, 183.085, 519.875, 210.686 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "can be used to determine which choice was given:"
+  }, {
+    "type" : "paragraph",
+    "id" : 78,
+    "page number" : 2,
+    "bounding box" : [ 529.842, 134.926, 777.602, 176.82 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Matching Order Matching proceeds from top to bottom. If is reordered as follows, the ﬁrst pattern will always succeed:"
+  }, {
+    "type" : "paragraph",
+    "id" : 73,
+    "page number" : 2,
+    "bounding box" : [ 272.121, 68.913, 519.878, 96.514 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "As with pattern-matching in function deﬁnitions, the ‘ ’ token is a “wildcard” matching any value."
+  }, {
+    "type" : "image",
+    "id" : 79,
+    "page number" : 2,
+    "bounding box" : [ 14.4, 55.662, 777.6, 56.06 ]
+  }, {
+    "type" : "footer",
+    "id" : 80,
+    "page number" : 2,
+    "bounding box" : [ 17.433, 39.025, 398.727, 52.728 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 15,
+      "page number" : 2,
+      "bounding box" : [ 17.433, 39.025, 398.727, 52.728 ],
+      "heading level" : 5,
+      "font" : "URWPalladioL-Roma",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "c 2009 Justin Bailey. 2"
+    } ]
+  }, {
+    "type" : "paragraph",
+    "id" : 81,
+    "page number" : 3,
+    "bounding box" : [ 14.4, 482.317, 262.161, 552.663 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Guards Guards, or conditional matches, can be used in cases just like function deﬁnitions. The only difference is the use of the instead of . Here is a simple function which does a case-insensitive string match:"
+  }, {
+    "type" : "paragraph",
+    "id" : 86,
+    "page number" : 3,
+    "bounding box" : [ 272.121, 491.025, 519.878, 561.306 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Notice that the declaration only gives the type signature of the function—no implementation is given here (with some exceptions, see “Defaults” on page 3). Continuing, we can deﬁne several instances:"
+  }, {
+    "type" : "heading",
+    "id" : 93,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 529.842, 582.972, 555.749, 597.987 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Data"
+  }, {
+    "type" : "paragraph",
+    "id" : 94,
+    "page number" : 3,
+    "bounding box" : [ 529.842, 547.427, 777.606, 575.027 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "So-called algebraic data types can be declared as follows:"
+  }, {
+    "type" : "paragraph",
+    "id" : 95,
+    "page number" : 3,
+    "bounding box" : [ 588.184, 504.958, 777.6, 518.572 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "is the type’s name. and"
+  }, {
+    "type" : "paragraph",
+    "id" : 96,
+    "page number" : 3,
+    "bounding box" : [ 529.842, 434.064, 777.602, 504.345 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "are values of the type and are called constructors. Multiple constructors are separated with the ‘ ’ character. Note that type and constructor names must start with a capital letter. It is a syntax error otherwise."
+  }, {
+    "type" : "paragraph",
+    "id" : 87,
+    "page number" : 3,
+    "bounding box" : [ 272.121, 391.326, 420.291, 404.7 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Evaluating gives:"
+  }, {
+    "type" : "heading",
+    "id" : 82,
+    "level" : "Subtitle",
+    "page number" : 3,
+    "bounding box" : [ 14.4, 346.312, 46.296, 361.327 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Class"
+  }, {
+    "type" : "paragraph",
+    "id" : 83,
+    "page number" : 3,
+    "bounding box" : [ 14.4, 168.5, 262.158, 338.368 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "A Haskell function is deﬁned to work on a certain type or set of types and cannot be deﬁned more than once. Most languages support the idea of “overloading”, where a function can have different behavior depending on the type of its arguments. Haskell accomplishes overloading through and declarations. A deﬁnes one or more functions that can be applied to any types which are members (i.e., instances) of that class. A class is analogous to an interface in Java or C#, and instances to a concrete implementation of the interface."
+  }, {
+    "type" : "paragraph",
+    "id" : 84,
+    "page number" : 3,
+    "bounding box" : [ 14.4, 97.366, 262.162, 167.647 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "A class must be declared with one or more type variables. Technically, Haskell 98 only allows one type variable, but most implementations of Haskell support so-called multi-parameter type classes, which allow more than one type variable."
+  }, {
+    "type" : "paragraph",
+    "id" : 85,
+    "page number" : 3,
+    "bounding box" : [ 14.4, 68.913, 262.162, 96.514 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "We can deﬁne a class which supplies a ﬂavor for a given type:"
+  }, {
+    "type" : "paragraph",
+    "id" : 88,
+    "page number" : 3,
+    "bounding box" : [ 272.121, 334.307, 391.199, 347.681 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "While gives:"
+  }, {
+    "type" : "paragraph",
+    "id" : 89,
+    "page number" : 3,
+    "bounding box" : [ 272.121, 197.065, 519.882, 281.639 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Defaults Default implementations can be given for functions in a class. These are useful when certain functions can be deﬁned in terms of others in the class. A default is deﬁned by giving a body to one of the member functions. The canonical example is , which deﬁnes (not equal) in terms of"
+  }, {
+    "type" : "paragraph",
+    "id" : 90,
+    "level" : "3",
+    "page number" : 3,
+    "bounding box" : [ 283.395, 182.839, 292.788, 196.213 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : ". :"
+  }, {
+    "type" : "paragraph",
+    "id" : 91,
+    "page number" : 3,
+    "bounding box" : [ 272.121, 97.367, 519.878, 110.741 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Recursive deﬁnitions can be created, but an"
+  }, {
+    "type" : "paragraph",
+    "id" : 92,
+    "page number" : 3,
+    "bounding box" : [ 272.121, 68.913, 519.879, 96.514 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "declaration must always implement at least one class member."
+  }, {
+    "type" : "paragraph",
+    "id" : 97,
+    "page number" : 3,
+    "bounding box" : [ 529.842, 360.956, 777.599, 417.076 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Constructors with Arguments The type above is not very interesting except as an enumeration. Constructors that take arguments can be declared, allowing more information to be stored:"
+  }, {
+    "type" : "paragraph",
+    "id" : 98,
+    "page number" : 3,
+    "bounding box" : [ 529.842, 276.047, 777.599, 317.875 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Notice that the arguments for each constructor are type names, not constructors. That means this kind of declaration is illegal:"
+  }, {
+    "type" : "paragraph",
+    "id" : 99,
+    "page number" : 3,
+    "bounding box" : [ 529.842, 233.818, 712.861, 247.192 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "instead, the type must be used:"
+  }, {
+    "type" : "paragraph",
+    "id" : 100,
+    "page number" : 3,
+    "bounding box" : [ 529.842, 139.596, 777.6, 195.716 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Type and Constructor Names Type and constructor names can be the same, because they will never be used in a place that would cause confusion. For example:"
+  }, {
+    "type" : "paragraph",
+    "id" : 101,
+    "page number" : 3,
+    "bounding box" : [ 529.842, 68.913, 777.6, 110.741 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "which declares a type named with two constructors, and . Using this type in a function makes the difference clear:"
+  }, {
+    "type" : "image",
+    "id" : 102,
+    "page number" : 3,
+    "bounding box" : [ 14.4, 55.662, 777.6, 56.06 ]
+  }, {
+    "type" : "footer",
+    "id" : 103,
+    "page number" : 3,
+    "bounding box" : [ 17.433, 39.025, 398.727, 52.728 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 16,
+      "page number" : 3,
+      "bounding box" : [ 17.433, 39.025, 398.727, 52.728 ],
+      "heading level" : 5,
+      "font" : "URWPalladioL-Roma",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "c 2009 Justin Bailey. 3"
+    } ]
+  }, {
+    "type" : "paragraph",
+    "id" : 104,
+    "page number" : 4,
+    "bounding box" : [ 14.4, 532.772, 262.163, 560.612 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Some literature refers to this practice as type punning."
+  }, {
+    "type" : "paragraph",
+    "id" : 112,
+    "page number" : 4,
+    "bounding box" : [ 272.121, 540.874, 519.878, 596.928 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "same accessor function for values of the same type, but that can be dangerous if the accessor is not used by all constructors. Consider this rather contrived example:"
+  }, {
+    "type" : "paragraph",
+    "id" : 105,
+    "page number" : 4,
+    "bounding box" : [ 14.4, 473.93, 262.158, 515.824 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Type Variables Declaring so-called polymorphic data types is as easy as adding type variables in the declaration:"
+  }, {
+    "type" : "paragraph",
+    "id" : 118,
+    "page number" : 4,
+    "bounding box" : [ 529.842, 526.648, 777.605, 596.928 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Because seven of these operations are so common, Haskell provides the keyword which will automatically implement the typeclass on the associated type. The seven supported typeclasses are: , , , , , , and"
+  }, {
+    "type" : "paragraph",
+    "id" : 119,
+    "level" : "3",
+    "page number" : 4,
+    "bounding box" : [ 569.303, 512.421, 572.03, 525.795 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "."
+  }, {
+    "type" : "paragraph",
+    "id" : 120,
+    "page number" : 4,
+    "bounding box" : [ 529.842, 481.479, 777.606, 509.08 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Two forms of are possible. The ﬁrst is used when a type only derives one class:"
+  }, {
+    "type" : "paragraph",
+    "id" : 106,
+    "page number" : 4,
+    "bounding box" : [ 14.4, 429.752, 262.158, 443.126 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "This declares a type with two constructors,"
+  }, {
+    "type" : "paragraph",
+    "id" : 107,
+    "page number" : 4,
+    "bounding box" : [ 14.4, 387.072, 262.162, 428.899 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "and . The constructor can take an argument of any type, which is represented by the type variable above."
+  }, {
+    "type" : "paragraph",
+    "id" : 108,
+    "page number" : 4,
+    "bounding box" : [ 14.4, 358.618, 262.162, 386.219 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "We can also mix type variables and speciﬁc types in constructors:"
+  }, {
+    "type" : "paragraph",
+    "id" : 113,
+    "page number" : 4,
+    "bounding box" : [ 272.121, 407.835, 519.88, 435.436 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "If is called with a value, a runtime error will occur."
+  }, {
+    "type" : "paragraph",
+    "id" : 114,
+    "page number" : 4,
+    "bounding box" : [ 272.121, 365.011, 519.884, 406.839 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Finally, as explained elsewhere, these names can be used for pattern matching, argument capture and “updating.”"
+  }, {
+    "type" : "paragraph",
+    "id" : 121,
+    "page number" : 4,
+    "bounding box" : [ 529.842, 384.247, 777.599, 411.848 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "The second is used when multiple classes are derived:"
+  }, {
+    "type" : "paragraph",
+    "id" : 109,
+    "page number" : 4,
+    "bounding box" : [ 14.4, 300.213, 262.156, 327.814 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Above, the constructor can take a value of any type and an value."
+  }, {
+    "type" : "paragraph",
+    "id" : 110,
+    "page number" : 4,
+    "bounding box" : [ 14.4, 212.678, 262.159, 283.025 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Record Syntax Constructor arguments can be declared either positionally, as above, or using record syntax, which gives a name to each argument. For example, here we declare a type with names for appropriate arguments:"
+  }, {
+    "type" : "paragraph",
+    "id" : 115,
+    "page number" : 4,
+    "bounding box" : [ 272.121, 247.915, 519.878, 346.715 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Class Constraints Data types can be declared with class constraints on the type variables, but this practice is generally discouraged. It is generally better to hide the “raw” data constructors using the module system and instead export “smart” constructors which apply appropriate constraints. In any case, the syntax used is:"
+  }, {
+    "type" : "paragraph",
+    "id" : 111,
+    "page number" : 4,
+    "bounding box" : [ 14.4, 68.913, 262.164, 153.421 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "These names are referred to as selector or accessor functions and are just that, functions. They must start with a lowercase letter or underscore and cannot have the same name as another function in scope. Thus the “ ” preﬁx on each above. Multiple constructors (of the same type) can use the"
+  }, {
+    "type" : "paragraph",
+    "id" : 116,
+    "page number" : 4,
+    "bounding box" : [ 272.121, 157.556, 519.878, 199.383 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "This declares a type which has one type variable argument. Valid types are those in the class."
+  }, {
+    "type" : "paragraph",
+    "id" : 117,
+    "page number" : 4,
+    "bounding box" : [ 272.121, 68.913, 519.882, 139.26 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Deriving Many types have common operations which are tedious to deﬁne yet necessary, such as the ability to convert to and from strings, compare for equality, or order in a sequence. These capabilities are deﬁned as typeclasses in Haskell."
+  }, {
+    "type" : "paragraph",
+    "id" : 122,
+    "page number" : 4,
+    "bounding box" : [ 529.842, 287.015, 777.602, 314.615 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "It is a syntax error to specify for any other classes besides the six given above."
+  }, {
+    "type" : "heading",
+    "id" : 123,
+    "level" : "Subtitle",
+    "page number" : 4,
+    "bounding box" : [ 529.842, 239.892, 577.675, 254.907 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Deriving"
+  }, {
+    "type" : "paragraph",
+    "id" : 124,
+    "page number" : 4,
+    "bounding box" : [ 529.842, 199.304, 777.6, 226.905 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "See the section on under the keyword on page 4."
+  }, {
+    "type" : "heading",
+    "id" : 125,
+    "level" : "Subtitle",
+    "page number" : 4,
+    "bounding box" : [ 529.842, 152.182, 545.778, 167.197 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Do"
+  }, {
+    "type" : "paragraph",
+    "id" : 126,
+    "page number" : 4,
+    "bounding box" : [ 529.842, 68.913, 777.606, 139.194 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "The keyword indicates that the code to follow will be in a monadic context. Statements are separated by newlines, assignment is indicated by , and a form is introduce which does not require the keyword."
+  }, {
+    "type" : "image",
+    "id" : 127,
+    "page number" : 4,
+    "bounding box" : [ 14.4, 55.662, 777.6, 56.06 ]
+  }, {
+    "type" : "footer",
+    "id" : 128,
+    "page number" : 4,
+    "bounding box" : [ 17.433, 39.025, 398.727, 52.728 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 17,
+      "page number" : 4,
+      "bounding box" : [ 17.433, 39.025, 398.727, 52.728 ],
+      "heading level" : 5,
+      "font" : "URWPalladioL-Roma",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "c 2009 Justin Bailey. 4"
+    } ]
+  }, {
+    "type" : "paragraph",
+    "id" : 129,
+    "page number" : 5,
+    "bounding box" : [ 14.4, 540.874, 262.159, 596.994 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "If and IO can be tricky when used with IO. Conceptually it is no different from an in any other context, but intuitively it is hard to develop. Consider the function from"
+  }, {
+    "type" : "paragraph",
+    "id" : 130,
+    "page number" : 5,
+    "bounding box" : [ 104.595, 526.648, 107.322, 540.022 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : ":"
+  }, {
+    "type" : "paragraph",
+    "id" : 131,
+    "page number" : 5,
+    "bounding box" : [ 14.4, 481.836, 200.045, 495.21 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "The statement has this “signature”:"
+  }, {
+    "type" : "paragraph",
+    "id" : 132,
+    "page number" : 5,
+    "bounding box" : [ 14.4, 394.344, 262.16, 450.398 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "That is, it takes a value and evaluates to some other value based on the condition. From the type signatures it is clear that cannot be used directly by :"
+  }, {
+    "type" : "paragraph",
+    "id" : 136,
+    "page number" : 5,
+    "bounding box" : [ 272.121, 473.859, 519.882, 515.686 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Again, notice where is. We don’t put it in the statement. Instead we use it once at the end of the function."
+  }, {
+    "type" : "paragraph",
+    "id" : 137,
+    "page number" : 5,
+    "bounding box" : [ 272.121, 412.798, 519.88, 454.692 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Multiple ’s When using with or , another is required if either branch has multiple statements. An example with :"
+  }, {
+    "type" : "paragraph",
+    "id" : 142,
+    "page number" : 5,
+    "bounding box" : [ 529.842, 461.574, 777.602, 517.629 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "An alternative syntax uses semi-colons and braces. A is still required, but indention is unnecessary. This code shows a example, but the principle applies to as well:"
+  }, {
+    "type" : "paragraph",
+    "id" : 133,
+    "page number" : 5,
+    "bounding box" : [ 14.4, 264.171, 262.159, 320.225 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "That is, results in an value, while wants a value. Instead, the correct value must be “extracted” by running the IO action:"
+  }, {
+    "type" : "paragraph",
+    "id" : 138,
+    "level" : "4",
+    "page number" : 5,
+    "bounding box" : [ 301.057, 317.044, 348.392, 330.418 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "-- no ’do’."
+  }, {
+    "type" : "paragraph",
+    "id" : 139,
+    "level" : "5",
+    "page number" : 5,
+    "bounding box" : [ 308.291, 274.364, 452.782, 287.738 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "-- multiple statements require"
+  }, {
+    "type" : "paragraph",
+    "id" : 140,
+    "level" : "5",
+    "page number" : 5,
+    "bounding box" : [ 308.291, 260.137, 372.491, 273.511 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "-- a new ’do’."
+  }, {
+    "type" : "paragraph",
+    "id" : 134,
+    "page number" : 5,
+    "bounding box" : [ 14.4, 133.999, 262.157, 175.827 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Notice the use of . Because puts us “inside” the monad, we can’t “get out” except through . Note that we don’t have to use"
+  }, {
+    "type" : "paragraph",
+    "id" : 135,
+    "page number" : 5,
+    "bounding box" : [ 14.4, 105.546, 262.159, 133.147 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "inline here—we can also use to evaluate the condition and get a value ﬁrst:"
+  }, {
+    "type" : "paragraph",
+    "id" : 141,
+    "page number" : 5,
+    "bounding box" : [ 272.121, 164.668, 368.131, 178.042 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "And one with :"
+  }, {
+    "type" : "paragraph",
+    "id" : 143,
+    "page number" : 5,
+    "bounding box" : [ 529.842, 258.131, 707.294, 294.464 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Export See the section on on page 6."
+  }, {
+    "type" : "heading",
+    "id" : 144,
+    "level" : "Subtitle",
+    "page number" : 5,
+    "bounding box" : [ 529.842, 226.439, 603.474, 241.454 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "If, Then, Else"
+  }, {
+    "type" : "paragraph",
+    "id" : 145,
+    "page number" : 5,
+    "bounding box" : [ 529.842, 162.44, 777.599, 218.494 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Remember, always “returns” a value. It is an expression, not just a control ﬂow statement. This function tests if the string given starts with a lower case letter and, if so, converts it to upper case:"
+  }, {
+    "type" : "paragraph",
+    "id" : 146,
+    "level" : "4",
+    "page number" : 5,
+    "bounding box" : [ 537.076, 140.047, 665.967, 153.421 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "-- Use pattern-matching to"
+  }, {
+    "type" : "paragraph",
+    "id" : 147,
+    "level" : "4",
+    "page number" : 5,
+    "bounding box" : [ 537.076, 125.82, 632.149, 139.194 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "-- get ﬁrst character"
+  }, {
+    "type" : "image",
+    "id" : 148,
+    "page number" : 5,
+    "bounding box" : [ 14.4, 55.662, 777.6, 56.06 ]
+  }, {
+    "type" : "footer",
+    "id" : 149,
+    "page number" : 5,
+    "bounding box" : [ 17.433, 39.025, 398.727, 52.728 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 18,
+      "page number" : 5,
+      "bounding box" : [ 17.433, 39.025, 398.727, 52.728 ],
+      "heading level" : 5,
+      "font" : "URWPalladioL-Roma",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "c 2009 Justin Bailey. 5"
+    } ]
+  }, {
+    "type" : "paragraph",
+    "id" : 150,
+    "level" : "4",
+    "page number" : 6,
+    "bounding box" : [ 21.634, 583.554, 176.336, 596.928 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "-- Anything else is empty string"
+  }, {
+    "type" : "paragraph",
+    "id" : 151,
+    "page number" : 6,
+    "bounding box" : [ 14.4, 515.627, 191.852, 552.091 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Import See the section on on page 6."
+  }, {
+    "type" : "paragraph",
+    "id" : 152,
+    "page number" : 6,
+    "bounding box" : [ 14.4, 461.927, 104.249, 498.391 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "In See on page 6."
+  }, {
+    "type" : "paragraph",
+    "id" : 153,
+    "page number" : 6,
+    "bounding box" : [ 14.4, 408.227, 209.433, 444.69 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Inﬁx, inﬁxl and inﬁxr See the section on operators on page 11."
+  }, {
+    "type" : "paragraph",
+    "id" : 154,
+    "page number" : 6,
+    "bounding box" : [ 14.4, 354.526, 186.215, 390.99 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Instance See the section on on page 3."
+  }, {
+    "type" : "paragraph",
+    "id" : 158,
+    "page number" : 6,
+    "bounding box" : [ 272.121, 569.328, 519.878, 596.928 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "silly example which gives the sum of a list of numbers, their average, and their median:"
+  }, {
+    "type" : "paragraph",
+    "id" : 164,
+    "page number" : 6,
+    "bounding box" : [ 529.842, 540.874, 777.599, 596.928 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "A module can only be deﬁned in one ﬁle, though its exports may come from multiple sources. To make a Haskell ﬁle a module, just add a module declaration at the top:"
+  }, {
+    "type" : "paragraph",
+    "id" : 159,
+    "page number" : 6,
+    "bounding box" : [ 272.121, 390.92, 519.879, 447.04 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Deconstruction The left-hand side of a definition can also destructure its argument, in case sub-components are to be accessed. This deﬁnition would extract the ﬁrst three characters from a string"
+  }, {
+    "type" : "paragraph",
+    "id" : 165,
+    "page number" : 6,
+    "bounding box" : [ 529.842, 424.959, 777.599, 509.466 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Module names must start with a capital letter but otherwise can include periods, numbers and underscores. Periods are used to give sense of structure, and Haskell compilers will use them as indications of the directory a particular source ﬁle is, but otherwise they have no meaning."
+  }, {
+    "type" : "paragraph",
+    "id" : 166,
+    "page number" : 6,
+    "bounding box" : [ 529.842, 396.505, 777.605, 424.106 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "The Haskell community has standardized a set of top-level module names such as , ,"
+  }, {
+    "type" : "paragraph",
+    "id" : 167,
+    "page number" : 6,
+    "bounding box" : [ 529.842, 353.825, 777.601, 395.653 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : ", etc. Be sure to consult them for an appropriate place for your own module if you plan on releasing it to the public."
+  }, {
+    "type" : "heading",
+    "id" : 155,
+    "level" : "Subtitle",
+    "page number" : 6,
+    "bounding box" : [ 14.4, 322.275, 32.333, 337.29 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Let"
+  }, {
+    "type" : "paragraph",
+    "id" : 156,
+    "page number" : 6,
+    "bounding box" : [ 14.4, 187.012, 262.163, 314.2 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Local functions can be deﬁned within a function using . The keyword must always be followed by . The must appear in the same column as the keyword. Functions deﬁned have access to all other functions and variables within the same scope (including those deﬁned by ). In this example, multiplies its argument by , which was passed to the original . is used by map to give the multiples of x up to 10:"
+  }, {
+    "type" : "paragraph",
+    "id" : 160,
+    "page number" : 6,
+    "bounding box" : [ 272.121, 265.281, 519.878, 292.881 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Note that this is different than the following, which only works if the string has three characters:"
+  }, {
+    "type" : "paragraph",
+    "id" : 161,
+    "page number" : 6,
+    "bounding box" : [ 272.121, 135.687, 438.299, 172.02 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Of See the section on on page 2."
+  }, {
+    "type" : "paragraph",
+    "id" : 168,
+    "page number" : 6,
+    "bounding box" : [ 529.842, 266.229, 777.604, 336.575 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Imports The Haskell standard libraries are divided into a number of modules. The functionality provided by those libraries is accessed by importing into your source ﬁle. To import all everything exported by a library, just use the module name:"
+  }, {
+    "type" : "paragraph",
+    "id" : 169,
+    "page number" : 6,
+    "bounding box" : [ 529.842, 150.313, 777.604, 234.82 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Everything means everything: functions, data types and constructors, class declarations, and even other modules imported and then exported by the that module. Importing selectively is accomplished by giving a list of names to import. For example, here we import some functions from :"
+  }, {
+    "type" : "paragraph",
+    "id" : 157,
+    "page number" : 6,
+    "bounding box" : [ 14.4, 68.913, 262.161, 124.967 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "“functions” with no arguments are actually constants and, once evaluated, will not evaluate again. This is useful for capturing common portions of your function and re-using them. Here is a"
+  }, {
+    "type" : "heading",
+    "id" : 162,
+    "level" : "Subtitle",
+    "page number" : 6,
+    "bounding box" : [ 272.121, 104.458, 313.964, 119.473 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Module"
+  }, {
+    "type" : "paragraph",
+    "id" : 163,
+    "page number" : 6,
+    "bounding box" : [ 272.121, 68.913, 519.878, 96.514 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "A module is a compilation unit which exports functions, types, classes, instances, and other modules."
+  }, {
+    "type" : "paragraph",
+    "id" : 170,
+    "page number" : 6,
+    "bounding box" : [ 529.842, 91.304, 777.599, 118.905 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Data types can imported in a number of ways. We can just import the type and no constructors:"
+  }, {
+    "type" : "image",
+    "id" : 171,
+    "page number" : 6,
+    "bounding box" : [ 14.4, 55.662, 777.6, 56.06 ]
+  }, {
+    "type" : "footer",
+    "id" : 172,
+    "page number" : 6,
+    "bounding box" : [ 17.433, 39.025, 398.727, 52.728 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 19,
+      "page number" : 6,
+      "bounding box" : [ 17.433, 39.025, 398.727, 52.728 ],
+      "heading level" : 5,
+      "font" : "URWPalladioL-Roma",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "c 2009 Justin Bailey. 6"
+    } ]
+  }, {
+    "type" : "paragraph",
+    "id" : 173,
+    "page number" : 7,
+    "bounding box" : [ 14.4, 555.101, 262.159, 596.928 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Of course, this prevents our module from patternmatching on the values of type . We can import one or more constructors explicitly:"
+  }, {
+    "type" : "paragraph",
+    "id" : 174,
+    "page number" : 7,
+    "bounding box" : [ 14.4, 489.76, 262.157, 517.361 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "All constructors for a given type can also be imported:"
+  }, {
+    "type" : "paragraph",
+    "id" : 175,
+    "page number" : 7,
+    "bounding box" : [ 14.4, 424.42, 262.157, 452.02 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "We can also import types and classes deﬁned in the module:"
+  }, {
+    "type" : "heading",
+    "id" : 180,
+    "level" : "Subtitle",
+    "page number" : 7,
+    "bounding box" : [ 272.121, 583.292, 519.876, 596.994 ],
+    "heading level" : 4,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Instance Declarations It must be noted that"
+  }, {
+    "type" : "paragraph",
+    "id" : 181,
+    "page number" : 7,
+    "bounding box" : [ 272.121, 540.874, 519.884, 582.702 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "declarations cannot be excluded from import: all declarations in a module will be imported when the module is imported."
+  }, {
+    "type" : "paragraph",
+    "id" : 182,
+    "page number" : 7,
+    "bounding box" : [ 272.121, 431.984, 519.878, 516.557 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Qualiﬁed Imports The names exported by a module (i.e., functions, types, operators, etc.) can have a preﬁx attached through qualiﬁed imports. This is particularly useful for modules which have a large number of functions having the same name as functions. is a good example:"
+  }, {
+    "type" : "paragraph",
+    "id" : 186,
+    "page number" : 7,
+    "bounding box" : [ 529.842, 498.194, 777.604, 596.995 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Exports If an export list is not provided, then all functions, types, constructors, etc. will be available to anyone importing the module. Note that any imported modules are not exported in this case. Limiting the names exported is accomplished by adding a parenthesized list of names before the keyword:"
+  }, {
+    "type" : "paragraph",
+    "id" : 176,
+    "page number" : 7,
+    "bounding box" : [ 14.4, 344.852, 262.157, 386.68 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "In the case of classes, we can import the functions deﬁned for a class using syntax similar to importing constructors for data types:"
+  }, {
+    "type" : "paragraph",
+    "id" : 183,
+    "page number" : 7,
+    "bounding box" : [ 272.121, 332.793, 519.878, 388.847 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "This form requires any function, type, constructor or other name exported by to now be preﬁxed with the alias (i.e., ) given. Here is one way to remove all duplicates from a list:"
+  }, {
+    "type" : "paragraph",
+    "id" : 187,
+    "page number" : 7,
+    "bounding box" : [ 529.842, 333.969, 777.599, 404.25 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "The same syntax as used for importing can be used here to specify which functions, types, constructors, and classes are exported, with a few differences. If a module imports another module, it can also export that module:"
+  }, {
+    "type" : "paragraph",
+    "id" : 177,
+    "page number" : 7,
+    "bounding box" : [ 14.4, 251.058, 262.158, 292.886 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Note that, unlike data types, all class functions are imported unless explicitly excluded. To only import the class, we use this syntax:"
+  }, {
+    "type" : "paragraph",
+    "id" : 184,
+    "page number" : 7,
+    "bounding box" : [ 272.121, 219.376, 519.878, 275.43 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "A second form does not create an alias. Instead, the preﬁx becomes the module name. We can write a simple function to check if a string is all upper case:"
+  }, {
+    "type" : "paragraph",
+    "id" : 178,
+    "page number" : 7,
+    "bounding box" : [ 14.4, 148.481, 262.162, 204.601 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Exclusions If most, but not all, names are to be imported from a module, it would be tedious to list them all. For that reason, imports can also be speciﬁed via the keyword:"
+  }, {
+    "type" : "paragraph",
+    "id" : 188,
+    "page number" : 7,
+    "bounding box" : [ 529.842, 169.744, 777.599, 225.798 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "A module can even re-export itself, which can be useful when all local deﬁnitions and a given imported module are to be exported. Below we export ourselves and , but not :"
+  }, {
+    "type" : "paragraph",
+    "id" : 179,
+    "page number" : 7,
+    "bounding box" : [ 14.4, 68.913, 262.157, 96.514 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Except for instance declarations, any type, function, constructor or class can be hidden."
+  }, {
+    "type" : "paragraph",
+    "id" : 185,
+    "page number" : 7,
+    "bounding box" : [ 272.121, 68.913, 519.878, 124.967 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Except for the preﬁx speciﬁed, qualiﬁed imports support the same syntax as normal imports. The name imported can be limited in the same ways as described above."
+  }, {
+    "type" : "image",
+    "id" : 189,
+    "page number" : 7,
+    "bounding box" : [ 14.4, 55.662, 777.6, 56.06 ]
+  }, {
+    "type" : "footer",
+    "id" : 190,
+    "page number" : 7,
+    "bounding box" : [ 17.433, 39.025, 398.727, 52.728 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 20,
+      "page number" : 7,
+      "bounding box" : [ 17.433, 39.025, 398.727, 52.728 ],
+      "heading level" : 5,
+      "font" : "URWPalladioL-Roma",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "c 2009 Justin Bailey. 7"
+    } ]
+  }, {
+    "type" : "heading",
+    "id" : 191,
+    "level" : "Subtitle",
+    "page number" : 8,
+    "bounding box" : [ 14.4, 582.971, 63.38, 597.986 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Newtype"
+  }, {
+    "type" : "paragraph",
+    "id" : 192,
+    "page number" : 8,
+    "bounding box" : [ 14.4, 475.473, 262.163, 574.207 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "While introduces new values and just creates synonyms, falls somewhere between. The syntax for is quite restrictedonly one constructor can be deﬁned, and that constructor can only take one argument. Continuing the above example, we can deﬁne a type as follows:"
+  }, {
+    "type" : "paragraph",
+    "id" : 193,
+    "page number" : 8,
+    "bounding box" : [ 14.4, 368.541, 262.157, 410.369 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "As opposed to , the and “values” on are not just values. The typechecker treats them as entirely new types. That means our"
+  }, {
+    "type" : "paragraph",
+    "id" : 194,
+    "page number" : 8,
+    "bounding box" : [ 14.4, 340.088, 262.164, 367.689 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "function from above would not compile. The following produces a type error:"
+  }, {
+    "type" : "paragraph",
+    "id" : 195,
+    "page number" : 8,
+    "bounding box" : [ 14.4, 261.609, 262.157, 289.21 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Instead, we must use pattern-matching to get to the “values” to which we apply :"
+  }, {
+    "type" : "paragraph",
+    "id" : 198,
+    "page number" : 8,
+    "bounding box" : [ 272.121, 555.101, 519.88, 596.928 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Finally, it should be noted that any clause which can be attached to a declaration can also be used when declaring a ."
+  }, {
+    "type" : "paragraph",
+    "id" : 199,
+    "page number" : 8,
+    "bounding box" : [ 272.121, 500.468, 356.333, 537.164 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Return See on page 4."
+  }, {
+    "type" : "heading",
+    "id" : 200,
+    "level" : "Subtitle",
+    "page number" : 8,
+    "bounding box" : [ 272.121, 467.516, 299.307, 482.531 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Type"
+  }, {
+    "type" : "paragraph",
+    "id" : 201,
+    "page number" : 8,
+    "bounding box" : [ 272.121, 374.702, 519.88, 459.21 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "This keyword deﬁnes a type synonym (i.e., alias). This keyword does not deﬁne a new type, like or . It is useful for documenting code but otherwise has no effect on the actual type of a given function or value. For example, a data type could be deﬁned as:"
+  }, {
+    "type" : "paragraph",
+    "id" : 202,
+    "page number" : 8,
+    "bounding box" : [ 272.121, 284.028, 519.878, 340.082 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "where the ﬁrst constructor argument represents their ﬁrst name and the second their last. However, the order and meaning of the two arguments is not very clear. A declaration can help:"
+  }, {
+    "type" : "paragraph",
+    "id" : 196,
+    "page number" : 8,
+    "bounding box" : [ 14.4, 168.904, 262.157, 210.732 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "The key observation is that this keyword does not introduce a new value; instead it introduces a new type. This gives us two very useful properties:"
+  }, {
+    "type" : "list",
+    "id" : 197,
+    "level" : "2",
+    "page number" : 8,
+    "bounding box" : [ 30.764, 68.913, 262.157, 167.647 ],
+    "numbering style" : "unordered",
+    "number of list items" : 2,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 8,
+      "bounding box" : [ 30.764, 111.593, 262.157, 167.647 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• No runtime cost is associated with the new type, since it does not actually produce new values. In other words, newtypes are absolutely free!",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 8,
+      "bounding box" : [ 30.764, 68.913, 262.157, 110.74 ],
+      "font" : "CMSY10",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "• The type-checker is able to enforce that common types such as or are used in restricted ways, speciﬁed by the programmer.",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "paragraph",
+    "id" : 203,
+    "page number" : 8,
+    "bounding box" : [ 272.121, 179.128, 519.883, 220.955 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Because introduces a synonym, type checking is not affected in any way. The function , deﬁned as:"
+  }, {
+    "type" : "paragraph",
+    "id" : 204,
+    "page number" : 8,
+    "bounding box" : [ 272.121, 131.134, 364.423, 144.508 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "which has the type"
+  }, {
+    "type" : "paragraph",
+    "id" : 205,
+    "page number" : 8,
+    "bounding box" : [ 272.121, 68.913, 519.879, 96.514 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "can be used on values with the type or just as easily:"
+  }, {
+    "type" : "paragraph",
+    "id" : 206,
+    "page number" : 8,
+    "bounding box" : [ 529.842, 474.331, 777.599, 558.839 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Because is just a synonym, it cannot declare multiple constructors the way can. Type variables can be used, but there cannot be more than the type variables declared with the original type. That means a synonym like the following is possible:"
+  }, {
+    "type" : "paragraph",
+    "id" : 207,
+    "page number" : 8,
+    "bounding box" : [ 529.842, 426.437, 588.653, 439.811 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "but this not:"
+  }, {
+    "type" : "paragraph",
+    "id" : 208,
+    "page number" : 8,
+    "bounding box" : [ 529.842, 364.316, 777.596, 391.917 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Note that fewer type variables can be used, which useful in certain instances."
+  }, {
+    "type" : "heading",
+    "id" : 209,
+    "level" : "Subtitle",
+    "page number" : 8,
+    "bounding box" : [ 529.842, 331.432, 566.377, 346.447 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Where"
+  }, {
+    "type" : "paragraph",
+    "id" : 210,
+    "page number" : 8,
+    "bounding box" : [ 529.842, 210.187, 777.605, 323.148 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Similar to , deﬁnes local functions and constants. The scope of a deﬁnition is the current function. If a function is broken into multiple deﬁnitions through pattern-matching, then the scope of a particular clause only applies to that deﬁnition. For example, the function below has a different meaning depending on the arguments given to the function :"
+  }, {
+    "type" : "paragraph",
+    "id" : 211,
+    "page number" : 8,
+    "bounding box" : [ 529.842, 68.913, 777.599, 125.033 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Where vs. Let A clause can only be deﬁned at the level of a function deﬁnition. Usually, that is identical to the scope of deﬁnition. The only difference is when guards are being used. The"
+  }, {
+    "type" : "image",
+    "id" : 212,
+    "page number" : 8,
+    "bounding box" : [ 14.4, 55.662, 777.6, 56.06 ]
+  }, {
+    "type" : "footer",
+    "id" : 213,
+    "page number" : 8,
+    "bounding box" : [ 17.433, 39.025, 398.727, 52.728 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 21,
+      "page number" : 8,
+      "bounding box" : [ 17.433, 39.025, 398.727, 52.728 ],
+      "heading level" : 5,
+      "font" : "URWPalladioL-Roma",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "c 2009 Justin Bailey. 8"
+    } ]
+  }, {
+    "type" : "paragraph",
+    "id" : 214,
+    "page number" : 9,
+    "bounding box" : [ 14.4, 554.861, 262.156, 596.928 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "scope of the clause extends over all guards. In contrast, the scope of a expression is only the current function clause and guard, if any."
+  }, {
+    "type" : "heading",
+    "id" : 215,
+    "level" : "Subtitle",
+    "page number" : 9,
+    "bounding box" : [ 14.4, 517.467, 134.506, 535.486 ],
+    "heading level" : 2,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 14.346,
+    "text color" : "[0.0]",
+    "content" : "Declarations, Etc."
+  }, {
+    "type" : "paragraph",
+    "id" : 228,
+    "page number" : 9,
+    "bounding box" : [ 272.121, 531.828, 519.881, 573.655 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "and recalling the deﬁnition of from page 2 we can match on nested values when is present:"
+  }, {
+    "type" : "paragraph",
+    "id" : 233,
+    "page number" : 9,
+    "bounding box" : [ 529.842, 540.875, 777.606, 596.929 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "bind the value to. This facility is used below to bind the head of the list in for display, while also binding the entire list to in order to compute its length:"
+  }, {
+    "type" : "paragraph",
+    "id" : 216,
+    "page number" : 9,
+    "bounding box" : [ 14.4, 464.336, 262.157, 506.163 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "The following section details rules on function declarations, list comprehensions, and other areas of the language."
+  }, {
+    "type" : "heading",
+    "id" : 217,
+    "level" : "Subtitle",
+    "page number" : 9,
+    "bounding box" : [ 14.4, 432.899, 123.324, 447.914 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Function Deﬁnition"
+  }, {
+    "type" : "paragraph",
+    "id" : 218,
+    "page number" : 9,
+    "bounding box" : [ 14.4, 397.354, 262.157, 424.955 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Functions are deﬁned by declaring their name, any arguments, and an equals sign:"
+  }, {
+    "type" : "paragraph",
+    "id" : 229,
+    "page number" : 9,
+    "bounding box" : [ 272.121, 414.128, 519.878, 470.182 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Pattern-matching also allows values to be assigned to variables. For example, this function determines if the string given is empty or not. If not, the value bound to is converted to lower case:"
+  }, {
+    "type" : "paragraph",
+    "id" : 234,
+    "page number" : 9,
+    "bounding box" : [ 529.842, 416.69, 777.604, 458.583 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Guards Boolean functions can be used as “guards” in function deﬁnitions along with pattern matching. An example without pattern matching:"
+  }, {
+    "type" : "paragraph",
+    "id" : 219,
+    "page number" : 9,
+    "bounding box" : [ 14.4, 340.825, 262.157, 368.426 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "All functions names must start with a lowercase letter or “ ”. It is a syntax error otherwise."
+  }, {
+    "type" : "paragraph",
+    "id" : 220,
+    "page number" : 9,
+    "bounding box" : [ 14.4, 267.709, 262.161, 323.829 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Pattern Matching Multiple “clauses” of a function can be deﬁned by “pattern-matching” on the values of arguments. Here, the the function has four separate cases:"
+  }, {
+    "type" : "paragraph",
+    "id" : 221,
+    "level" : "4",
+    "page number" : 9,
+    "bounding box" : [ 21.634, 246.558, 212.936, 259.932 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "-- Matches when the string \"y\" is given."
+  }, {
+    "type" : "paragraph",
+    "id" : 222,
+    "level" : "4",
+    "page number" : 9,
+    "bounding box" : [ 21.634, 218.105, 213.22, 231.479 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "-- Matches when the string \"n\" is given."
+  }, {
+    "type" : "paragraph",
+    "id" : 223,
+    "level" : "4",
+    "page number" : 9,
+    "bounding box" : [ 21.634, 189.651, 185.86, 203.025 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "-- Matches when string beginning"
+  }, {
+    "type" : "paragraph",
+    "id" : 224,
+    "level" : "4",
+    "page number" : 9,
+    "bounding box" : [ 21.634, 175.425, 101.98, 188.799 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "-- with ’y’ given."
+  }, {
+    "type" : "paragraph",
+    "id" : 225,
+    "level" : "4",
+    "page number" : 9,
+    "bounding box" : [ 21.634, 146.971, 200.98, 160.345 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "-- Matches for any other value given."
+  }, {
+    "type" : "paragraph",
+    "id" : 226,
+    "page number" : 9,
+    "bounding box" : [ 14.4, 97.367, 262.162, 124.967 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Note that the ‘ ’ character is a wildcard and matches any value."
+  }, {
+    "type" : "paragraph",
+    "id" : 227,
+    "page number" : 9,
+    "bounding box" : [ 14.4, 68.913, 262.162, 96.514 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Pattern matching can extend to nested values. Assuming this data declaration:"
+  }, {
+    "type" : "paragraph",
+    "id" : 230,
+    "page number" : 9,
+    "bounding box" : [ 272.121, 324.882, 519.883, 366.709 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Note that above is similer to in that it will match anything; the only difference is that the value matched is also given a name."
+  }, {
+    "type" : "paragraph",
+    "id" : 231,
+    "page number" : 9,
+    "bounding box" : [ 272.121, 194.317, 519.883, 308.006 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "n + k Patterns This (sometimes controversial) pattern-matching facility makes it easy to match certain kinds of numeric expressions. The idea is to deﬁne a base case (the “n” portion) with a constant number for matching, and then to deﬁne other matches (the “k” portion) as additives to the base case. Here is a rather inefﬁcient way of testing if a number is even or not:"
+  }, {
+    "type" : "paragraph",
+    "id" : 235,
+    "page number" : 9,
+    "bounding box" : [ 529.842, 315.051, 777.599, 342.652 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Notice – it always evaluates to true and can be used to specify a “default” branch."
+  }, {
+    "type" : "paragraph",
+    "id" : 236,
+    "page number" : 9,
+    "bounding box" : [ 529.842, 272.371, 777.604, 314.198 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Guards can be used with patterns. Here is a function that determines if the ﬁrst character in a string is upper or lower case:"
+  }, {
+    "type" : "paragraph",
+    "id" : 232,
+    "page number" : 9,
+    "bounding box" : [ 272.121, 68.913, 519.884, 125.033 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Argument Capture Argument capture is useful for pattern-matching a value and using it, without declaring an extra variable. Use an ‘ ’ symbol in between the pattern to match and the variable to"
+  }, {
+    "type" : "paragraph",
+    "id" : 237,
+    "page number" : 9,
+    "bounding box" : [ 529.842, 105.506, 777.601, 175.853 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Matching & Guard Order Pattern-matching proceeds in top to bottom order. Similarly, guard expressions are tested from top to bottom. For example, neither of these functions would be very interesting:"
+  }, {
+    "type" : "image",
+    "id" : 238,
+    "page number" : 9,
+    "bounding box" : [ 14.4, 55.662, 777.6, 56.06 ]
+  }, {
+    "type" : "footer",
+    "id" : 239,
+    "page number" : 9,
+    "bounding box" : [ 17.433, 39.025, 398.727, 52.728 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 22,
+      "page number" : 9,
+      "bounding box" : [ 17.433, 39.025, 398.727, 52.728 ],
+      "heading level" : 5,
+      "font" : "URWPalladioL-Roma",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "c 2009 Justin Bailey. 9"
+    } ]
+  }, {
+    "type" : "paragraph",
+    "id" : 240,
+    "page number" : 10,
+    "bounding box" : [ 14.4, 451.325, 262.157, 521.672 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Record Syntax Normally pattern matching occurs based on the position of arguments in the value being matched. Types declared with record syntax, however, can match based on those record names. Given this data type:"
+  }, {
+    "type" : "paragraph",
+    "id" : 241,
+    "page number" : 10,
+    "bounding box" : [ 14.4, 373.864, 155.386, 387.238 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "we can match on only:"
+  }, {
+    "type" : "paragraph",
+    "id" : 242,
+    "page number" : 10,
+    "bounding box" : [ 14.4, 253.722, 262.159, 324.003 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Argument capture is possible with this syntax, although it gets clunky. Continuing the above, we now deﬁne a type and a function to replace values with non-zero components with all black:"
+  }, {
+    "type" : "paragraph",
+    "id" : 243,
+    "level" : "4",
+    "page number" : 10,
+    "bounding box" : [ 21.634, 201.142, 203.783, 214.516 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "-- Color value untouched if green is 0"
+  }, {
+    "type" : "paragraph",
+    "id" : 245,
+    "page number" : 10,
+    "bounding box" : [ 272.121, 569.328, 519.88, 596.928 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "the type of a particular value, even if the value isn’t present."
+  }, {
+    "type" : "paragraph",
+    "id" : 246,
+    "page number" : 10,
+    "bounding box" : [ 289.057, 555.101, 511.264, 568.475 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "For example, deﬁne a class for default values:"
+  }, {
+    "type" : "paragraph",
+    "id" : 247,
+    "page number" : 10,
+    "bounding box" : [ 272.121, 469.121, 519.882, 510.948 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "The idea is you give a value of the right type and it gives you back a default value for that type. Deﬁning instances for basic types is easy:"
+  }, {
+    "type" : "paragraph",
+    "id" : 252,
+    "page number" : 10,
+    "bounding box" : [ 529.842, 540.875, 777.6, 596.929 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "code when using a constructor. has type but, if not enough other information is available, Haskell must be told what is. Some example default values:"
+  }, {
+    "type" : "paragraph",
+    "id" : 253,
+    "level" : "4",
+    "page number" : 10,
+    "bounding box" : [ 537.076, 518.472, 638.389, 531.846 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "-- Return \"Just False\""
+  }, {
+    "type" : "paragraph",
+    "id" : 254,
+    "level" : "4",
+    "page number" : 10,
+    "bounding box" : [ 537.076, 490.019, 623.083, 503.393 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "-- Return \"Just ’ ’\""
+  }, {
+    "type" : "paragraph",
+    "id" : 248,
+    "page number" : 10,
+    "bounding box" : [ 272.121, 312.007, 519.879, 382.288 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "is a littler trickier, because we want to get a default value for the type, but the constructor might be . The following deﬁnition would work, but it’s not optimal since we get when is passed in."
+  }, {
+    "type" : "paragraph",
+    "id" : 249,
+    "page number" : 10,
+    "bounding box" : [ 272.121, 197.574, 519.885, 253.628 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "We’d rather get a default value back instead. Here is where a lazy pattern saves us – we can pretend that we’ve matched and use that to get a default value, even if is given:"
+  }, {
+    "type" : "heading",
+    "id" : 255,
+    "level" : "Subtitle",
+    "page number" : 10,
+    "bounding box" : [ 529.842, 444.098, 652.072, 459.113 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "List Comprehensions"
+  }, {
+    "type" : "paragraph",
+    "id" : 256,
+    "page number" : 10,
+    "bounding box" : [ 529.842, 365.873, 777.6, 436.154 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "A list comprehension consists of four types of elements: generators, guards, local bindings, and targets. A list comprehension creates a list of target values based on the generators and guards given. This comprehension generates all squares:"
+  }, {
+    "type" : "paragraph",
+    "id" : 257,
+    "page number" : 10,
+    "bounding box" : [ 529.842, 292.615, 777.601, 334.442 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "generates a list of all values and puts them in , one by one. creates each element of the list by multiplying by itself."
+  }, {
+    "type" : "paragraph",
+    "id" : 258,
+    "page number" : 10,
+    "bounding box" : [ 529.842, 235.708, 777.605, 291.762 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Guards allow certain elements to be excluded. The following shows how divisors for a given number (excluding itself) can be calculated. Notice how is used in both the guard and target expression."
+  }, {
+    "type" : "paragraph",
+    "id" : 244,
+    "page number" : 10,
+    "bounding box" : [ 14.4, 68.913, 262.159, 153.487 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Lazy Patterns This syntax, also known as irrefutable patterns, allows pattern matches which always succeed. That means any clause using the pattern will succeed, but if it tries to actually use the matched value an error may occur. This is generally useful when an action should be taken on"
+  }, {
+    "type" : "paragraph",
+    "id" : 250,
+    "page number" : 10,
+    "bounding box" : [ 272.121, 97.367, 519.885, 153.421 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "As long as the value is not actually evaluated, we’re safe. None of the base types need to look at (see the “ ” matches they use), so things will work just ﬁne."
+  }, {
+    "type" : "paragraph",
+    "id" : 251,
+    "page number" : 10,
+    "bounding box" : [ 272.121, 68.913, 519.883, 96.514 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "One wrinkle with the above is that we must provide type annotations in the interpreter or the"
+  }, {
+    "type" : "paragraph",
+    "id" : 259,
+    "page number" : 10,
+    "bounding box" : [ 529.842, 119.769, 777.599, 175.823 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Local bindings provide new deﬁnitions for use in the generated expression or subsequent generators and guards. Below, is used to represent the minimum of and :"
+  }, {
+    "type" : "image",
+    "id" : 260,
+    "page number" : 10,
+    "bounding box" : [ 14.4, 55.662, 777.6, 56.06 ]
+  }, {
+    "type" : "footer",
+    "id" : 261,
+    "page number" : 10,
+    "bounding box" : [ 17.433, 39.025, 401.454, 52.728 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 23,
+      "page number" : 10,
+      "bounding box" : [ 17.433, 39.025, 401.454, 52.728 ],
+      "heading level" : 5,
+      "font" : "URWPalladioL-Roma",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "c 2009 Justin Bailey. 10"
+    } ]
+  }, {
+    "type" : "paragraph",
+    "id" : 262,
+    "page number" : 11,
+    "bounding box" : [ 14.4, 531.399, 262.157, 559.0 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Comprehensions are not limited to numbers. Any list will do. All upper case letters can be generated:"
+  }, {
+    "type" : "paragraph",
+    "id" : 277,
+    "page number" : 11,
+    "bounding box" : [ 529.842, 540.875, 777.605, 596.929 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Precedence and associativity make many of the rules of arithmetic work “as expected.” For example, consider these minor updates to the precedence of addition and multiplication:"
+  }, {
+    "type" : "paragraph",
+    "id" : 263,
+    "page number" : 11,
+    "bounding box" : [ 14.4, 441.189, 262.157, 468.789 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Or, to ﬁnd all occurrences of a particular break value in a list (indexing from 0):"
+  }, {
+    "type" : "paragraph",
+    "id" : 268,
+    "page number" : 11,
+    "bounding box" : [ 272.121, 449.479, 519.878, 505.533 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Of course, full pattern matching, guards, etc. are available in this form. Type signatures are a bit different, though. The operator “name” must appear in parentheses:"
+  }, {
+    "type" : "paragraph",
+    "id" : 278,
+    "page number" : 11,
+    "bounding box" : [ 529.842, 453.907, 657.26, 467.281 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "The results are surprising:"
+  }, {
+    "type" : "paragraph",
+    "id" : 269,
+    "page number" : 11,
+    "bounding box" : [ 272.121, 391.907, 519.878, 419.507 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Allowable symbols which can be used to deﬁne operators are:"
+  }, {
+    "type" : "paragraph",
+    "id" : 264,
+    "page number" : 11,
+    "bounding box" : [ 14.4, 336.752, 262.157, 378.579 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "A unique feature of list comprehensions is that pattern matching failures do not cause an error; they are just excluded from the resulting list."
+  }, {
+    "type" : "heading",
+    "id" : 265,
+    "level" : "Subtitle",
+    "page number" : 11,
+    "bounding box" : [ 14.4, 304.115, 71.355, 319.13 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Operators"
+  }, {
+    "type" : "paragraph",
+    "id" : 266,
+    "page number" : 11,
+    "bounding box" : [ 14.4, 211.406, 262.159, 295.913 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "There are very few predeﬁned “operators” in Haskell—most that appear predeﬁned are actually syntax (e.g., “ ”). Instead, operators are simply functions that take two arguments and have special syntactic support. Any so-called operator can be applied as a preﬁx function using parentheses:"
+  }, {
+    "type" : "paragraph",
+    "id" : 267,
+    "page number" : 11,
+    "bounding box" : [ 14.4, 106.969, 262.157, 177.249 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "To deﬁne a new operator, simply deﬁne it as a normal function, except the operator appears between the two arguments. Here’s one which takes inserts a comma between two strings and ensures no extra spaces appear:"
+  }, {
+    "type" : "paragraph",
+    "id" : 270,
+    "page number" : 11,
+    "bounding box" : [ 272.121, 334.334, 519.884, 361.935 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "However, there are several “operators” which cannot be redeﬁned. They are: , and . The last,"
+  }, {
+    "type" : "paragraph",
+    "id" : 271,
+    "page number" : 11,
+    "bounding box" : [ 272.121, 291.654, 519.878, 333.481 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : ", cannot be redeﬁned by itself, but can be used as part of multi-character operator. The “bind” function, , is one example."
+  }, {
+    "type" : "paragraph",
+    "id" : 279,
+    "page number" : 11,
+    "bounding box" : [ 529.842, 352.713, 777.599, 380.314 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Reversing associativity also has interesting effects. Redeﬁning division as right associative:"
+  }, {
+    "type" : "paragraph",
+    "id" : 280,
+    "page number" : 11,
+    "bounding box" : [ 529.842, 294.2, 655.668, 307.574 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "We get interesting results:"
+  }, {
+    "type" : "paragraph",
+    "id" : 272,
+    "page number" : 11,
+    "bounding box" : [ 272.121, 232.658, 519.883, 274.552 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Precedence & Associativity The precedence and associativity, collectively called ﬁxity, of any operator can be set through the , and"
+  }, {
+    "type" : "paragraph",
+    "id" : 273,
+    "page number" : 11,
+    "bounding box" : [ 272.121, 189.978, 519.878, 231.805 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "keywords. These can be applied both to top-level functions and to local deﬁnitions. The syntax is:"
+  }, {
+    "type" : "paragraph",
+    "id" : 274,
+    "page number" : 11,
+    "bounding box" : [ 320.418, 164.772, 474.334, 178.386 ],
+    "font" : "URWPalladioL-Ital",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "| | precedence op"
+  }, {
+    "type" : "paragraph",
+    "id" : 275,
+    "page number" : 11,
+    "bounding box" : [ 272.121, 97.367, 519.879, 153.421 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "where precedence varies from 0 to 9. Op can actually be any function which takes two arguments (i.e., any binary operation). Whether the operator is left or right associative is speciﬁed by or"
+  }, {
+    "type" : "paragraph",
+    "id" : 276,
+    "page number" : 11,
+    "bounding box" : [ 272.121, 68.913, 519.88, 96.514 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : ", respectively. Such declarations have no associativity."
+  }, {
+    "type" : "heading",
+    "id" : 281,
+    "level" : "Subtitle",
+    "page number" : 11,
+    "bounding box" : [ 529.842, 197.735, 579.779, 212.75 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Currying"
+  }, {
+    "type" : "paragraph",
+    "id" : 282,
+    "page number" : 11,
+    "bounding box" : [ 529.842, 162.19, 777.599, 189.791 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "In Haskell, functions do not have to get all of their arguments at once. For example, consider the"
+  }, {
+    "type" : "paragraph",
+    "id" : 283,
+    "page number" : 11,
+    "bounding box" : [ 529.842, 133.737, 777.596, 161.338 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "function, which only converts certain elements of string depending on a test:"
+  }, {
+    "type" : "image",
+    "id" : 284,
+    "page number" : 11,
+    "bounding box" : [ 14.4, 55.662, 777.6, 56.06 ]
+  }, {
+    "type" : "footer",
+    "id" : 285,
+    "page number" : 11,
+    "bounding box" : [ 17.433, 39.025, 401.454, 52.728 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 24,
+      "page number" : 11,
+      "bounding box" : [ 17.433, 39.025, 401.454, 52.728 ],
+      "heading level" : 5,
+      "font" : "URWPalladioL-Roma",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "c 2009 Justin Bailey. 11"
+    } ]
+  }, {
+    "type" : "paragraph",
+    "id" : 286,
+    "page number" : 12,
+    "bounding box" : [ 14.4, 569.328, 262.158, 596.928 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Using , we can write the function which converts certain letters to numbers:"
+  }, {
+    "type" : "paragraph",
+    "id" : 287,
+    "level" : "5",
+    "page number" : 12,
+    "bounding box" : [ 36.102, 487.584, 62.895, 500.958 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "-- etc."
+  }, {
+    "type" : "paragraph",
+    "id" : 293,
+    "page number" : 12,
+    "bounding box" : [ 272.121, 540.874, 519.878, 596.928 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "That is, can take two arguments. The ﬁrst is the conversion function which converts individual characters and the second is the string to be converted."
+  }, {
+    "type" : "paragraph",
+    "id" : 294,
+    "page number" : 12,
+    "bounding box" : [ 272.121, 469.741, 519.883, 540.022 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "A curried form of any function which takes multiple arguments can be created. One way to think of this is that each “arrow” in the function’s signature represents a new function which can be created by supplying one more argument."
+  }, {
+    "type" : "paragraph",
+    "id" : 288,
+    "level" : "5",
+    "page number" : 12,
+    "bounding box" : [ 36.102, 430.677, 62.895, 444.051 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "-- etc."
+  }, {
+    "type" : "paragraph",
+    "id" : 289,
+    "page number" : 12,
+    "bounding box" : [ 14.4, 349.262, 262.163, 405.316 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Notice that has no arguments speciﬁed. Also, the ﬁnal argument to is not given. However, the type signature of tells the whole story:"
+  }, {
+    "type" : "paragraph",
+    "id" : 295,
+    "page number" : 12,
+    "bounding box" : [ 272.121, 410.489, 519.883, 452.383 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Sections Operators are functions, and they can be curried like any other. For example, a curried version of “ ” can be written as:"
+  }, {
+    "type" : "paragraph",
+    "id" : 296,
+    "page number" : 12,
+    "bounding box" : [ 272.121, 336.202, 519.878, 378.03 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "However, this can be unwieldy and hard to read. “Sections” are curried operators, using parentheses. Here is using sections:"
+  }, {
+    "type" : "paragraph",
+    "id" : 301,
+    "page number" : 12,
+    "bounding box" : [ 529.842, 526.648, 777.599, 596.929 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "changes. “Updating” is really a copy operation, with new values in the ﬁelds that “changed.” For example, using the type deﬁned earlier, we can write a function that sets the ﬁeld to zero easily:"
+  }, {
+    "type" : "paragraph",
+    "id" : 302,
+    "page number" : 12,
+    "bounding box" : [ 529.842, 457.375, 777.599, 499.202 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "The above is a bit verbose and can be rewriten using record syntax. This kind of “update” only sets values for the ﬁeld(s) speciﬁed and copies the rest:"
+  }, {
+    "type" : "paragraph",
+    "id" : 303,
+    "page number" : 12,
+    "bounding box" : [ 529.842, 345.422, 777.603, 429.929 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Here we capture the value in and return a new value. That value happens to have the same value for and as and it’s component is 0. We can combine this with pattern matching to set the and ﬁelds to equal the ﬁeld:"
+  }, {
+    "type" : "paragraph",
+    "id" : 290,
+    "page number" : 12,
+    "bounding box" : [ 14.4, 228.784, 262.163, 313.291 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "That is, takes a string and produces a string. It is a “constant”, in the sense that always returns a value that is a function which takes a string and produces a string. returns a “curried” form of , where only two of its three arguments have been supplied."
+  }, {
+    "type" : "paragraph",
+    "id" : 291,
+    "page number" : 12,
+    "bounding box" : [ 14.4, 157.322, 262.162, 227.602 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "This can be taken further. Say we want to write a function which only changes upper case letters. We know the test to apply, , but we don’t want to specify the conversion. That function can be written as:"
+  }, {
+    "type" : "paragraph",
+    "id" : 297,
+    "page number" : 12,
+    "bounding box" : [ 272.121, 261.915, 519.878, 303.742 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "The supplied argument can be on the right or left, which indicates what position it should take. This is important for operations such as concatenation:"
+  }, {
+    "type" : "paragraph",
+    "id" : 298,
+    "page number" : 12,
+    "bounding box" : [ 272.121, 201.855, 462.038, 215.229 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Which produces quite different results:"
+  }, {
+    "type" : "paragraph",
+    "id" : 292,
+    "page number" : 12,
+    "bounding box" : [ 14.4, 107.977, 157.887, 121.351 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "which has the type signature:"
+  }, {
+    "type" : "heading",
+    "id" : 299,
+    "level" : "Subtitle",
+    "page number" : 12,
+    "bounding box" : [ 272.121, 104.458, 482.246, 119.473 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "“Updating” values and record syntax"
+  }, {
+    "type" : "paragraph",
+    "id" : 300,
+    "page number" : 12,
+    "bounding box" : [ 272.121, 68.913, 519.878, 96.514 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Haskell is a pure language and, as such, has no mutable state. That is, once a value is set it never"
+  }, {
+    "type" : "paragraph",
+    "id" : 304,
+    "page number" : 12,
+    "bounding box" : [ 529.842, 261.922, 777.601, 303.75 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Notice we must use argument capture (“ ”) to get the value and pattern matching with record syntax (“ ”) to get the inner ﬁeld."
+  }, {
+    "type" : "heading",
+    "id" : 305,
+    "level" : "Subtitle",
+    "page number" : 12,
+    "bounding box" : [ 529.842, 230.638, 659.126, 245.653 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Anonymous Functions"
+  }, {
+    "type" : "paragraph",
+    "id" : 306,
+    "page number" : 12,
+    "bounding box" : [ 529.842, 180.866, 777.598, 222.694 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "An anonymous function (i.e., a lambda expression or lambda for short), is a function without a name. They can be deﬁned at any time like so:"
+  }, {
+    "type" : "paragraph",
+    "id" : 307,
+    "page number" : 12,
+    "bounding box" : [ 529.842, 68.913, 777.599, 153.421 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "which deﬁnes a function which takes an argument and returns a tuple containing that argument in both positions. They are useful for simple functions which don’t need a name. The following determines if a string has mixed case (or is all whitespace):"
+  }, {
+    "type" : "image",
+    "id" : 308,
+    "page number" : 12,
+    "bounding box" : [ 14.4, 55.662, 777.6, 56.06 ]
+  }, {
+    "type" : "footer",
+    "id" : 309,
+    "page number" : 12,
+    "bounding box" : [ 17.433, 39.025, 401.454, 52.728 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 25,
+      "page number" : 12,
+      "bounding box" : [ 17.433, 39.025, 401.454, 52.728 ],
+      "heading level" : 5,
+      "font" : "URWPalladioL-Roma",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "c 2009 Justin Bailey. 12"
+    } ]
+  }, {
+    "type" : "paragraph",
+    "id" : 316,
+    "page number" : 13,
+    "bounding box" : [ 299.394, 555.101, 519.878, 596.928 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "However, for efﬁciency or other reasons you may only want to allow types. You would accomplish that with a type signature:"
+  }, {
+    "type" : "paragraph",
+    "id" : 320,
+    "page number" : 13,
+    "bounding box" : [ 529.842, 555.101, 777.604, 596.929 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Haskell cannot compile that function because it does not know the type of . We must limit the type through an annotation:"
+  }, {
+    "type" : "paragraph",
+    "id" : 310,
+    "page number" : 13,
+    "bounding box" : [ 14.4, 474.139, 262.157, 530.193 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Of course, lambdas can be the returned from functions too. This classic returns a function which will then multiply its argument by the one originally given:"
+  }, {
+    "type" : "paragraph",
+    "id" : 311,
+    "page number" : 13,
+    "bounding box" : [ 14.4, 425.812, 77.531, 439.186 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "For example:"
+  }, {
+    "type" : "heading",
+    "id" : 312,
+    "level" : "Subtitle",
+    "page number" : 13,
+    "bounding box" : [ 14.4, 339.908, 106.694, 354.923 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Type Signatures"
+  }, {
+    "type" : "paragraph",
+    "id" : 313,
+    "page number" : 13,
+    "bounding box" : [ 14.4, 289.7, 262.157, 331.527 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Haskell supports full type inference, meaning in most cases no types have to be written down. Type signatures are still useful for at least two reasons."
+  }, {
+    "type" : "paragraph",
+    "id" : 317,
+    "page number" : 13,
+    "bounding box" : [ 272.121, 403.658, 519.883, 516.619 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Type signatures can appear on top-level functions and nested or deﬁnitions. Generally this is useful for documentation, although in some cases they are needed to prevent polymorphism. A type signature is ﬁrst the name of the item which will be typed, followed by a , followed by the types. An example of this has already been seen above."
+  }, {
+    "type" : "paragraph",
+    "id" : 318,
+    "page number" : 13,
+    "bounding box" : [ 272.121, 332.525, 519.883, 402.806 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Type signatures do not need to appear directly above their implementation. They can be speciﬁed anywhere in the containing module (yes, even below!). Multiple items with the same signature can also be deﬁned together:"
+  }, {
+    "type" : "paragraph",
+    "id" : 321,
+    "page number" : 13,
+    "bounding box" : [ 529.842, 494.488, 777.599, 522.089 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Annotations have the same syntax as type signatures, but may adorn any expression."
+  }, {
+    "type" : "heading",
+    "id" : 322,
+    "level" : "Subtitle",
+    "page number" : 13,
+    "bounding box" : [ 529.842, 462.632, 553.083, 477.647 ],
+    "heading level" : 3,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 11.955,
+    "text color" : "[0.0]",
+    "content" : "Unit"
+  }, {
+    "type" : "paragraph",
+    "id" : 323,
+    "level" : "6",
+    "page number" : 13,
+    "bounding box" : [ 529.842, 427.087, 777.602, 454.688 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "– “unit” type and “unit” value. The value and type that represents no useful information."
+  }, {
+    "type" : "heading",
+    "id" : 324,
+    "level" : "Subtitle",
+    "page number" : 13,
+    "bounding box" : [ 529.842, 389.033, 616.206, 407.052 ],
+    "heading level" : 2,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 14.346,
+    "text color" : "[0.0]",
+    "content" : "Contributors"
+  }, {
+    "type" : "paragraph",
+    "id" : 325,
+    "page number" : 13,
+    "bounding box" : [ 529.842, 293.223, 777.599, 377.73 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "My thanks to those who contributed patches and useful suggestions: Dave Bayer, Cale Gibbard, Stephen Hicks, Kurt Hutchinson, Johan Kiviniemi, Adrian Neumann, Barak Pearlmutter, Lanny Ripple, Markus Roberts, Holger Siegel, Leif Warner, and Jeff Zaroyko."
+  }, {
+    "type" : "paragraph",
+    "id" : 314,
+    "page number" : 13,
+    "bounding box" : [ 19.854, 191.306, 262.157, 275.814 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Documentation—Even if the compiler can ﬁgure out the types of your functions, other programmers or even yourself might not be able to later. Writing the type signatures on all top-level functions is considered very good form."
+  }, {
+    "type" : "paragraph",
+    "id" : 315,
+    "page number" : 13,
+    "bounding box" : [ 19.854, 138.797, 262.157, 180.625 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Specialization—Typeclasses allow functions with overloading. For example, a function to negate any list of numbers has the signature:"
+  }, {
+    "type" : "heading",
+    "id" : 326,
+    "level" : "Subtitle",
+    "page number" : 13,
+    "bounding box" : [ 529.842, 255.169, 581.531, 273.188 ],
+    "heading level" : 2,
+    "font" : "NimbusSanL-Bold",
+    "font size" : 14.346,
+    "text color" : "[0.0]",
+    "content" : "Version"
+  }, {
+    "type" : "paragraph",
+    "id" : 319,
+    "page number" : 13,
+    "bounding box" : [ 272.121, 131.779, 519.884, 187.899 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "Type Annotations Sometimes Haskell cannot determine what type is meant. The classic demonstration of this is the so-called “ ” problem:"
+  }, {
+    "type" : "paragraph",
+    "id" : 327,
+    "page number" : 13,
+    "bounding box" : [ 529.842, 187.812, 777.605, 243.866 ],
+    "font" : "URWPalladioL-Roma",
+    "font size" : 10.909,
+    "text color" : "[0.0]",
+    "content" : "This is version 1.10. The source can be found at GitHub2. The latest released version of the PDF can be downloaded from Hackage3. Visit CodeSlower.com4 for other projects and writings."
+  }, {
+    "type" : "image",
+    "id" : 328,
+    "page number" : 13,
+    "bounding box" : [ 14.4, 105.758, 113.502, 106.156 ]
+  }, {
+    "type" : "list",
+    "id" : 329,
+    "level" : "7",
+    "page number" : 13,
+    "bounding box" : [ 26.554, 73.281, 30.041, 104.91 ],
+    "numbering style" : "arabic numbers",
+    "number of list items" : 3,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 13,
+      "bounding box" : [ 26.554, 96.36, 30.041, 104.91 ],
+      "font" : "URWPalladioL-Roma",
+      "font size" : 6.974,
+      "text color" : "[0.0]",
+      "content" : "2",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 13,
+      "bounding box" : [ 26.554, 84.821, 30.041, 93.371 ],
+      "font" : "URWPalladioL-Roma",
+      "font size" : 6.974,
+      "text color" : "[0.0]",
+      "content" : "3",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 13,
+      "bounding box" : [ 26.554, 73.281, 30.041, 81.831 ],
+      "font" : "URWPalladioL-Roma",
+      "font size" : 6.974,
+      "text color" : "[0.0]",
+      "content" : "4",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 330,
+    "page number" : 13,
+    "bounding box" : [ 14.4, 55.662, 777.6, 56.06 ]
+  }, {
+    "type" : "footer",
+    "id" : 331,
+    "page number" : 13,
+    "bounding box" : [ 17.433, 39.025, 401.454, 52.728 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 26,
+      "page number" : 13,
+      "bounding box" : [ 17.433, 39.025, 401.454, 52.728 ],
+      "heading level" : 5,
+      "font" : "URWPalladioL-Roma",
+      "font size" : 10.909,
+      "text color" : "[0.0]",
+      "content" : "c 2009 Justin Bailey. 13"
+    } ]
+  } ]
+}

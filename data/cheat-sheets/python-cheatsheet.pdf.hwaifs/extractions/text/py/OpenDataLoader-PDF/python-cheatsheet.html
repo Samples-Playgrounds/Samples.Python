@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="und">
+<head>
+<meta charset="utf-8">
+<title>python-cheatsheet.pdf</title>
+</head>
+<body>
+<h2>Data Types</h2>
+
+<h2>Strings</h2>
+
+<h3>Numbers & Math Arithmetic Operators</h3>
+
+<h1>Real Python Pocket Reference</h1>
+
+<img src="python-cheatsheet_images/imageFile1.png" alt="figure1">
+
+<p>Python is dynamically typed</p>
+
+<p>It’s recommended to use double-quotes for strings</p>
+
+<p>Use None to represent missing or optional values</p>
+
+<p>Use "\n" to create a line break in a string</p>
+
+<p>10 + 3 # 13 10 3 # 7 10 * 3 # 30 10 / 3 # 3.3333333333333335 10 // 3 # 3 10 % 3 # 1 2 ** 3 # 8</p>
+
+<p>Use type() to check object type</p>
+
+<p>To write a backslash in a normal string, write "\\"</p>
+
+<p>Visit realpython.com to turbocharge your Python learning with in-depth tutorials,</p>
+
+<p>Check for a specific type with isinstance() issubclass() checks if a class is a subclass</p>
+
+<h3>Creating Strings</h3>
+
+<p>single = 'Hello' double = "World" multi = """Multiple</p>
+
+<h3>Type Investigation</h3>
+
+<p>type(42) # <class 'int'> type(3.14) # <class 'float'> type("Hello") # <class 'str'> type(True) # <class 'bool'> type(None) # <class 'NoneType'></p>
+
+<p>line string"""</p>
+
+<p>real-world examples, and expert guidance.</p>
+
+<h3>Useful Functions</h3>
+
+<h3>String Operations</h3>
+
+<p>abs(-5) # 5 round(3.7) # 4 round(3.14159, 2) # 3.14 min(3, 1, 2) # 1 max(3, 1, 2) # 3 sum([1, 2, 3]) # 6</p>
+
+<p>greeting = "me" + "ow!" # "meow!" repeat = "Meow!" * 3 # "Meow!Meow!Meow!" length = len("Python") # 6</p>
+
+<p>isinstance(3.14, float) # True issubclass(int, object) # True - everything inherits from object</p>
+
+<h2>Getting Started</h2>
+
+<h3>Type Conversion</h3>
+
+<h3>String Methods</h3>
+
+<p>Follow these guides to kickstart your Python journey:</p>
+
+<h3>Learn More on realpython.com/search:</h3>
+
+<p>int("42") # 42 float("3.14") # 3.14 str(42) # "42" bool(1) # True list("abc") # ["a", "b", "c"]</p>
+
+<p>"a".upper() # "A" "A".lower() # "a" " a ".strip() # "a" "abc".replace("bc", "ha") # "aha" "a b".split() # ["a", "b"] "-".join(["a", "b"]) # "a-b"</p>
+
+<p>realpython.com/what-can-i-do-with-python</p>
+
+<p>math ∙ operators ∙ built in functions</p>
+
+<p>realpython.com/installing-python</p>
+
+<p>realpython.com/python-first-steps</p>
+
+<h2>Conditionals</h2>
+
+<h3>Start the Interactive Shell</h3>
+
+<h3>Learn More on realpython.com/search:</h3>
+
+<p>Python uses indentation for code blocks</p>
+
+<p>$ python</p>
+
+<p>Use 4 spaces per indentation level If-Elif-Else</p>
+
+<h3>String Indexing & Slicing</h3>
+
+<p>data types ∙ type checking ∙ isinstance ∙ issubclass</p>
+
+<p>text = "Python" text[0] # "P" (first) text[-1] # "n" (last) text[1:4] # "yth" (slice) text[:3] # "Pyt" (from start) text[3:] # "hon" (to end) text[::2] # "Pto" (every 2nd) text[::-1] # "nohtyP" (reverse)</p>
+
+<h3>Quit the Interactive Shell</h3>
+
+<h2>Variables & Assignment</h2>
+
+<p>>>> exit()</p>
+
+<p>if age < 13:</p>
+
+<p>category = "child" elif age < 20:</p>
+
+<p>Variables are created when first assigned</p>
+
+<h3>Run a Script</h3>
+
+<p>Use descriptive variable names</p>
+
+<p>category = "teenager" else:</p>
+
+<p>Follow snake_case convention Basic Assignment</p>
+
+<p>$ python my_script.py</p>
+
+<p>category = "adult"</p>
+
+<h3>Run a Script in Interactive Mode</h3>
+
+<h3>String Formatting</h3>
+
+<h3>Comparison Operators</h3>
+
+<p>name = "Leo" # String age = 7 # Integer height = 5.6 # Float is_cat = True # Boolean flaws = None # None type</p>
+
+<p>$ python -i my_script.py</p>
+
+<p># f-strings name = "Aubrey" age = 2 f"Hello, {name}!" # "Hello, Aubrey!" f"{name} is {age} years old" # "Aubrey is 2 years old" f"Debug: {age=}" # "Debug: age=2"</p>
+
+<p>x == y # Equal to x != y # Not equal to x < y # Less than x <= y # Less than or equal x > y # Greater than x >= y # Greater than or equal</p>
+
+<h3>Learn More on realpython.com/search:</h3>
+
+<p>interpreter ∙ run a script ∙ command line</p>
+
+<h3>Parallel & Chained Assignments</h3>
+
+<p># Format method template = "Hello, {name}! You're {age}." template.format(name="Aubrey", age=2) # "Hello, Aubrey! You're 2."</p>
+
+<h2>Comments</h2>
+
+<p>x, y = 10, 20 # Assign multiple values a = b = c = 0 # Give same value to multiple variables</p>
+
+<h3>Logical Operators</h3>
+
+<p>Always add a space after the #</p>
+
+<p>if age >= 18 and has_car: print("Roadtrip!")</p>
+
+<p>Use comments to explain “why” of your code Write Comments</p>
+
+<h3>Raw Strings</h3>
+
+<h3>Augmented Assignments</h3>
+
+<p># Normal string with an escaped tab "This is:\tCool." # "This is: Cool."</p>
+
+<p>counter += 1 numbers += [4, 5] permissions |= write</p>
+
+<p>if is_weekend or is_holiday:</p>
+
+<p>print("No work today.") if not is_raining:</p>
+
+<p># This is a comment # print("This code will not run.") print("This will run.") # Comments are ignored by Python</p>
+
+<p># Raw string with escape sequences r"This is:\tCool." # "This is:\tCool."</p>
+
+<p>print("You can go outside.")</p>
+
+<h3>Learn More on realpython.com/search:</h3>
+
+<p>variables ∙ assignment operator ∙ walrus operator</p>
+
+<h3>Learn More on realpython.com/search:</h3>
+
+<h3>Learn More on realpython.com/search:</h3>
+
+<h3>Learn More on realpython.com/search:</h3>
+
+<p>comment ∙ documentation</p>
+
+<p>strings ∙ string methods ∙ slice notation ∙ raw strings</p>
+
+<p>conditional statements ∙ operators ∙ truthy falsy</p>
+
+<h3>Calling Functions</h3>
+
+<h3>Class Attributes & Methods</h3>
+
+<h3>Raising Exceptions</h3>
+
+<p>Loops range(5) generates 0 through 4</p>
+
+<p>greet() # "Hello!" greet_person("Bartosz") # "Hello, Bartosz" add(5, 3) # 8 add(7) # 17</p>
+
+<p>class Cat: species = "Felis catus" # Class attribute</p>
+
+<p>def validate_age(age): if age < 0:</p>
+
+<p>Use enumerate() to get index and value break exits the loop, continue skips to next</p>
+
+<p>raise ValueError("Age cannot be negative") return age</p>
+
+<p>def __init__(self, name):</p>
+
+<p>self.name = name # Instance attribute def meow(self):</p>
+
+<p>Be careful with while to not create an infinite loop</p>
+
+<h3>Return Values</h3>
+
+<h3>Learn More on realpython.com/search:</h3>
+
+<h3>For Loops</h3>
+
+<p>exceptions ∙ errors ∙ debugging</p>
+
+<p>return f"{self.name} says Meow!"</p>
+
+<p>def get_min_max(numbers): return min(numbers), max(numbers)</p>
+
+<p># Loop through range for i in range(5): # 0, 1, 2, 3, 4</p>
+
+<p>@classmethod def create_kitten(cls, name):</p>
+
+<h2>Collections</h2>
+
+<p>minimum, maximum = get_min_max([1, 5, 3])</p>
+
+<p>print(i)</p>
+
+<p>return cls(f"Baby {name}")</p>
+
+<p>A collection is any container data structure that stores multiple items</p>
+
+<p># Loop through collection fruits = ["apple", "banana"] for fruit in fruits: print(fruit)</p>
+
+<h3>Useful Built-in Functions</h3>
+
+<p>If an object is a collection, then you can loop through it</p>
+
+<h3>Inheritance</h3>
+
+<p>Strings are collections, too</p>
+
+<p>callable() # Checks if an object can be called as a function dir() # Lists attributes and methods globals() # Get a dictionary of the current global symbol table hash() # Get the hash value id() # Get the unique identifier locals() # Get a dictionary of the current local symbol table repr() # Get a string representation for debugging</p>
+
+<p>class Animal: def __init__(self, name): self.name = name</p>
+
+<p>Use len() to get the size of a collection</p>
+
+<p>You can check if an item is in a collection with the in keyword</p>
+
+<p># With enumerate for index for i, fruit in enumerate(fruits):</p>
+
+<p>Some collections may look similar, but each data structure solves specific needs</p>
+
+<p>def speak(self): pass</p>
+
+<p>print(f"{i}: {fruit}")</p>
+
+<h3>Lists</h3>
+
+<h3>While Loops</h3>
+
+<p>class Dog(Animal): def speak(self): return f"{self.name} barks!"</p>
+
+<h3>Lambda Functions</h3>
+
+<p># Creating lists</p>
+
+<p>while True: user_input = input("Enter 'quit' to exit: ") if user_input == "quit":</p>
+
+<p>square = lambda x: x**2 result = square(5) # 25</p>
+
+<p>empty = [] nums = [5] mixed = [1, "two", 3.0, True]</p>
+
+<p>break print(f"You entered: {user_input}")</p>
+
+<h3>Learn More on realpython.com/search:</h3>
+
+<p># With map and filter numbers = [1, 2, 3, 4] squared = list(map(lambda x: x**2, numbers)) evens = list(filter(lambda x: x % 2 == 0, numbers))</p>
+
+<p>object oriented programming ∙ classes</p>
+
+<p># List methods nums.append("x") # Add to end nums.insert(0, "y") # Insert at index 0 nums.extend(["z", 5]) # Extend with iterable nums.remove("x") # Remove first "x" last = nums.pop() # Pop returns last element</p>
+
+<h3>Loop Control</h3>
+
+<h2>Exceptions</h2>
+
+<p>for i in range(10): if i == 3:</p>
+
+<h3>Learn More on realpython.com/search:</h3>
+
+<p>When Python runs and encounters an error, it creates an exception</p>
+
+<p>continue # Skip this iteration if i == 7:</p>
+
+<p>define functions ∙ return multiple values ∙ lambda</p>
+
+<p>Use specific exception types when possible else runs if no exception occurred finally always runs, even after errors</p>
+
+<p># List indexing and checks fruits = ["banana", "apple", "orange"] fruits[0] # "banana" fruits[-1] # "orange" "apple" in fruits # True len(fruits) # 3</p>
+
+<p>break # Exit loop print(i)</p>
+
+<h2>Classes</h2>
+
+<h3>Learn More on realpython.com/search:</h3>
+
+<p>Classes are blueprints for objects</p>
+
+<h3>Try-Except</h3>
+
+<p>You can create multiple instances of one class</p>
+
+<p>for loop ∙ while loop ∙ enumerate ∙ control flow</p>
+
+<p>try:</p>
+
+<p>You commonly use classes to encapsulate data</p>
+
+<p>number = int(input("Enter a number: ")) result = 10 / number</p>
+
+<h3>Tuples</h3>
+
+<p>Inside a class, you provide methods for interacting with the data</p>
+
+<h2>Functions</h2>
+
+<p>except ValueError:</p>
+
+<p>.__init__() is the constructor method self refers to the instance</p>
+
+<p># Creating tuples point = (3, 4) single = (1,) # Note the comma! empty = ()</p>
+
+<p>print("That's not a valid number!") except ZeroDivisionError:</p>
+
+<p>Define functions with def</p>
+
+<p>print("Cannot divide by zero!") else:</p>
+
+<p>Always use () to call a function</p>
+
+<h3>Defining Classes</h3>
+
+<p>Add return to send values back</p>
+
+<p>print(f"Result: {result}") finally:</p>
+
+<p>Create anonymous functions with the lambda keyword Defining Functions</p>
+
+<p>class Dog:</p>
+
+<p># Basic tuple unpacking point = (3, 4) x, y = point</p>
+
+<p>def __init__(self, name, age): self.name = name self.age = age</p>
+
+<p>print("Calculation attempted")</p>
+
+<ul>
+<li><p>x # 3</p></li>
+<li><p>y # 4</p></li>
+</ul>
+
+<p>def greet(): return "Hello!"</p>
+
+<h3>Common Exceptions</h3>
+
+<p>def bark(self): return f"{self.name} says Woof!"</p>
+
+<p># Extended unpacking first, *rest = (1, 2, 3, 4) first # 1 rest # [2, 3, 4]</p>
+
+<p>ValueError # Invalid value TypeError # Wrong type IndexError # List index out of range KeyError # Dict key not found FileNotFoundError # File doesn't exist</p>
+
+<p>def greet_person(name): return f"Hello, {name}!"</p>
+
+<p># Create instance my_dog = Dog("Frieda", 3) print(my_dog.bark()) # Frieda says Woof!</p>
+
+<p>def add(x, y=10): # Default parameter return x + y</p>
+
+<h3>Sets</h3>
+
+<h3>Pythonic Constructs</h3>
+
+<h3>File I/O File Operations</h3>
+
+<h2>Virtual Environments</h2>
+
+<p># Creating Sets</p>
+
+<p># Swap variables a, b = b, a</p>
+
+<p>Virtual Environments are often called “venv”</p>
+
+<ul>
+<li><p>a = {1, 2, 3}</p></li>
+<li><p>b = set([3, 4, 4, 5])</p></li>
+</ul>
+
+<p>Use venvs to isolate project packages from the system-wide Python packages Create Virtual Environment $ python -m venv .venv</p>
+
+<p># Read an entire file with open("file.txt", mode="r", encoding="utf-8") as file:</p>
+
+<p># Flatten a list of lists matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]] flat = [item for sublist in matrix for item in sublist]</p>
+
+<p># Set Operations a | b # {1, 2, 3, 4, 5} a & b # {3} a - b # {1, 2} a ^ b # {1, 2, 4, 5}</p>
+
+<p>content = file.read()</p>
+
+<p># Read a file line by line with open("file.txt", mode="r", encoding="utf-8") as file:</p>
+
+<p># Remove duplicates unique_unordered = list(set(my_list))</p>
+
+<h3>Activate Virtual Environment (Windows)</h3>
+
+<p>for line in file: print(line.strip())</p>
+
+<p># Remove duplicates, preserve order unique = list(dict.fromkeys(my_list))</p>
+
+<p>PS> .venv\Scripts\activate</p>
+
+<h3>Dictionaries</h3>
+
+<p># Write a file with open("output.txt", mode="w", encoding="utf-8") as file:</p>
+
+<p># Creating Dictionaries empty = {} pet = {"name": "Leo", "age": 42}</p>
+
+<h3>Activate Virtual Environment (Linux & macOS)</h3>
+
+<p># Count occurrences from collections import Counter</p>
+
+<p>file.write("Hello, World!\n")</p>
+
+<p>$ source .venv/bin/activate</p>
+
+<p># Append to a File with open("log.txt", mode="a", encoding="utf-8") as file:</p>
+
+<p># Dictionary Operations pet["sound"] = "Purr!" # Add key and value pet["age"] = 7 # Update value age = pet.get("age", 0) # Get with default del pet["sound"] # Delete key pet.pop("age") # Remove and return</p>
+
+<p>counts = Counter(my_list)</p>
+
+<h3>Deactivate Virtual Environment</h3>
+
+<p>file.write("New log entry\n")</p>
+
+<h3>Learn More on realpython.com/search:</h3>
+
+<p>(.venv) $ deactivate</p>
+
+<h3>Learn More on realpython.com/search:</h3>
+
+<p>counter ∙ tricks</p>
+
+<h3>Learn More on realpython.com/search:</h3>
+
+<p>files ∙ context manager ∙ pathlib</p>
+
+<p># Dictionary Methods pet = {"name": "Frieda", "sound": "Bark!"} pet.keys() # dict_keys(['name', 'sound']) pet.values() # dict_values(['Frieda', 'Bark!']) pet.items() # dict_items([('name', 'Frieda'), ('sound', 'Bark!')])</p>
+
+<p>virtual environment ∙ venv</p>
+
+<h2>Imports & Modules</h2>
+
+<h2>Do you want to go deeper on any topic in the Python curriculum?</h2>
+
+<h2>Packages</h2>
+
+<p>At Real Python you can immerse yourself in any topic. Level up your skills eﬀectively with curated resources like:</p>
+
+<p>Prefer explicit imports over import *</p>
+
+<h3>Learn More on realpython.com/search:</h3>
+
+<p>The oﬀicial third-party package repository is the Python Package Index (PyPI) Install Packages</p>
+
+<p>Use aliases for long module names</p>
+
+<p>list ∙ tuple ∙ set ∙ dictionary ∙ indexing ∙ unpacking</p>
+
+<p>Group imports: standard library, third-party libraries, user-defined modules</p>
+
+<p>Learning paths</p>
+
+<p>Video courses</p>
+
+<h2>Comprehensions</h2>
+
+<h3>Import Styles</h3>
+
+<p>$ python -m pip install requests</p>
+
+<p>Written tutorials</p>
+
+<p># Import entire module import math result = math.sqrt(16)</p>
+
+<p>Interactive quizzes Podcast interviews Reference articles</p>
+
+<p>You can think of comprehensions as condensed for loops</p>
+
+<h3>Save Requirements & Install from File</h3>
+
+<p>Comprehensions are faster than equivalent loops List Comprehensions</p>
+
+<p>$ python -m pip freeze > requirements.txt $ python -m pip install -r requirements.txt</p>
+
+<p># Import specific function from math import sqrt result = sqrt(16)</p>
+
+<p>Continue your learning journey and become a Python expert at realpython.com/start-here</p>
+
+<p># Basic squares = [x**2 for x in range(10)]</p>
+
+<h3>Related Tutorials</h3>
+
+<p>Installing Python Packages</p>
+
+<p># Import with alias import numpy as np array = np.array([1, 2, 3])</p>
+
+<p># With condition evens = [x for x in range(20) if x % 2 == 0]</p>
+
+<p>Requirements Files in Python Projects</p>
+
+<p># Nested matrix = [[i*j for j in range(3)] for i in range(3)]</p>
+
+<h2>Miscellaneous</h2>
+
+<p># Import all (not recommended) from math import *</p>
+
+<h3>Truthy Falsy</h3>
+
+<h3>Other Comprehensions</h3>
+
+<h3>Package Imports</h3>
+
+<p>-42 0 3.14 0.0 "John" "" [1, 2, 3] [] ("apple", "banana") () {"key": None} {}</p>
+
+<p># Dictionary comprehension word_lengths = {word: len(word) for word in ["hello", "world"]}</p>
+
+<p># Import from package import package.module from package import module from package.subpackage import module</p>
+
+<p># Set comprehension unique_lengths = {len(word) for word in ["who", "what", "why"]}</p>
+
+<p># Import specific items from package.module import function, Class from package.module import name as alias</p>
+
+<p># Generator expression sum_squares = sum(x**2 for x in range(1000))</p>
+
+<h3>Learn More on realpython.com/search:</h3>
+
+<h3>Learn More on realpython.com/search:</h3>
+
+<p>comprehensions ∙ data structures ∙ generators</p>
+
+<p>None</p>
+
+<p>import ∙ modules ∙ packages</p>
+
+
+</body>
+</html>

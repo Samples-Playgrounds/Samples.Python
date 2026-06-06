@@ -1,0 +1,1271 @@
+{
+  "file name" : "analyzing-malicious-document-files.pdf",
+  "number of pages" : 1,
+  "author" : "Lenny Zeltser (www.zeltser.com)",
+  "title" : "Analyzing Malicious Documents - Cheat Sheet",
+  "creation date" : "D:20210721190231+00'00'",
+  "modification date" : "D:20210721190231+00'00'",
+  "kids" : [ {
+    "type" : "image",
+    "id" : 50,
+    "page number" : 1,
+    "bounding box" : [ 286.85, 578.97, 386.38, 579.47 ]
+  }, {
+    "type" : "image",
+    "id" : 51,
+    "page number" : 1,
+    "bounding box" : [ 386.38, 578.97, 516.17, 579.47 ]
+  }, {
+    "type" : "image",
+    "id" : 121,
+    "page number" : 1,
+    "bounding box" : [ 539.92, 578.97, 761.5, 579.47 ]
+  }, {
+    "type" : "heading",
+    "id" : 16,
+    "level" : "Doctitle",
+    "page number" : 1,
+    "bounding box" : [ 32.5, 563.72, 234.716, 576.72 ],
+    "heading level" : 1,
+    "font" : "Calibri-Bold",
+    "font size" : 13.0,
+    "text color" : "[0.0]",
+    "content" : "ANALYZING MALICIOUS DOCUMENTS"
+  }, {
+    "type" : "paragraph",
+    "id" : 120,
+    "level" : "6",
+    "page number" : 1,
+    "bounding box" : [ 541.42, 521.22, 743.52, 575.97 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "/XObject can embed an image for phishing. Be mindful of obfuscation with hex codes, such as /JavaScript vs. /J#61vaScript. (See examples.) Useful PDF File Analysis Commands"
+  }, {
+    "type" : "paragraph",
+    "id" : 49,
+    "page number" : 1,
+    "bounding box" : [ 391.38, 553.47, 508.12, 575.72 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "List all OLE2 streams present in file.xls."
+  }, {
+    "type" : "paragraph",
+    "id" : 47,
+    "level" : "3",
+    "page number" : 1,
+    "bounding box" : [ 292.35, 554.904, 347.05, 574.404 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "oledump.py file.xls -i"
+  }, {
+    "type" : "image",
+    "id" : 48,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 565.72, 342.1, 566.47 ]
+  }, {
+    "type" : "image",
+    "id" : 122,
+    "page number" : 1,
+    "bounding box" : [ 539.92, 562.97, 761.5, 563.47 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 17,
+    "page number" : 1,
+    "bounding box" : [ 32.5, 524.22, 244.28, 558.72 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "This cheat sheet outlines tips and tools for analyzing malicious documents, such as Microsoft Office, RTF, and PDF files."
+  }, {
+    "type" : "image",
+    "id" : 54,
+    "page number" : 1,
+    "bounding box" : [ 286.85, 551.22, 386.38, 551.72 ]
+  }, {
+    "type" : "image",
+    "id" : 55,
+    "page number" : 1,
+    "bounding box" : [ 386.38, 551.22, 516.17, 551.72 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 53,
+    "page number" : 1,
+    "bounding box" : [ 391.38, 525.47, 490.33, 547.72 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Extract VBA source code from stream 3 in file.xls."
+  }, {
+    "type" : "paragraph",
+    "id" : 52,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 527.154, 371.83, 546.654 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "oledump.py file.xls -s 3 -v"
+  }, {
+    "type" : "image",
+    "id" : 123,
+    "page number" : 1,
+    "bounding box" : [ 663.7, 538.22, 721.475, 538.97 ]
+  }, {
+    "type" : "image",
+    "id" : 124,
+    "page number" : 1,
+    "bounding box" : [ 539.92, 520.95, 761.5, 534.475 ]
+  }, {
+    "type" : "image",
+    "id" : 59,
+    "page number" : 1,
+    "bounding box" : [ 286.85, 523.22, 386.38, 523.72 ]
+  }, {
+    "type" : "image",
+    "id" : 60,
+    "page number" : 1,
+    "bounding box" : [ 386.38, 523.22, 516.17, 523.72 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 56,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 509.634, 506.38, 519.7 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "xmldump.py pretty Format XML file supplied via"
+  }, {
+    "type" : "image",
+    "id" : 18,
+    "page number" : 1,
+    "bounding box" : [ 31.0, 504.7, 252.58, 517.95 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 125,
+    "page number" : 1,
+    "bounding box" : [ 546.67, 507.384, 586.342, 516.384 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "pdfid.py"
+  }, {
+    "type" : "heading",
+    "id" : 19,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 32.5, 504.95, 235.472, 515.95 ],
+    "heading level" : 2,
+    "font" : "Calibri-Bold",
+    "font size" : 11.0,
+    "text color" : "[1.0]",
+    "content" : "General Approach to Document Analysis"
+  }, {
+    "type" : "image",
+    "id" : 57,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 509.95, 342.1, 510.7 ]
+  }, {
+    "type" : "image",
+    "id" : 126,
+    "page number" : 1,
+    "bounding box" : [ 546.67, 507.7, 586.42, 508.45 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 58,
+    "level" : "4",
+    "page number" : 1,
+    "bounding box" : [ 391.38, 497.45, 493.34, 507.45 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "STDIN for easier analysis."
+  }, {
+    "type" : "list",
+    "id" : 127,
+    "level" : "7",
+    "page number" : 1,
+    "bounding box" : [ 546.67, 441.104, 616.2, 505.884 ],
+    "numbering style" : "english letters",
+    "number of list items" : 2,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.67, 496.884, 601.4, 505.884 ],
+      "font" : "Consolas-Italic",
+      "font size" : 9.0,
+      "text color" : "[0.0]",
+      "content" : "file.pdf -n",
+      "kids" : [ {
+        "type" : "paragraph",
+        "id" : 4,
+        "page number" : 1,
+        "bounding box" : [ 627.7, 495.2, 762.64, 517.45 ],
+        "font" : "Calibri",
+        "font size" : 10.0,
+        "text color" : "[0.0]",
+        "content" : "Display risky keywords present in file file.pdf."
+      }, {
+        "type" : "paragraph",
+        "id" : 5,
+        "page number" : 1,
+        "bounding box" : [ 546.67, 468.884, 611.094, 488.634 ],
+        "font" : "Consolas",
+        "font size" : 9.0,
+        "text color" : "[0.0]",
+        "content" : "pdf-parser.py file.pdf -a"
+      }, {
+        "type" : "image",
+        "id" : 6,
+        "page number" : 1,
+        "bounding box" : [ 546.67, 479.95, 610.945, 480.7 ]
+      }, {
+        "type" : "paragraph",
+        "id" : 7,
+        "page number" : 1,
+        "bounding box" : [ 627.7, 467.45, 759.97, 489.7 ],
+        "font" : "Calibri",
+        "font size" : 10.0,
+        "text color" : "[0.0]",
+        "content" : "Show stats about keywords. Add “-O” to include object streams."
+      }, {
+        "type" : "image",
+        "id" : 8,
+        "page number" : 1,
+        "bounding box" : [ 541.42, 493.2, 622.95, 493.7 ]
+      }, {
+        "type" : "image",
+        "id" : 9,
+        "page number" : 1,
+        "bounding box" : [ 622.95, 493.2, 770.75, 493.7 ]
+      }, {
+        "type" : "paragraph",
+        "id" : 10,
+        "page number" : 1,
+        "bounding box" : [ 546.67, 451.604, 611.094, 460.604 ],
+        "font" : "Consolas",
+        "font size" : 9.0,
+        "text color" : "[0.0]",
+        "content" : "pdf-parser.py"
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.67, 441.104, 616.2, 450.104 ],
+      "font" : "Consolas-Italic",
+      "font size" : 9.0,
+      "text color" : "[0.0]",
+      "content" : "file.pdf -o id",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "list",
+    "id" : 20,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 32.5, 361.65, 250.35, 499.7 ],
+    "numbering style" : "arabic numbers",
+    "number of list items" : 6,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 32.5, 477.45, 236.885, 499.7 ],
+      "font" : "Calibri",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "1. Examine the document for anomalies, such as risky tags, scripts, and embedded artifacts.",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 32.5, 449.92, 241.5, 472.2 ],
+      "font" : "Calibri",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "2. Locate embedded code, such as shellcode, macros, JavaScript, or other suspicious objects.",
+      "kids" : [ {
+        "type" : "image",
+        "id" : 11,
+        "page number" : 1,
+        "bounding box" : [ 31.0, 475.2, 252.58, 475.7 ]
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 32.5, 433.67, 242.6, 443.67 ],
+      "font" : "Calibri",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "3. Extract suspicious code or objects from the file.",
+      "kids" : [ {
+        "type" : "image",
+        "id" : 12,
+        "page number" : 1,
+        "bounding box" : [ 31.0, 446.67, 252.58, 447.17 ]
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 32.5, 405.42, 235.82, 427.67 ],
+      "font" : "Calibri",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "4. If relevant, deobfuscate and examine macros, JavaScript, or other embedded code.",
+      "kids" : [ {
+        "type" : "image",
+        "id" : 13,
+        "page number" : 1,
+        "bounding box" : [ 31.0, 430.67, 252.58, 431.17 ]
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 32.5, 376.9, 250.35, 399.15 ],
+      "font" : "Calibri",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "5. If relevant, emulate, disassemble and/or debug shellcode that you extracted from the document.",
+      "kids" : [ {
+        "type" : "image",
+        "id" : 14,
+        "page number" : 1,
+        "bounding box" : [ 31.0, 402.17, 252.58, 402.67 ]
+      }, {
+        "type" : "image",
+        "id" : 15,
+        "page number" : 1,
+        "bounding box" : [ 31.0, 375.15, 252.58, 375.65 ]
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 32.5, 361.65, 248.28, 371.65 ],
+      "font" : "Calibri",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "6. Understand the next steps in the infection chain.",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 63,
+    "page number" : 1,
+    "bounding box" : [ 286.85, 495.2, 408.88, 495.7 ]
+  }, {
+    "type" : "image",
+    "id" : 64,
+    "page number" : 1,
+    "bounding box" : [ 408.88, 495.2, 516.17, 495.7 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 62,
+    "page number" : 1,
+    "bounding box" : [ 413.88, 469.7, 501.0, 491.95 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Find obfuscated URLs in file.xls macros."
+  }, {
+    "type" : "paragraph",
+    "id" : 61,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 471.134, 401.38, 490.634 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "oledump.py file.xls -p plugin_http_heuristics"
+  }, {
+    "type" : "image",
+    "id" : 68,
+    "page number" : 1,
+    "bounding box" : [ 286.85, 467.45, 408.88, 467.95 ]
+  }, {
+    "type" : "image",
+    "id" : 69,
+    "page number" : 1,
+    "bounding box" : [ 408.88, 467.45, 516.17, 467.95 ]
+  }, {
+    "type" : "image",
+    "id" : 129,
+    "page number" : 1,
+    "bounding box" : [ 541.42, 465.2, 622.95, 465.7 ]
+  }, {
+    "type" : "image",
+    "id" : 130,
+    "page number" : 1,
+    "bounding box" : [ 622.95, 465.2, 770.75, 465.7 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 67,
+    "page number" : 1,
+    "bounding box" : [ 373.38, 441.67, 507.24, 463.92 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Emulate the execution of macros in file.doc to analyze them."
+  }, {
+    "type" : "paragraph",
+    "id" : 65,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 443.354, 332.022, 462.854 ],
+    "font" : "Consolas-Italic",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "vmonkey file.doc"
+  }, {
+    "type" : "paragraph",
+    "id" : 128,
+    "page number" : 1,
+    "bounding box" : [ 627.7, 439.42, 763.75, 461.67 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Display contents of object id. Add “-d” to dump object’s stream."
+  }, {
+    "type" : "image",
+    "id" : 66,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 454.17, 327.1, 454.92 ]
+  }, {
+    "type" : "image",
+    "id" : 73,
+    "page number" : 1,
+    "bounding box" : [ 286.85, 439.42, 368.38, 439.92 ]
+  }, {
+    "type" : "image",
+    "id" : 74,
+    "page number" : 1,
+    "bounding box" : [ 368.38, 439.42, 516.17, 439.92 ]
+  }, {
+    "type" : "image",
+    "id" : 133,
+    "page number" : 1,
+    "bounding box" : [ 541.42, 436.42, 655.45, 436.92 ]
+  }, {
+    "type" : "image",
+    "id" : 134,
+    "page number" : 1,
+    "bounding box" : [ 655.45, 436.42, 770.75, 436.92 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 72,
+    "page number" : 1,
+    "bounding box" : [ 373.38, 413.67, 496.71, 435.92 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Remove the password prompt from macros in file.ppt."
+  }, {
+    "type" : "paragraph",
+    "id" : 70,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 415.354, 361.88, 434.854 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "evilclippy -uu file.ppt"
+  }, {
+    "type" : "paragraph",
+    "id" : 132,
+    "page number" : 1,
+    "bounding box" : [ 660.2, 410.67, 740.0, 432.92 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Display objects that reference object id."
+  }, {
+    "type" : "paragraph",
+    "id" : 131,
+    "page number" : 1,
+    "bounding box" : [ 546.67, 412.354, 616.2, 431.854 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "pdf-parser.py file.pdf -r id"
+  }, {
+    "type" : "image",
+    "id" : 71,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 426.17, 342.1, 426.92 ]
+  }, {
+    "type" : "image",
+    "id" : 78,
+    "page number" : 1,
+    "bounding box" : [ 286.85, 411.42, 386.38, 411.92 ]
+  }, {
+    "type" : "image",
+    "id" : 79,
+    "page number" : 1,
+    "bounding box" : [ 386.38, 411.42, 516.17, 411.92 ]
+  }, {
+    "type" : "image",
+    "id" : 139,
+    "page number" : 1,
+    "bounding box" : [ 539.92, 352.4, 770.75, 408.92 ]
+  }, {
+    "type" : "image",
+    "id" : 138,
+    "page number" : 1,
+    "bounding box" : [ 541.42, 408.42, 655.45, 408.92 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 77,
+    "page number" : 1,
+    "bounding box" : [ 391.38, 373.65, 507.87, 408.17 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Decrypt outfile.docm using specified password to create outfile.docm."
+  }, {
+    "type" : "paragraph",
+    "id" : 75,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 373.834, 371.88, 406.854 ],
+    "font" : "Consolas-Italic",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "msoffcrypto-tool infile.docm outfile.docm -p"
+  }, {
+    "type" : "paragraph",
+    "id" : 137,
+    "page number" : 1,
+    "bounding box" : [ 660.2, 370.4, 758.44, 404.9 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Decrypt infile.pdf using password pass to create outfile.pdf."
+  }, {
+    "type" : "paragraph",
+    "id" : 135,
+    "page number" : 1,
+    "bounding box" : [ 546.67, 373.834, 645.824, 403.834 ],
+    "font" : "Consolas-Italic",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "qpdf --password=pass --decrypt infile.pdf outfile.pdf"
+  }, {
+    "type" : "image",
+    "id" : 76,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 398.15, 371.625, 398.925 ]
+  }, {
+    "type" : "image",
+    "id" : 136,
+    "page number" : 1,
+    "bounding box" : [ 546.67, 395.15, 566.67, 395.9 ]
+  }, {
+    "type" : "image",
+    "id" : 83,
+    "page number" : 1,
+    "bounding box" : [ 286.85, 371.4, 386.38, 371.9 ]
+  }, {
+    "type" : "image",
+    "id" : 84,
+    "page number" : 1,
+    "bounding box" : [ 386.38, 371.4, 516.17, 371.9 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 82,
+    "page number" : 1,
+    "bounding box" : [ 391.38, 345.65, 503.67, 367.9 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Disassemble VBA-stomped p-code macro from file.doc."
+  }, {
+    "type" : "paragraph",
+    "id" : 80,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 347.334, 332.022, 366.834 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "pcodedmp file.doc"
+  }, {
+    "type" : "heading",
+    "id" : 140,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 541.42, 352.65, 745.906, 363.65 ],
+    "heading level" : 2,
+    "font" : "Calibri-Bold",
+    "font size" : 11.0,
+    "text color" : "[1.0]",
+    "content" : "Shellcode and Other Analysis Commands"
+  }, {
+    "type" : "image",
+    "id" : 81,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 358.15, 332.1, 358.9 ]
+  }, {
+    "type" : "image",
+    "id" : 21,
+    "page number" : 1,
+    "bounding box" : [ 31.0, 341.15, 252.58, 355.4 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 22,
+    "page number" : 1,
+    "bounding box" : [ 32.5, 315.38, 247.35, 353.15 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Microsoft Office Format Notes Binary Microsoft Office document files (.doc, .xls, etc.) use the OLE2 (a.k.a. Structured Storage) format."
+  }, {
+    "type" : "paragraph",
+    "id" : 144,
+    "page number" : 1,
+    "bounding box" : [ 628.7, 326.63, 758.88, 348.9 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Locate shellcode patterns inside the binary file file.bin."
+  }, {
+    "type" : "paragraph",
+    "id" : 141,
+    "page number" : 1,
+    "bounding box" : [ 546.67, 338.834, 606.2, 347.834 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "xorsearch -W"
+  }, {
+    "type" : "image",
+    "id" : 88,
+    "page number" : 1,
+    "bounding box" : [ 286.85, 343.4, 386.38, 343.9 ]
+  }, {
+    "type" : "image",
+    "id" : 89,
+    "page number" : 1,
+    "bounding box" : [ 386.38, 343.4, 516.17, 343.9 ]
+  }, {
+    "type" : "image",
+    "id" : 142,
+    "page number" : 1,
+    "bounding box" : [ 546.67, 339.15, 591.445, 339.9 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 87,
+    "page number" : 1,
+    "bounding box" : [ 391.38, 317.63, 503.67, 339.88 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Decompile VBA-stomped p-code macro from file.doc."
+  }, {
+    "type" : "paragraph",
+    "id" : 85,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 319.314, 342.012, 338.814 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "pcode2code file.doc"
+  }, {
+    "type" : "paragraph",
+    "id" : 143,
+    "level" : "5",
+    "page number" : 1,
+    "bounding box" : [ 546.67, 328.314, 611.099, 337.314 ],
+    "font" : "Consolas-Italic",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "-d 3 file.bin"
+  }, {
+    "type" : "image",
+    "id" : 86,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 330.13, 342.1, 330.88 ]
+  }, {
+    "type" : "image",
+    "id" : 148,
+    "page number" : 1,
+    "bounding box" : [ 541.42, 324.38, 623.95, 324.88 ]
+  }, {
+    "type" : "image",
+    "id" : 149,
+    "page number" : 1,
+    "bounding box" : [ 623.95, 324.38, 770.75, 324.88 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 147,
+    "page number" : 1,
+    "bounding box" : [ 614.2, 298.63, 761.95, 320.88 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Emulate execution of shellcode in file.bin. Use “/off” to specify offset."
+  }, {
+    "type" : "paragraph",
+    "id" : 145,
+    "page number" : 1,
+    "bounding box" : [ 546.67, 300.314, 591.42, 319.814 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "scdbgc /f file.bin"
+  }, {
+    "type" : "image",
+    "id" : 93,
+    "page number" : 1,
+    "bounding box" : [ 286.85, 315.63, 386.38, 316.13 ]
+  }, {
+    "type" : "image",
+    "id" : 94,
+    "page number" : 1,
+    "bounding box" : [ 386.38, 315.63, 516.17, 316.13 ]
+  }, {
+    "type" : "image",
+    "id" : 24,
+    "page number" : 1,
+    "bounding box" : [ 31.0, 312.13, 252.58, 312.63 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 92,
+    "page number" : 1,
+    "bounding box" : [ 391.38, 289.88, 497.56, 312.13 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Extract objects embedded into RTF file.rtf."
+  }, {
+    "type" : "image",
+    "id" : 146,
+    "page number" : 1,
+    "bounding box" : [ 546.67, 311.13, 576.67, 311.88 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 90,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 291.564, 337.017, 311.064 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "rtfobj.py file.rtf"
+  }, {
+    "type" : "paragraph",
+    "id" : 23,
+    "page number" : 1,
+    "bounding box" : [ 32.5, 286.88, 240.16, 309.13 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "SRP streams in OLE2 documents sometimes store a cached version of earlier VBA macro code."
+  }, {
+    "type" : "image",
+    "id" : 91,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 302.38, 337.1, 303.13 ]
+  }, {
+    "type" : "image",
+    "id" : 153,
+    "page number" : 1,
+    "bounding box" : [ 541.42, 296.63, 613.95, 297.13 ]
+  }, {
+    "type" : "image",
+    "id" : 154,
+    "page number" : 1,
+    "bounding box" : [ 613.95, 296.63, 770.75, 297.13 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 152,
+    "page number" : 1,
+    "bounding box" : [ 618.7, 270.85, 762.77, 293.13 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Execute shellcode in file.bin to observe behavior in an isolated lab."
+  }, {
+    "type" : "paragraph",
+    "id" : 150,
+    "page number" : 1,
+    "bounding box" : [ 546.67, 272.284, 601.4, 292.064 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "runsc32 -f file.bin -n"
+  }, {
+    "type" : "image",
+    "id" : 25,
+    "page number" : 1,
+    "bounding box" : [ 106.02, 287.38, 201.57, 288.13 ]
+  }, {
+    "type" : "image",
+    "id" : 98,
+    "page number" : 1,
+    "bounding box" : [ 286.85, 287.63, 386.38, 288.13 ]
+  }, {
+    "type" : "image",
+    "id" : 99,
+    "page number" : 1,
+    "bounding box" : [ 386.38, 287.63, 516.17, 288.13 ]
+  }, {
+    "type" : "image",
+    "id" : 27,
+    "page number" : 1,
+    "bounding box" : [ 31.0, 283.63, 252.58, 284.13 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 97,
+    "page number" : 1,
+    "bounding box" : [ 391.38, 261.85, 502.86, 284.13 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "List groups and structure of RTF file file.rtf."
+  }, {
+    "type" : "image",
+    "id" : 151,
+    "page number" : 1,
+    "bounding box" : [ 546.67, 283.38, 581.42, 284.13 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 95,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 263.534, 342.012, 283.064 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "rtfdump.py file.rtf"
+  }, {
+    "type" : "paragraph",
+    "id" : 26,
+    "page number" : 1,
+    "bounding box" : [ 32.5, 258.6, 246.05, 280.85 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "OOXML document files (.docx, .xlsm, etc.) supported by Microsoft Office are compressed zip archives."
+  }, {
+    "type" : "image",
+    "id" : 96,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 274.35, 342.1, 275.125 ]
+  }, {
+    "type" : "image",
+    "id" : 158,
+    "page number" : 1,
+    "bounding box" : [ 541.42, 268.6, 623.95, 269.1 ]
+  }, {
+    "type" : "image",
+    "id" : 159,
+    "page number" : 1,
+    "bounding box" : [ 623.95, 268.6, 770.75, 269.1 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 157,
+    "page number" : 1,
+    "bounding box" : [ 628.7, 242.85, 741.35, 265.1 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "List Base64-encoded strings present in file file.txt."
+  }, {
+    "type" : "paragraph",
+    "id" : 155,
+    "page number" : 1,
+    "bounding box" : [ 546.67, 244.534, 611.074, 264.034 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "base64dump.py file.txt"
+  }, {
+    "type" : "image",
+    "id" : 102,
+    "page number" : 1,
+    "bounding box" : [ 286.85, 259.6, 386.38, 260.1 ]
+  }, {
+    "type" : "image",
+    "id" : 103,
+    "page number" : 1,
+    "bounding box" : [ 386.38, 259.6, 516.17, 260.1 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 101,
+    "page number" : 1,
+    "bounding box" : [ 391.38, 234.1, 499.3, 256.35 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Examine objects in RTF file file.rtf."
+  }, {
+    "type" : "image",
+    "id" : 156,
+    "page number" : 1,
+    "bounding box" : [ 546.67, 255.35, 611.195, 256.1 ]
+  }, {
+    "type" : "image",
+    "id" : 29,
+    "page number" : 1,
+    "bounding box" : [ 31.0, 255.35, 252.58, 255.85 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 100,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 235.534, 347.05, 255.034 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "rtfdump.py file.rtf -O"
+  }, {
+    "type" : "paragraph",
+    "id" : 28,
+    "page number" : 1,
+    "bounding box" : [ 32.5, 230.1, 242.75, 252.35 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "VBA macros in OOXML documents are stored inside an OLE2 binary file, which is within the zip archive."
+  }, {
+    "type" : "image",
+    "id" : 165,
+    "page number" : 1,
+    "bounding box" : [ 539.92, 195.82, 770.75, 241.1 ]
+  }, {
+    "type" : "image",
+    "id" : 164,
+    "page number" : 1,
+    "bounding box" : [ 541.42, 240.6, 623.95, 241.1 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 163,
+    "level" : "7",
+    "page number" : 1,
+    "bounding box" : [ 627.7, 214.85, 758.99, 237.1 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Convert numbers that represent characters in file to a string."
+  }, {
+    "type" : "paragraph",
+    "id" : 160,
+    "page number" : 1,
+    "bounding box" : [ 546.67, 216.534, 616.142, 236.034 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "numbers-tostring.py file"
+  }, {
+    "type" : "image",
+    "id" : 107,
+    "page number" : 1,
+    "bounding box" : [ 286.85, 231.85, 395.38, 232.35 ]
+  }, {
+    "type" : "image",
+    "id" : 108,
+    "page number" : 1,
+    "bounding box" : [ 395.38, 231.85, 516.17, 232.35 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 106,
+    "page number" : 1,
+    "bounding box" : [ 400.38, 206.07, 505.35, 228.35 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Extract hex contents from group in RTF file file.rtf."
+  }, {
+    "type" : "image",
+    "id" : 161,
+    "page number" : 1,
+    "bounding box" : [ 546.67, 227.35, 601.195, 228.1 ]
+  }, {
+    "type" : "image",
+    "id" : 31,
+    "page number" : 1,
+    "bounding box" : [ 31.0, 226.85, 252.58, 227.35 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 104,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 218.284, 386.529, 227.284 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "rtfdump.py file.rtf"
+  }, {
+    "type" : "paragraph",
+    "id" : 30,
+    "page number" : 1,
+    "bounding box" : [ 32.5, 157.83, 250.05, 223.85 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Excel supports XLM macros that are embedded as formulas in sheets without the OLE2 binary file. RTF documents don’t support macros but can contain malicious embedded files and objects. Useful MS Office File Analysis Commands"
+  }, {
+    "type" : "image",
+    "id" : 162,
+    "page number" : 1,
+    "bounding box" : [ 546.67, 216.85, 591.445, 217.6 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 105,
+    "level" : "5",
+    "page number" : 1,
+    "bounding box" : [ 292.35, 207.764, 342.05, 216.764 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "-s 5 -H -d"
+  }, {
+    "type" : "paragraph",
+    "id" : 166,
+    "page number" : 1,
+    "bounding box" : [ 541.42, 170.07, 750.94, 208.08 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Additional Document Analysis Tools SpiderMonkey, cscript, and box-js help deobfuscate JavaScript that you extract from document files."
+  }, {
+    "type" : "image",
+    "id" : 114,
+    "page number" : 1,
+    "bounding box" : [ 285.35, 159.07, 516.17, 204.32 ]
+  }, {
+    "type" : "image",
+    "id" : 113,
+    "page number" : 1,
+    "bounding box" : [ 286.85, 203.82, 395.38, 204.32 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 112,
+    "page number" : 1,
+    "bounding box" : [ 400.38, 178.08, 508.1, 200.32 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Deobfuscate XLM (Excel 4) macros in file.xlsm."
+  }, {
+    "type" : "image",
+    "id" : 32,
+    "page number" : 1,
+    "bounding box" : [ 31.0, 199.32, 252.58, 199.82 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 109,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 190.254, 366.744, 199.254 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "xlmdeobfuscator"
+  }, {
+    "type" : "image",
+    "id" : 110,
+    "page number" : 1,
+    "bounding box" : [ 292.35, 190.57, 366.875, 191.32 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 111,
+    "level" : "5",
+    "page number" : 1,
+    "bounding box" : [ 292.35, 179.764, 371.767, 188.764 ],
+    "font" : "Consolas-Italic",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "--file file.xlsm"
+  }, {
+    "type" : "image",
+    "id" : 167,
+    "page number" : 1,
+    "bounding box" : [ 541.42, 182.82, 678.475, 183.57 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 115,
+    "page number" : 1,
+    "bounding box" : [ 286.85, 57.275, 494.62, 171.08 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Risky PDF Keywords /OpenAction and /AA specify the script or action to run automatically. /JavaScript, /JS, /AcroForm, and /XFA can specify JavaScript to run. /URI accesses a URL, perhaps for phishing. /SubmitForm and /GoToR can send data to URL. /ObjStm can hide objects inside an object stream."
+  }, {
+    "type" : "image",
+    "id" : 33,
+    "page number" : 1,
+    "bounding box" : [ 31.0, 157.57, 252.58, 171.07 ]
+  }, {
+    "type" : "image",
+    "id" : 169,
+    "page number" : 1,
+    "bounding box" : [ 539.92, 166.82, 761.5, 167.32 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 168,
+    "page number" : 1,
+    "bounding box" : [ 541.42, 141.55, 731.34, 163.83 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Use the debugger built into Microsoft Office to deobfuscate macros in an isolated lab."
+  }, {
+    "type" : "paragraph",
+    "id" : 36,
+    "page number" : 1,
+    "bounding box" : [ 136.8, 131.8, 253.21, 154.05 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Examine contents of OOXML file file.pptx."
+  }, {
+    "type" : "paragraph",
+    "id" : 34,
+    "page number" : 1,
+    "bounding box" : [ 37.775, 133.484, 87.437, 152.984 ],
+    "font" : "Consolas",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "zipdump.py file.pptx"
+  }, {
+    "type" : "image",
+    "id" : 35,
+    "page number" : 1,
+    "bounding box" : [ 37.775, 144.3, 87.525, 145.05 ]
+  }, {
+    "type" : "image",
+    "id" : 171,
+    "page number" : 1,
+    "bounding box" : [ 539.92, 126.05, 761.5, 139.05 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 170,
+    "page number" : 1,
+    "bounding box" : [ 541.42, 113.3, 746.99, 135.55 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Use AMSIScriptContentRetrieval.ps1 to observe Microsoft Office execute macros in an isolated lab."
+  }, {
+    "type" : "image",
+    "id" : 116,
+    "page number" : 1,
+    "bounding box" : [ 285.35, 131.05, 506.9, 131.55 ]
+  }, {
+    "type" : "image",
+    "id" : 40,
+    "page number" : 1,
+    "bounding box" : [ 32.5, 129.55, 132.05, 130.05 ]
+  }, {
+    "type" : "image",
+    "id" : 41,
+    "page number" : 1,
+    "bounding box" : [ 132.05, 129.55, 261.83, 130.05 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 39,
+    "page number" : 1,
+    "bounding box" : [ 136.8, 104.05, 254.08, 126.3 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Extract file with index 3 from file.pptx to STDOUT."
+  }, {
+    "type" : "paragraph",
+    "id" : 37,
+    "page number" : 1,
+    "bounding box" : [ 37.775, 105.484, 122.0, 124.984 ],
+    "font" : "Consolas-Italic",
+    "font size" : 9.0,
+    "text color" : "[0.0]",
+    "content" : "zipdump.py file.pptx -s 3 -d"
+  }, {
+    "type" : "image",
+    "id" : 38,
+    "page number" : 1,
+    "bounding box" : [ 37.775, 116.3, 87.525, 117.05 ]
+  }, {
+    "type" : "image",
+    "id" : 173,
+    "page number" : 1,
+    "bounding box" : [ 539.92, 97.55, 761.5, 110.55 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 172,
+    "page number" : 1,
+    "bounding box" : [ 541.42, 57.275, 750.31, 107.05 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "Some automated analysis sandboxes can analyze aspects of malicious document files. REMnux distro includes many of the free document analysis tools mentioned above."
+  }, {
+    "type" : "image",
+    "id" : 117,
+    "page number" : 1,
+    "bounding box" : [ 285.35, 102.55, 506.9, 103.05 ]
+  }, {
+    "type" : "image",
+    "id" : 45,
+    "page number" : 1,
+    "bounding box" : [ 31.75, 73.775, 261.83, 102.3 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 42,
+    "page number" : 1,
+    "bounding box" : [ 37.775, 88.234, 243.68, 98.3 ],
+    "font" : "Calibri",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "olevba file.xlsm Locate and extract macros"
+  }, {
+    "type" : "image",
+    "id" : 43,
+    "page number" : 1,
+    "bounding box" : [ 37.775, 88.525, 67.775, 89.275 ]
+  }, {
+    "type" : "image",
+    "id" : 118,
+    "page number" : 1,
+    "bounding box" : [ 285.35, 86.525, 506.9, 87.025 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 44,
+    "level" : "2",
+    "page number" : 1,
+    "bounding box" : [ 136.8, 76.025, 194.82, 86.025 ],
+    "font" : "Calibri-Italic",
+    "font size" : 10.0,
+    "text color" : "[0.0]",
+    "content" : "from file.xlsm."
+  }, {
+    "type" : "image",
+    "id" : 174,
+    "page number" : 1,
+    "bounding box" : [ 539.92, 70.025, 761.5, 83.025 ]
+  }, {
+    "type" : "image",
+    "id" : 46,
+    "page number" : 1,
+    "bounding box" : [ 131.3, 73.775, 261.83, 74.275 ]
+  }, {
+    "type" : "image",
+    "id" : 119,
+    "page number" : 1,
+    "bounding box" : [ 285.35, 70.275, 506.9, 70.775 ]
+  }, {
+    "type" : "text block",
+    "id" : 175,
+    "page number" : 1,
+    "bounding box" : [ 29.625, 24.225, 766.675, 54.825 ],
+    "kids" : [ {
+      "type" : "paragraph",
+      "id" : 1,
+      "page number" : 1,
+      "bounding box" : [ 37.525, 28.275, 758.02, 49.275 ],
+      "font" : "Calibri",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "Authored by Lenny Zeltser with feedback from Pedro Bueno and Didier Stevens. Malicious document analysis and related topics are covered in the SANS Institute course FOR610: Reverse-Engineering Malware, which Lenny co-authored. Creative Commons v3 “Attribution” License for this cheat sheet version 4.1. More at zeltser.com/cheat-sheets."
+    }, {
+      "type" : "image",
+      "id" : 2,
+      "page number" : 1,
+      "bounding box" : [ 90.275, 39.775, 359.375, 40.525 ]
+    }, {
+      "type" : "image",
+      "id" : 3,
+      "page number" : 1,
+      "bounding box" : [ 37.525, 28.775, 755.5, 29.525 ]
+    } ]
+  } ]
+}

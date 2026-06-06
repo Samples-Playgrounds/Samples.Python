@@ -1,0 +1,1940 @@
+{
+  "file name" : "keyboard-shortcuts-macos.pdf",
+  "number of pages" : 1,
+  "author" : "Brad Gashler",
+  "title" : null,
+  "creation date" : "D:20210817084506-07'00'",
+  "modification date" : "D:20210817084506-07'00'",
+  "kids" : [ {
+    "type" : "image",
+    "id" : 330,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 559.9, 246.0, 594.0 ],
+    "source" : "keyboard-shortcuts-macos_images/imageFile1.png"
+  }, {
+    "type" : "paragraph",
+    "id" : 333,
+    "page number" : 1,
+    "bounding box" : [ 58.08, 547.648, 211.316, 563.609 ],
+    "font" : "SegoeUI-Light",
+    "font size" : 12.0,
+    "text color" : "[0.0]",
+    "content" : "Keyboard shortcuts for macOS"
+  }, {
+    "type" : "heading",
+    "id" : 161,
+    "level" : "Doctitle",
+    "page number" : 1,
+    "bounding box" : [ 18.0, 519.12, 52.87, 532.368 ],
+    "heading level" : 1,
+    "font" : "SegoeUI-Semibold",
+    "font size" : 9.96,
+    "text color" : "[0.0]",
+    "content" : "General"
+  }, {
+    "type" : "image",
+    "id" : 162,
+    "page number" : 1,
+    "bounding box" : [ 16.56, 516.46, 247.46, 517.18 ]
+  }, {
+    "type" : "image",
+    "id" : 163,
+    "page number" : 1,
+    "bounding box" : [ 17.28, 502.66, 98.304, 513.46 ]
+  }, {
+    "type" : "image",
+    "id" : 168,
+    "page number" : 1,
+    "bounding box" : [ 17.28, 502.66, 246.864, 513.46 ]
+  }, {
+    "type" : "image",
+    "id" : 166,
+    "page number" : 1,
+    "bounding box" : [ 98.304, 502.66, 246.864, 513.46 ]
+  }, {
+    "type" : "image",
+    "id" : 164,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 504.46, 97.584, 512.74 ]
+  }, {
+    "type" : "image",
+    "id" : 167,
+    "page number" : 1,
+    "bounding box" : [ 99.024, 503.38, 246.144, 512.74 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 165,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 480.273, 173.696, 512.691 ],
+    "font" : "SegoeUI",
+    "font size" : 6.96,
+    "text color" : "[0.0]",
+    "content" : "⇧⌘P, F1 Show Command Palette ⌘P Quick Open, Go to File… ⇧⌘N New window/instance"
+  }, {
+    "type" : "image",
+    "id" : 173,
+    "page number" : 1,
+    "bounding box" : [ 17.28, 479.5, 246.864, 490.3 ]
+  }, {
+    "type" : "image",
+    "id" : 169,
+    "page number" : 1,
+    "bounding box" : [ 17.28, 479.5, 98.304, 490.3 ]
+  }, {
+    "type" : "image",
+    "id" : 171,
+    "page number" : 1,
+    "bounding box" : [ 98.304, 479.5, 246.864, 490.3 ]
+  }, {
+    "type" : "image",
+    "id" : 172,
+    "page number" : 1,
+    "bounding box" : [ 99.024, 480.22, 246.144, 489.58 ]
+  }, {
+    "type" : "image",
+    "id" : 170,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 481.3, 97.584, 489.58 ]
+  }, {
+    "type" : "list",
+    "id" : 174,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 18.0, 376.203, 182.062, 478.851 ],
+    "numbering style" : "english letters",
+    "number of list items" : 2,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 18.0, 424.05, 169.8, 478.851 ],
+      "font" : "CambriaMath",
+      "font size" : 9.96,
+      "text color" : "[0.0]",
+      "content" : "⌘W Close window/instance ⌘, User Settings ⌘K ⌘S Keyboard Shortcuts Basic editing",
+      "kids" : [ {
+        "type" : "image",
+        "id" : 153,
+        "page number" : 1,
+        "bounding box" : [ 17.28, 458.14, 98.304, 468.82 ]
+      }, {
+        "type" : "image",
+        "id" : 154,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 459.94, 97.584, 468.1 ]
+      }, {
+        "type" : "image",
+        "id" : 155,
+        "page number" : 1,
+        "bounding box" : [ 98.304, 458.14, 246.864, 468.82 ]
+      }, {
+        "type" : "image",
+        "id" : 156,
+        "page number" : 1,
+        "bounding box" : [ 99.024, 458.86, 246.144, 468.1 ]
+      }, {
+        "type" : "image",
+        "id" : 157,
+        "page number" : 1,
+        "bounding box" : [ 17.28, 458.14, 246.864, 468.82 ]
+      }, {
+        "type" : "image",
+        "id" : 158,
+        "page number" : 1,
+        "bounding box" : [ 16.56, 421.27, 247.46, 421.99 ]
+      }, {
+        "type" : "image",
+        "id" : 159,
+        "page number" : 1,
+        "bounding box" : [ 17.28, 407.59, 97.704, 418.27 ]
+      }, {
+        "type" : "image",
+        "id" : 160,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 409.39, 96.984, 417.55 ]
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 18.0, 376.203, 182.062, 417.621 ],
+      "font" : "CambriaMath",
+      "font size" : 6.96,
+      "text color" : "[0.0]",
+      "content" : "⌘X Cut line (empty selection) ⌘C Copy line (empty selection) ⌥↓ / ⌥↑ Move line down/up ⇧⌥↓ / ⇧⌥↑ Copy line down/up",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 177,
+    "page number" : 1,
+    "bounding box" : [ 17.28, 407.59, 245.304, 418.27 ]
+  }, {
+    "type" : "image",
+    "id" : 175,
+    "page number" : 1,
+    "bounding box" : [ 97.704, 407.59, 245.304, 418.27 ]
+  }, {
+    "type" : "image",
+    "id" : 176,
+    "page number" : 1,
+    "bounding box" : [ 98.424, 408.31, 244.584, 417.55 ]
+  }, {
+    "type" : "image",
+    "id" : 182,
+    "page number" : 1,
+    "bounding box" : [ 17.28, 386.11, 245.304, 396.91 ]
+  }, {
+    "type" : "image",
+    "id" : 178,
+    "page number" : 1,
+    "bounding box" : [ 17.28, 386.11, 97.704, 396.91 ]
+  }, {
+    "type" : "image",
+    "id" : 180,
+    "page number" : 1,
+    "bounding box" : [ 97.704, 386.11, 245.304, 396.91 ]
+  }, {
+    "type" : "image",
+    "id" : 179,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 387.91, 96.984, 396.19 ]
+  }, {
+    "type" : "image",
+    "id" : 181,
+    "page number" : 1,
+    "bounding box" : [ 98.424, 386.83, 244.584, 396.19 ]
+  }, {
+    "type" : "image",
+    "id" : 183,
+    "page number" : 1,
+    "bounding box" : [ 17.28, 364.75, 97.704, 375.43 ]
+  }, {
+    "type" : "list",
+    "id" : 185,
+    "level" : "2",
+    "page number" : 1,
+    "bounding box" : [ 18.0, 25.733, 225.609, 374.781 ],
+    "numbering style" : "english letters",
+    "number of list items" : 2,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 18.0, 247.663, 184.49, 374.781 ],
+      "font" : "CambriaMath",
+      "font size" : 6.96,
+      "text color" : "[0.0]",
+      "content" : "⇧⌘K Delete line ⌘Enter / ⇧⌘Enter Insert line below/above ⇧⌘\\ Jump to matching bracket ⌘] / ⌘[ Indent/outdent line Home / End Go to beginning/end of line ⌘↑ / ⌘↓ Go to beginning/end of file ⌃PgUp / ⌃PgDn Scroll line up/down ⌘PgUp /⌘PgDn Scroll page up/down ⌥⌘[ / ⌥⌘] Fold/unfold region ⌘K ⌘[ / ⌘K ⌘] Fold/unfold all subregions ⌘K ⌘0 / ⌘K ⌘J Fold/unfold all regions ⌘K ⌘C Add line comment",
+      "kids" : [ {
+        "type" : "image",
+        "id" : 120,
+        "page number" : 1,
+        "bounding box" : [ 97.704, 364.75, 245.304, 375.43 ]
+      }, {
+        "type" : "image",
+        "id" : 121,
+        "page number" : 1,
+        "bounding box" : [ 98.424, 365.47, 244.584, 374.71 ]
+      }, {
+        "type" : "image",
+        "id" : 122,
+        "page number" : 1,
+        "bounding box" : [ 17.28, 364.75, 245.304, 375.43 ]
+      }, {
+        "type" : "image",
+        "id" : 123,
+        "page number" : 1,
+        "bounding box" : [ 17.28, 343.27, 97.704, 354.07 ]
+      }, {
+        "type" : "image",
+        "id" : 124,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 345.07, 96.984, 353.35 ]
+      }, {
+        "type" : "image",
+        "id" : 125,
+        "page number" : 1,
+        "bounding box" : [ 97.704, 343.27, 245.304, 354.07 ]
+      }, {
+        "type" : "image",
+        "id" : 126,
+        "page number" : 1,
+        "bounding box" : [ 98.424, 343.99, 244.584, 353.35 ]
+      }, {
+        "type" : "image",
+        "id" : 127,
+        "page number" : 1,
+        "bounding box" : [ 17.28, 343.27, 245.304, 354.07 ]
+      }, {
+        "type" : "image",
+        "id" : 128,
+        "page number" : 1,
+        "bounding box" : [ 17.28, 321.89, 97.704, 332.594 ]
+      }, {
+        "type" : "image",
+        "id" : 129,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 323.81, 96.984, 331.874 ]
+      }, {
+        "type" : "image",
+        "id" : 130,
+        "page number" : 1,
+        "bounding box" : [ 97.704, 321.89, 245.304, 332.594 ]
+      }, {
+        "type" : "image",
+        "id" : 131,
+        "page number" : 1,
+        "bounding box" : [ 98.424, 322.61, 244.584, 331.874 ]
+      }, {
+        "type" : "image",
+        "id" : 132,
+        "page number" : 1,
+        "bounding box" : [ 17.28, 321.89, 245.304, 332.59 ]
+      }, {
+        "type" : "image",
+        "id" : 133,
+        "page number" : 1,
+        "bounding box" : [ 17.28, 300.41, 97.704, 311.21 ]
+      }, {
+        "type" : "image",
+        "id" : 134,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 302.21, 96.984, 310.49 ]
+      }, {
+        "type" : "image",
+        "id" : 135,
+        "page number" : 1,
+        "bounding box" : [ 97.704, 300.41, 245.304, 311.21 ]
+      }, {
+        "type" : "image",
+        "id" : 136,
+        "page number" : 1,
+        "bounding box" : [ 98.424, 301.13, 244.584, 310.49 ]
+      }, {
+        "type" : "image",
+        "id" : 137,
+        "page number" : 1,
+        "bounding box" : [ 17.28, 300.41, 245.304, 311.09 ]
+      }, {
+        "type" : "image",
+        "id" : 138,
+        "page number" : 1,
+        "bounding box" : [ 17.28, 279.05, 97.704, 289.73 ]
+      }, {
+        "type" : "image",
+        "id" : 139,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 280.85, 96.984, 289.01 ]
+      }, {
+        "type" : "image",
+        "id" : 140,
+        "page number" : 1,
+        "bounding box" : [ 97.704, 279.05, 245.304, 289.73 ]
+      }, {
+        "type" : "image",
+        "id" : 141,
+        "page number" : 1,
+        "bounding box" : [ 98.424, 279.77, 244.584, 289.01 ]
+      }, {
+        "type" : "image",
+        "id" : 142,
+        "page number" : 1,
+        "bounding box" : [ 17.28, 279.05, 245.304, 289.73 ]
+      }, {
+        "type" : "image",
+        "id" : 143,
+        "page number" : 1,
+        "bounding box" : [ 17.28, 257.57, 97.704, 268.37 ]
+      }, {
+        "type" : "image",
+        "id" : 144,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 259.37, 96.984, 267.65 ]
+      }, {
+        "type" : "image",
+        "id" : 145,
+        "page number" : 1,
+        "bounding box" : [ 97.704, 257.57, 245.304, 268.37 ]
+      }, {
+        "type" : "image",
+        "id" : 146,
+        "page number" : 1,
+        "bounding box" : [ 98.424, 258.29, 244.584, 267.65 ]
+      }, {
+        "type" : "image",
+        "id" : 147,
+        "page number" : 1,
+        "bounding box" : [ 17.28, 257.57, 245.304, 268.25 ]
+      }, {
+        "type" : "image",
+        "id" : 148,
+        "page number" : 1,
+        "bounding box" : [ 17.28, 236.21, 97.704, 246.89 ]
+      }, {
+        "type" : "image",
+        "id" : 149,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 238.01, 96.984, 246.17 ]
+      }, {
+        "type" : "list",
+        "id" : 150,
+        "level" : "1",
+        "page number" : 1,
+        "bounding box" : [ 18.0, 111.433, 222.789, 246.241 ],
+        "numbering style" : "english letters",
+        "number of list items" : 2,
+        "list items" : [ {
+          "type" : "list item",
+          "page number" : 1,
+          "bounding box" : [ 18.0, 122.113, 222.789, 246.241 ],
+          "font" : "CambriaMath",
+          "font size" : 9.96,
+          "text color" : "[0.0]",
+          "content" : "⌘K ⌘U Remove line comment ⌘/ Toggle line comment ⇧⌥A Toggle block comment ⌥Z Toggle word wrap Multi-cursor and selection ⌥ + click Insert cursor ⌥⌘↑ Insert cursor above ⌥⌘↓ Insert cursor below ⌘U Undo last cursor operation ⇧⌥I Insert cursor at end of each line selected",
+          "kids" : [ {
+            "type" : "image",
+            "id" : 96,
+            "page number" : 1,
+            "bounding box" : [ 97.704, 236.21, 245.304, 246.89 ]
+          }, {
+            "type" : "image",
+            "id" : 97,
+            "page number" : 1,
+            "bounding box" : [ 98.424, 236.93, 244.584, 246.17 ]
+          }, {
+            "type" : "image",
+            "id" : 98,
+            "page number" : 1,
+            "bounding box" : [ 17.28, 236.21, 245.304, 246.89 ]
+          }, {
+            "type" : "image",
+            "id" : 99,
+            "page number" : 1,
+            "bounding box" : [ 17.28, 214.73, 97.704, 225.53 ]
+          }, {
+            "type" : "image",
+            "id" : 100,
+            "page number" : 1,
+            "bounding box" : [ 18.0, 216.53, 96.984, 224.81 ]
+          }, {
+            "type" : "image",
+            "id" : 101,
+            "page number" : 1,
+            "bounding box" : [ 97.704, 214.73, 245.304, 225.53 ]
+          }, {
+            "type" : "image",
+            "id" : 102,
+            "page number" : 1,
+            "bounding box" : [ 98.424, 215.45, 244.584, 224.81 ]
+          }, {
+            "type" : "image",
+            "id" : 103,
+            "page number" : 1,
+            "bounding box" : [ 17.28, 214.73, 245.304, 225.41 ]
+          }, {
+            "type" : "image",
+            "id" : 104,
+            "page number" : 1,
+            "bounding box" : [ 16.56, 177.86, 247.46, 178.58 ]
+          }, {
+            "type" : "image",
+            "id" : 105,
+            "page number" : 1,
+            "bounding box" : [ 17.28, 164.18, 97.584, 174.98 ]
+          }, {
+            "type" : "image",
+            "id" : 106,
+            "page number" : 1,
+            "bounding box" : [ 18.0, 165.98, 96.864, 174.26 ]
+          }, {
+            "type" : "image",
+            "id" : 107,
+            "page number" : 1,
+            "bounding box" : [ 97.584, 164.18, 245.304, 174.98 ]
+          }, {
+            "type" : "image",
+            "id" : 108,
+            "page number" : 1,
+            "bounding box" : [ 98.304, 164.9, 244.584, 174.26 ]
+          }, {
+            "type" : "image",
+            "id" : 109,
+            "page number" : 1,
+            "bounding box" : [ 17.28, 164.18, 245.304, 174.86 ]
+          }, {
+            "type" : "image",
+            "id" : 110,
+            "page number" : 1,
+            "bounding box" : [ 17.28, 142.7, 97.584, 153.5 ]
+          }, {
+            "type" : "image",
+            "id" : 111,
+            "page number" : 1,
+            "bounding box" : [ 18.0, 144.62, 96.864, 152.78 ]
+          }, {
+            "type" : "image",
+            "id" : 112,
+            "page number" : 1,
+            "bounding box" : [ 97.584, 142.7, 245.304, 153.5 ]
+          }, {
+            "type" : "image",
+            "id" : 113,
+            "page number" : 1,
+            "bounding box" : [ 98.304, 143.42, 244.584, 152.78 ]
+          }, {
+            "type" : "image",
+            "id" : 114,
+            "page number" : 1,
+            "bounding box" : [ 17.28, 142.82, 245.304, 153.5 ]
+          }, {
+            "type" : "image",
+            "id" : 115,
+            "page number" : 1,
+            "bounding box" : [ 17.28, 121.34, 97.584, 132.14 ]
+          }, {
+            "type" : "image",
+            "id" : 116,
+            "page number" : 1,
+            "bounding box" : [ 18.0, 123.14, 96.864, 131.42 ]
+          }, {
+            "type" : "image",
+            "id" : 117,
+            "page number" : 1,
+            "bounding box" : [ 97.584, 121.34, 245.304, 132.14 ]
+          }, {
+            "type" : "image",
+            "id" : 118,
+            "page number" : 1,
+            "bounding box" : [ 98.304, 122.06, 244.584, 131.42 ]
+          }, {
+            "type" : "image",
+            "id" : 119,
+            "page number" : 1,
+            "bounding box" : [ 17.28, 121.34, 245.304, 132.02 ]
+          } ]
+        }, {
+          "type" : "list item",
+          "page number" : 1,
+          "bounding box" : [ 18.0, 111.433, 153.378, 120.691 ],
+          "font" : "CambriaMath",
+          "font size" : 6.96,
+          "text color" : "[0.0]",
+          "content" : "⌘L Select current line",
+          "kids" : [ ]
+        } ]
+      }, {
+        "type" : "image",
+        "id" : 151,
+        "page number" : 1,
+        "bounding box" : [ 17.28, 99.864, 97.584, 110.664 ]
+      }, {
+        "type" : "image",
+        "id" : 152,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 101.78, 96.864, 109.94 ]
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 18.0, 25.733, 225.609, 109.891 ],
+      "font" : "CambriaMath",
+      "font size" : 6.96,
+      "text color" : "[0.0]",
+      "content" : "⇧⌘L Select all occurrences of current selection ⌘F2 Select all occurrences of current word ⌃⇧⌘→ / ← Expand / shrink selection ⇧⌥ + drag mouse Column (box) selection ⇧⌥⌘↑ / ↓ Column (box) selection up/down ⇧⌥⌘← / → Column (box) selection left/right ⇧⌥⌘PgUp Column (box) selection page up ⇧⌥⌘PgDn Column (box) selection page down",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 184,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 366.55, 96.984, 374.71 ]
+  }, {
+    "type" : "image",
+    "id" : 186,
+    "page number" : 1,
+    "bounding box" : [ 97.584, 99.864, 245.304, 110.664 ]
+  }, {
+    "type" : "image",
+    "id" : 188,
+    "page number" : 1,
+    "bounding box" : [ 17.28, 99.984, 245.304, 110.66 ]
+  }, {
+    "type" : "image",
+    "id" : 187,
+    "page number" : 1,
+    "bounding box" : [ 98.304, 100.58, 244.584, 109.94 ]
+  }, {
+    "type" : "image",
+    "id" : 189,
+    "page number" : 1,
+    "bounding box" : [ 17.28, 78.48, 97.584, 89.28 ]
+  }, {
+    "type" : "image",
+    "id" : 191,
+    "page number" : 1,
+    "bounding box" : [ 97.584, 78.48, 245.304, 89.28 ]
+  }, {
+    "type" : "image",
+    "id" : 193,
+    "page number" : 1,
+    "bounding box" : [ 17.28, 78.48, 245.304, 89.16 ]
+  }, {
+    "type" : "image",
+    "id" : 190,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 80.28, 96.864, 88.56 ]
+  }, {
+    "type" : "image",
+    "id" : 192,
+    "page number" : 1,
+    "bounding box" : [ 98.304, 79.2, 244.584, 88.56 ]
+  }, {
+    "type" : "image",
+    "id" : 194,
+    "page number" : 1,
+    "bounding box" : [ 17.28, 57.0, 97.584, 67.8 ]
+  }, {
+    "type" : "image",
+    "id" : 196,
+    "page number" : 1,
+    "bounding box" : [ 97.584, 57.0, 245.304, 67.8 ]
+  }, {
+    "type" : "image",
+    "id" : 198,
+    "page number" : 1,
+    "bounding box" : [ 17.28, 57.12, 245.304, 67.8 ]
+  }, {
+    "type" : "image",
+    "id" : 195,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 58.92, 96.864, 67.08 ]
+  }, {
+    "type" : "image",
+    "id" : 197,
+    "page number" : 1,
+    "bounding box" : [ 98.304, 57.72, 244.584, 67.08 ]
+  }, {
+    "type" : "image",
+    "id" : 199,
+    "page number" : 1,
+    "bounding box" : [ 17.28, 35.64, 97.584, 46.44 ]
+  }, {
+    "type" : "image",
+    "id" : 201,
+    "page number" : 1,
+    "bounding box" : [ 97.584, 35.64, 245.304, 46.44 ]
+  }, {
+    "type" : "image",
+    "id" : 203,
+    "page number" : 1,
+    "bounding box" : [ 17.28, 35.64, 245.304, 46.32 ]
+  }, {
+    "type" : "image",
+    "id" : 200,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 37.44, 96.864, 45.72 ]
+  }, {
+    "type" : "image",
+    "id" : 202,
+    "page number" : 1,
+    "bounding box" : [ 98.304, 36.36, 244.584, 45.72 ]
+  }, {
+    "type" : "heading",
+    "id" : 204,
+    "level" : "Doctitle",
+    "page number" : 1,
+    "bounding box" : [ 282.05, 580.58, 367.613, 593.828 ],
+    "heading level" : 1,
+    "font" : "SegoeUI-Semibold",
+    "font size" : 9.96,
+    "text color" : "[0.0]",
+    "content" : "Search and replace"
+  }, {
+    "type" : "image",
+    "id" : 205,
+    "page number" : 1,
+    "bounding box" : [ 280.61, 577.92, 511.51, 578.64 ]
+  }, {
+    "type" : "image",
+    "id" : 206,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 564.12, 361.61, 574.92 ]
+  }, {
+    "type" : "image",
+    "id" : 207,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 566.04, 360.89, 574.2 ]
+  }, {
+    "type" : "list",
+    "id" : 208,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 282.05, 511.353, 481.026, 574.151 ],
+    "numbering style" : "english letters",
+    "number of list items" : 2,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 282.05, 554.193, 386.349, 574.151 ],
+      "font" : "CambriaMath",
+      "font size" : 6.96,
+      "text color" : "[0.0]",
+      "content" : "⌘F Find ⌥⌘F Replace",
+      "kids" : [ {
+        "type" : "image",
+        "id" : 91,
+        "page number" : 1,
+        "bounding box" : [ 361.61, 564.12, 509.35, 574.92 ]
+      }, {
+        "type" : "image",
+        "id" : 92,
+        "page number" : 1,
+        "bounding box" : [ 362.33, 564.84, 508.63, 574.2 ]
+      }, {
+        "type" : "image",
+        "id" : 93,
+        "page number" : 1,
+        "bounding box" : [ 281.33, 564.24, 509.35, 574.92 ]
+      }, {
+        "type" : "image",
+        "id" : 94,
+        "page number" : 1,
+        "bounding box" : [ 281.33, 542.74, 361.61, 553.42 ]
+      }, {
+        "type" : "image",
+        "id" : 95,
+        "page number" : 1,
+        "bounding box" : [ 282.05, 544.54, 360.89, 552.7 ]
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 282.05, 511.353, 481.026, 552.771 ],
+      "font" : "CambriaMath",
+      "font size" : 6.96,
+      "text color" : "[0.0]",
+      "content" : "⌘G / ⇧⌘G Find next/previous ⌥Enter Select all occurrences of Find match ⌘D Add selection to next Find match ⌘K ⌘D Move last selection to next Find match",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 211,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 542.74, 509.35, 553.42 ]
+  }, {
+    "type" : "image",
+    "id" : 209,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 542.74, 509.35, 553.42 ]
+  }, {
+    "type" : "image",
+    "id" : 210,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 543.46, 508.63, 552.7 ]
+  }, {
+    "type" : "image",
+    "id" : 216,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 521.38, 509.35, 532.06 ]
+  }, {
+    "type" : "image",
+    "id" : 212,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 521.26, 361.61, 532.06 ]
+  }, {
+    "type" : "image",
+    "id" : 214,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 521.26, 509.35, 532.06 ]
+  }, {
+    "type" : "image",
+    "id" : 213,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 523.18, 360.89, 531.34 ]
+  }, {
+    "type" : "image",
+    "id" : 215,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 521.98, 508.63, 531.34 ]
+  }, {
+    "type" : "heading",
+    "id" : 217,
+    "level" : "Doctitle",
+    "page number" : 1,
+    "bounding box" : [ 282.05, 487.2, 385.156, 500.448 ],
+    "heading level" : 1,
+    "font" : "SegoeUI-Semibold",
+    "font size" : 9.96,
+    "text color" : "[0.0]",
+    "content" : "Rich languages editing"
+  }, {
+    "type" : "image",
+    "id" : 218,
+    "page number" : 1,
+    "bounding box" : [ 280.61, 484.54, 511.51, 485.26 ]
+  }, {
+    "type" : "image",
+    "id" : 224,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 470.74, 509.35, 481.54 ]
+  }, {
+    "type" : "image",
+    "id" : 219,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 470.74, 361.61, 481.54 ]
+  }, {
+    "type" : "image",
+    "id" : 222,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 470.74, 509.35, 481.54 ]
+  }, {
+    "type" : "image",
+    "id" : 220,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 472.66, 360.89, 480.82 ]
+  }, {
+    "type" : "image",
+    "id" : 223,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 471.46, 508.63, 480.82 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 221,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 353.763, 446.066, 480.771 ],
+    "font" : "SegoeUI",
+    "font size" : 6.96,
+    "text color" : "[0.0]",
+    "content" : "⌃Space, ⌘I Trigger suggestion ⇧⌘Space Trigger parameter hints ⇧⌥F Format document ⌘K ⌘F Format selection F12 Go to Definition ⌥F12 Peek Definition ⌘K F12 Open Definition to the side ⌘. Quick Fix ⇧F12 Show References F2 Rename Symbol ⌘K ⌘X Trim trailing whitespace ⌘K M Change file language"
+  }, {
+    "type" : "image",
+    "id" : 229,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 449.38, 509.35, 460.06 ]
+  }, {
+    "type" : "image",
+    "id" : 225,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 449.38, 361.61, 460.06 ]
+  }, {
+    "type" : "image",
+    "id" : 227,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 449.38, 509.35, 460.06 ]
+  }, {
+    "type" : "image",
+    "id" : 228,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 450.1, 508.63, 459.34 ]
+  }, {
+    "type" : "image",
+    "id" : 226,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 451.18, 360.89, 459.34 ]
+  }, {
+    "type" : "image",
+    "id" : 234,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 427.87, 509.35, 438.67 ]
+  }, {
+    "type" : "image",
+    "id" : 230,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 427.87, 361.61, 438.67 ]
+  }, {
+    "type" : "image",
+    "id" : 232,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 427.87, 509.35, 438.67 ]
+  }, {
+    "type" : "image",
+    "id" : 231,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 429.91, 360.89, 437.95 ]
+  }, {
+    "type" : "image",
+    "id" : 233,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 428.59, 508.63, 437.95 ]
+  }, {
+    "type" : "image",
+    "id" : 239,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 406.51, 509.35, 417.19 ]
+  }, {
+    "type" : "image",
+    "id" : 235,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 406.51, 361.61, 417.19 ]
+  }, {
+    "type" : "image",
+    "id" : 237,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 406.51, 509.35, 417.19 ]
+  }, {
+    "type" : "image",
+    "id" : 238,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 407.23, 508.63, 416.47 ]
+  }, {
+    "type" : "image",
+    "id" : 236,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 408.31, 360.89, 416.47 ]
+  }, {
+    "type" : "image",
+    "id" : 244,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 385.03, 509.35, 395.83 ]
+  }, {
+    "type" : "image",
+    "id" : 240,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 385.03, 361.61, 395.83 ]
+  }, {
+    "type" : "image",
+    "id" : 242,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 385.03, 509.35, 395.83 ]
+  }, {
+    "type" : "image",
+    "id" : 243,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 385.75, 508.63, 395.11 ]
+  }, {
+    "type" : "image",
+    "id" : 241,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 386.83, 360.89, 395.11 ]
+  }, {
+    "type" : "image",
+    "id" : 249,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 363.67, 509.35, 374.35 ]
+  }, {
+    "type" : "image",
+    "id" : 245,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 363.67, 361.61, 374.35 ]
+  }, {
+    "type" : "image",
+    "id" : 247,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 363.67, 509.35, 374.35 ]
+  }, {
+    "type" : "image",
+    "id" : 246,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 365.47, 360.89, 373.63 ]
+  }, {
+    "type" : "image",
+    "id" : 248,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 364.39, 508.63, 373.63 ]
+  }, {
+    "type" : "heading",
+    "id" : 250,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 282.05, 329.61, 331.73, 342.858 ],
+    "heading level" : 1,
+    "font" : "SegoeUI-Semibold",
+    "font size" : 9.96,
+    "text color" : "[0.0]",
+    "content" : "Navigation"
+  }, {
+    "type" : "image",
+    "id" : 251,
+    "page number" : 1,
+    "bounding box" : [ 280.61, 326.83, 511.51, 327.55 ]
+  }, {
+    "type" : "image",
+    "id" : 252,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 313.13, 361.61, 323.81 ]
+  }, {
+    "type" : "image",
+    "id" : 255,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 313.13, 509.35, 323.81 ]
+  }, {
+    "type" : "image",
+    "id" : 257,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 313.13, 509.35, 323.81 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 254,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 228.223, 475.871, 323.161 ],
+    "font" : "SegoeUI",
+    "font size" : 6.96,
+    "text color" : "[0.0]",
+    "content" : "⌘T Show all Symbols ⌃G Go to Line... ⌘P Go to File... ⇧⌘O Go to Symbol... ⇧⌘M Show Problems panel F8 / ⇧F8 Go to next/previous error or warning ⌃⇧Tab Navigate editor group history ⌃- / ⌃⇧- Go back/forward ⌃⇧M Toggle Tab moves focus"
+  }, {
+    "type" : "image",
+    "id" : 256,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 313.85, 508.63, 323.09 ]
+  }, {
+    "type" : "image",
+    "id" : 253,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 314.93, 360.89, 323.09 ]
+  }, {
+    "type" : "image",
+    "id" : 262,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 291.65, 509.35, 302.45 ]
+  }, {
+    "type" : "image",
+    "id" : 258,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 291.65, 361.61, 302.45 ]
+  }, {
+    "type" : "image",
+    "id" : 260,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 291.65, 509.35, 302.45 ]
+  }, {
+    "type" : "image",
+    "id" : 261,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 292.37, 508.63, 301.73 ]
+  }, {
+    "type" : "image",
+    "id" : 259,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 293.45, 360.89, 301.73 ]
+  }, {
+    "type" : "image",
+    "id" : 267,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 270.29, 509.35, 280.97 ]
+  }, {
+    "type" : "image",
+    "id" : 263,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 270.29, 361.61, 280.97 ]
+  }, {
+    "type" : "image",
+    "id" : 265,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 270.29, 509.35, 280.97 ]
+  }, {
+    "type" : "image",
+    "id" : 266,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 271.01, 508.63, 280.25 ]
+  }, {
+    "type" : "image",
+    "id" : 264,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 272.09, 360.89, 280.25 ]
+  }, {
+    "type" : "image",
+    "id" : 268,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 248.81, 361.61, 259.61 ]
+  }, {
+    "type" : "image",
+    "id" : 272,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 248.81, 509.35, 259.61 ]
+  }, {
+    "type" : "image",
+    "id" : 270,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 248.81, 509.35, 259.61 ]
+  }, {
+    "type" : "image",
+    "id" : 269,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 250.61, 360.89, 258.89 ]
+  }, {
+    "type" : "image",
+    "id" : 271,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 249.53, 508.63, 258.89 ]
+  }, {
+    "type" : "image",
+    "id" : 277,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 227.45, 509.35, 238.13 ]
+  }, {
+    "type" : "image",
+    "id" : 273,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 227.45, 361.61, 238.13 ]
+  }, {
+    "type" : "image",
+    "id" : 275,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 227.45, 509.35, 238.13 ]
+  }, {
+    "type" : "image",
+    "id" : 274,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 229.25, 360.89, 237.41 ]
+  }, {
+    "type" : "image",
+    "id" : 276,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 228.17, 508.63, 237.41 ]
+  }, {
+    "type" : "heading",
+    "id" : 278,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 282.05, 204.04, 371.885, 217.288 ],
+    "heading level" : 1,
+    "font" : "SegoeUI-Semibold",
+    "font size" : 9.96,
+    "text color" : "[0.0]",
+    "content" : "Editor management"
+  }, {
+    "type" : "image",
+    "id" : 279,
+    "page number" : 1,
+    "bounding box" : [ 280.61, 201.26, 511.51, 201.98 ]
+  }, {
+    "type" : "image",
+    "id" : 280,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 187.58, 361.61, 198.38 ]
+  }, {
+    "type" : "image",
+    "id" : 283,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 187.58, 509.35, 198.38 ]
+  }, {
+    "type" : "image",
+    "id" : 285,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 187.58, 509.35, 198.26 ]
+  }, {
+    "type" : "image",
+    "id" : 284,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 188.3, 508.63, 197.66 ]
+  }, {
+    "type" : "image",
+    "id" : 281,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 189.38, 360.89, 197.66 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 282,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 124.033, 479.1, 197.611 ],
+    "font" : "SegoeUI",
+    "font size" : 6.96,
+    "text color" : "[0.0]",
+    "content" : "⌘W Close editor ⌘K F Close folder ⌘\\ Split editor ⌘1 / ⌘2 / ⌘3 Focus into 1st, 2nd, 3rd editor group ⌘K ⌘← / ⌘K ⌘→ Focus into previous/next editor group ⌘K ⇧⌘← / ⌘K ⇧⌘→ Move editor left/right ⌘K ← / ⌘K → Move active editor group"
+  }, {
+    "type" : "image",
+    "id" : 290,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 166.22, 509.35, 176.9 ]
+  }, {
+    "type" : "image",
+    "id" : 286,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 166.1, 361.61, 176.9 ]
+  }, {
+    "type" : "image",
+    "id" : 288,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 166.1, 509.35, 176.9 ]
+  }, {
+    "type" : "image",
+    "id" : 287,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 168.02, 360.89, 176.18 ]
+  }, {
+    "type" : "image",
+    "id" : 289,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 166.82, 508.63, 176.18 ]
+  }, {
+    "type" : "image",
+    "id" : 291,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 144.74, 361.61, 155.54 ]
+  }, {
+    "type" : "image",
+    "id" : 293,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 144.74, 509.35, 155.54 ]
+  }, {
+    "type" : "image",
+    "id" : 295,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 144.74, 509.35, 155.42 ]
+  }, {
+    "type" : "image",
+    "id" : 294,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 145.46, 508.63, 154.82 ]
+  }, {
+    "type" : "image",
+    "id" : 292,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 146.54, 360.89, 154.82 ]
+  }, {
+    "type" : "image",
+    "id" : 300,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 123.38, 509.35, 134.06 ]
+  }, {
+    "type" : "image",
+    "id" : 296,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 123.26, 361.61, 134.06 ]
+  }, {
+    "type" : "image",
+    "id" : 298,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 123.26, 509.35, 134.06 ]
+  }, {
+    "type" : "image",
+    "id" : 297,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 125.18, 360.89, 133.34 ]
+  }, {
+    "type" : "image",
+    "id" : 299,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 123.98, 508.63, 133.34 ]
+  }, {
+    "type" : "heading",
+    "id" : 301,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 282.05, 100.0, 360.255, 113.248 ],
+    "heading level" : 1,
+    "font" : "SegoeUI-Semibold",
+    "font size" : 9.96,
+    "text color" : "[0.0]",
+    "content" : "File management"
+  }, {
+    "type" : "image",
+    "id" : 302,
+    "page number" : 1,
+    "bounding box" : [ 280.61, 97.224, 511.51, 97.944 ]
+  }, {
+    "type" : "image",
+    "id" : 303,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 83.52, 361.61, 94.2 ]
+  }, {
+    "type" : "list",
+    "id" : 305,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 282.05, 19.973, 396.211, 93.551 ],
+    "numbering style" : "english letters",
+    "number of list items" : 2,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 282.05, 84.293, 388.632, 93.551 ],
+      "font" : "CambriaMath",
+      "font size" : 6.96,
+      "text color" : "[0.0]",
+      "content" : "⌘N New File",
+      "kids" : [ {
+        "type" : "image",
+        "id" : 88,
+        "page number" : 1,
+        "bounding box" : [ 361.61, 83.52, 509.35, 94.2 ]
+      }, {
+        "type" : "image",
+        "id" : 89,
+        "page number" : 1,
+        "bounding box" : [ 362.33, 84.24, 508.63, 93.48 ]
+      }, {
+        "type" : "image",
+        "id" : 90,
+        "page number" : 1,
+        "bounding box" : [ 281.33, 83.52, 509.35, 94.2 ]
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 282.05, 19.973, 396.211, 82.751 ],
+      "font" : "CambriaMath",
+      "font size" : 6.96,
+      "text color" : "[0.0]",
+      "content" : "⌘O Open File... ⌘S Save ⇧⌘S Save As... ⌥⌘S Save All ⌘W Close ⌘K ⌘W Close All",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 304,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 85.32, 360.89, 93.48 ]
+  }, {
+    "type" : "image",
+    "id" : 306,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 62.04, 361.61, 72.84 ]
+  }, {
+    "type" : "image",
+    "id" : 308,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 62.04, 509.35, 72.84 ]
+  }, {
+    "type" : "image",
+    "id" : 310,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 62.04, 509.35, 72.84 ]
+  }, {
+    "type" : "image",
+    "id" : 307,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 63.84, 360.89, 72.12 ]
+  }, {
+    "type" : "image",
+    "id" : 309,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 62.76, 508.63, 72.12 ]
+  }, {
+    "type" : "image",
+    "id" : 311,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 40.68, 361.61, 51.36 ]
+  }, {
+    "type" : "image",
+    "id" : 313,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 40.68, 509.35, 51.36 ]
+  }, {
+    "type" : "image",
+    "id" : 315,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 40.68, 509.35, 51.36 ]
+  }, {
+    "type" : "image",
+    "id" : 312,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 42.48, 360.89, 50.64 ]
+  }, {
+    "type" : "image",
+    "id" : 314,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 41.4, 508.63, 50.64 ]
+  }, {
+    "type" : "image",
+    "id" : 320,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 19.2, 509.35, 30.0 ]
+  }, {
+    "type" : "image",
+    "id" : 316,
+    "page number" : 1,
+    "bounding box" : [ 281.33, 19.2, 361.61, 30.0 ]
+  }, {
+    "type" : "image",
+    "id" : 318,
+    "page number" : 1,
+    "bounding box" : [ 361.61, 19.2, 509.35, 30.0 ]
+  }, {
+    "type" : "image",
+    "id" : 317,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 21.0, 360.89, 29.28 ]
+  }, {
+    "type" : "image",
+    "id" : 319,
+    "page number" : 1,
+    "bounding box" : [ 362.33, 19.92, 508.63, 29.28 ]
+  }, {
+    "type" : "list",
+    "id" : 321,
+    "level" : "2",
+    "page number" : 1,
+    "bounding box" : [ 546.07, 469.233, 750.815, 593.351 ],
+    "numbering style" : "english letters",
+    "number of list items" : 1,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.07, 469.233, 750.815, 593.351 ],
+      "font" : "CambriaMath",
+      "font size" : 9.96,
+      "text color" : "[0.0]",
+      "content" : "⇧⌘T Reopen closed editor ⌘K Enter Keep preview mode editor open ⌃Tab / ⌃⇧Tab Open next / previous ⌘K P Copy path of active file ⌘K R Reveal active file in Finder ⌘K O Show active file in new window/instance Display ⌃⌘F Toggle full screen ⌥⌘0 Toggle editor layout (horizontal/vertical) ⌘= / ⇧⌘- Zoom in/out",
+      "kids" : [ {
+        "type" : "image",
+        "id" : 61,
+        "page number" : 1,
+        "bounding box" : [ 545.35, 572.52, 625.654, 583.32 ]
+      }, {
+        "type" : "image",
+        "id" : 62,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 574.44, 624.934, 582.6 ]
+      }, {
+        "type" : "image",
+        "id" : 63,
+        "page number" : 1,
+        "bounding box" : [ 625.66, 572.52, 773.4, 583.32 ]
+      }, {
+        "type" : "image",
+        "id" : 64,
+        "page number" : 1,
+        "bounding box" : [ 626.38, 573.24, 772.68, 582.6 ]
+      }, {
+        "type" : "image",
+        "id" : 65,
+        "page number" : 1,
+        "bounding box" : [ 545.35, 572.52, 773.4, 583.32 ]
+      }, {
+        "type" : "image",
+        "id" : 66,
+        "page number" : 1,
+        "bounding box" : [ 545.35, 551.14, 625.654, 561.844 ]
+      }, {
+        "type" : "image",
+        "id" : 67,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 552.94, 624.934, 561.124 ]
+      }, {
+        "type" : "image",
+        "id" : 68,
+        "page number" : 1,
+        "bounding box" : [ 625.66, 551.14, 773.4, 561.844 ]
+      }, {
+        "type" : "image",
+        "id" : 69,
+        "page number" : 1,
+        "bounding box" : [ 626.38, 551.86, 772.68, 561.124 ]
+      }, {
+        "type" : "image",
+        "id" : 70,
+        "page number" : 1,
+        "bounding box" : [ 545.35, 551.14, 773.4, 561.84 ]
+      }, {
+        "type" : "image",
+        "id" : 71,
+        "page number" : 1,
+        "bounding box" : [ 545.35, 529.66, 625.654, 540.46 ]
+      }, {
+        "type" : "image",
+        "id" : 72,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 531.58, 624.934, 539.74 ]
+      }, {
+        "type" : "image",
+        "id" : 73,
+        "page number" : 1,
+        "bounding box" : [ 625.66, 529.66, 773.4, 540.46 ]
+      }, {
+        "type" : "image",
+        "id" : 74,
+        "page number" : 1,
+        "bounding box" : [ 626.38, 530.38, 772.68, 539.74 ]
+      }, {
+        "type" : "image",
+        "id" : 75,
+        "page number" : 1,
+        "bounding box" : [ 545.35, 529.66, 773.4, 540.46 ]
+      }, {
+        "type" : "image",
+        "id" : 76,
+        "page number" : 1,
+        "bounding box" : [ 544.63, 503.62, 775.56, 504.34 ]
+      }, {
+        "type" : "image",
+        "id" : 77,
+        "page number" : 1,
+        "bounding box" : [ 545.35, 489.94, 625.654, 500.62 ]
+      }, {
+        "type" : "image",
+        "id" : 78,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 491.74, 624.934, 499.9 ]
+      }, {
+        "type" : "image",
+        "id" : 79,
+        "page number" : 1,
+        "bounding box" : [ 625.66, 489.94, 773.4, 500.62 ]
+      }, {
+        "type" : "image",
+        "id" : 80,
+        "page number" : 1,
+        "bounding box" : [ 626.26, 490.66, 772.68, 499.9 ]
+      }, {
+        "type" : "image",
+        "id" : 81,
+        "page number" : 1,
+        "bounding box" : [ 545.35, 489.94, 773.4, 500.62 ]
+      }, {
+        "type" : "image",
+        "id" : 82,
+        "page number" : 1,
+        "bounding box" : [ 545.35, 468.46, 625.654, 479.26 ]
+      }, {
+        "type" : "image",
+        "id" : 83,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 470.26, 624.934, 478.54 ]
+      }, {
+        "type" : "image",
+        "id" : 84,
+        "page number" : 1,
+        "bounding box" : [ 625.66, 468.46, 773.4, 479.26 ]
+      }, {
+        "type" : "image",
+        "id" : 85,
+        "page number" : 1,
+        "bounding box" : [ 626.26, 469.18, 772.68, 478.54 ]
+      }, {
+        "type" : "image",
+        "id" : 86,
+        "page number" : 1,
+        "bounding box" : [ 545.35, 468.46, 773.4, 479.14 ]
+      }, {
+        "type" : "list",
+        "id" : 87,
+        "level" : "1",
+        "page number" : 1,
+        "bounding box" : [ 546.07, 153.913, 699.291, 467.811 ],
+        "numbering style" : "english letters",
+        "number of list items" : 2,
+        "list items" : [ {
+          "type" : "list item",
+          "page number" : 1,
+          "bounding box" : [ 546.07, 458.553, 699.291, 467.811 ],
+          "font" : "CambriaMath",
+          "font size" : 6.96,
+          "text color" : "[0.0]",
+          "content" : "⌘B Toggle Sidebar visibility",
+          "kids" : [ {
+            "type" : "image",
+            "id" : 12,
+            "page number" : 1,
+            "bounding box" : [ 545.35, 447.1, 625.654, 457.78 ]
+          }, {
+            "type" : "image",
+            "id" : 13,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 448.9, 624.934, 457.06 ]
+          }, {
+            "type" : "list",
+            "id" : 14,
+            "level" : "2",
+            "page number" : 1,
+            "bounding box" : [ 546.07, 383.523, 716.267, 457.131 ],
+            "numbering style" : "english letters",
+            "number of list items" : 2,
+            "list items" : [ {
+              "type" : "list item",
+              "page number" : 1,
+              "bounding box" : [ 546.07, 447.873, 716.267, 457.131 ],
+              "font" : "CambriaMath",
+              "font size" : 6.96,
+              "text color" : "[0.0]",
+              "content" : "⇧⌘E Show Explorer / Toggle focus",
+              "kids" : [ {
+                "type" : "image",
+                "id" : 9,
+                "page number" : 1,
+                "bounding box" : [ 625.66, 447.1, 773.4, 457.78 ]
+              }, {
+                "type" : "image",
+                "id" : 10,
+                "page number" : 1,
+                "bounding box" : [ 626.26, 447.82, 772.68, 457.06 ]
+              }, {
+                "type" : "image",
+                "id" : 11,
+                "page number" : 1,
+                "bounding box" : [ 545.35, 447.1, 773.4, 457.78 ]
+              } ]
+            }, {
+              "type" : "list item",
+              "page number" : 1,
+              "bounding box" : [ 546.07, 383.523, 691.935, 446.301 ],
+              "font" : "CambriaMath",
+              "font size" : 6.96,
+              "text color" : "[0.0]",
+              "content" : "⇧⌘F Show Search ⌃⇧G Show Source Control ⇧⌘D Show Debug ⇧⌘X Show Extensions ⇧⌘H Replace in files ⇧⌘J Toggle Search details",
+              "kids" : [ ]
+            } ]
+          }, {
+            "type" : "image",
+            "id" : 15,
+            "page number" : 1,
+            "bounding box" : [ 545.35, 425.59, 625.654, 436.39 ]
+          }, {
+            "type" : "image",
+            "id" : 16,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 427.39, 624.934, 435.67 ]
+          }, {
+            "type" : "image",
+            "id" : 17,
+            "page number" : 1,
+            "bounding box" : [ 625.66, 425.59, 773.4, 436.39 ]
+          }, {
+            "type" : "image",
+            "id" : 18,
+            "page number" : 1,
+            "bounding box" : [ 626.26, 426.31, 772.68, 435.67 ]
+          }, {
+            "type" : "image",
+            "id" : 19,
+            "page number" : 1,
+            "bounding box" : [ 545.35, 425.59, 773.4, 436.27 ]
+          }, {
+            "type" : "image",
+            "id" : 20,
+            "page number" : 1,
+            "bounding box" : [ 545.35, 404.11, 625.654, 414.91 ]
+          }, {
+            "type" : "image",
+            "id" : 21,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 406.03, 624.934, 414.19 ]
+          }, {
+            "type" : "image",
+            "id" : 22,
+            "page number" : 1,
+            "bounding box" : [ 625.66, 404.11, 773.4, 414.91 ]
+          }, {
+            "type" : "image",
+            "id" : 23,
+            "page number" : 1,
+            "bounding box" : [ 626.26, 404.83, 772.68, 414.19 ]
+          }, {
+            "type" : "image",
+            "id" : 24,
+            "page number" : 1,
+            "bounding box" : [ 545.35, 404.23, 773.4, 414.91 ]
+          }, {
+            "type" : "image",
+            "id" : 25,
+            "page number" : 1,
+            "bounding box" : [ 545.35, 382.75, 625.654, 393.55 ]
+          }, {
+            "type" : "image",
+            "id" : 26,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 384.55, 624.934, 392.83 ]
+          }, {
+            "type" : "image",
+            "id" : 27,
+            "page number" : 1,
+            "bounding box" : [ 625.66, 382.75, 773.4, 393.55 ]
+          }, {
+            "type" : "image",
+            "id" : 28,
+            "page number" : 1,
+            "bounding box" : [ 626.26, 383.47, 772.68, 392.83 ]
+          }, {
+            "type" : "image",
+            "id" : 29,
+            "page number" : 1,
+            "bounding box" : [ 545.35, 382.75, 773.4, 393.43 ]
+          }, {
+            "type" : "paragraph",
+            "id" : 30,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 340.683, 738.65, 382.101 ],
+            "font" : "SegoeUI",
+            "font size" : 6.96,
+            "text color" : "[0.0]",
+            "content" : "⇧⌘U Show Output panel ⇧⌘V Open Markdown preview ⌘K V Open Markdown preview to the side ⌘K Z Zen Mode (Esc Esc to exit)"
+          }, {
+            "type" : "image",
+            "id" : 31,
+            "page number" : 1,
+            "bounding box" : [ 545.35, 361.27, 625.654, 372.07 ]
+          }, {
+            "type" : "image",
+            "id" : 32,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 363.19, 624.934, 371.35 ]
+          }, {
+            "type" : "image",
+            "id" : 33,
+            "page number" : 1,
+            "bounding box" : [ 625.66, 361.27, 773.4, 372.07 ]
+          }, {
+            "type" : "image",
+            "id" : 34,
+            "page number" : 1,
+            "bounding box" : [ 626.26, 361.99, 772.68, 371.35 ]
+          }, {
+            "type" : "image",
+            "id" : 35,
+            "page number" : 1,
+            "bounding box" : [ 545.35, 361.39, 773.4, 372.07 ]
+          }, {
+            "type" : "image",
+            "id" : 36,
+            "page number" : 1,
+            "bounding box" : [ 545.35, 339.91, 625.654, 350.71 ]
+          }, {
+            "type" : "image",
+            "id" : 37,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 341.71, 624.934, 349.99 ]
+          }, {
+            "type" : "image",
+            "id" : 38,
+            "page number" : 1,
+            "bounding box" : [ 625.66, 339.91, 773.4, 350.71 ]
+          }, {
+            "type" : "image",
+            "id" : 39,
+            "page number" : 1,
+            "bounding box" : [ 626.26, 340.63, 772.68, 349.99 ]
+          }, {
+            "type" : "image",
+            "id" : 40,
+            "page number" : 1,
+            "bounding box" : [ 545.35, 339.91, 773.4, 350.59 ]
+          }, {
+            "type" : "paragraph",
+            "id" : 41,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 316.51, 576.309, 329.758 ],
+            "font" : "SegoeUI-Semibold",
+            "font size" : 9.96,
+            "text color" : "[0.0]",
+            "content" : "Debug"
+          }, {
+            "type" : "image",
+            "id" : 42,
+            "page number" : 1,
+            "bounding box" : [ 544.63, 313.85, 775.56, 314.57 ]
+          }, {
+            "type" : "image",
+            "id" : 43,
+            "page number" : 1,
+            "bounding box" : [ 545.35, 300.05, 625.654, 310.85 ]
+          }, {
+            "type" : "image",
+            "id" : 44,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 302.09, 624.934, 310.13 ]
+          }, {
+            "type" : "list",
+            "id" : 45,
+            "level" : "3",
+            "page number" : 1,
+            "bounding box" : [ 546.07, 247.303, 682.951, 310.081 ],
+            "numbering style" : "arabic numbers",
+            "number of list items" : 2,
+            "list items" : [ {
+              "type" : "list item",
+              "page number" : 1,
+              "bounding box" : [ 546.07, 279.463, 682.951, 310.081 ],
+              "font" : "ArialMT",
+              "font size" : 6.96,
+              "text color" : "[0.0]",
+              "content" : "F9 Toggle breakpoint F5 Start/Continue F11 / ⇧F11 Step into/ out",
+              "kids" : [ {
+                "type" : "image",
+                "id" : 1,
+                "page number" : 1,
+                "bounding box" : [ 625.66, 300.05, 773.4, 310.85 ]
+              }, {
+                "type" : "image",
+                "id" : 2,
+                "page number" : 1,
+                "bounding box" : [ 626.38, 300.77, 772.68, 310.13 ]
+              }, {
+                "type" : "image",
+                "id" : 3,
+                "page number" : 1,
+                "bounding box" : [ 545.35, 300.05, 773.4, 310.85 ]
+              }, {
+                "type" : "image",
+                "id" : 4,
+                "page number" : 1,
+                "bounding box" : [ 545.35, 278.69, 625.654, 289.37 ]
+              }, {
+                "type" : "image",
+                "id" : 5,
+                "page number" : 1,
+                "bounding box" : [ 546.07, 280.49, 624.934, 288.65 ]
+              }, {
+                "type" : "image",
+                "id" : 6,
+                "page number" : 1,
+                "bounding box" : [ 625.66, 278.69, 773.4, 289.37 ]
+              }, {
+                "type" : "image",
+                "id" : 7,
+                "page number" : 1,
+                "bounding box" : [ 626.38, 279.41, 772.68, 288.65 ]
+              }, {
+                "type" : "image",
+                "id" : 8,
+                "page number" : 1,
+                "bounding box" : [ 545.35, 278.69, 773.4, 289.37 ]
+              } ]
+            }, {
+              "type" : "list item",
+              "page number" : 1,
+              "bounding box" : [ 546.07, 247.303, 662.482, 277.921 ],
+              "font" : "ArialMT",
+              "font size" : 6.96,
+              "text color" : "[0.0]",
+              "content" : "F10 Step over ⇧F5 Stop ⌘K ⌘I Show hover",
+              "kids" : [ ]
+            } ]
+          }, {
+            "type" : "image",
+            "id" : 46,
+            "page number" : 1,
+            "bounding box" : [ 545.35, 257.21, 625.654, 268.01 ]
+          }, {
+            "type" : "image",
+            "id" : 47,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 259.01, 624.934, 267.29 ]
+          }, {
+            "type" : "image",
+            "id" : 48,
+            "page number" : 1,
+            "bounding box" : [ 625.66, 257.21, 773.4, 268.01 ]
+          }, {
+            "type" : "image",
+            "id" : 49,
+            "page number" : 1,
+            "bounding box" : [ 626.38, 257.93, 772.68, 267.29 ]
+          }, {
+            "type" : "image",
+            "id" : 50,
+            "page number" : 1,
+            "bounding box" : [ 545.35, 257.21, 773.4, 268.01 ]
+          }, {
+            "type" : "paragraph",
+            "id" : 51,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 223.15, 633.993, 236.398 ],
+            "font" : "SegoeUI-Semibold",
+            "font size" : 9.96,
+            "text color" : "[0.0]",
+            "content" : "Integrated terminal"
+          }, {
+            "type" : "image",
+            "id" : 52,
+            "page number" : 1,
+            "bounding box" : [ 544.63, 220.49, 775.56, 221.21 ]
+          }, {
+            "type" : "image",
+            "id" : 53,
+            "page number" : 1,
+            "bounding box" : [ 545.35, 206.66, 625.774, 217.484 ]
+          }, {
+            "type" : "image",
+            "id" : 54,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 208.46, 625.054, 216.764 ]
+          }, {
+            "type" : "paragraph",
+            "id" : 55,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 196.753, 704.424, 216.691 ],
+            "font" : "SegoeUI",
+            "font size" : 6.96,
+            "text color" : "[0.0]",
+            "content" : "⌃` Show integrated terminal ⌃⇧` Create new terminal"
+          }, {
+            "type" : "image",
+            "id" : 56,
+            "page number" : 1,
+            "bounding box" : [ 625.78, 206.66, 773.4, 217.484 ]
+          }, {
+            "type" : "image",
+            "id" : 57,
+            "page number" : 1,
+            "bounding box" : [ 626.5, 207.38, 772.68, 216.764 ]
+          }, {
+            "type" : "image",
+            "id" : 58,
+            "page number" : 1,
+            "bounding box" : [ 545.35, 206.66, 773.4, 217.49 ]
+          }, {
+            "type" : "image",
+            "id" : 59,
+            "page number" : 1,
+            "bounding box" : [ 545.35, 185.3, 625.774, 195.98 ]
+          }, {
+            "type" : "image",
+            "id" : 60,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 187.1, 625.054, 195.26 ]
+          } ]
+        }, {
+          "type" : "list item",
+          "page number" : 1,
+          "bounding box" : [ 546.07, 153.913, 690.566, 195.331 ],
+          "font" : "CambriaMath",
+          "font size" : 6.96,
+          "text color" : "[0.0]",
+          "content" : "⌘C Copy selection ⌘↑ / ↓ Scroll up/down PgUp / PgDn Scroll page up/down ⌘Home / End Scroll to top/bottom",
+          "kids" : [ ]
+        } ]
+      } ]
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 324,
+    "page number" : 1,
+    "bounding box" : [ 545.35, 185.3, 773.4, 195.98 ]
+  }, {
+    "type" : "image",
+    "id" : 322,
+    "page number" : 1,
+    "bounding box" : [ 625.78, 185.3, 773.4, 195.98 ]
+  }, {
+    "type" : "image",
+    "id" : 323,
+    "page number" : 1,
+    "bounding box" : [ 626.5, 186.02, 772.68, 195.26 ]
+  }, {
+    "type" : "image",
+    "id" : 329,
+    "page number" : 1,
+    "bounding box" : [ 545.35, 163.82, 773.4, 174.62 ]
+  }, {
+    "type" : "image",
+    "id" : 325,
+    "page number" : 1,
+    "bounding box" : [ 545.35, 163.82, 625.774, 174.62 ]
+  }, {
+    "type" : "image",
+    "id" : 327,
+    "page number" : 1,
+    "bounding box" : [ 625.78, 163.82, 773.4, 174.62 ]
+  }, {
+    "type" : "image",
+    "id" : 326,
+    "page number" : 1,
+    "bounding box" : [ 546.07, 165.86, 625.054, 173.9 ]
+  }, {
+    "type" : "image",
+    "id" : 328,
+    "page number" : 1,
+    "bounding box" : [ 626.5, 164.54, 772.68, 173.9 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 331,
+    "page number" : 1,
+    "bounding box" : [ 549.43, 28.23, 745.901, 46.71 ],
+    "font" : "Calibri",
+    "font size" : 8.04,
+    "text color" : "[0.0]",
+    "content" : "Other operating systems’ keyboard shortcuts and additional unassigned shortcuts available at aka.ms/vscodekeybindings"
+  }, {
+    "type" : "image",
+    "id" : 332,
+    "page number" : 1,
+    "bounding box" : [ 658.78, 28.8, 746.02, 29.28 ]
+  } ]
+}

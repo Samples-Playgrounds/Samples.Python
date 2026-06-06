@@ -1,0 +1,297 @@
+{
+  "file name" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed.pdf",
+  "number of pages" : 12,
+  "author" : "",
+  "title" : null,
+  "creation date" : "2024-12-14T13:09:21.000+01",
+  "modification date" : null,
+  "kids" : [ {
+    "type" : "image",
+    "id" : 25,
+    "page number" : 1,
+    "bounding box" : [ 0.0, 0.0, 594.73, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile1.png"
+  }, {
+    "type" : "image",
+    "id" : 26,
+    "page number" : 1,
+    "bounding box" : [ 0.0, 0.0, 594.73, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile2.png"
+  }, {
+    "type" : "footer",
+    "id" : 27,
+    "page number" : 1,
+    "bounding box" : [ 0.0, 0.0, 1.0, 1.0 ],
+    "kids" : [ {
+      "type" : "image",
+      "id" : 13,
+      "page number" : 1,
+      "bounding box" : [ 0.0, 0.0, 1.0, 1.0 ],
+      "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile3.png"
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 29,
+    "page number" : 2,
+    "bounding box" : [ 0.55, 0.0, 595.28, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile4.png"
+  }, {
+    "type" : "image",
+    "id" : 30,
+    "page number" : 2,
+    "bounding box" : [ 0.55, 0.0, 595.28, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile5.png"
+  }, {
+    "type" : "header",
+    "id" : 28,
+    "page number" : 2,
+    "bounding box" : [ 594.28, 840.89, 595.28, 841.89 ],
+    "kids" : [ {
+      "type" : "image",
+      "id" : 19,
+      "page number" : 2,
+      "bounding box" : [ 594.28, 840.89, 595.28, 841.89 ],
+      "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile6.png"
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 31,
+    "page number" : 3,
+    "bounding box" : [ 0.0, 0.0, 594.73, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile7.png"
+  }, {
+    "type" : "image",
+    "id" : 32,
+    "page number" : 3,
+    "bounding box" : [ 0.0, 0.0, 594.73, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile8.png"
+  }, {
+    "type" : "footer",
+    "id" : 33,
+    "page number" : 3,
+    "bounding box" : [ 0.0, 0.0, 1.0, 1.0 ],
+    "kids" : [ {
+      "type" : "image",
+      "id" : 14,
+      "page number" : 3,
+      "bounding box" : [ 0.0, 0.0, 1.0, 1.0 ],
+      "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile9.png"
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 35,
+    "page number" : 4,
+    "bounding box" : [ 0.55, 0.0, 595.28, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile10.png"
+  }, {
+    "type" : "image",
+    "id" : 36,
+    "page number" : 4,
+    "bounding box" : [ 0.55, 0.0, 595.28, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile11.png"
+  }, {
+    "type" : "header",
+    "id" : 34,
+    "page number" : 4,
+    "bounding box" : [ 594.28, 840.89, 595.28, 841.89 ],
+    "kids" : [ {
+      "type" : "image",
+      "id" : 20,
+      "page number" : 4,
+      "bounding box" : [ 594.28, 840.89, 595.28, 841.89 ],
+      "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile12.png"
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 37,
+    "page number" : 5,
+    "bounding box" : [ 0.0, 0.0, 594.73, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile13.png"
+  }, {
+    "type" : "image",
+    "id" : 38,
+    "page number" : 5,
+    "bounding box" : [ 0.0, 0.0, 594.73, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile14.png"
+  }, {
+    "type" : "footer",
+    "id" : 39,
+    "page number" : 5,
+    "bounding box" : [ 0.0, 0.0, 1.0, 1.0 ],
+    "kids" : [ {
+      "type" : "image",
+      "id" : 15,
+      "page number" : 5,
+      "bounding box" : [ 0.0, 0.0, 1.0, 1.0 ],
+      "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile15.png"
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 41,
+    "page number" : 6,
+    "bounding box" : [ 0.55, 0.0, 595.28, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile16.png"
+  }, {
+    "type" : "image",
+    "id" : 42,
+    "page number" : 6,
+    "bounding box" : [ 0.55, 0.0, 595.28, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile17.png"
+  }, {
+    "type" : "header",
+    "id" : 40,
+    "page number" : 6,
+    "bounding box" : [ 594.28, 840.89, 595.28, 841.89 ],
+    "kids" : [ {
+      "type" : "image",
+      "id" : 21,
+      "page number" : 6,
+      "bounding box" : [ 594.28, 840.89, 595.28, 841.89 ],
+      "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile18.png"
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 43,
+    "page number" : 7,
+    "bounding box" : [ 0.0, 0.0, 594.73, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile19.png"
+  }, {
+    "type" : "image",
+    "id" : 44,
+    "page number" : 7,
+    "bounding box" : [ 0.0, 0.0, 594.73, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile20.png"
+  }, {
+    "type" : "footer",
+    "id" : 45,
+    "page number" : 7,
+    "bounding box" : [ 0.0, 0.0, 1.0, 1.0 ],
+    "kids" : [ {
+      "type" : "image",
+      "id" : 16,
+      "page number" : 7,
+      "bounding box" : [ 0.0, 0.0, 1.0, 1.0 ],
+      "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile21.png"
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 47,
+    "page number" : 8,
+    "bounding box" : [ 0.55, 0.0, 595.28, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile22.png"
+  }, {
+    "type" : "image",
+    "id" : 48,
+    "page number" : 8,
+    "bounding box" : [ 0.55, 0.0, 595.28, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile23.png"
+  }, {
+    "type" : "header",
+    "id" : 46,
+    "page number" : 8,
+    "bounding box" : [ 594.28, 840.89, 595.28, 841.89 ],
+    "kids" : [ {
+      "type" : "image",
+      "id" : 22,
+      "page number" : 8,
+      "bounding box" : [ 594.28, 840.89, 595.28, 841.89 ],
+      "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile24.png"
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 49,
+    "page number" : 9,
+    "bounding box" : [ 0.0, 0.0, 594.73, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile25.png"
+  }, {
+    "type" : "image",
+    "id" : 50,
+    "page number" : 9,
+    "bounding box" : [ 0.0, 0.0, 594.73, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile26.png"
+  }, {
+    "type" : "footer",
+    "id" : 51,
+    "page number" : 9,
+    "bounding box" : [ 0.0, 0.0, 1.0, 1.0 ],
+    "kids" : [ {
+      "type" : "image",
+      "id" : 17,
+      "page number" : 9,
+      "bounding box" : [ 0.0, 0.0, 1.0, 1.0 ],
+      "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile27.png"
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 53,
+    "page number" : 10,
+    "bounding box" : [ 0.55, 0.0, 595.28, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile28.png"
+  }, {
+    "type" : "image",
+    "id" : 54,
+    "page number" : 10,
+    "bounding box" : [ 0.55, 0.0, 595.28, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile29.png"
+  }, {
+    "type" : "header",
+    "id" : 52,
+    "page number" : 10,
+    "bounding box" : [ 594.28, 840.89, 595.28, 841.89 ],
+    "kids" : [ {
+      "type" : "image",
+      "id" : 23,
+      "page number" : 10,
+      "bounding box" : [ 594.28, 840.89, 595.28, 841.89 ],
+      "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile30.png"
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 55,
+    "page number" : 11,
+    "bounding box" : [ 0.0, 0.0, 594.73, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile31.png"
+  }, {
+    "type" : "image",
+    "id" : 56,
+    "page number" : 11,
+    "bounding box" : [ 0.0, 0.0, 594.73, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile32.png"
+  }, {
+    "type" : "footer",
+    "id" : 57,
+    "page number" : 11,
+    "bounding box" : [ 0.0, 0.0, 1.0, 1.0 ],
+    "kids" : [ {
+      "type" : "image",
+      "id" : 18,
+      "page number" : 11,
+      "bounding box" : [ 0.0, 0.0, 1.0, 1.0 ],
+      "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile33.png"
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 59,
+    "page number" : 12,
+    "bounding box" : [ 0.55, 0.0, 595.28, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile34.png"
+  }, {
+    "type" : "image",
+    "id" : 60,
+    "page number" : 12,
+    "bounding box" : [ 0.55, 0.0, 595.28, 841.89 ],
+    "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile35.png"
+  }, {
+    "type" : "header",
+    "id" : 58,
+    "page number" : 12,
+    "bounding box" : [ 594.28, 840.89, 595.28, 841.89 ],
+    "kids" : [ {
+      "type" : "image",
+      "id" : 24,
+      "page number" : 12,
+      "bounding box" : [ 594.28, 840.89, 595.28, 841.89 ],
+      "source" : "hjs-zppi-2023-rjesenje.2.600dpi.compressed_images/imageFile36.png"
+    } ]
+  } ]
+}

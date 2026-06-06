@@ -1,0 +1,123 @@
+{
+  "file name" : "statut-dinamo.2023.pdf",
+  "number of pages" : 19,
+  "author" : null,
+  "title" : null,
+  "creation date" : "D:20231229135236+01'00'",
+  "modification date" : "D:20231229134316+01'00'",
+  "kids" : [ {
+    "type" : "image",
+    "id" : 1,
+    "page number" : 1,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile1.png"
+  }, {
+    "type" : "image",
+    "id" : 2,
+    "page number" : 2,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile2.png"
+  }, {
+    "type" : "image",
+    "id" : 3,
+    "page number" : 3,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile3.png"
+  }, {
+    "type" : "image",
+    "id" : 4,
+    "page number" : 4,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile4.png"
+  }, {
+    "type" : "image",
+    "id" : 5,
+    "page number" : 5,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile5.png"
+  }, {
+    "type" : "image",
+    "id" : 6,
+    "page number" : 6,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile6.png"
+  }, {
+    "type" : "image",
+    "id" : 7,
+    "page number" : 7,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile7.png"
+  }, {
+    "type" : "image",
+    "id" : 8,
+    "page number" : 8,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile8.png"
+  }, {
+    "type" : "image",
+    "id" : 9,
+    "page number" : 9,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile9.png"
+  }, {
+    "type" : "image",
+    "id" : 10,
+    "page number" : 10,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile10.png"
+  }, {
+    "type" : "image",
+    "id" : 11,
+    "page number" : 11,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile11.png"
+  }, {
+    "type" : "image",
+    "id" : 12,
+    "page number" : 12,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile12.png"
+  }, {
+    "type" : "image",
+    "id" : 13,
+    "page number" : 13,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile13.png"
+  }, {
+    "type" : "image",
+    "id" : 14,
+    "page number" : 14,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile14.png"
+  }, {
+    "type" : "image",
+    "id" : 15,
+    "page number" : 15,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile15.png"
+  }, {
+    "type" : "image",
+    "id" : 16,
+    "page number" : 16,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile16.png"
+  }, {
+    "type" : "image",
+    "id" : 17,
+    "page number" : 17,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile17.png"
+  }, {
+    "type" : "image",
+    "id" : 18,
+    "page number" : 18,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile18.png"
+  }, {
+    "type" : "image",
+    "id" : 19,
+    "page number" : 19,
+    "bounding box" : [ 0.0, 0.0, 595.2, 841.92 ],
+    "source" : "statut-dinamo.2023_images/imageFile19.png"
+  } ]
+}

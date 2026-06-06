@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html lang="und">
+<head>
+<meta charset="utf-8">
+<title>Pandas_Cheat_Sheet.pdf</title>
+</head>
+<body>
+<figcaption>Tidy Data – A foundation for wrangling in pandas</figcaption>
+
+<p>Data Wrangling with pandas Cheat Sheet http://pandas.pydata.org</p>
+
+<p>&</p>
+
+<img src="Pandas_Cheat_Sheet_images/imageFile1.png" alt="figure1">
+
+<img src="Pandas_Cheat_Sheet_images/imageFile2.png" alt="figure2">
+
+<img src="Pandas_Cheat_Sheet_images/imageFile3.png" alt="figure3">
+
+<img src="Pandas_Cheat_Sheet_images/imageFile4.png" alt="figure4">
+
+<img src="Pandas_Cheat_Sheet_images/imageFile5.png" alt="figure5">
+
+<h1>* M A*</h1>
+
+<p>Tidy data complements pandas’s vectorized operations. pandas will automatically preserve observations as you manipulate variables. No other format works as intuitively with pandas.</p>
+
+<p>In a tidy data set:</p>
+
+<figcaption>Each variable is saved in its own column</figcaption>
+
+<p>Each observation is saved in its own row</p>
+
+<p>Pandas API Reference Pandas User Guide</p>
+
+<h2>Creating DataFrames Reshaping Data – Change layout, sorting, reindexing, renaming</h2>
+
+<table border="1">
+<tr>
+<th><table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<h6>pd.melt(df)</h6>
+<p>Gather columns into rows.</p>
+</th>
+<th><table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<h6>df.pivot(columns='var', values='val')</h6>
+<p>Spread rows into columns.</p>
+</th>
+</tr>
+<tr>
+<td><table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<h6>pd.concat([df1,df2])</h6>
+<p>Append rows of DataFrames</p>
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+</td>
+<td><table border="1">
+<tr>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</table>
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<h6>pd.concat([df1,df2], axis=1)</h6>
+<p>Append columns of DataFrames</p>
+</td>
+</tr>
+</table>
+
+<table border="1">
+<tr>
+<th></th>
+<th><p>a</p>
+</th>
+<th><p>b</p>
+</th>
+<th><p>c</p>
+</th>
+</tr>
+<tr>
+<td><p>1</p>
+</td>
+<td><p>4</p>
+</td>
+<td><p>7</p>
+</td>
+<td><p>10</p>
+</td>
+</tr>
+<tr>
+<td><p>2</p>
+</td>
+<td><p>5</p>
+</td>
+<td><p>8</p>
+</td>
+<td><p>11</p>
+</td>
+</tr>
+<tr>
+<td><p>3</p>
+</td>
+<td><p>6</p>
+</td>
+<td><p>9</p>
+</td>
+<td><p>12</p>
+</td>
+</tr>
+</table>
+
+<p>df.sort_values('mpg')</p>
+
+<p>Order rows by values of a column (low to high). df.sort_values('mpg', ascending=False) Order rows by values of a column (high to low). df.rename(columns = {'y':'year'})</p>
+
+<p>df = pd.DataFrame( {"a" : [4, 5, 6],</p>
+
+<p>Rename the columns of a DataFrame df.sort_index()</p>
+
+<ul>
+<li><p>"b" : [7, 8, 9],</p></li>
+<li><p>"c" : [10, 11, 12]},</p></li>
+</ul>
+
+<p>index = [1, 2, 3]) Specify values for each column.</p>
+
+<p>Sort the index of a DataFrame</p>
+
+<p>df.reset_index() Reset index of DataFrame to row numbers, moving index to columns.</p>
+
+<p>df = pd.DataFrame( [[4, 7, 10],</p>
+
+<ul>
+<li><p>[5, 8, 11],</p></li>
+<li><p>[6, 9, 12]],</p></li>
+</ul>
+
+<h6>df.drop(columns=['Length', 'Height'])</h6>
+
+<p>Drop columns from DataFrame</p>
+
+<p>index=[1, 2, 3], columns=['a', 'b', 'c'])</p>
+
+<h3>Subset Observations - rows Subset Variables - columns Subsets - rows and columns</h3>
+
+<p>Specify values for each row.</p>
+
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+<th><p>a</p>
+</th>
+<th><p>b</p>
+</th>
+<th><p>c</p>
+</th>
+</tr>
+<tr>
+<td><p>N</p>
+</td>
+<td><p>v</p>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2"><p>D</p>
+</td>
+<td><p>1</p>
+</td>
+<td><p>4</p>
+</td>
+<td><p>7</p>
+</td>
+<td><p>10</p>
+</td>
+</tr>
+<tr>
+<td><p>2</p>
+</td>
+<td><p>5</p>
+</td>
+<td><p>8</p>
+</td>
+<td><p>11</p>
+</td>
+</tr>
+<tr>
+<td><p>e</p>
+</td>
+<td><p>2</p>
+</td>
+<td><p>6</p>
+</td>
+<td><p>9</p>
+</td>
+<td><p>12</p>
+</td>
+</tr>
+</table>
+
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<p>Use df.loc[] and df.iloc[] to select only rows, only columns or both. Use df.at[] and df.iat[] to access a single value by row and column. First index selects rows, second index columns.</p>
+
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<h6>df[df.Length > 7]</h6>
+
+<h6>df[['width', 'length', 'species']]</h6>
+
+<p>Extract rows that meet logical criteria. df.drop_duplicates()</p>
+
+<p>Select multiple columns with specific names. df['width'] or df.width</p>
+
+<h6>df.iloc[10:20]</h6>
+
+<p>Remove duplicate rows (only considers columns). df.sample(frac=0.5)</p>
+
+<p>Select single column with specific name.</p>
+
+<p>df = pd.DataFrame( {"a" : [4 ,5, 6],</p>
+
+<p>Select rows 10-20.</p>
+
+<p>df.filter(regex='regex') Select columns whose name matches regular expression regex.</p>
+
+<p>df.iloc[:, [1, 2, 5]] Select columns in positions 1, 2 and 5 (first column is 0).</p>
+
+<p>Randomly select fraction of rows. df.sample(n=10) Randomly select n rows. df.nlargest(n, 'value')</p>
+
+<ul>
+<li><p>"b" : [7, 8, 9],</p></li>
+<li><p>"c" : [10, 11, 12]},</p></li>
+</ul>
+
+<p>index = pd.MultiIndex.from_tuples( [('d', 1), ('d', 2),</p>
+
+<h6>df.loc[:, 'x2':'x4']</h6>
+
+<h4>Using query</h4>
+
+<h6>Select and order top n entries. df.nsmallest(n, 'value')</h6>
+
+<p>Select all columns between x2 and x4 (inclusive).</p>
+
+<p>('e', 2)], names=['n', 'v'])) Create DataFrame with a MultiIndex</p>
+
+<p>df.loc[df['a'] > 10, ['a', 'c']] Select rows meeting logical condition, and only the specific columns .</p>
+
+<p>query() allows Boolean expressions for filtering rows. df.query('Length > 7') df.query('Length > 7 and Width < 8') df.query('Name.str.startswith("abc")',</p>
+
+<p>Select and order bottom n entries. df.head(n)</p>
+
+<p>Select first n rows. df.tail(n)</p>
+
+<h2>Method Chaining</h2>
+
+<p>df.iat[1, 2] Access single value by index df.at[4, 'A'] Access single value by label</p>
+
+<p>Select last n rows.</p>
+
+<p>Most pandas methods return a DataFrame so that another pandas method can be applied to the result. This improves readability of code.</p>
+
+<p>engine="python")</p>
+
+<table border="1">
+<tr>
+<th colspan="3"><p>Logic in Python (and pandas)</p>
+</th>
+</tr>
+<tr>
+<td><p><</p>
+</td>
+<td><p>Less than !=</p>
+</td>
+<td><p>Not equal to</p>
+</td>
+</tr>
+<tr>
+<td><p>></p>
+</td>
+<td><p>Greater than df.column.isin(values)</p>
+</td>
+<td><p>Group membership</p>
+</td>
+</tr>
+<tr>
+<td><p>==</p>
+</td>
+<td><p>Equals pd.isnull(obj)</p>
+</td>
+<td><p>Is NaN</p>
+</td>
+</tr>
+<tr>
+<td><p><=</p>
+</td>
+<td><p>Less than or equals pd.notnull(obj)</p>
+</td>
+<td><p>Is not NaN</p>
+</td>
+</tr>
+<tr>
+<td><p>>=</p>
+</td>
+<td><p>Greater than or equals &,|,~,^,df.any(),df.all()</p>
+</td>
+<td><p>Logical and, or, not, xor, any, all</p>
+</td>
+</tr>
+</table>
+
+<table border="1">
+<tr>
+<th colspan="2"><p>regex (Regular Expressions) Examples</p>
+</th>
+</tr>
+<tr>
+<td><p>'\.'</p>
+</td>
+<td><p>Matches strings containing a period '.'</p>
+</td>
+</tr>
+<tr>
+<td><p>'Length$'</p>
+</td>
+<td><p>Matches strings ending with word 'Length'</p>
+</td>
+</tr>
+<tr>
+<td><p>'^Sepal'</p>
+</td>
+<td><p>Matches strings beginning with the word 'Sepal'</p>
+</td>
+</tr>
+<tr>
+<td><p>'^x[1-5]$'</p>
+</td>
+<td><p>Matches strings beginning with 'x' and ending with 1,2,3,4,5</p>
+</td>
+</tr>
+<tr>
+<td><p>'^(?!Species$).*'</p>
+</td>
+<td><p>Matches strings except the string 'Species'</p>
+</td>
+</tr>
+</table>
+
+<p>df = (pd.melt(df)</p>
+
+<p>.rename(columns={</p>
+
+<p>'variable':'var', 'value':'val'})</p>
+
+<p>.query('val >= 200') )</p>
+
+<p>Cheatsheet for pandas (http://pandas.pydata.org/ originally written by Irv Lustig, Princeton Consultants, inspired byRstudio Data Wrangling Cheatsheet</p>
+
+<h2>Group Data</h2>
+
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<p>df.groupby(by="col") Return a GroupBy object, grouped by values in column named "col".</p>
+
+<p>df.groupby(level="ind") Return a GroupBy object, grouped by values in index level named "ind".</p>
+
+<p>All of the summary functions listed above can be applied to a group. Additional GroupBy functions:</p>
+
+<h6>size()</h6>
+
+<p>agg(function)</p>
+
+<p>Size of each group.</p>
+
+<p>Aggregate group using function.</p>
+
+<h2>Summarize Data</h2>
+
+<h6>df['w'].value_counts()</h6>
+
+<p>Count number of rows with each unique value of variable len(df)</p>
+
+<p># of rows in DataFrame. df.shape</p>
+
+<p>Tuple of # of rows, # of columns in DataFrame. df['w'].nunique()</p>
+
+<p># of distinct values in a column. df.describe()</p>
+
+<p>Basic descriptive and statistics for each column (or GroupBy). df.info()</p>
+
+<p>Prints a concise summary of the DataFrame. df.memory_usage()</p>
+
+<p>Prints the memory usage of each column in the DataFrame. df.dtypes()</p>
+
+<figcaption>Prints a Series with the dtype of each column in the DataFrame.</figcaption>
+
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<figcaption>pandas provides a large set of summary functions that operate on different kinds of pandas objects (DataFrame columns, Series, GroupBy, Expanding and Rolling (see below)) and produce single values for each of the groups. When applied to a DataFrame, the result is returned as a pandas Series for each column. Examples: sum()</figcaption>
+
+<h6>min()</h6>
+
+<p>Sum values of each object.</p>
+
+<p>Minimum value in each object. max()</p>
+
+<p>count() Count non-NA/null values of each object.</p>
+
+<p>Maximum value in each object. mean()</p>
+
+<p>Mean value of each object. var()</p>
+
+<h6>median()</h6>
+
+<p>Median value of each object. quantile([0.25,0.75])</p>
+
+<p>Variance of each object.</p>
+
+<p>Quantiles of each object. apply(function)</p>
+
+<p>std() Standard deviation of each object.</p>
+
+<p>Apply function to each object.</p>
+
+<p>The examples below can also be applied to groups. In this case, the function is applied on a per-group basis, and the returned vectors are of the length of the original DataFrame.</p>
+
+<h6>shift(1)</h6>
+
+<p>Copy with values shifted by 1. rank(method='dense')</p>
+
+<p>Ranks with no gaps.</p>
+
+<h6>rank(method='min')</h6>
+
+<p>Ranks. Ties get min rank. rank(pct=True)</p>
+
+<p>Ranks rescaled to interval [0, 1]. rank(method='first')</p>
+
+<p>Ranks. Ties go to first value.</p>
+
+<h6>shift(-1)</h6>
+
+<p>Copy with values lagged by 1. cumsum()</p>
+
+<p>Cumulative sum. cummax()</p>
+
+<p>Cumulative max. cummin()</p>
+
+<p>Cumulative min. cumprod()</p>
+
+<p>Cumulative product.</p>
+
+<h2>Handling Missing Data</h2>
+
+<h2>Combine Data Sets</h2>
+
+<h5>adf bdf</h5>
+
+<table border="1">
+<tr>
+<th><p>x1</p>
+</th>
+<th><p>x2</p>
+</th>
+</tr>
+<tr>
+<td><p>A</p>
+</td>
+<td><p>1</p>
+</td>
+</tr>
+<tr>
+<td><p>B</p>
+</td>
+<td><p>2</p>
+</td>
+</tr>
+<tr>
+<td><p>C</p>
+</td>
+<td><p>3</p>
+</td>
+</tr>
+</table>
+
+<table border="1">
+<tr>
+<th><p>x1</p>
+</th>
+<th><p>x3</p>
+</th>
+</tr>
+<tr>
+<td><p>A</p>
+</td>
+<td><p>T</p>
+</td>
+</tr>
+<tr>
+<td><p>B</p>
+</td>
+<td><p>F</p>
+</td>
+</tr>
+<tr>
+<td><p>D</p>
+</td>
+<td><p>T</p>
+</td>
+</tr>
+</table>
+
+<figcaption>Standard Joins</figcaption>
+
+<table border="1">
+<tr>
+<th><p>x1</p>
+</th>
+<th><p>x2</p>
+</th>
+<th><p>x3</p>
+</th>
+</tr>
+<tr>
+<td><p>A</p>
+</td>
+<td><p>1</p>
+</td>
+<td><p>T</p>
+</td>
+</tr>
+<tr>
+<td><p>B</p>
+</td>
+<td><p>2</p>
+</td>
+<td><p>F</p>
+</td>
+</tr>
+<tr>
+<td><p>C</p>
+</td>
+<td><p>3</p>
+</td>
+<td><p>NaN</p>
+</td>
+</tr>
+</table>
+
+<h6>pd.merge(adf, bdf,</h6>
+
+<p>how='left', on='x1') Join matching rows from bdf to adf.</p>
+
+<table border="1">
+<tr>
+<th><p>x1</p>
+</th>
+<th><p>x2</p>
+</th>
+<th><p>x3</p>
+</th>
+</tr>
+<tr>
+<td><p>A</p>
+</td>
+<td><p>1.0</p>
+</td>
+<td><p>T</p>
+</td>
+</tr>
+<tr>
+<td><p>B</p>
+</td>
+<td><p>2.0</p>
+</td>
+<td><p>F</p>
+</td>
+</tr>
+<tr>
+<td><p>D</p>
+</td>
+<td><p>NaN</p>
+</td>
+<td><p>T</p>
+</td>
+</tr>
+</table>
+
+<h6>pd.merge(adf, bdf,</h6>
+
+<p>how='right', on='x1') Join matching rows from adf to bdf.</p>
+
+<h6>df.dropna()</h6>
+
+<table border="1">
+<tr>
+<th><p>x1</p>
+</th>
+<th><p>x2</p>
+</th>
+<th><p>x3</p>
+</th>
+</tr>
+<tr>
+<td><p>A</p>
+</td>
+<td><p>1</p>
+</td>
+<td><p>T</p>
+</td>
+</tr>
+<tr>
+<td><p>B</p>
+</td>
+<td><p>2</p>
+</td>
+<td><p>F</p>
+</td>
+</tr>
+</table>
+
+<p>pd.merge(adf, bdf,</p>
+
+<p>Drop rows with any column having NA/null data. df.fillna(value)</p>
+
+<p>how='inner', on='x1')</p>
+
+<p>Join data. Retain only rows in both sets. pd.merge(adf, bdf,</p>
+
+<p>Replace all NA/null data with value.</p>
+
+<table border="1">
+<tr>
+<th><p>x1</p>
+</th>
+<th><p>x2</p>
+</th>
+<th><p>x3</p>
+</th>
+</tr>
+<tr>
+<td><p>A</p>
+</td>
+<td><p>1</p>
+</td>
+<td><p>T</p>
+</td>
+</tr>
+<tr>
+<td><p>B</p>
+</td>
+<td><p>2</p>
+</td>
+<td><p>F</p>
+</td>
+</tr>
+<tr>
+<td><p>C</p>
+</td>
+<td><p>3</p>
+</td>
+<td><p>NaN</p>
+</td>
+</tr>
+<tr>
+<td><p>D</p>
+</td>
+<td><p>NaN</p>
+</td>
+<td><p>T</p>
+</td>
+</tr>
+</table>
+
+<h2>Make New Columns</h2>
+
+<p>how='outer', on='x1') Join data. Retain all values, all rows.</p>
+
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<figcaption>Filtering Joins</figcaption>
+
+<h6>df.assign(Area=lambda df: df.Length*df.Height)</h6>
+
+<table border="1">
+<tr>
+<th><p>x1</p>
+</th>
+<th><p>x2</p>
+</th>
+</tr>
+<tr>
+<td><p>A</p>
+</td>
+<td><p>1</p>
+</td>
+</tr>
+<tr>
+<td><p>B</p>
+</td>
+<td><p>2</p>
+</td>
+</tr>
+</table>
+
+<h6>adf[adf.x1.isin(bdf.x1)]</h6>
+
+<p>Compute and append one or more new columns.</p>
+
+<p>All rows in adf that have a match in bdf.</p>
+
+<h6>df['Volume'] = df.Length*df.Height*df.Depth</h6>
+
+<p>Add single column.</p>
+
+<table border="1">
+<tr>
+<th><p>x1</p>
+</th>
+<th><p>x2</p>
+</th>
+</tr>
+<tr>
+<td><p>C</p>
+</td>
+<td><p>3</p>
+</td>
+</tr>
+</table>
+
+<h6>pd.qcut(df.col, n, labels=False)</h6>
+
+<h6>adf[~adf.x1.isin(bdf.x1)]</h6>
+
+<h6>Bin column into n buckets.</h6>
+
+<p>All rows in adf that do not have a match in bdf. ydf zdf</p>
+
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<table border="1">
+<tr>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+<p>Vector function</p>
+
+<p>Vector function</p>
+
+<table border="1">
+<tr>
+<th><p>x1</p>
+</th>
+<th><p>x2</p>
+</th>
+</tr>
+<tr>
+<td><p>A</p>
+</td>
+<td><p>1</p>
+</td>
+</tr>
+<tr>
+<td><p>B</p>
+</td>
+<td><p>2</p>
+</td>
+</tr>
+<tr>
+<td><p>C</p>
+</td>
+<td><p>3</p>
+</td>
+</tr>
+</table>
+
+<table border="1">
+<tr>
+<th><p>x1</p>
+</th>
+<th><p>x2</p>
+</th>
+</tr>
+<tr>
+<td><p>B</p>
+</td>
+<td><p>2</p>
+</td>
+</tr>
+<tr>
+<td><p>C</p>
+</td>
+<td><p>3</p>
+</td>
+</tr>
+<tr>
+<td><p>D</p>
+</td>
+<td><p>4</p>
+</td>
+</tr>
+</table>
+
+<p>pandas provides a large set of vector functions that operate on all columns of a DataFrame or a single selected column (a pandas Series). These functions produce vectors of values for each of the columns, or a single Series for the individual Series. Examples: max(axis=1)</p>
+
+<figcaption>Set-like Operations</figcaption>
+
+<table border="1">
+<tr>
+<th><p>x1</p>
+</th>
+<th><p>x2</p>
+</th>
+</tr>
+<tr>
+<td><p>B</p>
+</td>
+<td><p>2</p>
+</td>
+</tr>
+<tr>
+<td><p>C</p>
+</td>
+<td><p>3</p>
+</td>
+</tr>
+</table>
+
+<p>pd.merge(ydf, zdf) Rows that appear in both ydf and zdf (Intersection).</p>
+
+<p>min(axis=1)</p>
+
+<p>Element-wise min. abs()</p>
+
+<p>Element-wise max.</p>
+
+<p>clip(lower=-10,upper=10) Trim values at input thresholds</p>
+
+<table border="1">
+<tr>
+<th><p>x1</p>
+</th>
+<th><p>x2</p>
+</th>
+</tr>
+<tr>
+<td><p>A</p>
+</td>
+<td><p>1</p>
+</td>
+</tr>
+<tr>
+<td><p>B</p>
+</td>
+<td><p>2</p>
+</td>
+</tr>
+<tr>
+<td><p>C</p>
+</td>
+<td><p>3</p>
+</td>
+</tr>
+<tr>
+<td><p>D</p>
+</td>
+<td><p>4</p>
+</td>
+</tr>
+</table>
+
+<p>Absolute value.</p>
+
+<p>pd.merge(ydf, zdf, how='outer') Rows that appear in either or both ydf and zdf (Union).</p>
+
+<h2>Windows</h2>
+
+<p>df.expanding() Return an Expanding object allowing summary functions to be applied cumulatively.</p>
+
+<p>pd.merge(ydf, zdf, how='outer',</p>
+
+<p>indicator=True)</p>
+
+<table border="1">
+<tr>
+<th><p>x1</p>
+</th>
+<th><p>x2</p>
+</th>
+</tr>
+<tr>
+<td><p>A</p>
+</td>
+<td><p>1</p>
+</td>
+</tr>
+</table>
+
+<p>.query('_merge == "left_only"')</p>
+
+<p>df.rolling(n) Return a Rolling object allowing summary functions to be applied to windows of length n.</p>
+
+<p>.drop(columns=['_merge'])</p>
+
+<p>Rows that appear in ydf but not zdf (Setdiff).</p>
+
+<p>Cheatsheet for pandas (http://pandas.pydata.org/) originally written by Irv Lustig, Princeton Consultants, inspired byRstudio Data Wrangling Cheatsheet</p>
+
+<h2>Frequently Used Options</h2>
+
+<h2>Plotting</h2>
+
+<h6>df.plot()</h6>
+
+<p>df.plot.scatter(x='w', y='h') Plot a scatter graph of the DataFrame.</p>
+
+<p>df.plot.hist()</p>
+
+<h6>df.plot.pie()</h6>
+
+<p>Plot a line graph for the DataFrame.</p>
+
+<p>Plot a histogram of the DataFrame.</p>
+
+<p>Plot a pie chart of the DataFrame.</p>
+
+<p>Pandas offers some ‘options’ to globally control how Pandas behaves, display etc. Options can be queried and set via: pd.options.option_name (where option_name is the name of an option). For example: pd.options.display.max_rows = 20</p>
+
+<img src="Pandas_Cheat_Sheet_images/imageFile6.png" alt="figure6">
+
+<img src="Pandas_Cheat_Sheet_images/imageFile7.png" alt="figure7">
+
+<img src="Pandas_Cheat_Sheet_images/imageFile8.png" alt="figure8">
+
+<img src="Pandas_Cheat_Sheet_images/imageFile9.png" alt="figure9">
+
+<h6>df.plot.bar()</h6>
+
+<h6>df.plot.boxplot()</h6>
+
+<h6>df.plot.area()</h6>
+
+<h6>df.plot.hexbin()</h6>
+
+<p>Plot a line graph for the DataFrame.</p>
+
+<p>Plot a scatter graph of the DataFrame.</p>
+
+<p>Plot an area graph of the DataFrame.</p>
+
+<p>Plot a hexbin graph of the DataFrame.</p>
+
+<img src="Pandas_Cheat_Sheet_images/imageFile10.png" alt="figure10">
+
+<img src="Pandas_Cheat_Sheet_images/imageFile11.png" alt="figure11">
+
+<img src="Pandas_Cheat_Sheet_images/imageFile12.png" alt="figure12">
+
+<img src="Pandas_Cheat_Sheet_images/imageFile13.png" alt="figure13">
+
+<p>Set the display.max_rows option to 20.</p>
+
+<p>df.plot(subplots=True) Separate into different graphs for each column in the DataFrame.</p>
+
+<h6>df.plot(title=“Graph of A against B”)</h6>
+
+<p>Sets the title of the graph.</p>
+
+<h6>df.plot(cumulative=True)</h6>
+
+<p>Creates a cumulative plot</p>
+
+<p>df.plot(bins=30) Set the number of bins into which data is grouped (histograms)</p>
+
+<p>df.plot(stacked=True) Stacks the data for the columns on top of each other. (bar, barh and area only)</p>
+
+<h6>df.plot(alpha=0.5)</h6>
+
+<p>Sets the transparency of the plot to 50%.</p>
+
+<p>df.plot(subplots=True, title=['col1', 'col2', 'col3']) Arguments can be combined for more flexibility when graphing, this would plot a separate line graph for of column of a 3-columned DataFrame. The first string in the list of titles applies to the graph of the left-most column.</p>
+
+<h2>Changing Type</h2>
+
+<h2>Series String Operations</h2>
+
+<p>Similar to python string operations, except these are vectorized to apply to the entire Series efficiently.</p>
+
+<p>pd.to_numeric(data) Convert non-numeric types to numeric.</p>
+
+<p>df.astype(type) Convert data to (almost) any given type including categorical</p>
+
+<p>s.str.count(pattern) Returns a series with the integer counts in each element.</p>
+
+<p>s.str.cat() Concatenate elements into a single string</p>
+
+<p>pd.to_datetime(data) Convert non-datetime types to datetime type</p>
+
+<p>df.infer_objects() Attempts to infer a better type for object type data.</p>
+
+<p>s.str.get(index) Returns a series with the data at the given index for each element.</p>
+
+<p>s.str.partition(sep) Splits the string on the first instance of the separator</p>
+
+<p>pd.to_timedelta(data) Convert non- timedelta types to timedelta</p>
+
+<p>df.convert_dtypes() Convert columns to best possible dtypes</p>
+
+<p>s.str.join(sep) Returns a series where each element has been concatenated.</p>
+
+<p>s.str.slice(start, stop, step)</p>
+
+<p>Slices each string</p>
+
+<h2>Datetime</h2>
+
+<p>s.str.title() Converts the first character of each word to be a capital.</p>
+
+<p>s.str.replace(pat, rep) Use regex to replace patterns in each string.</p>
+
+<h6>s.dt.day</h6>
+
+<p>Extract the day (int) from the date. s.dt.quarter</p>
+
+<p>With a Series containing data of type datetime, the dt accessor is used to get various components of the datetime values:</p>
+
+<p>s.str.len() Returns a series with the lengths of each element.</p>
+
+<p>s.str.isalnum() Checks whether each element is alpha-numeric</p>
+
+<p>Find which quarter the date lies in. s.dt.hour</p>
+
+<p>Extract the hour. s.dt.minute</p>
+
+<h6>s.dt.year</h6>
+
+<h2>Input/Output</h2>
+
+<p>Extract the year s.dt.month</p>
+
+<p>Extract the minute. s.dt.second</p>
+
+<p>Common file types for data input include CSV, JSON, HTML which are humanreadable, while the common output types are usually more optimized for performance and scalability such as feather, parquet and HDF.</p>
+
+<p>Extract the month as an integer.</p>
+
+<p>Extract the second.</p>
+
+<h2>Mapping</h2>
+
+<h6>df = pd.read_csv(filepath)</h6>
+
+<h6>df.to_parquet(filepath)</h6>
+
+<p>Read data from csv file</p>
+
+<p>Write data to parquet file</p>
+
+<h6>df = pd.read_html(filepath)</h6>
+
+<p>df.to_feather(filepath)</p>
+
+<p>Apply a mapping to every element in a DataFrame or Series, useful for recategorizing or transforming data.</p>
+
+<p>Read data from html file</p>
+
+<p>Write data to feather file df.to_hdf(filepath)</p>
+
+<h6>df = pd.read_excel(filepath)</h6>
+
+<h6>s.map(lambda x: 2*x)</h6>
+
+<p>Read data from xls (and related) files df = pd.read_sql(filepath)</p>
+
+<p>Write data to HDF file df.to_clipboard()</p>
+
+<p>Returns a copy of the series where every entry is doubled df.apply(lambda s: s.max() - s.min(), axis=1) Returns a Series with the difference of the maximum and minimum values of each row of the DataFrame</p>
+
+<h6>Read data from sql file pd.read_clipboard()</h6>
+
+<p>Copy object to the system clipboard</p>
+
+<p>Read text from clipboard</p>
+
+<h6>Functions get_option(option)</h6>
+
+<p>Fetch the value of the given option. set_option(option)</p>
+
+<p>Set the value of the given option.</p>
+
+<p>reset_option(options) Reset the values of all given options to default settings.</p>
+
+<h6>describe_option(options)</h6>
+
+<p>Print descriptions of given options.</p>
+
+<p>option_context(options) Execute code with temporary option settings that revert to prior settings after execution.</p>
+
+<p>Display options display.max_rows</p>
+
+<p>The maximum number of rows displayed in pretty-print.</p>
+
+<h6>display.max_columns</h6>
+
+<p>The maximum number of columns displayed in pretty-print.</p>
+
+<p>display.expand_frame_repr Controls whether the DataFrame representation stretches across pages.</p>
+
+<h6>display.large_repr</h6>
+
+<p>Controls whether a DataFrame that exceeds maximum rows/columns is truncated or summarized</p>
+
+<p>display.precision The output display precision in decimal places.</p>
+
+<p>display.max_colwidth The maximum width of columns, longer cells will be truncated.</p>
+
+<p>display.max_info_columns The maximum number of columns displayed after calling info().</p>
+
+<p>display.chop_threshold Sets the rounding threshold to zero when displaying a Series/DataFrame. display.colheader_justify</p>
+
+<p>Controls how column headers are justified.</p>
+
+
+</body>
+</html>

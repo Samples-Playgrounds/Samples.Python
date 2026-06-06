@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="und">
+<head>
+<meta charset="utf-8">
+<title>CheatSheet.pdf</title>
+</head>
+<body>
+<h1>Haskell Cheat Sheet</h1>
+
+<p>This cheat sheet lays out the fundamental elements of the Haskell language: syntax, keywords and other elements. It is presented as both an executable Haskell ﬁle and a printable document. Load the source into your favorite interpreter to play with code samples shown.</p>
+
+<h2>Basic Syntax Comments</h2>
+
+<p>A single line comment starts with ‘ ’ and extends to the end of the line. Multi-line comments start with ’ ’ and extend to ’ ’. Comments can be nested.</p>
+
+<p>Comments above function deﬁnitions should start with ‘ ’ and those next to parameter types with ‘ ’ for compatibility with Haddock1, a system for documenting Haskell code.</p>
+
+<h3>Reserved Words</h3>
+
+<p>The following words are reserved in Haskell. It is a syntax error to give a variable or a function one of these names.</p>
+
+<p>• • • • • • •</p>
+
+<p>• • • • • • •</p>
+
+<p>1</p>
+
+<p>• • • • • •</p>
+
+<h3>Strings</h3>
+
+<ul>
+<li><p>• – Unicode string, sugar for</p><p>.</p>
+
+</li>
+<li><p>• – Single character.</p></li>
+</ul>
+
+<p>Multi-line Strings Normally, it is a syntax error if a string has any actual newline characters. That is, this is a syntax error:</p>
+
+<p>Backslashes (‘ ’) can “escape” a newline:</p>
+
+<p>The area between the backslashes is ignored. Newlines in the string must be represented explicitly:</p>
+
+<h3>Enumerations</h3>
+
+<ul>
+<li><p>• – List of numbers – . . . .</p></li>
+<li><p>• – Inﬁnite list of numbers –</p><p>. . . .</p>
+
+</li>
+<li><p>• – Empty list; ranges only go forwards.</p></li>
+<li><p>• – Negative integers.</p></li>
+<li><p>• – Syntax error; need for negatives.</p></li>
+<li><p>• – List from 1 to 100 by 2, -1 to 100 by 4.</p></li>
+</ul>
+
+<p>In fact, any value which is in the class can be used:</p>
+
+<ul>
+<li><p>• – List of characters –</p><p>. . . .</p>
+
+</li>
+<li><p>• – .</p></li>
+<li><p>• – List of values (from ).</p></li>
+</ul>
+
+<p>That is, evaluates to:</p>
+
+<p>While evaluates to:</p>
+
+<h3>Numbers</h3>
+
+<ul>
+<li><p>• – Integer or Floating point</p></li>
+<li><p>• – Floating point</p></li>
+<li><p>• – syntax error</p></li>
+<li><p>• – sugar for</p></li>
+<li><p>• – sugar for</p></li>
+</ul>
+
+<h3>Lists & Tuples</h3>
+
+<ul>
+<li><p>• – Empty list.</p></li>
+<li><p>• – List of three numbers.</p></li>
+<li><p>• – Alternate way to write lists using “cons” ( ) and “nil” ( ).</p></li>
+<li><p>• – List of three characters (strings are lists).</p></li>
+<li><p>• – List of characters (same as ).</p></li>
+<li><p>• – 2-element tuple of a number and a string.</p></li>
+<li><p>• – 4-element tuple of two functions, a number and a character.</p></li>
+</ul>
+
+<h3>“Layout” rule, braces and semi-colons.</h3>
+
+<p>Haskell can be written using braces and semicolons, just like C. However, no one does. Instead, the “layout” rule is used, where spaces represent scope. The general rule is: always indent. When the compiler complains, indent more.</p>
+
+<p>Let Indent the body of the let at least one space from the ﬁrst deﬁnition in the . If appears on its own line, the body of any deﬁnition must appear in the column after the let:</p>
+
+<p>Nesting & Capture Nested matching and binding are also allowed.</p>
+
+<p>Figure 1: The deﬁnition of</p>
+
+<p>Braces and semi-colons Semi-colons terminate an expression, and braces represent scope. They can be used after several keywords: ,</p>
+
+<p>, and . They cannot be used when deﬁning a function body. For example, the below will not compile.</p>
+
+<p>As can be seen above, the keyword must also be in the same column as . Finally, when multiple deﬁnitions are given, all identiﬁers must appear in the same column.</p>
+
+<h2>Keywords</h2>
+
+<p>Using we can determine if any choice was given using a nested match:</p>
+
+<p>However, this will work ﬁne:</p>
+
+<p>Haskell keywords are listed below, in alphabetical order.</p>
+
+<p>Binding can be used to manipulate the value matched:</p>
+
+<p>Function Deﬁnition Indent the body at least one space from the function name:</p>
+
+<h3>Case</h3>
+
+<p>is similar to a statement in C# or Java, but can match a pattern: the shape of the value being inspected. Consider a simple data type:</p>
+
+<p>Unless a clause is present. In that case, indent the where clause at least one space from the function name and any function bodies at least one space from the keyword:</p>
+
+<p>can be used to determine which choice was given:</p>
+
+<p>Matching Order Matching proceeds from top to bottom. If is reordered as follows, the ﬁrst pattern will always succeed:</p>
+
+<p>As with pattern-matching in function deﬁnitions, the ‘ ’ token is a “wildcard” matching any value.</p>
+
+<p>Guards Guards, or conditional matches, can be used in cases just like function deﬁnitions. The only difference is the use of the instead of . Here is a simple function which does a case-insensitive string match:</p>
+
+<p>Notice that the declaration only gives the type signature of the function—no implementation is given here (with some exceptions, see “Defaults” on page 3). Continuing, we can deﬁne several instances:</p>
+
+<h3>Data</h3>
+
+<p>So-called algebraic data types can be declared as follows:</p>
+
+<p>is the type’s name. and</p>
+
+<p>are values of the type and are called constructors. Multiple constructors are separated with the ‘ ’ character. Note that type and constructor names must start with a capital letter. It is a syntax error otherwise.</p>
+
+<p>Evaluating gives:</p>
+
+<h3>Class</h3>
+
+<p>A Haskell function is deﬁned to work on a certain type or set of types and cannot be deﬁned more than once. Most languages support the idea of “overloading”, where a function can have different behavior depending on the type of its arguments. Haskell accomplishes overloading through and declarations. A deﬁnes one or more functions that can be applied to any types which are members (i.e., instances) of that class. A class is analogous to an interface in Java or C#, and instances to a concrete implementation of the interface.</p>
+
+<p>A class must be declared with one or more type variables. Technically, Haskell 98 only allows one type variable, but most implementations of Haskell support so-called multi-parameter type classes, which allow more than one type variable.</p>
+
+<p>We can deﬁne a class which supplies a ﬂavor for a given type:</p>
+
+<p>While gives:</p>
+
+<p>Defaults Default implementations can be given for functions in a class. These are useful when certain functions can be deﬁned in terms of others in the class. A default is deﬁned by giving a body to one of the member functions. The canonical example is , which deﬁnes (not equal) in terms of</p>
+
+<p>. :</p>
+
+<p>Recursive deﬁnitions can be created, but an</p>
+
+<p>declaration must always implement at least one class member.</p>
+
+<p>Constructors with Arguments The type above is not very interesting except as an enumeration. Constructors that take arguments can be declared, allowing more information to be stored:</p>
+
+<p>Notice that the arguments for each constructor are type names, not constructors. That means this kind of declaration is illegal:</p>
+
+<p>instead, the type must be used:</p>
+
+<p>Type and Constructor Names Type and constructor names can be the same, because they will never be used in a place that would cause confusion. For example:</p>
+
+<p>which declares a type named with two constructors, and . Using this type in a function makes the difference clear:</p>
+
+<p>Some literature refers to this practice as type punning.</p>
+
+<p>same accessor function for values of the same type, but that can be dangerous if the accessor is not used by all constructors. Consider this rather contrived example:</p>
+
+<p>Type Variables Declaring so-called polymorphic data types is as easy as adding type variables in the declaration:</p>
+
+<p>Because seven of these operations are so common, Haskell provides the keyword which will automatically implement the typeclass on the associated type. The seven supported typeclasses are: , , , , , , and</p>
+
+<p>.</p>
+
+<p>Two forms of are possible. The ﬁrst is used when a type only derives one class:</p>
+
+<p>This declares a type with two constructors,</p>
+
+<p>and . The constructor can take an argument of any type, which is represented by the type variable above.</p>
+
+<p>We can also mix type variables and speciﬁc types in constructors:</p>
+
+<p>If is called with a value, a runtime error will occur.</p>
+
+<p>Finally, as explained elsewhere, these names can be used for pattern matching, argument capture and “updating.”</p>
+
+<p>The second is used when multiple classes are derived:</p>
+
+<p>Above, the constructor can take a value of any type and an value.</p>
+
+<p>Record Syntax Constructor arguments can be declared either positionally, as above, or using record syntax, which gives a name to each argument. For example, here we declare a type with names for appropriate arguments:</p>
+
+<p>Class Constraints Data types can be declared with class constraints on the type variables, but this practice is generally discouraged. It is generally better to hide the “raw” data constructors using the module system and instead export “smart” constructors which apply appropriate constraints. In any case, the syntax used is:</p>
+
+<p>These names are referred to as selector or accessor functions and are just that, functions. They must start with a lowercase letter or underscore and cannot have the same name as another function in scope. Thus the “ ” preﬁx on each above. Multiple constructors (of the same type) can use the</p>
+
+<p>This declares a type which has one type variable argument. Valid types are those in the class.</p>
+
+<p>Deriving Many types have common operations which are tedious to deﬁne yet necessary, such as the ability to convert to and from strings, compare for equality, or order in a sequence. These capabilities are deﬁned as typeclasses in Haskell.</p>
+
+<p>It is a syntax error to specify for any other classes besides the six given above.</p>
+
+<h3>Deriving</h3>
+
+<p>See the section on under the keyword on page 4.</p>
+
+<h3>Do</h3>
+
+<p>The keyword indicates that the code to follow will be in a monadic context. Statements are separated by newlines, assignment is indicated by , and a form is introduce which does not require the keyword.</p>
+
+<p>If and IO can be tricky when used with IO. Conceptually it is no different from an in any other context, but intuitively it is hard to develop. Consider the function from</p>
+
+<p>:</p>
+
+<p>The statement has this “signature”:</p>
+
+<p>That is, it takes a value and evaluates to some other value based on the condition. From the type signatures it is clear that cannot be used directly by :</p>
+
+<p>Again, notice where is. We don’t put it in the statement. Instead we use it once at the end of the function.</p>
+
+<p>Multiple ’s When using with or , another is required if either branch has multiple statements. An example with :</p>
+
+<p>An alternative syntax uses semi-colons and braces. A is still required, but indention is unnecessary. This code shows a example, but the principle applies to as well:</p>
+
+<p>That is, results in an value, while wants a value. Instead, the correct value must be “extracted” by running the IO action:</p>
+
+<p>-- no ’do’.</p>
+
+<p>-- multiple statements require</p>
+
+<p>-- a new ’do’.</p>
+
+<p>Notice the use of . Because puts us “inside” the monad, we can’t “get out” except through . Note that we don’t have to use</p>
+
+<p>inline here—we can also use to evaluate the condition and get a value ﬁrst:</p>
+
+<p>And one with :</p>
+
+<p>Export See the section on on page 6.</p>
+
+<h3>If, Then, Else</h3>
+
+<p>Remember, always “returns” a value. It is an expression, not just a control ﬂow statement. This function tests if the string given starts with a lower case letter and, if so, converts it to upper case:</p>
+
+<p>-- Use pattern-matching to</p>
+
+<p>-- get ﬁrst character</p>
+
+<p>-- Anything else is empty string</p>
+
+<p>Import See the section on on page 6.</p>
+
+<p>In See on page 6.</p>
+
+<p>Inﬁx, inﬁxl and inﬁxr See the section on operators on page 11.</p>
+
+<p>Instance See the section on on page 3.</p>
+
+<p>silly example which gives the sum of a list of numbers, their average, and their median:</p>
+
+<p>A module can only be deﬁned in one ﬁle, though its exports may come from multiple sources. To make a Haskell ﬁle a module, just add a module declaration at the top:</p>
+
+<p>Deconstruction The left-hand side of a definition can also destructure its argument, in case sub-components are to be accessed. This deﬁnition would extract the ﬁrst three characters from a string</p>
+
+<p>Module names must start with a capital letter but otherwise can include periods, numbers and underscores. Periods are used to give sense of structure, and Haskell compilers will use them as indications of the directory a particular source ﬁle is, but otherwise they have no meaning.</p>
+
+<p>The Haskell community has standardized a set of top-level module names such as , ,</p>
+
+<p>, etc. Be sure to consult them for an appropriate place for your own module if you plan on releasing it to the public.</p>
+
+<h3>Let</h3>
+
+<p>Local functions can be deﬁned within a function using . The keyword must always be followed by . The must appear in the same column as the keyword. Functions deﬁned have access to all other functions and variables within the same scope (including those deﬁned by ). In this example, multiplies its argument by , which was passed to the original . is used by map to give the multiples of x up to 10:</p>
+
+<p>Note that this is different than the following, which only works if the string has three characters:</p>
+
+<p>Of See the section on on page 2.</p>
+
+<p>Imports The Haskell standard libraries are divided into a number of modules. The functionality provided by those libraries is accessed by importing into your source ﬁle. To import all everything exported by a library, just use the module name:</p>
+
+<p>Everything means everything: functions, data types and constructors, class declarations, and even other modules imported and then exported by the that module. Importing selectively is accomplished by giving a list of names to import. For example, here we import some functions from :</p>
+
+<p>“functions” with no arguments are actually constants and, once evaluated, will not evaluate again. This is useful for capturing common portions of your function and re-using them. Here is a</p>
+
+<h3>Module</h3>
+
+<p>A module is a compilation unit which exports functions, types, classes, instances, and other modules.</p>
+
+<p>Data types can imported in a number of ways. We can just import the type and no constructors:</p>
+
+<p>Of course, this prevents our module from patternmatching on the values of type . We can import one or more constructors explicitly:</p>
+
+<p>All constructors for a given type can also be imported:</p>
+
+<p>We can also import types and classes deﬁned in the module:</p>
+
+<h4>Instance Declarations It must be noted that</h4>
+
+<p>declarations cannot be excluded from import: all declarations in a module will be imported when the module is imported.</p>
+
+<p>Qualiﬁed Imports The names exported by a module (i.e., functions, types, operators, etc.) can have a preﬁx attached through qualiﬁed imports. This is particularly useful for modules which have a large number of functions having the same name as functions. is a good example:</p>
+
+<p>Exports If an export list is not provided, then all functions, types, constructors, etc. will be available to anyone importing the module. Note that any imported modules are not exported in this case. Limiting the names exported is accomplished by adding a parenthesized list of names before the keyword:</p>
+
+<p>In the case of classes, we can import the functions deﬁned for a class using syntax similar to importing constructors for data types:</p>
+
+<p>This form requires any function, type, constructor or other name exported by to now be preﬁxed with the alias (i.e., ) given. Here is one way to remove all duplicates from a list:</p>
+
+<p>The same syntax as used for importing can be used here to specify which functions, types, constructors, and classes are exported, with a few differences. If a module imports another module, it can also export that module:</p>
+
+<p>Note that, unlike data types, all class functions are imported unless explicitly excluded. To only import the class, we use this syntax:</p>
+
+<p>A second form does not create an alias. Instead, the preﬁx becomes the module name. We can write a simple function to check if a string is all upper case:</p>
+
+<p>Exclusions If most, but not all, names are to be imported from a module, it would be tedious to list them all. For that reason, imports can also be speciﬁed via the keyword:</p>
+
+<p>A module can even re-export itself, which can be useful when all local deﬁnitions and a given imported module are to be exported. Below we export ourselves and , but not :</p>
+
+<p>Except for instance declarations, any type, function, constructor or class can be hidden.</p>
+
+<p>Except for the preﬁx speciﬁed, qualiﬁed imports support the same syntax as normal imports. The name imported can be limited in the same ways as described above.</p>
+
+<h3>Newtype</h3>
+
+<p>While introduces new values and just creates synonyms, falls somewhere between. The syntax for is quite restrictedonly one constructor can be deﬁned, and that constructor can only take one argument. Continuing the above example, we can deﬁne a type as follows:</p>
+
+<p>As opposed to , the and “values” on are not just values. The typechecker treats them as entirely new types. That means our</p>
+
+<p>function from above would not compile. The following produces a type error:</p>
+
+<p>Instead, we must use pattern-matching to get to the “values” to which we apply :</p>
+
+<p>Finally, it should be noted that any clause which can be attached to a declaration can also be used when declaring a .</p>
+
+<p>Return See on page 4.</p>
+
+<h3>Type</h3>
+
+<p>This keyword deﬁnes a type synonym (i.e., alias). This keyword does not deﬁne a new type, like or . It is useful for documenting code but otherwise has no effect on the actual type of a given function or value. For example, a data type could be deﬁned as:</p>
+
+<p>where the ﬁrst constructor argument represents their ﬁrst name and the second their last. However, the order and meaning of the two arguments is not very clear. A declaration can help:</p>
+
+<p>The key observation is that this keyword does not introduce a new value; instead it introduces a new type. This gives us two very useful properties:</p>
+
+<ul>
+<li><p>• No runtime cost is associated with the new type, since it does not actually produce new values. In other words, newtypes are absolutely free!</p></li>
+<li><p>• The type-checker is able to enforce that common types such as or are used in restricted ways, speciﬁed by the programmer.</p></li>
+</ul>
+
+<p>Because introduces a synonym, type checking is not affected in any way. The function , deﬁned as:</p>
+
+<p>which has the type</p>
+
+<p>can be used on values with the type or just as easily:</p>
+
+<p>Because is just a synonym, it cannot declare multiple constructors the way can. Type variables can be used, but there cannot be more than the type variables declared with the original type. That means a synonym like the following is possible:</p>
+
+<p>but this not:</p>
+
+<p>Note that fewer type variables can be used, which useful in certain instances.</p>
+
+<h3>Where</h3>
+
+<p>Similar to , deﬁnes local functions and constants. The scope of a deﬁnition is the current function. If a function is broken into multiple deﬁnitions through pattern-matching, then the scope of a particular clause only applies to that deﬁnition. For example, the function below has a different meaning depending on the arguments given to the function :</p>
+
+<p>Where vs. Let A clause can only be deﬁned at the level of a function deﬁnition. Usually, that is identical to the scope of deﬁnition. The only difference is when guards are being used. The</p>
+
+<p>scope of the clause extends over all guards. In contrast, the scope of a expression is only the current function clause and guard, if any.</p>
+
+<h2>Declarations, Etc.</h2>
+
+<p>and recalling the deﬁnition of from page 2 we can match on nested values when is present:</p>
+
+<p>bind the value to. This facility is used below to bind the head of the list in for display, while also binding the entire list to in order to compute its length:</p>
+
+<p>The following section details rules on function declarations, list comprehensions, and other areas of the language.</p>
+
+<h3>Function Deﬁnition</h3>
+
+<p>Functions are deﬁned by declaring their name, any arguments, and an equals sign:</p>
+
+<p>Pattern-matching also allows values to be assigned to variables. For example, this function determines if the string given is empty or not. If not, the value bound to is converted to lower case:</p>
+
+<p>Guards Boolean functions can be used as “guards” in function deﬁnitions along with pattern matching. An example without pattern matching:</p>
+
+<p>All functions names must start with a lowercase letter or “ ”. It is a syntax error otherwise.</p>
+
+<p>Pattern Matching Multiple “clauses” of a function can be deﬁned by “pattern-matching” on the values of arguments. Here, the the function has four separate cases:</p>
+
+<p>-- Matches when the string "y" is given.</p>
+
+<p>-- Matches when the string "n" is given.</p>
+
+<p>-- Matches when string beginning</p>
+
+<p>-- with ’y’ given.</p>
+
+<p>-- Matches for any other value given.</p>
+
+<p>Note that the ‘ ’ character is a wildcard and matches any value.</p>
+
+<p>Pattern matching can extend to nested values. Assuming this data declaration:</p>
+
+<p>Note that above is similer to in that it will match anything; the only difference is that the value matched is also given a name.</p>
+
+<p>n + k Patterns This (sometimes controversial) pattern-matching facility makes it easy to match certain kinds of numeric expressions. The idea is to deﬁne a base case (the “n” portion) with a constant number for matching, and then to deﬁne other matches (the “k” portion) as additives to the base case. Here is a rather inefﬁcient way of testing if a number is even or not:</p>
+
+<p>Notice – it always evaluates to true and can be used to specify a “default” branch.</p>
+
+<p>Guards can be used with patterns. Here is a function that determines if the ﬁrst character in a string is upper or lower case:</p>
+
+<p>Argument Capture Argument capture is useful for pattern-matching a value and using it, without declaring an extra variable. Use an ‘ ’ symbol in between the pattern to match and the variable to</p>
+
+<p>Matching & Guard Order Pattern-matching proceeds in top to bottom order. Similarly, guard expressions are tested from top to bottom. For example, neither of these functions would be very interesting:</p>
+
+<p>Record Syntax Normally pattern matching occurs based on the position of arguments in the value being matched. Types declared with record syntax, however, can match based on those record names. Given this data type:</p>
+
+<p>we can match on only:</p>
+
+<p>Argument capture is possible with this syntax, although it gets clunky. Continuing the above, we now deﬁne a type and a function to replace values with non-zero components with all black:</p>
+
+<p>-- Color value untouched if green is 0</p>
+
+<p>the type of a particular value, even if the value isn’t present.</p>
+
+<p>For example, deﬁne a class for default values:</p>
+
+<p>The idea is you give a value of the right type and it gives you back a default value for that type. Deﬁning instances for basic types is easy:</p>
+
+<p>code when using a constructor. has type but, if not enough other information is available, Haskell must be told what is. Some example default values:</p>
+
+<p>-- Return "Just False"</p>
+
+<p>-- Return "Just ’ ’"</p>
+
+<p>is a littler trickier, because we want to get a default value for the type, but the constructor might be . The following deﬁnition would work, but it’s not optimal since we get when is passed in.</p>
+
+<p>We’d rather get a default value back instead. Here is where a lazy pattern saves us – we can pretend that we’ve matched and use that to get a default value, even if is given:</p>
+
+<h3>List Comprehensions</h3>
+
+<p>A list comprehension consists of four types of elements: generators, guards, local bindings, and targets. A list comprehension creates a list of target values based on the generators and guards given. This comprehension generates all squares:</p>
+
+<p>generates a list of all values and puts them in , one by one. creates each element of the list by multiplying by itself.</p>
+
+<p>Guards allow certain elements to be excluded. The following shows how divisors for a given number (excluding itself) can be calculated. Notice how is used in both the guard and target expression.</p>
+
+<p>Lazy Patterns This syntax, also known as irrefutable patterns, allows pattern matches which always succeed. That means any clause using the pattern will succeed, but if it tries to actually use the matched value an error may occur. This is generally useful when an action should be taken on</p>
+
+<p>As long as the value is not actually evaluated, we’re safe. None of the base types need to look at (see the “ ” matches they use), so things will work just ﬁne.</p>
+
+<p>One wrinkle with the above is that we must provide type annotations in the interpreter or the</p>
+
+<p>Local bindings provide new deﬁnitions for use in the generated expression or subsequent generators and guards. Below, is used to represent the minimum of and :</p>
+
+<p>Comprehensions are not limited to numbers. Any list will do. All upper case letters can be generated:</p>
+
+<p>Precedence and associativity make many of the rules of arithmetic work “as expected.” For example, consider these minor updates to the precedence of addition and multiplication:</p>
+
+<p>Or, to ﬁnd all occurrences of a particular break value in a list (indexing from 0):</p>
+
+<p>Of course, full pattern matching, guards, etc. are available in this form. Type signatures are a bit different, though. The operator “name” must appear in parentheses:</p>
+
+<p>The results are surprising:</p>
+
+<p>Allowable symbols which can be used to deﬁne operators are:</p>
+
+<p>A unique feature of list comprehensions is that pattern matching failures do not cause an error; they are just excluded from the resulting list.</p>
+
+<h3>Operators</h3>
+
+<p>There are very few predeﬁned “operators” in Haskell—most that appear predeﬁned are actually syntax (e.g., “ ”). Instead, operators are simply functions that take two arguments and have special syntactic support. Any so-called operator can be applied as a preﬁx function using parentheses:</p>
+
+<p>To deﬁne a new operator, simply deﬁne it as a normal function, except the operator appears between the two arguments. Here’s one which takes inserts a comma between two strings and ensures no extra spaces appear:</p>
+
+<p>However, there are several “operators” which cannot be redeﬁned. They are: , and . The last,</p>
+
+<p>, cannot be redeﬁned by itself, but can be used as part of multi-character operator. The “bind” function, , is one example.</p>
+
+<p>Reversing associativity also has interesting effects. Redeﬁning division as right associative:</p>
+
+<p>We get interesting results:</p>
+
+<p>Precedence & Associativity The precedence and associativity, collectively called ﬁxity, of any operator can be set through the , and</p>
+
+<p>keywords. These can be applied both to top-level functions and to local deﬁnitions. The syntax is:</p>
+
+<p>| | precedence op</p>
+
+<p>where precedence varies from 0 to 9. Op can actually be any function which takes two arguments (i.e., any binary operation). Whether the operator is left or right associative is speciﬁed by or</p>
+
+<p>, respectively. Such declarations have no associativity.</p>
+
+<h3>Currying</h3>
+
+<p>In Haskell, functions do not have to get all of their arguments at once. For example, consider the</p>
+
+<p>function, which only converts certain elements of string depending on a test:</p>
+
+<p>Using , we can write the function which converts certain letters to numbers:</p>
+
+<p>-- etc.</p>
+
+<p>That is, can take two arguments. The ﬁrst is the conversion function which converts individual characters and the second is the string to be converted.</p>
+
+<p>A curried form of any function which takes multiple arguments can be created. One way to think of this is that each “arrow” in the function’s signature represents a new function which can be created by supplying one more argument.</p>
+
+<p>-- etc.</p>
+
+<p>Notice that has no arguments speciﬁed. Also, the ﬁnal argument to is not given. However, the type signature of tells the whole story:</p>
+
+<p>Sections Operators are functions, and they can be curried like any other. For example, a curried version of “ ” can be written as:</p>
+
+<p>However, this can be unwieldy and hard to read. “Sections” are curried operators, using parentheses. Here is using sections:</p>
+
+<p>changes. “Updating” is really a copy operation, with new values in the ﬁelds that “changed.” For example, using the type deﬁned earlier, we can write a function that sets the ﬁeld to zero easily:</p>
+
+<p>The above is a bit verbose and can be rewriten using record syntax. This kind of “update” only sets values for the ﬁeld(s) speciﬁed and copies the rest:</p>
+
+<p>Here we capture the value in and return a new value. That value happens to have the same value for and as and it’s component is 0. We can combine this with pattern matching to set the and ﬁelds to equal the ﬁeld:</p>
+
+<p>That is, takes a string and produces a string. It is a “constant”, in the sense that always returns a value that is a function which takes a string and produces a string. returns a “curried” form of , where only two of its three arguments have been supplied.</p>
+
+<p>This can be taken further. Say we want to write a function which only changes upper case letters. We know the test to apply, , but we don’t want to specify the conversion. That function can be written as:</p>
+
+<p>The supplied argument can be on the right or left, which indicates what position it should take. This is important for operations such as concatenation:</p>
+
+<p>Which produces quite different results:</p>
+
+<p>which has the type signature:</p>
+
+<h3>“Updating” values and record syntax</h3>
+
+<p>Haskell is a pure language and, as such, has no mutable state. That is, once a value is set it never</p>
+
+<p>Notice we must use argument capture (“ ”) to get the value and pattern matching with record syntax (“ ”) to get the inner ﬁeld.</p>
+
+<h3>Anonymous Functions</h3>
+
+<p>An anonymous function (i.e., a lambda expression or lambda for short), is a function without a name. They can be deﬁned at any time like so:</p>
+
+<p>which deﬁnes a function which takes an argument and returns a tuple containing that argument in both positions. They are useful for simple functions which don’t need a name. The following determines if a string has mixed case (or is all whitespace):</p>
+
+<p>However, for efﬁciency or other reasons you may only want to allow types. You would accomplish that with a type signature:</p>
+
+<p>Haskell cannot compile that function because it does not know the type of . We must limit the type through an annotation:</p>
+
+<p>Of course, lambdas can be the returned from functions too. This classic returns a function which will then multiply its argument by the one originally given:</p>
+
+<p>For example:</p>
+
+<h3>Type Signatures</h3>
+
+<p>Haskell supports full type inference, meaning in most cases no types have to be written down. Type signatures are still useful for at least two reasons.</p>
+
+<p>Type signatures can appear on top-level functions and nested or deﬁnitions. Generally this is useful for documentation, although in some cases they are needed to prevent polymorphism. A type signature is ﬁrst the name of the item which will be typed, followed by a , followed by the types. An example of this has already been seen above.</p>
+
+<p>Type signatures do not need to appear directly above their implementation. They can be speciﬁed anywhere in the containing module (yes, even below!). Multiple items with the same signature can also be deﬁned together:</p>
+
+<p>Annotations have the same syntax as type signatures, but may adorn any expression.</p>
+
+<h3>Unit</h3>
+
+<p>– “unit” type and “unit” value. The value and type that represents no useful information.</p>
+
+<h2>Contributors</h2>
+
+<p>My thanks to those who contributed patches and useful suggestions: Dave Bayer, Cale Gibbard, Stephen Hicks, Kurt Hutchinson, Johan Kiviniemi, Adrian Neumann, Barak Pearlmutter, Lanny Ripple, Markus Roberts, Holger Siegel, Leif Warner, and Jeff Zaroyko.</p>
+
+<p>Documentation—Even if the compiler can ﬁgure out the types of your functions, other programmers or even yourself might not be able to later. Writing the type signatures on all top-level functions is considered very good form.</p>
+
+<p>Specialization—Typeclasses allow functions with overloading. For example, a function to negate any list of numbers has the signature:</p>
+
+<h2>Version</h2>
+
+<p>Type Annotations Sometimes Haskell cannot determine what type is meant. The classic demonstration of this is the so-called “ ” problem:</p>
+
+<p>This is version 1.10. The source can be found at GitHub2. The latest released version of the PDF can be downloaded from Hackage3. Visit CodeSlower.com4 for other projects and writings.</p>
+
+<ul>
+<li><p>2</p></li>
+<li><p>3</p></li>
+<li><p>4</p></li>
+</ul>
+
+
+</body>
+</html>

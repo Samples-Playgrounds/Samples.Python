@@ -1,0 +1,2061 @@
+{
+  "file name" : "keyboard-shortcuts-windows.pdf",
+  "number of pages" : 1,
+  "author" : "Brad Gashler",
+  "title" : null,
+  "creation date" : "D:20210817084556-07'00'",
+  "modification date" : "D:20210817084556-07'00'",
+  "kids" : [ {
+    "type" : "image",
+    "id" : 354,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 559.9, 246.0, 594.0 ],
+    "source" : "keyboard-shortcuts-windows_images/imageFile1.png"
+  }, {
+    "type" : "paragraph",
+    "id" : 355,
+    "page number" : 1,
+    "bounding box" : [ 56.16, 547.888, 219.188, 563.849 ],
+    "font" : "SegoeUI-Light",
+    "font size" : 12.0,
+    "text color" : "[0.0]",
+    "content" : "Keyboard shortcuts for Windows"
+  }, {
+    "type" : "heading",
+    "id" : 203,
+    "level" : "Doctitle",
+    "page number" : 1,
+    "bounding box" : [ 18.0, 519.12, 52.87, 532.368 ],
+    "heading level" : 1,
+    "font" : "SegoeUI-Semibold",
+    "font size" : 9.96,
+    "text color" : "[0.0]",
+    "content" : "General"
+  }, {
+    "type" : "image",
+    "id" : 204,
+    "page number" : 1,
+    "bounding box" : [ 16.56, 516.46, 247.46, 517.18 ]
+  }, {
+    "type" : "image",
+    "id" : 205,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 502.66, 99.024, 513.46 ]
+  }, {
+    "type" : "image",
+    "id" : 210,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 502.66, 247.584, 513.46 ]
+  }, {
+    "type" : "image",
+    "id" : 208,
+    "page number" : 1,
+    "bounding box" : [ 99.024, 502.66, 247.584, 513.46 ]
+  }, {
+    "type" : "image",
+    "id" : 206,
+    "page number" : 1,
+    "bounding box" : [ 18.72, 503.38, 98.304, 512.74 ]
+  }, {
+    "type" : "image",
+    "id" : 209,
+    "page number" : 1,
+    "bounding box" : [ 99.744, 503.38, 246.864, 512.74 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 207,
+    "page number" : 1,
+    "bounding box" : [ 18.72, 492.753, 174.416, 512.691 ],
+    "font" : "SegoeUI",
+    "font size" : 6.96,
+    "text color" : "[0.0]",
+    "content" : "Ctrl+Shift+P, F1 Show Command Palette Ctrl+P Quick Open, Go to File…"
+  }, {
+    "type" : "image",
+    "id" : 211,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 481.3, 99.024, 491.98 ]
+  }, {
+    "type" : "list",
+    "id" : 213,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 18.0, 27.413, 204.255, 491.331 ],
+    "numbering style" : "english letters",
+    "number of list items" : 2,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 18.0, 91.733, 204.255, 491.331 ],
+      "font" : "SegoeUI-Semibold",
+      "font size" : 9.96,
+      "text color" : "[0.0]",
+      "content" : "Ctrl+Shift+N New window/instance Ctrl+Shift+W Close window/instance Ctrl+, User Settings Ctrl+K Ctrl+S Keyboard Shortcuts Basic editing Ctrl+X Cut line (empty selection) Ctrl+C Copy line (empty selection) Alt+ ↑ / ↓ Move line up/down Shift+Alt + ↓ / ↑ Copy line up/down Ctrl+Shift+K Delete line Ctrl+Enter Insert line below Ctrl+Shift+Enter Insert line above Ctrl+Shift+\\ Jump to matching bracket Ctrl+] / [ Indent/outdent line Home / End Go to beginning/end of line Ctrl+Home Go to beginning of file Ctrl+End Go to end of file Ctrl+↑ / ↓ Scroll line up/down Alt+PgUp / PgDn Scroll page up/down Ctrl+Shift+[ Fold (collapse) region Ctrl+Shift+] Unfold (uncollapse) region Ctrl+K Ctrl+[ Fold (collapse) all subregions Ctrl+K Ctrl+] Unfold (uncollapse) all subregions Ctrl+K Ctrl+0 Fold (collapse) all regions Ctrl+K Ctrl+J Unfold (uncollapse) all regions Ctrl+K Ctrl+C Add line comment Ctrl+K Ctrl+U Remove line comment Ctrl+/ Toggle line comment Shift+Alt+A Toggle block comment Alt+Z Toggle word wrap Navigation Ctrl+T Show all Symbols Ctrl+G Go to Line... Ctrl+P Go to File...",
+      "kids" : [ {
+        "type" : "image",
+        "id" : 118,
+        "page number" : 1,
+        "bounding box" : [ 99.024, 481.3, 247.584, 491.98 ]
+      }, {
+        "type" : "image",
+        "id" : 119,
+        "page number" : 1,
+        "bounding box" : [ 99.744, 482.02, 246.864, 491.26 ]
+      }, {
+        "type" : "image",
+        "id" : 120,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 481.3, 247.584, 491.98 ]
+      }, {
+        "type" : "image",
+        "id" : 121,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 459.82, 99.024, 470.62 ]
+      }, {
+        "type" : "image",
+        "id" : 122,
+        "page number" : 1,
+        "bounding box" : [ 18.72, 460.54, 98.304, 469.9 ]
+      }, {
+        "type" : "image",
+        "id" : 123,
+        "page number" : 1,
+        "bounding box" : [ 99.024, 459.82, 247.584, 470.62 ]
+      }, {
+        "type" : "image",
+        "id" : 124,
+        "page number" : 1,
+        "bounding box" : [ 99.744, 460.54, 246.864, 469.9 ]
+      }, {
+        "type" : "image",
+        "id" : 125,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 459.82, 247.584, 470.62 ]
+      }, {
+        "type" : "image",
+        "id" : 126,
+        "page number" : 1,
+        "bounding box" : [ 16.56, 423.07, 247.46, 423.79 ]
+      }, {
+        "type" : "image",
+        "id" : 127,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 409.27, 99.024, 420.07 ]
+      }, {
+        "type" : "image",
+        "id" : 128,
+        "page number" : 1,
+        "bounding box" : [ 18.72, 409.99, 98.304, 419.35 ]
+      }, {
+        "type" : "image",
+        "id" : 129,
+        "page number" : 1,
+        "bounding box" : [ 99.024, 409.27, 247.584, 420.07 ]
+      }, {
+        "type" : "image",
+        "id" : 130,
+        "page number" : 1,
+        "bounding box" : [ 99.744, 409.99, 246.864, 419.35 ]
+      }, {
+        "type" : "image",
+        "id" : 131,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 409.27, 247.584, 420.07 ]
+      }, {
+        "type" : "image",
+        "id" : 132,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 387.91, 99.024, 398.59 ]
+      }, {
+        "type" : "image",
+        "id" : 133,
+        "page number" : 1,
+        "bounding box" : [ 18.72, 388.63, 98.304, 397.87 ]
+      }, {
+        "type" : "image",
+        "id" : 134,
+        "page number" : 1,
+        "bounding box" : [ 99.024, 387.91, 247.584, 398.59 ]
+      }, {
+        "type" : "image",
+        "id" : 135,
+        "page number" : 1,
+        "bounding box" : [ 99.744, 388.63, 246.864, 397.87 ]
+      }, {
+        "type" : "image",
+        "id" : 136,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 387.91, 247.584, 398.59 ]
+      }, {
+        "type" : "image",
+        "id" : 137,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 366.43, 99.024, 377.23 ]
+      }, {
+        "type" : "image",
+        "id" : 138,
+        "page number" : 1,
+        "bounding box" : [ 18.72, 367.15, 98.304, 376.51 ]
+      }, {
+        "type" : "image",
+        "id" : 139,
+        "page number" : 1,
+        "bounding box" : [ 99.024, 366.43, 247.584, 377.23 ]
+      }, {
+        "type" : "image",
+        "id" : 140,
+        "page number" : 1,
+        "bounding box" : [ 99.744, 367.15, 246.864, 376.51 ]
+      }, {
+        "type" : "image",
+        "id" : 141,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 366.43, 247.584, 377.23 ]
+      }, {
+        "type" : "image",
+        "id" : 142,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 345.07, 99.024, 355.75 ]
+      }, {
+        "type" : "image",
+        "id" : 143,
+        "page number" : 1,
+        "bounding box" : [ 18.72, 345.79, 98.304, 355.03 ]
+      }, {
+        "type" : "image",
+        "id" : 144,
+        "page number" : 1,
+        "bounding box" : [ 99.024, 345.07, 247.584, 355.75 ]
+      }, {
+        "type" : "image",
+        "id" : 145,
+        "page number" : 1,
+        "bounding box" : [ 99.744, 345.79, 246.864, 355.03 ]
+      }, {
+        "type" : "image",
+        "id" : 146,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 345.07, 247.584, 355.75 ]
+      }, {
+        "type" : "image",
+        "id" : 147,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 323.57, 99.024, 334.394 ]
+      }, {
+        "type" : "image",
+        "id" : 148,
+        "page number" : 1,
+        "bounding box" : [ 18.72, 324.29, 98.304, 333.674 ]
+      }, {
+        "type" : "image",
+        "id" : 149,
+        "page number" : 1,
+        "bounding box" : [ 99.024, 323.57, 247.584, 334.394 ]
+      }, {
+        "type" : "image",
+        "id" : 150,
+        "page number" : 1,
+        "bounding box" : [ 99.744, 324.29, 246.864, 333.674 ]
+      }, {
+        "type" : "image",
+        "id" : 151,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 323.57, 247.584, 334.27 ]
+      }, {
+        "type" : "image",
+        "id" : 152,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 302.21, 99.024, 312.89 ]
+      }, {
+        "type" : "image",
+        "id" : 153,
+        "page number" : 1,
+        "bounding box" : [ 18.72, 302.93, 98.304, 312.17 ]
+      }, {
+        "type" : "image",
+        "id" : 154,
+        "page number" : 1,
+        "bounding box" : [ 99.024, 302.21, 247.584, 312.89 ]
+      }, {
+        "type" : "image",
+        "id" : 155,
+        "page number" : 1,
+        "bounding box" : [ 99.744, 302.93, 246.864, 312.17 ]
+      }, {
+        "type" : "image",
+        "id" : 156,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 302.21, 247.584, 312.89 ]
+      }, {
+        "type" : "image",
+        "id" : 157,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 280.73, 99.024, 291.53 ]
+      }, {
+        "type" : "image",
+        "id" : 158,
+        "page number" : 1,
+        "bounding box" : [ 18.72, 281.45, 98.304, 290.81 ]
+      }, {
+        "type" : "image",
+        "id" : 159,
+        "page number" : 1,
+        "bounding box" : [ 99.024, 280.73, 247.584, 291.53 ]
+      }, {
+        "type" : "image",
+        "id" : 160,
+        "page number" : 1,
+        "bounding box" : [ 99.744, 281.45, 246.864, 290.81 ]
+      }, {
+        "type" : "image",
+        "id" : 161,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 280.73, 247.584, 291.41 ]
+      }, {
+        "type" : "image",
+        "id" : 162,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 259.37, 99.024, 270.05 ]
+      }, {
+        "type" : "image",
+        "id" : 163,
+        "page number" : 1,
+        "bounding box" : [ 18.72, 260.09, 98.304, 269.33 ]
+      }, {
+        "type" : "image",
+        "id" : 164,
+        "page number" : 1,
+        "bounding box" : [ 99.024, 259.37, 247.584, 270.05 ]
+      }, {
+        "type" : "image",
+        "id" : 165,
+        "page number" : 1,
+        "bounding box" : [ 99.744, 260.09, 246.864, 269.33 ]
+      }, {
+        "type" : "image",
+        "id" : 166,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 259.37, 247.584, 270.05 ]
+      }, {
+        "type" : "image",
+        "id" : 167,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 237.89, 99.024, 248.69 ]
+      }, {
+        "type" : "image",
+        "id" : 168,
+        "page number" : 1,
+        "bounding box" : [ 18.72, 238.61, 98.304, 247.97 ]
+      }, {
+        "type" : "image",
+        "id" : 169,
+        "page number" : 1,
+        "bounding box" : [ 99.024, 237.89, 247.584, 248.69 ]
+      }, {
+        "type" : "image",
+        "id" : 170,
+        "page number" : 1,
+        "bounding box" : [ 99.744, 238.61, 246.864, 247.97 ]
+      }, {
+        "type" : "image",
+        "id" : 171,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 237.89, 247.584, 248.57 ]
+      }, {
+        "type" : "image",
+        "id" : 172,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 216.53, 99.024, 227.21 ]
+      }, {
+        "type" : "image",
+        "id" : 173,
+        "page number" : 1,
+        "bounding box" : [ 18.72, 217.25, 98.304, 226.49 ]
+      }, {
+        "type" : "image",
+        "id" : 174,
+        "page number" : 1,
+        "bounding box" : [ 99.024, 216.53, 247.584, 227.21 ]
+      }, {
+        "type" : "image",
+        "id" : 175,
+        "page number" : 1,
+        "bounding box" : [ 99.744, 217.25, 246.864, 226.49 ]
+      }, {
+        "type" : "image",
+        "id" : 176,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 216.53, 247.584, 227.21 ]
+      }, {
+        "type" : "image",
+        "id" : 177,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 195.02, 99.024, 205.82 ]
+      }, {
+        "type" : "image",
+        "id" : 178,
+        "page number" : 1,
+        "bounding box" : [ 18.72, 195.74, 98.304, 205.1 ]
+      }, {
+        "type" : "image",
+        "id" : 179,
+        "page number" : 1,
+        "bounding box" : [ 99.024, 195.02, 247.584, 205.82 ]
+      }, {
+        "type" : "image",
+        "id" : 180,
+        "page number" : 1,
+        "bounding box" : [ 99.744, 195.74, 246.864, 205.1 ]
+      }, {
+        "type" : "image",
+        "id" : 181,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 195.02, 247.584, 205.7 ]
+      }, {
+        "type" : "image",
+        "id" : 182,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 173.66, 99.024, 184.34 ]
+      }, {
+        "type" : "image",
+        "id" : 183,
+        "page number" : 1,
+        "bounding box" : [ 18.72, 174.38, 98.304, 183.62 ]
+      }, {
+        "type" : "image",
+        "id" : 184,
+        "page number" : 1,
+        "bounding box" : [ 99.024, 173.66, 247.584, 184.34 ]
+      }, {
+        "type" : "image",
+        "id" : 185,
+        "page number" : 1,
+        "bounding box" : [ 99.744, 174.38, 246.864, 183.62 ]
+      }, {
+        "type" : "image",
+        "id" : 186,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 173.66, 247.584, 184.34 ]
+      }, {
+        "type" : "image",
+        "id" : 187,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 152.18, 99.024, 162.98 ]
+      }, {
+        "type" : "image",
+        "id" : 188,
+        "page number" : 1,
+        "bounding box" : [ 18.72, 152.9, 98.304, 162.26 ]
+      }, {
+        "type" : "image",
+        "id" : 189,
+        "page number" : 1,
+        "bounding box" : [ 99.024, 152.18, 247.584, 162.98 ]
+      }, {
+        "type" : "image",
+        "id" : 190,
+        "page number" : 1,
+        "bounding box" : [ 99.744, 152.9, 246.864, 162.26 ]
+      }, {
+        "type" : "image",
+        "id" : 191,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 152.18, 247.584, 162.86 ]
+      }, {
+        "type" : "image",
+        "id" : 192,
+        "page number" : 1,
+        "bounding box" : [ 16.56, 126.14, 247.46, 126.86 ]
+      }, {
+        "type" : "image",
+        "id" : 193,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 112.34, 99.024, 123.14 ]
+      }, {
+        "type" : "image",
+        "id" : 194,
+        "page number" : 1,
+        "bounding box" : [ 18.72, 113.06, 98.304, 122.42 ]
+      }, {
+        "type" : "image",
+        "id" : 195,
+        "page number" : 1,
+        "bounding box" : [ 99.024, 112.34, 247.584, 123.14 ]
+      }, {
+        "type" : "image",
+        "id" : 196,
+        "page number" : 1,
+        "bounding box" : [ 99.744, 113.06, 246.864, 122.42 ]
+      }, {
+        "type" : "image",
+        "id" : 197,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 112.34, 247.584, 123.14 ]
+      }, {
+        "type" : "image",
+        "id" : 198,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 90.96, 99.024, 101.664 ]
+      }, {
+        "type" : "image",
+        "id" : 199,
+        "page number" : 1,
+        "bounding box" : [ 18.72, 91.68, 98.304, 100.944 ]
+      }, {
+        "type" : "image",
+        "id" : 200,
+        "page number" : 1,
+        "bounding box" : [ 99.024, 90.96, 247.584, 101.664 ]
+      }, {
+        "type" : "image",
+        "id" : 201,
+        "page number" : 1,
+        "bounding box" : [ 99.744, 91.68, 246.864, 100.944 ]
+      }, {
+        "type" : "image",
+        "id" : 202,
+        "page number" : 1,
+        "bounding box" : [ 18.0, 90.96, 247.584, 101.66 ]
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 18.72, 27.413, 197.274, 90.191 ],
+      "font" : "SegoeUI-Semibold",
+      "font size" : 6.96,
+      "text color" : "[0.0]",
+      "content" : "Ctrl+Shift+O Go to Symbol... Ctrl+Shift+M Show Problems panel F8 Go to next error or warning Shift+F8 Go to previous error or warning Ctrl+Shift+Tab Navigate editor group history Alt+ ← / → Go back / forward",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 212,
+    "page number" : 1,
+    "bounding box" : [ 18.72, 482.02, 98.304, 491.26 ]
+  }, {
+    "type" : "image",
+    "id" : 214,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 69.48, 99.024, 80.28 ]
+  }, {
+    "type" : "image",
+    "id" : 216,
+    "page number" : 1,
+    "bounding box" : [ 99.024, 69.48, 247.584, 80.28 ]
+  }, {
+    "type" : "image",
+    "id" : 218,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 69.48, 247.584, 80.28 ]
+  }, {
+    "type" : "image",
+    "id" : 215,
+    "page number" : 1,
+    "bounding box" : [ 18.72, 70.2, 98.304, 79.56 ]
+  }, {
+    "type" : "image",
+    "id" : 217,
+    "page number" : 1,
+    "bounding box" : [ 99.744, 70.2, 246.864, 79.56 ]
+  }, {
+    "type" : "image",
+    "id" : 219,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 48.12, 99.024, 58.8 ]
+  }, {
+    "type" : "image",
+    "id" : 221,
+    "page number" : 1,
+    "bounding box" : [ 99.024, 48.12, 247.584, 58.8 ]
+  }, {
+    "type" : "image",
+    "id" : 223,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 48.12, 247.584, 58.8 ]
+  }, {
+    "type" : "image",
+    "id" : 220,
+    "page number" : 1,
+    "bounding box" : [ 18.72, 48.84, 98.304, 58.08 ]
+  }, {
+    "type" : "image",
+    "id" : 222,
+    "page number" : 1,
+    "bounding box" : [ 99.744, 48.84, 246.864, 58.08 ]
+  }, {
+    "type" : "image",
+    "id" : 228,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 26.64, 247.584, 37.44 ]
+  }, {
+    "type" : "image",
+    "id" : 224,
+    "page number" : 1,
+    "bounding box" : [ 18.0, 26.64, 99.024, 37.44 ]
+  }, {
+    "type" : "image",
+    "id" : 226,
+    "page number" : 1,
+    "bounding box" : [ 99.024, 26.64, 247.584, 37.44 ]
+  }, {
+    "type" : "image",
+    "id" : 225,
+    "page number" : 1,
+    "bounding box" : [ 18.72, 27.36, 98.304, 36.72 ]
+  }, {
+    "type" : "image",
+    "id" : 227,
+    "page number" : 1,
+    "bounding box" : [ 99.744, 27.36, 246.864, 36.72 ]
+  }, {
+    "type" : "heading",
+    "id" : 229,
+    "level" : "Doctitle",
+    "page number" : 1,
+    "bounding box" : [ 282.05, 559.94, 438.691, 593.351 ],
+    "heading level" : 1,
+    "font" : "SegoeUI-Semibold",
+    "font size" : 6.96,
+    "text color" : "[0.0]",
+    "content" : "Ctrl+M Toggle Tab moves focus Search and replace"
+  }, {
+    "type" : "image",
+    "id" : 230,
+    "page number" : 1,
+    "bounding box" : [ 280.61, 557.14, 511.51, 557.884 ]
+  }, {
+    "type" : "image",
+    "id" : 231,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 543.46, 363.05, 554.14 ]
+  }, {
+    "type" : "image",
+    "id" : 234,
+    "page number" : 1,
+    "bounding box" : [ 363.05, 543.46, 511.63, 554.14 ]
+  }, {
+    "type" : "image",
+    "id" : 236,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 543.46, 511.63, 554.14 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 233,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 501.393, 471.546, 553.491 ],
+    "font" : "SegoeUI",
+    "font size" : 6.96,
+    "text color" : "[0.0]",
+    "content" : "Ctrl+F Find Ctrl+H Replace F3 / Shift+F3 Find next/previous Alt+Enter Select all occurences of Find match Ctrl+D Add selection to next Find match"
+  }, {
+    "type" : "image",
+    "id" : 232,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 544.18, 362.33, 553.42 ]
+  }, {
+    "type" : "image",
+    "id" : 235,
+    "page number" : 1,
+    "bounding box" : [ 363.77, 544.18, 510.91, 553.42 ]
+  }, {
+    "type" : "image",
+    "id" : 237,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 521.98, 363.05, 532.78 ]
+  }, {
+    "type" : "image",
+    "id" : 241,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 521.98, 511.63, 532.78 ]
+  }, {
+    "type" : "image",
+    "id" : 239,
+    "page number" : 1,
+    "bounding box" : [ 363.05, 521.98, 511.63, 532.78 ]
+  }, {
+    "type" : "image",
+    "id" : 238,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 522.7, 362.33, 532.06 ]
+  }, {
+    "type" : "image",
+    "id" : 240,
+    "page number" : 1,
+    "bounding box" : [ 363.77, 522.7, 510.91, 532.06 ]
+  }, {
+    "type" : "image",
+    "id" : 246,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 500.62, 511.63, 511.3 ]
+  }, {
+    "type" : "image",
+    "id" : 242,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 500.62, 363.05, 511.3 ]
+  }, {
+    "type" : "image",
+    "id" : 244,
+    "page number" : 1,
+    "bounding box" : [ 363.05, 500.62, 511.63, 511.3 ]
+  }, {
+    "type" : "image",
+    "id" : 243,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 501.34, 362.33, 510.58 ]
+  }, {
+    "type" : "image",
+    "id" : 245,
+    "page number" : 1,
+    "bounding box" : [ 363.77, 501.34, 510.91, 510.58 ]
+  }, {
+    "type" : "list",
+    "id" : 247,
+    "level" : "2",
+    "page number" : 1,
+    "bounding box" : [ 282.05, 334.443, 495.892, 499.971 ],
+    "numbering style" : "english letters",
+    "number of list items" : 2,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 282.05, 408.003, 495.892, 499.971 ],
+      "font" : "SegoeUI-Semibold",
+      "font size" : 9.96,
+      "text color" : "[0.0]",
+      "content" : "Ctrl+K Ctrl+D Move last selection to next Find match Alt+C / R / W Toggle case-sensitive / regex / whole word Multi-cursor and selection Alt+Click Insert cursor Ctrl+Alt+ ↑ / ↓ Insert cursor above / below Ctrl+U Undo last cursor operation Shift+Alt+I Insert cursor at end of each line selected",
+      "kids" : [ {
+        "type" : "image",
+        "id" : 100,
+        "page number" : 1,
+        "bounding box" : [ 282.05, 479.14, 363.05, 489.94 ]
+      }, {
+        "type" : "image",
+        "id" : 101,
+        "page number" : 1,
+        "bounding box" : [ 282.77, 479.86, 362.33, 489.22 ]
+      }, {
+        "type" : "image",
+        "id" : 102,
+        "page number" : 1,
+        "bounding box" : [ 363.05, 479.14, 511.63, 489.94 ]
+      }, {
+        "type" : "image",
+        "id" : 103,
+        "page number" : 1,
+        "bounding box" : [ 363.77, 479.86, 510.91, 489.22 ]
+      }, {
+        "type" : "image",
+        "id" : 104,
+        "page number" : 1,
+        "bounding box" : [ 282.05, 479.14, 511.63, 489.94 ]
+      }, {
+        "type" : "image",
+        "id" : 105,
+        "page number" : 1,
+        "bounding box" : [ 280.61, 453.1, 511.51, 453.82 ]
+      }, {
+        "type" : "image",
+        "id" : 106,
+        "page number" : 1,
+        "bounding box" : [ 282.05, 439.27, 363.05, 450.094 ]
+      }, {
+        "type" : "image",
+        "id" : 107,
+        "page number" : 1,
+        "bounding box" : [ 282.77, 439.99, 362.33, 449.374 ]
+      }, {
+        "type" : "image",
+        "id" : 108,
+        "page number" : 1,
+        "bounding box" : [ 363.05, 439.27, 511.63, 450.094 ]
+      }, {
+        "type" : "image",
+        "id" : 109,
+        "page number" : 1,
+        "bounding box" : [ 363.77, 439.99, 510.91, 449.374 ]
+      }, {
+        "type" : "image",
+        "id" : 110,
+        "page number" : 1,
+        "bounding box" : [ 282.05, 439.39, 511.63, 450.1 ]
+      }, {
+        "type" : "image",
+        "id" : 111,
+        "page number" : 1,
+        "bounding box" : [ 282.05, 417.91, 363.05, 428.71 ]
+      }, {
+        "type" : "image",
+        "id" : 112,
+        "page number" : 1,
+        "bounding box" : [ 282.77, 418.63, 362.33, 427.99 ]
+      }, {
+        "type" : "image",
+        "id" : 113,
+        "page number" : 1,
+        "bounding box" : [ 363.05, 417.91, 511.63, 428.71 ]
+      }, {
+        "type" : "image",
+        "id" : 114,
+        "page number" : 1,
+        "bounding box" : [ 363.77, 418.63, 510.91, 427.99 ]
+      }, {
+        "type" : "image",
+        "id" : 115,
+        "page number" : 1,
+        "bounding box" : [ 282.05, 417.91, 511.63, 428.59 ]
+      }, {
+        "type" : "image",
+        "id" : 116,
+        "page number" : 1,
+        "bounding box" : [ 282.05, 396.43, 363.05, 407.23 ]
+      }, {
+        "type" : "image",
+        "id" : 117,
+        "page number" : 1,
+        "bounding box" : [ 282.77, 397.15, 362.33, 406.51 ]
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 282.77, 334.443, 491.075, 406.461 ],
+      "font" : "SegoeUI-Semibold",
+      "font size" : 6.96,
+      "text color" : "[0.0]",
+      "content" : "Ctrl+L Select current line Ctrl+Shift+L Select all occurrences of current selection Ctrl+F2 Select all occurrences of current word Shift+Alt+→ Expand selection Shift+Alt+← Shrink selection Shift+Alt + (drag mouse)",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 250,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 396.55, 511.63, 407.23 ]
+  }, {
+    "type" : "image",
+    "id" : 248,
+    "page number" : 1,
+    "bounding box" : [ 363.05, 396.43, 511.63, 407.23 ]
+  }, {
+    "type" : "image",
+    "id" : 249,
+    "page number" : 1,
+    "bounding box" : [ 363.77, 397.15, 510.91, 406.51 ]
+  }, {
+    "type" : "image",
+    "id" : 251,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 375.07, 363.05, 385.87 ]
+  }, {
+    "type" : "image",
+    "id" : 253,
+    "page number" : 1,
+    "bounding box" : [ 363.05, 375.07, 511.63, 385.87 ]
+  }, {
+    "type" : "image",
+    "id" : 255,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 375.07, 511.63, 385.75 ]
+  }, {
+    "type" : "image",
+    "id" : 252,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 375.79, 362.33, 385.15 ]
+  }, {
+    "type" : "image",
+    "id" : 254,
+    "page number" : 1,
+    "bounding box" : [ 363.77, 375.79, 510.91, 385.15 ]
+  }, {
+    "type" : "image",
+    "id" : 260,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 353.71, 511.63, 364.39 ]
+  }, {
+    "type" : "image",
+    "id" : 256,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 353.59, 363.05, 364.39 ]
+  }, {
+    "type" : "image",
+    "id" : 258,
+    "page number" : 1,
+    "bounding box" : [ 363.05, 353.59, 511.63, 364.39 ]
+  }, {
+    "type" : "image",
+    "id" : 257,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 354.31, 362.33, 363.67 ]
+  }, {
+    "type" : "image",
+    "id" : 259,
+    "page number" : 1,
+    "bounding box" : [ 363.77, 354.31, 510.91, 363.67 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 261,
+    "page number" : 1,
+    "bounding box" : [ 363.77, 343.683, 434.537, 352.941 ],
+    "font" : "SegoeUI",
+    "font size" : 6.96,
+    "text color" : "[0.0]",
+    "content" : "Column (box) selection"
+  }, {
+    "type" : "image",
+    "id" : 262,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 313.61, 363.05, 333.674 ]
+  }, {
+    "type" : "image",
+    "id" : 267,
+    "page number" : 1,
+    "bounding box" : [ 363.05, 313.61, 511.63, 333.674 ]
+  }, {
+    "type" : "image",
+    "id" : 270,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 313.61, 511.63, 333.67 ]
+  }, {
+    "type" : "image",
+    "id" : 263,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 323.57, 362.33, 332.954 ]
+  }, {
+    "type" : "image",
+    "id" : 268,
+    "page number" : 1,
+    "bounding box" : [ 363.77, 323.57, 510.91, 332.954 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 264,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 323.623, 327.391, 332.881 ],
+    "font" : "SegoeUI-Semibold",
+    "font size" : 6.96,
+    "text color" : "[0.0]",
+    "content" : "Ctrl+Shift+Alt"
+  }, {
+    "type" : "paragraph",
+    "id" : 269,
+    "page number" : 1,
+    "bounding box" : [ 363.77, 323.623, 434.537, 332.881 ],
+    "font" : "SegoeUI",
+    "font size" : 6.96,
+    "text color" : "[0.0]",
+    "content" : "Column (box) selection"
+  }, {
+    "type" : "paragraph",
+    "id" : 266,
+    "level" : "3",
+    "page number" : 1,
+    "bounding box" : [ 282.77, 314.383, 325.223, 323.641 ],
+    "font" : "SegoeUI-Semibold",
+    "font size" : 6.96,
+    "text color" : "[0.0]",
+    "content" : "+ (arrow key)"
+  }, {
+    "type" : "image",
+    "id" : 265,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 314.33, 362.33, 323.57 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 271,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 303.703, 327.391, 312.961 ],
+    "font" : "SegoeUI-Semibold",
+    "font size" : 6.96,
+    "text color" : "[0.0]",
+    "content" : "Ctrl+Shift+Alt"
+  }, {
+    "type" : "paragraph",
+    "id" : 273,
+    "page number" : 1,
+    "bounding box" : [ 363.77, 303.703, 481.952, 312.961 ],
+    "font" : "SegoeUI",
+    "font size" : 6.96,
+    "text color" : "[0.0]",
+    "content" : "Column (box) selection page up/down"
+  }, {
+    "type" : "paragraph",
+    "id" : 272,
+    "level" : "3",
+    "page number" : 1,
+    "bounding box" : [ 282.77, 294.343, 325.222, 303.601 ],
+    "font" : "SegoeUI-Semibold",
+    "font size" : 6.96,
+    "text color" : "[0.0]",
+    "content" : "+PgUp/PgDn"
+  }, {
+    "type" : "paragraph",
+    "id" : 274,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 134.113, 447.386, 283.438 ],
+    "font" : "SegoeUI",
+    "font size" : 6.96,
+    "text color" : "[0.0]",
+    "content" : "Rich languages editing Ctrl+Space, Ctrl+I Trigger suggestion Ctrl+Shift+Space Trigger parameter hints Shift+Alt+F Format document Ctrl+K Ctrl+F Format selection F12 Go to Definition Alt+F12 Peek Definition Ctrl+K F12 Open Definition to the side Ctrl+. Quick Fix Shift+F12 Show References F2 Rename Symbol Ctrl+K Ctrl+X Trim trailing whitespace Ctrl+K M Change file language"
+  }, {
+    "type" : "image",
+    "id" : 275,
+    "page number" : 1,
+    "bounding box" : [ 280.61, 267.53, 511.51, 268.25 ]
+  }, {
+    "type" : "image",
+    "id" : 276,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 251.21, 362.93, 264.53 ]
+  }, {
+    "type" : "image",
+    "id" : 280,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 251.21, 510.07, 264.53 ]
+  }, {
+    "type" : "image",
+    "id" : 278,
+    "page number" : 1,
+    "bounding box" : [ 362.93, 251.21, 510.07, 264.53 ]
+  }, {
+    "type" : "image",
+    "id" : 277,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 254.45, 362.21, 263.81 ]
+  }, {
+    "type" : "image",
+    "id" : 279,
+    "page number" : 1,
+    "bounding box" : [ 363.65, 254.45, 509.35, 263.81 ]
+  }, {
+    "type" : "image",
+    "id" : 281,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 229.73, 362.93, 240.53 ]
+  }, {
+    "type" : "image",
+    "id" : 283,
+    "page number" : 1,
+    "bounding box" : [ 362.93, 229.73, 510.07, 240.53 ]
+  }, {
+    "type" : "image",
+    "id" : 285,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 229.73, 510.07, 240.41 ]
+  }, {
+    "type" : "image",
+    "id" : 282,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 230.45, 362.21, 239.81 ]
+  }, {
+    "type" : "image",
+    "id" : 284,
+    "page number" : 1,
+    "bounding box" : [ 363.65, 230.45, 509.35, 239.81 ]
+  }, {
+    "type" : "image",
+    "id" : 290,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 208.34, 510.07, 219.05 ]
+  }, {
+    "type" : "image",
+    "id" : 286,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 208.34, 362.93, 219.044 ]
+  }, {
+    "type" : "image",
+    "id" : 288,
+    "page number" : 1,
+    "bounding box" : [ 362.93, 208.34, 510.07, 219.044 ]
+  }, {
+    "type" : "image",
+    "id" : 287,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 209.06, 362.21, 218.324 ]
+  }, {
+    "type" : "image",
+    "id" : 289,
+    "page number" : 1,
+    "bounding box" : [ 363.65, 209.06, 509.35, 218.324 ]
+  }, {
+    "type" : "image",
+    "id" : 291,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 186.86, 362.93, 197.66 ]
+  }, {
+    "type" : "image",
+    "id" : 293,
+    "page number" : 1,
+    "bounding box" : [ 362.93, 186.86, 510.07, 197.66 ]
+  }, {
+    "type" : "image",
+    "id" : 295,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 186.86, 510.07, 197.54 ]
+  }, {
+    "type" : "image",
+    "id" : 292,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 187.58, 362.21, 196.94 ]
+  }, {
+    "type" : "image",
+    "id" : 294,
+    "page number" : 1,
+    "bounding box" : [ 363.65, 187.58, 509.35, 196.94 ]
+  }, {
+    "type" : "image",
+    "id" : 300,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 165.5, 510.07, 176.18 ]
+  }, {
+    "type" : "image",
+    "id" : 296,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 165.5, 362.93, 176.18 ]
+  }, {
+    "type" : "image",
+    "id" : 298,
+    "page number" : 1,
+    "bounding box" : [ 362.93, 165.5, 510.07, 176.18 ]
+  }, {
+    "type" : "image",
+    "id" : 297,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 166.22, 362.21, 175.46 ]
+  }, {
+    "type" : "image",
+    "id" : 299,
+    "page number" : 1,
+    "bounding box" : [ 363.65, 166.22, 509.35, 175.46 ]
+  }, {
+    "type" : "image",
+    "id" : 301,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 144.02, 362.93, 154.82 ]
+  }, {
+    "type" : "image",
+    "id" : 303,
+    "page number" : 1,
+    "bounding box" : [ 362.93, 144.02, 510.07, 154.82 ]
+  }, {
+    "type" : "image",
+    "id" : 305,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 144.02, 510.07, 154.7 ]
+  }, {
+    "type" : "image",
+    "id" : 302,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 144.74, 362.21, 154.1 ]
+  }, {
+    "type" : "image",
+    "id" : 304,
+    "page number" : 1,
+    "bounding box" : [ 363.65, 144.74, 509.35, 154.1 ]
+  }, {
+    "type" : "heading",
+    "id" : 306,
+    "level" : "Doctitle",
+    "page number" : 1,
+    "bounding box" : [ 282.05, 109.96, 371.885, 123.208 ],
+    "heading level" : 1,
+    "font" : "SegoeUI-Semibold",
+    "font size" : 9.96,
+    "text color" : "[0.0]",
+    "content" : "Editor management"
+  }, {
+    "type" : "image",
+    "id" : 307,
+    "page number" : 1,
+    "bounding box" : [ 280.61, 107.18, 511.51, 107.9 ]
+  }, {
+    "type" : "image",
+    "id" : 308,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 93.48, 363.53, 104.304 ]
+  }, {
+    "type" : "image",
+    "id" : 311,
+    "page number" : 1,
+    "bounding box" : [ 363.53, 93.48, 511.63, 104.304 ]
+  }, {
+    "type" : "image",
+    "id" : 313,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 93.48, 511.63, 104.18 ]
+  }, {
+    "type" : "image",
+    "id" : 309,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 94.2, 362.81, 103.584 ]
+  }, {
+    "type" : "image",
+    "id" : 312,
+    "page number" : 1,
+    "bounding box" : [ 364.25, 94.2, 510.91, 103.584 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 310,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 29.933, 481.032, 103.535 ],
+    "font" : "SegoeUI",
+    "font size" : 6.96,
+    "text color" : "[0.0]",
+    "content" : "Ctrl+F4, Ctrl+W Close editor Ctrl+K F Close folder Ctrl+\\ Split editor Ctrl+ 1 / 2 / 3 Focus into 1st, 2nd or 3rd editor group Ctrl+K Ctrl+ ←/→ Focus into previous/next editor group Ctrl+Shift+PgUp / PgDn Move editor left/right Ctrl+K ← / → Move active editor group"
+  }, {
+    "type" : "image",
+    "id" : 314,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 72.0, 363.53, 82.8 ]
+  }, {
+    "type" : "image",
+    "id" : 316,
+    "page number" : 1,
+    "bounding box" : [ 363.53, 72.0, 511.63, 82.8 ]
+  }, {
+    "type" : "image",
+    "id" : 318,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 72.12, 511.63, 82.8 ]
+  }, {
+    "type" : "image",
+    "id" : 315,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 72.72, 362.81, 82.08 ]
+  }, {
+    "type" : "image",
+    "id" : 317,
+    "page number" : 1,
+    "bounding box" : [ 364.25, 72.72, 510.91, 82.08 ]
+  }, {
+    "type" : "image",
+    "id" : 319,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 50.64, 363.53, 61.44 ]
+  }, {
+    "type" : "image",
+    "id" : 321,
+    "page number" : 1,
+    "bounding box" : [ 363.53, 50.64, 511.63, 61.44 ]
+  }, {
+    "type" : "image",
+    "id" : 323,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 50.64, 511.63, 61.32 ]
+  }, {
+    "type" : "image",
+    "id" : 320,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 51.36, 362.81, 60.72 ]
+  }, {
+    "type" : "image",
+    "id" : 322,
+    "page number" : 1,
+    "bounding box" : [ 364.25, 51.36, 510.91, 60.72 ]
+  }, {
+    "type" : "image",
+    "id" : 328,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 29.28, 511.63, 39.96 ]
+  }, {
+    "type" : "image",
+    "id" : 324,
+    "page number" : 1,
+    "bounding box" : [ 282.05, 29.16, 363.53, 39.96 ]
+  }, {
+    "type" : "image",
+    "id" : 326,
+    "page number" : 1,
+    "bounding box" : [ 363.53, 29.16, 511.63, 39.96 ]
+  }, {
+    "type" : "image",
+    "id" : 325,
+    "page number" : 1,
+    "bounding box" : [ 282.77, 29.88, 362.81, 39.24 ]
+  }, {
+    "type" : "image",
+    "id" : 327,
+    "page number" : 1,
+    "bounding box" : [ 364.25, 29.88, 510.91, 39.24 ]
+  }, {
+    "type" : "heading",
+    "id" : 329,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 546.07, 580.58, 624.275, 593.828 ],
+    "heading level" : 1,
+    "font" : "SegoeUI-Semibold",
+    "font size" : 9.96,
+    "text color" : "[0.0]",
+    "content" : "File management"
+  }, {
+    "type" : "image",
+    "id" : 330,
+    "page number" : 1,
+    "bounding box" : [ 544.63, 577.92, 775.56, 578.64 ]
+  }, {
+    "type" : "image",
+    "id" : 331,
+    "page number" : 1,
+    "bounding box" : [ 546.07, 564.12, 627.094, 574.92 ]
+  }, {
+    "type" : "image",
+    "id" : 332,
+    "page number" : 1,
+    "bounding box" : [ 546.79, 564.84, 626.374, 574.2 ]
+  }, {
+    "type" : "list",
+    "id" : 333,
+    "level" : "2",
+    "page number" : 1,
+    "bounding box" : [ 546.79, 554.193, 661.701, 574.151 ],
+    "numbering style" : "english letters",
+    "number of list items" : 2,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.79, 564.893, 654.122, 574.151 ],
+      "font" : "SegoeUI-Semibold",
+      "font size" : 6.96,
+      "text color" : "[0.0]",
+      "content" : "Ctrl+N New File",
+      "kids" : [ {
+        "type" : "image",
+        "id" : 97,
+        "page number" : 1,
+        "bounding box" : [ 627.1, 564.12, 775.68, 574.92 ]
+      }, {
+        "type" : "image",
+        "id" : 98,
+        "page number" : 1,
+        "bounding box" : [ 627.82, 564.84, 774.96, 574.2 ]
+      }, {
+        "type" : "image",
+        "id" : 99,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 564.24, 775.68, 574.92 ]
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.79, 554.193, 661.701, 563.451 ],
+      "font" : "SegoeUI-Semibold",
+      "font size" : 6.96,
+      "text color" : "[0.0]",
+      "content" : "Ctrl+O Open File...",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 334,
+    "page number" : 1,
+    "bounding box" : [ 546.07, 542.74, 627.094, 553.42 ]
+  }, {
+    "type" : "image",
+    "id" : 339,
+    "page number" : 1,
+    "bounding box" : [ 546.07, 542.74, 775.68, 553.42 ]
+  }, {
+    "type" : "image",
+    "id" : 337,
+    "page number" : 1,
+    "bounding box" : [ 627.1, 542.74, 775.68, 553.42 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 336,
+    "page number" : 1,
+    "bounding box" : [ 546.79, 543.513, 642.116, 552.771 ],
+    "font" : "SegoeUI-Semibold",
+    "font size" : 6.96,
+    "text color" : "[0.0]",
+    "content" : "Ctrl+S Save"
+  }, {
+    "type" : "image",
+    "id" : 335,
+    "page number" : 1,
+    "bounding box" : [ 546.79, 543.46, 626.374, 552.7 ]
+  }, {
+    "type" : "image",
+    "id" : 338,
+    "page number" : 1,
+    "bounding box" : [ 627.82, 543.46, 774.96, 552.7 ]
+  }, {
+    "type" : "list",
+    "id" : 340,
+    "level" : "1",
+    "page number" : 1,
+    "bounding box" : [ 546.07, 368.403, 752.375, 542.091 ],
+    "numbering style" : "english letters",
+    "number of list items" : 2,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.79, 500.673, 656.043, 542.091 ],
+      "font" : "SegoeUI-Semibold",
+      "font size" : 6.96,
+      "text color" : "[0.0]",
+      "content" : "Ctrl+Shift+S Save As... Ctrl+K S Save All Ctrl+F4 Close Ctrl+K Ctrl+W Close All",
+      "kids" : [ {
+        "type" : "image",
+        "id" : 60,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 521.26, 627.094, 532.06 ]
+      }, {
+        "type" : "image",
+        "id" : 61,
+        "page number" : 1,
+        "bounding box" : [ 546.79, 521.98, 626.374, 531.34 ]
+      }, {
+        "type" : "image",
+        "id" : 62,
+        "page number" : 1,
+        "bounding box" : [ 627.1, 521.26, 775.68, 532.06 ]
+      }, {
+        "type" : "image",
+        "id" : 63,
+        "page number" : 1,
+        "bounding box" : [ 627.82, 521.98, 774.96, 531.34 ]
+      }, {
+        "type" : "image",
+        "id" : 64,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 521.38, 775.68, 532.06 ]
+      }, {
+        "type" : "image",
+        "id" : 65,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 499.9, 627.094, 510.58 ]
+      }, {
+        "type" : "image",
+        "id" : 66,
+        "page number" : 1,
+        "bounding box" : [ 546.79, 500.62, 626.374, 509.86 ]
+      }, {
+        "type" : "image",
+        "id" : 67,
+        "page number" : 1,
+        "bounding box" : [ 627.1, 499.9, 775.68, 510.58 ]
+      }, {
+        "type" : "image",
+        "id" : 68,
+        "page number" : 1,
+        "bounding box" : [ 627.82, 500.62, 774.96, 509.86 ]
+      }, {
+        "type" : "image",
+        "id" : 69,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 499.9, 775.68, 510.58 ]
+      } ]
+    }, {
+      "type" : "list item",
+      "page number" : 1,
+      "bounding box" : [ 546.07, 368.403, 752.375, 499.251 ],
+      "font" : "SegoeUI-Semibold",
+      "font size" : 9.96,
+      "text color" : "[0.0]",
+      "content" : "Ctrl+Shift+T Reopen closed editor Ctrl+K Enter Keep preview mode editor open Ctrl+Tab Open next Ctrl+Shift+Tab Open previous Ctrl+K P Copy path of active file Ctrl+K R Reveal active file in Explorer Ctrl+K O Show active file in new window/instance Display F11 Toggle full screen Shift+Alt+0 Toggle editor layout (horizontal/vertical) Ctrl+ = / - Zoom in/out",
+      "kids" : [ {
+        "type" : "image",
+        "id" : 70,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 478.42, 627.094, 489.22 ]
+      }, {
+        "type" : "image",
+        "id" : 71,
+        "page number" : 1,
+        "bounding box" : [ 546.79, 479.14, 626.374, 488.5 ]
+      }, {
+        "type" : "image",
+        "id" : 72,
+        "page number" : 1,
+        "bounding box" : [ 627.1, 478.42, 775.68, 489.22 ]
+      }, {
+        "type" : "image",
+        "id" : 73,
+        "page number" : 1,
+        "bounding box" : [ 627.82, 479.14, 774.96, 488.5 ]
+      }, {
+        "type" : "image",
+        "id" : 74,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 478.54, 775.68, 489.22 ]
+      }, {
+        "type" : "image",
+        "id" : 75,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 457.06, 627.094, 467.74 ]
+      }, {
+        "type" : "image",
+        "id" : 76,
+        "page number" : 1,
+        "bounding box" : [ 546.79, 457.78, 626.374, 467.02 ]
+      }, {
+        "type" : "image",
+        "id" : 77,
+        "page number" : 1,
+        "bounding box" : [ 627.1, 457.06, 775.68, 467.74 ]
+      }, {
+        "type" : "image",
+        "id" : 78,
+        "page number" : 1,
+        "bounding box" : [ 627.82, 457.78, 774.96, 467.02 ]
+      }, {
+        "type" : "image",
+        "id" : 79,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 457.06, 775.68, 467.74 ]
+      }, {
+        "type" : "image",
+        "id" : 80,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 435.55, 627.094, 446.374 ]
+      }, {
+        "type" : "image",
+        "id" : 81,
+        "page number" : 1,
+        "bounding box" : [ 546.79, 436.27, 626.374, 445.654 ]
+      }, {
+        "type" : "image",
+        "id" : 82,
+        "page number" : 1,
+        "bounding box" : [ 627.1, 435.55, 775.68, 446.374 ]
+      }, {
+        "type" : "image",
+        "id" : 83,
+        "page number" : 1,
+        "bounding box" : [ 627.82, 436.27, 774.96, 445.654 ]
+      }, {
+        "type" : "image",
+        "id" : 84,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 435.67, 775.68, 446.38 ]
+      }, {
+        "type" : "image",
+        "id" : 85,
+        "page number" : 1,
+        "bounding box" : [ 544.63, 402.79, 775.56, 403.51 ]
+      }, {
+        "type" : "image",
+        "id" : 86,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 389.11, 627.094, 399.79 ]
+      }, {
+        "type" : "image",
+        "id" : 87,
+        "page number" : 1,
+        "bounding box" : [ 546.79, 389.83, 626.374, 399.07 ]
+      }, {
+        "type" : "image",
+        "id" : 88,
+        "page number" : 1,
+        "bounding box" : [ 627.1, 389.11, 775.68, 399.79 ]
+      }, {
+        "type" : "image",
+        "id" : 89,
+        "page number" : 1,
+        "bounding box" : [ 627.82, 389.83, 774.96, 399.07 ]
+      }, {
+        "type" : "image",
+        "id" : 90,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 389.11, 775.68, 399.79 ]
+      }, {
+        "type" : "image",
+        "id" : 91,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 367.63, 627.094, 378.43 ]
+      }, {
+        "type" : "image",
+        "id" : 92,
+        "page number" : 1,
+        "bounding box" : [ 546.79, 368.35, 626.374, 377.71 ]
+      }, {
+        "type" : "image",
+        "id" : 93,
+        "page number" : 1,
+        "bounding box" : [ 627.1, 367.63, 775.68, 378.43 ]
+      }, {
+        "type" : "image",
+        "id" : 94,
+        "page number" : 1,
+        "bounding box" : [ 627.82, 368.35, 774.96, 377.71 ]
+      }, {
+        "type" : "image",
+        "id" : 95,
+        "page number" : 1,
+        "bounding box" : [ 546.07, 367.63, 775.68, 378.43 ]
+      }, {
+        "type" : "list",
+        "id" : 96,
+        "level" : "2",
+        "page number" : 1,
+        "bounding box" : [ 546.79, 50.333, 705.413, 366.981 ],
+        "numbering style" : "english letters",
+        "number of list items" : 2,
+        "list items" : [ {
+          "type" : "list item",
+          "page number" : 1,
+          "bounding box" : [ 546.79, 357.723, 700.851, 366.981 ],
+          "font" : "SegoeUI-Semibold",
+          "font size" : 6.96,
+          "text color" : "[0.0]",
+          "content" : "Ctrl+B Toggle Sidebar visibility",
+          "kids" : [ {
+            "type" : "image",
+            "id" : 24,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 346.27, 627.094, 356.95 ]
+          }, {
+            "type" : "image",
+            "id" : 25,
+            "page number" : 1,
+            "bounding box" : [ 546.79, 346.99, 626.374, 356.23 ]
+          }, {
+            "type" : "list",
+            "id" : 26,
+            "level" : "1",
+            "page number" : 1,
+            "bounding box" : [ 546.79, 282.703, 717.827, 356.301 ],
+            "numbering style" : "english letters",
+            "number of list items" : 4,
+            "list items" : [ {
+              "type" : "list item",
+              "page number" : 1,
+              "bounding box" : [ 546.79, 347.043, 717.827, 356.301 ],
+              "font" : "SegoeUI-Semibold",
+              "font size" : 6.96,
+              "text color" : "[0.0]",
+              "content" : "Ctrl+Shift+E Show Explorer / Toggle focus",
+              "kids" : [ {
+                "type" : "image",
+                "id" : 11,
+                "page number" : 1,
+                "bounding box" : [ 627.1, 346.27, 775.68, 356.95 ]
+              }, {
+                "type" : "image",
+                "id" : 12,
+                "page number" : 1,
+                "bounding box" : [ 627.82, 346.99, 774.96, 356.23 ]
+              }, {
+                "type" : "image",
+                "id" : 13,
+                "page number" : 1,
+                "bounding box" : [ 546.07, 346.27, 775.68, 356.95 ]
+              } ]
+            }, {
+              "type" : "list item",
+              "page number" : 1,
+              "bounding box" : [ 546.79, 336.243, 666.991, 345.501 ],
+              "font" : "SegoeUI-Semibold",
+              "font size" : 6.96,
+              "text color" : "[0.0]",
+              "content" : "Ctrl+Shift+F Show Search",
+              "kids" : [ {
+                "type" : "image",
+                "id" : 14,
+                "page number" : 1,
+                "bounding box" : [ 546.07, 324.77, 627.094, 335.594 ]
+              }, {
+                "type" : "image",
+                "id" : 15,
+                "page number" : 1,
+                "bounding box" : [ 546.79, 325.49, 626.374, 334.874 ]
+              } ]
+            }, {
+              "type" : "list item",
+              "page number" : 1,
+              "bounding box" : [ 546.79, 304.183, 692.462, 334.821 ],
+              "font" : "SegoeUI-Semibold",
+              "font size" : 6.96,
+              "text color" : "[0.0]",
+              "content" : "Ctrl+Shift+G Show Source Control Ctrl+Shift+D Show Debug Ctrl+Shift+X Show Extensions",
+              "kids" : [ {
+                "type" : "image",
+                "id" : 16,
+                "page number" : 1,
+                "bounding box" : [ 627.1, 324.77, 775.68, 335.594 ]
+              }, {
+                "type" : "image",
+                "id" : 17,
+                "page number" : 1,
+                "bounding box" : [ 627.82, 325.49, 774.96, 334.874 ]
+              }, {
+                "type" : "image",
+                "id" : 18,
+                "page number" : 1,
+                "bounding box" : [ 546.07, 324.77, 775.68, 335.59 ]
+              }, {
+                "type" : "image",
+                "id" : 19,
+                "page number" : 1,
+                "bounding box" : [ 546.07, 303.41, 627.094, 314.09 ]
+              }, {
+                "type" : "image",
+                "id" : 20,
+                "page number" : 1,
+                "bounding box" : [ 546.79, 304.13, 626.374, 313.37 ]
+              }, {
+                "type" : "image",
+                "id" : 21,
+                "page number" : 1,
+                "bounding box" : [ 627.1, 303.41, 775.68, 314.09 ]
+              }, {
+                "type" : "image",
+                "id" : 22,
+                "page number" : 1,
+                "bounding box" : [ 627.82, 304.13, 774.96, 313.37 ]
+              }, {
+                "type" : "image",
+                "id" : 23,
+                "page number" : 1,
+                "bounding box" : [ 546.07, 303.41, 775.68, 314.09 ]
+              } ]
+            }, {
+              "type" : "list item",
+              "page number" : 1,
+              "bounding box" : [ 546.79, 282.703, 693.495, 302.641 ],
+              "font" : "SegoeUI-Semibold",
+              "font size" : 6.96,
+              "text color" : "[0.0]",
+              "content" : "Ctrl+Shift+H Replace in files Ctrl+Shift+J Toggle Search details",
+              "kids" : [ ]
+            } ]
+          }, {
+            "type" : "image",
+            "id" : 27,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 281.93, 627.094, 292.73 ]
+          }, {
+            "type" : "image",
+            "id" : 28,
+            "page number" : 1,
+            "bounding box" : [ 546.79, 282.65, 626.374, 292.01 ]
+          }, {
+            "type" : "image",
+            "id" : 29,
+            "page number" : 1,
+            "bounding box" : [ 627.1, 281.93, 775.68, 292.73 ]
+          }, {
+            "type" : "image",
+            "id" : 30,
+            "page number" : 1,
+            "bounding box" : [ 627.82, 282.65, 774.96, 292.01 ]
+          }, {
+            "type" : "image",
+            "id" : 31,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 281.93, 775.68, 292.73 ]
+          }, {
+            "type" : "paragraph",
+            "id" : 32,
+            "page number" : 1,
+            "bounding box" : [ 546.79, 239.863, 740.246, 281.281 ],
+            "font" : "SegoeUI",
+            "font size" : 6.96,
+            "text color" : "[0.0]",
+            "content" : "Ctrl+Shift+U Show Output panel Ctrl+Shift+V Open Markdown preview Ctrl+K V Open Markdown preview to the side Ctrl+K Z Zen Mode (Esc Esc to exit)"
+          }, {
+            "type" : "image",
+            "id" : 33,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 260.57, 627.094, 271.25 ]
+          }, {
+            "type" : "image",
+            "id" : 34,
+            "page number" : 1,
+            "bounding box" : [ 546.79, 261.29, 626.374, 270.53 ]
+          }, {
+            "type" : "image",
+            "id" : 35,
+            "page number" : 1,
+            "bounding box" : [ 627.1, 260.57, 775.68, 271.25 ]
+          }, {
+            "type" : "image",
+            "id" : 36,
+            "page number" : 1,
+            "bounding box" : [ 627.82, 261.29, 774.96, 270.53 ]
+          }, {
+            "type" : "image",
+            "id" : 37,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 260.57, 775.68, 271.25 ]
+          }, {
+            "type" : "image",
+            "id" : 38,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 239.09, 627.094, 249.89 ]
+          }, {
+            "type" : "image",
+            "id" : 39,
+            "page number" : 1,
+            "bounding box" : [ 546.79, 239.81, 626.374, 249.17 ]
+          }, {
+            "type" : "image",
+            "id" : 40,
+            "page number" : 1,
+            "bounding box" : [ 627.1, 239.09, 775.68, 249.89 ]
+          }, {
+            "type" : "image",
+            "id" : 41,
+            "page number" : 1,
+            "bounding box" : [ 627.82, 239.81, 774.96, 249.17 ]
+          }, {
+            "type" : "image",
+            "id" : 42,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 239.09, 775.68, 249.77 ]
+          }, {
+            "type" : "paragraph",
+            "id" : 43,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 219.79, 576.309, 233.038 ],
+            "font" : "SegoeUI-Semibold",
+            "font size" : 9.96,
+            "text color" : "[0.0]",
+            "content" : "Debug"
+          }, {
+            "type" : "image",
+            "id" : 44,
+            "page number" : 1,
+            "bounding box" : [ 544.63, 217.01, 775.56, 217.73 ]
+          }, {
+            "type" : "image",
+            "id" : 45,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 203.3, 627.094, 214.004 ]
+          }, {
+            "type" : "image",
+            "id" : 46,
+            "page number" : 1,
+            "bounding box" : [ 546.79, 204.02, 626.374, 213.284 ]
+          }, {
+            "type" : "list",
+            "id" : 47,
+            "level" : "3",
+            "page number" : 1,
+            "bounding box" : [ 546.07, 130.48, 684.391, 213.331 ],
+            "numbering style" : "arabic numbers",
+            "number of list items" : 2,
+            "list items" : [ {
+              "type" : "list item",
+              "page number" : 1,
+              "bounding box" : [ 546.79, 171.913, 684.391, 213.331 ],
+              "font" : "SegoeUI-Semibold",
+              "font size" : 6.96,
+              "text color" : "[0.0]",
+              "content" : "F9 Toggle breakpoint F5 Start/Continue Shift+F5 Stop F11 / Shift+F11 Step into/out",
+              "kids" : [ {
+                "type" : "image",
+                "id" : 1,
+                "page number" : 1,
+                "bounding box" : [ 627.1, 203.3, 775.68, 214.004 ]
+              }, {
+                "type" : "image",
+                "id" : 2,
+                "page number" : 1,
+                "bounding box" : [ 627.82, 204.02, 774.96, 213.284 ]
+              }, {
+                "type" : "image",
+                "id" : 3,
+                "page number" : 1,
+                "bounding box" : [ 546.07, 203.3, 775.68, 214.01 ]
+              }, {
+                "type" : "image",
+                "id" : 4,
+                "page number" : 1,
+                "bounding box" : [ 546.07, 181.82, 627.094, 192.62 ]
+              }, {
+                "type" : "image",
+                "id" : 5,
+                "page number" : 1,
+                "bounding box" : [ 546.79, 182.54, 626.374, 191.9 ]
+              }, {
+                "type" : "image",
+                "id" : 6,
+                "page number" : 1,
+                "bounding box" : [ 627.1, 181.82, 775.68, 192.62 ]
+              }, {
+                "type" : "image",
+                "id" : 7,
+                "page number" : 1,
+                "bounding box" : [ 627.82, 182.54, 774.96, 191.9 ]
+              }, {
+                "type" : "image",
+                "id" : 8,
+                "page number" : 1,
+                "bounding box" : [ 546.07, 181.82, 775.68, 192.62 ]
+              }, {
+                "type" : "image",
+                "id" : 9,
+                "page number" : 1,
+                "bounding box" : [ 546.07, 160.46, 627.094, 171.14 ]
+              }, {
+                "type" : "image",
+                "id" : 10,
+                "page number" : 1,
+                "bounding box" : [ 546.79, 161.18, 626.374, 170.42 ]
+              } ]
+            }, {
+              "type" : "list item",
+              "page number" : 1,
+              "bounding box" : [ 546.07, 130.48, 663.922, 170.491 ],
+              "font" : "SegoeUI-Semibold",
+              "font size" : 9.96,
+              "text color" : "[0.0]",
+              "content" : "F10 Step over Ctrl+K Ctrl+I Show hover Integrated terminal",
+              "kids" : [ ]
+            } ]
+          }, {
+            "type" : "image",
+            "id" : 48,
+            "page number" : 1,
+            "bounding box" : [ 627.1, 160.46, 775.68, 171.14 ]
+          }, {
+            "type" : "image",
+            "id" : 49,
+            "page number" : 1,
+            "bounding box" : [ 627.82, 161.18, 774.96, 170.42 ]
+          }, {
+            "type" : "image",
+            "id" : 50,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 160.46, 775.68, 171.14 ]
+          }, {
+            "type" : "image",
+            "id" : 51,
+            "page number" : 1,
+            "bounding box" : [ 544.63, 127.58, 775.56, 128.3 ]
+          }, {
+            "type" : "image",
+            "id" : 52,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 113.9, 627.094, 124.58 ]
+          }, {
+            "type" : "image",
+            "id" : 53,
+            "page number" : 1,
+            "bounding box" : [ 546.79, 114.62, 626.374, 123.86 ]
+          }, {
+            "type" : "paragraph",
+            "id" : 54,
+            "page number" : 1,
+            "bounding box" : [ 546.79, 103.993, 705.744, 123.931 ],
+            "font" : "SegoeUI",
+            "font size" : 6.96,
+            "text color" : "[0.0]",
+            "content" : "Ctrl+` Show integrated terminal Ctrl+Shift+` Create new terminal"
+          }, {
+            "type" : "image",
+            "id" : 55,
+            "page number" : 1,
+            "bounding box" : [ 627.1, 113.9, 775.68, 124.58 ]
+          }, {
+            "type" : "image",
+            "id" : 56,
+            "page number" : 1,
+            "bounding box" : [ 627.82, 114.62, 774.96, 123.86 ]
+          }, {
+            "type" : "image",
+            "id" : 57,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 113.9, 775.68, 124.58 ]
+          }, {
+            "type" : "image",
+            "id" : 58,
+            "page number" : 1,
+            "bounding box" : [ 546.07, 92.4, 627.094, 103.224 ]
+          }, {
+            "type" : "image",
+            "id" : 59,
+            "page number" : 1,
+            "bounding box" : [ 546.79, 93.12, 626.374, 102.504 ]
+          } ]
+        }, {
+          "type" : "list item",
+          "page number" : 1,
+          "bounding box" : [ 546.79, 50.333, 705.413, 102.455 ],
+          "font" : "SegoeUI-Semibold",
+          "font size" : 6.96,
+          "text color" : "[0.0]",
+          "content" : "Ctrl+C Copy selection Ctrl+V Paste into active terminal Ctrl+↑ / ↓ Scroll up/down Shift+PgUp / PgDn Scroll page up/down Ctrl+Home / End Scroll to top/bottom",
+          "kids" : [ ]
+        } ]
+      } ]
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 341,
+    "page number" : 1,
+    "bounding box" : [ 627.1, 92.4, 775.68, 103.224 ]
+  }, {
+    "type" : "image",
+    "id" : 343,
+    "page number" : 1,
+    "bounding box" : [ 546.07, 92.52, 775.68, 103.22 ]
+  }, {
+    "type" : "image",
+    "id" : 342,
+    "page number" : 1,
+    "bounding box" : [ 627.82, 93.12, 774.96, 102.504 ]
+  }, {
+    "type" : "image",
+    "id" : 344,
+    "page number" : 1,
+    "bounding box" : [ 546.07, 71.04, 627.094, 81.72 ]
+  }, {
+    "type" : "image",
+    "id" : 346,
+    "page number" : 1,
+    "bounding box" : [ 627.1, 71.04, 775.68, 81.72 ]
+  }, {
+    "type" : "image",
+    "id" : 348,
+    "page number" : 1,
+    "bounding box" : [ 546.07, 71.04, 775.68, 81.72 ]
+  }, {
+    "type" : "image",
+    "id" : 345,
+    "page number" : 1,
+    "bounding box" : [ 546.79, 71.76, 626.374, 81.0 ]
+  }, {
+    "type" : "image",
+    "id" : 347,
+    "page number" : 1,
+    "bounding box" : [ 627.82, 71.76, 774.96, 81.0 ]
+  }, {
+    "type" : "image",
+    "id" : 349,
+    "page number" : 1,
+    "bounding box" : [ 546.07, 49.56, 627.094, 60.36 ]
+  }, {
+    "type" : "image",
+    "id" : 351,
+    "page number" : 1,
+    "bounding box" : [ 627.1, 49.56, 775.68, 60.36 ]
+  }, {
+    "type" : "image",
+    "id" : 353,
+    "page number" : 1,
+    "bounding box" : [ 546.07, 49.68, 775.68, 60.36 ]
+  }, {
+    "type" : "image",
+    "id" : 350,
+    "page number" : 1,
+    "bounding box" : [ 546.79, 50.28, 626.374, 59.64 ]
+  }, {
+    "type" : "image",
+    "id" : 352,
+    "page number" : 1,
+    "bounding box" : [ 627.82, 50.28, 774.96, 59.64 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 356,
+    "page number" : 1,
+    "bounding box" : [ 544.51, 18.15, 740.981, 36.63 ],
+    "font" : "Calibri",
+    "font size" : 8.04,
+    "text color" : "[0.0]",
+    "content" : "Other operating systems’ keyboard shortcuts and additional unassigned shortcuts available at aka.ms/vscodekeybindings"
+  }, {
+    "type" : "image",
+    "id" : 357,
+    "page number" : 1,
+    "bounding box" : [ 653.86, 18.72, 741.1, 19.2 ]
+  } ]
+}

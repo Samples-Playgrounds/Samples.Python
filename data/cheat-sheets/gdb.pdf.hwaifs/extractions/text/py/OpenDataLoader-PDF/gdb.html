@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="und">
+<head>
+<meta charset="utf-8">
+<title>gdb.pdf</title>
+</head>
+<body>
+<p>CSCI0330 Intro Computer Systems Doeppner</p>
+
+<h1>gdb Cheatsheet</h1>
+
+<p>Fall 2018</p>
+
+<ul>
+<li><p>1 Introduction 1</p></li>
+<li><p>2 Program Execution 1</p></li>
+<li><p>3 TUI (Text User Interface) Mode 4</p></li>
+<li><p>4 Viewing Variables, Registers and Memory 4</p></li>
+<li><p>5 More Information 5</p><ul>
+<li><p>5.1 Official Documentation 6</p></li>
+<li><p>5.2 Tutorials 6</p></li>
+</ul>
+
+</li>
+<li><p>6 Tips 6</p></li>
+</ul>
+
+<h2>1 Introduction</h2>
+
+<p>This document contains several ​gdb​ commands which you will find useful throughout your x86and C-programming career.</p>
+
+<p>The commands contained within this document are by no means exhaustive; ​gdb​ contains many features which are not documented here. Consult the man pages ​(man gdb)​ or the internet if you require further information.</p>
+
+<p>Throughout this document, commands shall be listed in the form</p>
+
+<p>​[c]ommand​ <required arg> (optional arg) This is what the command does. This is an example use of this command.</p>
+
+<p>where the character(s) in [brackets] are the abbreviated version of the command.</p>
+
+<h2>2 Program Execution</h2>
+
+<ul>
+<li><p>[b]reak​ <function name or filename:line# or *memory address> Sets a breakpoint on either a function, a line given by a line number, or the instruction located at a particular address.</p></li>
+</ul>
+
+<p>If you do not have access to the source code of a function and wish to set a breakpoint on a particular instruction, call ​disassemble function_name​ (where ​function_name​ is the name of the procedure); this command will allow you to see the memory address of each instruction. See section 4 for further information.</p>
+
+<p>(gdb) break main Breakpoint 1 at 0x80488f6: file main.c, line 67.</p>
+
+<p>[d]elete​ <breakpoint #> Removes the indicated breakpoint. To see breakpoint numbers, run ​info break​, or ​i b​.</p>
+
+<p>(gdb) delete 4</p>
+
+<p>[condition]​ <breakpoint #> ​<condition> Updates the breakpoint indicated by the given number so that execution of the program stops at that point only if ​condition​ is true. ​condition​ is expressed in C syntax, and can only use variables and functions that are available in the scope of the breakpoint location</p>
+
+<p>(gdb) break main Breakpoint 1 at 0x80488f6: file main.c, line 48 (gdb) condition 1 argc <= 2 || !strcmp(argv[1], "jasmine")</p>
+
+<p>[i]nfo​ (about) Lists information about the argument (​about​), or lists what possible arguments are if none are provided. about​ can be one of the following​1​:</p>
+
+<ul>
+<li><p>● [f]rame​ – list information about the current stack frame, including the address of the current frame, the address of the previous frame, locations of saved registers, function arguments, and local variables.</p></li>
+<li><p>● [s]tack ​– list the stack backtrace, showing what function calls have been made, and their arguments. You can also use the commands ​backtrace​ or ​where​ to do the same.</p></li>
+<li><p>● [r]egisters ​–lists the contents of each register. ​[all-r]egisters​ lists even more registers.</p></li>
+<li><p>● [b]reak ​– lists the number and address of each breakpoint, and what function the breakpoint is in.</p></li>
+<li><p>● [fu]nctions ​- lists all of the function signatures, if the program was compiled with the gcc​ flag ​-g​. This is useful for setting breakpoints in functions.</p></li>
+</ul>
+
+<p>[file]​ <filename of executable> Loads the specified file into​ gdb.</p>
+
+<ul>
+<li><p>[r]un​ (arg1 arg2 ... argn) Runs the loaded executable program with program arguments ​arg1 ... argn​.</p></li>
+</ul>
+
+<ul>
+<li><p>[c]ontinue Resumes execution of a stopped program, stopping again at the next breakpoint.</p></li>
+</ul>
+
+<ul>
+<li><p>[s]tep Steps through a single line of code. Steps into function calls.</p></li>
+</ul>
+
+<p>(gdb) break main Breakpoint 1 at 0x8049377: file main.c, line 34.</p>
+
+<ul>
+<li><p>(gdb) r</p><p>Breakpoint 1, main (argc=2, argv=0xbffff704) at main.c:34 35 int val = foo(argv[1]);</p>
+
+</li>
+<li><p>(gdb) s foo (word=0xbffff8b3) at main.c:11 12 char bar = word[0];</p></li>
+</ul>
+
+<p>[s]tep[i] Steps through a single x86 instruction. Steps into calls.</p>
+
+<p>(gdb) 0x080484d5 in main() 1: x/i $pc</p>
+
+<p>=> 0x80484d5 <main + 113>: call 0x80484ec<do_something> (gdb) si 0x080484ec in do_something() 1: x/i $pc</p>
+
+<p>=> 0x80484ec <main + 113>: push %ebp</p>
+
+<p>[n]ext Steps through a single line of code. Steps over function calls.</p>
+
+<p>(gdb) break main Breakpoint 1 at 0x8049377: file main.c, line 34. (gdb) r Breakpoint 1, main (argc=2, argv=0xbffff704) at main.c:34</p>
+
+<ul>
+<li><p>35 int val = foo(argv[1]); (gdb) n</p></li>
+<li><p>36 bar(val);</p></li>
+</ul>
+
+<p>[n]ext[i] Steps through a single x86 instruction. Steps over calls​.</p>
+
+<p>(gdb)​ ​0x080484d5 in main () 1: x/i $pc</p>
+
+<p>=> 0x80484d5 <main + 113>: call 0x80484ec<do_something> (gdb) ni 0x080484da in main () 1: x/i $pc</p>
+
+<p>=> 0x80484da <main + 113>: mov $0x0,%eax</p>
+
+<p>[k]ill Kills the current debugging session.</p>
+
+<h3>[b]ack[t]race</h3>
+
+<p>Prints a stack trace, listing each function and its arguments. This does the same thing as the commands ​info stack​ and ​where​.</p>
+
+<p>(gdb) bt</p>
+
+<ul>
+<li><p>#0 fibonacci (n=1) at main.c:45</p></li>
+<li><p>#1 fibonacci (n=2) at main.c:45 #3 main (argc=2, argv=0xbffff6e4) at main.c:34</p></li>
+</ul>
+
+<p>[where] Prints a stack trace, listing each function and its arguments. This is the same as the commands info stack​ and ​backtrace​.</p>
+
+<p>[q]uit Quits​ gdb.</p>
+
+<h2>3 TUI (Text User Interface) Mode</h2>
+
+<p>layout​ is a terminal interface which allows the user to view the source file while debugging. The TUI​ mode is enabled by default when you invoke ​gdb​ as ​gdb tui​. You can also switch in and out of ​TUI​ mode while ​gdb​ runs by using various ​TUI​ commands and key bindings, such as ​tui enable​ or ​Ctrl-x Ctrl-a​. To disable ​TUI​ mode, you can type ​tui disable​. If the layout of the ​TUI​ becomes unreadable, pressing ​Ctrl-l​ will reload it.</p>
+
+<p>Once you are running TUI mode, there are several commands you can use to change the display. One of them is layout name. The name parameter controls which additional windows are displayed, and can be any of the following:</p>
+
+<ul>
+<li><p>● next​ will display the next layout.</p></li>
+<li><p>● prev​ will display the previous layout.</p></li>
+<li><p>● src​ will display the source and command windows.</p></li>
+<li><p>● asm​ will display the assembly and command windows.</p></li>
+<li><p>● split​ will display the source, assembly, and command windows.</p></li>
+<li><p>● regs​ will display the register, source, and command windows when in src layout. When in asm or split layout, will display the register, assembler, and command windows.</p></li>
+</ul>
+
+<p>When you have multiple windows open, you can then use the command ​focus​ ​name​to switch focus between windows. The ​name​parameter controls which window is focused, and can be any of the following:</p>
+
+<ul>
+<li><p>● next​ will make the next window active for scrolling.</p></li>
+<li><p>● prev​ will make the previous window active for scrolling.</p></li>
+<li><p>● src​ will make the source window active for scrolling.</p></li>
+<li><p>● asm​ will make the assembly window active for scrolling.</p></li>
+<li><p>● regs​ will make the register window active for scrolling.</p></li>
+</ul>
+
+<ul>
+<li><p>● cmd​ will make the command window active for scrolling.</p></li>
+</ul>
+
+<p>When the command window is active for scrolling, for example, using the arrow keys allows you to scroll through ​gdb​ commands instead of moving the text window.</p>
+
+<h2>4 Viewing Variables, Registers and Memory</h2>
+
+<p>[p]rint​ <expression> Prints the value which the indicated ​expression​ evaluates to. expression can contain variable names (from the current scope), memory addresses, registers, and constants as its operands to various operators. It is written in C syntax, which means that in addition to arithmetic operations, you can also use casting operations and dereferencing operations.</p>
+
+<p>To access the value contained in a register, replace the ​%​ character prefix with ​$​, e.g. ​$eax instead of ​%eax​.</p>
+
+<p>(gdb) print *(char *)($esp + $eax + my_ptr_array[13]) ‘e’</p>
+
+<p>[p]rint/x​ <expression> Prints the value which the indicated expression evaluates to as a hexadecimal number. expression​ is evaluated the same way as it is in ​print​.</p>
+
+<p>(gdb) p/x my_var $1 = 0x1b</p>
+
+<p>[x]/(number)(format)(unit_size)​ <address> Examines the data located in memory at address.</p>
+
+<ul>
+<li><p>● number​ optionally indicates that several contiguous elements, beginning at ​address​, should be examined. This is very useful for examining the contents of an array. By default, this argument is 1.</p></li>
+<li><p>● format​ indicates how data should be printed. In most cases, this is the same character that you would use in a call to ​printf()​. One exception is the format i, which prints an instruction rather than a decimal integer.</p></li>
+<li><p>● unit_size​ indicates the size of the data to examine. It can be ​[b]ytes​, ​[h]alfwords (2 bytes), ​[w]ords​, or ​[g]iant​ ​words. By default, this is bytes, which is perfect for examining instructions.</p></li>
+</ul>
+
+<p>A variation of this command is the ​display​ command. This command takes the same arguments, but repeats execution every time ​gdb​ waits for input. For example,</p>
+
+<p>display/I $pc would display the next instruction after each step. (gdb) x/4x argv</p>
+
+<p>0xbffff6e4: 0xbffff86b 0xbffff8b3 0xbffff8b6 0x00000000 (gdb) x/2c argv[1] 0xbffff86b: 104 ‘h’ 105 ‘i’ (gdb) x/3i foo</p>
+
+<ul>
+<li><p>0x80485e6 <foo>: push %ebp</p></li>
+<li><p>0x80485e7 <foo+1>: mov %esp, %ebp 0x80485e9 <foo+3>: push %ebx</p></li>
+</ul>
+
+<p>[disassemble] <function name> Disassembles a function into assembly instructions, displaying the address, name, and operands of each instruction.</p>
+
+<h2>5 More Information</h2>
+
+<p>Below are some additional resources for all of your ​gdb​ needs (the bullet points are clickable links).</p>
+
+<ul>
+<li><p>5.1 Official Documentation</p><ul>
+<li><p>● Viewing the stack</p></li>
+<li><p>● Running programs</p></li>
+<li><p>● Stopping execution</p></li>
+<li><p>● Viewing program source</p></li>
+<li><p>● Viewing program data</p></li>
+</ul>
+
+</li>
+<li><p>5.2 Tutorials</p></li>
+</ul>
+
+<ul>
+<li><p>● Using GNU’s GDB Debugger</p></li>
+<li><p>● Beej’s Quick Guide to GDB</p></li>
+</ul>
+
+<h2>6 Tips</h2>
+
+<ul>
+<li><p>● If you edit your program while it is being run in ​gdb​, open another terminal, recompile your program, and restart it in ​gdb​ by typing ​run (args)​. ​gdb​ will load the new version of the program while maintaining all of your previous breakpoints.</p></li>
+<li><p>● To view the next assembly instruction that will be executed, use the command display/I %pc</p></li>
+<li><p>● Type ​CTRL-Z​ to suspend execution of your program within ​gdb​. You can then resume execution with the ​[c]ontinue​ command.</p></li>
+</ul>
+
+
+</body>
+</html>

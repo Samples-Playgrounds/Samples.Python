@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="und">
+<head>
+<meta charset="utf-8">
+<title>UNIXCheatSheet.pdf</title>
+</head>
+<body>
+<h1>UNIX Command Cheat Sheet</h1>
+
+<figcaption>Carnegie Observatories Summer Research Program Every command and ﬁlename is CaSe sEnSiTiVe!</figcaption>
+
+<table border="1">
+<tr>
+<th><p>Command</p>
+</th>
+<th><p>Description</p>
+</th>
+<th><p>Examples and Options</p>
+</th>
+</tr>
+<tr>
+<td><p><tab></p>
+</td>
+<td><p>Attempt to autocomplete</p>
+</td>
+<td><p>Use this to speed up typing/avoid typos</p>
+</td>
+</tr>
+<tr>
+<td colspan="3"><p>Navigating Directories</p>
+</td>
+</tr>
+<tr>
+<td><p>ls</p>
+</td>
+<td><p>List the contents of the directory.</p>
+</td>
+<td><p>ls -larth /home/mcuser/science/code</p>
+</td>
+</tr>
+<tr>
+<td><p>cd</p>
+</td>
+<td><p>Change directory.</p>
+</td>
+<td><p>cd /home/mcuser/science</p>
+</td>
+</tr>
+<tr>
+<td><p>pwd</p>
+</td>
+<td><p>present working directory.</p>
+</td>
+<td><p>pwd</p>
+</td>
+</tr>
+<tr>
+<td><p>*</p>
+</td>
+<td><p>Wild card, any number of chars.</p>
+</td>
+<td><p>ls *.txt</p>
+</td>
+</tr>
+<tr>
+<td><p>?</p>
+</td>
+<td><p>Wild card, 0 or 1 characters.</p>
+</td>
+<td><p>ls foo?.txt</p>
+</td>
+</tr>
+<tr>
+<td><p>.</p>
+</td>
+<td><p>Current directory.</p>
+</td>
+<td><p>cd .</p>
+</td>
+</tr>
+<tr>
+<td><p>..</p>
+</td>
+<td><p>Directory one level up.</p>
+</td>
+<td><p>cd ..</p>
+</td>
+</tr>
+<tr>
+<td></td>
+<td><p>Home directory.</p>
+</td>
+<td><p>cd</p>
+</td>
+</tr>
+<tr>
+<td><p>-</p>
+</td>
+<td><p>Previous directory.</p>
+</td>
+<td><p>cd -</p>
+</td>
+</tr>
+<tr>
+<td colspan="3"><p>Modifying Directories and Files</p>
+</td>
+</tr>
+<tr>
+<td><p>mkdir</p>
+</td>
+<td><p>Make new empty directory.</p>
+</td>
+<td><p>mkdir MyNewDirectory</p>
+</td>
+</tr>
+<tr>
+<td><p>rmdir</p>
+</td>
+<td><p>Remove empty directory.</p>
+</td>
+<td><p>rmdir MyNewDirectory</p>
+</td>
+</tr>
+<tr>
+<td><p>mv</p>
+</td>
+<td><p>Move ﬁles (overwrites destination).</p>
+</td>
+<td><p>mv -i foo.txt foo2.txt</p>
+</td>
+</tr>
+<tr>
+<td><p>cp</p>
+</td>
+<td><p>Copy ﬁles (overwrites destination).</p>
+</td>
+<td><p>cp -i ../foo.txt .</p>
+</td>
+</tr>
+<tr>
+<td><p>rm</p>
+</td>
+<td><p>Remove ﬁles. CANNOT UNDO!</p>
+</td>
+<td><p>rm -i foo.txt</p>
+</td>
+</tr>
+<tr>
+<td><p>chmod</p>
+</td>
+<td><p>Change ﬁle permissions. rwx = read, write, execute. ugoa = user, group, other, all.</p>
+</td>
+<td><p>chmod a+rwx badger.txt chmod o-wx badger.txt chmod u+x myscript.sh</p>
+</td>
+</tr>
+<tr>
+<td colspan="3"><p>Viewing Files in Terminal</p>
+</td>
+</tr>
+<tr>
+<td><p>less</p>
+</td>
+<td><p>View ﬁles in terminal window.</p>
+</td>
+<td><p>less foo.txt</p>
+</td>
+</tr>
+<tr>
+<td><p>cat</p>
+</td>
+<td><p>Concatenate ﬁles.</p>
+</td>
+<td><p>cat foo1.txt foo2.txt</p>
+</td>
+</tr>
+<tr>
+<td><p>head</p>
+</td>
+<td><p>Display ﬁrst 10 lines.</p>
+</td>
+<td><p>head -20 foo.txt</p>
+</td>
+</tr>
+<tr>
+<td><p>tail</p>
+</td>
+<td><p>Display last 10 lines.</p>
+</td>
+<td><p>tail -f logfile.txt</p>
+</td>
+</tr>
+<tr>
+<td colspan="3"><p>Searching</p>
+</td>
+</tr>
+<tr>
+<td><p>grep</p>
+</td>
+<td><p>Search for word(s) in a ﬁle.</p>
+</td>
+<td><p>grep myvarname *.txt grep rodent *.txt grep "Hello World" *.txt</p>
+</td>
+</tr>
+<tr>
+<td><p>find</p>
+</td>
+<td><p>Search a path for ﬁles/directories that match some speciﬁcation.</p>
+</td>
+<td><p>find playground -name "*.txt" find playground -type d find playground -not -name "*.txt"</p>
+</td>
+</tr>
+<tr>
+<td colspan="3"><p>Environment Variables</p>
+</td>
+</tr>
+<tr>
+<td><p>$HOME</p>
+</td>
+<td><p>Home directory.</p>
+</td>
+<td><p>workpath=$HOME/playground</p>
+</td>
+</tr>
+<tr>
+<td><p>$SHELL</p>
+</td>
+<td><p>Shell name.</p>
+</td>
+<td><p>echo $SHELL</p>
+</td>
+</tr>
+<tr>
+<td><p>$USER</p>
+</td>
+<td><p>User name.</p>
+</td>
+<td><p>echo $USER</p>
+</td>
+</tr>
+<tr>
+<td><p>$PATH</p>
+</td>
+<td><p>Paths to look in for executables.</p>
+</td>
+<td><p>PATH=${PATH}:/my/new/program/path/bin</p>
+</td>
+</tr>
+<tr>
+<td><p>env</p>
+</td>
+<td><p>List environment vars and values.</p>
+</td>
+<td><p>env | less</p>
+</td>
+</tr>
+</table>
+
+<h2>Common text editors: emacs, vim, vi, pico, nano</h2>
+
+<table border="1">
+<tr>
+<th><p>Command</p>
+</th>
+<th><p>Description</p>
+</th>
+<th><p>Examples and Options</p>
+</th>
+</tr>
+<tr>
+<td colspan="3"><p>File Manipulation</p>
+</td>
+</tr>
+<tr>
+<td><p>wc</p>
+</td>
+<td><p>Word count.</p>
+</td>
+<td><p>wc -l mycode.py</p>
+</td>
+</tr>
+<tr>
+<td><p>sort</p>
+</td>
+<td><p>Sort input alphanumerically.</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td><p>|</p>
+</td>
+<td><p>Pipe/ﬁlter output through another program.</p>
+</td>
+<td><p>cat foo.txt | less sort myfile.txt | grep mykeyword</p>
+</td>
+</tr>
+<tr>
+<td><p>></p>
+</td>
+<td><p>Redirect standard output to. Overwrites existing ﬁle.</p>
+</td>
+<td><p>cat foo.txt > foo2.txt</p>
+</td>
+</tr>
+<tr>
+<td><p>>></p>
+</td>
+<td><p>Redirect standard output and concatenate to.</p>
+</td>
+<td><p>cat foo.txt >> foo2.txt</p>
+</td>
+</tr>
+<tr>
+<td><p><</p>
+</td>
+<td><p>Redirect standard input from.</p>
+</td>
+<td><p>less < foo.txt</p>
+</td>
+</tr>
+<tr>
+<td><p>awk</p>
+</td>
+<td><p>Advanced operations by column.</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td><p>sed</p>
+</td>
+<td><p>Advanced operations by row.</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3"><p>Job/process Manipulation</p>
+</td>
+</tr>
+<tr>
+<td><p>&</p>
+</td>
+<td><p>Run process in background.</p>
+</td>
+<td><p>./run_job.sh &</p>
+</td>
+</tr>
+<tr>
+<td><p>jobs</p>
+</td>
+<td><p>Show your current processes</p>
+</td>
+<td><p>jobs</p>
+</td>
+</tr>
+<tr>
+<td><p>ps</p>
+</td>
+<td><p>Show processes (more ﬂexible)</p>
+</td>
+<td><p>ps -u username</p>
+</td>
+</tr>
+<tr>
+<td><p>top</p>
+</td>
+<td><p>Show top active processes</p>
+</td>
+<td><p>top -u username</p>
+</td>
+</tr>
+<tr>
+<td><p>kill</p>
+</td>
+<td><p>Stop a job</p>
+</td>
+<td><p>kill processid</p>
+</td>
+</tr>
+<tr>
+<td><p>Ctrl-z</p>
+</td>
+<td><p>Pause current job</p>
+</td>
+<td><p>./run_job.sh; Ctrl-z</p>
+</td>
+</tr>
+<tr>
+<td><p>Ctrl-c</p>
+</td>
+<td><p>Cancel current job</p>
+</td>
+<td><p>./run_job.sh; Ctrl-c</p>
+</td>
+</tr>
+<tr>
+<td><p>bg</p>
+</td>
+<td><p>Resume process in background</p>
+</td>
+<td><p>./run_job.sh; Ctrl-z; bg %1</p>
+</td>
+</tr>
+<tr>
+<td><p>fg</p>
+</td>
+<td><p>Bring process to foreground</p>
+</td>
+<td><p>fg %2</p>
+</td>
+</tr>
+<tr>
+<td colspan="3"><p>Remote Connections</p>
+</td>
+</tr>
+<tr>
+<td><p>ssh</p>
+</td>
+<td><p>Secure shell login.</p>
+</td>
+<td><p>ssh -Y user@host.edu</p>
+</td>
+</tr>
+<tr>
+<td><p>scp</p>
+</td>
+<td><p>Secure copy.</p>
+</td>
+<td><p>scp user@host.edu:path/to/file.txt .</p>
+</td>
+</tr>
+<tr>
+<td><p>wget</p>
+</td>
+<td><p>Download ﬁle from remote URL.</p>
+</td>
+<td><p>wget www.google.com -O google.html</p>
+</td>
+</tr>
+<tr>
+<td><p>Ctrl-d</p>
+</td>
+<td><p>Exit login. Sometimes disabled.</p>
+</td>
+<td><p>Can also use exit, logout</p>
+</td>
+</tr>
+<tr>
+<td colspan="3"><p>Miscellaneous</p>
+</td>
+</tr>
+<tr>
+<td><p>man</p>
+</td>
+<td><p>Manual for other commands.</p>
+</td>
+<td><p>man cat</p>
+</td>
+</tr>
+<tr>
+<td><p>sleep</p>
+</td>
+<td><p>Do nothing</p>
+</td>
+<td><p>sleep 30</p>
+</td>
+</tr>
+<tr>
+<td><p>touch</p>
+</td>
+<td><p>Create empty ﬁle/update timestamp</p>
+</td>
+<td><p>touch newfile.txt</p>
+</td>
+</tr>
+<tr>
+<td><p>whoami</p>
+</td>
+<td><p>Print current user.</p>
+</td>
+<td><p>whoami</p>
+</td>
+</tr>
+<tr>
+<td><p>du</p>
+</td>
+<td><p>Disk usage.</p>
+</td>
+<td><p>du -shc mydirectory/*</p>
+</td>
+</tr>
+<tr>
+<td><p>df</p>
+</td>
+<td><p>Disk free.</p>
+</td>
+<td><p>df -h</p>
+</td>
+</tr>
+<tr>
+<td><p>diff</p>
+</td>
+<td><p>Shows diﬀerences between two ﬁles.</p>
+</td>
+<td><p>diff -w file1.txt file2.txt</p>
+</td>
+</tr>
+<tr>
+<td><p>echo</p>
+</td>
+<td><p>Write text to screen.</p>
+</td>
+<td><p>echo "Hello? Can you hear me?"</p>
+</td>
+</tr>
+<tr>
+<td><p>which</p>
+</td>
+<td><p>Find path for command.</p>
+</td>
+<td><p>which gcc</p>
+</td>
+</tr>
+<tr>
+<td><p>tar</p>
+</td>
+<td><p>Compress/uncompress ﬁles.</p>
+</td>
+<td><p>tar -zcvf files.tar.gz a.txt b.fits tar -zxvf downloadedstuff.tar.gz</p>
+</td>
+</tr>
+<tr>
+<td><p>history</p>
+</td>
+<td><p>See command history.</p>
+</td>
+<td><p>history | grep myscript.py</p>
+</td>
+</tr>
+<tr>
+<td><p>alias</p>
+</td>
+<td><p>Create command shortcut.</p>
+</td>
+<td><p>alias lrt='ls -lhrt'</p>
+</td>
+</tr>
+<tr>
+<td><p>source</p>
+</td>
+<td><p>Execute ﬁle in shell.</p>
+</td>
+<td><p>source ˜/.bash_profile</p>
+</td>
+</tr>
+</table>
+
+
+</body>
+</html>

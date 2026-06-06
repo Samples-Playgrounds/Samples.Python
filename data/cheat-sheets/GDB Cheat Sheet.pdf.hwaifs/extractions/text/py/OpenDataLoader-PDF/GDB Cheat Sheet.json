@@ -1,0 +1,921 @@
+{
+  "file name" : "GDB Cheat Sheet.pdf",
+  "number of pages" : 2,
+  "author" : "Marc",
+  "title" : "GDB Cheat Sheet",
+  "creation date" : "D:20071210174509Z00'00'",
+  "modification date" : "D:20071210174509Z00'00'",
+  "kids" : [ {
+    "type" : "image",
+    "id" : 57,
+    "page number" : 1,
+    "bounding box" : [ 28.346, 545.0, 813.654, 561.0 ]
+  }, {
+    "type" : "header",
+    "id" : 9,
+    "page number" : 1,
+    "bounding box" : [ 344.422, 545.01, 497.65, 558.01 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 7,
+      "page number" : 1,
+      "bounding box" : [ 344.422, 545.01, 497.65, 558.01 ],
+      "heading level" : 2,
+      "font" : "Helvetica-Bold",
+      "font size" : 13.0,
+      "text color" : "[1.0, 1.0, 1.0]",
+      "content" : "GDB cheatsheet - page 1"
+    } ]
+  }, {
+    "type" : "heading",
+    "id" : 10,
+    "level" : "Doctitle",
+    "page number" : 1,
+    "bounding box" : [ 125.182, 520.78, 181.952, 534.78 ],
+    "heading level" : 1,
+    "font" : "Helvetica-Bold",
+    "font size" : 14.0,
+    "text color" : "[1.0, 1.0, 1.0]",
+    "content" : "Running"
+  }, {
+    "type" : "paragraph",
+    "id" : 11,
+    "page number" : 1,
+    "bounding box" : [ 28.346, 508.293, 206.553, 519.293 ],
+    "font" : "Courier-Oblique",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "# gdb <program> [core dump]"
+  }, {
+    "type" : "paragraph",
+    "id" : 12,
+    "page number" : 1,
+    "bounding box" : [ 28.346, 476.293, 264.768, 506.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Start GDB (with optional core dump). # gdb --args <program> <args…>"
+  }, {
+    "type" : "paragraph",
+    "id" : 13,
+    "page number" : 1,
+    "bounding box" : [ 28.346, 444.293, 237.884, 474.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Start GDB and pass arguments # gdb --pid <pid>"
+  }, {
+    "type" : "paragraph",
+    "id" : 14,
+    "page number" : 1,
+    "bounding box" : [ 85.039, 431.47, 246.453, 442.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Start GDB and attach to process."
+  }, {
+    "type" : "paragraph",
+    "id" : 15,
+    "page number" : 1,
+    "bounding box" : [ 28.346, 386.47, 263.569, 423.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "set args <args...> Set arguments to pass to program to be debugged."
+  }, {
+    "type" : "paragraph",
+    "id" : 16,
+    "page number" : 1,
+    "bounding box" : [ 28.346, 367.293, 48.146, 378.293 ],
+    "font" : "Courier",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "run"
+  }, {
+    "type" : "paragraph",
+    "id" : 17,
+    "page number" : 1,
+    "bounding box" : [ 28.346, 335.293, 250.138, 365.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Run the program to be debugged. kill"
+  }, {
+    "type" : "paragraph",
+    "id" : 18,
+    "page number" : 1,
+    "bounding box" : [ 85.039, 322.47, 204.862, 333.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Kill the running program."
+  }, {
+    "type" : "heading",
+    "id" : 19,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 28.346, 286.293, 194.013, 312.78 ],
+    "heading level" : 1,
+    "font" : "Helvetica-Bold",
+    "font size" : 14.0,
+    "text color" : "[1.0, 1.0, 1.0]",
+    "content" : "Breakpoints break <where>"
+  }, {
+    "type" : "paragraph",
+    "id" : 20,
+    "page number" : 1,
+    "bounding box" : [ 28.346, 254.293, 191.431, 284.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Set a new breakpoint. delete <breakpoint#>"
+  }, {
+    "type" : "paragraph",
+    "id" : 21,
+    "page number" : 1,
+    "bounding box" : [ 28.346, 222.293, 192.641, 252.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Remove a breakpoint. clear"
+  }, {
+    "type" : "paragraph",
+    "id" : 22,
+    "page number" : 1,
+    "bounding box" : [ 28.346, 190.293, 193.862, 220.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Delete all breakpoints. enable <breakpoint#>"
+  }, {
+    "type" : "paragraph",
+    "id" : 23,
+    "page number" : 1,
+    "bounding box" : [ 28.346, 158.293, 229.953, 188.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Enable a disabled breakpoint. disable <breakpoint#>"
+  }, {
+    "type" : "paragraph",
+    "id" : 24,
+    "page number" : 1,
+    "bounding box" : [ 85.039, 145.47, 188.362, 156.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Disable a breakpoint."
+  }, {
+    "type" : "heading",
+    "id" : 25,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 28.346, 109.293, 195.317, 135.78 ],
+    "heading level" : 1,
+    "font" : "Helvetica-Bold",
+    "font size" : 14.0,
+    "text color" : "[1.0, 1.0, 1.0]",
+    "content" : "Watchpoints watch <where>"
+  }, {
+    "type" : "paragraph",
+    "id" : 26,
+    "page number" : 1,
+    "bounding box" : [ 28.346, 64.47, 259.37, 107.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Set a new watchpoint. delete/enable/disable <watchpoint#> Like breakpoints."
+  }, {
+    "type" : "paragraph",
+    "id" : 27,
+    "page number" : 1,
+    "bounding box" : [ 295.785, 508.293, 449.405, 534.78 ],
+    "font" : "Courier-Oblique",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "<where> function_name"
+  }, {
+    "type" : "paragraph",
+    "id" : 28,
+    "page number" : 1,
+    "bounding box" : [ 352.478, 495.47, 512.671, 506.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Break/watch the named function."
+  }, {
+    "type" : "paragraph",
+    "id" : 29,
+    "page number" : 1,
+    "bounding box" : [ 295.785, 450.47, 543.85, 487.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "line_number Break/watch the line number in the current source ﬁle."
+  }, {
+    "type" : "paragraph",
+    "id" : 30,
+    "page number" : 1,
+    "bounding box" : [ 295.785, 405.47, 521.834, 442.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "file:line_number Break/watch the line number in the named source ﬁle."
+  }, {
+    "type" : "heading",
+    "id" : 31,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 384.452, 381.78, 457.56, 395.78 ],
+    "heading level" : 1,
+    "font" : "Helvetica-Bold",
+    "font size" : 14.0,
+    "text color" : "[1.0, 1.0, 1.0]",
+    "content" : "Conditions"
+  }, {
+    "type" : "paragraph",
+    "id" : 32,
+    "page number" : 1,
+    "bounding box" : [ 295.785, 317.47, 540.798, 380.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "break/watch <where> if <condition> Break/watch at the given location if the condition is met. Conditions may be almost any C expression that evaluate to true or false."
+  }, {
+    "type" : "paragraph",
+    "id" : 33,
+    "page number" : 1,
+    "bounding box" : [ 295.785, 272.47, 541.425, 309.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "condition <breakpoint#> <condition> Set/change the condition of an existing break- or watchpoint."
+  }, {
+    "type" : "heading",
+    "id" : 34,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 353.311, 248.78, 488.691, 262.78 ],
+    "heading level" : 1,
+    "font" : "Helvetica-Bold",
+    "font size" : 14.0,
+    "text color" : "[1.0, 1.0, 1.0]",
+    "content" : "Examining the stack"
+  }, {
+    "type" : "paragraph",
+    "id" : 35,
+    "page number" : 1,
+    "bounding box" : [ 295.785, 223.293, 355.185, 247.293 ],
+    "font" : "Courier",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "backtrace where"
+  }, {
+    "type" : "paragraph",
+    "id" : 36,
+    "page number" : 1,
+    "bounding box" : [ 352.478, 210.47, 431.337, 221.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Show call stack."
+  }, {
+    "type" : "paragraph",
+    "id" : 37,
+    "page number" : 1,
+    "bounding box" : [ 295.785, 178.293, 388.185, 202.293 ],
+    "font" : "Courier",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "backtrace full where full"
+  }, {
+    "type" : "paragraph",
+    "id" : 38,
+    "page number" : 1,
+    "bounding box" : [ 352.478, 152.47, 541.395, 176.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Show call stack, also print the local variables in each frame."
+  }, {
+    "type" : "paragraph",
+    "id" : 39,
+    "page number" : 1,
+    "bounding box" : [ 295.785, 120.47, 532.24, 144.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "frame <frame#> Select the stack frame to operate on."
+  }, {
+    "type" : "heading",
+    "id" : 40,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 295.785, 84.293, 450.951, 110.78 ],
+    "heading level" : 1,
+    "font" : "Helvetica-Bold",
+    "font size" : 14.0,
+    "text color" : "[1.0, 1.0, 1.0]",
+    "content" : "Stepping step"
+  }, {
+    "type" : "paragraph",
+    "id" : 41,
+    "page number" : 1,
+    "bounding box" : [ 352.478, 58.47, 538.334, 82.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Go to next instruction (source line), diving into function."
+  }, {
+    "type" : "paragraph",
+    "id" : 43,
+    "page number" : 1,
+    "bounding box" : [ 563.223, 525.293, 589.623, 536.293 ],
+    "font" : "Courier",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "next"
+  }, {
+    "type" : "paragraph",
+    "id" : 44,
+    "page number" : 1,
+    "bounding box" : [ 619.916, 499.47, 805.772, 523.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Go to next instruction (source line) but donʻt dive into functions."
+  }, {
+    "type" : "paragraph",
+    "id" : 45,
+    "page number" : 1,
+    "bounding box" : [ 563.223, 480.293, 602.823, 491.293 ],
+    "font" : "Courier",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "finish"
+  }, {
+    "type" : "paragraph",
+    "id" : 46,
+    "page number" : 1,
+    "bounding box" : [ 619.916, 454.47, 800.906, 478.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Continue until the current function returns."
+  }, {
+    "type" : "paragraph",
+    "id" : 47,
+    "page number" : 1,
+    "bounding box" : [ 563.223, 435.293, 616.023, 446.293 ],
+    "font" : "Courier",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "continue"
+  }, {
+    "type" : "heading",
+    "id" : 48,
+    "level" : "Subtitle",
+    "page number" : 1,
+    "bounding box" : [ 614.121, 398.78, 762.759, 433.47 ],
+    "heading level" : 1,
+    "font" : "Helvetica-Bold",
+    "font size" : 14.0,
+    "text color" : "[1.0, 1.0, 1.0]",
+    "content" : "Continue normal execution. Variables and memory"
+  }, {
+    "type" : "image",
+    "id" : 42,
+    "page number" : 1,
+    "bounding box" : [ 563.223, 398.78, 813.653, 416.47 ]
+  }, {
+    "type" : "paragraph",
+    "id" : 49,
+    "page number" : 1,
+    "bounding box" : [ 563.223, 360.47, 810.66, 397.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "print/format <what> Print content of variable/memory location/register."
+  }, {
+    "type" : "paragraph",
+    "id" : 50,
+    "page number" : 1,
+    "bounding box" : [ 563.223, 315.47, 793.54, 352.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "display/format <what> Like „print“, but print the information after each stepping instruction."
+  }, {
+    "type" : "paragraph",
+    "id" : 51,
+    "page number" : 1,
+    "bounding box" : [ 563.223, 270.47, 794.145, 307.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "undisplay <display#> Remove the „display“ with the given number."
+  }, {
+    "type" : "paragraph",
+    "id" : 52,
+    "page number" : 1,
+    "bounding box" : [ 563.223, 238.293, 734.84, 262.293 ],
+    "font" : "Courier",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "enable display <display#> disable display <display#>"
+  }, {
+    "type" : "paragraph",
+    "id" : 53,
+    "page number" : 1,
+    "bounding box" : [ 619.916, 212.47, 807.002, 236.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "En- or disable the „display“ with the given number."
+  }, {
+    "type" : "paragraph",
+    "id" : 54,
+    "page number" : 1,
+    "bounding box" : [ 563.223, 141.47, 802.716, 204.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "x/nfu <address> Print memory. n: How many units to print (default 1). f: Format character (like „print“). u: Unit."
+  }, {
+    "type" : "paragraph",
+    "id" : 55,
+    "page number" : 1,
+    "bounding box" : [ 619.916, 122.47, 687.17, 133.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Unit is one of:"
+  }, {
+    "type" : "paragraph",
+    "id" : 56,
+    "page number" : 1,
+    "bounding box" : [ 648.262, 64.47, 783.982, 114.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "b: Byte, h: Half-word (two bytes) w: Word (four bytes) g: Giant word (eight bytes))."
+  }, {
+    "type" : "footer",
+    "id" : 59,
+    "page number" : 1,
+    "bounding box" : [ 337.297, 34.47, 561.396, 45.47 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 5,
+      "page number" : 1,
+      "bounding box" : [ 337.297, 34.47, 561.396, 45.47 ],
+      "heading level" : 3,
+      "font" : "Helvetica",
+      "font size" : 11.0,
+      "text color" : "[0.0, 0.0, 0.0]",
+      "content" : "© 2007 Marc Haisenko <marc@darkdust.net>"
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 58,
+    "page number" : 1,
+    "bounding box" : [ 458.824, 35.784, 554.972, 36.327 ]
+  }, {
+    "type" : "image",
+    "id" : 101,
+    "page number" : 2,
+    "bounding box" : [ 28.346, 545.0, 813.654, 561.0 ]
+  }, {
+    "type" : "header",
+    "id" : 60,
+    "page number" : 2,
+    "bounding box" : [ 344.422, 545.01, 497.65, 558.01 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 8,
+      "page number" : 2,
+      "bounding box" : [ 344.422, 545.01, 497.65, 558.01 ],
+      "heading level" : 2,
+      "font" : "Helvetica-Bold",
+      "font size" : 13.0,
+      "text color" : "[1.0, 1.0, 1.0]",
+      "content" : "GDB cheatsheet - page 2"
+    } ]
+  }, {
+    "type" : "heading",
+    "id" : 61,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 129.838, 520.78, 177.284, 534.78 ],
+    "heading level" : 1,
+    "font" : "Helvetica-Bold",
+    "font size" : 14.0,
+    "text color" : "[1.0, 1.0, 1.0]",
+    "content" : "Format"
+  }, {
+    "type" : "paragraph",
+    "id" : 62,
+    "page number" : 2,
+    "bounding box" : [ 28.346, 455.293, 255.649, 519.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "a Pointer. c Read as integer, print as character. d Integer, signed decimal. f Floating point number. o Integer, print as octal."
+  }, {
+    "type" : "list",
+    "id" : 63,
+    "level" : "1",
+    "page number" : 2,
+    "bounding box" : [ 28.346, 402.293, 247.361, 453.47 ],
+    "numbering style" : "english letters",
+    "number of list items" : 3,
+    "list items" : [ {
+      "type" : "list item",
+      "page number" : 2,
+      "bounding box" : [ 28.346, 442.293, 196.513, 453.47 ],
+      "font" : "Courier-Oblique",
+      "font size" : 11.0,
+      "text color" : "[0.0, 0.0, 0.0]",
+      "content" : "s Try to treat as C string.",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 2,
+      "bounding box" : [ 28.346, 428.293, 247.361, 439.47 ],
+      "font" : "Courier-Oblique",
+      "font size" : 11.0,
+      "text color" : "[0.0, 0.0, 0.0]",
+      "content" : "t Integer, print as binary (t = „two“).",
+      "kids" : [ ]
+    }, {
+      "type" : "list item",
+      "page number" : 2,
+      "bounding box" : [ 28.346, 402.293, 228.732, 426.47 ],
+      "font" : "Courier-Oblique",
+      "font size" : 11.0,
+      "text color" : "[0.0, 0.0, 0.0]",
+      "content" : "u Integer, unsigned decimal. x Integer, print as hexadecimal.",
+      "kids" : [ ]
+    } ]
+  }, {
+    "type" : "heading",
+    "id" : 64,
+    "level" : "Doctitle",
+    "page number" : 2,
+    "bounding box" : [ 129.441, 385.78, 177.685, 399.78 ],
+    "heading level" : 1,
+    "font" : "Helvetica-Bold",
+    "font size" : 14.0,
+    "text color" : "[1.0, 1.0, 1.0]",
+    "content" : "<what>"
+  }, {
+    "type" : "paragraph",
+    "id" : 65,
+    "page number" : 2,
+    "bounding box" : [ 28.346, 333.47, 271.511, 383.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "expression Almost any C expression, including function calls (must be preﬁxed with a cast to tell GDB the return value type)."
+  }, {
+    "type" : "paragraph",
+    "id" : 66,
+    "page number" : 2,
+    "bounding box" : [ 28.346, 288.47, 264.812, 325.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "file_name::variable_name Content of the variable deﬁned in the named ﬁle (static variables)."
+  }, {
+    "type" : "paragraph",
+    "id" : 67,
+    "page number" : 2,
+    "bounding box" : [ 28.346, 243.47, 264.812, 280.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "function::variable_name Content of the variable deﬁned in the named function (if on the stack)."
+  }, {
+    "type" : "paragraph",
+    "id" : 68,
+    "page number" : 2,
+    "bounding box" : [ 28.346, 198.47, 251.356, 235.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "{type}address Content at address, interpreted as being of the C type type."
+  }, {
+    "type" : "paragraph",
+    "id" : 69,
+    "page number" : 2,
+    "bounding box" : [ 28.346, 179.293, 87.748, 190.293 ],
+    "font" : "Courier-Oblique",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "$register"
+  }, {
+    "type" : "paragraph",
+    "id" : 70,
+    "page number" : 2,
+    "bounding box" : [ 85.039, 127.47, 276.395, 177.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Content of named register. Interesting registers are $esp (stack pointer), $ebp (frame pointer) and $eip (instruction pointer)."
+  }, {
+    "type" : "paragraph",
+    "id" : 71,
+    "page number" : 2,
+    "bounding box" : [ 28.346, 91.293, 180.791, 118.78 ],
+    "font" : "Courier-Oblique",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Threads thread <thread#>"
+  }, {
+    "type" : "paragraph",
+    "id" : 72,
+    "page number" : 2,
+    "bounding box" : [ 85.039, 78.47, 222.011, 89.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Chose thread to operate on."
+  }, {
+    "type" : "heading",
+    "id" : 73,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 335.055, 520.78, 506.961, 534.78 ],
+    "heading level" : 1,
+    "font" : "Helvetica-Bold",
+    "font size" : 14.0,
+    "text color" : "[1.0, 1.0, 1.0]",
+    "content" : "Manipulating the program"
+  }, {
+    "type" : "paragraph",
+    "id" : 74,
+    "page number" : 2,
+    "bounding box" : [ 295.785, 482.47, 542.041, 519.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "set var <variable_name>=<value> Change the content of a variable to the given value."
+  }, {
+    "type" : "paragraph",
+    "id" : 75,
+    "page number" : 2,
+    "bounding box" : [ 295.785, 437.47, 540.165, 474.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "return <expression> Force the current function to return immediately, passing the given value."
+  }, {
+    "type" : "heading",
+    "id" : 76,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 393.376, 413.78, 448.62, 427.78 ],
+    "heading level" : 1,
+    "font" : "Helvetica-Bold",
+    "font size" : 14.0,
+    "text color" : "[1.0, 1.0, 1.0]",
+    "content" : "Sources"
+  }, {
+    "type" : "paragraph",
+    "id" : 77,
+    "page number" : 2,
+    "bounding box" : [ 295.785, 375.47, 530.387, 412.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "directory <directory> Add directory to the list of directories that is searched for sources."
+  }, {
+    "type" : "paragraph",
+    "id" : 78,
+    "page number" : 2,
+    "bounding box" : [ 295.785, 317.293, 487.202, 367.293 ],
+    "font" : "Courier-Oblique",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "list list <filename>:<function> list <filename>:<line_number> list <first>,<last>"
+  }, {
+    "type" : "paragraph",
+    "id" : 79,
+    "page number" : 2,
+    "bounding box" : [ 352.478, 252.47, 543.85, 315.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Shows the current or given source context. The ﬁlename may be omitted. If last is omitted the context starting at start is printed instead of centered around it."
+  }, {
+    "type" : "paragraph",
+    "id" : 80,
+    "page number" : 2,
+    "bounding box" : [ 295.785, 220.47, 527.312, 244.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "set listsize <count> Set how many lines to show in „list“."
+  }, {
+    "type" : "heading",
+    "id" : 81,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 396.104, 196.78, 445.902, 210.78 ],
+    "heading level" : 1,
+    "font" : "Helvetica-Bold",
+    "font size" : 14.0,
+    "text color" : "[1.0, 1.0, 1.0]",
+    "content" : "Signals"
+  }, {
+    "type" : "paragraph",
+    "id" : 82,
+    "page number" : 2,
+    "bounding box" : [ 295.785, 184.293, 460.792, 195.293 ],
+    "font" : "Courier-Oblique",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "handle <signal> <options>"
+  }, {
+    "type" : "paragraph",
+    "id" : 83,
+    "page number" : 2,
+    "bounding box" : [ 352.478, 139.47, 543.856, 182.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Set how to handle signles. Options are: (no)print: (Donʻt) print a message when signals occurs."
+  }, {
+    "type" : "paragraph",
+    "id" : 84,
+    "page number" : 2,
+    "bounding box" : [ 352.478, 107.47, 518.154, 131.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "(no)stop: (Donʻt) stop the program when signals occurs."
+  }, {
+    "type" : "paragraph",
+    "id" : 85,
+    "page number" : 2,
+    "bounding box" : [ 352.478, 75.47, 541.399, 99.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "(no)pass: (Donʻt) pass the signal to the program."
+  }, {
+    "type" : "image",
+    "id" : 86,
+    "page number" : 2,
+    "bounding box" : [ 563.223, 520.78, 813.653, 538.0 ]
+  }, {
+    "type" : "heading",
+    "id" : 87,
+    "level" : "Subtitle",
+    "page number" : 2,
+    "bounding box" : [ 646.049, 520.78, 730.833, 534.78 ],
+    "heading level" : 1,
+    "font" : "Helvetica-Bold",
+    "font size" : 14.0,
+    "text color" : "[1.0, 1.0, 1.0]",
+    "content" : "Informations"
+  }, {
+    "type" : "paragraph",
+    "id" : 88,
+    "page number" : 2,
+    "bounding box" : [ 563.223, 495.293, 688.636, 519.293 ],
+    "font" : "Courier",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "disassemble disassemble <where>"
+  }, {
+    "type" : "paragraph",
+    "id" : 89,
+    "page number" : 2,
+    "bounding box" : [ 619.916, 469.47, 792.924, 493.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Disassemble the current function or given location."
+  }, {
+    "type" : "paragraph",
+    "id" : 90,
+    "page number" : 2,
+    "bounding box" : [ 563.223, 450.293, 622.623, 461.293 ],
+    "font" : "Courier",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "info args"
+  }, {
+    "type" : "paragraph",
+    "id" : 91,
+    "page number" : 2,
+    "bounding box" : [ 619.916, 424.47, 800.294, 448.47 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "Print the arguments to the function of the current stack frame."
+  }, {
+    "type" : "paragraph",
+    "id" : 92,
+    "page number" : 2,
+    "bounding box" : [ 563.223, 379.47, 810.062, 416.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "info breakpoints Print informations about the break- and watchpoints."
+  }, {
+    "type" : "paragraph",
+    "id" : 93,
+    "page number" : 2,
+    "bounding box" : [ 563.223, 347.47, 807.598, 371.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "info display Print informations about the „displays“."
+  }, {
+    "type" : "paragraph",
+    "id" : 94,
+    "page number" : 2,
+    "bounding box" : [ 563.223, 302.47, 808.819, 339.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "info locals Print the local variables in the currently selected stack frame."
+  }, {
+    "type" : "paragraph",
+    "id" : 95,
+    "page number" : 2,
+    "bounding box" : [ 563.223, 270.47, 754.413, 294.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "info sharedlibrary List loaded shared libraries."
+  }, {
+    "type" : "paragraph",
+    "id" : 96,
+    "page number" : 2,
+    "bounding box" : [ 563.223, 225.47, 797.839, 262.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "info signals List all signals and how they are currently handled."
+  }, {
+    "type" : "paragraph",
+    "id" : 97,
+    "page number" : 2,
+    "bounding box" : [ 563.223, 193.47, 693.891, 217.293 ],
+    "font" : "Courier",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "info threads List all threads."
+  }, {
+    "type" : "paragraph",
+    "id" : 98,
+    "page number" : 2,
+    "bounding box" : [ 563.223, 148.47, 808.2, 185.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "show directories Print all directories in which GDB searches for source ﬁles."
+  }, {
+    "type" : "paragraph",
+    "id" : 99,
+    "page number" : 2,
+    "bounding box" : [ 563.223, 103.47, 803.308, 140.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "show listsize Print how many are shown in the „list“ command."
+  }, {
+    "type" : "paragraph",
+    "id" : 100,
+    "page number" : 2,
+    "bounding box" : [ 563.223, 71.47, 759.924, 95.293 ],
+    "font" : "Helvetica",
+    "font size" : 11.0,
+    "text color" : "[0.0, 0.0, 0.0]",
+    "content" : "whatis variable_name Print type of named variable."
+  }, {
+    "type" : "footer",
+    "id" : 103,
+    "page number" : 2,
+    "bounding box" : [ 337.297, 34.47, 561.396, 45.47 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 6,
+      "page number" : 2,
+      "bounding box" : [ 337.297, 34.47, 561.396, 45.47 ],
+      "heading level" : 3,
+      "font" : "Helvetica",
+      "font size" : 11.0,
+      "text color" : "[0.0, 0.0, 0.0]",
+      "content" : "© 2007 Marc Haisenko <marc@darkdust.net>"
+    } ]
+  }, {
+    "type" : "image",
+    "id" : 102,
+    "page number" : 2,
+    "bounding box" : [ 458.824, 35.784, 554.972, 36.327 ]
+  } ]
+}

@@ -1,0 +1,704 @@
+{
+  "file name" : "vi_cheat_sheet.pdf",
+  "number of pages" : 2,
+  "author" : null,
+  "title" : null,
+  "creation date" : "D:19960319151812",
+  "modification date" : null,
+  "kids" : [ {
+    "type" : "text block",
+    "id" : 73,
+    "page number" : 1,
+    "bounding box" : [ 48.0, 32.0, 564.0, 768.0 ],
+    "kids" : [ {
+      "type" : "paragraph",
+      "id" : 1,
+      "page number" : 1,
+      "bounding box" : [ 450.5, 730.99, 552.18, 758.752 ],
+      "font" : "AvantGarde-Demi",
+      "font size" : 12.0,
+      "text color" : "[0.0]",
+      "content" : "VI “Cheat” Sheet ACNS Bulletin ED–03"
+    }, {
+      "type" : "image",
+      "id" : 2,
+      "page number" : 1,
+      "bounding box" : [ 313.0, 600.0, 552.0, 624.0 ]
+    }, {
+      "type" : "paragraph",
+      "id" : 3,
+      "page number" : 1,
+      "bounding box" : [ 313.0, 603.456, 477.844, 616.956 ],
+      "font" : "ArialMT",
+      "font size" : 12.0,
+      "text color" : "[0.0]",
+      "content" : "File management commands"
+    }, {
+      "type" : "paragraph",
+      "id" : 4,
+      "page number" : 1,
+      "bounding box" : [ 319.0, 528.32, 538.25, 593.48 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : ":w name Write edit buffer to file name :wq Write to file and quit :q! Quit without saving changes ZZ Same as :wq :sh Execute shell commands (<ctrl>d)"
+    }, {
+      "type" : "image",
+      "id" : 5,
+      "page number" : 1,
+      "bounding box" : [ 313.0, 493.5, 552.0, 517.5 ]
+    }, {
+      "type" : "heading",
+      "id" : 6,
+      "level" : "Subtitle",
+      "page number" : 1,
+      "bounding box" : [ 313.0, 496.956, 409.228, 510.456 ],
+      "heading level" : 2,
+      "font" : "ArialMT",
+      "font size" : 12.0,
+      "text color" : "[0.0]",
+      "content" : "Window motions"
+    }, {
+      "type" : "paragraph",
+      "id" : 7,
+      "page number" : 1,
+      "bounding box" : [ 319.0, 462.32, 510.8, 486.98 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "<ctrl>d Scroll down (half a screen) <ctrl>u Scroll up (half a screen)"
+    }, {
+      "type" : "list",
+      "id" : 8,
+      "level" : "1",
+      "page number" : 1,
+      "bounding box" : [ 319.0, 369.82, 529.42, 459.98 ],
+      "numbering style" : "english letters",
+      "number of list items" : 2,
+      "list items" : [ {
+        "type" : "list item",
+        "page number" : 1,
+        "bounding box" : [ 319.0, 394.82, 468.58, 459.98 ],
+        "font" : "Times-Roman",
+        "font size" : 10.0,
+        "text color" : "[0.0]",
+        "content" : "<ctrl>f Page forward <ctrl>b Page backward /string Search forward ?string Search backward <ctrl>l Redraw screen",
+        "kids" : [ ]
+      }, {
+        "type" : "list item",
+        "page number" : 1,
+        "bounding box" : [ 319.0, 369.82, 529.42, 392.48 ],
+        "font" : "Times-Roman",
+        "font size" : 10.0,
+        "text color" : "[0.0]",
+        "content" : "<ctrl>g Display current line number and file information",
+        "kids" : [ ]
+      } ]
+    }, {
+      "type" : "paragraph",
+      "id" : 9,
+      "page number" : 1,
+      "bounding box" : [ 319.0, 261.82, 548.95, 367.48 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "n Repeat search N Repeat search reverse G Go to last line nG Go to line n :n Go to line n z<CR> Reposition window: cursor at top z. Reposition window: cursor in middle z- Reposition window: cursor at bottom"
+    }, {
+      "type" : "image",
+      "id" : 10,
+      "page number" : 1,
+      "bounding box" : [ 313.0, 227.0, 552.0, 251.0 ]
+    }, {
+      "type" : "heading",
+      "id" : 11,
+      "level" : "Subtitle",
+      "page number" : 1,
+      "bounding box" : [ 313.0, 230.456, 402.712, 243.956 ],
+      "heading level" : 2,
+      "font" : "ArialMT",
+      "font size" : 12.0,
+      "text color" : "[0.0]",
+      "content" : "Cursor motions"
+    }, {
+      "type" : "paragraph",
+      "id" : 12,
+      "page number" : 1,
+      "bounding box" : [ 319.0, 168.82, 500.27, 220.48 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "H Upper left corner (home) M Middle line L Lower left corner h Back a character"
+    }, {
+      "type" : "list",
+      "id" : 13,
+      "level" : "2",
+      "page number" : 1,
+      "bounding box" : [ 319.0, 47.32, 498.33, 166.48 ],
+      "numbering style" : "english letters",
+      "number of list items" : 3,
+      "list items" : [ {
+        "type" : "list item",
+        "page number" : 1,
+        "bounding box" : [ 319.0, 155.32, 448.9, 166.48 ],
+        "font" : "Times-Roman",
+        "font size" : 10.0,
+        "text color" : "[0.0]",
+        "content" : "j Down a line",
+        "kids" : [ ]
+      }, {
+        "type" : "list item",
+        "page number" : 1,
+        "bounding box" : [ 319.0, 114.82, 470.0, 152.98 ],
+        "font" : "Times-Roman",
+        "font size" : 10.0,
+        "text color" : "[0.0]",
+        "content" : "k Up a line ^ Beginning of line $ End of line",
+        "kids" : [ ]
+      }, {
+        "type" : "list item",
+        "page number" : 1,
+        "bounding box" : [ 319.0, 47.32, 498.33, 112.48 ],
+        "font" : "Times-Roman",
+        "font size" : 10.0,
+        "text color" : "[0.0]",
+        "content" : "l Forward a character w One word forward b Back one word fc Find c ; Repeat find (find next c)",
+        "kids" : [ ]
+      } ]
+    }, {
+      "type" : "image",
+      "id" : 14,
+      "page number" : 1,
+      "bounding box" : [ 61.0, 600.0, 301.0, 624.0 ]
+    }, {
+      "type" : "heading",
+      "id" : 15,
+      "level" : "Subtitle",
+      "page number" : 1,
+      "bounding box" : [ 61.0, 603.456, 265.132, 616.956 ],
+      "heading level" : 2,
+      "font" : "ArialMT",
+      "font size" : 12.0,
+      "text color" : "[0.0]",
+      "content" : "Command mode versus input mode"
+    }, {
+      "type" : "paragraph",
+      "id" : 16,
+      "page number" : 1,
+      "bounding box" : [ 61.0, 509.0, 299.28, 589.48 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "Vi starts in command mode. The positioning commands operate only while vi is in command mode. You switch vi to input mode by entering any one of several vi input commands. (See next section.) Once in input mode, any character you type is taken to be text and is added to the file. You cannot execute any commands until you exit input mode. To exit input mode, press the escape (Esc) key."
+    }, {
+      "type" : "image",
+      "id" : 17,
+      "page number" : 1,
+      "bounding box" : [ 61.0, 474.5, 301.0, 498.5 ]
+    }, {
+      "type" : "heading",
+      "id" : 18,
+      "level" : "Subtitle",
+      "page number" : 1,
+      "bounding box" : [ 61.0, 477.956, 241.816, 491.456 ],
+      "heading level" : 2,
+      "font" : "ArialMT",
+      "font size" : 12.0,
+      "text color" : "[0.0]",
+      "content" : "Input commands (end with Esc)"
+    }, {
+      "type" : "paragraph",
+      "id" : 19,
+      "page number" : 1,
+      "bounding box" : [ 67.0, 402.82, 257.64, 467.98 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "a Append after cursor i Insert before cursor o Open line below O Open line above :r file Insert file after current line"
+    }, {
+      "type" : "paragraph",
+      "id" : 20,
+      "page number" : 1,
+      "bounding box" : [ 61.0, 362.32, 299.72, 396.48 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "Any of these commands leaves vi in input mode until you press Esc. Pressing the RETURN key will not take you out of input mode."
+    }, {
+      "type" : "image",
+      "id" : 21,
+      "page number" : 1,
+      "bounding box" : [ 61.0, 327.5, 301.0, 351.5 ]
+    }, {
+      "type" : "heading",
+      "id" : 22,
+      "level" : "Subtitle",
+      "page number" : 1,
+      "bounding box" : [ 61.0, 330.956, 247.756, 344.456 ],
+      "heading level" : 2,
+      "font" : "ArialMT",
+      "font size" : 12.0,
+      "text color" : "[0.0]",
+      "content" : "Change commands (Input mode)"
+    }, {
+      "type" : "paragraph",
+      "id" : 23,
+      "page number" : 1,
+      "bounding box" : [ 67.0, 269.32, 271.57, 320.98 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "cw Change word (Esc) cc Change line (Esc) - blanks line c$ Change to end of line rc Replace character with c"
+    }, {
+      "type" : "list",
+      "id" : 24,
+      "level" : "2",
+      "page number" : 1,
+      "bounding box" : [ 67.0, 217.32, 290.21, 266.98 ],
+      "numbering style" : "english letters",
+      "number of list items" : 2,
+      "list items" : [ {
+        "type" : "list item",
+        "page number" : 1,
+        "bounding box" : [ 67.0, 242.32, 290.21, 266.98 ],
+        "font" : "Times-Roman",
+        "font size" : 10.0,
+        "text color" : "[0.0]",
+        "content" : "R Replace (Esc) - typeover s Substitute (Esc) - 1 char with string",
+        "kids" : [ ]
+      }, {
+        "type" : "list item",
+        "page number" : 1,
+        "bounding box" : [ 67.0, 217.32, 286.33, 239.98 ],
+        "font" : "Times-Roman",
+        "font size" : 10.0,
+        "text color" : "[0.0]",
+        "content" : "S Substitute (Esc) - Rest of line with text",
+        "kids" : [ ]
+      } ]
+    }, {
+      "type" : "paragraph",
+      "id" : 25,
+      "level" : "3",
+      "page number" : 1,
+      "bounding box" : [ 67.0, 202.5, 222.96, 217.27 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : ". Repeat last change"
+    }, {
+      "type" : "image",
+      "id" : 26,
+      "page number" : 1,
+      "bounding box" : [ 61.0, 169.0, 301.0, 193.0 ]
+    }, {
+      "type" : "heading",
+      "id" : 27,
+      "level" : "Subtitle",
+      "page number" : 1,
+      "bounding box" : [ 61.0, 172.456, 223.612, 185.956 ],
+      "heading level" : 2,
+      "font" : "ArialMT",
+      "font size" : 12.0,
+      "text color" : "[0.0]",
+      "content" : "Changes during insert mode"
+    }, {
+      "type" : "paragraph",
+      "id" : 28,
+      "page number" : 1,
+      "bounding box" : [ 67.0, 124.32, 256.88, 162.48 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "<ctrl>h Back one character <ctrl>w Back one word <ctrl>u Back to beginning of insert"
+    }, {
+      "type" : "image",
+      "id" : 29,
+      "page number" : 1,
+      "bounding box" : [ 306.0, 36.0, 307.0, 624.0 ]
+    }, {
+      "type" : "heading",
+      "id" : 30,
+      "level" : "Doctitle",
+      "page number" : 1,
+      "bounding box" : [ 195.0, 687.412, 380.875, 714.412 ],
+      "heading level" : 1,
+      "font" : "ArialMT",
+      "font size" : 24.0,
+      "text color" : "[0.0]",
+      "content" : "vi Editor “Cheat Sheet”"
+    }, {
+      "type" : "paragraph",
+      "id" : 31,
+      "page number" : 1,
+      "bounding box" : [ 60.0, 635.38, 512.604, 665.776 ],
+      "font" : "Times-Roman",
+      "font size" : 12.0,
+      "text color" : "[0.0]",
+      "content" : "Invoking vi: vi filename Format of vi commands: [count][command] (count repeats the effect of the command)"
+    } ]
+  }, {
+    "type" : "text block",
+    "id" : 74,
+    "page number" : 2,
+    "bounding box" : [ 48.0, 27.0, 564.0, 763.0 ],
+    "kids" : [ {
+      "type" : "heading",
+      "id" : 32,
+      "level" : "Subtitle",
+      "page number" : 2,
+      "bounding box" : [ 60.0, 723.456, 174.264, 736.956 ],
+      "heading level" : 2,
+      "font" : "ArialMT",
+      "font size" : 12.0,
+      "text color" : "[0.0]",
+      "content" : "Deletion commands"
+    }, {
+      "type" : "paragraph",
+      "id" : 33,
+      "page number" : 2,
+      "bounding box" : [ 66.0, 621.32, 271.03, 713.48 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "dd or ndd Delete n lines to general buffer dw Delete word to general buffer dnw Delete n words d) Delete to end of sentence db Delete previous word D Delete to end of line x Delete character"
+    }, {
+      "type" : "image",
+      "id" : 34,
+      "page number" : 2,
+      "bounding box" : [ 60.0, 586.5, 297.0, 610.5 ]
+    }, {
+      "type" : "heading",
+      "id" : 35,
+      "level" : "Subtitle",
+      "page number" : 2,
+      "bounding box" : [ 60.0, 589.956, 181.62, 603.456 ],
+      "heading level" : 2,
+      "font" : "ArialMT",
+      "font size" : 12.0,
+      "text color" : "[0.0]",
+      "content" : "Recovering deletions"
+    }, {
+      "type" : "paragraph",
+      "id" : 36,
+      "page number" : 2,
+      "bounding box" : [ 66.0, 555.32, 274.73, 579.98 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "p Put general buffer after cursor P Put general buffer before cursor"
+    }, {
+      "type" : "image",
+      "id" : 37,
+      "page number" : 2,
+      "bounding box" : [ 60.0, 520.5, 297.0, 544.5 ]
+    }, {
+      "type" : "heading",
+      "id" : 38,
+      "level" : "Subtitle",
+      "page number" : 2,
+      "bounding box" : [ 60.0, 523.956, 157.608, 537.456 ],
+      "heading level" : 2,
+      "font" : "ArialMT",
+      "font size" : 12.0,
+      "text color" : "[0.0]",
+      "content" : "Undo commands"
+    }, {
+      "type" : "paragraph",
+      "id" : 39,
+      "page number" : 2,
+      "bounding box" : [ 66.0, 489.32, 246.43, 513.98 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "u Undo last change U Undo all changes on line"
+    }, {
+      "type" : "image",
+      "id" : 40,
+      "page number" : 2,
+      "bounding box" : [ 60.0, 454.5, 297.0, 478.5 ]
+    }, {
+      "type" : "heading",
+      "id" : 41,
+      "level" : "Subtitle",
+      "page number" : 2,
+      "bounding box" : [ 60.0, 457.956, 214.788, 471.456 ],
+      "heading level" : 2,
+      "font" : "ArialMT",
+      "font size" : 12.0,
+      "text color" : "[0.0]",
+      "content" : "Rearrangement commands"
+    }, {
+      "type" : "paragraph",
+      "id" : 42,
+      "page number" : 2,
+      "bounding box" : [ 66.0, 328.82, 284.81, 447.98 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "yy or Y Yank (copy) line to general buffer “z6yy Yank 6 lines to buffer z yw Yank word to general buffer “a9dd Delete 9 lines to buffer a “A9dd Delete 9 lines; Append to buffer a “ap Put text from buffer a after cursor p Put general buffer after cursor P Put general buffer before cursor J Join lines"
+    }, {
+      "type" : "image",
+      "id" : 43,
+      "page number" : 2,
+      "bounding box" : [ 60.0, 294.0, 297.0, 318.0 ]
+    }, {
+      "type" : "heading",
+      "id" : 44,
+      "level" : "Subtitle",
+      "page number" : 2,
+      "bounding box" : [ 60.0, 297.456, 125.736, 310.956 ],
+      "heading level" : 2,
+      "font" : "ArialMT",
+      "font size" : 12.0,
+      "text color" : "[0.0]",
+      "content" : "Parameters"
+    }, {
+      "type" : "paragraph",
+      "id" : 45,
+      "page number" : 2,
+      "bounding box" : [ 66.0, 264.82, 273.93, 287.48 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : ":set list Show invisible characters :set nolist Don’t show invisible characters"
+    }, {
+      "type" : "paragraph",
+      "id" : 46,
+      "page number" : 2,
+      "bounding box" : [ 66.0, 235.82, 248.4, 258.48 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : ":set number Show line numbers :set nonumber Don’t show line numbers"
+    }, {
+      "type" : "paragraph",
+      "id" : 47,
+      "page number" : 2,
+      "bounding box" : [ 66.0, 193.32, 254.49, 229.48 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : ":set autoindent Indent after carriage return :set noautoindent Turn off autoindent :set showmatch Show matching sets of"
+    }, {
+      "type" : "paragraph",
+      "id" : 48,
+      "page number" : 2,
+      "bounding box" : [ 66.0, 123.82, 288.11, 192.98 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "parentheses as they are typed :set noshowmatch Turn off showmatch :set showmode Display mode on last line of screen :set noshowmode Turn off showmode :set all Show values of all possible"
+    }, {
+      "type" : "paragraph",
+      "id" : 49,
+      "page number" : 2,
+      "bounding box" : [ 147.0, 112.32, 190.87, 123.48 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "parameters"
+    }, {
+      "type" : "image",
+      "id" : 50,
+      "page number" : 2,
+      "bounding box" : [ 315.0, 720.0, 552.0, 744.0 ]
+    }, {
+      "type" : "heading",
+      "id" : 51,
+      "level" : "Subtitle",
+      "page number" : 2,
+      "bounding box" : [ 315.0, 723.456, 504.516, 736.956 ],
+      "heading level" : 2,
+      "font" : "ArialMT",
+      "font size" : 12.0,
+      "text color" : "[0.0]",
+      "content" : "Move text from file old to file new"
+    }, {
+      "type" : "paragraph",
+      "id" : 52,
+      "page number" : 2,
+      "bounding box" : [ 321.0, 634.82, 526.11, 713.48 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "vi old “a10yy yank 10 lines to buffer a :w write work buffer :e new edit new file “ap put text from a after cursor :30,60w new Write lines 30 to 60 in file new"
+    }, {
+      "type" : "image",
+      "id" : 53,
+      "page number" : 2,
+      "bounding box" : [ 315.0, 600.0, 552.0, 624.0 ]
+    }, {
+      "type" : "heading",
+      "id" : 54,
+      "level" : "Subtitle",
+      "page number" : 2,
+      "bounding box" : [ 315.0, 603.456, 526.44, 616.956 ],
+      "heading level" : 2,
+      "font" : "ArialMT",
+      "font size" : 12.0,
+      "text color" : "[0.0]",
+      "content" : "Regular expressions (search strings)"
+    }, {
+      "type" : "paragraph",
+      "id" : 55,
+      "page number" : 2,
+      "bounding box" : [ 321.0, 568.384, 506.71, 595.272 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "^ Matches beginning of line $ Matches end of line"
+    }, {
+      "type" : "paragraph",
+      "id" : 56,
+      "level" : "1",
+      "page number" : 2,
+      "bounding box" : [ 321.0, 554.884, 518.38, 568.276 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : ". Matches any single character"
+    }, {
+      "type" : "paragraph",
+      "id" : 57,
+      "level" : "2",
+      "page number" : 2,
+      "bounding box" : [ 321.0, 541.384, 528.93, 554.776 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "* Matches any previous character"
+    }, {
+      "type" : "paragraph",
+      "id" : 58,
+      "level" : "1",
+      "page number" : 2,
+      "bounding box" : [ 321.0, 527.884, 491.96, 541.276 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : ".* Matches any character"
+    }, {
+      "type" : "image",
+      "id" : 59,
+      "page number" : 2,
+      "bounding box" : [ 315.0, 493.5, 552.0, 517.5 ]
+    }, {
+      "type" : "heading",
+      "id" : 60,
+      "level" : "Subtitle",
+      "page number" : 2,
+      "bounding box" : [ 315.0, 496.956, 491.724, 510.456 ],
+      "heading level" : 2,
+      "font" : "ArialMT",
+      "font size" : 12.0,
+      "text color" : "[0.0]",
+      "content" : "Search and replace commands"
+    }, {
+      "type" : "paragraph",
+      "id" : 61,
+      "page number" : 2,
+      "bounding box" : [ 315.0, 468.25, 348.35, 479.81 ],
+      "font" : "Helvetica",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "Syntax:"
+    }, {
+      "type" : "paragraph",
+      "id" : 62,
+      "page number" : 2,
+      "bounding box" : [ 315.0, 426.75, 519.0, 461.05 ],
+      "font" : "Courier",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : ":[address]s/old_text/new_text/ Address components:"
+    }, {
+      "type" : "paragraph",
+      "id" : 63,
+      "level" : "1",
+      "page number" : 2,
+      "bounding box" : [ 321.0, 399.82, 460.86, 426.276 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : ". Current line n Line number n"
+    }, {
+      "type" : "paragraph",
+      "id" : 64,
+      "level" : "1",
+      "page number" : 2,
+      "bounding box" : [ 321.0, 332.32, 513.51, 399.276 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : ".+m Current line plus m lines $ Last line /string/ A line that contains \"string\" % Entire file [addr1],[addr2] Specifies a range"
+    }, {
+      "type" : "paragraph",
+      "id" : 65,
+      "page number" : 2,
+      "bounding box" : [ 315.0, 308.25, 361.68, 319.81 ],
+      "font" : "Helvetica",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "Examples:"
+    }, {
+      "type" : "paragraph",
+      "id" : 66,
+      "page number" : 2,
+      "bounding box" : [ 327.0, 256.32, 543.08, 302.35 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "The following example replaces only the first occurrence of Banana with Kumquat in each of 11 lines starting with the current line (.) and continuing for the 10 that follow (.+10)."
+    }, {
+      "type" : "paragraph",
+      "id" : 67,
+      "page number" : 2,
+      "bounding box" : [ 339.0, 238.5, 477.0, 249.05 ],
+      "font" : "Courier",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : ":.,.+10s/Banana/Kumquat"
+    }, {
+      "type" : "paragraph",
+      "id" : 68,
+      "page number" : 2,
+      "bounding box" : [ 327.0, 192.0, 527.86, 226.85 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "The following example replaces every occurrence (caused by the g at the end of the command) of apple with pear."
+    }, {
+      "type" : "paragraph",
+      "id" : 69,
+      "page number" : 2,
+      "bounding box" : [ 339.0, 174.5, 435.0, 185.05 ],
+      "font" : "Courier",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : ":%s/apple/pear/g"
+    }, {
+      "type" : "paragraph",
+      "id" : 70,
+      "page number" : 2,
+      "bounding box" : [ 327.0, 116.82, 548.89, 162.48 ],
+      "font" : "Times-Roman",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : "The following example removes the last character from every line in the file. Use it if every line in the file ends with ^M as the result of a file transfer. Execute it when the cursor is on the first line of the file."
+    }, {
+      "type" : "paragraph",
+      "id" : 71,
+      "page number" : 2,
+      "bounding box" : [ 339.0, 99.0, 387.0, 109.55 ],
+      "font" : "Courier",
+      "font size" : 10.0,
+      "text color" : "[0.0]",
+      "content" : ":%s/.$//"
+    }, {
+      "type" : "image",
+      "id" : 72,
+      "page number" : 2,
+      "bounding box" : [ 305.0, 48.0, 306.0, 744.0 ]
+    } ]
+  } ]
+}

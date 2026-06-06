@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="und">
+<head>
+<meta charset="utf-8">
+<title>GDB Cheat Sheet.pdf</title>
+</head>
+<body>
+<h1>Running</h1>
+
+<p># gdb <program> [core dump]</p>
+
+<p>Start GDB (with optional core dump). # gdb --args <program> <args…></p>
+
+<p>Start GDB and pass arguments # gdb --pid <pid></p>
+
+<p>Start GDB and attach to process.</p>
+
+<p>set args <args...> Set arguments to pass to program to be debugged.</p>
+
+<p>run</p>
+
+<p>Run the program to be debugged. kill</p>
+
+<p>Kill the running program.</p>
+
+<h1>Breakpoints break <where></h1>
+
+<p>Set a new breakpoint. delete <breakpoint#></p>
+
+<p>Remove a breakpoint. clear</p>
+
+<p>Delete all breakpoints. enable <breakpoint#></p>
+
+<p>Enable a disabled breakpoint. disable <breakpoint#></p>
+
+<p>Disable a breakpoint.</p>
+
+<h1>Watchpoints watch <where></h1>
+
+<p>Set a new watchpoint. delete/enable/disable <watchpoint#> Like breakpoints.</p>
+
+<p><where> function_name</p>
+
+<p>Break/watch the named function.</p>
+
+<p>line_number Break/watch the line number in the current source ﬁle.</p>
+
+<p>file:line_number Break/watch the line number in the named source ﬁle.</p>
+
+<h1>Conditions</h1>
+
+<p>break/watch <where> if <condition> Break/watch at the given location if the condition is met. Conditions may be almost any C expression that evaluate to true or false.</p>
+
+<p>condition <breakpoint#> <condition> Set/change the condition of an existing break- or watchpoint.</p>
+
+<h1>Examining the stack</h1>
+
+<p>backtrace where</p>
+
+<p>Show call stack.</p>
+
+<p>backtrace full where full</p>
+
+<p>Show call stack, also print the local variables in each frame.</p>
+
+<p>frame <frame#> Select the stack frame to operate on.</p>
+
+<h1>Stepping step</h1>
+
+<p>Go to next instruction (source line), diving into function.</p>
+
+<p>next</p>
+
+<p>Go to next instruction (source line) but donʻt dive into functions.</p>
+
+<p>finish</p>
+
+<p>Continue until the current function returns.</p>
+
+<p>continue</p>
+
+<h1>Continue normal execution. Variables and memory</h1>
+
+<p>print/format <what> Print content of variable/memory location/register.</p>
+
+<p>display/format <what> Like „print“, but print the information after each stepping instruction.</p>
+
+<p>undisplay <display#> Remove the „display“ with the given number.</p>
+
+<p>enable display <display#> disable display <display#></p>
+
+<p>En- or disable the „display“ with the given number.</p>
+
+<p>x/nfu <address> Print memory. n: How many units to print (default 1). f: Format character (like „print“). u: Unit.</p>
+
+<p>Unit is one of:</p>
+
+<p>b: Byte, h: Half-word (two bytes) w: Word (four bytes) g: Giant word (eight bytes)).</p>
+
+<h1>Format</h1>
+
+<p>a Pointer. c Read as integer, print as character. d Integer, signed decimal. f Floating point number. o Integer, print as octal.</p>
+
+<ul>
+<li><p>s Try to treat as C string.</p></li>
+<li><p>t Integer, print as binary (t = „two“).</p></li>
+<li><p>u Integer, unsigned decimal. x Integer, print as hexadecimal.</p></li>
+</ul>
+
+<h1><what></h1>
+
+<p>expression Almost any C expression, including function calls (must be preﬁxed with a cast to tell GDB the return value type).</p>
+
+<p>file_name::variable_name Content of the variable deﬁned in the named ﬁle (static variables).</p>
+
+<p>function::variable_name Content of the variable deﬁned in the named function (if on the stack).</p>
+
+<p>{type}address Content at address, interpreted as being of the C type type.</p>
+
+<p>$register</p>
+
+<p>Content of named register. Interesting registers are $esp (stack pointer), $ebp (frame pointer) and $eip (instruction pointer).</p>
+
+<p>Threads thread <thread#></p>
+
+<p>Chose thread to operate on.</p>
+
+<h1>Manipulating the program</h1>
+
+<p>set var <variable_name>=<value> Change the content of a variable to the given value.</p>
+
+<p>return <expression> Force the current function to return immediately, passing the given value.</p>
+
+<h1>Sources</h1>
+
+<p>directory <directory> Add directory to the list of directories that is searched for sources.</p>
+
+<p>list list <filename>:<function> list <filename>:<line_number> list <first>,<last></p>
+
+<p>Shows the current or given source context. The ﬁlename may be omitted. If last is omitted the context starting at start is printed instead of centered around it.</p>
+
+<p>set listsize <count> Set how many lines to show in „list“.</p>
+
+<h1>Signals</h1>
+
+<p>handle <signal> <options></p>
+
+<p>Set how to handle signles. Options are: (no)print: (Donʻt) print a message when signals occurs.</p>
+
+<p>(no)stop: (Donʻt) stop the program when signals occurs.</p>
+
+<p>(no)pass: (Donʻt) pass the signal to the program.</p>
+
+<h1>Informations</h1>
+
+<p>disassemble disassemble <where></p>
+
+<p>Disassemble the current function or given location.</p>
+
+<p>info args</p>
+
+<p>Print the arguments to the function of the current stack frame.</p>
+
+<p>info breakpoints Print informations about the break- and watchpoints.</p>
+
+<p>info display Print informations about the „displays“.</p>
+
+<p>info locals Print the local variables in the currently selected stack frame.</p>
+
+<p>info sharedlibrary List loaded shared libraries.</p>
+
+<p>info signals List all signals and how they are currently handled.</p>
+
+<p>info threads List all threads.</p>
+
+<p>show directories Print all directories in which GDB searches for source ﬁles.</p>
+
+<p>show listsize Print how many are shown in the „list“ command.</p>
+
+<p>whatis variable_name Print type of named variable.</p>
+
+
+</body>
+</html>

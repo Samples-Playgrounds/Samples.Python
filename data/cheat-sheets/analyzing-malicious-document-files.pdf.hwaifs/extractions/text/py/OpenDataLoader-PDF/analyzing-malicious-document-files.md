@@ -1,0 +1,168 @@
+# ANALYZING MALICIOUS DOCUMENTS
+
+/XObject can embed an image for phishing. Be mindful of obfuscation with hex codes, such as /JavaScript vs. /J#61vaScript. (See examples.) Useful PDF File Analysis Commands
+
+List all OLE2 streams present in file.xls.
+
+oledump.py file.xls -i
+
+This cheat sheet outlines tips and tools for analyzing malicious documents, such as Microsoft Office, RTF, and PDF files.
+
+Extract VBA source code from stream 3 in file.xls.
+
+oledump.py file.xls -s 3 -v
+
+xmldump.py pretty Format XML file supplied via
+
+pdfid.py
+
+## General Approach to Document Analysis
+
+STDIN for easier analysis.
+
+- file.pdf -n
+
+Display risky keywords present in file file.pdf.
+
+pdf-parser.py file.pdf -a
+
+Show stats about keywords. Add “-O” to include object streams.
+
+pdf-parser.py
+
+- file.pdf -o id
+
+
+- 1. Examine the document for anomalies, such as risky tags, scripts, and embedded artifacts.
+- 2. Locate embedded code, such as shellcode, macros, JavaScript, or other suspicious objects.
+
+- 3. Extract suspicious code or objects from the file.
+
+- 4. If relevant, deobfuscate and examine macros, JavaScript, or other embedded code.
+
+- 5. If relevant, emulate, disassemble and/or debug shellcode that you extracted from the document.
+
+- 6. Understand the next steps in the infection chain.
+
+
+Find obfuscated URLs in file.xls macros.
+
+oledump.py file.xls -p plugin_http_heuristics
+
+Emulate the execution of macros in file.doc to analyze them.
+
+vmonkey file.doc
+
+Display contents of object id. Add “-d” to dump object’s stream.
+
+Remove the password prompt from macros in file.ppt.
+
+evilclippy -uu file.ppt
+
+Display objects that reference object id.
+
+pdf-parser.py file.pdf -r id
+
+Decrypt outfile.docm using specified password to create outfile.docm.
+
+msoffcrypto-tool infile.docm outfile.docm -p
+
+Decrypt infile.pdf using password pass to create outfile.pdf.
+
+qpdf --password=pass --decrypt infile.pdf outfile.pdf
+
+Disassemble VBA-stomped p-code macro from file.doc.
+
+pcodedmp file.doc
+
+## Shellcode and Other Analysis Commands
+
+Microsoft Office Format Notes Binary Microsoft Office document files (.doc, .xls, etc.) use the OLE2 (a.k.a. Structured Storage) format.
+
+Locate shellcode patterns inside the binary file file.bin.
+
+xorsearch -W
+
+Decompile VBA-stomped p-code macro from file.doc.
+
+pcode2code file.doc
+
+-d 3 file.bin
+
+Emulate execution of shellcode in file.bin. Use “/off” to specify offset.
+
+scdbgc /f file.bin
+
+Extract objects embedded into RTF file.rtf.
+
+rtfobj.py file.rtf
+
+SRP streams in OLE2 documents sometimes store a cached version of earlier VBA macro code.
+
+Execute shellcode in file.bin to observe behavior in an isolated lab.
+
+runsc32 -f file.bin -n
+
+List groups and structure of RTF file file.rtf.
+
+rtfdump.py file.rtf
+
+OOXML document files (.docx, .xlsm, etc.) supported by Microsoft Office are compressed zip archives.
+
+List Base64-encoded strings present in file file.txt.
+
+base64dump.py file.txt
+
+Examine objects in RTF file file.rtf.
+
+rtfdump.py file.rtf -O
+
+VBA macros in OOXML documents are stored inside an OLE2 binary file, which is within the zip archive.
+
+Convert numbers that represent characters in file to a string.
+
+numbers-tostring.py file
+
+Extract hex contents from group in RTF file file.rtf.
+
+rtfdump.py file.rtf
+
+Excel supports XLM macros that are embedded as formulas in sheets without the OLE2 binary file. RTF documents don’t support macros but can contain malicious embedded files and objects. Useful MS Office File Analysis Commands
+
+-s 5 -H -d
+
+Additional Document Analysis Tools SpiderMonkey, cscript, and box-js help deobfuscate JavaScript that you extract from document files.
+
+Deobfuscate XLM (Excel 4) macros in file.xlsm.
+
+xlmdeobfuscator
+
+--file file.xlsm
+
+Risky PDF Keywords /OpenAction and /AA specify the script or action to run automatically. /JavaScript, /JS, /AcroForm, and /XFA can specify JavaScript to run. /URI accesses a URL, perhaps for phishing. /SubmitForm and /GoToR can send data to URL. /ObjStm can hide objects inside an object stream.
+
+Use the debugger built into Microsoft Office to deobfuscate macros in an isolated lab.
+
+Examine contents of OOXML file file.pptx.
+
+zipdump.py file.pptx
+
+Use AMSIScriptContentRetrieval.ps1 to observe Microsoft Office execute macros in an isolated lab.
+
+Extract file with index 3 from file.pptx to STDOUT.
+
+zipdump.py file.pptx -s 3 -d
+
+Some automated analysis sandboxes can analyze aspects of malicious document files. REMnux distro includes many of the free document analysis tools mentioned above.
+
+olevba file.xlsm Locate and extract macros
+
+from file.xlsm.
+
+<table>
+  <tr>
+    <th>Authored by Lenny Zeltser with feedback from Pedro Bueno and Didier Stevens. Malicious document analysis and related topics are covered in the SANS Institute course FOR610: Reverse-Engineering Malware, which Lenny co-authored. Creative Commons v3 “Attribution” License for this cheat sheet version 4.1. More at zeltser.com/cheat-sheets.<br><br></th>
+  </tr>
+</table>
+
+
