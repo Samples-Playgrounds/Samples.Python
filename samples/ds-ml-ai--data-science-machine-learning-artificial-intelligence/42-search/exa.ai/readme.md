@@ -1,10 +1,12 @@
-Exa
+# Exa
 
-Exa.ai 
+readme.md
 
-    https://exa.ai/pricing
+*   Exa.ai
 
-https://exa.ai/search
+*   https://exa.ai/pricing
+
+*   https://exa.ai/search
 
 ```python
 from exa_py import Exa
