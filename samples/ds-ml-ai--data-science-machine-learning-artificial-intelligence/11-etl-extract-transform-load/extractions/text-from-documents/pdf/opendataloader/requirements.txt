@@ -1,0 +1,4 @@
+codetiming==1.4.0
+opendataloader-pdf==1.8.1
+orjson==3.11.5
+timer==0.3.0
