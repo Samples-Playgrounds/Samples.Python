@@ -55,7 +55,7 @@ files_documents_pdfs_strives_ai_private = [
    "/Users/Shared/Projects/d/strives.ai/gitlab-private/strives.ai.business.data/docs/odabir-partnera/odabirrazvojnogpartnerazastrives_aiplatformu/Profico proposal for Strives_Architecture Option A.pdf",
    "/Users/Shared/Projects/d/strives.ai/gitlab-private/strives.ai.business.data/docs/odabir-partnera/odabirrazvojnogpartnerazastrives_aiplatformu/Profico proposal for Strives_Architecture Option B.pdf",
    "/Users/Shared/Projects/d/strives.ai/gitlab-private/strives.ai.business.data/docs/odabir-partnera/odabirrazvojnogpartnerazastrives_aiplatformu/Profico proposal for Strives_Offer.pdf",
-   "'/Users/Shared/Projects/d/strives.ai/gitlab-private/strives.ai.business.data/docs/Strives.ai_Fundraising Pitch 17032026.pdf'",
+   "/Users/Shared/Projects/d/strives.ai/gitlab-private/strives.ai.business.data/docs/Strives.ai_Fundraising Pitch 17032026.pdf",
 ]
 files_documents_docx_strives_ai_private = [
    # docx
