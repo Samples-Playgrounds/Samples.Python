@@ -1,0 +1,29 @@
+server:
+  secret_key: "319025767ef80880dadaffc1d0b330c8ebdd4b3494061c66a326e5170787f0b7"   # you should change this by this command: openssl rand -hex 32
+  base_url: http://localhost:8080/                 # optional but useful
+
+search:
+  formats:
+html
+json
+    
+doi_resolvers:
+  doi.org: "https://doi.org/"
+  dx.doi.org: "https://dx.doi.org/"
+default_doi_resolver: "doi.org"
+
+engines:
+name: duckduckgo
+    engine: duckduckgo
+    shortcut: ddg
+    categories: [general]
+
+name: wikipedia
+    engine: wikipedia
+    shortcut: wp
+    categories: [general]
+
+name: wikidata
+    engine: wikidata
+    shortcut: wd
+    categories: [general]
