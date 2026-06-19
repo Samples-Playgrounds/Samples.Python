@@ -54,7 +54,7 @@ research_sub_agent = \
 
 
 def research_topics(
-                        topics: str[],
+                        topics: list[str],
                         model: str = "anthropic:claude-sonnet-4-5-20250929"
                     ) -> str:
     """
@@ -63,7 +63,7 @@ def research_topics(
 
     # Create the agent
     # https://docs.langchain.com/oss/python/deepagents/cli/providers
-    https://github.com/langchain-ai/deepagents
+    # https://github.com/langchain-ai/deepagents
     agent = create_deep_agent(
                                 model=model,
                                 tools=
@@ -109,7 +109,9 @@ def research_topics(
                 f.write(txt_content)
 
 
-def get_model(model_name: str) :
+def get_model(
+                model_name: str
+            ) :
     
     match model_name:
         case "gemini-3-pro-preview":
@@ -123,7 +125,7 @@ def get_model(model_name: str) :
         case "anthropic:claude-sonnet-4-5-20250929":
             # Model Claude 4.5
             model = init_chat_model(
-                                        model=,
+                                        model=model_name,
                                         temperature=0.0
                                     )
 
