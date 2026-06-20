@@ -15,18 +15,18 @@ from agents.agent_deep_research.tools import fetch_webpage_content
 tavily_client = TavilyClient()
 
 @tool(parse_docstring=True)
-def tavily_search(
-                    query: str,
-                    max_results: 
-                                Annotated[int, InjectedToolArg] = 1,
-                    topic:
-                                Annotated[
-                                            Literal["general", "news", "finance"], 
-                                            InjectedToolArg
-                                        ] = "general",
-                ) -> str:
+def search(
+                query: str,
+                max_results: 
+                            Annotated[int, InjectedToolArg] = 10,
+                topic:
+                            Annotated[
+                                        Literal["general", "news", "finance"], 
+                                        InjectedToolArg
+                                    ] = "general",
+            ) -> str:
     """
-    Search the web for information on a given query.
+    Search the web for information on a given query with Tavily
 
     Uses Tavily to discover relevant URLs, then fetches and returns full webpage content as markdown.
 
