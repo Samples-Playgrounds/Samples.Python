@@ -76,3 +76,11 @@ Scrapeless
     https://www.scrapeless.com/en
 
     https://github.com/scrapeless-ai
+
+
+Tool	Best for	Standout feature	Free tier
+Firecrawl	Curated search + deep extraction	Curated index of authoritative sources, full content, no AI slop	1,000 credits/month
+Tavily	RAG & real-time search	Transparent flat pricing, LangChain-native	1,000 credits/month
+Perplexity	Cited answers	Synthesized answers with source citations in one call	100 queries/day
+Linkup	Verified facts + business intelligence	Trusted source integration, ranked #1 on SimpleQA	€5 free/month
+Brave	Privacy-first search	Independent 30B+ page index, SOC 2 certified	2,000 queries/month    
