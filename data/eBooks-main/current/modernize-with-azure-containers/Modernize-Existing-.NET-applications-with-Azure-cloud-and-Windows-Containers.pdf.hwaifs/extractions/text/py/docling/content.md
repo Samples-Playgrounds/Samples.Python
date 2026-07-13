@@ -82,6 +82,12 @@ Cloud
 
 Infrastructure-
 
+Containerize
+
+## + cloud managed services Cloud
+
+Optimized
+
 Cloud-Native apps
 
 Figure 1-1. Modernization paths for existing .NET applications and services
@@ -97,12 +103,6 @@ Level 1: Cloud Infrastructure-Ready applications: In this migration approach, yo
 Level 2: Cloud Optimized applications: At this level and still without rearchitecting or altering significant code, you can gain additional benefits from running your app in the cloud with modern technologies like containers and additional cloud-managed services. You improve the agility of your applications to ship faster by refining your enterprise development operations (DevOps) processes. You achieve this functionality by using technologies like Windows Containers, which is based on Docker Engine. Contai ners remove the friction that's caused by application dependencies when you deploy in multiple stages. In this maturity model, you can deploy containers on IaaS or PaaS while using additional cloud-managed services related to databases, cache as a service, monitoring, and continuous integration/continuous deployment (CI/CD) pipelines.
 
 The third level of maturity is the ultimate goal in the cloud, but it's optional for many apps and not the main focus of this guide:
-
-Containerize
-
-## + cloud managed services Cloud
-
-Optimized
 
 Modernize
 
@@ -582,7 +582,7 @@ I Dashboard
 
 I All resources
 
-· Resource groups
+• Resource groups
 
 Migration projects
 
@@ -618,13 +618,9 @@ Use Ctri - Click to multiselect machines on the map to add or remove from the gr
 
 © Time Range: 9/21/2017 7:00 AM — 8:00 AM (1 hour)
 
-· *
-
-Legend shons@microsoft.com
+conversations within your organization. You don't know enough about the potential cost benefits, or whether workloads could just lift-and-shift or would require significant rework to migrate successfully. No wonder many organizations hesitate. Legend shons@microsoft.com
 
 «
-
-conversations within your organization. You don't know enough about the potential cost benefits, or whether workloads could just lift-and-shift or would require significant rework to migrate successfully. No wonder many organizations hesitate.
 
 Azure Migrate is a new service that provides the guidance, insights, and mechanisms needed to assist you in migrating to Azure. Azure Migrate provides:
 
@@ -647,6 +643,8 @@ Figure 2-2. Positioning Cloud Infrastructure-Ready applications
 As part of the end-to-end Azure Migrate, Azure Site Recovery is a tool that you can use to easily migrate your web apps to VMs in Azure. You can use Site Recovery to replicate on-premises VMs and physical servers to Azure, or to replicate them to a secondary on-premises location. You can even replicate a workload t hat's running on a supported Azure VM, on an on -premises Hyper-V VM, on a VMware VM, or on a Windows or Linux physical server. Replication to Azure eliminates the cost and complexity of maintaining a secondary datacenter.
 
 Restore default configuration Report a bug P Q &gt;
+
+• *
 
 MICROSOFT
 
@@ -676,7 +674,7 @@ Figure 2-3 shows the execution of multiple VM migrations by using Azure Site Rec
 
 FabrikamFinance
 
-· ContosoReplicationGr...
+• ContosoReplicationGr...
 
 Figure 2-3. Positioning Cloud Infrastructure-Ready applications
 
@@ -693,7 +691,7 @@ Figure 2-3. Positioning Cloud Infrastructure-Ready applications
 
 Change PIT
 
-- · x
+- • x
 
 https://learn.microsoft.com/azure/site-recovery/site-recovery-overview
 
@@ -1155,7 +1153,7 @@ A .NET Framework application must run on Windows, period. If you want to contain
 
 Existing
 
-·NET
+•NET
 
 apps
 
@@ -1589,7 +1587,7 @@ Azure DevOps Services supports continuous integration and deployment of multi-co
 
 But you can also deploy to Docker Swarm or DC/OS by using Azure DevOps Services script-based tasks.
 
-eShopModernizing V Dashboards Code Work Build and Release Test Wiki* Wiki ·
+eShopModernizing V Dashboards Code Work Build and Release Test Wiki* Wiki •
 
 Builds
 
@@ -2168,7 +2166,7 @@ ASPNET app
 
 ACS
 
-· Kubernetes cluster - Production
+• Kubernetes cluster - Production
 
 K8s Cluster
 
@@ -2190,7 +2188,7 @@ Azure
 
 2. Deploy the application and related resources to the Kubernetes cluster.
 
-· Docker host
+• Docker host
 
 Additional nodes
 

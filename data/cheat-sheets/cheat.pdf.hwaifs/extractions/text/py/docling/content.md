@@ -124,11 +124,9 @@ Simplify:
 
 <!-- formula-not-decoded -->
 
+<!-- formula-not-decoded -->
+
 Solve for G ( x ):
-
-<!-- formula-not-decoded -->
-
-<!-- formula-not-decoded -->
 
 Expand this using partial fractions:
 
@@ -221,9 +219,9 @@ A/C,
 
 C/A,
 
-+
-
 B
+
++
 
 cos
 
@@ -243,6 +241,8 @@ a
 
 =
 
+=
+
 sin
 
 a
@@ -251,11 +251,9 @@ A
 
 cos
 
-=
+a
 
 B ,
-
-a
 
 a
 
@@ -279,85 +277,15 @@ A
 
 ±
 
-A .
-
-cos
-
-a
-
-sin
-
-a
-
-=
-
-x
-
-C .
-
-cos
-
-=
-
-2
-
-B
-
-1
-
-sec
-
-x
-
-,
-
-2
-
-x
-
-+cos
-
-x
-
-sin
-
-= 1
-
-2
-
-= csc
-
-x
-
-1 + cot sin
-
-= sin(
-
-x
-
-tan
-
-x
-
-csc
-
-x
-
-x
-
-= cot
-
-= cot sin
-
 AB,
 
 Identities:
 
 sin
 
-x
-
 =
+
+x
 
 tan
 
@@ -373,21 +301,25 @@ cot
 
 x
 
-,
-
-,
+x
 
 =
 
-x
+,
+
+,
 
 2
 
-x
-
 1 + tan
 
-= sec sin
+= sec
+
+x
+
+sin
+
+= cos
 
 x
 
@@ -404,6 +336,144 @@ sin(
 x
 
 cos(
+
+C .
+
+cos
+
+a
+
+cos sin
+
+a
+
+=
+
+A .
+
+x
+
+=
+
+2
+
+sin
+
+B
+
+1
+
+sec
+
+x
+
+,
+
+2
+
+= 1
+
+x
+
+x
+
++cos
+
+2
+
+= csc
+
+1 + cot
+
+x
+
+sin
+
+x
+
+= sin(
+
+tan
+
+x
+
+csc
+
+x
+
+x
+
+= cot
+
+= cot sin
+
+2
+
+(
+
+-
+
+π
+
+2
+
+=
+
+-
+
+=
+
+±
+
+-
+
+x,
+
+x
+
+π
+
+,
+
+-
+
+cos(
+
+cot(
+
+π
+
+y
+
+) = sin
+
+)
+
+-
+
+x
+
+x
+
+,
+
+)
+
+x
+
+)
+
+,
+
+cos cos
+
+y
+
+±
+
+∓
+
+cos
 
 ,
 
@@ -421,105 +491,33 @@ y,
 
 x
 
-cos
-
-2
-
-(
-
--
-
-π
-
-2
-
-= cos
-
-=
-
--
-
-=
-
-±
-
-±
-
-sin x,
-
-x
-
-π
-
-,
-
--
-
-cos(
-
-cot(
-
--
-
-π
+) = cos
 
 y
 
-)
-
-,
-
-x
-
-)
-
--
-
-x
-
-,
-
-x
-
-)
-
-cos
-
-y
-
-) = sin
-
-y
-
-) = cos cos
-
 x
 
 x
+
+sin
 
 y
 
 <!-- formula-not-decoded -->
 
-cot(
-
-∓
-
-y
-
-) =
-
-x
-
 sin 2
 
+cos
+
+= 2 sin x,
+
 x
 
+x
+
+<!-- formula-not-decoded -->
+
 cos 2
-
-±
-
-= 2 sin
 
 x
 
@@ -533,35 +531,21 @@ x
 
 sin(
 
+-
+
 = cos
 
 2
 
 = 1
 
-cot
-
-x
-
-cot cot
-
-x
-
-x
-
-cos
-
-x
-
-x,
-
-±
-
--
-
--
-
 =
+
+x
+
+x
+
+-
 
 sin
 
@@ -581,15 +565,13 @@ x
 
 -
 
-x
-
 tan
 
 y
 
-) sin(
-
 2
+
+) sin(
 
 x
 
@@ -613,6 +595,8 @@ y
 
 x
 
+) = sin
+
 -
 
 Euler's equation:
@@ -623,13 +607,23 @@ ix
 
 = cos v2.02
 
-sin 2
+x
 
-y, sin
+2 tan
+
+2
+
+1 + tan sin
+
+y,
 
 x
 
+sin 2
+
 cos 2
+
+=
 
 x
 
@@ -643,7 +637,7 @@ x
 
 -
 
-) = sin
+x
 
 2
 
@@ -661,19 +655,15 @@ y,
 
 2
 
+y.
+
 sin
 
-,
-
-x
+) = cos
 
 2
 
 x
-
-y.
-
-) = cos
 
 +
 
@@ -699,21 +689,11 @@ c
 
 http://www.csc.lsu.edu/~seiden
 
-2 tan
-
 x
-
-2
-
-1 + tan
-
-=
-
-2
 
 = 2 cos
 
-x
+2
 
 1
 
@@ -733,9 +713,9 @@ tan
 
 2
 
-x
-
 cot
+
+x
 
 2 cot
 
@@ -747,17 +727,7 @@ cot
 
 x
 
-y
-
-cot
-
-∓
-
 x,
-
-1
-
-y
 
 π
 
@@ -819,9 +789,9 @@ c
 
 i,j
 
-=
-
 B,
+
+=
 
 /negationslash
 
@@ -836,10 +806,6 @@ k
 Determinants: det A = 0 iff A is non-singular.
 
 det det
-
-A
-
-=
 
 A
 
@@ -863,6 +829,10 @@ det
 
 sign(
 
+A
+
+=
+
 π
 
 =1
@@ -875,9 +845,9 @@ i
 
 ∣
 
-a
-
 b
+
+a
 
 ∣
 
@@ -913,9 +883,9 @@ f
 
 ∣
 
-h
-
 g
+
+h
 
 i
 
@@ -929,21 +899,19 @@ e
 
 e
 
-B, i,π
+π
 
-(
+)
 
-i
+a
 
-c
-
-f
+bc,
 
 ∣
 
-=
-
 ad
+
+=
 
 =
 
@@ -977,11 +945,15 @@ g
 
 perm
 
+c
+
+f
+
+-
+
+-
+
 ∣
-
--
-
--
 
 ∣
 
@@ -1001,17 +973,7 @@ aei
 
 -
 
-π
-
-)
-
-a
-
-bc,
-
 h
-
-∣
 
 +
 
@@ -1045,6 +1007,14 @@ n
 
 ∣
 
+B, i,π
+
+(
+
+i
+
+∣
+
 -
 
 a
@@ -1061,9 +1031,9 @@ ibd.
 
 .
 
-i
-
 i,π
+
+i
 
 )
 
@@ -1233,9 +1203,9 @@ x
 
 coth
 
-x
-
 =
+
+x
 
 2
 
@@ -1287,8 +1257,6 @@ cosh
 
 x
 
-cosh
-
 2
 
 = cosh
@@ -1310,6 +1278,12 @@ x
 x
 
 =
+
+x
+
+)
+
+cosh
 
 2
 
@@ -1347,10 +1321,6 @@ x
 
 = cosh
 
-x
-
-)
-
 2 sinh
 
 -
@@ -1359,11 +1329,11 @@ x
 
 2
 
-x
+,
 
 = cosh
 
-,
+x
 
 1
 
@@ -1613,13 +1583,15 @@ hc,
 
 c
 
-ab sin
+C, sin
+
+ab
 
 2
 
 =
 
-C, sin
+sin
 
 A
 
@@ -1639,11 +1611,11 @@ a
 
 √
 
+s
+
+s
+
 =
-
-s
-
-s
 
 s
 
@@ -1657,6 +1629,12 @@ s
 
 b
 
++
+
+a
+
+(
+
 1
 
 ·
@@ -1667,31 +1645,21 @@ b
 
 2
 
-(
-
 s
 
 s
-
-=
-
-=
-
-=
-
-a
-
--
-
--
-
--
-
-+
 
 a, b,
 
+=
+
+=
+
+=
+
 s
+
+-
 
 c
 
@@ -1702,6 +1670,10 @@ s
 =
 
 More identities:
+
+-
+
+-
 
 sin
 
@@ -1875,33 +1847,31 @@ ix
 
 e
 
-ix
-
 2
 
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
 i
-
-=
-
-=
-
-=
-
-=
-
-=
-
-=
-
-=
-
-=
-
-=
-
-=
-
-=
 
 =
 
@@ -1909,17 +1879,19 @@ sinh
 
 i
 
+-
+
 ix
 
 -
 
 -
 
+ix
+
 1
 
 +1
-
--
 
 ix ix
 
@@ -1927,11 +1899,11 @@ ix ix
 
 ,
 
-cos
+cos ix,
+
+= cosh
 
 x
-
-= cosh ix,
 
 tan x = tanh ix i .
 
@@ -1982,8 +1954,6 @@ x
 ,
 
 ,
-
-r
 
 ## Theoretical Computer Science Cheat Sheet
 
@@ -2037,21 +2007,21 @@ If ∏ n i =1 p e i i is the prime factorization of x then
 
 Perfect Numbers: x is an even perfect number iff x = 2 n -1 (2 n -1) and 2 n -1 is prime.
 
-is a prime iff
+Wilson's theorem:
 
 n
 
-Wilson's theorem:
+is a prime iff
 
 <!-- formula-not-decoded -->
 
 M¨ obius inversion:
 
+1
+
 = 1.
 
 if
-
-1
 
 i
 
@@ -2067,37 +2037,39 @@ i
 
 
 
-is not square-free.
-
-i
-
-if
-
-0
-
-(
-
--
-
-i
-
-is the product of if
-
-1)
-
-r
-
-distinct primes.
-
 
 
 
 
 If
 
-<!-- formula-not-decoded -->
-
 
+
+0
+
+(
+
+if
+
+i
+
+is not square-free.
+
+-
+
+1)
+
+r
+
+if is the product of
+
+i
+
+r
+
+distinct primes.
+
+<!-- formula-not-decoded -->
 
 then
 
@@ -2113,19 +2085,105 @@ p n = n ln n + n ln ln n n + n ln ln n
 
 ## Graph Theory
 
-An edge connecting a vertex to itself.
+## Definitions:
+
+Loop
+
+An edge connecting a ver- tex to itself.
+
+## Directed Simple
 
 Each edge has a direction. Graph with no loops or multi-edges.
 
+Walk
+
 A sequence v 0 e 1 v 1 . . . e /lscript v /lscript .
+
+Trail
 
 Awalk with distinct edges.
 
+Path
+
 A trail with distinct vertices.
+
+Connected
 
 A graph where there exists a path between any two vertices.
 
+Component
+
 A maximal connected subgraph.
+
+Tree
+
+A connected acyclic graph.
+
+Free tree
+
+A tree with no root.
+
+DAG
+
+Directed acyclic graph.
+
+Eulerian
+
+Graph with a trail visiting each edge exactly once.
+
+Hamiltonian
+
+Graph with a cycle visiting each vertex exactly once.
+
+Cut
+
+A set of edges whose re- moval increases the num- ber of components.
+
+Cut-set A minimal cut.
+
+Cut edge
+
+A size 1 cut.
+
+k-Connected vertices.
+
+A graph connected with the removal of any k - 1
+
+k-Tough
+
+∀ S ⊆ V, S = ∅ we have k · c ( G - S ) ≤ | S | .
+
+k-Regular
+
+A graph where all vertices
+
+have degree k .
+
+k-Factor
+
+A k -regular spanning subgraph.
+
+Matching
+
+A set of edges, no two of which are adjacent.
+
+Clique
+
+A set of vertices, all of which are adjacent.
+
+Ind. set
+
+A set of vertices, none of which are adjacent.
+
+Vertex cover A set of vertices which cover all edges.
+
+Planar graph A graph which can be em- beded in the plane.
+
+Plane graph An embedding of a planar graph.
+
+$$∑ v ∈ V deg( v ) = 2 m.$$
+
+$$If G is planar then n - m + f = 2, so f ≤ 2 n - 4 , m ≤ 3 n - 6 .$$
 
 ## Notation:
 
@@ -2163,139 +2221,17 @@ K n 1 ,n 2 Complete bipartite graph
 
 r( k, /lscript ) Ramsey number
 
-A connected acyclic graph.
-
-A tree with no root.
-
-Directed acyclic graph.
-
-Graph with a trail visiting each edge exactly once.
-
-Graph with a cycle visiting each vertex exactly once.
-
-## Definitions:
-
-Loop
-
-## Directed Simple
-
-Walk
-
-Trail
-
-Path
-
-Connected
-
-Component
-
-Tree
-
-Free tree
-
-DAG
-
-Eulerian
-
-Hamiltonian
-
-Cut
-
-A set of edges whose removal increases the number of components.
-
-Cut-set A minimal cut.
-
-Cut edge
-
-A size 1 cut.
-
-A graph connected with the removal of any k -1
-
-k-Connected vertices.
-
-k-Tough we have
-
-=
-
-S
-
-k
-
-c
-
-∀
-
-⊆
-
-k-Regular k-Factor
-
-Matching
-
-Clique
-
-Ind. set
-
-V, S
-
-G
-
-/negationslash
-
-∅
-
-(
-
-S
-
-)
-
-S
-
-.
-
-A graph where all vertices
-
-· -≤ | | have degree k .
-
-A k -regular spanning subgraph.
-
-A set of edges, no two of which are adjacent.
-
-A set of vertices, all of which are adjacent.
-
-A set of vertices, none of which are adjacent.
-
-Vertex cover A set of vertices which cover all edges.
-
-Planar graph A graph which can be embeded in the plane.
-
-Plane graph An embedding of a planar graph.
-
-<!-- formula-not-decoded -->
-
-Any planar graph has a vertex with degree ≤ 5.
-
-<!-- formula-not-decoded -->
-
 ## Geometry
 
 Projective coordinates: triples ( x, y, z ), not all x , y and z zero.
 
-(
-
-x, y, z
-
-) = (
-
-cx, cy, cz
-
-)
+( x, y, z ) = ( cx, cy, cz ) ∀ c = 0 .
 
 ## Cartesian Projective
 
 (
 
-∀
+1)
 
 x, y
 
@@ -2305,9 +2241,15 @@ x, y
 
 x, y,
 
-1)
-
 y
+
+m,
+
+(
+
+1
+
+, b
 
 =
 
@@ -2317,31 +2259,23 @@ mx
 
 b
 
-(
-
-m,
-
-1
-
-, b
-
 )
 
 (1
 
--
-
 x = c -Distance formula, L p and L ∞ metric:
 
-,
+)
 
-0
+,
 
 ,
 
 c
 
-)
+-
+
+0
 
 <!-- formula-not-decoded -->
 
@@ -2367,13 +2301,11 @@ If I have seen farther than others, it is because I have stood on the shoulders 
 
 - Issac Newton
 
-c
+/negationslash
 
 /negationslash
 
-= 0
-
-.
+Any planar graph has a vertex with degree ≤ 5.
 
 (
 
@@ -2593,31 +2525,7 @@ Expansions:
 
 <!-- formula-not-decoded -->
 
-<!-- formula-not-decoded -->
-
-## Cramer's Rule
-
-If we have equations:
-
-<!-- formula-not-decoded -->
-
-<!-- formula-not-decoded -->
-
-/negationslash
-
-Let A = ( a i,j ) and B be the column matrix ( b i ). Then there is a unique solution iff det A = 0. Let A i be A with column i replaced by B . Then x i = det A i det A .
-
-Improvement makes strait roads, but the crooked roads without Improvement, are roads of Genius.
-
-- William Blake (The Marriage of Heaven and Hell)
-
-## Theoretical Computer Science Cheat Sheet
-
-## Series
-
 ## Escher's Knot
-
-<!-- formula-not-decoded -->
 
 <!-- image -->
 
@@ -2638,3 +2546,23 @@ The Fibonacci number system: Every integer n has a unique representation
 ## Fibonacci Numbers
 
 <!-- formula-not-decoded -->
+
+<!-- formula-not-decoded -->
+
+## Cramer's Rule
+
+If we have equations:
+
+<!-- formula-not-decoded -->
+
+/negationslash
+
+Let A = ( a i,j ) and B be the column matrix ( b i ). Then there is a unique solution iff det A = 0. Let A i be A with column i replaced by B . Then x i = det A i det A .
+
+Improvement makes strait roads, but the crooked roads without Improvement, are roads of Genius.
+
+- William Blake (The Marriage of Heaven and Hell)
+
+## Theoretical Computer Science Cheat Sheet
+
+## Series

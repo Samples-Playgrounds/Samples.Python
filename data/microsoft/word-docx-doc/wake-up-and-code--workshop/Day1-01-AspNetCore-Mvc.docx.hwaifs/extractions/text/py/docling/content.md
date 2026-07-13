@@ -1,27 +1,27 @@
 ## Create a web app with ASP.NET Core MVC on Windows with Visual Studio
 
-Source: [https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/?view=aspnetcore-2.2](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/?view=aspnetcore-2.2)
+Source: [https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/?view=aspnetcore-2.2](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/?view=aspnetcore-2.2)
 
-This tutorial teaches ASP.NET Core MVC web development with controllers and views. If you're new to ASP.NET Core web development, consider the [Razor Pages](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2) version of this tutorial, which provides an easier starting point.
+This tutorial teaches ASP.NET Core MVC web development with controllers and views. If you're new to ASP.NET Core web development, consider the [Razor Pages](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2) version of this tutorial, which provides an easier starting point.
 
 The tutorial series includes the following:
 
-1. [Get started](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.2)
-2. [Add a controller](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-controller?view=aspnetcore-2.2)
-3. [Add a view](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-view?view=aspnetcore-2.2)
-4. [Add a model](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2)
-5. [Work with SQL Server LocalDB](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-2.2)
-6. [Controller methods and views](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/controller-methods-views?view=aspnetcore-2.2)
-7. [Add search](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/search?view=aspnetcore-2.2)
-8. [Add a new field](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/new-field?view=aspnetcore-2.2)
-9. [Add validation](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/validation?view=aspnetcore-2.2)
-10. [Examine the Details and Delete methods](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/details?view=aspnetcore-2.2)
+1. [Get started](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.2)
+2. [Add a controller](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-controller?view=aspnetcore-2.2)
+3. [Add a view](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-view?view=aspnetcore-2.2)
+4. [Add a model](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2)
+5. [Work with SQL Server LocalDB](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-2.2)
+6. [Controller methods and views](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/controller-methods-views?view=aspnetcore-2.2)
+7. [Add search](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/search?view=aspnetcore-2.2)
+8. [Add a new field](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/new-field?view=aspnetcore-2.2)
+9. [Add validation](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/validation?view=aspnetcore-2.2)
+10. [Examine the Details and Delete methods](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/details?view=aspnetcore-2.2)
 
 ## Get started with ASP.NET Core MVC
 
-This tutorial teaches ASP.NET Core MVC web development with controllers and views. If you're new to ASP.NET Core web development, consider the [Razor Pages](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2) version of this tutorial, which provides an easier starting point.
+This tutorial teaches ASP.NET Core MVC web development with controllers and views. If you're new to ASP.NET Core web development, consider the [Razor Pages](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2) version of this tutorial, which provides an easier starting point.
 
-[https://docs.microsoft.com/en-us/visualstudio/ide/visual-studio-ide?view=vs-2017](https://docs.microsoft.com/en-us/visualstudio/ide/visual-studio-ide?view=vs-2017)
+[https://docs.microsoft.com/en-us/visualstudio/ide/visual-studio-ide?view=vs-2017](https:/docs.microsoft.com/en-us/visualstudio/ide/visual-studio-ide?view=vs-2017)
 
 This tutorial teaches the basics of building an ASP.NET Core MVC web app.
 
@@ -34,28 +34,28 @@ The app manages a database of movie titles. You learn how to:
 
 At the end, you have an app that can manage and display movie data.
 
-[View or download sample code](https://github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/first-mvc-app/start-mvc/sample) ( [how to download](https://docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) ).
+[View or download sample code](https:/github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/first-mvc-app/start-mvc/sample) ( [how to download](https:/docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) ).
 
 **Note**
 
-We’re testing the usability of a proposed new structure for the ASP.NET Core table of contents. If you have a few minutes to try an exercise of finding 7 different topics in the current or proposed table of contents, please [**click here to participate in the study**](https://dpk4xbh5.optimalworkshop.com/treejack/aa11wn82) .
+We’re testing the usability of a proposed new structure for the ASP.NET Core table of contents. If you have a few minutes to try an exercise of finding 7 different topics in the current or proposed table of contents, please [**click here to participate in the study**](https:/dpk4xbh5.optimalworkshop.com/treejack/aa11wn82) .
 
 ### Prerequisites
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.2&tabs=visual-studio)
-- [Visual Studio 2017 version 15.9 or later](https://visualstudio.microsoft.com/downloads/) with the ASP.NET and web development workload
-- [.NET Core SDK 2.2 or later](https://www.microsoft.com/net/download/all)
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.2&tabs=visual-studio)
-- [Visual Studio Code](https://code.visualstudio.com/download)
-- [.NET Core SDK 2.2 or later](https://www.microsoft.com/net/download/all)
-- [C# for Visual Studio Code version 1.17.1 or later](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
-- [Visual Studio for Mac](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.2&tabs=visual-studio)
-- [Visual Studio for Mac version 7.7 or later](https://www.visualstudio.com/downloads/)
-- [.NET Core SDK 2.2 or later](https://www.microsoft.com/net/download/all)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio 2017 version 15.9 or later](https:/visualstudio.microsoft.com/downloads) with the ASP.NET and web development workload
+- [.NET Core SDK 2.2 or later](https:/www.microsoft.com/net/download/all)
+- [Visual Studio Code](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code](https:/code.visualstudio.com/download)
+- [.NET Core SDK 2.2 or later](https:/www.microsoft.com/net/download/all)
+- [C# for Visual Studio Code version 1.17.1 or later](https:/marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+- [Visual Studio for Mac](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio for Mac version 7.7 or later](https:/www.visualstudio.com/downloads)
+- [.NET Core SDK 2.2 or later](https:/www.microsoft.com/net/download/all)
 
 ### Create a web app
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.2&tabs=visual-studio)
 
 From Visual Studio, select File &gt; New &gt; Project.
 
@@ -80,19 +80,18 @@ Visual Studio used a default template for the MVC project you just created. You 
 
 Select Ctrl-F5 to run the app in non-debug mode.
 
-- Visual Studio starts [IIS Express](https://docs.microsoft.com/iis/extensions/introduction-to-iis-express/iis-express-overview) and runs your app. Notice that the address bar shows localhost:port# and not something like example.com. That's because localhost is the standard hostname for your local computer. When Visual Studio creates a web project, a random port is used for the web server. In the image above, the port number is 5000. The URL in the browser shows localhost:5000. When you run the app, you'll see a different port number.
+- Visual Studio starts [IIS Express](https:/docs.microsoft.com/iis/extensions/introduction-to-iis-express/iis-express-overview) and runs your app. Notice that the address bar shows localhost:port# and not something like example.com. That's because localhost is the standard hostname for your local computer. When Visual Studio creates a web project, a random port is used for the web server. In the image above, the port number is 5000. The URL in the browser shows localhost:5000. When you run the app, you'll see a different port number.
 - Launching the app with Ctrl+F5 (non-debug mode) allows you to make code changes, save the file, refresh the browser, and see the code changes. Many developers prefer to use non-debug mode to quickly launch the app and view changes.
 - You can launch the app in debug or non-debug mode from the Debug menu item:
 <!-- image -->
-
 - You can debug the app by selecting the IIS Express button
 <!-- image -->
 
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.2&tabs=visual-studio)
 
-The tutorial assumes familarity with VS Code. See [Getting started with VS Code](https://code.visualstudio.com/docs) and [Visual Studio Code help](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.2&tabs=visual-studio-code) for more information.
+The tutorial assumes familarity with VS Code. See [Getting started with VS Code](https:/code.visualstudio.com/docs) and [Visual Studio Code help](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.2&tabs=visual-studio-code) for more information.
 
-- Open the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) .
+- Open the [integrated terminal](https:/code.visualstudio.com/docs/editor/integrated-terminal) .
 - Change directories (cd) to a folder which will contain the project.
 - Run the following command:
 
@@ -110,37 +109,36 @@ code -r MvcMovie
 
 - Press Ctrl-F5 to run without the debugger.
 
-Visual Studio Code starts starts [Kestrel](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel?view=aspnetcore-2.2) , launches a browser, and navigates to http://localhost:5001. The address bar shows localhost:port:5001 and not something like example.com. That's because localhost is the standard hostname for local computer. Localhost only serves web requests from the local computer.
+Visual Studio Code starts starts [Kestrel](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel?view=aspnetcore-2.2) , launches a browser, and navigates to http://localhost:5001. The address bar shows localhost:port:5001 and not something like example.com. That's because localhost is the standard hostname for local computer. Localhost only serves web requests from the local computer.
 
 Launching the app with Ctrl+F5 (non-debug mode) allows you to make code changes, save the file, refresh the browser, and see the code changes. Many developers prefer to use non-debug mode to refresh the page and view changes.
 
 CONTINUE…
 
-- Select Accept to consent to tracking. This app doesn't track personal information. The template generated code includes assets to help meet [General Data Protection Regulation (GDPR)](https://docs.microsoft.com/en-us/aspnet/core/security/gdpr?view=aspnetcore-2.2) .
+- Select Accept to consent to tracking. This app doesn't track personal information. The template generated code includes assets to help meet [General Data Protection Regulation (GDPR)](https:/docs.microsoft.com/en-us/aspnet/core/security/gdpr?view=aspnetcore-2.2) .
 <!-- image -->
 
 The following image shows the app after accepting tracking:
 
 <!-- image -->
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.2&tabs=visual-studio)
 
 ### Visual Studio help
 
-- [Learn to debug C# code using Visual Studio](https://docs.microsoft.com/en-us/visualstudio/debugger/getting-started-with-the-debugger?view=vs-2017)
-- [Introduction to the Visual Studio IDE](https://docs.microsoft.com/en-us/visualstudio/ide/visual-studio-ide?view=vs-2017)
-
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.2&tabs=visual-studio)
+- [Learn to debug C# code using Visual Studio](https:/docs.microsoft.com/en-us/visualstudio/debugger/getting-started-with-the-debugger?view=vs-2017)
+- [Introduction to the Visual Studio IDE](https:/docs.microsoft.com/en-us/visualstudio/ide/visual-studio-ide?view=vs-2017)
+- [Visual Studio Code](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.2&tabs=visual-studio)
 
 ### Visual Studio Code help
 
-- [Getting started](https://code.visualstudio.com/docs)
-- [Debugging](https://code.visualstudio.com/docs/editor/debugging)
-- [Integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal)
-- [Keyboard shortcuts](https://code.visualstudio.com/docs/getstarted/keybindings)
-    - [macOS keyboard shortcuts](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
-    - [Linux keyboard shortcuts](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
-    - [Windows keyboard shortcuts](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+- [Getting started](https:/code.visualstudio.com/docs)
+- [Debugging](https:/code.visualstudio.com/docs/editor/debugging)
+- [Integrated terminal](https:/code.visualstudio.com/docs/editor/integrated-terminal)
+- [Keyboard shortcuts](https:/code.visualstudio.com/docs/getstarted/keybindings)
+    - [macOS keyboard shortcuts](https:/code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+    - [Linux keyboard shortcuts](https:/code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
+    - [Windows keyboard shortcuts](https:/code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
 
 CONTINUE…
 
@@ -160,15 +158,14 @@ We cover these concepts in this tutorial series and show you how to use them to 
 
 ### Add a controller
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-controller?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-controller?view=aspnetcore-2.2&tabs=visual-studio)
 <!-- image -->
-
 - In Solution Explorer, right-click Controllers &gt; Add &gt; Controller
 - In the Add Scaffold dialog box, select MVC Controller - Empty
 <!-- image -->
 - In the Add Empty MVC Controller dialog, enter HelloWorldController and select ADD.
 
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-controller?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-controller?view=aspnetcore-2.2&tabs=visual-studio)
 - Select the **EXPLORER** icon and then control-click (right-click) **Controllers &gt; New File** and name the new file *HelloWorldController.cs* .
 <!-- image -->
 
@@ -222,13 +219,13 @@ Every public method in a controller is callable as an HTTP endpoint. In the sa
 
 An HTTP endpoint is a targetable URL in the web application, such as https://localhost:5001/HelloWorld, and combines the protocol used: HTTPS, the network location of the web server (including the TCP port): localhost:5001 and the target URI HelloWorld.
 
-The first comment states this is an [HTTP GET](https://www.w3schools.com/tags/ref_httpmethods.asp) method that's invoked by appending /HelloWorld/ to the base URL. The second comment specifies an [HTTP GET](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) method that's invoked by appending /HelloWorld/Welcome/to the URL. Later on in the tutorial the scaffolding engine is used to generate HTTP POST methods which update data.
+The first comment states this is an [HTTP GET](https:/www.w3schools.com/tags/ref_httpmethods.asp) method that's invoked by appending /HelloWorld/ to the base URL. The second comment specifies an [HTTP GET](http:/www.w3.org/Protocols/rfc2616/rfc2616-sec9.html) method that's invoked by appending /HelloWorld/Welcome/to the URL. Later on in the tutorial the scaffolding engine is used to generate HTTP POST methods which update data.
 
 Run the app in non-debug mode and append "HelloWorld" to the path in the address bar. The Indexmethod returns a string.
 
 <!-- image -->
 
-MVC invokes controller classes (and the action methods within them) depending on the incoming URL. The default [URL routing logic](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/routing?view=aspnetcore-2.2) used by MVC uses a format like this to determine what code to invoke:
+MVC invokes controller classes (and the action methods within them) depending on the incoming URL. The default [URL routing logic](https:/docs.microsoft.com/en-us/aspnet/core/mvc/controllers/routing?view=aspnetcore-2.2) used by MVC uses a format like this to determine what code to invoke:
 
 /[Controller]/[ActionName]/[Parameters]
 
@@ -276,17 +273,17 @@ The preceding code:
 
 - Uses the C# optional-parameter feature to indicate that the numTimes parameter defaults to 1 if no value is passed for that parameter.
 - UsesHtmlEncoder.Default.Encode to protect the app from malicious input (namely JavaScript).
-- Uses [Interpolated Strings](https://docs.microsoft.com/en-us/dotnet/articles/csharp/language-reference/keywords/interpolated-strings) in $"Hello {name}, NumTimes is: {numTimes}".
+- Uses [Interpolated Strings](https:/docs.microsoft.com/en-us/dotnet/articles/csharp/language-reference/keywords/interpolated-strings) in $"Hello {name}, NumTimes is: {numTimes}".
 
 Run the app and browse to:
 
 https://localhost:xxxx/HelloWorld/Welcome?name=Rick&amp;numtimes=4
 
-(Replace xxxx with your port number.) You can try different values for name and numtimes in the URL. The MVC [model binding](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-2.2) system automatically maps the named parameters from the query string in the address bar to parameters in your method. See [Model Binding](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-2.2) for more information.
+(Replace xxxx with your port number.) You can try different values for name and numtimes in the URL. The MVC [model binding](https:/docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-2.2) system automatically maps the named parameters from the query string in the address bar to parameters in your method. See [Model Binding](https:/docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-2.2) for more information.
 
 <!-- image -->
 
-In the image above, the URL segment (Parameters) isn't used, the name and numTimes parameters are passed as [query strings](https://wikipedia.org/wiki/Query_string) . The ? (question mark) in the above URL is a separator, and the query strings follow. The &amp; character separates query strings.
+In the image above, the URL segment (Parameters) isn't used, the name and numTimes parameters are passed as [query strings](https:/wikipedia.org/wiki/Query_string) . The ? (question mark) in the above URL is a separator, and the query strings follow. The &amp; character separates query strings.
 
 Replace the Welcome method with the following code:
 
@@ -322,7 +319,7 @@ In these examples the controller has been doing the "VC" portion of MVC - that i
 
 ## Add a view to an ASP.NET Core MVC app
 
-In this section you modify the HelloWorldController class to use [Razor](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-2.2) view files to cleanly encapsulate the process of generating HTML responses to a client.
+In this section you modify the HelloWorldController class to use [Razor](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-2.2) view files to cleanly encapsulate the process of generating HTML responses to a client.
 
 You create a view template file using Razor. Razor-based view templates have a .cshtml file extension. They provide an elegant way to create HTML output with C#.
 
@@ -342,8 +339,7 @@ The preceding code returns a View object. It uses a view template to generate 
 
 ### Add a view
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-view?view=aspnetcore-2.2&tabs=visual-studio)
-
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-view?view=aspnetcore-2.2&tabs=visual-studio)
 - Right click on the Views folder, and then Add &gt; New Folder and name the folder HelloWorld.
 - Right click on the Views/HelloWorld folder, and then Add &gt; New Item.
 - In the Add New Item - MvcMovie dialog
@@ -352,8 +348,6 @@ The preceding code returns a View object. It uses a view template to generate 
     - Keep the Name box value, Index.cshtml.
     - Select Add
     <!-- image -->
-
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-view?view=aspnetcore-2.2&tabs=visual-studio)
 
 Add an Index view for the HelloWorldController.
 
@@ -382,7 +376,7 @@ Navigate to https://localhost:xxxx/HelloWorld. The Index method in the Hello
 
 Select the menu links (MvcMovie, Home, and Privacy). Each page shows the same menu layout. The menu layout is implemented in the Views/Shared/\_Layout.cshtml file. Open the Views/Shared/\_Layout.cshtml file.
 
-[Layout](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/layout?view=aspnetcore-2.2) templates allow you to specify the HTML container layout of your site in one place and then apply it across multiple pages in your site. Find the @RenderBody() line. RenderBody is a placeholder where all the view-specific pages you create show up, wrapped in the layout page. For example, if you select the Privacy link, the Views/Home/Privacy.cshtml view is rendered inside the RenderBody method.
+[Layout](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/layout?view=aspnetcore-2.2) templates allow you to specify the HTML container layout of your site in one place and then apply it across multiple pages in your site. Find the @RenderBody() line. RenderBody is a placeholder where all the view-specific pages you create show up, wrapped in the layout page. For example, if you select the Privacy link, the Views/Home/Privacy.cshtml view is rendered inside the RenderBody method.
 
 ### Change the title and menu link in the layout file
 
@@ -539,7 +533,7 @@ integrity="sha256-E/V4cWE4qvAeO5MOhjtGtqDzPndRO1LBk8lJ/PR7CA4="&gt;
 
 &lt;/html&gt;
 
-In the preceding markup, the asp-area [anchor Tag Helper attribute](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/anchor-tag-helper?view=aspnetcore-2.2) was omitted because this app is not using [Areas](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/areas?view=aspnetcore-2.2) .
+In the preceding markup, the asp-area [anchor Tag Helper attribute](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/anchor-tag-helper?view=aspnetcore-2.2) was omitted because this app is not using [Areas](https:/docs.microsoft.com/en-us/aspnet/core/mvc/controllers/areas?view=aspnetcore-2.2) .
 
 Note: The Movies controller has not been implemented. At this point, the Movie App link is not functional.
 
@@ -585,7 +579,7 @@ HTMLCopy
 
 Save the change and navigate to https://localhost:xxxx/HelloWorld. Notice that the browser title, the primary heading, and the secondary headings have changed. (If you don't see changes in the browser, you might be viewing cached content. Press Ctrl+F5 in your browser to force the response from the server to be loaded.) The browser title is created with ViewData["Title"] we set in the Index.cshtml view template and the additional "- Movie App" added in the layout file.
 
-Also notice how the content in the Index.cshtml view template was merged with the Views/Shared/\_Layout.cshtml view template and a single HTML response was sent to the browser. Layout templates make it really easy to make changes that apply across all of the pages in your application. To learn more see [Layout](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/layout?view=aspnetcore-2.2) .
+Also notice how the content in the Index.cshtml view template was merged with the Views/Shared/\_Layout.cshtml view template and a single HTML response was sent to the browser. Layout templates make it really easy to make changes that apply across all of the pages in your application. To learn more see [Layout](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/layout?view=aspnetcore-2.2) .
 
 <!-- image -->
 
@@ -599,7 +593,7 @@ Controllers are responsible for providing the data required in order for a view 
 
 Currently, the Welcome method in the HelloWorldController class takes a name and a ID parameter and then outputs the values directly to the browser. Rather than have the controller render this response as a string, change the controller to use a view template instead. The view template generates a dynamic response, which means that appropriate bits of data must be passed from the controller to the view in order to generate the response. Do this by having the controller put the dynamic data (parameters) that the view template needs in a ViewData dictionary that the view template can then access.
 
-In HelloWorldController.cs, change the Welcome method to add a Message and NumTimes value to the ViewData dictionary. The ViewData dictionary is a dynamic object, which means any type can be used; the ViewData object has no defined properties until you put something inside it. The [MVC model binding system](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-2.2) automatically maps the named parameters (name and numTimes) from the query string in the address bar to parameters in your method. The complete HelloWorldController.cs file looks like this:
+In HelloWorldController.cs, change the Welcome method to add a Message and NumTimes value to the ViewData dictionary. The ViewData dictionary is a dynamic object, which means any type can be used; the ViewData object has no defined properties until you put something inside it. The [MVC model binding system](https:/docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-2.2) automatically maps the named parameters (name and numTimes) from the query string in the address bar to parameters in your method. The complete HelloWorldController.cs file looks like this:
 
 C#Copy
 
@@ -671,11 +665,11 @@ Save your changes and browse to the following URL:
 
 https://localhost:xxxx/HelloWorld/Welcome?name=Rick&amp;numtimes=4
 
-Data is taken from the URL and passed to the controller using the [MVC model binder](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-2.2) . The controller packages the data into a ViewData dictionary and passes that object to the view. The view then renders the data as HTML to the browser.
+Data is taken from the URL and passed to the controller using the [MVC model binder](https:/docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-2.2) . The controller packages the data into a ViewData dictionary and passes that object to the view. The view then renders the data as HTML to the browser.
 
 <!-- image -->
 
-In the sample above, the ViewData dictionary was used to pass data from the controller to a view. Later in the tutorial, a view model is used to pass data from a controller to a view. The view model approach to passing data is generally much preferred over the ViewData dictionary approach. See [When to use ViewBag, ViewData, or TempData](http://www.rachelappel.com/when-to-use-viewbag-viewdata-or-tempdata-in-asp-net-mvc-3-applications/) for more information.
+In the sample above, the ViewData dictionary was used to pass data from the controller to a view. Later in the tutorial, a view model is used to pass data from a controller to a view. The view model approach to passing data is generally much preferred over the ViewData dictionary approach. See [When to use ViewBag, ViewData, or TempData](http:/www.rachelappel.com/when-to-use-viewbag-viewdata-or-tempdata-in-asp-net-mvc-3-applications) for more information.
 
 In the next tutorial, a database of movies is created.
 
@@ -683,15 +677,15 @@ In the next tutorial, a database of movies is created.
 
 In this section, you add classes for managing movies in a database. These classes will be the "Model" part of the MVC app.
 
-You use these classes with [Entity Framework Core](https://docs.microsoft.com/ef/core) (EF Core) to work with a database. EF Core is an object-relational mapping (ORM) framework that simplifies the data access code that you have to write.
+You use these classes with [Entity Framework Core](https:/docs.microsoft.com/ef/core) (EF Core) to work with a database. EF Core is an object-relational mapping (ORM) framework that simplifies the data access code that you have to write.
 
 The model classes you create are known as POCO classes (from Plain Old CLR Objects) because they don't have any dependency on EF Core. They just define the properties of the data that will be stored in the database.
 
-In this tutorial, you write the model classes first, and EF Core creates the database. An alternate approach not covered here is to generate model classes from an existing database. For information about that approach, see [ASP.NET Core - Existing Database](https://docs.microsoft.com/ef/core/get-started/aspnetcore/existing-db) .
+In this tutorial, you write the model classes first, and EF Core creates the database. An alternate approach not covered here is to generate model classes from an existing database. For information about that approach, see [ASP.NET Core - Existing Database](https:/docs.microsoft.com/ef/core/get-started/aspnetcore/existing-db) .
 
 ### Add a data model class
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio)
 
 Right-click the Models folder &gt; Add &gt; Class. Name the class Movie.
 
@@ -734,10 +728,9 @@ The Movie class contains:
     - The user is not required to enter time information in the date field.
     - Only the date is displayed, not time information.
 
-[DataAnnotations](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations) are covered in a later tutorial.
+[DataAnnotations](https:/docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations) are covered in a later tutorial.
 
-- [Visual Studio Code / Visual Studio for Mac](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio)
-
+- [Visual Studio Code / Visual Studio for Mac](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio)
 - Add a class to the Models folder named Movie.cs.
 
 Add the following properties to the Movie class:
@@ -779,7 +772,7 @@ The Movie class contains:
     - The user is not required to enter time information in the date field.
     - Only the date is displayed, not time information.
 
-[DataAnnotations](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations) are covered in a later tutorial.
+[DataAnnotations](https:/docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations) are covered in a later tutorial.
 
 Add the following MvcMovieContext class to the Models folder:
 
@@ -869,7 +862,7 @@ using MvcMovie.Models;
 
 using Microsoft.EntityFrameworkCore;
 
-Register the database context with the [dependency injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) container in Startup.ConfigureServices.
+Register the database context with the [dependency injection](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) container in Startup.ConfigureServices.
 
 C#Copy
 
@@ -907,7 +900,7 @@ CONTINUE…
 
 In this section, the movie model is scaffolded. That is, the scaffolding tool produces pages for Create, Read, Update, and Delete (CRUD) operations for the movie model.
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio)
 
 In Solution Explorer, right-click the Controllers folder &gt; Add &gt; New Scaffolded Item.
 
@@ -922,7 +915,6 @@ Complete the Add Controller dialog:
 - Model class: Movie (MvcMovie.Models)
 - Data context class: Select the + icon and add the default MvcMovie.Models.MvcMovieContext
 <!-- image -->
-
 - Views: Keep the default of each option checked
 - Controller name: Keep the default MoviesController
 - Select Add
@@ -930,13 +922,13 @@ Complete the Add Controller dialog:
 
 Visual Studio creates:
 
-- An Entity Framework Core [database context class](https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-2.2) (Data/MvcMovieContext.cs)
+- An Entity Framework Core [database context class](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-2.2) (Data/MvcMovieContext.cs)
 - A movies controller (Controllers/MoviesController.cs)
 - Razor view files for Create, Delete, Details, Edit, and Index pages (Views/Movies/*.cshtml)
 
-The automatic creation of the database context and [CRUD](https://wikipedia.org/wiki/Create,_read,_update_and_delete) (create, read, update, and delete) action methods and views is known as scaffolding.
+The automatic creation of the database context and [CRUD](https:/wikipedia.org/wiki/Create,_read,_update_and_delete) (create, read, update, and delete) action methods and views is known as scaffolding.
 
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio)
 - Open a command window in the project directory (The directory that contains the *Program.cs* , *Startup.cs* , and *.csproj* files).
 - Install the scaffolding tool:
 
@@ -981,11 +973,11 @@ Login failed for user 'Rick'.
 
 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString
 
-You need to create the database, and you use the EF Core [Migrations](https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/migrations?view=aspnetcore-2.2) feature to do that. Migrations lets you create a database that matches your data model and update the database schema when your data model changes.
+You need to create the database, and you use the EF Core [Migrations](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/migrations?view=aspnetcore-2.2) feature to do that. Migrations lets you create a database that matches your data model and update the database schema when your data model changes.
 
 ### Initial migration
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio)
 
 In this section, the Package Manager Console (PMC) is used to:
 
@@ -1006,7 +998,7 @@ Update-Database
 
 The Add-Migration command generates code to create the initial database schema.
 
-- [Visual Studio Code / Visual Studio for Mac](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code / Visual Studio for Mac](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio)
 
 Run the following .NET Core CLI commands:
 
@@ -1024,11 +1016,11 @@ The schema is based on the model specified in the DbContext (In the Models/Mv
 
 The ef database update command runs the Up method in the Migrations/&lt;time-stamp&gt;\_InitialCreate.cs file. The Up method creates the database.
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio)
 
 ### Examine the context registered with dependency injection
 
-ASP.NET Core is built with [dependency injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) . Services (such as the EF Core DB context) are registered with dependency injection during application startup. Components that require these services (such as Razor Pages) are provided these services via constructor parameters. The constructor code that gets a DB context instance is shown later in the tutorial.
+ASP.NET Core is built with [dependency injection](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) . Services (such as the EF Core DB context) are registered with dependency injection during application startup. Components that require these services (such as Razor Pages) are provided these services via constructor parameters. The constructor code that gets a DB context instance is shown later in the tutorial.
 
 The scaffolding tool automatically created a DB context and registered it with the dependency injection container.
 
@@ -1100,17 +1092,17 @@ public DbSet&lt;MvcMovie.Models.Movie&gt; Movie { get; set; }
 
 The preceding code creates a DbSet&lt;Movie&gt; property for the entity set. In Entity Framework terminology, an entity set typically corresponds to a database table. An entity corresponds to a row in the table.
 
-The name of the connection string is passed in to the context by calling a method on a DbContextOptionsobject. For local development, the [ASP.NET Core configuration system](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) reads the connection string from the appsettings.json file.
+The name of the connection string is passed in to the context by calling a method on a DbContextOptionsobject. For local development, the [ASP.NET Core configuration system](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) reads the connection string from the appsettings.json file.
 
-- [Visual Studio Code / Visual Studio for Mac](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code / Visual Studio for Mac](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio)
 
-ASP.NET Core is built with [dependency injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) . Services (such as the EF Core DB context) are registered with dependency injection during application startup. Components that require these services (such as Razor Pages) are provided these services via constructor parameters. The constructor code that gets a DB context instance is shown later in the tutorial.
+ASP.NET Core is built with [dependency injection](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) . Services (such as the EF Core DB context) are registered with dependency injection during application startup. Components that require these services (such as Razor Pages) are provided these services via constructor parameters. The constructor code that gets a DB context instance is shown later in the tutorial.
 
 You created a DB context and registered it with the dependency injection container.
 
 CONTINUE…
 
-The schema is based on the model specified in the MvcMovieContext (In the Data/MvcMovieContext.cs file). The Initial argument is used to name the migrations. Any name can be used, but by convention a name that describes the migration is used. See [Introduction to migrations](https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/migrations?view=aspnetcore-2.2) for more information.
+The schema is based on the model specified in the MvcMovieContext (In the Data/MvcMovieContext.cs file). The Initial argument is used to name the migrations. Any name can be used, but by convention a name that describes the migration is used. See [Introduction to migrations](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/migrations?view=aspnetcore-2.2) for more information.
 
 The Update-Database command runs the Up method in the Migrations/{time-stamp}\_InitialCreate.cs file, which creates the database.
 
@@ -1126,13 +1118,13 @@ SqlException: Cannot open database "MvcMovieContext-GUID" requested by the login
 
 Login failed for user 'User-name'.
 
-You missed the [migrations step](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio) .
+You missed the [migrations step](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-2.2&tabs=visual-studio) .
 
 - Test the Create link.
 
 **Note**
 
-You may not be able to enter decimal commas in the Price field. To support [**jQuery validation**](https://jqueryvalidation.org/) for non-English locales that use a comma (",") for a decimal point and for non US-English date formats, the app must be globalized. For globalization instructions, see [**this GitHub issue**](https://github.com/aspnet/Docs/issues/4076) .
+You may not be able to enter decimal commas in the Price field. To support [**jQuery validation**](https:/jqueryvalidation.org) for non-English locales that use a comma (",") for a decimal point and for non US-English date formats, the app must be globalized. For globalization instructions, see [**this GitHub issue**](https:/github.com/aspnet/Docs/issues/4076) .
 
 - Test the Edit, Details, and Delete links.
 
@@ -1166,10 +1158,10 @@ options.UseSqlServer(Configuration.GetConnectionString("MvcMovieContext")));
 
 }
 
-The preceding highlighted code shows the movie database context being added to the [Dependency Injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) container:
+The preceding highlighted code shows the movie database context being added to the [Dependency Injection](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) container:
 
 - services.AddDbContext&lt;MvcMovieContext&gt;(options =&gt; specifies the database to use and the connection string.
-- =&gt; is a [lambda operator](https://docs.microsoft.com/en-us/dotnet/articles/csharp/language-reference/operators/lambda-operator)
+- =&gt; is a [lambda operator](https:/docs.microsoft.com/en-us/dotnet/articles/csharp/language-reference/operators/lambda-operator)
 
 Open the Controllers/MoviesController.cs file and examine the constructor:
 
@@ -1189,7 +1181,7 @@ public MoviesController(MvcMovieContext context)
 
 }
 
-The constructor uses [Dependency Injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) to inject the database context (MvcMovieContext) into the controller. The database context is used in each of the [CRUD](https://wikipedia.org/wiki/Create,_read,_update_and_delete) methods in the controller.
+The constructor uses [Dependency Injection](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) to inject the database context (MvcMovieContext) into the controller. The database context is used in each of the [CRUD](https:/wikipedia.org/wiki/Create,_read,_update_and_delete) methods in the controller.
 
 ### Strongly typed models and the @model keyword
 
@@ -1241,9 +1233,9 @@ You can also pass in the id with a query string as follows:
 
 https://localhost:5001/movies/details?id=1
 
-The id parameter is defined as a [nullable type](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/nullable-types/index) (int?) in case an ID value isn't provided.
+The id parameter is defined as a [nullable type](https:/docs.microsoft.com/en-us/dotnet/csharp/programming-guide/nullable-types/index) (int?) in case an ID value isn't provided.
 
-A [lambda expression](https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/statements-expressions-operators/lambda-expressions) is passed in to FirstOrDefaultAsync to select movie entities that match the route data or query string value.
+A [lambda expression](https:/docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/statements-expressions-operators/lambda-expressions) is passed in to FirstOrDefaultAsync to select movie entities that match the route data or query string value.
 
 C#Copy
 
@@ -1475,14 +1467,14 @@ Because the Model object is strongly typed (as an IEnumerable&lt;Movie&gt; o
 
 ### Additional resources
 
-- [Tag Helpers](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2)
-- [Globalization and localization](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.2)
+- [Tag Helpers](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2)
+- [Globalization and localization](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.2)
 
 ## Work with SQL in ASP.NET Core
 
-The MvcMovieContext object handles the task of connecting to the database and mapping Movie objects to database records. The database context is registered with the [Dependency Injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) container in the ConfigureServices method in the Startup.cs file:
+The MvcMovieContext object handles the task of connecting to the database and mapping Movie objects to database records. The database context is registered with the [Dependency Injection](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) container in the ConfigureServices method in the Startup.cs file:
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-2.2&tabs=visual-studio)
 
 C#Copy
 
@@ -1512,7 +1504,7 @@ options.UseSqlServer(Configuration.GetConnectionString("MvcMovieContext")));
 
 }
 
-The ASP.NET Core [Configuration](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) system reads the ConnectionString. For local development, it gets the connection string from the appsettings.json file:
+The ASP.NET Core [Configuration](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) system reads the ConnectionString. For local development, it gets the connection string from the appsettings.json file:
 
 JSONCopy
 
@@ -1522,7 +1514,7 @@ JSONCopy
 
 }
 
-- [Visual Studio Code / Visual Studio for Mac](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code / Visual Studio for Mac](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-2.2&tabs=visual-studio)
 
 C#Copy
 
@@ -1552,7 +1544,7 @@ services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version\_2\_2);
 
 }
 
-The ASP.NET Core [Configuration](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) system reads the ConnectionString. For local development, it gets the connection string from the appsettings.json file:
+The ASP.NET Core [Configuration](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) system reads the ConnectionString. For local development, it gets the connection string from the appsettings.json file:
 
 JSONCopy
 
@@ -1564,9 +1556,9 @@ JSONCopy
 
 CONTINUE…
 
-When you deploy the app to a test or production server, you can use an environment variable or another approach to set the connection string to a real SQL Server. See [Configuration](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) for more information.
+When you deploy the app to a test or production server, you can use an environment variable or another approach to set the connection string to a real SQL Server. See [Configuration](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) for more information.
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-2.2&tabs=visual-studio)
 
 ### SQL Server Express LocalDB
 
@@ -1583,16 +1575,15 @@ Note the key icon next to ID. By default, EF will make a property named ID th
 - Right click on the Movie table &gt; View Data
 <!-- image -->
 <!-- image -->
-
-- [Visual Studio Code / Visual Studio for Mac](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code / Visual Studio for Mac](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-2.2&tabs=visual-studio)
 
 ### SQLite
 
-The [SQLite](https://www.sqlite.org/) website states:
+The [SQLite](https:/www.sqlite.org) website states:
 
 SQLite is a self-contained, high-reliability, embedded, full-featured, public-domain, SQL database engine. SQLite is the most used database engine in the world.
 
-There are many third party tools you can download to manage and view a SQLite database. The image below is from [DB Browser for SQLite](http://sqlitebrowser.org/) .
+There are many third party tools you can download to manage and view a SQLite database. The image below is from [DB Browser for SQLite](http:/sqlitebrowser.org) .
 
 CONTINUE…
 
@@ -1804,17 +1795,15 @@ WebHost.CreateDefaultBuilder(args)
 
 Test the app
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-2.2&tabs=visual-studio)
-
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-2.2&tabs=visual-studio)
 - Delete all the records in the DB. You can do this with the delete links in the browser or from SSOX.
 - Force the app to initialize (call the methods in the Startup class) so the seed method runs. To force initialization, IIS Express must be stopped and restarted. You can do this with any of the following approaches:
     - Right click the IIS Express system tray icon in the notification area and tap Exit or Stop Site
     <!-- image -->
     <!-- image -->
-        - If you were running VS in non-debug mode, press F5 to run in debug mode
-        - If you were running VS in debug mode, stop the debugger and press F5
+    - If you were running VS in debug mode, stop the debugger and press F5
 
-- [Visual Studio Code / Visual Studio for Mac](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code / Visual Studio for Mac](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-2.2&tabs=visual-studio)
 
 Delete all the records in the DB (So the seed method will run). Stop and start the app to seed the database.
 
@@ -1868,9 +1857,9 @@ public decimal Price { get; set; }
 
 }
 
-We cover DataAnnotations in the next tutorial. The [Display](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.metadata.displaymetadata) attribute specifies what to display for the name of a field (in this case "Release Date" instead of "ReleaseDate"). The DataType attribute specifies the type of the data (Date), so the time information stored in the field isn't displayed.
+We cover DataAnnotations in the next tutorial. The [Display](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.metadata.displaymetadata) attribute specifies what to display for the name of a field (in this case "Release Date" instead of "ReleaseDate"). The DataType attribute specifies the type of the data (Date), so the time information stored in the field isn't displayed.
 
-The [Column(TypeName = "decimal(18, 2)")] data annotation is required so Entity Framework Core can correctly map Price to currency in the database. For more information, see [Data Types](https://docs.microsoft.com/ef/core/modeling/relational/data-types) .
+The [Column(TypeName = "decimal(18, 2)")] data annotation is required so Entity Framework Core can correctly map Price to currency in the database. For more information, see [Data Types](https:/docs.microsoft.com/ef/core/modeling/relational/data-types) .
 
 Browse to the Movies controller and hold the mouse pointer over an Edit link to see the target URL.
 
@@ -1890,7 +1879,7 @@ HTMLCopy
 
 &lt;/tr&gt;
 
-[Tag Helpers](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2) enable server-side code to participate in creating and rendering HTML elements in Razor files. In the code above, the AnchorTagHelper dynamically generates the HTML href attribute value from the controller action method and route id. You use View Source from your favorite browser or use the developer tools to examine the generated markup. A portion of the generated HTML is shown below:
+[Tag Helpers](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2) enable server-side code to participate in creating and rendering HTML elements in Razor files. In the code above, the AnchorTagHelper dynamically generates the HTML href attribute value from the controller action method and route id. You use View Source from your favorite browser or use the developer tools to examine the generated markup. A portion of the generated HTML is shown below:
 
 HTMLCopy
 
@@ -1904,7 +1893,7 @@ HTMLCopy
 
 &lt;/td&gt;
 
-Recall the format for [routing](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/routing?view=aspnetcore-2.2) set in the Startup.cs file:
+Recall the format for [routing](https:/docs.microsoft.com/en-us/aspnet/core/mvc/controllers/routing?view=aspnetcore-2.2) set in the Startup.cs file:
 
 C#Copy
 
@@ -1922,7 +1911,7 @@ template: "{controller=Home}/{action=Index}/{id?}");
 
 ASP.NET Core translates https://localhost:5001/Movies/Edit/4 into a request to the Edit action method of the Movies controller with the parameter Id of 4. (Controller methods are also known as action methods.)
 
-[Tag Helpers](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2) are one of the most popular new features in ASP.NET Core. For more information, see [Additional resources](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/controller-methods-views?view=aspnetcore-2.2) .
+[Tag Helpers](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2) are one of the most popular new features in ASP.NET Core. For more information, see [Additional resources](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/controller-methods-views?view=aspnetcore-2.2) .
 
 Open the Movies controller and examine the two Edit action methods. The following code shows the HTTP GET Edit method, which fetches the movie and populates the edit form generated by the Edit.cshtmlRazor file.
 
@@ -2026,7 +2015,7 @@ return View(movie);
 
 }
 
-The [Bind] attribute is one way to protect against [over-posting](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/implementing-basic-crud-functionality-with-the-entity-framework-in-asp-net-mvc-application) . You should only include properties in the [Bind] attribute that you want to change. For more information, see [Protect your controller from over-posting](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/implementing-basic-crud-functionality-with-the-entity-framework-in-asp-net-mvc-application) . ViewModels provide an alternative approach to prevent over-posting.
+The [Bind] attribute is one way to protect against [over-posting](https:/docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/implementing-basic-crud-functionality-with-the-entity-framework-in-asp-net-mvc-application) . You should only include properties in the [Bind] attribute that you want to change. For more information, see [Protect your controller from over-posting](https:/docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/implementing-basic-crud-functionality-with-the-entity-framework-in-asp-net-mvc-application) . ViewModels provide an alternative approach to prevent over-posting.
 
 Notice the second Edit action method is preceded by the [HttpPost] attribute.
 
@@ -2094,13 +2083,13 @@ return View(movie);
 
 The HttpPost attribute specifies that this Edit method can be invoked only for POST requests. You could apply the [HttpGet] attribute to the first edit method, but that's not necessary because [HttpGet] is the default.
 
-The ValidateAntiForgeryToken attribute is used to [prevent forgery of a request](https://docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2) and is paired up with an anti-forgery token generated in the edit view file (Views/Movies/Edit.cshtml). The edit view file generates the anti-forgery token with the [Form Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) .
+The ValidateAntiForgeryToken attribute is used to [prevent forgery of a request](https:/docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2) and is paired up with an anti-forgery token generated in the edit view file (Views/Movies/Edit.cshtml). The edit view file generates the anti-forgery token with the [Form Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) .
 
 HTMLCopy
 
 &lt;form asp-action="Edit"&gt;
 
-The [Form Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) generates a hidden anti-forgery token that must match the [ValidateAntiForgeryToken]generated anti-forgery token in the Edit method of the Movies controller. For more information, see [Anti-Request Forgery](https://docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2) .
+The [Form Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) generates a hidden anti-forgery token that must match the [ValidateAntiForgeryToken]generated anti-forgery token in the Edit method of the Movies controller. For more information, see [Anti-Request Forgery](https:/docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2) .
 
 The HttpGet Edit method takes the movie ID parameter, looks up the movie using the Entity Framework SingleOrDefaultAsync method, and returns the selected movie to the Edit view. If a movie cannot be found, NotFound (HTTP 404) is returned.
 
@@ -2228,7 +2217,7 @@ ViewData["Title"] = "Edit";
 
 Notice how the view template has a @model MvcMovie.Models.Movie statement at the top of the file. @model MvcMovie.Models.Movie specifies that the view expects the model for the view template to be of type Movie.
 
-The scaffolded code uses several Tag Helper methods to streamline the HTML markup. The - [Label Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) displays the name of the field ("Title", "ReleaseDate", "Genre", or "Price"). The [Input Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) renders an HTML &lt;input&gt; element. The [Validation Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) displays any validation messages associated with that property.
+The scaffolded code uses several Tag Helper methods to streamline the HTML markup. The - [Label Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) displays the name of the field ("Title", "ReleaseDate", "Genre", or "Price"). The [Input Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) renders an HTML &lt;input&gt; element. The [Validation Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) displays any validation messages associated with that property.
 
 Run the application and navigate to the /Movies URL. Click an Edit link. In the browser, view the source for the page. The generated HTML for the &lt;form&gt; element is shown below.
 
@@ -2292,7 +2281,7 @@ HTMLCopy
 
 &lt;/form&gt;
 
-The &lt;input&gt; elements are in an HTML &lt;form&gt; element whose action attribute is set to post to the /Movies/Edit/id URL. The form data will be posted to the server when the Save button is clicked. The last line before the closing &lt;/form&gt; element shows the hidden [XSRF](https://docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2) token generated by the [Form Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) .
+The &lt;input&gt; elements are in an HTML &lt;form&gt; element whose action attribute is set to post to the /Movies/Edit/id URL. The form data will be posted to the server when the Save button is clicked. The last line before the closing &lt;/form&gt; element shows the hidden [XSRF](https:/docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2) token generated by the [Form Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) .
 
 ### Processing the POST Request
 
@@ -2360,29 +2349,29 @@ return View(movie);
 
 }
 
-The [ValidateAntiForgeryToken] attribute validates the hidden [XSRF](https://docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2) token generated by the anti-forgery token generator in the [Form Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2)
+The [ValidateAntiForgeryToken] attribute validates the hidden [XSRF](https:/docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2) token generated by the anti-forgery token generator in the [Form Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2)
 
-The [model binding](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-2.2) system takes the posted form values and creates a Movie object that's passed as the movie parameter. The ModelState.IsValid method verifies that the data submitted in the form can be used to modify (edit or update) a Movie object. If the data is valid, it's saved. The updated (edited) movie data is saved to the database by calling the SaveChangesAsync method of database context. After saving the data, the code redirects the user to the Index action method of the MoviesController class, which displays the movie collection, including the changes just made.
+The [model binding](https:/docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-2.2) system takes the posted form values and creates a Movie object that's passed as the movie parameter. The ModelState.IsValid method verifies that the data submitted in the form can be used to modify (edit or update) a Movie object. If the data is valid, it's saved. The updated (edited) movie data is saved to the database by calling the SaveChangesAsync method of database context. After saving the data, the code redirects the user to the Index action method of the MoviesController class, which displays the movie collection, including the changes just made.
 
-Before the form is posted to the server, client-side validation checks any validation rules on the fields. If there are any validation errors, an error message is displayed and the form isn't posted. If JavaScript is disabled, you won't have client-side validation but the server will detect the posted values that are not valid, and the form values will be redisplayed with error messages. Later in the tutorial we examine [Model Validation](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/validation?view=aspnetcore-2.2) in more detail. The [Validation Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) in the Views/Movies/Edit.cshtml view template takes care of displaying appropriate error messages.
+Before the form is posted to the server, client-side validation checks any validation rules on the fields. If there are any validation errors, an error message is displayed and the form isn't posted. If JavaScript is disabled, you won't have client-side validation but the server will detect the posted values that are not valid, and the form values will be redisplayed with error messages. Later in the tutorial we examine [Model Validation](https:/docs.microsoft.com/en-us/aspnet/core/mvc/models/validation?view=aspnetcore-2.2) in more detail. The [Validation Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) in the Views/Movies/Edit.cshtml view template takes care of displaying appropriate error messages.
 
 <!-- image -->
 
-All the HttpGet methods in the movie controller follow a similar pattern. They get a movie object (or list of objects, in the case of Index), and pass the object (model) to the view. The Create method passes an empty movie object to the Create view. All the methods that create, edit, delete, or otherwise modify data do so in the [HttpPost] overload of the method. Modifying data in an HTTP GET method is a security risk. Modifying data in an HTTP GET method also violates HTTP best practices and the architectural [REST](http://rest.elkstein.org/) pattern, which specifies that GET requests shouldn't change the state of your application. In other words, performing a GET operation should be a safe operation that has no side effects and doesn't modify your persisted data.
+All the HttpGet methods in the movie controller follow a similar pattern. They get a movie object (or list of objects, in the case of Index), and pass the object (model) to the view. The Create method passes an empty movie object to the Create view. All the methods that create, edit, delete, or otherwise modify data do so in the [HttpPost] overload of the method. Modifying data in an HTTP GET method is a security risk. Modifying data in an HTTP GET method also violates HTTP best practices and the architectural [REST](http:/rest.elkstein.org) pattern, which specifies that GET requests shouldn't change the state of your application. In other words, performing a GET operation should be a safe operation that has no side effects and doesn't modify your persisted data.
 
 ### Additional resources
 
-- [Globalization and localization](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.2)
-- [Introduction to Tag Helpers](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2)
-- [Author Tag Helpers](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/authoring?view=aspnetcore-2.2)
-- [Anti-Request Forgery](https://docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2)
-- Protect your controller from [over-posting](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/implementing-basic-crud-functionality-with-the-entity-framework-in-asp-net-mvc-application)
-- [ViewModels](http://rachelappel.com/use-viewmodels-to-manage-data-amp-organize-code-in-asp-net-mvc-applications/)
-- [Form Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2)
-- [Input Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2)
-- [Label Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2)
-- [Select Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2)
-- [Validation Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2)
+- [Globalization and localization](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.2)
+- [Introduction to Tag Helpers](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2)
+- [Author Tag Helpers](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/authoring?view=aspnetcore-2.2)
+- [Anti-Request Forgery](https:/docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2)
+- Protect your controller from [over-posting](https:/docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/implementing-basic-crud-functionality-with-the-entity-framework-in-asp-net-mvc-application)
+- [ViewModels](http:/rachelappel.com/use-viewmodels-to-manage-data-amp-organize-code-in-asp-net-mvc-applications)
+- [Form Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2)
+- [Input Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2)
+- [Label Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2)
+- [Select Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2)
+- [Validation Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2)
 
 ## Add search to an ASP.NET Core MVC app
 
@@ -2412,7 +2401,7 @@ return View(await movies.ToListAsync());
 
 }
 
-The first line of the Index action method creates a [LINQ](https://docs.microsoft.com/en-us/dotnet/standard/using-linq) query to select the movies:
+The first line of the Index action method creates a [LINQ](https:/docs.microsoft.com/en-us/dotnet/standard/using-linq) query to select the movies:
 
 C#Copy
 
@@ -2434,9 +2423,9 @@ movies = movies.Where(s =&gt; s.Title.Contains(searchString));
 
 }
 
-The s =&gt; s.Title.Contains() code above is a [Lambda Expression](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions) . Lambdas are used in method-based LINQqueries as arguments to standard query operator methods such as the [Where](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.where) method or Contains (used in the code above). LINQ queries are not executed when they're defined or when they're modified by calling a method such as Where, Contains, or OrderBy. Rather, query execution is deferred. That means that the evaluation of an expression is delayed until its realized value is actually iterated over or the ToListAsyncmethod is called. For more information about deferred query execution, see [Query Execution](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/language-reference/query-execution) .
+The s =&gt; s.Title.Contains() code above is a [Lambda Expression](https:/docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions) . Lambdas are used in method-based LINQqueries as arguments to standard query operator methods such as the [Where](https:/docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.where) method or Contains (used in the code above). LINQ queries are not executed when they're defined or when they're modified by calling a method such as Where, Contains, or OrderBy. Rather, query execution is deferred. That means that the evaluation of an expression is delayed until its realized value is actually iterated over or the ToListAsyncmethod is called. For more information about deferred query execution, see [Query Execution](https:/docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/language-reference/query-execution) .
 
-Note: The [Contains](https://docs.microsoft.com/en-us/dotnet/api/system.data.objects.dataclasses.entitycollection-1.contains) method is run on the database, not in the c# code shown above. The case sensitivity on the query depends on the database and the collation. On SQL Server, [Contains](https://docs.microsoft.com/en-us/dotnet/api/system.data.objects.dataclasses.entitycollection-1.contains) maps to [SQL LIKE](https://docs.microsoft.com/sql/t-sql/language-elements/like-transact-sql) , which is case insensitive. In SQLlite, with the default collation, it's case sensitive.
+Note: The [Contains](https:/docs.microsoft.com/en-us/dotnet/api/system.data.objects.dataclasses.entitycollection-1.contains) method is run on the database, not in the c# code shown above. The case sensitivity on the query depends on the database and the collation. On SQL Server, [Contains](https:/docs.microsoft.com/en-us/dotnet/api/system.data.objects.dataclasses.entitycollection-1.contains) maps to [SQL LIKE](https:/docs.microsoft.com/sql/t-sql/language-elements/like-transact-sql) , which is case insensitive. In SQLlite, with the default collation, it's case sensitive.
 
 Navigate to /Movies/Index. Append a query string such as ?searchString=Ghost to the URL. The filtered movies are displayed.
 
@@ -2568,7 +2557,7 @@ Title: &lt;input type="text" name="SearchString"&gt;
 
 &lt;thead&gt;
 
-The HTML &lt;form&gt; tag uses the [Form Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) , so when you submit the form, the filter string is posted to the Index action of the movies controller. Save your changes and then test the filter.
+The HTML &lt;form&gt; tag uses the [Form Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) , so when you submit the form, the filter string is posted to the Index action of the movies controller. Save your changes and then test the filter.
 
 <!-- image -->
 
@@ -2594,11 +2583,11 @@ If you add this method, the action invoker would match the [HttpPost] Index me
 
 <!-- image -->
 
-However, even if you add this [HttpPost] version of the Index method, there's a limitation in how this has all been implemented. Imagine that you want to bookmark a particular search or you want to send a link to friends that they can click in order to see the same filtered list of movies. Notice that the URL for the HTTP POST request is the same as the URL for the GET request (localhost:xxxxx/Movies/Index) -- there's no search information in the URL. The search string information is sent to the server as a [form field value](https://developer.mozilla.org/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data) . You can verify that with the browser Developer tools or the excellent [Fiddler tool](http://www.telerik.com/fiddler) . The image below shows the Chrome browser Developer tools:
+However, even if you add this [HttpPost] version of the Index method, there's a limitation in how this has all been implemented. Imagine that you want to bookmark a particular search or you want to send a link to friends that they can click in order to see the same filtered list of movies. Notice that the URL for the HTTP POST request is the same as the URL for the GET request (localhost:xxxxx/Movies/Index) -- there's no search information in the URL. The search string information is sent to the server as a [form field value](https:/developer.mozilla.org/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data) . You can verify that with the browser Developer tools or the excellent [Fiddler tool](http:/www.telerik.com/fiddler) . The image below shows the Chrome browser Developer tools:
 
 <!-- image -->
 
-You can see the search parameter and [XSRF](https://docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2) token in the request body. Note, as mentioned in the previous tutorial, the [Form Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) generates an [XSRF](https://docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2) anti-forgery token. We're not modifying data, so we don't need to validate the token in the controller method.
+You can see the search parameter and [XSRF](https:/docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2) token in the request body. Note, as mentioned in the previous tutorial, the [Form Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) generates an [XSRF](https:/docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2) anti-forgery token. We're not modifying data, so we don't need to validate the token in the controller method.
 
 Because the search parameter is in the request body and not the URL, you can't capture that search information to bookmark or share with others. Fix this by specifying the request should be HTTP GET:
 
@@ -2895,7 +2884,7 @@ Test the app by searching by genre, by movie title, and by both:
 
 ## Add a new field to an ASP.NET Core MVC app
 
-In this section [Entity Framework](https://docs.microsoft.com/ef/core/get-started/aspnetcore/new-db) Code First Migrations is used to:
+In this section [Entity Framework](https:/docs.microsoft.com/ef/core/get-started/aspnetcore/new-db) Code First Migrations is used to:
 
 - Add a new field to the model.
 - Migrate the new field to the database.
@@ -3033,13 +3022,13 @@ HTMLCopy
 
 Update the /Views/Movies/Create.cshtml with a Rating field.
 
-- [Visual Studio / Visual Studio for Mac](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/new-field?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio / Visual Studio for Mac](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/new-field?view=aspnetcore-2.2&tabs=visual-studio)
 
-You can copy/paste the previous "form group" and let intelliSense help you update the fields. IntelliSense works with [Tag Helpers](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2) .
+You can copy/paste the previous "form group" and let intelliSense help you update the fields. IntelliSense works with [Tag Helpers](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2) .
 
 <!-- image -->
 
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/new-field?view=aspnetcore-2.2&tabs=visual-studio) (N/A)
+- [Visual Studio Code](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/new-field?view=aspnetcore-2.2&tabs=visual-studio) (N/A)
 
 CONTINUE…
 
@@ -3077,7 +3066,7 @@ There are a few approaches to resolving the error:
 
 For this tutorial, Code First Migrations is used.
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/new-field?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/new-field?view=aspnetcore-2.2&tabs=visual-studio)
 
 From the Tools menu, select NuGet Package Manager &gt; Package Manager Console.
 
@@ -3093,7 +3082,7 @@ Update-Database
 
 The Add-Migration command tells the migration framework to examine the current Movie model with the current Movie DB schema and create the necessary code to migrate the DB to the new model.
 
-- [Visual Studio Code / Visual Studio for Mac](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/new-field?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code / Visual Studio for Mac](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/new-field?view=aspnetcore-2.2&tabs=visual-studio)
 
 **Note**
 
@@ -3106,9 +3095,9 @@ Many schema change operations are not supported by the EF Core SQLite provider. 
 
 For more information, see the following resources:
 
-- [SQLite EF Core Database Provider Limitations](https://docs.microsoft.com/ef/core/providers/sqlite/limitations)
-- [Customize migration code](https://docs.microsoft.com/ef/core/managing-schemas/migrations/)
-- [Data seeding](https://docs.microsoft.com/ef/core/modeling/data-seeding)
+- [SQLite EF Core Database Provider Limitations](https:/docs.microsoft.com/ef/core/providers/sqlite/limitations)
+- [Customize migration code](https:/docs.microsoft.com/ef/core/managing-schemas/migrations)
+- [Data seeding](https:/docs.microsoft.com/ef/core/modeling/data-seeding)
 
 Run the following command:
 
@@ -3135,7 +3124,7 @@ In this section:
 
 ### Keeping things DRY
 
-One of the design tenets of MVC is [DRY](https://wikipedia.org/wiki/Don%27t_repeat_yourself) ("Don't Repeat Yourself"). ASP.NET Core MVC encourages you to specify functionality or behavior only once, and then have it be reflected everywhere in an app. This reduces the amount of code you need to write and makes the code you do write less error prone, easier to test, and easier to maintain.
+One of the design tenets of MVC is [DRY](https:/wikipedia.org/wiki/Don%27t_repeat_yourself) ("Don't Repeat Yourself"). ASP.NET Core MVC encourages you to specify functionality or behavior only once, and then have it be reflected everywhere in an app. This reduces the amount of code you need to write and makes the code you do write less error prone, easier to test, and easier to maintain.
 
 The validation support provided by MVC and Entity Framework Core Code First is a good example of the DRY principle in action. You can declaratively specify validation rules in one place (in the model class) and the rules are enforced everywhere in the app.
 
@@ -3211,13 +3200,13 @@ Tap the Create New link to add a new movie. Fill out the form with some invali
 
 **Note**
 
-You may not be able to enter decimal commas in decimal fields. To support [**jQuery validation**](https://jqueryvalidation.org/) for non-English locales that use a comma (",") for a decimal point, and non US-English date formats, you must take steps to globalize your app. This [**GitHub issue 4076**](https://github.com/aspnet/Docs/issues/4076) for instructions on adding decimal comma.
+You may not be able to enter decimal commas in decimal fields. To support [**jQuery validation**](https:/jqueryvalidation.org) for non-English locales that use a comma (",") for a decimal point, and non US-English date formats, you must take steps to globalize your app. This [**GitHub issue 4076**](https:/github.com/aspnet/Docs/issues/4076) for instructions on adding decimal comma.
 
 Notice how the form has automatically rendered an appropriate validation error message in each field containing an invalid value. The errors are enforced both client-side (using JavaScript and jQuery) and server-side (in case a user has JavaScript disabled).
 
 A significant benefit is that you didn't need to change a single line of code in the MoviesController class or in the Create.cshtml view in order to enable this validation UI. The controller and views you created earlier in this tutorial automatically picked up the validation rules that you specified by using validation attributes on the properties of the Movie model class. Test validation using the Edit action method, and the same validation is applied.
 
-The form data isn't sent to the server until there are no client side validation errors. You can verify this by putting a break point in the HTTP Post method, by using the [Fiddler tool](http://www.telerik.com/fiddler) , or the [F12 Developer tools](https://developer.microsoft.com/microsoft-edge/platform/documentation/f12-devtools-guide/) .
+The form data isn't sent to the server until there are no client side validation errors. You can verify this by putting a break point in the HTTP Post method, by using the [Fiddler tool](http:/www.telerik.com/fiddler) , or the [F12 Developer tools](https:/developer.microsoft.com/microsoft-edge/platform/documentation/f12-devtools-guide) .
 
 ### How validation works
 
@@ -3309,7 +3298,7 @@ HTMLCopy
 
 The preceding markup is used by the action methods to display the initial form and to redisplay it in the event of an error.
 
-The [Input Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) uses the DataAnnotations attributes and produces HTML attributes needed for jQuery Validation on the client side. The [Validation Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) displays validation errors. See [Validation](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/validation?view=aspnetcore-2.2) for more information.
+The [Input Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) uses the DataAnnotations attributes and produces HTML attributes needed for jQuery Validation on the client side. The [Validation Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) displays validation errors. See [Validation](https:/docs.microsoft.com/en-us/aspnet/core/mvc/models/validation?view=aspnetcore-2.2) for more information.
 
 What's really nice about this approach is that neither the controller nor the Create view template knows anything about the actual validation rules being enforced or about the specific error messages displayed. The validation rules and the error strings are specified only in the Movie class. These same validation rules are automatically applied to the Edit view and any other views templates you might create that edit your model.
 
@@ -3399,10 +3388,10 @@ In the next part of the series, we review the app and make some improvements to 
 
 ### Additional resources
 
-- [Working with Forms](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2)
-- [Globalization and localization](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.2)
-- [Introduction to Tag Helpers](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2)
-- [Author Tag Helpers](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/authoring?view=aspnetcore-2.2)
+- [Working with Forms](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2)
+- [Globalization and localization](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.2)
+- [Introduction to Tag Helpers](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2)
+- [Author Tag Helpers](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/authoring?view=aspnetcore-2.2)
 
 ## Examine the Details and Delete methods of an ASP.NET Core app
 
@@ -3552,4 +3541,4 @@ public async Task&lt;IActionResult&gt; Delete(int id, bool notUsed)
 
 #### Publish to Azure
 
-For information on deploying to Azure, see [Tutorial: Build a .NET Core and SQL Database web app in Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb) .
+For information on deploying to Azure, see [Tutorial: Build a .NET Core and SQL Database web app in Azure App Service](https:/docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb) .

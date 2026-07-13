@@ -157,5 +157,3 @@ Comprehensive
 | SET TRANSACTION       | The SET TRANSACTION command is used to configure properties for the current transaction, such as isolation level and transaction mode. | SET TRANSACTION [ISOLATION LEVEL { READ COMMITTED &#124; SERIALIZABL E }] | BEGIN TRANSACTION; Set the isolation level to READ COMMITTED SET TRANSACTION ISOLATION LEVEL READ COMMITTED; SQL statements and changes within the transaction INSERT INTO employees (name, age) VALUES ('Emily', 35); UPDATE products SET price = 60.00 WHERE category = 'Electronics'; COMMIT;                                                                                               |
 
 <!-- image -->
-
-<!-- image -->

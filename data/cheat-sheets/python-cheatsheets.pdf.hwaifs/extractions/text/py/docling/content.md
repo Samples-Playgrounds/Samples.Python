@@ -220,11 +220,11 @@ notebooks. Ihere
 
 Python For Data Science
 
-· Insert Cell Above
+• Insert Cell Above
 
 Open...
 
-· ·Restart
+• •Restart
 
 IRkernel
 
@@ -232,13 +232,13 @@ Copy Cells
 
 Uulia
 
-Run Cells and Select Below ·
+Run Cells and Select Below •
 
 Toggle Toolbar
 
-*· Paste Cells Above y linvter Noteno
+*• Paste Cells Above y linvter Noteno
 
-Restart &amp; Clear Output · · :
+Restart &amp; Clear Output • • :
 
 Jupyter Notebook
 
@@ -250,23 +250,23 @@ File
 
 Keyboard Shortcuts
 
-· Toggle Line Numbers
+• Toggle Line Numbers
 
-· · ... Download Widget State
+• • ... Download Widget State
 
-· · Run Cells and Insert Below
+• • Run Cells and Insert Below
 
 Learn More Python for Data Science Interactively at  www.DataCamp.com
 
 Paste Cells &amp; Replace
 
-· Run All Above
+• Run All Above
 
 Save and Checkpoint
 
 Notebook Help
 
-· Markdown
+• Markdown
 
 4
 
@@ -274,11 +274,11 @@ Notebook Help
 
 2
 
-· · Shutdown
+• • Shutdown
 
 3
 
-Delete Cells . ·
+Delete Cells . •
 
 Undo Delete Cells
 
@@ -286,9 +286,9 @@ Run All Below
 
 Change kernel
 
-..·'
+..•'
 
-Revert to Checkpoint ·
+Revert to Checkpoint •
 
 Jupyter-contrib
 
@@ -300,23 +300,23 @@ Download as
 
 Create new notebook
 
-· Move Cell Up
+• Move Cell Up
 
 Move Cell Down
 
-· NumPy
+• NumPy
 
 Close and Halt
 
 Make a copy of the current notebook
 
-· pandas
+• pandas
 
-· Cut Cell Attachments
+• Cut Cell Attachments
 
 About
 
-..·°
+..•°
 
 Save current notebook and record checkpoint
 
@@ -368,7 +368,7 @@ Cheat Sheet
 
 Help
 
-··
+••
 
 5
 
@@ -458,11 +458,11 @@ Command Mode:
 
 1
 
-2
-
 3
 
 4
+
+2
 
 Edit Mode:
 
@@ -610,29 +610,29 @@ Pandas help topics
 
 . Interrupt kernel
 
-. Restart kernel
-
 10
 
-. Display characteristics
+. Restart kernel
 
 11
 
-. Open command palette
-
 12
-
-. Current kernel
 
 13
 
-. Kernel status
-
 14
 
-. Log out from notebook server
-
 15
+
+. Display characteristics
+
+. Open command palette
+
+. Current kernel
+
+. Kernel status
+
+. Log out from notebook server
 
 List of built-in keyboard shortcuts
 
@@ -839,15 +839,14 @@ Create stacked column-wise arrays
 Create stacked column-wise arrays
 
 - Split the array horizontally at the 3rd index
-- Split the array vertically at the 2nd index
+
+Split the array vertically at the 2nd index
 
 ```
 T ransposing Array >>> i = np.transpose(b) >>> i.T Changing Array Shape >>> b.ravel() >>> g.reshape(3,-2) Adding/Removing Elements >>> h.resize((2,6)) >>> np.append(h,g) >>> np.insert(a, 1, 5) >>> np.delete(a,[1]) Combining Arrays >>> np.concatenate((a,d),axis=0) array([ 1,  2,  3, 10, 15, 20]) >>> np.vstack((a,b)) array([[ 1. ,  2. ,  3. ], [ 1.5,  2. ,  3. ], [ 4. ,  5. ,  6. ]]) >>> np.r_[e,f] >>> np.hstack((e,f)) array([[ 7.,  7.,  1.,  0.], [ 7.,  7.,  0.,  1.]]) >>> np.column_stack((a,d)) array([[ 1, 10], [ 2, 15], [ 3, 20]]) >>> np.c_[a,d] Spli/tting Arrays >>> np.hsplit(a,3) [array([1]),array([2]),array([3])] >>> np.vsplit(c,2) [array([[[ 1.5,  2. ,  1. ], [ 4. ,  5. ,  6. ]]]), array([[[ 3.,  2.,  3.], [ 4.,  5.,  6.]]])]
 ```
 
 ## DataCamp
-
-Learn Python for Data Science Interactively
 
 <!-- image -->
 
@@ -859,9 +858,9 @@ Learn More Python for Data Science Interactively at  www.datacamp.com
 
 SciPy
 
-SciPy library is one of the core packages for
+The library is one of the core packages for
 
-The scientific computing that provides mathematical
+SciPy scientific computing that provides mathematical
 
 algorithms and convenience functions built on the
 
@@ -1013,11 +1012,11 @@ NumPy
 
 Linear Algebra
 
-You'll use the sparse
+You'll use the linalg
 
-linalg and
+sparse modules. Note that
 
-modules. Note that
+and
 
 &gt;&gt;&gt; from scipy import linalg, sparse
 
@@ -1359,7 +1358,7 @@ NumPy
 
 ## Pandas Basics
 
-Learn Python for Data Science Interactively at  www.DataCamp.com
+Learn Python for Data Science
 
 ## Pandas
 
@@ -1379,7 +1378,11 @@ Use the following import convention:
 
 A one-dimensional labeled array capable of holding any data type
 
+Interactively
+
 <!-- image -->
+
+at  www.DataCamp.com
 
 Index
 
@@ -1446,11 +1449,11 @@ By Position >>> df.iloc([0],[0]) Select single value by row & 'Belgium' column >
 ## Read and Write to SQL Query or Database Table
 
 ```
->>> from sqlalchemy import create_engine >>> engine = create_engine('sqlite:///:memory:') >>> pd.read_sql("SELECT * FROM my_table;", engine) >>> pd.read_sql_table('my_table', engine)
+>>> from sqlalchemy import create_engine >>> engine = create_engine('sqlite:///:memory:') >>> pd.read_sql("SELECT * FROM my_table;", engine) >>> pd.read_sql_table('my_table', engine) >>> pd.read_sql_query("SELECT * FROM my_table;", engine)
 ```
 
 ```
->>> pd.read_sql_query("SELECT * FROM my_table;", engine) >>> pd.to_sql('myDf', engine) read_sql() is a convenience wrapper around read_sql_table() and read_sql_query()
+>>> pd.to_sql('myDf', engine) read_sql() is a convenience wrapper around read_sql_table() and read_sql_query()
 ```
 
 ## Dropping
@@ -1650,11 +1653,7 @@ Metric scoring functions
 ## Mean Absolute Error
 
 ```
->>> from sklearn.metrics import mean_absolute_error >>> y_true = [3, -0.5, 2] >>> mean_absolute_error(y_true, y_pred) Mean Squared Error >>> from sklearn.metrics import mean_squared_error >>> mean_squared_error(y_test, y_pred) R² Score >>> from sklearn.metrics import r2_score
-```
-
-```
->>> r2_score(y_true, y_pred)
+>>> from sklearn.metrics import mean_absolute_error >>> y_true = [3, -0.5, 2] >>> mean_absolute_error(y_true, y_pred) Mean Squared Error >>> from sklearn.metrics import mean_squared_error >>> mean_squared_error(y_test, y_pred) R² Score >>> from sklearn.metrics import r2_score >>> r2_score(y_true, y_pred)
 ```
 
 ## Clustering Metrics
@@ -2232,11 +2231,7 @@ Also see Data
 ## Components
 
 ```
->>> from bokeh.embed import components
-```
-
-```
->>> script, div = components(p)
+>>> from bokeh.embed import components >>> script, div = components(p)
 ```
 
 ## PNG

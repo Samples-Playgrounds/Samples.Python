@@ -1,99 +1,99 @@
-Basic Tags
+## Basic Tags
 
-<html> </html>
+&lt;html&gt; &lt;/html&gt;
 
 Creates an HTML document
 
-<head> </head>
+&lt;head&gt; &lt;/head&gt;
 
-Sets off the title & other info that isn't displayed
+Sets off the title &amp; other info that isn't displayed
 
-<body> </body>
+&lt;body&gt; &lt;/body&gt;
 
 Sets off the visible portion of the document
 
-<title> </title>
+&lt;title&gt; &lt;/title&gt;
 
 Puts name of the document in the title bar; when bookmarking pages, this is what is bookmarked
 
-Body attributes (only used in email newsletters)
+## Body attributes (only used in email newsletters)
 
-- <body bgcolor=?> Sets background color, using name or hex value
-- <body text=?> Sets text color, using name or hex value
+- &lt;body bgcolor=?&gt; Sets background color, using name or hex value
+- &lt;body text=?&gt; Sets text color, using name or hex value
 
-<body link=?>
+&lt;body link=?&gt;
 
 Sets color of links, using name or hex value
 
-<body vlink=?>
+&lt;body vlink=?&gt;
 
 Sets color of visited links, using name or hex value
 
-<body alink=?>
+&lt;body alink=?&gt;
 
 Sets color of active links (while mouse-clicking)
 
-Text Tags
+## Text Tags
 
-<pre> </pre>
+&lt;pre&gt; &lt;/pre&gt;
 
 Creates preformatted text
 
-<h1> </h1> --> <h6> </h6>
+&lt;h1&gt; &lt;/h1&gt; --&gt; &lt;h6&gt; &lt;/h6&gt;
 
 Creates headlines -- H1=largest, H6=smallest
 
-<b> </b>
+&lt;b&gt; &lt;/b&gt;
 
-Creates bold text (should use <strong> instead)
+Creates bold text (should use &lt;strong&gt; instead)
 
-- <i> </i> Creates italicized text (should use <em> instead)
+- &lt;i&gt; &lt;/i&gt; Creates italicized text (should use &lt;em&gt; instead)
 
-<tt> </tt>
+&lt;tt&gt; &lt;/tt&gt;
 
 Creates typewriter-style text
 
-<code> </code>
+&lt;code&gt; &lt;/code&gt;
 
 Used to define source code, usually monospace
 
-<cite> </cite>
+&lt;cite&gt; &lt;/cite&gt;
 
 Creates a citation, usually  processed in italics
 
-<address> </address>
+&lt;address&gt; &lt;/address&gt;
 
 Creates address section, usually  processed in italics
 
-<em> </em>
+&lt;em&gt; &lt;/em&gt;
 
 Emphasizes a word (usually  processed in  italics)
 
-<strong> </strong>
+&lt;strong&gt; &lt;/strong&gt;
 
 Emphasizes a word (usually processed in bold)
 
-<font size=?> </font>
+&lt;font size=?&gt; &lt;/font&gt;
 
 Sets size of font - 1 to 7 (should use CSS instead)
 
-<font color=?> </font>
+&lt;font color=?&gt; &lt;/font&gt;
 
 Sets font color (should use CSS instead)
 
-- <font face=?> </font> Defines the font used (should use CSS instead)
+- &lt;font face=?&gt; &lt;/font&gt; Defines the font used (should use CSS instead)
 
-Links
+## Links
 
-- <a href="URL">clickable text</a> Creates a hyperlink to a Uniform Resource Locator
-- <a href="mailto:EMAIL_ADDRESS">clickable text</a> Creates a hyperlink to an email address
+- &lt;a href="URL"&gt;clickable text&lt;/a&gt; Creates a hyperlink to a Uniform Resource Locator
+- &lt;a href="mailto:EMAIL_ADDRESS"&gt;clickable text&lt;/a&gt; Creates a hyperlink to an email address
 
-<a name="NAME">
+&lt;a name="NAME"&gt;
 
 - Creates a target location within a document
-- <a href="#NAME">clickable text</a> Creates a link to that target location
+- &lt;a href="#NAME"&gt;clickable text&lt;/a&gt; Creates a link to that target location
 
-HTML Cheatsheet
+## HTML Cheatsheet
 
 | Formatting                                             |
 |--------------------------------------------------------|
@@ -108,33 +108,33 @@ HTML Cheatsheet
 | <span> </span>                                         |
 | Used to format inline content with CSS                 |
 
-Lists
+## Lists
 
-<ul> </ul>
+&lt;ul&gt; &lt;/ul&gt;
 
 Creates an unordered list
 
-<ol start=?> </ol>
+&lt;ol start=?&gt; &lt;/ol&gt;
 
 Creates an ordered list (start=xx, where xx is a counting number)
 
-<li> </li>
+&lt;li&gt; &lt;/li&gt;
 
 Encompasses each list item
 
-<dl> </dl>
+&lt;dl&gt; &lt;/dl&gt;
 
 Creates a definition list
 
-<dt>
+&lt;dt&gt;
 
 Precedes each defintion term
 
-<dd>
+&lt;dd&gt;
 
 Precedes each defintion
 
-Graphical elements
+## Graphical elements
 
 | <hr>                                                                               |
 |------------------------------------------------------------------------------------|
@@ -148,97 +148,98 @@ Graphical elements
 | <img src="URL" height=?> Sets height of image, in pixels                           |
 | <img src="URL" width=?> Sets width of image, in pixels                             |
 
-<img src="URL" alt=?>
+&lt;img src="URL" alt=?&gt;
 
 Sets the alternate text for browsers that can't process images (required by the ADA)
 
-Forms
+## Forms
 
-- <form> </form>
+- &lt;form&gt; &lt;/form&gt;
 
 Defines a form
 
-- <select multiple name=? size=?> </select> Creates a scrolling menu. Size sets the number of menu items visible before user needs to scroll.
-- <select name=?> </select> Creates a pulldown menu
-- <option> Sets off each menu item
-- <textarea name=? cols="x" rows="y"></textarea> Creates a text box area. Columns set the width; rows set the height.
-- <input type="checkbox" name=? value=?> Creates a checkbox.
-- <input type="checkbox" name=? value=? checked> Creates a checkbox which is pre-checked.
-- <input type="radio" name=? value=?> Creates a radio button.
-- <input type="radio" name=? value=? checked> Creates a radio button which is pre-checked.
-- <input type="text" name=? size=?> Creates a one-line text area.  Size sets length, in characters.
+- &lt;select multiple name=? size=?&gt; &lt;/select&gt; Creates a scrolling menu. Size sets the number of menu items visible before user needs to scroll.
+- &lt;select name=?&gt; &lt;/select&gt; Creates a pulldown menu
+- &lt;option&gt; Sets off each menu item
+- &lt;textarea name=? cols="x" rows="y"&gt;&lt;/textarea&gt; Creates a text box area. Columns set the width; rows set the height.
+- &lt;input type="checkbox" name=? value=?&gt; Creates a checkbox.
+- &lt;input type="checkbox" name=? value=? checked&gt; Creates a checkbox which is pre-checked.
+- &lt;input type="radio" name=? value=?&gt; Creates a radio button.
+- &lt;input type="radio" name=? value=? checked&gt; Creates a radio button which is pre-checked.
+- &lt;input type="text" name=? size=?&gt; Creates a one-line text area.  Size sets length, in characters.
 - Creates a submit button.  Value sets the text in the
-- <input type="submit" value=?> submit button.
-- <input type="image" name=? src=? border=? alt=?> Creates a submit button using an image.
-- <input type="reset"> Creates a reset button
-- Tables (use only for data layout - use CSS for page layout) <table> </table> Creates a table
+- &lt;input type="submit" value=?&gt; submit button.
+- &lt;input type="image" name=? src=? border=? alt=?&gt; Creates a submit button using an image.
+- &lt;input type="reset"&gt; Creates a reset button
+- Tables (use only for data layout - use CSS for page layout) &lt;table&gt; &lt;/table&gt; Creates a table
 
-<tr> </tr>
+&lt;tr&gt; &lt;/tr&gt;
 
 Sets off each row in a table
 
-<td> </td>
+&lt;td&gt; &lt;/td&gt;
 
 Sets off each cell in a row
 
-<th> </th>
+&lt;th&gt; &lt;/th&gt;
 
 Sets off the table header (a normal cell with bold, centered text)
 
-HTML Cheatsheet
+## HTML Cheatsheet
 
-HTML5 input tag attributes
+## HTML5 input tag attributes
 
 (not all browsers support; visit http://caniuse.com for details)
 
-- <input type="email" name=?> Sets a single-line textbox for email addresses
+- &lt;input type="email" name=?&gt; Sets a single-line textbox for email addresses
 
-<input type="url" name=?>
+&lt;input type="url" name=?&gt;
 
 Sets a single-line textbox for URLs
 
-- <input type="number" name=?> Sets a single-line textbox for a number
-- <input type="range" name=?> Sets a single-line text box for a range of numbers
-- <input type="date/month/week/time" name=?> Sets a single-line text box with a calendar showing the date/month/week/time
-- <input type="search" name=?> Sets a single-line text box for searching
-- <input type="color" name=?> Sets a single-line text box for picking a color
+- &lt;input type="number" name=?&gt; Sets a single-line textbox for a number
+- &lt;input type="range" name=?&gt; Sets a single-line text box for a range of numbers
+- &lt;input type="date/month/week/time" name=?&gt; Sets a single-line text box with a calendar showing the date/month/week/time
+- &lt;input type="search" name=?&gt; Sets a single-line text box for searching
+- &lt;input type="color" name=?&gt; Sets a single-line text box for picking a color
 
-Table attributes (only use for email newsletters)
+## Table attributes (only use for email newsletters)
 
-<table border=?>
+&lt;table border=?&gt;
 
-- Sets the width of the border around table cells <table cellspacing=?> Sets amount of space between table cells
-- <table cellpadding=?>
+- Sets the width of the border around table cells &lt;table cellspacing=?&gt; Sets amount of space between table cells
+
+&lt;table cellpadding=?&gt;
 
 Sets amount of space between a cell's border and its contents
 
-<table width=?>
+&lt;table width=?&gt;
 
-- Sets width of the table in pixels or as a percentage <tr align=?>
+- Sets width of the table in pixels or as a percentage &lt;tr align=?&gt;
 - Sets alignment for cells within the row
 
 (left/center/right)
 
-- <td align=?>
+- &lt;td align=?&gt;
 
 Sets alignment for cells (left/center/right)
 
-- <tr valign=?> Sets vertical alignment for cells within the row
+- &lt;tr valign=?&gt; Sets vertical alignment for cells within the row
 
 (top/middle/bottom)
 
-- <td valign=?>
+&lt;td valign=?&gt;
 
 Sets vertical alignment for cell (top/middle/bottom)
 
-<td rowspan=?>
+&lt;td rowspan=?&gt;
 
 Sets number of rows a cell should span (default=1)
 
-- <td colspan=?>
+- &lt;td colspan=?&gt;
 
 Sets number of columns a cell should span
 
-<td nowrap>
+&lt;td nowrap&gt;
 
 Prevents lines within a cell from being broken to fit

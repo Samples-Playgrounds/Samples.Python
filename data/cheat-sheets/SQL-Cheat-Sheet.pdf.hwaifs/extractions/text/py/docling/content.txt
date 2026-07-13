@@ -1,8 +1,8 @@
-SQL cheat sheet
+## SQL cheat sheet
 
 Comprehensive
 
-Data Manipulation Language DML Commands
+## Data Manipulation Language DML Commands
 
 | Command   | Description                                                       | Syntax                                                                    | Example                                                                    |
 |-----------|-------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|
@@ -11,7 +11,7 @@ Data Manipulation Language DML Commands
 | UPDATE    | The UPDATE command is used to modify existing records in a table. | UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition; | UPDATE employees SET employee_name = 'John Doe', department = 'Marketing'; |
 | DELETE    | The DELETE command removes records from a table.                  | DELETE FROM table_name WHERE condition;                                   | DELETE FROM employees WHERE employee_name = 'John Doe';                    |
 
-Data Definition Language DDL Commands
+## Data Definition Language DDL Commands
 
 | Command   | Description                                                                                               | Syntax                                                            | Example                                                                                                         |
 |-----------|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -20,14 +20,14 @@ Data Definition Language DDL Commands
 | DROP      | The DROP command is used to drop an existing table in a database.                                         | DROP TABLE table_name;                                            | DROP TABLE customers;                                                                                           |
 | TRUNCATE  | The TRUNCATE command is used to delete the data inside a table, but not the table itself.                 | TRUNCATE TABLE table_name;                                        | TRUNCATE TABLE customers;                                                                                       |
 
-Data Control Language DCL Commands
+## Data Control Language DCL Commands
 
 | Command   | Description                                                                              | Syntax                                              | Example                                             |
 |-----------|------------------------------------------------------------------------------------------|-----------------------------------------------------|-----------------------------------------------------|
 | GRANT     | The GRANT command is used to give specific privileges to users or roles.                 | GRANT SELECT, INSERT ON table_name TO user_name;    | GRANT SELECT, INSERT ON employees TO 'John Doe';    |
 | REVOKE    | The REVOKE command is used to take away privileges previously granted to users or roles. | REVOKE SELECT, INSERT ON table_name FROM user_name; | REVOKE SELECT, INSERT ON employees FROM 'John Doe'; |
 
-Querying Data Commands
+## Querying Data Commands
 
 | Command          | Description                                                                                                                                     | Syntax                                                                              | Example                                                                        |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
@@ -37,7 +37,7 @@ Querying Data Commands
 | GROUP BY Clause  | The GROUP BY clause groups rows based on the values in a specified column. It is often used with aggregate functions like COUNT, SUM, AVG, etc. | SELECT column_name, COUNT(*) FROM table_name GROUP BY column_name;                  | SELECT category, COUNT(*) FROM products GROUP BY category;                     |
 | HAVING Clause    | The HAVING clause filters grouped results based on a specified condition.                                                                       | SELECT column_name, COUNT(*) FROM table_name GROUP BY column_name HAVING condition; | SELECT category, COUNT(*) FROM products GROUP BY category HAVING COUNT(*) > 5; |
 
-Joining Commands
+## Joining Commands
 
 | Command                     | Description                                                                                                                          | Syntax                                                                   | Example                                                                                                                                                                                                   |
 |-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -49,7 +49,7 @@ Joining Commands
 | SELF JOIN                   | The SELF JOIN command joins a table with itself.                                                                                     | SELECT * FROM table1 t1, table1 t2 WHERE t1.column = t2.column;          | SELECT * FROM employees t1, employees t2 WHERE t1.employee_id = t2.employee_id;                                                                                                                           |
 | NATURAL JOIN                | The NATURAL JOIN command matches columns with the same name in both tables.                                                          | SELECT * FROM table1 NATURAL JOIN table2;                                | SELECT * FROM employees NATURAL JOIN departments;                                                                                                                                                         |
 
-Subqueries in SQL
+## Subqueries in SQL
 
 | Command   | Description                                                                                                                                  | Syntax                                                    | Example                                                                                   |
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------------------------------------------|
@@ -57,7 +57,7 @@ Subqueries in SQL
 | ANY       | The ANY command is used to compare a value to any value returned by a subquery. It can be used with comparison operators like =, >, <, etc.  | SELECT column(s) FROM table WHERE value < ANY (subquery); | SELECT * FROM products WHERE price < ANY (SELECT unit_price FROM supplier_products);      |
 | ALL       | The ALL command is used to compare a value to all values returned by a subquery. It can be used with comparison operators like =, >, <, etc. | SELECT column(s) FROM table WHERE value > ALL (subquery); | SELECT * FROM orders WHERE order_amount > ALL (SELECT total_amount FROM previous_orders); |
 
-Aggregate Functions Commands
+## Aggregate Functions Commands
 
 | Command   | Description                                                                                  | Syntax                                     | Example                           |
 |-----------|----------------------------------------------------------------------------------------------|--------------------------------------------|-----------------------------------|
@@ -67,7 +67,7 @@ Aggregate Functions Commands
 | MIN()     | The MIN command returns the minimum (lowest) value in a specified column.                    | SELECT MIN(column_name) FROM table_name;   | SELECT MIN(price) FROM products;  |
 | MAX()     | The MAX command returns the maximum (highest) value in a specified column.                   | SELECT MAX(column_name) FROM table_name;   | SELECT MAX(price) FROM products;  |
 
-String Functions in SQL
+## String Functions in SQL
 
 | Command                | Description                                                                                       | Syntax                                                                                                       | Example                                                                                                    |
 |------------------------|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -81,7 +81,7 @@ String Functions in SQL
 | RIGHT()                | The RIGHT command returns a specified number of characters from the right of a string.            | SELECT RIGHT(string, num_characters) AS right_string FROM table_name;                                        | SELECT RIGHT(order_number, 4) AS right_order_number FROM orders;                                           |
 | REPLACE()              | The REPLACE command replaces occurrences of a substring within a string.                          | SELECT REPLACE(string, old_substring, new_substring) AS replaced_string FROM table_name;                     | SELECT REPLACE(description, 'old_string', 'new_string') AS replaced_description FROM product_descriptions; |
 
-Date and Time SQL Commands
+## Date and Time SQL Commands
 
 | Command               | Description                                                                                                                  | Syntax                                                             | Example                                                                                                                    |
 |-----------------------|------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -95,7 +95,7 @@ Date and Time SQL Commands
 | TIMESTAMPDIFF()       | The TIMESTAMPDIFF command calculates the difference between two timestamps in a specified unit (e.g., days, hours, minutes). | SELECT TIMESTAMPDIFF(unit, timestamp1, timestamp2) AS difference;  | SELECT TIMESTAMPDIFF(DAY, '2024-04-10', '2024-04-11') AS difference;                                                       |
 | DATEDIFF()            | The DATEDIFF command calculates the difference in days between two dates.                                                    | SELECT DATEDIFF(date1, date2) AS difference_in_days;               | SELECT DATEDIFF('2024-04-11', '2024-04-10') AS difference_in_days;                                                         |
 
-Conditional Expressions
+## Conditional Expressions
 
 | Command             | Description                                                                        | Syntax                                                                                                                                    | Example                                                                                                                                                                                        |
 |---------------------|------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -104,7 +104,7 @@ Conditional Expressions
 | COALESCE() Function | The COALESCE function returns the first non-null value from a list of values.      | SELECT COALESCE(value1, value2,) AS alias FROM table_name;                                                                                | SELECT COALESCE(first_name, middle_name) AS preferred_name FROM employees;                                                                                                                     |
 | NULLIF() Function   | The NULLIF function returns null if two specified expressions are equal.           | SELECT NULLIF(expression1, expression2) AS alias FROM table_name;                                                                         | SELECT NULLIF(total_amount, discounted_amount) AS diff_amount FROM orders;                                                                                                                     |
 
-Set Operations
+## Set Operations
 
 | Command   | Description                                                                                                          | Syntax                                                                             | Example                                                                                            |
 |-----------|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
@@ -112,7 +112,7 @@ Set Operations
 | INTERSECT | The INTERSECT operator returns the common rows that appear in both result sets.                                      | SELECT column1, column2 FROM table1 INTERSECT SELECT column1, column2 FROM table2; | SELECT first_name, last_name FROM customers INTERSECT SELECT first_name, last_name FROM employees; |
 | EXCEPT    | The EXCEPT operator returns the distinct rows from the left result set that are not present in the right result set. | SELECT column1, column2 FROM table1 EXCEPT SELECT column1, column2 FROM table2;    | SELECT first_name, last_name FROM customers EXCEPT SELECT first_name, last_name FROM employees;    |
 
-Transaction Control Commands
+## Transaction Control Commands
 
 | Command   | Description                                                                                                     | Syntax    | Example                                                                                                                                                                                                |
 |-----------|-----------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

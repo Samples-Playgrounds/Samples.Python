@@ -204,16 +204,16 @@ Below are some additional resources for all of your gdb needs (the bullet points
 
 ## 5.1 Official Documentation
 
-- [Viewing the stack](https://sourceware.org/gdb/current/onlinedocs/gdb/Stack.html#Stack)
-- [Running programs](https://sourceware.org/gdb/current/onlinedocs/gdb/Running.html#Running)
-- [Stopping execution](https://sourceware.org/gdb/current/onlinedocs/gdb/Stopping.html#Stopping)
-- [Viewing program source](https://sourceware.org/gdb/current/onlinedocs/gdb/Source.html#Source)
-- [Viewing program data](https://sourceware.org/gdb/current/onlinedocs/gdb/Data.html#Data)
+- Viewing the stack
+- Running programs
+- Stopping execution
+- Viewing program source
+- Viewing program data
 
 ## 5.2 Tutorials
 
-- [Using GNU's GDB Debugger](http://www.dirac.org/linux/gdb/)
-- [Beej's Quick Guide to GDB](https://beej.us/guide/bggdb/)
+- Using GNU's GDB Debugger
+- Beej's Quick Guide to GDB
 
 ## 6 Tips
 

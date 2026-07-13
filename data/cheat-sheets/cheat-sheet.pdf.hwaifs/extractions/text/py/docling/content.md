@@ -13,8 +13,10 @@ git clone <url>
 ## Prepare to Commit
 
 ```
-Add untracked file or unstaged changes: git add <file> Add all untracked files and unstaged changes: git add . Choose which parts of a file to stage: git add -p Move file: git mv <old> <new> Delete file: git rm <file> Tell Git to forget about a file without deleting it: git rm --cached <file> Unstage one file: git reset <file> Unstage everything: git reset Check what you added: git status
+Add untracked file or unstaged changes: git add <file> Add all untracked files and unstaged changes: git add . Choose which parts of a file to stage: git add -p Move file: git mv <old> <new> Delete file: git rm <file> Tell Git to forget about a file without deleting it: git rm --cached <file> Unstage one file: git reset <file> Unstage everything: git reset Check what you added:
 ```
+
+git status
 
 ## Make Commits
 

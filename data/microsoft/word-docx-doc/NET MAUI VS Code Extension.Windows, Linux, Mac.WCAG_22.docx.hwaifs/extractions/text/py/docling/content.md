@@ -14,13 +14,13 @@
 
 **Product Description:** The .NET MAUI VS Code Extension, depending upon the C# Dev Kit, provides easy-to-get-started access to the cross-platform tools required to develop .NET mobile and desktop apps with VS Code on Windows, macOS, and Linux.
 
-**Contact Information:** [Enterprise Disability Desk](https://support.microsoft.com/accessibility/enterprise-answer-desk)
+**Contact Information:** [Enterprise Disability Desk](https:/support.microsoft.com/accessibility/enterprise-answer-desk)
 
-**Website:** [Microsoft Accessibility](https://www.microsoft.com/accessibility)
+**Website:** [Microsoft Accessibility](https:/www.microsoft.com/accessibility)
 
 **Evaluation Methods Used**
 
-Microsoft uses established industry standards, including the Web Content Accessibility Guidelines, Section 508, and EN 301 549, to guide product evaluation during development and throughout the product lifecycle. Microsoft’s accessibility evaluation assessments incorporate a variety of measures, which can include: (i) conducting automated testing using a variety of proprietary and external tools; (ii) performing inspection and manual testing with a keyboard and adaptive technologies, such as screen readers and speech recognition software; and (iii) testing by individuals with disabilities. Conformance to the accessibility standards documented in this Conformance Report was evaluated according to the [Department of Homeland Security Trusted Tester Program.](https://www.dhs.gov/trusted-tester)
+Microsoft uses established industry standards, including the Web Content Accessibility Guidelines, Section 508, and EN 301 549, to guide product evaluation during development and throughout the product lifecycle. Microsoft’s accessibility evaluation assessments incorporate a variety of measures, which can include: (i) conducting automated testing using a variety of proprietary and external tools; (ii) performing inspection and manual testing with a keyboard and adaptive technologies, such as screen readers and speech recognition software; and (iii) testing by individuals with disabilities. Conformance to the accessibility standards documented in this Conformance Report was evaluated according to the [Department of Homeland Security Trusted Tester Program.](https:/www.dhs.gov/trusted-tester)
 
 **Applicable Standards/Guidelines**
 
@@ -50,7 +50,7 @@ Note: In the tables below, for all criteria marked “Not Applicable,” the spe
 
 **WCAG 2.x Report**
 
-Note: When reporting on conformance with the WCAG 2.x Success Criteria, they are scoped for full pages, complete processes, and accessibility-supported ways of using technology as documented in the [WCAG 2.0 Conformance Requirements](https://www.w3.org/TR/WCAG20/) .
+Note: When reporting on conformance with the WCAG 2.x Success Criteria, they are scoped for full pages, complete processes, and accessibility-supported ways of using technology as documented in the [WCAG 2.0 Conformance Requirements](https:/www.w3.org/TR/WCAG20) .
 
 #### Table 1: Success Criteria, Level A
 
@@ -120,45 +120,45 @@ Note: When reporting on conformance with the WCAG 2.x Success Criteria, they are
 
 #### Table 3: Success Criteria, Level AAA
 
-| **Criteria**                                                                   | **Conformance Level**   | **Remarks and Explanations**   |
-|--------------------------------------------------------------------------------|-------------------------|--------------------------------|
-| 1.2.6 Sign Language (Prerecorded) (Level AAA)                                  | Not Evaluated           |                                |
-| 1.2.7 Extended Audio Description (Prerecorded) (Level AAA)                     | Not Evaluated           |                                |
-| 1.2.8 Media Alternative (Prerecorded) (Level AAA)                              | Not Evaluated           |                                |
-| 1.2.9 Audio-only (Live) (Level AAA)                                            | Not Evaluated           |                                |
-| 1.3.6 Identify Purpose (Level AAA 2.1 and 2.2)                                 | Not Evaluated           |                                |
-| 1.4.6 Contrast (Enhanced) (Level AAA)                                          | Not Evaluated           |                                |
-| 1.4.7 Low or No Background Audio (Level AAA)                                   | Not Evaluated           |                                |
-| 1.4.8 Visual Presentation (Level AAA)                                          | Not Evaluated           |                                |
-| 1.4.9 Images of Text (No Exception) (Level AAA)                                | Not Evaluated           |                                |
-| 2.1.3 Keyboard (No Exception) (Level AAA)                                      | Not Evaluated           |                                |
-| 2.2.3 No Timing (Level AAA)                                                    | Not Evaluated           |                                |
-| 2.2.4 Interruptions (Level AAA)                                                | Not Evaluated           |                                |
-| 2.2.5 Re-authenticating (Level AAA)                                            | Not Evaluated           |                                |
-| 2.2.6 Timeouts (Level AAA 2.1 only)                                            | Not Evaluated           |                                |
-| 2.3.2 Three Flashes (Level AAA)                                                | Not Evaluated           |                                |
-| 2.3.3 Animation from Interactions (Level AAA 2.1 and 2.2)                      | Not Evaluated           |                                |
-| 2.4.8 Location (Level AAA)                                                     | Not Evaluated           |                                |
-| 2.4.9 Link Purpose (Link Only) (Level AAA)                                     | Not Evaluated           |                                |
-| 2.4.10 Section Headings (Level AAA)                                            | Not Evaluated           |                                |
-| 2.4.12 Focus Not Obscured (Enhanced) (Level AAA 2.2 only)                      | Not Evaluated           |                                |
-| [2.4.13 Focus Appearance](https://www.w3.org/TR/WCAG22/)  (Level AAA 2.2 only) | Not Evaluated           |                                |
-| 2.5.5 Target Size (Level AAA 2.1 and 2.2)                                      | Not Evaluated           |                                |
-| 2.5.6 Concurrent Input Mechanisms (Level AAA 2.1 and 2.2)                      | Not Evaluated           |                                |
-| 3.1.3 Unusual Words (Level AAA)                                                | Not Evaluated           |                                |
-| 3.1.4 Abbreviations (Level AAA)                                                | Not Evaluated           |                                |
-| 3.1.5 Reading Level (Level AAA)                                                | Not Evaluated           |                                |
-| 3.1.6 Pronunciation (Level AAA)                                                | Not Evaluated           |                                |
-| 3.2.5 Change on Request (Level AAA)                                            | Not Evaluated           |                                |
-| 3.3.5 Help (Level AAA)                                                         | Not Evaluated           |                                |
-| 3.3.6 Error Prevention (All) (Level AAA)                                       | Not Evaluated           |                                |
-| 3.3.9 Accessible Authentication (Enhanced) (Level AAA 2.2 only)                | Not Evaluated           |                                |
+| **Criteria**                                                                 | **Conformance Level**   | **Remarks and Explanations**   |
+|------------------------------------------------------------------------------|-------------------------|--------------------------------|
+| 1.2.6 Sign Language (Prerecorded) (Level AAA)                                | Not Evaluated           |                                |
+| 1.2.7 Extended Audio Description (Prerecorded) (Level AAA)                   | Not Evaluated           |                                |
+| 1.2.8 Media Alternative (Prerecorded) (Level AAA)                            | Not Evaluated           |                                |
+| 1.2.9 Audio-only (Live) (Level AAA)                                          | Not Evaluated           |                                |
+| 1.3.6 Identify Purpose (Level AAA 2.1 and 2.2)                               | Not Evaluated           |                                |
+| 1.4.6 Contrast (Enhanced) (Level AAA)                                        | Not Evaluated           |                                |
+| 1.4.7 Low or No Background Audio (Level AAA)                                 | Not Evaluated           |                                |
+| 1.4.8 Visual Presentation (Level AAA)                                        | Not Evaluated           |                                |
+| 1.4.9 Images of Text (No Exception) (Level AAA)                              | Not Evaluated           |                                |
+| 2.1.3 Keyboard (No Exception) (Level AAA)                                    | Not Evaluated           |                                |
+| 2.2.3 No Timing (Level AAA)                                                  | Not Evaluated           |                                |
+| 2.2.4 Interruptions (Level AAA)                                              | Not Evaluated           |                                |
+| 2.2.5 Re-authenticating (Level AAA)                                          | Not Evaluated           |                                |
+| 2.2.6 Timeouts (Level AAA 2.1 only)                                          | Not Evaluated           |                                |
+| 2.3.2 Three Flashes (Level AAA)                                              | Not Evaluated           |                                |
+| 2.3.3 Animation from Interactions (Level AAA 2.1 and 2.2)                    | Not Evaluated           |                                |
+| 2.4.8 Location (Level AAA)                                                   | Not Evaluated           |                                |
+| 2.4.9 Link Purpose (Link Only) (Level AAA)                                   | Not Evaluated           |                                |
+| 2.4.10 Section Headings (Level AAA)                                          | Not Evaluated           |                                |
+| 2.4.12 Focus Not Obscured (Enhanced) (Level AAA 2.2 only)                    | Not Evaluated           |                                |
+| [2.4.13 Focus Appearance](https:/www.w3.org/TR/WCAG22)  (Level AAA 2.2 only) | Not Evaluated           |                                |
+| 2.5.5 Target Size (Level AAA 2.1 and 2.2)                                    | Not Evaluated           |                                |
+| 2.5.6 Concurrent Input Mechanisms (Level AAA 2.1 and 2.2)                    | Not Evaluated           |                                |
+| 3.1.3 Unusual Words (Level AAA)                                              | Not Evaluated           |                                |
+| 3.1.4 Abbreviations (Level AAA)                                              | Not Evaluated           |                                |
+| 3.1.5 Reading Level (Level AAA)                                              | Not Evaluated           |                                |
+| 3.1.6 Pronunciation (Level AAA)                                              | Not Evaluated           |                                |
+| 3.2.5 Change on Request (Level AAA)                                          | Not Evaluated           |                                |
+| 3.3.5 Help (Level AAA)                                                       | Not Evaluated           |                                |
+| 3.3.6 Error Prevention (All) (Level AAA)                                     | Not Evaluated           |                                |
+| 3.3.9 Accessible Authentication (Enhanced) (Level AAA 2.2 only)              | Not Evaluated           |                                |
 
 ### Disclaimer
 
 © 2025 Microsoft Corporation. All rights reserved. The names of actual companies and products mentioned herein may be the trademarks of their respective owners. The information contained in this document represents the current view of Microsoft Corporation on the issues discussed as of the date of publication. Microsoft cannot guarantee the accuracy of any information presented after the date of publication.
 
-Microsoft’s WCAG 2.2 conformance reports provide the information included in ITI’s “ [VPAT® Rev 2.5 WCAG (November 2023)](https://www.itic.org/policy/accessibility/vpat) ” template. “Voluntary Product Accessibility Template” and “VPAT” are registered service marks of the Information Technology Industry Council (ITI). This document includes material copied from or derived from the Web Content Accessibility Guidelines ( [WCAG 2.2](https://www.w3.org/TR/WCAG22/) ). Copyright © World Wide Web Consortium (W3C). (2023). This document is not the Web Content Accessibility Guidelines (WCAG) and should not be used as a substitute for it. Excerpts of WCAG are referenced solely for purposes of detailing Microsoft’s conformance with the relevant provisions. A full and complete copy of the Guidelines is available from the [W3C WAI](https://www.w3.org/WAI/) .
+Microsoft’s WCAG 2.2 conformance reports provide the information included in ITI’s “ [VPAT® Rev 2.5 WCAG (November 2023)](https:/www.itic.org/policy/accessibility/vpat) ” template. “Voluntary Product Accessibility Template” and “VPAT” are registered service marks of the Information Technology Industry Council (ITI). This document includes material copied from or derived from the Web Content Accessibility Guidelines ( [WCAG 2.2](https:/www.w3.org/TR/WCAG22) ). Copyright © World Wide Web Consortium (W3C). (2023). This document is not the Web Content Accessibility Guidelines (WCAG) and should not be used as a substitute for it. Excerpts of WCAG are referenced solely for purposes of detailing Microsoft’s conformance with the relevant provisions. A full and complete copy of the Guidelines is available from the [W3C WAI](https:/www.w3.org/WAI) .
 
 Microsoft regularly updates its websites and provides new information about the accessibility of products as that information becomes available.
 

@@ -258,7 +258,7 @@ Gi. Command Prompt - dotnet run
 
 localhost:5000/?FeedUrl=http%3A%2F%2F1
 
-- · ×
+- • ×
 
 * 2 ..
 
@@ -275,9 +275,7 @@ Enter a feed URL:
 
 - :::{custom-style=CodeBox} console  cd .\simple-feed-reader\SimpleFeedReader :::
 3. Restore the packages, and build the solution.
-
-:::{custom-style=CodeBox} dotnetcli  dotnet build :::
-
+- :::{custom-style=CodeBox} dotnetcli  dotnet build :::
 4. Run the app.
 
 6/15/2018 11:50:21 PM
@@ -446,7 +444,7 @@ Connected Services
 
 Dependencies
 
-·Properties
+•Properties
 
 Pages
 
@@ -466,7 +464,7 @@ XX
 
 X
 
-· = 1] Home page - SimpleFer X + v
+• = 1] Home page - SimpleFer X + v
 
 →
 
@@ -482,7 +480,7 @@ Retrieve Feed
 
 © 2017 - SimpleFeedReader
 
-- · x
+- • x
 
 # R
 
@@ -569,7 +567,7 @@ Retrieve Feed
 
 -
 
-· ×
+• ×
 
 <!-- image -->
 
@@ -589,6 +587,7 @@ In the next section, you'll learn how to build a DevOps pipeline with Azure Pipe
 
 ## Additional reading
 
+- •
 - Web Apps overview
 - Build a .NET Core and SQL Database web app in Azure App Service
 - Configure deployment credentials for Azure App Service
@@ -606,7 +605,7 @@ Retrieve Feed
 
 -
 
-· ×
+• ×
 
 2 ...
 
@@ -730,7 +729,7 @@ Configure
 
 Review
 
-· We need your authorization to access your repositories
+• We need your authorization to access your repositories
 
 New pipeline
 
@@ -742,7 +741,7 @@ Azure Repos Git
 
 1. Use Use the classic editor to create the pipeline.
 
-· Bitbucket Cloud YAML
+• Bitbucket Cloud YAML
 
 Authorize using Auth
 
@@ -752,7 +751,7 @@ YAML
 
 Home to the world's largest community of developers
 
-· Goreto
+• Goreto
 
 GitHub Enterprise Server
 
@@ -789,7 +788,7 @@ External Git
 
 <!-- image -->
 
-·LL'
+•LL'
 
 Tasks Variables Triggers Options Retention History
 
@@ -857,7 +856,7 @@ ASP.NET Corel
 
 <!-- image -->
 
-· Save &amp; queue v &gt; Discard
+• Save &amp; queue v &gt; Discard
 
 = Summary &gt; Queue ...
 
@@ -865,7 +864,7 @@ X
 
 Save build definition
 
-· Enable continuous integration l
+• Enable continuous integration l
 
 Save &amp; queue V
 
@@ -948,13 +947,13 @@ WebJobs.
 
 1. Click the Releases tab of your team project. Click the New pipeline button.
 
-· Task groups
+• Task groups
 
 Others
 
 *** Deployment groups
 
-· Test Plans
+• Test Plans
 
 Artifacts
 
@@ -993,7 +992,7 @@ Add artifact
 
 Pipeline
 
-· Tasks v
+• Tasks v
 
 Variables
 
@@ -1095,7 +1094,7 @@ Azure Ano Service manage
 
 Production
 
-· 1 job, 2 tasks
+• 1 job, 2 tasks
 
 Agent job O
 
@@ -1105,7 +1104,7 @@ Run on agent
 
 Agent selection ^
 
-Agent pool · | Pool information | Manage C
+Agent pool • | Pool information | Manage C
 
 Default
 
@@ -1128,11 +1127,11 @@ The **Tasks** tab of the environment appears.
 
 <!-- image -->
 
-· Remove
+• Remove
 
 Tasks
 
-· MyFirstProject / MyFirst... V
+• MyFirstProject / MyFirst... V
 
 Dashboards Code Work
 
@@ -1164,7 +1163,7 @@ Build an
 
 Save &amp; queue V
 
-· scottaddie/simple-feed-reader
+• scottaddie/simple-feed-reader
 
 <!-- image -->
 
@@ -1216,13 +1215,13 @@ Release-3
 
 Last run sia 20210420.... 8º main
 
-#20210420.5 · Update Index shtml
+#20210420.5 • Update Index shtml
 
 New pipeline
 
 Edit
 
-· Create release
+• Create release
 
 T Filter pipelines
 
@@ -1260,7 +1259,7 @@ Stages
 
 © Production
 
-· ... › MyFirstProject-ASP.NET Core (NET Framework)-C|
+• ... › MyFirstProject-ASP.NET Core (NET Framework)-C|
 
 Options Retention History
 
@@ -1272,7 +1271,7 @@ Build pipeline
 
 = Get sources
 
-· sughosneo/simple-feed-reader
+• sughosneo/simple-feed-reader
 
 Agent job 1
 
@@ -1280,13 +1279,13 @@ Agent job 1
 
 Use NuGet 4.4.1
 
-#· NuGet tool installer
+#• NuGet tool installer
 
 NuGet restore
 
 NuGet
 
-· Build solution
+• Build solution
 
 Visual Studio build
 
@@ -1318,19 +1317,19 @@ Description
 
 #20210420.5 Update Index.cshtml
 
-· Individual Cl for (* 3º main $ 97c0a2b *
+• Individual Cl for (* 3º main $ 97c0a2b *
 
 #20210420.4 Update Index.cshtml
 
 #20210420.3 Update Index.cshtml
 
-· Individual Cl for ( 8º main $ 58b2b8e *
+• Individual Cl for ( 8º main $ 58b2b8e *
 
 #20210420.2 Update Index.cshtml
 
-· Individual Cl for * 8° main ° cb034f7|
+• Individual Cl for * 8° main ° cb034f7|
 
-· Queue
+• Queue
 
 Edit
 
@@ -1361,7 +1360,7 @@ Retention
 
 History
 
-· Save &amp; queue v
+• Save &amp; queue v
 
 Stages
 
@@ -1379,7 +1378,7 @@ Variables
 
 Retention on MyFirstProject-ASP.NET Core (.NET Framework)-Cl * Retained by release
 
-· #20210420.5 Update Index.cshtml
+• #20210420.5 Update Index.cshtml
 
 Summary Releases
 
@@ -1389,7 +1388,7 @@ Triggered by
 
 Repository and version
 
-·sughosneo/simple-feed-reader
+•sughosneo/simple-feed-reader
 
 Artifacts | + Add
 
@@ -1403,7 +1402,7 @@ Name
 
 Drop
 
-&gt; · drop
+&gt; • drop
 
 Run new
 
@@ -1735,7 +1734,7 @@ Or start with an e Empty pipeline
 
 ASP.NET Core
 
-· We need your authorization to access your repositories
+• We need your authorization to access your repositories
 
 Connection name *
 
@@ -1782,13 +1781,13 @@ Culd poeine y Get sources
 
 B Save &amp; queue Y Discard
 
-· Enable continuous integration
+• Enable continuous integration
 
-· sughosneo/simple-feed-reader
+• sughosneo/simple-feed-reader
 
 = Summary
 
-· Queue ...
+• Queue ...
 
 Name*
 
@@ -1836,7 +1835,7 @@ Path filters
 
 MyFirstProject-ASP.NET Core (.NET Framework)-Cl
 
-Agent pool · © | Pool information | Manage E
+Agent pool • © | Pool information | Manage E
 
 Default
 
@@ -1876,7 +1875,7 @@ Select folder *
 
 di Environments
 
-· Releases
+• Releases
 
 H Save
 
@@ -1884,13 +1883,13 @@ H Save
 
 Comment
 
-· Task groups
+• Task groups
 
 1 Save as draft
 
 *** Deployment groups
 
-· Test Plans
+• Test Plans
 
 Artifacts
 
@@ -1926,7 +1925,7 @@ Pipeline
 
 Or start with an ku Empty job
 
-· Tasks v
+• Tasks v
 
 Variables
 
@@ -1948,7 +1947,7 @@ Azure App Service deployment with continuous
 
 + Add an monitoring
 
-· 1 job, 2 tasks
+• 1 job, 2 tasks
 
 Deploy your Web applications to Azure App Service and enable continuous monitoring using Application Insights.
 
@@ -2055,7 +2054,7 @@ Azure ADD service mandaci
 
 Production
 
-· 1 job, 2 tasks
+• 1 job, 2 tasks
 
 R
 
@@ -2102,13 +2101,13 @@ The **Tasks** tab of the environment appears.
 
 I| Delete = Move V ...
 
-· Remove
+• Remove
 
 " o
 
 Tasks
 
-· MyFirstProject / MyFirst... V
+• MyFirstProject / MyFirst... V
 
 Dashboards Code Work
 
@@ -2158,7 +2157,7 @@ Build an
 
 Save &amp; queue V
 
-· scottaddie/simple-feed-reader
+• scottaddie/simple-feed-reader
 
 Builds
 
@@ -2192,13 +2191,13 @@ Release-3
 
 Last run sia 20210420.... 8º main
 
-#20210420.5 · Update Index shtml
+#20210420.5 • Update Index shtml
 
 New pipeline
 
 Edit
 
-· Create release
+• Create release
 
 T Filter pipelines
 
@@ -2238,7 +2237,7 @@ Stages
 
 © Production
 
-· ... › MyFirstProject-ASP.NET Core (NET Framework)-C|
+• ... › MyFirstProject-ASP.NET Core (NET Framework)-C|
 
 Options Retention History
 
@@ -2250,7 +2249,7 @@ Build pipeline
 
 = Get sources
 
-· sughosneo/simple-feed-reader
+• sughosneo/simple-feed-reader
 
 Agent job 1
 
@@ -2258,13 +2257,13 @@ Agent job 1
 
 Use NuGet 4.4.1
 
-#· NuGet tool installer
+#• NuGet tool installer
 
 NuGet restore
 
 NuGet
 
-· Build solution
+• Build solution
 
 Visual Studio build
 
@@ -2296,19 +2295,19 @@ Description
 
 #20210420.5 Update Index.cshtml
 
-· Individual Cl for (* 3º main $ 97c0a2b *
+• Individual Cl for (* 3º main $ 97c0a2b *
 
 #20210420.4 Update Index.cshtml
 
 #20210420.3 Update Index.cshtml
 
-· Individual Cl for ( 8º main $ 58b2b8e *
+• Individual Cl for ( 8º main $ 58b2b8e *
 
 #20210420.2 Update Index.cshtml
 
-· Individual Cl for * 8° main ° cb034f7|
+• Individual Cl for * 8° main ° cb034f7|
 
-· Queue
+• Queue
 
 Edit
 
@@ -2339,7 +2338,7 @@ Retention
 
 History
 
-· Save &amp; queue v
+• Save &amp; queue v
 
 Stages
 
@@ -2357,7 +2356,7 @@ Variables
 
 Retention on MyFirstProject-ASP.NET Core (.NET Framework)-Cl * Retained by release
 
-· #20210420.5 Update Index.cshtml
+• #20210420.5 Update Index.cshtml
 
 Summary Releases
 
@@ -2367,7 +2366,7 @@ Triggered by
 
 Repository and version
 
-·sughosneo/simple-feed-reader
+•sughosneo/simple-feed-reader
 
 Artifacts | + Add
 
@@ -2381,7 +2380,7 @@ Name
 
 Drop
 
-&gt; · drop
+&gt; • drop
 
 Run new
 
@@ -2872,11 +2871,11 @@ A Summary
 
 Jobs
 
-· build
+• build
 
 W Projects
 
-· Security
+• Security
 
 Le Insights @ Settings
 
@@ -2884,9 +2883,9 @@ Puste succeeced.
 
 Commit changes
 
-· barning(o)
+• barning(o)
 
-· trear(e)
+• trear(e)
 
 Update dotnet.yml
 
@@ -2977,7 +2976,7 @@ Actions forked from Azure-Samples/simple-feed-reader
 
 12 Pull requests
 
-· Actions
+• Actions
 
 P master - simple-feed-reader / github / workflows /
 
@@ -2987,7 +2986,7 @@ Projects
 
 Ц Wiki
 
-· Security
+• Security
 
 L Insights
 
@@ -3027,11 +3026,11 @@ name: NET
 
 ## Publish the output
 
-· Watch - 0
+• Watch - 0
 
 + -
 
-· Star
+• Star
 
 P Fork
 
@@ -3043,7 +3042,7 @@ Start commit -
 
 Latest commit 103eala 4 minutes ago
 
-· History
+• History
 
 Spaces
 
@@ -3091,7 +3090,7 @@ By actions O
 
 15
 
-· Watch -
+• Watch -
 
 # Star
 
@@ -3103,9 +3102,9 @@ Marketplace / Search results / Upload a Build Artifact
 
 I1 Pull requests
 
-· Actions
+• Actions
 
-· Update dotnet.yml NET #5
+• Update dotnet.yml NET #5
 
 ( Summary
 
@@ -3113,7 +3112,7 @@ Upload a Build Artifact
 
 JODH
 
-· build
+• build
 
 By actions v2
 
@@ -3153,7 +3152,7 @@ build
 
 Installation
 
-Copy and paste the following snippet into your · yml file.
+Copy and paste the following snippet into your • yml file.
 
 Version: v2.2.2 -
 
@@ -3444,7 +3443,7 @@ Search for people ce teams
 
 2. Select Environments again and again select New Environment . Now enter PROD as the name and select Configure environment .
 
-5**·
+5**•
 
 nantection aulec
 
@@ -3538,7 +3537,7 @@ Pull requests Issues Codespaces Marketplace Explore
 
 11 Pull requests
 
-· Actions
+• Actions
 
 " Projects
 
@@ -3548,7 +3547,7 @@ Deployed to PRE-PROD
 
 **figune 9**. View denlovmente..
 
-· Security
+• Security
 
 ~ Insights
 
@@ -3593,29 +3592,29 @@ Y colindembovsky / simple-feed-reader forked from Anure-Samples/imple-feed-rende
 
 I7 Pull requests
 
-· Actions a Projects
+• Actions a Projects
 
-· Update dotnet.yml NET #9
+• Update dotnet.yml NET #9
 
 PROD
 
 Review needed from colindembovsky
 
-· Summary
+• Summary
 
 Jobs
 
 Leave a comment
 
-· build
+• build
 
-· deploy staging
+• deploy staging
 
 © deploy\_prod
 
 ** igno
 
-· Wiki dotnet.ymi
+• Wiki dotnet.ymi
 
 on: push build
 
@@ -3625,7 +3624,7 @@ let Insights
 
 Reject
 
-· Star
+• Star
 
 0
 
@@ -3659,11 +3658,11 @@ Cancel workflow
 
 <!-- image -->
 
-· Settings
+• Settings
 
-· Watch r
+• Watch r
 
-· Watch +
+• Watch +
 
 79
 
@@ -3747,7 +3746,7 @@ Pull requests
 
 Y colindembovsky / simple-feed-reader forked from Azure-Samples/simple-feed-reader
 
-·&gt; Code
+•&gt; Code
 
 I? Pull requests
 
@@ -3757,7 +3756,7 @@ Workflows
 
 All workflows lo NET
 
-· Projects
+• Projects
 
 New workflow
 
@@ -3773,7 +3772,7 @@ Le Insights
 
 5. To see the Run workflow button, select the Actions tab. Select the .NET workflow in the list of workflows. At the top of the list of runs, you'll see the Run workflow button. If you select it, you can choose the branch to run the workflow against and queue it:
 
-· Update dotnet.yml master
+• Update dotnet.yml master
 
 **fioune 13**. Manual dicnatch..
 
@@ -3854,7 +3853,7 @@ Add Secret
 
 **fioune 15**. View cernetc.
 
-**fioune 14**· Add an envisaament coset
+**fioune 14**• Add an envisaament coset
 
 **Figure 14**: Add an environment secret.
 
@@ -3874,11 +3873,7 @@ Add Secret
 3. :::{custom-style=CodeBox} ```yml - name: Update config uses: Azure/appservice-settings@v1
 
 ```
-with: app-name: ${{ env.app-name }}  slot-name: staging  app-settings-json: |  [  {  "name": "UI:Index:Header",  "value": "${{ secrets.INDEX_HEADER }}','slotSetting': true } ] - name: az cli logout   # <-- this exists already
-```
-
-```
-``` :::
+with: app-name: ${{ env.app-name }}  slot-name: staging  app-settings-json: |  [  {  "name": "UI:Index:Header",  "value": "${{ secrets.INDEX_HEADER }}','slotSetting': true } ] - name: az cli logout   # <-- this exists already ``` :::
 ```
 
 8
@@ -3889,7 +3884,7 @@ A Not secure cd-simplefeedreader-staging.azureweb...
 
 AZ Exams il Learning
 
-· NET on Actions
+• NET on Actions
 
 SimpleFeedReader
 
@@ -3935,7 +3930,7 @@ The final workflow file should look like this:
 name : .NET on : workflow_dispatch : inputs : reason : description : 'The reason for running the workflow' required : true default : 'Manual build from GitHub UI' push : branches : [ main ] pull_request : branches : [ main ] env : app-name : "cd-simplefeedreader" rg-name : "cd-dotnetactions" jobs : build :
 ```
 
-··.
+••.
 
 10
 
@@ -3963,7 +3958,7 @@ Y colindembovsky / simple-feed-reader forked from Azure-Samples/simple-feed-read
 
 12 Pull requests
 
-· Actions
+• Actions
 
 WE Projects
 
@@ -4045,7 +4040,7 @@ I7 Pull requests
 
 Workflows
 
-· Actions
+• Actions
 
 Projects
 
@@ -4057,13 +4052,13 @@ L Insights
 
 @ Settings
 
-· Actions
+• Actions
 
 Projects
 
 M Wiki
 
-· Security
+• Security
 
 L Insights
 
@@ -4073,7 +4068,7 @@ L Insights
 
 ‹&gt; Edit new file
 
-· Preview
+• Preview
 
 All workflows lo NET
 
@@ -4081,23 +4076,23 @@ codeql-analysisymi
 
 2. Select Start Commit on the upper right to save the default workflow. You can commit to the main branch. Search Marketplace for Actions
 
-· to conmit it to your repository-
+• to conmit it to your repository-
 
 4
 
-· You may wish to alter this file to override the set of languages analyzed,
+• You may wish to alter this file to override the set of languages analyzed,
 
 CodeQL
 
 1 workflow run
 
-· or to provide custom queries or build logic.
+• or to provide custom queries or build logic.
 
 * ******** NOTE ********
 
 # Ne have attempted to detect the languages in your repository. Please check
 
-· the "Language" matrix defined below to confirm you have the correct set of
+• the "Language" matrix defined below to confirm you have the correct set of
 
 # supported CodeQL languages.
 
@@ -4137,9 +4132,9 @@ Take a look at the workflow file while it runs. If you remove the comments from 
 name : "CodeQL" on : push : branches : [ main ] pull_request : branches : [ main ] schedule : -cron : '40 14 * * 6' jobs : analyze : name : Analyze runs-on : ubuntu-latest strategy : fail-fast : false
 ```
 
-· Watch -
+• Watch -
 
-· Watch -
+• Watch -
 
 * Star
 
@@ -4218,7 +4213,7 @@ Q tool:CodeQL is:open
 
 Projects
 
-· v 0Open x 0 Closed
+• v 0Open x 0 Closed
 
 Set up more code scanning tools
 
@@ -4228,7 +4223,7 @@ Set up more code scanning tools
 
 0
 
-· Star 0
+• Star 0
 
 Y Fork
 
@@ -4240,7 +4235,7 @@ Actions
 
 Щ Wiki
 
-· Security
+• Security
 
 L Insights
 
@@ -4267,7 +4262,7 @@ The CodeQL scan isn't reporting any security issues. That's expected with this b
 
 Search or jump to...
 
-· Pull requests Issues Marketplace Explore y colindembovsky / simple-feed-reader
+• Pull requests Issues Marketplace Explore y colindembovsky / simple-feed-reader
 
 forked from Azure-Samples/simple-feed-reader
 
@@ -4354,7 +4349,7 @@ Code scanning alerts
 
 CodeQL
 
-· First appeared in commit 824b301 8 minutes ago
+• First appeared in commit 824b301 8 minutes ago
 
 -O-
 
@@ -4434,7 +4429,7 @@ mywebapp21816
 
 App Service
 
-· Search (Chri*/
+• Search (Chri*/
 
 Wweryew
 
@@ -4442,7 +4437,7 @@ Activity log
 
 Access control (LAM)
 
-· Tags
+• Tags
 
 % Diagnose and solve problems d Quickstart
 
@@ -4599,7 +4594,7 @@ Deployment credentiais
 
 Deployment slots
 
-·· Deployment options.
+•• Deployment options.
 
 ( Continuous Delivery (Preview)
 
@@ -4633,7 +4628,7 @@ Properties
 
 4 Browse
 
-· Stor
+• Stor
 
 Resource group Ghanad
 
@@ -4655,7 +4650,7 @@ Subscription ID
 
 C Restart
 
-· Delete &amp; Get publish profile () Reset publish profile https://mywebapp21816.azurewebsites.net
+• Delete &amp; Get publish profile () Reset publish profile https://mywebapp21816.azurewebsites.net
 
 App Service plan/pricing tier mywebapp21816 (Standard: 1 Small)
 
@@ -4733,13 +4728,13 @@ Getting started with Application Insights monitoring users actually do with it.
 
 Link your application to Application Insights
 
-· Select existing resource
+• Select existing resource
 
 Search....
 
-· my-blog
+• my-blog
 
-· Create new resource
+• Create new resource
 
 * New resource name mywebapp21816
 
@@ -4775,7 +4770,7 @@ mywebapp21816
 
 Application Insights - Last 24 hours (30 minute granularity) - ASP.NET web application
 
-· Search (Ctrl+/)
+• Search (Ctrl+/)
 
 Overview
 
@@ -4787,7 +4782,7 @@ Tags
 
 INVESTIGATE
 
-· Application map
+• Application map
 
 Smart Detection
 
@@ -4851,11 +4846,11 @@ Ils
 
 X
 
-··· More
+••• More
 
 MONITORING
 
-· Alerts (Classic)
+• Alerts (Classic)
 
 +
 

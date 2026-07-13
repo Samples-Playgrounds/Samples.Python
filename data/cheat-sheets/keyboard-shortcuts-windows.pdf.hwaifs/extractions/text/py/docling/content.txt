@@ -1,6 +1,6 @@
-Keyboard shortcuts for Windows
+## Keyboard shortcuts for Windows
 
-General
+## General
 
 | Ctrl+Shift+P, F1   | Show Command Palette     |
 |--------------------|--------------------------|
@@ -10,7 +10,7 @@ General
 | Ctrl+,             | User Settings            |
 | Ctrl+K Ctrl+S      | Keyboard Shortcuts       |
 
-Basic editing
+## Basic editing
 
 | Ctrl+X            | Cut line (empty selection)         |
 |-------------------|------------------------------------|
@@ -39,7 +39,7 @@ Basic editing
 | Shift+Alt+A       | Toggle block comment               |
 | Alt+Z             | Toggle word wrap                   |
 
-Navigation
+## Navigation
 
 | Ctrl+T         | Show all Symbols                |
 |----------------|---------------------------------|
@@ -52,7 +52,7 @@ Navigation
 | Ctrl+Shift+Tab | Navigate editor group history   |
 | Alt+ ← /→      | Go back / forward               |
 
-Search and replace
+## Search and replace
 
 | Ctrl+F        | Find                                       |
 |---------------|--------------------------------------------|
@@ -63,7 +63,7 @@ Search and replace
 | Ctrl+K Ctrl+D | Move last selection to next Find match     |
 | Alt+C / R /W  | Toggle case-sensitive / regex / whole word |
 
-Multi-cursor and selection
+## Multi-cursor and selection
 
 | Alt+Click                    | Insert cursor                               |
 |------------------------------|---------------------------------------------|
@@ -79,7 +79,7 @@ Multi-cursor and selection
 | Ctrl+Shift+Alt + (arrow key) | Column (box) selection                      |
 | Ctrl+Shift+Alt +PgUp/PgDn    | Column (box) selection page up/down         |
 
-Rich languages editing
+## Rich languages editing
 
 | Ctrl+Space, Ctrl+I   | Trigger suggestion          |
 |----------------------|-----------------------------|
@@ -95,7 +95,7 @@ Rich languages editing
 | Ctrl+K Ctrl+X        | Trim trailing whitespace    |
 | Ctrl+KM              | Change file language        |
 
-Editor management
+## Editor management
 
 | Ctrl+F4, Ctrl+W        | Close editor                                |
 |------------------------|---------------------------------------------|
@@ -106,7 +106,7 @@ Editor management
 | Ctrl+Shift+PgUp / PgDn | Move editor left/right                      |
 | Ctrl+K ←/→             | Move active editor group                    |
 
-File management
+## File management
 
 | Ctrl+N         | New File                                |
 |----------------|-----------------------------------------|
@@ -124,7 +124,7 @@ File management
 | Ctrl+K R       | Reveal active file in Explorer          |
 | Ctrl+K O       | Show active file in new window/instance |
 
-Display
+## Display
 
 | F11          | Toggle full screen                         |
 |--------------|--------------------------------------------|
@@ -143,7 +143,7 @@ Display
 | Ctrl+K V     | Open Markdown preview to the side          |
 | Ctrl+K Z     | Zen Mode (Esc Esc to exit)                 |
 
-Debug
+## Debug
 
 | F9              | Toggle breakpoint   |
 |-----------------|---------------------|
@@ -153,7 +153,7 @@ Debug
 | F10             | Step over           |
 | Ctrl+K Ctrl+I   | Show hover          |
 
-Integrated terminal
+## Integrated terminal
 
 | Ctrl+`            | Show integrated terminal   |
 |-------------------|----------------------------|

@@ -2,26 +2,26 @@
 
 Sources:
 
-- Portal: [https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function)
-- VS: [https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio)
-- SendGrid V3 API Sample: [https://sendgrid.com/docs/for-developers/sending-email/v3-csharp-code-example/](https://sendgrid.com/docs/for-developers/sending-email/v3-csharp-code-example/)
-- Email with SendGrid: [https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid)
+- Portal: [https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function)
+- VS: [https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio)
+- SendGrid V3 API Sample: [https://sendgrid.com/docs/for-developers/sending-email/v3-csharp-code-example/](https:/sendgrid.com/docs/for-developers/sending-email/v3-csharp-code-example)
+- Email with SendGrid: [https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid)
 
 **Create your first function in the Azure portal**
 
-Azure Functions lets you execute your code in a [serverless](https://azure.microsoft.com/solutions/serverless/) environment without having to first create a VM or publish a web application. In this topic, learn how to use Functions to create a "hello world" function in the Azure portal.
+Azure Functions lets you execute your code in a [serverless](https:/azure.microsoft.com/solutions/serverless) environment without having to first create a VM or publish a web application. In this topic, learn how to use Functions to create a "hello world" function in the Azure portal.
 
 <!-- image -->
 
-If you don't have an [Azure subscription](https://docs.microsoft.com/azure/guides/developer/azure-developer-guide) , create a [free account](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio) before you begin.
+If you don't have an [Azure subscription](https:/docs.microsoft.com/azure/guides/developer/azure-developer-guide) , create a [free account](https:/azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio) before you begin.
 
 **Note**
 
-C# developers should consider [**creating your first function in Visual Studio 2017**](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio) instead of in the portal.
+C# developers should consider [**creating your first function in Visual Studio 2017**](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio) instead of in the portal.
 
 **Log in to Azure**
 
-Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/) with your Azure account.
+Sign in to the Azure portal at [https://portal.azure.com](https:/portal.azure.com) with your Azure account.
 
 **Create a function app**
 
@@ -31,17 +31,17 @@ You must have a function app to host the execution of your functions. A function
 <!-- image -->
 2. Use the function app settings as specified in the table below the image.
 <!-- image -->
-| **Setting**          | **Suggested value**   | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|----------------------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **App name**         | Globally unique name  | Name that identifies your new function app. Valid characters are a-z, 0-9, and -.                                                                                                                                                                                                                                                                                                                                                                                                                |
-| **Subscription**     | Your subscription     | The subscription under which this new function app is created.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Resource Group       | myResourceGroup       | Name for the new resource group in which to create your function app.                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| **OS**               | Windows               | Serverless hosting is currently only available when running on Windows. For Linux hosting, see Create your first function running on Linux using the Azure CLI.                                                                                                                                                                                                                                                                                                                                  |
-| Hosting plan         | Consumption plan      | Hosting plan that defines how resources are allocated to your function app. In the default  **Consumption Plan**  , resources are added dynamically as required by your functions. In this  [serverless](https://azure.microsoft.com/overview/serverless-computing/)  hosting, you only pay for the time your functions run. When you run in an App Service plan, you must manage the  [scaling of your function app](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale)  . |
-| **Location**         | West Europe           | Choose a region near you or near other services your functions access.                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| **Runtime stack**    | Preferred language    | Choose a runtime that supports your favorite function programming language. Choose  **.NET**  for C# and F# functions.                                                                                                                                                                                                                                                                                                                                                                           |
-| Storage              | Globally unique name  | Create a storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. You can also use an existing account, which must meets the storage account requirements.                                                                                                                                                                                                                             |
-| Application Insights | Default               | Application Insights is enabled by default. Choose a location near your function app.                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Setting**          | **Suggested value**   | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|----------------------|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **App name**         | Globally unique name  | Name that identifies your new function app. Valid characters are a-z, 0-9, and -.                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **Subscription**     | Your subscription     | The subscription under which this new function app is created.                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Resource Group       | myResourceGroup       | Name for the new resource group in which to create your function app.                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **OS**               | Windows               | Serverless hosting is currently only available when running on Windows. For Linux hosting, see Create your first function running on Linux using the Azure CLI.                                                                                                                                                                                                                                                                                                                               |
+| Hosting plan         | Consumption plan      | Hosting plan that defines how resources are allocated to your function app. In the default  **Consumption Plan**  , resources are added dynamically as required by your functions. In this  [serverless](https:/azure.microsoft.com/overview/serverless-computing)  hosting, you only pay for the time your functions run. When you run in an App Service plan, you must manage the  [scaling of your function app](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-scale)  . |
+| **Location**         | West Europe           | Choose a region near you or near other services your functions access.                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Runtime stack**    | Preferred language    | Choose a runtime that supports your favorite function programming language. Choose  **.NET**  for C# and F# functions.                                                                                                                                                                                                                                                                                                                                                                        |
+| Storage              | Globally unique name  | Create a storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. You can also use an existing account, which must meets the storage account requirements.                                                                                                                                                                                                                          |
+| Application Insights | Default               | Application Insights is enabled by default. Choose a location near your function app.                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 1. Select **Create** to provision and deploy the function app.
 2. Select the Notification icon in the upper-right corner of the portal and watch for the **Deployment succeeded** message.
@@ -50,7 +50,7 @@ You must have a function app to host the execution of your functions. A function
 
 **Tip**
 
-Having trouble finding your function apps in the portal, try [**adding Function Apps to your favorites in the Azure portal**](https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings) .
+Having trouble finding your function apps in the portal, try [**adding Function Apps to your favorites in the Azure portal**](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings) .
 
 Next, you create a function in the new function app.
 
@@ -86,7 +86,7 @@ Other quick starts in this collection build upon this quick start. If you plan t
 
 *Resources* in Azure refers to function apps, functions, storage accounts, and so forth. They are grouped into *resource groups* , and you can delete everything in a group by deleting the group.
 
-You created resources to complete these quickstarts. You may be billed for these resources, depending on your [account status](https://azure.microsoft.com/account/) and [service pricing](https://azure.microsoft.com/pricing/) . If you don't need the resources anymore, here's how to delete them:
+You created resources to complete these quickstarts. You may be billed for these resources, depending on your [account status](https:/azure.microsoft.com/account) and [service pricing](https:/azure.microsoft.com/pricing) . If you don't need the resources anymore, here's how to delete them:
 
 1. In the Azure portal, go to the **Resource group** page.
 
@@ -107,29 +107,29 @@ You have created a function app with a simple HTTP triggered function.
 
 Learn how to create functions with other kinds of triggers or how to integrate functions with other Azure services.
 
-- [Create a function that runs on a schedule](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-scheduled-function)
-- [Add messages to an Azure Storage queue using Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-integrate-storage-queue-output-binding)
+- [Create a function that runs on a schedule](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-create-scheduled-function)
+- [Add messages to an Azure Storage queue using Functions](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-integrate-storage-queue-output-binding)
 
-For more information, see [Azure Functions HTTP bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook) .
+For more information, see [Azure Functions HTTP bindings](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook) .
 
 ## Create your first function using Visual Studio
 
-Azure Functions lets you execute your code in a [serverless](https://azure.microsoft.com/solutions/serverless/) environment without having to first create a VM or publish a web application.
+Azure Functions lets you execute your code in a [serverless](https:/azure.microsoft.com/solutions/serverless) environment without having to first create a VM or publish a web application.
 
 In this article, you learn how to use the Visual Studio 2017 tools for Azure Functions to locally create and test a "hello world" function. You then publish the function code to Azure. These tools are available as part of the Azure development workload in Visual Studio 2017.
 
 <!-- image -->
 
-This topic includes [a video](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio) that demonstrates the same basic steps.
+This topic includes [a video](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio) that demonstrates the same basic steps.
 
 ### Prerequisites
 
 To complete this tutorial:
 
-- Install [Visual Studio 2017](https://azure.microsoft.com/downloads/) and ensure that the Azure development workload is also installed.
-- Make sure you have the [latest Azure Functions tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs) .
+- Install [Visual Studio 2017](https:/azure.microsoft.com/downloads) and ensure that the Azure development workload is also installed.
+- Make sure you have the [latest Azure Functions tools](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs) .
 
-If you don't have an [Azure subscription](https://docs.microsoft.com/azure/guides/developer/azure-developer-guide) , create a [free account](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio) before you begin.
+If you don't have an [Azure subscription](https:/docs.microsoft.com/azure/guides/developer/azure-developer-guide) , create a [free account](https:/azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio) before you begin.
 
 ### Create a function app project
 
@@ -149,7 +149,7 @@ The Azure Functions project template in Visual Studio creates a project that can
 
 1. Click OK to create the function project and HTTP triggered function.
 
-Visual Studio creates a project and in it a class that contains boilerplate code for the chosen function type. The FunctionName attribute on the method sets the name of the function. The HttpTrigger attribute specifies that the function is triggered by an HTTP request. The boilerplate code sends an HTTP response that includes a value from the request body or query string. You can add input and output bindings to a function by applying the appropriate attributes to the method. For more information, see the [Triggers and bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library) section of the [Azure Functions C# developer reference](https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library) .
+Visual Studio creates a project and in it a class that contains boilerplate code for the chosen function type. The FunctionName attribute on the method sets the name of the function. The HttpTrigger attribute specifies that the function is triggered by an HTTP request. The boilerplate code sends an HTTP response that includes a value from the request body or query string. You can add input and output bindings to a function by applying the appropriate attributes to the method. For more information, see the [Triggers and bindings](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library) section of the [Azure Functions C# developer reference](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library) .
 
 Now that you've created your function project and an HTTP-triggered function, you can test it on your local computer.
 
@@ -174,7 +174,7 @@ You must have a function app in your Azure subscription before you can publish y
 2. Select Azure Function App, choose Create New, and then select Publish.
 <!-- image -->
 
-When you enable Run from Zip, your function app in Azure is run directly from the deployment package. For more information, see [Run your Azure Functions from a package file](https://docs.microsoft.com/en-us/azure/azure-functions/run-functions-from-deployment-package) .
+When you enable Run from Zip, your function app in Azure is run directly from the deployment package. For more information, see [Run your Azure Functions from a package file](https:/docs.microsoft.com/en-us/azure/azure-functions/run-functions-from-deployment-package) .
 
 **Caution**
 
@@ -214,14 +214,14 @@ http://&lt;APP\_NAME&gt;.azurewebsites.net/api/&lt;FUNCTION\_NAME&gt;?name=&lt;Y
 
 You have used Visual Studio to create and publish a C# function app with a simple HTTP triggered function.
 
-- [Learn how to add input and output bindings that integrate with other services.](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs)
-- [Learn more about developing functions as .NET class libraries](https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library) .
+- [Learn how to add input and output bindings that integrate with other services.](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs)
+- [Learn more about developing functions as .NET class libraries](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library) .
 
 ## v3 API C# Code Example
 
-We recommend using SendGrid C#, our client library, [available on GitHub](https://github.com/sendgrid/sendgrid-csharp) , with full documentation.
+We recommend using SendGrid C#, our client library, [available on GitHub](https:/github.com/sendgrid/sendgrid-csharp) , with full documentation.
 
-Do you have an [API Key](https://app.sendgrid.com/settings/api_keys) yet? If not, go get one. You're going to need it to integrate!
+Do you have an [API Key](https:/app.sendgrid.com/settings/api_keys) yet? If not, go get one. You're going to need it to integrate!
 
 ### Using SendGrid's C# Library
 
@@ -283,19 +283,19 @@ var response = await client.SendEmailAsync(msg);
 
 ## Azure Functions SendGrid bindings
 
-This article explains how to send email by using [SendGrid](https://sendgrid.com/docs/User_Guide/index.html) bindings in Azure Functions. Azure Functions supports an output binding for SendGrid.
+This article explains how to send email by using [SendGrid](https:/sendgrid.com/docs/User_Guide/index.html) bindings in Azure Functions. Azure Functions supports an output binding for SendGrid.
 
 This is reference information for Azure Functions developers. If you're new to Azure Functions, start with the following resources:
 
-- [Create your first function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function)
-- [Azure Functions developer reference](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference)
-- Language-specific reference for [C#](https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library) , [C# script](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp) , [F#](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-fsharp) , [Java](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-java) , [JavaScript](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-node) , or [Python](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-python)
-- [Azure Functions triggers and bindings concepts](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings)
-- [Code and test Azure Functions locally](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-local)
+- [Create your first function](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function)
+- [Azure Functions developer reference](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-reference)
+- Language-specific reference for [C#](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library) , [C# script](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp) , [F#](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-reference-fsharp) , [Java](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-reference-java) , [JavaScript](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-reference-node) , or [Python](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-reference-python)
+- [Azure Functions triggers and bindings concepts](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings)
+- [Code and test Azure Functions locally](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-develop-local)
 
 ### Packages - Functions 1.x
 
-The SendGrid bindings are provided in the Microsoft.Azure.WebJobs.Extensions.SendGrid NuGet package, version 2.x. Source code for the package is in the [azure-webjobs-sdk-extensions](https://github.com/Azure/azure-webjobs-sdk-extensions/blob/v2.x/src/WebJobs.Extensions.SendGrid/) GitHub repository.
+The SendGrid bindings are provided in the Microsoft.Azure.WebJobs.Extensions.SendGrid NuGet package, version 2.x. Source code for the package is in the [azure-webjobs-sdk-extensions](https:/github.com/Azure/azure-webjobs-sdk-extensions/blob/v2.x/src/WebJobs.Extensions.SendGrid) GitHub repository.
 
 The following table tells how to add support for this binding in each development environment.
 
@@ -307,7 +307,7 @@ The following table tells how to add support for this binding in each developmen
 
 ### Packages - Functions 2.x
 
-The SendGrid bindings are provided in the Microsoft.Azure.WebJobs.Extensions.SendGrid NuGet package, version 3.x. Source code for the package is in the [azure-webjobs-sdk-extensions](https://github.com/Azure/azure-webjobs-sdk-extensions/blob/master/src/WebJobs.Extensions.SendGrid/) GitHub repository.
+The SendGrid bindings are provided in the Microsoft.Azure.WebJobs.Extensions.SendGrid NuGet package, version 3.x. Source code for the package is in the [azure-webjobs-sdk-extensions](https:/github.com/Azure/azure-webjobs-sdk-extensions/blob/master/src/WebJobs.Extensions.SendGrid) GitHub repository.
 
 The following table tells how to add support for this binding in each development environment.
 
@@ -317,19 +317,19 @@ The following table tells how to add support for this binding in each developmen
 | Local development - C# script, JavaScript, F#, Java and Python | Register the extension                 |
 | Portal development                                             | Install when adding output binding     |
 
-To learn how to update existing binding extensions in the portal without having to republish your function app project, see [Update your extensions](https://docs.microsoft.com/en-us/azure/azure-functions/install-update-binding-extensions-manual) .
+To learn how to update existing binding extensions in the portal without having to republish your function app project, see [Update your extensions](https:/docs.microsoft.com/en-us/azure/azure-functions/install-update-binding-extensions-manual) .
 
 ### Example
 
 See the language-specific example:
 
-- [C#](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid)
-- [C# script (.csx)](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid)
-- [JavaScript](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid)
+- [C#](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid)
+- [C# script (.csx)](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid)
+- [JavaScript](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid)
 
 #### C# example
 
-The following example shows a [C# function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library) that uses a Service Bus queue trigger and a SendGrid output binding.
+The following example shows a [C# function](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library) that uses a Service Bus queue trigger and a SendGrid output binding.
 
 C#Copy
 
@@ -373,7 +373,7 @@ You can omit setting the attribute's ApiKey property if you have your API key 
 
 #### C# script example
 
-The following example shows a SendGrid output binding in a function.json file and a [C# script function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp) that uses the binding.
+The following example shows a SendGrid output binding in a function.json file and a [C# script function](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp) that uses the binding.
 
 Here's the binding data in the function.json file:
 
@@ -417,7 +417,7 @@ JSONCopy
 
 }
 
-The [configuration](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid) section explains these properties.
+The [configuration](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid) section explains these properties.
 
 Here's the C# script code:
 
@@ -465,7 +465,7 @@ public string Content { get; set; }
 
 #### JavaScript example
 
-The following example shows a SendGrid output binding in a function.json file and a [JavaScript function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-node) that uses the binding.
+The following example shows a SendGrid output binding in a function.json file and a [JavaScript function](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-reference-node) that uses the binding.
 
 Here's the binding data in the function.json file:
 
@@ -497,7 +497,7 @@ JSONCopy
 
 }
 
-The [configuration](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid) section explains these properties.
+The [configuration](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid) section explains these properties.
 
 Here's the JavaScript code:
 
@@ -529,9 +529,9 @@ context.done(null, message);
 
 ### Attributes
 
-In [C# class libraries](https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library) , use the [SendGrid](https://github.com/Azure/azure-webjobs-sdk-extensions/blob/master/src/WebJobs.Extensions.SendGrid/SendGridAttribute.cs) attribute.
+In [C# class libraries](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-class-library) , use the [SendGrid](https:/github.com/Azure/azure-webjobs-sdk-extensions/blob/master/src/WebJobs.Extensions.SendGrid/SendGridAttribute.cs) attribute.
 
-For information about attribute properties that you can configure, see [Configuration](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid) . Here's a SendGridattribute example in a method signature:
+For information about attribute properties that you can configure, see [Configuration](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid) . Here's a SendGridattribute example in a method signature:
 
 C#Copy
 
@@ -549,7 +549,7 @@ public static void Run(
 
 }
 
-For a complete example, see [C# example](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid) .
+For a complete example, see [C# example](https:/docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-sendgrid) .
 
 ### Configuration
 

@@ -1,17 +1,17 @@
 **ASP.NET Core Razor Pages with EF Core - tutorial series**
 
-Source: [https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp)
+Source: [https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp)
 
 This series of tutorials teaches how to create ASP.NET Core Razor Pages web apps that use Entity Framework (EF) Core for data access.
 
-1. [Get started](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2)
-2. [Create, Read, Update, and Delete operations](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/crud?view=aspnetcore-2.2)
-3. [Sorting, filtering, paging, and grouping](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/sort-filter-page?view=aspnetcore-2.2)
-4. [Migrations](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/migrations?view=aspnetcore-2.2)
-5. [Create a complex data model](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2)
-6. [Reading related data](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/read-related-data?view=aspnetcore-2.2)
-7. [Updating related data](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/update-related-data?view=aspnetcore-2.2)
-8. [Handle concurrency conflicts](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/concurrency?view=aspnetcore-2.2)
+1. [Get started](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2)
+2. [Create, Read, Update, and Delete operations](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/crud?view=aspnetcore-2.2)
+3. [Sorting, filtering, paging, and grouping](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/sort-filter-page?view=aspnetcore-2.2)
+4. [Migrations](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/migrations?view=aspnetcore-2.2)
+5. [Create a complex data model](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2)
+6. [Reading related data](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/read-related-data?view=aspnetcore-2.2)
+7. [Updating related data](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/update-related-data?view=aspnetcore-2.2)
+8. [Handle concurrency conflicts](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/concurrency?view=aspnetcore-2.2)
 
 ## Part 1 of 8
 
@@ -19,29 +19,29 @@ The Contoso University sample web app demonstrates how to create an ASP.NET Core
 
 The sample app is a web site for a fictional Contoso University. It includes functionality such as student admission, course creation, and instructor assignments. This page is the first in a series of tutorials that explain how to build the Contoso University sample app.
 
-[Download or view the completed app.](https://github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples) [Download instructions](https://docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) .
+[Download or view the completed app.](https:/github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples) [Download instructions](https:/docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) .
 
 ### Prerequisites
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2&tabs=visual-studio)
 
-[Visual Studio 2017 version 15.7.3 or later](https://visualstudio.microsoft.com/downloads/) with the following workloads:
+[Visual Studio 2017 version 15.7.3 or later](https:/visualstudio.microsoft.com/downloads) with the following workloads:
 
 - ASP.NET and web development
 - .NET Core cross-platform development
 
-[.NET Core 2.1 SDK or later](https://www.microsoft.com/net/download/windows)
+[.NET Core 2.1 SDK or later](https:/www.microsoft.com/net/download/windows)
 
-- [.NET Core CLI](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2&tabs=visual-studio)
-- [.NET Core 2.1 SDK or later](https://www.microsoft.com/net/download/all)
+- [.NET Core CLI](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2&tabs=visual-studio)
+- [.NET Core 2.1 SDK or later](https:/www.microsoft.com/net/download/all)
 
 CONTINUE…
 
-Familiarity with [Razor Pages](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/index?view=aspnetcore-2.2) . New programmers should complete [Get started with Razor Pages](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2) before starting this series.
+Familiarity with [Razor Pages](https:/docs.microsoft.com/en-us/aspnet/core/razor-pages/index?view=aspnetcore-2.2) . New programmers should complete [Get started with Razor Pages](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2) before starting this series.
 
 ### Troubleshooting
 
-If you run into a problem you can't resolve, you can generally find the solution by comparing your code to the [completed project](https://github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples) . A good way to get help is by posting a question to [StackOverflow.com](https://stackoverflow.com/questions/tagged/asp.net-core) for [ASP.NET Core](https://stackoverflow.com/questions/tagged/asp.net-core) or [EF Core](https://stackoverflow.com/questions/tagged/entity-framework-core) .
+If you run into a problem you can't resolve, you can generally find the solution by comparing your code to the [completed project](https:/github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples) . A good way to get help is by posting a question to [StackOverflow.com](https:/stackoverflow.com/questions/tagged/asp.net-core) for [ASP.NET Core](https:/stackoverflow.com/questions/tagged/asp.net-core) or [EF Core](https:/stackoverflow.com/questions/tagged/entity-framework-core) .
 
 ### The Contoso University web app
 
@@ -57,15 +57,14 @@ The UI style of this site is close to what's generated by the built-in templates
 
 ### Create the ContosoUniversity Razor Pages web app
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2&tabs=visual-studio)
-
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2&tabs=visual-studio)
 - From the Visual Studio File menu, select New &gt; Project.
 - Create a new ASP.NET Core Web Application. Name the project ContosoUniversity. It's important to name the project ContosoUniversity so the namespaces match when code is copy/pasted.
 - Select ASP.NET Core 2.1 in the dropdown, and then select Web Application.
 
-For images of the preceding steps, see [Create a Razor web app](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2) . Run the app.
+For images of the preceding steps, see [Create a Razor web app](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2) . Run the app.
 
-- [.NET Core CLI](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2&tabs=visual-studio)
+- [.NET Core CLI](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2&tabs=visual-studio)
 
 CLICopy
 
@@ -314,7 +313,7 @@ public ICollection&lt;Enrollment&gt; Enrollments { get; set; }
 
 The ID property becomes the primary key column of the database (DB) table that corresponds to this class. By default, EF Core interprets a property that's named ID or classnameID as the primary key. In classnameID, classname is the name of the class. The alternative automatically recognized primary key is StudentID in the preceding example.
 
-The Enrollments property is a [navigation property](https://docs.microsoft.com/ef/core/modeling/relationships) . Navigation properties link to other entities that are related to this entity. In this case, the Enrollments property of a Student entity holds all of the Enrollment entities that are related to that Student. For example, if a Student row in the DB has two related Enrollment rows, the Enrollments navigation property contains those two Enrollment entities. A related Enrollment row is a row that contains that student's primary key value in the StudentID column. For example, suppose the student with ID=1 has two rows in the Enrollment table. The Enrollment table has two rows with StudentID = 1. StudentID is a foreign key in the Enrollment table that specifies the student in the Student table.
+The Enrollments property is a [navigation property](https:/docs.microsoft.com/ef/core/modeling/relationships) . Navigation properties link to other entities that are related to this entity. In this case, the Enrollments property of a Student entity holds all of the Enrollment entities that are related to that Student. For example, if a Student row in the DB has two related Enrollment rows, the Enrollments navigation property contains those two Enrollment entities. A related Enrollment row is a row that contains that student's primary key value in the StudentID column. For example, suppose the student with ID=1 has two rows in the Enrollment table. The Enrollment table has two rows with StudentID = 1. StudentID is a foreign key in the Enrollment table that specifies the student in the Student table.
 
 If a navigation property can hold multiple entities, the navigation property must be a list type, such as ICollection&lt;T&gt;. ICollection&lt;T&gt; can be specified, or a type such as List&lt;T&gt; or HashSet&lt;T&gt;. When ICollection&lt;T&gt; is used, EF Core creates a HashSet&lt;T&gt; collection by default. Navigation properties that hold multiple entities come from many-to-many and one-to-many relationships.
 
@@ -412,9 +411,7 @@ In this section, the student model is scaffolded. That is, the scaffolding tool 
 
 - Build the project.
 - Create the Pages/Students folder.
-
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2&tabs=visual-studio)
-
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2&tabs=visual-studio)
 - In Solution Explorer, right click on the Pages/Students folder &gt; Add &gt; New Scaffolded Item.
 - In the Add Scaffold dialog, select Razor Pages using Entity Framework (CRUD) &gt; ADD.
 
@@ -426,9 +423,9 @@ Complete the Add Razor Pages using Entity Framework (CRUD) dialog:
 - Select Add.
 <!-- image -->
 
-See [Scaffold the movie model](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2) if you have a problem with the preceding step.
+See [Scaffold the movie model](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2) if you have a problem with the preceding step.
 
-- [.NET Core CLI](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2&tabs=visual-studio)
+- [.NET Core CLI](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2&tabs=visual-studio)
 
 Run the following commands to scaffold the student model.
 
@@ -454,7 +451,7 @@ The scaffold process created and changed the following files:
 
 ### Examine the context registered with dependency injection
 
-ASP.NET Core is built with [dependency injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) . Services (such as the EF Core DB context) are registered with dependency injection during application startup. Components that require these services (such as Razor Pages) are provided these services via constructor parameters. The constructor code that gets a db context instance is shown later in the tutorial.
+ASP.NET Core is built with [dependency injection](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) . Services (such as the EF Core DB context) are registered with dependency injection during application startup. Components that require these services (such as Razor Pages) are provided these services via constructor parameters. The constructor code that gets a db context instance is shown later in the tutorial.
 
 The scaffolding tool automatically created a DB Context and registered it with the dependency injection container.
 
@@ -488,14 +485,14 @@ options.UseSqlServer(Configuration.GetConnectionString("SchoolContext")));
 
 }
 
-The name of the connection string is passed in to the context by calling a method on a [DbContextOptions](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontextoptions) object. For local development, the [ASP.NET Core configuration system](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) reads the connection string from the appsettings.json file.
+The name of the connection string is passed in to the context by calling a method on a [DbContextOptions](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontextoptions) object. For local development, the [ASP.NET Core configuration system](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) reads the connection string from the appsettings.json file.
 
 ### Update main
 
 In Program.cs, modify the Main method to do the following:
 
 - Get a DB context instance from the dependency injection container.
-- Call the [EnsureCreated](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.infrastructure.databasefacade.ensurecreated) .
+- Call the [EnsureCreated](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.infrastructure.databasefacade.ensurecreated) .
 - Dispose the context when the EnsureCreated method completes.
 
 The following code shows the updated Program.cs file.
@@ -583,14 +580,14 @@ EnsureCreated is convenient early in development when the schema is rapidly evo
 
 #### Test the app
 
-Run the app and accept the cookie policy. This app doesn't keep personal information. You can read about the cookie policy at [EU General Data Protection Regulation (GDPR) support](https://docs.microsoft.com/en-us/aspnet/core/security/gdpr?view=aspnetcore-2.2) .
+Run the app and accept the cookie policy. This app doesn't keep personal information. You can read about the cookie policy at [EU General Data Protection Regulation (GDPR) support](https:/docs.microsoft.com/en-us/aspnet/core/security/gdpr?view=aspnetcore-2.2) .
 
 - Select the Students link and then Create New.
 - Test the Edit, Details, and Delete links.
 
 ### Examine the SchoolContext DB context
 
-The main class that coordinates EF Core functionality for a given data model is the DB context class. The data context is derived from [Microsoft.EntityFrameworkCore.DbContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext) . The data context specifies which entities are included in the data model. In this project, the class is named SchoolContext.
+The main class that coordinates EF Core functionality for a given data model is the DB context class. The data context is derived from [Microsoft.EntityFrameworkCore.DbContext](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext) . The data context specifies which entities are included in the data model. In this project, the class is named SchoolContext.
 
 Update SchoolContext.cs with the following code:
 
@@ -624,7 +621,7 @@ public DbSet&lt;Course&gt; Course { get; set; }
 
 }
 
-The highlighted code creates a [DbSet&lt;TEntity&gt;](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbset-1) property for each entity set. In EF Core terminology:
+The highlighted code creates a [DbSet&lt;TEntity&gt;](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbset-1) property for each entity set. In EF Core terminology:
 
 - An entity set typically corresponds to a DB table.
 - An entity corresponds to a row in the table.
@@ -633,7 +630,7 @@ DbSet&lt;Enrollment&gt; and DbSet&lt;Course&gt; could be omitted. EF Core inc
 
 #### SQL Server Express LocalDB
 
-The connection string specifies [SQL Server LocalDB](https://docs.microsoft.com/sql/database-engine/configure-windows/sql-server-2016-express-localdb) . LocalDB is a lightweight version of the SQL Server Express Database Engine and is intended for app development, not production use. LocalDB starts on demand and runs in user mode, so there's no complex configuration. By default, LocalDB creates .mdf DB files in the C:/Users/&lt;user&gt; directory.
+The connection string specifies [SQL Server LocalDB](https:/docs.microsoft.com/sql/database-engine/configure-windows/sql-server-2016-express-localdb) . LocalDB is a lightweight version of the SQL Server Express Database Engine and is intended for app development, not production use. LocalDB starts on demand and runs in user mode, so there's no complex configuration. By default, LocalDB creates .mdf DB files in the C:/Users/&lt;user&gt; directory.
 
 ### Add code to initialize the DB with test data
 
@@ -859,7 +856,7 @@ A web server has a limited number of threads available, and in high load situati
 
 Asynchronous code does introduce a small amount of overhead at run time. For low traffic situations, the performance hit is negligible, while for high traffic situations, the potential performance improvement is substantial.
 
-In the following code, the [async](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async) keyword, Task&lt;T&gt; return value, await keyword, and ToListAsync method make the code execute asynchronously.
+In the following code, the [async](https:/docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async) keyword, Task&lt;T&gt; return value, await keyword, and ToListAsync method make the code execute asynchronously.
 
 C#Copy
 
@@ -873,7 +870,7 @@ Student = await \_context.Student.ToListAsync();
 
 - The async keyword tells the compiler to:
     - Generate callbacks for parts of the method body.
-    - Automatically create the [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task) object that's returned. For more information, see [Task Return Type](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/async-return-types) .
+    - Automatically create the [Task](https:/docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task) object that's returned. For more information, see [Task Return Type](https:/docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/async-return-types) .
 - The implicit return type Task represents ongoing work.
 - The await keyword causes the compiler to split the method into two parts. The first part ends with the operation that's started asynchronously. The second part is put into a callback method that's called when the operation completes.
 - ToListAsync is the asynchronous version of the ToList extension method.
@@ -884,13 +881,13 @@ Some things to be aware of when writing asynchronous code that uses EF Core:
 - An EF Core context isn't thread safe: don't try to do multiple operations in parallel.
 - To take advantage of the performance benefits of async code, verify that library packages (such as for paging) use async if they call EF Core methods that send queries to the DB.
 
-For more information about asynchronous programming in .NET, see [Async Overview](https://docs.microsoft.com/en-us/dotnet/standard/async) and [Asynchronous programming with async and await](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/) .
+For more information about asynchronous programming in .NET, see [Async Overview](https:/docs.microsoft.com/en-us/dotnet/standard/async) and [Asynchronous programming with async and await](https:/docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async) .
 
 In the next tutorial, basic CRUD (create, read, update, delete) operations are examined.
 
 ## Part 2 of 8
 
-The Contoso University web app demonstrates how to create Razor Pages web apps using EF Core and Visual Studio. For information about the tutorial series, see [the first tutorial](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) .
+The Contoso University web app demonstrates how to create Razor Pages web apps using EF Core and Visual Studio. For information about the tutorial series, see [the first tutorial](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) .
 
 In this tutorial, the scaffolded CRUD (create, read, update, delete) code is reviewed and customized.
 
@@ -907,7 +904,7 @@ The Index and Details pages get and display the requested data with the HTTP GET
 
 ### SingleOrDefaultAsync vs. FirstOrDefaultAsync
 
-The generated code uses [FirstOrDefaultAsync](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entityframeworkqueryableextensions.firstordefaultasync) , which is generally preferred over [SingleOrDefaultAsync](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entityframeworkqueryableextensions.singleordefaultasync) .
+The generated code uses [FirstOrDefaultAsync](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entityframeworkqueryableextensions.firstordefaultasync) , which is generally preferred over [SingleOrDefaultAsync](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entityframeworkqueryableextensions.singleordefaultasync) .
 
 FirstOrDefaultAsync is more efficient than SingleOrDefaultAsync at fetching one entity:
 
@@ -918,7 +915,7 @@ FirstOrDefaultAsync is more efficient than SingleOrDefaultAsync at fetching o
 
 #### FindAsync
 
-In much of the scaffolded code, [FindAsync](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext.findasync) can be used in place of FirstOrDefaultAsync.
+In much of the scaffolded code, [FindAsync](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext.findasync) can be used in place of FirstOrDefaultAsync.
 
 FindAsync:
 
@@ -926,13 +923,13 @@ FindAsync:
 - Is simple and concise.
 - Is optimized to look up a single entity.
 - Can have perf benefits in some situations, but that rarely happens for typical web apps.
-- Implicitly uses [FirstAsync](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entityframeworkqueryableextensions.firstasync) instead of [SingleAsync](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entityframeworkqueryableextensions.singleasync) .
+- Implicitly uses [FirstAsync](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entityframeworkqueryableextensions.firstasync) instead of [SingleAsync](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entityframeworkqueryableextensions.singleasync) .
 
 But if you want to Include other entities, then FindAsync is no longer appropriate. This means that you may need to abandon FindAsync and move to a query as your app progresses.
 
 ### Customize the Details page
 
-Browse to Pages/Students page. The Edit, Details, and Delete links are generated by the [Anchor Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/anchor-tag-helper?view=aspnetcore-2.2) in the Pages/Students/Index.cshtml file.
+Browse to Pages/Students page. The Edit, Details, and Delete links are generated by the [Anchor Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/anchor-tag-helper?view=aspnetcore-2.2) in the Pages/Students/Index.cshtml file.
 
 CSHTMLCopy
 
@@ -1002,9 +999,9 @@ return Page();
 
 }
 
-The [Include](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entityframeworkqueryableextensions.include) and [ThenInclude](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entityframeworkqueryableextensions.theninclude) methods cause the context to load the Student.Enrollments navigation property, and within each enrollment the Enrollment.Course navigation property. These methods are examined in detail in the reading-related data tutorial.
+The [Include](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entityframeworkqueryableextensions.include) and [ThenInclude](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entityframeworkqueryableextensions.theninclude) methods cause the context to load the Student.Enrollments navigation property, and within each enrollment the Enrollment.Course navigation property. These methods are examined in detail in the reading-related data tutorial.
 
-The [AsNoTracking](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entityframeworkqueryableextensions.asnotracking) method improves performance in scenarios when the entities returned are not updated in the current context. AsNoTracking is discussed later in this tutorial.
+The [AsNoTracking](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entityframeworkqueryableextensions.asnotracking) method improves performance in scenarios when the entities returned are not updated in the current context. AsNoTracking is discussed later in this tutorial.
 
 #### Display related enrollments on the Details page
 
@@ -1174,7 +1171,7 @@ return null;
 
 #### TryUpdateModelAsync
 
-Examine the [TryUpdateModelAsync](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.controllerbase.tryupdatemodelasync) code:
+Examine the [TryUpdateModelAsync](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.controllerbase.tryupdatemodelasync) code:
 
 C#Copy
 
@@ -1190,12 +1187,12 @@ s =&gt; s.FirstMidName, s =&gt; s.LastName, s =&gt; s.EnrollmentDate))
 
 {
 
-In the preceding code, TryUpdateModelAsync&lt;Student&gt; tries to update the emptyStudent object using the posted form values from the [PageContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.razorpages.pagemodel.pagecontext) property in the [PageModel](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.razorpages.pagemodel) . TryUpdateModelAsync only updates the properties listed (s =&gt; s.FirstMidName, s =&gt; s.LastName, s =&gt; s.EnrollmentDate).
+In the preceding code, TryUpdateModelAsync&lt;Student&gt; tries to update the emptyStudent object using the posted form values from the [PageContext](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.razorpages.pagemodel.pagecontext) property in the [PageModel](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.razorpages.pagemodel) . TryUpdateModelAsync only updates the properties listed (s =&gt; s.FirstMidName, s =&gt; s.LastName, s =&gt; s.EnrollmentDate).
 
 In the preceding sample:
 
 - The second argument ("student", // Prefix) is the prefix uses to look up values. It's not case sensitive.
-- The posted form values are converted to the types in the Student model using [model binding](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-2.2) .
+- The posted form values are converted to the types in the Student model using [model binding](https:/docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-2.2) .
 
 #### Overposting
 
@@ -1287,9 +1284,9 @@ return RedirectToPage("./Index");
 
 }
 
-The [SetValues](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.changetracking.propertyvalues.setvalues) method sets the values of this object by reading values from another [PropertyValues](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.changetracking.propertyvalues) object. SetValues uses property name matching. The view model type doesn't need to be related to the model type, it just needs to have properties that match.
+The [SetValues](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.changetracking.propertyvalues.setvalues) method sets the values of this object by reading values from another [PropertyValues](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.changetracking.propertyvalues) object. SetValues uses property name matching. The view model type doesn't need to be related to the model type, it just needs to have properties that match.
 
-Using StudentVM requires [CreateVM.cshtml](https://github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples/cu21/Pages/Students/CreateVM.cshtml) be updated to use StudentVM rather than Student.
+Using StudentVM requires [CreateVM.cshtml](https:/github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples/cu21/Pages/Students/CreateVM.cshtml) be updated to use StudentVM rather than Student.
 
 In Razor Pages, the PageModel derived class is the view model.
 
@@ -1383,7 +1380,7 @@ The code changes are similar to the Create page with a few exceptions:
 
 - OnPostAsync has an optional id parameter.
 - The current student is fetched from the DB, rather than creating an empty student.
-- FirstOrDefaultAsync has been replaced with [FindAsync](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbset-1.findasync) . FindAsync is a good choice when selecting an entity from the primary key. See [FindAsync](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/crud?view=aspnetcore-2.2) for more information.
+- FirstOrDefaultAsync has been replaced with [FindAsync](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbset-1.findasync) . FindAsync is a good choice when selecting an entity from the primary key. See [FindAsync](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/crud?view=aspnetcore-2.2) for more information.
 
 #### Test the Edit and Create pages
 
@@ -1391,9 +1388,9 @@ Create and edit a few student entities.
 
 ### Entity States
 
-The DB context keeps track of whether entities in memory are in sync with their corresponding rows in the DB. The DB context sync information determines what happens when [SaveChangesAsync](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechangesasync) is called. For example, when a new entity is passed to the [AddAsync](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext.addasync) method, that entity's state is set to [Added](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entitystate) . When SaveChangesAsync is called, the DB context issues a SQL INSERT command.
+The DB context keeps track of whether entities in memory are in sync with their corresponding rows in the DB. The DB context sync information determines what happens when [SaveChangesAsync](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechangesasync) is called. For example, when a new entity is passed to the [AddAsync](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext.addasync) method, that entity's state is set to [Added](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entitystate) . When SaveChangesAsync is called, the DB context issues a SQL INSERT command.
 
-An entity may be in one of the [following states](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entitystate) :
+An entity may be in one of the [following states](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entitystate) :
 
 - Added: The entity doesn't yet exist in the DB. The SaveChanges method issues an INSERT statement.
 - Unchanged: No changes need to be saved with this entity. An entity has this status when it's read from the DB.
@@ -1533,7 +1530,7 @@ new { id, saveChangesError = true });
 
 }
 
-The preceding code retrieves the selected entity, then calls the [Remove](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext.remove) method to set the entity's status to Deleted. When SaveChanges is called, a SQL DELETE command is generated. If Remove fails:
+The preceding code retrieves the selected entity, then calls the [Remove](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext.remove) method to set the entity's status to Deleted. When SaveChanges is called, a SQL DELETE command is generated. If Remove fails:
 
 - The DB exception is caught.
 - The Delete pages OnGetAsync method is called with saveChangesError=true.
@@ -1578,7 +1575,7 @@ Each Razor Page must include the @page directive.
 
 ## Part 3 of 8
 
-The Contoso University web app demonstrates how to create Razor Pages web apps using EF Core and Visual Studio. For information about the tutorial series, see [the first tutorial](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) .
+The Contoso University web app demonstrates how to create Razor Pages web apps using EF Core and Visual Studio. For information about the tutorial series, see [the first tutorial](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) .
 
 In this tutorial, sorting, filtering, grouping, and paging, functionality is added.
 
@@ -1586,7 +1583,7 @@ The following illustration shows a completed page. The column headings are click
 
 <!-- image -->
 
-If you run into problems you can't solve, download the [completed app](https://github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples) .
+If you run into problems you can't solve, download the [completed app](https:/github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples) .
 
 ### Add sorting to the Index page
 
@@ -1666,7 +1663,7 @@ Student = await studentIQ.AsNoTracking().ToListAsync();
 
 }
 
-The preceding code receives a sortOrder parameter from the query string in the URL. The URL (including the query string) is generated by the [Anchor Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/anchor-tag-helper?view=aspnetcore-2.2)
+The preceding code receives a sortOrder parameter from the query string in the URL. The URL (including the query string) is generated by the [Anchor Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/anchor-tag-helper?view=aspnetcore-2.2)
 
 The sortOrder parameter is either "Name" or "Date." The sortOrder parameter is optionally followed by "\_desc" to specify descending order. The default sort order is ascending.
 
@@ -1722,7 +1719,7 @@ Student = await studentIQ.AsNoTracking().ToListAsync();
 
 }
 
-The following code contains the C# conditional [?: operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/conditional-operator) :
+The following code contains the C# conditional [?: operator](https:/docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/conditional-operator) :
 
 C#Copy
 
@@ -2061,7 +2058,7 @@ Find by name:
 
 &lt;table class="table"&gt;
 
-The preceding code uses the &lt;form&gt; [tag helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2) to add the search text box and button. By default, the &lt;form&gt; tag helper submits form data with a POST. With POST, the parameters are passed in the HTTP message body and not in the URL. When HTTP GET is used, the form data is passed in the URL as query strings. Passing the data with query strings enables users to bookmark the URL. The [W3C guidelines](https://www.w3.org/2001/tag/doc/whenToUseGet.html) recommend that GET should be used when the action doesn't result in an update.
+The preceding code uses the &lt;form&gt; [tag helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2) to add the search text box and button. By default, the &lt;form&gt; tag helper submits form data with a POST. With POST, the parameters are passed in the HTTP message body and not in the URL. When HTTP GET is used, the form data is passed in the URL as query strings. Passing the data with query strings enables users to bookmark the URL. The [W3C guidelines](https:/www.w3.org/2001/tag/doc/whenToUseGet.html) recommend that GET should be used when the action doesn't result in an update.
 
 Test the app:
 
@@ -2323,7 +2320,7 @@ Student = await PaginatedList&lt;Student&gt;.CreateAsync(
 
 studentIQ.AsNoTracking(), pageIndex ?? 1, pageSize);
 
-The two question marks in PaginatedList.CreateAsync represent the [null-coalescing operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/null-conditional-operator) . The null-coalescing operator defines a default value for a nullable type. The expression (pageIndex ?? 1) means return the value of pageIndex if it has a value. If pageIndex doesn't have a value, return 1.
+The two question marks in PaginatedList.CreateAsync represent the [null-coalescing operator](https:/docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/null-conditional-operator) . The null-coalescing operator defines a default value for a nullable type. The expression (pageIndex ?? 1) means return the value of pageIndex if it has a value. If pageIndex doesn't have a value, return 1.
 
 ### Add paging links to the student Razor Page
 
@@ -2718,23 +2715,23 @@ Students
 
 Run the app and navigate to the About page. The count of students for each enrollment date is displayed in a table.
 
-If you run into problems you can't solve, download the [completed app for this stage](https://github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples/StageSnapShots/cu-part3-sorting) .
+If you run into problems you can't solve, download the [completed app for this stage](https:/github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples/StageSnapShots/cu-part3-sorting) .
 
 <!-- image -->
 
 ### Additional resources
 
-- [Debugging ASP.NET Core 2.x source](https://github.com/aspnet/Docs/issues/4155)
+- [Debugging ASP.NET Core 2.x source](https:/github.com/aspnet/Docs/issues/4155)
 
 In the next tutorial, the app uses migrations to update the data model.
 
 ## Part 4 of 8
 
-The Contoso University web app demonstrates how to create Razor Pages web apps using EF Core and Visual Studio. For information about the tutorial series, see [the first tutorial](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) .
+The Contoso University web app demonstrates how to create Razor Pages web apps using EF Core and Visual Studio. For information about the tutorial series, see [the first tutorial](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) .
 
 In this tutorial, the EF Core migrations feature for managing data model changes is used.
 
-If you run into problems you can't solve, download the [completed app](https://github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples) .
+If you run into problems you can't solve, download the [completed app](https:/github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples) .
 
 When a new app is developed, the data model changes frequently. Each time the model changes, the model gets out of sync with the database. This tutorial started by configuring the Entity Framework to create the database if it doesn't exist. Each time the data model changes:
 
@@ -2750,7 +2747,7 @@ Rather than dropping and recreating the DB when the data model changes, migratio
 
 Use SQL Server Object Explorer (SSOX) or the database drop command:
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/migrations?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/migrations?view=aspnetcore-2.2&tabs=visual-studio)
 
 In the Package Manager Console (PMC), run the following command:
 
@@ -2760,7 +2757,7 @@ Drop-Database
 
 Run Get-Help about\_EntityFrameworkCore from the PMC to get help information.
 
-- [.NET Core CLI](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/migrations?view=aspnetcore-2.2&tabs=visual-studio)
+- [.NET Core CLI](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/migrations?view=aspnetcore-2.2&tabs=visual-studio)
 
 Open a command window and navigate to the project folder. The project folder contains the *Startup.cs* file.
 
@@ -2776,7 +2773,7 @@ CONTINUE…
 
 Build the project and create the first migration.
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/migrations?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/migrations?view=aspnetcore-2.2&tabs=visual-studio)
 
 PMCCopy
 
@@ -2784,7 +2781,7 @@ Add-Migration InitialCreate
 
 Update-Database
 
-- [.NET Core CLI](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/migrations?view=aspnetcore-2.2&tabs=visual-studio)
+- [.NET Core CLI](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/migrations?view=aspnetcore-2.2&tabs=visual-studio)
 
 consoleCopy
 
@@ -2873,11 +2870,11 @@ Migrations create a snapshot of the current database schema in Migrations/Sch
 
 To delete a migration, use the following command:
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/migrations?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/migrations?view=aspnetcore-2.2&tabs=visual-studio)
 
 Remove-Migration
 
-- [.NET Core CLI](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/migrations?view=aspnetcore-2.2&tabs=visual-studio)
+- [.NET Core CLI](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/migrations?view=aspnetcore-2.2&tabs=visual-studio)
 
 dotnet ef migrations remove
 
@@ -2910,7 +2907,7 @@ Run the app and verify that everything works.
 
 ### Applying migrations in production
 
-We recommend production apps should not call [Database.Migrate](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.relationaldatabasefacadeextensions.migrate?view=efcore-2.0) at application startup. Migrate shouldn't be called from an app in server farm. For example, if the app has been cloud deployed with scale-out (multiple instances of the app are running).
+We recommend production apps should not call [Database.Migrate](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.relationaldatabasefacadeextensions.migrate?view=efcore-2.0) at application startup. Migrate shouldn't be called from an app in server farm. For example, if the app has been cloud deployed with scale-out (multiple instances of the app are running).
 
 Database migration should be done as part of deployment, and in a controlled way. Production database migration approaches include:
 
@@ -2921,7 +2918,7 @@ EF Core uses the \_\_MigrationsHistory table to see if any migrations need to 
 
 ### Troubleshooting
 
-Download the [completed app](https://github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples/StageSnapShots/cu-part4-migrations) .
+Download the [completed app](https:/github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples/StageSnapShots/cu-part4-migrations) .
 
 The app generates the following exception:
 
@@ -2937,12 +2934,12 @@ Solution: Run dotnet ef database update
 
 #### Additional resources
 
-- [.NET Core CLI](https://docs.microsoft.com/ef/core/miscellaneous/cli/dotnet) .
-- [Package Manager Console (Visual Studio)](https://docs.microsoft.com/ef/core/miscellaneous/cli/powershell)
+- [.NET Core CLI](https:/docs.microsoft.com/ef/core/miscellaneous/cli/dotnet) .
+- [Package Manager Console (Visual Studio)](https:/docs.microsoft.com/ef/core/miscellaneous/cli/powershell)
 
 ## Part 5 of 8
 
-The Contoso University web app demonstrates how to create Razor Pages web apps using EF Core and Visual Studio. For information about the tutorial series, see [the first tutorial](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) .
+The Contoso University web app demonstrates how to create Razor Pages web apps using EF Core and Visual Studio. For information about the tutorial series, see [the first tutorial](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) .
 
 The previous tutorials worked with a basic data model that was composed of three entities. In this tutorial:
 
@@ -2953,7 +2950,7 @@ The entity classes for the completed data model is shown in the following illust
 
 <!-- image -->
 
-If you run into problems you can't solve, download the [completed app](https://github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples) .
+If you run into problems you can't solve, download the [completed app](https:/github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples) .
 
 ### Customize the data model with attributes
 
@@ -2999,14 +2996,14 @@ public ICollection&lt;Enrollment&gt; Enrollments { get; set; }
 
 }
 
-The [DataType](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.datatypeattribute?view=netframework-4.7.1) attribute specifies a data type that's more specific than the database intrinsic type. In this case only the date should be displayed, not the date and time. The [DataType Enumeration](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.datatype?view=netframework-4.7.1) provides for many data types, such as Date, Time, PhoneNumber, Currency, EmailAddress, etc. The DataType attribute can also enable the app to automatically provide type-specific features. For example:
+The [DataType](https:/docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.datatypeattribute?view=netframework-4.7.1) attribute specifies a data type that's more specific than the database intrinsic type. In this case only the date should be displayed, not the date and time. The [DataType Enumeration](https:/docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.datatype?view=netframework-4.7.1) provides for many data types, such as Date, Time, PhoneNumber, Currency, EmailAddress, etc. The DataType attribute can also enable the app to automatically provide type-specific features. For example:
 
 - The mailto: link is automatically created for DataType.EmailAddress.
 - The date selector is provided for DataType.Date in most browsers.
 
 The DataType attribute emits HTML 5 data- (pronounced data dash) attributes that HTML 5 browsers consume. The DataType attributes don't provide validation.
 
-DataType.Date doesn't specify the format of the date that's displayed. By default, the date field is displayed according to the default formats based on the server's [CultureInfo](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.2) .
+DataType.Date doesn't specify the format of the date that's displayed. By default, the date field is displayed according to the default formats based on the server's [CultureInfo](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.2) .
 
 The DisplayFormat attribute is used to explicitly specify the date format:
 
@@ -3021,7 +3018,7 @@ The DisplayFormat attribute can be used by itself. It's generally a good idea 
 - The browser can enable HTML5 features. For example, show a calendar control, the locale-appropriate currency symbol, email links, client-side input validation, etc.
 - By default, the browser renders data using the correct format based on the locale.
 
-For more information, see the [&lt;input&gt; Tag Helper documentation](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) .
+For more information, see the [&lt;input&gt; Tag Helper documentation](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) .
 
 Run the app. Navigate to the Students Index page. Times are no longer displayed. Every view that uses the Student model displays the date without time.
 
@@ -3029,7 +3026,7 @@ Run the app. Navigate to the Students Index page. Times are no longer displayed.
 
 #### The StringLength attribute
 
-Data validation rules and validation error messages can be specified with attributes. The [StringLength](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.stringlengthattribute?view=netframework-4.7.1) attribute specifies the minimum and maximum length of characters that are allowed in a data field. The StringLengthattribute also provides client-side and server-side validation. The minimum value has no impact on the database schema.
+Data validation rules and validation error messages can be specified with attributes. The [StringLength](https:/docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.stringlengthattribute?view=netframework-4.7.1) attribute specifies the minimum and maximum length of characters that are allowed in a data field. The StringLengthattribute also provides client-side and server-side validation. The minimum value has no impact on the database schema.
 
 Update the Student model with the following code:
 
@@ -3071,7 +3068,7 @@ public ICollection&lt;Enrollment&gt; Enrollments { get; set; }
 
 }
 
-The preceding code limits names to no more than 50 characters. The StringLength attribute doesn't prevent a user from entering white space for a name. The [RegularExpression](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.regularexpressionattribute?view=netframework-4.7.1) attribute is used to apply restrictions to the input. For example, the following code requires the first character to be upper case and the remaining characters to be alphabetical:
+The preceding code limits names to no more than 50 characters. The StringLength attribute doesn't prevent a user from entering white space for a name. The [RegularExpression](https:/docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.regularexpressionattribute?view=netframework-4.7.1) attribute is used to apply restrictions to the input. For example, the following code requires the first character to be upper case and the remaining characters to be alphabetical:
 
 C#Copy
 
@@ -3154,8 +3151,7 @@ To update the DB:
 
 - Build the project.
 - Open a command window in the project folder. Enter the following commands to create a new migration and update the DB:
-
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio)
 
 PMCCopy
 
@@ -3163,7 +3159,7 @@ Add-Migration ColumnFirstName
 
 Update-Database
 
-- [.NET Core CLI](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio)
+- [.NET Core CLI](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio)
 
 consoleCopy
 
@@ -3189,7 +3185,7 @@ Open the Student table in SSOX:
 
 <!-- image -->
 
-Before migration was applied, the name columns were of type [nvarchar(MAX)](https://docs.microsoft.com/sql/t-sql/data-types/nchar-and-nvarchar-transact-sql) . The name columns are now nvarchar(50). The column name has changed from FirstMidName to FirstName.
+Before migration was applied, the name columns were of type [nvarchar(MAX)](https:/docs.microsoft.com/sql/t-sql/data-types/nchar-and-nvarchar-transact-sql) . The name columns are now nvarchar(50). The column name has changed from FirstMidName to FirstName.
 
 **Note**
 
@@ -3527,7 +3523,7 @@ The Course entity has a foreign key (FK) property DepartmentID. DepartmentID
 
 EF Core doesn't require a FK property for a data model when the model has a navigation property for a related entity.
 
-EF Core automatically creates FKs in the database wherever they're needed. EF Core creates [shadow properties](https://docs.microsoft.com/ef/core/modeling/shadow-properties) for automatically created FKs. Having the FK in the data model can make updates simpler and more efficient. For example, consider a model where the FK property DepartmentID is not included. When a course entity is fetched to edit:
+EF Core automatically creates FKs in the database wherever they're needed. EF Core creates [shadow properties](https:/docs.microsoft.com/ef/core/modeling/shadow-properties) for automatically created FKs. Having the FK in the data model can make updates simpler and more efficient. For example, consider a model where the FK property DepartmentID is not included. When a course entity is fetched to edit:
 
 - The Department entity is null if it's not explicitly loaded.
 - To update the course entity, the Department entity must first be fetched.
@@ -3548,7 +3544,7 @@ public int CourseID { get; set; }
 
 By default, EF Core assumes that PK values are generated by the DB. DB generated PK values is generally the best approach. For Course entities, the user specifies the PK. For example, a course number such as a 1000 series for the math department, a 2000 series for the English department.
 
-The DatabaseGenerated attribute can also be used to generate default values. For example, the DB can automatically generate a date field to record the date a row was created or updated. For more information, see [Generated Properties](https://docs.microsoft.com/ef/core/modeling/generated-properties) .
+The DatabaseGenerated attribute can also be used to generate default values. For example, the DB can automatically generate a date field to record the date a row was created or updated. For more information, see [Generated Properties](https:/docs.microsoft.com/ef/core/modeling/generated-properties) .
 
 #### Foreign key and navigation properties
 
@@ -3574,7 +3570,7 @@ C#Copy
 
 public ICollection&lt;CourseAssignment&gt; CourseAssignments { get; set; }
 
-CourseAssignment is explained [later](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio) .
+CourseAssignment is explained [later](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio) .
 
 ### Create the Department entity
 
@@ -3758,7 +3754,7 @@ public Student Student { get; set; }
 
 There's a many-to-many relationship between the Student and Course entities. The Enrollment entity functions as a many-to-many join table with payload in the database. "With payload" means that the Enrollment table contains additional data besides FKs for the joined tables (in this case, the PK and Grade).
 
-The following illustration shows what these relationships look like in an entity diagram. (This diagram was generated using [EF Power Tools](https://marketplace.visualstudio.com/items?itemName=ErikEJ.EntityFramework6PowerToolsCommunityEdition) for EF 6.x. Creating the diagram isn't part of the tutorial.)
+The following illustration shows what these relationships look like in an entity diagram. (This diagram was generated using [EF Power Tools](https:/marketplace.visualstudio.com/items?itemName=ErikEJ.EntityFramework6PowerToolsCommunityEdition) for EF 6.x. Creating the diagram isn't part of the tutorial.)
 
 <!-- image -->
 
@@ -3768,7 +3764,7 @@ If the Enrollment table didn't include grade information, it would only need t
 
 The Instructor and Course entities have a many-to-many relationship using a pure join table.
 
-Note: EF 6.x supports implicit join tables for many-to-many relationships, but EF Core doesn't. For more information, see [Many-to-many relationships in EF Core 2.0](https://blog.oneunicorn.com/2017/09/25/many-to-many-relationships-in-ef-core-2-0-part-1-the-basics/) .
+Note: EF 6.x supports implicit join tables for many-to-many relationships, but EF Core doesn't. For more information, see [Many-to-many relationships in EF Core 2.0](https:/blog.oneunicorn.com/2017/09/25/many-to-many-relationships-in-ef-core-2-0-part-1-the-basics) .
 
 ### The CourseAssignment entity
 
@@ -3832,7 +3828,7 @@ The composite key ensures:
 The Enrollment join entity defines its own PK, so duplicates of this sort are possible. To prevent such duplicates:
 
 - Add a unique index on the FK fields, or
-- Configure Enrollment with a primary composite key similar to CourseAssignment. For more information, see [Indexes](https://docs.microsoft.com/ef/core/modeling/indexes) .
+- Configure Enrollment with a primary composite key similar to CourseAssignment. For more information, see [Indexes](https:/docs.microsoft.com/ef/core/modeling/indexes) .
 
 ### Update the DB context
 
@@ -3904,7 +3900,7 @@ The preceding code adds the new entities and configures the CourseAssignment e
 
 ### Fluent API alternative to attributes
 
-The OnModelCreating method in the preceding code uses the fluent API to configure EF Core behavior. The API is called "fluent" because it's often used by stringing a series of method calls together into a single statement. The [following code](https://docs.microsoft.com/ef/core/modeling/) is an example of the fluent API:
+The OnModelCreating method in the preceding code uses the fluent API to configure EF Core behavior. The API is called "fluent" because it's often used by stringing a series of method calls together into a single statement. The [following code](https:/docs.microsoft.com/ef/core/modeling) is an example of the fluent API:
 
 C#Copy
 
@@ -3935,7 +3931,7 @@ Some of the attributes used in the this tutorial are used for:
 - EF Core configuration only (for example, HasKey).
 - Validation and EF Core configuration (for example, [StringLength(50)]).
 
-For more information about attributes vs. fluent API, see [Methods of configuration](https://docs.microsoft.com/ef/core/modeling/) .
+For more information about attributes vs. fluent API, see [Methods of configuration](https:/docs.microsoft.com/ef/core/modeling) .
 
 ### Entity Diagram Showing Relationships
 
@@ -4435,13 +4431,13 @@ The preceding code provides seed data for the new entities. Most of this code cr
 
 Build the project.
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio)
 
 PMCCopy
 
 Add-Migration ComplexDataModel
 
-- [.NET Core CLI](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio)
+- [.NET Core CLI](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio)
 
 consoleCopy
 
@@ -4471,14 +4467,14 @@ database "ContosoUniversity", table "dbo.Department", column 'DepartmentID'.
 
 Now that you have an existing database, you need to think about how to apply future changes to it. This tutorial shows two approaches:
 
-- [Drop and re-create the database](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio)
-- [Apply the migration to the existing database](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio) . While this method is more complex and time-consuming, it's the preferred approach for real-world, production environments. Note: This is an optional section of the tutorial. You can do the drop and re-create steps and skip this section. If you do want to follow the steps in this section, don't do the drop and re-create steps.
+- [Drop and re-create the database](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio)
+- [Apply the migration to the existing database](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio) . While this method is more complex and time-consuming, it's the preferred approach for real-world, production environments. Note: This is an optional section of the tutorial. You can do the drop and re-create steps and skip this section. If you do want to follow the steps in this section, don't do the drop and re-create steps.
 
 #### Drop and re-create the database
 
 The code in the updated DbInitializer adds seed data for the new entities. To force EF Core to create a new DB, drop and update the DB:
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio)
 
 In the Package Manager Console (PMC), run the following command:
 
@@ -4490,7 +4486,7 @@ Update-Database
 
 Run Get-Help about\_EntityFrameworkCore from the PMC to get help information.
 
-- [.NET Core CLI](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio)
+- [.NET Core CLI](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio)
 
 Open a command window and navigate to the project folder. The project folder contains the *Startup.cs* file.
 
@@ -4520,7 +4516,7 @@ Examine the CourseAssignment table:
 
 #### Apply the migration to the existing database
 
-This section is optional. These steps work only if you skipped the preceding [Drop and re-create the database](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio) section.
+This section is optional. These steps work only if you skipped the preceding [Drop and re-create the database](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-2.2&tabs=visual-studio) section.
 
 When migrations are run with existing data, there may be FK constraints that are not satisfied with the existing data. With production data, steps must be taken to migrate the existing data. This section provides an example of fixing FK constraint violations. Don't make these code changes without a backup. Don't make these code changes if you completed the previous section and updated the database.
 
@@ -4653,11 +4649,11 @@ The next tutorial covers related data.
 
 ## Part 6 of 8
 
-The Contoso University web app demonstrates how to create Razor Pages web apps using EF Core and Visual Studio. For information about the tutorial series, see [the first tutorial](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) .
+The Contoso University web app demonstrates how to create Razor Pages web apps using EF Core and Visual Studio. For information about the tutorial series, see [the first tutorial](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) .
 
 In this tutorial, related data is read and displayed. Related data is data that EF Core loads into navigation properties.
 
-If you run into problems you can't solve, [download or view the completed app.](https://github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples) [Download instructions](https://docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) .
+If you run into problems you can't solve, [download or view the completed app.](https:/github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples) [Download instructions](https:/docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) .
 
 The following illustrations show the completed pages for this tutorial:
 
@@ -4669,7 +4665,7 @@ The following illustrations show the completed pages for this tutorial:
 
 There are several ways that EF Core can load related data into the navigation properties of an entity:
 
-- [Eager loading](https://docs.microsoft.com/ef/core/querying/related-data) . Eager loading is when a query for one type of entity also loads related entities. When the entity is read, its related data is retrieved. This typically results in a single join query that retrieves all of the data that's needed. EF Core will issue multiple queries for some types of eager loading. Issuing multiple queries can be more efficient than was the case for some queries in EF6 where there was a single query. Eager loading is specified with the Include and ThenInclude methods.
+- [Eager loading](https:/docs.microsoft.com/ef/core/querying/related-data) . Eager loading is when a query for one type of entity also loads related entities. When the entity is read, its related data is retrieved. This typically results in a single join query that retrieves all of the data that's needed. EF Core will issue multiple queries for some types of eager loading. Issuing multiple queries can be more efficient than was the case for some queries in EF6 where there was a single query. Eager loading is specified with the Include and ThenInclude methods.
 <!-- image -->
 
 Eager loading sends multiple queries when a collection navigation is included:
@@ -4681,9 +4677,9 @@ Eager loading sends multiple queries when a collection navigation is included:
 
 Note: EF Core automatically fixes up navigation properties to any other entities that were previously loaded into the context instance. Even if the data for a navigation property is not explicitly included, the property may still be populated if some or all of the related entities were previously loaded.
 
-- [Explicit loading](https://docs.microsoft.com/ef/core/querying/related-data) . When the entity is first read, related data isn't retrieved. Code must be written to retrieve the related data when it's needed. Explicit loading with separate queries results in multiple queries sent to the DB. With explicit loading, the code specifies the navigation properties to be loaded. Use the Loadmethod to do explicit loading. For example:
+- [Explicit loading](https:/docs.microsoft.com/ef/core/querying/related-data) . When the entity is first read, related data isn't retrieved. Code must be written to retrieve the related data when it's needed. Explicit loading with separate queries results in multiple queries sent to the DB. With explicit loading, the code specifies the navigation properties to be loaded. Use the Loadmethod to do explicit loading. For example:
 <!-- image -->
-- [Lazy loading](https://docs.microsoft.com/ef/core/querying/related-data) . [Lazy loading was added to EF Core in version 2.1](https://docs.microsoft.com/ef/core/querying/related-data) . When the entity is first read, related data isn't retrieved. The first time a navigation property is accessed, the data required for that navigation property is automatically retrieved. A query is sent to the DB each time a navigation property is accessed for the first time.
+- [Lazy loading](https:/docs.microsoft.com/ef/core/querying/related-data) . [Lazy loading was added to EF Core in version 2.1](https:/docs.microsoft.com/ef/core/querying/related-data) . When the entity is first read, related data isn't retrieved. The first time a navigation property is accessed, the data required for that navigation property is automatically retrieved. A query is sent to the DB each time a navigation property is accessed for the first time.
 - The Select operator loads only the related data needed.
 
 ### Create a Course page that displays department name
@@ -4698,11 +4694,11 @@ To display the name of the assigned department in a list of courses:
 
 #### Scaffold the Course model
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/read-related-data?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/read-related-data?view=aspnetcore-2.2&tabs=visual-studio)
 
-Follow the instructions in [Scaffold the student model](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) and use Course for the model class.
+Follow the instructions in [Scaffold the student model](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) and use Course for the model class.
 
-- [.NET Core CLI](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/read-related-data?view=aspnetcore-2.2&tabs=visual-studio)
+- [.NET Core CLI](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/read-related-data?view=aspnetcore-2.2&tabs=visual-studio)
 
 Run the following command:
 
@@ -4928,7 +4924,7 @@ public string DepartmentName { get; set; }
 
 }
 
-See [IndexSelect.cshtml](https://github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples/cu/Pages/Courses/IndexSelect.cshtml) and [IndexSelect.cshtml.cs](https://github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples/cu/Pages/Courses/IndexSelect.cshtml.cs) for a complete example.
+See [IndexSelect.cshtml](https:/github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples/cu/Pages/Courses/IndexSelect.cshtml) and [IndexSelect.cshtml.cs](https:/github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples/cu/Pages/Courses/IndexSelect.cshtml.cs) for a complete example.
 
 ### Create an Instructors page that shows Courses and Enrollments
 
@@ -4978,11 +4974,11 @@ public IEnumerable&lt;Enrollment&gt; Enrollments { get; set; }
 
 #### Scaffold the Instructor model
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/read-related-data?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/read-related-data?view=aspnetcore-2.2&tabs=visual-studio)
 
-Follow the instructions in [Scaffold the student model](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) and use Instructor for the model class.
+Follow the instructions in [Scaffold the student model](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) and use Instructor for the model class.
 
-- [.NET Core CLI](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/read-related-data?view=aspnetcore-2.2&tabs=visual-studio)
+- [.NET Core CLI](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/read-related-data?view=aspnetcore-2.2&tabs=visual-studio)
 
 Run the following command:
 
@@ -5088,7 +5084,7 @@ Instructor.Instructors = await \_context.Instructors
 
 The query has two includes:
 
-- OfficeAssignment: Displayed in the [instructors view](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/read-related-data?view=aspnetcore-2.2&tabs=visual-studio) .
+- OfficeAssignment: Displayed in the [instructors view](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/read-related-data?view=aspnetcore-2.2&tabs=visual-studio) .
 - CourseAssignments: Which brings in the courses taught.
 
 #### Update the instructors Index page
@@ -5244,7 +5240,7 @@ HTMLCopy
 
 }
 
-- Added a Courses column that displays courses taught by each instructor. See [Explicit Line Transition with @:](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-2.2) for more about this razor syntax.
+- Added a Courses column that displays courses taught by each instructor. See [Explicit Line Transition with @:](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-2.2) for more about this razor syntax.
 - Added code that dynamically adds class="success" to the tr element of the selected instructor. This sets a background color for the selected row using a Bootstrap class.
 
 HTMLCopy
@@ -5831,9 +5827,9 @@ The next tutorial shows how to update related data.
 
 ## Part 7 of 8
 
-The Contoso University web app demonstrates how to create Razor Pages web apps using EF Core and Visual Studio. For information about the tutorial series, see [the first tutorial](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) .
+The Contoso University web app demonstrates how to create Razor Pages web apps using EF Core and Visual Studio. For information about the tutorial series, see [the first tutorial](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) .
 
-This tutorial demonstrates updating related data. If you run into problems you can't solve, [download or view the completed app.](https://github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples) [Download instructions](https://docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) .
+This tutorial demonstrates updating related data. If you run into problems you can't solve, [download or view the completed app.](https:/github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples) [Download instructions](https:/docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) .
 
 The following illustrations shows some of the completed pages.
 
@@ -5889,7 +5885,7 @@ DepartmentNameSL = new SelectList(departmentsQuery.AsNoTracking(),
 
 }
 
-The preceding code creates a [SelectList](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.rendering.selectlist?view=aspnetcore-2.0) to contain the list of department names. If selectedDepartment is specified, that department is selected in the SelectList.
+The preceding code creates a [SelectList](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.rendering.selectlist?view=aspnetcore-2.0) to contain the list of department names. If selectedDepartment is specified, that department is selected in the SelectList.
 
 The Create and Edit page model classes will derive from DepartmentNamePageModel.
 
@@ -5988,10 +5984,10 @@ return Page();
 The preceding code:
 
 - Derives from DepartmentNamePageModel.
-- Uses TryUpdateModelAsync to prevent [overposting](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/crud?view=aspnetcore-2.2) .
+- Uses TryUpdateModelAsync to prevent [overposting](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/crud?view=aspnetcore-2.2) .
 - Replaces ViewData["DepartmentID"] with DepartmentNameSL (from the base class).
 
-ViewData["DepartmentID"] is replaced with the strongly typed DepartmentNameSL. Strongly typed models are preferred over weakly typed. For more information, see [Weakly typed data (ViewData and ViewBag)](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/overview?view=aspnetcore-2.2) .
+ViewData["DepartmentID"] is replaced with the strongly typed DepartmentNameSL. Strongly typed models are preferred over weakly typed. For more information, see [Weakly typed data (ViewData and ViewBag)](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/overview?view=aspnetcore-2.2) .
 
 #### Update the Courses Create page
 
@@ -6100,7 +6096,7 @@ The preceding markup makes the following changes:
 - Adds the "Select Department" option. This change renders "Select Department" rather than the first department.
 - Adds a validation message when the department isn't selected.
 
-The Razor Page uses the [Select Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) :
+The Razor Page uses the [Select Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) :
 
 CSHTMLCopy
 
@@ -6340,7 +6336,7 @@ Test the updated code. Create, edit, and delete a course.
 
 ### Add AsNoTracking to the Details and Delete page models
 
-[AsNoTracking](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entityframeworkqueryableextensions.asnotracking?view=efcore-2.0) can improve performance when tracking isn't required. Add AsNoTracking to the Delete and Details page model. The following code shows the updated Delete page model:
+[AsNoTracking](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.entityframeworkqueryableextensions.asnotracking?view=efcore-2.0) can improve performance when tracking isn't required. Add AsNoTracking to the Delete and Details page model. The following code shows the updated Delete page model:
 
 C#Copy
 
@@ -6679,7 +6675,7 @@ return RedirectToPage("./Index");
 The preceding code:
 
 - Gets the current Instructor entity from the database using eager loading for the OfficeAssignmentnavigation property.
-- Updates the retrieved Instructor entity with values from the model binder. TryUpdateModel prevents [overposting](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/crud?view=aspnetcore-2.2) .
+- Updates the retrieved Instructor entity with values from the model binder. TryUpdateModel prevents [overposting](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/crud?view=aspnetcore-2.2) .
 - If the office location is blank, sets Instructor.OfficeAssignment to null. When Instructor.OfficeAssignment is null, the related row in the OfficeAssignment table is deleted.
 
 #### Update the instructor Edit page
@@ -6959,7 +6955,7 @@ context.Remove(courseToRemove);
 
 }
 
-The InstructorCoursesPageModel is the base class you will use for the Edit and Create page models. PopulateAssignedCourseData reads all Course entities to populate AssignedCourseDataList. For each course, the code sets the CourseID, title, and whether or not the instructor is assigned to the course. A [HashSet](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.hashset-1) is used to create efficient lookups.
+The InstructorCoursesPageModel is the base class you will use for the Edit and Create page models. PopulateAssignedCourseData reads all Course entities to populate AssignedCourseDataList. For each course, the code sets the CourseID, title, and whether or not the instructor is assigned to the course. A [HashSet](https:/docs.microsoft.com/en-us/dotnet/api/system.collections.generic.hashset-1) is used to create efficient lookups.
 
 #### Instructors Edit page model
 
@@ -7231,7 +7227,7 @@ value="@course.CourseID"
 
 **Note**
 
-When you paste the code in Visual Studio, line breaks are changed in a way that breaks the code. Press Ctrl+Z one time to undo the automatic formatting. Ctrl+Z fixes the line breaks so that they look like what you see here. The indentation doesn't have to be perfect, but the @&lt;/tr&gt;&lt;tr&gt;, @:&lt;td&gt;, @:&lt;/td&gt;, and @:&lt;/tr&gt; lines must each be on a single line as shown. With the block of new code selected, press Tab three times to line up the new code with the existing code. Vote on or review the status of this bug [**with this link**](https://developercommunity.visualstudio.com/content/problem/147795/razor-editor-malforms-pasted-markup-and-creates-in.html) .
+When you paste the code in Visual Studio, line breaks are changed in a way that breaks the code. Press Ctrl+Z one time to undo the automatic formatting. Ctrl+Z fixes the line breaks so that they look like what you see here. The indentation doesn't have to be perfect, but the @&lt;/tr&gt;&lt;tr&gt;, @:&lt;td&gt;, @:&lt;/td&gt;, and @:&lt;/tr&gt; lines must each be on a single line as shown. With the block of new code selected, press Tab three times to line up the new code with the existing code. Vote on or review the status of this bug [**with this link**](https:/developercommunity.visualstudio.com/content/problem/147795/razor-editor-malforms-pasted-markup-and-creates-in.html) .
 
 The preceding code creates an HTML table that has three columns. Each column has a check box and a caption containing the course number and title. The check boxes all have the same name ("selectedCourses"). Using the same name informs the model binder to treat them as a group. The value attribute of each check box is set to CourseID. When the page is posted, the model binder passes an array that consists of the CourseID values for only the check boxes that are selected.
 
@@ -7614,9 +7610,9 @@ The preceding code makes the following changes:
 
 ## Part 8 of 8
 
-The Contoso University web app demonstrates how to create Razor Pages web apps using EF Core and Visual Studio. For information about the tutorial series, see [the first tutorial](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) .
+The Contoso University web app demonstrates how to create Razor Pages web apps using EF Core and Visual Studio. For information about the tutorial series, see [the first tutorial](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) .
 
-This tutorial shows how to handle conflicts when multiple users update an entity concurrently (at the same time). If you run into problems you can't solve, [download or view the completed app.](https://github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples) [Download instructions](https://docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) .
+This tutorial shows how to handle conflicts when multiple users update an entity concurrently (at the same time). If you run into problems you can't solve, [download or view the completed app.](https:/github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples) [Download instructions](https:/docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) .
 
 ### Concurrency conflicts
 
@@ -7668,22 +7664,22 @@ This is called a Store Wins scenario. (The data-store values take precedence o
 
 ### Handling concurrency
 
-When a property is configured as a [concurrency token](https://docs.microsoft.com/ef/core/modeling/concurrency) :
+When a property is configured as a [concurrency token](https:/docs.microsoft.com/ef/core/modeling/concurrency) :
 
-- EF Core verifies that property has not been modified after it was fetched. The check occurs when [SaveChanges](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechanges?view=efcore-2.0) or [SaveChangesAsync](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechangesasync?view=efcore-2.0) is called.
-- If the property has been changed after it was fetched, a [DbUpdateConcurrencyException](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbupdateconcurrencyexception?view=efcore-2.0) is thrown.
+- EF Core verifies that property has not been modified after it was fetched. The check occurs when [SaveChanges](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechanges?view=efcore-2.0) or [SaveChangesAsync](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext.savechangesasync?view=efcore-2.0) is called.
+- If the property has been changed after it was fetched, a [DbUpdateConcurrencyException](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbupdateconcurrencyexception?view=efcore-2.0) is thrown.
 
 The DB and data model must be configured to support throwing DbUpdateConcurrencyException.
 
 #### Detecting concurrency conflicts on a property
 
-Concurrency conflicts can be detected at the property level with the [ConcurrencyCheck](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.concurrencycheckattribute?view=netcore-2.0) attribute. The attribute can be applied to multiple properties on the model. For more information, see [Data Annotations-ConcurrencyCheck](https://docs.microsoft.com/ef/core/modeling/concurrency) .
+Concurrency conflicts can be detected at the property level with the [ConcurrencyCheck](https:/docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.concurrencycheckattribute?view=netcore-2.0) attribute. The attribute can be applied to multiple properties on the model. For more information, see [Data Annotations-ConcurrencyCheck](https:/docs.microsoft.com/ef/core/modeling/concurrency) .
 
 The [ConcurrencyCheck] attribute isn't used in this tutorial.
 
 #### Detecting concurrency conflicts on a row
 
-To detect concurrency conflicts, a [rowversion](https://docs.microsoft.com/sql/t-sql/data-types/rowversion-transact-sql) tracking column is added to the model. rowversion :
+To detect concurrency conflicts, a [rowversion](https:/docs.microsoft.com/sql/t-sql/data-types/rowversion-transact-sql) tracking column is added to the model. rowversion :
 
 - Is SQL Server specific. Other databases may not provide a similar feature.
 - Is used to determine that an entity has not been changed since it was fetched from the DB.
@@ -7752,7 +7748,7 @@ public ICollection&lt;Course&gt; Courses { get; set; }
 
 }
 
-The [Timestamp](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.timestampattribute) attribute specifies that this column is included in the Where clause of Update and Deletecommands. The attribute is called Timestamp because previous versions of SQL Server used a SQL timestampdata type before the SQL rowversion type replaced it.
+The [Timestamp](https:/docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.timestampattribute) attribute specifies that this column is included in the Where clause of Update and Deletecommands. The attribute is called Timestamp because previous versions of SQL Server used a SQL timestampdata type before the SQL rowversion type replaced it.
 
 The fluent API can also specify the tracking property:
 
@@ -7798,7 +7794,7 @@ FROM [Department]
 
 WHERE @@ROWCOUNT = 1 AND [DepartmentID] = @p1;
 
-[@@ROWCOUNT](https://docs.microsoft.com/sql/t-sql/functions/rowcount-transact-sql) returns the number of rows affected by the last statement. In no rows are updated, EF Core throws a DbUpdateConcurrencyException.
+[@@ROWCOUNT](https:/docs.microsoft.com/sql/t-sql/functions/rowcount-transact-sql) returns the number of rows affected by the last statement. In no rows are updated, EF Core throws a DbUpdateConcurrencyException.
 
 You can see the T-SQL EF Core generates in the output window of Visual Studio.
 
@@ -7859,11 +7855,11 @@ b.ToTable("Department");
 
 ### Scaffold the Departments model
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/concurrency?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/concurrency?view=aspnetcore-2.2&tabs=visual-studio)
 
-Follow the instructions in [Scaffold the student model](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) and use Department for the model class.
+Follow the instructions in [Scaffold the student model](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) and use Department for the model class.
 
-- [.NET Core CLI](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/concurrency?view=aspnetcore-2.2&tabs=visual-studio)
+- [.NET Core CLI](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/concurrency?view=aspnetcore-2.2&tabs=visual-studio)
 
 Run the following command:
 
@@ -8281,7 +8277,7 @@ ModelState.AddModelError(string.Empty,
 
 }
 
-To detect a concurrency issue, the [OriginalValue](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.changetracking.propertyentry.originalvalue?view=efcore-2.0) is updated with the rowVersion value from the entity it was fetched. EF Core generates a SQL UPDATE command with a WHERE clause containing the original RowVersionvalue. If no rows are affected by the UPDATE command (no rows have the original RowVersion value), a DbUpdateConcurrencyException exception is thrown.
+To detect a concurrency issue, the [OriginalValue](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.changetracking.propertyentry.originalvalue?view=efcore-2.0) is updated with the rowVersion value from the entity it was fetched. EF Core generates a SQL UPDATE command with a WHERE clause containing the original RowVersionvalue. If no rows are affected by the UPDATE command (no rows have the original RowVersion value), a DbUpdateConcurrencyException exception is thrown.
 
 C#Copy
 
@@ -8922,9 +8918,9 @@ The browser shows the Index page with the changed value and updated rowVersion i
 
 Delete the test department from the second tab. A concurrency error is display with the current values from the DB. Clicking Delete deletes the entity, unless RowVersion has been updated.department has been deleted.
 
-See [Inheritance](https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/inheritance?view=aspnetcore-2.2) on how to inherit a data model.
+See [Inheritance](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/inheritance?view=aspnetcore-2.2) on how to inherit a data model.
 
 #### Additional resources
 
-- [Concurrency Tokens in EF Core](https://docs.microsoft.com/ef/core/modeling/concurrency)
-- [Handle concurrency in EF Core](https://docs.microsoft.com/ef/core/saving/concurrency)
+- [Concurrency Tokens in EF Core](https:/docs.microsoft.com/ef/core/modeling/concurrency)
+- [Handle concurrency in EF Core](https:/docs.microsoft.com/ef/core/saving/concurrency)

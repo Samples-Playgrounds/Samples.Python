@@ -12,9 +12,9 @@ Load Visual Studio.
 
 In the launch window, click on the link “Continue without code.”
 
-You should see a Visual Studio window that is pretty much empty, but you should see a Solution Explorer pane. If you don’t see it, select View > Solution Explorer.
+You should see a Visual Studio window that is pretty much empty, but you should see a Solution Explorer pane. If you don’t see it, select View &gt; Solution Explorer.
 
-Create a new website with File > New > Project…
+Create a new website with File &gt; New &gt; Project…
 
 In the search box, enter Web Site.
 
@@ -22,7 +22,7 @@ Look for the option that says ASP.NET Empty Web Site at the top and C# below it.
 
 If you see that option, select it and then click the Next button.
 
-If you don’t see the ASP.NET Empty Web Site option, that means when you installed Visual Studio, you didn’t install the option that provides for the Web Site selection. To add that option now, select Tools > Get Tools and Features. That should generate a Visual Studio Installer window. Look for the ASP.NET and web development container and expand it. Here’s the result:
+If you don’t see the ASP.NET Empty Web Site option, that means when you installed Visual Studio, you didn’t install the option that provides for the Web Site selection. To add that option now, select Tools &gt; Get Tools and Features. That should generate a Visual Studio Installer window. Look for the ASP.NET and web development container and expand it. Here’s the result:
 
 expand
 
@@ -40,13 +40,13 @@ In your Visual Studio window, you should see a Solution Explorer frame with your
 
 Right click on your cs322 project.
 
-Select Add > New Folder.
+Select Add &gt; New Folder.
 
 The new folder’s name (“New Folder”) should be selected. Overlay its name by entering “tutorial”.
 
 Right click on your tutorial folder.
 
-Select Add > Add New Item.
+Select Add &gt; Add New Item.
 
 In the generated Add New Item window, expand Installed and select Visual C# and Web Form.
 
@@ -62,29 +62,29 @@ That should generate and display source code for your new hello.aspx web page.
 
 Unfortunately, Visual Studio generates ugly code. Thus, rather than editing the generated code to make it comply with proper coding conventions, I suggest that you replace all of the newly generated web page’s code with this code:
 
-<%--******************************
+&lt;%--******************************
 
 * hello.aspx
 
-* your-name
+* *your-name*
 
 *
 
 * This page says hello and prints the time.
 
-******************************--%>
+******************************--%&gt;
 
-<%@ Page Language="C#" %>
+&lt;%@ Page Language="C#" %&gt;
 
-<!DOCTYPE html>
+&lt;!DOCTYPE html&gt;
 
-<html>
+&lt;html&gt;
 
-<head>
+&lt;head&gt;
 
-<title>Hello Page</title>
+&lt;title&gt;Hello Page&lt;/title&gt;
 
-<script runat="server">
+&lt;script runat="server"&gt;
 
 public void Page_Load()
 
@@ -94,41 +94,41 @@ time.Text = DateTime.Now.ToString();
 
 }
 
-</script>
+&lt;/script&gt;
 
-</head>
+&lt;/head&gt;
 
-<body>
+&lt;body&gt;
 
-<h2>Hello, world!!</h2>
+&lt;h2&gt;Hello, world!!&lt;/h2&gt;
 
-<p>
+&lt;p&gt;
 
-The time is now: <asp:Label id="time" runat="server" />
+The time is now: &lt;asp:Label id="time" runat="server" /&gt;
 
-</p>
+&lt;/p&gt;
 
-</body>
+&lt;/body&gt;
 
-</html>
+&lt;/html&gt;
 
-Save your hello.aspx file by clicking the file save icon that looks like an old diskette, or select File > Save.
+Save your hello.aspx file by clicking the file save icon that looks like an old diskette, or select File &gt; Save.
 
-To see the resulting web page, select File > View in Browser.
+To see the resulting web page, select File &gt; View in Browser.
 
-Go to File Explorer to verify the existence of your cs322 folder and its hello.aspx file. Be aware that double clicking on the hello.aspx file will not enable you to view the web page properly. To view it properly, you need a web server. Visual studio supplies a built-in web server, and that’s why viewing works when you select File > View in Browser.
+Go to File Explorer to verify the existence of your cs322 folder and its hello.aspx file. Be aware that double clicking on the hello.aspx file will not enable you to view the web page properly. To view it properly, you need a web server. Visual studio supplies a built-in web server, and that’s why viewing works when you select File &gt; View in Browser.
 
 As mentioned above, Visual Studio generates ugly code and that’s why I recommend that you enter your code from scratch or you copy and paste from an existing web page that uses proper coding conventions. However, you should be aware of Visual Studio’s drag and drop tools that allow you to quickly generate code, albeit ugly code. What follows is a teaser that shows you how to do that….
 
 Right click on your tutorial folder.
 
-Select Add > Add New Item.
+Select Add &gt; Add New Item.
 
 In the generated Add New Item window, select Visual C# and Web Form.
 
 In the Name box, enter uglyForm.aspx.
 
-Select View > Toolbox.
+Select View &gt; Toolbox.
 
 Drag the toolbox tab so the toolbox frame turns into a window, and drop the window so it does not cover your web page code.
 
@@ -142,11 +142,11 @@ When you’re done, I suggest that you delete uglyForm.aspx so you don’t accid
 
 Return to your hello.aspx web page. Introduce a bug into the ASP.NET code. Specifically, change this:
 
-The time is now: <asp:Label id="time" runat="server" />
+The time is now: &lt;asp:Label id="time" runat="server" /&gt;
 
 To this:
 
-The time is now: <ZZasp:Label id="time" runat="server" />
+The time is now: &lt;ZZasp:Label id="time" runat="server" /&gt;
 
 View your updated hello.aspx web page in a browser, and you should see an error message that directs you to the line that contains the bug.
 
@@ -156,17 +156,17 @@ For security reasons, if an ASP.NET page has errors and the page is viewed on a 
 
 Ask ITS for the ASP.NET version used by teach.park.edu.
 
-<?xml version="1.0" encoding="utf-8" ?>
+&lt;?xml version="1.0" encoding="utf-8" ?&gt;
 
-<system.web>
+&lt;system.web&gt;
 
-<compilation debug="true" targetFramework="4.5"/>
+&lt;compilation debug="true" targetFramework="4.5"/&gt;
 
-<customErrors mode="Off"/>
+&lt;customErrors mode="Off"/&gt;
 
-</system.web>
+&lt;/system.web&gt;
 
-</configuration>
+&lt;/configuration&gt;
 
 The value for the compilation element’s targetFramework attribute must match the ASP.NET version used by the web server.
 

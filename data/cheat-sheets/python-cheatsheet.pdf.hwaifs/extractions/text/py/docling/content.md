@@ -8,9 +8,9 @@ Visit realpython.com to turbocharge your Python learning with in-depth tutorials
 
 Follow these guides to kickstart your Python journey:
 
-- [realpython.com/what-can-i-do-with-python](https://realpython.com/what-can-i-do-with-python/)
-- [realpython.com/installing-python](https://realpython.com/installing-python/)
-- [realpython.com/python-first-steps](https://realpython.com/python-first-steps/)
+- realpython.com/what-can-i-do-with-python
+- realpython.com/installing-python
+- realpython.com/python-first-steps
 
 ## Start the Interactive Shell
 
@@ -34,10 +34,12 @@ $ python my_script.py
 $ python -i my_script.py
 ```
 
-## [Learn More on realpython.com/search:](https://realpython.com/search)
+## Learn More on realpython.com/search:
+
+interpreter
 
 ```
-interpreter ∙ run a script ∙ command line
+∙ run a script ∙ command line
 ```
 
 ## Comments
@@ -51,13 +53,13 @@ interpreter ∙ run a script ∙ command line
 # This is a comment # print("This code will not run.") print("This will run.")  # Comments are ignored by Python
 ```
 
-## [Learn More on realpython.com/search:](https://realpython.com/search)
+## Learn More on realpython.com/search:
 
-[comment](https://realpython.com/search?q=comment)
+comment
 
 ∙
 
-[documentation](https://realpython.com/search?q=documentation)
+documentation
 
 ## Data Types
 
@@ -79,7 +81,7 @@ type(42)                # <class 'int'> type(3.14)              # <class 'float'
 int("42")                # 42 float("3.14")            # 3.14 str(42)                  # "42" bool(1)                  # True list("abc")              # ["a", "b", "c"]
 ```
 
-## [Learn More on realpython.com/search:](https://realpython.com/search)
+## Learn More on realpython.com/search:
 
 ```
 data types ∙ type checking ∙ isinstance ∙ issubclass
@@ -109,9 +111,7 @@ x, y = 10, 20          # Assign multiple values a = b = c = 0          # Give sa
 counter += 1 numbers += [4, 5] permissions |= write
 ```
 
-```
 Learn More on realpython.com/search: variables ∙ assignment operator ∙ walrus operator
-```
 
 <!-- image -->
 
@@ -157,13 +157,13 @@ text = "Python" text[0]      # "P" (first) text[-1]     # "n" (last) text[1:4]  
 # Normal string with an escaped tab "This is:\tCool."       # "This is:    Cool." # Raw string with escape sequences r"This is:\tCool."      # "This is:\tCool."
 ```
 
-## [Learn More on realpython.com/search:](https://realpython.com/search)
+## Learn More on realpython.com/search:
 
-[strings](https://realpython.com/search?q=strings)
+strings
 
 ∙ string methods ∙ slice notation ∙
 
-[raw strings](https://realpython.com/search?q=raw+strings)
+raw strings
 
 ## Numbers &amp; Math
 
@@ -179,7 +179,7 @@ text = "Python" text[0]      # "P" (first) text[-1]     # "n" (last) text[1:4]  
 abs(-5)              # 5 round(3.7)           # 4 round(3.14159, 2)    # 3.14 min(3, 1, 2)         # 1 max(3, 1, 2)         # 3 sum([1, 2, 3])       # 6
 ```
 
-## [Learn More on realpython.com/search:](https://realpython.com/search)
+## Learn More on realpython.com/search:
 
 ```
 math ∙ operators ∙ built in functions
@@ -208,17 +208,17 @@ x == y    # Equal to x != y    # Not equal to x < y     # Less than x <= y    # 
 if age >= 18 and has_car: print("Roadtrip!") if is_weekend or is_holiday: print("No work today.") if not is_raining: print("You can go outside.")
 ```
 
-## [Learn More on realpython.com/search:](https://realpython.com/search)
+## Learn More on realpython.com/search:
 
-[conditional statements](https://realpython.com/search?q=conditional+statements)
-
-∙
-
-[operators](https://realpython.com/search?q=operators)
+conditional statements
 
 ∙
 
-[truthy falsy](https://realpython.com/search?q=truthy+falsy)
+operators
+
+∙
+
+truthy falsy
 
 <!-- image -->
 
@@ -247,9 +247,9 @@ while True: user_input = input("Enter 'quit' to exit: ") if user_input == "quit"
 for i in range(10): if i == 3: continue  # Skip this iteration if i == 7: break     # Exit loop print(i)
 ```
 
-## [Learn More on realpython.com/search:](https://realpython.com/search)
+## Learn More on realpython.com/search:
 
-[for loop](https://realpython.com/search?q=for+loop)
+for loop
 
 ```
 ∙ while loop ∙ enumerate ∙
@@ -268,7 +268,7 @@ for i in range(10): if i == 3: continue  # Skip this iteration if i == 7: break 
 def greet(): return "Hello!" def greet_person(name): return f"Hello, {name}!" def add(x, y=10):    # Default parameter return x + y
 ```
 
-[control flow](https://realpython.com/search?q=control+flow)
+control flow
 
 ## Calling Functions
 
@@ -294,7 +294,7 @@ callable()  # Checks if an object can be called as a function dir()       # List
 square = lambda x: x**2 result = square(5)  # 25 # With map and filter numbers = [1, 2, 3, 4] squared = list(map(lambda x: x**2, numbers)) evens = list(filter(lambda x: x % 2 == 0, numbers))
 ```
 
-## [Learn More on realpython.com/search:](https://realpython.com/search)
+## Learn More on realpython.com/search:
 
 define functions ∙ return multiple values ∙ lambda
 
@@ -327,7 +327,7 @@ class Cat: species = "Felis catus"   # Class attribute def __init__(self, name):
 class Animal: def __init__(self, name): self.name = name def speak(self): pass class Dog(Animal): def speak(self): return f"{self.name} barks!"
 ```
 
-## [Learn More on realpython.com/search:](https://realpython.com/search)
+## Learn More on realpython.com/search:
 
 ```
 object oriented programming ∙
@@ -397,7 +397,7 @@ Learn More on realpython.com/search: exceptions ∙ errors ∙ debugging
 # Creating Dictionaries empty = {} pet = {"name": "Leo", "age": 42} # Dictionary Operations pet["sound"] = "Purr!"   # Add key and value pet["age"] = 7           # Update value age = pet.get("age", 0)  # Get with default del pet["sound"]         # Delete key pet.pop("age")           # Remove and return # Dictionary Methods pet = {"name": "Frieda", "sound": "Bark!"} pet.keys()         # dict_keys(['name', 'sound']) pet.values()       # dict_values(['Frieda', 'Bark!']) pet.items()        # dict_items([('name', 'Frieda'), ('sound', 'Bark!')])
 ```
 
-## [Learn More on realpython.com/search:](https://realpython.com/search)
+## Learn More on realpython.com/search:
 
 ```
 list ∙ tuple ∙ set ∙ dictionary ∙ indexing ∙ unpacking
@@ -424,7 +424,7 @@ list ∙ tuple ∙ set ∙ dictionary ∙ indexing ∙ unpacking
 comprehensions ∙ data structures ∙
 ```
 
-[generators](https://realpython.com/search?q=generators)
+generators
 
 ## File Operations
 
@@ -432,7 +432,7 @@ comprehensions ∙ data structures ∙
 # Read an entire file with open("file.txt", mode="r", encoding="utf-8") as file: content = file.read() # Read a file line by line with open("file.txt", mode="r", encoding="utf-8") as file: for line in file: print(line.strip()) # Write a file with open("output.txt", mode="w", encoding="utf-8") as file: file.write("Hello, World!\n") # Append to a File with open("log.txt", mode="a", encoding="utf-8") as file: file.write("New log entry\n")
 ```
 
-## [Learn More on realpython.com/search:](https://realpython.com/search)
+## Learn More on realpython.com/search:
 
 files ∙ context manager ∙ pathlib
 
@@ -458,7 +458,7 @@ files ∙ context manager ∙ pathlib
 Learn More on realpython.com/search:
 ```
 
-[import](https://realpython.com/search?q=import)
+import
 
 ```
 ∙ modules ∙ packages
@@ -497,8 +497,8 @@ $ python -m pip freeze > requirements.txt $ python -m pip install -r requirement
 
 ## Related Tutorials
 
-- [Installing Python Packages](https://realpython.com/search?q=install+packages+pip)
-- [Requirements Files in Python Projects](https://realpython.com/search?q=requirements.txt+python)
+- Installing Python Packages
+- Requirements Files in Python Projects
 
 ## Miscellaneous
 
@@ -526,12 +526,12 @@ Learn More on realpython.com/search: counter ∙ tricks
 
 At Real Python you can immerse yourself in any topic. Level up your skills effectively with curated resources like:
 
-- [Learning paths](https://realpython.com/learning-paths/)
-- [Video courses](https://realpython.com/search?kind=course)
-- [Written tutorials](https://realpython.com/search?kind=article)
-- [Interactive quizzes](https://realpython.com/quizzes/)
-- [Podcast interviews](https://realpython.com/podcasts/rpp/)
-- [Reference articles](https://realpython.com/ref/)
+- Learning paths
+- Video courses
+- Written tutorials
+- Interactive quizzes
+- Podcast interviews
+- Reference articles
 
 Continue your learning journey and become a Python expert at realpython.com/start-here
 

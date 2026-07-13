@@ -914,7 +914,7 @@ Which produces quite different results:
 
 ## 'Updating' values and record syntax
 
-Haskell is a pure language and, as such, has no mutable state. That is, once a value is set it never changes. 'Updating' is really a copy operation, with new values in the fields that 'changed.' For example, using the ❈♦❧♦/a114 type defined earlier, we can write a function that sets the ❣/a114❡❡♥ fi eld to zero easily:
+Haskell is a pure language and, as such, has no mutable state. That is, once a value is set it never changes. 'Updating' is really a copy operation, with new values in the fields that 'changed.' For example, using the ❈♦❧♦/a114 type defined earlier, we can write a function that sets the ❣/a114❡❡♥ field to zero easily:
 
 <!-- formula-not-decoded -->
 
@@ -922,7 +922,7 @@ The above is a bit verbose and can be rewriten using record syntax. This kind of
 
 <!-- formula-not-decoded -->
 
-Here we capture the ❈♦❧♦/a114 value in ❝ and return a new ❈♦❧♦/a114 value. That value happens to have the same value for /a114❡❞ and ❜❧✉❡ as ❝ and it's ❣/a114❡❡♥ component is 0. We can combine this with pattern matching to set the ❣/a114❡❡♥ and ❜❧✉❡ fi elds to equal the /a114❡❞ field:
+Here we capture the ❈♦❧♦/a114 value in ❝ and return a new ❈♦❧♦/a114 value. That value happens to have the same value for /a114❡❞ and ❜❧✉❡ as ❝ and it's ❣/a114❡❡♥ component is 0. We can combine this with pattern matching to set the ❣/a114❡❡♥ and ❜❧✉❡ fields to equal the /a114❡❞ field:
 
 <!-- formula-not-decoded -->
 
@@ -964,11 +964,11 @@ Specialization -Typeclasses allow functions with overloading. For example, a fun
 ♥❡❣❛/a116❡❆❧❧ ✿✿ ◆✉♠ ❛ ❂❃ ❬❛❪ ✙ ❬❛❪
 ```
 
-[2 ❤/a116/a116♣✿✴✴❣✐/a116❤✉❜✳❝♦♠✴♠✹❞❝✹♣✴❝❤❡❛/a116/a115❤❡❡/a116](http://github.com/m4dc4p/cheatsheet)
+2 ❤/a116/a116♣✿✴✴❣✐/a116❤✉❜✳❝♦♠✴♠✹❞❝✹♣✴❝❤❡❛/a116/a115❤❡❡/a116
 
-[3 ❤/a116/a116♣✿✴✴❤❛❝❦❛❣❡✳❤❛/a115❦❡❧❧✳♦/a114❣✴❝❣✐✲❜✐♥✴❤❛❝❦❛❣❡✲/a115❝/a114✐♣/a116/a115✴♣❛❝❦❛❣❡✴❈❤❡❛/a116❙❤❡❡/a116](http://hackage.haskell.org/cgi-bin/hackage-scripts/package/CheatSheet)
+3 ❤/a116/a116♣✿✴✴❤❛❝❦❛❣❡✳❤❛/a115❦❡❧❧✳♦/a114❣✴❝❣✐✲❜✐♥✴❤❛❝❦❛❣❡✲/a115❝/a114✐♣/a116/a115✴♣❛❝❦❛❣❡✴❈❤❡❛/a116❙❤❡❡/a116
 
-[4 ❤/a116/a116♣✿✴✴❜❧♦❣✳❝♦❞❡/a115❧♦✇❡/a114✳❝♦♠✴](http://blog.codeslower.com/)
+4 ❤/a116/a116♣✿✴✴❜❧♦❣✳❝♦❞❡/a115❧♦✇❡/a114✳❝♦♠✴
 
 However, for efficiency or other reasons you may only want to allow ■♥/a116 types. You would accomplish that with a type signature:
 

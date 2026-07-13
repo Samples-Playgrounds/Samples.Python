@@ -14,7 +14,7 @@ h tt ps://windows.github.com
 
 h tt ps://mac.github.com
 
-For Linux and Solaris platforms, the latest release is available on the official Git web site.
+For Linux and Solaris platforms, the latest release is available on the o ffi cial Git web site.
 
 ## Git for All Platforms
 
@@ -22,11 +22,17 @@ h tt p://git-scm.com
 
 ## SETUP
 
-Configuring user information used across all local repositories git config --global user.name '[firstname lastname]'
+Configuring user information used across all local repositories
 
-set a name that is identifiable for credit when review version history git config --global user.email '[valid-email]'
+git config --global user.name '[firstname lastname]'
 
-set an email address that will be associated with each history marker git config --global color.ui auto
+set a name that is identifiable for credit when review version history
+
+git config --global user.email '[valid-email]'
+
+set an email address that will be associated with each history marker
+
+git config --global color.ui auto
 
 set automatic command line coloring for Git for easy reviewing
 
@@ -56,11 +62,11 @@ unstage a file while retaining the changes in working directory
 
 git diff
 
-diff of what is changed but not staged
+di ff of what is changed but not staged
 
 git diff --staged
 
-diff of what is staged but not yet commi tt ed
+di ff of what is staged but not yet commi tt ed
 
 git commit -m '[descriptive message]'
 
@@ -92,23 +98,17 @@ show all commits in the current branch's history
 
 ## INSPECT &amp; COMPARE
 
-Examining logs, diffs and object information
+Examining logs, di ff s and object information git log
 
-git log
-
-show the commit history for the currently active branch
-
-git log branchB..branchA
+show the commit history for the currently active branch git log branchB..branchA
 
 show the commits on branchA that are not on branchB
 
 git log --follow [file]
 
-show the commits that changed file, even across renames
+show the commits that changed file, even across renames git diff branchB...branchA
 
-git diff branchB...branchA
-
-show the diff of what is in branchA that is not in branchB
+show the di ff of what is in branchA that is not in branchB
 
 git show [SHA]
 
@@ -134,9 +134,7 @@ logs/ *.notes pattern*/ Save a file with desired pa tt erns as .gitignore with e
 
 matches or wildcard globs.
 
-```
 git config --global core.excludesfile [file]
-```
 
 system wide ignore pa tt ern for all local repositories
 

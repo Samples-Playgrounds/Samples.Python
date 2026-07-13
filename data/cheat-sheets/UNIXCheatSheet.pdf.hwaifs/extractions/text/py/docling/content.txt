@@ -1,4 +1,4 @@
-UNIX Command Cheat Sheet
+## UNIX Command Cheat Sheet
 
 Carnegie Observatories Summer Research Program Every command and filename is CaSe sEnSiTiVe!
 

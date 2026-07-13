@@ -1,12 +1,12 @@
-Running
+## Running
 
-# gdb <program> [core dump] Start GDB (with optional core dump).
+# gdb &lt;program&gt; [core dump] Start GDB (with optional core dump).
 
-# gdb --args <program> <args…> Start GDB and pass arguments
+# gdb --args &lt;program&gt; &lt;args…&gt; Start GDB and pass arguments
 
-# gdb --pid <pid> Start GDB and attach to process.
+# gdb --pid &lt;pid&gt; Start GDB and attach to process.
 
-set args <args...> Set arguments to pass to program to be debugged.
+set args &lt;args...&gt; Set arguments to pass to program to be debugged.
 
 run kill
 
@@ -14,33 +14,33 @@ Run the program to be debugged.
 
 Kill the running program.
 
-Breakpoints
+## Breakpoints
 
-break <where> Set a new breakpoint.
+break &lt;where&gt; Set a new breakpoint.
 
-delete <breakpoint#> Remove a breakpoint.
+delete &lt;breakpoint#&gt; Remove a breakpoint.
 
 clear
 
 Delete all breakpoints.
 
-enable <breakpoint#> Enable a disabled breakpoint.
+enable &lt;breakpoint#&gt; Enable a disabled breakpoint.
 
-disable <breakpoint#>
+disable &lt;breakpoint#&gt;
 
 Disable a breakpoint.
 
-Watchpoints
+## Watchpoints
 
-watch <where> Set a new watchpoint.
+watch &lt;where&gt; Set a new watchpoint.
 
-delete/enable/disable <watchpoint#> Like breakpoints.
+delete/enable/disable &lt;watchpoint#&gt; Like breakpoints.
 
 step
 
-GDB cheatsheet - page 1
+## GDB cheatsheet - page 1
 
-<where>
+## &lt;where&gt;
 
 function_name Break/watch the named function.
 
@@ -52,13 +52,13 @@ file:line_number
 
 Break/watch the line number in the named source file.
 
-Conditions
+## Conditions
 
-break/watch <where> if <condition> Break/watch at the given location if the condition is met. Conditions may be almost any C ex- pression that evaluate to true or false.
+break/watch &lt;where&gt; if &lt;condition&gt; Break/watch at the given location if the condition is met. Conditions may be almost any C ex- pression that evaluate to true or false.
 
-condition <breakpoint#> <condition> Set/change the condition of an existing break- or watchpoint.
+condition &lt;breakpoint#&gt; &lt;condition&gt; Set/change the condition of an existing break- or watchpoint.
 
-Examining the stack
+## Examining the stack
 
 backtrace where
 
@@ -66,15 +66,15 @@ Show call stack.
 
 Show call stack, also print the local va- backtrace full where full riables in each frame.
 
-frame <frame#>
+frame &lt;frame#&gt;
 
 Select the stack frame to operate on.
 
-Stepping
+## Stepping
 
 Go to next instruction (source line), diving into function.
 
-© 2007 Marc Haisenko <marc@darkdust.net>
+© 2007 Marc Haisenko &lt;marc@darkdust.net&gt;
 
 next
 
@@ -88,25 +88,25 @@ continue
 
 Continue normal execution.
 
-Variables and memory
+## Variables and memory
 
-print /format <what>
+print /format &lt;what&gt;
 
 Print content of variable/memory location/register.
 
-display /format <what> Like 'print', but print the information after each stepping instruction.
+display /format &lt;what&gt; Like 'print', but print the information after each stepping instruction.
 
-Remove the 'display' with the given undisplay <display#> number.
+Remove the 'display' with the given undisplay &lt;display#&gt; number.
 
-En- or disable the 'display' with the gi- enable display <display#> disable display <display#> ven number.
+En- or disable the 'display' with the gi- enable display &lt;display#&gt; disable display &lt;display#&gt; ven number.
 
-x /nfu <address> Print memory. n : How many units to print (default 1). f : Format character (like 'print'). u : Unit.
+x /nfu &lt;address&gt; Print memory. n : How many units to print (default 1). f : Format character (like 'print'). u : Unit.
 
 Unit is one of:
 
 b : Byte, h : Half-word (two bytes) w : Word (four bytes) g : Giant word (eight bytes)).
 
-Format
+## Format
 
 | a   | Pointer.                               |
 |-----|----------------------------------------|
@@ -119,73 +119,73 @@ Format
 | u   | Integer, unsigned decimal.             |
 | x   | Integer, print as hexadecimal.         |
 
-<what>
+## &lt;what&gt;
 
-expression
+## expression
 
 Almost any C expression, including function calls (must be prefixed with a cast to tell GDB the return value type).
 
 file_name :: variable_name Content of the variable defined in the named file (static variables).
 
-function :: variable_name Content of the variable defined in the named function (if on the stack).
+function :: variable_name
 
-{type}address
+Content of the variable defined in the named function (if on the stack).
+
+## {type}address
 
 Content at address , interpreted as being of the C type type .
 
-$ register
+## $ register
 
 Content of named register. Interesting registers are $esp (stack pointer), $ebp (frame pointer) and $eip (instruction pointer).
 
-Threads
+## Threads
 
-thread <thread#>
+thread &lt;thread#&gt;
 
 Chose thread to operate on.
 
-GDB cheatsheet - page 2
+## GDB cheatsheet - page 2
 
-Manipulating the program
+## Manipulating the program
 
-set var <variable_name> = <value> given value.
-
-Change the content of a variable to the
+set var &lt;variable_name&gt; = &lt;value&gt; Change the content of a variable to the given value.
 
 return
 
-<expression>
+&lt;expression&gt;
 
 Force the current function to return im- mediately, passing the given value.
 
-Sources
+## Sources
 
-directory <directory>
+directory &lt;directory&gt;
 
 Add directory to the list of directories that is searched for sources.
 
-list list <filename> :<function>
+list list &lt;filename&gt; :&lt;function&gt;
 
-list <filename> : <line_number>
+list &lt;filename&gt; : &lt;line_number&gt;
 
-list <first>,<last>
+list &lt;first&gt;,&lt;last&gt;
 
-Shows the current or given source context. The fi lename may be omitted. If last is omitted the context starting at start is printed instead of centered around it.
+Shows the current or given source context. The filename may be omitted. If last is omitted the context starting at start is printed instead of centered around it.
 
-set listsize <count>
+set listsize &lt;count&gt;
 
 Set how many lines to show in 'list'.
 
-Signals
+## Signals
 
-handle <signal> <options> Set how to handle signles. Options are: (no)print : (Don ʻ t) print a message when signals occurs. (no)stop : (Don ʻ t) stop the program when signals occurs. t) pass the signal to the
+handle &lt;signal&gt; &lt;options&gt; Set how to handle signles. Options are: (no)print : (Don ʻ t) print a message when signals occurs. (no)stop : (Don ʻ t) stop the program when signals occurs. t) pass the signal to the
 
 (no)pass : (Don ʻ program.
 
-Informations
+## Informations
 
 disassemble
 
-disassemble <where>
+disassemble &lt;where&gt;
 
 Disassemble the current function or given location.
 

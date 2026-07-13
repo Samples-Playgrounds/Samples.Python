@@ -1,4 +1,4 @@
-## Cascading Style Sheets Cheatsheet &amp;66
+## Cascading Style Sheets Cheatsheet GLYPH&lt;c=3,font=/ComicSansMS,Bold&gt;GLYPH&lt;c=11,font=/ComicSansMS,Bold&gt;&amp;66GLYPH&lt;c=3,font=/ComicSansMS,Bold&gt;GLYPH&lt;c=20,font=/ComicSansMS,Bold&gt;GLYPH&lt;c=9,font=/ComicSansMS,Bold&gt;GLYPH&lt;c=21,font=/ComicSansMS,Bold&gt;GLYPH&lt;c=12,font=/ComicSansMS,Bold&gt;
 
 ## Font Properties
 
@@ -159,6 +159,8 @@ UL LI.x { list-style-image: url(x.png); }
 Determines where the marker is placed in regard to the list item.  If the value inside is used, the lines will wrap under the marker instead of being indented.  outside is default.
 
 UL { list-style-position: inside; }
+
+page 1 of 2
 
 ## Cascading Style Sheets Cheatsheet (CSS 1&amp;2)
 

@@ -16,7 +16,7 @@ Nakon  izborne  pobjede,  Predsjednik  Kluba  preuzima  i  veliku  moć  i  veli
 
 Kada  Predsjednik  vodi  Klub  na  temelju  izbornog  legitimiteta  i  programa  kojeg  se  obvezao provesti, uz suradnju i nadzor isključivo onih koji su taj program stvarali i s njim bili na istoj listi - dakle, koji dijele istu ideju - te kada imaju podršku Skupštine, upravljanje Klubom je stabilno. Odluka da tijela služe, dok imaju demokratski legitimitet, provođenju jednog cilja, temeljena je na izbornim praksama i šire u društvu i drugim nogometnim Klubovima sa sličnim načinom upravljanja. Nadzor nad takvim upravljanjem i programom koji su odabrali članovi ne mogu provoditi oni koji su na izborima bili u manjini ili nisu stvorili i zastupali istu ideju.
 
-5. Jednostavnost - manje tijela i različitih funkcija
+## 5. Jednostavnost - manje tijela i različitih funkcija
 
 Nadzorni odbor i Izvršni odbor spajaju se u jedinstveno tijelo, a funkcije Predsjednika Kluba i glavnog i odgovornog za rad Uprave preuzima ista osoba. Također, jedna osoba istodobno obnaša dužnost predsjednika Nadzornog odbora i predsjedavajućeg u Skupštini, ne predviđa se osnivanje npr. Etičkog povjerenstva. Ove odluke pojednostavljuju i ujedinjuju tijela i funkcije s ciljem jednostavnijeg, jasnijeg i učinkovitijeg upravljanja Klubom što smatramo primjerenim za trenutnu fazu demokratskog i upravljačkog razvoja Kluba. To, međutim, ne znači da se isto u budućnosti neće mijenjati, a izborni proces, tijela i funkcije na složeniji način razvijati.
 

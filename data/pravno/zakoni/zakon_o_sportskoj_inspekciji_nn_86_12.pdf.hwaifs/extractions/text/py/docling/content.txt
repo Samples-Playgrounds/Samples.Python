@@ -1,10 +1,10 @@
-HRVATSKI SABOR
+## HRVATSKI SABOR
 
 Na temelju članka 89. Ustava Republike Hrvatske, donosim
 
-ODLUKU
+## ODLUKU
 
-O PROGLAŠENJU ZAKONA O SPORTSKOJ INSPEKCIJI
+## O PROGLAŠENJU ZAKONA O SPORTSKOJ INSPEKCIJI
 
 Proglašavam Zakon o sportskoj inspekciji, koji je Hrvatski sabor donio na sjednici 13. srpnja 2012. godine.
 
@@ -14,11 +14,11 @@ Urbroj: 71-05-03/1-12-2
 
 Zagreb, 18. srpnja 2012.
 
-ZAKON
+## ZAKON
 
-O SPORTSKOJ INSPEKCIJI
+## O SPORTSKOJ INSPEKCIJI
 
-I. OPĆE ODREDBE
+## I. OPĆE ODREDBE
 
 Članak 1.
 
@@ -28,7 +28,7 @@ Ovim  se  Zakonom  uređuje  ustroj,  poslovi,  način  rada,  prava,  dužnosti
 
 Inspekcija provodi inspekcijski nadzor nad provedbom Zakona o sportu i propisa donesenih na temelju njega te poduzima mjere i radnje za koje je ovlaštena ovim Zakonom.
 
-II. USTROJ INSPEKCIJE
+## II. USTROJ INSPEKCIJE
 
 Članak 3.
 
@@ -48,13 +48,13 @@ r.
 
 (3) Protiv rješenja državnih inspektora donesenih u prvom stupnju nije dopuštena žalba, već se može pokrenuti upravni spor pred nadležnim upravnim sudom.
 
-Članak 4.
+## Članak 4.
 
 (1) Inspekcija u ministarstvu nadležnom za poslove sporta (u daljnjem tekstu: Ministarstvo) ustrojava se kao unutarnja ustrojstvena jedinica u upravnoj organizaciji nadležnoj za sport u sastavu Ministarstva.
 
 (2)  Ustrojstvenom  jedinicom  inspekcije  iz  stavka  1.  ovoga  članka  rukovodi  glavni  sportski inspektor.
 
-Članak 5.
+## Članak 5.
 
 (1) Uvjeti za raspored na radno mjesto glavnoga sportskog inspektora su: završen diplomski sveučilišni  studij  ili  specijalistički  diplomski  stručni  studij  iz  područja  društvenih  znanosti, sedam godina radnog iskustva na odgovarajućim poslovima i položen državni stručni ispit.
 
@@ -66,7 +66,7 @@ r.
 
 (5) Uvjeti za raspored na radno mjesto sportskog inspektora su: završen diplomski sveučilišni studij  ili  specijalistički  diplomski  stručni  studij  iz  područja  društvenih  znanosti,  tri  godine radnog  iskustva  na  odgovarajućim  poslovima  i  položen  državni  stručni  ispit  za  sportskog inspektora.
 
-Članak 6.
+## Članak 6.
 
 (1) Inspektori obavljaju neposredno sve poslove iz nadležnosti sportske inspekcije osim onih za koje je ovim Zakonom određeno da ih obavljaju državni inspektori.
 
@@ -86,7 +86,7 @@ r.
 
 (2)  Obrazac  i  način  vođenja  očevidnika  iz  stavka  1.  ovoga  članka  propisuje  ministar pravilnikom.
 
-III. POSLOVI SPORTSKE INSPEKCIJE
+## III. POSLOVI SPORTSKE INSPEKCIJE
 
 Članak 9.
 
@@ -106,20 +106,20 @@ U provedbi nadzora nad pravnim i fizičkim osobama u sustavu sporta koje podlije
 12.  imaju  li  osobe  koje  sudjeluju  u  sportskim  natjecanjima  odgovarajuću  zdravstvenu sposobnost koju je utvrdio ovlašteni liječnik sukladno sa Zakonom o sportu i na temelju njega donesenih propisa,
 13. poštuju li se pravila o korištenju nedopuštenih sredstava (doping).
 
-IV. NAČIN RADA, PRAVA, DUŽNOSTI I OVLASTI SPORTSKE INSPEKCIJE
+## IV. NAČIN RADA, PRAVA, DUŽNOSTI I OVLASTI SPORTSKE INSPEKCIJE
 
-Članak 10.
+## Članak 10.
 
 Inspekcijski postupak pokreće se po službenoj dužnosti.
 
-Članak 11.
+## Članak 11.
 
 - (1) Inspektor je dužan razmotriti predstavku ili drugu obavijest upućenu sportskoj inspekciji te procijeniti potrebu za pokretanjem inspekcijskog postupka.
 - (2) O pokretanju postupka, odnosno o nepostojanju uvjeta za pokretanje postupka inspektor je dužan obavijestiti podnositelja najkasnije u roku od 30 dana od dana podnošenja predstavke.
 - (3) Podnositelj predstavke ima pravo u roku od osam dana od dana primitka obavijesti izjaviti prigovor čelniku javnopravnog tijela u čijem se sastavu nalazi sportska inspekcija ako primi obavijest  da  prema  navodima  u  predstavci  ne  postoje  uvjeti  za  pokretanje  postupka  ili  ako obavijest ne primi u roku iz stavka 2. ovoga članka.
 - (4)  Ako  je  postupak  pokrenut,  o  provedenom  nadzoru  i  poduzetim  mjerama  i  radnjama inspektor će izvijestiti podnositelja predstavke nakon završenoga inspekcijskog postupka.
 
-Članak 12.
+## Članak 12.
 
 - (1) O početku obavljanja nadzora inspektor će obavijestiti odgovornu osobu u pravnoj osobi odnosno  fizičku  osobu  u  sustavu  sporta,  osim  ako  smatra  da  bi  obavještavanjem  umanjio učinkovitost nadzora.
 - (2) Inspektor obavlja nadzor izravnim uvidom u opće i pojedinačne akte, te uvjete i način rada pravne osobe, odnosno fizičke osobe koje obavljaju sportsku djelatnost.
@@ -158,7 +158,7 @@ Odgovorna osoba pravne osobe i fizička osoba u sustavu sporta dužna je inspekt
 
 (3) Ako ocijeni da postoji sumnja u počinjenje kaznenog djela, inspektor će o tome izvijestiti nadležno tijelo progona.
 
-Članak 18.
+## Članak 18.
 
 (1)  Na  temelju  utvrđenih  činjenica  inspektor  može  izreći  naredbu  ili  zabranu  te  izdati prekršajni  nalog,  odnosno  podnijeti  optužni  prijedlog  nadležnom  prekršajnom  sudu  ako  je povredom propisa počinjen prekršaj.
 
@@ -166,7 +166,7 @@ Odgovorna osoba pravne osobe i fizička osoba u sustavu sporta dužna je inspekt
 
 (3) Izdavanje prekršajnog naloga i podnošenje optužnog prijedloga provodi se pod uvjetima, na način i u postupku koje propisuje Zakon o prekršajima.
 
-Članak 19.
+## Članak 19.
 
 (1) Inspektor će narediti otklanjanje propusta, nedostataka, odnosno nepravilnosti u određenom roku:
 
@@ -186,13 +186,13 @@ Odgovorna osoba pravne osobe i fizička osoba u sustavu sporta dužna je inspekt
 
 (2)  Ako  se  naredba  iz  stavka  1.  ovoga  članka  ne  provede  u  ostavljenom  roku,  poništenje, ukidanje ili oglašavanje ništavnim provest će inspektor.
 
-Članak 21.
+## Članak 21.
 
 (1) Inspektor će nadziranoj pravnoj osobi zabraniti da u njoj obavlja poslove član predstavničkog  ili  izvršnog  tijela,  odnosno  upravnog  ili  nadzornog  tijela  ako  za  tu  osobu postoji zapreka u smislu odredaba Zakona o sportu.
 
 (2) Protiv rješenja iz stavka 1. ovoga članka može se izjaviti žalba Ministarstvu.
 
-Članak 22.
+## Članak 22.
 
 (1)  Inspektor  će  nadziranoj  pravnoj  osobi,  odnosno  fizičkoj  osobi  koja  obavlja  samostalnu djelatnost zabraniti:
 
@@ -203,7 +203,7 @@ Odgovorna osoba pravne osobe i fizička osoba u sustavu sporta dužna je inspekt
 
 (2)  Inspektor  će  izreći  zabranu  i  u  drugim  slučajevima  kada  je  za  to  ovlašten  zakonom  ili drugim propisom.
 
-Članak 23.
+## Članak 23.
 
 (1) Protiv prvostupanjskog rješenja inspektora može se izjaviti žalba inspekciji u Ministarstvu nadležnom za poslove sporta.
 
@@ -270,7 +270,7 @@ Inspektor je odgovoran ako ne poduzme mjere ili radnje koje je po zakonu ili dru
 
 (3) Ovlasti iz stavka 1. i 2. ovoga članka ima i rukovodeća osoba inspekcije u uredu državne uprave u županiji, odnosno Gradskom uredu Grada Zagreba prema inspektorima.
 
-V. KAZNENE ODREDBE
+## V. KAZNENE ODREDBE
 
 Članak 31.
 
@@ -290,7 +290,7 @@ Novčanom kaznom u iznosu od 1.000,00 do 5.000,00 kuna kaznit će se fizička os
 2.  ako  na  bilo  koji  način  sprječava  ili  ometa  inspektora  u  obavljanju  nadzora  ili  u poduzimanju mjera i radnji za koje je ovlaštena,
 3. ako ne postupi po rješenju sportskog inspektora.
 
-VI. PRIJELAZNE I ZAVRŠNE ODREDBE
+## VI. PRIJELAZNE I ZAVRŠNE ODREDBE
 
 Članak 33.
 
@@ -312,7 +312,7 @@ Klasa: 620-01/12-01/01
 
 Zagreb, 13. srpnja 2012.
 
-HRVATSKI SABOR
+## HRVATSKI SABOR
 
 Potpredsjednik
 

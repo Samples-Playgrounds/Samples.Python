@@ -1583,7 +1583,9 @@ Nov č anom kaznom od 3.000,00 do 5.000,00 kuna kaznit ć e se za prekršaj lije
 1. ako  aktom  ne  odredi  visinu č lanarine  i  ne  objavi  je  na  dostupan  na č in  ( č lanak  11. stavak 1.);
 2. ako op ć im aktom ne uredi prava svojim č lanovima sportašima amaterima ( č lanak 39. stavak 4.);
 3. ako omogu ć i da u sportskom natjecanju sudjeluje osoba za koju nije u razdoblju od šest  mjeseci  prije  sportskog  natjecanja  utvr đ ena  op ć a  zdravstvena  sposobnost,  a  kada  je  to propisano i posebna zdravstvena sposobnost ( č lanak 110. stavak 1.).
-4. ( 3) Za prekršaj iz stavka 1. ovog č lanka kaznit ć e se i odgovorna osoba u pravnoj osobi iz sustava sporta nov č anom kaznom od 2.000,00 do 6.000,00 kuna.
+
+( 3) Za prekršaj iz stavka 1. ovog č lanka kaznit ć e se i odgovorna osoba u pravnoj osobi iz sustava sporta nov č anom kaznom od 2.000,00 do 6.000,00 kuna.
+
 - (4)  Za  prekršaj  iz  stavka  2.  ovoga č lanka  kaznit ć e  se  i  odgovorna osoba u  sportskom klubu nov č anom kaznom od 2.000,00 do 4.000,00 kuna.
 
 ## Č lanak 151.
@@ -1756,13 +1758,13 @@ Analiza  stanja  obuke  nepliva č a  u  Republici  Hrvatskoj  pokazuje  da č a
 
 Za rad više od 1.200 školskih sportskih klubova, dr žava iz prora č una izdvaja:
 
-|   GODINA | UKUPAN PRORA Č UN   | ŠKOLSKI SPORT   |      % |
-|----------|---------------------|-----------------|--------|
-|     1999 | 49.047.850.000      | 4.500.000       |  0.009 |
-|     2000 | 44.017.721.723      | 6.825.000       | 16     |
-|     2001 | 49.679.912.000      | 7.000.000       | 14     |
-|     2002 | 70.217.912.000      | 7.000.000       | 10     |
-|     2003 | 75.283.959.800      | 8.000.000       | 10     |
+|   GODINA | UKUPAN PRORA Č UN   | ŠKOLSKI SPORT   | %     |
+|----------|---------------------|-----------------|-------|
+|     1999 | 49.047.850.000      | 4.500.000       | 0.009 |
+|     2000 | 44.017.721.723      | 6.825.000       | 0,016 |
+|     2001 | 49.679.912.000      | 7.000.000       | 0,014 |
+|     2002 | 70.217.912.000      | 7.000.000       | 0,010 |
+|     2003 | 75.283.959.800      | 8.000.000       | 0,010 |
 
 Sredstva za školski sport iz državnog prora č una su samo minimalni poticaj za aktivnosti školskih sportskih klubova, jer primjerice za 2003. godinu iznose oko 66,00 kuna godišnje po u č eniku uklju č enom u školski klub.
 
@@ -1846,23 +1848,23 @@ Dakle, iz pregleda izdvajanja iz državnog prora č una za javne potrebe u sport
 
 Slijedi grafi č ki prikaz navedenih pokazatelja:
 
-|     % |   1999 |   2000 |   2001 |   2002 | 2003   |
+| %     | 1999   | 2000   | 2001   | 2002   | 2003   |
 |-------|--------|--------|--------|--------|--------|
 | 0,110 |        |        |        |        |        |
-| 0,105 |        |  0,103 |        |        |        |
+| 0,105 |        | 0,103  |        |        |        |
 | 0,100 |        |        |        |        |        |
-| 0,095 |        |        |  0,093 |        |        |
-| 0,090 |  0,090 |        |        |        |        |
+| 0,095 |        |        | 0,093  |        |        |
+| 0,090 | 0,090  |        |        |        |        |
 | 0,085 |        |        |        |        |        |
 | 0,080 |        |        |        |        |        |
 | 0,075 |        |        |        |        |        |
 | 0,070 |        |        |        |        |        |
 | 0,065 |        |        |        |        |        |
-| 0,060 |        |        |        |  0,057 |        |
+| 0,060 |        |        |        | 0,057  |        |
 
-|   0,055 | 0,055   |
+| 0,055   | 0,055   |
 |---------|---------|
-|   0,050 |         |
+| 0,050   |         |
 
 Bez  obzira  na  promjene  u  metodologiji  izrade  državnog  prora č una  za  2002.  i  2003. godinu, prikazani podaci jasno pokazuju daljnje smanjenja sredstava za javne potrebe u sportu iz prora č una.
 
@@ -1920,18 +1922,18 @@ Isto tako, umjesto da su sredstva od igara na sre ć u za sport u Hrvatskoj sve 
 
 Tablica 4.
 
-|   Tablica 4. | Tablica 4.       | u EUR-ima           |
+| Tablica 4.   | Tablica 4.       | u EUR-ima           |
 |--------------|------------------|---------------------|
 |              | Zemlja           | Od igara na sre ć u |
-|            1 | Velika Britanija | 374.400.000         |
-|            2 | Francuska        | 151.000.000         |
-|            3 | Poljska          | 100.000.000         |
-|            4 | Danska           | 70.000.000          |
-|            5 | Švicarska        | 35.000.000          |
-|            6 | Austrija         | 28.600.000          |
-|            7 | Republika Č eška | 26.000.000          |
-|            8 | Cipar            | 10.000.000          |
-|            9 | Hrvatska         | 1.400.000           |
+| 1.           | Velika Britanija | 374.400.000         |
+| 2.           | Francuska        | 151.000.000         |
+| 3.           | Poljska          | 100.000.000         |
+| 4.           | Danska           | 70.000.000          |
+| 5.           | Švicarska        | 35.000.000          |
+| 6.           | Austrija         | 28.600.000          |
+| 7.           | Republika Č eška | 26.000.000          |
+| 8.           | Cipar            | 10.000.000          |
+| 9.           | Hrvatska         | 1.400.000           |
 
 Donošenjem novog Zakona o prire đ ivanju  igara  na  sre ć u  i  nagradnih  igara  stanje  se  u 2003. godini nešto poboljšalo i sport se iz tih izn osa sufinancira s više sredstava nego što je to bilo do sada. No, i dalje ć e se iz tog izvora za sport izdvajati daleko manji postotak sredstava nego u europskim zemljama.
 

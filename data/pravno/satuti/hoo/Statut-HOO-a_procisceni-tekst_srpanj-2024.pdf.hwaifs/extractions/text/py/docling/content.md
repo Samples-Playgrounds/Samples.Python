@@ -512,8 +512,7 @@ Skupština je najviše upravljačko tijelo HOO-a koje obavlja sljedeće zadaće:
 
 ## Članak 38.A
 
-(1) Iznimno, u slučaju izvanrednih okolnosti i u hitnim slučajevima, odnosno u situacijama kad je odluka Skupštine hitna, a nema dovoljno vremena ili drugih uvjeta da se održi redovna sjednica Skupštine, Skupština može donijeti odluku glasovanjem članova Skupštine bez neposrednog dolaska članova Skupštine na sjednicu, izjašnjavanjem o prijedlogu odluke putem e-maila (elektronička sjednica).
-
+- (1) Iznimno, u slučaju izvanrednih okolnosti i u hitnim slučajevima, odnosno u situacijama kad je odluka Skupštine hitna, a nema dovoljno vremena ili drugih uvjeta da se održi redovna sjednica Skupštine, Skupština može donijeti odluku glasovanjem članova Skupštine bez neposrednog dolaska članova Skupštine na sjednicu, izjašnjavanjem o prijedlogu odluke putem e-maila (elektronička sjednica).
 - (2) Za organizaciju navedene elektroničke sjednice dostavlja se prijedlog ili pitanje članu Skupštine s prijedlogom da se izjasni „Za", „Protiv" ili „Suzdržan" u odnosu na prijedlog odluke koju je potrebno usvojiti na hitan način bez sazivanja sjednice.
 - (3) Takve odluke zahtijevaju prihvaćanje od strane većine svih članova Skupštine HOO-a s pravom giasa, ukljucujući provedbu odredbe iz članka 29. stavak 2. Statuta, ali isključujući primjenu odredbe Članka 31. stavak 3. Statuta.
 
@@ -528,7 +527,7 @@ Skupština je najviše upravljačko tijelo HOO-a koje obavlja sljedeće zadaće:
 
 (3) O svim drugim pitanjima, osim stavaka 1. i 2. ovog članka, Skupština donosi odluke većinom glasova nazočnih članova s pravom glasa na sjednici Skupštine.
 
-(4) U slučaju jednakog broja glasova za i protiv odlučuje glas predsjedavajućeg Skupštine.
+- (4) U slučaju jednakog broja glasova za i protiv odlučuje glas predsjedavajućeg Skupštine.
 
 Glasovanje u Skupštini je javno osim:
 
@@ -582,11 +581,12 @@ Stalna radna tijela Skupštine jesu:
 
 ## Clanak 46.
 
-- (1) Odbor ljetnih olimpijskih sportova bavi se pitanjima u odnosu na sudjelovanje na igrama olimpijade, europskim i mediteranskim igrama, te drugim višesportskim priredbama pod pokroviteljstvom MOO-a za sve sportove koji su uključeni u program igara olimpijade, program europskih i mediteranskih igara, kao i drugim pitanjima aktivnosti tih nacionalnih sportskih saveza vezanih uz program javnih potreba u sportu na državnoj razini, a naročito:
-2. razmatra prijedlog kriterija za nastup na igrama olimpijade, olimpijskim igrama mladih, europskim i mediteranskim igrama za sve sportove
-3. razmatra prijedlog liste sudionika igara olimpijade, olimpijskih igara mladih, europskih i mediteranskih igara
-4. razmatra prijedlog programa priprema za igre olimpijade, olimpijske igre mladih, europske i mediteranske igre
-5. razmatra prijedlog liste potencijalnih i evidentnih kandidata za sudjelovanje na igrama olimpijade, olimpijskim igrama mladih, europskim i mediteranskim igrama
+(1) Odbor ljetnih olimpijskih sportova bavi se pitanjima u odnosu na sudjelovanje na igrama olimpijade, europskim i mediteranskim igrama, te drugim višesportskim priredbama pod pokroviteljstvom MOO-a za sve sportove koji su uključeni u program igara olimpijade, program europskih i mediteranskih igara, kao i drugim pitanjima aktivnosti tih nacionalnih sportskih saveza vezanih uz program javnih potreba u sportu na državnoj razini, a naročito:
+
+- razmatra prijedlog kriterija za nastup na igrama olimpijade, olimpijskim igrama mladih, europskim i mediteranskim igrama za sve sportove
+- razmatra prijedlog liste sudionika igara olimpijade, olimpijskih igara mladih, europskih i mediteranskih igara
+- razmatra prijedlog programa priprema za igre olimpijade, olimpijske igre mladih, europske i mediteranske igre
+- razmatra prijedlog liste potencijalnih i evidentnih kandidata za sudjelovanje na igrama olimpijade, olimpijskim igrama mladih, europskim i mediteranskim igrama
 
 - -sudjeluje u pripremi kriterija za izradu dijela programa javnih potreba sportu na državnoj razini u nadležnosti HOO-a
 - razmatra prijedlog financijskog plana HOO-a, u dijelu koji se odnosi na programe utvrene ovim člankom Satuta
@@ -640,17 +640,18 @@ Mandat stalnih radnih tijela Skupštine traje paralelno s mandatom Skupštine.
 
 ## Članak 52.
 
-- (1) Predsjednik obavlja sljedeće zadace i poslove:
-2. predstavlja i zastupa HOO u zemlji i inozemstvu
-3. saziva i predsjedava sjednicama Skupstine i Vijeca
-4. poduzima i potiče aktivnosti za promicanje olimpizma i primjenu Olimpijske povelje i ovog Statuta
+(1) Predsjednik obavlja sljedeće zadace i poslove:
+
+- predstavlja i zastupa HOO u zemlji i inozemstvu
+- saziva i predsjedava sjednicama Skupstine i Vijeca
+- poduzima i potiče aktivnosti za promicanje olimpizma i primjenu Olimpijske povelje i ovog Statuta
 - potiče aktivnosti na razvoju i unapredenju funkcioniranja djelatnosti hrvatskog sporta
-6. potpisuje protokole, konvencije i deklaracije medunarodnih sportskih i nevladinih asocijacija i institucija od interesa za hrvatski sport
+- potpisuje protokole, konvencije i deklaracije medunarodnih sportskih i nevladinih asocijacija i institucija od interesa za hrvatski sport
 - potpisuje opće akte HOO-a koje donosi Skupština i Vijeće
 - potpisuje verificirane zapisnike održanih sjednica Skupštine i Vijeća kojima predsjeda
 - predlaže Skupštini kandidate za dopredsjednike i članove Vijeća i predlaže Vijeću kandidate za glavnog tajnika
-10. -pokreće rješavanje pitanja razrješenja članova Vijeća te dopredsjednika
-11. voditelj je delegacije HOO-a na olimpijskim, europskim i mediteranskim igrama i drugim višesportskim priredbama kojima je nazočan
+- -pokreće rješavanje pitanja razrješenja članova Vijeća te dopredsjednika
+- voditelj je delegacije HOO-a na olimpijskim, europskim i mediteranskim igrama i drugim višesportskim priredbama kojima je nazočan
 - izvršava i druge aktivnosti i obveze sukladno odlukama i zaključcima Skupštine i Vijeća, odredbama Olimpijske povelje i drugih medunarodnih propisa u sportu, općim aktima HOO-a i ovim Statutom.
 - (2) Za svoj rad predsjednik je odgovoran Skupštini.
 - (3) U slučaju odsutnosti ili spriječenosti predsjednika, zamjenjuje ga jedan od dopredsjednika kojeg ovlasti predsjednik, odnosno kojeg odredi Vijeće u slučaju nemogućnosti da predsjednik o tome odluči.
@@ -1208,6 +1209,8 @@ izvora, u slučaju prestanka postojanja, ostatak sredstava vratit će se u prora
 
 - (1) Statut stupa na snagu danom donošenja, a primjenjuje se danom upisa u Registar udruga Republike Hrvatske, osim odredbe iz članka 59, alineja druga, koja se slijedom preporuka Medunarodnog olimpijskog odbora stavlja u Statut s primjenom od slijedeći izbora u HOO-U (2024).
 - (2) Danom stupanja na snagu ovog Statuta Hrvatskog olimpijskog odbora - pročišćeni tekst, prestaje važiti Statut HOO-a - pročišćeni tekst broj: 268/23 od 3.3.2023.
+
+<!-- image -->
 
 <!-- image -->
 

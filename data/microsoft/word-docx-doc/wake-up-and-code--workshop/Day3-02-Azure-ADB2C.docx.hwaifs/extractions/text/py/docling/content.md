@@ -2,8 +2,8 @@
 
 Sources:
 
-- B2C Tenant: [https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-tenant](https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-tenant)
-- Web App: [https://github.com/Azure-Samples/active-directory-b2c-dotnetcore-webapp](https://github.com/Azure-Samples/active-directory-b2c-dotnetcore-webapp)
+- B2C Tenant: [https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-tenant](https:/docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-tenant)
+- Web App: [https://github.com/Azure-Samples/active-directory-b2c-dotnetcore-webapp](https:/github.com/Azure-Samples/active-directory-b2c-dotnetcore-webapp)
 
 **Create an Azure AD B2C tenant**
 
@@ -16,11 +16,11 @@ In this article, you learn how to:
 
 You learn how to register an application in the next tutorial.
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+If you don't have an Azure subscription, create a [free account](https:/azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 **Create an Azure AD B2C tenant**
 
-1. Sign in to the [Azure portal](https://portal.azure.com/) .
+1. Sign in to the [Azure portal](https:/portal.azure.com) .
 2. Make sure that you are using the directory that contains your subscription by clicking the **Directory and subscription filter** in the top menu and choosing the directory that contains it. This is a different directory than the one that will contain your Azure AD B2C tenant.
 <!-- image -->
 3. Choose **Create a resource** in the top-left corner of the Azure portal.
@@ -43,9 +43,9 @@ In this article, you learned how to:
 
 ## An ASP.NET Core web app with Azure AD B2C
 
-Source code on GitHub: [https://github.com/Azure-Samples/active-directory-b2c-dotnetcore-webapp](https://github.com/Azure-Samples/active-directory-b2c-dotnetcore-webapp)
+Source code on GitHub: [https://github.com/Azure-Samples/active-directory-b2c-dotnetcore-webapp](https:/github.com/Azure-Samples/active-directory-b2c-dotnetcore-webapp)
 
-This sample shows how to build an MVC web application that performs identity management with Azure AD B2C using the ASP.Net Core OpenID Connect middleware. It assumes you have some familiarity with Azure AD B2C. If you'd like to learn all that B2C has to offer, start with our documentation at [aka.ms/aadb2c](http://aka.ms/aadb2c) .
+This sample shows how to build an MVC web application that performs identity management with Azure AD B2C using the ASP.Net Core OpenID Connect middleware. It assumes you have some familiarity with Azure AD B2C. If you'd like to learn all that B2C has to offer, start with our documentation at [aka.ms/aadb2c](http:/aka.ms/aadb2c) .
 
 The app is a dead simple web application that performs three functions: sign-in, sign-up, and sign-out. It is intended to help get you started with Azure AD B2C in a ASP.NET Core application, giving you the necessary tools to execute Azure AD B2C policies &amp; securely identify uses in your application.
 
@@ -53,7 +53,7 @@ The app is a dead simple web application that performs three functions: sign-in,
 
 Getting started is simple! To run this sample you will need:
 
-- To install .NET Core for Windows by following the instructions at [dot.net/core](http://dot.net/core) , which will include Visual Studio 2017.
+- To install .NET Core for Windows by following the instructions at [dot.net/core](http:/dot.net/core) , which will include Visual Studio 2017.
 - An Internet connection
 - An Azure subscription (a free trial is sufficient)
 
@@ -65,19 +65,19 @@ git clone https://github.com/Azure-Samples/active-directory-dotnet-webapp-openid
 
 #### [OPTIONAL] Step 2: Get your own Azure AD B2C tenant
 
-You can also modify the sample to use your own Azure AD B2C tenant. First, you'll need to create an Azure AD B2C tenant by following [these instructions](https://azure.microsoft.com/documentation/articles/active-directory-b2c-get-started) .
+You can also modify the sample to use your own Azure AD B2C tenant. First, you'll need to create an Azure AD B2C tenant by following [these instructions](https:/azure.microsoft.com/documentation/articles/active-directory-b2c-get-started) .
 
 IMPORTANT: if you choose to perform one of the optional steps, you have to perform ALL of them for the sample to work as expected.
 
 #### [OPTIONAL] Step 3: Create your own policies
 
-This sample uses three types of policies: a unified sign-up/sign-in policy, a profile editing policy and a password reset policy. Create one policy of each type by following [the instructions here](https://azure.microsoft.com/documentation/articles/active-directory-b2c-reference-policies) . You may choose to include as many or as few identity providers as you wish.
+This sample uses three types of policies: a unified sign-up/sign-in policy, a profile editing policy and a password reset policy. Create one policy of each type by following [the instructions here](https:/azure.microsoft.com/documentation/articles/active-directory-b2c-reference-policies) . You may choose to include as many or as few identity providers as you wish.
 
 If you already have existing policies in your Azure AD B2C tenant, feel free to re-use those. No need to create new ones just for this sample.
 
 #### [OPTIONAL] Step 4: Create your own Web API
 
-This sample calls an API at [https://fabrikamb2chello.azurewebsites.net](https://fabrikamb2chello.azurewebsites.net/) which has the same code as the sample [Node.js Web API with Azure AD B2C](https://github.com/Azure-Samples/active-directory-b2c-javascript-nodejs-webapi) . You'll need your own API or at the very least, you'll need to [register a Web API with Azure AD B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration) so that you can define the scopes that your single page application will request access tokens for.
+This sample calls an API at [https://fabrikamb2chello.azurewebsites.net](https:/fabrikamb2chello.azurewebsites.net) which has the same code as the sample [Node.js Web API with Azure AD B2C](https:/github.com/Azure-Samples/active-directory-b2c-javascript-nodejs-webapi) . You'll need your own API or at the very least, you'll need to [register a Web API with Azure AD B2C](https:/docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration) so that you can define the scopes that your single page application will request access tokens for.
 
 Your web API registration should include the following information:
 
@@ -89,7 +89,7 @@ Your web API registration should include the following information:
 
 #### [OPTIONAL] Step 5: Create your own Web app
 
-Now you need to [register your web app in your B2C tenant](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration) , so that it has its own Application ID. Don't forget to grant your application API Access to the web API you registered in the previous step.
+Now you need to [register your web app in your B2C tenant](https:/docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration) , so that it has its own Application ID. Don't forget to grant your application API Access to the web API you registered in the previous step.
 
 Your native application registration should include the following information:
 

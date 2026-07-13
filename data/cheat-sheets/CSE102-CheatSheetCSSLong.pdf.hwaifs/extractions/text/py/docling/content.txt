@@ -1,19 +1,19 @@
 www.hostinger.com
 
-| BACKGROUND        |   1 | PSUEDO-CLASS         |   9 |
+| BACKGROUND        |   1 | PSUEDO-CLASS         | 9   |
 |-------------------|-----|----------------------|-----|
-| BORDER            |   1 | PSUEDO-ELEMENTS      |   9 |
-| TABLE             |   1 | UI                   |   9 |
+| BORDER            |   1 | PSUEDO-ELEMENTS      | 9   |
+| TABLE             |   1 | UI                   | 9   |
 | BOX MODEL         |   2 |                      |     |
-| TRANSITIONS       |   2 | UNITS                |  10 |
-| COLOR             |   3 | ANGELS               |  10 |
-| FONT              |   3 | ABSOLUTE MEASUREMENT |  10 |
-| ANIMATIONS        |   4 | COLORS               |  10 |
-| COLUMN            |   4 | FREQUENCY            |  10 |
-| TEXT              |   4 | RELATIVE MEASUREMENT |  10 |
-| SPEECH            |   5 | TIME                 |  10 |
+| TRANSITIONS       |   2 | UNITS                | 10  |
+| COLOR             |   3 | ANGELS               | 10  |
+| FONT              |   3 | ABSOLUTE MEASUREMENT | 10  |
+| ANIMATIONS        |   4 | COLORS               | 10  |
+| COLUMN            |   4 | FREQUENCY            | 10  |
+| TEXT              |   4 | RELATIVE MEASUREMENT | 10  |
+| SPEECH            |   5 | TIME                 | 10  |
 | TEMPLATE LAYOUT   |   5 |                      |     |
-| 3D / 2D TRANSFORM |   6 | SELECTOR TYPES       |  11 |
+| 3D / 2D TRANSFORM |   6 | SELECTOR TYPES       | 11  |
 | GRID POSITIONING  |   6 |                      |     |
 | HYPERLINK         |   6 |                      |     |
 | LIST AND MARKERS  |   6 |                      |     |
@@ -91,7 +91,7 @@ show | hide table-layout auto | fixed
 | height        | auto length %                                                                                                                                                                                                                                                                                                                                                                                               |
 | max-height    | none length %                                                                                                                                                                                                                                                                                                                                                                                               |
 | max-width     | none length %                                                                                                                                                                                                                                                                                                                                                                                               |
-| min-height    | none &#124; inherit length %                                                                                                                                                                                                                                                                                                                                                                                |
+| min-height    | none &#124; inherit length                                                                                                                                                                                                                                                                                                                                                                                  |
 | min-width     | none &#124; inherit length %                                                                                                                                                                                                                                                                                                                                                                                |
 | width         | auto % length                                                                                                                                                                                                                                                                                                                                                                                               |
 | margin        | margin margin-top margin-right margin-bottom margin-left                                                                                                                                                                                                                                                                                                                                                    |
@@ -107,8 +107,8 @@ show | hide table-layout auto | fixed
 | padding-right      | length %                                                                                                 |                          | inherit length                                                                                                                                                                  |
 | padding-top        | length %                                                                                                 |                          | %                                                                                                                                                                               |
 | marquee-direction  | forward &#124; reverse                                                                                   | font-size-adjust         | none&#124; inherit number                                                                                                                                                       |
-| marquee-loop       | infinite number                                                                                          | font-stretch             | normal &#124; wider &#124; narrower &#124; ultra-condensed &#124; extracondensed &#124; condensed &#124; semi-condensed                                                         |
-| marquee-play-count | infinite integer                                                                                         |                          | &#124; semiexpanded &#124; expanded &#124; extra-expanded &#124; ultraexpanded &#124; inherit                                                                                   |
+| marquee-loop       | infinite number                                                                                          | font-stretch             | normal &#124; wider &#124; narrower &#124; ultra-condensed &#124; extracondensed &#124; condensed &#124; semi-condensed &#124; semiexpanded &#124; expanded &#124;              |
+| marquee-play-count | infinite integer                                                                                         |                          | extra-expanded &#124; ultraexpanded &#124; inherit                                                                                                                              |
 | marquee-speed      | slow &#124; normal &#124; fast                                                                           |                          |                                                                                                                                                                                 |
 | marquee-style      | scroll &#124; slide &#124; alternate                                                                     | font-style               | normal &#124; italic &#124; oblique &#124; inherit                                                                                                                              |
 | overflow           | visible &#124; hidden &#124; scroll &#124; auto &#124; no-display &#124; nocontent overflow-x overflow-y | font-variant font-weight | normal &#124; small-caps &#124; inherit normal &#124; bold &#124; bolder &#124; lighter &#124; 100 &#124; 200 &#124; 300 &#124; 400 &#124; 500 &#124; 600 &#124; 700 &#124; 800 |
@@ -152,10 +152,12 @@ show | hide table-layout auto | fixed
 | column-span       | 1 &#124; all                                          |
 | column-width      | auto length                                           |
 
-| animation                 | animation-name animation-duration animation-timing-function                                                               |
+| animation                 | animation-name animation-duration animation-timing-function animation-delay animation-iteration-count                     |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| animation-delay           | time                                                                                                                      |
 | animation-direction       | normal &#124; alternate                                                                                                   |
 | animation-duration        | time                                                                                                                      |
+| animation-iteration-count | inherit number                                                                                                            |
 | animation-name            | none &#124; IDENT                                                                                                         |
 | animation-play-state      | running &#124; paused                                                                                                     |
 | animation-timing-function | ease &#124; linear &#124; ease-in &#124; ease-out &#124; ease-in-out &#124; cubic-Bezier (number, number, number, number) |
@@ -258,7 +260,7 @@ identifier content-list
 
 none
 
-[<string> <string>]+
+[&lt;string&gt; &lt;string&gt;]+
 
 | bottom   | auto % length                                       |
 |----------|-----------------------------------------------------|

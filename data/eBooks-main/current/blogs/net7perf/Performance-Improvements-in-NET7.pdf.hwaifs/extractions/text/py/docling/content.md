@@ -1125,13 +1125,13 @@ While logically part of the runtime, the JIT is actually isolated from the rest 
 
 dotnet/runtime#65738 rewrote various 'stubs' to be more efficient. Stubs are tiny bits of code that serve to perform some check and then redirect execution somewhere else. For example, when an interface dispatch call site is expected to only ever be used with a single implementation of that interface, the JIT might employ a 'dispatch stub' that compares the type of the object agains t the
 
-kunalspathak commented on Mar 22 · edited - windows x64 improvements: dotnet/perf-autofiling-issues#4226, dotnet/perf-autofiling-issues#4225
+kunalspathak commented on Mar 22 • edited - windows x64 improvements: dotnet/perf-autofiling-issues#4226, dotnet/perf-autofiling-issues#4225
 
 single one it's cached, and if they're equal simply jumps to the right target. You know you're in the corest of the core areas of the runtime when a PR contains lots of assembly code for every architecture the runtime targets. And it paid off; there' s a virtual group of folks from around .NET that review performance improvements and regressions in our automated performance test suites, and attribute these back to the PRs likely to be the cause (this is mostly automated but requires some human oversigh t). It's always nice then when a few days after a PR is merged and performance information has stabilized that you see a rash of comments like there were on this PR:
 
 Windows Arm64 Improvements dotnet/perf-autofiling-issues#4251 dotnet/perf-autofiling-issues#4252
 
-DrewScoggins commented on Mar 24 · edited -
+DrewScoggins commented on Mar 24 • edited -
 
 <!-- image -->
 
@@ -1500,7 +1500,7 @@ There were plenty of other PRs that went into making the LibraryImport generator
 
 One more category of interop-related changes that I think are worth talking about are to do with SafeHandle cleanup. As a reminder, SafeHandle exists to mitigate various issues around managing native handles and file descriptors. A native handle or file descriptor is just a memory address or number that refers to some owned resource and which must be cleaned up / closed when done with it. A SafeHandle at its core is just a managed object that wraps such a value and provides a Dispose method and a finalizer for closing it. That way, if you neglect to Dispose of the SafeHandle in order to close the resource, the resource will still be cleaned up when the SafeHandle is garbage collected and its finalizer eventually run. SafeHandle then also provides some synchronization around that closure, trying to minimize the possibility that the resource is closed while it's still in use. It provides DangerousAddRef and DangerousRelease methods that increment and decrement a ref count, respectively, and if Dispose is called while the ref count is above zero, the actual releasing of the handle triggered by Dispose is delayed until the ref count goes back to 0. When you pass a SafeHandle into a P/Invoke, the generated code for that P/Invoke handles calling DangerousAddRef
 
-· · Mark the method "CreatePipe' with "Library/mportAtribute' instead
+• • Mark the method "CreatePipe' with "Library/mportAtribute' instead
 
 and DangerousRelease (and due to the wonders of LibraryImport I've already extolled, you can easily see that being done, such as in the previous generated code example). Our code tries hard to clean up after SafeHandle s deterministically, but it's quite easy to accidentally l eave some for finalization.
 
@@ -2324,11 +2324,7 @@ var writer = new SpanWriter( stackalloc char[128]); Append( ref writer, 123); wr
 
 We have a ref struct SpanWriter that takes a Span&lt;char&gt; to its constructor and allows for writing to it by copying in additional content and then updating the stored length. The Write method accepts a ReadOnlySpan&lt;char&gt; . And we then have a helper Append method which is formatting a byte into some stackalloc 'd temporary space and passing the resulting formatted char s in to Write . Straightforward. Except, this doesn't compile:
 
-error CS8350: This combination of arguments to 'SpanWriter.Write(ReadOnlySpan&lt;char&gt;)' is
-
-```
-disallowed because it may expose variables referenced by parameter 'value' outside of their declaration scope
-```
+error CS8350: This combination of arguments to 'SpanWriter.Write(ReadOnlySpan&lt;char&gt;)' is disallowed because it may expose variables referenced by parameter 'value' outside of their declaration scope
 
 What do we do? The Write method doesn't actually store the value parameter and won't ever need to, so we can change the signature of the method to annotate it as scoped :
 
@@ -3047,20 +3043,20 @@ O..
 
 The code is measuring how long it takes to compress the input data at each of the levels (doing a warmup and then averaging several iterations), timing how long it takes and capturing the resulting compressed data size. For the size, I get values like this:
 
-|   Level |   Size (bytes) |
+|   Level | Size (bytes)   |
 |---------|----------------|
-|       0 |    2.51286e+06 |
-|       1 |    2.31547e+06 |
-|       2 |    2.22464e+06 |
-|       3 |    2.21833e+06 |
-|       4 |    2.02715e+06 |
-|       5 |    1.96481e+06 |
-|       6 |    1.92346e+06 |
-|       7 |    1.88993e+06 |
-|       8 |    1.86399e+06 |
-|       9 |    1.84668e+06 |
-|      10 |    1.74156e+06 |
-|      11 |    1.70221e+06 |
+|       0 | 2,512,855.00   |
+|       1 | 2,315,466.00   |
+|       2 | 2,224,638.00   |
+|       3 | 2,218,328.00   |
+|       4 | 2,027,153.00   |
+|       5 | 1,964,810.00   |
+|       6 | 1,923,456.00   |
+|       7 | 1,889,927.00   |
+|       8 | 1,863,988.00   |
+|       9 | 1,846,685.00   |
+|      10 | 1,741,561.00   |
+|      11 | 1,702,214.00   |
 
 4
 
@@ -3084,24 +3080,24 @@ Size (bytes)
 
 0009
 
-000 ·
+000 •
 
 000Z
 
-|   Level |   Time (ms) |
+|   Level | Time (ms)   |
 |---------|-------------|
-|       0 |       24.11 |
-|       1 |       36.67 |
-|       2 |       64.13 |
-|       3 |       73.72 |
-|       4 |      146.41 |
-|       5 |      257.12 |
-|       6 |      328.54 |
-|       7 |      492.81 |
-|       8 |      702.38 |
-|       9 |      892.08 |
-|      10 |     4830.32 |
-|      11 |    10634.9  |
+|       0 | 24.11       |
+|       1 | 36.67       |
+|       2 | 64.13       |
+|       3 | 73.72       |
+|       4 | 146.41      |
+|       5 | 257.12      |
+|       6 | 328.54      |
+|       7 | 492.81      |
+|       8 | 702.38      |
+|       9 | 892.08      |
+|      10 | 4,830.32    |
+|      11 | 10,634.88   |
 
 OI
 
@@ -3572,9 +3568,9 @@ XML pops up in other areas as well, as in the XmlWriterTraceListener type. While
 | TraceWrite | .NET 6.0  | 961.9 ns |     1   | 288 B       |          1    |
 | TraceWrite | .NET 7.0  | 772.2 ns |     0.8 | 64 B        |          0.22 |
 
-· System.Security.Cryptography.Algorithms.dIl
+• System.Security.Cryptography.Algorithms.dIl
 
-· System.Security.Cryptography.Cng.dll
+• System.Security.Cryptography.Cng.dll
 
 System.Security. Cryptography.Csp.dil
 
@@ -3628,21 +3624,21 @@ Assemblies :
 
 - 4
 
-- *· System.Security.Cryptography.Primitives (7.0.0.0, NETCoreApp, v7.0)
+- *• System.Security.Cryptography.Primitives (7.0.0.0, NETCoreApp, v7.0)
 
 + ..: Metadata
 
 - *° References
 
-+ ·· System.Runtime
++ •• System.Runtime
 
-+ ··· System.Security. Cryptography
++ ••• System.Security. Cryptography
 
 = {} -
 
 «Module ›
 
-· Derived Types
+• Derived Types
 
 System.Security.Cryptography.Primitives (7.0.0.0, NETCoreApp, v7.0)
 
@@ -3924,7 +3920,7 @@ if (\_counts. ContainsKey(\_word))
 
 Use 'TryGetValue(TKey, out TValue)'
 
-· CA1854 Prefer a 'TryGetValue' call over a Dictionary indexer access
+• CA1854 Prefer a 'TryGetValue' call over a Dictionary indexer access
 
 Convert to conditional expression
 
@@ -3962,11 +3958,11 @@ if (\_subscriptions. ContainsKey(listener))
 
 Remove unnecessary call
 
-· · CA1853 Do not guard Dictionary, Remove(key) with
+• • CA1853 Do not guard Dictionary, Remove(key) with
 
 Invert if
 
-Suppress or Configure issues ·
+Suppress or Configure issues •
 
 'Dictionary. ContainsKey(key)"
 
@@ -4043,7 +4039,7 @@ Extract base class...
 
 Suppress or Configure issues
 
-· ® Use 'GeneratedRegexAttribute' to generate the regular expression implementation at compile-time
+• ® Use 'GeneratedRegexAttribute' to generate the regular expression implementation at compile-time
 
 Lines 38 to 40
 
@@ -4150,7 +4146,11 @@ return _value != null ? _value.Property : null ;
 into code that's instead like:
 
 ```
-return _value?.Property;
+return
+```
+
+```
+_value?.Property;
 ```
 
 Nice, concise, and primarily about cleaning up the code and making it simpler and more maintainable by utilizing newer C# syntax. However, there is also a small performance advantage in some situations as well. For example, consider this snippet:
@@ -4217,11 +4217,7 @@ foundColumns[i] ?? DBNull.Value
 
 This avoids an unnecessary re-access to an array. Or again from those PRs the expression:
 
-```
-entry.GetKey(_thisCollection) != null
-```
-
-being changed to:
+entry.GetKey(\_thisCollection) != null being changed to:
 
 ```
 entry.GetKey(_thisCollection) ?? "key"

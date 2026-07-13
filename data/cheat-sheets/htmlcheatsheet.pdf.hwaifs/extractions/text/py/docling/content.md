@@ -208,7 +208,8 @@ Sets a single-line textbox for URLs
 &lt;table border=?&gt;
 
 - Sets the width of the border around table cells &lt;table cellspacing=?&gt; Sets amount of space between table cells
-- &lt;table cellpadding=?&gt;
+
+&lt;table cellpadding=?&gt;
 
 Sets amount of space between a cell's border and its contents
 
@@ -227,7 +228,7 @@ Sets alignment for cells (left/center/right)
 
 (top/middle/bottom)
 
-- &lt;td valign=?&gt;
+&lt;td valign=?&gt;
 
 Sets vertical alignment for cell (top/middle/bottom)
 

@@ -1,17 +1,17 @@
 **Tutorial: Create a Razor Pages web app with ASP.NET Core**
 
-Source: [https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages)
+Source: [https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages)
 
 This series of tutorials explains the basics of building a Razor Pages web app. The series includes the following tutorials:
 
-1. [Create a Razor Pages web app](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2)
-2. [Add a model to a Razor Pages app](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2)
-3. [Scaffold (generate) Razor pages](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/page?view=aspnetcore-2.2)
-4. [Work with a database](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2)
-5. [Update Razor pages](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/da1?view=aspnetcore-2.2)
-6. [Add search](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/search?view=aspnetcore-2.2)
-7. [Add a new field](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/new-field?view=aspnetcore-2.2)
-8. [Add validation](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/validation?view=aspnetcore-2.2)
+1. [Create a Razor Pages web app](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2)
+2. [Add a model to a Razor Pages app](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2)
+3. [Scaffold (generate) Razor pages](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/page?view=aspnetcore-2.2)
+4. [Work with a database](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2)
+5. [Update Razor pages](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/da1?view=aspnetcore-2.2)
+6. [Add search](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/search?view=aspnetcore-2.2)
+7. [Add a new field](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/new-field?view=aspnetcore-2.2)
+8. [Add validation](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/validation?view=aspnetcore-2.2)
 
 At the end, you'll have an app that can display and manage a database of movies.
 
@@ -19,9 +19,9 @@ At the end, you'll have an app that can display and manage a database of movies.
 
 ## Tutorial: Get started with Razor Pages in ASP.NET Core
 
-This is the first tutorial of a series. [The series](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/index?view=aspnetcore-2.2) teaches the basics of building an ASP.NET Core Razor Pages web app. At the end of the series you'll have an app that manages a database of movies.
+This is the first tutorial of a series. [The series](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/index?view=aspnetcore-2.2) teaches the basics of building an ASP.NET Core Razor Pages web app. At the end of the series you'll have an app that manages a database of movies.
 
-[View or download sample code](https://github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages/razor-pages-start/2.2-stage-samples) ( [how to download](https://docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) ).
+[View or download sample code](https:/github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages/razor-pages-start/2.2-stage-samples) ( [how to download](https:/docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) ).
 
 In this tutorial, you:
 
@@ -31,26 +31,23 @@ In this tutorial, you:
 
 At the end of this tutorial you'll have a working Razor Pages web app that you'll build on in later tutorials.
 
-[Home or Index page](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start/_static/home2.2.png?view=aspnetcore-2.2)
+[Home or Index page](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start/_static/home2.2.png?view=aspnetcore-2.2)
 
 ### Prerequisites
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2&tabs=visual-studio)
-
-- [Visual Studio 2017 version 15.9 or later](https://visualstudio.microsoft.com/downloads/) with the ASP.NET and web development workload
-- [.NET Core SDK 2.2 or later](https://www.microsoft.com/net/download/all)
-
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2&tabs=visual-studio)
-- [Visual Studio Code](https://code.visualstudio.com/download)
-- [.NET Core SDK 2.2 or later](https://www.microsoft.com/net/download/all)
-- [C# for Visual Studio Code version 1.17.1 or later](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio 2017 version 15.9 or later](https:/visualstudio.microsoft.com/downloads) with the ASP.NET and web development workload
+- [.NET Core SDK 2.2 or later](https:/www.microsoft.com/net/download/all)
+- [Visual Studio Code](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code](https:/code.visualstudio.com/download)
+- [.NET Core SDK 2.2 or later](https:/www.microsoft.com/net/download/all)
+- [C# for Visual Studio Code version 1.17.1 or later](https:/marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 
 CONTINUE…
 
 ### Create a Razor Pages web app
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2&tabs=visual-studio)
-
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2&tabs=visual-studio)
 - From the Visual Studio File menu, select New &gt; Project.
 - Create a new ASP.NET Core Web Application. Name the project RazorPagesMovie. It's important to name the project RazorPagesMovie so the namespaces will match when you copy and paste code.
 <!-- image -->
@@ -61,8 +58,8 @@ The following starter project is created:
 
 <!-- image -->
 
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2&tabs=visual-studio)
-- Open the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) .
+- [Visual Studio Code](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2&tabs=visual-studio)
+- Open the [integrated terminal](https:/code.visualstudio.com/docs/editor/integrated-terminal) .
 - Change directories (cd) to a folder which will contain the project.
 - Run the following commands:
 
@@ -83,21 +80,20 @@ CONTINUE…
 
 ### Run the web app
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2&tabs=visual-studio)
-
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2&tabs=visual-studio)
 - Press Ctrl+F5 to run without the debugger.
 
-Visual Studio starts [IIS Express](https://docs.microsoft.com/iis/extensions/introduction-to-iis-express/iis-express-overview) and runs the app. The address bar shows localhost:port# and not something like example.com. That's because localhost is the standard hostname for the local computer. Localhost only serves web requests from the local computer. When Visual Studio creates a web project, a random port is used for the web server. In the preceding image, the port number is 5001. When you run the app, you'll see a different port number.
+Visual Studio starts [IIS Express](https:/docs.microsoft.com/iis/extensions/introduction-to-iis-express/iis-express-overview) and runs the app. The address bar shows localhost:port# and not something like example.com. That's because localhost is the standard hostname for the local computer. Localhost only serves web requests from the local computer. When Visual Studio creates a web project, a random port is used for the web server. In the preceding image, the port number is 5001. When you run the app, you'll see a different port number.
 
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-2.2&tabs=visual-studio)
 - Press **Ctrl-F5** to run without the debugger.
-- Visual Studio Code starts starts [Kestrel](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel?view=aspnetcore-2.2) , launches a browser, and navigates to http://localhost:5001. The address bar shows localhost:port# and not something like example.com. That's because localhost is the standard hostname for local computer. Localhost only serves web requests from the local computer.
+- Visual Studio Code starts starts [Kestrel](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel?view=aspnetcore-2.2) , launches a browser, and navigates to http://localhost:5001. The address bar shows localhost:port# and not something like example.com. That's because localhost is the standard hostname for local computer. Localhost only serves web requests from the local computer.
 
 CONTINUE…
 
 - On the app's home page, select Accept to consent to tracking.
 
-This app doesn't track personal information, but the project template includes the consent feature in case you need it to comply with the European Union's [General Data Protection Regulation (GDPR)](https://docs.microsoft.com/en-us/aspnet/core/security/gdpr?view=aspnetcore-2.2) .
+This app doesn't track personal information, but the project template includes the consent feature in case you need it to comply with the European Union's [General Data Protection Regulation (GDPR)](https:/docs.microsoft.com/en-us/aspnet/core/security/gdpr?view=aspnetcore-2.2) .
 
 <!-- image -->
 
@@ -116,23 +112,23 @@ Contains Razor pages and supporting files. Each Razor page is a pair of files:
 - A .cshtml file that contains HTML markup with C# code using Razor syntax.
 - A .cshtml.cs file that contains C# code that handles page events.
 
-Supporting files have names that begin with an underscore. For example, the \_Layout.cshtml file configures UI elements common to all pages. This file sets up the navigation menu at the top of the page and the copyright notice at the bottom of the page. For more information, see [Layout in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/layout?view=aspnetcore-2.2) .
+Supporting files have names that begin with an underscore. For example, the \_Layout.cshtml file configures UI elements common to all pages. This file sets up the navigation menu at the top of the page and the copyright notice at the bottom of the page. For more information, see [Layout in ASP.NET Core](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/layout?view=aspnetcore-2.2) .
 
 #### wwwroot folder
 
-Contains static files, such as HTML files, JavaScript files, and CSS files. For more information, see [Static files in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/static-files?view=aspnetcore-2.2) .
+Contains static files, such as HTML files, JavaScript files, and CSS files. For more information, see [Static files in ASP.NET Core](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/static-files?view=aspnetcore-2.2) .
 
 #### appSettings.json
 
-Contains configuration data, such as connection strings. For more information, see [Configuration in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) .
+Contains configuration data, such as connection strings. For more information, see [Configuration in ASP.NET Core](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) .
 
 #### Program.cs
 
-Contains the entry point for the program. For more information, see [ASP.NET Core Web Host](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/host/web-host?view=aspnetcore-2.2) .
+Contains the entry point for the program. For more information, see [ASP.NET Core Web Host](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/host/web-host?view=aspnetcore-2.2) .
 
 #### Startup.cs
 
-Contains code that configures app behavior, such as whether it requires consent for cookies. For more information, see [App startup in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/startup?view=aspnetcore-2.2) .
+Contains code that configures app behavior, such as whether it requires consent for cookies. For more information, see [App startup in ASP.NET Core](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/startup?view=aspnetcore-2.2) .
 
 ### Next steps
 
@@ -144,21 +140,21 @@ In this tutorial, you:
 
 Advance to the next tutorial in the series:
 
-[Add a model](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2)
+[Add a model](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2)
 
 ## Add a model to a Razor Pages app in ASP.NET Core
 
-[View or download sample code](https://github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages/razor-pages-start/2.2-stage-samples) ( [how to download](https://docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) ).
+[View or download sample code](https:/github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages/razor-pages-start/2.2-stage-samples) ( [how to download](https:/docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) ).
 
-In this section, classes are added for managing movies in a database. These classes are used with [Entity Framework Core](https://docs.microsoft.com/ef/core) (EF Core) to work with a database. EF Core is an object-relational mapping (ORM) framework that simplifies data access code.
+In this section, classes are added for managing movies in a database. These classes are used with [Entity Framework Core](https:/docs.microsoft.com/ef/core) (EF Core) to work with a database. EF Core is an object-relational mapping (ORM) framework that simplifies data access code.
 
 The model classes are known as POCO classes (from "plain-old CLR objects") because they don't have any dependency on EF Core. They define the properties of the data that are stored in the database.
 
-[View or download](https://github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages-start/sample/) sample.
+[View or download](https:/github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages-start/sample) sample.
 
 ### Add a data model
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio)
 
 Right-click the RazorPagesMovie project &gt; Add &gt; New Folder. Name the folder Models.
 
@@ -199,14 +195,13 @@ public decimal Price { get; set; }
 The Movie class contains:
 
 - The ID field is required by the database for the primary key.
-- [DataType(DataType.Date)]: The [DataType](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.dataannotations.internal.datatypeattributeadapter) attribute specifies the type of the data (Date). With this attribute:
+- [DataType(DataType.Date)]: The [DataType](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.dataannotations.internal.datatypeattributeadapter) attribute specifies the type of the data (Date). With this attribute:
     - The user is not required to enter time information in the date field.
     - Only the date is displayed, not time information.
 
-[DataAnnotations](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations) are covered in a later tutorial.
+[DataAnnotations](https:/docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations) are covered in a later tutorial.
 
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio)
-
+- [Visual Studio Code](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio)
 - Add a folder named Models.
 - Add a class to the Models folder named Movie.cs.
 
@@ -245,11 +240,11 @@ public decimal Price { get; set; }
 The Movie class contains:
 
 - The ID field is required by the database for the primary key.
-- [DataType(DataType.Date)]: The [DataType](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.dataannotations.internal.datatypeattributeadapter) attribute specifies the type of the data (Date). With this attribute:
+- [DataType(DataType.Date)]: The [DataType](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.dataannotations.internal.datatypeattributeadapter) attribute specifies the type of the data (Date). With this attribute:
     - The user is not required to enter time information in the date field.
     - Only the date is displayed, not time information.
 
-[DataAnnotations](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations) are covered in a later tutorial.
+[DataAnnotations](https:/docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations) are covered in a later tutorial.
 
 Add the following RazorPagesMovieContext class to the Models folder:
 
@@ -331,7 +326,7 @@ using RazorPagesMovie.Models;
 
 using Microsoft.EntityFrameworkCore;
 
-Register the database context with the [dependency injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) container in Startup.ConfigureServices.
+Register the database context with the [dependency injection](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) container in Startup.ConfigureServices.
 
 C#Copy
 
@@ -371,7 +366,7 @@ Build the project to verify there are no compilation errors.
 
 In this section, the movie model is scaffolded. That is, the scaffolding tool produces pages for Create, Read, Update, and Delete (CRUD) operations for the movie model.
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio)
 
 Create a Pages/Movies folder:
 
@@ -395,7 +390,7 @@ Complete the Add Razor Pages using Entity Framework (CRUD) dialog:
 
 The appsettings.json file is updated with the connection string used to connect to a local database.
 
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio)
 - Open a command window in the project directory (The directory that contains the *Program.cs* , *Startup.cs* , and *.csproj* files).
 - Install the scaffolding tool:
 
@@ -448,7 +443,7 @@ The created and updated files are explained in the next section.
 
 ### Initial migration
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio)
 
 In this section, the Package Manager Console (PMC) is used to:
 
@@ -467,7 +462,7 @@ Add-Migration Initial
 
 Update-Database
 
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio)
 - Run the following .NET Core CLI commands:
 - consoleCopy
 - dotnet ef migrations add InitialCreate
@@ -479,11 +474,11 @@ The ef migrations add InitialCreate command generates code to create the initi
 
 The ef database update command runs the Up method in the Migrations/&lt;time-stamp&gt;\_InitialCreate.cs file. The Up method creates the database.
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio)
 
 ### Examine the context registered with dependency injection
 
-ASP.NET Core is built with [dependency injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) . Services (such as the EF Core DB context) are registered with dependency injection during application startup. Components that require these services (such as Razor Pages) are provided these services via constructor parameters. The constructor code that gets a DB context instance is shown later in the tutorial.
+ASP.NET Core is built with [dependency injection](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) . Services (such as the EF Core DB context) are registered with dependency injection during application startup. Components that require these services (such as Razor Pages) are provided these services via constructor parameters. The constructor code that gets a DB context instance is shown later in the tutorial.
 
 The scaffolding tool automatically created a DB context and registered it with the dependency injection container.
 
@@ -523,7 +518,7 @@ Configuration.GetConnectionString("RazorPagesMovieContext")));
 
 }
 
-The RazorPagesMovieContext coordinates EF Core functionality (Create, Read, Update, Delete, etc.) for the Movie model. The data context (RazorPagesMovieContext) is derived from [Microsoft.EntityFrameworkCore.DbContext](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext) . The data context specifies which entities are included in the data model.
+The RazorPagesMovieContext coordinates EF Core functionality (Create, Read, Update, Delete, etc.) for the Movie model. The data context (RazorPagesMovieContext) is derived from [Microsoft.EntityFrameworkCore.DbContext](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontext) . The data context specifies which entities are included in the data model.
 
 C#Copy
 
@@ -551,15 +546,15 @@ public DbSet&lt;RazorPagesMovie.Models.Movie&gt; Movie { get; set; }
 
 }
 
-The preceding code creates a [DbSet/&lt;Movie&gt;](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbset-1) property for the entity set. In Entity Framework terminology, an entity set typically corresponds to a database table. An entity corresponds to a row in the table.
+The preceding code creates a [DbSet/&lt;Movie&gt;](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbset-1) property for the entity set. In Entity Framework terminology, an entity set typically corresponds to a database table. An entity corresponds to a row in the table.
 
-The name of the connection string is passed in to the context by calling a method on a [DbContextOptions](https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontextoptions) object. For local development, the [ASP.NET Core configuration system](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) reads the connection string from the appsettings.json file.
+The name of the connection string is passed in to the context by calling a method on a [DbContextOptions](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.dbcontextoptions) object. For local development, the [ASP.NET Core configuration system](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) reads the connection string from the appsettings.json file.
 
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio) (N/A)
+- [Visual Studio Code](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio) (N/A)
 
 CONTINUE…
 
-The Add-Migration command generates code to create the initial database schema. The schema is based on the model specified in the RazorPagesMovieContext (In the Data/RazorPagesMovieContext.cs file). The Initialargument is used to name the migrations. Any name can be used, but by convention a name that describes the migration is used. See [Introduction to migrations](https://docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/migrations?view=aspnetcore-2.2) for more information.
+The Add-Migration command generates code to create the initial database schema. The schema is based on the model specified in the RazorPagesMovieContext (In the Data/RazorPagesMovieContext.cs file). The Initialargument is used to name the migrations. Any name can be used, but by convention a name that describes the migration is used. See [Introduction to migrations](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-mvc/migrations?view=aspnetcore-2.2) for more information.
 
 The Update-Database command runs the Up method in the Migrations/{time-stamp}\_InitialCreate.cs file, which creates the database.
 
@@ -575,14 +570,14 @@ SqlException: Cannot open database "RazorPagesMovieContext-GUID" requested by th
 
 Login failed for user 'User-name'.
 
-You missed the [migrations step](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio) .
+You missed the [migrations step](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/model?view=aspnetcore-2.2&tabs=visual-studio) .
 
 - Test the Create link.
 <!-- image -->
 
 **Note**
 
-You may not be able to enter decimal commas in the Price field. To support [**jQuery validation**](https://jqueryvalidation.org/) for non-English locales that use a comma (",") for a decimal point and for non US-English date formats, the app must be globalized. For globalization instructions, see [**this GitHub issue**](https://github.com/aspnet/Docs/issues/4076) .
+You may not be able to enter decimal commas in the Price field. To support [**jQuery validation**](https:/jqueryvalidation.org) for non-English locales that use a comma (",") for a decimal point and for non US-English date formats, the app must be globalized. For globalization instructions, see [**this GitHub issue**](https:/github.com/aspnet/Docs/issues/4076) .
 
 - Test the Edit, Details, and Delete links.
 
@@ -592,7 +587,7 @@ The next tutorial explains the files created by scaffolding.
 
 This tutorial examines the Razor Pages created by scaffolding in the previous tutorial.
 
-[View or download](https://github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages/razor-pages-start/sample/RazorPagesMovie22) sample.
+[View or download](https:/github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages/razor-pages-start/sample/RazorPagesMovie22) sample.
 
 ### The Create, Delete, Details, and Edit pages
 
@@ -648,7 +643,7 @@ Movie = await \_context.Movie.ToListAsync();
 
 }
 
-Razor Pages are derived from PageModel. By convention, the PageModel-derived class is called &lt;PageName&gt;Model. The constructor uses [dependency injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) to add the RazorPagesMovieContext to the page. All the scaffolded pages follow this pattern. See [Asynchronous code](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) for more information on asynchronous programing with Entity Framework.
+Razor Pages are derived from PageModel. By convention, the PageModel-derived class is called &lt;PageName&gt;Model. The constructor uses [dependency injection](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) to add the RazorPagesMovieContext to the page. All the scaffolded pages follow this pattern. See [Asynchronous code](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) for more information on asynchronous programing with Entity Framework.
 
 When a request is made for the page, the OnGetAsync method returns a list of movies to the Razor Page. OnGetAsync or OnGet is called on a Razor Page to initialize the state for the page. In this case, OnGetAsyncgets a list of movies and displays them.
 
@@ -782,9 +777,9 @@ ViewData["Title"] = "Index";
 
 &lt;/table&gt;
 
-Razor can transition from HTML into C# or into Razor-specific markup. When an @ symbol is followed by a [Razor reserved keyword](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-2.2) , it transitions into Razor-specific markup, otherwise it transitions into C#.
+Razor can transition from HTML into C# or into Razor-specific markup. When an @ symbol is followed by a [Razor reserved keyword](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-2.2) , it transitions into Razor-specific markup, otherwise it transitions into C#.
 
-The @page Razor directive makes the file into an MVC action, which means that it can handle requests. @page must be the first Razor directive on a page. @page is an example of transitioning into Razor-specific markup. See [Razor syntax](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-2.2) for more information.
+The @page Razor directive makes the file into an MVC action, which means that it can handle requests. @page must be the first Razor directive on a page. @page is an example of transitioning into Razor-specific markup. See [Razor syntax](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/razor?view=aspnetcore-2.2) for more information.
 
 Examine the lambda expression used in the following HTML Helper:
 
@@ -802,7 +797,7 @@ CSHTMLCopy
 
 @model RazorPagesMovie.Pages.Movies.IndexModel
 
-The @model directive specifies the type of the model passed to the Razor Page. In the preceding example, the @model line makes the PageModel-derived class available to the Razor Page. The model is used in the @Html.DisplayNameFor and @Html.DisplayFor [HTML Helpers](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/views/creating-custom-html-helpers-cs) on the page.
+The @model directive specifies the type of the model passed to the Razor Page. In the preceding example, the @model line makes the PageModel-derived class available to the Razor Page. The model is used in the @Html.DisplayNameFor and @Html.DisplayFor [HTML Helpers](https:/docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/views/creating-custom-html-helpers-cs) on the page.
 
 #### ViewData and layout
 
@@ -874,15 +869,15 @@ CSHTMLCopy
 
 &lt;a class="navbar-brand" asp-page="/Movies/Index"&gt;RpMovie&lt;/a&gt;
 
-The preceding anchor element is a [Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2) . In this case, it's the [Anchor Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/anchor-tag-helper?view=aspnetcore-2.2) . The asp-page="/Movies/Index" Tag Helper attribute and value creates a link to the /Movies/Index Razor Page. The asp-area attribute value is empty, so the area isn't used in the link. See [Areas](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/areas?view=aspnetcore-2.2) for more information.
+The preceding anchor element is a [Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2) . In this case, it's the [Anchor Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/anchor-tag-helper?view=aspnetcore-2.2) . The asp-page="/Movies/Index" Tag Helper attribute and value creates a link to the /Movies/Index Razor Page. The asp-area attribute value is empty, so the area isn't used in the link. See [Areas](https:/docs.microsoft.com/en-us/aspnet/core/mvc/controllers/areas?view=aspnetcore-2.2) for more information.
 
-Save your changes, and test the app by clicking on the RpMovie link. See the [\_Layout.cshtml](https://github.com/aspnet/Docs/blob/master/aspnetcore/tutorials/razor-pages/razor-pages-start/sample/RazorPagesMovie22/Pages/Shared/_Layout.cshtml) file in GitHub if you have any problems.
+Save your changes, and test the app by clicking on the RpMovie link. See the [\_Layout.cshtml](https:/github.com/aspnet/Docs/blob/master/aspnetcore/tutorials/razor-pages/razor-pages-start/sample/RazorPagesMovie22/Pages/Shared/_Layout.cshtml) file in GitHub if you have any problems.
 
 Test the other links (Home, RpMovie, Create, Edit, and Delete). Each page sets the title, which you can see in the browser tab. When you bookmark a page, the title is used for the bookmark. Pages/Index.cshtml and Pages/Movies/Index.cshtml currently have the same title, but you can modify them to have different values.
 
 **Note**
 
-You may not be able to enter decimal commas in the Price field. To support [**jQuery validation**](https://jqueryvalidation.org/) for non-English locales that use a comma (",") for a decimal point, and non US-English date formats, you must take steps to globalize your app. This [**GitHub issue 4076**](https://github.com/aspnet/Docs/issues/4076) for instructions on adding decimal comma.
+You may not be able to enter decimal commas in the Price field. To support [**jQuery validation**](https:/jqueryvalidation.org) for non-English locales that use a comma (",") for a decimal point, and non US-English date formats, you must take steps to globalize your app. This [**GitHub issue 4076**](https:/github.com/aspnet/Docs/issues/4076) for instructions on adding decimal comma.
 
 The Layout property is set in the Pages/\_ViewStart.cshtml file:
 
@@ -894,7 +889,7 @@ Layout = "\_Layout";
 
 }
 
-The preceding markup sets the layout file to Pages/Shared/\_Layout.cshtml for all Razor files under the Pagesfolder. See [Layout](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/index?view=aspnetcore-2.2) for more information.
+The preceding markup sets the layout file to Pages/Shared/\_Layout.cshtml for all Razor files under the Pagesfolder. See [Layout](https:/docs.microsoft.com/en-us/aspnet/core/razor-pages/index?view=aspnetcore-2.2) for more information.
 
 #### The Create page model
 
@@ -970,7 +965,7 @@ return RedirectToPage("./Index");
 
 The OnGet method initializes any state needed for the page. The Create page doesn't have any state to initialize, so Page is returned. Later in the tutorial you see OnGet method initialize state. The Page method creates a PageResult object that renders the Create.cshtml page.
 
-The Movie property uses the [BindProperty] attribute to opt-in to [model binding](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-2.2) . When the Create form posts the form values, the ASP.NET Core runtime binds the posted values to the Movie model.
+The Movie property uses the [BindProperty] attribute to opt-in to [model binding](https:/docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-2.2) . When the Create form posts the form values, the ASP.NET Core runtime binds the posted values to the Movie model.
 
 The OnPostAsync method is run when the page posts form data:
 
@@ -1094,18 +1089,18 @@ ViewData["Title"] = "Create";
 
 }
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/page?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/page?view=aspnetcore-2.2&tabs=visual-studio)
 
 Visual Studio displays the &lt;form method="post"&gt; tag in a distinctive bold font used for Tag Helpers:
 
 <!-- image -->
 
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/page?view=aspnetcore-2.2&tabs=visual-studio)
-- For more information on Tag Helpers such as &lt;form method="post"&gt;, see [Tag Helpers in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2) .
+- [Visual Studio Code](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/page?view=aspnetcore-2.2&tabs=visual-studio)
+- For more information on Tag Helpers such as &lt;form method="post"&gt;, see [Tag Helpers in ASP.NET Core](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2) .
 
 CONTINUE…
 
-The &lt;form method="post"&gt; element is a [Form Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) . The Form Tag Helper automatically includes an [antiforgery token](https://docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2) .
+The &lt;form method="post"&gt; element is a [Form Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) . The Form Tag Helper automatically includes an [antiforgery token](https:/docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2) .
 
 The scaffolding engine creates Razor markup for each field in the model (except the ID) similar to the following:
 
@@ -1123,19 +1118,19 @@ CSHTMLCopy
 
 &lt;/div&gt;
 
-The [Validation Tag Helpers](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) (&lt;div asp-validation-summary and &lt;span asp-validation-for) display validation errors. Validation is covered in more detail later in this series.
+The [Validation Tag Helpers](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) (&lt;div asp-validation-summary and &lt;span asp-validation-for) display validation errors. Validation is covered in more detail later in this series.
 
-The [Label Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) (&lt;label asp-for="Movie.Title" class="control-label"&gt;&lt;/label&gt;) generates the label caption and for attribute for the Title property.
+The [Label Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) (&lt;label asp-for="Movie.Title" class="control-label"&gt;&lt;/label&gt;) generates the label caption and for attribute for the Title property.
 
-The [Input Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) (&lt;input asp-for="Movie.Title" class="form-control" /&gt;) uses the [DataAnnotations](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-6) attributes and produces HTML attributes needed for jQuery Validation on the client-side.
+The [Input Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) (&lt;input asp-for="Movie.Title" class="form-control" /&gt;) uses the [DataAnnotations](https:/docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-6) attributes and produces HTML attributes needed for jQuery Validation on the client-side.
 
 ## Work with a database and ASP.NET Core
 
-[View or download sample code](https://github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages/razor-pages-start/2.2-stage-samples) ( [how to download](https://docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) ).
+[View or download sample code](https:/github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages/razor-pages-start/2.2-stage-samples) ( [how to download](https:/docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) ).
 
-The RazorPagesMovieContext object handles the task of connecting to the database and mapping Movieobjects to database records. The database context is registered with the [Dependency Injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) container in the ConfigureServices method in Startup.cs:
+The RazorPagesMovieContext object handles the task of connecting to the database and mapping Movieobjects to database records. The database context is registered with the [Dependency Injection](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2) container in the ConfigureServices method in Startup.cs:
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2&tabs=visual-studio)
 
 C#Copy
 
@@ -1171,7 +1166,7 @@ Configuration.GetConnectionString("RazorPagesMovieContext")));
 
 }
 
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2&tabs=visual-studio)
 
 public void ConfigureServices(IServiceCollection services)
 
@@ -1203,12 +1198,12 @@ CONTINUE…
 
 For more information on the methods used in ConfigureServices, see:
 
-- [EU General Data Protection Regulation (GDPR) support in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/security/gdpr?view=aspnetcore-2.2) for CookiePolicyOptions.
-- [SetCompatibilityVersion](https://docs.microsoft.com/en-us/aspnet/core/mvc/compatibility-version?view=aspnetcore-2.2)
+- [EU General Data Protection Regulation (GDPR) support in ASP.NET Core](https:/docs.microsoft.com/en-us/aspnet/core/security/gdpr?view=aspnetcore-2.2) for CookiePolicyOptions.
+- [SetCompatibilityVersion](https:/docs.microsoft.com/en-us/aspnet/core/mvc/compatibility-version?view=aspnetcore-2.2)
 
-The ASP.NET Core [Configuration](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) system reads the ConnectionString. For local development, it gets the connection string from the appsettings.json file.
+The ASP.NET Core [Configuration](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) system reads the ConnectionString. For local development, it gets the connection string from the appsettings.json file.
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2&tabs=visual-studio)
 
 The name value for the database (Database={Database name}) will be different for your generated code. The name value is arbitrary.
 
@@ -1236,7 +1231,7 @@ JSONCopy
 
 }
 
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2&tabs=visual-studio)
 
 {
 
@@ -1262,9 +1257,9 @@ JSONCopy
 
 CONTINUE…
 
-When the app is deployed to a test or production server, an environment variable can be used to set the connection string to a real database server. See [Configuration](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) for more information.
+When the app is deployed to a test or production server, an environment variable can be used to set the connection string to a real database server. See [Configuration](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2) for more information.
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2&tabs=visual-studio)
 
 ### SQL Server Express LocalDB
 
@@ -1281,15 +1276,15 @@ Note the key icon next to ID. By default, EF creates a property named ID for 
 - Right click on the Movie table and select View Data:
 <!-- image -->
 
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2&tabs=visual-studio)
 
 ### SQLite
 
-The [SQLite](https://www.sqlite.org/) website states:
+The [SQLite](https:/www.sqlite.org) website states:
 
 SQLite is a self-contained, high-reliability, embedded, full-featured, public-domain, SQL database engine. SQLite is the most used database engine in the world.
 
-There are many third party tools you can download to manage and view a SQLite database. The image below is from [DB Browser for SQLite](http://sqlitebrowser.org/) .
+There are many third party tools you can download to manage and view a SQLite database. The image below is from [DB Browser for SQLite](http:/sqlitebrowser.org) .
 
 CONTINUE…
 
@@ -1511,17 +1506,15 @@ SqlException: Cannot open database "RazorPagesMovieContext-21" requested by the 
 
 #### Test the app
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2&tabs=visual-studio)
-
-- Delete all the records in the DB. You can do this with the delete links in the browser or from [SSOX](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/new-field?view=aspnetcore-2.2)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2&tabs=visual-studio)
+- Delete all the records in the DB. You can do this with the delete links in the browser or from [SSOX](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/new-field?view=aspnetcore-2.2)
 - Force the app to initialize (call the methods in the Startup class) so the seed method runs. To force initialization, IIS Express must be stopped and restarted. You can do this with any of the following approaches:
     - Right click the IIS Express system tray icon in the notification area and tap Exit or Stop Site:
     <!-- image -->
     <!-- image -->
-        - If you were running VS in non-debug mode, press F5 to run in debug mode.
-        - If you were running VS in debug mode, stop the debugger and press F5.
+    - If you were running VS in debug mode, stop the debugger and press F5.
 
-- [Visual Studio Code](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2&tabs=visual-studio)
 
 Delete all the records in the DB (So the seed method will run). Stop and start the app to seed the database.
 
@@ -1581,15 +1574,15 @@ public decimal Price { get; set; }
 
 }
 
-The [Column(TypeName = "decimal(18, 2)")] data annotation enables Entity Framework Core to correctly map Price to currency in the database. For more information, see [Data Types](https://docs.microsoft.com/ef/core/modeling/relational/data-types) .
+The [Column(TypeName = "decimal(18, 2)")] data annotation enables Entity Framework Core to correctly map Price to currency in the database. For more information, see [Data Types](https:/docs.microsoft.com/ef/core/modeling/relational/data-types) .
 
-[DataAnnotations](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-6) is covered in the next tutorial. The [Display](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.metadata.displaymetadata) attribute specifies what to display for the name of a field (in this case "Release Date" instead of "ReleaseDate"). The [DataType](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.dataannotations.internal.datatypeattributeadapter) attribute specifies the type of the data (Date), so the time information stored in the field isn't displayed.
+[DataAnnotations](https:/docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-6) is covered in the next tutorial. The [Display](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.metadata.displaymetadata) attribute specifies what to display for the name of a field (in this case "Release Date" instead of "ReleaseDate"). The [DataType](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.dataannotations.internal.datatypeattributeadapter) attribute specifies the type of the data (Date), so the time information stored in the field isn't displayed.
 
 Browse to Pages/Movies and hover over an Edit link to see the target URL.
 
 <!-- image -->
 
-The Edit, Details, and Delete links are generated by the [Anchor Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/anchor-tag-helper?view=aspnetcore-2.2) in the Pages/Movies/Index.cshtmlfile.
+The Edit, Details, and Delete links are generated by the [Anchor Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/anchor-tag-helper?view=aspnetcore-2.2) in the Pages/Movies/Index.cshtmlfile.
 
 CSHTMLCopy
 
@@ -1639,7 +1632,7 @@ CSHTMLCopy
 
 &lt;/table&gt;
 
-[Tag Helpers](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2) enable server-side code to participate in creating and rendering HTML elements in Razor files. In the preceding code, the AnchorTagHelper dynamically generates the HTML href attribute value from the Razor Page (the route is relative), the asp-page, and the route id (asp-route-id). See [URL generation for Pages](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/index?view=aspnetcore-2.2) for more information.
+[Tag Helpers](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2) enable server-side code to participate in creating and rendering HTML elements in Razor files. In the preceding code, the AnchorTagHelper dynamically generates the HTML href attribute value from the Razor Page (the route is relative), the asp-page, and the route id (asp-route-id). See [URL generation for Pages](https:/docs.microsoft.com/en-us/aspnet/core/razor-pages/index?view=aspnetcore-2.2) for more information.
 
 Use View Source from your favorite browser to examine the generated markup. A portion of the generated HTML is shown below:
 
@@ -1798,7 +1791,7 @@ To test the catch block:
 - In another browser window, select the Delete link for the same movie, and then delete the movie.
 - In the previous browser window, post changes to the movie.
 
-Production code may want to detect concurrency conflicts. See [Handle concurrency conflicts](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/concurrency?view=aspnetcore-2.2) for more information.
+Production code may want to detect concurrency conflicts. See [Handle concurrency conflicts](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/concurrency?view=aspnetcore-2.2) for more information.
 
 #### Posting and binding review
 
@@ -1908,7 +1901,7 @@ When an HTTP GET request is made to the Movies/Edit page (for example, http://l
 
 When the Movies/Edit page is posted:
 
-- The form values on the page are bound to the Movie property. The [BindProperty] attribute enables [Model binding](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-2.2) .
+- The form values on the page are bound to the Movie property. The [BindProperty] attribute enables [Model binding](https:/docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-2.2) .
 
 C#Copy
 
@@ -1925,7 +1918,7 @@ Search is added in the next tutorial.
 
 ## Add search to ASP.NET Core Razor Pages
 
-[View or download sample code](https://github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages/razor-pages-start/2.2-stage-samples) ( [how to download](https://docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) ).
+[View or download sample code](https:/github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages/razor-pages-start/2.2-stage-samples) ( [how to download](https:/docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) ).
 
 In the following sections, searching movies by genre or name is added.
 
@@ -1961,7 +1954,7 @@ public SelectList Genres { get; set; }
 
 public string MovieGenre { get; set; }
 
-- SearchString: contains the text users enter in the search text box. SearchString is decorated with the [[BindProperty]](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.bindpropertyattribute) attribute. [BindProperty] binds form values and query strings with the same name as the property. (SupportsGet = true) is required for binding on GET requests.
+- SearchString: contains the text users enter in the search text box. SearchString is decorated with the [[BindProperty]](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.bindpropertyattribute) attribute. [BindProperty] binds form values and query strings with the same name as the property. (SupportsGet = true) is required for binding on GET requests.
 - Genres: contains the list of genres. Genres allows the user to select a genre from the list. SelectList requires using Microsoft.AspNetCore.Mvc.Rendering;
 - MovieGenre: contains the specific genre the user selects (for example, "Western").
 - Genres and MovieGenre are used later in this tutorial.
@@ -1970,7 +1963,7 @@ public string MovieGenre { get; set; }
 
 For security reasons, you must opt in to binding GET request data to page model properties. Verify user input before mapping it to properties. Opting in to GET binding is useful when addressing scenarios which rely on query string or route values.
 
-To bind a property on GET requests, set the [**[BindProperty]**](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.bindpropertyattribute) attribute's SupportsGet property to true: [BindProperty(SupportsGet = true)]
+To bind a property on GET requests, set the [**[BindProperty]**](https:/docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.bindpropertyattribute) attribute's SupportsGet property to true: [BindProperty(SupportsGet = true)]
 
 Update the Index page's OnGetAsync method with the following code:
 
@@ -1996,7 +1989,7 @@ Movie = await movies.ToListAsync();
 
 }
 
-The first line of the OnGetAsync method creates a [LINQ](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/) query to select the movies:
+The first line of the OnGetAsync method creates a [LINQ](https:/docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq) query to select the movies:
 
 C#Copy
 
@@ -2020,9 +2013,9 @@ movies = movies.Where(s =&gt; s.Title.Contains(SearchString));
 
 }
 
-The s =&gt; s.Title.Contains() code is a [Lambda Expression](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions) . Lambdas are used in method-based [LINQ](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/) queries as arguments to standard query operator methods such as the [Where](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq) method or Contains (used in the preceding code). LINQ queries are not executed when they're defined or when they're modified by calling a method (such as Where, Contains or OrderBy). Rather, query execution is deferred. That means the evaluation of an expression is delayed until its realized value is iterated over or the ToListAsync method is called. See [Query Execution](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/language-reference/query-execution) for more information.
+The s =&gt; s.Title.Contains() code is a [Lambda Expression](https:/docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions) . Lambdas are used in method-based [LINQ](https:/docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq) queries as arguments to standard query operator methods such as the [Where](https:/docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq) method or Contains (used in the preceding code). LINQ queries are not executed when they're defined or when they're modified by calling a method (such as Where, Contains or OrderBy). Rather, query execution is deferred. That means the evaluation of an expression is delayed until its realized value is iterated over or the ToListAsync method is called. See [Query Execution](https:/docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/language-reference/query-execution) for more information.
 
-Note: The [Contains](https://docs.microsoft.com/en-us/dotnet/api/system.data.objects.dataclasses.entitycollection-1.contains) method is run on the database, not in the C# code. The case sensitivity on the query depends on the database and the collation. On SQL Server, Contains maps to [SQL LIKE](https://docs.microsoft.com/sql/t-sql/language-elements/like-transact-sql) , which is case insensitive. In SQLite, with the default collation, it's case sensitive.
+Note: The [Contains](https:/docs.microsoft.com/en-us/dotnet/api/system.data.objects.dataclasses.entitycollection-1.contains) method is run on the database, not in the C# code. The case sensitivity on the query depends on the database and the collation. On SQL Server, Contains maps to [SQL LIKE](https:/docs.microsoft.com/sql/t-sql/language-elements/like-transact-sql) , which is case insensitive. In SQLite, with the default collation, it's case sensitive.
 
 Navigate to the Movies page and append a query string such as ?searchString=Ghost to the URL (for example, https://localhost:5001/Movies?searchString=Ghost). The filtered movies are displayed.
 
@@ -2038,7 +2031,7 @@ The preceding route constraint allows searching the title as route data (a URL s
 
 <!-- image -->
 
-The ASP.NET Core runtime uses [model binding](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-2.2) to set the value of the SearchString property from the query string (?searchString=Ghost) or route data (https://localhost:5001/Movies/Ghost). Model binding is not case sensitive.
+The ASP.NET Core runtime uses [model binding](https:/docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-2.2) to set the value of the SearchString property from the query string (?searchString=Ghost) or route data (https://localhost:5001/Movies/Ghost). Model binding is not case sensitive.
 
 However, you can't expect users to modify the URL to search for a movie. In this step, UI is added to filter movies. If you added the route constraint "{searchString?}", remove it.
 
@@ -2080,10 +2073,10 @@ Title: &lt;input type="text" asp-for="SearchString" /&gt;
 
 @*Markup removed for brevity.*@
 
-The HTML &lt;form&gt; tag uses the following [Tag Helpers](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2) :
+The HTML &lt;form&gt; tag uses the following [Tag Helpers](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2) :
 
-- [Form Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) . When the form is submitted, the filter string is sent to the Pages/Movies/Index page via query string.
-- [Input Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2)
+- [Form Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) . When the form is submitted, the filter string is sent to the Pages/Movies/Index page via query string.
+- [Input Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2)
 
 Save the changes and test the filter.
 
@@ -2214,13 +2207,13 @@ Test the app by searching by genre, by movie title, and by both.
 
 <!-- image -->
 
-- [all](https://github.com/aspnet/Docs/blob/master/aspnetcore/tutorials/razor-pages/new-field.md)
+- [all](https:/github.com/aspnet/Docs/blob/master/aspnetcore/tutorials/razor-pages/new-field.md)
 
-By [Rick Anderson](https://twitter.com/RickAndMSFT)
+By [Rick Anderson](https:/twitter.com/RickAndMSFT)
 
-[View or download sample code](https://github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages/razor-pages-start/2.2-stage-samples) ( [how to download](https://docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) ).
+[View or download sample code](https:/github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages/razor-pages-start/2.2-stage-samples) ( [how to download](https:/docs.microsoft.com/en-us/aspnet/core/index?view=aspnetcore-2.2) ).
 
-In this section [Entity Framework](https://docs.microsoft.com/ef/core/get-started/aspnetcore/new-db) Code First Migrations is used to:
+In this section [Entity Framework](https:/docs.microsoft.com/ef/core/get-started/aspnetcore/new-db) Code First Migrations is used to:
 
 - Add a new field to the model.
 - Migrate the new field schema change to the database.
@@ -2403,7 +2396,7 @@ Title: &lt;input type="text" asp-for="SearchString" /&gt;
 Update the following pages:
 
 - Add the Rating field to the Delete and Details pages.
-- Update [Create.cshtml](https://github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages/razor-pages-start/sample/RazorPagesMovie22/Pages/Movies/Create.cshtml) with a Rating field.
+- Update [Create.cshtml](https:/github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages/razor-pages-start/sample/RazorPagesMovie22/Pages/Movies/Create.cshtml) with a Rating field.
 - Add the Rating field to the Edit Page.
 
 The app won't work until the DB is updated to include the new field. If run now, the app throws a SqlException:
@@ -2442,11 +2435,11 @@ Rating = "R"
 
 },
 
-See the [completed SeedData.cs file](https://github.com/aspnet/Docs/blob/master/aspnetcore/tutorials/razor-pages/razor-pages-start/sample/RazorPagesMovie22/Models/SeedDataRating.cs) .
+See the [completed SeedData.cs file](https:/github.com/aspnet/Docs/blob/master/aspnetcore/tutorials/razor-pages/razor-pages-start/sample/RazorPagesMovie22/Models/SeedDataRating.cs) .
 
 Build the solution.
 
-- [Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/new-field?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/new-field?view=aspnetcore-2.2&tabs=visual-studio)
 
 #### Add a migration for the rating field
 
@@ -2467,7 +2460,7 @@ The name "Rating" is arbitrary and is used to name the migration file. It's help
 
 The Update-Database command tells the framework to apply the schema changes to the database.
 
-If you delete all the records in the DB, the initializer will seed the DB and include the Rating field. You can do this with the delete links in the browser or from [Sql Server Object Explorer](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2) (SSOX).
+If you delete all the records in the DB, the initializer will seed the DB and include the Rating field. You can do this with the delete links in the browser or from [Sql Server Object Explorer](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/sql?view=aspnetcore-2.2) (SSOX).
 
 Another option is to delete the database and use migrations to re-create the database. To delete the database in SSOX:
 
@@ -2475,13 +2468,13 @@ Another option is to delete the database and use migrations to re-create the dat
 - Right click on the database, and select Delete.
 - Check Close existing connections.
 - Select OK.
-- In the [PMC](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/new-field?view=aspnetcore-2.2) , update the database:
+- In the [PMC](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/new-field?view=aspnetcore-2.2) , update the database:
 
 PowerShellCopy
 
 Update-Database
 
-- [Visual Studio Code / Visual Studio for Mac](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/new-field?view=aspnetcore-2.2&tabs=visual-studio)
+- [Visual Studio Code / Visual Studio for Mac](https:/docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/new-field?view=aspnetcore-2.2&tabs=visual-studio)
 
 Run the following .NET Core CLI commands:
 
@@ -2512,9 +2505,9 @@ dotnet ef database update
 
 Many schema change operations are not supported by the EF Core SQLite provider. For example, adding a column is supported, but removing a column is not supported. If you add a migration to remove a column, the ef migrations add command succeeds but the ef database update command fails. You can work around some of the limitations by manually writing migrations code to perform a table rebuild. A table rebuild involves renaming the existing table, creating a new table, copying data to the new table, and dropping the old table. For more information, see the following resources:
 
-- [**SQLite EF Core Database Provider Limitations**](https://docs.microsoft.com/ef/core/providers/sqlite/limitations)
-- [**Customize migration code**](https://docs.microsoft.com/ef/core/managing-schemas/migrations/)
-- [**Data seeding**](https://docs.microsoft.com/ef/core/modeling/data-seeding)
+- [**SQLite EF Core Database Provider Limitations**](https:/docs.microsoft.com/ef/core/providers/sqlite/limitations)
+- [**Customize migration code**](https:/docs.microsoft.com/ef/core/managing-schemas/migrations)
+- [**Data seeding**](https:/docs.microsoft.com/ef/core/modeling/data-seeding)
 
 CONTINUE…
 
@@ -2526,7 +2519,7 @@ In this section, validation logic is added to the Movie model. The validation 
 
 ### Validation
 
-A key tenet of software development is called [DRY](https://wikipedia.org/wiki/Don%27t_repeat_yourself) ("Don't Repeat Yourself"). Razor Pages encourages development where functionality is specified once, and it's reflected throughout the app. DRY can help:
+A key tenet of software development is called [DRY](https:/wikipedia.org/wiki/Don%27t_repeat_yourself) ("Don't Repeat Yourself"). Razor Pages encourages development where functionality is specified once, and it's reflected throughout the app. DRY can help:
 
 - Reduce the amount of code in an app.
 - Make the code less error prone, and easier to test and maintain.
@@ -2535,7 +2528,7 @@ The validation support provided by Razor Pages and Entity Framework is a good ex
 
 #### Adding validation rules to the movie model
 
-Open the Models/Movie.cs file. [DataAnnotations](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-6) provides a built-in set of validation attributes that are applied declaratively to a class or property. DataAnnotations also contain formatting attributes like DataType that help with formatting and don't provide validation.
+Open the Models/Movie.cs file. [DataAnnotations](https:/docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-6) provides a built-in set of validation attributes that are applied declaratively to a class or property. DataAnnotations also contain formatting attributes like DataType that help with formatting and don't provide validation.
 
 Update the Movie class to take advantage of the Required, StringLength, RegularExpression, and Rangevalidation attributes.
 
@@ -2587,7 +2580,7 @@ public string Rating { get; set; }
 
 Validation attributes specify behavior that's enforced on model properties:
 
-- The Required and MinimumLength attributes indicate that a property must have a value. However, nothing prevents a user from entering whitespace to satisfy the validation constraint for a nullable type. Non-nullable [value types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/value-types) (such as decimal, int, float, and DateTime) are inherently required and don't need the Required attribute.
+- The Required and MinimumLength attributes indicate that a property must have a value. However, nothing prevents a user from entering whitespace to satisfy the validation constraint for a nullable type. Non-nullable [value types](https:/docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/value-types) (such as decimal, int, float, and DateTime) are inherently required and don't need the Required attribute.
 - The RegularExpression attribute limits the characters that the user can enter. In the preceding code, Genre must start with one or more capital letters and follow with zero or more letters, single or double quotes, whitespace characters, or dashes. Rating must start with one or more capital letters and follow with zero or more letters, numbers, single or double quotes, whitespace characters, or dashes.
 - The Range attribute constrains a value to a specified range.
 - The StringLength attribute sets the maximum length of a string, and optionally the minimum length.
@@ -2604,7 +2597,7 @@ Select the Create New link. Complete the form with some invalid values. When j
 
 **Note**
 
-You may not be able to enter decimal commas in decimal fields. To support [**jQuery validation**](https://jqueryvalidation.org/) for non-English locales that use a comma (",") for a decimal point, and non US-English date formats, you must take steps to globalize your app. This [**GitHub issue 4076**](https://github.com/aspnet/Docs/issues/4076) for instructions on adding decimal comma.
+You may not be able to enter decimal commas in decimal fields. To support [**jQuery validation**](https:/jqueryvalidation.org) for non-English locales that use a comma (",") for a decimal point, and non US-English date formats, you must take steps to globalize your app. This [**GitHub issue 4076**](https:/github.com/aspnet/Docs/issues/4076) for instructions on adding decimal comma.
 
 Notice how the form has automatically rendered a validation error message in each field containing an invalid value. The errors are enforced both client-side (using JavaScript and jQuery) and server-side (when a user has JavaScript disabled).
 
@@ -2613,7 +2606,7 @@ A significant benefit is that no code changes were necessary in the Create or 
 The form data isn't posted to the server until there are no client-side validation errors. Verify form data isn't posted by one or more of the following approaches:
 
 - Put a break point in the OnPostAsync method. Submit the form (select Create or Save). The break point is never hit.
-- Use the [Fiddler tool](http://www.telerik.com/fiddler) .
+- Use the [Fiddler tool](http:/www.telerik.com/fiddler) .
 - Use the browser developer tools to monitor network traffic.
 
 #### Server-side validation
@@ -2655,7 +2648,7 @@ CSHTMLCopy
 
 &lt;/div&gt;
 
-The [Input Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) uses the [DataAnnotations](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-6) attributes and produces HTML attributes needed for jQuery Validation on the client-side. The [Validation Tag Helper](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) displays validation errors. See [Validation](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/validation?view=aspnetcore-2.2) for more information.
+The [Input Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) uses the [DataAnnotations](https:/docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-6) attributes and produces HTML attributes needed for jQuery Validation on the client-side. The [Validation Tag Helper](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2) displays validation errors. See [Validation](https:/docs.microsoft.com/en-us/aspnet/core/mvc/models/validation?view=aspnetcore-2.2) for more information.
 
 The Create and Edit pages have no validation rules in them. The validation rules and the error strings are specified only in the Movie class. These validation rules are automatically applied to Razor Pages that edit the Movie model.
 
@@ -2685,7 +2678,7 @@ The DataType Enumeration provides for many data types, such as Date, Time, Pho
 
 DataType.Date doesn't specify the format of the date that's displayed. By default, the data field is displayed according to the default formats based on the server's CultureInfo.
 
-The [Column(TypeName = "decimal(18, 2)")] data annotation is required so Entity Framework Core can correctly map Price to currency in the database. For more information, see [Data Types](https://docs.microsoft.com/ef/core/modeling/relational/data-types) .
+The [Column(TypeName = "decimal(18, 2)")] data annotation is required so Entity Framework Core can correctly map Price to currency in the database. For more information, see [Data Types](https:/docs.microsoft.com/ef/core/modeling/relational/data-types) .
 
 The DisplayFormat attribute is used to explicitly specify the date format:
 
@@ -2745,17 +2738,17 @@ public string Rating { get; set; }
 
 }
 
-[Get started with Razor Pages and EF Core](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) shows advanced EF Core operations with Razor Pages.
+[Get started with Razor Pages and EF Core](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) shows advanced EF Core operations with Razor Pages.
 
 #### Publish to Azure
 
-For information on deploying to Azure, see [Tutorial: Build an ASP.NET app in Azure with SQL Database](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase) . These instructions are for an ASP.NET app, not an ASP.NET Core app, but the steps are the same.
+For information on deploying to Azure, see [Tutorial: Build an ASP.NET app in Azure with SQL Database](https:/docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase) . These instructions are for an ASP.NET app, not an ASP.NET Core app, but the steps are the same.
 
-Thanks for completing this introduction to Razor Pages. We appreciate feedback. [Get started with Razor Pages and EF Core](https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) is an excellent follow up to this tutorial.
+Thanks for completing this introduction to Razor Pages. We appreciate feedback. [Get started with Razor Pages and EF Core](https:/docs.microsoft.com/en-us/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.2) is an excellent follow up to this tutorial.
 
 ### Additional resources
 
-- [Tag Helpers in forms in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2)
-- [Globalization and localization in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.2)
-- [Tag Helpers in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2)
-- [Author Tag Helpers in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/authoring?view=aspnetcore-2.2)
+- [Tag Helpers in forms in ASP.NET Core](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-2.2)
+- [Globalization and localization in ASP.NET Core](https:/docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.2)
+- [Tag Helpers in ASP.NET Core](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-2.2)
+- [Author Tag Helpers in ASP.NET Core](https:/docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/authoring?view=aspnetcore-2.2)

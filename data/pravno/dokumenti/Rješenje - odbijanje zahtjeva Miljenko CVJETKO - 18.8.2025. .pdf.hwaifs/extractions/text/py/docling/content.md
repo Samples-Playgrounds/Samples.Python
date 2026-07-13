@@ -18,6 +18,8 @@ Korisnik prava na pristup informacijama je dana 17. veljače 2025.g. podnio goto
 
 <!-- image -->
 
+10000 ZAGREB • Ulica Ivana Cankara 13 • tel: +385 1 301 23 49 • OIB: 67894852113 • e-mail: office@judo.hr • web: www.judo.hr
+
 <!-- image -->
 
 Tekst  e-maila  od  11.08.2025.g.  koji  prati  sada  25.  podnesena  zahtjeva  nejasan  je  i  konfuzan  u  smislu razloga traženja pristupa informacijama, pa se tijelo javne vlasti neće u ovom Rješenju posebno referirati na taj tekst. Obzirom je u odnosu na podnositelja zahtjeva pravno situacija nepromijenjena, odnosno sve okolnosti su identične onima u ožujku 2025.godine (trajanje sudskog postupka), to je tijelo javne vlasti odlučilo kako se u dispozitivu navodi.

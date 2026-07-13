@@ -2,8 +2,8 @@
 
 Sources:
 
-- Simple MVC (from docs): [https://docs.microsoft.com/en-us/aspnet/core/security/authorization/simple](https://docs.microsoft.com/en-us/aspnet/core/security/authorization/simple)
-- Simple Razor Pages (from blog post): [https://wakeupandcode.com/authentication-authorization-in-asp-net-core-razor-pages/#authrpages](https://wakeupandcode.com/authentication-authorization-in-asp-net-core-razor-pages/#authrpages)
+- Simple MVC (from docs): [https://docs.microsoft.com/en-us/aspnet/core/security/authorization/simple](https:/docs.microsoft.com/en-us/aspnet/core/security/authorization/simple)
+- Simple Razor Pages (from blog post): [https://wakeupandcode.com/authentication-authorization-in-asp-net-core-razor-pages/#authrpages](https:/wakeupandcode.com/authentication-authorization-in-asp-net-core-razor-pages/#authrpages)
 
 ## Simple authorization in ASP.NET Core
 
@@ -93,7 +93,7 @@ This would allow only authenticated users to the AccountController, except for 
 
 ## Authorization in ASP.NET Core (Razor Pages)
 
-From: [https://wakeupandcode.com/authentication-authorization-in-asp-net-core-razor-pages/#authrpages](https://wakeupandcode.com/authentication-authorization-in-asp-net-core-razor-pages/#authrpages)
+From: [https://wakeupandcode.com/authentication-authorization-in-asp-net-core-razor-pages/#authrpages](https:/wakeupandcode.com/authentication-authorization-in-asp-net-core-razor-pages/#authrpages)
 
 For Razor Pages, the quickest way to add Authorization for your pages (or entire folders of pages) is to update your ConfigureServices() method in your Startup.cs class, by calling AddRazorPagesOptions() after AddMvc(). The NetLearner configuration includes the following code:
 
@@ -117,7 +117,7 @@ options.Conventions.AllowAnonymousToPage("/Index");
 
 The above code ensures that the CRUD pages for Creating, Editing and Deleting any of the LearningResources are only accessible to someone who is currently logged in. Each call to AuthorizePage() includes a specific page name identified by a known route. In this case, the LearningResources folder exists within the Pages folder of the application.
 
-Finally, the call to AllowAnonymousPage() ensures that the app’s [index](https://github.com/shahedc/NetLearner/blob/master/web/Pages/Index.cshtml) page (at the root of the Pages folder) is accessible to any user without requiring any login.
+Finally, the call to AllowAnonymousPage() ensures that the app’s [index](https:/github.com/shahedc/NetLearner/blob/master/web/Pages/Index.cshtml) page (at the root of the Pages folder) is accessible to any user without requiring any login.
 
 If you still wish to use the [Authorize] attribute for Razor Pages, you may apply this attribute in your PageModel classes for each Razor Page, as needed. If I were to add it to one of my Razor Pages in the LearningResources folder, it could look like this:
 
@@ -133,7 +133,7 @@ public class CreateModel : PageModel
 
 ### Testing Authorization in NetLearner
 
-When I run my application, I can register and log in as a user to create new Learning Resources. On first launch, I have to apply migrations to create the database from scratch. Please refer to my previous post on [EF Core Migrations](https://wakeupandcode.com/ef-core-migrations-in-asp-net-core/) to learn how you can do the same in your environment.
+When I run my application, I can register and log in as a user to create new Learning Resources. On first launch, I have to apply migrations to create the database from scratch. Please refer to my previous post on [EF Core Migrations](https:/wakeupandcode.com/ef-core-migrations-in-asp-net-core) to learn how you can do the same in your environment.
 
 Here’s a screenshot of the Create page for a user who is logged in:
 
@@ -160,5 +160,5 @@ Razor Pages have multiple ways of restricting access to pages and folders, inclu
 
 You can get more information on all of the above methods at the following URL:
 
-- Razor Pages authorization conventions in ASP.NET Core: [https://docs.microsoft.com/en-us/aspnet/core/security/authorization/razor-pages-authorization](https://docs.microsoft.com/en-us/aspnet/core/security/authorization/razor-pages-authorization)
-- Detailed Tutorial: [https://docs.microsoft.com/en-us/aspnet/core/security/authorization/secure-data](https://docs.microsoft.com/en-us/aspnet/core/security/authorization/secure-data)
+- Razor Pages authorization conventions in ASP.NET Core: [https://docs.microsoft.com/en-us/aspnet/core/security/authorization/razor-pages-authorization](https:/docs.microsoft.com/en-us/aspnet/core/security/authorization/razor-pages-authorization)
+- Detailed Tutorial: [https://docs.microsoft.com/en-us/aspnet/core/security/authorization/secure-data](https:/docs.microsoft.com/en-us/aspnet/core/security/authorization/secure-data)

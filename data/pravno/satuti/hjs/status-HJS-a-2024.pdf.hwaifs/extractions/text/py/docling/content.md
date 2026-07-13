@@ -766,9 +766,7 @@ Raspodjela ukupnih financijskih sredstava vrši se financijskim planom u skladu 
 
 Proračunska sredstva strogo su namjenska i mogu se koristiti isključivo za poslove i zadace prihvaćene godišnjim programom i financijskim planom i rashodima proračunskih sredstava.
 
-Mogućom razlikom prihoda i rashoda ostvarenom obavljanjem gospodarskih djelatnosti, sukladno odredbama ovog Statuta i pripadajućih propisa, raspolagati će Upravni odbor, sukladno programu i financijskom planu Saveza, a ona može biti korištena isključivo u svrhu ostvarivanja ciljeva Saveza. Eventualno ostvareni višak prihoda nad rashodima u poslovanju rasporeduje se financijskim planom na slijedeću godinu u svrhu unapredenja judo sporta.
-
-Financijski plan Saveza donosi, mijenja i dopunjuje Skupština Saveza.
+Mogućom razlikom prihoda i rashoda ostvarenom obavljanjem gospodarskih djelatnosti, sukladno odredbama ovog Statuta i pripadajućih propisa, raspolagati će Upravni odbor, sukladno programu i financijskom planu Saveza, a ona može biti korištena isključivo u svrhu ostvarivanja ciljeva Saveza. Eventualno ostvareni višak prihoda nad rashodima u poslovanju rasporeduje se financijskim planom na slijedeću godinu u svrhu unapredenja judo sporta. Financijski plan Saveza donosi, mijenja i dopunjuje Skupština Saveza.
 
 Naredbodavac za izvršenje financijskog plana je glavni tajnik Saveza, a Upravni odbor može svojom odlukom utvrditi i druge osobe s ovlaštenjima u materijalno-financijskom poslovanju.
 

@@ -1,4 +1,4 @@
-Keyboard shortcuts for macOS
+## Keyboard shortcuts for macOS
 
 | General   |                          |
 |-----------|--------------------------|
@@ -9,7 +9,7 @@ Keyboard shortcuts for macOS
 | ⌘ ,       | User Settings            |
 | ⌘ K ⌘ S   | Keyboard Shortcuts       |
 
-Basic editing
+## Basic editing
 
 | ⌘ X                | Cut line (empty selection)   |
 |--------------------|------------------------------|
@@ -33,7 +33,7 @@ Basic editing
 | ⇧⌥ A               | Toggle block comment         |
 | ⌥ Z                | Toggle word wrap             |
 
-Multi-cursor and selection
+## Multi-cursor and selection
 
 | ⌥ + click       | Insert cursor                               |
 |-----------------|---------------------------------------------|
@@ -51,7 +51,7 @@ Multi-cursor and selection
 | ⇧⌥⌘ PgUp        | Column (box) selection page up              |
 | ⇧⌥⌘ PgDn        | Column (box) selection page down            |
 
-Search and replace
+## Search and replace
 
 | ⌘ F        | Find                                   |
 |------------|----------------------------------------|
@@ -61,7 +61,7 @@ Search and replace
 | ⌘ D        | Add selection to next Find match       |
 | ⌘ K ⌘ D    | Move last selection to next Find match |
 
-Rich languages editing
+## Rich languages editing
 
 | ⌃ Space, ⌘ I   | Trigger suggestion          |
 |----------------|-----------------------------|
@@ -77,7 +77,7 @@ Rich languages editing
 | ⌘ K ⌘ X        | Trim trailing whitespace    |
 | ⌘ K M          | Change file language        |
 
-Navigation
+## Navigation
 
 | ⌘ T        | Show all Symbols                     |
 |------------|--------------------------------------|
@@ -90,7 +90,7 @@ Navigation
 | ⌃ - / ⌃⇧ - | Go back/forward                      |
 | ⌃⇧ M       | Toggle Tab moves focus               |
 
-Editor management
+## Editor management
 
 | ⌘ W                | Close editor                               |
 |--------------------|--------------------------------------------|
@@ -101,7 +101,7 @@ Editor management
 | ⌘ K ⇧⌘ ←/ ⌘ K ⇧⌘ → | Move editor left/right                     |
 | ⌘ K ←/ ⌘ K→        | Move active editor group                   |
 
-File management
+## File management
 
 | ⌘ N     | New File     |
 |---------|--------------|
@@ -120,7 +120,7 @@ File management
 | ⌘ K R          | Reveal active file in Finder            |
 | ⌘ K O          | Show active file in new window/instance |
 
-Display
+## Display
 
 | ⌃⌘ F       | Toggle full screen                         |
 |------------|--------------------------------------------|
@@ -139,7 +139,7 @@ Display
 | ⌘ K V      | Open Markdown preview to the side          |
 | ⌘ K Z      | Zen Mode (Esc Esc to exit)                 |
 
-Debug
+## Debug
 
 | F9          | Toggle breakpoint   |
 |-------------|---------------------|
@@ -149,7 +149,7 @@ Debug
 | ⇧ F5        | Stop                |
 | ⌘ K ⌘ I     | Show hover          |
 
-Integrated terminal
+## Integrated terminal
 
 | ⌃ `          | Show integrated terminal   |
 |--------------|----------------------------|

@@ -127,7 +127,9 @@ Almost any C expression, including function calls (must be prefixed with a cast 
 
 file\_name :: variable\_name Content of the variable defined in the named file (static variables).
 
-function :: variable\_name Content of the variable defined in the named function (if on the stack).
+function :: variable\_name
+
+Content of the variable defined in the named function (if on the stack).
 
 ## {type}address
 
@@ -147,9 +149,7 @@ Chose thread to operate on.
 
 ## Manipulating the program
 
-set var &lt;variable\_name&gt; = &lt;value&gt; given value.
-
-Change the content of a variable to the
+set var &lt;variable\_name&gt; = &lt;value&gt; Change the content of a variable to the given value.
 
 return
 
@@ -169,7 +169,7 @@ list &lt;filename&gt; : &lt;line\_number&gt;
 
 list &lt;first&gt;,&lt;last&gt;
 
-Shows the current or given source context. The fi lename may be omitted. If last is omitted the context starting at start is printed instead of centered around it.
+Shows the current or given source context. The filename may be omitted. If last is omitted the context starting at start is printed instead of centered around it.
 
 set listsize &lt;count&gt;
 

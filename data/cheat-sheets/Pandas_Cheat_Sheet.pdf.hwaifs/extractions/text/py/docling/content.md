@@ -48,39 +48,9 @@ Tidy data complements pandas's vectorized operations . pandas will automatically
 
 ## Subset Observations - rows
 
-df[df.Length &gt; 7]
-
-Extract rows that meet logical criteria.
-
-df.drop\_duplicates()
-
-Remove duplicate rows (only considers columns).
-
-df.sample(frac=0.5)
-
-Randomly select fraction of rows.
-
-- df.sample(n=10) Randomly select n rows.
-- df.nlargest(n, 'value') Select and order top n entries.
-- df.nsmallest(n, 'value') Select and order bottom n entries.
-
-df.head(n)
-
-Select first n rows.
-
-df.tail(n)
-
-Select last n rows.
-
-| Logic in Python (and pandas)   | Logic in Python (and pandas)   | Logic in Python (and pandas)   | Logic in Python (and pandas)        |
-|--------------------------------|--------------------------------|--------------------------------|-------------------------------------|
-| <                              | Less than                      | !=                             | Not equal to                        |
-| >                              | Greater than                   | df.column.isin( values )       | Group membership                    |
-| ==                             | Equals                         | pd.isnull( obj )               | Is NaN                              |
-| <=                             | Less than or equals            | pd.notnull( obj )              | Is not NaN                          |
-| >=                             | Greater than orequals          | &,&#124;,~,^,df.any(),df.all() | Logical and, or, not, xor, any, all |
-
 ## Subset Variables - columns
+
+- df[df.Length &gt; 7] Extract rows that meet logical criteria. df.drop\_duplicates() Remove duplicate rows (only considers columns). df.sample(frac=0.5) Randomly select fraction of rows. df.sample(n=10) Randomly select n rows. df.nlargest(n, 'value') Select and order top n entries. df.nsmallest(n, 'value') Select and order bottom n entries. df.head(n) Select first n rows. df.tail(n) Select last n rows.
 
 ```
 df[['width', 'length', 'species']] Select multiple columns with specific names. df['width'] or df.width Select single column with specific name. df.filter(regex=' regex ') Select columns whose name matches regular expression regex .
@@ -110,13 +80,21 @@ df.iloc[10:20] Select rows 10-20. df.iloc[:, [1, 2, 5]] Select columns in positi
 | '^x[1-5]$'                             | Matches strings beginning with 'x' and ending with 1,2,3,4,5 |
 | '^(?!Species$).*'                      | Matches strings except the string 'Species'                  |
 
+| Logic in Python (and pandas)   | Logic in Python (and pandas)   | Logic in Python (and pandas)   | Logic in Python (and pandas)        |
+|--------------------------------|--------------------------------|--------------------------------|-------------------------------------|
+| <                              | Less than                      | !=                             | Not equal to                        |
+| >                              | Greater than                   | df.column.isin( values )       | Group membership                    |
+| ==                             | Equals                         | pd.isnull( obj )               | Is NaN                              |
+| <=                             | Less than or equals            | pd.notnull( obj )              | Is not NaN                          |
+| >=                             | Greater than orequals          | &,&#124;,~,^,df.any(),df.all() | Logical and, or, not, xor, any, all |
+
 Cheatsheet for pandas (http://pandas.pydata.org/ originally written by Irv Lustig, Princeton Consultants,  inspired by Rstudio Data Wrangling Cheatsheet
 
 ## Group Data
 
 <!-- image -->
 
-df.groupby(by="col")
+## df.groupby(by="col")
 
 Return a GroupBy object, grouped by values in column named "col".
 
@@ -623,9 +601,8 @@ With a Series containing data of type datetime, the dt accessor is used to get v
 
 - s.dt.year
 
-Extract the year
+Extract the year s.dt.month
 
-- s.dt.month
 - dtypes
 
 ## s.dt.day
@@ -718,54 +695,6 @@ Sets the transparency of the plot to 50%.
 
 ## Frequently Used Options
 
-Pandas offers some 'options' to globally control how Pandas behaves, display etc. Options can be queried and set via:
+Pandas offers some 'options' to globally
 
-pd.options. option\_name (where option\_name is the name of an option). For example:
-
-pd.options.display.max\_rows = 20 Set the display.max\_rows option to 20.
-
-Functions
-
-```
-get_option(option) Fetch the value of the given option. set_option(option) Set the value of the given option. reset_option(options) Reset the values of all given options to default settings. describe_option(options) Print descriptions of given options. option_context(options) settings that revert to prior settings after
-```
-
-Execute code with temporary option execution.
-
-## Display options
-
-## display.max\_rows
-
-The maximum number of rows displayed in pretty-print.
-
-## display.max\_columns
-
-The maximum number of columns displayed in pretty-print.
-
-```
-display.expand_frame_repr
-```
-
-Controls whether the DataFrame representation stretches across pages.
-
-## display.large\_repr
-
-Controls whether a DataFrame that exceeds maximum rows/columns is truncated or summarized
-
-## display.precision
-
-The output display precision in decimal places.
-
-## display.max\_colwidth
-
-The maximum width of columns, longer cells will be truncated.
-
-## display.max\_info\_columns
-
-The maximum number of columns displayed after calling info() .
-
-display.chop\_threshold
-
-Sets the rounding threshold to zero when displaying a Series/DataFrame.
-
-- display.colheader\_justify Controls how column headers are justified.
+Functions get\_option(option) Fetch the value of the given option. set\_option(option) Set the value of the given option. reset\_option(options) Reset the values of all given options to default settings. describe\_option(options) Print descriptions of given options. option\_context(options) Execute code with temporary option settings that revert to prior settings after execution. control how Pandas behaves, display etc. Options can be queried and set via: pd.options. option\_name (where option\_name is the name of an option). For example: pd.options.display.max\_rows = 20 Set the display.max\_rows option to 20. Display options display.max\_rows The maximum number of rows displayed in pretty-print. display.max\_columns The maximum number of columns displayed in pretty-print. display.expand\_frame\_repr Controls whether the DataFrame representation stretches across pages. display.large\_repr Controls whether a DataFrame that exceeds maximum rows/columns is truncated or summarized display.precision The output display precision in decimal places. display.max\_colwidth The maximum width of columns, longer cells will be truncated. display.max\_info\_columns The maximum number of columns displayed after calling info() . display.chop\_threshold Sets the rounding threshold to zero when displaying a Series/DataFrame. display.colheader\_justify Controls how column headers are justified.
