@@ -1,11 +1,60 @@
 
-Instructor
-    
-    https://python.useinstructor.com/
-    
-    https://github.com/567-labs/instructor
+Data Analysis
 
-Marvin
+https://platform.claude.com/cookbook/managed-agents-data-analyst-agent
+
+https://github.com/anthropics/claude-cookbooks/blob/main/managed_agents/data_analyst_agent.ipynb
+
+*   OmniParse
+
+    *   web app
+    
+        *   https://github.com/adithya-s-k/omniparse
+
+        *   document ingestion
+
+            *   Marker
+
+                *   https://github.com/datalab-to/marker
+
+    *   python library
+    
+        *   https://github.com/The-Swarm-Corporation/OmniParse
+
+            ```shell
+            pip install omniparse
+            ```
+
+            ```python
+            from omniparse.main import OmniParse
+            from omniparse.prebuilt_agent import model
+
+            parser = OmniParse(
+                model=model,
+                document_name="doc.pdf",
+                db_n_results=3,
+                limit_tokens=1000,
+                collection_name="omniparse_db",
+            )
+
+            context = parser.run("What is the total amount due?")
+            print(context)
+            ```
+
+
+*   OmniParser
+
+    *   https://microsoft.github.io/OmniParser/
+
+    *   screen reader
+    
+*   Instructor
+    
+    *   https://python.useinstructor.com/
+    
+    *   https://github.com/567-labs/instructor
+
+*   Marvin
 
     https://github.com/prefecthq/marvin
 
