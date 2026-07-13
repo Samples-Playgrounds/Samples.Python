@@ -1,9 +1,9 @@
-beautifulsoup4==4.14.3
+beautifulsoup4==4.15.0
 codetiming==1.4.0
 EbookLib==0.20
-lxml==6.0.2
-orjson==3.11.8
+lxml==6.1.1
+orjson==3.11.5
 six==1.17.0
-soupsieve==2.8.3
+soupsieve==2.8.4
 timer==0.3.0
-typing_extensions==4.15.0
+typing_extensions==4.16.0
