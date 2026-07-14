@@ -5,6 +5,7 @@ docTR/
 docling/
 kreuzberg/
 marker/
+opendataloader/
 pdfminer.six/
 pdfplumber/
 pymupdf4llm-c/
