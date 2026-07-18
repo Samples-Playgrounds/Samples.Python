@@ -7,6 +7,6 @@ pdfminer.six==20251107
 pdfplumber==0.11.8
 pillow==11.3.0
 pycparser==2.23
-pypdfium2==5.11.0
+pypdfium2==5.12.1
 timer==0.3.0
 typing_extensions==4.16.0

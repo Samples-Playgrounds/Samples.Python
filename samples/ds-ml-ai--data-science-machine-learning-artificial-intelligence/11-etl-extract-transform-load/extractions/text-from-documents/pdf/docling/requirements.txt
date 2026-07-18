@@ -7,7 +7,7 @@ certifi==2026.6.17
 charset-normalizer==3.4.9
 click==8.1.8
 codetiming==1.4.0
-colorlog==6.10.1
+colorlog==6.11.0
 dill==0.4.1
 docling==2.69.1
 docling-core==2.60.1
@@ -18,7 +18,7 @@ Faker==37.12.0
 filelock==3.19.1
 filetype==1.2.0
 fsspec==2025.10.0
-hf-xet==1.5.1
+hf-xet==1.5.2
 huggingface_hub==0.36.2
 idna==3.18
 Jinja2==3.1.6
@@ -59,7 +59,7 @@ pyobjc-framework-Cocoa==11.1
 pyobjc-framework-CoreML==11.1
 pyobjc-framework-Quartz==11.1
 pyobjc-framework-Vision==11.1
-pypdfium2==5.11.0
+pypdfium2==5.12.1
 python-dateutil==2.9.0.post0
 python-docx==1.2.0
 python-dotenv==1.2.1
@@ -86,7 +86,7 @@ timer==0.3.0
 tokenizers==0.22.2
 torch==2.8.0
 torchvision==0.23.0
-tqdm==4.68.4
+tqdm==4.69.0
 transformers==4.57.6
 tree-sitter==0.23.2
 tree-sitter-c==0.23.4
