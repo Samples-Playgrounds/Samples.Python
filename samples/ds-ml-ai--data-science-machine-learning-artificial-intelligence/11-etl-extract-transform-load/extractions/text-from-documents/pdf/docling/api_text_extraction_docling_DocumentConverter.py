@@ -16,10 +16,21 @@ library_name = "docling"
 converter = DocumentConverter()
 
 #@timer()
+def extract_text_to_file_from_folder_any_document (
+                                                   source_folder: str
+                                                ) -> str:
+
+    """
+    """
+    
+
+#@timer()
 def extract_text_to_file_from_any_document (
                                                 source_file: str
                                             ) -> str:
 
+    """
+    """
     #---------------------------------------------------------------------------
     time_start_1 = time.time()
     time_start_2 = perf_counter()
@@ -32,6 +43,7 @@ def extract_text_to_file_from_any_document (
         result_doc = converter.convert(source_file)
         result_txt = result_doc.document.export_to_text()
         num_pages = len(result_doc.document.pages)
+
 
     except Exception as e:
         tb = traceback.format_exc()
@@ -215,8 +227,13 @@ def extract_markdown_to_file_from_any_document_complex (
 
     try:
         result_doc = doc_converter.convert_all([source_file])
-        num_pages = len(result_doc.pages)
 
+        # num_pages = len(result_doc.document.pages)
+        # in newer versions of Docling (using DocumentConverter), methods like convert_all() or convert() return a lazy 
+        # generator to handle batch processing efficiently without overloading your system's memory
+        result_list = list(result_doc)
+        num_pages = len(result_list[0].document.pages)
+        
     except Exception as e:
         tb = traceback.format_exc()
         msg = \
@@ -233,7 +250,7 @@ def extract_markdown_to_file_from_any_document_complex (
 
     num_pages_1 = 0
 
-    for res in conv_results:
+    for res in result_list:
         if res.document is None:
             print(f"Document {res.input.file.name} could not be converted.")
             continue
