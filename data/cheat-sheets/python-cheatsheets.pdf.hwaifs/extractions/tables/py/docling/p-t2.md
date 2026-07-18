@@ -1,3 +1,0 @@
-|    | 0                                                        | 1                                                               |
-|---:|:---------------------------------------------------------|:----------------------------------------------------------------|
-|  0 | >>> ax1.hist(y) >>> ax3.boxplot(y) >>> ax3.violinplot(z) | Plot a histogram Make a box and whisker plot Make a violin plot |

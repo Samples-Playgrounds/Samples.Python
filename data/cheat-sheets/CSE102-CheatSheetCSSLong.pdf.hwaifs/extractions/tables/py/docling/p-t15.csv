@@ -1,6 +1,0 @@
-,0,1
-0,outline,outline-color outline-style outline-width
-1,outline-color,color invert
-2,outline-offset,inherit length
-3,outline-style,None | dotted | dashed | solid | double | groove | ridge | inset | outset
-4,outline-width,thin | medium | thick length

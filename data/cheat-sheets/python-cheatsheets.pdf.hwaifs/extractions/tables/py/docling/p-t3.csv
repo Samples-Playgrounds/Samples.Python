@@ -1,2 +1,0 @@
-,0,1
-0,>>> plt.cla() >>> plt.clf() >>> plt.close(),Clear an axis Clear an entire figure Close a window

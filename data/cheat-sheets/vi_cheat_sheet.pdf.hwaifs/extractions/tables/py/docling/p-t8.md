@@ -1,3 +1,0 @@
-|    | u   | Undo last change         |
-|---:|:----|:-------------------------|
-|  0 | U   | Undo all changes on line |

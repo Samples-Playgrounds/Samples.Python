@@ -1,3 +1,0 @@
-,Image tag(s),Linux,Notes
-0,"7.0-bullseye-slim, 7.0",Debian 11,The default image if no OS variant is specified.
-1,7.0-alpine,Alpine 3.17,Alpine base images are much smaller than Debian or Ubuntu ones.

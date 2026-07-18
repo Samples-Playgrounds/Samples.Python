@@ -1,3 +1,0 @@
-,Command,Description,Syntax,Example
-0,GRANT,The GRANT command is used to give specific privileges to users or roles.,"GRANT SELECT, INSERT ON table_name TO user_name;","GRANT SELECT, INSERT ON employees TO 'John Doe';"
-1,REVOKE,The REVOKE command is used to take away privileges previously granted to users or roles.,"REVOKE SELECT, INSERT ON table_name FROM user_name;","REVOKE SELECT, INSERT ON employees FROM 'John Doe';"

@@ -1,4 +1,0 @@
-|    | Method           | Runtime   | Mean      |   Ratio |
-|---:|:-----------------|:----------|:----------|--------:|
-|  0 | TryToBase64Chars | .NET 6.0  | 623.25 ns |    1    |
-|  1 | TryToBase64Chars | .NET 7.0  | 81.82 ns  |    0.13 |

@@ -1,5 +1,0 @@
-|    | Method          | Mean       |   Ratio |
-|---:|:----------------|:-----------|--------:|
-|  0 | Interpreter     | 9,036.7 us |    1    |
-|  1 | Compiled        | 9,064.8 us |    1    |
-|  2 | SourceGenerator | 426.1 us   |    0.05 |

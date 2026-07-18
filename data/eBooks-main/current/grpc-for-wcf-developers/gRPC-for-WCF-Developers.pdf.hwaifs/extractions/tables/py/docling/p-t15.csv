@@ -1,3 +1,0 @@
-,0
-0,Caution
-1,"You shouldn't use custom code to provide essential functionality. You don't want to restrict that essential functionality to .NET teams that use the shared library, and not provide it to teams that use other languages or platforms, such as Python or Java."

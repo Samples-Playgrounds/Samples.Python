@@ -1,8 +1,0 @@
-|    | General   |                          |
-|---:|:----------|:-------------------------|
-|  0 | ⇧⌘ P, F1  | Show Command Palette     |
-|  1 | ⌘ P       | Quick Open , Go to File… |
-|  2 | ⇧⌘ N      | New window/instance      |
-|  3 | ⌘ W       | Close window/instance    |
-|  4 | ⌘ ,       | User Settings            |
-|  5 | ⌘ K ⌘ S   | Keyboard Shortcuts       |

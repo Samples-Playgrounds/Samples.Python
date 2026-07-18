@@ -1,8 +1,0 @@
-,0,1
-0,bottom,auto % length
-1,clip,shape auto
-2,left,auto % length
-3,position,static | relative | absolute | fixed
-4,right,auto % length
-5,top,auto % length
-6,z-index,auto number

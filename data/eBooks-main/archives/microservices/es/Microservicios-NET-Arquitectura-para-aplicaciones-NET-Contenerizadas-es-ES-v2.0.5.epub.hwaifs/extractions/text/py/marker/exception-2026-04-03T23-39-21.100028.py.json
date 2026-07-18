@@ -1,4 +1,0 @@
-Exception reading text with marker from EPUB document source = ../../../../../../../data/eBooks-main/archives/microservices/es/Microservicios-NET-Arquitectura-para-aplicaciones-NET-Contenerizadas-es-ES-v2.0.5.epub : object of type 'MarkdownOutput' has no len()Traceback (most recent call last):
-  File "/Users/Shared/Projects/d/Samples-Playgrounds/gh/Python/samples/ds-ml-ai--data-science-machine-learning-artificial-intelligence/11-etl-extract-transform-load/extractions/text-from-documents/epub/marker/api_text_extraction_marker_PdfConverter.py", line 36, in extract_text_to_file_from_epub_document
-    num_pages = len(rendered)
-TypeError: object of type 'MarkdownOutput' has no len()

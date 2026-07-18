@@ -1,4 +1,0 @@
-|    | Method         | Runtime   | Mean     |   Ratio |
-|---:|:---------------|:----------|:---------|--------:|
-|  0 | GenericVirtual | .NET 6.0  | 6.475 ns |    1    |
-|  1 | GenericVirtual | .NET 7.0  | 6.119 ns |    0.95 |

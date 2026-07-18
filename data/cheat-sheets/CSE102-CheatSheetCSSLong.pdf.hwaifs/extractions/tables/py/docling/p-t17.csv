@@ -1,5 +1,0 @@
-,0,1
-0,target,target-name target-new target-position
-1,target-name,current | root | parent | new | modal string
-2,target-new,window | tab | none
-3,target-position,above | behind | front | back

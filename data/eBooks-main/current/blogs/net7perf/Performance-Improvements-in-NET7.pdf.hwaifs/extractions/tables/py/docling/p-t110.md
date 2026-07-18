@@ -1,4 +1,0 @@
-|    | Method         | Mean      |   Ratio |
-|---:|:---------------|:----------|--------:|
-|  0 | InvokeInstance | 0.8858 ns |    1    |
-|  1 | InvokeStatic   | 1.3979 ns |    1.58 |
