@@ -112,7 +112,7 @@ def extract_text_to_file_from_pdf_document_low_level (
             parser = PDFParser(fp)
             doc = PDFDocument(parser)
             num_pages = len(list(PDFPage.create_pages(doc)))
-            pages = resolve1(doc.catalog['Pages'])
+            pages = resolve(doc.catalog['Pages'])
             pages_count = pages.get('Count', 0)
             result_txt = ''.join([page.extract_text() for page in pages])
 
