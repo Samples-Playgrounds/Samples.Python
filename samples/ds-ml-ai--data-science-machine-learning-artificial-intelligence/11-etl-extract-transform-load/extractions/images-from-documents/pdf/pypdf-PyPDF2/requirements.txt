@@ -1,5 +1,6 @@
 codetiming==1.4.0
-orjson==3.11.8
-pillow==12.2.0
+orjson==3.11.5
+pillow==11.3.0
 PyPDF2==3.0.1
 timer==0.3.0
+typing_extensions==4.16.0

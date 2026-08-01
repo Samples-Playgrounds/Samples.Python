@@ -14,5 +14,5 @@ lxml==6.1.1
 orjson==3.11.5
 six==1.17.0
 timer==0.3.0
-tqdm==4.68.4
+tqdm==4.69.0
 typing_extensions==4.16.0

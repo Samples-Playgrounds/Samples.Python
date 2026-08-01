@@ -1,0 +1,8 @@
+codetiming==1.4.0
+lazyllama==0.14.2
+markdown-it-py==4.2.0
+mdurl==0.1.2
+orjson==3.11.9
+Pygments==2.20.0
+rich==15.0.0
+timer==0.3.0

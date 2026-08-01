@@ -13,7 +13,7 @@ pyasn1==0.6.4
 pycparser==2.23
 pypandoc==1.17
 pyparsing==3.3.2
-pypdfium2==5.12.0
+pypdfium2==5.12.1
 python-iso639==2025.2.18
 python-magic==0.4.27
 python-multipart==0.0.20
@@ -26,7 +26,7 @@ six==1.17.0
 soupsieve==2.8.4
 sympy==1.14.0
 timer==0.3.0
-tqdm==4.68.4
+tqdm==4.69.0
 typing_extensions==4.16.0
 tzdata==2026.3
 urllib3==2.6.3
