@@ -2,6 +2,7 @@ compression/
 context/
 documents-to-images/
 html-purification-sanitization-cleanup/
+markdown-formatting/
 markdown-parsing/
 speech-to-text--speech-recognition/
 translations/
