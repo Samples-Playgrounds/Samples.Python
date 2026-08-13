@@ -20,14 +20,15 @@ pip3.14 freeze > requirements.txt
 """
 
 """
-pip install -r requirements.txt
-python main.py
+pip3.14 install -r requirements.txt
+python3.14 main.py
 """
 
 import os
 
 
-from smolagents import CodeAgent, WebSearchTool, InferenceClientModel
+from smolagents import CodeAgent, InferenceClientModel
+from smolagents import GoogleSearchTool, WebSearchTool
 from smolagents import OpenAIModel
 
 # model = InferenceClientModel()
@@ -44,13 +45,32 @@ model = OpenAIModel(
 
 agent = CodeAgent(
                         tools=[
-                                WebSearchTool()
+                                WebSearchTool(),
+                                GoogleSearchTool(),
                                 ],
                         model=model,
                         stream_outputs=True
                 )
-agent.run(
-            """
-            How many seconds would it take for a leopard at full speed to run through Pont des Arts?
-            """
-        )
+
+q = """
+    Investigate all possible training types and their variants:
+
+        *   strength
+
+        *   speed
+
+        *   endurance
+
+        *   technique
+
+        *   mobility
+
+        *   flxibility
+
+    What are recovery times after different training type (strength, endurance, technique, ...)?
+    """
+#            """
+#            How many seconds would it take for a leopard at full speed to run through Pont des Arts?
+#            """
+
+agent.run(q)
