@@ -1,7 +1,0 @@
-,builder.Services.AddDbContext<OrderingContext>(options =>
-0,{
-1,"options.UseSqlServer(builder.Configuration[""ConnectionString""],"
-2,sqlServerOptionsAction: sqlOptions =>
-3,{
-4,sqlOptions.EnableRetryOnFailure(
-5,"maxRetryCount: 5,"

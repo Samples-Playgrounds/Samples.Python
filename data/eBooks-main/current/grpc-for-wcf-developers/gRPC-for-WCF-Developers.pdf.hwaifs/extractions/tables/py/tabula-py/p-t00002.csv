@@ -1,3 +1,0 @@
-,Features,WCF,gRPC
-0,Approach (chapter 4),"Runtimegeneration ofserialization,deserialization,and networkingcode in baseclasses.","Build-time generation ofserialization,deserialization, andnetworking code in baseclasses."
-1,Security (chapter 6),"Authentication,WS-Security,messageencryption.","Credentials, ASP.NETCore security, TLSnetworking."

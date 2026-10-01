@@ -1,13 +1,0 @@
-,Folder,Description
-0,Controls,Contains custom controls used by the app.
-1,Converters,Contains value converters that apply custom logic to a binding.
-2,Exceptions,Contains the custom ServiceAuthenticationException.
-3,Extensions,Contains extension methods for the VisualElement and IEnumerable<T> classes.
-4,Helpers,Contains helper classes for the app.
-5,Models,Contains the model classes for the app.
-6,Properties,"Contains AssemblyInfo.cs, a .NET assembly metadata file."
-7,Services,"Contains interfaces and classes that implement services that are provided to theapp."
-8,Triggers,"Contains the BeginAnimation trigger, which is used to invoke an animation in XAML."
-9,Validations,Contains classes involved in validating data input.
-10,ViewModels,Contains the application logic that’s exposed to pages.
-11,Views,Contains the pages for the app.

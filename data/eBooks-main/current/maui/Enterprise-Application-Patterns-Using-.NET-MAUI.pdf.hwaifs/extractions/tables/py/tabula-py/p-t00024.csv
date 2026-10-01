@@ -1,1 +1,0 @@
-,WeakReferenceMessenger.Default.Send(new Messages.AddProductMessage(BadgeCount));

@@ -1,4 +1,0 @@
-,private void ConfigureOrder(EntityTypeBuilder<Order> builder)
-0,{
-1,builder.OwnsOne(o => o.ShipToAddress);
-2,}

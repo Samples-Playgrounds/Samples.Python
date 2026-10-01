@@ -1,8 +1,0 @@
-,// Add services to the container.
-0,"var connectionString = builder.Configuration.GetConnectionString(""DefaultConnection"");"
-1,builder.Services.AddDbContext<ApplicationDbContext>(options =>
-2,options.UseSqlServer(connectionString));
-3,builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-4,builder.Services.AddDefaultIdentity<IdentityUser>(options =>
-5,options.SignIn.RequireConfirmedAccount = true)
-6,.AddEntityFrameworkStores<ApplicationDbContext>();

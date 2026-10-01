@@ -1,2 +1,0 @@
-,[CascadingParameter]
-0,private Task<AuthenticationState> authenticationStateTask { get; set; }

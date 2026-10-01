@@ -1,6 +1,0 @@
-,Note
-0,"While the IMessenger interface permits communication between loosely-coupled classes, it does not"
-1,"offer the only architectural solution to this issue. For example, communication between a view model"
-2,and a view can also be achieved by the binding engine and through property change notifications. In
-3,"addition, communication between two view models can also be achieved by passing data during"
-4,navigation.

@@ -1,2 +1,0 @@
-,builder.Services.AddMemoryCache();
-0,builder.Services.AddMvc();

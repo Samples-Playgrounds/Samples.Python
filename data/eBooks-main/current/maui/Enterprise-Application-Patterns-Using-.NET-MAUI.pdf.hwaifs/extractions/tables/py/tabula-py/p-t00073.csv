@@ -1,3 +1,0 @@
-,Note
-0,The IdentityResources class supports all of the scopes defined in the OpenID Connect specification
-1,"(openid, email, profile, telephone, and address)."

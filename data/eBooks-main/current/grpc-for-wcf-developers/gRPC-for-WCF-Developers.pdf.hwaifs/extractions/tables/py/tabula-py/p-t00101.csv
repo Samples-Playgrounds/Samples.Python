@@ -1,4 +1,0 @@
-,Tip
-0,Authentication and authorization are two separate steps. You use authentication to determine the
-1,user’s identity. You use authorization to decide whether that user is allowed to access various parts of
-2,the system.

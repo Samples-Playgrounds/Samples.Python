@@ -1,3 +1,0 @@
-,service ThingLog {
-0,rpc OpenConnection(stream Thing) returns (ConnectionClosedResponse);
-1,}

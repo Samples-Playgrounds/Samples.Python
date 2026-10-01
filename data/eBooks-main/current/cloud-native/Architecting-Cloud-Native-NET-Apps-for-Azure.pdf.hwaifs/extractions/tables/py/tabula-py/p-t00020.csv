@@ -1,6 +1,0 @@
-,HTTP Status Code,Unnamed: 0,Cause
-0,404,Not Found,
-1,408,Request timeout,
-2,429,Too many requests (you’ve most likely been throttled),
-3,502,Bad gateway,
-4,503,Service unavailable,

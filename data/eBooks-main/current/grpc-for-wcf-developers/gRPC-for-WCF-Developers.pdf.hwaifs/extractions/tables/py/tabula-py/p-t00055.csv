@@ -1,4 +1,0 @@
-,Note
-0,Remember to use snake_case for field names in your .proto file. The C# code generator will convert
-1,"them to PascalCase for you, and users of other languages will thank you for respecting their different"
-2,coding standards.

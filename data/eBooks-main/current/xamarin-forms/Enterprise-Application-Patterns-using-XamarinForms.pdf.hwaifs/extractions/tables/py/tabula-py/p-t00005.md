@@ -1,7 +1,0 @@
-|    | <ListView>                                                            |
-|---:|:----------------------------------------------------------------------|
-|  0 | <ListView.Behaviors>                                                  |
-|  1 | <behaviors:EventToCommandBehavior                                     |
-|  2 | EventName="ItemTapped"                                                |
-|  3 | Command="{Binding OrderDetailCommand}"                                |
-|  4 | EventArgsConverter="{StaticResource ItemTappedEventArgsConverter}" /> |

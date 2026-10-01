@@ -1,4 +1,0 @@
-,public class MyDbContext : DbContext
-0,{
-1,public DbSet<Product> Products { get; set; }
-2,}

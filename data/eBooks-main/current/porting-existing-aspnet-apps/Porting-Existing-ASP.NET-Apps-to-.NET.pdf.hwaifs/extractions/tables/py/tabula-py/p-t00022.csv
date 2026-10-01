@@ -1,6 +1,0 @@
-,// using Autofac.Extensions.DependencyInjection
-0,builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
-1,// note: the factory calls builder.Populate so we don't need to here
-2,bool useMockData = true; // TODO: read from config
-3,builder.Host.ConfigureContainer<ContainerBuilder>(builder =>
-4,builder.RegisterModule(new ApplicationModule(useMockData)));

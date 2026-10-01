@@ -1,8 +1,0 @@
-,"<button @onclick=""OnClick"">Click me!</button>"
-0,
-1,@code {
-2,void OnClick(MouseEventArgs e)
-3,{
-4,"Console.WriteLine($""Mouse clicked at {e.ScreenX}, {e.ScreenY}."");"
-5,}
-6,}

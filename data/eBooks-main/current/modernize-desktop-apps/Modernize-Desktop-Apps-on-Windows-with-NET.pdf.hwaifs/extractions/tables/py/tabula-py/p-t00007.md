@@ -1,4 +1,0 @@
-|    | <ItemGroup>                                                                    |
-|---:|:-------------------------------------------------------------------------------|
-|  0 | <ProjectReference Include="..\\eShop.SqlProvider\\eShop.SqlProvider.csproj" /> |
-|  1 | <ItemGroup>                                                                    |

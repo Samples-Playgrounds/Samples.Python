@@ -1,3 +1,0 @@
-,Note
-0,This code uses the new C# 8 using declaration syntax to dispose of the stream and the channel when
-1,"the Main method exits. It’s a small change, but a nice one that reduces indentations and empty lines."

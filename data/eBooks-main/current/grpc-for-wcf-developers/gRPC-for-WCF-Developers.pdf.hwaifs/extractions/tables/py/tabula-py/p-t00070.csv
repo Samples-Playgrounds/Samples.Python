@@ -1,3 +1,0 @@
-,"<Protobuf Include=""..\TraderSys.Portfolios\Protos\portfolios.proto"" GrpcServices=""Client"">"
-0,<Link>Protos\portfolios.proto</Link>
-1,</Protobuf>
